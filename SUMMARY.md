@@ -53,6 +53,7 @@
 
 ## Resources
 
+* [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
