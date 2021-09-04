@@ -68,3 +68,12 @@
 * [Untitled](misc/untitled/README.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
 
+## Interview Prep
+
+* [Interview Resources](interview-prep/interview-resources/README.md)
+  * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
+
+---
+
+* [Untitled](untitled.md)
+
