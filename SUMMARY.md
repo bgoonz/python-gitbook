@@ -4,7 +4,11 @@
 
 ## Cirriculumn
 
-* [Untitled](cirriculumn/untitled.md)
+* [Outline](cirriculumn/untitled.md)
+* [Untitled](cirriculumn/untitled-3.md)
+* [Untitled](cirriculumn/untitled-2.md)
+* [Untitled](cirriculumn/untitled-4.md)
+* [Untitled](cirriculumn/untitled-1.md)
 
 ## Utilities
 
@@ -28,5 +32,5 @@
 
 ## Python-Docs
 
-* [Untitled](python-docs/untitled.md)
+* [Docs](python-docs/untitled.md)
 
