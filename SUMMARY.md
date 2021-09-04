@@ -6,6 +6,7 @@
 
 * [Outline](cirriculumn/untitled.md)
 * [wk17](cirriculumn/untitled-3/README.md)
+  * [Week Overview](cirriculumn/untitled-3/week-overview.md)
   * [D1](cirriculumn/untitled-3/untitled-2.md)
   * [D2](cirriculumn/untitled-3/untitled-1-1.md)
   * [D3](cirriculumn/untitled-3/untitled-1.md)
@@ -67,15 +68,11 @@
 
 ## MISC
 
-* [Untitled](misc/untitled/README.md)
+* [About Python](misc/untitled/README.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
 
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
-
----
-
-* [Untitled](untitled.md)
 
