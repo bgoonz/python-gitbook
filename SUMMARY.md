@@ -7,7 +7,8 @@
 * [Outline](cirriculumn/untitled.md)
 * [wk17](cirriculumn/untitled-3/README.md)
   * [Week Overview](cirriculumn/untitled-3/week-overview.md)
-  * [D1](cirriculumn/untitled-3/untitled-2.md)
+  * [D1](cirriculumn/untitled-3/untitled-2/README.md)
+    * [Install Python](cirriculumn/untitled-3/untitled-2/install-python.md)
   * [D2](cirriculumn/untitled-3/untitled-1-1.md)
   * [D3](cirriculumn/untitled-3/untitled-1.md)
   * [D4](cirriculumn/untitled-3/untitled.md)
@@ -71,6 +72,7 @@
 
 ## Resources
 
+* [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
