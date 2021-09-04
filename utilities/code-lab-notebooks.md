@@ -6,6 +6,8 @@
 
 {% embed url="https://gist.github.com/bgoonz/4323443e5b3b4eb8b4b880e17b0612c4\#file-cs47-python-ii-ipynb" %}
 
+{% embed url="https://gist.github.com/bgoonz/477dd40bc5c4899981efacad9b1a5af3\#file-copy-of-cs47-python-ii-ipynb" %}
+
 
 
 {% embed url="https://gist.github.com/bgoonz/d4cfd92a32cfc64bfa4435107fa6a699\#file-copy-of-searching-ipynb" %}
