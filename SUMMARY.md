@@ -30,6 +30,7 @@
 
 ## Utilities
 
+* [Code lab Notebooks](utilities/code-lab-notebooks.md)
 * [Repl.IT](utilities/repl.it.md)
 * [Utilites](utilities/untitled/README.md)
   * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
