@@ -937,3 +937,11 @@ urlopen,
 
 [D1](https://www.notion.so/D1-6ca838002f054ab282528f55ae6372b8)
 
+
+
+
+
+
+
+{% embed url="https://gist.github.com/bgoonz/fdc61c788821939f20d2ec231331cde4" %}
+

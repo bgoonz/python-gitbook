@@ -2,8 +2,6 @@
 
 ![](../../.gitbook/assets/image.png)
 
-
-
 {% embed url="https://gist.github.com/bgoonz/fdc61c788821939f20d2ec231331cde4" %}
 
 

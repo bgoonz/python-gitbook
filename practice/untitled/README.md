@@ -4,7 +4,7 @@
 
 {% page-ref page="array.md" %}
 
-{% page-ref page="stack.md" %}
+{% page-ref page="../../data-structures/untitled/stack.md" %}
 
 {% page-ref page="../../data-structures/untitled/queue.md" %}
 
