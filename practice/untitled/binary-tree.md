@@ -98,5 +98,148 @@ class Solution(object):
 ob1 = Solution()
 print(ob1.topKFrequent([1, 1, 1, 1, 2, 2, 3, 3, 3], 2))
 
+
+
+
+```
+
+## Balanced Binary Tree
+
+## Balanced Binary Tree
+
+Given a binary tree class that looks like this:
+
+```javascript
+class BinaryTreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+
+  insertLeft(value) {
+    this.left = new BinaryTreeNode(value);
+    return this.left;
+  }
+
+  insertRight(value) {
+    this.right = new BinaryTreeNode(value);
+    return this.right;
+  }
+}
+```
+
+write a function that checks to see if a given binary tree is perfectly balanced, meaning all leaf nodes are located at the same depth. Your function should return `true` if the tree is perfectly balanced and `false` otherwise.
+
+Analyze the time and space complexity of your function.
+
+
+
+JS Solution:
+
+```javascript
+/* 
+  A recursive solution
+  How would you solve this iteratively?
+ */
+const checkBalanced = (rootNode) => {
+  // An empty tree is balanced by default
+  if (!rootNode) return true;
+  // recursive helper function to check the min depth of the tree
+  const minDepth = (node) => {
+    if (!node) return 0;
+    return 1 + Math.min(minDepth(node.left), minDepth(node.right));
+  };
+  // recursive helper function to check the max depth of the tree
+  const maxDepth = (node) => {
+    if (!node) return 0;
+    return 1 + Math.max(maxDepth(node.left), maxDepth(node.right));
+  };
+
+  return maxDepth(rootNode) - minDepth(rootNode) === 0;
+};
+
+/* Some console.log tests */
+class BinaryTreeNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+
+  insertLeft(value) {
+    this.left = new BinaryTreeNode(value);
+    return this.left;
+  }
+
+  insertRight(value) {
+    this.right = new BinaryTreeNode(value);
+    return this.right;
+  }
+}
+
+const root = new BinaryTreeNode(5);
+console.log(checkBalanced(root)); // should print true
+
+root.insertLeft(10);
+console.log(checkBalanced(root)); // should print false
+
+root.insertRight(11);
+console.log(checkBalanced(root)); // should print true;
+
+```
+
+
+
+```javascript
+#  A recursive solution
+#  How would you solve this iteratively?
+
+
+def checkBalanced(rootNode):
+    # An empty tree is balanced by default
+    if rootNode == None:
+        return True
+
+    # recursive helper function to check the min depth of the tree
+    def minDepth(node):
+        if node == None:
+            return 0
+        return 1 + min(minDepth(node.left), minDepth(node.right))
+
+    # recursive helper function to check the max depth of the tree
+    def maxDepth(node):
+        if node == None:
+            return 0
+        return 1 + max(maxDepth(node.left), maxDepth(node.right))
+
+    return maxDepth(rootNode) - minDepth(rootNode) == 0
+
+
+# Some console.log tests
+class BinaryTreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+    def insertLeft(self, value):
+        self.left = BinaryTreeNode(value)
+        return self.left
+
+    def insertRight(self, value):
+        self.right = BinaryTreeNode(value)
+        return self.right
+
+
+root = BinaryTreeNode(5)
+print(checkBalanced(root))  # should print True
+
+root.insertLeft(10)
+print(checkBalanced(root))  # should print False
+
+root.insertRight(11)
+print(checkBalanced(root))  # should print True
+
 ```
 
