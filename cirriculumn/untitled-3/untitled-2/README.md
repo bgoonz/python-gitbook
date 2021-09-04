@@ -51,7 +51,7 @@ Here are a few websites that give you online access to the Python interpreter:
 * [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
 * [Python Anywhere](https://www.pythonanywhere.com/)
 
-![](../../../.gitbook/assets/devider.png)
+![](../../../.gitbook/assets/devider%20%281%29.png)
 
 
 
@@ -135,7 +135,7 @@ It appears the questioner proofread their question beforehand as it does not con
 * [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
 * [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
-![](../../../.gitbook/assets/devider%20%281%29.png)
+![](../../../.gitbook/assets/devider%20%283%29.png)
 
 ## Objective 04 - Use a print statement
 
@@ -405,7 +405,7 @@ Now, get some practice using the `print` function by completing the challenge be
 
 
 
-![](../../../.gitbook/assets/devider%20%282%29.png)
+![](../../../.gitbook/assets/devider.png)
 
 ## Objective 05 - Use white space to denote blocks
 
@@ -497,7 +497,7 @@ In Python, whitespace has meaning; it denotes the end of logical lines and also 
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
 
-![](../../../.gitbook/assets/devider%20%283%29.png)
+![](../../../.gitbook/assets/devider%20%282%29.png)
 
 
 
