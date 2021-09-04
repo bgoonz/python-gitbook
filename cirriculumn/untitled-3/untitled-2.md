@@ -269,29 +269,535 @@ Now, get some practice using the `print` function by completing the challenge be
 
 
 
+* [ Home](https://lambdaschool.instructure.com/courses/1575)
+* [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
+* [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
+
+## Objective 04 - Use a print statement
+
+### Overview <a id="overview"></a>
+
+Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
+
+### Follow Along <a id="follow-along"></a>
+
+#### Using `print` with different objects <a id="using-print-with-different-objects"></a>
+
+Let's start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the `print` function.
+
+Using `print` with no arguments:
+
+```text
+>>> print()
+
+>>>
+```
+
+Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character `\n`.
+
+Using `print` with a string literal:
+
+```text
+>>> print("Lambda School is awesome!")
+Lambda School is awesome!
+>>>
+```
+
+Notice how calling `print` with the string literal printed the exact string we passed in onto the screen.
+
+Using `print` with a variable:
+
+```text
+>>> slogan = "i love lamp"
+>>> print(slogan)
+i love lamp
+>>>
+```
+
+Notice how calling `print` with the `slogan` variable prints the value assigned to the `slogan` variable.
+
+Using `print` with an expression:
+
+```text
+>>> superlative = "wonderful"
+>>> school = "Lambda School"
+>>> print(school + " is " + superlative)
+Lambda School is wonderful
+>>>
+```
+
+Notice how the argument for the `print` function can be an expression. Once the expression is resolved to a string object, the `print` function can output it to the screen.
+
+Using `print` with other object types:
+
+```python
+print(2020)
+2020
+>>> print(123.456)
+123.456
+>>> print(False)
+False
+>>> print(["Lambda", "School", 2, 0, 2, 0])
+['Lambda', 'School', 2, 0, 2, 0]
+>>> print(("Lambda", "School"))
+('Lambda', 'School')
+>>> print({"school": "Lambda School", "year": 2020})
+{'school': 'Lambda School', 'year': 2020}
+>>>
+```
+
+Any object passed as an argument into `print` will get converted into a string type before outputted to the screen.
+
+You can see how the `print` function is easy to use and how it can handle any object type that you pass into it.
+
+#### Passing multiple arguments into `print` <a id="passing-multiple-arguments-into-print"></a>
+
+Now, let's look at how we can pass multiple arguments into the `print` function. Using `print` with multiple arguments gives you a flexible and easy way to output items to the screen.
+
+We can pass multiple objects, all of the same or different types, into `print`.
+
+```text
+>>> print("Lambda School", 2020, True)
+Lambda School 2020 True
+>>>
+```
+
+Notice how each object we passed in was converted to a string and then output to the screen. Notice also that `print` used `" "` as the default separator value.
+
+We can change the separator value by assigning a value to the keyword argument `sep`.
+
+```text
+>>> print("Lambda School", 2020, True, sep="!!!")
+Lambda School!!!2020!!!True
+>>> print("Lambda School", 2020, True, sep="\t")
+Lambda School   2020    True
+>>> print("Lambda School", 2020, True, sep="\n")
+Lambda School
+2020
+True
+>>> print("Lambda School", 2020, True, sep="")
+Lambda School2020True
+>>>
+```
+
+#### Specifying the `end` value with `print` <a id="specifying-the-end-value-with-print"></a>
+
+You can also specify the `end` value by assigning a value to the `end` keyword argument when you call the `print` function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.
+
+Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
+
+```text
+>>> print("Are you a Lambda School student?", end=" (Y or N)")
+Are you a Lambda School student? (Y or N)>>>
+```
+
+Customizing the `end` value when calling the `print` function can be useful and necessary in some circumstances.
+
+You have now learned the basics of using the `print` function in Python. You learned how to call the `print` function to print objects of different types. You now know how to use `print` with multiple positional arguments. In certain necessary situations, you also know how to change the default `end` value when calling the `print` function.
+
+Now, get some practice using the `print` function by completing the challenge below.
+
+### Challenge <a id="challenge"></a>
+
+### Additional Resources <a id="additional-resources"></a>
+
+* [https://www.w3schools.com/python/ref\_func\_print.asp](https://www.w3schools.com/python/ref_func_print.asp)
+
 
 
 ![](../../.gitbook/assets/devider%20%282%29.png)
 
+## Objective 05 - Use white space to denote blocks
+
+### Overview <a id="overview"></a>
+
+Python is unique because indentation instead of some other character marks blocks of code. A block of code is a collection of statements that are grouped. The syntax for denoting blocks varies from language to language. For example, in C, blocks are delimited by curly braces \(`{` and `}`\). Understanding how Python uses whitespace and indentation to denote logical lines and code blocks is essential.
+
+### Follow Along <a id="follow-along"></a>
+
+#### Whitespace Characters <a id="whitespace-characters"></a>
+
+Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
+
+```text
+>>> import string
+>>> string.whitespace
+' \t\n\r\x0b\x0c'
+>>>
+```
+
+Notice the characters are `" "` \(space\), `\t` \(tab\), `\n` \(newline\), `\r` \(return\), `\x0b` \(unicode line tabulation\), and `\x0c` \(unicode form feed\).
+
+You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with `" "`, `\t`, and `\n`.
+
+#### Logical Lines of Code <a id="logical-lines-of-code"></a>
+
+Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
+
+```text
+>>> first = "Lambda"
+>>> second = "School"
+>>> first + second
+'LambdaSchool'
+>>> first \
+... + \
+... second
+'LambdaSchool'
+>>>
+```
+
+Notice how the REPL evaluates the expression `first + second` when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a `\` character. That `\` character lets the Python interpreter that even though there is a newline, you don't want it to treat it as the end of a logical line.
+
+It's important to understand that Python assumes meaning in newline characters when trying to interpret your code.
+
+#### Code Blocks <a id="code-blocks"></a>
+
+Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
+
+```text
+>>> if True:
+... if True:
+  File "<stdin>", line 2
+    if True:
+    ^
+IndentationError: expected an indented block
+>>>
+```
+
+This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
+
+```text
+>>> if True:
+...     if True:
+...         print("it worked!")
+...
+it worked!
+>>>
+```
+
+The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
+
+```text
+>>> if True:
+...     if True:
+...         print("it worked!")
+  File "<stdin>", line 3
+    print("it worked!")
+                      ^
+TabError: inconsistent use of tabs and spaces in indentation
+```
+
+Although you can't tell in the code snippet above, for the second `if` statement, I used a `\t` to indent. But, for the indentation on `print("it worked!"`, I used eight `" "` \(spaces\). The mismatch of tab usage and spaces raises an error when Python tries to interpret the code.
+
+Consistent whitespace usage \(indentation\) is crucial to making sure that Python can interpret your code correctly.
+
+In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are `" "`, `\t`, and `\n`. The Python interpreter knows where the end of a logical line of code is because of the `\n`. The amount of whitespace \(level of indentation\) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.
 
 
 
-
-
-
-
-
-
-
-
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
 
 ![](../../.gitbook/assets/devider%20%283%29.png)
+
+
+
+### Overview <a id="overview"></a>
+
+Python is not a "statically typed" language, and every variable in Python is an object. You don't have to declare a variable's type.
+
+### Follow Along <a id="follow-along"></a>
+
+#### Numbers <a id="numbers"></a>
+
+In Python, you can have integers and floating-point numbers.
+
+You can define an integer like so:
+
+```text
+my_int = 3
+```
+
+You can also cast a floating-point number to be an integer like so:
+
+```text
+my_int = int(3.0)
+```
+
+To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
+
+```text
+my_float = 3.0
+my_float = float(3)
+```
+
+#### Strings <a id="strings"></a>
+
+You can define strings with either single or double quotes:
+
+```text
+my_string = 'Lambda School'
+my_string = "Lambda School"
+```
+
+It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
+
+```text
+my_string = "I don't have to worry about apostrophes with my double-quotes."
+```
+
+Let's practice declaring variables to store an int, a float, and a string:
+
+```text
+my_int = 2
+my_float = 5.0
+my_str = "Lambda School"
+```
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3" %}
+
+
+
+![](../../.gitbook/assets/devider%20%284%29.png)
+
+
+
+### Overview <a id="overview"></a>
+
+There are a few basic operators that you should be familiar with as you start writing Python code.
+
+#### Arithmetic Operators <a id="arithmetic-operators"></a>
+
+You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
+
+```text
+my_number = 2 + 2 * 8 / 5.0
+print(my_number) # 5.2
+```
+
+There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
+
+```text
+my_remainder = 9 % 4
+print(my_remainder) # 1
+```
+
+You can use two multiplication operators to make the exponentiation operator \(`**`\).
+
+```text
+two_squared = 2 ** 2
+print(two_squared)    # 4
+two_cubed = 2 ** 3
+print(two_cubed)      # 8
+```
+
+#### Using operators with non-numbers <a id="using-operators-with-non-numbers"></a>
+
+You can use the addition operator to concatenate strings and lists:
+
+```text
+string_one = "Hello,"
+string_two = " World!"
+combined = string_one + string_two
+print(combined) # Hello, World!
+
+lst_one = [1,2,3]
+lst_two = [4,5,6]
+big_lst = lst_one + lst_two
+print(big_lst) # [1, 2, 3, 4, 5, 6]
+```
+
+You can also use the multiplication operator to create a new list or string that repeats the original sequence:
+
+```text
+my_string = "Bueller"
+repeated = my_string * 3
+print(repeated) # BuellerBuellerBueller
+
+my_list = [1, 2, 3]
+repeated_list = my_list * 3
+print(repeated_list) # [1, 2, 3, 1, 2, 3, 1, 2, 3]
+```
+
+### Follow Along <a id="follow-along"></a>
+
+Now, let's see if we can combine all of this information in a quick demo.
+
+First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
+
+```text
+a = object()
+b = object()
+```
+
+Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
+
+```text
+a_list = [a] * 5
+b_list = [b] * 5
+```
+
+Then, let's combine `a_list` and `b_list` into a `combined` list.
+
+```text
+combined = a_list + b_list
+```
+
+If our code works as expected, `combined` should have a length of 10.
+
+```text
+print(len(combined)) # 10
+```
+
+
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1\#main.py" %}
+
+![](../../.gitbook/assets/devider%20%284%29.png)
+
+
+
+### Overview <a id="overview"></a>
+
+To format a string in Python, you use the `%` operator to format a set of stored variables in a tuple. You also include _argument specifiers_ in your string with special symbols like `%s` and `%d`.
+
+For example, let's say you want to insert a `name` variable inside a string. You would do the following:
+
+```text
+name = "Austen"
+formatted_string = "Hello, %s!" % name
+print(formatted_string) # Hello, Austen!
+```
+
+If you have more than one argument specifier, you need to enclose your arguments in a tuple:
+
+```text
+name = "Austen"
+year = 2020
+print("Hey %s! It's the year %d." % (name, year))
+# Hey Austen! It's the year 2020.
+```
+
+Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
+
+```text
+my_list = [1,2,3]
+print("my_list: %s" % my_list)
+# my_list: [1, 2, 3]
+```
+
+A few of the common argument specifiers are:
+
+* `%s` - String \(or any object with a string representation\)
+* `%d` - Integers
+* `%f` - Floating point numbers
+* `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
+* `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
+
+### Follow Along <a id="follow-along"></a>
+
+Let's see if we can use all of this information to practice formatting a few strings.
+
+Let's imagine that we have some data that we want to inject into a string.
+
+```text
+product_name = "bananas"
+price = 1.23
+product_id = 123456
+```
+
+We need to print a formatted string using argument specifiers and a tuple that contains our data:
+
+```text
+print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
+# bananas (id: 123456) are currently $1.23.
+```
+
+
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2" %}
 
 
 
 
 
 ![](../../.gitbook/assets/devider%20%284%29.png)
+
+
+
+### Overview <a id="overview"></a>
+
+You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.
+
+There are lots of ways you can interact with strings in Python.
+
+### Follow Along <a id="follow-along"></a>
+
+The `len()` method prints out the number of characters in the string.
+
+```text
+my_string = "Hello, world!"
+print(len(my_string)) # 12
+```
+
+The `index()` method prints out the index of the substring argument's first occurrence.
+
+```text
+my_string = "Hello, world!"
+print(my_string.index("o"))   # 4
+print(my_string.index(", w")) # 5
+```
+
+The `count()` method returns the number of occurrences of the substring argument.
+
+```text
+my_string = "Hello, world!"
+print(my_string.count("o"))  # 2
+print(my_string.count("ll")) # 1
+```
+
+To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
+
+```text
+my_string = "Hello, world!"
+print(my_string[3:7])   # lo,
+print(my_string[3:7:2]) # l,
+print(my_string[::-1])  # !dlrow ,olleH
+```
+
+You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
+
+```text
+my_string = "Hello, world!"
+print(my_string.upper()) # HELLO, WORLD!
+print(my_string.lower()) # hello, world!
+```
+
+You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
+
+```text
+my_string = "Hello, world!"
+print(my_string.startswith("Hello")) # True
+print(my_string.endswith("globe!"))  # False
+```
+
+The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
+
+```text
+my_string = "Hello, world!"
+print(my_string.split())    # ['Hello,', 'world!']
+print(my_string.split(",")) # ['Hello', ' world!']
+print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
+```
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2" %}
+
+
+
+
+
+![](../../.gitbook/assets/devider%20%284%29.png)
+
+
 
 
 
