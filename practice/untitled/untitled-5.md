@@ -59,4 +59,3 @@ print hash_table.lookup('UDACIOUS')
 #print(hash_table.table)
 
 ```
-

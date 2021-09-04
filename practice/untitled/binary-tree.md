@@ -133,8 +133,6 @@ write a function that checks to see if a given binary tree is perfectly balanced
 
 Analyze the time and space complexity of your function.
 
-
-
 JS Solution:
 
 ```javascript
@@ -186,10 +184,7 @@ console.log(checkBalanced(root)); // should print false
 
 root.insertRight(11);
 console.log(checkBalanced(root)); // should print true;
-
 ```
-
-
 
 ```javascript
 #  A recursive solution
@@ -271,10 +266,6 @@ class BinaryTreeNode:
 
 Analyze the time and space complexity of your solution.
 
-
-
-
-
 ## Create a Minimal Height BST from Sorted Array
 
 ### Understanding the Problem
@@ -295,7 +286,7 @@ def create_min_height_bst(sorted_arr):
     root.insert(elem)
 
   return root
-  
+
 ```
 
 ```javascript
@@ -382,7 +373,6 @@ bst = createMinHeightBST(sortedArray);
 
 console.log(isBST(bst, -Infinity, Infinity));
 console.log(isBSTMinHeight(bst, sortedArray.length));
-
 ```
 
 ```python
@@ -556,4 +546,3 @@ if __name__ == '__main__':
   unittest.main()
 
 ```
-
