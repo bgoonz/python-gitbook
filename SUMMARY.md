@@ -56,7 +56,7 @@
 
 ## quick-reference
 
-* [Untitled](quick-reference/untitled.md)
+* [Useful Info](quick-reference/untitled.md)
 
 ## Python-Docs
 
