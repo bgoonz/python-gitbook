@@ -4,6 +4,63 @@
 
 
 
+### Overview <a id="overview"></a>
+
+A module is a collection of code that is written to meet specific needs. For example, you could split up different parts of a game you were building into modules. Each module would be a separate Python file that you could manage separately.
+
+### Follow Along <a id="follow-along"></a>
+
+Any Python file that ends with the `.py` extension is considered a module. The name of the module is the name of the file.
+
+To import from other modules, we can use the `import` command.
+
+```text
+import math
+
+print(math.factorial(5))
+# 120
+```
+
+So, by importing the built-in `math` module, we have access to all of the functions and data defined in that module. We access those functions and data using dot notation, just like we do with objects.
+
+If you only need a specific function from a module, you can import that specific function like so:
+
+```text
+from math import factorial
+
+print(factorial(5))
+# 120
+```
+
+You can also import all the names from a module with this syntax to avoid using dot notation throughout your file.
+
+```text
+from math import *
+
+print(factorial(5))
+# 120
+print(pow(2, 3))
+# 8.0
+```
+
+You can also bind the module to a name of your choice by using `as`.
+
+```text
+import math as alias
+
+print(alias.factorial(5))
+# 120
+```
+
+To find out which names a module defines when imported, you can use the `dir()` method. This method returns an alphabetically sorted list of strings for all of the names defined in the module.
+
+```text
+import math
+
+print(dir(math))
+# ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees',
+```
+
 
 
 

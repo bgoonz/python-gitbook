@@ -87,12 +87,12 @@
 * [Useful Info](quick-reference/untitled.md)
 * [Untitled](quick-reference/untitled-1.md)
 
-## Python-Docs
+## Python-Docs <a id="stdlib"></a>
 
-* [Docs](python-docs/untitled.md)
-* [Lists](python-docs/lists.md)
-* [Dictionaries](python-docs/dictionaries.md)
-* [Classes](python-docs/classes.md)
+* [Docs](stdlib/untitled.md)
+* [Lists](stdlib/lists.md)
+* [Dictionaries](stdlib/dictionaries.md)
+* [Classes](stdlib/classes.md)
 
 ## MISC
 
