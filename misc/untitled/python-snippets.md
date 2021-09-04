@@ -2056,3 +2056,603 @@ reverse([1, 2, 3]) # [3, 2, 1]
 reverse('snippet') # 'teppins'
 ```
 
+
+
+#### Reverses a number.
+
+* Use `str()` to convert the number to a string, slice notation to reverse it and `str.replace()` to remove the sign.
+* Use `float()` to convert the result to a number and `math.copysign()` to copy the original sign.
+
+```python
+from math import copysign
+
+def reverse_number(n):
+  return copysign(float(str(n)[::-1].replace('-', '')), n)
+```
+
+```python
+reverse_number(981) # 189
+reverse_number(-500) # -5
+reverse_number(73.6) # 6.37
+reverse_number(-5.23) # -32.5
+```
+
+#### Converts the values of RGB components to a hexadecimal color code.
+
+* Create a placeholder for a zero-padded hexadecimal value using `'{:02X}'` and copy it three times.
+* Use `str.format()` on the resulting string to replace the placeholders with the given values.
+
+```python
+def rgb_to_hex(r, g, b):
+  return ('{:02X}' * 3).format(r, g, b)
+```
+
+```python
+rgb_to_hex(255, 165, 1) # 'FFA501'
+```
+
+#### Moves the specified amount of elements to the start of the list.
+
+* Use slice notation to get the two slices of the list and combine them before returning.
+
+```python
+def roll(lst, offset):
+  return lst[-offset:] + lst[:-offset]
+```
+
+```python
+roll([1, 2, 3, 4, 5], 2) # [4, 5, 1, 2, 3]
+roll([1, 2, 3, 4, 5], -2) # [3, 4, 5, 1, 2]
+```
+
+#### Returns a random element from a list.
+
+* Use `random.choice()` to get a random element from `lst`.
+
+```python
+from random import choice
+
+def sample(lst):
+  return choice(lst)
+```
+
+```python
+sample([3, 7, 9, 11]) # 9
+```
+
+#### Randomizes the order of the values of an list, returning a new list.
+
+* Uses the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to reorder the elements of the list.
+* [`random.shuffle`](https://docs.python.org/3/library/random.html#random.shuffle) provides similar functionality to this snippet.
+
+```python
+from copy import deepcopy
+from random import randint
+
+def shuffle(lst):
+  temp_lst = deepcopy(lst)
+  m = len(temp_lst)
+  while (m):
+    m -= 1
+    i = randint(0, m)
+    temp_lst[m], temp_lst[i] = temp_lst[i], temp_lst[m]
+  return temp_lst
+```
+
+```python
+foo = [1, 2, 3]
+shuffle(foo) # [2, 3, 1], foo = [1, 2, 3]
+```
+
+#### Returns a list of elements that exist in both lists.
+
+* Use a list comprehension on `a` to only keep values contained in both lists.
+
+```python
+def similarity(a, b):
+  return [item for item in a if item in b]
+```
+
+```python
+similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
+```
+
+#### Converts a string to a URL-friendly slug.
+
+* Use `str.lower()` and `str.strip()` to normalize the input string.
+* Use `re.sub()` to to replace spaces, dashes and underscores with `-` and remove special characters.
+
+```python
+import re
+
+def slugify(s):
+  s = s.lower().strip()
+  s = re.sub(r'[^\w\s-]', '', s)
+  s = re.sub(r'[\s_-]+', '-', s)
+  s = re.sub(r'^-+|-+$', '', s)
+  return s
+```
+
+```python
+slugify('Hello World!') # 'hello-world'
+```
+
+#### Converts a string to snake case.
+
+* Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
+* Use `re.sub()` to replace any `-` characters with spaces.
+* Finally, use `str.join()` to combine all words using `-` as the separator.
+
+```python
+from re import sub
+
+def snake(s):
+  return '_'.join(
+    sub('([A-Z][a-z]+)', r' \1',
+    sub('([A-Z]+)', r' \1',
+    s.replace('-', ' '))).split()).lower()
+```
+
+```python
+snake('camelCase') # 'camel_case'
+snake('some text') # 'some_text'
+snake('some-mixed_string With spaces_underscores-and-hyphens')
+# 'some_mixed_string_with_spaces_underscores_and_hyphens'
+snake('AllThe-small Things') # 'all_the_small_things'
+```
+
+#### Checks if the provided function returns `True` for at least one element in the list.
+
+* Use `any()` in combination with `map()` to check if `fn` returns `True` for any element in the list.
+
+```python
+def some(lst, fn = lambda x: x):
+  return any(map(fn, lst))
+```
+
+```python
+some([0, 1, 2, 0], lambda x: x >= 2 ) # True
+some([0, 0, 1, 0]) # True
+```
+
+#### Sorts one list based on another list containing the desired indexes.
+
+* Use `zip()` and `sorted()` to combine and sort the two lists, based on the values of `indexes`.
+* Use a list comprehension to get the first element of each pair from the result.
+* Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the third argument.
+
+```python
+def sort_by_indexes(lst, indexes, reverse=False):
+  return [val for (_, val) in sorted(zip(indexes, lst), key=lambda x: \
+          x[0], reverse=reverse)]
+```
+
+```python
+a = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
+b = [3, 2, 6, 4, 1, 5]
+sort_by_indexes(a, b) # ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']
+sort_by_indexes(a, b, True)
+# ['oranges', 'milk', 'jam', 'eggs', 'bread', 'apples']
+```
+
+#### Sorts the given dictionary by key.
+
+* Use `dict.items()` to get a list of tuple pairs from `d` and sort it using `sorted()`.
+* Use `dict()` to convert the sorted list back to a dictionary.
+* Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
+
+```python
+def sort_dict_by_key(d, reverse = False):
+  return dict(sorted(d.items(), reverse = reverse))
+```
+
+```python
+d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
+sort_dict_by_key(d) # {'five': 5, 'four': 4, 'one': 1, 'three': 3, 'two': 2}
+sort_dict_by_key(d, True)
+# {'two': 2, 'three': 3, 'one': 1, 'four': 4, 'five': 5}
+```
+
+#### Sorts the given dictionary by value.
+
+* Use `dict.items()` to get a list of tuple pairs from `d` and sort it using a lambda function and `sorted()`.
+* Use `dict()` to convert the sorted list back to a dictionary.
+* Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
+* **⚠️ NOTICE:** Dictionary values must be of the same type.
+
+```python
+def sort_dict_by_value(d, reverse = False):
+  return dict(sorted(d.items(), key = lambda x: x[1], reverse = reverse))
+```
+
+```python
+d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
+sort_dict_by_value(d) # {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
+sort_dict_by_value(d, True)
+# {'five': 5, 'four': 4, 'three': 3, 'two': 2, 'one': 1}
+```
+
+#### Splits a multiline string into a list of lines.
+
+* Use `str.split()` and `'\n'` to match line breaks and create a list.
+* [`str.splitlines()`](https://docs.python.org/3/library/stdtypes.html#str.splitlines) provides similar functionality to this snippet.
+
+```python
+def split_lines(s):
+  return s.split('\n')
+```
+
+```python
+split_lines('This\nis a\nmultiline\nstring.\n')
+# ['This', 'is a', 'multiline', 'string.' , '']
+```
+
+#### Flattens a list, by spreading its elements into a new list.
+
+* Loop over elements, use `list.extend()` if the element is a list, `list.append()` otherwise.
+
+```python
+def spread(arg):
+  ret = []
+  for i in arg:
+    ret.extend(i) if isinstance(i, list) else ret.append(i)
+  return ret
+```
+
+```python
+spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+#### Calculates the sum of a list, after mapping each element to a value using the provided function.
+
+* Use `map()` with `fn` to map each element to a value using the provided function.
+* Use `sum()` to return the sum of the values.
+
+```python
+def sum_by(lst, fn):
+  return sum(map(fn, lst))
+```
+
+```python
+sum_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 20
+```
+
+#### Returns the sum of the powers of all the numbers from `start` to `end` \(both inclusive\).
+
+* Use `range()` in combination with a list comprehension to create a list of elements in the desired range raised to the given `power`.
+* Use `sum()` to add the values together.
+* Omit the second argument, `power`, to use a default power of `2`.
+* Omit the third argument, `start`, to use a default starting value of `1`.
+
+```python
+def sum_of_powers(end, power = 2, start = 1):
+  return sum([(i) ** power for i in range(start, end + 1)])
+```
+
+```python
+sum_of_powers(10) # 385
+sum_of_powers(10, 3) # 3025
+sum_of_powers(10, 3, 5) # 2925
+```
+
+#### Returns the symmetric difference between two iterables, without filtering out duplicate values.
+
+* Create a `set` from each list.
+* Use a list comprehension on each of them to only keep values not contained in the previously created set of the other.
+
+```python
+def symmetric_difference(a, b):
+  (_a, _b) = (set(a), set(b))
+  return [item for item in a if item not in _b] + [item for item in b
+          if item not in _a]
+```
+
+```python
+symmetric_difference([1, 2, 3], [1, 2, 4]) # [3, 4]
+```
+
+#### Returns the symmetric difference between two lists, after applying the provided function to each list element of both.
+
+* Create a `set` by applying `fn` to each element in every list.
+* Use a list comprehension in combination with `fn` on each of them to only keep values not contained in the previously created set of the other.
+
+```python
+def symmetric_difference_by(a, b, fn):
+  (_a, _b) = (set(map(fn, a)), set(map(fn, b)))
+  return [item for item in a if fn(item) not in _b] + [item
+          for item in b if fn(item) not in _a]
+```
+
+```python
+from math import floor
+
+symmetric_difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2, 3.4]
+```
+
+#### Returns all elements in a list except for the first one.
+
+* Use slice notation to return the last element if the list's length is more than `1`.
+* Otherwise, return the whole list.
+
+```python
+def tail(lst):
+  return lst[1:] if len(lst) > 1 else lst
+```
+
+```python
+tail([1, 2, 3]) # [2, 3]
+tail([1]) # [1]
+```
+
+#### Returns a list with `n` elements removed from the beginning.
+
+* Use slice notation to create a slice of the list with `n` elements taken from the beginning.
+
+```python
+def take(itr, n = 1):
+  return itr[:n]
+```
+
+```python
+take([1, 2, 3], 5) # [1, 2, 3]
+take([1, 2, 3], 0) # []
+```
+
+#### Returns a list with `n` elements removed from the end.
+
+* Use slice notation to create a slice of the list with `n` elements taken from the end.
+
+```python
+def take_right(itr, n = 1):
+  return itr[-n:]
+```
+
+```python
+take_right([1, 2, 3], 2) # [2, 3]
+take_right([1, 2, 3]) # [3]
+```
+
+#### Returns the binary representation of the given number.
+
+* Use `bin()` to convert a given decimal number into its binary equivalent.
+
+```python
+def to_binary(n):
+  return bin(n)
+```
+
+```python
+to_binary(100) # 0b1100100
+```
+
+#### Combines two lists into a dictionary, where the elements of the first one serve as the keys and the elements of the second one serve as the values.
+
+The values of the first list need to be unique and hashable.
+
+* Use `zip()` in combination with `dict()` to combine the values of the two lists into a dictionary.
+
+```python
+def to_dictionary(keys, values):
+  return dict(zip(keys, values))
+```
+
+```python
+to_dictionary(['a', 'b'], [1, 2]) # { a: 1, b: 2 }
+```
+
+#### Returns the hexadecimal representation of the given number.
+
+* Use `hex()` to convert a given decimal number into its hexadecimal equivalent.
+
+```python
+def to_hex(dec):
+  return hex(dec)
+```
+
+```python
+to_hex(41) # 0x29
+to_hex(332) # 0x14c
+```
+
+#### Converts a date to its ISO-8601 representation.
+
+* Use `datetime.datetime.isoformat()` to convert the given `datetime.datetime` object to an ISO-8601 date.
+
+```python
+from datetime import datetime
+
+def to_iso_date(d):
+  return d.isoformat()
+```
+
+```python
+from datetime import datetime
+
+to_iso_date(datetime(2020, 10, 25)) # 2020-10-25T00:00:00
+```
+
+#### Converts an integer to its roman numeral representation.
+
+Accepts value between `1` and `3999` \(both inclusive\).
+
+* Create a lookup list containing tuples in the form of \(roman value, integer\).
+* Use a `for` loop to iterate over the values in `lookup`.
+* Use `divmod()` to update `num` with the remainder, adding the roman numeral representation to the result.
+
+```python
+def to_roman_numeral(num):
+  lookup = [
+    (1000, 'M'),
+    (900, 'CM'),
+    (500, 'D'),
+    (400, 'CD'),
+    (100, 'C'),
+    (90, 'XC'),
+    (50, 'L'),
+    (40, 'XL'),
+    (10, 'X'),
+    (9, 'IX'),
+    (5, 'V'),
+    (4, 'IV'),
+    (1, 'I'),
+  ]
+  res = ''
+  for (n, roman) in lookup:
+    (d, num) = divmod(num, n)
+    res += roman * d
+  return res
+```
+
+```python
+to_roman_numeral(3) # 'III'
+to_roman_numeral(11) # 'XI'
+to_roman_numeral(1998) # 'MCMXCVIII'
+```
+
+#### Transposes a two-dimensional list.
+
+* Use `*lst` to get the provided list as tuples.
+* Use `zip()` in combination with `list()` to create the transpose of the given two-dimensional list.
+
+```python
+def transpose(lst):
+  return list(zip(*lst))
+```
+
+```python
+transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
+# [(1, 4, 7, 10), (2, 5, 8, 11), (3, 6, 9, 12)]
+```
+
+#### Builds a list, using an iterator function and an initial seed value.
+
+* The iterator function accepts one argument \(`seed`\) and must always return a list with two elements \(\[`value`, `nextSeed`\]\) or `False` to terminate.
+* Use a generator function, `fn_generator`, that uses a `while` loop to call the iterator function and `yield` the `value` until it returns `False`.
+* Use a list comprehension to return the list that is produced by the generator, using the iterator function.
+
+```python
+def unfold(fn, seed):
+  def fn_generator(val):
+    while True:
+      val = fn(val[1])
+      if val == False: break
+      yield val[0]
+  return [i for i in fn_generator([None, seed])]
+```
+
+```python
+f = lambda n: False if n > 50 else [-n, n + 10]
+unfold(f, 10) # [-10, -20, -30, -40, -50]
+```
+
+#### Returns every element that exists in any of the two lists once.
+
+* Create a `set` with all values of `a` and `b` and convert to a `list`.
+
+```python
+def union(a, b):
+  return list(set(a + b))
+```
+
+```python
+union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
+```
+
+#### Returns every element that exists in any of the two lists once, after applying the provided function to each element of both.
+
+* Create a `set` by applying `fn` to each element in `a`.
+* Use a list comprehension in combination with `fn` on `b` to only keep values not contained in the previously created set, `_a`.
+* Finally, create a `set` from the previous result and `a` and transform it into a `list`
+
+```python
+def union_by(a, b, fn):
+  _a = set(map(fn, a))
+  return list(set(a + [item for item in b if fn(item) not in _a]))
+```
+
+```python
+from math import floor
+
+union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
+```
+
+#### Returns the unique elements in a given list.
+
+* Create a `set` from the list to discard duplicated values, then return a `list` from it.
+
+```python
+def unique_elements(li):
+  return list(set(li))
+```
+
+```python
+unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
+```
+
+#### Returns a flat list of all the values in a flat dictionary.
+
+* Use `dict.values()` to return the values in the given dictionary.
+* Return a `list()` of the previous result.
+
+```python
+def values_only(flat_dict):
+  return list(flat_dict.values())
+```
+
+```python
+ages = {
+  'Peter': 10,
+  'Isabel': 11,
+  'Anna': 9,
+}
+values_only(ages) # [10, 11, 9]
+```
+
+#### Returns the weighted average of two or more numbers.
+
+* Use `sum()` to sum the products of the numbers by their weight and to sum the weights.
+* Use `zip()` and a list comprehension to iterate over the pairs of values and weights.
+
+```python
+def weighted_average(nums, weights):
+  return sum(x * y for x, y in zip(nums, weights)) / sum(weights)
+```
+
+```python
+weighted_average([1, 2, 3], [0.6, 0.2, 0.3]) # 1.72727
+```
+
+#### Tests a value, `x`, against a testing function, conditionally applying a function.
+
+* Check if the value of `predicate(x)` is `True` and if so return `when_true(x)`, otherwise return `x`.
+
+```python
+def when(predicate, when_true):
+  return lambda x: when_true(x) if predicate(x) else x
+```
+
+```python
+double_even_numbers = when(lambda x: x % 2 == 0, lambda x : x * 2)
+double_even_numbers(2) # 4
+double_even_numbers(1) # 1
+```
+
+#### Converts a given string into a list of words.
+
+* Use `re.findall()` with the supplied `pattern` to find all matching substrings.
+* Omit the second argument to use the default regexp, which matches alphanumeric and hyphens.
+
+```python
+import re
+
+def words(s, pattern = '[a-zA-Z-]+'):
+  return re.findall(pattern, s)
+```
+
+```python
+words('I love Python!!') # ['I', 'love', 'Python']
+words('python, javaScript & coffee') # ['python', 'javaScript', 'coffee']
+words('build -q --out one-item', r'\b[a-zA-Z-]+\b')
+# ['build', 'q', 'out', 'one-item']
+```
+
