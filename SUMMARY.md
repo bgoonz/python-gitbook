@@ -51,6 +51,7 @@
 
 * [ADS Implementations:](practice/untitled/README.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
+  * [Array](practice/untitled/array.md)
   * [Stack](practice/untitled/stack.md)
   * [Queue](practice/untitled/queue.md)
   * [Binary Search](practice/untitled/binary-search.md)
