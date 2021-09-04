@@ -20,57 +20,11 @@
 
 {% embed url="https://gist.github.com/bgoonz/672f6599cc5bf68e68dd34a5acb2fe13\#file-copy-of-qandstack-ipynb" %}
 
+{% embed url="https://gist.github.com/bgoonz/afb19b48df5cddd69a9fe95e1b1b4495\#file-ht2-ipynb" %}
+
 
 
 {% embed url="https://gist.github.com/bgoonz/c6ddd80d7ae24eca670f5fbebb7795f0" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% embed url="https://gist.github.com/bgoonz/0236f68e179be2cf39774531364645f8\#file-copy-of-cs46-graphs-ii-ipynb" %}
 
