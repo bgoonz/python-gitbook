@@ -134,3 +134,260 @@ def binarySearchRec(arr, search_value):
 
 ```
 
+
+
+
+
+
+
+```python
+"""
+Given an array where elements are sorted in ascending order,
+convert it to a height balanced BST.
+"""
+
+
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+def array_to_bst(nums):
+    if not nums:
+        return None
+    mid = len(nums) // 2
+    node = TreeNode(nums[mid])
+    node.left = array_to_bst(nums[:mid])
+    node.right = array_to_bst(nums[mid + 1 :])
+    return node
+
+```
+
+```python
+"""
+Implement Binary Search Tree. It has method:
+    1. Insert
+    2. Search
+    3. Size
+    4. Traversal (Preorder, Inorder, Postorder)
+"""
+
+import unittest
+
+
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
+
+
+class BST(object):
+    def __init__(self):
+        self.root = None
+
+    def get_root(self):
+        return self.root
+
+    """
+        Get the number of elements
+        Using recursion. Complexity O(logN)
+    """
+
+    def size(self):
+        return self.recur_size(self.root)
+
+    def recur_size(self, root):
+        if root is None:
+            return 0
+        else:
+            return 1 + self.recur_size(root.left) + self.recur_size(root.right)
+
+    """
+        Search data in bst
+        Using recursion. Complexity O(logN)
+    """
+
+    def search(self, data):
+        return self.recur_search(self.root, data)
+
+    def recur_search(self, root, data):
+        if root is None:
+            return False
+        if root.data == data:
+            return True
+        elif data > root.data:  # Go to right root
+            return self.recur_search(root.right, data)
+        else:  # Go to left root
+            return self.recur_search(root.left, data)
+
+    """
+        Insert data in bst
+        Using recursion. Complexity O(logN)
+    """
+
+    def insert(self, data):
+        if self.root:
+            return self.recur_insert(self.root, data)
+        else:
+            self.root = Node(data)
+            return True
+
+    def recur_insert(self, root, data):
+        if root.data == data:  # The data is already there
+            return False
+        elif data < root.data:  # Go to left root
+            if root.left:  # If left root is a node
+                return self.recur_insert(root.left, data)
+            else:  # left root is a None
+                root.left = Node(data)
+                return True
+        else:  # Go to right root
+            if root.right:  # If right root is a node
+                return self.recur_insert(root.right, data)
+            else:
+                root.right = Node(data)
+                return True
+
+    """
+        Preorder, Postorder, Inorder traversal bst
+    """
+
+    def preorder(self, root):
+        if root:
+            print(str(root.data), end=" ")
+            self.preorder(root.left)
+            self.preorder(root.right)
+
+    def inorder(self, root):
+        if root:
+            self.inorder(root.left)
+            print(str(root.data), end=" ")
+            self.inorder(root.right)
+
+    def postorder(self, root):
+        if root:
+            self.postorder(root.left)
+            self.postorder(root.right)
+            print(str(root.data), end=" ")
+
+
+"""
+    The tree is created for testing:
+
+                    10
+                 /      \
+               6         15
+              / \       /   \
+            4     9   12      24
+                 /          /    \
+                7         20      30
+                         /
+                       18
+"""
+
+
+class TestSuite(unittest.TestCase):
+    def setUp(self):
+        self.tree = BST()
+        self.tree.insert(10)
+        self.tree.insert(15)
+        self.tree.insert(6)
+        self.tree.insert(4)
+        self.tree.insert(9)
+        self.tree.insert(12)
+        self.tree.insert(24)
+        self.tree.insert(7)
+        self.tree.insert(20)
+        self.tree.insert(30)
+        self.tree.insert(18)
+
+    def test_search(self):
+        self.assertTrue(self.tree.search(24))
+        self.assertFalse(self.tree.search(50))
+
+    def test_size(self):
+        self.assertEqual(11, self.tree.size())
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+```
+
+## Delete Node
+
+```python
+"""
+Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
+
+Basically, the deletion can be divided into two stages:
+
+Search for a node to remove.
+If the node is found, delete the node.
+Note: Time complexity should be O(height of tree).
+
+Example:
+
+root = [5,3,6,2,4,null,7]
+key = 3
+
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Given key to delete is 3. So we find the node with value 3 and delete it.
+
+One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
+
+    5
+   / \
+  4   6
+ /     \
+2       7
+
+Another valid answer is [5,2,6,null,4,null,7].
+
+    5
+   / \
+  2   6
+   \   \
+    4   7
+"""
+
+
+class Solution(object):
+    def delete_node(self, root, key):
+        """
+        :type root: TreeNode
+        :type key: int
+        :rtype: TreeNode
+        """
+        if not root:
+            return None
+
+        if root.val == key:
+            if root.left:
+                # Find the right most leaf of the left sub-tree
+                left_right_most = root.left
+                while left_right_most.right:
+                    left_right_most = left_right_most.right
+                # Attach right child to the right of that leaf
+                left_right_most.right = root.right
+                # Return left child instead of root, a.k.a delete root
+                return root.left
+            else:
+                return root.right
+        # If left or right child got deleted, the returned root is the child of the deleted node.
+        elif root.val > key:
+            root.left = self.deleteNode(root.left, key)
+        else:
+            root.right = self.deleteNode(root.right, key)
+        return root
+
+```
+
