@@ -14,13 +14,21 @@
 
 
 
+## The Algorithms Reference Site:
+
+{% embed url="https://bgoonz-branch-the-algos.vercel.app/" %}
+
 
 
 
 
 ## Notion:
 
-[https://www.notion.so/webdevhub42/Python-Data-Structures-Unit-1da9a5d55db844f4b62aff6fd2b4d1ce](https://www.notion.so/webdevhub42/Python-Data-Structures-Unit-1da9a5d55db844f4b62aff6fd2b4d1ce)
+{% embed url="https://www.notion.so/webdevhub42/Python-Data-Structures-Unit-1da9a5d55db844f4b62aff6fd2b4d1ce" %}
+
+
+
+Data Structures & Algorithm Interview Codebase \(mostly JS\):
 
 
 
