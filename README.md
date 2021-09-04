@@ -1,3 +1,7 @@
+---
+description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
+---
+
 # Home
 
 ### Main Repo:
