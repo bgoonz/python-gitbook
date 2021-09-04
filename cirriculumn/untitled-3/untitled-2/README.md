@@ -1088,6 +1088,12 @@ print(eight)
 
 ![](../../../.gitbook/assets/devider%20%284%29.png)
 
+
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-3\#main.py" %}
+
+
+
 {% embed url="https://gist.github.com/bgoonz/4f5c0b5fe80a84421ff9a5a66dce29da" %}
 
 
