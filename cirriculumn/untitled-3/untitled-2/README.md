@@ -2,6 +2,8 @@
 
 ![](../../../.gitbook/assets/image.png)
 
+
+
 #### Windows <a id="windows"></a>
 
 Windows machines usually do not ship with Python installed. Installing on Windows is pretty simple.
@@ -43,13 +45,15 @@ After Homebrew has finished its installation process, you then need to install P
 
 Here are a few websites that give you online access to the Python interpreter:
 
-- [Repl.it \(Links to an external site.\)](https://repl.it/)
-- [Trinket \(Links to an external site.\)](https://trinket.io/)
-- [Python Fiddle \(Links to an external site.\)](http://pythonfiddle.com/)
-- [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
-- [Python Anywhere](https://www.pythonanywhere.com/)
+* [Repl.it \(Links to an external site.\)](https://repl.it/)
+* [Trinket \(Links to an external site.\)](https://trinket.io/)
+* [Python Fiddle \(Links to an external site.\)](http://pythonfiddle.com/)
+* [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
+* [Python Anywhere](https://www.pythonanywhere.com/)
 
 ![](../../../.gitbook/assets/devider%20%281%29.png)
+
+
 
 #### Search and Research <a id="search-and-research"></a>
 
@@ -126,10 +130,10 @@ It appears the questioner proofread their question beforehand as it does not con
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [Stack Overflow: How Do I Ask a Good Question? \(Links to an external site.\)](https://stackoverflow.com/help/how-to-ask)
-- [Writing the Perfect Question \(Links to an external site.\)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
-- [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
-- [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
+* [Stack Overflow: How Do I Ask a Good Question? \(Links to an external site.\)](https://stackoverflow.com/help/how-to-ask)
+* [Writing the Perfect Question \(Links to an external site.\)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
+* [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
+* [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
 ![](../../../.gitbook/assets/devider%20%283%29.png)
 
@@ -257,11 +261,13 @@ You have now learned the basics of using the `print` function in Python. You lea
 
 Now, get some practice using the `print` function by completing the challenge below.
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
 
-- [ Home](https://lambdaschool.instructure.com/courses/1575)
-- [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
-- [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
+
+
+![](../../../.gitbook/assets/devider%20%284%29.png)
 
 ## Objective 04 - Use a print statement
 
@@ -391,7 +397,9 @@ Now, get some practice using the `print` function by completing the challenge be
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.w3schools.com/python/ref_func_print.asp](https://www.w3schools.com/python/ref_func_print.asp)
+* [https://www.w3schools.com/python/ref\_func\_print.asp](https://www.w3schools.com/python/ref_func_print.asp)
+
+
 
 ![](../../../.gitbook/assets/devider.png)
 
@@ -481,9 +489,13 @@ Consistent whitespace usage \(indentation\) is crucial to making sure that Pytho
 
 In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are `" "`, `\t`, and `\n`. The Python interpreter knows where the end of a logical line of code is because of the `\n`. The amount of whitespace \(level of indentation\) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
 
 ![](../../../.gitbook/assets/devider%20%282%29.png)
+
+## \#6:
 
 ### Overview <a id="overview"></a>
 
@@ -539,7 +551,11 @@ my_str = "Lambda School"
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3" %}
 
+
+
 ![](../../../.gitbook/assets/devider%20%284%29.png)
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -628,9 +644,13 @@ If our code works as expected, `combined` should have a length of 10.
 print(len(combined)) # 10
 ```
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1\#main.py" %}
 
 ![](../../../.gitbook/assets/devider%20%284%29.png)
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -663,11 +683,11 @@ print("my_list: %s" % my_list)
 
 A few of the common argument specifiers are:
 
-- `%s` - String \(or any object with a string representation\)
-- `%d` - Integers
-- `%f` - Floating point numbers
-- `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
-- `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
+* `%s` - String \(or any object with a string representation\)
+* `%d` - Integers
+* `%f` - Floating point numbers
+* `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
+* `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
 
 ### Follow Along <a id="follow-along"></a>
 
@@ -688,9 +708,17 @@ print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2" %}
 
+
+
+
+
 ![](../../../.gitbook/assets/devider%20%284%29.png)
+
+8
 
 ### Overview <a id="overview"></a>
 
@@ -759,4 +787,312 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2" %}
 
+
+
+
+
 ![](../../../.gitbook/assets/devider%20%284%29.png)
+
+## Objective 09 - Perform basic string operations
+
+
+
+### Overview <a id="overview"></a>
+
+You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.
+
+There are lots of ways you can interact with strings in Python.
+
+### Follow Along <a id="follow-along"></a>
+
+The `len()` method prints out the number of characters in the string.
+
+```text
+my_string = "Hello, world!"
+print(len(my_string)) # 12
+```
+
+The `index()` method prints out the index of the substring argument's first occurrence.
+
+```text
+my_string = "Hello, world!"
+print(my_string.index("o"))   # 4
+print(my_string.index(", w")) # 5
+```
+
+The `count()` method returns the number of occurrences of the substring argument.
+
+```text
+my_string = "Hello, world!"
+print(my_string.count("o"))  # 2
+print(my_string.count("ll")) # 1
+```
+
+To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
+
+```text
+my_string = "Hello, world!"
+print(my_string[3:7])   # lo,
+print(my_string[3:7:2]) # l,
+print(my_string[::-1])  # !dlrow ,olleH
+```
+
+You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
+
+```text
+my_string = "Hello, world!"
+print(my_string.upper()) # HELLO, WORLD!
+print(my_string.lower()) # hello, world!
+```
+
+You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
+
+```text
+my_string = "Hello, world!"
+print(my_string.startswith("Hello")) # True
+print(my_string.endswith("globe!"))  # False
+```
+
+The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
+
+```text
+my_string = "Hello, world!"
+print(my_string.split())    # ['Hello,', 'world!']
+print(my_string.split(",")) # ['Hello', ' world!']
+print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
+
+```
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-3" %}
+
+
+
+
+
+
+
+![](../../../.gitbook/assets/devider%20%284%29.png)
+
+
+
+
+
+### Overview <a id="overview"></a>
+
+Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program's flow. Python's boolean values are written as `True` and `False` \(make sure you capitalize the first character\).
+
+### Follow Along <a id="follow-along"></a>
+
+To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
+
+```python
+x = 10
+print(x == 10) # True
+print(x == 5)  # False
+print(x < 15)  # True
+print(x > 15)  # False
+print(x <= 10) # True
+print(x >= 10) # True
+print(x != 20) # True
+```
+
+You build up more complex boolean expressions by using the `and` and `or` operators.
+
+```python
+name = "Elon"
+age = 49
+if name == "Elon" and age == 49:
+    print("You are a 49 year old person named Elon.")
+
+if name == "Elon" or name == "Bill":
+    print("Your name is either Elon or Bill.")
+```
+
+Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
+
+```python
+years = [2018, 2019, 2020, 2021]
+year = 2020
+
+if year in years:
+    print("%s is in the years collection" % year)
+
+# 2020 is in the years collection
+```
+
+We can use the `if`, `elif`, and the `else` keywords to define a series of code blocks that will execute conditionally.
+
+```python
+first_statement = False
+second_statement = True
+
+if first_statement:
+    print("The first statement is true")
+elif second_statement:
+    print("The second statement is true")
+else:
+    print("Neither the first statement nor the second statement are true")
+```
+
+Any object that is considered "empty" evaluates to `False`. For example, `""`, `[]`, and `0` all evaluate to `False`.
+
+If we want to determine if two objects are actually the same instance in memory, we use the `is` operator instead of the value comparison operator `==`.
+
+```python
+a = [1,2,3]
+b = [1,2,3]
+
+print(a == b) # True because a and b have the same value
+print(a is b) # False because a and b reference two different list objects
+
+x = [1,2,3]
+y = x
+
+print(x == y) # True because x and y have the same value
+print(x is y) # True because x and y reference the same list object
+```
+
+There is also the `not` operator, which inverts the boolean that follows it:
+
+```python
+print(not False)    # True
+print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
+```
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2\#main.py" %}
+
+![](../../../.gitbook/assets/devider%20%284%29.png)
+
+
+
+### Overview <a id="overview"></a>
+
+You can use two types of loops in Python, a `for` loop and a `while` loop. A `for` loop iterates over a given sequence \(iterator expression\). A `while` loop repeats as long as a boolean context evaluates to `True`.
+
+The `break` statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the `break` statement is inside a nested loop \(loop inside another loop\), the `break` statement will only terminate the innermost loop.
+
+You can use the `continue` statement to skip the rest of the code inside a loop _for the current iteration only_. The loop does not terminate entirely but continues with the next iteration.
+
+### Follow Along <a id="follow-along"></a>
+
+Here is an example of a few different ways you can use a `range` as the iterable for a `for` loop.
+
+```python
+# Prints 0, 1, 2, 3, 4
+for x in range(5):
+    print(x):
+
+# Prints 2, 3, 4, 5, 6
+for x in range(2, 7):
+    print(x)
+
+# Prints 1, 3, 5, 7
+for x in range(1, 8, 2):
+    print(x)
+```
+
+This example shows the simple usage of a `while` loop to print the same values as the `for` loops above.
+
+```python
+# Prints 0, 1, 2, 3, 4
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+# Prints 2, 3, 4, 5, 6
+count = 2
+while count < 7:
+    print(count)
+    count += 1
+
+# Prints 1, 3, 5, 7
+count = 1
+while count < 8:
+    print(count)
+      count += 2
+```
+
+You can use a `break` statement to exit a `for` loop or a `while` loop.
+
+```python
+# Prints 0, 1, 2, 3, 4
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count >= 5:
+        break
+```
+
+You can also use a `continue` statement to skip the current block but not exit the loop entirely.
+
+```text
+# Prints 1, 3, 5, 7
+for x in range(8):
+    # if x is even, skip this block and do not print
+    if x % 2 == 0:
+        continue
+    print(x)
+```
+
+
+
+
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-2\#main.py" %}
+
+![](../../../.gitbook/assets/devider%20%284%29.png)
+
+## Objective 12 - Create user-defined functions and call them
+
+
+
+To make our code more readable and DRY \(Don't Repeat Yourself\), we often want to encapsulate code inside a callable function.
+
+To define a function in Python, we follow this syntax:
+
+```python
+def function_name(argument_1, argument_2, etc.):
+    # function line 1
+    # function line 2
+    # etc.
+```
+
+### Follow Along <a id="follow-along"></a>
+
+Let's define a greeting function that allows us to specify a name and a specific greeting.
+
+```python
+def greet(name, greeting):
+    print("Hello, %s, %s" % (name, greeting))
+```
+
+Now, we can call our `greet` function and pass in the data that we want.
+
+```python
+greet("Austen", "I hope you are having an excellent day!")
+# Hello, Austen, I hope you are having an excellent day!
+```
+
+If we want to define a function that returns a value to the caller, we use the `return` keyword.
+
+```python
+def double(x):
+    return x * 2
+
+eight = double(4)
+print(eight)
+# 8
+```
+
+![](../../../.gitbook/assets/devider%20%284%29.png)
+
+{% embed url="https://gist.github.com/bgoonz/4f5c0b5fe80a84421ff9a5a66dce29da" %}
+
+
+
+
+
+
+
