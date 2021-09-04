@@ -62,5 +62,6 @@
 
 ## MISC
 
-* [Untitled](misc/untitled.md)
+* [Untitled](misc/untitled/README.md)
+  * [Python Snippets](misc/untitled/python-snippets.md)
 
