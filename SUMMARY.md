@@ -93,6 +93,7 @@
 ## MISC
 
 * [About Python](misc/untitled/README.md)
+  * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
   * [Untitled](misc/untitled/untitled.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
 
