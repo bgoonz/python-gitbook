@@ -31,7 +31,8 @@
 ## Utilities
 
 * [Code lab Notebooks](utilities/code-lab-notebooks.md)
-* [Repl.IT](utilities/repl.it.md)
+* [Repl.IT](utilities/repl.it/README.md)
+  * [Trinket](utilities/repl.it/trinket.md)
 * [Utilites](utilities/untitled/README.md)
   * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 

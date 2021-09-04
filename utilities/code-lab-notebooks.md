@@ -1,5 +1,9 @@
 # Code lab Notebooks
 
+{% embed url="https://gist.github.com/bgoonz/85cf385ba5382cea548c2b6083cd1b3f\#file-number-bases-and-chars-ipynb" %}
+
+
+
 {% embed url="https://gist.github.com/bgoonz/6161262b9e48fc622782a85bbb804852\#file-copy-of-arraysandstrings-ipynb" %}
 
 {% embed url="https://gist.github.com/bgoonz/8a92c0f02d7847eb67e3732384d4d03b\#file-cs47-python-iii-ipynb" %}
@@ -10,11 +14,13 @@
 
 {% embed url="https://gist.github.com/bgoonz/4323443e5b3b4eb8b4b880e17b0612c4\#file-cs47-python-ii-ipynb" %}
 
-{% embed url="https://gist.github.com/bgoonz/477dd40bc5c4899981efacad9b1a5af3\#file-copy-of-cs47-python-ii-ipynb" %}
-
 
 
 {% embed url="https://gist.github.com/bgoonz/d4cfd92a32cfc64bfa4435107fa6a699\#file-copy-of-searching-ipynb" %}
+
+{% embed url="https://gist.github.com/bgoonz/672f6599cc5bf68e68dd34a5acb2fe13\#file-copy-of-qandstack-ipynb" %}
+
+
 
 {% embed url="https://gist.github.com/bgoonz/c6ddd80d7ae24eca670f5fbebb7795f0" %}
 
