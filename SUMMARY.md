@@ -73,6 +73,7 @@
 ## Resources
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
+* [Calculating Big O](resources/calculating-big-o.md)
 * [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
