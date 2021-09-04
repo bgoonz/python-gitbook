@@ -28,7 +28,8 @@
 
 ## Utilities
 
-* [Untitled](utilities/untitled.md)
+* [Utilites](utilities/untitled/README.md)
+  * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 
 ## data-structures
 
@@ -50,7 +51,8 @@
 
 ## Resources
 
-* [Untitled](resources/untitled.md)
+* [Untitled](resources/untitled/README.md)
+  * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## quick-reference
 
