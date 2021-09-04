@@ -51,6 +51,17 @@
 
 * [ADS Implementations:](practice/untitled/README.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
+  * [Stack](practice/untitled/stack.md)
+  * [Queue](practice/untitled/queue.md)
+  * [Binary Search](practice/untitled/binary-search.md)
+  * [Binary Tree](practice/untitled/binary-tree.md)
+  * [Untitled](practice/untitled/untitled-6.md)
+  * [Untitled](practice/untitled/untitled-5.md)
+  * [Untitled](practice/untitled/untitled-4.md)
+  * [Untitled](practice/untitled/untitled-3.md)
+  * [Untitled](practice/untitled/untitled-2.md)
+  * [Untitled](practice/untitled/untitled-1.md)
+  * [Untitled](practice/untitled/untitled.md)
 
 ## Resources
 
