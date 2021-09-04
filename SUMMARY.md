@@ -56,6 +56,8 @@
   * [Queue](practice/untitled/queue.md)
   * [Binary Search](practice/untitled/binary-search.md)
   * [Binary Tree](practice/untitled/binary-tree.md)
+  * [Binary Search Tree](practice/untitled/binary-search-tree/README.md)
+    * [BST Insert](practice/untitled/binary-search-tree/bst-insert.md)
   * [Recursion](practice/untitled/untitled-6.md)
   * [Hash Table](practice/untitled/untitled-5.md)
   * [Linked List](practice/untitled/untitled-4.md)
