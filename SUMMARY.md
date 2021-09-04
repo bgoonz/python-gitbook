@@ -12,6 +12,7 @@
   * [D3](cirriculumn/untitled-3/untitled-1.md)
   * [D4](cirriculumn/untitled-3/untitled.md)
 * [wk18](cirriculumn/untitled-2/README.md)
+  * [Untitled](cirriculumn/untitled-2/untitled-4.md)
   * [D1](cirriculumn/untitled-2/untitled-3.md)
   * [D2](cirriculumn/untitled-2/untitled-2.md)
   * [D3](cirriculumn/untitled-2/untitled-1.md)
@@ -29,6 +30,7 @@
 
 ## Utilities
 
+* [Code lab Notebooks](utilities/code-lab-notebooks.md)
 * [Repl.IT](utilities/repl.it.md)
 * [Utilites](utilities/untitled/README.md)
   * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
@@ -51,10 +53,13 @@
 
 * [ADS Implementations:](practice/untitled/README.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
+  * [Array](practice/untitled/array.md)
   * [Stack](practice/untitled/stack.md)
   * [Queue](practice/untitled/queue.md)
   * [Binary Search](practice/untitled/binary-search.md)
   * [Binary Tree](practice/untitled/binary-tree.md)
+  * [Binary Search Tree](practice/untitled/binary-search-tree/README.md)
+    * [BST Insert](practice/untitled/binary-search-tree/bst-insert.md)
   * [Recursion](practice/untitled/untitled-6.md)
   * [Hash Table](practice/untitled/untitled-5.md)
   * [Linked List](practice/untitled/untitled-4.md)
@@ -76,14 +81,22 @@
 ## Python-Docs
 
 * [Docs](python-docs/untitled.md)
+* [Lists](python-docs/lists.md)
+* [Dictionaries](python-docs/dictionaries.md)
+* [Classes](python-docs/classes.md)
 
 ## MISC
 
 * [About Python](misc/untitled/README.md)
+  * [Untitled](misc/untitled/untitled.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
 
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
+
+## Installations Setup & Env
+
+* [python-setup](installations-setup-and-env/untitled.md)
 
