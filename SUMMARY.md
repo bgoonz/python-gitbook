@@ -6,7 +6,7 @@
 
 * [Outline](cirriculumn/untitled.md)
 * [wk17](cirriculumn/untitled-3/README.md)
-  * [Overview](cirriculumn/untitled-3/week-overview.md)
+  * [homework](cirriculumn/untitled-3/week-overview.md)
   * [D1](cirriculumn/untitled-3/untitled-2/README.md)
     * [Install Python](cirriculumn/untitled-3/untitled-2/install-python.md)
   * [D2](cirriculumn/untitled-3/untitled-1-1.md)
@@ -98,6 +98,7 @@
 
 ## MISC
 
+* [Outline](misc/outline.md)
 * [About Python](misc/untitled/README.md)
   * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
   * [Untitled](misc/untitled/untitled.md)

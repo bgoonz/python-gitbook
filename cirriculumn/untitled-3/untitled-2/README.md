@@ -2,6 +2,8 @@
 
 ![](../../../.gitbook/assets/image.png)
 
+{% embed url="https://replit.com/@bgoonz/d1\#main.py" %}
+
 
 
 #### Windows <a id="windows"></a>
