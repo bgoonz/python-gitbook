@@ -74,6 +74,7 @@
 ## Resources
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
+* [Untitled](resources/untitled-1.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
 * [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
@@ -108,4 +109,8 @@
 ## Installations Setup & Env
 
 * [python-setup](installations-setup-and-env/untitled.md)
+
+---
+
+* [List Of Python Cheat Sheets](bash-commands.md)
 
