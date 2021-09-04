@@ -75,6 +75,7 @@
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
 * [Untitled](resources/untitled-1.md)
+* [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
 * [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
@@ -104,6 +105,7 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
+  * [Interview Checklist](interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
 
 ## Installations Setup & Env
