@@ -72,6 +72,7 @@
 
 ## Resources
 
+* [Python VS JavaScript](resources/python-vs-javascript.md)
 * [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
@@ -80,6 +81,7 @@
 ## quick-reference
 
 * [Useful Info](quick-reference/untitled.md)
+* [Untitled](quick-reference/untitled-1.md)
 
 ## Python-Docs
 
