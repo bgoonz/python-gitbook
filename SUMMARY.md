@@ -51,7 +51,7 @@
 
 ## Resources
 
-* [Untitled](resources/untitled/README.md)
+* [Useful Links](resources/untitled/README.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## quick-reference
