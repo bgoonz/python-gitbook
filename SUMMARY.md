@@ -76,6 +76,9 @@
 ## Python-Docs
 
 * [Docs](python-docs/untitled.md)
+* [Lists](python-docs/lists.md)
+* [Dictionaries](python-docs/dictionaries.md)
+* [Classes](python-docs/classes.md)
 
 ## MISC
 
