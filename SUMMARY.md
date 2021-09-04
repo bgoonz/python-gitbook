@@ -55,13 +55,13 @@
   * [Queue](practice/untitled/queue.md)
   * [Binary Search](practice/untitled/binary-search.md)
   * [Binary Tree](practice/untitled/binary-tree.md)
-  * [Untitled](practice/untitled/untitled-6.md)
-  * [Untitled](practice/untitled/untitled-5.md)
-  * [Untitled](practice/untitled/untitled-4.md)
-  * [Untitled](practice/untitled/untitled-3.md)
-  * [Untitled](practice/untitled/untitled-2.md)
-  * [Untitled](practice/untitled/untitled-1.md)
-  * [Untitled](practice/untitled/untitled.md)
+  * [Recursion](practice/untitled/untitled-6.md)
+  * [Hash Table](practice/untitled/untitled-5.md)
+  * [Linked List](practice/untitled/untitled-4.md)
+  * [Sorting](practice/untitled/untitled-3.md)
+  * [Searching](practice/untitled/untitled-2.md)
+  * [Graphs](practice/untitled/untitled-1.md)
+  * [Exotic](practice/untitled/untitled.md)
 
 ## Resources
 
