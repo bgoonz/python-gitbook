@@ -115,7 +115,7 @@
   * [Python Modules & Python Packages](misc/untitled/untitled-1.md)
   * [Misc](misc/untitled/misc.md)
   * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
-  * [Untitled](misc/untitled/untitled.md)
+  * [SCRAP](misc/untitled/untitled.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
 
 ## Interview Prep

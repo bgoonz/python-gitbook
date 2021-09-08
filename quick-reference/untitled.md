@@ -2,7 +2,7 @@
 
 #### Big O Cheat Sheet
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%282%29%20%281%29.png)
 
 {% embed url="https://codesandbox.io/s/3wqy4" %}
 

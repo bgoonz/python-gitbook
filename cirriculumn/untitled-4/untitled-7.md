@@ -49,7 +49,7 @@ Queues are useful data structures in any situation where you want to make sure t
 
 * [https://www.geeksforgeeks.org/queue-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/queue-data-structure/)
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
@@ -106,7 +106,7 @@ Additionally, function calls and execution contexts are managed on a call stack.
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 03 - Implement a queue using a linked list
 
@@ -198,7 +198,7 @@ Now we have a `Queue` class that uses a singly-linked list as the underlying dat
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
@@ -253,7 +253,7 @@ class Stack:
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 05 - Implement a stack using a linked list
 
@@ -338,7 +338,7 @@ class Stack:
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 

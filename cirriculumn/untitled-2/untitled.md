@@ -83,7 +83,7 @@ You will see this come up when analyzing the time complexity of specific algorit
 * [https://www.mathsisfun.com/algebra/logarithms.html \(Links to an external site.\)](https://www.mathsisfun.com/algebra/logarithms.html)
 * [https://www.interviewcake.com/article/python3/logarithms](https://www.interviewcake.com/article/java/logarithms)
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 02 - Write a linear search algorithm
 
@@ -115,7 +115,7 @@ def linear_search(arr, target):
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
@@ -123,7 +123,7 @@ def linear_search(arr, target):
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
@@ -131,7 +131,7 @@ def linear_search(arr, target):
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
@@ -139,7 +139,7 @@ def linear_search(arr, target):
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 

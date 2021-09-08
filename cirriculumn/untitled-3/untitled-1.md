@@ -135,7 +135,7 @@ print(phonebook.pop("Bill"))
 * [https://www.w3schools.com/python/python\_dictionaries.asp \(Links to an external site.\)](https://www.w3schools.com/python/python_dictionaries.asp)
 * [https://docs.python.org/3/tutorial/datastructures.html\#dictionaries \(Links to an external site.\)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 02 - Recognize mutable and immutable objects
 
@@ -823,7 +823,7 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
 
@@ -1027,7 +1027,7 @@ The only two options left at this point are logarithmic and linear. Since the tw
 
 
 
-![](../../.gitbook/assets/devider%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 
 
