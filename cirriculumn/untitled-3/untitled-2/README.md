@@ -53,7 +53,7 @@ Here are a few websites that give you online access to the Python interpreter:
 * [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
 * [Python Anywhere](https://www.pythonanywhere.com/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 
 
@@ -137,7 +137,7 @@ It appears the questioner proofread their question beforehand as it does not con
 * [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
 * [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%285%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%285%29.png)
 
 ## Objective 04 - Use a print statement
 
@@ -267,7 +267,7 @@ Now, get some practice using the `print` function by completing the challenge be
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29.png)
 
 ## Objective 05 - Use white space to denote blocks
 
@@ -359,7 +359,7 @@ In Python, whitespace has meaning; it denotes the end of logical lines and also 
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%282%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%282%29.png)
 
 ## \#6:
 
@@ -419,7 +419,7 @@ my_str = "Lambda School"
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -514,7 +514,7 @@ print(len(combined)) # 10
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -582,7 +582,7 @@ print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 8
 
@@ -657,7 +657,7 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 ## Objective 09 - Perform basic string operations
 
@@ -737,7 +737,7 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -827,7 +827,7 @@ print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -908,7 +908,7 @@ for x in range(8):
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-2\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 ## Objective 12 - Create user-defined functions and call them
 
@@ -952,7 +952,7 @@ print(eight)
 # 8
 ```
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 

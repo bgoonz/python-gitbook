@@ -76,7 +76,7 @@ You must keep these facts in mind and account for them when using a slice in you
 * [https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/ \(Links to an external site.\)](https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/)
 * [https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -164,7 +164,7 @@ Notice how we had to store the returned list in a new variable. Also, notice tha
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -228,7 +228,7 @@ So, let's say that your dynamic array instantiates with an underlying static arr
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 ## Array and String Manipulation <a id="array-and-string-manipulation"></a>
 
@@ -238,7 +238,7 @@ This module project requires you to answer some multiple-choice questions relate
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -246,7 +246,7 @@ This module project requires you to answer some multiple-choice questions relate
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 

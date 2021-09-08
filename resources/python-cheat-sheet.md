@@ -6,7 +6,7 @@
 
 
 
-![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%284%29.png)
+![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%284%29.png)
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%283%29.png)
+![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%283%29.png)
 
 {% embed url="https://mybinder.org/v2/gh/wilfredinni/python-cheatsheet/1b1fd1d46ea6b2bff715db5c0e1c2b26bacb74f5" %}
 
