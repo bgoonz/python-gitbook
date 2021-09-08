@@ -164,8 +164,8 @@ Notice the empty line after calling the `print` function. The default `end` valu
 Using `print` with a string literal:
 
 ```text
->>> print("Lambda School is awesome!")
-Lambda School is awesome!
+>>> print("School is awesome!")
+School is awesome!
 >>>
 ```
 
