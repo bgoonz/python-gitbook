@@ -4,6 +4,15 @@
 
 
 
+## Reverse String:
+
+```python
+def reverse(lines):
+    return "Reverse order: " + lines[::-1] + "\n" + "Normal Order: " + lines
+print(reverse("I am printing a sentence in reverse order"))
+print(reverse("printing strings in reverse order using python"))
+```
+
 
 
 ### Implement a function recursively to get the desired Fibonacci sequence value. Your code should have the same input/output as the iterative code in the instructions.
