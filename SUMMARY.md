@@ -159,6 +159,7 @@
 ## Installations Setup & Env
 
 * [python-setup](installations-setup-and-env/untitled.md)
+* [Installing Python Modules](installations-setup-and-env/installing-python-modules.md)
 
 ## Aux-Exploration
 
