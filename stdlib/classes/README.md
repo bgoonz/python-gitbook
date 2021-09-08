@@ -1,13 +1,5 @@
 # Classes
 
-
-
-1. [Home](https://thepythonguru.com/)
-2. 3. [Blog](https://thepythonguru.com/blog/)
-4. 5. Python Classes and Interfaces
-
-\(Sponsors\) Get started learning Python with [DataCamp's](https://www.datacamp.com/?utm_source=thepythonguru&utm_campaign=thepythonguru_tutorials) free [Intro to Python tutorial](https://www.datacamp.com/courses/intro-to-python-for-data-science/?utm_source=thepythonguru&utm_campaign=thepythonguru_tutorials). Learn Data Science by completing interactive coding challenges and watching videos by expert instructors. [Start Now!](https://www.datacamp.com/courses/intro-to-python-for-data-science/?utm_source=thepythonguru&utm_campaign=thepythonguru_tutorials)
-
 ## Python Classes and Interfaces
 
  Updated on Jan 07, 2020

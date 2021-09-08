@@ -105,6 +105,7 @@
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes/README.md)
+  * [Python Objects & Classes](stdlib/classes/python-objects-and-classes.md)
   * [index](stdlib/classes/untitled.md)
 * [Queue & Stacks](stdlib/queue-and-stacks.md)
 
