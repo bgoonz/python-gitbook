@@ -60,7 +60,7 @@ We can track that by adding neighbors to a _queue_ \(which remember is first in,
 
 Let's explore some pseudo-code that shows a basic implementation of a breadth-first-search of a graph. Make sure you can read the pseudo-code and understand what each line is doing before moving on.
 
-```text
+```python
 BFS(graph, startVert):
     for v of graph.vertexes:
         v.color = white
@@ -103,7 +103,7 @@ On your own, complete the following tasks:
 1. Please spend a few minutes researching to find a unique use-case of a breadth-first-search that we did not mention in the list above.
 2. Using the graph represented below, draw a picture of the graph and label each of the verts to show the correct vertex visitation order for a breadth-first-search starting with vertex `"I"`.
 
-   ```text
+   ```python
    class Graph:
        def __init__(self):
            self.vertices = {

@@ -9,7 +9,7 @@ This code is the very beginning of an employee management system for a company. 
 
 #### Running the tests
 
-```text
+```python
 python -m unittests tests
 
 ```
