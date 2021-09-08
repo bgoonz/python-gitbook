@@ -1,5 +1,19 @@
 # Linked List
 
+### Linked lists in Python
+
+[Linked lists](https://www.educative.io/blog/data-structures-linked-list-java-tutorial) are a sequential collection of data that uses **relational pointers on each data node** to link to the next node in the list.
+
+Unlike arrays, linked lists do not have objective positions in the list. Instead, they have relational positions based on their surrounding nodes.
+
+The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI4MCIgaGVpZ2h0PSI0NzM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/5638844823633920)![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
+
+Linked lists can be singly or doubly linked depending if each node has just a single pointer to the next node or if it also has a second pointer to the previous node.
+
+You can think of linked lists like a chain; individual links only have a connection to their immediate neighbors but all the links together form a larger structure.
+
+Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.
+
 {% tabs %}
 {% tab title="Implementation " %}
 ```python
