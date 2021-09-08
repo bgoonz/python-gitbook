@@ -97,7 +97,8 @@
 
 * [Basic Syntax](stdlib/basic-syntax.md)
 * [Python Standard Library  \(STDLIB\)](stdlib/python-standard-library-stdlib.md)
-* [Docs](stdlib/untitled.md)
+* [Docs](stdlib/untitled/README.md)
+  * [String-Methods](stdlib/untitled/string-methods.md)
 * [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)

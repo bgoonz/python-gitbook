@@ -6,6 +6,38 @@
 
 {% embed url="https://gist.github.com/bgoonz/ebe842b651bba237d70bccfa5a7b5a75\#file-number-bases-and-chars-ipynb" %}
 
+{% tabs %}
+{% tab title="First Tab" %}
+
+
+```python
+def toHex(dec):
+    digits = "0123456789ABCDEF"
+    x = (dec % 16)
+    rest = dec // 16
+    if (rest == 0):
+        return digits[x]
+    return toHex(rest) + digits[x]
+
+# numbers = [0, 11, 16, 32, 33, 41, 45, 678, 574893]
+# for x in numbers:
+#     print(x, toHex(x))
+# for x in numbers:
+#     print(x, hex(x))
+
+#numbers = [0, 11, 16, 32, 33, 41, 45, 678, 574893]
+for x in range(200):
+    print(x, toHex(x), hex(x), chr(x),)
+# for x in range(200):
+#     print(x, hex(x))
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
 
 
 ### Overview <a id="overview"></a>
