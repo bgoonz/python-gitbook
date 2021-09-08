@@ -6,13 +6,45 @@
 
 Unlike arrays, linked lists do not have objective positions in the list. Instead, they have relational positions based on their surrounding nodes.
 
-The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI4MCIgaGVpZ2h0PSI0NzM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/5638844823633920)![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
+The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI4MCIgaGVpZ2h0PSI0NzM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
+
+![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
+
+![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/5638844823633920)
 
 Linked lists can be singly or doubly linked depending if each node has just a single pointer to the next node or if it also has a second pointer to the previous node.
 
 You can think of linked lists like a chain; individual links only have a connection to their immediate neighbors but all the links together form a larger structure.
 
 Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.
+
+
+
+
+
+**Advantages:**
+
+* Efficient insertion and deletion of new elements
+* Simpler to reorganize than arrays
+* Useful as a starting point for advanced data structures like graphs or trees
+
+**Disadvantages:**
+
+* Storage of pointers with each data point increases memory usage
+* Must always traverse the linked list from Head node to find a specific element
+
+**Applications:**
+
+* Building block for advanced data structures
+* Solutions that call for frequent addition and removal of data
+
+#### Common linked list interview questions in Python
+
+* Print the middle element of a given linked list
+* Remove duplicate elements from a sorted linked list
+* Check if a singly linked list is a palindrome
+* Merge K sorted linked lists
+* Find the intersection point of two linked lists
 
 {% tabs %}
 {% tab title="Implementation " %}
@@ -129,8 +161,28 @@ print ll.get_position(3).value
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Simple" %}
+```python
+class Node:
+    def __init__(self, dataval=None):
+        self.dataval = dataval
+        self.nextval = None
+ 
+class SLinkedList:
+    def __init__(self):
+        self.headval = None
+ 
+list1 = SLinkedList()
+list1.headval = Node("Mon")
+e2 = Node("Tue")
+e3 = Node("Wed")
+# Link first Node to second node
+list1.headval.nextval = e2
+ 
+# Link second Node to third node
+e2.nextval = e3
 
+```
 {% endtab %}
 
 {% tab title="Advanced" %}

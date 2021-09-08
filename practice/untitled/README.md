@@ -2,7 +2,7 @@
 
 {% page-ref page="array/" %}
 
-{% page-ref page="binary-search-tree/" %}
+{% page-ref page="tree/binary-search-tree/" %}
 
 {% page-ref page="untitled-4/" %}
 
@@ -10,7 +10,7 @@
 
 {% page-ref page="stack.md" %}
 
-{% page-ref page="binary-tree.md" %}
+{% page-ref page="tree/binary-tree.md" %}
 
 {% page-ref page="untitled-6/" %}
 
