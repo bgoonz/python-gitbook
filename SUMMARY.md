@@ -46,7 +46,7 @@
 ## practice
 
 * [Supplemental Practice:](practice/supplemental-practice.md)
-* [ADS Implementations:](practice/untitled/README.md)
+* [Abstract Data Structures:](practice/untitled/README.md)
   * [Industry Standard Algorithms](practice/untitled/industry-standard-algorithms.md)
   * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
