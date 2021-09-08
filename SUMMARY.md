@@ -67,6 +67,7 @@
   * [Hash Table](practice/untitled/untitled-5.md)
   * [Linked List](practice/untitled/untitled-4/README.md)
     * [Double Linked List](practice/untitled/untitled-4/double-linked-list.md)
+    * [List Operations](practice/untitled/untitled-4/list-operations.md)
   * [Sorting](practice/untitled/untitled-3.md)
   * [Searching](practice/untitled/untitled-2.md)
   * [Graphs](practice/untitled/untitled-1.md)
