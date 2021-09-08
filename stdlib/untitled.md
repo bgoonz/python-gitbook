@@ -1,3 +1,7 @@
+---
+description: docs
+---
+
 # Docs
 
 {% embed url="https://docs.python.org/3/" %}
