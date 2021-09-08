@@ -1025,9 +1025,267 @@ The only two options left at this point are logarithmic and linear. Since the tw
 
 
 
+* [ Home](https://lambdaschool.instructure.com/courses/1575)
+* [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
+* [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
+
+## Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
+
+### Overview <a id="overview"></a>
+
+#### What is an algorithm? <a id="what-is-an-algorithm"></a>
+
+An algorithm is a set of instructions for accomplishing a task. Within this broad definition, we could call every piece of code an algorithm.
+
+#### How do we measure how "good" an algorithm is? <a id="how-do-we-measure-how-good-an-algorithm-is"></a>
+
+After coming up with a first-pass solution to a problem, we need to measure how "good" our answer is. Will it stand up to the test of millions of users? Is it fast enough that our users will be blown away by how quickly they get their results? Or will torturously slow speeds cause lag that scares them all away?
+
+When given a choice between different algorithms, we want to choose the most efficient algorithm \(considering both _time_ and _space_ efficiency depending on our needs\).
+
+_Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for._
+
+#### What is Big O notation? <a id="what-is-big-o-notation"></a>
+
+We need a way to talk about efficiency \(number of operations in the worst case\) in a more general sense.
+
+Big O notation is the language we use for describing how efficient an algorithm is.
+
+The specific terms of Big O notation describe how fast the runtime grows \(relative to the input size\), focusing on when the input gets extremely large.
+
+Why do we focus on the growth of runtime versus exact runtime? The actual runtime depends on the specific computer running the algorithm, so we cannot compare efficiencies that way. By focusing on the general growth, we can avoid exact runtime differences between machines and environments.
+
+We also talk about runtime relative to the input size because we need to express our speed in terms of _something_. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.
+
+We don't care about speed when the input size is small. The differences in speed are likely to be minimal when the input size is small. When the input size gets enormous, we can see the differences in efficiency between algorithms.
+
+#### Common Big O run times <a id="common-big-o-run-times"></a>
+
+Refer to the table below to see a list of the most common runtimes. The table is ordered from fastest to slowest.
+
+| Classification | Description |
+| :--- | :--- |
+| Constant `O(1)` | The runtime is entirely unaffected by the input size. This is the ideal solution. |
+| Logarithmic `O(log n)` | As the input size increases, the runtime will grow slightly slower. This is a pretty good solution. |
+| Linear `O(n)` | As the input size increases, the runtime will grow at the same rate. This is a pretty good solution. |
+| Polynomial `O(n^c)` | As the input size increases, the runtime will grow at a faster rate. This might work for small inputs but is not a scalable solution. |
+| Exponential `O(c^n)` | As the input size increases, the runtime will grow at a much faster rate. This solution is inefficient. |
+| Factorial `O(n!)` | As the input size increases, the runtime will grow astronomically, even with relatively small inputs. This solution is exceptionally inefficient. |
+
+Besides the table, it's also essential to look at the curves of these different runtimes.
+
+![https://tk-assets.lambdaschool.com/1b27038a-098f-46e5-bc20-03be9a3480b9\_68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f65343335376235662d316436332d343463642d623861302d3439353732363061653965635f556e7469746c6564312e706e67.png](https://tk-assets.lambdaschool.com/1b27038a-098f-46e5-bc20-03be9a3480b9_68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f65343335376235662d316436332d343463642d623861302d3439353732363061653965635f556e7469746c6564312e706e67.png)
+
+Again, `n` represents the size of the data, and on the chart above, `N` represents the number of operations. This visualization should help illustrate why `O(1)` or `O(log n)` is the most desirable.
+
+_Note: Big O only matters for large data sets. An `O(n^3)` solution is adequate, as long as you can guarantee that your datasets will always be small._
+
+#### A few examples <a id="a-few-examples"></a>
+
+Let's look at a few different examples of Python functions that print something to the output. For each of these, the input will be `items`.
+
+**Constant Time O\(1\)**
+
+```text
+def print_only_one_thing(list_of_things):
+    print(list_of_things[0])
+```
+
+Why is this constant time? Because no matter how large or small the input is \(1,000,000 or 10\), the number of computations within the function is the same.
+
+**Linear Time O\(n\)**
+
+```text
+def print_list(list_of_things):
+    for thing in list_of_things:
+        print(thing)
+```
+
+Why is this classified as linear time? Because the speed of the algorithm increases at the same rate as the input size. If `list_of_things` has ten items, then the function will print ten times. If it has 10,000 items, then the function will print 10,000 times.
+
+**Quadratic Time O\(n^2\)**
+
+```text
+def print_permutations(list_of_things):
+    for thing_one in list_of_things:
+        for thing_two in list_of_things:
+            print(thing_one, thing_two)
+```
+
+Why is this quadratic time? The clue is the nested for loops. These nested for loops mean that for each item in `list_of_things` \(the outer loop\), we iterate through every item in `list_of_things` \(the inner loop\). For an input size of `n`, we have to print `n` \* `n` times or `n^2` times.
+
+#### What are we supposed to do with the constants? <a id="what-are-we-supposed-to-do-with-the-constants"></a>
+
+What if we had a function like this?
+
+```text
+def do_a_bunch_of_stuff(list_of_things): # O(1 + n/2 + 2000)
+    last_idx = len(list_of_things) - 1
+    print(list_of_things[last_idx]) # O(1)
+
+    middle_idx = len(list_of_things) / 2
+    idx = 0
+    while idx < middle_idx: # O(n/2)
+        print(list_of_things[idx])
+        idx = idx + 1
+
+    for num in range(2000): # O(2000)
+        print(num)
+```
+
+`print(items[last_idx])` is constant time because it doesn't change as the input changes. So, that portion of the function is `O(1)`.
+
+The while loop that prints up to the middle index is 1/2 of whatever the input size is; we can say that portion of the function is `O(n/2)`.
+
+The final portion will run 2000 times, no matter the size of the input.
+
+So, putting it all together, we could say that the efficiency is `O(1 + n/2 + 2000)`. However, we don't say this. We describe this function as having linear time `O(n)` because we drop all of the constants. Why do we cut all of the constants? Because as the input size gets huge, adding 2000 or dividing by 2 has minimal effect on the algorithm's performance.
+
+#### Most significant term <a id="most-significant-term"></a>
+
+Let's consider the following function:
+
+```text
+def do_different_things_in_the_same_function(list_of_things): # O(n + n^2)
+    # print all each item in the list
+    for thing in list_of_things: # O(n)
+        print(thing)
+
+    # print every possible pair of things in the list
+    for thing_one in list_of_things: # O(n * n) = O(n^2)
+        for thing_two in list_of_things:
+            print(thing_one, thing_two)
+```
+
+We could describe this function as `O(n + n^2)`; however, we only need to keep the essential term, `n^2`, so this would be `O(n^2)`. Why can we do this? Because as the input size \(`n`\) gets larger and larger, the less significant terms have less effect, and only the most significant term is important.
+
+#### Big O represents the worst-case <a id="big-o-represents-the-worst-case"></a>
+
+Let's consider the following function:
+
+```text
+def find_thing(list_of_things, thing_we_are_trying_to_find):
+    for thing in list_of_things:
+        if thing == thing_we_are_trying_to_find:
+            return True
+
+    return False
+```
+
+What would the result be if it just so happens that the `thing_we_are_trying_to_find` in `list_of_things` is the very first item in the list? The function would only have to look at one item in `list_of_things` before returning. In this case, it would be `O(1)`. But, when we talk about a function's complexity, we usually assume the "worst case." What would the "worst-case" be? It would be if it were the last item in `list_of_things`. In that case, we would have to look through all the `list_of_things`, and that complexity would be `O(n)`.
+
+_Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:_ [_Big-Theta notation \(Links to an external site.\)_](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation) _and_ [_Big-O notation \(Links to an external site.\)_](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)_._
+
+#### Do constants ever matter? <a id="do-constants-ever-matter"></a>
+
+Complexity analysis with Big O notation is a valuable tool. It would be best if you got in the habit of thinking about the efficiency of the algorithms you write and use in your code. However, just because two algorithms have the same Big O notation doesn't mean they are equal.
+
+Imagine you have a script that takes 1 hour to run. By improving the function, you can divide that runtime by six, and now it only takes 10 minutes to run. With Big O notation, `O(n)` and `O(n/6)` can both be written as `O(n)`, but that doesn't mean it isn't worth optimizing the script to save 50 minutes every time the script runs.
+
+That being said, there is a term you should become familiar with: **premature optimization** \([xkcd: Optimization \(Links to an external site.\)](https://xkcd.com/1691/)\). Sometimes, you can sacrifice readability or spend too much time on something to improve its efficiency. Depending on the situation, it could be that having a finished product to iterate on is more important than maximally efficient code. It is your job as a developer to know when making your code more efficient is necessary. You will always be making calculated tradeoffs between runtime, memory, development time, readability, and maintainability. It takes time to develop the wisdom to strike the right balance depending on the scenario.
+
+### Follow Along <a id="follow-along"></a>
+
+Let's look at a few code snippets and classify their runtime complexity using Big O notation.
+
+```text
+def foo(n):
+    i = 1
+    while i < n:
+        print(i)
+        i *= 2
+```
+
+First, let's think about what the above function is doing. It's printing `i`…but `i` is not being incremented by 1, as we usually see. It's _doubled_ every time we run the loop. So, for example, if `n = 100`, then the final result would be…
+
+```text
+1
+2
+4
+8
+16
+32
+64
+```
+
+Or if `n = 10`, then we would print…
+
+```text
+1
+2
+4
+8
+```
+
+We can use the process of elimination to narrow down which runtime classification makes sense for this algorithm. The number of times the loop runs seems to vary based on the value of `n`, so this is NOT O\(1\).
+
+From the above examples, we can also see that the number of times the loop runs is increasing _slower_ than the input size is increasing. `n` must be _doubled_ before the loop will run one more time. We can eliminate classifications such as `O(n log n)`, `O(n^c)`, `O(c^n)`, and `O(n!)`.
+
+The only two options left at this point are logarithmic and linear. Since the two growth rates \(input, the number of operations\) are not the same, **this function must run in logarithmic time!**
+
+### Challenge <a id="challenge"></a>
+
+### Additional Resources <a id="additional-resources"></a>
+
+* [https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7 \(Links to an external site.\)](https://towardsdatascience.com/understanding-time-complexity-with-python-examples-2bda6e8158a7)
+
 
 
 ![](../../.gitbook/assets/devider%20%284%29.png)
+
+## Objective 04 - Compare the space complexity of different approaches to a problem using Big O notation
+
+### Overview <a id="overview"></a>
+
+We often want to compare an algorithm's time complexity \(how efficiently the number of operations grows as the input size increases\). Similarly, we also want to compare the space complexity of an algorithm.
+
+Talking about space complexity is very similar to talking about time complexity. Except with space complexity, we are looking at the _**efficiency of memory usage instead of the number of operations.**_
+
+Often, it isn't easy to optimize for time and space at the same time. For instance, by increasing time efficiency, you may need to use more memory and decrease space complexity. This is not always the case, but you have to decide if you are optimizing for space or time complexity because of this.
+
+### Follow Along <a id="follow-along"></a>
+
+This function takes `O(1)` space:
+
+```text
+def print_something_a_certain_number_of_times(thing_to_print, number_of_times):
+    for i in range(number_of_times):
+        print(thing_to_print)
+```
+
+The function above has a constant \(`O(1)`\) space complexity because no matter how large `n` gets, the amount of memory being used stays the same.
+
+This function takes `O(n)` space:
+
+```text
+def append_to_list_a_certain_number_of_times(number_of_times):
+    # create an empty list
+    my_list = []
+
+    # append to the list the number of times specified by the caller
+    for _ in range(n):
+        my_list.append("lambda")
+
+    return my_list
+```
+
+We are often referring to _additional_ space when we talk about space complexity–meaning that we do not include the memory used by the inputs.
+
+This function takes constant space \(`O(1)`\) even though the input has `n` items:
+
+```text
+def get_the_max(items_list):
+    maximum = float("-inf")
+    for item in items_list:
+        if item > maximum:
+            maximum = item
+
+    return maximum
+```
+
+### Challenge <a id="challenge"></a>
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-2-space-complexity-2" %}
 
 
 
