@@ -2,6 +2,28 @@
 
 
 
+* [Getting started with python](https://thepythonguru.com/getting-started-with-python/)
+* [Installing Python3](https://thepythonguru.com/installing-python3/)
+* [Running python programs](https://thepythonguru.com/running-python-programs/)
+* [Datatype & Variables](https://thepythonguru.com/datatype-varibles/)
+* [Python numbers](https://thepythonguru.com/python-numbers/)
+* [Python Strings](https://thepythonguru.com/python-strings/)
+* [Python Lists](https://thepythonguru.com/python-lists/)
+* [Python Dictionaries](https://thepythonguru.com/python-dictionaries/)
+* [Python Tuples](https://thepythonguru.com/python-tuples/)
+* [Datatype conversion](https://thepythonguru.com/datatype-conversion/)
+* [Python Control Statements](https://thepythonguru.com/python-control-statements/)
+* [Python Functions](https://thepythonguru.com/python-functions/)
+* [Python Loops](https://thepythonguru.com/python-loops/)
+* [Python Mathematical Function](https://thepythonguru.com/python-mathematical-function/)
+* [Python Generating Random numbers](https://thepythonguru.com/python-generating-random-numbers/)
+* [Python File Handling](https://thepythonguru.com/python-file-handling/)
+* [Python Object and Classes](https://thepythonguru.com/python-object-and-classes/)
+* [Python Operator Overloading](https://thepythonguru.com/python-operator-overloading/)
+* [Python inheritance and polymorphism](https://thepythonguru.com/python-inheritance-and-polymorphism/)
+* [Python Exception Handling](https://thepythonguru.com/python-exception-handling/)
+* [Python Modules](https://thepythonguru.com/python-modules/)
+
 1. **About Python**
    * Overview: [What is Python](https://github.com/trekhleb/learn-python/blob/master/src/getting_started/what_is_python.md) \(📚, 🍰\)
    * Design philosophy: [The Zen of Python](https://www.python.org/dev/peps/pep-0020/) \(📚\)
