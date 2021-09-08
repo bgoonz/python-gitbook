@@ -41,20 +41,6 @@
   * [YouTube](utilities/untitled/untitled.md)
   * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 
-## data-structures
-
-* [Main Categories Of Abstract Data Structures & Algorithms](data-structures/untitled/README.md)
-  * [Binary Search](data-structures/untitled/binary-search.md)
-  * [Binary Search Tree](data-structures/untitled/binary-search-tree.md)
-  * [Stack](data-structures/untitled/stack.md)
-  * [Queue](data-structures/untitled/queue.md)
-  * [Linked List](data-structures/untitled/linked-list.md)
-  * [Untitled](data-structures/untitled/untitled-2-1.md)
-  * [Untitled](data-structures/untitled/untitled-3.md)
-  * [Untitled](data-structures/untitled/untitled-2-1-1.md)
-  * [Untitled](data-structures/untitled/untitled-1.md)
-  * [Untitled](data-structures/untitled/untitled.md)
-
 ## practice
 
 * [Supplemental Practice:](practice/supplemental-practice.md)
@@ -76,6 +62,20 @@
   * [Searching](practice/untitled/untitled-2.md)
   * [Graphs](practice/untitled/untitled-1.md)
   * [Exotic](practice/untitled/untitled.md)
+
+## data-structures
+
+* [Main Categories Of Abstract Data Structures & Algorithms](data-structures/untitled/README.md)
+  * [Binary Search](data-structures/untitled/binary-search.md)
+  * [Binary Search Tree](data-structures/untitled/binary-search-tree.md)
+  * [Stack](data-structures/untitled/stack.md)
+  * [Queue](data-structures/untitled/queue.md)
+  * [Linked List](data-structures/untitled/linked-list.md)
+  * [Untitled](data-structures/untitled/untitled-2-1.md)
+  * [Untitled](data-structures/untitled/untitled-3.md)
+  * [Untitled](data-structures/untitled/untitled-2-1-1.md)
+  * [Untitled](data-structures/untitled/untitled-1.md)
+  * [Untitled](data-structures/untitled/untitled.md)
 
 ## Resources
 
