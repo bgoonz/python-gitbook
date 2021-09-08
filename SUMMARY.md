@@ -144,7 +144,7 @@
 * [Subject](aux-exploration/subject/README.md)
   * [List Directory Contents](aux-exploration/subject/list-directory-contents.md)
   * [Employee Manager](aux-exploration/subject/untitled-5.md)
-  * [Untitled](aux-exploration/subject/untitled-4.md)
+  * [OS Module](aux-exploration/subject/untitled-4.md)
   * [Untitled](aux-exploration/subject/untitled-3.md)
   * [Untitled](aux-exploration/subject/untitled-2.md)
   * [Untitled](aux-exploration/subject/untitled-1.md)
