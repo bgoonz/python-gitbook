@@ -6,9 +6,11 @@ description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
 
 ### [https://bgoonz42.gitbook.io/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
 
+### Python Practice Files:
 
 
 
+{% file src=".gitbook/assets/examples.zip" caption="Python Prac Zip File" %}
 
 ### Main Repo:
 
