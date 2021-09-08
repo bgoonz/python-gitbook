@@ -1,8 +1,6 @@
 # Conditionals and loops
 
-## .
-
-### 4.1. Conditional execution
+###  Conditional execution
 
 #### 4.1.1. The `if` statement
 
