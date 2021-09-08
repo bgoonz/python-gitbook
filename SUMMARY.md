@@ -99,6 +99,7 @@
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes.md)
+* [Queue & Stacks](stdlib/queue-and-stacks.md)
 
 ## MISC
 
