@@ -11,7 +11,6 @@
   * [Outline-w17](cirriculumn/untitled-3/outline.md)
   * [homework](cirriculumn/untitled-3/week-overview.md)
   * [D1-Module 01 - Python I](cirriculumn/untitled-3/untitled-2/README.md)
-    * [Configuring Ubuntu for Python Web Development](cirriculumn/untitled-3/untitled-2/configuring-ubuntu-for-python-web-development.md)
     * [Install Python](cirriculumn/untitled-3/untitled-2/install-python.md)
   * [D2- Module 02 - Python II](cirriculumn/untitled-3/untitled-1-1.md)
   * [D3- Module 03 - Python III](cirriculumn/untitled-3/untitled-1.md)
