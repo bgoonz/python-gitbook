@@ -96,7 +96,7 @@
 
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
-* [Python Snippets](quick-reference/untitled-1.md)
+* [index](quick-reference/untitled-1.md)
 
 ## Python-Docs <a id="stdlib"></a>
 
