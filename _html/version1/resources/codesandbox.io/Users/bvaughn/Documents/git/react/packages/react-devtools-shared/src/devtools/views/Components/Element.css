@@ -2,74 +2,76 @@
 .InactiveSelectedElement,
 .SelectedElement,
 .HoveredElement {
-    color: var(--color-component-name);
+  color: var(--color-component-name);
 }
 
 .HoveredElement {
-    background-color: var(--color-background-hover);
+  background-color: var(--color-background-hover);
 }
 
 .InactiveSelectedElement {
-    background-color: var(--color-background-inactive);
+  background-color: var(--color-background-inactive);
 }
 
 .Wrapper {
-    padding: 0 0.25rem;
-    white-space: nowrap;
-    height: var(--line-height-data);
-    line-height: var(--line-height-data);
-    display: inline-flex;
-    align-items: center;
-    cursor: default;
-    user-select: none;
+  padding: 0 0.25rem;
+  white-space: nowrap;
+  height: var(--line-height-data);
+  line-height: var(--line-height-data);
+  display: inline-flex;
+  align-items: center;
+  cursor: default;
+  user-select: none;
 }
 
 .ScrollAnchor {
-    height: 100%;
-    width: 0;
+  height: 100%;
+  width: 0;
 }
 
 .SelectedElement {
-    background-color: var(--color-background-selected);
-    color: var(--color-text-selected);
-    /* Invert colors */
-    --color-component-name: var(--color-component-name-inverted);
-    --color-text: var(--color-text-selected);
-    --color-component-badge-background: var( --color-component-badge-background-inverted);
-    --color-component-badge-count: var(--color-component-badge-count-inverted);
-    --color-attribute-name: var(--color-attribute-name-inverted);
-    --color-attribute-value: var(--color-attribute-value-inverted);
-    --color-expand-collapse-toggle: var(--color-component-name-inverted);
+  background-color: var(--color-background-selected);
+  color: var(--color-text-selected);
+  /* Invert colors */
+  --color-component-name: var(--color-component-name-inverted);
+  --color-text: var(--color-text-selected);
+  --color-component-badge-background: var(
+    --color-component-badge-background-inverted
+  );
+  --color-component-badge-count: var(--color-component-badge-count-inverted);
+  --color-attribute-name: var(--color-attribute-name-inverted);
+  --color-attribute-value: var(--color-attribute-value-inverted);
+  --color-expand-collapse-toggle: var(--color-component-name-inverted);
 }
 
 .KeyName {
-    color: var(--color-attribute-name);
+  color: var(--color-attribute-name);
 }
 
 .KeyValue {
-    color: var(--color-attribute-value);
-    user-select: text;
-    max-width: 100px;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
+  color: var(--color-attribute-value);
+  user-select: text;
+  max-width: 100px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .Highlight {
-    background-color: var(--color-search-match);
+  background-color: var(--color-search-match);
 }
 
 .CurrentHighlight {
-    background-color: var(--color-search-match-current);
+  background-color: var(--color-search-match-current);
 }
 
 .ExpandCollapseToggle {
-    display: inline-flex;
-    width: 1rem;
-    height: 1rem;
-    flex: 0 0 1rem;
-    color: var(--color-expand-collapse-toggle);
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 1rem;
+  color: var(--color-expand-collapse-toggle);
 }
 
 .Badge {
-    margin-left: 0.25rem;
+  margin-left: 0.25rem;
 }

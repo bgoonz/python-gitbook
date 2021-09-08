@@ -1,12 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
 exports.KEYBINDINGS = exports.formatKey = exports.normalizeKey = void 0;
 const platform_1 = require("./platform");
-const metaKey = platform_1.isMac ? (platform_1.isIOS ? 'Alt' : 'Meta') : 'Alt';
-const metaOrCtrlKey = platform_1.isMac ? (platform_1.isIOS ? 'Alt' : 'Meta') : 'Control';
-const ctrlOrAltKey = platform_1.isIOS ? 'Alt' : 'Control';
+const metaKey = platform_1.isMac ? (platform_1.isIOS ? "Alt" : "Meta") : "Alt";
+const metaOrCtrlKey = platform_1.isMac
+  ? platform_1.isIOS
+    ? "Alt"
+    : "Meta"
+  : "Control";
+const ctrlOrAltKey = platform_1.isIOS ? "Alt" : "Control";
 // String.fromCharCode receives UTF-16 code units, but the keyCode represents the actual
 // "physical" key on the keyboard. For this reason it's sketchy (some do match) to
 // String.fromCharCode(e.keyCode) so we have this table with the correct mapping.
@@ -17,148 +21,131 @@ const ctrlOrAltKey = platform_1.isIOS ? 'Alt' : 'Control';
 // that no matter which physical key the "," and the "<" are in, they'll always be keyCode 188.
 // http://www.javascripter.net/faq/keycodes.htm
 const keyCodeMapping = {
-    '188': ',',
+  188: ",",
 };
 
 function normalizeKey(e) {
-    if (e.key) {
-        if (e.key.split('').length === 1) {
-            let key;
-            if (Object.prototype.hasOwnProperty.call(keyCodeMapping, e.keyCode)) {
-                key = keyCodeMapping[e.keyCode];
-            } else {
-                key = String.fromCharCode(e.keyCode).toUpperCase();
-            }
-            if (key === ' ') {
-                return 'Space';
-            }
-            return key;
-        }
-        return e.key;
+  if (e.key) {
+    if (e.key.split("").length === 1) {
+      let key;
+      if (Object.prototype.hasOwnProperty.call(keyCodeMapping, e.keyCode)) {
+        key = keyCodeMapping[e.keyCode];
+      } else {
+        key = String.fromCharCode(e.keyCode).toUpperCase();
+      }
+      if (key === " ") {
+        return "Space";
+      }
+      return key;
     }
-    return undefined;
+    return e.key;
+  }
+  return undefined;
 }
 exports.normalizeKey = normalizeKey;
 
 function formatKey(key) {
-    switch (key) {
-        case 'Meta':
-            {
-                if (platform_1.isMac) {
-                    return '⌘';
-                }
-                return 'Win';
-            }
-        case 'Control':
-            return 'Ctrl';
-        case ' ':
-            return 'Space';
-        case 'Shift':
-            return '⇧';
-        default:
-            if (key.split('').length === 1) {
-                return key.toUpperCase();
-            }
-            return key;
+  switch (key) {
+    case "Meta": {
+      if (platform_1.isMac) {
+        return "⌘";
+      }
+      return "Win";
     }
+    case "Control":
+      return "Ctrl";
+    case " ":
+      return "Space";
+    case "Shift":
+      return "⇧";
+    default:
+      if (key.split("").length === 1) {
+        return key.toUpperCase();
+      }
+      return key;
+  }
 }
 exports.formatKey = formatKey;
 exports.KEYBINDINGS = {
-    'editor.open-quick-actions': {
-        title: 'Open Quick Actions',
-        type: 'View',
-        bindings: [
-            [metaOrCtrlKey, 'Shift', 'P']
-        ],
-        signal: 'editor.quickActionsOpened',
+  "editor.open-quick-actions": {
+    title: "Open Quick Actions",
+    type: "View",
+    bindings: [[metaOrCtrlKey, "Shift", "P"]],
+    signal: "editor.quickActionsOpened",
+  },
+  workspace: {
+    title: "Toggle Sidebar",
+    type: "View",
+    bindings: [[metaOrCtrlKey, "B"]],
+    signal: "workspace.toggleCurrentWorkspaceItem",
+  },
+  "editor.close-tab": {
+    title: "Close Current Tab",
+    type: "View",
+    bindings: [[ctrlOrAltKey, "W"]],
+    signal: "editor.tabClosed",
+    payload: (state) => ({
+      tabIndex: state.editor.tabs
+        .filter((x) => x)
+        .findIndex((t) => t.moduleId === state.currentModuleId),
+    }),
+  },
+  "editor.zen-mode": {
+    title: "Toggle Zen Mode",
+    type: "View",
+    bindings: [[metaKey, "K", "Z"]],
+    signal: "preferences.settingChanged",
+    payload: (state) => ({
+      name: "zenMode",
+      value: !state.preferences.settings.zenMode,
+    }),
+  },
+  "editor.toggle-console": {
+    title: "Toggle Dev Tools",
+    type: "View",
+    bindings: [[metaKey, "K", "D"]],
+    signal: "preferences.devtoolsToggled",
+  },
+  "editor.open-preferences": {
+    title: "Open Preferences",
+    type: "View",
+    bindings: [[metaOrCtrlKey, ","]],
+    signal: "modalOpened",
+    payload: {
+      modal: "preferences",
     },
-    workspace: {
-        title: 'Toggle Sidebar',
-        type: 'View',
-        bindings: [
-            [metaOrCtrlKey, 'B']
-        ],
-        signal: 'workspace.toggleCurrentWorkspaceItem',
+  },
+  "source.dependencies.open": {
+    title: "Add Dependency",
+    type: "Source",
+    bindings: [],
+    signal: "modalOpened",
+    payload: {
+      modal: "searchDependencies",
     },
-    'editor.close-tab': {
-        title: 'Close Current Tab',
-        type: 'View',
-        bindings: [
-            [ctrlOrAltKey, 'W']
-        ],
-        signal: 'editor.tabClosed',
-        payload: state => ({
-            tabIndex: state.editor.tabs
-                .filter(x => x)
-                .findIndex(t => t.moduleId === state.currentModuleId),
-        }),
-    },
-    'editor.zen-mode': {
-        title: 'Toggle Zen Mode',
-        type: 'View',
-        bindings: [
-            [metaKey, 'K', 'Z']
-        ],
-        signal: 'preferences.settingChanged',
-        payload: state => ({
-            name: 'zenMode',
-            value: !state.preferences.settings.zenMode,
-        }),
-    },
-    'editor.toggle-console': {
-        title: 'Toggle Dev Tools',
-        type: 'View',
-        bindings: [
-            [metaKey, 'K', 'D']
-        ],
-        signal: 'preferences.devtoolsToggled',
-    },
-    'editor.open-preferences': {
-        title: 'Open Preferences',
-        type: 'View',
-        bindings: [
-            [metaOrCtrlKey, ',']
-        ],
-        signal: 'modalOpened',
-        payload: {
-            modal: 'preferences',
-        },
-    },
-    'source.dependencies.open': {
-        title: 'Add Dependency',
-        type: 'Source',
-        bindings: [],
-        signal: 'modalOpened',
-        payload: {
-            modal: 'searchDependencies',
-        },
-    },
-    'source.modules.prettify': {
-        title: 'Prettify Current File',
-        type: 'Source',
-        bindings: [],
-        signal: 'editor.prettifyClicked',
-        payload: state => ({
-            moduleShortid: state.editor.currentModule.shortid,
-        }),
-    },
-    'source.modules.save': {
-        title: 'Save Current File',
-        type: 'Source',
-        bindings: [
-            [metaOrCtrlKey, 'S']
-        ],
-        signal: 'editor.codeSaved',
-        payload: state => ({
-            moduleShortid: state.editor.currentModule.shortid,
-        }),
-    },
-    'source.modules.save-all': {
-        title: 'Save All Modified Files',
-        type: 'Source',
-        bindings: [
-            [metaOrCtrlKey, 'Shift', 'S']
-        ],
-        signal: 'editor.saveClicked',
-    },
+  },
+  "source.modules.prettify": {
+    title: "Prettify Current File",
+    type: "Source",
+    bindings: [],
+    signal: "editor.prettifyClicked",
+    payload: (state) => ({
+      moduleShortid: state.editor.currentModule.shortid,
+    }),
+  },
+  "source.modules.save": {
+    title: "Save Current File",
+    type: "Source",
+    bindings: [[metaOrCtrlKey, "S"]],
+    signal: "editor.codeSaved",
+    payload: (state) => ({
+      moduleShortid: state.editor.currentModule.shortid,
+    }),
+  },
+  "source.modules.save-all": {
+    title: "Save All Modified Files",
+    type: "Source",
+    bindings: [[metaOrCtrlKey, "Shift", "S"]],
+    signal: "editor.saveClicked",
+  },
 };

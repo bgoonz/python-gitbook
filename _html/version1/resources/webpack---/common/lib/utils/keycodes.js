@@ -1,8 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
-exports.SPACE = exports.ALT = exports.BACKTICK = exports.DOT = exports.ARROW_DOWN = exports.ARROW_RIGHT = exports.ARROW_UP = exports.ARROW_LEFT = exports.ESC = exports.ENTER = exports.TAB = exports.BACKSPACE = void 0;
+exports.SPACE =
+  exports.ALT =
+  exports.BACKTICK =
+  exports.DOT =
+  exports.ARROW_DOWN =
+  exports.ARROW_RIGHT =
+  exports.ARROW_UP =
+  exports.ARROW_LEFT =
+  exports.ESC =
+  exports.ENTER =
+  exports.TAB =
+  exports.BACKSPACE =
+    void 0;
 exports.BACKSPACE = 8;
 exports.TAB = 9;
 exports.ENTER = 13;

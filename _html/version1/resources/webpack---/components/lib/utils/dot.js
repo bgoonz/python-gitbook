@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
 exports.object = void 0;
 const dot_object_1 = require("dot-object");
@@ -15,6 +15,6 @@ const dot_object_1 = require("dot-object");
  * { activityBar: {background: '#ddd' } }
  */
 function object(obj) {
-    return dot_object_1.object(JSON.parse(JSON.stringify(obj)));
+  return dot_object_1.object(JSON.parse(JSON.stringify(obj)));
 }
 exports.object = object;

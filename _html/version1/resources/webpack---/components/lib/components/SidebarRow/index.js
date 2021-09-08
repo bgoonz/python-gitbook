@@ -1,11 +1,15 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function(mod) {
-    return (mod && mod.__esModule) ? mod : {
-        "default": mod
-    };
-};
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule
+      ? mod
+      : {
+          default: mod,
+        };
+  };
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
 exports.SidebarRow = void 0;
 const styled_components_1 = __importDefault(require("styled-components"));
@@ -22,7 +26,9 @@ const Stack_1 = require("../Stack");
  *
  */
 exports.SidebarRow = styled_components_1.default(Stack_1.Stack).attrs({
-    align: 'center',
-})(css_1.default({
+  align: "center",
+})(
+  css_1.default({
     minHeight: 8,
-}));
+  })
+);

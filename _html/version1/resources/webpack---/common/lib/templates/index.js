@@ -1,13 +1,48 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function(mod) {
-    return (mod && mod.__esModule) ? mod : {
-        "default": mod
-    };
-};
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule
+      ? mod
+      : {
+          default: mod,
+        };
+  };
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
-exports.unibit = exports.quasar = exports.mdxDeck = exports.docusaurus = exports.vuepress = exports.gridsome = exports.styleguidist = exports.staticTemplate = exports.ember = exports.nest = exports.sapper = exports.vue = exports.svelte = exports.reason = exports.reactTs = exports.react = exports.preact = exports.parcel = exports.dojo = exports.cxjs = exports.babel = exports.esmReact = exports.node = exports.nuxt = exports.next = exports.marko = exports.gatsby = exports.apollo = exports.custom = exports.angular = exports.adonis = void 0;
+exports.unibit =
+  exports.quasar =
+  exports.mdxDeck =
+  exports.docusaurus =
+  exports.vuepress =
+  exports.gridsome =
+  exports.styleguidist =
+  exports.staticTemplate =
+  exports.ember =
+  exports.nest =
+  exports.sapper =
+  exports.vue =
+  exports.svelte =
+  exports.reason =
+  exports.reactTs =
+  exports.react =
+  exports.preact =
+  exports.parcel =
+  exports.dojo =
+  exports.cxjs =
+  exports.babel =
+  exports.esmReact =
+  exports.node =
+  exports.nuxt =
+  exports.next =
+  exports.marko =
+  exports.gatsby =
+  exports.apollo =
+  exports.custom =
+  exports.angular =
+  exports.adonis =
+    void 0;
 const adonis_1 = __importDefault(require("./adonis"));
 exports.adonis = adonis_1.default;
 const angular_1 = __importDefault(require("./angular"));
@@ -72,71 +107,71 @@ const esmodule_react_1 = __importDefault(require("./esmodule-react"));
 exports.esmReact = esmodule_react_1.default;
 
 function getDefinition(theme) {
-    switch (theme) {
-        case adonis_1.default.name:
-            return adonis_1.default;
-        case react_1.default.name:
-            return react_1.default;
-        case vue_1.default.name:
-            return vue_1.default;
-        case preact_1.default.name:
-            return preact_1.default;
-        case react_ts_1.default.name:
-            return react_ts_1.default;
-        case svelte_1.default.name:
-            return svelte_1.default;
-        case angular_1.default.name:
-            return angular_1.default;
-        case parcel_1.default.name:
-            return parcel_1.default;
-        case babel_1.default.name:
-            return babel_1.default;
-        case cxjs_1.default.name:
-            return cxjs_1.default;
-        case dojo_1.default.name:
-            return dojo_1.default;
-        case custom_1.default.name:
-            return custom_1.default;
-        case gatsby_1.default.name:
-            return gatsby_1.default;
-        case marko_1.default.name:
-            return marko_1.default;
-        case nuxt_1.default.name:
-            return nuxt_1.default;
-        case next_1.default.name:
-            return next_1.default;
-        case reason_1.default.name:
-            return reason_1.default;
-        case node_1.default.name:
-            return node_1.default;
-        case apollo_server_1.default.name:
-            return apollo_server_1.default;
-        case sapper_1.default.name:
-            return sapper_1.default;
-        case nest_1.default.name:
-            return nest_1.default;
-        case static_1.default.name:
-            return static_1.default;
-        case styleguidist_1.default.name:
-            return styleguidist_1.default;
-        case mdx_deck_1.default.name:
-            return mdx_deck_1.default;
-        case gridsome_1.default.name:
-            return gridsome_1.default;
-        case ember_1.default.name:
-            return ember_1.default;
-        case vuepress_1.default.name:
-            return vuepress_1.default;
-        case docusaurus_1.default.name:
-            return docusaurus_1.default;
-        case quasar_1.default.name:
-            return quasar_1.default;
-        case unibit_1.default.name:
-            return unibit_1.default;
-        case esmodule_react_1.default.name:
-            return esmodule_react_1.default;
-        default:
-            return react_1.default;
-    }
+  switch (theme) {
+    case adonis_1.default.name:
+      return adonis_1.default;
+    case react_1.default.name:
+      return react_1.default;
+    case vue_1.default.name:
+      return vue_1.default;
+    case preact_1.default.name:
+      return preact_1.default;
+    case react_ts_1.default.name:
+      return react_ts_1.default;
+    case svelte_1.default.name:
+      return svelte_1.default;
+    case angular_1.default.name:
+      return angular_1.default;
+    case parcel_1.default.name:
+      return parcel_1.default;
+    case babel_1.default.name:
+      return babel_1.default;
+    case cxjs_1.default.name:
+      return cxjs_1.default;
+    case dojo_1.default.name:
+      return dojo_1.default;
+    case custom_1.default.name:
+      return custom_1.default;
+    case gatsby_1.default.name:
+      return gatsby_1.default;
+    case marko_1.default.name:
+      return marko_1.default;
+    case nuxt_1.default.name:
+      return nuxt_1.default;
+    case next_1.default.name:
+      return next_1.default;
+    case reason_1.default.name:
+      return reason_1.default;
+    case node_1.default.name:
+      return node_1.default;
+    case apollo_server_1.default.name:
+      return apollo_server_1.default;
+    case sapper_1.default.name:
+      return sapper_1.default;
+    case nest_1.default.name:
+      return nest_1.default;
+    case static_1.default.name:
+      return static_1.default;
+    case styleguidist_1.default.name:
+      return styleguidist_1.default;
+    case mdx_deck_1.default.name:
+      return mdx_deck_1.default;
+    case gridsome_1.default.name:
+      return gridsome_1.default;
+    case ember_1.default.name:
+      return ember_1.default;
+    case vuepress_1.default.name:
+      return vuepress_1.default;
+    case docusaurus_1.default.name:
+      return docusaurus_1.default;
+    case quasar_1.default.name:
+      return quasar_1.default;
+    case unibit_1.default.name:
+      return unibit_1.default;
+    case esmodule_react_1.default.name:
+      return esmodule_react_1.default;
+    default:
+      return react_1.default;
+  }
 }
 exports.default = getDefinition;

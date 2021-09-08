@@ -1,24 +1,30 @@
-'use strict';
+"use strict";
 
-import stringScore from './lib/score';
-import cssSnippets from './lib/snippets';
+import stringScore from "./lib/score";
+import cssSnippets from "./lib/snippets";
 
-const globalKeywords = ['auto', 'inherit', 'unset'];
+const globalKeywords = ["auto", "inherit", "unset"];
 const unitlessProperties = [
-    'z-index', 'line-height', 'opacity', 'font-weight', 'zoom',
-    'flex', 'flex-grow', 'flex-shrink'
+  "z-index",
+  "line-height",
+  "opacity",
+  "font-weight",
+  "zoom",
+  "flex",
+  "flex-grow",
+  "flex-shrink",
 ];
 
 const defaultOptions = {
-    intUnit: 'px',
-    floatUnit: 'em',
-    unitAliases: {
-        e: 'em',
-        p: '%',
-        x: 'ex',
-        r: 'rem'
-    },
-    fuzzySearchMinScore: 0
+  intUnit: "px",
+  floatUnit: "em",
+  unitAliases: {
+    e: "em",
+    p: "%",
+    x: "ex",
+    r: "rem",
+  },
+  fuzzySearchMinScore: 0,
 };
 
 /**
@@ -29,26 +35,29 @@ const defaultOptions = {
  * keyword values.
  */
 
-export default function(tree, registry, options) {
-    options = Object.assign({}, defaultOptions, options);
-    options.unitAliases = Object.assign({}, defaultOptions.unitAliases, options && options.unitAliases);
+export default function (tree, registry, options) {
+  options = Object.assign({}, defaultOptions, options);
+  options.unitAliases = Object.assign(
+    {},
+    defaultOptions.unitAliases,
+    options && options.unitAliases
+  );
 
-    const snippets = convertToCSSSnippets(registry);
+  const snippets = convertToCSSSnippets(registry);
 
-    tree.walk(node => resolveNode(node, snippets, options));
-    return tree;
+  tree.walk((node) => resolveNode(node, snippets, options));
+  return tree;
 }
 
 export function convertToCSSSnippets(registry) {
-    return cssSnippets(registry.all({
-        type: 'string'
-    }));
+  return cssSnippets(
+    registry.all({
+      type: "string",
+    })
+  );
 }
 
-export {
-    stringScore,
-    cssSnippets
-};
+export { stringScore, cssSnippets };
 
 /**
  * Resolves given node: finds matched CSS snippets using fuzzy match and resolves
@@ -59,16 +68,21 @@ export {
  * @return {Node}
  */
 function resolveNode(node, snippets, options) {
-    const snippet = findBestMatch(node.name, snippets, 'key', options.fuzzySearchMinScore);
+  const snippet = findBestMatch(
+    node.name,
+    snippets,
+    "key",
+    options.fuzzySearchMinScore
+  );
 
-    if (!snippet) {
-        // Edge case: `!important` snippet
-        return node.name === '!' ? setNodeAsText(node, '!important') : node;
-    }
+  if (!snippet) {
+    // Edge case: `!important` snippet
+    return node.name === "!" ? setNodeAsText(node, "!important") : node;
+  }
 
-    return snippet.property ?
-        resolveAsProperty(node, snippet, options) :
-        resolveAsSnippet(node, snippet);
+  return snippet.property
+    ? resolveAsProperty(node, snippet, options)
+    : resolveAsSnippet(node, snippet);
 }
 
 /**
@@ -79,51 +93,52 @@ function resolveNode(node, snippets, options) {
  * @return {Node}
  */
 function resolveAsProperty(node, snippet, formatOptions) {
-    const abbr = node.name;
-    node.name = snippet.property;
+  const abbr = node.name;
+  node.name = snippet.property;
 
-    if (node.value && typeof node.value === 'object') {
-        // resolve keyword shortcuts
-        const keywords = snippet.keywords();
+  if (node.value && typeof node.value === "object") {
+    // resolve keyword shortcuts
+    const keywords = snippet.keywords();
 
-        if (!node.value.size) {
-            // no value defined, try to resolve unmatched part as a keyword alias
-            let kw = findBestMatch(getUnmatchedPart(abbr, snippet.key), keywords);
+    if (!node.value.size) {
+      // no value defined, try to resolve unmatched part as a keyword alias
+      let kw = findBestMatch(getUnmatchedPart(abbr, snippet.key), keywords);
 
-            if (!kw) {
-                // no matching value, try to get default one
-                kw = snippet.defaultValue;
-                if (kw && kw.indexOf('${') === -1) {
-                    // Quick and dirty test for existing field. If not, wrap
-                    // default value in a field
-                    kw = `\${1:${kw}}`;
-                }
-            }
-
-            if (kw) {
-                node.value.add(kw);
-            }
-        } else {
-            // replace keyword aliases in current node value
-            for (let i = 0, token; i < node.value.value.length; i++) {
-                token = node.value.value[i];
-
-                if (token === '!') {
-                    token = `${!i ? '${1} ' : ''}!important`;
-                } else if (isKeyword(token)) {
-                    token = findBestMatch(token.value, keywords) ||
-                        findBestMatch(token.value, globalKeywords) ||
-                        token;
-                } else if (isNumericValue(token)) {
-                    token = resolveNumericValue(node.name, token, formatOptions);
-                }
-
-                node.value.value[i] = token;
-            }
+      if (!kw) {
+        // no matching value, try to get default one
+        kw = snippet.defaultValue;
+        if (kw && kw.indexOf("${") === -1) {
+          // Quick and dirty test for existing field. If not, wrap
+          // default value in a field
+          kw = `\${1:${kw}}`;
         }
-    }
+      }
 
-    return node;
+      if (kw) {
+        node.value.add(kw);
+      }
+    } else {
+      // replace keyword aliases in current node value
+      for (let i = 0, token; i < node.value.value.length; i++) {
+        token = node.value.value[i];
+
+        if (token === "!") {
+          token = `${!i ? "${1} " : ""}!important`;
+        } else if (isKeyword(token)) {
+          token =
+            findBestMatch(token.value, keywords) ||
+            findBestMatch(token.value, globalKeywords) ||
+            token;
+        } else if (isNumericValue(token)) {
+          token = resolveNumericValue(node.name, token, formatOptions);
+        }
+
+        node.value.value[i] = token;
+      }
+    }
+  }
+
+  return node;
 }
 
 /**
@@ -133,7 +148,7 @@ function resolveAsProperty(node, snippet, formatOptions) {
  * @return {Node}
  */
 function resolveAsSnippet(node, snippet) {
-    return setNodeAsText(node, snippet.value);
+  return setNodeAsText(node, snippet.value);
 }
 
 /**
@@ -143,9 +158,9 @@ function resolveAsSnippet(node, snippet) {
  * @return {Node}
  */
 function setNodeAsText(node, text) {
-    node.name = null;
-    node.value = text;
-    return node;
+  node.name = null;
+  node.value = text;
+  return node;
 }
 
 /**
@@ -158,36 +173,36 @@ function setNodeAsText(node, text) {
  * @return {*}
  */
 function findBestMatch(abbr, items, key, fuzzySearchMinScore) {
-    if (!abbr) {
-        return null;
+  if (!abbr) {
+    return null;
+  }
+
+  let matchedItem = null;
+  let maxScore = 0;
+  fuzzySearchMinScore = fuzzySearchMinScore || 0;
+
+  for (let i = 0, item; i < items.length; i++) {
+    item = items[i];
+    const score = stringScore(abbr, getScoringPart(item, key));
+
+    if (score === 1) {
+      // direct hit, no need to look further
+      return item;
     }
 
-    let matchedItem = null;
-    let maxScore = 0;
-    fuzzySearchMinScore = fuzzySearchMinScore || 0;
-
-    for (let i = 0, item; i < items.length; i++) {
-        item = items[i];
-        const score = stringScore(abbr, getScoringPart(item, key));
-
-        if (score === 1) {
-            // direct hit, no need to look further
-            return item;
-        }
-
-        if (score && score >= maxScore) {
-            maxScore = score;
-            matchedItem = item;
-        }
+    if (score && score >= maxScore) {
+      maxScore = score;
+      matchedItem = item;
     }
+  }
 
-    return maxScore >= fuzzySearchMinScore ? matchedItem : null;
+  return maxScore >= fuzzySearchMinScore ? matchedItem : null;
 }
 
 function getScoringPart(item, key) {
-    const value = item && typeof item === 'object' ? item[key] : item;
-    const m = (value || '').match(/^[\w-@]+/);
-    return m ? m[0] : value;
+  const value = item && typeof item === "object" ? item[key] : item;
+  const m = (value || "").match(/^[\w-@]+/);
+  return m ? m[0] : value;
 }
 
 /**
@@ -199,15 +214,15 @@ function getScoringPart(item, key) {
  * @return {String}
  */
 function getUnmatchedPart(abbr, string) {
-    for (let i = 0, lastPos = 0; i < abbr.length; i++) {
-        lastPos = string.indexOf(abbr[i], lastPos);
-        if (lastPos === -1) {
-            return abbr.slice(i);
-        }
-        lastPos++;
+  for (let i = 0, lastPos = 0; i < abbr.length; i++) {
+    lastPos = string.indexOf(abbr[i], lastPos);
+    if (lastPos === -1) {
+      return abbr.slice(i);
     }
+    lastPos++;
+  }
 
-    return '';
+  return "";
 }
 
 /**
@@ -216,7 +231,7 @@ function getUnmatchedPart(abbr, string) {
  * @return {Boolean}
  */
 function isKeyword(token) {
-    return tokenTypeOf(token, 'keyword');
+  return tokenTypeOf(token, "keyword");
 }
 
 /**
@@ -225,11 +240,11 @@ function isKeyword(token) {
  * @return {Boolean}
  */
 function isNumericValue(token) {
-    return tokenTypeOf(token, 'numeric');
+  return tokenTypeOf(token, "numeric");
 }
 
 function tokenTypeOf(token, type) {
-    return token && typeof token === 'object' && token.type === type;
+  return token && typeof token === "object" && token.type === type;
 }
 
 /**
@@ -240,13 +255,16 @@ function tokenTypeOf(token, type) {
  * @return {NumericValue}
  */
 function resolveNumericValue(property, token, formatOptions) {
-    if (token.unit) {
-        token.unit = formatOptions.unitAliases[token.unit] || token.unit;
-    } else if (token.value !== 0 && unitlessProperties.indexOf(property) === -1) {
-        // use `px` for integers, `em` for floats
-        // NB: num|0 is a quick alternative to Math.round(0)
-        token.unit = token.value === (token.value | 0) ? formatOptions.intUnit : formatOptions.floatUnit;
-    }
+  if (token.unit) {
+    token.unit = formatOptions.unitAliases[token.unit] || token.unit;
+  } else if (token.value !== 0 && unitlessProperties.indexOf(property) === -1) {
+    // use `px` for integers, `em` for floats
+    // NB: num|0 is a quick alternative to Math.round(0)
+    token.unit =
+      token.value === (token.value | 0)
+        ? formatOptions.intUnit
+        : formatOptions.floatUnit;
+  }
 
-    return token;
+  return token;
 }

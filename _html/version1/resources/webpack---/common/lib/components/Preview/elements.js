@@ -1,43 +1,54 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, {
-        enumerable: true,
-        get: function() {
+var __createBinding =
+  (this && this.__createBinding) ||
+  (Object.create
+    ? function (o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        Object.defineProperty(o, k2, {
+          enumerable: true,
+          get: function () {
             return m[k];
-        }
-    });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", {
-        enumerable: true,
-        value: v
-    });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function(mod) {
+          },
+        });
+      }
+    : function (o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+      });
+var __setModuleDefault =
+  (this && this.__setModuleDefault) ||
+  (Object.create
+    ? function (o, v) {
+        Object.defineProperty(o, "default", {
+          enumerable: true,
+          value: v,
+        });
+      }
+    : function (o, v) {
+        o["default"] = v;
+      });
+var __importStar =
+  (this && this.__importStar) ||
+  function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
     if (mod != null)
-        for (var k in mod)
-            if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+      for (var k in mod)
+        if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
+          __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
-};
+  };
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true,
 });
 exports.Loading = exports.StyledFrame = exports.Container = void 0;
 const styled_components_1 = __importStar(require("styled-components"));
-const fadeInAnimation = styled_components_1.keyframes `
+const fadeInAnimation = styled_components_1.keyframes`
   0%   { opacity: 0 }
   100% { opacity: 1 }
 `;
-exports.Container = styled_components_1.default.div `
+exports.Container = styled_components_1.default.div`
   height: 100%;
   width: 100%;
   background-color: white;
@@ -45,14 +56,14 @@ exports.Container = styled_components_1.default.div `
   display: flex;
   flex-direction: column;
 `;
-exports.StyledFrame = styled_components_1.default.iframe `
+exports.StyledFrame = styled_components_1.default.iframe`
   border-width: 0px;
   width: 100%;
   height: 100%;
   min-height: 0;
   overflow: auto;
 `;
-exports.Loading = styled_components_1.default.div `
+exports.Loading = styled_components_1.default.div`
   animation: ${fadeInAnimation} 0.2s;
   animation-fill-mode: forwards;
   position: absolute;
