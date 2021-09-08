@@ -202,6 +202,53 @@ Now we have a `Queue` class that uses a singly-linked list as the underlying dat
 
 
 
+## Objective 04 - Implement a stack using a dynamic array
+
+### Overview <a id="overview"></a>
+
+There are two common ways to implement a stack. One is by using a linked list, and the other is by using a dynamic array. Both of these implementations work well.
+
+In the implementation that uses a dynamic array \(a list in Python\), the `push` method appends to the array, and the `pop` method removes the last element from the array.
+
+### Follow Along <a id="follow-along"></a>
+
+First we need to define our `Stack` class and define the `__init__` method:
+
+```text
+class Stack:
+    def __init__(self):
+        self.data = []
+```
+
+Now we need to define a `push` method to add an item to the top of our stack:
+
+```text
+class Stack:
+    def __init__(self):
+        self.data = []
+
+    def push(self, item):
+        self.data.append(item)
+```
+
+Next, we need to define a `pop` method to remove the top item from the stack:
+
+```text
+class Stack:
+    def __init__(self):
+        self.data = []
+
+    def push(self, item):
+        self.data.append(item)
+
+    def pop(self):
+        if len(self.data) > 0:
+            return self.data.pop()
+        return "The stack is empty"
+```
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-3-stack-implementation-array-2" %}
+
 
 
 
