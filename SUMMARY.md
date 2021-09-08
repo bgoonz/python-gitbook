@@ -65,20 +65,6 @@
   * [Graphs](practice/untitled/untitled-1.md)
   * [Exotic](practice/untitled/untitled.md)
 
-## data-structures
-
-* [Main Categories Of Abstract Data Structures & Algorithms](data-structures/untitled/README.md)
-  * [Binary Search](data-structures/untitled/binary-search.md)
-  * [Binary Search Tree](data-structures/untitled/binary-search-tree.md)
-  * [Stack](data-structures/untitled/stack.md)
-  * [Queue](data-structures/untitled/queue.md)
-  * [Linked List](data-structures/untitled/linked-list.md)
-  * [Untitled](data-structures/untitled/untitled-2-1.md)
-  * [Untitled](data-structures/untitled/untitled-3.md)
-  * [Untitled](data-structures/untitled/untitled-2-1-1.md)
-  * [Untitled](data-structures/untitled/untitled-1.md)
-  * [Untitled](data-structures/untitled/untitled.md)
-
 ## Resources
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
