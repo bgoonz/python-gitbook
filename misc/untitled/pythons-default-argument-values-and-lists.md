@@ -2,7 +2,11 @@
 
 Have you ever written a function that used a list for a default argument value, only to have weird things happen?
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 def foo(a=[]):
     # ... do something with `a` here ...
     return a
@@ -16,7 +20,11 @@ Check out these two pieces of identical code, one in Python and one in JS.
 
 The code is supposed to append `1` to whatever array you pass in. And return it. And if you don't pass an array, it sets the array to empty by default:
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 def foo(a=[]):   # BAD
     a.append(1)
     return a
@@ -33,7 +41,11 @@ print(z)
 
 and JS:
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 function foo(a=[]) {
     a.push(1);
     return a;
@@ -51,7 +63,11 @@ console.log(z);
 
 If I run them, look at the output of the JS, which is as-expected:
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 $ node default.js
 [ 1 ]
 [ 1 ]
@@ -60,7 +76,11 @@ $ node default.js
 
 and look at the output of Python, which is not expected!
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 $ python default.py
 [1]
 [1, 1]
@@ -77,7 +97,11 @@ Python creates the default empty `[]` _when the function is loaded_. So it gets 
 
 Indeed, if you run this in Python:
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 foo() is foo()
 ```
 
@@ -85,7 +109,11 @@ You'll get `True`, since the same list is being returned.
 
 The fix is to use `None` as a substitute, and then take special action to create a new list on the spot.
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
     if a is None:
         a = []   # Make a new list right now, every time the function is called with no args
     a.append(1)
@@ -107,7 +135,11 @@ y is z  # False, they're different lists, like we wanted
 
 And then we get good output:
 
+<<<<<<< HEAD
 ```pythonext
+=======
+```python
+>>>>>>> 18a3e4c7eecc4e7c5d996bdd9e89e07aca8cafcd
 $ python3 default_good.py
 [1]
 [1]
@@ -130,3 +162,4 @@ It's because we only ever notice there's a problem when we modify the data. And 
 Put another way, we simply don't care if variables are pointing to the same `"hello!"` or to different `"hello!"`s. We cannot tell the difference.
 
 But with something mutable like a list, we certainly can tell, but only after we mutate it and see if it only affects one variable, or if it affects them all.
+
