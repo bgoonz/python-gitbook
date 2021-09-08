@@ -12,7 +12,7 @@ A dictionary is like a list, but instead of accessing values with an index, you 
 
 To build a list, you can do the following:
 
-```text
+```python
 my_list = [] # empty list literal
 my_list.append(1) # add 1 to end of list
 my_list.append(2) # add 2 to end of list
@@ -28,7 +28,7 @@ for item in my_list:
 
 In Python, if you try to access a list index that does not exist, you get an `IndexError: list index out of range` message:
 
-```text
+```python
 >>> my_list = [1,2,3]
 >>> print(my_list[10])
 IndexError: list index out of range
@@ -40,7 +40,7 @@ Let's make sure we can perform basic list operations.
 
 First, let's create a `numbers` list that contains the numbers `1`, `2`, and `3`.
 
-```text
+```python
 numbers = []
 numbers.append(1)
 numbers.append(2)
@@ -49,7 +49,7 @@ numbers.append(3)
 
 Now, let's create a `strings` list that contains the strings `"Lambda"` and `"School"`:
 
-```text
+```python
 strings = []
 strings.append("Lambda")
 strings.append("School")
@@ -63,7 +63,7 @@ print(numbers[2], strings[1])
 
 Last, let's iterate through our `numbers` list to sum up all of the numbers:
 
-```text
+```python
 sum = 0
 for number in numbers:
     sum += number
@@ -77,7 +77,7 @@ for number in numbers:
 
 Let's use a dictionary to create a collection that maps first names as keys \(strings\) to phone numbers as values.
 
-```text
+```python
 phonebook = {} # creates an empty dictionary
 phonebook["Abe"] = 4569874321
 phonebook["Bill"] = 7659803241
@@ -89,7 +89,7 @@ print(phonebook)
 
 Instead of adding one key-value pair at a time, we can initialize the dictionary to have the same values.
 
-```text
+```python
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -130,7 +130,7 @@ Below is a partially filled out hash table class where we will be using `HashTab
 
 Take a look at the code below.
 
-```text
+```python
 class HashTableEntry:
     """
     Hash table key/value pair to go in our collision chain
@@ -228,7 +228,7 @@ Let's implement the `put` method with collision resolution by chaining. What are
 
 Ok, that might sound confusing. Let's start breaking it down into code.
 
-```text
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -240,7 +240,7 @@ Ok, that might sound confusing. Let's start breaking it down into code.
 
 First, we need to hash the key and start with the first entry at that index.
 
-```text
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -257,7 +257,7 @@ Next, we need to go through the chain. We need to check two conditions:
 1. The current entry is not empty.
 2. The key or the current entry is not equal to the key we are passing in.
 
-```text
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -283,7 +283,7 @@ Sweet! Now we need to check what happens when the loop breaks. It would only bre
 
 Let's write that in code!
 
-```text
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -342,7 +342,7 @@ One way to know when to resize your hash table is to compute the load factor whe
 
 We added a `get_load_factor` and `resize` method to calculate the load factor and resize the hash table with a new capacity when necessary.
 
-```text
+```python
 class HashTableEntry:
     """
     Linked List hash table key/value pair
@@ -474,7 +474,7 @@ class HashTable:
 
 Let's change our `put` method to resize when the load factor gets too high. Here's how our current `put` method looks:
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -498,7 +498,7 @@ def put(self, key, value):
 
 To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let's go ahead and add that.
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -524,7 +524,7 @@ def put(self, key, value):
 
 Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -581,7 +581,7 @@ One way to know when to resize your hash table is to compute the load factor whe
 
 We added a `get_load_factor` and `resize` method to calculate the load factor and resize the hash table with a new capacity when necessary.
 
-```text
+```python
 class HashTableEntry:
     """
     Linked List hash table key/value pair
@@ -713,7 +713,7 @@ class HashTable:
 
 Let's change our `put` method to resize when the load factor gets too high. Here's how our current `put` method looks:
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -737,7 +737,7 @@ def put(self, key, value):
 
 To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let's go ahead and add that.
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -763,7 +763,7 @@ def put(self, key, value):
 
 Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -800,7 +800,7 @@ Fantastic, we did it!
 
 * [https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf \(Links to an external site.\)](https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf)
 
-```text
+```python
 for name, number in phonebook.items():
     print("Name: %s, Number: %s" % (name, number))
 
@@ -811,7 +811,7 @@ for name, number in phonebook.items():
 
 To remove a key-value pair from a dictionary, you need to use the `del` keyword or use the `pop()` method available on dictionary objects. The difference is `pop()` deletes the item from the dictionary and returns the value. When you use the `del` keyword, you've written a statement that doesn't evaluate to anything.
 
-```text
+```python
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -828,118 +828,9 @@ print(phonebook.pop("Bill"))
 
 
 
-* [ Home](https://lambdaschool.instructure.com/courses/1575)
-* [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
-* [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
 
-## Objective 01 - Perform basic dictionary operations
 
-### Overview <a id="overview"></a>
-
-A dictionary is like a list, but instead of accessing values with an index, you access values with a "key." A "key" can be any type of object \(string, number, list, etc.\). Also, unlike lists, dictionaries do not have an order.
-
-### Follow Along <a id="follow-along"></a>
-
-Let's use a dictionary to create a collection that maps first names as keys \(strings\) to phone numbers as values.
-
-```text
-phonebook = {} # creates an empty dictionary
-phonebook["Abe"] = 4569874321
-phonebook["Bill"] = 7659803241
-phonebook["Barry"] = 6573214789
-
-print(phonebook)
-# {'Abe': 4569874321, 'Bill': 7659803241, 'Barry': 6573214789}
-```
-
-Instead of adding one key-value pair at a time, we can initialize the dictionary to have the same values.
-
-```text
-phonebook = {
-    "Abe": 4569874321,
-    "Bill": 7659803241,
-    "Barry": 6573214789
-}
-
-print(phonebook)
-# {'Abe': 4569874321, 'Bill': 7659803241, 'Barry': 6573214789}
-```
-
-We can iterate over a dictionary as we iterated over a list. We can use the `items()` method, which returns a tuple with the key and value for each item in the dictionary.
-
-```text
-for name, number in phonebook.items():
-    print("Name: %s, Number: %s" % (name, number))
-
-# Name: Abe, Number: 4569874321
-# Name: Bill, Number: 7659803241
-# Name: Barry, Number: 6573214789
-```
-
-To remove a key-value pair from a dictionary, you need to use the `del` keyword or use the `pop()` method available on dictionary objects. The difference is `pop()` deletes the item from the dictionary and returns the value. When you use the `del` keyword, you've written a statement that doesn't evaluate to anything.
-
-```text
-phonebook = {
-    "Abe": 4569874321,
-    "Bill": 7659803241,
-    "Barry": 6573214789
-}
-
-del phonebook["Abe"]
-
-print(phonebook.pop("Bill"))
-# 7659803241
-```
-
-### Challenge <a id="challenge"></a>
-
-### Additional Resources <a id="additional-resources"></a>
-
-* [https://www.w3schools.com/python/python\_dictionaries.asp \(Links to an external site.\)](https://www.w3schools.com/python/python_dictionaries.asp)
-* [https://docs.python.org/3/tutorial/datastructures.html\#dictionaries \(Links to an external site.\)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
-
-## Objective 02 - Recognize mutable and immutable objects
-
-### Overview <a id="overview"></a>
-
-In Python, everything is an object.
-
-```text
->>> a = 1
->>> b = "hello"
->>> c = [1,2,3]
->>> isinstance(a, object)
-True
->>> isinstance(b, object)
-True
->>> isinstance(c, object)
-True
->>>
-```
-
-Additionally, all objects in Python have three things:
-
-1. Identity
-2. Type
-3. Value
-
-```text
->>> a = 1
->>> # Identity
-... id(a)
-4483164816
->>> # Type
-... type(a)
-<class 'int'>
->>> # Value
-... a
-1
->>>
-```
-
-### Follow Along <a id="follow-along"></a>
+## 
 
 #### Identity <a id="identity"></a>
 
@@ -947,7 +838,7 @@ An object's **identity** can never change once it has been created. You can thin
 
 Python has an `is` operator that allows you to compare two object's identities.
 
-```text
+```python
 >>> a = 1
 >>> b = 2
 >>> a is b
@@ -960,7 +851,7 @@ True
 
 In the code above, we first assign `1` to the variable `a`. Then, we assign `2` to the variable `b`. These are two different objects in memory and thus have different identities. We verify that they are different by using the `is` operator, which returns `False`. The line `b = a` assigns the variable `b` the object that the variable `a` is pointed to. Now, both `a` and `b` are referencing the same object in memory. We can use the `id()` function to verify that this is the case as well:
 
-```text
+```python
 >>> id(a)
 4483164816
 >>> id(b)
@@ -972,7 +863,7 @@ In the code above, we first assign `1` to the variable `a`. Then, we assign `2` 
 
 The **type** of an object determines what are its possible values and what operations that object supports. The `type()` function will return what type an object is:
 
-```text
+```python
 >>> a = 'Hello'
 >>> type(a)
 <class 'str'>
@@ -1009,7 +900,7 @@ Let's look at a few examples in code:
 
 **Lists**
 
-```text
+```python
 >>> my_list = ['laughter', 'happiness', 'love']
 >>> type(my_list)
 <class 'list'>
@@ -1024,7 +915,7 @@ In the first line, we create a list object with three elements and assign it to 
 
 **Sets**
 
-```text
+```python
 >>> my_set = {'laughter', 'happiness', 'love'}
 >>> type(my_set)
 <class 'set'>
@@ -1098,7 +989,7 @@ Let's look at a few examples:
 
 **Numbers**
 
-```text
+```python
 >>> my_int = 1
 >>> id(my_int)
 4513307280
@@ -1124,7 +1015,7 @@ Then, we assign `2` to `my_int`which creates a whole new object and assigns it t
 
 Let's look at how string concatenation works in Python. Remember that str objects are immutable.
 
-```text
+```python
 >>> my_str = 'a'
 >>> type(my_str)
 <class 'str'>
@@ -1152,7 +1043,7 @@ This behavior in Python is vital to be aware of when working with string concate
 
 Tuples are an immutable container of names, where each name has an unchangeable \(immutable\) binding to an object in memory. You cannot change the bindings of the names to the objects.
 
-```text
+```python
 >>> my_tuple = ('love', [1,2,3], True)
 >>> my_tuple[0]
 'love'
@@ -1167,7 +1058,7 @@ Here we created a tuple using `(` and `)` to denote the tuple literal syntax. Ju
 
 One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:
 
-```text
+```python
 >>> my_tuple[1] = [4,5,6]
 Traceback (most recent call last):
  File "<stdin>", line 1, in <module>
@@ -1194,7 +1085,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 
 **Mutable Objects as Arguments**
 
-```text
+```python
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
@@ -1213,7 +1104,7 @@ Notice that when `append_num_to_list` is called and `my_list` is passed in as an
 
 Next, let's see how Python behaves when we pass an immutable object as an argument to a function:
 
-```text
+```python
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
@@ -1251,7 +1142,7 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 In Python, everything is an object.
 
-```text
+```python
 >>> a = 1
 >>> b = "hello"
 >>> c = [1,2,3]
@@ -1317,7 +1208,7 @@ In the code above, we first assign `1` to the variable `a`. Then, we assign `2` 
 
 The **type** of an object determines what are its possible values and what operations that object supports. The `type()` function will return what type an object is:
 
-```text
+```python
 >>> a = 'Hello'
 >>> type(a)
 <class 'str'>
@@ -1354,7 +1245,7 @@ Let's look at a few examples in code:
 
 **Lists**
 
-```text
+```python
 >>> my_list = ['laughter', 'happiness', 'love']
 >>> type(my_list)
 <class 'list'>
@@ -1369,7 +1260,7 @@ In the first line, we create a list object with three elements and assign it to 
 
 **Sets**
 
-```text
+```python
 >>> my_set = {'laughter', 'happiness', 'love'}
 >>> type(my_set)
 <class 'set'>
@@ -1385,7 +1276,7 @@ In the first line, we create a set object with three elements and assign it to t
 
 **Dicts**
 
-```text
+```python
 >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}
 >>> type(my_dict)
 <class 'dict'>
@@ -1443,7 +1334,7 @@ Let's look at a few examples:
 
 **Numbers**
 
-```text
+```python
 >>> my_int = 1
 >>> id(my_int)
 4513307280
@@ -1512,7 +1403,7 @@ Here we created a tuple using `(` and `)` to denote the tuple literal syntax. Ju
 
 One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:
 
-```text
+```python
 >>> my_tuple[1] = [4,5,6]
 Traceback (most recent call last):
  File "<stdin>", line 1, in <module>
@@ -1539,7 +1430,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 
 **Mutable Objects as Arguments**
 
-```text
+```python
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
@@ -1558,7 +1449,7 @@ Notice that when `append_num_to_list` is called and `my_list` is passed in as an
 
 Next, let's see how Python behaves when we pass an immutable object as an argument to a function:
 
-```text
+```python
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
@@ -1574,7 +1465,7 @@ Next, let's see how Python behaves when we pass an immutable object as an argume
 
 Notice when an immutable object is passed into a function, the object is copied and bound to the parameter name. In the example above, when `my_string` is passed into `concatenate_string_to_string`, `my_string` is copied to a new object bound to the name `orig_string`.
 
-### Challenge <a id="challenge"></a>
+### Chpallenge <a id="challenge"></a>
 
 ### Additional Resources <a id="additional-resources"></a>
 
@@ -1645,7 +1536,7 @@ Let's look at a few different examples of Python functions that print something 
 
 **Constant Time O\(1\)**
 
-```text
+```python
 def print_only_one_thing(list_of_things):
     print(list_of_things[0])
 ```
@@ -1654,7 +1545,7 @@ Why is this constant time? Because no matter how large or small the input is \(1
 
 **Linear Time O\(n\)**
 
-```text
+```python
 def print_list(list_of_things):
     for thing in list_of_things:
         print(thing)
@@ -1664,7 +1555,7 @@ Why is this classified as linear time? Because the speed of the algorithm increa
 
 **Quadratic Time O\(n^2\)**
 
-```text
+```python
 def print_permutations(list_of_things):
     for thing_one in list_of_things:
         for thing_two in list_of_things:
@@ -1677,7 +1568,7 @@ Why is this quadratic time? The clue is the nested for loops. These nested for l
 
 What if we had a function like this?
 
-```text
+```python
 def do_a_bunch_of_stuff(list_of_things): # O(1 + n/2 + 2000)
     last_idx = len(list_of_things) - 1
     print(list_of_things[last_idx]) # O(1)
@@ -1704,7 +1595,7 @@ So, putting it all together, we could say that the efficiency is `O(1 + n/2 + 20
 
 Let's consider the following function:
 
-```text
+```python
 def do_different_things_in_the_same_function(list_of_things): # O(n + n^2)
     # print all each item in the list
     for thing in list_of_things: # O(n)
@@ -1722,7 +1613,7 @@ We could describe this function as `O(n + n^2)`; however, we only need to keep t
 
 Let's consider the following function:
 
-```text
+```python
 def find_thing(list_of_things, thing_we_are_trying_to_find):
     for thing in list_of_things:
         if thing == thing_we_are_trying_to_find:
@@ -1747,7 +1638,7 @@ That being said, there is a term you should become familiar with: **premature op
 
 Let's look at a few code snippets and classify their runtime complexity using Big O notation.
 
-```text
+```python
 def foo(n):
     i = 1
     while i < n:
