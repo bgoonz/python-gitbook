@@ -1,5 +1,9 @@
 # Dictionaries
 
+{% embed url="https://gist.github.com/bgoonz/df0237e949950dfd81add75e2b95f60a" %}
+
+
+
 ```python
 import itertools
 
