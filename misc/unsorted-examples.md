@@ -126,7 +126,7 @@ class MyLinkedList:
 
 
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%284%29.png)
 
 ### Define Count Vowels Function
 
@@ -215,7 +215,7 @@ if __name__ == '__main__':
 
 ![Python Program to Count the Number of Vowels in a string using a loop Output](https://i0.wp.com/codezup.com/wp-content/uploads/2019/12/Python-Program-to-Count-the-Number-of-Vowels-in-a-string-using-a-loop-Output.png?resize=665%2C242&ssl=1)
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%286%29.png)
 
 
 
@@ -296,7 +296,7 @@ if __name__ == '__main__':
 
 
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2817%29.png)
 
 ### Fibonacci Series With Recursion
 
@@ -405,61 +405,61 @@ if __name__ == '__main__':
 
 
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2812%29.png)
 
 
 
 
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2810%29.png)
 
 
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%281%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%288%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2813%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2818%29.png)
 
 
 
-![](../.gitbook/assets/image%20%2815%29.png)
-
-
-
-
-
-![](../.gitbook/assets/image%20%2811%29.png)
-
-
-
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%2811%29.png)
 
 
 
 
 
+![](../.gitbook/assets/image%20%2819%29%20%287%29.png)
 
 
-![](../.gitbook/assets/image%20%2813%29.png)
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%285%29.png)
 
-![](../.gitbook/assets/image%20%2820%29.png)
+
+
+
+
+
+
+![](../.gitbook/assets/image%20%2819%29%20%289%29.png)
+
+![](../.gitbook/assets/image%20%2819%29%20%283%29.png)
+
+![](../.gitbook/assets/image%20%2819%29%20%2816%29.png)
+
+![](../.gitbook/assets/image%20%2819%29%20%2815%29.png)
+
+
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
-
-
-![](../.gitbook/assets/image%20%281%29.png)
-
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%2819%29%20%282%29.png)
 

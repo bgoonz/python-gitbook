@@ -1,15 +1,19 @@
 # Navigation
 
+## 
+
 ## Navigation
 
-#### Website Version
+### Navigation
 
-## Table of contents
+**Website Version**
+
+### Table of contents
 
 * [Home](https://bgoonz42.gitbook.io/datastructures-in-pytho/README.md)
 * [Navigation](https://bgoonz42.gitbook.io/datastructures-in-pytho/navigation.md)
 
-### Curriculum
+#### Curriculum
 
 * [Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled.md)
 * [wk17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/README.md)
@@ -39,7 +43,7 @@
   * [DFS](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1.md)
   * [D4](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2.md)
 
-### Utilities
+#### Utilities
 
 * [Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks.md)
 * [Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README.md)
@@ -48,7 +52,7 @@
   * [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled.md)
   * [Code Lab  Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 
-### practice
+#### practice
 
 * [Supplemental Practice:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README.md)
   * [Random Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples.md)
@@ -84,7 +88,7 @@
   * [Graphs](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-1.md)
   * [Exotic](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled.md)
 
-### Resources
+#### Resources
 
 * [Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript.md)
 * [Misc. Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled-1.md)
@@ -99,7 +103,7 @@
   * [My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links.md)
   * [Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python.md)
 
-### quick-reference
+#### quick-reference
 
 * [Python Snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets.md)
 * [Python Module Index:](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index.md)
@@ -108,7 +112,7 @@
 * [index](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1.md)
 * [List Of Python Cheat Sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/bash-commands.md)
 
-### Python-Docs <a id="stdlib"></a>
+#### Python-Docs <a id="stdlib"></a>
 
 * [Basic Syntax](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax.md)
 * [Values Expressions & Statments](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments.md)
@@ -124,7 +128,7 @@
   * [index](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/untitled.md)
 * [Queue & Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks.md)
 
-### MISC
+#### MISC
 
 * [Unsorted Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/unsorted-examples.md)
 * [Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/outline.md)
@@ -135,18 +139,18 @@
   * [Python's Default Argument Values and Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists.md)
   * [SCRAP](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled.md)
 
-### Interview Prep
+#### Interview Prep
 
 * [Interview Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README.md)
   * [How to Write an Effective Resume of Python Developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions.md)
 
-### Installations Setup & Env
+#### Installations Setup & Env
 
 * [python-setup](https://bgoonz42.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled.md)
 
-### Aux-Exploration
+#### Aux-Exploration
 
 * [Subject](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README.md)
   * [List Directory Contents](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents.md)
@@ -156,22 +160,14 @@
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2.md)
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1.md)
 
-------------------------------------------------------------------------------
+**GitHub Version:**
 
-------------------------------------------------------------------------------
-
-#### GitHub Version:
-
-------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------
-
-### Table of contents
+#### Table of contents
 
 * [Home](https://github.com/bgoonz/python-gitbook/blob/master/README.md)
 * [Navigation](https://github.com/bgoonz/python-gitbook/blob/master/navigation.md)
 
-### Cirriculumn
+#### Cirriculumn
 
 * [Outline](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled.md)
 * [wk17](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled-3/README.md)
@@ -201,7 +197,7 @@
   * [DFS](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled-1/untitled-1.md)
   * [D4](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled-1/untitled-2.md)
 
-### Utilities
+#### Utilities
 
 * [Code lab Notebooks](https://github.com/bgoonz/python-gitbook/blob/master/utilities/code-lab-notebooks.md)
 * [Repl.IT](https://github.com/bgoonz/python-gitbook/blob/master/utilities/repl.it/README.md)
@@ -210,7 +206,7 @@
   * [YouTube](https://github.com/bgoonz/python-gitbook/blob/master/utilities/untitled/untitled.md)
   * [Code Lab  Notebook Embeds From Lecture](https://github.com/bgoonz/python-gitbook/blob/master/utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 
-### practice
+#### practice
 
 * [Supplemental Practice:](https://github.com/bgoonz/python-gitbook/blob/master/practice/supplemental-practice/README.md)
   * [Random Examples](https://github.com/bgoonz/python-gitbook/blob/master/practice/supplemental-practice/random-examples.md)
@@ -246,7 +242,7 @@
   * [Graphs](https://github.com/bgoonz/python-gitbook/blob/master/practice/untitled/untitled-1.md)
   * [Exotic](https://github.com/bgoonz/python-gitbook/blob/master/practice/untitled/untitled.md)
 
-### Resources
+#### Resources
 
 * [Python VS JavaScript](https://github.com/bgoonz/python-gitbook/blob/master/resources/python-vs-javascript.md)
 * [Misc. Resources](https://github.com/bgoonz/python-gitbook/blob/master/resources/untitled-1.md)
@@ -261,7 +257,7 @@
   * [My-Links](https://github.com/bgoonz/python-gitbook/blob/master/resources/untitled/my-links.md)
   * [Beginners Guide To Python](https://github.com/bgoonz/python-gitbook/blob/master/resources/untitled/beginners-guide-to-python.md)
 
-### quick-reference
+#### quick-reference
 
 * [Python Snippets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-snippets.md)
 * [Python Module Index:](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-module-index.md)
@@ -270,7 +266,7 @@
 * [index](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/untitled-1.md)
 * [List Of Python Cheat Sheets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/bash-commands.md)
 
-### Python-Docs <a id="stdlib"></a>
+#### Python-Docs <a id="stdlib"></a>
 
 * [Basic Syntax](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/basic-syntax.md)
 * [Values Expressions & Statments](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/values-expressions-and-statments.md)
@@ -286,7 +282,7 @@
   * [index](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/classes/untitled.md)
 * [Queue & Stacks](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/queue-and-stacks.md)
 
-### MISC
+#### MISC
 
 * [Unsorted Examples](https://github.com/bgoonz/python-gitbook/blob/master/misc/unsorted-examples.md)
 * [Outline](https://github.com/bgoonz/python-gitbook/blob/master/misc/outline.md)
@@ -297,18 +293,18 @@
   * [Python's Default Argument Values and Lists](https://github.com/bgoonz/python-gitbook/blob/master/misc/untitled/pythons-default-argument-values-and-lists.md)
   * [SCRAP](https://github.com/bgoonz/python-gitbook/blob/master/misc/untitled/untitled.md)
 
-### Interview Prep
+#### Interview Prep
 
 * [Interview Resources](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/README.md)
   * [How to Write an Effective Resume of Python Developer](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/150-practice-problems-and-solutions.md)
 
-### Installations Setup & Env
+#### Installations Setup & Env
 
 * [python-setup](https://github.com/bgoonz/python-gitbook/blob/master/installations-setup-and-env/untitled.md)
 
-### Aux-Exploration
+#### Aux-Exploration
 
 * [Subject](https://github.com/bgoonz/python-gitbook/blob/master/aux-exploration/subject/README.md)
   * [List Directory Contents](https://github.com/bgoonz/python-gitbook/blob/master/aux-exploration/subject/list-directory-contents.md)
@@ -320,168 +316,113 @@
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/" caption="" %}
 
----
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
----
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
----
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
----
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" %}
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled" caption="" %}
 
