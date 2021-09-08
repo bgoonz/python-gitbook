@@ -298,7 +298,110 @@ if __name__ == '__main__':
 
 ![](../.gitbook/assets/image%20%2821%29.png)
 
+### Fibonacci Series With Recursion
 
+Let’s create a new Function named fibonacci\_with\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by calling it recursively.
+
+So the base condition will be if the number is less than or equal to 1, then simply return the number.
+
+Otherwise, return the callback to Fibonacci function again with decrement value from numbers 1 and 2 and add both function calls.
+
+```text
+def fibonacci_with_recursion(number):
+    if number <= 1:
+        return number
+    else:
+        return (fibonacci_with_recursion(number - 1) + fibonacci_with_recursion(number - 2))
+```
+
+#### Fibonacci Series Without Recursion
+
+Let’s create a new Function named fibonacci\_without\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
+
+_**Read =&gt;**_ [_**Program to check whether the Number is Prime or Not**_](https://codezup.com/program-check-whether-number-prime-not-python/)
+
+So, the base condition for this function is if the number is equal to 0, then we return output as 0 because of how we calculate the Series if the number is 0.
+
+```text
+if number == 0: return 0
+```
+
+Now, let’s declare two variables named fibonacci0 for number 0 and initialize it to 0 and fibonacci1 for number 1 and initialize it to 1.
+
+```text
+fibonacci0, fibonacci1 = 0, 1
+```
+
+Now create a FOR Loop to calculate till the n-th term, so the logic is simple as that assigns the sum of fibonacci0 and fibonacci1 to fibonacci1 and assigns fibonacci0 the value of fibonacci1 at last step.
+
+And after calculating n-th term, simply returns the fibonacci1 because which keeps tracks till the n-th term.
+
+```text
+def fibonacci_without_recursion(number):
+    if number == 0: return 0
+    fibonacci0, fibonacci1 = 0, 1
+    print(fibonacci0, end = ' ')
+    for i in range(2, number + 1):
+        print(fibonacci1, end = ' ')
+        fibonacci1, fibonacci0 = fibonacci0 + fibonacci1, fibonacci1
+    return fibonacci1
+```
+
+#### Define the Main Method
+
+Now let’s create a main method where we need to call these both methods that we have created above for calculating Fibonacci Series using Recursion as well as by For Loops.
+
+First, ask for the user input to enter any number. If the number is less than 0, then simply returns an error message printing that the “**Number must be Positive Number**“.
+
+```text
+if __name__ == '__main__':
+    userInput = int(input('Enter the number upto which calculate fibonnaci series: '))
+    if(userInput<0):
+        print("Number must be Positive Number")
+    else:
+        print("\nUsing Recursion:")
+        for i in range(userInput + 1):
+            print(fibonacci_with_recursion(i),end=' ')
+
+        print("\n\nUsing LOOP:")
+        print(fibonacci_without_recursion(userInput))
+```
+
+**Source Code**
+
+```text
+
+def fibonacci_with_recursion(number):
+    if number <= 1:
+        return number
+    else:
+        return (fibonacci_with_recursion(number - 1) + fibonacci_with_recursion(number - 2))
+
+def fibonacci_without_recursion(number):
+    if number == 0: return 0
+    fibonacci0, fibonacci1 = 0, 1
+    print(fibonacci0, end = ' ')
+    for i in range(2, number + 1):
+        print(fibonacci1, end = ' ')
+        fibonacci1, fibonacci0 = fibonacci0 + fibonacci1, fibonacci1
+    return fibonacci1
+
+if __name__ == '__main__':
+    userInput = int(input('Enter the number upto which calculate fibonnaci series: '))
+    if(userInput<0):
+        print("Number must be Positive Number")
+    else:
+        print("\nUsing Recursion:")
+        for i in range(userInput + 1):
+            print(fibonacci_with_recursion(i),end=' ')
+
+        print("\n\nUsing LOOP:")
+        print(fibonacci_without_recursion(userInput))
+```
+
+**Output**
+
+![Calculate and display n-th term Fibonacci Series in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Calculate-and-display-n-th-term-Fibonacci-Series-in-Python-Output.png?resize=665%2C302&ssl=1)
 
 
 
