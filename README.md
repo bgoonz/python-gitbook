@@ -46,12 +46,6 @@ description: Landing Page
 
 {% embed url="https://master--bgoonz-blog.netlify.app/" %}
 
-\*\*\*\*
-
-
-
-
-
 ## **Downloads:**
 
 #### **DS-Algo Book PDF:**
@@ -78,13 +72,7 @@ description: Landing Page
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" %}
 
-\*\*\*\*
-
-\*\*\*\*
-
 **Global Site Tag:**
-
-\*\*\*\*
 
 ```javascript
 <!-- Global site tag (gtag.js) - Google Analytics -->
