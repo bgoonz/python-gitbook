@@ -79,7 +79,7 @@
 ## Resources
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
-* [Untitled](resources/untitled-1.md)
+* [Misc. Resources](resources/untitled-1.md)
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
