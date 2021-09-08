@@ -1,22 +1,15 @@
 # Reading and Writing to text files in Python
 
-
-
 Python provides inbuilt functions for creating, writing and reading files. There are two types of files that can be handled in python, normal text files and binary files \(written in binary language,0s and 1s\).
 
-
-* **Text files:** In this type of file, Each line of text is terminated with a special character called EOL \(End of Line\), which is the new line character \('\n'\) in python by default.
-* **Binary files:** In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.
-
+- **Text files:** In this type of file, Each line of text is terminated with a special character called EOL \(End of Line\), which is the new line character \('\n'\) in python by default.
+- **Binary files:** In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.
 
 In this article, we will be focusing on opening, closing, reading and writing data in a text file.
 
-
 **File Access Modes**
 
-
 Access modes govern the type of operations possible in the opened file. It refers to how the file will be used once its opened. These modes also define the location of the **File Handle** in the file. File handle is like a cursor, which defines from where the data has to be read or written in the file. There are 6 access modes in python.
-
 
 1. **Read Only \('r'\) :** Open text file for reading. The handle is positioned at the beginning of the file. If the file does not exists, raises I/O error. This is also the default mode in which file is opened.
 2. **Read and Write \('r+'\) :** Open the file for reading and writing. The handle is positioned at the beginning of the file. Raises I/O error if the file does not exists.
@@ -27,18 +20,13 @@ Access modes govern the type of operations possible in the opened file. It refer
 
 **Opening a File**
 
-
 It is done using the open\(\) function. No module is required to be imported for this function.
-
 
 ```py
 File_object = open(r"File_Name","Access_Mode")
 ```
 
-
-The file should exist in the same directory as the python program file else, full address of the file should be written on place of filename.
-Note: The **r** is placed before filename to prevent the characters in filename string to be treated as special character. For example, if there is \temp in the file address, then \t is treated as the tab character and error is raised of invalid address. The r makes the string raw, that is, it tells that the string is without any special characters. The r can be ignored if the file is in same directory and address is not being placed.
- Python
+The file should exist in the same directory as the python program file else, full address of the file should be written on place of filename. Note: The **r** is placed before filename to prevent the characters in filename string to be treated as special character. For example, if there is \temp in the file address, then \t is treated as the tab character and error is raised of invalid address. The r makes the string raw, that is, it tells that the string is without any special characters. The r can be ignored if the file is in same directory and address is not being placed. Python
 
 ```py
 
@@ -54,13 +42,9 @@ file2 = open(r"D:\Text\MyFile2.txt","w+")
 
 Here, file1 is created as object for MyFile1 and file2 as object for MyFile2
 
-
 **Closing a file**
 
-
-close\(\) function closes the file and frees the memory space acquired by that file. It is used at the time when the file is no longer needed or if it is to be opened in a different file mode.
-File\_object.close\(\)
- Python
+close\(\) function closes the file and frees the memory space acquired by that file. It is used at the time when the file is no longer needed or if it is to be opened in a different file mode. File_object.close\(\) Python
 
 ```py
 
@@ -74,7 +58,6 @@ file1.close()
 
 There are two ways to write in a file.
 
-
 1. **write\(\) :** Inserts the string str1 in a single line in the text file.
 
 ```py
@@ -87,12 +70,9 @@ File_object.write(str1)
 File_object.writelines(L) for L = [str1, str2, str3]
 ```
 
-1.
-**Reading from a file**
-
+1.  **Reading from a file**
 
 There are three ways to read data from a text file.
-
 
 1. **read\(\) :** Returns the read bytes in form of a string. Reads n bytes, if no n specified, reads the entire file.
 
@@ -112,9 +92,7 @@ File_object.readline([n])
   File_object.readlines()
 ```
 
-
-**Note:** '\n' is treated as a special character of two bytes
- Python
+**Note:** '\n' is treated as a special character of two bytes Python
 
 ```py
 
@@ -164,7 +142,6 @@ file1.close()
 
 Output:
 
-
 ```py
 Output of Read function is
 Hello
@@ -190,8 +167,7 @@ Output of Readlines function is
 
 **Appending to a file**
 
-
- Python
+Python
 
 ```py
 
@@ -226,7 +202,6 @@ file1.close()
 
 Output:
 
-
 ```py
 Output of Readlines after appending
 ['This is Delhi \n', 'This is Paris \n', 'This is London \n', 'Today \n']
@@ -234,4 +209,3 @@ Output of Readlines after appending
 Output of Readlines after writing
 ['Tomorrow \n']
 ```
-

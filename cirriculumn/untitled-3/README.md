@@ -2,8 +2,6 @@
 
 ![](../../.gitbook/assets/image%20%282%29.png)
 
-
-
 {% page-ref page="outline.md" %}
 
 {% page-ref page="untitled-2/" %}
@@ -19,6 +17,3 @@
 {% page-ref page="../untitled-4/" %}
 
 {% page-ref page="../untitled-1/" %}
-
-
-
