@@ -57,6 +57,7 @@
 
 ## practice
 
+* [Supplemental Practice:](practice/supplemental-practice.md)
 * [ADS Implementations:](practice/untitled/README.md)
   * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
@@ -98,6 +99,7 @@
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes.md)
+* [Queue & Stacks](stdlib/queue-and-stacks.md)
 
 ## MISC
 
