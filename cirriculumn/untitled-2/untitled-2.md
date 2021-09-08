@@ -4,11 +4,15 @@
 
 
 
-![](../../.gitbook/assets/image%20%2826%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
+
+
 
 ![](../../.gitbook/assets/image%20%2823%29.png)
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
+
+![](../../.gitbook/assets/image%20%2830%29.png)
 
 ## 
 
@@ -38,6 +42,16 @@ Hash tables have fast deletes \(`O(1)`\) on _average_. However, in the worst cas
 
 The space complexity of a hash table is linear \(`O(n)`\). Each key-value pair in the hash table will take up space in memory.
 
+
+
+![continued....](../../.gitbook/assets/image%20%2829%29.png)
+
+![](../../.gitbook/assets/image%20%2833%29.png)
+
+
+
+
+
 #### **Strengths**
 
 The main reason why hash tables are great is that they have constant-time \(`O(1)`\) lookup operations in the average case. That makes them great to use in any situation where you will be conducting many lookup operations. The second reason they are great is that they allow you to use any hashable object as a key. This means they can be used in many different scenarios where you want to map one object \(the key\) to another object \(the value\).
@@ -61,95 +75,6 @@ The above is just one of the ways to deal with hash collisions. Hopefully, you c
 ### **Additional Resources**
 
 * [https://www.geeksforgeeks.org/hashing-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/hashing-data-structure/)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
-
-## Objective 02 - Describe and implement a hash function
-
-### **Overview**
-
-Hashing functions take an input \(usually a string\) and return an integer as the output. Let's say we needed to store five colors in our hash table. Currently, we have an empty table that looks like this:
-
-![https://tk-assets.lambdaschool.com/add0f486-f742-4b70-9885-88c6938237f8\_Untitled.png](https://tk-assets.lambdaschool.com/add0f486-f742-4b70-9885-88c6938237f8_Untitled.png)
-
-Now, I need to assign an index given the name of a color. Our hash function will take the name of a color and convert it into an index.
-
-![https://tk-assets.lambdaschool.com/16439e40-5ec9-4242-b5c5-07584bc665ca\_S5-M1-O1-Hash-Table-Animation.gif](https://tk-assets.lambdaschool.com/16439e40-5ec9-4242-b5c5-07584bc665ca_S5-M1-O1-Hash-Table-Animation.gif)
-
-So, hash functions convert the strings into indexes, and then we store the given string into the computed index of an array.
-
-> Hash Function + Array = Hash Table
-
-Now that we know what a hash table is let's dive deeper into creating a hash function.
-
-### **Follow Along**
-
-To convert a string into an integer, hashing functions operate on the individual characters that make up the string.
-
-Let's use what we know to create a hashing function in Python.
-
-In Python, we can encode strings into their bytes representation with the `.encode()` method \(read more [here \(Links to an external site.\)](https://docs.python.org/3/howto/unicode.html#converting-to-bytes)\). Once encoded, an integer represents each character.
-
-Let's do this with the string `hello`
-
-```text
-bytes_representation = "hello".encode()
-
-for byte in bytes_representation:
-    print(byte)
-
-### Print Output
-### 104
-### 101
-### 108
-### 108
-### 111
-```
-
-Now that we’ve converted our string into a series of integers, we can manipulate those integers somehow. For simplicity’s sake, we can use a simple accumulator pattern to get a sum of all the integer values.
-
-```text
-bytes_representation = "hello".encode()
-
-sum = 0
-for byte in bytes_representation:
-    sum += byte
-
-print(sum)
-
-### Print Output
-### 532
-```
-
-Great! We turned a string into a number. Now, let's generalize this into a function.
-
-```text
-def my_hashing_func(str):
-    bytes_representation = str.encode()
-
-    sum = 0
-    for byte in bytes_representation:
-        sum += byte
-
-    return sum
-```
-
-We aren't done yet 🤪. As shown earlier, `hello` returns `532`. But, what if our hash table only has ten slots? We have to make 532 a number less than 10 😱.
-
-Remember the modulo operator `%`? We can use that in our hashing function to ensure that the integer the function returns is within a specific range.
-
-```text
-def my_hashing_func(str, table_size):
-    bytes_representation = str.encode()
-
-    sum = 0
-    for byte in bytes_representation:
-        sum += byte
-
-    return sum % table_size
-```
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
 
 ## Objective 02 - Describe and implement a hash function
 
