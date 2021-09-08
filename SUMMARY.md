@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Home](README.md)
+* [Index](index.md)
+* [README](readme.md)
 * [Navigation](navigation.md)
 
 ## Cirriculumn

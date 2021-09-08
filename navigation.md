@@ -154,10 +154,6 @@
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
 
-
-------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------
 **GitHub Version:**
 
 ### GitHub Version:

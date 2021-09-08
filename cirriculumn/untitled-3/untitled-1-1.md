@@ -1,15 +1,11 @@
 # D2- Module 02 - Python II
 
-{% embed url="https://github.com/wilfredinni/python-cheatsheet" %}
+{% embed url="https://github.com/wilfredinni/python-cheatsheet" caption="" %}
 
-
-
-{% embed url="https://gist.github.com/bgoonz/ebe842b651bba237d70bccfa5a7b5a75\#file-number-bases-and-chars-ipynb" %}
+{% embed url="https://gist.github.com/bgoonz/ebe842b651bba237d70bccfa5a7b5a75\#file-number-bases-and-chars-ipynb" caption="" %}
 
 {% tabs %}
 {% tab title="First Tab" %}
-
-
 ```python
 def toHex(dec):
     digits = "0123456789ABCDEF"
@@ -38,8 +34,6 @@ for x in range(200):
 {% endtab %}
 {% endtabs %}
 
-
-
 ### Overview <a id="overview"></a>
 
 A module is a collection of code that is written to meet specific needs. For example, you could split up different parts of a game you were building into modules. Each module would be a separate Python file that you could manage separately.
@@ -50,7 +44,7 @@ Any Python file that ends with the `.py` extension is considered a module. The n
 
 To import from other modules, we can use the `import` command.
 
-```python
+```text
 import math
 
 print(math.factorial(5))
@@ -61,7 +55,7 @@ So, by importing the built-in `math` module, we have access to all of the functi
 
 If you only need a specific function from a module, you can import that specific function like so:
 
-```python
+```text
 from math import factorial
 
 print(factorial(5))
@@ -70,7 +64,7 @@ print(factorial(5))
 
 You can also import all the names from a module with this syntax to avoid using dot notation throughout your file.
 
-```python
+```text
 from math import *
 
 print(factorial(5))
@@ -81,7 +75,7 @@ print(pow(2, 3))
 
 You can also bind the module to a name of your choice by using `as`.
 
-```python
+```text
 import math as alias
 
 print(alias.factorial(5))
@@ -90,16 +84,12 @@ print(alias.factorial(5))
 
 To find out which names a module defines when imported, you can use the `dir()` method. This method returns an alphabetically sorted list of strings for all of the names defined in the module.
 
-```python
+```text
 import math
 
 print(dir(math))
 # ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees',
 ```
-
-
-
-
 
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
 
@@ -276,7 +266,6 @@ Original file is located at
 - Non Contiguous abstract Data Structure
 - Value (can be any value for our use we will just use numbers)
 - Next (A pointer or reference to the next node in the list)
-
 ```
 
 L1 = Node\(34\) L1.next = Node\(45\) L1.next.next = Node\(90\)
@@ -292,7 +281,7 @@ L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 Node\(45\) Node\(90\)
 
 {% hint style="info" %}
-```python
+```text
 Simple Singly Linked List Node Class
 value -> int
 next -> LinkedListNode
@@ -365,7 +354,6 @@ print_ll(L1)
 L1.insert_node(999, 102)
 print('--------------------------------------------\n')
 print_ll(L1)
-
 ```
 
 Result:
@@ -424,8 +412,6 @@ Result:
 ```
 {% endhint %}
 
-
-
 {% hint style="info" %}
 ```python
     Simple Doubly Linked List Node Class
@@ -448,7 +434,7 @@ once.
 *Note: If you get stuck, try drawing a picture of a small linked list and
 running your function by hand. Does it actually work? Also, don't forget to
 consider edge cases (like a list with only 1 or 0 elements).*
-          cn         p
+          cn         p                
         None        [1] -> [2] ->[3] -> None
 
 - setup a current variable pointing to the head of the list
