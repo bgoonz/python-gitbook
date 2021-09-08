@@ -10,8 +10,6 @@ Original:
 
 {% embed url="https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM542p?usp=sharing\#scrollTo=Um92huhOx2BD" %}
 
-
-
 {% embed url="https://gist.github.com/bgoonz/85cf385ba5382cea548c2b6083cd1b3f" %}
 
 
