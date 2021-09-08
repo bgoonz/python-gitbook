@@ -1,6 +1,6 @@
 # List Of Python Cheat Sheets
 
-```text
+```pythonext
 
 ```
 

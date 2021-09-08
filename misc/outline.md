@@ -6,7 +6,7 @@
 
 #### Keywords:
 
-```text
+```pythonext
 ***and       del       for       is        raiseassert    elif      from      lambda    returnbreak     else      global    not       tryclass     except    if        or        whilecontinue  exec      import    passdef       finally   in        print***
 ```
 
@@ -36,7 +36,7 @@ Here is an example of a correctly \(though confusingly\) indented piece of Pytho
 
 The following example shows various indentation errors:
 
-```text
+```pythonext
  `def perm(l):                       # error: first line indented
 for i in range(len(l)):             # error: not indented
     s = l[:i] + l[i+1:]
@@ -71,7 +71,7 @@ for i in range(len(l)):             # error: not indented
 
 ## **`#` is used to make comments in your code.**
 
-```text
+```pythonext
 def foo():
     """
     The foo function does many amazing things that you
@@ -94,7 +94,7 @@ No Decimal Point
 
 > Created by a literal non-decimal point number … or … with the int\(\) constructor.
 
-```text
+```pythonext
 print(3) # => 3
 print(int(19)) # => 19
 print(int()) # => 0
@@ -110,7 +110,7 @@ print(int()) # => 0
 
 > Than I am sure you will find the means to suspend your disbelief.
 
-```text
+```pythonext
 print(2.24) # => 2.24
 print(2.) # => 2.0
 print(float()) # => 0.0
@@ -123,7 +123,7 @@ print(27e-5) # => 0.00027
 
 **T**_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space** when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
-```text
+```pythonext
 print(7j) # => 7j
 print(5.1+7.7j)) # => 5.1+7.7j
 print(complex(3, 5)) # => 3+5j
@@ -133,7 +133,7 @@ print(complex()) # => 0j
 
 - **Type Casting** : The process of converting one number to another.
 
-```text
+```pythonext
 # Using Float
 print(17)               # => 17
 print(float(17))        # => 17.0# Using Int
@@ -156,7 +156,7 @@ print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 - You can escape strings like so `'Jodi asked, "What\\'s up, Sam?"'`
 - Multiline strings use triple quotes.
 
-```text
+```pythonext
 print('''My instructions are very long so to make them
 more readable in the code I am putting them on
 more than one line. I can even include "quotes"
@@ -166,7 +166,7 @@ the end of the string!''')
 
 **Use the `len()` function to get the length of a string.**
 
-```text
+```pythonext
 print(len(“Spaghetti”)) # => 9
 ```
 
@@ -174,7 +174,7 @@ print(len(“Spaghetti”)) # => 9
 
 ### **Python allows negative indexing \(thank god!\)**
 
-```text
+```pythonext
 print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 ```
 
@@ -182,7 +182,7 @@ print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _\(mind you that in JS … strings are wrapped in an object \(under the hood\)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.\)_
 
-```text
+```pythonext
 print(“Spaghetti”[1:4]) # => pag
 print(“Spaghetti”[4:-1]) # => hett
 print(“Spaghetti”[4:4]) # => (empty string)
@@ -190,7 +190,7 @@ print(“Spaghetti”[4:4]) # => (empty string)
 
 - The end range is exclusive just like `slice` in JS.
 
-```text
+```pythonext
 # Shortcut to get from the beginning of a string to a certain index.
 print("Spaghetti"[:4])  # => Spag
 print("Spaghetti"[:-1])    # => Spaghett# Shortcut to get from a certain index to the end of a string.
@@ -200,14 +200,14 @@ print("Spaghetti"[-4:])    # => etti
 
 - The `index` string function is the equiv. of `indexOf()` in JS
 
-```text
+```pythonext
 print("Spaghetti".index("h"))    # => 4
 print("Spaghetti".index("t"))    # => 6
 ```
 
 - The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
-```text
+```pythonext
 print("Spaghetti".count("h"))    # => 1
 print("Spaghetti".count("t"))    # => 2
 print("Spaghetti".count("s"))    # => 0
@@ -223,7 +223,7 @@ postpone, and one which we intend to win, and the others, too.
 - _You can also use “_” to repeat strings or multiply strings.\*\*
 - **Use the `format()` function to use placeholders in a string to input values later on.**
 
-```text
+```pythonext
 first_name = "Billy"
 last_name = "Bob"
 print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
@@ -251,7 +251,7 @@ print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is B
 - Duck Typing is the fundamental approach of Python.
 - Assignment of a value automatically declares a variable.
 
-```text
+```pythonext
 a = 7
 b = 'Marbles'
 print(a)         # => 7
@@ -262,7 +262,7 @@ print(b)         # => Marbles
 
 ### **Use with caution as this is highly unreadable**
 
-```text
+```pythonext
 count = max = min = 0
 print(count)           # => 0
 print(max)             # => 0
@@ -271,7 +271,7 @@ print(min)             # => 0
 
 ### **The value and type of a variable can be re-assigned at any time.**
 
-```text
+```pythonext
 a = 17
 print(a)         # => 17
 a = 'seventeen'
@@ -292,7 +292,7 @@ print(a)         # => seventeen
 
 [https://miro.medium.com/max/1400/0\*HQpndNhm1Z_xSoHb.png](https://miro.medium.com/max/1400/0*HQpndNhm1Z_xSoHb.png)
 
-```text
+```pythonext
 # Logical AND
 print(True and True)    # => True
 print(True and False)   # => False
@@ -329,7 +329,7 @@ print(not True or False)    # => False
 
 ## **Identity vs Equality**
 
-```text
+```pythonext
 print (2 == '2')    # => False
 print (2 is '2')    # => Falseprint ("2" == '2')    # => True
 print ("2" is '2')    # => True# There is a distinction between the number types.
@@ -344,7 +344,7 @@ print (2 is 2.0)    # => False
 
 ## **While Statements**
 
-```text
+```pythonext
 spam = 0
 while spam < 5:
   print('Hello, world.')
@@ -353,7 +353,7 @@ while spam < 5:
 
 - `Break` statement also exists in Python.
 
-```text
+```pythonext
 spam = 0
 while True:
   print('Hello, world.')
@@ -364,7 +364,7 @@ while True:
 
 - As are `continue` statements
 
-```text
+```pythonext
 spam = 0
 while True:
   print('Hello, world.')
@@ -378,7 +378,7 @@ while True:
 
 - Python equivalent to `try/catch`
 
-```text
+```pythonext
 a = 321
 try:
     print(len(a))
@@ -396,7 +396,7 @@ except:
 
 - You can name an error to give the output more specificity.
 
-```text
+```pythonext
 a = 100
 b = 0
 try:
@@ -408,7 +408,7 @@ print(c)
 
 - You can also use the `pass` commmand to by pass a certain error.
 
-```text
+```pythonext
 a = 100
 b = 0
 try:
@@ -419,7 +419,7 @@ except ZeroDivisionError:
 
 - The `pass` method won’t allow you to bypass every single error so you can chain an exception series like so:
 
-```text
+```pythonext
 a = 100
 # b = "5"
 try:
@@ -432,7 +432,7 @@ except (TypeError, NameError):
 
 - You can use an `else` statement to end a chain of `except` statements.
 
-```text
+```pythonext
 # tuple of file names
 files = ('one.txt', 'two.txt', 'three.txt')# simple loop
 for filename in files:
@@ -451,7 +451,7 @@ for filename in files:
 
 - `finally` is used at the end to clean up all actions under any circumstance.
 
-```text
+```pythonext
 def divide(x, y):
     try:
         result = x / y
@@ -465,7 +465,7 @@ def divide(x, y):
 
 - Using duck typing to check to see if some value is able to use a certain method.
 
-```text
+```pythonext
 # Try a number - nothing will print out
 a = 321
 if hasattr(a, '__len__'):
@@ -479,7 +479,7 @@ if hasattr(b, '__len__'):
 
 - Pass Keyword is required to write the JS equivalent of :
 
-```text
+```pythonext
 if (true) {
 }while (true) {}if True:
   passwhile True:
@@ -496,7 +496,7 @@ if (true) {
 - **One tab indentation for the code to run.**
 - **You can use default parameters just like in JS**
 
-```text
+```pythonext
 def greeting(name, saying="Hello"):
     print(saying, name)greeting("Monica")
 # Hello Monicagreeting("Barry", "Hey")
@@ -505,7 +505,7 @@ def greeting(name, saying="Hello"):
 
 ### **Keep in mind, default parameters must always come after regular parameters.**
 
-```text
+```pythonext
 # THIS IS BAD CODE AND WILL NOT RUN
 def increment(delta=1, value):
     return delta + value
@@ -513,7 +513,7 @@ def increment(delta=1, value):
 
 - _You can specify arguments by name without destructuring in Python._
 
-```text
+```pythonext
 def greeting(name, saying="Hello"):
     print(saying, name)# name has no default value, so just provide the value
 # saying has a default value, so use a keyword argument
@@ -530,21 +530,21 @@ greeting("Monica", saying="Hi")
 
 > Remember that in Python join\(\) is called on a string with an array/list passed in as the argument.Python has a very powerful formatting engine.format\(\) is also applied directly to strings.
 
-```text
+```pythonext
 shopping_list = [‘bread’,’milk’,’eggs’]
 print(‘,’.join(shopping_list))
 ```
 
 ## **Comma Thousands Separator**
 
-```text
+```pythonext
 print(‘{:,}’.format(1234567890))
 ‘1,234,567,890’
 ```
 
 ## **Date and Time**
 
-```text
+```pythonext
 d = datetime.datetime(2020, 7, 4, 12, 15, 58)
 print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))
 ‘2020–07–04 12:15:58’
@@ -552,7 +552,7 @@ print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))
 
 ## **Percentage**
 
-```text
+```pythonext
 points = 190
 total = 220
 print(‘Correct answers: {:.2%}’.format(points/total))
@@ -561,7 +561,7 @@ Correct answers: 86.36%
 
 ## **Data Tables**
 
-```text
+```pythonext
 width=8
 print(‘ decimal hex binary’)
 print(‘-’*27)
@@ -589,20 +589,20 @@ The largest difference between scripts and programs is the level of complexity a
 
 ## **Lists are the python equivalent of arrays.**
 
-```text
+```pythonext
 empty_list = []
 departments = [‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’]
 ```
 
 ## **You can instantiate**
 
-```text
+```pythonext
 specials = list()
 ```
 
 ### **Test if a value is in a list.**
 
-```text
+```pythonext
 print(1 in [1, 2, 3]) #> True
 print(4 in [1, 2, 3]) #> False
 # Tuples : Very similar to lists, but they are immutable
@@ -610,20 +610,20 @@ print(4 in [1, 2, 3]) #> False
 
 ### **Instantiated with parentheses**
 
-```text
+```pythonext
 time_blocks = (‘AM’,’PM’)
 ```
 
 ### **Sometimes instantiated without**
 
-```text
+```pythonext
 colors = ‘red’,’blue’,’green’
 numbers = 1, 2, 3
 ```
 
 ### **Tuple\(\) built in can be used to convert other data into a tuple**
 
-```text
+```pythonext
 tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)
 tuple([1,2,3]) # returns (1, 2, 3)
 # Think of tuples as constant variables.
@@ -635,7 +635,7 @@ tuple([1,2,3]) # returns (1, 2, 3)
 
 > Start : opt. default 0, first \# in sequence.Stop : required next number past the last number in the sequence.Step : opt. default 1, difference between each number in the sequence.
 
-```text
+```pythonext
 range(5) # [0, 1, 2, 3, 4]
 range(1,5) # [1, 2, 3, 4]
 range(0, 25, 5) # [0, 5, 10, 15, 20]
@@ -651,7 +651,7 @@ for let(i = 0; i = 0; i++)
 
 ### **Mutable.**
 
-```text
+```pythonext
 a = {‘one’:1, ‘two’:2, ‘three’:3}
 b = dict(one=1, two=2, three=3)
 c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
@@ -674,14 +674,14 @@ _**Declared with curly braces of the built in dict\(\)**_
 
 **Standard Set is mutable, Python has a immutable version called frozenset.Sets created by putting comma seperated values inside braces:**
 
-```text
+```pythonext
 school_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}
 print(school_bag)
 ```
 
 ### **Also can use set constructor to automatically put it into a set.**
 
-```text
+```pythonext
 letters = set(‘abracadabra’)
 print(letters)
 #Built-In Functions
@@ -702,7 +702,7 @@ print(letters)
 
 **enumerate\(iterable, start=0\) : starts with a sequence and converts it to a series of tuples**
 
-```text
+```pythonext
 quarters = [‘First’, ‘Second’, ‘Third’, ‘Fourth’]
 print(enumerate(quarters))
 print(enumerate(quarters, start=1))
@@ -736,7 +736,7 @@ _There is a faster way to concatenate an array of strings into one string, so do
 
 - _Union : The pipe \| operator or union\(sets\) function can be used to produce a new set which is a combination of all elements in the provided set._
 
-```text
+```pythonext
 a = {1, 2, 3}
 b = {2, 4, 6}
 print(a | b) # => {1, 2, 3, 4, 6}
@@ -744,7 +744,7 @@ print(a | b) # => {1, 2, 3, 4, 6}
 
 ### **Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.**
 
-```text
+```pythonext
 
 a = {1, 2, 3}
 b = {2, 4, 6}
@@ -754,7 +754,7 @@ Difference : The — operator can be used to produce a new set of only the eleme
 
 **Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
-```text
+```pythonext
 a = {1, 2, 3}
 b = {2, 4, 6}
 print(a — b) # => {1, 3}
@@ -772,7 +772,7 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
-```text
+```pythonext
 print(‘My name is’)
 for i in range(5):
 print(‘Carlita Cinco (‘ + str(i) + ‘)’)total = 0
@@ -788,7 +788,7 @@ print(i)
 
 _**Common technique is to use the len\(\) on a pre-defined list with a for loop to iterate over the indices of the list.**_
 
-```text
+```pythonext
 supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
 for i in range(len(supplies)):
 print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
@@ -797,7 +797,7 @@ print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
 
 **You can loop and destructure at the same time.**
 
-```text
+```pythonext
 l = 1, 2], [3, 4], [5, 6
 for a, b in l:
 print(a, ‘, ‘, b)
@@ -807,7 +807,7 @@ print(a, ‘, ‘, b)
 
 **You can use values\(\) and keys\(\) to loop over dictionaries.**
 
-```text
+```pythonext
 spam = {‘color’: ‘red’, ‘age’: 42}
 for v in spam.values():
 print(v)
@@ -817,7 +817,7 @@ _Prints red_
 
 _Prints 42_
 
-```text
+```pythonext
 for k in spam.keys():
 print(k)
 ```
@@ -830,7 +830,7 @@ _Prints age_
 
 **Getting tuples**
 
-```text
+```pythonext
 for i in spam.items():
 print(i)
 ```
@@ -841,7 +841,7 @@ _Prints \(‘age’, 42\)_
 
 _Destructuring to values_
 
-```text
+```pythonext
 for k, v in spam.items():
 print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 ```
@@ -852,7 +852,7 @@ _Prints Key: color Value: red_
 
 **Looping over string**
 
-```text
+```pythonext
 for c in “abcdefg”:
 print(c)
 ```
@@ -867,7 +867,7 @@ _keyword args with default values_
 
 - kwargs
 
-```text
+```pythonext
 def example(arg_1, arg_2, *args, **kwargs):
 passdef example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
 pass
@@ -896,7 +896,7 @@ _Try to avoid importing with wildcards in Python._
 
 _Use multiple lines for clarity when importing._
 
-```text
+```pythonext
 from urllib.request import (
 HTTPDefaultErrorHandler as ErrorHandler,
 HTTPRedirectHandler as RedirectHandler,
@@ -947,7 +947,7 @@ urlopen,
 
 Keywords:
 
-```text
+```pythonext
 ***and       del       for       is        raiseassert    elif      from      lambda    returnbreak     else      global    not       tryclass     except    if        or        whilecontinue  exec      import    passdef       finally   in        print***
 ```
 
@@ -977,7 +977,7 @@ Here is an example of a correctly \(though confusingly\) indented piece of Pytho
 
 The following example shows various indentation errors:
 
-```text
+```pythonext
  `def perm(l):                       # error: first line indented
 for i in range(len(l)):             # error: not indented
     s = l[:i] + l[i+1:]
@@ -1008,7 +1008,7 @@ for i in range(len(l)):             # error: not indented
 
 ## **`#` is used to make comments in your code.**
 
-```text
+```pythonext
 def foo():
     """
     The foo function does many amazing things that you
@@ -1031,7 +1031,7 @@ No Decimal Point
 
 > Created by a literal non-decimal point number … or … with the int\(\) constructor.
 
-```text
+```pythonext
 print(3) # => 3
 print(int(19)) # => 19
 print(int()) # => 0
@@ -1047,7 +1047,7 @@ print(int()) # => 0
 
 > Than I am sure you will find the means to suspend your disbelief.
 
-```text
+```pythonext
 print(2.24) # => 2.24
 print(2.) # => 2.0
 print(float()) # => 0.0
@@ -1060,7 +1060,7 @@ print(27e-5) # => 0.00027
 
 **T**_his is because the letter i is common place as the de facto index for any and all enumerable entities so it just makes sense not to compete for name-**space** when there’s another 25 letters that don’t get used for every loop under the sun. My most medium apologies to Leonhard Euler._
 
-```text
+```pythonext
 print(7j) # => 7j
 print(5.1+7.7j)) # => 5.1+7.7j
 print(complex(3, 5)) # => 3+5j
@@ -1070,7 +1070,7 @@ print(complex()) # => 0j
 
 - **Type Casting** : The process of converting one number to another.
 
-```text
+```pythonext
 # Using Float
 print(17)               # => 17
 print(float(17))        # => 17.0# Using Int
@@ -1093,7 +1093,7 @@ print(str(17.0) + ' and ' + str(17))        # => 17.0 and 17
 - You can escape strings like so `'Jodi asked, "What\\'s up, Sam?"'`
 - Multiline strings use triple quotes.
 
-```text
+```pythonext
 print('''My instructions are very long so to make them
 more readable in the code I am putting them on
 more than one line. I can even include "quotes"
@@ -1103,7 +1103,7 @@ the end of the string!''')
 
 **Use the `len()` function to get the length of a string.**
 
-```text
+```pythonext
 print(len(“Spaghetti”)) # => 9
 ```
 
@@ -1111,7 +1111,7 @@ print(len(“Spaghetti”)) # => 9
 
 ### **Python allows negative indexing \(thank god!\)**
 
-```text
+```pythonext
 print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 ```
 
@@ -1119,7 +1119,7 @@ print(“Spaghetti”[-1]) # => i print(“Spaghetti”[-4]) # => e
 
 You can think of this as roughly equivalent to the slice method called on a JavaScript object or string… _\(mind you that in JS … strings are wrapped in an object \(under the hood\)… upon which the string methods are actually called. As a immutable privative type **by textbook definition**, a string literal could not hope to invoke most of it’s methods without violating the state it was bound to on initialization if it were not for this bit of syntactic sugar.\)_
 
-```text
+```pythonext
 print(“Spaghetti”[1:4]) # => pag
 print(“Spaghetti”[4:-1]) # => hett
 print(“Spaghetti”[4:4]) # => (empty string)
@@ -1127,7 +1127,7 @@ print(“Spaghetti”[4:4]) # => (empty string)
 
 - The end range is exclusive just like `slice` in JS.
 
-```text
+```pythonext
 # Shortcut to get from the beginning of a string to a certain index.
 print("Spaghetti"[:4])  # => Spag
 print("Spaghetti"[:-1])    # => Spaghett# Shortcut to get from a certain index to the end of a string.
@@ -1137,14 +1137,14 @@ print("Spaghetti"[-4:])    # => etti
 
 - The `index` string function is the equiv. of `indexOf()` in JS
 
-```text
+```pythonext
 print("Spaghetti".index("h"))    # => 4
 print("Spaghetti".index("t"))    # => 6
 ```
 
 - The `count` function finds out how many times a substring appears in a string… pretty nifty for a hard coded feature of the language.
 
-```text
+```pythonext
 print("Spaghetti".count("h"))    # => 1
 print("Spaghetti".count("t"))    # => 2
 print("Spaghetti".count("s"))    # => 0
@@ -1160,7 +1160,7 @@ postpone, and one which we intend to win, and the others, too.
 - _You can also use “_” to repeat strings or multiply strings.\*\*
 - **Use the `format()` function to use placeholders in a string to input values later on.**
 
-```text
+```pythonext
 first_name = "Billy"
 last_name = "Bob"
 print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is Billy Bob
@@ -1188,7 +1188,7 @@ print('Your name is {0} {1}'.format(first_name, last_name))  # => Your name is B
 - Duck Typing is the fundamental approach of Python.
 - Assignment of a value automatically declares a variable.
 
-```text
+```pythonext
 a = 7
 b = 'Marbles'
 print(a)         # => 7
@@ -1199,7 +1199,7 @@ print(b)         # => Marbles
 
 ### **Use with caution as this is highly unreadable**
 
-```text
+```pythonext
 count = max = min = 0
 print(count)           # => 0
 print(max)             # => 0
@@ -1208,7 +1208,7 @@ print(min)             # => 0
 
 ### **The value and type of a variable can be re-assigned at any time.**
 
-```text
+```pythonext
 a = 17
 print(a)         # => 17
 a = 'seventeen'
@@ -1229,7 +1229,7 @@ print(a)         # => seventeen
 
 [https://miro.medium.com/max/1400/0\*HQpndNhm1Z_xSoHb.png](https://miro.medium.com/max/1400/0*HQpndNhm1Z_xSoHb.png)
 
-```text
+```pythonext
 # Logical AND
 print(True and True)    # => True
 print(True and False)   # => False
@@ -1266,7 +1266,7 @@ print(not True or False)    # => False
 
 ## **Identity vs Equality**
 
-```text
+```pythonext
 print (2 == '2')    # => False
 print (2 is '2')    # => Falseprint ("2" == '2')    # => True
 print ("2" is '2')    # => True# There is a distinction between the number types.
@@ -1281,7 +1281,7 @@ print (2 is 2.0)    # => False
 
 ## **While Statements**
 
-```text
+```pythonext
 spam = 0
 while spam < 5:
   print('Hello, world.')
@@ -1290,7 +1290,7 @@ while spam < 5:
 
 - `Break` statement also exists in Python.
 
-```text
+```pythonext
 spam = 0
 while True:
   print('Hello, world.')
@@ -1301,7 +1301,7 @@ while True:
 
 - As are `continue` statements
 
-```text
+```pythonext
 spam = 0
 while True:
   print('Hello, world.')
@@ -1315,7 +1315,7 @@ while True:
 
 - Python equivalent to `try/catch`
 
-```text
+```pythonext
 a = 321
 try:
     print(len(a))
@@ -1333,7 +1333,7 @@ except:
 
 - You can name an error to give the output more specificity.
 
-```text
+```pythonext
 a = 100
 b = 0
 try:
@@ -1345,7 +1345,7 @@ print(c)
 
 - You can also use the `pass` commmand to by pass a certain error.
 
-```text
+```pythonext
 a = 100
 b = 0
 try:
@@ -1356,7 +1356,7 @@ except ZeroDivisionError:
 
 - The `pass` method won’t allow you to bypass every single error so you can chain an exception series like so:
 
-```text
+```pythonext
 a = 100
 # b = "5"
 try:
@@ -1369,7 +1369,7 @@ except (TypeError, NameError):
 
 - You can use an `else` statement to end a chain of `except` statements.
 
-```text
+```pythonext
 # tuple of file names
 files = ('one.txt', 'two.txt', 'three.txt')# simple loop
 for filename in files:
@@ -1388,7 +1388,7 @@ for filename in files:
 
 - `finally` is used at the end to clean up all actions under any circumstance.
 
-```text
+```pythonext
 def divide(x, y):
     try:
         result = x / y
@@ -1402,7 +1402,7 @@ def divide(x, y):
 
 - Using duck typing to check to see if some value is able to use a certain method.
 
-```text
+```pythonext
 # Try a number - nothing will print out
 a = 321
 if hasattr(a, '__len__'):
@@ -1416,7 +1416,7 @@ if hasattr(b, '__len__'):
 
 - Pass Keyword is required to write the JS equivalent of :
 
-```text
+```pythonext
 if (true) {
 }while (true) {}if True:
   passwhile True:
@@ -1433,7 +1433,7 @@ if (true) {
 - **One tab indentation for the code to run.**
 - **You can use default parameters just like in JS**
 
-```text
+```pythonext
 def greeting(name, saying="Hello"):
     print(saying, name)greeting("Monica")
 # Hello Monicagreeting("Barry", "Hey")
@@ -1442,7 +1442,7 @@ def greeting(name, saying="Hello"):
 
 ### **Keep in mind, default parameters must always come after regular parameters.**
 
-```text
+```pythonext
 # THIS IS BAD CODE AND WILL NOT RUN
 def increment(delta=1, value):
     return delta + value
@@ -1450,7 +1450,7 @@ def increment(delta=1, value):
 
 - _You can specify arguments by name without destructuring in Python._
 
-```text
+```pythonext
 def greeting(name, saying="Hello"):
     print(saying, name)# name has no default value, so just provide the value
 # saying has a default value, so use a keyword argument
@@ -1467,21 +1467,21 @@ greeting("Monica", saying="Hi")
 
 > Remember that in Python join\(\) is called on a string with an array/list passed in as the argument.Python has a very powerful formatting engine.format\(\) is also applied directly to strings.
 
-```text
+```pythonext
 shopping_list = [‘bread’,’milk’,’eggs’]
 print(‘,’.join(shopping_list))
 ```
 
 ## **Comma Thousands Separator**
 
-```text
+```pythonext
 print(‘{:,}’.format(1234567890))
 ‘1,234,567,890’
 ```
 
 ## **Date and Time**
 
-```text
+```pythonext
 d = datetime.datetime(2020, 7, 4, 12, 15, 58)
 print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))
 ‘2020–07–04 12:15:58’
@@ -1489,7 +1489,7 @@ print(‘{:%Y-%m-%d %H:%M:%S}’.format(d))
 
 ## **Percentage**
 
-```text
+```pythonext
 points = 190
 total = 220
 print(‘Correct answers: {:.2%}’.format(points/total))
@@ -1498,7 +1498,7 @@ Correct answers: 86.36%
 
 ## **Data Tables**
 
-```text
+```pythonext
 width=8
 print(‘ decimal hex binary’)
 print(‘-’*27)
@@ -1526,20 +1526,20 @@ The largest difference between scripts and programs is the level of complexity a
 
 ## **Lists are the python equivalent of arrays.**
 
-```text
+```pythonext
 empty_list = []
 departments = [‘HR’,’Development’,’Sales’,’Finance’,’IT’,’Customer Support’]
 ```
 
 ## **You can instantiate**
 
-```text
+```pythonext
 specials = list()
 ```
 
 ### **Test if a value is in a list.**
 
-```text
+```pythonext
 print(1 in [1, 2, 3]) #> True
 print(4 in [1, 2, 3]) #> False
 # Tuples : Very similar to lists, but they are immutable
@@ -1547,20 +1547,20 @@ print(4 in [1, 2, 3]) #> False
 
 ### **Instantiated with parentheses**
 
-```text
+```pythonext
 time_blocks = (‘AM’,’PM’)
 ```
 
 ### **Sometimes instantiated without**
 
-```text
+```pythonext
 colors = ‘red’,’blue’,’green’
 numbers = 1, 2, 3
 ```
 
 ### **Tuple\(\) built in can be used to convert other data into a tuple**
 
-```text
+```pythonext
 tuple(‘abc’) # returns (‘a’, ‘b’, ‘c’)
 tuple([1,2,3]) # returns (1, 2, 3)
 # Think of tuples as constant variables.
@@ -1572,7 +1572,7 @@ tuple([1,2,3]) # returns (1, 2, 3)
 
 > Start : opt. default 0, first \# in sequence.Stop : required next number past the last number in the sequence.Step : opt. default 1, difference between each number in the sequence.
 
-```text
+```pythonext
 range(5) # [0, 1, 2, 3, 4]
 range(1,5) # [1, 2, 3, 4]
 range(0, 25, 5) # [0, 5, 10, 15, 20]
@@ -1588,7 +1588,7 @@ for let(i = 0; i = 0; i++)
 
 ### **Mutable.**
 
-```text
+```pythonext
 a = {‘one’:1, ‘two’:2, ‘three’:3}
 b = dict(one=1, two=2, three=3)
 c = dict([(‘two’, 2), (‘one’, 1), (‘three’, 3)])
@@ -1611,14 +1611,14 @@ _**Declared with curly braces of the built in dict\(\)**_
 
 **Standard Set is mutable, Python has a immutable version called frozenset.Sets created by putting comma seperated values inside braces:**
 
-```text
+```pythonext
 school_bag = {‘book’,’paper’,’pencil’,’pencil’,’book’,’book’,’book’,’eraser’}
 print(school_bag)
 ```
 
 ### **Also can use set constructor to automatically put it into a set.**
 
-```text
+```pythonext
 letters = set(‘abracadabra’)
 print(letters)
 #Built-In Functions
@@ -1639,7 +1639,7 @@ print(letters)
 
 **enumerate\(iterable, start=0\) : starts with a sequence and converts it to a series of tuples**
 
-```text
+```pythonext
 quarters = [‘First’, ‘Second’, ‘Third’, ‘Fourth’]
 print(enumerate(quarters))
 print(enumerate(quarters, start=1))
@@ -1673,7 +1673,7 @@ _There is a faster way to concatenate an array of strings into one string, so do
 
 - _Union : The pipe \| operator or union\(sets\) function can be used to produce a new set which is a combination of all elements in the provided set._
 
-```text
+```pythonext
 a = {1, 2, 3}
 b = {2, 4, 6}
 print(a | b) # => {1, 2, 3, 4, 6}
@@ -1681,7 +1681,7 @@ print(a | b) # => {1, 2, 3, 4, 6}
 
 ### **Intersection : The & operator ca be used to produce a new set of only the elements that appear in all sets.**
 
-```text
+```pythonext
 
 a = {1, 2, 3}
 b = {2, 4, 6}
@@ -1691,7 +1691,7 @@ Difference : The — operator can be used to produce a new set of only the eleme
 
 **Symmetric Difference : The ^ operator can be used to produce a new set of only the elements that appear in exactly one set and not in both.**
 
-```text
+```pythonext
 a = {1, 2, 3}
 b = {2, 4, 6}
 print(a — b) # => {1, 3}
@@ -1709,7 +1709,7 @@ Always Includes:
 
 **You can use the range function as the iterable for the for loop.**
 
-```text
+```pythonext
 print(‘My name is’)
 for i in range(5):
 print(‘Carlita Cinco (‘ + str(i) + ‘)’)total = 0
@@ -1725,7 +1725,7 @@ print(i)
 
 _**Common technique is to use the len\(\) on a pre-defined list with a for loop to iterate over the indices of the list.**_
 
-```text
+```pythonext
 supplies = [‘pens’, ‘staplers’, ‘flame-throwers’, ‘binders’]
 for i in range(len(supplies)):
 print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
@@ -1734,7 +1734,7 @@ print(‘Index ‘ + str(i) + ‘ in supplies is: ‘ + supplies[i])
 
 **You can loop and destructure at the same time.**
 
-```text
+```pythonext
 l = 1, 2], [3, 4], [5, 6
 for a, b in l:
 print(a, ‘, ‘, b)
@@ -1744,7 +1744,7 @@ print(a, ‘, ‘, b)
 
 **You can use values\(\) and keys\(\) to loop over dictionaries.**
 
-```text
+```pythonext
 spam = {‘color’: ‘red’, ‘age’: 42}
 for v in spam.values():
 print(v)
@@ -1754,7 +1754,7 @@ _Prints red_
 
 _Prints 42_
 
-```text
+```pythonext
 for k in spam.keys():
 print(k)
 ```
@@ -1767,7 +1767,7 @@ _Prints age_
 
 **Getting tuples**
 
-```text
+```pythonext
 for i in spam.items():
 print(i)
 ```
@@ -1778,7 +1778,7 @@ _Prints \(‘age’, 42\)_
 
 _Destructuring to values_
 
-```text
+```pythonext
 for k, v in spam.items():
 print(‘Key: ‘ + k + ‘ Value: ‘ + str(v))
 ```
@@ -1789,7 +1789,7 @@ _Prints Key: color Value: red_
 
 **Looping over string**
 
-```text
+```pythonext
 for c in “abcdefg”:
 print(c)
 ```
@@ -1804,7 +1804,7 @@ _keyword args with default values_
 
 - kwargs
 
-```text
+```pythonext
 def example(arg_1, arg_2, *args, **kwargs):
 passdef example2(arg_1, arg_2, *args, kw_1=”shark”, kw_2=”blowfish”, **kwargs):
 pass
@@ -1833,7 +1833,7 @@ _Try to avoid importing with wildcards in Python._
 
 _Use multiple lines for clarity when importing._
 
-```text
+```pythonext
 from urllib.request import (
 HTTPDefaultErrorHandler as ErrorHandler,
 HTTPRedirectHandler as RedirectHandler,

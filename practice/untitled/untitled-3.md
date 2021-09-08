@@ -66,7 +66,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```text
+```pythonext
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|

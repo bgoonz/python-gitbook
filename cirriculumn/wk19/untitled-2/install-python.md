@@ -18,21 +18,21 @@ Unfortunately, we haven't found a way to get Anaconda to play nicely with pipenv
 
 If you can run `python` or `python3` and see a 3.7 or later version, you're good to go:
 
-```text
+```pythonext
 $ python3 --version
 Python 3.6.5
 ```
 
 or on some systems, Python 3 is just `python`:
 
-```text
+```pythonext
 $ python --version
 Python 3.6.5
 ```
 
 And optionally try `pipenv`:
 
-```text
+```pythonext
 $ pipenv --version
 pipenv, version [some remotely recent date, probably]
 ```
@@ -47,7 +47,7 @@ If you don't have Brew installed, [follow the instructions on the brew website](
 
 Use Brew to install Python and pipenv at the Terminal prompt:
 
-```text
+```pythonext
 brew install python pipenv
 ```
 
@@ -65,7 +65,7 @@ Python 3 is in the Windows Store and can be installed from there.
 
 When installing the official package, be sure to check the
 
-```text
+```pythonext
 [ ] Add to PATH
 ```
 
@@ -86,7 +86,7 @@ This is what worked for Beej. YMMV.
 
 5. You'll see a message like this in the pipenv install output, but with a slightly different path:
 
-   ```text
+   ```pythonext
    add C:\Users\username\AppData\Roaming\Python\Python38\Scripts to your path
    ```
 
@@ -123,7 +123,7 @@ If you're running Windows 10+, you might want to install the Windows Subsystem f
 5. Make a new username and password. This is completely separate from your Windows username and password, but I made mine the same so that I wouldn't forget.
 6. Upgrade the Ubuntu system. Run:
 
-   ```text
+   ```pythonext
    sudo apt-get update
    sudo apt-get upgrade
    ```

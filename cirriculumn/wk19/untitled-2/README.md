@@ -149,7 +149,7 @@ Let's start by executing the print function to print different types of objects 
 
 Using `print` with no arguments:
 
-```text
+```pythonext
 >>> print()
 
 >>>
@@ -159,7 +159,7 @@ Notice the empty line after calling the `print` function. The default `end` valu
 
 Using `print` with a string literal:
 
-```text
+```pythonext
 >>> print("Lambda School is awesome!")
 Lambda School is awesome!
 >>>
@@ -169,7 +169,7 @@ Notice how calling `print` with the string literal printed the exact string we p
 
 Using `print` with a variable:
 
-```text
+```pythonext
 >>> slogan = "i love lamp"
 >>> print(slogan)
 i love lamp
@@ -180,7 +180,7 @@ Notice how calling `print` with the `slogan` variable prints the value assigned 
 
 Using `print` with an expression:
 
-```text
+```pythonext
 >>> superlative = "wonderful"
 >>> school = "Lambda School"
 >>> print(school + " is " + superlative)
@@ -192,7 +192,7 @@ Notice how the argument for the `print` function can be an expression. Once the 
 
 Using `print` with other object types:
 
-```text
+```pythonext
 print(2020)
 2020
 >>> print(123.456)
@@ -218,7 +218,7 @@ Now, let's look at how we can pass multiple arguments into the `print` function.
 
 We can pass multiple objects, all of the same or different types, into `print`.
 
-```text
+```pythonext
 >>> print("Lambda School", 2020, True)
 Lambda School 2020 True
 >>>
@@ -228,7 +228,7 @@ Notice how each object we passed in was converted to a string and then output to
 
 We can change the separator value by assigning a value to the keyword argument `sep`.
 
-```text
+```pythonext
 >>> print("Lambda School", 2020, True, sep="!!!")
 Lambda School!!!2020!!!True
 >>> print("Lambda School", 2020, True, sep="\t")
@@ -248,7 +248,7 @@ You can also specify the `end` value by assigning a value to the `end` keyword a
 
 Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
 
-```text
+```pythonext
 >>> print("Are you a Lambda School student?", end=" (Y or N)")
 Are you a Lambda School student? (Y or N)>>>
 ```
@@ -277,7 +277,7 @@ Let's start by executing the print function to print different types of objects 
 
 Using `print` with no arguments:
 
-```text
+```pythonext
 >>> print()
 
 >>>
@@ -287,7 +287,7 @@ Notice the empty line after calling the `print` function. The default `end` valu
 
 Using `print` with a string literal:
 
-```text
+```pythonext
 >>> print("Lambda School is awesome!")
 Lambda School is awesome!
 >>>
@@ -297,7 +297,7 @@ Notice how calling `print` with the string literal printed the exact string we p
 
 Using `print` with a variable:
 
-```text
+```pythonext
 >>> slogan = "i love lamp"
 >>> print(slogan)
 i love lamp
@@ -308,7 +308,7 @@ Notice how calling `print` with the `slogan` variable prints the value assigned 
 
 Using `print` with an expression:
 
-```text
+```pythonext
 >>> superlative = "wonderful"
 >>> school = "Lambda School"
 >>> print(school + " is " + superlative)
@@ -346,7 +346,7 @@ Now, let's look at how we can pass multiple arguments into the `print` function.
 
 We can pass multiple objects, all of the same or different types, into `print`.
 
-```text
+```pythonext
 >>> print("Lambda School", 2020, True)
 Lambda School 2020 True
 >>>
@@ -356,7 +356,7 @@ Notice how each object we passed in was converted to a string and then output to
 
 We can change the separator value by assigning a value to the keyword argument `sep`.
 
-```text
+```pythonext
 >>> print("Lambda School", 2020, True, sep="!!!")
 Lambda School!!!2020!!!True
 >>> print("Lambda School", 2020, True, sep="\t")
@@ -376,7 +376,7 @@ You can also specify the `end` value by assigning a value to the `end` keyword a
 
 Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
 
-```text
+```pythonext
 >>> print("Are you a Lambda School student?", end=" (Y or N)")
 Are you a Lambda School student? (Y or N)>>>
 ```
@@ -407,7 +407,7 @@ Python is unique because indentation instead of some other character marks block
 
 Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
 
-```text
+```pythonext
 >>> import string
 >>> string.whitespace
 ' \t\n\r\x0b\x0c'
@@ -422,7 +422,7 @@ You've seen the different types of whitespace characters that can appear, but yo
 
 Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
 
-```text
+```pythonext
 >>> first = "Lambda"
 >>> second = "School"
 >>> first + second
@@ -442,7 +442,7 @@ It's important to understand that Python assumes meaning in newline characters w
 
 Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
 
-```text
+```pythonext
 >>> if True:
 ... if True:
   File "<stdin>", line 2
@@ -454,7 +454,7 @@ IndentationError: expected an indented block
 
 This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
 
-```text
+```pythonext
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -465,7 +465,7 @@ it worked!
 
 The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
 
-```text
+```pythonext
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -499,19 +499,19 @@ In Python, you can have integers and floating-point numbers.
 
 You can define an integer like so:
 
-```text
+```pythonext
 my_int = 3
 ```
 
 You can also cast a floating-point number to be an integer like so:
 
-```text
+```pythonext
 my_int = int(3.0)
 ```
 
 To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
 
-```text
+```pythonext
 my_float = 3.0
 my_float = float(3)
 ```
@@ -520,20 +520,20 @@ my_float = float(3)
 
 You can define strings with either single or double quotes:
 
-```text
+```pythonext
 my_string = 'Lambda School'
 my_string = "Lambda School"
 ```
 
 It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
 
-```text
+```pythonext
 my_string = "I don't have to worry about apostrophes with my double-quotes."
 ```
 
 Let's practice declaring variables to store an int, a float, and a string:
 
-```text
+```pythonext
 my_int = 2
 my_float = 5.0
 my_str = "Lambda School"
@@ -551,21 +551,21 @@ There are a few basic operators that you should be familiar with as you start wr
 
 You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
 
-```text
+```pythonext
 my_number = 2 + 2 * 8 / 5.0
 print(my_number) # 5.2
 ```
 
 There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
 
-```text
+```pythonext
 my_remainder = 9 % 4
 print(my_remainder) # 1
 ```
 
 You can use two multiplication operators to make the exponentiation operator \(`**`\).
 
-```text
+```pythonext
 two_squared = 2 ** 2
 print(two_squared)    # 4
 two_cubed = 2 ** 3
@@ -576,7 +576,7 @@ print(two_cubed)      # 8
 
 You can use the addition operator to concatenate strings and lists:
 
-```text
+```pythonext
 string_one = "Hello,"
 string_two = " World!"
 combined = string_one + string_two
@@ -590,7 +590,7 @@ print(big_lst) # [1, 2, 3, 4, 5, 6]
 
 You can also use the multiplication operator to create a new list or string that repeats the original sequence:
 
-```text
+```pythonext
 my_string = "Bueller"
 repeated = my_string * 3
 print(repeated) # BuellerBuellerBueller
@@ -606,27 +606,27 @@ Now, let's see if we can combine all of this information in a quick demo.
 
 First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
 
-```text
+```pythonext
 a = object()
 b = object()
 ```
 
 Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
 
-```text
+```pythonext
 a_list = [a] * 5
 b_list = [b] * 5
 ```
 
 Then, let's combine `a_list` and `b_list` into a `combined` list.
 
-```text
+```pythonext
 combined = a_list + b_list
 ```
 
 If our code works as expected, `combined` should have a length of 10.
 
-```text
+```pythonext
 print(len(combined)) # 10
 ```
 
@@ -640,7 +640,7 @@ To format a string in Python, you use the `%` operator to format a set of stored
 
 For example, let's say you want to insert a `name` variable inside a string. You would do the following:
 
-```text
+```pythonext
 name = "Austen"
 formatted_string = "Hello, %s!" % name
 print(formatted_string) # Hello, Austen!
@@ -648,7 +648,7 @@ print(formatted_string) # Hello, Austen!
 
 If you have more than one argument specifier, you need to enclose your arguments in a tuple:
 
-```text
+```pythonext
 name = "Austen"
 year = 2020
 print("Hey %s! It's the year %d." % (name, year))
@@ -657,7 +657,7 @@ print("Hey %s! It's the year %d." % (name, year))
 
 Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
 
-```text
+```pythonext
 my_list = [1,2,3]
 print("my_list: %s" % my_list)
 # my_list: [1, 2, 3]
@@ -677,7 +677,7 @@ Let's see if we can use all of this information to practice formatting a few str
 
 Let's imagine that we have some data that we want to inject into a string.
 
-```text
+```pythonext
 product_name = "bananas"
 price = 1.23
 product_id = 123456
@@ -685,7 +685,7 @@ product_id = 123456
 
 We need to print a formatted string using argument specifiers and a tuple that contains our data:
 
-```text
+```pythonext
 print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
@@ -706,14 +706,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -721,7 +721,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -729,7 +729,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -738,7 +738,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -746,7 +746,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -754,7 +754,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -777,14 +777,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -792,7 +792,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -800,7 +800,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -809,7 +809,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -817,7 +817,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -825,7 +825,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```text
+```pythonext
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -985,7 +985,7 @@ while True:
 
 You can also use a `continue` statement to skip the current block but not exit the loop entirely.
 
-```text
+```pythonext
 # Prints 1, 3, 5, 7
 for x in range(8):
     # if x is even, skip this block and do not print
@@ -1052,7 +1052,7 @@ Python uses boolean values to evaluate conditions. An expression in any Boolean 
 
 To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
 
-```text
+```pythonext
 x = 10
 print(x == 10) # True
 print(x == 5)  # False
@@ -1065,7 +1065,7 @@ print(x != 20) # True
 
 You build up more complex boolean expressions by using the `and` and `or` operators.
 
-```text
+```pythonext
 name = "Elon"
 age = 49
 if name == "Elon" and age == 49:
@@ -1077,7 +1077,7 @@ if name == "Elon" or name == "Bill":
 
 Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
 
-```text
+```pythonext
 years = [2018, 2019, 2020, 2021]
 year = 2020
 
@@ -1089,7 +1089,7 @@ if year in years:
 
 We can use the `if`, `elif`, and the `else` keywords to define a series of code blocks that will execute conditionally.
 
-```text
+```pythonext
 first_statement = False
 second_statement = True
 
@@ -1105,7 +1105,7 @@ Any object that is considered "empty" evaluates to `False`. For example, `""`, `
 
 If we want to determine if two objects are actually the same instance in memory, we use the `is` operator instead of the value comparison operator `==`.
 
-```text
+```pythonext
 a = [1,2,3]
 b = [1,2,3]
 
@@ -1121,7 +1121,7 @@ print(x is y) # True because x and y reference the same list object
 
 There is also the `not` operator, which inverts the boolean that follows it:
 
-```text
+```pythonext
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```

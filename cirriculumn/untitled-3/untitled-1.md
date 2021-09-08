@@ -10,7 +10,7 @@ A dictionary is like a list, but instead of accessing values with an index, you 
 
 Let's use a dictionary to create a collection that maps first names as keys \(strings\) to phone numbers as values.
 
-```text
+```pythonext
 phonebook = {} # creates an empty dictionary
 phonebook["Abe"] = 4569874321
 phonebook["Bill"] = 7659803241
@@ -22,7 +22,7 @@ print(phonebook)
 
 Instead of adding one key-value pair at a time, we can initialize the dictionary to have the same values.
 
-```text
+```pythonext
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -35,7 +35,7 @@ print(phonebook)
 
 We can iterate over a dictionary as we iterated over a list. We can use the `items()` method, which returns a tuple with the key and value for each item in the dictionary.
 
-```text
+```pythonext
 for name, number in phonebook.items():
     print("Name: %s, Number: %s" % (name, number))
 
@@ -46,7 +46,7 @@ for name, number in phonebook.items():
 
 To remove a key-value pair from a dictionary, you need to use the `del` keyword or use the `pop()` method available on dictionary objects. The difference is `pop()` deletes the item from the dictionary and returns the value. When you use the `del` keyword, you've written a statement that doesn't evaluate to anything.
 
-```text
+```pythonext
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -79,7 +79,7 @@ A dictionary is like a list, but instead of accessing values with an index, you 
 
 Let's use a dictionary to create a collection that maps first names as keys \(strings\) to phone numbers as values.
 
-```text
+```pythonext
 phonebook = {} # creates an empty dictionary
 phonebook["Abe"] = 4569874321
 phonebook["Bill"] = 7659803241
@@ -91,7 +91,7 @@ print(phonebook)
 
 Instead of adding one key-value pair at a time, we can initialize the dictionary to have the same values.
 
-```text
+```pythonext
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -104,7 +104,7 @@ print(phonebook)
 
 We can iterate over a dictionary as we iterated over a list. We can use the `items()` method, which returns a tuple with the key and value for each item in the dictionary.
 
-```text
+```pythonext
 for name, number in phonebook.items():
     print("Name: %s, Number: %s" % (name, number))
 
@@ -115,7 +115,7 @@ for name, number in phonebook.items():
 
 To remove a key-value pair from a dictionary, you need to use the `del` keyword or use the `pop()` method available on dictionary objects. The difference is `pop()` deletes the item from the dictionary and returns the value. When you use the `del` keyword, you've written a statement that doesn't evaluate to anything.
 
-```text
+```pythonext
 phonebook = {
     "Abe": 4569874321,
     "Bill": 7659803241,
@@ -143,7 +143,7 @@ print(phonebook.pop("Bill"))
 
 In Python, everything is an object.
 
-```text
+```pythonext
 >>> a = 1
 >>> b = "hello"
 >>> c = [1,2,3]
@@ -162,7 +162,7 @@ Additionally, all objects in Python have three things:
 2. Type
 3. Value
 
-```text
+```pythonext
 >>> a = 1
 >>> # Identity
 ... id(a)
@@ -184,7 +184,7 @@ An object's **identity** can never change once it has been created. You can thin
 
 Python has an `is` operator that allows you to compare two object's identities.
 
-```text
+```pythonext
 >>> a = 1
 >>> b = 2
 >>> a is b
@@ -197,7 +197,7 @@ True
 
 In the code above, we first assign `1` to the variable `a`. Then, we assign `2` to the variable `b`. These are two different objects in memory and thus have different identities. We verify that they are different by using the `is` operator, which returns `False`. The line `b = a` assigns the variable `b` the object that the variable `a` is pointed to. Now, both `a` and `b` are referencing the same object in memory. We can use the `id()` function to verify that this is the case as well:
 
-```text
+```pythonext
 >>> id(a)
 4483164816
 >>> id(b)
@@ -209,7 +209,7 @@ In the code above, we first assign `1` to the variable `a`. Then, we assign `2` 
 
 The **type** of an object determines what are its possible values and what operations that object supports. The `type()` function will return what type an object is:
 
-```text
+```pythonext
 >>> a = 'Hello'
 >>> type(a)
 <class 'str'>
@@ -246,7 +246,7 @@ Let's look at a few examples in code:
 
 **Lists**
 
-```text
+```pythonext
 >>> my_list = ['laughter', 'happiness', 'love']
 >>> type(my_list)
 <class 'list'>
@@ -261,7 +261,7 @@ In the first line, we create a list object with three elements and assign it to 
 
 **Sets**
 
-```text
+```pythonext
 >>> my_set = {'laughter', 'happiness', 'love'}
 >>> type(my_set)
 <class 'set'>
@@ -277,7 +277,7 @@ In the first line, we create a set object with three elements and assign it to t
 
 **Dicts**
 
-```text
+```pythonext
 >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}
 >>> type(my_dict)
 <class 'dict'>
@@ -335,7 +335,7 @@ Let's look at a few examples:
 
 **Numbers**
 
-```text
+```pythonext
 >>> my_int = 1
 >>> id(my_int)
 4513307280
@@ -361,7 +361,7 @@ Then, we assign `2` to `my_int`which creates a whole new object and assigns it t
 
 Let's look at how string concatenation works in Python. Remember that str objects are immutable.
 
-```text
+```pythonext
 >>> my_str = 'a'
 >>> type(my_str)
 <class 'str'>
@@ -389,7 +389,7 @@ This behavior in Python is vital to be aware of when working with string concate
 
 Tuples are an immutable container of names, where each name has an unchangeable \(immutable\) binding to an object in memory. You cannot change the bindings of the names to the objects.
 
-```text
+```pythonext
 >>> my_tuple = ('love', [1,2,3], True)
 >>> my_tuple[0]
 'love'
@@ -404,7 +404,7 @@ Here we created a tuple using `(` and `)` to denote the tuple literal syntax. Ju
 
 One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:
 
-```text
+```pythonext
 >>> my_tuple[1] = [4,5,6]
 Traceback (most recent call last):
  File "<stdin>", line 1, in <module>
@@ -431,7 +431,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 
 **Mutable Objects as Arguments**
 
-```text
+```pythonext
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
@@ -450,7 +450,7 @@ Notice that when `append_num_to_list` is called and `my_list` is passed in as an
 
 Next, let's see how Python behaves when we pass an immutable object as an argument to a function:
 
-```text
+```pythonext
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
@@ -488,7 +488,7 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 In Python, everything is an object.
 
-```text
+```pythonext
 >>> a = 1
 >>> b = "hello"
 >>> c = [1,2,3]
@@ -507,7 +507,7 @@ Additionally, all objects in Python have three things:
 2. Type
 3. Value
 
-```text
+```pythonext
 >>> a = 1
 >>> # Identity
 ... id(a)
@@ -529,7 +529,7 @@ An object's **identity** can never change once it has been created. You can thin
 
 Python has an `is` operator that allows you to compare two object's identities.
 
-```text
+```pythonext
 >>> a = 1
 >>> b = 2
 >>> a is b
@@ -542,7 +542,7 @@ True
 
 In the code above, we first assign `1` to the variable `a`. Then, we assign `2` to the variable `b`. These are two different objects in memory and thus have different identities. We verify that they are different by using the `is` operator, which returns `False`. The line `b = a` assigns the variable `b` the object that the variable `a` is pointed to. Now, both `a` and `b` are referencing the same object in memory. We can use the `id()` function to verify that this is the case as well:
 
-```text
+```pythonext
 >>> id(a)
 4483164816
 >>> id(b)
@@ -554,7 +554,7 @@ In the code above, we first assign `1` to the variable `a`. Then, we assign `2` 
 
 The **type** of an object determines what are its possible values and what operations that object supports. The `type()` function will return what type an object is:
 
-```text
+```pythonext
 >>> a = 'Hello'
 >>> type(a)
 <class 'str'>
@@ -591,7 +591,7 @@ Let's look at a few examples in code:
 
 **Lists**
 
-```text
+```pythonext
 >>> my_list = ['laughter', 'happiness', 'love']
 >>> type(my_list)
 <class 'list'>
@@ -606,7 +606,7 @@ In the first line, we create a list object with three elements and assign it to 
 
 **Sets**
 
-```text
+```pythonext
 >>> my_set = {'laughter', 'happiness', 'love'}
 >>> type(my_set)
 <class 'set'>
@@ -622,7 +622,7 @@ In the first line, we create a set object with three elements and assign it to t
 
 **Dicts**
 
-```text
+```pythonext
 >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}
 >>> type(my_dict)
 <class 'dict'>
@@ -680,7 +680,7 @@ Let's look at a few examples:
 
 **Numbers**
 
-```text
+```pythonext
 >>> my_int = 1
 >>> id(my_int)
 4513307280
@@ -706,7 +706,7 @@ Then, we assign `2` to `my_int`which creates a whole new object and assigns it t
 
 Let's look at how string concatenation works in Python. Remember that str objects are immutable.
 
-```text
+```pythonext
 >>> my_str = 'a'
 >>> type(my_str)
 <class 'str'>
@@ -734,7 +734,7 @@ This behavior in Python is vital to be aware of when working with string concate
 
 Tuples are an immutable container of names, where each name has an unchangeable \(immutable\) binding to an object in memory. You cannot change the bindings of the names to the objects.
 
-```text
+```pythonext
 >>> my_tuple = ('love', [1,2,3], True)
 >>> my_tuple[0]
 'love'
@@ -749,7 +749,7 @@ Here we created a tuple using `(` and `)` to denote the tuple literal syntax. Ju
 
 One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:
 
-```text
+```pythonext
 >>> my_tuple[1] = [4,5,6]
 Traceback (most recent call last):
  File "<stdin>", line 1, in <module>
@@ -776,7 +776,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 
 **Mutable Objects as Arguments**
 
-```text
+```pythonext
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
@@ -795,7 +795,7 @@ Notice that when `append_num_to_list` is called and `my_list` is passed in as an
 
 Next, let's see how Python behaves when we pass an immutable object as an argument to a function:
 
-```text
+```pythonext
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
@@ -882,7 +882,7 @@ Let's look at a few different examples of Python functions that print something 
 
 **Constant Time O\(1\)**
 
-```text
+```pythonext
 def print_only_one_thing(list_of_things):
     print(list_of_things[0])
 ```
@@ -891,7 +891,7 @@ Why is this constant time? Because no matter how large or small the input is \(1
 
 **Linear Time O\(n\)**
 
-```text
+```pythonext
 def print_list(list_of_things):
     for thing in list_of_things:
         print(thing)
@@ -901,7 +901,7 @@ Why is this classified as linear time? Because the speed of the algorithm increa
 
 **Quadratic Time O\(n^2\)**
 
-```text
+```pythonext
 def print_permutations(list_of_things):
     for thing_one in list_of_things:
         for thing_two in list_of_things:
@@ -914,7 +914,7 @@ Why is this quadratic time? The clue is the nested for loops. These nested for l
 
 What if we had a function like this?
 
-```text
+```pythonext
 def do_a_bunch_of_stuff(list_of_things): # O(1 + n/2 + 2000)
     last_idx = len(list_of_things) - 1
     print(list_of_things[last_idx]) # O(1)
@@ -941,7 +941,7 @@ So, putting it all together, we could say that the efficiency is `O(1 + n/2 + 20
 
 Let's consider the following function:
 
-```text
+```pythonext
 def do_different_things_in_the_same_function(list_of_things): # O(n + n^2)
     # print all each item in the list
     for thing in list_of_things: # O(n)
@@ -959,7 +959,7 @@ We could describe this function as `O(n + n^2)`; however, we only need to keep t
 
 Let's consider the following function:
 
-```text
+```pythonext
 def find_thing(list_of_things, thing_we_are_trying_to_find):
     for thing in list_of_things:
         if thing == thing_we_are_trying_to_find:
@@ -984,7 +984,7 @@ That being said, there is a term you should become familiar with: **premature op
 
 Let's look at a few code snippets and classify their runtime complexity using Big O notation.
 
-```text
+```pythonext
 def foo(n):
     i = 1
     while i < n:
@@ -994,7 +994,7 @@ def foo(n):
 
 First, let's think about what the above function is doing. It's printing `i`…but `i` is not being incremented by 1, as we usually see. It's _doubled_ every time we run the loop. So, for example, if `n = 100`, then the final result would be…
 
-```text
+```pythonext
 1
 2
 4
@@ -1006,7 +1006,7 @@ First, let's think about what the above function is doing. It's printing `i`…b
 
 Or if `n = 10`, then we would print…
 
-```text
+```pythonext
 1
 2
 4

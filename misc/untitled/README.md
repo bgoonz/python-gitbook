@@ -44,7 +44,7 @@ Once you are set up, you need to create your first project. Follow these steps:
 
 You’re done. You have set up your files to start [coding with Python](https://www.edureka.co/blog/python-programming-language). Are you excited to start coding? Let’s begin. The first and foremost, the “Hello World” program.
 
-```text
+```pythonext
 print('Hello World, Welcome to edureka!')
 ```
 
@@ -62,7 +62,7 @@ Single line comment in Python is done using the \# symbol and “‘ for multi-l
 
 Variables in simple words are **memory spaces** where you can store **data** or **values**. But the catch here in Python is that the variables don’t need to be declared before the usage as it is needed in other languages. The **data type** is **automatically assigned** to the variable. If you enter an Integer, the data type is assigned as an Integer. You enter a [string](https://www.edureka.co/blog/what-is-string-in-python/), the variable is assigned a string data type. You get the idea. This makes Python **dynamically typed language**. You use the assignment operator \(=\) to assign values to the variables.
 
-```text
+```pythonext
 a = 'Welcome to edureka!'
 b = 123
 c = 3.142
@@ -88,7 +88,7 @@ There are 3 numerical data types :
 - **Float:** Float holds the real numbers and are represented by a decimal and sometimes even scientific notations with E or e indicating the power of 10 \(2.5e2 = 2.5 x 102 = 250\). Ex: 10.24.
 - **Complex Numbers:** These are of the form a + bj, where a and b are floats and J represents the square root of -1 \(which is an imaginary number\). Ex: 10+6j.
 
-```text
+```pythonext
 a = 10
 b= 3.142
 c = 10+6j
@@ -100,7 +100,7 @@ So now that you have understood the various numerical data types, you can unders
 
 Type Conversion is the **conversion of a data type into another data type** which can be really helpful to us when we start programming to obtain solutions for our problems. Let us understand with examples.
 
-```text
+```pythonext
 a = 10
 b = 3.142
 c = 10+6j
@@ -134,7 +134,7 @@ Tuples in Python are the . That means that once you have declared the tuple, you
 
 Operations are similar to Lists but the ones where updating, deleting, adding is involved, those operations won’t work. Tuples in Python are written a=\(\) or a=tuple\(\) where ‘a’ is the name of the tuple.
 
-```text
+```pythonext
 a = ('List', 'Dictionary', 'Tuple', 'Integer', 'Float')
 print(a)
 ```
@@ -149,7 +149,7 @@ Dictionary is best understood when you have a real-world example with us. The mo
 
 Dictionary is written using either the a=dict\(\) or using a={} where a is a dictionary. The key could be either a string or integer which has to be followed by a “:” and the value of that key.
 
-```text
+```pythonext
 MyPhoneBook = { 'Name' : [ 'Akash', 'Ankita' ] ,
 'Phone' : [ '12345', '12354' ] ,
 'E-Mail' : [ 'akash@rail.com', 'ankita@rail.com' ]}
@@ -162,7 +162,7 @@ print (MyPhoneBook)
 
 You can see that the keys are Name, Phone, and EMail who each have 2 values assigned to them. When you print the dictionary, the key and value are printed. Now if you wanted to obtain values only for a particular key, you can do the following. This is called accessing elements of the dictionary.
 
-```text
+```pythonext
 print(MyPhoneBook['E-Mail'])
 ```
 
@@ -178,7 +178,7 @@ You may now have a better understanding of dictionaries in Python Basics. Hence 
 
 A set is basically an You can see that even if there are similar elements in set ‘a’, it will still be printed only once because **un-ordered collection of elements** or items. Elements are sets are a collection of unique elements. **unique** in the set. In Python, they are written inside **curly brackets** and **separated by commas**.
 
-```text
+```pythonext
 a = {1, 2, 3, 4, 4, 4}
 b = {3, 4, 5, 6}
 print(a,b)
@@ -224,7 +224,7 @@ Let us move ahead and understand each of these operators carefully.
 
 **Note: Variables are called operands that come on the left and right of the operator. Ex :**
 
-```text
+```pythonext
 a=10
 b=20
 a+b
@@ -240,7 +240,7 @@ They are used to perform **arithmetic operations** on data.![](https://miro.medi
 
 The code snippet below will help you understand it better.
 
-```text
+```pythonext
 a = 2
 b = 3
 print(a+b, a-b, a*b, a/b, a%b, a**b, end=',')
@@ -270,7 +270,7 @@ These operators are used to **bring out the relationship** between the left and 
 
 You can see the working of them in the example below :
 
-```text
+```pythonext
 a = 21
 b = 10
 if a == b:
@@ -308,7 +308,7 @@ These are used to obtain a certain **logic** from the operands. We have 3 operan
 - **or** \(True if either one operand is true\)
 - **not** \(Gives the opposite of the operand passed\)
 
-```text
+```pythonext
 a = True
 b = False
 print(a and b, a or b, not a)
@@ -327,7 +327,7 @@ The operators are :
 - **in** \(True if the value or variable is found in the sequence\)
 - **not in** \(True if the value is not found in the sequence\)
 
-```text
+```pythonext
 a = [1, 2, 3, 4]
 if 5 in a:
     print('Yes!')
@@ -348,7 +348,7 @@ The operators are :
 - is \(True if they are identical\)
 - is not \(True if they are not identical\)
 
-```text
+```pythonext
 a = 5
 b = 5
 if a is b:
@@ -371,7 +371,7 @@ Well, a is just a way that you use to **nameaccess the objects**. These names ac
 
 If I would want to access the value ‘edureka!’ I would simply call the variable name by ‘b’ and I would have access to ‘edureka!’. These are names. You can even assign methods names and call them accordingly.
 
-```text
+```pythonext
 import math
 square_root = math.sqrt
 print('The square root is ',square_root(9))
@@ -381,7 +381,7 @@ print('The square root is ',square_root(9))
 
 Namespacing works with scopes. **Scopes** are the _validity of a function/variable/value inside the function or class they belong to_. Python **built-in functions** namespacing **covers all the other scopes of Python**. Functions such as print\(\) and id\(\) etc. can be used even without any imports and be used anywhere. Below them is the **global** and **local** namespacing. Let me explain the scope and namespacing in a code snippet below :
 
-```text
+```pythonext
 def add():
     x = 3
     y = 2
@@ -406,7 +406,7 @@ Conditional statements are **executed** only if a **certain condition is met**, 
 
 **Syntax:**
 
-```text
+```pythonext
 if condition:
     statement
 elif condition:
@@ -417,7 +417,7 @@ else:
 
 This means that if a condition is met, do something. Else go through the remaining elif conditions and finally if no condition is met, execute the else block. You can even have nested if-else statements inside the if-else blocks.
 
-```text
+```pythonext
 a = 10
 b = 15
 if a == b:
@@ -453,13 +453,13 @@ Let us understand each of these loops with syntaxes and code snippets below.
 
 **Syntax:**
 
-```text
+```pythonext
 for variable in range: statements
 ```
 
 The code snippet is as below :
 
-```text
+```pythonext
 basket_of_fruits= ['apple', 'orange', 'pineapple', 'banana']
 for fruit in basket_of_fruits:
     print(fruit, end=',')
@@ -473,14 +473,14 @@ This is how the for loops work in Python. Let us move ahead with the while loop 
 
 **Syntax:**
 
-```text
+```pythonext
 while condition:
      statements
 ```
 
 The code snippet is as :
 
-```text
+```pythonext
 second = 10
 while second >= 0:
     print(second, end='->')
@@ -494,7 +494,7 @@ This is how the while loop works.
 
 You later have **nested loops** where you **embed a loop into another.** The code below should give you an idea.
 
-```text
+```pythonext
 count = 1
 for i in range(10):
     print(str(i) * i)
@@ -536,7 +536,7 @@ The flow of working with files is as follows :
 
 **Syntax:**
 
-```text
+```pythonext
 File_object = open('filename','r')
 ```
 
@@ -544,7 +544,7 @@ Where mode is the way you want to interact with the file. If you do not pass any
 
 **Example:**
 
-```text
+```pythonext
 file = open('mytxt','w')
 string = ' --Welcome to edureka!-- '
 for i in range(5):

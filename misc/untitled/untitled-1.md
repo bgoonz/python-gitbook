@@ -35,7 +35,7 @@ For example, suppose you have created a file called `mod.py` containing the foll
 
 _**mod.py**_
 
-```text
+```pythonext
 s = "If Comrade Napoleon says it, it must be right."
 a = [100, 200, 300]
 
@@ -55,7 +55,7 @@ Several objects are defined in `mod.py`:
 
 Assuming `mod.py` is in an appropriate location, which you will learn more about shortly, these objects can be accessed by **importing** the module as follows:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 >>> print(mod.s)
 If Comrade Napoleon says it, it must be right.
@@ -74,7 +74,7 @@ arg = ['quux', 'corge', 'grault']
 
 Continuing with the above example, let’s take a look at what happens when Python executes the statement:
 
-```text
+```pythonext
 import mod
 ```
 
@@ -86,7 +86,7 @@ When the interpreter executes the above `import` statement, it searches for `mod
 
 The resulting search path is accessible in the Python variable `sys.path`, which is obtained from a module named `sys`:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import sys
 >>> sys.path
 ['', 'C:\\Users\\john\\Documents\\Python\\doc', 'C:\\Python36\\Lib\\idlelib',
@@ -105,7 +105,7 @@ Thus, to ensure your module is found, you need to do one of the following:
 
 There is actually one additional option: you can put the module file in any directory of your choice and then modify `sys.path` at run-time so that it contains that directory. For example, in this case, you could put `mod.py` in directory `C:\Users\john` and then issue the following statements:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> sys.path.append(r'C:\Users\john')
 >>> sys.path
 ['', 'C:\\Users\\john\\Documents\\Python\\doc', 'C:\\Python36\\Lib\\idlelib',
@@ -116,7 +116,7 @@ There is actually one additional option: you can put the module file in any dire
 
 Once a module has been imported, you can determine the location where it was found with the module’s `__file__` attribute:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 >>> mod.__file__
 'C:\\Users\\john\\mod.py'
@@ -136,7 +136,7 @@ The directory portion of `__file__` should be one of the directories in `sys.pat
 
 The simplest form is the one already shown above:
 
-```text
+```pythonext
 import <module_name>
 ```
 
@@ -148,7 +148,7 @@ From the caller, objects in the module are only accessible when prefixed with `<
 
 After the following `import` statement, `mod` is placed into the local symbol table. Thus, `mod` has meaning in the caller’s local context:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 >>> mod
 <module 'mod' from 'C:\\Users\\john\\Documents\\Python\\doc\\mod.py'>
@@ -156,7 +156,7 @@ After the following `import` statement, `mod` is placed into the local symbol ta
 
 But `s` and `foo` remain in the module’s private symbol table and are not meaningful in the local context:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> s
 NameError: name 's' is not defined
 >>> foo('quux')
@@ -165,7 +165,7 @@ NameError: name 'foo' is not defined
 
 To be accessed in the local context, names of objects defined in the module must be prefixed by `mod`:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> mod.s
 'If Comrade Napoleon says it, it must be right.'
 >>> mod.foo('quux')
@@ -174,7 +174,7 @@ arg = quux
 
 Several comma-separated modules may be specified in a single `import` statement:
 
-```text
+```pythonext
 import <module_name>[, <module_name> ...]
 ```
 
@@ -184,13 +184,13 @@ import <module_name>[, <module_name> ...]
 
 An alternate form of the `import` statement allows individual objects from the module to be imported _directly into the caller’s symbol table_:
 
-```text
+```pythonext
 from <module_name> import <name(s)>
 ```
 
 Following execution of the above statement, `<name(s)>` can be referenced in the caller’s environment without the `<module_name>` prefix:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from mod import s, foo
 >>> s
 'If Comrade Napoleon says it, it must be right.'
@@ -205,7 +205,7 @@ arg = quux
 
 Because this form of `import` places the object names directly into the caller’s symbol table, any objects that already exist with the same name will be _overwritten_:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> a = ['foo', 'bar', 'baz']
 >>> a
 ['foo', 'bar', 'baz']
@@ -217,7 +217,7 @@ Because this form of `import` places the object names directly into the caller�
 
 It is even possible to indiscriminately `import` everything from a module at one fell swoop:
 
-```text
+```pythonext
 from <module_name> import *
 ```
 
@@ -225,7 +225,7 @@ This will place the names of _all_ objects from `<module_name>` into the local s
 
 For example:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from mod import *
 >>> s
 'If Comrade Napoleon says it, it must be right.'
@@ -243,13 +243,13 @@ This isn’t necessarily recommended in large-scale production code. It’s a bi
 
 It is also possible to `import` individual objects but enter them into the local symbol table with alternate names:
 
-```text
+```pythonext
 from <module_name> import <name> as <alt_name>[, <name> as <alt_name> …]
 ```
 
 This makes it possible to place names directly into the local symbol table but avoid conflicts with previously existing names:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> s = 'foo'
 >>> a = ['foo', 'bar', 'baz']
 
@@ -268,13 +268,13 @@ This makes it possible to place names directly into the local symbol table but a
 
 You can also import an entire module under an alternate name:
 
-```text
+```pythonext
 import <module_name> as <alt_name>
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod as my_module
 >>> my_module.a
 [100, 200, 300]
@@ -284,7 +284,7 @@ arg = qux
 
 Module contents can be imported from within a [function definition](https://realpython.com/defining-your-own-python-function/). In that case, the `import` does not occur until the function is _called_:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> def bar():
 ...     from mod import foo
 ...     foo('corge')
@@ -296,7 +296,7 @@ arg = corge
 
 However, **Python 3** does not allow the indiscriminate `import *` syntax from within a function:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> def bar():
 ...     from mod import *
 ...
@@ -305,7 +305,7 @@ SyntaxError: import * only allowed at module level
 
 Lastly, a [`try` statement with an `except ImportError`](https://realpython.com/python-exceptions/) clause can be used to guard against unsuccessful `import` attempts:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> try:
 ...     # Non-existent module
 ...     import baz
@@ -318,7 +318,7 @@ Module not found
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> try:
 ...     # Existing module, but non-existent object
 ...     from mod import baz
@@ -335,7 +335,7 @@ Object not found in module
 
 The built-in function `dir()` returns a list of defined names in a namespace. Without arguments, it produces an alphabetically sorted list of names in the current **local symbol table**:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -358,7 +358,7 @@ Note how the first call to `dir()` above lists several names that are automatica
 
 This can be useful for identifying what exactly has been added to the namespace by an import statement:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -392,7 +392,7 @@ arg = [1, 2, 3]
 
 When given an argument that is the name of a module, `dir()` lists the names defined in the module:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 >>> dir(mod)
 ['Foo', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__',
@@ -401,7 +401,7 @@ When given an argument that is the name of a module, `dir()` lists the names def
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -419,7 +419,7 @@ Here again is `mod.py` as it was defined above:
 
 _**mod.py**_
 
-```text
+```pythonext
 s = "If Comrade Napoleon says it, it must be right."
 a = [100, 200, 300]
 
@@ -432,7 +432,7 @@ class Foo:
 
 This can be run as a script:
 
-```text
+```pythonext
 C:\Users\john\Documents>python mod.py
 C:\Users\john\Documents>
 ```
@@ -443,7 +443,7 @@ Let’s modify the above Python module so it does generate some output when run 
 
 _**mod.py**_
 
-```text
+```pythonext
 s = "If Comrade Napoleon says it, it must be right."
 a = [100, 200, 300]
 
@@ -462,7 +462,7 @@ print(x)
 
 Now it should be a little more interesting:
 
-```text
+```pythonext
 C:\Users\john\Documents>python mod.py
 If Comrade Napoleon says it, it must be right.
 [100, 200, 300]
@@ -472,7 +472,7 @@ arg = quux
 
 Unfortunately, now it also generates output when imported as a module:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 If Comrade Napoleon says it, it must be right.
 [100, 200, 300]
@@ -490,7 +490,7 @@ When a `.py` file is imported as a module, Python sets the special **dunder** va
 
 _**mod.py**_
 
-```text
+```pythonext
 s = "If Comrade Napoleon says it, it must be right."
 a = [100, 200, 300]
 
@@ -511,7 +511,7 @@ if (__name__ == '__main__'):
 
 Now, if you run as a script, you get output:
 
-```text
+```pythonext
 C:\Users\john\Documents>python mod.py
 Executing as standalone script
 If Comrade Napoleon says it, it must be right.
@@ -522,7 +522,7 @@ arg = quux
 
 But if you import as a module, you don’t:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 >>> mod.foo('grault')
 arg = grault
@@ -532,7 +532,7 @@ Modules are often designed with the capability to run as a standalone script for
 
 _**fact.py**_
 
-```text
+```pythonext
 def fact(n):
     return 1 if n == 1 else n * fact(n-1)
 
@@ -544,7 +544,7 @@ if (__name__ == '__main__'):
 
 The file can be treated as a module, and the `fact()` function imported:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from fact import fact
 >>> fact(6)
 720
@@ -552,7 +552,7 @@ The file can be treated as a module, and the `fact()` function imported:&gt;&gt;
 
 But it can also be run as a standalone by passing an integer argument on the command-line for testing:
 
-```text
+```pythonext
 C:\Users\john\Documents>python fact.py 6
 720
 ```
@@ -567,14 +567,14 @@ Consider the following file `mod.py`:
 
 _**mod.py**_
 
-```text
+```pythonext
 a = [100, 200, 300]
 print('a =', a)
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 a = [100, 200, 300]
 >>> import mod
@@ -588,7 +588,7 @@ The `print()` statement is not executed on subsequent imports. \(For that matter
 
 If you make a change to a module and need to reload it, you need to either restart the interpreter or use a function called `reload()` from module `importlib`:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import mod
 a = [100, 200, 300]
 
@@ -612,7 +612,7 @@ Here, there is a directory named `pkg` that contains two modules, `mod1.py` and 
 
 _**mod1.py**_
 
-```text
+```pythonext
 def foo():
     print('[mod1] foo()')
 
@@ -622,7 +622,7 @@ class Foo:
 
 _**mod2.py**_
 
-```text
+```pythonext
 def bar():
     print('[mod2] bar()')
 
@@ -632,13 +632,13 @@ class Bar:
 
 Given this structure, if the `pkg` directory resides in a location where it can be found \(in one of the directories contained in `sys.path`\), you can refer to the two **modules** with **dot notation** \(`pkg.mod1`, `pkg.mod2`\) and import them with the syntax you are already familiar with:
 
-```text
+```pythonext
 import <module_name>[, <module_name> ...]
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import pkg.mod1, pkg.mod2
 >>> pkg.mod1.foo()
 [mod1] foo()
@@ -647,25 +647,25 @@ import <module_name>[, <module_name> ...]
 <pkg.mod2.Bar object at 0x033F7290>
 ```
 
-```text
+```pythonext
 from <module_name> import <name(s)>
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg.mod1 import foo
 >>> foo()
 [mod1] foo()
 ```
 
-```text
+```pythonext
 from <module_name> import <name> as <alt_name>
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg.mod2 import Bar as Qux
 >>> x = Qux()
 >>> x
@@ -674,14 +674,14 @@ from <module_name> import <name> as <alt_name>
 
 You can import modules with these statements as well:
 
-```text
+```pythonext
 from <package_name> import <modules_name>[, <module_name> ...]
 from <package_name> import <module_name> as <alt_name>
 ```
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg import mod1
 >>> mod1.foo()
 [mod1] foo()
@@ -693,7 +693,7 @@ from <package_name> import <module_name> as <alt_name>
 
 You can technically import the package as well:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import pkg
 >>> pkg
 <module 'pkg' (namespace)>
@@ -701,7 +701,7 @@ You can technically import the package as well:&gt;&gt;&gt;
 
 But this is of little avail. Though this is, strictly speaking, a syntactically correct Python statement, it doesn’t do much of anything useful. In particular, it _does not place_ any of the modules in `pkg` into the local namespace:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> pkg.mod1
 Traceback (most recent call last):
   File "<pyshell#34>", line 1, in <module>
@@ -729,7 +729,7 @@ For example, consider the following `__init__.py` file:
 
 _**\_\_init\_\_.py**_
 
-```text
+```pythonext
 print(f'Invoking __init__.py for {__name__}')
 A = ['quux', 'corge', 'grault']
 ```
@@ -738,7 +738,7 @@ Let’s add this file to the `pkg` directory from the above example:[![Illustrat
 
 Now when the package is imported, the global list `A` is initialized:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import pkg
 Invoking __init__.py for pkg
 >>> pkg.A
@@ -749,7 +749,7 @@ A **module** in the package can access the global variable by importing it in tu
 
 _**mod1.py**_
 
-```text
+```pythonext
 def foo():
     from pkg import A
     print('[mod1] foo() / A = ', A)
@@ -760,7 +760,7 @@ class Foo:
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg import mod1
 Invoking __init__.py for pkg
 >>> mod1.foo()
@@ -771,14 +771,14 @@ Invoking __init__.py for pkg
 
 _**\_\_init\_\_.py**_
 
-```text
+```pythonext
 print(f'Invoking __init__.py for {__name__}')
 import pkg.mod1, pkg.mod2
 ```
 
 then when you execute `import pkg`, modules `mod1` and `mod2` are imported automatically:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import pkg
 Invoking __init__.py for pkg
 >>> pkg.mod1.foo()
@@ -799,7 +799,7 @@ There are now four modules defined in the `pkg` directory. Their contents are as
 
 _**mod1.py**_
 
-```text
+```pythonext
 def foo():
     print('[mod1] foo()')
 
@@ -809,7 +809,7 @@ class Foo:
 
 _**mod2.py**_
 
-```text
+```pythonext
 def bar():
     print('[mod2] bar()')
 
@@ -819,7 +819,7 @@ class Bar:
 
 _**mod3.py**_
 
-```text
+```pythonext
 def baz():
     print('[mod3] baz()')
 
@@ -829,7 +829,7 @@ class Baz:
 
 _**mod4.py**_
 
-```text
+```pythonext
 def qux():
     print('[mod4] qux()')
 
@@ -841,7 +841,7 @@ class Qux:
 
 You have already seen that when `import *` is used for a **module**, _all_ objects from the module are imported into the local symbol table, except those whose names begin with an underscore, as always:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -859,13 +859,13 @@ You have already seen that when `import *` is used for a **module**, _all_ objec
 
 The analogous statement for a **package** is this:
 
-```text
+```pythonext
 from <package_name> import *
 ```
 
 What does that do?&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -884,7 +884,7 @@ For the present example, suppose you create an `__init__.py` in the `pkg` direct
 
 _**pkg/\_\_init\_\_.py**_
 
-```text
+```pythonext
 __all__ = [
         'mod1',
         'mod2',
@@ -895,7 +895,7 @@ __all__ = [
 
 Now `from pkg import *` imports all four modules:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -916,7 +916,7 @@ By the way, `__all__` can be defined in a **module** as well and serves the same
 
 _**pkg/mod1.py**_
 
-```text
+```pythonext
 __all__ = ['foo']
 
 def foo():
@@ -928,7 +928,7 @@ class Foo:
 
 Now an `import *` statement from `pkg.mod1` will only import what is contained in `__all__`:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> dir()
 ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
 '__package__', '__spec__']
@@ -964,7 +964,7 @@ The four modules \(`mod1.py`, `mod2.py`, `mod3.py` and `mod4.py`\) are defined a
 
 Importing still works the same as shown previously. Syntax is similar, but additional **dot notation** is used to separate **package** name from **subpackage** name:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import pkg.sub_pkg1.mod1
 >>> pkg.sub_pkg1.mod1.foo()
 [mod1] foo()
@@ -986,7 +986,7 @@ In addition, a module in one **subpackage** can reference objects in a **sibling
 
 _**pkg/sub\_\_pkg2/mod3.py**_
 
-```text
+```pythonext
 def baz():
     print('[mod3] baz()')
 
@@ -999,7 +999,7 @@ foo()
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg.sub_pkg2 import mod3
 [mod1] foo()
 >>> mod3.foo()
@@ -1013,7 +1013,7 @@ Or you can use a **relative import**, where `..` refers to the package one level
 
 _**pkg/sub\_\_pkg2/mod3.py**_
 
-```text
+```pythonext
 def baz():
     print('[mod3] baz()')
 
@@ -1029,7 +1029,7 @@ foo()
 
  &gt;&gt;&gt;
 
-```text
+```pythonext
 >>> from pkg.sub_pkg2 import mod3
 <module 'pkg.sub_pkg1' (namespace)>
 [mod1] foo()
@@ -1070,7 +1070,7 @@ If you want to learn more, check out the following documentation at **Python.org
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
-```text
+```pythonext
 if __name__ == "__main__":
     # execute only if run as a script
     main()
@@ -1118,7 +1118,7 @@ Python defines two types of packages, [regular packages](https://docs.python.org
 
 For example, the following file system layout defines a top level `parent` package with three subpackages:
 
-```text
+```pythonext
 parent/
     __init__.py
     one/
@@ -1199,7 +1199,7 @@ Changed in version 3.4: The [`find_spec()`](https://docs.python.org/3/library/im
 
 If and when a module spec is found, the import machinery will use it \(and the loader it contains\) when loading the module. Here is an approximation of what happens during the loading portion of import:
 
-```text
+```pythonext
 module = None
 if spec.loader is not None and hasattr(spec.loader, 'create_module'):
     # It is assumed 'exec_module' will also be defined on the loader.
@@ -1275,7 +1275,7 @@ Changed in version 3.6: An [`ImportError`](https://docs.python.org/3/library/exc
 
 When a submodule is loaded using any mechanism \(e.g. `importlib` APIs, the `import` or `import-from` statements, or built-in `__import__()`\) a binding is placed in the parent module’s namespace to the submodule object. For example, if package `spam` has a submodule `foo`, after importing `spam.foo`, `spam` will have an attribute `foo` which is bound to the submodule. Let’s say you have the following directory structure:
 
-```text
+```pythonext
 spam/
     __init__.py
     foo.py
@@ -1284,14 +1284,14 @@ spam/
 
 and `spam/__init__.py` has the following lines in it:
 
-```text
+```pythonext
 from .foo import Foo
 from .bar import Bar
 ```
 
 then executing the following puts a name binding to `foo` and `bar` in the `spam` module:&gt;&gt;&gt;
 
-```text
+```pythonext
 >>> import spam
 >>> spam.foo
 <module 'spam.foo' from '/tmp/imports/spam/foo.py'>
@@ -1446,7 +1446,7 @@ To selectively prevent the import of some modules from a hook early on the meta 
 
 Relative imports use leading dots. A single leading dot indicates a relative import, starting with the current package. Two or more leading dots indicate a relative import to the parent\(s\) of the current package, one level per dot after the first. For example, given the following package layout:
 
-```text
+```pythonext
 package/
     __init__.py
     subpackage1/
@@ -1461,7 +1461,7 @@ package/
 
 In either `subpackage1/moduleX.py` or `subpackage1/__init__.py`, the following are valid relative imports:
 
-```text
+```pythonext
 from .moduleY import spam
 from .moduleY import spam as ham
 from . import moduleY
@@ -1472,7 +1472,7 @@ from ..moduleA import foo
 
 Absolute imports may use either the `import <>` or `from <> import <>` syntax, but relative imports may only use the second form; the reason for this is that:
 
-```text
+```pythonext
 import XXX.YYY.ZZZ
 ```
 
