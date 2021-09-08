@@ -8,7 +8,7 @@ Python uses def keyword to start a function, here is the syntax:
 
 def function\_name\(arg1, arg2, arg3, .... argN\):
 
-```py
+```text
  #statement inside function
 ```
 
@@ -106,7 +106,7 @@ t \= 1
 
 def increment\(\):
 
-```py
+```text
 #global t = 1   # this is error
 global t
 t \= 100        \# this is okay

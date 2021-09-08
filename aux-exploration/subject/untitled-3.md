@@ -1,5 +1,7 @@
 # server-side-scripting
 
+
+
 ## 9. Server-side scripting
 
 We now have the Python tools we need to create our first [web applications](http://en.wikipedia.org/wiki/Web_application). The process of creating web applications is called [web application development](http://en.wikipedia.org/wiki/Web_application_development), the [raison d’être](http://en.wiktionary.org/wiki/raison_d%27%C3%AAtre) for this book.
@@ -28,7 +30,7 @@ Elements provide extra information about the data in the document. They can stan
 
 Some elements are compulsory, a whole HTML document must always be contained in an `html` element. Here is an example of an HTML document:
 
-```py
+```text
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +96,7 @@ CSS syntax consists of a collection of _styles_ or _rules_. Each rule is compose
 
 Here is an example of a style sheet:
 
-```py
+```text
 body {
     margin: 60px;
     padding: 40px;
@@ -139,7 +141,7 @@ figcaption {
 
 Styles can be applied internally to an html document using **style elements** \(between `<style type="text/css"></style>` tags\) in the document header. Here is the preceding quote web page with the style included:
 
-```py
+```text
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,7 +259,7 @@ To get information \(data\) from the client to the server, HTML uses [forms](htt
 
 A basic HTTP request is a simple request for a file. When this file is not really a passive file, but a server-side program, it can become useful to include information other than a filename in the request. For this purpose, HTTP requests are allowed to contain additional ‘parameters’. Here is an example:
 
-```py
+```text
 http://www.google.com/search?q=aztec%20empire
 ```
 
@@ -269,7 +271,7 @@ The value a character gets is decided by the ASCII standard, which assigns the n
 
 When a request contains more than one parameter, they are separated by ampersands, as in…:
 
-```py
+```text
 http://www.google.com/search?q=aztec%20empire&lang=nl
 ```
 
@@ -277,7 +279,7 @@ A [form](http://en.wikipedia.org/wiki/Html_form), basically, is a way to make it
 
 Here is the HTML for a simple form
 
-```py
+```text
 <form name="userinfo" method="get" action="info.html">
   <p>Please give us your information, so that we can send
   you spam.</p>
@@ -294,7 +296,7 @@ Here is the HTML for a simple form
 
 The name of the form can be used to access it with JavaScript, as we shall see in a moment. The names of the fields determine the names of the HTTP parameters that are used to store their values. Sending this form might produce a URL like this:
 
-```py
+```text
 http://planetspam.com/info.html?name=Ted&email=ted@zork.com&sex=Male
 ```
 
@@ -330,6 +332,7 @@ The global system of linked documents accessed through the Internet.
 
 ### 9.10. Exercises
 
-- [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
-- [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
-- [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)
+* [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
+* [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
+* [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)
+

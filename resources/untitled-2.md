@@ -52,7 +52,7 @@ As usual, we provide an initialization method that takes an optional parameter f
 
 To create an object that represents the 3 of Clubs, use this command:
 
-```py
+```text
 three_of_clubs = Card(0, 3)
 ```
 
@@ -202,7 +202,7 @@ If a deck is perfectly shuffled, then any card is equally likely to appear anywh
 
 To shuffle the deck, we will use the `randrange` function from the `random` module. With two integer arguments, `a` and `b`, `randrange` chooses a random integer in the range `a <= x < b`. Since the upper bound is strictly less than `b`, we can use the length of a list as the second parameter, and we are guaranteed to get a legal index. For example, this expression chooses the index of a random card in a deck:
 
-```py
+```text
 random.randrange(0, len(self.cards))
 ```
 
@@ -286,7 +286,7 @@ This situation suggests the use of inheritance. If `Hand` is a subclass of `Deck
 
 In the class definition, the name of the parent class appears in parentheses:
 
-```py
+```text
 class Hand(Deck):
     pass
 ```

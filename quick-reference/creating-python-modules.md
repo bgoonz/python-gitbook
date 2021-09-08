@@ -10,7 +10,7 @@ Create a new file called `mymodule.py` and write the following code.
 
 As you can see we have defined a global variable `foo` and a function `hello()` in our module. Now to use this module in our programs we first need to import it using import statement like this
 
-```py
+```text
 import mymodule
 ```
 
@@ -38,7 +38,7 @@ Using import statements imports everything in the module, what if you want to ac
 
 **Expected output:**
 
-```py
+```text
 100
 ```
 
@@ -50,7 +50,7 @@ In this case you don't need to specify module name to access variables and funct
 
 The `dir()` is an in-built method used to find all attributes \(i.e all available classes, functions, variables and constants \) of the object. As we have already discussed everything in python is object, we can use the `dir()` method to find attributes of the module like this:
 
-```py
+```text
 dir(module_name)
 ```
 

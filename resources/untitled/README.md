@@ -104,7 +104,7 @@ Keep practicing so that your coding skills don't get rusty.
 
 
 
-```py
+```text
 ## Data Serialization
 
 <a href="#contents"><img align="right" width="15" height="15" src="https://git.io/JtehR" alt="Back to top"></a>
