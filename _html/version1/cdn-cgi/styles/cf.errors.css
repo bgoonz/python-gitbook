@@ -166,7 +166,7 @@
   max-width: 100%;
 }
 
-#cf-wrapper .cf-columns>.cf-column {
+#cf-wrapper .cf-columns > .cf-column {
   float: left;
   padding-bottom: 45px;
   width: 100%;
@@ -174,115 +174,114 @@
 }
 
 @media screen and (min-width: 49.2em) {
-
-  #cf-wrapper .cf-columns.cols-2>.cf-column:nth-child(n + 3),
-  #cf-wrapper .cf-columns.cols-3>.cf-column:nth-child(n + 4),
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(n + 3),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(n + 3),
-  #cf-wrapper .cf-columns.three>.cf-column:nth-child(n + 4),
-  #cf-wrapper .cf-columns.two>.cf-column:nth-child(n + 3) {
+  #cf-wrapper .cf-columns.cols-2 > .cf-column:nth-child(n + 3),
+  #cf-wrapper .cf-columns.cols-3 > .cf-column:nth-child(n + 4),
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(n + 3),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(n + 3),
+  #cf-wrapper .cf-columns.three > .cf-column:nth-child(n + 4),
+  #cf-wrapper .cf-columns.two > .cf-column:nth-child(n + 3) {
     padding-top: 67.5px;
   }
 
-  #cf-wrapper .cf-columns>.cf-column {
+  #cf-wrapper .cf-columns > .cf-column {
     padding-bottom: 0;
   }
 
-  #cf-wrapper .cf-columns.cols-2>.cf-column,
-  #cf-wrapper .cf-columns.cols-4>.cf-column,
-  #cf-wrapper .cf-columns.four>.cf-column,
-  #cf-wrapper .cf-columns.two>.cf-column {
+  #cf-wrapper .cf-columns.cols-2 > .cf-column,
+  #cf-wrapper .cf-columns.cols-4 > .cf-column,
+  #cf-wrapper .cf-columns.four > .cf-column,
+  #cf-wrapper .cf-columns.two > .cf-column {
     padding-left: 0;
     padding-right: 22.5px;
     width: 50%;
   }
 
-  #cf-wrapper .cf-columns.cols-2>.cf-column:nth-child(2n),
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(2n),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(2n),
-  #cf-wrapper .cf-columns.two>.cf-column:nth-child(2n) {
+  #cf-wrapper .cf-columns.cols-2 > .cf-column:nth-child(2n),
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(2n),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(2n),
+  #cf-wrapper .cf-columns.two > .cf-column:nth-child(2n) {
     padding-left: 22.5px;
     padding-right: 0;
   }
 
-  #cf-wrapper .cf-columns.cols-2>.cf-column:nth-child(odd),
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(odd),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(odd),
-  #cf-wrapper .cf-columns.two>.cf-column:nth-child(odd) {
+  #cf-wrapper .cf-columns.cols-2 > .cf-column:nth-child(odd),
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(odd),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(odd),
+  #cf-wrapper .cf-columns.two > .cf-column:nth-child(odd) {
     clear: left;
   }
 
-  #cf-wrapper .cf-columns.cols-3>.cf-column,
-  #cf-wrapper .cf-columns.three>.cf-column {
+  #cf-wrapper .cf-columns.cols-3 > .cf-column,
+  #cf-wrapper .cf-columns.three > .cf-column {
     padding-left: 30px;
     width: 33.3333333333333%;
   }
 
-  #cf-wrapper .cf-columns.cols-3>.cf-column:first-child,
-  #cf-wrapper .cf-columns.cols-3>.cf-column:nth-child(3n + 1),
-  #cf-wrapper .cf-columns.three>.cf-column:first-child,
-  #cf-wrapper .cf-columns.three>.cf-column:nth-child(3n + 1) {
+  #cf-wrapper .cf-columns.cols-3 > .cf-column:first-child,
+  #cf-wrapper .cf-columns.cols-3 > .cf-column:nth-child(3n + 1),
+  #cf-wrapper .cf-columns.three > .cf-column:first-child,
+  #cf-wrapper .cf-columns.three > .cf-column:nth-child(3n + 1) {
     clear: left;
     padding-left: 0;
     padding-right: 30px;
   }
 
-  #cf-wrapper .cf-columns.cols-3>.cf-column:nth-child(3n + 2),
-  #cf-wrapper .cf-columns.three>.cf-column:nth-child(3n + 2) {
+  #cf-wrapper .cf-columns.cols-3 > .cf-column:nth-child(3n + 2),
+  #cf-wrapper .cf-columns.three > .cf-column:nth-child(3n + 2) {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #cf-wrapper .cf-columns.cols-3>.cf-column:nth-child(-n + 3),
-  #cf-wrapper .cf-columns.three>.cf-column:nth-child(-n + 3) {
+  #cf-wrapper .cf-columns.cols-3 > .cf-column:nth-child(-n + 3),
+  #cf-wrapper .cf-columns.three > .cf-column:nth-child(-n + 3) {
     padding-top: 0;
   }
 }
 
 @media screen and (min-width: 66em) {
-  #cf-wrapper .cf-columns>.cf-column {
+  #cf-wrapper .cf-columns > .cf-column {
     padding-bottom: 0;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column,
-  #cf-wrapper .cf-columns.four>.cf-column {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column,
+  #cf-wrapper .cf-columns.four > .cf-column {
     padding-left: 33.75px;
     width: 25%;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(odd),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(odd) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(odd),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(odd) {
     clear: none;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:first-child,
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(4n + 1),
-  #cf-wrapper .cf-columns.four>.cf-column:first-child,
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(4n + 1) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:first-child,
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(4n + 1),
+  #cf-wrapper .cf-columns.four > .cf-column:first-child,
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(4n + 1) {
     clear: left;
     padding-left: 0;
     padding-right: 33.75px;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(4n + 2),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(4n + 2) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(4n + 2),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(4n + 2) {
     padding-left: 11.25px;
     padding-right: 22.5px;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(4n + 3),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(4n + 3) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(4n + 3),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(4n + 3) {
     padding-left: 22.5px;
     padding-right: 11.25px;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(n + 5),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(n + 5) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(n + 5),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(n + 5) {
     padding-top: 67.5px;
   }
 
-  #cf-wrapper .cf-columns.cols-4>.cf-column:nth-child(-n + 4),
-  #cf-wrapper .cf-columns.four>.cf-column:nth-child(-n + 4) {
+  #cf-wrapper .cf-columns.cols-4 > .cf-column:nth-child(-n + 4),
+  #cf-wrapper .cf-columns.four > .cf-column:nth-child(-n + 4) {
     padding-top: 0;
   }
 }
@@ -401,61 +400,61 @@
   color: #9bca3e;
 }
 
-#cf-wrapper ol+h2,
-#cf-wrapper ol+h3,
-#cf-wrapper ol+h4,
-#cf-wrapper ol+h5,
-#cf-wrapper ol+h6,
-#cf-wrapper ol+p,
-#cf-wrapper p+dl,
-#cf-wrapper p+ol,
-#cf-wrapper p+p,
-#cf-wrapper p+table,
-#cf-wrapper p+ul,
-#cf-wrapper ul+h2,
-#cf-wrapper ul+h3,
-#cf-wrapper ul+h4,
-#cf-wrapper ul+h5,
-#cf-wrapper ul+h6,
-#cf-wrapper ul+p {
+#cf-wrapper ol + h2,
+#cf-wrapper ol + h3,
+#cf-wrapper ol + h4,
+#cf-wrapper ol + h5,
+#cf-wrapper ol + h6,
+#cf-wrapper ol + p,
+#cf-wrapper p + dl,
+#cf-wrapper p + ol,
+#cf-wrapper p + p,
+#cf-wrapper p + table,
+#cf-wrapper p + ul,
+#cf-wrapper ul + h2,
+#cf-wrapper ul + h3,
+#cf-wrapper ul + h4,
+#cf-wrapper ul + h5,
+#cf-wrapper ul + h6,
+#cf-wrapper ul + p {
   margin-top: 1.5em;
 }
 
-#cf-wrapper h1+p,
-#cf-wrapper p+h1,
-#cf-wrapper p+h2,
-#cf-wrapper p+h3,
-#cf-wrapper p+h4,
-#cf-wrapper p+h5,
-#cf-wrapper p+h6 {
+#cf-wrapper h1 + p,
+#cf-wrapper p + h1,
+#cf-wrapper p + h2,
+#cf-wrapper p + h3,
+#cf-wrapper p + h4,
+#cf-wrapper p + h5,
+#cf-wrapper p + h6 {
   margin-top: 1.25em;
 }
 
-#cf-wrapper h1+h2,
-#cf-wrapper h1+h3,
-#cf-wrapper h2+h3,
-#cf-wrapper h3+h4,
-#cf-wrapper h4+h5 {
+#cf-wrapper h1 + h2,
+#cf-wrapper h1 + h3,
+#cf-wrapper h2 + h3,
+#cf-wrapper h3 + h4,
+#cf-wrapper h4 + h5 {
   margin-top: 0.25em;
 }
 
-#cf-wrapper h2+p {
+#cf-wrapper h2 + p {
   margin-top: 1em;
 }
 
-#cf-wrapper h1+h4,
-#cf-wrapper h1+h5,
-#cf-wrapper h1+h6,
-#cf-wrapper h2+h4,
-#cf-wrapper h2+h5,
-#cf-wrapper h2+h6,
-#cf-wrapper h3+h5,
-#cf-wrapper h3+h6,
-#cf-wrapper h3+p,
-#cf-wrapper h4+p,
-#cf-wrapper h5+ol,
-#cf-wrapper h5+p,
-#cf-wrapper h5+ul {
+#cf-wrapper h1 + h4,
+#cf-wrapper h1 + h5,
+#cf-wrapper h1 + h6,
+#cf-wrapper h2 + h4,
+#cf-wrapper h2 + h5,
+#cf-wrapper h2 + h6,
+#cf-wrapper h3 + h5,
+#cf-wrapper h3 + h6,
+#cf-wrapper h3 + p,
+#cf-wrapper h4 + p,
+#cf-wrapper h5 + ol,
+#cf-wrapper h5 + p,
+#cf-wrapper h5 + ul {
   margin-top: 0.5em;
 }
 
@@ -781,7 +780,7 @@
   zoom: 1;
 }
 
-#cf-wrapper #cf-error-banner .cf-error-actions a+a {
+#cf-wrapper #cf-error-banner .cf-error-actions a + a {
   margin-left: 10px;
 }
 
@@ -851,18 +850,22 @@
   background: #ebebeb;
   overflow-x: hidden;
   padding: 30px 0;
-  background-image: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(#dedede),
-      color-stop(3%, #ebebeb),
-      color-stop(97%, #ebebeb),
-      to(#dedede));
-  background-image: linear-gradient(top,
-      #dedede,
-      #ebebeb 3%,
-      #ebebeb 97%,
-      #dedede);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#dedede),
+    color-stop(3%, #ebebeb),
+    color-stop(97%, #ebebeb),
+    to(#dedede)
+  );
+  background-image: linear-gradient(
+    top,
+    #dedede,
+    #ebebeb 3%,
+    #ebebeb 97%,
+    #dedede
+  );
 }
 
 #cf-wrapper #cf-error-details .cf-highlight h3 {
@@ -925,12 +928,12 @@
   width: 0;
 }
 
-#cf-wrapper #cf-error-details .cf-status-item+.cf-status-item {
+#cf-wrapper #cf-error-details .cf-status-item + .cf-status-item {
   border-top: 1px solid #dedede;
   padding-top: 1.5em;
 }
 
-#cf-wrapper #cf-error-details .cf-status-item+.cf-status-item:before {
+#cf-wrapper #cf-error-details .cf-status-item + .cf-status-item:before {
   background: url(../images/cf-icon-horizontal-arrow.png) no-repeat;
   content: "";
   display: block;
@@ -1081,7 +1084,11 @@
 }
 
 #cf-wrapper #cf-error-details .cf-captcha-container .cf-screenshot-container,
-#cf-wrapper #cf-error-details .cf-captcha-container .cf-screenshot-container img,
+#cf-wrapper
+  #cf-error-details
+  .cf-captcha-container
+  .cf-screenshot-container
+  img,
 #recaptcha-widget .cf-alert,
 #recaptcha-widget .recaptcha_only_if_audio,
 .cf-cookie-error {
@@ -1093,7 +1100,10 @@
   height: 175px;
 }
 
-#cf-wrapper #cf-error-details .cf-screenshot-container.cf-screenshot-full .cf-no-screenshot {
+#cf-wrapper
+  #cf-error-details
+  .cf-screenshot-container.cf-screenshot-full
+  .cf-no-screenshot {
   left: 50%;
   margin-left: -89px;
 }
@@ -1151,7 +1161,6 @@
 }
 
 @media screen and (min-width: 49.2em) {
-
   #cf-wrapper #cf-error-details .cf-status-desc:empty,
   #cf-wrapper #cf-error-details .cf-status-item.cf-error-source:after,
   #cf-wrapper #cf-error-details .cf-status-item .cf-icon,
@@ -1197,12 +1206,12 @@
     padding-bottom: 0;
   }
 
-  #cf-wrapper #cf-error-details .cf-status-item+.cf-status-item {
+  #cf-wrapper #cf-error-details .cf-status-item + .cf-status-item {
     border: 0;
     padding-top: 0;
   }
 
-  #cf-wrapper #cf-error-details .cf-status-item+.cf-status-item:before {
+  #cf-wrapper #cf-error-details .cf-status-item + .cf-status-item:before {
     background-position: 0 -544px;
     height: 24.75px;
     margin-left: -37.5px;
@@ -1242,7 +1251,10 @@
     margin-left: -50px;
   }
 
-  #cf-wrapper #cf-error-details .cf-status-item.cloudflare-status+.status-item:before {
+  #cf-wrapper
+    #cf-error-details
+    .cf-status-item.cloudflare-status
+    + .status-item:before {
     margin-left: -25px;
   }
 
@@ -1253,7 +1265,11 @@
   }
 
   #cf-wrapper #cf-error-details .cf-captcha-container .cf-screenshot-container,
-  #cf-wrapper #cf-error-details .cf-captcha-container .cf-screenshot-container img {
+  #cf-wrapper
+    #cf-error-details
+    .cf-captcha-container
+    .cf-screenshot-container
+    img {
     display: block;
   }
 }
@@ -1284,7 +1300,7 @@
     width: auto;
   }
 
-  #cf-wrapper #cf-error-details .cf-status-item+.cf-status-item:before {
+  #cf-wrapper #cf-error-details .cf-status-item + .cf-status-item:before {
     background-position: 0 -734px;
     height: 33px;
     margin-left: -50px;
@@ -1296,7 +1312,10 @@
     margin-left: -66.67px;
   }
 
-  #cf-wrapper #cf-error-details .cf-status-item.cf-cloudflare-status+.cf-status-item:before {
+  #cf-wrapper
+    #cf-error-details
+    .cf-status-item.cf-cloudflare-status
+    + .cf-status-item:before {
     margin-left: -37.5px;
   }
 
