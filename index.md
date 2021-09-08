@@ -54,9 +54,22 @@ Awesome Find:
 
 ### **This Space As A PDF:**
 
-{% file src=".gitbook/assets/python-space.pdf" caption="This Space PDF" %}
+## **Examples Zip File:**
 
-### **Linked Lists:**
+\*\*\*\*
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/examples.zip" %}
+
+
+
+{% embed url="https://www.canva.com/design/DAEpdYVQGvs/-7ftWD3SCRu-yVbKqUYkNQ/view?website\#2:page-1" %}
+
+
+
+  
+****
+
+\*\*\*\*
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" caption="" %}
 
@@ -274,15 +287,13 @@ Awesome Find:
 
 
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/backpedal \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/backpedal%20%281%29.py)
 
 
 
-[https://github.com/bgoonz/python-gitbook/commit/92a8ab42ef6b8401afc4446e86adcb0ee26e2adb](https://github.com/bgoonz/python-gitbook/commit/92a8ab42ef6b8401afc4446e86adcb0ee26e2adb)
-
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/backpedal \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/backpedal%20%281%29.py)
 
 
+
+{% embed url="https://github.com/bgoonz/python-gitbook/commit/92a8ab42ef6b8401afc4446e86adcb0ee26e2adb" %}
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/backpedal.py" %}
 
@@ -292,37 +303,19 @@ Awesome Find:
 
 
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/beginners_python_cheat_sheet_pcc_all.pdf)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/36ee1afb22e26c71e59fefe61b1ff10532b3661a" %}
 
 
 
-{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" %}
 
-
-
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_paths\_dict \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_paths_dict%20%281%29.py)
 
 
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/a655f88cbf2d8ff81f009553166839a9c16e6acb" %}
-
-
-
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_paths\_dict \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs_paths_dict%20%281%29.py)
-
-
-
-
-
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_paths\_dict \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_paths_dict%20%282%29.py)
-
-
-
-
-
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_paths\_dict \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs_paths_dict%20%282%29.py)
 
 
 
@@ -332,16 +325,6 @@ Awesome Find:
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_paths\_dict.py" %}
 
-
-
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_search\_dict \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_search_dict%20%281%29.py)
-
-
-
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_search\_dict \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs_search_dict%20%281%29.py)
-
-
-
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_search\_dict.py" %}
 
 
@@ -349,12 +332,6 @@ Awesome Find:
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_search\_dict.py" %}
 
 
-
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_search\_grid \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_search_grid%20%281%29.py)
-
-
-
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_search\_grid \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs_search_grid%20%281%29.py)
 
 
 
@@ -370,135 +347,151 @@ Awesome Find:
 
 
 
-[https://github.com/bgoonz/python-gitbook/commit/549d27ee7b6dc0a8fcedcdda7919393def7c0de8](https://github.com/bgoonz/python-gitbook/commit/549d27ee7b6dc0a8fcedcdda7919393def7c0de8)
+{% embed url="https://github.com/bgoonz/python-gitbook/commit/549d27ee7b6dc0a8fcedcdda7919393def7c0de8" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bigo.png](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bigo.png)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite\_matching\_single \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite_matching_single%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite\_matching\_single \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite_matching_single%20%281%29.py)
+![](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bigo.png)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite\_matching\_single \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite_matching_single%20%282%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite\_matching\_single \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite_matching_single%20%282%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite\_matching\_single.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite_matching_single.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite\_matching\_single.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite_matching_single.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect\_search \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect_search%20%281%29.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite\_matching\_single.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect\_search \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect_search%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect\_search.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect_search.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect\_search.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect_search.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite\_matching\_single.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst\_make\_balanced\_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst_make_balanced_recur%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst\_make\_balanced\_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst_make_balanced_recur%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst\_make\_balanced\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst_make_balanced_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst\_make\_balanced\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst_make_balanced_recur.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_inorder\_traversal\_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_inorder_traversal_recur%20%281%29.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect\_search.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_inorder\_traversal\_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt_inorder_traversal_recur%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_inorder_traversal_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt_inorder_traversal_recur.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect\_search.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_level\_order\_traversal\_iter \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_level_order_traversal_iter%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_level\_order\_traversal\_iter \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt_level_order_traversal_iter%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_level_order_traversal_iter.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt_level_order_traversal_iter.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity%20%281%29.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst\_make\_balanced\_recur.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst\_make\_balanced\_recur.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_dict \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_dict%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_dict \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_dict%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_dict \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_dict%20%282%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_dict \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_dict%20%282%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_dict.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_dict.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_dict.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_dict.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_list \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_list%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_list \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_list%20%281%29.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_list \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_list%20%282%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_list \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_list%20%282%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_list.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_list.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_list.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting_sort_list.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict%20%281%29.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_component_dict%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict%20%282%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_component_dict%20%282%29.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_component_dict.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict\_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict_recur%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict\_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_component_dict_recur%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict_recur.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_component_dict_recur.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_components\_grid.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_components_grid.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_components\_grid.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_components_grid.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_paths\_dict\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_paths_dict_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_paths\_dict\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs_paths_dict_recur.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_distances\_min \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_distances_min%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_distances\_min \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras_distances_min%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_distances\_min.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_distances_min.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_dict.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_distances\_min.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras_distances_min.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_path\_pq \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_path_pq%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_path\_pq \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras_path_pq%20%281%29.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_dict.py" %}
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_path\_pq.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_path_pq.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_path\_pq.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras_path_pq.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/employees.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/employees.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/employees.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/employees.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/examples.zip](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/examples.zip)
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_list.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_list.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict\_recur.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict\_recur.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_components\_grid.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_components\_grid.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_paths\_dict\_recur.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_paths\_dict\_recur.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_distances\_min.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_distances\_min.py" %}
+
+
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_path\_pq.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_path\_pq.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/employees.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/employees.py" %}
 
 [https://github.com/bgoonz/python-gitbook/commit/590281a01e5f3fa91e4d909d8ce9b6fa24e8eaaf](https://github.com/bgoonz/python-gitbook/commit/590281a01e5f3fa91e4d909d8ce9b6fa24e8eaaf)
 
