@@ -100,6 +100,7 @@
 
 * [Python Snippets](quick-reference/python-snippets.md)
 * [Python Module Index:](quick-reference/python-module-index.md)
+* [Creating Python Modules](quick-reference/creating-python-modules.md)
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
 * [index](quick-reference/untitled-1.md)
