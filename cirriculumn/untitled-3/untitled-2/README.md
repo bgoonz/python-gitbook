@@ -1110,7 +1110,7 @@ Python uses boolean values to evaluate conditions. An expression in any Boolean 
 
 To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
 
-```text
+```python
 x = 10
 print(x == 10) # True
 print(x == 5)  # False
@@ -1123,7 +1123,7 @@ print(x != 20) # True
 
 You build up more complex boolean expressions by using the `and` and `or` operators.
 
-```text
+```python
 name = "Elon"
 age = 49
 if name == "Elon" and age == 49:
@@ -1135,7 +1135,7 @@ if name == "Elon" or name == "Bill":
 
 Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
 
-```text
+```python
 years = [2018, 2019, 2020, 2021]
 year = 2020
 
@@ -1147,7 +1147,7 @@ if year in years:
 
 We can use the `if`, `elif`, and the `else` keywords to define a series of code blocks that will execute conditionally.
 
-```text
+```python
 first_statement = False
 second_statement = True
 
@@ -1163,7 +1163,7 @@ Any object that is considered "empty" evaluates to `False`. For example, `""`, `
 
 If we want to determine if two objects are actually the same instance in memory, we use the `is` operator instead of the value comparison operator `==`.
 
-```text
+```python
 a = [1,2,3]
 b = [1,2,3]
 
@@ -1179,7 +1179,7 @@ print(x is y) # True because x and y reference the same list object
 
 There is also the `not` operator, which inverts the boolean that follows it:
 
-```text
+```python
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```
