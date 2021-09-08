@@ -45,7 +45,8 @@
 
 ## practice
 
-* [Supplemental Practice:](practice/supplemental-practice.md)
+* [Supplemental Practice:](practice/supplemental-practice/README.md)
+  * [Prompts](practice/supplemental-practice/prompts.md)
 * [Abstract Data Structures:](practice/untitled/README.md)
   * [Industry Standard Algorithms](practice/untitled/industry-standard-algorithms.md)
   * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
@@ -73,6 +74,7 @@
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
 * [Misc. Resources](resources/untitled-1.md)
+* [Things To Internalize:](resources/things-to-internalize.md)
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
