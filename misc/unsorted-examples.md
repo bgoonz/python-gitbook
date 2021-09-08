@@ -122,3 +122,174 @@ class MyLinkedList:
                     counter += 1
 ```
 
+
+
+
+
+![](../.gitbook/assets/image%20%288%29.png)
+
+### Define Count Vowels Function
+
+
+
+Count the number of vowels in the user input string using for loop and while loop 
+
+Now, let’s define a function named countVowels\(\) which accepts one argument as a string where we need to count Vowels in it.
+
+So, declare a variable count and initialize to 0 which keeps the track of vowel count.
+
+```text
+count = 0
+```
+
+Now before counting the vowels, first make sure the string is completely lowercase because we are checking vowels from the list where we declared vowel in lowercase only.
+
+So keep it in mind to the first convert string to lowercase and for that, we are going to use **lower\(\)** function of Python.
+
+```text
+sentence = sentence.lower()
+```
+
+So, we have converted the string to lowercase, now traverse through the string and compare each character of string in the list of vowels whether the character is present in the list or not.
+
+If the character is present in the list, then we simply increment the count variable by 1 otherwise continue to the loop without incrementing the count variable.
+
+_**Read =&gt;**_ [_**Check if a number is greater than all those numbers in the list**_](https://codezup.com//check-number-greater-than-numbers-list-python/)
+
+And at last, after traversing through the string, return the count variable back to the function call.
+
+```text
+for c in sentence:
+    if c in ['a', 'e', 'i', 'o', 'u']:
+        count += 1
+return count
+```
+
+#### Define the Main Condition
+
+Now, we have defined the Count Vowel function above which calculates the count of the number of vowels in the string.
+
+So after this, ask the user to enter string which needs to pass to this above function and then print the count for the vowel.
+
+```text
+if __name__ == '__main__':
+    userInput = str(input("Enter the string to check for vowels: "))
+    count = countVowels(userInput)
+    print('Vowel Count: ',count)
+```
+
+**Code**
+
+```python
+#Using While Loop
+'''def countVowels(sentence):
+    
+    count = 0
+    sentence = sentence.lower()
+    i = 0
+    while(i<len(sentence)):
+        if sentence[i] in ['a', 'e', 'i', 'o', 'u']:
+            count += 1
+        i+=1;
+    return count
+'''
+
+#Using For Loop
+def countVowels(sentence):
+    
+    count = 0
+    sentence = sentence.lower()
+    for c in sentence:
+        if c in ['a', 'e', 'i', 'o', 'u']:
+            count += 1
+    return count
+
+
+if __name__ == '__main__':
+    userInput = str(input("Enter the string to check for vowels: "))
+    count = countVowels(userInput)
+    print('Vowel Count: ',count)
+```
+
+**Output**
+
+![Python Program to Count the Number of Vowels in a string using a loop Output](https://i0.wp.com/codezup.com/wp-content/uploads/2019/12/Python-Program-to-Count-the-Number-of-Vowels-in-a-string-using-a-loop-Output.png?resize=665%2C242&ssl=1)
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](../.gitbook/assets/image%20%2821%29.png)
+
+
+
+
+
+![](../.gitbook/assets/image%20%2816%29.png)
+
+
+
+
+
+![](../.gitbook/assets/image%20%2814%29.png)
+
+
+
+![](../.gitbook/assets/image%20%283%29.png)
+
+
+
+![](../.gitbook/assets/image%20%2812%29.png)
+
+
+
+![](../.gitbook/assets/image%20%2817%29.png)
+
+
+
+![](../.gitbook/assets/image%20%2822%29.png)
+
+
+
+![](../.gitbook/assets/image%20%2815%29.png)
+
+
+
+
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+
+
+
+
+
+
+![](../.gitbook/assets/image%20%2813%29.png)
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
+![](../.gitbook/assets/image%20%2819%29.png)
+
+
+
+![](../.gitbook/assets/image%20%281%29.png)
+
+![](../.gitbook/assets/image%20%286%29.png)
+
