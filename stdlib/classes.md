@@ -44,7 +44,7 @@ class SimpleGradebook:
 
 
 
-```python
+```text
 book = SimpleGradebook()
 book.add_student('Isaac Newton')
 book.report_grade('Isaac Newton', 90)

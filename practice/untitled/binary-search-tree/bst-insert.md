@@ -39,14 +39,14 @@ def pre_order_print(root):
     pre_order_print(root.r_child)    
 ```
 
-```pythonext
+```text
 r = Node(3)
 binary_insert(r, Node(7))
 binary_insert(r, Node(1))
 binary_insert(r, Node(5))
 ```
 
-```pythonext
+```text
      3
     / \
    1   7
@@ -54,7 +54,7 @@ binary_insert(r, Node(5))
      5
 ```
 
-```pythonext
+```text
 print "in order:"
 in_order_print(r)
 

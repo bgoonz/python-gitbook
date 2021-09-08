@@ -6,7 +6,7 @@
 
 Arithmetic overflow happens when an arithmetic operation results in a value that is outside the range of values representable by the expression’s type. For example, the following C++ code prints 0:
 
-```pythonext
+```text
 uint16_t x = 65535;
 x++;
 
@@ -17,7 +17,7 @@ x is an unsigned 16 bit integer, which can represent values between 0 and 65535.
 
 Similarly, an underflow occurs when an arithmetic operation generates a result that is below the smallest representable value of the expression’s type:
 
-```pythonext
+```text
 uint16_t x = 0;
 x--;
 
@@ -34,7 +34,7 @@ Before we digging into overflow behavior, we need to understand how computers re
 
 Python provides support for arbitrarily large integers: unlike C++, where the bit width \(number of bits used to represent a number\) is fixed, we can have integers of any size:
 
-```pythonext
+```text
 print(10**100)
 ```
 
@@ -104,7 +104,7 @@ If b is less than 0, then by the same logic we cannot possibly overflow - regard
 
 The following code implements these two checks:
 
-```pythonext
+```text
 #include <limits>
 
 template <typename T>
@@ -120,7 +120,7 @@ constexpr bool AdditionUnderflows(const T& a, const T& b) {
 
 Detecting overflow or underflow for subtraction is very similar, as subtracting b from a is the equivalent of adding -b to a, thus we only need to adjust the checks. a - b &gt; MAX means a &gt; MAX + b if b is negative \(so we don’t cause an overflow during the check\), while a - b &lt; MIN means a &lt; MIN + b if b is greater than or equal to 0:
 
-```pythonext
+```text
 template <typename T>
 constexpr bool SubtractionOverflows(const T& a, const T& b) {
     return (b < 0) && (a > std::numeric_limits<T>::max() + b);
@@ -138,7 +138,7 @@ Underflow can happen only when one of the numbers is negative and the other one 
 
 We can implement the checks as follows:
 
-```pythonext
+```text
 template <typename T>
 constexpr bool MultiplicationOverflows(const T& a, const T& b) {
     return ((b >= 0) && (a >= 0) && (a > std::numeric_limits<T>::max() / b))
@@ -154,7 +154,7 @@ constexpr bool MultiplicationUnderflows(const T& a, const T& b) {
 
 Note integer division cannot possibly underflow. The single overflow that can happen is due to the fact that in two’s complement representation, we can represent one more negative number than positives, as 0 is, in a sense, positive with this representation \(the sign bit is not set for 0\). An 8-bit signed integer can represent 128 positive values \(0 to 127\) and 128 negative values \(-1 to -128\). Overflow can only happen when we change the sign of the smallest possible value we can represent by dividing it with -1. -128 / -1 becomes 128, which is an overflow. This is the only case we need to check for:
 
-```pythonext
+```text
 template <typename T>
 constexpr bool DivisionOverflows(const T& a, const T& b) {
     return (a == std::numeric_limits<T>::min()) && (b == -1)
@@ -170,7 +170,7 @@ We are explicitly not looking at division by 0, which is part of the same safe a
 
 Now that we can detect overflows and underflows, we can implement a couple of policies to handle them. Wrap-around is the default behavior in C++, so let’s look at the other two possibilities. We will implement a couple of types templated on an integer type T, with overflow and underflow handlers:
 
-```pythonext
+```text
 template <typename T>
 struct Policy {
     static constexpr T OnOverflow() { /* ... */ }
@@ -180,7 +180,7 @@ struct Policy {
 
 The throwing policy looks like this:
 
-```pythonext
+```text
 struct ArithmeticException : std::exception {};
 struct ArithmeticOverflowException : ArithmeticException {};
 struct ArithmeticUnderflowException : ArithmeticException {};
@@ -199,7 +199,7 @@ struct ThrowingPolicy {
 
 The saturation policy is:
 
-```pythonext
+```text
 template <typename T>
 struct SaturationPolicy {
     static constexpr T OnOverflow() {
@@ -216,7 +216,7 @@ struct SaturationPolicy {
 
 Now that we have all the required pieces, we can create a type that wraps an integer type and implements all the arithmetic operations checking for overflow or underflow. The type is templated on a policy for handling overflows and underflows:
 
-```pythonext
+```text
 template <typename T, template<typename> typename Policy>
 struct Integer
 {
@@ -267,7 +267,7 @@ struct Integer
 
 Now we can wrap an integer type with this and perform safe arithmetic:
 
-```pythonext
+```text
 Integer<int8_t, ThrowingPolicy> a{ 64 };
 Integer<int8_t, ThrowingPolicy> b{ 2 };
 
