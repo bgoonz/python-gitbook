@@ -1,5 +1,7 @@
 # Install Python
 
+
+
 ## Installing Python 3
 
 Brian "Beej Jorgensen" Hall edited this page on May 29, 2020 · [1 revision](https://github.com/LambdaSchool/CS-Wiki/wiki/Installing-Python-3/_history)
@@ -18,21 +20,21 @@ Unfortunately, we haven't found a way to get Anaconda to play nicely with pipenv
 
 If you can run `python` or `python3` and see a 3.7 or later version, you're good to go:
 
-```py
+```text
 $ python3 --version
 Python 3.6.5
 ```
 
 or on some systems, Python 3 is just `python`:
 
-```py
+```text
 $ python --version
 Python 3.6.5
 ```
 
 And optionally try `pipenv`:
 
-```py
+```text
 $ pipenv --version
 pipenv, version [some remotely recent date, probably]
 ```
@@ -47,7 +49,7 @@ If you don't have Brew installed, [follow the instructions on the brew website](
 
 Use Brew to install Python and pipenv at the Terminal prompt:
 
-```py
+```text
 brew install python pipenv
 ```
 
@@ -65,7 +67,7 @@ Python 3 is in the Windows Store and can be installed from there.
 
 When installing the official package, be sure to check the
 
-```py
+```text
 [ ] Add to PATH
 ```
 
@@ -86,7 +88,7 @@ This is what worked for Beej. YMMV.
 
 5. You'll see a message like this in the pipenv install output, but with a slightly different path:
 
-   ```py
+   ```text
    add C:\Users\username\AppData\Roaming\Python\Python38\Scripts to your path
    ```
 
@@ -123,7 +125,7 @@ If you're running Windows 10+, you might want to install the Windows Subsystem f
 5. Make a new username and password. This is completely separate from your Windows username and password, but I made mine the same so that I wouldn't forget.
 6. Upgrade the Ubuntu system. Run:
 
-   ```py
+   ```text
    sudo apt-get update
    sudo apt-get upgrade
    ```
@@ -168,3 +170,4 @@ If you run into trouble with the above, try the following:
       2. Confirm that `/usr/bin/python3 --version` refers to 3.6.8
       3. `pipenv --three --python=`which python3\`\` _NOTE_ that there are backticks \(\`\) around _which python3_
       4. This should create the shell forcing it to use 3.6.8
+

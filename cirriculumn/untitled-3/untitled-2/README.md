@@ -4,6 +4,8 @@
 
 {% embed url="https://replit.com/@bgoonz/d1\#main.py" %}
 
+
+
 #### Windows <a id="windows"></a>
 
 Windows machines usually do not ship with Python installed. Installing on Windows is pretty simple.
@@ -45,13 +47,15 @@ After Homebrew has finished its installation process, you then need to install P
 
 Here are a few websites that give you online access to the Python interpreter:
 
-- [Repl.it \(Links to an external site.\)](https://repl.it/)
-- [Trinket \(Links to an external site.\)](https://trinket.io/)
-- [Python Fiddle \(Links to an external site.\)](http://pythonfiddle.com/)
-- [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
-- [Python Anywhere](https://www.pythonanywhere.com/)
+* [Repl.it \(Links to an external site.\)](https://repl.it/)
+* [Trinket \(Links to an external site.\)](https://trinket.io/)
+* [Python Fiddle \(Links to an external site.\)](http://pythonfiddle.com/)
+* [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
+* [Python Anywhere](https://www.pythonanywhere.com/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%281%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%281%29.png)
+
+
 
 #### Search and Research <a id="search-and-research"></a>
 
@@ -128,12 +132,12 @@ It appears the questioner proofread their question beforehand as it does not con
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [Stack Overflow: How Do I Ask a Good Question? \(Links to an external site.\)](https://stackoverflow.com/help/how-to-ask)
-- [Writing the Perfect Question \(Links to an external site.\)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
-- [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
-- [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
+* [Stack Overflow: How Do I Ask a Good Question? \(Links to an external site.\)](https://stackoverflow.com/help/how-to-ask)
+* [Writing the Perfect Question \(Links to an external site.\)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
+* [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
+* [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%285%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29.png)
 
 ## Objective 04 - Use a print statement
 
@@ -259,9 +263,11 @@ You have now learned the basics of using the `print` function in Python. You lea
 
 Now, get some practice using the `print` function by completing the challenge below.
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
 ## Objective 05 - Use white space to denote blocks
 
@@ -275,7 +281,7 @@ Python is unique because indentation instead of some other character marks block
 
 Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
 
-```py
+```text
 >>> import string
 >>> string.whitespace
 ' \t\n\r\x0b\x0c'
@@ -290,7 +296,7 @@ You've seen the different types of whitespace characters that can appear, but yo
 
 Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
 
-```py
+```text
 >>> first = "Lambda"
 >>> second = "School"
 >>> first + second
@@ -310,7 +316,7 @@ It's important to understand that Python assumes meaning in newline characters w
 
 Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
 
-```py
+```text
 >>> if True:
 ... if True:
   File "<stdin>", line 2
@@ -322,7 +328,7 @@ IndentationError: expected an indented block
 
 This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
 
-```py
+```text
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -333,7 +339,7 @@ it worked!
 
 The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
 
-```py
+```text
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -349,9 +355,11 @@ Consistent whitespace usage \(indentation\) is crucial to making sure that Pytho
 
 In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are `" "`, `\t`, and `\n`. The Python interpreter knows where the end of a logical line of code is because of the `\n`. The amount of whitespace \(level of indentation\) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%282%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%282%29.png)
 
 ## \#6:
 
@@ -367,19 +375,19 @@ In Python, you can have integers and floating-point numbers.
 
 You can define an integer like so:
 
-```py
+```text
 my_int = 3
 ```
 
 You can also cast a floating-point number to be an integer like so:
 
-```py
+```text
 my_int = int(3.0)
 ```
 
 To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
 
-```py
+```text
 my_float = 3.0
 my_float = float(3)
 ```
@@ -388,20 +396,20 @@ my_float = float(3)
 
 You can define strings with either single or double quotes:
 
-```py
+```text
 my_string = 'Lambda School'
 my_string = "Lambda School"
 ```
 
 It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
 
-```py
+```text
 my_string = "I don't have to worry about apostrophes with my double-quotes."
 ```
 
 Let's practice declaring variables to store an int, a float, and a string:
 
-```py
+```text
 my_int = 2
 my_float = 5.0
 my_str = "Lambda School"
@@ -409,7 +417,11 @@ my_str = "Lambda School"
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -419,21 +431,21 @@ There are a few basic operators that you should be familiar with as you start wr
 
 You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
 
-```py
+```text
 my_number = 2 + 2 * 8 / 5.0
 print(my_number) # 5.2
 ```
 
 There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
 
-```py
+```text
 my_remainder = 9 % 4
 print(my_remainder) # 1
 ```
 
 You can use two multiplication operators to make the exponentiation operator \(`**`\).
 
-```py
+```text
 two_squared = 2 ** 2
 print(two_squared)    # 4
 two_cubed = 2 ** 3
@@ -444,7 +456,7 @@ print(two_cubed)      # 8
 
 You can use the addition operator to concatenate strings and lists:
 
-```py
+```text
 string_one = "Hello,"
 string_two = " World!"
 combined = string_one + string_two
@@ -458,7 +470,7 @@ print(big_lst) # [1, 2, 3, 4, 5, 6]
 
 You can also use the multiplication operator to create a new list or string that repeats the original sequence:
 
-```py
+```text
 my_string = "Bueller"
 repeated = my_string * 3
 print(repeated) # BuellerBuellerBueller
@@ -474,33 +486,37 @@ Now, let's see if we can combine all of this information in a quick demo.
 
 First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
 
-```py
+```text
 a = object()
 b = object()
 ```
 
 Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
 
-```py
+```text
 a_list = [a] * 5
 b_list = [b] * 5
 ```
 
 Then, let's combine `a_list` and `b_list` into a `combined` list.
 
-```py
+```text
 combined = a_list + b_list
 ```
 
 If our code works as expected, `combined` should have a length of 10.
 
-```py
+```text
 print(len(combined)) # 10
 ```
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -508,7 +524,7 @@ To format a string in Python, you use the `%` operator to format a set of stored
 
 For example, let's say you want to insert a `name` variable inside a string. You would do the following:
 
-```py
+```text
 name = "Austen"
 formatted_string = "Hello, %s!" % name
 print(formatted_string) # Hello, Austen!
@@ -516,7 +532,7 @@ print(formatted_string) # Hello, Austen!
 
 If you have more than one argument specifier, you need to enclose your arguments in a tuple:
 
-```py
+```text
 name = "Austen"
 year = 2020
 print("Hey %s! It's the year %d." % (name, year))
@@ -525,7 +541,7 @@ print("Hey %s! It's the year %d." % (name, year))
 
 Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
 
-```py
+```text
 my_list = [1,2,3]
 print("my_list: %s" % my_list)
 # my_list: [1, 2, 3]
@@ -533,11 +549,11 @@ print("my_list: %s" % my_list)
 
 A few of the common argument specifiers are:
 
-- `%s` - String \(or any object with a string representation\)
-- `%d` - Integers
-- `%f` - Floating point numbers
-- `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
-- `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
+* `%s` - String \(or any object with a string representation\)
+* `%d` - Integers
+* `%f` - Floating point numbers
+* `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
+* `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
 
 ### Follow Along <a id="follow-along"></a>
 
@@ -545,7 +561,7 @@ Let's see if we can use all of this information to practice formatting a few str
 
 Let's imagine that we have some data that we want to inject into a string.
 
-```py
+```text
 product_name = "bananas"
 price = 1.23
 product_id = 123456
@@ -553,14 +569,20 @@ product_id = 123456
 
 We need to print a formatted string using argument specifiers and a tuple that contains our data:
 
-```py
+```text
 print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+
+
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 8
 
@@ -574,14 +596,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```py
+```text
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -589,7 +611,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -597,7 +619,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -606,7 +628,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -614,7 +636,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -622,7 +644,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -631,9 +653,15 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+
+
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 ## Objective 09 - Perform basic string operations
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -645,14 +673,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```py
+```text
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -660,7 +688,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -668,7 +696,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -677,7 +705,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -685,7 +713,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -693,7 +721,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```py
+```text
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -703,7 +731,17 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-3" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+
+
+
+
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -789,7 +827,9 @@ print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -853,7 +893,7 @@ while True:
 
 You can also use a `continue` statement to skip the current block but not exit the loop entirely.
 
-```py
+```text
 # Prints 1, 3, 5, 7
 for x in range(8):
     # if x is even, skip this block and do not print
@@ -862,11 +902,17 @@ for x in range(8):
     print(x)
 ```
 
+
+
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-2\#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 ## Objective 12 - Create user-defined functions and call them
+
+
 
 To make our code more readable and DRY \(Don't Repeat Yourself\), we often want to encapsulate code inside a callable function.
 
@@ -906,11 +952,19 @@ print(eight)
 # 8
 ```
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-3\#main.py" %}
 
+
+
 {% embed url="https://gist.github.com/bgoonz/4f5c0b5fe80a84421ff9a5a66dce29da" %}
+
+
+
+
 
 ### Overview <a id="overview"></a>
 
@@ -993,3 +1047,6 @@ There is also the `not` operator, which inverts the boolean that follows it:
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```
+
+
+

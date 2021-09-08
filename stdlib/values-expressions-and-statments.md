@@ -93,7 +93,7 @@ Strings enclosed with three occurrences of either quote symbol are called triple
 
 Triple quoted strings can even span multiple lines:
 
-```py
+```text
 >>> message = """This message will
 ... span several
 ... lines."""
@@ -106,7 +106,7 @@ lines.
 
 Python doesn’t care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings: once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value. But when the interpreter wants to display a string, it has to decide which quotes to use to make it look like a string.
 
-```py
+```text
 >>> 'This is a string.'
 'This is a string.'
 >>> """And so is this."""
@@ -136,7 +136,7 @@ There are several of these escape sequences that are helpful to know.
 
 `\n` is the most frequently used of these. The following example will hopefully make what it does clear.
 
-```py
+```text
 >>> print("Line 1\n\n\nLine 5")
 Line 1
 
@@ -151,7 +151,7 @@ In order to write programs that _do things_ to the _stuff_ we now call **values*
 
 We use Python’s [assignment statement](http://en.wikipedia.org/wiki/Assignment_statement) for just this purpose:
 
-```py
+```text
 >>> message = "What's up, Doc?"
 >>> n = 17
 >>> pi = 3.14159
@@ -161,7 +161,7 @@ The example above makes three assignments. The first assigns the string value `"
 
 Assignment statements create names and associate these names with values. The values can then be retrieved from the computer’s memory by refering to the name associated with them.
 
-```py
+```text
 >>> message
 "What's up, Doc?"
 >>> pi
@@ -174,7 +174,7 @@ What's up, Doc?
 
 Names are also called [variables](http://en.wikipedia.org/wiki/Variable_%28programming%29), since the values to which they refer can change during the execution of the program. Variables also have types. Again, we can ask the interpreter what they are.
 
-```py
+```text
 >>> type(message)
 <class 'str'>
 >>> type(n)
@@ -197,7 +197,7 @@ Note
 
 This is different from math. In math, if you give x the value 3, it cannot change to link to a different value half-way through your calculations!
 
-```py
+```text
 >>> day = "Thursday"
 >>> day
 'Thursday'
@@ -221,7 +221,7 @@ In the Python shell, entering a name at the prompt causes the interpreter to loo
 
 The semantics of the assignment statement can be confusing to beginning programmers, especially since the **assignment token**, `=` can be easily confused with the with _equals_ \(Python uses the token `==` for equals, as we will see soon\). It is not!
 
-```py
+```text
 >>> n = 17
 >>> n = n + 1
 >>> n
@@ -240,7 +240,7 @@ Names in Python exist within a context, called a [namespace](http://en.wikipedia
 
 The left hand side of the assignment statement does have to be a valid Python variable name. This is why you will get an error if you enter:
 
-```py
+```text
 >>> 17 = n
 ```
 
@@ -268,7 +268,7 @@ There are some situations in which names beginning with an underscore have speci
 
 If you give a variable an illegal name, you get a syntax error:
 
-```py
+```text
 >>> 76trombones = "big parade"
 SyntaxError: invalid syntax
 >>> more$ = 1000000
@@ -293,7 +293,7 @@ Python 3 has thirty-three keywords \(and every now and again improvements to Pyt
 
 You might want to keep this list handy. Actually, as will often be the case when learning to program with Python, when you aren’t sure about something, you can _ask Python_:
 
-```py
+```text
 >>> import keyword
 >>> keyword.kwlist
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class',
@@ -320,7 +320,7 @@ When you type a statement on the command line, Python executes it. The interpret
 
 An [expression](http://en.wikipedia.org/wiki/Expression_%28programming%29) is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter **evaluates** it and displays the result, which is always a _value_:
 
-```py
+```text
 >>> 1 + 1
 2
 >>> len('hello')
@@ -331,7 +331,7 @@ In this example `len` is a built-in Python function that returns the number of c
 
 The _evaluation of an expression_ produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable.
 
-```py
+```text
 >>> 17
 17
 >>> y = 3.14
@@ -348,14 +348,14 @@ The _evaluation of an expression_ produces a value, which is why expressions can
 
 The following are all legal Python expressions whose meaning is more or less clear:
 
-```py
+```text
 20 + 32   hour - 1   hour * 60 + minute   minute / 60   5 ** 2
 (5 + 9) * (15 - 7)
 ```
 
 The tokens `+` and `-`, and the use of parenthesis for grouping, mean in Python what they mean in mathematics. The asterisk \(`*`\) is the token for multiplication, and `**` is the token for exponentiation \(raising a number to a power\).
 
-```py
+```text
 >>> 2 ** 3
 8
 >>> 3 ** 2
@@ -368,7 +368,7 @@ Addition, subtraction, multiplication, and exponentiation all do what you expect
 
 Example: so let us convert 645 minutes into hours:
 
-```py
+```text
 >>> minutes = 645
 >>> hours = minutes / 60
 >>> hours
@@ -377,7 +377,7 @@ Example: so let us convert 645 minutes into hours:
 
 Oops! In Python 3, the division operator `/` always yields a floating point result. What we might have wanted to know was how many _whole_ hours there are, and how many minutes remain. Python gives us two different flavors of the division operator. The second, called **integer division** uses the token `//`. It always _truncates_ its result down to the next smallest integer \(to the left on the number line\).
 
-```py
+```text
 >>> 7 / 4
 1.75
 >>> 7 // 4
@@ -394,7 +394,7 @@ Take care that you choose the correct division operator. If you’re working wit
 
 The **modulus operator** works on integers \(and integer expressions\) and gives the remainder when the first number is divided by the second. In Python, the modulus operator is a percent sign \(`%`\). The syntax is the same as for other operators:
 
-```py
+```text
 >>> 7 // 3        # integer division operator
 2
 >>> 7 % 3
@@ -409,7 +409,7 @@ Also, you can extract the right-most digit or digits from a number. For example,
 
 It is also extremely useful for doing conversions, say from seconds, to hours, minutes and seconds. So let’s write a program to ask the user to enter some seconds, and we’ll convert them into hours, minutes, and remaining seconds.
 
-```py
+```text
 total_secs = int(input("How many seconds, in total? "))
 hours = total_secs // 3600
 secs_still_remaining = total_secs % 3600
@@ -431,7 +431,7 @@ Note
 
 Due to some historical quirk, an exception to the left-to-right left-associative rule is the exponentiation operator \*\*, so a useful hint is to always use parentheses to force exactly the order you want when exponentiation is involved:
 
-```py
+```text
 >>> 2 ** 3 ** 2     # the right-most ** operator gets done first!
 512
 >>> (2 ** 3) ** 2   # use parentheses to force the order you want!
@@ -444,13 +444,13 @@ The immediate mode command prompt of Python is great for exploring and experimen
 
 In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal \(assuming that `message` has type string\):
 
-```py
+```text
 message - 1   "Hello" / 123   message * "Hello"   "15" + 2
 ```
 
 Interestingly, the `+` operator does work with strings, but for strings, the `+` operator represents **concatenation**, not addition. Concatenation means joining the two operands by linking them end-to-end. For example:
 
-```py
+```text
 fruit = "banana"
 baked_good = " nut bread"
 print(fruit + baked_good)
@@ -468,7 +468,7 @@ Here we’ll look at three more Python functions, `int`, `float` and `str`, whic
 
 The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it _discards_ the fractional portion of the number - a process we call _truncation towards zero_ on the number line. Let us see this in action:
 
-```py
+```text
 >>> int(3.14)
 3
 >>> int(3.9999)        # This doesn't round to the closest int!
@@ -493,7 +493,7 @@ The last case shows that a string has to be a syntactically legal number, otherw
 
 The type converter `float` can turn an integer, a float, or a syntactically legal string into a float.
 
-```py
+```text
 >>> float(17)
 17.0
 >>> float("123.45")
@@ -502,7 +502,7 @@ The type converter `float` can turn an integer, a float, or a syntactically lega
 
 The type converter `str` turns its argument into a string:
 
-```py
+```text
 >>> str(17)
 '17'
 >>> str(123.45)
@@ -513,7 +513,7 @@ The type converter `str` turns its argument into a string:
 
 There is a built-in function in Python for getting input from the user:
 
-```py
+```text
 name = input("Please enter your name: ")
 ```
 
@@ -535,7 +535,7 @@ For example, we know how to get the user to enter some input, we know how to con
 
 Firstly, we’ll do the four steps one at a time:
 
-```py
+```text
 response = input("What is your radius? ")
 r = float(response)
 area = 3.14159 * r ** 2
@@ -544,14 +544,14 @@ print("The area is ", area)
 
 Now let’s compose the first two lines into a single line of code, and compose the second two lines into another line of code.
 
-```py
+```text
 r = float(input("What is your radius? "))
 print("The area is ", 3.14159 * r ** 2)
 ```
 
 If we really wanted to be tricky, we could write it all in one statement:
 
-```py
+```text
 print("The area is ", 3.14159 * float(input("What is your radius? ")) ** 2)
 ```
 
@@ -565,7 +565,7 @@ At the end of the previous chapter, you learned that the print function can take
 
 In the example in the previous section of this chapter, you may have noticed that the arguments don’t have to be strings.
 
-```py
+```text
 >>> print("I am", 12 + 9, "years old.")
 I am 21 years old.
 >>>
@@ -573,7 +573,7 @@ I am 21 years old.
 
 By default, print uses a single space as a seperator and a `\n` as a terminator \(at the end of the string\). Both of these defaults can be overridden.
 
-```py
+```text
 >>> print('a', 'b', 'c', 'd')
 a b c d
 >>> print('a', 'b', 'c', 'd', sep='##', end='!!')
@@ -588,7 +588,7 @@ assignment statement
 
 A statement that assigns a value to a name \(variable\). To the left of the assignment operator, `=`, is a name. To the right of the assignment token is an expression which is evaluated by the Python interpreter and then assigned to the name. The difference between the left and right hand sides of the assignment statement is often confusing to new programmers. In the following assignment:
 
-```py
+```text
 n = n + 1
 ```
 

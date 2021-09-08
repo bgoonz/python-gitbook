@@ -1,22 +1,24 @@
 # Unsorted Examples
 
-### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list.
+### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list. 
 
-### A node in a singly linked list should have two attributes: val
+### A node in a singly linked list should have two attributes: val 
 
-### and
+### and 
 
 ### next. val is the value of the current node
 
 ### next is a pointer/reference to the next node.
 
-### If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list.
+###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. 
 
 ### Assume all nodes in the linked list are 0-indexed.
 
 _Implement these functions in your linked list class:_
 
 {% embed url="https://leetcode.com/problems/design-linked-list" %}
+
+
 
 ```python
 
@@ -120,17 +122,23 @@ class MyLinkedList:
                     counter += 1
 ```
 
+
+
+
+
 ![](../.gitbook/assets/image%20%288%29.png)
 
 ### Define Count Vowels Function
 
-Count the number of vowels in the user input string using for loop and while loop
+
+
+Count the number of vowels in the user input string using for loop and while loop 
 
 Now, let’s define a function named countVowels\(\) which accepts one argument as a string where we need to count Vowels in it.
 
 So, declare a variable count and initialize to 0 which keeps the track of vowel count.
 
-```py
+```text
 count = 0
 ```
 
@@ -138,7 +146,7 @@ Now before counting the vowels, first make sure the string is completely lowerca
 
 So keep it in mind to the first convert string to lowercase and for that, we are going to use **lower\(\)** function of Python.
 
-```py
+```text
 sentence = sentence.lower()
 ```
 
@@ -150,7 +158,7 @@ _**Read =&gt;**_ [_**Check if a number is greater than all those numbers in the 
 
 And at last, after traversing through the string, return the count variable back to the function call.
 
-```py
+```text
 for c in sentence:
     if c in ['a', 'e', 'i', 'o', 'u']:
         count += 1
@@ -163,7 +171,7 @@ Now, we have defined the Count Vowel function above which calculates the count o
 
 So after this, ask the user to enter string which needs to pass to this above function and then print the count for the vowel.
 
-```py
+```text
 if __name__ == '__main__':
     userInput = str(input("Enter the string to check for vowels: "))
     count = countVowels(userInput)
@@ -175,7 +183,7 @@ if __name__ == '__main__':
 ```python
 #Using While Loop
 '''def countVowels(sentence):
-
+    
     count = 0
     sentence = sentence.lower()
     i = 0
@@ -188,7 +196,7 @@ if __name__ == '__main__':
 
 #Using For Loop
 def countVowels(sentence):
-
+    
     count = 0
     sentence = sentence.lower()
     for c in sentence:
@@ -209,6 +217,10 @@ if __name__ == '__main__':
 
 ![](../.gitbook/assets/image%20%2810%29.png)
 
+
+
+
+
 ### Define Binary Number to Decimal Function
 
 Let’s create a new function to Convert Binary to a Decimal Number named binaryToDecimal\(\) which accepts Binary as an argument.
@@ -217,7 +229,7 @@ So let’s store the argument in the separate variables to use that at last whil
 
 Along with this, create two new variables “**decimal**” and “**i**” and initialized both to 0.
 
-```py
+```text
     binary1 = binary
     decimal, i  = 0, 0
 ```
@@ -230,7 +242,7 @@ _**Read =&gt;**_ [_**Python Program to Calculate LCM of Two Numbers**_](https://
 
 And at last, we divide the number by 10 and assign the same number back to binary to reduce it to 0.
 
-```py
+```text
     while(binary != 0):
         dec = binary % 10
         decimal = decimal + dec * pow(2, i)
@@ -240,7 +252,7 @@ And at last, we divide the number by 10 and assign the same number back to binar
 
 Now, simply print the result using the format function in Python.
 
-```py
+```text
     print('Decimal equivalent of {} is {}'.format(binary1, decimal))
 ```
 
@@ -248,7 +260,7 @@ Now, simply print the result using the format function in Python.
 
 Let’s create the main method which is going to ask for user input for the Binary Number and then pass that number to function that we created above.
 
-```py
+```text
 if __name__ == '__main__':
     userInput = int(input('Enter the binary number to check its decimal equivalent: '))
     binaryToDecimal(userInput)
@@ -256,7 +268,7 @@ if __name__ == '__main__':
 
 **Code**
 
-```py
+```text
 
 
 def binaryToDecimal(binary):
@@ -278,17 +290,23 @@ if __name__ == '__main__':
 
 ![Python Program to convert Binary Number to Decimal Number Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Python-Program-to-convert-Binary-Number-to-Decimal-Number.png?resize=665%2C251&ssl=1)
 
+
+
+
+
+
+
 ![](../.gitbook/assets/image%20%2821%29.png)
 
 ### Fibonacci Series With Recursion
 
-Let’s create a new Function named fibonacci_with_recursion\(\) which is going to find the Fibonacci Series till the n-th term by calling it recursively.
+Let’s create a new Function named fibonacci\_with\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by calling it recursively.
 
 So the base condition will be if the number is less than or equal to 1, then simply return the number.
 
 Otherwise, return the callback to Fibonacci function again with decrement value from numbers 1 and 2 and add both function calls.
 
-```py
+```text
 def fibonacci_with_recursion(number):
     if number <= 1:
         return number
@@ -298,19 +316,19 @@ def fibonacci_with_recursion(number):
 
 #### Fibonacci Series Without Recursion
 
-Let’s create a new Function named fibonacci_without_recursion\(\) which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
+Let’s create a new Function named fibonacci\_without\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
 
 _**Read =&gt;**_ [_**Program to check whether the Number is Prime or Not**_](https://codezup.com/program-check-whether-number-prime-not-python/)
 
 So, the base condition for this function is if the number is equal to 0, then we return output as 0 because of how we calculate the Series if the number is 0.
 
-```py
+```text
 if number == 0: return 0
 ```
 
 Now, let’s declare two variables named fibonacci0 for number 0 and initialize it to 0 and fibonacci1 for number 1 and initialize it to 1.
 
-```py
+```text
 fibonacci0, fibonacci1 = 0, 1
 ```
 
@@ -318,7 +336,7 @@ Now create a FOR Loop to calculate till the n-th term, so the logic is simple as
 
 And after calculating n-th term, simply returns the fibonacci1 because which keeps tracks till the n-th term.
 
-```py
+```text
 def fibonacci_without_recursion(number):
     if number == 0: return 0
     fibonacci0, fibonacci1 = 0, 1
@@ -335,7 +353,7 @@ Now let’s create a main method where we need to call these both methods that w
 
 First, ask for the user input to enter any number. If the number is less than 0, then simply returns an error message printing that the “**Number must be Positive Number**“.
 
-```py
+```text
 if __name__ == '__main__':
     userInput = int(input('Enter the number upto which calculate fibonnaci series: '))
     if(userInput<0):
@@ -351,7 +369,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```py
+```text
 
 def fibonacci_with_recursion(number):
     if number <= 1:
@@ -385,23 +403,51 @@ if __name__ == '__main__':
 
 ![Calculate and display n-th term Fibonacci Series in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Calculate-and-display-n-th-term-Fibonacci-Series-in-Python-Output.png?resize=665%2C302&ssl=1)
 
+
+
 ![](../.gitbook/assets/image%20%2816%29.png)
+
+
+
+
 
 ![](../.gitbook/assets/image%20%2814%29.png)
 
+
+
 ![](../.gitbook/assets/image%20%283%29.png)
+
+
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
+
+
 ![](../.gitbook/assets/image%20%2817%29.png)
+
+
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
+
+
 ![](../.gitbook/assets/image%20%2815%29.png)
+
+
+
+
 
 ![](../.gitbook/assets/image%20%2811%29.png)
 
+
+
 ![](../.gitbook/assets/image%20%289%29.png)
+
+
+
+
+
+
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
@@ -411,6 +457,9 @@ if __name__ == '__main__':
 
 ![](../.gitbook/assets/image%20%2819%29.png)
 
+
+
 ![](../.gitbook/assets/image%20%281%29.png)
 
 ![](../.gitbook/assets/image%20%286%29.png)
+

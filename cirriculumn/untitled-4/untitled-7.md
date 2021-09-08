@@ -1,5 +1,7 @@
 # D2- Module 02 - Queues and Stacks
 
+
+
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a queue
 
 ### Overview <a id="overview"></a>
@@ -45,9 +47,13 @@ Queues are useful data structures in any situation where you want to make sure t
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.geeksforgeeks.org/queue-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/queue-data-structure/)
+* [https://www.geeksforgeeks.org/queue-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/queue-data-structure/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
 
 ## Objective 02 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a stack
 
@@ -96,9 +102,11 @@ Additionally, function calls and execution contexts are managed on a call stack.
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.geeksforgeeks.org/stack-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/stack-data-structure/)
+* [https://www.geeksforgeeks.org/stack-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/stack-data-structure/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 ## Objective 03 - Implement a queue using a linked list
 
@@ -186,7 +194,13 @@ Now we have a `Queue` class that uses a singly-linked list as the underlying dat
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-3-queue-with-linked-list-3" %}
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 ## Objective 04 - Implement a stack using a dynamic array
 
@@ -235,7 +249,11 @@ class Stack:
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-3-stack-implementation-array-2" %}
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 ## Objective 05 - Implement a stack using a linked list
 
@@ -314,6 +332,15 @@ class Stack:
 
 ### Challenge <a id="challenge"></a>
 
+
+
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-3-stack-implementation-linked-li-2" %}
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
+

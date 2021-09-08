@@ -10,6 +10,8 @@ description: Searching & Recursion
 
 {% embed url="https://gist.github.com/bgoonz/f1aa6200c2acad7abb38261c76ef7efa" %}
 
+
+
 ## Objective 01 - Understand logarithms and recall the common cases where they come up in technical interviews
 
 ### Overview <a id="overview"></a>
@@ -22,7 +24,7 @@ Logarithms are a way of looking differently at exponentials. I know that this is
 
 What does the mathematical expression above _mean_? It's an abbreviation for the following expression:
 
-![2 * 2 * 2 * 2 * 2](https://i.upmath.me/svg/2%20*%202%20*%202%20*%202%20*%202)
+![2 \* 2 \* 2 \* 2 \* 2](https://i.upmath.me/svg/2%20*%202%20*%202%20*%202%20*%202)
 
 What we are looking at above is two different ways to express an object that doubles in size with each iteration.
 
@@ -38,11 +40,11 @@ Let's look at a few more expressions:
 
 Now, to begin looking at logarithms, let's rewrite the exponential expressions above in logarithmic form.
 
-![log_2 32 = 5](https://i.upmath.me/svg/log_2%2032%20%3D%205)
+![log\_2 32 = 5](https://i.upmath.me/svg/log_2%2032%20%3D%205)
 
-![log_2 1 = 0](https://i.upmath.me/svg/log_2%201%20%3D%200)
+![log\_2 1 = 0](https://i.upmath.me/svg/log_2%201%20%3D%200)
 
-![log_2 \frac{1}{2} = 1](https://i.upmath.me/svg/log_2%20%5Cfrac%7B1%7D%7B2%7D%20%3D%201)
+![log\_2 \frac{1}{2} = 1](https://i.upmath.me/svg/log_2%20%5Cfrac%7B1%7D%7B2%7D%20%3D%201)
 
 Notice how we have essentially just moved around different pieces of the expression.
 
@@ -52,7 +54,7 @@ For our first expression,
 
 `2` was the "growth rate", `5` was the "time" spent growing, and `32` was where we ended up. When we rewrite this logarithmically, we have
 
-![log_2 32 = 5](https://i.upmath.me/svg/log_2%2032%20%3D%205)
+![log\_2 32 = 5](https://i.upmath.me/svg/log_2%2032%20%3D%205)
 
 In this case, `2` still represents the "growth rate" and `32` still represents where we end up. The `5` also still represents the "time" spent growing.
 
@@ -78,16 +80,16 @@ You will see this come up when analyzing the time complexity of specific algorit
 
 2. Write an exponential expression that is identical to this logarithmic expression:
 
-   ![log_2 128 = n](https://i.upmath.me/svg/log_2%20128%20%3D%20n)
+   ![log\_2 128 = n](https://i.upmath.me/svg/log_2%20128%20%3D%20n)
 
 3. What keywords should you look out for that might alert you that logarithms are involved?
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.mathsisfun.com/algebra/logarithms.html \(Links to an external site.\)](https://www.mathsisfun.com/algebra/logarithms.html)
-- [https://www.interviewcake.com/article/python3/logarithms](https://www.interviewcake.com/article/java/logarithms)
+* [https://www.mathsisfun.com/algebra/logarithms.html \(Links to an external site.\)](https://www.mathsisfun.com/algebra/logarithms.html)
+* [https://www.interviewcake.com/article/python3/logarithms](https://www.interviewcake.com/article/java/logarithms)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
 
 ## Objective 02 - Write a linear search algorithm
 
@@ -117,15 +119,19 @@ def linear_search(arr, target):
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-4-linear-search-2" %}
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
 
 ### What Is Recursion?
 
 The word **recursion** comes from the Latin word _recurrere_, meaning to run or hasten back, return, revert, or recur. Here are some online definitions of recursion:
 
-- [**Dictionary.com**:](https://www.dictionary.com/browse/recursion) The act or process of returning or running back
-- [**Wiktionary**:](https://en.wiktionary.org/wiki/recursion) The act of defining an object \(usually a function\) in terms of that object itself
-- [**The Free Dictionary**:](https://www.thefreedictionary.com/recursion) A method of defining a sequence of objects, such as an expression, function, or set, where some number of initial objects are given and each successive object is defined in terms of the preceding objects
+* [**Dictionary.com**:](https://www.dictionary.com/browse/recursion) The act or process of returning or running back
+* [**Wiktionary**:](https://en.wiktionary.org/wiki/recursion) The act of defining an object \(usually a function\) in terms of that object itself
+* [**The Free Dictionary**:](https://www.thefreedictionary.com/recursion) A method of defining a sequence of objects, such as an expression, function, or set, where some number of initial objects are given and each successive object is defined in terms of the preceding objects
 
 A **recursive** definition is one in which the defined term appears in the definition itself. Self-referential situations often crop up in real life, even if they aren’t immediately recognizable as such. For example, suppose you wanted to describe the set of people that make up your ancestors. You could describe them this way:[![Recursive definition of ancestors](https://files.realpython.com/media/jsturtz-ancestors.9f0adeb014ef.png)](https://files.realpython.com/media/jsturtz-ancestors.9f0adeb014ef.png)
 
@@ -143,9 +149,9 @@ Traversal of [tree-like data structures](https://en.wikipedia.org/wiki/Tree_%28d
 
 On the other hand, recursion isn’t for every situation. Here are some other factors to consider:
 
-- For some problems, a recursive solution, though possible, will be awkward rather than elegant.
-- Recursive implementations often consume more memory than non-recursive ones.
-- In some cases, using recursion may result in slower execution time.
+* For some problems, a recursive solution, though possible, will be awkward rather than elegant.
+* Recursive implementations often consume more memory than non-recursive ones.
+* In some cases, using recursion may result in slower execution time.
 
 Typically, the readability of the code will be the biggest determining factor. But it depends on the circumstances. The examples presented below should help you get a feel for when you should choose recursion.
 
@@ -182,7 +188,7 @@ Python doesn’t allow that to happen. The interpreter limits the maximum number
 
 **Technical note:** You can find out what Python’s recursion limit is with a function from the `sys` module called `getrecursionlimit()`:&gt;&gt;&gt;
 
-```py
+```text
 >>> from sys import getrecursionlimit
 >>> getrecursionlimit()
 1000
@@ -190,7 +196,7 @@ Python doesn’t allow that to happen. The interpreter limits the maximum number
 
 You can change it, too, with `setrecursionlimit()`:&gt;&gt;&gt;
 
-```py
+```text
 >>> from sys import setrecursionlimit
 >>> setrecursionlimit(2000)
 >>> getrecursionlimit()
@@ -205,8 +211,8 @@ This logical flaw has evidently occurred to some shampoo manufacturers, because 
 
 Similarly, a function that calls itself recursively must have a plan to eventually stop. Recursive functions typically follow this pattern:
 
-- There are one or more base cases that are directly solvable without the need for further recursion.
-- Each recursive call moves the solution progressively closer to a base case.
+* There are one or more base cases that are directly solvable without the need for further recursion.
+* Each recursive call moves the solution progressively closer to a base case.
 
 You’re now ready to see how this works with some examples.
 
@@ -234,8 +240,8 @@ The first example is a function called `countdown()`, which takes a positive num
 
 Notice how `countdown()` fits the paradigm for a recursive algorithm described above:
 
-- The base case occurs when `n` is zero, at which point recursion stops.
-- In the recursive call, the argument is one less than the current value of `n`, so each recursion moves closer to the base case.
+* The base case occurs when `n` is zero, at which point recursion stops.
+* In the recursive call, the argument is one less than the current value of `n`, so each recursion moves closer to the base case.
 
 **Note:** For simplicity, `countdown()` doesn’t check its argument for validity. If `n` is either a non-integer or negative, you’ll get a `RecursionError` exception because the base case is never reached.
 
@@ -278,8 +284,8 @@ Factorial so lends itself to recursive definition that programming texts nearly 
 
 As with the example shown above, there are base cases that are solvable without recursion. The more complicated cases are **reductive**, meaning that they reduce to one of the base cases:
 
-- The base cases \(_n_ = 0 or _n_ = 1\) are solvable without recursion.
-- For values of _n_ greater than 1, _n_! is defined in terms of \(_n_ - 1\)!, so the recursive solution progressively approaches the base case.
+* The base cases \(_n_ = 0 or _n_ = 1\) are solvable without recursion.
+* For values of _n_ greater than 1, _n_! is defined in terms of \(_n_ - 1\)!, so the recursive solution progressively approaches the base case.
 
 For example, recursive computation of 4! looks like this:[![Factorial illustration](https://files.realpython.com/media/jsturtz-factorial-example.496c01139673.png)](https://files.realpython.com/media/jsturtz-factorial-example.496c01139673.png)Recursive Calculation of 4!
 
@@ -356,7 +362,7 @@ Another factor to take into consideration is execution speed. There can be signi
 
 To evaluate execution time, you can use a function called [`timeit()`](https://docs.python.org/3/library/timeit.html#timeit.timeit) from a module that is also called `timeit`. This function supports a number of different formats, but you’ll use the following format in this tutorial:
 
-```py
+```text
 timeit(<command>, setup=<setup_string>, number=<iterations>)
 ```
 
@@ -459,11 +465,11 @@ Wow! `math.factorial()` performs better than the best of the other three impleme
 
 **Technical note:** The fact that `math.factorial()` is so much speedier probably has nothing to do with whether it’s implemented recursively. More likely it’s because the function is implemented in [C](https://en.wikipedia.org/wiki/C_%28programming_language%29) rather than Python. For more reading on Python and C, see these resources:
 
-- [Python Bindings: Calling C or C++ From Python](https://realpython.com/python-bindings-overview/)
-- [Building a Python C Extension Module](https://realpython.com/build-python-c-extension-module/)
-- [C for Python Programmers](https://realpython.com/c-for-python-programmers/)
-- [Your Guide to the CPython Source Code](https://realpython.com/cpython-source-code-guide/)
-- [_CPython Internals_ book](https://realpython.com/products/cpython-internals-book/)
+* [Python Bindings: Calling C or C++ From Python](https://realpython.com/python-bindings-overview/)
+* [Building a Python C Extension Module](https://realpython.com/build-python-c-extension-module/)
+* [C for Python Programmers](https://realpython.com/c-for-python-programmers/)
+* [Your Guide to the CPython Source Code](https://realpython.com/cpython-source-code-guide/)
+* [_CPython Internals_ book](https://realpython.com/products/cpython-internals-book/)
 
 A function implemented in C will virtually always be faster than a corresponding function implemented in pure Python.
 
@@ -498,14 +504,14 @@ Suppose you wanted to count the number of **leaf elements** in this list—the l
 
 Just calling `len()` on the list doesn’t give the correct answer:&gt;&gt;&gt;
 
-```py
+```text
 >>> len(names)
 5
 ```
 
 `len()` counts the objects at the top level of `names`, which are the three leaf elements `"Adam"`, `"Alex"`, and `"Ann"` and two sublists `["Bob", ["Chet", "Cat"], "Barb", "Bert"]` and `["Bea", "Bill"]`:&gt;&gt;&gt;
 
-```py
+```text
 >>> for index, item in enumerate(names):
 ...     print(index, item)
 ...
@@ -521,8 +527,8 @@ What you need here is a function that traverses the entire list structure, subli
 1. Walk through the list, examining each item in turn.
 2. If you find a leaf element, then add it to the accumulated count.
 3. If you encounter a sublist, then do the following:
-   - Drop down into that sublist and similarly walk through it.
-   - Once you’ve exhausted the sublist, go back up, add the elements from the sublist to the accumulated count, and resume the walk through the parent list where you left off.
+   * Drop down into that sublist and similarly walk through it.
+   * Once you’ve exhausted the sublist, go back up, add the elements from the sublist to the accumulated count, and resume the walk through the parent list where you left off.
 
 Note the self-referential nature of this description: _Walk through the list_. If you encounter a sublist, then similarly _walk through that list_. This situation begs for recursion!
 
@@ -532,7 +538,7 @@ Recursion fits this problem very nicely. To solve it, you need to be able to det
 
 In the case of the `names` list, if an item is an instance of type `list`, then it’s a sublist. Otherwise, it’s a leaf item:&gt;&gt;&gt;
 
-```py
+```text
 >>> names
 ['Adam', ['Bob', ['Chet', 'Cat'], 'Barb', 'Bert'], 'Alex', ['Bea', 'Bill'], 'Ann']
 
@@ -559,7 +565,7 @@ False
 
 Now you have the tools in place to implement a function that counts leaf elements in a list, accounting for sublists recursively:
 
-```py
+```text
 def count_leaf_items(item_list):
     """Recursively counts and returns the
        number of leaf items in a (potentially
@@ -577,7 +583,7 @@ def count_leaf_items(item_list):
 
 If you run `count_leaf_items()` on several lists, including the `names` list defined above, you get this:&gt;&gt;&gt;
 
-```py
+```text
 >>> count_leaf_items([1, 2, 3, 4])
 4
 >>> count_leaf_items([1, [2.1, 2.2], 3])
@@ -612,8 +618,29 @@ As with the factorial example, adding some [`print()`](https://realpython.com/py
 17    return count
 ```
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+
+
+
+
+
