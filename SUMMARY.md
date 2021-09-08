@@ -105,6 +105,7 @@
 ## Python-Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
+* [Values Expressions & Statments](stdlib/values-expressions-and-statments.md)
 * [Python Standard Library  \(STDLIB\)](stdlib/python-standard-library-stdlib.md)
 * [Docs](stdlib/untitled/README.md)
   * [String-Methods](stdlib/untitled/string-methods.md)
