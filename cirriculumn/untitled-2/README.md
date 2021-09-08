@@ -6,7 +6,7 @@
 
 {% page-ref page="untitled-3.md" %}
 
-{% page-ref page="untitled-2.md" %}
+{% page-ref page="untitled-2/" %}
 
 {% page-ref page="untitled-1.md" %}
 

@@ -4,15 +4,15 @@
 
 
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](../../../.gitbook/assets/image%20%2834%29.png)
 
 
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2823%29.png)
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+![](../../../.gitbook/assets/image%20%2825%29.png)
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../../.gitbook/assets/image%20%2830%29.png)
 
 ## 
 
@@ -44,9 +44,9 @@ The space complexity of a hash table is linear \(`O(n)`\). Each key-value pair i
 
 
 
-![continued....](../../.gitbook/assets/image%20%2829%29.png)
+![continued....](../../../.gitbook/assets/image%20%2829%29.png)
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../../.gitbook/assets/image%20%2833%29.png)
 
 
 
@@ -71,6 +71,14 @@ The above is just one of the ways to deal with hash collisions. Hopefully, you c
 ### **Challenge**
 
 1. In your own words, explain how and why the time complexity of hash table operations degrades to `O(n)` in the worst case.
+
+{% embed url="https://gist.github.com/bgoonz/107f827a22d09c9a08b3fd99589325ae\#file-hash-tables-ii-cs47-ipynb" %}
+
+
+
+
+
+
 
 ### **Additional Resources**
 

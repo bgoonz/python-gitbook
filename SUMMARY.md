@@ -19,7 +19,8 @@
 * [wk18](cirriculumn/untitled-2/README.md)
   * [Outline-W-18](cirriculumn/untitled-2/untitled-4.md)
   * [D1- Module 01 - Number Bases and Character Encoding](cirriculumn/untitled-2/untitled-3.md)
-  * [D2- Module 02 - Hash Tables I](cirriculumn/untitled-2/untitled-2.md)
+  * [D2- Module 02 - Hash Tables I](cirriculumn/untitled-2/untitled-2/README.md)
+    * [Hash Table Use Cases](cirriculumn/untitled-2/untitled-2/hash-table-use-cases.md)
   * [D3-Module 03 - Hash Tables II](cirriculumn/untitled-2/untitled-1.md)
   * [D4- Module 04 - Searching and Recursion](cirriculumn/untitled-2/untitled.md)
 * [wk19](cirriculumn/untitled-4/README.md)
@@ -99,6 +100,7 @@
 ## quick-reference
 
 * [Python Snippets](quick-reference/python-snippets.md)
+* [Python3 Regex](quick-reference/python3-regex.md)
 * [Python Module Index:](quick-reference/python-module-index.md)
 * [Creating Python Modules](quick-reference/creating-python-modules.md)
 * [Useful Info](quick-reference/untitled.md)
