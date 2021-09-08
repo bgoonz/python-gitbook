@@ -1,6 +1,31 @@
 # Sorting
 
+{% tabs %}
+{% tab title="First Tab" %}
+```python
 
+This implementation is different than the ones in the referenced books, which are different from each other.
+It uses methods and functions that do iteration versus for-loops. Just remember it's still O(n^2).
+"""
+from collections.abc import MutableSequence
+
+from src.typehints import T
+
+
+def selection_sort_iter(seq: MutableSequence[T]) -> None:
+    """Use selection sort iteratively on a list in-place."""
+    for i, val in enumerate(seq):
+        min_val = min(seq[i:])
+        min_val_i = seq.index(min_val, i)  # First index of min_val at or after i
+        seq[i] = min_val
+        seq[min_val_i] = val
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 
 
