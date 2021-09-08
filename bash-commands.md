@@ -136,5 +136,19 @@ This cheat sheet is the most concise Python cheat sheet in the world. It contain
 
 _If you love cheat sheets, here are some interesting references for you \(lots of more PDF downloads\):_
 
-### 
+
+
+
+
+
+
+{% embed url="https://gist.github.com/bgoonz/265c5ba5114067d9c1cb0f907e02c4f9" %}
+
+
+
+{% embed url="https://gist.github.com/bgoonz/e4b30e43d5f1b8c79e9c6529d1cd0322" %}
+
+
+
+
 
