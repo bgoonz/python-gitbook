@@ -1,6 +1,6 @@
 # D3- Module 03 - Binary Search Trees
 
-
+![](../../.gitbook/assets/image%20%281%29.png)
 
 ## Objective 01 - Describe the properties of a binary tree and the properties of a "perfect" tree
 
