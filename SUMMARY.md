@@ -112,6 +112,7 @@
 
 * [Outline](misc/outline.md)
 * [About Python](misc/untitled/README.md)
+  * [Python VS JavaScript](misc/untitled/python-vs-javascript.md)
   * [Python Modules & Python Packages](misc/untitled/untitled-1.md)
   * [Misc](misc/untitled/misc.md)
   * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
