@@ -7,7 +7,7 @@
 
 * [Outline](cirriculumn/untitled.md)
 * [wk17](cirriculumn/untitled-3/README.md)
-  * [Outline](cirriculumn/untitled-3/outline.md)
+  * [Outline-w17](cirriculumn/untitled-3/outline.md)
   * [homework](cirriculumn/untitled-3/week-overview.md)
   * [D1-Module 01 - Python I](cirriculumn/untitled-3/untitled-2/README.md)
     * [Install Python](cirriculumn/untitled-3/untitled-2/install-python.md)
@@ -15,7 +15,7 @@
   * [D3- Module 03 - Python III](cirriculumn/untitled-3/untitled-1.md)
   * [D4-Module 04 - Python IV](cirriculumn/untitled-3/untitled.md)
 * [wk18](cirriculumn/untitled-2/README.md)
-  * [Overview](cirriculumn/untitled-2/untitled-4.md)
+  * [Outline-W-18](cirriculumn/untitled-2/untitled-4.md)
   * [D1- Module 01 - Number Bases and Character Encoding](cirriculumn/untitled-2/untitled-3/README.md)
     * [Arithmetic Overflow and Underflow](cirriculumn/untitled-2/untitled-3/arithmetic-overflow-and-underflow.md)
   * [D2- Module 02 - Hash Tables I](cirriculumn/untitled-2/untitled-2.md)
