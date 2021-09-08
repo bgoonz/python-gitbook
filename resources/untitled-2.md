@@ -20,7 +20,7 @@ If we want to define a new object to represent a playing card, it is obvious wha
 
 An alternative is to use integers to **encode** the ranks and suits. By encode, we do not mean what some people think, which is to encrypt or translate into a secret code. What a computer scientist means by encode is to define a mapping between a sequence of numbers and the items I want to represent. For example:
 
-```text
+```python
 Spades   -->  3
 Hearts   -->  2
 Diamonds -->  1
@@ -29,7 +29,7 @@ Clubs    -->  0
 
 An obvious feature of this mapping is that the suits map to integers in order, so we can compare suits by comparing integers. The mapping for ranks is fairly obvious; each of the numerical ranks maps to the corresponding integer, and for face cards:
 
-```text
+```python
 Jack   -->  11
 Queen  -->  12
 King   -->  13
@@ -37,7 +37,7 @@ King   -->  13
 
 The reason we are using mathematical notation for these mappings is that they are not part of the Python program. They are part of the program design, but they never appear explicitly in the code. The class definition for the `Card` type looks like this:
 
-```text
+```python
 class Card:
     def __init__(self, suit=0, rank=0):
         self.suit = suit
@@ -102,7 +102,7 @@ In order to make cards comparable, you have to decide which is more important, r
 
 With that decided, we can write `__cmp__`:
 
-```text
+```python
 def __cmp__(self, other):
     # check the suits
     if self.suit > other.suit: return 1
@@ -122,7 +122,7 @@ Now that we have objects to represent `Card`s, the next logical step is to defin
 
 The following is a class definition for the `Deck` class. The initialization method creates the attribute `cards` and generates the standard set of fifty-two cards:
 
-```text
+```python
 class Deck:
     def __init__(self):
         self.cards = []
@@ -139,7 +139,7 @@ The `append` method works on lists but not, of course, tuples.
 
 As usual, when we define a new type of object we want a method that prints the contents of an object. To print a `Deck`, we traverse the list and print each `Card`:
 
-```text
+```python
 class Deck:
     ...
     def print_deck(self):
@@ -153,7 +153,7 @@ As an alternative to `print_deck`, we could write a `__str__` method for the `De
 
 Here is a version of `__str__` that returns a string representation of a `Deck`. To add a bit of pizzazz, it arranges the cards in a cascade where each card is indented one space more than the previous card:
 
-```text
+```python
 class Deck:
     ...
     def __str__(self):
@@ -171,7 +171,7 @@ Third, instead of using the `print` function to print the cards, we use the `str
 
 Finally, we are using the variable `s` as an **accumulator**. Initially, `s` is the empty string. Each time through the loop, a new string is generated and concatenated with the old value of `s` to get the new value. When the loop ends, `s` contains the complete string representation of the `Deck`, which looks like this:
 
-```text
+```python
 >>> deck = Deck()
 >>> print(deck)
 Ace of Clubs
@@ -204,7 +204,7 @@ random.randrange(0, len(self.cards))
 
 An easy way to shuffle the deck is by traversing the cards and swapping each card with a randomly chosen one. It is possible that the card will be swapped with itself, but that is fine. In fact, if we precluded that possibility, the order of the cards would be less than entirely random:
 
-```text
+```python
 class Deck:
     ...
     def shuffle(self):
@@ -219,7 +219,7 @@ Rather than assume that there are fifty-two cards in the deck, we get the actual
 
 For each card in the deck, we choose a random card from among the cards that haven’t been shuffled yet. Then we swap the current card \( `i`\) with the selected card \( `j`\). To swap the cards we use a tuple assignment:
 
-```text
+```python
 self.cards[i], self.cards[j] = self.cards[j], self.cards[i]
 ```
 
@@ -227,7 +227,7 @@ self.cards[i], self.cards[j] = self.cards[j], self.cards[i]
 
 Another method that would be useful for the `Deck` class is `remove`, which takes a card as a parameter, removes it, and returns `True` if the card was in the deck and `False` otherwise:
 
-```text
+```python
 class Deck:
     ...
     def remove(self, card):
@@ -242,7 +242,7 @@ The `in` operator returns `True` if the first operand is in the second, which mu
 
 To deal cards, we want to remove and return the top card. The list method `pop` provides a convenient way to do that:
 
-```text
+```python
 class Deck:
     ...
     def pop(self):
@@ -253,7 +253,7 @@ Actually, `pop` removes the _last_ card in the list, so we are in effect dealing
 
 One more operation that we are likely to want is the boolean function `is_empty`, which returns true if the deck contains no cards:
 
-```text
+```python
 class Deck:
     ...
     def is_empty(self):
@@ -291,7 +291,7 @@ This statement indicates that the new `Hand` class inherits from the existing `D
 
 The `Hand` constructor initializes the attributes for the hand, which are `name` and `cards`. The string `name` identifies this hand, probably by the name of the player that holds it. The name is an optional parameter with the empty string as a default value. `cards` is the list of cards in the hand, initialized to the empty list:
 
-```text
+```python
 class Hand(Deck):
     def __init__(self, name=""):
        self.cards = []
@@ -300,7 +300,7 @@ class Hand(Deck):
 
 For just about any card game, it is necessary to add and remove cards from the deck. Removing cards is already taken care of, since `Hand` inherits `remove` from `Deck`. But we have to write `add`:
 
-```text
+```python
 class Hand(Deck):
     ...
     def add(self,card):
@@ -317,7 +317,7 @@ Now that we have a `Hand` class, we want to deal cards from the `Deck` into hand
 
 `deal` takes two parameters, a list \(or tuple\) of hands and the total number of cards to deal. If there are not enough cards in the deck, the method deals out all of the cards and stops:
 
-```text
+```python
 class Deck :
     ...
     def deal(self, hands, num_cards=999):
@@ -339,7 +339,7 @@ The modulus operator \( `%`\) allows us to deal cards in a round robin \(one car
 
 To print the contents of a hand, we can take advantage of the `printDeck` and `__str__` methods inherited from `Deck`. For example:
 
-```text
+```python
 >>> deck = Deck()
 >>> deck.shuffle()
 >>> hand = Hand("frank")
@@ -357,7 +357,7 @@ It’s not a great hand, but it has the makings of a straight flush.
 
 Although it is convenient to inherit the existing methods, there is additional information in a `Hand` object we might want to include when we print one. To do that, we can provide a `__str__` method in the `Hand` class that overrides the one in the `Deck` class:
 
-```text
+```python
 class Hand(Deck)
     ...
     def __str__(self):
@@ -381,7 +381,7 @@ In general, it is always legal to use an instance of a subclass in place of an i
 
 The `CardGame` class takes care of some basic chores common to all games, such as creating the deck and shuffling it:
 
-```text
+```python
 class CardGame:
     def __init__(self):
         self.deck = Deck()
