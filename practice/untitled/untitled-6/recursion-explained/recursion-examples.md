@@ -1,7 +1,7 @@
 # Recursion Examples
 
 {% tabs %}
-{% tab title="" %}
+{% tab title="explained" %}
 ```python
 from typing import List, Optional, Sequence
 
@@ -243,7 +243,7 @@ def deep_recursion():
 ```
 {% endtab %}
 
-{% tab title="2" %}
+{% tab title="factorial" %}
 ```python
 #recursions example-2
 def factorial(n):
@@ -265,6 +265,50 @@ factorial(4)
 #Returning 2 for factorial of 2
 #Returning 6 for factorial of 3
 #Returning 24 for factorial of 4
+```
+{% endtab %}
+
+{% tab title="3" %}
+```python
+from collections.abc import MutableSequence
+
+from src.typehints import T
+
+
+def selection_sort_recur(seq: MutableSequence[T], i=0) -> None:
+    """Use selection sort recursively on a list in-place."""
+    if i >= len(seq) - 1:
+        return
+    min_val = min(seq[i:])
+    min_val_i = seq.index(min_val, i)
+    seq[min_val_i] = seq[i]
+    seq[i] = min_val
+    selection_sort_recur(seq, i + 1)
+
+```
+{% endtab %}
+
+{% tab title="4" %}
+```
+
+```
+{% endtab %}
+
+{% tab title="5" %}
+```
+
+```
+{% endtab %}
+
+{% tab title="6" %}
+```
+
+```
+{% endtab %}
+
+{% tab title="7" %}
+```
+
 ```
 {% endtab %}
 {% endtabs %}
