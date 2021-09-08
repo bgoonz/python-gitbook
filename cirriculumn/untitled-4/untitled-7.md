@@ -120,7 +120,7 @@ Additionally, we need to have two methods available: `enqueue()` and `dequeue()`
 
 We will use a `LinkedListNode` class for each of the items in the queue.
 
-```pythonthon
+```python
 class LinkedListNode:
     def __init__(self, data):
         self.data = data
@@ -129,7 +129,7 @@ class LinkedListNode:
 
 For our `Queue` class, we first need to define an `__init__` method. This method should initialize our instance variables `front` and `rear`.
 
-```pythonthon
+```python
 class Queue:
     def __init__(self):
         self.front = None
@@ -138,7 +138,7 @@ class Queue:
 
 Next, we need to define our `enqueue` method:
 
-```pythonthon
+```python
 class Queue:
     def __init__(self):
         self.front = None
@@ -158,7 +158,7 @@ class Queue:
 
 Now, we need to define our `dequeue` method:
 
-```pythonthon
+```python
 class Queue:
     def __init__(self):
         self.front = None
