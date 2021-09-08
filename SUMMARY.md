@@ -108,6 +108,7 @@
 
 * [Basic Syntax](stdlib/basic-syntax.md)
 * [Conditionals and loops](stdlib/conditionals-and-loops.md)
+* [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules.md)
 * [Functions](stdlib/untitled-1.md)
 * [Values Expressions & Statments](stdlib/values-expressions-and-statments.md)
 * [Python Standard Library  \(STDLIB\)](stdlib/python-standard-library-stdlib.md)
