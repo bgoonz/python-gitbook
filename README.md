@@ -4,9 +4,7 @@ description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
 
 # Home
 
-## self link:
-
-### [https://bgoonz42.gitbook.io/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
+#### self link: [https://bgoonz42.gitbook.io/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
 
 ### This Space As A PDF:
 
@@ -36,7 +34,9 @@ description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
 
 
 
+## Zen Of Python Cheat Sheet Download:
 
+{% file src=".gitbook/assets/zen-of-python.pdf" caption="ZenOfPython.pdf" %}
 
 ## Notion:
 
