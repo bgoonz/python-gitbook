@@ -1,5 +1,9 @@
 # Hash Table
 
+{% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
+
+
+
 ```python
 """Write a HashTable class that stores strings
 in a hash table, where keys are calculated
