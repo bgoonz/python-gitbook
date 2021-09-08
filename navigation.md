@@ -4,9 +4,11 @@
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/" %}
 
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled" %}
+
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" %}
 
 
-      
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" %}
 
