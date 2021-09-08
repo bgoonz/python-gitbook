@@ -1,11 +1,5 @@
 # Sorting
 
-
-
-
-
-
-
 ```python
 def partition(A, lo, hi):
     pivot = A[lo + (hi - lo) // 2]
@@ -58,13 +52,13 @@ To get a understanding about Bubble sort.
 
 ### Short description of package/script
 
-* It is a python program of Bubble sort Algorithm.
-* It is written in a way that it takes user input.
+- It is a python program of Bubble sort Algorithm.
+- It is written in a way that it takes user input.
 
 ### Workflow of the Project
 
-* First a function is written to perform Bubble sort.
-* Then outside the function user input is taken.
+- First a function is written to perform Bubble sort.
+- Then outside the function user input is taken.
 
 ### Detailed explanation of script, if needed
 
@@ -114,25 +108,23 @@ Just clone the repository .
 
 ### Output
 
-
-
 ```python
-#Link to problem:- 
+#Link to problem:-
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-def bubbleSort(a): 
-    n = len(a) 
-    # Traverse through all array elements 
+def bubbleSort(a):
+    n = len(a)
+    # Traverse through all array elements
 
-    for i in range(n-1): 
-        # Last i elements are already in place 
-        for j in range(0, n-i-1): 
+    for i in range(n-1):
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
 
-            # traverse the array from 0 to n-i-1 
-            # Swap if the element found is greater 
-            # than the next element 
-            if arr[j] > arr[j + 1] : 
-                arr[j], arr[j + 1] = arr[j + 1], arr[j] 
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 arr = []
 n=int(input("Enter size of array: "))
@@ -143,20 +135,10 @@ bubbleSort(arr)
 print ("Sorted array is:")
 for i in range(len(arr)):
      print(arr[i])
-     
+
 #Time complexity - O(n^2)
 #Space complexity - O(1)
 ```
-
-
-
-
-
-
-
-
-
-
 
 Insertion Sort
 
@@ -240,4 +222,3 @@ Sorted Array is:<br>
 
 
 ```
-
