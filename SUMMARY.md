@@ -88,11 +88,13 @@
 * [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
+  * [My-Links](resources/untitled/my-links.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## quick-reference
 
 * [Useful Info](quick-reference/untitled.md)
+* [Python Glossary](quick-reference/python-glossary.md)
 * [Untitled](quick-reference/untitled-1.md)
 
 ## Python-Docs <a id="stdlib"></a>
@@ -101,7 +103,8 @@
 * [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
-* [Classes](stdlib/classes.md)
+* [Classes](stdlib/classes/README.md)
+  * [index](stdlib/classes/untitled.md)
 * [Queue & Stacks](stdlib/queue-and-stacks.md)
 
 ## MISC
@@ -117,6 +120,7 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
+  * [Unsorted Examples](interview-prep/interview-resources/unsorted-examples.md)
   * [How to Write an Effective Resume of Python Developer](interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
