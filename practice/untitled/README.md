@@ -14,7 +14,7 @@
 
 {% page-ref page="untitled-6/" %}
 
-{% page-ref page="untitled-5.md" %}
+{% page-ref page="untitled-5/" %}
 
 {% page-ref page="untitled-2.md" %}
 
@@ -22,7 +22,7 @@
 
 {% page-ref page="queue-sandbox.md" %}
 
-{% page-ref page="untitled-5.md" %}
+{% page-ref page="untitled-5/" %}
 
 {% page-ref page="untitled-4/double-linked-list.md" %}
 
