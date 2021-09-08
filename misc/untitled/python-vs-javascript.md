@@ -37,7 +37,7 @@ Python 3.x is the current version, but there are a number of packages and sites 
 
 On some systems, you might have to be explicit when you invoke Python about which version you want by running `python2` or `python3`. The `--version` command line switch will tell you which version is running. Example:
 
-```python
+```text
 $ python --version
 Python 2.7.10
 $ python2 --version
@@ -64,7 +64,7 @@ For managing project packages and Python versions, the classic tool is `virtuale
 
 Running from the command line with NodeJS:
 
-```python
+```text
 node program.js arg1 arg2 etc
 ```
 
@@ -78,7 +78,7 @@ In a web page, a script is referenced with a `<script>` HTML tag:
 
 Running from the command line:
 
-```python
+```text
 python program.py arg1 arg2 etc
 ```
 
@@ -302,7 +302,7 @@ x = 10
 let a = 12;        // number
 let b = 1.2;       // number
 let c = 'hello';   // string
-let d = "world";   // string
+let d = "world";   // string 
 let e = true;      // boolean
 let f = null;      // null value
 let g = undefined; // undefined value
@@ -555,10 +555,10 @@ Padding and justification:
 
 ```javascript
 let s = "Hello!";
-let t = s.padStart(10, ' '); // string '    Hello!'
+let t = s.padStart(10, ' '); // string '    Hello!' 
 let u = s.padEnd(10, ' ');   // string 'Hello!    '
 
-let v = s.padStart(10, '*'); // string '****Hello!'
+let v = s.padStart(10, '*'); // string '****Hello!' 
 
 // Pad with leading zeroes
 (12).toString(2).padStart(8, '0'); // string '00001100'

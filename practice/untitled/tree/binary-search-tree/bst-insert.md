@@ -33,20 +33,20 @@ def in_order_print(root):
 
 def pre_order_print(root):
     if not root:
-        return
+        return        
     print root.data
     pre_order_print(root.l_child)
-    pre_order_print(root.r_child)
+    pre_order_print(root.r_child)    
 ```
 
-```python
+```text
 r = Node(3)
 binary_insert(r, Node(7))
 binary_insert(r, Node(1))
 binary_insert(r, Node(5))
 ```
 
-```python
+```text
      3
     / \
    1   7
@@ -54,7 +54,7 @@ binary_insert(r, Node(5))
      5
 ```
 
-```python
+```text
 print "in order:"
 in_order_print(r)
 

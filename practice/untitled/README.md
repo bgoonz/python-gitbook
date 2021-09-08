@@ -8,7 +8,7 @@
 
 {% page-ref page="array/extra-array.md" %}
 
-{% page-ref page="stack.md" %}
+{% page-ref page="stack/" %}
 
 {% page-ref page="tree/binary-tree/" %}
 
