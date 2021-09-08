@@ -21,6 +21,7 @@
   * [D1- Module 01 - Number Bases and Character Encoding](cirriculumn/untitled-2/untitled-3.md)
   * [D2- Module 02 - Hash Tables I](cirriculumn/untitled-2/untitled-2/README.md)
     * [Hash Table Use Cases](cirriculumn/untitled-2/untitled-2/hash-table-use-cases.md)
+    * [Practice](cirriculumn/untitled-2/untitled-2/practice.md)
   * [D3-Module 03 - Hash Tables II](cirriculumn/untitled-2/untitled-1.md)
   * [D4- Module 04 - Searching and Recursion](cirriculumn/untitled-2/untitled.md)
 * [wk19](cirriculumn/untitled-4/README.md)
