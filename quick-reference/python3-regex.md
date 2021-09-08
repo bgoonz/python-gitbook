@@ -257,3 +257,247 @@ In the second example, the MULTILINE flag will search in each and every line and
 
 Note: In MULTILINE flag, we have to use re.findall, since it has many matches \(for every line\)
 
+
+
+
+
+
+
+## What are Regular Expressions? <a id="977d"></a>
+
+Regular Expression is an advanced string searching method that allows users to search for something in a text. This is done by creating a pattern that matches the information that we want to retrieve. Regular Expression has such power that it has been incorporated in many programming languages like Python, Pearl, JavaScript, PHP, and Java.
+
+So, let’s come back to our problem!
+
+We can get the users’ phone numbers by first creating a pattern. Observe that the phone numbers are located between the brackets “\( \)”. It’s a useful information and we can use it to our advantage. To access the goodness of Regular Expressions in Python, we will need to **import** the **re library**.
+
+```text
+import re phone_numbers = [] 
+pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file: 
+    for line in file: 
+        result = re.search(pattern, line)
+        phone_numbers.append(result.group(1))print(phone_numbers)
+```
+
+The Output:
+
+```text
+['+1-202-555-0189', '+33-93-751-3845', '+49-30-833-931-313']
+```
+
+I will go through this code one by one:
+
+1. import re — Importing the Regular Expressions library in Python.
+2. phone\_numbers = \[\] — Preparing a list to store the phone numbers.
+3. pattern = r”\\(\(\[\d\-+\]+\)\\)” — The pattern that we use to locate the phone number, we will go through what each symbols do later in this article!
+4. with open\(“log.txt”, “r”\) as file: — Opening the file that we want to process.
+5. for line in file: — Iterating\(going through\) each line in the log.txt.
+6. result = re.search\(pattern, line\) — Searching for the phone number in the line
+7. phone\_numbers.append\(result.group\(1\)\) — Adding the customer’s phone number into the phone numbers list
+8. print\(phone\_numbers\) — Printing the list of phone numbers.
+
+There are many useful functions and characters in the re library, yet learning everything might be overwhelming. Therefore, I have selected the most useful functions and characters that will help you to start implementing RegEx in your Python script.
+
+Let’s start diving in the re library!
+
+## RegEx Raw String <a id="cdd9"></a>
+
+In our example, we use this pattern in log.txt : r”\\(\(\[\d\-+\]+\)\\)”
+
+Are you wondering why should we type an “r” before the string? “r” here stands for the raw string. Python RegEx use a backslash\(\\)to indicate a special sequence or as an escape character. This collides with Python’s usage of the backslash\(\\) for the same purpose in string lateral. Thus, the raw string here is used to avoid confusion between the two. Besides that, it also helps us in making our pattern shorter. Without typing “r”, one might need to type “\\\\” just for indicating a backslash\(\\).
+
+So, don’t forget your “r”!
+
+## **RegEx Special Sequences** <a id="0c7b"></a>
+
+We’ll start off with the simplest syntax in RegEx, the special sequences. Special sequences in RegEx starts with a backslash\(\\). So if you meet a backslash in the RegEx pattern, chances are it is the syntax for a special sequence.
+
+```text
+\d               matches a single digit character [0-9]\w               matches any alphabet, digit, or underscore\s               matches a white space character (space, tab, enter)
+```
+
+The negations of these sequences are also available by using the capital letter. For example, \D is the negation of \d.
+
+```text
+\D               matches a single non-digit character
+```
+
+## **RegEx Meta Characters** <a id="7a0c"></a>
+
+We’ll then go through the meta characters which will assist us in reaching our goal. Each one of these characters has its special meaning.
+
+```text
+.                matches any character(except for newline character)^                the string starts with a character$                the string ends with a character*                zero or more occurrences +                one or more occurrences?                one or no occurrence {}               exactly the specified number of occurrences|                either or
+```
+
+Example :
+
+```text
+"c.t"            will match anything like "cat", "c*t", "c1t", etc"^a"             will match "a" from "a cat" but not "eat a cake""cat$"           will match "a cat" but not "cat party""a*b"            will match "b", "ab", "aab", "aaab", ..."a+b"            will match "ab", "aab", "aaab", ..."a?b"            will match "b" or "ab""a{1}b"          will match "ab""a{1,3}b"        will match "ab", "aab", or "aaab""cat|dog"        will match "cat" or "dog"
+```
+
+## RegEx Sets <a id="703d"></a>
+
+Sets can be used to match one of the characters inside the square brackets.
+
+```text
+[abcd]           matches either a, b, c or d
+```
+
+You can also use the special sequences that we have discussed earlier here. Besides that, there is also the dash character that we’ll get to shortly.
+
+```text
+[a-z0-9]         matches one of the characters from a-z or 0-9[\w]             matches an alphabet, digit, or underscore
+```
+
+The caret character\(^\) stands for except.
+
+```text
+[^\d]            matches a character that is not a digit [0-9]
+```
+
+To include characters that have special meaning in the set like backslash \(\\) and dash\(-\), you will need to use add a backslash in the front \(\\\) and \(\-\)-the first backslash stands as an escaping character. Escaping character makes characters that have special meaning to be taken literally.
+
+However, characters that don’t have any special meaning like ?\_+\*.\|\(\)${} can be used directly.
+
+## RegEx Function <a id="2fd7"></a>
+
+Lastly, we’ll go through the things that we can do with RegEx by using the functions available!
+
+```text
+findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string            
+```
+
+In all these functions, the arguments are all the same, which are &lt;pattern&gt; and &lt;string&gt;.
+
+Example :
+
+1. findall\(\)
+
+```text
+import repattern = r".at"
+line = "The big fat cat sat on a cat"
+result = re.findall(pattern, line)print(result)
+```
+
+The Output :
+
+```text
+['fat', 'cat', 'sat', 'cat']
+```
+
+2. search\(\)
+
+```text
+import repattern = r".* .*"
+line = "Ada Lovelace"
+result = re.search(pattern, line)print(result)
+print(result.group())
+print(result.group(0))
+```
+
+The Output :
+
+```text
+<_sre.SRE_Match object; span=(0, 12), match='Ada Lovelace'>
+Ada Lovelace
+Ada Lovelace
+```
+
+3. split\(\)
+
+```text
+import repattern = r"cat"
+line = "The big fat cat sat on a cat"
+result = re.split(pattern, line)print(result)
+```
+
+The Output :
+
+```text
+['The big fat ', ' sat on a ', '']
+```
+
+4. sub\(\)
+
+```text
+import repattern = r"Ada"
+line = "Ada Lovelace"
+result = re.sub(pattern, r"Tom", line)print(result)
+```
+
+The Output :
+
+```text
+Tom Lovelace
+```
+
+## RegEx Capturing Group <a id="fa62"></a>
+
+The capturing group is very useful when we want to extract information from a match, like in our example, log.txt.
+
+We use this pattern in log.txt : r”\\(\(\[\d\-+\]+\)\\)”
+
+Here, we are using the capturing group just to extract the phone number without including the parentheses character.
+
+The phone number that we want to extract can be accessed with result.group\(1\).
+
+Understanding the capturing group will be easier through examples.
+
+Example :
+
+1. search\(\)
+
+```text
+import repattern = r"(.*) (.*)"
+line = "Ada Lovelace"
+result = re.search(pattern, line)print(result)
+print(result.groups())
+print(result.group(0))
+print(result.group(1))
+print(result.group(2))
+```
+
+The Output :
+
+```text
+<_sre.SRE_Match object; span=(0, 12), match='Ada Lovelace'>
+('Ada', 'Lovelace')
+Ada Lovelace
+Ada
+Lovelace
+```
+
+2. split\(\)
+
+```text
+import repattern = r"(cat)"
+line = "The big fat cat sat on a cat"
+result = re.split(pattern, line)print(result)
+```
+
+The Output :
+
+```text
+['The big fat ', 'cat', ' sat on a ', 'cat', '']
+```
+
+3. sub\(\)
+
+```text
+import repattern = r"(.*) (.*)"
+line = "Ada Lovelace"
+result1 = re.sub(pattern, r"\2 \1", line)
+result2 = re.sub(pattern, r"Tom", line)print(result1)
+print(result2)
+```
+
+“\1” and “\2” stand for the first and second capturing group respectively.
+
+The Output :
+
+```text
+Lovelace Ada
+Tom
+```
+
