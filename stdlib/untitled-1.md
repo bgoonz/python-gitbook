@@ -1,4 +1,4 @@
-# Untitled
+# Functions
 
 ## 5. Functions
 
