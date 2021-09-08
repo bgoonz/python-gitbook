@@ -104,7 +104,7 @@ In Python, we can encode strings into their bytes representation with the `.enco
 
 Let's do this with the string `hello`
 
-```text
+```python
 bytes_representation = "hello".encode()
 
 for byte in bytes_representation:
@@ -120,7 +120,7 @@ for byte in bytes_representation:
 
 Now that we’ve converted our string into a series of integers, we can manipulate those integers somehow. For simplicity’s sake, we can use a simple accumulator pattern to get a sum of all the integer values.
 
-```text
+```python
 bytes_representation = "hello".encode()
 
 sum = 0
@@ -135,7 +135,7 @@ print(sum)
 
 Great! We turned a string into a number. Now, let's generalize this into a function.
 
-```text
+```python
 def my_hashing_func(str):
     bytes_representation = str.encode()
 
@@ -150,7 +150,7 @@ We aren't done yet 🤪. As shown earlier, `hello` returns `532`. But, what if o
 
 Remember the modulo operator `%`? We can use that in our hashing function to ensure that the integer the function returns is within a specific range.
 
-```text
+```python
 def my_hashing_func(str, table_size):
     bytes_representation = str.encode()
 
@@ -184,7 +184,7 @@ Let's start with the insert function. For an insert, I need to insert a value wi
 
 Here's what our `HashTable` class looks like right now:
 
-```text
+```python
 class HashTable:
     """
     A hash table with `capacity` buckets
@@ -264,7 +264,7 @@ You might be thinking, "What if two keys hash to the same index?" That's a great
 
 First, let's call the hash function and store the return value in `index`:
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -274,7 +274,7 @@ def put(self, key, value):
 
 Next, let's insert the value at that index:
 
-```text
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -292,7 +292,7 @@ Next, let's write our `delete` method. What does this method need to do? We can 
 
 Let's start by getting the index by passing the `key` through the hashing function:
 
-```text
+```python
 def delete(self, key):
     """
     Remove the value stored with the given key.
@@ -302,7 +302,7 @@ def delete(self, key):
 
 Next, we need to delete the value from that index in our storage by setting it to `None`. Remember, we aren't dealing with collisions in this example. If we had to deal with collisions, this would be more complex.
 
-```text
+```python
 def delete(self, key):
     """
     Remove the value stored with the given key.
@@ -317,7 +317,7 @@ The last method we need to deal with is our `get` method. `get` is a simple meth
 
 Let's start by getting the index from the `key`:
 
-```text
+```python
 def get(self, key):
     """
     Retrieve the value stored with the given key.
@@ -328,7 +328,7 @@ def get(self, key):
 
 Next, we need to return the value that is stored at the `index`.
 
-```text
+```python
 def get(self, key):
     """
     Retrieve the value stored with the given key.
