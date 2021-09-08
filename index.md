@@ -34,6 +34,32 @@ Awesome Find:
 {% endtab %}
 {% endtabs %}
 
+## **Downloads:**
+
+### **DS-Algo Book PDF:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/grokking-algorithms-1-.pdf" caption="" %}
+
+### **Python Cheat Sheet:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" caption="" %}
+
+### **Zen Of Python Cheat Sheet Download:**
+
+{% file src=".gitbook/assets/zen-of-python.pdf" caption="ZenOfPython.pdf" %}
+
+### **Python Practice Files:**
+
+{% file src=".gitbook/assets/examples.zip" caption="Python Prac Zip File" %}
+
+### **This Space As A PDF:**
+
+{% file src=".gitbook/assets/python-space.pdf" caption="This Space PDF" %}
+
+### **Linked Lists:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" caption="" %}
+
 
 
 ## 
