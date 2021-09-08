@@ -1,4 +1,8 @@
-# Untitled
+# Inheritance
+
+![](https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png)
+
+
 
 ## 8. Inheritance
 

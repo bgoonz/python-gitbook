@@ -1,5 +1,13 @@
 # Calculating Big O
 
+
+
+![](../.gitbook/assets/image%20%2826%29.png)
+
+![](../.gitbook/assets/image%20%2823%29.png)
+
+![](../.gitbook/assets/image%20%2825%29.png)
+
 ## Computing Big O
 
 Brian "Beej Jorgensen" Hall edited this page on Nov 4, 2019 · [9 revisions](https://github.com/LambdaSchool/CS-Wiki/wiki/Computing-Big-O/_history)

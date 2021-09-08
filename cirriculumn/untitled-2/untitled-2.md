@@ -4,6 +4,14 @@
 
 
 
+![](../../.gitbook/assets/image%20%2826%29.png)
+
+![](../../.gitbook/assets/image%20%2823%29.png)
+
+![](../../.gitbook/assets/image%20%2825%29.png)
+
+## 
+
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a hash table
 
 ### **Overview**
