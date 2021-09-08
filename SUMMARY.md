@@ -94,6 +94,7 @@
 ## Python-Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
+* [Python Standard Library  \(STDLIB\)](stdlib/python-standard-library-stdlib.md)
 * [Docs](stdlib/untitled.md)
 * [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)
