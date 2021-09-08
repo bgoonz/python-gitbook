@@ -2,6 +2,8 @@
 
 {% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
 
+{% embed url="https://gist.github.com/bgoonz/d636b750dce1d21914e47f80bda8fb85\#file-hash-tables-ii-cs47-ipynb" %}
+
 
 
 ![](../../../.gitbook/assets/image%20%2834%29.png)
