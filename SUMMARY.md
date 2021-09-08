@@ -82,6 +82,7 @@
 
 ## Resources
 
+* [Untitled](resources/untitled-2.md)
 * [Python VS JavaScript](resources/python-vs-javascript.md)
 * [Misc. Resources](resources/untitled-1.md)
 * [Things To Internalize:](resources/things-to-internalize/README.md)
@@ -107,6 +108,7 @@
 ## Python-Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
+* [Classes and objects](stdlib/classes-and-objects.md)
 * [Conditionals and loops](stdlib/conditionals-and-loops.md)
 * [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules.md)
 * [Functions](stdlib/untitled-1.md)
