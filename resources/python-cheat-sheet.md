@@ -46,32 +46,32 @@ From **Highest** to **Lowest** precedence:
 
 Examples of expressions in the interactive shell:
 
-```text
+```py
 >>> 2 + 3 * 6
 20
 ```
 
-```text
+```py
 >>> (2 + 3) * 6
 30
 ```
 
-```text
+```py
 >>> 2 ** 8
 256
 ```
 
-```text
+```py
 >>> 23 // 7
 3
 ```
 
-```text
+```py
 >>> 23 % 7
 2
 ```
 
-```text
+```py
 >>> (5 - 1) * ((7 + 1) / (3 - 1))
 16.0
 ```
@@ -88,7 +88,7 @@ Examples of expressions in the interactive shell:
 
 String concatenation:
 
-```text
+```py
 >>> 'Alice' 'Bob'
 'AliceBob'
 ```
@@ -97,7 +97,7 @@ Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
-```text
+```py
 >>> 'Alice' * 5
 'AliceAliceAliceAliceAlice'
 ```
@@ -113,13 +113,13 @@ You can name a variable anything as long as it obeys the following rules:
 
 Example:
 
-```text
+```py
 >>> spam = 'Hello'
 >>> spam
 'Hello'
 ```
 
-```text
+```py
 >>> _spam = 'Hello'
 ```
 
@@ -129,20 +129,20 @@ Example:
 
 Inline comment:
 
-```text
+```py
 # This is a comment
 ```
 
 Multiline comment:
 
-```text
+```py
 # This is a
 # multiline comment
 ```
 
 Code with a comment:
 
-```text
+```py
 a = 1  # initialization
 ```
 
@@ -150,7 +150,7 @@ Please note the two spaces in front of the comment.
 
 Function docstring:
 
-```text
+```py
 def foo():
     """
     This is a function docstring
@@ -161,12 +161,12 @@ def foo():
 
 #### The print\(\) Function <a id="The-print()-Function"></a>
 
-```text
+```py
 >>> print('Hello world!')
 Hello world!
 ```
 
-```text
+```py
 >>> a = 1
 >>> print('Hello world!', a)
 Hello world! 1
@@ -176,7 +176,7 @@ Hello world! 1
 
 Example Code:
 
-```text
+```py
 >>> print('What is your name?')   # ask for their name
 >>> myName = input()
 >>> print('It is good to meet you, {}'.format(myName))
@@ -189,14 +189,14 @@ It is good to meet you, Al
 
 Evaluates to the integer value of the number of characters in a string:
 
-```text
+```py
 >>> len('hello')
 5
 ```
 
 Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct boolean evaluation.
 
-```text
+```py
 >>> a = [1, 2, 3]
 >>> if a:
 >>>     print("the list is not empty!")
@@ -206,29 +206,29 @@ Note: test of emptiness of strings, lists, dictionary, etc, should **not** use l
 
 Integer to String or Float:
 
-```text
+```py
 >>> str(29)
 '29'
 ```
 
-```text
+```py
 >>> print('I am {} years old.'.format(str(29)))
 I am 29 years old.
 ```
 
-```text
+```py
 >>> str(-3.14)
 '-3.14'
 ```
 
 Float to Integer:
 
-```text
+```py
 >>> int(7.7)
 7
 ```
 
-```text
+```py
 >>> int(7.7) + 1
 8
 ```
@@ -250,37 +250,37 @@ These operators evaluate to True or False depending on the values you give them.
 
 Examples:
 
-```text
+```py
 >>> 42 == 42
 True
 ```
 
-```text
+```py
 >>> 40 == 42
 False
 ```
 
-```text
+```py
 >>> 'hello' == 'hello'
 True
 ```
 
-```text
+```py
 >>> 'hello' == 'Hello'
 False
 ```
 
-```text
+```py
 >>> 'dog' != 'cat'
 True
 ```
 
-```text
+```py
 >>> 42 == 42.0
 True
 ```
 
-```text
+```py
 >>> 42 == '42'
 False
 ```
@@ -291,31 +291,31 @@ Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `
 
 NO \(even if they are valid Python\):
 
-```text
+```py
 >>> True == True
 True
 ```
 
-```text
+```py
 >>> True != False
 True
 ```
 
 YES \(even if they are valid Python\):
 
-```text
+```py
 >>> True is True
 True
 ```
 
-```text
+```py
 >>> True is not False
 True
 ```
 
 These statements are equivalent:
 
-```text
+```py
 >>> if a is True:
 >>>    pass
 >>> if a is not False:
@@ -326,7 +326,7 @@ These statements are equivalent:
 
 And these as well:
 
-```text
+```py
 >>> if a is False:
 >>>    pass
 >>> if a is not True:
@@ -366,38 +366,38 @@ The _not_ Operator’s _Truth_ Table:
 
 #### Mixing Boolean and Comparison Operators <a id="Mixing-Boolean-and-Comparison-Operators"></a>
 
-```text
+```py
 >>> (4 < 5) and (5 < 6)
 True
 ```
 
-```text
+```py
 >>> (4 < 5) and (9 < 6)
 False
 ```
 
-```text
+```py
 >>> (1 == 2) or (2 == 2)
 True
 ```
 
 You can also use multiple Boolean operators in an expression, along with the comparison operators:
 
-```text
+```py
 >>> 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 True
 ```
 
 #### if Statements <a id="if-Statements"></a>
 
-```text
+```py
 if name == 'Alice':
     print('Hi, Alice.')
 ```
 
 #### else Statements <a id="else-Statements"></a>
 
-```text
+```py
 name = 'Bob'
 if name == 'Alice':
     print('Hi, Alice.')
@@ -407,7 +407,7 @@ else:
 
 #### elif Statements <a id="elif-Statements"></a>
 
-```text
+```py
 name = 'Bob'
 age = 5
 if name == 'Alice':
@@ -416,7 +416,7 @@ elif age < 12:
     print('You are not Alice, kiddo.')
 ```
 
-```text
+```py
 name = 'Bob'
 age = 30
 if name == 'Alice':
@@ -429,7 +429,7 @@ else:
 
 #### while Loop Statements <a id="while-Loop-Statements"></a>
 
-```text
+```py
 spam = 0
 while spam < 5:
     print('Hello, world.')
@@ -440,7 +440,7 @@ while spam < 5:
 
 If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
-```text
+```py
 while True:
     print('Please type your name.')
     name = input()
@@ -453,7 +453,7 @@ print('Thank you!')
 
 When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
 
-```text
+```py
 while True:
     print('Who are you?')
     name = input()
@@ -468,7 +468,7 @@ print('Access granted.')
 
 #### for Loops and the range\(\) Function <a id="for-Loops-and-the-range()-Function"></a>
 
-```text
+```py
 >>> print('My name is')
 >>> for i in range(5):
 >>>     print('Jimmy Five Times ({})'.format(str(i)))
@@ -482,7 +482,7 @@ Jimmy Five Times (4)
 
 The _range\(\)_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
-```text
+```py
 >>> for i in range(0, 10, 2):
 >>>    print(i)
 0
@@ -494,7 +494,7 @@ The _range\(\)_ function can also be called with three arguments. The first two 
 
 You can even use a negative number for the step argument to make the for loop count down instead of up.
 
-```text
+```py
 >>> for i in range(5, -1, -1):
 >>>     print(i)
 5
@@ -509,7 +509,7 @@ You can even use a negative number for the step argument to make the for loop co
 
 This allows to specify a statement to execute in case of the full loop has been executed. Only useful when a `break` condition can occur in the loop:
 
-```text
+```py
 >>> for i in [1, 2, 3, 4, 5]:
 >>>    if i == 3:
 >>>        break
@@ -519,23 +519,23 @@ This allows to specify a statement to execute in case of the full loop has been 
 
 #### Importing Modules <a id="Importing-Modules"></a>
 
-```text
+```py
 import random
 for i in range(5):
     print(random.randint(1, 10))
 ```
 
-```text
+```py
 import random, sys, os, math
 ```
 
-```text
+```py
 from random import *
 ```
 
 #### Ending a Program Early with sys.exit\(\) <a id="Ending-a-Program-Early-with-sys.exit()"></a>
 
-```text
+```py
 import sys
 
 while True:
@@ -548,7 +548,7 @@ while True:
 
 ### Functions <a id="Functions"></a>
 
-```text
+```py
 >>> def hello(name):
 >>>     print('Hello {}'.format(name))
 >>>
@@ -565,7 +565,7 @@ When creating a function using the def statement, you can specify what the retur
 * The return keyword.
 * The value or expression that the function should return.
 
-```text
+```py
 import random
 def getAnswer(answerNumber):
     if answerNumber == 1:
@@ -594,12 +594,12 @@ print(fortune)
 
 #### The None Value <a id="The-None-Value"></a>
 
-```text
+```py
 >>> spam = print('Hello!')
 Hello!
 ```
 
-```text
+```py
 >>> spam is None
 True
 ```
@@ -608,18 +608,18 @@ Note: never compare to `None` with the `==` operator. Always use `is`.
 
 #### Keyword Arguments and print\(\) <a id="Keyword-Arguments-and-print()"></a>
 
-```text
+```py
 >>> print('Hello', end='')
 >>> print('World')
 HelloWorld
 ```
 
-```text
+```py
 >>> print('cats', 'dogs', 'mice')
 cats dogs mice
 ```
 
-```text
+```py
 >>> print('cats', 'dogs', 'mice', sep=',')
 cats,dogs,mice
 ```
@@ -635,7 +635,7 @@ cats,dogs,mice
 
 If you need to modify a global variable from within a function, use the global statement:
 
-```text
+```py
 >>> def spam():
 >>>     global eggs
 >>>     eggs = 'spam'
@@ -657,7 +657,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 
 #### Basic exception handling <a id="Basic-exception-handling"></a>
 
-```text
+```py
 >>> def spam(divideBy):
 >>>     try:
 >>>         return 42 / divideBy
@@ -679,7 +679,7 @@ None
 
 Code inside the `finally` section is always executed, no matter if an exception has been raised or not, and even if an exception is not caught.
 
-```text
+```py
 >>> def spam(divideBy):
 >>>     try:
 >>>         return 42 / divideBy
@@ -704,7 +704,7 @@ None
 
 ### Lists <a id="Lists"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 
 >>> spam
@@ -713,77 +713,77 @@ None
 
 #### Getting Individual Values in a List with Indexes <a id="Getting-Individual-Values-in-a-List-with-Indexes"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[0]
 'cat'
 ```
 
-```text
+```py
 >>> spam[1]
 'bat'
 ```
 
-```text
+```py
 >>> spam[2]
 'rat'
 ```
 
-```text
+```py
 >>> spam[3]
 'elephant'
 ```
 
 #### Negative Indexes <a id="Negative-Indexes"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[-1]
 'elephant'
 ```
 
-```text
+```py
 >>> spam[-3]
 'bat'
 ```
 
-```text
+```py
 >>> 'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
 'The elephant is afraid of the bat.'
 ```
 
 #### Getting Sublists with Slices <a id="Getting-Sublists-with-Slices"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[0:4]
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
-```text
+```py
 >>> spam[1:3]
 ['bat', 'rat']
 ```
 
-```text
+```py
 >>> spam[0:-1]
 ['cat', 'bat', 'rat']
 ```
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[:2]
 ['cat', 'bat']
 ```
 
-```text
+```py
 >>> spam[1:]
 ['bat', 'rat', 'elephant']
 ```
 
 Slicing the complete list will perform a copy:
 
-```text
+```py
 >>> spam2 = spam[:]
 ['cat', 'bat', 'rat', 'elephant']
 >>> spam.append('dog')
@@ -795,7 +795,7 @@ Slicing the complete list will perform a copy:
 
 #### Getting a List’s Length with len\(\) <a id="Getting-a-List&#x2019;s-Length-with-len()"></a>
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'moose']
 >>> len(spam)
 3
@@ -803,7 +803,7 @@ Slicing the complete list will perform a copy:
 
 #### Changing Values in a List with Indexes <a id="Changing-Values-in-a-List-with-Indexes"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[1] = 'aardvark'
 
@@ -823,7 +823,7 @@ Slicing the complete list will perform a copy:
 
 #### List Concatenation and List Replication <a id="List-Concatenation-and-List-Replication"></a>
 
-```text
+```py
 >>> [1, 2, 3] + ['A', 'B', 'C']
 [1, 2, 3, 'A', 'B', 'C']
 
@@ -840,14 +840,14 @@ Slicing the complete list will perform a copy:
 
 #### Removing Values from Lists with del Statements <a id="Removing-Values-from-Lists-with-del-Statements"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> del spam[2]
 >>> spam
 ['cat', 'bat', 'elephant']
 ```
 
-```text
+```py
 >>> del spam[2]
 >>> spam
 ['cat', 'bat']
@@ -855,7 +855,7 @@ Slicing the complete list will perform a copy:
 
 #### Using for Loops with Lists <a id="Using-for-Loops-with-Lists"></a>
 
-```text
+```py
 >>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
 >>> for i, supply in enumerate(supplies):
 >>>     print('Index {} in supplies is: {}'.format(str(i), supply))
@@ -867,7 +867,7 @@ Index 3 in supplies is: binders
 
 #### Looping Through Multiple Lists with zip\(\) <a id="Looping-Through-Multiple-Lists-with-zip()"></a>
 
-```text
+```py
 >>> name = ['Pete', 'John', 'Elizabeth']
 >>> age = [6, 23, 44]
 >>> for n, a in zip(name, age):
@@ -879,23 +879,23 @@ Elizabeth is 44 years old
 
 #### The in and not in Operators <a id="The-in-and-not-in-Operators"></a>
 
-```text
+```py
 >>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
 True
 ```
 
-```text
+```py
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
 >>> 'cat' in spam
 False
 ```
 
-```text
+```py
 >>> 'howdy' not in spam
 False
 ```
 
-```text
+```py
 >>> 'cat' not in spam
 True
 ```
@@ -904,7 +904,7 @@ True
 
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
-```text
+```py
 >>> cat = ['fat', 'orange', 'loud']
 
 >>> size = cat[0]
@@ -916,7 +916,7 @@ The multiple assignment trick is a shortcut that lets you assign multiple variab
 
 You could type this line of code:
 
-```text
+```py
 >>> cat = ['fat', 'orange', 'loud']
 
 >>> size, color, disposition = cat
@@ -924,14 +924,14 @@ You could type this line of code:
 
 The multiple assignment trick can also be used to swap the values in two variables:
 
-```text
+```py
 >>> a, b = 'Alice', 'Bob'
 >>> a, b = b, a
 >>> print(a)
 'Bob'
 ```
 
-```text
+```py
 >>> print(b)
 'Alice'
 ```
@@ -948,7 +948,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 Examples:
 
-```text
+```py
 >>> spam = 'Hello'
 >>> spam += ' world!'
 >>> spam
@@ -962,7 +962,7 @@ Examples:
 
 #### Finding a Value in a List with the index\(\) Method <a id="Finding-a-Value-in-a-List-with-the-index()-Method"></a>
 
-```text
+```py
 >>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
 
 >>> spam.index('Pooka')
@@ -973,7 +973,7 @@ Examples:
 
 **append\(\)**:
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'bat']
 
 >>> spam.append('moose')
@@ -984,7 +984,7 @@ Examples:
 
 **insert\(\)**:
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'bat']
 
 >>> spam.insert(1, 'chicken')
@@ -995,7 +995,7 @@ Examples:
 
 #### Removing Values from Lists with remove\(\) <a id="Removing-Values-from-Lists-with-remove()"></a>
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 
 >>> spam.remove('bat')
@@ -1008,14 +1008,14 @@ If the value appears multiple times in the list, only the first instance of the 
 
 #### Sorting the Values in a List with the sort\(\) Method <a id="Sorting-the-Values-in-a-List-with-the-sort()-Method"></a>
 
-```text
+```py
 >>> spam = [2, 5, 3.14, 1, -7]
 >>> spam.sort()
 >>> spam
 [-7, 1, 2, 3.14, 5]
 ```
 
-```text
+```py
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 >>> spam.sort()
 >>> spam
@@ -1024,7 +1024,7 @@ If the value appears multiple times in the list, only the first instance of the 
 
 You can also pass True for the reverse keyword argument to have sort\(\) sort the values in reverse order:
 
-```text
+```py
 >>> spam.sort(reverse=True)
 >>> spam
 ['elephants', 'dogs', 'cats', 'badgers', 'ants']
@@ -1032,7 +1032,7 @@ You can also pass True for the reverse keyword argument to have sort\(\) sort th
 
 If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort\(\) method call:
 
-```text
+```py
 >>> spam = ['a', 'z', 'A', 'Z']
 >>> spam.sort(key=str.lower)
 >>> spam
@@ -1041,7 +1041,7 @@ If you need to sort the values in regular alphabetical order, pass str. lower fo
 
 You can use the built-in function `sorted` to return a new list:
 
-```text
+```py
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 >>> sorted(spam)
 ['ants', 'badgers', 'cats', 'dogs', 'elephants']
@@ -1049,18 +1049,18 @@ You can use the built-in function `sorted` to return a new list:
 
 #### Tuple Data Type <a id="Tuple-Data-Type"></a>
 
-```text
+```py
 >>> eggs = ('hello', 42, 0.5)
 >>> eggs[0]
 'hello'
 ```
 
-```text
+```py
 >>> eggs[1:3]
 (42, 0.5)
 ```
 
-```text
+```py
 >>> len(eggs)
 3
 ```
@@ -1069,17 +1069,17 @@ The main way that tuples are different from lists is that tuples, like strings, 
 
 #### Converting Types with the list\(\) and tuple\(\) Functions <a id="Converting-Types-with-the-list()-and-tuple()-Functions"></a>
 
-```text
+```py
 >>> tuple(['cat', 'dog', 5])
 ('cat', 'dog', 5)
 ```
 
-```text
+```py
 >>> list(('cat', 'dog', 5))
 ['cat', 'dog', 5]
 ```
 
-```text
+```py
 >>> list('hello')
 ['h', 'e', 'l', 'l', 'o']
 ```
@@ -1088,7 +1088,7 @@ The main way that tuples are different from lists is that tuples, like strings, 
 
 Example Dictionary:
 
-```text
+```py
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
@@ -1096,7 +1096,7 @@ myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 
 values\(\):
 
-```text
+```py
 >>> spam = {'color': 'red', 'age': 42}
 >>> for v in spam.values():
 >>>     print(v)
@@ -1106,7 +1106,7 @@ red
 
 keys\(\):
 
-```text
+```py
 >>> for k in spam.keys():
 >>>     print(k)
 color
@@ -1115,7 +1115,7 @@ age
 
 items\(\):
 
-```text
+```py
 >>> for i in spam.items():
 >>>     print(i)
 ('color', 'red')
@@ -1124,7 +1124,7 @@ items\(\):
 
 Using the keys\(\), values\(\), and items\(\) methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively.
 
-```text
+```py
 
 >>> spam = {'color': 'red', 'age': 42}
 >>>
@@ -1136,27 +1136,27 @@ Key: color Value: red
 
 #### Checking Whether a Key or Value Exists in a Dictionary <a id="Checking-Whether-a-Key-or-Value-Exists-in-a-Dictionary"></a>
 
-```text
+```py
 >>> spam = {'name': 'Zophie', 'age': 7}
 ```
 
-```text
+```py
 >>> 'name' in spam.keys()
 True
 ```
 
-```text
+```py
 >>> 'Zophie' in spam.values()
 True
 ```
 
-```text
+```py
 >>> # You can omit the call to keys() when checking for a key
 >>> 'color' in spam
 False
 ```
 
-```text
+```py
 >>> 'color' not in spam
 True
 ```
@@ -1165,14 +1165,14 @@ True
 
 Get has two parameters: key and default value if the key did not exist
 
-```text
+```py
 >>> picnic_items = {'apples': 5, 'cups': 2}
 
 >>> 'I am bringing {} cups.'.format(str(picnic_items.get('cups', 0)))
 'I am bringing 2 cups.'
 ```
 
-```text
+```py
 >>> 'I am bringing {} eggs.'.format(str(picnic_items.get('eggs', 0)))
 'I am bringing 0 eggs.'
 ```
@@ -1181,7 +1181,7 @@ Get has two parameters: key and default value if the key did not exist
 
 Let's consider this code:
 
-```text
+```py
 spam = {'name': 'Pooka', 'age': 5}
 
 if 'color' not in spam:
@@ -1190,30 +1190,30 @@ if 'color' not in spam:
 
 Using `setdefault` we could write the same code more succinctly:
 
-```text
+```py
 >>> spam = {'name': 'Pooka', 'age': 5}
 >>> spam.setdefault('color', 'black')
 'black'
 ```
 
-```text
+```py
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
 
-```text
+```py
 >>> spam.setdefault('color', 'white')
 'black'
 ```
 
-```text
+```py
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
 
 #### Pretty Printing <a id="Pretty-Printing"></a>
 
-```text
+```py
 >>> import pprint
 >>>
 >>> message = 'It was a bright cold day in April, and the clocks were striking
@@ -1252,7 +1252,7 @@ Using `setdefault` we could write the same code more succinctly:
 
 #### Merge two dictionaries <a id="Merge-two-dictionaries"></a>
 
-```text
+```py
 # in Python 3.5+:
 >>> x = {'a': 1, 'b': 2}
 >>> y = {'b': 3, 'c': 4}
@@ -1276,14 +1276,14 @@ From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructu
 
 There are two ways to create sets: using curly braces `{}` and the built-in function `set()`
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s = set([1, 2, 3])
 ```
 
 When creating an empty set, be sure to not use the curly braces `{}` or you will get an empty dictionary instead.
 
-```text
+```py
 >>> s = {}
 >>> type(s)
 <class 'dict'>
@@ -1293,7 +1293,7 @@ When creating an empty set, be sure to not use the curly braces `{}` or you will
 
 A set automatically remove all the duplicate values.
 
-```text
+```py
 >>> s = {1, 2, 3, 2, 3, 4}
 >>> s
 {1, 2, 3, 4}
@@ -1301,7 +1301,7 @@ A set automatically remove all the duplicate values.
 
 And as an unordered data type, they can't be indexed.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s[0]
 Traceback (most recent call last):
@@ -1314,7 +1314,7 @@ TypeError: 'set' object does not support indexing
 
 Using the `add()` method we can add a single element to the set.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.add(4)
 >>> s
@@ -1323,7 +1323,7 @@ Using the `add()` method we can add a single element to the set.
 
 And with `update()`, multiple ones .
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.update([2, 3, 4, 5, 6])
 >>> s
@@ -1334,7 +1334,7 @@ And with `update()`, multiple ones .
 
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.remove(3)
 >>> s
@@ -1347,7 +1347,7 @@ KeyError: 3
 
 `discard()` won't raise any errors.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.discard(3)
 >>> s
@@ -1360,7 +1360,7 @@ KeyError: 3
 
 `union()` or `|` will create a new set that contains all the elements from the sets provided.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {3, 4, 5}
 >>> s1.union(s2)  # or 's1 | s2'
@@ -1371,7 +1371,7 @@ KeyError: 3
 
 `intersection` or `&` will return a set containing only the elements that are common to all of them.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s3 = {3, 4, 5}
@@ -1383,7 +1383,7 @@ KeyError: 3
 
 `difference` or `-` will return only the elements that are unique to the first set \(invoked set\).
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.difference(s2)  # or 's1 - s2'
@@ -1396,7 +1396,7 @@ KeyError: 3
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
@@ -1419,13 +1419,13 @@ The [operator](https://docs.python.org/3/library/operator.html) module will also
 
 Makes an iterator that returns the results of a function.
 
-```text
+```py
 itertools.accumulate(iterable[, func])
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5]
 >>> result = itertools.accumulate(data, operator.mul)
 >>> for each in result:
@@ -1439,7 +1439,7 @@ Example:
 
 The operator.mul takes two numbers and multiplies them:
 
-```text
+```py
 operator.mul(1, 2)
 2
 operator.mul(2, 3)
@@ -1452,7 +1452,7 @@ operator.mul(24, 5)
 
 Passing a function is optional:
 
-```text
+```py
 >>> data = [5, 2, 6, 4, 5, 9, 1]
 >>> result = itertools.accumulate(data)
 >>> for each in result:
@@ -1468,7 +1468,7 @@ Passing a function is optional:
 
 If no function is designated the items will be summed:
 
-```text
+```py
 5
 5 + 2 = 7
 7 + 6 = 13
@@ -1482,13 +1482,13 @@ If no function is designated the items will be summed:
 
 Takes an iterable and a integer. This will create all the unique combination that have r members.
 
-```text
+```py
 itertools.combinations(iterable, r)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square',]
 >>> result = itertools.combinations(shapes, 2)
 >>> for each in result:
@@ -1502,13 +1502,13 @@ Example:
 
 Just like combinations\(\), but allows individual elements to be repeated more than once.
 
-```text
+```py
 itertools.combinations_with_replacement(iterable, r)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square']
 >>> result = itertools.combinations_with_replacement(shapes, 2)
 >>> for each in result:
@@ -1525,13 +1525,13 @@ Example:
 
 Makes an iterator that returns evenly spaced values starting with number start.
 
-```text
+```py
 itertools.count(start=0, step=1)
 ```
 
 Example:
 
-```text
+```py
 >>> for i in itertools.count(10,3):
 >>>    print(i)
 >>>    if i > 20:
@@ -1547,13 +1547,13 @@ Example:
 
 This function cycles through an iterator endlessly.
 
-```text
+```py
 itertools.cycle(iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
 >>> for color in itertools.cycle(colors):
 >>>    print(color)
@@ -1573,13 +1573,13 @@ When reached the end of the iterable it start over again from the beginning.
 
 Take a series of iterables and return them as one long iterable.
 
-```text
+```py
 itertools.chain(*iterables)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> shapes = ['circle', 'triangle', 'square', 'pentagon']
 >>> result = itertools.chain(colors, shapes)
@@ -1600,13 +1600,13 @@ pentagon
 
 Filters one iterable with another.
 
-```text
+```py
 itertools.compress(data, selectors)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square', 'pentagon']
 >>> selections = [True, False, True, False]
 >>> result = itertools.compress(shapes, selections)
@@ -1620,13 +1620,13 @@ square
 
 Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.
 
-```text
+```py
 itertools.dropwhile(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.dropwhile(lambda x: x<5, data)
 >>> for each in result:
@@ -1644,13 +1644,13 @@ Example:
 
 Makes an iterator that filters elements from iterable returning only those for which the predicate is False.
 
-```text
+```py
 itertools.filterfalse(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.filterfalse(lambda x: x<5, data)
 >>> for each in result:
@@ -1667,13 +1667,13 @@ Example:
 
 Simply put, this function groups things together.
 
-```text
+```py
 itertools.groupby(iterable, key=None)
 ```
 
 Example:
 
-```text
+```py
 >>> robots = [{
     'name': 'blaster',
     'faction': 'autobot'
@@ -1710,13 +1710,13 @@ decepticon
 
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
-```text
+```py
 itertools.islice(iterable, start, stop[, step])
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue',]
 >>> few_colors = itertools.islice(colors, 2)
 >>> for each in few_colors:
@@ -1727,13 +1727,13 @@ orange
 
 #### permutations\(\) <a id="permutations()"></a>
 
-```text
+```py
 itertools.permutations(iterable, r=None)
 ```
 
 Example:
 
-```text
+```py
 >>> alpha_data = ['a', 'b', 'c']
 >>> result = itertools.permutations(alpha_data)
 >>> for each in result:
@@ -1750,7 +1750,7 @@ Example:
 
 Creates the cartesian products from a series of iterables.
 
-```text
+```py
 >>> num_data = [1, 2, 3]
 >>> alpha_data = ['a', 'b', 'c']
 >>> result = itertools.product(num_data, alpha_data)
@@ -1771,13 +1771,13 @@ Creates the cartesian products from a series of iterables.
 
 This function will repeat an object over and over again. Unless, there is a times argument.
 
-```text
+```py
 itertools.repeat(object[, times])
 ```
 
 Example:
 
-```text
+```py
 >>> for i in itertools.repeat("spam", 3):
     print(i)
 spam
@@ -1789,13 +1789,13 @@ spam
 
 Makes an iterator that computes the function using arguments obtained from the iterable.
 
-```text
+```py
 itertools.starmap(function, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [(2, 6), (8, 4), (7, 3)]
 >>> result = itertools.starmap(operator.mul, data)
 >>> for each in result:
@@ -1809,13 +1809,13 @@ Example:
 
 The opposite of dropwhile\(\). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
-```text
+```py
 itertools.takewhile(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.takewhile(lambda x: x<5, data)
 >>> for each in result:
@@ -1830,13 +1830,13 @@ Example:
 
 Return n independent iterators from a single iterable.
 
-```text
+```py
 itertools.tee(iterable, n=2)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in alpha_colors:
@@ -1848,7 +1848,7 @@ green
 blue
 ```
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in beta_colors:
@@ -1864,13 +1864,13 @@ blue
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
-```text
+```py
 itertools.zip_longest(*iterables, fillvalue=None)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue',]
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
 >>> for each in itertools.zip_longest(colors, data, fillvalue=None):
@@ -1891,7 +1891,7 @@ Example:
 
 #### List comprehension <a id="List-comprehension"></a>
 
-```text
+```py
 >>> a = [1, 3, 5, 7, 9, 11]
 
 >>> [i - 1 for i in a]
@@ -1900,7 +1900,7 @@ Example:
 
 #### Set comprehension <a id="Set-comprehension"></a>
 
-```text
+```py
 >>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
 {"ABC", "DEF"}
@@ -1908,7 +1908,7 @@ Example:
 
 #### Dict comprehension <a id="Dict-comprehension"></a>
 
-```text
+```py
 >>> c = {'name': 'Pooka', 'age': 5}
 >>> {v: k for k, v in c.items()}
 {'Pooka': 'name', 5: 'age'}
@@ -1916,7 +1916,7 @@ Example:
 
 A List comprehension can be generated from a dictionary:
 
-```text
+```py
 >>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
 >>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
 ['NAME:POOKA', 'FIRST_NAME:OOOKA']
@@ -1936,7 +1936,7 @@ A List comprehension can be generated from a dictionary:
 
 Example:
 
-```text
+```py
 >>> print("Hello there!\nHow are you?\nI\'m doing fine.")
 Hello there!
 How are you?
@@ -1947,7 +1947,7 @@ I'm doing fine.
 
 A raw string completely ignores all escape characters and prints any backslash that appears in the string.
 
-```text
+```py
 >>> print(r'That is Carol\'s cat.')
 That is Carol\'s cat.
 ```
@@ -1956,7 +1956,7 @@ Note: mostly used for regular expression definition \(see `re` package\)
 
 #### Multiline Strings with Triple Quotes <a id="Multiline-Strings-with-Triple-Quotes"></a>
 
-```text
+```py
 >>> print('''Dear Alice,
 >>>
 >>> Eve's cat has been arrested for catnapping, cat burglary, and extortion.
@@ -1973,7 +1973,7 @@ Bob
 
 To keep a nicer flow in your code, you can use the `dedent` function from the `textwrap` standard package.
 
-```text
+```py
 >>> from textwrap import dedent
 >>>
 >>> def my_function():
@@ -1991,62 +1991,62 @@ This generates the same string than before.
 
 #### Indexing and Slicing Strings <a id="Indexing-and-Slicing-Strings"></a>
 
-```text
+```py
 H   e   l   l   o       w   o   r   l   d    !
 0   1   2   3   4   5   6   7   8   9   10   11
 ```
 
-```text
+```py
 >>> spam = 'Hello world!'
 
 >>> spam[0]
 'H'
 ```
 
-```text
+```py
 >>> spam[4]
 'o'
 ```
 
-```text
+```py
 >>> spam[-1]
 '!'
 ```
 
 Slicing:
 
-```text
+```py
 
 >>> spam[0:5]
 'Hello'
 ```
 
-```text
+```py
 >>> spam[:5]
 'Hello'
 ```
 
-```text
+```py
 >>> spam[6:]
 'world!'
 ```
 
-```text
+```py
 >>> spam[6:-1]
 'world'
 ```
 
-```text
+```py
 >>> spam[:-1]
 'Hello world'
 ```
 
-```text
+```py
 >>> spam[::-1]
 '!dlrow olleH'
 ```
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> fizz = spam[0:5]
 >>> fizz
@@ -2055,40 +2055,40 @@ Slicing:
 
 #### The in and not in Operators with Strings <a id="The-in-and-not-in-Operators-with-Strings"></a>
 
-```text
+```py
 >>> 'Hello' in 'Hello World'
 True
 ```
 
-```text
+```py
 >>> 'Hello' in 'Hello'
 True
 ```
 
-```text
+```py
 >>> 'HELLO' in 'Hello World'
 False
 ```
 
-```text
+```py
 >>> '' in 'spam'
 True
 ```
 
-```text
+```py
 >>> 'cats' not in 'cats and dogs'
 False
 ```
 
 #### The in and not in Operators with list <a id="The-in-and-not-in-Operators-with-list"></a>
 
-```text
+```py
 >>> a = [1, 2, 3, 4]
 >>> 5 in a
 False
 ```
 
-```text
+```py
 >>> 2 in a
 True
 ```
@@ -2097,14 +2097,14 @@ True
 
 `upper()` and `lower()`:
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> spam = spam.upper()
 >>> spam
 'HELLO WORLD!'
 ```
 
-```text
+```py
 >>> spam = spam.lower()
 >>> spam
 'hello world!'
@@ -2112,33 +2112,33 @@ True
 
 isupper\(\) and islower\(\):
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> spam.islower()
 False
 ```
 
-```text
+```py
 >>> spam.isupper()
 False
 ```
 
-```text
+```py
 >>> 'HELLO'.isupper()
 True
 ```
 
-```text
+```py
 >>> 'abc12345'.islower()
 True
 ```
 
-```text
+```py
 >>> '12345'.islower()
 False
 ```
 
-```text
+```py
 >>> '12345'.isupper()
 False
 ```
@@ -2153,32 +2153,32 @@ False
 
 #### The startswith\(\) and endswith\(\) String Methods <a id="The-startswith()-and-endswith()-String-Methods"></a>
 
-```text
+```py
 >>> 'Hello world!'.startswith('Hello')
 True
 ```
 
-```text
+```py
 >>> 'Hello world!'.endswith('world!')
 True
 ```
 
-```text
+```py
 >>> 'abc123'.startswith('abcdef')
 False
 ```
 
-```text
+```py
 >>> 'abc123'.endswith('12')
 False
 ```
 
-```text
+```py
 >>> 'Hello world!'.startswith('Hello world!')
 True
 ```
 
-```text
+```py
 >>> 'Hello world!'.endswith('Hello world!')
 True
 ```
@@ -2187,34 +2187,34 @@ True
 
 join\(\):
 
-```text
+```py
 >>> ', '.join(['cats', 'rats', 'bats'])
 'cats, rats, bats'
 ```
 
-```text
+```py
 >>> ' '.join(['My', 'name', 'is', 'Simon'])
 'My name is Simon'
 ```
 
-```text
+```py
 >>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
 'MyABCnameABCisABCSimon'
 ```
 
 split\(\):
 
-```text
+```py
 >>> 'My name is Simon'.split()
 ['My', 'name', 'is', 'Simon']
 ```
 
-```text
+```py
 >>> 'MyABCnameABCisABCSimon'.split('ABC')
 ['My', 'name', 'is', 'Simon']
 ```
 
-```text
+```py
 >>> 'My name is Simon'.split('m')
 ['My na', 'e is Si', 'on']
 ```
@@ -2223,69 +2223,69 @@ split\(\):
 
 rjust\(\) and ljust\(\):
 
-```text
+```py
 >>> 'Hello'.rjust(10)
 '     Hello'
 ```
 
-```text
+```py
 >>> 'Hello'.rjust(20)
 '               Hello'
 ```
 
-```text
+```py
 >>> 'Hello World'.rjust(20)
 '         Hello World'
 ```
 
-```text
+```py
 >>> 'Hello'.ljust(10)
 'Hello     '
 ```
 
 An optional second argument to rjust\(\) and ljust\(\) will specify a fill character other than a space character. Enter the following into the interactive shell:
 
-```text
+```py
 >>> 'Hello'.rjust(20, '*')
 '***************Hello'
 ```
 
-```text
+```py
 >>> 'Hello'.ljust(20, '-')
 'Hello---------------'
 ```
 
 center\(\):
 
-```text
+```py
 >>> 'Hello'.center(20)
 '       Hello       '
 ```
 
-```text
+```py
 >>> 'Hello'.center(20, '=')
 '=======Hello========'
 ```
 
 #### Removing Whitespace with strip\(\), rstrip\(\), and lstrip\(\) <a id="Removing-Whitespace-with-strip(),-rstrip(),-and-lstrip()"></a>
 
-```text
+```py
 >>> spam = '    Hello World     '
 >>> spam.strip()
 'Hello World'
 ```
 
-```text
+```py
 >>> spam.lstrip()
 'Hello World '
 ```
 
-```text
+```py
 >>> spam.rstrip()
 '    Hello World'
 ```
 
-```text
+```py
 >>> spam = 'SpamSpamBaconSpamEggsSpamSpam'
 >>> spam.strip('ampS')
 'BaconSpamEggs'
@@ -2293,7 +2293,7 @@ center\(\):
 
 #### Copying and Pasting Strings with the pyperclip Module \(need pip install\) <a id="Copying-and-Pasting-Strings-with-the-pyperclip-Module-(need-pip-install)"></a>
 
-```text
+```py
 >>> import pyperclip
 
 >>> pyperclip.copy('Hello world!')
@@ -2306,7 +2306,7 @@ center\(\):
 
 #### % operator <a id="%-operator"></a>
 
-```text
+```py
 >>> name = 'Pete'
 >>> 'Hello %s' % name
 "Hello Pete"
@@ -2314,7 +2314,7 @@ center\(\):
 
 We can use the `%x` format specifier to convert an int value to a string:
 
-```text
+```py
 >>> num = 5
 >>> 'I have %x apples' % num
 "I have 5 apples"
@@ -2326,7 +2326,7 @@ Note: For new code, using [str.format](https://www.pythoncheatsheet.org/#string-
 
 Python 3 introduced a new way to do string formatting that was later back-ported to Python 2.7. This makes the syntax for string formatting more regular.
 
-```text
+```py
 >>> name = 'John'
 >>> age = 20'
 
@@ -2334,7 +2334,7 @@ Python 3 introduced a new way to do string formatting that was later back-ported
 "Hello I'm John, my age is 20"
 ```
 
-```text
+```py
 >>> "Hello I'm {0}, my age is {1}".format(name, age)
 "Hello I'm John, my age is 20"
 ```
@@ -2349,26 +2349,26 @@ You would only use `%s` string formatting on functions that can do lazy paramete
 
 Prefer:
 
-```text
+```py
 >>> name = "alice"
 >>> logging.debug("User name: %s", name)
 ```
 
 Over:
 
-```text
+```py
 >>> logging.debug("User name: {}".format(name))
 ```
 
 Or:
 
-```text
+```py
 >>> logging.debug("User name: " + name)
 ```
 
 #### Formatted String Literals or f-strings \(Python 3.6+\) <a id="Formatted-String-Literals-or-f-strings-(Python-3.6+)"></a>
 
-```text
+```py
 >>> name = 'Elizabeth'
 >>> f'Hello {name}!'
 'Hello Elizabeth!
@@ -2376,7 +2376,7 @@ Or:
 
 It is even possible to do inline arithmetic with it:
 
-```text
+```py
 >>> a = 5
 >>> b = 10
 >>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
@@ -2387,7 +2387,7 @@ It is even possible to do inline arithmetic with it:
 
 A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
 
-```text
+```py
 >>> from string import Template
 >>> name = 'Elizabeth'
 >>> t = Template('Hey $name!')
@@ -2404,13 +2404,13 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 
 All the regex functions in Python are in the re module:
 
-```text
+```py
 >>> import re
 ```
 
 #### Matching Regex Objects <a id="Matching-Regex-Objects"></a>
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 >>> mo = phone_num_regex.search('My number is 415-555-4242.')
@@ -2421,7 +2421,7 @@ Phone number found: 415-555-4242
 
 #### Grouping with Parentheses <a id="Grouping-with-Parentheses"></a>
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
 
 >>> mo = phone_num_regex.search('My number is 415-555-4242.')
@@ -2441,7 +2441,7 @@ Phone number found: 415-555-4242
 
 To retrieve all the groups at once: use the groups\(\) method—note the plural form for the name.
 
-```text
+```py
 >>> mo.groups()
 ('415', '555-4242')
 
@@ -2458,7 +2458,7 @@ To retrieve all the groups at once: use the groups\(\) method—note the plural 
 
 The \| character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression r'Batman\|Tina Fey' will match either 'Batman' or 'Tina Fey'.
 
-```text
+```py
 >>> hero_regex = re.compile (r'Batman|Tina Fey')
 
 >>> mo1 = hero_regex.search('Batman and Tina Fey.')
@@ -2474,7 +2474,7 @@ The \| character is called a pipe. You can use it anywhere you want to match one
 
 You can also use the pipe to match one of several patterns as part of your regex:
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
 
 >>> mo = bat_regex.search('Batmobile lost a wheel')
@@ -2490,7 +2490,7 @@ You can also use the pipe to match one of several patterns as part of your regex
 
 The ? character flags the group that precedes it as an optional part of the pattern.
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)?man')
 >>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
@@ -2505,7 +2505,7 @@ The ? character flags the group that precedes it as an optional part of the patt
 
 The \* \(called the star or asterisk\) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)*man')
 >>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
@@ -2524,20 +2524,20 @@ The \* \(called the star or asterisk\) means “match zero or more”—the grou
 
 While \* means “match zero or more,” the + \(or plus\) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)+man')
 >>> mo1 = bat_regex.search('The Adventures of Batwoman')
 >>> mo1.group()
 'Batwoman'
 ```
 
-```text
+```py
 >>> mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 >>> mo2.group()
 'Batwowowowoman'
 ```
 
-```text
+```py
 >>> mo3 = bat_regex.search('The Adventures of Batman')
 >>> mo3 is None
 True
@@ -2549,14 +2549,14 @@ If you have a group that you want to repeat a specific number of times, follow t
 
 Instead of one number, you can specify a range by writing a minimum, a comma, and a maximum in between the curly brackets. For example, the regex \(Ha\){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
 
-```text
+```py
 >>> ha_regex = re.compile(r'(Ha){3}')
 >>> mo1 = ha_regex.search('HaHaHa')
 >>> mo1.group()
 'HaHaHa'
 ```
 
-```text
+```py
 >>> mo2 = ha_regex.search('Ha')
 >>> mo2 is None
 True
@@ -2566,14 +2566,14 @@ True
 
 Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
-```text
+```py
 >>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
 >>> mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 >>> mo1.group()
 'HaHaHaHaHa'
 ```
 
-```text
+```py
 >>> nongreedy_ha_regex = re.compile(r'(Ha){3,5}?')
 >>> mo2 = nongreedy_ha_regex.search('HaHaHaHaHa')
 >>> mo2.group()
@@ -2584,7 +2584,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 
 In addition to the search\(\) method, Regex objects also have a findall\(\) method. While search\(\) will return a Match object of the first matched text in the searched string, the findall\(\) method will return the strings of every match in the searched string.
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
 
 >>> phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
@@ -2600,7 +2600,7 @@ To summarize what the findall\(\) method returns, remember the following:
 
 There are times when you want to match a set of characters but the shorthand character classes \(\d, \w, \s, and so on\) are too broad. You can define your own character class using square brackets. For example, the character class \[aeiouAEIOU\] will match any vowel, both lowercase and uppercase.
 
-```text
+```py
 >>> vowel_regex = re.compile(r'[aeiouAEIOU]')
 
 >>> vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
@@ -2611,7 +2611,7 @@ You can also include ranges of letters or numbers by using a hyphen. For example
 
 By placing a caret character \(^\) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
 
-```text
+```py
 >>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
 
 >>> consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
@@ -2627,7 +2627,7 @@ By placing a caret character \(^\) just after the character class’s opening br
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
-```text
+```py
 >>> begins_with_hello = re.compile(r'^Hello')
 
 >>> begins_with_hello.search('Hello world!')
@@ -2639,7 +2639,7 @@ True
 
 The r'\d\$' regular expression string matches strings that end with a numeric character from 0 to 9:
 
-```text
+```py
 >>> whole_string_is_num = re.compile(r'^\d+$')
 
 >>> whole_string_is_num.search('1234567890')
@@ -2656,7 +2656,7 @@ True
 
 The . \(or dot\) character in a regular expression is called a wildcard and will match any character except for a newline:
 
-```text
+```py
 >>> at_regex = re.compile(r'.at')
 
 >>> at_regex.findall('The cat in the hat sat on the flat mat.')
@@ -2665,7 +2665,7 @@ The . \(or dot\) character in a regular expression is called a wildcard and will
 
 #### Matching Everything with Dot-Star <a id="Matching-Everything-with-Dot-Star"></a>
 
-```text
+```py
 >>> name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
 
 >>> mo = name_regex.search('First Name: Al Last Name: Sweigart')
@@ -2674,21 +2674,21 @@ The . \(or dot\) character in a regular expression is called a wildcard and will
 'Al'
 ```
 
-```text
+```py
 >>> mo.group(2)
 'Sweigart'
 ```
 
 The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark \(.\*?\). The question mark tells Python to match in a nongreedy way:
 
-```text
+```py
 >>> nongreedy_regex = re.compile(r'<.*?>')
 >>> mo = nongreedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
 '<To serve man>'
 ```
 
-```text
+```py
 >>> greedy_regex = re.compile(r'<.*>')
 >>> mo = greedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
@@ -2699,13 +2699,13 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 
 The dot-star will match everything except a newline. By passing re.DOTALL as the second argument to re.compile\(\), you can make the dot character match all characters, including the newline character:
 
-```text
+```py
 >>> no_newline_regex = re.compile('.*')
 >>> no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.'
 ```
 
-```text
+```py
 >>> newline_regex = re.compile('.*', re.DOTALL)
 >>> newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
@@ -2735,19 +2735,19 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a second argument to re.compile\(\):
 
-```text
+```py
 >>> robocop = re.compile(r'robocop', re.I)
 
 >>> robocop.search('Robocop is part man, part machine, all cop.').group()
 'Robocop'
 ```
 
-```text
+```py
 >>> robocop.search('ROBOCOP protects the innocent.').group()
 'ROBOCOP'
 ```
 
-```text
+```py
 >>> robocop.search('Al, why does your programming book talk about robocop so much?').group()
 'robocop'
 ```
@@ -2761,7 +2761,7 @@ The sub\(\) method for Regex objects is passed two arguments:
 
 The sub\(\) method returns a string with the substitutions applied:
 
-```text
+```py
 >>> names_regex = re.compile(r'Agent \w+')
 
 >>> names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
@@ -2770,7 +2770,7 @@ The sub\(\) method returns a string with the substitutions applied:
 
 Another example:
 
-```text
+```py
 >>> agent_names_regex = re.compile(r'Agent (\w)\w*')
 
 >>> agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
@@ -2783,13 +2783,13 @@ To tell the re.compile\(\) function to ignore whitespace and comments inside the
 
 Now instead of a hard-to-read regular expression like this:
 
-```text
+```py
 phone_regex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
 ```
 
 you can spread the regular expression over multiple lines with comments like this:
 
-```text
+```py
 phone_regex = re.compile(r'''(
     (\d{3}|\(\d{3}\))?            # area code
     (\s|-|\.)?                    # separator
@@ -2812,7 +2812,7 @@ Fortunately, Python provides easy ways to handle this. We will showcase how to d
 
 Using `os.path.join` on Windows:
 
-```text
+```py
 >>> import os
 
 >>> os.path.join('usr', 'bin', 'spam')
@@ -2821,7 +2821,7 @@ Using `os.path.join` on Windows:
 
 And using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 
 >>> print(Path('usr').joinpath('bin').joinpath('spam'))
@@ -2830,7 +2830,7 @@ usr/bin/spam
 
 `pathlib` also provides a shortcut to joinpath using the `/` operator:
 
-```text
+```py
 >>> from pathlib import Path
 
 >>> print(Path('usr') / 'bin' / 'spam')
@@ -2843,7 +2843,7 @@ Joining paths is helpful if you need to create different file paths under the sa
 
 Using `os.path.join` on Windows:
 
-```text
+```py
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 
 >>> for filename in my_files:
@@ -2855,7 +2855,7 @@ C:\Users\asweigart\invite.docx
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 >>> home = Path.home()
 >>> for filename in my_files:
@@ -2869,7 +2869,7 @@ Using `pathlib` on \*nix:
 
 Using `os` on Windows:
 
-```text
+```py
 >>> import os
 
 >>> os.getcwd()
@@ -2882,7 +2882,7 @@ Using `os` on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> from os import chdir
 
@@ -2898,14 +2898,14 @@ Using `pathlib` on \*nix:
 
 Using `os` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.makedirs('C:\\delicious\\walnut\\waffles')
 ```
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> cwd = Path.cwd()
 >>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
@@ -2920,7 +2920,7 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/asweigart/delicio
 
 Oh no, we got a nasty error! The reason is that the 'delicious' directory does not exist, so we cannot make the 'walnut' and the 'waffles' directories under it. To fix this, do:
 
-```text
+```py
 >>> from pathlib import Path
 >>> cwd = Path.cwd()
 >>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir(parents=True)
@@ -2943,7 +2943,7 @@ To see if a path is an absolute path:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isabs('/')
 True
@@ -2953,7 +2953,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('/').is_absolute()
 True
@@ -2965,7 +2965,7 @@ You can extract an absolute path with both `os.path` and `pathlib`
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.getcwd()
 '/home/asweigart'
@@ -2975,7 +2975,7 @@ Using `os.path` on \*nix:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 from pathlib import Path
 print(Path.cwd())
 /home/asweigart
@@ -2987,7 +2987,7 @@ You can get a relative path from a starting path to another path.
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.relpath('/etc/passwd', '/')
 'etc/passwd'
@@ -2995,7 +2995,7 @@ Using `os.path` on \*nix:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> print(Path('/etc/passwd').relative_to('/'))
 etc/passwd
@@ -3007,7 +3007,7 @@ Checking if a file/directory exists:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 import os
 >>> os.path.exists('.')
 True
@@ -3021,7 +3021,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 from pathlib import Path
 >>> Path('.').exists()
 True
@@ -3037,7 +3037,7 @@ Checking if a path is a file:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isfile('setup.py')
 True
@@ -3049,7 +3049,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('setup.py').is_file()
 True
@@ -3063,7 +3063,7 @@ Checking if a path is a directory:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isdir('/')
 True
@@ -3075,7 +3075,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('/').is_dir()
 True
@@ -3091,7 +3091,7 @@ Getting a file's size in bytes:
 
 Using `os.path` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.path.getsize('C:\\Windows\\System32\\calc.exe')
 776192
@@ -3099,7 +3099,7 @@ Using `os.path` on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> stat = Path('/bin/python3.6').stat()
 >>> print(stat) # stat contains some other information about the file as well
@@ -3112,7 +3112,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 
 Listing directory contents using `os.listdir` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.listdir('C:\\Windows\\System32')
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
@@ -3122,7 +3122,7 @@ Listing directory contents using `os.listdir` on Windows:
 
 Listing directory contents using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> for f in Path('/usr/bin').iterdir():
 >>>     print(f)
@@ -3145,7 +3145,7 @@ To find the total size of all the files in this directory:
 
 Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
-```text
+```py
 >>> import os
 >>> total_size = 0
 
@@ -3158,7 +3158,7 @@ Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> total_size = 0
 
@@ -3173,7 +3173,7 @@ Using `pathlib` on \*nix:
 
 The shutil module provides functions for copying files, as well as entire folders.
 
-```text
+```py
 >>> import shutil, os
 
 >>> os.chdir('C:\\')
@@ -3187,7 +3187,7 @@ The shutil module provides functions for copying files, as well as entire folder
 
 While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an entire folder and every folder and file contained in it:
 
-```text
+```py
 >>> import shutil, os
 
 >>> os.chdir('C:\\')
@@ -3198,7 +3198,7 @@ While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an 
 
 #### Moving and Renaming Files and Folders <a id="Moving-and-Renaming-Files-and-Folders"></a>
 
-```text
+```py
 >>> import shutil
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
 'C:\\eggs\\bacon.txt'
@@ -3206,14 +3206,14 @@ While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an 
 
 The destination path can also specify a filename. In the following example, the source file is moved and renamed:
 
-```text
+```py
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
 'C:\\eggs\\new_bacon.txt'
 ```
 
 If there is no eggs folder, then move\(\) will rename bacon.txt to a file named eggs.
 
-```text
+```py
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
 'C:\\eggs'
 ```
@@ -3228,7 +3228,7 @@ If there is no eggs folder, then move\(\) will rename bacon.txt to a file named 
 
 You can install this module by running pip install send2trash from a Terminal window.
 
-```text
+```py
 >>> import send2trash
 
 >>> with open('bacon.txt', 'a') as bacon_file: # creates the file
@@ -3240,7 +3240,7 @@ You can install this module by running pip install send2trash from a Terminal wi
 
 #### Walking a Directory Tree <a id="Walking-a-Directory-Tree"></a>
 
-```text
+```py
 >>> import os
 >>>
 >>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
@@ -3278,7 +3278,7 @@ To read/write to a file in Python, you will want to use the `with` statement, wh
 
 #### Opening and reading files with the open\(\) function <a id="Opening-and-reading-files-with-the-open()-function"></a>
 
-```text
+```py
 >>> with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
 ...     hello_content = hello_file.read()
 >>> hello_content
@@ -3305,7 +3305,7 @@ And look upon myself and curse my fate,
 
 #### Writing to Files <a id="Writing-to-Files"></a>
 
-```text
+```py
 >>> with open('bacon.txt', 'w') as bacon_file:
 ...     bacon_file.write('Hello world!\n')
 13
@@ -3326,7 +3326,7 @@ Bacon is not a vegetable.
 
 To save variables:
 
-```text
+```py
 >>> import shelve
 
 >>> cats = ['Zophie', 'Pooka', 'Simon']
@@ -3336,7 +3336,7 @@ To save variables:
 
 To open and read variables:
 
-```text
+```py
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(type(shelf_file))
 ...     print(shelf_file['cats'])
@@ -3346,7 +3346,7 @@ To open and read variables:
 
 Just like dictionaries, shelf values have keys\(\) and values\(\) methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the list\(\) function to get them in list form.
 
-```text
+```py
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(list(shelf_file.keys()))
 ...     print(list(shelf_file.values()))
@@ -3356,7 +3356,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 #### Saving Variables with the pprint.pformat\(\) Function <a id="Saving-Variables-with-the-pprint.pformat()-Function"></a>
 
-```text
+```py
 >>> import pprint
 
 >>> cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
@@ -3371,7 +3371,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 #### Reading ZIP Files <a id="Reading-ZIP-Files"></a>
 
-```text
+```py
 >>> import zipfile, os
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
@@ -3392,7 +3392,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 The extractall\(\) method for ZipFile objects extracts all the files and folders from a ZIP file into the current working directory.
 
-```text
+```py
 >>> import zipfile, os
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
@@ -3403,7 +3403,7 @@ The extractall\(\) method for ZipFile objects extracts all the files and folders
 
 The extract\(\) method for ZipFile objects will extract a single file from the ZIP file. Continue the interactive shell example:
 
-```text
+```py
 >>> with zipfile.ZipFile('example.zip') as example_zip:
 ...     print(example_zip.extract('spam.txt'))
 ...     print(example_zip.extract('spam.txt', 'C:\\some\\new\\folders'))
@@ -3413,7 +3413,7 @@ The extract\(\) method for ZipFile objects will extract a single file from the Z
 
 #### Creating and Adding to ZIP Files <a id="Creating-and-Adding-to-ZIP-Files"></a>
 
-```text
+```py
 >>> import zipfile
 
 >>> with zipfile.ZipFile('new.zip', 'w') as new_zip:
@@ -3428,7 +3428,7 @@ This code will create a new ZIP file named new.zip that has the compressed conte
 
 Open a JSON file with:
 
-```text
+```py
 import json
 with open("filename.json", "r") as f:
     content = json.loads(f.read())
@@ -3436,7 +3436,7 @@ with open("filename.json", "r") as f:
 
 Write a JSON file with:
 
-```text
+```py
 import json
 
 content = {"name": "Joe", "age": 20}
@@ -3459,7 +3459,7 @@ The first one it easier to use but the second one, Ruamel, implements much bette
 
 Open a YAML file with:
 
-```text
+```py
 from ruamel.yaml import YAML
 
 with open("filename.yaml") as f:
@@ -3473,13 +3473,13 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```text
+```py
 pip install anyconfig
 ```
 
 Usage:
 
-```text
+```py
 import anyconfig
 
 conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
@@ -3495,7 +3495,7 @@ Exceptions are raised with a raise statement. In code, a raise statement consist
 * A call to the Exception\(\) function
 * A string with a helpful error message passed to the Exception\(\) function
 
-```text
+```py
 >>> raise Exception('This is the error message.')
 Traceback (most recent call last):
   File "<pyshell#191>", line 1, in <module>
@@ -3505,7 +3505,7 @@ Exception: This is the error message.
 
 Often it’s the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
 
-```text
+```py
 def box_print(symbol, width, height):
     if len(symbol) != 1:
       raise Exception('Symbol must be a single character string.')
@@ -3528,7 +3528,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 
 The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc\(\). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
-```text
+```py
 >>> import traceback
 
 >>> try:
@@ -3543,7 +3543,7 @@ The traceback info was written to errorInfo.txt.
 
 The 116 is the return value from the write\(\) method, since 116 characters were written to the file. The traceback text was written to errorInfo.txt.
 
-```text
+```py
 Traceback (most recent call last):
   File "<pyshell#28>", line 2, in <module>
 Exception: This is the error message.
@@ -3558,7 +3558,7 @@ An assertion is a sanity check to make sure your code isn’t doing something ob
 * A comma
 * A string to display when the condition is False
 
-```text
+```py
 >>> pod_bay_door_status = 'open'
 
 >>> assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
@@ -3583,7 +3583,7 @@ Assertions can be disabled by passing the -O option when running Python.
 
 To enable the logging module to display log messages on your screen as your program runs, copy the following to the top of your program \(but under the \#! python shebang line\):
 
-```text
+```py
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
@@ -3591,7 +3591,7 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %
 
 Say you wrote a function to calculate the factorial of a number. In mathematics, factorial 4 is 1 × 2 × 3 × 4, or 24. Factorial 7 is 1 × 2 × 3 × 4 × 5 × 6 × 7, or 5,040. Open a new file editor window and enter the following code. It has a bug in it, but you will also enter several log messages to help yourself figure out what is going wrong. Save the program as factorialLog.py.
 
-```text
+```py
 >>> import logging
 >>>
 >>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
@@ -3642,7 +3642,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 
 After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable\(\) function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
 
-```text
+```py
 >>> import logging
 
 >>> logging.basicConfig(level=logging.INFO, format=' %(asctime)s -%(levelname)s - %(message)s')
@@ -3661,7 +3661,7 @@ After you’ve debugged your program, you probably don’t want all these log me
 
 Instead of displaying the log messages to the screen, you can write them to a text file. The logging.basicConfig\(\) function takes a filename keyword argument, like so:
 
-```text
+```py
 import logging
 
 logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -3671,7 +3671,7 @@ logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(
 
 This function:
 
-```text
+```py
 >>> def add(x, y):
         return x + y
 
@@ -3681,7 +3681,7 @@ This function:
 
 Is equivalent to the _lambda_ function:
 
-```text
+```py
 >>> add = lambda x, y: x + y
 >>> add(5, 3)
 8
@@ -3689,14 +3689,14 @@ Is equivalent to the _lambda_ function:
 
 It's not even need to bind it to a name like add before:
 
-```text
+```py
 >>> (lambda x, y: x + y)(5, 3)
 8
 ```
 
 Like regular nested functions, lambdas also work as lexical closures:
 
-```text
+```py
 >>> def make_adder(n):
         return lambda x: x + n
 
@@ -3715,13 +3715,13 @@ Note: lambda can only evaluate an expression, like a single line of code.
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
 
-```text
+```py
 <expression1> if <condition> else <expression2>
 ```
 
 Example:
 
-```text
+```py
 >>> age = 15
 
 >>> print('kid' if age < 18 else 'adult')
@@ -3730,7 +3730,7 @@ kid
 
 Ternary operators can be chained:
 
-```text
+```py
 >>> age = 15
 
 >>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
@@ -3739,7 +3739,7 @@ teenager
 
 The code above is equivalent to:
 
-```text
+```py
 if age < 18:
     if age < 13:
         print('kid')
@@ -3758,7 +3758,7 @@ The names `args and kwargs` are arbitrary - the important thing are the `*` and 
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
-```text
+```py
 def forward(f, *args, **kwargs):
     return f(*args, **kwargs)
 ```
@@ -3767,7 +3767,7 @@ Inside forward, args is a tuple \(of all positional arguments except the first o
 
 You use `*args` when you have an indefinite amount of positional arguments.
 
-```text
+```py
 >>> def fruits(*args):
 >>>    for fruit in args:
 >>>       print(fruit)
@@ -3781,7 +3781,7 @@ You use `*args` when you have an indefinite amount of positional arguments.
 
 Similarly, you use `**kwargs` when you have an indefinite number of keyword arguments.
 
-```text
+```py
 >>> def fruit(**kwargs):
 >>>    for key, value in kwargs.items():
 >>>        print("{0}: {1}".format(key, value))
@@ -3792,7 +3792,7 @@ name: apple
 color: red
 ```
 
-```text
+```py
 >>> def show(arg1, arg2, *args, kwarg1=None, kwarg2=None, **kwargs):
 >>>   print(arg1)
 >>>   print(arg2)
@@ -3855,7 +3855,7 @@ A context manager is an object that is notified when a context \(a block of code
 
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
 
-```text
+```py
 >>> with open(filename) as f:
 >>>     file_contents = f.read()
 
@@ -3868,7 +3868,7 @@ Anything that ends execution of the block causes the context manager's exit meth
 
 It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
-```text
+```py
 >>> import contextlib
 >>> @contextlib.contextmanager
 ... def context_manager(num):
@@ -3893,7 +3893,7 @@ Exit
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
-```text
+```py
 >>> if __name__ == "__main__":
 ...     # execute only if run as a script
 ...     main()
@@ -3903,7 +3903,7 @@ For a package, the same effect can be achieved by including a **main**.py module
 
 For example we are developing script which is designed to be used as module, we should do:
 
-```text
+```py
 >>> # Python program to execute function directly
 >>> def add(a, b):
 ...     return a+b
@@ -3935,7 +3935,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```text
+```py
 python setup.py install
 ```
 
@@ -3943,7 +3943,7 @@ and module will install itself.
 
 Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
 
-```text
+```py
 >>> from distutils.core import setup
 >>> setup(
 ...    name='pythonCheatsheet',
@@ -3969,7 +3969,7 @@ Python 3.7 provides a decorator dataclass that is used to convert a class into a
 
 python 2.7
 
-```text
+```py
 >>> class Number:
 ...     def __init__(self, val):
 ...         self.val = val
@@ -3981,7 +3981,7 @@ python 2.7
 
 with dataclass
 
-```text
+```py
 >>> @dataclass
 ... class Number:
 ...     val: int
@@ -3995,7 +3995,7 @@ with dataclass
 
 It is easy to add default values to the fields of your data class.
 
-```text
+```py
 >>> @dataclass
 ... class Product:
 ...     name: str
@@ -4015,7 +4015,7 @@ Python
 
 It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
-```text
+```py
 >>> from dataclasses import dataclass
 >>> from typing import Any
 
@@ -4034,13 +4034,13 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 1. Install virtualenv
 
-   ```text
+   ```py
    pip install virtualenv
    ```
 
 2. Install virtualenvwrapper-win \(Windows\)
 
-   ```text
+   ```py
    pip install virtualenvwrapper-win
    ```
 
@@ -4048,7 +4048,7 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```text
+   ```py
    mkvirtualenv HelloWold
    ```
 
@@ -4058,7 +4058,7 @@ Usage:
 
    To bind our virtualenv with our current working directory we simply enter:
 
-   ```text
+   ```py
    setprojectdir .
    ```
 
@@ -4066,7 +4066,7 @@ Usage:
 
    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
 
-   ```text
+   ```py
    deactivate
    ```
 
@@ -4076,7 +4076,7 @@ Usage:
 
    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
 
-   ```text
+   ```py
    workon HelloWold
    ```
 
@@ -4086,19 +4086,19 @@ Usage:
 
 1. Install Poetry
 
-   ```text
+   ```py
    pip install --user poetry
    ```
 
 2. Create a new project
 
-   ```text
+   ```py
    poetry new my-project
    ```
 
    This will create a my-project directory:
 
-   ```text
+   ```py
    my-project
    ├── pyproject.toml
    ├── README.rst
@@ -4111,7 +4111,7 @@ Usage:
 
    The pyproject.toml file will orchestrate your project and its dependencies:
 
-   ```text
+   ```py
    [tool.poetry]
    name = "my-project"
    version = "0.1.0"
@@ -4129,26 +4129,26 @@ Usage:
 
    To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
 
-   ```text
+   ```py
    [tool.poetry.dependencies]
    pendulum = "^1.4"
    ```
 
    Also, instead of modifying the pyproject.toml file by hand, you can use the add command and it will automatically find a suitable version constraint.
 
-   ```text
+   ```py
    $ poetry add pendulum
    ```
 
    To install the dependencies listed in the pyproject.toml:
 
-   ```text
+   ```py
    poetry install
    ```
 
    To remove dependencies:
 
-   ```text
+   ```py
    poetry remove pendulum
    ```
 
@@ -4160,13 +4160,13 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 1. Install pipenv
 
-   ```text
+   ```py
    pip install pipenv
    ```
 
 2. Enter your Project directory and install the Packages for your project
 
-   ```text
+   ```py
    cd my_project
    pipenv install <package>
    ```
@@ -4175,19 +4175,19 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 3. Uninstall Packages
 
-   ```text
+   ```py
    pipenv uninstall <package>
    ```
 
 4. Activate the Virtual Environment associated with your Python project
 
-   ```text
+   ```py
    pipenv shell
    ```
 
 5. Exit the Virtual Environment
 
-   ```text
+   ```py
    exit
    ```
 
@@ -4203,13 +4203,13 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```text
+   ```py
    conda create -n HelloWorld
    ```
 
 2. To use the Virtual Environment, activate it by:
 
-   ```text
+   ```py
    conda activate HelloWorld
    ```
 
@@ -4217,7 +4217,7 @@ Usage:
 
 3. Exit the Virtual Environment
 
-   ```text
+   ```py
    conda deactivate
    ```
 
@@ -4439,7 +4439,7 @@ From the [PEP 20 -- The Zen of Python](https://www.python.org/dev/peps/pep-0020/
 
 > Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
 
-```text
+```py
 >>> import this
 The Zen of Python, by Tim Peters
 
@@ -4484,32 +4484,32 @@ From **Highest** to **Lowest** precedence:
 
 Examples of expressions in the interactive shell:
 
-```text
+```py
 >>> 2 + 3 * 6
 20
 ```
 
-```text
+```py
 >>> (2 + 3) * 6
 30
 ```
 
-```text
+```py
 >>> 2 ** 8
 256
 ```
 
-```text
+```py
 >>> 23 // 7
 3
 ```
 
-```text
+```py
 >>> 23 % 7
 2
 ```
 
-```text
+```py
 >>> (5 - 1) * ((7 + 1) / (3 - 1))
 16.0
 ```
@@ -4530,7 +4530,7 @@ Examples of expressions in the interactive shell:
 
 String concatenation:
 
-```text
+```py
 >>> 'Alice' 'Bob'
 'AliceBob'
 ```
@@ -4539,7 +4539,7 @@ Note: Avoid `+` operator for string concatenation. Prefer string formatting.
 
 String Replication:
 
-```text
+```py
 >>> 'Alice' * 5
 'AliceAliceAliceAliceAlice'
 ```
@@ -4557,13 +4557,13 @@ You can name a variable anything as long as it obeys the following rules:
 
 Example:
 
-```text
+```py
 >>> spam = 'Hello'
 >>> spam
 'Hello'
 ```
 
-```text
+```py
 >>> _spam = 'Hello'
 ```
 
@@ -4575,20 +4575,20 @@ Example:
 
 Inline comment:
 
-```text
+```py
 # This is a comment
 ```
 
 Multiline comment:
 
-```text
+```py
 # This is a
 # multiline comment
 ```
 
 Code with a comment:
 
-```text
+```py
 a = 1  # initialization
 ```
 
@@ -4596,7 +4596,7 @@ Please note the two spaces in front of the comment.
 
 Function docstring:
 
-```text
+```py
 def foo():
     """
     This is a function docstring
@@ -4609,12 +4609,12 @@ def foo():
 
 #### The print\(\) Function
 
-```text
+```py
 >>> print('Hello world!')
 Hello world!
 ```
 
-```text
+```py
 >>> a = 1
 >>> print('Hello world!', a)
 Hello world! 1
@@ -4626,7 +4626,7 @@ Hello world! 1
 
 Example Code:
 
-```text
+```py
 >>> print('What is your name?')   # ask for their name
 >>> myName = input()
 >>> print('It is good to meet you, {}'.format(myName))
@@ -4641,14 +4641,14 @@ It is good to meet you, Al
 
 Evaluates to the integer value of the number of characters in a string:
 
-```text
+```py
 >>> len('hello')
 5
 ```
 
 Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct boolean evaluation.
 
-```text
+```py
 >>> a = [1, 2, 3]
 >>> if a:
 >>>     print("the list is not empty!")
@@ -4660,29 +4660,29 @@ Note: test of emptiness of strings, lists, dictionary, etc, should **not** use l
 
 Integer to String or Float:
 
-```text
+```py
 >>> str(29)
 '29'
 ```
 
-```text
+```py
 >>> print('I am {} years old.'.format(str(29)))
 I am 29 years old.
 ```
 
-```text
+```py
 >>> str(-3.14)
 '-3.14'
 ```
 
 Float to Integer:
 
-```text
+```py
 >>> int(7.7)
 7
 ```
 
-```text
+```py
 >>> int(7.7) + 1
 8
 ```
@@ -4706,37 +4706,37 @@ These operators evaluate to True or False depending on the values you give them.
 
 Examples:
 
-```text
+```py
 >>> 42 == 42
 True
 ```
 
-```text
+```py
 >>> 40 == 42
 False
 ```
 
-```text
+```py
 >>> 'hello' == 'hello'
 True
 ```
 
-```text
+```py
 >>> 'hello' == 'Hello'
 False
 ```
 
-```text
+```py
 >>> 'dog' != 'cat'
 True
 ```
 
-```text
+```py
 >>> 42 == 42.0
 True
 ```
 
-```text
+```py
 >>> 42 == '42'
 False
 ```
@@ -4747,31 +4747,31 @@ Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `
 
 NO \(even if they are valid Python\):
 
-```text
+```py
 >>> True == True
 True
 ```
 
-```text
+```py
 >>> True != False
 True
 ```
 
 YES \(even if they are valid Python\):
 
-```text
+```py
 >>> True is True
 True
 ```
 
-```text
+```py
 >>> True is not False
 True
 ```
 
 These statements are equivalent:
 
-```text
+```py
 >>> if a is True:
 >>>    pass
 >>> if a is not False:
@@ -4782,7 +4782,7 @@ These statements are equivalent:
 
 And these as well:
 
-```text
+```py
 >>> if a is False:
 >>>    pass
 >>> if a is not True:
@@ -4826,24 +4826,24 @@ The _not_ Operator’s _Truth_ Table:
 
 #### Mixing Boolean and Comparison Operators
 
-```text
+```py
 >>> (4 < 5) and (5 < 6)
 True
 ```
 
-```text
+```py
 >>> (4 < 5) and (9 < 6)
 False
 ```
 
-```text
+```py
 >>> (1 == 2) or (2 == 2)
 True
 ```
 
 You can also use multiple Boolean operators in an expression, along with the comparison operators:
 
-```text
+```py
 >>> 2 + 2 == 4 and not 2 + 2 == 5 and 2 * 2 == 2 + 2
 True
 ```
@@ -4852,7 +4852,7 @@ True
 
 #### if Statements
 
-```text
+```py
 if name == 'Alice':
     print('Hi, Alice.')
 ```
@@ -4861,7 +4861,7 @@ if name == 'Alice':
 
 #### else Statements
 
-```text
+```py
 name = 'Bob'
 if name == 'Alice':
     print('Hi, Alice.')
@@ -4873,7 +4873,7 @@ else:
 
 #### elif Statements
 
-```text
+```py
 name = 'Bob'
 age = 5
 if name == 'Alice':
@@ -4882,7 +4882,7 @@ elif age < 12:
     print('You are not Alice, kiddo.')
 ```
 
-```text
+```py
 name = 'Bob'
 age = 30
 if name == 'Alice':
@@ -4897,7 +4897,7 @@ else:
 
 #### while Loop Statements
 
-```text
+```py
 spam = 0
 while spam < 5:
     print('Hello, world.')
@@ -4910,7 +4910,7 @@ while spam < 5:
 
 If the execution reaches a break statement, it immediately exits the while loop’s clause:
 
-```text
+```py
 while True:
     print('Please type your name.')
     name = input()
@@ -4925,7 +4925,7 @@ print('Thank you!')
 
 When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
 
-```text
+```py
 while True:
     print('Who are you?')
     name = input()
@@ -4942,7 +4942,7 @@ print('Access granted.')
 
 #### for Loops and the range\(\) Function
 
-```text
+```py
 >>> print('My name is')
 >>> for i in range(5):
 >>>     print('Jimmy Five Times ({})'.format(str(i)))
@@ -4956,7 +4956,7 @@ Jimmy Five Times (4)
 
 The _range\(\)_ function can also be called with three arguments. The first two arguments will be the start and stop values, and the third will be the step argument. The step is the amount that the variable is increased by after each iteration.
 
-```text
+```py
 >>> for i in range(0, 10, 2):
 >>>    print(i)
 0
@@ -4968,7 +4968,7 @@ The _range\(\)_ function can also be called with three arguments. The first two 
 
 You can even use a negative number for the step argument to make the for loop count down instead of up.
 
-```text
+```py
 >>> for i in range(5, -1, -1):
 >>>     print(i)
 5
@@ -4983,7 +4983,7 @@ You can even use a negative number for the step argument to make the for loop co
 
 This allows to specify a statement to execute in case of the full loop has been executed. Only useful when a `break` condition can occur in the loop:
 
-```text
+```py
 >>> for i in [1, 2, 3, 4, 5]:
 >>>    if i == 3:
 >>>        break
@@ -4995,17 +4995,17 @@ This allows to specify a statement to execute in case of the full loop has been 
 
 #### Importing Modules
 
-```text
+```py
 import random
 for i in range(5):
     print(random.randint(1, 10))
 ```
 
-```text
+```py
 import random, sys, os, math
 ```
 
-```text
+```py
 from random import *
 ```
 
@@ -5013,7 +5013,7 @@ from random import *
 
 #### Ending a Program Early with sys.exit\(\)
 
-```text
+```py
 import sys
 
 while True:
@@ -5028,7 +5028,7 @@ while True:
 
 ### Functions
 
-```text
+```py
 >>> def hello(name):
 >>>     print('Hello {}'.format(name))
 >>>
@@ -5047,7 +5047,7 @@ When creating a function using the def statement, you can specify what the retur
 * The return keyword.
 * The value or expression that the function should return.
 
-```text
+```py
 import random
 def getAnswer(answerNumber):
     if answerNumber == 1:
@@ -5078,12 +5078,12 @@ print(fortune)
 
 #### The None Value
 
-```text
+```py
 >>> spam = print('Hello!')
 Hello!
 ```
 
-```text
+```py
 >>> spam is None
 True
 ```
@@ -5094,18 +5094,18 @@ Note: never compare to `None` with the `==` operator. Always use `is`.
 
 #### Keyword Arguments and print\(\)
 
-```text
+```py
 >>> print('Hello', end='')
 >>> print('World')
 HelloWorld
 ```
 
-```text
+```py
 >>> print('cats', 'dogs', 'mice')
 cats dogs mice
 ```
 
-```text
+```py
 >>> print('cats', 'dogs', 'mice', sep=',')
 cats,dogs,mice
 ```
@@ -5125,7 +5125,7 @@ cats,dogs,mice
 
 If you need to modify a global variable from within a function, use the global statement:
 
-```text
+```py
 >>> def spam():
 >>>     global eggs
 >>>     eggs = 'spam'
@@ -5149,7 +5149,7 @@ There are four rules to tell whether a variable is in a local scope or global sc
 
 #### Basic exception handling
 
-```text
+```py
 >>> def spam(divideBy):
 >>>     try:
 >>>         return 42 / divideBy
@@ -5173,7 +5173,7 @@ None
 
 Code inside the `finally` section is always executed, no matter if an exception has been raised or not, and even if an exception is not caught.
 
-```text
+```py
 >>> def spam(divideBy):
 >>>     try:
 >>>         return 42 / divideBy
@@ -5200,7 +5200,7 @@ None
 
 ### Lists
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 
 >>> spam
@@ -5211,23 +5211,23 @@ None
 
 #### Getting Individual Values in a List with Indexes
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[0]
 'cat'
 ```
 
-```text
+```py
 >>> spam[1]
 'bat'
 ```
 
-```text
+```py
 >>> spam[2]
 'rat'
 ```
 
-```text
+```py
 >>> spam[3]
 'elephant'
 ```
@@ -5236,18 +5236,18 @@ None
 
 #### Negative Indexes
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[-1]
 'elephant'
 ```
 
-```text
+```py
 >>> spam[-3]
 'bat'
 ```
 
-```text
+```py
 >>> 'The {} is afraid of the {}.'.format(spam[-1], spam[-3])
 'The elephant is afraid of the bat.'
 ```
@@ -5256,36 +5256,36 @@ None
 
 #### Getting Sublists with Slices
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[0:4]
 ['cat', 'bat', 'rat', 'elephant']
 ```
 
-```text
+```py
 >>> spam[1:3]
 ['bat', 'rat']
 ```
 
-```text
+```py
 >>> spam[0:-1]
 ['cat', 'bat', 'rat']
 ```
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[:2]
 ['cat', 'bat']
 ```
 
-```text
+```py
 >>> spam[1:]
 ['bat', 'rat', 'elephant']
 ```
 
 Slicing the complete list will perform a copy:
 
-```text
+```py
 >>> spam2 = spam[:]
 ['cat', 'bat', 'rat', 'elephant']
 >>> spam.append('dog')
@@ -5299,7 +5299,7 @@ Slicing the complete list will perform a copy:
 
 #### Getting a List’s Length with len\(\)
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'moose']
 >>> len(spam)
 3
@@ -5309,7 +5309,7 @@ Slicing the complete list will perform a copy:
 
 #### Changing Values in a List with Indexes
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> spam[1] = 'aardvark'
 
@@ -5331,7 +5331,7 @@ Slicing the complete list will perform a copy:
 
 #### List Concatenation and List Replication
 
-```text
+```py
 >>> [1, 2, 3] + ['A', 'B', 'C']
 [1, 2, 3, 'A', 'B', 'C']
 
@@ -5350,14 +5350,14 @@ Slicing the complete list will perform a copy:
 
 #### Removing Values from Lists with del Statements
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 >>> del spam[2]
 >>> spam
 ['cat', 'bat', 'elephant']
 ```
 
-```text
+```py
 >>> del spam[2]
 >>> spam
 ['cat', 'bat']
@@ -5367,7 +5367,7 @@ Slicing the complete list will perform a copy:
 
 #### Using for Loops with Lists
 
-```text
+```py
 >>> supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
 >>> for i, supply in enumerate(supplies):
 >>>     print('Index {} in supplies is: {}'.format(str(i), supply))
@@ -5381,7 +5381,7 @@ Index 3 in supplies is: binders
 
 #### Looping Through Multiple Lists with zip\(\)
 
-```text
+```py
 >>> name = ['Pete', 'John', 'Elizabeth']
 >>> age = [6, 23, 44]
 >>> for n, a in zip(name, age):
@@ -5393,23 +5393,23 @@ Elizabeth is 44 years old
 
 #### The in and not in Operators
 
-```text
+```py
 >>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
 True
 ```
 
-```text
+```py
 >>> spam = ['hello', 'hi', 'howdy', 'heyas']
 >>> 'cat' in spam
 False
 ```
 
-```text
+```py
 >>> 'howdy' not in spam
 False
 ```
 
-```text
+```py
 >>> 'cat' not in spam
 True
 ```
@@ -5420,7 +5420,7 @@ True
 
 The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:
 
-```text
+```py
 >>> cat = ['fat', 'orange', 'loud']
 
 >>> size = cat[0]
@@ -5432,7 +5432,7 @@ The multiple assignment trick is a shortcut that lets you assign multiple variab
 
 You could type this line of code:
 
-```text
+```py
 >>> cat = ['fat', 'orange', 'loud']
 
 >>> size, color, disposition = cat
@@ -5440,14 +5440,14 @@ You could type this line of code:
 
 The multiple assignment trick can also be used to swap the values in two variables:
 
-```text
+```py
 >>> a, b = 'Alice', 'Bob'
 >>> a, b = b, a
 >>> print(a)
 'Bob'
 ```
 
-```text
+```py
 >>> print(b)
 'Alice'
 ```
@@ -5466,7 +5466,7 @@ The multiple assignment trick can also be used to swap the values in two variabl
 
 Examples:
 
-```text
+```py
 >>> spam = 'Hello'
 >>> spam += ' world!'
 >>> spam
@@ -5482,7 +5482,7 @@ Examples:
 
 #### Finding a Value in a List with the index\(\) Method
 
-```text
+```py
 >>> spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
 
 >>> spam.index('Pooka')
@@ -5495,7 +5495,7 @@ Examples:
 
 **append\(\)**:
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'bat']
 
 >>> spam.append('moose')
@@ -5506,7 +5506,7 @@ Examples:
 
 **insert\(\)**:
 
-```text
+```py
 >>> spam = ['cat', 'dog', 'bat']
 
 >>> spam.insert(1, 'chicken')
@@ -5519,7 +5519,7 @@ Examples:
 
 #### Removing Values from Lists with remove\(\)
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 
 >>> spam.remove('bat')
@@ -5534,7 +5534,7 @@ If the value appears multiple times in the list, only the first instance of the 
 
 #### Removing Values from Lists with pop\(\)
 
-```text
+```py
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
 
 >>> spam.pop()
@@ -5554,14 +5554,14 @@ If the value appears multiple times in the list, only the first instance of the 
 
 #### Sorting the Values in a List with the sort\(\) Method
 
-```text
+```py
 >>> spam = [2, 5, 3.14, 1, -7]
 >>> spam.sort()
 >>> spam
 [-7, 1, 2, 3.14, 5]
 ```
 
-```text
+```py
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 >>> spam.sort()
 >>> spam
@@ -5570,7 +5570,7 @@ If the value appears multiple times in the list, only the first instance of the 
 
 You can also pass True for the reverse keyword argument to have sort\(\) sort the values in reverse order:
 
-```text
+```py
 >>> spam.sort(reverse=True)
 >>> spam
 ['elephants', 'dogs', 'cats', 'badgers', 'ants']
@@ -5578,7 +5578,7 @@ You can also pass True for the reverse keyword argument to have sort\(\) sort th
 
 If you need to sort the values in regular alphabetical order, pass str. lower for the key keyword argument in the sort\(\) method call:
 
-```text
+```py
 >>> spam = ['a', 'z', 'A', 'Z']
 >>> spam.sort(key=str.lower)
 >>> spam
@@ -5587,7 +5587,7 @@ If you need to sort the values in regular alphabetical order, pass str. lower fo
 
 You can use the built-in function `sorted` to return a new list:
 
-```text
+```py
 >>> spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
 >>> sorted(spam)
 ['ants', 'badgers', 'cats', 'dogs', 'elephants']
@@ -5597,18 +5597,18 @@ You can use the built-in function `sorted` to return a new list:
 
 #### Tuple Data Type
 
-```text
+```py
 >>> eggs = ('hello', 42, 0.5)
 >>> eggs[0]
 'hello'
 ```
 
-```text
+```py
 >>> eggs[1:3]
 (42, 0.5)
 ```
 
-```text
+```py
 >>> len(eggs)
 3
 ```
@@ -5619,17 +5619,17 @@ The main way that tuples are different from lists is that tuples, like strings, 
 
 #### Converting Types with the list\(\) and tuple\(\) Functions
 
-```text
+```py
 >>> tuple(['cat', 'dog', 5])
 ('cat', 'dog', 5)
 ```
 
-```text
+```py
 >>> list(('cat', 'dog', 5))
 ['cat', 'dog', 5]
 ```
 
-```text
+```py
 >>> list('hello')
 ['h', 'e', 'l', 'l', 'o']
 ```
@@ -5640,7 +5640,7 @@ The main way that tuples are different from lists is that tuples, like strings, 
 
 Example Dictionary:
 
-```text
+```py
 myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 ```
 
@@ -5650,7 +5650,7 @@ myCat = {'size': 'fat', 'color': 'gray', 'disposition': 'loud'}
 
 values\(\):
 
-```text
+```py
 >>> spam = {'color': 'red', 'age': 42}
 >>> for v in spam.values():
 >>>     print(v)
@@ -5660,7 +5660,7 @@ red
 
 keys\(\):
 
-```text
+```py
 >>> for k in spam.keys():
 >>>     print(k)
 color
@@ -5669,7 +5669,7 @@ age
 
 items\(\):
 
-```text
+```py
 >>> for i in spam.items():
 >>>     print(i)
 ('color', 'red')
@@ -5678,7 +5678,7 @@ items\(\):
 
 Using the keys\(\), values\(\), and items\(\) methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively.
 
-```text
+```py
 >>> spam = {'color': 'red', 'age': 42}
 >>>
 >>> for k, v in spam.items():
@@ -5691,27 +5691,27 @@ Key: color Value: red
 
 #### Checking Whether a Key or Value Exists in a Dictionary
 
-```text
+```py
 >>> spam = {'name': 'Zophie', 'age': 7}
 ```
 
-```text
+```py
 >>> 'name' in spam.keys()
 True
 ```
 
-```text
+```py
 >>> 'Zophie' in spam.values()
 True
 ```
 
-```text
+```py
 >>> # You can omit the call to keys() when checking for a key
 >>> 'color' in spam
 False
 ```
 
-```text
+```py
 >>> 'color' not in spam
 True
 ```
@@ -5722,14 +5722,14 @@ True
 
 Get has two parameters: key and default value if the key did not exist
 
-```text
+```py
 >>> picnic_items = {'apples': 5, 'cups': 2}
 
 >>> 'I am bringing {} cups.'.format(str(picnic_items.get('cups', 0)))
 'I am bringing 2 cups.'
 ```
 
-```text
+```py
 >>> 'I am bringing {} eggs.'.format(str(picnic_items.get('eggs', 0)))
 'I am bringing 0 eggs.'
 ```
@@ -5740,7 +5740,7 @@ Get has two parameters: key and default value if the key did not exist
 
 Let's consider this code:
 
-```text
+```py
 spam = {'name': 'Pooka', 'age': 5}
 
 if 'color' not in spam:
@@ -5749,23 +5749,23 @@ if 'color' not in spam:
 
 Using `setdefault` we could write the same code more succinctly:
 
-```text
+```py
 >>> spam = {'name': 'Pooka', 'age': 5}
 >>> spam.setdefault('color', 'black')
 'black'
 ```
 
-```text
+```py
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
 
-```text
+```py
 >>> spam.setdefault('color', 'white')
 'black'
 ```
 
-```text
+```py
 >>> spam
 {'color': 'black', 'age': 5, 'name': 'Pooka'}
 ```
@@ -5774,7 +5774,7 @@ Using `setdefault` we could write the same code more succinctly:
 
 #### Pretty Printing
 
-```text
+```py
 >>> import pprint
 >>>
 >>> message = 'It was a bright cold day in April, and the clocks were striking
@@ -5815,7 +5815,7 @@ Using `setdefault` we could write the same code more succinctly:
 
 #### Merge two dictionaries
 
-```text
+```py
 # in Python 3.5+:
 >>> x = {'a': 1, 'b': 2}
 >>> y = {'b': 3, 'c': 4}
@@ -5839,14 +5839,14 @@ From the Python 3 [documentation](https://docs.python.org/3/tutorial/datastructu
 
 There are two ways to create sets: using curly braces `{}` and the built-in function `set()`
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s = set([1, 2, 3])
 ```
 
 When creating an empty set, be sure to not use the curly braces `{}` or you will get an empty dictionary instead.
 
-```text
+```py
 >>> s = {}
 >>> type(s)
 <class 'dict'>
@@ -5856,7 +5856,7 @@ When creating an empty set, be sure to not use the curly braces `{}` or you will
 
 A set automatically remove all the duplicate values.
 
-```text
+```py
 >>> s = {1, 2, 3, 2, 3, 4}
 >>> s
 {1, 2, 3, 4}
@@ -5864,7 +5864,7 @@ A set automatically remove all the duplicate values.
 
 And as an unordered data type, they can't be indexed.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s[0]
 Traceback (most recent call last):
@@ -5877,7 +5877,7 @@ TypeError: 'set' object does not support indexing
 
 Using the `add()` method we can add a single element to the set.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.add(4)
 >>> s
@@ -5886,7 +5886,7 @@ Using the `add()` method we can add a single element to the set.
 
 And with `update()`, multiple ones .
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.update([2, 3, 4, 5, 6])
 >>> s
@@ -5897,7 +5897,7 @@ And with `update()`, multiple ones .
 
 Both methods will remove an element from the set, but `remove()` will raise a `key error` if the value doesn't exist.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.remove(3)
 >>> s
@@ -5910,7 +5910,7 @@ KeyError: 3
 
 `discard()` won't raise any errors.
 
-```text
+```py
 >>> s = {1, 2, 3}
 >>> s.discard(3)
 >>> s
@@ -5923,7 +5923,7 @@ KeyError: 3
 
 `union()` or `|` will create a new set that contains all the elements from the sets provided.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {3, 4, 5}
 >>> s1.union(s2)  # or 's1 | s2'
@@ -5934,7 +5934,7 @@ KeyError: 3
 
 `intersection` or `&` will return a set containing only the elements that are common to all of them.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s3 = {3, 4, 5}
@@ -5946,7 +5946,7 @@ KeyError: 3
 
 `difference` or `-` will return only the elements that are unique to the first set \(invoked set\).
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.difference(s2)  # or 's1 - s2'
@@ -5959,7 +5959,7 @@ KeyError: 3
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
-```text
+```py
 >>> s1 = {1, 2, 3}
 >>> s2 = {2, 3, 4}
 >>> s1.symmetric_difference(s2)  # or 's1 ^ s2'
@@ -5986,13 +5986,13 @@ The [operator](https://docs.python.org/3/library/operator.html) module will also
 
 Makes an iterator that returns the results of a function.
 
-```text
+```py
 itertools.accumulate(iterable[, func])
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5]
 >>> result = itertools.accumulate(data, operator.mul)
 >>> for each in result:
@@ -6006,7 +6006,7 @@ Example:
 
 The operator.mul takes two numbers and multiplies them:
 
-```text
+```py
 operator.mul(1, 2)
 2
 operator.mul(2, 3)
@@ -6019,7 +6019,7 @@ operator.mul(24, 5)
 
 Passing a function is optional:
 
-```text
+```py
 >>> data = [5, 2, 6, 4, 5, 9, 1]
 >>> result = itertools.accumulate(data)
 >>> for each in result:
@@ -6035,7 +6035,7 @@ Passing a function is optional:
 
 If no function is designated the items will be summed:
 
-```text
+```py
 5
 5 + 2 = 7
 7 + 6 = 13
@@ -6051,13 +6051,13 @@ If no function is designated the items will be summed:
 
 Takes an iterable and a integer. This will create all the unique combination that have r members.
 
-```text
+```py
 itertools.combinations(iterable, r)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square',]
 >>> result = itertools.combinations(shapes, 2)
 >>> for each in result:
@@ -6073,13 +6073,13 @@ Example:
 
 Just like combinations\(\), but allows individual elements to be repeated more than once.
 
-```text
+```py
 itertools.combinations_with_replacement(iterable, r)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square']
 >>> result = itertools.combinations_with_replacement(shapes, 2)
 >>> for each in result:
@@ -6098,13 +6098,13 @@ Example:
 
 Makes an iterator that returns evenly spaced values starting with number start.
 
-```text
+```py
 itertools.count(start=0, step=1)
 ```
 
 Example:
 
-```text
+```py
 >>> for i in itertools.count(10,3):
 >>>    print(i)
 >>>    if i > 20:
@@ -6122,13 +6122,13 @@ Example:
 
 This function cycles through an iterator endlessly.
 
-```text
+```py
 itertools.cycle(iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
 >>> for color in itertools.cycle(colors):
 >>>    print(color)
@@ -6150,13 +6150,13 @@ When reached the end of the iterable it start over again from the beginning.
 
 Take a series of iterables and return them as one long iterable.
 
-```text
+```py
 itertools.chain(*iterables)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> shapes = ['circle', 'triangle', 'square', 'pentagon']
 >>> result = itertools.chain(colors, shapes)
@@ -6179,13 +6179,13 @@ pentagon
 
 Filters one iterable with another.
 
-```text
+```py
 itertools.compress(data, selectors)
 ```
 
 Example:
 
-```text
+```py
 >>> shapes = ['circle', 'triangle', 'square', 'pentagon']
 >>> selections = [True, False, True, False]
 >>> result = itertools.compress(shapes, selections)
@@ -6201,13 +6201,13 @@ square
 
 Make an iterator that drops elements from the iterable as long as the predicate is true; afterwards, returns every element.
 
-```text
+```py
 itertools.dropwhile(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.dropwhile(lambda x: x<5, data)
 >>> for each in result:
@@ -6227,13 +6227,13 @@ Example:
 
 Makes an iterator that filters elements from iterable returning only those for which the predicate is False.
 
-```text
+```py
 itertools.filterfalse(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.filterfalse(lambda x: x<5, data)
 >>> for each in result:
@@ -6252,13 +6252,13 @@ Example:
 
 Simply put, this function groups things together.
 
-```text
+```py
 itertools.groupby(iterable, key=None)
 ```
 
 Example:
 
-```text
+```py
 >>> robots = [{
     'name': 'blaster',
     'faction': 'autobot'
@@ -6297,13 +6297,13 @@ decepticon
 
 This function is very much like slices. This allows you to cut out a piece of an iterable.
 
-```text
+```py
 itertools.islice(iterable, start, stop[, step])
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue',]
 >>> few_colors = itertools.islice(colors, 2)
 >>> for each in few_colors:
@@ -6316,13 +6316,13 @@ orange
 
 #### permutations\(\)
 
-```text
+```py
 itertools.permutations(iterable, r=None)
 ```
 
 Example:
 
-```text
+```py
 >>> alpha_data = ['a', 'b', 'c']
 >>> result = itertools.permutations(alpha_data)
 >>> for each in result:
@@ -6341,7 +6341,7 @@ Example:
 
 Creates the cartesian products from a series of iterables.
 
-```text
+```py
 >>> num_data = [1, 2, 3]
 >>> alpha_data = ['a', 'b', 'c']
 >>> result = itertools.product(num_data, alpha_data)
@@ -6364,13 +6364,13 @@ Creates the cartesian products from a series of iterables.
 
 This function will repeat an object over and over again. Unless, there is a times argument.
 
-```text
+```py
 itertools.repeat(object[, times])
 ```
 
 Example:
 
-```text
+```py
 >>> for i in itertools.repeat("spam", 3):
     print(i)
 spam
@@ -6384,13 +6384,13 @@ spam
 
 Makes an iterator that computes the function using arguments obtained from the iterable.
 
-```text
+```py
 itertools.starmap(function, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [(2, 6), (8, 4), (7, 3)]
 >>> result = itertools.starmap(operator.mul, data)
 >>> for each in result:
@@ -6406,13 +6406,13 @@ Example:
 
 The opposite of dropwhile\(\). Makes an iterator and returns elements from the iterable as long as the predicate is true.
 
-```text
+```py
 itertools.takewhile(predicate, iterable)
 ```
 
 Example:
 
-```text
+```py
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
 >>> result = itertools.takewhile(lambda x: x<5, data)
 >>> for each in result:
@@ -6429,13 +6429,13 @@ Example:
 
 Return n independent iterators from a single iterable.
 
-```text
+```py
 itertools.tee(iterable, n=2)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in alpha_colors:
@@ -6447,7 +6447,7 @@ green
 blue
 ```
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue']
 >>> alpha_colors, beta_colors = itertools.tee(colors)
 >>> for each in beta_colors:
@@ -6465,13 +6465,13 @@ blue
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
-```text
+```py
 itertools.zip_longest(*iterables, fillvalue=None)
 ```
 
 Example:
 
-```text
+```py
 >>> colors = ['red', 'orange', 'yellow', 'green', 'blue',]
 >>> data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
 >>> for each in itertools.zip_longest(colors, data, fillvalue=None):
@@ -6494,7 +6494,7 @@ Example:
 
 #### List comprehension
 
-```text
+```py
 >>> a = [1, 3, 5, 7, 9, 11]
 
 >>> [i - 1 for i in a]
@@ -6503,7 +6503,7 @@ Example:
 
 #### Set comprehension
 
-```text
+```py
 >>> b = {"abc", "def"}
 >>> {s.upper() for s in b}
 {"ABC", "DEF"}
@@ -6511,7 +6511,7 @@ Example:
 
 #### Dict comprehension
 
-```text
+```py
 >>> c = {'name': 'Pooka', 'age': 5}
 >>> {v: k for k, v in c.items()}
 {'Pooka': 'name', 5: 'age'}
@@ -6519,7 +6519,7 @@ Example:
 
 A List comprehension can be generated from a dictionary:
 
-```text
+```py
 >>> c = {'name': 'Pooka', 'first_name': 'Oooka'}
 >>> ["{}:{}".format(k.upper(), v.upper()) for k, v in c.items()]
 ['NAME:POOKA', 'FIRST_NAME:OOOKA']
@@ -6539,7 +6539,7 @@ A List comprehension can be generated from a dictionary:
 
 Example:
 
-```text
+```py
 >>> print("Hello there!\nHow are you?\nI\'m doing fine.")
 Hello there!
 How are you?
@@ -6552,7 +6552,7 @@ I'm doing fine.
 
 A raw string completely ignores all escape characters and prints any backslash that appears in the string.
 
-```text
+```py
 >>> print(r'That is Carol\'s cat.')
 That is Carol\'s cat.
 ```
@@ -6563,7 +6563,7 @@ Note: mostly used for regular expression definition \(see `re` package\)
 
 #### Multiline Strings with Triple Quotes
 
-```text
+```py
 >>> print('''Dear Alice,
 >>>
 >>> Eve's cat has been arrested for catnapping, cat burglary, and extortion.
@@ -6580,7 +6580,7 @@ Bob
 
 To keep a nicer flow in your code, you can use the `dedent` function from the `textwrap` standard package.
 
-```text
+```py
 >>> from textwrap import dedent
 >>>
 >>> def my_function():
@@ -6600,61 +6600,61 @@ This generates the same string than before.
 
 #### Indexing and Slicing Strings
 
-```text
+```py
 H   e   l   l   o       w   o   r   l   d    !
 0   1   2   3   4   5   6   7   8   9   10   11
 ```
 
-```text
+```py
 >>> spam = 'Hello world!'
 
 >>> spam[0]
 'H'
 ```
 
-```text
+```py
 >>> spam[4]
 'o'
 ```
 
-```text
+```py
 >>> spam[-1]
 '!'
 ```
 
 Slicing:
 
-```text
+```py
 >>> spam[0:5]
 'Hello'
 ```
 
-```text
+```py
 >>> spam[:5]
 'Hello'
 ```
 
-```text
+```py
 >>> spam[6:]
 'world!'
 ```
 
-```text
+```py
 >>> spam[6:-1]
 'world'
 ```
 
-```text
+```py
 >>> spam[:-1]
 'Hello world'
 ```
 
-```text
+```py
 >>> spam[::-1]
 '!dlrow olleH'
 ```
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> fizz = spam[0:5]
 >>> fizz
@@ -6665,40 +6665,40 @@ Slicing:
 
 #### The in and not in Operators with Strings
 
-```text
+```py
 >>> 'Hello' in 'Hello World'
 True
 ```
 
-```text
+```py
 >>> 'Hello' in 'Hello'
 True
 ```
 
-```text
+```py
 >>> 'HELLO' in 'Hello World'
 False
 ```
 
-```text
+```py
 >>> '' in 'spam'
 True
 ```
 
-```text
+```py
 >>> 'cats' not in 'cats and dogs'
 False
 ```
 
 #### The in and not in Operators with list
 
-```text
+```py
 >>> a = [1, 2, 3, 4]
 >>> 5 in a
 False
 ```
 
-```text
+```py
 >>> 2 in a
 True
 ```
@@ -6709,14 +6709,14 @@ True
 
 `upper()` and `lower()`:
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> spam = spam.upper()
 >>> spam
 'HELLO WORLD!'
 ```
 
-```text
+```py
 >>> spam = spam.lower()
 >>> spam
 'hello world!'
@@ -6724,33 +6724,33 @@ True
 
 isupper\(\) and islower\(\):
 
-```text
+```py
 >>> spam = 'Hello world!'
 >>> spam.islower()
 False
 ```
 
-```text
+```py
 >>> spam.isupper()
 False
 ```
 
-```text
+```py
 >>> 'HELLO'.isupper()
 True
 ```
 
-```text
+```py
 >>> 'abc12345'.islower()
 True
 ```
 
-```text
+```py
 >>> '12345'.islower()
 False
 ```
 
-```text
+```py
 >>> '12345'.isupper()
 False
 ```
@@ -6769,32 +6769,32 @@ False
 
 #### The startswith\(\) and endswith\(\) String Methods
 
-```text
+```py
 >>> 'Hello world!'.startswith('Hello')
 True
 ```
 
-```text
+```py
 >>> 'Hello world!'.endswith('world!')
 True
 ```
 
-```text
+```py
 >>> 'abc123'.startswith('abcdef')
 False
 ```
 
-```text
+```py
 >>> 'abc123'.endswith('12')
 False
 ```
 
-```text
+```py
 >>> 'Hello world!'.startswith('Hello world!')
 True
 ```
 
-```text
+```py
 >>> 'Hello world!'.endswith('Hello world!')
 True
 ```
@@ -6805,34 +6805,34 @@ True
 
 join\(\):
 
-```text
+```py
 >>> ', '.join(['cats', 'rats', 'bats'])
 'cats, rats, bats'
 ```
 
-```text
+```py
 >>> ' '.join(['My', 'name', 'is', 'Simon'])
 'My name is Simon'
 ```
 
-```text
+```py
 >>> 'ABC'.join(['My', 'name', 'is', 'Simon'])
 'MyABCnameABCisABCSimon'
 ```
 
 split\(\):
 
-```text
+```py
 >>> 'My name is Simon'.split()
 ['My', 'name', 'is', 'Simon']
 ```
 
-```text
+```py
 >>> 'MyABCnameABCisABCSimon'.split('ABC')
 ['My', 'name', 'is', 'Simon']
 ```
 
-```text
+```py
 >>> 'My name is Simon'.split('m')
 ['My na', 'e is Si', 'on']
 ```
@@ -6843,46 +6843,46 @@ split\(\):
 
 rjust\(\) and ljust\(\):
 
-```text
+```py
 >>> 'Hello'.rjust(10)
 '     Hello'
 ```
 
-```text
+```py
 >>> 'Hello'.rjust(20)
 '               Hello'
 ```
 
-```text
+```py
 >>> 'Hello World'.rjust(20)
 '         Hello World'
 ```
 
-```text
+```py
 >>> 'Hello'.ljust(10)
 'Hello     '
 ```
 
 An optional second argument to rjust\(\) and ljust\(\) will specify a fill character other than a space character. Enter the following into the interactive shell:
 
-```text
+```py
 >>> 'Hello'.rjust(20, '*')
 '***************Hello'
 ```
 
-```text
+```py
 >>> 'Hello'.ljust(20, '-')
 'Hello---------------'
 ```
 
 center\(\):
 
-```text
+```py
 >>> 'Hello'.center(20)
 '       Hello       '
 ```
 
-```text
+```py
 >>> 'Hello'.center(20, '=')
 '=======Hello========'
 ```
@@ -6891,23 +6891,23 @@ center\(\):
 
 #### Removing Whitespace with strip\(\), rstrip\(\), and lstrip\(\)
 
-```text
+```py
 >>> spam = '    Hello World     '
 >>> spam.strip()
 'Hello World'
 ```
 
-```text
+```py
 >>> spam.lstrip()
 'Hello World '
 ```
 
-```text
+```py
 >>> spam.rstrip()
 '    Hello World'
 ```
 
-```text
+```py
 >>> spam = 'SpamSpamBaconSpamEggsSpamSpam'
 >>> spam.strip('ampS')
 'BaconSpamEggs'
@@ -6917,7 +6917,7 @@ center\(\):
 
 #### Copying and Pasting Strings with the pyperclip Module \(need pip install\)
 
-```text
+```py
 >>> import pyperclip
 
 >>> pyperclip.copy('Hello world!')
@@ -6932,7 +6932,7 @@ center\(\):
 
 #### % operator
 
-```text
+```py
 >>> name = 'Pete'
 >>> 'Hello %s' % name
 "Hello Pete"
@@ -6940,7 +6940,7 @@ center\(\):
 
 We can use the `%x` format specifier to convert an int value to a string:
 
-```text
+```py
 >>> num = 5
 >>> 'I have %x apples' % num
 "I have 5 apples"
@@ -6954,7 +6954,7 @@ Note: For new code, using [str.format](https://github.com/Web-Dev-Collaborative/
 
 Python 3 introduced a new way to do string formatting that was later back-ported to Python 2.7. This makes the syntax for string formatting more regular.
 
-```text
+```py
 >>> name = 'John'
 >>> age = 20'
 
@@ -6962,7 +6962,7 @@ Python 3 introduced a new way to do string formatting that was later back-ported
 "Hello I'm John, my age is 20"
 ```
 
-```text
+```py
 >>> "Hello I'm {0}, my age is {1}".format(name, age)
 "Hello I'm John, my age is 20"
 ```
@@ -6979,20 +6979,20 @@ You would only use `%s` string formatting on functions that can do lazy paramete
 
 Prefer:
 
-```text
+```py
 >>> name = "alice"
 >>> logging.debug("User name: %s", name)
 ```
 
 Over:
 
-```text
+```py
 >>> logging.debug("User name: {}".format(name))
 ```
 
 Or:
 
-```text
+```py
 >>> logging.debug("User name: " + name)
 ```
 
@@ -7000,7 +7000,7 @@ Or:
 
 #### Formatted String Literals or f-strings \(Python 3.6+\)
 
-```text
+```py
 >>> name = 'Elizabeth'
 >>> f'Hello {name}!'
 'Hello Elizabeth!
@@ -7008,7 +7008,7 @@ Or:
 
 It is even possible to do inline arithmetic with it:
 
-```text
+```py
 >>> a = 5
 >>> b = 10
 >>> f'Five plus ten is {a + b} and not {2 * (a + b)}.'
@@ -7021,7 +7021,7 @@ It is even possible to do inline arithmetic with it:
 
 A simpler and less powerful mechanism, but it is recommended when handling format strings generated by users. Due to their reduced complexity template strings are a safer choice.
 
-```text
+```py
 >>> from string import Template
 >>> name = 'Elizabeth'
 >>> t = Template('Hey $name!')
@@ -7040,7 +7040,7 @@ A simpler and less powerful mechanism, but it is recommended when handling forma
 
 All the regex functions in Python are in the re module:
 
-```text
+```py
 >>> import re
 ```
 
@@ -7048,7 +7048,7 @@ All the regex functions in Python are in the re module:
 
 #### Matching Regex Objects
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 >>> mo = phone_num_regex.search('My number is 415-555-4242.')
@@ -7061,7 +7061,7 @@ Phone number found: 415-555-4242
 
 #### Grouping with Parentheses
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
 
 >>> mo = phone_num_regex.search('My number is 415-555-4242.')
@@ -7081,7 +7081,7 @@ Phone number found: 415-555-4242
 
 To retrieve all the groups at once: use the groups\(\) method—note the plural form for the name.
 
-```text
+```py
 >>> mo.groups()
 ('415', '555-4242')
 
@@ -7100,7 +7100,7 @@ To retrieve all the groups at once: use the groups\(\) method—note the plural 
 
 The \| character is called a pipe. You can use it anywhere you want to match one of many expressions. For example, the regular expression r'Batman\|Tina Fey' will match either 'Batman' or 'Tina Fey'.
 
-```text
+```py
 >>> hero_regex = re.compile (r'Batman|Tina Fey')
 
 >>> mo1 = hero_regex.search('Batman and Tina Fey.')
@@ -7116,7 +7116,7 @@ The \| character is called a pipe. You can use it anywhere you want to match one
 
 You can also use the pipe to match one of several patterns as part of your regex:
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(man|mobile|copter|bat)')
 
 >>> mo = bat_regex.search('Batmobile lost a wheel')
@@ -7134,7 +7134,7 @@ You can also use the pipe to match one of several patterns as part of your regex
 
 The ? character flags the group that precedes it as an optional part of the pattern.
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)?man')
 >>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
@@ -7151,7 +7151,7 @@ The ? character flags the group that precedes it as an optional part of the patt
 
 The \* \(called the star or asterisk\) means “match zero or more”—the group that precedes the star can occur any number of times in the text.
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)*man')
 >>> mo1 = bat_regex.search('The Adventures of Batman')
 >>> mo1.group()
@@ -7172,20 +7172,20 @@ The \* \(called the star or asterisk\) means “match zero or more”—the grou
 
 While \* means “match zero or more,” the + \(or plus\) means “match one or more”. The group preceding a plus must appear at least once. It is not optional:
 
-```text
+```py
 >>> bat_regex = re.compile(r'Bat(wo)+man')
 >>> mo1 = bat_regex.search('The Adventures of Batwoman')
 >>> mo1.group()
 'Batwoman'
 ```
 
-```text
+```py
 >>> mo2 = bat_regex.search('The Adventures of Batwowowowoman')
 >>> mo2.group()
 'Batwowowowoman'
 ```
 
-```text
+```py
 >>> mo3 = bat_regex.search('The Adventures of Batman')
 >>> mo3 is None
 True
@@ -7199,14 +7199,14 @@ If you have a group that you want to repeat a specific number of times, follow t
 
 Instead of one number, you can specify a range by writing a minimum, a comma, and a maximum in between the curly brackets. For example, the regex \(Ha\){3,5} will match 'HaHaHa', 'HaHaHaHa', and 'HaHaHaHaHa'.
 
-```text
+```py
 >>> ha_regex = re.compile(r'(Ha){3}')
 >>> mo1 = ha_regex.search('HaHaHa')
 >>> mo1.group()
 'HaHaHa'
 ```
 
-```text
+```py
 >>> mo2 = ha_regex.search('Ha')
 >>> mo2 is None
 True
@@ -7218,14 +7218,14 @@ True
 
 Python’s regular expressions are greedy by default, which means that in ambiguous situations they will match the longest string possible. The non-greedy version of the curly brackets, which matches the shortest string possible, has the closing curly bracket followed by a question mark.
 
-```text
+```py
 >>> greedy_ha_regex = re.compile(r'(Ha){3,5}')
 >>> mo1 = greedy_ha_regex.search('HaHaHaHaHa')
 >>> mo1.group()
 'HaHaHaHaHa'
 ```
 
-```text
+```py
 >>> nongreedy_ha_regex = re.compile(r'(Ha){3,5}?')
 >>> mo2 = nongreedy_ha_regex.search('HaHaHaHaHa')
 >>> mo2.group()
@@ -7238,7 +7238,7 @@ Python’s regular expressions are greedy by default, which means that in ambigu
 
 In addition to the search\(\) method, Regex objects also have a findall\(\) method. While search\(\) will return a Match object of the first matched text in the searched string, the findall\(\) method will return the strings of every match in the searched string.
 
-```text
+```py
 >>> phone_num_regex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d') # has no groups
 
 >>> phone_num_regex.findall('Cell: 415-555-9999 Work: 212-555-0000')
@@ -7256,7 +7256,7 @@ To summarize what the findall\(\) method returns, remember the following:
 
 There are times when you want to match a set of characters but the shorthand character classes \(\d, \w, \s, and so on\) are too broad. You can define your own character class using square brackets. For example, the character class \[aeiouAEIOU\] will match any vowel, both lowercase and uppercase.
 
-```text
+```py
 >>> vowel_regex = re.compile(r'[aeiouAEIOU]')
 
 >>> vowel_regex.findall('Robocop eats baby food. BABY FOOD.')
@@ -7267,7 +7267,7 @@ You can also include ranges of letters or numbers by using a hyphen. For example
 
 By placing a caret character \(^\) just after the character class’s opening bracket, you can make a negative character class. A negative character class will match all the characters that are not in the character class. For example, enter the following into the interactive shell:
 
-```text
+```py
 >>> consonant_regex = re.compile(r'[^aeiouAEIOU]')
 
 >>> consonant_regex.findall('Robocop eats baby food. BABY FOOD.')
@@ -7285,7 +7285,7 @@ By placing a caret character \(^\) just after the character class’s opening br
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
-```text
+```py
 >>> begins_with_hello = re.compile(r'^Hello')
 
 >>> begins_with_hello.search('Hello world!')
@@ -7297,7 +7297,7 @@ True
 
 The r'\d$' regular expression string matches strings that end with a numeric character from 0 to 9:
 
-```text
+```py
 >>> whole_string_is_num = re.compile(r'^\d+$')
 
 >>> whole_string_is_num.search('1234567890')
@@ -7316,7 +7316,7 @@ True
 
 The . \(or dot\) character in a regular expression is called a wildcard and will match any character except for a newline:
 
-```text
+```py
 >>> at_regex = re.compile(r'.at')
 
 >>> at_regex.findall('The cat in the hat sat on the flat mat.')
@@ -7327,7 +7327,7 @@ The . \(or dot\) character in a regular expression is called a wildcard and will
 
 #### Matching Everything with Dot-Star
 
-```text
+```py
 >>> name_regex = re.compile(r'First Name: (.*) Last Name: (.*)')
 
 >>> mo = name_regex.search('First Name: Al Last Name: Sweigart')
@@ -7336,21 +7336,21 @@ The . \(or dot\) character in a regular expression is called a wildcard and will
 'Al'
 ```
 
-```text
+```py
 >>> mo.group(2)
 'Sweigart'
 ```
 
 The dot-star uses greedy mode: It will always try to match as much text as possible. To match any and all text in a nongreedy fashion, use the dot, star, and question mark \(.\*?\). The question mark tells Python to match in a nongreedy way:
 
-```text
+```py
 >>> nongreedy_regex = re.compile(r'<.*?>')
 >>> mo = nongreedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
 '<To serve man>'
 ```
 
-```text
+```py
 >>> greedy_regex = re.compile(r'<.*>')
 >>> mo = greedy_regex.search('<To serve man> for dinner.>')
 >>> mo.group()
@@ -7363,13 +7363,13 @@ The dot-star uses greedy mode: It will always try to match as much text as possi
 
 The dot-star will match everything except a newline. By passing re.DOTALL as the second argument to re.compile\(\), you can make the dot character match all characters, including the newline character:
 
-```text
+```py
 >>> no_newline_regex = re.compile('.*')
 >>> no_newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.'
 ```
 
-```text
+```py
 >>> newline_regex = re.compile('.*', re.DOTALL)
 >>> newline_regex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group()
 'Serve the public trust.\nProtect the innocent.\nUphold the law.'
@@ -7403,19 +7403,19 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 To make your regex case-insensitive, you can pass re.IGNORECASE or re.I as a second argument to re.compile\(\):
 
-```text
+```py
 >>> robocop = re.compile(r'robocop', re.I)
 
 >>> robocop.search('Robocop is part man, part machine, all cop.').group()
 'Robocop'
 ```
 
-```text
+```py
 >>> robocop.search('ROBOCOP protects the innocent.').group()
 'ROBOCOP'
 ```
 
-```text
+```py
 >>> robocop.search('Al, why does your programming book talk about robocop so much?').group()
 'robocop'
 ```
@@ -7431,7 +7431,7 @@ The sub\(\) method for Regex objects is passed two arguments:
 
 The sub\(\) method returns a string with the substitutions applied:
 
-```text
+```py
 >>> names_regex = re.compile(r'Agent \w+')
 
 >>> names_regex.sub('CENSORED', 'Agent Alice gave the secret documents to Agent Bob.')
@@ -7440,7 +7440,7 @@ The sub\(\) method returns a string with the substitutions applied:
 
 Another example:
 
-```text
+```py
 >>> agent_names_regex = re.compile(r'Agent (\w)\w*')
 
 >>> agent_names_regex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
@@ -7455,13 +7455,13 @@ To tell the re.compile\(\) function to ignore whitespace and comments inside the
 
 Now instead of a hard-to-read regular expression like this:
 
-```text
+```py
 phone_regex = re.compile(r'((\d{3}|\(\d{3}\))?(\s|-|\.)?\d{3}(\s|-|\.)\d{4}(\s*(ext|x|ext.)\s*\d{2,5})?)')
 ```
 
 you can spread the regular expression over multiple lines with comments like this:
 
-```text
+```py
 phone_regex = re.compile(r'''(
     (\d{3}|\(\d{3}\))?            # area code
     (\s|-|\.)?                    # separator
@@ -7488,7 +7488,7 @@ Fortunately, Python provides easy ways to handle this. We will showcase how to d
 
 Using `os.path.join` on Windows:
 
-```text
+```py
 >>> import os
 
 >>> os.path.join('usr', 'bin', 'spam')
@@ -7497,7 +7497,7 @@ Using `os.path.join` on Windows:
 
 And using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 
 >>> print(Path('usr').joinpath('bin').joinpath('spam'))
@@ -7506,7 +7506,7 @@ usr/bin/spam
 
 `pathlib` also provides a shortcut to joinpath using the `/` operator:
 
-```text
+```py
 >>> from pathlib import Path
 
 >>> print(Path('usr') / 'bin' / 'spam')
@@ -7519,7 +7519,7 @@ Joining paths is helpful if you need to create different file paths under the sa
 
 Using `os.path.join` on Windows:
 
-```text
+```py
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 
 >>> for filename in my_files:
@@ -7531,7 +7531,7 @@ C:\Users\asweigart\invite.docx
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 >>> home = Path.home()
 >>> for filename in my_files:
@@ -7547,7 +7547,7 @@ Using `pathlib` on \*nix:
 
 Using `os` on Windows:
 
-```text
+```py
 >>> import os
 
 >>> os.getcwd()
@@ -7560,7 +7560,7 @@ Using `os` on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> from os import chdir
 
@@ -7578,14 +7578,14 @@ Using `pathlib` on \*nix:
 
 Using `os` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.makedirs('C:\\delicious\\walnut\\waffles')
 ```
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> cwd = Path.cwd()
 >>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
@@ -7600,7 +7600,7 @@ FileNotFoundError: [Errno 2] No such file or directory: '/home/asweigart/delicio
 
 Oh no, we got a nasty error! The reason is that the 'delicious' directory does not exist, so we cannot make the 'walnut' and the 'waffles' directories under it. To fix this, do:
 
-```text
+```py
 >>> from pathlib import Path
 >>> cwd = Path.cwd()
 >>> (cwd / 'delicious' / 'walnut' / 'waffles').mkdir(parents=True)
@@ -7627,7 +7627,7 @@ To see if a path is an absolute path:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isabs('/')
 True
@@ -7637,7 +7637,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('/').is_absolute()
 True
@@ -7649,7 +7649,7 @@ You can extract an absolute path with both `os.path` and `pathlib`
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.getcwd()
 '/home/asweigart'
@@ -7659,7 +7659,7 @@ Using `os.path` on \*nix:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 from pathlib import Path
 print(Path.cwd())
 /home/asweigart
@@ -7671,7 +7671,7 @@ You can get a relative path from a starting path to another path.
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.relpath('/etc/passwd', '/')
 'etc/passwd'
@@ -7679,7 +7679,7 @@ Using `os.path` on \*nix:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> print(Path('/etc/passwd').relative_to('/'))
 etc/passwd
@@ -7693,7 +7693,7 @@ Checking if a file/directory exists:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 import os
 >>> os.path.exists('.')
 True
@@ -7707,7 +7707,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 from pathlib import Path
 >>> Path('.').exists()
 True
@@ -7723,7 +7723,7 @@ Checking if a path is a file:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isfile('setup.py')
 True
@@ -7735,7 +7735,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('setup.py').is_file()
 True
@@ -7749,7 +7749,7 @@ Checking if a path is a directory:
 
 Using `os.path` on \*nix:
 
-```text
+```py
 >>> import os
 >>> os.path.isdir('/')
 True
@@ -7761,7 +7761,7 @@ False
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> Path('/').is_dir()
 True
@@ -7779,7 +7779,7 @@ Getting a file's size in bytes:
 
 Using `os.path` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.path.getsize('C:\\Windows\\System32\\calc.exe')
 776192
@@ -7787,7 +7787,7 @@ Using `os.path` on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> stat = Path('/bin/python3.6').stat()
 >>> print(stat) # stat contains some other information about the file as well
@@ -7800,7 +7800,7 @@ st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517
 
 Listing directory contents using `os.listdir` on Windows:
 
-```text
+```py
 >>> import os
 >>> os.listdir('C:\\Windows\\System32')
 ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
@@ -7810,7 +7810,7 @@ Listing directory contents using `os.listdir` on Windows:
 
 Listing directory contents using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> for f in Path('/usr/bin').iterdir():
 >>>     print(f)
@@ -7833,7 +7833,7 @@ To find the total size of all the files in this directory:
 
 Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
-```text
+```py
 >>> import os
 >>> total_size = 0
 
@@ -7846,7 +7846,7 @@ Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
 Using `pathlib` on \*nix:
 
-```text
+```py
 >>> from pathlib import Path
 >>> total_size = 0
 
@@ -7863,7 +7863,7 @@ Using `pathlib` on \*nix:
 
 The shutil module provides functions for copying files, as well as entire folders.
 
-```text
+```py
 >>> import shutil, os
 
 >>> os.chdir('C:\\')
@@ -7877,7 +7877,7 @@ The shutil module provides functions for copying files, as well as entire folder
 
 While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an entire folder and every folder and file contained in it:
 
-```text
+```py
 >>> import shutil, os
 
 >>> os.chdir('C:\\')
@@ -7890,7 +7890,7 @@ While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an 
 
 #### Moving and Renaming Files and Folders
 
-```text
+```py
 >>> import shutil
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
 'C:\\eggs\\bacon.txt'
@@ -7898,14 +7898,14 @@ While shutil.copy\(\) will copy a single file, shutil.copytree\(\) will copy an 
 
 The destination path can also specify a filename. In the following example, the source file is moved and renamed:
 
-```text
+```py
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
 'C:\\eggs\\new_bacon.txt'
 ```
 
 If there is no eggs folder, then move\(\) will rename bacon.txt to a file named eggs.
 
-```text
+```py
 >>> shutil.move('C:\\bacon.txt', 'C:\\eggs')
 'C:\\eggs'
 ```
@@ -7924,7 +7924,7 @@ If there is no eggs folder, then move\(\) will rename bacon.txt to a file named 
 
 You can install this module by running pip install send2trash from a Terminal window.
 
-```text
+```py
 >>> import send2trash
 
 >>> with open('bacon.txt', 'a') as bacon_file: # creates the file
@@ -7938,7 +7938,7 @@ You can install this module by running pip install send2trash from a Terminal wi
 
 #### Walking a Directory Tree
 
-```text
+```py
 >>> import os
 >>>
 >>> for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
@@ -7980,7 +7980,7 @@ To read/write to a file in Python, you will want to use the `with` statement, wh
 
 #### Opening and reading files with the open\(\) function
 
-```text
+```py
 >>> with open('C:\\Users\\your_home_folder\\hello.txt') as hello_file:
 ...     hello_content = hello_file.read()
 >>> hello_content
@@ -8009,7 +8009,7 @@ And look upon myself and curse my fate,
 
 #### Writing to Files
 
-```text
+```py
 >>> with open('bacon.txt', 'w') as bacon_file:
 ...     bacon_file.write('Hello world!\n')
 13
@@ -8032,7 +8032,7 @@ Bacon is not a vegetable.
 
 To save variables:
 
-```text
+```py
 >>> import shelve
 
 >>> cats = ['Zophie', 'Pooka', 'Simon']
@@ -8042,7 +8042,7 @@ To save variables:
 
 To open and read variables:
 
-```text
+```py
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(type(shelf_file))
 ...     print(shelf_file['cats'])
@@ -8052,7 +8052,7 @@ To open and read variables:
 
 Just like dictionaries, shelf values have keys\(\) and values\(\) methods that will return list-like values of the keys and values in the shelf. Since these methods return list-like values instead of true lists, you should pass them to the list\(\) function to get them in list form.
 
-```text
+```py
 >>> with shelve.open('mydata') as shelf_file:
 ...     print(list(shelf_file.keys()))
 ...     print(list(shelf_file.values()))
@@ -8064,7 +8064,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 #### Saving Variables with the pprint.pformat\(\) Function
 
-```text
+```py
 >>> import pprint
 
 >>> cats = [{'name': 'Zophie', 'desc': 'chubby'}, {'name': 'Pooka', 'desc': 'fluffy'}]
@@ -8081,7 +8081,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 #### Reading ZIP Files
 
-```text
+```py
 >>> import zipfile, os
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
@@ -8104,7 +8104,7 @@ Just like dictionaries, shelf values have keys\(\) and values\(\) methods that w
 
 The extractall\(\) method for ZipFile objects extracts all the files and folders from a ZIP file into the current working directory.
 
-```text
+```py
 >>> import zipfile, os
 
 >>> os.chdir('C:\\')    # move to the folder with example.zip
@@ -8115,7 +8115,7 @@ The extractall\(\) method for ZipFile objects extracts all the files and folders
 
 The extract\(\) method for ZipFile objects will extract a single file from the ZIP file. Continue the interactive shell example:
 
-```text
+```py
 >>> with zipfile.ZipFile('example.zip') as example_zip:
 ...     print(example_zip.extract('spam.txt'))
 ...     print(example_zip.extract('spam.txt', 'C:\\some\\new\\folders'))
@@ -8127,7 +8127,7 @@ The extract\(\) method for ZipFile objects will extract a single file from the Z
 
 #### Creating and Adding to ZIP Files
 
-```text
+```py
 >>> import zipfile
 
 >>> with zipfile.ZipFile('new.zip', 'w') as new_zip:
@@ -8144,7 +8144,7 @@ This code will create a new ZIP file named new.zip that has the compressed conte
 
 Open a JSON file with:
 
-```text
+```py
 import json
 with open("filename.json", "r") as f:
     content = json.loads(f.read())
@@ -8152,7 +8152,7 @@ with open("filename.json", "r") as f:
 
 Write a JSON file with:
 
-```text
+```py
 import json
 
 content = {"name": "Joe", "age": 20}
@@ -8177,7 +8177,7 @@ The first one it easier to use but the second one, Ruamel, implements much bette
 
 Open a YAML file with:
 
-```text
+```py
 from ruamel.yaml import YAML
 
 with open("filename.yaml") as f:
@@ -8193,13 +8193,13 @@ with open("filename.yaml") as f:
 
 Install it with:
 
-```text
+```py
 pip install anyconfig
 ```
 
 Usage:
 
-```text
+```py
 import anyconfig
 
 conf1 = anyconfig.load("/path/to/foo/conf.d/a.yml")
@@ -8217,7 +8217,7 @@ Exceptions are raised with a raise statement. In code, a raise statement consist
 * A call to the Exception\(\) function
 * A string with a helpful error message passed to the Exception\(\) function
 
-```text
+```py
 >>> raise Exception('This is the error message.')
 Traceback (most recent call last):
   File "<pyshell#191>", line 1, in <module>
@@ -8227,7 +8227,7 @@ Exception: This is the error message.
 
 Often it’s the code that calls the function, not the function itself, that knows how to handle an exception. So you will commonly see a raise statement inside a function and the try and except statements in the code calling the function.
 
-```text
+```py
 def box_print(symbol, width, height):
     if len(symbol) != 1:
       raise Exception('Symbol must be a single character string.')
@@ -8252,7 +8252,7 @@ for sym, w, h in (('*', 4, 4), ('O', 20, 5), ('x', 1, 3), ('ZZ', 3, 3)):
 
 The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc\(\). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
-```text
+```py
 >>> import traceback
 
 >>> try:
@@ -8267,7 +8267,7 @@ The traceback info was written to errorInfo.txt.
 
 The 116 is the return value from the write\(\) method, since 116 characters were written to the file. The traceback text was written to errorInfo.txt.
 
-```text
+```py
 Traceback (most recent call last):
   File "<pyshell#28>", line 2, in <module>
 Exception: This is the error message.
@@ -8284,7 +8284,7 @@ An assertion is a sanity check to make sure your code isn’t doing something ob
 * A comma
 * A string to display when the condition is False
 
-```text
+```py
 >>> pod_bay_door_status = 'open'
 
 >>> assert pod_bay_door_status == 'open', 'The pod bay doors need to be "open".'
@@ -8311,7 +8311,7 @@ Assertions can be disabled by passing the -O option when running Python.
 
 To enable the logging module to display log messages on your screen as your program runs, copy the following to the top of your program \(but under the \#! python shebang line\):
 
-```text
+```py
 import logging
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
@@ -8319,7 +8319,7 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %
 
 Say you wrote a function to calculate the factorial of a number. In mathematics, factorial 4 is 1 × 2 × 3 × 4, or 24. Factorial 7 is 1 × 2 × 3 × 4 × 5 × 6 × 7, or 5,040. Open a new file editor window and enter the following code. It has a bug in it, but you will also enter several log messages to help yourself figure out what is going wrong. Save the program as factorialLog.py.
 
-```text
+```py
 >>> import logging
 >>>
 >>> logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s- %(message)s')
@@ -8374,7 +8374,7 @@ Logging levels provide a way to categorize your log messages by importance. Ther
 
 After you’ve debugged your program, you probably don’t want all these log messages cluttering the screen. The logging.disable\(\) function disables these so that you don’t have to go into your program and remove all the logging calls by hand.
 
-```text
+```py
 >>> import logging
 
 >>> logging.basicConfig(level=logging.INFO, format=' %(asctime)s -%(levelname)s - %(message)s')
@@ -8395,7 +8395,7 @@ After you’ve debugged your program, you probably don’t want all these log me
 
 Instead of displaying the log messages to the screen, you can write them to a text file. The logging.basicConfig\(\) function takes a filename keyword argument, like so:
 
-```text
+```py
 import logging
 
 logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -8407,7 +8407,7 @@ logging.basicConfig(filename='myProgramLog.txt', level=logging.DEBUG, format='%(
 
 This function:
 
-```text
+```py
 >>> def add(x, y):
         return x + y
 
@@ -8417,7 +8417,7 @@ This function:
 
 Is equivalent to the _lambda_ function:
 
-```text
+```py
 >>> add = lambda x, y: x + y
 >>> add(5, 3)
 8
@@ -8425,14 +8425,14 @@ Is equivalent to the _lambda_ function:
 
 It's not even need to bind it to a name like add before:
 
-```text
+```py
 >>> (lambda x, y: x + y)(5, 3)
 8
 ```
 
 Like regular nested functions, lambdas also work as lexical closures:
 
-```text
+```py
 >>> def make_adder(n):
         return lambda x: x + n
 
@@ -8453,13 +8453,13 @@ Note: lambda can only evaluate an expression, like a single line of code.
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
 
-```text
+```py
 <expression1> if <condition> else <expression2>
 ```
 
 Example:
 
-```text
+```py
 >>> age = 15
 
 >>> print('kid' if age < 18 else 'adult')
@@ -8468,7 +8468,7 @@ kid
 
 Ternary operators can be chained:
 
-```text
+```py
 >>> age = 15
 
 >>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
@@ -8477,7 +8477,7 @@ teenager
 
 The code above is equivalent to:
 
-```text
+```py
 if age < 18:
     if age < 13:
         print('kid')
@@ -8498,7 +8498,7 @@ The names `args and kwargs` are arbitrary - the important thing are the `*` and 
 
 For example you can make a function that you can use to call any other function, no matter what parameters it has:
 
-```text
+```py
 def forward(f, *args, **kwargs):
     return f(*args, **kwargs)
 ```
@@ -8507,7 +8507,7 @@ Inside forward, args is a tuple \(of all positional arguments except the first o
 
 You use `*args` when you have an indefinite amount of positional arguments.
 
-```text
+```py
 >>> def fruits(*args):
 >>>    for fruit in args:
 >>>       print(fruit)
@@ -8521,7 +8521,7 @@ You use `*args` when you have an indefinite amount of positional arguments.
 
 Similarly, you use `**kwargs` when you have an indefinite number of keyword arguments.
 
-```text
+```py
 >>> def fruit(**kwargs):
 >>>    for key, value in kwargs.items():
 >>>        print("{0}: {1}".format(key, value))
@@ -8532,7 +8532,7 @@ name: apple
 color: red
 ```
 
-```text
+```py
 >>> def show(arg1, arg2, *args, kwarg1=None, kwarg2=None, **kwargs):
 >>>   print(arg1)
 >>>   print(arg2)
@@ -8597,7 +8597,7 @@ A context manager is an object that is notified when a context \(a block of code
 
 For example, file objects are context managers. When a context ends, the file object is closed automatically:
 
-```text
+```py
 >>> with open(filename) as f:
 >>>     file_contents = f.read()
 
@@ -8610,7 +8610,7 @@ Anything that ends execution of the block causes the context manager's exit meth
 
 It is also possible to write a context manager using generator syntax thanks to the `contextlib.contextmanager` decorator:
 
-```text
+```py
 >>> import contextlib
 >>> @contextlib.contextmanager
 ... def context_manager(num):
@@ -8637,7 +8637,7 @@ Exit
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
-```text
+```py
 >>> if __name__ == "__main__":
 ...     # execute only if run as a script
 ...     main()
@@ -8647,7 +8647,7 @@ For a package, the same effect can be achieved by including a **main**.py module
 
 For example we are developing script which is designed to be used as module, we should do:
 
-```text
+```py
 >>> # Python program to execute function directly
 >>> def add(a, b):
 ...     return a+b
@@ -8681,7 +8681,7 @@ The `setup.py` file is at the heart of a Python project. It describes all of the
 
 This allows you to easily install Python packages. Often it's enough to write:
 
-```text
+```py
 python setup.py install
 ```
 
@@ -8689,7 +8689,7 @@ and module will install itself.
 
 Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
 
-```text
+```py
 >>> from distutils.core import setup
 >>> setup(
 ...    name='pythonCheatsheet',
@@ -8717,7 +8717,7 @@ Python 3.7 provides a decorator dataclass that is used to convert a class into a
 
 python 2.7
 
-```text
+```py
 >>> class Number:
 ...     def __init__(self, val):
 ...         self.val = val
@@ -8729,7 +8729,7 @@ python 2.7
 
 with dataclass
 
-```text
+```py
 >>> @dataclass
 ... class Number:
 ...     val: int
@@ -8745,7 +8745,7 @@ with dataclass
 
 It is easy to add default values to the fields of your data class.
 
-```text
+```py
 >>> @dataclass
 ... class Product:
 ...     name: str
@@ -8765,7 +8765,7 @@ Python
 
 It is mandatory to define the data type in dataclass. However, If you don't want specify the datatype then, use `typing.Any`.
 
-```text
+```py
 >>> from dataclasses import dataclass
 >>> from typing import Any
 
@@ -8788,13 +8788,13 @@ The use of a Virtual Environment is to test python code in encapsulated environm
 
 1. Install virtualenv
 
-   ```text
+   ```py
    pip install virtualenv
    ```
 
 2. Install virtualenvwrapper-win \(Windows\)
 
-   ```text
+   ```py
    pip install virtualenvwrapper-win
    ```
 
@@ -8802,7 +8802,7 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```text
+   ```py
    mkvirtualenv HelloWold
    ```
 
@@ -8812,7 +8812,7 @@ Usage:
 
    To bind our virtualenv with our current working directory we simply enter:
 
-   ```text
+   ```py
    setprojectdir .
    ```
 
@@ -8820,7 +8820,7 @@ Usage:
 
    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
 
-   ```text
+   ```py
    deactivate
    ```
 
@@ -8830,7 +8830,7 @@ Usage:
 
    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
 
-   ```text
+   ```py
    workon HelloWold
    ```
 
@@ -8842,19 +8842,19 @@ Usage:
 
 1. Install Poetry
 
-   ```text
+   ```py
    pip install --user poetry
    ```
 
 2. Create a new project
 
-   ```text
+   ```py
    poetry new my-project
    ```
 
    This will create a my-project directory:
 
-   ```text
+   ```py
    my-project
    ├── pyproject.toml
    ├── README.rst
@@ -8867,7 +8867,7 @@ Usage:
 
    The pyproject.toml file will orchestrate your project and its dependencies:
 
-   ```text
+   ```py
    [tool.poetry]
    name = "my-project"
    version = "0.1.0"
@@ -8885,26 +8885,26 @@ Usage:
 
    To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
 
-   ```text
+   ```py
    [tool.poetry.dependencies]
    pendulum = "^1.4"
    ```
 
    Also, instead of modifying the pyproject.toml file by hand, you can use the add command and it will automatically find a suitable version constraint.
 
-   ```text
+   ```py
    $ poetry add pendulum
    ```
 
    To install the dependencies listed in the pyproject.toml:
 
-   ```text
+   ```py
    poetry install
    ```
 
    To remove dependencies:
 
-   ```text
+   ```py
    poetry remove pendulum
    ```
 
@@ -8918,13 +8918,13 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 1. Install pipenv
 
-   ```text
+   ```py
    pip install pipenv
    ```
 
 2. Enter your Project directory and install the Packages for your project
 
-   ```text
+   ```py
    cd my_project
    pipenv install <package>
    ```
@@ -8933,19 +8933,19 @@ For more information, check the [documentation](https://poetry.eustace.io/docs/)
 
 3. Uninstall Packages
 
-   ```text
+   ```py
    pipenv uninstall <package>
    ```
 
 4. Activate the Virtual Environment associated with your Python project
 
-   ```text
+   ```py
    pipenv shell
    ```
 
 5. Exit the Virtual Environment
 
-   ```text
+   ```py
    exit
    ```
 
@@ -8963,13 +8963,13 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```text
+   ```py
    conda create -n HelloWorld
    ```
 
 2. To use the Virtual Environment, activate it by:
 
-   ```text
+   ```py
    conda activate HelloWorld
    ```
 
@@ -8977,7 +8977,7 @@ Usage:
 
 3. Exit the Virtual Environment
 
-   ```text
+   ```py
    conda deactivate
    ```
 

@@ -29,7 +29,7 @@
       * Implementing as a balanced tree results in min number of parents and max number of leaves: 2 parents, 3 leaves
   * All that we need in order to implement a binary tree is a TreeNode class that can store a value and references to a left and right child. We can create a tree by assigning the left and right properties to point to other TreeNode instances:
 
-  ```text
+  ```py
   class TreeNode {
     constructor(val) {
       this.val = val;
@@ -56,7 +56,7 @@
 * A binary search tree is a binary tree with the added stipulation that all values to the left of a node are less than its value and all values to the right are greater than its value.
 * Example of a BST with an insert method. You won't be asked to implement a removal:
 
-  ```text
+  ```py
   class BST {
     constructor() {
         this.root = null;
@@ -224,7 +224,7 @@ Analyze the time and space complexity of your function.
 JS Solution:
 
 ```javascript
-/* 
+/*
   A recursive solution
   How would you solve this iteratively?
  */
@@ -335,7 +335,7 @@ Given an array that is sorted in ascending order containing unique integer eleme
 
 For example, given an array `[1, 2, 3, 4, 5, 6, 7]`, your function should return a binary search tree with the form
 
-```text
+```py
                           4
                         /   \
                       2       6
@@ -373,7 +373,7 @@ From the given example where the input is `[1, 2, 3, 4, 5, 6, 7]`, the expected 
 
 A straightforward way to do this would be to take the first element of our array, call that the root, and then iterate through the rest of our array, adding those elements as nodes in the binary search tree. In pseudocode, that might look something like this:
 
-```text
+```py
 def create_min_height_bst(sorted_arr):
   root = BinaryTreeNode(sorted_arr[0])
 
@@ -381,7 +381,7 @@ def create_min_height_bst(sorted_arr):
     root.insert(elem)
 
   return root
-  
+
 ```
 
 ```javascript

@@ -10,7 +10,7 @@ There are lots of different types of tree data structures. A binary tree is a sp
 
 Here is an example of a what a class for a binary tree node might look like:
 
-```text
+```py
 class BinaryTreeNode:
     def __init__(self, value):
         self.value = value

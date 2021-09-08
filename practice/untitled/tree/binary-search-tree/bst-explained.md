@@ -27,7 +27,7 @@ Now, let’s start creating a Binary Search Tree. So for every key of the tree, 
 
 **Create Class Node**
 
-```text
+```py
 class Node(object):
     def __init__(self, data):
         self.data = data
@@ -39,7 +39,7 @@ class Node(object):
 
 Now after initializing a Node class, let’s create an Insert operation that will insert the key either to the left of the parent or the right of the parent.
 
-```text
+```py
     def insert(self, data):
         if self.data == data:
             return False        # As BST cannot contain duplicate data
@@ -65,7 +65,7 @@ Now after initializing a Node class, let’s create an Insert operation that wil
 
 After creating the Insert Operation, let’s create a find or Search operation which checks whether the specified data is in the tree or not.
 
-```text
+```py
     def find(self, data):
         if(data == self.data):
             return True
@@ -91,7 +91,7 @@ Now we have to implement the traversal of the BST. So, there are 3 different typ
 
 Preorder Traversal is a kind of traversal in which first we print the parent root and then traverse to the left of the parent and after completing the whole left branch then proceed to the right of the parent root at every level.
 
-```text
+```py
     def preorder(self):
         '''For preorder traversal of the BST '''
         if self:
@@ -108,7 +108,7 @@ Inorder Traversal is similar to Preorder Traversal but the difference is first w
 
 **And Inorder Traversal always prints the BST in Sorted Order.**
 
-```text
+```py
     def inorder(self):
         ''' For Inorder traversal of the BST '''
         if self:
@@ -123,7 +123,7 @@ Inorder Traversal is similar to Preorder Traversal but the difference is first w
 
 PostOrder Traversal is similar to other traversals but the difference is first we go the extreme left then we proceed to the right and then we print out the parent of the key at every level.
 
-```text
+```py
     def postorder(self):
         ''' For postorder traversal of the BST '''
         if self:
@@ -140,7 +140,7 @@ Now we have to implement Node Class, let’s implement the Tree Class which inst
 
 We first create a similar function that we have created in Node class to expose Tree Class functionalities to outside and not Node Class directly.
 
-```text
+```py
 class Tree(object):
     def __init__(self, initial_data = []):
         self.root = None
@@ -185,7 +185,7 @@ class Tree(object):
 
 Let’s add one more functionality to our class Tree which prints the whole tree in the console log output.
 
-```text
+```py
     def pprint(self, head_node=0, _pre="", _last=True, term=False):
 
         head_node = self.root if head_node == 0 else head_node
@@ -205,7 +205,7 @@ Let’s add one more functionality to our class Tree which prints the whole tree
 
 Now our BST is implemented perfectly in the above classes. Let’s create an object of Tree Class and then check its functionalities.
 
-```text
+```py
 if __name__ == '__main__':
     tree = Tree()
     tree.insert(10)
@@ -372,7 +372,7 @@ if __name__ == '__main__':
 
 **Output**
 
-```text
+```py
 `- 10
    |- 5
    |  |- 4
@@ -395,11 +395,11 @@ if __name__ == '__main__':
 False
 True
 
-Preorder: 
-10 5 4 8 7 12 20 15 13 
-Inorder: 
-4 5 7 8 10 12 13 15 20 
-Postorder: 
-4 7 8 5 13 15 20 12 10 
+Preorder:
+10 5 4 8 7 12 20 15 13
+Inorder:
+4 5 7 8 10 12 13 15 20
+Postorder:
+4 7 8 5 13 15 20 12 10
 ```
 
