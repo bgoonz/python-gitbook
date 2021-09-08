@@ -90,7 +90,7 @@ There are 3 numerical data types :
 * **Float:** Float holds the real numbers and are represented by a decimal and sometimes even scientific notations with E or e indicating the power of 10 \(2.5e2 = 2.5 x 102 = 250\). Ex: 10.24.
 * **Complex Numbers:** These are of the form a + bj, where a and b are floats and J represents the square root of -1 \(which is an imaginary number\). Ex: 10+6j.
 
-```text
+```python
 a = 10 
 b= 3.142 
 c = 10+6j
@@ -102,7 +102,7 @@ So now that you have understood the various numerical data types, you can unders
 
 Type Conversion is the **conversion of a data type into another data type** which can be really helpful to us when we start programming to obtain solutions for our problems. Let us understand with examples.
 
-```text
+```python
 a = 10 
 b = 3.142 
 c = 10+6j 
@@ -136,7 +136,7 @@ Tuples in Python are the . That means that once you have declared the tuple, you
 
 Operations are similar to Lists but the ones where updating, deleting, adding is involved, those operations won’t work. Tuples in Python are written a=\(\) or a=tuple\(\) where ‘a’ is the name of the tuple.
 
-```text
+```python
 a = ('List', 'Dictionary', 'Tuple', 'Integer', 'Float') 
 print(a)
 ```
@@ -180,7 +180,7 @@ You may now have a better understanding of dictionaries in Python Basics. Hence 
 
 A set is basically an You can see that even if there are similar elements in set ‘a’, it will still be printed only once because **un-ordered collection of elements** or items. Elements are sets are a collection of unique elements. **unique** in the set. In Python, they are written inside **curly brackets** and **separated by commas**.
 
-```text
+```python
 a = {1, 2, 3, 4, 4, 4} 
 b = {3, 4, 5, 6} 
 print(a,b)
@@ -226,7 +226,7 @@ Let us move ahead and understand each of these operators carefully.
 
 **Note: Variables are called operands that come on the left and right of the operator. Ex :**
 
-```text
+```python
 a=10 
 b=20 
 a+b
@@ -242,7 +242,7 @@ They are used to perform **arithmetic operations** on data.![](https://miro.medi
 
 The code snippet below will help you understand it better.
 
-```text
+```python
 a = 2 
 b = 3 
 print(a+b, a-b, a*b, a/b, a%b, a**b, end=',')
@@ -310,7 +310,7 @@ These are used to obtain a certain **logic** from the operands. We have 3 operan
 * **or** \(True if either one operand is true\)
 * **not** \(Gives the opposite of the operand passed\)
 
-```text
+```python
 a = True 
 b = False 
 print(a and b, a or b, not a)
@@ -475,7 +475,7 @@ This is how the for loops work in Python. Let us move ahead with the while loop 
 
 **Syntax:**
 
-```text
+```python
 while condition: 
      statements
 ```
