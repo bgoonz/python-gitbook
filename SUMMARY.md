@@ -51,7 +51,7 @@
   * [Random Examples](practice/supplemental-practice/random-examples.md)
   * [Prompts](practice/supplemental-practice/prompts.md)
 * [Abstract Data Structures:](practice/untitled/README.md)
-  * [Untitled](practice/untitled/untitled-7.md)
+  * [Data Structures Overview](practice/untitled/untitled-7.md)
   * [Industry Standard Algorithms](practice/untitled/industry-standard-algorithms.md)
   * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
   * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
