@@ -42,5 +42,9 @@ description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
 
 **Data Structures & Algorithm Interview Codebase \(mostly JS\):**
 
+{% embed url="https://github.com/bgoonz/Data-Structures-Algos-Codebase" %}
+
+\*\*\*\*
+
 \*\*\*\*
 
