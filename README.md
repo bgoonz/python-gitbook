@@ -130,7 +130,7 @@ description: Landing Page
 * [Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
 * [Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
   * [Trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
-* [Utilites](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
+* [Utilities](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
   * [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
   * [Code Lab  Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
 
@@ -180,7 +180,7 @@ description: Landing Page
 * [Calculating Big O](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
 * [Python Cheat Sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)
 * [Code Signal CGA Sprint Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
-* [Youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)
+* [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)
 * [Useful Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/README)
   * [My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
   * [Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
