@@ -1,7 +1,5 @@
 # Employee Manager
 
-
-
 ## Coding Challenge: Employee Management
 
 This code is the very beginning of an employee management system for a company. There are three failing tests that need to be fixed.
