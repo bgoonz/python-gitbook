@@ -255,9 +255,86 @@ class Stack:
 
 ![](../../.gitbook/assets/devider%20%284%29.png)
 
+## Objective 05 - Implement a stack using a linked list
+
+### Overview <a id="overview"></a>
+
+There are two common ways to implement a stack. One is by using a linked list, and the other is by using a dynamic array. Both of these implementations work well.
+
+In the implementation that uses a linked list, the `push` method inserts a new node at the linked list's head, and the `pop` method removes the node at the linked list's head.
+
+### Follow Along <a id="follow-along"></a>
+
+First, let's define our `Stack` class and its `__init__` method:
+
+```text
+class LinkedListNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.top = None
+```
+
+Now we need to define our `push` method to add items to the top of the stack.
+
+```text
+class LinkedListNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def push(self, data):
+        # create new node with data
+        new_node = LinkedListNode(data)
+        # set current top to new node's next
+        new_node.next = self.top
+        # reset the top pointer to the new node
+        self.top = new_node
+```
+
+Next, we need to define our `pop` method to get items off the top of our stack.
+
+```text
+class LinkedListNode:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class Stack:
+    def __init__(self):
+        self.top = None
+
+    def push(self, data):
+        # create new node with data
+        new_node = LinkedListNode(data)
+        # set current top to new node's next
+        new_node.next = self.top
+        # reset the top pointer to the new node
+        self.top = new_node
+
+    def pop(self):
+        # make sure stack is not empty
+        if self.top is not None:
+            # store popped node
+            popped_node = self.top
+            # reset top pointer to next node
+            self.top = popped_node.next
+            # return the value from the popped node
+            return popped_node.data
+```
+
+### Challenge <a id="challenge"></a>
 
 
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-2-module-3-stack-implementation-linked-li-2" %}
 
 
 
