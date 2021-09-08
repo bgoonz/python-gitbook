@@ -5,7 +5,8 @@
 
 ## Cirriculumn
 
-* [Outline](cirriculumn/untitled.md)
+* [Outline](cirriculumn/untitled/README.md)
+  * [General Content](cirriculumn/untitled/general-content.md)
 * [wk17](cirriculumn/untitled-3/README.md)
   * [Outline-w17](cirriculumn/untitled-3/outline.md)
   * [homework](cirriculumn/untitled-3/week-overview.md)

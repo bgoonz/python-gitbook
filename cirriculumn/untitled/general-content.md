@@ -1,54 +1,6 @@
-# Outline
-
-{% embed url="https://60s1b.csb.app/" %}
+# General Content
 
 
-
-
-
-
-
-
-
-{% page-ref page="untitled-3/" %}
-
-
-
-
-
-
-
-
-
-{% page-ref page="untitled-2/" %}
-
-
-
-
-
-
-
-
-
-{% page-ref page="untitled-4/" %}
-
-
-
-
-
-
-
-
-
-{% page-ref page="untitled-1/" %}
-
-
-
-{% embed url="https://gist.github.com/bgoonz/477dd40bc5c4899981efacad9b1a5af3" %}
-
-
-
-{% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
 
 {% embed url="https://gist.github.com/bgoonz/4bb940de5d3fe1ba7cec123fb0cc95d8" %}
 
