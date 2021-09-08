@@ -41,7 +41,7 @@ Python 3.x is the current version, but there are a number of packages and sites 
 
 On some systems, you might have to be explicit when you invoke Python about which version you want by running `python2` or `python3`. The `--version` command line switch will tell you which version is running. Example:
 
-```py
+```python
 $ python --version
 Python 2.7.10
 $ python2 --version
@@ -68,13 +68,13 @@ For managing project packages and Python versions, the classic tool is `virtuale
 
 Running from the command line with NodeJS:
 
-```py
+```python
 node program.js arg1 arg2 etc
 ```
 
 In a web page, a script is referenced with a `<script>` HTML tag:
 
-```py
+```python
 <script src="program.js"></script>
 ```
 
@@ -82,7 +82,7 @@ In a web page, a script is referenced with a `<script>` HTML tag:
 
 Running from the command line:
 
-```py
+```python
 python program.py arg1 arg2 etc
 ```
 
@@ -92,14 +92,14 @@ python program.py arg1 arg2 etc
 
 Single line:
 
-```py
+```python
 // Anything after two forward slashes is a comment
 print(2);  // prints 2
 ```
 
 Multi-line comments:
 
-```py
+```python
 /* Anything between slash-star and
 star-slash is a comment */
 ```
@@ -110,14 +110,14 @@ You may not nest multi-line comments.
 
 Single line:
 
-```py
+```python
 # Anything after a # is a comment
 print(2)  # prints 2
 ```
 
 Python doesn't directly support multi-line comments, but you can effectively do them by using multi-line strings `"""`:
 
-```py
+```python
 """
 At this point we wish
 to print out some numbers
@@ -133,7 +133,7 @@ print(2)
 
 Javascript ends statements with semicolons, usually at the end of the line. I can also be effectively used to put multiple statements on the same line, but this is rare.
 
-```py
+```python
 console.log("Hello, world!");
 
 let x = 10; console.log(x);
@@ -145,7 +145,7 @@ Javascript interpreters will let you get away without using semicolons at ends o
 
 Python can separate statements by semicolons, though this is rare in practice.
 
-```py
+```python
 print(1); print(2)   # prints 1, then 2
 ```
 
@@ -155,7 +155,7 @@ print(1); print(2)   # prints 1, then 2
 
 Whitespace has no special meaning. Blocks are declared with squirrely braces `{` and `}`.
 
-```py
+```python
 if (x == 2) {
   console.log("x must be 2")
 } else {
@@ -171,7 +171,7 @@ if (x == 2) {
 
 Indentation level is how blocks are declared. The preferred method is to use spaces, but tabs can also be used.
 
-```py
+```python
 if x == 2:
   print("x must be 2")
 else:
@@ -187,7 +187,7 @@ else:
 
 Define functions as follows:
 
-```py
+```python
 function foobar(x, y, z) {
   console.log(x, y, z);
   return 12;
@@ -196,7 +196,7 @@ function foobar(x, y, z) {
 
 An alternate syntax for functions is growing increasingly common, called _arrow functions_:
 
-```py
+```python
 let hello = () => {
   console.log("hello");
   console.log("world");
@@ -223,7 +223,7 @@ console.log(add(4, 5)); // prints 9
 
 Define functions as follows:
 
-```py
+```python
 def foobar(x, y, z):
   print(x, y, z)
   return 12
@@ -231,7 +231,7 @@ def foobar(x, y, z):
 
 Python also supports the concept of _lambda functions_, which are simple functions that can do basic operations.
 
-```py
+```python
 add = lambda x, y: x + y
 
 print(add(4, 5)) # prints 9
@@ -283,7 +283,7 @@ The pre- and post-increment and decrement are notably absent.
 
 Variables are created upon use, but should be created with the `let` or `const` keywords.
 
-```py
+```python
 let x = 10;
 const y = 30;
 ```
@@ -294,7 +294,7 @@ const y = 30;
 
 Variables are created upon use.
 
-```py
+```python
 x = 10
 ```
 
@@ -302,7 +302,7 @@ x = 10
 
 #### JavaScript
 
-```py
+```python
 let a = 12;        // number
 let b = 1.2;       // number
 let c = 'hello';   // string
@@ -314,21 +314,21 @@ let g = undefined; // undefined value
 
 Multi-line strings:
 
-```py
+```python
 let s = `this is a
 multi-line string`;
 ```
 
 Parameterized strings:
 
-```py
+```python
 let x = 12;
 console.log(`x is ${x}`); // prints "x is 12"
 ```
 
 JS is _weakly typed_ so it supports operations on multiple types of data at once.
 
-```py
+```python
 "2" + 4;           // string "24"
 parseInt("2") + 4; // number 6
 Number("2") + 4;   // number 6
@@ -336,7 +336,7 @@ Number("2") + 4;   // number 6
 
 #### Python
 
-```py
+```python
 a = 12       # int (integer)
 b = 1.2      # float (floating point)
 c = 'hello'  # str (string)
@@ -347,21 +347,21 @@ f = None     # null value
 
 Multi-line strings:
 
-```py
+```python
 s = """this is a
 multi-line string"""
 ```
 
 Parameterized strings:
 
-```py
+```python
 x = 12
 print(f'x is {x}')   # prints "x is 12"
 ```
 
 Python is generally _strongly typed_ so it it will often complain if you try to mix and match types. You can coerce a type with the `int()`, `float()`, `str()`, and `bool()` functions.
 
-```py
+```python
 "2" + 4        # ERROR: can't mix types
 int("2") + 4   # integer 6
 "2" + str(4)   # string 24
@@ -377,7 +377,7 @@ Arrays are zero-based.
 
 Creating lists:
 
-```py
+```python
 let a1 = new Array();   // Empty array
 let a2 = new Array(10); // Array of 10 elements
 let a3 = [];            // Empty array
@@ -387,7 +387,7 @@ let a5 = [1, 2, "b"];   // No problem
 
 Accessing:
 
-```py
+```python
 console.log(a4[1]);  // prints 20
 
 a4[0] = 5;   // change from 10 to 5
@@ -396,7 +396,7 @@ a4[20] = 99; // OK, makes a new element at index 20
 
 Length/number of elements:
 
-```py
+```python
 a4.length; // 3
 ```
 
@@ -408,7 +408,7 @@ Lists are zero-based.
 
 Creating lists:
 
-```py
+```python
 a1 = list()          # Empty list
 a2 = list((88, 99))  # List of two elements
 a3 = []              # Empty list
@@ -418,7 +418,7 @@ a5 = [1, 2, "b"]     # No problem
 
 Accessing:
 
-```py
+```python
 print(a4[1])  # prints 20
 
 a4[0] = 5;    # change from 10 to 5
@@ -427,7 +427,7 @@ a4[20] = 99;  # ERROR: assignment out of range
 
 Length/Number of elements:
 
-```py
+```python
 len(a4)   # 3
 ```
 
@@ -437,7 +437,7 @@ In Python, we can access parts of lists or strings using slices.
 
 Creating slices:
 
-```py
+```python
 a[start:end] # items start through end-1
 a[start:]    # items start through the rest of the array
 a[:end]      # items from the beginning through end-1
@@ -446,7 +446,7 @@ a[:]         # a copy of the whole array
 
 Starting from the end: We can also use negative numbers when creating slices, which just means we start with the index at the end of the array, rather than the index at the beginning of the array.
 
-```py
+```python
 a[-1]    # last item in the array
 a[-2:]   # last two items in the array
 a[:-2]   # everything except the last two items
@@ -456,7 +456,7 @@ a[:-2]   # everything except the last two items
 
 Python supports a read-only type of list called a _tuple_.
 
-```py
+```python
 x = (1, 2, 3)
 print(x[1])  # prints 2
 
@@ -467,7 +467,7 @@ y = (10,)    # A tuple of one element, comma required
 
 Python supports building lists with _list comprehensions_. This is often useful for filtering lists.
 
-```py
+```python
 a = [1, 2, 3, 4, 5]
 
 # Make a list b that is the same as list a:
@@ -486,7 +486,7 @@ _Objects_ hold data which can be found by a specific key called a _property_.
 
 Creation:
 
-```py
+```python
 let o1 = {};           // empty object
 let o2 = {"x": 12};    // one property
 let o3 = {y: "hello"}; // property quotes optional
@@ -500,7 +500,7 @@ let o4 = {  // common multiline format
 
 Access:
 
-```py
+```python
 console.log(o2.x);      // prints 12
 console.log(o4["foo"]); // prints hello
 ```
@@ -513,7 +513,7 @@ Unlike objects in JS, a `dict` is its own beast, and is not the same as an objec
 
 Creation:
 
-```py
+```python
 o1 = {}           # empty dict
 o2 = {"x": 12}    # one key
 o3 = {y: "hello"} # ERROR: key quotes required,
@@ -530,7 +530,7 @@ o4 = {  # multiline format
 
 Access:
 
-```py
+```python
 print(o4["a"])  # Prints 20
 ```
 
@@ -542,7 +542,7 @@ Dot notation does not work with Python dicts.
 
 Converting to different number bases:
 
-```py
+```python
 let x = 237;
 let x_binary = x.toString(2); // string '11101101'
 let x_hex = x.toString(16);   // string 'ed'
@@ -550,14 +550,14 @@ let x_hex = x.toString(16);   // string 'ed'
 
 Controlling floating point precision:
 
-```py
+```python
 let x = 3.1415926535;
 let y = x.toFixed(2);  // string '3.14'
 ```
 
 Padding and justification:
 
-```py
+```python
 let s = "Hello!";
 let t = s.padStart(10, ' '); // string '    Hello!' 
 let u = s.padEnd(10, ' ');   // string 'Hello!    '
@@ -570,7 +570,7 @@ let v = s.padStart(10, '*'); // string '****Hello!'
 
 Parameterized strings:
 
-```py
+```python
 let x = 3.1415926;
 let y = "Hello";
 let z = 67;
@@ -595,7 +595,7 @@ Also see [printf-style String Formatting](https://docs.python.org/3/library/stdt
 
 Literal boolean values:
 
-```py
+```python
 x = true;
 y = false;
 ```
@@ -615,7 +615,7 @@ Boolean operators:
 
 The concept of strict equality/inequality applies to items that might normally be converted into a compatible type. The strict tests will consider if the types themselves are the same.
 
-```py
+```python
 0 == "0";  // true
 0 === "0"; // false
 
@@ -636,7 +636,7 @@ Logical operators:
 
 The not operator `!` can be used to test whether or not a value is "truthy".
 
-```py
+```python
 !0;    // true
 !!0;   // false
 !1;    // false
@@ -647,7 +647,7 @@ The not operator `!` can be used to test whether or not a value is "truthy".
 
 Example:
 
-```py
+```python
 if (a == 2 && b !== "") {
   // Something complicated
 }
@@ -657,7 +657,7 @@ if (a == 2 && b !== "") {
 
 Literal boolean values:
 
-```py
+```python
 x = True
 y = False
 ```
@@ -683,7 +683,7 @@ Logical operators:
 
 The `not` operator can be used to test whether or not a value is "truthy".
 
-```py
+```python
 not 0      # true
 not not 0  # false
 not 1      # false
@@ -694,7 +694,7 @@ not "x"    # false
 
 Example:
 
-```py
+```python
 if a == 2 and b != "":
   # Something complicated
 ```
@@ -705,7 +705,7 @@ if a == 2 and b != "":
 
 C-style `for` loops:
 
-```py
+```python
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
@@ -713,7 +713,7 @@ for (let i = 0; i < 10; i++) {
 
 `for`-`in` loops iterate over the properties of an object or indexes of an array:
 
-```py
+```python
 a = [10, 20, 30];
 
 for (let i in a) {
@@ -731,7 +731,7 @@ for (let i in b) {
 
 `for`-`of` loops access the values within the array \(as opposed to the indexes of the array\):
 
-```py
+```python
 a = [10, 20, 30];
 
 for (let i of a) {
@@ -745,7 +745,7 @@ for (let i of a) {
 
 Counting loops:
 
-```py
+```python
 # Use the range() function to count:
 for i in range(10):
   print(i)   # Prints 0-9
@@ -759,7 +759,7 @@ for i in range(-10, 20, 3):
 
 Iterating over other types:
 
-```py
+```python
 # A list
 a = [10, 20, 30]
 
@@ -781,7 +781,7 @@ for i in b:
 
 C-style `while` and `do`-`while`:
 
-```py
+```python
 // Print 10 down to 0:
 
 let x = 10;
@@ -802,7 +802,7 @@ while (x < 10);
 
 Python has a `while` loop:
 
-```py
+```python
 # Print from 10 down through 0
 x = 10
 while x >= 0:
@@ -816,7 +816,7 @@ while x >= 0:
 
 JS can switch on various data types:
 
-```py
+```python
 switch(x) {
   case "foo":
     console.log("x is foo, all right");
@@ -835,7 +835,7 @@ Python doesn't have a `switch` statement. You can use `if`-`elif`-`else` blocks.
 
 A somewhat clumsy approximation of a `switch` can be constructed with a `dict` of functions.
 
-```py
+```python
 def func1():
   print("case 1 is hit")
 
@@ -861,7 +861,7 @@ funcs[x]()  # calls func2
 
 JS uses C-style `if` statements:
 
-```py
+```python
 if (x == 10) {
   console.log("x is 10");
 } else if (x == 20) {
@@ -875,7 +875,7 @@ if (x == 10) {
 
 Python notably uses `elif` instead of `else if`.
 
-```py
+```python
 if x == 10:
   print("x is 10")
 elif x == 20:
@@ -892,7 +892,7 @@ The current object is referred to by `this`.
 
 Pre ES-2015, classes were created using functions. This is now outdated.
 
-```py
+```python
 function Goat(color) {
   this.legs = 4;
   this.color = color;
@@ -903,7 +903,7 @@ g = new Goat("brown");
 
 JS uses prototypal inheritance. Pre ES-2015, this was explicit, and is also outdated:
 
-```py
+```python
 function Creature(type) {
   this.type = type;
 }
@@ -923,7 +923,7 @@ g.jump(); // "I'm jumping! Yay!"
 
 Modern JS introduced the `class` keyword and a syntax more familiar to most other OOP languages. Note that the inheritance model is still prototypal inheritance; it's just that the details are hidden from the developer.
 
-```py
+```python
 class Creature {
   constructor(type) {
     this.type = type;
@@ -955,7 +955,7 @@ The current object is referred to by `self`. Note that `self` is explicitly pres
 
 Python 2 syntax:
 
-```py
+```python
 class Creature:
   def __init__(self, type): # constructor
     self.type = type
@@ -976,7 +976,7 @@ g.jump()  # I'm jumping! Yay!
 
 Python 3 syntax includes the new `super()` keyword to make life easier.
 
-```py
+```python
 class Creature:
   def __init__(self, type): # constructor
     self.type = type

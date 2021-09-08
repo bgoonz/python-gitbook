@@ -1,6 +1,6 @@
 # Linked List
 
-```python
+```pythonthon
 """Each ListNode holds a reference to its previous node
 as well as its next node in the List."""
 class ListNode:
@@ -78,7 +78,7 @@ class DoublyLinkedList:
 
 Test:
 
-```python
+```pythonthon
 import unittest
 from doubly_linked_list import ListNode
 from doubly_linked_list import DoublyLinkedList

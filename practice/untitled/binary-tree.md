@@ -29,7 +29,7 @@
       * Implementing as a balanced tree results in min number of parents and max number of leaves: 2 parents, 3 leaves
   * All that we need in order to implement a binary tree is a TreeNode class that can store a value and references to a left and right child. We can create a tree by assigning the left and right properties to point to other TreeNode instances:
 
-  ```py
+  ```python
   class TreeNode {
     constructor(val) {
       this.val = val;
@@ -56,7 +56,7 @@
 * A binary search tree is a binary tree with the added stipulation that all values to the left of a node are less than its value and all values to the right are greater than its value.
 * Example of a BST with an insert method. You won't be asked to implement a removal:
 
-  ```py
+  ```python
   class BST {
     constructor() {
         this.root = null;
@@ -86,7 +86,7 @@
 
   ```
 
-```python
+```pythonthon
 # Implement a Binary Search Tree (BST) that can insert values and check if
 # values are present
 
@@ -157,7 +157,7 @@ print tree.search(6)
 
 ```
 
-```python
+```pythonthon
 class Solution(object):
     def topKFrequent(self, nums, k):
         number_frequency = {}
@@ -335,7 +335,7 @@ Given an array that is sorted in ascending order containing unique integer eleme
 
 For example, given an array `[1, 2, 3, 4, 5, 6, 7]`, your function should return a binary search tree with the form
 
-```py
+```python
                           4
                         /   \
                       2       6
@@ -347,7 +347,7 @@ Note that when we say "binary search tree" in this case, we're just talking abou
 
 Here's a `BinaryTreeNode` class that you can use to construct a binary search tree:
 
-```python
+```pythonthon
 class BinaryTreeNode:
   def __init__(self, value):
     self.value = value
@@ -373,7 +373,7 @@ From the given example where the input is `[1, 2, 3, 4, 5, 6, 7]`, the expected 
 
 A straightforward way to do this would be to take the first element of our array, call that the root, and then iterate through the rest of our array, adding those elements as nodes in the binary search tree. In pseudocode, that might look something like this:
 
-```py
+```python
 def create_min_height_bst(sorted_arr):
   root = BinaryTreeNode(sorted_arr[0])
 
@@ -471,7 +471,7 @@ console.log(isBSTMinHeight(bst, sortedArray.length));
 
 ```
 
-```python
+```pythonthon
 import math
 
 
@@ -559,7 +559,7 @@ print(is_bst_min_height(bst, len(sorted_array)))  # should print true
 
 ## Another BST Implementation:
 
-```python
+```pythonthon
 class BinarySearchTree:
   def __init__(self, value):
     self.value = value
@@ -580,7 +580,7 @@ class BinarySearchTree:
 
 ```
 
-```python
+```pythonthon
 import unittest
 import random
 from binary_search_tree import BinarySearchTree

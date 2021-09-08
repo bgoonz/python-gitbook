@@ -48,13 +48,13 @@ You often encounter a scenario where you want to use a subset of items from an e
 
 In Python, the syntax looks like this:
 
-```pythonext
+```pythonthonext
 my_list[start_index:end_index]
 ```
 
 The default start index is 0, and if you leave off the end_index, the slice will capture through the end of the list.
 
-```pythonext
+```pythonthonext
 my_list[:]  # This would be all of the items in my_list
 my_list[:5] # This would be the items from index 0 to 4
 my_list[5:] # This would be the items from index 5 to the end of the list
@@ -102,7 +102,7 @@ It would be best if you always defaulted to using an out-of-place function. This
 
 Here is an example of a function that triples each number in an input list. This function does this _in-place_:
 
-```pythonext
+```pythonthonext
 def append_exclamations(str_list):
     for idx, item in enumerate(str_list):
         str_list[idx] += "!"
@@ -110,7 +110,7 @@ def append_exclamations(str_list):
 
 Now, since this is an in-place function, watch what happens when we use it:
 
-```pythonext
+```pythonthonext
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> append_exclamations(my_list)
 >>> my_list
@@ -121,7 +121,7 @@ Now, since this is an in-place function, watch what happens when we use it:
 
 Let's now write a similar function, but this time we will do it _out-of-place:_
 
-```pythonext
+```pythonthonext
 def append_exclamations(str_list):
     # Create a new empty list that has the same length as the input list
     loud_list = [None] * len(str_list)
@@ -135,7 +135,7 @@ def append_exclamations(str_list):
 
 Look what happens when we use this function:
 
-```pythonext
+```pythonthonext
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> my_new_louder_list = append_exclamations(my_list)
 >>> my_list

@@ -37,7 +37,7 @@ Python 3.x is the current version, but there are a number of packages and sites 
 
 On some systems, you might have to be explicit when you invoke Python about which version you want by running `python2` or `python3`. The `--version` command line switch will tell you which version is running. Example:
 
-```py
+```python
 $ python --version
 Python 2.7.10
 $ python2 --version
@@ -64,7 +64,7 @@ For managing project packages and Python versions, the classic tool is `virtuale
 
 Running from the command line with NodeJS:
 
-```py
+```python
 node program.js arg1 arg2 etc
 ```
 
@@ -78,7 +78,7 @@ In a web page, a script is referenced with a `<script>` HTML tag:
 
 Running from the command line:
 
-```py
+```python
 python program.py arg1 arg2 etc
 ```
 
@@ -106,14 +106,14 @@ You may not nest multi-line comments.
 
 Single line:
 
-```python
+```pythonthon
 # Anything after a # is a comment
 print(2)  # prints 2
 ```
 
 Python doesn't directly support multi-line comments, but you can effectively do them by using multi-line strings `"""`:
 
-```python
+```pythonthon
 """
 At this point we wish
 to print out some numbers
@@ -141,7 +141,7 @@ Javascript interpreters will let you get away without using semicolons at ends o
 
 Python can separate statements by semicolons, though this is rare in practice.
 
-```python
+```pythonthon
 print(1); print(2)   # prints 1, then 2
 ```
 
@@ -167,7 +167,7 @@ if (x == 2) {
 
 Indentation level is how blocks are declared. The preferred method is to use spaces, but tabs can also be used.
 
-```python
+```pythonthon
 if x == 2:
   print("x must be 2")
 else:
@@ -219,7 +219,7 @@ console.log(add(4, 5)); // prints 9
 
 Define functions as follows:
 
-```python
+```pythonthon
 def foobar(x, y, z):
   print(x, y, z)
   return 12
@@ -227,7 +227,7 @@ def foobar(x, y, z):
 
 Python also supports the concept of _lambda functions_, which are simple functions that can do basic operations.
 
-```python
+```pythonthon
 add = lambda x, y: x + y
 
 print(add(4, 5)) # prints 9
@@ -290,7 +290,7 @@ const y = 30;
 
 Variables are created upon use.
 
-```python
+```pythonthon
 x = 10
 ```
 
@@ -332,7 +332,7 @@ Number("2") + 4;   // number 6
 
 #### Python
 
-```python
+```pythonthon
 a = 12       # int (integer)
 b = 1.2      # float (floating point)
 c = 'hello'  # str (string)
@@ -343,21 +343,21 @@ f = None     # null value
 
 Multi-line strings:
 
-```python
+```pythonthon
 s = """this is a
 multi-line string"""
 ```
 
 Parameterized strings:
 
-```python
+```pythonthon
 x = 12
 print(f'x is {x}')   # prints "x is 12"
 ```
 
 Python is generally _strongly typed_ so it it will often complain if you try to mix and match types. You can coerce a type with the `int()`, `float()`, `str()`, and `bool()` functions.
 
-```python
+```pythonthon
 "2" + 4        # ERROR: can't mix types
 int("2") + 4   # integer 6
 "2" + str(4)   # string 24
@@ -404,7 +404,7 @@ Lists are zero-based.
 
 Creating lists:
 
-```python
+```pythonthon
 a1 = list()          # Empty list
 a2 = list((88, 99))  # List of two elements
 a3 = []              # Empty list
@@ -414,7 +414,7 @@ a5 = [1, 2, "b"]     # No problem
 
 Accessing:
 
-```python
+```pythonthon
 print(a4[1])  # prints 20
 
 a4[0] = 5;    # change from 10 to 5
@@ -423,7 +423,7 @@ a4[20] = 99;  # ERROR: assignment out of range
 
 Length/Number of elements:
 
-```python
+```pythonthon
 len(a4)   # 3
 ```
 
@@ -433,7 +433,7 @@ In Python, we can access parts of lists or strings using slices.
 
 Creating slices:
 
-```python
+```pythonthon
 a[start:end] # items start through end-1
 a[start:]    # items start through the rest of the array
 a[:end]      # items from the beginning through end-1
@@ -442,7 +442,7 @@ a[:]         # a copy of the whole array
 
 Starting from the end: We can also use negative numbers when creating slices, which just means we start with the index at the end of the array, rather than the index at the beginning of the array.
 
-```python
+```pythonthon
 a[-1]    # last item in the array
 a[-2:]   # last two items in the array
 a[:-2]   # everything except the last two items
@@ -452,7 +452,7 @@ a[:-2]   # everything except the last two items
 
 Python supports a read-only type of list called a _tuple_.
 
-```python
+```pythonthon
 x = (1, 2, 3)
 print(x[1])  # prints 2
 
@@ -463,7 +463,7 @@ y = (10,)    # A tuple of one element, comma required
 
 Python supports building lists with _list comprehensions_. This is often useful for filtering lists.
 
-```python
+```pythonthon
 a = [1, 2, 3, 4, 5]
 
 # Make a list b that is the same as list a:
@@ -509,7 +509,7 @@ Unlike objects in JS, a `dict` is its own beast, and is not the same as an objec
 
 Creation:
 
-```python
+```pythonthon
 o1 = {}           # empty dict
 o2 = {"x": 12}    # one key
 o3 = {y: "hello"} # ERROR: key quotes required,
@@ -526,7 +526,7 @@ o4 = {  # multiline format
 
 Access:
 
-```python
+```pythonthon
 print(o4["a"])  # Prints 20
 ```
 
@@ -653,7 +653,7 @@ if (a == 2 && b !== "") {
 
 Literal boolean values:
 
-```python
+```pythonthon
 x = True
 y = False
 ```
@@ -679,7 +679,7 @@ Logical operators:
 
 The `not` operator can be used to test whether or not a value is "truthy".
 
-```python
+```pythonthon
 not 0      # true
 not not 0  # false
 not 1      # false
@@ -690,7 +690,7 @@ not "x"    # false
 
 Example:
 
-```python
+```pythonthon
 if a == 2 and b != "":
   # Something complicated
 ```
@@ -741,7 +741,7 @@ for (let i of a) {
 
 Counting loops:
 
-```python
+```pythonthon
 # Use the range() function to count:
 for i in range(10):
   print(i)   # Prints 0-9
@@ -755,7 +755,7 @@ for i in range(-10, 20, 3):
 
 Iterating over other types:
 
-```python
+```pythonthon
 # A list
 a = [10, 20, 30]
 
@@ -798,7 +798,7 @@ while (x < 10);
 
 Python has a `while` loop:
 
-```python
+```pythonthon
 # Print from 10 down through 0
 x = 10
 while x >= 0:
@@ -831,7 +831,7 @@ Python doesn't have a `switch` statement. You can use `if`-`elif`-`else` blocks.
 
 A somewhat clumsy approximation of a `switch` can be constructed with a `dict` of functions.
 
-```python
+```pythonthon
 def func1():
   print("case 1 is hit")
 
@@ -871,7 +871,7 @@ if (x == 10) {
 
 Python notably uses `elif` instead of `else if`.
 
-```python
+```pythonthon
 if x == 10:
   print("x is 10")
 elif x == 20:
@@ -951,7 +951,7 @@ The current object is referred to by `self`. Note that `self` is explicitly pres
 
 Python 2 syntax:
 
-```python
+```pythonthon
 class Creature:
   def __init__(self, type): # constructor
     self.type = type
@@ -972,7 +972,7 @@ g.jump()  # I'm jumping! Yay!
 
 Python 3 syntax includes the new `super()` keyword to make life easier.
 
-```python
+```pythonthon
 class Creature:
   def __init__(self, type): # constructor
     self.type = type

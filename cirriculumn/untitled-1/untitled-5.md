@@ -177,7 +177,7 @@ In an adjacency list, the graph stores a list of vertices. For each vertex, it h
 
 Below is a representation of the graph above in Python:
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {
@@ -199,7 +199,7 @@ Notice that this adjacency _list_ doesn't use any lists. The `vertices` collecti
 
 Here is the representation of the graph above in an adjacency matrix:
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.edges = [[0,1,0,0,0,0,0],
@@ -251,7 +251,7 @@ _Complexity_: `O(V)` time
 
 For an adjacency matrix, we would need to add a new value to the end of each existing row and add a new row.
 
-```python
+```pythonthon
 for v in self.edges:
   self.edges[v].append(0)
 v.append([0] * len(self.edges + 1))
@@ -268,7 +268,7 @@ _Complexity_: `O(1)` time
 
 Adding a vertex is simple in an adjacency list:
 
-```python
+```pythonthon
 self.vertices["H"] = set()
 ```
 
@@ -300,7 +300,7 @@ _Complexity_: `O(1)`
 
 Adding an edge in an adjacency matrix is simple:
 
-```python
+```pythonthon
 self.edges[v1][v2] = 1
 ```
 
@@ -310,7 +310,7 @@ _Complexity_: `O(1)`
 
 Adding an edge in an adjacency list is simple:
 
-```python
+```pythonthon
 self.vertices[v1].add(v2)
 ```
 
@@ -326,7 +326,7 @@ _Complexity_: `O(1)`
 
 Removing an edge from an adjacency matrix is simple:
 
-```python
+```pythonthon
 self.edges[v1][v2] = 0
 ```
 
@@ -336,7 +336,7 @@ _Complexity_: `O(1)`
 
 Removing an edge from an adjacency list is simple:
 
-```python
+```pythonthon
 self.vertices[v1].remove(v2)
 ```
 
@@ -352,7 +352,7 @@ _Complexity_: `O(1)`
 
 Finding an edge in an adjacency matrix is simple:
 
-```python
+```pythonthon
 return self.edges[v1][v2] > 0
 ```
 
@@ -362,7 +362,7 @@ _Complexity_: `O(1)`
 
 Finding an edge in an adjacency list is simple:
 
-```python
+```pythonthon
 return v2 in self.vertices[v1]
 ```
 
@@ -380,7 +380,7 @@ _Complexity_: `O(V)`
 
 In an adjacency matrix, this is complicated. You would need to iterate through the entire row and populate a list based on the results:
 
-```python
+```pythonthon
 v_edges = []
 for v2 in self.edges[v]:
     if self.edges[v][v2] > 0:
@@ -394,7 +394,7 @@ _Complexity_: `O(1)`
 
 With an adjacency list, this is as simple as returning the value from the vertex dictionary:
 
-```python
+```pythonthon
 return self.vertex[v]
 ```
 
@@ -421,7 +421,7 @@ Together, we will now use the graph shown in the picture above and represent it 
 
 First, the adjacency list:
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {
@@ -440,7 +440,7 @@ The difference between this implementation and the previous adjacency list is th
 
 Now, we need to implement an adjacency matrix. Remember, that one benefit of the matrix is how easy it is to represent edge weights:
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.edges = [[0,1,0,0,0],
@@ -482,7 +482,7 @@ We will now use dictionaries to implement the graph abstract data type in Python
 
 Let's start by defining a `Vertex` class and defining its initialization method \(`__init__`\) and its `__str__` method so we can print out a human-readable string representations of each vertex:
 
-```python
+```pythonthon
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -494,7 +494,7 @@ class Vertex:
 
 The next thing we need for our `Vertex` class is a way to other vertices that are connected and the `weight` of the connection edge. We will call this method `add_connection`.
 
-```python
+```pythonthon
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -509,7 +509,7 @@ class Vertex:
 
 Let's now add three methods that allow us to get data out of our `Vertex` instance objects. These three methods will be `get_connections` \(retrieves all currently connected vertices\), `get_value` \(retrieves the value of the vertex instance\), and `get_weight` \(gets the edge weight from the vertex to a specified connected vertex\).
 
-```python
+```pythonthon
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -537,7 +537,7 @@ We've finished our `Vertex` class. Now, let's work on our `Graph` class.
 
 Our graph class's primary purpose is to be a way that we can map vertex names to specific vertex objects. We also want to keep track of the number of vertices that our graph contains using a `count` property. We will do so using a dictionary. Let's start by defining an initialization method \(`__init__`\).
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -546,7 +546,7 @@ class Graph:
 
 Next, we need a way to add vertices to our graph. Let's define an `add_vertex` method.
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -561,7 +561,7 @@ class Graph:
 
 We also need a way to add an edge to our graph. We need a method that can create a connection between two vertices and specify the edge's weight. Let's do so by defined an `add_edge` method.
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -583,7 +583,7 @@ class Graph:
 
 Next, we need a way to retrieve a list of all the vertices in our graph. We will define a method called `get_vertices`.
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -608,7 +608,7 @@ class Graph:
 
 Last, we will override a few built-in methods \(`__contains__` and `__iter__`\) that are available on objects to make sure they work correctly with `Graph` instance objects.
 
-```python
+```pythonthon
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -639,7 +639,7 @@ class Graph:
 
 Let's go ahead and test our class definitions and build up a graph structure in a Python interactive environment.
 
-```python
+```pythonthon
 >>> g = Graph()
 >>> for i in range(8):
 ...     g.add_vertex(i)

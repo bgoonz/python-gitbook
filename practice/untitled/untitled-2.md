@@ -4,7 +4,7 @@
 
 {% tabs %}
 {% tab title="First Tab" %}
-```python
+```pythonthon
 from collections import deque
 from collections.abc import Sequence
 
@@ -32,7 +32,7 @@ def bfs_search_grid(grid: Sequence[Sequence[int]], start: tuple[int, int], goal:
 {% endtab %}
 
 {% tab title="bisect\_search.py" %}
-```python
+```pythonthon
 from collections.abc import Callable
 
 
@@ -50,7 +50,7 @@ def bisect_search(predicate: Callable[[int], bool], low: int, high: int) -> int:
 {% endtab %}
 
 {% tab title="Binary Search" %}
-```python
+```pythonthon
 # Uses python3
 import random
 
@@ -133,7 +133,7 @@ stress_test(100, 100000)
 {% endtab %}
 
 {% tab title="BST.py" %}
-```python
+```pythonthon
 class BSTNode:
     def __init__(self, value):
         self.value = value
@@ -208,7 +208,7 @@ print(f"does 8 exist? {root.search(15)}")
 {% endtab %}
 
 {% tab title="" %}
-```python
+```pythonthon
 # -*- coding: utf-8 -*-
 """Searching.ipynb
 
@@ -401,7 +401,7 @@ fib(460)
 {% endtab %}
 {% endtabs %}
 
-```python
+```pythonthon
 from collections import deque
 from collections.abc import Callable, Iterable, Mapping
 

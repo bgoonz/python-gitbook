@@ -1,6 +1,6 @@
 # Array
 
-```python
+```pythonthon
 # Python Program to demonstrate creation of Array using array creations
 import array as arr
 

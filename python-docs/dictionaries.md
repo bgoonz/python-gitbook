@@ -1,6 +1,6 @@
 # Dictionaries
 
-```python
+```pythonthon
 import itertools
 
 # Given an array of coins and an array of quantities for each coin with the
@@ -63,7 +63,7 @@ def combine_sets(set1, set2):
 
 ```
 
-```python
+```pythonthon
 # need strings[i] = strings[j] for all patterns[i] = patterns[j] to be true -
 # give false if strings[i] != strings[j] and patterns[i] = patterns[j] or
 # strings[i] = strings[j] and patterns[j] != patterns[j] - this last condition
@@ -92,7 +92,7 @@ def areFollowingPatterns(strings, patterns):
 
 ```
 
-```python
+```pythonthon
 # gives True if two duplicate numbers in the nums array are within k distance
 # (inclusive) of one another, measuring by absolute difference in index
 

@@ -1,6 +1,6 @@
 # String-Methods
 
-```python
+```pythonthon
 def initials(phrase):
     words = phrase.split()
     result = ""

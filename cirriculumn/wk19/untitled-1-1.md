@@ -14,7 +14,7 @@ Any Python file that ends with the `.py` extension is considered a module. The n
 
 To import from other modules, we can use the `import` command.
 
-```pythonext
+```pythonthonext
 import math
 
 print(math.factorial(5))
@@ -25,7 +25,7 @@ So, by importing the built-in `math` module, we have access to all of the functi
 
 If you only need a specific function from a module, you can import that specific function like so:
 
-```pythonext
+```pythonthonext
 from math import factorial
 
 print(factorial(5))
@@ -34,7 +34,7 @@ print(factorial(5))
 
 You can also import all the names from a module with this syntax to avoid using dot notation throughout your file.
 
-```pythonext
+```pythonthonext
 from math import *
 
 print(factorial(5))
@@ -45,7 +45,7 @@ print(pow(2, 3))
 
 You can also bind the module to a name of your choice by using `as`.
 
-```pythonext
+```pythonthonext
 import math as alias
 
 print(alias.factorial(5))
@@ -54,7 +54,7 @@ print(alias.factorial(5))
 
 To find out which names a module defines when imported, you can use the `dir()` method. This method returns an alphabetically sorted list of strings for all of the names defined in the module.
 
-```pythonext
+```pythonthonext
 import math
 
 print(dir(math))
@@ -157,7 +157,7 @@ Notice that the last element or node in the linked list does not have a pointer 
 
 What does a singly linked list implementation look like in Python? Let's start by writing a `LinkedListNode` class for each element in the linked list.
 
-```pythonext
+```pythonthonext
 class LinkedListNode:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -166,7 +166,7 @@ class LinkedListNode:
 
 Now, we need to build out the class for the `LinkedList` itself:
 
-```pythonext
+```pythonthonext
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
@@ -174,7 +174,7 @@ class LinkedList:
 
 Our class is super simple so far and only includes an initialization method. Let's add an `append` method so that we can add nodes to the end of our list:
 
-```pythonext
+```pythonthonext
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
@@ -195,7 +195,7 @@ class LinkedList:
 
 Now, let's use our simple class definitions for `LinkedListNode` and `LinkedList` to create a linked list of elements `1`, `2`, and `3`.
 
-```pythonext
+```pythonthonext
 >>> a = LinkedListNode(1)
 >>> my_ll = LinkedList(a)
 >>> my_ll.append(2)
@@ -223,7 +223,7 @@ You must be able to understand and interact with linked lists. You now know the 
 
 [GitHub - bgoonz/DATA_STRUC_PYTHON_NOTES](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
 
-```pythonext
+```pythonthonext
 # -*- coding: utf-8 -*-
 """Linked Lists.ipynb
 
@@ -251,7 +251,7 @@ L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 
 Node\(45\) Node\(90\)
 
-```pythonext
+```pythonthonext
 """
 
 class LinkedListNode:

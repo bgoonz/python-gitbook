@@ -32,7 +32,7 @@ Unfortunately, the list has a few shortcomings. The biggest issue is that it can
 
 
 
-```python
+```pythonthon
 # Python program to
 # demonstrate stack implementation
 # using list
@@ -86,7 +86,7 @@ The same methods on deque as seen in the list are used, append\(\) and pop\(\).
 
 
 
-```python
+```pythonthon
 # Python program to
 # demonstrate stack implementation
 # using collections.deque
@@ -156,7 +156,7 @@ There are various functions available in this module:
 
 \`\`
 
-```python
+```pythonthon
 # Python program to
 # demonstrate stack implementation
 # using queue module
@@ -217,7 +217,7 @@ Below is the implementation of the above approach:
 
 
 
-```python
+```pythonthon
 # Python program to demonstrate
 # stack implementation using a linked list.
 # node class
@@ -302,7 +302,7 @@ Stack: 5 -&gt; 4 -&gt; 3 -&gt; 2 -&gt; 1
 
 
 
-```python
+```pythonthon
 
 # Python program to
 # demonstrate stack implementation

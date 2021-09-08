@@ -16,7 +16,7 @@ Python's built-in dictionary type is wonderful for maintaining dynamic internal 
 
 
 
-```python
+```pythonthon
 class SimpleGradebook:
     def __init__(self):
         self._grades = {}
@@ -34,7 +34,7 @@ class SimpleGradebook:
 
 
 
-```python
+```pythonthon
 book = SimpleGradebook()
 book.add_student('Isaac Newton')
 book.report_grade('Isaac Newton', 90)

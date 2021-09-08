@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="First Tab" %}
-```python
+```pythonthon
 
 This implementation is different than the ones in the referenced books, which are different from each other.
 It uses methods and functions that do iteration versus for-loops. Just remember it's still O(n^2).
@@ -31,7 +31,7 @@ def selection_sort_iter(seq: MutableSequence[T]) -> None:
 
 
 
-```python
+```pythonthon
 def partition(A, lo, hi):
     pivot = A[lo + (hi - lo) // 2]
     i = lo - 1
@@ -97,7 +97,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```py
+```python
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|
@@ -141,7 +141,7 @@ Just clone the repository .
 
 
 
-```python
+```pythonthon
 #Link to problem:- 
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
 
@@ -185,7 +185,7 @@ for i in range(len(arr)):
 
 Insertion Sort
 
-```python
+```pythonthon
 # Insertion Sort
 
 ## Aim

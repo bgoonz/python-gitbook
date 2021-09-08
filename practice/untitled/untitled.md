@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="num-class" %}
-```python
+```pythonthon
 import math
 from numbers import Rational
 

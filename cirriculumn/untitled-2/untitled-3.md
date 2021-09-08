@@ -234,7 +234,7 @@ Since we can express characters as 8-bit integers, we can express strings as arr
 
 For example, we could represent LAMBDA like so:
 
-```py
+```python
 L -> 01001100
 A -> 01000001
 M -> 01001101

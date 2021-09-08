@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="Implementation " %}
-```python
+```pythonthon
 # Implement a Binary Search Tree (BST) that can insert values and check if
 # values are present
 
@@ -75,7 +75,7 @@ print tree.search(6)
 {% endtab %}
 
 {% tab title="Preorder Operations" %}
-```python
+```pythonthon
 class Node(object):
     def __init__(self, value):
         self.value = value
@@ -154,7 +154,7 @@ print(tree.print_tree())
 {% endtab %}
 
 {% tab title="bst.py" %}
-```python
+```pythonthon
 class BSTNode:
     def __init__(self, value):
         self.value = value
@@ -256,7 +256,7 @@ Our implementation won’t use a `Tree` class, but instead just a `Node` class. 
 
 First, we create a constructor:
 
-```python
+```pythonthon
 class BSTNode:
     def __init__(self, val=None):
         self.left = None
@@ -270,7 +270,7 @@ We’ll allow a value \(key\) to be provided, but if one isn’t provided we’l
 
 We need a way to insert new data. The insert method is as follows:
 
-```python
+```pythonthon
 def insert(self, val):
     if not self.val:
         self.val = val
@@ -296,7 +296,7 @@ If the node doesn’t yet have a value, we can just set the given value and retu
 
 #### Step 3 – Get Min and Get Max
 
-```python
+```pythonthon
 def get_min(self):
     current = self
     while current.left is not None:
@@ -314,7 +314,7 @@ def get_max(self):
 
 #### Step 4 – Delete
 
-```python
+```pythonthon
 def delete(self, val):
     if self == None:
         return self
@@ -380,7 +380,7 @@ The delete operation is one of the more complex ones. It is a recursive function
 
 The exists function is another simple recursive function that returns `True` or `False` depending on whether a given value already exists in the tree.
 
-```py
+```python
 def exists(self, val):
     if val == self.val:
         return True
@@ -399,7 +399,7 @@ def exists(self, val):
 
 It’s useful to be able to print out the tree in a readable format. The `inorder` method print’s the values in the tree in the order of their keys.
 
-```python
+```pythonthon
 def inorder(self, vals):
     if self.left is not None:
         self.left.inorder(vals)
@@ -412,7 +412,7 @@ def inorder(self, vals):
 
 #### Step 7 – Preorder
 
-```python
+```pythonthon
 def preorder(self, vals):
     if self.val is not None:
         vals.append(self.val)
@@ -425,7 +425,7 @@ def preorder(self, vals):
 
 #### Step 8 – Postorder
 
-```python
+```pythonthon
 def postorder(self, vals):
     if self.left is not None:
         self.left.postorder(vals)
@@ -438,7 +438,7 @@ def postorder(self, vals):
 
 #### Using the BST
 
-```python
+```pythonthon
 def main():
     nums = [12, 6, 18, 19, 21, 11, 3, 5, 4, 24, 18]
     bst = BSTNode()
@@ -474,7 +474,7 @@ def main():
 
 ### Full Binary Search Tree in Python
 
-```python
+```pythonthon
 class BSTNode:
     def __init__(self, val=None):
         self.left = None

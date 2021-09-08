@@ -28,7 +28,7 @@ So what we are going to do is to use two for loops, one starting from index 1 an
 
 Then we compare the outer loop index value with the inner loop index value for each iteration and then swap the small one with the outer index element.
 
-```py
+```python
 def insertionSort(List):
     for i in range(1, len(List)):
         currentNumber = List[i]
@@ -50,7 +50,7 @@ Most practical sorting algorithms have substantially better worst-case or averag
 
 When the list is already sorted \(best-case\), the complexity of the insertion is only O\(n\).
 
-```py
+```python
 Best O(n); Average O(n^2); Worst O(n^2)
 ```
 
@@ -60,7 +60,7 @@ Now, let’s create a main condition where we need to call the above function an
 
 So let’s manually defined the list which we want to pass as an argument to the function.
 
-```py
+```python
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     print('Sorted List : ',insertionSort(List))
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```py
+```python
 def insertionSort(List):
     for i in range(1, len(List)):
         currentNumber = List[i]

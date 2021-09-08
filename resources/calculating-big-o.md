@@ -45,7 +45,7 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 Label all statements by their time complexities. Individual statements get their Big O, while loops get the number of times they loop.
 
-```python
+```pythonthon
 def foo(n):
     a = 10                # O(1)
     b = 20                # O(1)
@@ -66,7 +66,7 @@ def foo(n):
 
 Now we'll replace the lines of code with their Big O for brevity:
 
-```python
+```pythonthon
 def foo(n):
     # O(1)
     # O(1)
@@ -87,7 +87,7 @@ def foo(n):
 
 Try to add things in sequence, but remember that loops interrupt sequences!
 
-```python
+```pythonthon
 def foo(n):
     # O(2)    -- was O(1) + O(1)
 
@@ -105,7 +105,7 @@ def foo(n):
 
 Now we see if we can multiply any loops by their bodies.
 
-```python
+```pythonthon
 def foo(n):
     # O(2)
 
@@ -121,7 +121,7 @@ def foo(n):
 
 Let's try to add any sequences again.
 
-```python
+```pythonthon
 def foo(n):
     # O(2 + 2 * n)
 
@@ -133,7 +133,7 @@ def foo(n):
 
 Now let's try multiplying loops again
 
-```python
+```pythonthon
 def foo(n):
     # O(2 + 2 * n)
 
@@ -144,7 +144,7 @@ def foo(n):
 
 Add add sequences again:
 
-```python
+```pythonthon
 def foo(n):
     # O((2 + 2 * n) + (n^2 * (2 + 1 * n/2)) + 1)
 ```
@@ -153,7 +153,7 @@ Now we're down to one line. That's the time complexity, but we need to reduce it
 
 Break out your algebra.
 
-```python
+```pythonthon
 (2 + 2 * n) + (n^2 * (2 + 1 * n/2)) + 1   From the Big O, above
 2 + 2 * n + n^2 * (2 + 1 * n/2) + 1       Lose unnecessary parens
 3 + 2 * n + n^2 * (2 + 1 * n/2)           Add some like terms
@@ -172,7 +172,7 @@ With practice, you can do this in your head. Looking back, the nested loop _must
 
 ### Example with two variables
 
-```python
+```pythonthon
 def foo(m, n):
     for i in range(m * n):
         print(i)
@@ -184,7 +184,7 @@ Sometimes when `m` and `n` tend to be roughly similar, developers will casually 
 
 ### Example with lists
 
-```python
+```pythonthon
 def foo(x):  # x is a list
     for i in x:    # O(n)
         print(i)       # O(1)
@@ -198,7 +198,7 @@ The `for` loop is therefore `O(n)`, because it will iterate one time for each el
 
 Another example:
 
-```python
+```pythonthon
 def foo(x, y):  # x and y are lists
     for i in x:    # O(n)
         for j in y:    # O(m)
@@ -211,7 +211,7 @@ We can use our simplification rules and see that the entire function is `O(n*m*1
 
 ### Example with trivial recursion
 
-```python
+```pythonthon
 def foo(x):   # x is a list
     if len(x) == 0:
         return
@@ -236,7 +236,7 @@ But it looks like in there we only have a couple `O(1)` things, so the whole thi
 
 ### Example with Fibonacci
 
-```python
+```pythonthon
 def fib(n):   # Give me the nth Fibonacci number
     if n < 2:
         return n

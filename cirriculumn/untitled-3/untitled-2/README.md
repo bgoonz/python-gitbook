@@ -153,7 +153,7 @@ Let's start by executing the print function to print different types of objects 
 
 Using `print` with no arguments:
 
-```py
+```python
 >>> print()
 
 >>>
@@ -163,7 +163,7 @@ Notice the empty line after calling the `print` function. The default `end` valu
 
 Using `print` with a string literal:
 
-```py
+```python
 >>> print("Lambda School is awesome!")
 Lambda School is awesome!
 >>>
@@ -173,7 +173,7 @@ Notice how calling `print` with the string literal printed the exact string we p
 
 Using `print` with a variable:
 
-```py
+```python
 >>> slogan = "i love lamp"
 >>> print(slogan)
 i love lamp
@@ -184,139 +184,7 @@ Notice how calling `print` with the `slogan` variable prints the value assigned 
 
 Using `print` with an expression:
 
-```py
->>> superlative = "wonderful"
->>> school = "Lambda School"
->>> print(school + " is " + superlative)
-Lambda School is wonderful
->>>
-```
-
-Notice how the argument for the `print` function can be an expression. Once the expression is resolved to a string object, the `print` function can output it to the screen.
-
-Using `print` with other object types:
-
-```py
-print(2020)
-2020
->>> print(123.456)
-123.456
->>> print(False)
-False
->>> print(["Lambda", "School", 2, 0, 2, 0])
-['Lambda', 'School', 2, 0, 2, 0]
->>> print(("Lambda", "School"))
-('Lambda', 'School')
->>> print({"school": "Lambda School", "year": 2020})
-{'school': 'Lambda School', 'year': 2020}
->>>
-```
-
-Any object passed as an argument into `print` will get converted into a string type before outputted to the screen.
-
-You can see how the `print` function is easy to use and how it can handle any object type that you pass into it.
-
-#### Passing multiple arguments into `print` <a id="passing-multiple-arguments-into-print"></a>
-
-Now, let's look at how we can pass multiple arguments into the `print` function. Using `print` with multiple arguments gives you a flexible and easy way to output items to the screen.
-
-We can pass multiple objects, all of the same or different types, into `print`.
-
-```py
->>> print("Lambda School", 2020, True)
-Lambda School 2020 True
->>>
-```
-
-Notice how each object we passed in was converted to a string and then output to the screen. Notice also that `print` used `" "` as the default separator value.
-
-We can change the separator value by assigning a value to the keyword argument `sep`.
-
-```py
->>> print("Lambda School", 2020, True, sep="!!!")
-Lambda School!!!2020!!!True
->>> print("Lambda School", 2020, True, sep="\t")
-Lambda School   2020    True
->>> print("Lambda School", 2020, True, sep="\n")
-Lambda School
-2020
-True
->>> print("Lambda School", 2020, True, sep="")
-Lambda School2020True
->>>
-```
-
-#### Specifying the `end` value with `print` <a id="specifying-the-end-value-with-print"></a>
-
-You can also specify the `end` value by assigning a value to the `end` keyword argument when you call the `print` function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.
-
-Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
-
-```py
->>> print("Are you a Lambda School student?", end=" (Y or N)")
-Are you a Lambda School student? (Y or N)>>>
-```
-
-Customizing the `end` value when calling the `print` function can be useful and necessary in some circumstances.
-
-You have now learned the basics of using the `print` function in Python. You learned how to call the `print` function to print objects of different types. You now know how to use `print` with multiple positional arguments. In certain necessary situations, you also know how to change the default `end` value when calling the `print` function.
-
-Now, get some practice using the `print` function by completing the challenge below.
-
-
-
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
-
-
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
-
-## Objective 04 - Use a print statement
-
-### Overview <a id="overview"></a>
-
-Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
-
-### Follow Along <a id="follow-along"></a>
-
-#### Using `print` with different objects <a id="using-print-with-different-objects"></a>
-
-Let's start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the `print` function.
-
-Using `print` with no arguments:
-
-```py
->>> print()
-
->>>
-```
-
-Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character `\n`.
-
-Using `print` with a string literal:
-
-```py
->>> print("Lambda School is awesome!")
-Lambda School is awesome!
->>>
-```
-
-Notice how calling `print` with the string literal printed the exact string we passed in onto the screen.
-
-Using `print` with a variable:
-
-```py
->>> slogan = "i love lamp"
->>> print(slogan)
-i love lamp
->>>
-```
-
-Notice how calling `print` with the `slogan` variable prints the value assigned to the `slogan` variable.
-
-Using `print` with an expression:
-
-```py
+```python
 >>> superlative = "wonderful"
 >>> school = "Lambda School"
 >>> print(school + " is " + superlative)
@@ -354,7 +222,7 @@ Now, let's look at how we can pass multiple arguments into the `print` function.
 
 We can pass multiple objects, all of the same or different types, into `print`.
 
-```py
+```python
 >>> print("Lambda School", 2020, True)
 Lambda School 2020 True
 >>>
@@ -364,7 +232,7 @@ Notice how each object we passed in was converted to a string and then output to
 
 We can change the separator value by assigning a value to the keyword argument `sep`.
 
-```py
+```python
 >>> print("Lambda School", 2020, True, sep="!!!")
 Lambda School!!!2020!!!True
 >>> print("Lambda School", 2020, True, sep="\t")
@@ -384,7 +252,139 @@ You can also specify the `end` value by assigning a value to the `end` keyword a
 
 Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
 
-```py
+```python
+>>> print("Are you a Lambda School student?", end=" (Y or N)")
+Are you a Lambda School student? (Y or N)>>>
+```
+
+Customizing the `end` value when calling the `print` function can be useful and necessary in some circumstances.
+
+You have now learned the basics of using the `print` function in Python. You learned how to call the `print` function to print objects of different types. You now know how to use `print` with multiple positional arguments. In certain necessary situations, you also know how to change the default `end` value when calling the `print` function.
+
+Now, get some practice using the `print` function by completing the challenge below.
+
+
+
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
+
+
+
+![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
+
+## Objective 04 - Use a print statement
+
+### Overview <a id="overview"></a>
+
+Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
+
+### Follow Along <a id="follow-along"></a>
+
+#### Using `print` with different objects <a id="using-print-with-different-objects"></a>
+
+Let's start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the `print` function.
+
+Using `print` with no arguments:
+
+```python
+>>> print()
+
+>>>
+```
+
+Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character `\n`.
+
+Using `print` with a string literal:
+
+```python
+>>> print("Lambda School is awesome!")
+Lambda School is awesome!
+>>>
+```
+
+Notice how calling `print` with the string literal printed the exact string we passed in onto the screen.
+
+Using `print` with a variable:
+
+```python
+>>> slogan = "i love lamp"
+>>> print(slogan)
+i love lamp
+>>>
+```
+
+Notice how calling `print` with the `slogan` variable prints the value assigned to the `slogan` variable.
+
+Using `print` with an expression:
+
+```python
+>>> superlative = "wonderful"
+>>> school = "Lambda School"
+>>> print(school + " is " + superlative)
+Lambda School is wonderful
+>>>
+```
+
+Notice how the argument for the `print` function can be an expression. Once the expression is resolved to a string object, the `print` function can output it to the screen.
+
+Using `print` with other object types:
+
+```pythonthon
+print(2020)
+2020
+>>> print(123.456)
+123.456
+>>> print(False)
+False
+>>> print(["Lambda", "School", 2, 0, 2, 0])
+['Lambda', 'School', 2, 0, 2, 0]
+>>> print(("Lambda", "School"))
+('Lambda', 'School')
+>>> print({"school": "Lambda School", "year": 2020})
+{'school': 'Lambda School', 'year': 2020}
+>>>
+```
+
+Any object passed as an argument into `print` will get converted into a string type before outputted to the screen.
+
+You can see how the `print` function is easy to use and how it can handle any object type that you pass into it.
+
+#### Passing multiple arguments into `print` <a id="passing-multiple-arguments-into-print"></a>
+
+Now, let's look at how we can pass multiple arguments into the `print` function. Using `print` with multiple arguments gives you a flexible and easy way to output items to the screen.
+
+We can pass multiple objects, all of the same or different types, into `print`.
+
+```python
+>>> print("Lambda School", 2020, True)
+Lambda School 2020 True
+>>>
+```
+
+Notice how each object we passed in was converted to a string and then output to the screen. Notice also that `print` used `" "` as the default separator value.
+
+We can change the separator value by assigning a value to the keyword argument `sep`.
+
+```python
+>>> print("Lambda School", 2020, True, sep="!!!")
+Lambda School!!!2020!!!True
+>>> print("Lambda School", 2020, True, sep="\t")
+Lambda School   2020    True
+>>> print("Lambda School", 2020, True, sep="\n")
+Lambda School
+2020
+True
+>>> print("Lambda School", 2020, True, sep="")
+Lambda School2020True
+>>>
+```
+
+#### Specifying the `end` value with `print` <a id="specifying-the-end-value-with-print"></a>
+
+You can also specify the `end` value by assigning a value to the `end` keyword argument when you call the `print` function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.
+
+Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
+
+```python
 >>> print("Are you a Lambda School student?", end=" (Y or N)")
 Are you a Lambda School student? (Y or N)>>>
 ```
@@ -417,7 +417,7 @@ Python is unique because indentation instead of some other character marks block
 
 Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
 
-```py
+```python
 >>> import string
 >>> string.whitespace
 ' \t\n\r\x0b\x0c'
@@ -432,7 +432,7 @@ You've seen the different types of whitespace characters that can appear, but yo
 
 Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
 
-```py
+```python
 >>> first = "Lambda"
 >>> second = "School"
 >>> first + second
@@ -452,7 +452,7 @@ It's important to understand that Python assumes meaning in newline characters w
 
 Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
 
-```py
+```python
 >>> if True:
 ... if True:
   File "<stdin>", line 2
@@ -464,7 +464,7 @@ IndentationError: expected an indented block
 
 This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
 
-```py
+```python
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -475,7 +475,7 @@ it worked!
 
 The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
 
-```py
+```python
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -511,19 +511,19 @@ In Python, you can have integers and floating-point numbers.
 
 You can define an integer like so:
 
-```py
+```python
 my_int = 3
 ```
 
 You can also cast a floating-point number to be an integer like so:
 
-```py
+```python
 my_int = int(3.0)
 ```
 
 To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
 
-```py
+```python
 my_float = 3.0
 my_float = float(3)
 ```
@@ -532,20 +532,20 @@ my_float = float(3)
 
 You can define strings with either single or double quotes:
 
-```py
+```python
 my_string = 'Lambda School'
 my_string = "Lambda School"
 ```
 
 It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
 
-```py
+```python
 my_string = "I don't have to worry about apostrophes with my double-quotes."
 ```
 
 Let's practice declaring variables to store an int, a float, and a string:
 
-```py
+```python
 my_int = 2
 my_float = 5.0
 my_str = "Lambda School"
@@ -567,21 +567,21 @@ There are a few basic operators that you should be familiar with as you start wr
 
 You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
 
-```py
+```python
 my_number = 2 + 2 * 8 / 5.0
 print(my_number) # 5.2
 ```
 
 There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
 
-```py
+```python
 my_remainder = 9 % 4
 print(my_remainder) # 1
 ```
 
 You can use two multiplication operators to make the exponentiation operator \(`**`\).
 
-```py
+```python
 two_squared = 2 ** 2
 print(two_squared)    # 4
 two_cubed = 2 ** 3
@@ -592,7 +592,7 @@ print(two_cubed)      # 8
 
 You can use the addition operator to concatenate strings and lists:
 
-```py
+```python
 string_one = "Hello,"
 string_two = " World!"
 combined = string_one + string_two
@@ -606,7 +606,7 @@ print(big_lst) # [1, 2, 3, 4, 5, 6]
 
 You can also use the multiplication operator to create a new list or string that repeats the original sequence:
 
-```py
+```python
 my_string = "Bueller"
 repeated = my_string * 3
 print(repeated) # BuellerBuellerBueller
@@ -622,27 +622,27 @@ Now, let's see if we can combine all of this information in a quick demo.
 
 First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
 
-```py
+```python
 a = object()
 b = object()
 ```
 
 Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
 
-```py
+```python
 a_list = [a] * 5
 b_list = [b] * 5
 ```
 
 Then, let's combine `a_list` and `b_list` into a `combined` list.
 
-```py
+```python
 combined = a_list + b_list
 ```
 
 If our code works as expected, `combined` should have a length of 10.
 
-```py
+```python
 print(len(combined)) # 10
 ```
 
@@ -660,7 +660,7 @@ To format a string in Python, you use the `%` operator to format a set of stored
 
 For example, let's say you want to insert a `name` variable inside a string. You would do the following:
 
-```py
+```python
 name = "Austen"
 formatted_string = "Hello, %s!" % name
 print(formatted_string) # Hello, Austen!
@@ -668,7 +668,7 @@ print(formatted_string) # Hello, Austen!
 
 If you have more than one argument specifier, you need to enclose your arguments in a tuple:
 
-```py
+```python
 name = "Austen"
 year = 2020
 print("Hey %s! It's the year %d." % (name, year))
@@ -677,7 +677,7 @@ print("Hey %s! It's the year %d." % (name, year))
 
 Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
 
-```py
+```python
 my_list = [1,2,3]
 print("my_list: %s" % my_list)
 # my_list: [1, 2, 3]
@@ -697,7 +697,7 @@ Let's see if we can use all of this information to practice formatting a few str
 
 Let's imagine that we have some data that we want to inject into a string.
 
-```py
+```python
 product_name = "bananas"
 price = 1.23
 product_id = 123456
@@ -705,7 +705,7 @@ product_id = 123456
 
 We need to print a formatted string using argument specifiers and a tuple that contains our data:
 
-```py
+```python
 print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
@@ -732,14 +732,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```py
+```python
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -747,7 +747,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -755,7 +755,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -764,7 +764,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -772,7 +772,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -780,7 +780,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -809,14 +809,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```py
+```python
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -824,7 +824,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -832,7 +832,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -841,7 +841,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -849,7 +849,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -857,7 +857,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```py
+```python
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -887,7 +887,7 @@ Python uses boolean values to evaluate conditions. An expression in any Boolean 
 
 To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
 
-```python
+```pythonthon
 x = 10
 print(x == 10) # True
 print(x == 5)  # False
@@ -900,7 +900,7 @@ print(x != 20) # True
 
 You build up more complex boolean expressions by using the `and` and `or` operators.
 
-```python
+```pythonthon
 name = "Elon"
 age = 49
 if name == "Elon" and age == 49:
@@ -912,7 +912,7 @@ if name == "Elon" or name == "Bill":
 
 Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
 
-```python
+```pythonthon
 years = [2018, 2019, 2020, 2021]
 year = 2020
 
@@ -924,7 +924,7 @@ if year in years:
 
 We can use the `if`, `elif`, and the `else` keywords to define a series of code blocks that will execute conditionally.
 
-```python
+```pythonthon
 first_statement = False
 second_statement = True
 
@@ -940,7 +940,7 @@ Any object that is considered "empty" evaluates to `False`. For example, `""`, `
 
 If we want to determine if two objects are actually the same instance in memory, we use the `is` operator instead of the value comparison operator `==`.
 
-```python
+```pythonthon
 a = [1,2,3]
 b = [1,2,3]
 
@@ -956,7 +956,7 @@ print(x is y) # True because x and y reference the same list object
 
 There is also the `not` operator, which inverts the boolean that follows it:
 
-```python
+```pythonthon
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```
@@ -979,7 +979,7 @@ You can use the `continue` statement to skip the rest of the code inside a loop 
 
 Here is an example of a few different ways you can use a `range` as the iterable for a `for` loop.
 
-```python
+```pythonthon
 # Prints 0, 1, 2, 3, 4
 for x in range(5):
     print(x):
@@ -995,7 +995,7 @@ for x in range(1, 8, 2):
 
 This example shows the simple usage of a `while` loop to print the same values as the `for` loops above.
 
-```python
+```pythonthon
 # Prints 0, 1, 2, 3, 4
 count = 0
 while count < 5:
@@ -1017,7 +1017,7 @@ while count < 8:
 
 You can use a `break` statement to exit a `for` loop or a `while` loop.
 
-```python
+```pythonthon
 # Prints 0, 1, 2, 3, 4
 count = 0
 while True:
@@ -1029,7 +1029,7 @@ while True:
 
 You can also use a `continue` statement to skip the current block but not exit the loop entirely.
 
-```py
+```python
 # Prints 1, 3, 5, 7
 for x in range(8):
     # if x is even, skip this block and do not print
@@ -1054,7 +1054,7 @@ To make our code more readable and DRY \(Don't Repeat Yourself\), we often want 
 
 To define a function in Python, we follow this syntax:
 
-```python
+```pythonthon
 def function_name(argument_1, argument_2, etc.):
     # function line 1
     # function line 2
@@ -1065,21 +1065,21 @@ def function_name(argument_1, argument_2, etc.):
 
 Let's define a greeting function that allows us to specify a name and a specific greeting.
 
-```python
+```pythonthon
 def greet(name, greeting):
     print("Hello, %s, %s" % (name, greeting))
 ```
 
 Now, we can call our `greet` function and pass in the data that we want.
 
-```python
+```pythonthon
 greet("Austen", "I hope you are having an excellent day!")
 # Hello, Austen, I hope you are having an excellent day!
 ```
 
 If we want to define a function that returns a value to the caller, we use the `return` keyword.
 
-```python
+```pythonthon
 def double(x):
     return x * 2
 
@@ -1110,7 +1110,7 @@ Python uses boolean values to evaluate conditions. An expression in any Boolean 
 
 To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
 
-```python
+```pythonthon
 x = 10
 print(x == 10) # True
 print(x == 5)  # False
@@ -1123,7 +1123,7 @@ print(x != 20) # True
 
 You build up more complex boolean expressions by using the `and` and `or` operators.
 
-```python
+```pythonthon
 name = "Elon"
 age = 49
 if name == "Elon" and age == 49:
@@ -1135,7 +1135,7 @@ if name == "Elon" or name == "Bill":
 
 Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
 
-```python
+```pythonthon
 years = [2018, 2019, 2020, 2021]
 year = 2020
 
@@ -1147,7 +1147,7 @@ if year in years:
 
 We can use the `if`, `elif`, and the `else` keywords to define a series of code blocks that will execute conditionally.
 
-```python
+```pythonthon
 first_statement = False
 second_statement = True
 
@@ -1163,7 +1163,7 @@ Any object that is considered "empty" evaluates to `False`. For example, `""`, `
 
 If we want to determine if two objects are actually the same instance in memory, we use the `is` operator instead of the value comparison operator `==`.
 
-```python
+```pythonthon
 a = [1,2,3]
 b = [1,2,3]
 
@@ -1179,7 +1179,7 @@ print(x is y) # True because x and y reference the same list object
 
 There is also the `not` operator, which inverts the boolean that follows it:
 
-```python
+```pythonthon
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```

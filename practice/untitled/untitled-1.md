@@ -8,7 +8,7 @@
 
 ## Directed Graph:
 
-```python
+```pythonthon
 class Node(object):
     def __init__(self, value):
         self.value = value
@@ -123,7 +123,7 @@ print(graph.get_adjacency_matrix())
 {% endtab %}
 
 {% tab title="Graph Traversal" %}
-```python
+```pythonthon
 class Node(object):
     def __init__(self, value):
         self.value = value

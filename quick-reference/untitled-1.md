@@ -5,14 +5,14 @@
 * Use `datetime.timedelta` and the `+` operator to calculate the new `datetime.datetime` value after adding `n` days to `d`.
 * Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
-```python
+```pythonthon
 from datetime import datetime, timedelta
 
 def add_days(n, d = datetime.today()):
   return d + timedelta(n)
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 add_days(5, date(2020, 10, 25)) # date(2020, 10, 30)
@@ -23,12 +23,12 @@ add_days(-5, date(2020, 10, 25)) # date(2020, 10, 20)
 
 * Use `set()` to eliminate duplicate elements and then use `len()` to check if length is `1`.
 
-```python
+```pythonthon
 def all_equal(lst):
   return len(set(lst)) == 1
 ```
 
-```python
+```pythonthon
 all_equal([1, 2, 3, 4, 5, 6]) # False
 all_equal([1, 1, 1, 1]) # True
 ```
@@ -38,12 +38,12 @@ all_equal([1, 1, 1, 1]) # True
 * Use `set()` on the given list to keep only unique occurrences.
 * Use `len()` to compare the length of the unique values to the original list.
 
-```python
+```pythonthon
 def all_unique(lst):
   return len(lst) == len(set(lst))
 ```
 
-```python
+```pythonthon
 x = [1, 2, 3, 4, 5, 6]
 y = [1, 2, 2, 3, 4, 5]
 all_unique(x) # True
@@ -54,12 +54,12 @@ all_unique(y) # False
 
 * Use `range()` and `list()` with the appropriate start, step and end values.
 
-```python
+```pythonthon
 def arithmetic_progression(n, lim):
   return list(range(n, lim + 1, n))
 ```
 
-```python
+```pythonthon
 arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]
 ```
 
@@ -67,12 +67,12 @@ arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]
 
 * Use `sum()` to sum all of the `args` provided, divide by `len()`.
 
-```python
+```pythonthon
 def average(*args):
   return sum(args, 0.0) / len(args)
 ```
 
-```python
+```pythonthon
 average(*[1, 2, 3]) # 2.0
 average(1, 2, 3) # 2.0
 ```
@@ -83,12 +83,12 @@ average(1, 2, 3) # 2.0
 * Use `sum()` to sum all of the mapped values, divide by `len(lst)`.
 * Omit the last argument, `fn`, to use the default identity function.
 
-```python
+```pythonthon
 def average_by(lst, fn = lambda x: x):
   return sum(map(fn, lst), 0.0) / len(lst)
 ```
 
-```python
+```pythonthon
 average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n'])
 # 5.0
 ```
@@ -98,7 +98,7 @@ average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n'])
 * Use a list comprehension and `zip()` to add elements to groups, based on `filter`.
 * If `filter` has a truthy value for any element, add it to the first group, otherwise add it to the second group.
 
-```python
+```pythonthon
 def bifurcate(lst, filter):
   return [
     [x for x, flag in zip(lst, filter) if flag],
@@ -106,7 +106,7 @@ def bifurcate(lst, filter):
   ]
 ```
 
-```python
+```pythonthon
 bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
 # [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
@@ -116,7 +116,7 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
 * Use a list comprehension to add elements to groups, based on the value returned by `fn` for each element.
 * If `fn` returns a truthy value for any element, add it to the first group, otherwise add it to the second group.
 
-```python
+```pythonthon
 def bifurcate_by(lst, fn):
   return [
     [x for x in lst if fn(x)],
@@ -124,7 +124,7 @@ def bifurcate_by(lst, fn):
   ]
 ```
 
-```python
+```pythonthon
 bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
 # [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```
@@ -133,14 +133,14 @@ bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
 
 * Use `math.comb()` to calculate the binomial coefficient.
 
-```python
+```pythonthon
 from math import comb
 
 def binomial_coefficient(n, k):
   return comb(n, k)
 ```
 
-```python
+```pythonthon
 binomial_coefficient(8, 2) # 28
 ```
 
@@ -148,12 +148,12 @@ binomial_coefficient(8, 2) # 28
 
 * Use `str.encode('utf-8')` to encode the given string and return its length.
 
-```python
+```pythonthon
 def byte_size(s):
   return len(s.encode('utf-8'))
 ```
 
-```python
+```pythonthon
 byte_size('😀') # 4
 byte_size('Hello World') # 11
 ```
@@ -164,7 +164,7 @@ byte_size('Hello World') # 11
 * Use `str.title()` to capitalize the first letter of each word and convert the rest to lowercase.
 * Finally, use `str.replace()` to remove spaces between words.
 
-```python
+```pythonthon
 from re import sub
 
 def camel(s):
@@ -172,7 +172,7 @@ def camel(s):
   return ''.join([s[0].lower(), s[1:]])
 ```
 
-```python
+```pythonthon
 camel('some_database_field_name') # 'someDatabaseFieldName'
 camel('Some label that needs to be camelized')
 # 'someLabelThatNeedsToBeCamelized'
@@ -187,12 +187,12 @@ camel('some-mixed_string with spaces_underscores-and-hyphens')
 * Use `str.join()` to combine the capitalized first letter with the rest of the characters.
 * Omit the `lower_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to lowercase.
 
-```python
+```pythonthon
 def capitalize(s, lower_rest = False):
   return ''.join([s[:1].upper(), (s[1:].lower() if lower_rest else s[1:])])
 ```
 
-```python
+```pythonthon
 capitalize('fooBar') # 'FooBar'
 capitalize('fooBar', True) # 'Foobar'
 ```
@@ -201,12 +201,12 @@ capitalize('fooBar', True) # 'Foobar'
 
 * Use `str.title()` to capitalize the first letter of every word in the string.
 
-```python
+```pythonthon
 def capitalize_every_word(s):
   return s.title()
 ```
 
-```python
+```pythonthon
 capitalize_every_word('hello world!') # 'Hello World!'
 ```
 
@@ -215,12 +215,12 @@ capitalize_every_word('hello world!') # 'Hello World!'
 * Use `isinstance()` to check if the given value is enumerable.
 * Return it by using `list()` or encapsulated in a list accordingly.
 
-```python
+```pythonthon
 def cast_list(val):
   return list(val) if isinstance(val, (tuple, list, set, dict)) else [val]
 ```
 
-```python
+```pythonthon
 cast_list('foo') # ['foo']
 cast_list([1]) # [1]
 cast_list(('foo', 'bar')) # ['foo', 'bar']
@@ -232,12 +232,12 @@ Converts Celsius to Fahrenheit.
 
 * Follow the conversion formula `F = 1.8 * C + 32`.
 
-```python
+```pythonthon
 def celsius_to_fahrenheit(degrees):
   return ((degrees * 1.8) + 32)
 ```
 
-```python
+```pythonthon
 celsius_to_fahrenheit(180) # 356.0
 ```
 
@@ -245,12 +245,12 @@ celsius_to_fahrenheit(180) # 356.0
 
 * Return a `lambda` function that takes an object and applies the predicate function, `fn` to the specified property.
 
-```python
+```pythonthon
 def check_prop(fn, prop):
   return lambda obj: fn(obj[prop])
 ```
 
-```python
+```pythonthon
 check_age = check_prop(lambda x: x >= 18, 'age')
 user = {'name': 'Mark', 'age': 18}
 check_age(user) # True
@@ -262,7 +262,7 @@ check_age(user) # True
 * Use `map()` on the list and fill it with splices of the given list.
 * Finally, return the created list.
 
-```python
+```pythonthon
 from math import ceil
 
 def chunk(lst, size):
@@ -271,7 +271,7 @@ def chunk(lst, size):
       list(range(ceil(len(lst) / size)))))
 ```
 
-```python
+```pythonthon
 chunk([1, 2, 3, 4, 5], 2) # [[1, 2], [3, 4], [5]]
 ```
 
@@ -282,7 +282,7 @@ chunk([1, 2, 3, 4, 5], 2) # [[1, 2], [3, 4], [5]]
 * Use `map()` to map each element of the new list to a chunk the length of `size`.
 * If the original list can't be split evenly, the final chunk will contain the remaining elements.
 
-```python
+```pythonthon
 from math import ceil
 
 def chunk_into_n(lst, n):
@@ -293,7 +293,7 @@ def chunk_into_n(lst, n):
   )
 ```
 
-```python
+```pythonthon
 chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) # [[1, 2], [3, 4], [5, 6], [7]]
 ```
 
@@ -302,12 +302,12 @@ chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) # [[1, 2], [3, 4], [5, 6], [7]]
 * If `num` falls within the range \(`a`, `b`\), return `num`.
 * Otherwise, return the nearest number in the range.
 
-```python
+```pythonthon
 def clamp_number(num, a, b):
   return max(min(num, max(a, b)), min(a, b))
 ```
 
-```python
+```pythonthon
 clamp_number(2, 3, 5) # 3
 clamp_number(1, -1, -5) # -1
 ```
@@ -318,7 +318,7 @@ clamp_number(1, -1, -5) # -1
 * Use `dictionary.items()` in combination with a loop to map the values of the dictionary to keys using `dict.append()`.
 * Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
 
-```python
+```pythonthon
 from collections import defaultdict
 
 def collect_dictionary(obj):
@@ -328,7 +328,7 @@ def collect_dictionary(obj):
   return dict(inv_obj)
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 10,
@@ -343,7 +343,7 @@ collect_dictionary(ages) # { 10: ['Peter', 'Isabel'], 9: ['Anna'] }
 * Use `dict.append()` to map the values of the dictionary to keys.
 * Use `dict()` to convert the `collections.defaultdict` to a regular dictionary.
 
-```python
+```pythonthon
 from collections import defaultdict
 
 def combine_values(*dicts):
@@ -354,7 +354,7 @@ def combine_values(*dicts):
   return dict(res)
 ```
 
-```python
+```pythonthon
 d1 = {'a': 1, 'b': 'foo', 'c': 400}
 d2 = {'a': 3, 'b': 200, 'd': 400}
 
@@ -365,12 +365,12 @@ combine_values(d1, d2) # {'a': [1, 3], 'b': ['foo', 200], 'c': [400], 'd': [400]
 
 * Use `filter()` to filter out falsy values \(`False`, `None`, `0`, and `""`\).
 
-```python
+```pythonthon
 def compact(lst):
   return list(filter(None, lst))
 ```
 
-```python
+```pythonthon
 compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 ```
 
@@ -379,14 +379,14 @@ compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 * Use `functools.reduce()` to perform right-to-left function composition.
 * The last \(rightmost\) function can accept one or more arguments; the remaining functions must be unary.
 
-```python
+```pythonthon
 from functools import reduce
 
 def compose(*fns):
   return reduce(lambda f, g: lambda *args: f(g(*args)), fns)
 ```
 
-```python
+```pythonthon
 add5 = lambda x: x + 5
 multiply = lambda x, y: x * y
 multiply_and_add_5 = compose(add5, multiply)
@@ -398,14 +398,14 @@ multiply_and_add_5(5, 2) # 15
 * Use `functools.reduce()` to perform left-to-right function composition.
 * The first \(leftmost\) function can accept one or more arguments; the remaining functions must be unary.
 
-```python
+```pythonthon
 from functools import reduce
 
 def compose_right(*fns):
   return reduce(lambda f, g: lambda *args: g(f(*args)), fns)
 ```
 
-```python
+```pythonthon
 add = lambda x, y: x + y
 square = lambda x: x * x
 add_and_square = compose_right(add, square)
@@ -418,7 +418,7 @@ add_and_square(1, 2) # 9
 * Use `map()` to map the values of the given list using the given function.
 * Iterate over the map and increase the element count each time it occurs.
 
-```python
+```pythonthon
 from collections import defaultdict
 
 def count_by(lst, fn = lambda x: x):
@@ -428,7 +428,7 @@ def count_by(lst, fn = lambda x: x):
   return dict(count)
 ```
 
-```python
+```pythonthon
 from math import floor
 
 count_by([6.1, 4.2, 6.3], floor) # {6: 2, 4: 1}
@@ -439,12 +439,12 @@ count_by(['one', 'two', 'three'], len) # {3: 2, 5: 1}
 
 * Use `list.count()` to count the number of occurrences of `val` in `lst`.
 
-```python
+```pythonthon
 def count_occurrences(lst, val):
   return lst.count(val)
 ```
 
-```python
+```pythonthon
 count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 ```
 
@@ -453,14 +453,14 @@ count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 * Use `itertools.accumulate()` to create the accumulated sum for each element.
 * Use `list()` to convert the result into a list.
 
-```python
+```pythonthon
 from itertools import accumulate
 
 def cumsum(lst):
   return list(accumulate(lst))
 ```
 
-```python
+```pythonthon
 cumsum(range(0, 15, 3)) # [0, 3, 9, 18, 30]
 ```
 
@@ -468,14 +468,14 @@ cumsum(range(0, 15, 3)) # [0, 3, 9, 18, 30]
 
 * Use `functools.partial()` to return a new partial object which behaves like `fn` with the given arguments, `args`, partially applied.
 
-```python
+```pythonthon
 from functools import partial
 
 def curry(fn, *args):
   return partial(fn, *args)
 ```
 
-```python
+```pythonthon
 add = lambda x, y: x + y
 add10 = curry(add, 10)
 add10(20) # 30
@@ -487,14 +487,14 @@ add10(20) # 30
 * Use `int()` to convert the result to an integer and `range()` to iterate over each day.
 * Use a list comprehension and `datetime.timedelta()` to create a list of `datetime.date` objects.
 
-```python
+```pythonthon
 from datetime import timedelta, date
 
 def daterange(start, end):
   return [start + timedelta(n) for n in range(int((end - start).days))]
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 daterange(date(2020, 10, 1), date(2020, 10, 5))
@@ -506,14 +506,14 @@ daterange(date(2020, 10, 1), date(2020, 10, 5))
 * Use `datetime.date.today()` to get the current day.
 * Use `datetime.timedelta` to subtract `n` days from today's date.
 
-```python
+```pythonthon
 from datetime import timedelta, date
 
 def days_ago(n):
   return date.today() - timedelta(n)
 ```
 
-```python
+```pythonthon
 days_ago(5) # date(2020, 10, 23)
 ```
 
@@ -521,12 +521,12 @@ days_ago(5) # date(2020, 10, 23)
 
 * Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
 
-```python
+```pythonthon
 def days_diff(start, end):
   return (end - start).days
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 days_diff(date(2020, 10, 25), date(2020, 10, 28)) # 3
@@ -537,14 +537,14 @@ days_diff(date(2020, 10, 25), date(2020, 10, 28)) # 3
 * Use `datetime.date.today()` to get the current day.
 * Use `datetime.timedelta` to add `n` days from today's date.
 
-```python
+```pythonthon
 from datetime import timedelta, date
 
 def days_from_now(n):
   return date.today() + timedelta(n)
 ```
 
-```python
+```pythonthon
 days_from_now(5) # date(2020, 11, 02)
 ```
 
@@ -554,12 +554,12 @@ days_from_now(5) # date(2020, 11, 02)
 * Use `str.join()` to combine the lowercase first letter with the rest of the characters.
 * Omit the `upper_rest` parameter to keep the rest of the string intact, or set it to `True` to convert to uppercase.
 
-```python
+```pythonthon
 def decapitalize(s, upper_rest = False):
   return ''.join([s[:1].lower(), (s[1:].upper() if upper_rest else s[1:])])
 ```
 
-```python
+```pythonthon
 decapitalize('FooBar') # 'fooBar'
 decapitalize('FooBar', True) # 'fOOBAR'
 ```
@@ -570,7 +570,7 @@ decapitalize('FooBar', True) # 'fOOBAR'
 * Use `isinstance()` with `collections.abc.Iterable` to check if an element is iterable.
 * If it is iterable, apply `deep_flatten()` recursively, otherwise return `[lst]`.
 
-```python
+```pythonthon
 from collections.abc import Iterable
 
 def deep_flatten(lst):
@@ -578,7 +578,7 @@ def deep_flatten(lst):
           deep_flatten(i)] if isinstance(lst, Iterable) else [lst])
 ```
 
-```python
+```pythonthon
 deep_flatten([1, [2], [[3], 4], 5]) # [1, 2, 3, 4, 5]
 ```
 
@@ -586,14 +586,14 @@ deep_flatten([1, [2], [[3], 4], 5]) # [1, 2, 3, 4, 5]
 
 * Use `math.pi` and the degrees to radians formula to convert the angle from degrees to radians.
 
-```python
+```pythonthon
 from math import pi
 
 def degrees_to_rads(deg):
   return (deg * pi) / 180.0
 ```
 
-```python
+```pythonthon
 degrees_to_rads(180) # ~3.1416
 ```
 
@@ -601,7 +601,7 @@ degrees_to_rads(180) # ~3.1416
 
 * Use `time.sleep()` to delay the execution of `fn` by `ms / 1000` seconds.
 
-```python
+```pythonthon
 from time import sleep
 
 def delay(fn, ms, *args):
@@ -609,7 +609,7 @@ def delay(fn, ms, *args):
   return fn(*args)
 ```
 
-```python
+```pythonthon
 delay(lambda x: print(x), 1000, 'later') # prints 'later' after one second
 ```
 
@@ -617,12 +617,12 @@ delay(lambda x: print(x), 1000, 'later') # prints 'later' after one second
 
 * Use `dict.items()` and `list()` to get a list of tuples from the given dictionary.
 
-```python
+```pythonthon
 def dict_to_list(d):
   return list(d.items())
 ```
 
-```python
+```pythonthon
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 dict_to_list(d)
 # [('one', 1), ('three', 3), ('five', 5), ('two', 2), ('four', 4)]
@@ -633,13 +633,13 @@ dict_to_list(d)
 * Create a `set` from `b`.
 * Use a list comprehension on `a` to only keep values not contained in the previously created set, `_b`.
 
-```python
+```pythonthon
 def difference(a, b):
   _b = set(b)
   return [item for item in a if item not in _b]
 ```
 
-```python
+```pythonthon
 difference([1, 2, 3], [1, 2, 4]) # [3]
 ```
 
@@ -648,13 +648,13 @@ difference([1, 2, 3], [1, 2, 4]) # [3]
 * Create a `set`, using `map()` to apply `fn` to each element in `b`.
 * Use a list comprehension in combination with `fn` on `a` to only keep values not contained in the previously created set, `_b`.
 
-```python
+```pythonthon
 def difference_by(a, b, fn):
   _b = set(map(fn, b))
   return [item for item in a if fn(item) not in _b]
 ```
 
-```python
+```pythonthon
 from math import floor
 
 difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2]
@@ -666,12 +666,12 @@ difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])
 
 * Use `map()` combined with `int` on the string representation of `n` and return a list from the result.
 
-```python
+```pythonthon
 def digitize(n):
   return list(map(int, str(n)))
 ```
 
-```python
+```pythonthon
 digitize(123) # [1, 2, 3]
 ```
 
@@ -680,12 +680,12 @@ digitize(123) # [1, 2, 3]
 * Use slice notation to remove the specified number of elements from the left.
 * Omit the last argument, `n`, to use a default value of `1`.
 
-```python
+```pythonthon
 def drop(a, n = 1):
   return a[n:]
 ```
 
-```python
+```pythonthon
 drop([1, 2, 3]) # [2, 3]
 drop([1, 2, 3], 2) # [3]
 drop([1, 2, 3], 42) # []
@@ -696,12 +696,12 @@ drop([1, 2, 3], 42) # []
 * Use slice notation to remove the specified number of elements from the right.
 * Omit the last argument, `n`, to use a default value of `1`.
 
-```python
+```pythonthon
 def drop_right(a, n = 1):
   return a[:-n]
 ```
 
-```python
+```pythonthon
 drop_right([1, 2, 3]) # [1, 2]
 drop_right([1, 2, 3], 2) # [1]
 drop_right([1, 2, 3], 42) # []
@@ -711,12 +711,12 @@ drop_right([1, 2, 3], 42) # []
 
 * Use `all()` in combination with `map()` and `fn` to check if `fn` returns `True` for all elements in the list.
 
-```python
+```pythonthon
 def every(lst, fn = lambda x: x):
   return all(map(fn, lst))
 ```
 
-```python
+```pythonthon
 every([4, 2, 3], lambda x: x > 1) # True
 every([1, 2, 3]) # True
 ```
@@ -725,12 +725,12 @@ every([1, 2, 3]) # True
 
 * Use slice notation to create a new list that contains every `nth` element of the given list.
 
-```python
+```pythonthon
 def every_nth(lst, nth):
   return lst[nth - 1::nth]
 ```
 
-```python
+```pythonthon
 every_nth([1, 2, 3, 4, 5, 6], 2) # [ 2, 4, 6 ]
 ```
 
@@ -741,14 +741,14 @@ every_nth([1, 2, 3, 4, 5, 6], 2) # [ 2, 4, 6 ]
 * Otherwise, return the product of `num` and the factorial of `num - 1`.
 * Throws an exception if `num` is a negative or a floating point number.
 
-```python
+```pythonthon
 def factorial(num):
   if not ((num >= 0) and (num % 1 == 0)):
     raise Exception("Number can't be floating point or negative.")
   return 1 if num == 0 else num * factorial(num - 1)
 ```
 
-```python
+```pythonthon
 factorial(6) # 720
 ```
 
@@ -758,12 +758,12 @@ Converts Fahrenheit to Celsius.
 
 * Follow the conversion formula `C = (F - 32) * 5/9`.
 
-```python
+```pythonthon
 def fahrenheit_to_celsius(degrees):
   return ((degrees - 32) * 5/9)
 ```
 
-```python
+```pythonthon
 fahrenheit_to_celsius(77) # 25.0
 ```
 
@@ -772,7 +772,7 @@ fahrenheit_to_celsius(77) # 25.0
 * Starting with `0` and `1`, use `list.append()` to add the sum of the last two numbers of the list to the end of the list, until the length of the list reaches `n`.
 * If `n` is less or equal to `0`, return a list containing `0`.
 
-```python
+```pythonthon
 def fibonacci(n):
   if n <= 0:
     return [0]
@@ -783,7 +783,7 @@ def fibonacci(n):
   return sequence
 ```
 
-```python
+```pythonthon
 fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]
 ```
 
@@ -792,14 +792,14 @@ fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]
 * Use `collections.Counter` to get the count of each value in the list.
 * Use a list comprehension to create a list containing only the unique values.
 
-```python
+```pythonthon
 from collections import Counter
 
 def filter_non_unique(lst):
   return [item for item, count in Counter(lst).items() if count == 1]
 ```
 
-```python
+```pythonthon
 filter_non_unique([1, 2, 2, 3, 4, 4, 5]) # [1, 3, 5]
 ```
 
@@ -808,14 +808,14 @@ filter_non_unique([1, 2, 2, 3, 4, 4, 5]) # [1, 3, 5]
 * Use `collections.Counter` to get the count of each value in the list.
 * Use a list comprehension to create a list containing only the non-unique values.
 
-```python
+```pythonthon
 from collections import Counter
 
 def filter_unique(lst):
   return [item for item, count in Counter(lst).items() if count > 1]
 ```
 
-```python
+```pythonthon
 filter_unique([1, 2, 2, 3, 4, 4, 5]) # [2, 4]
 ```
 
@@ -823,12 +823,12 @@ filter_unique([1, 2, 2, 3, 4, 4, 5]) # [2, 4]
 
 * Use a list comprehension and `next()` to return the first element in `lst` for which `fn` returns `True`.
 
-```python
+```pythonthon
 def find(lst, fn):
   return next(x for x in lst if fn(x))
 ```
 
-```python
+```pythonthon
 find([1, 2, 3, 4], lambda n: n % 2 == 1) # 1
 ```
 
@@ -836,12 +836,12 @@ find([1, 2, 3, 4], lambda n: n % 2 == 1) # 1
 
 * Use a list comprehension, `enumerate()` and `next()` to return the index of the first element in `lst` for which `fn` returns `True`.
 
-```python
+```pythonthon
 def find_index(lst, fn):
   return next(i for i, x in enumerate(lst) if fn(x))
 ```
 
-```python
+```pythonthon
 find_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 0
 ```
 
@@ -849,12 +849,12 @@ find_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 0
 
 * Use `enumerate()` and a list comprehension to return the indexes of the all element in `lst` for which `fn` returns `True`.
 
-```python
+```pythonthon
 def find_index_of_all(lst, fn):
   return [i for i, x in enumerate(lst) if fn(x)]
 ```
 
-```python
+```pythonthon
 find_index_of_all([1, 2, 3, 4], lambda n: n % 2 == 1) # [0, 2]
 ```
 
@@ -862,12 +862,12 @@ find_index_of_all([1, 2, 3, 4], lambda n: n % 2 == 1) # [0, 2]
 
 * Use `dictionary.items()` and `next()` to return the first key that has a value equal to `val`.
 
-```python
+```pythonthon
 def find_key(dict, val):
   return next(key for key, value in dict.items() if value == val)
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 11,
@@ -880,12 +880,12 @@ find_key(ages, 11) # 'Isabel'
 
 * Use `dictionary.items()`, a generator and `list()` to return all keys that have a value equal to `val`.
 
-```python
+```pythonthon
 def find_keys(dict, val):
   return list(key for key, value in dict.items() if value == val)
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 11,
@@ -898,12 +898,12 @@ find_keys(ages, 10) # [ 'Peter', 'Anna' ]
 
 * Use a list comprehension and `next()` to return the last element in `lst` for which `fn` returns `True`.
 
-```python
+```pythonthon
 def find_last(lst, fn):
   return next(x for x in lst[::-1] if fn(x))
 ```
 
-```python
+```pythonthon
 find_last([1, 2, 3, 4], lambda n: n % 2 == 1) # 3
 ```
 
@@ -911,12 +911,12 @@ find_last([1, 2, 3, 4], lambda n: n % 2 == 1) # 3
 
 * Use a list comprehension, `enumerate()` and `next()` to return the index of the last element in `lst` for which `fn` returns `True`.
 
-```python
+```pythonthon
 def find_last_index(lst, fn):
   return len(lst) - 1 - next(i for i, x in enumerate(lst[::-1]) if fn(x))
 ```
 
-```python
+```pythonthon
 find_last_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 2
 ```
 
@@ -926,7 +926,7 @@ find_last_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 2
 * Use `collections.Counter.most_common()` to get the most common parity.
 * Use a list comprehension to find all elements that do not match the most common parity.
 
-```python
+```pythonthon
 from collections import Counter
 
 def find_parity_outliers(nums):
@@ -936,7 +936,7 @@ def find_parity_outliers(nums):
   ]
 ```
 
-```python
+```pythonthon
 find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 ```
 
@@ -944,12 +944,12 @@ find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 
 * Use a list comprehension to extract each value from sub-lists in order.
 
-```python
+```pythonthon
 def flatten(lst):
   return [x for y in lst for x in y]
 ```
 
-```python
+```pythonthon
 flatten([[1, 2, 3, 4], [5, 6, 7, 8]]) # [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
@@ -957,13 +957,13 @@ flatten([[1, 2, 3, 4], [5, 6, 7, 8]]) # [1, 2, 3, 4, 5, 6, 7, 8]
 
 * Use a `for` loop to execute `fn` for each element in `itr`.
 
-```python
+```pythonthon
 def for_each(itr, fn):
   for el in itr:
     fn(el)
 ```
 
-```python
+```pythonthon
 for_each([1, 2, 3], print) # 1 2 3
 ```
 
@@ -971,13 +971,13 @@ for_each([1, 2, 3], print) # 1 2 3
 
 * Use a `for` loop in combination with slice notation to execute `fn` for each element in `itr`, starting from the last one.
 
-```python
+```pythonthon
 def for_each_right(itr, fn):
   for el in itr[::-1]:
     fn(el)
 ```
 
-```python
+```pythonthon
 for_each_right([1, 2, 3], print) # 3 2 1
 ```
 
@@ -986,7 +986,7 @@ for_each_right([1, 2, 3], print) # 3 2 1
 * Use `collections.defaultdict()` to store the frequencies of each unique element.
 * Use `dict()` to return a dictionary with the unique elements of the list as keys and their frequencies as the values.
 
-```python
+```pythonthon
 from collections import defaultdict
 
 def frequencies(lst):
@@ -996,7 +996,7 @@ def frequencies(lst):
   return dict(freq)
 ```
 
-```python
+```pythonthon
 frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 ```
 
@@ -1004,14 +1004,14 @@ frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 
 * Use `datetime.datetime.fromisoformat()` to convert the given ISO-8601 date to a `datetime.datetime` object.
 
-```python
+```pythonthon
 from datetime import datetime
 
 def from_iso_date(d):
   return datetime.fromisoformat(d)
 ```
 
-```python
+```pythonthon
 from_iso_date('2020-10-28T12:30:59.000000') # 2020-10-28 12:30:59
 ```
 
@@ -1019,7 +1019,7 @@ from_iso_date('2020-10-28T12:30:59.000000') # 2020-10-28 12:30:59
 
 * Use `functools.reduce()` and `math.gcd()` over the given list.
 
-```python
+```pythonthon
 from functools import reduce
 from math import gcd as _gcd
 
@@ -1027,7 +1027,7 @@ def gcd(numbers):
   return reduce(_gcd, numbers)
 ```
 
-```python
+```pythonthon
 gcd([8, 36, 28]) # 4
 ```
 
@@ -1039,7 +1039,7 @@ Returns an error if `step` equals `1`.
 * Omit the second argument, `start`, to use a default value of `1`.
 * Omit the third argument, `step`, to use a default value of `2`.
 
-```python
+```pythonthon
 from math import floor, log
 
 def geometric_progression(end, start=1, step=2):
@@ -1047,7 +1047,7 @@ def geometric_progression(end, start=1, step=2):
           / log(step)) + 1)]
 ```
 
-```python
+```pythonthon
 geometric_progression(256) # [1, 2, 4, 8, 16, 32, 64, 128, 256]
 geometric_progression(256, 3) # [3, 6, 12, 24, 48, 96, 192]
 geometric_progression(256, 1, 4) # [1, 4, 16, 64, 256]
@@ -1058,7 +1058,7 @@ geometric_progression(256, 1, 4) # [1, 4, 16, 64, 256]
 * Use `functools.reduce()` to iterate over the `selectors` list.
 * Apply `operator.getitem()` for each key in `selectors`, retrieving the value to be used as the iteratee for the next iteration.
 
-```python
+```pythonthon
 from functools import reduce
 from operator import getitem
 
@@ -1066,7 +1066,7 @@ def get(d, selectors):
   return reduce(getitem, selectors, d)
 ```
 
-```python
+```pythonthon
 users = {
   'freddy': {
     'name': {
@@ -1086,7 +1086,7 @@ get(users, ['freddy', 'postIds', 1]) # 2
 * Use `fn` in combination with a `for` loop and `dict.append()` to populate the dictionary.
 * Use `dict()` to convert it to a regular dictionary.
 
-```python
+```pythonthon
 from collections import defaultdict
 
 def group_by(lst, fn):
@@ -1096,7 +1096,7 @@ def group_by(lst, fn):
   return dict(d)
 ```
 
-```python
+```pythonthon
 from math import floor
 
 group_by([6.1, 4.2, 6.3], floor) # {4: [4.2], 6: [6.1, 6.3]}
@@ -1109,12 +1109,12 @@ group_by(['one', 'two', 'three'], len) # {3: ['one', 'two'], 5: ['three']}
 * Use `bin()` to convert the result to a binary string.
 * Convert the string to a list and use `count()` of `str` class to count and return the number of `1`s in it.
 
-```python
+```pythonthon
 def hamming_distance(a, b):
   return bin(a ^ b).count('1')
 ```
 
-```python
+```pythonthon
 hamming_distance(2, 3) # 1
 ```
 
@@ -1122,12 +1122,12 @@ hamming_distance(2, 3) # 1
 
 * Use `set()` on the given list to remove duplicates, compare its length with the length of the list.
 
-```python
+```pythonthon
 def has_duplicates(lst):
   return len(lst) != len(set(lst))
 ```
 
-```python
+```pythonthon
 x = [1, 2, 3, 4, 5, 5]
 y = [1, 2, 3, 4, 5]
 has_duplicates(x) # True
@@ -1140,7 +1140,7 @@ has_duplicates(y) # False
 * Iterate over them with a `for` loop comparing the `count()` of each unique value in each list.
 * Return `False` if the counts do not match for any element, `True` otherwise.
 
-```python
+```pythonthon
 def have_same_contents(a, b):
   for v in set(a + b):
     if a.count(v) != b.count(v):
@@ -1148,7 +1148,7 @@ def have_same_contents(a, b):
   return True
 ```
 
-```python
+```pythonthon
 have_same_contents([1, 2, 4], [2, 4, 1]) # True
 ```
 
@@ -1156,12 +1156,12 @@ have_same_contents([1, 2, 4], [2, 4, 1]) # True
 
 * Use `lst[0]` to return the first element of the passed list.
 
-```python
+```pythonthon
 def head(lst):
   return lst[0]
 ```
 
-```python
+```pythonthon
 head([1, 2, 3]) # 1
 ```
 
@@ -1170,12 +1170,12 @@ head([1, 2, 3]) # 1
 * Use a list comprehension in combination with `int()` and list slice notation to get the RGB components from the hexadecimal string.
 * Use `tuple()` to convert the resulting list to a tuple.
 
-```python
+```pythonthon
 def hex_to_rgb(hex):
   return tuple(int(hex[i:i+2], 16) for i in (0, 2, 4))
 ```
 
-```python
+```pythonthon
 hex_to_rgb('FFA501') # (255, 165, 1)
 ```
 
@@ -1184,12 +1184,12 @@ hex_to_rgb('FFA501') # (255, 165, 1)
 * Use arithmetic comparison to check if the given number is in the specified range.
 * If the second parameter, `end`, is not specified, the range is considered to be from `0` to `start`.
 
-```python
+```pythonthon
 def in_range(n, start, end = 0):
   return start <= n <= end if end >= start else end <= n <= start
 ```
 
-```python
+```pythonthon
 in_range(3, 2, 5) # True
 in_range(3, 4) # True
 in_range(2, 3, 5) # False
@@ -1201,7 +1201,7 @@ in_range(3, 2) # False
 * Check if every value in `values` is contained in `lst` using a `for` loop.
 * Return `False` if any one value is not found, `True` otherwise.
 
-```python
+```pythonthon
 def includes_all(lst, values):
   for v in values:
     if v not in lst:
@@ -1209,7 +1209,7 @@ def includes_all(lst, values):
   return True
 ```
 
-```python
+```pythonthon
 includes_all([1, 2, 3, 4], [1, 4]) # True
 includes_all([1, 2, 3, 4], [1, 5]) # False
 ```
@@ -1219,7 +1219,7 @@ includes_all([1, 2, 3, 4], [1, 5]) # False
 * Check if any value in `values` is contained in `lst` using a `for` loop.
 * Return `True` if any one value is found, `False` otherwise.
 
-```python
+```pythonthon
 def includes_any(lst, values):
   for v in values:
     if v in lst:
@@ -1227,7 +1227,7 @@ def includes_any(lst, values):
   return False
 ```
 
-```python
+```pythonthon
 includes_any([1, 2, 3, 4], [2, 9]) # True
 includes_any([1, 2, 3, 4], [8, 9]) # False
 ```
@@ -1236,12 +1236,12 @@ includes_any([1, 2, 3, 4], [8, 9]) # False
 
 * Use `enumerate()` and a list comprehension to check each element for equality with `value` and adding `i` to the result.
 
-```python
+```pythonthon
 def index_of_all(lst, value):
   return [i for i, x in enumerate(lst) if x == value]
 ```
 
-```python
+```pythonthon
 index_of_all([1, 2, 1, 4, 5, 1], 1) # [0, 2, 5]
 index_of_all([1, 2, 3, 4], 6) # []
 ```
@@ -1250,12 +1250,12 @@ index_of_all([1, 2, 3, 4], 6) # []
 
 * Use `lst[:-1]` to return all but the last element of the list.
 
-```python
+```pythonthon
 def initial(lst):
   return lst[:-1]
 ```
 
-```python
+```pythonthon
 initial([1, 2, 3]) # [1, 2]
 ```
 
@@ -1264,12 +1264,12 @@ initial([1, 2, 3]) # [1, 2]
 * Use a list comprehension and `range()` to generate `h` rows where each is a list with length `h`, initialized with `val`.
 * Omit the last argument, `val`, to set the default value to `None`.
 
-```python
+```pythonthon
 def initialize_2d_list(w, h, val = None):
   return [[val for x in range(w)] for y in range(h)]
 ```
 
-```python
+```pythonthon
 initialize_2d_list(2, 2, 0) # [[0, 0], [0, 0]]
 ```
 
@@ -1279,12 +1279,12 @@ initialize_2d_list(2, 2, 0) # [[0, 0], [0, 0]]
 * Omit `start` to use the default value of `0`.
 * Omit `step` to use the default value of `1`.
 
-```python
+```pythonthon
 def initialize_list_with_range(end, start = 0, step = 1):
   return list(range(start, end + 1, step))
 ```
 
-```python
+```pythonthon
 initialize_list_with_range(5) # [0, 1, 2, 3, 4, 5]
 initialize_list_with_range(7, 3) # [3, 4, 5, 6, 7]
 initialize_list_with_range(9, 0, 2) # [0, 2, 4, 6, 8]
@@ -1295,12 +1295,12 @@ initialize_list_with_range(9, 0, 2) # [0, 2, 4, 6, 8]
 * Use a list comprehension and `range()` to generate a list of length equal to `n`, filled with the desired values.
 * Omit `val` to use the default value of `0`.
 
-```python
+```pythonthon
 def initialize_list_with_values(n, val = 0):
   return [val for x in range(n)]
 ```
 
-```python
+```pythonthon
 initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
 ```
 
@@ -1309,13 +1309,13 @@ initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
 * Create a `set` from `a` and `b`.
 * Use the built-in set operator `&` to only keep values contained in both sets, then transform the `set` back into a `list`.
 
-```python
+```pythonthon
 def intersection(a, b):
   _a, _b = set(a), set(b)
   return list(_a & _b)
 ```
 
-```python
+```pythonthon
 intersection([1, 2, 3], [4, 3, 2]) # [2, 3]
 ```
 
@@ -1324,13 +1324,13 @@ intersection([1, 2, 3], [4, 3, 2]) # [2, 3]
 * Create a `set`, using `map()` to apply `fn` to each element in `b`.
 * Use a list comprehension in combination with `fn` on `a` to only keep values contained in both lists.
 
-```python
+```pythonthon
 def intersection_by(a, b, fn):
   _b = set(map(fn, b))
   return [item for item in a if fn(item) in _b]
 ```
 
-```python
+```pythonthon
 from math import floor
 
 intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]
@@ -1340,12 +1340,12 @@ intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]
 
 * Use `dictionary.items()` in combination with a list comprehension to create a new dictionary with the values and keys inverted.
 
-```python
+```pythonthon
 def invert_dictionary(obj):
   return { value: key for key, value in obj.items() }
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 11,
@@ -1359,7 +1359,7 @@ invert_dictionary(ages) # { 10: 'Peter', 11: 'Isabel', 9: 'Anna' }
 * Use `str.isalnum()` to filter out non-alphanumeric characters, `str.lower()` to transform each character to lowercase.
 * Use `collections.Counter` to count the resulting characters for each string and compare the results.
 
-```python
+```pythonthon
 from collections import Counter
 
 def is_anagram(s1, s2):
@@ -1370,7 +1370,7 @@ def is_anagram(s1, s2):
   )
 ```
 
-```python
+```pythonthon
 is_anagram('#anagram', 'Nag a ram!')  # True
 ```
 
@@ -1379,7 +1379,7 @@ is_anagram('#anagram', 'Nag a ram!')  # True
 * Use `count()` to check if any value in `a` has more occurrences than it has in `b`.
 * Return `False` if any such value is found, `True` otherwise.
 
-```python
+```pythonthon
 def is_contained_in(a, b):
   for v in set(a):
     if a.count(v) > b.count(v):
@@ -1387,7 +1387,7 @@ def is_contained_in(a, b):
   return True
 ```
 
-```python
+```pythonthon
 is_contained_in([1, 4], [2, 4, 1]) # True
 ```
 
@@ -1397,12 +1397,12 @@ Checks if the first numeric argument is divisible by the second one.
 
 * Use the modulo operator \(`%`\) to check if the remainder is equal to `0`.
 
-```python
+```pythonthon
 def is_divisible(dividend, divisor):
   return dividend % divisor == 0
 ```
 
-```python
+```pythonthon
 is_divisible(6, 3) # True
 ```
 
@@ -1413,12 +1413,12 @@ Checks if the given number is even.
 * Check whether a number is odd or even using the modulo \(`%`\) operator.
 * Return `True` if the number is even, `False` if the number is odd.
 
-```python
+```pythonthon
 def is_even(num):
   return num % 2 == 0
 ```
 
-```python
+```pythonthon
 is_even(3) # False
 ```
 
@@ -1429,12 +1429,12 @@ Checks if the given number is odd.
 * Checks whether a number is even or odd using the modulo \(`%`\) operator.
 * Returns `True` if the number is odd, `False` if the number is even.
 
-```python
+```pythonthon
 def is_odd(num):
   return num % 2 != 0
 ```
 
-```python
+```pythonthon
 is_odd(3) # True
 ```
 
@@ -1444,7 +1444,7 @@ is_odd(3) # True
 * Use `all()` and `range()` to check numbers from `3` to the square root of the given number.
 * Return `True` if none divides the given number, `False` otherwise.
 
-```python
+```pythonthon
 from math import sqrt
 
 def is_prime(n):
@@ -1453,7 +1453,7 @@ def is_prime(n):
   return all(n % i for i in range(3, int(sqrt(n)) + 1, 2))
 ```
 
-```python
+```pythonthon
 is_prime(11) # True
 ```
 
@@ -1463,14 +1463,14 @@ is_prime(11) # True
 * Check if the day of the week is less than or equal to `4`.
 * Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
-```python
+```pythonthon
 from datetime import datetime
 
 def is_weekday(d = datetime.today()):
   return d.weekday() <= 4
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 is_weekday(date(2020, 10, 25)) # False
@@ -1483,14 +1483,14 @@ is_weekday(date(2020, 10, 28)) # True
 * Check if the day of the week is greater than `4`.
 * Omit the second argument, `d`, to use a default value of `datetime.today()`.
 
-```python
+```pythonthon
 from datetime import datetime
 
 def is_weekend(d = datetime.today()):
   return d.weekday() > 4
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 is_weekend(date(2020, 10, 25)) # True
@@ -1503,7 +1503,7 @@ is_weekend(date(2020, 10, 28)) # False
 * Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
 * Finally, use `str.join()` to combine all word using `-` as the separator.
 
-```python
+```pythonthon
 from re import sub
 
 def kebab(s):
@@ -1513,7 +1513,7 @@ def kebab(s):
     lambda mo: ' ' + mo.group(0).lower(), s)).split())
 ```
 
-```python
+```pythonthon
 kebab('camelCase') # 'camel-case'
 kebab('some text') # 'some-text'
 kebab('some-mixed_string With spaces_underscores-and-hyphens')
@@ -1525,12 +1525,12 @@ kebab('AllThe-small Things') # 'all-the-small-things'
 
 * Use the `in` operator to check if `d` contains `key`.
 
-```python
+```pythonthon
 def key_in_dict(d, key):
   return (key in d)
 ```
 
-```python
+```pythonthon
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 key_in_dict(d, 'three') # True
 ```
@@ -1539,12 +1539,12 @@ key_in_dict(d, 'three') # True
 
 * Use `max()` with the `key` parameter set to `dict.get()` to find and return the key of the maximum value in the given dictionary.
 
-```python
+```pythonthon
 def key_of_max(d):
   return max(d, key = d.get)
 ```
 
-```python
+```pythonthon
 key_of_max({'a':4, 'b':0, 'c':13}) # c
 ```
 
@@ -1552,12 +1552,12 @@ key_of_max({'a':4, 'b':0, 'c':13}) # c
 
 * Use `min()` with the `key` parameter set to `dict.get()` to find and return the key of the minimum value in the given dictionary.
 
-```python
+```pythonthon
 def key_of_min(d):
   return min(d, key = d.get)
 ```
 
-```python
+```pythonthon
 key_of_min({'a':4, 'b':0, 'c':13}) # b
 ```
 
@@ -1566,12 +1566,12 @@ key_of_min({'a':4, 'b':0, 'c':13}) # b
 * Use `dict.keys()` to return the keys in the given dictionary.
 * Return a `list()` of the previous result.
 
-```python
+```pythonthon
 def keys_only(flat_dict):
   return list(flat_dict.keys())
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 11,
@@ -1586,12 +1586,12 @@ Converts kilometers to miles.
 
 * Follows the conversion formula `mi = km * 0.621371`.
 
-```python
+```pythonthon
 def km_to_miles(km):
   return km * 0.621371
 ```
 
-```python
+```pythonthon
 km_to_miles(8.1) # 5.0331051
 ```
 
@@ -1599,12 +1599,12 @@ km_to_miles(8.1) # 5.0331051
 
 * Use `lst[-1]` to return the last element of the passed list.
 
-```python
+```pythonthon
 def last(lst):
   return lst[-1]
 ```
 
-```python
+```pythonthon
 last([1, 2, 3]) # 3
 ```
 
@@ -1612,7 +1612,7 @@ last([1, 2, 3]) # 3
 
 * Use `functools.reduce()`, `math.gcd()` and `lcm(x,y) = x * y / gcd(x,y)` over the given list.
 
-```python
+```pythonthon
 from functools import reduce
 from math import gcd
 
@@ -1620,7 +1620,7 @@ def lcm(numbers):
   return reduce((lambda x, y: int(x * y / gcd(x, y))), numbers)
 ```
 
-```python
+```pythonthon
 lcm([12, 7]) # 84
 lcm([1, 3, 4, 5]) # 60
 ```
@@ -1630,12 +1630,12 @@ lcm([1, 3, 4, 5]) # 60
 * Use `max()` with `len()` as the `key` to return the item with the greatest length.
 * If multiple objects have the same length, the first one will be returned.
 
-```python
+```pythonthon
 def longest_item(*args):
   return max(args, key = len)
 ```
 
-```python
+```pythonthon
 longest_item('this', 'is', 'a', 'testcase') # 'testcase'
 longest_item([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]) # [1, 2, 3, 4, 5]
 longest_item([1, 2, 3], 'foobar') # 'foobar'
@@ -1647,12 +1647,12 @@ longest_item([1, 2, 3], 'foobar') # 'foobar'
 * Use `zip()` to pair original values to the values produced by `fn`.
 * Use `dict()` to return an appropriate dictionary.
 
-```python
+```pythonthon
 def map_dictionary(itr, fn):
   return dict(zip(itr, map(fn, itr)))
 ```
 
-```python
+```pythonthon
 map_dictionary([1, 2, 3], lambda x: x * x) # { 1: 1, 2: 4, 3: 9 }
 ```
 
@@ -1660,12 +1660,12 @@ map_dictionary([1, 2, 3], lambda x: x * x) # { 1: 1, 2: 4, 3: 9 }
 
 * Use `dict.items()` to iterate over the dictionary, assigning the values produced by `fn` to each key of a new dictionary.
 
-```python
+```pythonthon
 def map_values(obj, fn):
   return dict((k, fn(v)) for k, v in obj.items())
 ```
 
-```python
+```pythonthon
 users = {
   'fred': { 'user': 'fred', 'age': 40 },
   'pebbles': { 'user': 'pebbles', 'age': 1 }
@@ -1678,12 +1678,12 @@ map_values(users, lambda u : u['age']) # {'fred': 40, 'pebbles': 1}
 * Use `map()` with `fn` to map each element to a value using the provided function.
 * Use `max()` to return the maximum value.
 
-```python
+```pythonthon
 def max_by(lst, fn):
   return max(map(fn, lst))
 ```
 
-```python
+```pythonthon
 max_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 8
 ```
 
@@ -1691,12 +1691,12 @@ max_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 8
 
 * Use `max()` and `list.index()` to get the maximum value in the list and return its index.
 
-```python
+```pythonthon
 def max_element_index(arr):
   return arr.index(max(arr))
 ```
 
-```python
+```pythonthon
 max_element_index([5, 8, 9, 7, 10, 3, 0]) # 4
 ```
 
@@ -1707,12 +1707,12 @@ max_element_index([5, 8, 9, 7, 10, 3, 0]) # 4
 * Omit the second argument, `n`, to get a one-element list.
 * If `n` is greater than or equal to the provided list's length, then return the original list \(sorted in descending order\).
 
-```python
+```pythonthon
 def max_n(lst, n = 1):
   return sorted(lst, reverse = True)[:n]
 ```
 
-```python
+```pythonthon
 max_n([1, 2, 3]) # [3]
 max_n([1, 2, 3], 2) # [3, 2]
 ```
@@ -1723,7 +1723,7 @@ max_n([1, 2, 3], 2) # [3, 2]
 * Find the median, which is either the middle element of the list if the list length is odd or the average of the two middle elements if the list length is even.
 * [`statistics.median()`](https://docs.python.org/3/library/statistics.html#statistics.median) provides similar functionality to this snippet.
 
-```python
+```pythonthon
 def median(list):
   list.sort()
   list_length = len(list)
@@ -1732,7 +1732,7 @@ def median(list):
   return float(list[int(list_length / 2)])
 ```
 
-```python
+```pythonthon
 median([1, 2, 3]) # 2.0
 median([1, 2, 3, 4]) # 2.5
 ```
@@ -1744,7 +1744,7 @@ median([1, 2, 3, 4]) # 2.5
 * If a list is shorter than `max_length`, use `fill_value` for the remaining items \(defaults to `None`\).
 * [`zip()`](https://docs.python.org/3/library/functions.html#zip) and [`itertools.zip_longest()`](https://docs.python.org/3/library/itertools.html#itertools.zip_longest) provide similar functionality to this snippet.
 
-```python
+```pythonthon
 def merge(*args, fill_value = None):
   max_length = max([len(lst) for lst in args])
   result = []
@@ -1755,7 +1755,7 @@ def merge(*args, fill_value = None):
   return result
 ```
 
-```python
+```pythonthon
 merge(['a', 'b'], [1, 2], [True, False]) # [['a', 1, True], ['b', 2, False]]
 merge(['a'], [1, 2], [True, False]) # [['a', 1, True], [None, 2, False]]
 merge(['a'], [1, 2], [True, False], fill_value = '_')
@@ -1766,7 +1766,7 @@ merge(['a'], [1, 2], [True, False], fill_value = '_')
 
 * Create a new `dict` and loop over `dicts`, using `dictionary.update()` to add the key-value pairs from each one to the result.
 
-```python
+```pythonthon
 def merge_dictionaries(*dicts):
   res = dict()
   for d in dicts:
@@ -1774,7 +1774,7 @@ def merge_dictionaries(*dicts):
   return res
 ```
 
-```python
+```pythonthon
 ages_one = {
   'Peter': 10,
   'Isabel': 11,
@@ -1792,12 +1792,12 @@ Converts miles to kilometers.
 
 * Follows the conversion formula `km = mi * 1.609344`.
 
-```python
+```pythonthon
 def miles_to_km(miles):
   return miles * 1.609344
 ```
 
-```python
+```pythonthon
 miles_to_km(5.03) # 8.09500032
 ```
 
@@ -1806,12 +1806,12 @@ miles_to_km(5.03) # 8.09500032
 * Use `map()` with `fn` to map each element to a value using the provided function.
 * Use `min()` to return the minimum value.
 
-```python
+```pythonthon
 def min_by(lst, fn):
   return min(map(fn, lst))
 ```
 
-```python
+```pythonthon
 min_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 2
 ```
 
@@ -1819,12 +1819,12 @@ min_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 2
 
 * Use `min()` and `list.index()` to obtain the minimum value in the list and then return its index.
 
-```python
+```pythonthon
 def min_element_index(arr):
   return arr.index(min(arr))
 ```
 
-```python
+```pythonthon
 min_element_index([3, 5, 2, 6, 10, 7, 9]) # 2
 ```
 
@@ -1835,12 +1835,12 @@ min_element_index([3, 5, 2, 6, 10, 7, 9]) # 2
 * Omit the second argument, `n`, to get a one-element list.
 * If `n` is greater than or equal to the provided list's length, then return the original list \(sorted in ascending order\).
 
-```python
+```pythonthon
 def min_n(lst, n = 1):
   return sorted(lst, reverse = False)[:n]
 ```
 
-```python
+```pythonthon
 min_n([1, 2, 3]) # [1]
 min_n([1, 2, 3], 2) # [1, 2]
 ```
@@ -1850,14 +1850,14 @@ min_n([1, 2, 3], 2) # [1, 2]
 * Subtract `start` from `end` and use `datetime.timedelta.days` to get the day difference.
 * Divide by `30` and use `math.ceil()` to get the difference in months \(rounded up\).
 
-```python
+```pythonthon
 from math import ceil
 
 def months_diff(start, end):
   return ceil((end - start).days / 30)
 ```
 
-```python
+```pythonthon
 from datetime import date
 
 months_diff(date(2020, 10, 28), date(2020, 11, 25)) # 1
@@ -1868,12 +1868,12 @@ months_diff(date(2020, 10, 28), date(2020, 11, 25)) # 1
 * Use `set()` to get the unique values in `lst`.
 * Use `max()` to find the element that has the most appearances.
 
-```python
+```pythonthon
 def most_frequent(lst):
   return max(set(lst), key = lst.count)
 ```
 
-```python
+```pythonthon
 most_frequent([1, 2, 1, 2, 3, 2, 1, 4, 2]) #2
 ```
 
@@ -1881,12 +1881,12 @@ most_frequent([1, 2, 1, 2, 3, 2, 1, 4, 2]) #2
 
 * Repeat the string `n` times, using the `*` operator.
 
-```python
+```pythonthon
 def n_times_string(s, n):
   return (s * n)
 ```
 
-```python
+```pythonthon
 n_times_string('py', 4) #'pypypypy'
 ```
 
@@ -1894,12 +1894,12 @@ n_times_string('py', 4) #'pypypypy'
 
 * Use `all()` and `fn` to check if `fn` returns `False` for all the elements in the list.
 
-```python
+```pythonthon
 def none(lst, fn = lambda x: x):
   return all(not fn(x) for x in lst)
 ```
 
-```python
+```pythonthon
 none([0, 1, 2, 0], lambda x: x >= 2 ) # False
 none([0, 0, 0]) # True
 ```
@@ -1908,13 +1908,13 @@ none([0, 0, 0]) # True
 
 * Return `num` mapped between `outMin`-`outMax` from `inMin`-`inMax`.
 
-```python
+```pythonthon
 def num_to_range(num, inMin, inMax, outMin, outMax):
   return outMin + (float(num - inMin) / float(inMax - inMin) * (outMax
                   - outMin))
 ```
 
-```python
+```pythonthon
 num_to_range(5, 0, 10, 0, 100) # 50.0
 ```
 
@@ -1922,12 +1922,12 @@ num_to_range(5, 0, 10, 0, 100) # 50.0
 
 * Use slice notation to get the two slices of the list and combine them before returning.
 
-```python
+```pythonthon
 def offset(lst, offset):
   return lst[offset:] + lst[:offset]
 ```
 
-```python
+```pythonthon
 offset([1, 2, 3, 4, 5], 2) # [3, 4, 5, 1, 2]
 offset([1, 2, 3, 4, 5], -2) # [4, 5, 1, 2, 3]
 ```
@@ -1937,14 +1937,14 @@ offset([1, 2, 3, 4, 5], -2) # [4, 5, 1, 2, 3]
 * Use `str.ljust()` and `str.rjust()` to pad both sides of the given string.
 * Omit the third argument, `char`, to use the whitespace character as the default padding character.
 
-```python
+```pythonthon
 from math import floor
 
 def pad(s, length, char = ' '):
   return s.rjust(floor((len(s) + length)/2), char).ljust(length, char)
 ```
 
-```python
+```pythonthon
 pad('cat', 8) # '  cat   '
 pad('42', 6, '0') # '004200'
 pad('foobar', 3) # 'foobar'
@@ -1954,12 +1954,12 @@ pad('foobar', 3) # 'foobar'
 
 * Use `str.zfill()` to pad the number to the specified length, after converting it to a string.
 
-```python
+```pythonthon
 def pad_number(n, l):
   return str(n).zfill(l)
 ```
 
-```python
+```pythonthon
 pad_number(1234, 6); # '001234'
 ```
 
@@ -1968,7 +1968,7 @@ pad_number(1234, 6); # '001234'
 * Use `str.lower()` and `re.sub()` to convert to lowercase and remove non-alphanumeric characters from the given string.
 * Then, compare the new string with its reverse, using slice notation.
 
-```python
+```pythonthon
 from re import sub
 
 def palindrome(s):
@@ -1976,7 +1976,7 @@ def palindrome(s):
   return s == s[::-1]
 ```
 
-```python
+```pythonthon
 palindrome('taco cat') # True
 ```
 
@@ -1984,12 +1984,12 @@ palindrome('taco cat') # True
 
 * Use a list comprehension and `dict.get()` to get the value of `key` for each dictionary in `lst`.
 
-```python
+```pythonthon
 def pluck(lst, key):
   return [x.get(key) for x in lst]
 ```
 
-```python
+```pythonthon
 simpsons = [
   { 'name': 'lisa', 'age': 8 },
   { 'name': 'homer', 'age': 36 },
@@ -2005,7 +2005,7 @@ pluck(simpsons, 'age') # [8, 36, 34, 10]
 * Use `range()` and `itertools.combinations()` to create a generator that returns all subsets.
 * Use `itertools.chain.from_iterable()` and `list()` to consume the generator and return a list.
 
-```python
+```pythonthon
 from itertools import chain, combinations
 
 def powerset(iterable):
@@ -2013,7 +2013,7 @@ def powerset(iterable):
   return list(chain.from_iterable(combinations(s, r) for r in range(len(s)+1)))
 ```
 
-```python
+```pythonthon
 powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 ```
 
@@ -2021,14 +2021,14 @@ powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 
 * Use `math.pi` and the radian to degree formula to convert the angle from radians to degrees.
 
-```python
+```pythonthon
 from math import pi
 
 def rads_to_degrees(rad):
   return (rad * 180.0) / pi
 ```
 
-```python
+```pythonthon
 from math import pi
 
 rads_to_degrees(pi / 2) # 90.0
@@ -2038,12 +2038,12 @@ rads_to_degrees(pi / 2) # 90.0
 
 * Use slice notation to reverse the list or string.
 
-```python
+```pythonthon
 def reverse(itr):
   return itr[::-1]
 ```
 
-```python
+```pythonthon
 reverse([1, 2, 3]) # [3, 2, 1]
 reverse('snippet') # 'teppins'
 ```
@@ -2053,14 +2053,14 @@ reverse('snippet') # 'teppins'
 * Use `str()` to convert the number to a string, slice notation to reverse it and `str.replace()` to remove the sign.
 * Use `float()` to convert the result to a number and `math.copysign()` to copy the original sign.
 
-```python
+```pythonthon
 from math import copysign
 
 def reverse_number(n):
   return copysign(float(str(n)[::-1].replace('-', '')), n)
 ```
 
-```python
+```pythonthon
 reverse_number(981) # 189
 reverse_number(-500) # -5
 reverse_number(73.6) # 6.37
@@ -2072,12 +2072,12 @@ reverse_number(-5.23) # -32.5
 * Create a placeholder for a zero-padded hexadecimal value using `'{:02X}'` and copy it three times.
 * Use `str.format()` on the resulting string to replace the placeholders with the given values.
 
-```python
+```pythonthon
 def rgb_to_hex(r, g, b):
   return ('{:02X}' * 3).format(r, g, b)
 ```
 
-```python
+```pythonthon
 rgb_to_hex(255, 165, 1) # 'FFA501'
 ```
 
@@ -2085,12 +2085,12 @@ rgb_to_hex(255, 165, 1) # 'FFA501'
 
 * Use slice notation to get the two slices of the list and combine them before returning.
 
-```python
+```pythonthon
 def roll(lst, offset):
   return lst[-offset:] + lst[:-offset]
 ```
 
-```python
+```pythonthon
 roll([1, 2, 3, 4, 5], 2) # [4, 5, 1, 2, 3]
 roll([1, 2, 3, 4, 5], -2) # [3, 4, 5, 1, 2]
 ```
@@ -2099,14 +2099,14 @@ roll([1, 2, 3, 4, 5], -2) # [3, 4, 5, 1, 2]
 
 * Use `random.choice()` to get a random element from `lst`.
 
-```python
+```pythonthon
 from random import choice
 
 def sample(lst):
   return choice(lst)
 ```
 
-```python
+```pythonthon
 sample([3, 7, 9, 11]) # 9
 ```
 
@@ -2115,7 +2115,7 @@ sample([3, 7, 9, 11]) # 9
 * Uses the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to reorder the elements of the list.
 * [`random.shuffle`](https://docs.python.org/3/library/random.html#random.shuffle) provides similar functionality to this snippet.
 
-```python
+```pythonthon
 from copy import deepcopy
 from random import randint
 
@@ -2129,7 +2129,7 @@ def shuffle(lst):
   return temp_lst
 ```
 
-```python
+```pythonthon
 foo = [1, 2, 3]
 shuffle(foo) # [2, 3, 1], foo = [1, 2, 3]
 ```
@@ -2138,12 +2138,12 @@ shuffle(foo) # [2, 3, 1], foo = [1, 2, 3]
 
 * Use a list comprehension on `a` to only keep values contained in both lists.
 
-```python
+```pythonthon
 def similarity(a, b):
   return [item for item in a if item in b]
 ```
 
-```python
+```pythonthon
 similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
 ```
 
@@ -2152,7 +2152,7 @@ similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
 * Use `str.lower()` and `str.strip()` to normalize the input string.
 * Use `re.sub()` to to replace spaces, dashes and underscores with `-` and remove special characters.
 
-```python
+```pythonthon
 import re
 
 def slugify(s):
@@ -2163,7 +2163,7 @@ def slugify(s):
   return s
 ```
 
-```python
+```pythonthon
 slugify('Hello World!') # 'hello-world'
 ```
 
@@ -2173,7 +2173,7 @@ slugify('Hello World!') # 'hello-world'
 * Use `re.sub()` to replace any `-` characters with spaces.
 * Finally, use `str.join()` to combine all words using `-` as the separator.
 
-```python
+```pythonthon
 from re import sub
 
 def snake(s):
@@ -2183,7 +2183,7 @@ def snake(s):
     s.replace('-', ' '))).split()).lower()
 ```
 
-```python
+```pythonthon
 snake('camelCase') # 'camel_case'
 snake('some text') # 'some_text'
 snake('some-mixed_string With spaces_underscores-and-hyphens')
@@ -2195,12 +2195,12 @@ snake('AllThe-small Things') # 'all_the_small_things'
 
 * Use `any()` in combination with `map()` to check if `fn` returns `True` for any element in the list.
 
-```python
+```pythonthon
 def some(lst, fn = lambda x: x):
   return any(map(fn, lst))
 ```
 
-```python
+```pythonthon
 some([0, 1, 2, 0], lambda x: x >= 2 ) # True
 some([0, 0, 1, 0]) # True
 ```
@@ -2211,13 +2211,13 @@ some([0, 0, 1, 0]) # True
 * Use a list comprehension to get the first element of each pair from the result.
 * Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the third argument.
 
-```python
+```pythonthon
 def sort_by_indexes(lst, indexes, reverse=False):
   return [val for (_, val) in sorted(zip(indexes, lst), key=lambda x: \
           x[0], reverse=reverse)]
 ```
 
-```python
+```pythonthon
 a = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
 b = [3, 2, 6, 4, 1, 5]
 sort_by_indexes(a, b) # ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']
@@ -2231,12 +2231,12 @@ sort_by_indexes(a, b, True)
 * Use `dict()` to convert the sorted list back to a dictionary.
 * Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
 
-```python
+```pythonthon
 def sort_dict_by_key(d, reverse = False):
   return dict(sorted(d.items(), reverse = reverse))
 ```
 
-```python
+```pythonthon
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 sort_dict_by_key(d) # {'five': 5, 'four': 4, 'one': 1, 'three': 3, 'two': 2}
 sort_dict_by_key(d, True)
@@ -2250,12 +2250,12 @@ sort_dict_by_key(d, True)
 * Use the `reverse` parameter in `sorted()` to sort the dictionary in reverse order, based on the second argument.
 * **⚠️ NOTICE:** Dictionary values must be of the same type.
 
-```python
+```pythonthon
 def sort_dict_by_value(d, reverse = False):
   return dict(sorted(d.items(), key = lambda x: x[1], reverse = reverse))
 ```
 
-```python
+```pythonthon
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 sort_dict_by_value(d) # {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
 sort_dict_by_value(d, True)
@@ -2267,12 +2267,12 @@ sort_dict_by_value(d, True)
 * Use `str.split()` and `'\n'` to match line breaks and create a list.
 * [`str.splitlines()`](https://docs.python.org/3/library/stdtypes.html#str.splitlines) provides similar functionality to this snippet.
 
-```python
+```pythonthon
 def split_lines(s):
   return s.split('\n')
 ```
 
-```python
+```pythonthon
 split_lines('This\nis a\nmultiline\nstring.\n')
 # ['This', 'is a', 'multiline', 'string.' , '']
 ```
@@ -2281,7 +2281,7 @@ split_lines('This\nis a\nmultiline\nstring.\n')
 
 * Loop over elements, use `list.extend()` if the element is a list, `list.append()` otherwise.
 
-```python
+```pythonthon
 def spread(arg):
   ret = []
   for i in arg:
@@ -2289,7 +2289,7 @@ def spread(arg):
   return ret
 ```
 
-```python
+```pythonthon
 spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
@@ -2298,12 +2298,12 @@ spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 * Use `map()` with `fn` to map each element to a value using the provided function.
 * Use `sum()` to return the sum of the values.
 
-```python
+```pythonthon
 def sum_by(lst, fn):
   return sum(map(fn, lst))
 ```
 
-```python
+```pythonthon
 sum_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 20
 ```
 
@@ -2314,12 +2314,12 @@ sum_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 20
 * Omit the second argument, `power`, to use a default power of `2`.
 * Omit the third argument, `start`, to use a default starting value of `1`.
 
-```python
+```pythonthon
 def sum_of_powers(end, power = 2, start = 1):
   return sum([(i) ** power for i in range(start, end + 1)])
 ```
 
-```python
+```pythonthon
 sum_of_powers(10) # 385
 sum_of_powers(10, 3) # 3025
 sum_of_powers(10, 3, 5) # 2925
@@ -2330,14 +2330,14 @@ sum_of_powers(10, 3, 5) # 2925
 * Create a `set` from each list.
 * Use a list comprehension on each of them to only keep values not contained in the previously created set of the other.
 
-```python
+```pythonthon
 def symmetric_difference(a, b):
   (_a, _b) = (set(a), set(b))
   return [item for item in a if item not in _b] + [item for item in b
           if item not in _a]
 ```
 
-```python
+```pythonthon
 symmetric_difference([1, 2, 3], [1, 2, 4]) # [3, 4]
 ```
 
@@ -2346,14 +2346,14 @@ symmetric_difference([1, 2, 3], [1, 2, 4]) # [3, 4]
 * Create a `set` by applying `fn` to each element in every list.
 * Use a list comprehension in combination with `fn` on each of them to only keep values not contained in the previously created set of the other.
 
-```python
+```pythonthon
 def symmetric_difference_by(a, b, fn):
   (_a, _b) = (set(map(fn, a)), set(map(fn, b)))
   return [item for item in a if fn(item) not in _b] + [item
           for item in b if fn(item) not in _a]
 ```
 
-```python
+```pythonthon
 from math import floor
 
 symmetric_difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2, 3.4]
@@ -2364,12 +2364,12 @@ symmetric_difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2, 3.4]
 * Use slice notation to return the last element if the list's length is more than `1`.
 * Otherwise, return the whole list.
 
-```python
+```pythonthon
 def tail(lst):
   return lst[1:] if len(lst) > 1 else lst
 ```
 
-```python
+```pythonthon
 tail([1, 2, 3]) # [2, 3]
 tail([1]) # [1]
 ```
@@ -2378,12 +2378,12 @@ tail([1]) # [1]
 
 * Use slice notation to create a slice of the list with `n` elements taken from the beginning.
 
-```python
+```pythonthon
 def take(itr, n = 1):
   return itr[:n]
 ```
 
-```python
+```pythonthon
 take([1, 2, 3], 5) # [1, 2, 3]
 take([1, 2, 3], 0) # []
 ```
@@ -2392,12 +2392,12 @@ take([1, 2, 3], 0) # []
 
 * Use slice notation to create a slice of the list with `n` elements taken from the end.
 
-```python
+```pythonthon
 def take_right(itr, n = 1):
   return itr[-n:]
 ```
 
-```python
+```pythonthon
 take_right([1, 2, 3], 2) # [2, 3]
 take_right([1, 2, 3]) # [3]
 ```
@@ -2406,12 +2406,12 @@ take_right([1, 2, 3]) # [3]
 
 * Use `bin()` to convert a given decimal number into its binary equivalent.
 
-```python
+```pythonthon
 def to_binary(n):
   return bin(n)
 ```
 
-```python
+```pythonthon
 to_binary(100) # 0b1100100
 ```
 
@@ -2421,12 +2421,12 @@ The values of the first list need to be unique and hashable.
 
 * Use `zip()` in combination with `dict()` to combine the values of the two lists into a dictionary.
 
-```python
+```pythonthon
 def to_dictionary(keys, values):
   return dict(zip(keys, values))
 ```
 
-```python
+```pythonthon
 to_dictionary(['a', 'b'], [1, 2]) # { a: 1, b: 2 }
 ```
 
@@ -2434,12 +2434,12 @@ to_dictionary(['a', 'b'], [1, 2]) # { a: 1, b: 2 }
 
 * Use `hex()` to convert a given decimal number into its hexadecimal equivalent.
 
-```python
+```pythonthon
 def to_hex(dec):
   return hex(dec)
 ```
 
-```python
+```pythonthon
 to_hex(41) # 0x29
 to_hex(332) # 0x14c
 ```
@@ -2448,14 +2448,14 @@ to_hex(332) # 0x14c
 
 * Use `datetime.datetime.isoformat()` to convert the given `datetime.datetime` object to an ISO-8601 date.
 
-```python
+```pythonthon
 from datetime import datetime
 
 def to_iso_date(d):
   return d.isoformat()
 ```
 
-```python
+```pythonthon
 from datetime import datetime
 
 to_iso_date(datetime(2020, 10, 25)) # 2020-10-25T00:00:00
@@ -2469,7 +2469,7 @@ Accepts value between `1` and `3999` \(both inclusive\).
 * Use a `for` loop to iterate over the values in `lookup`.
 * Use `divmod()` to update `num` with the remainder, adding the roman numeral representation to the result.
 
-```python
+```pythonthon
 def to_roman_numeral(num):
   lookup = [
     (1000, 'M'),
@@ -2493,7 +2493,7 @@ def to_roman_numeral(num):
   return res
 ```
 
-```python
+```pythonthon
 to_roman_numeral(3) # 'III'
 to_roman_numeral(11) # 'XI'
 to_roman_numeral(1998) # 'MCMXCVIII'
@@ -2504,12 +2504,12 @@ to_roman_numeral(1998) # 'MCMXCVIII'
 * Use `*lst` to get the provided list as tuples.
 * Use `zip()` in combination with `list()` to create the transpose of the given two-dimensional list.
 
-```python
+```pythonthon
 def transpose(lst):
   return list(zip(*lst))
 ```
 
-```python
+```pythonthon
 transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
 # [(1, 4, 7, 10), (2, 5, 8, 11), (3, 6, 9, 12)]
 ```
@@ -2520,7 +2520,7 @@ transpose([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
 * Use a generator function, `fn_generator`, that uses a `while` loop to call the iterator function and `yield` the `value` until it returns `False`.
 * Use a list comprehension to return the list that is produced by the generator, using the iterator function.
 
-```python
+```pythonthon
 def unfold(fn, seed):
   def fn_generator(val):
     while True:
@@ -2530,7 +2530,7 @@ def unfold(fn, seed):
   return [i for i in fn_generator([None, seed])]
 ```
 
-```python
+```pythonthon
 f = lambda n: False if n > 50 else [-n, n + 10]
 unfold(f, 10) # [-10, -20, -30, -40, -50]
 ```
@@ -2539,12 +2539,12 @@ unfold(f, 10) # [-10, -20, -30, -40, -50]
 
 * Create a `set` with all values of `a` and `b` and convert to a `list`.
 
-```python
+```pythonthon
 def union(a, b):
   return list(set(a + b))
 ```
 
-```python
+```pythonthon
 union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
 ```
 
@@ -2554,13 +2554,13 @@ union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
 * Use a list comprehension in combination with `fn` on `b` to only keep values not contained in the previously created set, `_a`.
 * Finally, create a `set` from the previous result and `a` and transform it into a `list`
 
-```python
+```pythonthon
 def union_by(a, b, fn):
   _a = set(map(fn, a))
   return list(set(a + [item for item in b if fn(item) not in _a]))
 ```
 
-```python
+```pythonthon
 from math import floor
 
 union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
@@ -2570,12 +2570,12 @@ union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
 
 * Create a `set` from the list to discard duplicated values, then return a `list` from it.
 
-```python
+```pythonthon
 def unique_elements(li):
   return list(set(li))
 ```
 
-```python
+```pythonthon
 unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
 ```
 
@@ -2584,12 +2584,12 @@ unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
 * Use `dict.values()` to return the values in the given dictionary.
 * Return a `list()` of the previous result.
 
-```python
+```pythonthon
 def values_only(flat_dict):
   return list(flat_dict.values())
 ```
 
-```python
+```pythonthon
 ages = {
   'Peter': 10,
   'Isabel': 11,
@@ -2603,12 +2603,12 @@ values_only(ages) # [10, 11, 9]
 * Use `sum()` to sum the products of the numbers by their weight and to sum the weights.
 * Use `zip()` and a list comprehension to iterate over the pairs of values and weights.
 
-```python
+```pythonthon
 def weighted_average(nums, weights):
   return sum(x * y for x, y in zip(nums, weights)) / sum(weights)
 ```
 
-```python
+```pythonthon
 weighted_average([1, 2, 3], [0.6, 0.2, 0.3]) # 1.72727
 ```
 
@@ -2616,12 +2616,12 @@ weighted_average([1, 2, 3], [0.6, 0.2, 0.3]) # 1.72727
 
 * Check if the value of `predicate(x)` is `True` and if so return `when_true(x)`, otherwise return `x`.
 
-```python
+```pythonthon
 def when(predicate, when_true):
   return lambda x: when_true(x) if predicate(x) else x
 ```
 
-```python
+```pythonthon
 double_even_numbers = when(lambda x: x % 2 == 0, lambda x : x * 2)
 double_even_numbers(2) # 4
 double_even_numbers(1) # 1
@@ -2632,14 +2632,14 @@ double_even_numbers(1) # 1
 * Use `re.findall()` with the supplied `pattern` to find all matching substrings.
 * Omit the second argument to use the default regexp, which matches alphanumeric and hyphens.
 
-```python
+```pythonthon
 import re
 
 def words(s, pattern = '[a-zA-Z-]+'):
   return re.findall(pattern, s)
 ```
 
-```python
+```pythonthon
 words('I love Python!!') # ['I', 'love', 'Python']
 words('python, javaScript & coffee') # ['python', 'javaScript', 'coffee']
 words('build -q --out one-item', r'\b[a-zA-Z-]+\b')

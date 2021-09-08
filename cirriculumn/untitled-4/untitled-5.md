@@ -41,7 +41,7 @@ Notice that we don't actually "visit" a node until we've already gone to the lef
 
 Here is one possible way to code a depth-first inorder traversal in Python:
 
-```py
+```python
 class TreeNode:
      def __init__(self, val=0, left=None, right=None):
          self.val = val
@@ -75,7 +75,7 @@ Below is the visualization for how this would type of traversal would look.
 
 Here is one possible way to code a depth-first preorder traversal in Python:
 
-```py
+```python
 class TreeNode:
      def __init__(self, val=0, left=None, right=None):
          self.val = val
@@ -111,7 +111,7 @@ Below is the visualization for how this would type of traversal would look.
 
 Here is one possible way to code a depth-first postorder traversal in Python:
 
-```py
+```python
 class TreeNode:
      def __init__(self, val=0, left=None, right=None):
          self.val = val
@@ -147,7 +147,7 @@ Below is a visualization for a breadth-first traversal.
 
 Here is one way that you could code a breadth-first \(level order\) traversal in Python:
 
-```py
+```python
 class TreeNode:
      def __init__(self, val=0, left=None, right=None):
          self.val = val

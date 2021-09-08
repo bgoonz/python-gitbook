@@ -94,7 +94,7 @@ Notice that the last element or node in the linked list does not have a pointer 
 
 What does a singly linked list implementation look like in Python? Let's start by writing a `LinkedListNode` class for each element in the linked list.
 
-```py
+```python
 class LinkedListNode:
     def __init__(self, data=None, next=None):
         self.data = data
@@ -103,7 +103,7 @@ class LinkedListNode:
 
 Now, we need to build out the class for the `LinkedList` itself:
 
-```py
+```python
 class LinkedList:
     def __init__(self, head=None):  
         self.head = head
@@ -111,7 +111,7 @@ class LinkedList:
 
 Our class is super simple so far and only includes an initialization method. Let's add an `append` method so that we can add nodes to the end of our list:
 
-```py
+```python
 class LinkedList:
     def __init__(self, head=None):  
         self.head = head
@@ -132,7 +132,7 @@ class LinkedList:
 
 Now, let's use our simple class definitions for `LinkedListNode` and `LinkedList` to create a linked list of elements `1`, `2`, and `3`.
 
-```py
+```python
 >>> a = LinkedListNode(1)
 >>> my_ll = LinkedList(a)
 >>> my_ll.append(2)
