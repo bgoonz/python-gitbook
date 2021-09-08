@@ -153,7 +153,7 @@ Let's start by executing the print function to print different types of objects 
 
 Using `print` with no arguments:
 
-```text
+```python
 >>> print()
 
 >>>
@@ -163,7 +163,7 @@ Notice the empty line after calling the `print` function. The default `end` valu
 
 Using `print` with a string literal:
 
-```text
+```python
 >>> print("School is awesome!")
 School is awesome!
 >>>
@@ -173,7 +173,7 @@ Notice how calling `print` with the string literal printed the exact string we p
 
 Using `print` with a variable:
 
-```text
+```python
 >>> slogan = "i love lamp"
 >>> print(slogan)
 i love lamp
@@ -184,139 +184,7 @@ Notice how calling `print` with the `slogan` variable prints the value assigned 
 
 Using `print` with an expression:
 
-```text
->>> superlative = "wonderful"
->>> school = "Lambda School"
->>> print(school + " is " + superlative)
-Lambda School is wonderful
->>>
-```
-
-Notice how the argument for the `print` function can be an expression. Once the expression is resolved to a string object, the `print` function can output it to the screen.
-
-Using `print` with other object types:
-
-```text
-print(2020)
-2020
->>> print(123.456)
-123.456
->>> print(False)
-False
->>> print(["Lambda", "School", 2, 0, 2, 0])
-['Lambda', 'School', 2, 0, 2, 0]
->>> print(("Lambda", "School"))
-('Lambda', 'School')
->>> print({"school": "Lambda School", "year": 2020})
-{'school': 'Lambda School', 'year': 2020}
->>>
-```
-
-Any object passed as an argument into `print` will get converted into a string type before outputted to the screen.
-
-You can see how the `print` function is easy to use and how it can handle any object type that you pass into it.
-
-#### Passing multiple arguments into `print` <a id="passing-multiple-arguments-into-print"></a>
-
-Now, let's look at how we can pass multiple arguments into the `print` function. Using `print` with multiple arguments gives you a flexible and easy way to output items to the screen.
-
-We can pass multiple objects, all of the same or different types, into `print`.
-
-```text
->>> print("Lambda School", 2020, True)
-Lambda School 2020 True
->>>
-```
-
-Notice how each object we passed in was converted to a string and then output to the screen. Notice also that `print` used `" "` as the default separator value.
-
-We can change the separator value by assigning a value to the keyword argument `sep`.
-
-```text
->>> print("Lambda School", 2020, True, sep="!!!")
-Lambda School!!!2020!!!True
->>> print("Lambda School", 2020, True, sep="\t")
-Lambda School   2020    True
->>> print("Lambda School", 2020, True, sep="\n")
-Lambda School
-2020
-True
->>> print("Lambda School", 2020, True, sep="")
-Lambda School2020True
->>>
-```
-
-#### Specifying the `end` value with `print` <a id="specifying-the-end-value-with-print"></a>
-
-You can also specify the `end` value by assigning a value to the `end` keyword argument when you call the `print` function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.
-
-Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
-
-```text
->>> print("Are you a Lambda School student?", end=" (Y or N)")
-Are you a Lambda School student? (Y or N)>>>
-```
-
-Customizing the `end` value when calling the `print` function can be useful and necessary in some circumstances.
-
-You have now learned the basics of using the `print` function in Python. You learned how to call the `print` function to print objects of different types. You now know how to use `print` with multiple positional arguments. In certain necessary situations, you also know how to change the default `end` value when calling the `print` function.
-
-Now, get some practice using the `print` function by completing the challenge below.
-
-
-
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
-
-
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29.png)
-
-## Objective 04 - Use a print statement
-
-### Overview <a id="overview"></a>
-
-Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
-
-### Follow Along <a id="follow-along"></a>
-
-#### Using `print` with different objects <a id="using-print-with-different-objects"></a>
-
-Let's start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the `print` function.
-
-Using `print` with no arguments:
-
-```text
->>> print()
-
->>>
-```
-
-Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character `\n`.
-
-Using `print` with a string literal:
-
-```text
->>> print("Lambda School is awesome!")
-Lambda School is awesome!
->>>
-```
-
-Notice how calling `print` with the string literal printed the exact string we passed in onto the screen.
-
-Using `print` with a variable:
-
-```text
->>> slogan = "i love lamp"
->>> print(slogan)
-i love lamp
->>>
-```
-
-Notice how calling `print` with the `slogan` variable prints the value assigned to the `slogan` variable.
-
-Using `print` with an expression:
-
-```text
+```python
 >>> superlative = "wonderful"
 >>> school = "Lambda School"
 >>> print(school + " is " + superlative)
@@ -354,7 +222,7 @@ Now, let's look at how we can pass multiple arguments into the `print` function.
 
 We can pass multiple objects, all of the same or different types, into `print`.
 
-```text
+```python
 >>> print("Lambda School", 2020, True)
 Lambda School 2020 True
 >>>
@@ -364,7 +232,7 @@ Notice how each object we passed in was converted to a string and then output to
 
 We can change the separator value by assigning a value to the keyword argument `sep`.
 
-```text
+```python
 >>> print("Lambda School", 2020, True, sep="!!!")
 Lambda School!!!2020!!!True
 >>> print("Lambda School", 2020, True, sep="\t")
@@ -384,7 +252,7 @@ You can also specify the `end` value by assigning a value to the `end` keyword a
 
 Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
 
-```text
+```python
 >>> print("Are you a Lambda School student?", end=" (Y or N)")
 Are you a Lambda School student? (Y or N)>>>
 ```
@@ -395,13 +263,9 @@ You have now learned the basics of using the `print` function in Python. You lea
 
 Now, get some practice using the `print` function by completing the challenge below.
 
-### Challenge <a id="challenge"></a>
-
-### Additional Resources <a id="additional-resources"></a>
-
-* [https://www.w3schools.com/python/ref\_func\_print.asp](https://www.w3schools.com/python/ref_func_print.asp)
 
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
 
 ![](../../../.gitbook/assets/image%20%284%29.png)
 
