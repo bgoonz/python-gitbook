@@ -40,7 +40,7 @@ Below is a partially filled out hash table class where we will be using `HashTab
 
 Take a look at the code below.
 
-```pythonthon
+```python
 class HashTableEntry:
     """
     Hash table key/value pair to go in our collision chain
@@ -138,7 +138,7 @@ Let's implement the `put` method with collision resolution by chaining. What are
 
 Ok, that might sound confusing. Let's start breaking it down into code.
 
-```pythonthon
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -150,7 +150,7 @@ Ok, that might sound confusing. Let's start breaking it down into code.
 
 First, we need to hash the key and start with the first entry at that index.
 
-```pythonthon
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -167,7 +167,7 @@ Next, we need to go through the chain. We need to check two conditions:
 1. The current entry is not empty.
 2. The key or the current entry is not equal to the key we are passing in.
 
-```pythonthon
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -193,7 +193,7 @@ Sweet! Now we need to check what happens when the loop breaks. It would only bre
 
 Let's write that in code!
 
-```pythonthon
+```python
     def put(self, key, value):
         """
         Store the value with the given key.
@@ -252,7 +252,7 @@ One way to know when to resize your hash table is to compute the load factor whe
 
 We added a `get_load_factor` and `resize` method to calculate the load factor and resize the hash table with a new capacity when necessary.
 
-```pythonthon
+```python
 class HashTableEntry:
     """
     Linked List hash table key/value pair
@@ -384,7 +384,7 @@ class HashTable:
 
 Let's change our `put` method to resize when the load factor gets too high. Here's how our current `put` method looks:
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -408,7 +408,7 @@ def put(self, key, value):
 
 To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let's go ahead and add that.
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -434,7 +434,7 @@ def put(self, key, value):
 
 Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -491,7 +491,7 @@ One way to know when to resize your hash table is to compute the load factor whe
 
 We added a `get_load_factor` and `resize` method to calculate the load factor and resize the hash table with a new capacity when necessary.
 
-```pythonthon
+```python
 class HashTableEntry:
     """
     Linked List hash table key/value pair
@@ -623,7 +623,7 @@ class HashTable:
 
 Let's change our `put` method to resize when the load factor gets too high. Here's how our current `put` method looks:
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -647,7 +647,7 @@ def put(self, key, value):
 
 To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let's go ahead and add that.
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.
@@ -673,7 +673,7 @@ def put(self, key, value):
 
 Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.
 
-```pythonthon
+```python
 def put(self, key, value):
     """
     Store the value with the given key.

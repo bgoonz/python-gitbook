@@ -38,7 +38,7 @@ def fact\(n\): if n \== 0: return 1 else: return n \* fact\(n-1\)
 
 print\(fact\(2000\)\)
 
-```pythonthon
+```python
 """Implement a function recursively to get the desired
 Fibonacci sequence value.
 Your code should have the same input/output as the

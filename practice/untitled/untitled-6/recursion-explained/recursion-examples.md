@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="explained" %}
-```pythonthon
+```python
 from typing import List, Optional, Sequence
 
 
@@ -123,7 +123,7 @@ def deep_recursion():
 {% endtab %}
 
 {% tab title="1" %}
-```pythonthon
+```python
 from typing import List, Optional, Sequence
 
 
@@ -244,7 +244,7 @@ def deep_recursion():
 {% endtab %}
 
 {% tab title="factorial" %}
-```pythonthon
+```python
 #recursions example-2
 def factorial(n):
     print("Factoriaal called with " + str(n))
@@ -269,7 +269,7 @@ factorial(4)
 {% endtab %}
 
 {% tab title="3" %}
-```pythonthon
+```python
 from collections.abc import MutableSequence
 
 from src.typehints import T

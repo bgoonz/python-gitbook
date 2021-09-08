@@ -38,7 +38,7 @@ The standard packaging tools are all designed to be used from the command line.
 
 The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
 
-```python
+```text
 python -m pip install SomePackage
 ```
 
@@ -50,14 +50,14 @@ For Windows users, the examples in this guide assume that the option to adjust t
 
 It’s also possible to specify an exact or minimum version directly on the command line. When using comparator operators such as `>`, `<` or some other special character which get interpreted by shell, the package name and the version should be enclosed within double quotes:
 
-```python
+```text
 python -m pip install SomePackage==1.0.4    # specific version
 python -m pip install "SomePackage>=1.0.4"  # minimum version
 ```
 
 Normally, if a suitable module is already installed, attempting to install it again will have no effect. Upgrading existing modules must be requested explicitly:
 
-```python
+```text
 python -m pip install --upgrade SomePackage
 ```
 
@@ -97,7 +97,7 @@ See also
 
 On Linux, Mac OS X, and other POSIX systems, use the versioned Python commands in combination with the `-m` switch to run the appropriate copy of `pip`:
 
-```python
+```text
 python2   -m pip install SomePackage  # default Python 2
 python2.7 -m pip install SomePackage  # specifically Python 2.7
 python3   -m pip install SomePackage  # default Python 3
@@ -108,7 +108,7 @@ Appropriately versioned `pip` commands may also be available.
 
 On Windows, use the `py` Python launcher in combination with the `-m` switch:
 
-```python
+```text
 py -2   -m pip install SomePackage  # default Python 2
 py -2.7 -m pip install SomePackage  # specifically Python 2.7
 py -3   -m pip install SomePackage  # default Python 3
@@ -127,7 +127,7 @@ On such systems, it is often better to use a virtual environment or a per-user i
 
 It is possible that `pip` does not get installed by default. One potential fix is:
 
-```python
+```text
 python -m ensurepip --default-pip
 ```
 

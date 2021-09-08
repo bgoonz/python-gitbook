@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="ll.py" %}
-```pythonthon
+```python
 # -*- coding: utf-8 -*-
 """Copy of Linked Lists.ipynb
 
@@ -301,7 +301,7 @@ class HashTable:
 {% endtab %}
 
 {% tab title="Second Tab" %}
-```pythonthon
+```python
 
 ```
 {% endtab %}

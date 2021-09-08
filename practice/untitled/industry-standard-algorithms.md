@@ -6,7 +6,7 @@
 
 ## Reverse String:
 
-```pythonthon
+```python
 def reverse(lines):
     return "Reverse order: " + lines[::-1] + "\n" + "Normal Order: " + lines
 print(reverse("I am printing a sentence in reverse order"))
@@ -19,7 +19,7 @@ print(reverse("printing strings in reverse order using python"))
 
 
 
-```pythonthon
+```python
 def get_fib(position):
 
     output = 0

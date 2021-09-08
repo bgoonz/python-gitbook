@@ -60,7 +60,7 @@ We can track that by adding neighbors to a _queue_ \(which remember is first in,
 
 Let's explore some pseudo-code that shows a basic implementation of a breadth-first-search of a graph. Make sure you can read the pseudo-code and understand what each line is doing before moving on.
 
-```python
+```text
 BFS(graph, startVert):
     for v of graph.vertexes:
         v.color = white
@@ -103,7 +103,7 @@ On your own, complete the following tasks:
 1. Please spend a few minutes researching to find a unique use-case of a breadth-first-search that we did not mention in the list above.
 2. Using the graph represented below, draw a picture of the graph and label each of the verts to show the correct vertex visitation order for a breadth-first-search starting with vertex `"I"`.
 
-   ```python
+   ```text
    class Graph:
        def __init__(self):
            self.vertices = {
@@ -178,7 +178,7 @@ Looking at it with pseudo-code to make the recursion more clear:
 
 
 
-```pythonthon
+```python
 explore(graph) {
     visit(this_vert);
     explore(remaining_graph);
@@ -191,7 +191,7 @@ explore(graph) {
 
 Let's explore some pseudo-code that shows a basic implementation of a depth-first-search of a graph. Make sure you can read the pseudo-code and understand what each line is doing before moving on.
 
-```pythonthon
+```python
 DFS(graph):
     for v of graph.verts:
         v.color = white
@@ -229,7 +229,7 @@ On your own, complete the following tasks:
 
 
 
-```pythonthon
+```python
 class Graph:
     def __init__(self):
         self.vertices = {
@@ -272,7 +272,7 @@ Now that we've looked at and understand the basics of a breadth-first search \(B
 
 Before defining our breadth-first search method, review our `Vertex` and `Graph` classes that we defined previously.
 
-```pythonthon
+```python
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -294,7 +294,7 @@ class Vertex:
         return self.connections[vert]
 ```
 
-```pythonthon
+```python
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -325,7 +325,7 @@ class Graph:
 
 Now, we will add a `breadth_first_search` method to our `Graph` class. One of the most common and simplest ways to implement a BFS is to use a queue to keep track of unvisited nodes and a set to keep track of visited nodes. Let's start by defining the start of our function with these structures:
 
-```pythonthon
+```python
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -393,7 +393,7 @@ The depth-first search algorithm on a graph starts at an arbitrary vertex in the
 
 Before defining our depth-first search method, review our `Vertex` and `Graph` classes that we defined previously.
 
-```pythonthon
+```python
 class Vertex:
     def __init__(self, value):
         self.value = value
@@ -415,7 +415,7 @@ class Vertex:
         return self.connections[vert]
 ```
 
-```pythonthon
+```python
 class Graph:
     def __init__(self):
         self.vertices = {}
@@ -446,7 +446,7 @@ class Graph:
 
 Now, we will add a `depth_first_search` method to our `Graph` class. One of the most common and simplest ways to implement a DFS is to use a set to keep track of visited vertices and use recursion to manage the visitation order. Let's now define our function:
 
-```pythonthon
+```python
 class Graph:
     def __init__(self):
         self.vertices = {}

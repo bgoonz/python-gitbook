@@ -1,6 +1,6 @@
 # Binary Search
 
-```pythonthon
+```python
 # Uses python3
 import random
 """You're going to write a binary search function.
@@ -79,7 +79,7 @@ stress_test(100, 100000)
 
 ```
 
-```pythonthon
+```python
 # given array a and need to find value x
 # left and right correspond to initial indices of array a bounding the search
 # segment of array a above and below, respectively
@@ -112,7 +112,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
 
 ### Binary Search Recursive:
 
-```pythonthon
+```python
 def binarySearch(arr, searchValue):
     low = 0
     high = len(arr) - 1
@@ -140,7 +140,7 @@ def binarySearchRec(arr, search_value):
 
 
 
-```pythonthon
+```python
 """
 Given an array where elements are sorted in ascending order,
 convert it to a height balanced BST.
@@ -165,7 +165,7 @@ def array_to_bst(nums):
 
 ```
 
-```pythonthon
+```python
 """
 Implement Binary Search Tree. It has method:
     1. Insert
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 
 ## Delete Node
 
-```pythonthon
+```python
 """
 Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
 
@@ -395,7 +395,7 @@ Another:
 
 
 
-```pythonthon
+```python
 def binary_search(arr, x):
     start= 0
     end = len(arr) - 1

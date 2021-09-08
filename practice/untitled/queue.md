@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="Implementation " %}
-```pythonthon
+```python
 """Make a Queue class using a list!
 Hint: You can use any Python list method
 you'd like! Try to write each one in as
@@ -65,7 +65,7 @@ print q.peek()
 {% endtab %}
 {% endtabs %}
 
-```pythonthon
+```python
 """Make a Queue class using a list!
 Hint: You can use any Python list method
 you'd like! Try to write each one in as

@@ -4,6 +4,10 @@ description: Searching & Recursion
 
 # D4- Module 04 - Searching and Recursion
 
+{% page-ref page="../../practice/untitled/untitled-6/recursion-explained/" %}
+
+{% page-ref page="../../practice/untitled/untitled-6/recursion-explained/recursion-examples.md" %}
+
 
 
 ## Objective 01 - Understand logarithms and recall the common cases where they come up in technical interviews
@@ -12,7 +16,7 @@ description: Searching & Recursion
 
 #### What is a logarithm? <a id="what-is-a-logarithm"></a>
 
-Logarithms are a way of looking differently at exponentials. I know that this is a bit of a vague definition, so let's look at an example.
+Logarithms are a way of looking differently at exponentials. I know that this is a bit of a vague definition, so let's look at an example:
 
 ![2^5](https://i.upmath.me/svg/2%5E5)
 

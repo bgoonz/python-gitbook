@@ -10,7 +10,7 @@ Python, however, uses whitespace and indentation to construct the code structure
 
 The following shows a snippet of Python code:
 
-```python
+```text
 # define main function to print out something
 def main():
     i = 1
@@ -41,7 +41,7 @@ When the Python interpreter executes the code, it ignores the comments.
 
 In Python, a single line comment begins with a hash \(\#\) symbol followed by the comment. For example:
 
-```python
+```text
 # This is a single line comment in PythonCode language: Python (python)
 ```
 
@@ -55,7 +55,7 @@ However, a long statement can span multiple lines by using the backslash \(`\`\)
 
 The following example illustrates how to use the backslash \(`\`\) character to continue a statement in the second line:
 
-```python
+```text
 if (a == True) and (b == False) and \
    (c == True):
     print("Continuation of statements")Code language: Python (python)
@@ -77,7 +77,7 @@ Some words have special meanings in Python. They are called keywords.
 
 The following shows the list of keywords in Python:
 
-```python
+```text
 False      class      finally    is         return
 None       continue   for        lambda     try
 True       def        from       nonlocal   while
@@ -93,7 +93,7 @@ Python provides a special module for listing its keywords called `keyword`_._
 
 To find the current keyword list, you use the following code:
 
-```python
+```text
 import keyword
 
 print(keyword.kwlist) Code language: Python (python)
@@ -107,7 +107,7 @@ The string literal need to be sourounding with the same type of quotes. For eamp
 
 The following shows some examples of string literals:
 
-```python
+```text
 s = 'This is a string'
 print(s)
 s = "Another string using double quotes"

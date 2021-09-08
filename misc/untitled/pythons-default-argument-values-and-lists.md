@@ -2,7 +2,7 @@
 
 Have you ever written a function that used a list for a default argument value, only to have weird things happen?
 
-```pythonthon
+```python
 def foo(a=[]):
     # ... do something with `a` here ...
     return a
@@ -16,7 +16,7 @@ Check out these two pieces of identical code, one in Python and one in JS.
 
 The code is supposed to append `1` to whatever array you pass in. And return it. And if you don't pass an array, it sets the array to empty by default:
 
-```pythonthon
+```python
 def foo(a=[]):   # BAD
     a.append(1)
     return a
@@ -33,7 +33,7 @@ print(z)
 
 and JS:
 
-```pythonthon
+```python
 function foo(a=[]) {
     a.push(1);
     return a;
@@ -51,7 +51,7 @@ console.log(z);
 
 If I run them, look at the output of the JS, which is as-expected:
 
-```pythonthon
+```python
 $ node default.js
 [ 1 ]
 [ 1 ]
@@ -60,7 +60,7 @@ $ node default.js
 
 and look at the output of Python, which is not expected!
 
-```pythonthon
+```python
 $ python default.py
 [1]
 [1, 1]
@@ -77,7 +77,7 @@ Python creates the default empty `[]` _when the function is loaded_. So it gets 
 
 Indeed, if you run this in Python:
 
-```pythonthon
+```python
 foo() is foo()
 ```
 
@@ -85,7 +85,7 @@ You'll get `True`, since the same list is being returned.
 
 The fix is to use `None` as a substitute, and then take special action to create a new list on the spot.
 
-```pythonthon
+```python
     if a is None:
         a = []   # Make a new list right now, every time the function is called with no args
     a.append(1)
@@ -107,7 +107,7 @@ y is z  # False, they're different lists, like we wanted
 
 And then we get good output:
 
-```pythonthon
+```python
 $ python3 default_good.py
 [1]
 [1]
@@ -116,7 +116,7 @@ $ python3 default_good.py
 
 Now, if we had a function that used an _immutable_ value as a default argument, we have no problem even though the same process is happening.
 
-```python
+```text
 def foo(a="hello!"):
     return a
 ```

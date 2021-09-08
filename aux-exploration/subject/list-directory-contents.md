@@ -1,6 +1,6 @@
 # List Directory Contents
 
-```pythonthon
+```python
 import os
 
 get_directory = input("Enter path : ")

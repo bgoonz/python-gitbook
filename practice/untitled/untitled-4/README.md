@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="Implementation " %}
-```pythonthon
+```python
 """The LinkedList code from before is provided below.
 Add three functions to the LinkedList.
 "get_position" returns the element at a certain position.
@@ -120,7 +120,7 @@ print ll.get_position(3).value
 {% endtab %}
 
 {% tab title="Advanced" %}
-```pythonthon
+```python
 from __future__ import annotations
 
 from collections.abc import Iterable, Iterator
@@ -357,7 +357,7 @@ A linked list is similar to an array, it holds values. However, links in a linke
 
      Delete operation is more efficient
 
-```pythonthon
+```python
 """Each ListNode holds a reference to its previous node
 as well as its next node in the List."""
 class ListNode:
@@ -435,7 +435,7 @@ class DoublyLinkedList:
 
 Test:
 
-```pythonthon
+```python
 import unittest
 from doubly_linked_list import ListNode
 from doubly_linked_list import DoublyLinkedList

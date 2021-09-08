@@ -1,6 +1,6 @@
 # Queue Sandbox
 
-```pythonthon
+```python
 # -*- coding: utf-8 -*-
 """qandstack.ipynb
 

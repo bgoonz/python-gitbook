@@ -9,14 +9,14 @@ This code is the very beginning of an employee management system for a company. 
 
 #### Running the tests
 
-```python
+```text
 python -m unittests tests
 
 ```
 
 
 
-```pythonthon
+```python
 class Employee(object):
     def __init__(self, first_name, last_name, job):
         self.first_name = first_name
@@ -58,7 +58,7 @@ def sort_employees_by_salary(employee_list):
 
 {% file src="../../.gitbook/assets/employees.py" caption="employees.py" %}
 
-```pythonthon
+```python
 from unittest import TestCase
 
 from employees import Employee, Job, sort_employees_by_salary
