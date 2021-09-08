@@ -24,7 +24,7 @@ This analogy breaks down somewhat when it comes to _how_ the information is orga
 
 Dictionaries are one of the most important and frequently used data structures in computer science. So, how does Python handle dictionaries? Let’s take a tour of the dictionary implementations available in core Python and the Python standard library.
 
-```text
+```python
 ### `dict`: Your Go-To Dictionary[](https://realpython.com/python-data-structures/#dict-your-go-to-dictionary "Permanent link")
 
 Because dictionaries are so important, Python features a robust dictionary implementation that’s built directly into the core language: the [`dict`](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) data type.
@@ -52,22 +52,30 @@ Python also provides some useful **syntactic sugar** for working with dictionari
  squares
 {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}` 
 
+
+```
+
+#### \`\`
+
 There are some restrictions on which objects can be used as valid keys.
 
-Python’s dictionaries are indexed by keys that can be of any [hashable](https://docs.python.org/3/glossary.html#term-hashable) type. A **hashable** object has a hash value that never changes during its lifetime (see `__hash__`), and it can be compared to other objects (see `__eq__`). Hashable objects that compare as equal must have the same hash value.
+Python’s dictionaries are indexed by keys that can be of any [hashable](https://docs.python.org/3/glossary.html#term-hashable) type. A **hashable** object has a hash value that never changes during its lifetime \(see `__hash__`\), and it can be compared to other objects \(see `__eq__`\). Hashable objects that compare as equal must have the same hash value.
 
 [**Immutable** types](https://realpython.com/courses/immutability-python/) like [strings](https://realpython.com/python-strings/) and [numbers](https://realpython.com/python-data-types/) are hashable and work well as dictionary keys. You can also use [`tuple` objects](https://realpython.com/python-lists-tuples/#python-tuples) as dictionary keys as long as they contain only hashable types themselves.
 
 For most use cases, Python’s built-in dictionary implementation will do everything you need. Dictionaries are highly optimized and underlie many parts of the language. For example, [class attributes](https://realpython.com/python-scope-legb-rule/#class-and-instance-attributes-scope) and variables in a [stack frame](https://en.wikipedia.org/wiki/Call_stack#Structure) are both stored internally in dictionaries.
 
-Python dictionaries are based on a well-tested and finely tuned hash table implementation that provides the performance characteristics you’d expect: _O_(1) time complexity for lookup, insert, update, and delete operations in the average case.
+Python dictionaries are based on a well-tested and finely tuned hash table implementation that provides the performance characteristics you’d expect: _O_\(1\) time complexity for lookup, insert, update, and delete operations in the average case.
 
 There’s little reason not to use the standard `dict` implementation included with Python. However, specialized third-party dictionary implementations exist, such as [skip lists](https://en.wikipedia.org/wiki/Skip_list) or [B-tree–based](https://en.wikipedia.org/wiki/B-tree) dictionaries.
 
-Besides plain `dict` objects, Python’s standard library also includes a number of specialized dictionary implementations. These specialized dictionaries are all based on the built-in dictionary class (and share its performance characteristics) but also include some additional convenience features.
+Besides plain `dict` objects, Python’s standard library also includes a number of specialized dictionary implementations. These specialized dictionaries are all based on the built-in dictionary class \(and share its performance characteristics\) but also include some additional convenience features.
 
 Let’s take a look at them.
-```
+
+\`\`
+
+#### \`\`
 
 #### `collections.OrderedDict`: Remember the Insertion Order of Keys
 
@@ -472,7 +480,7 @@ The [`bytearray`](https://docs.python.org/3.1/library/functions.html#bytearray) 
 
 A `bytearray` can be converted back into immutable `bytes` objects, but this involves copying the stored data in full—a slow operation taking _O_\(_n_\) time:
 
-```text
+```python
  arr = bytearray((0, 1, 2, 3))
 
  arr[1]
@@ -1012,7 +1020,7 @@ But be careful: To create an empty set you’ll need to call the `set()` constru
 
 Python and its standard library provide several set implementations. Let’s have a look at them.
 
-```text
+```python
 ### `set`: Your Go-To Set[](https://realpython.com/python-data-structures/#set-your-go-to-set "Permanent link")
 
 The [`set`](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) type is the built-in set implementation in Python. It’s mutable and allows for the dynamic insertion and deletion of elements.
