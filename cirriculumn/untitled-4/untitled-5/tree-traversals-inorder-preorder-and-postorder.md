@@ -1,5 +1,11 @@
 # Tree Traversals \(Inorder, Preorder and Postorder\)
 
+![](../../../.gitbook/assets/image%20%2835%29.png)
+
+![](../../../.gitbook/assets/image%20%2836%29.png)
+
+
+
 Unlike linear data structures \(Array, Linked List, Queues, Stacks, etc\) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees.  
  
 
