@@ -1,7 +1,9 @@
 # Write a Program to Find the Maximum Depth or Height of a Tree
 
 Given a binary tree, find height of it. Height of empty tree is 0 and height of below tree is 2.   
- ![Example Tree](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree122.gif)[Recommended: Please solve it on "**PRACTICE**" first, before moving on to the solution.](https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1)
+ [Recommended: Please solve it on "**PRACTICE**" first, before moving on to the solution.](https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1)
+
+![Example Tree](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree122.gif)
 
 Recursively calculate height of left and right subtrees of a node and assign height to the node as max of the heights of two children plus 1. See below pseudo code and program for details.  
 **Algorithm:** 
