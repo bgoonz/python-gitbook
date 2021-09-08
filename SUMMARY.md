@@ -98,6 +98,7 @@
 ## Python-Docs <a id="stdlib"></a>
 
 * [Docs](stdlib/untitled.md)
+* [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes.md)
