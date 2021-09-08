@@ -116,6 +116,7 @@
 
 ## MISC
 
+* [Unsorted Examples](misc/unsorted-examples.md)
 * [Outline](misc/outline.md)
 * [About Python](misc/untitled/README.md)
   * [Python VS JavaScript](misc/untitled/python-vs-javascript.md)
@@ -127,7 +128,6 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
-  * [Unsorted Examples](interview-prep/interview-resources/unsorted-examples.md)
   * [How to Write an Effective Resume of Python Developer](interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)
