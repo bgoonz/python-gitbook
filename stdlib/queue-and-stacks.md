@@ -1,3 +1,7 @@
+---
+description: queues and stacks
+---
+
 # Queue & Stacks
 
 If you often work with lists in Python, then you probably know that they don’t perform fast enough when you need to **pop** and **append** items on their left end. Python’s [`collections`](https://docs.python.org/3/library/collections.html#module-collections) module provides a class called [`deque`](https://docs.python.org/3/library/collections.html#collections.deque) that’s specially designed to provide fast and memory-efficient ways to append and pop item from both ends of the underlying data structure.
