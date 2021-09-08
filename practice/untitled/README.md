@@ -10,7 +10,7 @@
 
 {% page-ref page="stack.md" %}
 
-{% page-ref page="tree/binary-tree.md" %}
+{% page-ref page="tree/binary-tree/" %}
 
 {% page-ref page="untitled-6/" %}
 
