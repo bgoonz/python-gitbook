@@ -87,6 +87,7 @@
 
 ## quick-reference
 
+* [Python Snippets](quick-reference/python-snippets.md)
 * [Python Module Index:](quick-reference/python-module-index.md)
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
@@ -115,7 +116,6 @@
   * [Misc](misc/untitled/misc.md)
   * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
   * [SCRAP](misc/untitled/untitled.md)
-  * [Python Snippets](misc/untitled/python-snippets.md)
 
 ## Interview Prep
 
