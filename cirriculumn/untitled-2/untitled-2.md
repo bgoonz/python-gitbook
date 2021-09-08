@@ -1,8 +1,8 @@
 # D2- Module 02 - Hash Tables I
 
+{% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
 
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a hash table
 
