@@ -22,7 +22,7 @@ So for this algorithm, we are going to use two for loops, one for traversing thr
 
 Another nested loop is used to compare each element until the last element for each iteration.
 
-```text
+```py
 def selectionSort(List):
     for i in range(len(List) - 1):
         minimum = i
@@ -40,7 +40,7 @@ The time efficiency of selection sort is quadratic, so there are a number of sor
 
 One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, _n_ − 1 in the worst case.
 
-```text
+```py
 Best O(n^2); Average O(n^2); Worst O(n^2)
 ```
 
@@ -50,7 +50,7 @@ Now let’s define the main condition where we define our unordered list which n
 
 So, pass the user-defined lists to function and print the returned sorted list using the print statement.
 
-```text
+```py
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     print('Sorted List:',selectionSort(List))
@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```text
+```py
 
 def selectionSort_Ascending(List):
     for i in range(len(List) - 1):

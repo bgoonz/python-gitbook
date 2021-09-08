@@ -97,7 +97,7 @@ If the collection we are searching through is random and unsorted, linear search
 
 We want to write a simple program to conduct a linear search on a collection of data. Let's write a function that takes a list \(`arr`\) and an integer \(`target`\) as its input and returns the integer `idx` where the target is found. If the `target` does not exist in the `arr`, then the function should return `-1`.
 
-```text
+```py
 def linear_search(arr, target):
     # loop through each item in the input array
     for idx in range(len(arr)):

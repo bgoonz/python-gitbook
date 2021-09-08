@@ -214,7 +214,7 @@ In the implementation that uses a dynamic array \(a list in Python\), the `push`
 
 First we need to define our `Stack` class and define the `__init__` method:
 
-```text
+```py
 class Stack:
     def __init__(self):
         self.data = []
@@ -222,7 +222,7 @@ class Stack:
 
 Now we need to define a `push` method to add an item to the top of our stack:
 
-```text
+```py
 class Stack:
     def __init__(self):
         self.data = []
@@ -233,7 +233,7 @@ class Stack:
 
 Next, we need to define a `pop` method to remove the top item from the stack:
 
-```text
+```py
 class Stack:
     def __init__(self):
         self.data = []
@@ -267,7 +267,7 @@ In the implementation that uses a linked list, the `push` method inserts a new n
 
 First, let's define our `Stack` class and its `__init__` method:
 
-```text
+```py
 class LinkedListNode:
     def __init__(self, data):
         self.data = data
@@ -280,7 +280,7 @@ class Stack:
 
 Now we need to define our `push` method to add items to the top of the stack.
 
-```text
+```py
 class LinkedListNode:
     def __init__(self, data):
         self.data = data
@@ -301,7 +301,7 @@ class Stack:
 
 Next, we need to define our `pop` method to get items off the top of our stack.
 
-```text
+```py
 class LinkedListNode:
     def __init__(self, data):
         self.data = data
