@@ -6,7 +6,7 @@
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
@@ -153,7 +153,7 @@ Draw one graph for each of the descriptions below:
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
@@ -466,7 +466,7 @@ class Graph:
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
@@ -695,7 +695,7 @@ Load the `Vertex` class and `Graph` class into an interactive Python environment
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
@@ -703,7 +703,7 @@ Load the `Vertex` class and `Graph` class into an interactive Python environment
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 

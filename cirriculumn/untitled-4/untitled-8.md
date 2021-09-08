@@ -54,7 +54,7 @@ We can represent the relationship between a perfect binary tree's total number o
 * [https://en.wikipedia.org/wiki/Binary\_tree \(Links to an external site.\)](https://en.wikipedia.org/wiki/Binary_tree)
 * [https://www.geeksforgeeks.org/binary-tree-data-structure/ \(Links to an external site.\)](https://www.geeksforgeeks.org/binary-tree-data-structure/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
@@ -111,7 +111,7 @@ If you want to learn more about trees that automatically rearrange their nodes t
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
 
 
 
