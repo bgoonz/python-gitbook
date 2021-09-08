@@ -10,7 +10,7 @@ description: 'self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/'
 
 ### This Space As A PDF:
 
-
+{% file src=".gitbook/assets/python-space.pdf" caption="This Space PDF" %}
 
 ### Python Practice Files:
 
