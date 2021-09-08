@@ -1,8 +1,12 @@
+---
+description: >-
+  Objective 01 - Recall the different traversal types for a binary tree and
+  implement a function to complete the traversal for each type
+---
+
 # D4
 
 
-
-## Objective 01 - Recall the different traversal types for a binary tree and implement a function to complete the traversal for each type
 
 ### Overview <a id="overview"></a>
 
