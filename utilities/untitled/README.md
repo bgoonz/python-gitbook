@@ -8,9 +8,9 @@
 
 
 
+### Jupyter Notebooks
 
-
-
+{% file src="../../.gitbook/assets/ipynb.zip" %}
 
 {% embed url="https://docs.python.org/3/" %}
 

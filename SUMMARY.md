@@ -46,6 +46,7 @@
 ## practice
 
 * [Supplemental Practice:](practice/supplemental-practice/README.md)
+  * [Random Examples](practice/supplemental-practice/random-examples.md)
   * [Prompts](practice/supplemental-practice/prompts.md)
 * [Abstract Data Structures:](practice/untitled/README.md)
   * [Industry Standard Algorithms](practice/untitled/industry-standard-algorithms.md)
