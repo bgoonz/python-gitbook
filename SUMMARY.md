@@ -41,6 +41,29 @@
   * [YouTube](utilities/untitled/untitled.md)
   * [Code Lab  Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
 
+## practice
+
+* [Supplemental Practice:](practice/supplemental-practice.md)
+* [ADS Implementations:](practice/untitled/README.md)
+  * [Industry Standard Algorithms](practice/untitled/industry-standard-algorithms.md)
+  * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
+  * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
+  * [Array](practice/untitled/array.md)
+  * [Stack](practice/untitled/stack.md)
+  * [Queue](practice/untitled/queue.md)
+  * [Binary Search](practice/untitled/binary-search.md)
+  * [Binary Tree](practice/untitled/binary-tree.md)
+  * [Binary Search Tree](practice/untitled/binary-search-tree/README.md)
+    * [BST Insert](practice/untitled/binary-search-tree/bst-insert.md)
+  * [Recursion](practice/untitled/untitled-6.md)
+  * [Hash Table](practice/untitled/untitled-5.md)
+  * [Linked List](practice/untitled/untitled-4/README.md)
+    * [Double Linked List](practice/untitled/untitled-4/double-linked-list.md)
+  * [Sorting](practice/untitled/untitled-3.md)
+  * [Searching](practice/untitled/untitled-2.md)
+  * [Graphs](practice/untitled/untitled-1.md)
+  * [Exotic](practice/untitled/untitled.md)
+
 ## data-structures
 
 * [Main Categories Of Abstract Data Structures & Algorithms](data-structures/untitled/README.md)
@@ -55,31 +78,10 @@
   * [Untitled](data-structures/untitled/untitled-1.md)
   * [Untitled](data-structures/untitled/untitled.md)
 
-## practice
-
-* [Supplemental Practice:](practice/supplemental-practice.md)
-* [ADS Implementations:](practice/untitled/README.md)
-  * [Interview Practice Resources](practice/untitled/interview-practice-resources.md)
-  * [Overflow Practice Problems](practice/untitled/overflow-practice-problems.md)
-  * [Array](practice/untitled/array.md)
-  * [Stack](practice/untitled/stack.md)
-  * [Queue](practice/untitled/queue.md)
-  * [Binary Search](practice/untitled/binary-search.md)
-  * [Binary Tree](practice/untitled/binary-tree.md)
-  * [Binary Search Tree](practice/untitled/binary-search-tree/README.md)
-    * [BST Insert](practice/untitled/binary-search-tree/bst-insert.md)
-  * [Recursion](practice/untitled/untitled-6.md)
-  * [Hash Table](practice/untitled/untitled-5.md)
-  * [Linked List](practice/untitled/untitled-4.md)
-  * [Sorting](practice/untitled/untitled-3.md)
-  * [Searching](practice/untitled/untitled-2.md)
-  * [Graphs](practice/untitled/untitled-1.md)
-  * [Exotic](practice/untitled/untitled.md)
-
 ## Resources
 
 * [Python VS JavaScript](resources/python-vs-javascript.md)
-* [Untitled](resources/untitled-1.md)
+* [Misc. Resources](resources/untitled-1.md)
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
@@ -96,6 +98,7 @@
 ## Python-Docs <a id="stdlib"></a>
 
 * [Docs](stdlib/untitled.md)
+* [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes.md)

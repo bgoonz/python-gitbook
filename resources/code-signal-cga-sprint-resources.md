@@ -1,5 +1,7 @@
 # Code Signal CGA Sprint Resources
 
+{% embed url="https://replit.com/@bgoonz/DATASTRUCPYTHONNOTES-3\#.replit" %}
+
 
 
 ## CodeSignal GCA Info

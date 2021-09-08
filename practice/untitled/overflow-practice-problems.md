@@ -830,7 +830,7 @@ Sample Input:
 \[1, 2, 3, 4, 5, 6\]  
 Sample Output:
 
-```pythonext
+```text
 4000
 8
 120
@@ -846,7 +846,7 @@ Sample Input:
 \[-2, -3, -1, 1, 2, 3\]  
 Sample Output:
 
-```pythonext
+```text
 4
 3
 8
@@ -861,7 +861,7 @@ Sample Input:
 \(1,100\)  
 Sample Output:
 
-```pythonext
+```text
 [4, 22, 8, 20, 24, 12, 30, 98, 28, 48]
 ```
 
