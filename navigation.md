@@ -1,8 +1,6 @@
 # Navigation
 
 
-### Navigation
-
 **Website Version**
 
 ### Table of contents
