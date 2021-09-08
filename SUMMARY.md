@@ -100,6 +100,7 @@
 
 * [Outline](misc/outline.md)
 * [About Python](misc/untitled/README.md)
+  * [Misc](misc/untitled/misc.md)
   * [Python's Default Argument Values and Lists](misc/untitled/pythons-default-argument-values-and-lists.md)
   * [Untitled](misc/untitled/untitled.md)
   * [Python Snippets](misc/untitled/python-snippets.md)
