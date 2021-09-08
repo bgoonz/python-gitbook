@@ -63,8 +63,6 @@ def combine_sets(set1, set2):
 
 ```
 
-
-
 ```python
 # need strings[i] = strings[j] for all patterns[i] = patterns[j] to be true -
 # give false if strings[i] != strings[j] and patterns[i] = patterns[j] or
@@ -93,10 +91,6 @@ def areFollowingPatterns(strings, patterns):
     return True
 
 ```
-
-
-
-
 
 ```python
 # gives True if two duplicate numbers in the nums array are within k distance
@@ -141,10 +135,3 @@ def containsCloseNums(nums, k):
     return False
 
 ```
-
-
-
-
-
-
-
