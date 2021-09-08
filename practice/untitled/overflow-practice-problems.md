@@ -1,5 +1,7 @@
 # Overflow Practice Problems
 
+{% embed url="https://replit.com/@bgoonz/main-prac-1\#main.py" %}
+
 
 
 * [Python built-in Modules \[ 31 Exercises with Solution \]](https://www.w3resource.com/python-exercises/modules/index.php)
