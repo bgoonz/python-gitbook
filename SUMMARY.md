@@ -58,7 +58,8 @@
   * [Binary Tree](practice/untitled/binary-tree.md)
   * [Binary Search Tree](practice/untitled/binary-search-tree/README.md)
     * [BST Insert](practice/untitled/binary-search-tree/bst-insert.md)
-  * [Recursion](practice/untitled/untitled-6.md)
+  * [Recursion](practice/untitled/untitled-6/README.md)
+    * [Recursion Explained](practice/untitled/untitled-6/recursion-explained.md)
   * [Hash Table](practice/untitled/untitled-5.md)
   * [Linked List](practice/untitled/untitled-4/README.md)
     * [Double Linked List](practice/untitled/untitled-4/double-linked-list.md)
@@ -89,6 +90,7 @@
 
 ## Python-Docs <a id="stdlib"></a>
 
+* [Basic Syntax](stdlib/basic-syntax.md)
 * [Docs](stdlib/untitled.md)
 * [Built In Functions](stdlib/built-in-functions.md)
 * [Lists](stdlib/lists.md)

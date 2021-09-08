@@ -6,7 +6,7 @@
 
 {% page-ref page="binary-tree.md" %}
 
-{% page-ref page="untitled-6.md" %}
+{% page-ref page="untitled-6/" %}
 
 {% page-ref page="untitled-5.md" %}
 
