@@ -163,7 +163,7 @@ You must be able to understand and interact with linked lists. You now know the 
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 

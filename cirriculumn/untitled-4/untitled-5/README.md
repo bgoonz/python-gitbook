@@ -185,7 +185,7 @@ def breadth_first_traversal(root):
 * [https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/ \(Links to an external site.\)](https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/)
 * [https://www.geeksforgeeks.org/level-order-tree-traversal/ \(Links to an external site.\)](https://www.geeksforgeeks.org/level-order-tree-traversal/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -193,7 +193,7 @@ def breadth_first_traversal(root):
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -201,7 +201,7 @@ def breadth_first_traversal(root):
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -209,7 +209,7 @@ def breadth_first_traversal(root):
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -217,7 +217,7 @@ def breadth_first_traversal(root):
 
 
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 

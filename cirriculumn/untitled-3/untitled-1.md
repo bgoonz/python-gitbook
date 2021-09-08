@@ -1477,7 +1477,7 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 ## Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
 
@@ -1681,7 +1681,7 @@ The only two options left at this point are logarithmic and linear. Since the tw
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 

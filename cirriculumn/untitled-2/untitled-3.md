@@ -46,7 +46,7 @@ Draw a model of how a processor interacts with the cache, memory controller, and
 * [https://en.wikipedia.org/wiki/Memory\_controller \(Links to an external site.\)](https://en.wikipedia.org/wiki/Memory_controller)
 * [https://en.wikipedia.org/wiki/CPU\_cache \(Links to an external site.\)](https://en.wikipedia.org/wiki/CPU_cache)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -104,7 +104,7 @@ Convert the following decimal numbers into binary numbers:
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -151,7 +151,7 @@ Storing numbers as fixed-width integers introduces a trade-off. We have constant
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -187,7 +187,7 @@ Let's say you need to store an array of 64-bit integers. Your array needs to hav
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
@@ -257,7 +257,7 @@ Draw out a model of a section of memory that stores the string `"Computer Scienc
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
