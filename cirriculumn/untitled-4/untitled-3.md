@@ -1,5 +1,9 @@
 # D1- Module 01 - Linked Lists
 
+#### Implementation:
+
+{% embed url="https://gist.github.com/bgoonz/10811c10bd2f7650aa7f7a37e2340d5f" %}
+
 
 
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list

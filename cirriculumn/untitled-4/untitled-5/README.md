@@ -6,6 +6,10 @@ description: >-
 
 # D4- Module 04 - Tree Traversal
 
+### Tree Class:
+
+{% embed url="https://gist.github.com/bgoonz/5398aae94a134f93e7bb84252d313d99" %}
+
 
 
 ### Overview <a id="overview"></a>
