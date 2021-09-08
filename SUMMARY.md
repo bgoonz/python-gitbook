@@ -28,9 +28,9 @@
   * [D4](cirriculumn/untitled-4/untitled-5.md)
 * [wk20](cirriculumn/untitled-1/README.md)
   * [Overview](cirriculumn/untitled-1/overview.md)
-  * [D1](cirriculumn/untitled-1/untitled-5.md)
-  * [D2](cirriculumn/untitled-1/untitled-4.md)
-  * [D3](cirriculumn/untitled-1/untitled-1.md)
+  * [D1-Graphs I](cirriculumn/untitled-1/untitled-5.md)
+  * [D2-Graphs 2](cirriculumn/untitled-1/untitled-4.md)
+  * [DFS](cirriculumn/untitled-1/untitled-1.md)
   * [D4](cirriculumn/untitled-1/untitled-2.md)
 
 ## Utilities
