@@ -221,7 +221,74 @@ if __name__ == '__main__':
 
 
 
+### Define Binary Number to Decimal Function
 
+Let’s create a new function to Convert Binary to a Decimal Number named binaryToDecimal\(\) which accepts Binary as an argument.
+
+So let’s store the argument in the separate variables to use that at last while printing what the actual data is.
+
+Along with this, create two new variables “**decimal**” and “**i**” and initialized both to 0.
+
+```text
+    binary1 = binary
+    decimal, i  = 0, 0
+```
+
+Now create a while loop that loops till the number which we received as an argument not become 0.
+
+So the logic behind converting is that first in each iteration, we need to get the last digit of Number either 1 or 0 and then multiply that last digit with the power of 2 and counter i.
+
+_**Read =&gt;**_ [_**Python Program to Calculate LCM of Two Numbers**_](https://codezup.com/python-program-calculate-lcm-numbers/)
+
+And at last, we divide the number by 10 and assign the same number back to binary to reduce it to 0.
+
+```text
+    while(binary != 0):
+        dec = binary % 10
+        decimal = decimal + dec * pow(2, i)
+        binary = binary//10
+        i += 1
+```
+
+Now, simply print the result using the format function in Python.
+
+```text
+    print('Decimal equivalent of {} is {}'.format(binary1, decimal))
+```
+
+#### Define the Main Method
+
+Let’s create the main method which is going to ask for user input for the Binary Number and then pass that number to function that we created above.
+
+```text
+if __name__ == '__main__':
+    userInput = int(input('Enter the binary number to check its decimal equivalent: '))
+    binaryToDecimal(userInput)
+```
+
+**Code**
+
+```text
+
+
+def binaryToDecimal(binary):
+    binary1 = binary
+    decimal, i  = 0, 0
+    while(binary != 0):
+        dec = binary % 10
+        decimal = decimal + dec * pow(2, i)
+        binary = binary//10
+        i += 1
+    print('Decimal equivalent of {} is {}'.format(binary1, decimal))
+
+if __name__ == '__main__':
+    userInput = int(input('Enter the binary number to check its decimal equivalent: '))
+    binaryToDecimal(userInput)
+```
+
+**Output**
+
+![Python Program to convert Binary Number to Decimal Number Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Python-Program-to-convert-Binary-Number-to-Decimal-Number.png?resize=665%2C251&ssl=1)
 
 
 
