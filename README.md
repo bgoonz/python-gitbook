@@ -4,7 +4,7 @@ description: Landing Page
 
 # Home
 
-#### self link: [https://bgoonz42.gitbook.io/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/)
+#### self link: [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
 
 ## The Git Repo For This Website:
 
