@@ -81,6 +81,7 @@
 
 ## quick-reference
 
+* [Python Module Index:](quick-reference/python-module-index.md)
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
 * [index](quick-reference/untitled-1.md)
