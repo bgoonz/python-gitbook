@@ -177,7 +177,7 @@ In an adjacency list, the graph stores a list of vertices. For each vertex, it h
 
 Below is a representation of the graph above in Python:
 
-```text
+```python
 class Graph:
     def __init__(self):
         self.vertices = {
