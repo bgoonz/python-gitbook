@@ -8,6 +8,8 @@ description: Searching & Recursion
 
 {% page-ref page="../../practice/untitled/untitled-6/recursion-explained/recursion-examples.md" %}
 
+{% embed url="https://gist.github.com/bgoonz/f1aa6200c2acad7abb38261c76ef7efa" %}
+
 
 
 ## Objective 01 - Understand logarithms and recall the common cases where they come up in technical interviews
