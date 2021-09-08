@@ -1,4 +1,4 @@
-# D2
+# D2- Module 02 - Python II
 
 {% embed url="https://github.com/wilfredinni/python-cheatsheet" %}
 
