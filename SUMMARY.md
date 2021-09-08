@@ -91,6 +91,7 @@
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
 * [index](quick-reference/untitled-1.md)
+* [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
 
 ## Python-Docs <a id="stdlib"></a>
 
@@ -126,8 +127,4 @@
 ## Installations Setup & Env
 
 * [python-setup](installations-setup-and-env/untitled.md)
-
----
-
-* [List Of Python Cheat Sheets](bash-commands.md)
 
