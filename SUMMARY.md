@@ -115,7 +115,8 @@
 
 * [Python Snippets](quick-reference/python-snippets.md)
 * [Python3 Regex](quick-reference/python3-regex.md)
-* [Python Module Index:](quick-reference/python-module-index.md)
+* [Python Module Index:](quick-reference/python-module-index/README.md)
+  * [Requests Module](quick-reference/python-module-index/requests-module.md)
 * [Creating Python Modules](quick-reference/creating-python-modules.md)
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
