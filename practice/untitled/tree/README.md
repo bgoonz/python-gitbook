@@ -1,5 +1,23 @@
 # Tree
 
+{% page-ref page="in-order-traversal.md" %}
+
+{% page-ref page="tree-equal.md" %}
+
+{% page-ref page="ternary-search-trees.md" %}
+
+{% page-ref page="red\_black-tree.md" %}
+
+{% page-ref page="../../../cirriculumn/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md" %}
+
+{% page-ref page="../set.md" %}
+
+{% page-ref page="binary-tree/" %}
+
+{% page-ref page="binary-search-tree/" %}
+
+{% page-ref page="binary-tree/" %}
+
 
 
 ### Trees in Python
