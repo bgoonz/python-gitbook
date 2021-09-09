@@ -16,7 +16,7 @@
 
 {% page-ref page="untitled-5/" %}
 
-{% page-ref page="untitled-2.md" %}
+{% page-ref page="untitled-2/" %}
 
 {% page-ref page="untitled-3/" %}
 
