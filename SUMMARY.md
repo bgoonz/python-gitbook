@@ -78,6 +78,7 @@
   * [Binary Search](practice/untitled/binary-search.md)
   * [Tree](practice/untitled/tree/README.md)
     * [Tree Equal ?](practice/untitled/tree/tree-equal.md)
+    * [Tree Mirror:](practice/untitled/tree/tree-mirror.md)
     * [Tree Traversal](practice/untitled/tree/tree-traversal.md)
     * [Set](practice/untitled/tree/set.md)
     * [Binary Search Tree](practice/untitled/tree/binary-search-tree/README.md)
