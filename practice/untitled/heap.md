@@ -31,7 +31,7 @@ def _bubble_down(heap, i):
         # Break if heap invariant satisfied
         if heap[i] < heap[child_i]:
             break
-
+        
         # Move the smaller child up.
         heap[i], heap[child_i] = heap[child_i], heap[i]
         i = child_i
@@ -87,3 +87,4 @@ sorted_list = [heappop(heap) for _ in range(200)]
 print(sorted_list == sorted(sorted_list))
 
 ```
+

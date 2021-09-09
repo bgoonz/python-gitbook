@@ -1,7 +1,11 @@
 # Extra-Array
 
-{% tabs %} {% tab title="recur-bin-search.py" %}
 
+
+
+
+{% tabs %}
+{% tab title="recur-bin-search.py" %}
 ```python
 # given array a and need to find value x
 # left and right correspond to initial indices of array a bounding the search
@@ -26,7 +30,6 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
         return binary_search_recursive(a, x, left, right)
 
 ```
-
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -34,7 +37,6 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
 {% endtab %}
 
 {% tab title="Array Change" %}
-
 ```python
 def arrayChange(inputArray):
     count = 0
@@ -46,8 +48,10 @@ def arrayChange(inputArray):
     return count
 
 ```
+{% endtab %}
+{% endtabs %}
 
-{% endtab %} {% endtabs %}
+
 
 ```python
 class Array(object):
@@ -132,19 +136,19 @@ class Array(object):
 
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())      
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())       
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())     
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())       
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())
-    myArray.search(4)
+    print(myArray.items, myArray.myLen())       
+    myArray.search(4)                          
 ```
 
-###
+### 
 
 ### Create Array Class
 
@@ -182,6 +186,10 @@ class Array(object):
             else:
                 print('Elements are more than the size specified')
 ```
+
+
+
+
 
 #### Define Length of Array Function
 
@@ -299,14 +307,17 @@ Then, just use the object to call all the functions one by one.
 ```text
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())      
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())       
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())     
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())
+    print(myArray.items, myArray.myLen())       
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())
-    myArray.search(4)
+    print(myArray.items, myArray.myLen())       
+    myArray.search(4)   
 ```
+
+
+

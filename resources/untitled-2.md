@@ -2,6 +2,8 @@
 
 ![](https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png)
 
+
+
 ## 8. Inheritance
 
 In this chapter we look at a larger example using object oriented programming and learn about the very useful OOP feature of [inheritance](http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29).
@@ -651,3 +653,4 @@ The ability to define a new class that is a modified version of a previously def
 The class from which a child class inherits.child class
 
 A new class created by inheriting from an existing class; also called a subclass.
+

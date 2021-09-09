@@ -1,5 +1,7 @@
 # Binary Search
 
+
+
 #### In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.
 
 1. Compare x with the middle element.
@@ -201,6 +203,12 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
 
 ```
 
+
+
+
+
+
+
 ### Binary Search Recursive:
 
 ```python
@@ -224,6 +232,12 @@ def binarySearchRec(arr, search_value):
         return False
 
 ```
+
+
+
+
+
+
 
 ```python
 """
@@ -478,6 +492,8 @@ class Solution(object):
 
 Another:
 
+
+
 ```python
 def binary_search(arr, x):
     start= 0
@@ -495,11 +511,11 @@ def binary_search(arr, x):
         # if x is present at mid
         else:
             return mid
-
+ 
 
     # when we reach at the end of array, then the element was not present
     return -1
-
+ 
 
 arr = [ ]
 n=int(input("Enter size of array : "))
@@ -514,3 +530,4 @@ if(ans==-1):
 else:
     print("Element found at ",ans)
 ```
+

@@ -49,3 +49,4 @@ In an ideal case, a binary search tree has a similar number of nodes in its righ
 The worst case of a binary search tree is one that has its values added **in numerical order**. This structure then doesn’t resemble a tree - it looks like a linked list! As potentially every node has to be visited when searching, the worst case BST has a run time of `O(n)` for all operations utilizing find.
 
 ![](https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/badbst.png)
+

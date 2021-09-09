@@ -4,8 +4,8 @@ Regex or Regular Expressions are an important part of Python Programming or any 
 
 #### Basic Characters:
 
-| Expression | Explanations |
-| :-- | :-- |
+| Expression  | Explanations |
+| :--- | :--- |
 | **^** | Matches the expression to its right, at the start of a string before it experiences a line break |
 | **$** | Matches the expression to its left, at the end of a string before it experiences a line break |
 | **.** | Matches any character except newline |
@@ -39,15 +39,15 @@ Similarly, in the second example **s$** will search for the character **s** at t
 
 #### Quantifiers:
 
-| Expressions | Explanations                                                   |
-| :---------- | :------------------------------------------------------------- |
-| **+**       | Matches the expression to its left 1 or more times.            |
-| **\***      | Matches the expression to its left 0 or more times.            |
-| **?**       | Matches the expression to its left 0 or 1 times                |
-| **{p}**     | Matches the expression to its left p times, and not less.      |
-| **{p, q}**  | Matches the expression to its left p to q times, and not less. |
-| **{p, }**   | Matches the expression to its left p or more times.            |
-| **{ , q}**  | Matches the expression to its left up to q times               |
+| Expressions | Explanations |
+| :--- | :--- |
+| **+** | Matches the expression to its left 1 or more times. |
+| **\*** | Matches the expression to its left 0 or more times. |
+| **?** | Matches the expression to its left 0 or 1 times |
+| **{p}** | Matches the expression to its left p times, and not less. |
+| **{p, q}** | Matches the expression to its left p to q times, and not less. |
+| **{p, }** | Matches the expression to its left p or more times. |
+| **{ , q}** | Matches the expression to its left up to q times |
 
 Their default searching method is Greedy. But if ? is added to qualifiers \(+, \*, and ? itself\) it will perform matches in a non-greedy manner.
 
@@ -76,15 +76,15 @@ In the second example, **\d{3}** will search for digits exactly 3 times. Since *
 #### Character Classes:
 
 | Expressions | Explanations |
-| :-- | :-- |
-| **\w** | Matches alphanumeric characters, that is a-z, A-Z, 0-9, and underscore\(\_\) |
+| :--- | :--- |
+| **\w**  | Matches alphanumeric characters, that is a-z, A-Z, 0-9, and underscore\(\_\) |
 | **\W** | Matches non-alphanumeric characters, that is except a-z, A-Z, 0-9 and \_ |
 | **\d** | Matches digits, from 0-9. |
-| **\D** | Matches any non-digits. |
+| **\D**  | Matches any non-digits. |
 | **\s** | Matches whitespace characters, which also include the \t, \n, \r, and space characters. |
 | **\S** | Matches non-whitespace characters. |
 | **\A** | Matches the expression to its right at the absolute start of a string whether in single or multi-line mode. |
-| **\Z** | Matches the expression to its left at the absolute end of a string whether in single or multi-line mode. |
+| **\Z**  | Matches the expression to its left at the absolute end of a string whether in single or multi-line mode. |
 | **\n** | Matches a newline character |
 | **\t** | Matches tab character |
 | **\b** | Matches the word boundary \(or empty string\) at the start and end of a word. |
@@ -115,16 +115,16 @@ In the second example, **\D+\d\*** will search for one or more non-digits charac
 #### Sets:
 
 | Expressions | Explanations |
-| :-- | :-- |
-| **\[abc\]** | Matches either a, b, or c. It does not match abc. |
+| :--- | :--- |
+| **\[abc\]** |  Matches either a, b, or c. It does not match abc. |
 | **\[a-z\]** | Matches any alphabet from a to z. |
 | **\[A-Z\]** | Matches any alphabets in capital from A to Z |
 | **\[a\-p\]** | Matches a, -, or p. It matches - because \ escapes it. |
 | **\[-z\]** | Matches - or z |
 | **\[a-z0-9\]** | Matches characters from a to z or from 0 to 9. |
-| **\[\(+\*\)\]** | Special characters become literal inside a set, so this matches \(, +, \*, or \) |
-| **\[^ab5\]** | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5. |
-| **\\[a\\]** | Matches \[a\] because both parentheses \[ \] are escaped |
+| **\[\(+\*\)\]**  | Special characters become literal inside a set, so this matches \(, +, \*, or \) |
+| **\[^ab5\]**  | Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5. |
+| **\\[a\\]** | Matches \[a\] because both parentheses \[ \] are escaped  |
 
 **Examples:**Python3
 
@@ -151,12 +151,12 @@ In the second example, **\[a-p\]** will search for the character between a to p.
 #### Groups:
 
 | Expressions | Explanations |
-| :-- | :-- |
+| :--- | :--- |
 | **\( \)** | Matches the expression inside the parentheses and groups it which we can capture as required |
 | **\(?\#...\)** | Read a comment |
 | **\(?PAB\)** | Matches the expression AB, which can be retrieved with the group name. |
 | **\(?:A\)** | Matches the expression as represented by A, but cannot be retrieved afterwards. |
-| **\(?P=group\)** | Matches the expression matched by an earlier group named “group” |
+| **\(?P=group\)** |  Matches the expression matched by an earlier group named “group” |
 
 **Examples:**Python3
 
@@ -183,16 +183,16 @@ print(result.groups())
 
 In the first example, **\(?:AB\)** will search and matches the expression **AB** and will print out the match and its position. Since **ACABC** contains **AB,** it will print the match\('AB'\) and its position\(2,4\) but as stated, this cannot be retrieved afterward. So, if we try to print the group of the output, it will show an empty bracket.
 
-In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In **geeks, best geeks** and **best** are captured as the first and second groups. So, when we print out these groups we will have \('geeks', 'best\) as the groups captured.
+In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In **geeks, best geeks** and **best** are captured as the first and second groups. So, when we print out these groups we will have \('geeks', 'best\) as the groups captured. 
 
 #### Assertions:
 
 | Expression | Explanation |
-| :-- | :-- |
+| :--- | :--- |
 | **A\(?=B\)** | This matches the expression A only if it is followed by B. \(Positive look ahead assertion\) |
 | **A\(?!B\)** | This matches the expression A only if it is not followed by B. \(Negative look ahead assertion\) |
-| **\(?&lt;=B\)A** | This matches the expression A only if B is immediate to its left. \(Positive look behind assertion\) |
-| **\(?&lt;!B\)A** | This matches the expression A only if B is not immediately to its left. \(Negative look behind assertion\) |
+| **\(?&lt;=B\)A** | This matches the expression A only if B is immediate to its left.  \(Positive look behind assertion\) |
+| **\(?&lt;!B\)A**  | This matches the expression A only if B is not immediately to its left. \(Negative look behind assertion\) |
 | **\(?\(\)\|\)** | If else conditional |
 
 **Examples:**Python3
@@ -219,15 +219,15 @@ In the second example, **z\(?!a\)** will search for the character **z** which is
 
 #### Flags:
 
-| Expression | Explanation                                            |
-| :--------- | :----------------------------------------------------- |
-| **a**      | Matches ASCII only                                     |
-| **i**      | Ignore case                                            |
-| **L**      | Locale character classes                               |
-| **m**      | ^ and $ match start and end of the line \(Multi-line\) |
-| **s**      | Matches everything including newline as well           |
-| **u**      | Matches Unicode character classes                      |
-| **x**      | Allow spaces and comments \(Verbose\)                  |
+| Expression | Explanation |
+| :--- | :--- |
+| **a** | Matches ASCII only |
+| **i**  | Ignore case |
+| **L** | Locale character classes |
+| **m** | ^ and $ match start and end of the line \(Multi-line\) |
+| **s** | Matches everything including newline as well |
+| **u** |  Matches Unicode character classes |
+| **x** | Allow spaces and comments \(Verbose\) |
 
 **Examples:**Python3
 
@@ -238,7 +238,7 @@ exp = """hello there
 I am from
 Geeks for Geeks"""
 
-print(re.search(r"and", "Sun And Moon", flags=re.IGNORECASE))
+print(re.search(r"and", "Sun And Moon", flags=re.IGNORECASE)) 
 print(re.findall(r"^\w", exp, flags = re.MULTILINE))
 ```
 
@@ -257,6 +257,12 @@ In the second example, the MULTILINE flag will search in each and every line and
 
 Note: In MULTILINE flag, we have to use re.findall, since it has many matches \(for every line\)
 
+
+
+
+
+
+
 ## What are Regular Expressions? <a id="977d"></a>
 
 Regular Expression is an advanced string searching method that allows users to search for something in a text. This is done by creating a pattern that matches the information that we want to retrieve. Regular Expression has such power that it has been incorporated in many programming languages like Python, Pearl, JavaScript, PHP, and Java.
@@ -266,9 +272,9 @@ So, let’s come back to our problem!
 We can get the users’ phone numbers by first creating a pattern. Observe that the phone numbers are located between the brackets “\( \)”. It’s a useful information and we can use it to our advantage. To access the goodness of Regular Expressions in Python, we will need to **import** the **re library**.
 
 ```text
-import re phone_numbers = []
-pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file:
-    for line in file:
+import re phone_numbers = [] 
+pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file: 
+    for line in file: 
         result = re.search(pattern, line)
         phone_numbers.append(result.group(1))print(phone_numbers)
 ```
@@ -282,13 +288,13 @@ The Output:
 I will go through this code one by one:
 
 1. import re — Importing the Regular Expressions library in Python.
-2. phone_numbers = \[\] — Preparing a list to store the phone numbers.
+2. phone\_numbers = \[\] — Preparing a list to store the phone numbers.
 3. pattern = r”\\(\(\[\d\-+\]+\)\\)” — The pattern that we use to locate the phone number, we will go through what each symbols do later in this article!
 4. with open\(“log.txt”, “r”\) as file: — Opening the file that we want to process.
 5. for line in file: — Iterating\(going through\) each line in the log.txt.
 6. result = re.search\(pattern, line\) — Searching for the phone number in the line
-7. phone_numbers.append\(result.group\(1\)\) — Adding the customer’s phone number into the phone numbers list
-8. print\(phone_numbers\) — Printing the list of phone numbers.
+7. phone\_numbers.append\(result.group\(1\)\) — Adding the customer’s phone number into the phone numbers list
+8. print\(phone\_numbers\) — Printing the list of phone numbers.
 
 There are many useful functions and characters in the re library, yet learning everything might be overwhelming. Therefore, I have selected the most useful functions and characters that will help you to start implementing RegEx in your Python script.
 
@@ -359,7 +365,7 @@ However, characters that don’t have any special meaning like ?\_+\*.\|\(\)${} 
 Lastly, we’ll go through the things that we can do with RegEx by using the functions available!
 
 ```text
-findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string
+findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string            
 ```
 
 In all these functions, the arguments are all the same, which are &lt;pattern&gt; and &lt;string&gt;.
@@ -494,3 +500,4 @@ The Output :
 Lovelace Ada
 Tom
 ```
+

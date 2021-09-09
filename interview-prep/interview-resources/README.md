@@ -60,12 +60,12 @@ Many candidates jump into coding the moment they hear the question. That is usua
 
 Always seek clarification about the question upon hearing it even if it you think it is clear to you. You might discover something that you have missed out and it also sends a signal to the interviewer that you are a careful person who pays attention to details. Some interviewers deliberately omit important details to see if you ask the right questions. Consider asking the following questions:
 
-- How big is the size of the input?
-- How big is the range of values?
-- What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?
-- Are there duplicates within the input?
-- What are some extreme cases of the input?
-- How is the input stored? If you are given a dictionary of words, is it a list of strings or a Trie?
+* How big is the size of the input?
+* How big is the range of values?
+* What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?
+* Are there duplicates within the input?
+* What are some extreme cases of the input?
+* How is the input stored? If you are given a dictionary of words, is it a list of strings or a Trie?
 
 After you have sufficiently clarified the scope and intention of the problem, explain your high level approach to the interviewer even if it is a naive solution. If you are stuck, consider various approaches and explain out loud why it will/will not work. Sometimes your interviewer might drop hints and lead you towards the right path.
 
@@ -122,8 +122,13 @@ By following these steps, you will improve your coding interview skills, and be 
 
 All the best!
 
+
+
 {% embed url="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" %}
 
 {% embed url="https://determined-dijkstra-ee7390.netlify.app/" %}
 
 {% embed url="https://codesandbox.io/s/idk-q48t0" %}
+
+
+

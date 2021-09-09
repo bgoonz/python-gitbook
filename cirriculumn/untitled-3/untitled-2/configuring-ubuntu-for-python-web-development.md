@@ -1,5 +1,7 @@
 # Configuring Ubuntu for Python Web Development
 
+
+
 _Note:_ the following instructions assume that you are connected to the Internet and that you have both the `main` and `universe` package repositories enabled. All unix shell commands are assumed to be running from your home directory \($HOME\). Finally, any command that begins with `sudo` assums that you have administrative rights on your machine. If you do not — please ask your system administrator about installing the software you need.
 
 What follows are instructions for setting up an Ubuntu 16.04 \(Xenial\) home environment for use with this book. I use Ubuntu GNU/Linux for both development and testing of the book, so it is the only system about which I can personally answer setup and configuration questions.
@@ -140,3 +142,4 @@ On unix systems, Python scripts can be made _executable_ using the following pro
    ```
 
 3. Move `myscript.py` into your `.local/bin` directory, and it will be runnable from anywhere.
+

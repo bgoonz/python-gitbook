@@ -153,3 +153,4 @@ print('Reversed list:',myList)
 **Output**
 
 ![List Operations in Python Output](https://i0.wp.com/codezup.com/wp-content/uploads/2019/12/List-Operations-in-Python-Output.png?resize=665%2C311&ssl=1)
+
