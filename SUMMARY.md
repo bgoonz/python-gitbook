@@ -146,6 +146,7 @@
 
 ## MISC
 
+* [Built-in Methods & Functions](misc/built-in-methods-and-functions.md)
 * [Unsorted Examples](misc/unsorted-examples.md)
 * [Outline](misc/outline.md)
 * [About Python](misc/untitled/README.md)
