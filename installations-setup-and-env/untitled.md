@@ -157,7 +157,7 @@ Python is the second programming language we will use in this course.
 
 > Note: We do not install the python using the installer from the python.org website in this course. If you have one installed you should uninstall it before installing this version of python.
 
-Currently the curriclum for this course is compatible with Python 3.9.
+Currently the curriculum for this course is compatible with Python 3.9.
 
 ### Installing pyenv
 
