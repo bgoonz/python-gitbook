@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+
+
 {% tabs %}
 {% tab title="Implementation " %}
 ```python
