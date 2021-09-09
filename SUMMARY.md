@@ -129,7 +129,7 @@
 * [index](quick-reference/untitled-1.md)
 * [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
 
-## Python-Docs <a id="stdlib"></a>
+## Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
 * [Classes and objects](stdlib/classes-and-objects.md)
@@ -187,4 +187,5 @@
   * [Reading and Writing to text files in Python](aux-exploration/subject/untitled-2.md)
   * [General Data Structures](aux-exploration/subject/untitled-1.md)
   * [Touple](aux-exploration/subject/touple.md)
+  * [Untitled](aux-exploration/subject/untitled.md)
 
