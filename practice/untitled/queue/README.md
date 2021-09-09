@@ -1,5 +1,12 @@
 # Queue
 
+### 
+
+## Queue
+
+* Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.
+* Implement a Queue using two stacks. You may only use the standard `push()`, `pop()`, and `peek()` operations traditionally available to stacks. You do not need to implement the stack yourself \(i.e. an array can be used to simulate a stack\).
+
 ### Queues in Python
 
 [Queues](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a linear data structure that store data in a “first in, first out” \(FIFO\) order. Unlike arrays, you cannot access elements by index and instead can **only pull the next oldest element**. This makes it great for order-sensitive tasks like online order processing or voicemail storage.

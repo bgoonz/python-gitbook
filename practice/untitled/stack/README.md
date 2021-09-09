@@ -1,5 +1,16 @@
 # Stack
 
+### 
+
+## Stack
+
+* Implementation of an interpreter for a small language that does multiplication/addition/etc.
+* Design a `MinStack` data structure that supports a `min()` operation that returns the minimum value in the stack in O\(1\) time.
+* Write an algorithm to determine if all of the delimiters in an expression are matched and closed.
+  * E.g. `{ac[bb]}`, `[dklf(df(kl))d]{}` and `{[[[]]]}` are matched. But `{3234[fd` and `{df][d}` are not.
+  * [Source](http://blog.gainlo.co/index.php/2016/09/30/uber-interview-question-delimiter-matching/)
+* Sort a stack in ascending order using an additional stack.
+
 ### Stacks in Python
 
 [Stacks](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a sequential data structure that act as the Last-in, First-out \(LIFO\) version of queues. The last element inserted in a stack is considered at the **top of the stack** and is the only accessible element. To access a middle element, you must first remove enough elements to make the desired element the top of the stack.
