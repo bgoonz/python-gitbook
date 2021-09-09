@@ -1,13 +1,9 @@
 # Classes and objects
 
-## 
+##
 
+{% tabs %} {% tab title="Abstract Class" %}
 
-
-
-
-{% tabs %}
-{% tab title="Abstract Class" %}
 ```python
 """
 Abstract class is an extension of a basic class. Like a basic class, an
@@ -129,9 +125,11 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 {% endtab %}
 
 {% tab title="Basic Class" %}
+
 ```python
 
 
@@ -215,8 +213,8 @@ if __name__ == "__main__":
     main()
 
 ```
-{% endtab %}
-{% endtabs %}
+
+{% endtab %} {% endtabs %}
 
 ## 7. Classes and objects
 
@@ -1013,4 +1011,3 @@ An operation defined in linear algebra that multiplies two `Point`s and yields a
 An operation defined in linear algebra that multiplies each of the coordinates of a `Point` by a numeric value.polymorphic
 
 A function that can operate on more than one type. If all the operations in a function can be applied to a type, then the function can be applied to a type.
-

@@ -6,15 +6,15 @@ Data requires a number of ways in which it can be stored and accessed. One of th
 
 Before moving ahead, let us take a look at all the topics of discussion:
 
-* What is a Hash table or a Hashmap in Python?
-* Hash table vs Hashmap
-* Creating Dictionaries
-* Creating Nested Dictionaries
-* Performing Operations on Hash Tables using dictionaries
-* Accessing Values
-* Updating Values
-* Deleting Items
-* Converting a Dictionary into a Dataframe
+- What is a Hash table or a Hashmap in Python?
+- Hash table vs Hashmap
+- Creating Dictionaries
+- Creating Nested Dictionaries
+- Performing Operations on Hash Tables using dictionaries
+- Accessing Values
+- Updating Values
+- Deleting Items
+- Converting a Dictionary into a Dataframe
 
 In computer science, a Hash table or a Hashmap is a type of data structure that maps keys to its value pairs \(implement abstract array data types\). It basically makes use of a function that computes an index value that in turn holds the elements to be searched, inserted, removed, etc. This makes it easy and fast to access data. In general, hash tables store key-value pairs and the key is generated using a hash function.
 
@@ -28,8 +28,8 @@ Moving ahead, let’s see the difference between the hash table and hashmap in P
 
 Dictionaries can be created in two ways:
 
-* Using curly braces \({}\)
-* Using the _dict\(\)_ function
+- Using curly braces \({}\)
+- Using the _dict\(\)_ function
 
 ### Using curly braces:
 
@@ -98,17 +98,17 @@ emp_details = {'Employee': {'Dave': {'ID': '001',
 
 There are a number of operations that can be performed on has tables in Python through dictionaries such as:
 
-* Accessing Values
-* Updating Values
-* Deleting Element
+- Accessing Values
+- Updating Values
+- Deleting Element
 
 ### Accessing Values:
 
 The values of a dictionary can be accessed in many ways such as:
 
-* Using key values
-* Using functions
-* Implementing the for loop
+- Using key values
+- Using functions
+- Implementing the for loop
 
 ### Using key values:
 
@@ -138,8 +138,8 @@ print(my_dict.get('Dave'))
 
 **OUTPUT:**
 
-dict\_keys\(\[‘Dave’, ‘Ava’, ‘Joe’\]\)  
-dict\_values\(\[‘001’, ‘002’, ‘003’\]\)  
+dict_keys\(\[‘Dave’, ‘Ava’, ‘Joe’\]\)  
+dict_values\(\[‘001’, ‘002’, ‘003’\]\)  
 001
 
 ### Implementing the for loop:
@@ -225,4 +225,3 @@ print(df)
 **OUTPUT:**
 
 ![](https://miro.medium.com/max/1320/1*it6P3nXxkJLE5kckWPMkOg.png)
-

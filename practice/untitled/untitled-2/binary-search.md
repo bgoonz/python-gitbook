@@ -1,7 +1,7 @@
 # Binary Search
 
-{% tabs %}
-{% tab title="Python" %}
+{% tabs %} {% tab title="Python" %}
+
 ```python
 def binary_search(arr, target):
     left = 0;
@@ -74,25 +74,27 @@ print(bisect_right([1, 2, 3, 3, 10], 11) == 5) # Insert "5" at back
 
 
 ```
+
 {% endtab %}
 
 {% tab title="JavaScript" %}
+
 ```javascript
 function binarySearch(arr, target) {
-    let left = 0;
-    let right = arr.length - 1;
-    while (left <= right) {
-        const mid = left + Math.floor((right - left) / 2);
-        if (arr[mid] === target) {
-            return mid;
-        }
-        if (arr[mid] < target) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
+  let left = 0;
+  let right = arr.length - 1;
+  while (left <= right) {
+    const mid = left + Math.floor((right - left) / 2);
+    if (arr[mid] === target) {
+      return mid;
     }
-    return -1;
+    if (arr[mid] < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+  return -1;
 }
 
 console.log(binarySearch([1, 2, 3, 10], 1) === 0);
@@ -104,10 +106,9 @@ console.log(binarySearch([1, 2, 3, 10], 4) === -1);
 console.log(binarySearch([1, 2, 3, 10], 0) === -1);
 console.log(binarySearch([1, 2, 3, 10], 11) === -1);
 console.log(binarySearch([5, 7, 8, 10], 3) === -1);
-
 ```
-{% endtab %}
-{% endtabs %}
+
+{% endtab %} {% endtabs %}
 
 ```python
 def binary_search(arr, target):
@@ -181,4 +182,3 @@ print(bisect_right([1, 2, 3, 3, 10], 11) == 5) # Insert "5" at back
 
 
 ```
-

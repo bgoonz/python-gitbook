@@ -30,25 +30,25 @@ Step 1: interpreting keys as nature numbers N = {0,1,2, …}. For string or char
 
 Step 2: Define hashing functions
 
-* The division method, `h(k) = k mod m`
-* The multiplication method, `h(k)=`⌊m\(kA mod 1\)⌋. `kA mod 1` means the fractional part of `kA` , which can be noted as `{kA}` , and equals to `kA-`⌊ kA ⌋, `0<A<1` . e.g. for 45.2 the fractional part of it is .2.
+- The division method, `h(k) = k mod m`
+- The multiplication method, `h(k)=`⌊m\(kA mod 1\)⌋. `kA mod 1` means the fractional part of `kA` , which can be noted as `{kA}` , and equals to `kA-`⌊ kA ⌋, `0<A<1` . e.g. for 45.2 the fractional part of it is .2.
 
 [**Implementation with Python List**](http://interactivepython.org/runestone/static/pythonds/SortSearch/Hashing.html)
 
 **Python built-in hashmap data structure**
 
-* [dictionary](https://www.laurentluce.com/posts/python-dictionary-implementation/)
-* [set](https://docs.python.org/2/library/sets.html)
+- [dictionary](https://www.laurentluce.com/posts/python-dictionary-implementation/)
+- [set](https://docs.python.org/2/library/sets.html)
 
 The set classes are implemented using dictionaries. Accordingly, the requirements for set elements are the same as those for dictionary keys; namely, that the element defines both [`__eq__()`](https://docs.python.org/2/reference/datamodel.html#object.__eq__) and [`__hash__()`](https://docs.python.org/2/reference/datamodel.html#object.__hash__). As a result, sets cannot contain mutable elements such as lists or dictionaries. However, they can contain immutable collections such as tuples or instances of [`ImmutableSet`](https://docs.python.org/2/library/sets.html#sets.ImmutableSet). For convenience in implementing sets of sets, inner sets are automatically converted to immutable form, for example, `Set([Set(['dog'])])` is transformed to `Set([ImmutableSet(['dog'])])`.
 
-* OrderedDict
+- OrderedDict
 
 Standard dictionaries are unordered, which means that any time you loop through a dictionary, you will go through every key, but you are not guaranteed to get them in any particular order.
 
 The OrderedDict from the collections module is a special type of dictionary that keeps track of the order in which its keys were inserted. Iterating the keys of an orderedDict has predictable behavior. This can simplify testing and debugging by making all the code deterministic.
 
-* defaultDict
+- defaultDict
 
 Dictionaries are useful for bookkeeping and tracking statistics. One problem is that when we try to add an element, we have no idea if the key is present or not, which requires us to check such condition every time.
 
@@ -110,7 +110,7 @@ lifo.pop()
 
 The \(binary\) heap data structure is an array that we can view as a nearly complete binary tree. The tree is completely filled on all levels except possibly the lowest, which is filled from left up to a point.![](https://miro.medium.com/freeze/max/60/0*rcNN6jqCrCsKNGRU.gif?q=20)![](https://miro.medium.com/max/726/0*rcNN6jqCrCsKNGRU.gif)\(a\) binary tree \(b\) an array
 
-As we can see we can implement either the max-heap or the min-heap as an array. Because the tree is complete, the left child of a parent \(at position _p_\) is the node that is found in position 2_p_ in the list. Similarly, the right child of the parent is at position 2_p_+1 in the list. To find the parent of any node in the tree, we can simply use Python’s integer division. Given that a node is at position _n_ in the list, the parent is at position _n_/2.
+As we can see we can implement either the max-heap or the min-heap as an array. Because the tree is complete, the left child of a parent \(at position _p_\) is the node that is found in position 2*p* in the list. Similarly, the right child of the parent is at position 2*p*+1 in the list. To find the parent of any node in the tree, we can simply use Python’s integer division. Given that a node is at position _n_ in the list, the parent is at position _n_/2.
 
 There are two kinds of binary heaps: max-heaps and min-heaps. In both kinds, the values in the nodes satisfy a _heap property_. For max-heap, the property states as for every node `i` other than root.
 
@@ -124,9 +124,9 @@ For a heap of `n` elements the height is theta\(logn\) because it is a complete 
 
 Heap can be used into heapsort and a priority-queue data structure. Operations include:
 
-* MAX-HEAPIFY, runs in O\(lgn\), is the key to maintaining the max-heap property
-* BUILD-MAX-HEAP, runs in linear time, produces a maxheap from an unordered input arrary
-* MAX-HEAP-INSERT, HEAP-EXTRACT-MAX, HEAP-INCREASE-KEY, and HEAP-MAXIMUM, runs in O\(lgn\) time, allow the heap data structure to implement a priority queue.
+- MAX-HEAPIFY, runs in O\(lgn\), is the key to maintaining the max-heap property
+- BUILD-MAX-HEAP, runs in linear time, produces a maxheap from an unordered input arrary
+- MAX-HEAP-INSERT, HEAP-EXTRACT-MAX, HEAP-INCREASE-KEY, and HEAP-MAXIMUM, runs in O\(lgn\) time, allow the heap data structure to implement a priority queue.
 
 [**heapq**](https://docs.python.org/2/library/heapq.html)**:** heapq from collections is an implementation of heap, which can be used to maintain a priority queue. Operations include heappush, heappop, and nsmallest. heapq in python to maintain a priority queue with O\(logn\)
 
@@ -150,10 +150,10 @@ More materials can be found [here](https://www.geeksforgeeks.org/heap-queue-or-h
 
 [**Monotonous Stack**](https://zhuanlan.zhihu.com/p/26465701): For monotonous increasing stack, which only allow the increasing element to be put in the stack, smaller one came will kick out the larger one in the previous position, untill we found one that is smaller than the current element. For the monotonous decreasing stack, the larger elements will force the stack to kick out the previous smaller element untill larger one found. In monotonous stack, we only operate at the end of the stack. To summarize, monotonous stack has two features:
 
-* monotonic
-* when adding new element, we will delete all the previous elements that break the first monotonic feature.
-* For increasing stack: we can find the first element to the left that is larger than current element
-* For decreasing stack: we can find the first element to the left that is smaller than current element.
+- monotonic
+- when adding new element, we will delete all the previous elements that break the first monotonic feature.
+- For increasing stack: we can find the first element to the left that is larger than current element
+- For decreasing stack: we can find the first element to the left that is smaller than current element.
 
 ### 3. Linked List <a id="77a5"></a>
 
@@ -189,18 +189,18 @@ while pointer:
 
 Dummy Node in Linked List
 
-* Remove Duplicates from Sorted List II
-* Reverse Linked List II
-* Partition List
+- Remove Duplicates from Sorted List II
+- Reverse Linked List II
+- Partition List
 
 Basic Linked List Skills
 
-* Sort List
-* Reorder List
+- Sort List
+- Reorder List
 
 Two Pointers in Linked List \(Fast-slow pointers\)
 
-* Merge K Sorted Lists
+- Merge K Sorted Lists
 
 ### [4. Tree](https://medium.com/algorithms-and-leetcode/solving-tree-problems-on-leetcode-d0b7a9b4a7a4) <a id="d209"></a>
 
@@ -213,4 +213,3 @@ Binary Tree and Binary Search Tree, please see my following post.[Solving Tree P
 \[2\] Géron, Aurélien. _Hands-on machine learning with Scikit-Learn and TensorFlow: concepts, tools, and techniques to build intelligent systems_. “ O’Reilly Media, Inc.”, 2017.
 
 \[3\][https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/](https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/)
-

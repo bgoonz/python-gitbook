@@ -223,10 +223,10 @@ The key idea is that one provides a _formatter string_ which contains _placehold
 
 Each of the placeholders can also contain a **format specification** — it is always introduced by the `:` symbol. This can control things like
 
-* whether the field is aligned left `<`, centered `^`, or right `>`
-* the width allocated to the field within the result string \(a number like `10`\)
-* the type of conversion \(we’ll initially only force conversion to float, `f`, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using `x`\)
-* if the type conversion is a float, you can also specify how many decimal places are wanted \(typically, `.2f` is useful for working with currencies to two decimal places.\)
+- whether the field is aligned left `<`, centered `^`, or right `>`
+- the width allocated to the field within the result string \(a number like `10`\)
+- the type of conversion \(we’ll initially only force conversion to float, `f`, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using `x`\)
+- if the type conversion is a float, you can also specify how many decimal places are wanted \(typically, `.2f` is useful for working with currencies to two decimal places.\)
 
 You can have multiple placeholders indexing the same argument, or perhaps even have extra arguments that are not referenced at all:
 
@@ -708,4 +708,3 @@ A collection of unique, unordered elements.text file
 A file that contains printable characters organized into lines separated by newline characters.volatile memory
 
 Memory which requires an electrical current to maintain state. The _main memory_ or RAM of a computer is volatile. Information stored in RAM is lost when the computer is turned off.
-

@@ -431,7 +431,7 @@ print()
 
 Here we’ve used the `range` function, but made it start its sequence at 1. As the loop executes, the value of `i` changes from 1 to 6. When all the elements of the range have been assigned to `i`, the loop terminates. Each time through the loop, it displays the value of `2 * i`, followed by three spaces.
 
-Again, the extra `end="   "` argument in the `print` function suppresses the newline, and uses three spaces instead. After the loop completes, the call to `print` at line 3 finishes the current line, and starts a new line.
+Again, the extra `end=" "` argument in the `print` function suppresses the newline, and uses three spaces instead. After the loop completes, the call to `print` at line 3 finishes the current line, and starts a new line.
 
 The output of the program is:
 
@@ -856,4 +856,3 @@ A name used inside a function to refer to the value passed as an argument.stack 
 A graphical representation of a stack of functions, their variables, and the values to which they refer.traceback
 
 A list of the functions that are executing, printed when a runtime error occurs. A traceback is also commonly refered to as a _stack trace_, since it lists the functions in the order in which they are stored in the [runtime stack](http://en.wikipedia.org/wiki/Runtime_stack).
-

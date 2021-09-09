@@ -2,8 +2,6 @@
 
 ![](../../../.gitbook/assets/image%20%284%29.png)
 
-
-
 ```python
 def graph_dfs(matrix):
     rows, cols = len(matrix), len(matrix[0])
@@ -31,4 +29,3 @@ graph_dfs([
 ])
 
 ```
-

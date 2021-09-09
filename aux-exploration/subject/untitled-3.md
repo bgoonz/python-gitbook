@@ -1,7 +1,5 @@
 # server-side-scripting
 
-
-
 ## 9. Server-side scripting
 
 We now have the Python tools we need to create our first [web applications](http://en.wikipedia.org/wiki/Web_application). The process of creating web applications is called [web application development](http://en.wikipedia.org/wiki/Web_application_development), the [raison d’être](http://en.wiktionary.org/wiki/raison_d%27%C3%AAtre) for this book.
@@ -332,7 +330,6 @@ The global system of linked documents accessed through the Internet.
 
 ### 9.10. Exercises
 
-* [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
-* [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
-* [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)
-
+- [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
+- [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
+- [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)

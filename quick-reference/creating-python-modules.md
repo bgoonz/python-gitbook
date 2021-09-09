@@ -4,9 +4,8 @@
 
 Create a new file called `mymodule.py` and write the following code.
 
-|  |  |
-| :--- | :--- |
-
+|     |     |
+| :-- | :-- |
 
 As you can see we have defined a global variable `foo` and a function `hello()` in our module. Now to use this module in our programs we first need to import it using import statement like this
 
@@ -16,15 +15,13 @@ import mymodule
 
 Now you can use variable and call functions in the `mymodule.py` using the following code.
 
-|  |  |
-| :--- | :--- |
-
+|     |     |
+| :-- | :-- |
 
 **Expected Output:**
 
-|  |  |
-| :--- | :--- |
-
+|     |     |
+| :-- | :-- |
 
 Remember you need to specify name of module first to access it's variables and functions, failure to so will result in error.
 
@@ -32,9 +29,8 @@ Remember you need to specify name of module first to access it's variables and f
 
 Using import statements imports everything in the module, what if you want to access only specific function or variable? This is where the `from` statement comes, here is how to use it.
 
-|  |  |
-| :--- | :--- |
-
+|     |     |
+| :-- | :-- |
 
 **Expected output:**
 
@@ -42,7 +38,7 @@ Using import statements imports everything in the module, what if you want to ac
 100
 ```
 
- **Note:**
+**Note:**
 
 In this case you don't need to specify module name to access variables and function.
 
@@ -56,9 +52,7 @@ dir(module_name)
 
 The `dir()` returns a list of string containing the names of the available attributes.
 
-|  |  |
-| :--- | :--- |
-
+|     |     |
+| :-- | :-- |
 
 As you can see besides foo and hello there are additional attributes in the `mymodule`. These are in-built attributes which python provides to all the modules automatically.
-
