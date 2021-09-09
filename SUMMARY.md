@@ -185,4 +185,5 @@
   * [server-side-scripting](aux-exploration/subject/untitled-3.md)
   * [Reading and Writing to text files in Python](aux-exploration/subject/untitled-2.md)
   * [General Data Structures](aux-exploration/subject/untitled-1.md)
+  * [Touple](aux-exploration/subject/touple.md)
 
