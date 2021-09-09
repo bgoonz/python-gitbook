@@ -1,12 +1,30 @@
 # Linked List
 
+### 
+
+## Linked List
+
+* Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.
+  * [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
+* Reverse a singly linked list. Implement it recursively and iteratively.
+* Convert a binary tree to a doubly circular linked list.
+* Implement an LRU cache with O\(1\) runtime for all its operations.
+* Check distance between values in linked list.
+* A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
+* Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
+* How can you tell if a Linked List is a Palindrome?
+
+### 
+
 ### Linked lists in Python
 
 [Linked lists](https://www.educative.io/blog/data-structures-linked-list-java-tutorial) are a sequential collection of data that uses **relational pointers on each data node** to link to the next node in the list.
 
 Unlike arrays, linked lists do not have objective positions in the list. Instead, they have relational positions based on their surrounding nodes.
 
-The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.![](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI4MCIgaGVpZ2h0PSI0NzM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==)
+The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.
+
+
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
 
