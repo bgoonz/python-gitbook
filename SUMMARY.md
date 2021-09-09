@@ -54,6 +54,7 @@
 ## practice
 
 * [GCA Sprint Prep:](practice/gca-sprint-prep/README.md)
+  * [Code Signal CGA Sprint Resources](practice/gca-sprint-prep/code-signal-cga-sprint-resources.md)
   * [CGA-Sprint Prep](practice/gca-sprint-prep/cga-sprint-prep.md)
 * [Supplemental Practice:](practice/supplemental-practice/README.md)
   * [Industry Standard Algorithms](practice/supplemental-practice/industry-standard-algorithms/README.md)
@@ -124,7 +125,6 @@
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
-* [Code Signal CGA Sprint Resources](resources/code-signal-cga-sprint-resources.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
   * [My-Links](resources/untitled/my-links.md)
