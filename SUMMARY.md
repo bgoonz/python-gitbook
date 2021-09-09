@@ -98,7 +98,8 @@
     * [Insertion Sort](practice/untitled/untitled-3/insertion-sort.md)
   * [Searching](practice/untitled/untitled-2.md)
   * [Graphs](practice/untitled/untitled-1.md)
-  * [Exotic](practice/untitled/untitled.md)
+  * [Exotic](practice/untitled/untitled/README.md)
+    * [Dynamic Programming](practice/untitled/untitled/dynamic-programming.md)
 
 ## Resources
 
