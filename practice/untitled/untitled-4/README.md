@@ -152,17 +152,6 @@ linked_list.traverse()
 print(f'size: {linked_list.size_of_list()}')
 
 
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 ## Linked List
