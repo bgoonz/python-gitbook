@@ -97,6 +97,7 @@
     * [List Example](practice/untitled/untitled-4/list-example.md)
     * [List Operations](practice/untitled/untitled-4/list-operations.md)
   * [Sorting](practice/untitled/untitled-3/README.md)
+    * [Merge Sort](practice/untitled/untitled-3/merge-sort-1.md)
     * [Graph Topological Sort](practice/untitled/untitled-3/graph-topological-sort.md)
     * [SelectionSort](practice/untitled/untitled-3/selectionsort.md)
     * [Quick Sort](practice/untitled/untitled-3/untitled-7.md)
