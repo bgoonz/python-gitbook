@@ -1,9 +1,5 @@
 # Interview Practice Resources
 
-
-
-## 
-
 ### Guides
 
 * [Interview Cake Algs/DS reference](https://interviewcake.com/data-structures-and-algorithms-guide)
