@@ -26,7 +26,7 @@
 
 {% page-ref page="untitled-4/double-linked-list.md" %}
 
-{% page-ref page="untitled-1.md" %}
+{% page-ref page="untitled-1/" %}
 
 {% page-ref page="untitled/" %}
 
