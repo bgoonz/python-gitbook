@@ -80,6 +80,7 @@
   * [Tree](practice/untitled/tree/README.md)
     * [In Order Traversal](practice/untitled/tree/in-order-traversal.md)
     * [Tree Equal ?](practice/untitled/tree/tree-equal.md)
+    * [Ternary-search-trees](practice/untitled/tree/ternary-search-trees.md)
     * [Red\_Black Tree](practice/untitled/tree/red_black-tree.md)
     * [Tree Mirror:](practice/untitled/tree/tree-mirror.md)
     * [Tree Traversal](practice/untitled/tree/tree-traversal.md)
