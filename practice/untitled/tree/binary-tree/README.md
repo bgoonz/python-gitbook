@@ -29,15 +29,17 @@
       * Implementing as a balanced tree results in min number of parents and max number of leaves: 2 parents, 3 leaves
   * All that we need in order to implement a binary tree is a TreeNode class that can store a value and references to a left and right child. We can create a tree by assigning the left and right properties to point to other TreeNode instances:
 
-  ```text
-  class TreeNode {
-    constructor(val) {
-      this.val = val;
-      this.left = null;
-      this.right = null;
-    }
+
+
+```python
+class TreeNode {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
   }
-  ```
+}
+```
 
 1. Identify the three types of tree traversals: pre-order, in-order, and post-order.
 
@@ -56,35 +58,39 @@
 * A binary search tree is a binary tree with the added stipulation that all values to the left of a node are less than its value and all values to the right are greater than its value.
 * Example of a BST with an insert method. You won't be asked to implement a removal:
 
-  ```text
-  class BST {
-    constructor() {
-        this.root = null;
+
+
+
+
+```python
+class BST {
+  constructor() {
+      this.root = null;
+  }
+
+  insert(val, currentNode=this.root) {
+    if(!this.root) {
+      this.root = new TreeNode(val);
+      return;
     }
 
-    insert(val, currentNode=this.root) {
-      if(!this.root) {
-        this.root = new TreeNode(val);
-        return;
-      }
-
-      if (val < currentNode.val) {
-        if (!currentNode.left) {
-          currentNode.left = new TreeNode(val);
-        } else {
-          this.insert(val, currentNode.left);
-        }
+    if (val < currentNode.val) {
+      if (!currentNode.left) {
+        currentNode.left = new TreeNode(val);
       } else {
-        if (!currentNode.right) {
-          currentNode.right = new TreeNode(val);
-        } else {
-          this.insert(val, currentNode.right);
-        }
+        this.insert(val, currentNode.left);
+      }
+    } else {
+      if (!currentNode.right) {
+        currentNode.right = new TreeNode(val);
+      } else {
+        this.insert(val, currentNode.right);
       }
     }
   }
+}
 
-  ```
+```
 
 ```python
 # Implement a Binary Search Tree (BST) that can insert values and check if

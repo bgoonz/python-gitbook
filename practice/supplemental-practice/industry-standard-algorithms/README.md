@@ -1,5 +1,17 @@
 # Industry Standard Algorithms
 
+{% embed url="https://replit.com/@bgoonz/Data-Structures-6\#main.py" %}
+
+
+
+{% file src="../../../.gitbook/assets/the-algorithms-python-data\_structures.zip" %}
+
+
+
+
+
+
+
 {% embed url="https://replit.com/@bgoonz/main-prac\#directed\_graph.py" %}
 
 
