@@ -102,6 +102,7 @@
 ## Resources
 
 * [Inheritance](resources/untitled-2.md)
+* [Strings](resources/strings.md)
 * [Dictionaries](resources/dictionaries.md)
 * [Python VS JavaScript](resources/python-vs-javascript.md)
 * [Misc. Resources](resources/untitled-1.md)
