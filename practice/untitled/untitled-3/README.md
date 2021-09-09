@@ -259,9 +259,7 @@ Sorted Array is:<br>
 <img width = 221 height = 27 src="../Insertion Sort/Images/input.png">
 <img width = 385 height = 188 src="../Insertion Sort/Images/sort_output1.png">
 
-## Author(s)
 
-[Ritika Chand](https://github.com/RC2208)
 
 
 ```
