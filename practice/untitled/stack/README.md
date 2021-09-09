@@ -8,6 +8,12 @@ Many developers imagine stacks as a stack of dinner plates; you can add or remov
 
 Adding elements is known as a **push,** and removing elements is known as a **pop**. You can implement stacks in Python using the built-in list structure. With list implementation, push operations use the `append()` method, and pop operations use `pop()`.
 
+
+
+{% tabs %}
+{% tab title="Stack Python" %}
+
+
 ```python
 stack = []
  
@@ -34,6 +40,57 @@ print(stack)
 ```
 
 ## 
+{% endtab %}
+
+{% tab title="Stack Javascript" %}
+
+
+```javascript
+//creates a stack
+let stack = function(){
+	//two variables of the stack
+	this.count = 0; //keeps track of the count of the stack
+  this.storage = {}; //empty object
+
+
+  //adding the  value on to the end of the stack
+  this.push = function(value){
+    this.storage[this.count] = value;
+    this.count++;
+  }
+
+  //removes and returns the value at the end of the stack
+  this.pop = function(){
+    if(this.count === 0){
+      return undefined;
+    }
+      this.count--;
+      const result = this.storage[this.count];
+      //removes the top element and returns it
+      delete this.storage[this.count];
+      return result;
+  }
+
+  //to know the size of the stack
+  this.size = function(){
+    return this.count;
+  }
+
+  //peek() - returns the value top of the stack i.e which is at the end of the stack
+  this.peek = function(){
+    return this.storage[this.count-1]; 
+  }
+}
+let myStack = new stack();
+
+myStack.push(1);
+myStack.push(2);
+console.log(myStack.peek());
+console.log(myStack.pop());
+console.log(myStack.peek());
+```
+{% endtab %}
+{% endtabs %}
 
 **Advantages:**
 
