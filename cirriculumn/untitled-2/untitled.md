@@ -630,17 +630,19 @@ As with the factorial example, adding some [`print()`](https://realpython.com/py
 
 ## Homework
 
+![](../../.gitbook/assets/2021-09-09-14-03-46.png)
+
+## Binary Search
+
+
+
 
 
 ### Which logarithmic expression is identical to the following exponential expression?
 
 > 2^n = 64 log\_2\(64\)=n
 
-![what type of search algorithm?](2021-09-09-14-03-46.png)
-
-## Binary Search
-
-![what must be true for this algo to work?](true4algo-2-work.png)
+![The list must be ordered from least to greatest](../../.gitbook/assets/true4algo-2-work.png)
 
 ## item\_list must be sorted from least to greatest.
 
