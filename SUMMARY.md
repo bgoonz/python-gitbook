@@ -170,6 +170,7 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
+  * [Permutation](interview-prep/interview-resources/permutation.md)
   * [General Data Structures Notes](interview-prep/interview-resources/general-data-structures-notes.md)
   * [How to Write an Effective Resume of Python Developer](interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](interview-prep/interview-resources/interview-checklist.md)
