@@ -53,13 +53,13 @@
 
 ## practice
 
+* [GCA Sprint Prep:](practice/gca-sprint-prep/README.md)
+  * [CGA-Sprint Prep](practice/gca-sprint-prep/cga-sprint-prep.md)
 * [Supplemental Practice:](practice/supplemental-practice/README.md)
   * [Random Examples](practice/supplemental-practice/random-examples.md)
   * [Prompts](practice/supplemental-practice/prompts.md)
 * [Abstract Data Structures:](practice/untitled/README.md)
   * [String](practice/untitled/string.md)
-  * [GCA Sprint Prep:](practice/untitled/gca-sprint-prep/README.md)
-    * [CGA-Sprint Prep](practice/untitled/gca-sprint-prep/cga-sprint-prep.md)
   * [Set](practice/untitled/set.md)
   * [Data Structures Overview](practice/untitled/untitled-7/README.md)
     * [Dictionary](practice/untitled/untitled-7/dictionary.md)
@@ -94,6 +94,7 @@
     * [List Example](practice/untitled/untitled-4/list-example.md)
     * [List Operations](practice/untitled/untitled-4/list-operations.md)
   * [Sorting](practice/untitled/untitled-3/README.md)
+    * [Graph Topological Sort](practice/untitled/untitled-3/graph-topological-sort.md)
     * [SelectionSort](practice/untitled/untitled-3/selectionsort.md)
     * [Quick Sort](practice/untitled/untitled-3/untitled-7.md)
     * [Merge Sort](practice/untitled/untitled-3/merge-sort.md)
@@ -102,6 +103,7 @@
     * [Binary Search](practice/untitled/untitled-2/binary-search.md)
   * [Graphs](practice/untitled/untitled-1/README.md)
     * [Graph DFS](practice/untitled/untitled-1/graph-dfs.md)
+  * [Heap](practice/untitled/heap.md)
   * [Exotic](practice/untitled/untitled/README.md)
     * [Dynamic Programming](practice/untitled/untitled/dynamic-programming.md)
 
