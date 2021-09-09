@@ -1,5 +1,223 @@
 # Classes and objects
 
+## 
+
+
+
+
+
+{% tabs %}
+{% tab title="Abstract Class" %}
+```python
+"""
+Abstract class is an extension of a basic class. Like a basic class, an
+abstract class has methods and state. Unlike a basic class, it inherits
+the `ABC` class and has at least one `abstractmethod`. That means we
+cannot create an instance directly from its constructor. In this module,
+we will create an abstract class and two concrete classes.
+
+For more about abstract classes, click the link below:
+
+https://www.python.org/dev/peps/pep-3119/
+"""
+from abc import ABC, abstractmethod
+
+
+class Employee(ABC):
+    """Abstract definition of an employee.
+
+    Any employee can work and relax. The way that one type of employee
+    can work and relax is different from another type of employee.
+    """
+
+    def __init__(self, name, title):
+        self.name = name
+        self.title = title
+
+    def __str__(self):
+        return self.name
+
+    @abstractmethod
+    def do_work(self):
+        """Do something for work."""
+        raise NotImplementedError
+
+    @abstractmethod
+    def do_relax(self):
+        """Do something to relax."""
+        raise NotImplementedError
+
+
+class Engineer(Employee):
+    """Concrete definition of an engineer.
+
+    The Engineer class is concrete because it implements every
+    `abstractmethod` that was not implemented above.
+
+    Notice that we leverage the parent's constructor when creating
+    this object. We also define `do_refactor` for an engineer, which
+    is something that a manager prefers not to do.
+    """
+
+    def __init__(self, name, title, skill):
+        super().__init__(name, title)
+        self.skill = skill
+
+    def do_work(self):
+        return f"{self} is coding in {self.skill}"
+
+    def do_relax(self):
+        return f"{self} is watching YouTube"
+
+    def do_refactor(self):
+        """Do the hard work of refactoring code, unlike managers."""
+        return f"{self} is refactoring code"
+
+
+class Manager(Employee):
+    """Concrete definition of a manager.
+
+    The Manager class is concrete for the same reasons as the Engineer
+    class is concrete. Notice that a manager has direct reports and
+    has the responsibility of hiring people on the team, unlike an
+    engineer.
+    """
+
+    def __init__(self, name, title, direct_reports):
+        super().__init__(name, title)
+        self.direct_reports = direct_reports
+
+    def do_work(self):
+        return f"{self} is meeting up with {len(self.direct_reports)} reports"
+
+    def do_relax(self):
+        return f"{self} is taking a trip to the Bahamas"
+
+    def do_hire(self):
+        """Do the hard work of hiring employees, unlike engineers."""
+        return f"{self} is hiring employees"
+
+
+def main():
+    # Declare two engineers
+    engineer_john = Engineer("John Doe", "Software Engineer", "Android")
+    engineer_jane = Engineer("Jane Doe", "Software Engineer", "iOS")
+    engineers = [engineer_john, engineer_jane]
+
+    # These engineers are employees but not managers
+    assert all(isinstance(engineer, Employee) for engineer in engineers)
+    assert all(not isinstance(engineer, Manager) for engineer in engineers)
+
+    # Engineers can work, relax and refactor
+    assert engineer_john.do_work() == "John Doe is coding in Android"
+    assert engineer_john.do_relax() == "John Doe is watching YouTube"
+    assert engineer_john.do_refactor() == "John Doe is refactoring code"
+
+    # Declare manager with engineers as direct reports
+    manager_max = Manager("Max Doe", "Engineering Manager", engineers)
+
+    # Managers are employees but not engineers
+    assert isinstance(manager_max, Employee)
+    assert not isinstance(manager_max, Engineer)
+
+    # Managers can work, relax and hire
+    assert manager_max.do_work() == "Max Doe is meeting up with 2 reports"
+    assert manager_max.do_relax() == "Max Doe is taking a trip to the Bahamas"
+    assert manager_max.do_hire() == "Max Doe is hiring employees"
+
+
+if __name__ == "__main__":
+    main()
+```
+{% endtab %}
+
+{% tab title="Basic Class" %}
+```python
+
+
+"""
+A class is made up of methods and state. This allows code and data to be
+combined as one logical entity. This module defines a basic car class,
+creates a car instance and uses it for demonstration purposes.
+"""
+from inspect import isfunction, ismethod, signature
+
+
+class Car:
+    """Basic definition of a car.
+
+    We begin with a simple mental model of what a car is. That way, we
+    can start exploring the core concepts that are associated with a
+    class definition.
+    """
+
+    def __init__(self, make, model, year, miles):
+        """Constructor logic."""
+        self.make = make
+        self.model = model
+        self.year = year
+        self.miles = miles
+
+    def __repr__(self):
+        """Formal representation for developers."""
+        return f"<Car make={self.make} model={self.model} year={self.year}>"
+
+    def __str__(self):
+        """Informal representation for users."""
+        return f"{self.make} {self.model} ({self.year})"
+
+    def drive(self, rate_in_mph):
+        """Drive car at a certain rate in MPH."""
+        return f"{self} is driving at {rate_in_mph} MPH"
+
+
+def main():
+    # Create a car with the provided class constructor
+    car = Car("Bumble", "Bee", 2000, 200000.0)
+
+    # Formal representation is good for debugging issues
+    assert repr(car) == "<Car make=Bumble model=Bee year=2000>"
+
+    # Informal representation is good for user output
+    assert str(car) == "Bumble Bee (2000)"
+
+    # Call a method on the class constructor
+    assert car.drive(75) == "Bumble Bee (2000) is driving at 75 MPH"
+
+    # As a reminder: everything in Python is an object! And that applies
+    # to classes in the most interesting way - because they're not only
+    # subclasses of object - they are also instances of object. This
+    # means that we can modify the `Car` class at runtime, just like any
+    # other piece of data we define in Python
+    assert issubclass(Car, object) and isinstance(Car, object)
+
+    # To emphasize the idea that everything is an object, let's look at
+    # the `drive` method in more detail
+    driving = getattr(car, "drive")
+
+    # The variable method is the same as the instance method
+    assert driving == car.drive
+
+    # The variable method is bound to the instance
+    assert driving.__self__ == car
+
+    # That is why `driving` is considered a method and not a function
+    assert ismethod(driving) and not isfunction(driving)
+
+    # And there is only one parameter for `driving` because `__self__`
+    # binding is implicit
+    driving_params = signature(driving).parameters
+    assert len(driving_params) == 1
+    assert "rate_in_mph" in driving_params
+
+
+if __name__ == "__main__":
+    main()
+
+```
+{% endtab %}
+{% endtabs %}
+
 ## 7. Classes and objects
 
 ### 7.1. Object-oriented programming
