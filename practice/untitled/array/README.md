@@ -1,5 +1,7 @@
 # Array
 
+{% page-ref page="extra-array.md" %}
+
 
 
 ## Arrays

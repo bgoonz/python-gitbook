@@ -1,5 +1,9 @@
 # Stack
 
+{% page-ref page="stack-continued.md" %}
+
+
+
 ```python
 # LIFO: last in first out
 
