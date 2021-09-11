@@ -142,6 +142,7 @@
 
 ## Resources
 
+* [Untitled](resources/untitled-3.md)
 * [Intro 2 Python](resources/intro-2-python.md)
 * [Inheritance](resources/untitled-2.md)
 * [Strings](resources/strings/README.md)
