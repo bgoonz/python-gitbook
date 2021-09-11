@@ -4,7 +4,7 @@
 
 ![](.gitbook/assets/image%20%2821%29.png)
 
-{% embed url="https://replit.com/@bgoonz/30-days-python\#01\_Day\_Introduction/helloworld.py" %}
+{% embed url="https://replit.com/@bgoonz/30-days-python\#01\_Day\_Introduction/helloworld.py" caption="30 days of python practice" %}
 
 
 
