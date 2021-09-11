@@ -1,12 +1,10 @@
 # List Of Python Cheat Sheets
 
-{% embed url="https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4" %}
+\*\*\*\*[**https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4\#file-python-cheatsheet-py**](https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4#file-python-cheatsheet-py)
 
 
 
-```text
-
-```
+{% file src="../.gitbook/assets/ipynb-cheatsheets.zip" caption="jupyter notebook cheatsheet download" %}
 
 Table of Contents
 
@@ -36,6 +34,8 @@ Table of Contents
 
 
 
+{% file src="../.gitbook/assets/finxter\_worldsmostdensepythoncheatsheet.pdf" %}
+
 ### Best Python Cheat Sheets
 
 So let’s dive into the best Python cheat sheets recommended by us.
@@ -59,6 +59,8 @@ Some might think this cheat sheet is a bit lengthy. At 26 pages, it is the most 
 Some of the most popular things to do with Python are [Data Science and Machine Learning](https://blog.finxter.com/artificial-intelligence-machine-learning-deep-learning-and-data-science-whats-the-difference/). In this cheat sheet, you will learn the basics of Python and the most important scientific library:[ NumPy](https://blog.finxter.com/numpy-tutorial/) \(Numerical Python\). You’ll learn the basics plus the most important NumPy functions. If you are using Python for Data Science, download this cheat sheet.
 
 #### [**\(4\) Python for Data Science \(Importing Data\)**](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Cheat+Sheets/Importing_Data_Python_Cheat_Sheet.pdf)
+
+![](../.gitbook/assets/image%20%2820%29.png)
 
 [![](https://blog.finxter.com/wp-content/uploads/2020/06/image-2.png)](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Cheat+Sheets/Importing_Data_Python_Cheat_Sheet.pdf)
 
@@ -149,6 +151,8 @@ _If you love cheat sheets, here are some interesting references for you \(lots o
 {% embed url="https://gist.github.com/bgoonz/e4b30e43d5f1b8c79e9c6529d1cd0322" %}
 
 
+
+{% embed url="https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4\#file-python-cheatsheet-py" %}
 
 
 

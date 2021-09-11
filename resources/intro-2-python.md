@@ -1,8 +1,10 @@
 # Intro 2 Python
 
+![](../.gitbook/assets/image%20%2815%29.png)
 
+![](../.gitbook/assets/image%20%2818%29.png)
 
-## An Informal Introduction to Python
+## Introduction to Python
 
 In the following examples, input and output are distinguished by the presence or absence of prompts \([&gt;&gt;&gt;](https://docs.python.org/3.9/glossary.html#term-0) and […](https://docs.python.org/3.9/glossary.html#term-1)\): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
 

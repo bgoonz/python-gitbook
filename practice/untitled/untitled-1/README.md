@@ -408,7 +408,7 @@ pp.pprint(graph.bfs_names(2))
 
 ## Intro to Graphs
 
-![Directed Graph ](../../../.gitbook/assets/image%20%2815%29.png)
+![Directed Graph ](../../../.gitbook/assets/image%20%2816%29.png)
 
 ### Objectives
 
@@ -438,7 +438,7 @@ It could represent trade relationships between nations.
 
 And so on.
 
-![](../../../.gitbook/assets/image%20%2817%29.png)
+![](../../../.gitbook/assets/image%20%2819%29.png)
 
 ### Definitions
 
@@ -446,7 +446,7 @@ And so on.
 
 If the edges are "one way" \(have an arrow\), the graph is said to be a _directed graph_. If there are no arrows, the edges are bidirectional and the graph is an _undirected_ graph.
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 This is an **undirected graph** which could represent a social network like Facebook. Alice is friends with Bob, Carol and Dave, Bob is friends with Alice and Dave, Carol is only friend with Alice, and Dave is friends with only Alice and Bob. In this example, the nodes represent people and the edges represent friendship.
 
