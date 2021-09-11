@@ -12,7 +12,7 @@
 
 [![Edit iframe inception \(forked\)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/iframe-inception-forked-hr6q8?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark)
 
-{% embed url="https://codesandbox.io/embed/iframe-inception-forked-hr6q8?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&theme=light&view=preview" %}
+{% embed url="https://codesandbox.io/embed/iframe-inception-forked-7zh6v?autoresize=1&codemirror=1&fontsize=10&hidenavigation=1&theme=light&view=preview" %}
 
 
 
