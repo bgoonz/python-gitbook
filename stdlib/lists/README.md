@@ -1,6 +1,8 @@
 # Lists
 
+![](../../.gitbook/assets/image%20%2826%29.png)
 
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 List type is another sequence type defined by the list class of python. List allows you add, delete or process elements in very simple ways. List is very similar to arrays.
 

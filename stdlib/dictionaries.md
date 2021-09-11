@@ -1,5 +1,15 @@
 # Dictionaries
 
+{% file src="../.gitbook/assets/pythondictmethods.pdf" %}
+
+![](../.gitbook/assets/image%20%2828%29.png)
+
+![](../.gitbook/assets/image%20%2823%29.png)
+
+![](../.gitbook/assets/image%20%2825%29.png)
+
+
+
 {% embed url="https://gist.github.com/bgoonz/df0237e949950dfd81add75e2b95f60a" %}
 
 

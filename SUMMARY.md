@@ -144,7 +144,7 @@
 
 ## Resources
 
-* [Untitled](resources/untitled-3.md)
+* [Python Cheat Sheet](resources/python-cheat-sheet.md)
 * [Intro 2 Python](resources/intro-2-python.md)
 * [Inheritance](resources/untitled-2.md)
 * [Strings](resources/strings/README.md)
@@ -157,7 +157,6 @@
   * [Functions](resources/things-to-internalize/functions.md)
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
-* [Python Cheat Sheet](resources/python-cheat-sheet.md)
 * [Awesome Python](resources/awesome-python.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)

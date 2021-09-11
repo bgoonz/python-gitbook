@@ -1,5 +1,19 @@
 # Python Cheat Sheet
 
+{% file src="../.gitbook/assets/pythonstringmethods.pdf" %}
+
+{% file src="../.gitbook/assets/pythonlistmethods.pdf" %}
+
+{% file src="../.gitbook/assets/pythondictmethods \(1\).pdf" %}
+
+
+
+
+
+
+
+
+
 
 
 {% embed url="https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf" %}
