@@ -404,7 +404,21 @@ pp.pprint(graph.bfs_names(2))
 
 ```
 {% endtab %}
+
+{% tab title="Javascript" %}
+{% embed url="https://gist.github.com/bgoonz/5f6cfb85d684629aa2e0d5eea35edacb" %}
+
+### JS ADVANCED:
+
+{% embed url="https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16" %}
+{% endtab %}
 {% endtabs %}
+
+
+
+
+
+
 
 ## Intro to Graphs
 

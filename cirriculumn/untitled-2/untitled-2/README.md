@@ -1,22 +1,16 @@
 # D2- Module 02 - Hash Tables I
 
-{% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
+{% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" caption="" %}
 
-{% embed url="https://gist.github.com/bgoonz/d636b750dce1d21914e47f80bda8fb85\#file-hash-tables-ii-cs47-ipynb" %}
-
-
+{% embed url="https://gist.github.com/bgoonz/d636b750dce1d21914e47f80bda8fb85\#file-hash-tables-ii-cs47-ipynb" caption="" %}
 
 ![](../../../.gitbook/assets/image%20%2834%29.png)
-
-
 
 ![](../../../.gitbook/assets/image%20%2826%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 ![](../../../.gitbook/assets/image%20%2828%29%20%281%29.png)
 
 ![](../../../.gitbook/assets/image%20%2830%29.png)
-
-## 
 
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a hash table
 
@@ -44,15 +38,9 @@ Hash tables have fast deletes \(`O(1)`\) on _average_. However, in the worst cas
 
 The space complexity of a hash table is linear \(`O(n)`\). Each key-value pair in the hash table will take up space in memory.
 
-
-
 ![continued....](../../../.gitbook/assets/image%20%2829%29.png)
 
 ![](../../../.gitbook/assets/image%20%2833%29.png)
-
-
-
-
 
 #### **Strengths**
 
@@ -74,13 +62,7 @@ The above is just one of the ways to deal with hash collisions. Hopefully, you c
 
 1. In your own words, explain how and why the time complexity of hash table operations degrades to `O(n)` in the worst case.
 
-{% embed url="https://gist.github.com/bgoonz/107f827a22d09c9a08b3fd99589325ae\#file-hash-tables-ii-cs47-ipynb" %}
-
-
-
-
-
-
+{% embed url="https://gist.github.com/bgoonz/107f827a22d09c9a08b3fd99589325ae\#file-hash-tables-ii-cs47-ipynb" caption="" %}
 
 ### **Additional Resources**
 
@@ -347,12 +329,4 @@ def get(self, key):
     index = self.hash_index(key)
     return self.storage[index]
 ```
-
-
-
-
-
-
-
-
 
