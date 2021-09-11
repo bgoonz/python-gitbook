@@ -148,9 +148,11 @@
 ## Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
+* [Untitled](stdlib/untitled-2.md)
 * [Classes and objects](stdlib/classes-and-objects.md)
 * [Conditionals and loops](stdlib/conditionals-and-loops.md)
 * [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules.md)
+* [Python Data Structures](stdlib/python-data-structures.md)
 * [Functions](stdlib/untitled-1.md)
 * [Values Expressions & Statments](stdlib/values-expressions-and-statments.md)
 * [Docs](stdlib/untitled/README.md)
