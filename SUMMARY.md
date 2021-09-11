@@ -104,6 +104,7 @@
     * [List Operations](abstract-data-structures/untitled-1/untitled-4/list-operations.md)
   * [Set](abstract-data-structures/untitled-1/set/README.md)
     * [Set Intersection Union](abstract-data-structures/untitled-1/set/set-intersection-union.md)
+    * [Disjoint Set](abstract-data-structures/untitled-1/set/disjoint-set.md)
   * [Sorting](abstract-data-structures/untitled-1/untitled-3/README.md)
     * [Merge Sort](abstract-data-structures/untitled-1/untitled-3/merge-sort-1.md)
     * [Iterative Sorting](abstract-data-structures/untitled-1/untitled-3/iterative-sorting.md)
