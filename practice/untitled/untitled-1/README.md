@@ -404,7 +404,7 @@ pp.pprint(graph.bfs_names(2))
 
 ## Intro to Graphs
 
-![Directed Graph ](../../../.gitbook/assets/image%20%2814%29.png)
+![Directed Graph ](../../../.gitbook/assets/image%20%2815%29.png)
 
 ### Objectives
 
@@ -434,7 +434,7 @@ It could represent trade relationships between nations.
 
 And so on.
 
-![Different ways to represent a graph](img/representations.PNG)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
 ### Definitions
 
@@ -442,7 +442,7 @@ And so on.
 
 If the edges are "one way" \(have an arrow\), the graph is said to be a _directed graph_. If there are no arrows, the edges are bidirectional and the graph is an _undirected_ graph.
 
-![Undirected Graph](img/social_graph_undirected.jpg)
+![](../../../.gitbook/assets/image%20%2816%29.png)
 
 This is an **undirected graph** which could represent a social network like Facebook. Alice is friends with Bob, Carol and Dave, Bob is friends with Alice and Dave, Carol is only friend with Alice, and Dave is friends with only Alice and Bob. In this example, the nodes represent people and the edges represent friendship.
 
@@ -460,7 +460,7 @@ Graphs with values \(_weights_\) associated with the edges are called _weighted 
 
 The meaning of the weight is dependent on the type of graph. A graph of road network segments might have weight represent the length of the road. The higher the total weight of a route on the graph, the longer the trip is. The weights can be used to help decide if a particular route should be chosen over another.
 
-![Directed Graph](img/GoogleMaps.jpg)
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
 Weights can be further modified. For example, if one were building a bicycle map, roads with bad car traffic or very steep uphills could be given unnaturally large weights so a routing algorithm would be unlikely to take them. \(This is how Google Maps avoids freeways when you ask it for walking directions.\)
 
