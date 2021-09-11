@@ -148,7 +148,7 @@
 ## Docs <a id="stdlib"></a>
 
 * [Basic Syntax](stdlib/basic-syntax.md)
-* [Untitled](stdlib/untitled-2.md)
+* [Built-in Types](stdlib/untitled-2.md)
 * [Classes and objects](stdlib/classes-and-objects.md)
 * [Conditionals and loops](stdlib/conditionals-and-loops.md)
 * [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules.md)
