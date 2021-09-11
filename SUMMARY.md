@@ -53,6 +53,7 @@
     * [Array Practice](abstract-data-structures/untitled-1/array/array-practice.md)
   * [Binary Search](abstract-data-structures/untitled-1/binary-search.md)
   * [Exotic](abstract-data-structures/untitled-1/untitled/README.md)
+    * [Tire](abstract-data-structures/untitled-1/untitled/tire.md)
     * [Dynamic Programming](abstract-data-structures/untitled-1/untitled/dynamic-programming.md)
   * [Graphs](abstract-data-structures/untitled-1/untitled-1/README.md)
     * [Overflow Practice Problems](abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems.md)

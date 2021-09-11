@@ -156,5 +156,9 @@ _If you love cheat sheets, here are some interesting references for you \(lots o
 
 {% embed url="https://gist.github.com/bgoonz/ec383b0bafc8e43db23f922002fc88d4" %}
 
+{% embed url="https://gist.github.com/bgoonz/82154f50603f73826c27377ebaa498b5" %}
+
+{% embed url="https://gist.github.com/bgoonz/999163a278b987fe47fb247fd4d66904" %}
+
 
 
