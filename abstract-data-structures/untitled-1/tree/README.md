@@ -10,7 +10,7 @@
 
 {% page-ref page="../../../cirriculumn/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md" %}
 
-{% page-ref page="../set.md" %}
+{% page-ref page="../set/" %}
 
 {% page-ref page="binary-tree/" %}
 
