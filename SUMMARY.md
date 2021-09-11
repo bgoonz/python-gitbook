@@ -55,8 +55,11 @@
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
   * [Data Structures Overview](abstract-data-structures/untitled-1/untitled-7/README.md)
-    * [General Data Structures Notes](abstract-data-structures/untitled-1/untitled-7/general-data-structures-notes.md)
-    * [DS-Explained-Simple](abstract-data-structures/untitled-1/untitled-7/ds-explained-simple.md)
+    * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms-1/README.md)
+      * [DFS](abstract-data-structures/untitled-1/untitled-7/algorithms-1/dfs.md)
+      * [BFS](abstract-data-structures/untitled-1/untitled-7/algorithms-1/bfs.md)
+    * [General Data Structures Notes](abstract-data-structures/untitled-1/untitled-7/general-data-structures-notes/README.md)
+      * [DS-Explained-Simple](abstract-data-structures/untitled-1/untitled-7/general-data-structures-notes/ds-explained-simple.md)
     * [Untitled](abstract-data-structures/untitled-1/untitled-7/untitled.md)
     * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms.md)
     * [Dictionary](abstract-data-structures/untitled-1/untitled-7/dictionary.md)
