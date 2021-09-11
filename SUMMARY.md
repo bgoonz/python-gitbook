@@ -94,6 +94,7 @@
       * [BST Explained](abstract-data-structures/untitled-1/tree/binary-search-tree/bst-explained.md)
       * [BST Insert](abstract-data-structures/untitled-1/tree/binary-search-tree/bst-insert.md)
     * [Binary Tree](abstract-data-structures/untitled-1/tree/binary-tree/README.md)
+      * [Binary Tree Explained](abstract-data-structures/untitled-1/tree/binary-tree/binary-tree-explained.md)
       * [Find the maximum path sum between two leaves of a binary tree](abstract-data-structures/untitled-1/tree/binary-tree/find-the-maximum-path-sum-between-two-leaves-of-a-binary-tree.md)
   * [Recursion](abstract-data-structures/untitled-1/untitled-6/README.md)
     * [Recursion Explained](abstract-data-structures/untitled-1/untitled-6/recursion-explained/README.md)
@@ -119,6 +120,7 @@
     * [Insertion Sort](abstract-data-structures/untitled-1/untitled-3/insertion-sort.md)
   * [Stack](abstract-data-structures/untitled-1/stack/README.md)
     * [Stack Continued](abstract-data-structures/untitled-1/stack/stack-continued.md)
+    * [Stack Part 3](abstract-data-structures/untitled-1/stack/stack-part-3.md)
   * [Searching](abstract-data-structures/untitled-1/untitled-2/README.md)
     * [Binary Search](abstract-data-structures/untitled-1/untitled-2/binary-search.md)
 
@@ -181,6 +183,7 @@
 
 ## Docs <a id="stdlib"></a>
 
+* [Touple](stdlib/touple.md)
 * [Docs](stdlib/untitled/README.md)
   * [String-Methods](stdlib/untitled/string-methods.md)
 * [Basic Syntax](stdlib/basic-syntax.md)
