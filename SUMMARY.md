@@ -193,10 +193,10 @@
 * [Docs](stdlib/untitled/README.md)
   * [String-Methods](stdlib/untitled/string-methods.md)
 * [Lists](stdlib/lists/README.md)
-  * [List Compehensions](stdlib/lists/list-compehensions.md)
+  * [More On Lists](stdlib/lists/more-on-lists.md)
   * [Examples](stdlib/lists/examples/README.md)
     * [More-Examples](stdlib/lists/examples/more-examples.md)
-  * [More On Lists](stdlib/lists/more-on-lists.md)
+  * [List Compehensions](stdlib/lists/list-compehensions.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes](stdlib/classes/README.md)
   * [Python Objects & Classes](stdlib/classes/python-objects-and-classes.md)
@@ -243,4 +243,5 @@
   * [How to round Python values to whole numbers?](aux-exploration/subject/untitled.md)
   * [Python Array Module](aux-exploration/subject/python-array-module.md)
   * [Data Structures In JavaScript](aux-exploration/subject/data-structures-in-javascript.md)
+  * [Dunder Methods](aux-exploration/subject/dunder-methods.md)
 

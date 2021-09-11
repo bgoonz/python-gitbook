@@ -1,14 +1,16 @@
 # Lists
 
-![](../../.gitbook/assets/image%20%2826%29.png)
-
-![](../../.gitbook/assets/image%20%2832%29.png)
-
 List type is another sequence type defined by the list class of python. List allows you add, delete or process elements in very simple ways. List is very similar to arrays.
 
 You can create list using the following syntax.
 
 here each elements in the list is separated by comma and enclosed by a pair of square brackets \(`[]`\). Elements in the list can be of same type or different type. For e.g:
+
+![](../../.gitbook/assets/image%20%2826%29.png)
+
+![](../../.gitbook/assets/image%20%2832%29.png)
+
+
 
 Other ways of creating list.
 
