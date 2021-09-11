@@ -4,6 +4,14 @@ description: docs
 
 # Docs
 
+h
+
+{% page-ref page="../basic-syntax.md" %}
+
+{% page-ref page="../../resources/things-to-internalize/functions.md" %}
+
+{% page-ref page="../built-in-functions/" %}
+
 
 
 {% embed url="https://docs.python.org/3/" %}
