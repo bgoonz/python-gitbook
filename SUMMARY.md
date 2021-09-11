@@ -109,6 +109,7 @@
   * [Searching](practice/untitled/untitled-2/README.md)
     * [Binary Search](practice/untitled/untitled-2/binary-search.md)
   * [Graphs](practice/untitled/untitled-1/README.md)
+    * [\_Mini Graph-Projects](practice/untitled/untitled-1/_mini-graph-projects.md)
     * [Graph FAQ](practice/untitled/untitled-1/graph-faq/README.md)
       * [Graph DFS](practice/untitled/untitled-1/graph-faq/graph-dfs.md)
     * [Connected Components](practice/untitled/untitled-1/connected-components.md)
