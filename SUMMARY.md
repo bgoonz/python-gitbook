@@ -45,6 +45,7 @@
 ## Abstract Data Structures
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
+  * [MAP](abstract-data-structures/untitled-1/map.md)
   * [Data Structures Overview](abstract-data-structures/untitled-1/untitled-7/README.md)
     * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms.md)
     * [Dictionary](abstract-data-structures/untitled-1/untitled-7/dictionary.md)
@@ -96,6 +97,7 @@
   * [Linked List](abstract-data-structures/untitled-1/untitled-4/README.md)
     * [Double Linked List](abstract-data-structures/untitled-1/untitled-4/double-linked-list.md)
     * [List Example](abstract-data-structures/untitled-1/untitled-4/list-example.md)
+    * [Examples \(LL\) continued](abstract-data-structures/untitled-1/untitled-4/examples-ll-continued.md)
     * [List Operations](abstract-data-structures/untitled-1/untitled-4/list-operations.md)
   * [Set](abstract-data-structures/untitled-1/set.md)
   * [Sorting](abstract-data-structures/untitled-1/untitled-3/README.md)
