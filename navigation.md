@@ -1,18 +1,8 @@
 # Navigation
 
-## Navigation
-
-\*\*\*
-
-
-
 ## GitHub URLS:
 
-
-
-
-
-## Table of contents
+### Table of contents
 
 * [Home](https://github.com/bgoonz/python-gitbook/blob/master/README.md)
 * [Downloads & Misc-Assets](https://github.com/bgoonz/python-gitbook/blob/master/index.md)
