@@ -110,6 +110,7 @@
     * [Binary Search](practice/untitled/untitled-2/binary-search.md)
   * [Graphs](practice/untitled/untitled-1/README.md)
     * [\_Mini Graph-Projects](practice/untitled/untitled-1/_mini-graph-projects/README.md)
+      * [\# Social Graph](practice/untitled/untitled-1/_mini-graph-projects/social-graph.md)
       * [Searching and Generating Graphs](practice/untitled/untitled-1/_mini-graph-projects/searching-and-generating-graphs.md)
     * [Graph FAQ](practice/untitled/untitled-1/graph-faq/README.md)
       * [Graph DFS](practice/untitled/untitled-1/graph-faq/graph-dfs.md)
