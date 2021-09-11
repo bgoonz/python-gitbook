@@ -1,5 +1,11 @@
 # Navigation
 
+## My Blog:
+
+{% embed url="https://master--bgoonz-blog.netlify.app/" %}
+
+
+
 ## GitHub URLS:
 
 ### Table of contents
