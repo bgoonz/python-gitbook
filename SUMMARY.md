@@ -46,6 +46,7 @@
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
   * [Data Structures Overview](abstract-data-structures/untitled-1/untitled-7/README.md)
+    * [DS-Explained-Simple](abstract-data-structures/untitled-1/untitled-7/ds-explained-simple.md)
     * [Untitled](abstract-data-structures/untitled-1/untitled-7/untitled.md)
     * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms.md)
     * [Dictionary](abstract-data-structures/untitled-1/untitled-7/dictionary.md)

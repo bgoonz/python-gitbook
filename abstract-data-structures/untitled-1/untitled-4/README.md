@@ -2,6 +2,16 @@
 
 
 
+## Linked List
+
+A Linked List is a data structure in which the objects are arranged in a linear order. Unlike an array, however, in which the linear order is determined by the array indices, the order in a linked list is determined by a pointer in each object.
+
+Each element of a **doubly linked list** is an object with an attribute _key_ and two other pointer attributes _next_ and _prev_.
+
+A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.
+
+### 
+
 ```python
 """
 First the Node class needs to be created because every item in a linked list
