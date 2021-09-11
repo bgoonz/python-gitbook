@@ -241,3 +241,39 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 * Used to represent web pages and links by search engines. Web pages on the internet are linked to each other by hyperlinks. Each page is a vertex and the hyperlink between two pages is an edge. Used for Page Ranking in Google.
 * Used to represent locations and routes in GPS. Locations are vertices and the routes connecting locations are edges. Used to calculate the shortest route between two locations.
 
+
+
+{% page-ref page="../array/" %}
+
+{% page-ref page="../tree/binary-search-tree/" %}
+
+{% page-ref page="../untitled-4/" %}
+
+{% page-ref page="../array/extra-array.md" %}
+
+{% page-ref page="../stack/" %}
+
+{% page-ref page="../tree/binary-tree/" %}
+
+{% page-ref page="../untitled-6/" %}
+
+{% page-ref page="../untitled-5/" %}
+
+{% page-ref page="../untitled-2/" %}
+
+{% page-ref page="../untitled-3/" %}
+
+{% page-ref page="../queue/queue-sandbox.md" %}
+
+{% page-ref page="../untitled-5/" %}
+
+{% page-ref page="../untitled-4/double-linked-list.md" %}
+
+{% page-ref page="../untitled-1/" %}
+
+{% page-ref page="../untitled/" %}
+
+{% page-ref page="../heap.md" %}
+
+
+

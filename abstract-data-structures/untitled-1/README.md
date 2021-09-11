@@ -1,5 +1,7 @@
 # Abstract Data Structures:
 
+
+
 {% page-ref page="array/" %}
 
 {% page-ref page="tree/binary-search-tree/" %}
