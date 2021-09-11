@@ -12,9 +12,9 @@ When we round values, we go from a numerical value with decimal places to a whol
 
 Python has three ways to turn a floating-point value into a whole \(integer\) number:
 
-- The built-in `round()` function rounds values up and down.
-- The `math.floor()` function rounds _down_ to the next full integer.
-- The `math.ceil()` function rounds _up_ to the next full integer.
+* The built-in `round()` function rounds values up and down.
+* The `math.floor()` function rounds _down_ to the next full integer.
+* The `math.ceil()` function rounds _up_ to the next full integer.
 
 If you just want a string or script output with a whole number, then a Python format string can perform that task too. That way you also don’t lose precision in the original value.
 
@@ -74,7 +74,7 @@ Next we output the results with the `print()` function. For each variable we dis
 
 Here’s how the rounded values look:
 
-```python
+```text
 Value:          Rounded:
 3.14159265359   3
 1845.7409947    1846
@@ -91,7 +91,7 @@ That sounds abstract, but is just another way of saying that `math.floor()` roun
 
 Here’s a quick example of the `math.floor()` function:
 
-```python
+```text
     import math
 
     math.floor(12.75)
@@ -248,7 +248,7 @@ Those list comprehensions generate new lists. We assign those to the `valuesRoun
 
 The last part of the program outputs the original list and the three rounded ones. Here’s how that looks:
 
-```python
+```text
 Original values:
  [3.46410162, 6.70820393, 11.04536102, 15.29705854, 21.21320344, 31.4960315]
 Rounded:
@@ -261,7 +261,7 @@ Rounded down to next integer:
 
 In the above example we kept the original list. If you don’t need to retain those values, you can also overwrite the original list with rounded values. Here’s how a list comprehension does that:
 
-```python
+```text
 # Round all numbers in the 'values' list,
 # in place (to replace the original numbers)
 values = [round(value) for value in values]
@@ -310,7 +310,7 @@ Inside the loop we call the `append()` method on each of the three new lists. Th
 
 The program ends with several `print()` statements. That displays the original list and its rounded derivatives. Here’s what that output looks like:
 
-```python
+```text
 Original values:
  [3.46410162, 6.70820393, 11.04536102, 15.29705854, 21.21320344, 31.4960315]
 Rounded (standard):
@@ -337,3 +337,10 @@ Python has three ways to round a floating-point value to a whole number. The `ro
 The `math.floor()` function, on the other hand, always rounds down to the nearest full integer. `math.ceil()` does the opposite. That function always rounds up to a whole number.
 
 All three functions work in the same way: provide the function with one argument, which is the floating-point value to round.
+
+
+
+
+
+
+

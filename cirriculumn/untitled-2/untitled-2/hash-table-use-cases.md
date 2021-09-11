@@ -41,3 +41,4 @@ Hash tables can be used by some programs to avoid creating multiple character st
 Main article: [Transposition table](https://en.wikipedia.org/wiki/Transposition_table)
 
 A [transposition table](https://en.wikipedia.org/wiki/Transposition_table) to a complex Hash Table which stores information about each section that has been searched.[\[44\]](https://en.wikipedia.org/wiki/Hash_table#cite_note-44)
+

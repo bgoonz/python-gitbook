@@ -1,10 +1,12 @@
 # Requests Module
 
+
+
 **Requests** is an elegant and simple HTTP library for Python, built for human beings.
 
 **Behold, the power of Requests**:
 
-```python
+```text
 >>> r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 >>> r.status_code
 200
@@ -26,21 +28,21 @@ See [similar code, sans Requests](https://gist.github.com/973705).
 
 Requests is ready for today’s web.
 
-- Keep-Alive & Connection Pooling
-- International Domains and URLs
-- Sessions with Cookie Persistence
-- Browser-style SSL Verification
-- Automatic Content Decoding
-- Basic/Digest Authentication
-- Elegant Key/Value Cookies
-- Automatic Decompression
-- Unicode Response Bodies
-- HTTP\(S\) Proxy Support
-- Multipart File Uploads
-- Streaming Downloads
-- Connection Timeouts
-- Chunked Requests
-- `.netrc` Support
+* Keep-Alive & Connection Pooling
+* International Domains and URLs
+* Sessions with Cookie Persistence
+* Browser-style SSL Verification
+* Automatic Content Decoding
+* Basic/Digest Authentication
+* Elegant Key/Value Cookies
+* Automatic Decompression
+* Unicode Response Bodies
+* HTTP\(S\) Proxy Support
+* Multipart File Uploads
+* Streaming Downloads
+* Connection Timeouts
+* Chunked Requests
+* `.netrc` Support
 
 Requests officially supports Python 2.7 & 3.6+, and runs great on PyPy.
 
@@ -48,109 +50,113 @@ Requests officially supports Python 2.7 & 3.6+, and runs great on PyPy.
 
 This part of the documentation, which is mostly prose, begins with some background information about Requests, then focuses on step-by-step instructions for getting the most out of Requests.
 
-- [Installation of Requests](https://docs.python-requests.org/en/master/user/install/)
-  - [$ python -m pip install requests](https://docs.python-requests.org/en/master/user/install/#python-m-pip-install-requests)
-  - [Get the Source Code](https://docs.python-requests.org/en/master/user/install/#get-the-source-code)
-- [Quickstart](https://docs.python-requests.org/en/master/user/quickstart/)
-  - [Make a Request](https://docs.python-requests.org/en/master/user/quickstart/#make-a-request)
-  - [Passing Parameters In URLs](https://docs.python-requests.org/en/master/user/quickstart/#passing-parameters-in-urls)
-  - [Response Content](https://docs.python-requests.org/en/master/user/quickstart/#response-content)
-  - [Binary Response Content](https://docs.python-requests.org/en/master/user/quickstart/#binary-response-content)
-  - [JSON Response Content](https://docs.python-requests.org/en/master/user/quickstart/#json-response-content)
-  - [Raw Response Content](https://docs.python-requests.org/en/master/user/quickstart/#raw-response-content)
-  - [Custom Headers](https://docs.python-requests.org/en/master/user/quickstart/#custom-headers)
-  - [More complicated POST requests](https://docs.python-requests.org/en/master/user/quickstart/#more-complicated-post-requests)
-  - [POST a Multipart-Encoded File](https://docs.python-requests.org/en/master/user/quickstart/#post-a-multipart-encoded-file)
-  - [Response Status Codes](https://docs.python-requests.org/en/master/user/quickstart/#response-status-codes)
-  - [Response Headers](https://docs.python-requests.org/en/master/user/quickstart/#response-headers)
-  - [Cookies](https://docs.python-requests.org/en/master/user/quickstart/#cookies)
-  - [Redirection and History](https://docs.python-requests.org/en/master/user/quickstart/#redirection-and-history)
-  - [Timeouts](https://docs.python-requests.org/en/master/user/quickstart/#timeouts)
-  - [Errors and Exceptions](https://docs.python-requests.org/en/master/user/quickstart/#errors-and-exceptions)
-- [Advanced Usage](https://docs.python-requests.org/en/master/user/advanced/)
-  - [Session Objects](https://docs.python-requests.org/en/master/user/advanced/#session-objects)
-  - [Request and Response Objects](https://docs.python-requests.org/en/master/user/advanced/#request-and-response-objects)
-  - [Prepared Requests](https://docs.python-requests.org/en/master/user/advanced/#prepared-requests)
-  - [SSL Cert Verification](https://docs.python-requests.org/en/master/user/advanced/#ssl-cert-verification)
-  - [Client Side Certificates](https://docs.python-requests.org/en/master/user/advanced/#client-side-certificates)
-  - [CA Certificates](https://docs.python-requests.org/en/master/user/advanced/#ca-certificates)
-  - [Body Content Workflow](https://docs.python-requests.org/en/master/user/advanced/#body-content-workflow)
-  - [Keep-Alive](https://docs.python-requests.org/en/master/user/advanced/#keep-alive)
-  - [Streaming Uploads](https://docs.python-requests.org/en/master/user/advanced/#streaming-uploads)
-  - [Chunk-Encoded Requests](https://docs.python-requests.org/en/master/user/advanced/#chunk-encoded-requests)
-  - [POST Multiple Multipart-Encoded Files](https://docs.python-requests.org/en/master/user/advanced/#post-multiple-multipart-encoded-files)
-  - [Event Hooks](https://docs.python-requests.org/en/master/user/advanced/#event-hooks)
-  - [Custom Authentication](https://docs.python-requests.org/en/master/user/advanced/#custom-authentication)
-  - [Streaming Requests](https://docs.python-requests.org/en/master/user/advanced/#streaming-requests)
-  - [Proxies](https://docs.python-requests.org/en/master/user/advanced/#proxies)
-  - [Compliance](https://docs.python-requests.org/en/master/user/advanced/#compliance)
-  - [HTTP Verbs](https://docs.python-requests.org/en/master/user/advanced/#http-verbs)
-  - [Custom Verbs](https://docs.python-requests.org/en/master/user/advanced/#custom-verbs)
-  - [Link Headers](https://docs.python-requests.org/en/master/user/advanced/#link-headers)
-  - [Transport Adapters](https://docs.python-requests.org/en/master/user/advanced/#transport-adapters)
-  - [Blocking Or Non-Blocking?](https://docs.python-requests.org/en/master/user/advanced/#blocking-or-non-blocking)
-  - [Header Ordering](https://docs.python-requests.org/en/master/user/advanced/#header-ordering)
-  - [Timeouts](https://docs.python-requests.org/en/master/user/advanced/#timeouts)
-- [Authentication](https://docs.python-requests.org/en/master/user/authentication/)
-  - [Basic Authentication](https://docs.python-requests.org/en/master/user/authentication/#basic-authentication)
-  - [Digest Authentication](https://docs.python-requests.org/en/master/user/authentication/#digest-authentication)
-  - [OAuth 1 Authentication](https://docs.python-requests.org/en/master/user/authentication/#oauth-1-authentication)
-  - [OAuth 2 and OpenID Connect Authentication](https://docs.python-requests.org/en/master/user/authentication/#oauth-2-and-openid-connect-authentication)
-  - [Other Authentication](https://docs.python-requests.org/en/master/user/authentication/#other-authentication)
-  - [New Forms of Authentication](https://docs.python-requests.org/en/master/user/authentication/#new-forms-of-authentication)
+* [Installation of Requests](https://docs.python-requests.org/en/master/user/install/)
+  * [$ python -m pip install requests](https://docs.python-requests.org/en/master/user/install/#python-m-pip-install-requests)
+  * [Get the Source Code](https://docs.python-requests.org/en/master/user/install/#get-the-source-code)
+* [Quickstart](https://docs.python-requests.org/en/master/user/quickstart/)
+  * [Make a Request](https://docs.python-requests.org/en/master/user/quickstart/#make-a-request)
+  * [Passing Parameters In URLs](https://docs.python-requests.org/en/master/user/quickstart/#passing-parameters-in-urls)
+  * [Response Content](https://docs.python-requests.org/en/master/user/quickstart/#response-content)
+  * [Binary Response Content](https://docs.python-requests.org/en/master/user/quickstart/#binary-response-content)
+  * [JSON Response Content](https://docs.python-requests.org/en/master/user/quickstart/#json-response-content)
+  * [Raw Response Content](https://docs.python-requests.org/en/master/user/quickstart/#raw-response-content)
+  * [Custom Headers](https://docs.python-requests.org/en/master/user/quickstart/#custom-headers)
+  * [More complicated POST requests](https://docs.python-requests.org/en/master/user/quickstart/#more-complicated-post-requests)
+  * [POST a Multipart-Encoded File](https://docs.python-requests.org/en/master/user/quickstart/#post-a-multipart-encoded-file)
+  * [Response Status Codes](https://docs.python-requests.org/en/master/user/quickstart/#response-status-codes)
+  * [Response Headers](https://docs.python-requests.org/en/master/user/quickstart/#response-headers)
+  * [Cookies](https://docs.python-requests.org/en/master/user/quickstart/#cookies)
+  * [Redirection and History](https://docs.python-requests.org/en/master/user/quickstart/#redirection-and-history)
+  * [Timeouts](https://docs.python-requests.org/en/master/user/quickstart/#timeouts)
+  * [Errors and Exceptions](https://docs.python-requests.org/en/master/user/quickstart/#errors-and-exceptions)
+* [Advanced Usage](https://docs.python-requests.org/en/master/user/advanced/)
+  * [Session Objects](https://docs.python-requests.org/en/master/user/advanced/#session-objects)
+  * [Request and Response Objects](https://docs.python-requests.org/en/master/user/advanced/#request-and-response-objects)
+  * [Prepared Requests](https://docs.python-requests.org/en/master/user/advanced/#prepared-requests)
+  * [SSL Cert Verification](https://docs.python-requests.org/en/master/user/advanced/#ssl-cert-verification)
+  * [Client Side Certificates](https://docs.python-requests.org/en/master/user/advanced/#client-side-certificates)
+  * [CA Certificates](https://docs.python-requests.org/en/master/user/advanced/#ca-certificates)
+  * [Body Content Workflow](https://docs.python-requests.org/en/master/user/advanced/#body-content-workflow)
+  * [Keep-Alive](https://docs.python-requests.org/en/master/user/advanced/#keep-alive)
+  * [Streaming Uploads](https://docs.python-requests.org/en/master/user/advanced/#streaming-uploads)
+  * [Chunk-Encoded Requests](https://docs.python-requests.org/en/master/user/advanced/#chunk-encoded-requests)
+  * [POST Multiple Multipart-Encoded Files](https://docs.python-requests.org/en/master/user/advanced/#post-multiple-multipart-encoded-files)
+  * [Event Hooks](https://docs.python-requests.org/en/master/user/advanced/#event-hooks)
+  * [Custom Authentication](https://docs.python-requests.org/en/master/user/advanced/#custom-authentication)
+  * [Streaming Requests](https://docs.python-requests.org/en/master/user/advanced/#streaming-requests)
+  * [Proxies](https://docs.python-requests.org/en/master/user/advanced/#proxies)
+  * [Compliance](https://docs.python-requests.org/en/master/user/advanced/#compliance)
+  * [HTTP Verbs](https://docs.python-requests.org/en/master/user/advanced/#http-verbs)
+  * [Custom Verbs](https://docs.python-requests.org/en/master/user/advanced/#custom-verbs)
+  * [Link Headers](https://docs.python-requests.org/en/master/user/advanced/#link-headers)
+  * [Transport Adapters](https://docs.python-requests.org/en/master/user/advanced/#transport-adapters)
+  * [Blocking Or Non-Blocking?](https://docs.python-requests.org/en/master/user/advanced/#blocking-or-non-blocking)
+  * [Header Ordering](https://docs.python-requests.org/en/master/user/advanced/#header-ordering)
+  * [Timeouts](https://docs.python-requests.org/en/master/user/advanced/#timeouts)
+* [Authentication](https://docs.python-requests.org/en/master/user/authentication/)
+  * [Basic Authentication](https://docs.python-requests.org/en/master/user/authentication/#basic-authentication)
+  * [Digest Authentication](https://docs.python-requests.org/en/master/user/authentication/#digest-authentication)
+  * [OAuth 1 Authentication](https://docs.python-requests.org/en/master/user/authentication/#oauth-1-authentication)
+  * [OAuth 2 and OpenID Connect Authentication](https://docs.python-requests.org/en/master/user/authentication/#oauth-2-and-openid-connect-authentication)
+  * [Other Authentication](https://docs.python-requests.org/en/master/user/authentication/#other-authentication)
+  * [New Forms of Authentication](https://docs.python-requests.org/en/master/user/authentication/#new-forms-of-authentication)
 
 ### The Community Guide
 
 This part of the documentation, which is mostly prose, details the Requests ecosystem and community.
 
-- [Recommended Packages and Extensions](https://docs.python-requests.org/en/master/community/recommended/)
-  - [Certifi CA Bundle](https://docs.python-requests.org/en/master/community/recommended/#certifi-ca-bundle)
-  - [CacheControl](https://docs.python-requests.org/en/master/community/recommended/#cachecontrol)
-  - [Requests-Toolbelt](https://docs.python-requests.org/en/master/community/recommended/#requests-toolbelt)
-  - [Requests-Threads](https://docs.python-requests.org/en/master/community/recommended/#requests-threads)
-  - [Requests-OAuthlib](https://docs.python-requests.org/en/master/community/recommended/#requests-oauthlib)
-  - [Betamax](https://docs.python-requests.org/en/master/community/recommended/#betamax)
-- [Frequently Asked Questions](https://docs.python-requests.org/en/master/community/faq/)
-  - [Encoded Data?](https://docs.python-requests.org/en/master/community/faq/#encoded-data)
-  - [Custom User-Agents?](https://docs.python-requests.org/en/master/community/faq/#custom-user-agents)
-  - [Why not Httplib2?](https://docs.python-requests.org/en/master/community/faq/#why-not-httplib2)
-  - [Python 3 Support?](https://docs.python-requests.org/en/master/community/faq/#python-3-support)
-  - [Python 2 Support?](https://docs.python-requests.org/en/master/community/faq/#python-2-support)
-  - [What are “hostname doesn’t match” errors?](https://docs.python-requests.org/en/master/community/faq/#what-are-hostname-doesn-t-match-errors)
-- [Integrations](https://docs.python-requests.org/en/master/community/out-there/)
-  - [Python for iOS](https://docs.python-requests.org/en/master/community/out-there/#python-for-ios)
-- [Articles & Talks](https://docs.python-requests.org/en/master/community/out-there/#articles-talks)
-- [Support](https://docs.python-requests.org/en/master/community/support/)
-  - [Stack Overflow](https://docs.python-requests.org/en/master/community/support/#stack-overflow)
-  - [File an Issue](https://docs.python-requests.org/en/master/community/support/#file-an-issue)
-  - [Send a Tweet](https://docs.python-requests.org/en/master/community/support/#send-a-tweet)
-- [Vulnerability Disclosure](https://docs.python-requests.org/en/master/community/vulnerabilities/)
-  - [Process](https://docs.python-requests.org/en/master/community/vulnerabilities/#process)
-  - [Previous CVEs](https://docs.python-requests.org/en/master/community/vulnerabilities/#previous-cves)
-- [Release Process and Rules](https://docs.python-requests.org/en/master/community/release-process/)
-  - [Major Releases](https://docs.python-requests.org/en/master/community/release-process/#major-releases)
-  - [Minor Releases](https://docs.python-requests.org/en/master/community/release-process/#minor-releases)
-  - [Hotfix Releases](https://docs.python-requests.org/en/master/community/release-process/#hotfix-releases)
-  - [Reasoning](https://docs.python-requests.org/en/master/community/release-process/#reasoning)
-- [Community Updates](https://docs.python-requests.org/en/master/community/updates/)
-- [Release History](https://docs.python-requests.org/en/master/community/updates/#release-history)
+* [Recommended Packages and Extensions](https://docs.python-requests.org/en/master/community/recommended/)
+  * [Certifi CA Bundle](https://docs.python-requests.org/en/master/community/recommended/#certifi-ca-bundle)
+  * [CacheControl](https://docs.python-requests.org/en/master/community/recommended/#cachecontrol)
+  * [Requests-Toolbelt](https://docs.python-requests.org/en/master/community/recommended/#requests-toolbelt)
+  * [Requests-Threads](https://docs.python-requests.org/en/master/community/recommended/#requests-threads)
+  * [Requests-OAuthlib](https://docs.python-requests.org/en/master/community/recommended/#requests-oauthlib)
+  * [Betamax](https://docs.python-requests.org/en/master/community/recommended/#betamax)
+* [Frequently Asked Questions](https://docs.python-requests.org/en/master/community/faq/)
+  * [Encoded Data?](https://docs.python-requests.org/en/master/community/faq/#encoded-data)
+  * [Custom User-Agents?](https://docs.python-requests.org/en/master/community/faq/#custom-user-agents)
+  * [Why not Httplib2?](https://docs.python-requests.org/en/master/community/faq/#why-not-httplib2)
+  * [Python 3 Support?](https://docs.python-requests.org/en/master/community/faq/#python-3-support)
+  * [Python 2 Support?](https://docs.python-requests.org/en/master/community/faq/#python-2-support)
+  * [What are “hostname doesn’t match” errors?](https://docs.python-requests.org/en/master/community/faq/#what-are-hostname-doesn-t-match-errors)
+* [Integrations](https://docs.python-requests.org/en/master/community/out-there/)
+  * [Python for iOS](https://docs.python-requests.org/en/master/community/out-there/#python-for-ios)
+* [Articles & Talks](https://docs.python-requests.org/en/master/community/out-there/#articles-talks)
+* [Support](https://docs.python-requests.org/en/master/community/support/)
+  * [Stack Overflow](https://docs.python-requests.org/en/master/community/support/#stack-overflow)
+  * [File an Issue](https://docs.python-requests.org/en/master/community/support/#file-an-issue)
+  * [Send a Tweet](https://docs.python-requests.org/en/master/community/support/#send-a-tweet)
+* [Vulnerability Disclosure](https://docs.python-requests.org/en/master/community/vulnerabilities/)
+  * [Process](https://docs.python-requests.org/en/master/community/vulnerabilities/#process)
+  * [Previous CVEs](https://docs.python-requests.org/en/master/community/vulnerabilities/#previous-cves)
+* [Release Process and Rules](https://docs.python-requests.org/en/master/community/release-process/)
+  * [Major Releases](https://docs.python-requests.org/en/master/community/release-process/#major-releases)
+  * [Minor Releases](https://docs.python-requests.org/en/master/community/release-process/#minor-releases)
+  * [Hotfix Releases](https://docs.python-requests.org/en/master/community/release-process/#hotfix-releases)
+  * [Reasoning](https://docs.python-requests.org/en/master/community/release-process/#reasoning)
+* [Community Updates](https://docs.python-requests.org/en/master/community/updates/)
+* [Release History](https://docs.python-requests.org/en/master/community/updates/#release-history)
 
 ### The API Documentation / Guide
 
 If you are looking for information on a specific function, class, or method, this part of the documentation is for you.
 
-- [Developer Interface](https://docs.python-requests.org/en/master/api/)
-  - [Main Interface](https://docs.python-requests.org/en/master/api/#main-interface)
-  - [Exceptions](https://docs.python-requests.org/en/master/api/#exceptions)
-  - [Request Sessions](https://docs.python-requests.org/en/master/api/#request-sessions)
-  - [Lower-Level Classes](https://docs.python-requests.org/en/master/api/#lower-level-classes)
-  - [Lower-Lower-Level Classes](https://docs.python-requests.org/en/master/api/#lower-lower-level-classes)
-  - [Authentication](https://docs.python-requests.org/en/master/api/#authentication)
-  - [Encodings](https://docs.python-requests.org/en/master/api/#encodings)
-  - [Cookies](https://docs.python-requests.org/en/master/api/#cookies)
-  - [Status Code Lookup](https://docs.python-requests.org/en/master/api/#status-code-lookup)
-  - [Migrating to 1.x](https://docs.python-requests.org/en/master/api/#migrating-to-1-x)
-  - [Migrating to 2.x](https://docs.python-requests.org/en/master/api/#migrating-to-2-x)
+* [Developer Interface](https://docs.python-requests.org/en/master/api/)
+  * [Main Interface](https://docs.python-requests.org/en/master/api/#main-interface)
+  * [Exceptions](https://docs.python-requests.org/en/master/api/#exceptions)
+  * [Request Sessions](https://docs.python-requests.org/en/master/api/#request-sessions)
+  * [Lower-Level Classes](https://docs.python-requests.org/en/master/api/#lower-level-classes)
+  * [Lower-Lower-Level Classes](https://docs.python-requests.org/en/master/api/#lower-lower-level-classes)
+  * [Authentication](https://docs.python-requests.org/en/master/api/#authentication)
+  * [Encodings](https://docs.python-requests.org/en/master/api/#encodings)
+  * [Cookies](https://docs.python-requests.org/en/master/api/#cookies)
+  * [Status Code Lookup](https://docs.python-requests.org/en/master/api/#status-code-lookup)
+  * [Migrating to 1.x](https://docs.python-requests.org/en/master/api/#migrating-to-1-x)
+  * [Migrating to 2.x](https://docs.python-requests.org/en/master/api/#migrating-to-2-x)
+
+
+
+
 
 ### Main Interface
 
@@ -222,7 +228,7 @@ Constructs and sends a [`Request`](https://docs.python-requests.org/en/master/ap
 
 Usage:
 
-```python
+```text
 >>> import requests
 >>> req = requests.request('GET', 'https://httpbin.org/get')
 >>> req
@@ -459,7 +465,7 @@ Provides cookie persistence, connection-pooling, and configuration.
 
 Basic Usage:
 
-```python
+```text
 >>> import requests
 >>> s = requests.Session()
 >>> s.get('https://httpbin.org/get')
@@ -468,7 +474,7 @@ Basic Usage:
 
 Or as a context manager:
 
-```python
+```text
 >>> with requests.Session() as s:
 ...     s.get('https://httpbin.org/get')
 <Response [200]>
@@ -537,7 +543,8 @@ Sends a GET request. Returns [`Response`](https://docs.python-requests.org/en/ma
 Returns the appropriate connection adapter for the given URL.
 
 | Return type: | [requests.adapters.BaseAdapter](https://docs.python-requests.org/en/master/api/#requests.adapters.BaseAdapter) |
-| :-- | :-- |
+| :--- | :--- |
+
 
 `get_redirect_target`\(_resp_\)
 
@@ -572,12 +579,13 @@ A case-insensitive dictionary of headers to be sent on each [`Request`](https://
 
 Event-handling hooks.`max_redirects` _= None_
 
-Maximum number of redirects allowed. If the request exceeds this limit, a [`TooManyRedirects`](https://docs.python-requests.org/en/master/api/#requests.TooManyRedirects) exception is raised. This defaults to requests.models.DEFAULT*REDIRECT_LIMIT, which is 30.`merge_environment_settings`\(\_url*, _proxies_, _stream_, _verify_, _cert_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.merge_environment_settings)
+Maximum number of redirects allowed. If the request exceeds this limit, a [`TooManyRedirects`](https://docs.python-requests.org/en/master/api/#requests.TooManyRedirects) exception is raised. This defaults to requests.models.DEFAULT\_REDIRECT\_LIMIT, which is 30.`merge_environment_settings`\(_url_, _proxies_, _stream_, _verify_, _cert_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.merge_environment_settings)
 
 Check the environment and merge it with some settings.
 
 | Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict) |
-| :----------- | :----------------------------------------------------------- |
+| :--- | :--- |
+
 
 `mount`\(_prefix_, _adapter_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.mount)
 
@@ -670,7 +678,7 @@ Sends a POST request. Returns [`Response`](https://docs.python-requests.org/en/m
 Constructs a [`PreparedRequest`](https://docs.python-requests.org/en/master/api/#requests.PreparedRequest) for transmission and returns it. The [`PreparedRequest`](https://docs.python-requests.org/en/master/api/#requests.PreparedRequest) has settings merged from the [`Request`](https://docs.python-requests.org/en/master/api/#requests.Request) instance and those of the [`Session`](https://docs.python-requests.org/en/master/api/#requests.Session).
 
 | Parameters: | **request** – [`Request`](https://docs.python-requests.org/en/master/api/#requests.Request) instance to prepare with this session’s settings. |
-| :-- | :-- |
+| :--- | :--- |
 | Return type: | [requests.PreparedRequest](https://docs.python-requests.org/en/master/api/#requests.PreparedRequest) |
 
 `proxies` _= None_
@@ -702,20 +710,21 @@ Sends a PUT request. Returns [`Response`](https://docs.python-requests.org/en/ma
   </tbody>
 </table>
 
-`rebuild_auth`\(_prepared_request_, _response_\)
+`rebuild_auth`\(_prepared\_request_, _response_\)
 
-When being redirected we may want to strip authentication from the request to avoid leaking credentials. This method intelligently removes and reapplies authentication where possible to avoid credential loss.`rebuild_method`\(_prepared_request_, _response_\)
+When being redirected we may want to strip authentication from the request to avoid leaking credentials. This method intelligently removes and reapplies authentication where possible to avoid credential loss.`rebuild_method`\(_prepared\_request_, _response_\)
 
-When being redirected we may want to change the method of the request based on certain specs or browser behavior.`rebuild_proxies`\(_prepared_request_, _proxies_\)
+When being redirected we may want to change the method of the request based on certain specs or browser behavior.`rebuild_proxies`\(_prepared\_request_, _proxies_\)
 
-This method re-evaluates the proxy configuration by considering the environment variables. If we are redirected to a URL covered by NO_PROXY, we strip the proxy configuration. Otherwise, we set missing proxy keys for this URL \(in case they were stripped by a previous redirect\).
+This method re-evaluates the proxy configuration by considering the environment variables. If we are redirected to a URL covered by NO\_PROXY, we strip the proxy configuration. Otherwise, we set missing proxy keys for this URL \(in case they were stripped by a previous redirect\).
 
 This method also replaces the Proxy-Authorization header where necessary.
 
 | Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict) |
-| :----------- | :----------------------------------------------------------- |
+| :--- | :--- |
 
-`request`\(_method_, _url_, _params=None_, _data=None_, _headers=None_, _cookies=None_, _files=None_, _auth=None_, _timeout=None_, _allow_redirects=True_, _proxies=None_, _hooks=None_, _stream=None_, _verify=None_, _cert=None_, _json=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.request)
+
+`request`\(_method_, _url_, _params=None_, _data=None_, _headers=None_, _cookies=None_, _files=None_, _auth=None_, _timeout=None_, _allow\_redirects=True_, _proxies=None_, _hooks=None_, _stream=None_, _verify=None_, _cert=None_, _json=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.request)
 
 Constructs a [`Request`](https://docs.python-requests.org/en/master/api/#requests.Request), prepares it and sends it. Returns [`Response`](https://docs.python-requests.org/en/master/api/#requests.Response) object.
 
@@ -774,16 +783,17 @@ Constructs a [`Request`](https://docs.python-requests.org/en/master/api/#request
   </tbody>
 </table>
 
-`resolve_redirects`\(_resp_, _req_, _stream=False_, _timeout=None_, _verify=True_, _cert=None_, _proxies=None_, _yield_requests=False_, _\*\*adapter_kwargs_\)
+`resolve_redirects`\(_resp_, _req_, _stream=False_, _timeout=None_, _verify=True_, _cert=None_, _proxies=None_, _yield\_requests=False_, _\*\*adapter\_kwargs_\)
 
 Receives a Response. Returns a generator of Responses or Requests.`send`\(_request_, _\*\*kwargs_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/sessions/#Session.send)
 
 Send a given PreparedRequest.
 
 | Return type: | [requests.Response](https://docs.python-requests.org/en/master/api/#requests.Response) |
-| :-- | :-- |
+| :--- | :--- |
 
-`should_strip_auth`\(_old_url_, _new_url_\)
+
+`should_strip_auth`\(_old\_url_, _new\_url_\)
 
 Decide whether Authorization header should be removed when redirecting`stream` _= None_
 
@@ -833,7 +843,7 @@ Used to prepare a [`PreparedRequest`](https://docs.python-requests.org/en/master
 
 Usage:
 
-```python
+```text
 >>> import requests
 >>> req = requests.Request('GET', 'https://httpbin.org/get')
 >>> req.prepare()
@@ -850,7 +860,7 @@ Properly register a hook._class_ `requests.Response`[\[source\]](https://docs.py
 
 The [`Response`](https://docs.python-requests.org/en/master/api/#requests.Response) object, which contains a server’s response to an HTTP request.`apparent_encoding`
 
-The apparent encoding, provided by the charset_normalizer or chardet libraries.`close`\(\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.close)
+The apparent encoding, provided by the charset\_normalizer or chardet libraries.`close`\(\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.close)
 
 Releases the connection back to the pool. Once this method has been called the underlying `raw` object must not be accessed again.
 
@@ -870,13 +880,13 @@ A list of [`Response`](https://docs.python-requests.org/en/master/api/#requests.
 
 True if this Response one of the permanent versions of redirect.`is_redirect`
 
-True if this Response is a well-formed HTTP redirect that could have been processed automatically \(by [`Session.resolve_redirects`](https://docs.python-requests.org/en/master/api/#requests.Session.resolve_redirects)\).`iter_content`\(_chunk_size=1_, _decode_unicode=False_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_content)
+True if this Response is a well-formed HTTP redirect that could have been processed automatically \(by [`Session.resolve_redirects`](https://docs.python-requests.org/en/master/api/#requests.Session.resolve_redirects)\).`iter_content`\(_chunk\_size=1_, _decode\_unicode=False_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_content)
 
 Iterates over the response data. When stream=True is set on the request, this avoids reading the content at once into memory for large responses. The chunk size is the number of bytes it should read into memory. This is not necessarily the length of each item returned as decoding can take place.
 
-chunk_size must be of type int or None. A value of None will function differently depending on the value of stream. stream=True will read data as it arrives in whatever size the chunks are received. If stream=False, data is returned as a single chunk.
+chunk\_size must be of type int or None. A value of None will function differently depending on the value of stream. stream=True will read data as it arrives in whatever size the chunks are received. If stream=False, data is returned as a single chunk.
 
-If decode*unicode is True, content will be decoded using the best available encoding based on the response.`iter_lines`\(\_chunk_size=512*, _decode_unicode=False_, _delimiter=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_lines)
+If decode\_unicode is True, content will be decoded using the best available encoding based on the response.`iter_lines`\(_chunk\_size=512_, _decode\_unicode=False_, _delimiter=None_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/models/#Response.iter_lines)
 
 Iterates over the response data, one line at a time. When stream=True is set on the request, this avoids reading the content at once into memory for large responses.
 
@@ -887,7 +897,7 @@ This method is not reentrant safe.`json`\(_\*\*kwargs_\)[\[source\]](https://doc
 Returns the json-encoded content of a response, if any.
 
 | Parameters: | **\*\*kwargs** – Optional arguments that `json.loads` takes. |
-| :-- | :-- |
+| :--- | :--- |
 | Raises: | **requests.exceptions.JSONDecodeError** – If the response body does not contain valid json. |
 
 `links`
@@ -928,7 +938,7 @@ Instances are generated from a [`Request`](https://docs.python-requests.org/en/m
 
 Usage:
 
-```python
+```text
 >>> import requests
 >>> req = requests.Request('GET', 'https://httpbin.org/get')
 >>> r = req.prepare()
@@ -1011,7 +1021,7 @@ Sends PreparedRequest object. Returns Response object.
   <tbody></tbody>
 </table>
 
-_class_ `requests.adapters.HTTPAdapter`\(_pool_connections=10_, _pool_maxsize=10_, _max_retries=0_, _pool_block=False_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter)
+_class_ `requests.adapters.HTTPAdapter`\(_pool\_connections=10_, _pool\_maxsize=10_, _max\_retries=0_, _pool\_block=False_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter)
 
 The built-in HTTP Adapter for urllib3.
 
@@ -1044,7 +1054,7 @@ Provides a general-case interface for Requests sessions to contact HTTP and HTTP
 
 Usage:
 
-```python
+```text
 >>> import requests
 >>> s = requests.Session()
 >>> a = requests.adapters.HTTPAdapter(max_retries=3)
@@ -1151,7 +1161,7 @@ Returns a urllib3 connection for the given URL. This should not be called from u
   </tbody>
 </table>
 
-`init_poolmanager`\(_connections_, _maxsize_, _block=False_, _\*\*pool_kwargs_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter.init_poolmanager)
+`init_poolmanager`\(_connections_, _maxsize_, _block=False_, _\*\*pool\_kwargs_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter.init_poolmanager)
 
 Initializes a urllib3 PoolManager.
 
@@ -1182,11 +1192,11 @@ Returns a dictionary of the headers to add to any request sent through a proxy. 
 
 This should not be called from user code, and is only exposed for use when subclassing the [`HTTPAdapter`](https://docs.python-requests.org/en/master/api/#requests.adapters.HTTPAdapter).
 
-| Parameters:  | **proxy** – The url of the proxy being used for this request. |
-| :----------- | :------------------------------------------------------------ |
-| Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict)  |
+| Parameters: | **proxy** – The url of the proxy being used for this request. |
+| :--- | :--- |
+| Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict) |
 
-`proxy_manager_for`\(_proxy_, _\*\*proxy_kwargs_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter.proxy_manager_for)
+`proxy_manager_for`\(_proxy_, _\*\*proxy\_kwargs_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/adapters/#HTTPAdapter.proxy_manager_for)
 
 Return urllib3 ProxyManager for the given proxy.
 
@@ -1289,7 +1299,7 @@ Sends PreparedRequest object. Returns Response object.
 
 _class_ `requests.auth.AuthBase`[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/auth/#AuthBase)
 
-Base class that all auth implementations derive from*class* `requests.auth.HTTPBasicAuth`\(_username_, _password_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/auth/#HTTPBasicAuth)
+Base class that all auth implementations derive from_class_ `requests.auth.HTTPBasicAuth`\(_username_, _password_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/auth/#HTTPBasicAuth)
 
 Attaches HTTP Basic Authentication to the given Request object._class_ `requests.auth.HTTPProxyAuth`\(_username_, _password_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/auth/#HTTPProxyAuth)
 
@@ -1304,14 +1314,15 @@ Attaches HTTP Digest Authentication to the given Request object.
 Returns encodings from given content string.
 
 | Parameters: | **content** – bytestring to extract encodings from. |
-| :---------- | :-------------------------------------------------- |
+| :--- | :--- |
+
 
 `requests.utils.get_encoding_from_headers`\(_headers_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/utils/#get_encoding_from_headers)
 
 Returns encodings from given HTTP Header Dict.
 
-| Parameters:  | **headers** – dictionary to extract encoding from.         |
-| :----------- | :--------------------------------------------------------- |
+| Parameters: | **headers** – dictionary to extract encoding from. |
+| :--- | :--- |
 | Return type: | [str](https://docs.python.org/3/library/stdtypes.html#str) |
 
 `requests.utils.get_unicode_from_response`\(_r_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/utils/#get_unicode_from_response)
@@ -1319,7 +1330,8 @@ Returns encodings from given HTTP Header Dict.
 Returns the requested content back in unicode.
 
 | Parameters: | **r** – Response object to get unicode content from. |
-| :---------- | :--------------------------------------------------- |
+| :--- | :--- |
+
 
 Tried:
 
@@ -1327,7 +1339,8 @@ Tried:
 2. fall back and replace all unicode characters
 
 | Return type: | [str](https://docs.python.org/3/library/stdtypes.html#str) |
-| :----------- | :--------------------------------------------------------- |
+| :--- | :--- |
+
 
 ### Cookies
 
@@ -1335,11 +1348,11 @@ Tried:
 
 Returns a key/value dictionary from a CookieJar.
 
-| Parameters:  | **cj** – CookieJar object to extract cookies from.           |
-| :----------- | :----------------------------------------------------------- |
+| Parameters: | **cj** – CookieJar object to extract cookies from. |
+| :--- | :--- |
 | Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict) |
 
-`requests.utils.add_dict_to_cookiejar`\(_cj_, _cookie_dict_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/utils/#add_dict_to_cookiejar)
+`requests.utils.add_dict_to_cookiejar`\(_cj_, _cookie\_dict_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/utils/#add_dict_to_cookiejar)
 
 Returns a CookieJar from a key/value dictionary.
 
@@ -1363,7 +1376,7 @@ Returns a CookieJar from a key/value dictionary.
   </tbody>
 </table>
 
-`requests.cookies.cookiejar_from_dict`\(_cookie_dict_, _cookiejar=None_, _overwrite=True_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/cookies/#cookiejar_from_dict)
+`requests.cookies.cookiejar_from_dict`\(_cookie\_dict_, _cookiejar=None_, _overwrite=True_\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/cookies/#cookiejar_from_dict)
 
 Returns a CookieJar from a key/value dictionary.
 
@@ -1405,7 +1418,7 @@ dictionary operations that are normally O\(1\) may be O\(n\).`add_cookie_header`
 
 Add correct Cookie: header to request \(urllib2.Request object\).
 
-The Cookie2 header is also added unless policy.hide*cookie2 is true.`clear`\(\_domain=None*, _path=None_, _name=None_\)
+The Cookie2 header is also added unless policy.hide\_cookie2 is true.`clear`\(_domain=None_, _path=None_, _name=None_\)
 
 Clear some cookies.
 
@@ -1415,11 +1428,11 @@ Raises KeyError if no matching cookie exists.`clear_expired_cookies`\(\)
 
 Discard all expired cookies.
 
-You probably don’t need to call this method: expired cookies are never sent back to the server \(provided you’re using DefaultCookiePolicy\), this method is called by CookieJar itself every so often, and the .save\(\) method won’t save expired cookies anyway \(unless you ask otherwise by passing a true ignore_expires argument\).`clear_session_cookies`\(\)
+You probably don’t need to call this method: expired cookies are never sent back to the server \(provided you’re using DefaultCookiePolicy\), this method is called by CookieJar itself every so often, and the .save\(\) method won’t save expired cookies anyway \(unless you ask otherwise by passing a true ignore\_expires argument\).`clear_session_cookies`\(\)
 
 Discard all session cookies.
 
-Note that the .save\(\) method won’t save session cookies anyway, unless you ask otherwise by passing a true ignore_discard argument.`copy`\(\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/cookies/#RequestsCookieJar.copy)
+Note that the .save\(\) method won’t save session cookies anyway, unless you ask otherwise by passing a true ignore\_discard argument.`copy`\(\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/cookies/#RequestsCookieJar.copy)
 
 Return a copy of this RequestsCookieJar.`extract_cookies`\(_response_, _request_\)
 
@@ -1434,7 +1447,8 @@ operation is O\(n\), not O\(1\).`get_dict`\(_domain=None_, _path=None_\)[\[sourc
 Takes as an argument an optional domain and path and returns a plain old Python dict of name-value pairs of cookies that meet the requirements.
 
 | Return type: | [dict](https://docs.python.org/3/library/stdtypes.html#dict) |
-| :----------- | :----------------------------------------------------------- |
+| :--- | :--- |
+
 
 `get_policy`\(\)[\[source\]](https://docs.python-requests.org/en/master/_modules/requests/cookies/#RequestsCookieJar.get_policy)
 
@@ -1479,7 +1493,8 @@ Return sequence of Cookie objects extracted from response object.`multiple_domai
 Returns True if there are multiple domains in the jar. Returns False otherwise.
 
 | Return type: | [bool](https://docs.python.org/3/library/functions.html#bool) |
-| :----------- | :------------------------------------------------------------ |
+| :--- | :--- |
+
 
 `pop`\(_k_\[, _d_\]\) → v, remove specified key and return the corresponding value.
 
@@ -1511,7 +1526,7 @@ The `codes` object defines a mapping from common names for HTTP statuses to thei
 
 Example:
 
-```python
+```text
 >>> import requests
 >>> requests.codes['temporary_redirect']
 307
@@ -1523,71 +1538,72 @@ Example:
 
 Some codes have multiple names, and both upper- and lower-case versions of the names are allowed. For example, `codes.ok`, `codes.OK`, and `codes.okay` all correspond to the HTTP status code 200.
 
-- 100: `continue`
-- 101: `switching_protocols`
-- 102: `processing`
-- 103: `checkpoint`
-- 122: `uri_too_long`, `request_uri_too_long`
-- 200: `ok`, `okay`, `all_ok`, `all_okay`, `all_good`, `\o/`, `✓`
-- 201: `created`
-- 202: `accepted`
-- 203: `non_authoritative_info`, `non_authoritative_information`
-- 204: `no_content`
-- 205: `reset_content`, `reset`
-- 206: `partial_content`, `partial`
-- 207: `multi_status`, `multiple_status`, `multi_stati`, `multiple_stati`
-- 208: `already_reported`
-- 226: `im_used`
-- 300: `multiple_choices`
-- 301: `moved_permanently`, `moved`, `\o-`
-- 302: `found`
-- 303: `see_other`, `other`
-- 304: `not_modified`
-- 305: `use_proxy`
-- 306: `switch_proxy`
-- 307: `temporary_redirect`, `temporary_moved`, `temporary`
-- 308: `permanent_redirect`, `resume_incomplete`, `resume`
-- 400: `bad_request`, `bad`
-- 401: `unauthorized`
-- 402: `payment_required`, `payment`
-- 403: `forbidden`
-- 404: `not_found`, `-o-`
-- 405: `method_not_allowed`, `not_allowed`
-- 406: `not_acceptable`
-- 407: `proxy_authentication_required`, `proxy_auth`, `proxy_authentication`
-- 408: `request_timeout`, `timeout`
-- 409: `conflict`
-- 410: `gone`
-- 411: `length_required`
-- 412: `precondition_failed`, `precondition`
-- 413: `request_entity_too_large`
-- 414: `request_uri_too_large`
-- 415: `unsupported_media_type`, `unsupported_media`, `media_type`
-- 416: `requested_range_not_satisfiable`, `requested_range`, `range_not_satisfiable`
-- 417: `expectation_failed`
-- 418: `im_a_teapot`, `teapot`, `i_am_a_teapot`
-- 421: `misdirected_request`
-- 422: `unprocessable_entity`, `unprocessable`
-- 423: `locked`
-- 424: `failed_dependency`, `dependency`
-- 425: `unordered_collection`, `unordered`
-- 426: `upgrade_required`, `upgrade`
-- 428: `precondition_required`, `precondition`
-- 429: `too_many_requests`, `too_many`
-- 431: `header_fields_too_large`, `fields_too_large`
-- 444: `no_response`, `none`
-- 449: `retry_with`, `retry`
-- 450: `blocked_by_windows_parental_controls`, `parental_controls`
-- 451: `unavailable_for_legal_reasons`, `legal_reasons`
-- 499: `client_closed_request`
-- 500: `internal_server_error`, `server_error`, `/o\`, `✗`
-- 501: `not_implemented`
-- 502: `bad_gateway`
-- 503: `service_unavailable`, `unavailable`
-- 504: `gateway_timeout`
-- 505: `http_version_not_supported`, `http_version`
-- 506: `variant_also_negotiates`
-- 507: `insufficient_storage`
-- 509: `bandwidth_limit_exceeded`, `bandwidth`
-- 510: `not_extended`
-- 511: `network_authentication_required`, `network_auth`, `network_authentication`
+* 100: `continue`
+* 101: `switching_protocols`
+* 102: `processing`
+* 103: `checkpoint`
+* 122: `uri_too_long`, `request_uri_too_long`
+* 200: `ok`, `okay`, `all_ok`, `all_okay`, `all_good`, `\o/`, `✓`
+* 201: `created`
+* 202: `accepted`
+* 203: `non_authoritative_info`, `non_authoritative_information`
+* 204: `no_content`
+* 205: `reset_content`, `reset`
+* 206: `partial_content`, `partial`
+* 207: `multi_status`, `multiple_status`, `multi_stati`, `multiple_stati`
+* 208: `already_reported`
+* 226: `im_used`
+* 300: `multiple_choices`
+* 301: `moved_permanently`, `moved`, `\o-`
+* 302: `found`
+* 303: `see_other`, `other`
+* 304: `not_modified`
+* 305: `use_proxy`
+* 306: `switch_proxy`
+* 307: `temporary_redirect`, `temporary_moved`, `temporary`
+* 308: `permanent_redirect`, `resume_incomplete`, `resume`
+* 400: `bad_request`, `bad`
+* 401: `unauthorized`
+* 402: `payment_required`, `payment`
+* 403: `forbidden`
+* 404: `not_found`, `-o-`
+* 405: `method_not_allowed`, `not_allowed`
+* 406: `not_acceptable`
+* 407: `proxy_authentication_required`, `proxy_auth`, `proxy_authentication`
+* 408: `request_timeout`, `timeout`
+* 409: `conflict`
+* 410: `gone`
+* 411: `length_required`
+* 412: `precondition_failed`, `precondition`
+* 413: `request_entity_too_large`
+* 414: `request_uri_too_large`
+* 415: `unsupported_media_type`, `unsupported_media`, `media_type`
+* 416: `requested_range_not_satisfiable`, `requested_range`, `range_not_satisfiable`
+* 417: `expectation_failed`
+* 418: `im_a_teapot`, `teapot`, `i_am_a_teapot`
+* 421: `misdirected_request`
+* 422: `unprocessable_entity`, `unprocessable`
+* 423: `locked`
+* 424: `failed_dependency`, `dependency`
+* 425: `unordered_collection`, `unordered`
+* 426: `upgrade_required`, `upgrade`
+* 428: `precondition_required`, `precondition`
+* 429: `too_many_requests`, `too_many`
+* 431: `header_fields_too_large`, `fields_too_large`
+* 444: `no_response`, `none`
+* 449: `retry_with`, `retry`
+* 450: `blocked_by_windows_parental_controls`, `parental_controls`
+* 451: `unavailable_for_legal_reasons`, `legal_reasons`
+* 499: `client_closed_request`
+* 500: `internal_server_error`, `server_error`, `/o\`, `✗`
+* 501: `not_implemented`
+* 502: `bad_gateway`
+* 503: `service_unavailable`, `unavailable`
+* 504: `gateway_timeout`
+* 505: `http_version_not_supported`, `http_version`
+* 506: `variant_also_negotiates`
+* 507: `insufficient_storage`
+* 509: `bandwidth_limit_exceeded`, `bandwidth`
+* 510: `not_extended`
+* 511: `network_authentication_required`, `network_auth`, `network_authentication`
+

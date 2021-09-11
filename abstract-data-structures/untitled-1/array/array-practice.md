@@ -5,8 +5,8 @@
 Given a list lst and a number N, create a new list
 that contains each number of the list at most N times without reordering.
 
-For example if N = 2, and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2],
-drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, and then take 3,
+For example if N = 2, and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2], 
+drop the next [1,2] since this would lead to 1 and 2 being in the result 3 times, and then take 3, 
 which leads to [1,2,3,1,2,3]
 """
 import collections
@@ -92,7 +92,7 @@ Output of this example :-
 initial: [1, 2, 3, 0, 4]
 final:   [0, 3, 2, 1, 4]
 Steps =  4
-Sequence :
+Sequence : 
 0 2 3 1 4
 2 0 3 1 4
 2 3 0 1 4
@@ -131,7 +131,7 @@ thus:
 0 2 3 1 4 -- zero = 0, f, initial[1] != final[1], switched 0,1
 2 0 3 1 4 -- zero = 1, t, car_to_move = final[1] = 3,
              pos = initial.index(3) = 2, switched [1], [2]
-2 3 0 1 4 -- zero = 2, t, car_to_move = final[2] = 2,
+2 3 0 1 4 -- zero = 2, t, car_to_move = final[2] = 2, 
              pos = initial.index(2) = 0, switched [0], [2]
 0 3 2 1 4 -- initial == final
 """
@@ -177,11 +177,11 @@ def josephus(int_list, skip):
         len_list -= 1
 
 """
-Sometimes you need to limit array result to use. Such as you only need the
+Sometimes you need to limit array result to use. Such as you only need the 
  value over 10 or, you need value under than 100. By use this algorithms, you
  can limit your array to specific value
 
-If array, Min, Max value was given, it returns array that contains values of
+If array, Min, Max value was given, it returns array that contains values of 
  given array which was larger than Min, and lower than Max. You need to give
  'unlimit' to use only Min or Max.
 
@@ -513,7 +513,7 @@ def n_sum(n, nums, target, **kv):
     return: list[list[object]]
 
     Note:
-    1. type of sum_closure's return should be same
+    1. type of sum_closure's return should be same 
        as type of compare_closure's first param
     """
 
@@ -789,7 +789,7 @@ def three_sum(array):
 """
 This algorithm receives an array and returns most_frequent_value
 Also, sometimes it is possible to have multiple 'most_frequent_value's,
-so this function returns a list. This result can be used to find a
+so this function returns a list. This result can be used to find a 
 representative value in an array.
 
 This algorithm gets an array, makes a dictionary of it,
@@ -878,3 +878,4 @@ def two_sum(array, target):
 
 
 ```
+

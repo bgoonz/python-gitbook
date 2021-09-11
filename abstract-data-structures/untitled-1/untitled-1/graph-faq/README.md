@@ -4,10 +4,10 @@
 
 ### Contents <a id="contents"></a>
 
-- [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
-- [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
-- [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
-- [What is the time complexity \(big-O\) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
+* [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
+* [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
+* [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
+* [What is the time complexity \(big-O\) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
 
 ### Questions <a id="questions"></a>
 
@@ -26,3 +26,4 @@ Graphs can be directed or undirected, cyclic or acyclic, weighted or unweighted.
 #### What is the time complexity \(big-O\) to add/remove/get a vertex/edge for a graph? <a id="what-is-the-time-complexity-big-o-to-addremoveget-a-vertexedge-for-a-graph"></a>
 
 It depends on the implementation. \([Graph Representations](https://github.com/LambdaSchool/Graphs/tree/master/objectives/graph-representations)\). Before choosing an implementation, it is wise to consider the tradeoffs and complexities of the most commonly used operations.
+

@@ -1,5 +1,11 @@
 # Double Linked List
 
+
+
+
+
+
+
 ```python
 # Each ListNode holds a reference to its previous node
 # as well as its next node in the List.
@@ -198,3 +204,4 @@ ll.get_max()  # should return 11
 print(f"ll: {ll}")  # return length 4, head: 5, tail: 11
 
 ```
+

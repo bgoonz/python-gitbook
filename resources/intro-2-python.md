@@ -12,7 +12,7 @@ Many of the examples in this manual, even those entered at the interactive promp
 
 Some examples:
 
-```python
+```text
 # this is the first comment
 spam = 1  # and this is the second comment
           # ... and now a third!
@@ -27,7 +27,7 @@ Let’s try some simple Python commands. Start the interpreter and wait for the 
 
 The interpreter acts as a simple calculator: you can type an expression at it and it will write the value. Expression syntax is straightforward: the operators `+`, `-`, `*` and `/` work just like in most other languages \(for example, Pascal or C\); parentheses \(`()`\) can be used for grouping. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> 2 + 2
 4
 >>> 50 - 5*6
@@ -42,7 +42,7 @@ The integer numbers \(e.g. `2`, `4`, `20`\) have type [`int`](https://docs.pytho
 
 Division \(`/`\) always returns a float. To do [floor division](https://docs.python.org/3.9/glossary.html#term-floor-division) and get an integer result \(discarding any fractional result\) you can use the `//` operator; to calculate the remainder you can use `%`:&gt;&gt;&gt;
 
-```python
+```text
 >>> 17 / 3  # classic division returns a float
 5.666666666666667
 >>>
@@ -56,7 +56,7 @@ Division \(`/`\) always returns a float. To do [floor division](https://docs.pyt
 
 With Python, it is possible to use the `**` operator to calculate powers [1](https://docs.python.org/3.9/tutorial/introduction.html#id3):&gt;&gt;&gt;
 
-```python
+```text
 >>> 5 ** 2  # 5 squared
 25
 >>> 2 ** 7  # 2 to the power of 7
@@ -65,7 +65,7 @@ With Python, it is possible to use the `**` operator to calculate powers [1](htt
 
 The equal sign \(`=`\) is used to assign a value to a variable. Afterwards, no result is displayed before the next interactive prompt:&gt;&gt;&gt;
 
-```python
+```text
 >>> width = 20
 >>> height = 5 * 9
 >>> width * height
@@ -74,7 +74,7 @@ The equal sign \(`=`\) is used to assign a value to a variable. Afterwards, no r
 
 If a variable is not “defined” \(assigned a value\), trying to use it will give you an error:&gt;&gt;&gt;
 
-```python
+```text
 >>> n  # try to access an undefined variable
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -83,14 +83,14 @@ NameError: name 'n' is not defined
 
 There is full support for floating point; operators with mixed type operands convert the integer operand to floating point:&gt;&gt;&gt;
 
-```python
+```text
 >>> 4 * 3.75 - 1
 14.0
 ```
 
 In interactive mode, the last printed expression is assigned to the variable `_`. This means that when you are using Python as a desk calculator, it is somewhat easier to continue calculations, for example:&gt;&gt;&gt;
 
-```python
+```text
 >>> tax = 12.5 / 100
 >>> price = 100.50
 >>> price * tax
@@ -109,7 +109,7 @@ In addition to [`int`](https://docs.python.org/3.9/library/functions.html#int) a
 
 Besides numbers, Python can also manipulate strings, which can be expressed in several ways. They can be enclosed in single quotes \(`'...'`\) or double quotes \(`"..."`\) with the same result [2](https://docs.python.org/3.9/tutorial/introduction.html#id4). `\` can be used to escape quotes:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'spam eggs'  # single quotes
 'spam eggs'
 >>> 'doesn\'t'  # use \' to escape the single quote...
@@ -126,7 +126,7 @@ Besides numbers, Python can also manipulate strings, which can be expressed in s
 
 In the interactive interpreter, the output string is enclosed in quotes and special characters are escaped with backslashes. While this might sometimes look different from the input \(the enclosing quotes could change\), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes, otherwise it is enclosed in single quotes. The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function produces a more readable output, by omitting the enclosing quotes and by printing escaped and special characters:&gt;&gt;&gt;
 
-```python
+```text
 >>> '"Isn\'t," they said.'
 '"Isn\'t," they said.'
 >>> print('"Isn\'t," they said.')
@@ -141,7 +141,7 @@ Second line.
 
 If you don’t want characters prefaced by `\` to be interpreted as special characters, you can use _raw strings_ by adding an `r` before the first quote:&gt;&gt;&gt;
 
-```python
+```text
 >>> print('C:\some\name')  # here \n means newline!
 C:\some
 ame
@@ -151,7 +151,7 @@ C:\some\name
 
 String literals can span multiple lines. One way is using triple-quotes: `"""..."""` or `'''...'''`. End of lines are automatically included in the string, but it’s possible to prevent this by adding a `\` at the end of the line. The following example:
 
-```python
+```text
 print("""\
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
@@ -161,7 +161,7 @@ Usage: thingy [OPTIONS]
 
 produces the following output \(note that the initial newline is not included\):
 
-```python
+```text
 Usage: thingy [OPTIONS]
      -h                        Display this usage message
      -H hostname               Hostname to connect to
@@ -169,7 +169,7 @@ Usage: thingy [OPTIONS]
 
 Strings can be concatenated \(glued together\) with the `+` operator, and repeated with `*`:&gt;&gt;&gt;
 
-```python
+```text
 >>> # 3 times 'un', followed by 'ium'
 >>> 3 * 'un' + 'ium'
 'unununium'
@@ -177,14 +177,14 @@ Strings can be concatenated \(glued together\) with the `+` operator, and repeat
 
 Two or more _string literals_ \(i.e. the ones enclosed between quotes\) next to each other are automatically concatenated.&gt;&gt;&gt;
 
-```python
+```text
 >>> 'Py' 'thon'
 'Python'
 ```
 
 This feature is particularly useful when you want to break long strings:&gt;&gt;&gt;
 
-```python
+```text
 >>> text = ('Put several strings within parentheses '
 ...         'to have them joined together.')
 >>> text
@@ -193,7 +193,7 @@ This feature is particularly useful when you want to break long strings:&gt;&gt;
 
 This only works with two literals though, not with variables or expressions:&gt;&gt;&gt;
 
-```python
+```text
 >>> prefix = 'Py'
 >>> prefix 'thon'  # can't concatenate a variable and a string literal
   File "<stdin>", line 1
@@ -209,14 +209,14 @@ SyntaxError: invalid syntax
 
 If you want to concatenate variables or a variable and a literal, use `+`:&gt;&gt;&gt;
 
-```python
+```text
 >>> prefix + 'thon'
 'Python'
 ```
 
 Strings can be _indexed_ \(subscripted\), with the first character having index 0. There is no separate character type; a character is simply a string of size one:&gt;&gt;&gt;
 
-```python
+```text
 >>> word = 'Python'
 >>> word[0]  # character in position 0
 'P'
@@ -226,7 +226,7 @@ Strings can be _indexed_ \(subscripted\), with the first character having index 
 
 Indices may also be negative numbers, to start counting from the right:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[-1]  # last character
 'n'
 >>> word[-2]  # second-last character
@@ -239,7 +239,7 @@ Note that since -0 is the same as 0, negative indices start from -1.
 
 In addition to indexing, _slicing_ is also supported. While indexing is used to obtain individual characters, _slicing_ allows you to obtain substring:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
 'Py'
 >>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
@@ -248,7 +248,7 @@ In addition to indexing, _slicing_ is also supported. While indexing is used to 
 
 Slice indices have useful defaults; an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced.&gt;&gt;&gt;
 
-```python
+```text
 >>> word[:2]   # character from the beginning to position 2 (excluded)
 'Py'
 >>> word[4:]   # characters from position 4 (included) to the end
@@ -259,7 +259,7 @@ Slice indices have useful defaults; an omitted first index defaults to zero, an 
 
 Note how the start is always included, and the end always excluded. This makes sure that `s[:i] + s[i:]` is always equal to `s`:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[:2] + word[2:]
 'Python'
 >>> word[:4] + word[4:]
@@ -268,7 +268,7 @@ Note how the start is always included, and the end always excluded. This makes s
 
 One way to remember how slices work is to think of the indices as pointing _between_ characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of _n_ characters has index _n_, for example:
 
-```python
+```text
  +---+---+---+---+---+---+
  | P | y | t | h | o | n |
  +---+---+---+---+---+---+
@@ -282,7 +282,7 @@ For non-negative indices, the length of a slice is the difference of the indices
 
 Attempting to use an index that is too large will result in an error:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[42]  # the word only has 6 characters
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -291,7 +291,7 @@ IndexError: string index out of range
 
 However, out of range slice indexes are handled gracefully when used for slicing:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[4:42]
 'on'
 >>> word[42:]
@@ -300,7 +300,7 @@ However, out of range slice indexes are handled gracefully when used for slicing
 
 Python strings cannot be changed — they are [immutable](https://docs.python.org/3.9/glossary.html#term-immutable). Therefore, assigning to an indexed position in the string results in an error:&gt;&gt;&gt;
 
-```python
+```text
 >>> word[0] = 'J'
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -313,7 +313,7 @@ TypeError: 'str' object does not support item assignment
 
 If you need a different string, you should create a new one:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'J' + word[1:]
 'Jython'
 >>> word[:2] + 'py'
@@ -322,7 +322,7 @@ If you need a different string, you should create a new one:&gt;&gt;&gt;
 
 The built-in function [`len()`](https://docs.python.org/3.9/library/functions.html#len) returns the length of a string:&gt;&gt;&gt;
 
-```python
+```text
 >>> s = 'supercalifragilisticexpialidocious'
 >>> len(s)
 34
@@ -344,7 +344,7 @@ The old formatting operations invoked when strings are the left operand of the `
 
 Python knows a number of _compound_ data types, used to group together other values. The most versatile is the _list_, which can be written as a list of comma-separated values \(items\) between square brackets. Lists might contain items of different types, but usually the items all have the same type.&gt;&gt;&gt;
 
-```python
+```text
 >>> squares = [1, 4, 9, 16, 25]
 >>> squares
 [1, 4, 9, 16, 25]
@@ -352,7 +352,7 @@ Python knows a number of _compound_ data types, used to group together other val
 
 Like strings \(and all other built-in [sequence](https://docs.python.org/3.9/glossary.html#term-sequence) types\), lists can be indexed and sliced:&gt;&gt;&gt;
 
-```python
+```text
 >>> squares[0]  # indexing returns the item
 1
 >>> squares[-1]
@@ -363,21 +363,21 @@ Like strings \(and all other built-in [sequence](https://docs.python.org/3.9/glo
 
 All slice operations return a new list containing the requested elements. This means that the following slice returns a [shallow copy](https://docs.python.org/3.9/library/copy.html#shallow-vs-deep-copy) of the list:&gt;&gt;&gt;
 
-```python
+```text
 >>> squares[:]
 [1, 4, 9, 16, 25]
 ```
 
 Lists also support operations like concatenation:&gt;&gt;&gt;
 
-```python
+```text
 >>> squares + [36, 49, 64, 81, 100]
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
 Unlike strings, which are [immutable](https://docs.python.org/3.9/glossary.html#term-immutable), lists are a [mutable](https://docs.python.org/3.9/glossary.html#term-mutable) type, i.e. it is possible to change their content:&gt;&gt;&gt;
 
-```python
+```text
 >>> cubes = [1, 8, 27, 65, 125]  # something's wrong here
 >>> 4 ** 3  # the cube of 4 is 64, not 65!
 64
@@ -388,7 +388,7 @@ Unlike strings, which are [immutable](https://docs.python.org/3.9/glossary.html#
 
 You can also add new items at the end of the list, by using the `append()` _method_ \(we will see more about methods later\):&gt;&gt;&gt;
 
-```python
+```text
 >>> cubes.append(216)  # add the cube of 6
 >>> cubes.append(7 ** 3)  # and the cube of 7
 >>> cubes
@@ -397,7 +397,7 @@ You can also add new items at the end of the list, by using the `append()` _meth
 
 Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:&gt;&gt;&gt;
 
-```python
+```text
 >>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 >>> letters
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -417,7 +417,7 @@ Assignment to slices is also possible, and this can even change the size of the 
 
 The built-in function [`len()`](https://docs.python.org/3.9/library/functions.html#len) also applies to lists:&gt;&gt;&gt;
 
-```python
+```text
 >>> letters = ['a', 'b', 'c', 'd']
 >>> len(letters)
 4
@@ -425,7 +425,7 @@ The built-in function [`len()`](https://docs.python.org/3.9/library/functions.ht
 
 It is possible to nest lists \(create lists containing other lists\), for example:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = ['a', 'b', 'c']
 >>> n = [1, 2, 3]
 >>> x = [a, n]
@@ -441,7 +441,7 @@ It is possible to nest lists \(create lists containing other lists\), for exampl
 
 Of course, we can use Python for more complicated tasks than adding two and two together. For instance, we can write an initial sub-sequence of the [Fibonacci series](https://en.wikipedia.org/wiki/Fibonacci_number) as follows:&gt;&gt;&gt;
 
-```python
+```text
 >>> # Fibonacci series:
 ... # the sum of two elements defines the next
 ... a, b = 0, 1
@@ -460,12 +460,12 @@ Of course, we can use Python for more complicated tasks than adding two and two 
 
 This example introduces several new features.
 
-- The first line contains a _multiple assignment_: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
-- The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition \(here: `a < 10`\) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` \(less than\), `>` \(greater than\), `==` \(equal to\), `<=` \(less than or equal to\), `>=` \(greater than or equal to\) and `!=` \(not equal to\).
-- The _body_ of the loop is _indented_: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space\(s\) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion \(since the parser cannot guess when you have typed the last line\). Note that each line within a basic block must be indented by the same amount.
-- The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument\(s\) it is given. It differs from just writing the expression you want to write \(as we did earlier in the calculator examples\) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
+* The first line contains a _multiple assignment_: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
+* The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition \(here: `a < 10`\) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` \(less than\), `>` \(greater than\), `==` \(equal to\), `<=` \(less than or equal to\), `>=` \(greater than or equal to\) and `!=` \(not equal to\).
+* The _body_ of the loop is _indented_: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space\(s\) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion \(since the parser cannot guess when you have typed the last line\). Note that each line within a basic block must be indented by the same amount.
+* The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument\(s\) it is given. It differs from just writing the expression you want to write \(as we did earlier in the calculator examples\) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
 
-  ```python
+  ```text
   >>> i = 256*256
   >>> print('The value of i is', i)
   The value of i is 65536
@@ -473,7 +473,7 @@ This example introduces several new features.
 
   The keyword argument _end_ can be used to avoid the newline after the output, or end the output with a different string:&gt;&gt;&gt;
 
-  ```python
+  ```text
   >>> a, b = 0, 1
   >>> while a < 1000:
   ...     print(a, end=',')
@@ -482,7 +482,9 @@ This example introduces several new features.
   0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
   ```
 
-## Control Flow
+
+
+## Control Flow 
 
 Besides the [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) statement just introduced, Python uses the usual flow control statements known from other languages, with some twists.
 
@@ -490,7 +492,7 @@ Besides the [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#
 
 Perhaps the most well-known statement type is the [`if`](https://docs.python.org/3.9/reference/compound_stmts.html#if) statement. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> x = int(input("Please enter an integer: "))
 Please enter an integer: 42
 >>> if x < 0:
@@ -512,7 +514,7 @@ There can be zero or more [`elif`](https://docs.python.org/3.9/reference/compoun
 
 The [`for`](https://docs.python.org/3.9/reference/compound_stmts.html#for) statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating over an arithmetic progression of numbers \(like in Pascal\), or giving the user the ability to define both the iteration step and halting condition \(as C\), Python’s `for` statement iterates over the items of any sequence \(a list or a string\), in the order that they appear in the sequence. For example \(no pun intended\):&gt;&gt;&gt;
 
-```python
+```text
 >>> # Measure some strings:
 ... words = ['cat', 'window', 'defenestrate']
 >>> for w in words:
@@ -525,7 +527,7 @@ defenestrate 12
 
 Code that modifies a collection while iterating over that same collection can be tricky to get right. Instead, it is usually more straight-forward to loop over a copy of the collection or to create a new collection:
 
-```python
+```text
 # Strategy:  Iterate over a copy
 for user, status in users.copy().items():
     if status == 'inactive':
@@ -542,7 +544,7 @@ for user, status in users.items():
 
 If you do need to iterate over a sequence of numbers, the built-in function [`range()`](https://docs.python.org/3.9/library/stdtypes.html#range) comes in handy. It generates arithmetic progressions:&gt;&gt;&gt;
 
-```python
+```text
 >>> for i in range(5):
 ...     print(i)
 ...
@@ -555,7 +557,7 @@ If you do need to iterate over a sequence of numbers, the built-in function [`ra
 
 The given end point is never part of the generated sequence; `range(10)` generates 10 values, the legal indices for items of a sequence of length 10. It is possible to let the range start at another number, or to specify a different increment \(even negative; sometimes this is called the ‘step’\):&gt;&gt;&gt;
 
-```python
+```text
 >>> list(range(5, 10))
 [5, 6, 7, 8, 9]
 
@@ -568,7 +570,7 @@ The given end point is never part of the generated sequence; `range(10)` generat
 
 To iterate over the indices of a sequence, you can combine [`range()`](https://docs.python.org/3.9/library/stdtypes.html#range) and [`len()`](https://docs.python.org/3.9/library/functions.html#len) as follows:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = ['Mary', 'had', 'a', 'little', 'lamb']
 >>> for i in range(len(a)):
 ...     print(i, a[i])
@@ -584,7 +586,7 @@ In most such cases, however, it is convenient to use the [`enumerate()`](https:/
 
 A strange thing happens if you just print a range:&gt;&gt;&gt;
 
-```python
+```text
 >>> range(10)
 range(0, 10)
 ```
@@ -593,7 +595,7 @@ In many ways the object returned by [`range()`](https://docs.python.org/3.9/libr
 
 We say such an object is [iterable](https://docs.python.org/3.9/glossary.html#term-iterable), that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted. We have seen that the [`for`](https://docs.python.org/3.9/reference/compound_stmts.html#for) statement is such a construct, while an example of a function that takes an iterable is [`sum()`](https://docs.python.org/3.9/library/functions.html#sum):&gt;&gt;&gt;
 
-```python
+```text
 >>> sum(range(4))  # 0 + 1 + 2 + 3
 6
 ```
@@ -606,7 +608,7 @@ The [`break`](https://docs.python.org/3.9/reference/simple_stmts.html#break) sta
 
 Loop statements may have an `else` clause; it is executed when the loop terminates through exhaustion of the iterable \(with [`for`](https://docs.python.org/3.9/reference/compound_stmts.html#for)\) or when the condition becomes false \(with [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while)\), but not when the loop is terminated by a [`break`](https://docs.python.org/3.9/reference/simple_stmts.html#break) statement. This is exemplified by the following loop, which searches for prime numbers:&gt;&gt;&gt;
 
-```python
+```text
 >>> for n in range(2, 10):
 ...     for x in range(2, n):
 ...         if n % x == 0:
@@ -632,7 +634,7 @@ When used with a loop, the `else` clause has more in common with the `else` clau
 
 The [`continue`](https://docs.python.org/3.9/reference/simple_stmts.html#continue) statement, also borrowed from C, continues with the next iteration of the loop:&gt;&gt;&gt;
 
-```python
+```text
 >>> for num in range(2, 10):
 ...     if num % 2 == 0:
 ...         print("Found an even number", num)
@@ -653,7 +655,7 @@ Found an odd number 9
 
 The [`pass`](https://docs.python.org/3.9/reference/simple_stmts.html#pass) statement does nothing. It can be used when a statement is required syntactically but the program requires no action. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> while True:
 ...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)
 ...
@@ -661,7 +663,7 @@ The [`pass`](https://docs.python.org/3.9/reference/simple_stmts.html#pass) state
 
 This is commonly used for creating minimal classes:&gt;&gt;&gt;
 
-```python
+```text
 >>> class MyEmptyClass:
 ...     pass
 ...
@@ -669,7 +671,7 @@ This is commonly used for creating minimal classes:&gt;&gt;&gt;
 
 Another place [`pass`](https://docs.python.org/3.9/reference/simple_stmts.html#pass) can be used is as a place-holder for a function or conditional body when you are working on new code, allowing you to keep thinking at a more abstract level. The `pass` is silently ignored:&gt;&gt;&gt;
 
-```python
+```text
 >>> def initlog(*args):
 ...     pass   # Remember to implement this!
 ...
@@ -679,7 +681,7 @@ Another place [`pass`](https://docs.python.org/3.9/reference/simple_stmts.html#p
 
 We can create a function that writes the Fibonacci series to an arbitrary boundary:&gt;&gt;&gt;
 
-```python
+```text
 >>> def fib(n):    # write Fibonacci series up to n
 ...     """Print a Fibonacci series up to n."""
 ...     a, b = 0, 1
@@ -703,7 +705,7 @@ The actual parameters \(arguments\) to a function call are introduced in the loc
 
 A function definition associates the function name with the function object in the current symbol table. The interpreter recognizes the object pointed to by that name as a user-defined function. Other names can also point to that same function object and can also be used to access the function:&gt;&gt;&gt;
 
-```python
+```text
 >>> fib
 <function fib at 10042ed0>
 >>> f = fib
@@ -713,7 +715,7 @@ A function definition associates the function name with the function object in t
 
 Coming from other languages, you might object that `fib` is not a function but a procedure since it doesn’t return a value. In fact, even functions without a [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement do return a value, albeit a rather boring one. This value is called `None` \(it’s a built-in name\). Writing the value `None` is normally suppressed by the interpreter if it would be the only value written. You can see it if you really want to using [`print()`](https://docs.python.org/3.9/library/functions.html#print):&gt;&gt;&gt;
 
-```python
+```text
 >>> fib(0)
 >>> print(fib(0))
 None
@@ -721,7 +723,7 @@ None
 
 It is simple to write a function that returns a list of the numbers of the Fibonacci series, instead of printing it:&gt;&gt;&gt;
 
-```python
+```text
 >>> def fib2(n):  # return Fibonacci series up to n
 ...     """Return a list containing the Fibonacci series up to n."""
 ...     result = []
@@ -738,8 +740,8 @@ It is simple to write a function that returns a list of the numbers of the Fibon
 
 This example, as usual, demonstrates some new Python features:
 
-- The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
-- The statement `result.append(a)` calls a _method_ of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object \(this may be an expression\), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. \(It is possible to define your own object types and methods, using _classes_, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)\) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
+* The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
+* The statement `result.append(a)` calls a _method_ of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object \(this may be an expression\), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. \(It is possible to define your own object types and methods, using _classes_, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)\) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
 
 ### 4.7. More on Defining Functions
 
@@ -749,7 +751,7 @@ It is also possible to define functions with a variable number of arguments. The
 
 The most useful form is to specify a default value for one or more arguments. This creates a function that can be called with fewer arguments than it is defined to allow. For example:
 
-```python
+```text
 def ask_ok(prompt, retries=4, reminder='Please try again!'):
     while True:
         ok = input(prompt)
@@ -765,15 +767,15 @@ def ask_ok(prompt, retries=4, reminder='Please try again!'):
 
 This function can be called in several ways:
 
-- giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
-- giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
-- or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
+* giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
+* giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
+* or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
 
 This example also introduces the [`in`](https://docs.python.org/3.9/reference/expressions.html#in) keyword. This tests whether or not a sequence contains a certain value.
 
 The default values are evaluated at the point of function definition in the _defining_ scope, so that
 
-```python
+```text
 i = 5
 
 def f(arg=i):
@@ -787,7 +789,7 @@ will print `5`.
 
 **Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes. For example, the following function accumulates the arguments passed to it on subsequent calls:
 
-```python
+```text
 def f(a, L=[]):
     L.append(a)
     return L
@@ -799,7 +801,7 @@ print(f(3))
 
 This will print
 
-```python
+```text
 [1]
 [1, 2]
 [1, 2, 3]
@@ -807,7 +809,7 @@ This will print
 
 If you don’t want the default to be shared between subsequent calls, you can write the function like this instead:
 
-```python
+```text
 def f(a, L=None):
     if L is None:
         L = []
@@ -819,7 +821,7 @@ def f(a, L=None):
 
 Functions can also be called using [keyword arguments](https://docs.python.org/3.9/glossary.html#term-keyword-argument) of the form `kwarg=value`. For instance, the following function:
 
-```python
+```text
 def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
     print("-- This parrot wouldn't", action, end=' ')
     print("if you put", voltage, "volts through it.")
@@ -829,7 +831,7 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
 
 accepts one required argument \(`voltage`\) and three optional arguments \(`state`, `action`, and `type`\). This function can be called in any of the following ways:
 
-```python
+```text
 parrot(1000)                                          # 1 positional argument
 parrot(voltage=1000)                                  # 1 keyword argument
 parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
@@ -840,7 +842,7 @@ parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 
 but all the following calls would be invalid:
 
-```python
+```text
 parrot()                     # required argument missing
 parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument
 parrot(110, voltage=220)     # duplicate value for the same argument
@@ -849,7 +851,7 @@ parrot(actor='John Cleese')  # unknown keyword argument
 
 In a function call, keyword arguments must follow positional arguments. All the keyword arguments passed must match one of the arguments accepted by the function \(e.g. `actor` is not a valid argument for the `parrot` function\), and their order is not important. This also includes non-optional arguments \(e.g. `parrot(voltage=1000)` is valid too\). No argument may receive a value more than once. Here’s an example that fails due to this restriction:&gt;&gt;&gt;
 
-```python
+```text
 >>> def function(a):
 ...     pass
 ...
@@ -861,7 +863,7 @@ TypeError: function() got multiple values for argument 'a'
 
 When a final formal parameter of the form `**name` is present, it receives a dictionary \(see [Mapping Types — dict](https://docs.python.org/3.9/library/stdtypes.html#typesmapping)\) containing all keyword arguments except for those corresponding to a formal parameter. This may be combined with a formal parameter of the form `*name` \(described in the next subsection\) which receives a [tuple](https://docs.python.org/3.9/tutorial/datastructures.html#tut-tuples) containing the positional arguments beyond the formal parameter list. \(`*name` must occur before `**name`.\) For example, if we define a function like this:
 
-```python
+```text
 def cheeseshop(kind, *arguments, **keywords):
     print("-- Do you have any", kind, "?")
     print("-- I'm sorry, we're all out of", kind)
@@ -874,7 +876,7 @@ def cheeseshop(kind, *arguments, **keywords):
 
 It could be called like this:
 
-```python
+```text
 cheeseshop("Limburger", "It's very runny, sir.",
            "It's really very, VERY runny, sir.",
            shopkeeper="Michael Palin",
@@ -884,7 +886,7 @@ cheeseshop("Limburger", "It's very runny, sir.",
 
 and of course it would print:
 
-```python
+```text
 -- Do you have any Limburger ?
 -- I'm sorry, we're all out of Limburger
 It's very runny, sir.
@@ -903,7 +905,7 @@ By default, arguments may be passed to a Python function either by position or e
 
 A function definition may look like:
 
-```python
+```text
 def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
       -----------    ----------     ----------
         |             |                  |
@@ -932,7 +934,7 @@ To mark parameters as _keyword-only_, indicating the parameters must be passed b
 
 Consider the following example function definitions paying close attention to the markers `/` and `*`:&gt;&gt;&gt;
 
-```python
+```text
 >>> def standard_arg(arg):
 ...     print(arg)
 ...
@@ -948,7 +950,7 @@ Consider the following example function definitions paying close attention to th
 
 The first function definition, `standard_arg`, the most familiar form, places no restrictions on the calling convention and arguments may be passed by position or keyword:&gt;&gt;&gt;
 
-```python
+```text
 >>> standard_arg(2)
 2
 
@@ -958,7 +960,7 @@ The first function definition, `standard_arg`, the most familiar form, places no
 
 The second function `pos_only_arg` is restricted to only use positional parameters as there is a `/` in the function definition:&gt;&gt;&gt;
 
-```python
+```text
 >>> pos_only_arg(1)
 1
 
@@ -970,7 +972,7 @@ TypeError: pos_only_arg() got some positional-only arguments passed as keyword a
 
 The third function `kwd_only_args` only allows keyword arguments as indicated by a `*` in the function definition:&gt;&gt;&gt;
 
-```python
+```text
 >>> kwd_only_arg(3)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -982,7 +984,7 @@ TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given
 
 And the last uses all three calling conventions in the same function definition:&gt;&gt;&gt;
 
-```python
+```text
 >>> combined_example(1, 2, 3)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -1002,14 +1004,14 @@ TypeError: combined_example() got some positional-only arguments passed as keywo
 
 Finally, consider this function definition which has a potential collision between the positional argument `name` and `**kwds` which has `name` as a key:
 
-```python
+```text
 def foo(name, **kwds):
     return 'name' in kwds
 ```
 
 There is no possible call that will make it return `True` as the keyword `'name'` will always bind to the first parameter. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> foo(1, **{'name': 2})
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -1019,7 +1021,7 @@ TypeError: foo() got multiple values for argument 'name'
 
 But using `/` \(positional only arguments\), it is possible since it allows `name` as a positional argument and `'name'` as a key in the keyword arguments:
 
-```python
+```text
 def foo(name, /, **kwds):
     return 'name' in kwds
 >>> foo(1, **{'name': 2})
@@ -1032,28 +1034,28 @@ In other words, the names of positional-only parameters can be used in `**kwds` 
 
 The use case will determine which parameters to use in the function definition:
 
-```python
+```text
 def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
 ```
 
 As guidance:
 
-- Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
-- Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
-- For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
+* Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
+* Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
+* For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
 
 #### 4.7.4. Arbitrary Argument Lists
 
 Finally, the least frequently used option is to specify that a function can be called with an arbitrary number of arguments. These arguments will be wrapped up in a tuple \(see [Tuples and Sequences](https://docs.python.org/3.9/tutorial/datastructures.html#tut-tuples)\). Before the variable number of arguments, zero or more normal arguments may occur.
 
-```python
+```text
 def write_multiple_items(file, separator, *args):
     file.write(separator.join(args))
 ```
 
 Normally, these `variadic` arguments will be last in the list of formal parameters, because they scoop up all remaining input arguments that are passed to the function. Any formal parameters which occur after the `*args` parameter are ‘keyword-only’ arguments, meaning that they can only be used as keywords rather than positional arguments.&gt;&gt;&gt;
 
-```python
+```text
 >>> def concat(*args, sep="/"):
 ...     return sep.join(args)
 ...
@@ -1067,7 +1069,7 @@ Normally, these `variadic` arguments will be last in the list of formal paramete
 
 The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments. For instance, the built-in [`range()`](https://docs.python.org/3.9/library/stdtypes.html#range) function expects separate _start_ and _stop_ arguments. If they are not available separately, write the function call with the `*`-operator to unpack the arguments out of a list or tuple:&gt;&gt;&gt;
 
-```python
+```text
 >>> list(range(3, 6))            # normal call with separate arguments
 [3, 4, 5]
 >>> args = [3, 6]
@@ -1077,7 +1079,7 @@ The reverse situation occurs when the arguments are already in a list or tuple b
 
 In the same fashion, dictionaries can deliver keyword arguments with the `**`-operator:&gt;&gt;&gt;
 
-```python
+```text
 >>> def parrot(voltage, state='a stiff', action='voom'):
 ...     print("-- This parrot wouldn't", action, end=' ')
 ...     print("if you put", voltage, "volts through it.", end=' ')
@@ -1092,7 +1094,7 @@ In the same fashion, dictionaries can deliver keyword arguments with the `**`-op
 
 Small anonymous functions can be created with the [`lambda`](https://docs.python.org/3.9/reference/expressions.html#lambda) keyword. This function returns the sum of its two arguments: `lambda a, b: a+b`. Lambda functions can be used wherever function objects are required. They are syntactically restricted to a single expression. Semantically, they are just syntactic sugar for a normal function definition. Like nested function definitions, lambda functions can reference variables from the containing scope:&gt;&gt;&gt;
 
-```python
+```text
 >>> def make_incrementor(n):
 ...     return lambda x: x + n
 ...
@@ -1105,7 +1107,7 @@ Small anonymous functions can be created with the [`lambda`](https://docs.python
 
 The above example uses a lambda expression to return a function. Another use is to pass a small function as an argument:&gt;&gt;&gt;
 
-```python
+```text
 >>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
 >>> pairs.sort(key=lambda pair: pair[1])
 >>> pairs
@@ -1124,7 +1126,7 @@ The Python parser does not strip indentation from multi-line string literals in 
 
 Here is an example of a multi-line docstring:&gt;&gt;&gt;
 
-```python
+```text
 >>> def my_function():
 ...     """Do nothing, but document it.
 ...
@@ -1144,7 +1146,7 @@ Do nothing, but document it.
 
 [Annotations](https://docs.python.org/3.9/glossary.html#term-function-annotation) are stored in the `__annotations__` attribute of the function as a dictionary and have no effect on any other part of the function. Parameter annotations are defined by a colon after the parameter name, followed by an expression evaluating to the value of the annotation. Return annotations are defined by a literal `->`, followed by an expression, between the parameter list and the colon denoting the end of the [`def`](https://docs.python.org/3.9/reference/compound_stmts.html#def) statement. The following example has a required argument, an optional argument, and the return value annotated:&gt;&gt;&gt;
 
-```python
+```text
 >>> def f(ham: str, eggs: str = 'eggs') -> str:
 ...     print("Annotations:", f.__annotations__)
 ...     print("Arguments:", ham, eggs)
@@ -1190,7 +1192,7 @@ Return a shallow copy of the list. Equivalent to `a[:]`.
 
 An example that uses most of the list methods:&gt;&gt;&gt;
 
-```python
+```text
 >>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
 >>> fruits.count('apple')
 2
@@ -1221,7 +1223,7 @@ Another thing you might notice is that not all data can be sorted or compared. F
 
 The list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved \(“last-in, first-out”\). To add an item to the top of the stack, use `append()`. To retrieve an item from the top of the stack, use `pop()` without an explicit index. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> stack = [3, 4, 5]
 >>> stack.append(6)
 >>> stack.append(7)
@@ -1245,7 +1247,7 @@ It is also possible to use a list as a queue, where the first element added is t
 
 To implement a queue, use [`collections.deque`](https://docs.python.org/3.9/library/collections.html#collections.deque) which was designed to have fast appends and pops from both ends. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> from collections import deque
 >>> queue = deque(["Eric", "John", "Michael"])
 >>> queue.append("Terry")           # Terry arrives
@@ -1264,7 +1266,7 @@ List comprehensions provide a concise way to create lists. Common applications a
 
 For example, assume we want to create a list of squares, like:&gt;&gt;&gt;
 
-```python
+```text
 >>> squares = []
 >>> for x in range(10):
 ...     squares.append(x**2)
@@ -1275,13 +1277,13 @@ For example, assume we want to create a list of squares, like:&gt;&gt;&gt;
 
 Note that this creates \(or overwrites\) a variable named `x` that still exists after the loop completes. We can calculate the list of squares without any side effects using:
 
-```python
+```text
 squares = list(map(lambda x: x**2, range(10)))
 ```
 
 or, equivalently:
 
-```python
+```text
 squares = [x**2 for x in range(10)]
 ```
 
@@ -1289,14 +1291,14 @@ which is more concise and readable.
 
 A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it. For example, this listcomp combines the elements of two lists if they are not equal:&gt;&gt;&gt;
 
-```python
+```text
 >>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 
 and it’s equivalent to:&gt;&gt;&gt;
 
-```python
+```text
 >>> combs = []
 >>> for x in [1,2,3]:
 ...     for y in [3,1,4]:
@@ -1311,7 +1313,7 @@ Note how the order of the [`for`](https://docs.python.org/3.9/reference/compound
 
 If the expression is a tuple \(e.g. the `(x, y)` in the previous example\), it must be parenthesized.&gt;&gt;&gt;
 
-```python
+```text
 >>> vec = [-4, -2, 0, 2, 4]
 >>> # create a new list with the values doubled
 >>> [x*2 for x in vec]
@@ -1343,7 +1345,7 @@ SyntaxError: invalid syntax
 
 List comprehensions can contain complex expressions and nested functions:&gt;&gt;&gt;
 
-```python
+```text
 >>> from math import pi
 >>> [str(round(pi, i)) for i in range(1, 6)]
 ['3.1', '3.14', '3.142', '3.1416', '3.14159']
@@ -1355,7 +1357,7 @@ The initial expression in a list comprehension can be any arbitrary expression, 
 
 Consider the following example of a 3x4 matrix implemented as a list of 3 lists of length 4:&gt;&gt;&gt;
 
-```python
+```text
 >>> matrix = [
 ...     [1, 2, 3, 4],
 ...     [5, 6, 7, 8],
@@ -1365,14 +1367,14 @@ Consider the following example of a 3x4 matrix implemented as a list of 3 lists 
 
 The following list comprehension will transpose rows and columns:&gt;&gt;&gt;
 
-```python
+```text
 >>> [[row[i] for row in matrix] for i in range(4)]
 [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 
 As we saw in the previous section, the nested listcomp is evaluated in the context of the [`for`](https://docs.python.org/3.9/reference/compound_stmts.html#for) that follows it, so this example is equivalent to:&gt;&gt;&gt;
 
-```python
+```text
 >>> transposed = []
 >>> for i in range(4):
 ...     transposed.append([row[i] for row in matrix])
@@ -1383,7 +1385,7 @@ As we saw in the previous section, the nested listcomp is evaluated in the conte
 
 which, in turn, is the same as:&gt;&gt;&gt;
 
-```python
+```text
 >>> transposed = []
 >>> for i in range(4):
 ...     # the following 3 lines implement the nested listcomp
@@ -1398,7 +1400,7 @@ which, in turn, is the same as:&gt;&gt;&gt;
 
 In the real world, you should prefer built-in functions to complex flow statements. The [`zip()`](https://docs.python.org/3.9/library/functions.html#zip) function would do a great job for this use case:&gt;&gt;&gt;
 
-```python
+```text
 >>> list(zip(*matrix))
 [(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]
 ```
@@ -1409,7 +1411,7 @@ See [Unpacking Argument Lists](https://docs.python.org/3.9/tutorial/controlflow.
 
 There is a way to remove an item from a list given its index instead of its value: the [`del`](https://docs.python.org/3.9/reference/simple_stmts.html#del) statement. This differs from the `pop()` method which returns a value. The `del` statement can also be used to remove slices from a list or clear the entire list \(which we did earlier by assignment of an empty list to the slice\). For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = [-1, 1, 66.25, 333, 333, 1234.5]
 >>> del a[0]
 >>> a
@@ -1424,7 +1426,7 @@ There is a way to remove an item from a list given its index instead of its valu
 
 [`del`](https://docs.python.org/3.9/reference/simple_stmts.html#del) can also be used to delete entire variables:&gt;&gt;&gt;
 
-```python
+```text
 >>> del a
 ```
 
@@ -1436,7 +1438,7 @@ We saw that lists and strings have many common properties, such as indexing and 
 
 A tuple consists of a number of values separated by commas, for instance:&gt;&gt;&gt;
 
-```python
+```text
 >>> t = 12345, 54321, 'hello!'
 >>> t[0]
 12345
@@ -1463,7 +1465,7 @@ Though tuples may seem similar to lists, they are often used in different situat
 
 A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these. Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma \(it is not sufficient to enclose a single value in parentheses\). Ugly, but effective. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> empty = ()
 >>> singleton = 'hello',    # <-- note trailing comma
 >>> len(empty)
@@ -1476,7 +1478,7 @@ A special problem is the construction of tuples containing 0 or 1 items: the syn
 
 The statement `t = 12345, 54321, 'hello!'` is an example of _tuple packing_: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
 
-```python
+```text
 >>> x, y, z = t
 ```
 
@@ -1490,7 +1492,7 @@ Curly braces or the [`set()`](https://docs.python.org/3.9/library/stdtypes.html#
 
 Here is a brief demonstration:&gt;&gt;&gt;
 
-```python
+```text
 >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 >>> print(basket)                      # show that duplicates have been removed
 {'orange', 'banana', 'pear', 'apple'}
@@ -1517,7 +1519,7 @@ False
 
 Similarly to [list comprehensions](https://docs.python.org/3.9/tutorial/datastructures.html#tut-listcomps), set comprehensions are also supported:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = {x for x in 'abracadabra' if x not in 'abc'}
 >>> a
 {'r', 'd'}
@@ -1535,7 +1537,7 @@ Performing `list(d)` on a dictionary returns a list of all the keys used in the 
 
 Here is a small example using a dictionary:&gt;&gt;&gt;
 
-```python
+```text
 >>> tel = {'jack': 4098, 'sape': 4139}
 >>> tel['guido'] = 4127
 >>> tel
@@ -1558,21 +1560,21 @@ False
 
 The [`dict()`](https://docs.python.org/3.9/library/stdtypes.html#dict) constructor builds dictionaries directly from sequences of key-value pairs:&gt;&gt;&gt;
 
-```python
+```text
 >>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 {'sape': 4139, 'guido': 4127, 'jack': 4098}
 ```
 
 In addition, dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:&gt;&gt;&gt;
 
-```python
+```text
 >>> {x: x**2 for x in (2, 4, 6)}
 {2: 4, 4: 16, 6: 36}
 ```
 
 When the keys are simple strings, it is sometimes easier to specify pairs using keyword arguments:&gt;&gt;&gt;
 
-```python
+```text
 >>> dict(sape=4139, guido=4127, jack=4098)
 {'sape': 4139, 'guido': 4127, 'jack': 4098}
 ```
@@ -1581,7 +1583,7 @@ When the keys are simple strings, it is sometimes easier to specify pairs using 
 
 When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the `items()` method.&gt;&gt;&gt;
 
-```python
+```text
 >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 >>> for k, v in knights.items():
 ...     print(k, v)
@@ -1592,7 +1594,7 @@ robin the brave
 
 When looping through a sequence, the position index and corresponding value can be retrieved at the same time using the [`enumerate()`](https://docs.python.org/3.9/library/functions.html#enumerate) function.&gt;&gt;&gt;
 
-```python
+```text
 >>> for i, v in enumerate(['tic', 'tac', 'toe']):
 ...     print(i, v)
 ...
@@ -1603,7 +1605,7 @@ When looping through a sequence, the position index and corresponding value can 
 
 To loop over two or more sequences at the same time, the entries can be paired with the [`zip()`](https://docs.python.org/3.9/library/functions.html#zip) function.&gt;&gt;&gt;
 
-```python
+```text
 >>> questions = ['name', 'quest', 'favorite color']
 >>> answers = ['lancelot', 'the holy grail', 'blue']
 >>> for q, a in zip(questions, answers):
@@ -1616,7 +1618,7 @@ What is your favorite color?  It is blue.
 
 To loop over a sequence in reverse, first specify the sequence in a forward direction and then call the [`reversed()`](https://docs.python.org/3.9/library/functions.html#reversed) function.&gt;&gt;&gt;
 
-```python
+```text
 >>> for i in reversed(range(1, 10, 2)):
 ...     print(i)
 ...
@@ -1629,7 +1631,7 @@ To loop over a sequence in reverse, first specify the sequence in a forward dire
 
 To loop over a sequence in sorted order, use the [`sorted()`](https://docs.python.org/3.9/library/functions.html#sorted) function which returns a new sorted list while leaving the source unaltered.&gt;&gt;&gt;
 
-```python
+```text
 >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 >>> for i in sorted(basket):
 ...     print(i)
@@ -1644,7 +1646,7 @@ pear
 
 Using [`set()`](https://docs.python.org/3.9/library/stdtypes.html#set) on a sequence eliminates duplicate elements. The use of [`sorted()`](https://docs.python.org/3.9/library/functions.html#sorted) in combination with [`set()`](https://docs.python.org/3.9/library/stdtypes.html#set) over a sequence is an idiomatic way to loop over unique elements of the sequence in sorted order.&gt;&gt;&gt;
 
-```python
+```text
 >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 >>> for f in sorted(set(basket)):
 ...     print(f)
@@ -1657,7 +1659,7 @@ pear
 
 It is sometimes tempting to change a list while you are looping over it; however, it is often simpler and safer to create a new list instead.&gt;&gt;&gt;
 
-```python
+```text
 >>> import math
 >>> raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('NaN'), 47.8]
 >>> filtered_data = []
@@ -1683,7 +1685,7 @@ The Boolean operators `and` and `or` are so-called _short-circuit_ operators: th
 
 It is possible to assign the result of a comparison or other Boolean expression to a variable. For example,&gt;&gt;&gt;
 
-```python
+```text
 >>> string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
 >>> non_null = string1 or string2 or string3
 >>> non_null
@@ -1696,7 +1698,7 @@ Note that in Python, unlike C, assignment inside expressions must be done explic
 
 Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses _lexicographical_ ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller \(lesser\) one. Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type:
 
-```python
+```text
 (1, 2, 3)              < (1, 2, 4)
 [1, 2, 3]              < [1, 2, 4]
 'ABC' < 'C' < 'Pascal' < 'Python'
@@ -1708,6 +1710,8 @@ Sequence objects typically may be compared to other objects with the same sequen
 
 Note that comparing objects of different types with `<` or `>` is legal provided that the objects have appropriate comparison methods. For example, mixed numeric types are compared according to their numeric value, so 0 equals 0.0, etc. Otherwise, rather than providing an arbitrary ordering, the interpreter will raise a [`TypeError`](https://docs.python.org/3.9/library/exceptions.html#TypeError) exception.
 
+
+
 ## Modules
 
 If you quit from the Python interpreter and enter it again, the definitions you have made \(functions and variables\) are lost. Therefore, if you want to write a somewhat longer program, you are better off using a text editor to prepare the input for the interpreter and running it with that file as input instead. This is known as creating a _script_. As your program gets longer, you may want to split it into several files for easier maintenance. You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.
@@ -1716,7 +1720,7 @@ To support this, Python has a way to put definitions in a file and use them in a
 
 A module is a file containing Python definitions and statements. The file name is the module name with the suffix `.py` appended. Within a module, the module’s name \(as a string\) is available as the value of the global variable `__name__`. For instance, use your favorite text editor to create a file called `fibo.py` in the current directory with the following contents:
 
-```python
+```text
 # Fibonacci numbers module
 
 def fib(n):    # write Fibonacci series up to n
@@ -1737,13 +1741,13 @@ def fib2(n):   # return Fibonacci series up to n
 
 Now enter the Python interpreter and import this module with the following command:&gt;&gt;&gt;
 
-```python
+```text
 >>> import fibo
 ```
 
 This does not enter the names of the functions defined in `fibo` directly in the current symbol table; it only enters the module name `fibo` there. Using the module name you can access the functions:&gt;&gt;&gt;
 
-```python
+```text
 >>> fibo.fib(1000)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
 >>> fibo.fib2(100)
@@ -1754,7 +1758,7 @@ This does not enter the names of the functions defined in `fibo` directly in the
 
 If you intend to use a function often you can assign it to a local name:&gt;&gt;&gt;
 
-```python
+```text
 >>> fib = fibo.fib
 >>> fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
@@ -1770,7 +1774,7 @@ Modules can import other modules. It is customary but not required to place all 
 
 There is a variant of the [`import`](https://docs.python.org/3.9/reference/simple_stmts.html#import) statement that imports names from a module directly into the importing module’s symbol table. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> from fibo import fib, fib2
 >>> fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
@@ -1780,7 +1784,7 @@ This does not introduce the module name from which the imports are taken in the 
 
 There is even a variant to import all names that a module defines:&gt;&gt;&gt;
 
-```python
+```text
 >>> from fibo import *
 >>> fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
@@ -1792,7 +1796,7 @@ Note that in general the practice of importing `*` from a module or package is f
 
 If the module name is followed by `as`, then the name following `as` is bound directly to the imported module.&gt;&gt;&gt;
 
-```python
+```text
 >>> import fibo as fib
 >>> fib.fib(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
@@ -1802,13 +1806,13 @@ This is effectively importing the module in the same way that `import fibo` will
 
 It can also be used when utilising [`from`](https://docs.python.org/3.9/reference/simple_stmts.html#from) with similar effects:&gt;&gt;&gt;
 
-```python
+```text
 >>> from fibo import fib as fibonacci
 >>> fibonacci(500)
 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 ```
 
-Note
+Note 
 
 For efficiency reasons, each module is only imported once per interpreter session. Therefore, if you change your modules, you must restart the interpreter – or, if it’s just one module you want to test interactively, use [`importlib.reload()`](https://docs.python.org/3.9/library/importlib.html#importlib.reload), e.g. `import importlib; importlib.reload(modulename)`.
 
@@ -1816,13 +1820,13 @@ For efficiency reasons, each module is only imported once per interpreter sessio
 
 When you run a Python module with
 
-```python
+```text
 python fibo.py <arguments>
 ```
 
 the code in the module will be executed, just as if you imported it, but with the `__name__` set to `"__main__"`. That means that by adding this code at the end of your module:
 
-```python
+```text
 if __name__ == "__main__":
     import sys
     fib(int(sys.argv[1]))
@@ -1830,14 +1834,14 @@ if __name__ == "__main__":
 
 you can make the file usable as a script as well as an importable module, because the code that parses the command line only runs if the module is executed as the “main” file:
 
-```python
+```text
 $ python fibo.py 50
 0 1 1 2 3 5 8 13 21 34
 ```
 
 If the module is imported, the code is not run:&gt;&gt;&gt;
 
-```python
+```text
 >>> import fibo
 >>>
 ```
@@ -1848,11 +1852,11 @@ This is often used either to provide a convenient user interface to a module, or
 
 When a module named `spam` is imported, the interpreter first searches for a built-in module with that name. If not found, it then searches for a file named `spam.py` in a list of directories given by the variable [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path). [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path) is initialized from these locations:
 
-- The directory containing the input script \(or the current directory when no file is specified\).
-- [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) \(a list of directory names, with the same syntax as the shell variable `PATH`\).
-- The installation-dependent default.
+* The directory containing the input script \(or the current directory when no file is specified\).
+* [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) \(a list of directory names, with the same syntax as the shell variable `PATH`\).
+* The installation-dependent default.
 
-Note
+Note 
 
 On file systems which support symlinks, the directory containing the input script is calculated after the symlink is followed. In other words the directory containing the symlink is **not** added to the module search path.
 
@@ -1868,16 +1872,16 @@ Python does not check the cache in two circumstances. First, it always recompile
 
 Some tips for experts:
 
-- You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
-- A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
-- The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
-- There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
+* You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
+* A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
+* The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
+* There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
 
 ### 6.2. Standard Modules
 
 Python comes with a library of standard modules, described in a separate document, the Python Library Reference \(“Library Reference” hereafter\). Some modules are built into the interpreter; these provide access to operations that are not part of the core of the language but are nevertheless built in, either for efficiency or to provide access to operating system primitives such as system calls. The set of such modules is a configuration option which also depends on the underlying platform. For example, the [`winreg`](https://docs.python.org/3.9/library/winreg.html#module-winreg) module is only provided on Windows systems. One particular module deserves some attention: [`sys`](https://docs.python.org/3.9/library/sys.html#module-sys), which is built into every Python interpreter. The variables `sys.ps1` and `sys.ps2` define the strings used as primary and secondary prompts:&gt;&gt;&gt;
 
-```python
+```text
 >>> import sys
 >>> sys.ps1
 '>>> '
@@ -1893,7 +1897,7 @@ These two variables are only defined if the interpreter is in interactive mode.
 
 The variable `sys.path` is a list of strings that determines the interpreter’s search path for modules. It is initialized to a default path taken from the environment variable [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH), or from a built-in default if [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) is not set. You can modify it using standard list operations:&gt;&gt;&gt;
 
-```python
+```text
 >>> import sys
 >>> sys.path.append('/ufs/guido/lib/python')
 ```
@@ -1902,11 +1906,11 @@ The variable `sys.path` is a list of strings that determines the interpreter’s
 
 The built-in function [`dir()`](https://docs.python.org/3.9/library/functions.html#dir) is used to find out which names a module defines. It returns a sorted list of strings:&gt;&gt;&gt;
 
-```python
+```text
 >>> import fibo, sys
 >>> dir(fibo)
 ['__name__', 'fib', 'fib2']
->>> dir(sys)
+>>> dir(sys)  
 ['__breakpointhook__', '__displayhook__', '__doc__', '__excepthook__',
  '__interactivehook__', '__loader__', '__name__', '__package__', '__spec__',
  '__stderr__', '__stdin__', '__stdout__', '__unraisablehook__',
@@ -1932,7 +1936,7 @@ The built-in function [`dir()`](https://docs.python.org/3.9/library/functions.ht
 
 Without arguments, [`dir()`](https://docs.python.org/3.9/library/functions.html#dir) lists the names you have defined currently:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = [1, 2, 3, 4, 5]
 >>> import fibo
 >>> fib = fibo.fib
@@ -1944,9 +1948,9 @@ Note that it lists all types of names: variables, modules, functions, etc.
 
 [`dir()`](https://docs.python.org/3.9/library/functions.html#dir) does not list the names of built-in functions and variables. If you want a list of those, they are defined in the standard module [`builtins`](https://docs.python.org/3.9/library/builtins.html#module-builtins):&gt;&gt;&gt;
 
-```python
+```text
 >>> import builtins
->>> dir(builtins)
+>>> dir(builtins)  
 ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException',
  'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning',
  'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError',
@@ -1984,7 +1988,7 @@ Packages are a way of structuring Python’s module namespace by using “dotted
 
 Suppose you want to design a collection of modules \(a “package”\) for the uniform handling of sound files and sound data. There are many different sound file formats \(usually recognized by their extension, for example: `.wav`, `.aiff`, `.au`\), so you may need to create and maintain a growing collection of modules for the conversion between the various file formats. There are also many different operations you might want to perform on sound data \(such as mixing, adding echo, applying an equalizer function, creating an artificial stereo effect\), so in addition you will be writing a never-ending stream of modules to perform these operations. Here’s a possible structure for your package \(expressed in terms of a hierarchical filesystem\):
 
-```python
+```text
 sound/                          Top-level package
       __init__.py               Initialize the sound package
       formats/                  Subpackage for file format conversions
@@ -2016,37 +2020,37 @@ The `__init__.py` files are required to make Python treat directories containing
 
 Users of the package can import individual modules from the package, for example:
 
-```python
+```text
 import sound.effects.echo
 ```
 
 This loads the submodule `sound.effects.echo`. It must be referenced with its full name.
 
-```python
+```text
 sound.effects.echo.echofilter(input, output, delay=0.7, atten=4)
 ```
 
 An alternative way of importing the submodule is:
 
-```python
+```text
 from sound.effects import echo
 ```
 
 This also loads the submodule `echo`, and makes it available without its package prefix, so it can be used as follows:
 
-```python
+```text
 echo.echofilter(input, output, delay=0.7, atten=4)
 ```
 
 Yet another variation is to import the desired function or variable directly:
 
-```python
+```text
 from sound.effects.echo import echofilter
 ```
 
 Again, this loads the submodule `echo`, but this makes its function `echofilter()` directly available:
 
-```python
+```text
 echofilter(input, output, delay=0.7, atten=4)
 ```
 
@@ -2060,7 +2064,7 @@ Now what happens when the user writes `from sound.effects import *`? Ideally, on
 
 The only solution is for the package author to provide an explicit index of the package. The [`import`](https://docs.python.org/3.9/reference/simple_stmts.html#import) statement uses the following convention: if a package’s `__init__.py` code defines a list named `__all__`, it is taken to be the list of module names that should be imported when `from package import *` is encountered. It is up to the package author to keep this list up-to-date when a new version of the package is released. Package authors may also decide not to support it, if they don’t see a use for importing \* from their package. For example, the file `sound/effects/__init__.py` could contain the following code:
 
-```python
+```text
 __all__ = ["echo", "surround", "reverse"]
 ```
 
@@ -2068,7 +2072,7 @@ This would mean that `from sound.effects import *` would import the three named 
 
 If `__all__` is not defined, the statement `from sound.effects import *` does _not_ import all submodules from the package `sound.effects` into the current namespace; it only ensures that the package `sound.effects` has been imported \(possibly running any initialization code in `__init__.py`\) and then imports whatever names are defined in the package. This includes any names defined \(and submodules explicitly loaded\) by `__init__.py`. It also includes any submodules of the package that were explicitly loaded by previous [`import`](https://docs.python.org/3.9/reference/simple_stmts.html#import) statements. Consider this code:
 
-```python
+```text
 import sound.effects.echo
 import sound.effects.surround
 from sound.effects import *
@@ -2086,7 +2090,7 @@ When packages are structured into subpackages \(as with the `sound` package in t
 
 You can also write relative imports, with the `from module import name` form of import statement. These imports use leading dots to indicate the current and parent packages involved in the relative import. From the `surround` module for example, you might use:
 
-```python
+```text
 from . import echo
 from .. import formats
 from ..filters import equalizer
@@ -2099,3 +2103,4 @@ Note that relative imports are based on the name of the current module. Since th
 Packages support one more special attribute, [`__path__`](https://docs.python.org/3.9/reference/import.html#__path__). This is initialized to be a list containing the name of the directory holding the package’s `__init__.py` before the code in that file is executed. This variable can be modified; doing so affects future searches for modules and subpackages contained in the package.
 
 While this feature is not often needed, it can be used to extend the set of modules found in a package.
+

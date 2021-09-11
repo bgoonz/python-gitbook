@@ -2,29 +2,47 @@
 
 ## My Blog:
 
-[![Edit ds-algo (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=dark)
+[![Edit ds-algo \(forked\)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=dark)
 
 {% embed url="https://codesandbox.io/embed/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=light&view=preview" %}
 
 {% embed url="https://codesandbox.io/embed/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=light&view=preview" %}
 
-{% tabs %} {% tab title="Blog" %}
 
-{% tab title="Algorithms" %} {% embed url="https://codesandbox.io/s/ds-algo-forked-iezyk?file=/index.html" caption="" %} {% endtab %}
 
-{% tab title="Awesome Find:" %} Awesome Find:
 
-{% embed url="https://codesandbox.io/s/ds-algo-forked-ysri0" %} {% endtab %}
 
-{% tab title="DS Website" %} {% embed url="https://codesandbox.io/s/s2y91" %} {% endtab %}
+{% tabs %}
+{% tab title="Blog" %}
 
-{% tab title="My Blog" %} {% embed url="https://codesandbox.io/s/c1qdv" %} {% endtab %}
+{% tab title="Algorithms" %}
+{% embed url="https://codesandbox.io/s/ds-algo-forked-iezyk?file=/index.html" caption="" %}
+{% endtab %}
 
-{% tab title="CS-Unit" %} {% embed url="https://codesandbox.io/s/e754i" %} {% endtab %}
+{% tab title="Awesome Find:" %}
+Awesome Find:
 
-{% tab title="" %} [https://codesandbox.io/s/ys5bq](https://codesandbox.io/s/ys5bq)
+{% embed url="https://codesandbox.io/s/ds-algo-forked-ysri0" %}
+{% endtab %}
 
-{% embed url="https://codesandbox.io/s/ys5bq" %} {% endtab %} {% endtabs %}
+{% tab title="DS Website" %}
+{% embed url="https://codesandbox.io/s/s2y91" %}
+{% endtab %}
+
+{% tab title="My Blog" %}
+{% embed url="https://codesandbox.io/s/c1qdv" %}
+{% endtab %}
+
+{% tab title="CS-Unit" %}
+{% embed url="https://codesandbox.io/s/e754i" %}
+{% endtab %}
+
+{% tab title="" %}
+[https://codesandbox.io/s/ys5bq](https://codesandbox.io/s/ys5bq)
+
+{% embed url="https://codesandbox.io/s/ys5bq" %}
+{% endtab %}
+{% endtabs %}
 
 {% embed url="https://pythontutor.com/visualize.html\#" %}
 
@@ -40,7 +58,17 @@
 
 #### Repl.it Python Courses:
 
+
+
 {% file src=".gitbook/assets/pptx-2-.zip" %}
+
+
+
+
+
+
+
+
 
 ### **DS-Algo Book PDF:**
 
@@ -68,9 +96,14 @@
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/examples.zip" %}
 
+
+
 {% embed url="https://www.canva.com/design/DAEpdYVQGvs/-7ftWD3SCRu-yVbKqUYkNQ/view?website\#2:page-1" %}
 
----
+
+
+  
+****
 
 \*\*\*\*
 
@@ -82,195 +115,417 @@
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/00\_python\_cheatsheet.ipynb" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/00\_python\_cheatsheet.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/89ee83715da365910327b8b818e33bbe0a368f5c" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/00\_python\_cheatsheet.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/01\_python\_basics.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/fd613da637afa66ea93238eaaf19b6fed7e7daf9" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/01\_python\_basics.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/02\_flow\_control.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/02\_flow\_control.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/03\_functions.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/03\_functions.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/04\_exception\_handling.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/04\_exception\_handling.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/05\_lists\_and\_tuples.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/05\_lists\_and\_tuples.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/06\_dictionaries.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/06\_dictionaries.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/07\_sets.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/07\_sets.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/08\_itertools\_module.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/08\_itertools\_module.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/09\_comprehensions.ipynb" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/09\_comprehensions.ipynb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/10-linkedlist.pdf" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/3413aa49c36a6108b705cf7703f0122cda8561ba" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/10-linkedlist.pdf" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/10\_manipulating\_strings.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/10\_manipulating\_strings.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/11\_string\_formatting.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/11\_string\_formatting.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/12\_regular\_expressions.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/12\_regular\_expressions.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/13\_file\_and\_directory\_paths.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/13\_file\_and\_directory\_paths.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/14\_reading\_and\_writing\_files.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/14\_reading\_and\_writing\_files.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/15\_json\_yaml.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/15\_json\_yaml.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/16\_debugging.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/16\_debugging.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/17\_lambda\_and\_ternary\_conditionals\_operators.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/17\_lambda\_and\_ternary\_conditionals\_operators.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/18\_args\_and\_kwargs.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/18\_args\_and\_kwargs.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/19\_context\_manager.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/19\_context\_manager.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/20\_\_main\_\_top\_level\_script\_environment.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/20\_\_main\_\_top\_level\_script\_environment.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/21\_setup.py.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/21\_setup.py.ipynb" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/22\_dataclasses.ipynb" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/22\_dataclasses.ipynb" %}
+
+
+
+
+
+
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/92a8ab42ef6b8401afc4446e86adcb0ee26e2adb" %}
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/backpedal.py" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/backpedal.py" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/36ee1afb22e26c71e59fefe61b1ff10532b3661a" %}
+
+
+
+
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/a655f88cbf2d8ff81f009553166839a9c16e6acb" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_paths\_dict.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_paths\_dict.py" %}
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_search\_dict.py" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_search\_dict.py" %}
+
+
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs\_search\_grid.py" %}
 
+
+
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bfs\_search\_grid.py" %}
+
+
 
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bigo.png" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/549d27ee7b6dc0a8fcedcdda7919393def7c0de8" %}
+
+
 
 ![](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bigo.png)
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite\_matching\_single.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bipartite\_matching\_single.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect\_search.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bisect\_search.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst\_make\_balanced\_recur.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bst\_make\_balanced\_recur.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_inorder\_traversal\_recur.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/bt\_level\_order\_traversal\_iter.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/celebrity.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/celebrity.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_dict.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_dict.py" %}
 
+
+
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting\_sort\_list.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/counting\_sort\_list.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_component\_dict\_recur.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_component\_dict\_recur.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_components\_grid.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_components\_grid.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs\_paths\_dict\_recur.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dfs\_paths\_dict\_recur.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_distances\_min.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_distances\_min.py" %}
 
+
+
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras\_path\_pq.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/dijkstras\_path\_pq.py" %}
 
+
+
 {% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/employees.py" %}
+
+
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/employees.py" %}
 
@@ -490,13 +745,13 @@
 
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/ipynb.zip](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/ipynb.zip)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/josephus_problem_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/josephus_problem_recur.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/josephus\_problem\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/josephus_problem_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/josephus_problem_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/josephus_problem_recur.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/josephus\_problem\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/josephus_problem_recur.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/knapsack_simple.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/knapsack_simple.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/knapsack\_simple.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/knapsack_simple.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/knapsack_simple.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/knapsack_simple.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/knapsack\_simple.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/knapsack_simple.py)
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/partition.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/partition.py)
 
@@ -528,21 +783,21 @@
 
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_iter \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_iter \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_iter.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_iter.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur.py)
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests%20%281%29.py)
 
@@ -552,16 +807,17 @@
 
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo_sort_count.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo_sort_count.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo\_sort\_count.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo_sort_count.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo_sort_count.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo_sort_count.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo\_sort\_count.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo_sort_count.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid_nesting_multi.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid_nesting_multi.py)
+[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid\_nesting\_multi.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid_nesting_multi.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid_nesting_multi.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid_nesting_multi.py)
+[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid\_nesting\_multi.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid_nesting_multi.py)
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/zen-of-python.pdf](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/zen-of-python.pdf)
 
 [https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a](https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a)
 
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf)
+

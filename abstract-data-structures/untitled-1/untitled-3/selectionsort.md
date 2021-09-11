@@ -22,7 +22,7 @@ So for this algorithm, we are going to use two for loops, one for traversing thr
 
 Another nested loop is used to compare each element until the last element for each iteration.
 
-```python
+```text
 def selectionSort(List):
     for i in range(len(List) - 1):
         minimum = i
@@ -34,35 +34,13 @@ def selectionSort(List):
     return List
 ```
 
-### Selection Sort Recursive:
-
-```py
-
-from collections.abc import MutableSequence
-
-from src.typehints import T
-
-
-def selection_sort_recur(seq: MutableSequence[T], i=0) -> None:
-    """Use selection sort recursively on a list in-place."""
-    if i >= len(seq) - 1:
-        return
-    min_val = min(seq[i:])
-    min_val_i = seq.index(min_val, i)
-    seq[min_val_i] = seq[i]
-    seq[i] = min_val
-    selection_sort_recur(seq, i + 1)
-
-
-```
-
 **The Complexity of Selection Sort**
 
 The time efficiency of selection sort is quadratic, so there are a number of sorting techniques which have better time complexity than selection sort.
 
 One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, _n_ − 1 in the worst case.
 
-```python
+```text
 Best O(n^2); Average O(n^2); Worst O(n^2)
 ```
 
@@ -72,7 +50,7 @@ Now let’s define the main condition where we define our unordered list which n
 
 So, pass the user-defined lists to function and print the returned sorted list using the print statement.
 
-```python
+```text
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     print('Sorted List:',selectionSort(List))
@@ -80,7 +58,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```python
+```text
 
 def selectionSort_Ascending(List):
     for i in range(len(List) - 1):
@@ -111,3 +89,4 @@ if __name__ == '__main__':
 **Output**
 
 ![Selection Sort using For loop in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2020/01/Selection-Sort-using-For-loop-in-Python-Output.png?resize=665%2C129&ssl=1)
+

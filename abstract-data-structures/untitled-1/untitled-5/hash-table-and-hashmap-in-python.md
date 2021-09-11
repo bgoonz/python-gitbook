@@ -6,17 +6,17 @@ Data requires a number of ways in which it can be stored and accessed. One of th
 
 Before moving ahead, let us take a look at all the topics of discussion:
 
-- What is a Hash table or a Hashmap in Python?
-- Hash table vs Hashmap
-- Creating Dictionaries
-- Creating Nested Dictionaries
-- Performing Operations on Hash Tables using dictionaries
+* What is a Hash table or a Hashmap in Python?
+* Hash table vs Hashmap
+* Creating Dictionaries
+* Creating Nested Dictionaries
+* Performing Operations on Hash Tables using dictionaries
 
 1. Accessing Values
 2. Updating Values
 3. Deleting Items
 
-- Converting a Dictionary into a Dataframe
+* Converting a Dictionary into a Dataframe
 
 In computer science, a Hash table or a Hashmap is a type of data structure that maps keys to its value pairs \(implement abstract array data types\). It basically makes use of a function that computes an index value that in turn holds the elements to be searched, inserted, removed, etc. This makes it easy and fast to access data. In general, hash tables store key-value pairs and the key is generated using a hash function.
 
@@ -30,8 +30,8 @@ Moving ahead, let’s see the difference between the hash table and hashmap in P
 
 Dictionaries can be created in two ways:
 
-- Using curly braces \({}\)
-- Using the _dict\(\)_ function
+* Using curly braces \({}\)
+* Using the _dict\(\)_ function
 
 ### Using curly braces: <a id="using-curly-braces"></a>
 
@@ -39,7 +39,7 @@ Dictionaries in Python can be created using curly braces as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print(my_dict)
 type(my_dict)
@@ -47,7 +47,8 @@ type(my_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’} dict
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
+dict
 
 ### Using dict\(\) function: <a id="using-dict-function"></a>
 
@@ -55,7 +56,7 @@ Python has a built-in function, _dict\(\)_ that can be used to create [dictionar
 
 **EXAMPLE:**
 
-```python
+```text
 new_dict=dict()
 print(new_dict)
 type(new_dict)
@@ -63,13 +64,14 @@ type(new_dict)
 
 **OUTPUT:**
 
-{} dict
+{}  
+dict
 
 In the above example, an empty dictionary is created since no key-value pairs are supplied as a parameter to the dict\(\) function. In case you want to add values, you can do as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 new_dict=dict(Dave = '001' , Ava= '002' , Joe= '003')
 print(new_dict)
 type(new_dict)
@@ -77,13 +79,14 @@ type(new_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’} dict
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
+dict
 
 Nested dictionaries are basically dictionaries that lie within other dictionaries. For example:
 
 **EXAMPLE:**
 
-```python
+```text
 emp_details = {'Employee': {'Dave': {'ID': '001',
  'Salary': 2000,
  'Designation':'Python Developer'},
@@ -97,17 +100,17 @@ emp_details = {'Employee': {'Dave': {'ID': '001',
 
 There are a number of operations that can be performed on has tables in Python through dictionaries such as:
 
-- Accessing Values
-- Updating Values
-- Deleting Element
+* Accessing Values
+* Updating Values
+* Deleting Element
 
 ### Accessing Values: <a id="accessing-values"></a>
 
 The values of a dictionary can be accessed in many ways such as:
 
-- Using key values
-- Using functions
-- Implementing the for loop
+* Using key values
+* Using functions
+* Implementing the for loop
 
 ### Using key values: <a id="using-key-values"></a>
 
@@ -115,7 +118,7 @@ Dictionary values can be accessed using the key values as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 my_dict\['Dave'\]
 ```
@@ -128,7 +131,7 @@ There are a number of built-in functions that can be used such as get\(\), keys\
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print(my_dict.keys())
 print(my_dict.values())
@@ -137,13 +140,15 @@ print(my_dict.get('Dave'))
 
 **OUTPUT:**
 
-dict_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\) dict_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\) 001
+dict\_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\)  
+dict\_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\)  
+001
 
 ### Implementing the for loop: <a id="implementing-the-for-loop"></a>
 
 **The for loop allows you to access the key-value pairs of a dictionary easily by iterating over them. For example:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print("All keys")
 for x in my_dict:
@@ -158,13 +163,24 @@ for x,y in my_dict.items():
 
 **OUTPUT:**
 
-All keys Dave Ava Joe All values 001 002 003 All keys and values Dave : 001 Ava : 002 Joe : 003
+All keys  
+Dave  
+Ava  
+Joe  
+All values  
+001  
+002  
+003  
+All keys and values  
+Dave : 001  
+Ava : 002  
+Joe : 003
 
 > Dictionaries are mutable data types and therefore, you can update them as and when required. For example, if I want to change the ID of the employee named Dave from ‘001’ to ‘004’ and if I want to add another key-value pair to my dictionary, I can do as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 my_dict\['Dave'\] = '004' #Updating the value of Dave
 my_dict\['Chris'\] = '005' #adding a key-value pair
@@ -177,7 +193,7 @@ There a number of functions that allow you to delete items from a dictionary suc
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave': '004', 'Ava': '002', 'Joe': '003', 'Chris': '005'}
 del my_dict\['Dave'\] #removes key-value pair of 'Dave'
 my_dict.pop('Ava') #removes the value of 'Ava'
@@ -193,7 +209,7 @@ As you have seen previously, I have created a nested dictionary containing emplo
 
 **EXAMPLE:**
 
-```python
+```text
 import pandas as pd
 emp_details = {'Employee': {'Dave': {'ID': '001',
  'Salary': 2000,
@@ -211,3 +227,4 @@ print(df)
 **OUTPUT:**
 
 ![](https://miro.medium.com/max/1320/1*it6P3nXxkJLE5kckWPMkOg.png)
+
