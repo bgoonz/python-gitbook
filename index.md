@@ -50,6 +50,12 @@ Awesome Find:
 
 
 
+{% file src=".gitbook/assets/pptx-2-.zip" %}
+
+
+
+
+
 
 
 
@@ -59,6 +65,8 @@ Awesome Find:
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/grokking-algorithms-1-.pdf" caption="" %}
 
 ### **Python Cheat Sheet:**
+
+{% file src=".gitbook/assets/read\_me\_-\_week\_1\_-\_output-\_variables\_and\_input.md" %}
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" caption="" %}
 
