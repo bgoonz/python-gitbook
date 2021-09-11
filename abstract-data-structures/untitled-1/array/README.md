@@ -15,7 +15,7 @@
 * Given an array of integers, print out a histogram using the said array; include a base layer \(all stars\)
   * E.g. `[5, 4, 0, 3, 4, 1]`
 
-```python
+```text
 *
 **  *
 ** **

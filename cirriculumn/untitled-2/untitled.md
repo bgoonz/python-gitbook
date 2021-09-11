@@ -192,7 +192,7 @@ Python doesn’t allow that to happen. The interpreter limits the maximum number
 
 **Technical note:** You can find out what Python’s recursion limit is with a function from the `sys` module called `getrecursionlimit()`:&gt;&gt;&gt;
 
-```python
+```text
 >>> from sys import getrecursionlimit
 >>> getrecursionlimit()
 1000
@@ -200,7 +200,7 @@ Python doesn’t allow that to happen. The interpreter limits the maximum number
 
 You can change it, too, with `setrecursionlimit()`:&gt;&gt;&gt;
 
-```python
+```text
 >>> from sys import setrecursionlimit
 >>> setrecursionlimit(2000)
 >>> getrecursionlimit()
@@ -366,7 +366,7 @@ Another factor to take into consideration is execution speed. There can be signi
 
 To evaluate execution time, you can use a function called [`timeit()`](https://docs.python.org/3/library/timeit.html#timeit.timeit) from a module that is also called `timeit`. This function supports a number of different formats, but you’ll use the following format in this tutorial:
 
-```python
+```text
 timeit(<command>, setup=<setup_string>, number=<iterations>)
 ```
 
@@ -508,14 +508,14 @@ Suppose you wanted to count the number of **leaf elements** in this list—the l
 
 Just calling `len()` on the list doesn’t give the correct answer:&gt;&gt;&gt;
 
-```python
+```text
 >>> len(names)
 5
 ```
 
 `len()` counts the objects at the top level of `names`, which are the three leaf elements `"Adam"`, `"Alex"`, and `"Ann"` and two sublists `["Bob", ["Chet", "Cat"], "Barb", "Bert"]` and `["Bea", "Bill"]`:&gt;&gt;&gt;
 
-```python
+```text
 >>> for index, item in enumerate(names):
 ...     print(index, item)
 ...
@@ -542,7 +542,7 @@ Recursion fits this problem very nicely. To solve it, you need to be able to det
 
 In the case of the `names` list, if an item is an instance of type `list`, then it’s a sublist. Otherwise, it’s a leaf item:&gt;&gt;&gt;
 
-```python
+```text
 >>> names
 ['Adam', ['Bob', ['Chet', 'Cat'], 'Barb', 'Bert'], 'Alex', ['Bea', 'Bill'], 'Ann']
 
@@ -569,7 +569,7 @@ False
 
 Now you have the tools in place to implement a function that counts leaf elements in a list, accounting for sublists recursively:
 
-```python
+```text
 def count_leaf_items(item_list):
     """Recursively counts and returns the
        number of leaf items in a (potentially
@@ -587,7 +587,7 @@ def count_leaf_items(item_list):
 
 If you run `count_leaf_items()` on several lists, including the `names` list defined above, you get this:&gt;&gt;&gt;
 
-```python
+```text
 >>> count_leaf_items([1, 2, 3, 4])
 4
 >>> count_leaf_items([1, [2.1, 2.2], 3])

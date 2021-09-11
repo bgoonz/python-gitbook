@@ -25,7 +25,7 @@ There are a lot of theoretical uses of connected components that are beyond the 
 
 If you have a BFS or DFS, finding connected components is pretty straightforward if you modify your search to return a list of verts visited. \(Also modify the search to not always color the verts white at the start.\)
 
-```python
+```text
 connected_components = [];
 
 for v in graph.vertexes:

@@ -167,21 +167,6 @@
   * [My-Links](resources/untitled/my-links.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
-## quick-reference
-
-* [My Medium Articles](quick-reference/my-medium-articles.md)
-* [Free Python Books](quick-reference/free-python-books.md)
-* [WHY Python?](quick-reference/why-python.md)
-* [Python Snippets](quick-reference/python-snippets.md)
-* [Python3 Regex](quick-reference/python3-regex.md)
-* [Python Module Index:](quick-reference/python-module-index/README.md)
-  * [Requests Module](quick-reference/python-module-index/requests-module.md)
-* [Creating Python Modules](quick-reference/creating-python-modules.md)
-* [Useful Info](quick-reference/untitled.md)
-* [Python Glossary](quick-reference/python-glossary.md)
-* [Python Snippets](quick-reference/untitled-1.md)
-* [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
-
 ## Docs <a id="stdlib"></a>
 
 * [Touple](stdlib/touple.md)
@@ -204,9 +189,25 @@
 * [Built In Functions](stdlib/built-in-functions/README.md)
   * [Zip Function](stdlib/built-in-functions/zip-function.md)
 * [Built-in Types](stdlib/untitled-2.md)
-* [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules.md)
+* [Dictionaries, sets, files, and modules](stdlib/dictionaries-sets-files-and-modules/README.md)
+  * [Modules](stdlib/dictionaries-sets-files-and-modules/modules.md)
 * [Queue & Stacks](stdlib/queue-and-stacks.md)
 * [Values Expressions & Statments](stdlib/values-expressions-and-statments.md)
+
+## quick-reference
+
+* [My Medium Articles](quick-reference/my-medium-articles.md)
+* [Free Python Books](quick-reference/free-python-books.md)
+* [WHY Python?](quick-reference/why-python.md)
+* [Python Snippets](quick-reference/python-snippets.md)
+* [Python3 Regex](quick-reference/python3-regex.md)
+* [Python Module Index:](quick-reference/python-module-index/README.md)
+  * [Requests Module](quick-reference/python-module-index/requests-module.md)
+* [Creating Python Modules](quick-reference/creating-python-modules.md)
+* [Useful Info](quick-reference/untitled.md)
+* [Python Glossary](quick-reference/python-glossary.md)
+* [Python Snippets](quick-reference/untitled-1.md)
+* [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
 
 ## MISC
 

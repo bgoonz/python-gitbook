@@ -12,7 +12,7 @@
   * The problem reduces to finding the maximum sum of non-consecutive array elements.
   * E.g.
 
-    ```python
+    ```text
     // [5, 1, 1, 5] => 10
     The above array would represent an example booking period as follows -
     // Dec 1 - 5

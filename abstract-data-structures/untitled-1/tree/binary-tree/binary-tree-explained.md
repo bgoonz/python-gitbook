@@ -31,7 +31,7 @@ _Note: Prerequisites – Make sure you have basic Python knowledge before diving
 
 #### Binary Trees: Introduction <a id="binary-trees-introduction"></a>
 
-![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png)
+![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png)  
 _Figure: Binary Trees,_ [_Image Source_](https://www.studytonight.com/data-structures/introduction-to-binary-trees)
 
 A binary tree **node** consists of the following components:
@@ -63,7 +63,7 @@ A binary tree is a hierarchical data structure, a file system that is organized 
 
 Let us first define the Node class.
 
-```python
+```text
 # The Node Class defines the structure of a Node
 class Node:
     # Initialize the attributes of Node
@@ -75,7 +75,7 @@ class Node:
 
 Once we have defined the Node class, we can initialize our Binary Tree:
 
-```python
+```text
 class Node:
     def __init__(self, data):
         self.left = None
@@ -107,7 +107,7 @@ Since a binary tree is a non-linear data structure, there is more than one way t
 
 In an inorder traversal, the left child is visited first, followed by the parent node, then followed by the right child.
 
-```python
+```text
 def inorder(node):
     if node:
         # Recursively call inorder on the left subtree until it reaches a leaf node
@@ -133,7 +133,7 @@ def inorder(node):
 
 In a preorder traversal, the root node is visited first, followed by the left child, then the right child.
 
-```python
+```text
 def preorder(node):
     if node:
         # Print the value of the root node first
@@ -159,7 +159,7 @@ def preorder(node):
 
 In a postorder traversal, the left child is visited first, followed by the right child, then the root node.
 
-```python
+```text
 def postorder(node):
     if node:
         # Recursively call postorder on the left subtree until we reach a leaf node.

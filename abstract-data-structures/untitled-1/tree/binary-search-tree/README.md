@@ -559,7 +559,7 @@ The delete operation is one of the more complex ones. It is a recursive function
 
 The exists function is another simple recursive function that returns `True` or `False` depending on whether a given value already exists in the tree.
 
-```python
+```text
 def exists(self, val):
     if val == self.val:
         return True
