@@ -1,4 +1,4 @@
-# \_Mini Graph-Projects
+# Searching and Generating Graphs
 
 ## Searching and Generating Graphs
 
