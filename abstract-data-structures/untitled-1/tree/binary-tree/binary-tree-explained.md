@@ -11,13 +11,96 @@ description: >-
 
 A Binary Tree is a non-linear data structure that is used for searching and data organization. A binary tree is comprised of nodes. Each node being a data component, one a left child and the other the right child. Let us dive into the concepts related to trees and implement them into the Python programming language.
 
-For more background on the different types of data structures in Python, check out the following articles:
+{% tabs %}
+{% tab title="Sample B-Tree-code.py" %}
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.left = None
+        self.right = None
 
-* [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
-* [List](https://www.section.io/list-data-structure-python/)
-* [Stack](https://www.section.io/stack-data-structure-python/)
-* [Queue](https://www.section.io/queue-data-structure-python/)
-* [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
+
+class BinaryTree:
+    def __init__(self):
+        self.length = 0
+        self.root = None
+
+    def addNode(self, data):
+        newNode = Node(data)
+        if self.root == None:
+            self.root = newNode
+        else:
+            # added = self.traverseList(self.root, newNode)
+            # print(added)
+            if not self.traverseList(self.root, newNode):
+                print("value already stored {}".format(data))
+                return
+        self.length += 1
+
+    def traverseList(self, curNode, newNode):
+        if newNode.data == curNode.data:
+            return False
+
+        if newNode.data > curNode.data:
+            if curNode.right == None:
+                curNode.right = newNode
+                return True
+            else:
+                return self.traverseList(curNode.right, newNode)
+
+        else:
+            if curNode.left == None:
+                curNode.left = newNode
+                return True
+            else:
+                return self.traverseList(curNode.left, newNode)
+
+    def printTree(self):
+        self.traversePrintTree(self.root)
+
+    def traversePrintTree(self, curNode):
+        print(curNode.data)
+        if curNode.left != None:
+            self.traversePrintTree(curNode.left)
+        if curNode.right != None:
+            self.traversePrintTree(curNode.right)
+
+
+
+bT = BinaryTree()
+
+# adding Nodes
+bT.addNode(8)
+bT.addNode(4)
+bT.addNode(12)
+bT.addNode(2)
+bT.addNode(6)
+bT.addNode(10)
+bT.addNode(14)
+bT.addNode(3)
+
+print("\n")
+# check correct length
+print(bT.length)
+print("\n")
+
+# adding duplicate Nodes
+bT.addNode(10)
+bT.addNode(4)
+bT.addNode(3)
+print("\n")
+
+# Display Nodes
+bT.printTree()
+
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 _Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. \(links are given above\)_
 
