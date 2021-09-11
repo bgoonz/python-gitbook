@@ -6,6 +6,10 @@
 
 {% embed url="https://codesandbox.io/s/search-awesome-iomg4" %}
 
+### 
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
 ### Jupyter Notebooks
 
 {% file src="../../.gitbook/assets/ipynb.zip" %}
@@ -14,25 +18,57 @@
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-60s1b" %}
 
+## 
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
 ## Number Base Converter:
 
 {% embed url="http://number-base-converter-react.vercel.app/" %}
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-lfujh?from-embed" %}
 
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
 {% embed url="https://bgoonz-branch-the-algos.vercel.app/" %}
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
+### Job Search:
+
+
 
 {% embed url="https://codesandbox.io/s/thealgos-q48t0" %}
 
+### 
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
+### Main Python Notes Repository:
+
 {% embed url="https://ds-unit-5-lambda.netlify.app/" %}
+
+
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
+### Base Number Converter \(React\):
+
+
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-lfujh?from-embed" %}
 
 
 
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 
-#### Table of contents
+
+## Table of contents
 
 * [Home](https://bgoonz42.gitbook.io/datastructures-in-pytho/README)
 * [Navigation](https://bgoonz42.gitbook.io/datastructures-in-pytho/navigation)

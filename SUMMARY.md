@@ -42,6 +42,15 @@
   * [DFS](curriculum/untitled-1/untitled-1.md)
   * [D4](curriculum/untitled-1/untitled-2.md)
 
+## Utilities
+
+* [Utilites](utilities/untitled/README.md)
+  * [YouTube](utilities/untitled/untitled.md)
+  * [Code Lab Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
+* [Code lab Notebooks](utilities/code-lab-notebooks.md)
+* [Repl.IT](utilities/repl.it/README.md)
+  * [Trinket](utilities/repl.it/trinket.md)
+
 ## Abstract Data Structures
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
@@ -124,15 +133,6 @@
     * [Stack Part 3](abstract-data-structures/untitled-1/stack/stack-part-3.md)
   * [Searching](abstract-data-structures/untitled-1/untitled-2/README.md)
     * [Binary Search](abstract-data-structures/untitled-1/untitled-2/binary-search.md)
-
-## Utilities
-
-* [Utilites](utilities/untitled/README.md)
-  * [YouTube](utilities/untitled/untitled.md)
-  * [Code Lab Notebook Embeds From Lecture](utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
-* [Code lab Notebooks](utilities/code-lab-notebooks.md)
-* [Repl.IT](utilities/repl.it/README.md)
-  * [Trinket](utilities/repl.it/trinket.md)
 
 ## practice
 
