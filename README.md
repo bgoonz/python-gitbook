@@ -4,21 +4,19 @@ description: Landing Page
 
 # Home
 
-### self link: [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
+## This Website:
+
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" %}
 
 ## The Git Repo For This Website:
 
 {% embed url="https://github.com/bgoonz/python-gitbook" caption="" %}
-
-## 
 
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## Main Repo:
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES" caption="" %}
-
-## 
 
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
@@ -28,23 +26,17 @@ description: Landing Page
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-e754i" caption="" %}
 
-## 
-
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## The Algorithms Reference Site:
 
 {% embed url="https://bgoonz-branch-the-algos.vercel.app/" caption="" %}
 
-## 
-
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## Notion:
 
 {% embed url="https://www.notion.so/webdevhub42/Python-Data-Structures-Unit-1da9a5d55db844f4b62aff6fd2b4d1ce" caption="" %}
-
-## \*\*\*\*
 
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
@@ -54,8 +46,6 @@ description: Landing Page
 
 {% embed url="https://github.com/bgoonz/Data-Structures-Algos-Codebase" caption="" %}
 
-## \*\*\*\*
-
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## **Blog:**
@@ -64,21 +54,19 @@ description: Landing Page
 
 {% embed url="https://master--bgoonz-blog.netlify.app/" caption="" %}
 
-## \*\*\*\*
-
 ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## **Downloads:**
 
-### \*\*\*\*
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/index" %}
 
-{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" caption="" %}
-
-
+![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## For Beginners:
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled" %}
+
+![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ## Navigation
 
