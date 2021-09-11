@@ -128,7 +128,8 @@
 
 * [Intro 2 Python](resources/intro-2-python.md)
 * [Inheritance](resources/untitled-2.md)
-* [Strings](resources/strings.md)
+* [Strings](resources/strings/README.md)
+  * [Strings Continued](resources/strings/strings-continued.md)
 * [Dictionaries](resources/dictionaries/README.md)
   * [Dictionaries Continued](resources/dictionaries/dictionaries-continued.md)
 * [Python VS JavaScript](resources/python-vs-javascript.md)
