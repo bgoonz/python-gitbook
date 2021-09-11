@@ -4,6 +4,10 @@
 
 ![](.gitbook/assets/image%20%2821%29.png)
 
+{% embed url="https://replit.com/@bgoonz/30-days-python\#01\_Day\_Introduction/helloworld.py" %}
+
+
+
 ![](.gitbook/assets/image%20%2822%29.png)
 
 #### Understanding variables <a id="understanding-variables"></a>
