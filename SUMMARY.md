@@ -161,6 +161,7 @@
 
 ## quick-reference
 
+* [My Medium Articles](quick-reference/my-medium-articles.md)
 * [Free Python Books](quick-reference/free-python-books.md)
 * [WHY Python?](quick-reference/why-python.md)
 * [Python Snippets](quick-reference/python-snippets.md)
