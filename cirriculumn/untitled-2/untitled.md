@@ -6,9 +6,9 @@ description: Searching & Recursion
 
 
 
-{% page-ref page="../../practice/untitled/untitled-6/recursion-explained/" %}
+{% page-ref page="../../abstract-data-structures/untitled-1/untitled-6/recursion-explained/" %}
 
-{% page-ref page="../../practice/untitled/untitled-6/recursion-explained/recursion-examples.md" %}
+{% page-ref page="../../abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples.md" %}
 
 {% embed url="https://gist.github.com/bgoonz/f1aa6200c2acad7abb38261c76ef7efa" %}
 
