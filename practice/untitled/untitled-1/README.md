@@ -472,3 +472,5 @@ A _directed acyclic graph_ \(_DAG_\) has a number of applications. From [Wikiped
 
 It's notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit \(in the case of a branch\). A child could come from one parent commit, or from two \(in the case of a merge\). But there's no way to go back and form a repeating loop in the git commit hierarchy.
 
+
+

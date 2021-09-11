@@ -17,7 +17,7 @@ The algorithm never attempts to explore a vert that it either has explored or is
 
 For example, when starting from the upper left, the numbers on this graph show a vertex visitation order in a DFS:
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](../../../../.gitbook/assets/image%20%2812%29.png)
 
 The bold lines show with edges were followed. \(The thin edges were not followed since their destination nodes had already been visited.\)
 
@@ -114,7 +114,7 @@ dfs.dfs(node1)
 
 ```
 
-![](../../../.gitbook/assets/image%20%284%29.png)
+![](../../../../.gitbook/assets/image%20%284%29.png)
 
 
 
