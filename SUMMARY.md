@@ -111,6 +111,7 @@
   * [Graphs](practice/untitled/untitled-1/README.md)
     * [\_Mini Graph-Projects](practice/untitled/untitled-1/_mini-graph-projects/README.md)
       * [\# Social Graph](practice/untitled/untitled-1/_mini-graph-projects/social-graph.md)
+      * [number of 1 islands](practice/untitled/untitled-1/_mini-graph-projects/number-of-1-islands.md)
       * [Searching and Generating Graphs](practice/untitled/untitled-1/_mini-graph-projects/searching-and-generating-graphs.md)
     * [Graph FAQ](practice/untitled/untitled-1/graph-faq/README.md)
       * [Graph DFS](practice/untitled/untitled-1/graph-faq/graph-dfs.md)
