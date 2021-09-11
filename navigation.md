@@ -15,7 +15,7 @@
 * [README](https://github.com/bgoonz/python-gitbook/blob/master/readme-1.md)
 * [Navigation](https://github.com/bgoonz/python-gitbook/blob/master/navigation.md)
 
-### Cirriculumn
+### Curriculum
 
 * [Outline](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled/README.md)
   * [General Content](https://github.com/bgoonz/python-gitbook/blob/master/cirriculumn/untitled/general-content.md)

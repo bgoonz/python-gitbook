@@ -8,7 +8,7 @@
 
 {% page-ref page="red\_black-tree.md" %}
 
-{% page-ref page="../../../cirriculumn/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md" %}
+{% page-ref page="../../../curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md" %}
 
 {% page-ref page="../set/" %}
 

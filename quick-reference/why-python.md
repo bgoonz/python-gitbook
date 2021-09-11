@@ -57,7 +57,7 @@ Now when you know that Python has such an amazing feature set, why don’t we ge
 
 To get started off with the Python Basics, you need to first **install Python** in your system right? So let’s do that right now! You should know that most **Linux** and **Unix** distributions these days come with a version of Python out of the box. To set yourself up, you can follow this 
 
-{% page-ref page="../cirriculumn/untitled-3/untitled-2/install-python.md" %}
+{% page-ref page="../curriculum/untitled-3/untitled-2/install-python.md" %}
 
 
 
