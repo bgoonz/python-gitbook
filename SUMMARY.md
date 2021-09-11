@@ -151,6 +151,7 @@
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
 * [Python Cheat Sheet](resources/python-cheat-sheet.md)
+* [Awesome Python](resources/awesome-python.md)
 * [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
   * [My-Links](resources/untitled/my-links.md)
