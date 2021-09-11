@@ -21,3 +21,4 @@ In this module, you will learn about binary tree properties and binary search tr
 ### Tree Traversal <a id="tree-traversal"></a>
 
 In this module, you will learn about the different tree traversal methods and practice using them in algorithmic code challenges.
+

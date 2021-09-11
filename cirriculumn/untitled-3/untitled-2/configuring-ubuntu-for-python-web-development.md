@@ -1,5 +1,7 @@
 # Configuring Ubuntu for Python Web Development
 
+
+
 _Note:_ the following instructions assume that you are connected to the Internet and that you have both the `main` and `universe` package repositories enabled. All unix shell commands are assumed to be running from your home directory \($HOME\). Finally, any command that begins with `sudo` assums that you have administrative rights on your machine. If you do not — please ask your system administrator about installing the software you need.
 
 What follows are instructions for setting up an Ubuntu 16.04 \(Xenial\) home environment for use with this book. I use Ubuntu GNU/Linux for both development and testing of the book, so it is the only system about which I can personally answer setup and configuration questions.
@@ -16,13 +18,13 @@ In addition to the [debian packages](http://en.wikipedia.org/wiki/Debian_package
 
 To add this package run following from the unix command prompt:
 
-```python
+```text
 $ sudo apt install python3-pip
 ```
 
 Now would also be a good time to install a few other packages you will want to have on your system:
 
-```python
+```text
 $ sudo apt install python3-tk pep8 bzr
 ```
 
@@ -34,13 +36,13 @@ This will install the [Tkinter](http://en.wikipedia.org/wiki/Tkinter) GUI toolki
 
 To install `bottle` run:
 
-```python
+```text
 $ sudo apt install python3-bottle
 ```
 
 Then try:
 
-```python
+```text
 >>> import bottle
 ```
 
@@ -54,13 +56,13 @@ To use Vim, do the following:
 
 1. From the unix command prompt, run:
 
-   ```python
+   ```text
    $ sudo apt install vim
    ```
 
 2. Create a file in your home directory named `.vimrc` that contains the following:
 
-   ```python
+   ```text
    syntax enable
    filetype indent on
    set et
@@ -75,7 +77,7 @@ When you edit a file with a `.py` extension, you should now have color systax hi
 
 To learn to use vim, run the following command at a unix command prompt:
 
-```python
+```text
 $ vimtutor
 ```
 
@@ -85,19 +87,19 @@ The following creates a useful environment in your [home directory](http://en.wi
 
 1. From the command prompt in your home directory, create `bin` and `lib` subdirectories of your `.local` directory by running the following command:
 
-   ```python
+   ```text
    $ mkdir .local/lib .local/bin
    ```
 
 2. Now add a `my_python` subdirectory to `.local/lib`:
 
-   ```python
+   ```text
    $ mkdir .local/lib/my_python
    ```
 
 3. Add the following lines to the bottom of your `.bashrc` in your home directory:
 
-   ```python
+   ```text
    EDITOR=vim
    PATH=$HOME/.local/bin$PATH
    PYTHONPATH=$HOME/.local/lib/my_python
@@ -109,7 +111,7 @@ The following creates a useful environment in your [home directory](http://en.wi
 
    Then run:
 
-   ```python
+   ```text
    $ . .bashrc
    ```
 
@@ -129,14 +131,15 @@ On unix systems, Python scripts can be made _executable_ using the following pro
 
 1. Add this line as the first line in the script:
 
-   ```python
+   ```text
    #!/usr/bin/env python3
    ```
 
 2. At the unix command prompt, type the following to make `myscript.py` executable:
 
-   ```python
+   ```text
    $ chmod +x myscript.py
    ```
 
 3. Move `myscript.py` into your `.local/bin` directory, and it will be runnable from anywhere.
+

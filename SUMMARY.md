@@ -223,6 +223,7 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
+  * [Algo-Prep](interview-prep/interview-resources/leetcode.md)
   * [By Example](interview-prep/interview-resources/by-example.md)
   * [Permutation](interview-prep/interview-resources/permutation.md)
   * [General Data Structures Notes](interview-prep/interview-resources/general-data-structures-notes.md)

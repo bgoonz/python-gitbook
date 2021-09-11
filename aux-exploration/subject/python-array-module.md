@@ -4,7 +4,7 @@
 
 Array is yet another interesting topic of python, which covers and requires a good knowledge of basics before actually applying it. But the article is of course, one more magic spell from fairy basket, so why would it be partial to any coder?
 
-This article takes you from basic to advanced knowledge of Python array modules. So, let’s get started.
+This article takes you from basic to advanced knowledge of Python array modules. So, let’s get started. 
 
 #### What is Array Module in Python?
 
@@ -135,7 +135,7 @@ The class array has the following data items-
 
 **2. Array.typecode:** The typecode character used in creating the array.
 
-**3. Array.itemsize:** The length of array
+**3. Array.itemsize:** The length of array 
 
 &gt;&gt;&gt;arr.itemsize
 
@@ -145,7 +145,7 @@ The class array has the following data items-
 
 **5. array.append\(x\):** Append new item with value x to the end of the array.
 
-**6. array.pop\(\[i\]\):**removes the element “i”which is parsed.
+**6. array.pop\(\[i\]\):**removes the element  “i”which is parsed.
 
 &gt;&gt;&gt;arr.pop
 
@@ -165,7 +165,7 @@ The class array has the following data items-
 
 &gt;&gt;&gt;arr.insert
 
-**11. array.buffer_info\(\)**
+**11. array.buffer\_info\(\)**
 
 This returns a tuple that holds the address in memory and the length of elements in the buffer that holds the contents of the array in the runtime.
 
@@ -179,7 +179,7 @@ This performs an operation of bytes wap on an array in the runtime.
 
 **13. array.count\(x\)**
 
-finds out how many 3s there are in our Python array in the runtime.
+ finds out how many 3s there are in our Python array in the runtime.
 
 &gt;&gt;&gt; arr.count
 
@@ -219,9 +219,9 @@ converts the array into a list in the runtime.
 
 &gt;&gt;&gt; arr.tolist\(\)
 
-**20. array.tounicode\(\)**
+ **20. array.tounicode\(\)**
 
-converts an array to a Unicode string in the runtime.
+converts an array to a Unicode string in the runtime. 
 
 &gt;&gt;&gt; arr.tounicode
 
@@ -243,27 +243,27 @@ Element at 2nd index: 50
 
 Arrays can be declared in various ways and in different languages. The important points that should be considered are as follows:
 
-- Index always starts with 0.
-- We can access each element using its index.
-- The length of the array defines the capacity to store the elements.
+* Index always starts with 0.
+* We can access each element using its index.
+* The length of the array defines the capacity to store the elements.
 
 #### Python Array Operations
 
 Some of the basic operations supported by an array are:
 
-- **Traverse** – It prints all elements one by one.
-- **Insertion** – It adds an element at a given index.
-- **Deletion** – It deletes elements at the given index.
-- **Search** – It searches the element using the given index or by the value.
-- **Update** – It updates elements at the given index.
+* **Traverse** – It prints all elements one by one.
+* **Insertion** – It adds an element at a given index.
+* **Deletion** – It deletes elements at the given index.
+* **Search** – It searches the element using the given index or by the value.
+* **Update** – It updates elements at the given index.
 
 **Searching Element in Python Array Example:**  
-from array import \*array_techvidvan = array\(‘i’, \[0,1,2,3,4,5\]\)print \(array_techvidvan.index\(3\)\)
+from array import \*array\_techvidvan = array\(‘i’, \[0,1,2,3,4,5\]\)print \(array\_techvidvan.index\(3\)\)
 
 **Output:**1
 
 **Example of Traversing Array in Python**  
-from array import \*array_TechVidvan = \[0,1,2,3,4,5\]for x in array_TechVidvan: print \(x\)
+from array import \*array\_TechVidvan = \[0,1,2,3,4,5\]for x in array\_TechVidvan: print \(x\)
 
 **Output:**
 
@@ -330,7 +330,7 @@ NameError: name ‘numb’ is not defined
 
 **Code**import arrayprint \("Array before", end =" "\)for k in range \(0,2\): print \(\[k\], end =" "\)
 
-**Output:**Array before \[0\] \[1\]
+**Output:**Array before \[0\] \[1\] 
 
 #### Looping Array Elements in Python
 
@@ -350,7 +350,7 @@ NameError: name ‘numb’ is not defined
 
 By using the slicing operator \(:\), it’s possible to access a range of elements present in the array in Python programming language. The following code snippet demonstrates using the slicing operator with an array :
 
-**Code**number_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range\(1,5\): print\(i\)for j in range\(5,8\): print\(j\)
+**Code**number\_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range\(1,5\): print\(i\)for j in range\(5,8\): print\(j\)
 
 **Output:**
 
@@ -368,7 +368,7 @@ By using the slicing operator \(:\), it’s possible to access a range of elemen
 
 Arrays are mutable. Hence, their elements can be changed similarly as lists.The append\(\) method is used for adding one element to an array while extend\(\) method allows adding multiple elements. These new elements are added at the end of the array.
 
-Although knowing how to deal with arrays isn’t a compulsory part of learning Python, being able to do so is surely an added advantage.Typically, the array module is generally required for interfacing with C code.
+Although knowing how to deal with arrays isn’t a compulsory part of learning Python, being able to do so is surely an added advantage.Typically, the array module is generally  required for interfacing with C code. 
 
 #### Python Lists Vs Arrays
 
@@ -376,7 +376,7 @@ Although knowing how to deal with arrays isn’t a compulsory part of learning P
 
 **Output:**
 
-Traceback \(most recent call last\): File “&lt;string&gt;”, line 3, in &lt;module&gt;
+Traceback \(most recent call last\):  File “&lt;string&gt;”, line 3, in &lt;module&gt;
 
 TypeError: must be real number, not str
 
@@ -385,3 +385,4 @@ TypeError: must be real number, not str
 At the end of the article, we got an idea of how an array is similar to a list in many aspects, but surely there is a difference. The array is not very much recommended in Python as stated earlier but knowing it will add to your knowledge.
 
 A good coder is someone who knows every aspect of code, and practice is a definite key. Try and check out array\(\) yourself. Happy Pythonning!
+

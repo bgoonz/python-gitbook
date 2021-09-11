@@ -4,15 +4,17 @@
 
 This code is the very beginning of an employee management system for a company. There are three failing tests that need to be fixed.
 
-- The test code can be assumed to be perfect. Only edit `employees.py`.
-- The code is Python 2 and Python 3 compatible and has no dependencies.
+* The test code can be assumed to be perfect. Only edit `employees.py`.
+* The code is Python 2 and Python 3 compatible and has no dependencies.
 
 #### Running the tests
 
-```python
+```text
 python -m unittests tests
 
 ```
+
+
 
 ```python
 class Employee(object):
@@ -101,3 +103,6 @@ class TestJobs(TestCase):
 ```
 
 {% file src="../../.gitbook/assets/tests.py" caption="test.py" %}
+
+
+

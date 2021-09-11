@@ -1,6 +1,8 @@
 ---
 description: >-
-  Queues are a linear data structure that store data in a “first in, first out” (FIFO) order. Unlike arrays, you cannot access elements by index and instead can only pull the next oldest element. This m
+  Queues are a linear data structure that store data in a “first in, first out”
+  (FIFO) order. Unlike arrays, you cannot access elements by index and instead
+  can only pull the next oldest element. This m
 ---
 
 # Queue
@@ -10,6 +12,8 @@ description: >-
 {% page-ref page="queue-continued....md" %}
 
 {% page-ref page="dequeue.md" %}
+
+
 
 ```python
 # FIFO: first in first out
@@ -73,8 +77,8 @@ print(f'Size: {queue.size_queue()}')
 
 ## Queue
 
-- Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.
-- Implement a Queue using two stacks. You may only use the standard `push()`, `pop()`, and `peek()` operations traditionally available to stacks. You do not need to implement the stack yourself \(i.e. an array can be used to simulate a stack\).
+* Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.
+* Implement a Queue using two stacks. You may only use the standard `push()`, `pop()`, and `peek()` operations traditionally available to stacks. You do not need to implement the stack yourself \(i.e. an array can be used to simulate a stack\).
 
 ### Queues in Python
 
@@ -86,29 +90,34 @@ We could use a Python list with `append()` and `pop()` methods to implement a qu
 
 Instead, it’s best practice to use the `deque` class from Python’s `collections` module. Deques are optimized for the append and pop operations. The deque implementation also allows you to create double-ended queues, which can access both sides of the queue through the `popleft()` and `popright()` methods.
 
+
+
+
+
 **Advantages:**
 
-- Automatically orders data chronologically
-- Scales to meet size requirements
-- Time efficient with `deque` class
+* Automatically orders data chronologically
+* Scales to meet size requirements
+* Time efficient with `deque` class
 
 **Disadvantages:**
 
-- Can only access data on the ends
+* Can only access data on the ends
 
 **Applications:**
 
-- Operations on a shared resource like a printer or [CPU core](https://www.educative.io/blog/beginners-guide-to-computers-and-programming)
-- Serve as temporary storage for batch systems
-- Provides an easy default order for tasks of equal importance
+* Operations on a shared resource like a printer or [CPU core](https://www.educative.io/blog/beginners-guide-to-computers-and-programming)
+* Serve as temporary storage for batch systems
+* Provides an easy default order for tasks of equal importance
 
 #### Common queue interview questions in Python
 
-- Reverse first k elements of a queue
-- Implement a queue using a linked list
-- Implement a stack using a queue
-- {% tabs %} {% tab title="Implementation " %}
-
+* Reverse first k elements of a queue
+* Implement a queue using a linked list
+* Implement a stack using a queue
+* 
+{% tabs %}
+{% tab title="Implementation " %}
 ```python
 """Make a Queue class using a list!
 Hint: You can use any Python list method
@@ -165,12 +174,12 @@ q.enqueue(5)
 print q.peek()
 
 ```
-
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
 
 ```python
 """Make a Queue class using a list!
@@ -228,6 +237,8 @@ q.enqueue(5)
 print q.peek()
 
 ```
+
+
 
 {% page-ref page="../array/" %}
 
@@ -260,3 +271,6 @@ print q.peek()
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
+
+
+
