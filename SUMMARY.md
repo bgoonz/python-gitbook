@@ -234,4 +234,5 @@
   * [Touple](aux-exploration/subject/touple.md)
   * [How to round Python values to whole numbers?](aux-exploration/subject/untitled.md)
   * [Python Array Module](aux-exploration/subject/python-array-module.md)
+  * [Data Structures In JavaScript](aux-exploration/subject/data-structures-in-javascript.md)
 
