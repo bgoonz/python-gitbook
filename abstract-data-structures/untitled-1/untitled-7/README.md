@@ -12,6 +12,10 @@ Data structures are being used in almost every program or software system that h
 
 In this article, I will be briefly explaining 8 commonly used data structures every programmer must know.
 
+{% embed url="https://replit.com/@bgoonz/DATASTRUCTURES-NOTES\#sorting/insertion\_sort/insertion.py" %}
+
+
+
 ## 1. Arrays <a id="31ab"></a>
 
 An **array** is a structure of fixed-size, which can hold items of the same data type. It can be an array of integers, an array of floating-point numbers, an array of strings or even an array of arrays \(such as _2-dimensional arrays_\). Arrays are indexed, meaning that random access is possible.![](https://miro.medium.com/max/60/1*pYIKtQYbX8vgCWrwe1YOyg.png?q=20)Fig 1. Visualization of basic Terminology of Arrays \(Image by author\)
