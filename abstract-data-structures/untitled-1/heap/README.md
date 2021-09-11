@@ -2,8 +2,6 @@
 
 {% page-ref page="heap-examples.md" %}
 
-
-
 ## 1. Overview of heap <a id="6d32"></a>
 
 A heap is one common implementation of [a priority queue](https://en.wikipedia.org/wiki/Priority_queue). A priority queue contains items with some priority. You can always take an item out in the priority order from a priority queue. It is important to take an item out based on the priority. When you look around poster presentations at an academic conference, it is very possible you have set in order to pick some presentations. Or you will make a priority list before you go sight-seeing \(In this case, an item will be a tourist spot.\). A stack and a queue also contain items. You can take an item out from a stack if the item is the last one added to the stack. This is first in, last out \(FILO\). As for a queue, you can take an item out from the queue if this item is the first one added to the queue. This is first in, first out \(FIFO\). You can regard these as a specific type of a priority queue. This is because the priority of an inserted item in stack increases and the priority of an inserted item in a queue decreases.![](https://miro.medium.com/max/60/1*oN767xTYckRTUjTIyS3oyw.png?q=20)
@@ -188,7 +186,7 @@ def heapsort(array):
         min_heapify(array, 0)    return sorted_array
 ```
 
-The time complexity of heapsort is _O_\(_n_log_n_\) because in the worst case, we should repeat _min\_heapify_ the number of items in array times, which is _n_.
+The time complexity of heapsort is _O_\(_n\_log\_n_\) because in the worst case, we should repeat _min\_heapify_ the number of items in array times, which is _n_.
 
 In [the heapq module](https://docs.python.org/3/library/heapq.html) of Python, it has already implemented some operation for a heap. I followed the method in MIT’s lecture, the implementation differs from Python’s. If you’d like to know Python’s detail implementation, please visit [the source code here](https://github.com/python/cpython/blob/master/Lib/heapq.py). For example, these methods are implemented in Python.
 
@@ -209,10 +207,6 @@ So that’s all for this post. Thank you for reading!
 ### References <a id="9803"></a>
 
 * [MIT OpenCourseWare 4. Heaps and Heap Sort](https://www.youtube.com/watch?v=B7hVxCmfPtM)
-
-
-
-
 
 ## Implementation
 
@@ -359,7 +353,6 @@ heap.insert(1)
 heap.insert(321)
 
 heap.heap_sort()
-
 ```
 
 ```python
@@ -447,10 +440,7 @@ for elem in new_elems:
 
 sorted_list = [heappop(heap) for _ in range(200)]
 print(sorted_list == sorted(sorted_list))
-
 ```
-
-
 
 {% page-ref page="../array/" %}
 
@@ -483,6 +473,4 @@ print(sorted_list == sorted(sorted_list))
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="./" %}
-
-
 

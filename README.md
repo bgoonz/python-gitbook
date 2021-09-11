@@ -66,8 +66,6 @@ description: Landing Page
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" caption="" %}
 
-
-
 ## Navigation
 
 **Website Version**
@@ -224,8 +222,6 @@ description: Landing Page
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
   * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
 
-------------------------------------------------------------------------------------------------------------------------
-
 **Global Site Tag:**
 
 ```javascript
@@ -239,10 +235,4 @@ description: Landing Page
   gtag('config', 'G-4HQK8JZK1T');
 </script>
 ```
-
-
-
-
-
-
 

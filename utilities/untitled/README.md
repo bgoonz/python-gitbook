@@ -6,8 +6,6 @@
 
 {% embed url="https://codesandbox.io/s/search-awesome-iomg4" %}
 
-
-
 ### Jupyter Notebooks
 
 {% file src="../../.gitbook/assets/ipynb.zip" %}
@@ -16,39 +14,15 @@
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-60s1b" %}
 
-
-
-
-
 ## Number Base Converter:
 
 {% embed url="http://number-base-converter-react.vercel.app/" %}
 
 {% embed url="https://codesandbox.io/s/ds-algo-forked-lfujh?from-embed" %}
 
-
-
-
-
-
-
-
-
-
-
 {% embed url="https://bgoonz-branch-the-algos.vercel.app/" %}
 
 {% embed url="https://codesandbox.io/s/thealgos-q48t0" %}
-
-
-
-
-
-
-
-
-
-
 
 {% embed url="https://ds-unit-5-lambda.netlify.app/" %}
 
@@ -56,9 +30,7 @@
 
 
 
-## Navigation
 
-**Website Version**
 
 #### Table of contents
 
@@ -100,9 +72,9 @@
 * [Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
 * [Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
   * [Trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
-* [Utilities](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
+* [Utilites](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
   * [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
-  * [Code Lab  Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+  * [Code Lab Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
 
 **practice**
 
@@ -150,7 +122,7 @@
 * [Calculating Big O](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
 * [Python Cheat Sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)
 * [Code Signal CGA Sprint Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
-* [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)
+* [Youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)
 * [Useful Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/README)
   * [My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
   * [Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
@@ -168,7 +140,7 @@
 
 * [Basic Syntax](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax)
 * [Values Expressions & Statments](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments)
-* [Python Standard Library  \(STDLIB\)](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)
+* [Python Standard Library \(STDLIB\)](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)
 * [Docs](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
   * [String-Methods](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
 * [Built In Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/built-in-functions)
@@ -208,56 +180,7 @@
   * [List Directory Contents](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
   * [Employee Manager](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
   * [OS Module](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
 
