@@ -2,13 +2,15 @@
 
 ## Navigation
 
-\*\*\*\*
+\*\*\*
 
-### Navigation
 
-### GitHub URLS:
 
-## Github URLS:
+## GitHub URLS:
+
+
+
+
 
 ## Table of contents
 
@@ -58,6 +60,7 @@
 
 * [Abstract Data Structures:](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/README.md)
   * [Data Structures Overview](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/untitled-7/README.md)
+    * [General Data Structures Notes](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/untitled-7/general-data-structures-notes.md)
     * [DS-Explained-Simple](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/untitled-7/ds-explained-simple.md)
     * [Untitled](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/untitled-7/untitled.md)
     * [Algorithms](https://github.com/bgoonz/python-gitbook/blob/master/abstract-data-structures/untitled-1/untitled-7/algorithms.md)
@@ -138,12 +141,12 @@
 
 ### Utilities
 
-* [Code lab Notebooks](https://github.com/bgoonz/python-gitbook/blob/master/utilities/code-lab-notebooks.md)
-* [Repl.IT](https://github.com/bgoonz/python-gitbook/blob/master/utilities/repl.it/README.md)
-  * [Trinket](https://github.com/bgoonz/python-gitbook/blob/master/utilities/repl.it/trinket.md)
 * [Utilites](https://github.com/bgoonz/python-gitbook/blob/master/utilities/untitled/README.md)
   * [YouTube](https://github.com/bgoonz/python-gitbook/blob/master/utilities/untitled/untitled.md)
   * [Code Lab Notebook Embeds From Lecture](https://github.com/bgoonz/python-gitbook/blob/master/utilities/untitled/code-lab-notebook-embeds-from-lecture.md)
+* [Code lab Notebooks](https://github.com/bgoonz/python-gitbook/blob/master/utilities/code-lab-notebooks.md)
+* [Repl.IT](https://github.com/bgoonz/python-gitbook/blob/master/utilities/repl.it/README.md)
+  * [Trinket](https://github.com/bgoonz/python-gitbook/blob/master/utilities/repl.it/trinket.md)
 
 ### practice
 
@@ -178,22 +181,7 @@
   * [My-Links](https://github.com/bgoonz/python-gitbook/blob/master/resources/untitled/my-links.md)
   * [Beginners Guide To Python](https://github.com/bgoonz/python-gitbook/blob/master/resources/untitled/beginners-guide-to-python.md)
 
-### quick-reference
-
-* [My Medium Articles](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/my-medium-articles.md)
-* [Free Python Books](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/free-python-books.md)
-* [WHY Python?](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/why-python.md)
-* [Python Snippets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-snippets.md)
-* [Python3 Regex](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python3-regex.md)
-* [Python Module Index:](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-module-index/README.md)
-  * [Requests Module](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-module-index/requests-module.md)
-* [Creating Python Modules](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/creating-python-modules.md)
-* [Useful Info](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/untitled.md)
-* [Python Glossary](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-glossary.md)
-* [Python Snippets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/untitled-1.md)
-* [List Of Python Cheat Sheets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/bash-commands.md)
-
-### Docs <a id="stdlib"></a>
+### Docs
 
 * [Touple](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/touple.md)
 * [Docs](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/untitled/README.md)
@@ -215,9 +203,25 @@
 * [Built In Functions](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/built-in-functions/README.md)
   * [Zip Function](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/built-in-functions/zip-function.md)
 * [Built-in Types](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/untitled-2.md)
-* [Dictionaries, sets, files, and modules](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/dictionaries-sets-files-and-modules.md)
+* [Dictionaries, sets, files, and modules](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/dictionaries-sets-files-and-modules/README.md)
+  * [Modules](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/dictionaries-sets-files-and-modules/modules.md)
 * [Queue & Stacks](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/queue-and-stacks.md)
 * [Values Expressions & Statments](https://github.com/bgoonz/python-gitbook/blob/master/stdlib/values-expressions-and-statments.md)
+
+### quick-reference
+
+* [My Medium Articles](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/my-medium-articles.md)
+* [Free Python Books](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/free-python-books.md)
+* [WHY Python?](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/why-python.md)
+* [Python Snippets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-snippets.md)
+* [Python3 Regex](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python3-regex.md)
+* [Python Module Index:](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-module-index/README.md)
+  * [Requests Module](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-module-index/requests-module.md)
+* [Creating Python Modules](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/creating-python-modules.md)
+* [Useful Info](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/untitled.md)
+* [Python Glossary](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/python-glossary.md)
+* [Python Snippets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/untitled-1.md)
+* [List Of Python Cheat Sheets](https://github.com/bgoonz/python-gitbook/blob/master/quick-reference/bash-commands.md)
 
 ### MISC
 
@@ -235,9 +239,9 @@
 ### Interview Prep
 
 * [Interview Resources](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/README.md)
-  * [By Example](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/by-example.md)
+  * [By Example](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/by-example/README.md)
+    * [Algo-Prep](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/by-example/leetcode.md)
   * [Permutation](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/permutation.md)
-  * [General Data Structures Notes](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/general-data-structures-notes.md)
   * [How to Write an Effective Resume of Python Developer](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](https://github.com/bgoonz/python-gitbook/blob/master/interview-prep/interview-resources/150-practice-problems-and-solutions.md)
@@ -262,6 +266,8 @@
   * [Data Structures In JavaScript](https://github.com/bgoonz/python-gitbook/blob/master/aux-exploration/subject/data-structures-in-javascript.md)
   * [Dunder Methods](https://github.com/bgoonz/python-gitbook/blob/master/aux-exploration/subject/dunder-methods.md)
   * [Python GitHub API](https://github.com/bgoonz/python-gitbook/blob/master/aux-exploration/subject/python-github-api.md)
+
+
 
 ## Website URLS:
 
