@@ -2,7 +2,23 @@
 
 ## 6. Dictionaries, sets, files, and modules
 
-### 6.1. Dictionaries
+
+
+![](../.gitbook/assets/image%20%289%29.png)
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
+![](../.gitbook/assets/image%20%2811%29.png)
+
+
+
+
+
+
+
+
+
+## Dictionaries
 
 **Dictionaries** are a compound type different from the sequence types we studied in the [Strings, lists, and tuples](https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter) chapter. They are Python’s built-in **mapping type**. They map **keys**, which can be any immutable type, to values, which can be any type, just like the values of a list or tuple.
 
