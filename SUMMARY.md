@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Index](index.md)
+* [Downloads & Misc-Assets](index.md)
 * [README](readme-1.md)
 * [Navigation](navigation.md)
 
