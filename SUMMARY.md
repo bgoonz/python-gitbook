@@ -248,4 +248,5 @@
   * [Python Array Module](aux-exploration/subject/python-array-module.md)
   * [Data Structures In JavaScript](aux-exploration/subject/data-structures-in-javascript.md)
   * [Dunder Methods](aux-exploration/subject/dunder-methods.md)
+  * [Python GitHub API](aux-exploration/subject/python-github-api.md)
 
