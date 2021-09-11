@@ -141,6 +141,7 @@
   * [Code Signal CGA Sprint Resources](practice/gca-sprint-prep/code-signal-cga-sprint-resources.md)
   * [CGA-Sprint Prep](practice/gca-sprint-prep/cga-sprint-prep.md)
 * [Supplemental Practice:](practice/supplemental-practice/README.md)
+  * [JavaScript Algorithms](practice/supplemental-practice/javascript-algorithms.md)
   * [Industry Standard Algorithms](practice/supplemental-practice/industry-standard-algorithms/README.md)
     * [Interview Practice Resources](practice/supplemental-practice/industry-standard-algorithms/interview-practice-resources.md)
     * [Write a Program to Find the Maximum Depth or Height of a Tree](practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree.md)
