@@ -109,6 +109,7 @@
   * [Searching](practice/untitled/untitled-2/README.md)
     * [Binary Search](practice/untitled/untitled-2/binary-search.md)
   * [Graphs](practice/untitled/untitled-1/README.md)
+    * [Earliest Ancestor](practice/untitled/untitled-1/earliest-ancestor.md)
     * [\_Mini Graph-Projects](practice/untitled/untitled-1/_mini-graph-projects/README.md)
       * [\# Social Graph](practice/untitled/untitled-1/_mini-graph-projects/social-graph.md)
       * [number of 1 islands](practice/untitled/untitled-1/_mini-graph-projects/number-of-1-islands.md)
