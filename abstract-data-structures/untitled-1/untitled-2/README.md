@@ -1,7 +1,5 @@
 # Searching
 
-
-
 ## Sorting and Searching
 
 * Sorting search results on a page given a certain set of criteria.

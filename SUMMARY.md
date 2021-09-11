@@ -133,6 +133,7 @@
     * [Stack Part 3](abstract-data-structures/untitled-1/stack/stack-part-3.md)
   * [Searching](abstract-data-structures/untitled-1/untitled-2/README.md)
     * [Binary Search](abstract-data-structures/untitled-1/untitled-2/binary-search.md)
+    * [Searching & Sorting Computational Complexity \(JS\)](abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js.md)
 
 ## practice
 
