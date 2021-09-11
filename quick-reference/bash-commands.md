@@ -2,7 +2,7 @@
 
 \*\*\*\*[**https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4\#file-python-cheatsheet-py**](https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4#file-python-cheatsheet-py)
 
-
+#### [https://gist.github.com/bgoonz/ec383b0bafc8e43db23f922002fc88d4](https://gist.github.com/bgoonz/ec383b0bafc8e43db23f922002fc88d4)
 
 {% file src="../.gitbook/assets/ipynb-cheatsheets.zip" caption="jupyter notebook cheatsheet download" %}
 
@@ -153,6 +153,8 @@ _If you love cheat sheets, here are some interesting references for you \(lots o
 
 
 {% embed url="https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4\#file-python-cheatsheet-py" %}
+
+{% embed url="https://gist.github.com/bgoonz/ec383b0bafc8e43db23f922002fc88d4" %}
 
 
 

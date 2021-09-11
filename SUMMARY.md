@@ -45,7 +45,6 @@
 ## Abstract Data Structures
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
-  * [MAP](abstract-data-structures/untitled-1/map.md)
   * [Data Structures Overview](abstract-data-structures/untitled-1/untitled-7/README.md)
     * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms.md)
     * [Dictionary](abstract-data-structures/untitled-1/untitled-7/dictionary.md)
@@ -74,6 +73,7 @@
   * [Heap](abstract-data-structures/untitled-1/heap/README.md)
     * [Heap Examples](abstract-data-structures/untitled-1/heap/heap-examples.md)
   * [String](abstract-data-structures/untitled-1/string.md)
+  * [Map](abstract-data-structures/untitled-1/map.md)
   * [Queue](abstract-data-structures/untitled-1/queue/README.md)
     * [Queue Sandbox](abstract-data-structures/untitled-1/queue/queue-sandbox.md)
     * [Queue Continued...](abstract-data-structures/untitled-1/queue/queue-continued....md)
@@ -95,6 +95,7 @@
     * [Recursion Explained](abstract-data-structures/untitled-1/untitled-6/recursion-explained/README.md)
       * [Recursion Examples](abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples.md)
   * [Linked List](abstract-data-structures/untitled-1/untitled-4/README.md)
+    * [Untitled](abstract-data-structures/untitled-1/untitled-4/untitled.md)
     * [Double Linked List](abstract-data-structures/untitled-1/untitled-4/double-linked-list.md)
     * [List Example](abstract-data-structures/untitled-1/untitled-4/list-example.md)
     * [Examples \(LL\) continued](abstract-data-structures/untitled-1/untitled-4/examples-ll-continued.md)
@@ -102,6 +103,8 @@
   * [Set](abstract-data-structures/untitled-1/set.md)
   * [Sorting](abstract-data-structures/untitled-1/untitled-3/README.md)
     * [Merge Sort](abstract-data-structures/untitled-1/untitled-3/merge-sort-1.md)
+    * [Iterative Sorting](abstract-data-structures/untitled-1/untitled-3/iterative-sorting.md)
+    * [Recursive Sorting](abstract-data-structures/untitled-1/untitled-3/recursive-sorting.md)
     * [Graph Topological Sort](abstract-data-structures/untitled-1/untitled-3/graph-topological-sort.md)
     * [SelectionSort](abstract-data-structures/untitled-1/untitled-3/selectionsort.md)
     * [Quick Sort](abstract-data-structures/untitled-1/untitled-3/untitled-7.md)
@@ -155,6 +158,7 @@
 
 ## quick-reference
 
+* [Free Python Books](quick-reference/free-python-books.md)
 * [WHY Python?](quick-reference/why-python.md)
 * [Python Snippets](quick-reference/python-snippets.md)
 * [Python3 Regex](quick-reference/python3-regex.md)
