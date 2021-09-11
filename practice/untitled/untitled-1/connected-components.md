@@ -8,7 +8,7 @@ A _connected component_ of a graph is a subgraph where all vertices are reachabl
 
 Here's an example of a graph with 8 connected components:
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](../../../.gitbook/assets/image%20%2813%29.png)
 
 \(Two of the connected components are single verts.\)
 
