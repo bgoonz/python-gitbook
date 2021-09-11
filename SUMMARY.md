@@ -46,6 +46,7 @@
 
 * [Abstract Data Structures:](abstract-data-structures/untitled-1/README.md)
   * [Data Structures Overview](abstract-data-structures/untitled-1/untitled-7/README.md)
+    * [General Data Structures Notes](abstract-data-structures/untitled-1/untitled-7/general-data-structures-notes.md)
     * [DS-Explained-Simple](abstract-data-structures/untitled-1/untitled-7/ds-explained-simple.md)
     * [Untitled](abstract-data-structures/untitled-1/untitled-7/untitled.md)
     * [Algorithms](abstract-data-structures/untitled-1/untitled-7/algorithms.md)
@@ -223,10 +224,9 @@
 ## Interview Prep
 
 * [Interview Resources](interview-prep/interview-resources/README.md)
-  * [Algo-Prep](interview-prep/interview-resources/leetcode.md)
-  * [By Example](interview-prep/interview-resources/by-example.md)
+  * [By Example](interview-prep/interview-resources/by-example/README.md)
+    * [Algo-Prep](interview-prep/interview-resources/by-example/leetcode.md)
   * [Permutation](interview-prep/interview-resources/permutation.md)
-  * [General Data Structures Notes](interview-prep/interview-resources/general-data-structures-notes.md)
   * [How to Write an Effective Resume of Python Developer](interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer.md)
   * [Interview Checklist](interview-prep/interview-resources/interview-checklist.md)
   * [150 Practice Problems & Solutions](interview-prep/interview-resources/150-practice-problems-and-solutions.md)

@@ -6,7 +6,7 @@
 
 
 
-{% file src="../../.gitbook/assets/interview-prep.zip" %}
+{% file src="../../../.gitbook/assets/interview-prep.zip" %}
 
 
 
