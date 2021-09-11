@@ -67,6 +67,7 @@
     * [Topological Sort](abstract-data-structures/untitled-1/untitled-1/topological-sort.md)
   * [Hash Table](abstract-data-structures/untitled-1/untitled-5/README.md)
     * [Hashmap or Hash tables](abstract-data-structures/untitled-1/untitled-5/hashmap-or-hash-tables.md)
+    * [Hash Table and HashMap in Python](abstract-data-structures/untitled-1/untitled-5/hash-table-and-hashmap-in-python.md)
   * [Heap](abstract-data-structures/untitled-1/heap.md)
   * [String](abstract-data-structures/untitled-1/string.md)
   * [Queue](abstract-data-structures/untitled-1/queue/README.md)
