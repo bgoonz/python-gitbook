@@ -1,19 +1,17 @@
 # Randomness
 
-
-
 ## Randomness
 
 ### Objectives
 
-* Learn the difference between randomness and pseudorandomness
-* Learn how how to shuffle an array in O\(n\) time and space complexity
+- Learn the difference between randomness and pseudorandomness
+- Learn how how to shuffle an array in O\(n\) time and space complexity
 
 ### What is randomness?
 
 What is Randomness? This seems like a simple question but randomness is actually one of the most commonly misunderstood concepts in math and computing. Here's a definition of randomness from [wikipedia](https://en.wikipedia.org/wiki/Randomness):
 
-```text
+```python
 Randomness is the lack of pattern or predictability in events. A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination.
 ```
 
@@ -23,7 +21,7 @@ Rock-Paper-Scissors is NOT random when played with humans. It turns out, people 
 
 Try this exercise:
 
-```text
+```python
 Write down 10 random numbers between 1-10.
 ```
 
@@ -259,4 +257,3 @@ def fisher_yates_shuffle(l):
         random_index = random.randint(i, len(l) - 1)
         l[random_index], l[i] = l[i], l[random_index]
 ```
-

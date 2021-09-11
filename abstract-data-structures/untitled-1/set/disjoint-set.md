@@ -1,6 +1,6 @@
 # Disjoint Set
 
-```text
+```python
 """
     disjoint set
     Reference: https://en.wikipedia.org/wiki/Disjoint-set_data_structure
@@ -81,4 +81,3 @@ def test_disjoint_set():
 if __name__ == "__main__":
     test_disjoint_set()
 ```
-

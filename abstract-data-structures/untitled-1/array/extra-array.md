@@ -1,11 +1,7 @@
 # Extra-Array
 
+{% tabs %} {% tab title="recur-bin-search.py" %}
 
-
-
-
-{% tabs %}
-{% tab title="recur-bin-search.py" %}
 ```python
 # given array a and need to find value x
 # left and right correspond to initial indices of array a bounding the search
@@ -30,6 +26,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
         return binary_search_recursive(a, x, left, right)
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -37,6 +34,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
 {% endtab %}
 
 {% tab title="Array Change" %}
+
 ```python
 def arrayChange(inputArray):
     count = 0
@@ -48,14 +46,16 @@ def arrayChange(inputArray):
     return count
 
 ```
+
 {% endtab %}
 
 {% tab title="Array Union" %}
+
 ```python
 #Time complexity O(M*N)
 #Space Complexity O(M+N)
 #Method 1
-class Solution:    
+class Solution:
     #Function to return the count of number of elements in union of two arrays.
     def doUnion(self,a,n,b,m):
         c=a+b
@@ -90,7 +90,7 @@ if __name__=='__main__':
 
 
 
-class Solution:    
+class Solution:
     #Function to return the count of number of elements in union of two arrays.
     def doUnion(self,a,n,b,m):
         c=a+b
@@ -117,9 +117,11 @@ if __name__=='__main__':
 
         print(ob.doUnion(a,n,b,m))
 ```
+
 {% endtab %}
 
 {% tab title="Rotate" %}
+
 ```python
 #rotation of an element by one step
 def left_rotation(arr,d,n):
@@ -145,10 +147,8 @@ left_rotation(arr,2,5)
 
 print_array(arr,5)
 ```
-{% endtab %}
-{% endtabs %}
 
-
+{% endtab %} {% endtabs %}
 
 ```python
 class Array(object):
@@ -233,19 +233,19 @@ class Array(object):
 
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())      
+    print(myArray.items, myArray.myLen())
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())     
+    print(myArray.items, myArray.myLen())
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())       
-    myArray.search(4)                          
+    print(myArray.items, myArray.myLen())
+    myArray.search(4)
 ```
 
-### 
+###
 
 ### Create Array Class
 
@@ -284,15 +284,11 @@ class Array(object):
                 print('Elements are more than the size specified')
 ```
 
-
-
-
-
 #### Define Length of Array Function
 
 This function is used to return the length of the Array that means the elements we initialized excluding None values from it.
 
-```text
+```python
     def myLen(self):
         length = 0
         for i in self.items:
@@ -307,7 +303,7 @@ This function is used to return the length of the Array that means the elements 
 
 This function is used to insert or add the element to the beginning of the array.
 
-```text
+```python
     def insertFirst(self, element):
         if (self.myLen() < self.size):
             for i in range(self.myLen(), 0, -1):
@@ -321,7 +317,7 @@ This function is used to insert or add the element to the beginning of the array
 
 This function is used to insert or add an element at a particular index or position which the user passed along with the element to insert.
 
-```text
+```python
     def insertAtIndex(self, index, element):
         if (self.myLen() < self.size):
             for i in range(self.myLen(), index, -1):
@@ -335,7 +331,7 @@ This function is used to insert or add an element at a particular index or posit
 
 This function is used to insert or add an element after a particular index or position which the user passed along with the element to insert.
 
-```text
+```python
     def insertAfterIndex(self, index, element):
         if (self.myLen() < self.size):
             for i in range(self.myLen(), index + 1, -1):
@@ -349,7 +345,7 @@ This function is used to insert or add an element after a particular index or po
 
 This function is used to insert or add an element before a particular index or position which the user passed along with the element to insert.
 
-```text
+```python
     def insertBeforeIndex(self, index, element):
         if (self.myLen() < self.size):
             for i in range(self.myLen(), index - 1, -1):
@@ -363,7 +359,7 @@ This function is used to insert or add an element before a particular index or p
 
 This function is used to remove or delete a particular element from our array or if not present then simply print the error that the element is not found in this array.
 
-```text
+```python
     def delete(self, element):
         if element in self.items:
             Index = self.items.index(element)
@@ -376,7 +372,7 @@ This function is used to remove or delete a particular element from our array or
 
 This function is used to search or find the element which is passed by the user to return the index or position.
 
-```text
+```python
     def search(self, element):
         if element in self.items:
             position = 0
@@ -401,20 +397,17 @@ For that, create an instance of the Array Class and initialize it with array siz
 
 Then, just use the object to call all the functions one by one.
 
-```text
+```python
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())      
+    print(myArray.items, myArray.myLen())
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())     
+    print(myArray.items, myArray.myLen())
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())       
-    myArray.search(4)   
+    print(myArray.items, myArray.myLen())
+    myArray.search(4)
 ```
-
-
-

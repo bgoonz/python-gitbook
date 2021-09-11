@@ -24,4 +24,3 @@ def graph_topo_sort(num_nodes, edges):
 print(graph_topo_sort(3, [[0, 1], [0, 2]]))
 
 ```
-

@@ -2,8 +2,6 @@
 
 ![](https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png)
 
-
-
 ## 8. Inheritance
 
 In this chapter we look at a larger example using object oriented programming and learn about the very useful OOP feature of [inheritance](http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29).
@@ -52,7 +50,7 @@ As usual, we provide an initialization method that takes an optional parameter f
 
 To create an object that represents the 3 of Clubs, use this command:
 
-```text
+```python
 three_of_clubs = Card(0, 3)
 ```
 
@@ -202,7 +200,7 @@ If a deck is perfectly shuffled, then any card is equally likely to appear anywh
 
 To shuffle the deck, we will use the `randrange` function from the `random` module. With two integer arguments, `a` and `b`, `randrange` chooses a random integer in the range `a <= x < b`. Since the upper bound is strictly less than `b`, we can use the length of a list as the second parameter, and we are guaranteed to get a legal index. For example, this expression chooses the index of a random card in a deck:
 
-```text
+```python
 random.randrange(0, len(self.cards))
 ```
 
@@ -286,7 +284,7 @@ This situation suggests the use of inheritance. If `Hand` is a subclass of `Deck
 
 In the class definition, the name of the parent class appears in parentheses:
 
-```text
+```python
 class Hand(Deck):
     pass
 ```
@@ -653,4 +651,3 @@ The ability to define a new class that is a modified version of a previously def
 The class from which a child class inherits.child class
 
 A new class created by inheriting from an existing class; also called a subclass.
-

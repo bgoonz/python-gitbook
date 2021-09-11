@@ -2,10 +2,8 @@
 
 {% embed url="https://replit.com/@bgoonz/python-sorting\#main.py" %}
 
+{% tabs %} {% tab title="First Tab" %}
 
-
-{% tabs %}
-{% tab title="First Tab" %}
 ```python
 
 This implementation is different than the ones in the referenced books, which are different from each other.
@@ -24,16 +22,12 @@ def selection_sort_iter(seq: MutableSequence[T]) -> None:
         seq[i] = min_val
         seq[min_val_i] = val
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
-
-
-
+{% endtab %} {% endtabs %}
 
 ```python
 def partition(A, lo, hi):
@@ -87,13 +81,13 @@ To get a understanding about Bubble sort.
 
 ### Short description of package/script
 
-* It is a python program of Bubble sort Algorithm.
-* It is written in a way that it takes user input.
+- It is a python program of Bubble sort Algorithm.
+- It is written in a way that it takes user input.
 
 ### Workflow of the Project
 
-* First a function is written to perform Bubble sort.
-* Then outside the function user input is taken.
+- First a function is written to perform Bubble sort.
+- Then outside the function user input is taken.
 
 ### Detailed explanation of script, if needed
 
@@ -101,7 +95,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```text
+```python
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|
@@ -143,25 +137,23 @@ Just clone the repository .
 
 ### Output
 
-
-
 ```python
-#Link to problem:- 
+#Link to problem:-
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-def bubbleSort(a): 
-    n = len(a) 
-    # Traverse through all array elements 
+def bubbleSort(a):
+    n = len(a)
+    # Traverse through all array elements
 
-    for i in range(n-1): 
-        # Last i elements are already in place 
-        for j in range(0, n-i-1): 
+    for i in range(n-1):
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
 
-            # traverse the array from 0 to n-i-1 
-            # Swap if the element found is greater 
-            # than the next element 
-            if arr[j] > arr[j + 1] : 
-                arr[j], arr[j + 1] = arr[j + 1], arr[j] 
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 arr = []
 n=int(input("Enter size of array: "))
@@ -172,20 +164,10 @@ bubbleSort(arr)
 print ("Sorted array is:")
 for i in range(len(arr)):
      print(arr[i])
-     
+
 #Time complexity - O(n^2)
 #Space complexity - O(1)
 ```
-
-
-
-
-
-
-
-
-
-
 
 Insertion Sort
 
@@ -270,9 +252,7 @@ Sorted Array is:<br>
 
 ## Divide and Conquer
 
-{% hint style="info" %}
-When would we use recursive solutions? Tree traversals and quick sort are instances where recursion creates an elegant solution that wouldn't be as possible iteratively.
-{% endhint %}
+{% hint style="info" %} When would we use recursive solutions? Tree traversals and quick sort are instances where recursion creates an elegant solution that wouldn't be as possible iteratively. {% endhint %}
 
 Divide and conquer is when we take a problem, split it into the same type of sub-problem, and run the algorithm on those sub-problems.
 
@@ -310,18 +290,14 @@ Often, iterative solutions are easier to read and more performant.
 
 If we add a print statement into the `add_list` function:
 
-```text
+```python
     print(f'Add {l[0]} to the sum of {l[1:]}')
     return l[0] + add_list(l[1:])
 ```
 
 The terminal would print:
 
-> Add 1 to the sum of \[2, 3, 4\]  
-> Add 2 to the sum of \[3, 4\]  
-> Add 3 to the sum of \[4\]  
-> Add 4 to the sum of \[\]  
-> 10
+> Add 1 to the sum of \[2, 3, 4\] Add 2 to the sum of \[3, 4\] Add 3 to the sum of \[4\] Add 4 to the sum of \[\] 10
 
 This helps us understand what is happening at each recursive step.
 
@@ -351,11 +327,7 @@ This process is partitioning.
 
 Our next step is to repeat this process until we hit our base case, which is an empty list or a list with just one element. When everything is down to one element lists, then we know they are properly sorted.
 
-> 3 and 9 are our next pivots:  
-> \[1\] 3 \[4\] 5 \[8, 7\] 9  
-> Next, 8 is our pivot:  
-> \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9  
-> 1 3 4 5 7 8 9
+> 3 and 9 are our next pivots: \[1\] 3 \[4\] 5 \[8, 7\] 9 Next, 8 is our pivot: \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9 1 3 4 5 7 8 9
 
 The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O\(n\), and we have to make `log n` passes.
 
@@ -367,13 +339,7 @@ What would be a bad case for quick sort?
 
 If we look at the order of this on each loop:
 
-> \[\] 1 \[2, 3, 4, 5, 6, 7\]  
-> 1 \[\] 2 \[3, 4, 5, 6, 7\]  
-> 1 2 \[\] 3 \[4, 5, 6, 7\]  
-> 1 2 3 \[\] 4 \[5, 6, 7\]  
-> 1 2 3 4 \[\] 5 \[6, 7\]  
-> 1 2 3 4 5 \[\] 6 \[7\]  
-> 1 2 3 4 5 6 7
+> \[\] 1 \[2, 3, 4, 5, 6, 7\] 1 \[\] 2 \[3, 4, 5, 6, 7\] 1 2 \[\] 3 \[4, 5, 6, 7\] 1 2 3 \[\] 4 \[5, 6, 7\] 1 2 3 4 \[\] 5 \[6, 7\] 1 2 3 4 5 \[\] 6 \[7\] 1 2 3 4 5 6 7
 
 This took a full 7 passes, for 7 elements, because there was only one sorted item being added with each pass.
 
@@ -437,7 +403,7 @@ We already know off the tops of our heads that we have not setup our algorithm t
 
 Our terminal returns back:
 
-```text
+```python
 []
 [1]
 [1, 2]
@@ -526,47 +492,47 @@ Now we can run this function and it sorts our lists without allocating extra mem
 Let's add some print statements just to see exactly what is happening at each step on one of the sorts:
 
 ```python
-Our starting list is [5,3,9,4,8]. 
+Our starting list is [5,3,9,4,8].
 
-Checking against 5. Current list is [5, 3, 9, 4]. 
+Checking against 5. Current list is [5, 3, 9, 4].
 
-Checking against 3. Current list is [5, 3, 9, 4]. 
+Checking against 3. Current list is [5, 3, 9, 4].
 
 3 is less than 5, so we need to swap l[i] (3) with l[pivot_index + 1] (3).
 Next, we will swap 5 with 3 and increase the pivot index from 0 to 1.
-Now the current list is [3, 5, 9, 4] 
+Now the current list is [3, 5, 9, 4]
 
-Checking against 9. Current list is [3, 5, 9, 4]. 
+Checking against 9. Current list is [3, 5, 9, 4].
 
-Checking against 4. Current list is [3, 5, 9, 4]. 
+Checking against 4. Current list is [3, 5, 9, 4].
 
 4 is less than 5, so we need to swap l[i] (4) with l[pivot_index + 1] (9).
 Next, we will swap 5 with 4 and increase the pivot index from 1 to 2.
-Now the current list is [3, 4, 5, 9] 
+Now the current list is [3, 4, 5, 9]
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 0, 2) and quicksort([3, 4, 5, 9], 3, 4). 
+Splitting list to check quicksort([3, 4, 5, 9], 0, 2) and quicksort([3, 4, 5, 9], 3, 4).
 
 
-Checking against 3. Current list is [3, 4, 5, 9]. 
+Checking against 3. Current list is [3, 4, 5, 9].
 
-Checking against 4. Current list is [3, 4, 5, 9]. 
-
-
-
-Splitting list to check quicksort([3, 4, 5, 9], 0, 0) and quicksort([3, 4, 5, 9], 1, 2). 
-
-Checking against 4. Current list is [3, 4, 5, 9]. 
+Checking against 4. Current list is [3, 4, 5, 9].
 
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 1, 1) and quicksort([3, 4, 5, 9], 2, 2). 
+Splitting list to check quicksort([3, 4, 5, 9], 0, 0) and quicksort([3, 4, 5, 9], 1, 2).
 
-Checking against 9. Current list is [3, 4, 5, 9]. 
+Checking against 4. Current list is [3, 4, 5, 9].
 
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 3, 3) and quicksort([3, 4, 5, 9], 4, 4). 
+Splitting list to check quicksort([3, 4, 5, 9], 1, 1) and quicksort([3, 4, 5, 9], 2, 2).
+
+Checking against 9. Current list is [3, 4, 5, 9].
+
+
+
+Splitting list to check quicksort([3, 4, 5, 9], 3, 3) and quicksort([3, 4, 5, 9], 4, 4).
 
 Our final sorted list is [3, 4, 5, 9]
 ```
@@ -604,6 +570,3 @@ This helps us visualize why we go through each swapping step and how the list is
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

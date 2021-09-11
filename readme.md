@@ -6,7 +6,7 @@ Lets create a [python 3](https://repl.it/languages/python3) repl, and call it _H
 
 _helloworld.py_
 
-```text
+```python
 print('Hello world!')
 ```
 
@@ -16,7 +16,7 @@ Now, press the run button, which obviously runs the code. If you are not using r
 
 If you look to your left at the console where hello world was just printed, you can see a `>`, `>>>`, or `$` depending on what you are using. After the prompt, try typing a line of code.
 
-```text
+```python
 Python 3.6.1 (default, Jun 21 2017, 18:48:35)
 [GCC 4.9.2] on linux
 Type "help", "copyright", "credits" or "license" for more information.
@@ -33,7 +33,7 @@ Another cool thing that you can generally do with all languages, are comments. I
 
 _shortcom.py_
 
-```text
+```python
 # Write some comments!
 ```
 
@@ -41,7 +41,7 @@ If you have a huge comment, do **not** comment all the 350 lines, just put `'''`
 
 _longcom.py_
 
-```text
+```python
 '''
 Dear PYer,
 I am confused about how you said you could use triple quotes to make
@@ -66,7 +66,7 @@ Unlike many other languages, there is no `var`, `let`, or `const` to declare a v
 
 _vars1.py_
 
-```text
+```python
 x = 5
 y = 7
 z = x*y # 35
@@ -77,7 +77,7 @@ Remember, there is a difference between integers and strings. _Remember: String 
 
 _vars2.py_
 
-```text
+```python
 x = 5
 x = str(x)
 b = '5'
@@ -103,7 +103,7 @@ There are many operators in python:
 
 _simpleops.py_
 
-```text
+```python
 x = 4
 a = x + 1
 a = x - 1
@@ -115,27 +115,24 @@ You should already know everything shown above, as it is similar to other langua
 
 _complexop.py_
 
-```text
+```python
 a += 1
 a -= 1
 a *= 2
 a /= 2
 ```
 
-The ones above are to edit the current value of the variable.  
-Sorry to JS users, as there is no `i++;` or anything.
+The ones above are to edit the current value of the variable. Sorry to JS users, as there is no `i++;` or anything.
 
-> Fun Fact:  
-> The python language was named after Monty Python.
+> Fun Fact: The python language was named after Monty Python.
 
 If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
-Like the title?  
-Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
+Like the title? Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
 _quotes.py_
 
-```text
+```python
 x = 'hello' # Good
 x = "hello" # Good
 x = "hello' # ERRORRR!!!
@@ -145,10 +142,9 @@ _slicing.py_
 
 #### String Slicing
 
-You can look at only certain parts of the string by slicing it, using `[num:num]`.  
-The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
+You can look at only certain parts of the string by slicing it, using `[num:num]`. The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
-```text
+```python
 x = 'Hello everybody!'
 x[1] # 'e'
 x[-1] # '!'
@@ -173,7 +169,7 @@ I will make you try these out yourself. See if you can figure out how they work.
 
 _strings.py_
 
-```text
+```python
 x = " Testing, testing, testing, testing       "
 print(x.strip())
 print(len(x))
@@ -189,7 +185,7 @@ Input is a function that gathers input entered from the user in the command line
 
 _inp.py_
 
-```text
+```python
 print('Type something: ')
 x = input()
 print('Here is what you said: ', x)
@@ -199,14 +195,13 @@ If you wanted to make it smaller, and look neater to the user, you could do…
 
 _inp2.py_
 
-```text
+```python
 print('Here is what you said: ', input('Type something: '))
 ```
 
-Running:  
-_inp.py_
+Running: _inp.py_
 
-```text
+```python
 Type something:
 Hello World
 Here is what you said: Hello World
@@ -214,7 +209,7 @@ Here is what you said: Hello World
 
 _inp2.py_
 
-```text
+```python
 Type something: Hello World
 Here is what you said: Hello World
 ```
@@ -223,7 +218,7 @@ Python has created a lot of functions that are located in other .py files. You n
 
 _module.py_
 
-```text
+```python
 import random
 ```
 
@@ -231,25 +226,22 @@ Now, I have access to all functions in the random.py file. To access a specific 
 
 _module2.py_
 
-```text
+```python
 import random
 print(random.randint(3,5)) # Prints a random number between 3 and 5
 ```
 
-> Pro Tip:  
-> Do `from random import randint` to not have to do `random.randint()`, just `randint()`  
-> To import all functions from a module, you could do `from random import *`
+> Pro Tip: Do `from random import randint` to not have to do `random.randint()`, just `randint()` To import all functions from a module, you could do `from random import *`
 
 Loops allow you to repeat code over and over again. This is useful if you want to print Hi with a delay of one second 100 times.
 
 **for Loop**
 
-The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
-Let’s say we wanted to create the example above.
+The for loop goes through a list of variables, making a seperate variable equal one of the list every time. Let’s say we wanted to create the example above.
 
 _loop.py_
 
-```text
+```python
 from time import sleep
 for i in range(100):
      print('Hello')
@@ -260,7 +252,7 @@ This will print Hello with a .3 second delay 100 times. This is just one way to 
 
 _loop2.py_
 
-```text
+```python
 import time
 for number in range(100):
      print(number)
@@ -273,7 +265,7 @@ The while loop runs the code while something stays true. You would put `while <e
 
 _while.py_
 
-```text
+```python
 while True: # Runs forever
      print('Hello World!')
 ```
@@ -282,7 +274,7 @@ Or you could do:
 
 _while2.py_
 
-```text
+```python
 import random
 position = '<placeholder>'
 while position != 1: # will run at least once
@@ -294,7 +286,7 @@ The if statement allows you to check if something is True. If so, it runs the co
 
 _if.py_
 
-```text
+```python
 import random
 num = random.randint(1, 10)
 if num == 3:
@@ -309,7 +301,7 @@ Now, you may think that it would be better if you could make it print only one m
 
 _elif.py_
 
-```text
+```python
 import random
 num = random.randint(1, 10)
 if num == 3:
@@ -322,7 +314,7 @@ Now, you may wonder how to run code if none work. Well, there is a simple statem
 
 _else.py_
 
-```text
+```python
 import random
 num = random.randint(1, 10)
 if num == 3:
@@ -333,14 +325,13 @@ else:
     print('No category')
 ```
 
-So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.  
-It is quite tiring to type:
+So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time. It is quite tiring to type:
 
 Characters: 389
 
 _nofunc.py_
 
-```text
+```python
 import random
 print(random.randint(1, 9))
 print('Wow that was interesting.')
@@ -362,7 +353,7 @@ Characters: 254
 
 _functions.py_
 
-```text
+```python
 import random
 def r(t):
      print(random.randint(1, 9))
@@ -515,7 +506,7 @@ Launch up Python shell. We want to calculate `5 * 5`. How do we do that?
 
 Using our knowledge of school math, let’s try `5 X 5`.
 
-```text
+```python
     >>> 5 X 5
     File "< stdin >", line 1
     5 X 5
@@ -531,7 +522,7 @@ The way you can do multiplication is by using the ‘`*`’ _operator_ .
 
 “_5 into 5_” is achieved by the code `5 * 5`, and you can see the result `25` being printed. Similarly, `5 * 6` gives us `30`.
 
-```text
+```python
     >>> 5 * 6
     30
 ```
@@ -541,7 +532,7 @@ There are a wide range of other operators in Python:
 - `5 + 6` gives a result of `11`.
 - `5 - 6` leads to `-1`.
 
-  ```text
+  ```python
   >>> 5 + 6
   11
   >>> 5 - 6
@@ -550,7 +541,7 @@ There are a wide range of other operators in Python:
 
 `10 / 2`, gives an output of `5.0` . There is one interesting operator, `**`. Let’s try `10 ** 3`. We ran this code, and the result we get is `1000`. Yes you guessed right, the operator performs “to the power of”. “`10` to the power of `3`” is `10 * 10 * 10`, or `1000`.
 
-```text
+```python
     >>> 10 / 2
     5.0
     >>> 10 ** 3
@@ -567,7 +558,7 @@ Let’s look at some terminology:
 
 The cool thing about Python, is that you can even have expressions with multiple operators. Therefore, you can form an expression with `5 + 5 + 5`, which evaluates to `15`. This is an expression which has three operands, and two `+` operators. You can even have expressions with different types of operators, such as in `5 + 5 * 5`.
 
-```text
+```python
     >>> 5 + 5 + 5
     15
     >>> 5 + 5 * 5
@@ -601,7 +592,7 @@ You need to solve these problems by yourself. If you are able to work them out, 
 
 **Solution 1**
 
-```text
+```python
     >>> 24 * 60
 
     1440
@@ -615,7 +606,7 @@ We wanted to calculate the number of minutes in a day. How do we do that? Think 
 
 **Solution 2**
 
-```text
+```python
     >>> 24 * 60 * 60
 
     86400
@@ -649,7 +640,7 @@ Here are a few puzzles coming up, to explore aspects of expressions.
 
 Think about what would happen when you do something of this kind: `5 $ 2`. You’re right, it would throw a `SyntaxError`. When Python does not understand the code you type in, it reports an error. Here, the expression we’re typing is `5 $ 2`, which does not make sense to Python, hence the `SyntaxError`.
 
-```text
+```python
     >>> 5 $ 2
     File "< stdin >", line 1
     5 $ 2
@@ -664,7 +655,7 @@ Think about what would happen when you do something of this kind: `5 $ 2`. You�
 
 Let’s say we type in `5+6+10`, without any spaces between the operands, and the operators. What do you think will happen? Surprisingly, the Python Shell does calculate the value!
 
-```text
+```python
     >>> 5+6+10
     21
 ```
@@ -673,7 +664,7 @@ In an expression, using spaces makes it easier for you to read it, but it’s no
 
 The next puzzle tries to evaluate `5 / 2`, which is “`5` divided by `2`”. What would be the output? `2.5`.
 
-```text
+```python
     >>> 5/2
     2.5
 ```
@@ -682,7 +673,7 @@ If you’re coming from other programming languages like Java or C, this might b
 
 The puzzle after that tries to play with `5 + 5 * 6`. What would be the result of this expression? Will it be `5 + 5` or `10`, then `10 * 6`, which is `60`? Or, will it be `5` plus `5 * 6`, which is `5` + `30`, that’s `35`?
 
-```text
+```python
     >>> 5 + 5 * 6
     35
 ```
@@ -700,7 +691,7 @@ Sub-expressions involving operators from {`*`, `/`, `%`, `**`} are evaluated bef
 
 Let’s try another small puzzle on precedence, with `5 - 2 * 2`. What would be the result of this? Will it be `6`, or `1`? It’s `1`, because `*` has a higher precedence than `-`. Thus `2 * 2` is `4`, and `5 - 4` gives us `1`.
 
-```text
+```python
     >>> 5 - 2 * 2
     1
 ```
@@ -709,7 +700,7 @@ Let’s say we want to execute `5 - 2`, to give an output of `2`. How do we chan
 
 You cannot really change the precedence, but you can add parentheses to group sub-expressions differently.
 
-```text
+```python
     >>> (5 - 2) * 2
     6
     >>> 5 - ( 2 * 2 )
@@ -738,7 +729,7 @@ In the previous step, we learned how to use expressions to compute values. In th
 
 How do we go about printing a complete multiplication table entry? We want to print text such as `5 * 6 = 30` . But trying to do so, as we know it, gives us a `SyntaxError`. Clearly, there is a different way to print text, as compared to an expression.
 
-```text
+```python
     >>> 5 * 6 = 30
       File "<stdin>", line 1
     SyntaxError: can't assign to operator
@@ -746,7 +737,7 @@ How do we go about printing a complete multiplication table entry? We want to pr
 
 Let’s first try to print a simple piece of text, `Hello`. Typing in this piece of code directly on Python Shell also gives us an error.
 
-```text
+```python
     >>> Hello
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -759,7 +750,7 @@ Only expressions work that way, and `Hello` is not really an expression.
 
 There are a number of in-built functions in Python to help print strings. One of these is the `print()` function. Can you just say `print Hello`?
 
-```text
+```python
     >>> print Hello
       File "<stdin>", line 1
         print Hello
@@ -771,7 +762,7 @@ The Python compiler gives you an error, that says “missing parentheses”.
 
 Will `print(Hello)` work?
 
-```text
+```python
     >>> print (Hello)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -784,7 +775,7 @@ How do I indicate that `"Hello"` is a string? By putting it within double quotes
 
 Let’s try `print ("Hello")`
 
-```text
+```python
     >>> print ("Hello")
     Hello
     >>> print("Hello")
@@ -808,7 +799,7 @@ The text `"Hello"`, which is called a **parameter** or **argument**, to `print()
 
 Now let’s get back to what we wanted to do, which is to print `5 * 6 = 30`. The most basic version would be something of this kind, `print("5 * 6 = 30")`. Here, we are passing the entire value in the form of a string.
 
-```text
+```python
     >>> print("5 * 6 = 30")
     5 * 6 = 30
 ```
@@ -833,7 +824,7 @@ In this step, let’s look at a number of puzzles related to in-built methods, t
 
 For example, let’s do `print("5 * 6")`, as in the previous step. What does this code result in?
 
-```text
+```python
     >>> print("5*6")
     5*6
     >>> print('5*6')
@@ -844,7 +835,7 @@ It just prints the string `"5 * 6"`.
 
 Let’s say we try the code `print(5 * 6)`,
 
-```text
+```python
     >>> print(5*6)
     30
 ```
@@ -859,7 +850,7 @@ Let’s look at a few other in-built methods within Python.
 
 Consider `abs()` \(which stands for absolute value\), a method that accepts a numeric value. You can use `abs(10.5)`, passing `10.5` as a value to it, and it prints the absolute value of `10`.
 
-```text
+```python
     >>> abs 10.5
       File "<stdin>", line 1
         abs 10.5
@@ -871,7 +862,7 @@ Consider `abs()` \(which stands for absolute value\), a method that accepts a nu
 
 If you pass in a string value, will it work? It complains, “`abs()` function will not work with a string, it only works with numeric values”.
 
-```text
+```python
     >>> abs("10.5")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -882,7 +873,7 @@ Let’s say you want to use a function that computes “to the power of”, for 
 
 Will this work: `pow 2 5`? No, not at all. This code does not work as well: `pow(2 5)`. `pow(2, 5)` is the correct syntax.
 
-```text
+```python
     >>> pow 2 5
       File "<stdin>", line 1
         pow 2 5
@@ -901,7 +892,7 @@ You’ll see that `32` is printed.
 
 Let’s see another example, “`10` to the power of `3`”. `pow(10,3)` is the alternative to saying `10 ** 3`. This gives us `1000`, similar to how `pow()` would.
 
-```text
+```python
     >>> pow(10, 3)
     1000
     >>> 10 ** 3
@@ -910,7 +901,7 @@ Let’s see another example, “`10` to the power of `3`”. `pow(10,3)` is the 
 
 `max()` returns maximum in a set of numbers.`min()` function returns the minimum value.
 
-```text
+```python
     >>> max(34, 45, 67)
     67
     >>> min(34, 45, 67)
@@ -921,7 +912,7 @@ These are some of the in-built functions in Python, and we saw how to call the i
 
 Python is case sensitive. So let’s say I want of calculate `pow(2,5)`. So this would give me `32`. Now, what if I say capital `'P'` instead of small `'p'` here? `Pow(2,5)` would lead to an error.
 
-```text
+```python
     >>> pow(2,5)
     32
     >>> Pow(2,5)
@@ -932,7 +923,7 @@ Python is case sensitive. So let’s say I want of calculate `pow(2,5)`. So this
 
 The only things not case-sensitive in Python, are string values. Earlier we saw that the code `print("Hello")` displays the text `"Hello"`. Inside a string, the text can be in any case. Hence, `print("hello")` displays `"hello"` ,with a small `'h'`.
 
-```text
+```python
     >>> print("Hello")
     Hello
     >>> print("hello")
@@ -949,7 +940,7 @@ In your code, whitespace does not really matter. You can add space here and here
 
 If we say `print("hellO World")`, it would print `"hellO World"`, with a space in between. And if you do `print("hellO World")` with three spaces, it would print the same. In expressions, white-space does not affect the output.
 
-```text
+```python
     >>> print ( "hellO World" )
     hellO World
     >>> print ( "hellO     World" )
@@ -958,7 +949,7 @@ If we say `print("hellO World")`, it would print `"hellO World"`, with a space i
 
 The last thing we want to look at, is an **escape sequence**. Let’s say you want to print a double quote, `"`, in the code. If we were to do this: `print("Hello"")`, what would happen? The compiler says error!
 
-```text
+```python
     >>> print("Hello"")
       File "<stdin>", line 1
         print("Hello"")
@@ -968,7 +959,7 @@ The last thing we want to look at, is an **escape sequence**. Let’s say you wa
 
 If you want to print a `"` inside a string, use an escape sequence. In Python, the symbol `'\'` is used as an **escape character**. On using `'\'` adjacent to the `"`, it prints `Hello"` \(notice the trailing `"`\). We have used the `'\'` to **escape** the `"`, by forming an _escape sequence_ `\"`.
 
-```text
+```python
 >>> print("Hello\"")
 Hello"
 >>>
@@ -976,7 +967,7 @@ Hello"
 
 The other reason why you would want to use a `'\'` is to print a `<NEWLINE>`. If you want to print `"Hello World"`, but with `"Hello"` on one line and `"World"` on the next, `'\n'` is the escape sequence to use.
 
-```text
+```python
     >>> print("Hello\nWorld")
     Hello
     World
@@ -984,14 +975,14 @@ The other reason why you would want to use a `'\'` is to print a `<NEWLINE>`. If
 
 The other important escape sequence is `'\t'`, which prints a `<TAB>` in the output. When you do `print("Hello\tWorld")`, you can see the tab-space between `"Hello"` and `"World"`.
 
-```text
+```python
     >>> print("Hello\tWorld")
     Hello   World
 ```
 
 Another useful escape sequence is `\\` . If you want to print a `\` , then use the sequence `\\` . You would see that it prints `Hello\World` . Think about what would happen if we put six `\` . Yes you’re right! It would print this string: `"\\\"` .
 
-```text
+```python
     >>> print("Hello\\World")
     Hello\World
     >>> print("Hello\\\\\\World")
@@ -1000,7 +991,7 @@ Another useful escape sequence is `\\` . If you want to print a `\` , then use t
 
 One of the things with Python is, it does not matter whether you use double quotes or single quotes to enclose strings. There are some interesting, and useful ways of using a combination of both, within the same string. Have a look at this call: `print("Hello'World")`, and notice the output we get. In a similar way, the following code will be accepted and run by the Python system: `print('Hello"World')`.
 
-```text
+```python
     >>> print('Hello"')
     Hello"
     >>> print("Hello'World")
@@ -1042,7 +1033,7 @@ Let’s start with a simple scenario. Let’s say we want to place that calculat
 
 Let’s see an example:
 
-```text
+```python
     >>> print("VALUE".format(5*2))
     VALUE
 ```
@@ -1051,7 +1042,7 @@ We were expecting `10` to be printed, but it’s actually printing `VALUE`.
 
 How do we get `10` to be printed then?
 
-```text
+```python
     >>> print("VALUE {0}".format(5*2))
     VALUE 10
 ```
@@ -1066,7 +1057,7 @@ Typically when we count positions or indexes, we start from `0`.
 
 To print the first value, you need to pass in an index of `0`. To print the second value, pass an index of `1`.
 
-```text
+```python
     >>> print("VALUE {0}".format(10,20,30))
     VALUE 10
     >>> print("VALUE {1}".format(10,20,30))
@@ -1077,14 +1068,14 @@ To print the first value, you need to pass in an index of `0`. To print the seco
 
 Now going back to our problem, we wanted to display `"5 * 6 = 30"`, but without hard-coding. Instead of `30`, we want the calculated value of `5 * 6`.
 
-```text
+```python
     >>> print("5 * 6 = 30".format(5,6,5*6))
     5 * 6 = 30
 ```
 
 Let replace `"5 * 6 = 30"` with `"5 * 6 = {2}"`. `2` is the index of parameter value `5*6`.
 
-```text
+```python
     >>> print("5 * 6 = {2}".format(5,6,5*6))
     5 * 6 = 30
 ```
@@ -1093,14 +1084,14 @@ Cool! Progress made.
 
 Let’s replace `5 * 6` with the right indices - `{0} * {1}`.
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(5,6,5*6))
     5 * 6 = 30
 ```
 
 The great thing about this, is now we can replace the values we passed to `print()` in the first place, without changing the indexes! So, we can display results for `5 * 7 = 35` and `5 * 8 = 40`. We are now able to print `5 * 6 = 30`, `5 * 7 = 35`, `5 * 8 = 40`, and can do similar things for other table entries as well.
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(5,7,5*7))
     5 * 7 = 35
     >>> print("{0} * {1} = {2}".format(5,8,5*8))
@@ -1125,7 +1116,7 @@ In this step, let’s look at a few puzzles related to the format, and the print
 
 Let’s say we pass in additional values, such as: `5 * 8`, `5 * 9` and `5 * 10`. However, within the call to `format()`, we are only referring to the values at index `0`, index `1` and index `2`. The values at indexes `3` and `4` are not used at all. What would happen when we run the code?
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(5,8,5*8,5*9,5*10))
     5 * 8 = 40
 ```
@@ -1134,7 +1125,7 @@ Would this throw an error? No, it does not. You can see that the additional valu
 
 Let’s say instead of passing in a value of `2`, we pass `4`. What would happen?
 
-```text
+```python
     >>> print("{0} * {1} = {4}".format(5,8,5*8,5*9,5*10))
     5 * 8 = 50
 ```
@@ -1143,7 +1134,7 @@ Let’s say instead of passing in a value of `2`, we pass `4`. What would happen
 
 Now let’s take a different scenario. We remove all the parameters passed to `format()`. However, inside the call to `print()`, we continue to say `{0} * {1} = {4}`. So we are trying to print the value at index `4`, but are only passing two values to the function `format()`. What do you think will happen?
 
-```text
+```python
     >>> print("{0} * {1} = {4}".format(5,8))
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -1154,7 +1145,7 @@ It says `IndexError`, which means :“you are asking me to fetch the value at in
 
 Let’s look at a few more things related to other data types. We try to format the following inside `print()`: `{0} * {1} = {2}`, and would pass in `2.5`, `2`, and `2.5 * 2` . Here, `2` is an integer value, but `2.5` is a floating point value. You can see that it prints `2.5 * 2 = 5.0`. So this approach of formatting values with `print()`, works also with floating point data as well.
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(2.5,2,2.5*2))
     2.5 * 2 = 5.0
 ```
@@ -1163,7 +1154,7 @@ Now, are there are other types of data that `format()` works with? Yes, strings 
 
 Let’s say over here, we do: `print("My name is {0}".format("Ranga"))`. What would happen?
 
-```text
+```python
     >>> print("My name is {0}".format("Ranga"))
     My name is Ranga
 ```
@@ -1185,7 +1176,7 @@ We are slowly making progress toward our main goal, which is to print the `5` mu
 
 In the first statement, we are printing `5 * 1 = 5`, and then changing the literals. To make it print `5 * 2 = 10`, we are changing `1` to `2`. Next, we are changing `2` to `3`. How do we make it a little simpler, so that our effort is reduced?
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(5,1,5*1))
     5 * 1 = 5
     >>> print("{0} * {1} = {2}".format(5,2,5*2))
@@ -1202,13 +1193,13 @@ It gives an error! It says: “index is not defined”.
 
 Let’s try and fix this, and execute `index = 2`. What would happen?
 
-```text
+```python
     >>> index = 2
 ```
 
 Aha! This compiles.
 
-```text
+```python
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
     5 * 2 = 10
 ```
@@ -1217,7 +1208,7 @@ And this statement is printing `5 * 2 = 10`.
 
 Let’s try something else. Let’s make `index = 3`. What would happen?
 
-```text
+```python
     >>> index = 3
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
     5 * 3 = 15
@@ -1227,7 +1218,7 @@ The same statement on being run, prints `5 * 3 = 15`.
 
 How can you check the value that `index` has? Just type in `index`.
 
-```text
+```python
     >>> index
     3
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
@@ -1244,7 +1235,7 @@ Initially, `index` was referring to a value of `1`. later, `index` was referring
 
 Now, think about how you would print the entire table. All that you need to do, is start from `1`, execute the same statement with `print()` and `format()`, to get output `5 * 1 = 5`. Next, Change the value of index to `2`, and then print the same statement. Next, `index = 3`, and print the same statement again.
 
-```text
+```python
     >>> index = 1
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
     5 * 1 = 5
@@ -1272,7 +1263,7 @@ You would want to use the values stored in the variables in `a`, `b` and `c`.
 
 If you’re hard-coding, the way to do it is with `print("5 + 6 + 7 = 18")`.
 
-```text
+```python
     >>> a = 5
     >>> b = 6
     >>> c = 7
@@ -1284,7 +1275,7 @@ If you’re hard-coding, the way to do it is with `print("5 + 6 + 7 = 18")`.
 
 The way you can do that is with code like this: `print("{0} + {1} + {2} = {3}".format(a,b,c,a+b+c))`.
 
-```text
+```python
     >>> print("{0} + {1} + {2} = {3}".format(a,b,c,a+b+c))
     5 + 6 + 7 = 18
 ```
@@ -1293,7 +1284,7 @@ How do you confirm we are accessing values stored in the variables?
 
 Let’s change the values of `a`, `b` and `c`. Let’s make `a = 6` , `b = 7` , and `c = 8` . Execute same statement.
 
-```text
+```python
     >>> a = 6
     >>> b = 7
     >>> c = 8
@@ -1320,7 +1311,7 @@ We will start with looking at a few puzzles.
 
 What if I try to refer to a variable which is not yet created?
 
-```text
+```python
     >>> count
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -1335,7 +1326,7 @@ Before using a variable, you need to have it assigned a value. If you have not d
 
 Once you assign a value to a variable, you can use it.
 
-```text
+```python
     >>> count = 4
     >>> print(count)
     4
@@ -1349,7 +1340,7 @@ Python will create a variable in its memory.
 
 Variable names are case sensitive. `count` and `Count` are not the same thing.
 
-```text
+```python
     >>> Count
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -1362,7 +1353,7 @@ There are rules to follow while naming variables.
 
 All variable names should either start with an alphabet , or an underscore `_` . `count`, `_count` are valid. `1count` is invalid.
 
-```text
+```python
     >>> 1count = 5
       File "<stdin>", line 1
         1count = 5
@@ -1384,7 +1375,7 @@ All variable names should either start with an alphabet , or an underscore `_` .
 
 After the first symbol, you can also use a numeral in variable names.
 
-```text
+```python
     >>> c12345 = 5
 ```
 
@@ -1408,7 +1399,7 @@ In this step, we will look at an important concept in Python, called **assignmen
 
 You can create other variables using whatever value `i` is referring to. If we say `j = i`, what would happen?
 
-```text
+```python
     >>> i = 5
     >>> j = i
     >>> j
@@ -1419,7 +1410,7 @@ You can create other variables using whatever value `i` is referring to. If we s
 
 Let’s try `j = 2 * i`.
 
-```text
+```python
     >>> j = 2 * i
     >>> j
     10
@@ -1433,7 +1424,7 @@ In mathematics, When we execute `j = i`, it means `j` and `i` are equal.
 
 In prgramming, the value of the expression on right hand side is assigned to the variable on the right hand side. Can you use a constant on the left hand side of an assignment? The answer is “No”!
 
-```text
+```python
     >>> 5 = j
       File "<stdin>", line 1
     SyntaxError: can't assign to literal
@@ -1443,7 +1434,7 @@ The Python Shell throws an error, saying “Can’t assign to literal”, as `5`
 
 Let’s create a couple of variables. `num1 = 5` and `num2 = 3`. We would want to add these and create a fresh variable. Let’s say the name of the variable is `sum`.
 
-```text
+```python
     >>> num1 = 5
     >>> num2 = 3
     >>> sum = num1 + num2
@@ -1453,7 +1444,7 @@ Let’s create a couple of variables. `num1 = 5` and `num2 = 3`. We would want t
 
 Create 3 variables `a`, `b` and `c` with different values and calculate their sum.
 
-```text
+```python
     >>> a = 5
     >>> b = 6
     >>> c = 7
@@ -1477,7 +1468,7 @@ Until now, we have been using the `format()` method to format and print values. 
 
 This is the approach we used until now.
 
-```text
+```python
     >>> a = 1
     >>> b = 2
     >>> c = 3
@@ -1490,7 +1481,7 @@ Python has the concept of formatted strings. The syntax to use a formatted strin
 
 If we want to print the value of a variable `a`, we can use `{a}` in the text.
 
-```text
+```python
     >>> print(f"")
     >>> print(f"value of a is {a}")
     value of a is 1
@@ -1502,7 +1493,7 @@ The variable within braces is replaced by its value.
 
 You can use expressions in a formatted string. Example below uses `{a+b}`.
 
-```text
+```python
     >>> print(f"sum of a and b is {a + b}")
     sum of a and b is 3
 ```
@@ -1511,7 +1502,7 @@ This feature was introduced in a Python 3 release.
 
 Let’s get back to the original problem we wanted to solve: printing `5 + 6 + 7 = 18`, using formatted strings.
 
-```text
+```python
     >>> print(f"{a} + {b} + {c} = {sum}")
     1 + 2 + 3 = 6
 ```
@@ -1524,7 +1515,7 @@ We want to print the `5`-table from `5 * 1 = 5` onward, until we reach to `5 * 1
 
 **Snippet-01:**
 
-```text
+```python
     >>> index = 1
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
     5 * 1 = 5
@@ -1541,7 +1532,7 @@ We want to print the `5`-table from `5 * 1 = 5` onward, until we reach to `5 * 1
 
 Can we do something, to make sure that the code remains the same all the time, but the `index` value gets updated?
 
-```text
+```python
     >>> index = index + 1
     >>> print("{0} * {1} = {2}".format(5,index,5*index))
     5 * 5 = 25
@@ -1561,14 +1552,14 @@ The simplest loop available in Python is the **for loop**.
 
 When we run a `for` loop, we need to specify the range of values - `1` to `10` or `1` to `20`, and so on. `range()` function helps us to specify a range of values.
 
-```text
+```python
     >>> range(1,10)
     range(1, 10)
 ```
 
 The syntax of the `for` loop is: `for i in range(1, 10): ...`. Here, `i` is the name of the **control variable**. In Python, you need to put a colon, ‘`:`’, and in the next line give indentation.
 
-```text
+```python
     >>> for i in range(1,10):
     ...   print(i)
     ...
@@ -1591,7 +1582,7 @@ The leading whitespace before `print(i)` is called **indentation**. We’ll talk
 
 How can you extend this concept to solving our _PMT-Challenge_ problem?
 
-```text
+```python
     >>> print(f"{5} * {index} = {5*index}")
     5 * 7 = 35
 ```
@@ -1602,7 +1593,7 @@ How can you do that?
 
 Let’s start with a simple example.
 
-```text
+```python
     >>> for i in range(1,11):
     ...   print(f"{i}")
     ...
@@ -1622,7 +1613,7 @@ Let’s start with a simple example.
 
 Now, how do we get it to print `5 * 1 = 5` to `5 * 10 = 50`?
 
-```text
+```python
     >>> for i in range(1,11):
     ...   print(f"5 * {i} = {5 * i}")
     ...
@@ -1648,7 +1639,7 @@ In a previous step, we took a major step in programming. We wrote our first for 
 
 The syntax of the for loop we looked at earlier was:
 
-```text
+```python
   for i in range(1, 10):
     print(i)
 ```
@@ -1657,7 +1648,7 @@ The syntax of the for loop we looked at earlier was:
 
 Let’s say we write a `for` loop, but don’t give a `:` after the `range()` method, to close the first line. What would happen?
 
-```text
+```python
     >>> for i in range(1,10)
       File "<stdin>", line 1
         for i in range(1,10)
@@ -1669,7 +1660,7 @@ Invalid syntax. A `:` is mandatory within the `for` loop syntax.
 
 Let’s provide a `:` and in the next line, use `print(i)` without space before it \(without indentation\).
 
-```text
+```python
     >>> for i in range(1,10):
     ... print(i)
       File "<stdin>", line 2
@@ -1680,7 +1671,7 @@ Let’s provide a `:` and in the next line, use `print(i)` without space before 
 
 Most other programming languages use open brace `{` and closed brace `}` as delimiters in a `for` loop. However, Python uses indentation to identify which code is part of a `for` loop, and which is not. So if we are writing the body of a `for` loop, we must use indentation, and leave atleast a single `<SPACE>`.
 
-```text
+```python
     >>> for i in range(1,10):
     ...   print(i)
     ...
@@ -1697,7 +1688,7 @@ Most other programming languages use open brace `{` and closed brace `}` as deli
 
 How do we execute two lines of code as part of the `for` loop?
 
-```text
+```python
     >>> for i in range(1,10):
     ...  print(i)
     ...  print(2*i)
@@ -1726,7 +1717,7 @@ We are indenting both statements with a space - `print(i)` and `print(2*i)`.
 
 When for loop has only one line of code, you can specify it right after the `:`
 
-```text
+```python
     >>> for i in range(2,5): print(i)
     ...
     2
@@ -1738,7 +1729,7 @@ However, this is not considered to be a good programming practice. Even though y
 
 Another best practice is to use four `<SPACE>`s for indentation, instead of just two. This would give clear indentation of the code.
 
-```text
+```python
     >>> for i in range(2,5):
     ...     print(i)
     ...
@@ -1751,7 +1742,7 @@ Anybody who looks at the code immediately understands that this `print()` is par
 
 Let’s say you only want to print the odd numbers till `10`, which are `1`, `3`, `5`, `7` and `9`. The `range()` function offers an interesting option.
 
-```text
+```python
     >>> for i in range (1,11,2):
     ...   print(i)
     ...
@@ -1792,7 +1783,7 @@ In this step, let’s look at a few exercises.
 
 Instead of starting with `1`, we need to start with `2`. Each time, `i` it would be incremented by `2`, and `2 4 6 8 and 10` would be printed.
 
-```text
+```python
     >>> for i in range (2,11,2):
     ...   print(i)
     ...
@@ -1807,7 +1798,7 @@ Instead of starting with `1`, we need to start with `2`. Each time, `i` it would
 
 We would want to print the numbers in reverse. Think about how you would do that using the `range()` function. We’d want go from `10`, `9`, `8`, and so on up to `1`.
 
-```text
+```python
     >>> for i in range (10,0,-1):
     ...   print(i)
     ...
@@ -1831,7 +1822,7 @@ Usually these step value is positive, but we need to go backwards from `10`. Hen
 
 Now, let’s print the first `10` even numbers in reverse.
 
-```text
+```python
     >>> for i in range (20,0,-2):
     ...   print(i)
     ...
@@ -1851,7 +1842,7 @@ Now, let’s print the first `10` even numbers in reverse.
 
 Next, we would want to print the squares of the first 10 numbers.
 
-```text
+```python
     >>> for i in range (1,11):
     ...     print(i * i)
     ...
@@ -1871,7 +1862,7 @@ Next, we would want to print the squares of the first 10 numbers.
 
 Let’s print the squares in the reverse order.
 
-```text
+```python
     >>> for i in range (10,0,-1):
     ...     print(i*i)
     ...
@@ -1891,7 +1882,7 @@ Let’s print the squares in the reverse order.
 
 Print the squares of the even numbers. How to do that?
 
-```text
+```python
     >>> for i in range (10,0,-2):
     ...     print(i*i)
     ...
@@ -1932,21 +1923,21 @@ In the last section, we introduced you to the basics of python. We learned those
 
 **Snippet-01: Current Solution To PMT-Challenge**
 
-```text
+```python
     >>> for i in range (1,11):
     ...   print(f"8 * {i} = {8 * i}")
 ```
 
 If we wanted to change the code to print the `7` table, we need to change the value `7` used in the for loop, to `8`. It’s simple, but still not as friendly as you would like.
 
-```text
+```python
     >>> for i in range (1,11):
     ...   print(f"7 * {i} = {7 * i}")
 ```
 
 To print a `7` table, it would be awesome if could say `print_multiplication_table`, and give a value of 7 beside it, and it would do the rest:
 
-```text
+```python
     >>> print_multiplication_table(7)
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -1971,7 +1962,7 @@ Methods are very important building blocks in Python programming. In this step, 
 
 When we talk about a method, we need to give it a name. We are already using an in-built Python method here, which is `print()`.
 
-```text
+```python
     >>> print("Hello World")
     Hello World
     >>> print("Hello World")
@@ -1987,7 +1978,7 @@ The syntax to create a method in Python is straightforward:
 - Add a pair of parenthesis: `()`.
 - This is followed by a colon `:` \(similar to what we used in a `for` loop\).
 
-  ```text
+  ```python
   >>> def print_hello_world_twice():
   ...     print("Hello World")
   ...     print("Hello World")
@@ -2000,7 +1991,7 @@ All statements in a method should be indented. The two `print("Hello World")` ar
 
 How do we call this method? Is it sufficient to say `print_hello_world_twice`?
 
-```text
+```python
     >>> print_hello_world_twice
     <function print_hello_world_twice at 0x10a71ef28>
 ```
@@ -2009,7 +2000,7 @@ Python Shell says, there’s a function defined with that specific name.
 
 How do we execute a method? Very simple! Add a pair of parentheses to the name, `()`!
 
-```text
+```python
     >>> print_hello_world_twice()
     Hello World
     Hello World
@@ -2045,7 +2036,7 @@ We will now leave you with two exercises, based on what we have learned about me
 
 **Solution 1**
 
-```text
+```python
     >>> def print_hello_world_thrice():
     ...     print("Hello World")
     ...     print("Hello World")
@@ -2059,7 +2050,7 @@ We will now leave you with two exercises, based on what we have learned about me
 
 **Solution 2**
 
-```text
+```python
     >>> def print_your_progress():
     ...     print("Statement 1")
     ...     print("Statement 2")
@@ -2083,7 +2074,7 @@ For convenience, we have changed the exact text we need to print. Call this meth
 
 Now try another exercise. We want to print `"Statement 1"`, `"Statement 2"`, `"Statement 3"` and `"Statement 4"` on different lines, using just one print statement. How can you do that?
 
-```text
+```python
     >>> def print_your_progress():
     ...     print("Statement 1\nStatement 2\nStatement 3\nStatement 4")
     ...
@@ -2119,7 +2110,7 @@ In the previous step,we created methods. We defined `print_hello_world_twice()`,
 
 **Snippet-01:**
 
-```text
+```python
     >>> print_hello_world_twice()
     Hello World
     Hello World
@@ -2141,7 +2132,7 @@ How do we define our method to accept this argument?
 
 Let’s call our argument `no_of_times`. If you have any experience with other programming languages, they generally need you to specify the parameter type. Something like `This parameter is an integer/float/string, or other types`. But Python does not require parameter type.
 
-```text
+```python
     >>> def print_hello_world(no_of_times):
     ...    print("Hello World")
     ...    print(no_of_times)
@@ -2150,7 +2141,7 @@ Let’s call our argument `no_of_times`. If you have any experience with other p
 
 Although we are not doing exactly what we set out to, let’s see what would happen. What would happen if we say `print_hello_world()` ?
 
-```text
+```python
     >>> print_hello_world()
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -2159,7 +2150,7 @@ Although we are not doing exactly what we set out to, let’s see what would hap
 
 Error! Something like “Hey, you have created `print_hello_world` with a parameter, but not passing anything in here! Go ahead and pass a value”. Let’s pass in a value, such as `5`.
 
-```text
+```python
     >>> print_hello_world(5)
     Hello World
     5
@@ -2181,7 +2172,7 @@ Think about using something along the lines of a loop.
 
 For now, what we are doing is we are printing `"Hello World"` `10` times.
 
-```text
+```python
     >>> def print_hello_world(no_of_times):
     ...    for i in range(1,10):
     ...       print("Hello World")
@@ -2203,7 +2194,7 @@ Our method call `print_hello_world(5)` now prints `"Hello World"` `10` times.
 
 However just print the message `5` times. We need to make use of the parameter `no_of_times` inside the `for` loop as well.
 
-```text
+```python
     >>> def print_hello_world(no_of_times):
     ...    for i in range(1,no_of_times):
     ...       print("Hello World")
@@ -2222,7 +2213,7 @@ Why is it not printing `5` times?
 
 That’s because `no_of_times` as a second parameter to `range()` is exclusive.
 
-```text
+```python
     >>> def print_hello_world(no_of_times):
     ...    for i in range(1,no_of_times+1):
     ...       print("Hello World")
@@ -2237,7 +2228,7 @@ That’s because `no_of_times` as a second parameter to `range()` is exclusive.
 
 Great, it’s now printing the message `5` times!
 
-```text
+```python
     >>> print_hello_world(7)
     Hello World
     Hello World
@@ -2273,7 +2264,7 @@ In this step, Let’s look at a few exercises related to the method parameter.
 
 **Solution 1**
 
-```text
+```python
     >>> def print_numbers(n):
     ...    for i in range(1, n+1):
     ...       print(i)
@@ -2295,7 +2286,7 @@ That’s NOT how Python programmers name their methods. Pythonic way is to use u
 
 Let’s define `print_squares_of_numbers()`. This would be very similar to `print_numbers()`, working with the same range. Only, we need to say `print(i*i)` .
 
-```text
+```python
     >>> def print_squares_of_numbers(n):
     ...    for i in range(1, n+1):
     ...       print(i*i)
@@ -2328,7 +2319,7 @@ In this step, let’s look at creating a method with multiple parameters.
 
 `print_hello_world` accepts one parameter and prints “Hello World” the specified number of times.
 
-```text
+```python
     >>> def print_hello_world(no_of_times):
     ...    for i in range(1,no_of_times+1):
     ...       print("Hello World")
@@ -2343,7 +2334,7 @@ However, is that what a good programmer does?
 
 A good programmer tries to create a more generic solution.
 
-```text
+```python
     >>> def print_string(str, no_of_times):
     ...    for i in range(1,no_of_times+1):
     ...       print(str)
@@ -2358,7 +2349,7 @@ The good programmer that you are, you created a new method called `print_string(
 
 Syntax rules for method parameters are quite strict. If we say `print_string("Welcome to Python")` and run it, we get an error! Python Shell says: “I need `no_of_times` to be present in here”.
 
-```text
+```python
     >>> print_string("Welcome to Python")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -2369,7 +2360,7 @@ Let’s say you want to assign default values for `str` and `no_of_times` in `pr
 
 The Python language makes this very easy. `def print_string(str = "Hello World", no_of_times=5)`. The rest of the method remains the same.
 
-```text
+```python
     >>> def print_string(str="Hello World", no_of_times=5):
     ...    for i in range(1,no_of_times+1):
     ...       print(str)
@@ -2378,7 +2369,7 @@ The Python language makes this very easy. `def print_string(str = "Hello World",
 
 Now you can call `print_string()`, and `"Hello World"` is displayed `5` times.
 
-```text
+```python
     >>> print_string()
     Hello World
     Hello World
@@ -2389,7 +2380,7 @@ Now you can call `print_string()`, and `"Hello World"` is displayed `5` times.
 
 If it’s `print_string("Welcome To Python")`, what does it do? It prints `"Welcome To Python"`, `5` times.
 
-```text
+```python
     >>> print_string("Welcome to Python")
     Welcome to Python
     Welcome to Python
@@ -2400,7 +2391,7 @@ If it’s `print_string("Welcome To Python")`, what does it do? It prints `"Welc
 
 Consider `print_string("Welcome to Python", 8)`, it would print that string `8` times.
 
-```text
+```python
     >>> print_string("Welcome to Python", 8)
     Welcome to Python
     Welcome to Python
@@ -2430,14 +2421,14 @@ In this step, Let’s try our hand at creating a multiplication table method.
 
 **Snippet-01:**
 
-```text
+```python
     >>> for i in range (1,11):
     ...    print(f"7 * {i} = {7 * i}")
 ```
 
 Let’s define a method called `print_multiplication_table()`, and pass in a parameter to it.
 
-```text
+```python
     >>> def print_multiplication_table(table):
     ...    for i in range(1,11):
     ...       print(f"{table} * {i} = {table * i}")
@@ -2463,7 +2454,7 @@ We now want to create even better `print_multiplication_table()` method.
 
 We want to control the start point, as well as the end point, in the call to `range()`. We want to say `print_multiplication_table(7, 1, 6)`, to print the `7` table with entries from `1` to `6`. How can you do that?
 
-```text
+```python
     >>> def print_multiplication_table(table, start, end):
     ...    for i in range(start, end+1):
     ...       print(f"{table} * {i} = {table * i}")
@@ -2481,7 +2472,7 @@ Simple! Define those range limits as additional parameters!
 
 The other thing we can obviously do, is have default values for the `start`, and the `end`.
 
-```text
+```python
     >>> def print_multiplication_table(table, start=1, end=10):
     ...    for i in range(start, end+1):
     ...       print(f"{table} * {i} = {table * i}")
@@ -2518,7 +2509,7 @@ In Python, indentation denote blocks of code. So if you want to put something in
 
 **Snippet-01:**
 
-```text
+```python
     >>> def method_to_understand_indentation():
     ...     for i in range(1,11) :
     ...        print(i)
@@ -2538,7 +2529,7 @@ In Python, indentation denote blocks of code. So if you want to put something in
 
 Consider the code below: `print(5)` is indented at the same level as `for loop`.
 
-```text
+```python
     >>> def method_to_understand_indentation():
     ...     for i in range(1,11) :
     ...        print(i)
@@ -2548,7 +2539,7 @@ Consider the code below: `print(5)` is indented at the same level as `for loop`.
 
 You can see that `print(5)` is called only once. It is not part of the `for loop`.
 
-```text
+```python
     >>> method_to_understand_indentation()
     1
     2
@@ -2565,7 +2556,7 @@ You can see that `print(5)` is called only once. It is not part of the `for loop
 
 Let’s change the code in this method a bit. `print(5)` is indented the same way as `print(i)`
 
-```text
+```python
     >>> def method_to_understand_indentation():
     ...     for i in range(1,11) :
     ...        print(i)
@@ -2575,7 +2566,7 @@ Let’s change the code in this method a bit. `print(5)` is indented the same wa
 
 `print(5)` is part of the for loop. It is executed 10 times.
 
-```text
+```python
     >>> method_to_understand_indentation()
     1
     5
@@ -2617,7 +2608,7 @@ In this step, let’s look at a variety of puzzles related to methods.
 
 Consider the following method: I would want to print the default string 6 times. How do we do it?
 
-```text
+```python
     >>> def print_string(str="Hello World", no_of_times=5):
     ...     for i in range(1,no_of_times+1):
     ...        print(str)
@@ -2632,7 +2623,7 @@ Consider the following method: I would want to print the default string 6 times.
 
 Will it work if we call the method as in: `print_string(6)`?
 
-```text
+```python
     >>> print_string(6)
     6
     6
@@ -2651,7 +2642,7 @@ You can do this in Python by using **named parameters**. During the method call,
 
 Call it as `print_string(no_of_times=6)`:
 
-```text
+```python
     >>> print_string(no_of_times=6)
     Hello World
     Hello World
@@ -2667,7 +2658,7 @@ Named parameters are very useful, when a method has a number of parameters, and 
 
 Let’s call `print_string(7, 8)`. what happens?
 
-```text
+```python
     >>> print_string(7, 8)
     7
     7
@@ -2683,7 +2674,7 @@ You would see that `7` is printed `8` times.
 
 Since `print()` method is quite flexible, you can pass a number as the first argument. You can even pass a `float`.
 
-```text
+```python
     >>> print_string(7.5, 8)
     7.5
     7.5
@@ -2697,7 +2688,7 @@ Since `print()` method is quite flexible, you can pass a number as the first arg
 
 What would be the result of this - `print_string(7.5, "eight")`?
 
-```text
+```python
     >>> print_string(7.5, "eight")
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
@@ -2721,7 +2712,7 @@ Convention is to use underscore to separate words in a name.
 
 However, there are a few rules for naming a method: One of the important rules is also related to variable names. We observed that a variable name cannot start with a number.
 
-```text
+```python
     >>> def 1_print():
       File "<stdin>", line 1
         def 1_print():
@@ -2738,7 +2729,7 @@ Methods and variables cannot be named using Python keywords.
 
 Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
-````text
+````python
 ```for i in range(1, 11): print(i)```...
 ````
 
@@ -2748,7 +2739,7 @@ Now, what is a keyword? For example, when we talked about `for` loop, as in:
 
 Later we will look at a few other keywords, such as **`while`**, **`return`**, **`if`**, **`else`**, **`elif`**, and many more.
 
-```text
+```python
     >>> def def():
       File "<stdin>", line 1
         def def():
@@ -2782,7 +2773,7 @@ Let’s try and understand the importance of return values from a method. We wil
 
 Let’s name our method as `product_of_two_numbers()`, and let’s have parameters `a` and `b` that it accepts:
 
-```text
+```python
     >>> def product_of_two_numbers(a,b):
     ...     print(a * b)
     ...
@@ -2796,7 +2787,7 @@ Suppose we say a `product = product_of_two_numbers(1,2)`, is this allowed?
 
 Let’s run this code, and see what’s stored in `product`.
 
-```text
+```python
     >>> product = product_of_two_numbers(1,2)
     2
     >>> product
@@ -2808,7 +2799,7 @@ The `product_of_two_numbers()` method is not really returning anything back, to 
 
 Have a look at some of the built-in Python functions, such as `max()` for example.
 
-```text
+```python
     >>> max(1,2,3)
     3
     >>> max(1,2,3,4)
@@ -2826,7 +2817,7 @@ Later on in the code that follows, we can say `maximum * 5`, or we can print the
 
 So instead of just printing `a*b`, if this function could return a value, that would be quite useful.
 
-```text
+```python
     >>> def product_of_two_numbers(a,b):
     ...      product = a * b;
     ...      return product
@@ -2839,7 +2830,7 @@ We are creating a variable `product` and doing a `return product`.
 
 Lets run `product_result = product_of_two_numbers(2, 3)`
 
-```text
+```python
     >>> product_result = product_of_two_numbers(2,3)
     >>> product_result
     6
@@ -2869,7 +2860,7 @@ Hint: The sum of the angles in a triangle is `180` degrees. So if I am passing `
 
 **Solution 1**
 
-```text
+```python
     >>>def sum_of_three_numbers(a, b, c):
     ...     sum = a + b + c
     ...     return sum
@@ -2884,7 +2875,7 @@ Hint: The sum of the angles in a triangle is `180` degrees. So if I am passing `
 
 The shorter way of doing that would have been to have a temporary variable called instead of `sum`. We could directly `return a + b + c`.
 
-```text
+```python
     >>> def sum_of_three_numbers(a, b, c):
     ...     return a + b + c
     ...
@@ -2899,7 +2890,7 @@ In methods, you can use `return expression` as well. That `expression` gets eval
 
 The second is to write a method to take two integers, representing two angles of a triangle, and compute the third one.
 
-```text
+```python
     >>> def calculate_third_angle(first, second) :
     ...     return 180 - ( first + second )
     ...
@@ -2945,7 +2936,7 @@ We’ll save this into any folder on our hard disk, with a name ‘first.py’ .
 
 _**first.py**_
 
-```text
+```python
 print("Hello world")
 ```
 
@@ -3090,7 +3081,7 @@ Let’s look at `2.5`, which is a floating point value.
 
 If you go ahead and do `type(2.5)`, what would you see? You would see it’s of type \``float`.
 
-```text
+```python
     >>> type(2.5)
     <class 'float'>
     >>> type(2.55)
@@ -3099,7 +3090,7 @@ If you go ahead and do `type(2.5)`, what would you see? You would see it’s of 
 
 When you perform a division operation between two integers, there is a chance that the result of the operation is a `float`. If you do `5/2`, the result is `2.5`. If we were to do `4/2`, even then it’s of type `float`.
 
-```text
+```python
     >>> type(5/2)
     <class 'float'>
     >>> type(4/2)
@@ -3112,7 +3103,7 @@ When you perform a division operation between two integers, there is a chance th
 
 All the operations we looked at until now, can also be performed on floating point values.
 
-```text
+```python
     >>> value1 = 4.5
     >>> value2 = 3.2
     >>> value1 + value2
@@ -3133,7 +3124,7 @@ Typically, if you’re doing any highly sensitive financial calculations, don’
 
 Operations can also be performed between `int` and `float`.
 
-```text
+```python
     >>> i + value1
     14.5
     >>> i - value1
@@ -3164,7 +3155,7 @@ For example, if you want to call `simple_interest` with `10000`, with an interes
 
 **Solution 1**
 
-```text
+```python
     def calculate_simple_interest(principal, interest, duration) :
             return principal * (1 + interest * 0.01 * duration)
 
@@ -3185,7 +3176,7 @@ In this section, we are looking at numeric types. In this specific step, we woul
 
 Let’s create a simple variable `i = 1`. `i = i + 1`. What would be the value of `i` after that?
 
-```text
+```python
     >>> i = 1
     >>> i = i + 1
     >>> i
@@ -3194,7 +3185,7 @@ Let’s create a simple variable `i = 1`. `i = i + 1`. What would be the value o
 
 It would be `2`. There is a shortcut way of doing the same thing, by using the `+=` operator.
 
-```text
+```python
     >>> i += 1
     >>> i
     3
@@ -3202,7 +3193,7 @@ It would be `2`. There is a shortcut way of doing the same thing, by using the `
 
 Typically in other programming languages, you can do something of this kind: `i++`. There is no provision in Python to use increment operators like `++`, in either prefix or suffix mode, like `++i`, or `i++`.
 
-```text
+```python
     >>> i++
       File "<stdin>", line 1
         i++
@@ -3214,7 +3205,7 @@ Typically in other programming languages, you can do something of this kind: `i+
 
 Let’s look at compound assignments.
 
-```text
+```python
     >>> i += 1
     >>> i
     4
@@ -3229,7 +3220,7 @@ Let’s look at compound assignments.
 
 What you see here, is Dynamic Typing in Python. The type of a variable can change during the lifetime of the program.
 
-```text
+```python
 >>> i = 2
 >>> type(i)
 <type 'int'>
@@ -3242,14 +3233,14 @@ Let’s create a couple more numbers. `number1 = 5` and `number2 = 2`. What coul
 
 `number1 // nummber2` truncates the value of `2.5`, to `2`.
 
-```text
+```python
     >>> number1//number2
     2
 ```
 
 If you can do `number1 // number2`, can you also do this: `number1 //= number2`?
 
-```text
+```python
     >>> number1 //= 2
     >>> number1
     2
@@ -3257,7 +3248,7 @@ If you can do `number1 // number2`, can you also do this: `number1 //= number2`?
 
 `5 ** 3` is `5` ‘to the power of’ `3`, which is `5 * 5 * 5`, or `125`.
 
-```text
+```python
     >>> 5 ** 3
     125
     >>> pow(5,3)
@@ -3270,14 +3261,14 @@ The last thing we will look at, are type conversion functions.
 
 If you need to convert an `int` value to a `float`, or a `float` to an `int`.
 
-```text
+```python
     >>> int(5.6)
     5
 ```
 
 What if you want to round a value? `5.6` is nearer to `6` than `5`. You can use a function called `round()`, and here,`round(5.6)` gives the correct result `6`.
 
-```text
+```python
     >>> round(5.6)
     6
     >>> round(5.4)
@@ -3288,7 +3279,7 @@ What if you want to round a value? `5.6` is nearer to `6` than `5`. You can use 
 
 `round()` can also allows you to specify number of decimals in the result.
 
-```text
+```python
     >>> round(5.67, 1)
     5.7
     >>> round(5.678, 2)
@@ -3297,7 +3288,7 @@ What if you want to round a value? `5.6` is nearer to `6` than `5`. You can use 
 
 You can also convert `int` to `float`, by using the function `float()`.
 
-```text
+```python
     >>> float(5)
     5.0
 ```
@@ -3320,7 +3311,7 @@ A boolean value is something which can be either “true” or “false”.
 
 In Python, “true” is represented by `True`, and “false” by `False`. It’s important to remember that it’s `True` with a capital `'T'`, and `False` with a capital `'F'`.
 
-```text
+```python
     >>> True
     True
     >>> False
@@ -3337,14 +3328,14 @@ In Python, “true” is represented by `True`, and “false” by `False`. It�
 
 The boolean variable `is_even` indicates whether a number is even or not.
 
-```text
+```python
     >>> is_even = True
     >>> is_odd = False
 ```
 
 Let’s create a variable `i = 10`. We want to find out if `i > 15`. What do you think is the result? `False`.
 
-```text
+```python
     >>> i = 10
     >>> i > 15
     False
@@ -3356,7 +3347,7 @@ In general, boolean values can represent the result of logical conditions.
 
 Let’s look at other operations that can result in `bool` values. We looked at `>` and `<`. Another operation which you can perform, is `>=`.
 
-```text
+```python
     >>> i >= 15
     False
     >>> i >= 10
@@ -3371,7 +3362,7 @@ Let’s look at other operations that can result in `bool` values. We looked at 
 
 `==` is the comparison operator. We are only comparing the value of `i` against `10`, not changing its value.
 
-```text
+```python
     >>> i == 10
     True
     >>> i == 11
@@ -3395,7 +3386,7 @@ Sometimes you need to execute code only when certain conditions are true. You ca
 
 Let’s say `i` has a value of `5`. You want to print something, only if `i` has a value greater than `3`. How do you do that?
 
-```text
+```python
     >>> i = 5
     >>> if i>3:
     ...     print(f"{i} is greater than 3")
@@ -3407,7 +3398,7 @@ The syntax of the `if` is very simple: `if` followed by a condition; with the co
 
 Let’s say `i` has a value of `2`. What would happen if we execute the same code again?
 
-```text
+```python
     >>> i = 2
     >>> if i>3:
     ...     print(f"{i} is greater than 3")
@@ -3418,7 +3409,7 @@ You would see that nothing is printed to the console. Based on the value of `i` 
 
 The way you can think about an `if`, is the body of code under the `if` is executed only when this condition is `True`. If this condition is not `True`, that code is not executed at all.
 
-```text
+```python
     >>> if(False):
     ...   print("False")
     ...
@@ -3430,7 +3421,7 @@ The way you can think about an `if`, is the body of code under the `if` is execu
 
 Let’s take two different numbers, say `a = 5`, and `b = 7`. We want to compare them, and predict if `a` is greater that `b` .
 
-```text
+```python
     >>> a = 5
     >>> b = 7
     >>> if(a>b):
@@ -3459,7 +3450,7 @@ In this step, let’s look at a couple of exercises with the if statement.
 
 Let’s say we define four variables: `a = 1`, `b = 2` , `c = 3` and `d = 5`. we want to find out, if `a + b` is greater than `c + d`.
 
-```text
+```python
     >>> a = 1
     >>> b = 2
     >>> c = 3
@@ -3476,7 +3467,7 @@ Let’s say we define four variables: `a = 1`, `b = 2` , `c = 3` and `d = 5`. we
 
 Let’s say we are given three values meant to be the angles of a triangle. Their values are `angle1 = 30`, `angle2 = 20` and `angle3 = 60`. You want to find out if these three angles actually form a valid triangle. You know that the sum of the angles of a triangle is always `180` degrees.
 
-```text
+```python
     >>> angle1 = 30
     >>> angle2 = 20
     >>> angle3 = 60
@@ -3494,7 +3485,7 @@ The last exercise is to check if a number is even or not.
 
 Hint L you need to use one of the operators we talked about earlier. That’s right, use the modulo operator `%`.
 
-```text
+```python
     >>> i = 2
     >>> if(i%2==0):
     ...   print("i is even")
@@ -3521,7 +3512,7 @@ Let’s say we have a value `True`, and the other `False`, and we want to play a
 
 Logical operator `and` returns true only when both operands are `True`.
 
-```text
+```python
     >>> True and False
     False
     >>> True and True
@@ -3535,7 +3526,7 @@ Logical operator `and` returns true only when both operands are `True`.
 
 Logical operator `or` returns true when atleast one of the operands is `True`.
 
-```text
+```python
     False
     >>> True or False
     True
@@ -3548,7 +3539,7 @@ Logical operator `or` returns true when atleast one of the operands is `True`.
 
 Logical operator `not` returns negation.
 
-```text
+```python
     False
     >>> not True
     False
@@ -3562,7 +3553,7 @@ Logical operator `not` returns negation.
 
 The XOR operation, denoted by the `^` operator, is `True` when operands have different boolean values.
 
-```text
+```python
     >>> True ^ True
     False
     >>> True ^ False
@@ -3588,7 +3579,7 @@ In this step, Let’s look at a few simple puzzles to look at the logical operat
 
 Let’s say `i` has a value of `10`, and `j` has a value of `15`. You want to find out if both `i` and `j` are even. How do you do that?
 
-```text
+```python
     >>> i = 10
     >>> j = 15
     >>> if i%2==0 and j%2==0:
@@ -3613,7 +3604,7 @@ Let’s say `i` has a value of `10`, and `j` has a value of `15`. You want to fi
 
 If we want to find out if at least one of `i` and `j` is even, we can use the `or` operator.
 
-```text
+```python
     >>> i = 15
     >>> j
     14
@@ -3631,7 +3622,7 @@ If we want to find out if at least one of `i` and `j` is even, we can use the `o
 
 Now try and guess the value of this. `if(True ^ False): print("Message")`
 
-```text
+```python
     >>> if(True ^ False):
     ...     print("This will Print")
     ...
@@ -3653,7 +3644,7 @@ So you would use `^` in situations, where you’d want one of the operands to be
 
 Let’s say, `x = 5`, and you want to check `if not x == 6: print("This")`. What will be the result of running this code?
 
-```text
+```python
     >>> x = 5
     >>> if not x == 6:
     ...   print("This")
@@ -3667,7 +3658,7 @@ Let’s say, `x = 5`, and you want to check `if not x == 6: print("This")`. What
 
 Actually, there is a shortcut for such a condition: `if x != 6 : print("This")`.
 
-```text
+```python
     >>> if x!=6:
     ...   print("This")
     ...
@@ -3680,7 +3671,7 @@ Actually, there is a shortcut for such a condition: `if x != 6 : print("This")`.
 
 `int()` is a conversion function, which when given say a `float` value, returns an `int` value. Consider `int(True)`, what would happen?
 
-```text
+```python
     >>> int(True)
     1
     >>> int(False)
@@ -3689,7 +3680,7 @@ Actually, there is a shortcut for such a condition: `if x != 6 : print("This")`.
 
 `int(True)` returns 1. `int(False)` returns 0.
 
-```text
+```python
     >>> x = -6
     >>> if x:
     ...   print("something")
@@ -3701,7 +3692,7 @@ One of the most interesting facts about boolean stuff, is anything which is non-
 
 `0` is the only integer value which is considered to be `False`.
 
-```text
+```python
     >>> bool(6)
     True
     >>> bool(-6)
@@ -3740,7 +3731,7 @@ Consider a scenario where `i` has a value of `2`. Let’s try to print a message
 
 Earlier we wrote code along these lines: `if i % 2 == 0 : print("i is even")`. However if this condition is not `True`, we would want to `print("i is odd")`. How do we accomplish that?
 
-```text
+```python
     >>> i = 2
     >>> if i%2 == 0:
     ...   print("i is even");
@@ -3752,7 +3743,7 @@ Earlier we wrote code along these lines: `if i % 2 == 0 : print("i is even")`. H
 
 An `else` clause provides an alternative code body to execute, if the `if` condition is `False`.
 
-```text
+```python
     >>> i = 3
     >>> if i%2 == 0:
     ...   print("i is even");
@@ -3768,7 +3759,7 @@ We want to do something if `i` has value of `3`, and something totally different
 
 In short, we want to specify 2 alternatives to the `if` condition. How can that be done?
 
-```text
+```python
     >>> if i==1:
     ...   print("i is 1")
     ... elif i==2:
@@ -3801,7 +3792,7 @@ Until now, we had been hard-coding all the data we were to use. Let’s make tha
 
 How do we get input from the user? We want to get input from the console, and assign it to a variable. The way we can do that, is by statement `value = input()`
 
-```text
+```python
     value = input("Enter a Value: ")
     print("you entered ", value)
 ```
@@ -3812,7 +3803,7 @@ An interesting point to explore here, is the type of data input at the console.
 
 Let’s do a `print(type(value))`.
 
-```text
+```python
     value = input("Enter a Value: ")
     print("you entered ", value)
     print(type(value))
@@ -3828,7 +3819,7 @@ We want to get an integer value from the input. How can we do it?
 
 `int()` function converts string to int. Let’s use it.
 
-```text
+```python
 value = input("Enter a Value: ")
 integer_value = int(value)
 print("you entered ", integer_value)
@@ -3861,7 +3852,7 @@ In the first version of the program let’s get all the inputs and print them ou
 
 The first version of the program is simple to write
 
-```text
+```python
 number1 = int(input("Enter Number1: "))
 number2 = int(input("Enter Number2: "))
 print(f"You entered {number1}")
@@ -3896,7 +3887,7 @@ In the previous step, we got the input from the user. Let’s continue the exerc
 
 Extending the solution is easy. Write appropriate `if`, `elif` and `else` conditions.
 
-```text
+```python
 number1 = int(input("Enter Number1: "))
 number2 = int(input("Enter Number2: "))
 
@@ -3925,7 +3916,7 @@ print(result)
 
 We added the following code to account for invalid input.
 
-```text
+```python
 else:
     result = "Invalid Choice"
 ```
@@ -3945,7 +3936,7 @@ In this step, let’s look at a few puzzles related to these `if`, `elif` and `e
 
 Let’s start with the first puzzle. Guess the output.
 
-```text
+```python
 k = 15
 if (k > 20):
   print(1)
@@ -3967,7 +3958,7 @@ Inside the `if` conditional, the `if`, `elif` and `else` clauses are all indepen
 
 What do you think would be the output of this particular piece of code?
 
-```text
+```python
 l = 15
     if (l < 20):
         print("l<20")
@@ -3987,7 +3978,7 @@ The second `if` is a separate statement. The condition is false. So. `else` gets
 
 Let’s run this code.
 
-```text
+```python
 m = 15
 if m>20:
     if m<20:
@@ -4006,7 +3997,7 @@ The second `if` block is executed only if the first `if` is true.
 
 What would be the output?
 
-```text
+```python
 number = 5
 if number < 0:
   number = number + 10
@@ -4026,7 +4017,7 @@ Let’s add a couple of spaces before `number = number + 5`.
 
 What would be the output?
 
-```text
+```python
 number = 5
 if number < 0:
   number = number + 10
@@ -4051,7 +4042,7 @@ Let’s start looking at another important data type in Python, that’s used to
 
 Let’s look at valid string representations.
 
-```text
+```python
     >>> message = "Hello World"
     >>> message = 'Hello World'
     >>> message = 'Hello World"
@@ -4064,7 +4055,7 @@ In Python, you can use either \`\`\``or`""\` to delimit string values.
 
 `type()` method can be used to find type of a variable.
 
-```text
+```python
     >>> message = "Hello World"
     >>> type(message)
     <class 'str'>
@@ -4072,7 +4063,7 @@ In Python, you can use either \`\`\``or`""\` to delimit string values.
 
 The `str` `class` provides a lot of utility methods.
 
-```text
+```python
     >>> message.upper()
     'HELLO WORLD'
     >>> message.lower()
@@ -4082,7 +4073,7 @@ The `str` `class` provides a lot of utility methods.
 
 `message.capitalize()` does init caps. Only first character is changed to uppercase.
 
-```text
+```python
     >>> "hello".capitalize()
     'Hello'
     >>> 'hello'.capitalize()
@@ -4103,7 +4094,7 @@ Now let’s shift our attention to methods, which gives us more information abou
 
 To find if a piece of text contains only lower case alphabets.
 
-```text
+```python
     >>> 'hello'.islower()
     True
     >>> 'Hello'.islower()
@@ -4112,7 +4103,7 @@ To find if a piece of text contains only lower case alphabets.
 
 If the first letter is in uppercase, then `istitle()` will return a `True` value.
 
-```text
+```python
     >>> 'Hello'.istitle()
     True
     >>> 'hello'.istitle()
@@ -4121,7 +4112,7 @@ If the first letter is in uppercase, then `istitle()` will return a `True` value
 
 To find if a piece of text contains only upper case alphabets.
 
-```text
+```python
     >>> 'hello'.isupper()
     False
     >>> 'Hello'.isupper()
@@ -4132,7 +4123,7 @@ To find if a piece of text contains only upper case alphabets.
 
 `isdigit()` checks if a string is a numeric value.
 
-```text
+```python
     >>> '123'.isdigit()
     True
     >>> 'A23'.isdigit()
@@ -4145,7 +4136,7 @@ To find if a piece of text contains only upper case alphabets.
 
 `isalpha()` checks if a string only contains alphabets.
 
-```text
+```python
     >>> '23'.isalpha()
     False
     >>> '2A'.isalpha()
@@ -4156,7 +4147,7 @@ To find if a piece of text contains only upper case alphabets.
 
 `isalnum()` checks if a string only contains alphabets and/or numerals.
 
-```text
+```python
     >>> 'ABC123'.isalnum()
     True
     >>> 'ABC 123'.isalnum()
@@ -4167,7 +4158,7 @@ Lastly, we look at things which you can use, to check characters of a string.
 
 `endswith` is self explanatory.
 
-```text
+```python
     >>> 'Hello World'.endswith('World')
     True
     >>> 'Hello World'.endswith('ld')
@@ -4180,7 +4171,7 @@ Lastly, we look at things which you can use, to check characters of a string.
 
 `startswith` is self explanatory as well.
 
-```text
+```python
     >>> 'Hello World'.startswith('Wo')
     False
     >>> 'Hello World'.startswith('He')
@@ -4193,7 +4184,7 @@ Lastly, we look at things which you can use, to check characters of a string.
 
 `find` method returns if a piece of text is present in another string. Returns the first match index.
 
-```text
+```python
     >>> 'Hello World'.find('Hello')
     0
     >>> 'Hello World'.find('ello')
@@ -4204,7 +4195,7 @@ A value of `-1` is returned, if you’re searching for something which is not pr
 
 If you are searching for `'Ello'` with a capital `'E'` ,you’ll not be able to find it. Search is case sensitive.
 
-```text
+```python
     >>> 'Hello World'.find('Ello')
     -1
     >>> 'Hello World'.find('bello')
@@ -4219,14 +4210,14 @@ We’ll now try and convert values from one type to another, and try and play ar
 
 `str` converts boolean value to a text value.
 
-```text
+```python
     >>> str(True)
     'True'
 ```
 
 All text value except for empty string represent True. So, `bool` returns True for everything except empty string.
 
-```text
+```python
     >>> bool('True')
     True
     >>> bool('true')
@@ -4243,7 +4234,7 @@ All text value except for empty string represent True. So, `bool` returns True f
 
 Let’s try and convert a few integer values to strings.
 
-```text
+```python
     >>>str(123)
     '123'
     >>> str(12345)
@@ -4254,7 +4245,7 @@ Let’s try and convert a few integer values to strings.
 
 Let’s do the reverse.
 
-```text
+```python
     >>> int('45')
     45
     >>> int('45.56')
@@ -4265,7 +4256,7 @@ if we do `int('45.56')`, you can see that it throws an error. It says “I canno
 
 You can also pass an additional parameter to `int` indicating the numeric system - 16 for Hexa decimal, 8 for Octal etc. Default is 10 - Decimal.
 
-```text
+```python
     >>> int('45abc',16)
     285372
     >>> int('a',16)
@@ -4282,7 +4273,7 @@ You can also pass an additional parameter to `int` indicating the numeric system
 
 You can also convert string to float.
 
-```text
+```python
     >>> float("34.43")
     34.43
     >>> float("34.43rer")
@@ -4303,7 +4294,7 @@ What does immutability mean, and why do we say strings are immutable?
 
 Let’s create a very simple string: `message = 'Hello'`, and we’re saying `message.upper()`. But what does it do? It prints `'HELLO'`, with all characters in uppercase. Well, what would happen if you do `print(message)`? It says `'Hello'`.
 
-```text
+```python
     >>> message = "Hello"
     >>> message.upper()
     'HELLO'
@@ -4359,7 +4350,7 @@ In other languages, you would have something to represent a single character sym
 
 For example, let’s see how Python treats the first character of the following string `message`. The way you can access the first character of a string is by saying `message[0]`.
 
-```text
+```python
     >>> message = "Hello World"
     >>> message[0]
     'H'
@@ -4375,7 +4366,7 @@ In Python, whether you’re talking about a string, or you’re talking about a 
 
 `message[100]` throws an `IndexError`.
 
-```text
+```python
     >>> message[0]
     'H'
     >>> message[1]
@@ -4404,13 +4395,13 @@ In this step, we will introduce you to the `string` `module`.
 
 If we would want to use anything from a module in Python, you need to import that specific `module` into your program.
 
-```text
+```python
     >>> import string
 ```
 
 If you do a `string.` and press , it would show the different things which are part of the `string` `module`.
 
-```text
+```python
     >>> string.
     string.Formatter(       string.ascii_uppercase  string.octdigits
     string.Template(        string.capwords(        string.printable
@@ -4420,7 +4411,7 @@ If you do a `string.` and press , it would show the different things which are p
 
 Let’s explore some of these.
 
-```text
+```python
     >>> string.ascii_letters
     'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     >>> string.ascii_lowercase
@@ -4441,7 +4432,7 @@ You have a set of printable characters, punctuation characters and a lot more.
 
 You can check a text value against any of these
 
-```text
+```python
     >>> 'a' in string.ascii_letters
     True
     >>> 'ab' in string.ascii_letters
@@ -4452,7 +4443,7 @@ You can check a text value against any of these
 
 `in` operation on a string, checks if a given string.
 
-```text
+```python
     >>> '1' in '13579'
     True
     >>> '2' in '13579'
@@ -4469,7 +4460,7 @@ In this step, we explored more exercises involving the `str` module of Python.
 
 Let’s start with an Exercise - find if a specific character is a vowel or not.
 
-```text
+```python
     >>> char = 'a'
     >>> vowel_string = 'aeiouAEIOU'
     >>> char in vowel_string
@@ -4481,7 +4472,7 @@ Let’s start with an Exercise - find if a specific character is a vowel or not.
 
 he other thing you can do, is just have the capital vowels, or just the lowercase versions.
 
-```text
+```python
     >>> vowel_string = 'AEIOU'
     >>> char.upper() in vowel_string
     False
@@ -4496,7 +4487,7 @@ We want to find out and print all the capital alphabets, from `A` to `Z`.
 
 There was a small clue at the start of the previous step, regarding importing the `string` `module`. We did the `string` `module`, and we saw that `string` `module` contained a number of things.
 
-```text
+```python
     >>> string.ascii_uppercase
     'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     >>> for char in string.ascii_uppercase:
@@ -4532,7 +4523,7 @@ There was a small clue at the start of the previous step, regarding importing th
 
 Try another easy exercise: print all the lower characters. Instead of `string.ascii_uppercase`, you have `string.ascii_lowercase`.
 
-```text
+```python
     >>> for char in string.ascii_lowercase:
     ...   print(char)
     ...
@@ -4566,7 +4557,7 @@ Try another easy exercise: print all the lower characters. Instead of `string.as
 
 An even easier exercise, would be to print all the digits.
 
-```text
+```python
     >>> for char in string.
     string.Formatter(       string.ascii_uppercase  string.octdigits
     string.Template(        string.capwords(        string.printable
@@ -4592,7 +4583,7 @@ The last exercise which we want to leave you with, is to check if something is a
 
 A consonant is an alphabet which is not a vowel, so any alphabet which is not in `'aeiou'` is a consonant. The simplest way of doing this is to say `consonant_string = 'bcdfghj...'` and so on. Looks like a very long solution? There is an easier way out.
 
-```text
+```python
     >>> vowel_string = 'aeiou'
     >>> char = 'b'
     >>> char.isalpha() and char.lower() not in vowel_string
@@ -4609,7 +4600,7 @@ So we would want to print `'This'`, `'is'`, `'a'`, `'great'` and `'thing'` on in
 
 One of the clues we’ll give you is, try and do `string_example. <TAB>`. There are a huge list of methods, which would come up if you do that.
 
-```text
+```python
     >>> string_example = "This is a great thing"
     >>> string_example.
     string_example.capitalize(    string_example.join(
@@ -4638,7 +4629,7 @@ One of the clues we’ll give you is, try and do `string_example. <TAB>`. There 
 
 One of the methods in the list is the `split()` method.
 
-```text
+```python
     >>> string_example.split()
     ['This', 'is', 'a', 'great', 'thing']
     >>> for word in string_example.split():
@@ -4653,7 +4644,7 @@ One of the methods in the list is the `split()` method.
 
 `split_lines()` method looks for a `'\n'`, and it divides the string based on it. If you have a string which contains newlines, and you would want to divide it into a number of strings with each line as a new element, the method you can use is `split_lines()`.
 
-```text
+```python
     >>> string_example = "This\nis\n\ngreat\nthing"
     >>> print(string_example)
     This
@@ -4675,7 +4666,7 @@ One of the methods in the list is the `split()` method.
 
 The last thing which we look at, is **concatenation operator**.
 
-```text
+```python
     >>> 1 + 2
     3
     >>> "1" + "2"
@@ -4690,7 +4681,7 @@ In Python, you cannot do `+` operator between two different types. `+` with two 
 
 One other interesting operator on strings is multiplication. If you do a `'1' * 20`, What do you think will be the output?
 
-```text
+```python
     >>> 1 * 20
     20
     >>> '1' * 20
@@ -4707,7 +4698,7 @@ Let’s say we have a string with a value `str = 'test'`, and you have another s
 
 We want to check whether both these strings are the same.
 
-```text
+```python
     >>> str = "test"
     >>> str2 = "test1"
     >>> str == str2
@@ -4750,7 +4741,7 @@ What does this do? Very simple, it prints from `1` to `10`.
 
 In the call to the `range()` function, the second parameter is exclusive. We are actually looping from `1` to `10`, and this piece of code, `print(i)`, is being executed for different values of `i`.
 
-```text
+```python
     >>> for i in range(1,11):
     ...   print(i)
     ...
@@ -4768,7 +4759,7 @@ In the call to the `range()` function, the second parameter is exclusive. We are
 
 `for` loop can also be used to loop round the characters in a string.
 
-```text
+```python
     >>> for ch in "Hello World":
     ...   print(ch)
     ...
@@ -4786,7 +4777,7 @@ In the call to the `range()` function, the second parameter is exclusive. We are
 
 `for` loop can be used to loop around all the words in a given sentence.
 
-```text
+```python
     >>> for word in "Hello World".split():
     ...   print(word)
     ...
@@ -4796,7 +4787,7 @@ In the call to the `range()` function, the second parameter is exclusive. We are
 
 `for` loop can be used to loop around a specific list of values.
 
-```text
+```python
     >>> for item in (3, 6, 9):
     ...   print(item)
     ...
@@ -4824,7 +4815,7 @@ Welcome back to this step, where we would do a lot of exercises with the `for` l
 
 Hint: Given an input `5`, we would want to print the number triangle of these kind:
 
-```text
+```python
 1
 1 2
 1 2 3
@@ -4842,13 +4833,13 @@ We would want to accept an `int` parameter, and find out if it is prime, or not.
 
 We need to check whether it’s divisible by any other number, other than `1` and itself. If we are passed in a value of `5`, you want to see if it’s divisible by any of `2`, `3` or `4`.
 
-```text
+```python
 def is_prime(number):
 ```
 
 We can use a `for` loop. We can structure it like this: `for divisor in range(1, number): ...`. We would not want to divide it with `1`, but start with `2` instead, and go up to `number-1`, which is `4`.
 
-```text
+```python
 for divisor in range(2,number):
 ```
 
@@ -4856,7 +4847,7 @@ How can we check if the `number` is divisible by `divisor`?
 
 By using the `%` operator. If `number` is divisible by `divisor` we return `False`.
 
-```text
+```python
 for divisor in range(2,number):
     if number % divisor == 0:
         return False
@@ -4864,7 +4855,7 @@ for divisor in range(2,number):
 
 What happens if the code comes up to the end? It would mean we tried with `2`, `3` and `4`, but `number` was not divisible by all of them. In that case, `number` would be prime, and we can safely return `True`.
 
-```text
+```python
 for divisor in range(2,number):
     if number % divisor == 0:
         return False
@@ -4878,7 +4869,7 @@ This `if` condition is called a guard check or a boundary check, to make sure th
 
 Here is the entire code at one place, for your reference:
 
-```text
+```python
 def is_prime(number):
     if(number < 2):
         return False
@@ -4893,7 +4884,7 @@ print(is_prime(5));
 
 In the previous step, we looked at solving the `is_prime()` exercise. In this step, let’s look at an implementation of `sum_up_to_n()`. Here is the entire code for this exercise:
 
-```text
+```python
 def sum_upto_n(number):
     sum = 0
     for i in range(1, number+1):
@@ -4917,7 +4908,7 @@ One of the clues we can give you, is that `sum_of_divisors()` is very similar to
 
 You want to find out if a number is dividing `15`, and if it’s dividing `15`, with the remainder of `0`, then you need to add that up.
 
-```text
+```python
 def calculate_sum_of_divisors(number):
     sum = 0
     if(number < 2):
@@ -4936,7 +4927,7 @@ In this step, Let’s look at the last exercise - `print_a_number_triangle`.
 
 For example, if we call such a function with input `5`, the output needs to be:
 
-```text
+```python
 1
 
 1 2
@@ -4952,7 +4943,7 @@ Let start with a simple thing. Let’s try and print `1 2 3 4 5` first, and then
 
 We can say `def print_a_number_triangle(number): ...` that takes a number as an input. You want to print a sequence of integers starting from `1`, up to that specific `number`. How can you do that? Let’s try this: `for i in range(1,number+1): print(i)` What would happen? Let’s call `print_a_number_triangle(5)` now. It prints:
 
-```text
+```python
     1
     2
     3
@@ -4970,7 +4961,7 @@ To solve our exercise, we want to repeat this again and again.
 
 Yes, we need another for loop around it!
 
-```text
+```python
 for j in range(1, number+1):
     for i in range(1, number + 1):
         print(i, end=" ")
@@ -4984,7 +4975,7 @@ The output of above program is
 
 Let’s add `print("\n")`, so we have a new line at the end of each outer loop iteration.
 
-```text
+```python
 for j in range(1, number+1):
     for i in range(1, number + 1):
         print(i, end=" ")
@@ -4993,7 +4984,7 @@ for j in range(1, number+1):
 
 Output
 
-```text
+```python
 1 2 3 4 5
 1 2 3 4 5
 1 2 3 4 5
@@ -5013,7 +5004,7 @@ Instead of `number+1`, let’s say `j + 1`.
 
 When `j` has a value of `1`, `for` will print from `1` to `1`. When `j` has a value of `2`, print from `1` to `2`, literally printing `1 2`. When j has a value of `3`, I’ll print from `1` to `3`. Let’s try this and see what would happen.
 
-```text
+```python
 for j in range(1, number+1):
     for i in range(1, j + 1):
         print(i, end=" ")
@@ -5022,7 +5013,7 @@ for j in range(1, number+1):
 
 You can see that our number triangle is ready!
 
-```text
+```python
 1
 
 1 2
@@ -5036,7 +5027,7 @@ You can see that our number triangle is ready!
 
 Here is the entire code for you:
 
-```text
+```python
 def print_a_number_triangle(number):
     for j in range(1, number + 1):
         for i in range(1, j + 1):
@@ -5067,7 +5058,7 @@ Let’s see how to use a simple `while` loop.
 
 **Snippet-01:**
 
-```text
+```python
     >>> i = 5
     >>> if i == 5:
     ...   print("i is 5")
@@ -5077,7 +5068,7 @@ Let’s see how to use a simple `while` loop.
 
 Let’s say `i` has a value of `0`, and we then do: `while i < 5: print(i)`.
 
-```text
+```python
     >>> i = 0
     >>> while i < 5:
     ...   print(i)
@@ -5105,7 +5096,7 @@ Initially `i` is `0`, and the condition `i < 5` is `True`, and `print(i)` is exe
 
 One of the important things to make sure in a `while` loop, is to increment the value of `i`. We need to say something like `i = i + 1`.
 
-```text
+```python
     >>> while i < 5:
     ...   print(i)
     ...   i = i + 1
@@ -5124,7 +5115,7 @@ So how does it work? \*`i` initially had a value of `0`. First the condition is 
 
 When executing a `while`, control flow is just based on a condition. As long as the condition is `True`, we keep executing the code. An important thing to remember, is to make sure the control variable is updated.
 
-```text
+```python
     >>> for i in range(0,5): print(i)
     ...
     0
@@ -5161,7 +5152,7 @@ In the previous step, we were introduced to `while` loop. In this step, let’s 
 
 Here is the entire code for your reference:
 
-```text
+```python
 def print_squares_upto_limit(limit):
     i = 1
     while i * i < limit:
@@ -5173,7 +5164,7 @@ Now the next exercise, was to print cubes up to a limit.
 
 The expression in the `while` condition should now be `i*i*i < 30`.
 
-```text
+```python
 def print_cubes_upto_limit(limit):
     i = 1
     while i * i * i < limit:
@@ -5220,7 +5211,7 @@ We would want to enhance it to execute in a loop multiple times, until the user 
 
 Here’s the earlier code we wrote with if:
 
-```text
+```python
 number1 = int(input("Enter Number1: "))
 number2 = int(input("Enter Number2: "))
 

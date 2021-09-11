@@ -1,7 +1,5 @@
 # D4-Module 04 - Python IV
 
-
-
 ## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a static array
 
 ### Overview <a id="overview"></a>
@@ -50,13 +48,13 @@ You often encounter a scenario where you want to use a subset of items from an e
 
 In Python, the syntax looks like this:
 
-```text
+```python
 my_list[start_index:end_index]
 ```
 
-The default start index is 0, and if you leave off the end\_index, the slice will capture through the end of the list.
+The default start index is 0, and if you leave off the end_index, the slice will capture through the end of the list.
 
-```text
+```python
 my_list[:]  # This would be all of the items in my_list
 my_list[:5] # This would be the items from index 0 to 4
 my_list[5:] # This would be the items from index 5 to the end of the list
@@ -73,12 +71,10 @@ You must keep these facts in mind and account for them when using a slice in you
 
 ### Additional Resources <a id="additional-resources"></a>
 
-* [https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/ \(Links to an external site.\)](https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/)
-* [https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/)
+- [https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/ \(Links to an external site.\)](https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/)
+- [https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
-
-
 
 ## Objective 02 - Describe the differences between in-place and out-of-place algorithms
 
@@ -106,7 +102,7 @@ It would be best if you always defaulted to using an out-of-place function. This
 
 Here is an example of a function that triples each number in an input list. This function does this _in-place_:
 
-```text
+```python
 def append_exclamations(str_list):
     for idx, item in enumerate(str_list):
         str_list[idx] += "!"
@@ -114,7 +110,7 @@ def append_exclamations(str_list):
 
 Now, since this is an in-place function, watch what happens when we use it:
 
-```text
+```python
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> append_exclamations(my_list)
 >>> my_list
@@ -125,7 +121,7 @@ Now, since this is an in-place function, watch what happens when we use it:
 
 Let's now write a similar function, but this time we will do it _out-of-place:_
 
-```text
+```python
 def append_exclamations(str_list):
     # Create a new empty list that has the same length as the input list
     loud_list = [None] * len(str_list)
@@ -139,7 +135,7 @@ def append_exclamations(str_list):
 
 Look what happens when we use this function:
 
-```text
+```python
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> my_new_louder_list = append_exclamations(my_list)
 >>> my_list
@@ -158,15 +154,9 @@ Notice how we had to store the returned list in a new variable. Also, notice tha
 
 ### Additional Resources <a id="additional-resources"></a>
 
-* [https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/](https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/)
-
-
-
-
+- [https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/](https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
-
-
 
 ## Objective 03 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a dynamic array
 
@@ -220,13 +210,9 @@ So, let's say that your dynamic array instantiates with an underlying static arr
 
 ### Additional Resources <a id="additional-resources"></a>
 
-* [https://www.youtube.com/watch?v=qTb1sZX74K0 \(Links to an external site.\)](https://www.youtube.com/watch?v=qTb1sZX74K0)[![](https://lambdaschool.instructure.com/images/play_overlay.png)](https://www.youtube.com/watch?v=qTb1sZX74K0)
+- [https://www.youtube.com/watch?v=qTb1sZX74K0 \(Links to an external site.\)](https://www.youtube.com/watch?v=qTb1sZX74K0)[![](https://lambdaschool.instructure.com/images/play_overlay.png)](https://www.youtube.com/watch?v=qTb1sZX74K0)
 
 {% embed url="https://www.youtube.com/watch?v=qTb1sZX74K0" %}
-
-
-
-
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
@@ -234,21 +220,6 @@ So, let's say that your dynamic array instantiates with an underlying static arr
 
 This module project requires you to answer some multiple-choice questions related to the module's objectives. Additionally, you must continue developing your problem-solving skills by completing coding challenges related to its content.
 
-
-
-
-
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
-
-
-
-
-
-
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
-
-
-
-
-

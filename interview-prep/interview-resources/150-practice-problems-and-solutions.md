@@ -4,7 +4,7 @@
 
 **1.** Write a Python program to print the following string in a specific format \(see the output\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample String :_ "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" _Output :_
 
-```text
+```python
 Twinkle, twinkle, little star,    How I wonder what you are!         Up above the world so high,                   Like a diamond in the sky. Twinkle, twinkle, little star,     How I wonder what you are
 ```
 
@@ -22,9 +22,9 @@ Twinkle, twinkle, little star,    How I wonder what you are!         Up above th
 
 **7.** Write a Python program to accept a filename from the user and print the extension of that. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample filename :_ abc.java _Output :_ java [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-7.php)​
 
-**8.** Write a Python program to display the first and last colors from the following list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) color\_list = \["Red","Green","White" ,"Black"\] [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-8.php)​
+**8.** Write a Python program to display the first and last colors from the following list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) color_list = \["Red","Green","White" ,"Black"\] [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-8.php)​
 
-**9.** Write a Python program to display the examination schedule. \(extract the date from exam\_st\_date\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) exam\_st\_date = \(11, 12, 2014\) Sample Output : The examination will start from : 11 / 12 / 2014 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-9.php)​
+**9.** Write a Python program to display the examination schedule. \(extract the date from exam_st_date\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) exam_st_date = \(11, 12, 2014\) Sample Output : The examination will start from : 11 / 12 / 2014 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-9.php)​
 
 **10.** Write a Python program that accepts an integer \(n\) and computes the value of n+nn+nnn. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample value of n is_ 5 _Expected Result :_ 615 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-10.php)​
 
@@ -66,13 +66,13 @@ Twinkle, twinkle, little star,    How I wonder what you are!         Up above th
 
 **28.** Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample numbers list_ :
 
-```text
+```python
 numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,     958,743, 527    ]
 ```
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-28.php)​
 
-**29.** Write a Python program to print out a set containing all the colors from color\_list\_1 which are not present in color\_list\_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : color\_list\_1 = set\(\["White", "Black", "Red"\]\) color\_list\_2 = set\(\["Red", "Green"\]\) _Expected Output_ : {'Black', 'White'} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
+**29.** Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : color_list_1 = set\(\["White", "Black", "Red"\]\) color_list_2 = set\(\["Red", "Green"\]\) _Expected Output_ : {'Black', 'White'} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
 
 **30.** Write a Python program that will accept the base and height of a triangle and compute the area. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-30.php)​
 
@@ -321,4 +321,3 @@ Sample data: n=20 d = {"x":200} Expected Output : 0 {}
 **149.** Write a Python function that takes a positive integer and returns the sum of the cube of all the positive integers smaller than the specified number. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-149.php)​
 
 **150.** Write a Python function to check whether a distinct pair of numbers whose product is odd present in a sequence of integer values. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-150.php)
-

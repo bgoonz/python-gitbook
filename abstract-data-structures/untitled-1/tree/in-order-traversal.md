@@ -65,4 +65,3 @@ def postorder_traversal(root):
     return result
 
 ```
-

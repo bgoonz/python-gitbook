@@ -1,7 +1,7 @@
 # Tire
 
-{% tabs %}
-{% tab title="Examples" %}
+{% tabs %} {% tab title="Examples" %}
+
 ```python
 """
 A Trie/Prefix Tree is a kind of search tree used to provide quick lookup
@@ -131,10 +131,9 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
+{% endtab %} {% endtabs %}

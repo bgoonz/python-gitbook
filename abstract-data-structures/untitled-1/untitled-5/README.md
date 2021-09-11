@@ -64,13 +64,11 @@ print(table.get("car"))
 
 ## Hash Table
 
-* Describe an implementation of a least-used cache, and big-O notation of it.
-* A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
-* Implement data structure `Map` storing pairs of integers \(key, value\) and define following member functions in O\(1\) runtime: `void insert(key, value)`, `void delete(key)`, `int get(key)`, `int getRandomKey()`.
+- Describe an implementation of a least-used cache, and big-O notation of it.
+- A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
+- Implement data structure `Map` storing pairs of integers \(key, value\) and define following member functions in O\(1\) runtime: `void insert(key, value)`, `void delete(key)`, `int get(key)`, `int getRandomKey()`.
 
 {% embed url="https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811" %}
-
-
 
 ```python
 """Write a HashTable class that stores strings
@@ -132,8 +130,6 @@ print hash_table.lookup('UDACIOUS')
 
 ```
 
-
-
 {% page-ref page="../array/" %}
 
 {% page-ref page="../tree/binary-search-tree/" %}
@@ -165,6 +161,3 @@ print hash_table.lookup('UDACIOUS')
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

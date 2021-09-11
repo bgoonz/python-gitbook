@@ -1,14 +1,12 @@
 # Recursion Explained
 
-
-
 ### Introduction to recursive functions
 
 A recursive function is a [function](https://www.pythontutorial.net/python-basics/python-functions/) that calls itself until it doesn’t.
 
 The following `fn()` function is a recursive function because it has a call to itself:
 
-```text
+```python
 def fn():
     # ...
     fn()
@@ -20,7 +18,7 @@ In the `fn()` function, the `#...` means other code.
 
 Also, a recursive function needs to have a condition to stop calling itself. So you need to add an [if statement](https://www.pythontutorial.net/python-basics/python-if/) like this:
 
-```text
+```python
 def fn():
     # ...
     if condition:
@@ -45,7 +43,7 @@ Suppose you need to develop a countdown function that counts down from a specifi
 
 For example, if you call the function that counts down from 3, it’ll show the following output:
 
-```text
+```python
 3
 2
 1Code language: Python (python)
@@ -53,7 +51,7 @@ For example, if you call the function that counts down from 3, it’ll show the 
 
 The following defines the `count_down()` function:
 
-```text
+```python
 def count_down(start):
     """ Count down from a number  """
     print(start)Code language: Python (python)
@@ -61,7 +59,7 @@ def count_down(start):
 
 If you call the `count_down()` function now:
 
-```text
+```python
 count_down(3)Code language: Python (python)
 ```
 
@@ -69,9 +67,9 @@ count_down(3)Code language: Python (python)
 
 To show the number 3, 2 and 1, you need to:
 
-* First, call the `count_down(3)` to show the number 3.
-* Second, call the `count_down(2)` to show the number 2.
-* Finally, call the `count_down(1)` to show the number 1.
+- First, call the `count_down(3)` to show the number 3.
+- Second, call the `count_down(2)` to show the number 2.
+- Finally, call the `count_down(1)` to show the number 1.
 
 In order to do so, inside the `count_down()` function, you’ll need to define a logic to call the function `count_down()` with argument 2, and 1.
 
@@ -79,7 +77,7 @@ To do it, you need to make the `count_down()` function recursive.
 
 The following defines a recursive `count_down()` function and calls it by passing the number 3:
 
-```text
+```python
 def count_down(start):
     """ Count down from a number  """
     print(start)
@@ -91,7 +89,7 @@ count_down(3)Code language: Python (python)
 
 If you execute the program, you’ll see the following error:
 
-```text
+```python
 RecursionError: maximum recursion depth exceeded while calling a Python objectCode language: Python (python)
 ```
 
@@ -99,7 +97,7 @@ The reason is that the `count_down()` calls itself indefinitely until the system
 
 Since you need to stop counting down the number reaches zero. To do so, you add a condition like this:
 
-```text
+```python
 def count_down(start):
     """ Count down from a number  """
     print(start)
@@ -116,7 +114,7 @@ count_down(3)Code language: Python (python)
 
 Output:
 
-```text
+```python
 3
 2
 1Code language: Python (python)
@@ -128,7 +126,7 @@ In this example, the `count_down()` function only calls itself when the next num
 
 Suppose that you need to calculate a sum of a sequence e.g., from 1 to 100. A simple way to do this is to use a [for loop with the range\(\) function](https://www.pythontutorial.net/python-basics/python-for-range/):
 
-```text
+```python
 def sum(n):
     total = 0
     for index in range(n+1):
@@ -143,22 +141,22 @@ print(result)Code language: Python (python)
 
 Output:
 
-```text
+```python
 5050Code language: Python (python)
 ```
 
 To apply the recursion technique, you can calculate the sum of the sequence from 1 to n as follows:
 
-* sum\(n\) = n + sum\(n-1\)
-* sum\(n-1\) = n-1 + sum\(n-2\)
-* …
-* sum\(0\) = 0
+- sum\(n\) = n + sum\(n-1\)
+- sum\(n-1\) = n-1 + sum\(n-2\)
+- …
+- sum\(0\) = 0
 
 The `sum()` function keeps calling itself as long as its argument is greater than zero.
 
 The following defines the recursive version of the `sum()` function:
 
-```text
+```python
 def sum(n):
     if n > 0:
         return n + sum(n-1)
@@ -173,7 +171,7 @@ As you can see, the recursive function is much shorter and more readable.
 
 If you use the [ternary operator](https://www.pythontutorial.net/python-basics/python-ternary-operator/), the `sum()` will be even more concise:
 
-```text
+```python
 def sum(n):
     return n + sum(n-1) if n > 0 else 0
 
@@ -185,6 +183,5 @@ Code language: Python (python)
 
 ### Summary
 
-* A recursive function is a function that calls itself until it doesn’t.
-* And a recursive function always has a condition that stops calling itself.
-
+- A recursive function is a function that calls itself until it doesn’t.
+- And a recursive function always has a condition that stops calling itself.

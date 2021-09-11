@@ -1,32 +1,30 @@
 # Graphs Explained
 
-
-
 Graphs are complex, non-linear data structures that are characterized by a group of vertices, connected by edges. For more information on the _different types of data structures in Python_, check out the following articles:
 
-* [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
-* [List](https://www.section.io/list-data-structure-python/)
-* [Stack](https://www.section.io/stack-data-structure-python/)
-* [Queue](https://www.section.io/queue-data-structure-python/)
-* [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
-* [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
-* [Heaps](https://www.section.io/heap-data-structure-python/)
+- [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
+- [List](https://www.section.io/list-data-structure-python/)
+- [Stack](https://www.section.io/stack-data-structure-python/)
+- [Queue](https://www.section.io/queue-data-structure-python/)
+- [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
+- [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
+- [Heaps](https://www.section.io/heap-data-structure-python/)
 
 #### Table of Contents <a id="table-of-contents"></a>
 
-* [Graphs: Introduction](https://www.section.io/engineering-education/graph-data-structure-python/#graphs:-introduction)
-* [Applications of Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#applications-of-graphs)
-* [Types of Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#types-of-graphs)
-* [Representing Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#representing-graphs)
-* [Conclusion](https://www.section.io/engineering-education/graph-data-structure-python/#conclusion)
-* [Further Reading](https://www.section.io/engineering-education/graph-data-structure-python/#further-reading)
+- [Graphs: Introduction](https://www.section.io/engineering-education/graph-data-structure-python/#graphs:-introduction)
+- [Applications of Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#applications-of-graphs)
+- [Types of Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#types-of-graphs)
+- [Representing Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#representing-graphs)
+- [Conclusion](https://www.section.io/engineering-education/graph-data-structure-python/#conclusion)
+- [Further Reading](https://www.section.io/engineering-education/graph-data-structure-python/#further-reading)
 
 #### Graphs: Introduction <a id="graphs-introduction"></a>
 
 Graphs are non-linear data structures made up of two major components:
 
-* **Vertices** – Vertices are entities in a graph. Every vertex has a value associated with it. For example, if we represent a list of cities using a graph, the vertices would represent the cities.
-* **Edges** – Edges represent the relationship between the vertices in the graph. Edges may or may not have a value associated with them. For example, if we represent a list of cities using a graph, the edges would represent the path between the cities.
+- **Vertices** – Vertices are entities in a graph. Every vertex has a value associated with it. For example, if we represent a list of cities using a graph, the vertices would represent the cities.
+- **Edges** – Edges represent the relationship between the vertices in the graph. Edges may or may not have a value associated with them. For example, if we represent a list of cities using a graph, the edges would represent the path between the cities.
 
 ![Graph Diagram](https://www.section.io/engineering-education/graph-data-structure-python/graph.png)
 
@@ -38,18 +36,18 @@ Graphs are used everywhere, from schooling to business. Especially in the fields
 
 A few other applications of graphs are:
 
-* To visualize organized data.
-* Directed Graphs are used in Google’s [Page Ranking Algorithm](https://en.wikipedia.org/wiki/PageRank).
-* Social Networks use graphs to represent different users as vertices and edges to represent the connections between them.
-* In a mapping application, graphs are used to represent places and the path \(distance\) between them.
+- To visualize organized data.
+- Directed Graphs are used in Google’s [Page Ranking Algorithm](https://en.wikipedia.org/wiki/PageRank).
+- Social Networks use graphs to represent different users as vertices and edges to represent the connections between them.
+- In a mapping application, graphs are used to represent places and the path \(distance\) between them.
 
 #### Types of Graphs <a id="types-of-graphs"></a>
 
 There are many types of graphs, based on weights, direction, interconnectivity, and special properties. Let’s look at the most common types of graphs.
 
-* [Graphs Based on Direction](https://www.section.io/engineering-education/graph-data-structure-python/#based-on-direction)
-* [Graphs Based on Weights](https://www.section.io/engineering-education/graph-data-structure-python/#based-on-weights)
-* [Special Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#special-graphs)
+- [Graphs Based on Direction](https://www.section.io/engineering-education/graph-data-structure-python/#based-on-direction)
+- [Graphs Based on Weights](https://www.section.io/engineering-education/graph-data-structure-python/#based-on-weights)
+- [Special Graphs](https://www.section.io/engineering-education/graph-data-structure-python/#special-graphs)
 
 **Based on Direction**
 
@@ -79,9 +77,9 @@ _Figure:_ [_Directed Graph_](https://pediaa.com/what-is-the-difference-between-d
 
 A weighted graph has a value associated with every edge. The value may represent quantities like cost, distance, time, etc., depending on the graph. An edge of a weighted graph is represented as, `(u, v, w)`.
 
-* `u` -&gt; Source vertex
-* `v` -&gt; Destination vertex
-* `w` -&gt; Weight associated to go from u to v.
+- `u` -&gt; Source vertex
+- `v` -&gt; Destination vertex
+- `w` -&gt; Weight associated to go from u to v.
 
 These weighted graphs are extensively used in modelling Computer Networks. For a career as a Networking Engineer, the knowledge of weighted graphs are a must.
 
@@ -93,8 +91,8 @@ _Figure:_ [_Weighted Graph_](https://www.clipartmax.com/middle/m2i8Z5i8G6b1b1b1_
 
 An unweighted graph does not have a value associated with every edge. An edge of an unweighted graph is represented as, `(u, v)`.
 
-* `u` -&gt; Source vertex
-* `v` -&gt; Destination vertex
+- `u` -&gt; Source vertex
+- `v` -&gt; Destination vertex
 
 Relationships in query languages like GraphQL can be represented by using Unweighted Graphs.
 
@@ -146,9 +144,9 @@ _Figure:_ [_Complete Graph_](https://www.geeksforgeeks.org/mathematics-graph-the
 
 There are multiple ways of using data structures to represent a graph. The three most common ways are:
 
-* [Adjacency Matrix](https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-matrix)
-* [Adjacency List](https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-list)
-* [Edge List](https://www.section.io/engineering-education/graph-data-structure-python/#edge-list)
+- [Adjacency Matrix](https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-matrix)
+- [Adjacency List](https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-list)
+- [Edge List](https://www.section.io/engineering-education/graph-data-structure-python/#edge-list)
 
 **Adjacency Matrix**
 
@@ -160,7 +158,7 @@ For example, a snake and ladder game can be represented by using an adjacency ma
 
 **Example:**
 
-```text
+```python
 graph = [[0, 1, 2],
          [2, 0, 5],
          [4, 5, 0]]
@@ -171,7 +169,7 @@ The adjacency matrix above represents a graph that has 3 vertices. The cost of m
 **Advantages and Disadvantages of Adjacency Matrix**
 
 | Advantages | Disadvantages |
-| :--- | :--- |
+| :-- | :-- |
 | Space-efficient for dense graph representation. | Space Complexity of this Data Structure - O\(V^2\). |
 | The time complexity of getting an edge weight is O\(1\). | Iterating through the edges takes O\(V^2\) time. |
 | Simplest Graph Representation. |  |
@@ -183,7 +181,7 @@ An adjacency list represents a graph as a list that has vertex-edge mappings. Ex
 **Advantages and Disadvantages of Adjacency List**
 
 | Advantages | Disadvantages |
-| :--- | :--- |
+| :-- | :-- |
 | Space-efficient for sparse graphs. | Less space efficient for dense graphs. |
 | Iterating over the edges is efficient. | Edge weight lookup is O\(E\). \(worse case\) |
 |  | Slightly more complex to represent. |
@@ -194,7 +192,7 @@ An edge list represents the graph as an unstructured list of edges.
 
 **Example:**
 
-```text
+```python
 graph = [(C, A, 4), (A, C, 1), (B, C, 6),
          (A, B, 4), (C, B, 1), (C, D, 2)]
 ```
@@ -204,7 +202,7 @@ They are not widely used because this representation lacks structure.
 **Advantages and Disadvantages of Edge List**
 
 | Advantages | Disadvantages |
-| :--- | :--- |
+| :-- | :-- |
 | Space-efficient for sparse graphs. | Less space efficient for dense graphs. |
 | Iterating over the edges is efficient. | Edge weight lookup is O\(E\). \(worse case\) |
 | Extremely simple representation. | This representation lacks structure. |
@@ -217,32 +215,31 @@ To summarize,
 
 **Types of Graphs**
 
-* Based on Direction
-  * Undirected Graph
-  * Directed Graph
-* Based on Weights
-  * Weighted Graph
-  * Unweighted Graph
-* Special Graphs
-  * Tree
-  * Rooted Tree
-  * Directed Acyclic Graph
-  * Complete Graph
+- Based on Direction
+  - Undirected Graph
+  - Directed Graph
+- Based on Weights
+  - Weighted Graph
+  - Unweighted Graph
+- Special Graphs
+  - Tree
+  - Rooted Tree
+  - Directed Acyclic Graph
+  - Complete Graph
 
 **Graph Representation**
 
-* Adjacency Matrix
-  * Used for dense graphs
-* Adjacency List
-  * Used for sparse graphs
-* Edge List
-  * Used for simple representation
+- Adjacency Matrix
+  - Used for dense graphs
+- Adjacency List
+  - Used for sparse graphs
+- Edge List
+  - Used for simple representation
 
 #### Further Reading <a id="further-reading"></a>
 
 To learn more about graphs, check out the following pages:
 
-* Practice Graphs – [LeetCode](https://leetcode.com/tag/graph/)
-* Graph Theory [Notes](https://www.cpp.edu/~ftang/courses/CS241/notes/graph.htm)
-* Graph Representation – [HackerEarth](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/)
-
+- Practice Graphs – [LeetCode](https://leetcode.com/tag/graph/)
+- Graph Theory [Notes](https://www.cpp.edu/~ftang/courses/CS241/notes/graph.htm)
+- Graph Representation – [HackerEarth](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/)

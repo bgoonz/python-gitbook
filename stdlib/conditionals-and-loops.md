@@ -1,12 +1,12 @@
 # Conditionals and loops
 
-###  Conditional execution
+### Conditional execution
 
 #### 4.1.1. The `if` statement
 
 In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. [Conditional statements](http://en.wikipedia.org/wiki/Conditional_%28programming%29) give us this ability. The simplest form is the **if** statement, which has the genaral form:
 
-```text
+```python
 if BOOLEAN EXPRESSION:
     STATEMENTS
 ```
@@ -15,11 +15,11 @@ A few important things to note about `if` statements:
 
 1. The colon \(`:`\) is significant and required. It separates the **header** of the **compound statement** from the **body**.
 2. The line after the colon must be indented. It is standard in Python to use four spaces for indenting.
-3. All lines indented the same amount after the colon will be executed whenever the BOOLEAN\_EXPRESSION is true.
+3. All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.
 
 Here is an example:
 
-```text
+```python
 food = 'spam'
 
 if food == 'spam':
@@ -32,7 +32,7 @@ The boolean expression after the `if` statement is called the **condition**. If 
 
 Run this example code and see what happens. Then change the value of `food` to something other than `'spam'` and run it again, confirming that you don’t get any output.
 
-Flowchart of an **if** statement![\_images/flowchart\_if\_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
+Flowchart of an **if** statement![_images/flowchart_if_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
 
 As with the `for` statement from the last chapter, the `if` statement is a **compound statement**. Compound statements consist of a header line and a body. The header line of the `if` statement begins with the keyword `if` followed by a _boolean expression_ and ends with a colon \(`:`\).
 
@@ -52,7 +52,7 @@ In the [Vim](https://www.openbookproject.net/books/bpp4awd/app_a.html#configurin
 
 It is frequently the case that you want one thing to happen when a condition it true, and **something else** to happen when it is false. For that we have the `if else` statement.
 
-```text
+```python
 if food == 'spam':
     print('Ummmm, my favorite!')
 else:
@@ -61,11 +61,11 @@ else:
 
 Here, the first print statement will execute if `food` is equal to `'spam'`, and the print statement indented under the `else` clause will get executed when it is not.
 
-Flowchart of a **if else** statement![\_images/flowchart\_if\_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
+Flowchart of a **if else** statement![_images/flowchart_if_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
 
 The syntax for an `if else` statement looks like this:
 
-```text
+```python
 if BOOLEAN EXPRESSION:
     STATEMENTS_1        # executed if condition evaluates to True
 else:
@@ -76,7 +76,7 @@ Each statement inside the `if` block of an `if else` statement is executed in or
 
 There is no limit on the number of statements that can appear under the two clauses of an `if else` statement, but there has to be at least one statement in each block. Occasionally, it is useful to have a section with no statements \(usually as a place keeper, or scaffolding, for code you haven’t written yet\). In that case, you can use the `pass` statement, which does nothing except act as a placeholder.
 
-```text
+```python
 if True:          # This is always true
     pass          # so this is always executed, but it does nothing
 else:
@@ -93,7 +93,7 @@ Notice too that `else` is not a statement. The `if` statement has two _clauses_,
 
 Sometimes there are more than two possibilities and we need more than two branches. One way to express a computation like that is a **chained conditional**:
 
-```text
+```python
 if x < y:
     STATEMENTS_A
 elif x > y:
@@ -102,11 +102,11 @@ else:
     STATEMENTS_C
 ```
 
-Flowchart of this chained conditional![\_images/flowchart\_chained\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
+Flowchart of this chained conditional![_images/flowchart_chained_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
 
 `elif` is an abbreviation of `else if`. Again, exactly one branch will be executed. There is no limit of the number of `elif` statements but only a single \(and optional\) final `else` statement is allowed and it must be the last branch in the statement:
 
-```text
+```python
 if choice == 'a':
     print("You chose 'a'.")
 elif choice == 'b':
@@ -123,9 +123,9 @@ Each condition is checked in order. If the first is false, the next is checked, 
 
 One conditional can also be **nested** within another. \(It is the same theme of composibility, again!\) We could have written the previous example as follows:
 
-Flowchart of this nested conditional![\_images/flowchart\_nested\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
+Flowchart of this nested conditional![_images/flowchart_nested_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
 
-```text
+```python
 if x < y:
     STATEMENTS_A
 else:
@@ -141,7 +141,7 @@ Although the indentation of the statements makes the structure apparent, nested 
 
 Logical operators often provide a way to simplify nested conditional statements. For example, we can rewrite the following code using a single conditional:
 
-```text
+```python
 if 0 < x:            # assume x is an int here
     if x < 10:
         print("x is a positive single digit.")
@@ -149,7 +149,7 @@ if 0 < x:            # assume x is an int here
 
 The `print` function is called only if we make it past both the conditionals, so we can use the `and` operator:
 
-```text
+```python
 if 0 < x and x < 10:
     print("x is a positive single digit.")
 ```
@@ -158,7 +158,7 @@ Note
 
 Python actually allows a short hand form for this, so the following will also work:
 
-```text
+```python
 if 0 < x < 10:
     print("x is a positive single digit.")
 ```
@@ -175,7 +175,7 @@ Before we look at those, we need to review a few ideas.
 
 As we saw back in the [Variables are variable](https://www.openbookproject.net/books/bpp4awd/ch02.html#variables-are-variable-section) section, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value \(and stop referring to the old value\).
 
-```text
+```python
 bruce = 5
 print(bruce)
 bruce = 7
@@ -184,7 +184,7 @@ print(bruce)
 
 The output of this program is
 
-```text
+```python
 5
 7
 ```
@@ -199,7 +199,7 @@ Note too that an equality test is symmetric, but assignment is not. For example,
 
 Furthermore, in mathematics, a statement of equality is always true. If `a == b` now, then `a` will always equal `b`. In Python, an assignment statement can make two variables equal, but because of the possibility of reassignment, they don’t have to stay that way:
 
-```text
+```python
 a = 5
 b = a    # after executing this line, a and b are now equal
 a = 3    # after executing this line, a and b are no longer equal
@@ -217,7 +217,7 @@ When an assignment statement is executed, the right-hand-side expression \(i.e. 
 
 One of the most common forms of reassignment is an update, where the new value of the variable depends on its old value.
 
-```text
+```python
 n = 5
 n = 3 * n + 1
 ```
@@ -226,7 +226,7 @@ The second line means “get the current value of n, multiply it by three and ad
 
 If you try to get the value of a variable that doesn’t exist yet, you’ll get an error:
 
-```text
+```python
 >>> w = x + 1
 Traceback (most recent call last):
   File "<interactive input>", line 1, in
@@ -235,7 +235,7 @@ NameError: name 'x' is not defined
 
 Before you can update a variable, you have to **initialize** it, usually with a simple assignment:
 
-```text
+```python
 >>> x = 0
 >>> x = x + 1
 ```
@@ -250,7 +250,7 @@ Each item in turn is \(re-\)assigned to the loop variable, and the body of the l
 
 The general form of a `for` loop is:
 
-```text
+```python
 for LOOP_VARIABLE in SEQUENCE:
     STATEMENTS
 ```
@@ -261,7 +261,7 @@ The loop variable is created when the `for` statement runs, so you do not need t
 
 This type of flow is called a **loop** because it loops back around to the top after each iteration.
 
-```text
+```python
 for friend in ['Margot', 'Kathryn', 'Prisila']:
     invitation = "Hi " + friend + ".  Please come to my party on Saturday!"
     print(invitation)
@@ -279,7 +279,7 @@ If you get the results you expected, pat yourself on the back and move on. If yo
 
 Often times you will want a loop that iterates a given number of times, or that iterates over a given sequence of numbers. The `range` function come in handy for that.
 
-```text
+```python
 >>> for i in range(5):
 ...     print('i is now:', i)
 ...
@@ -301,14 +301,14 @@ Well, almost. For some operations, computers use tables of values to get an appr
 
 Although a log table is not as useful as it once was, it still makes a good example. The following program outputs a sequence of values in the left column and 2 raised to the power of that value in the right column:
 
-```text
+```python
 for x in range(13):   # Generate numbers 0 to 12
     print(x, '\t', 2**x)
 ```
 
 Using the tab character \(`'\t'`\) makes the output align nicely.
 
-```text
+```python
 0       1
 1       2
 2       4
@@ -328,7 +328,7 @@ Using the tab character \(`'\t'`\) makes the output align nicely.
 
 The general syntax for the while statement looks like this:
 
-```text
+```python
 while BOOLEAN_EXPRESSION:
     STATEMENTS
 ```
@@ -337,7 +337,7 @@ Like the branching statements and the `for` loop, the `while` statement is a com
 
 Here is a simple example:
 
-```text
+```python
 number = 0
 prompt = "What is the meaning of life, the universe, and everything? "
 
@@ -349,7 +349,7 @@ Notice that if `number` is set to `42` on the first line, the body of the `while
 
 Here is a more elaborate example program demonstrating the use of the `while` statement
 
-```text
+```python
 name = 'Harrison'
 guess = input("So I'm thinking of person's name. Try to guess it: ")
 pos = 0
@@ -404,7 +404,7 @@ At the start of the trace, we have a local variable, `name` with an initial valu
 
 To keep track of all this as you hand trace a program, make a column heading on a piece of paper for each variable created as the program runs and another one for output. Our trace so far would look something like this:
 
-```text
+```python
 name       guess      pos  output
 ----       -----      ---  ------
 'Harrison' 'Maribel'  0
@@ -414,13 +414,13 @@ Since `guess != name and pos < len(name)` evaluates to `True` \(take a minute to
 
 The user will now see
 
-```text
+```python
 Nope, that's not it! Hint: letter 1 is 'H'. Guess again:
 ```
 
 Assuming the user enters `Karen` this time, `pos` will be incremented, `guess != name and pos < len(name)` again evaluates to `True`, and our trace will now look like this:
 
-```text
+```python
 name       guess      pos  output
 ----       -----      ---  ------
 'Harrison' 'Maribel'  0    Nope, that's not it! Hint: letter 1 is 'H'. Guess again:
@@ -429,7 +429,7 @@ name       guess      pos  output
 
 A full trace of the program might produce something like this:
 
-```text
+```python
 name       guess      pos  output
 ----       -----      ---  ------
 'Harrison' 'Maribel'  0    Nope, that's not it! Hint: letter 1 is 'H'. Guess again:
@@ -446,7 +446,7 @@ Tracing can be a bit tedious and error prone \(that’s why we get computers to 
 
 Incrementing a variable is so common that Python provides an abbreviated syntax for it:
 
-```text
+```python
 >>> count = 0
 >>> count += 1
 >>> count
@@ -458,7 +458,7 @@ Incrementing a variable is so common that Python provides an abbreviated syntax 
 
 `count += 1` is an abreviation for `count = count + 1` . We pronouce the operator as _“plus-equals”_. The increment value does not have to be 1:
 
-```text
+```python
 >>> n = 2
 >>> n += 5
 >>> n
@@ -467,7 +467,7 @@ Incrementing a variable is so common that Python provides an abbreviated syntax 
 
 There are similar abbreviations for `-=`, `*=`, `/=`, `//=` and `%=`:
 
-```text
+```python
 >>> n = 2
 >>> n *= 5
 >>> n
@@ -487,8 +487,8 @@ There are similar abbreviations for `-=`, `*=`, `/=`, `//=` and `%=`:
 
 The following program implements a simple guessing game:
 
-```text
-import random                      # Import the random module 
+```python
+import random                      # Import the random module
 
 number = random.randrange(1, 1000) # Get random number between [1 and 1000)
 guesses = 0
@@ -497,7 +497,7 @@ guess = int(input("Guess my number between 1 and 1000: "))
 while guess != number:
     guesses += 1
     if guess > number:
-        print(guess, "is too high.") 
+        print(guess, "is too high.")
     elif guess < number:
         print(guess, " is too low.")
     guess = int(input("Guess again: "))
@@ -511,7 +511,7 @@ This program makes use of the mathematical law of **trichotomy** \(given real nu
 
 The **break** statement is used to immediately leave the body of its loop. The next statement to be executed is the first one after the body:
 
-```text
+```python
 for i in [12, 16, 17, 24, 29]:
     if i % 2 == 1:  # if the number is odd
         break        # immediately exit the loop
@@ -521,7 +521,7 @@ print("done")
 
 This prints:
 
-```text
+```python
 12
 16
 done
@@ -531,7 +531,7 @@ done
 
 This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, _for the current iteration_. But the loop still carries on running for its remaining iterations:
 
-```text
+```python
 for i in [12, 16, 17, 24, 29, 30]:
     if i % 2 == 1:      # if the number is odd
         continue        # don't process it
@@ -541,7 +541,7 @@ print("done")
 
 This prints:
 
-```text
+```python
 12
 16
 24
@@ -553,7 +553,7 @@ done
 
 Here is an example that combines several of the things we have learned:
 
-```text
+```python
 sentence = input('Please enter a sentence: ')
 no_spaces = ''
 
@@ -571,7 +571,7 @@ Trace this program and make sure you feel confident you understand how it works.
 
 Now we’ll come up with an even more adventurous list of structured data. In this case, we have a list of students. Each student has a name which is paired up with another list of subjects that they are enrolled for:
 
-```text
+```python
 students = [("Alejandro", ["CompSci", "Physics"]),
             ("Justin", ["Math", "CompSci", "Stats"]),
             ("Ed", ["CompSci", "Accounting", "Economics"]),
@@ -581,7 +581,7 @@ students = [("Alejandro", ["CompSci", "Physics"]),
 
 Here we’ve assigned a list of five elements to the variable `students`. Let’s print out each student name, and the number of subjects they are enrolled for:
 
-```text
+```python
 # print all students with a count of their courses.
 for (name, subjects) in students:
     print(name, "takes", len(subjects), "courses")
@@ -589,7 +589,7 @@ for (name, subjects) in students:
 
 Python agreeably responds with the following output:
 
-```text
+```python
 Aljandro takes 2 courses
 Justin takes 3 courses
 Ed takes 4 courses
@@ -599,7 +599,7 @@ Peter takes 5 courses
 
 Now we’d like to ask how many students are taking CompSci. This needs a counter, and for each student we need a second loop that tests each of the subjects in turn:
 
-```text
+```python
 # Count how many students are taking CompSci
 counter = 0
 for (name, subjects) in students:
@@ -610,7 +610,7 @@ for (name, subjects) in students:
 print("The number of students taking CompSci is", counter)
 ```
 
-```text
+```python
 The number of students taking CompSci is 3
 ```
 
@@ -620,7 +620,7 @@ You should set up a list of your own data that interests you — perhaps a list 
 
 A **list comprehension** is a syntactic construct that enables lists to be created from other lists using a compact, mathematical syntax:
 
-```text
+```python
 >>> numbers = [1, 2, 3, 4]
 >>> [x**2 for x in numbers]
 [1, 4, 9, 16]
@@ -639,13 +639,13 @@ A **list comprehension** is a syntactic construct that enables lists to be creat
 
 The general syntax for a list comprehension expression is:
 
-```text
+```python
 [expr for  item1 in  seq1 for item2 in seq2 ... for itemx in seqx if condition]
 ```
 
 This list expression has the same effect as:
 
-```text
+```python
 output_sequence = []
 for item1 in seq1:
     for item2 in seq2:
@@ -720,4 +720,3 @@ A special character that causes the cursor to move to the next tab stop on the c
 Given any real numbers _a_ and _b_, exactly one of the following relations holds: _a &lt; b_, _a &gt; b_, or _a == b_. Thus when you can establish that two of the relations are false, you can assume the remaining one is true.trace
 
 To follow the flow of execution of a program by hand, recording the change of state of the variables and any output produced.
-

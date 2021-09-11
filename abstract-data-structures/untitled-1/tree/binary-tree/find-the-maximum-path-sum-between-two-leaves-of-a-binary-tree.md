@@ -1,32 +1,14 @@
 # Find the maximum path sum between two leaves of a binary tree
 
+Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another. The maximum sum path may or may not go through root. For example, in the following binary tree, the maximum sum is **27**\(3 + 6 + 9 + 0 - 1 + 10\). Expected time complexity is O\(n\). If one side of root is empty, then function should return minus infinite \(INT_MIN in case of C/C++\) ![tree](https://media.geeksforgeeks.org/wp-content/cdn-uploads/tree.png)
 
+[Recommended: Please solve it on "**PRACTICE**" first, before moving on to the solution.](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1)
 
-Given a binary tree in which each node element contains a number. Find the maximum possible sum from one leaf node to another.   
-The maximum sum path may or may not go through root. For example, in the following binary tree, the maximum sum is **27**\(3 + 6 + 9 + 0 - 1 + 10\). Expected time complexity is O\(n\).  
-If one side of root is empty, then function should return minus infinite \(INT\_MIN in case of C/C++\)  
- ![tree](https://media.geeksforgeeks.org/wp-content/cdn-uploads/tree.png)
+A simple solution is to traverse the tree and do following for every traversed node X. 1\) Find maximum sum from leaf to root in left subtree of X \(we can use [this post](https://www.cdn.geeksforgeeks.org/find-the-maximum-sum-path-in-a-binary-tree/) for this and next steps\) 2\) Find maximum sum from leaf to root in right subtree of X. 3\) Add the above two calculated values and X-&gt;data and compare the sum with the maximum value obtained so far and update the maximum value. 4\) Return the maximum value. The time complexity of above solution is O\(n2\) **We can find the maximum sum using single traversal of binary tree**. The idea is to maintain two values in recursive calls
 
-  
- [Recommended: Please solve it on "**PRACTICE**" first, before moving on to the solution.](https://practice.geeksforgeeks.org/problems/maximum-path-sum/1)
+\(**Note: If the tree is right-most or left-most tree then first we have to adjust the tree such that both the right and left are not null. Left-most means if the right of super root of the tree is null and right-most tree means if left of super root of the tree is null.\)**
 
-  
-A simple solution is to traverse the tree and do following for every traversed node X.   
-1\) Find maximum sum from leaf to root in left subtree of X \(we can use [this post](https://www.cdn.geeksforgeeks.org/find-the-maximum-sum-path-in-a-binary-tree/) for this and next steps\)   
-2\) Find maximum sum from leaf to root in right subtree of X.   
-3\) Add the above two calculated values and X-&gt;data and compare the sum with the maximum value obtained so far and update the maximum value.   
-4\) Return the maximum value.  
-The time complexity of above solution is O\(n2\)  
-**We can find the maximum sum using single traversal of binary tree**. The idea is to maintain two values in recursive calls
-
-\(**Note: If the tree is right-most or left-most tree then first we have to adjust the tree such that both the right and left are not null. Left-most means if the right of super root of the tree is null and right-most tree means if left of  super root of the tree is null.\)** 
-
-  
-1\) Maximum root to leaf path sum for the subtree rooted under current node.   
-2\) The maximum path sum between leaves \(desired output\).  
-For every visited node X, we find the maximum root to leaf sum in left and right subtrees of X. We add the two values with X-&gt;data, and compare the sum with maximum path sum found so far.
-
-
+1\) Maximum root to leaf path sum for the subtree rooted under current node. 2\) The maximum path sum between leaves \(desired output\). For every visited node X, we find the maximum root to leaf sum in left and right subtrees of X. We add the two values with X-&gt;data, and compare the sum with maximum path sum found so far.
 
 Python
 
@@ -114,10 +96,8 @@ print "Max pathSum of the given binary tree is", maxPathSum(root)
 ck_007)
 ```
 
-  
 **Output**
 
-```text
+```python
 Max pathSum of the given binary tree is 27
 ```
-
