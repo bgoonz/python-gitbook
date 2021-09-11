@@ -178,6 +178,12 @@ n^3                                       Drop the constant
 
 With practice, you can do this in your head. Looking back, the nested loop _must_ have been where the function spent the most of its time; an experienced dev would see that and just quickly compute the Big O for that function from that nested loop alone.
 
+
+
+
+
+![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+
 ### Example with two variables
 
 ```python

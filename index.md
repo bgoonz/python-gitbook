@@ -518,55 +518,137 @@ Awesome Find:
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quickselect.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quickselect.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quickselect.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quickselect.py)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quickselect.py" %}
+
+
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort%20%281%29.py)
 
+
+
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort%20%281%29.py)
+
+
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort \(2\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort%20%282%29.py)
 
+
+
+
+
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort \(2\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort%20%282%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort.py)
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/quicksort.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/quicksort.py" %}
+
+
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_iter \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
 
+
+
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_iter \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_iter.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_iter.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_iter.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_iter.py)
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_iter.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_iter.py" %}
+
+
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_recur \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
 
+
+
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_recur \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_recur.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection_sort_recur.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_recur.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection_sort_recur.py)
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/selection\_sort\_recur.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/selection\_sort\_recur.py" %}
+
+
 
 [https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests \(1\).py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests%20%281%29.py)
 
+
+
+
+
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests \(1\).py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests%20%281%29.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests.py)
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/tests.py" %}
+
+
 
 [https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/tests.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo\_sort\_count.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo_sort_count.py)
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo\_sort\_count.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo_sort_count.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid\_nesting\_multi.py](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid_nesting_multi.py)
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/topo\_sort\_count.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid\_nesting\_multi.py](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid_nesting_multi.py)
 
-[https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/zen-of-python.pdf](https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/zen-of-python.pdf)
 
-[https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a](https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a)
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/topo\_sort\_count.py" %}
 
-[https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf](https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf)
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/valid\_nesting\_multi.py" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/valid\_nesting\_multi.py" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/zen-of-python.pdf" %}
+
+
+
+{% embed url="https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a" %}
+
+
+
+{% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf" %}
+
+
+
+
+
+### **DS-Algo Book PDF:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/grokking-algorithms-1-.pdf" caption="" %}
+
+### **Python Cheat Sheet:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/beginners\_python\_cheat\_sheet\_pcc\_all.pdf" caption="" %}
+
+### **Zen Of Python Cheat Sheet Download:**
+
+{% file src=".gitbook/assets/zen-of-python.pdf" caption="ZenOfPython.pdf" %}
+
+### **Python Practice Files:**
+
+{% file src=".gitbook/assets/examples.zip" caption="Python Prac Zip File" %}
+
+### **This Space As A PDF:**
+
+{% file src=".gitbook/assets/python-space.pdf" caption="This Space PDF" %}
+
+### **Linked Lists:**
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf" caption="" %}
 
