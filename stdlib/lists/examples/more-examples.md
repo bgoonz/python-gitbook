@@ -130,18 +130,18 @@ While indexes start at 0 and go up, you can also use negative integers for the i
 
 ```python
 
-
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[-1]
+'elephant'
+>>> spam[-3]
+'bat'
+>>> 'The ' + spam[-1] + ' is afraid of the ' + spam[-3] + '.'
+'The elephant is afraid of the bat.'
 ```
 
            
 
-&gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[-1\]  
-'elephant'  
-&gt;&gt;&gt; spam\[-3\]  
-'bat'  
-&gt;&gt;&gt; 'The ' + spam\[-1\] + ' is afraid of the ' + spam\[-3\] + '.'  
-'The elephant is afraid of the bat.'
+
 
 **Getting a List from Another List with Slices**
 
@@ -157,19 +157,19 @@ In a slice, the first integer is the index where the slice starts. The second in
 
 
 ```python
-
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[0:4]
+['cat', 'bat', 'rat', 'elephant']
+>>> spam[1:3]
+['bat', 'rat']
+>>> spam[0:-1]
+['cat', 'bat', 'rat']
 
 ```
 
            
 
-&gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[0:4\]  
-\['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[1:3\]  
-\['bat', 'rat'\]  
-&gt;&gt;&gt; spam\[0:-1\]  
-\['cat', 'bat', 'rat'\]
+
 
 As a shortcut, you can leave out one or both of the indexes on either side of the colon in the slice. Leaving out the first index is the same as using 0, or the beginning of the list. Leaving out the second index is the same as using the length of the list, which will slice to the end of the list. Enter the following into the interactive shell:
 
@@ -178,19 +178,19 @@ As a shortcut, you can leave out one or both of the indexes on either side of th
 
 
 ```python
-
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[:2]
+['cat', 'bat']
+>>> spam[1:]
+['bat', 'rat', 'elephant']
+>>> spam[:]
+['cat', 'bat', 'rat', 'elephant']
 
 ```
 
            
 
-&gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[:2\]  
-\['cat', 'bat'\]  
-&gt;&gt;&gt; spam\[1:\]  
-\['bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[:\]  
-\['cat', 'bat', 'rat', 'elephant'\]
+
 
 **Getting a List’s Length with the len\(\) Function**
 
@@ -210,21 +210,21 @@ Normally, a variable name goes on the left side of an assignment statement, like
 
 ```python
 
-
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> spam[1] = 'aardvark'
+>>> spam
+['cat', 'aardvark', 'rat', 'elephant']
+>>> spam[2] = spam[1]
+>>> spam
+['cat', 'aardvark', 'aardvark', 'elephant']
+>>> spam[-1] = 12345
+>>> spam
+['cat', 'aardvark', 'aardvark', 12345]
 ```
 
            
 
-&gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[1\] = 'aardvark'  
-&gt;&gt;&gt; spam  
-\['cat', 'aardvark', 'rat', 'elephant'\]  
-&gt;&gt;&gt; spam\[2\] = spam\[1\]  
-&gt;&gt;&gt; spam  
-\['cat', 'aardvark', 'aardvark', 'elephant'\]  
-&gt;&gt;&gt; spam\[-1\] = 12345  
-&gt;&gt;&gt; spam  
-\['cat', 'aardvark', 'aardvark', 12345\]
+
 
 **List Concatenation and List Replication**
 
@@ -236,19 +236,19 @@ Lists can be concatenated and replicated just like strings. The + operator combi
 
 ```python
 
-
+>>> [1, 2, 3] + ['A', 'B', 'C']
+[1, 2, 3, 'A', 'B', 'C']
+>>> ['X', 'Y', 'Z'] * 3
+['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
+>>> spam = [1, 2, 3]
+>>> spam = spam + ['A', 'B', 'C']
+>>> spam
+[1, 2, 3, 'A', 'B', 'C']
 ```
 
            
 
-&gt;&gt;&gt; \[1, 2, 3\] + \['A', 'B', 'C'\]  
-\[1, 2, 3, 'A', 'B', 'C'\]  
-&gt;&gt;&gt; \['X', 'Y', 'Z'\] \* 3  
-\['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z'\]  
-&gt;&gt;&gt; spam = \[1, 2, 3\]  
-&gt;&gt;&gt; spam = spam + \['A', 'B', 'C'\]  
-&gt;&gt;&gt; spam  
-\[1, 2, 3, 'A', 'B', 'C'\]
+
 
 **Removing Values from Lists with del Statements**
 
@@ -259,19 +259,19 @@ The del statement will delete values at an index in a list. All of the values in
 
 
 ```python
-
+>>> spam = ['cat', 'bat', 'rat', 'elephant']
+>>> del spam[2]
+>>> spam
+['cat', 'bat', 'elephant']
+>>> del spam[2]
+>>> spam
+['cat', 'bat']
 
 ```
 
            
 
-&gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
-&gt;&gt;&gt; del spam\[2\]  
-&gt;&gt;&gt; spam  
-\['cat', 'bat', 'elephant'\]  
-&gt;&gt;&gt; del spam\[2\]  
-&gt;&gt;&gt; spam  
-\['cat', 'bat'\]
+
 
 The del statement can also be used on a simple variable to delete it, as if it were an “unassignment” statement. If you try to use the variable after deleting it, you will get a NameError error because the variable no longer exists. In practice, you almost never need to delete simple variables. The del statement is mostly used to delete values from lists.
 
@@ -284,18 +284,18 @@ When you first begin writing programs, it’s tempting to create many individual
 
 
 ```python
-
+catName1 = 'Zophie'
+catName2 = 'Pooka'
+catName3 = 'Simon'
+catName4 = 'Lady Macbeth'
+catName5 = 'Fat-tail'
+catName6 = 'Miss Cleo'
 
 ```
 
            
 
-catName1 = 'Zophie'  
-catName2 = 'Pooka'  
-catName3 = 'Simon'  
-catName4 = 'Lady Macbeth'  
-catName5 = 'Fat-tail'  
-catName6 = 'Miss Cleo'
+
 
 It turns out that this is a bad way to write code. \(Also, I don’t actually own this many cats, I swear.\) For one thing, if the number of cats changes, your program will never be able to store more cats than you have variables. These types of programs also have a lot of duplicate or nearly identical code in them. Consider how much duplicate code is in the following program, which you should enter into the file editor and save as _allMyCats1.py_:
 
@@ -304,27 +304,27 @@ It turns out that this is a bad way to write code. \(Also, I don’t actually ow
 
 
 ```python
-
+print('Enter the name of cat 1:')
+catName1 = input()
+print('Enter the name of cat 2:')
+catName2 = input()
+print('Enter the name of cat 3:')
+catName3 = input()
+print('Enter the name of cat 4:')
+catName4 = input()
+print('Enter the name of cat 5:')
+catName5 = input()
+print('Enter the name of cat 6:')
+catName6 = input()
+print('The cat names are:')
+print(catName1 + ' ' + catName2 + ' ' + catName3 + ' ' + catName4 + ' ' +
+catName5 + ' ' + catName6)
 
 ```
 
            
 
-print\('Enter the name of cat 1:'\)  
-catName1 = input\(\)  
-print\('Enter the name of cat 2:'\)  
-catName2 = input\(\)  
-print\('Enter the name of cat 3:'\)  
-catName3 = input\(\)  
-print\('Enter the name of cat 4:'\)  
-catName4 = input\(\)  
-print\('Enter the name of cat 5:'\)  
-catName5 = input\(\)  
-print\('Enter the name of cat 6:'\)  
-catName6 = input\(\)  
-print\('The cat names are:'\)  
-print\(catName1 + ' ' + catName2 + ' ' + catName3 + ' ' + catName4 + ' ' +  
-catName5 + ' ' + catName6\)
+
 
 Instead of using multiple, repetitive variables, you can use a single variable that contains a list value. For example, here’s a new and improved version of the _allMyCats1.py_ program. This new version uses a single list and can store any number of cats that the user types in. In a new file editor window, enter the following source code and save it as _allMyCats2.py_:
 
@@ -333,23 +333,23 @@ Instead of using multiple, repetitive variables, you can use a single variable t
 
 
 ```python
-
+catNames = []
+while True:
+    print('Enter the name of cat ' + str(len(catNames) + 1) +
+      ' (Or enter nothing to stop.):')
+    name = input()
+    if name == '':
+        break
+    catNames = catNames + [name]  # list concatenation
+print('The cat names are:')
+for name in catNames:
+    print('  ' + name)
 
 ```
 
            
 
-catNames = \[\]  
-while True:  
-    print\('Enter the name of cat ' + str\(len\(catNames\) + 1\) +  
-      ' \(Or enter nothing to stop.\):'\)  
-    name = input\(\)  
-    if name == '':  
-        break  
-    catNames = catNames + \[name\]  \# list concatenation  
-print\('The cat names are:'\)  
-for name in catNames:  
-    print\('  ' + name\)
+
 
 When you run this program, the output will look something like this:
 
@@ -421,20 +421,20 @@ You can determine whether a value is or isn’t in a list with the in and not in
 
 ```python
 
-
+>>> 'howdy' in ['hello', 'hi', 'howdy', 'heyas']
+True
+>>> spam = ['hello', 'hi', 'howdy', 'heyas']
+>>> 'cat' in spam
+False
+>>> 'howdy' not in spam
+False
+>>> 'cat' not in spam
+True
 ```
 
            
 
-&gt;&gt;&gt; 'howdy' in \['hello', 'hi', 'howdy', 'heyas'\]  
-True  
-&gt;&gt;&gt; spam = \['hello', 'hi', 'howdy', 'heyas'\]  
-&gt;&gt;&gt; 'cat' in spam  
-False  
-&gt;&gt;&gt; 'howdy' not in spam  
-False  
-&gt;&gt;&gt; 'cat' not in spam  
-True
+
 
 For example, the following program lets the user type in a pet name and then checks to see whether the name is in a list of pets. Open a new file editor window, enter the following code, and save it as _myPets.py_:
 
@@ -464,6 +464,10 @@ Footfoot
 I do not have a pet named Footfoot
 
 You can view the execution of this program at [_https://autbor.com/mypets/_](https://autbor.com/mypets/).
+
+[https://pythontutor.com/visualize.html\#](https://pythontutor.com/visualize.html#)
+
+
 
 **The Multiple Assignment Trick**
 

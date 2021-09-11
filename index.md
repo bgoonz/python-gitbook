@@ -34,7 +34,9 @@ Awesome Find:
 {% endtab %}
 {% endtabs %}
 
-## \*\*\*\*
+{% embed url="https://pythontutor.com/visualize.html\#" %}
+
+\*\*\*\*
 
 ## \*\*\*\*
 
