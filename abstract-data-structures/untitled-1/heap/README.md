@@ -1,5 +1,7 @@
 # Heap
 
+{% page-ref page="heap-examples.md" %}
+
 
 
 ## 1. Overview of heap <a id="6d32"></a>
