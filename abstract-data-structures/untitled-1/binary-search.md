@@ -4,12 +4,50 @@
 
 #### In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.
 
-1. Compare x with the middle element.
-2. If x matches with the middle element, we return the mid index.
-3. Else if x is greater than the mid element, then x can only lie in the right \(greater\) half subarray after the mid element. Then we apply the algorithm again for the right half.
-4. Else if x is smaller, the target x must lie in the left \(lower\) half. So we apply the algorithm for the left half.
+1. [ ] _**Compare x with the middle element.**_
+2. [ ] _**If x matches with the middle element, we return the mid index.**_
+3. [ ] _**Else if x is greater than the mid element, then x can only lie in the right \(greater\) half subarray after the mid element. Then we apply the algorithm again for the right half.**_
+4. [ ] _**Else if x is smaller, the target x must lie in the left \(lower\) half. So we apply the algorithm for the left half.**_
 
-### Recursive Binary Search
+
+
+Pseudo Code Algorithm:
+
+{% hint style="info" %}
+parameter list: a list of sorted value parameter target: the value to search for
+{% endhint %}
+
+{% hint style="info" %}
+> if the list has zero length, then return false
+{% endhint %}
+
+{% hint style="info" %}
+> determine the slice point: if the list has an even number of elements, the slice point is the number of elements divided by two if the list has an odd number of elements, the slice point is the number of elements minus one divided by two
+{% endhint %}
+
+{% hint style="info" %}
+> create an list of the elements from 0 to the slice point, not including the slice point, which is known as the "left half" create an list of the elements from the slice point to the end of the list which is known as the "right half"
+{% endhint %}
+
+{% hint style="info" %}
+> if the target is less than the value in the original array at the slice point, then return the binary search of the "left half" and the target
+{% endhint %}
+
+{% hint style="info" %}
+> if the target is greater than the value in the original array at the slice point, then return the binary search of the "right half" and the target
+{% endhint %}
+
+{% hint style="info" %}
+> if neither of those is true, return true
+{% endhint %}
+
+>
+
+![](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
+
+### 
+
+## Recursive Binary Search
 
 ```python
 # Python 3 program for recursive binary search.
