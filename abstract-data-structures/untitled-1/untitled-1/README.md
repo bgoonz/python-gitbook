@@ -508,7 +508,7 @@ It's notable that git uses a DAG to represent commits. A commit can have a child
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

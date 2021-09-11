@@ -273,7 +273,7 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

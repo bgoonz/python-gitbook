@@ -296,7 +296,7 @@ Sorted Array is:<br>
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

@@ -472,7 +472,7 @@ def bfs_search_dict(graph: Mapping[Node, Iterable[Node]], start: Node, predicate
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

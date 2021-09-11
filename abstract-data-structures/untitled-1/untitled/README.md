@@ -211,7 +211,7 @@ NINE = Number(9)
 
 {% page-ref page="./" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

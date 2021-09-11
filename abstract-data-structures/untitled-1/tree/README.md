@@ -69,7 +69,7 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 

@@ -986,7 +986,7 @@ if __name__ == '__main__':
 
 {% page-ref page="../untitled/" %}
 
-{% page-ref page="../heap.md" %}
+{% page-ref page="../heap/" %}
 
 
 
