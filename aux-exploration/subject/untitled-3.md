@@ -30,7 +30,7 @@ Elements provide extra information about the data in the document. They can stan
 
 Some elements are compulsory, a whole HTML document must always be contained in an `html` element. Here is an example of an HTML document:
 
-```text
+```python
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ CSS syntax consists of a collection of _styles_ or _rules_. Each rule is compose
 
 Here is an example of a style sheet:
 
-```text
+```python
 body {
     margin: 60px;
     padding: 40px;
@@ -141,7 +141,7 @@ figcaption {
 
 Styles can be applied internally to an html document using **style elements** \(between `<style type="text/css"></style>` tags\) in the document header. Here is the preceding quote web page with the style included:
 
-```text
+```python
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -259,7 +259,7 @@ To get information \(data\) from the client to the server, HTML uses [forms](htt
 
 A basic HTTP request is a simple request for a file. When this file is not really a passive file, but a server-side program, it can become useful to include information other than a filename in the request. For this purpose, HTTP requests are allowed to contain additional ‘parameters’. Here is an example:
 
-```text
+```python
 http://www.google.com/search?q=aztec%20empire
 ```
 
@@ -271,7 +271,7 @@ The value a character gets is decided by the ASCII standard, which assigns the n
 
 When a request contains more than one parameter, they are separated by ampersands, as in…:
 
-```text
+```python
 http://www.google.com/search?q=aztec%20empire&lang=nl
 ```
 
@@ -279,7 +279,7 @@ A [form](http://en.wikipedia.org/wiki/Html_form), basically, is a way to make it
 
 Here is the HTML for a simple form
 
-```text
+```python
 <form name="userinfo" method="get" action="info.html">
   <p>Please give us your information, so that we can send
   you spam.</p>
@@ -296,7 +296,7 @@ Here is the HTML for a simple form
 
 The name of the form can be used to access it with JavaScript, as we shall see in a moment. The names of the fields determine the names of the HTTP parameters that are used to store their values. Sending this form might produce a URL like this:
 
-```text
+```python
 http://planetspam.com/info.html?name=Ted&email=ted@zork.com&sex=Male
 ```
 

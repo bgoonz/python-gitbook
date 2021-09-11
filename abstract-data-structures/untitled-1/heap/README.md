@@ -91,7 +91,7 @@ These operations above produce the heap from the unordered tree \(the array\).
 
 The pseudo-code below stands for how _build\_min\_heap_ works.
 
-```text
+```python
 build_min_heap(array)
     for i=n/2 downto 1
         do min_heapify(array, i)

@@ -10,7 +10,7 @@ Each element of a **doubly linked list** is an object with an attribute _key_ an
 
 A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.
 
-### 
+###
 
 ```python
 """
@@ -27,7 +27,7 @@ class Node:
 
 
 """
-Next the linked list can be created and initialized with the head as none 
+Next the linked list can be created and initialized with the head as none
 because it doesn't exist yet and the number of nodes to 0 because its empty
 """
 
@@ -176,7 +176,7 @@ print(f'size: {linked_list.size_of_list()}')
 * Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
 * How can you tell if a Linked List is a Palindrome?
 
-### 
+###
 
 ### Linked lists in Python
 
@@ -208,7 +208,7 @@ def linked_list_insert_index(linked_list, value, index):
     '''Inserts a value at a particular index'''
     node = linked_list
     insert_node = LinkedListNode(value)
-    
+
     # Check if inserting at head
     if index == 0:
         insert_node.next = node
@@ -226,7 +226,7 @@ def linked_list_insert_index(linked_list, value, index):
 def linked_list_delete(linked_list, value):
     '''Deletes the first occurrence of a value in the linked list'''
     node = linked_list
-    
+
     # Check if deleting at head
     if node.value == value:
         return node.next
@@ -242,7 +242,7 @@ def linked_list_delete(linked_list, value):
 def linked_list_delete_index(linked_list, index):
     '''Deletes the element at a particular index in the linked list'''
     node = linked_list
-    
+
     # Check if deleting at head
     if index == 0:
         return node.next
@@ -297,7 +297,7 @@ print([node.value for node in linked_list_iter(linked_list)])
 
 #### Output:
 
-```text
+```python
 [1, 2, 4]
 [0, 1, 2, 4]
 [0, 1, 2, 3, 4]
@@ -474,18 +474,18 @@ class Node:
     def __init__(self, dataval=None):
         self.dataval = dataval
         self.nextval = None
- 
+
 class SLinkedList:
     def __init__(self):
         self.headval = None
- 
+
 list1 = SLinkedList()
 list1.headval = Node("Mon")
 e2 = Node("Tue")
 e3 = Node("Wed")
 # Link first Node to second node
 list1.headval.nextval = e2
- 
+
 # Link second Node to third node
 e2.nextval = e3
 
@@ -796,7 +796,7 @@ class DoublyLinkedList:
 
   def delete(self, node):
     pass
-    
+
   def get_max(self):
     pass
 
@@ -848,7 +848,7 @@ class DoublyLinkedListTests(unittest.TestCase):
     self.assertEqual(len(self.dll), 1)
     self.assertEqual(self.dll.remove_from_head(), 2)
     self.assertEqual(len(self.dll), 0)
-    
+
     self.dll.add_to_head(55)
     self.assertEqual(len(self.dll), 1)
     self.assertEqual(self.dll.remove_from_head(), 55)

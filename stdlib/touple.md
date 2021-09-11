@@ -37,7 +37,7 @@ As we discussed, a Tuple is a collection of items that are immutable. Let’s st
 
 A tuple can be created in multiple ways. The simplest way of creating a tuple is by setting a variable to a pair of empty parantheses.
 
-```text
+```python
 # Set the tuple1 variable to an empty tuple
 tuple1 = ()
 
@@ -49,7 +49,7 @@ print(type(tuple1))
 
 The code above snippet gives an output of `<class: 'tuple'>`, which indicates that the tuple has been created successfully. We can also create a tuple by using the in-built `tuple()` method in Python.
 
-```text
+```python
 # Set the tuple2 variable to an empty tuple by using the tuple() method
 tuple2 = tuple()
 
@@ -61,7 +61,7 @@ print(type(tuple2))
 
 While initializing a tuple, we can also specify what data exists inside it.
 
-```text
+```python
 # tuple3 consists of values 40, 50, 60
 tuple3 = (40, 50, 60)
 
@@ -80,7 +80,7 @@ Tuples follow [zero indexing](https://en.wikipedia.org/wiki/Zero-based_numbering
 
 For example, let’s create a tuple, `tuple1`. Tuple elements can be accessed the same way as a list element.
 
-```text
+```python
 tuple1 = (0, 1, 2, 3)
 
 print(tuple1[0]) # Output: 0
@@ -98,7 +98,7 @@ _Tuple Positive Indexing: Source –_ [_GeeksforGeeks_](https://www.geeksforgeek
 
 Similar to lists, we can also use negative indexing on a tuple. Therefore, ‘-1’ refers to the Nth element of a tuple, -2 refers to the \(N-1\)th element, and so on \(where N is the length of the tuple\).
 
-```text
+```python
 tuple1 = (30, 40, 50, 60)
 
 print(tuple1[-1]) # Output: 60
@@ -114,7 +114,7 @@ _Tuple Negative Indexing_
 
 In Python, slicing is used to return a range of values. Like lists, tuples can also be sliced.
 
-```text
+```python
 tuple1 = (1, 2, 3, 5, 8, 13)
 
 print(tuple1[0:3]) # Output: (1, 2, 3)
@@ -130,7 +130,7 @@ Tuples are immutable.
 
 For example:
 
-```text
+```python
 tuple1 = (2000, 3000, 4000)
 
 tuple1[1] = 1000
@@ -138,7 +138,7 @@ tuple1[1] = 1000
 
 If we execute the code above, the Python interpreter throws the following error:
 
-```text
+```python
 Traceback (most recent call last):
     File "main.py", line 3 in <module>
         tuple1[1] = 1000
@@ -149,7 +149,7 @@ This is because a tuple is designed to be immutable. However, we can change a tu
 
 For example, let us take a tuple of lists.
 
-```text
+```python
 tuple1 = ([10, 20], [30, 40], [50, 60])
 
 tuple1[1][0] = 70
@@ -159,7 +159,7 @@ print(tuple1) # Output: ([10, 20], [70, 40], [50, 60])
 
 This works perfectly because we are modifying the list within a tuple \(which is mutable\). We can also create new tuples from existing ones.
 
-```text
+```python
 tuple1 = ([10, 20], [30, 40], [50, 60])
 tuple2 = ([100, 200], [300, 400])
 
@@ -193,7 +193,7 @@ It compares them and returns the following:
 * If tuple2 &gt; tuple1: the method returns -1.
 * If tuple1 == tuple2: the method returns 0.
 
-```text
+```python
 def cmp(t1, t2):
     return bool(t1 > t2) - bool(t1 < t2)
     """
@@ -239,7 +239,7 @@ print(cmp(tuple2, tuple1))
 
 The length method returns the length of the tuple.
 
-```text
+```python
 tuple1 = (10, 20, 30, 40, 50)
 
 print(len(tuple1))
@@ -250,7 +250,7 @@ print(len(tuple1))
 
 The min method returns the smallest element in the tuple.
 
-```text
+```python
 tuple1 = (3, 9, 1, 90, 200)
 
 print(min(tuple1))
@@ -261,7 +261,7 @@ print(min(tuple1))
 
 The max method returns the largest element in the tuple.
 
-```text
+```python
 tuple1 = (3, 9, 1, 90, 200)
 
 print(max(tuple1))
@@ -272,7 +272,7 @@ print(max(tuple1))
 
 The tuple method converts the list that is passed as parameter into a tuple.
 
-```text
+```python
 list1 = [23, 34, 45, 56]
 
 print(tuple(list1))
@@ -283,7 +283,7 @@ print(tuple(list1))
 
 The count method returns the count of the element passed as parameter.
 
-```text
+```python
 tuple1 = (1, 24, 45, 54, 6, 34, 24)
 
 print(tuple1.count(24))
@@ -294,7 +294,7 @@ print(tuple1.count(24))
 
 The index method returns the index of the first occurence of the element in a tuple.
 
-```text
+```python
 tuple1 = (1, 24, 45, 54, 6, 34, 24)
 
 print(tuple1.index(1))
@@ -303,7 +303,7 @@ print(tuple1.index(1))
 
 You can also return the index of the last occurence of the element by using this method.
 
-```text
+```python
 tuple1 = (1, 24, 45, 54, 6, 34, 24)
 
 print(tuple1.index(24, -1))
@@ -314,7 +314,7 @@ print(tuple1.index(24, -1))
 
 It’s also possible to specify a range to search.
 
-```text
+```python
 tuple1 = (1, 24, 45, 54, 24, 6, 34, 24)
 
 print(tuple1.index(24, 2, 5))
