@@ -148,11 +148,10 @@
 
 ## Resources
 
-* [Python Cheat Sheet](resources/python-cheat-sheet.md)
+* [Python Cheat Sheet](resources/python-cheat-sheet/README.md)
+  * [List Of Python Cheat Sheets](resources/python-cheat-sheet/bash-commands.md)
+* [Youtube](resources/youtube.md)
 * [Intro 2 Python](resources/intro-2-python.md)
-* [Inheritance](resources/untitled-2.md)
-* [Strings](resources/strings/README.md)
-  * [Strings Continued](resources/strings/strings-continued.md)
 * [Dictionaries](resources/dictionaries/README.md)
   * [Dictionaries Continued](resources/dictionaries/dictionaries-continued.md)
 * [Python VS JavaScript](resources/python-vs-javascript.md)
@@ -161,14 +160,15 @@
   * [Functions](resources/things-to-internalize/functions.md)
 * [Intro To Python w Jupyter Notebooks](resources/intro-to-python-w-jupyter-notebooks.md)
 * [Calculating Big O](resources/calculating-big-o.md)
-* [Awesome Python](resources/awesome-python.md)
-* [Youtube](resources/youtube.md)
 * [Useful Links](resources/untitled/README.md)
+  * [Awesome Python](resources/untitled/awesome-python.md)
   * [My-Links](resources/untitled/my-links.md)
   * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## Docs <a id="stdlib"></a>
 
+* [Strings](stdlib/strings/README.md)
+  * [Strings Continued](stdlib/strings/strings-continued.md)
 * [Touple](stdlib/touple.md)
 * [Docs](stdlib/untitled/README.md)
   * [String-Methods](stdlib/untitled/string-methods.md)
@@ -182,6 +182,7 @@
 * [Conditionals and loops](stdlib/conditionals-and-loops.md)
 * [Dictionaries](stdlib/dictionaries.md)
 * [Classes and objects](stdlib/classes-and-objects/README.md)
+  * [Inheritance](stdlib/classes-and-objects/untitled-2.md)
   * [Classes](stdlib/classes-and-objects/classes/README.md)
     * [Python Objects & Classes](stdlib/classes-and-objects/classes/python-objects-and-classes.md)
     * [index](stdlib/classes-and-objects/classes/untitled.md)
@@ -207,7 +208,6 @@
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
 * [Python Snippets](quick-reference/untitled-1.md)
-* [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
 
 ## MISC
 
