@@ -149,6 +149,7 @@
 
 ## quick-reference
 
+* [WHY Python?](quick-reference/why-python.md)
 * [Python Snippets](quick-reference/python-snippets.md)
 * [Python3 Regex](quick-reference/python3-regex.md)
 * [Python Module Index:](quick-reference/python-module-index/README.md)
@@ -156,7 +157,7 @@
 * [Creating Python Modules](quick-reference/creating-python-modules.md)
 * [Useful Info](quick-reference/untitled.md)
 * [Python Glossary](quick-reference/python-glossary.md)
-* [index](quick-reference/untitled-1.md)
+* [Python Snippets](quick-reference/untitled-1.md)
 * [List Of Python Cheat Sheets](quick-reference/bash-commands.md)
 
 ## Docs <a id="stdlib"></a>

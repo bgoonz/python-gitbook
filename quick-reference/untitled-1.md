@@ -1,4 +1,4 @@
-# index
+# Python Snippets
 
 ### Calculates the date of `n` days from the given date.
 
