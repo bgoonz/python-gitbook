@@ -236,6 +236,7 @@
 
 * [python-setup](installations-setup-and-env/untitled.md)
 * [Installing Python Modules](installations-setup-and-env/installing-python-modules.md)
+* [Set Up Virtual Enviornment](installations-setup-and-env/set-up-virtual-enviornment.md)
 
 ## Aux-Exploration
 
