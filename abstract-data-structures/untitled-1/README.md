@@ -1,8 +1,10 @@
 # Abstract Data Structures:
 
-{% embed url="https://replit.com/@bgoonz/ADS-practice" %}
+{% embed url="https://replit.com/@bgoonz/ADS-practice" caption="ADS Practice REPL" %}
 
 
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 {% page-ref page="array/" %}
 
@@ -37,6 +39,8 @@
 {% page-ref page="heap/" %}
 
 
+
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 #### Table of contents
 
