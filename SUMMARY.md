@@ -141,6 +141,7 @@
 ## practice
 
 * [GCA Sprint Prep:](practice/gca-sprint-prep/README.md)
+  * [Practice Problems](practice/gca-sprint-prep/practice-problems.md)
   * [Code Signal CGA Sprint Resources](practice/gca-sprint-prep/code-signal-cga-sprint-resources.md)
   * [CGA-Sprint Prep](practice/gca-sprint-prep/cga-sprint-prep.md)
 * [Supplemental Practice:](practice/supplemental-practice/README.md)
