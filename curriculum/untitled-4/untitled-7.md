@@ -1,11 +1,5 @@
 # D2- Module 02 - Queues and Stacks
 
-
-
-
-
-
-
 ## D2- Module 02 - Python II
 
 {% embed url="https://github.com/wilfredinni/python-cheatsheet" caption="" %}
@@ -101,11 +95,17 @@ print(dir(math))
 
 ### Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
 
-[https://youtu.be/PC0w44UH7Mo](https://youtu.be/PC0w44UH7Mo)
+{% embed url="https://youtu.be/PC0w44UH7Mo" %}
 
-[https://replit.com/@bgoonz/Comments-1](https://replit.com/@bgoonz/Comments-1)
 
-[https://gist.github.com/bgoonz/73035b719d10a753a44089b41eacf6ca\#file-copy-of-linked-lists-ipynb](https://gist.github.com/bgoonz/73035b719d10a753a44089b41eacf6ca#file-copy-of-linked-lists-ipynb)
+
+{% embed url="https://replit.com/@bgoonz/Comments-1" %}
+
+
+
+{% embed url="https://gist.github.com/bgoonz/73035b719d10a753a44089b41eacf6ca\#file-copy-of-linked-lists-ipynb" %}
+
+
 
 What is a linked list, and how is it different from an array? How efficient or inefficient are its operations? What are its strengths and weaknesses? How can I construct and interact with a linked list? By the end of this objective, you will be able to answer all of these questions confidently.
 
@@ -256,10 +256,19 @@ You must be able to understand and interact with linked lists. You now know the 
 
 #### **Additional Resources**
 
-* [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf \(Links to an external site.\)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
-* [https://www.youtube.com/watch?v=njTh\_OwMljA \(Links to an external site.\)](https://www.youtube.com/watch?v=njTh_OwMljA)
+h[ttps://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
 
-[GitHub - bgoonz/DATA\_STRUC\_PYTHON\_NOTES](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
+[ ](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
+
+
+
+
+
+{% embed url="https://www.youtube.com/watch?v=njTh\_OwMljA" %}
+
+
+
+{% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES" %}
 
 ```python
 # -*- coding: utf-8 -*-
