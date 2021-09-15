@@ -144,13 +144,27 @@ Common Complexity Classes
 
 > **The algorithm takes roughly the same number of steps for any input size.**
 
+{% embed url="https://gist.github.com/eengineergz/91b823971e8faac788f38ff670efc19d\#file-constant-js" %}
+
 ### `O(log(n)) Logarithmic` <a id="81af"></a>
 
 > **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input \(like binary search!\)**
 
+\*\*\*\*
+
+{% embed url="https://gist.github.com/eengineergz/a1e6dec81f0639818db7f9a8e76b3992\#file-logorithmic-js" %}
+
+\*\*\*\*
+
 ### `O(n) Linear` <a id="be35"></a>
 
 > **Linear algorithm’s will access each item of the input “once”.**
+
+\*\*\*\*
+
+{% embed url="https://gist.github.com/eengineergz/cc953ba2bd6e1d6f524a6d8b297aad5b\#file-linear-js" %}
+
+\*\*\*\*
 
 ## `O(nlog(n)) Log Linear Time` <a id="b965"></a>
 
@@ -158,15 +172,27 @@ Common Complexity Classes
 >
 > Algorithm’s that are log-linear will use **both recursion AND iteration.**
 
+{% embed url="https://gist.github.com/eengineergz/e9bd6337c17f1623a4da088574ed0d8e\#file-loglin-js" %}
+
+\*\*\*\*
+
 ## `O(nc) Polynomial` <a id="fb10"></a>
 
 > **C is a fixed constant.**
+
+{% embed url="https://gist.github.com/eengineergz/3e6096e66bac80b962435b7d873cdbe9\#file-poly-js" %}
+
+\*\*\*\*
 
 ## `O(c^n) Exponential` <a id="2736"></a>
 
 > **C is now the number of recursive calls made in each stack frame.**
 >
 > **Algorithm’s with exponential time are VERY SLOW.**
+
+{% embed url="https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705\#file-exponential-js" %}
+
+\*\*\*\*
 {% endtab %}
 {% endtabs %}
 
