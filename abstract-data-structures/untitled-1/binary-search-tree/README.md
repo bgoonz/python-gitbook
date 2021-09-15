@@ -1,5 +1,7 @@
 # Binary Search Tree
 
+{% embed url="https://replit.com/@bgoonz/BST" %}
+
 
 
 
