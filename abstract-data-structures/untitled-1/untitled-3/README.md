@@ -279,6 +279,113 @@ print('--------------------------')
 print(lst)
 ```
 {% endtab %}
+
+{% tab title="Quick Sort Books" %}
+```python
+from book import Book
+# Divide a problem in to subproblems (of the same type)
+# Solve the subproblems
+# Combine the results of the subproblems 
+# to get the solution to the original problem
+
+def quick_sort(data, low, high):
+    # check base case
+    # if low is greater than or equal to high
+    if low >= high:
+        # return the data
+        return data
+    # otherwise
+    else:
+        # divide
+        pivot_index = low
+
+    # for each element in sub list
+    for i in range(low, high):
+        # check if data at index is less than data at pivot index
+        if data[i].genre < data[pivot_index].genre:
+            # double swap to move smaller elements to the correct index
+            # move current element to right of pivot
+            temp = data[pivot_index + 1]
+            data[pivot_index + 1] = data[i]
+            data[i] = temp
+            # swap the pivot with the element to its right
+            temp = data[pivot_index]
+            data[pivot_index] = data[pivot_index + 1]
+            data[pivot_index + 1] = data[i]
+            data[i] = temp
+
+    # conqure
+    # quick sort the left
+    data = quick_sort(data, low, pivot_index)
+    # quick sort the right
+    data = quick_sort(data, pivot_index + 1, high)
+
+    # return the data
+    return data
+
+b1 = Book('Food for thought', 'jon jones', 'food')
+b2 = Book('My life in reality', 'don davis', 'life')
+b3 = Book('Apples, how you like them?', 'stan simpson', 'food')
+b4 = Book('Just Do It', 'shia le boeuf', 'inspirational')
+b5 = Book('What is this code anyway', 'tom jones', 'programming')
+
+books = [b1, b2, b3, b4, b5]
+
+for b in books:
+    print(b)
+
+quick_sort(books, 0, 5)
+
+
+print('----------------------------------------------------------')
+for b in books:
+    print(b)
+
+```
+{% endtab %}
+
+{% tab title="Quick Sort Copy" %}
+```python
+# helper function conceptual partitioning
+def partition(data):
+    # takes in a single list and partitions it in to 3 lists left, pivot, right
+    # create 2 empty lists (left, right)
+    left = []
+    right = []
+    # create a pivot list containing the first element of the data
+    pivot = data[0]
+
+    # for each value in our data starting at index 1:
+    for value in data[1:]:
+        # check if value is less than or equal to the pivot
+        if value <= pivot:
+            # append our value to the left list
+            left.append(value)
+        # otherwise (the value must be greater than the pivot)
+        else:
+            # append our value to the right list
+            right.append(value)
+
+    # returns the tuple of (left, pivot, right)
+    return left, pivot, right
+
+# quick sort that uses the partitioned data
+def quicksort(data):
+    # base case if the data is an empty list return an empty list
+    if data == []:
+        return data
+
+    # partition the data in to 3 variables (left, pivot, right)
+    left, pivot, right = partition(data)
+
+    # recursive call to quicksort using the left
+    # recursive call to quicksort using the right
+    # return the concatination quicksort of lhs + pivot + quicksort of rhs
+    return quicksort(left) + [pivot] + quicksort(right)
+
+print(quicksort([5, 9, 3, 7, 2, 8, 1, 6]))
+```
+{% endtab %}
 {% endtabs %}
 
 
