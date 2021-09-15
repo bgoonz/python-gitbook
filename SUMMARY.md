@@ -263,4 +263,5 @@
   * [Data Structures In JavaScript](aux-exploration/subject/data-structures-in-javascript.md)
   * [Dunder Methods](aux-exploration/subject/dunder-methods.md)
   * [Python GitHub API](aux-exploration/subject/python-github-api.md)
+  * [JS-Event Loop](aux-exploration/subject/js-event-loop.md)
 
