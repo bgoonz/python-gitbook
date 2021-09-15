@@ -249,37 +249,37 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 
 
 
-{% page-ref page="../array/" %}
+{% page-ref page="../untitled-1/array/" %}
 
-{% page-ref page="../tree/binary-search-tree/" %}
+{% page-ref page="../untitled-1/tree/binary-search-tree/" %}
 
-{% page-ref page="../untitled-4/" %}
+{% page-ref page="../untitled-1/untitled-4/" %}
 
-{% page-ref page="../array/extra-array.md" %}
+{% page-ref page="../untitled-1/array/extra-array.md" %}
 
-{% page-ref page="../stack/" %}
+{% page-ref page="../untitled-1/stack/" %}
 
-{% page-ref page="../tree/binary-tree/" %}
+{% page-ref page="../untitled-1/tree/binary-tree/" %}
 
-{% page-ref page="../untitled-6/" %}
+{% page-ref page="../untitled-1/untitled-6/" %}
 
-{% page-ref page="../untitled-5/" %}
+{% page-ref page="../untitled-1/untitled-5/" %}
 
-{% page-ref page="../untitled-2/" %}
+{% page-ref page="../untitled-1/untitled-2/" %}
 
-{% page-ref page="../untitled-3/" %}
+{% page-ref page="../untitled-1/untitled-3/" %}
 
-{% page-ref page="../queue/queue-sandbox.md" %}
+{% page-ref page="../untitled-1/queue/queue-sandbox.md" %}
 
-{% page-ref page="../untitled-5/" %}
+{% page-ref page="../untitled-1/untitled-5/" %}
 
-{% page-ref page="../untitled-4/double-linked-list.md" %}
+{% page-ref page="../untitled-1/untitled-4/double-linked-list.md" %}
 
-{% page-ref page="../untitled-1/" %}
+{% page-ref page="../untitled-1/untitled-1/" %}
 
-{% page-ref page="../untitled/" %}
+{% page-ref page="../untitled-1/untitled/" %}
 
-{% page-ref page="../heap/" %}
+{% page-ref page="../untitled-1/heap/" %}
 
 
 
