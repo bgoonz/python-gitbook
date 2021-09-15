@@ -1,5 +1,11 @@
 # D1- Module 01 - Linked Lists
 
+
+
+{% embed url="https://www.youtube.com/watch?v=totrhOjxUVo" %}
+
+
+
 #### Implementation:
 
 {% embed url="https://gist.github.com/bgoonz/10811c10bd2f7650aa7f7a37e2340d5f" %}

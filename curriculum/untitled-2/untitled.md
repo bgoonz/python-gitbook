@@ -4,6 +4,8 @@ description: Searching & Recursion
 
 # D4- Module 04 - Searching and Recursion
 
+{% embed url="https://www.youtube.com/watch?v=OQig62--r6w" %}
+
 
 
 {% page-ref page="../../abstract-data-structures/untitled-1/untitled-6/recursion-explained/" %}

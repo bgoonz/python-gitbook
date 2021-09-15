@@ -2,6 +2,10 @@
 
 ## D2- Module 02 - Python II
 
+{% embed url="https://www.youtube.com/watch?v=8lB5fqmh2OY" %}
+
+
+
 {% embed url="https://github.com/wilfredinni/python-cheatsheet" caption="" %}
 
 {% embed url="https://gist.github.com/bgoonz/ebe842b651bba237d70bccfa5a7b5a75\#file-number-bases-and-chars-ipynb" caption="" %}
