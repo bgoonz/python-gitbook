@@ -1,12 +1,174 @@
 # Calculating Big O
 
+{% tabs %}
+{% tab title="Order Of Growth" %}
 
 
 ![](../.gitbook/assets/image%20%2834%29.png)
+{% endtab %}
 
-![](../.gitbook/assets/image%20%2828%29%20%281%29.png)
+{% tab title="Notation" %}
+
 
 ![](../.gitbook/assets/image%20%2830%29.png)
+{% endtab %}
+
+{% tab title="Big O Complexity Chart" %}
+
+
+![](../.gitbook/assets/image%20%2828%29%20%281%29.png)
+{% endtab %}
+
+{% tab title="Class Name Table" %}
+![](../.gitbook/assets/image%20%2843%29.png)
+{% endtab %}
+
+{% tab title="Simplifying Big O" %}
+![](../.gitbook/assets/image%20%2842%29.png)
+{% endtab %}
+{% endtabs %}
+
+
+
+{% tabs %}
+{% tab title="Big O Python" %}
+```python
+# O(c) / o(1)
+def constant_algo(items):
+    result = items[0] * items[0] # O(1)
+    print (result) # O(1)
+
+    # O(2)
+    # O(1)
+
+constant_algo([4, 5, 6, 8])
+
+# O(n)
+def linear_algo(items):
+    for item in items:
+        print(item)
+
+linear_algo([4, 5, 6, 8])
+
+# What is the big O of this ??
+# O(n) --> linear
+def linear_algo_2(items):
+    for item in items:
+        print(item)
+    for item in items:
+        print(item)
+
+
+linear_algo_2([4, 5, 6, 8])
+
+
+# O(n^2)
+def quadratic_algo(items):
+    for item in items:
+        for item2 in items:
+            print(item, ' ' ,item2)
+
+quadratic_algo([4, 5, 6, 8])
+
+# chalenge. What is the complexity of this algorithm?
+
+def complex_algo(items):
+
+    for _ in range(5):
+        print ("Python is awesome")
+
+    for item in items:
+        print(item)
+
+    for item in items:
+        print(item)
+
+    print("Big O")
+    print("Big O")
+    print("Big O")
+
+complex_algo([4, 5, 6, 8])
+
+# itterative solution
+def fact(n):
+    product = 1
+    for i in range(n): # O(n)
+        product = product * (i + 1)
+    return product
+
+# recursive solution
+def fact_r(n):
+    if n == 0:
+        return 1
+    return n * fact_r(n - 1) # o(n)
+
+
+```
+{% endtab %}
+
+{% tab title="JS" %}
+
+
+## big ‘O’ notation <a id="5fc8"></a>
+
+* Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
+* Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
+* The function should be defined by the size of the input.
+* `Smaller` Big O is better \(lower time complexity\)
+* Big O is used to describe the worst case scenario.
+* Big O is simplified to show only its most dominant mathematical term.
+
+## Simplifying Math Terms <a id="6083"></a>
+
+* We can use the following rules to simplify the our Big O functions:
+* `Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.
+* `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
+* `n` : size of the input
+* `T(f)` : unsimplified math function
+* `O(f)` : simplified math function.
+
+`Putting it all together`![](https://miro.medium.com/max/15/1*TT8uuv1x3nmGUw5rvtoZ8A.png?q=20)![](https://miro.medium.com/max/374/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
+
+* First we apply the product rule to drop all constants.
+* Then we apply the sum rule to select the single most dominant term.
+
+## Complexity Classes <a id="915e"></a>
+
+Common Complexity Classes
+
+### There are 7 major classes in Time Complexity <a id="e9a1"></a>
+
+![](https://miro.medium.com/max/27/1*6zKhmJoHkvDbrd8jfUDf3A.png?q=20)![](https://miro.medium.com/max/446/1*6zKhmJoHkvDbrd8jfUDf3A.png)
+
+### `O(1) Constant` <a id="a022"></a>
+
+> **The algorithm takes roughly the same number of steps for any input size.**
+
+### `O(log(n)) Logarithmic` <a id="81af"></a>
+
+> **In most cases our hidden base of Logarithmic time is 2, log complexity algorithm’s will typically display ‘halving’ the size of the input \(like binary search!\)**
+
+### `O(n) Linear` <a id="be35"></a>
+
+> **Linear algorithm’s will access each item of the input “once”.**
+
+## `O(nlog(n)) Log Linear Time` <a id="b965"></a>
+
+> **Combination of linear and logarithmic behavior, we will see features from both classes.**
+>
+> Algorithm’s that are log-linear will use **both recursion AND iteration.**
+
+## `O(nc) Polynomial` <a id="fb10"></a>
+
+> **C is a fixed constant.**
+
+## `O(c^n) Exponential` <a id="2736"></a>
+
+> **C is now the number of recursive calls made in each stack frame.**
+>
+> **Algorithm’s with exponential time are VERY SLOW.**
+{% endtab %}
+{% endtabs %}
 
 ## Computing Big O
 
