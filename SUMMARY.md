@@ -221,6 +221,7 @@
 ## MISC
 
 * [Built-in Methods & Functions](misc/built-in-methods-and-functions.md)
+* [Data Structures Types](misc/data-structures-types.md)
 * [Math](misc/math.md)
 * [Unsorted Examples](misc/unsorted-examples.md)
 * [Outline](misc/outline.md)
