@@ -236,8 +236,207 @@ class Graph:
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Graph.js" %}
+```javascript
+class Graph {
+  constructor () {
+    this.adjacencyMap = {}
+  }
 
+  addVertex (v) {
+    this.adjacencyMap[v] = []
+  }
+
+  containsVertex (vertex) {
+    return typeof (this.adjacencyMap[vertex]) !== 'undefined'
+  }
+
+  addEdge (v, w) {
+    let result = false
+    if (this.containsVertex(v) && this.containsVertex(w)) {
+      this.adjacencyMap[v].push(w)
+      this.adjacencyMap[w].push(v)
+      result = true
+    }
+    return result
+  }
+
+  printGraph () {
+    const keys = Object.keys(this.adjacencyMap)
+    for (const i of keys) {
+      const values = this.adjacencyMap[i]
+      let vertex = ''
+      for (const j of values) { vertex += j + ' ' }
+      console.log(i + ' -> ' + vertex)
+    }
+  }
+
+  /**
+   * Prints the Breadth first traversal of the graph from source.
+   *
+   * @param {number} source The source vertex to start BFS.
+   */
+  bfs (source) {
+    const queue = []
+    const visited = new Set()
+    queue.unshift([source, 0]) // level of source is 0
+    visited.add(source)
+    while (queue.length) {
+      const front = queue[0]
+      const node = front[0]
+      const level = front[1]
+      queue.shift() // remove the front of the queue
+      console.log(`Visited node ${node} at level ${level}.`)
+      for (const next of this.adjacencyMap[node]) {
+        if (!visited.has(next)) { // not visited
+          queue.unshift([next, level + 1]) // level 1 more than current
+          visited.add(next)
+        }
+      }
+    }
+  }
+}
+
+const example = () => {
+  const g = new Graph()
+  g.addVertex(1)
+  g.addVertex(2)
+  g.addVertex(3)
+  g.addVertex(4)
+  g.addVertex(5)
+  g.addEdge(1, 2)
+  g.addEdge(1, 3)
+  g.addEdge(2, 4)
+  g.addEdge(2, 5)
+  console.log('Printing the adjacency list:\n')
+  g.printGraph()
+
+  // perform a breadth first search
+  console.log('\nBreadth first search at node 1:\n')
+  g.bfs(1)
+}
+example()
+
+
+
+//OUTPUT:
+/*
+
+
+
+[Running] node "c:\Users\bryan\Downloads\TOM_L\Javascript\Data-Structures\Graph\tempCodeRunnerFile.js"
+Printing the adjacency list:
+
+1 -> 2 3 
+2 -> 1 4 5 
+3 -> 1 
+4 -> 2 
+5 -> 2 
+
+Breadth first search at node 1:
+
+Visited node 1 at level 0.
+Visited node 3 at level 1.
+Visited node 2 at level 1.
+Visited node 5 at level 2.
+Visited node 4 at level 2.
+
+*/
+```
+{% endtab %}
+
+{% tab title="Graph2.js" %}
+```javascript
+// create a graph class
+class Graph {
+  // defining vertex array and
+  // adjacent list
+  constructor (noOfVertices) {
+    this.noOfVertices = noOfVertices
+    this.AdjList = new Map()
+  }
+
+  // functions to be implemented
+
+  // addVertex(v)
+  // addEdge(v, w)
+  // printGraph()
+
+  // bfs(v)
+  // dfs(v)
+
+  // add vertex to the graph
+  addVertex (v) {
+    // initialize the adjacent list with a
+    // null array
+
+    this.AdjList.set(v, [])
+  }
+
+  // add edge to the graph
+  addEdge (v, w) {
+    // get the list for vertex v and put the
+    // vertex w denoting edge between v and w
+    this.AdjList.get(v).push(w)
+
+    // Since graph is undirected,
+    // add an edge from w to v also
+    this.AdjList.get(w).push(v)
+  }
+
+  // Prints the vertex and adjacency list
+  printGraph () {
+    // get all the vertices
+    const getKeys = this.AdjList.keys()
+
+    // iterate over the vertices
+    for (const i of getKeys) {
+      // great the corresponding adjacency list
+      // for the vertex
+      const getValues = this.AdjList.get(i)
+      let conc = ''
+
+      // iterate over the adjacency list
+      // concatenate the values into a string
+      for (const j of getValues) {
+        conc += j + ' '
+      }
+
+      // print the vertex and its adjacency list
+      console.log(i + ' -> ' + conc)
+    }
+  }
+}
+// Example
+const graph = new Graph(6)
+const vertices = ['A', 'B', 'C', 'D', 'E', 'F']
+
+// adding vertices
+for (let i = 0; i < vertices.length; i++) {
+  graph.addVertex(vertices[i])
+}
+
+// adding edges
+graph.addEdge('A', 'B')
+graph.addEdge('A', 'D')
+graph.addEdge('A', 'E')
+graph.addEdge('B', 'C')
+graph.addEdge('D', 'E')
+graph.addEdge('E', 'F')
+graph.addEdge('E', 'C')
+graph.addEdge('C', 'F')
+
+// prints all vertex and
+// its adjacency list
+// A -> B D E
+// B -> A C
+// C -> B E F
+// D -> A E
+// E -> A D F C
+// F -> E C
+graph.printGraph()
+
+```
 {% endtab %}
 {% endtabs %}
 
