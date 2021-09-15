@@ -1,5 +1,11 @@
 # D2- Module 02 - Queues and Stacks
 
+
+
+
+
+
+
 ## D2- Module 02 - Python II
 
 {% embed url="https://github.com/wilfredinni/python-cheatsheet" caption="" %}
