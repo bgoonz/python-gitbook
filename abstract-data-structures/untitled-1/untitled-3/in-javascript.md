@@ -4,8 +4,6 @@ description: VISUALIZED
 
 # In JavaScript
 
-
-
 ## &lt;----------------------\(Bubble Sort\)----------------&gt;
 
 ## Bubble Sort
@@ -181,10 +179,6 @@ console.log(" bubbleSort(array): ", bubbleSort(array1));
 module.exports = { bubbleSort: bubbleSort, swap: swap };
 ```
 
-
-
-
-
 ## &lt;----------------------\(Selection Sort\)----------------&gt;
 
 !\[selection\]\(
@@ -245,7 +239,7 @@ The algorithm can be summarized as the following:
 
 Set MIN to location 0 Search the minimum element in the list Swap with value at location MIN Increment MIN to point to next element Repeat until list is sorted
 
-!\[selection\]\( 
+!\[selection\]\(
 
 ![](https://upload.wikimedia.org/wikipedia/commons/f/f6/Selection_Sort_Animation.gif)
 
@@ -351,11 +345,9 @@ end procedure
 
   the `/lib/insertion_sort.js` that implements the Insertion Sort.
 
+The algorithm: insert into the sorted region
 
-
-  The algorithm: insert into the sorted region
-
-  Insertion Sort is similar to Selection Sort in that it gradually builds up a larger and larger sorted region at the left-most end of the array.
+Insertion Sort is similar to Selection Sort in that it gradually builds up a larger and larger sorted region at the left-most end of the array.
 
 ![](https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif)
 
@@ -516,10 +508,6 @@ module.exports = {
 };
 ```
 
-
-
-
-
 ## &lt;----------------------\(Quick Sort\)----------------&gt;
 
 ## Quick Sort
@@ -555,8 +543,6 @@ end procedure quick sort
 * You can view the test cases in `/test/test.js`. Your job is to write code in
 
   the `/lib/quick_sort.js` that implements the Quick Sort.
-
- 
 
 ![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
@@ -812,3 +798,4 @@ end procedure binary search index
 ![](https://i.pinimg.com/originals/e2/9a/31/e29a31c78bcc0d07c612adc77acc09a0.gif)
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
+
