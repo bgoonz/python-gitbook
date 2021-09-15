@@ -1,6 +1,10 @@
 # Outline
 
-{% embed url="https://60s1b.csb.app/" %}
+
+
+{% embed url="https://codesandbox.io/embed/ds-algo-forked-60s1b?fontsize=14&hidenavigation=1&theme=light&view=preview" %}
+
+
 
 {% page-ref page="../untitled-3/" %}
 
