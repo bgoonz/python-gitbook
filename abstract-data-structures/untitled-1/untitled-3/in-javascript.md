@@ -120,7 +120,9 @@ end procedure return list
 
 ![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
-!\[bubble sort\]\(![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/bubble_sort/images/BubbleSort.gif)
+!\[bubble sort\]\(
+
+![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/bubble_sort/images/BubbleSort.gif)
 
 ![bubble](https://java2blog.com/wp-content/uploads/2017/12/BubbleSort_Avg_case.gif)
 
@@ -185,7 +187,9 @@ module.exports = { bubbleSort: bubbleSort, swap: swap };
 
 ## &lt;--------------------------------------------------\(Selection Sort\)---------------------------------------------------&gt;
 
-!\[selection\]\(![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/selection_sort/images/SelectionSort.gif)
+!\[selection\]\(
+
+![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/selection_sort/images/SelectionSort.gif)
 
 ## Selection Sort
 
@@ -241,7 +245,9 @@ The algorithm can be summarized as the following:
 
 Set MIN to location 0 Search the minimum element in the list Swap with value at location MIN Increment MIN to point to next element Repeat until list is sorted
 
-!\[selection\]\( ![](https://upload.wikimedia.org/wikipedia/commons/f/f6/Selection_Sort_Animation.gif)
+!\[selection\]\( 
+
+![](https://upload.wikimedia.org/wikipedia/commons/f/f6/Selection_Sort_Animation.gif)
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--T7PUry2L--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://miro.medium.com/max/3840/1%2Ak0dHMa2l2bRr95VB4llOqw.gif)
 
@@ -288,7 +294,9 @@ module.exports = {
 
 ![insertion](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
-!\[insertion\]\(![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)
+!\[insertion\]\(
+
+![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)
 
 This project contains a skeleton for you to implement Insertion Sort. In the file **lib/insertion\_sort.js**, you should implement the Insertion Sort.
 
@@ -343,11 +351,17 @@ end procedure
 
   the `/lib/insertion_sort.js` that implements the Insertion Sort.
 
-  ![insertion](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)![](https://thumbs.gfycat.com/CornyThickGordonsetter-small.gif)![](https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif)
+
 
   The algorithm: insert into the sorted region
 
   Insertion Sort is similar to Selection Sort in that it gradually builds up a larger and larger sorted region at the left-most end of the array.
+
+![](https://i.pinimg.com/originals/92/b0/34/92b034385c440e08bc8551c97df0a2e3.gif)
+
+![](https://thumbs.gfycat.com/CornyThickGordonsetter-small.gif)
+
+![insertion](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)
 
 However, Insertion Sort differs from Selection Sort because this algorithm does not focus on searching for the right element to place \(the next smallest in our Selection Sort\) on each pass through the array. Instead, it focuses on sorting each element in the order they appear from left to right, regardless of their value, and inserting them in the most appropriate position in the sorted region.
 
@@ -447,7 +461,17 @@ end procedure
 
   the `/lib/merge_sort.js` that implements the Merge Sort.
 
-![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/merge.gif)![alt](https://i.imgur.com/HU2tfzo.gif) ![alttext](https://media1.giphy.com/media/Jl1q5AiIyO7AAdMOG8/giphy.gif)![](https://res.cloudinary.com/practicaldev/image/fetch/s--pdU-IP47--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif) it is easy to merge elements of two sorted arrays into a single sorted array you can consider an array containing only a single element as already trivially sorted you can also consider an empty array as trivially sorted The algorithm: divide and conquer You're going to need a helper function that solves the first major point from above. How might you merge two sorted arrays? In other words you want a merge function that will behave like so:
+  it is easy to merge elements of two sorted arrays into a single sorted array you can consider an array containing only a single element as already trivially sorted you can also consider an empty array as trivially sorted The algorithm: divide and conquer You're going to need a helper function that solves the first major point from above. How might you merge two sorted arrays? In other words you want a merge function that will behave like so:
+
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--pdU-IP47--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+
+![alttext](https://media1.giphy.com/media/Jl1q5AiIyO7AAdMOG8/giphy.gif)
+
+![alt](https://i.imgur.com/HU2tfzo.gif)
+
+![alttext](http://btholt.github.io/four-semesters-of-cs/img/merge.gif)
+
+![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)
 
 let arr1 = \[1, 5, 10, 15\]; let arr2 = \[0, 2, 3, 7, 10\]; merge\(arr1, arr2\); // =&gt; \[0, 1, 2, 3, 5, 7, 10, 10, 15\] Once you have that, you get to the "divide and conquer" bit.
 
@@ -532,7 +556,15 @@ end procedure quick sort
 
   the `/lib/quick_sort.js` that implements the Quick Sort.
 
-![quick sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/quick_sort/images/QuickSort.gif) ![alt-text](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)![alttext](http://btholt.github.io/four-semesters-of-cs/img/bubble.gif)
+ 
+
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+
+![alttext](http://btholt.github.io/four-semesters-of-cs/img/bubble.gif)
+
+![alt-text](https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+
+![quick sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/quick_sort/images/QuickSort.gif)
 
 it is easy to sort elements of an array relative to a particular target value an array of 0 or 1 elements is already trivially sorted Regarding that first point, for example given \[7, 3, 8, 9, 2\] and a target of 5, we know \[3, 2\] are numbers less than 5 and \[7, 8, 9\] are numbers greater than 5.
 
@@ -674,4 +706,110 @@ bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-
 
 */
 ```
+
+## &lt;-------------------------------------------\(Binary Search\)---------------------------------------------------&gt;
+
+## Binary Search
+
+This project contains a skeleton for you to implement Binary Search. In the file **lib/binary\_search.js**, you should implement the Binary Search and its cousin Binary Search Index.
+
+The Binary Search algorithm can be summarized as the following:
+
+1. If the array is empty, then return false
+2. Check the value in the middle of the array against the target value
+3. If the value is equal to the target value, then return true
+4. If the value is less than the target value, then return the binary search on
+
+   the left half of the array for the target
+
+5. If the value is greater than the target value, then return the binary search
+
+   on the right half of the array for the target
+
+This is a description of how the Binary Search works \(and is also in the code file\).
+
+```text
+procedure binary search (list, target)
+  parameter list: a list of sorted value
+  parameter target: the value to search for
+
+  if the list has zero length, then return false
+
+  determine the slice point:
+    if the list has an even number of elements,
+      the slice point is the number of elements
+      divided by two
+    if the list has an odd number of elements,
+      the slice point is the number of elements
+      minus one divided by two
+
+  create an list of the elements from 0 to the
+    slice point, not including the slice point,
+    which is known as the "left half"
+  create an list of the elements from the
+    slice point to the end of the list which is
+    known as the "right half"
+
+  if the target is less than the value in the
+    original array at the slice point, then
+    return the binary search of the "left half"
+    and the target
+  if the target is greater than the value in the
+    original array at the slice point, then
+    return the binary search of the "right half"
+    and the target
+  if neither of those is true, return true
+end procedure binary search
+```
+
+Then you need to adapt that to return _the index_ of the found item rather than a Boolean value. The pseudocode is also in the code file.
+
+```text
+procedure binary search index(list, target, low, high)
+  parameter list: a list of sorted value
+  parameter target: the value to search for
+  parameter low: the lower index for the search
+  parameter high: the upper index for the search
+
+  if low is equal to high, then return -1 to indicate
+    that the value was not found
+
+  determine the slice point:
+    if the list has an even number of elements,
+      the slice point is the number of elements
+      divided by two
+    if the list has an odd number of elements,
+      the slice point is the number of elements
+      minus one divided by two
+
+  if the target is less than the value in the
+    original array at the slice point, then
+    return the binary search of the array,
+    the target, low, and the slice point
+  if the target is greater than the value in the
+    original array at the slice point, then return
+    the binary search of the array, the target,
+    the slice point plus one, and high
+  if neither of those is true, return true
+end procedure binary search index
+```
+
+* Clone the project from
+
+  [https://github.com/appacademy-starters/algorithms-binary-search-starter](https://github.com/appacademy-starters/algorithms-binary-search-starter).
+
+* `cd` into the project folder
+* `npm install` to install dependencies in the project root directory
+* `npm test` to run the specs
+* You can view the test cases in `/test/test.js`. Your job is to write code in
+
+  the `/lib/binary_search.js` that implements the Binary Search and Binary
+
+  Search Index.
+
+\]
+
+![](https://i.pinimg.com/originals/e2/9a/31/e29a31c78bcc0d07c612adc77acc09a0.gif)
+
+![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
 
