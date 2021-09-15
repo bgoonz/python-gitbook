@@ -1,6 +1,6 @@
 # Table of contents
 
-* [index](README.md)
+* [Home](README.md)
 * [Downloads & Misc-Assets](index.md)
 * [README](readme-1.md)
 * [Navigation](navigation.md)
