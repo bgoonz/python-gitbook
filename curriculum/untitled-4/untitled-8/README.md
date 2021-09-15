@@ -8,6 +8,10 @@
 
 ![](../../../.gitbook/assets/image%20%281%29.png)
 
+{% embed url="https://www.youtube.com/watch?v=Z0ZnRd2w8Ik" %}
+
+
+
 ## Objective 01 - Describe the properties of a binary tree and the properties of a "perfect" tree
 
 ### Overview <a id="overview"></a>
