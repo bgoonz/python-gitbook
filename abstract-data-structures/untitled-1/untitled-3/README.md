@@ -392,6 +392,273 @@ print(quicksort([5, 9, 3, 7, 2, 8, 1, 6]))
 
 
 
+## JavaScript:
+
+
+
+{% tabs %}
+{% tab title="Bubble" %}
+```javascript
+// Implement Bubble Sort
+
+function swap(array, idx1, idx2) {
+  let temp = array[idx1];
+  array[idx1] = array[idx2];
+  array[idx2] = temp;
+}
+
+function bubbleSort(array) {
+  let swapped = true;
+
+  while (swapped) {
+    swapped = false;
+
+    for (let i = 0; i < array.length - 1; i++) {
+      if (array[i] > array[i + 1]) {
+        swap(array, i, i + 1);
+
+        swapped = true;
+      }
+    }
+  }
+
+  return array;
+}
+
+let array1 = [2, -1, 4, 3, 7, 3];
+bubbleSort(array1);
+console.log(" bubbleSort(array): ", bubbleSort(array1));
+module.exports = { bubbleSort: bubbleSort, swap: swap };
+
+```
+{% endtab %}
+
+{% tab title="Selection" %}
+```javascript
+// Implement Selection Sort
+
+// Implement swap without looking at bubble sort
+function swap(arr, index1, index2) {
+  let temp = arr[index1];
+  arr[index1] = arr[index2];
+  arr[index2] = temp;
+}
+
+function selectionSort(list) {
+  let length = list.length;
+  for (let i = 0; i < length - 1; i++) {
+    let minPos = i;
+
+    for (let j = i + 1; j < length; j++) {
+      if (list[j] < list[minPos]) {
+        minPos = j;
+      }
+    }
+
+    if (minPos !== i) {
+      swap(list, minPos, i);
+    }
+  }
+}
+module.exports = {
+  selectionSort,
+  swap,
+};
+
+```
+{% endtab %}
+
+{% tab title="Insertion" %}
+```javascript
+// Implement Insertion Sort
+
+function insertionSort(list) {
+  for (let i = 1; i < list.length; i++) {
+    let val = list[i];
+    let pos = i;
+    // console.trace("1");
+    while (pos > 0 && list[pos - 1] > val) {
+      // console.trace("2");
+      list[pos] = list[pos - 1];
+      pos -= 1;
+    }
+    list[pos] = val;
+  }
+}
+let array = [2, -1, 4, 3, 7, 3];
+insertionSort(array);
+module.exports = {
+  insertionSort,
+};
+
+```
+{% endtab %}
+
+{% tab title="Merge" %}
+```javascript
+// Implement Merge Sort
+
+function merge(array1, array2) {
+  let merged = [];
+
+  while (array1.length || array2.length) {
+    let el1 = array1.length ? array1[0] : Infinity;
+    let el2 = array2.length ? array2[0] : Infinity;
+
+    el1 < el2 ? merged.push(array1.shift()) : merged.push(array2.shift());
+  }
+
+  return merged;
+}
+
+merge([1, 5, 10, 15], [0, 2, 3, 7, 10]);
+
+function mergeSort(array) {
+  if (array.length <= 1) return array;
+
+  let midIdx = Math.floor(array.length / 2);
+  let left = array.slice(0, midIdx);
+  let right = array.slice(midIdx);
+
+  let sortedLeft = mergeSort(left);
+  let sortedRight = mergeSort(right);
+
+  return merge(sortedLeft, sortedRight);
+}
+
+module.exports = {
+  merge,
+  mergeSort,
+};
+
+```
+{% endtab %}
+
+{% tab title="Quick Sort" %}
+```javascript
+// Implement Quick Sort
+
+function quickSort(array) {
+  if (array.length <= 1) return array;
+
+  let pivot = array.shift();
+
+  let left = array.filter((el) => el < pivot);
+  let right = array.filter((el) => el >= pivot);
+
+  let sortedLeft = quickSort(left);
+  let sortedRight = quickSort(right);
+
+  return [...sortedLeft, pivot, ...sortedRight];
+}
+
+module.exports = {
+  quickSort,
+};
+
+/*
+bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-outer/week-7/projects/D2/first-attempt/algorithms-sorting-starter/algorithms-sorting-starter-master/problems$ npm test
+
+> bubble_sort_project_solution@1.0.0 test /mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-outer/week-7/projects/D2/first-attempt/algorithms-sorting-starter/algorithms-sorting-starter-master
+> mocha
+
+ bubbleSort(array):  [ -1, 2, 3, 3, 4, 7 ]
+
+
+  bubbleSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  swap()
+    ✓ should swap the elements at the given indices, mutating the original array
+
+  selectionSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  insertionSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  merge()
+    ✓ should return a single array containing elements of the original sorted arrays, in order
+
+  mergeSort()
+    when the input array contains 0 or 1 elements
+      ✓ should return the array
+    when the input array contains more than 1 element
+      ✓ should return an array containing the elements in increasing order
+
+  quickSort()
+    when the input array contains 0 or 1 elements
+      1) should return the array
+    when the input array contains more than 1 element
+      2) should return an array containing the elements in increasing order
+
+
+  7 passing (210ms)
+  2 failing
+
+  1) quickSort()
+       when the input array contains 0 or 1 elements
+         should return the array:
+     AssertionError: expected undefined to deeply equal []
+      at Context.<anonymous> (test/05-quick-sort-spec.js:9:32)
+      at processImmediate (internal/timers.js:456:21)
+
+  2) quickSort()
+       when the input array contains more than 1 element
+         should return an array containing the elements in increasing order:
+     AssertionError: expected undefined to deeply equal [ -1, 2, 3, 3, 4, 7 ]
+      at Context.<anonymous> (test/05-quick-sort-spec.js:16:49)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! Test failed.  See above for more details.
+bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-outer/week-7/projects/D2/first-attempt/algorithms-sorting-starter/algorithms-sorting-starter-master/problems$ npm test
+
+> bubble_sort_project_solution@1.0.0 test /mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-outer/week-7/projects/D2/first-attempt/algorithms-sorting-starter/algorithms-sorting-starter-master
+> mocha
+
+ bubbleSort(array):  [ -1, 2, 3, 3, 4, 7 ]
+
+
+  bubbleSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  swap()
+    ✓ should swap the elements at the given indices, mutating the original array
+
+  selectionSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  insertionSort()
+    ✓ should sort the elements of the array in increasing order, in-place
+
+  merge()
+    ✓ should return a single array containing elements of the original sorted arrays, in order
+
+  mergeSort()
+    when the input array contains 0 or 1 elements
+      ✓ should return the array
+    when the input array contains more than 1 element
+      ✓ should return an array containing the elements in increasing order
+
+  quickSort()
+    when the input array contains 0 or 1 elements
+      ✓ should return the array
+    when the input array contains more than 1 element
+      ✓ should return an array containing the elements in increasing order
+
+
+  9 passing (149ms)
+
+*/
+
+```
+{% endtab %}
+{% endtabs %}
+
+
+
 ```python
 def partition(A, lo, hi):
     pivot = A[lo + (hi - lo) // 2]
