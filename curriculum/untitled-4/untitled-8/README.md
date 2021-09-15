@@ -1,5 +1,11 @@
 # D3- Module 03 - Binary Search Trees
 
+{% embed url="https://gist.github.com/bgoonz/c6ddd80d7ae24eca670f5fbebb7795f0" %}
+
+{% embed url="https://replit.com/@bgoonz/BST\#full-implementation.py" %}
+
+
+
 ![](../../../.gitbook/assets/image%20%281%29.png)
 
 ## Objective 01 - Describe the properties of a binary tree and the properties of a "perfect" tree
