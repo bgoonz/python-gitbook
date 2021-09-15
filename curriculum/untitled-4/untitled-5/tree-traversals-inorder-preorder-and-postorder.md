@@ -19,7 +19,7 @@ Breadth First or Level Order Traversal : 1 2 3 4 5
 Please see [this ](https://www.geeksforgeeks.org/level-order-tree-traversal/)post for Breadth First Traversal.  
 **Inorder Traversal \(**[**Practice**](https://practice.geeksforgeeks.org/problems/inorder-traversal/1)**\):** 
 
-```text
+```python
 Algorithm Inorder(tree)
    1. Traverse the left subtree, i.e., call Inorder(left-subtree)
    2. Visit the root.
@@ -31,7 +31,7 @@ In case of binary search trees \(BST\), Inorder traversal gives nodes in non-dec
 Example: Inorder traversal for the above-given figure is 4 2 5 1 3.  
 **Preorder Traversal \(**[**Practice**](https://practice.geeksforgeeks.org/problems/preorder-traversal/1)**\):** 
 
-```text
+```python
 Algorithm Preorder(tree)
    1. Visit the root.
    2. Traverse the left subtree, i.e., call Preorder(left-subtree)
@@ -48,7 +48,7 @@ Example: Preorder traversal for the above given figure is 1 2 4 5 3.
 
 
 
-```text
+```python
 Algorithm Postorder(tree)
    1. Traverse the left subtree, i.e., call Postorder(left-subtree)
    2. Traverse the right subtree, i.e., call Postorder(right-subtree)
@@ -142,7 +142,6 @@ printPostorder(root)
 
 {% tab title="Javascript" %}
 ```javascript
-<script>
 // javascript program for different tree traversals
 
 /* Class containing left and right child of current
@@ -229,7 +228,6 @@ class Node {
 		printPostorder(root);
 
 // This code is contributed by aashish1995
-</script>
 
 ```
 {% endtab %}

@@ -6,12 +6,6 @@ description: >-
 
 # D4- Module 04 - Tree Traversal
 
-
-
-
-
-
-
 ## D4-Module 04 - Python IV
 
 ### Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a static array
