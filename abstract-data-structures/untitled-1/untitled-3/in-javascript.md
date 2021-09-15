@@ -6,7 +6,7 @@ description: VISUALIZED
 
 
 
-## &lt;--------------------------------------------------\(Bubble Sort\)---------------------------------------------------&gt;
+## &lt;----------------------\(Bubble Sort\)----------------&gt;
 
 ## Bubble Sort
 
@@ -185,7 +185,7 @@ module.exports = { bubbleSort: bubbleSort, swap: swap };
 
 
 
-## &lt;--------------------------------------------------\(Selection Sort\)---------------------------------------------------&gt;
+## &lt;----------------------\(Selection Sort\)----------------&gt;
 
 !\[selection\]\(
 
@@ -288,7 +288,7 @@ module.exports = {
 };
 ```
 
-## &lt;--------------------------------------------------\(Insertion Sort\)---------------------------------------------------&gt;
+## &lt;----------------------\(Insertion Sort\)----------------&gt;
 
 ## Insertion Sort
 
@@ -388,7 +388,7 @@ module.exports = {
 };
 ```
 
-## &lt;--------------------------------------------------\(Merge Sort\)---------------------------------------------------&gt;
+## &lt;----------------------\(Merge Sort\)----------------&gt;
 
 ## Merge Sort
 
@@ -520,7 +520,7 @@ module.exports = {
 
 
 
-## &lt;--------------------------------------------------\(Quick Sort\)---------------------------------------------------&gt;
+## &lt;----------------------\(Quick Sort\)----------------&gt;
 
 ## Quick Sort
 
@@ -707,7 +707,7 @@ bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-
 */
 ```
 
-## &lt;-------------------------------------------\(Binary Search\)---------------------------------------------------&gt;
+## &lt;---------------\(Binary Search\)----------------&gt;
 
 ## Binary Search
 
@@ -812,4 +812,3 @@ end procedure binary search index
 ![](https://i.pinimg.com/originals/e2/9a/31/e29a31c78bcc0d07c612adc77acc09a0.gif)
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-sorted-array-animation.gif)
-
