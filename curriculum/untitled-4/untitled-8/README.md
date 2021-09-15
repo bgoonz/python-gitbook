@@ -243,5 +243,7 @@ Given the above information, can you write pseudocode for a method that can find
 
 
 
+{% embed url="https://gist.github.com/bgoonz/4e4fd86bc6c83f7a7cbf5392772f7519\#file-bst-ipynb" %}
+
 
 
