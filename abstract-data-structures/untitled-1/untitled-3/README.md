@@ -1199,7 +1199,7 @@ This helps us visualize why we go through each swapping step and how the list is
 
 {% page-ref page="../array/" %}
 
-{% page-ref page="../tree/binary-search-tree/" %}
+{% page-ref page="../binary-search-tree/" %}
 
 {% page-ref page="../untitled-4/" %}
 
@@ -1207,7 +1207,7 @@ This helps us visualize why we go through each swapping step and how the list is
 
 {% page-ref page="../stack/" %}
 
-{% page-ref page="../tree/binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
 {% page-ref page="../untitled-6/" %}
 

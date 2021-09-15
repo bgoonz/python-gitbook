@@ -487,7 +487,7 @@ def bfs_search_dict(graph: Mapping[Node, Iterable[Node]], start: Node, predicate
 
 {% page-ref page="../array/" %}
 
-{% page-ref page="../tree/binary-search-tree/" %}
+{% page-ref page="../binary-search-tree/" %}
 
 {% page-ref page="../untitled-4/" %}
 
@@ -495,7 +495,7 @@ def bfs_search_dict(graph: Mapping[Node, Iterable[Node]], start: Node, predicate
 
 {% page-ref page="../stack/" %}
 
-{% page-ref page="../tree/binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
 {% page-ref page="../untitled-6/" %}
 

@@ -251,7 +251,7 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 
 {% page-ref page="../untitled-1/array/" %}
 
-{% page-ref page="../untitled-1/tree/binary-search-tree/" %}
+{% page-ref page="../untitled-1/binary-search-tree/" %}
 
 {% page-ref page="../untitled-1/untitled-4/" %}
 
@@ -259,7 +259,7 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 
 {% page-ref page="../untitled-1/stack/" %}
 
-{% page-ref page="../untitled-1/tree/binary-tree/" %}
+{% page-ref page="../untitled-1/binary-tree/" %}
 
 {% page-ref page="../untitled-1/untitled-6/" %}
 

@@ -12,11 +12,11 @@
 
 {% page-ref page="../set/" %}
 
-{% page-ref page="binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
-{% page-ref page="binary-search-tree/" %}
+{% page-ref page="../binary-search-tree/" %}
 
-{% page-ref page="binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
 
 
@@ -41,7 +41,7 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 {% page-ref page="../array/" %}
 
-{% page-ref page="binary-search-tree/" %}
+{% page-ref page="../binary-search-tree/" %}
 
 {% page-ref page="../untitled-4/" %}
 
@@ -49,7 +49,7 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 {% page-ref page="../stack/" %}
 
-{% page-ref page="binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
 {% page-ref page="../untitled-6/" %}
 

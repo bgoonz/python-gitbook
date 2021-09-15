@@ -928,7 +928,7 @@ It's notable that git uses a DAG to represent commits. A commit can have a child
 
 {% page-ref page="../array/" %}
 
-{% page-ref page="../tree/binary-search-tree/" %}
+{% page-ref page="../binary-search-tree/" %}
 
 {% page-ref page="../untitled-4/" %}
 
@@ -936,7 +936,7 @@ It's notable that git uses a DAG to represent commits. A commit can have a child
 
 {% page-ref page="../stack/" %}
 
-{% page-ref page="../tree/binary-tree/" %}
+{% page-ref page="../binary-tree/" %}
 
 {% page-ref page="../untitled-6/" %}
 

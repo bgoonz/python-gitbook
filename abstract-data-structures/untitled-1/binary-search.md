@@ -573,7 +573,7 @@ else:
 
 {% page-ref page="array/" %}
 
-{% page-ref page="tree/binary-search-tree/" %}
+{% page-ref page="binary-search-tree/" %}
 
 {% page-ref page="untitled-4/" %}
 
@@ -581,7 +581,7 @@ else:
 
 {% page-ref page="stack/" %}
 
-{% page-ref page="tree/binary-tree/" %}
+{% page-ref page="binary-tree/" %}
 
 {% page-ref page="untitled-6/" %}
 
