@@ -2,8 +2,6 @@
 
 
 
-```text
-
 # Home
 
 ## This Website:
