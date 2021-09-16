@@ -74,7 +74,7 @@ The space complexity of a linked list is linear \(`O(n)`\). Each item in the lin
 
 #### Strengths of a Linked List <a id="strengths-of-a-linked-list"></a>
 
-![1. Fast operations at both ends \(head and tail\) 2. They can grow and shrink to accommodate the data](../../.gitbook/assets/image%20%286%29.png)
+![1. Fast operations at both ends \(head and tail\) 2. They can grow and shrink to accommodate the data](../../../.gitbook/assets/image%20%286%29.png)
 
 The primary strength of a linked list is that operations on the linked list's ends are fast. This is because the linked list always has a reference to the head \(the first node\) and the tail \(the last node\) of the list. Because it has a reference, doing anything on the ends is a constant time operation \(`O(1)`\) no matter how many items are stored in the linked list. Additionally, just like a dynamic array, you don't have to set a capacity to a linked list when you instantiate it. If you don't know the size of the data you are storing, or if the amount of data is likely to fluctuate, linked lists can work well. One benefit over a dynamic array is that you don't have doubling appends. This is because each item doesn't have to be stored contiguously; whenever you add an item, you need to find an open spot in memory to hold the next node.
 
@@ -169,13 +169,13 @@ You must be able to understand and interact with linked lists. You now know the 
 
 * [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf \(Links to an external site.\)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
 
-{% file src="../../.gitbook/assets/10-linkedlist.pdf" caption="Linked List Pdf" %}
+{% file src="../../../.gitbook/assets/10-linkedlist.pdf" caption="Linked List Pdf" %}
 
 {% embed url="https://www.youtube.com/watch?v=njTh\_OwMljA" %}
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
+![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 
 
