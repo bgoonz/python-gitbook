@@ -266,4 +266,5 @@
   * [Dunder Methods](aux-exploration/subject/dunder-methods.md)
   * [Python GitHub API](aux-exploration/subject/python-github-api.md)
   * [JS-Event Loop](aux-exploration/subject/js-event-loop.md)
+  * [JavaScript Event Loop](aux-exploration/subject/javascript-event-loop.md)
 
