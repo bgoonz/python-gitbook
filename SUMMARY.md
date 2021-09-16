@@ -56,6 +56,8 @@
 ## Abstract Data Structures
 
 * [Algorithms](abstract-data-structures/algorithms-1/README.md)
+  * [Dijkstra's algorithm](abstract-data-structures/algorithms-1/dijkstras-algorithm.md)
+  * [Calculate a Factorial With Python - Iterative and Recursive](abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive.md)
   * [DFS](abstract-data-structures/algorithms-1/dfs.md)
   * [BFS](abstract-data-structures/algorithms-1/bfs.md)
   * [Palendrome](abstract-data-structures/algorithms-1/palendrome.md)
@@ -185,6 +187,7 @@
   * [String-Methods](stdlib/untitled/string-methods.md)
 * [Basic Syntax](stdlib/basic-syntax.md)
 * [Lists](stdlib/lists/README.md)
+  * [Reverse A List](stdlib/lists/reverse-a-list.md)
   * [Python Data Structures](stdlib/lists/python-data-structures.md)
   * [More On Lists](stdlib/lists/more-on-lists.md)
   * [Examples](stdlib/lists/examples/README.md)
@@ -253,6 +256,7 @@
 ## Aux-Exploration
 
 * [Related Studies](aux-exploration/subject/README.md)
+  * [Self-Organizing Maps: Theory and Implementation in Python with NumPy](aux-exploration/subject/self-organizing-maps-theory-and-implementation-in-python-with-numpy.md)
   * [List Directory Contents](aux-exploration/subject/list-directory-contents.md)
   * [Employee Manager](aux-exploration/subject/untitled-5.md)
   * [OS Module](aux-exploration/subject/untitled-4.md)
