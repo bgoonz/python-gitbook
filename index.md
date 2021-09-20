@@ -78,9 +78,15 @@ Awesome Find:
 
 
 
+{% file src=".gitbook/assets/cs-week1-projects.py" %}
 
+{% file src=".gitbook/assets/cs-week2-projects.py" %}
 
+{% file src=".gitbook/assets/cs-weeks3-4-projects.py" %}
 
+{% file src=".gitbook/assets/cs-weeks5-6-projects.py" %}
+
+{% file src=".gitbook/assets/cs-weeks7-8-projects.py" %}
 
 
 
