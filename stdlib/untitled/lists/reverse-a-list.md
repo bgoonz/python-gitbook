@@ -163,4 +163,3 @@ print(original_list) # Output: [1, 2, 3, 4] --> Original hasn't changed
 Depending on whether you need a new reversed list, an in-place reversed list, as well as whether you want the logic to be taken care of for you, or if you'd like to have the flexibility of adding additional operations or twists during the reversal - there are several ways to reverse a list in Python.
 
 In this tutorial, we've gone over these scenarios, highlighting the difference between each.
-

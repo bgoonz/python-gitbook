@@ -1,33 +1,31 @@
 # Touple
 
-
-
 A tuple is an ordered collection of items. An ordered collection keeps the items in the order you insert or initialize them. In other words, the order is preserved. This is in contrast to dictionaries or sets, where the order is not preserved \(unordered collections\).
 
 Tuples are like lists but vary in the following aspects: They are immutable, \(we cannot change them\) unlike lists which are mutable \(we can change them\). Let us learn more about tuples and their related methods. We’ll also learn to effectively use them in Python.
 
 For more background on the different data structures in Python, check out the following articles:
 
-* [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
-* [List](https://www.section.io/list-data-structure-python/)
-* [Stack](https://www.section.io/stack-data-structure-python/)
-* [Queue](https://www.section.io/queue-data-structure-python/)
-* [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
-* [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
-* [Heaps](https://www.section.io/heap-data-structure-python/)
-* [Graphs](https://www.section.io/graph-data-structure-python/)
+- [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
+- [List](https://www.section.io/list-data-structure-python/)
+- [Stack](https://www.section.io/stack-data-structure-python/)
+- [Queue](https://www.section.io/queue-data-structure-python/)
+- [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
+- [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
+- [Heaps](https://www.section.io/heap-data-structure-python/)
+- [Graphs](https://www.section.io/graph-data-structure-python/)
 
 _Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. \(links are given above\)_
 
 #### Table of Contents <a id="table-of-contents"></a>
 
-* [Tuples: Let’s Code](https://www.section.io/engineering-education/tuples-data-structure-python/#tuples-lets-code)
-  * [Creating a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#creating-a-tuple)
-  * [Accessing Items in a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#accessing-items-in-a-tuple)
-  * [Modifying Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#modifying-tuples)
-  * [Tuple Methods](https://www.section.io/engineering-education/tuples-data-structure-python/#tuple-methods)
-* [Applications of Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#applications-of-tuples)
-* [Further Reading](https://www.section.io/engineering-education/tuples-data-structure-python/#further-reading)
+- [Tuples: Let’s Code](https://www.section.io/engineering-education/tuples-data-structure-python/#tuples-lets-code)
+  - [Creating a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#creating-a-tuple)
+  - [Accessing Items in a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#accessing-items-in-a-tuple)
+  - [Modifying Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#modifying-tuples)
+  - [Tuple Methods](https://www.section.io/engineering-education/tuples-data-structure-python/#tuple-methods)
+- [Applications of Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#applications-of-tuples)
+- [Further Reading](https://www.section.io/engineering-education/tuples-data-structure-python/#further-reading)
 
 #### Tuples: Let’s Code <a id="tuples-lets-code"></a>
 
@@ -173,13 +171,13 @@ print(tuple3) # Output: ([10, 20], [30, 40], [50, 60], [100, 200], [300, 400])
 
 Tuples have the following in-built methods that make them extremely powerful:
 
-* **`cmp(tuple1, tuple2)`**
-* **`len(tuple)`**
-* **`min(tuple)`**
-* **`max(tuple)`**
-* **`tuple(list)`**
-* **`t.count(el)`**
-* **`t.index(el)`**
+- **`cmp(tuple1, tuple2)`**
+- **`len(tuple)`**
+- **`min(tuple)`**
+- **`max(tuple)`**
+- **`tuple(list)`**
+- **`t.count(el)`**
+- **`t.index(el)`**
 
 **cmp\(tuple1, tuple2\)**
 
@@ -189,9 +187,9 @@ The compare method analyses two tuples element by element.
 
 It compares them and returns the following:
 
-* If tuple1 &gt; tuple2: the method returns 1.
-* If tuple2 &gt; tuple1: the method returns -1.
-* If tuple1 == tuple2: the method returns 0.
+- If tuple1 &gt; tuple2: the method returns 1.
+- If tuple2 &gt; tuple1: the method returns -1.
+- If tuple1 == tuple2: the method returns 0.
 
 ```python
 def cmp(t1, t2):
@@ -324,13 +322,12 @@ print(tuple1.index(24, 2, 5))
 
 #### Applications of Tuples <a id="applications-of-tuples"></a>
 
-* Tuples are especially used as protection against modification. Since they are immutable, we can use tuples to write-protect data.
-* When iterating over a tuple, a considerable performance gain is observed when we compare it to lists. This is more evident when the size of the tuple is large. Using the `timeit` module in Python, we see that tuples are considerably faster to iterate when compared to lists.
+- Tuples are especially used as protection against modification. Since they are immutable, we can use tuples to write-protect data.
+- When iterating over a tuple, a considerable performance gain is observed when we compare it to lists. This is more evident when the size of the tuple is large. Using the `timeit` module in Python, we see that tuples are considerably faster to iterate when compared to lists.
 
 ![Tuple Performance](https://www.section.io/engineering-education/tuples-data-structure-python/tuples-performance.png)
 
 _Note: For more in-depth analysis of why tuples perform better, check out_ [_this_](https://stackoverflow.com/questions/68630/are-tuples-more-efficient-than-lists-in-python#comment2117930_68817) _StackOverflow thread._
 
-* The dictionary data structure has an immutable key. Therefore tuples can be used as a key in a dictionary.
-* Tuples can be used to group related data. For example, a row in a database table can be grouped together and stored in a tuple.
-
+- The dictionary data structure has an immutable key. Therefore tuples can be used as a key in a dictionary.
+- Tuples can be used to group related data. For example, a row in a database table can be grouped together and stored in a tuple.

@@ -1,7 +1,5 @@
 # Built-in Types
 
-
-
 ## Built-in Types
 
 The following sections describe the standard types that are built into the interpreter.
@@ -20,9 +18,9 @@ By default, an object is considered true unless its class defines either a [`__b
 
 >
 
-* constants defined to be false: `None` and `False`.
-* zero of any numeric type: `0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0, 1)`
-* empty sequences and collections: `''`, `()`, `[]`, `{}`, `set()`, `range(0)`
+- constants defined to be false: `None` and `False`.
+- zero of any numeric type: `0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0, 1)`
+- empty sequences and collections: `''`, `()`, `[]`, `{}`, `set()`, `range(0)`
 
 Operations and built-in functions that have a Boolean result always return `0` or `False` for false and `1` or `True` for true, unless otherwise stated. \(Important exception: the Boolean operations `or` and `and` always return one of their operands.\)
 
@@ -30,11 +28,11 @@ Operations and built-in functions that have a Boolean result always return `0` o
 
 These are the Boolean operations, ordered by ascending priority:
 
-| Operation | Result | Notes |
-| :--- | :--- | :--- |
-| `x or y` | if _x_ is false, then _y_, else _x_ | \(1\) |
-| `x and y` | if _x_ is false, then _x_, else _y_ | \(2\) |
-| `not x` | if _x_ is false, then `True`, else `False` | \(3\) |
+| Operation | Result                                     | Notes |
+| :-------- | :----------------------------------------- | :---- |
+| `x or y`  | if _x_ is false, then _y_, else _x_        | \(1\) |
+| `x and y` | if _x_ is false, then _x_, else _y_        | \(2\) |
+| `not x`   | if _x_ is false, then `True`, else `False` | \(3\) |
 
 Notes:
 
@@ -48,16 +46,16 @@ There are eight comparison operations in Python. They all have the same priority
 
 This table summarizes the comparison operations:
 
-| Operation | Meaning |
-| :--- | :--- |
-| `<` | strictly less than |
-| `<=` | less than or equal |
-| `>` | strictly greater than |
-| `>=` | greater than or equal |
-| `==` | equal |
-| `!=` | not equal |
-| `is` | object identity |
-| `is not` | negated object identity |
+| Operation | Meaning                 |
+| :-------- | :---------------------- |
+| `<`       | strictly less than      |
+| `<=`      | less than or equal      |
+| `>`       | strictly greater than   |
+| `>=`      | greater than or equal   |
+| `==`      | equal                   |
+| `!=`      | not equal               |
+| `is`      | object identity         |
+| `is not`  | negated object identity |
 
 Objects of different types, except different numeric types, never compare equal. The `==` operator is always defined but for some object types \(for example, class objects\) is equivalent to [`is`](https://docs.python.org/3/reference/expressions.html#is). The `<`, `<=`, `>` and `>=` operators are only defined where they make sense; for example, they raise a [`TypeError`](https://docs.python.org/3/library/exceptions.html#TypeError) exception when one of the arguments is a complex number.
 
@@ -82,7 +80,7 @@ The constructors [`int()`](https://docs.python.org/3/library/functions.html#int)
 All numeric types \(except complex\) support the following operations \(for priorities of the operations, see [Operator precedence](https://docs.python.org/3/reference/expressions.html#operator-summary)\):
 
 | Operation | Result | Notes | Full documentation |
-| :--- | :--- | :--- | :--- |
+| :-- | :-- | :-- | :-- |
 | `x + y` | sum of _x_ and _y_ |  |  |
 | `x - y` | difference of _x_ and _y_ |  |  |
 | `x * y` | product of _x_ and _y_ |  |  |
@@ -114,7 +112,7 @@ Notes:
 All [`numbers.Real`](https://docs.python.org/3/library/numbers.html#numbers.Real) types \([`int`](https://docs.python.org/3/library/functions.html#int) and [`float`](https://docs.python.org/3/library/functions.html#float)\) also include the following operations:
 
 | Operation | Result |
-| :--- | :--- |
+| :-- | :-- |
 | [`math.trunc(x)`](https://docs.python.org/3/library/math.html#math.trunc) | _x_ truncated to [`Integral`](https://docs.python.org/3/library/numbers.html#numbers.Integral) |
 | [`round(x[, n])`](https://docs.python.org/3/library/functions.html#round) | _x_ rounded to _n_ digits, rounding half to even. If _n_ is omitted, it defaults to 0. |
 | [`math.floor(x)`](https://docs.python.org/3/library/math.html#math.floor) | the greatest [`Integral`](https://docs.python.org/3/library/numbers.html#numbers.Integral) &lt;= _x_ |
@@ -131,7 +129,7 @@ The priorities of the binary bitwise operations are all lower than the numeric o
 This table lists the bitwise operations sorted in ascending priority:
 
 | Operation | Result | Notes |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- | --- |
 | `x | y` | bitwise _or_ of _x_ and _y_ | \(4\) |
 | `x ^ y` | bitwise _exclusive or_ of _x_ and _y_ | \(4\) |
 | `x & y` | bitwise _and_ of _x_ and _y_ | \(4\) |
@@ -275,11 +273,11 @@ For numbers `x` and `y`, possibly of different types, it’s a requirement that 
 
 Here are the rules in detail:
 
-* If `x = m / n` is a nonnegative rational number and `n` is not divisible by `P`, define `hash(x)` as `m * invmod(n, P) % P`, where `invmod(n, P)` gives the inverse of `n` modulo `P`.
-* If `x = m / n` is a nonnegative rational number and `n` is divisible by `P` \(but `m` is not\) then `n` has no inverse modulo `P` and the rule above doesn’t apply; in this case define `hash(x)` to be the constant value `sys.hash_info.inf`.
-* If `x = m / n` is a negative rational number define `hash(x)` as `-hash(-x)`. If the resulting hash is `-1`, replace it with `-2`.
-* The particular values `sys.hash_info.inf`, `-sys.hash_info.inf` and `sys.hash_info.nan` are used as hash values for positive infinity, negative infinity, or nans \(respectively\). \(All hashable nans have the same hash value.\)
-* For a [`complex`](https://docs.python.org/3/library/functions.html#complex) number `z`, the hash values of the real and imaginary parts are combined by computing `hash(z.real) + sys.hash_info.imag * hash(z.imag)`, reduced modulo `2**sys.hash_info.width` so that it lies in `range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`. Again, if the result is `-1`, it’s replaced with `-2`.
+- If `x = m / n` is a nonnegative rational number and `n` is not divisible by `P`, define `hash(x)` as `m * invmod(n, P) % P`, where `invmod(n, P)` gives the inverse of `n` modulo `P`.
+- If `x = m / n` is a nonnegative rational number and `n` is divisible by `P` \(but `m` is not\) then `n` has no inverse modulo `P` and the rule above doesn’t apply; in this case define `hash(x)` to be the constant value `sys.hash_info.inf`.
+- If `x = m / n` is a negative rational number define `hash(x)` as `-hash(-x)`. If the resulting hash is `-1`, replace it with `-2`.
+- The particular values `sys.hash_info.inf`, `-sys.hash_info.inf` and `sys.hash_info.nan` are used as hash values for positive infinity, negative infinity, or nans \(respectively\). \(All hashable nans have the same hash value.\)
+- For a [`complex`](https://docs.python.org/3/library/functions.html#complex) number `z`, the hash values of the real and imaginary parts are combined by computing `hash(z.real) + sys.hash_info.imag * hash(z.imag)`, reduced modulo `2**sys.hash_info.width` so that it lies in `range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`. Again, if the result is `-1`, it’s replaced with `-2`.
 
 To clarify the above rules, here’s some example Python code, equivalent to the built-in hash, for computing the hash of a rational number, [`float`](https://docs.python.org/3/library/functions.html#float), or [`complex`](https://docs.python.org/3/library/functions.html#complex):
 
@@ -367,12 +365,12 @@ This table lists the sequence operations sorted in ascending priority. In the ta
 The `in` and `not in` operations have the same priorities as the comparison operations. The `+` \(concatenation\) and `*` \(repetition\) operations have the same priority as the corresponding numeric operations. [3](https://docs.python.org/3/library/stdtypes.html#id14)
 
 | Operation | Result | Notes |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | `x in s` | `True` if an item of _s_ is equal to _x_, else `False` | \(1\) |
 | `x not in s` | `False` if an item of _s_ is equal to _x_, else `True` | \(1\) |
 | `s + t` | the concatenation of _s_ and _t_ | \(6\)\(7\) |
 | `s * n` or `n * s` | equivalent to adding _s_ to itself _n_ times | \(2\)\(7\) |
-| `s[i]` | _i_th item of _s_, origin 0 | \(3\) |
+| `s[i]` | _i_th item of \_s_, origin 0 | \(3\) |
 | `s[i:j]` | slice of _s_ from _i_ to _j_ | \(3\)\(4\) |
 | `s[i:j:k]` | slice of _s_ from _i_ to _j_ with step _k_ | \(3\)\(5\) |
 | `len(s)` | length of _s_ |  |
@@ -420,10 +418,10 @@ Notes:
 4. The slice of _s_ from _i_ to _j_ is defined as the sequence of items with index _k_ such that `i <= k < j`. If _i_ or _j_ is greater than `len(s)`, use `len(s)`. If _i_ is omitted or `None`, use `0`. If _j_ is omitted or `None`, use `len(s)`. If _i_ is greater than or equal to _j_, the slice is empty.
 5. The slice of _s_ from _i_ to _j_ with step _k_ is defined as the sequence of items with index `x = i + n*k` such that `0 <= n < (j-i)/k`. In other words, the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when _j_ is reached \(but never including _j_\). When _k_ is positive, _i_ and _j_ are reduced to `len(s)` if they are greater. When _k_ is negative, _i_ and _j_ are reduced to `len(s) - 1` if they are greater. If _i_ or _j_ are omitted or `None`, they become “end” values \(which end depends on the sign of _k_\). Note, _k_ cannot be zero. If _k_ is `None`, it is treated like `1`.
 6. Concatenating immutable sequences always results in a new object. This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
-   * if concatenating [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, you can build a list and use [`str.join()`](https://docs.python.org/3/library/stdtypes.html#str.join) at the end or else write to an [`io.StringIO`](https://docs.python.org/3/library/io.html#io.StringIO) instance and retrieve its value when complete
-   * if concatenating [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, you can similarly use [`bytes.join()`](https://docs.python.org/3/library/stdtypes.html#bytes.join) or [`io.BytesIO`](https://docs.python.org/3/library/io.html#io.BytesIO), or you can do in-place concatenation with a [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) object. [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) objects are mutable and have an efficient overallocation mechanism
-   * if concatenating [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) objects, extend a [`list`](https://docs.python.org/3/library/stdtypes.html#list) instead
-   * for other types, investigate the relevant class documentation
+   - if concatenating [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, you can build a list and use [`str.join()`](https://docs.python.org/3/library/stdtypes.html#str.join) at the end or else write to an [`io.StringIO`](https://docs.python.org/3/library/io.html#io.StringIO) instance and retrieve its value when complete
+   - if concatenating [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, you can similarly use [`bytes.join()`](https://docs.python.org/3/library/stdtypes.html#bytes.join) or [`io.BytesIO`](https://docs.python.org/3/library/io.html#io.BytesIO), or you can do in-place concatenation with a [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) object. [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) objects are mutable and have an efficient overallocation mechanism
+   - if concatenating [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) objects, extend a [`list`](https://docs.python.org/3/library/stdtypes.html#list) instead
+   - for other types, investigate the relevant class documentation
 7. Some sequence types \(such as [`range`](https://docs.python.org/3/library/stdtypes.html#range)\) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
 8. `index` raises [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) when _x_ is not found in _s_. Not all implementations support passing the additional arguments _i_ and _j_. These arguments allow efficient searching of subsections of the sequence. Passing the extra arguments is roughly equivalent to using `s[i:j].index(x)`, only without copying any data and with the returned index being relative to the start of the sequence rather than the start of the slice.
 
@@ -442,7 +440,7 @@ The operations in the following table are defined on mutable sequence types. The
 In the table _s_ is an instance of a mutable sequence type, _t_ is any iterable object and _x_ is an arbitrary object that meets any type and value restrictions imposed by _s_ \(for example, [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) only accepts integers that meet the value restriction `0 <= x <= 255`\).
 
 | Operation | Result | Notes |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | `s[i] = x` | item _i_ of _s_ is replaced by _x_ |  |
 | `s[i:j] = t` | slice of _s_ from _i_ to _j_ is replaced by the contents of the iterable _t_ |  |
 | `del s[i:j]` | same as `s[i:j] = []` |  |
@@ -476,10 +474,10 @@ Lists are mutable sequences, typically used to store collections of homogeneous 
 
 Lists may be constructed in several ways:
 
-* Using a pair of square brackets to denote the empty list: `[]`
-* Using square brackets, separating items with commas: `[a]`, `[a, b, c]`
-* Using a list comprehension: `[x for x in iterable]`
-* Using the type constructor: `list()` or `list(iterable)`
+- Using a pair of square brackets to denote the empty list: `[]`
+- Using square brackets, separating items with commas: `[a]`, `[a, b, c]`
+- Using a list comprehension: `[x for x in iterable]`
+- Using the type constructor: `list()` or `list(iterable)`
 
 The constructor builds a list whose items are the same and in the same order as _iterable_’s items. _iterable_ may be either a sequence, a container that supports iteration, or an iterator object. If _iterable_ is already a list, a copy is made and returned, similar to `iterable[:]`. For example, `list('abc')` returns `['a', 'b', 'c']` and `list( (1, 2, 3) )` returns `[1, 2, 3]`. If no argument is given, the constructor creates a new empty list, `[]`.
 
@@ -511,10 +509,10 @@ Tuples are immutable sequences, typically used to store collections of heterogen
 
 Tuples may be constructed in a number of ways:
 
-* Using a pair of parentheses to denote the empty tuple: `()`
-* Using a trailing comma for a singleton tuple: `a,` or `(a,)`
-* Separating items with commas: `a, b, c` or `(a, b, c)`
-* Using the [`tuple()`](https://docs.python.org/3/library/stdtypes.html#tuple) built-in: `tuple()` or `tuple(iterable)`
+- Using a pair of parentheses to denote the empty tuple: `()`
+- Using a trailing comma for a singleton tuple: `a,` or `(a,)`
+- Separating items with commas: `a, b, c` or `(a, b, c)`
+- Using the [`tuple()`](https://docs.python.org/3/library/stdtypes.html#tuple) built-in: `tuple()` or `tuple(iterable)`
 
 The constructor builds a tuple whose items are the same and in the same order as _iterable_’s items. _iterable_ may be either a sequence, a container that supports iteration, or an iterator object. If _iterable_ is already a tuple, it is returned unchanged. For example, `tuple('abc')` returns `('a', 'b', 'c')` and `tuple( [1, 2, 3] )` returns `(1, 2, 3)`. If no argument is given, the constructor creates a new empty tuple, `()`.
 
@@ -597,15 +595,15 @@ New in version 3.3: The [`start`](https://docs.python.org/3/library/stdtypes.htm
 
 See also
 
-* The [linspace recipe](http://code.activestate.com/recipes/579000/) shows how to implement a lazy version of range suitable for floating point applications.
+- The [linspace recipe](http://code.activestate.com/recipes/579000/) shows how to implement a lazy version of range suitable for floating point applications.
 
 ### Text Sequence Type — [`str`](https://docs.python.org/3/library/stdtypes.html#str)
 
 Textual data in Python is handled with [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, or _strings_. Strings are immutable [sequences](https://docs.python.org/3/library/stdtypes.html#typesseq) of Unicode code points. String literals are written in a variety of ways:
 
-* Single quotes: `'allows embedded "double" quotes'`
-* Double quotes: `"allows embedded 'single' quotes"`.
-* Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
+- Single quotes: `'allows embedded "double" quotes'`
+- Double quotes: `"allows embedded 'single' quotes"`.
+- Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
 Triple quoted strings may span multiple lines - all associated whitespace will be included in the string literal.
 
@@ -734,7 +732,7 @@ New in version 3.7.`str.isdecimal`\(\)
 
 Return `True` if all characters in the string are decimal characters and there is at least one character, `False` otherwise. Decimal characters are those that can be used to form numbers in base 10, e.g. U+0660, ARABIC-INDIC DIGIT ZERO. Formally a decimal character is a character in the Unicode General Category “Nd”.`str.isdigit`\(\)
 
-Return `True` if all characters in the string are digits and there is at least one character, `False` otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric\_Type=Digit or Numeric\_Type=Decimal.`str.isidentifier`\(\)
+Return `True` if all characters in the string are digits and there is at least one character, `False` otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric_Type=Digit or Numeric_Type=Decimal.`str.isidentifier`\(\)
 
 Return `True` if the string is a valid identifier according to the language definition, section [Identifiers and keywords](https://docs.python.org/3/reference/lexical_analysis.html#identifiers).
 
@@ -755,7 +753,7 @@ True, True
 
 Return `True` if all cased characters [4](https://docs.python.org/3/library/stdtypes.html#id15) in the string are lowercase and there is at least one cased character, `False` otherwise.`str.isnumeric`\(\)
 
-Return `True` if all characters in the string are numeric characters, and there is at least one character, `False` otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH. Formally, numeric characters are those with the property value Numeric\_Type=Digit, Numeric\_Type=Decimal or Numeric\_Type=Numeric.`str.isprintable`\(\)
+Return `True` if all characters in the string are numeric characters, and there is at least one character, `False` otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH. Formally, numeric characters are those with the property value Numeric_Type=Digit, Numeric_Type=Decimal or Numeric_Type=Numeric.`str.isprintable`\(\)
 
 Return `True` if all characters in the string are printable or the string is empty, `False` otherwise. Nonprintable characters are those characters defined in the Unicode character database as “Other” or “Separator”, excepting the ASCII space \(0x20\) which is considered printable. \(Note that printable characters in this context are those which should not be escaped when [`repr()`](https://docs.python.org/3/library/functions.html#repr) is invoked on a string. It has no bearing on the handling of strings written to [`sys.stdout`](https://docs.python.org/3/library/sys.html#sys.stdout) or [`sys.stderr`](https://docs.python.org/3/library/sys.html#sys.stderr).\)`str.isspace`\(\)
 
@@ -904,19 +902,19 @@ Return a list of the lines in the string, breaking at line boundaries. Line brea
 
 This method splits on the following line boundaries. In particular, the boundaries are a superset of [universal newlines](https://docs.python.org/3/glossary.html#term-universal-newlines).
 
-| Representation | Description |
-| :--- | :--- |
-| `\n` | Line Feed |
-| `\r` | Carriage Return |
-| `\r\n` | Carriage Return + Line Feed |
-| `\v` or `\x0b` | Line Tabulation |
-| `\f` or `\x0c` | Form Feed |
-| `\x1c` | File Separator |
-| `\x1d` | Group Separator |
-| `\x1e` | Record Separator |
-| `\x85` | Next Line \(C1 Control Code\) |
-| `\u2028` | Line Separator |
-| `\u2029` | Paragraph Separator |
+| Representation | Description                   |
+| :------------- | :---------------------------- |
+| `\n`           | Line Feed                     |
+| `\r`           | Carriage Return               |
+| `\r\n`         | Carriage Return + Line Feed   |
+| `\v` or `\x0b` | Line Tabulation               |
+| `\f` or `\x0c` | Form Feed                     |
+| `\x1c`         | File Separator                |
+| `\x1d`         | Group Separator               |
+| `\x1e`         | Record Separator              |
+| `\x85`         | Next Line \(C1 Control Code\) |
+| `\u2028`       | Line Separator                |
+| `\u2029`       | Paragraph Separator           |
 
 Changed in version 3.2: `\v` and `\f` added to list of line boundaries.
 
@@ -1057,7 +1055,7 @@ In this case no `*` specifiers may occur in a format \(since they require a sequ
 The conversion flag characters are:
 
 | Flag | Meaning |
-| :--- | :--- |
+| :-- | :-- |
 | `'#'` | The value conversion will use the “alternate form” \(where defined below\). |
 | `'0'` | The conversion will be zero padded for numeric values. |
 | `'-'` | The converted value is left adjusted \(overrides the `'0'` conversion if both are given\). |
@@ -1069,7 +1067,7 @@ A length modifier \(`h`, `l`, or `L`\) may be present, but is ignored as it is n
 The conversion types are:
 
 | Conversion | Meaning | Notes |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | `'d'` | Signed integer decimal. |  |
 | `'i'` | Signed integer decimal. |  |
 | `'o'` | Signed octal value. | \(1\) |
@@ -1119,9 +1117,9 @@ Bytes objects are immutable sequences of single bytes. Since many major binary p
 
 Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a `b` prefix is added:
 
-* Single quotes: `b'still allows embedded "double" quotes'`
-* Double quotes: `b"still allows embedded 'single' quotes"`.
-* Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
+- Single quotes: `b'still allows embedded "double" quotes'`
+- Double quotes: `b"still allows embedded 'single' quotes"`.
+- Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
 
 Only ASCII characters are permitted in bytes literals \(regardless of the declared source code encoding\). Any binary values over 127 must be entered into bytes literals using the appropriate escape sequence.
 
@@ -1131,9 +1129,9 @@ While bytes literals and representations are based on ASCII text, bytes objects 
 
 In addition to the literal forms, bytes objects can be created in a number of other ways:
 
-* A zero-filled bytes object of a specified length: `bytes(10)`
-* From an iterable of integers: `bytes(range(20))`
-* Copying existing binary data via the buffer protocol: `bytes(obj)`
+- A zero-filled bytes object of a specified length: `bytes(10)`
+- From an iterable of integers: `bytes(range(20))`
+- Copying existing binary data via the buffer protocol: `bytes(obj)`
 
 Also see the [bytes](https://docs.python.org/3/library/functions.html#func-bytes) built-in.
 
@@ -1148,7 +1146,7 @@ b'.\xf0\xf1\xf2'
 
 Changed in version 3.7: [`bytes.fromhex()`](https://docs.python.org/3/library/stdtypes.html#bytes.fromhex) now skips all ASCII whitespace in the string, not just spaces.
 
-A reverse conversion function exists to transform a bytes object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
+A reverse conversion function exists to transform a bytes object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the instance.&gt;&gt;&gt;
 
@@ -1157,7 +1155,7 @@ Return a string object containing two hexadecimal digits for each byte in the in
 'f0f1f2'
 ```
 
-If you want to make the hex string easier to read, you can specify a single character separator _sep_ parameter to include in the output. By default between each byte. A second optional _bytes\_per\_sep_ parameter controls the spacing. Positive values calculate the separator position from the right, negative values from the left.&gt;&gt;&gt;
+If you want to make the hex string easier to read, you can specify a single character separator _sep_ parameter to include in the output. By default between each byte. A second optional _bytes_per_sep_ parameter controls the spacing. Positive values calculate the separator position from the right, negative values from the left.&gt;&gt;&gt;
 
 ```python
 >>> value = b'\xf0\xf1\xf2'
@@ -1171,7 +1169,7 @@ If you want to make the hex string easier to read, you can specify a single char
 
 New in version 3.5.
 
-Changed in version 3.8: [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.
+Changed in version 3.8: [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.
 
 Since bytes objects are sequences of integers \(akin to a tuple\), for a bytes object _b_, `b[0]` will be an integer, while `b[0:1]` will be a bytes object of length 1. \(This contrasts with text strings, where both indexing and slicing will produce a string of length 1\)
 
@@ -1187,10 +1185,10 @@ For Python 2.x users: In the Python 2.x series, a variety of implicit conversion
 
 There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
 
-* Creating an empty instance: `bytearray()`
-* Creating a zero-filled instance with a given length: `bytearray(10)`
-* From an iterable of integers: `bytearray(range(20))`
-* Copying existing binary data via the buffer protocol: `bytearray(b'Hi!')`
+- Creating an empty instance: `bytearray()`
+- Creating a zero-filled instance with a given length: `bytearray(10)`
+- From an iterable of integers: `bytearray(range(20))`
+- Copying existing binary data via the buffer protocol: `bytearray(b'Hi!')`
 
 As bytearray objects are mutable, they support the [mutable](https://docs.python.org/3/library/stdtypes.html#typesseq-mutable) sequence operations in addition to the common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.python.org/3/library/stdtypes.html#bytes-methods).
 
@@ -1207,7 +1205,7 @@ bytearray(b'.\xf0\xf1\xf2')
 
 Changed in version 3.7: [`bytearray.fromhex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex) now skips all ASCII whitespace in the string, not just spaces.
 
-A reverse conversion function exists to transform a bytearray object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
+A reverse conversion function exists to transform a bytearray object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the instance.&gt;&gt;&gt;
 
@@ -1218,7 +1216,7 @@ Return a string object containing two hexadecimal digits for each byte in the in
 
 New in version 3.5.
 
-Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`bytearray.hex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.
+Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`bytearray.hex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.
 
 Since bytearray objects are sequences of integers \(akin to a list\), for a bytearray object _b_, `b[0]` will be an integer, while `b[0:1]` will be a bytearray object of length 1. \(This contrasts with text strings, where both indexing and slicing will produce a string of length 1\)
 
@@ -1749,7 +1747,7 @@ In this case no `*` specifiers may occur in a format \(since they require a sequ
 The conversion flag characters are:
 
 | Flag | Meaning |
-| :--- | :--- |
+| :-- | :-- |
 | `'#'` | The value conversion will use the “alternate form” \(where defined below\). |
 | `'0'` | The conversion will be zero padded for numeric values. |
 | `'-'` | The converted value is left adjusted \(overrides the `'0'` conversion if both are given\). |
@@ -1761,7 +1759,7 @@ A length modifier \(`h`, `l`, or `L`\) may be present, but is ignored as it is n
 The conversion types are:
 
 | Conversion | Meaning | Notes |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | `'d'` | Signed integer decimal. |  |
 | `'i'` | Signed integer decimal. |  |
 | `'o'` | Signed octal value. | \(1\) |
@@ -1944,7 +1942,7 @@ b'abc'
 
 For non-contiguous arrays the result is equal to the flattened list representation with all elements converted to bytes. [`tobytes()`](https://docs.python.org/3/library/stdtypes.html#memoryview.tobytes) supports all format strings, including those that are not in [`struct`](https://docs.python.org/3/library/struct.html#module-struct) module syntax.
 
-New in version 3.8: _order_ can be {‘C’, ‘F’, ‘A’}. When _order_ is ‘C’ or ‘F’, the data of the original array is converted to C or Fortran order. For contiguous views, ‘A’ returns an exact copy of the physical memory. In particular, in-memory Fortran order is preserved. For non-contiguous views, the data is converted to C first. _order=None_ is the same as _order=’C’_.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
+New in version 3.8: _order_ can be {‘C’, ‘F’, ‘A’}. When _order_ is ‘C’ or ‘F’, the data of the original array is converted to C or Fortran order. For contiguous views, ‘A’ returns an exact copy of the physical memory. In particular, in-memory Fortran order is preserved. For non-contiguous views, the data is converted to C first. _order=None_ is the same as _order=’C’_.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the buffer.&gt;&gt;&gt;
 
@@ -1956,7 +1954,7 @@ Return a string object containing two hexadecimal digits for each byte in the bu
 
 New in version 3.5.
 
-Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`memoryview.hex()`](https://docs.python.org/3/library/stdtypes.html#memoryview.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.`tolist`\(\)
+Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`memoryview.hex()`](https://docs.python.org/3/library/stdtypes.html#memoryview.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.`tolist`\(\)
 
 Return the data in the buffer as a list of elements.&gt;&gt;&gt;
 
@@ -2218,9 +2216,9 @@ Return a new set or frozenset object whose elements are taken from _iterable_. T
 
 Sets can be created by several means:
 
-* Use a comma-separated list of elements within braces: `{'jack', 'sjoerd'}`
-* Use a set comprehension: `{c for c in 'abracadabra' if c not in 'abc'}`
-* Use the type constructor: `set()`, `set('foobar')`, `set(['a', 'b', 'foo'])`
+- Use a comma-separated list of elements within braces: `{'jack', 'sjoerd'}`
+- Use a set comprehension: `{c for c in 'abracadabra' if c not in 'abc'}`
+- Use the type constructor: `set()`, `set('foobar')`, `set(['a', 'b', 'foo'])`
 
 Instances of [`set`](https://docs.python.org/3/library/stdtypes.html#set) and [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset) provide the following operations:`len(s)`
 
@@ -2300,9 +2298,9 @@ Return a new dictionary initialized from an optional positional argument and a p
 
 Dictionaries can be created by several means:
 
-* Use a comma-separated list of `key: value` pairs within braces: `{'jack': 4098, 'sjoerd': 4127}` or `{4098: 'jack', 4127: 'sjoerd'}`
-* Use a dict comprehension: `{}`, `{x: x ** 2 for x in range(10)}`
-* Use the type constructor: `dict()`, `dict([('foo', 100), ('bar', 200)])`, `dict(foo=100, bar=200)`
+- Use a comma-separated list of `key: value` pairs within braces: `{'jack': 4098, 'sjoerd': 4127}` or `{4098: 'jack', 4127: 'sjoerd'}`
+- Use a dict comprehension: `{}`, `{x: x ** 2 for x in range(10)}`
+- Use the type constructor: `dict()`, `dict([('foo', 100), ('bar', 200)])`, `dict(foo=100, bar=200)`
 
 If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object. Otherwise, the positional argument must be an [iterable](https://docs.python.org/3/glossary.html#term-iterable) object. Each item in the iterable must itself be an iterable with exactly two objects. The first object of each item becomes a key in the new dictionary, and the second object the corresponding value. If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 
@@ -2517,7 +2515,7 @@ Enter the runtime context and return either this object or another object relate
 
 An example of a context manager that returns itself is a [file object](https://docs.python.org/3/glossary.html#term-file-object). File objects return themselves from \_\_enter\_\_\(\) to allow [`open()`](https://docs.python.org/3/library/functions.html#open) to be used as the context expression in a [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement.
 
-An example of a context manager that returns a related object is the one returned by [`decimal.localcontext()`](https://docs.python.org/3/library/decimal.html#decimal.localcontext). These managers set the active decimal context to a copy of the original decimal context and then return the copy. This allows changes to be made to the current decimal context in the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement without affecting code outside the `with` statement.`contextmanager.__exit__`\(_exc\_type_, _exc\_val_, _exc\_tb_\)
+An example of a context manager that returns a related object is the one returned by [`decimal.localcontext()`](https://docs.python.org/3/library/decimal.html#decimal.localcontext). These managers set the active decimal context to a copy of the original decimal context and then return the copy. This allows changes to be made to the current decimal context in the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement without affecting code outside the `with` statement.`contextmanager.__exit__`\(_exc_type_, _exc_val_, _exc_tb_\)
 
 Exit the runtime context and return a Boolean flag indicating if any exception that occurred should be suppressed. If an exception occurred while executing the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement, the arguments contain the exception type, value and traceback information. Otherwise, all three arguments are `None`.
 
@@ -2620,44 +2618,44 @@ dict[str, int]
 
 These standard library collections support parameterized generics.
 
-* [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple)
-* [`list`](https://docs.python.org/3/library/stdtypes.html#list)
-* [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
-* [`set`](https://docs.python.org/3/library/stdtypes.html#set)
-* [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset)
-* [`type`](https://docs.python.org/3/library/functions.html#type)
-* [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque)
-* [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
-* [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict)
-* [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
-* [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap)
-* [`collections.abc.Awaitable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable)
-* [`collections.abc.Coroutine`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Coroutine)
-* [`collections.abc.AsyncIterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable)
-* [`collections.abc.AsyncIterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterator)
-* [`collections.abc.AsyncGenerator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncGenerator)
-* [`collections.abc.Iterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable)
-* [`collections.abc.Iterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterator)
-* [`collections.abc.Generator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Generator)
-* [`collections.abc.Reversible`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Reversible)
-* [`collections.abc.Container`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Container)
-* [`collections.abc.Collection`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Collection)
-* [`collections.abc.Callable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable)
-* [`collections.abc.Set`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Set)
-* [`collections.abc.MutableSet`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet)
-* [`collections.abc.Mapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping)
-* [`collections.abc.MutableMapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping)
-* [`collections.abc.Sequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence)
-* [`collections.abc.MutableSequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence)
-* [`collections.abc.ByteString`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ByteString)
-* [`collections.abc.MappingView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MappingView)
-* [`collections.abc.KeysView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.KeysView)
-* [`collections.abc.ItemsView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ItemsView)
-* [`collections.abc.ValuesView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ValuesView)
-* [`contextlib.AbstractContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager)
-* [`contextlib.AbstractAsyncContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager)
-* [re.Pattern](https://docs.python.org/3/library/re.html#re-objects)
-* [re.Match](https://docs.python.org/3/library/re.html#match-objects)
+- [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple)
+- [`list`](https://docs.python.org/3/library/stdtypes.html#list)
+- [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+- [`set`](https://docs.python.org/3/library/stdtypes.html#set)
+- [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset)
+- [`type`](https://docs.python.org/3/library/functions.html#type)
+- [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque)
+- [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+- [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict)
+- [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
+- [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap)
+- [`collections.abc.Awaitable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable)
+- [`collections.abc.Coroutine`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Coroutine)
+- [`collections.abc.AsyncIterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable)
+- [`collections.abc.AsyncIterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterator)
+- [`collections.abc.AsyncGenerator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncGenerator)
+- [`collections.abc.Iterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable)
+- [`collections.abc.Iterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterator)
+- [`collections.abc.Generator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Generator)
+- [`collections.abc.Reversible`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Reversible)
+- [`collections.abc.Container`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Container)
+- [`collections.abc.Collection`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Collection)
+- [`collections.abc.Callable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable)
+- [`collections.abc.Set`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Set)
+- [`collections.abc.MutableSet`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet)
+- [`collections.abc.Mapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping)
+- [`collections.abc.MutableMapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping)
+- [`collections.abc.Sequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence)
+- [`collections.abc.MutableSequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence)
+- [`collections.abc.ByteString`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ByteString)
+- [`collections.abc.MappingView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MappingView)
+- [`collections.abc.KeysView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.KeysView)
+- [`collections.abc.ItemsView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ItemsView)
+- [`collections.abc.ValuesView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ValuesView)
+- [`contextlib.AbstractContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager)
+- [`contextlib.AbstractAsyncContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager)
+- [re.Pattern](https://docs.python.org/3/library/re.html#re-objects)
+- [re.Match](https://docs.python.org/3/library/re.html#match-objects)
 
 #### Special Attributes of Generic Alias
 
@@ -2693,9 +2691,9 @@ This attribute is a lazily computed tuple \(possibly empty\) of unique type vari
 
 See also
 
-* [**PEP 585**](https://www.python.org/dev/peps/pep-0585) – “Type Hinting Generics In Standard Collections”
-* [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) – Used to implement parameterized generics.
-* [Generics](https://docs.python.org/3/library/typing.html#generics) – Generics in the [`typing`](https://docs.python.org/3/library/typing.html#module-typing) module.
+- [**PEP 585**](https://www.python.org/dev/peps/pep-0585) – “Type Hinting Generics In Standard Collections”
+- [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) – Used to implement parameterized generics.
+- [Generics](https://docs.python.org/3/library/typing.html#generics) – Generics in the [`typing`](https://docs.python.org/3/library/typing.html#module-typing) module.
 
 New in version 3.9.
 
@@ -2818,4 +2816,3 @@ Each class keeps a list of weak references to its immediate subclasses. This met
 >>> int.__subclasses__()
 [<class 'bool'>]
 ```
-

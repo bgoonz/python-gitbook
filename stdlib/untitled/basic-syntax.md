@@ -1,7 +1,5 @@
 # Basic Syntax
 
-
-
 ### Whitespace and indentation
 
 If you’ve been working in other programming languages such as Java, C\#, or C/C++, you know that these languages use semicolons \(`;`\) to separate the statements.
@@ -29,9 +27,9 @@ At the end of each line, you don’t see any semicolon to terminate the statemen
 
 By using indentation and whitespace to organize the code, Python code gains the following advantages:
 
-* First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.
-* Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.
-* Third, the code is more readable and clear in comparison with other programming languages.
+- First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.
+- Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.
+- Third, the code is more readable and clear in comparison with other programming languages.
 
 ### Comments
 
@@ -119,9 +117,8 @@ print(s)Code language: Python (python)
 
 ### Summary
 
-* A Python statement ends with a newline character.
-* Python uses spaces and identation to organize its code structure.
-* Identifiers are names that identify variables, functions, modules, classes, etc. in Python.
-* Comments describe why the code works. They are ingored by the Python interpreter.
-* Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote
-
+- A Python statement ends with a newline character.
+- Python uses spaces and identation to organize its code structure.
+- Identifiers are names that identify variables, functions, modules, classes, etc. in Python.
+- Comments describe why the code works. They are ingored by the Python interpreter.
+- Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote

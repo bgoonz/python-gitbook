@@ -175,7 +175,7 @@ John Doe is 30 years old. He lives in Noman city, Nomanland.
 
 #### Method to Modify Class Default Values
 
-In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add\_skill method to add skills to the skills list.
+In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add_skill method to add skills to the skills list.
 
 ```python
 class Person:
@@ -243,8 +243,7 @@ Lidiya Teklemariam is 28 years old. He lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We did not call the **init**\(\) constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.
-We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**\(\) function, the child class will no longer inherit the parent's **init**\(\) function.
+We did not call the **init**\(\) constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_. We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**\(\) function, the child class will no longer inherit the parent's **init**\(\) function.
 
 #### Overriding parent method
 
@@ -321,12 +320,8 @@ Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
 
+{% tabs %} {% tab title="Abstract Class" %}
 
-
-
-
-{% tabs %}
-{% tab title="Abstract Class" %}
 ```python
 """
 Abstract class is an extension of a basic class. Like a basic class, an
@@ -448,9 +443,11 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 {% endtab %}
 
 {% tab title="Basic Class" %}
+
 ```python
 
 
@@ -534,8 +531,8 @@ if __name__ == "__main__":
     main()
 
 ```
-{% endtab %}
-{% endtabs %}
+
+{% endtab %} {% endtabs %}
 
 ## 7. Classes and objects
 
@@ -1332,4 +1329,3 @@ An operation defined in linear algebra that multiplies two `Point`s and yields a
 An operation defined in linear algebra that multiplies each of the coordinates of a `Point` by a numeric value.polymorphic
 
 A function that can operate on more than one type. If all the operations in a function can be applied to a type, then the function can be applied to a type.
-

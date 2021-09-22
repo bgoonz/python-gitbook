@@ -4,10 +4,6 @@
 
 A _list_ is a value that contains multiple values in an ordered sequence. The term _list value_ refers to the list itself \(which is a value that can be stored in a variable or passed to a function like any other value\), not the values inside the list value. A list value looks like this: \['cat', 'bat', 'rat', 'elephant'\]. Just as string values are typed with quote characters to mark where the string begins and ends, a list begins with an opening square bracket and ends with a closing square bracket, \[\]. Values inside the list are also called _items_. Items are separated with commas \(that is, they are _comma-delimited_\). For example, enter the following into the interactive shell:
 
-
-
-
-
 ```python
 >>> [1, 2, 3]
    [1, 2, 3]
@@ -21,10 +17,6 @@ A _list_ is a value that contains multiple values in an ordered sequence. The te
 
 ```
 
-           
-
-   
-
 The spam variable ➊ is still assigned only one value: the list value. But the list value itself contains other values. The value \[\] is an empty list that contains no values, similar to '', the empty string.
 
 **Getting Individual Values in a List with Indexes**
@@ -34,10 +26,6 @@ Say you have the list \['cat', 'bat', 'rat', 'elephant'\] stored in a variable n
 _Figure 4-1: A list value stored in the variable spam, showing which value each index refers to_
 
 For example, enter the following expressions into the interactive shell. Start by assigning a list to the variable spam.
-
-
-
-
 
 ```python
 
@@ -58,17 +46,9 @@ For example, enter the following expressions into the interactive shell. Start b
    'The bat ate the cat.'
 ```
 
-           
-
- 
-
 Notice that the expression 'Hello, ' + spam\[0\] ➊ evaluates to 'Hello, ' + 'cat' because spam\[0\] evaluates to the string 'cat'. This expression in turn evaluates to the string value 'Hello, cat' ➋.
 
 Python will give you an IndexError error message if you use an index that exceeds the number of values in your list value.
-
-
-
-
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -80,10 +60,6 @@ IndexError: list index out of range
 
 ```
 
-           
-
-
-
 Indexes can be only integer values, not floats. The following example will cause a TypeError error:
 
 &gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
@@ -91,17 +67,13 @@ Indexes can be only integer values, not floats. The following example will cause
 'bat'  
 &gt;&gt;&gt; spam\[1.0\]  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#13&gt;", line 1, in &lt;module&gt;  
-    spam\[1.0\]  
+ File "&lt;pyshell\#13&gt;", line 1, in &lt;module&gt;  
+ spam\[1.0\]  
 TypeError: list indices must be integers or slices, not float  
 &gt;&gt;&gt; spam\[int\(1.0\)\]  
 'bat'
 
 Lists can also contain other list values. The values in these lists of lists can be accessed using multiple indexes, like so:
-
-
-
-
 
 ```python
 
@@ -114,19 +86,11 @@ Lists can also contain other list values. The values in these lists of lists can
 50
 ```
 
-           
-
-
-
 The first index dictates which list value to use, and the second indicates the value within the list value. For example, spam\[0\]\[1\] prints 'bat', the second value in the first list. If you only use one index, the program will print the full list value at that index.
 
 **Negative Indexes**
 
 While indexes start at 0 and go up, you can also use negative integers for the index. The integer value -1 refers to the last index in a list, the value -2 refers to the second-to-last index in a list, and so on. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
@@ -139,22 +103,14 @@ While indexes start at 0 and go up, you can also use negative integers for the i
 'The elephant is afraid of the bat.'
 ```
 
-           
-
-
-
 **Getting a List from Another List with Slices**
 
 Just as an index can get a single value from a list, a _slice_ can get several values from a list, in the form of a new list. A slice is typed between square brackets, like an index, but it has two integers separated by a colon. Notice the difference between indexes and slices.
 
-* spam\[2\] is a list with an index \(one integer\).
-* spam\[1:4\] is a list with a slice \(two integers\).
+- spam\[2\] is a list with an index \(one integer\).
+- spam\[1:4\] is a list with a slice \(two integers\).
 
 In a slice, the first integer is the index where the slice starts. The second integer is the index where the slice ends. A slice goes up to, but will not include, the value at the second index. A slice evaluates to a new list value. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -167,15 +123,7 @@ In a slice, the first integer is the index where the slice starts. The second in
 
 ```
 
-           
-
-
-
 As a shortcut, you can leave out one or both of the indexes on either side of the colon in the slice. Leaving out the first index is the same as using 0, or the beginning of the list. Leaving out the second index is the same as using the length of the list, which will slice to the end of the list. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -188,10 +136,6 @@ As a shortcut, you can leave out one or both of the indexes on either side of th
 
 ```
 
-           
-
-
-
 **Getting a List’s Length with the len\(\) Function**
 
 The len\(\) function will return the number of values that are in a list value passed to it, just like it can count the number of characters in a string value. Enter the following into the interactive shell:
@@ -203,10 +147,6 @@ The len\(\) function will return the number of values that are in a list value p
 **Changing Values in a List with Indexes**
 
 Normally, a variable name goes on the left side of an assignment statement, like spam = 42. However, you can also use an index of a list to change the value at that index. For example, spam\[1\] = 'aardvark' means “Assign the value at index 1 in the list spam to the string 'aardvark'.” Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
@@ -222,17 +162,9 @@ Normally, a variable name goes on the left side of an assignment statement, like
 ['cat', 'aardvark', 'aardvark', 12345]
 ```
 
-           
-
-
-
 **List Concatenation and List Replication**
 
 Lists can be concatenated and replicated just like strings. The + operator combines two lists to create a new list value and the \* operator can be used with a list and an integer value to replicate the list. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
@@ -246,17 +178,9 @@ Lists can be concatenated and replicated just like strings. The + operator combi
 [1, 2, 3, 'A', 'B', 'C']
 ```
 
-           
-
-
-
 **Removing Values from Lists with del Statements**
 
 The del statement will delete values at an index in a list. All of the values in the list after the deleted value will be moved up one index. For example, enter the following into the interactive shell:
-
-
-
-
 
 ```python
 >>> spam = ['cat', 'bat', 'rat', 'elephant']
@@ -269,19 +193,11 @@ The del statement will delete values at an index in a list. All of the values in
 
 ```
 
-           
-
-
-
 The del statement can also be used on a simple variable to delete it, as if it were an “unassignment” statement. If you try to use the variable after deleting it, you will get a NameError error because the variable no longer exists. In practice, you almost never need to delete simple variables. The del statement is mostly used to delete values from lists.
 
 #### **Working with Lists** <a id="calibre_link-161"></a>
 
 When you first begin writing programs, it’s tempting to create many individual variables to store a group of similar values. For example, if I wanted to store the names of my cats, I might be tempted to write code like this:
-
-
-
-
 
 ```python
 catName1 = 'Zophie'
@@ -293,15 +209,7 @@ catName6 = 'Miss Cleo'
 
 ```
 
-           
-
-
-
 It turns out that this is a bad way to write code. \(Also, I don’t actually own this many cats, I swear.\) For one thing, if the number of cats changes, your program will never be able to store more cats than you have variables. These types of programs also have a lot of duplicate or nearly identical code in them. Consider how much duplicate code is in the following program, which you should enter into the file editor and save as _allMyCats1.py_:
-
-
-
-
 
 ```python
 print('Enter the name of cat 1:')
@@ -322,15 +230,7 @@ catName5 + ' ' + catName6)
 
 ```
 
-           
-
-
-
 Instead of using multiple, repetitive variables, you can use a single variable that contains a list value. For example, here’s a new and improved version of the _allMyCats1.py_ program. This new version uses a single list and can store any number of cats that the user types in. In a new file editor window, enter the following source code and save it as _allMyCats2.py_:
-
-
-
-
 
 ```python
 catNames = []
@@ -347,10 +247,6 @@ for name in catNames:
 
 ```
 
-           
-
-
-
 When you run this program, the output will look something like this:
 
 Enter the name of cat 1 \(Or enter nothing to stop.\):  
@@ -365,15 +261,15 @@ Enter the name of cat 5 \(Or enter nothing to stop.\):
 Fat-tail  
 Enter the name of cat 6 \(Or enter nothing to stop.\):  
 Miss Cleo  
-Enter the name of cat 7 \(Or enter nothing to stop.\):  
-  
+Enter the name of cat 7 \(Or enter nothing to stop.\):
+
 The cat names are:  
-  Zophie  
-  Pooka  
-  Simon  
-  Lady Macbeth  
-  Fat-tail  
-  Miss Cleo
+ Zophie  
+ Pooka  
+ Simon  
+ Lady Macbeth  
+ Fat-tail  
+ Miss Cleo
 
 You can view the execution of these programs at [_https://autbor.com/allmycats1/_](https://autbor.com/allmycats1/) and [_https://autbor.com/allmycats2/_](https://autbor.com/allmycats2/). The benefit of using a list is that your data is now in a structure, so your program is much more flexible in processing the data than it would be with several repetitive variables.
 
@@ -382,7 +278,7 @@ You can view the execution of these programs at [_https://autbor.com/allmycats1/
 In [Chapter 2](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-106), you learned about using for loops to execute a block of code a certain number of times. Technically, a for loop repeats the code block once for each item in a list value. For example, if you ran this code:
 
 for i in range\(4\):  
-    print\(i\)
+ print\(i\)
 
 the output of this program would be as follows:
 
@@ -394,7 +290,7 @@ the output of this program would be as follows:
 This is because the return value from range\(4\) is a sequence value that Python considers similar to \[0, 1, 2, 3\]. \(Sequences are described in “[Sequence Data Types](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-175)” on [page 93](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-709).\) The following program has the same output as the previous one:
 
 for i in \[0, 1, 2, 3\]:  
-    print\(i\)
+ print\(i\)
 
 The previous for loop actually loops through its clause with the variable i set to a successive value in the \[0, 1, 2, 3\] list in each iteration.
 
@@ -402,8 +298,8 @@ A common Python technique is to use range\(len\(someList\)\) with a for loop to 
 
 &gt;&gt;&gt; supplies = \['pens', 'staplers', 'flamethrowers', 'binders'\]  
 &gt;&gt;&gt; for i in range\(len\(supplies\)\):  
-...     print\('Index ' + str\(i\) + ' in supplies is: ' + supplies\[i\]\)  
-  
+... print\('Index ' + str\(i\) + ' in supplies is: ' + supplies\[i\]\)
+
 Index 0 in supplies is: pens  
 Index 1 in supplies is: staplers  
 Index 2 in supplies is: flamethrowers  
@@ -414,10 +310,6 @@ Using range\(len\(supplies\)\) in the previously shown for loop is handy because
 **The in and not in Operators**
 
 You can determine whether a value is or isn’t in a list with the in and not in operators. Like other operators, in and not in are used in expressions and connect two values: a value to look for in a list and the list where it may be found. These expressions will evaluate to a Boolean value. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
@@ -432,30 +324,20 @@ False
 True
 ```
 
-           
-
-
-
 For example, the following program lets the user type in a pet name and then checks to see whether the name is in a list of pets. Open a new file editor window, enter the following code, and save it as _myPets.py_:
-
-
-
-
 
 ```python
 
 
 ```
 
-           
-
 myPets = \['Zophie', 'Pooka', 'Fat-tail'\]  
 print\('Enter a pet name:'\)  
 name = input\(\)  
 if name not in myPets:  
-    print\('I do not have a pet named ' + name\)  
+ print\('I do not have a pet named ' + name\)  
 else:  
-    print\(name + ' is my pet.'\)
+ print\(name + ' is my pet.'\)
 
 The output may look something like this:
 
@@ -466,8 +348,6 @@ I do not have a pet named Footfoot
 You can view the execution of this program at [_https://autbor.com/mypets/_](https://autbor.com/mypets/).
 
 [https://pythontutor.com/visualize.html\#](https://pythontutor.com/visualize.html#)
-
-
 
 **The Multiple Assignment Trick**
 
@@ -485,43 +365,31 @@ you could type this line of code:
 
 The number of variables and the length of the list must be exactly equal, or Python will give you a ValueError:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; cat = \['fat', 'gray', 'loud'\]  
 &gt;&gt;&gt; size, color, disposition, name = cat  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#84&gt;", line 1, in &lt;module&gt;  
-    size, color, disposition, name = cat  
+ File "&lt;pyshell\#84&gt;", line 1, in &lt;module&gt;  
+ size, color, disposition, name = cat  
 ValueError: not enough values to unpack \(expected 4, got 3\)
 
 **Using the enumerate\(\) Function with Lists**
 
-Instead of using the range\(len\(someList\)\) technique with a for loop to obtain the integer index of the items in the list, you can call the enumerate\(\) function instead. On each iteration of the loop, enumerate\(\) will return two values: the index of the item in the list, and the item in the list itself. For example, this code is equivalent to the code in the “[Using for Loops with Lists](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-162)” 
-
-
-
-
+Instead of using the range\(len\(someList\)\) technique with a for loop to obtain the integer index of the items in the list, you can call the enumerate\(\) function instead. On each iteration of the loop, enumerate\(\) will return two values: the index of the item in the list, and the item in the list itself. For example, this code is equivalent to the code in the “[Using for Loops with Lists](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-162)”
 
 ```python
 
 
 ```
 
-           
-
 &gt;&gt;&gt; supplies = \['pens', 'staplers', 'flamethrowers', 'binders'\]  
 &gt;&gt;&gt; for index, item in enumerate\(supplies\):  
-...     print\('Index ' + str\(index\) + ' in supplies is: ' + item\)  
-  
+... print\('Index ' + str\(index\) + ' in supplies is: ' + item\)
+
 Index 0 in supplies is: pens  
 Index 1 in supplies is: staplers  
 Index 2 in supplies is: flamethrowers  
@@ -533,16 +401,10 @@ The enumerate\(\) function is useful if you need both the item and the item’s 
 
 The random module has a couple functions that accept lists for arguments. The random.choice\(\) function will return a randomly selected item from the list. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; import random  
 &gt;&gt;&gt; pets = \['Dog', 'Cat', 'Moose'\]  
@@ -557,16 +419,10 @@ You can consider random.choice\(someList\) to be a shorter form of someList\[ran
 
 The random.shuffle\(\) function will reorder the items in a list. This function modifies the list in place, rather than returning a new list. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; import random  
 &gt;&gt;&gt; people = \['Alice', 'Bob', 'Carol', 'David'\]  
@@ -598,25 +454,19 @@ There are augmented assignment operators for the +, -, \*, /, and % operators, d
 **Table 4-1:** The Augmented Assignment Operators
 
 | **Augmented assignment statement** | **Equivalent assignment statement** |
-| :--- | :--- |
-| spam += 1 | spam = spam + 1 |
-| spam -= 1 | spam = spam - 1 |
-| spam \*= 1 | spam = spam \* 1 |
-| spam /= 1 | spam = spam / 1 |
-| spam %= 1 | spam = spam % 1 |
+| :--------------------------------- | :---------------------------------- |
+| spam += 1                          | spam = spam + 1                     |
+| spam -= 1                          | spam = spam - 1                     |
+| spam \*= 1                         | spam = spam \* 1                    |
+| spam /= 1                          | spam = spam / 1                     |
+| spam %= 1                          | spam = spam % 1                     |
 
 The += operator can also do string and list concatenation, and the \*= operator can do string and list replication. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = 'Hello,'  
 &gt;&gt;&gt; spam += ' world!'  
@@ -637,16 +487,10 @@ Each data type has its own set of methods. The list data type, for example, has 
 
 List values have an index\(\) method that can be passed a value, and if that value exists in the list, the index of the value is returned. If the value isn’t in the list, then Python produces a ValueError error. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['hello', 'hi', 'howdy', 'heyas'\]  
 &gt;&gt;&gt; spam.index\('hello'\)  
@@ -655,8 +499,8 @@ List values have an index\(\) method that can be passed a value, and if that val
 3  
 &gt;&gt;&gt; spam.index\('howdy howdy howdy'\)  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#31&gt;", line 1, in &lt;module&gt;  
-    spam.index\('howdy howdy howdy'\)  
+ File "&lt;pyshell\#31&gt;", line 1, in &lt;module&gt;  
+ spam.index\('howdy howdy howdy'\)  
 ValueError: 'howdy howdy howdy' is not in list
 
 When there are duplicates of the value in the list, the index of its first appearance is returned. Enter the following into the interactive shell, and notice that index\(\) returns 1, not 3:
@@ -685,44 +529,32 @@ Notice that the code is spam.append\('moose'\) and spam.insert\(1, 'chicken'\), 
 
 Methods belong to a single data type. The append\(\) and insert\(\) methods are list methods and can be called only on list values, not on other values such as strings or integers. Enter the following into the interactive shell, and note the AttributeError error messages that show up:
 
-
-
-
-
 ```python
 
 
 ```
 
-           
-
 &gt;&gt;&gt; eggs = 'hello'  
 &gt;&gt;&gt; eggs.append\('world'\)  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#19&gt;", line 1, in &lt;module&gt;  
-    eggs.append\('world'\)  
+ File "&lt;pyshell\#19&gt;", line 1, in &lt;module&gt;  
+ eggs.append\('world'\)  
 AttributeError: 'str' object has no attribute 'append'  
 &gt;&gt;&gt; bacon = 42  
 &gt;&gt;&gt; bacon.insert\(1, 'world'\)  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#22&gt;", line 1, in &lt;module&gt;  
-    bacon.insert\(1, 'world'\)  
+ File "&lt;pyshell\#22&gt;", line 1, in &lt;module&gt;  
+ bacon.insert\(1, 'world'\)  
 AttributeError: 'int' object has no attribute 'insert'
 
 **Removing Values from Lists with the remove\(\) Method**
 
 The remove\(\) method is passed the value to be removed from the list it is called on. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
 &gt;&gt;&gt; spam.remove\('bat'\)  
@@ -731,36 +563,24 @@ The remove\(\) method is passed the value to be removed from the list it is call
 
 Attempting to delete a value that does not exist in the list will result in a ValueError error. For example, enter the following into the interactive shell and notice the error that is displayed:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'elephant'\]  
 &gt;&gt;&gt; spam.remove\('chicken'\)  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#11&gt;", line 1, in &lt;module&gt;  
-    spam.remove\('chicken'\)  
+ File "&lt;pyshell\#11&gt;", line 1, in &lt;module&gt;  
+ spam.remove\('chicken'\)  
 ValueError: list.remove\(x\): x not in list
 
 If the value appears multiple times in the list, only the first instance of the value will be removed. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['cat', 'bat', 'rat', 'cat', 'hat', 'cat'\]  
 &gt;&gt;&gt; spam.remove\('cat'\)  
@@ -773,16 +593,10 @@ The del statement is good to use when you know the index of the value you want t
 
 Lists of number values or lists of strings can be sorted with the sort\(\) method. For example, enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \[2, 5, 3.14, 1, -7\]  
 &gt;&gt;&gt; spam.sort\(\)  
@@ -803,36 +617,24 @@ There are three things you should note about the sort\(\) method. First, the sor
 
 Second, you cannot sort lists that have both number values _and_ string values in them, since Python doesn’t know how to compare these values. Enter the following into the interactive shell and notice the TypeError error:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \[1, 3, 2, 4, 'Alice', 'Bob'\]  
 &gt;&gt;&gt; spam.sort\(\)  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#70&gt;", line 1, in &lt;module&gt;  
-    spam.sort\(\)  
+ File "&lt;pyshell\#70&gt;", line 1, in &lt;module&gt;  
+ spam.sort\(\)  
 TypeError: '&lt;' not supported between instances of 'str' and 'int'
 
 Third, sort\(\) uses “ASCIIbetical order” rather than actual alphabetical order for sorting strings. This means uppercase letters come before lowercase letters. Therefore, the lowercase _a_ is sorted so that it comes _after_ the uppercase _Z_. For an example, enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['Alice', 'ants', 'Bob', 'badgers', 'Carol', 'cats'\]  
 &gt;&gt;&gt; spam.sort\(\)  
@@ -841,16 +643,10 @@ Third, sort\(\) uses “ASCIIbetical order” rather than actual alphabetical or
 
 If you need to sort the values in regular alphabetical order, pass str.lower for the key keyword argument in the sort\(\) method call.
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['a', 'z', 'A', 'Z'\]  
 &gt;&gt;&gt; spam.sort\(key=str.lower\)  
@@ -863,16 +659,10 @@ This causes the sort\(\) function to treat all the items in the list as if they 
 
 If you need to quickly reverse the order of the items in a list, you can call the reverse\(\) list method. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; spam = \['cat', 'dog', 'moose'\]  
 &gt;&gt;&gt; spam.reverse\(\)  
@@ -884,8 +674,8 @@ If you need to quickly reverse the order of the items in a list, you can call th
 In most cases, the amount of indentation for a line of code tells Python what block it is in. There are some exceptions to this rule, however. For example, lists can actually span several lines in the source code file. The indentation of these lines does not matter; Python knows that the list is not finished until it sees the ending square bracket. For example, you can have code that looks like this:
 
 spam = \['apples',  
-    'oranges',  
-                    'bananas',  
+ 'oranges',  
+ 'bananas',  
 'cats'\]  
 print\(spam\)
 
@@ -894,7 +684,7 @@ Of course, practically speaking, most people use Python’s behavior to make the
 You can also split up a single instruction across multiple lines using the \ _line continuation character_ at the end. Think of \ as saying, “This instruction continues on the next line.” The indentation on the line after a \ line continuation is not significant. For example, the following is valid Python code:
 
 print\('Four score and seven ' + \  
-      'years ago...'\)
+ 'years ago...'\)
 
 These tricks are useful when you want to rearrange long lines of Python code to be a bit more readable.
 
@@ -904,29 +694,23 @@ Like the sort\(\) list method, reverse\(\) doesn’t return a list. This is why 
 
 Using lists, you can write a much more elegant version of the previous chapter’s Magic 8 Ball program. Instead of several lines of nearly identical elif statements, you can create a single list that the code works with. Open a new file editor window and enter the following code. Save it as _magic8Ball2.py_.
 
-
-
-
-
 ```python
 
 
 ```
 
-           
+import random
 
-import random  
-  
 messages = \['It is certain',  
-    'It is decidedly so',  
-    'Yes definitely',  
-    'Reply hazy try again',  
-    'Ask again later',  
-    'Concentrate and ask again',  
-    'My reply is no',  
-    'Outlook not so good',  
-    'Very doubtful'\]  
-  
+ 'It is decidedly so',  
+ 'Yes definitely',  
+ 'Reply hazy try again',  
+ 'Ask again later',  
+ 'Concentrate and ask again',  
+ 'My reply is no',  
+ 'Outlook not so good',  
+ 'Very doubtful'\]
+
 print\(messages\[random.randint\(0, len\(messages\) - 1\)\]\)
 
 You can view the execution of this program at [_https://autbor.com/magic8ball2/_](https://autbor.com/magic8ball2/).
@@ -939,16 +723,10 @@ Notice the expression you use as the index for messages: random.randint \(0, len
 
 Lists aren’t the only data types that represent ordered sequences of values. For example, strings and lists are actually similar if you consider a string to be a “list” of single text characters. The Python sequence data types include lists, strings, range objects returned by range\(\), and tuples \(explained in the “[The Tuple Data Type](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-177)” on [page 96](https://automatetheboringstuff.com/2e/chapter4/#calibre_link-713)\). Many of the things you can do with lists can also be done with strings and other values of sequence types: indexing; slicing; and using them with for loops, with len\(\), and with the in and not in operators. To see this, enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; name = 'Zophie'  
 &gt;&gt;&gt; name\[0\]  
@@ -964,8 +742,8 @@ False
 &gt;&gt;&gt; 'p' not in name  
 False  
 &gt;&gt;&gt; for i in name:  
-...     print\('\* \* \* ' + i + ' \* \* \*'\)  
-  
+... print\('\* \* \* ' + i + ' \* \* \*'\)
+
 \* \* \* Z \* \* \*  
 \* \* \* o \* \* \*  
 \* \* \* p \* \* \*  
@@ -977,36 +755,24 @@ False
 
 But lists and strings are different in an important way. A list value is a _mutable_ data type: it can have values added, removed, or changed. However, a string is _immutable_: it cannot be changed. Trying to reassign a single character in a string results in a TypeError error, as you can see by entering the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; name = 'Zophie a cat'  
 &gt;&gt;&gt; name\[7\] = 'the'  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#50&gt;", line 1, in &lt;module&gt;  
-    name\[7\] = 'the'  
+ File "&lt;pyshell\#50&gt;", line 1, in &lt;module&gt;  
+ name\[7\] = 'the'  
 TypeError: 'str' object does not support item assignment
 
 The proper way to “mutate” a string is to use slicing and concatenation to build a _new_ string by copying from parts of the old string. Enter the following into the interactive shell:
-
-
-
-
 
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; name = 'Zophie a cat'  
 &gt;&gt;&gt; newName = name\[0:7\] + 'the' + name\[8:12\]  
@@ -1019,16 +785,10 @@ We used \[0:7\] and \[8:12\] to refer to the characters that we don’t wish to 
 
 Although a list value _is_ mutable, the second line in the following code does not modify the list eggs:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; eggs = \[1, 2, 3\]  
 &gt;&gt;&gt; eggs = \[4, 5, 6\]  
@@ -1039,16 +799,10 @@ The list value in eggs isn’t being changed here; rather, an entirely new and d
 
 If you wanted to actually modify the original list in eggs to contain \[4, 5, 6\], you would have to do something like this:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; eggs = \[1, 2, 3\]  
 &gt;&gt;&gt; del eggs\[2\]  
@@ -1074,16 +828,10 @@ Mutable versus immutable types may seem like a meaningless distinction, but “[
 
 The _tuple_ data type is almost identical to the list data type, except in two ways. First, tuples are typed with parentheses, \( and \), instead of square brackets, \[ and \]. For example, enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; eggs = \('hello', 42, 0.5\)  
 &gt;&gt;&gt; eggs\[0\]  
@@ -1095,22 +843,16 @@ The _tuple_ data type is almost identical to the list data type, except in two w
 
 But the main way that tuples are different from lists is that tuples, like strings, are immutable. Tuples cannot have their values modified, appended, or removed. Enter the following into the interactive shell, and look at the TypeError error message:
 
-
-
-
-
 ```python
 
 
 ```
 
-           
-
 &gt;&gt;&gt; eggs = \('hello', 42, 0.5\)  
 &gt;&gt;&gt; eggs\[1\] = 99  
 Traceback \(most recent call last\):  
-  File "&lt;pyshell\#5&gt;", line 1, in &lt;module&gt;  
-    eggs\[1\] = 99  
+ File "&lt;pyshell\#5&gt;", line 1, in &lt;module&gt;  
+ eggs\[1\] = 99  
 TypeError: 'tuple' object does not support item assignment
 
 If you have only one value in your tuple, you can indicate this by placing a trailing comma after the value inside the parentheses. Otherwise, Python will think you’ve just typed a value inside regular parentheses. The comma is what lets Python know this is a tuple value. \(Unlike some other programming languages, it’s fine to have a trailing comma after the last item in a list or tuple in Python.\) Enter the following type\(\) function calls into the interactive shell to see the distinction:
@@ -1154,10 +896,10 @@ But lists don’t work this way, because list values can change; that is, lists 
 ➊ &gt;&gt;&gt; spam = \[0, 1, 2, 3, 4, 5\]  
 ➋ &gt;&gt;&gt; cheese = spam \# The reference is being copied, not the list.  
 ➌ &gt;&gt;&gt; cheese\[1\] = 'Hello!' \# This changes the list value.  
-   &gt;&gt;&gt; spam  
-   \[0, 'Hello!', 2, 3, 4, 5\]  
-   &gt;&gt;&gt; cheese \# The cheese variable refers to the same list.  
-   \[0, 'Hello!', 2, 3, 4, 5\]
+ &gt;&gt;&gt; spam  
+ \[0, 'Hello!', 2, 3, 4, 5\]  
+ &gt;&gt;&gt; cheese \# The cheese variable refers to the same list.  
+ \[0, 'Hello!', 2, 3, 4, 5\]
 
 This might look odd to you. The code touched only the cheese list, but it seems that both the cheese and spam lists have changed.
 
@@ -1188,16 +930,10 @@ When Python runs id\('Howdy'\), it creates the 'Howdy' string in the computer’
 
 Like all strings, 'Howdy' is immutable and cannot be changed. If you “change” the string in a variable, a new string object is being made at a different place in memory, and the variable refers to this new string. For example, enter the following into the interactive shell and see how the identity of the string referred to by bacon changes:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; bacon = 'Hello'  
 &gt;&gt;&gt; id\(bacon\)  
@@ -1208,16 +944,10 @@ Like all strings, 'Howdy' is immutable and cannot be changed. If you “change�
 
 However, lists can be modified because they are mutable objects. The append\(\) method doesn’t create a new list object; it changes the existing list object. We call this “modifying the object _in-place._”
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; eggs = \['cat', 'dog'\] \# This creates a new list.  
 &gt;&gt;&gt; id\(eggs\)  
@@ -1239,8 +969,8 @@ Python’s _automatic garbage collector_ deletes any values not being referred t
 References are particularly important for understanding how arguments get passed to functions. When a function is called, the values of the arguments are copied to the parameter variables. For lists \(and dictionaries, which I’ll describe in the next chapter\), this means a copy of the reference is used for the parameter. To see the consequences of this, open a new file editor window, enter the following code, and save it as _passingReference.py_:
 
 def eggs\(someParameter\):  
-    someParameter.append\('Hello'\)  
-  
+ someParameter.append\('Hello'\)
+
 spam = \[1, 2, 3\]  
 eggs\(spam\)  
 print\(spam\)
@@ -1257,16 +987,10 @@ Keep this behavior in mind: forgetting that Python handles list and dictionary v
 
 Although passing around references is often the handiest way to deal with lists and dictionaries, if the function modifies the list or dictionary that is passed, you may not want these changes in the original list or dictionary value. For this, Python provides a module named copy that provides both the copy\(\) and deepcopy\(\) functions. The first of these, copy.copy\(\), can be used to make a duplicate copy of a mutable value like a list or dictionary, not just a copy of a reference. Enter the following into the interactive shell:
 
-
-
-
-
 ```python
 
 
 ```
-
-           
 
 &gt;&gt;&gt; import copy  
 &gt;&gt;&gt; spam = \['A', 'B', 'C', 'D'\]  
@@ -1404,54 +1128,49 @@ These nested for loops ensure that we print a full row of cells to the screen, f
             belowCoord = (y + 1) % HEIGHT
 ```
 
-
-
 Next, we need to use two nested for loops to calculate each cell for the next step. The living or dead state of the cell depends on the neighbors, so let’s first calculate the index of the cells to the left, right, above, and below the current x- and y-coordinates.
 
 The % mod operator performs a “wraparound.” The left neighbor of a cell in the leftmost column 0 would be 0 - 1 or -1. To wrap this around to the rightmost column’s index, 59, we calculate \(0 - 1\) % WIDTH. Since WIDTH is 60, this expression evaluates to 59. This mod-wraparound technique works for the right, above, and below neighbors as well.
-
-
 
 ```python
 
 
 ```
 
-           
-
- \# Count number of living neighbors:  
-            numNeighbors = 0  
-            if currentCells\[leftCoord\]\[aboveCoord\] == '\#':  
-                numNeighbors += 1 \# Top-left neighbor is alive.  
-            if currentCells\[x\]\[aboveCoord\] == '\#':  
-                numNeighbors += 1 \# Top neighbor is alive.  
-            if currentCells\[rightCoord\]\[aboveCoord\] == '\#':  
-                numNeighbors += 1 \# Top-right neighbor is alive.  
-            if currentCells\[leftCoord\]\[y\] == '\#':  
-                numNeighbors += 1 \# Left neighbor is alive.  
-            if currentCells\[rightCoord\]\[y\] == '\#':  
-                numNeighbors += 1 \# Right neighbor is alive.  
-            if currentCells\[leftCoord\]\[belowCoord\] == '\#':  
-                numNeighbors += 1 \# Bottom-left neighbor is alive.  
-            if currentCells\[x\]\[belowCoord\] == '\#':  
-                numNeighbors += 1 \# Bottom neighbor is alive.  
-            if currentCells\[rightCoord\]\[belowCoord\] == '\#':  
-                numNeighbors += 1 \# Bottom-right neighbor is alive.
+\# Count number of living neighbors:  
+ numNeighbors = 0  
+ if currentCells\[leftCoord\]\[aboveCoord\] == '\#':  
+ numNeighbors += 1 \# Top-left neighbor is alive.  
+ if currentCells\[x\]\[aboveCoord\] == '\#':  
+ numNeighbors += 1 \# Top neighbor is alive.  
+ if currentCells\[rightCoord\]\[aboveCoord\] == '\#':  
+ numNeighbors += 1 \# Top-right neighbor is alive.  
+ if currentCells\[leftCoord\]\[y\] == '\#':  
+ numNeighbors += 1 \# Left neighbor is alive.  
+ if currentCells\[rightCoord\]\[y\] == '\#':  
+ numNeighbors += 1 \# Right neighbor is alive.  
+ if currentCells\[leftCoord\]\[belowCoord\] == '\#':  
+ numNeighbors += 1 \# Bottom-left neighbor is alive.  
+ if currentCells\[x\]\[belowCoord\] == '\#':  
+ numNeighbors += 1 \# Bottom neighbor is alive.  
+ if currentCells\[rightCoord\]\[belowCoord\] == '\#':  
+ numNeighbors += 1 \# Bottom-right neighbor is alive.
 
 To decide if the cell at nextCells\[x\]\[y\] should be living or dead, we need to count the number of living neighbors currentCells\[x\]\[y\] has. This series of if statements checks each of the eight neighbors of this cell, and adds 1 to numNeighbors for each living one.
 
-            \# Set cell based on Conway's Game of Life rules:  
-            if currentCells\[x\]\[y\] == '\#' and \(numNeighbors == 2 or  
+            \# Set cell based on Conway's Game of Life rules:
+            if currentCells\[x\]\[y\] == '\#' and \(numNeighbors == 2 or
+
 numNeighbors == 3\):  
-                \# Living cells with 2 or 3 neighbors stay alive:  
-                nextCells\[x\]\[y\] = '\#'  
-            elif currentCells\[x\]\[y\] == ' ' and numNeighbors == 3:  
-                \# Dead cells with 3 neighbors become alive:  
-                nextCells\[x\]\[y\] = '\#'  
-            else:  
-                \# Everything else dies or stays dead:  
-                nextCells\[x\]\[y\] = ' '  
-    time.sleep\(1\) \# Add a 1-second pause to reduce flickering.
+ \# Living cells with 2 or 3 neighbors stay alive:  
+ nextCells\[x\]\[y\] = '\#'  
+ elif currentCells\[x\]\[y\] == ' ' and numNeighbors == 3:  
+ \# Dead cells with 3 neighbors become alive:  
+ nextCells\[x\]\[y\] = '\#'  
+ else:  
+ \# Everything else dies or stays dead:  
+ nextCells\[x\]\[y\] = ' '  
+ time.sleep\(1\) \# Add a 1-second pause to reduce flickering.
 
 Now that we know the number of living neighbors for the cell at currentCells\[x\]\[y\], we can set nextCells\[x\]\[y\] to either '\#' or ' '. After we loop over every possible x- and y-coordinate, the program takes a 1-second pause by calling time.sleep\(1\). Then the program execution goes back to the start of the main program loop to continue with the next step.
 
@@ -1536,9 +1255,10 @@ You can start with the following template:
 import random  
 numberOfStreaks = 0  
 for experimentNumber in range\(10000\):  
-    \# Code that creates a list of 100 'heads' or 'tails' values.  
-  
-    \# Code that checks if there is a streak of 6 heads or tails in a row.  
+ \# Code that creates a list of 100 'heads' or 'tails' values.
+
+    \# Code that checks if there is a streak of 6 heads or tails in a row.
+
 print\('Chance of streak: %s%%' % \(numberOfStreaks / 100\)\)
 
 Of course, this is only an estimate, but 10,000 is a decent sample size. Some knowledge of mathematics could give you the exact answer and save you the trouble of writing a program, but programmers are notoriously bad at math.
@@ -1548,14 +1268,14 @@ Of course, this is only an estimate, but 10,000 is a decent sample size. Some kn
 Say you have a list of lists where each value in the inner lists is a one-character string, like this:
 
 grid = \[\['.', '.', '.', '.', '.', '.'\],  
-        \['.', 'O', 'O', '.', '.', '.'\],  
-        \['O', 'O', 'O', 'O', '.', '.'\],  
-        \['O', 'O', 'O', 'O', 'O', '.'\],  
-        \['.', 'O', 'O', 'O', 'O', 'O'\],  
-        \['O', 'O', 'O', 'O', 'O', '.'\],  
-        \['O', 'O', 'O', 'O', '.', '.'\],  
-        \['.', 'O', 'O', '.', '.', '.'\],  
-        \['.', '.', '.', '.', '.', '.'\]\]
+ \['.', 'O', 'O', '.', '.', '.'\],  
+ \['O', 'O', 'O', 'O', '.', '.'\],  
+ \['O', 'O', 'O', 'O', 'O', '.'\],  
+ \['.', 'O', 'O', 'O', 'O', 'O'\],  
+ \['O', 'O', 'O', 'O', 'O', '.'\],  
+ \['O', 'O', 'O', 'O', '.', '.'\],  
+ \['.', 'O', 'O', '.', '.', '.'\],  
+ \['.', '.', '.', '.', '.', '.'\]\]
 
 Think of grid\[x\]\[y\] as being the character at the x- and y-coordinates of a “picture” drawn with text characters. The \(0, 0\) origin is in the upper-left corner, the x-coordinates increase going right, and the y-coordinates increase going down.
 
@@ -1571,4 +1291,3 @@ Copy the previous grid value, and write code that uses it to print the image.
 Hint: You will need to use a loop in a loop in order to print grid\[0\]\[0\], then grid\[1\]\[0\], then grid\[2\]\[0\], and so on, up to grid\[8\]\[0\]. This will finish the first row, so then print a newline. Then your program should print grid\[0\]\[1\], then grid\[1\]\[1\], then grid\[2\]\[1\], and so on. The last thing your program will print is grid\[8\]\[5\].
 
 Also, remember to pass the end keyword argument to print\(\) if you don’t want a newline printed automatically after each print\(\) call.
-

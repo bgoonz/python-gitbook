@@ -2,16 +2,12 @@
 
 Output:
 
-
 ```python
 The zipped result is : {('Shambhavi', 3, 60), ('Astha', 2, 70),
 ('Manjeet', 4, 40), ('Nikhil', 1, 50)}
 ```
 
-**How to unzip?**
-Unzipping means converting the zipped values back to the individual self as they were. This is done with the help of “**\***” operator.
-
-
+**How to unzip?** Unzipping means converting the zipped values back to the individual self as they were. This is done with the help of “**\***” operator.
 
 ```python
 # Python code to demonstrate the working of
@@ -50,4 +46,3 @@ print (roll_noz)
 print ("The marks list is : ",end="")
 print (marksz)
 ```
-

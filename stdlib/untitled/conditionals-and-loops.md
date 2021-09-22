@@ -1,6 +1,6 @@
 # Conditionals and loops
 
-###  Conditional execution
+### Conditional execution
 
 #### 4.1.1. The `if` statement
 
@@ -15,7 +15,7 @@ A few important things to note about `if` statements:
 
 1. The colon \(`:`\) is significant and required. It separates the **header** of the **compound statement** from the **body**.
 2. The line after the colon must be indented. It is standard in Python to use four spaces for indenting.
-3. All lines indented the same amount after the colon will be executed whenever the BOOLEAN\_EXPRESSION is true.
+3. All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.
 
 Here is an example:
 
@@ -32,7 +32,7 @@ The boolean expression after the `if` statement is called the **condition**. If 
 
 Run this example code and see what happens. Then change the value of `food` to something other than `'spam'` and run it again, confirming that you don’t get any output.
 
-Flowchart of an **if** statement![\_images/flowchart\_if\_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
+Flowchart of an **if** statement![_images/flowchart_if_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
 
 As with the `for` statement from the last chapter, the `if` statement is a **compound statement**. Compound statements consist of a header line and a body. The header line of the `if` statement begins with the keyword `if` followed by a _boolean expression_ and ends with a colon \(`:`\).
 
@@ -61,7 +61,7 @@ else:
 
 Here, the first print statement will execute if `food` is equal to `'spam'`, and the print statement indented under the `else` clause will get executed when it is not.
 
-Flowchart of a **if else** statement![\_images/flowchart\_if\_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
+Flowchart of a **if else** statement![_images/flowchart_if_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
 
 The syntax for an `if else` statement looks like this:
 
@@ -102,7 +102,7 @@ else:
     STATEMENTS_C
 ```
 
-Flowchart of this chained conditional![\_images/flowchart\_chained\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
+Flowchart of this chained conditional![_images/flowchart_chained_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
 
 `elif` is an abbreviation of `else if`. Again, exactly one branch will be executed. There is no limit of the number of `elif` statements but only a single \(and optional\) final `else` statement is allowed and it must be the last branch in the statement:
 
@@ -123,7 +123,7 @@ Each condition is checked in order. If the first is false, the next is checked, 
 
 One conditional can also be **nested** within another. \(It is the same theme of composibility, again!\) We could have written the previous example as follows:
 
-Flowchart of this nested conditional![\_images/flowchart\_nested\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
+Flowchart of this nested conditional![_images/flowchart_nested_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
 
 ```python
 if x < y:
@@ -720,4 +720,3 @@ A special character that causes the cursor to move to the next tab stop on the c
 Given any real numbers _a_ and _b_, exactly one of the following relations holds: _a &lt; b_, _a &gt; b_, or _a == b_. Thus when you can establish that two of the relations are false, you can assume the remaining one is true.trace
 
 To follow the flow of execution of a program by hand, recording the change of state of the variables and any output produced.
-

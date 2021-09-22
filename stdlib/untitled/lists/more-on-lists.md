@@ -438,7 +438,7 @@ A subsequence of a sequence is called a **slice** and the operation that extract
 ('Kathryn', 'Presila')
 ```
 
-The operator `[n:m]` returns the part of the sequence from the n’th element to the m’th element, including the first but excluding the last. This behavior is counter-intuitive; it makes more sense if you imagine the indices pointing _between_ the characters, as in the following diagram:![&apos;banana&apos; string](https://www.openbookproject.net/books/bpp4awd/_images/banana.png)
+The operator `[n:m]` returns the part of the sequence from the n’th element to the m’th element, including the first but excluding the last. This behavior is counter-intuitive; it makes more sense if you imagine the indices pointing _between_ the characters, as in the following diagram:!['banana' string](https://www.openbookproject.net/books/bpp4awd/_images/banana.png)
 
 If you omit the first index \(before the colon\), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string. Thus:
 
@@ -1084,4 +1084,3 @@ To iterate through the elements of a collection, performing a similar operation 
 A data type that contains a sequence of elements of any type, like a list, but is immutable. Tuples can be used wherever an immutable type is required, such as a key in a dictionary \(see next chapter\).tuple assignment
 
 An assignment to all of the elements in a tuple using a single assignment statement. Tuple assignment occurs in parallel rather than in sequence, making it useful for swapping values.
-
