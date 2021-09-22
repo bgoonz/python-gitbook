@@ -1,5 +1,7 @@
 # Built-in Types
 
+
+
 ## Built-in Types
 
 The following sections describe the standard types that are built into the interpreter.
@@ -18,9 +20,9 @@ By default, an object is considered true unless its class defines either a [`__b
 
 >
 
-- constants defined to be false: `None` and `False`.
-- zero of any numeric type: `0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0, 1)`
-- empty sequences and collections: `''`, `()`, `[]`, `{}`, `set()`, `range(0)`
+* constants defined to be false: `None` and `False`.
+* zero of any numeric type: `0`, `0.0`, `0j`, `Decimal(0)`, `Fraction(0, 1)`
+* empty sequences and collections: `''`, `()`, `[]`, `{}`, `set()`, `range(0)`
 
 Operations and built-in functions that have a Boolean result always return `0` or `False` for false and `1` or `True` for true, unless otherwise stated. \(Important exception: the Boolean operations `or` and `and` always return one of their operands.\)
 
@@ -28,11 +30,11 @@ Operations and built-in functions that have a Boolean result always return `0` o
 
 These are the Boolean operations, ordered by ascending priority:
 
-| Operation | Result                                     | Notes |
-| :-------- | :----------------------------------------- | :---- |
-| `x or y`  | if _x_ is false, then _y_, else _x_        | \(1\) |
-| `x and y` | if _x_ is false, then _x_, else _y_        | \(2\) |
-| `not x`   | if _x_ is false, then `True`, else `False` | \(3\) |
+| Operation | Result | Notes |
+| :--- | :--- | :--- |
+| `x or y` | if _x_ is false, then _y_, else _x_ | \(1\) |
+| `x and y` | if _x_ is false, then _x_, else _y_ | \(2\) |
+| `not x` | if _x_ is false, then `True`, else `False` | \(3\) |
 
 Notes:
 
@@ -46,16 +48,16 @@ There are eight comparison operations in Python. They all have the same priority
 
 This table summarizes the comparison operations:
 
-| Operation | Meaning                 |
-| :-------- | :---------------------- |
-| `<`       | strictly less than      |
-| `<=`      | less than or equal      |
-| `>`       | strictly greater than   |
-| `>=`      | greater than or equal   |
-| `==`      | equal                   |
-| `!=`      | not equal               |
-| `is`      | object identity         |
-| `is not`  | negated object identity |
+| Operation | Meaning |
+| :--- | :--- |
+| `<` | strictly less than |
+| `<=` | less than or equal |
+| `>` | strictly greater than |
+| `>=` | greater than or equal |
+| `==` | equal |
+| `!=` | not equal |
+| `is` | object identity |
+| `is not` | negated object identity |
 
 Objects of different types, except different numeric types, never compare equal. The `==` operator is always defined but for some object types \(for example, class objects\) is equivalent to [`is`](https://docs.python.org/3/reference/expressions.html#is). The `<`, `<=`, `>` and `>=` operators are only defined where they make sense; for example, they raise a [`TypeError`](https://docs.python.org/3/library/exceptions.html#TypeError) exception when one of the arguments is a complex number.
 
@@ -80,7 +82,7 @@ The constructors [`int()`](https://docs.python.org/3/library/functions.html#int)
 All numeric types \(except complex\) support the following operations \(for priorities of the operations, see [Operator precedence](https://docs.python.org/3/reference/expressions.html#operator-summary)\):
 
 | Operation | Result | Notes | Full documentation |
-| :-- | :-- | :-- | :-- |
+| :--- | :--- | :--- | :--- |
 | `x + y` | sum of _x_ and _y_ |  |  |
 | `x - y` | difference of _x_ and _y_ |  |  |
 | `x * y` | product of _x_ and _y_ |  |  |
@@ -112,7 +114,7 @@ Notes:
 All [`numbers.Real`](https://docs.python.org/3/library/numbers.html#numbers.Real) types \([`int`](https://docs.python.org/3/library/functions.html#int) and [`float`](https://docs.python.org/3/library/functions.html#float)\) also include the following operations:
 
 | Operation | Result |
-| :-- | :-- |
+| :--- | :--- |
 | [`math.trunc(x)`](https://docs.python.org/3/library/math.html#math.trunc) | _x_ truncated to [`Integral`](https://docs.python.org/3/library/numbers.html#numbers.Integral) |
 | [`round(x[, n])`](https://docs.python.org/3/library/functions.html#round) | _x_ rounded to _n_ digits, rounding half to even. If _n_ is omitted, it defaults to 0. |
 | [`math.floor(x)`](https://docs.python.org/3/library/math.html#math.floor) | the greatest [`Integral`](https://docs.python.org/3/library/numbers.html#numbers.Integral) &lt;= _x_ |
@@ -129,7 +131,7 @@ The priorities of the binary bitwise operations are all lower than the numeric o
 This table lists the bitwise operations sorted in ascending priority:
 
 | Operation | Result | Notes |
-| :-- | :-- | :-- | --- |
+| :--- | :--- | :--- |
 | `x | y` | bitwise _or_ of _x_ and _y_ | \(4\) |
 | `x ^ y` | bitwise _exclusive or_ of _x_ and _y_ | \(4\) |
 | `x & y` | bitwise _and_ of _x_ and _y_ | \(4\) |
@@ -150,7 +152,7 @@ The int type implements the [`numbers.Integral`](https://docs.python.org/3/libra
 
 Return the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros:&gt;&gt;&gt;
 
-```python
+```text
 >>> n = -37
 >>> bin(n)
 '-0b100101'
@@ -162,7 +164,7 @@ More precisely, if `x` is nonzero, then `x.bit_length()` is the unique positive 
 
 Equivalent to:
 
-```python
+```text
 def bit_length(self):
     s = bin(self)       # binary representation:  bin(-37) --> '-0b100101'
     s = s.lstrip('-0b') # remove leading zeros and minus sign
@@ -173,7 +175,7 @@ New in version 3.1.`int.to_bytes`\(_length_, _byteorder_, _\*_, _signed=False_\)
 
 Return an array of bytes representing an integer.&gt;&gt;&gt;
 
-```python
+```text
 >>> (1024).to_bytes(2, byteorder='big')
 b'\x04\x00'
 >>> (1024).to_bytes(10, byteorder='big')
@@ -195,7 +197,7 @@ New in version 3.2._classmethod_ `int.from_bytes`\(_bytes_, _byteorder_, _\*_, _
 
 Return the integer represented by the given array of bytes.&gt;&gt;&gt;
 
-```python
+```text
 >>> int.from_bytes(b'\x00\x10', byteorder='big')
 16
 >>> int.from_bytes(b'\x00\x10', byteorder='little')
@@ -228,7 +230,7 @@ Return a pair of integers whose ratio is exactly equal to the original float and
 
 Return `True` if the float instance is finite with integral value, and `False` otherwise:&gt;&gt;&gt;
 
-```python
+```text
 >>> (-2.0).is_integer()
 True
 >>> (3.2).is_integer()
@@ -245,7 +247,7 @@ Note that [`float.hex()`](https://docs.python.org/3/library/stdtypes.html#float.
 
 A hexadecimal string takes the form:
 
-```python
+```text
 [sign] ['0x'] integer ['.' fraction] ['p' exponent]
 ```
 
@@ -253,14 +255,14 @@ where the optional `sign` may by either `+` or `-`, `integer` and `fraction` are
 
 Note that the exponent is written in decimal rather than hexadecimal, and that it gives the power of 2 by which to multiply the coefficient. For example, the hexadecimal string `0x3.a7p10` represents the floating-point number `(3 + 10./16 + 7./16**2) * 2.0**10`, or `3740.0`:&gt;&gt;&gt;
 
-```python
+```text
 >>> float.fromhex('0x3.a7p10')
 3740.0
 ```
 
 Applying the reverse conversion to `3740.0` gives a different hexadecimal string representing the same number:&gt;&gt;&gt;
 
-```python
+```text
 >>> float.hex(3740.0)
 '0x1.d380000000000p+11'
 ```
@@ -273,15 +275,15 @@ For numbers `x` and `y`, possibly of different types, it’s a requirement that 
 
 Here are the rules in detail:
 
-- If `x = m / n` is a nonnegative rational number and `n` is not divisible by `P`, define `hash(x)` as `m * invmod(n, P) % P`, where `invmod(n, P)` gives the inverse of `n` modulo `P`.
-- If `x = m / n` is a nonnegative rational number and `n` is divisible by `P` \(but `m` is not\) then `n` has no inverse modulo `P` and the rule above doesn’t apply; in this case define `hash(x)` to be the constant value `sys.hash_info.inf`.
-- If `x = m / n` is a negative rational number define `hash(x)` as `-hash(-x)`. If the resulting hash is `-1`, replace it with `-2`.
-- The particular values `sys.hash_info.inf`, `-sys.hash_info.inf` and `sys.hash_info.nan` are used as hash values for positive infinity, negative infinity, or nans \(respectively\). \(All hashable nans have the same hash value.\)
-- For a [`complex`](https://docs.python.org/3/library/functions.html#complex) number `z`, the hash values of the real and imaginary parts are combined by computing `hash(z.real) + sys.hash_info.imag * hash(z.imag)`, reduced modulo `2**sys.hash_info.width` so that it lies in `range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`. Again, if the result is `-1`, it’s replaced with `-2`.
+* If `x = m / n` is a nonnegative rational number and `n` is not divisible by `P`, define `hash(x)` as `m * invmod(n, P) % P`, where `invmod(n, P)` gives the inverse of `n` modulo `P`.
+* If `x = m / n` is a nonnegative rational number and `n` is divisible by `P` \(but `m` is not\) then `n` has no inverse modulo `P` and the rule above doesn’t apply; in this case define `hash(x)` to be the constant value `sys.hash_info.inf`.
+* If `x = m / n` is a negative rational number define `hash(x)` as `-hash(-x)`. If the resulting hash is `-1`, replace it with `-2`.
+* The particular values `sys.hash_info.inf`, `-sys.hash_info.inf` and `sys.hash_info.nan` are used as hash values for positive infinity, negative infinity, or nans \(respectively\). \(All hashable nans have the same hash value.\)
+* For a [`complex`](https://docs.python.org/3/library/functions.html#complex) number `z`, the hash values of the real and imaginary parts are combined by computing `hash(z.real) + sys.hash_info.imag * hash(z.imag)`, reduced modulo `2**sys.hash_info.width` so that it lies in `range(-2**(sys.hash_info.width - 1), 2**(sys.hash_info.width - 1))`. Again, if the result is `-1`, it’s replaced with `-2`.
 
 To clarify the above rules, here’s some example Python code, equivalent to the built-in hash, for computing the hash of a rational number, [`float`](https://docs.python.org/3/library/functions.html#float), or [`complex`](https://docs.python.org/3/library/functions.html#complex):
 
-```python
+```text
 import sys, math
 
 def hash_fraction(m, n):
@@ -365,12 +367,12 @@ This table lists the sequence operations sorted in ascending priority. In the ta
 The `in` and `not in` operations have the same priorities as the comparison operations. The `+` \(concatenation\) and `*` \(repetition\) operations have the same priority as the corresponding numeric operations. [3](https://docs.python.org/3/library/stdtypes.html#id14)
 
 | Operation | Result | Notes |
-| :-- | :-- | :-- |
+| :--- | :--- | :--- |
 | `x in s` | `True` if an item of _s_ is equal to _x_, else `False` | \(1\) |
 | `x not in s` | `False` if an item of _s_ is equal to _x_, else `True` | \(1\) |
 | `s + t` | the concatenation of _s_ and _t_ | \(6\)\(7\) |
 | `s * n` or `n * s` | equivalent to adding _s_ to itself _n_ times | \(2\)\(7\) |
-| `s[i]` | _i_th item of \_s_, origin 0 | \(3\) |
+| `s[i]` | _i_th item of _s_, origin 0 | \(3\) |
 | `s[i:j]` | slice of _s_ from _i_ to _j_ | \(3\)\(4\) |
 | `s[i:j:k]` | slice of _s_ from _i_ to _j_ with step _k_ | \(3\)\(5\) |
 | `len(s)` | length of _s_ |  |
@@ -385,14 +387,14 @@ Notes:
 
 1. While the `in` and `not in` operations are used only for simple containment testing in the general case, some specialised sequences \(such as [`str`](https://docs.python.org/3/library/stdtypes.html#str), [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) and [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray)\) also use them for subsequence testing:&gt;&gt;&gt;
 
-   ```python
+   ```text
    >>> "gg" in "eggs"
    True
    ```
 
 2. Values of _n_ less than `0` are treated as `0` \(which yields an empty sequence of the same type as _s_\). Note that items in the sequence _s_ are not copied; they are referenced multiple times. This often haunts new Python programmers; consider:&gt;&gt;&gt;
 
-   ```python
+   ```text
    >>> lists = [[]] * 3
    >>> lists
    [[], [], []]
@@ -403,7 +405,7 @@ Notes:
 
    What has happened is that `[[]]` is a one-element list containing an empty list, so all three elements of `[[]] * 3` are references to this single empty list. Modifying any of the elements of `lists` modifies this single list. You can create a list of different lists this way:&gt;&gt;&gt;
 
-   ```python
+   ```text
    >>> lists = [[] for i in range(3)]
    >>> lists[0].append(3)
    >>> lists[1].append(5)
@@ -418,10 +420,10 @@ Notes:
 4. The slice of _s_ from _i_ to _j_ is defined as the sequence of items with index _k_ such that `i <= k < j`. If _i_ or _j_ is greater than `len(s)`, use `len(s)`. If _i_ is omitted or `None`, use `0`. If _j_ is omitted or `None`, use `len(s)`. If _i_ is greater than or equal to _j_, the slice is empty.
 5. The slice of _s_ from _i_ to _j_ with step _k_ is defined as the sequence of items with index `x = i + n*k` such that `0 <= n < (j-i)/k`. In other words, the indices are `i`, `i+k`, `i+2*k`, `i+3*k` and so on, stopping when _j_ is reached \(but never including _j_\). When _k_ is positive, _i_ and _j_ are reduced to `len(s)` if they are greater. When _k_ is negative, _i_ and _j_ are reduced to `len(s) - 1` if they are greater. If _i_ or _j_ are omitted or `None`, they become “end” values \(which end depends on the sign of _k_\). Note, _k_ cannot be zero. If _k_ is `None`, it is treated like `1`.
 6. Concatenating immutable sequences always results in a new object. This means that building up a sequence by repeated concatenation will have a quadratic runtime cost in the total sequence length. To get a linear runtime cost, you must switch to one of the alternatives below:
-   - if concatenating [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, you can build a list and use [`str.join()`](https://docs.python.org/3/library/stdtypes.html#str.join) at the end or else write to an [`io.StringIO`](https://docs.python.org/3/library/io.html#io.StringIO) instance and retrieve its value when complete
-   - if concatenating [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, you can similarly use [`bytes.join()`](https://docs.python.org/3/library/stdtypes.html#bytes.join) or [`io.BytesIO`](https://docs.python.org/3/library/io.html#io.BytesIO), or you can do in-place concatenation with a [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) object. [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) objects are mutable and have an efficient overallocation mechanism
-   - if concatenating [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) objects, extend a [`list`](https://docs.python.org/3/library/stdtypes.html#list) instead
-   - for other types, investigate the relevant class documentation
+   * if concatenating [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, you can build a list and use [`str.join()`](https://docs.python.org/3/library/stdtypes.html#str.join) at the end or else write to an [`io.StringIO`](https://docs.python.org/3/library/io.html#io.StringIO) instance and retrieve its value when complete
+   * if concatenating [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, you can similarly use [`bytes.join()`](https://docs.python.org/3/library/stdtypes.html#bytes.join) or [`io.BytesIO`](https://docs.python.org/3/library/io.html#io.BytesIO), or you can do in-place concatenation with a [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) object. [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) objects are mutable and have an efficient overallocation mechanism
+   * if concatenating [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) objects, extend a [`list`](https://docs.python.org/3/library/stdtypes.html#list) instead
+   * for other types, investigate the relevant class documentation
 7. Some sequence types \(such as [`range`](https://docs.python.org/3/library/stdtypes.html#range)\) only support item sequences that follow specific patterns, and hence don’t support sequence concatenation or repetition.
 8. `index` raises [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) when _x_ is not found in _s_. Not all implementations support passing the additional arguments _i_ and _j_. These arguments allow efficient searching of subsections of the sequence. Passing the extra arguments is roughly equivalent to using `s[i:j].index(x)`, only without copying any data and with the returned index being relative to the start of the sequence rather than the start of the slice.
 
@@ -440,7 +442,7 @@ The operations in the following table are defined on mutable sequence types. The
 In the table _s_ is an instance of a mutable sequence type, _t_ is any iterable object and _x_ is an arbitrary object that meets any type and value restrictions imposed by _s_ \(for example, [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) only accepts integers that meet the value restriction `0 <= x <= 255`\).
 
 | Operation | Result | Notes |
-| :-- | :-- | :-- |
+| :--- | :--- | :--- |
 | `s[i] = x` | item _i_ of _s_ is replaced by _x_ |  |
 | `s[i:j] = t` | slice of _s_ from _i_ to _j_ is replaced by the contents of the iterable _t_ |  |
 | `del s[i:j]` | same as `s[i:j] = []` |  |
@@ -474,10 +476,10 @@ Lists are mutable sequences, typically used to store collections of homogeneous 
 
 Lists may be constructed in several ways:
 
-- Using a pair of square brackets to denote the empty list: `[]`
-- Using square brackets, separating items with commas: `[a]`, `[a, b, c]`
-- Using a list comprehension: `[x for x in iterable]`
-- Using the type constructor: `list()` or `list(iterable)`
+* Using a pair of square brackets to denote the empty list: `[]`
+* Using square brackets, separating items with commas: `[a]`, `[a, b, c]`
+* Using a list comprehension: `[x for x in iterable]`
+* Using the type constructor: `list()` or `list(iterable)`
 
 The constructor builds a list whose items are the same and in the same order as _iterable_’s items. _iterable_ may be either a sequence, a container that supports iteration, or an iterator object. If _iterable_ is already a list, a copy is made and returned, similar to `iterable[:]`. For example, `list('abc')` returns `['a', 'b', 'c']` and `list( (1, 2, 3) )` returns `[1, 2, 3]`. If no argument is given, the constructor creates a new empty list, `[]`.
 
@@ -509,10 +511,10 @@ Tuples are immutable sequences, typically used to store collections of heterogen
 
 Tuples may be constructed in a number of ways:
 
-- Using a pair of parentheses to denote the empty tuple: `()`
-- Using a trailing comma for a singleton tuple: `a,` or `(a,)`
-- Separating items with commas: `a, b, c` or `(a, b, c)`
-- Using the [`tuple()`](https://docs.python.org/3/library/stdtypes.html#tuple) built-in: `tuple()` or `tuple(iterable)`
+* Using a pair of parentheses to denote the empty tuple: `()`
+* Using a trailing comma for a singleton tuple: `a,` or `(a,)`
+* Separating items with commas: `a, b, c` or `(a, b, c)`
+* Using the [`tuple()`](https://docs.python.org/3/library/stdtypes.html#tuple) built-in: `tuple()` or `tuple(iterable)`
 
 The constructor builds a tuple whose items are the same and in the same order as _iterable_’s items. _iterable_ may be either a sequence, a container that supports iteration, or an iterator object. If _iterable_ is already a tuple, it is returned unchanged. For example, `tuple('abc')` returns `('a', 'b', 'c')` and `tuple( [1, 2, 3] )` returns `(1, 2, 3)`. If no argument is given, the constructor creates a new empty tuple, `()`.
 
@@ -538,7 +540,7 @@ Ranges containing absolute values larger than [`sys.maxsize`](https://docs.pytho
 
 Range examples:&gt;&gt;&gt;
 
-```python
+```text
 >>> list(range(10))
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 >>> list(range(1, 11))
@@ -567,7 +569,7 @@ The advantage of the [`range`](https://docs.python.org/3/library/stdtypes.html#r
 
 Range objects implement the [`collections.abc.Sequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence) ABC, and provide features such as containment tests, element index lookup, slicing and support for negative indices \(see [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq)\):&gt;&gt;&gt;
 
-```python
+```text
 >>> r = range(0, 20, 2)
 >>> r
 range(0, 20, 2)
@@ -595,15 +597,15 @@ New in version 3.3: The [`start`](https://docs.python.org/3/library/stdtypes.htm
 
 See also
 
-- The [linspace recipe](http://code.activestate.com/recipes/579000/) shows how to implement a lazy version of range suitable for floating point applications.
+* The [linspace recipe](http://code.activestate.com/recipes/579000/) shows how to implement a lazy version of range suitable for floating point applications.
 
 ### Text Sequence Type — [`str`](https://docs.python.org/3/library/stdtypes.html#str)
 
 Textual data in Python is handled with [`str`](https://docs.python.org/3/library/stdtypes.html#str) objects, or _strings_. Strings are immutable [sequences](https://docs.python.org/3/library/stdtypes.html#typesseq) of Unicode code points. String literals are written in a variety of ways:
 
-- Single quotes: `'allows embedded "double" quotes'`
-- Double quotes: `"allows embedded 'single' quotes"`.
-- Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
+* Single quotes: `'allows embedded "double" quotes'`
+* Double quotes: `"allows embedded 'single' quotes"`.
+* Triple quoted: `'''Three single quotes'''`, `"""Three double quotes"""`
 
 Triple quoted strings may span multiple lines - all associated whitespace will be included in the string literal.
 
@@ -627,7 +629,7 @@ If at least one of _encoding_ or _errors_ is given, _object_ should be a [bytes-
 
 Passing a [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) object to [`str()`](https://docs.python.org/3/library/stdtypes.html#str) without the _encoding_ or _errors_ arguments falls under the first case of returning the informal string representation \(see also the [`-b`](https://docs.python.org/3/using/cmdline.html#cmdoption-b) command-line option to Python\). For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> str(b'Zoot!')
 "b'Zoot!'"
 ```
@@ -670,7 +672,7 @@ Return `True` if the string ends with the specified _suffix_, otherwise return `
 
 Return a copy of the string where all tab characters are replaced by one or more spaces, depending on the current column and the given tab size. Tab positions occur every _tabsize_ characters \(default is 8, giving tab positions at columns 0, 8, 16 and so on\). To expand the string, the current column is set to zero and the string is examined character by character. If the character is a tab \(`\t`\), one or more space characters are inserted in the result until the current column is equal to the next tab position. \(The tab character itself is not copied.\) If the character is a newline \(`\n`\) or return \(`\r`\), it is copied and the current column is reset to zero. Any other character is copied unchanged and the current column is incremented by one regardless of how the character is represented when printed.&gt;&gt;&gt;
 
-```python
+```text
 >>> '01\t012\t0123\t01234'.expandtabs()
 '01      012     0123    01234'
 >>> '01\t012\t0123\t01234'.expandtabs(4)
@@ -681,11 +683,11 @@ Return a copy of the string where all tab characters are replaced by one or more
 
 Return the lowest index in the string where substring _sub_ is found within the slice `s[start:end]`. Optional arguments _start_ and _end_ are interpreted as in slice notation. Return `-1` if _sub_ is not found.
 
-Note
+Note 
 
 The [`find()`](https://docs.python.org/3/library/stdtypes.html#str.find) method should be used only if you need to know the position of _sub_. To check if _sub_ is a substring or not, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) operator:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'Py' in 'Python'
 True
 ```
@@ -694,14 +696,14 @@ True
 
 Perform a string formatting operation. The string on which this method is called can contain literal text or replacement fields delimited by braces `{}`. Each replacement field contains either the numeric index of a positional argument, or the name of a keyword argument. Returns a copy of the string where each replacement field is replaced with the string value of the corresponding argument.&gt;&gt;&gt;
 
-```python
+```text
 >>> "The sum of 1 + 2 is {0}".format(1+2)
 'The sum of 1 + 2 is 3'
 ```
 
 See [Format String Syntax](https://docs.python.org/3/library/string.html#formatstrings) for a description of the various formatting options that can be specified in format strings.
 
-Note
+Note 
 
 When formatting a number \([`int`](https://docs.python.org/3/library/functions.html#int), [`float`](https://docs.python.org/3/library/functions.html#float), [`complex`](https://docs.python.org/3/library/functions.html#complex), [`decimal.Decimal`](https://docs.python.org/3/library/decimal.html#decimal.Decimal) and subclasses\) with the `n` type \(ex: `'{:n}'.format(1234)`\), the function temporarily sets the `LC_CTYPE` locale to the `LC_NUMERIC` locale to decode `decimal_point` and `thousands_sep` fields of `localeconv()` if they are non-ASCII or longer than 1 byte, and the `LC_NUMERIC` locale is different than the `LC_CTYPE` locale. This temporary change affects other threads.
 
@@ -709,7 +711,7 @@ Changed in version 3.7: When formatting a number with the `n` type, the function
 
 Similar to `str.format(**mapping)`, except that `mapping` is used directly and not copied to a [`dict`](https://docs.python.org/3/library/stdtypes.html#dict). This is useful if for example `mapping` is a dict subclass:&gt;&gt;&gt;
 
-```python
+```text
 >>> class Default(dict):
 ...     def __missing__(self, key):
 ...         return key
@@ -732,7 +734,7 @@ New in version 3.7.`str.isdecimal`\(\)
 
 Return `True` if all characters in the string are decimal characters and there is at least one character, `False` otherwise. Decimal characters are those that can be used to form numbers in base 10, e.g. U+0660, ARABIC-INDIC DIGIT ZERO. Formally a decimal character is a character in the Unicode General Category “Nd”.`str.isdigit`\(\)
 
-Return `True` if all characters in the string are digits and there is at least one character, `False` otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric_Type=Digit or Numeric_Type=Decimal.`str.isidentifier`\(\)
+Return `True` if all characters in the string are digits and there is at least one character, `False` otherwise. Digits include decimal characters and digits that need special handling, such as the compatibility superscript digits. This covers digits which cannot be used to form numbers in base 10, like the Kharosthi numbers. Formally, a digit is a character that has the property value Numeric\_Type=Digit or Numeric\_Type=Decimal.`str.isidentifier`\(\)
 
 Return `True` if the string is a valid identifier according to the language definition, section [Identifiers and keywords](https://docs.python.org/3/reference/lexical_analysis.html#identifiers).
 
@@ -740,7 +742,7 @@ Call [`keyword.iskeyword()`](https://docs.python.org/3/library/keyword.html#keyw
 
 Example:&gt;&gt;&gt;
 
-```python
+```text
 >>> from keyword import iskeyword
 
 >>> 'hello'.isidentifier(), iskeyword('hello')
@@ -753,7 +755,7 @@ True, True
 
 Return `True` if all cased characters [4](https://docs.python.org/3/library/stdtypes.html#id15) in the string are lowercase and there is at least one cased character, `False` otherwise.`str.isnumeric`\(\)
 
-Return `True` if all characters in the string are numeric characters, and there is at least one character, `False` otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH. Formally, numeric characters are those with the property value Numeric_Type=Digit, Numeric_Type=Decimal or Numeric_Type=Numeric.`str.isprintable`\(\)
+Return `True` if all characters in the string are numeric characters, and there is at least one character, `False` otherwise. Numeric characters include digit characters, and all characters that have the Unicode numeric value property, e.g. U+2155, VULGAR FRACTION ONE FIFTH. Formally, numeric characters are those with the property value Numeric\_Type=Digit, Numeric\_Type=Decimal or Numeric\_Type=Numeric.`str.isprintable`\(\)
 
 Return `True` if all characters in the string are printable or the string is empty, `False` otherwise. Nonprintable characters are those characters defined in the Unicode character database as “Other” or “Separator”, excepting the ASCII space \(0x20\) which is considered printable. \(Note that printable characters in this context are those which should not be escaped when [`repr()`](https://docs.python.org/3/library/functions.html#repr) is invoked on a string. It has no bearing on the handling of strings written to [`sys.stdout`](https://docs.python.org/3/library/sys.html#sys.stdout) or [`sys.stderr`](https://docs.python.org/3/library/sys.html#sys.stderr).\)`str.isspace`\(\)
 
@@ -765,7 +767,7 @@ Return `True` if the string is a titlecased string and there is at least one cha
 
 Return `True` if all cased characters [4](https://docs.python.org/3/library/stdtypes.html#id15) in the string are uppercase and there is at least one cased character, `False` otherwise.&gt;&gt;&gt;
 
-```python
+```text
 >>> 'BANANA'.isupper()
 True
 >>> 'banana'.isupper()
@@ -788,7 +790,7 @@ The lowercasing algorithm used is described in section 3.13 of the Unicode Stand
 
 Return a copy of the string with leading characters removed. The _chars_ argument is a string specifying the set of characters to be removed. If omitted or `None`, the _chars_ argument defaults to removing whitespace. The _chars_ argument is not a prefix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> '   spacious   '.lstrip()
 'spacious   '
 >>> 'www.example.com'.lstrip('cmowz.')
@@ -797,7 +799,7 @@ Return a copy of the string with leading characters removed. The _chars_ argumen
 
 See [`str.removeprefix()`](https://docs.python.org/3/library/stdtypes.html#str.removeprefix) for a method that will remove a single prefix string rather than all of a set of characters. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'Arthur: three!'.lstrip('Arthur: ')
 'ee!'
 >>> 'Arthur: three!'.removeprefix('Arthur: ')
@@ -816,7 +818,7 @@ Split the string at the first occurrence of _sep_, and return a 3-tuple containi
 
 If the string starts with the _prefix_ string, return `string[len(prefix):]`. Otherwise, return a copy of the original string:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'TestHook'.removeprefix('Test')
 'Hook'
 >>> 'BaseTestCase'.removeprefix('Test')
@@ -827,7 +829,7 @@ New in version 3.9.`str.removesuffix`\(_suffix_, _/_\)
 
 If the string ends with the _suffix_ string and that _suffix_ is not empty, return `string[:-len(suffix)]`. Otherwise, return a copy of the original string:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'MiscTests'.removesuffix('Tests')
 'Misc'
 >>> 'TmpDirMixin'.removesuffix('Tests')
@@ -850,7 +852,7 @@ Return a list of the words in the string, using _sep_ as the delimiter string. I
 
 Return a copy of the string with trailing characters removed. The _chars_ argument is a string specifying the set of characters to be removed. If omitted or `None`, the _chars_ argument defaults to removing whitespace. The _chars_ argument is not a suffix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> '   spacious   '.rstrip()
 '   spacious'
 >>> 'mississippi'.rstrip('ipz')
@@ -859,7 +861,7 @@ Return a copy of the string with trailing characters removed. The _chars_ argume
 
 See [`str.removesuffix()`](https://docs.python.org/3/library/stdtypes.html#str.removesuffix) for a method that will remove a single suffix string rather than all of a set of characters. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'Monty Python'.rstrip(' Python')
 'M'
 >>> 'Monty Python'.removesuffix(' Python')
@@ -874,7 +876,7 @@ If _sep_ is given, consecutive delimiters are not grouped together and are deeme
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> '1,2,3'.split(',')
 ['1', '2', '3']
 >>> '1,2,3'.split(',', maxsplit=1)
@@ -887,7 +889,7 @@ If _sep_ is not specified or is `None`, a different splitting algorithm is appli
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> '1 2 3'.split()
 ['1', '2', '3']
 >>> '1 2 3'.split(maxsplit=1)
@@ -902,25 +904,25 @@ Return a list of the lines in the string, breaking at line boundaries. Line brea
 
 This method splits on the following line boundaries. In particular, the boundaries are a superset of [universal newlines](https://docs.python.org/3/glossary.html#term-universal-newlines).
 
-| Representation | Description                   |
-| :------------- | :---------------------------- |
-| `\n`           | Line Feed                     |
-| `\r`           | Carriage Return               |
-| `\r\n`         | Carriage Return + Line Feed   |
-| `\v` or `\x0b` | Line Tabulation               |
-| `\f` or `\x0c` | Form Feed                     |
-| `\x1c`         | File Separator                |
-| `\x1d`         | Group Separator               |
-| `\x1e`         | Record Separator              |
-| `\x85`         | Next Line \(C1 Control Code\) |
-| `\u2028`       | Line Separator                |
-| `\u2029`       | Paragraph Separator           |
+| Representation | Description |
+| :--- | :--- |
+| `\n` | Line Feed |
+| `\r` | Carriage Return |
+| `\r\n` | Carriage Return + Line Feed |
+| `\v` or `\x0b` | Line Tabulation |
+| `\f` or `\x0c` | Form Feed |
+| `\x1c` | File Separator |
+| `\x1d` | Group Separator |
+| `\x1e` | Record Separator |
+| `\x85` | Next Line \(C1 Control Code\) |
+| `\u2028` | Line Separator |
+| `\u2029` | Paragraph Separator |
 
 Changed in version 3.2: `\v` and `\f` added to list of line boundaries.
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'ab c\n\nde fg\rkl\r\n'.splitlines()
 ['ab c', '', 'de fg', 'kl']
 >>> 'ab c\n\nde fg\rkl\r\n'.splitlines(keepends=True)
@@ -929,7 +931,7 @@ For example:&gt;&gt;&gt;
 
 Unlike [`split()`](https://docs.python.org/3/library/stdtypes.html#str.split) when a delimiter string _sep_ is given, this method returns an empty list for the empty string, and a terminal line break does not result in an extra line:&gt;&gt;&gt;
 
-```python
+```text
 >>> "".splitlines()
 []
 >>> "One line\n".splitlines()
@@ -938,7 +940,7 @@ Unlike [`split()`](https://docs.python.org/3/library/stdtypes.html#str.split) wh
 
 For comparison, `split('\n')` gives:&gt;&gt;&gt;
 
-```python
+```text
 >>> ''.split('\n')
 ['']
 >>> 'Two lines\n'.split('\n')
@@ -951,7 +953,7 @@ Return `True` if string starts with the _prefix_, otherwise return `False`. _pre
 
 Return a copy of the string with the leading and trailing characters removed. The _chars_ argument is a string specifying the set of characters to be removed. If omitted or `None`, the _chars_ argument defaults to removing whitespace. The _chars_ argument is not a prefix or suffix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> '   spacious   '.strip()
 'spacious'
 >>> 'www.example.com'.strip('cmowz.')
@@ -960,7 +962,7 @@ Return a copy of the string with the leading and trailing characters removed. Th
 
 The outermost leading and trailing _chars_ argument values are stripped from the string. Characters are removed from the leading end until reaching a string character that is not contained in the set of characters in _chars_. A similar action takes place on the trailing end. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> comment_string = '#....... Section 3.2.1 Issue #32 .......'
 >>> comment_string.strip('.#! ')
 'Section 3.2.1 Issue #32'
@@ -974,21 +976,21 @@ Return a titlecased version of the string where words start with an uppercase ch
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> 'Hello world'.title()
 'Hello World'
 ```
 
 The algorithm uses a simple language-independent definition of a word as groups of consecutive letters. The definition works in many contexts but it means that apostrophes in contractions and possessives form word boundaries, which may not be the desired result:&gt;&gt;&gt;
 
-```python
+```text
 >>> "they're bill's friends from the UK".title()
 "They'Re Bill'S Friends From The Uk"
 ```
 
 A workaround for apostrophes can be constructed using regular expressions:&gt;&gt;&gt;
 
-```python
+```text
 >>> import re
 >>> def titlecase(s):
 ...     return re.sub(r"[A-Za-z]+('[A-Za-z]+)?",
@@ -1015,7 +1017,7 @@ Return a copy of the string left filled with ASCII `'0'` digits to make a string
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> "42".zfill(5)
 '00042'
 >>> "-42".zfill(5)
@@ -1024,7 +1026,7 @@ For example:&gt;&gt;&gt;
 
 #### `printf`-style String Formatting
 
-Note
+Note 
 
 The formatting operations described here exhibit a variety of quirks that lead to a number of common errors \(such as failing to display tuples and dictionaries correctly\). Using the newer [formatted string literals](https://docs.python.org/3/reference/lexical_analysis.html#f-strings), the [`str.format()`](https://docs.python.org/3/library/stdtypes.html#str.format) interface, or [template strings](https://docs.python.org/3/library/string.html#template-strings) may help avoid these errors. Each of these alternatives provides their own trade-offs and benefits of simplicity, flexibility, and/or extensibility.
 
@@ -1044,7 +1046,7 @@ A conversion specifier contains two or more characters and has the following com
 
 When the right argument is a dictionary \(or other mapping type\), then the formats in the string _must_ include a parenthesised mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key selects the value to be formatted from the mapping. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> print('%(language)s has %(number)03d quote types.' %
 ...       {'language': "Python", "number": 2})
 Python has 002 quote types.
@@ -1055,7 +1057,7 @@ In this case no `*` specifiers may occur in a format \(since they require a sequ
 The conversion flag characters are:
 
 | Flag | Meaning |
-| :-- | :-- |
+| :--- | :--- |
 | `'#'` | The value conversion will use the “alternate form” \(where defined below\). |
 | `'0'` | The conversion will be zero padded for numeric values. |
 | `'-'` | The converted value is left adjusted \(overrides the `'0'` conversion if both are given\). |
@@ -1067,7 +1069,7 @@ A length modifier \(`h`, `l`, or `L`\) may be present, but is ignored as it is n
 The conversion types are:
 
 | Conversion | Meaning | Notes |
-| :-- | :-- | :-- |
+| :--- | :--- | :--- |
 | `'d'` | Signed integer decimal. |  |
 | `'i'` | Signed integer decimal. |  |
 | `'o'` | Signed octal value. | \(1\) |
@@ -1117,9 +1119,9 @@ Bytes objects are immutable sequences of single bytes. Since many major binary p
 
 Firstly, the syntax for bytes literals is largely the same as that for string literals, except that a `b` prefix is added:
 
-- Single quotes: `b'still allows embedded "double" quotes'`
-- Double quotes: `b"still allows embedded 'single' quotes"`.
-- Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
+* Single quotes: `b'still allows embedded "double" quotes'`
+* Double quotes: `b"still allows embedded 'single' quotes"`.
+* Triple quoted: `b'''3 single quotes'''`, `b"""3 double quotes"""`
 
 Only ASCII characters are permitted in bytes literals \(regardless of the declared source code encoding\). Any binary values over 127 must be entered into bytes literals using the appropriate escape sequence.
 
@@ -1129,9 +1131,9 @@ While bytes literals and representations are based on ASCII text, bytes objects 
 
 In addition to the literal forms, bytes objects can be created in a number of other ways:
 
-- A zero-filled bytes object of a specified length: `bytes(10)`
-- From an iterable of integers: `bytes(range(20))`
-- Copying existing binary data via the buffer protocol: `bytes(obj)`
+* A zero-filled bytes object of a specified length: `bytes(10)`
+* From an iterable of integers: `bytes(range(20))`
+* Copying existing binary data via the buffer protocol: `bytes(obj)`
 
 Also see the [bytes](https://docs.python.org/3/library/functions.html#func-bytes) built-in.
 
@@ -1139,25 +1141,25 @@ Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal nu
 
 This [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) class method returns a bytes object, decoding the given string object. The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored.&gt;&gt;&gt;
 
-```python
+```text
 >>> bytes.fromhex('2Ef0 F1f2  ')
 b'.\xf0\xf1\xf2'
 ```
 
 Changed in version 3.7: [`bytes.fromhex()`](https://docs.python.org/3/library/stdtypes.html#bytes.fromhex) now skips all ASCII whitespace in the string, not just spaces.
 
-A reverse conversion function exists to transform a bytes object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
+A reverse conversion function exists to transform a bytes object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the instance.&gt;&gt;&gt;
 
-```python
+```text
 >>> b'\xf0\xf1\xf2'.hex()
 'f0f1f2'
 ```
 
-If you want to make the hex string easier to read, you can specify a single character separator _sep_ parameter to include in the output. By default between each byte. A second optional _bytes_per_sep_ parameter controls the spacing. Positive values calculate the separator position from the right, negative values from the left.&gt;&gt;&gt;
+If you want to make the hex string easier to read, you can specify a single character separator _sep_ parameter to include in the output. By default between each byte. A second optional _bytes\_per\_sep_ parameter controls the spacing. Positive values calculate the separator position from the right, negative values from the left.&gt;&gt;&gt;
 
-```python
+```text
 >>> value = b'\xf0\xf1\xf2'
 >>> value.hex('-')
 'f0-f1-f2'
@@ -1169,13 +1171,13 @@ If you want to make the hex string easier to read, you can specify a single char
 
 New in version 3.5.
 
-Changed in version 3.8: [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.
+Changed in version 3.8: [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.
 
 Since bytes objects are sequences of integers \(akin to a tuple\), for a bytes object _b_, `b[0]` will be an integer, while `b[0:1]` will be a bytes object of length 1. \(This contrasts with text strings, where both indexing and slicing will produce a string of length 1\)
 
 The representation of bytes objects uses the literal format \(`b'...'`\) since it is often more useful than e.g. `bytes([46, 46, 46])`. You can always convert a bytes object into a list of integers using `list(b)`.
 
-Note
+Note 
 
 For Python 2.x users: In the Python 2.x series, a variety of implicit conversions between 8-bit strings \(the closest thing 2.x offers to a built-in binary data type\) and Unicode strings were permitted. This was a backwards compatibility workaround to account for the fact that Python originally only supported 8-bit text, and Unicode text was a later addition. In Python 3.x, those implicit conversions are gone - conversions between 8-bit binary data and Unicode text must be explicit, and bytes and string objects will always compare unequal.
 
@@ -1185,10 +1187,10 @@ For Python 2.x users: In the Python 2.x series, a variety of implicit conversion
 
 There is no dedicated literal syntax for bytearray objects, instead they are always created by calling the constructor:
 
-- Creating an empty instance: `bytearray()`
-- Creating a zero-filled instance with a given length: `bytearray(10)`
-- From an iterable of integers: `bytearray(range(20))`
-- Copying existing binary data via the buffer protocol: `bytearray(b'Hi!')`
+* Creating an empty instance: `bytearray()`
+* Creating a zero-filled instance with a given length: `bytearray(10)`
+* From an iterable of integers: `bytearray(range(20))`
+* Copying existing binary data via the buffer protocol: `bytearray(b'Hi!')`
 
 As bytearray objects are mutable, they support the [mutable](https://docs.python.org/3/library/stdtypes.html#typesseq-mutable) sequence operations in addition to the common bytes and bytearray operations described in [Bytes and Bytearray Operations](https://docs.python.org/3/library/stdtypes.html#bytes-methods).
 
@@ -1198,25 +1200,25 @@ Since 2 hexadecimal digits correspond precisely to a single byte, hexadecimal nu
 
 This [`bytearray`](https://docs.python.org/3/library/stdtypes.html#bytearray) class method returns bytearray object, decoding the given string object. The string must contain two hexadecimal digits per byte, with ASCII whitespace being ignored.&gt;&gt;&gt;
 
-```python
+```text
 >>> bytearray.fromhex('2Ef0 F1f2  ')
 bytearray(b'.\xf0\xf1\xf2')
 ```
 
 Changed in version 3.7: [`bytearray.fromhex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.fromhex) now skips all ASCII whitespace in the string, not just spaces.
 
-A reverse conversion function exists to transform a bytearray object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
+A reverse conversion function exists to transform a bytearray object into its hexadecimal representation.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the instance.&gt;&gt;&gt;
 
-```python
+```text
 >>> bytearray(b'\xf0\xf1\xf2').hex()
 'f0f1f2'
 ```
 
 New in version 3.5.
 
-Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`bytearray.hex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.
+Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`bytearray.hex()`](https://docs.python.org/3/library/stdtypes.html#bytearray.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.
 
 Since bytearray objects are sequences of integers \(akin to a list\), for a bytearray object _b_, `b[0]` will be an integer, while `b[0:1]` will be a bytearray object of length 1. \(This contrasts with text strings, where both indexing and slicing will produce a string of length 1\)
 
@@ -1226,25 +1228,25 @@ The representation of bytearray objects uses the bytes literal format \(`bytearr
 
 Both bytes and bytearray objects support the [common](https://docs.python.org/3/library/stdtypes.html#typesseq-common) sequence operations. They interoperate not just with operands of the same type, but with any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object). Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type of the result may depend on the order of operands.
 
-Note
+Note 
 
 The methods on bytes and bytearray objects don’t accept strings as their arguments, just as the methods on strings don’t accept bytes as their arguments. For example, you have to write:
 
-```python
+```text
 a = "abc"
 b = a.replace("a", "f")
 ```
 
 and:
 
-```python
+```text
 a = b"abc"
 b = a.replace(b"a", b"f")
 ```
 
 Some bytes and bytearray operations assume the use of ASCII compatible binary formats, and hence should be avoided when working with arbitrary binary data. These restrictions are covered below.
 
-Note
+Note 
 
 Using these ASCII based operations to manipulate binary data that is not stored in an ASCII based format may lead to data corruption.
 
@@ -1258,7 +1260,7 @@ Changed in version 3.3: Also accept an integer in the range 0 to 255 as the subs
 
 If the binary data starts with the _prefix_ string, return `bytes[len(prefix):]`. Otherwise, return a copy of the original binary data:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'TestHook'.removeprefix(b'Test')
 b'Hook'
 >>> b'BaseTestCase'.removeprefix(b'Test')
@@ -1267,7 +1269,7 @@ b'BaseTestCase'
 
 The _prefix_ may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1275,7 +1277,7 @@ New in version 3.9.`bytes.removesuffix`\(_suffix_, _/_\)`bytearray.removesuffix`
 
 If the binary data ends with the _suffix_ string and that _suffix_ is not empty, return `bytes[:-len(suffix)]`. Otherwise, return a copy of the original binary data:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'MiscTests'.removesuffix(b'Tests')
 b'Misc'
 >>> b'TmpDirMixin'.removesuffix(b'Tests')
@@ -1284,7 +1286,7 @@ b'TmpDirMixin'
 
 The _suffix_ may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1294,7 +1296,7 @@ Return a string decoded from the given bytes. Default encoding is `'utf-8'`. _er
 
 By default, the _errors_ argument is not checked for best performances, but only used at the first decoding error. Enable the [Python Development Mode](https://docs.python.org/3/library/devmode.html#devmode), or use a debug build to check _errors_.
 
-Note
+Note 
 
 Passing the _encoding_ argument to [`str`](https://docs.python.org/3/library/stdtypes.html#str) allows decoding any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object) directly, without needing to make a temporary bytes or bytearray object.
 
@@ -1310,11 +1312,11 @@ Return the lowest index in the data where the subsequence _sub_ is found, such t
 
 The subsequence to search for may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object) or an integer in the range 0 to 255.
 
-Note
+Note 
 
 The [`find()`](https://docs.python.org/3/library/stdtypes.html#bytes.find) method should be used only if you need to know the position of _sub_. To check if _sub_ is a substring or not, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) operator:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Py' in b'Python'
 True
 ```
@@ -1341,7 +1343,7 @@ Return a copy of the sequence with all occurrences of subsequence _old_ replaced
 
 The subsequence to search for and its replacement may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rfind`\(_sub_\[, _start_\[, _end_\]\]\)`bytearray.rfind`\(_sub_\[, _start_\[, _end_\]\]\)
 
@@ -1371,7 +1373,7 @@ You can use the [`bytes.maketrans()`](https://docs.python.org/3/library/stdtypes
 
 Set the _table_ argument to `None` for translations that only delete characters:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'read this short text'.translate(None, b'aeiou')
 b'rd ths shrt txt'
 ```
@@ -1382,19 +1384,19 @@ The following methods on bytes and bytearray objects have default behaviours tha
 
 Return a copy of the object centered in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.ljust`\(_width_\[, _fillbyte_\]\)`bytearray.ljust`\(_width_\[, _fillbyte_\]\)
 
 Return a copy of the object left justified in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.lstrip`\(\[_chars_\]\)`bytearray.lstrip`\(\[_chars_\]\)
 
 Return a copy of the sequence with specified leading bytes removed. The _chars_ argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters. If omitted or `None`, the _chars_ argument defaults to removing ASCII whitespace. The _chars_ argument is not a prefix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'   spacious   '.lstrip()
 b'spacious   '
 >>> b'www.example.com'.lstrip(b'cmowz.')
@@ -1403,20 +1405,20 @@ b'example.com'
 
 The binary sequence of byte values to remove may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object). See [`removeprefix()`](https://docs.python.org/3/library/stdtypes.html#bytes.removeprefix) for a method that will remove a single prefix string rather than all of a set of characters. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Arthur: three!'.lstrip(b'Arthur: ')
 b'ee!'
 >>> b'Arthur: three!'.removeprefix(b'Arthur: ')
 b'three!'
 ```
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rjust`\(_width_\[, _fillbyte_\]\)`bytearray.rjust`\(_width_\[, _fillbyte_\]\)
 
 Return a copy of the object right justified in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rsplit`\(_sep=None_, _maxsplit=-1_\)`bytearray.rsplit`\(_sep=None_, _maxsplit=-1_\)
 
@@ -1424,7 +1426,7 @@ Split the binary sequence into subsequences of the same type, using _sep_ as the
 
 Return a copy of the sequence with specified trailing bytes removed. The _chars_ argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters. If omitted or `None`, the _chars_ argument defaults to removing ASCII whitespace. The _chars_ argument is not a suffix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'   spacious   '.rstrip()
 b'   spacious'
 >>> b'mississippi'.rstrip(b'ipz')
@@ -1433,14 +1435,14 @@ b'mississ'
 
 The binary sequence of byte values to remove may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object). See [`removesuffix()`](https://docs.python.org/3/library/stdtypes.html#bytes.removesuffix) for a method that will remove a single suffix string rather than all of a set of characters. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Monty Python'.rstrip(b' Python')
 b'M'
 >>> b'Monty Python'.removesuffix(b' Python')
 b'Monty'
 ```
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.split`\(_sep=None_, _maxsplit=-1_\)`bytearray.split`\(_sep=None_, _maxsplit=-1_\)
 
@@ -1450,7 +1452,7 @@ If _sep_ is given, consecutive delimiters are not grouped together and are deeme
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'1,2,3'.split(b',')
 [b'1', b'2', b'3']
 >>> b'1,2,3'.split(b',', maxsplit=1)
@@ -1463,7 +1465,7 @@ If _sep_ is not specified or is `None`, a different splitting algorithm is appli
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'1 2 3'.split()
 [b'1', b'2', b'3']
 >>> b'1 2 3'.split(maxsplit=1)
@@ -1476,7 +1478,7 @@ For example:&gt;&gt;&gt;
 
 Return a copy of the sequence with specified leading and trailing bytes removed. The _chars_ argument is a binary sequence specifying the set of byte values to be removed - the name refers to the fact this method is usually used with ASCII characters. If omitted or `None`, the _chars_ argument defaults to removing ASCII whitespace. The _chars_ argument is not a prefix or suffix; rather, all combinations of its values are stripped:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'   spacious   '.strip()
 b'spacious'
 >>> b'www.example.com'.strip(b'cmowz.')
@@ -1485,7 +1487,7 @@ b'example'
 
 The binary sequence of byte values to remove may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1493,20 +1495,20 @@ The following methods on bytes and bytearray objects assume the use of ASCII com
 
 Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased. Non-ASCII byte values are passed through unchanged.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.expandtabs`\(_tabsize=8_\)`bytearray.expandtabs`\(_tabsize=8_\)
 
 Return a copy of the sequence where all ASCII tab characters are replaced by one or more ASCII spaces, depending on the current column and the given tab size. Tab positions occur every _tabsize_ bytes \(default is 8, giving tab positions at columns 0, 8, 16 and so on\). To expand the sequence, the current column is set to zero and the sequence is examined byte by byte. If the byte is an ASCII tab character \(`b'\t'`\), one or more space characters are inserted in the result until the current column is equal to the next tab position. \(The tab character itself is not copied.\) If the current byte is an ASCII newline \(`b'\n'`\) or carriage return \(`b'\r'`\), it is copied and the current column is reset to zero. Any other byte value is copied unchanged and the current column is incremented by one regardless of how the byte value is represented when printed:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'01\t012\t0123\t01234'.expandtabs()
 b'01      012     0123    01234'
 >>> b'01\t012\t0123\t01234'.expandtabs(4)
 b'01  012 0123    01234'
 ```
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.isalnum`\(\)`bytearray.isalnum`\(\)
 
@@ -1514,7 +1516,7 @@ Return `True` if all bytes in the sequence are alphabetical ASCII characters or 
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'ABCabc1'.isalnum()
 True
 >>> b'ABC abc1'.isalnum()
@@ -1527,7 +1529,7 @@ Return `True` if all bytes in the sequence are alphabetic ASCII characters and t
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'ABCabc'.isalpha()
 True
 >>> b'ABCabc1'.isalpha()
@@ -1544,7 +1546,7 @@ Return `True` if all bytes in the sequence are ASCII decimal digits and the sequ
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'1234'.isdigit()
 True
 >>> b'1.23'.isdigit()
@@ -1557,7 +1559,7 @@ Return `True` if there is at least one lowercase ASCII character in the sequence
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'hello world'.islower()
 True
 >>> b'Hello world'.islower()
@@ -1572,7 +1574,7 @@ Return `True` if the sequence is ASCII titlecase and the sequence is not empty, 
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Hello World'.istitle()
 True
 >>> b'Hello world'.istitle()
@@ -1585,7 +1587,7 @@ Return `True` if there is at least one uppercase alphabetic ASCII character in t
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'HELLO WORLD'.isupper()
 True
 >>> b'Hello world'.isupper()
@@ -1598,14 +1600,14 @@ Return a copy of the sequence with all the uppercase ASCII characters converted 
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Hello World'.lower()
 b'hello world'
 ```
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.splitlines`\(_keepends=False_\)`bytearray.splitlines`\(_keepends=False_\)
 
@@ -1613,7 +1615,7 @@ Return a list of the lines in the binary sequence, breaking at ASCII line bounda
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'ab c\n\nde fg\rkl\r\n'.splitlines()
 [b'ab c', b'', b'de fg', b'kl']
 >>> b'ab c\n\nde fg\rkl\r\n'.splitlines(keepends=True)
@@ -1622,7 +1624,7 @@ For example:&gt;&gt;&gt;
 
 Unlike [`split()`](https://docs.python.org/3/library/stdtypes.html#bytes.split) when a delimiter string _sep_ is given, this method returns an empty list for the empty string, and a terminal line break does not result in an extra line:&gt;&gt;&gt;
 
-```python
+```text
 >>> b"".split(b'\n'), b"Two lines\n".split(b'\n')
 ([b''], [b'Two lines', b''])
 >>> b"".splitlines(), b"One line\n".splitlines()
@@ -1635,7 +1637,7 @@ Return a copy of the sequence with all the lowercase ASCII characters converted 
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Hello World'.swapcase()
 b'hELLO wORLD'
 ```
@@ -1644,7 +1646,7 @@ Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijkl
 
 Unlike [`str.swapcase()`](https://docs.python.org/3/library/stdtypes.html#str.swapcase), it is always the case that `bin.swapcase().swapcase() == bin` for the binary versions. Case conversions are symmetrical in ASCII, even though that is not generally true for arbitrary Unicode code points.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.title`\(\)`bytearray.title`\(\)
 
@@ -1652,7 +1654,7 @@ Return a titlecased version of the binary sequence where words start with an upp
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Hello world'.title()
 b'Hello World'
 ```
@@ -1661,14 +1663,14 @@ Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijkl
 
 The algorithm uses a simple language-independent definition of a word as groups of consecutive letters. The definition works in many contexts but it means that apostrophes in contractions and possessives form word boundaries, which may not be the desired result:&gt;&gt;&gt;
 
-```python
+```text
 >>> b"they're bill's friends from the UK".title()
 b"They'Re Bill'S Friends From The Uk"
 ```
 
 A workaround for apostrophes can be constructed using regular expressions:&gt;&gt;&gt;
 
-```python
+```text
 >>> import re
 >>> def titlecase(s):
 ...     return re.sub(rb"[A-Za-z]+('[A-Za-z]+)?",
@@ -1680,7 +1682,7 @@ A workaround for apostrophes can be constructed using regular expressions:&gt;&g
 b"They're Bill's Friends."
 ```
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.upper`\(\)`bytearray.upper`\(\)
 
@@ -1688,14 +1690,14 @@ Return a copy of the sequence with all the lowercase ASCII characters converted 
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b'Hello World'.upper()
 b'HELLO WORLD'
 ```
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.zfill`\(_width_\)`bytearray.zfill`\(_width_\)
 
@@ -1703,20 +1705,20 @@ Return a copy of the sequence left filled with ASCII `b'0'` digits to make a seq
 
 For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> b"42".zfill(5)
 b'00042'
 >>> b"-42".zfill(5)
 b'-0042'
 ```
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
 #### `printf`-style Bytes Formatting
 
-Note
+Note 
 
 The formatting operations described here exhibit a variety of quirks that lead to a number of common errors \(such as failing to display tuples and dictionaries correctly\). If the value being printed may be a tuple or dictionary, wrap it in a tuple.
 
@@ -1736,7 +1738,7 @@ A conversion specifier contains two or more characters and has the following com
 
 When the right argument is a dictionary \(or other mapping type\), then the formats in the bytes object _must_ include a parenthesised mapping key into that dictionary inserted immediately after the `'%'` character. The mapping key selects the value to be formatted from the mapping. For example:&gt;&gt;&gt;
 
-```python
+```text
 >>> print(b'%(language)s has %(number)03d quote types.' %
 ...       {b'language': b"Python", b"number": 2})
 b'Python has 002 quote types.'
@@ -1747,7 +1749,7 @@ In this case no `*` specifiers may occur in a format \(since they require a sequ
 The conversion flag characters are:
 
 | Flag | Meaning |
-| :-- | :-- |
+| :--- | :--- |
 | `'#'` | The value conversion will use the “alternate form” \(where defined below\). |
 | `'0'` | The conversion will be zero padded for numeric values. |
 | `'-'` | The converted value is left adjusted \(overrides the `'0'` conversion if both are given\). |
@@ -1759,7 +1761,7 @@ A length modifier \(`h`, `l`, or `L`\) may be present, but is ignored as it is n
 The conversion types are:
 
 | Conversion | Meaning | Notes |
-| :-- | :-- | :-- |
+| :--- | :--- | :--- |
 | `'d'` | Signed integer decimal. |  |
 | `'i'` | Signed integer decimal. |  |
 | `'o'` | Signed octal value. | \(1\) |
@@ -1796,11 +1798,11 @@ Notes:
 7. `b'%r'` is deprecated, but will not be removed during the 3.x series.
 8. See [**PEP 237**](https://www.python.org/dev/peps/pep-0237).
 
-Note
+Note 
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
-See also
+See also 
 
 [**PEP 461**](https://www.python.org/dev/peps/pep-0461) - Adding % formatting to bytes and bytearray
 
@@ -1818,7 +1820,7 @@ A [`memoryview`](https://docs.python.org/3/library/stdtypes.html#memoryview) has
 
 A [`memoryview`](https://docs.python.org/3/library/stdtypes.html#memoryview) supports slicing and indexing to expose its data. One-dimensional slicing will result in a subview:&gt;&gt;&gt;
 
-```python
+```text
 >>> v = memoryview(b'abcefg')
 >>> v[1]
 98
@@ -1834,7 +1836,7 @@ If [`format`](https://docs.python.org/3/library/stdtypes.html#memoryview.format)
 
 Here is an example with a non-byte format:&gt;&gt;&gt;
 
-```python
+```text
 >>> import array
 >>> a = array.array('l', [-11111111, 22222222, -33333333, 44444444])
 >>> m = memoryview(a)
@@ -1848,7 +1850,7 @@ Here is an example with a non-byte format:&gt;&gt;&gt;
 
 If the underlying object is writable, the memoryview supports one-dimensional slice assignment. Resizing is not allowed:&gt;&gt;&gt;
 
-```python
+```text
 >>> data = bytearray(b'abcefg')
 >>> v = memoryview(data)
 >>> v.readonly
@@ -1870,7 +1872,7 @@ bytearray(b'z1spam')
 
 One-dimensional memoryviews of hashable \(read-only\) types with formats ‘B’, ‘b’ or ‘c’ are also hashable. The hash is defined as `hash(m) == hash(m.tobytes())`:&gt;&gt;&gt;
 
-```python
+```text
 >>> v = memoryview(b'abcefg')
 >>> hash(v) == hash(b'abcefg')
 True
@@ -1892,7 +1894,7 @@ A memoryview and a [**PEP 3118**](https://www.python.org/dev/peps/pep-3118) expo
 
 For the subset of [`struct`](https://docs.python.org/3/library/struct.html#module-struct) format strings currently supported by [`tolist()`](https://docs.python.org/3/library/stdtypes.html#memoryview.tolist), `v` and `w` are equal if `v.tolist() == w.tolist()`:&gt;&gt;&gt;
 
-```python
+```text
 >>> import array
 >>> a = array.array('I', [1, 2, 3, 4, 5])
 >>> b = array.array('d', [1.0, 2.0, 3.0, 4.0, 5.0])
@@ -1912,7 +1914,7 @@ True
 
 If either format string is not supported by the [`struct`](https://docs.python.org/3/library/struct.html#module-struct) module, then the objects will always compare as unequal \(even if the format strings and buffer contents are identical\):&gt;&gt;&gt;
 
-```python
+```text
 >>> from ctypes import BigEndianStructure, c_long
 >>> class BEPoint(BigEndianStructure):
 ...     _fields_ = [("x", c_long), ("y", c_long)]
@@ -1932,7 +1934,7 @@ Changed in version 3.3: Previous versions compared the raw memory disregarding t
 
 Return the data in the buffer as a bytestring. This is equivalent to calling the [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) constructor on the memoryview.&gt;&gt;&gt;
 
-```python
+```text
 >>> m = memoryview(b"abc")
 >>> m.tobytes()
 b'abc'
@@ -1942,11 +1944,11 @@ b'abc'
 
 For non-contiguous arrays the result is equal to the flattened list representation with all elements converted to bytes. [`tobytes()`](https://docs.python.org/3/library/stdtypes.html#memoryview.tobytes) supports all format strings, including those that are not in [`struct`](https://docs.python.org/3/library/struct.html#module-struct) module syntax.
 
-New in version 3.8: _order_ can be {‘C’, ‘F’, ‘A’}. When _order_ is ‘C’ or ‘F’, the data of the original array is converted to C or Fortran order. For contiguous views, ‘A’ returns an exact copy of the physical memory. In particular, in-memory Fortran order is preserved. For non-contiguous views, the data is converted to C first. _order=None_ is the same as _order=’C’_.`hex`\(\[_sep_\[, _bytes_per_sep_\]\]\)
+New in version 3.8: _order_ can be {‘C’, ‘F’, ‘A’}. When _order_ is ‘C’ or ‘F’, the data of the original array is converted to C or Fortran order. For contiguous views, ‘A’ returns an exact copy of the physical memory. In particular, in-memory Fortran order is preserved. For non-contiguous views, the data is converted to C first. _order=None_ is the same as _order=’C’_.`hex`\(\[_sep_\[, _bytes\_per\_sep_\]\]\)
 
 Return a string object containing two hexadecimal digits for each byte in the buffer.&gt;&gt;&gt;
 
-```python
+```text
 >>> m = memoryview(b"abc")
 >>> m.hex()
 '616263'
@@ -1954,11 +1956,11 @@ Return a string object containing two hexadecimal digits for each byte in the bu
 
 New in version 3.5.
 
-Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`memoryview.hex()`](https://docs.python.org/3/library/stdtypes.html#memoryview.hex) now supports optional _sep_ and _bytes_per_sep_ parameters to insert separators between bytes in the hex output.`tolist`\(\)
+Changed in version 3.8: Similar to [`bytes.hex()`](https://docs.python.org/3/library/stdtypes.html#bytes.hex), [`memoryview.hex()`](https://docs.python.org/3/library/stdtypes.html#memoryview.hex) now supports optional _sep_ and _bytes\_per\_sep_ parameters to insert separators between bytes in the hex output.`tolist`\(\)
 
 Return the data in the buffer as a list of elements.&gt;&gt;&gt;
 
-```python
+```text
 >>> memoryview(b'abc').tolist()
 [97, 98, 99]
 >>> import array
@@ -1972,7 +1974,7 @@ Changed in version 3.3: [`tolist()`](https://docs.python.org/3/library/stdtypes.
 
 Return a readonly version of the memoryview object. The original memoryview object is unchanged.&gt;&gt;&gt;
 
-```python
+```text
 >>> m = memoryview(bytearray(b'abc'))
 >>> mm = m.toreadonly()
 >>> mm.tolist()
@@ -1992,7 +1994,7 @@ Release the underlying buffer exposed by the memoryview object. Many objects tak
 
 After this method has been called, any further operation on the view raises a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) \(except [`release()`](https://docs.python.org/3/library/stdtypes.html#memoryview.release) itself which can be called multiple times\):&gt;&gt;&gt;
 
-```python
+```text
 >>> m = memoryview(b'abc')
 >>> m.release()
 >>> m[0]
@@ -2003,7 +2005,7 @@ ValueError: operation forbidden on released memoryview object
 
 The context management protocol can be used for a similar effect, using the `with` statement:&gt;&gt;&gt;
 
-```python
+```text
 >>> with memoryview(b'abc') as m:
 ...     m[0]
 ...
@@ -2022,7 +2024,7 @@ The destination format is restricted to a single element native format in [`stru
 
 Cast 1D/long to 1D/unsigned bytes:&gt;&gt;&gt;
 
-```python
+```text
 >>> import array
 >>> a = array.array('l', [1,2,3])
 >>> x = memoryview(a)
@@ -2047,7 +2049,7 @@ Cast 1D/long to 1D/unsigned bytes:&gt;&gt;&gt;
 
 Cast 1D/unsigned bytes to 1D/char:&gt;&gt;&gt;
 
-```python
+```text
 >>> b = bytearray(b'zyz')
 >>> x = memoryview(b)
 >>> x[0] = b'a'
@@ -2062,7 +2064,7 @@ bytearray(b'ayz')
 
 Cast 1D/bytes to 3D/ints to 1D/signed char:&gt;&gt;&gt;
 
-```python
+```text
 >>> import struct
 >>> buf = struct.pack("i"*12, *list(range(12)))
 >>> x = memoryview(buf)
@@ -2090,7 +2092,7 @@ Cast 1D/bytes to 3D/ints to 1D/signed char:&gt;&gt;&gt;
 
 Cast 1D/unsigned long to 2D/unsigned long:&gt;&gt;&gt;
 
-```python
+```text
 >>> buf = struct.pack("L"*6, *list(range(6)))
 >>> x = memoryview(buf)
 >>> y = x.cast('L', shape=[2,3])
@@ -2110,7 +2112,7 @@ There are also several readonly attributes available:`obj`
 
 The underlying object of the memoryview:&gt;&gt;&gt;
 
-```python
+```text
 >>> b  = bytearray(b'xyz')
 >>> m = memoryview(b)
 >>> m.obj is b
@@ -2121,7 +2123,7 @@ New in version 3.3.`nbytes`
 
 `nbytes == product(shape) * itemsize == len(m.tobytes())`. This is the amount of space in bytes that the array would use in a contiguous representation. It is not necessarily equal to `len(m)`:&gt;&gt;&gt;
 
-```python
+```text
 >>> import array
 >>> a = array.array('i', [1,2,3,4,5])
 >>> m = memoryview(a)
@@ -2140,7 +2142,7 @@ New in version 3.3.`nbytes`
 
 Multi-dimensional arrays:&gt;&gt;&gt;
 
-```python
+```text
 >>> import struct
 >>> buf = struct.pack("d"*12, *[1.5*x for x in range(12)])
 >>> x = memoryview(buf)
@@ -2163,7 +2165,7 @@ Changed in version 3.3: format `'B'` is now handled according to the struct modu
 
 The size in bytes of each element of the memoryview:&gt;&gt;&gt;
 
-```python
+```text
 >>> import array, struct
 >>> m = memoryview(array.array('H', [32000, 32001, 32002]))
 >>> m.itemsize
@@ -2216,9 +2218,9 @@ Return a new set or frozenset object whose elements are taken from _iterable_. T
 
 Sets can be created by several means:
 
-- Use a comma-separated list of elements within braces: `{'jack', 'sjoerd'}`
-- Use a set comprehension: `{c for c in 'abracadabra' if c not in 'abc'}`
-- Use the type constructor: `set()`, `set('foobar')`, `set(['a', 'b', 'foo'])`
+* Use a comma-separated list of elements within braces: `{'jack', 'sjoerd'}`
+* Use a set comprehension: `{c for c in 'abracadabra' if c not in 'abc'}`
+* Use the type constructor: `set()`, `set('foobar')`, `set(['a', 'b', 'foo'])`
 
 Instances of [`set`](https://docs.python.org/3/library/stdtypes.html#set) and [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset) provide the following operations:`len(s)`
 
@@ -2298,9 +2300,9 @@ Return a new dictionary initialized from an optional positional argument and a p
 
 Dictionaries can be created by several means:
 
-- Use a comma-separated list of `key: value` pairs within braces: `{'jack': 4098, 'sjoerd': 4127}` or `{4098: 'jack', 4127: 'sjoerd'}`
-- Use a dict comprehension: `{}`, `{x: x ** 2 for x in range(10)}`
-- Use the type constructor: `dict()`, `dict([('foo', 100), ('bar', 200)])`, `dict(foo=100, bar=200)`
+* Use a comma-separated list of `key: value` pairs within braces: `{'jack': 4098, 'sjoerd': 4127}` or `{4098: 'jack', 4127: 'sjoerd'}`
+* Use a dict comprehension: `{}`, `{x: x ** 2 for x in range(10)}`
+* Use the type constructor: `dict()`, `dict([('foo', 100), ('bar', 200)])`, `dict(foo=100, bar=200)`
 
 If no positional argument is given, an empty dictionary is created. If a positional argument is given and it is a mapping object, a dictionary is created with the same key-value pairs as the mapping object. Otherwise, the positional argument must be an [iterable](https://docs.python.org/3/glossary.html#term-iterable) object. Each item in the iterable must itself be an iterable with exactly two objects. The first object of each item becomes a key in the new dictionary, and the second object the corresponding value. If a key occurs more than once, the last value for that key becomes the corresponding value in the new dictionary.
 
@@ -2308,7 +2310,7 @@ If keyword arguments are given, the keyword arguments and their values are added
 
 To illustrate, the following examples all return a dictionary equal to `{"one": 1, "two": 2, "three": 3}`:&gt;&gt;&gt;
 
-```python
+```text
 >>> a = dict(one=1, two=2, three=3)
 >>> b = {'one': 1, 'two': 2, 'three': 3}
 >>> c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
@@ -2331,7 +2333,7 @@ Return the item of _d_ with key _key_. Raises a [`KeyError`](https://docs.python
 
 If a subclass of dict defines a method [`__missing__()`](https://docs.python.org/3/reference/datamodel.html#object.__missing__) and _key_ is not present, the `d[key]` operation calls that method with the key _key_ as argument. The `d[key]` operation then returns or raises whatever is returned or raised by the `__missing__(key)` call. No other operations or methods invoke [`__missing__()`](https://docs.python.org/3/reference/datamodel.html#object.__missing__). If [`__missing__()`](https://docs.python.org/3/reference/datamodel.html#object.__missing__) is not defined, [`KeyError`](https://docs.python.org/3/library/exceptions.html#KeyError) is raised. [`__missing__()`](https://docs.python.org/3/reference/datamodel.html#object.__missing__) must be a method; it cannot be an instance variable:&gt;&gt;&gt;
 
-```python
+```text
 >>> class Counter(dict):
 ...     def __missing__(self, key):
 ...         return 0
@@ -2391,7 +2393,7 @@ Return a new view of the dictionary’s values. See the [documentation of view o
 
 An equality comparison between one `dict.values()` view and another will always return `False`. This also applies when comparing `dict.values()` to itself:&gt;&gt;&gt;
 
-```python
+```text
 >>> d = {'a': 1}
 >>> d.values() == d.values()
 False
@@ -2411,7 +2413,7 @@ Dictionaries compare equal if and only if they have the same `(key, value)` pair
 
 Dictionaries preserve insertion order. Note that updating a key does not affect the order. Keys added after deletion are inserted at the end.&gt;&gt;&gt;
 
-```python
+```text
 >>> d = {"one": 1, "two": 2, "three": 3, "four": 4}
 >>> d
 {'one': 1, 'two': 2, 'three': 3, 'four': 4}
@@ -2432,7 +2434,7 @@ Changed in version 3.7: Dictionary order is guaranteed to be insertion order. Th
 
 Dictionaries and dictionary views are reversible.&gt;&gt;&gt;
 
-```python
+```text
 >>> d = {"one": 1, "two": 2, "three": 3, "four": 4}
 >>> d
 {'one': 1, 'two': 2, 'three': 3, 'four': 4}
@@ -2446,7 +2448,7 @@ Dictionaries and dictionary views are reversible.&gt;&gt;&gt;
 
 Changed in version 3.8: Dictionaries are now reversible.
 
-See also
+See also 
 
 [`types.MappingProxyType`](https://docs.python.org/3/library/types.html#types.MappingProxyType) can be used to create a read-only view of a [`dict`](https://docs.python.org/3/library/stdtypes.html#dict).
 
@@ -2476,7 +2478,7 @@ Keys views are set-like since their entries are unique and hashable. If all valu
 
 An example of dictionary view usage:&gt;&gt;&gt;
 
-```python
+```text
 >>> dishes = {'eggs': 2, 'sausage': 1, 'bacon': 1, 'spam': 500}
 >>> keys = dishes.keys()
 >>> values = dishes.values()
@@ -2515,7 +2517,7 @@ Enter the runtime context and return either this object or another object relate
 
 An example of a context manager that returns itself is a [file object](https://docs.python.org/3/glossary.html#term-file-object). File objects return themselves from \_\_enter\_\_\(\) to allow [`open()`](https://docs.python.org/3/library/functions.html#open) to be used as the context expression in a [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement.
 
-An example of a context manager that returns a related object is the one returned by [`decimal.localcontext()`](https://docs.python.org/3/library/decimal.html#decimal.localcontext). These managers set the active decimal context to a copy of the original decimal context and then return the copy. This allows changes to be made to the current decimal context in the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement without affecting code outside the `with` statement.`contextmanager.__exit__`\(_exc_type_, _exc_val_, _exc_tb_\)
+An example of a context manager that returns a related object is the one returned by [`decimal.localcontext()`](https://docs.python.org/3/library/decimal.html#decimal.localcontext). These managers set the active decimal context to a copy of the original decimal context and then return the copy. This allows changes to be made to the current decimal context in the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement without affecting code outside the `with` statement.`contextmanager.__exit__`\(_exc\_type_, _exc\_val_, _exc\_tb_\)
 
 Exit the runtime context and return a Boolean flag indicating if any exception that occurred should be suppressed. If an exception occurred while executing the body of the [`with`](https://docs.python.org/3/reference/compound_stmts.html#with) statement, the arguments contain the exception type, value and traceback information. Otherwise, all three arguments are `None`.
 
@@ -2535,7 +2537,7 @@ Note that there is no specific slot for any of these methods in the type structu
 
 Usually, the [subscription](https://docs.python.org/3/reference/expressions.html#subscriptions) of container objects calls the method [`__getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) of the object. However, the subscription of some containers’ classes may call the classmethod [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) of the class instead. The classmethod [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) should return a `GenericAlias` object.
 
-Note
+Note 
 
 If the [`__getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) of the class’ metaclass is present, it will take precedence over the [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) defined in the class \(see [**PEP 560**](https://www.python.org/dev/peps/pep-0560) for more details\).
 
@@ -2545,21 +2547,21 @@ The user-exposed type for the `GenericAlias` object can be accessed from [`types
 
 Creates a `GenericAlias` representing a type `T` containing elements of types _X_, _Y_, and more depending on the `T` used. For example, a function expecting a [`list`](https://docs.python.org/3/library/stdtypes.html#list) containing [`float`](https://docs.python.org/3/library/functions.html#float) elements:
 
-```python
+```text
 def average(values: list[float]) -> float:
     return sum(values) / len(values)
 ```
 
 Another example for [mapping](https://docs.python.org/3/glossary.html#term-mapping) objects, using a [`dict`](https://docs.python.org/3/library/stdtypes.html#dict), which is a generic type expecting two type parameters representing the key type and the value type. In this example, the function expects a `dict` with keys of type [`str`](https://docs.python.org/3/library/stdtypes.html#str) and values of type [`int`](https://docs.python.org/3/library/functions.html#int):
 
-```python
+```text
 def send_post_request(url: str, body: dict[str, int]) -> None:
     ...
 ```
 
 The builtin functions [`isinstance()`](https://docs.python.org/3/library/functions.html#isinstance) and [`issubclass()`](https://docs.python.org/3/library/functions.html#issubclass) do not accept `GenericAlias` types for their second argument:&gt;&gt;&gt;
 
-```python
+```text
 >>> isinstance([1, 2], list[str])
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -2568,7 +2570,7 @@ TypeError: isinstance() argument 2 cannot be a parameterized generic
 
 The Python runtime does not enforce [type annotations](https://docs.python.org/3/glossary.html#term-annotation). This extends to generic types and their type parameters. When creating an object from a `GenericAlias`, container elements are not checked against their type. For example, the following code is discouraged, but will run without errors:&gt;&gt;&gt;
 
-```python
+```text
 >>> t = list[str]
 >>> t([1, 2, 3])
 [1, 2, 3]
@@ -2576,7 +2578,7 @@ The Python runtime does not enforce [type annotations](https://docs.python.org/3
 
 Furthermore, parameterized generics erase type parameters during object creation:&gt;&gt;&gt;
 
-```python
+```text
 >>> t = list[str]
 >>> type(t)
 <class 'types.GenericAlias'>
@@ -2588,7 +2590,7 @@ Furthermore, parameterized generics erase type parameters during object creation
 
 Calling [`repr()`](https://docs.python.org/3/library/functions.html#repr) or [`str()`](https://docs.python.org/3/library/stdtypes.html#str) on a generic shows the parameterized type:&gt;&gt;&gt;
 
-```python
+```text
 >>> repr(list[int])
 'list[int]'
 
@@ -2598,7 +2600,7 @@ Calling [`repr()`](https://docs.python.org/3/library/functions.html#repr) or [`s
 
 The [`__getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) method of generics will raise an exception to disallow mistakes like `dict[str][str]`:&gt;&gt;&gt;
 
-```python
+```text
 >>> dict[str][str]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -2607,7 +2609,7 @@ TypeError: There are no type variables left in dict[str]
 
 However, such expressions are valid when [type variables](https://docs.python.org/3/library/typing.html#generics) are used. The index must have as many elements as there are type variable items in the `GenericAlias` object’s [`__args__`](https://docs.python.org/3/library/stdtypes.html#genericalias.__args__).&gt;&gt;&gt;
 
-```python
+```text
 >>> from typing import TypeVar
 >>> Y = TypeVar('Y')
 >>> dict[str, Y][int]
@@ -2618,44 +2620,44 @@ dict[str, int]
 
 These standard library collections support parameterized generics.
 
-- [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple)
-- [`list`](https://docs.python.org/3/library/stdtypes.html#list)
-- [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
-- [`set`](https://docs.python.org/3/library/stdtypes.html#set)
-- [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset)
-- [`type`](https://docs.python.org/3/library/functions.html#type)
-- [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque)
-- [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
-- [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict)
-- [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
-- [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap)
-- [`collections.abc.Awaitable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable)
-- [`collections.abc.Coroutine`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Coroutine)
-- [`collections.abc.AsyncIterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable)
-- [`collections.abc.AsyncIterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterator)
-- [`collections.abc.AsyncGenerator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncGenerator)
-- [`collections.abc.Iterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable)
-- [`collections.abc.Iterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterator)
-- [`collections.abc.Generator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Generator)
-- [`collections.abc.Reversible`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Reversible)
-- [`collections.abc.Container`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Container)
-- [`collections.abc.Collection`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Collection)
-- [`collections.abc.Callable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable)
-- [`collections.abc.Set`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Set)
-- [`collections.abc.MutableSet`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet)
-- [`collections.abc.Mapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping)
-- [`collections.abc.MutableMapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping)
-- [`collections.abc.Sequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence)
-- [`collections.abc.MutableSequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence)
-- [`collections.abc.ByteString`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ByteString)
-- [`collections.abc.MappingView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MappingView)
-- [`collections.abc.KeysView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.KeysView)
-- [`collections.abc.ItemsView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ItemsView)
-- [`collections.abc.ValuesView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ValuesView)
-- [`contextlib.AbstractContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager)
-- [`contextlib.AbstractAsyncContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager)
-- [re.Pattern](https://docs.python.org/3/library/re.html#re-objects)
-- [re.Match](https://docs.python.org/3/library/re.html#match-objects)
+* [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple)
+* [`list`](https://docs.python.org/3/library/stdtypes.html#list)
+* [`dict`](https://docs.python.org/3/library/stdtypes.html#dict)
+* [`set`](https://docs.python.org/3/library/stdtypes.html#set)
+* [`frozenset`](https://docs.python.org/3/library/stdtypes.html#frozenset)
+* [`type`](https://docs.python.org/3/library/functions.html#type)
+* [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque)
+* [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+* [`collections.OrderedDict`](https://docs.python.org/3/library/collections.html#collections.OrderedDict)
+* [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
+* [`collections.ChainMap`](https://docs.python.org/3/library/collections.html#collections.ChainMap)
+* [`collections.abc.Awaitable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Awaitable)
+* [`collections.abc.Coroutine`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Coroutine)
+* [`collections.abc.AsyncIterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterable)
+* [`collections.abc.AsyncIterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncIterator)
+* [`collections.abc.AsyncGenerator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.AsyncGenerator)
+* [`collections.abc.Iterable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterable)
+* [`collections.abc.Iterator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Iterator)
+* [`collections.abc.Generator`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Generator)
+* [`collections.abc.Reversible`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Reversible)
+* [`collections.abc.Container`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Container)
+* [`collections.abc.Collection`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Collection)
+* [`collections.abc.Callable`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Callable)
+* [`collections.abc.Set`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Set)
+* [`collections.abc.MutableSet`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSet)
+* [`collections.abc.Mapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Mapping)
+* [`collections.abc.MutableMapping`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableMapping)
+* [`collections.abc.Sequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.Sequence)
+* [`collections.abc.MutableSequence`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MutableSequence)
+* [`collections.abc.ByteString`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ByteString)
+* [`collections.abc.MappingView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.MappingView)
+* [`collections.abc.KeysView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.KeysView)
+* [`collections.abc.ItemsView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ItemsView)
+* [`collections.abc.ValuesView`](https://docs.python.org/3/library/collections.abc.html#collections.abc.ValuesView)
+* [`contextlib.AbstractContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractContextManager)
+* [`contextlib.AbstractAsyncContextManager`](https://docs.python.org/3/library/contextlib.html#contextlib.AbstractAsyncContextManager)
+* [re.Pattern](https://docs.python.org/3/library/re.html#re-objects)
+* [re.Match](https://docs.python.org/3/library/re.html#match-objects)
 
 #### Special Attributes of Generic Alias
 
@@ -2663,7 +2665,7 @@ All parameterized generics implement special read-only attributes.`genericalias.
 
 This attribute points at the non-parameterized generic class:&gt;&gt;&gt;
 
-```python
+```text
 >>> list[int].__origin__
 <class 'list'>
 ```
@@ -2672,7 +2674,7 @@ This attribute points at the non-parameterized generic class:&gt;&gt;&gt;
 
 This attribute is a [`tuple`](https://docs.python.org/3/library/stdtypes.html#tuple) \(possibly of length 1\) of generic types passed to the original [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) of the generic container:&gt;&gt;&gt;
 
-```python
+```text
 >>> dict[str, list[int]].__args__
 (<class 'str'>, list[int])
 ```
@@ -2681,7 +2683,7 @@ This attribute is a [`tuple`](https://docs.python.org/3/library/stdtypes.html#tu
 
 This attribute is a lazily computed tuple \(possibly empty\) of unique type variables found in `__args__`:&gt;&gt;&gt;
 
-```python
+```text
 >>> from typing import TypeVar
 
 >>> T = TypeVar('T')
@@ -2691,9 +2693,9 @@ This attribute is a lazily computed tuple \(possibly empty\) of unique type vari
 
 See also
 
-- [**PEP 585**](https://www.python.org/dev/peps/pep-0585) – “Type Hinting Generics In Standard Collections”
-- [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) – Used to implement parameterized generics.
-- [Generics](https://docs.python.org/3/library/typing.html#generics) – Generics in the [`typing`](https://docs.python.org/3/library/typing.html#module-typing) module.
+* [**PEP 585**](https://www.python.org/dev/peps/pep-0585) – “Type Hinting Generics In Standard Collections”
+* [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) – Used to implement parameterized generics.
+* [Generics](https://docs.python.org/3/library/typing.html#generics) – Generics in the [`typing`](https://docs.python.org/3/library/typing.html#module-typing) module.
 
 New in version 3.9.
 
@@ -2729,7 +2731,7 @@ If you access a method \(a function defined in a class namespace\) through an in
 
 Like function objects, bound method objects support getting arbitrary attributes. However, since method attributes are actually stored on the underlying function object \(`meth.__func__`\), setting method attributes on bound methods is disallowed. Attempting to set an attribute on a method results in an [`AttributeError`](https://docs.python.org/3/library/exceptions.html#AttributeError) being raised. In order to set a method attribute, you need to explicitly set it on the underlying function object:&gt;&gt;&gt;
 
-```python
+```text
 >>> class C:
 ...     def method(self):
 ...         pass
@@ -2812,7 +2814,8 @@ This method can be overridden by a metaclass to customize the method resolution 
 
 Each class keeps a list of weak references to its immediate subclasses. This method returns a list of all those references still alive. The list is in definition order. Example:&gt;&gt;&gt;
 
-```python
+```text
 >>> int.__subclasses__()
 [<class 'bool'>]
 ```
+

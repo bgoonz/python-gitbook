@@ -1,12 +1,15 @@
 # Downloads & Misc-Assets
 
-{% tabs %} {% tab title="Blog" %}
+{% tabs %}
+{% tab title="Blog" %}
 
 {% tab title="Algorithms" %}
 
 {% tab title="Awesome Find:" %}
 
-{% tab %} Awesome Find: {% endtab %}
+{% tab %}
+Awesome Find:
+{% endtab %}
 
 {% tab title="DS Website" %}
 
@@ -14,13 +17,16 @@
 
 {% tab title="CS-Unit" %}
 
-{% tab title="" %} [https://codesandbox.io/s/ys5bq](https://codesandbox.io/s/ys5bq)
+{% tab title="" %}
+[https://codesandbox.io/s/ys5bq](https://codesandbox.io/s/ys5bq)
 
-{% embed url="https://codesandbox.io/s/ys5bq" caption="" %} {% endtab %} {% endtabs %}
+{% embed url="https://codesandbox.io/s/ys5bq" caption="" %}
+{% endtab %}
+{% endtabs %}
 
 ## My Blog:
 
-[![Edit ds-algo (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=dark)
+[![Edit ds-algo \(forked\)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=dark)
 
 {% embed url="https://codesandbox.io/embed/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=light&view=preview" caption="" %}
 
@@ -369,3 +375,4 @@
 {% embed url="https://github.com/bgoonz/python-gitbook/commit/d099a8868f77f46e5c99426926294e349342375a" caption="" %}
 
 {% embed url="https://raw.githubusercontent.com/bgoonz/python-gitbook/master/.gitbook/assets/zen-of-python.pdf" caption="" %}
+

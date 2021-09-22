@@ -34,7 +34,7 @@ Otherwise, just divide the array into two equal halves and pass both arrays to r
 
 And at last, we are going to call merge function after each recursive call to join both sorted array.
 
-```python
+```text
 def mergeSort(x):
     if len(x) == 0 or len(x) == 1:
         return x
@@ -49,7 +49,7 @@ def mergeSort(x):
 
 Now we are breaking the array until they are divided individually. So what we want is just join the arrays that we passed in a sorted way to this function and then returned the new array as a result.
 
-```python
+```text
 def merge(a,b):
     c = []
     while len(a) != 0 and len(b) != 0:
@@ -80,7 +80,7 @@ Now, let’s create a main condition where we need to call the above function an
 
 So let’s manually defined the list which we want to pass as an argument to the function.
 
-```python
+```text
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     print('Sorted List : ',mergeSort(List))
@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```python
+```text
 
 def merge(a,b):
     c = []
@@ -135,7 +135,7 @@ if __name__ == '__main__':
 
 #### The implementation of merge sort is the following, and is the easiest to explain using animations as example:
 
-![carbon (33).png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496599593-Z7XPJJG6QL4M54YU3LQV/carbon+%2833%29.png?format=750w)
+![carbon \(33\).png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496599593-Z7XPJJG6QL4M54YU3LQV/carbon+%2833%29.png?format=750w)
 
 ![Screen Shot 2018-12-22 at 17.33.52.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496455849-G3GAA1EB8Z8Q5HF53RIG/Screen+Shot+2018-12-22+at+17.33.52.png?format=300w)
 
@@ -161,7 +161,7 @@ if __name__ == '__main__':
 
 #### **left** is **\[6\]**, so **left\[0\]** is **6**, and **right** is **\[4\]**, so **right\[0\]** is **4**! This means that the else-block gets run, and we push right\[0\] to the results array. The results array is now \[4\]. We also increment the **rightIndex** from 0 to 1. This means that now,
 
-#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned. This means that the **mergeSort\(left\)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort\(right\).**
+#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned.  This means that the **mergeSort\(left\)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort\(right\).**
 
 ![Screen Shot 2018-12-22 at 17.44.10.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497080696-2DFK2SPSB6XRLSTD5UOX/Screen+Shot+2018-12-22+at+17.44.10.png?format=300w)
 
@@ -175,7 +175,7 @@ if __name__ == '__main__':
 
 #### As the **rightIndex** gets incremented by one, **right\[1\]** is now 5. **4 &lt; 5** returns true, so **left\[leftIndex\]** gets pushed to the **results** array.
 
-####
+####  
 
 ![](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497669811-HRRJS0W6SMFPCCOE053V/image-asset.png?format=300w)
 
@@ -190,3 +190,4 @@ if __name__ == '__main__':
 #### **Best**, **average and worst**: Each partitioning takes **O\(n\)** operations, and every partitioning splits the array **O\(log\(n\)\)**. This results in **O\(n log\(n\)\)**.
 
 #### **Worst space**: We save three variables for each element in the array.
+

@@ -1,7 +1,7 @@
 # Practice Problems
 
-{% tabs %} {% tab title="Arcade" %}
-
+{% tabs %}
+{% tab title="Arcade" %}
 ```python
 def add(param1, param2):
     return param1 + param2
@@ -1431,9 +1431,10 @@ def rectangleRotation(a, b):
 print(rectangleRotation(8, 6))
 
 ```
-
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
+

@@ -34,7 +34,7 @@ Though dictionaries are not ordered, the fact that you can have arbitrary values
 
 while True: print\('Enter a name: \(blank to quit\)'\) name = input\(\) if name == '': break
 
-```python
+```text
 ➋ if name in birthdays:
     ➌ print\(birthdays\[name\] + ' is the birthday of ' + name\)
    else:
@@ -65,7 +65,7 @@ The dictionaries are still unordered, as you can’t access items in them using 
 
 **The keys\(\), values\(\), and items\(\) Methods**
 
-There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys\(\), values\(\), and items\(\). The values returned by these methods are not true lists: they cannot be modified and do not have an append\(\) method. But these data types \(dict_keys, dict_values, and dict_items, respectively\) _can_ be used in for loops. To see how these methods work, enter the following into the interactive shell:
+There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys\(\), values\(\), and items\(\). The values returned by these methods are not true lists: they cannot be modified and do not have an append\(\) method. But these data types \(dict\_keys, dict\_values, and dict\_items, respectively\) _can_ be used in for loops. To see how these methods work, enter the following into the interactive shell:
 
 &gt;&gt;&gt; spam = {'color': 'red', 'age': 42} &gt;&gt;&gt; for v in spam.values\(\): ... print\(v\)
 
@@ -79,13 +79,13 @@ color age &gt;&gt;&gt; for i in spam.items\(\): ... print\(i\)
 
 \('color', 'red'\) \('age', 42\)
 
-When you use the keys\(\), values\(\), and items\(\) methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively. Notice that the values in the dict_items value returned by the items\(\) method are tuples of the key and value.
+When you use the keys\(\), values\(\), and items\(\) methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively. Notice that the values in the dict\_items value returned by the items\(\) method are tuples of the key and value.
 
 If you want a true list from one of these methods, pass its list-like return value to the list\(\) function. Enter the following into the interactive shell:
 
-&gt;&gt;&gt; spam = {'color': 'red', 'age': 42} &gt;&gt;&gt; spam.keys\(\) dict_keys\(\['color', 'age'\]\) &gt;&gt;&gt; list\(spam.keys\(\)\) \['color', 'age'\]
+&gt;&gt;&gt; spam = {'color': 'red', 'age': 42} &gt;&gt;&gt; spam.keys\(\) dict\_keys\(\['color', 'age'\]\) &gt;&gt;&gt; list\(spam.keys\(\)\) \['color', 'age'\]
 
-The list\(spam.keys\(\)\) line takes the dict_keys value returned from keys\(\) and passes it to list\(\), which then returns a list value of \['color', 'age'\].
+The list\(spam.keys\(\)\) line takes the dict\_keys value returned from keys\(\) and passes it to list\(\), which then returns a list value of \['color', 'age'\].
 
 You can also use the multiple assignment trick in a for loop to assign the key and value to separate variables. Enter the following into the interactive shell:
 
@@ -203,7 +203,7 @@ The data structure in theBoard now represents the tic-tac-toe board in [Figure 5
 
 _Figure 5-5: The first move_
 
-A board where player O has won by placing \_O_s across the top might look like this:
+A board where player O has won by placing \_O\_s across the top might look like this:
 
 theBoard = {'top-L': 'O', 'top-M': 'O', 'top-R': 'O', 'mid-L': 'X', 'mid-M': 'X', 'mid-R': ' ', 'low-L': ' ', 'low-M': ' ', 'low-R': 'X'}
 
@@ -273,11 +273,11 @@ The output of this program looks like this:
 
 Number of things being brought:
 
-- Apples 7
-- Cups 3
-- Cakes 0
-- Ham Sandwiches 3
-- Apple Pies 1
+* Apples 7
+* Cups 3
+* Cakes 0
+* Ham Sandwiches 3
+* Apple Pies 1
 
 This may seem like such a simple thing to model that you wouldn’t need to bother with writing a program to do it. But realize that this same totalBrought\(\) function could easily handle a dictionary that contains thousands of guests, each bringing _thousands_ of different picnic items. Then having this information in a data structure along with the totalBrought\(\) function would save you a lot of time!
 
@@ -329,7 +329,7 @@ Hint: You can use a for loop to loop through all the keys in a dictionary.
 
 \# inventory.py stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
-def displayInventory\(inventory\): print\("Inventory:"\) item_total = 0 for k, v in inventory.items\(\): \# FILL THIS PART IN print\("Total number of items: " + str\(item_total\)\)
+def displayInventory\(inventory\): print\("Inventory:"\) item\_total = 0 for k, v in inventory.items\(\): \# FILL THIS PART IN print\("Total number of items: " + str\(item\_total\)\)
 
 displayInventory\(stuff\)
 
@@ -350,3 +350,4 @@ The previous program \(with your displayInventory\(\) function from the previous
 Inventory: 45 gold coin 1 rope 1 ruby 1 dagger
 
 Total number of items: 48
+
