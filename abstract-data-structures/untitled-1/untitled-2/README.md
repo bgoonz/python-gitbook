@@ -2,22 +2,22 @@
 
 ## Sorting and Searching
 
-- Sorting search results on a page given a certain set of criteria.
-- Sort a list of numbers in which each number is at a distance `K` from its actual position.
-- Given an array of integers, sort the array so that all odd indexes are greater than the even indexes.
-- Given users with locations in a list and a logged-in user with locations, find their travel buddies \(people who shared more than half of your locations\).
-- Search for an element in a sorted and rotated array.
-  - [Source](http://blog.gainlo.co/index.php/2017/01/12/rotated-array-binary-search/)
-- Sort a list where each element is no more than k positions away from its sorted position.
-- Search for an item in a sorted, but rotated, array.
-- Merge two sorted lists together.
-- Give 3 distinct algorithms to find the K largest values in a list of N items.
-- Find the minimum element in a sorted rotated array in faster than O\(n\) time.
-- Write a function that takes a number as input and outputs the biggest number with the same set of digits.
-  - [Source](http://blog.gainlo.co/index.php/2017/01/20/arrange-given-numbers-to-form-the-biggest-number-possible/)
+* Sorting search results on a page given a certain set of criteria.
+* Sort a list of numbers in which each number is at a distance `K` from its actual position.
+* Given an array of integers, sort the array so that all odd indexes are greater than the even indexes.
+* Given users with locations in a list and a logged-in user with locations, find their travel buddies \(people who shared more than half of your locations\).
+* Search for an element in a sorted and rotated array.
+  * [Source](http://blog.gainlo.co/index.php/2017/01/12/rotated-array-binary-search/)
+* Sort a list where each element is no more than k positions away from its sorted position.
+* Search for an item in a sorted, but rotated, array.
+* Merge two sorted lists together.
+* Give 3 distinct algorithms to find the K largest values in a list of N items.
+* Find the minimum element in a sorted rotated array in faster than O\(n\) time.
+* Write a function that takes a number as input and outputs the biggest number with the same set of digits.
+  * [Source](http://blog.gainlo.co/index.php/2017/01/20/arrange-given-numbers-to-form-the-biggest-number-possible/)
 
-{% tabs %} {% tab title="Searching" %}
-
+{% tabs %}
+{% tab title="Searching" %}
 ```python
 # linear search O(n)
 def name_in_phonebook(to_find, phonebook):
@@ -55,16 +55,14 @@ def name_in_phonebook_2(to_find, name):
             # otherwise
             else:
                 # search the upper half
-                first = middle + 1
+                first = middle + 1 
     # return found
     return found
 
 ```
-
 {% endtab %}
 
 {% tab title="First Tab" %}
-
 ```python
 from collections import deque
 from collections.abc import Sequence
@@ -90,11 +88,9 @@ def bfs_search_grid(grid: Sequence[Sequence[int]], start: tuple[int, int], goal:
     return False
 
 ```
-
 {% endtab %}
 
 {% tab title="bisect\_search.py" %}
-
 ```python
 from collections.abc import Callable
 
@@ -110,11 +106,9 @@ def bisect_search(predicate: Callable[[int], bool], low: int, high: int) -> int:
     return low
 
 ```
-
 {% endtab %}
 
 {% tab title="Binary Search" %}
-
 ```python
 # Uses python3
 import random
@@ -195,11 +189,9 @@ stress_test(100, 100000)
 # print(binary_search(test_list, 11))
 
 ```
-
 {% endtab %}
 
 {% tab title="BST.py" %}
-
 ```python
 class BSTNode:
     def __init__(self, value):
@@ -272,11 +264,9 @@ print(f"does 8 exist? {root.search(7)}")
 print(f"does 8 exist? {root.search(15)}")
 
 ```
-
 {% endtab %}
 
 {% tab title="" %}
-
 ```python
 # -*- coding: utf-8 -*-
 """Searching.ipynb
@@ -467,8 +457,8 @@ def fib2(n):
 fib(460)
 
 ```
-
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
 
 ```python
 from collections import deque
@@ -492,6 +482,8 @@ def bfs_search_dict(graph: Mapping[Node, Iterable[Node]], start: Node, predicate
     return False
 
 ```
+
+
 
 {% page-ref page="../array/" %}
 
@@ -524,3 +516,6 @@ def bfs_search_dict(graph: Mapping[Node, Iterable[Node]], start: Node, predicate
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
+
+
+

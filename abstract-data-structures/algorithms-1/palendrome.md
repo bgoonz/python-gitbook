@@ -1,7 +1,7 @@
 # Palendrome
 
-{% tabs %} {% tab title="Pal.py" %}
-
+{% tabs %}
+{% tab title="Pal.py" %}
 ```python
 # palindrome
 """
@@ -55,9 +55,10 @@ print(is_palindrome("Add"))  # False
 
 print(is_palindrome("Mom is A non Palindrome!")) # False
 ```
-
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
+

@@ -28,13 +28,13 @@ Python knows that since the single quote in Bob\'s has a backslash, it is not a 
 
 **Table 6-1:** Escape Characters
 
-| **Escape character** | **Prints as**          |
-| :------------------- | :--------------------- |
-| \'                   | Single quote           |
-| \"                   | Double quote           |
-| \t                   | Tab                    |
-| \n                   | Newline \(line break\) |
-| \\                   | Backslash              |
+| **Escape character** | **Prints as** |
+| :--- | :--- |
+| \' | Single quote |
+| \" | Double quote |
+| \t | Tab |
+| \n | Newline \(line break\) |
+| \\ | Backslash |
 
 Enter the following into the interactive shell:
 
@@ -58,19 +58,19 @@ While you can use the \n escape character to put a newline into a string, it is 
 
 Open the file editor and write the following:
 
-print\('''Dear Alice,
-
-Eve's cat has been arrested for catnapping, cat burglary, and extortion.
-
+print\('''Dear Alice,  
+  
+Eve's cat has been arrested for catnapping, cat burglary, and extortion.  
+  
 Sincerely,  
 Bob'''\)
 
 Save this program as _catnapping.py_ and run it. The output will look like this:
 
-Dear Alice,
-
-Eve's cat has been arrested for catnapping, cat burglary, and extortion.
-
+Dear Alice,  
+  
+Eve's cat has been arrested for catnapping, cat burglary, and extortion.  
+  
 Sincerely,  
 Bob
 
@@ -84,22 +84,22 @@ burglary, and extortion.\n\nSincerely,\nBob'\)
 While the hash character \(\#\) marks the beginning of a comment for the rest of the line, a multiline string is often used for comments that span multiple lines. The following is perfectly valid Python code:
 
 """This is a test Python program.  
-Written by Al Sweigart al@inventwithpython.com
-
+Written by Al Sweigart al@inventwithpython.com  
+  
 This program was designed for Python 3, not Python 2.  
-"""
-
+"""  
+  
 def spam\(\):  
- """This is a multiline comment to help  
- explain what the spam\(\) function does."""  
- print\('Hello!'\)
+    """This is a multiline comment to help  
+    explain what the spam\(\) function does."""  
+    print\('Hello!'\)
 
 **Indexing and Slicing Strings**
 
 Strings use indexes and slices the same way lists do. You can think of the string 'Hello, world!' as a list and each character in the string as an item with a corresponding index.
 
-' H e l l o , w o r l d ! '  
- 0 1 2 3 4 5 6 7 8 9 10 11 12
+'   H   e   l   l   o   ,       w   o   r   l    d    !   '  
+    0   1   2   3   4   5   6   7   8   9   10   11   12
 
 The space and exclamation point are included in the character count, so 'Hello, world!' is 13 characters long, from H at index 0 to ! at index 12.
 
@@ -198,9 +198,9 @@ The upper\(\) and lower\(\) methods are helpful if you need to make a case-insen
 print\('How are you?'\)  
 feeling = input\(\)  
 if feeling.lower\(\) == 'great':  
- print\('I feel great too.'\)  
+    print\('I feel great too.'\)  
 else:  
- print\('I hope the rest of your day is good.'\)
+    print\('I hope the rest of your day is good.'\)
 
 When you run this program, the question is displayed, and entering a variation on great, such as GREat, will still give the output I feel great too. Adding code to your program to handle variations or mistakes in user input, such as inconsistent capitalization, will make your programs easier to use and less likely to fail.
 
@@ -263,7 +263,7 @@ True
 True  
 &gt;&gt;&gt; '123'.isdecimal\(\)  
 True  
-&gt;&gt;&gt; ' '.isspace\(\)  
+&gt;&gt;&gt; '    '.isspace\(\)  
 True  
 &gt;&gt;&gt; 'This Is Title Case'.istitle\(\)  
 True  
@@ -277,18 +277,18 @@ False
 The isX\(\) string methods are helpful when you need to validate user input. For example, the following program repeatedly asks users for their age and a password until they provide valid input. Open a new file editor window and enter this program, saving it as _validateInput.py_:
 
 while True:  
- print\('Enter your age:'\)  
- age = input\(\)  
- if age.isdecimal\(\):  
- break  
- print\('Please enter a number for your age.'\)
-
+    print\('Enter your age:'\)  
+    age = input\(\)  
+    if age.isdecimal\(\):  
+        break  
+    print\('Please enter a number for your age.'\)  
+  
 while True:  
- print\('Select a new password \(letters and numbers only\):'\)  
- password = input\(\)  
- if password.isalnum\(\):  
- break  
- print\('Passwords can only have letters and numbers.'\)
+    print\('Select a new password \(letters and numbers only\):'\)  
+    password = input\(\)  
+    if password.isalnum\(\):  
+        break  
+    print\('Passwords can only have letters and numbers.'\)
 
 In the first while loop, we ask the user for their age and store their input in age. If age is a valid \(decimal\) value, we break out of this first while loop and move on to the second, which asks for a password. Otherwise, we inform the user that they need to enter a number and again ask them to enter their age. In the second while loop, we ask for a password, store the user’s input in password, and break out of the loop if the input was alpha­numeric. If it wasn’t, we’re not satisfied, so we tell the user the password needs to be alphanumeric and again ask them to enter a password.
 
@@ -356,8 +356,8 @@ A common use of split\(\) is to split a multiline string along the newline chara
 &gt;&gt;&gt; spam = '''Dear Alice,  
 How have you been? I am fine.  
 There is a container in the fridge  
-that is labeled "Milk Experiment."
-
+that is labeled "Milk Experiment."  
+  
 Please do not drink it.  
 Sincerely,  
 Bob'''  
@@ -402,13 +402,13 @@ The partition\(\) method is useful for splitting a string whenever you need the 
 The rjust\(\) and ljust\(\) string methods return a padded version of the string they are called on, with spaces inserted to justify the text. The first argument to both methods is an integer length for the justified string. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; 'Hello'.rjust\(10\)  
-' Hello'  
+'     Hello'  
 &gt;&gt;&gt; 'Hello'.rjust\(20\)  
-' Hello'  
+'              Hello'  
 &gt;&gt;&gt; 'Hello, World'.rjust\(20\)  
-' Hello, World'  
+'         Hello, World'  
 &gt;&gt;&gt; 'Hello'.ljust\(10\)  
-'Hello '
+'Hello     '
 
 'Hello'.rjust\(10\) says that we want to right-justify 'Hello' in a string of total length 10. 'Hello' is five characters, so five spaces will be added to its left, giving us a string of 10 characters with 'Hello' justified right.
 
@@ -422,17 +422,17 @@ An optional second argument to rjust\(\) and ljust\(\) will specify a fill chara
 The center\(\) string method works like ljust\(\) and rjust\(\) but centers the text rather than justifying it to the left or right. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; 'Hello'.center\(20\)  
-' Hello '  
+'       Hello        '  
 &gt;&gt;&gt; 'Hello'.center\(20, '='\)  
 '=======Hello========'
 
 These methods are especially useful when you need to print tabular data that has correct spacing. Open a new file editor window and enter the following code, saving it as _picnicTable.py_:
 
 def printPicnic\(itemsDict, leftWidth, rightWidth\):  
- print\('PICNIC ITEMS'.center\(leftWidth + rightWidth, '-'\)\)  
- for k, v in itemsDict.items\(\):  
- print\(k.ljust\(leftWidth, '.'\) + str\(v\).rjust\(rightWidth\)\)
-
+    print\('PICNIC ITEMS'.center\(leftWidth + rightWidth, '-'\)\)  
+    for k, v in itemsDict.items\(\):  
+        print\(k.ljust\(leftWidth, '.'\) + str\(v\).rjust\(rightWidth\)\)  
+  
 picnicItems = {'sandwiches': 4, 'apples': 12, 'cups': 4, 'cookies': 8000}  
 printPicnic\(picnicItems, 12, 5\)  
 printPicnic\(picnicItems, 20, 6\)
@@ -450,15 +450,15 @@ After defining printPicnic\(\), we define the dictionary picnicItems and call pr
 When you run this program, the picnic items are displayed twice. The first time the left column is 12 characters wide, and the right column is 5 characters wide. The second time they are 20 and 6 characters wide, respectively.
 
 ---PICNIC ITEMS--  
-sandwiches.. 4  
-apples...... 12  
-cups........ 4  
+sandwiches..    4  
+apples......   12  
+cups........    4  
 cookies..... 8000  
 -------PICNIC ITEMS-------  
-sandwiches.......... 4  
-apples.............. 12  
-cups................ 4  
-cookies............. 8000
+sandwiches..........     4  
+apples..............    12  
+cups................     4  
+cookies.............  8000
 
 Using rjust\(\), ljust\(\), and center\(\) lets you ensure that strings are neatly aligned, even if you aren’t sure how many characters long your strings are.
 
@@ -466,13 +466,13 @@ Using rjust\(\), ljust\(\), and center\(\) lets you ensure that strings are neat
 
 Sometimes you may want to strip off whitespace characters \(space, tab, and newline\) from the left side, right side, or both sides of a string. The strip\(\) string method will return a new string without any whitespace characters at the beginning or end. The lstrip\(\) and rstrip\(\) methods will remove whitespace characters from the left and right ends, respectively. Enter the following into the interactive shell:
 
-&gt;&gt;&gt; spam = ' Hello, World '  
+&gt;&gt;&gt; spam = '    Hello, World    '  
 &gt;&gt;&gt; spam.strip\(\)  
 'Hello, World'  
 &gt;&gt;&gt; spam.lstrip\(\)  
-'Hello, World '  
+'Hello, World    '  
 &gt;&gt;&gt; spam.rstrip\(\)  
-' Hello, World'
+'    Hello, World'
 
 Optionally, a string argument will specify which characters on the ends should be stripped. Enter the following into the interactive shell:
 
@@ -544,29 +544,29 @@ This is the first “chapter project” of the book. From here on, each chapter 
 Open a new file editor window and save the program as _mclip.py_. You need to start the program with a \#! \(_shebang_\) line \(see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35)\) and should also write a comment that briefly describes the program. Since you want to associate each piece of text with its key phrase, you can store these as strings in a dictionary. The dictionary will be the data structure that organizes your key phrases and text. Make your program look like the following:
 
 \#! python3  
-\# mclip.py - A multi-clipboard program.
-
+\# mclip.py - A multi-clipboard program.  
+  
 TEXT = {'agree': """Yes, I agree. That sounds fine to me.""",  
- 'busy': """Sorry, can we do this later this week or next week?""",  
- 'upsell': """Would you consider making this a monthly donation?"""}
+        'busy': """Sorry, can we do this later this week or next week?""",  
+        'upsell': """Would you consider making this a monthly donation?"""}
 
 **Step 2: Handle Command Line Arguments**
 
 The command line arguments will be stored in the variable sys.argv. \(See [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35) for more information on how to use command line arguments in your programs.\) The first item in the sys.argv list should always be a string containing the program’s filename \('mclip.py'\), and the second item should be the first command line argument. For this program, this argument is the key phrase of the message you want. Since the command line argument is mandatory, you display a usage message to the user if they forget to add it \(that is, if the sys.argv list has fewer than two values in it\). Make your program look like the following:
 
 \#! python3  
-\# mclip.py - A multi-clipboard program.
-
+\# mclip.py - A multi-clipboard program.  
+  
 TEXT = {'agree': """Yes, I agree. That sounds fine to me.""",  
- 'busy': """Sorry, can we do this later this week or next week?""",  
- 'upsell': """Would you consider making this a monthly donation?"""}
-
+        'busy': """Sorry, can we do this later this week or next week?""",  
+        'upsell': """Would you consider making this a monthly donation?"""}  
+  
 import sys  
 if len\(sys.argv\) &lt; 2:  
- print\('Usage: python mclip.py \[keyphrase\] - copy phrase text'\)  
- sys.exit\(\)
-
-keyphrase = sys.argv\[1\] \# first command line arg is the keyphrase
+    print\('Usage: python mclip.py \[keyphrase\] - copy phrase text'\)  
+    sys.exit\(\)  
+  
+keyphrase = sys.argv\[1\]    \# first command line arg is the keyphrase
 
 **Step 3: Copy the Right Phrase**
 
@@ -575,24 +575,24 @@ Now that the key phrase is stored as a string in the variable keyphrase, you nee
 Make your program look like the following:
 
 \#! python3  
-\# mclip.py - A multi-clipboard program.
-
+\# mclip.py - A multi-clipboard program.  
+  
 TEXT = {'agree': """Yes, I agree. That sounds fine to me.""",  
- 'busy': """Sorry, can we do this later this week or next week?""",  
- 'upsell': """Would you consider making this a monthly donation?"""}
-
+        'busy': """Sorry, can we do this later this week or next week?""",  
+        'upsell': """Would you consider making this a monthly donation?"""}  
+  
 import sys, pyperclip  
 if len\(sys.argv\) &lt; 2:  
- print\('Usage: py mclip.py \[keyphrase\] - copy phrase text'\)  
- sys.exit\(\)
-
-keyphrase = sys.argv\[1\] \# first command line arg is the keyphrase
-
+    print\('Usage: py mclip.py \[keyphrase\] - copy phrase text'\)  
+    sys.exit\(\)  
+  
+keyphrase = sys.argv\[1\]    \# first command line arg is the keyphrase  
+  
 if keyphrase in TEXT:  
- pyperclip.copy\(TEXT\[keyphrase\]\)  
- print\('Text for ' + keyphrase + ' copied to clipboard.'\)  
+    pyperclip.copy\(TEXT\[keyphrase\]\)  
+    print\('Text for ' + keyphrase + ' copied to clipboard.'\)  
 else:  
- print\('There is no text for ' + keyphrase\)
+    print\('There is no text for ' + keyphrase\)
 
 This new code looks in the TEXT dictionary for the key phrase. If the key phrase is a key in the dictionary, we get the value corresponding to that key, copy it to the clipboard, and print a message saying that we copied the value. Otherwise, we print a message saying there’s no key phrase with that name.
 
@@ -600,7 +600,7 @@ That’s the complete script. Using the instructions in [Appendix B](https://aut
 
 On Windows, you can create a batch file to run this program with the WIN-R Run window. \(For more about batch files, see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35).\) Enter the following into the file editor and save the file as _mclip.bat_ in the _C:\Windows_ folder:
 
-@py.exe C:\path_to_file\mclip.py %\*  
+@py.exe C:\path\_to\_file\mclip.py %\*  
 @pause
 
 With this batch file created, running the multi-clipboard program on Windows is just a matter of pressing WIN-R and typing mclip key phrase.
@@ -637,13 +637,13 @@ That second step is a little tricky, but steps 1 and 3 are pretty straightforwar
 
 \#! python3  
 \# bulletPointAdder.py - Adds Wikipedia bullet points to the start  
-\# of each line of text on the clipboard.
-
+\# of each line of text on the clipboard.  
+  
 import pyperclip  
-text = pyperclip.paste\(\)
-
-\# TODO: Separate lines and add stars.
-
+text = pyperclip.paste\(\)  
+  
+\# TODO: Separate lines and add stars.  
+  
 pyperclip.copy\(text\)
 
 The TODO comment is a reminder that you should complete this part of the program eventually. The next step is to actually implement that piece of the program.
@@ -663,16 +663,16 @@ Make your program look like the following:
 
 \#! python3  
 \# bulletPointAdder.py - Adds Wikipedia bullet points to the start  
-\# of each line of text on the clipboard.
-
+\# of each line of text on the clipboard.  
+  
 import pyperclip  
-text = pyperclip.paste\(\)
-
+text = pyperclip.paste\(\)  
+  
 \# Separate lines and add stars.  
 lines = text.split\('\n'\)  
-for i in range\(len\(lines\)\): \# loop through all indexes in the "lines" list  
- lines\[i\] = '\* ' + lines\[i\] \# add star to each string in "lines" list
-
+for i in range\(len\(lines\)\):    \# loop through all indexes in the "lines" list  
+    lines\[i\] = '\* ' + lines\[i\] \# add star to each string in "lines" list  
+  
 pyperclip.copy\(text\)
 
 We split the text along its newlines to get a list in which each item is one line of the text. We store the list in lines and then loop through the items in lines. For each line, we add a star and a space to the start of the line. Now each string in lines begins with a star.
@@ -683,15 +683,15 @@ The lines list now contains modified lines that start with stars. But pyperclip.
 
 \#! python3  
 \# bulletPointAdder.py - Adds Wikipedia bullet points to the start  
-\# of each line of text on the clipboard.
-
+\# of each line of text on the clipboard.  
+  
 import pyperclip  
-text = pyperclip.paste\(\)
-
+text = pyperclip.paste\(\)  
+  
 \# Separate lines and add stars.  
 lines = text.split\('\n'\)  
-for i in range\(len\(lines\)\): \# loop through all indexes for "lines" list  
- lines\[i\] = '\* ' + lines\[i\] \# add star to each string in "lines" list  
+for i in range\(len\(lines\)\):    \# loop through all indexes for "lines" list  
+    lines\[i\] = '\* ' + lines\[i\] \# add star to each string in "lines" list  
 text = '\n'.join\(lines\)  
 pyperclip.copy\(text\)
 
@@ -713,54 +713,54 @@ This program works by altering a string using the methods introduced in this cha
 
 \# English to Pig Latin  
 print\('Enter the English message to translate into Pig Latin:'\)  
-message = input\(\)
-
-VOWELS = \('a', 'e', 'i', 'o', 'u', 'y'\)
-
+message = input\(\)  
+  
+VOWELS = \('a', 'e', 'i', 'o', 'u', 'y'\)  
+  
 pigLatin = \[\] \# A list of the words in Pig Latin.  
 for word in message.split\(\):  
- \# Separate the non-letters at the start of this word:  
- prefixNonLetters = ''  
- while len\(word\) &gt; 0 and not word\[0\].isalpha\(\):  
- prefixNonLetters += word\[0\]  
- word = word\[1:\]  
- if len\(word\) == 0:  
- pigLatin.append\(prefixNonLetters\)  
- continue
-
-    \# Separate the non-letters at the end of this word:
-    suffixNonLetters = ''
-    while not word\[-1\].isalpha\(\):
-        suffixNonLetters += word\[-1\]
-        word = word\[:-1\]
-
-    \# Remember if the word was in uppercase or title case.
-    wasUpper = word.isupper\(\)
-    wasTitle = word.istitle\(\)
-
-    word = word.lower\(\) \# Make the word lowercase for translation.
-
-    \# Separate the consonants at the start of this word:
-    prefixConsonants = ''
-    while len\(word\) &gt; 0 and not word\[0\] in VOWELS:
-        prefixConsonants += word\[0\]
-        word = word\[1:\]
-
-    \# Add the Pig Latin ending to the word:
-    if prefixConsonants != '':
-        word += prefixConsonants + 'ay'
-    else:
-        word += 'yay'
-
-    \# Set the word back to uppercase or title case:
-    if wasUpper:
-        word = word.upper\(\)
-    if wasTitle:
-        word = word.title\(\)
-
-    \# Add the non-letters back to the start or end of the word.
-    pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)
-
+    \# Separate the non-letters at the start of this word:  
+    prefixNonLetters = ''  
+    while len\(word\) &gt; 0 and not word\[0\].isalpha\(\):  
+        prefixNonLetters += word\[0\]  
+        word = word\[1:\]  
+    if len\(word\) == 0:  
+        pigLatin.append\(prefixNonLetters\)  
+        continue  
+  
+    \# Separate the non-letters at the end of this word:  
+    suffixNonLetters = ''  
+    while not word\[-1\].isalpha\(\):  
+        suffixNonLetters += word\[-1\]  
+        word = word\[:-1\]  
+  
+    \# Remember if the word was in uppercase or title case.  
+    wasUpper = word.isupper\(\)  
+    wasTitle = word.istitle\(\)  
+  
+    word = word.lower\(\) \# Make the word lowercase for translation.  
+  
+    \# Separate the consonants at the start of this word:  
+    prefixConsonants = ''  
+    while len\(word\) &gt; 0 and not word\[0\] in VOWELS:  
+        prefixConsonants += word\[0\]  
+        word = word\[1:\]  
+  
+    \# Add the Pig Latin ending to the word:  
+    if prefixConsonants != '':  
+        word += prefixConsonants + 'ay'  
+    else:  
+        word += 'yay'  
+  
+    \# Set the word back to uppercase or title case:  
+    if wasUpper:  
+        word = word.upper\(\)  
+    if wasTitle:  
+        word = word.title\(\)  
+  
+    \# Add the non-letters back to the start or end of the word.  
+    pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)  
+  
 \# Join all the words back together into a single string:  
 print\(' '.join\(pigLatin\)\)
 
@@ -768,8 +768,8 @@ Let’s look at this code line by line, starting at the top:
 
 \# English to Pig Latin  
 print\('Enter the English message to translate into Pig Latin:'\)  
-message = input\(\)
-
+message = input\(\)  
+  
 VOWELS = \('a', 'e', 'i', 'o', 'u', 'y'\)
 
 First, we ask the user to enter the English text to translate into Pig Latin. Also, we create a constant that holds every lowercase vowel letter \(and _y_\) as a tuple of strings. This will be used later in our program.
@@ -778,68 +778,68 @@ Next, we’re going to create the pigLatin variable to store the words as we tra
 
 pigLatin = \[\] \# A list of the words in Pig Latin.  
 for word in message.split\(\):  
- \# Separate the non-letters at the start of this word:  
- prefixNonLetters = ''  
- while len\(word\) &gt; 0 and not word\[0\].isalpha\(\):  
- prefixNonLetters += word\[0\]  
- word = word\[1:\]  
- if len\(word\) == 0:  
- pigLatin.append\(prefixNonLetters\)  
- continue
+    \# Separate the non-letters at the start of this word:  
+    prefixNonLetters = ''  
+    while len\(word\) &gt; 0 and not word\[0\].isalpha\(\):  
+        prefixNonLetters += word\[0\]  
+        word = word\[1:\]  
+    if len\(word\) == 0:  
+        pigLatin.append\(prefixNonLetters\)  
+        continue
 
 We need each word to be its own string, so we call message.split\(\) to get a list of the words as separate strings. The string 'My name is AL SWEIGART and I am 4,000 years old.' would cause split\(\) to return \['My', 'name', 'is', 'AL', 'SWEIGART', 'and', 'I', 'am', '4,000', 'years', 'old.'\].
 
 We need to remove any non-letters from the start and end of each word so that strings like 'old.' translate to 'oldyay.' instead of 'old.yay'. We’ll save these non-letters to a variable named prefixNonLetters.
 
-    \# Separate the non-letters at the end of this word:
-    suffixNonLetters = ''
-    while not word\[-1\].isalpha\(\):
-        suffixNonLetters += word\[-1\]
+    \# Separate the non-letters at the end of this word:  
+    suffixNonLetters = ''  
+    while not word\[-1\].isalpha\(\):  
+        suffixNonLetters += word\[-1\]  
         word = word\[:-1\]
 
 A loop that calls isalpha\(\) on the first character in the word will determine if we should remove a character from a word and concatenate it to the end of prefixNonLetters. If the entire word is made of non-letter characters, like '4,000', we can simply append it to the pigLatin list and continue to the next word to translate. We also need to save the non-letters at the end of the word string. This code is similar to the previous loop.
 
 Next, we’ll make sure the program remembers if the word was in uppercase or title case so we can restore it after translating the word to Pig Latin:
 
-    \# Remember if the word was in uppercase or title case.
-    wasUpper = word.isupper\(\)
-    wasTitle = word.istitle\(\)
-
+    \# Remember if the word was in uppercase or title case.  
+    wasUpper = word.isupper\(\)  
+    wasTitle = word.istitle\(\)  
+  
     word = word.lower\(\) \# Make the word lowercase for translation.
 
 For the rest of the code in the for loop, we’ll work on a lowercase version of word.
 
 To convert a word like _sweigart_ to _eigart-sway_, we need to remove all of the consonants from the beginning of word:
 
-    \# Separate the consonants at the start of this word:
-    prefixConsonants = ''
-    while len\(word\) &gt; 0 and not word\[0\] in VOWELS:
-        prefixConsonants += word\[0\]
+    \# Separate the consonants at the start of this word:  
+    prefixConsonants = ''  
+    while len\(word\) &gt; 0 and not word\[0\] in VOWELS:  
+        prefixConsonants += word\[0\]  
         word = word\[1:\]
 
 We use a loop similar to the loop that removed the non-letters from the start of word, except now we are pulling off consonants and storing them to a variable named prefixConsonants.
 
 If there were any consonants at the start of the word, they are now in prefixConsonants and we should concatenate that variable and the string 'ay' to the end of word. Otherwise, we can assume word begins with a vowel and we only need to concatenate 'yay':
 
-    \# Add the Pig Latin ending to the word:
-    if prefixConsonants != '':
-        word += prefixConsonants + 'ay'
-    else:
+    \# Add the Pig Latin ending to the word:  
+    if prefixConsonants != '':  
+        word += prefixConsonants + 'ay'  
+    else:  
         word += 'yay'
 
 Recall that we set word to its lowercase version with word = word.lower\(\). If word was originally in uppercase or title case, this code will convert word back to its original case:
 
-    \# Set the word back to uppercase or title case:
-    if wasUpper:
-        word = word.upper\(\)
-    if wasTitle:
+    \# Set the word back to uppercase or title case:  
+    if wasUpper:  
+        word = word.upper\(\)  
+    if wasTitle:  
         word = word.title\(\)
 
 At the end of the for loop, we append the word, along with any non-letter prefix or suffix it originally had, to the pigLatin list:
 
-    \# Add the non-letters back to the start or end of the word.
-    pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)
-
+    \# Add the non-letters back to the start or end of the word.  
+    pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)  
+  
 \# Join all the words back together into a single string:  
 print\(' '.join\(pigLatin\)\)
 
@@ -873,21 +873,21 @@ You might not think you have enough Python knowledge to do things such as downlo
 
 [6](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1621). What do the following expressions evaluate to?
 
-- 'Hello, world!'\[1\]
-- 'Hello, world!'\[0:5\]
-- 'Hello, world!'\[:5\]
-- 'Hello, world!'\[3:\]
+* 'Hello, world!'\[1\]
+* 'Hello, world!'\[0:5\]
+* 'Hello, world!'\[:5\]
+* 'Hello, world!'\[3:\]
 
 [7](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1622). What do the following expressions evaluate to?
 
-- 'Hello'.upper\(\)
-- 'Hello'.upper\(\).isupper\(\)
-- 'Hello'.upper\(\).lower\(\)
+* 'Hello'.upper\(\)
+* 'Hello'.upper\(\).isupper\(\)
+* 'Hello'.upper\(\).lower\(\)
 
 [8](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1623). What do the following expressions evaluate to?
 
-- 'Remember, remember, the fifth of November.'.split\(\)
-- '-'.join\('There can be only one.'.split\(\)\)
+* 'Remember, remember, the fifth of November.'.split\(\)
+* '-'.join\('There can be only one.'.split\(\)\)
 
 [9](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1624). What string methods can you use to right-justify, left-justify, and center a string?
 
@@ -902,15 +902,15 @@ For practice, write programs that do the following.
 Write a function named printTable\(\) that takes a list of lists of strings and displays it in a well-organized table with each column right-justified. Assume that all the inner lists will contain the same number of strings. For example, the value could look like this:
 
 tableData = \[\['apples', 'oranges', 'cherries', 'banana'\],  
- \['Alice', 'Bob', 'Carol', 'David'\],  
- \['dogs', 'cats', 'moose', 'goose'\]\]
+             \['Alice', 'Bob', 'Carol', 'David'\],  
+             \['dogs', 'cats', 'moose', 'goose'\]\]
 
 Your printTable\(\) function would print the following:
 
-apples Alice dogs  
- oranges Bob cats  
+   apples Alice  dogs  
+  oranges   Bob  cats  
  cherries Carol moose  
- banana David goose
+   banana David goose
 
 Hint: your code will first have to find the longest string in each of the inner lists so that the whole column can be wide enough to fit all the strings. You can store the maximum width of each column as a list of integers. The printTable\(\) function can begin with colWidths = \[0\] \* len\(tableData\), which will create a list containing the same number of 0 values as the number of inner lists in tableData. That way, colWidths\[0\] can store the width of the longest string in tableData\[0\], colWidths\[1\] can store the width of the longest string in tableData\[1\], and so on. You can then find the largest value in the colWidths list to find out what integer width to pass to the rjust\(\) string method.
 
@@ -941,48 +941,48 @@ _Figure 6-1: The web GUI for the Zombie Dice simulator_
 
 You’ll create bots by writing a class with a turn\(\) method, which is called by the simulator when it’s your bot’s turn to roll the dice. Classes are beyond the scope of this book, so the class code is already set up for you in the _myzombie.py_ program, which is in the downloadable ZIP file for this book at [_https://nostarch.com/automatestuff2/_](https://nostarch.com/automatestuff2/). Writing a method is essentially the same as writing a function, and you can use the turn\(\) code in the _myZombie.py_ program as a template. Inside this turn\(\) method, you’ll call the zombiedice.roll\(\) function as often as you want your bot to roll the dice.
 
-import zombiedice
-
+import zombiedice  
+  
 class MyZombie:  
- def \_\_init\_\_\(self, name\):  
- \# All zombies must have a name:  
- self.name = name
-
-    def turn\(self, gameState\):
-        \# gameState is a dict with info about the current state of the game.
-        \# You can choose to ignore it in your code.
-
-        diceRollResults = zombiedice.roll\(\) \# first roll
-        \# roll\(\) returns a dictionary with keys 'brains', 'shotgun', and
-        \# 'footsteps' with how many rolls of each type there were.
-        \# The 'rolls' key is a list of \(color, icon\) tuples with the
-        \# exact roll result information.
-        \# Example of a roll\(\) return value:
-        \# {'brains': 1, 'footsteps': 1, 'shotgun': 1,
-        \#  'rolls': \[\('yellow', 'brains'\), \('red', 'footsteps'\),
-        \#            \('green', 'shotgun'\)\]}
-
-        \# REPLACE THIS ZOMBIE CODE WITH YOUR OWN:
-        brains = 0
-        while diceRollResults is not None:
-            brains += diceRollResults\['brains'\]
-
-            if brains &lt; 2:
-                diceRollResults = zombiedice.roll\(\) \# roll again
-            else:
-                break
-
+    def \_\_init\_\_\(self, name\):  
+        \# All zombies must have a name:  
+        self.name = name  
+  
+    def turn\(self, gameState\):  
+        \# gameState is a dict with info about the current state of the game.  
+        \# You can choose to ignore it in your code.  
+  
+        diceRollResults = zombiedice.roll\(\) \# first roll  
+        \# roll\(\) returns a dictionary with keys 'brains', 'shotgun', and  
+        \# 'footsteps' with how many rolls of each type there were.  
+        \# The 'rolls' key is a list of \(color, icon\) tuples with the  
+        \# exact roll result information.  
+        \# Example of a roll\(\) return value:  
+        \# {'brains': 1, 'footsteps': 1, 'shotgun': 1,  
+        \#  'rolls': \[\('yellow', 'brains'\), \('red', 'footsteps'\),  
+        \#            \('green', 'shotgun'\)\]}  
+  
+        \# REPLACE THIS ZOMBIE CODE WITH YOUR OWN:  
+        brains = 0  
+        while diceRollResults is not None:  
+            brains += diceRollResults\['brains'\]  
+  
+            if brains &lt; 2:  
+                diceRollResults = zombiedice.roll\(\) \# roll again  
+            else:  
+                break  
+  
 zombies = \(  
- zombiedice.examples.RandomCoinFlipZombie\(name='Random'\),  
- zombiedice.examples.RollsUntilInTheLeadZombie\(name='Until Leading'\),  
- zombiedice.examples.MinNumShotgunsThenStopsZombie\(name='Stop at 2  
+    zombiedice.examples.RandomCoinFlipZombie\(name='Random'\),  
+    zombiedice.examples.RollsUntilInTheLeadZombie\(name='Until Leading'\),  
+    zombiedice.examples.MinNumShotgunsThenStopsZombie\(name='Stop at 2  
 Shotguns', minShotguns=2\),  
- zombiedice.examples.MinNumShotgunsThenStopsZombie\(name='Stop at 1  
+    zombiedice.examples.MinNumShotgunsThenStopsZombie\(name='Stop at 1  
 Shotgun', minShotguns=1\),  
- MyZombie\(name='My Zombie Bot'\),  
- \# Add any other zombie players here.  
-\)
-
+    MyZombie\(name='My Zombie Bot'\),  
+    \# Add any other zombie players here.  
+\)  
+  
 \# Uncomment one of the following lines to run in CLI or Web GUI mode:  
 \#zombiedice.runTournament\(zombies=zombies, numGames=1000\)  
 zombiedice.runWebGui\(zombies=zombies, numGames=1000\)
@@ -993,10 +993,11 @@ The return value of zombiedice.roll\(\) tells your code the results of the dice 
 
 Try writing some of your own bots to play Zombie Dice and see how they compare against the other bots. Specifically, try to create the following bots:
 
-- A bot that, after the first roll, randomly decides if it will continue or stop
-- A bot that stops rolling after it has rolled two brains
-- A bot that stops rolling after it has rolled two shotguns
-- A bot that initially decides it’ll roll the dice one to four times, but will stop early if it rolls two shotguns
-- A bot that stops rolling after it has rolled more shotguns than brains
+* A bot that, after the first roll, randomly decides if it will continue or stop
+* A bot that stops rolling after it has rolled two brains
+* A bot that stops rolling after it has rolled two shotguns
+* A bot that initially decides it’ll roll the dice one to four times, but will stop early if it rolls two shotguns
+* A bot that stops rolling after it has rolled more shotguns than brains
 
 Run these bots through the simulator and see how they compare to each other. You can also examine the code of some premade bots at [_https://github.com/asweigart/zombiedice/_](https://github.com/asweigart/zombiedice/). If you find yourself playing this game in the real world, you’ll have the benefit of thousands of simulated games telling you that one of the best strategies is to simply stop once you’ve rolled two shotguns. But you could always try pressing your luck . . .
+

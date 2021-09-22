@@ -199,9 +199,9 @@ print('key5' in dct) # False
 
 ### Removing Key and Value Pairs from a Dictionary
 
-- _pop\(key\)_: removes the item with the specified key name:
-- _popitem\(\)_: removes the last item
-- _del_: removes an item with specified key name
+* _pop\(key\)_: removes the item with the specified key name:
+* _popitem\(\)_: removes the last item
+* _del_: removes an item with specified key name
 
 ```python
 # syntax
@@ -426,3 +426,4 @@ def containsCloseNums(nums, k):
 
     return False
 ```
+

@@ -1,11 +1,13 @@
 # Graph DFS
 
+
+
 ## Depth First Search \(DFS\)
 
 ### Objective
 
-- Learn about one of the more famous graph algorithms
-- Learn uses of DFS
+* Learn about one of the more famous graph algorithms
+* Learn uses of DFS
 
 ### Overview
 
@@ -23,11 +25,11 @@ The bold lines show with edges were followed. \(The thin edges were not followed
 
 ### Applications of DFS
 
-- Finding [Minimum Spanning Trees](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
-- Path finding
-- Detecting cycles in graphs
-- [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
-- Solving and generating mazes
+* Finding [Minimum Spanning Trees](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
+* Path finding
+* Detecting cycles in graphs
+* [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
+* Solving and generating mazes
 
 ### Coloring Vertexes
 
@@ -41,7 +43,7 @@ Since we want to pursue leads in the graph as far as we can, and then "back up" 
 
 Looking at it with pseudocode to make the recursion more apparent:
 
-```python
+```text
 explore(graph) {
     visit(this_vert);
     explore(remaining_graph);
@@ -50,7 +52,7 @@ explore(graph) {
 
 ### Pseudocode for DFS
 
-```python
+```text
 DFS(graph):
     for v of graph.verts:
         v.color = white
@@ -114,6 +116,8 @@ dfs.dfs(node1)
 
 ![](../../../../.gitbook/assets/image%20%284%29.png)
 
+
+
 ```python
 def graph_dfs(matrix):
     rows, cols = len(matrix), len(matrix[0])
@@ -141,3 +145,4 @@ graph_dfs([
 ])
 
 ```
+

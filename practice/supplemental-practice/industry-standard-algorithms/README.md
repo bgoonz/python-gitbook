@@ -2,9 +2,19 @@
 
 {% embed url="https://replit.com/@bgoonz/Data-Structures-6\#main.py" %}
 
+
+
 {% file src="../../../.gitbook/assets/the-algorithms-python-data\_structures.zip" %}
 
+
+
+
+
+
+
 {% embed url="https://replit.com/@bgoonz/main-prac\#directed\_graph.py" %}
+
+
 
 ## Is Subsequence:
 
@@ -24,6 +34,10 @@ def is_subsequence(s, t):
     return matched_s == len(s)
 ```
 
+
+
+
+
 ## Reverse String:
 
 ```python
@@ -33,7 +47,11 @@ print(reverse("I am printing a sentence in reverse order"))
 print(reverse("printing strings in reverse order using python"))
 ```
 
+
+
 ### Implement a function recursively to get the desired Fibonacci sequence value. Your code should have the same input/output as the iterative code in the instructions.
+
+
 
 ```python
 def get_fib(position):
@@ -54,3 +72,4 @@ print get_fib(11)
 print get_fib(0)
 
 ```
+

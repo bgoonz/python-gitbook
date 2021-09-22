@@ -21,3 +21,4 @@ This module will teach about mutability vs. immutability, time complexity analys
 ### Python IV <a id="python-iv"></a>
 
 In this module, you will learn about static arrays, dynamic arrays, and the difference between an in-place algorithm and an out-of-place algorithm.
+

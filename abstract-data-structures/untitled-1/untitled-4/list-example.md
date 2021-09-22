@@ -1,7 +1,7 @@
 # List Example
 
-{% tabs %} {% tab title="First Tab" %}
-
+{% tabs %}
+{% tab title="First Tab" %}
 ```python
 class Node:
     def __init__(self, data):
@@ -72,11 +72,9 @@ dLL.printList()
 
 
 ```
-
 {% endtab %}
 
 {% tab title="Doubly-circular-linked-list.py" %}
-
 ```python
 class Node:
     def __init__(self, data):
@@ -146,11 +144,9 @@ dLL.prependNode(4)
 dLL.printList()
 
 ```
-
 {% endtab %}
 
 {% tab title="Another-single-ll.py" %}
-
 ```python
 class Node:
     def __init__(self, data):
@@ -267,5 +263,8 @@ sLL = SingleLinkedList()
 # print([ m for m in dir(sLL) if not m.startswith('__')])
 
 ```
+{% endtab %}
+{% endtabs %}
 
-{% endtab %} {% endtabs %}
+
+

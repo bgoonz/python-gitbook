@@ -1,6 +1,8 @@
 ---
 description: >-
-  Queues are a linear data structure that store data in a “first in, first out” (FIFO) order. Unlike arrays, you cannot access elements by index and instead can only pull the next oldest element. This m
+  Queues are a linear data structure that store data in a “first in, first out”
+  (FIFO) order. Unlike arrays, you cannot access elements by index and instead
+  can only pull the next oldest element. This m
 ---
 
 # Queue
@@ -11,8 +13,8 @@ description: >-
 
 {% page-ref page="dequeue.md" %}
 
-{% tabs %} {% tab title="Queue.py" %}
-
+{% tabs %}
+{% tab title="Queue.py" %}
 ```python
 # lets think of another scenareo where we want to model a line at a store
 #  or a queue at the airport
@@ -28,18 +30,18 @@ description: >-
 
 # think of how you could utilise a linked list to create a queue
 
-
+  
 """
 A queue is a data structure whose primary purpose is to store and
-return elements in First In First Out order.
+return elements in First In First Out order. 
 1. Implement the Queue class using an array as the underlying storage structure.
    Make sure the Queue tests pass.
 2. Re-implement the Queue class, this time using the linked list implementation
    as the underlying storage structure.
    Make sure the Queue tests pass.
-3. What is the difference between using an array vs. a linked list when
+3. What is the difference between using an array vs. a linked list when 
    implementing a Queue?
-
+   
 Stretch: What if you could only use instances of your Stack class to implement the Queue?
          What would that look like? How many Stacks would you need? Try it!
 """
@@ -82,13 +84,11 @@ class QueueL:
             return None
         self.size -= 1
         return self.storage.remove_head()
-
+    
 ```
-
 {% endtab %}
 
 {% tab title="Queue2.py" %}
-
 ```python
 # lets think of another scenareo where we want to model a line at a store
 #  or a queue at the airport
@@ -104,18 +104,18 @@ class QueueL:
 
 # think of how you could utilise a linked list to create a queue
 
-
+  
 """
 A queue is a data structure whose primary purpose is to store and
-return elements in First In First Out order.
+return elements in First In First Out order. 
 1. Implement the Queue class using an array as the underlying storage structure.
    Make sure the Queue tests pass.
 2. Re-implement the Queue class, this time using the linked list implementation
    as the underlying storage structure.
    Make sure the Queue tests pass.
-3. What is the difference between using an array vs. a linked list when
+3. What is the difference between using an array vs. a linked list when 
    implementing a Queue?
-
+   
 Stretch: What if you could only use instances of your Stack class to implement the Queue?
          What would that look like? How many Stacks would you need? Try it!
 """
@@ -139,7 +139,7 @@ Stretch: What if you could only use instances of your Stack class to implement t
 
 class QueueA:
     def __init__(self):
-        self.storage = []
+        self.storage = [] 
 
     def __len__(self):
         return len(self.storage)
@@ -188,10 +188,12 @@ class QueueLL(LinkedList):
             return None
         self.size -= 1
         return self.remove_head()
-
+    
 ```
+{% endtab %}
+{% endtabs %}
 
-{% endtab %} {% endtabs %}
+
 
 ```python
 # FIFO: first in first out
@@ -255,8 +257,8 @@ print(f'Size: {queue.size_queue()}')
 
 ## Queue
 
-- Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.
-- Implement a Queue using two stacks. You may only use the standard `push()`, `pop()`, and `peek()` operations traditionally available to stacks. You do not need to implement the stack yourself \(i.e. an array can be used to simulate a stack\).
+* Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.
+* Implement a Queue using two stacks. You may only use the standard `push()`, `pop()`, and `peek()` operations traditionally available to stacks. You do not need to implement the stack yourself \(i.e. an array can be used to simulate a stack\).
 
 ### Queues in Python
 
@@ -268,29 +270,34 @@ We could use a Python list with `append()` and `pop()` methods to implement a qu
 
 Instead, it’s best practice to use the `deque` class from Python’s `collections` module. Deques are optimized for the append and pop operations. The deque implementation also allows you to create double-ended queues, which can access both sides of the queue through the `popleft()` and `popright()` methods.
 
+
+
+
+
 **Advantages:**
 
-- Automatically orders data chronologically
-- Scales to meet size requirements
-- Time efficient with `deque` class
+* Automatically orders data chronologically
+* Scales to meet size requirements
+* Time efficient with `deque` class
 
 **Disadvantages:**
 
-- Can only access data on the ends
+* Can only access data on the ends
 
 **Applications:**
 
-- Operations on a shared resource like a printer or [CPU core](https://www.educative.io/blog/beginners-guide-to-computers-and-programming)
-- Serve as temporary storage for batch systems
-- Provides an easy default order for tasks of equal importance
+* Operations on a shared resource like a printer or [CPU core](https://www.educative.io/blog/beginners-guide-to-computers-and-programming)
+* Serve as temporary storage for batch systems
+* Provides an easy default order for tasks of equal importance
 
 #### Common queue interview questions in Python
 
-- Reverse first k elements of a queue
-- Implement a queue using a linked list
-- Implement a stack using a queue
-- {% tabs %} {% tab title="Implementation " %}
-
+* Reverse first k elements of a queue
+* Implement a queue using a linked list
+* Implement a stack using a queue
+* 
+{% tabs %}
+{% tab title="Implementation " %}
 ```python
 """Make a Queue class using a list!
 Hint: You can use any Python list method
@@ -347,12 +354,12 @@ q.enqueue(5)
 print q.peek()
 
 ```
-
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %} {% endtabs %}
+{% endtab %}
+{% endtabs %}
 
 ```python
 """Make a Queue class using a list!
@@ -410,6 +417,8 @@ q.enqueue(5)
 print q.peek()
 
 ```
+
+
 
 {% page-ref page="../array/" %}
 
@@ -442,3 +451,6 @@ print q.peek()
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
+
+
+

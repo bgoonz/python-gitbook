@@ -22,7 +22,7 @@ The need for an _ordered_ `dict` comes up surprisingly often. A common example i
 {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'e': 4}
 
 >>> dict(zip(ascii_lowercase, range(6)))
-{'a': 0, 'b': 1, 'c': 2, 'd': 3, 'f': 5, 'e': 4}
+{'a': 0, 'b': 1, 'c': 2, 'd': 3, 'f': 5, 'e': 4} 
 
 >>> dict(zip(ascii_lowercase, range(7)))
 {'a': 0, 'b': 1, 'c': 2, 'd': 3, 'g': 6, 'f': 5, 'e': 4}
@@ -69,7 +69,7 @@ Here’s a common example:
 
 ```text
 >>> d = collections.defaultdict(list)
->>> d['a']
+>>> d['a']  
 []
 ```
 
@@ -119,10 +119,10 @@ The best thing about `namedtuple` is that you can add it to existing code and us
 
 ```text
 >>> def f():
-...    return 2, False, "blue"
->>> count, enabled, color = f()
+...    return 2, False, "blue"  
+>>> count, enabled, color = f()  
 
->>> tup = f()
+>>> tup = f()  
 >>> enabled = tup[1]
 ```
 
@@ -152,7 +152,7 @@ You now also have the option of working with the returned `namedtuple` in the ca
 
 ```text
 >>> tup = f()
->>> print(tup.count)
+>>> print(tup.count)  
 2
 ```
 
@@ -182,18 +182,18 @@ from time import perf_counter
 from array import array
 from contextlib import contextmanager
 
-@contextmanager
+@contextmanager  
 def timing(label: str):
-    t0 = perf_counter()
-    yield lambda: (label, t1 - t0)
-    t1 = perf_counter()
+    t0 = perf_counter()  
+    yield lambda: (label, t1 - t0)  
+    t1 = perf_counter() 
 
-with timing('Array tests') as total:
+with timing('Array tests') as total:  
     with timing('Array creation innermul') as inner:
-        x = array('d', [0] * 1000000)
+        x = array('d', [0] * 1000000)  
 
     with timing('Array creation outermul') as outer:
-        x = array('d', [0]) * 1000000
+        x = array('d', [0]) * 1000000  
 
 
 print('Total [%s]: %.6f s' % total())
@@ -203,7 +203,7 @@ print('    Timing [%s]: %.6f s' % outer())
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-6)
 
-The `array` module in the standard library has an unusual approach to initialization: you pass it an existing sequence, such as a large list, and it converts the data into the datatype of your array if possible; however, you _can_ also create an array from a short sequence, after which you expand it to its full size. Have you ever wondered which is faster? In a moment, we’ll create a _timing_ context manager to measure this and know for sure![![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-1)
+The `array` module in the standard library has an unusual approach to initialization: you pass it an existing sequence, such as a large list, and it converts the data into the datatype of your array if possible; however, you _can_ also create an array from a short sequence, after which you expand it to its full size. Have you ever wondered which is faster? In a moment, we’ll create a _timing_ context manager to measure this and know for sure![!\[2\]\(https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png\)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-1)
 
 The key step you need to do to make your own context manager is to use the `@contextmanager` decorator.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-2)
 
@@ -255,19 +255,19 @@ urls = """google twitter facebook youtube pinterest tumblr
 instagram reddit flickr meetup classmates microsoft apple
 linkedin xing renren disqus snapchat twoo whatsapp""".split()
 
-def fetch(url):
-    from urllib import request, error
+def fetch(url):  
+    from urllib import request, error  
     try:
         data = request.urlopen(url).read()
         return '{}: length {}'.format(url, len(data))
     except error.HTTPError as e:
         return '{}: {}'.format(url, e)
 
-with Executor(max_workers=4) as exe:
+with Executor(max_workers=4) as exe:  
     template = 'http://www.{}.com'
     jobs = [exe.submit(
-        fetch, template.format(u)) for u in urls]
-    results = [job.result() for job in jobs]
+        fetch, template.format(u)) for u in urls]  
+    results = [job.result() for job in jobs]  
 
 print('\n'.join(results))
 ```
@@ -354,7 +354,7 @@ Earlier I said that logging requires some setup. The documentation for the `logg
 ```text
 # Top of the file
 import logging
-logger = logging.getLogger()
+logger = logging.getLogger()  
 
 # All your normal code goes here
 def blah():
@@ -415,15 +415,15 @@ import sched
 import time
 from datetime import datetime, timedelta
 
-scheduler = sched.scheduler(timefunc=time.time)
+scheduler = sched.scheduler(timefunc=time.time)  
 
-def saytime():
+def saytime():  
     print(time.ctime())
-    scheduler.enter(10, priority=0, action=saytime)
+    scheduler.enter(10, priority=0, action=saytime)  
 
 saytime()
 try:
-    scheduler.run(blocking=True)
+    scheduler.run(blocking=True)  
 except KeyboardInterrupt:
     print('Stopped.')
 ```
@@ -447,14 +447,14 @@ import sched
 import time
 from datetime import datetime, timedelta
 
-scheduler = sched.scheduler(timefunc=time.time)
+scheduler = sched.scheduler(timefunc=time.time)  
 
 def reschedule():
     new_target = datetime.now().replace(
-        second=0, microsecond=0)
-    new_target += timedelta(minutes=1)
+        second=0, microsecond=0)  
+    new_target += timedelta(minutes=1)  
     scheduler.enterabs(
-        new_target.timestamp(), priority=0, action=saytime)
+        new_target.timestamp(), priority=0, action=saytime)  
 
 def saytime():
     print(time.ctime(), flush=True)
@@ -497,12 +497,12 @@ There are quite a few guides similar to this report that you can find online. Th
 
 My selection criteria were that a library should be:
 
-- easy to use
-- easy to install
-- cross-platform
-- applicable to more than one domain
-- not yet super-popular, but likely to become so
-- the _X_ factor
+* easy to use
+* easy to install
+* cross-platform
+* applicable to more than one domain
+* not yet super-popular, but likely to become so
+* the _X_ factor
 
 The last two items in that list bear further explanation.
 
@@ -520,7 +520,7 @@ Each of the following chapters describes a library that met all the criteria on 
  $ tree
 .
 └── mypkg
-    ├── __init__.py
+    ├── __init__.py  
     └── main.py
 ```
 
@@ -557,11 +557,11 @@ home-page = https://github.com/cjrh/mypkg
 classifiers = License :: OSI Approved :: Apache Software License
 ```
 
-It’s pretty much what we specified in the interactive `flit init` sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the _mypkg/\_\_init\_\_.py \_file at the top using triple quotes \(`"""`\). The second is that you must add a line for the version to the same file. Your finished_ \_\_init\_\_.py\_ file might look like this:
+It’s pretty much what we specified in the interactive `flit init` sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the _mypkg/\_\_init\_\_.py _file at the top using triple quotes \(`"""`\). The second is that you must add a line for the version to the same file. Your finished_ \_\_init\_\_.py\_ file might look like this:
 
 ```text
 # file: __init__.py
-""" This is the documentation for the package. """
+""" This is the documentation for the package. """ 
 
 __version__ = '1.0.0'
 ```
@@ -583,7 +583,7 @@ Wheel built: dist/mypkg-1.0.0-py2.py3-none-any.whl
 Using repository at https://pypi.python.org/pypi
 Uploading dist/mypkg-1.0.0-py2.py3-none-any.whl...
 Starting new HTTPS connection (1): pypi.python.org
-Uploading forbidden; trying to register and upload again
+Uploading forbidden; trying to register and upload again 
 Starting new HTTPS connection (1): pypi.python.org
 Registered mypkg with PyPI
 Uploading dist/mypkg-1.0.0-py2.py3-none-any.whl...
@@ -642,11 +642,11 @@ The preceding example is clear enough to follow, but I would be a sorry author i
 ```text
 import colorlog
 
-logger = colorlog.getLogger()
-logger.setLevel(colorlog.colorlog.logging.DEBUG)
+logger = colorlog.getLogger()  
+logger.setLevel(colorlog.colorlog.logging.DEBUG)  
 
 handler = colorlog.StreamHandler()
-handler.setFormatter(colorlog.ColoredFormatter())
+handler.setFormatter(colorlog.ColoredFormatter())  
 logger.addHandler(handler)
 
 logger.debug("Debug message")
@@ -725,11 +725,11 @@ def main(a: 'First value' = 0.0, b: 'Second value' = 0.0):
 
 There is so much happening in so few lines, yet everything is still explicit:
 
-- Each parameter in the main function becomes a command-line argument.
-- The _function annotations_ are exploited to provide an inline help description of each parameter.
-- The default value of each parameter \(here, `0.0`\) is used both as a default value, as well as to indicate the required datatype \(in this case, a `float` number value\).
-- The `auto_convert=True` is used to enforce type coercion from a string to the target parameter type.
-- The docstring for the _function_ now becomes the help documentation of the program itself.
+* Each parameter in the main function becomes a command-line argument.
+* The _function annotations_ are exploited to provide an inline help description of each parameter.
+* The default value of each parameter \(here, `0.0`\) is used both as a default value, as well as to indicate the required datatype \(in this case, a `float` number value\).
+* The `auto_convert=True` is used to enforce type coercion from a string to the target parameter type.
+* The docstring for the _function_ now becomes the help documentation of the program itself.
 
 Also, you may have noticed that this example lacks the usual `if __name__ == '__main__'` boilerplate: that’s because `begins` is smart enough to work with Python’s stack frames so that your target function becomes the starting point.
 
@@ -798,8 +798,8 @@ def main(a: 'First value' = 0.0, b: 'Second value' = 0.0):
 
 The `main` function is the same as before, but we’ve added two subcommands:
 
-- The first, `status`, represents a subcommand that could be used to provide some kind of _system status_ message \(think “git status”\).
-- The second, `fetch`, represents a subcommand for some kind of work function \(think “git fetch”\).
+* The first, `status`, represents a subcommand that could be used to provide some kind of _system status_ message \(think “git status”\).
+* The second, `fetch`, represents a subcommand for some kind of work function \(think “git fetch”\).
 
 Each subcommand has its own set of parameters, and the rules work in the same way as before with the `main` function. For instance, observe the updated help \(obtained with the `-h` parameter\) for the program:
 
@@ -887,10 +887,10 @@ Let’s begin with an example. Since our application will be built up as a web-p
 ```text
 from string import ascii_letters
 from random import choice, randint
-import webview
-import dominate
+import webview  
+import dominate  
 from dominate.tags import *
-from bottle import route, run, template
+from bottle import route, run, template  
 
 bootstrap = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/'
 bootswatch = 'https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/'
@@ -903,17 +903,17 @@ with doc.head:
   link(rel='stylesheet',
        href=bootswatch + 'paper/bootstrap.min.css')
   script(src='https://code.jquery.com/jquery-2.1.1.min.js')
-  [script(src=bootstrap + 'js/' + x)
+  [script(src=bootstrap + 'js/' + x)  
     for x in ['bootstrap.min.js', 'bootstrap-dropdown.js']]
 
 with doc:
   with div(cls='container'):
     with h1():
-      span(cls='glyphicon glyphicon-map-marker')
+      span(cls='glyphicon glyphicon-map-marker')  
       span('My Heading')
     with div(cls='row'):
       with div(cls='col-sm-6'):
-        p('{{body}}')
+        p('{{body}}')  
       with div(cls='col-sm-6'):
         p('Evaluate an expression:')
         input_(id='expression', type='text')
@@ -927,16 +927,16 @@ with doc:
           items = ('Action', 'Another action',
                    'Yet another action')
           ul((li(a(x, href='#')) for x in items),
-             cls='dropdown-menu')
+             cls='dropdown-menu')  
 
     with div(cls='row'):
       h3('Progress:')
-      with div(cls='progress'):
+      with div(cls='progress'):  
         with div(cls='progress-bar', role='progressbar',
                  style='width: 60%;'):
           span('60%')
 
-    with div(cls='row'):
+    with div(cls='row'):  
       for vid in ['4vuW6tQ0218', 'wZZ7oFKsKzY', 'NfnMJMkhDoQ']:
         with div(cls='col-sm-4'):
           with div(cls='embed-responsive embed-responsive-16by9'):
@@ -968,7 +968,7 @@ if __name__ == '__main__':
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-1)
 
-`webview`, the star of the show![![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-2)
+`webview`, the star of the show![!\[2\]\(https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png\)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-2)
 
 The other star of the show. `dominate` lets you create HTML with a series of nested context handlers.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-3)
 
@@ -1027,15 +1027,15 @@ There is also detailed information about processes. To demonstrate, here is a pr
 import psutil
 import os, sys, time
 
-pid = os.getpid()
-p = psutil.Process(pid)
+pid = os.getpid()  
+p = psutil.Process(pid)  
 print('Process info:')
 print('  name  :', p.name())
 print('  exe   :', p.exe())
 
 data = []
 while True:
-    data += list(range(100000))
+    data += list(range(100000))  
     info = p.memory_full_info()
     # Convert to MB
     memory = info.uss / 1024 / 1024
@@ -1059,7 +1059,7 @@ Output:
 ```text
 Process info:
   name  : Python
-  exe   : /usr/local/Cellar/.../Python
+  exe   : /usr/local/Cellar/.../Python  
 Memory used: 11.82 MB
 Memory used: 14.91 MB
 Memory used: 18.77 MB
@@ -1088,19 +1088,19 @@ The problem with polling is that having many such processes running can sometime
 
 `Watchdog` has a mature API, but one way to get immediate use out of it is to use the included `watchmedo` command-line utility to run a shell command when something changes. Here are a few ideas for inspiration:
 
-- Compiling template and markup languages:
+* Compiling template and markup languages:
 
 ```text
 # Compile Jade template language into HTML
 $ watchmedo shell-command \
       --patterns="*.jade" \
-      --command='pyjade -c jinja "${watch_src_path}"' \
+      --command='pyjade -c jinja "${watch_src_path}"' \  
       --ignore-directories
 
 # Convert an asciidoc to HTML
 $ watchmedo shell-command \
       --patterns="*.asciidoc" \
-      --command='asciidoctor "${watch_src_path}"' \
+      --command='asciidoctor "${watch_src_path}"' \  
       --ignore-directories
 ```
 
@@ -1108,7 +1108,7 @@ $ watchmedo shell-command \
 
 Watchdog will substitute the name of the specific changed file using this template name.
 
-- Maintenance tasks, like backups or mirroring:
+* Maintenance tasks, like backups or mirroring:
 
 ```text
 # Synchronize files to a server
@@ -1117,7 +1117,7 @@ $ watchmedo shell-command \
       --command='rsync -avz mydir/ host:/home/ubuntu"'
 ```
 
-- Convenience tasks, like automatically running formatters, linters, and tests:
+* Convenience tasks, like automatically running formatters, linters, and tests:
 
 ```text
 # Automatically format Python source code to PEP8(!)
@@ -1127,7 +1127,7 @@ $ watchmedo shell-command \
       --ignore-directories
 ```
 
-- Calling API endpoints on the Web, or even sending emails and SMS messages:
+* Calling API endpoints on the Web, or even sending emails and SMS messages:
 
 ```text
 # Mail a file every time it changes!
@@ -1146,22 +1146,22 @@ from watchdog.events import (
     PatternMatchingEventHandler, FileModifiedEvent,
     FileCreatedEvent)
 
-observer = Observer()
+observer = Observer()  
 
 class Handler(PatternMatchingEventHandler):
-    def on_created(self, event: FileCreatedEvent):
+    def on_created(self, event: FileCreatedEvent):  
         print('File Created: ', event.src_path)
 
-    def on_modified(self, event: FileModifiedEvent):
+    def on_modified(self, event: FileModifiedEvent):  
         print('File Modified: %s [%s]' % (
             event.src_path, event.event_type))
 
-observer.schedule(event_handler=Handler('*'), path='.')
+observer.schedule(event_handler=Handler('*'), path='.')  
 observer.daemon = False
 observer.start()
 
 try:
-    observer.join()
+    observer.join() 
 except KeyboardInterrupt:
     print('Stopped.')
     observer.stop()
@@ -1196,7 +1196,7 @@ File Modified: ./secrets.txt [modified]
 File Modified: ./secrets.txt [modified]
 File Modified: ./secrets.txt [modified]
 File Modified: ./secrets.txt [modified]
-Stopped.
+Stopped. 
 
 Process finished with exit code 0
 ```
@@ -1261,11 +1261,11 @@ In the `hug` example, we’ve done little more than wrap two functions from the 
 And that’s it! We can immediately test our API. You could use a web browser for this, but it’s easy enough to use a tool like `cURL`. You call the URL endpoint with the correct parameters, and `hug` returns the answer:
 
 ```text
-$ curl http://localhost:8000/hextoname?hex=ff0000
+$ curl http://localhost:8000/hextoname?hex=ff0000  
 
 "red"
 
-$ curl http://localhost:8000/nametohex?name=lightskyblue
+$ curl http://localhost:8000/nametohex?name=lightskyblue  
 
 "#87cefa"
 ```
@@ -1324,23 +1324,23 @@ If these were all the features provided by `hug`, it would already be enough for
 
 ```text
 import hug
-import inflect
+import inflect  
 engine = inflect.engine()
 
 @hug.get(versions=1)
 def singular(word: hug.types.text):
     """ Return the singular version of the word"""
-    return engine.singular_noun(word).lower()
+    return engine.singular_noun(word).lower()  
 
 @hug.get(versions=1)
 def plural(word: hug.types.text):
     """ Return the plural version of the word"""
-    return engine.plural(word).lower()
+    return engine.plural(word).lower()  
 
 @hug.get(versions=2)
 def singular(word: hug.types.text):
     """ Return the singular of word, preserving case """
-    return engine.singular_noun(word)
+    return engine.singular_noun(word)  
 
 @hug.get(versions=2)
 def plural(word: hug.types.text):
@@ -1363,7 +1363,7 @@ We are also using the [inflect](http://bit.ly/inflect-py) library, which makes a
 Imagine that we’ve created this web service to provide an API to transform words into their singular or plural version: one apple, many apples, and so on. For some reason that now escapes us, in the first release we lowercased the results before returning them:
 
 ```text
-$ curl http://localhost:8000/v1/singular/?word=Silly%20Walks
+$ curl http://localhost:8000/v1/singular/?word=Silly%20Walks  
 
 "silly walk"
 
@@ -1393,12 +1393,12 @@ $ curl http://localhost:8000/v2/plural/?word=Crisis
 These API calls use version 2 of our web service. And finally, the documentation is also versioned, and for this example, you can see how the function _docstrings_ are also incorporated as usage text:
 
 ```text
-$ curl http://localhost:8000/v2/
+$ curl http://localhost:8000/v2/  
 {
   "404": "The API call you tried to make was not defined. Here's
       a definition of the API to help you get going :)",
   "documentation": {
-    "version": 2,
+    "version": 2,  
     "versions": [
       1,
       2
@@ -1407,7 +1407,7 @@ $ curl http://localhost:8000/v2/
       "/singular": {
         "GET": {
           "usage": " Return the singular of word,
-              preserving case ",
+              preserving case ",  
           "outputs": {
             "format": "JSON (Javascript Serialized
                 Object Notation)",
@@ -1729,14 +1729,14 @@ I can make the bad guys good for a weekend
 from boltons.cacheutils import LRI, LRU, cached
 
 # Persistent LRU cache for the parts of speech
-cached_data = shelve.open('cached_data', writeback=True)
-atexit.register(cached_data.close)
+cached_data = shelve.open('cached_data', writeback=True)  
+atexit.register(cached_data.close)  
 
 # Retrieve or create the "parts of speech" cache
 cache_POS = cached_data.setdefault(
-    'parts_of_speech', LRU(max_size=5000))
+    'parts_of_speech', LRU(max_size=5000))  
 
-@cached(cache_POS)
+@cached(cache_POS)  
 def part_of_speech(word):
     items = vb.part_of_speech(word.lower())
     if items:
@@ -1745,13 +1745,13 @@ def part_of_speech(word):
 # Temporary LRI cache for word substitutions
 cache = LRI(max_size=30)
 
-@cached(cache)
+@cached(cache)  
 def synonym(word):
     items = vb.synonym(word)
     if items:
         return choice(json.loads(items))['text']
 
-@cached(cache)
+@cached(cache)  
 def antonym(word):
     items = vb.antonym(word)
     if items:
@@ -1766,7 +1766,7 @@ for raw_word in blank_space.strip().split(' '):
     word = raw_word.translate(
         {ord(x): None for x in punctuation})
     if part_of_speech(word) in ['noun', 'verb',
-                                'adjective', 'adverb']:
+                                'adjective', 'adverb']:  
         alternate = choice((synonym, antonym))(word) or raw_word
     print(alternate, end=' ')
 ```
@@ -1856,8 +1856,8 @@ If you’ve ever had a long-running python application, and wished that you coul
 
 There are several functions in `boltons.strutils` that are enormously useful:
 
-- `slugify()`: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
-- `ordinalize()`: given a numerical value, create a string referring to its position:
+* `slugify()`: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
+* `ordinalize()`: given a numerical value, create a string referring to its position:
 
 ```text
 >>> print(ordinalize(1))
@@ -1866,7 +1866,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 2nd
 ```
 
-- `cardinalize`: given a word and a count, change the word for plurality and _preserve case_:
+* `cardinalize`: given a word and a count, change the word for plurality and _preserve case_:
 
 ```text
 >>> cardinalize('python', 99)
@@ -1881,7 +1881,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 'blind mice'
 ```
 
-- `singularize` and `pluralize`:
+* `singularize` and `pluralize`:
 
 ```text
 >>> pluralize('theory')
@@ -1890,7 +1890,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 'mouse'
 ```
 
-- `bytes2human`: convert data sizes into friendler forms:
+* `bytes2human`: convert data sizes into friendler forms:
 
 ```text
 >>> bytes2human(1e6)
@@ -1911,20 +1911,20 @@ There are several other useful `boltons` libraries not mentioned here, and I enc
 
 That sounds complicated, but basically Cython lets you convert your Python modules into compiled extension modules. There are two main reasons you might need to do this:
 
-- You want to wrap a C/C++ library, and use it from Python.
-- You want to speed up Python code.
+* You want to wrap a C/C++ library, and use it from Python.
+* You want to speed up Python code.
 
 The _second_ reason is the one I’m going to focus on. By adding a few type declarations to your Python source code, you can dramatically speed up certain kinds of functions.
 
 Consider the following code, which is as simple as I could possibly make it for this example:
 
 ```text
-import array
+import array  
 
-n = int(1e8)
-a = array.array('d', [0.0]) * n
+n = int(1e8) 
+a = array.array('d', [0.0]) * n  
 
-for i in range(n):
+for i in range(n): 
     a[i] = i % 3
 
 print(a[:5])
@@ -1960,15 +1960,15 @@ I’ve include the `time` command to get some performance measurements. Here we 
 In order to use Cython, we need to modify the code slightly to take advantage of the Cython compiler’s features:
 
 ```text
-import array
+import array  
 
-cdef int n = int(1e8)
+cdef int n = int(1e8)  
 cdef object a = array.array('d', [0.0]) * n
-cdef double[:] mv = a
+cdef double[:] mv = a  
 
-cdef int i
+cdef int i  
 for i in range(n):
-    mv[i] = i % 3
+    mv[i] = i % 3  
 
 print(a[:5])
 ```
@@ -2039,23 +2039,23 @@ In the following code snippet, we demonstrate how to use normal Python threading
 ```text
 # cython: boundscheck=False, cdivision=True
 import array
-import threading
+import threading  
 
-cpdef void target(double[:] piece) nogil:
+cpdef void target(double[:] piece) nogil:  
     cdef int i, n = piece.shape[0]
-    with nogil:
+    with nogil:  
         for i in range(n):
             piece[i] = i % 3
 
 
-cdef int n = int(1e8)
+cdef int n = int(1e8)  
 cdef object a = array.array('d', [0.0]) * n
 
 
-view = memoryview(a)
-piece_size = int(n / 2)
+view = memoryview(a)  
+piece_size = int(n / 2)  
 
-thread1 = threading.Thread(
+thread1 = threading.Thread(  
     target=target,
     args=(view[:piece_size],)
 )
@@ -2065,10 +2065,10 @@ thread2 = threading.Thread(
     args=(view[piece_size:],)
 )
 
-thread1.start()
+thread1.start()  
 thread2.start()
 
-thread1.join()
+thread1.join()  
 thread2.join()
 
 print(a[:5])
@@ -2088,7 +2088,7 @@ We create a _memory view_ of the data inside the array. Cython is optimized to w
 
 We’re going to split up our big data array into two parts.[![7](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/7.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-7)
 
-Create normal Python threads: we must pass both the target function and the _view section_ as the argument for the function. Note how each thread gets a different part of the view![![8](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/8.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-8)
+Create normal Python threads: we must pass both the target function and the _view section_ as the argument for the function. Note how each thread gets a different part of the view![!\[8\]\(https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/8.png\)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-8)
 
 Threads are started.[![9](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/9.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-9)
 
@@ -2155,12 +2155,12 @@ You have seen a few of the very special features of the standard library like th
 
 In addition to those standard library modules, we also covered several excellent libraries that are also available to you on the PyPI. You’ve seen how:
 
-- _flit_ makes it easy for you to create your own Python packages, and submit them to the PyPI.
-- libraries like _colorama_ and _begins_ improve your command-line applications.
-- tools like _pyqtgraph_ and _pywebview_ can save you lots of time when creating modern user interfaces, including _hug_, which can give your applications an easily created web API.
-- system libraries like _psutil_ and _watchdog_ can give you a clean integration with the host operating system.
-- temporal libraries like _arrow_ and _parsedatetime_ can simplify the tangled mess that working with dates and times often becomes.
-- general-purpose libraries like _boltons_ and _Cython_ can further enrich the already powerful facilities in the Python standard library.
+* _flit_ makes it easy for you to create your own Python packages, and submit them to the PyPI.
+* libraries like _colorama_ and _begins_ improve your command-line applications.
+* tools like _pyqtgraph_ and _pywebview_ can save you lots of time when creating modern user interfaces, including _hug_, which can give your applications an easily created web API.
+* system libraries like _psutil_ and _watchdog_ can give you a clean integration with the host operating system.
+* temporal libraries like _arrow_ and _parsedatetime_ can simplify the tangled mess that working with dates and times often becomes.
+* general-purpose libraries like _boltons_ and _Cython_ can further enrich the already powerful facilities in the Python standard library.
 
 Hopefully you will be able to use one or more of the great libraries in your next project, and I wish you the best of luck!
 
@@ -2177,3 +2177,4 @@ Hopefully you will be able to use one or more of the great libraries in your nex
 [6](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760-marker) `pip install colorlog`
 
 [7](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737065700880-marker) Unfortunately, `PyQt` itself can be either trivial or very tricky to install, depending on your platform. At the time of writing, the stable release of `pyqtgraph` requires `PyQt4` for which no prebuilt installer is available on PyPI; however, the development branch of `pyqtgraph` works with `PyQt5`, for which a prebuilt, `pip`-installable version _does_ exist on PyPI. With any luck, by the time you read this a new version of `pyqtgraph` will have been released!
+

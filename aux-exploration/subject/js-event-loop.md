@@ -26,12 +26,14 @@ The callback is added to the call stack, gets invoked, and returns a value, and 
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--NYOknEYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif5.gif)
 
-Reading an article is fun, but you'll only get entirely comfortable with this by actually working with it over and over. Try to figure out what gets logged to the console if we run the following:
+Reading an article is fun, but you'll only get entirely comfortable with this by actually working with it over and over. Try to figure out what gets logged to the console if we run the following:  
+
 
 ```javascript
-const foo = () => console.log('First');
-const bar = () => setTimeout(() => console.log('Second'), 500);
-const baz = () => console.log('Third');
+
+const foo = () => console.log("First");
+const bar = () => setTimeout(() => console.log("Second"), 500);
+const baz = () => console.log("Third");
 
 bar();
 foo();
@@ -47,3 +49,4 @@ Got it? Let's quickly take a look at what's happening when we're running this co
 3. The timer runs, in the meantime `foo` gets invoked and logs `First`. `foo` returns \(undefined\),`baz` gets invoked, and the callback gets added to the queue.
 4. `baz` logs `Third`. The event loop sees the callstack is empty after `baz` returned, after which the callback gets added to the call stack.
 5. The callback logs `Second`.
+
