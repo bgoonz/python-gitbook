@@ -12,9 +12,9 @@ When we round values, we go from a numerical value with decimal places to a whol
 
 Python has three ways to turn a floating-point value into a whole \(integer\) number:
 
-* The built-in `round()` function rounds values up and down.
-* The `math.floor()` function rounds _down_ to the next full integer.
-* The `math.ceil()` function rounds _up_ to the next full integer.
+- The built-in `round()` function rounds values up and down.
+- The `math.floor()` function rounds _down_ to the next full integer.
+- The `math.ceil()` function rounds _up_ to the next full integer.
 
 If you just want a string or script output with a whole number, then a Python format string can perform that task too. That way you also don’t lose precision in the original value.
 
@@ -337,10 +337,3 @@ Python has three ways to round a floating-point value to a whole number. The `ro
 The `math.floor()` function, on the other hand, always rounds down to the nearest full integer. `math.ceil()` does the opposite. That function always rounds up to a whole number.
 
 All three functions work in the same way: provide the function with one argument, which is the floating-point value to round.
-
-
-
-
-
-
-

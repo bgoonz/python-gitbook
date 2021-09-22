@@ -10,7 +10,7 @@ To start with project, it would be better to have a virtual environment. Virtual
 asabeneh@Asabeneh:~$ pip install virtualenv
 ```
 
-Inside the 30DaysOfPython folder create a flask\_project folder.
+Inside the 30DaysOfPython folder create a flask_project folder.
 
 After installing the virtualenv package go to your project folder and create a virtual env by writing:
 
@@ -88,4 +88,3 @@ When you finish you should dactivate active project using _deactivate_.
 ```
 
 The necessary modules to work with flask are installed. Now, your project directory is ready for a flask project. You should include the venv to your .gitignore file not to push it to github.
-

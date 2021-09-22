@@ -2,10 +2,6 @@
 
 {% embed url="https://replit.com/@bgoonz/DATASTRUCPYTHONNOTES-3\#.replit" %}
 
-
-
-
-
 ```python
 """
 GCA Practice
@@ -653,7 +649,7 @@ for test_case in test_cases:
     print(f"Actual output: {actual_output}")
     print("-----")
 """
-Mean Groups 
+Mean Groups
 -----------
 You are given an array of arrays a. Your task is to group the arrays a[i] by their mean values, so that arrays with equal mean values are in the same group, and arrays with different mean values are in different groups.
 
@@ -742,4 +738,3 @@ def meanGroups(a):
 # print(meanGroups(a))
 
 ```
-

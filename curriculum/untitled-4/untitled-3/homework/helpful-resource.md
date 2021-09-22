@@ -453,4 +453,3 @@ The output looks like this:
 #### Conclusion <a id="conclusion"></a>
 
 In this article, we continued from where we left in the [previous article](https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/). We saw how we can sort merge lists by changing data and then my modifying links. Finally, we also studied different ways of merging two sorted linked lists.
-

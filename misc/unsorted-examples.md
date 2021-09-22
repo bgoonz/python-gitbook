@@ -10,15 +10,13 @@
 
 ### next is a pointer/reference to the next node.
 
-###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list.
+### If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list.
 
 ### Assume all nodes in the linked list are 0-indexed.
 
 _Implement these functions in your linked list class:_
 
 {% embed url="https://leetcode.com/problems/design-linked-list" %}
-
-
 
 ```python
 
@@ -122,15 +120,9 @@ class MyLinkedList:
                     counter += 1
 ```
 
-
-
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%284%29.png)
 
 ### Define Count Vowels Function
-
-
 
 Count the number of vowels in the user input string using for loop and while loop
 
@@ -217,10 +209,6 @@ if __name__ == '__main__':
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%286%29.png)
 
-
-
-
-
 ### Define Binary Number to Decimal Function
 
 Let’s create a new function to Convert Binary to a Decimal Number named binaryToDecimal\(\) which accepts Binary as an argument.
@@ -290,17 +278,11 @@ if __name__ == '__main__':
 
 ![Python Program to convert Binary Number to Decimal Number Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Python-Program-to-convert-Binary-Number-to-Decimal-Number.png?resize=665%2C251&ssl=1)
 
-
-
-
-
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2817%29.png)
 
 ### Fibonacci Series With Recursion
 
-Let’s create a new Function named fibonacci\_with\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by calling it recursively.
+Let’s create a new Function named fibonacci_with_recursion\(\) which is going to find the Fibonacci Series till the n-th term by calling it recursively.
 
 So the base condition will be if the number is less than or equal to 1, then simply return the number.
 
@@ -316,7 +298,7 @@ def fibonacci_with_recursion(number):
 
 #### Fibonacci Series Without Recursion
 
-Let’s create a new Function named fibonacci\_without\_recursion\(\) which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
+Let’s create a new Function named fibonacci_without_recursion\(\) which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
 
 _**Read =&gt;**_ [_**Program to check whether the Number is Prime or Not**_](https://codezup.com/program-check-whether-number-prime-not-python/)
 
@@ -403,51 +385,23 @@ if __name__ == '__main__':
 
 ![Calculate and display n-th term Fibonacci Series in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2019/12/Calculate-and-display-n-th-term-Fibonacci-Series-in-Python-Output.png?resize=665%2C302&ssl=1)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2812%29.png)
-
-
-
-
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2810%29.png)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%281%29.png)
-
-
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%288%29.png)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2813%29.png)
-
-
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2818%29.png)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2811%29.png)
-
-
-
-
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%287%29.png)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%285%29.png)
-
-
-
-
-
-
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%289%29.png)
 
@@ -457,9 +411,6 @@ if __name__ == '__main__':
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%2815%29.png)
 
-
-
 ![](../.gitbook/assets/image%20%2819%29%20%284%29.png)
 
 ![](../.gitbook/assets/image%20%2819%29%20%284%29%20%282%29.png)
-

@@ -1,8 +1,8 @@
 # Algo-Prep
 
-{% tabs %}
-{% tab title="LeetCode" %}
-```python
+{% tabs %} {% tab title="LeetCode" %}
+
+````python
 ```py
 # Definition for singly-linked list.
 # class ListNode:
@@ -22,15 +22,15 @@ class Solution:
             if l2:
                 s += int(l2.val)
                 l2 = l2.next
-            print(s) 
-            
-            resa = s % 10            
+            print(s)
+
+            resa = s % 10
             res.append(resa)
             c = s // 10
-            
+
         if(c!=0):
             res.append(c)
-            
+
         l3 = ListNode(0)
         head = l3
         for i in range(0, len(res)):
@@ -78,17 +78,17 @@ class Solution:
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         io = []
-        
+
         if(root==None):
             return []
-        
+
         def inorder(x):
             if(x.left!=None):
                 inorder(x.left)
             io.append(int(x.val))
             if(x.right!=None):
                 inorder(x.right)
-                
+
         inorder(root)
         return io
 
@@ -106,13 +106,13 @@ class Solution:
 
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
-        
+
         if(root==None):
             return []
         stack = []
         io = []
         c = root
-        
+
         while(c!=None or len(stack)!=0):
             while(c!=None):
                 stack.append(c)
@@ -121,7 +121,7 @@ class Solution:
             io.append(c.val)
             c = c.right
         return io
-                
+
             # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -157,7 +157,7 @@ class Solution:
 
 ## Recursive Solution
 
-class Solution:                
+class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if(root==None):
             return []
@@ -175,19 +175,19 @@ class Solution:
 
 ## Iterative Solution
 
-class Solution:                
+class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         if(root==None):
             return []
         stack = []
         po = []
         c = root
-        
+
         while(c!=None or len(stack)!=0):
             while(c!=None):
                 stack.append(c)
                 po.append(c.val)
-                c = c.left                
+                c = c.left
             c = stack.pop()
             c = c.right
         return po
@@ -213,7 +213,7 @@ class Solution:
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
         result = []
-        
+
         def inorder(node):
             if node:
                 if node.left!=None:
@@ -221,7 +221,7 @@ class Solution:
                 result.append(int(node.val))
                 if node.right!=None:
                     inorder(node.right)
-                    
+
         def constructBalancedTree(arr):
             if not arr:
                 return None
@@ -230,7 +230,7 @@ class Solution:
             root.left = constructBalancedTree(arr[:mid])
             root.right = constructBalancedTree(arr[mid+1:])
             return root
-        
+
         inorder(root)
         # result = [int(x.val) for x in result]
         return constructBalancedTree(result)class Solution:
@@ -252,7 +252,7 @@ class Solution:
         if(n>=x):
             return 0
         for i in range(m+1, n+1):
-            ans = ans & i   
+            ans = ans & i
         return ansfrom collections import Counter
 class Solution:
     def count(self, d1, d2):
@@ -262,7 +262,7 @@ class Solution:
             if s < 0:
                 return False
         return True
-    
+
     def checkIfCanBreak(self, s1: str, s2: str) -> bool:
         d1 = Counter(s1)
         d2 = Counter(s2)
@@ -315,7 +315,7 @@ class Solution:
                     count(node.right)
                 self.c += 1
             return self.c
-        
+
         count(root)
         return self.cclass Solution:
     def countBits(self, num: int) -> List[int]:
@@ -444,7 +444,7 @@ class Solution:
                 self.decq[self.front] = 0
                 self.front = (self.front+1)%self.maxsize
             self.size -= 1
-            return True                
+            return True
 
     def deleteLast(self) -> bool:
         """
@@ -459,7 +459,7 @@ class Solution:
                 self.decq[self.rear] = 0
                 self.rear = (self.rear-1)%self.maxsize
             self.size -= 1
-            return True       
+            return True
 
     def getFront(self) -> int:
         """
@@ -581,7 +581,7 @@ class MyCircularDeque:
     def __init__(self, k: int):
         self.size = 0
         self.maxsize = k
-        self.cq = [0]*k   
+        self.cq = [0]*k
         self.front = self.rear = -1
 
     def enQueue(self, value: int) -> bool:
@@ -595,7 +595,7 @@ class MyCircularDeque:
             self.cq[self.rear] = value
             self.size += 1
             return True
-        
+
     def deQueue(self) -> bool:
         if self.size == 0:
             return False
@@ -613,7 +613,7 @@ class MyCircularDeque:
         return self.cq[self.rear] if self.size!=0 else -1
 
     def isEmpty(self) -> bool:
-        return self.size == 0        
+        return self.size == 0
 
     def isFull(self) -> bool:
         return self.size == self.maxsize
@@ -636,7 +636,7 @@ class MyCircularDeque:
 
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        
+
         self.depth = 1
         def findDepth(first):
             if not first:
@@ -645,7 +645,7 @@ class Solution:
             rd = findDepth(first.right)
             self.depth = max(self.depth, ld+rd+1)
             return max(ld,rd) + 1
-        
+
         findDepth(root)
         return self.depth - 1class Solution:
     def trailingZeroes(self, n: int) -> int:
@@ -697,7 +697,7 @@ class Solution:
                 if c[tid] == 2:
                     anslist.append(node)
                 return tid
-        
+
         find(root)
         return anslistfrom collections import Counter
 class Solution:
@@ -876,11 +876,11 @@ class MyStack:
         if(len(self.stack)!=0):
             return self.stack.pop()
         else:
-            return -1    
+            return -1
 
     def increment(self, k: int, val: int) -> None:
         for i in range(min(k, len(self.stack))):
-            self.stack[i] += val        
+            self.stack[i] += val
 
 # ------------------------------------------
 
@@ -922,7 +922,7 @@ class Solution:
             while i < len(nums2):
                 if nums2[i] in set(nums1):
                     nums1.remove(nums2[i])
-                    i += 1 
+                    i += 1
                 else:
                     nums2.remove(nums2[i])
             return nums2
@@ -931,7 +931,7 @@ class Solution:
             while i < len(nums1):
                 if nums1[i] in set(nums2):
                     nums2.remove(nums1[i])
-                    i += 1 
+                    i += 1
                 else:
                     nums1.remove(nums1[i])
             return nums1
@@ -960,18 +960,18 @@ class Solution:
             node.right = temp
         if root:
             invert(root)
-        return rootclass Solution: 
+        return rootclass Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         if len(s) == 0:
             return True
         if len(t) == 0:
             return False
-        sp = 0 
+        sp = 0
         for tc in t:
             if s[sp] == tc:
                 sp += 1
                 if sp == len(s):
-                    return True 
+                    return True
         return Falseclass Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         while(len(stones)!=1 and len(stones)!=0):
@@ -1007,7 +1007,7 @@ class Solution:
                         denom[10] -= 1
                         bal -= 10
                         if bal == 0:
-                            continue                
+                            continue
                 if denom[5] > 1:
                     denom[5] -= 2
                     bal -= 10
@@ -1109,12 +1109,12 @@ class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
         slowPointer = head
         fastPointer = head
-        
+
         while(fastPointer and fastPointer.next):
-            
+
             slowPointer = slowPointer.next
             fastPointer = fastPointer.next.next
-            
+
         return slowPointer        import math
 class MinStack:
 
@@ -1129,20 +1129,20 @@ class MinStack:
         self.x = x
         self.stack.append(x)
         if(x < self.min):
-            self.min = x               
-            
+            self.min = x
+
     def pop(self) -> None:
         t = self.stack.pop()
         if(t==self.min and len(self.stack)):
-            self.min = min(self.stack)   
+            self.min = min(self.stack)
         elif(t==self.min and not len(self.stack)):
             self.min = math.inf
 
     def top(self) -> int:
-        return self.stack[-1]        
+        return self.stack[-1]
 
     def getMin(self) -> int:
-        return self.min     
+        return self.min
 # ------------------------------------------
 
 # Your MinStack object will be instantiated and called as such:
@@ -1305,7 +1305,7 @@ if and only if the N is not of the form,
 
 N = 4^a (8b + 7) -- (1)
 
-LOGIC: 
+LOGIC:
 - if N is a perfect square, return 1
 - if N is of form (1),
     - keep dividing by 4
@@ -1320,18 +1320,18 @@ class Solution:
     def numSquares(self, n: int) -> int:
         if ceil(sqrt(n)) == floor(sqrt(n)):
             return 1
-        
+
         while n % 4 == 0:
             n /= 4
         if n % 8 == 7:
             return 4
-        
+
         j = 1
         while j*j <= n:
             if ceil(sqrt(n - j*j)) == floor(sqrt(n - j*j)):
                 return 2
             j += 1
-        
+
         else:
             return 3class Solution:
     def stringShift(self, s: str, shift: List[List[int]]) -> str:
@@ -1438,7 +1438,7 @@ class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         pointer = ListNode(0)
         pointer.next = head
-        
+
         tempnode = pointer
         while tempnode.next != None:
             if tempnode.next.val == val:
@@ -1482,7 +1482,7 @@ class Solution:
         dummy = fast = slow = ListNode()
         dummy.next = head
         if not head.next:
-            return None 
+            return None
         for _ in range(n+1):
             fast = fast.next
         while fast:
@@ -1494,7 +1494,7 @@ class Solution:
         l = len(S)
         A = []
         for k, v in sorted((S.count(x), x) for x in set(S)):
-            if k > (l+1) / 2 : 
+            if k > (l+1) / 2 :
                 return ""
             A.extend(k * v)
         # print(A)
@@ -1541,12 +1541,12 @@ class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         temp = head
         prev = None
-        
+
         while(temp!=None):
             next = temp.next
             temp.next = prev
             prev = temp
-            temp = next            
+            temp = next
         return prevclass Solution:
     def reverseString(self, s: List[str]) -> None:
         """
@@ -1629,7 +1629,7 @@ class Solution:
                 ans += 5
                 prev = 'V'
                 continue
-            if(s[i]=='I'):                                   
+            if(s[i]=='I'):
                 ans += 1
                 prev = 'I'
         return ansclass Solution:
@@ -1660,7 +1660,7 @@ class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if not head:
             return None
-        if not k==0:        
+        if not k==0:
             tail = head
             length = 1
 
@@ -1695,7 +1695,7 @@ class Solution:
         return binary(nums, 0, len(nums)-1, target)
 # ------------------------------------------
 
-# Iterative Binary Search 
+# Iterative Binary Search
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
@@ -1744,7 +1744,7 @@ class Solution:
     def simplifyPath(self, path: str) -> str:
         if(len(path)==0 or path==None or path==''):
             return '/'
-        
+
         p = path.split('/')
         stack = []
         for item in p:
@@ -1757,7 +1757,7 @@ class Solution:
             else:
                 stack.append(item)
         return '/'+'/'.join(stack)
-    
+
                 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         return int(((sum(set(nums))*3) - sum(nums))/2)class Solution:
@@ -1874,7 +1874,7 @@ class Solution:
         dp = [0 for _ in range(len(triangle)+1)]
         for r in triangle[::-1]:
             for i in range(len(r)):
-                dp[i] = r[i] + min(dp[i], dp[i+1])      
+                dp[i] = r[i] + min(dp[i], dp[i+1])
         return dp[0]class Solution:
     def twoCitySchedCost(self, costs: List[List[int]]) -> int:
         costs = sorted(costs, key = lambda x: x[0] - x[1])
@@ -1885,20 +1885,20 @@ class Solution:
 
         if obstacleGrid[0][0] == 1:
             return 0
-        
+
         obstacleGrid[0][0] = 1
         for i in range(1, m):
             obstacleGrid[i][0] = int(obstacleGrid[i][0] == 0 and obstacleGrid[i-1][0] == 1)
         for i in range(1, n):
             obstacleGrid[0][i] = int(obstacleGrid[0][i] == 0 and obstacleGrid[0][i-1] == 1)
-        
+
         for i in range(1, m):
             for j in range(1, n):
-                if obstacleGrid[i][j] == 0:                    
+                if obstacleGrid[i][j] == 0:
                     obstacleGrid[i][j] = obstacleGrid[i-1][j] + obstacleGrid[i][j-1]
                 else:
                     obstacleGrid[i][j] = 0
-                    
+
         return obstacleGrid[-1][-1]            from collections import Counter
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -1918,7 +1918,7 @@ class Solution:
                 return False
         if(lb==0):
             return True
-        
+
         for i in range(len(s)-1, -1, -1):
             if(s[i]==')' or s[i]=='*'):
                 rb += 1
@@ -1970,7 +1970,7 @@ class Solution:
             if target - nums[i] in dict and nums.index(target - nums[i]) != i:
                 return i, nums.index(target-nums[i])
 # ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# ------------------------------------------# -------------------------------------------
-```
+````
 
 ```
 {% endtab %}
@@ -1980,3 +1980,4 @@ class Solution:
 {% endtab %}
 {% endtabs %}
 
+```

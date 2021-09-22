@@ -1,7 +1,6 @@
 ---
 description: >-
-  Objective 01 - Recall the different traversal types for a binary tree and
-  implement a function to complete the traversal for each type
+  Objective 01 - Recall the different traversal types for a binary tree and implement a function to complete the traversal for each type
 ---
 
 # D4- Module 04 - Tree Traversal
@@ -60,7 +59,7 @@ In Python, the syntax looks like this:
 my_list[start_index:end_index]
 ```
 
-The default start index is 0, and if you leave off the end\_index, the slice will capture through the end of the list.
+The default start index is 0, and if you leave off the end_index, the slice will capture through the end of the list.
 
 ```python
 my_list[:]  # This would be all of the items in my_list
@@ -81,11 +80,7 @@ You must keep these facts in mind and account for them when using a slice in you
 
 {% embed url="https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/" %}
 
-
-
 {% embed url="https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/" %}
-
-
 
 ### Objective 02 - Describe the differences between in-place and out-of-place algorithms
 
@@ -167,8 +162,6 @@ Notice how we had to store the returned list in a new variable. Also, notice tha
 
 {% embed url="https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/" %}
 
-
-
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
 
 ### Objective 03 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a dynamic array
@@ -228,4 +221,3 @@ So, let's say that your dynamic array instantiates with an underlying static arr
 ### Array and String Manipulation <a id="array-and-string-manipulation"></a>
 
 This module project requires you to answer some multiple-choice questions related to the module's objectives. Additionally, you must continue developing your problem-solving skills by completing coding challenges related to its content.
-

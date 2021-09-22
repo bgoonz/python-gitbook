@@ -4,14 +4,12 @@
 
 {% embed url="https://www.youtube.com/watch?v=8lB5fqmh2OY" %}
 
-
-
 {% embed url="https://github.com/wilfredinni/python-cheatsheet" caption="" %}
 
 {% embed url="https://gist.github.com/bgoonz/ebe842b651bba237d70bccfa5a7b5a75\#file-number-bases-and-chars-ipynb" caption="" %}
 
-{% tabs %}
-{% tab title="First Tab" %}
+{% tabs %} {% tab title="First Tab" %}
+
 ```python
 def toHex(dec):
     digits = "0123456789ABCDEF"
@@ -33,12 +31,12 @@ for x in range(200):
 # for x in range(200):
 #     print(x, hex(x))
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
+{% endtab %} {% endtabs %}
 
 #### Overview <a id="overview"></a>
 
@@ -101,15 +99,9 @@ print(dir(math))
 
 {% embed url="https://youtu.be/PC0w44UH7Mo" %}
 
-
-
 {% embed url="https://replit.com/@bgoonz/Comments-1" %}
 
-
-
 {% embed url="https://gist.github.com/bgoonz/73035b719d10a753a44089b41eacf6ca\#file-copy-of-linked-lists-ipynb" %}
-
-
 
 What is a linked list, and how is it different from an array? How efficient or inefficient are its operations? What are its strengths and weaknesses? How can I construct and interact with a linked list? By the end of this objective, you will be able to answer all of these questions confidently.
 
@@ -121,13 +113,13 @@ A linked list is a simple, linear data structure used to store a collection of e
 
 For example, in an array, each element of the list `[43, 32, 63` is stored in memory like so:
 
-![https://tk-assets.lambdaschool.com/61d549f9-9f66-4d1f-9572-2d43098c2767\_arrays-stored-in-memory.001.jpeg](https://tk-assets.lambdaschool.com/61d549f9-9f66-4d1f-9572-2d43098c2767_arrays-stored-in-memory.001.jpeg)
+![https://tk-assets.lambdaschool.com/61d549f9-9f66-4d1f-9572-2d43098c2767_arrays-stored-in-memory.001.jpeg](https://tk-assets.lambdaschool.com/61d549f9-9f66-4d1f-9572-2d43098c2767_arrays-stored-in-memory.001.jpeg)
 
 `43` is the first item in the collection and is therefore stored in the first slot. `32` is the second item and is stored immediately next to `43` in memory. This pattern continues on and on.
 
 In a linked list, each element of the list could be stored like so:
 
-![https://tk-assets.lambdaschool.com/72151497-7a5e-4940-835c-d8beb9c88922\_linked-list-in-memory.001.jpeg](https://tk-assets.lambdaschool.com/72151497-7a5e-4940-835c-d8beb9c88922_linked-list-in-memory.001.jpeg)
+![https://tk-assets.lambdaschool.com/72151497-7a5e-4940-835c-d8beb9c88922_linked-list-in-memory.001.jpeg](https://tk-assets.lambdaschool.com/72151497-7a5e-4940-835c-d8beb9c88922_linked-list-in-memory.001.jpeg)
 
 You can see here that the elements can be spaced out in memory. Because the elements are not stored contiguously, each element in memory must contain information about the next element in the list. The first item stores the data `43` and the location in memory \(`*3`\) for the next item in the list. This example is simplified; the second item in the list `32` could be located anywhere in memory. It could even come before the first item in memory.
 
@@ -193,7 +185,7 @@ Let’s look at how we can represent a singly linked list graphically and in Pyt
 
 How do you represent a singly linked list graphically? Let’s say you wanted to store the numbers 1, 2, and 3. You would need to create three nodes. Then, each of these nodes would be linked together using the pointers.
 
-![https://tk-assets.lambdaschool.com/baa6486b-9322-481e-95be-c660640c4966\_linked-list-graphical-representation.001.jpeg](https://tk-assets.lambdaschool.com/baa6486b-9322-481e-95be-c660640c4966_linked-list-graphical-representation.001.jpeg)
+![https://tk-assets.lambdaschool.com/baa6486b-9322-481e-95be-c660640c4966_linked-list-graphical-representation.001.jpeg](https://tk-assets.lambdaschool.com/baa6486b-9322-481e-95be-c660640c4966_linked-list-graphical-representation.001.jpeg)
 
 Notice that the last element or node in the linked list does not have a pointer to any other node. This fact is how you know you are at the end of the linked list.
 
@@ -264,13 +256,7 @@ h[ttps://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf](https:
 
 [ ](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
 
-
-
-
-
 {% embed url="https://www.youtube.com/watch?v=njTh\_OwMljA" %}
-
-
 
 {% embed url="https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES" %}
 
@@ -302,11 +288,13 @@ L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 Node\(45\) Node\(90\)
 
 {% hint style="info" %}
+
 ```python
 Simple Singly Linked List Node Class
 value -> int
 next -> LinkedListNode
 ```
+
 {% endhint %}
 
 ```python
@@ -380,6 +368,7 @@ print_ll(L1)
 Result:
 
 {% hint style="info" %}
+
 ```python
 34
 45
@@ -431,9 +420,11 @@ Result:
 102
 999
 ```
+
 {% endhint %}
 
 {% hint style="info" %}
+
 ```python
     Simple Doubly Linked List Node Class
     value -> int
@@ -441,9 +432,11 @@ Result:
 
     prev -> LinkedListNode
 ```
+
 {% endhint %}
 
 {% hint style="info" %}
+
 ```python
 Given a reference to the head node of a singly-linked list, write a function
 that reverses the linked list in place. The function should return the new head
@@ -455,7 +448,7 @@ once.
 *Note: If you get stuck, try drawing a picture of a small linked list and
 running your function by hand. Does it actually work? Also, don't forget to
 consider edge cases (like a list with only 1 or 0 elements).*
-          cn         p                
+          cn         p
         None        [1] -> [2] ->[3] -> None
 
 - setup a current variable pointing to the head of the list
@@ -470,6 +463,7 @@ consider edge cases (like a list with only 1 or 0 elements).*
 
 - return prev
 ```
+
 {% endhint %}
 
 ```python
@@ -609,4 +603,3 @@ class HashTable:
         """
         # Your code here
 ```
-
