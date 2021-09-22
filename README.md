@@ -4,6 +4,10 @@
 
 ### This Website:
 
+{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" %}
+
+
+
 ​
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
