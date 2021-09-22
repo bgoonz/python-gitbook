@@ -200,8 +200,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Insert</span>
-===============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Insert</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -209,7 +208,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="198478987a674571a8efab39a3828484"><span data-offset-key="198478987a674571a8efab39a3828484:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-    class Node:    def __init__(self, val):        self.l_child = None        self.r_child = None        self.data = val​def binary_insert(root, node):    if root is None:        root = node    else:        if root.data > node.data:            if root.l_child is None:                root.l_child = node            else:                binary_insert(root.l_child, node)        else:            if root.r_child is None:                root.r_child = node            else:                binary_insert(root.r_child, node)​def in_order_print(root):    if not root:        return    in_order_print(root.l_child)    print root.data    in_order_print(root.r_child)​def pre_order_print(root):    if not root:        return            print root.data    pre_order_print(root.l_child)    pre_order_print(root.r_child)    
+    class Node:    def __init__(self, val):        self.l_child = None        self.r_child = None        self.data = val​def binary_insert(root, node):    if root is None:        root = node    else:        if root.data > node.data:            if root.l_child is None:                root.l_child = node            else:                binary_insert(root.l_child, node)        else:            if root.r_child is None:                root.r_child = node            else:                binary_insert(root.r_child, node)​def in_order_print(root):    if not root:        return    in_order_print(root.l_child)    print root.data    in_order_print(root.r_child)​def pre_order_print(root):    if not root:        return            print root.data    pre_order_print(root.l_child)    pre_order_print(root.r_child)
 
     r = Node(3)binary_insert(r, Node(7))binary_insert(r, Node(1))binary_insert(r, Node(5))
 
