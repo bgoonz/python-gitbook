@@ -57,7 +57,7 @@ strings.append("School")
 
 Now, let's make sure we can access items from a specific index in a list. Let's access the 3rd item from numbers and the 2nd item from strings and print them out \(don't forget that lists are zero-indexed\).
 
-```python
+```text
 print(numbers[2], strings[1])
 ```
 
@@ -830,7 +830,7 @@ print(phonebook.pop("Bill"))
 
 
 
-##
+## 
 
 #### Identity <a id="identity"></a>
 
@@ -931,7 +931,7 @@ In the first line, we create a set object with three elements and assign it to t
 
 **Dicts**
 
-```python
+```text
 >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}
 >>> type(my_dict)
 <class 'dict'>
@@ -1089,7 +1089,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
-...
+... 
 >>> append_num_to_list(my_list, 4)
 >>> my_list
 [1, 2, 3, 4]
@@ -1108,7 +1108,7 @@ Next, let's see how Python behaves when we pass an immutable object as an argume
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
-...
+... 
 >>> concatenate_string_to_string(my_string, " I hope!")
 'I am an immutable object. I hope!'
 >>> my_string
@@ -1161,7 +1161,7 @@ Additionally, all objects in Python have three things:
 2. Type
 3. Value
 
-```python
+```text
 >>> a = 1
 >>> # Identity
 ... id(a)
@@ -1183,7 +1183,7 @@ An object's **identity** can never change once it has been created. You can thin
 
 Python has an `is` operator that allows you to compare two object's identities.
 
-```python
+```text
 >>> a = 1
 >>> b = 2
 >>> a is b
@@ -1196,7 +1196,7 @@ True
 
 In the code above, we first assign `1` to the variable `a`. Then, we assign `2` to the variable `b`. These are two different objects in memory and thus have different identities. We verify that they are different by using the `is` operator, which returns `False`. The line `b = a` assigns the variable `b` the object that the variable `a` is pointed to. Now, both `a` and `b` are referencing the same object in memory. We can use the `id()` function to verify that this is the case as well:
 
-```python
+```text
 >>> id(a)
 4483164816
 >>> id(b)
@@ -1360,7 +1360,7 @@ Then, we assign `2` to `my_int`which creates a whole new object and assigns it t
 
 Let's look at how string concatenation works in Python. Remember that str objects are immutable.
 
-```python
+```text
 >>> my_str = 'a'
 >>> type(my_str)
 <class 'str'>
@@ -1388,7 +1388,7 @@ This behavior in Python is vital to be aware of when working with string concate
 
 Tuples are an immutable container of names, where each name has an unchangeable \(immutable\) binding to an object in memory. You cannot change the bindings of the names to the objects.
 
-```python
+```text
 >>> my_tuple = ('love', [1,2,3], True)
 >>> my_tuple[0]
 'love'
@@ -1434,7 +1434,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
-...
+... 
 >>> append_num_to_list(my_list, 4)
 >>> my_list
 [1, 2, 3, 4]
@@ -1453,7 +1453,7 @@ Next, let's see how Python behaves when we pass an immutable object as an argume
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
-...
+... 
 >>> concatenate_string_to_string(my_string, " I hope!")
 'I am an immutable object. I hope!'
 >>> my_string
@@ -1477,7 +1477,7 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 ## Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
 
@@ -1648,7 +1648,7 @@ def foo(n):
 
 First, let's think about what the above function is doing. It's printing `i`…but `i` is not being incremented by 1, as we usually see. It's _doubled_ every time we run the loop. So, for example, if `n = 100`, then the final result would be…
 
-```python
+```text
 1
 2
 4
@@ -1660,7 +1660,7 @@ First, let's think about what the above function is doing. It's printing `i`…b
 
 Or if `n = 10`, then we would print…
 
-```python
+```text
 1
 2
 4
@@ -1681,7 +1681,7 @@ The only two options left at this point are logarithmic and linear. Since the tw
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 
 

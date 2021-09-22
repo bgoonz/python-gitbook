@@ -1,5 +1,9 @@
 # Industry Standard Algorithms
 
+{% embed url="https://replit.com/@bgoonz/pure-ds" %}
+
+
+
 {% embed url="https://replit.com/@bgoonz/Data-Structures-6\#main.py" %}
 
 

@@ -6,7 +6,7 @@
 
 {% embed url="https://gist.github.com/bgoonz/4dc35438f8c293cf68e81c0d73ddfe1a" caption="" %}
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%283%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%289%29.png)
 
 ## Objective 01 - Describe what a graph is, explain its components, provide examples of its useful applications, and draw each of the different graph types
 
@@ -147,7 +147,7 @@ Draw one graph for each of the descriptions below:
 
 * [https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 \(Links to an external site.\)](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%284%29.png)
 
 ## Objective 02 - Represent a graph as an adjacency list and an adjacency matrix and compare and contrast the respective representations
 
@@ -454,7 +454,7 @@ class Graph:
 
 * [https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%284%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2811%29.png)
 
 ## Objective 03 - Implement user-defined Vertex and Graph classes that allow basic operations
 
@@ -677,7 +677,7 @@ Load the `Vertex` class and `Graph` class into an interactive Python environment
 
 * [https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/](https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%282%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%283%29.png)
 
