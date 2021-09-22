@@ -12,7 +12,7 @@ class Node:
         self.value = value
         # ref to the next node in the chain
         self.next_node = next_node
-    
+
 
     def get_value(self):
         """
@@ -32,13 +32,13 @@ class Node:
         """
         self.next_node = new_next
 
-    
+
 
 
 # now lets think of how we can make nodes interact in a way that consolidates their pieces together
 
 # lets make a LinkedList class
-# think of the idea of having a head and a tail like a snake 
+# think of the idea of having a head and a tail like a snake
 # where the snake can grow based upon having more links in it
 
 class LinkedList:
@@ -100,7 +100,7 @@ class LinkedList:
             self.tail.set_next(None)
             # return Value
             return value
-            
+
     def add_to_head(self, value):
             # wrap the input value in a node
             new_node = Node(value)
@@ -109,11 +109,11 @@ class LinkedList:
                 # if the list is initially empty, set both head and tail to the new node
                 self.head = new_node
                 self.tail = new_node
-            # we have a non-empty list, add the new node to the head 
+            # we have a non-empty list, add the new node to the head
             else:
                 # set the new node's `next` to refer to the current head
                 new_node.set_next(self.head)
-                # set the list's head reference to the new node 
+                # set the list's head reference to the new node
                 self.head = new_node
 
     def remove_head(self):
@@ -136,7 +136,7 @@ class LinkedList:
             # set self.head to old head's next
             self.head = self.head.get_next()
             # return the value
-            return value 
+            return value
 
 
 
@@ -174,9 +174,9 @@ class ListNode:
         self.prev = prev
         self.value = value
         self.next = next
-            
+
 """
-Our doubly-linked list class. It holds references to 
+Our doubly-linked list class. It holds references to
 the list's head and tail nodes.
 """
 class DoublyLinkedList:
@@ -187,10 +187,10 @@ class DoublyLinkedList:
 
     def __len__(self):
         return self.length
-    
+
     """
-    Wraps the given value in a ListNode and inserts it 
-    as the new head of the list. Don't forget to handle 
+    Wraps the given value in a ListNode and inserts it
+    as the new head of the list. Don't forget to handle
     the old head node's previous pointer accordingly.
     """
     def add_to_head(self, value):
@@ -203,15 +203,15 @@ class DoublyLinkedList:
             # if the list is initially empty, set both head and tail to the new node
             self.head = new_node
             self.tail = new_node
-        # we have a non-empty list, add the new node to the head 
+        # we have a non-empty list, add the new node to the head
         else:
             # set the new node's `next` to refer to the current head
             new_node.next = self.head
             # set the current head's 'prev' to refer to the new_node (added to make it work with DLL)
             self.head.prev = new_node
-            # set the list's head reference to the new node 
+            # set the list's head reference to the new node
             self.head = new_node
-        
+
     """
     Removes the List's current head node, making the
     current head's next node the new head of the List.
@@ -221,10 +221,10 @@ class DoublyLinkedList:
         value = self.head.value
         self.delete(self.head)
         return value
-            
+
     """
-    Wraps the given value in a ListNode and inserts it 
-    as the new tail of the list. Don't forget to handle 
+    Wraps the given value in a ListNode and inserts it
+    as the new tail of the list. Don't forget to handle
     the old tail node's next pointer accordingly.
     """
     def add_to_tail(self, value):
@@ -237,9 +237,9 @@ class DoublyLinkedList:
             new_node.prev = self.tail
             self.tail.next = new_node
             self.tail = new_node
-            
+
     """
-    Removes the List's current tail node, making the 
+    Removes the List's current tail node, making the
     current tail's previous node the new tail of the List.
     Returns the value of the removed Node.
     """
@@ -247,9 +247,9 @@ class DoublyLinkedList:
         value = self.tail.value
         self.delete(self.tail)
         return value
-            
+
     """
-    Removes the input node from its current spot in the 
+    Removes the input node from its current spot in the
     List and inserts it as the new head node of the List.
     """
     def move_to_front(self, node):
@@ -266,9 +266,9 @@ class DoublyLinkedList:
 
             self.length -= 1
         self.add_to_head(value)
-        
+
     """
-    Removes the input node from its current spot in the 
+    Removes the input node from its current spot in the
     List and inserts it as the new tail node of the List.
     """
     def move_to_end(self, node):
@@ -287,7 +287,7 @@ class DoublyLinkedList:
         self.add_to_tail(value)
 
     """
-    Deletes the input node from the List, preserving the 
+    Deletes the input node from the List, preserving the
     order of the other elements of the List.
     """
     def delete(self, node):
@@ -316,7 +316,7 @@ class DoublyLinkedList:
         self.length -= 1
 
     """
-    Finds and returns the maximum value of all the nodes 
+    Finds and returns the maximum value of all the nodes
     in the List.
     """
     def get_max(self):
@@ -373,7 +373,7 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.assertEqual(len(self.dll), 1)
         self.assertEqual(self.dll.remove_from_head(), 2)
         self.assertEqual(len(self.dll), 0)
-        
+
         self.dll.add_to_head(55)
         self.assertEqual(len(self.dll), 1)
         self.assertEqual(self.dll.remove_from_head(), 55)
@@ -442,7 +442,7 @@ class DoublyLinkedListTests(unittest.TestCase):
         self.dll.add_to_tail(1)
         self.dll.add_to_head(9)
         self.dll.add_to_tail(6)
-        
+
         self.dll.delete(self.dll.head.next)
         self.assertEqual(self.dll.head.value, 9)
         self.assertEqual(self.dll.head.next, self.dll.tail)
@@ -479,7 +479,7 @@ Each element of a **doubly linked list** is an object with an attribute _key_ an
 
 A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.
 
-### 
+###
 
 ```python
 """
@@ -496,7 +496,7 @@ class Node:
 
 
 """
-Next the linked list can be created and initialized with the head as none 
+Next the linked list can be created and initialized with the head as none
 because it doesn't exist yet and the number of nodes to 0 because its empty
 """
 
@@ -645,7 +645,7 @@ print(f'size: {linked_list.size_of_list()}')
 * Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
 * How can you tell if a Linked List is a Palindrome?
 
-### 
+###
 
 ### Linked lists in Python
 
@@ -677,7 +677,7 @@ def linked_list_insert_index(linked_list, value, index):
     '''Inserts a value at a particular index'''
     node = linked_list
     insert_node = LinkedListNode(value)
-    
+
     # Check if inserting at head
     if index == 0:
         insert_node.next = node
@@ -695,7 +695,7 @@ def linked_list_insert_index(linked_list, value, index):
 def linked_list_delete(linked_list, value):
     '''Deletes the first occurrence of a value in the linked list'''
     node = linked_list
-    
+
     # Check if deleting at head
     if node.value == value:
         return node.next
@@ -711,7 +711,7 @@ def linked_list_delete(linked_list, value):
 def linked_list_delete_index(linked_list, index):
     '''Deletes the element at a particular index in the linked list'''
     node = linked_list
-    
+
     # Check if deleting at head
     if index == 0:
         return node.next
@@ -943,18 +943,18 @@ class Node:
     def __init__(self, dataval=None):
         self.dataval = dataval
         self.nextval = None
- 
+
 class SLinkedList:
     def __init__(self):
         self.headval = None
- 
+
 list1 = SLinkedList()
 list1.headval = Node("Mon")
 e2 = Node("Tue")
 e3 = Node("Wed")
 # Link first Node to second node
 list1.headval.nextval = e2
- 
+
 # Link second Node to third node
 e2.nextval = e3
 
@@ -1265,7 +1265,7 @@ class DoublyLinkedList:
 
   def delete(self, node):
     pass
-    
+
   def get_max(self):
     pass
 
@@ -1317,7 +1317,7 @@ class DoublyLinkedListTests(unittest.TestCase):
     self.assertEqual(len(self.dll), 1)
     self.assertEqual(self.dll.remove_from_head(), 2)
     self.assertEqual(len(self.dll), 0)
-    
+
     self.dll.add_to_head(55)
     self.assertEqual(len(self.dll), 1)
     self.assertEqual(self.dll.remove_from_head(), 55)

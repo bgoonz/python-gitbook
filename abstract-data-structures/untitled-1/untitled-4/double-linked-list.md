@@ -216,7 +216,7 @@ The easiest way to delete an element from a doubly linked list is from the start
    def delete_at_start(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             self.start_node = None
             return
@@ -234,7 +234,7 @@ To delete the element from the end, we again check if the list is empty or if th
     def delete_at_end(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             self.start_node = None
             return
@@ -254,13 +254,13 @@ Deleting an element by value is the trickiest of all the deletion functions in d
     def delete_element_by_value(self, x):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             if self.start_node.item == x:
                 self.start_node = None
             else:
                 print("Item not found")
-            return 
+            return
 
         if self.start_node.item == x:
             self.start_node = self.start_node.nref
@@ -289,7 +289,7 @@ This logic is implemented in the following piece of code:
 ```python
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
 ```
 
 Next, we check if the list has a single element and that element is actually the element we want to delete. If the only element is the one that we want to delete, we simply set the `self.start_node` to `None` which means that the list will now have no item. If there is only one item and that is not the item that we want to delete, we will simply display the message that item to be deleted is not found.
@@ -302,7 +302,7 @@ The following piece of code implements this logic:
                 self.start_node = None
             else:
                 print("Item not found")
-            return 
+            return
 ```
 
 Next, we handle the case where the list has more than one items but the item to be deleted is the first item. In that case we simply execute the logic that we wrote for the method `delete_at_start()`. The following piece of code deletes an element from the start in case of multiple items:
@@ -353,7 +353,7 @@ The script for reversing a doubly linked list is as follows:
     def reverse_linked_list(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         p = self.start_node
         q = p.nref
         p.nref = None
@@ -432,7 +432,7 @@ Now if you traverse the doubly linked list, you should see the following element
 50
 29
 39
-49 
+49
 ```
 
 Let's insert an element after 50.
@@ -451,7 +451,7 @@ Now the list should look like this:
 65
 29
 39
-49 
+49
 ```
 
 Finally, let's add an element before item 29.
@@ -471,7 +471,7 @@ The list at this point of time, should contain the following elements:
 100
 29
 39
-49 
+49
 ```
 
 **Testing Deletion Functions**
@@ -492,7 +492,7 @@ Item 18 will be removed and the list will now look like this:
 100
 29
 39
-49 
+49
 ```
 
 Similarly, the following script deletes the element from the end of the doubly linked list:
@@ -507,8 +507,8 @@ Traversing the list now will return the following items:
 5
 10
 50
-65 
-100 
+65
+100
 29
 39
 ```
@@ -537,7 +537,7 @@ Now if you traverse the list, you will see the reversed linked list:
 100
 50
 10
-5 
+5
 ```
 
 #### Conclusion <a id="conclusion"></a>

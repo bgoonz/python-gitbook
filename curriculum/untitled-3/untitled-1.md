@@ -830,7 +830,7 @@ print(phonebook.pop("Bill"))
 
 
 
-## 
+##
 
 #### Identity <a id="identity"></a>
 
@@ -1089,7 +1089,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
-... 
+...
 >>> append_num_to_list(my_list, 4)
 >>> my_list
 [1, 2, 3, 4]
@@ -1108,7 +1108,7 @@ Next, let's see how Python behaves when we pass an immutable object as an argume
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
-... 
+...
 >>> concatenate_string_to_string(my_string, " I hope!")
 'I am an immutable object. I hope!'
 >>> my_string
@@ -1434,7 +1434,7 @@ Mutable and immutable objects are not treated the same when they are passed as a
 >>> my_list = [1,2,3]
 >>> def append_num_to_list(lst, num):
 ... lst.append(num)
-... 
+...
 >>> append_num_to_list(my_list, 4)
 >>> my_list
 [1, 2, 3, 4]
@@ -1453,7 +1453,7 @@ Next, let's see how Python behaves when we pass an immutable object as an argume
 >>> my_string = "I am an immutable object."
 >>> def concatenate_string_to_string(orig_string, string_to_add):
 ... return orig_string + string_to_add
-... 
+...
 >>> concatenate_string_to_string(my_string, " I hope!")
 'I am an immutable object. I hope!'
 >>> my_string

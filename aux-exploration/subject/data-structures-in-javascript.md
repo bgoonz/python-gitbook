@@ -43,7 +43,7 @@ let addTwoNumbers = function(l1, l2) {
   const prehead = new ListNode()
   let p = prehead
   let carry = 0
-  
+
   for (let p1 = l1, p2 = l2: p1 || p2 || carry > 0; p = p.next) {
     let sum = carry
     if (p1) {
@@ -57,7 +57,7 @@ let addTwoNumbers = function(l1, l2) {
     carry = sum / 10 | 0
     p.next = new ListNode(sum % 10)
   }
-  
+
   return prehead.next
 };
 ```
@@ -321,7 +321,7 @@ Input: 120
 Output: 21
 ```
 
-**Note:**  
+**Note:**
 Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231,  231 − 1\]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
 #### Solution: <a id="solution-3"></a>
@@ -381,7 +381,7 @@ If no valid conversion could be performed, a zero value is returned.
 
 **Note:**
 
-Only the space character `' '` is considered as whitespace character.  
+Only the space character `' '` is considered as whitespace character.
 Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231,  231 − 1\]. If the numerical value is out of the range of representable values, INT\_MAX \(231 − 1\) or INT\_MIN \(−231\) is returned.
 
 **Example 1:**
@@ -413,7 +413,7 @@ Explanation: Conversion stops at digit '3' as the next character is not a numeri
 ```python
 Input: "words and 987"
 Output: 0
-Explanation: The first non-whitespace character is 'w', which is not a numerical 
+Explanation: The first non-whitespace character is 'w', which is not a numerical
              digit or a +/- sign. Therefore no valid conversion could be performed.
 ```
 
@@ -615,7 +615,7 @@ The matching should cover the **entire** input string \(not partial\).
 
 **Note:**
 
-`s` could be empty and contains only lowercase letters `a-z`.  
+`s` could be empty and contains only lowercase letters `a-z`.
 `p` could be empty and contains only lowercase letters `a-z`, and characters like `.` or `*`.
 
 **Example 1:**
@@ -693,10 +693,10 @@ Let f\(i, j\) be the matching result of s\[0...i\) and p\[0...j\).
 f(0, j) =
     j == 0 || // empty
     p[j-1] == '*' && f(i, j-2) // matches 0 time, which matches empty string
-    
+
 f(i, 0) = false // pattern must cover the entire input string
 
-f(i, j) = 
+f(i, j) =
     if p[j-1] == '.'
         f(i-1, j-1)
     else if p[j-1] == '*'
@@ -722,7 +722,7 @@ let isMatch = function(s, p) {
   for (let j = 2; j <= p.length; j++) {
     dp[0][j] = p[j-1] === '*' && dp[0][j-2]
   }
-    
+
   for (let i = 1; i <= s.length; i++) {
     dp[i] = []
     for (let j = 1; j <= p.length; j++) {
@@ -1049,7 +1049,7 @@ let longestCommonPrefix = function (strs) {
  */
 let longestCommonPrefix = function(strs) {
   if (strs.length <= 0) { return '' }
-  
+
   let i = 0
   while (strs.every(s => s[i] && s[i] === strs[0][i])) {
     i++
@@ -2197,8 +2197,8 @@ The replacement must be **in-place** and use only constant extra memory.
 
 Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
 
-`1,2,3` → `1,3,2`  
-`3,2,1` → `1,2,3`  
+`1,2,3` → `1,3,2`
+`3,2,1` → `1,2,3`
 `1,1,5` → `1,5,1`
 
 #### Solution: <a id="solution-25"></a>
@@ -2237,7 +2237,7 @@ let nextPermutation = function(nums) {
       t = nums[j]
       nums[j] = nums[i-1]
       nums[i-1] = t
-      
+
       break
     }
   }
@@ -2554,7 +2554,7 @@ Input:
   [".",".",".",".","8",".",".","7","9"]
 ]
 Output: false
-Explanation: Same as Example 1, except with the 5 in the top left corner being 
+Explanation: Same as Example 1, except with the 5 in the top left corner being
     modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
 ```
 
@@ -2625,10 +2625,10 @@ A sudoku solution must satisfy **all of the following rules**:
 
 Empty cells are indicated by the character `'.'`.
 
-![250px-Sudoku-by-L2G-20050714.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714.svg.png)  
+![250px-Sudoku-by-L2G-20050714.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714.svg.png)
 A sudoku puzzle...
 
-![250px-Sudoku-by-L2G-20050714\_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png)  
+![250px-Sudoku-by-L2G-20050714\_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png)
 ...and its solution numbers marked in red.
 
 **Note:**
@@ -2726,8 +2726,8 @@ The count-and-say sequence is the sequence of integers with the first five terms
 5.     111221
 ```
 
-`1` is read off as `"one 1"` or `11`.  
-`11` is read off as `"two 1s"` or `21`.  
+`1` is read off as `"one 1"` or `11`.
+`11` is read off as `"two 1s"` or `21`.
 `21` is read off as `"one 2`, then `one 1"` or `1211`.
 
 Given an integer n, generate the nth term of the count-and-say sequence.
@@ -3051,7 +3051,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given _n_ non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-![rainwatertrap.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/rainwatertrap.png)  
+![rainwatertrap.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/rainwatertrap.png)
 The above elevation map is represented by array \[0,1,0,2,1,0,1,3,2,1,2,1\]. In this case, 6 units of rain water \(blue section\) are being trapped. **Thanks Marcos** for contributing this image!
 
 **Example:**
@@ -3354,7 +3354,7 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 **Example 1:**
 
 ```python
-Given input matrix = 
+Given input matrix =
 [
   [1,2,3],
   [4,5,6],
@@ -3378,7 +3378,7 @@ Given input matrix =
   [ 2, 4, 8,10],
   [13, 3, 6, 7],
   [15,14,12,16]
-], 
+],
 
 rotate the input matrix in-place such that it becomes:
 [
@@ -4355,7 +4355,7 @@ let getPermutation = function(n, k) {
     k %= factorial
     n--
   }
-  
+
   return result
 };
 ```
@@ -4592,16 +4592,16 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Validate if a given string is numeric.
 
-Some examples:  
-`"0"` =&gt; `true`  
-`" 0.1 "` =&gt; `true`  
-`"abc"` =&gt; `false`  
-`"1 a"` =&gt; `false`  
+Some examples:
+`"0"` =&gt; `true`
+`" 0.1 "` =&gt; `true`
+`"abc"` =&gt; `false`
+`"1 a"` =&gt; `false`
 `"2e10"` =&gt; `true`
 
 **Note:** It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
-**Update \(2015-02-10\):**  
+**Update \(2015-02-10\):**
 The signature of the `C++` function had been updated. If you still see your function signature accepts a `const char *` argument, please click the reload button to reset your code definition.
 
 #### Solution: <a id="solution-56"></a>
@@ -4856,7 +4856,7 @@ let plusOne = function(digits) {
     digits[i] = digits[i-1]
   }
   digits[0] = 1
-  
+
   return digits
 };
 ```
@@ -5012,7 +5012,7 @@ Output: 2
 ```python
 Input: 8
 Output: 2
-Explanation: The square root of 8 is 2.82842..., and since 
+Explanation: The square root of 8 is 2.82842..., and since
              the decimal part is truncated, 2 is returned.
 ```
 
@@ -5053,8 +5053,8 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given an absolute path for a file \(Unix-style\), simplify it.
 
-For example,  
-**path** = `"/home/"`, =&gt; `"/home"`  
+For example,
+**path** = `"/home/"`, =&gt; `"/home"`
 **path** = `"/a/./b/../../c/"`, =&gt; `"/c"`
 
 **Corner Cases:**
@@ -5144,7 +5144,7 @@ You have the following 3 operations permitted on a word:
 ```python
 Input: word1 = "horse", word2 = "ros"
 Output: 3
-Explanation: 
+Explanation:
 horse -> rorse (replace 'h' with 'r')
 rorse -> rose (remove 'r')
 rose -> ros (remove 'e')
@@ -5155,7 +5155,7 @@ rose -> ros (remove 'e')
 ```python
 Input: word1 = "intention", word2 = "execution"
 Output: 5
-Explanation: 
+Explanation:
 intention -> inention (remove 't')
 inention -> enention (replace 'i' with 'e')
 enention -> exention (replace 'n' with 'x')
@@ -5231,13 +5231,13 @@ Given a _m_ x _n_ matrix, if an element is 0, set its entire row and column to 0
 **Example 1:**
 
 ```python
-Input: 
+Input:
 [
   [1,1,1],
   [1,0,1],
   [1,1,1]
 ]
-Output: 
+Output:
 [
   [1,0,1],
   [0,0,0],
@@ -5248,13 +5248,13 @@ Output:
 **Example 2:**
 
 ```python
-Input: 
+Input:
 [
   [0,1,2,0],
   [3,4,5,2],
   [1,3,1,5]
 ]
-Output: 
+Output:
 [
   [0,0,0,0],
   [0,4,5,0],
@@ -6245,11 +6245,11 @@ With `conLeft` and `conRight` we can know if the rectangle on `(row, col)` shrin
 ```python
 if matrix[row][col] == 1
   height(row, col) = height(row-1, col) + 1
-  
+
   // see how long this horizontal line can get
   conLeft(row, col) = conLeft(row, col-1)
   conRight(row, col) = conRight(row, col+1)
-  
+
   // width can only be shorter
   left(row, col) = max( left(row-1, col), conLeft(row, col) )
   right(row, col) = min( right(row-1, col), conRight(row, col) )
@@ -6613,7 +6613,7 @@ let numDecodings = function(s) {
   let dp = s[0] > 0 ? 1 : 0
   let dp_1 = dp
   let dp_2 = 1
-  
+
   for (let i = 1; i < s.length; i++) {
     dp = 0
     if (s[i] !== '0') {
@@ -6625,7 +6625,7 @@ let numDecodings = function(s) {
     dp_2 = dp_1
     dp_1 = dp
   }
-  
+
   return dp
 };
 ```
@@ -6919,7 +6919,7 @@ But the following `[1,2,2,null,3,null,3]` is not:
    3    3
 ```
 
-Note:  
+Note:
 Bonus points if you could solve it both recursively and iteratively.
 
 #### Solution: <a id="solution-83"></a>
@@ -7012,7 +7012,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the level order traversal of its nodes' values. \(ie, from left to right, level by level\).
 
-For example:  
+For example:
 Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
@@ -7079,7 +7079,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the zigzag level order traversal of its nodes' values. \(ie, from left to right, then right to left for the next level and alternate between\).
 
-For example:  
+For example:
 Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
@@ -7202,7 +7202,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given preorder and inorder traversal of a tree, construct the binary tree.
 
-**Note:**  
+**Note:**
 You may assume that duplicates do not exist in the tree.
 
 For example, given
@@ -7276,7 +7276,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given inorder and postorder traversal of a tree, construct the binary tree.
 
-**Note:**  
+**Note:**
 You may assume that duplicates do not exist in the tree.
 
 For example, given
@@ -7350,7 +7350,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. \(ie, from left to right, level by level from leaf to root\).
 
-For example:  
+For example:
 Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
@@ -7730,7 +7730,7 @@ function _flatten (root) {
   } else if (rightLeaf === null) {
     return root
   }
-  
+
   root.left = null
   return rightLeaf || leftLeaf
 }
@@ -8139,7 +8139,7 @@ let generate = function(numRows) {
     row.push(1)
     result.push(row)
   }
-  
+
   return result
 };
 ```
@@ -8193,7 +8193,7 @@ let getRow = function(rowIndex) {
     }
     row.push(1)
   }
-  
+
   return row
 };
 ```
@@ -8552,7 +8552,7 @@ let maxPathSum = function(root) {
  */
 function _maxPathSum (root) {
   if (!root) { return [-Infinity, -Infinity] }
-  
+
   const left = _maxPathSum(root.left)
   const right = _maxPathSum(root.right)
   return [
@@ -8588,12 +8588,12 @@ let maxPathSum = function(root) {
 /**
  * @param {TreeNode} root
  * @param {object} global
- * @param {number} global.max 
+ * @param {number} global.max
  * @return {number[]}
  */
 function _maxPathSum (root, global) {
   if (!root) { return -Infinity }
-  
+
   const left = _maxPathSum(root.left, global)
   const right = _maxPathSum(root.right, global)
   const localMax = Math.max(left, right, 0) + root.val
@@ -8682,7 +8682,7 @@ let isPalindrome = function(s) {
     if (left >= 65 && left <= 90) {
       left += 32
     }
-    
+
     let right = s.charCodeAt(j)
     while (i < j && (right < 48 || right > 57 && right < 65 || right > 90 && right < 97 || right > 122)) {
       right = s.charCodeAt(--j)
@@ -8691,10 +8691,10 @@ let isPalindrome = function(s) {
     if (right >= 65 && right <= 90) {
       right += 32
     }
-    
+
     if (left !== right) { return false }
   }
-  
+
   return true
 };
 ```
@@ -9312,19 +9312,19 @@ For this problem, a height-balanced binary tree is defined as:
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/balance_1.jpg)
 
-**Input:** root =3,9,20,null,null,15,73,9,20,null,null,15,7  
+**Input:** root =3,9,20,null,null,15,73,9,20,null,null,15,7
 **Output:** true
 
 **Example 2:**
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/balance_2.jpg)
 
-**Input:** root =1,2,2,3,3,null,null,4,41,2,2,3,3,null,null,4,4  
+**Input:** root =1,2,2,3,3,null,null,4,41,2,2,3,3,null,null,4,4
 **Output:** false
 
 **Example 3:**
 
-**Input:** root = \[\]  
+**Input:** root = \[\]
 **Output:** true
 
 **Constraints:**
@@ -9351,8 +9351,8 @@ One possible answer is:0,-3,9,-10,null,50,−3,9,−10,null,5, which represents 
  / \\
 ```
 
--3 9  
-/ /  
+-3 9
+/ /
 -10 5
 
 [Source](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)\# Delete Node in a BST
@@ -9372,22 +9372,22 @@ Basically, the deletion can be divided into two stages:
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/del_node_1.jpg)
 
-**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 3  
-**Output:**5,4,6,2,null,null,75,4,6,2,null,null,7  
-**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.  
-One valid answer is5,4,6,2,null,null,75,4,6,2,null,null,7, shown in the above BST.  
-Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7and it's also accepted.  
+**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 3
+**Output:**5,4,6,2,null,null,75,4,6,2,null,null,7
+**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
+One valid answer is5,4,6,2,null,null,75,4,6,2,null,null,7, shown in the above BST.
+Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7and it's also accepted.
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/del_node_supp.jpg)
 
 **Example 2:**
 
-**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 0  
-**Output:**5,3,6,2,4,null,75,3,6,2,4,null,7  
+**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 0
+**Output:**5,3,6,2,4,null,75,3,6,2,4,null,7
 **Explanation:** The tree does not contain a node with value = 0.
 
 **Example 3:**
 
-**Input:** root = \[\], key = 0  
+**Input:** root = \[\], key = 0
 **Output:** \[\]
 
 **Constraints:**
@@ -9398,7 +9398,7 @@ Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7
 * `root` is a valid binary search tree.
 * `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg)  
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg)
 ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-1.jpg)
 
 ```python

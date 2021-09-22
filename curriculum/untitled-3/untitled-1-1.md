@@ -434,7 +434,7 @@ once.
 *Note: If you get stuck, try drawing a picture of a small linked list and
 running your function by hand. Does it actually work? Also, don't forget to
 consider edge cases (like a list with only 1 or 0 elements).*
-          cn         p                
+          cn         p
         None        [1] -> [2] ->[3] -> None
 
 - setup a current variable pointing to the head of the list

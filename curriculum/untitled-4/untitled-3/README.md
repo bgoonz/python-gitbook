@@ -117,7 +117,7 @@ Now, we need to build out the class for the `LinkedList` itself:
 
 ```python
 class LinkedList:
-    def __init__(self, head=None):  
+    def __init__(self, head=None):
         self.head = head
 ```
 
@@ -125,7 +125,7 @@ Our class is super simple so far and only includes an initialization method. Let
 
 ```python
 class LinkedList:
-    def __init__(self, head=None):  
+    def __init__(self, head=None):
         self.head = head
 
     def append(self, data):

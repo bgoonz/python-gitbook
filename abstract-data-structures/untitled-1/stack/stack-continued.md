@@ -4,7 +4,7 @@
 
 Unlike an array structure, which allows random access at all the positions, a stack limits the inserting and removing operation to only one side of the data sequence. A stack follows the last in, first out \(LIFO\) principle.
 
-In Python, stack can be implemented using a list. To follow the LIFO principle, inserting and removing operations both occur at the tail of the list.Python implementation of a stack  
+In Python, stack can be implemented using a list. To follow the LIFO principle, inserting and removing operations both occur at the tail of the list.Python implementation of a stack
 
 
 
@@ -89,11 +89,11 @@ class Stack:
         return len(self.stack)
 
     def top(self) -> int:
-        return self.stack[-1]  
+        return self.stack[-1]
 
     def push(self, x: int) -> None:
         self.x = x
-        self.stack.append(x)       
+        self.stack.append(x)
 
     def pop(self) -> None:
         self.stack.pop()
@@ -122,11 +122,11 @@ class Stack:
         return len(self.stack)
 
     def top(self) -> int:
-        return self.stack[-1]  
+        return self.stack[-1]
 
     def push(self, x: int) -> None:
         self.x = x
-        self.stack.append(x)   
+        self.stack.append(x)
 
     def pop(self) -> None:
         self.stack.pop()

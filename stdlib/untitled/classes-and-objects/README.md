@@ -1,6 +1,6 @@
 # Classes and objects
 
-## 
+##
 
 ### Classes and Objects
 
@@ -243,7 +243,7 @@ Lidiya Teklemariam is 28 years old. He lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We did not call the **init**\(\) constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.  
+We did not call the **init**\(\) constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.
 We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**\(\) function, the child class will no longer inherit the parent's **init**\(\) function.
 
 #### Overriding parent method

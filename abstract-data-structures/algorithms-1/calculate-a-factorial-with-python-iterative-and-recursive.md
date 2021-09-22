@@ -103,7 +103,7 @@ Enter a number: 4
 The result is: 24
 ```
 
-### 
+###
 
 Although the calculation was `4 * 3 * 2 * 1` the final result is the same as before.
 

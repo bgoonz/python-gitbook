@@ -43,10 +43,10 @@ output:
 
 def get_factors(n):
     """[summary]
-    
+
     Arguments:
         n {[int]} -- [to analysed number]
-    
+
     Returns:
         [list of lists] -- [all factors of the number n]
     """
@@ -60,7 +60,7 @@ def get_factors(n):
             i {[int]} -- [to tested divisor]
             combi {[list]} -- [catch divisors]
             res {[list]} -- [all factors of the number n]
-        
+
         Returns:
             [list] -- [res]
         """
@@ -83,7 +83,7 @@ def get_factors_iterative1(n):
 
     Arguments:
         n {[int]} -- [to analysed number]
-    
+
     Returns:
         [list of lists] -- [all factors]
     """
@@ -105,7 +105,7 @@ def get_factors_iterative2(n):
 
     Arguments:
         n {[int]} -- [description]
-    
+
     Returns:
         [list of lists] -- [all factors of n]
     """
@@ -405,7 +405,7 @@ class Sudoku:
 You are given a m x n 2D grid initialized with these three possible values:
     -1: A wall or an obstacle.
     0: A gate.
-    INF: Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 to represent INF 
+    INF: Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 to represent INF
          as you may assume that the distance to a gate is less than 2147483647.
 Fill the empty room with distance to its nearest gate.
 If it is impossible to reach a gate, it should be filled with INF.

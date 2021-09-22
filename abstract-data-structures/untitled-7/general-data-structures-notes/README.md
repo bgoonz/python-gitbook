@@ -2,7 +2,7 @@
 
 
 
-[  
+[
 Data Types](https://www.integralist.co.uk/posts/data-types-and-data-structures/#data-types)
 
 * [Data Structures](https://www.integralist.co.uk/posts/data-types-and-data-structures/#data-structures)
@@ -23,7 +23,7 @@ In this post we will be looking briefly at, and at a high-level, the various dat
 
 There are _many_ data structures, and even the ones that are covered here have many nuances that make it impossible to cover every possible detail. But my hope is that this will give you an interest to research them further.
 
-**But before we get into it...** time for some self-promotion 🙊[Want to be up and running **quickly** with **Python**? Get started here with my book  
+**But before we get into it...** time for some self-promotion 🙊[Want to be up and running **quickly** with **Python**? Get started here with my book
 "**Python for Programmers**"!](https://leanpub.com/pythonforprogrammers)
 
 ### Data Types <a id="data-types"></a>
@@ -57,7 +57,7 @@ When we think of data structures, there are generally four forms:
 3. **Hash**: distributed hash table, hash tree etc.
 4. **Graphs**: decision, directed, acyclic etc.
 
-> Note: for a more complete reference,  
+> Note: for a more complete reference,
 > please see this [Wikipedia article](https://en.wikipedia.org/wiki/List_of_data_structures).
 
 Let’s now take a look at the properties that make up a few of the more well known data structures.

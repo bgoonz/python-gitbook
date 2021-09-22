@@ -302,7 +302,7 @@ x = 10
 let a = 12;        // number
 let b = 1.2;       // number
 let c = 'hello';   // string
-let d = "world";   // string 
+let d = "world";   // string
 let e = true;      // boolean
 let f = null;      // null value
 let g = undefined; // undefined value
@@ -555,10 +555,10 @@ Padding and justification:
 
 ```javascript
 let s = "Hello!";
-let t = s.padStart(10, ' '); // string '    Hello!' 
+let t = s.padStart(10, ' '); // string '    Hello!'
 let u = s.padEnd(10, ' ');   // string 'Hello!    '
 
-let v = s.padStart(10, '*'); // string '****Hello!' 
+let v = s.padStart(10, '*'); // string '****Hello!'
 
 // Pad with leading zeroes
 (12).toString(2).padStart(8, '0'); // string '00001100'

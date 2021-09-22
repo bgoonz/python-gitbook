@@ -71,7 +71,7 @@ c = 3.142
 print(a, b, c)
 ```
 
-**Output**: Welcome to edureka! 123 3.142  
+**Output**: Welcome to edureka! 123 3.142
 You can see the way I have assigned the values to those variables. This is how you assign values to variables in Python. And if you are wondering, yes, you can **print multiple variables** in a single print statement. Now let us go over Data Types in Python Basics.
 
 ## Data Types in Python <a id="c3e1"></a>
@@ -91,8 +91,8 @@ There are 3 numerical data types :
 * **Complex Numbers:** These are of the form a + bj, where a and b are floats and J represents the square root of -1 \(which is an imaginary number\). Ex: 10+6j.
 
 ```python
-a = 10 
-b= 3.142 
+a = 10
+b= 3.142
 c = 10+6j
 ```
 
@@ -103,13 +103,13 @@ So now that you have understood the various numerical data types, you can unders
 Type Conversion is the **conversion of a data type into another data type** which can be really helpful to us when we start programming to obtain solutions for our problems. Let us understand with examples.
 
 ```python
-a = 10 
-b = 3.142 
-c = 10+6j 
+a = 10
+b = 3.142
+c = 10+6j
 print(int(b), float(a), str(c))
 ```
 
-**Output**: 10.0 3 ‘10+6j’  
+**Output**: 10.0 3 ‘10+6j’
 You can understand, type conversion by the code snippet above. ‘a’ as an integer, ‘b’ as a float and ‘c’ as a complex number. You use the float\(\), int\(\), str\(\) methods that are in-built in Python which helps us to convert them. **Type Conversion** can be really important when you move into real-world examples.
 
 A simple situation could be where you need to compute the salary of the employees in a company and these should be in a float format but they are supplied to us in the string format. So to make our work easier, you just use type conversion and convert the string of salaries into float and then move forward with our work. Now let us head over to the List data type in Python Basics.
@@ -137,7 +137,7 @@ Tuples in Python are the . That means that once you have declared the tuple, you
 Operations are similar to Lists but the ones where updating, deleting, adding is involved, those operations won’t work. Tuples in Python are written a=\(\) or a=tuple\(\) where ‘a’ is the name of the tuple.
 
 ```python
-a = ('List', 'Dictionary', 'Tuple', 'Integer', 'Float') 
+a = ('List', 'Dictionary', 'Tuple', 'Integer', 'Float')
 print(a)
 ```
 
@@ -181,8 +181,8 @@ You may now have a better understanding of dictionaries in Python Basics. Hence 
 A set is basically an You can see that even if there are similar elements in set ‘a’, it will still be printed only once because **un-ordered collection of elements** or items. Elements are sets are a collection of unique elements. **unique** in the set. In Python, they are written inside **curly brackets** and **separated by commas**.
 
 ```python
-a = {1, 2, 3, 4, 4, 4} 
-b = {3, 4, 5, 6} 
+a = {1, 2, 3, 4, 4, 4}
+b = {3, 4, 5, 6}
 print(a,b)
 ```
 
@@ -227,8 +227,8 @@ Let us move ahead and understand each of these operators carefully.
 **Note: Variables are called operands that come on the left and right of the operator. Ex :**
 
 ```python
-a=10 
-b=20 
+a=10
+b=20
 a+b
 ```
 
@@ -243,8 +243,8 @@ They are used to perform **arithmetic operations** on data.![](https://miro.medi
 The code snippet below will help you understand it better.
 
 ```python
-a = 2 
-b = 3 
+a = 2
+b = 3
 print(a+b, a-b, a*b, a/b, a%b, a**b, end=',')
 ```
 
@@ -281,17 +281,17 @@ if a != b
     print ( 'a is not equal to b' )
 if a < b:
     print ( 'a is less than b' )
-if a > b: 
-    print ( 'a is greater than b' ) 
-if a <= b: 
-    print ( 'a is either less than or equal to b' ) 
+if a > b:
+    print ( 'a is greater than b' )
+if a <= b:
+    print ( 'a is either less than or equal to b' )
 if a >= b:
     print ( 'a is either greater than or equal to b' )
 ```
 
-**Output :**  
-a is not equal to b  
-a is greater than b  
+**Output :**
+a is not equal to b
+a is greater than b
 a is either greater than or equal to b
 
 Let us move ahead with the bitwise operators in the Python Basics.
@@ -311,8 +311,8 @@ These are used to obtain a certain **logic** from the operands. We have 3 operan
 * **not** \(Gives the opposite of the operand passed\)
 
 ```python
-a = True 
-b = False 
+a = True
+b = False
 print(a and b, a or b, not a)
 ```
 
@@ -422,11 +422,11 @@ This means that if a condition is met, do something. Else go through the remaini
 ```python
 a = 10
 b = 15
-if a == b: 
-    print ( 'They are equal' ) 
-elif a > b: 
-    print ( 'a is larger' ) 
-else : 
+if a == b:
+    print ( 'They are equal' )
+elif a > b:
+    print ( 'a is larger' )
+else :
     print ( 'b is larger' )
 ```
 
@@ -476,7 +476,7 @@ This is how the for loops work in Python. Let us move ahead with the while loop 
 **Syntax:**
 
 ```python
-while condition: 
+while condition:
      statements
 ```
 
@@ -484,7 +484,7 @@ The code snippet is as :
 
 ```python
 second = 10
-while second >= 0: 
+while second >= 0:
     print(second, end='->')
     second-=1
 print('Blastoff!')

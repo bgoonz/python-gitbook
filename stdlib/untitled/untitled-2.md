@@ -683,7 +683,7 @@ Return a copy of the string where all tab characters are replaced by one or more
 
 Return the lowest index in the string where substring _sub_ is found within the slice `s[start:end]`. Optional arguments _start_ and _end_ are interpreted as in slice notation. Return `-1` if _sub_ is not found.
 
-Note 
+Note
 
 The [`find()`](https://docs.python.org/3/library/stdtypes.html#str.find) method should be used only if you need to know the position of _sub_. To check if _sub_ is a substring or not, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) operator:&gt;&gt;&gt;
 
@@ -703,7 +703,7 @@ Perform a string formatting operation. The string on which this method is called
 
 See [Format String Syntax](https://docs.python.org/3/library/string.html#formatstrings) for a description of the various formatting options that can be specified in format strings.
 
-Note 
+Note
 
 When formatting a number \([`int`](https://docs.python.org/3/library/functions.html#int), [`float`](https://docs.python.org/3/library/functions.html#float), [`complex`](https://docs.python.org/3/library/functions.html#complex), [`decimal.Decimal`](https://docs.python.org/3/library/decimal.html#decimal.Decimal) and subclasses\) with the `n` type \(ex: `'{:n}'.format(1234)`\), the function temporarily sets the `LC_CTYPE` locale to the `LC_NUMERIC` locale to decode `decimal_point` and `thousands_sep` fields of `localeconv()` if they are non-ASCII or longer than 1 byte, and the `LC_NUMERIC` locale is different than the `LC_CTYPE` locale. This temporary change affects other threads.
 
@@ -1026,7 +1026,7 @@ For example:&gt;&gt;&gt;
 
 #### `printf`-style String Formatting
 
-Note 
+Note
 
 The formatting operations described here exhibit a variety of quirks that lead to a number of common errors \(such as failing to display tuples and dictionaries correctly\). Using the newer [formatted string literals](https://docs.python.org/3/reference/lexical_analysis.html#f-strings), the [`str.format()`](https://docs.python.org/3/library/stdtypes.html#str.format) interface, or [template strings](https://docs.python.org/3/library/string.html#template-strings) may help avoid these errors. Each of these alternatives provides their own trade-offs and benefits of simplicity, flexibility, and/or extensibility.
 
@@ -1177,7 +1177,7 @@ Since bytes objects are sequences of integers \(akin to a tuple\), for a bytes o
 
 The representation of bytes objects uses the literal format \(`b'...'`\) since it is often more useful than e.g. `bytes([46, 46, 46])`. You can always convert a bytes object into a list of integers using `list(b)`.
 
-Note 
+Note
 
 For Python 2.x users: In the Python 2.x series, a variety of implicit conversions between 8-bit strings \(the closest thing 2.x offers to a built-in binary data type\) and Unicode strings were permitted. This was a backwards compatibility workaround to account for the fact that Python originally only supported 8-bit text, and Unicode text was a later addition. In Python 3.x, those implicit conversions are gone - conversions between 8-bit binary data and Unicode text must be explicit, and bytes and string objects will always compare unequal.
 
@@ -1228,7 +1228,7 @@ The representation of bytearray objects uses the bytes literal format \(`bytearr
 
 Both bytes and bytearray objects support the [common](https://docs.python.org/3/library/stdtypes.html#typesseq-common) sequence operations. They interoperate not just with operands of the same type, but with any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object). Due to this flexibility, they can be freely mixed in operations without causing errors. However, the return type of the result may depend on the order of operands.
 
-Note 
+Note
 
 The methods on bytes and bytearray objects don’t accept strings as their arguments, just as the methods on strings don’t accept bytes as their arguments. For example, you have to write:
 
@@ -1246,7 +1246,7 @@ b = a.replace(b"a", b"f")
 
 Some bytes and bytearray operations assume the use of ASCII compatible binary formats, and hence should be avoided when working with arbitrary binary data. These restrictions are covered below.
 
-Note 
+Note
 
 Using these ASCII based operations to manipulate binary data that is not stored in an ASCII based format may lead to data corruption.
 
@@ -1269,7 +1269,7 @@ b'BaseTestCase'
 
 The _prefix_ may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1286,7 +1286,7 @@ b'TmpDirMixin'
 
 The _suffix_ may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1296,7 +1296,7 @@ Return a string decoded from the given bytes. Default encoding is `'utf-8'`. _er
 
 By default, the _errors_ argument is not checked for best performances, but only used at the first decoding error. Enable the [Python Development Mode](https://docs.python.org/3/library/devmode.html#devmode), or use a debug build to check _errors_.
 
-Note 
+Note
 
 Passing the _encoding_ argument to [`str`](https://docs.python.org/3/library/stdtypes.html#str) allows decoding any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object) directly, without needing to make a temporary bytes or bytearray object.
 
@@ -1312,7 +1312,7 @@ Return the lowest index in the data where the subsequence _sub_ is found, such t
 
 The subsequence to search for may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object) or an integer in the range 0 to 255.
 
-Note 
+Note
 
 The [`find()`](https://docs.python.org/3/library/stdtypes.html#bytes.find) method should be used only if you need to know the position of _sub_. To check if _sub_ is a substring or not, use the [`in`](https://docs.python.org/3/reference/expressions.html#in) operator:&gt;&gt;&gt;
 
@@ -1343,7 +1343,7 @@ Return a copy of the sequence with all occurrences of subsequence _old_ replaced
 
 The subsequence to search for and its replacement may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rfind`\(_sub_\[, _start_\[, _end_\]\]\)`bytearray.rfind`\(_sub_\[, _start_\[, _end_\]\]\)
 
@@ -1384,13 +1384,13 @@ The following methods on bytes and bytearray objects have default behaviours tha
 
 Return a copy of the object centered in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.ljust`\(_width_\[, _fillbyte_\]\)`bytearray.ljust`\(_width_\[, _fillbyte_\]\)
 
 Return a copy of the object left justified in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.lstrip`\(\[_chars_\]\)`bytearray.lstrip`\(\[_chars_\]\)
 
@@ -1412,13 +1412,13 @@ b'ee!'
 b'three!'
 ```
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rjust`\(_width_\[, _fillbyte_\]\)`bytearray.rjust`\(_width_\[, _fillbyte_\]\)
 
 Return a copy of the object right justified in a sequence of length _width_. Padding is done using the specified _fillbyte_ \(default is an ASCII space\). For [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes) objects, the original sequence is returned if _width_ is less than or equal to `len(s)`.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.rsplit`\(_sep=None_, _maxsplit=-1_\)`bytearray.rsplit`\(_sep=None_, _maxsplit=-1_\)
 
@@ -1442,7 +1442,7 @@ b'M'
 b'Monty'
 ```
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.split`\(_sep=None_, _maxsplit=-1_\)`bytearray.split`\(_sep=None_, _maxsplit=-1_\)
 
@@ -1487,7 +1487,7 @@ b'example'
 
 The binary sequence of byte values to remove may be any [bytes-like object](https://docs.python.org/3/glossary.html#term-bytes-like-object).
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
@@ -1495,7 +1495,7 @@ The following methods on bytes and bytearray objects assume the use of ASCII com
 
 Return a copy of the sequence with each byte interpreted as an ASCII character, and the first byte capitalized and the rest lowercased. Non-ASCII byte values are passed through unchanged.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.expandtabs`\(_tabsize=8_\)`bytearray.expandtabs`\(_tabsize=8_\)
 
@@ -1508,7 +1508,7 @@ b'01      012     0123    01234'
 b'01  012 0123    01234'
 ```
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.isalnum`\(\)`bytearray.isalnum`\(\)
 
@@ -1607,7 +1607,7 @@ b'hello world'
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.splitlines`\(_keepends=False_\)`bytearray.splitlines`\(_keepends=False_\)
 
@@ -1646,7 +1646,7 @@ Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijkl
 
 Unlike [`str.swapcase()`](https://docs.python.org/3/library/stdtypes.html#str.swapcase), it is always the case that `bin.swapcase().swapcase() == bin` for the binary versions. Case conversions are symmetrical in ASCII, even though that is not generally true for arbitrary Unicode code points.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.title`\(\)`bytearray.title`\(\)
 
@@ -1682,7 +1682,7 @@ A workaround for apostrophes can be constructed using regular expressions:&gt;&g
 b"They're Bill's Friends."
 ```
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.upper`\(\)`bytearray.upper`\(\)
 
@@ -1697,7 +1697,7 @@ b'HELLO WORLD'
 
 Lowercase ASCII characters are those byte values in the sequence `b'abcdefghijklmnopqrstuvwxyz'`. Uppercase ASCII characters are those byte values in the sequence `b'ABCDEFGHIJKLMNOPQRSTUVWXYZ'`.
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.`bytes.zfill`\(_width_\)`bytearray.zfill`\(_width_\)
 
@@ -1712,13 +1712,13 @@ b'00042'
 b'-0042'
 ```
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
 #### `printf`-style Bytes Formatting
 
-Note 
+Note
 
 The formatting operations described here exhibit a variety of quirks that lead to a number of common errors \(such as failing to display tuples and dictionaries correctly\). If the value being printed may be a tuple or dictionary, wrap it in a tuple.
 
@@ -1798,11 +1798,11 @@ Notes:
 7. `b'%r'` is deprecated, but will not be removed during the 3.x series.
 8. See [**PEP 237**](https://www.python.org/dev/peps/pep-0237).
 
-Note 
+Note
 
 The bytearray version of this method does _not_ operate in place - it always produces a new object, even if no changes were made.
 
-See also 
+See also
 
 [**PEP 461**](https://www.python.org/dev/peps/pep-0461) - Adding % formatting to bytes and bytearray
 
@@ -2448,7 +2448,7 @@ Dictionaries and dictionary views are reversible.&gt;&gt;&gt;
 
 Changed in version 3.8: Dictionaries are now reversible.
 
-See also 
+See also
 
 [`types.MappingProxyType`](https://docs.python.org/3/library/types.html#types.MappingProxyType) can be used to create a read-only view of a [`dict`](https://docs.python.org/3/library/stdtypes.html#dict).
 
@@ -2537,7 +2537,7 @@ Note that there is no specific slot for any of these methods in the type structu
 
 Usually, the [subscription](https://docs.python.org/3/reference/expressions.html#subscriptions) of container objects calls the method [`__getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) of the object. However, the subscription of some containers’ classes may call the classmethod [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) of the class instead. The classmethod [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) should return a `GenericAlias` object.
 
-Note 
+Note
 
 If the [`__getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__getitem__) of the class’ metaclass is present, it will take precedence over the [`__class_getitem__()`](https://docs.python.org/3/reference/datamodel.html#object.__class_getitem__) defined in the class \(see [**PEP 560**](https://www.python.org/dev/peps/pep-0560) for more details\).
 

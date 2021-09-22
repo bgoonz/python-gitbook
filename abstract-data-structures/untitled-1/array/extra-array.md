@@ -55,7 +55,7 @@ def arrayChange(inputArray):
 #Time complexity O(M*N)
 #Space Complexity O(M+N)
 #Method 1
-class Solution:    
+class Solution:
     #Function to return the count of number of elements in union of two arrays.
     def doUnion(self,a,n,b,m):
         c=a+b
@@ -90,7 +90,7 @@ if __name__=='__main__':
 
 
 
-class Solution:    
+class Solution:
     #Function to return the count of number of elements in union of two arrays.
     def doUnion(self,a,n,b,m):
         c=a+b
@@ -233,19 +233,19 @@ class Array(object):
 
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())      
+    print(myArray.items, myArray.myLen())
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())     
+    print(myArray.items, myArray.myLen())
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())       
-    myArray.search(4)                          
+    print(myArray.items, myArray.myLen())
+    myArray.search(4)
 ```
 
-### 
+###
 
 ### Create Array Class
 
@@ -404,16 +404,16 @@ Then, just use the object to call all the functions one by one.
 ```python
 if __name__ == '__main__':
     myArray = Array(5, [1])
-    print(myArray.items, myArray.myLen())      
+    print(myArray.items, myArray.myLen())
     myArray.insertFirst(3)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.insertAfterIndex(1,4)
-    print(myArray.items, myArray.myLen())     
+    print(myArray.items, myArray.myLen())
     myArray.insertBeforeIndex(3,5)
-    print(myArray.items, myArray.myLen())       
+    print(myArray.items, myArray.myLen())
     myArray.delete(5)
-    print(myArray.items, myArray.myLen())       
-    myArray.search(4)   
+    print(myArray.items, myArray.myLen())
+    myArray.search(4)
 ```
 
 

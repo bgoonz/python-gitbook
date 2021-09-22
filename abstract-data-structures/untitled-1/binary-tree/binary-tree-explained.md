@@ -114,7 +114,7 @@ _Note: Prerequisites – Make sure you have basic Python knowledge before diving
 
 #### Binary Trees: Introduction <a id="binary-trees-introduction"></a>
 
-![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png)  
+![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png)
 _Figure: Binary Trees,_ [_Image Source_](https://www.studytonight.com/data-structures/introduction-to-binary-trees)
 
 A binary tree **node** consists of the following components:

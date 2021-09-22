@@ -86,11 +86,11 @@ class Stack:
         return len(self.stack)
 
     def top(self) -> int:
-        return self.stack[-1]  
+        return self.stack[-1]
 
     def push(self, x: int) -> None:
         self.x = x
-        self.stack.append(x)       
+        self.stack.append(x)
 
     def pop(self) -> None:
         self.stack.pop()
@@ -119,11 +119,11 @@ class Stack:
         return len(self.stack)
 
     def top(self) -> int:
-        return self.stack[-1]  
+        return self.stack[-1]
 
     def push(self, x: int) -> None:
         self.x = x
-        self.stack.append(x)   
+        self.stack.append(x)
 
     def pop(self) -> None:
         self.stack.pop()

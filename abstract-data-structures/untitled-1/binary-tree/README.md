@@ -1339,7 +1339,7 @@ Analyze the time and space complexity of your function.
 JS Solution:
 
 ```javascript
-/* 
+/*
   A recursive solution
   How would you solve this iteratively?
  */
@@ -1496,7 +1496,7 @@ def create_min_height_bst(sorted_arr):
     root.insert(elem)
 
   return root
-  
+
 ```
 
 ```javascript

@@ -12,7 +12,7 @@ This allows Python users to share and collaborate effectively, benefiting from t
 
 This guide covers the installation part of the process. For a guide to creating and sharing your own Python projects, refer to the [distribution guide](https://docs.python.org/3/distributing/index.html#distributing-index).
 
-Note 
+Note
 
 For corporate and other institutional users, be aware that many organisations have their own policies around using and contributing to open source software. Please take such policies into account when making use of the distribution and installation tools provided with Python.
 
@@ -28,7 +28,7 @@ For corporate and other institutional users, be aware that many organisations ha
 
 Changed in version 3.5: The use of `venv` is now recommended for creating virtual environments.
 
-See also 
+See also
 
 [Python Packaging User Guide: Creating and using virtual environments](https://packaging.python.org/installing/#creating-virtual-environments)
 
@@ -42,7 +42,7 @@ The following command will install the latest version of a module and its depend
 python -m pip install SomePackage
 ```
 
-Note 
+Note
 
 For POSIX users \(including Mac OS X and Linux users\), the examples in this guide assume the use of a [virtual environment](https://docs.python.org/3/glossary.html#term-virtual-environment).
 
@@ -65,7 +65,7 @@ More information and resources regarding `pip` and its capabilities can be found
 
 Creation of virtual environments is done through the [`venv`](https://docs.python.org/3/library/venv.html#module-venv) module. Installing packages into an active virtual environment uses the commands shown above.
 
-See also 
+See also
 
 [Python Packaging User Guide: Installing Python Distribution Packages](https://packaging.python.org/installing/)
 
@@ -77,7 +77,7 @@ These are quick answers or links for some common tasks.
 
 Python only started bundling `pip` with Python 3.4. For earlier versions, `pip` needs to be “bootstrapped” as described in the Python Packaging User Guide.
 
-See also 
+See also
 
 [Python Packaging User Guide: Requirements for Installing Packages](https://packaging.python.org/installing/#requirements-for-installing-packages)
 
@@ -89,7 +89,7 @@ Passing the `--user` option to `python -m pip install` will install a package ju
 
 A number of scientific Python packages have complex binary dependencies, and aren’t currently easy to install using `pip` directly. At this point in time, it will often be easier for users to install these packages by [other means](https://packaging.python.org/science/) rather than attempting to install them with `pip`.
 
-See also 
+See also
 
 [Python Packaging User Guide: Installing Scientific Packages](https://packaging.python.org/science/)
 
@@ -149,7 +149,7 @@ Some of the solutions for installing [scientific software](https://packaging.pyt
 
 ------------------------------------------------------------------------------------------------------------------------
 
-## 
+##
 
 ## Python Installation Instructions
 

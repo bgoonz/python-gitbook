@@ -118,7 +118,7 @@ Depending on whether we want to keep the original list intact or not, we can `po
 `pop()` removes the _last_ element from a collection and returns it. We can combine the `append()` method with this to directly append the removed element to a new list, effectively resulting in a reversed list:
 
 ```python
-original_list = [1, 2, 3, 4] 
+original_list = [1, 2, 3, 4]
 reversed_list = []
 
 for i in range(len(original_list)):
@@ -127,7 +127,7 @@ for i in range(len(original_list)):
 print(reversed_list) # Output: [4, 3, 2, 1]
 ```
 
-### 
+###
 
 Alternatively, we can iterate through the list _backwards_, until the `-1`th index \(non-inclusive\) and add each element we see along that list. The `range()` method accepts 3 arguments - `start`, `end` and `step`, which can again be used in much the same way as before:
 
@@ -153,7 +153,7 @@ new_list = []
 
 for i in reversed(original_list):
 	new_list.append(i)
-    
+
 print(new_list) # Output: [4, 3, 2, 1]
 print(original_list) # Output: [1, 2, 3, 4] --> Original hasn't changed
 ```

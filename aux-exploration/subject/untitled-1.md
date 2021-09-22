@@ -13,7 +13,7 @@ Most data structures in Python are modified forms of these or use the built-in s
 * **Set**: Sets are unordered collections, meaning that elements are unindexed and have no set sequence. They’re declared with curly braces.
 * **Dictionary \(dict\)**: Similar to hashmap or hash tables in other languages, a dictionary is a collection of key/value pairs. You initialize an empty dictionary with empty curly braces and fill it with colon separated keys and values. All keys are unique, immutable objects.
 
-Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.  
+Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.
 
 
 ### Arrays \(Lists\) in Python
@@ -191,8 +191,8 @@ Circular linked lists are great for processes that loop for a long time like CPU
 
 Practiced knowledge of data structures is essential for any interviewee. Educative’s text-based courses give you hundreds of hands-on practice problems to ensure you’re ready when the time comes.
 
-[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)  
-  
+[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)
+
 
 
 ### Trees in Python
@@ -379,7 +379,7 @@ Python also provides some useful **syntactic sugar** for working with dictionari
 
 
  squares
-{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}` 
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}`
 
 
 ```
@@ -432,7 +432,7 @@ OrderedDict([('one', 1), ('two', 2),
 
 
  d.keys()
-odict_keys(['one', 'two', 'three', 'four'])` 
+odict_keys(['one', 'two', 'three', 'four'])`
 
 Until [Python 3.8](https://realpython.com/python38-new-features/), you couldn’t iterate over dictionary items in reverse order using `reversed()`. Only `OrderedDict` instances offered that functionality. Even in Python 3.8, `dict` and `OrderedDict` objects aren’t exactly the same. `OrderedDict` instances have a [`.move_to_end()` method](https://realpython.com/python-data-types/) that is unavailable on plain `dict` instance, as well as a more customizable [`.popitem()` method](https://docs.python.org/3/library/collections.html#collections.OrderedDict.popitem) than the one plain `dict` instances.
 ```
@@ -648,7 +648,7 @@ TypeError: 'tuple' object doesn't support item deletion
  # (Adding elements creates a copy of the tuple)
 
  arr + (23,)
-('one', 'two', 'three', 23)` 
+('one', 'two', 'three', 23)`
 ```
 ```
 
@@ -702,7 +702,7 @@ array('f', [1.0, 2.0, 2.5, 42.0])
  arr[1] = "hello"
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: must be real number, not str` 
+TypeError: must be real number, not str`
 ```
 ```
 
@@ -756,7 +756,7 @@ TypeError: 'str' object doesn't support item deletion
 "<class 'str'>"
 
  type("abc"[0])
-"<class 'str'>"` 
+"<class 'str'>"`
 ```
 ```
 
@@ -985,7 +985,7 @@ As you can see in the bytecode disassembly below, constructing a tuple constant 
  6 LOAD_CONST           2 ('b')
  9 LOAD_CONST           3 ('c')
  12 BUILD_LIST           4
- 15 RETURN_VALUE` 
+ 15 RETURN_VALUE`
 
 However, you shouldn’t place too much emphasis on these differences. In practice, the performance difference will often be negligible, and trying to squeeze extra performance out of a program by switching from lists to tuples will likely be the wrong approach.
 
@@ -1131,7 +1131,7 @@ Car(color='red', mileage=3812.4, automatic=True)
  # a separate type checking tool like mypy:
 
  Car("red", "NOT_A_FLOAT", 99)
-Car(color='red', mileage='NOT_A_FLOAT', automatic=99)` 
+Car(color='red', mileage='NOT_A_FLOAT', automatic=99)`
 
 #To learn more about Python data classes, check out the [The Ultimate Guide to Data Classes in Python 3.7](https://realpython.com/python-data-classes/).
 ```
@@ -1432,7 +1432,7 @@ Counter({'bread': 3, 'sword': 1})
  inventory.update(more_loot)
 
  inventory
-Counter({'bread': 3, 'sword': 2, 'apple': 1})` 
+Counter({'bread': 3, 'sword': 2, 'apple': 1})`
 
 One caveat for the `Counter` class is that you’ll want to be careful when counting the number of elements in a `Counter` object. Calling `len()` returns the number of _unique_ elements in the multiset, whereas the _total_ number of elements can be retrieved using `sum()`:
 

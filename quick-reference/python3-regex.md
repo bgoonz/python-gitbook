@@ -183,7 +183,7 @@ print(result.groups())
 
 In the first example, **\(?:AB\)** will search and matches the expression **AB** and will print out the match and its position. Since **ACABC** contains **AB,** it will print the match\('AB'\) and its position\(2,4\) but as stated, this cannot be retrieved afterward. So, if we try to print the group of the output, it will show an empty bracket.
 
-In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In **geeks, best geeks** and **best** are captured as the first and second groups. So, when we print out these groups we will have \('geeks', 'best\) as the groups captured. 
+In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In **geeks, best geeks** and **best** are captured as the first and second groups. So, when we print out these groups we will have \('geeks', 'best\) as the groups captured.
 
 #### Assertions:
 
@@ -238,7 +238,7 @@ exp = """hello there
 I am from
 Geeks for Geeks"""
 
-print(re.search(r"and", "Sun And Moon", flags=re.IGNORECASE)) 
+print(re.search(r"and", "Sun And Moon", flags=re.IGNORECASE))
 print(re.findall(r"^\w", exp, flags = re.MULTILINE))
 ```
 
@@ -272,9 +272,9 @@ So, let’s come back to our problem!
 We can get the users’ phone numbers by first creating a pattern. Observe that the phone numbers are located between the brackets “\( \)”. It’s a useful information and we can use it to our advantage. To access the goodness of Regular Expressions in Python, we will need to **import** the **re library**.
 
 ```python
-import re phone_numbers = [] 
-pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file: 
-    for line in file: 
+import re phone_numbers = []
+pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file:
+    for line in file:
         result = re.search(pattern, line)
         phone_numbers.append(result.group(1))print(phone_numbers)
 ```
@@ -365,7 +365,7 @@ However, characters that don’t have any special meaning like ?\_+\*.\|\(\)${} 
 Lastly, we’ll go through the things that we can do with RegEx by using the functions available!
 
 ```python
-findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string            
+findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string
 ```
 
 In all these functions, the arguments are all the same, which are &lt;pattern&gt; and &lt;string&gt;.

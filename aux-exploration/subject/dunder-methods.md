@@ -241,7 +241,7 @@ The code above prints the statement inside the if blocks since software S2 is pr
 class softwares:
     names = []
     versions = {}
-    
+
     def __init__(self,names):
         if names:
             self.names = names.copy()
@@ -249,35 +249,35 @@ class softwares:
                 self.versions[name] = 1
         else:
             raise Exception("Please Enter the names")
-    
+
     def __str__(self):
         s ="The current softwares and their versions are listed below: \n"
         for key,value in self.versions.items():
             s+= f"{key} : v{value} \n"
         return s
-    
+
     def __setitem__(self,name,version):
         if name in self.versions:
             self.versions[name] = version
         else:
             raise Exception("Software Name doesn't exist")
-    
+
     def __getitem__(self,name):
         if name in self.versions:
             return self.versions[name]
         else:
             raise Exception("Software Name doesn't exist")
-    
+
     def __delitem__(self,name):
         if name in self.versions:
             del self.versions[name]
             self.names.remove(name)
         else:
             raise Exception("Software Name doesn't exist")
-    
+
     def __len__(self):
         return len(self.names)
-    
+
     def __contains__(self,name):
         if name in self.versions:
             return True
@@ -293,11 +293,11 @@ Before looking at some more dunder methods, let’s create a new class.
 class point:
     x = None
     y = None
-    
+
     def __init__(self, x , y):
         self.x = x
         self.y = y
-    
+
     def __str__(self):
         s = f'({self.x},{self.y})'
         return s
@@ -384,46 +384,46 @@ def __call__(self):
 class point:
     x = None
     y = None
-    
+
     def __init__(self, x , y):
         self.x = x
         self.y = y
-    
+
     def __str__(self):
         s = f'({self.x},{self.y})'
         return s
-    
+
     def __add__(self,p2):
         print("In add")
         x = self.x + p2.x
         y = self.y + p2.y
         return point(x,y)
-    
+
     def __iadd__(self,p2):
         self.x += p2.x
         self.y += p2.y
         return self
-    
+
     def __isub__(self,p2):
         self.x -= p2.x
         self.y -= p2.y
         return self
-    
+
     def __imul__(self,p2):
         self.x *= p2.x
         self.y *= p2.y
         return self
-    
+
     def __itruediv__(self,p2):
         self.x /= p2.x
         self.y /= p2.y
         return self
-    
+
     def __ifloordiv__(self,p2):
         self.x //= p2.x
         self.y //= p2.y
         return self
-    
+
     def __call__(self):
         print(f"Called Point {self.x},{self.y}")
 ```

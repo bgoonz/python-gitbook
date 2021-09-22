@@ -174,7 +174,7 @@ em = 15
 newlist = 5, 10, 15
 ```
 
-### 
+###
 
 Similarly, in the next iteration:
 

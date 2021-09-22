@@ -183,7 +183,7 @@ We will now update the adjacent vertices: 2, 3, 5, and 8.![](https://s3.stackabu
 
 ### Free eBook: Git Essentials
 
-Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually _learn_ it!Download the eBook  
+Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually _learn_ it!Download the eBook
 
 * Since `9 + 2 < 13`, the new cost of vertex 2 is 11
 * Since `9 + 10 < infinity`, the new cost of vertex 3 is 19
@@ -343,6 +343,6 @@ If the new cost is lower than the old cost, we put the neighbor and its cost to 
 
 Finally, after all of the vertices are visited and the priority queue is empty, we return the list `D`. Our function is done!
 
-Let's put the graph we used in the example above as the input of our implemented algorithm:  
+Let's put the graph we used in the example above as the input of our implemented algorithm:
 
 

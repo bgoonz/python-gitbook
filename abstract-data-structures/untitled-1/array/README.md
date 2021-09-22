@@ -11,7 +11,7 @@ for num in arr: # O(n * 1) ==> O(n)
     print(num)  # O(1)
 for num in arr: # O(n * 1) ==> O(n)
     print(num)  # O(1)
-    
+
 # O(n) + O(1) => O(n)
 # O(n * 1) + O(n * 1) + O(1)
 # O(2n) + O(1) => O(n) + O(1) => O(n)

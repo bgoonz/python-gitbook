@@ -19,7 +19,7 @@ def main():
         print(i)
         i = i + 1
 
-# call function main 
+# call function main
 main()Code language: Python (python)
 ```
 
@@ -89,7 +89,7 @@ break      except     in         raiseCode language: Python (python)
 
 Python is a growing and evolving language. So its keywords will keep increasing and changing.
 
-Python provides a special module for listing its keywords called `keyword`_._ 
+Python provides a special module for listing its keywords called `keyword`_._
 
 To find the current keyword list, you use the following code:
 

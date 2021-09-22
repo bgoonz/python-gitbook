@@ -85,7 +85,7 @@ To fetch the most starred Python projects on GitHub, we’ll start writing a pro
 ```python
 import requests
 
-# Create an API request 
+# Create an API request
 url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
 response = requests.get(url)
 print("Status code: ", response.status_code)

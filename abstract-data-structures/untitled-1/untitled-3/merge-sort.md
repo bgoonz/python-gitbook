@@ -175,7 +175,7 @@ if __name__ == '__main__':
 
 #### As the **rightIndex** gets incremented by one, **right\[1\]** is now 5. **4 &lt; 5** returns true, so **left\[leftIndex\]** gets pushed to the **results** array.
 
-####  
+####
 
 ![](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497669811-HRRJS0W6SMFPCCOE053V/image-asset.png?format=300w)
 

@@ -47,7 +47,7 @@ type(my_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}
 dict
 
 ### Using dict\(\) function: <a id="using-dict-function"></a>
@@ -64,7 +64,7 @@ type(new_dict)
 
 **OUTPUT:**
 
-{}  
+{}
 dict
 
 In the above example, an empty dictionary is created since no key-value pairs are supplied as a parameter to the dict\(\) function. In case you want to add values, you can do as follows:
@@ -79,7 +79,7 @@ type(new_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}
 dict
 
 Nested dictionaries are basically dictionaries that lie within other dictionaries. For example:
@@ -140,8 +140,8 @@ print(my_dict.get('Dave'))
 
 **OUTPUT:**
 
-dict\_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\)  
-dict\_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\)  
+dict\_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\)
+dict\_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\)
 001
 
 ### Implementing the for loop: <a id="implementing-the-for-loop"></a>
@@ -163,17 +163,17 @@ for x,y in my_dict.items():
 
 **OUTPUT:**
 
-All keys  
-Dave  
-Ava  
-Joe  
-All values  
-001  
-002  
-003  
-All keys and values  
-Dave : 001  
-Ava : 002  
+All keys
+Dave
+Ava
+Joe
+All values
+001
+002
+003
+All keys and values
+Dave : 001
+Ava : 002
 Joe : 003
 
 > Dictionaries are mutable data types and therefore, you can update them as and when required. For example, if I want to change the ID of the employee named Dave from ‘001’ to ‘004’ and if I want to add another key-value pair to my dictionary, I can do as follows:

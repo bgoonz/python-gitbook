@@ -395,11 +395,11 @@ if __name__ == '__main__':
 False
 True
 
-Preorder: 
-10 5 4 8 7 12 20 15 13 
-Inorder: 
-4 5 7 8 10 12 13 15 20 
-Postorder: 
-4 7 8 5 13 15 20 12 10 
+Preorder:
+10 5 4 8 7 12 20 15 13
+Inorder:
+4 5 7 8 10 12 13 15 20
+Postorder:
+4 7 8 5 13 15 20 12 10
 ```
 

@@ -1,16 +1,16 @@
 # Unsorted Examples
 
-### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list. 
+### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list.
 
-### A node in a singly linked list should have two attributes: val 
+### A node in a singly linked list should have two attributes: val
 
-### and 
+### and
 
 ### next. val is the value of the current node
 
 ### next is a pointer/reference to the next node.
 
-###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. 
+###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list.
 
 ### Assume all nodes in the linked list are 0-indexed.
 
@@ -132,7 +132,7 @@ class MyLinkedList:
 
 
 
-Count the number of vowels in the user input string using for loop and while loop 
+Count the number of vowels in the user input string using for loop and while loop
 
 Now, let’s define a function named countVowels\(\) which accepts one argument as a string where we need to count Vowels in it.
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 ```python
 #Using While Loop
 '''def countVowels(sentence):
-    
+
     count = 0
     sentence = sentence.lower()
     i = 0
@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
 #Using For Loop
 def countVowels(sentence):
-    
+
     count = 0
     sentence = sentence.lower()
     for c in sentence:

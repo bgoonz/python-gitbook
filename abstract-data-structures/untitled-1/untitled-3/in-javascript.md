@@ -95,16 +95,16 @@ for i = 0 to loop-1 do: swapped = false
 ```python
   for j = 0 to loop-1 do:
 
-     /* compare the adjacent elements */   
+     /* compare the adjacent elements */
      if list[j] > list[j+1] then
         /* swap them */
-        swap( list[j], list[j+1] )         
+        swap( list[j], list[j+1] )
         swapped = true
      end if
 
   end for
 
-  /*if no number was swapped that means 
+  /*if no number was swapped that means
   array is sorted now, break the loop.*/
 
   if(not swapped) then

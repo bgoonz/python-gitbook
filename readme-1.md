@@ -219,7 +219,7 @@ class Farmer: # a class with the name farmer
     name = "John" # A variable
     produce = "1000kgs" # A variable
 
-farmer = Farmer() #instatiating the class as an object. 
+farmer = Farmer() #instatiating the class as an object.
 print(farmer.name) # accessing the properties of the Farmer class.
 ```
 
@@ -376,15 +376,15 @@ a *= 2
 a /= 2
 ```
 
-The ones above are to edit the current value of the variable.  
+The ones above are to edit the current value of the variable.
 Sorry to JS users, as there is no `i++;` or anything.
 
-> Fun Fact:  
+> Fun Fact:
 > The python language was named after Monty Python.
 
 If you really want to know about the others, view [Py Operators](https://www.tutorialspoint.com/python/python_basic_operators.htm)
 
-Like the title?  
+Like the title?
 Anyways, a `'` and a `"` both indicate a string, but **do not combine them!**
 
 _quotes.py_
@@ -399,7 +399,7 @@ _slicing.py_
 
 #### String Slicing
 
-You can look at only certain parts of the string by slicing it, using `[num:num]`.  
+You can look at only certain parts of the string by slicing it, using `[num:num]`.
 The first number stands for how far in you go from the front, and the second stands for how far in you go from the back.
 
 ```python
@@ -457,7 +457,7 @@ _inp2.py_
 print('Here is what you said: ', input('Type something: '))
 ```
 
-Running:  
+Running:
 _inp.py_
 
 ```python
@@ -490,15 +490,15 @@ import random
 print(random.randint(3,5)) # Prints a random number between 3 and 5
 ```
 
-> Pro Tip:  
-> Do `from random import randint` to not have to do `random.randint()`, just `randint()`  
+> Pro Tip:
+> Do `from random import randint` to not have to do `random.randint()`, just `randint()`
 > To import all functions from a module, you could do `from random import *`
 
 Loops allow you to repeat code over and over again. This is useful if you want to print Hi with a delay of one second 100 times.
 
 **for Loop**
 
-The for loop goes through a list of variables, making a seperate variable equal one of the list every time.  
+The for loop goes through a list of variables, making a seperate variable equal one of the list every time.
 Let’s say we wanted to create the example above.
 
 _loop.py_
@@ -587,7 +587,7 @@ else:
     print('No category')
 ```
 
-So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.  
+So far, you have only seen how to use functions other people have made. Let use the example that you want to print the a random number between 1 and 9, and print different text every time.
 It is quite tiring to type:
 
 Characters: 389
