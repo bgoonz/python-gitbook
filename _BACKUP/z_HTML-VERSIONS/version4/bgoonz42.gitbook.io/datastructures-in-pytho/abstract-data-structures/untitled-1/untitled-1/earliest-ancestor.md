@@ -214,8 +214,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Earliest Ancestor</span>
-======================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Earliest Ancestor</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -249,15 +248,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6aabd81c7cec43b7ada6115c0ad41641"><span data-offset-key="6aabd81c7cec43b7ada6115c0ad41641:0">Clarifications:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f386b9f665bc436e9eb92e0d9f89b4ad"><span data-offset-key="f386b9f665bc436e9eb92e0d9f89b4ad:0">The input will not be empty.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f386b9f665bc436e9eb92e0d9f89b4ad"><span data-offset-key="f386b9f665bc436e9eb92e0d9f89b4ad:0">The input will not be empty.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff5d0947443d415897e1c4d3cf237c46"><span data-offset-key="ff5d0947443d415897e1c4d3cf237c46:0">There are no cycles in the input.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff5d0947443d415897e1c4d3cf237c46"><span data-offset-key="ff5d0947443d415897e1c4d3cf237c46:0">There are no cycles in the input.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9cf8775a1f2e48199b18d62f4213a8c5"><span data-offset-key="9cf8775a1f2e48199b18d62f4213a8c5:0">There are no "repeated" ancestors – if two individuals are connected, it is by exactly one path.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9cf8775a1f2e48199b18d62f4213a8c5"><span data-offset-key="9cf8775a1f2e48199b18d62f4213a8c5:0">There are no "repeated" ancestors – if two individuals are connected, it is by exactly one path.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07f9e840ed5a4308be9637d6c1a02b1e"><span data-offset-key="07f9e840ed5a4308be9637d6c1a02b1e:0">IDs will always be positive integers.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07f9e840ed5a4308be9637d6c1a02b1e"><span data-offset-key="07f9e840ed5a4308be9637d6c1a02b1e:0">IDs will always be positive integers.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45a4432a987448f29f062493a9bff808"><span data-offset-key="45a4432a987448f29f062493a9bff808:0">A parent may have any number of children.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45a4432a987448f29f062493a9bff808"><span data-offset-key="45a4432a987448f29f062493a9bff808:0">A parent may have any number of children.</span></span></span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Ancestor.py</span>
 
@@ -269,7 +268,7 @@
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Specs.py</span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25d581ef1cff40bb82bfcaf476873ff7"><span data-offset-key="25d581ef1cff40bb82bfcaf476873ff7:0">import unittest from ancestor import earliest\_ancestor</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25d581ef1cff40bb82bfcaf476873ff7"><span data-offset-key="25d581ef1cff40bb82bfcaf476873ff7:0">import unittest from ancestor import earliest_ancestor</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c8331406ebb462d95774b845f88831c"><span data-offset-key="0c8331406ebb462d95774b845f88831c:0">class Test(unittest.TestCase): """ 10 / 1 2 4 11 / / / 3 5 8 / 6 7 9 """</span></span></span>
 

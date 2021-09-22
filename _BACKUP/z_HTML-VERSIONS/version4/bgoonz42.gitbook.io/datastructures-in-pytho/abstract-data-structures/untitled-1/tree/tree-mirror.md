@@ -212,8 +212,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree Mirror:</span>
-=================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree Mirror:</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -237,7 +236,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Previous</span>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red\_Black Tree</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red_Black Tree</span>
 
 <a href="tree-traversal.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardNext-19241c42"></a>
 

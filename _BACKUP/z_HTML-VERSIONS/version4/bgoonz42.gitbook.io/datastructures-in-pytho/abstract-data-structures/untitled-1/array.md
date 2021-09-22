@@ -200,8 +200,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Array</span>
-==========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Array</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -217,23 +216,23 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="1b75396f9a8a4b18b5bbf8fd94c82a83"><span data-offset-key="1b75396f9a8a4b18b5bbf8fd94c82a83:0">Arrays</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1281ef9b03e4ffd8c05c6a7142b3bb1"><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:0">In an array of arrays, e.g. given </span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:1">`[[], [1, 2, 3], [4, 5], [], [], [6,                                             7], [8], [9, 10], [], []]`</span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:2">, print: </span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:3">`1, 2, 3, 4, 5, 6, 7, 8, 9, 10`</span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1281ef9b03e4ffd8c05c6a7142b3bb1"><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:0">In an array of arrays, e.g. given </span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:1">`[[], [1, 2, 3], [4, 5], [], [], [6, 7], [8], [9, 10], [], []]`</span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:2">, print: </span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:3">`1, 2, 3, 4, 5, 6, 7, 8, 9, 10`</span><span data-offset-key="f1281ef9b03e4ffd8c05c6a7142b3bb1:4">.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f43aee810644cb0a0bb90c389027ece"><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:0">Implement an iterator that supports </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:1">`hasNext()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:2">, </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:3">`next()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:4"> and </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:5">`remove()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:6"> methods.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f43aee810644cb0a0bb90c389027ece"><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:0">Implement an iterator that supports </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:1">`hasNext()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:2">, </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:3">`next()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:4"> and </span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:5">`remove()`</span><span data-offset-key="6f43aee810644cb0a0bb90c389027ece:6"> methods.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1049684f4c0b47d092b3f3a655d2ac80"><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:0">Given a list of item prices, find all possible combinations of items that sum a particular value </span><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:1">`K`</span><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1049684f4c0b47d092b3f3a655d2ac80"><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:0">Given a list of item prices, find all possible combinations of items that sum a particular value </span><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:1">`K`</span><span data-offset-key="1049684f4c0b47d092b3f3a655d2ac80:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="210abde767aa45e8a54c73460b2650d7"><span data-offset-key="210abde767aa45e8a54c73460b2650d7:0">Paginate an array with constraints, such as skipping certain items.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="210abde767aa45e8a54c73460b2650d7"><span data-offset-key="210abde767aa45e8a54c73460b2650d7:0">Paginate an array with constraints, such as skipping certain items.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="685ce12a878b473e89dcce7681dc727b"><span data-offset-key="685ce12a878b473e89dcce7681dc727b:0">Implement a circular buffer using an array.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="685ce12a878b473e89dcce7681dc727b"><span data-offset-key="685ce12a878b473e89dcce7681dc727b:0">Implement a circular buffer using an array.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64283f426f904c899a7c1f18e8b3ca7a"><span data-offset-key="64283f426f904c899a7c1f18e8b3ca7a:0">Given array of arrays, sort them in ascending order.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64283f426f904c899a7c1f18e8b3ca7a"><span data-offset-key="64283f426f904c899a7c1f18e8b3ca7a:0">Given array of arrays, sort them in ascending order.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf79e2350d6849dfae2b65ef3490eb0e"><span data-offset-key="cf79e2350d6849dfae2b65ef3490eb0e:0">Given an array of integers, print out a histogram using the said array; include a base layer (all stars)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf79e2350d6849dfae2b65ef3490eb0e"><span data-offset-key="cf79e2350d6849dfae2b65ef3490eb0e:0">Given an array of integers, print out a histogram using the said array; include a base layer (all stars)</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4af36e4512a46d1854c07159eaa82b7"><span data-offset-key="b4af36e4512a46d1854c07159eaa82b7:0">E.g. </span><span data-offset-key="b4af36e4512a46d1854c07159eaa82b7:1">`[5, 4, 0, 3, 4, 1]`</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4af36e4512a46d1854c07159eaa82b7"><span data-offset-key="b4af36e4512a46d1854c07159eaa82b7:0">E.g. </span><span data-offset-key="b4af36e4512a46d1854c07159eaa82b7:1">`[5, 4, 0, 3, 4, 1]`</span></span></span>
 
-    ***  *** **** **** *********
+  ***
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c08382ceb4f84e878876693e750ef5d9"><span data-offset-key="c08382ceb4f84e878876693e750ef5d9:0">Given an array and an index, find the product of the elements of the array except the element at that index.</span></span></span>
 
@@ -243,13 +242,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a9a4e885ea7429db4c1a834e6e0bd44"><span data-offset-key="4a9a4e885ea7429db4c1a834e6e0bd44:0">Given an array of integers find whether there is a sub-sequence that sums to 0 and return it.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e"><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:0">E.g. </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:1">`[1, 2, -3, 1]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:2"> =&gt; </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:3">`[1, 2, -3]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:4"> or </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:5">`[2, -3, 1]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:6">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e"><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:0">E.g. </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:1">`[1, 2, -3, 1]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:2"> =&gt; </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:3">`[1, 2, -3]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:4"> or </span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:5">`[2, -3, 1]`</span><span data-offset-key="d2e9bfd9db9b4af6be2dc76c8ac5cc9e:6">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f2e83bc3bd04294b855c22c4844c392"><span data-offset-key="0f2e83bc3bd04294b855c22c4844c392:0">Given an input array and another array that describes a new index for each element, mutate the input array so that each element ends up in their new index. Discuss the runtime of the algorithm and how you can be sure there would not be any infinite loops.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a986a292b58413996d2823b10e8eda4"><span data-offset-key="5a986a292b58413996d2823b10e8eda4:0">Given an array of non-negative numbers, find continuous subarray with sum to S.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="556ffd5c959843bdab05a63cdf7b1eb7"><span data-offset-key="556ffd5c959843bdab05a63cdf7b1eb7:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2016/06/01/subarray-with-given-sum/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5f557e3b50ce4da1bd53a919f2e25be7"><span data-offset-key="5f557e3b50ce4da1bd53a919f2e25be7:0">Source</span></span></a><span data-key="3e99660d677c4f579b5df40b9f4306bf"><span data-offset-key="3e99660d677c4f579b5df40b9f4306bf:0">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="556ffd5c959843bdab05a63cdf7b1eb7"><span data-offset-key="556ffd5c959843bdab05a63cdf7b1eb7:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2016/06/01/subarray-with-given-sum/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5f557e3b50ce4da1bd53a919f2e25be7"><span data-offset-key="5f557e3b50ce4da1bd53a919f2e25be7:0">Source</span></span></a><span data-key="3e99660d677c4f579b5df40b9f4306bf"><span data-offset-key="3e99660d677c4f579b5df40b9f4306bf:0">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="574c668aef024a2f98d4f132340afad0"><span data-offset-key="574c668aef024a2f98d4f132340afad0:0">Given an array of numbers list out all triplets that sum to 0. Do so with a running time of less than O(n^3).</span></span></span>
 

@@ -200,8 +200,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Stack Continued</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Stack Continued</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -215,7 +214,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4749fabfb5e74cb990b4df8cbc2eae98"><span data-offset-key="4749fabfb5e74cb990b4df8cbc2eae98:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3f87e8d7e61143bcb889b14d8a7e8d06"><span data-offset-key="3f87e8d7e61143bcb889b14d8a7e8d06:0">Stack: Introduction</span></span></span>
 
@@ -225,7 +224,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cdccc59f9e424a5a8de2aab20face5f9"><span data-offset-key="cdccc59f9e424a5a8de2aab20face5f9:0">`pop`</span><span data-offset-key="cdccc59f9e424a5a8de2aab20face5f9:1"> in a stack is taking out the top item in the stack.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6c1dc1ef76d240e6810e90dfaaf764d7"><span data-offset-key="6c1dc1ef76d240e6810e90dfaaf764d7:0">Uses of Stacks</span></span></span>
 
@@ -235,15 +234,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c5fe459104da4086a22b4a01982549df"><span data-offset-key="c5fe459104da4086a22b4a01982549df:0">**Activation Records –**</span><span data-offset-key="c5fe459104da4086a22b4a01982549df:1"> An activation record is data that keeps track of the procedure activities during the runtime of a program.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0133b9e9c96469da09920478b048b56"><span data-offset-key="e0133b9e9c96469da09920478b048b56:0">When the function is called, an activation record is created for it and keeps track of parameters and information like local variables, return address, static and dynamic links, and the return value.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0133b9e9c96469da09920478b048b56"><span data-offset-key="e0133b9e9c96469da09920478b048b56:0">When the function is called, an activation record is created for it and keeps track of parameters and information like local variables, return address, static and dynamic links, and the return value.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efbf63ebfd7b4dbc91484973a2918d60"><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:0">This activation record is the fundamental part of programming languages and is </span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:1">**implemented**</span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:2"> using a </span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:3">**stack**</span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efbf63ebfd7b4dbc91484973a2918d60"><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:0">This activation record is the fundamental part of programming languages and is </span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:1">**implemented**</span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:2"> using a </span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:3">**stack**</span><span data-offset-key="efbf63ebfd7b4dbc91484973a2918d60:4">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8625c3273e574bd18ef37300f7d8759e"><span data-offset-key="8625c3273e574bd18ef37300f7d8759e:0">**Web Browsers –**</span><span data-offset-key="8625c3273e574bd18ef37300f7d8759e:1"> Web Browsers use a stack to keep track of URLs that you have visited previously. When you visit a new page, it is added to the stack and when you hit the back button, the stack is popped and the previous URL is accessed.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8625c3273e574bd18ef37300f7d8759e"><span data-offset-key="8625c3273e574bd18ef37300f7d8759e:0">**Web Browsers –**</span><span data-offset-key="8625c3273e574bd18ef37300f7d8759e:1"> Web Browsers use a stack to keep track of URLs that you have visited previously. When you visit a new page, it is added to the stack and when you hit the back button, the stack is popped and the previous URL is accessed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40bfd9e2fbd245cdbbe242ba34102115"><span data-offset-key="40bfd9e2fbd245cdbbe242ba34102115:0">**To implement other Data Structures –**</span><span data-offset-key="40bfd9e2fbd245cdbbe242ba34102115:1"> Stacks are used to implement searches in Graphs and Trees, which are other complex data structures.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40bfd9e2fbd245cdbbe242ba34102115"><span data-offset-key="40bfd9e2fbd245cdbbe242ba34102115:0">**To implement other Data Structures –**</span><span data-offset-key="40bfd9e2fbd245cdbbe242ba34102115:1"> Stacks are used to implement searches in Graphs and Trees, which are other complex data structures.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8386d4dc336a48c9b9227af0f5bef797"><span data-offset-key="8386d4dc336a48c9b9227af0f5bef797:0">Implementing Stacks</span></span></span>
 
@@ -253,41 +252,41 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c23f8b2363304930b56695f24b7d0074"><span data-offset-key="c23f8b2363304930b56695f24b7d0074:0">**stack.isEmpty()**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="33ebd55e43034c378511bae6837220fb"><span data-offset-key="33ebd55e43034c378511bae6837220fb:0">The </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:1">`stack.isEmpty()`</span><span data-offset-key="33ebd55e43034c378511bae6837220fb:2"> method returns </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:3">`True`</span><span data-offset-key="33ebd55e43034c378511bae6837220fb:4"> if the stack is empty. Else, returns </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:5">`False`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="33ebd55e43034c378511bae6837220fb"><span data-offset-key="33ebd55e43034c378511bae6837220fb:0">The </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:1">`stack.isEmpty()`</span><span data-offset-key="33ebd55e43034c378511bae6837220fb:2"> method returns </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:3">`True`</span><span data-offset-key="33ebd55e43034c378511bae6837220fb:4"> if the stack is empty. Else, returns </span><span data-offset-key="33ebd55e43034c378511bae6837220fb:5">`False`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f61b63b36ff4de8b73174bf2e4832b5"><span data-offset-key="0f61b63b36ff4de8b73174bf2e4832b5:0">Time Complexity - O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f61b63b36ff4de8b73174bf2e4832b5"><span data-offset-key="0f61b63b36ff4de8b73174bf2e4832b5:0">Time Complexity - O(1)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4fbc0d42efd84e30a8cf1c7c8bccaedc"><span data-offset-key="4fbc0d42efd84e30a8cf1c7c8bccaedc:0">**stack.length()**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eff172f9571d4702901ed5c8dcb19642"><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:0">The </span><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:1">`stack.length()`</span><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:2"> method returns the length of the stack.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eff172f9571d4702901ed5c8dcb19642"><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:0">The </span><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:1">`stack.length()`</span><span data-offset-key="eff172f9571d4702901ed5c8dcb19642:2"> method returns the length of the stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="acf066dc7e9f45d1ae42b5a48e7a2b5b"><span data-offset-key="acf066dc7e9f45d1ae42b5a48e7a2b5b:0">Time Complexity - O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="acf066dc7e9f45d1ae42b5a48e7a2b5b"><span data-offset-key="acf066dc7e9f45d1ae42b5a48e7a2b5b:0">Time Complexity - O(1)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0cb7cf8f66574f3ea326ada52cac91b1"><span data-offset-key="0cb7cf8f66574f3ea326ada52cac91b1:0">**stack.top()**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd4d33940a704aec85deec4597ea5ef8"><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:0">The </span><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:1">`stack.top()`</span><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:2"> method returns a pointer/reference to the top element in the stack.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd4d33940a704aec85deec4597ea5ef8"><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:0">The </span><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:1">`stack.top()`</span><span data-offset-key="bd4d33940a704aec85deec4597ea5ef8:2"> method returns a pointer/reference to the top element in the stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a1bf731720f4439b54344a838a9598b"><span data-offset-key="4a1bf731720f4439b54344a838a9598b:0">Time Complexity - O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a1bf731720f4439b54344a838a9598b"><span data-offset-key="4a1bf731720f4439b54344a838a9598b:0">Time Complexity - O(1)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b2df51d2a86f48a3aecd0cf06d53c55c"><span data-offset-key="b2df51d2a86f48a3aecd0cf06d53c55c:0">**stack.push(x)**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="822bd21636b342db9de8cab6559e7d78"><span data-offset-key="822bd21636b342db9de8cab6559e7d78:0">The </span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:1">`stack.push()`</span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:2"> method inserts the element, </span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:3">`x`</span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:4"> to the top of the stack.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="822bd21636b342db9de8cab6559e7d78"><span data-offset-key="822bd21636b342db9de8cab6559e7d78:0">The </span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:1">`stack.push()`</span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:2"> method inserts the element, </span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:3">`x`</span><span data-offset-key="822bd21636b342db9de8cab6559e7d78:4"> to the top of the stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49a9bfc5ac1549819afae79051b1eb4c"><span data-offset-key="49a9bfc5ac1549819afae79051b1eb4c:0">Time Complexity - O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49a9bfc5ac1549819afae79051b1eb4c"><span data-offset-key="49a9bfc5ac1549819afae79051b1eb4c:0">Time Complexity - O(1)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54db983dbe824af8b6481caf342fe85d"><span data-offset-key="54db983dbe824af8b6481caf342fe85d:0">**stack.pop()**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba6a03dc8fb045eaab9d484800ee59f9"><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:0">The </span><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:1">`stack.pop()`</span><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:2"> method removes the top element of the stack and returns it.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba6a03dc8fb045eaab9d484800ee59f9"><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:0">The </span><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:1">`stack.pop()`</span><span data-offset-key="ba6a03dc8fb045eaab9d484800ee59f9:2"> method removes the top element of the stack and returns it.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb0e260431e24b17ab41b13f1d4adcff"><span data-offset-key="bb0e260431e24b17ab41b13f1d4adcff:0">Time Complexity - O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb0e260431e24b17ab41b13f1d4adcff"><span data-offset-key="bb0e260431e24b17ab41b13f1d4adcff:0">Time Complexity - O(1)</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d4286808c92e40b1b14cc9aec191013a"><span data-offset-key="d4286808c92e40b1b14cc9aec191013a:0">Stack Implementations</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd0598d19c8b46eabe2f00d7d9834cae"><span data-offset-key="fd0598d19c8b46eabe2f00d7d9834cae:0">In Python, we can implement the stack by various methods. We are going to dive into two of the methods - the </span><span data-offset-key="fd0598d19c8b46eabe2f00d7d9834cae:1">**common method**</span><span data-offset-key="fd0598d19c8b46eabe2f00d7d9834cae:2"> and the </span><span data-offset-key="fd0598d19c8b46eabe2f00d7d9834cae:3">**efficient method**</span><span data-offset-key="fd0598d19c8b46eabe2f00d7d9834cae:4">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="75d32f4884644f23af372a7534317b0d"><span data-offset-key="75d32f4884644f23af372a7534317b0d:0">Stack using a List</span></span></span>
 
@@ -295,7 +294,7 @@
 
     class Stack:​    def __init__(self):        """        Initializing Stack.        """        self.stack = []​    def isEmpty(self) -> bool:        return True if len(self.stack) == 0 else False​    def length(self) -> int:        return len(self.stack)​    def top(self) -> int:        return self.stack[-1]  ​    def push(self, x: int) -> None:        self.x = x        self.stack.append(x)       ​    def pop(self) -> None:        self.stack.pop()
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8024d5b5931e4d5a968afb7d4fe81436"><span data-offset-key="8024d5b5931e4d5a968afb7d4fe81436:0">Stack using collection.Deque</span></span></span>
 
@@ -305,29 +304,29 @@
 
     from collections import dequeclass Stack:​    def __init__(self):        """        Initializing Stack.        """        self.stack = deque()​    def isEmpty(self) -> bool:        return True if len(self.stack) == 0 else False​    def length(self) -> int:        return len(self.stack)​    def top(self) -> int:        return self.stack[-1]  ​    def push(self, x: int) -> None:        self.x = x        self.stack.append(x)   ​    def pop(self) -> None:        self.stack.pop()
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8b4779f1842f4fc2843d4221004101fd"><span data-offset-key="8b4779f1842f4fc2843d4221004101fd:0">Practice Stacks</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28d9bd56bd9747c3bcab92810a8ecea6"><span data-offset-key="28d9bd56bd9747c3bcab92810a8ecea6:0">Once you are done with understanding the stack and the basic implementation, practice the following problems and problem-sets in order to get a strong grasp on stacks.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af76724f3cba422ca13609012aabfde1"><span data-offset-key="af76724f3cba422ca13609012aabfde1:0">Infix to Postfix - </span></span><a href="https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9a91cee85af44c4c8efcccf8cf5425aa"><span data-offset-key="9a91cee85af44c4c8efcccf8cf5425aa:0">GeeksForGeeks</span></span></a><span data-key="edd0fb12c7674641b57eb35e920b72ba"><span data-offset-key="edd0fb12c7674641b57eb35e920b72ba:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af76724f3cba422ca13609012aabfde1"><span data-offset-key="af76724f3cba422ca13609012aabfde1:0">Infix to Postfix - </span></span><a href="https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9a91cee85af44c4c8efcccf8cf5425aa"><span data-offset-key="9a91cee85af44c4c8efcccf8cf5425aa:0">GeeksForGeeks</span></span></a><span data-key="edd0fb12c7674641b57eb35e920b72ba"><span data-offset-key="edd0fb12c7674641b57eb35e920b72ba:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a838c0048b8643bd951f9fde3aa63fdd"><span data-offset-key="a838c0048b8643bd951f9fde3aa63fdd:0">Next Greater Element - </span></span><a href="https://www.geeksforgeeks.org/next-greater-element/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e04dd6e7f35d406f85ae23988d4bccfa"><span data-offset-key="e04dd6e7f35d406f85ae23988d4bccfa:0">GeeksForGeeks</span></span></a><span data-key="5d34e948737f41109a6288c9d83c368f"><span data-offset-key="5d34e948737f41109a6288c9d83c368f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a838c0048b8643bd951f9fde3aa63fdd"><span data-offset-key="a838c0048b8643bd951f9fde3aa63fdd:0">Next Greater Element - </span></span><a href="https://www.geeksforgeeks.org/next-greater-element/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e04dd6e7f35d406f85ae23988d4bccfa"><span data-offset-key="e04dd6e7f35d406f85ae23988d4bccfa:0">GeeksForGeeks</span></span></a><span data-key="5d34e948737f41109a6288c9d83c368f"><span data-offset-key="5d34e948737f41109a6288c9d83c368f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf3eee55093e45f682afadf93c5cda11"><span data-offset-key="cf3eee55093e45f682afadf93c5cda11:0">Postfix to Prefix - </span></span><a href="https://www.geeksforgeeks.org/postfix-prefix-conversion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7b67c9a4733a4454852dd89961e5a914"><span data-offset-key="7b67c9a4733a4454852dd89961e5a914:0">GeeksForGeeks</span></span></a><span data-key="022aecf84d4d4b13b0c6cef7d65141b4"><span data-offset-key="022aecf84d4d4b13b0c6cef7d65141b4:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf3eee55093e45f682afadf93c5cda11"><span data-offset-key="cf3eee55093e45f682afadf93c5cda11:0">Postfix to Prefix - </span></span><a href="https://www.geeksforgeeks.org/postfix-prefix-conversion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7b67c9a4733a4454852dd89961e5a914"><span data-offset-key="7b67c9a4733a4454852dd89961e5a914:0">GeeksForGeeks</span></span></a><span data-key="022aecf84d4d4b13b0c6cef7d65141b4"><span data-offset-key="022aecf84d4d4b13b0c6cef7d65141b4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1767bd646fe44019b4015a353a02c94"><span data-offset-key="b1767bd646fe44019b4015a353a02c94:0">Reverse a String using Stack - </span></span><a href="https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="54eeafc330804c4cbbb795ebdd1ef5f4"><span data-offset-key="54eeafc330804c4cbbb795ebdd1ef5f4:0">GeeksForGeeks</span></span></a><span data-key="632ef7e1254e4c7dbc66b36bca8abc84"><span data-offset-key="632ef7e1254e4c7dbc66b36bca8abc84:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1767bd646fe44019b4015a353a02c94"><span data-offset-key="b1767bd646fe44019b4015a353a02c94:0">Reverse a String using Stack - </span></span><a href="https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="54eeafc330804c4cbbb795ebdd1ef5f4"><span data-offset-key="54eeafc330804c4cbbb795ebdd1ef5f4:0">GeeksForGeeks</span></span></a><span data-key="632ef7e1254e4c7dbc66b36bca8abc84"><span data-offset-key="632ef7e1254e4c7dbc66b36bca8abc84:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4bb9e4f314504e8486d2b16a246aa1b4"><span data-offset-key="4bb9e4f314504e8486d2b16a246aa1b4:0">Mini Parser - </span></span><a href="https://leetcode.com/problems/mini-parser/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7e470772c4c0425ea5de3bb98a7bcbc5"><span data-offset-key="7e470772c4c0425ea5de3bb98a7bcbc5:0">LeetCode</span></span></a><span data-key="83fe43d5cae948c191c0a98a63c2673f"><span data-offset-key="83fe43d5cae948c191c0a98a63c2673f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4bb9e4f314504e8486d2b16a246aa1b4"><span data-offset-key="4bb9e4f314504e8486d2b16a246aa1b4:0">Mini Parser - </span></span><a href="https://leetcode.com/problems/mini-parser/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7e470772c4c0425ea5de3bb98a7bcbc5"><span data-offset-key="7e470772c4c0425ea5de3bb98a7bcbc5:0">LeetCode</span></span></a><span data-key="83fe43d5cae948c191c0a98a63c2673f"><span data-offset-key="83fe43d5cae948c191c0a98a63c2673f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c454b0e8a04e4d7eab6df05ba11116db"><span data-offset-key="c454b0e8a04e4d7eab6df05ba11116db:0">Simplify Path - </span></span><a href="https://leetcode.com/problems/simplify-path/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="85eae8becb1e4320aa9c4ce6e9d40b82"><span data-offset-key="85eae8becb1e4320aa9c4ce6e9d40b82:0">LeetCode</span></span></a><span data-key="4ab025ebca514d71b99e805c87162e6b"><span data-offset-key="4ab025ebca514d71b99e805c87162e6b:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c454b0e8a04e4d7eab6df05ba11116db"><span data-offset-key="c454b0e8a04e4d7eab6df05ba11116db:0">Simplify Path - </span></span><a href="https://leetcode.com/problems/simplify-path/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="85eae8becb1e4320aa9c4ce6e9d40b82"><span data-offset-key="85eae8becb1e4320aa9c4ce6e9d40b82:0">LeetCode</span></span></a><span data-key="4ab025ebca514d71b99e805c87162e6b"><span data-offset-key="4ab025ebca514d71b99e805c87162e6b:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c9be20e13dd460090ebe63f37857abd"><span data-offset-key="1c9be20e13dd460090ebe63f37857abd:0">More Stack Problems - </span></span><a href="https://leetcode.com/tag/stack/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="37da19cf0cc84f8ab81cd35a425ab2b3"><span data-offset-key="37da19cf0cc84f8ab81cd35a425ab2b3:0">LeetCode</span></span></a><span data-key="9687d57fe7214f15a6dd295ac50f9926"><span data-offset-key="9687d57fe7214f15a6dd295ac50f9926:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c9be20e13dd460090ebe63f37857abd"><span data-offset-key="1c9be20e13dd460090ebe63f37857abd:0">More Stack Problems - </span></span><a href="https://leetcode.com/tag/stack/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="37da19cf0cc84f8ab81cd35a425ab2b3"><span data-offset-key="37da19cf0cc84f8ab81cd35a425ab2b3:0">LeetCode</span></span></a><span data-key="9687d57fe7214f15a6dd295ac50f9926"><span data-offset-key="9687d57fe7214f15a6dd295ac50f9926:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee108575c34547fcb965e41bd4ae62cb"><span data-offset-key="ee108575c34547fcb965e41bd4ae62cb:0">Stack Problem Set - </span></span><a href="https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7b30a689b38c4db0bb30fa3f5592802b"><span data-offset-key="7b30a689b38c4db0bb30fa3f5592802b:0">HackerRank</span></span></a><span data-key="aab99be98fc14e16ad1a59032ff1f76f"><span data-offset-key="aab99be98fc14e16ad1a59032ff1f76f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee108575c34547fcb965e41bd4ae62cb"><span data-offset-key="ee108575c34547fcb965e41bd4ae62cb:0">Stack Problem Set - </span></span><a href="https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7b30a689b38c4db0bb30fa3f5592802b"><span data-offset-key="7b30a689b38c4db0bb30fa3f5592802b:0">HackerRank</span></span></a><span data-key="aab99be98fc14e16ad1a59032ff1f76f"><span data-offset-key="aab99be98fc14e16ad1a59032ff1f76f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d4f971cf09024a5593fd4dd5a9a57b1e"><span data-offset-key="d4f971cf09024a5593fd4dd5a9a57b1e:0">Conclusion</span></span></span>
 

@@ -202,8 +202,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Set</span>
-========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Set</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -229,29 +228,29 @@
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f50a68f923b4d6cb19e5005862a8d75"><span data-offset-key="9f50a68f923b4d6cb19e5005862a8d75:0">**Modifying operations**</span><span data-offset-key="9f50a68f923b4d6cb19e5005862a8d75:1">, which change the set.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ef312d89b414d39887dc54b06697e2c"><span data-offset-key="9ef312d89b414d39887dc54b06697e2c:0">`SEARCH(S,k)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ef312d89b414d39887dc54b06697e2c"><span data-offset-key="9ef312d89b414d39887dc54b06697e2c:0">`SEARCH(S,k)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ddaffffc4f14d499cf5b1eb74858d5d"><span data-offset-key="2ddaffffc4f14d499cf5b1eb74858d5d:0">`INSERT(S,x)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ddaffffc4f14d499cf5b1eb74858d5d"><span data-offset-key="2ddaffffc4f14d499cf5b1eb74858d5d:0">`INSERT(S,x)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17db7441071b414781bee1d66cd254e1"><span data-offset-key="17db7441071b414781bee1d66cd254e1:0">`DELETE(S,x)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17db7441071b414781bee1d66cd254e1"><span data-offset-key="17db7441071b414781bee1d66cd254e1:0">`DELETE(S,x)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7dc57f8b16a940bc8214726a786abfac"><span data-offset-key="7dc57f8b16a940bc8214726a786abfac:0">`MINIMUM(S)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7dc57f8b16a940bc8214726a786abfac"><span data-offset-key="7dc57f8b16a940bc8214726a786abfac:0">`MINIMUM(S)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd6e1959ee0742c796a79e9ef730e91b"><span data-offset-key="bd6e1959ee0742c796a79e9ef730e91b:0">`MAXIMUM(S)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd6e1959ee0742c796a79e9ef730e91b"><span data-offset-key="bd6e1959ee0742c796a79e9ef730e91b:0">`MAXIMUM(S)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fa13946ae5548c6827ea93a8d78c476"><span data-offset-key="1fa13946ae5548c6827ea93a8d78c476:0">`SUCCESSOR(S,x)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fa13946ae5548c6827ea93a8d78c476"><span data-offset-key="1fa13946ae5548c6827ea93a8d78c476:0">`SUCCESSOR(S,x)`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c8b20fd8e564a11bf0ba83675d27639"><span data-offset-key="3c8b20fd8e564a11bf0ba83675d27639:0">`PREDECESSOR(S,x)`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c8b20fd8e564a11bf0ba83675d27639"><span data-offset-key="3c8b20fd8e564a11bf0ba83675d27639:0">`PREDECESSOR(S,x)`</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="132b3650dd0c4efa997807cf55efc65e"><span data-offset-key="132b3650dd0c4efa997807cf55efc65e:0">Dictionaries</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b547d207018c42af9ac7324c02695a18"><span data-offset-key="b547d207018c42af9ac7324c02695a18:0">Algorithms may require several different types of operations to be performed on sets. For example, many algorithms need only the ability to:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2f37fdaddeeb433da9b28a7d8d661059"><span data-offset-key="2f37fdaddeeb433da9b28a7d8d661059:0">Insert elements into</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2f37fdaddeeb433da9b28a7d8d661059"><span data-offset-key="2f37fdaddeeb433da9b28a7d8d661059:0">Insert elements into</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a380dc4d0d74f2fae027e92e87ac326"><span data-offset-key="7a380dc4d0d74f2fae027e92e87ac326:0">Delete elements from</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a380dc4d0d74f2fae027e92e87ac326"><span data-offset-key="7a380dc4d0d74f2fae027e92e87ac326:0">Delete elements from</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16dc29c3aa1c4cb9b0b31fa7bc386a98"><span data-offset-key="16dc29c3aa1c4cb9b0b31fa7bc386a98:0">Test membership in a set.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16dc29c3aa1c4cb9b0b31fa7bc386a98"><span data-offset-key="16dc29c3aa1c4cb9b0b31fa7bc386a98:0">Test membership in a set.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="561988724eba4e768ebce21c3eb70c8a"><span data-offset-key="561988724eba4e768ebce21c3eb70c8a:0">We call a dynamic set that supports these operations a </span><span data-offset-key="561988724eba4e768ebce21c3eb70c8a:1">**dictionary**</span><span data-offset-key="561988724eba4e768ebce21c3eb70c8a:2">.</span></span></span>
 

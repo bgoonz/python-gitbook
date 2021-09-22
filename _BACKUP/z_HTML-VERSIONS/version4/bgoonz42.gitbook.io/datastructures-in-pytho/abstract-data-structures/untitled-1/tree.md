@@ -212,8 +212,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree</span>
-=========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -239,9 +238,9 @@
 
 <a href="tree/red_black-tree.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--card-5e635eb5--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red\_Black Tree</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red_Black Tree</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">/abstract-data-structures/untitled-1/tree/red\_black-tree</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">/abstract-data-structures/untitled-1/tree/red_black-tree</span>
 
 <a href="../../cirriculumn/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--card-5e635eb5--S400Vertical-a18add7e"></a>
 
@@ -287,15 +286,15 @@
 
 > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af04824725354a9482f83babc5e279c9"><span data-offset-key="af04824725354a9482f83babc5e279c9:0">**Binary search trees have four strict rules:**</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af67bfe49e584c4fbf1e32ebb9485e33"><span data-offset-key="af67bfe49e584c4fbf1e32ebb9485e33:0">The left subtree contains only nodes with elements lesser than the root.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af67bfe49e584c4fbf1e32ebb9485e33"><span data-offset-key="af67bfe49e584c4fbf1e32ebb9485e33:0">The left subtree contains only nodes with elements lesser than the root.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4828d7c81d0f42b2af1289dd64c8bc1e"><span data-offset-key="4828d7c81d0f42b2af1289dd64c8bc1e:0">The right subtree contains only nodes with elements greater than the root.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4828d7c81d0f42b2af1289dd64c8bc1e"><span data-offset-key="4828d7c81d0f42b2af1289dd64c8bc1e:0">The right subtree contains only nodes with elements greater than the root.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47a05f4df40e44719c9532ac987eb90e"><span data-offset-key="47a05f4df40e44719c9532ac987eb90e:0">Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47a05f4df40e44719c9532ac987eb90e"><span data-offset-key="47a05f4df40e44719c9532ac987eb90e:0">Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32b7fea29a5241149607240229480551"><span data-offset-key="32b7fea29a5241149607240229480551:0">There can be no duplicate nodes, i.e. no two nodes can have the same value.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32b7fea29a5241149607240229480551"><span data-offset-key="32b7fea29a5241149607240229480551:0">There can be no duplicate nodes, i.e. no two nodes can have the same value.</span></span></span>
 >
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d4f107fc43847df9e2c81d22196301e"><span data-offset-key="1d4f107fc43847df9e2c81d22196301e:0"><span data-slate-zero-width="n">​</span></span></span></span>
+> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d4f107fc43847df9e2c81d22196301e"><span data-offset-key="1d4f107fc43847df9e2c81d22196301e:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <a href="array.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--card-5e635eb5--S400Vertical-a18add7e"></a>
 

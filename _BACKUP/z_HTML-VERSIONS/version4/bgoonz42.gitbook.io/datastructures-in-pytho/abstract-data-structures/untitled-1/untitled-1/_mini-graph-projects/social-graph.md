@@ -220,8 +220,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">\# Social Graph</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">\# Social Graph</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -247,9 +246,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5980e064f8b4318844b35acc9b20ee2"><span data-offset-key="f5980e064f8b4318844b35acc9b20ee2:0">Note that in the above example, the average number of friendships is exactly 2 but the actual number of friends per user ranges anywhere from 0 to 4.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba4e9cf938de45de944ab139e2d34145"><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:0">Hint 1: To create N random friendships, you could create a list with all possible friendship combinations, shuffle the list, then grab the first N elements from the list. You will need to </span><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:1">`import random`</span><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:2"> to get shuffle.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba4e9cf938de45de944ab139e2d34145"><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:0">Hint 1: To create N random friendships, you could create a list with all possible friendship combinations, shuffle the list, then grab the first N elements from the list. You will need to </span><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:1">`import random`</span><span data-offset-key="ba4e9cf938de45de944ab139e2d34145:2"> to get shuffle.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0202ef1185bd415aaa29c351a3726cb9"><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:0">Hint 2: </span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:1">`addFriendship(1, 2)`</span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:2"> is the same as </span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:3">`addFriendship(2, 1)`</span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:4">. You should avoid calling one after the other since it will do nothing but print a warning. You can avoid this by only creating friendships where user1 &lt; user2.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0202ef1185bd415aaa29c351a3726cb9"><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:0">Hint 2: </span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:1">`addFriendship(1, 2)`</span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:2"> is the same as </span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:3">`addFriendship(2, 1)`</span><span data-offset-key="0202ef1185bd415aaa29c351a3726cb9:4">. You should avoid calling one after the other since it will do nothing but print a warning. You can avoid this by only creating friendships where user1 &lt; user2.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="e3dd5f5dc35a4575adadb279baaed8fe"><span data-offset-key="e3dd5f5dc35a4575adadb279baaed8fe:0">2. Degrees of Separation</span></span></span>
 
@@ -259,9 +258,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00773439aed845eeab9dde428e3be672"><span data-offset-key="00773439aed845eeab9dde428e3be672:0">Note that in this sample, Users 3, 4 and 9 are not in User 1's extended social network.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91a44a11585a480092774979a19a50c3"><span data-offset-key="91a44a11585a480092774979a19a50c3:0">Hint 1: What kind of graph search guarantees you a shortest path?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91a44a11585a480092774979a19a50c3"><span data-offset-key="91a44a11585a480092774979a19a50c3:0">Hint 1: What kind of graph search guarantees you a shortest path?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26666111e34149108cf6b50dea79540e"><span data-offset-key="26666111e34149108cf6b50dea79540e:0">Hint 2: Instead of using a </span><span data-offset-key="26666111e34149108cf6b50dea79540e:1">`set`</span><span data-offset-key="26666111e34149108cf6b50dea79540e:2"> to mark users as visited, you could use a </span><span data-offset-key="26666111e34149108cf6b50dea79540e:3">`dictionary`</span><span data-offset-key="26666111e34149108cf6b50dea79540e:4">. Similar to sets, checking if something is in a dictionary runs in O(1) time. If the visited user is the key, what would the value be?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26666111e34149108cf6b50dea79540e"><span data-offset-key="26666111e34149108cf6b50dea79540e:0">Hint 2: Instead of using a </span><span data-offset-key="26666111e34149108cf6b50dea79540e:1">`set`</span><span data-offset-key="26666111e34149108cf6b50dea79540e:2"> to mark users as visited, you could use a </span><span data-offset-key="26666111e34149108cf6b50dea79540e:3">`dictionary`</span><span data-offset-key="26666111e34149108cf6b50dea79540e:4">. Similar to sets, checking if something is in a dictionary runs in O(1) time. If the visited user is the key, what would the value be?</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="852a9159c39b48589b8f88969791b818"><span data-offset-key="852a9159c39b48589b8f88969791b818:0">3. Questions</span></span></span>
 

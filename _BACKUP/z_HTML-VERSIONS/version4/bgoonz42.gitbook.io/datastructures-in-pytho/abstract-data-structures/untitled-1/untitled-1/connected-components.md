@@ -214,8 +214,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Connected Components</span>
-=========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Connected Components</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -227,7 +226,7 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="8b58d3fa68104e648a71a3c7cd6e9ea2"><span data-offset-key="8b58d3fa68104e648a71a3c7cd6e9ea2:0">Connected Components in a Graph</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7fdc01773ac46399834dea367fe4c0d"><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:0">A </span><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:1">*connected component*</span><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:2"> of a graph is a subgraph where all vertices are reachable via edges in the subgraph.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7fdc01773ac46399834dea367fe4c0d"><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:0">A </span><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:1">_connected component_</span><span data-offset-key="d7fdc01773ac46399834dea367fe4c0d:2"> of a graph is a subgraph where all vertices are reachable via edges in the subgraph.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4a5d2bdddff4f9ba105668b65256313"><span data-offset-key="c4a5d2bdddff4f9ba105668b65256313:0">Here's an example of a graph with 8 connected components:</span></span></span>
 
@@ -239,13 +238,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="035d822e37a64c958b6043748125b44e"><span data-offset-key="035d822e37a64c958b6043748125b44e:0">There are a lot of theoretical uses of connected components that are beyond the scope of the course. But on the more practical front, here are some potential uses:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c08aee5796046fcb2376eee5fcf54b2"><span data-offset-key="7c08aee5796046fcb2376eee5fcf54b2:0">Look for people you might know in a social network.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c08aee5796046fcb2376eee5fcf54b2"><span data-offset-key="7c08aee5796046fcb2376eee5fcf54b2:0">Look for people you might know in a social network.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09f055970c20463e829f3886960c2105"><span data-offset-key="09f055970c20463e829f3886960c2105:0">Predict the spread of zombie apocalypse or other disease within social groups.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09f055970c20463e829f3886960c2105"><span data-offset-key="09f055970c20463e829f3886960c2105:0">Predict the spread of zombie apocalypse or other disease within social groups.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c0665e4554644c96acf66e22030502a5"><span data-offset-key="c0665e4554644c96acf66e22030502a5:0">Determining which parts of a computer network are reachable from another.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c0665e4554644c96acf66e22030502a5"><span data-offset-key="c0665e4554644c96acf66e22030502a5:0">Determining which parts of a computer network are reachable from another.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="955f4f8c80a24971a886b7311c0f3eac"><span data-offset-key="955f4f8c80a24971a886b7311c0f3eac:0">Finding clusters of related information.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="955f4f8c80a24971a886b7311c0f3eac"><span data-offset-key="955f4f8c80a24971a886b7311c0f3eac:0">Finding clusters of related information.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="58dd1c7aba0d484e942ecc758ea670fb"><span data-offset-key="58dd1c7aba0d484e942ecc758ea670fb:0">Finding Connected Components</span></span></span>
 

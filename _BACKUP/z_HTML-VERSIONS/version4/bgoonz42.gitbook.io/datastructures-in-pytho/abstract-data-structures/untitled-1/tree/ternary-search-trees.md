@@ -212,8 +212,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Ternary-search-trees</span>
-=========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Ternary-search-trees</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -231,7 +230,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Next</span>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red\_Black Tree</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">Red_Black Tree</span>
 
 <img src="https://avatars.githubusercontent.com/u/66654881?v=4" class="image-67b14f24--avatar-1c1d03ec" />
 

@@ -214,8 +214,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph BFS</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph BFS</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -227,7 +226,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5c32855b28cc4303a30a7bb6402b3d27"><span data-offset-key="5c32855b28cc4303a30a7bb6402b3d27:0">Overview</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78a347b9e2814e639e76412924703923"><span data-offset-key="78a347b9e2814e639e76412924703923:0">When searching a graph, one of the approaches is called </span><span data-offset-key="78a347b9e2814e639e76412924703923:1">*breadth first search*</span><span data-offset-key="78a347b9e2814e639e76412924703923:2">. This explores the graph outward in rings of ever increasing distance from the starting vertex.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78a347b9e2814e639e76412924703923"><span data-offset-key="78a347b9e2814e639e76412924703923:0">When searching a graph, one of the approaches is called </span><span data-offset-key="78a347b9e2814e639e76412924703923:1">_breadth first search_</span><span data-offset-key="78a347b9e2814e639e76412924703923:2">. This explores the graph outward in rings of ever increasing distance from the starting vertex.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="667133e00c13468d8c64c2a480ab3965"><span data-offset-key="667133e00c13468d8c64c2a480ab3965:0">The algorithm never attempts to explore a vert that it either has explored or is exploring.</span></span></span>
 
@@ -241,23 +240,23 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="62d13ce2eca94dcaa2387abc34a6e8d3"><span data-offset-key="62d13ce2eca94dcaa2387abc34a6e8d3:0">Uses of BFS</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d4a048e297e4e15a915a7b6e161dab2"><span data-offset-key="2d4a048e297e4e15a915a7b6e161dab2:0">Pathfinding, Routing</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d4a048e297e4e15a915a7b6e161dab2"><span data-offset-key="2d4a048e297e4e15a915a7b6e161dab2:0">Pathfinding, Routing</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14ff13f36dcd440c84bab8b883afd1d2"><span data-offset-key="14ff13f36dcd440c84bab8b883afd1d2:0">Find neighbor nodes in a P2P network like Bittorrent</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14ff13f36dcd440c84bab8b883afd1d2"><span data-offset-key="14ff13f36dcd440c84bab8b883afd1d2:0">Find neighbor nodes in a P2P network like Bittorrent</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="99353a424f9c49258aef37de28a4f484"><span data-offset-key="99353a424f9c49258aef37de28a4f484:0">Web crawlers</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="99353a424f9c49258aef37de28a4f484"><span data-offset-key="99353a424f9c49258aef37de28a4f484:0">Web crawlers</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bfa7647a2ff84976b1f6e75a78a79921"><span data-offset-key="bfa7647a2ff84976b1f6e75a78a79921:0">Finding people n connections away on a social site</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bfa7647a2ff84976b1f6e75a78a79921"><span data-offset-key="bfa7647a2ff84976b1f6e75a78a79921:0">Finding people n connections away on a social site</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3979e56a49354f41b36fd6169d68ee69"><span data-offset-key="3979e56a49354f41b36fd6169d68ee69:0">Find neighboring locations on graph</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3979e56a49354f41b36fd6169d68ee69"><span data-offset-key="3979e56a49354f41b36fd6169d68ee69:0">Find neighboring locations on graph</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f418e41e78f453bb5fb7903f3d4be57"><span data-offset-key="7f418e41e78f453bb5fb7903f3d4be57:0">Broadcasting in a network</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f418e41e78f453bb5fb7903f3d4be57"><span data-offset-key="7f418e41e78f453bb5fb7903f3d4be57:0">Broadcasting in a network</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cedac10b24a84411aa25d14872ba7537"><span data-offset-key="cedac10b24a84411aa25d14872ba7537:0">Cycle detection in a graph</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cedac10b24a84411aa25d14872ba7537"><span data-offset-key="cedac10b24a84411aa25d14872ba7537:0">Cycle detection in a graph</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16a6aaffb7594cba89be81c3cbf2ff77"><span data-offset-key="16a6aaffb7594cba89be81c3cbf2ff77:0">Finding \[Connected Components\](</span></span><a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="af7651bb0904424d87e0a109c4961eda"><span data-offset-key="af7651bb0904424d87e0a109c4961eda:0">https://en.wikipedia.org/wiki/Connected_component_(graph_theory)</span></span></a><span data-key="16f4d90245c845afbbca9704d1d9284c"><span data-offset-key="16f4d90245c845afbbca9704d1d9284c:0">)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16a6aaffb7594cba89be81c3cbf2ff77"><span data-offset-key="16a6aaffb7594cba89be81c3cbf2ff77:0">Finding \[Connected Components\](</span></span><a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="af7651bb0904424d87e0a109c4961eda"><span data-offset-key="af7651bb0904424d87e0a109c4961eda:0">https://en.wikipedia.org/wiki/Connected*component*(graph_theory)</span></span></a><span data-key="16f4d90245c845afbbca9704d1d9284c"><span data-offset-key="16f4d90245c845afbbca9704d1d9284c:0">)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f7c076b10be04a5eac1ec1867dfc80e3"><span data-offset-key="f7c076b10be04a5eac1ec1867dfc80e3:0">Solving a number of theoretical graph problems</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f7c076b10be04a5eac1ec1867dfc80e3"><span data-offset-key="f7c076b10be04a5eac1ec1867dfc80e3:0">Solving a number of theoretical graph problems</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="6d4446cf6f9c4e478f0cf66cb9bf9df0"><span data-offset-key="6d4446cf6f9c4e478f0cf66cb9bf9df0:0">Coloring Vertexes</span></span></span>
 
@@ -269,7 +268,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb692dbf34674204bf8b6c7d6b17aade"><span data-offset-key="fb692dbf34674204bf8b6c7d6b17aade:0">In BFS, it's useful to track which nodes we need to follow up on. For example, in the diagram above, when we get to node 2, we need to explore node 3 and 4 in the future, in order.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="580de5461df3454594018cc92dddcd28"><span data-offset-key="580de5461df3454594018cc92dddcd28:0">We can track that by adding neighbors to a </span><span data-offset-key="580de5461df3454594018cc92dddcd28:1">*queue*</span><span data-offset-key="580de5461df3454594018cc92dddcd28:2">, and then exploring the verts in the queue.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="580de5461df3454594018cc92dddcd28"><span data-offset-key="580de5461df3454594018cc92dddcd28:0">We can track that by adding neighbors to a </span><span data-offset-key="580de5461df3454594018cc92dddcd28:1">_queue_</span><span data-offset-key="580de5461df3454594018cc92dddcd28:2">, and then exploring the verts in the queue.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7ff085b10f9c478898808634ed767965"><span data-offset-key="7ff085b10f9c478898808634ed767965:0">Pseudocode for BFS</span></span></span>
 
