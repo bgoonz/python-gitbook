@@ -169,7 +169,7 @@ The performance of a binary search tree is dependant on the height of the tree. 
 
 To understand why that is, consider the following data stored in an array:
 
-```python
+```text
 [1, 2, 3, 4]
 ```
 
@@ -282,7 +282,7 @@ A hash table is a data structure which is capable of maping ‘keys’ to ‘val
 
 In Python it’s called a ‘dictionary’ and has the following structure \(on top of which are functions such as `del`, `get` and `pop` etc that can manipulate the underlying data\):
 
-```python
+```text
 table = {'name': 'foobar',
          'number': 123}
 ```

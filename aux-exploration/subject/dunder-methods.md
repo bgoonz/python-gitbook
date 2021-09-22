@@ -42,7 +42,7 @@ Before we continue it will be important to have the following:
 
 Consider a case where we have the following class:
 
-```python
+```text
 class point:
     x = 4
     y = 5
@@ -57,7 +57,7 @@ We could also override other methods such as the `len, +, []` etc. We will creat
 
 #### 5. Our custom class <a id="5-our-custom-class"></a>
 
-```python
+```text
 class softwares:
     names = []
     versions = {}
@@ -73,7 +73,7 @@ Before moving on, please ensure that your indentation is correct. The methods th
 
 This is a method you must have already used if you have worked with classes. The `init` method is used to create an instance of the class.
 
-```python
+```text
 def __init__(self,names):
     if names:
         self.names = names.copy()
@@ -87,7 +87,7 @@ The `init` method defined above accepts a list of names as parameters and stores
 
 If the list is empty, an exception is raised. Below is how we would use the `init` method.
 
-```python
+```text
 p = softwares(['S1','S2','S3'])
 p1 = softwares([])
 ```
@@ -98,7 +98,7 @@ The first statement would work fine but the second line would raise an exception
 
 The `str` method is useful when we want to use instances of our class in a print statement. As discussed earlier, it usually returns a memory object. But we can override the `str` method to meet our requirements.
 
-```python
+```text
 def __str__(self):
     s ="The current softwares and their versions are listed below: \n"
     for key,value in self.versions.items():
@@ -108,7 +108,7 @@ def __str__(self):
 
 The above `str` method returns the software and their versions. Ensure that the function returns a string. Below is how we would call the method.
 
-```python
+```text
 print(p)
 ```
 
@@ -116,14 +116,14 @@ print(p)
 
 When assigning values in a dictionary, the `setitem` method is invoked.
 
-```python
+```text
 d = {}
 d['key'] = value
 ```
 
 We can give instances of our class a similar feature with the help of the `setitem` method.
 
-```python
+```text
 def __setitem__(self,name,version):
     if name in self.versions:
         self.versions[name] = version
@@ -137,7 +137,7 @@ In the 3rd line, we use the built-in `setitem` method of a dictionary.
 
 We can invoke the `setitem` method in the following way:
 
-```python
+```text
 p['S1'] = 2
 p['2'] = 2
 ```
@@ -148,14 +148,14 @@ The first line would update the version of software S1 to 2. But the second line
 
 The `getitem` method is like the `setitem` method, the major difference being that the `getitem` method is called when we use the `[]` operator of a dictionary.
 
-```python
+```text
 d = {'val':key}
 print(d['val'])
 ```
 
 Instances of our class can also be given a similar feature.
 
-```python
+```text
 def __getitem__(self,name):
     if name in self.versions:
         return self.versions[name]
@@ -165,7 +165,7 @@ def __getitem__(self,name):
 
 The above method essentially returns the version of the software. If the software is not found, it raises an exception. To invoke the `getitem` method, we can write the following line of code.
 
-```python
+```text
 print(p['S1'])
 print(p['1'])
 ```
@@ -176,7 +176,7 @@ The first line would print the version of S1. But, the second line would raise a
 
 The `delitem` is like the `setitem` and `getitem` method. To avoid repetition, we will move on to the implementation and use case.
 
-```python
+```text
 def __delitem__(self,name):
     if name in self.versions:
         del self.versions[name]
@@ -189,7 +189,7 @@ The `delitem` method deletes the software from the dictionary as well as the lis
 
 It can be used as follows.
 
-```python
+```text
 del p['S1']
 ```
 
@@ -199,7 +199,7 @@ In a dictionary, the `len` method returns the number of elements in a list or th
 
 We can define a `len` method for our class as well.
 
-```python
+```text
 def __len__(self):
     return len(self.names)
 ```
@@ -208,7 +208,7 @@ The `len` method for our class returns the number of softwares. As you might hav
 
 The `len` method of our class can be used in the following way.
 
-```python
+```text
 print(len(p))
 ```
 
@@ -216,7 +216,7 @@ print(len(p))
 
 The `contains` method is used when using the `in` operator. The return value has to be a boolean.
 
-```python
+```text
 def __contains__(self,name):
     if name in self.versions:
         return True
@@ -226,7 +226,7 @@ def __contains__(self,name):
 
 The method checks if the name is found in the dictionary. We will be using the dictionary’s built-in `contains` method for that.
 
-```python
+```text
 if 'S2' in p:
     print("Software Exists")
 else:
@@ -237,7 +237,7 @@ The code above prints the statement inside the if blocks since software S2 is pr
 
 **6.8. Complete code**
 
-```python
+```text
 class softwares:
     names = []
     versions = {}
@@ -289,7 +289,7 @@ class softwares:
 
 Before looking at some more dunder methods, let’s create a new class.
 
-```python
+```text
 class point:
     x = None
     y = None
@@ -314,7 +314,7 @@ The `add` method is called when using the `+` operator. We can define a custom `
 
 `p1 + p2` is equal to `p1._add__(p2)`
 
-```python
+```text
 def __add__(self,p2):
     x = self.x + p2.x
     y = self.y + p2.y
@@ -323,7 +323,7 @@ def __add__(self,p2):
 
 The above method adds the x and y coordinates of the first instance of `point` and the second instance of `point`. It will create a new instance of `point` and then return it.
 
-```python
+```text
 p3 = p1 + p2
 ```
 
@@ -333,7 +333,7 @@ The line of code above invokes the `add` method.
 
 The `iadd` method is like the `add` method. It is invoked when using the `+=` operator
 
-```python
+```text
 def __iadd__(self,p2):
     self.x += p2.x
     self.y += p2.y
@@ -342,7 +342,7 @@ def __iadd__(self,p2):
 
 The method above just updates an instance’s coordinates by adding the coordinates of `p2`. Make sure you are returning `self`, otherwise it will return None and won’t work as expected.
 
-```python
+```text
 p1 += p2
 print(p1)
 ```
@@ -366,21 +366,21 @@ When invoking a function like `func()`, we are invoking the `call` method.
 
 If we put in place a `call` method for our class, we can do the following:
 
-```python
+```text
 p1()
 p2()
 ```
 
 Below is an example call method:
 
-```python
+```text
 def __call__(self):
     print(f"Called Point {self.x},{self.y}")
 ```
 
 **7.5. Complete code**
 
-```python
+```text
 class point:
     x = None
     y = None

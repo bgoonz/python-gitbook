@@ -117,7 +117,7 @@ ck_007)
   
 **Output**
 
-```python
+```text
 Max pathSum of the given binary tree is 27
 ```
 

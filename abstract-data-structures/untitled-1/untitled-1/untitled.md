@@ -13,7 +13,7 @@
 
 What is Randomness? This seems like a simple question but randomness is actually one of the most commonly misunderstood concepts in math and computing. Here's a definition of randomness from [wikipedia](https://en.wikipedia.org/wiki/Randomness):
 
-```python
+```text
 Randomness is the lack of pattern or predictability in events. A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination.
 ```
 
@@ -23,7 +23,7 @@ Rock-Paper-Scissors is NOT random when played with humans. It turns out, people 
 
 Try this exercise:
 
-```python
+```text
 Write down 10 random numbers between 1-10.
 ```
 

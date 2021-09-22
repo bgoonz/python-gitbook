@@ -1450,7 +1450,7 @@ Given an array that is sorted in ascending order containing unique integer eleme
 
 For example, given an array `[1, 2, 3, 4, 5, 6, 7]`, your function should return a binary search tree with the form
 
-```python
+```text
                           4
                         /   \
                       2       6
@@ -1488,7 +1488,7 @@ From the given example where the input is `[1, 2, 3, 4, 5, 6, 7]`, the expected 
 
 A straightforward way to do this would be to take the first element of our array, call that the root, and then iterate through the rest of our array, adding those elements as nodes in the binary search tree. In pseudocode, that might look something like this:
 
-```python
+```text
 def create_min_height_bst(sorted_arr):
   root = BinaryTreeNode(sorted_arr[0])
 

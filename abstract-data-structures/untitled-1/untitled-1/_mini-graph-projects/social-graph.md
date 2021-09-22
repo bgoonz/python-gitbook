@@ -14,7 +14,7 @@ Your client is also interested in how the performance will scale as more users j
 
 It will be easier to build your extended social network if you have users to test it with. `populateGraph()` takes in a number of users to create and the average number of friends each user should have and creates them.
 
-```python
+```text
 >>> sg = SocialGraph()
 >>> sg.populateGraph(10, 2)  # Creates 10 users with an average of 2 friends each
 >>> print(sg.friendships)
@@ -34,7 +34,7 @@ Note that in the above example, the average number of friendships is exactly 2 b
 
 Now that you have a graph full of users and friendships, you can crawl through their social graphs. `getAllSocialPaths()` takes a userID and returns a dictionary containing every user in that user's extended network along with the shortest friendship path between each.
 
-```python
+```text
 >>> sg = SocialGraph()
 >>> sg.populateGraph(10, 2)
 >>> print(sg.friendships)
@@ -254,7 +254,7 @@ if __name__ == "__main__":
 {% endtab %}
 
 {% tab title="Output" %}
-```python
+```text
 
 random friendships:
 [(3, 9), (2, 11), (7, 11), (7, 9), (1, 7), (2, 9), (8, 10), (2, 6), (8, 9), (6, 8), (6, 9), (9, 11), (4, 9), (4, 5), (8, 11), (3, 11), (2, 10), (6, 7), (1, 2), (1, 3), (3, 7), (7, 8), (5, 11), (4, 7), (3, 6), (9, 10), (2, 7), (4, 10), (4, 8), (1, 10), (3, 4), (5, 10), (5, 8), (6, 11), (2, 4), (1, 8), (5, 6), (1, 5), (5, 7), (3, 8), (3, 10), (4, 6), (10, 11), (3, 5), (2, 8), (2, 5), (4, 11), (1, 6), (5, 9), (7, 10), (6, 10), (2, 3), (1, 4), (1, 9), (1, 11)]

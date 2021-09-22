@@ -2,7 +2,11 @@
 
 {% embed url="https://replit.com/@bgoonz/notes\#demo.py" %}
 
-````python
+
+
+
+
+```python
 def djb2(key):
   """
   DJB2 hash, 32-bit
@@ -245,10 +249,8 @@ Output:
 ["lambda", "school"]
 Explanation:
 "lambda" and "school" are the two most frequent words.
-````
-
+```
 Example 2:
-
 ```plaintext
 Input:
 words = ["the", "sky", "is", "cloudy", "the", "the", "the", "cloudy", "is", "is"]
@@ -259,12 +261,9 @@ Explanation:
 "the", "is", "cloudy", and "sky" are the four most frequent words. The words
 are sorted from highest frequency to lowest.
 ```
-
 Notes:
-
 - `k` is always valid: `1 <= k <= number of unique elements.
 - words in the input list only contain lowercase letters.
-
 ```
 ["the", "sky", "is", "cloudy", "the", "the", "the", "cloudy", "is", "is"]
 freq = {"the": 4, "sky": 1, "is": 3, "cloudy": 2} sort this based on the values
@@ -321,7 +320,7 @@ def top_k_frequent(words, k):
       frequency[word] = 1
 
   sorted_data = sorted(frequency, key=lambda word: (-frequency[word], word))
-
+  
   return sorted_data[:k]
 
 def helper(word):
@@ -335,8 +334,9 @@ print(top_k_frequent(["lambda", "school", "rules", "lambda", "school", "rocks"],
 
 
 # # Output
-#
+# 
 # ['the', 'is', 'cloudy', 'sky']
 # ['lambda', 'school']
 
 ```
+

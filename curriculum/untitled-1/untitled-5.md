@@ -88,9 +88,9 @@ A **directed acyclic graph \(DAG\)** is a directed graph with no cycles. In othe
 
 A DAG has several applications. DAGs can model many different kinds of information. Below is a small list of possible applications:
 
-- A spreadsheet where a vertex represents each cell and an edge for where one cell's formula uses another cell's value.
-- The milestones and activities of largescale projects where a topological ordering can help optimize the projects' schedule to use as little time as possible.
-- Collections of events and their influence on each other like family trees or version histories.
+* A spreadsheet where a vertex represents each cell and an edge for where one cell's formula uses another cell's value.
+* The milestones and activities of largescale projects where a topological ordering can help optimize the projects' schedule to use as little time as possible.
+* Collections of events and their influence on each other like family trees or version histories.
 
 It is also notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit \(in a branch\). A child could come from one parent commit or two \(in the case of a merge\). But there’s no way to go back and form a repeating loop in the git commit hierarchy.
 
@@ -145,7 +145,7 @@ Draw one graph for each of the descriptions below:
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 \(Links to an external site.\)](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
+* [https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 \(Links to an external site.\)](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%284%29.png)
 
@@ -213,11 +213,11 @@ Adjacency matrices and adjacency lists have strengths and weaknesses. Let's expl
 
 In all the following examples, we are using the following shorthand to denote the graph's properties:
 
-| Shorthand | Property                              |
-| :-------- | :------------------------------------ |
-| V         | Total number of vertices in the graph |
-| E         | Total number of edges in the graph    |
-| e         | Average number of edges per vertex    |
+| Shorthand | Property |
+| :--- | :--- |
+| V | Total number of vertices in the graph |
+| E | Total number of edges in the graph |
+| e | Average number of edges per vertex |
 
 **Space Complexity**
 
@@ -397,7 +397,7 @@ _Takeaway: Fetching all edges is less efficient in an adjacency matrix than an a
 Let's summarize all this complexity information in a table:
 
 | type | Space | Add Vert | Remove Vert | Add Edge | Remove Edge | Find Edge | Get All Edges |
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Matrix | O\(V^2\) | O\(V\) | O\(V^2\) | O\(1\) | O\(1\) | O\(1\) | O\(V\) |
 | List | O\(V+E\) | O\(1\) | O\(V\) | O\(1\) | O\(1\) | O\(1\) | O\(1\) |
 
@@ -452,7 +452,7 @@ class Graph:
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
+* [https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs](https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2811%29.png)
 
@@ -675,8 +675,9 @@ Load the `Vertex` class and `Graph` class into an interactive Python environment
 
 ### Additional Resources <a id="additional-resources"></a>
 
-- [https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/](https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/)
+* [https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/](https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%283%29.png)
+

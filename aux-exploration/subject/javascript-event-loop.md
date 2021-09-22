@@ -14,7 +14,7 @@ A function that takes a long time to complete is called a blocking function. Tec
 
 A blocking function can be a function that downloads a file from a remote server or calls an API from an external server. For example:
 
-```python
+```text
 function task(message) {
     // emulate time consuming task
     let n = 10000000000;
@@ -33,7 +33,7 @@ In this example, we have a big [`while`](https://www.javascripttutorial.net/java
 
 The script hangs for a few seconds \(depending on how fast the computer is\) and issues the following output:
 
-```python
+```text
 Start script...
 Download a file.
 Done!
@@ -49,7 +49,7 @@ Finally, the JavaScript engine places the last call to the `console.log('Done!')
 
 To prevent a blocking function from blocking other activities, you typically put it in a [callback function](https://www.javascripttutorial.net/javascript-callback/) for execution later. For example:
 
-```python
+```text
 console.log('Start script...');
 
 setTimeout(() => {
@@ -63,7 +63,7 @@ In this example, you’ll see the message `'Start script...'` and `'Done!'` imme
 
 Here’s the output:
 
-```python
+```text
 Start script...
 Done!
 Download a file.
@@ -87,7 +87,7 @@ If the call stack is not empty, the event loop waits until it is empty and place
 
 See another example:
 
-```python
+```text
 console.log('Hi!');
 
 setTimeout(() => {
@@ -102,13 +102,13 @@ In this example, the timeout is 0 second, so the message `'Execute immediately.'
 
 The JavaScript engine places the following function call on the callback queue and executes it when the call stack is empty. In other words, the JavaScript engine executes it after the `console.log('Bye!')`.
 
-```python
+```text
 console.log('Execute immediately.');Code language: JavaScript (javascript)
 ```
 
 Here’s the output:
 
-```python
+```text
 Hi!
 Bye!
 Execute immediately.

@@ -34,7 +34,7 @@ In the first solution, we are going to first find the pivot by using a partition
 
 In this solution, we are recursively calling the quicksort function which leads to more complexity in Python.
 
-```python
+```text
 def quickSort(myList, start, end):
     if start < end:
         pivot = partition(myList, start, end)
@@ -68,7 +68,7 @@ def partition(myList, start, end):
 
 This second solution is much more efficient than the first one.
 
-```python
+```text
 def quicksortBetter(arr):
     if len(arr) <= 1:
         return arr
@@ -93,7 +93,7 @@ So let’s manually defined the list which we want to pass as an argument to the
 
 So, one more thing we want to do is to calculate the time for both solutions to check which solution works better.
 
-```python
+```text
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     start = time.time()
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```python
+```text
 
 import time
 

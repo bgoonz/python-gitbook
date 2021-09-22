@@ -20,7 +20,7 @@ As an example, we will create a dictionary to translate English words into Spani
 
 One way to create a dictionary is to start with the empty dictionary and add **key-value pairs**. The empty dictionary is denoted with a pair of **curly braces**, `{}`:
 
-```python
+```text
 >>> eng2sp = {}
 >>> type(eng2sp)
 <class 'dict'>
@@ -31,7 +31,7 @@ One way to create a dictionary is to start with the empty dictionary and add **k
 
 The first assignment creates a dictionary named `eng2sp`; the other assignments add new key-value pairs to the dictionary. We can print the current value of the dictionary in the usual way:
 
-```python
+```text
 >>> print(eng2sp)
 {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 ```
@@ -42,7 +42,7 @@ The order of the pairs may not be what you expected. Python uses complex algorit
 
 Another way to create a dictionary is to provide a list of key-value pairs using the same syntax as the previous output:
 
-```python
+```text
 >>> eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
 ```
 
@@ -50,7 +50,7 @@ It doesn’t matter what order we write the pairs. The values in a dictionary ar
 
 Here is how we use a key to look up the corresponding value:
 
-```python
+```text
 >>> eng2sp['two']
 'dos'
 ```
@@ -61,7 +61,7 @@ The key `'two'` yields the value `'dos'`.
 
 The `del` statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock:
 
-```python
+```text
 >>> inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 >>> print(inventory)
 {'apples': 430, 'bananas': 312, 'pears': 217, 'oranges': 525}
@@ -69,7 +69,7 @@ The `del` statement removes a key-value pair from a dictionary. For example, the
 
 If someone buys all of the pears, we can remove the entry from the dictionary:
 
-```python
+```text
 >>> del inventory['pears']
 >>> print(inventory)
 {'apples': 430, 'bananas': 312, 'oranges': 525}
@@ -77,7 +77,7 @@ If someone buys all of the pears, we can remove the entry from the dictionary:
 
 Or if we’re expecting more pears soon, we might just change the value associated with pears:
 
-```python
+```text
 >>> inventory['pears'] = 0
 >>> print(inventory)
 {'apples': 430, 'bananas': 312, 'pears': 0, 'oranges': 525}
@@ -85,14 +85,14 @@ Or if we’re expecting more pears soon, we might just change the value associat
 
 The `len` function also works on dictionaries; it returns the number of key-value pairs:
 
-```python
+```text
 >>> len(inventory)
 4
 ```
 
 The `in` operator returns `True` if the key appears in the dictionary and `False` otherwise:
 
-```python
+```text
 >>> 'pears' in inventory
 True
 >>> 'blueberries' in inventory
@@ -101,7 +101,7 @@ False
 
 This operator can be very useful, since looking up a non-existant key in a dictionary causes a runtime error:
 
-```python
+```text
 >>> inventory['blueberries']
 Traceback (most recent call last):
   File "", line 1, in <module>
@@ -111,7 +111,7 @@ KeyError: 'blueberries'
 
 To address this problem, the built-in `get` method provides a default value that is returned when a key is not found:
 
-```python
+```text
 >>> inventory.get('blueberries', 0)
 0
 >>> inventory.get('bananas', 0)
@@ -120,7 +120,7 @@ To address this problem, the built-in `get` method provides a default value that
 
 Python’s built-in `sorted` function returns a list of a dictionaries keys in sorted order:
 
-```python
+```text
 >>> sorted(inventory)
 ['apples', 'bananas', 'oranges', 'pears']
 ```
@@ -131,7 +131,7 @@ Because dictionaries are mutable, you need to be aware of aliasing. Whenever two
 
 If you want to modify a dictionary and keep a copy of the original, use the `copy` method. For example, `opposites` is a dictionary that contains pairs of opposites:
 
-```python
+```text
 >>> opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
 >>> an_alias = opposites
 >>> a_copy = opposites.copy()
@@ -139,7 +139,7 @@ If you want to modify a dictionary and keep a copy of the original, use the `cop
 
 `an_alias` and `opposites` refer to the same object; `a_copy` refers to a fresh copy of the same dictionary. If we modify `alias`, `opposites` is also changed:
 
-```python
+```text
 >>> an_alias['right'] = 'left'
 >>> opposites['right']
 'left'
@@ -147,7 +147,7 @@ If you want to modify a dictionary and keep a copy of the original, use the `cop
 
 If we modify `a_copy`, `opposites` is unchanged:
 
-```python
+```text
 >>> a_copy['right'] = 'privilege'
 >>> opposites['right']
 'left'
@@ -157,7 +157,7 @@ If we modify `a_copy`, `opposites` is unchanged:
 
 A **set** is a Python data type that holds an unordered collection of unique elements. It implements the [set abstract data type](http://en.wikipedia.org/wiki/Set_%28computer_science%29) which is in turn based on the mathematical concept of a finite [set](http://en.wikipedia.org/wiki/Set_%28mathematics%29). As with dictionaries, Python uses curly braces to indicate a set, but with elements instead of key-value pairs:
 
-```python
+```text
 >>> what_am_i = {'apples': 32, 'bananas': 47, 'pears': 17}
 >>> type(what_am_i)
 <class 'dict'>
@@ -168,7 +168,7 @@ A **set** is a Python data type that holds an unordered collection of unique ele
 
 To create an empty set, you can not use empty curly braces.
 
-```python
+```text
 >>> what_am_i = {}
 >>> type(what_am_i)
 <class 'dict'>
@@ -183,7 +183,7 @@ Instead, use the `set` type converter function without an argument.
 
 Sets contain a unique collection of elements of any type. You can add to a set using its add method, and test for membership with the `in` operator.
 
-```python
+```text
 >>> set_of_numbers = {1, 2, 3, 4}
 >>> set_of_numbers
 {1, 2, 3, 4}
@@ -198,7 +198,7 @@ False
 
 Since sets hold unique collections of elements, you can use the `set` type conversion function to remove duplicates from a list.
 
-```python
+```text
 >>> list_of_numbers = [1, 2, 1, 3, 4, 8, 11, 4, 5, 8]
 >>> set(list_of_numbers)
 {1, 2, 3, 4, 5, 8, 11}
@@ -212,7 +212,7 @@ This book is aimed at aspiring [web developers](http://en.wikipedia.org/wiki/Web
 
 The easiest and most powerful way to format a string in Python 3 is to use the `format` method.
 
-```python
+```text
 >>> "His name is {0}!".format("Arthur")
 'His name is Arthur!'
 >>> name = "Alice"
@@ -236,7 +236,7 @@ Each of the placeholders can also contain a **format specification** — it is a
 
 You can have multiple placeholders indexing the same argument, or perhaps even have extra arguments that are not referenced at all:
 
-```python
+```text
 letter = """
 Dear {0} {2},
 
@@ -251,7 +251,7 @@ print(letter.format("Bill", "Henry", "Gates"))
 
 This produces the following:
 
-```python
+```text
 Dear Paris Hilton,
 
 Paris, I have an interesting money-making proposition for you!
@@ -267,7 +267,7 @@ double your money ...
 
 As you might expect, you’ll get an index error if your placeholders refer to arguments that you do not provide:
 
-```python
+```text
 >>> "hello {3}".format("Dave")
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -276,7 +276,7 @@ IndexError: tuple index out of range
 
 In addition to positional arguments in format strings, _named arguments_ are also supported:
 
-```python
+```text
 >>> s = "'{cat}'ll {verb1} me very much {time}, I should {verb2}!'"
 >>> s.format(verb1="miss", cat="Dinah", time="to-night", verb2="think")
 "'Dinah'll miss me very much to-night, I should think!'"
@@ -292,13 +292,13 @@ While we won’t use it in this book, you will still see it around in lots of ex
 
 The syntax for the old string formatting operation looks like this:
 
-```python
+```text
 "<FORMAT>" % (<VALUES>)
 ```
 
 To see how this works, here are a few examples:
 
-```python
+```text
 >>> "His name is %s."  % "Arthur"
 'His name is Arthur.'
 >>> name = "Alice"
@@ -328,7 +328,7 @@ The `open` function takes two arguments. The first is the name of the file, and 
 
 Let’s begin with an example that shows these three modes in operation:
 
-```python
+```text
 >>> myfile = open('test.txt', 'w')
 >>> myfile.write('My first file written from Python\n')
 34
@@ -358,7 +358,7 @@ We finish this example by openning `test.txt` for reading. We then call the `rea
 
 If we want to add to an already existing file, use the _append_ mode.
 
-```python
+```text
 >>> myfile = open('test.txt', 'a')
 >>> myfile.write('\nOoops, I forgot to add this line ;-)')
 37
@@ -376,7 +376,7 @@ Ooops, I forgot to add this line ;-)
 
 If we try to open a file that doesn’t exist, we get an error:
 
-```python
+```text
 >>> f = open('wharrah.txt', 'r')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -388,7 +388,7 @@ There is nothing wrong with the syntax of the line that resulted in the error. T
 
 In Python, exceptions are handled with the `try ... except` statement.
 
-```python
+```text
 try:
     f = open('thefile.txt', 'r')
     mydata = f.read()
@@ -405,7 +405,7 @@ Python file descriptors have three methods for reading in data from a file. We�
 
 The `readline()` method returns one [line](http://en.wikipedia.org/wiki/Line_%28text_file%29) of the file at a time. Each time you call it `readline()` returns the next line. Calls made to `readline()` after reaching the end of the file return an empty string \(`''`\).
 
-```python
+```text
 f = open('test.txt', 'r')
 while True:                             # keep reading forever
     theline = f.readline()              # try to read next line
@@ -426,7 +426,7 @@ On line 8 we suppress the newline character that `print` usually appends to our 
 
 It is often useful to fetch data from a disk file and turn it into a list of lines. Suppose we have a file containing our friends and their email addresses, one per line in the file. But we’d like the lines sorted into alphabetical order. A good plan is to read everything into a list of lines, then sort the list, and then write the sorted list back to another file:
 
-```python
+```text
 f1 = open('friends.txt', 'r')
 friends_list = f.readlines()
 f1.close()
@@ -449,7 +449,7 @@ Many useful line-processing programs will read a text file line-at-a-time and do
 
 Here is a filter that copies one file to another, omitting any lines that begin with `#`:
 
-```python
+```text
 infile = open(oldfile, 'r')
 outfile = open(newfile, 'w')
 while True:
@@ -478,7 +478,7 @@ Python has a built-in function named `repr` that takes a Python object as an arg
 
 The way this works is easiest to demonstrate by example.
 
-```python
+```text
 >>> mylist = [1, 2, 'buckle', 'my', 'shoe']
 >>> type(mylist)
 <class 'list'>
@@ -511,7 +511,7 @@ A **module** is a file containing Python definitions and statements intended for
 
 All we need to create a module is a text file with a `.py` extension on the filename:
 
-```python
+```text
 #  seqtools.py
 #
 def remove_at(pos, seq):
@@ -520,7 +520,7 @@ def remove_at(pos, seq):
 
 We can now use our module in both scripts and the Python shell. To do so, we must first _import_ the module. There are two ways to do this:
 
-```python
+```text
 >>> from seqtools import remove_at
 >>> s = "A string!"
 >>> remove_at(4, s)
@@ -529,7 +529,7 @@ We can now use our module in both scripts and the Python shell. To do so, we mus
 
 and:
 
-```python
+```text
 >>> import seqtools
 >>> s = "A string!"
 >>> seqtools.remove_at(4, s)
@@ -548,14 +548,14 @@ A **namespace** is a syntactic container which permits the same name to be used 
 
 Each module determines its own namespace, so we can use the same name in multiple modules without causing an identification problem.
 
-```python
+```text
 # module1.py
 
 question = "What is the meaning of life, the Universe, and everything?"
 answer = 42
 ```
 
-```python
+```text
 # module2.py
 
 question = "What is your quest?"
@@ -564,7 +564,7 @@ answer = "To seek the holy grail."
 
 We can now import both modules and access `question` and `answer` in each:
 
-```python
+```text
 >>> import module1
 >>> import module2
 >>> print module1.question
@@ -582,7 +582,7 @@ If we had used `from module1 import *` and `from module2 import *` instead, we w
 
 Functions also have their own namespace:
 
-```python
+```text
 def f():
     n = 7
     print("printing n inside of f: {0}".format(n))
@@ -601,7 +601,7 @@ print("printing n after calling g: {0}".format(n))
 
 Running this program produces the following output:
 
-```python
+```text
 printing n before calling f: 11
 printing n inside of f: 7
 printing n after calling f: 11
@@ -621,7 +621,7 @@ Modules contain functions as well as attributes, and the dot operator is used to
 
 In Chapter 7 we introduced the `find` function from the `string` module. The `string` module contains many other useful functions:
 
-```python
+```text
 >>> import string
 >>> string.capitalize('maryland')
 'Maryland'
@@ -652,7 +652,7 @@ An object in our program that is connected to an underlying resource \(e.g. a fi
 
 A statement which permits functions and variables defined in a Python script to be brought into the environment of another script or a running Python shell.For example, assume the following is in a script named `tryme.py`:
 
-```python
+```text
 def print_thrice(thing):
     print thing, thing, thing
 
@@ -662,7 +662,7 @@ s = "And now for something completely different..."
 
 Now begin a python shell from within the same directory where `tryme.py` is located:
 
-```python
+```text
 $ ls
 tryme.py
 $ python
@@ -671,7 +671,7 @@ $ python
 
 Three names are defined in `tryme.py`: `print_thrice`, `n`, and `s`. If we try to access any of these in the shell without first importing, we get an error:
 
-```python
+```text
 >>> n
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -684,7 +684,7 @@ NameError: name 'print_thrice' is not defined
 
 If we import everything from `tryme.py`, however, we can use everything defined in it:
 
-```python
+```text
 >>> from tryme import *
 >>> n
 42

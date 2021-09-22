@@ -761,7 +761,7 @@ def search(root,key):
 A new key is always inserted at the leaf. We start searching a key from the root until we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node.   
  
 
-```python
+```text
          100                               100
         /   \        Insert 40            /    \
       20     500    --------->          20     500 
@@ -839,7 +839,7 @@ inorder(r)
 
  **Output**
 
-```python
+```text
 20
 30
 40
@@ -867,7 +867,7 @@ inorder(r)
 
 **Output**
 
-```python
+```text
 10 15 20 30 40 50 60 
 ```
 
@@ -1037,7 +1037,7 @@ The delete operation is one of the more complex ones. It is a recursive function
 
 The exists function is another simple recursive function that returns `True` or `False` depending on whether a given value already exists in the tree.
 
-```python
+```text
 def exists(self, val):
     if val == self.val:
         return True

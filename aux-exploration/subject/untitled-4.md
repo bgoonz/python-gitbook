@@ -6,7 +6,7 @@
 
 First, we need to import the **OS Module** in our project. So for using the OS Module, we need to add using the “**import**” statement. Along with that, we are gonna import a **time** module to make our program wait for some time using the sleep method.
 
-```python
+```text
 import os
 import time
 ```
@@ -19,7 +19,7 @@ So let’s create a new function “**createFolders**\(address\)” which accept
 
 So for this example let’s create 10 directories or folders using OS built-in Module.
 
-```python
+```text
 def createFolders(HOME_FOLDER):
     for i in range(10):
             os.mkdir(HOME_FOLDER + str(i) + '-Dir')
@@ -33,7 +33,7 @@ Now let’s create a new function for creating files named it as **“createFile
 
 So for this example let’s create 10 files using OS Module.
 
-```python
+```text
 def createFiles(HOME_FOLDER):
     for i in range(10):
         f = open(HOME_FOLDER + str(i) + '-File.txt', 'w')
@@ -48,7 +48,7 @@ Now we have already defined the function for creating folders and files, so now 
 
 As we already created the folders with **“-Dir”** at last so now what we want is to replace this “**Dir**” with Folder.
 
-```python
+```text
 def renameFiles(HOME_FOLDER):
     os.chdir(HOME_FOLDER)
     for i in os.listdir():
@@ -63,7 +63,7 @@ Now we have created all the basic functions of the built-in Module. Now what we 
 
 And also we are gonna use the **time module** which has sleep\(seconds\) in this main function to make a pause while creating and renaming files or folders.
 
-```python
+```text
 if __name__ == '__main__':
     HOME_FOLDER = 'C:/CodezUp/Python/Scripts/Demo/'
     createFolders(HOME_FOLDER)
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
 **Source Code :**
 
-```python
+```text
 import os
 import time
 

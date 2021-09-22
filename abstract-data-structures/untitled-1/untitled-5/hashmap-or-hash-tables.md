@@ -52,7 +52,7 @@ The OrderedDict from the collections module is a special type of dictionary that
 
 Dictionaries are useful for bookkeeping and tracking statistics. One problem is that when we try to add an element, we have no idea if the key is present or not, which requires us to check such condition every time.
 
-```python
+```text
 dict = {}
 key = "counter"
 if key not in dict:
@@ -62,7 +62,7 @@ dict[key] += 1
 
 The defaultdict class from the collections module simplifies this process by pre-assigning a default value when a key does not present. For different value type it has different default value, for example, for int, it is 0 as the default value.
 
-```python
+```text
 from collections import defaultdict
 dict = defaultdict(int)
 dict['counter']+=1
@@ -78,7 +78,7 @@ Stacks and queue are dynamic lists in which the element removed from the list by
 
 **queue:** it is first in, first out, FIFO, which can be used to implement iterative BFS. The following code is the basic implementation with Python.
 
-```python
+```text
 q = []
 q.insert[0,v]
 q.pop()
@@ -86,7 +86,7 @@ q.pop()
 
 **stack:** the element deleted is the most recently inserted, Last in first out, LIFO, which can be used to implement iterative DFS. The following code is the basic implementation with Python.
 
-```python
+```text
 stack = []
 stack.append(v)
 stack.pop()
@@ -94,7 +94,7 @@ stack.pop()
 
 [**Deque** ](https://docs.python.org/2/library/collections.html#collections.deque)\(operation from both side\): In Python, the _deque_ class from the _collections_ module is a double-ended queue. It provides constant time opearations for inserting ore removing items from its beginning or end. It can be used to implement both stack and queue structure we mentioned above and usually is more time efficient than the above implementation. Mainly because inserting or removing elements from the head of a list takes linear time.
 
-```python
+```text
 from collections import deque
 #1. implement Queue
 fifo=deque()
@@ -114,7 +114,7 @@ As we can see we can implement either the max-heap or the min-heap as an array. 
 
 There are two kinds of binary heaps: max-heaps and min-heaps. In both kinds, the values in the nodes satisfy a _heap property_. For max-heap, the property states as for every node `i` other than root.
 
-```python
+```text
 A[PARENT(i)]>= A[i];
 ```
 
@@ -130,7 +130,7 @@ Heap can be used into heapsort and a priority-queue data structure. Operations i
 
 [**heapq**](https://docs.python.org/2/library/heapq.html)**:** heapq from collections is an implementation of heap, which can be used to maintain a priority queue. Operations include heappush, heappop, and nsmallest. heapq in python to maintain a priority queue with O\(logn\)
 
-```python
+```text
 heap = []
 heappush(heap, 5)
 heappush(heap, 3)
@@ -140,7 +140,7 @@ heappush(heap, 4)
 
 Items are removed by the highest priority or say the lowest number first. Also, accessing the 0 index of the heap will return the smallest item.
 
-```python
+```text
 print(heappop(a), heappop(a), heappop(a), heappop(a))
 3 4 5 7
 assert heap[0] == nsmallest(1, heap)[0] == 3
@@ -174,7 +174,7 @@ Arrays can be used to store linear data of similar types, but arrays have follow
 
 For Linked List, we can only iterate over elements, for python code example:
 
-```python
+```text
 #Definition for singly-linked list.
 class ListNode(object):
      def __init__(self, x):

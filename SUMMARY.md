@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Home](README.md)
-* [Downloads & Misc-Assets](downloads.md)
+* [Downloads & Misc-Assets](index.md)
 * [README](readme-1.md)
 * [Navigation](navigation.md)
 
@@ -57,6 +57,7 @@
 ## Abstract Data Structures
 
 * [Algorithms](abstract-data-structures/algorithms-1/README.md)
+  * [Algo-Resources](abstract-data-structures/algorithms-1/algo-resources.md)
   * [Dijkstra's algorithm](abstract-data-structures/algorithms-1/dijkstras-algorithm.md)
   * [Calculate a Factorial With Python - Iterative and Recursive](abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive.md)
   * [DFS](abstract-data-structures/algorithms-1/dfs.md)

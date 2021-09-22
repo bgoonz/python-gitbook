@@ -253,7 +253,7 @@ They’re primarily used to convey visual web-structure networks in code form. T
 
 When written in plain text, graphs have a list of vertices and edges:
 
-```python
+```text
 V = {a, b, c, d, e}
 E = {ab, ac, bd, cd, de}
 ```
@@ -766,7 +766,7 @@ TypeError: 'str' object doesn't support item deletion
 
 Like strings, `bytes` have their own literal syntax for creating objects and are space efficient. `bytes` objects are immutable, but unlike strings, there’s a dedicated mutable byte array data type called `bytearray` that they can be unpacked into:
 
-```python
+```text
  arr = bytes((0, 1, 2, 3))
 
  arr[1]
@@ -1468,7 +1468,7 @@ Stacks have a wide range of uses in algorithms. For example, they’re used in l
 
 Python ships with several stack implementations that each have slightly different characteristics. Let’s take a look at them and compare their characteristics.
 
-```python
+```text
 ### `list`: Simple, Built-In Stacks[](https://realpython.com/python-data-structures/#list-simple-built-in-stacks "Permanent link")
 
 Python’s built-in `list` type [makes a decent stack data structure](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks) as it supports push and pop operations in [amortized](https://en.wikipedia.org/wiki/Amortized_analysis) _O_(1) time.
@@ -1633,7 +1633,7 @@ A regular queue, however, won’t reorder the items it carries. Just like in the
 
 Python ships with several queue implementations that each have slightly different characteristics. Let’s review them.
 
-```python
+```text
 ### `list`: Terribly Sloooow Queues[](https://realpython.com/python-data-structures/#list-terribly-sloooow-queues "Permanent link")
 
 It’s possible to [use a regular `list` as a queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues), but this is not ideal from a performance perspective. Lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all the other elements by one, requiring _O_(_n_) time.
@@ -1801,7 +1801,7 @@ Ideally, higher-priority tasks on the system \(such as playing a real-time game\
 
 In this section, you’ll see a few options for how you can implement priority queues in Python using built-in data structures or data structures included in Python’s standard library. Each implementation will have its own upsides and downsides, but in my mind there’s a clear winner for most common scenarios. Let’s find out which one it is.
 
-```python
+```text
 ### `list`: Manually Sorted Queues[](https://realpython.com/python-data-structures/#list-manually-sorted-queues "Permanent link")
 
 You can use a sorted `list` to quickly identify and delete the smallest or largest element. The downside is that inserting new elements into a list is a slow _O_(_n_) operation.
