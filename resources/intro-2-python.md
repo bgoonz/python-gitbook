@@ -8,7 +8,165 @@ description: Introduction to Python
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-## Intro 2 Python
+## 
+
+## 
+
+## Variable Conventions
+
+### ​
+
+​
+
+* Variables do not need to be initialized. e.g!\(let, const, var\) just a name and an assignment
+* Variables are always block scoped
+* Variables should be snake\_case \(think of python as a snake lol\)
+* CAPITAL\_SNAKE\_CASE usually refers to constants
+* UpperCamelCase usually refers to a class
+* \_\_double_underscore\_\_ is used with variables that should be private or left alone \(dunder\)
+
+  ​
+
+​
+
+## Data Types
+
+### ​
+
+​
+
+* **Boolean**: True or False; Written with uppercase first letter
+* **Integer**: Whole Numbers
+* **Float**: Any number with a decimal. Division always returns a float;
+* **String**: A sequence of unicode characters; "I am a string!"
+* **List**: An ordered sequence of values \[1,2,3\], \["a","b","c"\]
+* **Dictionary**: A collection of key value pairs {"first\_name": "William", "last\_name": "Vincent"}
+* **Tuples**: An ordered and immutable collection of objects \(1,2,3,4,5\)
+* **None**: Like null in other languages. Written with an uppercase first letter.
+
+  ​
+
+  Python is dynamically typed. Meaning that variables can be reassigned to a different type
+
+  ​
+
+​
+
+## Strings
+
+### ​
+
+​ **Interpolated or f-string:** ​
+
+```python
+x = 8
+formatted = f"Your number is equal to {x}"
+print(formatted)
+​
+```
+
+​ Python can use negative indexing: ​
+
+* name = "Bill"
+* name\[0\] == name\[-4\]
+* name\[3\] == name\[-1\]
+
+  ​
+
+​
+
+## Type Conversion
+
+### ​
+
+​
+
+* **To Int**:
+  * decimal = 12.43563456
+  * integer = int\(decimal\)
+  * integer == 12
+* **To String**:
+  * list = \[1,2,3\]
+  * to\_string = str\(list\)
+  * to\_string == "\[1,2,3\]"
+* **To Float**:
+  * integer = 12
+  * to\_float = float\(integer\)
+  * float == 12.0
+
+    ​
+
+​
+
+## Boolean and Conditional Logic
+
+### ​
+
+​
+
+```python
+​
+if name == "William":
+    print("The name is William")
+elif name == "Vincent":
+    print("The name is Vincent")
+else:
+    print("I don't know the name")
+​
+```
+
+​
+
+* **":"** represents an indented block below, allowing python to understand the end of the condition and the beginning of the response.
+* **Falsey Values**: empty objects, empty strings, None, 0
+* **Comparison Operators**: ==, !=, &gt;, &gt;=, &lt;, &lt;=
+* **Logical Operators**: and, or, not
+
+  ​
+
+​
+
+## Loops
+
+### ​
+
+​
+
+* **Iterable Objects**:
+  * String: " "
+  * List: \[a, b\]
+  * Dictionary: {key: value}
+  * Tuples: \(a,b,c\)
+  * Range: range\(min, max\). Inclusive start and end.
+
+    ​
+
+    **For Loops**
+
+    ​
+
+    ```python
+    for temp_variable in name_of_iterable_object:
+    do a thing
+    ​
+    ```
+
+    ​
+
+    **While Loops**
+
+    ​
+
+    ```python
+    ​
+    while conditional:
+    do a thing
+    ​
+    ```
+
+## 
+
+## Intro 2 Python continued...
 
 In the following examples, input and output are distinguished by the presence or absence of prompts \([&gt;&gt;&gt;](https://docs.python.org/3.9/glossary.html#term-0) and […](https://docs.python.org/3.9/glossary.html#term-1)\): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
 
