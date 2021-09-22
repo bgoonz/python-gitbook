@@ -1,10 +1,14 @@
 # Navigation
 
+{% page-ref page="navigation.md" %}
+
+
+
+
+
 {% tabs %}
 {% tab title="Table Of Contents \(whole site\)" %}
-
-
-## Table of contents
+### Table of contents
 
 * [Home](https://bryan-guner.gitbook.io/datastructures-in-pytho/README)
 * [Downloads & Misc-Assets](https://bryan-guner.gitbook.io/datastructures-in-pytho/index)
