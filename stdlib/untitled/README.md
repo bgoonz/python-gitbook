@@ -6,11 +6,11 @@ description: docs
 
 h
 
-{% page-ref page="../basic-syntax.md" %}
+{% page-ref page="basic-syntax.md" %}
 
 {% page-ref page="../../resources/things-to-internalize/functions.md" %}
 
-{% page-ref page="../built-in-functions/" %}
+{% page-ref page="built-in-functions/" %}
 
 
 

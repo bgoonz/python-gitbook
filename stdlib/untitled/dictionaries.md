@@ -1,12 +1,12 @@
 # Dictionaries
 
-{% file src="../.gitbook/assets/pythondictmethods.pdf" %}
+{% file src="../../.gitbook/assets/pythondictmethods.pdf" %}
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../../.gitbook/assets/image%20%2828%29.png)
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2823%29.png)
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 
 
