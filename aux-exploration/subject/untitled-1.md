@@ -13,7 +13,7 @@ Most data structures in Python are modified forms of these or use the built-in s
 * **Set**: Sets are unordered collections, meaning that elements are unindexed and have no set sequence. They’re declared with curly braces.
 * **Dictionary \(dict\)**: Similar to hashmap or hash tables in other languages, a dictionary is a collection of key/value pairs. You initialize an empty dictionary with empty curly braces and fill it with colon separated keys and values. All keys are unique, immutable objects.
 
-Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.  
+Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.
 
 
 ### Arrays \(Lists\) in Python
@@ -191,8 +191,8 @@ Circular linked lists are great for processes that loop for a long time like CPU
 
 Practiced knowledge of data structures is essential for any interviewee. Educative’s text-based courses give you hundreds of hands-on practice problems to ensure you’re ready when the time comes.
 
-[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)  
-  
+[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)
+
 
 
 ### Trees in Python
@@ -253,7 +253,7 @@ They’re primarily used to convey visual web-structure networks in code form. T
 
 When written in plain text, graphs have a list of vertices and edges:
 
-```text
+```python
 V = {a, b, c, d, e}
 E = {ab, ac, bd, cd, de}
 ```
@@ -379,7 +379,7 @@ Python also provides some useful **syntactic sugar** for working with dictionari
 
 
  squares
-{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}` 
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}`
 
 
 ```
@@ -432,7 +432,7 @@ OrderedDict([('one', 1), ('two', 2),
 
 
  d.keys()
-odict_keys(['one', 'two', 'three', 'four'])` 
+odict_keys(['one', 'two', 'three', 'four'])`
 
 Until [Python 3.8](https://realpython.com/python38-new-features/), you couldn’t iterate over dictionary items in reverse order using `reversed()`. Only `OrderedDict` instances offered that functionality. Even in Python 3.8, `dict` and `OrderedDict` objects aren’t exactly the same. `OrderedDict` instances have a [`.move_to_end()` method](https://realpython.com/python-data-types/) that is unavailable on plain `dict` instance, as well as a more customizable [`.popitem()` method](https://docs.python.org/3/library/collections.html#collections.OrderedDict.popitem) than the one plain `dict` instances.
 ```
@@ -648,7 +648,7 @@ TypeError: 'tuple' object doesn't support item deletion
  # (Adding elements creates a copy of the tuple)
 
  arr + (23,)
-('one', 'two', 'three', 23)` 
+('one', 'two', 'three', 23)`
 ```
 ```
 
@@ -702,7 +702,7 @@ array('f', [1.0, 2.0, 2.5, 42.0])
  arr[1] = "hello"
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: must be real number, not str` 
+TypeError: must be real number, not str`
 ```
 ```
 
@@ -756,7 +756,7 @@ TypeError: 'str' object doesn't support item deletion
 "<class 'str'>"
 
  type("abc"[0])
-"<class 'str'>"` 
+"<class 'str'>"`
 ```
 ```
 
@@ -766,7 +766,7 @@ TypeError: 'str' object doesn't support item deletion
 
 Like strings, `bytes` have their own literal syntax for creating objects and are space efficient. `bytes` objects are immutable, but unlike strings, there’s a dedicated mutable byte array data type called `bytearray` that they can be unpacked into:
 
-```text
+```python
  arr = bytes((0, 1, 2, 3))
 
  arr[1]
@@ -985,7 +985,7 @@ As you can see in the bytecode disassembly below, constructing a tuple constant 
  6 LOAD_CONST           2 ('b')
  9 LOAD_CONST           3 ('c')
  12 BUILD_LIST           4
- 15 RETURN_VALUE` 
+ 15 RETURN_VALUE`
 
 However, you shouldn’t place too much emphasis on these differences. In practice, the performance difference will often be negligible, and trying to squeeze extra performance out of a program by switching from lists to tuples will likely be the wrong approach.
 
@@ -1131,7 +1131,7 @@ Car(color='red', mileage=3812.4, automatic=True)
  # a separate type checking tool like mypy:
 
  Car("red", "NOT_A_FLOAT", 99)
-Car(color='red', mileage='NOT_A_FLOAT', automatic=99)` 
+Car(color='red', mileage='NOT_A_FLOAT', automatic=99)`
 
 #To learn more about Python data classes, check out the [The Ultimate Guide to Data Classes in Python 3.7](https://realpython.com/python-data-classes/).
 ```
@@ -1432,7 +1432,7 @@ Counter({'bread': 3, 'sword': 1})
  inventory.update(more_loot)
 
  inventory
-Counter({'bread': 3, 'sword': 2, 'apple': 1})` 
+Counter({'bread': 3, 'sword': 2, 'apple': 1})`
 
 One caveat for the `Counter` class is that you’ll want to be careful when counting the number of elements in a `Counter` object. Calling `len()` returns the number of _unique_ elements in the multiset, whereas the _total_ number of elements can be retrieved using `sum()`:
 
@@ -1468,7 +1468,7 @@ Stacks have a wide range of uses in algorithms. For example, they’re used in l
 
 Python ships with several stack implementations that each have slightly different characteristics. Let’s take a look at them and compare their characteristics.
 
-```text
+```python
 ### `list`: Simple, Built-In Stacks[](https://realpython.com/python-data-structures/#list-simple-built-in-stacks "Permanent link")
 
 Python’s built-in `list` type [makes a decent stack data structure](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks) as it supports push and pop operations in [amortized](https://en.wikipedia.org/wiki/Amortized_analysis) _O_(1) time.
@@ -1633,7 +1633,7 @@ A regular queue, however, won’t reorder the items it carries. Just like in the
 
 Python ships with several queue implementations that each have slightly different characteristics. Let’s review them.
 
-```text
+```python
 ### `list`: Terribly Sloooow Queues[](https://realpython.com/python-data-structures/#list-terribly-sloooow-queues "Permanent link")
 
 It’s possible to [use a regular `list` as a queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues), but this is not ideal from a performance perspective. Lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all the other elements by one, requiring _O_(_n_) time.
@@ -1801,7 +1801,7 @@ Ideally, higher-priority tasks on the system \(such as playing a real-time game\
 
 In this section, you’ll see a few options for how you can implement priority queues in Python using built-in data structures or data structures included in Python’s standard library. Each implementation will have its own upsides and downsides, but in my mind there’s a clear winner for most common scenarios. Let’s find out which one it is.
 
-```text
+```python
 ### `list`: Manually Sorted Queues[](https://realpython.com/python-data-structures/#list-manually-sorted-queues "Permanent link")
 
 You can use a sorted `list` to quickly identify and delete the smallest or largest element. The downside is that inserting new elements into a list is a slow _O_(_n_) operation.

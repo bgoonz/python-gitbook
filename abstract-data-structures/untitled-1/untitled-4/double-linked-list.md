@@ -216,7 +216,7 @@ The easiest way to delete an element from a doubly linked list is from the start
    def delete_at_start(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             self.start_node = None
             return
@@ -234,7 +234,7 @@ To delete the element from the end, we again check if the list is empty or if th
     def delete_at_end(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             self.start_node = None
             return
@@ -254,13 +254,13 @@ Deleting an element by value is the trickiest of all the deletion functions in d
     def delete_element_by_value(self, x):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         if self.start_node.nref is None:
             if self.start_node.item == x:
                 self.start_node = None
             else:
                 print("Item not found")
-            return 
+            return
 
         if self.start_node.item == x:
             self.start_node = self.start_node.nref
@@ -289,7 +289,7 @@ This logic is implemented in the following piece of code:
 ```python
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
 ```
 
 Next, we check if the list has a single element and that element is actually the element we want to delete. If the only element is the one that we want to delete, we simply set the `self.start_node` to `None` which means that the list will now have no item. If there is only one item and that is not the item that we want to delete, we will simply display the message that item to be deleted is not found.
@@ -302,7 +302,7 @@ The following piece of code implements this logic:
                 self.start_node = None
             else:
                 print("Item not found")
-            return 
+            return
 ```
 
 Next, we handle the case where the list has more than one items but the item to be deleted is the first item. In that case we simply execute the logic that we wrote for the method `delete_at_start()`. The following piece of code deletes an element from the start in case of multiple items:
@@ -353,7 +353,7 @@ The script for reversing a doubly linked list is as follows:
     def reverse_linked_list(self):
         if self.start_node is None:
             print("The list has no element to delete")
-            return 
+            return
         p = self.start_node
         q = p.nref
         p.nref = None
@@ -432,18 +432,18 @@ Now if you traverse the doubly linked list, you should see the following element
 50
 29
 39
-49 
+49
 ```
 
 Let's insert an element after 50.
 
-```text
+```python
 new_linked_list.insert_after_item(50, 65)
 ```
 
 Now the list should look like this:
 
-```text
+```python
 18
 5
 10
@@ -451,18 +451,18 @@ Now the list should look like this:
 65
 29
 39
-49 
+49
 ```
 
 Finally, let's add an element before item 29.
 
-```text
+```python
 new_linked_list.insert_before_item(29, 100)
 ```
 
 The list at this point of time, should contain the following elements:
 
-```text
+```python
 18
 5
 10
@@ -471,20 +471,20 @@ The list at this point of time, should contain the following elements:
 100
 29
 39
-49 
+49
 ```
 
 **Testing Deletion Functions**
 
 Let's now test the deletion functions on the items that we inserted in the last sections. Let's first delete an element from the start.
 
-```text
+```python
 new_linked_list.delete_at_start()
 ```
 
 Item 18 will be removed and the list will now look like this:
 
-```text
+```python
 5
 10
 50
@@ -492,30 +492,30 @@ Item 18 will be removed and the list will now look like this:
 100
 29
 39
-49 
+49
 ```
 
 Similarly, the following script deletes the element from the end of the doubly linked list:
 
-```text
+```python
 new_linked_list.delete_at_end()
 ```
 
 Traversing the list now will return the following items:
 
-```text
+```python
 5
 10
 50
-65 
-100 
+65
+100
 29
 39
 ```
 
 Finally, you can also delete the elements by value using the `delete_element_by_value()` function as shown below:
 
-```text
+```python
 new_linked_list.delete_element_by_value(65)
 ```
 
@@ -525,19 +525,19 @@ If you traverse the list now, you will see that item 65 will be deleted from the
 
 Finally, let's reverse the list using the `reverse_linked_list()` function. Execute the following script:
 
-```text
+```python
 new_linked_list.reverse_linked_list()
 ```
 
 Now if you traverse the list, you will see the reversed linked list:
 
-```text
+```python
 39
 29
 100
 50
 10
-5 
+5
 ```
 
 #### Conclusion <a id="conclusion"></a>

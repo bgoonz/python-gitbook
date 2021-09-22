@@ -18,13 +18,13 @@ In addition to the [debian packages](http://en.wikipedia.org/wiki/Debian_package
 
 To add this package run following from the unix command prompt:
 
-```text
+```python
 $ sudo apt install python3-pip
 ```
 
 Now would also be a good time to install a few other packages you will want to have on your system:
 
-```text
+```python
 $ sudo apt install python3-tk pep8 bzr
 ```
 
@@ -36,13 +36,13 @@ This will install the [Tkinter](http://en.wikipedia.org/wiki/Tkinter) GUI toolki
 
 To install `bottle` run:
 
-```text
+```python
 $ sudo apt install python3-bottle
 ```
 
 Then try:
 
-```text
+```python
 >>> import bottle
 ```
 
@@ -56,13 +56,13 @@ To use Vim, do the following:
 
 1. From the unix command prompt, run:
 
-   ```text
+   ```python
    $ sudo apt install vim
    ```
 
 2. Create a file in your home directory named `.vimrc` that contains the following:
 
-   ```text
+   ```python
    syntax enable
    filetype indent on
    set et
@@ -77,7 +77,7 @@ When you edit a file with a `.py` extension, you should now have color systax hi
 
 To learn to use vim, run the following command at a unix command prompt:
 
-```text
+```python
 $ vimtutor
 ```
 
@@ -87,19 +87,19 @@ The following creates a useful environment in your [home directory](http://en.wi
 
 1. From the command prompt in your home directory, create `bin` and `lib` subdirectories of your `.local` directory by running the following command:
 
-   ```text
+   ```python
    $ mkdir .local/lib .local/bin
    ```
 
 2. Now add a `my_python` subdirectory to `.local/lib`:
 
-   ```text
+   ```python
    $ mkdir .local/lib/my_python
    ```
 
 3. Add the following lines to the bottom of your `.bashrc` in your home directory:
 
-   ```text
+   ```python
    EDITOR=vim
    PATH=$HOME/.local/bin$PATH
    PYTHONPATH=$HOME/.local/lib/my_python
@@ -111,7 +111,7 @@ The following creates a useful environment in your [home directory](http://en.wi
 
    Then run:
 
-   ```text
+   ```python
    $ . .bashrc
    ```
 
@@ -131,13 +131,13 @@ On unix systems, Python scripts can be made _executable_ using the following pro
 
 1. Add this line as the first line in the script:
 
-   ```text
+   ```python
    #!/usr/bin/env python3
    ```
 
 2. At the unix command prompt, type the following to make `myscript.py` executable:
 
-   ```text
+   ```python
    $ chmod +x myscript.py
    ```
 

@@ -24,7 +24,7 @@ Next, the BMU's weights and weights of the cells neighboring the BMU, are adapte
 
 As we'll be using some Python routines to demonstrate the functions used to train an SOM, let's import a few of the libraries we'll be using:
 
-```text
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -96,7 +96,7 @@ Where λ&lt;0λ&lt;0 is the decay rate.
 
 To understand how the learning rate changes with the decay rate, let's plot the learning rate against various epochs when the initial learning rate is set to one:
 
-```text
+```python
 epochs = np.arange(0, 50)
 lr_decay = [0.001, 0.1, 0.5, 0.99]
 fig,ax = plt.subplots(nrows=1, ncols=4, figsize=(15,4))
@@ -136,7 +136,7 @@ Here β&lt;0β&lt;0 is the decay rate. The decay rate corresponding to radius ha
 
 We'll use this fact later to make training more efficient in the implementation part:
 
-```text
+```python
 distance = np.arange(0, 30)
 sigma_sq = [0.1, 1, 10, 100]
 fig,ax = plt.subplots(nrows=1, ncols=4, figsize=(15,4))
@@ -160,15 +160,15 @@ As there is no built-in routine for an SOM in the de-facto standard machine lear
 
 We'll implement the SOM as a 2D `mxn` grid, hence requiring a 3D `NumPy` array. The third dimension is required for storing the weights in each cell:
 
-```text
+```python
 # Return the (g,h) index of the BMU in the grid
 def find_BMU(SOM,x):
     distSq = (np.square(SOM - x)).sum(axis=2)
     return np.unravel_index(np.argmin(distSq, axis=None), distSq.shape)
-    
+
 # Update the weights of the SOM cells when given a single training example
 # and the model parameters along with BMU coordinates as a tuple
-def update_weights(SOM, train_ex, learn_rate, radius_sq, 
+def update_weights(SOM, train_ex, learn_rate, radius_sq,
                    BMU_coord, step=3):
     g, h = BMU_coord
     #if radius is close to zero then only BMU is changed
@@ -180,24 +180,24 @@ def update_weights(SOM, train_ex, learn_rate, radius_sq,
         for j in range(max(0, h-step), min(SOM.shape[1], h+step)):
             dist_sq = np.square(i - g) + np.square(j - h)
             dist_func = np.exp(-dist_sq / 2 / radius_sq)
-            SOM[i,j,:] += learn_rate * dist_func * (train_ex - SOM[i,j,:])   
-    return SOM    
+            SOM[i,j,:] += learn_rate * dist_func * (train_ex - SOM[i,j,:])
+    return SOM
 
 # Main routine for training an SOM. It requires an initialized SOM grid
 # or a partially trained grid as parameter
-def train_SOM(SOM, train_data, learn_rate = .1, radius_sq = 1, 
-             lr_decay = .1, radius_decay = .1, epochs = 10):    
+def train_SOM(SOM, train_data, learn_rate = .1, radius_sq = 1,
+             lr_decay = .1, radius_decay = .1, epochs = 10):
     learn_rate_0 = learn_rate
     radius_0 = radius_sq
     for epoch in np.arange(0, epochs):
-        rand.shuffle(train_data)      
+        rand.shuffle(train_data)
         for train_ex in train_data:
             g, h = find_BMU(SOM, train_ex)
-            SOM = update_weights(SOM, train_ex, 
+            SOM = update_weights(SOM, train_ex,
                                  learn_rate, radius_sq, (g,h))
         # Update learning rate and radius
         learn_rate = learn_rate_0 * np.exp(-epoch * lr_decay)
-        radius_sq = radius_0 * np.exp(-epoch * radius_decay)            
+        radius_sq = radius_0 * np.exp(-epoch * radius_decay)
     return SOM
 ```
 
@@ -219,7 +219,7 @@ Let's run the `train_SOM()` function on a training data matrix filled with rando
 
 The code below initializes a training data matrix and an SOM grid with random RGB colors. It also displays the training data and the randomly initialized _SOM grid_. Note, the training matrix is a 3000x3 matrix, however, we have reshaped it to 50x60x3 matrix for visualization:
 
-```text
+```python
 # Dimensions of the SOM grid
 m = 10
 n = 10
@@ -232,7 +232,7 @@ train_data = rand.randint(0, 255, (n_x, 3))
 SOM = rand.randint(0, 255, (m, n, 3)).astype(float)
 # Display both the training matrix and the SOM grid
 fig, ax = plt.subplots(
-    nrows=1, ncols=2, figsize=(12, 3.5), 
+    nrows=1, ncols=2, figsize=(12, 3.5),
     subplot_kw=dict(xticks=[], yticks=[]))
 ax[0].imshow(train_data.reshape(50, 60, 3))
 ax[0].title.set_text('Training Data')
@@ -244,9 +244,9 @@ ax[1].title.set_text('Randomly Initialized SOM Grid')
 
 Let's now train the SOM and check up on it every 5 epochs as a quick overview of its progress:
 
-```text
+```python
 fig, ax = plt.subplots(
-    nrows=1, ncols=4, figsize=(15, 3.5), 
+    nrows=1, ncols=4, figsize=(15, 3.5),
     subplot_kw=dict(xticks=[], yticks=[]))
 total_epochs = 0
 for epochs, i in zip([1, 4, 5, 10], range(0,4)):
@@ -266,9 +266,9 @@ To see how the learning rate varies for different learning rates and radii, we c
 
 The SOM is rendered after 5 epochs for each simulation:
 
-```text
+```python
 fig, ax = plt.subplots(
-    nrows=3, ncols=3, figsize=(15, 15), 
+    nrows=3, ncols=3, figsize=(15, 15),
     subplot_kw=dict(xticks=[], yticks=[]))
 
 # Initialize the SOM randomly to the same state
@@ -276,12 +276,12 @@ fig, ax = plt.subplots(
 for learn_rate, i in zip([0.001, 0.5, 0.99], [0, 1, 2]):
     for radius_sq, j in zip([0.01, 1, 10], [0, 1, 2]):
         rand = np.random.RandomState(0)
-        SOM = rand.randint(0, 255, (m, n, 3)).astype(float)        
+        SOM = rand.randint(0, 255, (m, n, 3)).astype(float)
         SOM = train_SOM(SOM, train_data, epochs = 5,
-                        learn_rate = learn_rate, 
+                        learn_rate = learn_rate,
                         radius_sq = radius_sq)
         ax[i][j].imshow(SOM.astype(int))
-        ax[i][j].title.set_text('$\eta$ = ' + str(learn_rate) + 
+        ax[i][j].title.set_text('$\eta$ = ' + str(learn_rate) +
                                 ', $\sigma^2$ = ' + str(radius_sq))
 ```
 

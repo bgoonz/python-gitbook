@@ -65,7 +65,7 @@ Another thing you might notice is that not all data can be sorted or compared. F
 
 The list methods make it very easy to use a list as a stack, where the last element added is the first element retrieved \(“last-in, first-out”\). To add an item to the top of the stack, use `append()`. To retrieve an item from the top of the stack, use `pop()` without an explicit index. For example:&gt;&gt;&gt;
 
-```text
+```python
 >>> stack = [3, 4, 5]
 >>> stack.append(6)
 >>> stack.append(7)
@@ -89,7 +89,7 @@ It is also possible to use a list as a queue, where the first element added is t
 
 To implement a queue, use [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque) which was designed to have fast appends and pops from both ends. For example:&gt;&gt;&gt;
 
-```text
+```python
 >>> from collections import deque
 >>> queue = deque(["Eric", "John", "Michael"])
 >>> queue.append("Terry")           # Terry arrives
@@ -108,7 +108,7 @@ List comprehensions provide a concise way to create lists. Common applications a
 
 For example, assume we want to create a list of squares, like:&gt;&gt;&gt;
 
-```text
+```python
 >>> squares = []
 >>> for x in range(10):
 ...     squares.append(x**2)
@@ -119,13 +119,13 @@ For example, assume we want to create a list of squares, like:&gt;&gt;&gt;
 
 Note that this creates \(or overwrites\) a variable named `x` that still exists after the loop completes. We can calculate the list of squares without any side effects using:
 
-```text
+```python
 squares = list(map(lambda x: x**2, range(10)))
 ```
 
 or, equivalently:
 
-```text
+```python
 squares = [x**2 for x in range(10)]
 ```
 
@@ -133,14 +133,14 @@ which is more concise and readable.
 
 A list comprehension consists of brackets containing an expression followed by a `for` clause, then zero or more `for` or `if` clauses. The result will be a new list resulting from evaluating the expression in the context of the `for` and `if` clauses which follow it. For example, this listcomp combines the elements of two lists if they are not equal:&gt;&gt;&gt;
 
-```text
+```python
 >>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
 [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
 ```
 
 and it’s equivalent to:&gt;&gt;&gt;
 
-```text
+```python
 >>> combs = []
 >>> for x in [1,2,3]:
 ...     for y in [3,1,4]:
@@ -155,7 +155,7 @@ Note how the order of the [`for`](https://docs.python.org/3/reference/compound_s
 
 If the expression is a tuple \(e.g. the `(x, y)` in the previous example\), it must be parenthesized.&gt;&gt;&gt;
 
-```text
+```python
 >>> vec = [-4, -2, 0, 2, 4]
 >>> # create a new list with the values doubled
 >>> [x*2 for x in vec]
@@ -187,7 +187,7 @@ SyntaxError: invalid syntax
 
 List comprehensions can contain complex expressions and nested functions:&gt;&gt;&gt;
 
-```text
+```python
 >>> from math import pi
 >>> [str(round(pi, i)) for i in range(1, 6)]
 ['3.1', '3.14', '3.142', '3.1416', '3.14159']
@@ -199,7 +199,7 @@ The initial expression in a list comprehension can be any arbitrary expression, 
 
 Consider the following example of a 3x4 matrix implemented as a list of 3 lists of length 4:&gt;&gt;&gt;
 
-```text
+```python
 >>> matrix = [
 ...     [1, 2, 3, 4],
 ...     [5, 6, 7, 8],
@@ -209,14 +209,14 @@ Consider the following example of a 3x4 matrix implemented as a list of 3 lists 
 
 The following list comprehension will transpose rows and columns:&gt;&gt;&gt;
 
-```text
+```python
 >>> [[row[i] for row in matrix] for i in range(4)]
 [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 
 As we saw in the previous section, the nested listcomp is evaluated in the context of the [`for`](https://docs.python.org/3/reference/compound_stmts.html#for) that follows it, so this example is equivalent to:&gt;&gt;&gt;
 
-```text
+```python
 >>> transposed = []
 >>> for i in range(4):
 ...     transposed.append([row[i] for row in matrix])
@@ -227,7 +227,7 @@ As we saw in the previous section, the nested listcomp is evaluated in the conte
 
 which, in turn, is the same as:&gt;&gt;&gt;
 
-```text
+```python
 >>> transposed = []
 >>> for i in range(4):
 ...     # the following 3 lines implement the nested listcomp
@@ -242,7 +242,7 @@ which, in turn, is the same as:&gt;&gt;&gt;
 
 In the real world, you should prefer built-in functions to complex flow statements. The [`zip()`](https://docs.python.org/3/library/functions.html#zip) function would do a great job for this use case:&gt;&gt;&gt;
 
-```text
+```python
 >>> list(zip(*matrix))
 [(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]
 ```
@@ -253,7 +253,7 @@ See [Unpacking Argument Lists](https://docs.python.org/3/tutorial/controlflow.ht
 
 There is a way to remove an item from a list given its index instead of its value: the [`del`](https://docs.python.org/3/reference/simple_stmts.html#del) statement. This differs from the `pop()` method which returns a value. The `del` statement can also be used to remove slices from a list or clear the entire list \(which we did earlier by assignment of an empty list to the slice\). For example:&gt;&gt;&gt;
 
-```text
+```python
 >>> a = [-1, 1, 66.25, 333, 333, 1234.5]
 >>> del a[0]
 >>> a
@@ -268,7 +268,7 @@ There is a way to remove an item from a list given its index instead of its valu
 
 [`del`](https://docs.python.org/3/reference/simple_stmts.html#del) can also be used to delete entire variables:&gt;&gt;&gt;
 
-```text
+```python
 >>> del a
 ```
 
@@ -280,7 +280,7 @@ We saw that lists and strings have many common properties, such as indexing and 
 
 A tuple consists of a number of values separated by commas, for instance:&gt;&gt;&gt;
 
-```text
+```python
 >>> t = 12345, 54321, 'hello!'
 >>> t[0]
 12345
@@ -307,7 +307,7 @@ Though tuples may seem similar to lists, they are often used in different situat
 
 A special problem is the construction of tuples containing 0 or 1 items: the syntax has some extra quirks to accommodate these. Empty tuples are constructed by an empty pair of parentheses; a tuple with one item is constructed by following a value with a comma \(it is not sufficient to enclose a single value in parentheses\). Ugly, but effective. For example:&gt;&gt;&gt;
 
-```text
+```python
 >>> empty = ()
 >>> singleton = 'hello',    # <-- note trailing comma
 >>> len(empty)
@@ -320,7 +320,7 @@ A special problem is the construction of tuples containing 0 or 1 items: the syn
 
 The statement `t = 12345, 54321, 'hello!'` is an example of _tuple packing_: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
 
-```text
+```python
 >>> x, y, z = t
 ```
 
@@ -334,7 +334,7 @@ Curly braces or the [`set()`](https://docs.python.org/3/library/stdtypes.html#se
 
 Here is a brief demonstration:&gt;&gt;&gt;
 
-```text
+```python
 >>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 >>> print(basket)                      # show that duplicates have been removed
 {'orange', 'banana', 'pear', 'apple'}
@@ -361,7 +361,7 @@ False
 
 Similarly to [list comprehensions](https://docs.python.org/3/tutorial/datastructures.html#tut-listcomps), set comprehensions are also supported:&gt;&gt;&gt;
 
-```text
+```python
 >>> a = {x for x in 'abracadabra' if x not in 'abc'}
 >>> a
 {'r', 'd'}
@@ -379,7 +379,7 @@ Performing `list(d)` on a dictionary returns a list of all the keys used in the 
 
 Here is a small example using a dictionary:&gt;&gt;&gt;
 
-```text
+```python
 >>> tel = {'jack': 4098, 'sape': 4139}
 >>> tel['guido'] = 4127
 >>> tel
@@ -402,21 +402,21 @@ False
 
 The [`dict()`](https://docs.python.org/3/library/stdtypes.html#dict) constructor builds dictionaries directly from sequences of key-value pairs:&gt;&gt;&gt;
 
-```text
+```python
 >>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
 {'sape': 4139, 'guido': 4127, 'jack': 4098}
 ```
 
 In addition, dict comprehensions can be used to create dictionaries from arbitrary key and value expressions:&gt;&gt;&gt;
 
-```text
+```python
 >>> {x: x**2 for x in (2, 4, 6)}
 {2: 4, 4: 16, 6: 36}
 ```
 
 When the keys are simple strings, it is sometimes easier to specify pairs using keyword arguments:&gt;&gt;&gt;
 
-```text
+```python
 >>> dict(sape=4139, guido=4127, jack=4098)
 {'sape': 4139, 'guido': 4127, 'jack': 4098}
 ```
@@ -425,7 +425,7 @@ When the keys are simple strings, it is sometimes easier to specify pairs using 
 
 When looping through dictionaries, the key and corresponding value can be retrieved at the same time using the `items()` method.&gt;&gt;&gt;
 
-```text
+```python
 >>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
 >>> for k, v in knights.items():
 ...     print(k, v)
@@ -436,7 +436,7 @@ robin the brave
 
 When looping through a sequence, the position index and corresponding value can be retrieved at the same time using the [`enumerate()`](https://docs.python.org/3/library/functions.html#enumerate) function.&gt;&gt;&gt;
 
-```text
+```python
 >>> for i, v in enumerate(['tic', 'tac', 'toe']):
 ...     print(i, v)
 ...
@@ -447,7 +447,7 @@ When looping through a sequence, the position index and corresponding value can 
 
 To loop over two or more sequences at the same time, the entries can be paired with the [`zip()`](https://docs.python.org/3/library/functions.html#zip) function.&gt;&gt;&gt;
 
-```text
+```python
 >>> questions = ['name', 'quest', 'favorite color']
 >>> answers = ['lancelot', 'the holy grail', 'blue']
 >>> for q, a in zip(questions, answers):
@@ -460,7 +460,7 @@ What is your favorite color?  It is blue.
 
 To loop over a sequence in reverse, first specify the sequence in a forward direction and then call the [`reversed()`](https://docs.python.org/3/library/functions.html#reversed) function.&gt;&gt;&gt;
 
-```text
+```python
 >>> for i in reversed(range(1, 10, 2)):
 ...     print(i)
 ...
@@ -473,7 +473,7 @@ To loop over a sequence in reverse, first specify the sequence in a forward dire
 
 To loop over a sequence in sorted order, use the [`sorted()`](https://docs.python.org/3/library/functions.html#sorted) function which returns a new sorted list while leaving the source unaltered.&gt;&gt;&gt;
 
-```text
+```python
 >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 >>> for i in sorted(basket):
 ...     print(i)
@@ -488,7 +488,7 @@ pear
 
 Using [`set()`](https://docs.python.org/3/library/stdtypes.html#set) on a sequence eliminates duplicate elements. The use of [`sorted()`](https://docs.python.org/3/library/functions.html#sorted) in combination with [`set()`](https://docs.python.org/3/library/stdtypes.html#set) over a sequence is an idiomatic way to loop over unique elements of the sequence in sorted order.&gt;&gt;&gt;
 
-```text
+```python
 >>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 >>> for f in sorted(set(basket)):
 ...     print(f)
@@ -501,7 +501,7 @@ pear
 
 It is sometimes tempting to change a list while you are looping over it; however, it is often simpler and safer to create a new list instead.&gt;&gt;&gt;
 
-```text
+```python
 >>> import math
 >>> raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('NaN'), 47.8]
 >>> filtered_data = []

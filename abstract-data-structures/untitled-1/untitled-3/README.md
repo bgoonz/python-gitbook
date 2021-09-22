@@ -78,7 +78,7 @@ def in_sort(books):
 #     print(b)
 
 """
-- **Insertion Sort** is an _in-place_ algorithm, meaning that it 
+- **Insertion Sort** is an _in-place_ algorithm, meaning that it
   does not require any additional memory to perform the sort operation.
 
 - It works by conceptually dividing the array into _sorted_ and _unsorted_ pieces.
@@ -87,7 +87,7 @@ def in_sort(books):
 
     2. Save the 1st element in the _unsorted_ piece in a temp variable.
 
-    3. Shift elements in the _sorted_ piece over to the right until we find where the element 
+    3. Shift elements in the _sorted_ piece over to the right until we find where the element
        from step 2 should go.
 
     4. Insert the element from step 2 into its correct index within the _sorted_ piece.
@@ -137,19 +137,19 @@ print(my_names)
 - start by choosing a pivot (could be first, last, middle, random etc)
 - move all of the elements smaller than the pivot to LHS
 - move all of the elements larger than the pivot to RHS
-- invoke a recursive call to quick sort on LHS and RHS until base case 
+- invoke a recursive call to quick sort on LHS and RHS until base case
     (a side only contains a single element)
 
 [8, 3, 6, 4, 7, 9, 5, 2, 1]
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-pivot = [8] 
+pivot = [8]
 [3, 6, 4, 7, 9, 5, 2, 1]
 lhs = [3, 6, 4, 7, 5, 2, 1]
 rhs = [9]
 
 [lhs call]
-pivot [3] 
+pivot [3]
 [6, 4, 7, 5, 2, 1]
 lhs = [2, 1]
 rhs = [6, 4, 7, 5]
@@ -160,7 +160,7 @@ lhs = [1]
 rhs = []
 
 [rhs2 call]
-pivot = [6] 
+pivot = [6]
 [4, 7, 5]
 lhs = [4,5]
 rhs = [7]
@@ -189,7 +189,7 @@ def partition(data):
     # make a new empty list for RHS
     rhs = []
 
-    # loop over the data 
+    # loop over the data
     for v in data[1:]:
         # if lower than or equal to pivot
         if v <= pivot:
@@ -199,7 +199,7 @@ def partition(data):
         else:
             # append to RHS list
             rhs.append(v)
-    
+
     # return a tuple containing the LHS list, the pivot, and the RHS list
     return lhs, pivot, rhs
 
@@ -233,7 +233,7 @@ print(slst)
 
 # Divide a problem in to subproblems (of the same type)
 # Solve the subproblems
-# Combine the results of the subproblems 
+# Combine the results of the subproblems
 # to get the solution to the original problem
 
 def quick_sort(data, low, high):
@@ -285,7 +285,7 @@ print(lst)
 from book import Book
 # Divide a problem in to subproblems (of the same type)
 # Solve the subproblems
-# Combine the results of the subproblems 
+# Combine the results of the subproblems
 # to get the solution to the original problem
 
 def quick_sort(data, low, high):
@@ -725,7 +725,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```text
+```python
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|
@@ -770,22 +770,22 @@ Just clone the repository .
 
 
 ```python
-#Link to problem:- 
+#Link to problem:-
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
 
-def bubbleSort(a): 
-    n = len(a) 
-    # Traverse through all array elements 
+def bubbleSort(a):
+    n = len(a)
+    # Traverse through all array elements
 
-    for i in range(n-1): 
-        # Last i elements are already in place 
-        for j in range(0, n-i-1): 
+    for i in range(n-1):
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
 
-            # traverse the array from 0 to n-i-1 
-            # Swap if the element found is greater 
-            # than the next element 
-            if arr[j] > arr[j + 1] : 
-                arr[j], arr[j + 1] = arr[j + 1], arr[j] 
+            # traverse the array from 0 to n-i-1
+            # Swap if the element found is greater
+            # than the next element
+            if arr[j] > arr[j + 1] :
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 arr = []
 n=int(input("Enter size of array: "))
@@ -796,7 +796,7 @@ bubbleSort(arr)
 print ("Sorted array is:")
 for i in range(len(arr)):
      print(arr[i])
-     
+
 #Time complexity - O(n^2)
 #Space complexity - O(1)
 ```
@@ -934,17 +934,17 @@ Often, iterative solutions are easier to read and more performant.
 
 If we add a print statement into the `add_list` function:
 
-```text
+```python
     print(f'Add {l[0]} to the sum of {l[1:]}')
     return l[0] + add_list(l[1:])
 ```
 
 The terminal would print:
 
-> Add 1 to the sum of \[2, 3, 4\]  
-> Add 2 to the sum of \[3, 4\]  
-> Add 3 to the sum of \[4\]  
-> Add 4 to the sum of \[\]  
+> Add 1 to the sum of \[2, 3, 4\]
+> Add 2 to the sum of \[3, 4\]
+> Add 3 to the sum of \[4\]
+> Add 4 to the sum of \[\]
 > 10
 
 This helps us understand what is happening at each recursive step.
@@ -975,10 +975,10 @@ This process is partitioning.
 
 Our next step is to repeat this process until we hit our base case, which is an empty list or a list with just one element. When everything is down to one element lists, then we know they are properly sorted.
 
-> 3 and 9 are our next pivots:  
-> \[1\] 3 \[4\] 5 \[8, 7\] 9  
-> Next, 8 is our pivot:  
-> \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9  
+> 3 and 9 are our next pivots:
+> \[1\] 3 \[4\] 5 \[8, 7\] 9
+> Next, 8 is our pivot:
+> \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9
 > 1 3 4 5 7 8 9
 
 The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O\(n\), and we have to make `log n` passes.
@@ -991,12 +991,12 @@ What would be a bad case for quick sort?
 
 If we look at the order of this on each loop:
 
-> \[\] 1 \[2, 3, 4, 5, 6, 7\]  
-> 1 \[\] 2 \[3, 4, 5, 6, 7\]  
-> 1 2 \[\] 3 \[4, 5, 6, 7\]  
-> 1 2 3 \[\] 4 \[5, 6, 7\]  
-> 1 2 3 4 \[\] 5 \[6, 7\]  
-> 1 2 3 4 5 \[\] 6 \[7\]  
+> \[\] 1 \[2, 3, 4, 5, 6, 7\]
+> 1 \[\] 2 \[3, 4, 5, 6, 7\]
+> 1 2 \[\] 3 \[4, 5, 6, 7\]
+> 1 2 3 \[\] 4 \[5, 6, 7\]
+> 1 2 3 4 \[\] 5 \[6, 7\]
+> 1 2 3 4 5 \[\] 6 \[7\]
 > 1 2 3 4 5 6 7
 
 This took a full 7 passes, for 7 elements, because there was only one sorted item being added with each pass.
@@ -1061,7 +1061,7 @@ We already know off the tops of our heads that we have not setup our algorithm t
 
 Our terminal returns back:
 
-```text
+```python
 []
 [1]
 [1, 2]
@@ -1150,47 +1150,47 @@ Now we can run this function and it sorts our lists without allocating extra mem
 Let's add some print statements just to see exactly what is happening at each step on one of the sorts:
 
 ```python
-Our starting list is [5,3,9,4,8]. 
+Our starting list is [5,3,9,4,8].
 
-Checking against 5. Current list is [5, 3, 9, 4]. 
+Checking against 5. Current list is [5, 3, 9, 4].
 
-Checking against 3. Current list is [5, 3, 9, 4]. 
+Checking against 3. Current list is [5, 3, 9, 4].
 
 3 is less than 5, so we need to swap l[i] (3) with l[pivot_index + 1] (3).
 Next, we will swap 5 with 3 and increase the pivot index from 0 to 1.
-Now the current list is [3, 5, 9, 4] 
+Now the current list is [3, 5, 9, 4]
 
-Checking against 9. Current list is [3, 5, 9, 4]. 
+Checking against 9. Current list is [3, 5, 9, 4].
 
-Checking against 4. Current list is [3, 5, 9, 4]. 
+Checking against 4. Current list is [3, 5, 9, 4].
 
 4 is less than 5, so we need to swap l[i] (4) with l[pivot_index + 1] (9).
 Next, we will swap 5 with 4 and increase the pivot index from 1 to 2.
-Now the current list is [3, 4, 5, 9] 
+Now the current list is [3, 4, 5, 9]
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 0, 2) and quicksort([3, 4, 5, 9], 3, 4). 
+Splitting list to check quicksort([3, 4, 5, 9], 0, 2) and quicksort([3, 4, 5, 9], 3, 4).
 
 
-Checking against 3. Current list is [3, 4, 5, 9]. 
+Checking against 3. Current list is [3, 4, 5, 9].
 
-Checking against 4. Current list is [3, 4, 5, 9]. 
-
-
-
-Splitting list to check quicksort([3, 4, 5, 9], 0, 0) and quicksort([3, 4, 5, 9], 1, 2). 
-
-Checking against 4. Current list is [3, 4, 5, 9]. 
+Checking against 4. Current list is [3, 4, 5, 9].
 
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 1, 1) and quicksort([3, 4, 5, 9], 2, 2). 
+Splitting list to check quicksort([3, 4, 5, 9], 0, 0) and quicksort([3, 4, 5, 9], 1, 2).
 
-Checking against 9. Current list is [3, 4, 5, 9]. 
+Checking against 4. Current list is [3, 4, 5, 9].
 
 
 
-Splitting list to check quicksort([3, 4, 5, 9], 3, 3) and quicksort([3, 4, 5, 9], 4, 4). 
+Splitting list to check quicksort([3, 4, 5, 9], 1, 1) and quicksort([3, 4, 5, 9], 2, 2).
+
+Checking against 9. Current list is [3, 4, 5, 9].
+
+
+
+Splitting list to check quicksort([3, 4, 5, 9], 3, 3) and quicksort([3, 4, 5, 9], 4, 4).
 
 Our final sorted list is [3, 4, 5, 9]
 ```

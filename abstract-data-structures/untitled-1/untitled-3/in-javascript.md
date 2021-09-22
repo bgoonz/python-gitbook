@@ -14,7 +14,7 @@ description: VISUALIZED
 
 This project contains a skeleton for you to implement Bubble Sort. In the file **lib/bubble\_sort.js**, you should implement the Bubble Sort. This is a description of how the Bubble Sort works \(and is also in the code file\).
 
-```text
+```python
 Bubble Sort: (array)
   n := length(array)
   repeat
@@ -92,19 +92,19 @@ loop = list.count;
 
 for i = 0 to loop-1 do: swapped = false
 
-```text
+```python
   for j = 0 to loop-1 do:
 
-     /* compare the adjacent elements */   
+     /* compare the adjacent elements */
      if list[j] > list[j+1] then
         /* swap them */
-        swap( list[j], list[j+1] )         
+        swap( list[j], list[j+1] )
         swapped = true
      end if
 
   end for
 
-  /*if no number was swapped that means 
+  /*if no number was swapped that means
   array is sorted now, break the loop.*/
 
   if(not swapped) then
@@ -199,7 +199,7 @@ The algorithm can be summarized as the following:
 
 This is a description of how the Selection Sort works \(and is also in the code file\).
 
-```text
+```python
 procedure selection sort(list)
    list  : array of items
    n     : size of list
@@ -308,7 +308,7 @@ The algorithm can be summarized as the following:
 
 This is a description of how the Insertion Sort works \(and is also in the code file\).
 
-```text
+```python
 procedure insertionSort( A : array of items )
    int holePosition
    int valueToInsert
@@ -402,7 +402,7 @@ The algorithm can be summarized as the following:
 
 This is a description of how the Merge Sort works \(and is also in the code file\).
 
-```text
+```python
 procedure mergesort( a as array )
    if ( n == 1 ) return a
 
@@ -516,7 +516,7 @@ module.exports = {
 
 This project contains a skeleton for you to implement Quick Sort. In the file **lib/quick\_sort.js**, you should implement the Quick Sort. This is a description of how the Quick Sort works \(and is also in the code file\).
 
-```text
+```python
 procedure quick sort (array)
   if the length of the array is 0 or 1, return the array
 
@@ -714,7 +714,7 @@ The Binary Search algorithm can be summarized as the following:
 
 This is a description of how the Binary Search works \(and is also in the code file\).
 
-```text
+```python
 procedure binary search (list, target)
   parameter list: a list of sorted value
   parameter target: the value to search for
@@ -750,7 +750,7 @@ end procedure binary search
 
 Then you need to adapt that to return _the index_ of the found item rather than a Boolean value. The pseudocode is also in the code file.
 
-```text
+```python
 procedure binary search index(list, target, low, high)
   parameter list: a list of sorted value
   parameter target: the value to search for

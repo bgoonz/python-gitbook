@@ -34,7 +34,7 @@ Otherwise, just divide the array into two equal halves and pass both arrays to r
 
 And at last, we are going to call merge function after each recursive call to join both sorted array.
 
-```text
+```python
 def mergeSort(x):
     if len(x) == 0 or len(x) == 1:
         return x
@@ -49,7 +49,7 @@ def mergeSort(x):
 
 Now we are breaking the array until they are divided individually. So what we want is just join the arrays that we passed in a sorted way to this function and then returned the new array as a result.
 
-```text
+```python
 def merge(a,b):
     c = []
     while len(a) != 0 and len(b) != 0:
@@ -80,7 +80,7 @@ Now, let’s create a main condition where we need to call the above function an
 
 So let’s manually defined the list which we want to pass as an argument to the function.
 
-```text
+```python
 if __name__ == '__main__':
     List = [3, 4, 2, 6, 5, 7, 1, 9]
     print('Sorted List : ',mergeSort(List))
@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```text
+```python
 
 def merge(a,b):
     c = []
@@ -175,7 +175,7 @@ if __name__ == '__main__':
 
 #### As the **rightIndex** gets incremented by one, **right\[1\]** is now 5. **4 &lt; 5** returns true, so **left\[leftIndex\]** gets pushed to the **results** array.
 
-####  
+####
 
 ![](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497669811-HRRJS0W6SMFPCCOE053V/image-asset.png?format=300w)
 

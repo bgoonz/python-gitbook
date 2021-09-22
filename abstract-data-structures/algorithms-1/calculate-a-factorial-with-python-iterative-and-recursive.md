@@ -12,7 +12,7 @@ A factorial is denoted by the integer and followed by an exclamation mark.
 
 And to calculate that factorial, we multiply the number with every whole number smaller than it, until we reach 1:
 
-```text
+```python
 5! = 5 * 4 * 3 * 2 * 1
 5! = 120
 ```
@@ -25,7 +25,7 @@ We can calculate factorials using both the `while` loop and the `for` loop. The 
 
 Let's start with the `for` loop:
 
-```text
+```python
 def get_factorial_for_loop(n):
     result = 1
     if n > 1:
@@ -56,7 +56,7 @@ Inside the `for` loop, we multiply the current value of `result` with the curren
 
 Finally, we return the final value of the `result`. Let's test our function print out the result:
 
-```text
+```python
 inp = input("Enter a number: ")
 inp = int(inp)
 
@@ -67,7 +67,7 @@ print(f"The result is: {get_factorial_for_loop(inp)}")
 
 It will prompt the user to give input. We'll try it with `4`:
 
-```text
+```python
 Enter a number: 4
 The result is: 24
 ```
@@ -78,7 +78,7 @@ You can use a calculator to verify the result:
 
 Now let's see how we can calculate factorial using the `while` loop. Here's our modified function:
 
-```text
+```python
 def get_factorial_while_loop(n):
     result = 1
     while n > 1:
@@ -89,7 +89,7 @@ def get_factorial_while_loop(n):
 
 This is pretty similar to the `for` loop. Except for this time we're moving from `n` towards the **1**, closer to the mathematical definition. Let's test our function:
 
-```text
+```python
 inp = input("Enter a number: ")
 inp = int(inp)
 
@@ -98,12 +98,12 @@ print(f"The result is: {get_factorial_while_loop(inp)}")
 
 We'll enter 4 as an input once more:
 
-```text
+```python
 Enter a number: 4
 The result is: 24
 ```
 
-### 
+###
 
 Although the calculation was `4 * 3 * 2 * 1` the final result is the same as before.
 
@@ -137,7 +137,7 @@ A factorial recursion ends when it hits **1**. This will be our **base case**. W
 
 Let's take a look at our recursive factorial function:
 
-```text
+```python
 def get_factorial_recursively(n):
     if n <= 1:
         return 1
@@ -149,7 +149,7 @@ As you see the `if` block embodies our **base case**, while the `else` block cov
 
 Let's test our function:
 
-```text
+```python
 inp = input("Enter a number: ")
 inp = int(inp)
 
@@ -158,7 +158,7 @@ print(f"The result is: {get_factorial_recursively(inp)}")
 
 We will enter 3 as input this time:
 
-```text
+```python
 Enter a number:3
 The result is: 6
 ```
