@@ -6,26 +6,26 @@ Tom Tarpey edited this page on May 26, 2019 · [24 revisions](https://github.com
 
 ### Contents
 
-* [Versions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions)
-* [Development Environments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments)
-* [Running Programs](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs)
-* [Comments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments)
-* [Semicolons](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons)
-* [Whitespace, Blocks](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks)
-* [Functions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions)
-* [Arithmetic Operators](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators)
-* [Variables](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables)
-* [Data Types](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types)
-* [Arrays/Lists](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists)
-* [Slices](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices)
-* [Objects/Dicts](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts)
-* [String Formatting](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting)
-* [Booleans and Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals)
-* [`for` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops)
-* [`while` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops)
-* [`switch` Statement](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement)
-* [`if` Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals)
-* [Classes](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes)
+- [Versions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions)
+- [Development Environments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments)
+- [Running Programs](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs)
+- [Comments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments)
+- [Semicolons](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons)
+- [Whitespace, Blocks](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks)
+- [Functions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions)
+- [Arithmetic Operators](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators)
+- [Variables](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables)
+- [Data Types](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types)
+- [Arrays/Lists](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists)
+- [Slices](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices)
+- [Objects/Dicts](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts)
+- [String Formatting](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting)
+- [Booleans and Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals)
+- [`for` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops)
+- [`while` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops)
+- [`switch` Statement](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement)
+- [`if` Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals)
+- [Classes](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes)
 
 ### Versions
 
@@ -241,41 +241,41 @@ print(add(4, 5)) # prints 9
 
 #### JavaScript
 
-| Operator | Description |
-| :--- | :--- |
-| `+` | Addition |
-| `-` | Subtraction |
-| `*` | Multiplication |
-| `/` | Division |
-| `%` | Modulo \(remainder\) |
-| `--` | Pre-decrement, post-decrement |
-| `++` | Pre-increment, post-increment |
-| `**` | Exponentiation \(power\) |
-| `=` | Assignment |
-| `+=` | Addition assignment |
-| `-=` | Subtraction assignment |
-| `*=` | Multiplication assignment |
-| `/=` | Division assignment |
-| `%=` | Modulo assignment |
+| Operator | Description                   |
+| :------- | :---------------------------- |
+| `+`      | Addition                      |
+| `-`      | Subtraction                   |
+| `*`      | Multiplication                |
+| `/`      | Division                      |
+| `%`      | Modulo \(remainder\)          |
+| `--`     | Pre-decrement, post-decrement |
+| `++`     | Pre-increment, post-increment |
+| `**`     | Exponentiation \(power\)      |
+| `=`      | Assignment                    |
+| `+=`     | Addition assignment           |
+| `-=`     | Subtraction assignment        |
+| `*=`     | Multiplication assignment     |
+| `/=`     | Division assignment           |
+| `%=`     | Modulo assignment             |
 
 #### Python
 
 The pre- and post-increment and decrement are notably absent.
 
-| Operator | Description |
-| :--- | :--- |
-| `+` | Addition |
-| `-` | Subtraction |
-| `*` | Multiplication |
-| `/` | Division |
-| `%` | Modulo \(remainder\) |
-| `**` | Exponentiation \(power\) |
-| `=` | Assignment |
-| `+=` | Addition assignment |
-| `-=` | Subtraction assignment |
-| `*=` | Multiplication assignment |
-| `/=` | Division assignment |
-| `%=` | Modulo assignment |
+| Operator | Description               |
+| :------- | :------------------------ |
+| `+`      | Addition                  |
+| `-`      | Subtraction               |
+| `*`      | Multiplication            |
+| `/`      | Division                  |
+| `%`      | Modulo \(remainder\)      |
+| `**`     | Exponentiation \(power\)  |
+| `=`      | Assignment                |
+| `+=`     | Addition assignment       |
+| `-=`     | Subtraction assignment    |
+| `*=`     | Multiplication assignment |
+| `/=`     | Division assignment       |
+| `%=`     | Modulo assignment         |
 
 ### Variables
 
@@ -602,16 +602,16 @@ y = false;
 
 Boolean operators:
 
-| Operator | Definition |
-| :--- | :--- |
-| `==` | Equality |
-| `!=` | Inequality |
-| `===` | Strict equality |
-| `!==` | Strict inequality |
-| `<` | Less than |
-| `>` | Greater than |
-| `<=` | Less than or equal |
-| `>=` | Greater than or equal |
+| Operator | Definition            |
+| :------- | :-------------------- |
+| `==`     | Equality              |
+| `!=`     | Inequality            |
+| `===`    | Strict equality       |
+| `!==`    | Strict inequality     |
+| `<`      | Less than             |
+| `>`      | Greater than          |
+| `<=`     | Less than or equal    |
+| `>=`     | Greater than or equal |
 
 The concept of strict equality/inequality applies to items that might normally be converted into a compatible type. The strict tests will consider if the types themselves are the same.
 
@@ -628,11 +628,11 @@ The concept of strict equality/inequality applies to items that might normally b
 
 Logical operators:
 
-| Operator | Description |
-| :--- | :--- |
-| `!` | Logical inverse, not |
-| `&&` | Logical AND |
-| \` |  |
+| Operator | Description          |
+| :------- | :------------------- |
+| `!`      | Logical inverse, not |
+| `&&`     | Logical AND          |
+| \`       |                      |
 
 The not operator `!` can be used to test whether or not a value is "truthy".
 
@@ -664,22 +664,22 @@ y = False
 
 Boolean operators:
 
-| Operator | Definition |
-| :--- | :--- |
-| `==` | Equality |
-| `!=` | Inequality |
-| `<` | Less than |
-| `>` | Greater than |
-| `<=` | Less than or equal |
-| `>=` | Greater than or equal |
+| Operator | Definition            |
+| :------- | :-------------------- |
+| `==`     | Equality              |
+| `!=`     | Inequality            |
+| `<`      | Less than             |
+| `>`      | Greater than          |
+| `<=`     | Less than or equal    |
+| `>=`     | Greater than or equal |
 
 Logical operators:
 
-| Operator | Description |
-| :--- | :--- |
-| `not` | Logical inverse, not |
-| `and` | Logical AND |
-| `or` | Logical OR |
+| Operator | Description          |
+| :------- | :------------------- |
+| `not`    | Logical inverse, not |
+| `and`    | Logical AND          |
+| `or`     | Logical OR           |
 
 The `not` operator can be used to test whether or not a value is "truthy".
 
@@ -996,4 +996,3 @@ g.jump()  # I'm jumping! Yay!
 ```
 
 Python supports multiple inheritance.
-

@@ -188,8 +188,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Queue</span>
-==========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Queue</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -201,9 +200,9 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="de6d4d082d514cfcb57fd294130b86e7"><span data-offset-key="de6d4d082d514cfcb57fd294130b86e7:0">Queue</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="620213102d6b478fa7907ab73524ac7d"><span data-offset-key="620213102d6b478fa7907ab73524ac7d:0">Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="620213102d6b478fa7907ab73524ac7d"><span data-offset-key="620213102d6b478fa7907ab73524ac7d:0">Implement a Queue class from scratch with an existing bug, the bug is that it cannot take more than 5 elements.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57b6971c93f746c6b057564fcdb9b40b"><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:0">Implement a Queue using two stacks. You may only use the standard </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:1">`push()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:2">, </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:3">`pop()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:4">, and </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:5">`peek()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:6"> operations traditionally available to stacks. You do not need to implement the stack yourself (i.e. an array can be used to simulate a stack).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57b6971c93f746c6b057564fcdb9b40b"><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:0">Implement a Queue using two stacks. You may only use the standard </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:1">`push()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:2">, </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:3">`pop()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:4">, and </span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:5">`peek()`</span><span data-offset-key="57b6971c93f746c6b057564fcdb9b40b:6"> operations traditionally available to stacks. You do not need to implement the stack yourself (i.e. an array can be used to simulate a stack).</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="2bef3937e3cc40678d116f107c89b548"><span data-offset-key="2bef3937e3cc40678d116f107c89b548:0">Queues in Python</span></span></span>
 
@@ -221,35 +220,35 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94f09cc101564790b2af7091e2ec735c"><span data-offset-key="94f09cc101564790b2af7091e2ec735c:0">**Advantages:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf7c1a74266d4d33b4c7255e2c83ccd5"><span data-offset-key="bf7c1a74266d4d33b4c7255e2c83ccd5:0">Automatically orders data chronologically</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf7c1a74266d4d33b4c7255e2c83ccd5"><span data-offset-key="bf7c1a74266d4d33b4c7255e2c83ccd5:0">Automatically orders data chronologically</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e89cae0697b40079ce2d9f9c333eae6"><span data-offset-key="9e89cae0697b40079ce2d9f9c333eae6:0">Scales to meet size requirements</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e89cae0697b40079ce2d9f9c333eae6"><span data-offset-key="9e89cae0697b40079ce2d9f9c333eae6:0">Scales to meet size requirements</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="986fe9c309554a99acc94878b3cc232f"><span data-offset-key="986fe9c309554a99acc94878b3cc232f:0">Time efficient with </span><span data-offset-key="986fe9c309554a99acc94878b3cc232f:1">`deque`</span><span data-offset-key="986fe9c309554a99acc94878b3cc232f:2"> class</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="986fe9c309554a99acc94878b3cc232f"><span data-offset-key="986fe9c309554a99acc94878b3cc232f:0">Time efficient with </span><span data-offset-key="986fe9c309554a99acc94878b3cc232f:1">`deque`</span><span data-offset-key="986fe9c309554a99acc94878b3cc232f:2"> class</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="48085b35ac7c4efd968c74b468e0af25"><span data-offset-key="48085b35ac7c4efd968c74b468e0af25:0">**Disadvantages:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b075698c3e4d425d96d262ed821dc6f9"><span data-offset-key="b075698c3e4d425d96d262ed821dc6f9:0">Can only access data on the ends</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b075698c3e4d425d96d262ed821dc6f9"><span data-offset-key="b075698c3e4d425d96d262ed821dc6f9:0">Can only access data on the ends</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00637c056af049e9a5bac725c96b8ae2"><span data-offset-key="00637c056af049e9a5bac725c96b8ae2:0">**Applications:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e2236d2ebd54be5be8017a425874372"><span data-offset-key="7e2236d2ebd54be5be8017a425874372:0">Operations on a shared resource like a printer or </span></span><a href="https://www.educative.io/blog/beginners-guide-to-computers-and-programming" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="de92757fab254e508e38219b9b89ccc3"><span data-offset-key="de92757fab254e508e38219b9b89ccc3:0">CPU core</span></span></a><span data-key="1e279c2f733b4870877ed0c9bd8e074a"><span data-offset-key="1e279c2f733b4870877ed0c9bd8e074a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e2236d2ebd54be5be8017a425874372"><span data-offset-key="7e2236d2ebd54be5be8017a425874372:0">Operations on a shared resource like a printer or </span></span><a href="https://www.educative.io/blog/beginners-guide-to-computers-and-programming" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="de92757fab254e508e38219b9b89ccc3"><span data-offset-key="de92757fab254e508e38219b9b89ccc3:0">CPU core</span></span></a><span data-key="1e279c2f733b4870877ed0c9bd8e074a"><span data-offset-key="1e279c2f733b4870877ed0c9bd8e074a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5f927e0b5c84df38eb7535a665691f4"><span data-offset-key="f5f927e0b5c84df38eb7535a665691f4:0">Serve as temporary storage for batch systems</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5f927e0b5c84df38eb7535a665691f4"><span data-offset-key="f5f927e0b5c84df38eb7535a665691f4:0">Serve as temporary storage for batch systems</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="075514ff390c4c33a5327eaad32ffbda"><span data-offset-key="075514ff390c4c33a5327eaad32ffbda:0">Provides an easy default order for tasks of equal importance</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="075514ff390c4c33a5327eaad32ffbda"><span data-offset-key="075514ff390c4c33a5327eaad32ffbda:0">Provides an easy default order for tasks of equal importance</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="532d15e462124f988914f0a9d112365a"><span data-offset-key="532d15e462124f988914f0a9d112365a:0">Common queue interview questions in Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="706066add1024183852e62d653e3bb40"><span data-offset-key="706066add1024183852e62d653e3bb40:0">Reverse first k elements of a queue</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="706066add1024183852e62d653e3bb40"><span data-offset-key="706066add1024183852e62d653e3bb40:0">Reverse first k elements of a queue</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="62788ce0b1604fc9aaa096ae1e4fe48e"><span data-offset-key="62788ce0b1604fc9aaa096ae1e4fe48e:0">Implement a queue using a linked list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="62788ce0b1604fc9aaa096ae1e4fe48e"><span data-offset-key="62788ce0b1604fc9aaa096ae1e4fe48e:0">Implement a queue using a linked list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4925bca18de40a3b7d6f985639e2ad9"><span data-offset-key="c4925bca18de40a3b7d6f985639e2ad9:0">Implement a stack using a queue</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4925bca18de40a3b7d6f985639e2ad9"><span data-offset-key="c4925bca18de40a3b7d6f985639e2ad9:0">Implement a stack using a queue</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa7015cb3fab44c89cee60101f144936"><span data-offset-key="fa7015cb3fab44c89cee60101f144936:0"><span data-slate-zero-width="n">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa7015cb3fab44c89cee60101f144936"><span data-offset-key="fa7015cb3fab44c89cee60101f144936:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Implementation </span>
 

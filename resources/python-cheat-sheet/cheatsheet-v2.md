@@ -6,197 +6,197 @@ description: The Zen of Python
 
 ### Python Cheatsheet
 
-* About
-  * Contribute
-  * Read It
-  * Python Cheatsheet
-  * The Zen of Python
-  * Python Basics
-    * Math Operators
-    * Data Types
-    * String Concatenation and Replication
-    * Variables
-    * Comments
-    * The print\(\) Function
-    * The input\(\) Function
-    * The len\(\) Function
-    * The str\(\), int\(\), and float\(\) Functions
-  * Flow Control
-    * Comparison Operators
-    * Boolean evaluation
-    * Boolean Operators
-    * Mixing Boolean and Comparison Operators
-    * if Statements
-    * else Statements
-    * elif Statements
-    * while Loop Statements
-    * break Statements
-    * continue Statements
-    * for Loops and the range\(\) Function
-    * For else statement
-    * Importing Modules
-    * Ending a Program Early with sys.exit\(\)
-  * Functions
-    * Return Values and return Statements
-    * The None Value
-    * Keyword Arguments and print\(\)
-    * Local and Global Scope
-    * The global Statement
-  * Exception Handling
-    * Basic exception handling
-    * Final code in exception handling
-  * Lists
-    * Getting Individual Values in a List with Indexes
-    * Negative Indexes
-    * Getting Sublists with Slices
-    * Getting a List’s Length with len\(\)
-    * Changing Values in a List with Indexes
-    * List Concatenation and List Replication
-    * Removing Values from Lists with del Statements
-    * Using for Loops with Lists
-    * Looping Through Multiple Lists with zip\(\)
-    * The in and not in Operators
-    * The Multiple Assignment Trick
-    * Augmented Assignment Operators
-    * Finding a Value in a List with the index\(\) Method
-    * Adding Values to Lists with the append\(\) and insert\(\) Methods
-    * Removing Values from Lists with remove\(\)
-    * Removing Values from Lists with pop\(\)
-    * Sorting the Values in a List with the sort\(\) Method
-    * Tuple Data Type
-    * Converting Types with the list\(\) and tuple\(\) Functions
-  * Dictionaries and Structuring Data
-    * The keys\(\), values\(\), and items\(\) Methods
-    * Checking Whether a Key or Value Exists in a Dictionary
-    * The get\(\) Method
-    * The setdefault\(\) Method
-    * Pretty Printing
-    * Merge two dictionaries
-  * sets
-    * Initializing a set
-    * sets: unordered collections of unique elements
-    * set add\(\) and update\(\)
-    * set remove\(\) and discard\(\)
-    * set union\(\)
-    * set intersection
-    * set difference
-    * set symetric\_difference
-  * itertools Module
-    * accumulate\(\)
-    * combinations\(\)
-    * combinations\_with\_replacement\(\)
-    * count\(\)
-    * cycle\(\)
-    * chain\(\)
-    * compress\(\)
-    * dropwhile\(\)
-    * filterfalse\(\)
-    * groupby\(\)
-    * islice\(\)
-    * permutations\(\)
-    * product\(\)
-    * repeat\(\)
-    * starmap\(\)
-    * takewhile\(\)
-    * tee\(\)
-    * zip\_longest\(\)
-  * Comprehensions
-    * List comprehension
-    * Set comprehension
-    * Dict comprehension
-  * Manipulating Strings
-    * Escape Characters
-    * Raw Strings
-    * Multiline Strings with Triple Quotes
-    * Indexing and Slicing Strings
-    * The in and not in Operators with Strings
-    * The in and not in Operators with list
-    * The upper\(\), lower\(\), isupper\(\), and islower\(\) String Methods
-    * The isX String Methods
-    * The startswith\(\) and endswith\(\) String Methods
-    * The join\(\) and split\(\) String Methods
-    * Justifying Text with rjust\(\), ljust\(\), and center\(\)
-    * Removing Whitespace with strip\(\), rstrip\(\), and lstrip\(\)
-    * Copying and Pasting Strings with the pyperclip Module \(need pip install\)
-  * String Formatting
-    * % operator
-    * String Formatting \(str.format\)
-    * Lazy string formatting
-    * Formatted String Literals or f-strings \(Python 3.6+\)
-    * Template Strings
-  * Regular Expressions
-    * Matching Regex Objects
-    * Grouping with Parentheses
-    * Matching Multiple Groups with the Pipe
-    * Optional Matching with the Question Mark
-    * Matching Zero or More with the Star
-    * Matching One or More with the Plus
-    * Matching Specific Repetitions with Curly Brackets
-    * Greedy and Nongreedy Matching
-    * The findall\(\) Method
-    * Making Your Own Character Classes
-    * The Caret and Dollar Sign Characters
-    * The Wildcard Character
-    * Matching Everything with Dot-Star
-    * Matching Newlines with the Dot Character
-    * Review of Regex Symbols
-    * Case-Insensitive Matching
-    * Substituting Strings with the sub\(\) Method
-    * Managing Complex Regexes
-  * Handling File and Directory Paths
-    * Backslash on Windows and Forward Slash on OS X and Linux
-    * The Current Working Directory
-    * Creating New Folders
-    * Absolute vs. Relative Paths
-    * Handling Absolute and Relative Paths
-    * Checking Path Validity
-    * Finding File Sizes and Folder Contents
-    * Copying Files and Folders
-    * Moving and Renaming Files and Folders
-    * Permanently Deleting Files and Folders
-    * Safe Deletes with the send2trash Module
-    * Walking a Directory Tree
-  * Reading and Writing Files
-    * The File Reading/Writing Process
-    * Opening and reading files with the open\(\) function
-    * Writing to Files
-    * Saving Variables with the shelve Module
-    * Saving Variables with the pprint.pformat\(\) Function
-    * Reading ZIP Files
-    * Extracting from ZIP Files
-    * Creating and Adding to ZIP Files
-  * JSON, YAML and configuration files
-    * JSON
-    * YAML
-    * Anyconfig
-  * Debugging
-    * Raising Exceptions
-    * Getting the Traceback as a String
-    * Assertions
-    * Logging
-    * Logging Levels
-    * Disabling Logging
-    * Logging to a File
-  * Lambda Functions
-  * Ternary Conditional Operator
-  * args and kwargs
-    * Things to Remember\(args\)
-    * Things to Remember\(kwargs\)
-  * Context Manager
-    * with statement
-    * Writing your own contextmanager using generator syntax
-  * `__main__` Top-level script environment
-    * Advantages
-  * setup.py
-  * Dataclasses
-    * Features
-    * Default values
-    * Type hints
-  * Virtual Environment
-    * virtualenv
-    * poetry
-    * pipenv
-    * anaconda
+- About
+  - Contribute
+  - Read It
+  - Python Cheatsheet
+  - The Zen of Python
+  - Python Basics
+    - Math Operators
+    - Data Types
+    - String Concatenation and Replication
+    - Variables
+    - Comments
+    - The print\(\) Function
+    - The input\(\) Function
+    - The len\(\) Function
+    - The str\(\), int\(\), and float\(\) Functions
+  - Flow Control
+    - Comparison Operators
+    - Boolean evaluation
+    - Boolean Operators
+    - Mixing Boolean and Comparison Operators
+    - if Statements
+    - else Statements
+    - elif Statements
+    - while Loop Statements
+    - break Statements
+    - continue Statements
+    - for Loops and the range\(\) Function
+    - For else statement
+    - Importing Modules
+    - Ending a Program Early with sys.exit\(\)
+  - Functions
+    - Return Values and return Statements
+    - The None Value
+    - Keyword Arguments and print\(\)
+    - Local and Global Scope
+    - The global Statement
+  - Exception Handling
+    - Basic exception handling
+    - Final code in exception handling
+  - Lists
+    - Getting Individual Values in a List with Indexes
+    - Negative Indexes
+    - Getting Sublists with Slices
+    - Getting a List’s Length with len\(\)
+    - Changing Values in a List with Indexes
+    - List Concatenation and List Replication
+    - Removing Values from Lists with del Statements
+    - Using for Loops with Lists
+    - Looping Through Multiple Lists with zip\(\)
+    - The in and not in Operators
+    - The Multiple Assignment Trick
+    - Augmented Assignment Operators
+    - Finding a Value in a List with the index\(\) Method
+    - Adding Values to Lists with the append\(\) and insert\(\) Methods
+    - Removing Values from Lists with remove\(\)
+    - Removing Values from Lists with pop\(\)
+    - Sorting the Values in a List with the sort\(\) Method
+    - Tuple Data Type
+    - Converting Types with the list\(\) and tuple\(\) Functions
+  - Dictionaries and Structuring Data
+    - The keys\(\), values\(\), and items\(\) Methods
+    - Checking Whether a Key or Value Exists in a Dictionary
+    - The get\(\) Method
+    - The setdefault\(\) Method
+    - Pretty Printing
+    - Merge two dictionaries
+  - sets
+    - Initializing a set
+    - sets: unordered collections of unique elements
+    - set add\(\) and update\(\)
+    - set remove\(\) and discard\(\)
+    - set union\(\)
+    - set intersection
+    - set difference
+    - set symetric_difference
+  - itertools Module
+    - accumulate\(\)
+    - combinations\(\)
+    - combinations_with_replacement\(\)
+    - count\(\)
+    - cycle\(\)
+    - chain\(\)
+    - compress\(\)
+    - dropwhile\(\)
+    - filterfalse\(\)
+    - groupby\(\)
+    - islice\(\)
+    - permutations\(\)
+    - product\(\)
+    - repeat\(\)
+    - starmap\(\)
+    - takewhile\(\)
+    - tee\(\)
+    - zip_longest\(\)
+  - Comprehensions
+    - List comprehension
+    - Set comprehension
+    - Dict comprehension
+  - Manipulating Strings
+    - Escape Characters
+    - Raw Strings
+    - Multiline Strings with Triple Quotes
+    - Indexing and Slicing Strings
+    - The in and not in Operators with Strings
+    - The in and not in Operators with list
+    - The upper\(\), lower\(\), isupper\(\), and islower\(\) String Methods
+    - The isX String Methods
+    - The startswith\(\) and endswith\(\) String Methods
+    - The join\(\) and split\(\) String Methods
+    - Justifying Text with rjust\(\), ljust\(\), and center\(\)
+    - Removing Whitespace with strip\(\), rstrip\(\), and lstrip\(\)
+    - Copying and Pasting Strings with the pyperclip Module \(need pip install\)
+  - String Formatting
+    - % operator
+    - String Formatting \(str.format\)
+    - Lazy string formatting
+    - Formatted String Literals or f-strings \(Python 3.6+\)
+    - Template Strings
+  - Regular Expressions
+    - Matching Regex Objects
+    - Grouping with Parentheses
+    - Matching Multiple Groups with the Pipe
+    - Optional Matching with the Question Mark
+    - Matching Zero or More with the Star
+    - Matching One or More with the Plus
+    - Matching Specific Repetitions with Curly Brackets
+    - Greedy and Nongreedy Matching
+    - The findall\(\) Method
+    - Making Your Own Character Classes
+    - The Caret and Dollar Sign Characters
+    - The Wildcard Character
+    - Matching Everything with Dot-Star
+    - Matching Newlines with the Dot Character
+    - Review of Regex Symbols
+    - Case-Insensitive Matching
+    - Substituting Strings with the sub\(\) Method
+    - Managing Complex Regexes
+  - Handling File and Directory Paths
+    - Backslash on Windows and Forward Slash on OS X and Linux
+    - The Current Working Directory
+    - Creating New Folders
+    - Absolute vs. Relative Paths
+    - Handling Absolute and Relative Paths
+    - Checking Path Validity
+    - Finding File Sizes and Folder Contents
+    - Copying Files and Folders
+    - Moving and Renaming Files and Folders
+    - Permanently Deleting Files and Folders
+    - Safe Deletes with the send2trash Module
+    - Walking a Directory Tree
+  - Reading and Writing Files
+    - The File Reading/Writing Process
+    - Opening and reading files with the open\(\) function
+    - Writing to Files
+    - Saving Variables with the shelve Module
+    - Saving Variables with the pprint.pformat\(\) Function
+    - Reading ZIP Files
+    - Extracting from ZIP Files
+    - Creating and Adding to ZIP Files
+  - JSON, YAML and configuration files
+    - JSON
+    - YAML
+    - Anyconfig
+  - Debugging
+    - Raising Exceptions
+    - Getting the Traceback as a String
+    - Assertions
+    - Logging
+    - Logging Levels
+    - Disabling Logging
+    - Logging to a File
+  - Lambda Functions
+  - Ternary Conditional Operator
+  - args and kwargs
+    - Things to Remember\(args\)
+    - Things to Remember\(kwargs\)
+  - Context Manager
+    - with statement
+    - Writing your own contextmanager using generator syntax
+  - `__main__` Top-level script environment
+    - Advantages
+  - setup.py
+  - Dataclasses
+    - Features
+    - Default values
+    - Type hints
+  - Virtual Environment
+    - virtualenv
+    - poetry
+    - pipenv
+    - anaconda
 
 ### The Zen of Python
 
@@ -237,15 +237,15 @@ _Return to the Top_
 
 From **Highest** to **Lowest** precedence:
 
-| Operators | Operation | Example |
-| :--- | :--- | :--- |
-| \*\* | Exponent | `2 ** 3 = 8` |
-| % | Modulus/Remainder | `22 % 8 = 6` |
-| // | Integer division | `22 // 8 = 2` |
-| / | Division | `22 / 8 = 2.75` |
-| \* | Multiplication | `3 * 3 = 9` |
-| - | Subtraction | `5 - 2 = 3` |
-| + | Addition | `2 + 2 = 4` |
+| Operators | Operation         | Example         |
+| :-------- | :---------------- | :-------------- |
+| \*\*      | Exponent          | `2 ** 3 = 8`    |
+| %         | Modulus/Remainder | `22 % 8 = 6`    |
+| //        | Integer division  | `22 // 8 = 2`   |
+| /         | Division          | `22 / 8 = 2.75` |
+| \*        | Multiplication    | `3 * 3 = 9`     |
+| -         | Subtraction       | `5 - 2 = 3`     |
+| +         | Addition          | `2 + 2 = 4`     |
 
 Examples of expressions in the interactive shell:
 
@@ -283,11 +283,11 @@ _Return to the Top_
 
 #### Data Types
 
-| Data Type | Examples |
-| :--- | :--- |
-| Integers | `-2, -1, 0, 1, 2, 3, 4, 5` |
+| Data Type              | Examples                                  |
+| :--------------------- | :---------------------------------------- |
+| Integers               | `-2, -1, 0, 1, 2, 3, 4, 5`                |
 | Floating-point numbers | `-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25` |
-| Strings | `'a', 'aa', 'aaa', 'Hello!', '11 cats'` |
+| Strings                | `'a', 'aa', 'aaa', 'Hello!', '11 cats'`   |
 
 _Return to the Top_
 
@@ -458,14 +458,14 @@ _Return to the Top_
 
 #### Comparison Operators
 
-| Operator | Meaning |
-| :--- | :--- |
-| `==` | Equal to |
-| `!=` | Not equal to |
-| `<` | Less than |
-| `>` | Greater Than |
-| `<=` | Less than or Equal to |
-| `>=` | Greater than or Equal to |
+| Operator | Meaning                  |
+| :------- | :----------------------- |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
+| `<`      | Less than                |
+| `>`      | Greater Than             |
+| `<=`     | Less than or Equal to    |
+| `>=`     | Greater than or Equal to |
 
 These operators evaluate to True or False depending on the values you give them.
 
@@ -564,28 +564,28 @@ There are three Boolean operators: and, or, and not.
 
 The _and_ Operator’s _Truth_ Table:
 
-| Expression | Evaluates to |
-| :--- | :--- |
-| `True and True` | `True` |
-| `True and False` | `False` |
-| `False and True` | `False` |
-| `False and False` | `False` |
+| Expression        | Evaluates to |
+| :---------------- | :----------- |
+| `True and True`   | `True`       |
+| `True and False`  | `False`      |
+| `False and True`  | `False`      |
+| `False and False` | `False`      |
 
 The _or_ Operator’s _Truth_ Table:
 
-| Expression | Evaluates to |
-| :--- | :--- |
-| `True or True` | `True` |
-| `True or False` | `True` |
-| `False or True` | `True` |
-| `False or False` | `False` |
+| Expression       | Evaluates to |
+| :--------------- | :----------- |
+| `True or True`   | `True`       |
+| `True or False`  | `True`       |
+| `False or True`  | `True`       |
+| `False or False` | `False`      |
 
 The _not_ Operator’s _Truth_ Table:
 
-| Expression | Evaluates to |
-| :--- | :--- |
-| `not True` | `False` |
-| `not False` | `True` |
+| Expression  | Evaluates to |
+| :---------- | :----------- |
+| `not True`  | `False`      |
+| `not False` | `True`       |
 
 _Return to the Top_
 
@@ -809,8 +809,8 @@ _Return to the Top_
 
 When creating a function using the def statement, you can specify what the return value should be with a return statement. A return statement consists of the following:
 
-* The return keyword.
-* The value or expression that the function should return.
+- The return keyword.
+- The value or expression that the function should return.
 
 ```python
 import random
@@ -879,10 +879,10 @@ _Return to the Top_
 
 #### Local and Global Scope
 
-* Code in the global scope cannot use any local variables.
-* However, a local scope can access global variables.
-* Code in a function’s local scope cannot use variables in any other local scope.
-* You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
+- Code in the global scope cannot use any local variables.
+- However, a local scope can access global variables.
+- Code in a function’s local scope cannot use variables in any other local scope.
+- You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.
 
 _Return to the Top_
 
@@ -1221,8 +1221,8 @@ _Return to the Top_
 
 #### Augmented Assignment Operators
 
-| Operator | Equivalent |
-| :--- | :--- |
+| Operator    | Equivalent        |
+| :---------- | :---------------- |
 | `spam += 1` | `spam = spam + 1` |
 | `spam -= 1` | `spam = spam - 1` |
 | `spam *= 1` | `spam = spam * 1` |
@@ -1720,7 +1720,7 @@ KeyError: 3
 {4}
 ```
 
-#### set symetric\_difference
+#### set symetric_difference
 
 `symetric_difference` or `^` will return all the elements that are not common between them.
 
@@ -1834,7 +1834,7 @@ Example:
 
 _Return to the Top_
 
-#### combinations\_with\_replacement\(\)
+#### combinations_with_replacement\(\)
 
 Just like combinations\(\), but allows individual elements to be repeated more than once.
 
@@ -2226,7 +2226,7 @@ blue
 
 _Return to the Top_
 
-#### zip\_longest\(\)
+#### zip_longest\(\)
 
 Makes an iterator that aggregates elements from each of the iterables. If the iterables are of uneven length, missing values are filled-in with fillvalue. Iteration continues until the longest iterable is exhausted.
 
@@ -2294,13 +2294,13 @@ A List comprehension can be generated from a dictionary:
 
 #### Escape Characters
 
-| Escape character | Prints as |
-| :--- | :--- |
-| `\'` | Single quote |
-| `\"` | Double quote |
-| `\t` | Tab |
-| `\n` | Newline \(line break\) |
-| `\\` | Backslash |
+| Escape character | Prints as              |
+| :--------------- | :--------------------- |
+| `\'`             | Single quote           |
+| `\"`             | Double quote           |
+| `\t`             | Tab                    |
+| `\n`             | Newline \(line break\) |
+| `\\`             | Backslash              |
 
 Example:
 
@@ -2524,11 +2524,11 @@ _Return to the Top_
 
 #### The isX String Methods
 
-* **isalpha\(\)** returns True if the string consists only of letters and is not blank.
-* **isalnum\(\)** returns True if the string consists only of letters and numbers and is not blank.
-* **isdecimal\(\)** returns True if the string consists only of numeric characters and is not blank.
-* **isspace\(\)** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
-* **istitle\(\)** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
+- **isalpha\(\)** returns True if the string consists only of letters and is not blank.
+- **isalnum\(\)** returns True if the string consists only of letters and numbers and is not blank.
+- **isdecimal\(\)** returns True if the string consists only of numeric characters and is not blank.
+- **isspace\(\)** returns True if the string consists only of spaces,tabs, and new-lines and is not blank.
+- **istitle\(\)** returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters.
 
 _Return to the Top_
 
@@ -3012,8 +3012,8 @@ In addition to the search\(\) method, Regex objects also have a findall\(\) meth
 
 To summarize what the findall\(\) method returns, remember the following:
 
-* When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall\(\) returns a list of ng matches, such as \['415-555-9999', '212-555-0000'\].
-* When called on a regex that has groups, such as \(\d\d\d\)-\(d\d\)-\(\d\d\d\d\), the method findall\(\) returns a list of es of strings \(one string for each group\), such as \[\('415', '555', '9999'\), \('212', '555', '0000'\)\].
+- When called on a regex with no groups, such as \d-\d\d\d-\d\d\d\d, the method findall\(\) returns a list of ng matches, such as \['415-555-9999', '212-555-0000'\].
+- When called on a regex that has groups, such as \(\d\d\d\)-\(d\d\)-\(\d\d\d\d\), the method findall\(\) returns a list of es of strings \(one string for each group\), such as \[\('415', '555', '9999'\), \('212', '555', '0000'\)\].
 
 _Return to the Top_
 
@@ -3044,9 +3044,9 @@ _Return to the Top_
 
 #### The Caret and Dollar Sign Characters
 
-* You can also use the caret symbol \(^\) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
-* Likewise, you can put a dollar sign \($\) at the end of the regex to indicate the string must end with this regex pattern.
-* And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
+- You can also use the caret symbol \(^\) at the start of a regex to indicate that a match must occur at the beginning of the searched text.
+- Likewise, you can put a dollar sign \($\) at the end of the regex to indicate the string must end with this regex pattern.
+- And you can use the ^ and $ together to indicate that the entire string must match the regex—that is, it’s not enough for a match to be made on some subset of the string.
 
 The r'^Hello' regular expression string matches strings that begin with 'Hello':
 
@@ -3145,7 +3145,7 @@ _Return to the Top_
 #### Review of Regex Symbols
 
 | Symbol | Matches |
-| :--- | :--- |
+| :-- | :-- |
 | `?` | zero or one of the preceding group. |
 | `*` | zero or more of the preceding group. |
 | `+` | one or more of the preceding group. |
@@ -3379,8 +3379,8 @@ _Return to the Top_
 
 There are two ways to specify a file path.
 
-* An absolute path, which always begins with the root folder
-* A relative path, which is relative to the program’s current working directory
+- An absolute path, which always begins with the root folder
+- A relative path, which is relative to the program’s current working directory
 
 There are also the dot \(.\) and dot-dot \(..\) folders. These are not real folders but special names that can be used in a path. A single period \(“dot”\) for a folder name is shorthand for “this directory.” Two periods \(“dot-dot”\) means “the parent folder.”
 
@@ -3679,9 +3679,9 @@ _Return to the Top_
 
 #### Permanently Deleting Files and Folders
 
-* Calling os.unlink\(path\) or Path.unlink\(\) will delete the file at path.
-* Calling os.rmdir\(path\) or Path.rmdir\(\) will delete the folder at path. This folder must be empty of any files or folders.
-* Calling shutil.rmtree\(path\) will remove the folder at path, and all files and folders it contains will also be deleted.
+- Calling os.unlink\(path\) or Path.unlink\(\) will delete the file at path.
+- Calling os.rmdir\(path\) or Path.rmdir\(\) will delete the folder at path. This folder must be empty of any files or folders.
+- Calling shutil.rmtree\(path\) will remove the folder at path, and all files and folders it contains will also be deleted.
 
 _Return to the Top_
 
@@ -3933,8 +3933,8 @@ Compared to JSON, YAML allows for much better human maintainability and gives yo
 
 There are two main libraries allowing to access to YAML files:
 
-* [PyYaml](https://pypi.python.org/pypi/PyYAML)
-* [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
+- [PyYaml](https://pypi.python.org/pypi/PyYAML)
+- [Ruamel.yaml](https://pypi.python.org/pypi/ruamel.yaml)
 
 Install them using `pip install` in your virtual environment.
 
@@ -3978,9 +3978,9 @@ _Return to the Top_
 
 Exceptions are raised with a raise statement. In code, a raise statement consists of the following:
 
-* The raise keyword
-* A call to the Exception\(\) function
-* A string with a helpful error message passed to the Exception\(\) function
+- The raise keyword
+- A call to the Exception\(\) function
+- A string with a helpful error message passed to the Exception\(\) function
 
 ```python
 >>> raise Exception('This is the error message.')
@@ -4015,7 +4015,7 @@ _Return to the Top_
 
 #### Getting the Traceback as a String
 
-The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format\_exc\(\). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
+The traceback is displayed by Python whenever a raised exception goes unhandled. But can also obtain it as a string by calling traceback.format_exc\(\). This function is useful if you want the information from an exception’s traceback but also want an except statement to gracefully handle the exception. You will need to import Python’s traceback module before calling this function.
 
 ```python
 >>> import traceback
@@ -4044,10 +4044,10 @@ _Return to the Top_
 
 An assertion is a sanity check to make sure your code isn’t doing something obviously wrong. These sanity checks are performed by assert statements. If the sanity check fails, then an AssertionError exception is raised. In code, an assert statement consists of the following:
 
-* The assert keyword
-* A condition \(that is, an expression that evaluates to True or False\)
-* A comma
-* A string to display when the condition is False
+- The assert keyword
+- A condition \(that is, an expression that evaluates to True or False\)
+- A comma
+- A string to display when the condition is False
 
 ```python
 >>> pod_bay_door_status = 'open'
@@ -4126,7 +4126,7 @@ _Return to the Top_
 Logging levels provide a way to categorize your log messages by importance. There are five logging levels, described in Table 10-1 from least to most important. Messages can be logged at each level using a different logging function.
 
 | Level | Logging Function | Description |
-| :--- | :--- | :--- |
+| :-- | :-- | :-- |
 | `DEBUG` | `logging.debug()` | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems. |
 | `INFO` | `logging.info()` | Used to record information on general events in your program or confirm that things are working at their point in the program. |
 | `WARNING` | `logging.warning()` | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future. |
@@ -4452,7 +4452,7 @@ python setup.py install
 
 and module will install itself.
 
-Our initial setup.py will also include information about the license and will re-use the README.txt file for the long\_description field. This will look like:
+Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:
 
 ```python
 >>> from distutils.core import setup
@@ -4748,7 +4748,7 @@ Usage:
 
 _Return to the Top_
 
-```python
+````python
 
 ## Python Cheatsheet
 
@@ -4973,7 +4973,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
-```
+````
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -5157,8 +5157,7 @@ Evaluates to the integer value of the number of characters in a string:
 5
 ```
 
-Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct
-boolean evaluation.
+Note: test of emptiness of strings, lists, dictionary, etc, should **not** use len, but prefer direct boolean evaluation.
 
 ```python
 >>> a = [1, 2, 3]
@@ -5255,8 +5254,7 @@ False
 
 ### Boolean evaluation
 
-Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `is not` operators,
-or use implicit boolean evaluation.
+Never use `==` or `!=` operator to evaluate boolean operation. Use the `is` or `is not` operators, or use implicit boolean evaluation.
 
 NO (even if they are valid Python):
 
@@ -5494,8 +5492,7 @@ You can even use a negative number for the step argument to make the for loop co
 
 ### For else statement
 
-This allows to specify a statement to execute in case of the full loop has been executed. Only
-useful when a `break` condition can occur in the loop:
+This allows to specify a statement to execute in case of the full loop has been executed. Only useful when a `break` condition can occur in the loop:
 
 ```python
 >>> for i in [1, 2, 3, 4, 5]:
@@ -5692,8 +5689,7 @@ None
 
 ### Final code in exception handling
 
-Code inside the `finally` section is always executed, no matter if an exception has been raised or
-not, and even if an exception is not caught.
+Code inside the `finally` section is always executed, no matter if an exception has been raised or not, and even if an exception is not caught.
 
 ```python
 >>> def spam(divideBy):
@@ -7497,8 +7493,7 @@ The official [Python 3.x documentation](https://docs.python.org/3/library/stdtyp
 
 ### Lazy string formatting
 
-You would only use `%s` string formatting on functions that can do lazy parameters evaluation,
-the most common being logging:
+You would only use `%s` string formatting on functions that can do lazy parameters evaluation, the most common being logging:
 
 Prefer:
 
@@ -7905,23 +7900,23 @@ The dot-star will match everything except a newline. By passing re.DOTALL as the
 
 ### Review of Regex Symbols
 
-| Symbol                   | Matches                                                |
-| ------------------------ | ------------------------------------------------------ |
-| `?`                      | zero or one of the preceding group.                    |
-| `*`                      | zero or more of the preceding group.                   |
-| `+`                      | one or more of the preceding group.                    |
-| `{n}`                    | exactly n of the preceding group.                      |
-| `{n,}`                   | n or more of the preceding group.                      |
-| `{,m}`                   | 0 to m of the preceding group.                         |
-| `{n,m}`                  | at least n and at most m of the preceding p.           |
-| `{n,m}?` or `*?` or `+?` | performs a nongreedy match of the preceding p.         |
-| `^spam`                  | means the string must begin with spam.                 |
-| `spam$`                  | means the string must end with spam.                   |
-| `.`                      | any character, except newline characters.              |
-| `\d`, `\w`, and `\s`     | a digit, word, or space character, respectively.       |
-| `\D`, `\W`, and `\S`     | anything except a digit, word, or space, respectively. |
-| `[abc]`                  | any character between the brackets (such as a, b, ).   |
-| `[^abc]`                 | any character that isn’t between the brackets.         |
+| Symbol | Matches |
+| --- | --- |
+| `?` | zero or one of the preceding group. |
+| `*` | zero or more of the preceding group. |
+| `+` | one or more of the preceding group. |
+| `{n}` | exactly n of the preceding group. |
+| `{n,}` | n or more of the preceding group. |
+| `{,m}` | 0 to m of the preceding group. |
+| `{n,m}` | at least n and at most m of the preceding p. |
+| `{n,m}?` or `*?` or `+?` | performs a nongreedy match of the preceding p. |
+| `^spam` | means the string must begin with spam. |
+| `spam$` | means the string must end with spam. |
+| `.` | any character, except newline characters. |
+| `\d`, `\w`, and `\s` | a digit, word, or space character, respectively. |
+| `\D`, `\W`, and `\S` | anything except a digit, word, or space, respectively. |
+| `[abc]` | any character between the brackets (such as a, b, ). |
+| `[^abc]` | any character that isn’t between the brackets. |
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -8002,22 +7997,15 @@ phone_regex = re.compile(r'''(
 
 ## Handling File and Directory Paths
 
-There are two main modules in Python that deals with path manipulation.
-One is the `os.path` module and the other is the `pathlib` module.
-The `pathlib` module was added in Python 3.4, offering an object-oriented way
-to handle file system paths.
+There are two main modules in Python that deals with path manipulation. One is the `os.path` module and the other is the `pathlib` module. The `pathlib` module was added in Python 3.4, offering an object-oriented way to handle file system paths.
 
 [_Return to the Top_](#python-cheatsheet)
 
 ### Backslash on Windows and Forward Slash on OS X and Linux
 
-On Windows, paths are written using backslashes (`\`) as the separator between
-folder names. On Unix based operating system such as macOS, Linux, and BSDs,
-the forward slash (`/`) is used as the path separator. Joining paths can be
-a headache if your code needs to work on different platforms.
+On Windows, paths are written using backslashes (`\`) as the separator between folder names. On Unix based operating system such as macOS, Linux, and BSDs, the forward slash (`/`) is used as the path separator. Joining paths can be a headache if your code needs to work on different platforms.
 
-Fortunately, Python provides easy ways to handle this. We will showcase
-how to deal with this with both `os.path.join` and `pathlib.Path.joinpath`
+Fortunately, Python provides easy ways to handle this. We will showcase how to deal with this with both `os.path.join` and `pathlib.Path.joinpath`
 
 Using `os.path.join` on Windows:
 
@@ -8046,12 +8034,9 @@ usr/bin/spam
 usr/bin/spam
 ```
 
-Notice the path separator is different between Windows and Unix based operating
-system, that's why you want to use one of the above methods instead of
-adding strings together to join paths together.
+Notice the path separator is different between Windows and Unix based operating system, that's why you want to use one of the above methods instead of adding strings together to join paths together.
 
-Joining paths is helpful if you need to create different file paths under
-the same directory.
+Joining paths is helpful if you need to create different file paths under the same directory.
 
 Using `os.path.join` on Windows:
 
@@ -8134,9 +8119,7 @@ Traceback (most recent call last):
 FileNotFoundError: [Errno 2] No such file or directory: '/home/asweigart/delicious/walnut/waffles'
 ```
 
-Oh no, we got a nasty error! The reason is that the 'delicious' directory does
-not exist, so we cannot make the 'walnut' and the 'waffles' directories under
-it. To fix this, do:
+Oh no, we got a nasty error! The reason is that the 'delicious' directory does not exist, so we cannot make the 'walnut' and the 'waffles' directories under it. To fix this, do:
 
 ```python
 >>> from pathlib import Path
@@ -8367,8 +8350,7 @@ Listing directory contents using `pathlib` on \*nix:
 
 To find the total size of all the files in this directory:
 
-**WARNING**: Directories themselves also have a size! So you might want to
-check for whether a path is a file or directory using the methods in the methods discussed in the above section!
+**WARNING**: Directories themselves also have a size! So you might want to check for whether a path is a file or directory using the methods in the methods discussed in the above section!
 
 Using `os.path.getsize()` and `os.listdir()` together on Windows:
 
@@ -8509,18 +8491,13 @@ FILE INSIDE C:\delicious\walnut\waffles: butter.txt
 
 [_Return to the Top_](#python-cheatsheet)
 
-`pathlib` provides a lot more functionality than the ones listed above,
-like getting file name, getting file extension, reading/writing a file without
-manually opening it, etc. Check out the
-[official documentation](https://docs.python.org/3/library/pathlib.html)
-if you want to know more!
+`pathlib` provides a lot more functionality than the ones listed above, like getting file name, getting file extension, reading/writing a file without manually opening it, etc. Check out the [official documentation](https://docs.python.org/3/library/pathlib.html) if you want to know more!
 
 ## Reading and Writing Files
 
 ### The File Reading/Writing Process
 
-To read/write to a file in Python, you will want to use the `with`
-statement, which will close the file for you after you are done.
+To read/write to a file in Python, you will want to use the `with` statement, which will close the file for you after you are done.
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -8710,8 +8687,7 @@ with open("filename.json", "w") as f:
 
 ### YAML
 
-Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments.
-It is a convenient choice for configuration files where humans will have to edit it.
+Compared to JSON, YAML allows for much better human maintainability and gives you the option to add comments. It is a convenient choice for configuration files where humans will have to edit it.
 
 There are two main libraries allowing to access to YAML files:
 
@@ -8720,8 +8696,7 @@ There are two main libraries allowing to access to YAML files:
 
 Install them using `pip install` in your virtual environment.
 
-The first one it easier to use but the second one, Ruamel, implements much better the YAML
-specification, and allow for example to modify a YAML content without altering comments.
+The first one it easier to use but the second one, Ruamel, implements much better the YAML specification, and allow for example to modify a YAML content without altering comments.
 
 Open a YAML file with:
 
@@ -8906,13 +8881,13 @@ Say you wrote a function to calculate the factorial of a number. In mathematics,
 
 Logging levels provide a way to categorize your log messages by importance. There are five logging levels, described in Table 10-1 from least to most important. Messages can be logged at each level using a different logging function.
 
-| Level      | Logging Function     | Description                                                                                                                    |
-| ---------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `DEBUG`    | `logging.debug()`    | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems.                 |
-| `INFO`     | `logging.info()`     | Used to record information on general events in your program or confirm that things are working at their point in the program. |
-| `WARNING`  | `logging.warning()`  | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future.              |
-| `ERROR`    | `logging.error()`    | Used to record an error that caused the program to fail to do something.                                                       |
-| `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely.   |
+| Level | Logging Function | Description |
+| --- | --- | --- |
+| `DEBUG` | `logging.debug()` | The lowest level. Used for small details. Usually you care about these messages only when diagnosing problems. |
+| `INFO` | `logging.info()` | Used to record information on general events in your program or confirm that things are working at their point in the program. |
+| `WARNING` | `logging.warning()` | Used to indicate a potential problem that doesn’t prevent the program from working but might do so in the future. |
+| `ERROR` | `logging.error()` | Used to record an error that caused the program to fail to do something. |
+| `CRITICAL` | `logging.critical()` | The highest level. Used to indicate a fatal error that has caused or is about to cause the program to stop running entirely. |
 
 [_Return to the Top_](#python-cheatsheet)
 
@@ -9178,8 +9153,7 @@ Exit
 
 ## `__main__` Top-level script environment
 
-`__main__` is the name of the scope in which top-level code executes.
-A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
+`__main__` is the name of the scope in which top-level code executes. A module’s **name** is set equal to `__main__` when read from standard input, a script, or from an interactive prompt.
 
 A module can discover whether or not it is running in the main scope by checking its own `__name__`, which allows a common idiom for conditionally executing code in a module when it is run as a script or with `python -m` but not when it is imported:
 
@@ -9252,8 +9226,7 @@ Find more information visit [http://docs.python.org/install/index.html](http://d
 
 ## Dataclasses
 
-`Dataclasses` are python classes but are suited for storing data objects.
-This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
+`Dataclasses` are python classes but are suited for storing data objects. This module provides a decorator and functions for automatically adding generated special methods such as `__init__()` and `__repr__()` to user-defined classes.
 
 ### Features
 
@@ -9467,8 +9440,7 @@ Find more information and a video in [docs.pipenv.org](https://docs.pipenv.org/)
 
 [Anaconda](https://anaconda.org/) is another popular tool to manage python packages.
 
-> Where packages, notebooks, projects and environments are shared.
-> Your place for free public conda package hosting.
+> Where packages, notebooks, projects and environments are shared. Your place for free public conda package hosting.
 
 Usage:
 
@@ -9487,5 +9459,7 @@ Usage:
         conda deactivate
 
 [_Return to the Top_](#python-cheatsheet)
+
 ```
 
+```

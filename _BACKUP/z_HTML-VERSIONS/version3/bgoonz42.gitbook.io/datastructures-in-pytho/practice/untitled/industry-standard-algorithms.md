@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Industry Standard Algorithms</span>
-=================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Industry Standard Algorithms</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -171,9 +170,9 @@
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj8nyJxYJo2I2M4VVkv%2F-Mj8p-pPUH661M1v-fx1%2FThe-Algorithms-Python-data_structures.zip?alt=media&amp;token=d53d9a82-c893-4e13-996c-6841ba937f5a" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">The-Algorithms-Python-data\_structures.zip</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">The-Algorithms-Python-data_structures.zip</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">The-Algorithms-Python-data\_structures.zip - 259KB</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">The-Algorithms-Python-data_structures.zip - 259KB</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d321bba8d7b84b32861a9e05d8470450"><span data-offset-key="d321bba8d7b84b32861a9e05d8470450:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
