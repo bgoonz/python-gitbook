@@ -437,13 +437,13 @@ Now if you traverse the doubly linked list, you should see the following element
 
 Let's insert an element after 50.
 
-```text
+```python
 new_linked_list.insert_after_item(50, 65)
 ```
 
 Now the list should look like this:
 
-```text
+```python
 18
 5
 10
@@ -456,13 +456,13 @@ Now the list should look like this:
 
 Finally, let's add an element before item 29.
 
-```text
+```python
 new_linked_list.insert_before_item(29, 100)
 ```
 
 The list at this point of time, should contain the following elements:
 
-```text
+```python
 18
 5
 10
@@ -478,13 +478,13 @@ The list at this point of time, should contain the following elements:
 
 Let's now test the deletion functions on the items that we inserted in the last sections. Let's first delete an element from the start.
 
-```text
+```python
 new_linked_list.delete_at_start()
 ```
 
 Item 18 will be removed and the list will now look like this:
 
-```text
+```python
 5
 10
 50
@@ -497,13 +497,13 @@ Item 18 will be removed and the list will now look like this:
 
 Similarly, the following script deletes the element from the end of the doubly linked list:
 
-```text
+```python
 new_linked_list.delete_at_end()
 ```
 
 Traversing the list now will return the following items:
 
-```text
+```python
 5
 10
 50
@@ -515,7 +515,7 @@ Traversing the list now will return the following items:
 
 Finally, you can also delete the elements by value using the `delete_element_by_value()` function as shown below:
 
-```text
+```python
 new_linked_list.delete_element_by_value(65)
 ```
 
@@ -525,13 +525,13 @@ If you traverse the list now, you will see that item 65 will be deleted from the
 
 Finally, let's reverse the list using the `reverse_linked_list()` function. Execute the following script:
 
-```text
+```python
 new_linked_list.reverse_linked_list()
 ```
 
 Now if you traverse the list, you will see the reversed linked list:
 
-```text
+```python
 39
 29
 100

@@ -4,7 +4,7 @@
 
 In Python, lists are represented by **square brackets**. Therefore, we create a list as follows.
 
-```text
+```python
 colors = ['red', 'blue', 'green']
 ```
 
@@ -14,7 +14,7 @@ The above list, `colors` is stored in memory as shown below.
 
 We can also create a list that contains multiple data types, like strings, integers, and floats.
 
-```text
+```python
 type = ['hello', 3.14, 420]
 ```
 
@@ -22,7 +22,7 @@ type = ['hello', 3.14, 420]
 
 Python lists follow a **zero indexing** structure, meaning the list index starts from 0. Nested lists are accessed using **nested indexing**.
 
-```text
+```python
 # List Initialization and Assignment
 colors = ['red', 'blue', 'green']
 
@@ -44,7 +44,7 @@ print(colors[1.0])
 
 Python has a very handy **negative indexing** feature as well, which starts from the end of the list:
 
-```text
+```python
 colors = ['red', 'blue', 'green']
 
 # Output: 'green'
@@ -55,7 +55,7 @@ print(colors[-1])
 
 We can reverse and slice lists using list indices, as follows
 
-```text
+```python
 nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # This notation slices from start index -> stop index - 1
@@ -86,7 +86,7 @@ For more information regarding list slicing, refer to this [link](https://stacko
 
 `list.index()` returns the index of a specified element in the list. The syntax is: `list.index(element, start, end)`
 
-```text
+```python
 # vowels list
 vowels = ['a', 'e', 'i', 'o', 'i', 'u']
 
@@ -103,7 +103,7 @@ index = vowels.index('x')
 
 The `list.append()` method adds an item at the end of a list.
 
-```text
+```python
 fruits = ['apple']
 fruits.append('orange')
 
@@ -115,7 +115,7 @@ print(fruits)
 
 `list.extend()` extends the list by appending items.
 
-```text
+```python
 animals = ['lion', 'tiger']
 animals1 = ['wolf', 'panther']
 animals.extend(animals1)
@@ -127,7 +127,7 @@ print(animals)
 
 `list.insert()` inserts an element into the mentioned index.
 
-```text
+```python
 nums = [1, 2, 3, 4, 5]
 nums.insert(5, 6)
 # Note: the element 6 is inserted in the index 5
@@ -139,7 +139,7 @@ print(nums)
 
 `list.remove()` removes the first element that matches from the specified list.
 
-```text
+```python
 languages = ['english', 'tamil', 'french']
 languages.remove('tamil')
 print(languages)
@@ -153,7 +153,7 @@ languages.remove('tamil')
 
 `list.count()` returns the number of times that ‘x’ appears in the list.
 
-```text
+```python
 counts = [0, 1, 2, 3, 2, 1, 4, 6, 2]
 print(list.count(2))
 # Output: 3
@@ -163,7 +163,7 @@ print(list.count(2))
 
 The `list.pop()` method removes and returns the element specified in the parameter. If the parameter is not specified, it removes and returns the last element in the list.
 
-```text
+```python
 alpha = ['a', 'b', 'c', 'd', 'e']
 x = alpha.pop()
 
@@ -177,7 +177,7 @@ print(alpha)
 
 The `list.reverse()` method reverses the list, and updates it. It has no return value.
 
-```text
+```python
 alpha = ['a', 'b', 'c', 'd', 'e']
 alpha.reverse()
 # Output: ['e', 'd', 'c', 'b', 'a']
@@ -188,7 +188,7 @@ print(alpha)
 
 The `list.sort()` method sorts the elements of the given list using the syntax: `list.sort(key= , reverse= )`
 
-```text
+```python
 # vowels list
 vowels = ['e', 'a', 'u', 'o', 'i']
 
@@ -211,7 +211,7 @@ print(vowels)
 
 The `list.copy()` method copies the list into another list.
 
-```text
+```python
 list1 = [1, 2, 3]
 list2 = list1.copy()
 
@@ -223,7 +223,7 @@ print(list2)
 
 The `list.clear()` method empties the given list.
 
-```text
+```python
 l = ['hello', 'world']
 
 # Output: ['hello', 'world']
@@ -242,7 +242,7 @@ List Comprehensions are advanced features in Python that enable you to create a 
 
 For example:
 
-```text
+```python
 # The below statement creates a list with 5, 10, ...
 p = [5 + x for x in range(5)]
 
@@ -272,7 +272,7 @@ In the case of lists or tuples, they are made up of **elements**, which are valu
 
 A list containing no elements is called an _empty list_, and a tuple with no elements is an _empty tuple_.
 
-```text
+```python
 [10, 20, 30, 40, 50]
 ["spam", "bungee", "swallow"]
 (2, 4, 6, 8)
@@ -288,7 +288,7 @@ Note
 
 It is possible to drop the parentheses when specifiying a tuple, and only use a comma seperated list of values:
 
-```text
+```python
 >>> thing = 2, 4, 6, 8
 >>> type(thing)
 <class 'tuple'>
@@ -298,7 +298,7 @@ It is possible to drop the parentheses when specifiying a tuple, and only use a 
 
 Also, it is required to include a comma when specifying a tuple with only one element:
 
-```text
+```python
 >>> singleton = (2,)
 >>> type(singleton)
 <class 'tuple'>
@@ -320,7 +320,7 @@ The sequence types share a common set of operations.
 
 The **indexing operator** \(`[` `]`\) selects a single element from a sequence. The expression inside brackets is called the **index**, and must be an integer value. The index _indicates_ which element to select, hence its name.
 
-```text
+```python
 >>> fruit = "banana"
 >>> fruit[1]
 'a'
@@ -343,14 +343,14 @@ You probably expected to see `'b'`, but computer scientists typically start coun
 
 Last chapter you saw the `len` function used to get the number of characters in a string:
 
-```text
+```python
 >>> len('banana')
 6
 ```
 
 With lists and tuples, `len` returns the number of elements in the sequence:
 
-```text
+```python
 >>> len(['a', 'b', 'c', 'd'])
 4
 >>> len((2, 4, 6, 8, 10, 12))
@@ -364,7 +364,7 @@ With lists and tuples, `len` returns the number of elements in the sequence:
 
 It is common in computer programming to need to access elements at the end of a sequence. Now that you have seen the `len` function, you might be tempted to try something like this:
 
-```text
+```python
 >>> seq = [1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0]
 >>> last = seq[len(seq)]       # ERROR!
 ```
@@ -373,7 +373,7 @@ That won’t work. It causes the runtime error `IndexError: list index out of ra
 
 Since we started counting at zero, the sixteen indices are numbered 0 to 15. To get the last element, we have to subtract 1 from the length:
 
-```text
+```python
 >>> last = seq[len(seq) - 1]
 ```
 
@@ -381,7 +381,7 @@ This is such a common in pattern that Python provides a short hand notation for 
 
 The expression `seq[-1]` yields the last element, `seq[-2]` yields the second to last, and so on.
 
-```text
+```python
 >>> prime_nums = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
 >>> prime_nums[-2]
 29
@@ -399,7 +399,7 @@ A lot of computations involve processing a sequence one element at a time. The m
 
 Python’s `for` loop makes traversal easy to express:
 
-```text
+```python
 prime_nums = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
 
 for num in prime_nums:
@@ -414,7 +414,7 @@ We will discuss looping in greater detail in the next chapter. For now just note
 
 As the standard `for` loop traverses a sequence, it assigns each _value_ in the sequence to the loop variable in the order it occurs in the sequence. Sometimes it is helpful to have both the value and the index of each element. The `enumerate` function gives us this:
 
-```text
+```python
 fruits = ['apples', 'bananas', 'blueberries', 'oranges', 'mangos']
 
 for index, fruit in enumerate(fruits):
@@ -425,7 +425,7 @@ for index, fruit in enumerate(fruits):
 
 A subsequence of a sequence is called a **slice** and the operation that extracts a subsequence is called **slicing**. Like with indexing, we use square brackets \(`[` `]`\) as the slice operator, but instead of one integer value inside we have two, seperated by a colon \(`:`\):
 
-```text
+```python
 >>> singers = "Peter, Paul, and Mary"
 >>> singers[0:5]
 'Peter'
@@ -442,7 +442,7 @@ The operator `[n:m]` returns the part of the sequence from the n’th element to
 
 If you omit the first index \(before the colon\), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string. Thus:
 
-```text
+```python
 >>> fruit = "banana"
 >>> fruit[:3]
 'ban'
@@ -454,7 +454,7 @@ What do you think `s[:]` means? What about `classmates[4:]`?
 
 Negative indexes are also allowed, so
 
-```text
+```python
 >>> fruit[-2:]
 'na'
 >>> classmates[:-2]
@@ -467,7 +467,7 @@ Developing a firm understanding of how slicing works is important. Keep creating
 
 When you slice a sequence, the resulting subsequence always has the same type as the sequence from which it was derived. This is not generally true with indexing, except in the case of strings.
 
-```text
+```python
 >>> strange_list = [(1, 2), [1, 2], '12', 12, 12.0]
 >>> print(strange_list[0], type(strange_list[0]))
 (1, 2) <class 'tuple'>
@@ -486,7 +486,7 @@ While the elements of a list \(or tuple\) can be of any type, no matter how you 
 
 The `in` operator returns whether a given element is contained in a list or tuple:
 
-```text
+```python
 >>> stuff = ['this', 'that', 'these', 'those']
 >>> 'this' in stuff
 True
@@ -500,7 +500,7 @@ False
 
 `in` works somewhat differently with strings. It evaluates to `True` if one string is a substring of another:
 
-```text
+```python
 >>> 'p' in 'apple'
 True
 >>> 'i' in 'apple'
@@ -513,7 +513,7 @@ False
 
 Note that a string is a substring of itself, and the empty string is a substring of any other string. \(Also note that computer programmers like to think about these edge cases quite carefully!\)
 
-```text
+```python
 >>> 'a' in 'a'
 True
 >>> 'apple' in 'apple'
@@ -530,7 +530,7 @@ Strings, lists, and tuples are [objects](http://en.wikipedia.org/wiki/Object_%28
 
 Let’s look at some string methods in action to see how this works.
 
-```text
+```python
 >>> 'apple'.upper()
 'APPLE'
 >>> 'COSATU'.lower()
@@ -561,7 +561,7 @@ The `strip()` removes leading and trailing whitespace.
 
 The previous section introduced several of the methods of string objects. To find all the methods that strings have, we can use Python’s built-in `dir` function:
 
-```text
+```python
  >>> dir(str)
  ['__add__', '__class__', '__contains__', '__delattr__', '__doc__',
   '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__',
@@ -582,7 +582,7 @@ The previous section introduced several of the methods of string objects. To fin
 
 We will postpone talking about the ones that begin with double underscores \(`__`\) until later. You can find out more about each of these methods by printing out their [docstrings](http://en.wikipedia.org/wiki/Docstring). To find out what the `replace` method does, for example, we do this:
 
-```text
+```python
 >>> print(str.replace.__doc__)
 S.replace(old, new[, count]) -> str
 
@@ -593,7 +593,7 @@ given, only the first count occurrences are replaced.
 
 Using this information, we can try using the replace method to varify that we know how it works.
 
-```text
+```python
 >>> 'Mississippi'.replace('i', 'X')
 'MXssXssXppX'
 >>> 'Mississippi'.replace('p', 'MO')
@@ -608,7 +608,7 @@ The first example replaces all occurances of `'i'` with `'X'`. The second replac
 
 There are two methods that are common to all three sequence types: `count` and `index`. Let’s look at their docstrings to see what they do.
 
-```text
+```python
 >>> print(str.count.__doc__)
 S.count(sub[, start[, end]]) -> int
 
@@ -637,7 +637,7 @@ We will explore these functions in the exercises.
 
 Unlike strings and tuples, which are [immutable objects](http://en.wikipedia.org/wiki/Immutable_object), lists are **mutable**, which means we can change their elements. Using the bracket operator on the left side of an assignment, we can update one of the elements:
 
-```text
+```python
 >>> fruit = ["banana", "apple", "quince"]
 >>> fruit[0] = "pear"
 >>> fruit[-1] = "orange"
@@ -647,7 +647,7 @@ Unlike strings and tuples, which are [immutable objects](http://en.wikipedia.org
 
 The bracket operator applied to a list can appear anywhere in an expression. When it appears on the left side of an assignment, it changes one of the elements in the list, so the first element of `fruit` has been changed from `'banana'` to `'pear'`, and the last from `'quince'` to `'orange'`. An assignment to an element of a list is called **item assignment**. Item assignment does not work for strings:
 
-```text
+```python
 >>> my_string = 'TEST'
 >>> my_string[2] = 'X'
 Traceback (most recent call last):
@@ -657,7 +657,7 @@ TypeError: 'str' object does not support item assignment
 
 but it does for lists:
 
-```text
+```python
 >>> my_list = ['T', 'E', 'S', 'T']
 >>> my_list[2] = 'X'
 >>> my_list
@@ -666,7 +666,7 @@ but it does for lists:
 
 With the slice operator we can update several elements at once:
 
-```text
+```python
 >>> a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> a_list[1:3] = ['x', 'y']
 >>> a_list
@@ -675,7 +675,7 @@ With the slice operator we can update several elements at once:
 
 We can also remove elements from a list by assigning the empty list to them:
 
-```text
+```python
 >>> a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> a_list[1:3] = []
 >>> a_list
@@ -684,7 +684,7 @@ We can also remove elements from a list by assigning the empty list to them:
 
 And we can add elements to a list by squeezing them into an empty slice at the desired location:
 
-```text
+```python
 >>> a_list = ['a', 'd', 'f']
 >>> a_list[1:1] = ['b', 'c']
 >>> a_list
@@ -700,7 +700,7 @@ Using slices to delete list elements can be awkward, and therefore error-prone. 
 
 `del` removes an element from a list:
 
-```text
+```python
 >>> a = ['one', 'two', 'three']
 >>> del a[1]
 >>> a
@@ -711,7 +711,7 @@ As you might expect, `del` handles negative indices and causes a runtime error i
 
 You can use a slice as an index for `del`:
 
-```text
+```python
 >>> a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 >>> del a_list[1:5]
 >>> a_list
@@ -724,7 +724,7 @@ As usual, slices select all the elements up to, but not including, the second in
 
 In addition to `count` and `index`, lists have several useful methods. Since lists are mutable, these methods modify the list on which they are invoked, rather than returning a new list.
 
-```text
+```python
 >>> mylist = []
 >>> mylist.append('this')
 >>> mylist
@@ -752,7 +752,7 @@ The `sort` method is particularly useful, since it makes it easy to use Python t
 
 If we execute these assignment statements,
 
-```text
+```python
 >>> a = [1, 2, 3]
 >>> b = [1, 2, 3]
 ```
@@ -767,14 +767,14 @@ In one case, `a` and `b` refer to two different things that have the same value.
 
 We can test whether two names have the same value using `==`:
 
-```text
+```python
 >>> a == b
 True
 ```
 
 We can test whether two names refer to the same object using the _is_ operator:
 
-```text
+```python
 >>> a is b
 False
 ```
@@ -785,7 +785,7 @@ This tells us that both `a` and `b` do not refer to the same object, and that it
 
 Since variables refer to objects, if we assign one variable to another, both variables refer to the same object:
 
-```text
+```python
 >>> a = [1, 2, 3]
 >>> b = a
 >>> a is b
@@ -796,7 +796,7 @@ In this case, it is the second of the two state diagrams that describes the rela
 
 Because the same list has two different names, `a` and `b`, we say that it is **aliased**. Since lists are mutable, changes made with one alias affect the other:
 
-```text
+```python
 >>> b[0] = 5
 >>> a
 [5, 2, 3]
@@ -810,7 +810,7 @@ If we want to modify a list and also keep a copy of the original, we need to be 
 
 The easiest way to clone a list is to use the slice operator:
 
-```text
+```python
 >>> a = [1, 2, 3]
 >>> b = a[:]
 >>> b
@@ -821,7 +821,7 @@ Taking any slice of `a` creates a new list. In this case the slice happens to co
 
 Now we are free to make changes to `b` without worrying about `a`:
 
-```text
+```python
 >>> b[0] = 5
 >>> a
 [1, 2, 3]
@@ -831,13 +831,13 @@ Now we are free to make changes to `b` without worrying about `a`:
 
 A nested list is a list that appears as an element in another list. In this list, the element with index 3 is a nested list:
 
-```text
+```python
 >>> nested = ["hello", 2.0, 5, [10, 20]]
 ```
 
 If we print `nested[3]`, we get `[10, 20]`. To extract an element from the nested list, we can proceed in two steps:
 
-```text
+```python
 >>> elem = nested[3]
 >>> elem[0]
 10
@@ -845,7 +845,7 @@ If we print `nested[3]`, we get `[10, 20]`. To extract an element from the neste
 
 Or we can combine them:
 
-```text
+```python
 >>> nested[3][1]
 20
 ```
@@ -858,21 +858,21 @@ Python has several tools which combine lists of strings into strings and separat
 
 The `list` command takes a sequence type as an argument and creates a list out of its elements. When applied to a string, you get a list of characters.
 
-```text
+```python
 >>> list("Crunchy Frog")
 ['C', 'r', 'u', 'n', 'c', 'h', 'y', ' ', 'F', 'r', 'o', 'g']
 ```
 
 The `split` method invoked on a string and separates the string into a list of strings, breaking it apart whenever a substring called the [delimiter](http://en.wikipedia.org/wiki/Delimiter) occurs. The default delimiter is whitespace, which includes spaces, tabs, and newlines.
 
-```text
+```python
 >>> "Crunchy frog covered in dark, bittersweet chocolate".split()
 ['Crunchy', 'frog', 'covered', 'in', 'dark,', 'bittersweet', 'chocolate']
 ```
 
 Here we have `'o'` as the delimiter.
 
-```text
+```python
 >>> "Crunchy frog covered in dark, bittersweet chocolate".split('o')
 ['Crunchy fr', 'g c', 'vered in dark, bittersweet ch', 'c', 'late']
 ```
@@ -881,21 +881,21 @@ Notice that the delimiter doesn’t appear in the list.
 
 The `join` method does approximately the oposite of the `split` method. It takes a list of strings as an argument and returns a string of all the list elements joined together.
 
-```text
+```python
 >>> ' '. join(['crunchy', 'raw', 'unboned', 'real', 'dead', 'frog'])
 'crunchy raw unboned real dead frog'
 ```
 
 The string value on which the `join` method is invoked acts as a _separator_ that gets placed between each element in the list in the returned string.
 
-```text
+```python
 >>> '**'.join(['crunchy', 'raw', 'unboned', 'real', 'dead', 'frog'])
 'crunchy**raw**unboned**real**dead**frog'
 ```
 
 The separator can also be the empty string.
 
-```text
+```python
 >>> ''.join(['crunchy', 'raw', 'unboned', 'real', 'dead', 'frog'])
 'crunchyrawunbonedrealdeadfrog'
 ```
@@ -904,7 +904,7 @@ The separator can also be the empty string.
 
 Once in a while, it is useful to swap the values of two variables. With conventional assignment statements, we have to use a temporary variable. For example, to swap `a` and `b`:
 
-```text
+```python
 temp = a
 a = b
 b = temp
@@ -912,7 +912,7 @@ b = temp
 
 If we have to do this often, this approach becomes cumbersome. Python provides a form of **tuple assignment** that solves this problem neatly:
 
-```text
+```python
 a, b = b, a
 ```
 
@@ -920,7 +920,7 @@ The left side is a tuple of variables; the right side is a tuple of values. Each
 
 Naturally, the number of variables on the left and the number of values on the right have to be the same:
 
-```text
+```python
 >>> a, b, c, d = 1, 2, 3
 ValueError: need more than 3 values to unpack
 ```
@@ -935,7 +935,7 @@ It is a computer’s ability to alter its flow of execution depending on whether
 
 There are only two boolean values, `True` and `False`.
 
-```text
+```python
 >>> type(True)
 <class 'bool'>
 >>> type(False)
@@ -944,7 +944,7 @@ There are only two boolean values, `True` and `False`.
 
 Capitalization is important, since `true` and `false` are not boolean values in Python.:
 
-```text
+```python
 >>> type(true)
 Traceback (most recent call last):
 File "<interactive input>", line 1, in <module>
@@ -957,7 +957,7 @@ A **boolean expression** is an expression that evaluates to a boolean value.
 
 The operator `==` compares two values and produces a boolean value:
 
-```text
+```python
 >>> 5 == 5
 True
 >>> 5 == 6
@@ -968,7 +968,7 @@ In the first statement, the two operands are equal, so the expression evaluates 
 
 The `==` operator is one of six common **comparison operators**; the others are:
 
-```text
+```python
 x != y       # x is not equal to y
 x > y        # x is greater than y
 x < y        # x is less than y
@@ -986,7 +986,7 @@ There are three **logical operators**: `and`, `or`, and `not`. The semantics \(m
 
 Finally, the `not` operator negates a boolean expression, so `not (x > y)` is true if `(x > y)` is false, that is, if `x` is less than or equal to `y`.
 
-```text
+```python
 >>> 5 > 4 and 8 == 2 * 4
 True
 >>> True and False
@@ -1003,14 +1003,14 @@ This can be quite useful in preventing runtime errors. Imagine you want check if
 
 The following expression will work:
 
-```text
+```python
 >>> numbers = (5, 11, 13, 24)
 >>> numbers[4] % 2 == 0
 ```
 
 unless of course there are not 5 elements in `numbers`, in which case you will get:
 
-```text
+```python
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 IndexError: tuple index out of range
@@ -1019,7 +1019,7 @@ IndexError: tuple index out of range
 
 Short-circuit evaluation makes it possible to avoid this problem.
 
-```text
+```python
 >>> len(numbers) >= 5 and numbers[4] % 2 == 0
 False
 ```
@@ -1036,7 +1036,7 @@ Empty sequences are false, non-empty sequences are true.
 
 Combining this notion of truthiness with an understanding of short-circuit evaluation makes it possible to understand what Python is doing in the following expressions:
 
-```text
+```python
 >>> 'A' and 'apples'
 'apples'
 >>> '' and 'apples'

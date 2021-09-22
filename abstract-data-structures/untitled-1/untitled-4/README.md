@@ -766,7 +766,7 @@ print([node.value for node in linked_list_iter(linked_list)])
 
 #### Output:
 
-```text
+```python
 [1, 2, 4]
 [0, 1, 2, 4]
 [0, 1, 2, 3, 4]

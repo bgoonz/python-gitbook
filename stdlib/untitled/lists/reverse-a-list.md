@@ -16,7 +16,7 @@ Python has a powerful built-in library of methods when it comes to manipulating 
 
 Due to this, we can't assign the resulting object to a new variable, and if you want to keep the original list in memory, you'll have to copy it before reversing:
 
-```text
+```python
 my_list = [1, 2, 3, 4]
 my_list.reverse()
 print(my_list) # Output: [4, 3, 2, 1]
@@ -27,7 +27,7 @@ print(new_list) # Output: None
 
 There's no return value - the list is reversed in-place. However, we can `copy()` it before reversing:
 
-```text
+```python
 list_1 = [1, 2, 3, 4]
 list_2 = list_1.copy()
 
@@ -39,7 +39,7 @@ print('Saved original list: ', list_2)
 
 This results in
 
-```text
+```python
 Reversed list:  [4, 3, 2, 1]
 Saved original list:  [1, 2, 3, 4]
 ```
@@ -50,7 +50,7 @@ The _slice notation_ allows us to slice and reproduce parts of various collectio
 
 When you _slice_ a list, a portion is returned from that list, and every `step`th element is included:
 
-```text
+```python
 my_list = [1, 2, 3, 4, 5, 6]
 
 # list[start:end:step]
@@ -63,14 +63,14 @@ print(segment_2)
 
 This results in:
 
-```text
+```python
 [2, 3, 4, 5]
 [2, 4]
 ```
 
 By omitting the `start` and `end` arguments, you can include the _entire_ collection. And by setting the `step` to a negative number, you _iterate through the collection in reverse_. Naturally, if you pair these together:
 
-```text
+```python
 original_list = [1, 2, 3, 4, 5, 6]
 
 reversed_list = original_list[::-1]
@@ -80,7 +80,7 @@ print('Reversed list: ', reversed_list)
 
 This results in:
 
-```text
+```python
 Original list:  [1, 2, 3, 4, 5, 6]
 Reversed list:  [6, 5, 4, 3, 2, 1]
 ```
@@ -95,7 +95,7 @@ Its return type is a `Slice` object, which can be then be used to _slice a colle
 
 It's internally transpiled into Slice Notation, so the end result is the same:
 
-```text
+```python
 original_list = [1, 2, 3, 4, 5, 6]
 
 slice_obj = slice(None, None, -1)
@@ -106,7 +106,7 @@ print('Reversed list:', original_list[slice_obj])
 
 This results in:
 
-```text
+```python
 slice_obj type: <class 'slice'>
 Reversed list: [6, 5, 4, 3, 2, 1]
 ```
@@ -117,8 +117,8 @@ Depending on whether we want to keep the original list intact or not, we can `po
 
 `pop()` removes the _last_ element from a collection and returns it. We can combine the `append()` method with this to directly append the removed element to a new list, effectively resulting in a reversed list:
 
-```text
-original_list = [1, 2, 3, 4] 
+```python
+original_list = [1, 2, 3, 4]
 reversed_list = []
 
 for i in range(len(original_list)):
@@ -127,11 +127,11 @@ for i in range(len(original_list)):
 print(reversed_list) # Output: [4, 3, 2, 1]
 ```
 
-### 
+###
 
 Alternatively, we can iterate through the list _backwards_, until the `-1`th index \(non-inclusive\) and add each element we see along that list. The `range()` method accepts 3 arguments - `start`, `end` and `step`, which can again be used in much the same way as before:
 
-```text
+```python
 original_list = [1, 2, 3, 4]
 reversed_list = []
 
@@ -147,13 +147,13 @@ Since iterating with a negative step and then accessing each element in the orig
 
 The `reversed()` method returns an iterator, iterating over the collection in a reversed order - and we can easily add these elements into a new list:
 
-```text
+```python
 original_list = [1, 2, 3, 4]
 new_list = []
 
 for i in reversed(original_list):
 	new_list.append(i)
-    
+
 print(new_list) # Output: [4, 3, 2, 1]
 print(original_list) # Output: [1, 2, 3, 4] --> Original hasn't changed
 ```

@@ -43,7 +43,7 @@ Since we want to pursue leads in the graph as far as we can, and then "back up" 
 
 Looking at it with pseudocode to make the recursion more apparent:
 
-```text
+```python
 explore(graph) {
     visit(this_vert);
     explore(remaining_graph);
@@ -52,7 +52,7 @@ explore(graph) {
 
 ### Pseudocode for DFS
 
-```text
+```python
 DFS(graph):
     for v of graph.verts:
         v.color = white

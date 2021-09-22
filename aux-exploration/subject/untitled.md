@@ -74,7 +74,7 @@ Next we output the results with the `print()` function. For each variable we dis
 
 Here’s how the rounded values look:
 
-```text
+```python
 Value:          Rounded:
 3.14159265359   3
 1845.7409947    1846
@@ -91,7 +91,7 @@ That sounds abstract, but is just another way of saying that `math.floor()` roun
 
 Here’s a quick example of the `math.floor()` function:
 
-```text
+```python
     import math
 
     math.floor(12.75)
@@ -248,7 +248,7 @@ Those list comprehensions generate new lists. We assign those to the `valuesRoun
 
 The last part of the program outputs the original list and the three rounded ones. Here’s how that looks:
 
-```text
+```python
 Original values:
  [3.46410162, 6.70820393, 11.04536102, 15.29705854, 21.21320344, 31.4960315]
 Rounded:
@@ -261,7 +261,7 @@ Rounded down to next integer:
 
 In the above example we kept the original list. If you don’t need to retain those values, you can also overwrite the original list with rounded values. Here’s how a list comprehension does that:
 
-```text
+```python
 # Round all numbers in the 'values' list,
 # in place (to replace the original numbers)
 values = [round(value) for value in values]
@@ -310,7 +310,7 @@ Inside the loop we call the `append()` method on each of the three new lists. Th
 
 The program ends with several `print()` statements. That displays the original list and its rounded derivatives. Here’s what that output looks like:
 
-```text
+```python
 Original values:
  [3.46410162, 6.70820393, 11.04536102, 15.29705854, 21.21320344, 31.4960315]
 Rounded (standard):

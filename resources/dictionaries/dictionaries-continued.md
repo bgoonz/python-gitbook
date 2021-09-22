@@ -34,7 +34,7 @@ Though dictionaries are not ordered, the fact that you can have arbitrary values
 
 while True: print\('Enter a name: \(blank to quit\)'\) name = input\(\) if name == '': break
 
-```text
+```python
 ➋ if name in birthdays:
     ➌ print\(birthdays\[name\] + ' is the birthday of ' + name\)
    else:

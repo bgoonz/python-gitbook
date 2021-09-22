@@ -725,7 +725,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```text
+```python
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|
@@ -934,7 +934,7 @@ Often, iterative solutions are easier to read and more performant.
 
 If we add a print statement into the `add_list` function:
 
-```text
+```python
     print(f'Add {l[0]} to the sum of {l[1:]}')
     return l[0] + add_list(l[1:])
 ```
@@ -1061,7 +1061,7 @@ We already know off the tops of our heads that we have not setup our algorithm t
 
 Our terminal returns back:
 
-```text
+```python
 []
 [1]
 [1, 2]

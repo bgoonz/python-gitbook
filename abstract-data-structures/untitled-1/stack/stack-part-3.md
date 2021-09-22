@@ -70,7 +70,7 @@ In Python, we can implement the stack by various methods. We are going to dive i
 
 We use the list methods `append` and `pop` to implement a Stack.
 
-```text
+```python
 class Stack:
 
     def __init__(self):
@@ -102,7 +102,7 @@ Python `collections` are container classes that are used for data collection sto
 
 `Deque` is one such python collection that is used for inserting and removing items. We can use it to create a faster implementation of a stack.
 
-```text
+```python
 from collections import deque
 class Stack:
 

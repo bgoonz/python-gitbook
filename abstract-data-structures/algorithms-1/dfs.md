@@ -487,7 +487,7 @@ By marking nodes as "visited", if we ever encounter that node again - we're in a
 
 Given these steps, we can summarize DFS in pseudocode:
 
-```text
+```python
 DFS(G, u):
     # Input processing
     u.visited = true
@@ -505,7 +505,7 @@ With this view, you can really start to appreciate just how simple yet useful th
 
 Depth-First Search implementation is usually **recursive** in code given how natural of a pair that is, but it can also be easily implemented non-recursively. We'll be using the recursive method as it's simpler and more fitting:
 
-```text
+```python
 def dfs(adj_list, start, target, path, visited = set()):
     path.append(start)
     visited.add(start)
@@ -530,7 +530,7 @@ In the end, if we find ourselves outside of the `for` loop, it means that all th
 
 Let's illustrate how the code works through an example. We'll be using a Python **dictionary** to represent the graph as an adjacency list. Here's the graph we'll be using in the following example:
 
-```text
+```python
 adj_list = {
     0 : [1, 2],
     1 : [0, 3],
@@ -554,7 +554,7 @@ We're searching for a path from node `0` to node `3`, if it exists, the path wil
 traversal_path = []
 ```
 
-```text
+```python
 traversal_path = dfs(adj_list, 0, 3, traversal_path)
 print(traversal_path)
 ```
@@ -576,7 +576,7 @@ The steps our algorithm will take are as follows:
 
 The algorithm stops and our program prints out the resulting traversal path from node `0` to node `3`:
 
-```text
+```python
 [0, 1, 3]
 ```
 

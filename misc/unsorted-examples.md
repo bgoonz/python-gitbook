@@ -1,16 +1,16 @@
 # Unsorted Examples
 
-### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list. 
+### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list.
 
-### A node in a singly linked list should have two attributes: val 
+### A node in a singly linked list should have two attributes: val
 
-### and 
+### and
 
 ### next. val is the value of the current node
 
 ### next is a pointer/reference to the next node.
 
-###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. 
+###  If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list.
 
 ### Assume all nodes in the linked list are 0-indexed.
 
@@ -132,13 +132,13 @@ class MyLinkedList:
 
 
 
-Count the number of vowels in the user input string using for loop and while loop 
+Count the number of vowels in the user input string using for loop and while loop
 
 Now, let’s define a function named countVowels\(\) which accepts one argument as a string where we need to count Vowels in it.
 
 So, declare a variable count and initialize to 0 which keeps the track of vowel count.
 
-```text
+```python
 count = 0
 ```
 
@@ -146,7 +146,7 @@ Now before counting the vowels, first make sure the string is completely lowerca
 
 So keep it in mind to the first convert string to lowercase and for that, we are going to use **lower\(\)** function of Python.
 
-```text
+```python
 sentence = sentence.lower()
 ```
 
@@ -158,7 +158,7 @@ _**Read =&gt;**_ [_**Check if a number is greater than all those numbers in the 
 
 And at last, after traversing through the string, return the count variable back to the function call.
 
-```text
+```python
 for c in sentence:
     if c in ['a', 'e', 'i', 'o', 'u']:
         count += 1
@@ -171,7 +171,7 @@ Now, we have defined the Count Vowel function above which calculates the count o
 
 So after this, ask the user to enter string which needs to pass to this above function and then print the count for the vowel.
 
-```text
+```python
 if __name__ == '__main__':
     userInput = str(input("Enter the string to check for vowels: "))
     count = countVowels(userInput)
@@ -183,7 +183,7 @@ if __name__ == '__main__':
 ```python
 #Using While Loop
 '''def countVowels(sentence):
-    
+
     count = 0
     sentence = sentence.lower()
     i = 0
@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
 #Using For Loop
 def countVowels(sentence):
-    
+
     count = 0
     sentence = sentence.lower()
     for c in sentence:
@@ -229,7 +229,7 @@ So let’s store the argument in the separate variables to use that at last whil
 
 Along with this, create two new variables “**decimal**” and “**i**” and initialized both to 0.
 
-```text
+```python
     binary1 = binary
     decimal, i  = 0, 0
 ```
@@ -242,7 +242,7 @@ _**Read =&gt;**_ [_**Python Program to Calculate LCM of Two Numbers**_](https://
 
 And at last, we divide the number by 10 and assign the same number back to binary to reduce it to 0.
 
-```text
+```python
     while(binary != 0):
         dec = binary % 10
         decimal = decimal + dec * pow(2, i)
@@ -252,7 +252,7 @@ And at last, we divide the number by 10 and assign the same number back to binar
 
 Now, simply print the result using the format function in Python.
 
-```text
+```python
     print('Decimal equivalent of {} is {}'.format(binary1, decimal))
 ```
 
@@ -260,7 +260,7 @@ Now, simply print the result using the format function in Python.
 
 Let’s create the main method which is going to ask for user input for the Binary Number and then pass that number to function that we created above.
 
-```text
+```python
 if __name__ == '__main__':
     userInput = int(input('Enter the binary number to check its decimal equivalent: '))
     binaryToDecimal(userInput)
@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
 **Code**
 
-```text
+```python
 
 
 def binaryToDecimal(binary):
@@ -306,7 +306,7 @@ So the base condition will be if the number is less than or equal to 1, then sim
 
 Otherwise, return the callback to Fibonacci function again with decrement value from numbers 1 and 2 and add both function calls.
 
-```text
+```python
 def fibonacci_with_recursion(number):
     if number <= 1:
         return number
@@ -322,13 +322,13 @@ _**Read =&gt;**_ [_**Program to check whether the Number is Prime or Not**_](htt
 
 So, the base condition for this function is if the number is equal to 0, then we return output as 0 because of how we calculate the Series if the number is 0.
 
-```text
+```python
 if number == 0: return 0
 ```
 
 Now, let’s declare two variables named fibonacci0 for number 0 and initialize it to 0 and fibonacci1 for number 1 and initialize it to 1.
 
-```text
+```python
 fibonacci0, fibonacci1 = 0, 1
 ```
 
@@ -336,7 +336,7 @@ Now create a FOR Loop to calculate till the n-th term, so the logic is simple as
 
 And after calculating n-th term, simply returns the fibonacci1 because which keeps tracks till the n-th term.
 
-```text
+```python
 def fibonacci_without_recursion(number):
     if number == 0: return 0
     fibonacci0, fibonacci1 = 0, 1
@@ -353,7 +353,7 @@ Now let’s create a main method where we need to call these both methods that w
 
 First, ask for the user input to enter any number. If the number is less than 0, then simply returns an error message printing that the “**Number must be Positive Number**“.
 
-```text
+```python
 if __name__ == '__main__':
     userInput = int(input('Enter the number upto which calculate fibonnaci series: '))
     if(userInput<0):
@@ -369,7 +369,7 @@ if __name__ == '__main__':
 
 **Source Code**
 
-```text
+```python
 
 def fibonacci_with_recursion(number):
     if number <= 1:

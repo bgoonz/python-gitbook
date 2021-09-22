@@ -6,7 +6,7 @@
 
 **Behold, the power of Requests**:
 
-```text
+```python
 >>> r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 >>> r.status_code
 200
@@ -228,7 +228,7 @@ Constructs and sends a [`Request`](https://docs.python-requests.org/en/master/ap
 
 Usage:
 
-```text
+```python
 >>> import requests
 >>> req = requests.request('GET', 'https://httpbin.org/get')
 >>> req
@@ -465,7 +465,7 @@ Provides cookie persistence, connection-pooling, and configuration.
 
 Basic Usage:
 
-```text
+```python
 >>> import requests
 >>> s = requests.Session()
 >>> s.get('https://httpbin.org/get')
@@ -474,7 +474,7 @@ Basic Usage:
 
 Or as a context manager:
 
-```text
+```python
 >>> with requests.Session() as s:
 ...     s.get('https://httpbin.org/get')
 <Response [200]>
@@ -843,7 +843,7 @@ Used to prepare a [`PreparedRequest`](https://docs.python-requests.org/en/master
 
 Usage:
 
-```text
+```python
 >>> import requests
 >>> req = requests.Request('GET', 'https://httpbin.org/get')
 >>> req.prepare()
@@ -938,7 +938,7 @@ Instances are generated from a [`Request`](https://docs.python-requests.org/en/m
 
 Usage:
 
-```text
+```python
 >>> import requests
 >>> req = requests.Request('GET', 'https://httpbin.org/get')
 >>> r = req.prepare()
@@ -1054,7 +1054,7 @@ Provides a general-case interface for Requests sessions to contact HTTP and HTTP
 
 Usage:
 
-```text
+```python
 >>> import requests
 >>> s = requests.Session()
 >>> a = requests.adapters.HTTPAdapter(max_retries=3)
@@ -1526,7 +1526,7 @@ The `codes` object defines a mapping from common names for HTTP statuses to thei
 
 Example:
 
-```text
+```python
 >>> import requests
 >>> requests.codes['temporary_redirect']
 307

@@ -160,7 +160,7 @@ For example, a snake and ladder game can be represented by using an adjacency ma
 
 **Example:**
 
-```text
+```python
 graph = [[0, 1, 2],
          [2, 0, 5],
          [4, 5, 0]]
@@ -194,7 +194,7 @@ An edge list represents the graph as an unstructured list of edges.
 
 **Example:**
 
-```text
+```python
 graph = [(C, A, 4), (A, C, 1), (B, C, 6),
          (A, B, 4), (C, B, 1), (C, D, 2)]
 ```
