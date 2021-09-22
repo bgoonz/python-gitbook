@@ -50,13 +50,13 @@ You often encounter a scenario where you want to use a subset of items from an e
 
 In Python, the syntax looks like this:
 
-```python
+```text
 my_list[start_index:end_index]
 ```
 
 The default start index is 0, and if you leave off the end\_index, the slice will capture through the end of the list.
 
-```python
+```text
 my_list[:]  # This would be all of the items in my_list
 my_list[:5] # This would be the items from index 0 to 4
 my_list[5:] # This would be the items from index 5 to the end of the list
@@ -76,7 +76,7 @@ You must keep these facts in mind and account for them when using a slice in you
 * [https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/ \(Links to an external site.\)](https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/)
 * [https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/](https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/)
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 
 
@@ -106,7 +106,7 @@ It would be best if you always defaulted to using an out-of-place function. This
 
 Here is an example of a function that triples each number in an input list. This function does this _in-place_:
 
-```python
+```text
 def append_exclamations(str_list):
     for idx, item in enumerate(str_list):
         str_list[idx] += "!"
@@ -114,7 +114,7 @@ def append_exclamations(str_list):
 
 Now, since this is an in-place function, watch what happens when we use it:
 
-```python
+```text
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> append_exclamations(my_list)
 >>> my_list
@@ -125,7 +125,7 @@ Now, since this is an in-place function, watch what happens when we use it:
 
 Let's now write a similar function, but this time we will do it _out-of-place:_
 
-```python
+```text
 def append_exclamations(str_list):
     # Create a new empty list that has the same length as the input list
     loud_list = [None] * len(str_list)
@@ -139,7 +139,7 @@ def append_exclamations(str_list):
 
 Look what happens when we use this function:
 
-```python
+```text
 >>> my_list = ["Matt", "Beej", "Sean"]
 >>> my_new_louder_list = append_exclamations(my_list)
 >>> my_list
@@ -164,7 +164,7 @@ Notice how we had to store the returned list in a new variable. Also, notice tha
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 
 
@@ -228,7 +228,7 @@ So, let's say that your dynamic array instantiates with an underlying static arr
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 ## Array and String Manipulation <a id="array-and-string-manipulation"></a>
 
@@ -238,7 +238,7 @@ This module project requires you to answer some multiple-choice questions relate
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 
 
@@ -246,7 +246,7 @@ This module project requires you to answer some multiple-choice questions relate
 
 
 
-![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
+![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
 
 
 
