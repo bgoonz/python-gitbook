@@ -1,5 +1,17 @@
 # Navigation
 
+
+
+
+
+{% embed url="https://codepen.io/bgoonz/embed/ZEyXNVr?\#result-box" %}
+
+
+
+
+
+
+
 {% page-ref page="navigation.md" %}
 
 
@@ -10,284 +22,284 @@
 {% tab title="Table Of Contents \(whole site\)" %}
 ### Table of contents
 
-* [Home](https://py-v2.gitbook.io/datastructures-in-pytho/README)
-* [Downloads & Misc-Assets](https://py-v2.gitbook.io/datastructures-in-pytho/index)
-* [README](https://py-v2.gitbook.io/datastructures-in-pytho/readme-1)
-* [Navigation](https://py-v2.gitbook.io/datastructures-in-pytho/navigation)
+* [Home](https://bryan-guner.gitbook.io/datastructures-in-pytho/README)
+* [Downloads & Misc-Assets](https://bryan-guner.gitbook.io/datastructures-in-pytho/index)
+* [README](https://bryan-guner.gitbook.io/datastructures-in-pytho/readme-1)
+* [Navigation](https://bryan-guner.gitbook.io/datastructures-in-pytho/navigation)
 
 ### Curriculum
 
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled/README)
-  * [General Content](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled/general-content)
-* [wk17](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/README)
-  * [Outline-w17](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/outline)
-  * [homework](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/week-overview)
-  * [D1-Module 01 - Python I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/README)
-    * [Configuring Ubuntu for Python Web Development](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/configuring-ubuntu-for-python-web-development)
-    * [Install Python](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/install-python)
-  * [D2- Module 02 - Python II](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1-1)
-  * [D3- Module 03 - Python III](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1)
-  * [D4-Module 04 - Python IV](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled)
-* [wk18](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/README)
-  * [Outline-W-18](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-4)
-  * [D1- Module 01 - Number Bases and Character Encoding](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-3)
-  * [D2- Module 02 - Hash Tables I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/README)
-    * [Hash Table / Hash Map In Python:](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-hash-map-in-python)
-    * [Hash Table Use Cases](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-use-cases)
-    * [Practice](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/practice)
-  * [D3-Module 03 - Hash Tables II](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-1)
-  * [D4- Module 04 - Searching and Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled)
-* [wk19](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/README)
-  * [Outline-W-19](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/overview)
-  * [D1- Module 01 - Linked Lists](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/README)
-    * [Homework](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/README)
-      * [Helpful Resource](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/helpful-resource)
-  * [D2- Module 02 - Queues and Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-7)
-  * [D3- Module 03 - Binary Search Trees](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/README)
-    * [BST Definition:](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/bst-definition)
-  * [D4- Module 04 - Tree Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/README)
-    * [Tree Traversals \(Inorder, Preorder and Postorder\)](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder)
-* [wk20](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/README)
-  * [Outline-W-20](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/overview)
-  * [D1-Graphs I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-5)
-  * [D2-Graphs 2](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-4)
-  * [DFS](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-1)
-  * [D4](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-2)
+* [Outline](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled/README)
+  * [General Content](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled/general-content)
+* [wk17](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/README)
+  * [Outline-w17](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/outline)
+  * [homework](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/week-overview)
+  * [D1-Module 01 - Python I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/README)
+    * [Configuring Ubuntu for Python Web Development](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/configuring-ubuntu-for-python-web-development)
+    * [Install Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/install-python)
+  * [D2- Module 02 - Python II](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1-1)
+  * [D3- Module 03 - Python III](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1)
+  * [D4-Module 04 - Python IV](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled)
+* [wk18](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/README)
+  * [Outline-W-18](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-4)
+  * [D1- Module 01 - Number Bases and Character Encoding](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-3)
+  * [D2- Module 02 - Hash Tables I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/README)
+    * [Hash Table / Hash Map In Python:](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-hash-map-in-python)
+    * [Hash Table Use Cases](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-use-cases)
+    * [Practice](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/practice)
+  * [D3-Module 03 - Hash Tables II](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-1)
+  * [D4- Module 04 - Searching and Recursion](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled)
+* [wk19](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/README)
+  * [Outline-W-19](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/overview)
+  * [D1- Module 01 - Linked Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/README)
+    * [Homework](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/README)
+      * [Helpful Resource](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/helpful-resource)
+  * [D2- Module 02 - Queues and Stacks](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-7)
+  * [D3- Module 03 - Binary Search Trees](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/README)
+    * [BST Definition:](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/bst-definition)
+  * [D4- Module 04 - Tree Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/README)
+    * [Tree Traversals \(Inorder, Preorder and Postorder\)](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder)
+* [wk20](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/README)
+  * [Outline-W-20](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/overview)
+  * [D1-Graphs I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-5)
+  * [D2-Graphs 2](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-4)
+  * [DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-1)
+  * [D4](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-2)
 
 ### Utilities
 
-* [Utilites](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
-  * [Python Libraries](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/python-libraries)
-  * [YouTube](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
-  * [Code Lab Notebook Embeds From Lecture](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
-* [Code lab Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
-* [Repl.IT](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
-  * [Trinket](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
+* [Utilites](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
+  * [Python Libraries](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/python-libraries)
+  * [YouTube](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
+  * [Code Lab Notebook Embeds From Lecture](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+* [Code lab Notebooks](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
+* [Repl.IT](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
+  * [Trinket](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
 
 ### Abstract Data Structures
 
-* [Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/README)
-  * [Dijkstra's algorithm](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dijkstras-algorithm)
-  * [Calculate a Factorial With Python - Iterative and Recursive](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive)
-  * [DFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dfs)
-  * [BFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/bfs)
-  * [Palendrome](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/palendrome)
-* [Data Structures Overview](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/README)
-  * [General Data Structures Notes](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/README)
-    * [DS-Explained-Simple](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/ds-explained-simple)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/untitled)
-  * [Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/algorithms)
-  * [Dictionary](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/dictionary)
-* [Abstract Data Structures:](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/README)
-  * [Array](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/README)
-    * [Extra-Array](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/extra-array)
-    * [Array Practice](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/array-practice)
-  * [Binary Search](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search)
-  * [Binary Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/README)
-    * [Binary Tree Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/binary-tree-explained)
-    * [Find the maximum path sum between two leaves of a binary tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/find-the-maximum-path-sum-between-two-leaves-of-a-binary-tree)
-  * [Binary Search Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/README)
-    * [BST Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-explained)
-    * [BST Insert](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-insert)
-  * [Exotic](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/README)
-    * [Tire](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/tire)
-    * [Dynamic Programming](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/dynamic-programming)
-  * [Graphs](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/README)
-    * [Overflow Practice Problems](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems)
-    * [Graphs Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graphs-explained)
-    * [Earliest Ancestor](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/earliest-ancestor)
-    * [\_Mini Graph-Projects](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/README)
-      * [\# Social Graph](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/social-graph)
-      * [number of 1 islands](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/number-of-1-islands)
-      * [Searching and Generating Graphs](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/searching-and-generating-graphs)
-    * [Graph FAQ](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/README)
-      * [Graph DFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/graph-dfs)
-    * [Connected Components](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/connected-components)
-    * [Randomness](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/untitled)
-    * [Graph BFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-bfs)
-    * [Topological Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/topological-sort)
-  * [Hash Table](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/README)
-    * [Hashmap or Hash tables](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hashmap-or-hash-tables)
-    * [Hash Table and HashMap in Python](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hash-table-and-hashmap-in-python)
-  * [Heap](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/README)
-    * [Heap Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/heap-examples)
-  * [String](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/string)
-  * [Map](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/README)
-    * [Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/examples)
-  * [Queue](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/README)
-    * [Queue Continued...](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-continued...)
-    * [Queue Sandbox](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-sandbox)
-    * [Dequeue](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/dequeue)
-  * [Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/README)
-    * [In Order Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/in-order-traversal)
-    * [Tree Equal ?](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-equal)
-    * [Ternary-search-trees](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/ternary-search-trees)
-    * [Red\_Black Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red_black-tree)
-    * [Tree Mirror:](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-mirror)
-    * [Tree Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-traversal)
-  * [Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/README)
-    * [Recursion Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/README)
-      * [Recursion Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples)
-  * [Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/README)
-    * [Linked List Background](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/untitled)
-    * [Double Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/double-linked-list)
-    * [List Example](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-example)
-    * [Examples \(LL\) continued](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
-    * [List Operations](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-operations)
-  * [Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/README)
-    * [Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set)
-    * [Set Intersection Union](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set-intersection-union)
-    * [Disjoint Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/disjoint-set)
-  * [Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/README)
-    * [In JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/in-javascript)
-    * [Merge Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort-1)
-    * [Iterative Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/iterative-sorting)
-    * [Recursive Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/recursive-sorting)
-    * [Graph Topological Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/graph-topological-sort)
-    * [SelectionSort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/selectionsort)
-    * [Quick Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/untitled-7)
-    * [Merge Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort)
-    * [Insertion Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/insertion-sort)
-  * [Stack](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/README)
-    * [Stack Continued](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-continued)
-    * [Stack Part 3](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-part-3)
-  * [Searching](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/README)
-    * [Binary Search](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/binary-search)
-    * [Searching & Sorting Computational Complexity \(JS\)](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
+* [Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/README)
+  * [Dijkstra's algorithm](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dijkstras-algorithm)
+  * [Calculate a Factorial With Python - Iterative and Recursive](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive)
+  * [DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dfs)
+  * [BFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/bfs)
+  * [Palendrome](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/palendrome)
+* [Data Structures Overview](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/README)
+  * [General Data Structures Notes](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/README)
+    * [DS-Explained-Simple](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/ds-explained-simple)
+  * [Untitled](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/untitled)
+  * [Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/algorithms)
+  * [Dictionary](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/dictionary)
+* [Abstract Data Structures:](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/README)
+  * [Array](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/README)
+    * [Extra-Array](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/extra-array)
+    * [Array Practice](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/array-practice)
+  * [Binary Search](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search)
+  * [Binary Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/README)
+    * [Binary Tree Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/binary-tree-explained)
+    * [Find the maximum path sum between two leaves of a binary tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/find-the-maximum-path-sum-between-two-leaves-of-a-binary-tree)
+  * [Binary Search Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/README)
+    * [BST Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-explained)
+    * [BST Insert](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-insert)
+  * [Exotic](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/README)
+    * [Tire](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/tire)
+    * [Dynamic Programming](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/dynamic-programming)
+  * [Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/README)
+    * [Overflow Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems)
+    * [Graphs Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graphs-explained)
+    * [Earliest Ancestor](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/earliest-ancestor)
+    * [\_Mini Graph-Projects](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/README)
+      * [\# Social Graph](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/social-graph)
+      * [number of 1 islands](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/number-of-1-islands)
+      * [Searching and Generating Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/searching-and-generating-graphs)
+    * [Graph FAQ](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/README)
+      * [Graph DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/graph-dfs)
+    * [Connected Components](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/connected-components)
+    * [Randomness](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/untitled)
+    * [Graph BFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-bfs)
+    * [Topological Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/topological-sort)
+  * [Hash Table](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/README)
+    * [Hashmap or Hash tables](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hashmap-or-hash-tables)
+    * [Hash Table and HashMap in Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hash-table-and-hashmap-in-python)
+  * [Heap](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/README)
+    * [Heap Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/heap-examples)
+  * [String](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/string)
+  * [Map](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/README)
+    * [Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/examples)
+  * [Queue](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/README)
+    * [Queue Continued...](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-continued...)
+    * [Queue Sandbox](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-sandbox)
+    * [Dequeue](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/dequeue)
+  * [Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/README)
+    * [In Order Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/in-order-traversal)
+    * [Tree Equal ?](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-equal)
+    * [Ternary-search-trees](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/ternary-search-trees)
+    * [Red\_Black Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red_black-tree)
+    * [Tree Mirror:](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-mirror)
+    * [Tree Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-traversal)
+  * [Recursion](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/README)
+    * [Recursion Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/README)
+      * [Recursion Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples)
+  * [Linked List](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/README)
+    * [Linked List Background](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/untitled)
+    * [Double Linked List](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/double-linked-list)
+    * [List Example](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-example)
+    * [Examples \(LL\) continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
+    * [List Operations](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-operations)
+  * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/README)
+    * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set)
+    * [Set Intersection Union](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set-intersection-union)
+    * [Disjoint Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/disjoint-set)
+  * [Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/README)
+    * [In JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/in-javascript)
+    * [Merge Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort-1)
+    * [Iterative Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/iterative-sorting)
+    * [Recursive Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/recursive-sorting)
+    * [Graph Topological Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/graph-topological-sort)
+    * [SelectionSort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/selectionsort)
+    * [Quick Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/untitled-7)
+    * [Merge Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort)
+    * [Insertion Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/insertion-sort)
+  * [Stack](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/README)
+    * [Stack Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-continued)
+    * [Stack Part 3](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-part-3)
+  * [Searching](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/README)
+    * [Binary Search](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/binary-search)
+    * [Searching & Sorting Computational Complexity \(JS\)](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
 
 ### practice
 
-* [GCA Sprint Prep:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/README)
-  * [Practice Problems](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/practice-problems)
-  * [Code Signal CGA Sprint Resources](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/code-signal-cga-sprint-resources)
-  * [CGA-Sprint Prep](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/cga-sprint-prep)
-* [Supplemental Practice:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
-  * [JavaScript Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/javascript-algorithms)
-  * [Industry Standard Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/README)
-    * [Interview Practice Resources](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/interview-practice-resources)
-    * [Write a Program to Find the Maximum Depth or Height of a Tree](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree)
-  * [Random Examples](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
-  * [Prompts](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
-  * [JS\_BASICS](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js_basics)
+* [GCA Sprint Prep:](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/README)
+  * [Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/practice-problems)
+  * [Code Signal CGA Sprint Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/code-signal-cga-sprint-resources)
+  * [CGA-Sprint Prep](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/cga-sprint-prep)
+* [Supplemental Practice:](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
+  * [JavaScript Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/javascript-algorithms)
+  * [Industry Standard Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/README)
+    * [Interview Practice Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/interview-practice-resources)
+    * [Write a Program to Find the Maximum Depth or Height of a Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree)
+  * [Random Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
+  * [Prompts](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
+  * [JS\_BASICS](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js_basics)
 
 ### Resources
 
-* [Python Cheat Sheet](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/README)
-  * [Cheatsheet-v2](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/cheatsheet-v2)
-  * [List Of Python Cheat Sheets](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/bash-commands)
-* [Youtube](https://py-v2.gitbook.io/datastructures-in-pytho/resources/youtube)
-* [PDF Downloads](https://py-v2.gitbook.io/datastructures-in-pytho/resources/pdf-downloads)
-* [Intro 2 Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/intro-2-python)
-* [Dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/resources/dictionaries/README)
-  * [Dictionaries Continued](https://py-v2.gitbook.io/datastructures-in-pytho/resources/dictionaries/dictionaries-continued)
-* [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
-* [Misc. Resources](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled-1)
-* [Things To Internalize:](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
-  * [Functions](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
-* [Intro To Python w Jupyter Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
-* [Calculating Big O](https://py-v2.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
-* [Useful Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/README)
-  * [Awesome Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/awesome-python)
-  * [My-Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
-  * [Beginners Guide To Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
+* [Python Cheat Sheet](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/README)
+  * [Cheatsheet-v2](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/cheatsheet-v2)
+  * [List Of Python Cheat Sheets](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/bash-commands)
+* [Youtube](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/youtube)
+* [PDF Downloads](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/pdf-downloads)
+* [Intro 2 Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/intro-2-python)
+* [Dictionaries](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/dictionaries/README)
+  * [Dictionaries Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/dictionaries/dictionaries-continued)
+* [Python VS JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
+* [Misc. Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled-1)
+* [Things To Internalize:](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
+  * [Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
+* [Intro To Python w Jupyter Notebooks](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+* [Calculating Big O](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
+* [Useful Links](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/README)
+  * [Awesome Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/awesome-python)
+  * [My-Links](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
+  * [Beginners Guide To Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
 
 ### Docs <a id="stdlib"></a>
 
-* [Docs](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
-  * [Strings](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/README)
-    * [Strings Continued](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/strings-continued)
-  * [Touple](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/touple)
-  * [Values Expressions & Statments](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/values-expressions-and-statments)
-  * [Dictionaries, sets, files, and modules](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/README)
-    * [Modules](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/modules)
-  * [Built-in Types](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-2)
-  * [Built In Functions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/README)
-    * [Zip Function](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/zip-function)
-  * [Functions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-1)
-  * [Classes and objects](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/README)
-    * [Inheritance](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/untitled-2)
-    * [Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/README)
-      * [Python Objects & Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/python-objects-and-classes)
-      * [index](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/untitled)
-  * [Dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries)
-  * [Conditionals and loops](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/conditionals-and-loops)
-  * [Lists](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/README)
-    * [Reverse A List](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/reverse-a-list)
-    * [Python Data Structures](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/python-data-structures)
-    * [More On Lists](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/more-on-lists)
-    * [Examples](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/README)
-      * [More-Examples](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/more-examples)
-    * [List Compehensions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/list-compehensions)
-  * [Basic Syntax](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/basic-syntax)
-  * [String-Methods](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
-* [Queue & Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
+* [Docs](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
+  * [Strings](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/README)
+    * [Strings Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/strings-continued)
+  * [Touple](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/touple)
+  * [Values Expressions & Statments](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/values-expressions-and-statments)
+  * [Dictionaries, sets, files, and modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/README)
+    * [Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/modules)
+  * [Built-in Types](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-2)
+  * [Built In Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/README)
+    * [Zip Function](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/zip-function)
+  * [Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-1)
+  * [Classes and objects](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/README)
+    * [Inheritance](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/untitled-2)
+    * [Classes](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/README)
+      * [Python Objects & Classes](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/python-objects-and-classes)
+      * [index](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/untitled)
+  * [Dictionaries](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries)
+  * [Conditionals and loops](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/conditionals-and-loops)
+  * [Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/README)
+    * [Reverse A List](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/reverse-a-list)
+    * [Python Data Structures](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/python-data-structures)
+    * [More On Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/more-on-lists)
+    * [Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/README)
+      * [More-Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/more-examples)
+    * [List Compehensions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/list-compehensions)
+  * [Basic Syntax](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/basic-syntax)
+  * [String-Methods](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
+* [Queue & Stacks](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
 
 ### quick-reference
 
-* [My Medium Articles](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/my-medium-articles)
-* [Free Python Books](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/free-python-books)
-* [WHY Python?](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/why-python)
-* [Python Snippets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
-* [Python3 Regex](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python3-regex)
-* [Python Module Index:](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/README)
-  * [Requests Module](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/requests-module)
-* [Creating Python Modules](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/creating-python-modules)
-* [Useful Info](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
-* [Python Glossary](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
-* [Python Snippets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
+* [My Medium Articles](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/my-medium-articles)
+* [Free Python Books](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/free-python-books)
+* [WHY Python?](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/why-python)
+* [Python Snippets](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
+* [Python3 Regex](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python3-regex)
+* [Python Module Index:](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/README)
+  * [Requests Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/requests-module)
+* [Creating Python Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/creating-python-modules)
+* [Useful Info](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
+* [Python Glossary](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
+* [Python Snippets](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
 
 ### MISC
 
-* [Built-in Methods & Functions](https://py-v2.gitbook.io/datastructures-in-pytho/misc/built-in-methods-and-functions)
-* [Data Structures Types](https://py-v2.gitbook.io/datastructures-in-pytho/misc/data-structures-types)
-* [Math](https://py-v2.gitbook.io/datastructures-in-pytho/misc/math)
-* [Unsorted Examples](https://py-v2.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/misc/outline)
-* [About Python](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/README)
-  * [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
-  * [Python Modules & Python Packages](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
-  * [Misc](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
-  * [Python's Default Argument Values and Lists](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
-  * [SCRAP](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
+* [Built-in Methods & Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/built-in-methods-and-functions)
+* [Data Structures Types](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/data-structures-types)
+* [Math](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/math)
+* [Unsorted Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
+* [Outline](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/outline)
+* [About Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/README)
+  * [Python VS JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+  * [Python Modules & Python Packages](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
+  * [Misc](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
+  * [Python's Default Argument Values and Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+  * [SCRAP](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
 
 ### Interview Prep
 
-* [Interview Resources](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
-  * [By Example](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/README)
-    * [Algo-Prep](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/leetcode)
-  * [Permutation](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/permutation)
-  * [How to Write an Effective Resume of Python Developer](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
-  * [Interview Checklist](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
-  * [150 Practice Problems & Solutions](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+* [Interview Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
+  * [By Example](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/README)
+    * [Algo-Prep](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/leetcode)
+  * [Permutation](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/permutation)
+  * [How to Write an Effective Resume of Python Developer](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+  * [Interview Checklist](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+  * [150 Practice Problems & Solutions](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
 
 ### Installations Setup & Env
 
-* [python-setup](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
-* [Installing Python Modules](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/installing-python-modules)
-* [Set Up Virtual Enviornment](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/set-up-virtual-enviornment)
+* [python-setup](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
+* [Installing Python Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/installing-python-modules)
+* [Set Up Virtual Enviornment](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/set-up-virtual-enviornment)
 
 ### Aux-Exploration
 
-* [Related Studies](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
-  * [Self-Organizing Maps: Theory and Implementation in Python with NumPy](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/self-organizing-maps-theory-and-implementation-in-python-with-numpy)
-  * [List Directory Contents](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
-  * [Employee Manager](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
-  * [OS Module](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
-  * [server-side-scripting](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
-  * [Reading and Writing to text files in Python](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
-  * [General Data Structures](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
-  * [Touple](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/touple)
-  * [How to round Python values to whole numbers?](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled)
-  * [Python Array Module](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-array-module)
-  * [Data Structures In JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/data-structures-in-javascript)
-  * [Dunder Methods](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/dunder-methods)
-  * [Python GitHub API](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-github-api)
-  * [JS-Event Loop](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/js-event-loop)
-  * [JavaScript Event Loop](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/javascript-event-loop)
+* [Related Studies](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
+  * [Self-Organizing Maps: Theory and Implementation in Python with NumPy](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/self-organizing-maps-theory-and-implementation-in-python-with-numpy)
+  * [List Directory Contents](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
+  * [Employee Manager](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
+  * [OS Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
+  * [server-side-scripting](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
+  * [Reading and Writing to text files in Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
+  * [General Data Structures](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
+  * [Touple](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/touple)
+  * [How to round Python values to whole numbers?](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled)
+  * [Python Array Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-array-module)
+  * [Data Structures In JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/data-structures-in-javascript)
+  * [Dunder Methods](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/dunder-methods)
+  * [Python GitHub API](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-github-api)
+  * [JS-Event Loop](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/js-event-loop)
+  * [JavaScript Event Loop](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/javascript-event-loop)
 
 ### experiments
 
-* [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/experiments/untitled)
+* [Untitled](https://bryan-guner.gitbook.io/datastructures-in-pytho/experiments/untitled)
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -331,284 +343,284 @@ My Blog:
 
 ## Table of contents
 
-* [Home](https://py-v2.gitbook.io/datastructures-in-pytho/README)
-* [Downloads & Misc-Assets](https://py-v2.gitbook.io/datastructures-in-pytho/index)
-* [README](https://py-v2.gitbook.io/datastructures-in-pytho/readme-1)
-* [Navigation](https://py-v2.gitbook.io/datastructures-in-pytho/navigation)
+* [Home](https://bryan-guner.gitbook.io/datastructures-in-pytho/README)
+* [Downloads & Misc-Assets](https://bryan-guner.gitbook.io/datastructures-in-pytho/index)
+* [README](https://bryan-guner.gitbook.io/datastructures-in-pytho/readme-1)
+* [Navigation](https://bryan-guner.gitbook.io/datastructures-in-pytho/navigation)
 
 ### Curriculum
 
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled/README)
-  * [General Content](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled/general-content)
-* [wk17](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/README)
-  * [Outline-w17](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/outline)
-  * [homework](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/week-overview)
-  * [D1-Module 01 - Python I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/README)
-    * [Configuring Ubuntu for Python Web Development](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/configuring-ubuntu-for-python-web-development)
-    * [Install Python](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/install-python)
-  * [D2- Module 02 - Python II](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1-1)
-  * [D3- Module 03 - Python III](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1)
-  * [D4-Module 04 - Python IV](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled)
-* [wk18](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/README)
-  * [Outline-W-18](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-4)
-  * [D1- Module 01 - Number Bases and Character Encoding](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-3)
-  * [D2- Module 02 - Hash Tables I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/README)
-    * [Hash Table / Hash Map In Python:](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-hash-map-in-python)
-    * [Hash Table Use Cases](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-use-cases)
-    * [Practice](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/practice)
-  * [D3-Module 03 - Hash Tables II](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-1)
-  * [D4- Module 04 - Searching and Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled)
-* [wk19](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/README)
-  * [Outline-W-19](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/overview)
-  * [D1- Module 01 - Linked Lists](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/README)
-    * [Homework](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/README)
-      * [Helpful Resource](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/helpful-resource)
-  * [D2- Module 02 - Queues and Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-7)
-  * [D3- Module 03 - Binary Search Trees](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/README)
-    * [BST Definition:](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/bst-definition)
-  * [D4- Module 04 - Tree Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/README)
-    * [Tree Traversals \(Inorder, Preorder and Postorder\)](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder)
-* [wk20](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/README)
-  * [Outline-W-20](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/overview)
-  * [D1-Graphs I](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-5)
-  * [D2-Graphs 2](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-4)
-  * [DFS](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-1)
-  * [D4](https://py-v2.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-2)
+* [Outline](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled/README)
+  * [General Content](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled/general-content)
+* [wk17](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/README)
+  * [Outline-w17](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/outline)
+  * [homework](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/week-overview)
+  * [D1-Module 01 - Python I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/README)
+    * [Configuring Ubuntu for Python Web Development](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/configuring-ubuntu-for-python-web-development)
+    * [Install Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-2/install-python)
+  * [D2- Module 02 - Python II](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1-1)
+  * [D3- Module 03 - Python III](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled-1)
+  * [D4-Module 04 - Python IV](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-3/untitled)
+* [wk18](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/README)
+  * [Outline-W-18](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-4)
+  * [D1- Module 01 - Number Bases and Character Encoding](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-3)
+  * [D2- Module 02 - Hash Tables I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/README)
+    * [Hash Table / Hash Map In Python:](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-hash-map-in-python)
+    * [Hash Table Use Cases](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/hash-table-use-cases)
+    * [Practice](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-2/practice)
+  * [D3-Module 03 - Hash Tables II](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled-1)
+  * [D4- Module 04 - Searching and Recursion](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-2/untitled)
+* [wk19](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/README)
+  * [Outline-W-19](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/overview)
+  * [D1- Module 01 - Linked Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/README)
+    * [Homework](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/README)
+      * [Helpful Resource](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-3/homework/helpful-resource)
+  * [D2- Module 02 - Queues and Stacks](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-7)
+  * [D3- Module 03 - Binary Search Trees](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/README)
+    * [BST Definition:](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-8/bst-definition)
+  * [D4- Module 04 - Tree Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/README)
+    * [Tree Traversals \(Inorder, Preorder and Postorder\)](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder)
+* [wk20](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/README)
+  * [Outline-W-20](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/overview)
+  * [D1-Graphs I](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-5)
+  * [D2-Graphs 2](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-4)
+  * [DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-1)
+  * [D4](https://bryan-guner.gitbook.io/datastructures-in-pytho/curriculum/untitled-1/untitled-2)
 
 ### Utilities
 
-* [Utilites](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
-  * [Python Libraries](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/python-libraries)
-  * [YouTube](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
-  * [Code Lab Notebook Embeds From Lecture](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
-* [Code lab Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
-* [Repl.IT](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
-  * [Trinket](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
+* [Utilites](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
+  * [Python Libraries](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/python-libraries)
+  * [YouTube](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
+  * [Code Lab Notebook Embeds From Lecture](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+* [Code lab Notebooks](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
+* [Repl.IT](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
+  * [Trinket](https://bryan-guner.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
 
 ### Abstract Data Structures
 
-* [Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/README)
-  * [Dijkstra's algorithm](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dijkstras-algorithm)
-  * [Calculate a Factorial With Python - Iterative and Recursive](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive)
-  * [DFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dfs)
-  * [BFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/bfs)
-  * [Palendrome](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/palendrome)
-* [Data Structures Overview](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/README)
-  * [General Data Structures Notes](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/README)
-    * [DS-Explained-Simple](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/ds-explained-simple)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/untitled)
-  * [Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/algorithms)
-  * [Dictionary](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/dictionary)
-* [Abstract Data Structures:](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/README)
-  * [Array](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/README)
-    * [Extra-Array](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/extra-array)
-    * [Array Practice](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/array-practice)
-  * [Binary Search](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search)
-  * [Binary Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/README)
-    * [Binary Tree Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/binary-tree-explained)
-    * [Find the maximum path sum between two leaves of a binary tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/find-the-maximum-path-sum-between-two-leaves-of-a-binary-tree)
-  * [Binary Search Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/README)
-    * [BST Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-explained)
-    * [BST Insert](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-insert)
-  * [Exotic](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/README)
-    * [Tire](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/tire)
-    * [Dynamic Programming](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/dynamic-programming)
-  * [Graphs](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/README)
-    * [Overflow Practice Problems](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems)
-    * [Graphs Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graphs-explained)
-    * [Earliest Ancestor](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/earliest-ancestor)
-    * [\_Mini Graph-Projects](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/README)
-      * [\# Social Graph](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/social-graph)
-      * [number of 1 islands](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/number-of-1-islands)
-      * [Searching and Generating Graphs](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/searching-and-generating-graphs)
-    * [Graph FAQ](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/README)
-      * [Graph DFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/graph-dfs)
-    * [Connected Components](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/connected-components)
-    * [Randomness](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/untitled)
-    * [Graph BFS](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-bfs)
-    * [Topological Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/topological-sort)
-  * [Hash Table](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/README)
-    * [Hashmap or Hash tables](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hashmap-or-hash-tables)
-    * [Hash Table and HashMap in Python](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hash-table-and-hashmap-in-python)
-  * [Heap](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/README)
-    * [Heap Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/heap-examples)
-  * [String](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/string)
-  * [Map](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/README)
-    * [Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/examples)
-  * [Queue](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/README)
-    * [Queue Continued...](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-continued...)
-    * [Queue Sandbox](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-sandbox)
-    * [Dequeue](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/dequeue)
-  * [Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/README)
-    * [In Order Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/in-order-traversal)
-    * [Tree Equal ?](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-equal)
-    * [Ternary-search-trees](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/ternary-search-trees)
-    * [Red\_Black Tree](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red_black-tree)
-    * [Tree Mirror:](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-mirror)
-    * [Tree Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-traversal)
-  * [Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/README)
-    * [Recursion Explained](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/README)
-      * [Recursion Examples](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples)
-  * [Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/README)
-    * [Linked List Background](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/untitled)
-    * [Double Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/double-linked-list)
-    * [List Example](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-example)
-    * [Examples \(LL\) continued](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
-    * [List Operations](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-operations)
-  * [Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/README)
-    * [Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set)
-    * [Set Intersection Union](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set-intersection-union)
-    * [Disjoint Set](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/disjoint-set)
-  * [Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/README)
-    * [In JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/in-javascript)
-    * [Merge Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort-1)
-    * [Iterative Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/iterative-sorting)
-    * [Recursive Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/recursive-sorting)
-    * [Graph Topological Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/graph-topological-sort)
-    * [SelectionSort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/selectionsort)
-    * [Quick Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/untitled-7)
-    * [Merge Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort)
-    * [Insertion Sort](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/insertion-sort)
-  * [Stack](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/README)
-    * [Stack Continued](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-continued)
-    * [Stack Part 3](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-part-3)
-  * [Searching](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/README)
-    * [Binary Search](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/binary-search)
-    * [Searching & Sorting Computational Complexity \(JS\)](https://py-v2.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
+* [Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/README)
+  * [Dijkstra's algorithm](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dijkstras-algorithm)
+  * [Calculate a Factorial With Python - Iterative and Recursive](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive)
+  * [DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dfs)
+  * [BFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/bfs)
+  * [Palendrome](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/palendrome)
+* [Data Structures Overview](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/README)
+  * [General Data Structures Notes](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/README)
+    * [DS-Explained-Simple](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/general-data-structures-notes/ds-explained-simple)
+  * [Untitled](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/untitled)
+  * [Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/algorithms)
+  * [Dictionary](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-7/dictionary)
+* [Abstract Data Structures:](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/README)
+  * [Array](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/README)
+    * [Extra-Array](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/extra-array)
+    * [Array Practice](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/array/array-practice)
+  * [Binary Search](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search)
+  * [Binary Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/README)
+    * [Binary Tree Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/binary-tree-explained)
+    * [Find the maximum path sum between two leaves of a binary tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-tree/find-the-maximum-path-sum-between-two-leaves-of-a-binary-tree)
+  * [Binary Search Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/README)
+    * [BST Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-explained)
+    * [BST Insert](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/binary-search-tree/bst-insert)
+  * [Exotic](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/README)
+    * [Tire](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/tire)
+    * [Dynamic Programming](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled/dynamic-programming)
+  * [Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/README)
+    * [Overflow Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems)
+    * [Graphs Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graphs-explained)
+    * [Earliest Ancestor](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/earliest-ancestor)
+    * [\_Mini Graph-Projects](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/README)
+      * [\# Social Graph](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/social-graph)
+      * [number of 1 islands](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/number-of-1-islands)
+      * [Searching and Generating Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/searching-and-generating-graphs)
+    * [Graph FAQ](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/README)
+      * [Graph DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/graph-dfs)
+    * [Connected Components](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/connected-components)
+    * [Randomness](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/untitled)
+    * [Graph BFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-bfs)
+    * [Topological Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/topological-sort)
+  * [Hash Table](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/README)
+    * [Hashmap or Hash tables](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hashmap-or-hash-tables)
+    * [Hash Table and HashMap in Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-5/hash-table-and-hashmap-in-python)
+  * [Heap](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/README)
+    * [Heap Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/heap/heap-examples)
+  * [String](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/string)
+  * [Map](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/README)
+    * [Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/map/examples)
+  * [Queue](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/README)
+    * [Queue Continued...](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-continued...)
+    * [Queue Sandbox](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/queue-sandbox)
+    * [Dequeue](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/queue/dequeue)
+  * [Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/README)
+    * [In Order Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/in-order-traversal)
+    * [Tree Equal ?](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-equal)
+    * [Ternary-search-trees](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/ternary-search-trees)
+    * [Red\_Black Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red_black-tree)
+    * [Tree Mirror:](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-mirror)
+    * [Tree Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-traversal)
+  * [Recursion](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/README)
+    * [Recursion Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/README)
+      * [Recursion Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples)
+  * [Linked List](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/README)
+    * [Linked List Background](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/untitled)
+    * [Double Linked List](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/double-linked-list)
+    * [List Example](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-example)
+    * [Examples \(LL\) continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
+    * [List Operations](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-operations)
+  * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/README)
+    * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set)
+    * [Set Intersection Union](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set-intersection-union)
+    * [Disjoint Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/disjoint-set)
+  * [Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/README)
+    * [In JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/in-javascript)
+    * [Merge Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort-1)
+    * [Iterative Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/iterative-sorting)
+    * [Recursive Sorting](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/recursive-sorting)
+    * [Graph Topological Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/graph-topological-sort)
+    * [SelectionSort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/selectionsort)
+    * [Quick Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/untitled-7)
+    * [Merge Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/merge-sort)
+    * [Insertion Sort](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-3/insertion-sort)
+  * [Stack](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/README)
+    * [Stack Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-continued)
+    * [Stack Part 3](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-part-3)
+  * [Searching](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/README)
+    * [Binary Search](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/binary-search)
+    * [Searching & Sorting Computational Complexity \(JS\)](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
 
 ### practice
 
-* [GCA Sprint Prep:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/README)
-  * [Practice Problems](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/practice-problems)
-  * [Code Signal CGA Sprint Resources](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/code-signal-cga-sprint-resources)
-  * [CGA-Sprint Prep](https://py-v2.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/cga-sprint-prep)
-* [Supplemental Practice:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
-  * [JavaScript Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/javascript-algorithms)
-  * [Industry Standard Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/README)
-    * [Interview Practice Resources](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/interview-practice-resources)
-    * [Write a Program to Find the Maximum Depth or Height of a Tree](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree)
-  * [Random Examples](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
-  * [Prompts](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
-  * [JS\_BASICS](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js_basics)
+* [GCA Sprint Prep:](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/README)
+  * [Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/practice-problems)
+  * [Code Signal CGA Sprint Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/code-signal-cga-sprint-resources)
+  * [CGA-Sprint Prep](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/cga-sprint-prep)
+* [Supplemental Practice:](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
+  * [JavaScript Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/javascript-algorithms)
+  * [Industry Standard Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/README)
+    * [Interview Practice Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/interview-practice-resources)
+    * [Write a Program to Find the Maximum Depth or Height of a Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree)
+  * [Random Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
+  * [Prompts](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
+  * [JS\_BASICS](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js_basics)
 
 ### Resources
 
-* [Python Cheat Sheet](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/README)
-  * [Cheatsheet-v2](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/cheatsheet-v2)
-  * [List Of Python Cheat Sheets](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/bash-commands)
-* [Youtube](https://py-v2.gitbook.io/datastructures-in-pytho/resources/youtube)
-* [PDF Downloads](https://py-v2.gitbook.io/datastructures-in-pytho/resources/pdf-downloads)
-* [Intro 2 Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/intro-2-python)
-* [Dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/resources/dictionaries/README)
-  * [Dictionaries Continued](https://py-v2.gitbook.io/datastructures-in-pytho/resources/dictionaries/dictionaries-continued)
-* [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
-* [Misc. Resources](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled-1)
-* [Things To Internalize:](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
-  * [Functions](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
-* [Intro To Python w Jupyter Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
-* [Calculating Big O](https://py-v2.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
-* [Useful Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/README)
-  * [Awesome Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/awesome-python)
-  * [My-Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
-  * [Beginners Guide To Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
+* [Python Cheat Sheet](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/README)
+  * [Cheatsheet-v2](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/cheatsheet-v2)
+  * [List Of Python Cheat Sheets](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet/bash-commands)
+* [Youtube](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/youtube)
+* [PDF Downloads](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/pdf-downloads)
+* [Intro 2 Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/intro-2-python)
+* [Dictionaries](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/dictionaries/README)
+  * [Dictionaries Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/dictionaries/dictionaries-continued)
+* [Python VS JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
+* [Misc. Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled-1)
+* [Things To Internalize:](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
+  * [Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
+* [Intro To Python w Jupyter Notebooks](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+* [Calculating Big O](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
+* [Useful Links](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/README)
+  * [Awesome Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/awesome-python)
+  * [My-Links](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
+  * [Beginners Guide To Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
 
 ### Docs <a id="stdlib"></a>
 
-* [Docs](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
-  * [Strings](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/README)
-    * [Strings Continued](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/strings-continued)
-  * [Touple](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/touple)
-  * [Values Expressions & Statments](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/values-expressions-and-statments)
-  * [Dictionaries, sets, files, and modules](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/README)
-    * [Modules](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/modules)
-  * [Built-in Types](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-2)
-  * [Built In Functions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/README)
-    * [Zip Function](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/zip-function)
-  * [Functions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-1)
-  * [Classes and objects](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/README)
-    * [Inheritance](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/untitled-2)
-    * [Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/README)
-      * [Python Objects & Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/python-objects-and-classes)
-      * [index](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/untitled)
-  * [Dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries)
-  * [Conditionals and loops](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/conditionals-and-loops)
-  * [Lists](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/README)
-    * [Reverse A List](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/reverse-a-list)
-    * [Python Data Structures](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/python-data-structures)
-    * [More On Lists](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/more-on-lists)
-    * [Examples](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/README)
-      * [More-Examples](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/more-examples)
-    * [List Compehensions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/list-compehensions)
-  * [Basic Syntax](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/basic-syntax)
-  * [String-Methods](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
-* [Queue & Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
+* [Docs](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
+  * [Strings](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/README)
+    * [Strings Continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/strings/strings-continued)
+  * [Touple](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/touple)
+  * [Values Expressions & Statments](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/values-expressions-and-statments)
+  * [Dictionaries, sets, files, and modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/README)
+    * [Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries-sets-files-and-modules/modules)
+  * [Built-in Types](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-2)
+  * [Built In Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/README)
+    * [Zip Function](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/built-in-functions/zip-function)
+  * [Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/untitled-1)
+  * [Classes and objects](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/README)
+    * [Inheritance](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/untitled-2)
+    * [Classes](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/README)
+      * [Python Objects & Classes](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/python-objects-and-classes)
+      * [index](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/classes-and-objects/classes/untitled)
+  * [Dictionaries](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/dictionaries)
+  * [Conditionals and loops](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/conditionals-and-loops)
+  * [Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/README)
+    * [Reverse A List](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/reverse-a-list)
+    * [Python Data Structures](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/python-data-structures)
+    * [More On Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/more-on-lists)
+    * [Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/README)
+      * [More-Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/examples/more-examples)
+    * [List Compehensions](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/lists/list-compehensions)
+  * [Basic Syntax](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/basic-syntax)
+  * [String-Methods](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
+* [Queue & Stacks](https://bryan-guner.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
 
 ### quick-reference
 
-* [My Medium Articles](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/my-medium-articles)
-* [Free Python Books](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/free-python-books)
-* [WHY Python?](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/why-python)
-* [Python Snippets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
-* [Python3 Regex](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python3-regex)
-* [Python Module Index:](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/README)
-  * [Requests Module](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/requests-module)
-* [Creating Python Modules](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/creating-python-modules)
-* [Useful Info](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
-* [Python Glossary](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
-* [Python Snippets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
+* [My Medium Articles](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/my-medium-articles)
+* [Free Python Books](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/free-python-books)
+* [WHY Python?](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/why-python)
+* [Python Snippets](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
+* [Python3 Regex](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python3-regex)
+* [Python Module Index:](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/README)
+  * [Requests Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index/requests-module)
+* [Creating Python Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/creating-python-modules)
+* [Useful Info](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
+* [Python Glossary](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
+* [Python Snippets](https://bryan-guner.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
 
 ### MISC
 
-* [Built-in Methods & Functions](https://py-v2.gitbook.io/datastructures-in-pytho/misc/built-in-methods-and-functions)
-* [Data Structures Types](https://py-v2.gitbook.io/datastructures-in-pytho/misc/data-structures-types)
-* [Math](https://py-v2.gitbook.io/datastructures-in-pytho/misc/math)
-* [Unsorted Examples](https://py-v2.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/misc/outline)
-* [About Python](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/README)
-  * [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
-  * [Python Modules & Python Packages](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
-  * [Misc](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
-  * [Python's Default Argument Values and Lists](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
-  * [SCRAP](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
+* [Built-in Methods & Functions](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/built-in-methods-and-functions)
+* [Data Structures Types](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/data-structures-types)
+* [Math](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/math)
+* [Unsorted Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
+* [Outline](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/outline)
+* [About Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/README)
+  * [Python VS JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+  * [Python Modules & Python Packages](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
+  * [Misc](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
+  * [Python's Default Argument Values and Lists](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+  * [SCRAP](https://bryan-guner.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
 
 ### Interview Prep
 
-* [Interview Resources](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
-  * [By Example](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/README)
-    * [Algo-Prep](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/leetcode)
-  * [Permutation](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/permutation)
-  * [How to Write an Effective Resume of Python Developer](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
-  * [Interview Checklist](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
-  * [150 Practice Problems & Solutions](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+* [Interview Resources](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
+  * [By Example](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/README)
+    * [Algo-Prep](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/by-example/leetcode)
+  * [Permutation](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/permutation)
+  * [How to Write an Effective Resume of Python Developer](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+  * [Interview Checklist](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+  * [150 Practice Problems & Solutions](https://bryan-guner.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
 
 ### Installations Setup & Env
 
-* [python-setup](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
-* [Installing Python Modules](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/installing-python-modules)
-* [Set Up Virtual Enviornment](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/set-up-virtual-enviornment)
+* [python-setup](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
+* [Installing Python Modules](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/installing-python-modules)
+* [Set Up Virtual Enviornment](https://bryan-guner.gitbook.io/datastructures-in-pytho/installations-setup-and-env/set-up-virtual-enviornment)
 
 ### Aux-Exploration
 
-* [Related Studies](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
-  * [Self-Organizing Maps: Theory and Implementation in Python with NumPy](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/self-organizing-maps-theory-and-implementation-in-python-with-numpy)
-  * [List Directory Contents](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
-  * [Employee Manager](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
-  * [OS Module](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
-  * [server-side-scripting](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
-  * [Reading and Writing to text files in Python](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
-  * [General Data Structures](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
-  * [Touple](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/touple)
-  * [How to round Python values to whole numbers?](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled)
-  * [Python Array Module](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-array-module)
-  * [Data Structures In JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/data-structures-in-javascript)
-  * [Dunder Methods](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/dunder-methods)
-  * [Python GitHub API](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-github-api)
-  * [JS-Event Loop](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/js-event-loop)
-  * [JavaScript Event Loop](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/javascript-event-loop)
+* [Related Studies](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
+  * [Self-Organizing Maps: Theory and Implementation in Python with NumPy](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/self-organizing-maps-theory-and-implementation-in-python-with-numpy)
+  * [List Directory Contents](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
+  * [Employee Manager](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
+  * [OS Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
+  * [server-side-scripting](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
+  * [Reading and Writing to text files in Python](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
+  * [General Data Structures](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
+  * [Touple](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/touple)
+  * [How to round Python values to whole numbers?](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled)
+  * [Python Array Module](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-array-module)
+  * [Data Structures In JavaScript](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/data-structures-in-javascript)
+  * [Dunder Methods](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/dunder-methods)
+  * [Python GitHub API](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/python-github-api)
+  * [JS-Event Loop](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/js-event-loop)
+  * [JavaScript Event Loop](https://bryan-guner.gitbook.io/datastructures-in-pytho/aux-exploration/subject/javascript-event-loop)
 
 ### experiments
 
-* [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/experiments/untitled)
+* [Untitled](https://bryan-guner.gitbook.io/datastructures-in-pytho/experiments/untitled)
 {% endtab %}
 
 {% tab title="NAV-ARCHIVE" %}
@@ -1136,857 +1148,857 @@ My Blog:
 
 #### Table of contents
 
-* [Home](https://py-v2.gitbook.io/datastructures-in-pytho/README)
-* [Navigation](https://py-v2.gitbook.io/datastructures-in-pytho/navigation)
+* [Home](https://bgoonz42.gitbook.io/datastructures-in-pytho/README)
+* [Navigation](https://bgoonz42.gitbook.io/datastructures-in-pytho/navigation)
 
 **Curriculum**
 
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled)
-* [wk17](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/README)
-  * [Outline-w17](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline)
-  * [homework](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
-  * [D1-Module 01 - Python I](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/README)
-    * [Install Python](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/install-python)
-  * [D2- Module 02 - Python II](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
-  * [D3- Module 03 - Python III](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
-  * [D4-Module 04 - Python IV](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
-* [wk18](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/README)
-  * [Outline-W-18](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
-  * [D1- Module 01 - Number Bases and Character Encoding](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
-  * [D2- Module 02 - Hash Tables I](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
-  * [D3-Module 03 - Hash Tables II](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
-  * [D4- Module 04 - Searching and Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
-* [wk19](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/README)
-  * [Outline-W-19](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview)
-  * [D1- Module 01 - Linked Lists](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
-  * [D2- Module 02 - Queues and Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
-  * [D3- Module 03 - Binary Search Trees](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
-  * [D4- Module 04 - Tree Traversal](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
-* [wk20](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/README)
-  * [Outline-W-20](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview)
-  * [D1-Graphs I](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
-  * [D2-Graphs 2](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
-  * [DFS](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
-  * [D4](https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
+* [Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled)
+* [wk17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/README)
+  * [Outline-w17](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline)
+  * [homework](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
+  * [D1-Module 01 - Python I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/README)
+    * [Install Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2/install-python)
+  * [D2- Module 02 - Python II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
+  * [D3- Module 03 - Python III](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
+  * [D4-Module 04 - Python IV](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
+* [wk18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/README)
+  * [Outline-W-18](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
+  * [D1- Module 01 - Number Bases and Character Encoding](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
+  * [D2- Module 02 - Hash Tables I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
+  * [D3-Module 03 - Hash Tables II](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
+  * [D4- Module 04 - Searching and Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
+* [wk19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/README)
+  * [Outline-W-19](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview)
+  * [D1- Module 01 - Linked Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
+  * [D2- Module 02 - Queues and Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
+  * [D3- Module 03 - Binary Search Trees](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
+  * [D4- Module 04 - Tree Traversal](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
+* [wk20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/README)
+  * [Outline-W-20](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview)
+  * [D1-Graphs I](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
+  * [D2-Graphs 2](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
+  * [DFS](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
+  * [D4](https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
 
 **Utilities**
 
-* [Code lab Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
-* [Repl.IT](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
-  * [Trinket](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
-* [Utilites](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
-  * [YouTube](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
-  * [Code Lab Notebook Embeds From Lecture](https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+* [Code lab Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks)
+* [Repl.IT](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/README)
+  * [Trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it/trinket)
+* [Utilites](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/README)
+  * [YouTube](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled)
+  * [Code Lab Notebook Embeds From Lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
 
 **practice**
 
-* [Supplemental Practice:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
-  * [Random Examples](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
-  * [Prompts](https://py-v2.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
-* [Abstract Data Structures:](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/README)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-7)
-  * [Industry Standard Algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
-  * [Interview Practice Resources](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/interview-practice-resources)
-  * [Overflow Practice Problems](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
-  * [Array](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/array/README)
-    * [Extra-Array](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/array/extra-array)
-  * [Stack](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/stack)
-  * [Queue](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/queue)
-  * [Queue Sandbox](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/queue-sandbox)
-  * [Binary Search](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search)
-  * [BST Explained](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/bst-explained)
-  * [Binary Tree](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/binary-tree)
-  * [Binary Search Tree](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/README)
-    * [BST Insert](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
-  * [Recursion](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/README)
-    * [Recursion Explained](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/README)
-      * [Recursion Examples](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/recursion-examples)
-  * [Hash Table](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-5)
-  * [Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/README)
-    * [Double Linked List](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
-    * [List Operations](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/list-operations)
-  * [Sorting](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/README)
-    * [SelectionSort](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/selectionsort)
-    * [Quick Sort](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/untitled-7)
-    * [Merge Sort](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/merge-sort)
-    * [Insertion Sort](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/insertion-sort)
-  * [Searching](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-2)
-  * [Graphs](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-1)
-  * [Exotic](https://py-v2.gitbook.io/datastructures-in-pytho/practice/untitled/untitled)
+* [Supplemental Practice:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/README)
+  * [Random Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
+  * [Prompts](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
+* [Abstract Data Structures:](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/README)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-7)
+  * [Industry Standard Algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
+  * [Interview Practice Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/interview-practice-resources)
+  * [Overflow Practice Problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
+  * [Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/README)
+    * [Extra-Array](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/array/extra-array)
+  * [Stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/stack)
+  * [Queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue)
+  * [Queue Sandbox](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/queue-sandbox)
+  * [Binary Search](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search)
+  * [BST Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/bst-explained)
+  * [Binary Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-tree)
+  * [Binary Search Tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/README)
+    * [BST Insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
+  * [Recursion](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/README)
+    * [Recursion Explained](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/README)
+      * [Recursion Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-6/recursion-explained/recursion-examples)
+  * [Hash Table](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-5)
+  * [Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/README)
+    * [Double Linked List](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
+    * [List Operations](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-4/list-operations)
+  * [Sorting](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/README)
+    * [SelectionSort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/selectionsort)
+    * [Quick Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/untitled-7)
+    * [Merge Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/merge-sort)
+    * [Insertion Sort](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-3/insertion-sort)
+  * [Searching](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-2)
+  * [Graphs](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled-1)
+  * [Exotic](https://bgoonz42.gitbook.io/datastructures-in-pytho/practice/untitled/untitled)
 
 **Resources**
 
-* [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
-* [Misc. Resources](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled-1)
-* [Things To Internalize:](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
-  * [Functions](https://py-v2.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
-* [Intro To Python w Jupyter Notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
-* [Calculating Big O](https://py-v2.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
-* [Python Cheat Sheet](https://py-v2.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)
-* [Code Signal CGA Sprint Resources](https://py-v2.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
-* [Youtube](https://py-v2.gitbook.io/datastructures-in-pytho/resources/youtube)
-* [Useful Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/README)
-  * [My-Links](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
-  * [Beginners Guide To Python](https://py-v2.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
+* [Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-vs-javascript)
+* [Misc. Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled-1)
+* [Things To Internalize:](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/README)
+  * [Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/things-to-internalize/functions)
+* [Intro To Python w Jupyter Notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+* [Calculating Big O](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/calculating-big-o)
+* [Python Cheat Sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/python-cheat-sheet)
+* [Code Signal CGA Sprint Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
+* [Youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/youtube)
+* [Useful Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/README)
+  * [My-Links](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/my-links)
+  * [Beginners Guide To Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/resources/untitled/beginners-guide-to-python)
 
 **quick-reference**
 
-* [Python Snippets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
-* [Python Module Index:](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index)
-* [Useful Info](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
-* [Python Glossary](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
-* [index](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
-* [List Of Python Cheat Sheets](https://py-v2.gitbook.io/datastructures-in-pytho/quick-reference/bash-commands)
+* [Python Snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-snippets)
+* [Python Module Index:](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-module-index)
+* [Useful Info](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled)
+* [Python Glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/python-glossary)
+* [index](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/untitled-1)
+* [List Of Python Cheat Sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/quick-reference/bash-commands)
 
 **Python-Docs**
 
-* [Basic Syntax](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax)
-* [Values Expressions & Statments](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments)
-* [Python Standard Library \(STDLIB\)](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)
-* [Docs](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
-  * [String-Methods](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
-* [Built In Functions](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/built-in-functions)
-* [Lists](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/lists/README)
-  * [Examples](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/lists/examples)
-* [Dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/dictionaries)
-* [Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/classes/README)
-  * [Python Objects & Classes](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/classes/python-objects-and-classes)
-  * [index](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/classes/untitled)
-* [Queue & Stacks](https://py-v2.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
+* [Basic Syntax](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/basic-syntax)
+* [Values Expressions & Statments](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/values-expressions-and-statments)
+* [Python Standard Library \(STDLIB\)](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/python-standard-library-stdlib)
+* [Docs](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/README)
+  * [String-Methods](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/untitled/string-methods)
+* [Built In Functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/built-in-functions)
+* [Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/README)
+  * [Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/lists/examples)
+* [Dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/dictionaries)
+* [Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/README)
+  * [Python Objects & Classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/python-objects-and-classes)
+  * [index](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/classes/untitled)
+* [Queue & Stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/stdlib/queue-and-stacks)
 
 **MISC**
 
-* [Unsorted Examples](https://py-v2.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
-* [Outline](https://py-v2.gitbook.io/datastructures-in-pytho/misc/outline)
-* [About Python](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/README)
-  * [Python VS JavaScript](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
-  * [Python Modules & Python Packages](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
-  * [Misc](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
-  * [Python's Default Argument Values and Lists](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
-  * [SCRAP](https://py-v2.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
+* [Unsorted Examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/unsorted-examples)
+* [Outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/outline)
+* [About Python](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/README)
+  * [Python VS JavaScript](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+  * [Python Modules & Python Packages](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled-1)
+  * [Misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/misc)
+  * [Python's Default Argument Values and Lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+  * [SCRAP](https://bgoonz42.gitbook.io/datastructures-in-pytho/misc/untitled/untitled)
 
 **Interview Prep**
 
-* [Interview Resources](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
-  * [How to Write an Effective Resume of Python Developer](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
-  * [Interview Checklist](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
-  * [150 Practice Problems & Solutions](https://py-v2.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+* [Interview Resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/README)
+  * [How to Write an Effective Resume of Python Developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+  * [Interview Checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+  * [150 Practice Problems & Solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
 
 **Installations Setup & Env**
 
-* [python-setup](https://py-v2.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
+* [python-setup](https://bgoonz42.gitbook.io/datastructures-in-pytho/installations-setup-and-env/untitled)
 
 **Aux-Exploration**
 
-* [Subject](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
-  * [List Directory Contents](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
-  * [Employee Manager](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
-  * [OS Module](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
-  * [Untitled](https://py-v2.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
+* [Subject](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/README)
+  * [List Directory Contents](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/list-directory-contents)
+  * [Employee Manager](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-5)
+  * [OS Module](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-4)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-3)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-2)
+  * [Untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/aux-exploration/subject/untitled-1)
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
 
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/outline" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/week-overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/overview" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/code-lab-notebooks" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/repl.it" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/repl.it" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled" caption="" %}
 
-{% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
+{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/utilities/untitled/untitled" caption="" %}
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
 
-[https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
+[https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
 
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
-* [https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://py-v2.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/outline)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/week-overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-3/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-2/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-7)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-8)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-4/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/overview)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/cirriculumn/untitled-1/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/code-lab-notebooks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/repl.it/trinket)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/utilities/untitled/code-lab-notebook-embeds-from-lecture)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/supplemental-practice)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/industry-standard-algorithms)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/interview-practice-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/overflow-practice-problems)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/array)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/stack)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/queue)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-tree)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/binary-search-tree/bst-insert)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-6)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-5)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-4/double-linked-list)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-3)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-2)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/practice/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-vs-javascript)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/intro-to-python-w-jupyter-notebooks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/calculating-big-o)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/python-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/code-signal-cga-sprint-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/youtube)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/resources/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/python-glossary)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/quick-reference/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/built-in-functions)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/lists)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/dictionaries)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/classes/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/stdlib/queue-and-stacks)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/outline)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-vs-javascript)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled-1)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/misc)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/pythons-default-argument-values-and-lists)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/misc/untitled/python-snippets)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/unsorted-examples)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/how-to-write-an-effective-resume-of-python-developer)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/interview-checklist)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/interview-prep/interview-resources/150-practice-problems-and-solutions)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/installations-setup-and-env/untitled)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#best-python-cheat-sheets](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#best-python-cheat-sheets)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#1-python-3-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#1-python-3-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#2-python-beginner-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#2-python-beginner-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#3-python-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#3-python-for-data-science)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#4-python-for-data-science-importing-data](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#4-python-for-data-science-importing-data)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#5-python-cheatography-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#5-python-cheatography-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#6-the-ultimative-python-cheat-sheet-course-5-x-email-series](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#6-the-ultimative-python-cheat-sheet-course-5-x-email-series)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#7-dataquest-data-science-cheat-sheet-python-basics](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#7-dataquest-data-science-cheat-sheet-python-basics)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#8-dataquest-data-science-cheat-sheet-intermediate](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#8-dataquest-data-science-cheat-sheet-intermediate)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#9-dataquest-numpy](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#9-dataquest-numpy)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#10-python-for-data-science-bokeh](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#10-python-for-data-science-bokeh)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#11-pandas-cheat-sheet-for-data-science](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#11-pandas-cheat-sheet-for-data-science)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#12-regular-expressions-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#12-regular-expressions-cheat-sheet)
+* [https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands\#13-the-worlds-most-concise-python-cheat-sheet](https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/bash-commands#13-the-worlds-most-concise-python-cheat-sheet)
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1996,5 +2008,5 @@ My Blog:
 
 ![](.gitbook/assets/map.png)
 
-##
+## 
 
