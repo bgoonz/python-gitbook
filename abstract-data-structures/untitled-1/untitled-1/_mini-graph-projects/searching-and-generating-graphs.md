@@ -59,10 +59,8 @@ Write a function within your Graph class that takes takes a starting node and a 
 
 Write a function within your Graph class that takes takes a starting node and a destination node as an argument, then performs DFS. Your function should return a valid path \(not necessarily the shortest\) from the start node to the destination node. Note that there are multiple valid paths.
 
+{% tabs %} {% tab title="util.py" %}
 
-
-{% tabs %}
-{% tab title="util.py" %}
 ```python
 class Queue:
     def __init__(self):
@@ -98,9 +96,11 @@ class Stack:
         return len(self.stack)
 
 ```
+
 {% endtab %}
 
 {% tab title="graph" %}
+
 ```python
 """
 Simple graph implementation
@@ -344,9 +344,11 @@ if __name__ == "__main__":
     print(graph.dfs(1, 6))
 
 ```
+
 {% endtab %}
 
 {% tab title="Output" %}
+
 ```
 
 {1: {2}, 2: {3, 4}, 3: {5}, 4: {6, 7}, 5: {3}, 6: {3}, 7: {1, 6}}
@@ -378,8 +380,5 @@ Starting depth first search
 [1, 2, 4, 7, 6]
 
 ```
-{% endtab %}
-{% endtabs %}
 
-
-
+{% endtab %} {% endtabs %}

@@ -1,7 +1,5 @@
 # Graph BFS
 
-
-
 ### Overview
 
 When searching a graph, one of the approaches is called _breadth first search_. This explores the graph outward in rings of ever increasing distance from the starting vertex.
@@ -18,15 +16,15 @@ The bold lines show with edges were followed. \(The thin edges were not followed
 
 ### Uses of BFS
 
-* Pathfinding, Routing
-* Find neighbor nodes in a P2P network like Bittorrent
-* Web crawlers
-* Finding people n connections away on a social site
-* Find neighboring locations on graph
-* Broadcasting in a network
-* Cycle detection in a graph
-* Finding \[Connected Components\]\([https://en.wikipedia.org/wiki/Connected\_component\_\(graph\_theory\)](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)\)
-* Solving a number of theoretical graph problems
+- Pathfinding, Routing
+- Find neighbor nodes in a P2P network like Bittorrent
+- Web crawlers
+- Finding people n connections away on a social site
+- Find neighboring locations on graph
+- Broadcasting in a network
+- Cycle detection in a graph
+- Finding \[Connected Components\]\([https://en.wikipedia.org/wiki/Connected_component\_\(graph_theory\)](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)\)
+- Solving a number of theoretical graph problems
 
 ### Coloring Vertexes
 
@@ -107,4 +105,3 @@ bfs = BreadthFirstSearch()
 bfs.bfs(node1)
 
 ```
-

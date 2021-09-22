@@ -1,229 +1,226 @@
 # Heap
 
-
-
 {% page-ref page="heap-examples.md" %}
 
-{% tabs %}
-{% tab title="Max-Heap.js" %}
+{% tabs %} {% tab title="Max-Heap.js" %}
+
 ```javascript
 class BinaryHeap {
-  constructor () {
-    this.heap = []
+  constructor() {
+    this.heap = [];
   }
 
-  insert (value) {
-    this.heap.push(value)
-    this.heapify()
+  insert(value) {
+    this.heap.push(value);
+    this.heapify();
   }
 
-  size () {
-    return this.heap.length
+  size() {
+    return this.heap.length;
   }
 
-  empty () {
-    return this.size() === 0
+  empty() {
+    return this.size() === 0;
   }
 
   // using iterative approach to reorder the heap after insertion
-  heapify () {
-    let index = this.size() - 1
+  heapify() {
+    let index = this.size() - 1;
 
     while (index > 0) {
-      const element = this.heap[index]
-      const parentIndex = Math.floor((index - 1) / 2)
-      const parent = this.heap[parentIndex]
+      const element = this.heap[index];
+      const parentIndex = Math.floor((index - 1) / 2);
+      const parent = this.heap[parentIndex];
 
-      if (parent[0] >= element[0]) break
-      this.heap[index] = parent
-      this.heap[parentIndex] = element
-      index = parentIndex
+      if (parent[0] >= element[0]) break;
+      this.heap[index] = parent;
+      this.heap[parentIndex] = element;
+      index = parentIndex;
     }
   }
 
   // Extracting the maximum element from the Heap
-  extractMax () {
-    const max = this.heap[0]
-    const tmp = this.heap.pop()
+  extractMax() {
+    const max = this.heap[0];
+    const tmp = this.heap.pop();
     if (!this.empty()) {
-      this.heap[0] = tmp
-      this.sinkDown(0)
+      this.heap[0] = tmp;
+      this.sinkDown(0);
     }
-    return max
+    return max;
   }
 
   // To restore the balance of the heap after extraction.
-  sinkDown (index) {
-    const left = 2 * index + 1
-    const right = 2 * index + 2
-    let largest = index
-    const length = this.size()
+  sinkDown(index) {
+    const left = 2 * index + 1;
+    const right = 2 * index + 2;
+    let largest = index;
+    const length = this.size();
 
     if (left < length && this.heap[left][0] > this.heap[largest][0]) {
-      largest = left
+      largest = left;
     }
     if (right < length && this.heap[right][0] > this.heap[largest][0]) {
-      largest = right
+      largest = right;
     }
     // swap
     if (largest !== index) {
-      const tmp = this.heap[largest]
-      this.heap[largest] = this.heap[index]
-      this.heap[index] = tmp
-      this.sinkDown(largest)
+      const tmp = this.heap[largest];
+      this.heap[largest] = this.heap[index];
+      this.heap[index] = tmp;
+      this.sinkDown(largest);
     }
   }
 }
 
-const maxHeap = new BinaryHeap()
-maxHeap.insert([4])
-maxHeap.insert([3])
-maxHeap.insert([6])
-maxHeap.insert([1])
-maxHeap.insert([8])
-maxHeap.insert([2])
+const maxHeap = new BinaryHeap();
+maxHeap.insert([4]);
+maxHeap.insert([3]);
+maxHeap.insert([6]);
+maxHeap.insert([1]);
+maxHeap.insert([8]);
+maxHeap.insert([2]);
 
 while (!maxHeap.empty()) {
-  const mx = maxHeap.extractMax()
-  console.log(mx)
+  const mx = maxHeap.extractMax();
+  console.log(mx);
 }
-
 ```
+
 {% endtab %}
 
 {% tab title="Max-Priority-queue.js" %}
-```javascript
 
+```javascript
 /* Minimum Priority Queue
-* It is a part of heap data structure
-* A heap is a specific tree based data structure
-* in which all the nodes of tree are in a specific order.
-* that is the children are arranged in some
-* respect of their parents, can either be greater
-* or less than the parent. This makes it a min priority queue
-* or max priority queue.
-*/
+ * It is a part of heap data structure
+ * A heap is a specific tree based data structure
+ * in which all the nodes of tree are in a specific order.
+ * that is the children are arranged in some
+ * respect of their parents, can either be greater
+ * or less than the parent. This makes it a min priority queue
+ * or max priority queue.
+ */
 
 // Functions: insert, delete, peek, isEmpty, print, heapSort, sink
 
 class MinPriorityQueue {
   // calls the constructor and initializes the capacity
-  constructor (c) {
-    this.heap = []
-    this.capacity = c
-    this.size = 0
+  constructor(c) {
+    this.heap = [];
+    this.capacity = c;
+    this.size = 0;
   }
 
   // inserts the key at the end and rearranges it
   // so that the binary heap is in appropriate order
-  insert (key) {
-    if (this.isFull()) return
-    this.heap[this.size + 1] = key
-    let k = this.size + 1
+  insert(key) {
+    if (this.isFull()) return;
+    this.heap[this.size + 1] = key;
+    let k = this.size + 1;
     while (k > 1) {
       if (this.heap[k] < this.heap[Math.floor(k / 2)]) {
-        const temp = this.heap[k]
-        this.heap[k] = this.heap[Math.floor(k / 2)]
-        this.heap[Math.floor(k / 2)] = temp
+        const temp = this.heap[k];
+        this.heap[k] = this.heap[Math.floor(k / 2)];
+        this.heap[Math.floor(k / 2)] = temp;
       }
-      k = Math.floor(k / 2)
+      k = Math.floor(k / 2);
     }
-    this.size++
+    this.size++;
   }
 
   // returns the highest priority value
-  peek () {
-    return this.heap[1]
+  peek() {
+    return this.heap[1];
   }
 
   // returns boolean value whether the heap is empty or not
-  isEmpty () {
-    return this.size === 0
+  isEmpty() {
+    return this.size === 0;
   }
 
   // returns boolean value whether the heap is full or not
-  isFull () {
-    if (this.size === this.capacity) return true
-    return false
+  isFull() {
+    if (this.size === this.capacity) return true;
+    return false;
   }
 
   // prints the heap
-  print () {
-    console.log(this.heap.slice(1))
+  print() {
+    console.log(this.heap.slice(1));
   }
 
   // heap sorting can be done by performing
   // delete function to the number of times of the size of the heap
   // it returns reverse sort because it is a min priority queue
-  heapSort () {
+  heapSort() {
     for (let i = 1; i < this.capacity; i++) {
-      this.delete()
+      this.delete();
     }
   }
 
   // this function reorders the heap after every delete function
-  sink () {
-    let k = 1
+  sink() {
+    let k = 1;
     while (2 * k <= this.size || 2 * k + 1 <= this.size) {
-      let minIndex
+      let minIndex;
       if (this.heap[2 * k] >= this.heap[k]) {
         if (2 * k + 1 <= this.size && this.heap[2 * k + 1] >= this.heap[k]) {
-          break
+          break;
         } else if (2 * k + 1 > this.size) {
-          break
+          break;
         }
       }
       if (2 * k + 1 > this.size) {
-        minIndex = this.heap[2 * k] < this.heap[k] ? 2 * k : k
+        minIndex = this.heap[2 * k] < this.heap[k] ? 2 * k : k;
       } else {
         if (
           this.heap[k] > this.heap[2 * k] ||
           this.heap[k] > this.heap[2 * k + 1]
         ) {
           minIndex =
-            this.heap[2 * k] < this.heap[2 * k + 1] ? 2 * k : 2 * k + 1
+            this.heap[2 * k] < this.heap[2 * k + 1] ? 2 * k : 2 * k + 1;
         } else {
-          minIndex = k
+          minIndex = k;
         }
       }
-      const temp = this.heap[k]
-      this.heap[k] = this.heap[minIndex]
-      this.heap[minIndex] = temp
-      k = minIndex
+      const temp = this.heap[k];
+      this.heap[k] = this.heap[minIndex];
+      this.heap[minIndex] = temp;
+      k = minIndex;
     }
   }
 
   // deletes the highest priority value from the heap
-  delete () {
-    const min = this.heap[1]
-    this.heap[1] = this.heap[this.size]
-    this.heap[this.size] = min
-    this.size--
-    this.sink()
-    return min
+  delete() {
+    const min = this.heap[1];
+    this.heap[1] = this.heap[this.size];
+    this.heap[this.size] = min;
+    this.size--;
+    this.sink();
+    return min;
   }
 }
 
 // testing
-const q = new MinPriorityQueue(8)
+const q = new MinPriorityQueue(8);
 
-q.insert(5)
-q.insert(2)
-q.insert(4)
-q.insert(1)
-q.insert(7)
-q.insert(6)
-q.insert(3)
-q.insert(8)
-q.print() // [ 1, 2, 3, 5, 7, 6, 4, 8 ]
-q.heapSort()
-q.print() // [ 8, 7, 6, 5, 4, 3, 2, 1 ]
-
+q.insert(5);
+q.insert(2);
+q.insert(4);
+q.insert(1);
+q.insert(7);
+q.insert(6);
+q.insert(3);
+q.insert(8);
+q.print(); // [ 1, 2, 3, 5, 7, 6, 4, 8 ]
+q.heapSort();
+q.print(); // [ 8, 7, 6, 5, 4, 3, 2, 1 ]
 ```
-{% endtab %}
-{% endtabs %}
 
-##  Overview of heap <a id="6d32"></a>
+{% endtab %} {% endtabs %}
+
+## Overview of heap <a id="6d32"></a>
 
 A heap is one common implementation of [a priority queue](https://en.wikipedia.org/wiki/Priority_queue). A priority queue contains items with some priority. You can always take an item out in the priority order from a priority queue. It is important to take an item out based on the priority. When you look around poster presentations at an academic conference, it is very possible you have set in order to pick some presentations. Or you will make a priority list before you go sight-seeing \(In this case, an item will be a tourist spot.\). A stack and a queue also contain items. You can take an item out from a stack if the item is the last one added to the stack. This is first in, last out \(FILO\). As for a queue, you can take an item out from the queue if this item is the first one added to the queue. This is first in, first out \(FIFO\). You can regard these as a specific type of a priority queue. This is because the priority of an inserted item in stack increases and the priority of an inserted item in a queue decreases.![](https://miro.medium.com/max/60/1*oN767xTYckRTUjTIyS3oyw.png?q=20)
 
@@ -243,10 +240,10 @@ In a min heap, when you look at the parent node and its child nodes, the parent 
 
 You can access a parent node or a child nodes in the array with indices below.
 
-* A root node｜_i_ = 1, the first item of the array
-* A parent node｜parent\(_i_\) = _i_ / 2
-* A left child node｜left\(_i_\) = 2_i_
-* A right child node｜right\(_i_\)=2_i_+1
+- A root node ｜*i* = 1, the first item of the array
+- A parent node ｜ parent\(_i_\) = _i_ / 2
+- A left child node ｜ left\(_i_\) = 2*i*
+- A right child node ｜ right\(_i_\)=2*i*+1
 
 When you look at the node of index 4, the relation of nodes in the tree corresponds to the indices of the array below.![](https://miro.medium.com/max/60/1*ysSV1xV0OMm-1amWBpFb0A.png?q=20)
 
@@ -258,14 +255,14 @@ The parent node corresponds to the item of index 2 by parent\(_i_\) = 4 / 2 = 2.
 
 You need two operations to build a heap from an arbitrary array.
 
-1. `min_heapify`｜make some node and its descendant nodes meet the heap property.
-2. `build_min_heap`｜produce a heap from an arbitrary array.
+1. `min_heapify`｜ make some node and its descendant nodes meet the heap property.
+2. `build_min_heap`｜ produce a heap from an arbitrary array.
 
-We can build a heap by applying _min\_heapify_ to each node repeatedly.
+We can build a heap by applying _min_heapify_ to each node repeatedly.
 
-### 3.1 min\_heapify <a id="ebe4"></a>
+### 3.1 min_heapify <a id="ebe4"></a>
 
-In _min\_heapify_, we exchange some nodes with its child nodes to satisfy the heap property under these two features below;
+In _min_heapify_, we exchange some nodes with its child nodes to satisfy the heap property under these two features below;
 
 1. Some node and its child nodes don’t satisfy the heap property,
 2. That child nodes and its descendant nodes satisfy the property.
@@ -282,13 +279,13 @@ However, look at the blue nodes. These nodes satisfy the heap property.![](https
 
 ![](https://miro.medium.com/max/559/1*8DJyn5AJMYp4DqWgv0dJAg.png)
 
-Here we define _min\_heapify_\(_array_, _index_\). This method takes two arguments, _array,_ and _index_. We assume this method exchange the node of _array_\[_index_\] with its child nodes to satisfy the heap property.
+Here we define _min_heapify_\(_array_, _index_\). This method takes two arguments, _array,_ and _index_. We assume this method exchange the node of _array_\[_index_\] with its child nodes to satisfy the heap property.
 
-Let’s check the way how _min\_heapify_ works by producing a heap from the tree structure above. First, we call _min\_heapify_\(_array_, 2\) to exchange the node of index 2 with the node of index 4.![](https://miro.medium.com/max/60/1*6ZsaVxXdLu0fyOz99GD1vg.png?q=20)
+Let’s check the way how _min_heapify_ works by producing a heap from the tree structure above. First, we call _min_heapify_\(_array_, 2\) to exchange the node of index 2 with the node of index 4.![](https://miro.medium.com/max/60/1*6ZsaVxXdLu0fyOz99GD1vg.png?q=20)
 
 ![](https://miro.medium.com/max/522/1*6ZsaVxXdLu0fyOz99GD1vg.png)
 
-After apply _min\_heapify_\(_array_, 2\) to the subtree, the subtree changes below and meets the heap property. This subtree colored blue.![](https://miro.medium.com/max/60/1*Pg5r3aNAcMluu2YafmcOEw.png?q=20)
+After apply _min_heapify_\(_array_, 2\) to the subtree, the subtree changes below and meets the heap property. This subtree colored blue.![](https://miro.medium.com/max/60/1*Pg5r3aNAcMluu2YafmcOEw.png?q=20)
 
 ![](https://miro.medium.com/max/530/1*Pg5r3aNAcMluu2YafmcOEw.png)
 
@@ -300,7 +297,7 @@ Get back to the tree correctly exchanged. When we look at the orange nodes, this
 
 ![](https://miro.medium.com/max/564/1*sE-XfLcquAc8u1Xzxe5PmA.png)
 
-So call _min\_heapify_\(_array_, 4\) to make the subtree meet the heap property.![](https://miro.medium.com/max/60/1*NGqt-gG64O_X1GJei_MdJQ.png?q=20)
+So call _min_heapify_\(_array_, 4\) to make the subtree meet the heap property.![](https://miro.medium.com/max/60/1*NGqt-gG64O_X1GJei_MdJQ.png?q=20)
 
 ![](https://miro.medium.com/max/532/1*NGqt-gG64O_X1GJei_MdJQ.png)
 
@@ -308,9 +305,9 @@ Now, this subtree satisfies the heap property by exchanging the node of index 4 
 
 These operations above produce the heap from the unordered tree \(the array\).
 
-### 3.2 build\_min\_heap <a id="caed"></a>
+### 3.2 build_min_heap <a id="caed"></a>
 
-The pseudo-code below stands for how _build\_min\_heap_ works.
+The pseudo-code below stands for how _build_min_heap_ works.
 
 ```python
 build_min_heap(array)
@@ -318,23 +315,23 @@ build_min_heap(array)
         do min_heapify(array, i)
 ```
 
-This function iterates the nodes except the leaf nodes with the for-loop and applies _min\_heapify_ to each node. We don’t need to apply _min\_heapify_ to the items of indices after _n_/2+1, which are all the leaf nodes. We apply _min\_heapify in_ the orange nodes below.![](https://miro.medium.com/max/60/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png?q=20)
+This function iterates the nodes except the leaf nodes with the for-loop and applies _min_heapify_ to each node. We don’t need to apply _min_heapify_ to the items of indices after _n_/2+1, which are all the leaf nodes. We apply _min_heapify in_ the orange nodes below.![](https://miro.medium.com/max/60/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png?q=20)
 
 ![](https://miro.medium.com/max/591/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png)
 
-Each node can satisfy the heap property with meeting the conditions to be able to apply _min\_heapfiy._ This is because this function iterates the nodes from the bottom \(the second last level\) to the top \(the root node level\). For instance, this function first applies _min\_heapify_ to the nodes both of index 4 and index 5 and then applying _min\_heapify_ to the node of index 2. So the node of the index and its descendent nodes satisfy the heap property when applying _min\_heapify._
+Each node can satisfy the heap property with meeting the conditions to be able to apply _min_heapfiy._ This is because this function iterates the nodes from the bottom \(the second last level\) to the top \(the root node level\). For instance, this function first applies _min_heapify_ to the nodes both of index 4 and index 5 and then applying _min_heapify_ to the node of index 2. So the node of the index and its descendent nodes satisfy the heap property when applying _min_heapify._
 
 ## 4. Time complexity <a id="afb9"></a>
 
-Let’s think about the time complexity of _build\_min\_heap._ First of all, we think the time complexity of _min\_heapify_, which is a main part of _build\_min\_heap._
+Let’s think about the time complexity of _build_min_heap._ First of all, we think the time complexity of _min_heapify_, which is a main part of _build_min_heap._
 
-_min\_heapify_ repeats the operation of exchanging the items in an array, which runs in constant time. So the time complexity of _min\_heapify_ will be in proportional to the number of repeating. In the worst case, _min\_heapify_ should repeat the operation the height of the tree times. This is because in the worst case, min\_heapify will exchange the root nodes with the most depth leaf node. Assuming _h_ as the height of the root node, the time complexity of _min\_heapify_ will take _O_\(_h_\) time.
+_min_heapify_ repeats the operation of exchanging the items in an array, which runs in constant time. So the time complexity of _min_heapify_ will be in proportional to the number of repeating. In the worst case, _min_heapify_ should repeat the operation the height of the tree times. This is because in the worst case, min_heapify will exchange the root nodes with the most depth leaf node. Assuming _h_ as the height of the root node, the time complexity of _min_heapify_ will take _O_\(_h_\) time.
 
-The time complexities of _min\_heapify_ in each depth are shown below. The number of the nodes is also showed in right.![](https://miro.medium.com/max/60/1*a-h1jgMmLuIFq_ZhuMmBnw.png?q=20)
+The time complexities of _min_heapify_ in each depth are shown below. The number of the nodes is also showed in right.![](https://miro.medium.com/max/60/1*a-h1jgMmLuIFq_ZhuMmBnw.png?q=20)
 
 ![](https://miro.medium.com/max/591/1*a-h1jgMmLuIFq_ZhuMmBnw.png)
 
-From the figure, the time complexity of _build\_min\_heap_ will be the sum of the time complexity of inner nodes. The final time complexity becomes:![](https://miro.medium.com/max/60/1*nlTVz17IMbUwcrs6SxEWrw.png?q=20)![](https://miro.medium.com/max/591/1*nlTVz17IMbUwcrs6SxEWrw.png)
+From the figure, the time complexity of _build_min_heap_ will be the sum of the time complexity of inner nodes. The final time complexity becomes:![](https://miro.medium.com/max/60/1*nlTVz17IMbUwcrs6SxEWrw.png?q=20)![](https://miro.medium.com/max/591/1*nlTVz17IMbUwcrs6SxEWrw.png)
 
 So we should know the height of the tree to get the time complexity.
 
@@ -342,11 +339,11 @@ The sum of the number of nodes in each depth will become _n_. So we will get thi
 
 The equation above stands for the geometric sequence, so we can deform it and get the height of the tree as follow:![](https://miro.medium.com/max/60/1*etWYXqoPtFIl5C7j-K_TiA.png?q=20)![](https://miro.medium.com/max/591/1*etWYXqoPtFIl5C7j-K_TiA.png)
 
-Finally, we get _O_\(_n_\) as the time complexity of _build\_min\_heap_. Also, we get _O_\(log_n_\) as the time complexity of _min\_heapify_.
+Finally, we get _O_\(_n_\) as the time complexity of _build_min_heap_. Also, we get _O_\(log*n*\) as the time complexity of _min_heapify_.
 
 ## 5. Implementation <a id="5c96"></a>
 
-Here we implement _min\_heapify_ and _build\_min\_heap_ with Python. the implementation of _min\_heapify_ will be as follow.
+Here we implement _min_heapify_ and _build_min_heap_ with Python. the implementation of _min_heapify_ will be as follow.
 
 ```python
 def min_heapify(array, i):
@@ -362,18 +359,18 @@ def min_heapify(array, i):
         min_heapify(array, smallest)
 ```
 
-First, this method computes the node of the smallest value among the node of index _i_ and its child nodes and then exchange the node of the smallest value with the node of index _i_. When the exchange happens, this method applies _min\_heapify_ to the node exchanged.
+First, this method computes the node of the smallest value among the node of index _i_ and its child nodes and then exchange the node of the smallest value with the node of index _i_. When the exchange happens, this method applies _min_heapify_ to the node exchanged.
 
 Index of a list \(an array\) in Python starts from 0, the way to access the nodes will change as follow.
 
-* The root node｜_i_ = 0
-* The parent node｜parent\(_i_\) = \(_i_-1\) / 2
-* The left child node｜left\(_i_\) = 2_i_ + 1
-* The right child node｜right\(_i_\)=2_i_+2
+- The root node ｜*i* = 0
+- The parent node ｜ parent\(_i_\) = \(_i_-1\) / 2
+- The left child node ｜ left\(_i_\) = 2*i* + 1
+- The right child node ｜ right\(_i_\)=2*i*+2
 
-The variable, _smallest_ has the index of the node of the smallest value. If the _smallest_ doesn’t equal to the _i_, which means this subtree doesn’t satisfy the heap property, this method exchanges the nodes and executes _min\_heapify_ to the node of the _smallest_.
+The variable, _smallest_ has the index of the node of the smallest value. If the _smallest_ doesn’t equal to the _i_, which means this subtree doesn’t satisfy the heap property, this method exchanges the nodes and executes _min_heapify_ to the node of the _smallest_.
 
-The implementation of _build\_min\_heap_ is almost the same as the pseudo-code.
+The implementation of _build_min_heap_ is almost the same as the pseudo-code.
 
 ```python
 def build_min_heap(array):
@@ -385,15 +382,15 @@ The for-loop differs from the pseudo-code, but the behavior is the same. This fo
 
 ## 6. Heapsort <a id="91ea"></a>
 
-Heapsort is one sort algorithm with a heap. It’s really easy to implement it with _min\_heapify_ and _build\_min\_heap._ The flow of sort will be as follow. Please note that the order of sort is ascending.
+Heapsort is one sort algorithm with a heap. It’s really easy to implement it with _min_heapify_ and _build_min_heap._ The flow of sort will be as follow. Please note that the order of sort is ascending.
 
-1. Build a heap from an arbitrary array with _build\_min\_heap._
+1. Build a heap from an arbitrary array with _build_min_heap._
 2. Swap the first item with the last item in the array.
 3. Remove the last item from the array.
-4. Run _min\_heapify_ to the first item.
+4. Run _min_heapify_ to the first item.
 5. Back to step 2.
 
-In a heap, the smallest item is the first item of an array. The array after step 3 satisfies the conditions to apply _min\_heapify_ because we remove the last item after we swap the first item with the last item. By this nature, we can sort an array by repeating steps 2 to 4.
+In a heap, the smallest item is the first item of an array. The array after step 3 satisfies the conditions to apply _min_heapify_ because we remove the last item after we swap the first item with the last item. By this nature, we can sort an array by repeating steps 2 to 4.
 
 The implementation of heapsort will become as follow.
 
@@ -407,12 +404,12 @@ def heapsort(array):
         min_heapify(array, 0)    return sorted_array
 ```
 
-The time complexity of heapsort is _O_\(_n\_log\_n_\) because in the worst case, we should repeat _min\_heapify_ the number of items in array times, which is _n_.
+The time complexity of heapsort is _O_\(_n_log_n_\) because in the worst case, we should repeat _min_heapify_ the number of items in array times, which is _n_.
 
 In [the heapq module](https://docs.python.org/3/library/heapq.html) of Python, it has already implemented some operation for a heap. I followed the method in MIT’s lecture, the implementation differs from Python’s. If you’d like to know Python’s detail implementation, please visit [the source code here](https://github.com/python/cpython/blob/master/Lib/heapq.py). For example, these methods are implemented in Python.
 
-* `heapq.heapify` \| corresponds to _build\_min\_heap_
-* `heapq.heapop` \| corresponds to swapping items, remove the last item, and _min\_heapify_ at once_._
+- `heapq.heapify` \| corresponds to _build_min_heap_
+- `heapq.heapop` \| corresponds to swapping items, remove the last item, and _min_heapify_ at once*.*
 
 By using those methods above, we can implement heapsort as follow. Please note that it differs from [the implementation of heapsort in the official documents](https://docs.python.org/3/library/heapq.html#basic-examples).
 
@@ -427,7 +424,7 @@ So that’s all for this post. Thank you for reading!
 
 ### References <a id="9803"></a>
 
-* [MIT OpenCourseWare 4. Heaps and Heap Sort](https://www.youtube.com/watch?v=B7hVxCmfPtM)
+- [MIT OpenCourseWare 4. Heaps and Heap Sort](https://www.youtube.com/watch?v=B7hVxCmfPtM)
 
 ## Implementation
 
@@ -694,4 +691,3 @@ print(sorted_list == sorted(sorted_list))
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="./" %}
-

@@ -1,42 +1,40 @@
 # Dunder Methods
 
-
-
 #### 1. Introduction <a id="1-introduction"></a>
 
 Implementing dunder methods for classes is a good form of Polymorphism. If you have ever created a class in Python and used the init function, then you have already been using dunder methods.
 
 #### 2. Table of contents <a id="2-table-of-contents"></a>
 
-* [1. Introduction](https://www.section.io/engineering-education/dunder-methods-python/#1-introduction)
-* [2. Table of Contents](https://www.section.io/engineering-education/dunder-methods-python/#2-table-of-contents)
-* [3. Prerequisites](https://www.section.io/engineering-education/dunder-methods-python/#3-prerequisites)
-* [4. Why do we need Dunder Methods?](https://www.section.io/engineering-education/dunder-methods-python/#4-why-do-we-need-dunder-methods)
-* [5. Our custom class](https://www.section.io/engineering-education/dunder-methods-python/#5-our-custom-class)
-* [6. Dunder Methods for our class](https://www.section.io/engineering-education/dunder-methods-python/#6-dunder-methods-for-our-class)
-  * [6.1. init](https://www.section.io/engineering-education/dunder-methods-python/#61-init)
-  * [6.2. str](https://www.section.io/engineering-education/dunder-methods-python/#62-str)
-  * [6.3. setitem](https://www.section.io/engineering-education/dunder-methods-python/#63-setitem)
-  * [6.4. getitem](https://www.section.io/engineering-education/dunder-methods-python/#64-getitem)
-  * [6.5. delitem](https://www.section.io/engineering-education/dunder-methods-python/#65-delitem)
-  * [6.6. len](https://www.section.io/engineering-education/dunder-methods-python/#66-len)
-  * [6.7. contains](https://www.section.io/engineering-education/dunder-methods-python/#67-contains)
-  * [6.8. Complete code](https://www.section.io/engineering-education/dunder-methods-python/#68-complete-code)
-* [7. Some more dunder methods](https://www.section.io/engineering-education/dunder-methods-python/#7-some-more-dunder-methods)
-  * [7.1. add](https://www.section.io/engineering-education/dunder-methods-python/#71-add)
-  * [7.2. iadd](https://www.section.io/engineering-education/dunder-methods-python/#72-iadd)
-  * [7.3. Other Operators](https://www.section.io/engineering-education/dunder-methods-python/#73-other-operators)
-  * [7.4. call](https://www.section.io/engineering-education/dunder-methods-python/#74-call)
-  * [7.5. Complete code](https://www.section.io/engineering-education/dunder-methods-python/#75-complete-code)
-* [8. Conclusion](https://www.section.io/engineering-education/dunder-methods-python/#8-conclusion)
+- [1. Introduction](https://www.section.io/engineering-education/dunder-methods-python/#1-introduction)
+- [2. Table of Contents](https://www.section.io/engineering-education/dunder-methods-python/#2-table-of-contents)
+- [3. Prerequisites](https://www.section.io/engineering-education/dunder-methods-python/#3-prerequisites)
+- [4. Why do we need Dunder Methods?](https://www.section.io/engineering-education/dunder-methods-python/#4-why-do-we-need-dunder-methods)
+- [5. Our custom class](https://www.section.io/engineering-education/dunder-methods-python/#5-our-custom-class)
+- [6. Dunder Methods for our class](https://www.section.io/engineering-education/dunder-methods-python/#6-dunder-methods-for-our-class)
+  - [6.1. init](https://www.section.io/engineering-education/dunder-methods-python/#61-init)
+  - [6.2. str](https://www.section.io/engineering-education/dunder-methods-python/#62-str)
+  - [6.3. setitem](https://www.section.io/engineering-education/dunder-methods-python/#63-setitem)
+  - [6.4. getitem](https://www.section.io/engineering-education/dunder-methods-python/#64-getitem)
+  - [6.5. delitem](https://www.section.io/engineering-education/dunder-methods-python/#65-delitem)
+  - [6.6. len](https://www.section.io/engineering-education/dunder-methods-python/#66-len)
+  - [6.7. contains](https://www.section.io/engineering-education/dunder-methods-python/#67-contains)
+  - [6.8. Complete code](https://www.section.io/engineering-education/dunder-methods-python/#68-complete-code)
+- [7. Some more dunder methods](https://www.section.io/engineering-education/dunder-methods-python/#7-some-more-dunder-methods)
+  - [7.1. add](https://www.section.io/engineering-education/dunder-methods-python/#71-add)
+  - [7.2. iadd](https://www.section.io/engineering-education/dunder-methods-python/#72-iadd)
+  - [7.3. Other Operators](https://www.section.io/engineering-education/dunder-methods-python/#73-other-operators)
+  - [7.4. call](https://www.section.io/engineering-education/dunder-methods-python/#74-call)
+  - [7.5. Complete code](https://www.section.io/engineering-education/dunder-methods-python/#75-complete-code)
+- [8. Conclusion](https://www.section.io/engineering-education/dunder-methods-python/#8-conclusion)
 
 #### 3. Prerequisites <a id="3-prerequisites"></a>
 
 Before we continue it will be important to have the following:
 
-* A basic understanding of Object Oriented Programming using Python.
-* Experience working with classes in Python.
-* Familiarity with built-in functions such as len, get, set, etc.
+- A basic understanding of Object Oriented Programming using Python.
+- Experience working with classes in Python.
+- Familiarity with built-in functions such as len, get, set, etc.
 
 #### 4. Why do we need Dunder methods? <a id="4-why-do-we-need-dunder-methods"></a>
 
@@ -351,14 +349,14 @@ The above method invokes the `iadd` method.
 
 **7.3. Other operators**
 
-* `__sub__(self,p2)` \( - \)
-* `__isub__(self,p2)` \( -= \)
-* `__mul__(self,p2)` \( \* \)
-* `__imul__(self,p2)` \( \*= \)
-* `__truediv__(self,p2)`\( \ \)
-* `__itruediv__(self,p2)` \( \= \)
-* `__floordiv__(self,p2)` \( \\ \)
-* `__ifloordiv__(self,p2)` \( \= \)
+- `__sub__(self,p2)` \( - \)
+- `__isub__(self,p2)` \( -= \)
+- `__mul__(self,p2)` \( \* \)
+- `__imul__(self,p2)` \( \*= \)
+- `__truediv__(self,p2)`\( \ \)
+- `__itruediv__(self,p2)` \( \= \)
+- `__floordiv__(self,p2)` \( \\ \)
+- `__ifloordiv__(self,p2)` \( \= \)
 
 **7.4. call**
 
@@ -427,4 +425,3 @@ class point:
     def __call__(self):
         print(f"Called Point {self.x},{self.y}")
 ```
-

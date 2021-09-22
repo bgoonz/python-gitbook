@@ -1,7 +1,7 @@
 # Algorithms
 
-{% tabs %}
-{% tab title="Practice-Examples" %}
+{% tabs %} {% tab title="Practice-Examples" %}
+
 ```python
 def zeros(arr, n):
     count = 0
@@ -1508,7 +1508,7 @@ if __name__ == "__main__":
 #     def itr(self):
 #         self.a=1
 
-    
+
 #     def next(self):
 #         if self.a <=5:
 #             print(self.a)
@@ -1536,7 +1536,7 @@ print(theBoard)
     (bo[8] == le and bo[5] == le and bo[2] == le) or # down the middle
     (bo[9] == le and bo[6] == le and bo[3] == le) or # down the right side
     (bo[7] == le and bo[5] == le and bo[3] == le) or # diagonal
-    (bo[9] == le and bo[5] == le and bo[1] == le)) 
+    (bo[9] == le and bo[5] == le and bo[1] == le))
 
 
     print('   |   |')
@@ -1549,7 +1549,7 @@ print(theBoard)
     print('-----------')
     print('   |   |')
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
-    print('   |   |')    
+    print('   |   |')
 import random
 
 
@@ -2075,10 +2075,9 @@ best.download(quiet=False)
 
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
+{% endtab %} {% endtabs %}

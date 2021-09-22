@@ -1,7 +1,7 @@
 # Examples \(LL\) continued
 
-{% tabs %}
-{% tab title="Python" %}
+{% tabs %} {% tab title="Python" %}
+
 ```python
 """
 You are given two non-empty linked lists representing
@@ -1052,10 +1052,9 @@ def swap_pairs(head):
 
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
+{% endtab %} {% endtabs %}

@@ -1,7 +1,7 @@
 # Examples
 
-{% tabs %}
-{% tab title="Example code" %}
+{% tabs %} {% tab title="Example code" %}
+
 ```python
 class HashTable(object):
     """
@@ -455,10 +455,9 @@ def word_pattern(pattern, str):
 
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
+{% endtab %} {% endtabs %}

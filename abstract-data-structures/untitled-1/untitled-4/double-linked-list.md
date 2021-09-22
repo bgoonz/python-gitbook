@@ -8,13 +8,13 @@ Following are some of the pros and cons of a doubly linked list:
 
 **Pros**
 
-* Unlike a single linked list, the doubly linked list can be traversed and searched in both directions. The reference to the next node helps in traversing the node in the forward direction while the references to the previous nodes allow traversal in the backward direction.
-* Basic operations such as insertion and deletion are easier to implement in the doubly linked lists since, unlike single linked lists, we do not need to traverse to the predecessor node and store its reference. Rather, in a doubly linked list the reference of the predecessor node can be retrieved from the node that we want to delete.
+- Unlike a single linked list, the doubly linked list can be traversed and searched in both directions. The reference to the next node helps in traversing the node in the forward direction while the references to the previous nodes allow traversal in the backward direction.
+- Basic operations such as insertion and deletion are easier to implement in the doubly linked lists since, unlike single linked lists, we do not need to traverse to the predecessor node and store its reference. Rather, in a doubly linked list the reference of the predecessor node can be retrieved from the node that we want to delete.
 
 **Cons**
 
-* One of the major drawbacks of the doubly linked list is that you need more memory space to store one extra reference for each node.
-* A few additional steps are required to be performed in order to perform insertion and deletion operations.
+- One of the major drawbacks of the doubly linked list is that you need more memory space to store one extra reference for each node.
+- A few additional steps are required to be performed in order to perform insertion and deletion operations.
 
 #### Implementing the Doubly Linked List with Python <a id="implementingthedoublylinkedlistwithpython"></a>
 
@@ -546,10 +546,6 @@ The doubly linked list is extremely useful specifically when you have to perform
 
 In this article, we saw how doubly linked list can be implemented with Python. We also saw different ways to perform insert and delete operations on doubly linked list. Finally we studied how to reverse a doubly linked list.
 
-
-
-
-
 ```python
 # Each ListNode holds a reference to its previous node
 # as well as its next node in the List.
@@ -748,4 +744,3 @@ ll.get_max()  # should return 11
 print(f"ll: {ll}")  # return length 4, head: 5, tail: 11
 
 ```
-

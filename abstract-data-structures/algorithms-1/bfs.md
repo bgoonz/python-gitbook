@@ -1,7 +1,7 @@
 # BFS
 
-{% tabs %}
-{% tab title="Examples" %}
+{% tabs %} {% tab title="Examples" %}
+
 ```python
 from .count_islands import *
 from .maze_search import *
@@ -91,14 +91,14 @@ If grid is
 [[1,0,1,1,1,1],
  [1,0,1,0,1,0],
  [1,0,1,0,1,1],
- [1,1,1,0,1,1]], 
+ [1,1,1,0,1,1]],
 the answer is: 14
 
 Ex 2)
 If grid is
 [[1,0,0],
  [0,1,1],
- [0,1,1]], 
+ [0,1,1]],
 the answer is: -1
 """
 
@@ -264,10 +264,9 @@ def word_range(word):
 
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
-
+{% endtab %} {% endtabs %}

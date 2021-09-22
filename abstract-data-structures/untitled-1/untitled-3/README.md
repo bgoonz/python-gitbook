@@ -2,10 +2,8 @@
 
 {% embed url="https://replit.com/@bgoonz/python-sorting\#main.py" %}
 
+{% tabs %} {% tab title="First Tab" %}
 
-
-{% tabs %}
-{% tab title="First Tab" %}
 ```python
 
 This implementation is different than the ones in the referenced books, which are different from each other.
@@ -24,9 +22,11 @@ def selection_sort_iter(seq: MutableSequence[T]) -> None:
         seq[i] = min_val
         seq[min_val_i] = val
 ```
+
 {% endtab %}
 
 {% tab title="Intro Sorting" %}
+
 ```python
 # insertion sort
 
@@ -129,9 +129,11 @@ in_sort2(my_names)
 print(my_names)
 
 ```
+
 {% endtab %}
 
 {% tab title="Quick Sort" %}
+
 ```python
 """
 - start by choosing a pivot (could be first, last, middle, random etc)
@@ -226,9 +228,11 @@ print(lst)
 print('-------------------------')
 print(slst)
 ```
+
 {% endtab %}
 
 {% tab title="Quick Sort \(In Place\)" %}
+
 ```python
 
 # Divide a problem in to subproblems (of the same type)
@@ -278,9 +282,11 @@ quick_sort(lst, 0, 9)
 print('--------------------------')
 print(lst)
 ```
+
 {% endtab %}
 
 {% tab title="Quick Sort Books" %}
+
 ```python
 from book import Book
 # Divide a problem in to subproblems (of the same type)
@@ -342,9 +348,11 @@ for b in books:
     print(b)
 
 ```
+
 {% endtab %}
 
 {% tab title="Quick Sort Copy" %}
+
 ```python
 # helper function conceptual partitioning
 def partition(data):
@@ -385,19 +393,13 @@ def quicksort(data):
 
 print(quicksort([5, 9, 3, 7, 2, 8, 1, 6]))
 ```
-{% endtab %}
-{% endtabs %}
 
-
-
-
+{% endtab %} {% endtabs %}
 
 ## JavaScript:
 
+{% tabs %} {% tab title="Bubble" %}
 
-
-{% tabs %}
-{% tab title="Bubble" %}
 ```javascript
 // Implement Bubble Sort
 
@@ -427,13 +429,14 @@ function bubbleSort(array) {
 
 let array1 = [2, -1, 4, 3, 7, 3];
 bubbleSort(array1);
-console.log(" bubbleSort(array): ", bubbleSort(array1));
+console.log(' bubbleSort(array): ', bubbleSort(array1));
 module.exports = { bubbleSort: bubbleSort, swap: swap };
-
 ```
+
 {% endtab %}
 
 {% tab title="Selection" %}
+
 ```javascript
 // Implement Selection Sort
 
@@ -464,11 +467,12 @@ module.exports = {
   selectionSort,
   swap,
 };
-
 ```
+
 {% endtab %}
 
 {% tab title="Insertion" %}
+
 ```javascript
 // Implement Insertion Sort
 
@@ -490,11 +494,12 @@ insertionSort(array);
 module.exports = {
   insertionSort,
 };
-
 ```
+
 {% endtab %}
 
 {% tab title="Merge" %}
+
 ```javascript
 // Implement Merge Sort
 
@@ -530,11 +535,12 @@ module.exports = {
   merge,
   mergeSort,
 };
-
 ```
+
 {% endtab %}
 
 {% tab title="Quick Sort" %}
+
 ```javascript
 // Implement Quick Sort
 
@@ -652,12 +658,9 @@ bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-
   9 passing (149ms)
 
 */
-
 ```
-{% endtab %}
-{% endtabs %}
 
-
+{% endtab %} {% endtabs %}
 
 ```python
 def partition(A, lo, hi):
@@ -711,13 +714,13 @@ To get a understanding about Bubble sort.
 
 ### Short description of package/script
 
-* It is a python program of Bubble sort Algorithm.
-* It is written in a way that it takes user input.
+- It is a python program of Bubble sort Algorithm.
+- It is written in a way that it takes user input.
 
 ### Workflow of the Project
 
-* First a function is written to perform Bubble sort.
-* Then outside the function user input is taken.
+- First a function is written to perform Bubble sort.
+- Then outside the function user input is taken.
 
 ### Detailed explanation of script, if needed
 
@@ -767,8 +770,6 @@ Just clone the repository .
 
 ### Output
 
-
-
 ```python
 #Link to problem:-
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
@@ -800,16 +801,6 @@ for i in range(len(arr)):
 #Time complexity - O(n^2)
 #Space complexity - O(1)
 ```
-
-
-
-
-
-
-
-
-
-
 
 Insertion Sort
 
@@ -894,9 +885,7 @@ Sorted Array is:<br>
 
 ## Divide and Conquer
 
-{% hint style="info" %}
-When would we use recursive solutions? Tree traversals and quick sort are instances where recursion creates an elegant solution that wouldn't be as possible iteratively.
-{% endhint %}
+{% hint style="info" %} When would we use recursive solutions? Tree traversals and quick sort are instances where recursion creates an elegant solution that wouldn't be as possible iteratively. {% endhint %}
 
 Divide and conquer is when we take a problem, split it into the same type of sub-problem, and run the algorithm on those sub-problems.
 
@@ -941,11 +930,7 @@ If we add a print statement into the `add_list` function:
 
 The terminal would print:
 
-> Add 1 to the sum of \[2, 3, 4\]
-> Add 2 to the sum of \[3, 4\]
-> Add 3 to the sum of \[4\]
-> Add 4 to the sum of \[\]
-> 10
+> Add 1 to the sum of \[2, 3, 4\] Add 2 to the sum of \[3, 4\] Add 3 to the sum of \[4\] Add 4 to the sum of \[\] 10
 
 This helps us understand what is happening at each recursive step.
 
@@ -975,11 +960,7 @@ This process is partitioning.
 
 Our next step is to repeat this process until we hit our base case, which is an empty list or a list with just one element. When everything is down to one element lists, then we know they are properly sorted.
 
-> 3 and 9 are our next pivots:
-> \[1\] 3 \[4\] 5 \[8, 7\] 9
-> Next, 8 is our pivot:
-> \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9
-> 1 3 4 5 7 8 9
+> 3 and 9 are our next pivots: \[1\] 3 \[4\] 5 \[8, 7\] 9 Next, 8 is our pivot: \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9 1 3 4 5 7 8 9
 
 The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O\(n\), and we have to make `log n` passes.
 
@@ -991,13 +972,7 @@ What would be a bad case for quick sort?
 
 If we look at the order of this on each loop:
 
-> \[\] 1 \[2, 3, 4, 5, 6, 7\]
-> 1 \[\] 2 \[3, 4, 5, 6, 7\]
-> 1 2 \[\] 3 \[4, 5, 6, 7\]
-> 1 2 3 \[\] 4 \[5, 6, 7\]
-> 1 2 3 4 \[\] 5 \[6, 7\]
-> 1 2 3 4 5 \[\] 6 \[7\]
-> 1 2 3 4 5 6 7
+> \[\] 1 \[2, 3, 4, 5, 6, 7\] 1 \[\] 2 \[3, 4, 5, 6, 7\] 1 2 \[\] 3 \[4, 5, 6, 7\] 1 2 3 \[\] 4 \[5, 6, 7\] 1 2 3 4 \[\] 5 \[6, 7\] 1 2 3 4 5 \[\] 6 \[7\] 1 2 3 4 5 6 7
 
 This took a full 7 passes, for 7 elements, because there was only one sorted item being added with each pass.
 
@@ -1228,6 +1203,3 @@ This helps us visualize why we go through each swapping step and how the list is
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

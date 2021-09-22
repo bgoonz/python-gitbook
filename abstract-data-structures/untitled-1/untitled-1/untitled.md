@@ -1,13 +1,11 @@
 # Randomness
 
-
-
 ## Randomness
 
 ### Objectives
 
-* Learn the difference between randomness and pseudorandomness
-* Learn how how to shuffle an array in O\(n\) time and space complexity
+- Learn the difference between randomness and pseudorandomness
+- Learn how how to shuffle an array in O\(n\) time and space complexity
 
 ### What is randomness?
 
@@ -259,4 +257,3 @@ def fisher_yates_shuffle(l):
         random_index = random.randint(i, len(l) - 1)
         l[random_index], l[i] = l[i], l[random_index]
 ```
-

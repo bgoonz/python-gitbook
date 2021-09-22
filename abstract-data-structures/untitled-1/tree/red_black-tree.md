@@ -1,4 +1,4 @@
-# Red\_Black Tree
+# Red_Black Tree
 
 ```python
 # Faster insertion and deletion than AVL, slower search
@@ -211,4 +211,3 @@ rbt.traverse()
 
 
 ```
-

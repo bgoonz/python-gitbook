@@ -28,10 +28,6 @@ islands = \[ \[0, 1, 0, 1, 0\], \[1, 1, 0, 1, 1\], \[0, 0, 1, 0, 0\], \[1, 0, 1,
 
 ## then increment a counter
 
-
-
-
-
 ```python
 # Write a function that takes a 2D binary array and
 # returns the number of 1 islands. An island consists
@@ -160,4 +156,3 @@ print(f"Island 1 - Should be 13: \t {i1}")
 print(f"Island 2 - Should be 04: \t {i2}")
 
 ```
-

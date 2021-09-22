@@ -63,8 +63,6 @@ print get_fib(0)
 
 ```
 
-
-
 {% page-ref page="../array/" %}
 
 {% page-ref page="../binary-search-tree/" %}
@@ -96,6 +94,3 @@ print get_fib(0)
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

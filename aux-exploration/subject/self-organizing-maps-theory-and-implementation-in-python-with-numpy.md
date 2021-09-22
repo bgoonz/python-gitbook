@@ -33,12 +33,12 @@ import matplotlib.pyplot as plt
 
 The basic algorithm for training an SOM is given below:
 
-* Initialize all grid weights of the SOM
-* Repeat until convergence or maximum epochs are reached
-  * Shuffle the training examples
-  * For each training instance xx
-    * Find the best matching unit BMU
-    * Update the weight vector of BMU and its neighboring cells
+- Initialize all grid weights of the SOM
+- Repeat until convergence or maximum epochs are reached
+  - Shuffle the training examples
+  - For each training instance xx
+    - Find the best matching unit BMU
+    - Update the weight vector of BMU and its neighboring cells
 
 The three steps for initialization, finding the BMU, and updating the weights are explained in the following sections. Let's begin!
 
@@ -76,11 +76,11 @@ Where Δw\(t\)ijΔwij\(t\) is the change to be added to w\(t\)ijwij\(t\). It can
 
 For this expression:
 
-* tt is the epoch number
-* \(g,h\)\(g,h\) are the coordinates of BMU
-* ηη is the learning rate
-* σtσt is the radius
-* fij\(g,h,σt\)fij\(g,h,σt\) is the neighborhood distance function
+- tt is the epoch number
+- \(g,h\)\(g,h\) are the coordinates of BMU
+- ηη is the learning rate
+- σtσt is the radius
+- fij\(g,h,σt\)fij\(g,h,σt\) is the neighborhood distance function
 
 In the following sections, we'll present the details of this weight training expression.
 
@@ -294,4 +294,3 @@ The example above shows that for radius values close to zero \(first column\), t
 In this guide, we discussed the theoretical model of an SOM and its detailed implementation. We demonstrated the SOM on RGB colors and showed how different shades of the same color organized themselves on a 2D grid.
 
 While the SOMs are no longer very popular in the machine learning community, they remain a good model for data summary and visualization.
-

@@ -1,7 +1,5 @@
 # BST Insert
 
-
-
 ```python
 class Node:
     def __init__(self, val):
@@ -72,4 +70,3 @@ pre order
 7
 5
 ```
-

@@ -14,7 +14,7 @@ def merge( arrA, arrB ):
         if len(arrA) == 0:
             merged_arr[i] = min(arrB)
             arrB.remove(min(arrB))
-        
+
         # If arrB is empty, use arrA to fill
         elif len(arrB) == 0:
             merged_arr[i] = min(arrA)
@@ -29,14 +29,14 @@ def merge( arrA, arrB ):
         elif min(arrA) >= min(arrB):
             merged_arr[i] = min(arrB)
             arrB.remove(min(arrB))
-    
+
     return merged_arr
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ):
     if len(arr) == 0 or len(arr) == 1:
         return arr
-    
+
     mid_point = round(len(arr)/2)
     arrA = merge_sort(arr[:mid_point])
     arrB = merge_sort(arr[mid_point:])
@@ -46,13 +46,13 @@ def merge_sort( arr ):
 # STRETCH: implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
     # Updating the pointers
-    # Getting past the halfway 
-    # Assign a variable to track the index of the other starting point 
+    # Getting past the halfway
+    # Assign a variable to track the index of the other starting point
     # Decrement
 
     return arr
 
-def merge_sort_in_place(arr, l, r): 
+def merge_sort_in_place(arr, l, r):
     # TO-DO
 
     return arr
@@ -96,10 +96,9 @@ def timsort( arr ):
     # Sort runs using insertion sort
     # Merge arrays using merge sort
 
-    
+
     # return insertion_sort(arr)
 
 test_sort = random.sample(range(100), 64)
 print(timsort(test_sort))
 ```
-

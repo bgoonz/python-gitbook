@@ -1,7 +1,5 @@
 # BST Explained
 
-
-
 ### What is a Binary Search Tree?
 
 Binary Search Tree is a kind of tree in which each node follows specific properties to construct a tree.
@@ -225,7 +223,7 @@ if __name__ == '__main__':
     tree.postorder()
 ```
 
- **Code**
+**Code**
 
 ```python
 class Node(object):
@@ -402,4 +400,3 @@ Inorder:
 Postorder:
 4 7 8 5 13 15 20 12 10
 ```
-

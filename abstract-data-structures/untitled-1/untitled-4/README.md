@@ -1,7 +1,7 @@
 # Linked List
 
-{% tabs %}
-{% tab title="ll.py" %}
+{% tabs %} {% tab title="ll.py" %}
+
 ```python
 # linear data structure made up of nodes and refs to the next node
 
@@ -159,10 +159,10 @@ print('n1',n1)
 
 `
 ```
+
 {% endtab %}
 
 {% tab title="Doublely-linked-list.py" %}
-
 
 ```python
 """
@@ -330,9 +330,11 @@ class DoublyLinkedList:
             current = current.next
         return max_val
 ```
+
 {% endtab %}
 
 {% tab title="DLL-test.py" %}
+
 ```python
 import unittest
 from doubly_linked_list import ListNode
@@ -470,8 +472,8 @@ class DoublyLinkedListTests(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
-{% endtab %}
-{% endtabs %}
+
+{% endtab %} {% endtabs %}
 
 A Linked List is a data structure in which the objects are arranged in a linear order. Unlike an array, however, in which the linear order is determined by the array indices, the order in a linked list is determined by a pointer in each object.
 
@@ -635,15 +637,15 @@ print(f'size: {linked_list.size_of_list()}')
 
 ## Linked List
 
-* Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.
-  * [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
-* Reverse a singly linked list. Implement it recursively and iteratively.
-* Convert a binary tree to a doubly circular linked list.
-* Implement an LRU cache with O\(1\) runtime for all its operations.
-* Check distance between values in linked list.
-* A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
-* Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
-* How can you tell if a Linked List is a Palindrome?
+- Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.
+  - [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
+- Reverse a singly linked list. Implement it recursively and iteratively.
+- Convert a binary tree to a doubly circular linked list.
+- Implement an LRU cache with O\(1\) runtime for all its operations.
+- Check distance between values in linked list.
+- A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
+- Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
+- How can you tell if a Linked List is a Palindrome?
 
 ###
 
@@ -782,8 +784,6 @@ Unlike arrays, linked lists do not have objective positions in the list. Instead
 
 The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.
 
-
-
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/5638844823633920)
@@ -794,36 +794,32 @@ You can think of linked lists like a chain; individual links only have a connect
 
 Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.
 
-
-
-
-
 **Advantages:**
 
-* Efficient insertion and deletion of new elements
-* Simpler to reorganize than arrays
-* Useful as a starting point for advanced data structures like graphs or trees
+- Efficient insertion and deletion of new elements
+- Simpler to reorganize than arrays
+- Useful as a starting point for advanced data structures like graphs or trees
 
 **Disadvantages:**
 
-* Storage of pointers with each data point increases memory usage
-* Must always traverse the linked list from Head node to find a specific element
+- Storage of pointers with each data point increases memory usage
+- Must always traverse the linked list from Head node to find a specific element
 
 **Applications:**
 
-* Building block for advanced data structures
-* Solutions that call for frequent addition and removal of data
+- Building block for advanced data structures
+- Solutions that call for frequent addition and removal of data
 
 #### Common linked list interview questions in Python
 
-* Print the middle element of a given linked list
-* Remove duplicate elements from a sorted linked list
-* Check if a singly linked list is a palindrome
-* Merge K sorted linked lists
-* Find the intersection point of two linked lists
+- Print the middle element of a given linked list
+- Remove duplicate elements from a sorted linked list
+- Check if a singly linked list is a palindrome
+- Merge K sorted linked lists
+- Find the intersection point of two linked lists
 
-{% tabs %}
-{% tab title="Implementation " %}
+{% tabs %} {% tab title="Implementation " %}
+
 ```python
 """The LinkedList code from before is provided below.
 Add three functions to the LinkedList.
@@ -935,9 +931,11 @@ print ll.get_position(2).value
 print ll.get_position(3).value
 
 ```
+
 {% endtab %}
 
 {% tab title="Simple" %}
+
 ```python
 class Node:
     def __init__(self, dataval=None):
@@ -959,9 +957,11 @@ list1.headval.nextval = e2
 e2.nextval = e3
 
 ```
+
 {% endtab %}
 
 {% tab title="Advanced" %}
+
 ```python
 from __future__ import annotations
 
@@ -1184,20 +1184,20 @@ class CircularDoublyLinkedList(BaseCircularLinkedList[T], BaseDoublyLinkedList[T
         self.tail.next, self.tail.last, self.tail = self.tail.last, self.tail.next, self.tail.next
 
 ```
-{% endtab %}
-{% endtabs %}
 
-A linked list is similar to an array, it holds values. However, links in a linked  list do not have indexes.
+{% endtab %} {% endtabs %}
 
-* This is an example of a double ended, doubly linked list.
-* Each link references the next link and the previous one.
-* A Doubly Linked List \(DLL\) contains an extra pointer, typically called previous
+A linked list is similar to an array, it holds values. However, links in a linked list do not have indexes.
 
-    pointer, together with next pointer and data which are there in singly linked list.
+- This is an example of a double ended, doubly linked list.
+- Each link references the next link and the previous one.
+- A Doubly Linked List \(DLL\) contains an extra pointer, typically called previous
 
-  * Advantages over SLL - It can be traversed in both forward and backward direction.
+  pointer, together with next pointer and data which are there in singly linked list.
 
-     Delete operation is more efficient
+  - Advantages over SLL - It can be traversed in both forward and backward direction.
+
+    Delete operation is more efficient
 
 ```python
 """Each ListNode holds a reference to its previous node
@@ -1270,10 +1270,6 @@ class DoublyLinkedList:
     pass
 
 ```
-
-
-
-
 
 Test:
 
@@ -1433,8 +1429,6 @@ if __name__ == '__main__':
   unittest.main()
 ```
 
-
-
 {% page-ref page="../array/" %}
 
 {% page-ref page="../binary-search-tree/" %}
@@ -1466,6 +1460,3 @@ if __name__ == '__main__':
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

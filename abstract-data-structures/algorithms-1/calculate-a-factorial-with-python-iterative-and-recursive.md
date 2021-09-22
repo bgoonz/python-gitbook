@@ -123,11 +123,11 @@ Recursive steps - as the name implies- are the recursive part of the function, w
 
 Consider the recurring part of the factorials:
 
-* **5!** is `5 * 4 * 3 * 2 * 1`.
+- **5!** is `5 * 4 * 3 * 2 * 1`.
 
 But we also know that:
 
-* `4 * 3 * 2 * 1` _is_ **4!**.
+- `4 * 3 * 2 * 1` _is_ **4!**.
 
 In other words **5!** is `5 * 4!`, and **4!** is `4 * 3!` and so on.
 
@@ -178,4 +178,3 @@ Following the same pattern to upwards, it returns each function result, multiply
 Also removing the function from the call stack one by one, up until the final result of the `n * (n-1)` is returned.
 
 This is generally how recursive functions work. Some more complicated problems may require deeper recursions with more than one base case or more than one recursive step. But for now, this simple recursion is good enough to solve our factorial problem!
-

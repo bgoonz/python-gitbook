@@ -1,7 +1,7 @@
 # DFS
 
-{% tabs %}
-{% tab title="First Tab" %}
+{% tabs %} {% tab title="First Tab" %}
+
 ```python
 from .all_factors import *
 from .count_islands import *
@@ -443,12 +443,12 @@ def dfs(rooms, i, j, depth):
 
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
+{% endtab %} {% endtabs %}
 
 #### Introduction <a id="introduction"></a>
 
@@ -561,18 +561,18 @@ print(traversal_path)
 
 The steps our algorithm will take are as follows:
 
-* Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it's not, continue and traverse it's neighbours \(`1` and `2`\).
-* Is neighbour `1` visited? - No. Then, the algorithm calls the function recursively for that node.
-  * Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it's neighbours \(`0` and `3`\).
-  * Is neighbour `0` visited? - Yes, move onto the next one.
-  * Is neighbour `3` visited? - No, call the function recursively for this node.
-    * Recursive call for node `3`: Add node `3` to the traversal path and mark it as visited. Is `3` equal to our target node `3`? - Yes, target node has been found, return the traversal path.
+- Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it's not, continue and traverse it's neighbours \(`1` and `2`\).
+- Is neighbour `1` visited? - No. Then, the algorithm calls the function recursively for that node.
+  - Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it's neighbours \(`0` and `3`\).
+  - Is neighbour `0` visited? - Yes, move onto the next one.
+  - Is neighbour `3` visited? - No, call the function recursively for this node.
+    - Recursive call for node `3`: Add node `3` to the traversal path and mark it as visited. Is `3` equal to our target node `3`? - Yes, target node has been found, return the traversal path.
 
-| Current Node | Path | Visited |
-| :--- | :--- | :--- |
-| `0` | \[`0`\] | {`0`} |
-| `1` | \[`0`, `1`\] | {`0`, `1`} |
-| `3` | \[`0`, `1`, `3`\] | {`0`, `1`, `3`} |
+| Current Node | Path              | Visited         |
+| :----------- | :---------------- | :-------------- |
+| `0`          | \[`0`\]           | {`0`}           |
+| `1`          | \[`0`, `1`\]      | {`0`, `1`}      |
+| `3`          | \[`0`, `1`, `3`\] | {`0`, `1`, `3`} |
 
 The algorithm stops and our program prints out the resulting traversal path from node `0` to node `3`:
 
@@ -595,4 +595,3 @@ For example in this graph, if we were to start DFS from node `0` to node `4`, th
 #### Conclusion <a id="conclusion"></a>
 
 In this article we've explained the theory behind the Depth-First Search algorithm. We've depicted the widely-used recursive Python implementation, and went over the borderline cases for which the algorithm will not work properly.
-

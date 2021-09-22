@@ -1,18 +1,14 @@
 ---
 description: >-
-  A Binary Tree is a non-linear data structure that is used for searching and
-  data organization. A binary tree is comprised of nodes. Each node being a data
-  component, one a left child and the other the
+  A Binary Tree is a non-linear data structure that is used for searching and data organization. A binary tree is comprised of nodes. Each node being a data component, one a left child and the other the
 ---
 
 # Binary Tree Explained
 
-
-
 A Binary Tree is a non-linear data structure that is used for searching and data organization. A binary tree is comprised of nodes. Each node being a data component, one a left child and the other the right child. Let us dive into the concepts related to trees and implement them into the Python programming language.
 
-{% tabs %}
-{% tab title="Sample B-Tree-code.py" %}
+{% tabs %} {% tab title="Sample B-Tree-code.py" %}
+
 ```python
 class Node:
     def __init__(self, data):
@@ -95,50 +91,49 @@ print("\n")
 bT.printTree()
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
-{% endtab %}
-{% endtabs %}
+{% endtab %} {% endtabs %}
 
 _Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. \(links are given above\)_
 
 #### Table of Contents <a id="table-of-contents"></a>
 
-* [Binary Trees: Introduction](https://www.section.io/engineering-education/binary-tree-data-structure-python/#binary-trees-introduction)
-* [Applications of Binary Trees](https://www.section.io/engineering-education/binary-tree-data-structure-python/#applications-of-binary-trees)
-* [Implementing a Binary Tree](https://www.section.io/engineering-education/binary-tree-data-structure-python/#implementing-a-binary-tree)
-* [Practice Binary Trees](https://www.section.io/engineering-education/binary-tree-data-structure-python/#practice-binary-trees)
-* [Conclusion](https://www.section.io/engineering-education/binary-tree-data-structure-python/#conclusion)
+- [Binary Trees: Introduction](https://www.section.io/engineering-education/binary-tree-data-structure-python/#binary-trees-introduction)
+- [Applications of Binary Trees](https://www.section.io/engineering-education/binary-tree-data-structure-python/#applications-of-binary-trees)
+- [Implementing a Binary Tree](https://www.section.io/engineering-education/binary-tree-data-structure-python/#implementing-a-binary-tree)
+- [Practice Binary Trees](https://www.section.io/engineering-education/binary-tree-data-structure-python/#practice-binary-trees)
+- [Conclusion](https://www.section.io/engineering-education/binary-tree-data-structure-python/#conclusion)
 
 #### Binary Trees: Introduction <a id="binary-trees-introduction"></a>
 
-![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png)
-_Figure: Binary Trees,_ [_Image Source_](https://www.studytonight.com/data-structures/introduction-to-binary-trees)
+![Binary Tree Diagram](https://www.section.io/engineering-education/binary-tree-data-structure-python/binarytree.png) _Figure: Binary Trees,_ [_Image Source_](https://www.studytonight.com/data-structures/introduction-to-binary-trees)
 
 A binary tree **node** consists of the following components:
 
-* Data
-* Pointer to Left Child
-* Pointer to Right Child
+- Data
+- Pointer to Left Child
+- Pointer to Right Child
 
 Below are some key terminologies related to a binary tree.
 
-* **Node** – The most elementary unit of a binary tree.
-* **Root** – The root of a binary is the topmost element. There is only one root in a binary tree.
-* **Leaf** – The leaves of a binary tree are the nodes which have no children.
-* **Level** – The level is the generation of the respective node. The root has level 0, the children of the root node is at level 1, the grandchildren of the root node is at level 2 and so on.
-* **Parent** – The parent of a node is the node that is one level upward of the node.
-* **Child** – The children of a node are the nodes that are one level downward of the node.
+- **Node** – The most elementary unit of a binary tree.
+- **Root** – The root of a binary is the topmost element. There is only one root in a binary tree.
+- **Leaf** – The leaves of a binary tree are the nodes which have no children.
+- **Level** – The level is the generation of the respective node. The root has level 0, the children of the root node is at level 1, the grandchildren of the root node is at level 2 and so on.
+- **Parent** – The parent of a node is the node that is one level upward of the node.
+- **Child** – The children of a node are the nodes that are one level downward of the node.
 
 #### Applications of Binary Trees <a id="applications-of-binary-trees"></a>
 
 A binary tree is a hierarchical data structure, a file system that is organized in the form of a tree. Trees can be used for efficient searching, when the elements are organized with some order. Some examples include:
 
-* The HTML/XML [Document Object Model](https://www.section.io/document-object-model/) is organized in the form of a tree.
-* Abstract Syntax Trees and Parse Trees are constructed by a compiler as a part of compilation.
-* Trees are also used to efficiently index databases.
+- The HTML/XML [Document Object Model](https://www.section.io/document-object-model/) is organized in the form of a tree.
+- Abstract Syntax Trees and Parse Trees are constructed by a compiler as a part of compilation.
+- Trees are also used to efficiently index databases.
 
 #### Implementing a Binary Tree <a id="implementing-a-binary-tree"></a>
 
@@ -268,8 +263,7 @@ def postorder(node):
 
 Once you have understood the core concepts of a binary tree, practice the problem sets given below to strengthen and test your knowledge on trees.
 
-* Flatten Binary Tree to Linked List - [LeetCode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
-* Sum Root to Leaf Numbers - [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
-* Symmetric Tree - [LeetCode](https://leetcode.com/problems/symmetric-tree/)
-* Binary Trees - [Carnegie Mellon University](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html)
-
+- Flatten Binary Tree to Linked List - [LeetCode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)
+- Sum Root to Leaf Numbers - [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+- Symmetric Tree - [LeetCode](https://leetcode.com/problems/symmetric-tree/)
+- Binary Trees - [Carnegie Mellon University](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html)

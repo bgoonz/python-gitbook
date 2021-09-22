@@ -135,7 +135,7 @@ if __name__ == '__main__':
 
 #### The implementation of merge sort is the following, and is the easiest to explain using animations as example:
 
-![carbon \(33\).png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496599593-Z7XPJJG6QL4M54YU3LQV/carbon+%2833%29.png?format=750w)
+![carbon (33).png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496599593-Z7XPJJG6QL4M54YU3LQV/carbon+%2833%29.png?format=750w)
 
 ![Screen Shot 2018-12-22 at 17.33.52.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545496455849-G3GAA1EB8Z8Q5HF53RIG/Screen+Shot+2018-12-22+at+17.33.52.png?format=300w)
 
@@ -161,7 +161,7 @@ if __name__ == '__main__':
 
 #### **left** is **\[6\]**, so **left\[0\]** is **6**, and **right** is **\[4\]**, so **right\[0\]** is **4**! This means that the else-block gets run, and we push right\[0\] to the results array. The results array is now \[4\]. We also increment the **rightIndex** from 0 to 1. This means that now,
 
-#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned.  This means that the **mergeSort\(left\)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort\(right\).**
+#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned. This means that the **mergeSort\(left\)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort\(right\).**
 
 ![Screen Shot 2018-12-22 at 17.44.10.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497080696-2DFK2SPSB6XRLSTD5UOX/Screen+Shot+2018-12-22+at+17.44.10.png?format=300w)
 
@@ -190,4 +190,3 @@ if __name__ == '__main__':
 #### **Best**, **average and worst**: Each partitioning takes **O\(n\)** operations, and every partitioning splits the array **O\(log\(n\)\)**. This results in **O\(n log\(n\)\)**.
 
 #### **Worst space**: We save three variables for each element in the array.
-

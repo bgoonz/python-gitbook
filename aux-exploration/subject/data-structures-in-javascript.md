@@ -108,8 +108,8 @@ Let `i + j = k`, if we find `nums2[j-1] <= nums1[i] <= nums2[j]` or `nums1[i-1] 
 
 Otherwise, if `nums1[i] <= nums2[j]` then we know `nums1[i] < nums2[j-1]` \(because we did not find `k`\).
 
-* There are `i` items before `nums1[i]`, and `j-1` items brefor `nums2[j-1]`, which means `nums1[0...i]` are before `nums3[i+j-1]`. So we now know `nums1[0...i] < nums3[k]`. They can be safely discarded.
-* We Also have `nums1[i] < nums2[j]`, which means `nums2[j...n)` are after `nums3[i+j]`. So `nums2[j...n) > nums3[k]`.
+- There are `i` items before `nums1[i]`, and `j-1` items brefor `nums2[j-1]`, which means `nums1[0...i]` are before `nums3[i+j-1]`. So we now know `nums1[0...i] < nums3[k]`. They can be safely discarded.
+- We Also have `nums1[i] < nums2[j]`, which means `nums2[j...n)` are after `nums3[i+j]`. So `nums2[j...n) > nums3[k]`.
 
 Same goes `nums1[i-1] <= nums2[j] <= nums1[i]`.
 
@@ -321,8 +321,7 @@ Input: 120
 Output: 21
 ```
 
-**Note:**
-Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231,  231 − 1\]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
+**Note:** Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
 #### Solution: <a id="solution-3"></a>
 
@@ -381,8 +380,7 @@ If no valid conversion could be performed, a zero value is returned.
 
 **Note:**
 
-Only the space character `' '` is considered as whitespace character.
-Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231,  231 − 1\]. If the numerical value is out of the range of representable values, INT\_MAX \(231 − 1\) or INT\_MIN \(−231\) is returned.
+Only the space character `' '` is considered as whitespace character. Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. If the numerical value is out of the range of representable values, INT_MAX \(231 − 1\) or INT_MIN \(−231\) is returned.
 
 **Example 1:**
 
@@ -615,8 +613,7 @@ The matching should cover the **entire** input string \(not partial\).
 
 **Note:**
 
-`s` could be empty and contains only lowercase letters `a-z`.
-`p` could be empty and contains only lowercase letters `a-z`, and characters like `.` or `*`.
+`s` could be empty and contains only lowercase letters `a-z`. `p` could be empty and contains only lowercase letters `a-z`, and characters like `.` or `*`.
 
 **Example 1:**
 
@@ -816,9 +813,9 @@ For example, two is written as `II` in Roman numeral, just two one's added toget
 
 Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as `IX`. There are six instances where subtraction is used:
 
-* `I` can be placed before `V` \(5\) and `X` \(10\) to make 4 and 9.
-* `X` can be placed before `L` \(50\) and `C` \(100\) to make 40 and 90.
-* `C` can be placed before `D` \(500\) and `M` \(1000\) to make 400 and 900.
+- `I` can be placed before `V` \(5\) and `X` \(10\) to make 4 and 9.
+- `X` can be placed before `L` \(50\) and `C` \(100\) to make 40 and 90.
+- `C` can be placed before `D` \(500\) and `M` \(1000\) to make 400 and 900.
 
 Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
@@ -910,9 +907,9 @@ For example, two is written as `II` in Roman numeral, just two one's added toget
 
 Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as `IX`. There are six instances where subtraction is used:
 
-* `I` can be placed before `V` \(5\) and `X` \(10\) to make 4 and 9.
-* `X` can be placed before `L` \(50\) and `C` \(100\) to make 40 and 90.
-* `C` can be placed before `D` \(500\) and `M` \(1000\) to make 400 and 900.
+- `I` can be placed before `V` \(5\) and `X` \(10\) to make 4 and 9.
+- `X` can be placed before `L` \(50\) and `C` \(100\) to make 40 and 90.
+- `C` can be placed before `D` \(500\) and `M` \(1000\) to make 400 and 900.
 
 Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
 
@@ -1121,8 +1118,8 @@ From i = `0` to `len(sorted) - 2`, pick `sorted[i]` as the first number of a pos
 
 Let `l = i + 1`, `r = len(sorted) - 1`, we want to narrow them down to enumerate all possible combinations.
 
-* `l++` if `sorted[i] + sorted[l] + sorted[r] > 0`.
-* `r--` if `sorted[i] + sorted[l] + sorted[r] < 0`.
+- `l++` if `sorted[i] + sorted[l] + sorted[r] > 0`.
+- `r--` if `sorted[i] + sorted[l] + sorted[r] < 0`.
 
 Skip any duplicate number as we iterate to avoid duplicate triplets.
 
@@ -1438,9 +1435,9 @@ Set a pointer `p1` for iterating, and `p2` which is `n` nodes behind, pointing a
 
 Boundaries that should be awared of:
 
-* `p2` could be one node before `head`, which means the `head` should be removed.
-* `p2` could be larger than the length of the list \(Though the description says `n` will always be valid, we take care of it anyway\).
-* It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
+- `p2` could be one node before `head`, which means the `head` should be removed.
+- `p2` could be larger than the length of the list \(Though the description says `n` will always be valid, we take care of it anyway\).
+- It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
 ```python
 /**
@@ -1840,8 +1837,8 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 
 **Note:**
 
-* Your algorithm should use only constant extra space.
-* You may **not** modify the values in the list's nodes, only nodes itself may be changed.
+- Your algorithm should use only constant extra space.
+- You may **not** modify the values in the list's nodes, only nodes itself may be changed.
 
 #### Solution: <a id="solution-20"></a>
 
@@ -1898,8 +1895,8 @@ For _k_ = 3, you should return: `3->2->1->4->5`
 
 **Note:**
 
-* Only constant extra memory is allowed.
-* You may not alter the values in the list's nodes, only nodes itself may be changed.
+- Only constant extra memory is allowed.
+- You may not alter the values in the list's nodes, only nodes itself may be changed.
 
 #### Solution: <a id="solution-21"></a>
 
@@ -2134,9 +2131,9 @@ Output: -2
 
 **Note:**
 
-* Both dividend and divisor will be 32-bit signed integers.
-* The divisor will never be 0.
-* Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231,  231 − 1\]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
+- Both dividend and divisor will be 32-bit signed integers.
+- The divisor will never be 0.
+- Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
 
 #### Solution: <a id="solution-24"></a>
 
@@ -2197,9 +2194,7 @@ The replacement must be **in-place** and use only constant extra memory.
 
 Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
 
-`1,2,3` → `1,3,2`
-`3,2,1` → `1,2,3`
-`1,1,5` → `1,5,1`
+`1,2,3` → `1,3,2` `3,2,1` → `1,2,3` `1,1,5` → `1,5,1`
 
 #### Solution: <a id="solution-25"></a>
 
@@ -2292,8 +2287,8 @@ But take a closer look and we realize that only one of the two halves needs to b
 
 Whenever we choose a pivot, it must be in one of the two sorted parts of the rotated array.
 
-* If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
-* Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
+- If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
+- Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
 ```python
 /**
@@ -2560,10 +2555,10 @@ Explanation: Same as Example 1, except with the 5 in the top left corner being
 
 **Note:**
 
-* A Sudoku board \(partially filled\) could be valid but is not necessarily solvable.
-* Only the filled cells need to be validated according to the mentioned rules.
-* The given board contain only digits `1-9` and the character `'.'`.
-* The given board size is always `9x9`.
+- A Sudoku board \(partially filled\) could be valid but is not necessarily solvable.
+- Only the filled cells need to be validated according to the mentioned rules.
+- The given board contain only digits `1-9` and the character `'.'`.
+- The given board size is always `9x9`.
 
 #### Solution: <a id="solution-29"></a>
 
@@ -2625,17 +2620,15 @@ A sudoku solution must satisfy **all of the following rules**:
 
 Empty cells are indicated by the character `'.'`.
 
-![250px-Sudoku-by-L2G-20050714.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714.svg.png)
-A sudoku puzzle...
+![250px-Sudoku-by-L2G-20050714.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714.svg.png) A sudoku puzzle...
 
-![250px-Sudoku-by-L2G-20050714\_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png)
-...and its solution numbers marked in red.
+![250px-Sudoku-by-L2G-20050714_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png) ...and its solution numbers marked in red.
 
 **Note:**
 
-* The given board contain only digits `1-9` and the character `'.'`.
-* You may assume that the given Sudoku puzzle will have a single unique solution.
-* The given board size is always `9x9`.
+- The given board contain only digits `1-9` and the character `'.'`.
+- You may assume that the given Sudoku puzzle will have a single unique solution.
+- The given board size is always `9x9`.
 
 #### Solution: <a id="solution-30"></a>
 
@@ -2726,9 +2719,7 @@ The count-and-say sequence is the sequence of integers with the first five terms
 5.     111221
 ```
 
-`1` is read off as `"one 1"` or `11`.
-`11` is read off as `"two 1s"` or `21`.
-`21` is read off as `"one 2`, then `one 1"` or `1211`.
+`1` is read off as `"one 1"` or `11`. `11` is read off as `"two 1s"` or `21`. `21` is read off as `"one 2`, then `one 1"` or `1211`.
 
 Given an integer n, generate the nth term of the count-and-say sequence.
 
@@ -2813,8 +2804,8 @@ The **same** repeated number may be chosen from `candidates` unlimited number of
 
 **Note:**
 
-* All numbers \(including `target`\) will be positive integers.
-* The solution set must not contain duplicate combinations.
+- All numbers \(including `target`\) will be positive integers.
+- The solution set must not contain duplicate combinations.
 
 **Example 1:**
 
@@ -2890,8 +2881,8 @@ Each number in `candidates` may only be used **once** in the combination.
 
 **Note:**
 
-* All numbers \(including `target`\) will be positive integers.
-* The solution set must not contain duplicate combinations.
+- All numbers \(including `target`\) will be positive integers.
+- The solution set must not contain duplicate combinations.
 
 **Example 1:**
 
@@ -3051,8 +3042,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given _n_ non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-![rainwatertrap.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/rainwatertrap.png)
-The above elevation map is represented by array \[0,1,0,2,1,0,1,3,2,1,2,1\]. In this case, 6 units of rain water \(blue section\) are being trapped. **Thanks Marcos** for contributing this image!
+![rainwatertrap.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/rainwatertrap.png) The above elevation map is represented by array \[0,1,0,2,1,0,1,3,2,1,2,1\]. In this case, 6 units of rain water \(blue section\) are being trapped. **Thanks Marcos** for contributing this image!
 
 **Example:**
 
@@ -3443,8 +3433,8 @@ Output:
 
 **Note:**
 
-* All inputs will be in lowercase.
-* The order of your output does not matter.
+- All inputs will be in lowercase.
+- The order of your output does not matter.
 
 #### Solution: <a id="solution-41"></a>
 
@@ -3530,8 +3520,8 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 **Note:**
 
-* -100.0 &lt; _x_ &lt; 100.0
-* _n_ is a 32-bit signed integer, within the range \[−231, 231 − 1\]
+- -100.0 &lt; _x_ &lt; 100.0
+- _n_ is a 32-bit signed integer, within the range \[−231, 231 − 1\]
 
 #### Solution: <a id="solution-42"></a>
 
@@ -3542,8 +3532,8 @@ x^n = x^((n-1)/2) * x^((n-1)/2) * x, if n is odd
 
 Corner cases:
 
-* n == 0
-* n &lt; 0
+- n == 0
+- n &lt; 0
 
 Note here we can not use any bitwise operator, `n = -2^31` might overflow.
 
@@ -3574,7 +3564,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-43"></a>
 
-The _n_-queens puzzle is the problem of placing _n_ queens on an _n_×_n_ chessboard such that no two queens attack each other.
+The _n_-queens puzzle is the problem of placing _n_ queens on an *n*×*n* chessboard such that no two queens attack each other.
 
 ![8-queens.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/8-queens.png)
 
@@ -3726,7 +3716,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-44"></a>
 
-The _n_-queens puzzle is the problem of placing _n_ queens on an _n_×_n_ chessboard such that no two queens attack each other.
+The _n_-queens puzzle is the problem of placing _n_ queens on an *n*×*n* chessboard such that no two queens attack each other.
 
 ![8-queens.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/8-queens.png)
 
@@ -4238,7 +4228,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-51"></a>
 
-Given a positive integer _n_, generate a square matrix filled with elements from 1 to _n_2 in spiral order.
+Given a positive integer _n_, generate a square matrix filled with elements from 1 to \_n_2 in spiral order.
 
 **Example:**
 
@@ -4303,12 +4293,12 @@ By listing and labeling all of the permutations in order, we get the following s
 5. `"312"`
 6. `"321"`
 
-Given _n_ and _k_, return the _k_th permutation sequence.
+Given _n_ and _k_, return the \_k_th permutation sequence.
 
 **Note:**
 
-* Given _n_ will be between 1 and 9 inclusive.
-* Given _k_ will be between 1 and _n_! inclusive.
+- Given _n_ will be between 1 and 9 inclusive.
+- Given _k_ will be between 1 and _n_! inclusive.
 
 **Example 1:**
 
@@ -4464,7 +4454,7 @@ The robot can only move either down or right at any point in time. The robot is 
 
 How many possible unique paths are there?
 
-![robot\_maze.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/robot_maze.png)
+![robot_maze.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/robot_maze.png)
 
 Above is a 7 x 3 grid. How many possible unique paths are there?
 
@@ -4592,17 +4582,11 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Validate if a given string is numeric.
 
-Some examples:
-`"0"` =&gt; `true`
-`" 0.1 "` =&gt; `true`
-`"abc"` =&gt; `false`
-`"1 a"` =&gt; `false`
-`"2e10"` =&gt; `true`
+Some examples: `"0"` =&gt; `true` `" 0.1 "` =&gt; `true` `"abc"` =&gt; `false` `"1 a"` =&gt; `false` `"2e10"` =&gt; `true`
 
 **Note:** It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
-**Update \(2015-02-10\):**
-The signature of the `C++` function had been updated. If you still see your function signature accepts a `const char *` argument, please click the reload button to reset your code definition.
+**Update \(2015-02-10\):** The signature of the `C++` function had been updated. If you still see your function signature accepts a `const char *` argument, please click the reload button to reset your code definition.
 
 #### Solution: <a id="solution-56"></a>
 
@@ -4610,8 +4594,8 @@ JavaScript specific solutions:
 
 **ONE**
 
-* `Math.abs` will first convert the argument to number.
-* `Math.abs(' ') === 0`.
+- `Math.abs` will first convert the argument to number.
+- `Math.abs(' ') === 0`.
 
 ```python
 /**
@@ -4625,8 +4609,8 @@ let isNumber = function(s) {
 
 **TWO**
 
-* `isNaN` will first convert the argument to number.
-* `isNaN(' ') === false`.
+- `isNaN` will first convert the argument to number.
+- `isNaN(' ') === false`.
 
 ```python
 /**
@@ -4879,9 +4863,9 @@ For the last line of text, it should be left justified and no **extra** space is
 
 **Note:**
 
-* A word is defined as a character sequence consisting of non-space characters only.
-* Each word's length is guaranteed to be greater than 0 and not exceed _maxWidth_.
-* The input array `words` contains at least one word.
+- A word is defined as a character sequence consisting of non-space characters only.
+- Each word's length is guaranteed to be greater than 0 and not exceed _maxWidth_.
+- The input array `words` contains at least one word.
 
 **Example 1:**
 
@@ -4934,11 +4918,11 @@ Output:
 
 #### Solution: <a id="solution-58"></a>
 
-* Count the current line width \(plus 1 space between each two words\).
-* When a line is full:
-  * If there is only one word, pad spaces at the end.
-  * Otherwise calculate the gap length using `Math.ceil`.
-* Handle the last line.
+- Count the current line width \(plus 1 space between each two words\).
+- When a line is full:
+  - If there is only one word, pad spaces at the end.
+  - Otherwise calculate the gap length using `Math.ceil`.
+- Handle the last line.
 
 ```python
 /**
@@ -5053,14 +5037,12 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given an absolute path for a file \(Unix-style\), simplify it.
 
-For example,
-**path** = `"/home/"`, =&gt; `"/home"`
-**path** = `"/a/./b/../../c/"`, =&gt; `"/c"`
+For example, **path** = `"/home/"`, =&gt; `"/home"` **path** = `"/a/./b/../../c/"`, =&gt; `"/c"`
 
 **Corner Cases:**
 
-* Did you consider the case where **path** = `"/../"`? In this case, you should return `"/"`.
-* Another corner case is the path might contain multiple slashes `'/'` together, such as `"/home//foo/"`. In this case, you should ignore redundant slashes and return `"/home/foo"`.
+- Did you consider the case where **path** = `"/../"`? In this case, you should return `"/"`.
+- Another corner case is the path might contain multiple slashes `'/'` together, such as `"/home//foo/"`. In this case, you should ignore redundant slashes and return `"/home/foo"`.
 
 #### Solution: <a id="solution-60"></a>
 
@@ -5264,15 +5246,15 @@ Output:
 
 **Follow up:**
 
-* A straight forward solution using O\(_m\*\*n_\) space is probably a bad idea.
-* A simple improvement uses O\(_m_ + _n_\) space, but still not the best solution.
-* Could you devise a constant space solution?
+- A straight forward solution using O\(_m\*\*n_\) space is probably a bad idea.
+- A simple improvement uses O\(_m_ + _n_\) space, but still not the best solution.
+- Could you devise a constant space solution?
 
 #### Solution: <a id="solution-62"></a>
 
-* O\(_m\*\*n_\) space solution: Copy a new matrix.
-* O\(_m_ + _n_\) space solution: Use extra arrays to store rows and columns that need to be set 0.
-* Constant space solutions:
+- O\(_m\*\*n_\) space solution: Copy a new matrix.
+- O\(_m_ + _n_\) space solution: Use extra arrays to store rows and columns that need to be set 0.
+- Constant space solutions:
 
 **ONE**
 
@@ -5390,8 +5372,8 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Write an efficient algorithm that searches for a value in an _m_ x _n_ matrix. This matrix has the following properties:
 
-* Integers in each row are sorted from left to right.
-* The first integer of each row is greater than the last integer of the previous row.
+- Integers in each row are sorted from left to right.
+- The first integer of each row is greater than the last integer of the previous row.
 
 **Example 1:**
 
@@ -5456,7 +5438,7 @@ let searchMatrix = function(matrix, target) {
 
 **TWO**
 
-Binary search. O\(log_n_\).
+Binary search. O\(log*n*\).
 
 View the matrix as an sorted array that is cut into `n` slices.
 
@@ -5515,8 +5497,8 @@ Output: [0,0,1,1,2,2]
 
 **Follow up:**
 
-* A rather straight forward solution is a two-pass algorithm using counting sort. First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's.
-* Could you come up with a one-pass algorithm using only constant space?
+- A rather straight forward solution is a two-pass algorithm using counting sort. First, iterate the array counting number of 0's, 1's, and 2's, then overwrite array with total number of 0's, then 1's and followed by 2's.
+- Could you come up with a one-pass algorithm using only constant space?
 
 #### Solution: <a id="solution-64"></a>
 
@@ -5877,8 +5859,8 @@ Output: false
 
 **Follow up:**
 
-* This is a follow up problem to [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/), where `nums` may contain duplicates.
-* Would this affect the run-time complexity? How and why?
+- This is a follow up problem to [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/), where `nums` may contain duplicates.
+- Would this affect the run-time complexity? How and why?
 
 #### Solution: <a id="solution-69"></a>
 
@@ -6097,7 +6079,7 @@ Given _n_ non-negative integers representing the histogram's bar height where th
 
 Above is a histogram where width of each bar is 1, given height = `[2,1,5,6,2,3]`.
 
-![histogram\_area.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/histogram_area.png)
+![histogram_area.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/histogram_area.png)
 
 The largest rectangle is shown in the shaded area, which has area = `10` unit.
 
@@ -6116,15 +6098,15 @@ For a bar `b` whose height is `h`, find the closest bar `b1` on the left that is
 
 Notice that if we just loop the bars from left to right, `b1` and `b2` of each bar may overlap.
 
-| index | height | width | area |
-| :--- | :--- | :--- | :--- |
-| `i` | `heights[i]` | `i2 - i1 - 1` | `height * width` |
-| 0 | 2 | 1 - -1 - 1 | 2 |
-| 1 | 1 | 6 - -1 - 1 | 6 |
-| 2 | 5 | 4 - 1 - 1 | 10 |
-| 3 | 6 | 4 - 2 - 1 | 6 |
-| 4 | 2 | 6 - 1 - 1 | 8 |
-| 5 | 3 | 6 - 4 - 1 | 3 |
+| index | height       | width         | area             |
+| :---- | :----------- | :------------ | :--------------- |
+| `i`   | `heights[i]` | `i2 - i1 - 1` | `height * width` |
+| 0     | 2            | 1 - -1 - 1    | 2                |
+| 1     | 1            | 6 - -1 - 1    | 6                |
+| 2     | 5            | 4 - 1 - 1     | 10               |
+| 3     | 6            | 4 - 2 - 1     | 6                |
+| 4     | 2            | 6 - 1 - 1     | 8                |
+| 5     | 3            | 6 - 4 - 1     | 3                |
 
 Observe how `i1` and `i2` changes depending on the height.
 
@@ -6230,15 +6212,15 @@ Pick a pivot point `(row, col)` and assume it is on the base line. The adjoining
 
 So for the rectangle whose bottom pivot is `(row, col)`:
 
-* Define `area(row, col)` to be the area.
-* Define `height(row, col)` to be the height.
-* Define `left(row, col)` to be the `col` value of the bottom-left corner.
-* Define `right(row, col)` to be the `col` value of the bottom-right corner.
+- Define `area(row, col)` to be the area.
+- Define `height(row, col)` to be the height.
+- Define `left(row, col)` to be the `col` value of the bottom-left corner.
+- Define `right(row, col)` to be the `col` value of the bottom-right corner.
 
 Also:
 
-* Define `conLeft(row, col)` to be the `col` value of the leftmost cell of the consecutive `1`s on the left of `(row, col)`.
-* Define `conRight(row, col)` to be the `col` value of the rightmost cell of the consecutive `1`s on the right of `(row, col)`.
+- Define `conLeft(row, col)` to be the `col` value of the leftmost cell of the consecutive `1`s on the left of `(row, col)`.
+- Define `conRight(row, col)` to be the `col` value of the rightmost cell of the consecutive `1`s on the right of `(row, col)`.
 
 With `conLeft` and `conRight` we can know if the rectangle on `(row, col)` shrinks comparing to `(row-1, col)`.
 
@@ -6390,8 +6372,8 @@ Given two sorted integer arrays _nums1_ and _nums2_, merge _nums2_ into _nums1_ 
 
 **Note:**
 
-* The number of elements initialized in _nums1_ and _nums2_ are _m_ and _n_ respectively.
-* You may assume that _nums1_ has enough space \(size that is greater or equal to _m_ + _n_\) to hold additional elements from _nums2_.
+- The number of elements initialized in _nums1_ and _nums2_ are _m_ and _n_ respectively.
+- You may assume that _nums1_ has enough space \(size that is greater or equal to _m_ + _n_\) to hold additional elements from _nums2_.
 
 **Example:**
 
@@ -6919,8 +6901,7 @@ But the following `[1,2,2,null,3,null,3]` is not:
    3    3
 ```
 
-Note:
-Bonus points if you could solve it both recursively and iteratively.
+Note: Bonus points if you could solve it both recursively and iteratively.
 
 #### Solution: <a id="solution-83"></a>
 
@@ -7012,8 +6993,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the level order traversal of its nodes' values. \(ie, from left to right, level by level\).
 
-For example:
-Given binary tree `[3,9,20,null,null,15,7]`,
+For example: Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
 3
@@ -7079,8 +7059,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the zigzag level order traversal of its nodes' values. \(ie, from left to right, then right to left for the next level and alternate between\).
 
-For example:
-Given binary tree `[3,9,20,null,null,15,7]`,
+For example: Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
 3
@@ -7202,8 +7181,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given preorder and inorder traversal of a tree, construct the binary tree.
 
-**Note:**
-You may assume that duplicates do not exist in the tree.
+**Note:** You may assume that duplicates do not exist in the tree.
 
 For example, given
 
@@ -7276,8 +7254,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given inorder and postorder traversal of a tree, construct the binary tree.
 
-**Note:**
-You may assume that duplicates do not exist in the tree.
+**Note:** You may assume that duplicates do not exist in the tree.
 
 For example, given
 
@@ -7350,8 +7327,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree, return the bottom-up level order traversal of its nodes' values. \(ie, from left to right, level by level from leaf to root\).
 
-For example:
-Given binary tree `[3,9,20,null,null,15,7]`,
+For example: Given binary tree `[3,9,20,null,null,15,7]`,
 
 ```python
     3
@@ -7850,9 +7826,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
-* You may only use constant extra space.
-* Recursive approach is fine, implicit stack space does not count as extra space for this problem.
-* You may assume that it is a perfect binary tree \(ie, all leaves are at the same level, and every parent has two children\).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree \(ie, all leaves are at the same level, and every parent has two children\).
 
 **Example:**
 
@@ -7886,8 +7862,8 @@ Recursive.
 
 For every `node`:
 
-* Left child: points to `node.right`.
-* Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
 ```python
 /**
@@ -7978,8 +7954,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
-* You may only use constant extra space.
-* Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -8152,7 +8128,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-99"></a>
 
-Given a non-negative index _k_ where _k_ ≤ 33, return the _k_th index row of the Pascal's triangle.
+Given a non-negative index _k_ where _k_ ≤ 33, return the \_k_th index row of the Pascal's triangle.
 
 Note that the row index starts from 0.
 
@@ -8266,7 +8242,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-101"></a>
 
-Say you have an array for which the _i_th element is the price of a given stock on day _i_.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
 If you were only permitted to complete at most one transaction \(i.e., buy one and sell one share of the stock\), design an algorithm to find the maximum profit.
 
@@ -8325,7 +8301,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-102"></a>
 
-Say you have an array for which the _i_th element is the price of a given stock on day _i_.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like \(i.e., buy one and sell one share of the stock multiple times\).
 
@@ -8388,7 +8364,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 #### Problem: <a id="problem-103"></a>
 
-Say you have an array for which the _i_th element is the price of a given stock on day _i_.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
 Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
 
@@ -8515,12 +8491,12 @@ Output: 42
 
 For every `node`, there are six possible ways to get the max path sum:
 
-* With `node.val`
+- With `node.val`
   1. `node.val` plus the max sum of a path that ends with `node.left`.
   2. `node.val` plus the max sum of a path that starts with `node.right`.
   3. `node.val` plus the max sum of both paths.
   4. Just `node.val` \(the max sum of both paths are negative\).
-* Without`node.val` \(disconnected\)
+- Without`node.val` \(disconnected\)
   1. The max-sum path is somewhere under the `node.left` subtree.
   2. The max-sum path is somewhere under the `node.right` subtree.
 
@@ -8714,11 +8690,11 @@ Given two words \(_beginWord_ and _endWord_\), and a dictionary's word list, fin
 
 **Note:**
 
-* Return an empty list if there is no such transformation sequence.
-* All words have the same length.
-* All words contain only lowercase alphabetic characters.
-* You may assume no duplicates in the word list.
-* You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -8833,11 +8809,11 @@ Given two words \(_beginWord_ and _endWord_\), and a dictionary's word list, fin
 
 **Note:**
 
-* Return 0 if there is no such transformation sequence.
-* All words have the same length.
-* All words contain only lowercase alphabetic characters.
-* You may assume no duplicates in the word list.
-* You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -9312,25 +9288,22 @@ For this problem, a height-balanced binary tree is defined as:
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/balance_1.jpg)
 
-**Input:** root =3,9,20,null,null,15,73,9,20,null,null,15,7
-**Output:** true
+**Input:** root =3,9,20,null,null,15,73,9,20,null,null,15,7 **Output:** true
 
 **Example 2:**
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/balance_2.jpg)
 
-**Input:** root =1,2,2,3,3,null,null,4,41,2,2,3,3,null,null,4,4
-**Output:** false
+**Input:** root =1,2,2,3,3,null,null,4,41,2,2,3,3,null,null,4,4 **Output:** false
 
 **Example 3:**
 
-**Input:** root = \[\]
-**Output:** true
+**Input:** root = \[\] **Output:** true
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 5000]`.
-* `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)\# Convert Sorted Array to Binary Search Tree
 
@@ -9351,9 +9324,7 @@ One possible answer is:0,-3,9,-10,null,50,−3,9,−10,null,5, which represents 
  / \\
 ```
 
--3 9
-/ /
--10 5
+-3 9 / / -10 5
 
 [Source](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)\# Delete Node in a BST
 
@@ -9372,34 +9343,25 @@ Basically, the deletion can be divided into two stages:
 
 ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/del_node_1.jpg)
 
-**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 3
-**Output:**5,4,6,2,null,null,75,4,6,2,null,null,7
-**Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it.
-One valid answer is5,4,6,2,null,null,75,4,6,2,null,null,7, shown in the above BST.
-Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7and it's also accepted.
-![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/del_node_supp.jpg)
+**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 3 **Output:**5,4,6,2,null,null,75,4,6,2,null,null,7 **Explanation:** Given key to delete is 3. So we find the node with value 3 and delete it. One valid answer is5,4,6,2,null,null,75,4,6,2,null,null,7, shown in the above BST. Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7and it's also accepted. ![](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/del_node_supp.jpg)
 
 **Example 2:**
 
-**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 0
-**Output:**5,3,6,2,4,null,75,3,6,2,4,null,7
-**Explanation:** The tree does not contain a node with value = 0.
+**Input:** root =5,3,6,2,4,null,75,3,6,2,4,null,7, key = 0 **Output:**5,3,6,2,4,null,75,3,6,2,4,null,7 **Explanation:** The tree does not contain a node with value = 0.
 
 **Example 3:**
 
-**Input:** root = \[\], key = 0
-**Output:** \[\]
+**Input:** root = \[\], key = 0 **Output:** \[\]
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 104]`.
-* `-105 <= Node.val <= 105`
-* Each node has a **unique** value.
-* `root` is a valid binary search tree.
-* `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
-[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg)
-![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-1.jpg)
+[Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg) ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-1.jpg)
 
 ```python
 /**
@@ -9427,4 +9389,3 @@ const minMeetingRooms = function(intervals) {
 ```
 
 ≡
-

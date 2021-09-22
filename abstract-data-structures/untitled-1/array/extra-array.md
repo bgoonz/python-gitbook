@@ -1,11 +1,7 @@
 # Extra-Array
 
+{% tabs %} {% tab title="recur-bin-search.py" %}
 
-
-
-
-{% tabs %}
-{% tab title="recur-bin-search.py" %}
 ```python
 # given array a and need to find value x
 # left and right correspond to initial indices of array a bounding the search
@@ -30,6 +26,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
         return binary_search_recursive(a, x, left, right)
 
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -37,6 +34,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
 {% endtab %}
 
 {% tab title="Array Change" %}
+
 ```python
 def arrayChange(inputArray):
     count = 0
@@ -48,9 +46,11 @@ def arrayChange(inputArray):
     return count
 
 ```
+
 {% endtab %}
 
 {% tab title="Array Union" %}
+
 ```python
 #Time complexity O(M*N)
 #Space Complexity O(M+N)
@@ -117,9 +117,11 @@ if __name__=='__main__':
 
         print(ob.doUnion(a,n,b,m))
 ```
+
 {% endtab %}
 
 {% tab title="Rotate" %}
+
 ```python
 #rotation of an element by one step
 def left_rotation(arr,d,n):
@@ -145,10 +147,8 @@ left_rotation(arr,2,5)
 
 print_array(arr,5)
 ```
-{% endtab %}
-{% endtabs %}
 
-
+{% endtab %} {% endtabs %}
 
 ```python
 class Array(object):
@@ -284,10 +284,6 @@ class Array(object):
                 print('Elements are more than the size specified')
 ```
 
-
-
-
-
 #### Define Length of Array Function
 
 This function is used to return the length of the Array that means the elements we initialized excluding None values from it.
@@ -415,6 +411,3 @@ if __name__ == '__main__':
     print(myArray.items, myArray.myLen())
     myArray.search(4)
 ```
-
-
-

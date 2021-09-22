@@ -4,8 +4,8 @@ Projects:
 
 {% file src="../../../.gitbook/assets/projects.zip" %}
 
-{% tabs %}
-{% tab title="Adjacency List" %}
+{% tabs %} {% tab title="Adjacency List" %}
+
 ```python
 from queue import Queue
 from stack import Stack
@@ -74,7 +74,7 @@ class Graph:
                 # add all of it's neighbors to the top of the stack
                 for next_vertex in self.get_neighbors(v):
                     s.push(next_vertex)
-    
+
 
     def dft_recursive(self, starting_vertex, visited=None):
             """
@@ -164,7 +164,7 @@ class Graph:
         return None
 
 
-    
+
 
 # if __name__ == '__main__':
 #     graph = Graph()  # Instantiate your graph
@@ -234,40 +234,44 @@ class Graph:
 #     print(graph.dfs(1, 6))
 #     print(graph.dfs_recursive(1, 6))
 ```
+
 {% endtab %}
 
 {% tab title="Graph.js" %}
+
 ```javascript
 class Graph {
-  constructor () {
-    this.adjacencyMap = {}
+  constructor() {
+    this.adjacencyMap = {};
   }
 
-  addVertex (v) {
-    this.adjacencyMap[v] = []
+  addVertex(v) {
+    this.adjacencyMap[v] = [];
   }
 
-  containsVertex (vertex) {
-    return typeof (this.adjacencyMap[vertex]) !== 'undefined'
+  containsVertex(vertex) {
+    return typeof this.adjacencyMap[vertex] !== 'undefined';
   }
 
-  addEdge (v, w) {
-    let result = false
+  addEdge(v, w) {
+    let result = false;
     if (this.containsVertex(v) && this.containsVertex(w)) {
-      this.adjacencyMap[v].push(w)
-      this.adjacencyMap[w].push(v)
-      result = true
+      this.adjacencyMap[v].push(w);
+      this.adjacencyMap[w].push(v);
+      result = true;
     }
-    return result
+    return result;
   }
 
-  printGraph () {
-    const keys = Object.keys(this.adjacencyMap)
+  printGraph() {
+    const keys = Object.keys(this.adjacencyMap);
     for (const i of keys) {
-      const values = this.adjacencyMap[i]
-      let vertex = ''
-      for (const j of values) { vertex += j + ' ' }
-      console.log(i + ' -> ' + vertex)
+      const values = this.adjacencyMap[i];
+      let vertex = '';
+      for (const j of values) {
+        vertex += j + ' ';
+      }
+      console.log(i + ' -> ' + vertex);
     }
   }
 
@@ -276,21 +280,22 @@ class Graph {
    *
    * @param {number} source The source vertex to start BFS.
    */
-  bfs (source) {
-    const queue = []
-    const visited = new Set()
-    queue.unshift([source, 0]) // level of source is 0
-    visited.add(source)
+  bfs(source) {
+    const queue = [];
+    const visited = new Set();
+    queue.unshift([source, 0]); // level of source is 0
+    visited.add(source);
     while (queue.length) {
-      const front = queue[0]
-      const node = front[0]
-      const level = front[1]
-      queue.shift() // remove the front of the queue
-      console.log(`Visited node ${node} at level ${level}.`)
+      const front = queue[0];
+      const node = front[0];
+      const level = front[1];
+      queue.shift(); // remove the front of the queue
+      console.log(`Visited node ${node} at level ${level}.`);
       for (const next of this.adjacencyMap[node]) {
-        if (!visited.has(next)) { // not visited
-          queue.unshift([next, level + 1]) // level 1 more than current
-          visited.add(next)
+        if (!visited.has(next)) {
+          // not visited
+          queue.unshift([next, level + 1]); // level 1 more than current
+          visited.add(next);
         }
       }
     }
@@ -298,26 +303,24 @@ class Graph {
 }
 
 const example = () => {
-  const g = new Graph()
-  g.addVertex(1)
-  g.addVertex(2)
-  g.addVertex(3)
-  g.addVertex(4)
-  g.addVertex(5)
-  g.addEdge(1, 2)
-  g.addEdge(1, 3)
-  g.addEdge(2, 4)
-  g.addEdge(2, 5)
-  console.log('Printing the adjacency list:\n')
-  g.printGraph()
+  const g = new Graph();
+  g.addVertex(1);
+  g.addVertex(2);
+  g.addVertex(3);
+  g.addVertex(4);
+  g.addVertex(5);
+  g.addEdge(1, 2);
+  g.addEdge(1, 3);
+  g.addEdge(2, 4);
+  g.addEdge(2, 5);
+  console.log('Printing the adjacency list:\n');
+  g.printGraph();
 
   // perform a breadth first search
-  console.log('\nBreadth first search at node 1:\n')
-  g.bfs(1)
-}
-example()
-
-
+  console.log('\nBreadth first search at node 1:\n');
+  g.bfs(1);
+};
+example();
 
 //OUTPUT:
 /*
@@ -343,17 +346,19 @@ Visited node 4 at level 2.
 
 */
 ```
+
 {% endtab %}
 
 {% tab title="Graph2.js" %}
+
 ```javascript
 // create a graph class
 class Graph {
   // defining vertex array and
   // adjacent list
-  constructor (noOfVertices) {
-    this.noOfVertices = noOfVertices
-    this.AdjList = new Map()
+  constructor(noOfVertices) {
+    this.noOfVertices = noOfVertices;
+    this.AdjList = new Map();
   }
 
   // functions to be implemented
@@ -366,65 +371,65 @@ class Graph {
   // dfs(v)
 
   // add vertex to the graph
-  addVertex (v) {
+  addVertex(v) {
     // initialize the adjacent list with a
     // null array
 
-    this.AdjList.set(v, [])
+    this.AdjList.set(v, []);
   }
 
   // add edge to the graph
-  addEdge (v, w) {
+  addEdge(v, w) {
     // get the list for vertex v and put the
     // vertex w denoting edge between v and w
-    this.AdjList.get(v).push(w)
+    this.AdjList.get(v).push(w);
 
     // Since graph is undirected,
     // add an edge from w to v also
-    this.AdjList.get(w).push(v)
+    this.AdjList.get(w).push(v);
   }
 
   // Prints the vertex and adjacency list
-  printGraph () {
+  printGraph() {
     // get all the vertices
-    const getKeys = this.AdjList.keys()
+    const getKeys = this.AdjList.keys();
 
     // iterate over the vertices
     for (const i of getKeys) {
       // great the corresponding adjacency list
       // for the vertex
-      const getValues = this.AdjList.get(i)
-      let conc = ''
+      const getValues = this.AdjList.get(i);
+      let conc = '';
 
       // iterate over the adjacency list
       // concatenate the values into a string
       for (const j of getValues) {
-        conc += j + ' '
+        conc += j + ' ';
       }
 
       // print the vertex and its adjacency list
-      console.log(i + ' -> ' + conc)
+      console.log(i + ' -> ' + conc);
     }
   }
 }
 // Example
-const graph = new Graph(6)
-const vertices = ['A', 'B', 'C', 'D', 'E', 'F']
+const graph = new Graph(6);
+const vertices = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 // adding vertices
 for (let i = 0; i < vertices.length; i++) {
-  graph.addVertex(vertices[i])
+  graph.addVertex(vertices[i]);
 }
 
 // adding edges
-graph.addEdge('A', 'B')
-graph.addEdge('A', 'D')
-graph.addEdge('A', 'E')
-graph.addEdge('B', 'C')
-graph.addEdge('D', 'E')
-graph.addEdge('E', 'F')
-graph.addEdge('E', 'C')
-graph.addEdge('C', 'F')
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'D');
+graph.addEdge('A', 'E');
+graph.addEdge('B', 'C');
+graph.addEdge('D', 'E');
+graph.addEdge('E', 'F');
+graph.addEdge('E', 'C');
+graph.addEdge('C', 'F');
 
 // prints all vertex and
 // its adjacency list
@@ -434,25 +439,22 @@ graph.addEdge('C', 'F')
 // D -> A E
 // E -> A D F C
 // F -> E C
-graph.printGraph()
-
+graph.printGraph();
 ```
-{% endtab %}
-{% endtabs %}
+
+{% endtab %} {% endtabs %}
 
 ## Graph
 
-* Given a list of sorted words from an alien dictionary, find the order of the alphabet.
-  * Alien Dictionary Topological Sort question.
-* Find if a given string matches any path in a labeled graph. A path may contain cycles.
-* Given a bipartite graph, separate the vertices into two sets.
-* You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.
-* Given a graph and two nodes, determine if there exists a path between them.
-* Determine if a cycle exists in the graph.
+- Given a list of sorted words from an alien dictionary, find the order of the alphabet.
+  - Alien Dictionary Topological Sort question.
+- Find if a given string matches any path in a labeled graph. A path may contain cycles.
+- Given a bipartite graph, separate the vertices into two sets.
+- You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.
+- Given a graph and two nodes, determine if there exists a path between them.
+- Determine if a cycle exists in the graph.
 
-{% tabs %}
-{% tab title="Directed Graph:" %}
-
+{% tabs %} {% tab title="Directed Graph:" %}
 
 ## Directed Graph:
 
@@ -568,9 +570,11 @@ print(graph.get_adjacency_list())
 # Should be [[0, 0, 0, 0, 0], [0, 0, 100, 101, 102], [0, 0, 0, 0, 0], [0, 0, 0, 0, 103], [0, 0, 0, 0, 0]]
 print(graph.get_adjacency_matrix())
 ```
+
 {% endtab %}
 
 {% tab title="Graph Traversal" %}
+
 ```python
 class Node(object):
     def __init__(self, value):
@@ -837,22 +841,14 @@ pp.pprint(graph.bfs_names(2))
 # ['London', 'Shanghai', 'Berlin', 'Sao Paolo', 'Mountain View', 'San Francisco']
 
 ```
+
 {% endtab %}
 
-{% tab title="Javascript" %}
-{% embed url="https://gist.github.com/bgoonz/5f6cfb85d684629aa2e0d5eea35edacb" %}
+{% tab title="Javascript" %} {% embed url="https://gist.github.com/bgoonz/5f6cfb85d684629aa2e0d5eea35edacb" %}
 
 ### JS ADVANCED:
 
-{% embed url="https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16" %}
-{% endtab %}
-{% endtabs %}
-
-
-
-
-
-
+{% embed url="https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16" %} {% endtab %} {% endtabs %}
 
 ## Intro to Graphs
 
@@ -860,9 +856,9 @@ pp.pprint(graph.bfs_names(2))
 
 ### Objectives
 
-* Learn what graphs are
-* Learn the components of graphs
-* Learn what graphs are useful for
+- Learn what graphs are
+- Learn the components of graphs
+- Learn what graphs are useful for
 
 ### What Are Graphs?
 
@@ -924,8 +920,6 @@ A _directed acyclic graph_ \(_DAG_\) has a number of applications. From [Wikiped
 
 It's notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit \(in the case of a branch\). A child could come from one parent commit, or from two \(in the case of a merge\). But there's no way to go back and form a repeating loop in the git commit hierarchy.
 
-
-
 {% page-ref page="../array/" %}
 
 {% page-ref page="../binary-search-tree/" %}
@@ -957,6 +951,3 @@ It's notable that git uses a DAG to represent commits. A commit can have a child
 {% page-ref page="../untitled/" %}
 
 {% page-ref page="../heap/" %}
-
-
-

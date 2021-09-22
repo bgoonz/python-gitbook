@@ -117,4 +117,3 @@ Execute immediately.
 The following picture illustrates JavaScript runtime, Web API, Call stack, and Event loop:![javascript event loop](https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop.png)
 
 In this tutorial, you have learned about the JavaScript event loop, a constantly running process that coordinates the tasks between the call stack and callback queue to achieve concurrency.
-
