@@ -160,8 +160,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree Traversals (Inorder, Preorder and Postorder)</span>
-======================================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree Traversals (Inorder, Preorder and Postorder)</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -183,7 +182,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="506a23938f1d4f49b480dd66d3bdf51f"><span data-offset-key="506a23938f1d4f49b480dd66d3bdf51f:0">Uses of Inorder In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used. Example: Inorder traversal for the above-given figure is 4 2 5 1 3. </span><span data-offset-key="506a23938f1d4f49b480dd66d3bdf51f:1">**Preorder Traversal (**</span></span><a href="https://practice.geeksforgeeks.org/problems/preorder-traversal/1" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4ed09bfc5a3e43b789f7ef34d191fbfb"><span data-offset-key="4ed09bfc5a3e43b789f7ef34d191fbfb:0"><strong>Practice</strong></span></span></a><span data-key="557493d15a1943af85a93a721977cd4f"><span data-offset-key="557493d15a1943af85a93a721977cd4f:0">**):** </span></span></span>
 
-    Algorithm Preorder(tree)   1. Visit the root.   2. Traverse the left subtree, i.e., call Preorder(left-subtree)   3. Traverse the right subtree, i.e., call Preorder(right-subtree) 
+    Algorithm Preorder(tree)   1. Visit the root.   2. Traverse the left subtree, i.e., call Preorder(left-subtree)   3. Traverse the right subtree, i.e., call Preorder(right-subtree)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e71cfe94b67486db02e8aad71682d05"><span data-offset-key="7e71cfe94b67486db02e8aad71682d05:0">Uses of Preorder Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. Please see </span></span><a href="http://en.wikipedia.org/wiki/Polish_notation" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="cec2ccef85a440748e0c2dc1336bec58"><span data-offset-key="cec2ccef85a440748e0c2dc1336bec58:0">http://en.wikipedia.org/wiki/Polish_notation</span></span></a><span data-key="65e40d0178ca4de3984ee17b4604e7f8"><span data-offset-key="65e40d0178ca4de3984ee17b4604e7f8:0"> to know why prefix expressions are useful. Example: Preorder traversal for the above given figure is 1 2 4 5 3.</span></span></span>
 

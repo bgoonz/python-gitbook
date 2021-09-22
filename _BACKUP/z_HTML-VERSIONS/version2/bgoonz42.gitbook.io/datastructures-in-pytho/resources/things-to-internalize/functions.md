@@ -122,8 +122,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Functions</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Functions</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -135,7 +134,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="793996055d7e410e82799f5622f15dd3"><span data-offset-key="793996055d7e410e82799f5622f15dd3:0">Python uses def keyword to start a function, here is the syntax:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646253f2d0fd495a923765af3856477e"><span data-offset-key="646253f2d0fd495a923765af3856477e:0">def function\_name(arg1, arg2, arg3, .... argN):</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646253f2d0fd495a923765af3856477e"><span data-offset-key="646253f2d0fd495a923765af3856477e:0">def function_name(arg1, arg2, arg3, .... argN):</span></span></span>
 
      #statement inside function
 
@@ -193,13 +192,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba41af3030524fd3a5532e8618c12304"><span data-offset-key="ba41af3030524fd3a5532e8618c12304:0">**Example 1**</span><span data-offset-key="ba41af3030524fd3a5532e8618c12304:1">:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="11c9f9f69127474487b6d6145ed7d045"><span data-offset-key="11c9f9f69127474487b6d6145ed7d045:0">global\_var \\= 12 \# a global variable</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="11c9f9f69127474487b6d6145ed7d045"><span data-offset-key="11c9f9f69127474487b6d6145ed7d045:0">global_var \\= 12 \# a global variable</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="845552abda3745eca6073d44b17df3b6"><span data-offset-key="845552abda3745eca6073d44b17df3b6:0">def func(): local\_var \\= 100 \# this is local variable print(global\_var) \# you can access global variables in side function</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="845552abda3745eca6073d44b17df3b6"><span data-offset-key="845552abda3745eca6073d44b17df3b6:0">def func(): local_var \\= 100 \# this is local variable print(global_var) \# you can access global variables in side function</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="550ed00afa984931a5f2f7a1785ce309"><span data-offset-key="550ed00afa984931a5f2f7a1785ce309:0">func() \# calling function func()</span></span></span>
 
-<span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="292ba2b900b74310a9a7b90f8fc28a7b"><span data-offset-key="292ba2b900b74310a9a7b90f8fc28a7b:0">print(local\_var) \# you can't access local\_var outside the function, because as soon as function ends local\_var is destroyed</span></span></span>
+<span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="292ba2b900b74310a9a7b90f8fc28a7b"><span data-offset-key="292ba2b900b74310a9a7b90f8fc28a7b:0">print(local_var) \# you can't access local_var outside the function, because as soon as function ends local_var is destroyed</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bf7a84aae594008bfa74d37ee1ae320"><span data-offset-key="5bf7a84aae594008bfa74d37ee1ae320:0">**Expected Output:**</span></span></span>
 
@@ -271,11 +270,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c86dfb6ae3e487b8ca42c10a6023168"><span data-offset-key="6c86dfb6ae3e487b8ca42c10a6023168:0">Keyword arguments allows you to pass each arguments using name value pairs like this </span><span data-offset-key="6c86dfb6ae3e487b8ca42c10a6023168:1">`name=value`</span><span data-offset-key="6c86dfb6ae3e487b8ca42c10a6023168:2">. Let's take an example:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb0836c50e084a809ca3ea0424181bf7"><span data-offset-key="cb0836c50e084a809ca3ea0424181bf7:0">def named\_args(name, greeting): print(greeting + " " + name )</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb0836c50e084a809ca3ea0424181bf7"><span data-offset-key="cb0836c50e084a809ca3ea0424181bf7:0">def named_args(name, greeting): print(greeting + " " + name )</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54d22d55d28f422ea692b6d3257571ee"><span data-offset-key="54d22d55d28f422ea692b6d3257571ee:0">named\_args(name\\='jim', greeting\\='Hello')</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54d22d55d28f422ea692b6d3257571ee"><span data-offset-key="54d22d55d28f422ea692b6d3257571ee:0">named_args(name\\='jim', greeting\\='Hello')</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c3beb86941894a06a7874cda6c8c9b0b"><span data-offset-key="c3beb86941894a06a7874cda6c8c9b0b:0">named\_args(greeting\\='Hello', name\\='jim') \# you can pass arguments this way too</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c3beb86941894a06a7874cda6c8c9b0b"><span data-offset-key="c3beb86941894a06a7874cda6c8c9b0b:0">named_args(greeting\\='Hello', name\\='jim') \# you can pass arguments this way too</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d4cbcf324874353bc6f049ac719398f"><span data-offset-key="5d4cbcf324874353bc6f049ac719398f:0">**Expected Value:**</span></span></span>
 
@@ -283,17 +282,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b651b4c123de4096a30184d028de889e"><span data-offset-key="b651b4c123de4096a30184d028de889e:0">It is possible to mix positional arguments and Keyword arguments, but for this positional argument must appear before any Keyword arguments. Let's see this through an example.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28486cff9d174dd4a77e7c54366c745d"><span data-offset-key="28486cff9d174dd4a77e7c54366c745d:0">def my\_func(a, b, c): print(a, b, c)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28486cff9d174dd4a77e7c54366c745d"><span data-offset-key="28486cff9d174dd4a77e7c54366c745d:0">def my_func(a, b, c): print(a, b, c)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ded8afd04a1349a8b59f4a8909b32e45"><span data-offset-key="ded8afd04a1349a8b59f4a8909b32e45:0">You can call the above function in the following ways.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af16b18f41a7446caf3651b02082b6a9"><span data-offset-key="af16b18f41a7446caf3651b02082b6a9:0">\# using positional arguments only my\_func(12, 13, 14)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af16b18f41a7446caf3651b02082b6a9"><span data-offset-key="af16b18f41a7446caf3651b02082b6a9:0">\# using positional arguments only my_func(12, 13, 14)</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ced82c775ede44dd8a657deabd930199"><span data-offset-key="ced82c775ede44dd8a657deabd930199:0">\# here first argument is passed as positional arguments while other two as keyword argument my\_func(12, b\\=13, c\\=14)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ced82c775ede44dd8a657deabd930199"><span data-offset-key="ced82c775ede44dd8a657deabd930199:0">\# here first argument is passed as positional arguments while other two as keyword argument my_func(12, b\\=13, c\\=14)</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a34e025cc2ed4a0491217a77e12e5981"><span data-offset-key="a34e025cc2ed4a0491217a77e12e5981:0">\# same as above my\_func(12, c\\=13, b\\=14)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a34e025cc2ed4a0491217a77e12e5981"><span data-offset-key="a34e025cc2ed4a0491217a77e12e5981:0">\# same as above my_func(12, c\\=13, b\\=14)</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="922ab39f0e644609910c54419b9a9cca"><span data-offset-key="922ab39f0e644609910c54419b9a9cca:0">\# this is wrong as positional argument must appear before any keyword argument \# my\_func(12, b=13, 14)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="922ab39f0e644609910c54419b9a9cca"><span data-offset-key="922ab39f0e644609910c54419b9a9cca:0">\# this is wrong as positional argument must appear before any keyword argument \# my_func(12, b=13, 14)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95b5e9ab431b48378541a9734432a3e8"><span data-offset-key="95b5e9ab431b48378541a9734432a3e8:0">**Expected Output:**</span></span></span>
 
@@ -345,7 +344,7 @@
 
 <a href="functions.html#print-local_var-you-cant-access-local_var-outside-the-function-because-as-soon-as-function-ends-local_var-is-destroyed" class="reset-3c756112--menuItem-aa02f6ec--menuItemLight-757d5235--menuItemInline-173bdf97--pageTocItem-f4427024"></a>
 
-<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1"><span class="text-4505230f--UIH200-50ead35f--textContentFamily-49a318e1">print(local\_var) \# you can't access local\_var outside the function, because as soon as function ends local\_var is destroyed</span></span>
+<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1"><span class="text-4505230f--UIH200-50ead35f--textContentFamily-49a318e1">print(local_var) \# you can't access local_var outside the function, because as soon as function ends local_var is destroyed</span></span>
 
 <a href="functions.html#argument-with-default-values" class="reset-3c756112--menuItem-aa02f6ec--menuItemLight-757d5235--menuItemInline-173bdf97--pageTocItem-f4427024"></a>
 

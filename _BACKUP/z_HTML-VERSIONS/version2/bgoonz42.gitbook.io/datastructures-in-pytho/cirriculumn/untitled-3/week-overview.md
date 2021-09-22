@@ -132,8 +132,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">homework</span>
-=============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">homework</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -143,29 +142,29 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8065bf9a96864c808442fceac111c651"><span data-offset-key="8065bf9a96864c808442fceac111c651:0">Create a function that returns </span><span data-offset-key="8065bf9a96864c808442fceac111c651:1">`True`</span><span data-offset-key="8065bf9a96864c808442fceac111c651:2"> if the given string has any of the following:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98c33a551bd148b4a25f3f41318f1c04"><span data-offset-key="98c33a551bd148b4a25f3f41318f1c04:0">Only letters and no numbers.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98c33a551bd148b4a25f3f41318f1c04"><span data-offset-key="98c33a551bd148b4a25f3f41318f1c04:0">Only letters and no numbers.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf80abdb5d5e4db3bd4cd3aa0e32e120"><span data-offset-key="bf80abdb5d5e4db3bd4cd3aa0e32e120:0">Only numbers and no letters.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf80abdb5d5e4db3bd4cd3aa0e32e120"><span data-offset-key="bf80abdb5d5e4db3bd4cd3aa0e32e120:0">Only numbers and no letters.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25c8fb30c11943d0b01fa317b58f70a7"><span data-offset-key="25c8fb30c11943d0b01fa317b58f70a7:0">If a string has both numbers and letters or contains characters that don't fit into any category, return </span><span data-offset-key="25c8fb30c11943d0b01fa317b58f70a7:1">`False`</span><span data-offset-key="25c8fb30c11943d0b01fa317b58f70a7:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6116c6fda43244b6ab1aadf9c7406603"><span data-offset-key="6116c6fda43244b6ab1aadf9c7406603:0">Examples:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="63397ceea124440eb512c567f3ee59ca"><span data-offset-key="63397ceea124440eb512c567f3ee59ca:0">`csAlphanumericRestriction("Bold")                                             ➞ True`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="63397ceea124440eb512c567f3ee59ca"><span data-offset-key="63397ceea124440eb512c567f3ee59ca:0">`csAlphanumericRestriction("Bold") ➞ True`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ea542c79a554e5289fa98d20d18b750"><span data-offset-key="4ea542c79a554e5289fa98d20d18b750:0">`csAlphanumericRestriction("123454321")                                             ➞ True`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ea542c79a554e5289fa98d20d18b750"><span data-offset-key="4ea542c79a554e5289fa98d20d18b750:0">`csAlphanumericRestriction("123454321") ➞ True`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a303c4e385f848da8c2f802c6bfd2a20"><span data-offset-key="a303c4e385f848da8c2f802c6bfd2a20:0">`csAlphanumericRestriction("H3LL0")                                             ➞ False`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a303c4e385f848da8c2f802c6bfd2a20"><span data-offset-key="a303c4e385f848da8c2f802c6bfd2a20:0">`csAlphanumericRestriction("H3LL0") ➞ False`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a30c2cfb029468fae7354f65025fb5d"><span data-offset-key="8a30c2cfb029468fae7354f65025fb5d:0">Notes:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93b59026339840279a339657518ab911"><span data-offset-key="93b59026339840279a339657518ab911:0">Any string that contains spaces or is empty should return </span><span data-offset-key="93b59026339840279a339657518ab911:1">`False`</span><span data-offset-key="93b59026339840279a339657518ab911:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93b59026339840279a339657518ab911"><span data-offset-key="93b59026339840279a339657518ab911:0">Any string that contains spaces or is empty should return </span><span data-offset-key="93b59026339840279a339657518ab911:1">`False`</span><span data-offset-key="93b59026339840279a339657518ab911:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f04771def6b942c7a20dee4208df0c82"><span data-offset-key="f04771def6b942c7a20dee4208df0c82:0">**\[execution time limit\] 4 seconds (py3)**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f04771def6b942c7a20dee4208df0c82"><span data-offset-key="f04771def6b942c7a20dee4208df0c82:0">**\[execution time limit\] 4 seconds (py3)**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a00a85608af489e9850ba793cca982c"><span data-offset-key="3a00a85608af489e9850ba793cca982c:0">**\[input\] string input\_str**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a00a85608af489e9850ba793cca982c"><span data-offset-key="3a00a85608af489e9850ba793cca982c:0">**\[input\] string input_str**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe0402490b1d4cb09c7a2412884ec8a2"><span data-offset-key="fe0402490b1d4cb09c7a2412884ec8a2:0">**\[output\] boolean**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe0402490b1d4cb09c7a2412884ec8a2"><span data-offset-key="fe0402490b1d4cb09c7a2412884ec8a2:0">**\[output\] boolean**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a20c6f83432346c1975f8f14c96556c6"><span data-offset-key="a20c6f83432346c1975f8f14c96556c6:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

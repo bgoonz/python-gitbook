@@ -162,8 +162,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">List Operations</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">List Operations</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -181,65 +180,65 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5d5356111f3b4cd18076833b48e8c7df"><span data-offset-key="5d5356111f3b4cd18076833b48e8c7df:0">List Operations</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="afbef3a9c2f44c01bc479a2d821b04d4"><span data-offset-key="afbef3a9c2f44c01bc479a2d821b04d4:0">1. List Slicing</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="30cec33b66574b9493cc01eda94adc31"><span data-offset-key="30cec33b66574b9493cc01eda94adc31:0">List Slicing means accessing the particular element by index or slice or cut a particular range of elements from the </span></span><a href="https://docs.python.org/3/tutorial/datastructures.html" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="825842c0a58e4facbbb6c4527e065ce6"><span data-offset-key="825842c0a58e4facbbb6c4527e065ce6:0">List</span></span></a><span data-key="8ef2602ce00d4f13a1f44c00cf9d0be3"><span data-offset-key="8ef2602ce00d4f13a1f44c00cf9d0be3:0">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4654a88f843646a2888942ba965d1f0d"><span data-offset-key="4654a88f843646a2888942ba965d1f0d:0">***Read =&gt;*** </span></span><a href="https://codezup.com/create-write-metadata-file-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9425749fabd049b2be365a7d0a8a964e"><span data-offset-key="9425749fabd049b2be365a7d0a8a964e:0"><em><strong>Create and write MetaData to a file – Python</strong></em></span></span></a><span data-key="9dcb89a3b0cd4a92a5cb629a4343c8a9"><span data-offset-key="9dcb89a3b0cd4a92a5cb629a4343c8a9:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4654a88f843646a2888942ba965d1f0d"><span data-offset-key="4654a88f843646a2888942ba965d1f0d:0">**_Read =&gt;_** </span></span><a href="https://codezup.com/create-write-metadata-file-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9425749fabd049b2be365a7d0a8a964e"><span data-offset-key="9425749fabd049b2be365a7d0a8a964e:0"><em><strong>Create and write MetaData to a file – Python</strong></em></span></span></a><span data-key="9dcb89a3b0cd4a92a5cb629a4343c8a9"><span data-offset-key="9dcb89a3b0cd4a92a5cb629a4343c8a9:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
     print('Original List:',myList)print('First Element:',myList[0]) #Prints the first element of the list or 0th index of the listprint('Element at 3rd Index position:',myList[2]) #Prints the 3rd element of the listprint('Elements from 0th Index to 4th Index:',myList[0: 5]) #Prints elements of the list from 0th index to 4th index. IT DOESN'T INCLUDE THE LAST INDEXprint('Element at -7th Index:',myList[-7]) #Prints the -7th or 3rd element of the list
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f549c99c3c46451eb87e93a3bc286b8b"><span data-offset-key="f549c99c3c46451eb87e93a3bc286b8b:0">2. Append Element to List</span></span></span>
 
     #To append an element to a listmyList.append(10)print('Append:',myList)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6a89cf181e504112a00f5e9ce820ddc8"><span data-offset-key="6a89cf181e504112a00f5e9ce820ddc8:0">3. Index Element</span></span></span>
 
     #To find the index of a particular elementprint('Index of element \'6\':',myList.index(6)) #returns index of element '6'
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="56cc6140f55941eeb7035176ec1ff330"><span data-offset-key="56cc6140f55941eeb7035176ec1ff330:0">4. Sort List</span></span></span>
 
     #To sort the listmyList.sort()print("myList : ",myList)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="9dc56a380d3947a4a9ff3217deff0d52"><span data-offset-key="9dc56a380d3947a4a9ff3217deff0d52:0">5. Pop Last Element</span></span></span>
 
     #To pop last elementprint('Poped Element:',myList.pop())
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="cb5fb5056fc94096bb60a1916d58adab"><span data-offset-key="cb5fb5056fc94096bb60a1916d58adab:0">6. Remove Element</span></span></span>
 
     #To remove a particular element from the list BY NAMEmyList.remove(6)print('After removing \'6\':',myList)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b3127592238e431988a22180f7ab1a1b"><span data-offset-key="b3127592238e431988a22180f7ab1a1b:0">7. Insert Element</span></span></span>
 
     #To insert an element at a specified IndexmyList.insert(5, 6)print('Inserting \'6\' at 5th index:',myList)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b2122598d77b455da6b4ada158d7f10e"><span data-offset-key="b2122598d77b455da6b4ada158d7f10e:0">8. Count Element</span></span></span>
 
     #To count number of occurences of a element in the listprint('No of Occurences of \'1\':',myList.count(1))
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="86a4c25a2d1040af9195de2db3011265"><span data-offset-key="86a4c25a2d1040af9195de2db3011265:0">9. Extend List</span></span></span>
 
     #To extend a list that is insert multiple elemets at once at the end of the listmyList.extend([11,0])print('Extending list:',myList)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ff475bdab168486e9b99e56bd3a20e86"><span data-offset-key="ff475bdab168486e9b99e56bd3a20e86:0">10. Reverse List</span></span></span>
 

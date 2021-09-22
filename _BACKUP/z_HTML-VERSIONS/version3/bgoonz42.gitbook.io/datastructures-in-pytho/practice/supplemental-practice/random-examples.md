@@ -154,8 +154,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Random Examples</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Random Examples</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -171,51 +170,51 @@
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj41pTzQU9UKLn5uqD_%2Fbfs_search_dict.py?alt=media&amp;token=0056b21f-703d-4038-9bd5-6259c64ffa18" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs\_search\_dict.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs_search_dict.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs\_search\_dict.py - 689B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs_search_dict.py - 689B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj41tWa3zL390sIrD_q%2Fbfs_paths_dict.py?alt=media&amp;token=ed6060b5-102a-4d06-906f-7ca0eaa786bd" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs\_paths\_dict.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs_paths_dict.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs\_paths\_dict.py - 694B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs_paths_dict.py - 694B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj41zLjxpUgMM_IxXau%2Fbfs_search_grid.py?alt=media&amp;token=996126ac-4a2c-466d-8cbd-fcab71f48395" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs\_search\_grid.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bfs_search_grid.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs\_search\_grid.py - 938B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bfs_search_grid.py - 938B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj423-Pygx1L4hSM8Ta%2Fbipartite_matching_single.py?alt=media&amp;token=f6e7c481-e0f5-434d-aa53-054d5d636f73" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bipartite\_matching\_single.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bipartite_matching_single.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bipartite\_matching\_single.py - 712B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bipartite_matching_single.py - 712B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj424ZDNNFP-ZpfY41k%2Fbisect_search.py?alt=media&amp;token=9f1c7e6d-f5f3-413a-b893-022d4914d61c" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bisect\_search.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bisect_search.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bisect\_search.py - 631B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bisect_search.py - 631B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj428Fz0yB9DjZy8uAo%2Fbst_make_balanced_recur.py?alt=media&amp;token=bbd975aa-6c5b-4ed1-b4ce-91d77b5de456" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bst\_make\_balanced\_recur.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bst_make_balanced_recur.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bst\_make\_balanced\_recur.py - 587B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bst_make_balanced_recur.py - 587B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj429sHi_LDDD0o4iGi%2Fbt_inorder_traversal_recur.py?alt=media&amp;token=098bdbb7-5b59-4a63-b07b-15c839dae16f" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bt\_inorder\_traversal\_recur.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bt_inorder_traversal_recur.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bt\_inorder\_traversal\_recur.py - 446B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bt_inorder_traversal_recur.py - 446B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42AyFewX37-qaU_5w%2Fbt_level_order_traversal_iter.py?alt=media&amp;token=8b42cee1-c328-4563-8f82-825bca650d13" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bt\_level\_order\_traversal\_iter.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">bt_level_order_traversal_iter.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bt\_level\_order\_traversal\_iter.py - 986B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">bt_level_order_traversal_iter.py - 986B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42EJxcWLaB30IMKUd%2Fcelebrity.py?alt=media&amp;token=e8615043-4ca9-43b8-b91e-37488a99a686" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
@@ -227,51 +226,51 @@
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42FB1gEVPROpQ5OZC%2Fcounting_sort_dict.py?alt=media&amp;token=71951ab1-f7e1-4395-9a35-b3adeca63864" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting\_sort\_dict.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting_sort_dict.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting\_sort\_dict.py - 460B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting_sort_dict.py - 460B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42GMvUR8CZ3LtB8OK%2Fcounting_sort_list.py?alt=media&amp;token=ee448e03-12c0-4bc4-9ea5-a1ff26230ada" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting\_sort\_list.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting_sort_list.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting\_sort\_list.py - 610B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting_sort_list.py - 610B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42HVLO7elqAZohz74%2Fdfs_component_dict.py?alt=media&amp;token=cef4900c-8980-4090-b8e6-009674b75e3a" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs\_component\_dict.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs_component_dict.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs\_component\_dict.py - 531B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs_component_dict.py - 531B</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="edb48c74f13d4992b657a1865045ca9d"><span data-offset-key="edb48c74f13d4992b657a1865045ca9d:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42Mg144KluIJreEP4%2Fselection_sort_recur.py?alt=media&amp;token=9e86e59e-3497-41bf-9cac-85b54714e424" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">selection\_sort\_recur.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">selection_sort_recur.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">selection\_sort\_recur.py - 468B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">selection_sort_recur.py - 468B</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e95520012cf480c8aa1a623af996240"><span data-offset-key="1e95520012cf480c8aa1a623af996240:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42LTdkTfFo_JfpZfz%2Fselection_sort_iter.py?alt=media&amp;token=908d43a9-ddaa-44bb-9312-664c934cbf2e" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">selection\_sort\_iter.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">selection_sort_iter.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">selection\_sort\_iter.py - 709B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">selection_sort_iter.py - 709B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42QpGHLzqjlaR5sY4%2Fdijkstras_path_pq.py?alt=media&amp;token=6b5dc80b-45f3-464b-9435-06d2afd8f418" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dijkstras\_path\_pq.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dijkstras_path_pq.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dijkstras\_path\_pq.py - 1KB</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dijkstras_path_pq.py - 1KB</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04823cd143234220b73e7b503bfe9e3c"><span data-offset-key="04823cd143234220b73e7b503bfe9e3c:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42RwOb4Z9rHnyGjLJ%2Fdijkstras_distances_min.py?alt=media&amp;token=6e7aba0e-1c74-4983-8771-dd7708ca2ab9" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dijkstras\_distances\_min.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dijkstras_distances_min.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dijkstras\_distances\_min.py - 1KB</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dijkstras_distances_min.py - 1KB</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42PPle2aC0mluXVM0%2Fquicksort.py?alt=media&amp;token=cb4b8b7d-7b35-41a4-a586-4bdded9e2f74" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
@@ -281,23 +280,23 @@
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42VPWBTswpBXtIOO9%2Fcounting_sort_list.py?alt=media&amp;token=8671c6a9-9ca7-4571-abb0-01e54da1d0de" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting\_sort\_list.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">counting_sort_list.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting\_sort\_list.py - 610B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">counting_sort_list.py - 610B</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1a382d4174a4aca935d34123fa4dce7"><span data-offset-key="f1a382d4174a4aca935d34123fa4dce7:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42WntLfq0BZKUvdm0%2Fdfs_component_dict.py?alt=media&amp;token=bbef19c6-3c92-499a-9654-75f0d8c0c7e3" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs\_component\_dict.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs_component_dict.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs\_component\_dict.py - 531B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs_component_dict.py - 531B</span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj41LbPING_Cx7empuV%2F-Mj42XhuKbVn8ez6X897%2Fdfs_component_dict_recur.py?alt=media&amp;token=38ca48fa-f454-4a50-8d37-507af4721d4e" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs\_component\_dict\_recur.py</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">dfs_component_dict_recur.py</span>
 
-<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs\_component\_dict\_recur.py - 641B</span>
+<span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">dfs_component_dict_recur.py - 641B</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0877e2eb201448b9556b2f316bbf618"><span data-offset-key="d0877e2eb201448b9556b2f316bbf618:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

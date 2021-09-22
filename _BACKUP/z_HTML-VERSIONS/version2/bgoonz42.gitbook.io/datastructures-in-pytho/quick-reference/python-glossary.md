@@ -120,8 +120,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Glossary</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Glossary</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -201,9 +200,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c565f5932fe54c0ba6d158e18d711c30"><span data-offset-key="c565f5932fe54c0ba6d158e18d711c30:0">A pseudo-module which programmers can use to enable new language features which are not compatible with the current interpreter.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="654b5e15c0a041cb9d551e377026c394"><span data-offset-key="654b5e15c0a041cb9d551e377026c394:0">**easy\_install**</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="654b5e15c0a041cb9d551e377026c394"><span data-offset-key="654b5e15c0a041cb9d551e377026c394:0">**easy_install**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd25714e607044049c9426464cc710c7"><span data-offset-key="fd25714e607044049c9426464cc710c7:0">Easy Install is a python module (easy\_install) bundled with setuptools that lets you automatically download, build, install, and manage Python packages.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd25714e607044049c9426464cc710c7"><span data-offset-key="fd25714e607044049c9426464cc710c7:0">Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically download, build, install, and manage Python packages.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7582aa28a6344ed8b2e18e63c7ad6dc"><span data-offset-key="d7582aa28a6344ed8b2e18e63c7ad6dc:0">**evaluation order**</span></span></span>
 

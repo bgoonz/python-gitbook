@@ -164,8 +164,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">OS Module</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">OS Module</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -179,7 +178,7 @@
 
     import osimport time
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="89d7a352f77e4c20b28792c70743bd37"><span data-offset-key="89d7a352f77e4c20b28792c70743bd37:0">Create a Function for Create Folders</span></span></span>
 
@@ -191,7 +190,7 @@
 
     def createFolders(HOME_FOLDER):    for i in range(10):            os.mkdir(HOME_FOLDER + str(i) + '-Dir')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2440bf7c16cb4649b53cc8eda2326242"><span data-offset-key="2440bf7c16cb4649b53cc8eda2326242:0">Create a Function for Create Files</span></span></span>
 
@@ -203,7 +202,7 @@
 
     def createFiles(HOME_FOLDER):    for i in range(10):        f = open(HOME_FOLDER + str(i) + '-File.txt', 'w')        f.close()
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7dd3b7c3f5f644c280e0d489ba53e4b7"><span data-offset-key="7dd3b7c3f5f644c280e0d489ba53e4b7:0">Create a Function for Rename Files</span></span></span>
 

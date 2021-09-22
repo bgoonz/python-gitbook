@@ -120,8 +120,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">python-setup</span>
-=================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">python-setup</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -147,19 +146,19 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="65eccccbfa064862a14c804abf30b678"><span data-offset-key="65eccccbfa064862a14c804abf30b678:0">Key terms</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0d4442d884c43149911959bdb954bca"><span data-offset-key="d0d4442d884c43149911959bdb954bca:0">`pip`</span><span data-offset-key="d0d4442d884c43149911959bdb954bca:1"> is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0d4442d884c43149911959bdb954bca"><span data-offset-key="d0d4442d884c43149911959bdb954bca:0">`pip`</span><span data-offset-key="d0d4442d884c43149911959bdb954bca:1"> is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f765ac9ca124ab8bd7824c07501bb16"><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:0">A </span><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:1">*virtual environment*</span><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:2"> is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f765ac9ca124ab8bd7824c07501bb16"><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:0">A </span><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:1">_virtual environment_</span><span data-offset-key="4f765ac9ca124ab8bd7824c07501bb16:2"> is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="273d67add3eb4fe291a1c23e93f4b7d4"><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:0">`venv`</span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:1"> is the standard tool for creating virtual environments, and has been part of Python since Python 3.3. Starting with Python 3.4, it defaults to installing </span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:2">`pip`</span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:3"> into all created virtual environments.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="273d67add3eb4fe291a1c23e93f4b7d4"><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:0">`venv`</span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:1"> is the standard tool for creating virtual environments, and has been part of Python since Python 3.3. Starting with Python 3.4, it defaults to installing </span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:2">`pip`</span><span data-offset-key="273d67add3eb4fe291a1c23e93f4b7d4:3"> into all created virtual environments.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e"><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:0">`virtualenv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:1"> is a third party alternative (and predecessor) to </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:2">`venv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:3">. It allows virtual environments to be used on versions of Python prior to 3.4, which either don’t provide </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:4">`venv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:5"> at all, or aren’t able to automatically install </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:6">`pip`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:7"> into created environments.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e"><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:0">`virtualenv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:1"> is a third party alternative (and predecessor) to </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:2">`venv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:3">. It allows virtual environments to be used on versions of Python prior to 3.4, which either don’t provide </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:4">`venv`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:5"> at all, or aren’t able to automatically install </span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:6">`pip`</span><span data-offset-key="b5a2400fc8fc4c9bbae0fcf4ca83d86e:7"> into created environments.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf587da9efb9463f99c61666c725fadb"><span data-offset-key="bf587da9efb9463f99c61666c725fadb:0">The </span></span><a href="https://pypi.org/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ebb233ac845143e39107e5f6fe6a9d73"><span data-offset-key="ebb233ac845143e39107e5f6fe6a9d73:0">Python Packaging Index</span></span></a><span data-key="3799573a16f54187b5c8d2417c551743"><span data-offset-key="3799573a16f54187b5c8d2417c551743:0"> is a public repository of open source licensed packages made available for use by other Python users.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf587da9efb9463f99c61666c725fadb"><span data-offset-key="bf587da9efb9463f99c61666c725fadb:0">The </span></span><a href="https://pypi.org/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ebb233ac845143e39107e5f6fe6a9d73"><span data-offset-key="ebb233ac845143e39107e5f6fe6a9d73:0">Python Packaging Index</span></span></a><span data-key="3799573a16f54187b5c8d2417c551743"><span data-offset-key="3799573a16f54187b5c8d2417c551743:0"> is a public repository of open source licensed packages made available for use by other Python users.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16321191ced24f0cada91114511a45c0"><span data-offset-key="16321191ced24f0cada91114511a45c0:0">the </span></span><a href="https://www.pypa.io/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4814a6897cce4fbdacd3a7150f17b239"><span data-offset-key="4814a6897cce4fbdacd3a7150f17b239:0">Python Packaging Authority</span></span></a><span data-key="9b15ad3697d644c4a716b4b8bf8fd2a8"><span data-offset-key="9b15ad3697d644c4a716b4b8bf8fd2a8:0"> is the group of developers and documentation authors responsible for the maintenance and evolution of the standard packaging tools and the associated metadata and file format standards. They maintain a variety of tools, documentation, and issue trackers on both </span></span><a href="https://github.com/pypa" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a69962b59a6c43a2b2613fda2b1815ce"><span data-offset-key="a69962b59a6c43a2b2613fda2b1815ce:0">GitHub</span></span></a><span data-key="d6f28052061543629003c67d5021f9fd"><span data-offset-key="d6f28052061543629003c67d5021f9fd:0"> and </span></span><a href="https://bitbucket.org/pypa/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c892bc0ac77e41cbaa0368cc26cce517"><span data-offset-key="c892bc0ac77e41cbaa0368cc26cce517:0">Bitbucket</span></span></a><span data-key="da061649a2ea4590bb79fe7ee9ef3688"><span data-offset-key="da061649a2ea4590bb79fe7ee9ef3688:0">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16321191ced24f0cada91114511a45c0"><span data-offset-key="16321191ced24f0cada91114511a45c0:0">the </span></span><a href="https://www.pypa.io/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4814a6897cce4fbdacd3a7150f17b239"><span data-offset-key="4814a6897cce4fbdacd3a7150f17b239:0">Python Packaging Authority</span></span></a><span data-key="9b15ad3697d644c4a716b4b8bf8fd2a8"><span data-offset-key="9b15ad3697d644c4a716b4b8bf8fd2a8:0"> is the group of developers and documentation authors responsible for the maintenance and evolution of the standard packaging tools and the associated metadata and file format standards. They maintain a variety of tools, documentation, and issue trackers on both </span></span><a href="https://github.com/pypa" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a69962b59a6c43a2b2613fda2b1815ce"><span data-offset-key="a69962b59a6c43a2b2613fda2b1815ce:0">GitHub</span></span></a><span data-key="d6f28052061543629003c67d5021f9fd"><span data-offset-key="d6f28052061543629003c67d5021f9fd:0"> and </span></span><a href="https://bitbucket.org/pypa/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c892bc0ac77e41cbaa0368cc26cce517"><span data-offset-key="c892bc0ac77e41cbaa0368cc26cce517:0">Bitbucket</span></span></a><span data-key="da061649a2ea4590bb79fe7ee9ef3688"><span data-offset-key="da061649a2ea4590bb79fe7ee9ef3688:0">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9fe1eca601348278c5d6ac98d9c3b0f"><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:0">`distutils`</span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:1"> is the original build and distribution system first added to the Python standard library in 1998. While direct use of </span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:2">`distutils`</span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:3"> is being phased out, it still laid the foundation for the current packaging and distribution infrastructure, and it not only remains part of the standard library, but its name lives on in other ways (such as the name of the mailing list used to coordinate Python packaging standards development).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9fe1eca601348278c5d6ac98d9c3b0f"><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:0">`distutils`</span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:1"> is the original build and distribution system first added to the Python standard library in 1998. While direct use of </span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:2">`distutils`</span><span data-offset-key="d9fe1eca601348278c5d6ac98d9c3b0f:3"> is being phased out, it still laid the foundation for the current packaging and distribution infrastructure, and it not only remains part of the standard library, but its name lives on in other ways (such as the name of the mailing list used to coordinate Python packaging standards development).</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8817bb4cad2d4b0898c5dcbee00db9b7"><span data-offset-key="8817bb4cad2d4b0898c5dcbee00db9b7:0">Changed in version 3.5: The use of </span><span data-offset-key="8817bb4cad2d4b0898c5dcbee00db9b7:1">`venv`</span><span data-offset-key="8817bb4cad2d4b0898c5dcbee00db9b7:2"> is now recommended for creating virtual environments.</span></span></span>
 
@@ -201,7 +200,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b5feda558af9464aa2bacae6d6b9744a"><span data-offset-key="b5feda558af9464aa2bacae6d6b9744a:0">These are quick answers or links for some common tasks.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f367c70e35684b1a9cfe2ffc9e1c241b"><span data-offset-key="f367c70e35684b1a9cfe2ffc9e1c241b:0">… install </span><span data-offset-key="f367c70e35684b1a9cfe2ffc9e1c241b:1">`pip`</span><span data-offset-key="f367c70e35684b1a9cfe2ffc9e1c241b:2"> in versions of Python prior to Python 3.4?</span></span></span>
 
@@ -211,13 +210,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93cb7d0a4a704e65b3c75200c5d57114"><span data-offset-key="93cb7d0a4a704e65b3c75200c5d57114:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/installing/#requirements-for-installing-packages" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4078c098dd644e398cb0b2b726d8ceb6"><span data-offset-key="4078c098dd644e398cb0b2b726d8ceb6:0">Python Packaging User Guide: Requirements for Installing Packages</span></span></a><span data-key="6b1e247fb6d74db78afa98484760a65b"><span data-offset-key="6b1e247fb6d74db78afa98484760a65b:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fee16f5cabf04203a7741bddf777574f"><span data-offset-key="fee16f5cabf04203a7741bddf777574f:0">… install packages just for the current user?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a629d9cc2ca4df8920a4b222754f3e0"><span data-offset-key="6a629d9cc2ca4df8920a4b222754f3e0:0">Passing the </span><span data-offset-key="6a629d9cc2ca4df8920a4b222754f3e0:1">`--user`</span><span data-offset-key="6a629d9cc2ca4df8920a4b222754f3e0:2"> option to </span><span data-offset-key="6a629d9cc2ca4df8920a4b222754f3e0:3">`python -m pip install`</span><span data-offset-key="6a629d9cc2ca4df8920a4b222754f3e0:4"> will install a package just for the current user, rather than for all users of the system.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2701c3f2dc4b41ffb17aebbfc70f1c39"><span data-offset-key="2701c3f2dc4b41ffb17aebbfc70f1c39:0">… install scientific Python packages?</span></span></span>
 
@@ -227,7 +226,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="83b42b64a1d8480f8f6a9172c477be9a"><span data-offset-key="83b42b64a1d8480f8f6a9172c477be9a:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/science/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="556af443de30466aaf59667b9e476e8e"><span data-offset-key="556af443de30466aaf59667b9e476e8e:0">Python Packaging User Guide: Installing Scientific Packages</span></span></a><span data-key="9f0a231bd65d40d48170cf709a7ac957"><span data-offset-key="9f0a231bd65d40d48170cf709a7ac957:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="30cc8d0cd1c5434485583ad953dd8bcb"><span data-offset-key="30cc8d0cd1c5434485583ad953dd8bcb:0">… work with multiple versions of Python installed in parallel?</span></span></span>
 
@@ -243,7 +242,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="240c806816b54fb98aa7601a6029a187"><span data-offset-key="240c806816b54fb98aa7601a6029a187:0">Common installation issues</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="91b63d718f3f41a7886f1a4a04662730"><span data-offset-key="91b63d718f3f41a7886f1a4a04662730:0">Installing into the system Python on Linux</span></span></span>
 
@@ -251,7 +250,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="051950d9fcf44d87bcbe168a89cbd5b0"><span data-offset-key="051950d9fcf44d87bcbe168a89cbd5b0:0">On such systems, it is often better to use a virtual environment or a per-user installation when installing packages with </span><span data-offset-key="051950d9fcf44d87bcbe168a89cbd5b0:1">`pip`</span><span data-offset-key="051950d9fcf44d87bcbe168a89cbd5b0:2">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0eb0617010794515af26d6c2ad97446f"><span data-offset-key="0eb0617010794515af26d6c2ad97446f:0">Pip not installed</span></span></span>
 
@@ -261,7 +260,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="100c9d324cab4af6b62756c0c7c5e685"><span data-offset-key="100c9d324cab4af6b62756c0c7c5e685:0">There are also additional resources for </span></span><a href="https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c95b20e1276547ac9efa76c4ba517912"><span data-offset-key="c95b20e1276547ac9efa76c4ba517912:0">installing pip.</span></span></a><span data-key="839c53cbbad044e18f90583188f326cb"><span data-offset-key="839c53cbbad044e18f90583188f326cb:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="587f9aa506cd4ba49b4204a1183b7d26"><span data-offset-key="587f9aa506cd4ba49b4204a1183b7d26:0">Installing binary extensions</span></span></span>
 

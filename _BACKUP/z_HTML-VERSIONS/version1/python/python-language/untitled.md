@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Collections In Python</span>
-==========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Collections In Python</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -163,13 +162,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24239124563146e68ac14f78eb868815"><span data-offset-key="24239124563146e68ac14f78eb868815:0">Collections in python are basically container data types, namely lists, sets, tuples, dictionary. They have different characteristics based on the declaration and usage.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e29dda8e82b346fead9e2f8f1c54260d"><span data-offset-key="e29dda8e82b346fead9e2f8f1c54260d:0">A list is declared in square brackets, it is mutable, stores duplicate values and elements can be accessed using indexes.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e29dda8e82b346fead9e2f8f1c54260d"><span data-offset-key="e29dda8e82b346fead9e2f8f1c54260d:0">A list is declared in square brackets, it is mutable, stores duplicate values and elements can be accessed using indexes.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d6e1ae6aa6c40ac93aad15c8ec9b40e"><span data-offset-key="3d6e1ae6aa6c40ac93aad15c8ec9b40e:0">A tuple is ordered and immutable in nature, although duplicate entries can be there inside a tuple.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d6e1ae6aa6c40ac93aad15c8ec9b40e"><span data-offset-key="3d6e1ae6aa6c40ac93aad15c8ec9b40e:0">A tuple is ordered and immutable in nature, although duplicate entries can be there inside a tuple.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77d1a81c4faf4185bac030b8c7e984ad"><span data-offset-key="77d1a81c4faf4185bac030b8c7e984ad:0">A set is unordered and declared in square brackets. It is not indexed and does not have duplicate entries as well.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77d1a81c4faf4185bac030b8c7e984ad"><span data-offset-key="77d1a81c4faf4185bac030b8c7e984ad:0">A set is unordered and declared in square brackets. It is not indexed and does not have duplicate entries as well.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="67e644eb32114039ac964c4475a92a71"><span data-offset-key="67e644eb32114039ac964c4475a92a71:0">A dictionary has key-value pairs and is mutable in nature. We use square brackets to declare a dictionary.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="67e644eb32114039ac964c4475a92a71"><span data-offset-key="67e644eb32114039ac964c4475a92a71:0">A dictionary has key-value pairs and is mutable in nature. We use square brackets to declare a dictionary.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17f3bede808640188960582e133d10d9"><span data-offset-key="17f3bede808640188960582e133d10d9:0">These are the python’s general-purpose built-in container data types. But as we all know, python always has a little something extra to offer. It comes with a python module named collections which has specialized data structures.</span></span></span>
 
@@ -255,7 +254,7 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eddd1720a955493598cf33fda020a338"><span data-offset-key="eddd1720a955493598cf33fda020a338:0">element function — It returns a list containing all the elements in the Counter.</span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="153b564ac61844b4a94ffe9755f53150"><span data-offset-key="153b564ac61844b4a94ffe9755f53150:0">Most\_common( ) — It returns a sorted list with the count of each element in the Counter.</span></span></span>
+2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="153b564ac61844b4a94ffe9755f53150"><span data-offset-key="153b564ac61844b4a94ffe9755f53150:0">Most_common( ) — It returns a sorted list with the count of each element in the Counter.</span></span></span>
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b3a95798dc794e00b4fce430f63386de"><span data-offset-key="b3a95798dc794e00b4fce430f63386de:0">Subtract( ) — It takes an iterable object as an argument and deducts the count of the elements in the Counter.</span></span></span>
 

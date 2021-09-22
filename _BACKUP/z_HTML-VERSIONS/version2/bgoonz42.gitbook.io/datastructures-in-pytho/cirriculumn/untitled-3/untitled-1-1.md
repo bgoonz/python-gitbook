@@ -132,8 +132,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Python II</span>
-==============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Python II</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -213,7 +212,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="58790c647d14428c95e60917a499dd71"><span data-offset-key="58790c647d14428c95e60917a499dd71:0">**Follow Along**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="39587b79454044a79a37aa248f695901"><span data-offset-key="39587b79454044a79a37aa248f695901:0">**Basic Properties of a Linked List**</span></span></span>
 
@@ -245,59 +244,59 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ac04d35985449f3822e3e7347200d62"><span data-offset-key="2ac04d35985449f3822e3e7347200d62:0">A Circular Linked List links the last node back to the first node in the list. This linkage causes a circular traversal; when you get to the end of the list, the next item will be back at the beginning of the list. Each type of linked list is similar but has small distinctions. When working with linked lists, it’s essential to know what type of linked list.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="280e02d5439d44f9a399569830484009"><span data-offset-key="280e02d5439d44f9a399569830484009:0">**Time and Space Complexity**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="161e7a92d219414e9dafb68e48c53313"><span data-offset-key="161e7a92d219414e9dafb68e48c53313:0">**Lookup**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ff59f374bec4bc19c2818480fa1fd01"><span data-offset-key="8ff59f374bec4bc19c2818480fa1fd01:0">To look up an item by index in a linked list is linear time (</span><span data-offset-key="8ff59f374bec4bc19c2818480fa1fd01:1">`O(n)`</span><span data-offset-key="8ff59f374bec4bc19c2818480fa1fd01:2">). To traverse through a linked list, you have to start with the head reference to the node and then follow each subsequent pointer to the next item in the chain. Because each item in the linked list is not stored contiguously in memory, you cannot access a specific index of the list using simple math. The distance in memory between one item and the next is varied and unknown.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5bbdcaea4eae4d8788ce97ee8e52ccab"><span data-offset-key="5bbdcaea4eae4d8788ce97ee8e52ccab:0">**Append**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7998f04c3d0f4e0b9d390bf468f96ffe"><span data-offset-key="7998f04c3d0f4e0b9d390bf468f96ffe:0">Adding an item to a linked list is constant time (</span><span data-offset-key="7998f04c3d0f4e0b9d390bf468f96ffe:1">`O(1)`</span><span data-offset-key="7998f04c3d0f4e0b9d390bf468f96ffe:2">). We always have a reference point to the tail of the linked list, so we can easily insert an item after the tail.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4911fbf0dcb44a2782be8aa0d9185d9a"><span data-offset-key="4911fbf0dcb44a2782be8aa0d9185d9a:0">**Insert**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5ae52ad58270415fb9dff4ec68eb70a8"><span data-offset-key="5ae52ad58270415fb9dff4ec68eb70a8:0">In the worst case, inserting an item in a linked list is linear time (</span><span data-offset-key="5ae52ad58270415fb9dff4ec68eb70a8:1">`O(n)`</span><span data-offset-key="5ae52ad58270415fb9dff4ec68eb70a8:2">). To insert an item at a specific index, we have to traverse — starting at the head — until we reach the desired index.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="73d5f5f7adc845c7a81ec235fd9e7668"><span data-offset-key="73d5f5f7adc845c7a81ec235fd9e7668:0">**Delete**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86c9008cb62b435baef9b9046b046348"><span data-offset-key="86c9008cb62b435baef9b9046b046348:0">In the worst case, deleting an item in a linked list is linear time (</span><span data-offset-key="86c9008cb62b435baef9b9046b046348:1">`O(n)`</span><span data-offset-key="86c9008cb62b435baef9b9046b046348:2">). Just like insertion, deleting an item at a specific index means traversing the list starting at the head.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="748cbfaa3b4749e5ac8c413c5f59001a"><span data-offset-key="748cbfaa3b4749e5ac8c413c5f59001a:0">**Space**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24716c7833ad4d2f89a10da22320af3f"><span data-offset-key="24716c7833ad4d2f89a10da22320af3f:0">The space complexity of a linked list is linear (</span><span data-offset-key="24716c7833ad4d2f89a10da22320af3f:1">`O(n)`</span><span data-offset-key="24716c7833ad4d2f89a10da22320af3f:2">). Each item in the linked list will take up space in memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fc50741fccb04463975b2e4f23c7b502"><span data-offset-key="fc50741fccb04463975b2e4f23c7b502:0">**Strengths of a Linked List**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4f742bcbf354988a32a941dc35bf618"><span data-offset-key="e4f742bcbf354988a32a941dc35bf618:0">The primary strength of a linked list is that operations on the linked list's ends are fast. This is because the linked list always has a reference to the head (the first node) and the tail (the last node) of the list. Because it has a reference, doing anything on the ends is a constant time operation (</span><span data-offset-key="e4f742bcbf354988a32a941dc35bf618:1">`O(1)`</span><span data-offset-key="e4f742bcbf354988a32a941dc35bf618:2">) no matter how many items are stored in the linked list. Additionally, just like a dynamic array, you don't have to set a capacity to a linked list when you instantiate it. If you don't know the size of the data you are storing, or if the amount of data is likely to fluctuate, linked lists can work well. One benefit over a dynamic array is that you don't have doubling appends. This is because each item doesn't have to be stored contiguously; whenever you add an item, you need to find an open spot in memory to hold the next node.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="82107b1f60e24f68b6ffc8cc932e7032"><span data-offset-key="82107b1f60e24f68b6ffc8cc932e7032:0">**Weaknesses of a Linked List**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac18d54ce6ba40938307962655a4c7cb"><span data-offset-key="ac18d54ce6ba40938307962655a4c7cb:0">The main weakness of a linked list is not efficiently accessing an "index" in the middle of the list. The only way that the linked list can get to the seventh item in the linked list is by going to the head node and then traversing one node at a time until you arrive at the seventh node. You can't do simple math and jump from the first item to the seventh.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="43abbba9a13143e8b246aab2b50c70a7"><span data-offset-key="43abbba9a13143e8b246aab2b50c70a7:0">**What data structures are built on linked lists?**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b302bca7fd8429a9960d84c62c349e8"><span data-offset-key="1b302bca7fd8429a9960d84c62c349e8:0">Remember that linked lists have efficient operations on the ends (head and tail). There are two structures that only operate on the ends; queues and stacks. So, most queue or stack implementations use a linked list as their underlying data structure.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="97e5663056074688a26f4e006556209d"><span data-offset-key="97e5663056074688a26f4e006556209d:0">**Why is a linked list different than an array? What problem does it solve?**</span></span></span>
 
@@ -307,7 +306,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bac52e2f5ee146a9b2ca1c7023717321"><span data-offset-key="bac52e2f5ee146a9b2ca1c7023717321:0">With a linked list, the elements are not stored side-by-side in memory. Each element can be stored anywhere in memory. In addition to storing the data for that element, each element also stores a pointer to the memory location of the next element in the list. The elements in a linked list do not have an index. To get to a specific element in a linked list, you have to start at the head of the linked list and work your way through the list, one element at a time, to reach the specific element you are searching for. Now you can see how a linked list solves some of the problems that the array data structure has.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aba4d695f89745ff87b91f3ccaa4ec72"><span data-offset-key="aba4d695f89745ff87b91f3ccaa4ec72:0">**How do you represent a linked list graphically and in Python code?**</span></span></span>
 
@@ -345,9 +344,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1b70d7557616431ca509ac4b669b2f45"><span data-offset-key="1b70d7557616431ca509ac4b669b2f45:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43257486bab1462da5aa20a2981b3dc8"><span data-offset-key="43257486bab1462da5aa20a2981b3dc8:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2cb2a4bfab5a475183cb7814e5003f84"><span data-offset-key="2cb2a4bfab5a475183cb7814e5003f84:0">https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)</span></span></a><span data-key="8ec588dab3fc447eb0c421e2d5ee0c92"><span data-offset-key="8ec588dab3fc447eb0c421e2d5ee0c92:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43257486bab1462da5aa20a2981b3dc8"><span data-offset-key="43257486bab1462da5aa20a2981b3dc8:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2cb2a4bfab5a475183cb7814e5003f84"><span data-offset-key="2cb2a4bfab5a475183cb7814e5003f84:0">https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)</span></span></a><span data-key="8ec588dab3fc447eb0c421e2d5ee0c92"><span data-offset-key="8ec588dab3fc447eb0c421e2d5ee0c92:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e3ef8106c1f14012af12eda18d385365"><span data-offset-key="e3ef8106c1f14012af12eda18d385365:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=njTh_OwMljA" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6cee0afaf3b1414883f0caf41c7fcd94"><span data-offset-key="6cee0afaf3b1414883f0caf41c7fcd94:0">https://www.youtube.com/watch?v=njTh_OwMljA (Links to an external site.)</span></span></a><span data-key="8d2ce4b6fb7d447aacb6e454e6ae338e"><span data-offset-key="8d2ce4b6fb7d447aacb6e454e6ae338e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e3ef8106c1f14012af12eda18d385365"><span data-offset-key="e3ef8106c1f14012af12eda18d385365:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=njTh_OwMljA" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6cee0afaf3b1414883f0caf41c7fcd94"><span data-offset-key="6cee0afaf3b1414883f0caf41c7fcd94:0">https://www.youtube.com/watch?v=njTh_OwMljA (Links to an external site.)</span></span></a><span data-key="8d2ce4b6fb7d447aacb6e454e6ae338e"><span data-offset-key="8d2ce4b6fb7d447aacb6e454e6ae338e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf22a4ddae444bd78f4e387164fda38d"><span data-offset-key="bf22a4ddae444bd78f4e387164fda38d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b645b0a869584e969dd9c836857aee03"><span data-offset-key="b645b0a869584e969dd9c836857aee03:0">GitHub - bgoonz/DATA_STRUC_PYTHON_NOTES</span></span></a><span data-key="f11a8d693b5b4270a1af922670742084"><span data-offset-key="f11a8d693b5b4270a1af922670742084:0"><span data-slate-zero-width="z">​</span></span></span></span>
 

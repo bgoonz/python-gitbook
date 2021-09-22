@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Misc</span>
-=========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Misc</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -209,7 +208,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="725995b5f2b74efcb29bd55b83d83065"><span data-offset-key="725995b5f2b74efcb29bd55b83d83065:0">Python syntax was made for readability, and easy editing. For example, the python language uses a </span><span data-offset-key="725995b5f2b74efcb29bd55b83d83065:1">`:`</span><span data-offset-key="725995b5f2b74efcb29bd55b83d83065:2"> and indented code, while javascript and others generally use </span><span data-offset-key="725995b5f2b74efcb29bd55b83d83065:3">`{}`</span><span data-offset-key="725995b5f2b74efcb29bd55b83d83065:4"> and indented code.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c7c3ac5aaf446439d96b18b9cd43625"><span data-offset-key="3c7c3ac5aaf446439d96b18b9cd43625:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="07c91866fc344a48b33a590eaed31939"><span data-offset-key="07c91866fc344a48b33a590eaed31939:0">python 3</span></span></a><span data-key="0bf72673e9314723a02cff9505e6eaaa"><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:0"> repl, and call it </span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:1">*Hello World*</span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:2">. Now you have a blank file called </span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:3">*main.py*</span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:4">. Now let us write our first line of code:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c7c3ac5aaf446439d96b18b9cd43625"><span data-offset-key="3c7c3ac5aaf446439d96b18b9cd43625:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="07c91866fc344a48b33a590eaed31939"><span data-offset-key="07c91866fc344a48b33a590eaed31939:0">python 3</span></span></a><span data-key="0bf72673e9314723a02cff9505e6eaaa"><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:0"> repl, and call it </span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:1">_Hello World_</span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:2">. Now you have a blank file called </span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:3">_main.py_</span><span data-offset-key="0bf72673e9314723a02cff9505e6eaaa:4">. Now let us write our first line of code:</span></span></span>
 
 <a href="untitled-1.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

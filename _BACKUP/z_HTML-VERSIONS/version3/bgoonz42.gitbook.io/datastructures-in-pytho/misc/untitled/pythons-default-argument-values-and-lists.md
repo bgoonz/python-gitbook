@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python's Default Argument Values and Lists</span>
-===============================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python's Default Argument Values and Lists</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -169,7 +168,7 @@
 
     def foo(a=[]):    # ... do something with `a` here ...    return a
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="737173e04b66473e9a3d7d0c9272d965"><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:0">And it's not just with lists--the problem manifests with any </span><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:1">*mutable*</span><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:2"> data type when it is used as a default argument value.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="737173e04b66473e9a3d7d0c9272d965"><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:0">And it's not just with lists--the problem manifests with any </span><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:1">_mutable_</span><span data-offset-key="737173e04b66473e9a3d7d0c9272d965:2"> data type when it is used as a default argument value.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e76208cedb09494e94b0535f06a74b37"><span data-offset-key="e76208cedb09494e94b0535f06a74b37:0">Here's what happening, and here's how to fix it.</span></span></span>
 
@@ -193,11 +192,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6fbaa2cc3c8d460f97500aa25522be2f"><span data-offset-key="6fbaa2cc3c8d460f97500aa25522be2f:0">What's going on?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be32505052294ddf9012fe95eaef1904"><span data-offset-key="be32505052294ddf9012fe95eaef1904:0">This all has to do with </span><span data-offset-key="be32505052294ddf9012fe95eaef1904:1">*when*</span><span data-offset-key="be32505052294ddf9012fe95eaef1904:2"> the default value is created.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be32505052294ddf9012fe95eaef1904"><span data-offset-key="be32505052294ddf9012fe95eaef1904:0">This all has to do with </span><span data-offset-key="be32505052294ddf9012fe95eaef1904:1">_when_</span><span data-offset-key="be32505052294ddf9012fe95eaef1904:2"> the default value is created.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ef3aee7755d417983b7af394591e866"><span data-offset-key="8ef3aee7755d417983b7af394591e866:0">Javascript creates the default empty </span><span data-offset-key="8ef3aee7755d417983b7af394591e866:1">`[]`</span><span data-offset-key="8ef3aee7755d417983b7af394591e866:2"> </span><span data-offset-key="8ef3aee7755d417983b7af394591e866:3">*when the function is called*</span><span data-offset-key="8ef3aee7755d417983b7af394591e866:4">. So each time you call it, it makes a new empty array. Every call returns a different array.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ef3aee7755d417983b7af394591e866"><span data-offset-key="8ef3aee7755d417983b7af394591e866:0">Javascript creates the default empty </span><span data-offset-key="8ef3aee7755d417983b7af394591e866:1">`[]`</span><span data-offset-key="8ef3aee7755d417983b7af394591e866:2"> </span><span data-offset-key="8ef3aee7755d417983b7af394591e866:3">_when the function is called_</span><span data-offset-key="8ef3aee7755d417983b7af394591e866:4">. So each time you call it, it makes a new empty array. Every call returns a different array.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c44bcbcd8154f078f8b23c5f65c333b"><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:0">Python creates the default empty </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:1">`[]`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:2"> </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:3">*when the function is loaded*</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:4">. So it gets created once only when the program is first read into memory, and that's it. There's only one default list no matter how many times you call the function. And so </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:5">`foo()`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:6"> is returning </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:7">*the same list*</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:8"> every time you call it with no arguments. This is why another </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:9">`1`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:10"> gets added on each call--</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:11">`.append(1)`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:12"> is happening to the same list every time.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c44bcbcd8154f078f8b23c5f65c333b"><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:0">Python creates the default empty </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:1">`[]`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:2"> </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:3">_when the function is loaded_</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:4">. So it gets created once only when the program is first read into memory, and that's it. There's only one default list no matter how many times you call the function. And so </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:5">`foo()`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:6"> is returning </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:7">_the same list_</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:8"> every time you call it with no arguments. This is why another </span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:9">`1`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:10"> gets added on each call--</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:11">`.append(1)`</span><span data-offset-key="9c44bcbcd8154f078f8b23c5f65c333b:12"> is happening to the same list every time.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="df0e327cbaed49bba7205b5b621f3ca0"><span data-offset-key="df0e327cbaed49bba7205b5b621f3ca0:0">Indeed, if you run this in Python:</span></span></span>
 
@@ -213,7 +212,7 @@
 
     $ python3 default_good.py[1][1][1]
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26b70e6834c24e54aaff2351efcad929"><span data-offset-key="26b70e6834c24e54aaff2351efcad929:0">Now, if we had a function that used an </span><span data-offset-key="26b70e6834c24e54aaff2351efcad929:1">*immutable*</span><span data-offset-key="26b70e6834c24e54aaff2351efcad929:2"> value as a default argument, we have no problem even though the same process is happening.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26b70e6834c24e54aaff2351efcad929"><span data-offset-key="26b70e6834c24e54aaff2351efcad929:0">Now, if we had a function that used an </span><span data-offset-key="26b70e6834c24e54aaff2351efcad929:1">_immutable_</span><span data-offset-key="26b70e6834c24e54aaff2351efcad929:2"> value as a default argument, we have no problem even though the same process is happening.</span></span></span>
 
     def foo(a="hello!"):    return a
 

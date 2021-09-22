@@ -130,8 +130,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3- Module 03 - Binary Search Trees</span>
-========================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3- Module 03 - Binary Search Trees</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -157,7 +156,7 @@
 
 <figure><img src="https://tk-assets.lambdaschool.com/c00c8f45-abff-4c3a-b29b-92631b5ac88e_binary-tree-example.001.png" alt="https://tk-assets.lambdaschool.com/c00c8f45-abff-4c3a-b29b-92631b5ac88e_binary-tree-example.001.png" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">https://tk-assets.lambdaschool.com/c00c8f45-abff-4c3a-b29b-92631b5ac88e_binary-tree-example.001.png</span></figcaption></figure>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aca035b94d1946469a5081ddee7acfa4"><span data-offset-key="aca035b94d1946469a5081ddee7acfa4:0">"Perfect" Trees</span></span></span>
 
@@ -169,7 +168,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2910cb0e4a1340b88f54e5c92cb82c57"><span data-offset-key="2910cb0e4a1340b88f54e5c92cb82c57:0">Second, the quantity of the last level's nodes is the same as the quantity of all the other nodes plus one.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f09dc37ff29436daabd19574adaa878"><span data-offset-key="3f09dc37ff29436daabd19574adaa878:0">These properties are useful for understanding how to calculate the </span><span data-offset-key="3f09dc37ff29436daabd19574adaa878:1">*height*</span><span data-offset-key="3f09dc37ff29436daabd19574adaa878:2"> of a tree. The height of a tree is the number of levels that it contains. Based on the properties outlined above, we can deduce that we can calculate the tree's height with the following formula:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f09dc37ff29436daabd19574adaa878"><span data-offset-key="3f09dc37ff29436daabd19574adaa878:0">These properties are useful for understanding how to calculate the </span><span data-offset-key="3f09dc37ff29436daabd19574adaa878:1">_height_</span><span data-offset-key="3f09dc37ff29436daabd19574adaa878:2"> of a tree. The height of a tree is the number of levels that it contains. Based on the properties outlined above, we can deduce that we can calculate the tree's height with the following formula:</span></span></span>
 
 <figure><img src="https://i.upmath.me/svg/log_2(n%2B1)%20%3D%20h" alt="log_2(n+1) = h" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">log_2(n+1) = h</span></figcaption></figure>
 
@@ -187,9 +186,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b091b148f86642d5b22770424f23e023"><span data-offset-key="b091b148f86642d5b22770424f23e023:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be82f65550b5412ba81ba2cddd3d8083"><span data-offset-key="be82f65550b5412ba81ba2cddd3d8083:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Binary_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6d7d9636a7904e099f8250cd67eb4056"><span data-offset-key="6d7d9636a7904e099f8250cd67eb4056:0">https://en.wikipedia.org/wiki/Binary_tree (Links to an external site.)</span></span></a><span data-key="613360113de84804b0543d543e5b26aa"><span data-offset-key="613360113de84804b0543d543e5b26aa:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be82f65550b5412ba81ba2cddd3d8083"><span data-offset-key="be82f65550b5412ba81ba2cddd3d8083:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Binary_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6d7d9636a7904e099f8250cd67eb4056"><span data-offset-key="6d7d9636a7904e099f8250cd67eb4056:0">https://en.wikipedia.org/wiki/Binary_tree (Links to an external site.)</span></span></a><span data-key="613360113de84804b0543d543e5b26aa"><span data-offset-key="613360113de84804b0543d543e5b26aa:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f945ff14629e4d0db374908edcfef1a7"><span data-offset-key="f945ff14629e4d0db374908edcfef1a7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-tree-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8d5c36066dac497794950026f465083c"><span data-offset-key="8d5c36066dac497794950026f465083c:0">https://www.geeksforgeeks.org/binary-tree-data-structure/ (Links to an external site.)</span></span></a><span data-key="3032eb99300e4f6d95cfb5dbfdbb800c"><span data-offset-key="3032eb99300e4f6d95cfb5dbfdbb800c:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f945ff14629e4d0db374908edcfef1a7"><span data-offset-key="f945ff14629e4d0db374908edcfef1a7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-tree-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8d5c36066dac497794950026f465083c"><span data-offset-key="8d5c36066dac497794950026f465083c:0">https://www.geeksforgeeks.org/binary-tree-data-structure/ (Links to an external site.)</span></span></a><span data-key="3032eb99300e4f6d95cfb5dbfdbb800c"><span data-offset-key="3032eb99300e4f6d95cfb5dbfdbb800c:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 
@@ -207,7 +206,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="faec8e98b24143f1b0e192168f5454a3"><span data-offset-key="faec8e98b24143f1b0e192168f5454a3:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4aac9fb1adfd40efb8bd1223e6016706"><span data-offset-key="4aac9fb1adfd40efb8bd1223e6016706:0">Time and Space Complexity</span></span></span>
 
@@ -227,13 +226,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecf49f6badf34b09aaae7918a04eae9c"><span data-offset-key="ecf49f6badf34b09aaae7918a04eae9c:0">The space complexity of a binary search tree is linear (</span><span data-offset-key="ecf49f6badf34b09aaae7918a04eae9c:1">`O(n)`</span><span data-offset-key="ecf49f6badf34b09aaae7918a04eae9c:2">). Each node in the binary search tree will take up space in memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="df5d0f738c6e451bb716541720ba9cea"><span data-offset-key="df5d0f738c6e451bb716541720ba9cea:0">Strengths</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f64c6ff4c334ddfb88a37678350a220"><span data-offset-key="6f64c6ff4c334ddfb88a37678350a220:0">One of the main strengths of a BST is that it is sorted by default. You can pull out the data in order by using an in-order traversal. BSTs also have efficient searches (</span><span data-offset-key="6f64c6ff4c334ddfb88a37678350a220:1">`O(log n)`</span><span data-offset-key="6f64c6ff4c334ddfb88a37678350a220:2">). They have the same efficiency for their searches as a sorted array; however, BSTs are faster with insertions and deletions. In the average-case, dictionaries have more efficient operations than BSTs, but a BST has more efficient operations in the worst-case.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7f68953b52bf4bc98acd53833923f906"><span data-offset-key="7f68953b52bf4bc98acd53833923f906:0">Weaknesses</span></span></span>
 
@@ -247,9 +246,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="879104abb66a4b4797bc61d85c3c8bf8"><span data-offset-key="879104abb66a4b4797bc61d85c3c8bf8:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a69703e02084f0a8034046e3439d6db"><span data-offset-key="2a69703e02084f0a8034046e3439d6db:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="823d7d65c69a4d359ca99747cb25e9d4"><span data-offset-key="823d7d65c69a4d359ca99747cb25e9d4:0">https://www.geeksforgeeks.org/binary-search-tree-data-structure/ (Links to an external site.)</span></span></a><span data-key="20b57c45ec70419e907b16ff7e58504e"><span data-offset-key="20b57c45ec70419e907b16ff7e58504e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a69703e02084f0a8034046e3439d6db"><span data-offset-key="2a69703e02084f0a8034046e3439d6db:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="823d7d65c69a4d359ca99747cb25e9d4"><span data-offset-key="823d7d65c69a4d359ca99747cb25e9d4:0">https://www.geeksforgeeks.org/binary-search-tree-data-structure/ (Links to an external site.)</span></span></a><span data-key="20b57c45ec70419e907b16ff7e58504e"><span data-offset-key="20b57c45ec70419e907b16ff7e58504e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95fdb0cf1474411bb4398f854d3d8636"><span data-offset-key="95fdb0cf1474411bb4398f854d3d8636:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Binary_search_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c1b76c2010a24d41913de73de6258d0f"><span data-offset-key="c1b76c2010a24d41913de73de6258d0f:0">https://en.wikipedia.org/wiki/Binary_search_tree (Links to an external site.)</span></span></a><span data-key="29a02f70eac14d3fb107783de57b4487"><span data-offset-key="29a02f70eac14d3fb107783de57b4487:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95fdb0cf1474411bb4398f854d3d8636"><span data-offset-key="95fdb0cf1474411bb4398f854d3d8636:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Binary_search_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c1b76c2010a24d41913de73de6258d0f"><span data-offset-key="c1b76c2010a24d41913de73de6258d0f:0">https://en.wikipedia.org/wiki/Binary_search_tree (Links to an external site.)</span></span></a><span data-key="29a02f70eac14d3fb107783de57b4487"><span data-offset-key="29a02f70eac14d3fb107783de57b4487:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0387c3a240a34ed8878da31f474751e7"><span data-offset-key="0387c3a240a34ed8878da31f474751e7:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -297,13 +296,13 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9121135e50a40dd9f56663926759cb8"><span data-offset-key="c9121135e50a40dd9f56663926759cb8:0">If the </span><span data-offset-key="c9121135e50a40dd9f56663926759cb8:1">`BSTNode`</span><span data-offset-key="c9121135e50a40dd9f56663926759cb8:2"> to be deleted has two children, we have to find the "in-order successor". The "in-order successor" is the next highest value, the node that has the minimum value in the right subtree.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d99fbd1cc7524c71a913fcd59448bf1b"><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:0">Given the above information, can you write pseudocode for a method that can find the </span><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:1">*minimum value*</span><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:2"> of all the nodes within a tree or subtree?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d99fbd1cc7524c71a913fcd59448bf1b"><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:0">Given the above information, can you write pseudocode for a method that can find the </span><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:1">_minimum value_</span><span data-offset-key="d99fbd1cc7524c71a913fcd59448bf1b:2"> of all the nodes within a tree or subtree?</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0b02771f81f6468c94c59d74c8e55cb9"><span data-offset-key="0b02771f81f6468c94c59d74c8e55cb9:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="135aa8633052406bbb3653b44d6e6bba"><span data-offset-key="135aa8633052406bbb3653b44d6e6bba:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="71d3f80496f04439887f8bf18b5a0480"><span data-offset-key="71d3f80496f04439887f8bf18b5a0480:0">https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/ (Links to an external site.)</span></span></a><span data-key="8fd577a0becd4344a35efb62d06da7e7"><span data-offset-key="8fd577a0becd4344a35efb62d06da7e7:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="135aa8633052406bbb3653b44d6e6bba"><span data-offset-key="135aa8633052406bbb3653b44d6e6bba:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="71d3f80496f04439887f8bf18b5a0480"><span data-offset-key="71d3f80496f04439887f8bf18b5a0480:0">https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/ (Links to an external site.)</span></span></a><span data-key="8fd577a0becd4344a35efb62d06da7e7"><span data-offset-key="8fd577a0becd4344a35efb62d06da7e7:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb79f72b77924a8bb6ed84920fdf231c"><span data-offset-key="cb79f72b77924a8bb6ed84920fdf231c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9efe949105e64765ac170041cbae513e"><span data-offset-key="9efe949105e64765ac170041cbae513e:0">https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/ (Links to an external site.)</span></span></a><span data-key="c3b124cc484c4aa68b0f46596b8e6a8c"><span data-offset-key="c3b124cc484c4aa68b0f46596b8e6a8c:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb79f72b77924a8bb6ed84920fdf231c"><span data-offset-key="cb79f72b77924a8bb6ed84920fdf231c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9efe949105e64765ac170041cbae513e"><span data-offset-key="9efe949105e64765ac170041cbae513e:0">https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/ (Links to an external site.)</span></span></a><span data-key="c3b124cc484c4aa68b0f46596b8e6a8c"><span data-offset-key="c3b124cc484c4aa68b0f46596b8e6a8c:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee4984ff622743dcb0d2e3712c54f681"><span data-offset-key="ee4984ff622743dcb0d2e3712c54f681:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

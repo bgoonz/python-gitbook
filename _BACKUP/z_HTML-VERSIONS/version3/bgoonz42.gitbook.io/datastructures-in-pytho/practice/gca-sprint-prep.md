@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">GCA Sprint Prep:</span>
-=====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">GCA Sprint Prep:</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -181,71 +180,71 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f69f0b6084f54018ba6b649989741ec6"><span data-offset-key="f69f0b6084f54018ba6b649989741ec6:0">What are the most common questions asked on StackOverflow that are about general programming and not specialized domain knowledge?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f2d84de732c40ccaca30a750ebb2b4f"><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:0">CodeSignal has used MIT OCW, EdX, Coursera, and Udacity course catalogs as a source for \#1. They've used the book </span><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:1">*Cracking the Coding Interview*</span><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:2">, CodeSignal Interview Practice Mode, Leetcode, CareerCup, and Glassdoor Interview Questions sections to identify \#2. And StackOverflow public API for \#3.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f2d84de732c40ccaca30a750ebb2b4f"><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:0">CodeSignal has used MIT OCW, EdX, Coursera, and Udacity course catalogs as a source for \#1. They've used the book </span><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:1">_Cracking the Coding Interview_</span><span data-offset-key="6f2d84de732c40ccaca30a750ebb2b4f:2">, CodeSignal Interview Practice Mode, Leetcode, CareerCup, and Glassdoor Interview Questions sections to identify \#2. And StackOverflow public API for \#3.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ddd923c73bd7488da2ff590483d5bee0"><span data-offset-key="ddd923c73bd7488da2ff590483d5bee0:0">How to Practice</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="15716b28fda94e74907b372c31df9dda"><span data-offset-key="15716b28fda94e74907b372c31df9dda:0">Do the coursework in Lambda CS.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9e9292430fd45a5964ca7c9447b3b4b"><span data-offset-key="f9e9292430fd45a5964ca7c9447b3b4b:0">Try to generally restrict your searching to syntax unless otherwise directed</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9e9292430fd45a5964ca7c9447b3b4b"><span data-offset-key="f9e9292430fd45a5964ca7c9447b3b4b:0">Try to generally restrict your searching to syntax unless otherwise directed</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="809ba707da67468ab5ca7c6e466c8bfe"><span data-offset-key="809ba707da67468ab5ca7c6e466c8bfe:0">Don't search for problem solutions for the sprint challenges; syntax only</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="809ba707da67468ab5ca7c6e466c8bfe"><span data-offset-key="809ba707da67468ab5ca7c6e466c8bfe:0">Don't search for problem solutions for the sprint challenges; syntax only</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4db4301be8d745dcb8a9484f4ac867f5"><span data-offset-key="4db4301be8d745dcb8a9484f4ac867f5:0">Same for the GCA, proctor-enforced</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4db4301be8d745dcb8a9484f4ac867f5"><span data-offset-key="4db4301be8d745dcb8a9484f4ac867f5:0">Same for the GCA, proctor-enforced</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4505c3534f2a4fddb06775a1d706ff82"><span data-offset-key="4505c3534f2a4fddb06775a1d706ff82:0">Additional, optional resources:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2ba8d9ce32645ba8ed795b2bad2defe"><span data-offset-key="e2ba8d9ce32645ba8ed795b2bad2defe:0">Go to the </span></span><a href="https://app.codesignal.com/arcade" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e21b2afaa1a4431d9482ba4b4ecee9f5"><span data-offset-key="e21b2afaa1a4431d9482ba4b4ecee9f5:0">CodeSignal Arcade</span></span></a><span data-key="ce4a6e1b7e2643f5ba422c89b28a68a9"><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:0"> and solve questions in </span><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:1">*The Core*</span><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:2"> without looking up the answer. If you look up the answer, it doesn't count.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2ba8d9ce32645ba8ed795b2bad2defe"><span data-offset-key="e2ba8d9ce32645ba8ed795b2bad2defe:0">Go to the </span></span><a href="https://app.codesignal.com/arcade" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e21b2afaa1a4431d9482ba4b4ecee9f5"><span data-offset-key="e21b2afaa1a4431d9482ba4b4ecee9f5:0">CodeSignal Arcade</span></span></a><span data-key="ce4a6e1b7e2643f5ba422c89b28a68a9"><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:0"> and solve questions in </span><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:1">_The Core_</span><span data-offset-key="ce4a6e1b7e2643f5ba422c89b28a68a9:2"> without looking up the answer. If you look up the answer, it doesn't count.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d1105d069fc4cecaeefc40369314a7b"><span data-offset-key="5d1105d069fc4cecaeefc40369314a7b:0">Solve the first 50 problems</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d1105d069fc4cecaeefc40369314a7b"><span data-offset-key="5d1105d069fc4cecaeefc40369314a7b:0">Solve the first 50 problems</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5146036682c6415693a99abdd59c6baf"><span data-offset-key="5146036682c6415693a99abdd59c6baf:0">Except spend your earned coins to skip </span><span data-offset-key="5146036682c6415693a99abdd59c6baf:1">*Corner of 0s and 1s*</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5146036682c6415693a99abdd59c6baf"><span data-offset-key="5146036682c6415693a99abdd59c6baf:0">Except spend your earned coins to skip </span><span data-offset-key="5146036682c6415693a99abdd59c6baf:1">_Corner of 0s and 1s_</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9623958cd43643d29bfaa2b06179f425"><span data-offset-key="9623958cd43643d29bfaa2b06179f425:0">Some of these are challenging--feel free to buy your way ahead if you need to come back to a hard problem later</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9623958cd43643d29bfaa2b06179f425"><span data-offset-key="9623958cd43643d29bfaa2b06179f425:0">Some of these are challenging--feel free to buy your way ahead if you need to come back to a hard problem later</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19d95b5edaf14fde9493ddb78f89033f"><span data-offset-key="19d95b5edaf14fde9493ddb78f89033f:0">Keep solving more for more practice.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19d95b5edaf14fde9493ddb78f89033f"><span data-offset-key="19d95b5edaf14fde9493ddb78f89033f:0">Keep solving more for more practice.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5cde39c57b5249b9beb67f0d3ab4deb5"><span data-offset-key="5cde39c57b5249b9beb67f0d3ab4deb5:0">Once you get a few hundred coins, unlock the interview practice and other things in the main menu.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5cde39c57b5249b9beb67f0d3ab4deb5"><span data-offset-key="5cde39c57b5249b9beb67f0d3ab4deb5:0">Once you get a few hundred coins, unlock the interview practice and other things in the main menu.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="05a6d6d8110b4a689b8404cd6a256e12"><span data-offset-key="05a6d6d8110b4a689b8404cd6a256e12:0">Head over to Leetcode and tackle the easy and medium </span></span><a href="https://leetcode.com/problemset/algorithms/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a6080db3d4e04a1cb82bcc4780dacc91"><span data-offset-key="a6080db3d4e04a1cb82bcc4780dacc91:0">leetcode algorithms</span></span></a><span data-key="9566356a6bf14f1eabb22d29d744481b"><span data-offset-key="9566356a6bf14f1eabb22d29d744481b:0"> problems, or problems on your site of choice.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="05a6d6d8110b4a689b8404cd6a256e12"><span data-offset-key="05a6d6d8110b4a689b8404cd6a256e12:0">Head over to Leetcode and tackle the easy and medium </span></span><a href="https://leetcode.com/problemset/algorithms/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a6080db3d4e04a1cb82bcc4780dacc91"><span data-offset-key="a6080db3d4e04a1cb82bcc4780dacc91:0">leetcode algorithms</span></span></a><span data-key="9566356a6bf14f1eabb22d29d744481b"><span data-offset-key="9566356a6bf14f1eabb22d29d744481b:0"> problems, or problems on your site of choice.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7fb5f69746c4911886b7fb3d26a5349"><span data-offset-key="a7fb5f69746c4911886b7fb3d26a5349:0">Take the </span></span><a href="https://app.codesignal.com/standardized-test/GgvonNCksGzjey46c" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9b1a080531374fe6b68e6cf2d0dfd86a"><span data-offset-key="9b1a080531374fe6b68e6cf2d0dfd86a:0">GCA Practice Test</span></span></a><span data-key="f686daf68dcc4354b8912e647266f514"><span data-offset-key="f686daf68dcc4354b8912e647266f514:0"> (24-hour cooldown).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7fb5f69746c4911886b7fb3d26a5349"><span data-offset-key="a7fb5f69746c4911886b7fb3d26a5349:0">Take the </span></span><a href="https://app.codesignal.com/standardized-test/GgvonNCksGzjey46c" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9b1a080531374fe6b68e6cf2d0dfd86a"><span data-offset-key="9b1a080531374fe6b68e6cf2d0dfd86a:0">GCA Practice Test</span></span></a><span data-key="f686daf68dcc4354b8912e647266f514"><span data-offset-key="f686daf68dcc4354b8912e647266f514:0"> (24-hour cooldown).</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a6f68e12b5db4961bd666d4726db92d8"><span data-offset-key="a6f68e12b5db4961bd666d4726db92d8:0">Scoring</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="15c768117bcd4a58967cce061208f931"><span data-offset-key="15c768117bcd4a58967cce061208f931:0">If you get 100% of the tests passing on a submission for a set of problems, you'll get a base score, listed in the table below. This base score is modified up or down based on a variety of factors.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2e4ce00376a543bf8dad860c0a888e08"><span data-offset-key="2e4ce00376a543bf8dad860c0a888e08:0">Score Modifiers</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="696dcbc7679a4fa4ad65e6c6a054dcc1"><span data-offset-key="696dcbc7679a4fa4ad65e6c6a054dcc1:0">The score is modified ±12 points based on three factors:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38261cee0145491186f12ccbe6efe16d"><span data-offset-key="38261cee0145491186f12ccbe6efe16d:0">Number of attempts</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38261cee0145491186f12ccbe6efe16d"><span data-offset-key="38261cee0145491186f12ccbe6efe16d:0">Number of attempts</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b52673d0c910493c87ed642668ae1357"><span data-offset-key="b52673d0c910493c87ed642668ae1357:0">Your score will be modded if you make more or fewer than the average number of submissions for a particular problem.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b52673d0c910493c87ed642668ae1357"><span data-offset-key="b52673d0c910493c87ed642668ae1357:0">Your score will be modded if you make more or fewer than the average number of submissions for a particular problem.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8cbd007f49e44acab88e7784e87471a6"><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:0">Running the tests doesn't count as a submission. You must click the </span><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:1">`Submit`</span><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:2"> button for it to count.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8cbd007f49e44acab88e7784e87471a6"><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:0">Running the tests doesn't count as a submission. You must click the </span><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:1">`Submit`</span><span data-offset-key="8cbd007f49e44acab88e7784e87471a6:2"> button for it to count.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e58cb67fbfb2483f8719348caa8a122c"><span data-offset-key="e58cb67fbfb2483f8719348caa8a122c:0">Time taken</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e58cb67fbfb2483f8719348caa8a122c"><span data-offset-key="e58cb67fbfb2483f8719348caa8a122c:0">Time taken</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc17fa0ff1f649e7b1d196ce96b8c5a7"><span data-offset-key="fc17fa0ff1f649e7b1d196ce96b8c5a7:0">Your score will be modded if you take longer or shorter than the average amount of time to solve a problem.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc17fa0ff1f649e7b1d196ce96b8c5a7"><span data-offset-key="fc17fa0ff1f649e7b1d196ce96b8c5a7:0">Your score will be modded if you take longer or shorter than the average amount of time to solve a problem.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47d1a375230644738586e996b7ed77c8"><span data-offset-key="47d1a375230644738586e996b7ed77c8:0">Code quality</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47d1a375230644738586e996b7ed77c8"><span data-offset-key="47d1a375230644738586e996b7ed77c8:0">Code quality</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b209387b91b643cd80e6c66d88e69359"><span data-offset-key="b209387b91b643cd80e6c66d88e69359:0">Your code quality will be automatically judged based on a variety of factors, e.g.: consistent spacing and indentation.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b209387b91b643cd80e6c66d88e69359"><span data-offset-key="b209387b91b643cd80e6c66d88e69359:0">Your code quality will be automatically judged based on a variety of factors, e.g.: consistent spacing and indentation.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c8aaf46904894c31a37290677d70d71a"><span data-offset-key="c8aaf46904894c31a37290677d70d71a:0">Again, the most the base score will change as determined by these factors is ±12 points.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a53f817d6a64622a84804bc4dc85c39"><span data-offset-key="8a53f817d6a64622a84804bc4dc85c39:0">Strategy recommendation: don't worry about the modifiers. Just concentrate on UPER and solving the problem.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="9f84065749704c9c85e8e266581ccde1"><span data-offset-key="9f84065749704c9c85e8e266581ccde1:0">Partial Credit</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c04fc1c5ddc7489787422e29d4f3e639"><span data-offset-key="c04fc1c5ddc7489787422e29d4f3e639:0">If you submit and pass fewer than 100% of the tests, you'll receive partial credit for the submission depending on how many tests you did pass. In other words, you won't achieve the base score for that problem, but will get part way toward the base score.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fd7c2d265b44457191e0dc3ab5a6ee22"><span data-offset-key="fd7c2d265b44457191e0dc3ab5a6ee22:0">Scoring Table</span></span></span>
 
@@ -269,185 +268,185 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="d7f205475cab4b84830e986e3bcc3efa"><span data-offset-key="d7f205475cab4b84830e986e3bcc3efa:0">Question 1</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b07bc3219df04f9a84dd5162fd8e8ed9"><span data-offset-key="b07bc3219df04f9a84dd5162fd8e8ed9:0">*NOTE: these aren't definitive or complete lists! They don't say exactly*</span><span data-offset-key="b07bc3219df04f9a84dd5162fd8e8ed9:1"> what will be on the test, and the test questions might require more or less knowledge than listed. The information below is included to give you an idea of the relative difficulty of each question.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b07bc3219df04f9a84dd5162fd8e8ed9"><span data-offset-key="b07bc3219df04f9a84dd5162fd8e8ed9:0">_NOTE: these aren't definitive or complete lists! They don't say exactly_</span><span data-offset-key="b07bc3219df04f9a84dd5162fd8e8ed9:1"> what will be on the test, and the test questions might require more or less knowledge than listed. The information below is included to give you an idea of the relative difficulty of each question.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fbd0a41b5a8045e383498f0d78bd39a3"><span data-offset-key="fbd0a41b5a8045e383498f0d78bd39a3:0">Expected Knowledge</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc5b32431bda4574930e6c2bddd9dc65"><span data-offset-key="fc5b32431bda4574930e6c2bddd9dc65:0">Working with numbers.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc5b32431bda4574930e6c2bddd9dc65"><span data-offset-key="fc5b32431bda4574930e6c2bddd9dc65:0">Working with numbers.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4b948a7236fc4d989a5fd329c68c30bb"><span data-offset-key="4b948a7236fc4d989a5fd329c68c30bb:0">Basic operations with numbers.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4b948a7236fc4d989a5fd329c68c30bb"><span data-offset-key="4b948a7236fc4d989a5fd329c68c30bb:0">Basic operations with numbers.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9630430629bb4858aa2a4a5419335cd7"><span data-offset-key="9630430629bb4858aa2a4a5419335cd7:0">Basic string manipulation.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9630430629bb4858aa2a4a5419335cd7"><span data-offset-key="9630430629bb4858aa2a4a5419335cd7:0">Basic string manipulation.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="065f2bfae3dc4e238c0e1a1e88a1704f"><span data-offset-key="065f2bfae3dc4e238c0e1a1e88a1704f:0">Splitting a string into substrings.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="065f2bfae3dc4e238c0e1a1e88a1704f"><span data-offset-key="065f2bfae3dc4e238c0e1a1e88a1704f:0">Splitting a string into substrings.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2297f089610048a3b4147d0198898c74"><span data-offset-key="2297f089610048a3b4147d0198898c74:0">Modifying the elements of a string.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2297f089610048a3b4147d0198898c74"><span data-offset-key="2297f089610048a3b4147d0198898c74:0">Modifying the elements of a string.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c76d1b1a3670417a9d29b24552d0b080"><span data-offset-key="c76d1b1a3670417a9d29b24552d0b080:0">Basic array manipulation.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c76d1b1a3670417a9d29b24552d0b080"><span data-offset-key="c76d1b1a3670417a9d29b24552d0b080:0">Basic array manipulation.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e78d3b6ff7fe4a55af645bac46e616f4"><span data-offset-key="e78d3b6ff7fe4a55af645bac46e616f4:0">Iterating over an array.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e78d3b6ff7fe4a55af645bac46e616f4"><span data-offset-key="e78d3b6ff7fe4a55af645bac46e616f4:0">Iterating over an array.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="095a3208b9f94ff08875960257326f78"><span data-offset-key="095a3208b9f94ff08875960257326f78:0">Can Include</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b22aaeefc5bc4d53ad72828200924bc4"><span data-offset-key="b22aaeefc5bc4d53ad72828200924bc4:0">Tasks that require a combination of 2 to 3 basic concepts. For example:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b22aaeefc5bc4d53ad72828200924bc4"><span data-offset-key="b22aaeefc5bc4d53ad72828200924bc4:0">Tasks that require a combination of 2 to 3 basic concepts. For example:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e8bddbb5e5042c8b05e873a831fb9cb"><span data-offset-key="1e8bddbb5e5042c8b05e873a831fb9cb:0">Iterating over an array and taking into account some condition.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e8bddbb5e5042c8b05e873a831fb9cb"><span data-offset-key="1e8bddbb5e5042c8b05e873a831fb9cb:0">Iterating over an array and taking into account some condition.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fee3fa87b22d4938864d0b3999cf1e7b"><span data-offset-key="fee3fa87b22d4938864d0b3999cf1e7b:0">Splitting a string by some condition.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fee3fa87b22d4938864d0b3999cf1e7b"><span data-offset-key="fee3fa87b22d4938864d0b3999cf1e7b:0">Splitting a string by some condition.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc07e21782e741deb5eec21f368f8a1f"><span data-offset-key="fc07e21782e741deb5eec21f368f8a1f:0">Should usually be solvable using one loop.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc07e21782e741deb5eec21f368f8a1f"><span data-offset-key="fc07e21782e741deb5eec21f368f8a1f:0">Should usually be solvable using one loop.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="816fb254437546239f5341408eabe56d"><span data-offset-key="816fb254437546239f5341408eabe56d:0">The task description should clearly state the implementation steps.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="816fb254437546239f5341408eabe56d"><span data-offset-key="816fb254437546239f5341408eabe56d:0">The task description should clearly state the implementation steps.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b8c7d2e4bdd5485ea9e659945b53abb1"><span data-offset-key="b8c7d2e4bdd5485ea9e659945b53abb1:0">Question 2</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="89c461de5eb7422caf17a2a906f14c1b"><span data-offset-key="89c461de5eb7422caf17a2a906f14c1b:0">Expected Knowledge</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d5c5ecfd0e74d85872fc33ee2bf3e76"><span data-offset-key="3d5c5ecfd0e74d85872fc33ee2bf3e76:0">Working with numbers.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d5c5ecfd0e74d85872fc33ee2bf3e76"><span data-offset-key="3d5c5ecfd0e74d85872fc33ee2bf3e76:0">Working with numbers.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38ca2163161f496c875411b5986955b1"><span data-offset-key="38ca2163161f496c875411b5986955b1:0">Basic operations with numbers.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38ca2163161f496c875411b5986955b1"><span data-offset-key="38ca2163161f496c875411b5986955b1:0">Basic operations with numbers.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="34014334eddd4f80b01ef181273138f8"><span data-offset-key="34014334eddd4f80b01ef181273138f8:0">Splitting numbers into digits.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="34014334eddd4f80b01ef181273138f8"><span data-offset-key="34014334eddd4f80b01ef181273138f8:0">Splitting numbers into digits.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="864ddcef1de8405da9e2a44a993936cc"><span data-offset-key="864ddcef1de8405da9e2a44a993936cc:0">Basic string manipulation.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="864ddcef1de8405da9e2a44a993936cc"><span data-offset-key="864ddcef1de8405da9e2a44a993936cc:0">Basic string manipulation.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c7029bad51441b98ed98dadf51acfbe"><span data-offset-key="7c7029bad51441b98ed98dadf51acfbe:0">Splitting a string into substrings.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c7029bad51441b98ed98dadf51acfbe"><span data-offset-key="7c7029bad51441b98ed98dadf51acfbe:0">Splitting a string into substrings.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1f26885eeaf4375b4a2afbf9e41f2af"><span data-offset-key="e1f26885eeaf4375b4a2afbf9e41f2af:0">Comparing strings.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1f26885eeaf4375b4a2afbf9e41f2af"><span data-offset-key="e1f26885eeaf4375b4a2afbf9e41f2af:0">Comparing strings.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="891f7887e15346a2855610cb6b85f733"><span data-offset-key="891f7887e15346a2855610cb6b85f733:0">Modifying the elements of a string. – Concatenating strings.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="891f7887e15346a2855610cb6b85f733"><span data-offset-key="891f7887e15346a2855610cb6b85f733:0">Modifying the elements of a string. – Concatenating strings.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a24708de73a4c1d9305d195ddd2ba56"><span data-offset-key="4a24708de73a4c1d9305d195ddd2ba56:0">Reversing a string.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a24708de73a4c1d9305d195ddd2ba56"><span data-offset-key="4a24708de73a4c1d9305d195ddd2ba56:0">Reversing a string.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61cdab8bc09a42a3b6543169f0a2af59"><span data-offset-key="61cdab8bc09a42a3b6543169f0a2af59:0">Basic array manipulation.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61cdab8bc09a42a3b6543169f0a2af59"><span data-offset-key="61cdab8bc09a42a3b6543169f0a2af59:0">Basic array manipulation.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d968d7d008d8433c87a382e405b055cb"><span data-offset-key="d968d7d008d8433c87a382e405b055cb:0">Iterating over an array.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d968d7d008d8433c87a382e405b055cb"><span data-offset-key="d968d7d008d8433c87a382e405b055cb:0">Iterating over an array.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d5e6c87561534d51afb0a60fbb209404"><span data-offset-key="d5e6c87561534d51afb0a60fbb209404:0">Modifying the elements of an array.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d5e6c87561534d51afb0a60fbb209404"><span data-offset-key="d5e6c87561534d51afb0a60fbb209404:0">Modifying the elements of an array.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="846a3fb613284a93b5fdc0c78700e381"><span data-offset-key="846a3fb613284a93b5fdc0c78700e381:0">Reversing an array.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="846a3fb613284a93b5fdc0c78700e381"><span data-offset-key="846a3fb613284a93b5fdc0c78700e381:0">Reversing an array.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="337f039745414a1c82f2e61d38522afb"><span data-offset-key="337f039745414a1c82f2e61d38522afb:0">Can Include</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2787f654c33a4f6db5a1febebc0e4844"><span data-offset-key="2787f654c33a4f6db5a1febebc0e4844:0">Tasks that require a combination of 3 to 5 basic concepts. For example:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2787f654c33a4f6db5a1febebc0e4844"><span data-offset-key="2787f654c33a4f6db5a1febebc0e4844:0">Tasks that require a combination of 3 to 5 basic concepts. For example:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c321d9124a949bb98e5f9f0c8c4679e"><span data-offset-key="8c321d9124a949bb98e5f9f0c8c4679e:0">Splitting a string into substrings, modifying each substring and comparing with other strings.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c321d9124a949bb98e5f9f0c8c4679e"><span data-offset-key="8c321d9124a949bb98e5f9f0c8c4679e:0">Splitting a string into substrings, modifying each substring and comparing with other strings.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb9f4b1b9064408386440c8a2207c12c"><span data-offset-key="fb9f4b1b9064408386440c8a2207c12c:0">Iterating over an array to produce two new arrays given some conditions, modifying the second array and appending it to the beginning of the first array.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb9f4b1b9064408386440c8a2207c12c"><span data-offset-key="fb9f4b1b9064408386440c8a2207c12c:0">Iterating over an array to produce two new arrays given some conditions, modifying the second array and appending it to the beginning of the first array.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58be2be1f5f14c80a998ac9b520f96b4"><span data-offset-key="58be2be1f5f14c80a998ac9b520f96b4:0">Should usually be solvable using one to two nested loops.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58be2be1f5f14c80a998ac9b520f96b4"><span data-offset-key="58be2be1f5f14c80a998ac9b520f96b4:0">Should usually be solvable using one to two nested loops.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74830ba874074f949972fc42145b92f1"><span data-offset-key="74830ba874074f949972fc42145b92f1:0">The task description should clearly state the implementation steps.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74830ba874074f949972fc42145b92f1"><span data-offset-key="74830ba874074f949972fc42145b92f1:0">The task description should clearly state the implementation steps.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="53ab5dd8bf8548d5aa3c327a64d41785"><span data-offset-key="53ab5dd8bf8548d5aa3c327a64d41785:0">Question 3</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c7e0fa5ef45a4c4a9c844e21ee34db1f"><span data-offset-key="c7e0fa5ef45a4c4a9c844e21ee34db1f:0">Expected Knowledge</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="867548b3578043b39fa60bdac269125e"><span data-offset-key="867548b3578043b39fa60bdac269125e:0">Includes everything from the previous task.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="867548b3578043b39fa60bdac269125e"><span data-offset-key="867548b3578043b39fa60bdac269125e:0">Includes everything from the previous task.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98081b3409f347738f816def6254c449"><span data-offset-key="98081b3409f347738f816def6254c449:0">Splitting a task into smaller subtasks/functions.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98081b3409f347738f816def6254c449"><span data-offset-key="98081b3409f347738f816def6254c449:0">Splitting a task into smaller subtasks/functions.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45a26217e75d45c4ac3a2064920f5ff1"><span data-offset-key="45a26217e75d45c4ac3a2064920f5ff1:0">Manipulating two-dimensional arrays.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45a26217e75d45c4ac3a2064920f5ff1"><span data-offset-key="45a26217e75d45c4ac3a2064920f5ff1:0">Manipulating two-dimensional arrays.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ae4fc1f39d1441e9ebdd515620f711e"><span data-offset-key="1ae4fc1f39d1441e9ebdd515620f711e:0">Iterating over the elements in a particular order.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ae4fc1f39d1441e9ebdd515620f711e"><span data-offset-key="1ae4fc1f39d1441e9ebdd515620f711e:0">Iterating over the elements in a particular order.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddb78ffcbf7949b494a3490895e7409d"><span data-offset-key="ddb78ffcbf7949b494a3490895e7409d:0">Modifying values.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddb78ffcbf7949b494a3490895e7409d"><span data-offset-key="ddb78ffcbf7949b494a3490895e7409d:0">Modifying values.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ebc152cf2cd4a5ba6a3ec2e18140a60"><span data-offset-key="3ebc152cf2cd4a5ba6a3ec2e18140a60:0">Swapping rows/columns.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ebc152cf2cd4a5ba6a3ec2e18140a60"><span data-offset-key="3ebc152cf2cd4a5ba6a3ec2e18140a60:0">Swapping rows/columns.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd03cc9ab5d24451a0ca86df6d16c01f"><span data-offset-key="cd03cc9ab5d24451a0ca86df6d16c01f:0">Using hashmaps.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd03cc9ab5d24451a0ca86df6d16c01f"><span data-offset-key="cd03cc9ab5d24451a0ca86df6d16c01f:0">Using hashmaps.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da5e05f546c54bbd98b6ee4ecaba36a2"><span data-offset-key="da5e05f546c54bbd98b6ee4ecaba36a2:0">Using built in hashmaps to store strings or integers as keys.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da5e05f546c54bbd98b6ee4ecaba36a2"><span data-offset-key="da5e05f546c54bbd98b6ee4ecaba36a2:0">Using built in hashmaps to store strings or integers as keys.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="69bc33b7d31449899cbb8d63aa48c762"><span data-offset-key="69bc33b7d31449899cbb8d63aa48c762:0">Can Include</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="900f8b805a5b45f39f09aae797a5b889"><span data-offset-key="900f8b805a5b45f39f09aae797a5b889:0">Implementing a specific comparator for strings.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="900f8b805a5b45f39f09aae797a5b889"><span data-offset-key="900f8b805a5b45f39f09aae797a5b889:0">Implementing a specific comparator for strings.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5bee68fdd434a39a71cc1b606324570"><span data-offset-key="f5bee68fdd434a39a71cc1b606324570:0">Implementing a specific merge function for arrays.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5bee68fdd434a39a71cc1b606324570"><span data-offset-key="f5bee68fdd434a39a71cc1b606324570:0">Implementing a specific merge function for arrays.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a528dbffad74d9ab9e35e2edd2cdec2"><span data-offset-key="2a528dbffad74d9ab9e35e2edd2cdec2:0">Other implementation challenges that clearly explain what needs to be done and require translating the instructions into code.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a528dbffad74d9ab9e35e2edd2cdec2"><span data-offset-key="2a528dbffad74d9ab9e35e2edd2cdec2:0">Other implementation challenges that clearly explain what needs to be done and require translating the instructions into code.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="3b7c6c9544b046eeaeb54593b928e06b"><span data-offset-key="3b7c6c9544b046eeaeb54593b928e06b:0">Question 4</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="120863128e904af1a44764055bbfcaea"><span data-offset-key="120863128e904af1a44764055bbfcaea:0">Expected Knowledge</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac8e87cfa5b14bb78a4155ac1805b4ef"><span data-offset-key="ac8e87cfa5b14bb78a4155ac1805b4ef:0">Includes everything from previous tasks.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac8e87cfa5b14bb78a4155ac1805b4ef"><span data-offset-key="ac8e87cfa5b14bb78a4155ac1805b4ef:0">Includes everything from previous tasks.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6137a29aa1d94353bbe84ffb299648fc"><span data-offset-key="6137a29aa1d94353bbe84ffb299648fc:0">Working with trees.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6137a29aa1d94353bbe84ffb299648fc"><span data-offset-key="6137a29aa1d94353bbe84ffb299648fc:0">Working with trees.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce937f84d8c24620996c22eff384f020"><span data-offset-key="ce937f84d8c24620996c22eff384f020:0">Storing and traversing trees.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce937f84d8c24620996c22eff384f020"><span data-offset-key="ce937f84d8c24620996c22eff384f020:0">Storing and traversing trees.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43f28d9125e442cb89a53bcb1034a683"><span data-offset-key="43f28d9125e442cb89a53bcb1034a683:0">Transforming trees.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43f28d9125e442cb89a53bcb1034a683"><span data-offset-key="43f28d9125e442cb89a53bcb1034a683:0">Transforming trees.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="186089544b784b0f88272e72d4928ca2"><span data-offset-key="186089544b784b0f88272e72d4928ca2:0">Understanding hashmaps.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="186089544b784b0f88272e72d4928ca2"><span data-offset-key="186089544b784b0f88272e72d4928ca2:0">Understanding hashmaps.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0270ea6ad1145619bd4de53ce1c7e8c"><span data-offset-key="d0270ea6ad1145619bd4de53ce1c7e8c:0">Solving tasks that require understanding the implementation of hashmaps.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0270ea6ad1145619bd4de53ce1c7e8c"><span data-offset-key="d0270ea6ad1145619bd4de53ce1c7e8c:0">Solving tasks that require understanding the implementation of hashmaps.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81a1441d55d6479da06700fc8fafc7b9"><span data-offset-key="81a1441d55d6479da06700fc8fafc7b9:0">Fundamentals of discrete mathematics.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81a1441d55d6479da06700fc8fafc7b9"><span data-offset-key="81a1441d55d6479da06700fc8fafc7b9:0">Fundamentals of discrete mathematics.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c5ccd35dc79f44c9b5175b46efb0c5ab"><span data-offset-key="c5ccd35dc79f44c9b5175b46efb0c5ab:0">Brute-force search.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c5ccd35dc79f44c9b5175b46efb0c5ab"><span data-offset-key="c5ccd35dc79f44c9b5175b46efb0c5ab:0">Brute-force search.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cddaa85ca703418aaddeef6fc839207b"><span data-offset-key="cddaa85ca703418aaddeef6fc839207b:0">Checking all possible solutions to find the optimal solution.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cddaa85ca703418aaddeef6fc839207b"><span data-offset-key="cddaa85ca703418aaddeef6fc839207b:0">Checking all possible solutions to find the optimal solution.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="47dc86370c4c4439b9b022743144b756"><span data-offset-key="47dc86370c4c4439b9b022743144b756:0">Can Include</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="815c0056a86945f0a29a1e3937458555"><span data-offset-key="815c0056a86945f0a29a1e3937458555:0">Tasks that require noticing an application of a certain algorithm, data-structure or technique.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="815c0056a86945f0a29a1e3937458555"><span data-offset-key="815c0056a86945f0a29a1e3937458555:0">Tasks that require noticing an application of a certain algorithm, data-structure or technique.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="41bb6b8a3ab348099780cae36406f314"><span data-offset-key="41bb6b8a3ab348099780cae36406f314:0">Optimizing some queries with the help of data structures like hashmaps or sets.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="41bb6b8a3ab348099780cae36406f314"><span data-offset-key="41bb6b8a3ab348099780cae36406f314:0">Optimizing some queries with the help of data structures like hashmaps or sets.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19257034f4aa4d748bba81b576a47142"><span data-offset-key="19257034f4aa4d748bba81b576a47142:0">Algorithms on trees like finding the longest path of a tree.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19257034f4aa4d748bba81b576a47142"><span data-offset-key="19257034f4aa4d748bba81b576a47142:0">Algorithms on trees like finding the longest path of a tree.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="adc429c507bb488db246bbaa0f0a30e0"><span data-offset-key="adc429c507bb488db246bbaa0f0a30e0:0">Rules</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f117d651920143fbafbdafed6636f61b"><span data-offset-key="f117d651920143fbafbdafed6636f61b:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://support.codesignal.com/hc/en-us/articles/360051960134-General-Coding-Assessment-Rules-and-Setup" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a62e84583dbb49edb340be410df62b0a"><span data-offset-key="a62e84583dbb49edb340be410df62b0a:0">GCA Setup and Proctoring Rules</span></span></a><span data-key="2a1aa5b6bc9b4059b79c67d6a5d37abc"><span data-offset-key="2a1aa5b6bc9b4059b79c67d6a5d37abc:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f117d651920143fbafbdafed6636f61b"><span data-offset-key="f117d651920143fbafbdafed6636f61b:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://support.codesignal.com/hc/en-us/articles/360051960134-General-Coding-Assessment-Rules-and-Setup" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a62e84583dbb49edb340be410df62b0a"><span data-offset-key="a62e84583dbb49edb340be410df62b0a:0">GCA Setup and Proctoring Rules</span></span></a><span data-key="2a1aa5b6bc9b4059b79c67d6a5d37abc"><span data-offset-key="2a1aa5b6bc9b4059b79c67d6a5d37abc:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22576cb997494956af9431623a6f503e"><span data-offset-key="22576cb997494956af9431623a6f503e:0">Additional clarifications to the rules:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22576cb997494956af9431623a6f503e"><span data-offset-key="22576cb997494956af9431623a6f503e:0">Additional clarifications to the rules:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="21ad8df33cbc432886d0bc8cc9542a6d"><span data-offset-key="21ad8df33cbc432886d0bc8cc9542a6d:0">Using scratch paper is allowed, but make it obvious (and maybe even say) that you're scribbling.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="21ad8df33cbc432886d0bc8cc9542a6d"><span data-offset-key="21ad8df33cbc432886d0bc8cc9542a6d:0">Using scratch paper is allowed, but make it obvious (and maybe even say) that you're scribbling.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="461dd69755714fb8b77f0c60e55ace6f"><span data-offset-key="461dd69755714fb8b77f0c60e55ace6f:0">Using an off-screen whiteboard is allowed, but make it obvious that's what you're doing.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="461dd69755714fb8b77f0c60e55ace6f"><span data-offset-key="461dd69755714fb8b77f0c60e55ace6f:0">Using an off-screen whiteboard is allowed, but make it obvious that's what you're doing.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a28e043cd324031a95897eb9ec7c788"><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:0">Recommend </span><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:1">*against*</span><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:2"> referring to written notes since the proctor won't know what you're looking at.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a28e043cd324031a95897eb9ec7c788"><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:0">Recommend </span><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:1">_against_</span><span data-offset-key="6a28e043cd324031a95897eb9ec7c788:2"> referring to written notes since the proctor won't know what you're looking at.</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1f8eed7155a4185aa6e41c72123c75b"><span data-offset-key="e1f8eed7155a4185aa6e41c72123c75b:0">Scan or take photos of your relevant notes so you can view them on-screen.</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1f8eed7155a4185aa6e41c72123c75b"><span data-offset-key="e1f8eed7155a4185aa6e41c72123c75b:0">Scan or take photos of your relevant notes so you can view them on-screen.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dff564823d1047dc90fb6a904723babd"><span data-offset-key="dff564823d1047dc90fb6a904723babd:0">Prohibited: PythonTutor or any other external IDE, editor, debugger, or environment.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dff564823d1047dc90fb6a904723babd"><span data-offset-key="dff564823d1047dc90fb6a904723babd:0">Prohibited: PythonTutor or any other external IDE, editor, debugger, or environment.</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="487432e4cce94543ac52d6b751ef5282"><span data-offset-key="487432e4cce94543ac52d6b751ef5282:0">Exception: You </span><span data-offset-key="487432e4cce94543ac52d6b751ef5282:1">**may**</span><span data-offset-key="487432e4cce94543ac52d6b751ef5282:2"> open a simple Python REPL in a terminal to quickly test commands or look up syntax.</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="487432e4cce94543ac52d6b751ef5282"><span data-offset-key="487432e4cce94543ac52d6b751ef5282:0">Exception: You </span><span data-offset-key="487432e4cce94543ac52d6b751ef5282:1">**may**</span><span data-offset-key="487432e4cce94543ac52d6b751ef5282:2"> open a simple Python REPL in a terminal to quickly test commands or look up syntax.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="cc8924eb1e1847dda81bbf671d97cd6a"><span data-offset-key="cc8924eb1e1847dda81bbf671d97cd6a:0">Testing Link</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfaca9343f7a4e58a6b4ed8e7e1de99c"><span data-offset-key="cfaca9343f7a4e58a6b4ed8e7e1de99c:0">**SIGN IN WITH YOUR LAMBDASTUDENTS EMAIL!**</span><span data-offset-key="cfaca9343f7a4e58a6b4ed8e7e1de99c:1"> If you're not sure, go to your CodeSignal profile and make sure it's set as your primary email.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfaca9343f7a4e58a6b4ed8e7e1de99c"><span data-offset-key="cfaca9343f7a4e58a6b4ed8e7e1de99c:0">**SIGN IN WITH YOUR LAMBDASTUDENTS EMAIL!**</span><span data-offset-key="cfaca9343f7a4e58a6b4ed8e7e1de99c:1"> If you're not sure, go to your CodeSignal profile and make sure it's set as your primary email.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ab267f462ec34d2daba5ca68a5da85dc"><span data-offset-key="ab267f462ec34d2daba5ca68a5da85dc:0">**IF YOU DON'T, YOUR ATTEMPT WON'T COUNT!**</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ab267f462ec34d2daba5ca68a5da85dc"><span data-offset-key="ab267f462ec34d2daba5ca68a5da85dc:0">**IF YOU DON'T, YOUR ATTEMPT WON'T COUNT!**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14072b1175b84343839a18090a1cfeac"><span data-offset-key="14072b1175b84343839a18090a1cfeac:0">There is a 2-week cooldown (measured down to the minute of your previous submission).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14072b1175b84343839a18090a1cfeac"><span data-offset-key="14072b1175b84343839a18090a1cfeac:0">There is a 2-week cooldown (measured down to the minute of your previous submission).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d78d63f5330c4a17b0c8c861ccb525e2"><span data-offset-key="d78d63f5330c4a17b0c8c861ccb525e2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://app.codesignal.com/get-certified?invite=TGy6wcugpm4LMFEQX" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2bd4ffe1560748afa4b267dca61d1511"><span data-offset-key="2bd4ffe1560748afa4b267dca61d1511:0">Take the GCA Now</span></span></a><span data-key="24ce5d3d313b4be28810eeeb00a03882"><span data-offset-key="24ce5d3d313b4be28810eeeb00a03882:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d78d63f5330c4a17b0c8c861ccb525e2"><span data-offset-key="d78d63f5330c4a17b0c8c861ccb525e2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://app.codesignal.com/get-certified?invite=TGy6wcugpm4LMFEQX" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2bd4ffe1560748afa4b267dca61d1511"><span data-offset-key="2bd4ffe1560748afa4b267dca61d1511:0">Take the GCA Now</span></span></a><span data-key="24ce5d3d313b4be28810eeeb00a03882"><span data-offset-key="24ce5d3d313b4be28810eeeb00a03882:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="82340aacfeff498abbf0a2e5cb251dcb"><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:0">If this link fails, DM </span><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:1">`@Beej`</span><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:2"> on Slack to get it updated.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="82340aacfeff498abbf0a2e5cb251dcb"><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:0">If this link fails, DM </span><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:1">`@Beej`</span><span data-offset-key="82340aacfeff498abbf0a2e5cb251dcb:2"> on Slack to get it updated.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="661c8f09167d410ba9cb0638360edc7c"><span data-offset-key="661c8f09167d410ba9cb0638360edc7c:0">See Also</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4dc2bc942b1245d29e625a01c80690f9"><span data-offset-key="4dc2bc942b1245d29e625a01c80690f9:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://support.codesignal.com/hc/en-us/articles/360040370853-What-is-the-structure-of-the-General-Coding-Assessment-" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1879bee5e0e140bc9c718abb624f0b2d"><span data-offset-key="1879bee5e0e140bc9c718abb624f0b2d:0">What to Expect on the GCA</span></span></a><span data-key="2435b06b0da94ca5a765f3309ccd7cf6"><span data-offset-key="2435b06b0da94ca5a765f3309ccd7cf6:0"> including a link to the </span></span><a href="https://app.codesignal.com/standardized-test/GgvonNCksGzjey46c" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="dc817c34eee843e9baf7c2ee0bc26d0a"><span data-offset-key="dc817c34eee843e9baf7c2ee0bc26d0a:0">practice test</span></span></a><span data-key="1ed9032f86254b038725bf47047ab004"><span data-offset-key="1ed9032f86254b038725bf47047ab004:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4dc2bc942b1245d29e625a01c80690f9"><span data-offset-key="4dc2bc942b1245d29e625a01c80690f9:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://support.codesignal.com/hc/en-us/articles/360040370853-What-is-the-structure-of-the-General-Coding-Assessment-" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1879bee5e0e140bc9c718abb624f0b2d"><span data-offset-key="1879bee5e0e140bc9c718abb624f0b2d:0">What to Expect on the GCA</span></span></a><span data-key="2435b06b0da94ca5a765f3309ccd7cf6"><span data-offset-key="2435b06b0da94ca5a765f3309ccd7cf6:0"> including a link to the </span></span><a href="https://app.codesignal.com/standardized-test/GgvonNCksGzjey46c" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="dc817c34eee843e9baf7c2ee0bc26d0a"><span data-offset-key="dc817c34eee843e9baf7c2ee0bc26d0a:0">practice test</span></span></a><span data-key="1ed9032f86254b038725bf47047ab004"><span data-offset-key="1ed9032f86254b038725bf47047ab004:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f550b0ef9dd64a3f8a9076d0e9790dd6"><span data-offset-key="f550b0ef9dd64a3f8a9076d0e9790dd6:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.notion.so/lambdaschool/GCA-CodeSignal-Assessment-dc9f9d7a5ef24c40a309ad132c672e69" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b33f979e19994d2186d08940d001cca2"><span data-offset-key="b33f979e19994d2186d08940d001cca2:0">Lambda's GCA HOWTO and FAQ</span></span></a><span data-key="094b49ba9cd54f78a69b35639ed6b6ac"><span data-offset-key="094b49ba9cd54f78a69b35639ed6b6ac:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f550b0ef9dd64a3f8a9076d0e9790dd6"><span data-offset-key="f550b0ef9dd64a3f8a9076d0e9790dd6:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.notion.so/lambdaschool/GCA-CodeSignal-Assessment-dc9f9d7a5ef24c40a309ad132c672e69" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b33f979e19994d2186d08940d001cca2"><span data-offset-key="b33f979e19994d2186d08940d001cca2:0">Lambda's GCA HOWTO and FAQ</span></span></a><span data-key="094b49ba9cd54f78a69b35639ed6b6ac"><span data-offset-key="094b49ba9cd54f78a69b35639ed6b6ac:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <a href="../utilities/untitled/code-lab-notebook-embeds-from-lecture.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

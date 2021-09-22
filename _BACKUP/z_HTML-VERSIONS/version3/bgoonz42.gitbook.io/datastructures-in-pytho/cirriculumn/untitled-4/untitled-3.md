@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1- Module 01 - Linked Lists</span>
-=================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1- Module 01 - Linked Lists</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -167,7 +166,7 @@
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="976132da8a7e4927b7bf5f1e95b75308"><span data-offset-key="976132da8a7e4927b7bf5f1e95b75308:0">Implementation:</span></span></span>
 
@@ -181,7 +180,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="728002cab14e4e4183522881f9abdaaa"><span data-offset-key="728002cab14e4e4183522881f9abdaaa:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="362117871a3e42d79c1928896654e1c2"><span data-offset-key="362117871a3e42d79c1928896654e1c2:0">Basic Properties of a Linked List</span></span></span>
 
@@ -213,7 +212,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22fa5ee5f57143398e4b8057bb7948d3"><span data-offset-key="22fa5ee5f57143398e4b8057bb7948d3:0">A Circular Linked List links the last node back to the first node in the list. This linkage causes a circular traversal; when you get to the end of the list, the next item will be back at the beginning of the list. Each type of linked list is similar but has small distinctions. When working with linked lists, it’s essential to know what type of linked list.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4f724b25da0143db9056cb7b5a6e074c"><span data-offset-key="4f724b25da0143db9056cb7b5a6e074c:0">Time and Space Complexity</span></span></span>
 
@@ -237,25 +236,25 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9eda8b5dfc7846a3a46f6463f46053fd"><span data-offset-key="9eda8b5dfc7846a3a46f6463f46053fd:0">The space complexity of a linked list is linear (</span><span data-offset-key="9eda8b5dfc7846a3a46f6463f46053fd:1">`O(n)`</span><span data-offset-key="9eda8b5dfc7846a3a46f6463f46053fd:2">). Each item in the linked list will take up space in memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8887fcecb5764edc8e1bd85bea512281"><span data-offset-key="8887fcecb5764edc8e1bd85bea512281:0">Strengths of a Linked List</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="446fb06a509e473fa6b3e63397f59a85"><span data-offset-key="446fb06a509e473fa6b3e63397f59a85:0">The primary strength of a linked list is that operations on the linked list's ends are fast. This is because the linked list always has a reference to the head (the first node) and the tail (the last node) of the list. Because it has a reference, doing anything on the ends is a constant time operation (</span><span data-offset-key="446fb06a509e473fa6b3e63397f59a85:1">`O(1)`</span><span data-offset-key="446fb06a509e473fa6b3e63397f59a85:2">) no matter how many items are stored in the linked list. Additionally, just like a dynamic array, you don't have to set a capacity to a linked list when you instantiate it. If you don't know the size of the data you are storing, or if the amount of data is likely to fluctuate, linked lists can work well. One benefit over a dynamic array is that you don't have doubling appends. This is because each item doesn't have to be stored contiguously; whenever you add an item, you need to find an open spot in memory to hold the next node.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c3a0e502d8424c7b89ff145d84f0894c"><span data-offset-key="c3a0e502d8424c7b89ff145d84f0894c:0">Weaknesses of a Linked List</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="205664abff0f4a4ea69f807b49b32b30"><span data-offset-key="205664abff0f4a4ea69f807b49b32b30:0">The main weakness of a linked list is not efficiently accessing an "index" in the middle of the list. The only way that the linked list can get to the seventh item in the linked list is by going to the head node and then traversing one node at a time until you arrive at the seventh node. You can't do simple math and jump from the first item to the seventh.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b5dabb55943b4a0fac30969c2f69ca51"><span data-offset-key="b5dabb55943b4a0fac30969c2f69ca51:0">What data structures are built on linked lists?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecdbcf542b9e4db68c835c257b3ac192"><span data-offset-key="ecdbcf542b9e4db68c835c257b3ac192:0">Remember that linked lists have efficient operations on the ends (head and tail). There are two structures that only operate on the ends; queues and stacks. So, most queue or stack implementations use a linked list as their underlying data structure.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a4924f4aef1c40febb3a1d6027b36b48"><span data-offset-key="a4924f4aef1c40febb3a1d6027b36b48:0">Why is a linked list different than an array? What problem does it solve?</span></span></span>
 
@@ -265,7 +264,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b44b0d4def049edb4641ed16bb95249"><span data-offset-key="1b44b0d4def049edb4641ed16bb95249:0">With a linked list, the elements are not stored side-by-side in memory. Each element can be stored anywhere in memory. In addition to storing the data for that element, each element also stores a pointer to the memory location of the next element in the list. The elements in a linked list do not have an index. To get to a specific element in a linked list, you have to start at the head of the linked list and work your way through the list, one element at a time, to reach the specific element you are searching for. Now you can see how a linked list solves some of the problems that the array data structure has.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="557cd488e759401eaa4a61132a7fb56b"><span data-offset-key="557cd488e759401eaa4a61132a7fb56b:0">How do you represent a linked list graphically and in Python code?</span></span></span>
 
@@ -303,7 +302,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="58f290dcb14947b29cdff2689a2b9f09"><span data-offset-key="58f290dcb14947b29cdff2689a2b9f09:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b2a639c7db7c401b91a3f43c7c4e5268"><span data-offset-key="b2a639c7db7c401b91a3f43c7c4e5268:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d57f6f96291e41e0b74d36aada4bfdd2"><span data-offset-key="d57f6f96291e41e0b74d36aada4bfdd2:0">https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)</span></span></a><span data-key="d9be2db2fe1f4b7dbff3982aba9395cd"><span data-offset-key="d9be2db2fe1f4b7dbff3982aba9395cd:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b2a639c7db7c401b91a3f43c7c4e5268"><span data-offset-key="b2a639c7db7c401b91a3f43c7c4e5268:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d57f6f96291e41e0b74d36aada4bfdd2"><span data-offset-key="d57f6f96291e41e0b74d36aada4bfdd2:0">https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)</span></span></a><span data-key="d9be2db2fe1f4b7dbff3982aba9395cd"><span data-offset-key="d9be2db2fe1f4b7dbff3982aba9395cd:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <a href="https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-Mij72ebV4OjqJvBacMy%2F-Mj3V6uc3dx7MMMyWj3D%2F-Mj3VIP9-dcvUH6PA-v9%2F10-linkedlist.pdf?alt=media&amp;token=61fcff8b-2fc9-48bd-a82a-057276920be4" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--S400Vertical-a18add7e"></a>
 

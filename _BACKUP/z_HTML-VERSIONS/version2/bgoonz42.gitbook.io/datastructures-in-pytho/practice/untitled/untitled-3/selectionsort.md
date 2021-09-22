@@ -166,8 +166,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">SelectionSort</span>
-==================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">SelectionSort</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -179,7 +178,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="29e903bc297844d7a0f0a6ebe0510783"><span data-offset-key="29e903bc297844d7a0f0a6ebe0510783:0">Selection sorting is noted for its simplicity, and it has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="13ef8414bd534518a87d869b1ea9a2ce"><span data-offset-key="13ef8414bd534518a87d869b1ea9a2ce:0">Define Selection Sort</span></span></span>
 
@@ -187,7 +186,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="844d37c31ebe4690b171d8efd6c4d7c5"><span data-offset-key="844d37c31ebe4690b171d8efd6c4d7c5:0">The argument which we pass to this function is an unordered list that is passed to this above function to perform Selection Sorting algorithm on this list and return sorted list back to function call.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97c2e996c7fd46cab8dc37f01fd98f92"><span data-offset-key="97c2e996c7fd46cab8dc37f01fd98f92:0">***Read =&gt;*** </span></span><a href="https://codezup.com//binary-search-algorithm-sorted-list-loop-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1f90d5930aa24caeb0ead5dca0d1c606"><span data-offset-key="1f90d5930aa24caeb0ead5dca0d1c606:0"><em><strong>Binary Search Algorithm on Sorted List using Loop in Python</strong></em></span></span></a><span data-key="be6a74de68534f80854334c7b43ccadc"><span data-offset-key="be6a74de68534f80854334c7b43ccadc:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97c2e996c7fd46cab8dc37f01fd98f92"><span data-offset-key="97c2e996c7fd46cab8dc37f01fd98f92:0">**_Read =&gt;_** </span></span><a href="https://codezup.com//binary-search-algorithm-sorted-list-loop-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1f90d5930aa24caeb0ead5dca0d1c606"><span data-offset-key="1f90d5930aa24caeb0ead5dca0d1c606:0"><em><strong>Binary Search Algorithm on Sorted List using Loop in Python</strong></em></span></span></a><span data-key="be6a74de68534f80854334c7b43ccadc"><span data-offset-key="be6a74de68534f80854334c7b43ccadc:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da9175e06dbc4a19a47ba4d354ed89e6"><span data-offset-key="da9175e06dbc4a19a47ba4d354ed89e6:0">So the logic or the algorithm behind Selection Sort is that it iterates all the elements of the list and if the smallest element in the list is found then that number is swapped with the first.</span></span></span>
 
@@ -201,11 +200,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a02017cae1b43ef913225770db3b402"><span data-offset-key="4a02017cae1b43ef913225770db3b402:0">The time efficiency of selection sort is quadratic, so there are a number of sorting techniques which have better time complexity than selection sort.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f178b243d314067996f54ae67aa9ab1"><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:0">One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, </span><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:1">*n*</span><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:2"> − 1 in the worst case.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f178b243d314067996f54ae67aa9ab1"><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:0">One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, </span><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:1">_n_</span><span data-offset-key="8f178b243d314067996f54ae67aa9ab1:2"> − 1 in the worst case.</span></span></span>
 
     Best O(n^2); Average O(n^2); Worst O(n^2)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c488a6a78d7d4276b8300173a518ac82"><span data-offset-key="c488a6a78d7d4276b8300173a518ac82:0">Define Main Condition</span></span></span>
 

@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Interview Resources</span>
-========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Interview Resources</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -175,7 +174,7 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="896d505d9f5f4d7d9c4e67396871f009"><span data-offset-key="896d505d9f5f4d7d9c4e67396871f009:0">Preparing for a Coding Interview</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="673b2a03e217437faa6b3f1c007d33ee"><span data-offset-key="673b2a03e217437faa6b3f1c007d33ee:0">Picking a Programming Language</span></span></span>
 
@@ -189,7 +188,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="65b094918932492b8fa29b3f4e69afa5"><span data-offset-key="65b094918932492b8fa29b3f4e69afa5:0">One exception to the convention of allowing you to "pick any programming language you want" is when you are interviewing for a domain-specific position, such as Front End/iOS/Android Engineer roles, in which you would need to be familiar with coding algorithms in JavaScript, Objective-C/Swift and Java respectively. If you need to use a data structure that the language does not support, such as a Queue or Heap in JavaScript, perhaps try asking the interviewer whether you can assume that you have a data structure that implements certain methods with specified time complexities. If the implementation of that data structure is not crucial to solving the problem, the interviewer will usually allow it. In reality, being aware of existing data structures and selecting the appropriate ones to tackle the problem at hand is more important than knowing the intricate implementation details.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a5f5a38176374d7891310cd44cb3325b"><span data-offset-key="a5f5a38176374d7891310cd44cb3325b:0">Review your CS101</span></span></span>
 
@@ -201,7 +200,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="086cfc01a6fc45008eafe403a6740e6d"><span data-offset-key="086cfc01a6fc45008eafe403a6740e6d:0">If you are interested in how data structures are implemented, check out </span></span><a href="https://github.com/yangshun/lago" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1fbf96987314414ca0ee0a79b15cf49e"><span data-offset-key="1fbf96987314414ca0ee0a79b15cf49e:0">Lago</span></span></a><span data-key="eaa26fd364ef4bd2b44d8073fdca4b7c"><span data-offset-key="eaa26fd364ef4bd2b44d8073fdca4b7c:0">, a Data Structures and Algorithms library for JavaScript. It is pretty much still WIP but I intend to make it into a library that is able to be used in production and also a reference resource for revising Data Structures and Algorithms.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c09b4b849dc6437abc6ae5095778d1a0"><span data-offset-key="c09b4b849dc6437abc6ae5095778d1a0:0">Mastery through Practice</span></span></span>
 
@@ -219,7 +218,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b47dc40b2e249a0944d80205f10c973"><span data-offset-key="1b47dc40b2e249a0944d80205f10c973:0">Practice, practice and more practice!</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="95ada9f66cb841b7a0ab7508765012f3"><span data-offset-key="95ada9f66cb841b7a0ab7508765012f3:0">Phases of a Coding Interview</span></span></span>
 
@@ -243,17 +242,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="716614f4020c4e00adc127746e5eef77"><span data-offset-key="716614f4020c4e00adc127746e5eef77:0">Always seek clarification about the question upon hearing it even if it you think it is clear to you. You might discover something that you have missed out and it also sends a signal to the interviewer that you are a careful person who pays attention to details. Some interviewers deliberately omit important details to see if you ask the right questions. Consider asking the following questions:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07bba65a947a4263a734b785a7916ed7"><span data-offset-key="07bba65a947a4263a734b785a7916ed7:0">How big is the size of the input?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07bba65a947a4263a734b785a7916ed7"><span data-offset-key="07bba65a947a4263a734b785a7916ed7:0">How big is the size of the input?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d76c2cbe72f443a940092163d68b46e"><span data-offset-key="9d76c2cbe72f443a940092163d68b46e:0">How big is the range of values?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d76c2cbe72f443a940092163d68b46e"><span data-offset-key="9d76c2cbe72f443a940092163d68b46e:0">How big is the range of values?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70e2bc32ec4944d1a2044d9f49708ca1"><span data-offset-key="70e2bc32ec4944d1a2044d9f49708ca1:0">What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70e2bc32ec4944d1a2044d9f49708ca1"><span data-offset-key="70e2bc32ec4944d1a2044d9f49708ca1:0">What kind of values are there? Are there negative numbers? Floating points? Will there be empty inputs?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e42001b2dfd4467b94b77d5215ae2d54"><span data-offset-key="e42001b2dfd4467b94b77d5215ae2d54:0">Are there duplicates within the input?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e42001b2dfd4467b94b77d5215ae2d54"><span data-offset-key="e42001b2dfd4467b94b77d5215ae2d54:0">Are there duplicates within the input?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="720b427062d04087a38ead7c80001286"><span data-offset-key="720b427062d04087a38ead7c80001286:0">What are some extreme cases of the input?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="720b427062d04087a38ead7c80001286"><span data-offset-key="720b427062d04087a38ead7c80001286:0">What are some extreme cases of the input?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8d083957ba8949369a583b3d99bb0b62"><span data-offset-key="8d083957ba8949369a583b3d99bb0b62:0">How is the input stored? If you are given a dictionary of words, is it a list of strings or a Trie?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8d083957ba8949369a583b3d99bb0b62"><span data-offset-key="8d083957ba8949369a583b3d99bb0b62:0">How is the input stored? If you are given a dictionary of words, is it a list of strings or a Trie?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7ca3dc1f8eed450bbbf34db88aac3ecd"><span data-offset-key="7ca3dc1f8eed450bbbf34db88aac3ecd:0">After you have sufficiently clarified the scope and intention of the problem, explain your high level approach to the interviewer even if it is a naive solution. If you are stuck, consider various approaches and explain out loud why it will/will not work. Sometimes your interviewer might drop hints and lead you towards the right path.</span></span></span>
 
@@ -283,7 +282,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4d80cbc259441dba8a5a3051e16f37c"><span data-offset-key="f4d80cbc259441dba8a5a3051e16f37c:0">If your interviewer is happy with the solution, the interview usually ends here. It is also not uncommon that the interviewer asks you extension questions, such as how you would handle the problem if the whole input is too large to fit into memory, or if the input arrives as a stream. This is a common follow-up question at Google where they care a lot about scale. The answer is usually a divide-and-conquer approach — perform distributed processing of the data and only read certain chunks of the input from disk into memory, write the output back to disk and combine them later on.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dccb1cdc8fee4d9697d09f17b427a1fa"><span data-offset-key="dccb1cdc8fee4d9697d09f17b427a1fa:0">Practicing via Mock Interviews</span></span></span>
 
@@ -297,7 +296,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a4c62635021471a85e35d29d9051e7b"><span data-offset-key="5a4c62635021471a85e35d29d9051e7b:0">Personally, I am not that fond of Pramp's approach because if I were to interview someone, I would rather choose a question I am familiar with. Also, many users of the platform do not have the experience of being interviewers and that can result in a horrible interview experience. There was once where my matched peer, as the interviewer, did not have the right understanding of the question and attempted to lead me down the wrong path of solving the question. However, this is more of a problem of the candidate than the platform though.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="43ac08257fba462c946510ed3f987370"><span data-offset-key="43ac08257fba462c946510ed3f987370:0">Conclusion</span></span></span>
 

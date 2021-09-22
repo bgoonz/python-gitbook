@@ -1,1 +1,1 @@
-No Content: wss://replit.com/graphql\_subscriptions
+No Content: wss://replit.com/graphql_subscriptions

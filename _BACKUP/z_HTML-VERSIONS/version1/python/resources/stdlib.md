@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">STDLib</span>
-===========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">STDLib</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -183,7 +182,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="42fed68ca27046ff819ee93743f58a4e"><span data-offset-key="42fed68ca27046ff819ee93743f58a4e:0">Command Line Arguments</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="88cee8ebd63f46a5ba64cd67dfd1041a"><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:0">Common utility scripts often need to process command line arguments. These arguments are stored in the sys module's </span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:1">*argv*</span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:2"> attribute as a list. For instance the following output results from running </span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:3">`python demo.py one two three`</span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:4"> at the command line:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="88cee8ebd63f46a5ba64cd67dfd1041a"><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:0">Common utility scripts often need to process command line arguments. These arguments are stored in the sys module's </span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:1">_argv_</span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:2"> attribute as a list. For instance the following output results from running </span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:3">`python demo.py one two three`</span><span data-offset-key="88cee8ebd63f46a5ba64cd67dfd1041a:4"> at the command line:</span></span></span>
 
 > > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c5f2bf15527641278ea6bbcba9f3e9ae"><span data-offset-key="c5f2bf15527641278ea6bbcba9f3e9ae:0">import sys print(sys.argv) \['demo.py', 'one', 'two', 'three'\]</span></span></span>
 
@@ -191,11 +190,11 @@
 
     import argparse​parser = argparse.ArgumentParser(prog = 'top',    description = 'Show top lines from each file')parser.add_argument('filenames', nargs='+')parser.add_argument('-l', '--lines', type=int, default=10)args = parser.parse_args()print(args)
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fd76e474fec4dfbbc5754216552c57b"><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:0">When run at the command line with </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:1">`python top.py --lines=5 alpha.txt                                       beta.txt`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:2">, the script sets </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:3">`args.lines`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:4"> to </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:5">`5`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:6"> and </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:7">`args.filenames`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:8"> to </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:9">`['alpha.txt',                                       'beta.txt']`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:10">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fd76e474fec4dfbbc5754216552c57b"><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:0">When run at the command line with </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:1">`python top.py --lines=5 alpha.txt beta.txt`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:2">, the script sets </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:3">`args.lines`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:4"> to </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:5">`5`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:6"> and </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:7">`args.filenames`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:8"> to </span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:9">`['alpha.txt', 'beta.txt']`</span><span data-offset-key="1fd76e474fec4dfbbc5754216552c57b:10">.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="caf1a7f1ee724fb392fcab1338ebba61"><span data-offset-key="caf1a7f1ee724fb392fcab1338ebba61:0">Error Output Redirection and Program Termination</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6021b20f41a452d9a0ac8f2a108d2b2"><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:0">The sys module also has attributes for </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:1">*stdin*</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:2">, </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:3">*stdout*</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:4">, and </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:5">*stderr*</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:6">. The latter is useful for emitting warnings and error messages to make them visible even when </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:7">*stdout*</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:8"> has been redirected:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6021b20f41a452d9a0ac8f2a108d2b2"><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:0">The sys module also has attributes for </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:1">_stdin_</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:2">, </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:3">_stdout_</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:4">, and </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:5">_stderr_</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:6">. The latter is useful for emitting warnings and error messages to make them visible even when </span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:7">_stdout_</span><span data-offset-key="b6021b20f41a452d9a0ac8f2a108d2b2:8"> has been redirected:</span></span></span>
 
 > > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64cbeed2033e4fb489ad20dde56519b1"><span data-offset-key="64cbeed2033e4fb489ad20dde56519b1:0">sys.stderr.write('Warning, log file not found starting a new one\\n') Warning, log file not found starting a new one</span></span></span>
 
@@ -281,47 +280,47 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfd6de95a40a42e6a32476686f7325c2"><span data-offset-key="cfd6de95a40a42e6a32476686f7325c2:0">Python has a "batteries included" philosophy. This is best seen through the sophisticated and robust capabilities of its larger packages. For example:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d81dbdc4c34e4ddd916406367890d7a1"><span data-offset-key="d81dbdc4c34e4ddd916406367890d7a1:0">The xmlrpc.client and xmlrpc.server modules make implementing remote</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d81dbdc4c34e4ddd916406367890d7a1"><span data-offset-key="d81dbdc4c34e4ddd916406367890d7a1:0">The xmlrpc.client and xmlrpc.server modules make implementing remote</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="176625bdd1094f8f93e4a94332446f95"><span data-offset-key="176625bdd1094f8f93e4a94332446f95:0">procedure calls into an almost trivial task. Despite the modules</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="176625bdd1094f8f93e4a94332446f95"><span data-offset-key="176625bdd1094f8f93e4a94332446f95:0">procedure calls into an almost trivial task. Despite the modules</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d570948bea2a4d62af570ff9b99d9c48"><span data-offset-key="d570948bea2a4d62af570ff9b99d9c48:0">names, no direct knowledge or handling of XML is needed.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d570948bea2a4d62af570ff9b99d9c48"><span data-offset-key="d570948bea2a4d62af570ff9b99d9c48:0">names, no direct knowledge or handling of XML is needed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9e7a19ac29d4ac6a5a79634b0b37e3f"><span data-offset-key="d9e7a19ac29d4ac6a5a79634b0b37e3f:0">The email package is a library for managing email messages,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9e7a19ac29d4ac6a5a79634b0b37e3f"><span data-offset-key="d9e7a19ac29d4ac6a5a79634b0b37e3f:0">The email package is a library for managing email messages,</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc34542c74ee462c84f66b96a1e5d5bc"><span data-offset-key="bc34542c74ee462c84f66b96a1e5d5bc:0">including MIME and other 2822-based message documents. Unlike</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc34542c74ee462c84f66b96a1e5d5bc"><span data-offset-key="bc34542c74ee462c84f66b96a1e5d5bc:0">including MIME and other 2822-based message documents. Unlike</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c72620d961a40988b4a05787a54b501"><span data-offset-key="5c72620d961a40988b4a05787a54b501:0">smtplib and poplib which actually send and receive messages, the</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c72620d961a40988b4a05787a54b501"><span data-offset-key="5c72620d961a40988b4a05787a54b501:0">smtplib and poplib which actually send and receive messages, the</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebcfa6b2203545cd8a430930016a255e"><span data-offset-key="ebcfa6b2203545cd8a430930016a255e:0">email package has a complete toolset for building or decoding</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebcfa6b2203545cd8a430930016a255e"><span data-offset-key="ebcfa6b2203545cd8a430930016a255e:0">email package has a complete toolset for building or decoding</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d5acf14b2ed44bab63b4f44d4df2a82"><span data-offset-key="9d5acf14b2ed44bab63b4f44d4df2a82:0">complex message structures (including attachments) and for</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d5acf14b2ed44bab63b4f44d4df2a82"><span data-offset-key="9d5acf14b2ed44bab63b4f44d4df2a82:0">complex message structures (including attachments) and for</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b31a68c489124665994d9cecb8590d46"><span data-offset-key="b31a68c489124665994d9cecb8590d46:0">implementing internet encoding and header protocols.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b31a68c489124665994d9cecb8590d46"><span data-offset-key="b31a68c489124665994d9cecb8590d46:0">implementing internet encoding and header protocols.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2b9d092da29451aa73f649918f6fbb5"><span data-offset-key="a2b9d092da29451aa73f649918f6fbb5:0">The json package provides robust support for parsing this popular</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2b9d092da29451aa73f649918f6fbb5"><span data-offset-key="a2b9d092da29451aa73f649918f6fbb5:0">The json package provides robust support for parsing this popular</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cde9f94755e14446a56112198daff4e7"><span data-offset-key="cde9f94755e14446a56112198daff4e7:0">data interchange format. The csv module supports direct reading and</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cde9f94755e14446a56112198daff4e7"><span data-offset-key="cde9f94755e14446a56112198daff4e7:0">data interchange format. The csv module supports direct reading and</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4468e1fbb1b429bb93673d8a20d4604"><span data-offset-key="f4468e1fbb1b429bb93673d8a20d4604:0">writing of files in Comma-Separated Value format, commonly supported</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4468e1fbb1b429bb93673d8a20d4604"><span data-offset-key="f4468e1fbb1b429bb93673d8a20d4604:0">writing of files in Comma-Separated Value format, commonly supported</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="702c640b45f64cd69ed7f200cd17aefb"><span data-offset-key="702c640b45f64cd69ed7f200cd17aefb:0">by databases and spreadsheets. XML processing is supported by the</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="702c640b45f64cd69ed7f200cd17aefb"><span data-offset-key="702c640b45f64cd69ed7f200cd17aefb:0">by databases and spreadsheets. XML processing is supported by the</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0979d6a5b6f74169bb182d5985925bb0"><span data-offset-key="0979d6a5b6f74169bb182d5985925bb0:0">xml.etree.ElementTree, xml.dom and xml.sax packages. Together, these</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0979d6a5b6f74169bb182d5985925bb0"><span data-offset-key="0979d6a5b6f74169bb182d5985925bb0:0">xml.etree.ElementTree, xml.dom and xml.sax packages. Together, these</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="186dee486fc146579013c4a47ac7e4b5"><span data-offset-key="186dee486fc146579013c4a47ac7e4b5:0">modules and packages greatly simplify data interchange between</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="186dee486fc146579013c4a47ac7e4b5"><span data-offset-key="186dee486fc146579013c4a47ac7e4b5:0">modules and packages greatly simplify data interchange between</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b099c37cbb1c4f4f81eebe4c77bb6c7b"><span data-offset-key="b099c37cbb1c4f4f81eebe4c77bb6c7b:0">Python applications and other tools.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b099c37cbb1c4f4f81eebe4c77bb6c7b"><span data-offset-key="b099c37cbb1c4f4f81eebe4c77bb6c7b:0">Python applications and other tools.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f20150f21ebb40f8a099cff2e326b583"><span data-offset-key="f20150f21ebb40f8a099cff2e326b583:0">The sqlite3 module is a wrapper for the SQLite database library,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f20150f21ebb40f8a099cff2e326b583"><span data-offset-key="f20150f21ebb40f8a099cff2e326b583:0">The sqlite3 module is a wrapper for the SQLite database library,</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f19d0766ec774104b6b228666a583b89"><span data-offset-key="f19d0766ec774104b6b228666a583b89:0">providing a persistent database that can be updated and accessed</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f19d0766ec774104b6b228666a583b89"><span data-offset-key="f19d0766ec774104b6b228666a583b89:0">providing a persistent database that can be updated and accessed</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22a090b08fc24a5e876fa3c9448e03c2"><span data-offset-key="22a090b08fc24a5e876fa3c9448e03c2:0">using slightly nonstandard SQL syntax.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22a090b08fc24a5e876fa3c9448e03c2"><span data-offset-key="22a090b08fc24a5e876fa3c9448e03c2:0">using slightly nonstandard SQL syntax.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31e48d9be44b40049de244ea1cc602c9"><span data-offset-key="31e48d9be44b40049de244ea1cc602c9:0">Internationalization is supported by a number of modules including</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31e48d9be44b40049de244ea1cc602c9"><span data-offset-key="31e48d9be44b40049de244ea1cc602c9:0">Internationalization is supported by a number of modules including</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0a4455aedc7497aa54063987bd7df33"><span data-offset-key="e0a4455aedc7497aa54063987bd7df33:0">gettext, locale, and the codecs package.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0a4455aedc7497aa54063987bd7df33"><span data-offset-key="e0a4455aedc7497aa54063987bd7df33:0">gettext, locale, and the codecs package.</span></span></span>
 
 <a href="intro-2-python3/untitled.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

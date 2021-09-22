@@ -166,8 +166,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Insertion Sort</span>
-===================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Insertion Sort</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -179,7 +178,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="34d3634a2e1d499db3db095cc69f8f01"><span data-offset-key="34d3634a2e1d499db3db095cc69f8f01:0">It is much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or merge sort.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="96f30338cffb4959a505e31c099997b5"><span data-offset-key="96f30338cffb4959a505e31c099997b5:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Insertion_sort" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2129e88cac874b1ca96a680f9f6aac8c"><span data-offset-key="2129e88cac874b1ca96a680f9f6aac8c:0">Advantages </span></span></a><span data-key="39bf1ec3a54042a094dfdba1f94eb1a4"><span data-offset-key="39bf1ec3a54042a094dfdba1f94eb1a4:0">of Insertion Sort</span></span></span>
 
@@ -193,7 +192,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="220f6667e5794fe9be5558ac7919eb5b"><span data-offset-key="220f6667e5794fe9be5558ac7919eb5b:0">5. In-place sorting means O(1) space required.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3237e1d6930e476a93012c9b7f572d49"><span data-offset-key="3237e1d6930e476a93012c9b7f572d49:0">Define Insertion Sort Function</span></span></span>
 
@@ -215,7 +214,7 @@
 
     Best O(n); Average O(n^2); Worst O(n^2)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aee43057af474764a90a878eac44e4a3"><span data-offset-key="aee43057af474764a90a878eac44e4a3:0">Define Main Condition</span></span></span>
 

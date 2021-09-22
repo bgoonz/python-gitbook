@@ -130,8 +130,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python VS JavaScript</span>
-=========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python VS JavaScript</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -141,57 +140,57 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="2a0aa2a6b4494c5a927458fb84dc6154"><span data-offset-key="2a0aa2a6b4494c5a927458fb84dc6154:0">Contents</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a2a410c37474b4fbde22c4ba55f76c9"><span data-offset-key="7a2a410c37474b4fbde22c4ba55f76c9:0">Versions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a2a410c37474b4fbde22c4ba55f76c9"><span data-offset-key="7a2a410c37474b4fbde22c4ba55f76c9:0">Versions</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8073a9452f504d1da403024dd8e9175e"><span data-offset-key="8073a9452f504d1da403024dd8e9175e:0">Development Environments</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8073a9452f504d1da403024dd8e9175e"><span data-offset-key="8073a9452f504d1da403024dd8e9175e:0">Development Environments</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf5c28fe65dd4c78ac448f51c80cfdde"><span data-offset-key="bf5c28fe65dd4c78ac448f51c80cfdde:0">Running Programs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf5c28fe65dd4c78ac448f51c80cfdde"><span data-offset-key="bf5c28fe65dd4c78ac448f51c80cfdde:0">Running Programs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="311a332f30dd4fa38c72727c86013257"><span data-offset-key="311a332f30dd4fa38c72727c86013257:0">Comments</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="311a332f30dd4fa38c72727c86013257"><span data-offset-key="311a332f30dd4fa38c72727c86013257:0">Comments</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6cb51120cb24400e944dfd2515aa5b56"><span data-offset-key="6cb51120cb24400e944dfd2515aa5b56:0">Semicolons</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6cb51120cb24400e944dfd2515aa5b56"><span data-offset-key="6cb51120cb24400e944dfd2515aa5b56:0">Semicolons</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="544fa924bb9341c18322fdb8e24abeab"><span data-offset-key="544fa924bb9341c18322fdb8e24abeab:0">Whitespace, Blocks</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="544fa924bb9341c18322fdb8e24abeab"><span data-offset-key="544fa924bb9341c18322fdb8e24abeab:0">Whitespace, Blocks</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f5af52977a844c3b1512d30871eed42"><span data-offset-key="1f5af52977a844c3b1512d30871eed42:0">Functions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f5af52977a844c3b1512d30871eed42"><span data-offset-key="1f5af52977a844c3b1512d30871eed42:0">Functions</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24d1dce45b374fd6af0350e14b6a5a10"><span data-offset-key="24d1dce45b374fd6af0350e14b6a5a10:0">Arithmetic Operators</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24d1dce45b374fd6af0350e14b6a5a10"><span data-offset-key="24d1dce45b374fd6af0350e14b6a5a10:0">Arithmetic Operators</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="240866380ea249c29be60a906c755ec4"><span data-offset-key="240866380ea249c29be60a906c755ec4:0">Variables</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="240866380ea249c29be60a906c755ec4"><span data-offset-key="240866380ea249c29be60a906c755ec4:0">Variables</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b00fab52fc9f4ce0a3e1c003f8121985"><span data-offset-key="b00fab52fc9f4ce0a3e1c003f8121985:0">Data Types</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b00fab52fc9f4ce0a3e1c003f8121985"><span data-offset-key="b00fab52fc9f4ce0a3e1c003f8121985:0">Data Types</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="514fb39a0ee44b0ab2beeff4e46102e3"><span data-offset-key="514fb39a0ee44b0ab2beeff4e46102e3:0">Arrays/Lists</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="514fb39a0ee44b0ab2beeff4e46102e3"><span data-offset-key="514fb39a0ee44b0ab2beeff4e46102e3:0">Arrays/Lists</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="691ef0ed538949768c962a96b8f90654"><span data-offset-key="691ef0ed538949768c962a96b8f90654:0">Slices</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="691ef0ed538949768c962a96b8f90654"><span data-offset-key="691ef0ed538949768c962a96b8f90654:0">Slices</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f67d474dece54152b9d70083bd0205ae"><span data-offset-key="f67d474dece54152b9d70083bd0205ae:0">Objects/Dicts</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f67d474dece54152b9d70083bd0205ae"><span data-offset-key="f67d474dece54152b9d70083bd0205ae:0">Objects/Dicts</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d8ade1b91019480ab84bc5d93f9c923c"><span data-offset-key="d8ade1b91019480ab84bc5d93f9c923c:0">String Formatting</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d8ade1b91019480ab84bc5d93f9c923c"><span data-offset-key="d8ade1b91019480ab84bc5d93f9c923c:0">String Formatting</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc53f50b97ff466ea1c27a04ebe63f60"><span data-offset-key="fc53f50b97ff466ea1c27a04ebe63f60:0">Booleans and Conditionals</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc53f50b97ff466ea1c27a04ebe63f60"><span data-offset-key="fc53f50b97ff466ea1c27a04ebe63f60:0">Booleans and Conditionals</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7630fe5987114d8e8f9845b938617063"><span data-offset-key="7630fe5987114d8e8f9845b938617063:0">`for`</span><span data-offset-key="7630fe5987114d8e8f9845b938617063:1"> Loops</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7630fe5987114d8e8f9845b938617063"><span data-offset-key="7630fe5987114d8e8f9845b938617063:0">`for`</span><span data-offset-key="7630fe5987114d8e8f9845b938617063:1"> Loops</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="708349add63c4f47a817162d50543505"><span data-offset-key="708349add63c4f47a817162d50543505:0">`while`</span><span data-offset-key="708349add63c4f47a817162d50543505:1"> Loops</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="708349add63c4f47a817162d50543505"><span data-offset-key="708349add63c4f47a817162d50543505:0">`while`</span><span data-offset-key="708349add63c4f47a817162d50543505:1"> Loops</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39b01c882c7a44dcb76669a5034f1a8a"><span data-offset-key="39b01c882c7a44dcb76669a5034f1a8a:0">`switch`</span><span data-offset-key="39b01c882c7a44dcb76669a5034f1a8a:1"> Statement</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39b01c882c7a44dcb76669a5034f1a8a"><span data-offset-key="39b01c882c7a44dcb76669a5034f1a8a:0">`switch`</span><span data-offset-key="39b01c882c7a44dcb76669a5034f1a8a:1"> Statement</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a5c9bdcee83d4b8babf2860fe3b86c94"><span data-offset-key="a5c9bdcee83d4b8babf2860fe3b86c94:0">`if`</span><span data-offset-key="a5c9bdcee83d4b8babf2860fe3b86c94:1"> Conditionals</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a5c9bdcee83d4b8babf2860fe3b86c94"><span data-offset-key="a5c9bdcee83d4b8babf2860fe3b86c94:0">`if`</span><span data-offset-key="a5c9bdcee83d4b8babf2860fe3b86c94:1"> Conditionals</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97e32f8d040e401384980770a8fa8c91"><span data-offset-key="97e32f8d040e401384980770a8fa8c91:0">Classes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97e32f8d040e401384980770a8fa8c91"><span data-offset-key="97e32f8d040e401384980770a8fa8c91:0">Classes</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5119aa809a11464384e1336085199936"><span data-offset-key="5119aa809a11464384e1336085199936:0">Versions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5c0ed5f1425b445a94051a850bfc3af3"><span data-offset-key="5c0ed5f1425b445a94051a850bfc3af3:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="462f0e4f078f416181faf64766c3a1fc"><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:0">The standard defining JavaScript (JS) is </span><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:1">*ECMAScript*</span><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:2"> (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="462f0e4f078f416181faf64766c3a1fc"><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:0">The standard defining JavaScript (JS) is </span><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:1">_ECMAScript_</span><span data-offset-key="462f0e4f078f416181faf64766c3a1fc:2"> (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3074c4d1a7c40b2bb7e30afeae11b06"><span data-offset-key="d3074c4d1a7c40b2bb7e30afeae11b06:0">The website </span></span><a href="https://caniuse.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6fd804aaba1941ea9a66555664d335c9"><span data-offset-key="6fd804aaba1941ea9a66555664d335c9:0">caniuse.com</span></span></a><span data-key="9f60f06b44e94d948501e1c70c5d4f6d"><span data-offset-key="9f60f06b44e94d948501e1c70c5d4f6d:0"> will show which browsers support specific JS features.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dd5fc71e4095446c872e61a9425c1725"><span data-offset-key="dd5fc71e4095446c872e61a9425c1725:0">Python</span></span></span>
 
@@ -205,13 +204,13 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b757601a37a747c9bebbc2d02508ba43"><span data-offset-key="b757601a37a747c9bebbc2d02508ba43:0">Development Environments</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1d8a8badeeef49b1bd27ba14ccbc1374"><span data-offset-key="1d8a8badeeef49b1bd27ba14ccbc1374:0">JavaScript</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f86b88196d3408da54b3c6253b602e3"><span data-offset-key="7f86b88196d3408da54b3c6253b602e3:0">For managing project packages, the classic tool is </span><span data-offset-key="7f86b88196d3408da54b3c6253b602e3:1">`npm`</span><span data-offset-key="7f86b88196d3408da54b3c6253b602e3:2">. This is slowly being superseded by the newer </span><span data-offset-key="7f86b88196d3408da54b3c6253b602e3:3">`yarn`</span><span data-offset-key="7f86b88196d3408da54b3c6253b602e3:4"> tool. Choose one for a project, and don't mix and match.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c672695782104436922eef4a3b19b54c"><span data-offset-key="c672695782104436922eef4a3b19b54c:0">Python</span></span></span>
 
@@ -219,7 +218,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="3ed86051a7b14fdf9e7dececa87a1eca"><span data-offset-key="3ed86051a7b14fdf9e7dececa87a1eca:0">Running Programs</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6de67fb2383f4b0ba052de4795645fbe"><span data-offset-key="6de67fb2383f4b0ba052de4795645fbe:0">JavaScript</span></span></span>
 
@@ -231,7 +230,7 @@
 
     <script src="program.js"></script>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="919f01391f7a4deba4e4493d38df60f0"><span data-offset-key="919f01391f7a4deba4e4493d38df60f0:0">Python</span></span></span>
 
@@ -241,7 +240,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="f7367138338c4c2bb769fc92b8489b4a"><span data-offset-key="f7367138338c4c2bb769fc92b8489b4a:0">Comments</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4b1b2c16217548e0a337ad8ecae696b7"><span data-offset-key="4b1b2c16217548e0a337ad8ecae696b7:0">JavaScript</span></span></span>
 
@@ -255,7 +254,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61dae6fca37f482c9dd3e9529201d755"><span data-offset-key="61dae6fca37f482c9dd3e9529201d755:0">You may not nest multi-line comments.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="14109e97b3a646c58f34387127f7be97"><span data-offset-key="14109e97b3a646c58f34387127f7be97:0">Python</span></span></span>
 
@@ -269,7 +268,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="6c9df90f73e940bc9f54c9be6fc5f966"><span data-offset-key="6c9df90f73e940bc9f54c9be6fc5f966:0">Semicolons</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5757234687e24d2192be3cedccf910cc"><span data-offset-key="5757234687e24d2192be3cedccf910cc:0">JavaScript</span></span></span>
 
@@ -279,7 +278,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2fb48bb507c941219a37dde928574142"><span data-offset-key="2fb48bb507c941219a37dde928574142:0">Javascript interpreters will let you get away without using semicolons at ends of lines, but you should use them.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c21d96e7ef344cbeb4035605c73c273a"><span data-offset-key="c21d96e7ef344cbeb4035605c73c273a:0">Python</span></span></span>
 
@@ -289,7 +288,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7e0e9587651e4623bbf7bcc2391954b7"><span data-offset-key="7e0e9587651e4623bbf7bcc2391954b7:0">Whitespace, blocks</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3a5a0228f8dc4aa5b8db1f39f1dcecee"><span data-offset-key="3a5a0228f8dc4aa5b8db1f39f1dcecee:0">JavaScript</span></span></span>
 
@@ -297,7 +296,7 @@
 
     if (x == 2) {  console.log("x must be 2")} else {  if (x == 3) {    console.log("x must be 3")  } else {    console.log("x must be something else")  }}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="bb70346eafeb4d9daf653203b9b65e17"><span data-offset-key="bb70346eafeb4d9daf653203b9b65e17:0">Python</span></span></span>
 
@@ -307,7 +306,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="769b3eebf6b4492d9c81e471eb1db1ea"><span data-offset-key="769b3eebf6b4492d9c81e471eb1db1ea:0">Functions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="23d5b74fc4a846bda5c0ce8860f711ca"><span data-offset-key="23d5b74fc4a846bda5c0ce8860f711ca:0">JavaScript</span></span></span>
 
@@ -315,11 +314,11 @@
 
     function foobar(x, y, z) {  console.log(x, y, z);  return 12;}
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5978b99483fb463a8859b882cdf7c93f"><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:0">An alternate syntax for functions is growing increasingly common, called </span><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:1">*arrow functions*</span><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:2">:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5978b99483fb463a8859b882cdf7c93f"><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:0">An alternate syntax for functions is growing increasingly common, called </span><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:1">_arrow functions_</span><span data-offset-key="5978b99483fb463a8859b882cdf7c93f:2">:</span></span></span>
 
     let hello = () => {  console.log("hello");  console.log("world");}​hello(); // prints hello, then world​// Arrow functions with single parameters don't// need parens around the parameter:let printNum = x => {  console.log(x);}​// If you don't explicitly return a value, the value// of the last expression in the function is used.// Also, single-expression functions don't need// braces around them.let add = (x, y) => x + y;​console.log(add(4, 5)); // prints 9
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e09bfdb75e5c4e938fc13324d15efac2"><span data-offset-key="e09bfdb75e5c4e938fc13324d15efac2:0">Python</span></span></span>
 
@@ -327,19 +326,19 @@
 
     def foobar(x, y, z):  print(x, y, z)  return 12
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d9f79a7bb0044dc84889fc9627434bf"><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:0">Python also supports the concept of </span><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:1">*lambda functions*</span><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:2">, which are simple functions that can do basic operations.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d9f79a7bb0044dc84889fc9627434bf"><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:0">Python also supports the concept of </span><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:1">_lambda functions_</span><span data-offset-key="1d9f79a7bb0044dc84889fc9627434bf:2">, which are simple functions that can do basic operations.</span></span></span>
 
     add = lambda x, y: x + y​print(add(4, 5)) # prints 9
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b6bd88ccd217404694c4cd90900b4711"><span data-offset-key="b6bd88ccd217404694c4cd90900b4711:0">Arithmetic Operators</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e5b629f7c5f740ce8976ca2e0f605b96"><span data-offset-key="e5b629f7c5f740ce8976ca2e0f605b96:0">JavaScript</span></span></span>
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="f2473dda94ec47668f629737a26d434d"><span data-offset-key="f2473dda94ec47668f629737a26d434d:0">Operator</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="60fb0277f696477ca4bf00b060267344"><span data-offset-key="60fb0277f696477ca4bf00b060267344:0">Description</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b710bc87dc949e98c6abb44a6c35fa5"><span data-offset-key="5b710bc87dc949e98c6abb44a6c35fa5:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">+</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fdca0cc2af4741f78900527159a0c7a8"><span data-offset-key="fdca0cc2af4741f78900527159a0c7a8:0">Addition</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="55af5ff752dc43229f0b3c014ed39122"><span data-offset-key="55af5ff752dc43229f0b3c014ed39122:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">-</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1bc2d4c51e80412f88e843e84da38c39"><span data-offset-key="1bc2d4c51e80412f88e843e84da38c39:0">Subtraction</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02eb24883b374bf49c57eae2740654ab"><span data-offset-key="02eb24883b374bf49c57eae2740654ab:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">*</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="285e9c0992934061b733dca1cf24a567"><span data-offset-key="285e9c0992934061b733dca1cf24a567:0">Multiplication</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a394ef8f4084d0aabb80e2dde85684b"><span data-offset-key="3a394ef8f4084d0aabb80e2dde85684b:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">/</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb54deebc41e4c89aae1e9b165363aaa"><span data-offset-key="fb54deebc41e4c89aae1e9b165363aaa:0">Division</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="012fd4b9b87c4b89af23a0f8d6f854f5"><span data-offset-key="012fd4b9b87c4b89af23a0f8d6f854f5:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">%</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9836fa6104f24286a177c62ed5a14c33"><span data-offset-key="9836fa6104f24286a177c62ed5a14c33:0">Modulo (remainder)</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79c013a463ae470bb39c069a45e2474c"><span data-offset-key="79c013a463ae470bb39c069a45e2474c:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">--</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3942b8c761045a4998fad8445d0efc0"><span data-offset-key="d3942b8c761045a4998fad8445d0efc0:0">Pre-decrement, post-decrement</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d82ef7a0a58442d9ae9a79cffdc5d8c2"><span data-offset-key="d82ef7a0a58442d9ae9a79cffdc5d8c2:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">++</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b44224971e147648b4689394b2b0b41"><span data-offset-key="3b44224971e147648b4689394b2b0b41:0">Pre-increment, post-increment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="92076a407b9346cca9020bc37c17e1e6"><span data-offset-key="92076a407b9346cca9020bc37c17e1e6:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">**</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd700ed7843b452b8684f4724b6bff5a"><span data-offset-key="dd700ed7843b452b8684f4724b6bff5a:0">Exponentiation (power)</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91c7981cd46a4267a4a7219c37e64af1"><span data-offset-key="91c7981cd46a4267a4a7219c37e64af1:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f153b8992ab438b981c343fd030dd61"><span data-offset-key="5f153b8992ab438b981c343fd030dd61:0">Assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24d9fe0df276411b9dcbaae21b57e227"><span data-offset-key="24d9fe0df276411b9dcbaae21b57e227:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">+=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be79a1e185c9425e810f2717cf20d36b"><span data-offset-key="be79a1e185c9425e810f2717cf20d36b:0">Addition assignment</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93e29554822943d481739be45b46d875"><span data-offset-key="93e29554822943d481739be45b46d875:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">-=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="629de516f42a4569aa07226b99043d42"><span data-offset-key="629de516f42a4569aa07226b99043d42:0">Subtraction assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7910245bd61c44139fe6a3b80d6c8e25"><span data-offset-key="7910245bd61c44139fe6a3b80d6c8e25:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">*=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1031df44e214e1fa26e15e92c22bb07"><span data-offset-key="b1031df44e214e1fa26e15e92c22bb07:0">Multiplication assignment</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6de5a96cebb64079a0c29dc6887dbc3c"><span data-offset-key="6de5a96cebb64079a0c29dc6887dbc3c:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">/=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0437152758844d779667a6737fc6834c"><span data-offset-key="0437152758844d779667a6737fc6834c:0">Division assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="295c7d5eff4845a29518df3d5d705183"><span data-offset-key="295c7d5eff4845a29518df3d5d705183:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">%=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c13231e76db49ea80af0f15338c0d69"><span data-offset-key="4c13231e76db49ea80af0f15338c0d69:0">Modulo assignment</span></span></span></p></td></tr></tbody></table>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5d7808f194844809ae0d1dcdfcca8ed5"><span data-offset-key="5d7808f194844809ae0d1dcdfcca8ed5:0">Python</span></span></span>
 
@@ -349,7 +348,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="222a865331424bca9f1ab734d5b2dc8c"><span data-offset-key="222a865331424bca9f1ab734d5b2dc8c:0">Variables</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1b9b99f8e6204da89e5491e3fae0faae"><span data-offset-key="1b9b99f8e6204da89e5491e3fae0faae:0">Javascript</span></span></span>
 
@@ -359,7 +358,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="598862004d5143a6ade467ba37db9d1c"><span data-offset-key="598862004d5143a6ade467ba37db9d1c:0">`var`</span><span data-offset-key="598862004d5143a6ade467ba37db9d1c:1"> is an outdated way of declaring variables in Javascript.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b7ce467ba2654c87ad89df9d2177bbf2"><span data-offset-key="b7ce467ba2654c87ad89df9d2177bbf2:0">Python</span></span></span>
 
@@ -369,7 +368,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1ee1376ca63f42c0b53f384b31d1ead8"><span data-offset-key="1ee1376ca63f42c0b53f384b31d1ead8:0">Data Types</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="96b33fc80a324a7fb6e1cb31b83c607c"><span data-offset-key="96b33fc80a324a7fb6e1cb31b83c607c:0">JavaScript</span></span></span>
 
@@ -383,11 +382,11 @@
 
     let x = 12;console.log(`x is ${x}`); // prints "x is 12"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8269376f6f734d8195e9b3a71ea3a75f"><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:0">JS is </span><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:1">*weakly typed*</span><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:2"> so it supports operations on multiple types of data at once.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8269376f6f734d8195e9b3a71ea3a75f"><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:0">JS is </span><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:1">_weakly typed_</span><span data-offset-key="8269376f6f734d8195e9b3a71ea3a75f:2"> so it supports operations on multiple types of data at once.</span></span></span>
 
     "2" + 4;           // string "24"parseInt("2") + 4; // number 6Number("2") + 4;   // number 6
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2e6f61e70f47461781ef82956e5f8179"><span data-offset-key="2e6f61e70f47461781ef82956e5f8179:0">Python</span></span></span>
 
@@ -401,17 +400,17 @@
 
     x = 12print(f'x is {x}')   # prints "x is 12"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afa79be6922c4d16b11e358aa3451ed9"><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:0">Python is generally </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:1">*strongly typed*</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:2"> so it it will often complain if you try to mix and match types. You can coerce a type with the </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:3">`int()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:4">, </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:5">`float()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:6">, </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:7">`str()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:8">, and </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:9">`bool()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:10"> functions.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afa79be6922c4d16b11e358aa3451ed9"><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:0">Python is generally </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:1">_strongly typed_</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:2"> so it it will often complain if you try to mix and match types. You can coerce a type with the </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:3">`int()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:4">, </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:5">`float()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:6">, </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:7">`str()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:8">, and </span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:9">`bool()`</span><span data-offset-key="afa79be6922c4d16b11e358aa3451ed9:10"> functions.</span></span></span>
 
     "2" + 4        # ERROR: can't mix typesint("2") + 4   # integer 6"2" + str(4)   # string 24
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a6c8b093dc8d4133a744d3325db08875"><span data-offset-key="a6c8b093dc8d4133a744d3325db08875:0">Arrays/Lists</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c949a402446f4e3eb17e74f7d5ac9cc6"><span data-offset-key="c949a402446f4e3eb17e74f7d5ac9cc6:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2146ff2974af49f0aa3e50eb1e1e57d8"><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:0">In JS, lists are called </span><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:1">*arrays*</span><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2146ff2974af49f0aa3e50eb1e1e57d8"><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:0">In JS, lists are called </span><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:1">_arrays_</span><span data-offset-key="2146ff2974af49f0aa3e50eb1e1e57d8:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6fa5898b5fb446b98695be1927549efe"><span data-offset-key="6fa5898b5fb446b98695be1927549efe:0">Arrays are zero-based.</span></span></span>
 
@@ -427,11 +426,11 @@
 
     a4.length; // 3
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7e5dcfe0ec014aea818fd0eb3f81887b"><span data-offset-key="7e5dcfe0ec014aea818fd0eb3f81887b:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f81e3f7e6bc4fa8937e0c4b1057b93e"><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:0">In Python, arrays are called </span><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:1">*lists*</span><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f81e3f7e6bc4fa8937e0c4b1057b93e"><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:0">In Python, arrays are called </span><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:1">_lists_</span><span data-offset-key="5f81e3f7e6bc4fa8937e0c4b1057b93e:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="031022dfbc134c7f844ce9103e7a2e93"><span data-offset-key="031022dfbc134c7f844ce9103e7a2e93:0">Lists are zero-based.</span></span></span>
 
@@ -461,23 +460,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1503103f3faa4883bec14ed14309843a"><span data-offset-key="1503103f3faa4883bec14ed14309843a:0">**Tuples**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90103af73aa94009be48b5695cb47274"><span data-offset-key="90103af73aa94009be48b5695cb47274:0">Python supports a read-only type of list called a </span><span data-offset-key="90103af73aa94009be48b5695cb47274:1">*tuple*</span><span data-offset-key="90103af73aa94009be48b5695cb47274:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90103af73aa94009be48b5695cb47274"><span data-offset-key="90103af73aa94009be48b5695cb47274:0">Python supports a read-only type of list called a </span><span data-offset-key="90103af73aa94009be48b5695cb47274:1">_tuple_</span><span data-offset-key="90103af73aa94009be48b5695cb47274:2">.</span></span></span>
 
     x = (1, 2, 3)print(x[1])  # prints 2​y = (10,)    # A tuple of one element, comma required
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35197d9bbd534048abc546b4a139c27b"><span data-offset-key="35197d9bbd534048abc546b4a139c27b:0">**List Comprehensions**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06893df9c2404006a8caa1235573108f"><span data-offset-key="06893df9c2404006a8caa1235573108f:0">Python supports building lists with </span><span data-offset-key="06893df9c2404006a8caa1235573108f:1">*list comprehensions*</span><span data-offset-key="06893df9c2404006a8caa1235573108f:2">. This is often useful for filtering lists.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06893df9c2404006a8caa1235573108f"><span data-offset-key="06893df9c2404006a8caa1235573108f:0">Python supports building lists with </span><span data-offset-key="06893df9c2404006a8caa1235573108f:1">_list comprehensions_</span><span data-offset-key="06893df9c2404006a8caa1235573108f:2">. This is often useful for filtering lists.</span></span></span>
 
     a = [1, 2, 3, 4, 5]​# Make a list b that is the same as list a:b = [i for i in a]  # Pretty boring​# Make a list c that contains only the# even elements of a:c = [i for i in a if i % 2 == 0]
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="91e9e34841df48bdbb8e070758d2b8b1"><span data-offset-key="91e9e34841df48bdbb8e070758d2b8b1:0">Objects/Dicts</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="14022c8b9b6546d88125d17af43c88f9"><span data-offset-key="14022c8b9b6546d88125d17af43c88f9:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7b708bfb29645fbb3491594d0d995a5"><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:0">*Objects*</span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:1"> hold data which can be found by a specific key called a </span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:2">*property*</span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:3">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7b708bfb29645fbb3491594d0d995a5"><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:0">_Objects_</span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:1"> hold data which can be found by a specific key called a </span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:2">_property_</span><span data-offset-key="b7b708bfb29645fbb3491594d0d995a5:3">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="51fc77bd6cfd449ca6d6679ed7de8183"><span data-offset-key="51fc77bd6cfd449ca6d6679ed7de8183:0">Creation:</span></span></span>
 
@@ -487,11 +486,11 @@
 
     console.log(o2.x);      // prints 12console.log(o4["foo"]); // prints hello
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d48982d787d84f23886f1d7be19decb2"><span data-offset-key="d48982d787d84f23886f1d7be19decb2:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="db1a8211ca984cdda73d4f1bb628fef9"><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:0">*Dicts*</span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:1"> hold information that can be accessed by a </span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:2">*key*</span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:3">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="db1a8211ca984cdda73d4f1bb628fef9"><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:0">_Dicts_</span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:1"> hold information that can be accessed by a </span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:2">_key_</span><span data-offset-key="db1a8211ca984cdda73d4f1bb628fef9:3">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b2599f365574f12ab2bbc9991cbdfca"><span data-offset-key="2b2599f365574f12ab2bbc9991cbdfca:0">Unlike objects in JS, a </span><span data-offset-key="2b2599f365574f12ab2bbc9991cbdfca:1">`dict`</span><span data-offset-key="2b2599f365574f12ab2bbc9991cbdfca:2"> is its own beast, and is not the same as an object obtained by instantiating a Python class.</span></span></span>
 
@@ -507,7 +506,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1353bd9abafd4073ab907ca87a5cde42"><span data-offset-key="1353bd9abafd4073ab907ca87a5cde42:0">String Formatting</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="31ee5f1819b34330b51ee60d98ba650c"><span data-offset-key="31ee5f1819b34330b51ee60d98ba650c:0">JavaScript</span></span></span>
 
@@ -527,7 +526,7 @@
 
     let x = 3.1415926;let y = "Hello";let z = 67;​// 'x is 3.14, y is "Hello", z is 01000011'let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z.toString(2).padStart(8, '0')}`
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="63579fc336624c4c9d681c000f7b8013"><span data-offset-key="63579fc336624c4c9d681c000f7b8013:0">Python</span></span></span>
 
@@ -541,7 +540,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b4fd68458295493aa32ab9de5be3a9dc"><span data-offset-key="b4fd68458295493aa32ab9de5be3a9dc:0">Booleans and Conditionals</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6b642ff496844520b3575dc0b082ef6e"><span data-offset-key="6b642ff496844520b3575dc0b082ef6e:0">JavaScript</span></span></span>
 
@@ -569,7 +568,7 @@
 
     if (a == 2 && b !== "") {  // Something complicated}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dc86c597f02e4aed9713dbab38f713ae"><span data-offset-key="dc86c597f02e4aed9713dbab38f713ae:0">Python</span></span></span>
 
@@ -595,7 +594,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="78fb09def26f4df7a0ed8118bb52b799"><span data-offset-key="78fb09def26f4df7a0ed8118bb52b799:0">`for`</span><span data-offset-key="78fb09def26f4df7a0ed8118bb52b799:1"> Loops</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="67205d02125944acb702ff366a836dcc"><span data-offset-key="67205d02125944acb702ff366a836dcc:0">JavaScript</span></span></span>
 
@@ -611,11 +610,11 @@
 
     a = [10, 20, 30];​for (let i of a) {  console.log(i);  # 10 20 30}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6b3db7c030574d07baa057265305560b"><span data-offset-key="6b3db7c030574d07baa057265305560b:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aa48422c13e044fb97c4a75b2f524c8a"><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:0">`for`</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:1">-</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:2">`in`</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:3"> loops over an </span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:4">*iteratable*</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:5">. This can be a list, object, or other type of iterable item.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aa48422c13e044fb97c4a75b2f524c8a"><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:0">`for`</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:1">-</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:2">`in`</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:3"> loops over an </span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:4">_iteratable_</span><span data-offset-key="aa48422c13e044fb97c4a75b2f524c8a:5">. This can be a list, object, or other type of iterable item.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aed4027d293e41a5a8d33161e99bf7f2"><span data-offset-key="aed4027d293e41a5a8d33161e99bf7f2:0">Counting loops:</span></span></span>
 
@@ -627,7 +626,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="795452029d9b4e7cb75c4ebdd58bea34"><span data-offset-key="795452029d9b4e7cb75c4ebdd58bea34:0">`while`</span><span data-offset-key="795452029d9b4e7cb75c4ebdd58bea34:1"> Loops</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aeb95b1eaa2a4a26acebf4ab8fc3d2b2"><span data-offset-key="aeb95b1eaa2a4a26acebf4ab8fc3d2b2:0">JavaScript</span></span></span>
 
@@ -635,7 +634,7 @@
 
     // Print 10 down to 0:​let x = 10;while (x >= 0) {  console.log(x);  x--;}​// Print 0 up to 9:let x = 0;do {  console.log(x);  x++;while (x < 10);
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a753ac110df34a1590c3159acc172674"><span data-offset-key="a753ac110df34a1590c3159acc172674:0">Python</span></span></span>
 
@@ -645,7 +644,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="2401f633cfb742629ae56b8031af66b0"><span data-offset-key="2401f633cfb742629ae56b8031af66b0:0">`switch`</span><span data-offset-key="2401f633cfb742629ae56b8031af66b0:1"> Statement</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="68477173514b4b5790d9a63491eda6e2"><span data-offset-key="68477173514b4b5790d9a63491eda6e2:0">JavaScript</span></span></span>
 
@@ -653,7 +652,7 @@
 
     switch(x) {  case "foo":    console.log("x is foo, all right");    break;  case 23:    console.log("but here x is 23");    break;  default:    console.log("x is something else entirely");}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="63cf02481e564ab7a89c1e4684aeff24"><span data-offset-key="63cf02481e564ab7a89c1e4684aeff24:0">Python</span></span></span>
 
@@ -665,7 +664,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="de8fc8ae6f2248c2a6813c30249e675e"><span data-offset-key="de8fc8ae6f2248c2a6813c30249e675e:0">`if`</span><span data-offset-key="de8fc8ae6f2248c2a6813c30249e675e:1"> Conditionals</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8c2421c971de4b3d8d1aafc11d0fb9f2"><span data-offset-key="8c2421c971de4b3d8d1aafc11d0fb9f2:0">JavaScript</span></span></span>
 
@@ -673,7 +672,7 @@
 
     if (x == 10) {  console.log("x is 10");} else if (x == 20) {  console.log("x is 20");} else {  console.log("x is something else");}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1af46be310654826b6904ef8afdab2ef"><span data-offset-key="1af46be310654826b6904ef8afdab2ef:0">Python</span></span></span>
 
@@ -683,7 +682,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1b55b85371a24b34855d30a26a9abdea"><span data-offset-key="1b55b85371a24b34855d30a26a9abdea:0">Classes</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="febedcbc26b0450997620fdeab0afee7"><span data-offset-key="febedcbc26b0450997620fdeab0afee7:0">JavaScript</span></span></span>
 
@@ -701,9 +700,9 @@
 
     class Creature {  constructor(type) {    this.type = type;  }}​class Goat extends Creature {  constructor(color) {    super("mammal");    this.legs = 4;    this.color = color;  }​  jump() {    console.log("I'm jumping! Yay!");  }}​g = new Goat("orange");g.type;   // "mammal"g.jump(); // "I'm jumping! Yay!"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a33adf5adf042f693c7d3b6706f9347"><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:0">JS does not support multiple inheritance since each object can only have one prototype object. You have to use a </span><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:1">*mix-in*</span><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:2"> if you want to achieve similar functionality.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a33adf5adf042f693c7d3b6706f9347"><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:0">JS does not support multiple inheritance since each object can only have one prototype object. You have to use a </span><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:1">_mix-in_</span><span data-offset-key="2a33adf5adf042f693c7d3b6706f9347:2"> if you want to achieve similar functionality.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f15055e0c0a047a6ae5d8ad280d9b528"><span data-offset-key="f15055e0c0a047a6ae5d8ad280d9b528:0">Python</span></span></span>
 

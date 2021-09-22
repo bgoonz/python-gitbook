@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Beginners Guide To Python</span>
-==============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Beginners Guide To Python</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -173,19 +172,19 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="eca894bd5de04427a8a5e0cf6afed505"><span data-offset-key="eca894bd5de04427a8a5e0cf6afed505:0">Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ac20c61d15147579c1f8d4b28b0650b"><span data-offset-key="9ac20c61d15147579c1f8d4b28b0650b:0">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ac20c61d15147579c1f8d4b28b0650b"><span data-offset-key="9ac20c61d15147579c1f8d4b28b0650b:0">Python is an interpreted, high-level and general-purpose, dynamically typed programming language</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="912a2a0ec3034bcda965bd3da505a9f0"><span data-offset-key="912a2a0ec3034bcda965bd3da505a9f0:0">It is also Object oriented, modular oriented and a scripting language.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="912a2a0ec3034bcda965bd3da505a9f0"><span data-offset-key="912a2a0ec3034bcda965bd3da505a9f0:0">It is also Object oriented, modular oriented and a scripting language.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="03c0780499834242b9c66cdbf4d058a7"><span data-offset-key="03c0780499834242b9c66cdbf4d058a7:0">In Python, everything is considered as an Object.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="03c0780499834242b9c66cdbf4d058a7"><span data-offset-key="03c0780499834242b9c66cdbf4d058a7:0">In Python, everything is considered as an Object.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dc9d10ca0c8434883a58cbd20814973"><span data-offset-key="0dc9d10ca0c8434883a58cbd20814973:0">A python file has an extension of .py</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dc9d10ca0c8434883a58cbd20814973"><span data-offset-key="0dc9d10ca0c8434883a58cbd20814973:0">A python file has an extension of .py</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9cfed4b705e433cad005246529bacae"><span data-offset-key="b9cfed4b705e433cad005246529bacae:0">Python follows Indentation to separate code blocks instead of flower brackets({}).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9cfed4b705e433cad005246529bacae"><span data-offset-key="b9cfed4b705e433cad005246529bacae:0">Python follows Indentation to separate code blocks instead of flower brackets({}).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0af7ee391914089a1455017c37e9b73"><span data-offset-key="e0af7ee391914089a1455017c37e9b73:0">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0af7ee391914089a1455017c37e9b73"><span data-offset-key="e0af7ee391914089a1455017c37e9b73:0">We can run a python file by the following command in cmd(Windows) or shell(mac/linux).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d2ee8ca8c9bc48aa9a2e9f60e880a8b9"><span data-offset-key="d2ee8ca8c9bc48aa9a2e9f60e880a8b9:0">`python <filename.py>`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d2ee8ca8c9bc48aa9a2e9f60e880a8b9"><span data-offset-key="d2ee8ca8c9bc48aa9a2e9f60e880a8b9:0">`python <filename.py>`</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0753f84ce8e644f9bcf79cc7baddf323"><span data-offset-key="0753f84ce8e644f9bcf79cc7baddf323:0">By default, the python doesn’t require any imports to run a python file.</span></span></span>
 
@@ -215,125 +214,125 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="e56a5f234fc1477ba3943f190416c526"><span data-offset-key="e56a5f234fc1477ba3943f190416c526:0">List</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d232dd937b9c4aed89bed1676e7a7db1"><span data-offset-key="d232dd937b9c4aed89bed1676e7a7db1:0">List is a collection which is ordered and changeable. Allows duplicate members.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d232dd937b9c4aed89bed1676e7a7db1"><span data-offset-key="d232dd937b9c4aed89bed1676e7a7db1:0">List is a collection which is ordered and changeable. Allows duplicate members.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f8196ac5c3d4eeaa6c2fe2b4dd40c71"><span data-offset-key="8f8196ac5c3d4eeaa6c2fe2b4dd40c71:0">Lists are created using square brackets:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f8196ac5c3d4eeaa6c2fe2b4dd40c71"><span data-offset-key="8f8196ac5c3d4eeaa6c2fe2b4dd40c71:0">Lists are created using square brackets:</span></span></span>
 
-    thislist = ["apple", "banana", "cherry"]
+  thislist = ["apple", "banana", "cherry"]
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="024e3552fe374212abcf00b5e5bdd042"><span data-offset-key="024e3552fe374212abcf00b5e5bdd042:0">List items are ordered, changeable, and allow duplicate values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="024e3552fe374212abcf00b5e5bdd042"><span data-offset-key="024e3552fe374212abcf00b5e5bdd042:0">List items are ordered, changeable, and allow duplicate values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27940ea01c8a41c19b43d18f43eed785"><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:0">List items are indexed, the first item has index </span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:1">`[0]`</span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:2">, the second item has index </span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:3">`[1]`</span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:4"> etc.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27940ea01c8a41c19b43d18f43eed785"><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:0">List items are indexed, the first item has index </span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:1">`[0]`</span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:2">, the second item has index </span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:3">`[1]`</span><span data-offset-key="27940ea01c8a41c19b43d18f43eed785:4"> etc.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="399d391e0b674c428600a6dc2d684e80"><span data-offset-key="399d391e0b674c428600a6dc2d684e80:0">The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="399d391e0b674c428600a6dc2d684e80"><span data-offset-key="399d391e0b674c428600a6dc2d684e80:0">The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="022403fe67a04d76968171442184e7af"><span data-offset-key="022403fe67a04d76968171442184e7af:0">To determine how many items a list has, use the </span><span data-offset-key="022403fe67a04d76968171442184e7af:1">`len()`</span><span data-offset-key="022403fe67a04d76968171442184e7af:2"> function.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="022403fe67a04d76968171442184e7af"><span data-offset-key="022403fe67a04d76968171442184e7af:0">To determine how many items a list has, use the </span><span data-offset-key="022403fe67a04d76968171442184e7af:1">`len()`</span><span data-offset-key="022403fe67a04d76968171442184e7af:2"> function.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="016651817bbe45119e7f4f39b0716e4e"><span data-offset-key="016651817bbe45119e7f4f39b0716e4e:0">A list can contain different data types:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="016651817bbe45119e7f4f39b0716e4e"><span data-offset-key="016651817bbe45119e7f4f39b0716e4e:0">A list can contain different data types:</span></span></span>
 
-    list1 = ["abc", 34, True, 40, "male"]
+  list1 = ["abc", 34, True, 40, "male"]
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d42c2f9ad594191a5266aaa3fc60948"><span data-offset-key="6d42c2f9ad594191a5266aaa3fc60948:0">It is also possible to use the list() constructor when creating a new list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d42c2f9ad594191a5266aaa3fc60948"><span data-offset-key="6d42c2f9ad594191a5266aaa3fc60948:0">It is also possible to use the list() constructor when creating a new list</span></span></span>
 
-    thislist = list(("apple", "banana", "cherry"))  # note the double round-brackets
+  thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="ad3b36f84a4943c3a5fb01da27ce4740"><span data-offset-key="ad3b36f84a4943c3a5fb01da27ce4740:0">Tuple</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f208f94ca1f64bd6b130caaea20d27f4"><span data-offset-key="f208f94ca1f64bd6b130caaea20d27f4:0">Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f208f94ca1f64bd6b130caaea20d27f4"><span data-offset-key="f208f94ca1f64bd6b130caaea20d27f4:0">Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="92a759f4764e48efb9e3eebb2f3f1196"><span data-offset-key="92a759f4764e48efb9e3eebb2f3f1196:0">A tuple is a collection which is ordered and unchangeable.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="92a759f4764e48efb9e3eebb2f3f1196"><span data-offset-key="92a759f4764e48efb9e3eebb2f3f1196:0">A tuple is a collection which is ordered and unchangeable.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70481c35e0ca4d1e806148fca09d707d"><span data-offset-key="70481c35e0ca4d1e806148fca09d707d:0">Tuples are written with round brackets.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70481c35e0ca4d1e806148fca09d707d"><span data-offset-key="70481c35e0ca4d1e806148fca09d707d:0">Tuples are written with round brackets.</span></span></span>
 
-    thistuple = ("apple", "banana", "cherry")
+  thistuple = ("apple", "banana", "cherry")
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ce7f3ec4474474e93180086b2482e46"><span data-offset-key="2ce7f3ec4474474e93180086b2482e46:0">Tuple items are ordered, unchangeable, and allow duplicate values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ce7f3ec4474474e93180086b2482e46"><span data-offset-key="2ce7f3ec4474474e93180086b2482e46:0">Tuple items are ordered, unchangeable, and allow duplicate values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf77d2c1dacc4306b478f85bf92bbfd8"><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:0">Tuple items are indexed, the first item has index </span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:1">`[0]`</span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:2">, the second item has index </span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:3">`[1]`</span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:4"> etc.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf77d2c1dacc4306b478f85bf92bbfd8"><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:0">Tuple items are indexed, the first item has index </span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:1">`[0]`</span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:2">, the second item has index </span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:3">`[1]`</span><span data-offset-key="bf77d2c1dacc4306b478f85bf92bbfd8:4"> etc.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb7ad0313a34416e8df4140b38af623d"><span data-offset-key="bb7ad0313a34416e8df4140b38af623d:0">When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb7ad0313a34416e8df4140b38af623d"><span data-offset-key="bb7ad0313a34416e8df4140b38af623d:0">When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a110703b59754bc7b3dff8b7c404c51c"><span data-offset-key="a110703b59754bc7b3dff8b7c404c51c:0">Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a110703b59754bc7b3dff8b7c404c51c"><span data-offset-key="a110703b59754bc7b3dff8b7c404c51c:0">Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00a096b3e5164091beb82af2ce6cab9e"><span data-offset-key="00a096b3e5164091beb82af2ce6cab9e:0">Since tuple are indexed, tuples can have items with the same value:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00a096b3e5164091beb82af2ce6cab9e"><span data-offset-key="00a096b3e5164091beb82af2ce6cab9e:0">Since tuple are indexed, tuples can have items with the same value:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2bfc3e35f01a4a8fbd648967a081de28"><span data-offset-key="2bfc3e35f01a4a8fbd648967a081de28:0">Tuples allow duplicate values:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2bfc3e35f01a4a8fbd648967a081de28"><span data-offset-key="2bfc3e35f01a4a8fbd648967a081de28:0">Tuples allow duplicate values:</span></span></span>
 
-    thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+  thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="632e4579997d4a89b11be45c041d47c9"><span data-offset-key="632e4579997d4a89b11be45c041d47c9:0">To determine how many items a tuple has, use the </span><span data-offset-key="632e4579997d4a89b11be45c041d47c9:1">`len()`</span><span data-offset-key="632e4579997d4a89b11be45c041d47c9:2">function:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="632e4579997d4a89b11be45c041d47c9"><span data-offset-key="632e4579997d4a89b11be45c041d47c9:0">To determine how many items a tuple has, use the </span><span data-offset-key="632e4579997d4a89b11be45c041d47c9:1">`len()`</span><span data-offset-key="632e4579997d4a89b11be45c041d47c9:2">function:</span></span></span>
 
-    thistuple = ("apple", "banana", "cherry")print(len(thistuple))
+  thistuple = ("apple", "banana", "cherry")print(len(thistuple))
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="808016f56aef41088990c47c89d881ee"><span data-offset-key="808016f56aef41088990c47c89d881ee:0">To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="808016f56aef41088990c47c89d881ee"><span data-offset-key="808016f56aef41088990c47c89d881ee:0">To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</span></span></span>
 
-    thistuple = ("apple",)print(type(thistuple))
+  thistuple = ("apple",)print(type(thistuple))
 
-    #NOT a tuplethistuple = ("apple")print(type(thistuple))
+  #NOT a tuplethistuple = ("apple")print(type(thistuple))
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93008a9edda54638985e43ee551c4ac4"><span data-offset-key="93008a9edda54638985e43ee551c4ac4:0">It is also possible to use the tuple() constructor to make a tuple.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93008a9edda54638985e43ee551c4ac4"><span data-offset-key="93008a9edda54638985e43ee551c4ac4:0">It is also possible to use the tuple() constructor to make a tuple.</span></span></span>
 
-    thistuple = tuple(("apple", "banana", "cherry")) # note the double round-bracketsprint(thistuple)
+  thistuple = tuple(("apple", "banana", "cherry")) # note the double round-bracketsprint(thistuple)
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="931900fbd2574da38d15bb7b30faaf3d"><span data-offset-key="931900fbd2574da38d15bb7b30faaf3d:0">Set</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="806dd054839e45d3b8643999693afe4e"><span data-offset-key="806dd054839e45d3b8643999693afe4e:0">Set is a collection which is unordered and unindexed. No duplicate members.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="806dd054839e45d3b8643999693afe4e"><span data-offset-key="806dd054839e45d3b8643999693afe4e:0">Set is a collection which is unordered and unindexed. No duplicate members.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7726453ebe50441a96585f743c0fef09"><span data-offset-key="7726453ebe50441a96585f743c0fef09:0">A set is a collection which is both unordered and unindexed.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7726453ebe50441a96585f743c0fef09"><span data-offset-key="7726453ebe50441a96585f743c0fef09:0">A set is a collection which is both unordered and unindexed.</span></span></span>
 
-    thisset = {"apple", "banana", "cherry"}
+  thisset = {"apple", "banana", "cherry"}
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86b38da7d5ea4016956f8e12c7c9e744"><span data-offset-key="86b38da7d5ea4016956f8e12c7c9e744:0">Set items are unordered, unchangeable, and do not allow duplicate values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86b38da7d5ea4016956f8e12c7c9e744"><span data-offset-key="86b38da7d5ea4016956f8e12c7c9e744:0">Set items are unordered, unchangeable, and do not allow duplicate values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d12eb5da959a40d884b0347f29a299ef"><span data-offset-key="d12eb5da959a40d884b0347f29a299ef:0">Unordered means that the items in a set do not have a defined order.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d12eb5da959a40d884b0347f29a299ef"><span data-offset-key="d12eb5da959a40d884b0347f29a299ef:0">Unordered means that the items in a set do not have a defined order.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2cefcb30d8e47ae87acd5452d10844e"><span data-offset-key="e2cefcb30d8e47ae87acd5452d10844e:0">Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2cefcb30d8e47ae87acd5452d10844e"><span data-offset-key="e2cefcb30d8e47ae87acd5452d10844e:0">Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bab79b7f0328401e9be5d2782285cf77"><span data-offset-key="bab79b7f0328401e9be5d2782285cf77:0">Sets are unchangeable, meaning that we cannot change the items after the set has been created.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bab79b7f0328401e9be5d2782285cf77"><span data-offset-key="bab79b7f0328401e9be5d2782285cf77:0">Sets are unchangeable, meaning that we cannot change the items after the set has been created.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a5e11ab636d405ea8d2170975b5842b"><span data-offset-key="0a5e11ab636d405ea8d2170975b5842b:0">Duplicate values will be ignored.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a5e11ab636d405ea8d2170975b5842b"><span data-offset-key="0a5e11ab636d405ea8d2170975b5842b:0">Duplicate values will be ignored.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3daa905315ae4ba491631bdb861a96fb"><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:0">To determine how many items a set has, use the </span><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:1">`len()`</span><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:2"> method.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3daa905315ae4ba491631bdb861a96fb"><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:0">To determine how many items a set has, use the </span><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:1">`len()`</span><span data-offset-key="3daa905315ae4ba491631bdb861a96fb:2"> method.</span></span></span>
 
-    thisset = {"apple", "banana", "cherry"}
+  thisset = {"apple", "banana", "cherry"}
 
-    print(len(thisset))
+  print(len(thisset))
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f25c429efb347269de9fb2e0b5840f3"><span data-offset-key="5f25c429efb347269de9fb2e0b5840f3:0">Set items can be of any data type:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f25c429efb347269de9fb2e0b5840f3"><span data-offset-key="5f25c429efb347269de9fb2e0b5840f3:0">Set items can be of any data type:</span></span></span>
 
-    set1 = {"apple", "banana", "cherry"}set2 = {1, 5, 7, 9, 3}set3 = {True, False, False}set4 = {"abc", 34, True, 40, "male"}
+  set1 = {"apple", "banana", "cherry"}set2 = {1, 5, 7, 9, 3}set3 = {True, False, False}set4 = {"abc", 34, True, 40, "male"}
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5"><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:0">It is also possible to use the </span><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:1">`set()`</span><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:2"> constructor to make a set.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5"><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:0">It is also possible to use the </span><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:1">`set()`</span><span data-offset-key="c17e9b63d48e4a5f929b3bf7a9d2a2f5:2"> constructor to make a set.</span></span></span>
 
-    thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+  thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="883604dcbb594797b5fa0d07798c0b25"><span data-offset-key="883604dcbb594797b5fa0d07798c0b25:0">Dictionary</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abe457afa6cb457dbdcfeaf48aedb552"><span data-offset-key="abe457afa6cb457dbdcfeaf48aedb552:0">Dictionary is a collection which is unordered and changeable. No duplicate members.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abe457afa6cb457dbdcfeaf48aedb552"><span data-offset-key="abe457afa6cb457dbdcfeaf48aedb552:0">Dictionary is a collection which is unordered and changeable. No duplicate members.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fedde30d43e9439298930d35435510a3"><span data-offset-key="fedde30d43e9439298930d35435510a3:0">Dictionaries are used to store data values in key:value pairs.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fedde30d43e9439298930d35435510a3"><span data-offset-key="fedde30d43e9439298930d35435510a3:0">Dictionaries are used to store data values in key:value pairs.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cc5b0182726d49858075518cdf285715"><span data-offset-key="cc5b0182726d49858075518cdf285715:0">Dictionaries are written with curly brackets, and have keys and values:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cc5b0182726d49858075518cdf285715"><span data-offset-key="cc5b0182726d49858075518cdf285715:0">Dictionaries are written with curly brackets, and have keys and values:</span></span></span>
 
-    thisdict = {  "brand": "Ford",  "model": "Mustang",  "year": 1964}
+  thisdict = { "brand": "Ford", "model": "Mustang", "year": 1964}
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17dc4156b900457b97404f504e9ed431"><span data-offset-key="17dc4156b900457b97404f504e9ed431:0">Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17dc4156b900457b97404f504e9ed431"><span data-offset-key="17dc4156b900457b97404f504e9ed431:0">Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</span></span></span>
 
-    thisdict = {  "brand": "Ford",  "model": "Mustang",  "year": 1964}print(thisdict["brand"])
+  thisdict = { "brand": "Ford", "model": "Mustang", "year": 1964}print(thisdict["brand"])
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="adfef8b85a2c4966b1924b20fcd259e9"><span data-offset-key="adfef8b85a2c4966b1924b20fcd259e9:0">Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="adfef8b85a2c4966b1924b20fcd259e9"><span data-offset-key="adfef8b85a2c4966b1924b20fcd259e9:0">Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68685526d41a406a90159c87772a352e"><span data-offset-key="68685526d41a406a90159c87772a352e:0">Dictionaries cannot have two items with the same key.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68685526d41a406a90159c87772a352e"><span data-offset-key="68685526d41a406a90159c87772a352e:0">Dictionaries cannot have two items with the same key.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cffa8243d83640a8baf4c6d9ebd022b1"><span data-offset-key="cffa8243d83640a8baf4c6d9ebd022b1:0">Duplicate values will overwrite existing values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cffa8243d83640a8baf4c6d9ebd022b1"><span data-offset-key="cffa8243d83640a8baf4c6d9ebd022b1:0">Duplicate values will overwrite existing values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbc6c5bb00254b97a8d8c90c34f19294"><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:0">To determine how many items a dictionary has, use the </span><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:1">`len()`</span><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:2"> function.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbc6c5bb00254b97a8d8c90c34f19294"><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:0">To determine how many items a dictionary has, use the </span><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:1">`len()`</span><span data-offset-key="dbc6c5bb00254b97a8d8c90c34f19294:2"> function.</span></span></span>
 
-    print(len(thisdict))
+  print(len(thisdict))
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d912db027d554095a7ba78a7d483fbc4"><span data-offset-key="d912db027d554095a7ba78a7d483fbc4:0">The values in dictionary items can be of any data type</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d912db027d554095a7ba78a7d483fbc4"><span data-offset-key="d912db027d554095a7ba78a7d483fbc4:0">The values in dictionary items can be of any data type</span></span></span>
 
-    thisdict = {  "brand": "Ford",  "electric": False,  "year": 1964,  "colors": ["red", "white", "blue"]}
+  thisdict = { "brand": "Ford", "electric": False, "year": 1964, "colors": ["red", "white", "blue"]}
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="5e928018678e4ee5b719c9e1142bc1f1"><span data-offset-key="5e928018678e4ee5b719c9e1142bc1f1:0">Conditional branching</span></span></span>
 
@@ -349,49 +348,49 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b6f7adec312a418196ae108ec0128eeb"><span data-offset-key="b6f7adec312a418196ae108ec0128eeb:0">While loop</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bdc25b147b644740b5dadb239737f2a8"><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:0">With the </span><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:1">`while`</span><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:2"> loop we can execute a set of statements as long as a condition is true.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bdc25b147b644740b5dadb239737f2a8"><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:0">With the </span><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:1">`while`</span><span data-offset-key="bdc25b147b644740b5dadb239737f2a8:2"> loop we can execute a set of statements as long as a condition is true.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38aaee565a1b4d7688f467e09f69e6a8"><span data-offset-key="38aaee565a1b4d7688f467e09f69e6a8:0">Example: Print i as long as i is less than 6</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38aaee565a1b4d7688f467e09f69e6a8"><span data-offset-key="38aaee565a1b4d7688f467e09f69e6a8:0">Example: Print i as long as i is less than 6</span></span></span>
 
-    i = 1while i < 6:  print(i)  i += 1
+  i = 1while i < 6: print(i) i += 1
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4579f39b904409c8c5e4d535881de3f"><span data-offset-key="e4579f39b904409c8c5e4d535881de3f:0">The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4579f39b904409c8c5e4d535881de3f"><span data-offset-key="e4579f39b904409c8c5e4d535881de3f:0">The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e81a4239264f4fb4afc01f8d3c42636b"><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:0">With the </span><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:1">`break`</span><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:2"> statement we can stop the loop even if the while condition is true</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e81a4239264f4fb4afc01f8d3c42636b"><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:0">With the </span><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:1">`break`</span><span data-offset-key="e81a4239264f4fb4afc01f8d3c42636b:2"> statement we can stop the loop even if the while condition is true</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8bcc812bd6504a4ba38e09ea739451ca"><span data-offset-key="8bcc812bd6504a4ba38e09ea739451ca:0">With the continue statement we can stop the current iteration, and continue with the next.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8bcc812bd6504a4ba38e09ea739451ca"><span data-offset-key="8bcc812bd6504a4ba38e09ea739451ca:0">With the continue statement we can stop the current iteration, and continue with the next.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80187e5550d44fcdb56a0f3bbc80d45e"><span data-offset-key="80187e5550d44fcdb56a0f3bbc80d45e:0">With the else statement we can run a block of code once when the condition no longer is true.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80187e5550d44fcdb56a0f3bbc80d45e"><span data-offset-key="80187e5550d44fcdb56a0f3bbc80d45e:0">With the else statement we can run a block of code once when the condition no longer is true.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="705f015ad1ab4e959bfaf054ea298887"><span data-offset-key="705f015ad1ab4e959bfaf054ea298887:0">For loop</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68782eeb4459457ca385940d611f5948"><span data-offset-key="68782eeb4459457ca385940d611f5948:0">A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68782eeb4459457ca385940d611f5948"><span data-offset-key="68782eeb4459457ca385940d611f5948:0">A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dca831e5a45040a3bd8dff86859f9119"><span data-offset-key="dca831e5a45040a3bd8dff86859f9119:0">This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dca831e5a45040a3bd8dff86859f9119"><span data-offset-key="dca831e5a45040a3bd8dff86859f9119:0">This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d733d2f198841b2a912c442b7010650"><span data-offset-key="6d733d2f198841b2a912c442b7010650:0">With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d733d2f198841b2a912c442b7010650"><span data-offset-key="6d733d2f198841b2a912c442b7010650:0">With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</span></span></span>
 
-    fruits = ["apple", "banana", "cherry"]for x in fruits:  print(x)
+  fruits = ["apple", "banana", "cherry"]for x in fruits: print(x)
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1fd3e7d94c348f38d1b655e4175b34d"><span data-offset-key="e1fd3e7d94c348f38d1b655e4175b34d:0">The for loop does not require an indexing variable to set beforehand.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1fd3e7d94c348f38d1b655e4175b34d"><span data-offset-key="e1fd3e7d94c348f38d1b655e4175b34d:0">The for loop does not require an indexing variable to set beforehand.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="455bbeb0b0734bf1b3778877cd7676ad"><span data-offset-key="455bbeb0b0734bf1b3778877cd7676ad:0">To loop through a set of code a specified number of times, we can use the range() function.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="455bbeb0b0734bf1b3778877cd7676ad"><span data-offset-key="455bbeb0b0734bf1b3778877cd7676ad:0">To loop through a set of code a specified number of times, we can use the range() function.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40ed6cdac91f4d1488bab9906331c5cf"><span data-offset-key="40ed6cdac91f4d1488bab9906331c5cf:0">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40ed6cdac91f4d1488bab9906331c5cf"><span data-offset-key="40ed6cdac91f4d1488bab9906331c5cf:0">The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="83b6206ea0ed4f138d1469ff9f2f93d1"><span data-offset-key="83b6206ea0ed4f138d1469ff9f2f93d1:0">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="83b6206ea0ed4f138d1469ff9f2f93d1"><span data-offset-key="83b6206ea0ed4f138d1469ff9f2f93d1:0">The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04c793dae7d74de2a143050fa3213795"><span data-offset-key="04c793dae7d74de2a143050fa3213795:0">The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04c793dae7d74de2a143050fa3213795"><span data-offset-key="04c793dae7d74de2a143050fa3213795:0">The else keyword in a for loop specifies a block of code to be executed when the loop is finished. A nested loop is a loop inside a loop.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="859d3f3d28334f638f0a5dd1affafab9"><span data-offset-key="859d3f3d28334f638f0a5dd1affafab9:0">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="859d3f3d28334f638f0a5dd1affafab9"><span data-offset-key="859d3f3d28334f638f0a5dd1affafab9:0">The “inner loop” will be executed one time for each iteration of the “outer loop”:</span></span></span>
 
-    adj = ["red", "big", "tasty"]fruits = ["apple", "banana", "cherry"]
+  adj = ["red", "big", "tasty"]fruits = ["apple", "banana", "cherry"]
 
-    for x in adj:  for y in fruits:    print(x, y)
+  for x in adj: for y in fruits: print(x, y)
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ad6147029d04271a16450125d875b40"><span data-offset-key="1ad6147029d04271a16450125d875b40:0">for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ad6147029d04271a16450125d875b40"><span data-offset-key="1ad6147029d04271a16450125d875b40:0">for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</span></span></span>
 
-    for x in [0, 1, 2]:  pass
+  for x in [0, 1, 2]: pass
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="ad865c465964480f9f71b1a58806b233"><span data-offset-key="ad865c465964480f9f71b1a58806b233:0">Function definition</span></span></span>
 
@@ -401,11 +400,11 @@
 
     function_name()
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e2614c24966450cb842fa78b49cc068"><span data-offset-key="9e2614c24966450cb842fa78b49cc068:0">We need not to specify the return type of the function.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e2614c24966450cb842fa78b49cc068"><span data-offset-key="9e2614c24966450cb842fa78b49cc068:0">We need not to specify the return type of the function.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a9bdae4faf844dc3a22ba574ebf5d4ae"><span data-offset-key="a9bdae4faf844dc3a22ba574ebf5d4ae:0">Functions by default return </span><span data-offset-key="a9bdae4faf844dc3a22ba574ebf5d4ae:1">`None`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a9bdae4faf844dc3a22ba574ebf5d4ae"><span data-offset-key="a9bdae4faf844dc3a22ba574ebf5d4ae:0">Functions by default return </span><span data-offset-key="a9bdae4faf844dc3a22ba574ebf5d4ae:1">`None`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91a95af9009e40e2886633e2c6a8a5aa"><span data-offset-key="91a95af9009e40e2886633e2c6a8a5aa:0">We can return any datatype.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91a95af9009e40e2886633e2c6a8a5aa"><span data-offset-key="91a95af9009e40e2886633e2c6a8a5aa:0">We can return any datatype.</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="75b8dadc5d1c4526844449f224d66e23"><span data-offset-key="75b8dadc5d1c4526844449f224d66e23:0">Python Syntax</span></span></span>
 
@@ -413,11 +412,11 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="e8721a2820794703a5f62f909242ac20"><span data-offset-key="e8721a2820794703a5f62f909242ac20:0">First Program</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b6721de67184c94b79daca7b5d35d7f"><span data-offset-key="0b6721de67184c94b79daca7b5d35d7f:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="f1dc41db05bf453e9571a34e9a683733"><span data-offset-key="f1dc41db05bf453e9571a34e9a683733:0">python 3</span></span></a><span data-key="84a3bca750074a3298aea476e924b17d"><span data-offset-key="84a3bca750074a3298aea476e924b17d:0"> repl, and call it </span><span data-offset-key="84a3bca750074a3298aea476e924b17d:1">*Hello World*</span><span data-offset-key="84a3bca750074a3298aea476e924b17d:2">. Now you have a blank file called </span><span data-offset-key="84a3bca750074a3298aea476e924b17d:3">*main.py*</span><span data-offset-key="84a3bca750074a3298aea476e924b17d:4">. Now let us write our first line of code:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b6721de67184c94b79daca7b5d35d7f"><span data-offset-key="0b6721de67184c94b79daca7b5d35d7f:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="f1dc41db05bf453e9571a34e9a683733"><span data-offset-key="f1dc41db05bf453e9571a34e9a683733:0">python 3</span></span></a><span data-key="84a3bca750074a3298aea476e924b17d"><span data-offset-key="84a3bca750074a3298aea476e924b17d:0"> repl, and call it </span><span data-offset-key="84a3bca750074a3298aea476e924b17d:1">_Hello World_</span><span data-offset-key="84a3bca750074a3298aea476e924b17d:2">. Now you have a blank file called </span><span data-offset-key="84a3bca750074a3298aea476e924b17d:3">_main.py_</span><span data-offset-key="84a3bca750074a3298aea476e924b17d:4">. Now let us write our first line of code:</span></span></span>
 
     print('Hello world!')
 
-> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d09e70b0e244bb4a8779cf3a14b7cd0"><span data-offset-key="6d09e70b0e244bb4a8779cf3a14b7cd0:0">*Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards.*</span></span></span>
+> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d09e70b0e244bb4a8779cf3a14b7cd0"><span data-offset-key="6d09e70b0e244bb4a8779cf3a14b7cd0:0">_Brian Kernighan actually wrote the first “Hello, World!” program as part of the documentation for the BCPL programming language developed by Martin Richards._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce0880f3e3374c1da0917d802084bedd"><span data-offset-key="ce0880f3e3374c1da0917d802084bedd:0">Now, press the run button, which obviously runs the code. If you are not using replit, this will not work. You should research how to run a file with your text editor.</span></span></span>
 
@@ -441,7 +440,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6739df549934b688f105387c5faebce"><span data-offset-key="b6739df549934b688f105387c5faebce:0">Unlike many other languages, there is no </span><span data-offset-key="b6739df549934b688f105387c5faebce:1">`var`</span><span data-offset-key="b6739df549934b688f105387c5faebce:2">, </span><span data-offset-key="b6739df549934b688f105387c5faebce:3">`let`</span><span data-offset-key="b6739df549934b688f105387c5faebce:4">, or </span><span data-offset-key="b6739df549934b688f105387c5faebce:5">`const`</span><span data-offset-key="b6739df549934b688f105387c5faebce:6"> to declare a variable in python. You simply go </span><span data-offset-key="b6739df549934b688f105387c5faebce:7">`name = 'value'`</span><span data-offset-key="b6739df549934b688f105387c5faebce:8">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c96ae2edf71401e9b7f327fa97fe648"><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:0">Remember, there is a difference between integers and strings. </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:1">*Remember: String =*</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:2"> </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:3">*`""`*</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:4">*.*</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:5"> To convert between these two, you can put an int in a </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:6">`str()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:7"> function, and a string in a </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:8">`int()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:9"> function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:10">`float()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:11"> command.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c96ae2edf71401e9b7f327fa97fe648"><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:0">Remember, there is a difference between integers and strings. </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:1">_Remember: String =_</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:2"> </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:3">_`""`_</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:4">_._</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:5"> To convert between these two, you can put an int in a </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:6">`str()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:7"> function, and a string in a </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:8">`int()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:9"> function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the </span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:10">`float()`</span><span data-offset-key="4c96ae2edf71401e9b7f327fa97fe648:11"> command.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b64f568255ed4e0cb39d90e6777401f3"><span data-offset-key="b64f568255ed4e0cb39d90e6777401f3:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b3242178e7e7417d85806afed9f257f9"><span data-offset-key="b3242178e7e7417d85806afed9f257f9:0">https://repl.it/@bgoonz/second-scr?lite=true&amp;amp;referrer=https%3A%2F%2Fbryanguner.medium.com</span></span></a><span data-key="75a30f22c2b041d3b528c0f726dc3894"><span data-offset-key="75a30f22c2b041d3b528c0f726dc3894:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
@@ -453,23 +452,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc244f95f5ca4f0383d6bb5a66990e8d"><span data-offset-key="bc244f95f5ca4f0383d6bb5a66990e8d:0">There are many operators in python:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7af7c1a6cd0c48a6ae56b25f95db9d88"><span data-offset-key="7af7c1a6cd0c48a6ae56b25f95db9d88:0">`+`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7af7c1a6cd0c48a6ae56b25f95db9d88"><span data-offset-key="7af7c1a6cd0c48a6ae56b25f95db9d88:0">`+`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13977b1e6fd244f4872f1c99d53fe15c"><span data-offset-key="13977b1e6fd244f4872f1c99d53fe15c:0">`-`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13977b1e6fd244f4872f1c99d53fe15c"><span data-offset-key="13977b1e6fd244f4872f1c99d53fe15c:0">`-`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d96decbef534a2b8abe0395121fae1f"><span data-offset-key="5d96decbef534a2b8abe0395121fae1f:0">`/`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d96decbef534a2b8abe0395121fae1f"><span data-offset-key="5d96decbef534a2b8abe0395121fae1f:0">`/`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a9d14c74bb1a4fc2a819ead494f8d8ec"><span data-offset-key="a9d14c74bb1a4fc2a819ead494f8d8ec:0">`*`</span><span data-offset-key="a9d14c74bb1a4fc2a819ead494f8d8ec:1"> These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a9d14c74bb1a4fc2a819ead494f8d8ec"><span data-offset-key="a9d14c74bb1a4fc2a819ead494f8d8ec:0">`*`</span><span data-offset-key="a9d14c74bb1a4fc2a819ead494f8d8ec:1"> These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:</span></span></span>
 
 <figure><img src="https://cdn-images-1.medium.com/max/800/0*oVIDxWdgJXoIt7CI.jpg" class="image-52799b3c" /></figure>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f5ee605c040448f847d0b8c629fb7f6"><span data-offset-key="0f5ee605c040448f847d0b8c629fb7f6:0">*simpleops.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f5ee605c040448f847d0b8c629fb7f6"><span data-offset-key="0f5ee605c040448f847d0b8c629fb7f6:0">_simpleops.py_</span></span></span>
 
     x = 4a = x + 1a = x - 1a = x * 2a = x / 2
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="89405f909dd54fad92d0f27705d6b09f"><span data-offset-key="89405f909dd54fad92d0f27705d6b09f:0">You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f7e335c32251403cb388885ca13030fe"><span data-offset-key="f7e335c32251403cb388885ca13030fe:0">*complexop.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f7e335c32251403cb388885ca13030fe"><span data-offset-key="f7e335c32251403cb388885ca13030fe:0">_complexop.py_</span></span></span>
 
     a += 1a -= 1a *= 2a /= 2
 
@@ -483,11 +482,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac95bd74a9fa4acc8f1c6393e25b911b"><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:0">Like the title? Anyways, a </span><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:1">`'`</span><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:2"> and a </span><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:3">`"`</span><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:4"> both indicate a string, but </span><span data-offset-key="ac95bd74a9fa4acc8f1c6393e25b911b:5">**do not combine them!**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bbde48261354a08b7f56b78428310cd"><span data-offset-key="9bbde48261354a08b7f56b78428310cd:0">*quotes.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bbde48261354a08b7f56b78428310cd"><span data-offset-key="9bbde48261354a08b7f56b78428310cd:0">_quotes.py_</span></span></span>
 
     x = 'hello' # Goodx = "hello" # Goodx = "hello' # ERRORRR!!!
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04534efc68d44264aae0781dcf38e854"><span data-offset-key="04534efc68d44264aae0781dcf38e854:0">*slicing.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04534efc68d44264aae0781dcf38e854"><span data-offset-key="04534efc68d44264aae0781dcf38e854:0">_slicing.py_</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="3ea713609f2c4400b64cfdeeea715071"><span data-offset-key="3ea713609f2c4400b64cfdeeea715071:0">String Slicing</span></span></span>
 
@@ -499,37 +498,37 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8465391e651848d4b207c07020b1725e"><span data-offset-key="8465391e651848d4b207c07020b1725e:0">Here is a list of functions/methods we will go over:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="765926b64b2f41be959eec76bf249392"><span data-offset-key="765926b64b2f41be959eec76bf249392:0">`.strip()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="765926b64b2f41be959eec76bf249392"><span data-offset-key="765926b64b2f41be959eec76bf249392:0">`.strip()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eaaf79fc79324b0dbc1a8c4a7818133c"><span data-offset-key="eaaf79fc79324b0dbc1a8c4a7818133c:0">`len()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eaaf79fc79324b0dbc1a8c4a7818133c"><span data-offset-key="eaaf79fc79324b0dbc1a8c4a7818133c:0">`len()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="438ea57b7b6b49139a7796d58a4557f2"><span data-offset-key="438ea57b7b6b49139a7796d58a4557f2:0">`.lower()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="438ea57b7b6b49139a7796d58a4557f2"><span data-offset-key="438ea57b7b6b49139a7796d58a4557f2:0">`.lower()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="176a0b9733df400aada3018cc85536c7"><span data-offset-key="176a0b9733df400aada3018cc85536c7:0">`.upper()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="176a0b9733df400aada3018cc85536c7"><span data-offset-key="176a0b9733df400aada3018cc85536c7:0">`.upper()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79487ebc7b6e44f88933d29dfb564fe7"><span data-offset-key="79487ebc7b6e44f88933d29dfb564fe7:0">`.replace()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79487ebc7b6e44f88933d29dfb564fe7"><span data-offset-key="79487ebc7b6e44f88933d29dfb564fe7:0">`.replace()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8da2ab058a134888b7dab2d787e5f81d"><span data-offset-key="8da2ab058a134888b7dab2d787e5f81d:0">`.split()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8da2ab058a134888b7dab2d787e5f81d"><span data-offset-key="8da2ab058a134888b7dab2d787e5f81d:0">`.split()`</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="13d15bc7be1149fcbf43b171661ae3f8"><span data-offset-key="13d15bc7be1149fcbf43b171661ae3f8:0">New: Input()</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="51a16830607846ed8a4ba077eda13a46"><span data-offset-key="51a16830607846ed8a4ba077eda13a46:0">Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b85431e789474995969ebb5df7525036"><span data-offset-key="b85431e789474995969ebb5df7525036:0">*inp.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b85431e789474995969ebb5df7525036"><span data-offset-key="b85431e789474995969ebb5df7525036:0">_inp.py_</span></span></span>
 
     print('Type something: ')x = input()print('Here is what you said: ', x)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e8bc5c86ba2b452d9c562946026653ce"><span data-offset-key="e8bc5c86ba2b452d9c562946026653ce:0">If you wanted to make it smaller, and look neater to the user, you could do…</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f89bec04f5e4023bc1de017e0035151"><span data-offset-key="7f89bec04f5e4023bc1de017e0035151:0">*inp2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f89bec04f5e4023bc1de017e0035151"><span data-offset-key="7f89bec04f5e4023bc1de017e0035151:0">_inp2.py_</span></span></span>
 
     print('Here is what you said: ', input('Type something: '))
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d8b6ee5da04d4c82941c05f4fa975413"><span data-offset-key="d8b6ee5da04d4c82941c05f4fa975413:0">Running: </span><span data-offset-key="d8b6ee5da04d4c82941c05f4fa975413:1">*inp.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d8b6ee5da04d4c82941c05f4fa975413"><span data-offset-key="d8b6ee5da04d4c82941c05f4fa975413:0">Running: </span><span data-offset-key="d8b6ee5da04d4c82941c05f4fa975413:1">_inp.py_</span></span></span>
 
     Type something:Hello WorldHere is what you said: Hello World
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8df83fa27e4a460d8e9b2938267a1ce7"><span data-offset-key="8df83fa27e4a460d8e9b2938267a1ce7:0">*inp2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8df83fa27e4a460d8e9b2938267a1ce7"><span data-offset-key="8df83fa27e4a460d8e9b2938267a1ce7:0">_inp2.py_</span></span></span>
 
     Type something: Hello WorldHere is what you said: Hello World
 
@@ -537,17 +536,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1eee0759b0044f6492029b7f6a5d7309"><span data-offset-key="1eee0759b0044f6492029b7f6a5d7309:0">Python has created a lot of functions that are located in other .py files. You need to import these </span><span data-offset-key="1eee0759b0044f6492029b7f6a5d7309:1">**modules**</span><span data-offset-key="1eee0759b0044f6492029b7f6a5d7309:2"> to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write </span><span data-offset-key="1eee0759b0044f6492029b7f6a5d7309:3">`input <modulename>`</span><span data-offset-key="1eee0759b0044f6492029b7f6a5d7309:4">. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e022400e44834c3abc1f6430c0723e88"><span data-offset-key="e022400e44834c3abc1f6430c0723e88:0">*module.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e022400e44834c3abc1f6430c0723e88"><span data-offset-key="e022400e44834c3abc1f6430c0723e88:0">_module.py_</span></span></span>
 
     import random
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="89dd6a50e4804db79291081d3f7d4688"><span data-offset-key="89dd6a50e4804db79291081d3f7d4688:0">Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do </span><span data-offset-key="89dd6a50e4804db79291081d3f7d4688:1">`<module>.<function>`</span><span data-offset-key="89dd6a50e4804db79291081d3f7d4688:2">. For example:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="75097484849643ee833b9ad25089b2ff"><span data-offset-key="75097484849643ee833b9ad25089b2ff:0">*module2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="75097484849643ee833b9ad25089b2ff"><span data-offset-key="75097484849643ee833b9ad25089b2ff:0">_module2.py_</span></span></span>
 
     import randomprint(random.randint(3,5)) # Prints a random number between 3 and 5
 
-> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20e246be83c948bc923cffb3d756d3d8"><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:0">*Pro Tip: Do*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:1"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:2">*`from random import randint`*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:3"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:4">*to not have to do*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:5"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:6">*`random.randint()`*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:7">*, just*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:8"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:9">*`randint()`*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:10"> *To import all functions from a module, you could do*</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:11"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:12">*`from random import *`*</span></span></span>
+> <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20e246be83c948bc923cffb3d756d3d8"><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:0">_Pro Tip: Do_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:1"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:2">_`from random import randint`_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:3"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:4">_to not have to do_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:5"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:6">_`random.randint()`_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:7">_, just_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:8"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:9">_`randint()`_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:10"> _To import all functions from a module, you could do_</span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:11"> </span><span data-offset-key="20e246be83c948bc923cffb3d756d3d8:12">_`from random import _`\*</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="6e34eb19a04245a68e19275888b693b7"><span data-offset-key="6e34eb19a04245a68e19275888b693b7:0">New: Loops!</span></span></span>
 
@@ -557,13 +556,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0741d016994b4051ab58acc8d3cf2f28"><span data-offset-key="0741d016994b4051ab58acc8d3cf2f28:0">The for loop goes through a list of variables, making a seperate variable equal one of the list every time. Let’s say we wanted to create the example above.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96931318aa994176a25c8b4ce2f1fd21"><span data-offset-key="96931318aa994176a25c8b4ce2f1fd21:0">*loop.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96931318aa994176a25c8b4ce2f1fd21"><span data-offset-key="96931318aa994176a25c8b4ce2f1fd21:0">_loop.py_</span></span></span>
 
     from time import sleepfor i in range(100):     print('Hello')     sleep(.3)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96f381678a4c4f90ad09ac5afcf3ed10"><span data-offset-key="96f381678a4c4f90ad09ac5afcf3ed10:0">This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6bf3e1a9892e41efa189a4ae20a8f411"><span data-offset-key="6bf3e1a9892e41efa189a4ae20a8f411:0">*loop2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6bf3e1a9892e41efa189a4ae20a8f411"><span data-offset-key="6bf3e1a9892e41efa189a4ae20a8f411:0">_loop2.py_</span></span></span>
 
     import timefor number in range(100):     print(number)     time.sleep(.1)
 
@@ -573,13 +572,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb68722f172b4060879345feb1f88cfd"><span data-offset-key="bb68722f172b4060879345feb1f88cfd:0">The while loop runs the code while something stays true. You would put </span><span data-offset-key="bb68722f172b4060879345feb1f88cfd:1">`while <expression>`</span><span data-offset-key="bb68722f172b4060879345feb1f88cfd:2">. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d91a5186f984e54a1575a8c39966787"><span data-offset-key="3d91a5186f984e54a1575a8c39966787:0">*while.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d91a5186f984e54a1575a8c39966787"><span data-offset-key="3d91a5186f984e54a1575a8c39966787:0">_while.py_</span></span></span>
 
     while True: # Runs forever     print('Hello World!')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f187ac04e864c70b161ff3f2779bfd5"><span data-offset-key="9f187ac04e864c70b161ff3f2779bfd5:0">Or you could do:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0c41f9ce971469499122182cffa98d8"><span data-offset-key="e0c41f9ce971469499122182cffa98d8:0">*while2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0c41f9ce971469499122182cffa98d8"><span data-offset-key="e0c41f9ce971469499122182cffa98d8:0">_while2.py_</span></span></span>
 
     import randomposition = '<placeholder>'while position != 1: # will run at least once    position = random.randint(1, 10)    print(position)
 
@@ -587,19 +586,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46fca2fe13734a53bd054dbf1ebb1033"><span data-offset-key="46fca2fe13734a53bd054dbf1ebb1033:0">The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes </span><span data-offset-key="46fca2fe13734a53bd054dbf1ebb1033:1">**only once**</span><span data-offset-key="46fca2fe13734a53bd054dbf1ebb1033:2">. An if statement is written:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d89cd6a163746d3b2ab9c717782f588"><span data-offset-key="1d89cd6a163746d3b2ab9c717782f588:0">*if.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d89cd6a163746d3b2ab9c717782f588"><span data-offset-key="1d89cd6a163746d3b2ab9c717782f588:0">_if.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:     print('num is 3. Hooray!!!')if num > 5:     print('Num is greater than 5')if num == 12:     print('Num is 12, which means that there is a problem with the python language, see if you can figure it out. Extra credit if you can figure it out!')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3bed73137d0c4fe5963b76494794cad2"><span data-offset-key="3bed73137d0c4fe5963b76494794cad2:0">Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an </span><span data-offset-key="3bed73137d0c4fe5963b76494794cad2:1">`elif`</span><span data-offset-key="3bed73137d0c4fe5963b76494794cad2:2"> statement:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d999c162488c4432925587ea885b9d9b"><span data-offset-key="d999c162488c4432925587ea885b9d9b:0">*elif.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d999c162488c4432925587ea885b9d9b"><span data-offset-key="d999c162488c4432925587ea885b9d9b:0">_elif.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:    print('Num is three, this is the only msg you will see.')elif num > 2:    print('Num is not three, but is greater than 1')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5afe36b4f37643869a1cfa92927fc77f"><span data-offset-key="5afe36b4f37643869a1cfa92927fc77f:0">Now, you may wonder how to run code if none work. Well, there is a simple statement called </span><span data-offset-key="5afe36b4f37643869a1cfa92927fc77f:1">`else:`</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1743177176d8466c9d87c749a19601fa"><span data-offset-key="1743177176d8466c9d87c749a19601fa:0">*else.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1743177176d8466c9d87c749a19601fa"><span data-offset-key="1743177176d8466c9d87c749a19601fa:0">_else.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:    print('Num is three, this is the only msg you will see.')elif num > 2:    print('Num is not three, but is greater than 1')else:    print('No category')
 
@@ -609,7 +608,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a06f541ac51d40c18c81ec63d820095a"><span data-offset-key="a06f541ac51d40c18c81ec63d820095a:0">Characters: 389</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="600d99b9d9404f54a03fe7caa0084c19"><span data-offset-key="600d99b9d9404f54a03fe7caa0084c19:0">*nofunc.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="600d99b9d9404f54a03fe7caa0084c19"><span data-offset-key="600d99b9d9404f54a03fe7caa0084c19:0">_nofunc.py_</span></span></span>
 
     import randomprint(random.randint(1, 9))print('Wow that was interesting.')print(random.randint(1, 9))print('Look at the number above ^')print(random.randint(1, 9))print('All of these have been interesting numbers.')print(random.randint(1, 9))print("these random.randint's are getting annoying to type")print(random.randint(1, 9))print('Hi')print(random.randint(1, 9))print('j')
 
@@ -617,7 +616,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="50a3711e1e54427abd5fa3261b0afaf6"><span data-offset-key="50a3711e1e54427abd5fa3261b0afaf6:0">Characters: 254</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="978d0c52020b44e68c0fb36d42076261"><span data-offset-key="978d0c52020b44e68c0fb36d42076261:0">*functions.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="978d0c52020b44e68c0fb36d42076261"><span data-offset-key="978d0c52020b44e68c0fb36d42076261:0">_functions.py_</span></span></span>
 
     import randomdef r(t):     print(random.randint(1, 9))     print(t)r('Wow that was interesting.')r('Look at the number above ^')r('All of these have been interesting numbers.')r("these random.randint's are getting annoying to type")r('Hi')r('j')
 

@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Explained</span>
-==================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Explained</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -169,7 +168,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed4168950a134b25ac5384ca8c978c49"><span data-offset-key="ed4168950a134b25ac5384ca8c978c49:0">Binary Search Tree is a kind of tree in which each node follows specific properties to construct a tree.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e2d8a247291240438d33c44133b801db"><span data-offset-key="e2d8a247291240438d33c44133b801db:0">Properties of Binary Search Tree</span></span></span>
 
@@ -181,7 +180,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebd9f4872beb4238aee9fb2d352e0594"><span data-offset-key="ebd9f4872beb4238aee9fb2d352e0594:0">It is also called a </span></span><a href="https://en.wikipedia.org/wiki/Binary_search_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="40420a2adde84571ab2bc5b699a5ffa2"><span data-offset-key="40420a2adde84571ab2bc5b699a5ffa2:0"><strong>sorted ordered</strong></span></span></a><span data-key="d21f91b02de1460a8f4a44bcf2288b91"><span data-offset-key="d21f91b02de1460a8f4a44bcf2288b91:0"> **binary tree or search tree**</span><span data-offset-key="d21f91b02de1460a8f4a44bcf2288b91:1">. It is called search tree because the search or find operation for a key requires</span><span data-offset-key="d21f91b02de1460a8f4a44bcf2288b91:2"> **O(log(n))** </span><span data-offset-key="d21f91b02de1460a8f4a44bcf2288b91:3">time complexity.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="22c3c406fbb643ec9b188b45d5f78ea6"><span data-offset-key="22c3c406fbb643ec9b188b45d5f78ea6:0">Operations in Binary Search Tree</span></span></span>
 
@@ -239,7 +238,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5378eaffe3c4ec5861852b003151834"><span data-offset-key="f5378eaffe3c4ec5861852b003151834:0">Now we have to implement Node Class, let’s implement the Tree Class which instantiates Node Class and its operations.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b0eceaca32b1414190eb1e685458f7b8"><span data-offset-key="b0eceaca32b1414190eb1e685458f7b8:0">Create Tree Class</span></span></span>
 
@@ -265,7 +264,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c374118652b462b818b831eb1314da1"><span data-offset-key="4c374118652b462b818b831eb1314da1:0">**Output**</span></span></span>
 
-    `- 10   |- 5   |  |- 4   |  |  |- *   |  |  `- *   |  `- 8   |     |- 7   |     |  |- *   |     |  `- *   |     `- *   `- 12      |- *      `- 20         |- 15         |  |- 13         |  |  |- *         |  |  `- *         |  `- *         `- *FalseTrue​Preorder: 10 5 4 8 7 12 20 15 13 Inorder: 4 5 7 8 10 12 13 15 20 Postorder: 4 7 8 5 13 15 20 12 10 
+    `- 10   |- 5   |  |- 4   |  |  |- *   |  |  `- *   |  `- 8   |     |- 7   |     |  |- *   |     |  `- *   |     `- *   `- 12      |- *      `- 20         |- 15         |  |- 13         |  |  |- *         |  |  `- *         |  `- *         `- *FalseTrue​Preorder: 10 5 4 8 7 12 20 15 13 Inorder: 4 5 7 8 10 12 13 15 20 Postorder: 4 7 8 5 13 15 20 12 10
 
 <a href="binary-search.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

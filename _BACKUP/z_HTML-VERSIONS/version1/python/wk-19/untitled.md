@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1 - Linked Lists & BigO</span>
-=============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1 - Linked Lists & BigO</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -163,9 +162,9 @@
 
 <a href="https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">GitHub - bgoonz/DATA\_STRUC\_PYTHON\_NOTES</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">GitHub - bgoonz/DATA_STRUC_PYTHON_NOTES</span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/DATA\_STRUC\_PYTHON\_NOTES development by creating an account on GitHub.</span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/DATA_STRUC_PYTHON_NOTES development by creating an account on GitHub.</span>
 
 <span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">github.com</span>
 
@@ -173,13 +172,13 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="4a3b94e1034c466f965b97ecb7ff0f1f"><span data-offset-key="4a3b94e1034c466f965b97ecb7ff0f1f:0">Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8e5657cc617341e09e003c23828fceb1"><span data-offset-key="8e5657cc617341e09e003c23828fceb1:0">Overview</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4208b9009eaa4813983a857a8f587728"><span data-offset-key="4208b9009eaa4813983a857a8f587728:0">What is a linked list, and how is it different from an array? How efficient or inefficient are its operations? What are its strengths and weaknesses? How can I construct and interact with a linked list? By the end of this objective, you will be able to answer all of these questions confidently.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5e6ddb2348ae432585c7a9ceb3310236"><span data-offset-key="5e6ddb2348ae432585c7a9ceb3310236:0">Follow Along</span></span></span>
 
@@ -243,13 +242,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="faea64823b5e4e029842a71759839b6f"><span data-offset-key="faea64823b5e4e029842a71759839b6f:0">The main weakness of a linked list is not efficiently accessing an "index" in the middle of the list. The only way that the linked list can get to the seventh item in the linked list is by going to the head node and then traversing one node at a time until you arrive at the seventh node. You can't do simple math and jump from the first item to the seventh.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c4aa38bcb746400b9de423e81b3791d5"><span data-offset-key="c4aa38bcb746400b9de423e81b3791d5:0">What data structures are built on linked lists?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b3e284001c4048a8a69a5c6df649cf33"><span data-offset-key="b3e284001c4048a8a69a5c6df649cf33:0">Remember that linked lists have efficient operations on the ends (head and tail). There are two structures that only operate on the ends; queues and stacks. So, most queue or stack implementations use a linked list as their underlying data structure.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ce5053cd98af4ca3ab0f8c8886863743"><span data-offset-key="ce5053cd98af4ca3ab0f8c8886863743:0">Why is a linked list different than an array? What problem does it solve?</span></span></span>
 
@@ -287,7 +286,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0073075be0644ddbc201221eeb2ef07"><span data-offset-key="a0073075be0644ddbc201221eeb2ef07:0">You must be able to understand and interact with linked lists. You now know the basic properties and types of linked lists, what makes a linked list different from an array, what problem it solves, and how to represent them both graphically and in code. You now know enough about linked lists that you should be able to solve algorithmic code challenges that require a basic understanding of linked lists.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7708a97392044b0fa17115e6d45c432c"><span data-offset-key="7708a97392044b0fa17115e6d45c432c:0">Challenge</span></span></span>
 

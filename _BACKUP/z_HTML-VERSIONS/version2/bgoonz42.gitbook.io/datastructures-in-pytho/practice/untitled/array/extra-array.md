@@ -160,8 +160,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Extra-Array</span>
-================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Extra-Array</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -191,7 +190,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a63f623eb6274979902a10f99dbe7ed0"><span data-offset-key="a63f623eb6274979902a10f99dbe7ed0:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-    class Array(object):    def __init__(self, size, defaultValue = None):        self.size = size        if(defaultValue == None):            self.items = list()            for i in range(size):                self.items.append(defaultValue)        else:            self.items = list()​            if(len(defaultValue) == size or len(defaultValue) < size):                for j in range(len(defaultValue)):                    if(defaultValue[j]):                        self.items.append(defaultValue[j])                for i in range(len(defaultValue), size):                    self.items.append(None)            else:                print('Elements are more than the size specified')​    def myLen(self):        length = 0        for i in self.items:            if i == None:                continue            else:                length += 1        return length​    def insertFirst(self, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), 0, -1):                self.items[i] = self.items[i - 1]            self.items[0] = element        else:            print('Element index out of range')​    def insertAtIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index, -1):                self.items[i] = self.items[i - 1]            self.items[index] = element        else:            print('Element index out of range')​    def insertAfterIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index + 1, -1):                self.items[i] = self.items[i - 1]            self.items[index + 1] = element        else:            print('Element index out of range')​    def insertBeforeIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index - 1, -1):                self.items[i] = self.items[i - 1]            self.items[index - 1] = element        else:            print('Element index out of range')​    def delete(self, element):        if element in self.items:            Index = self.items.index(element)            self.items[Index] = None        else:            print('This element is not in the Array!')​    def search(self, element):        if element in self.items:            position = 0            for i in range(self.myLen()):                if(self.items[i] == element):                    break                else:                    position += 1​            print('Element {} found at position {}'.format(element, position))        else:            print('This element is not in the Array!')​if __name__ == '__main__':    myArray = Array(5, [1])    print(myArray.items, myArray.myLen())          myArray.insertFirst(3)    print(myArray.items, myArray.myLen())           myArray.insertAfterIndex(1,4)    print(myArray.items, myArray.myLen())         myArray.insertBeforeIndex(3,5)    print(myArray.items, myArray.myLen())           myArray.delete(5)    print(myArray.items, myArray.myLen())           myArray.search(4)                          
+    class Array(object):    def __init__(self, size, defaultValue = None):        self.size = size        if(defaultValue == None):            self.items = list()            for i in range(size):                self.items.append(defaultValue)        else:            self.items = list()​            if(len(defaultValue) == size or len(defaultValue) < size):                for j in range(len(defaultValue)):                    if(defaultValue[j]):                        self.items.append(defaultValue[j])                for i in range(len(defaultValue), size):                    self.items.append(None)            else:                print('Elements are more than the size specified')​    def myLen(self):        length = 0        for i in self.items:            if i == None:                continue            else:                length += 1        return length​    def insertFirst(self, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), 0, -1):                self.items[i] = self.items[i - 1]            self.items[0] = element        else:            print('Element index out of range')​    def insertAtIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index, -1):                self.items[i] = self.items[i - 1]            self.items[index] = element        else:            print('Element index out of range')​    def insertAfterIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index + 1, -1):                self.items[i] = self.items[i - 1]            self.items[index + 1] = element        else:            print('Element index out of range')​    def insertBeforeIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index - 1, -1):                self.items[i] = self.items[i - 1]            self.items[index - 1] = element        else:            print('Element index out of range')​    def delete(self, element):        if element in self.items:            Index = self.items.index(element)            self.items[Index] = None        else:            print('This element is not in the Array!')​    def search(self, element):        if element in self.items:            position = 0            for i in range(self.myLen()):                if(self.items[i] == element):                    break                else:                    position += 1​            print('Element {} found at position {}'.format(element, position))        else:            print('This element is not in the Array!')​if __name__ == '__main__':    myArray = Array(5, [1])    print(myArray.items, myArray.myLen())          myArray.insertFirst(3)    print(myArray.items, myArray.myLen())           myArray.insertAfterIndex(1,4)    print(myArray.items, myArray.myLen())         myArray.insertBeforeIndex(3,5)    print(myArray.items, myArray.myLen())           myArray.delete(5)    print(myArray.items, myArray.myLen())           myArray.search(4)
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0ce67636b897486ca3dfd1ceb72fc256"><span data-offset-key="0ce67636b897486ca3dfd1ceb72fc256:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -217,7 +216,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09b5c4e868034e51abc2fab76eb733fe"><span data-offset-key="09b5c4e868034e51abc2fab76eb733fe:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d848f3e720dd4aa2937ce4f9f342bf2f"><span data-offset-key="d848f3e720dd4aa2937ce4f9f342bf2f:0">Define Length of Array Function</span></span></span>
 
@@ -225,7 +224,7 @@
 
         def myLen(self):        length = 0        for i in self.items:            if i == None:                continue            else:                length += 1        return length
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4dd0a72bc7a84000af36fed56463c2a1"><span data-offset-key="4dd0a72bc7a84000af36fed56463c2a1:0">Define Insert First Array Function</span></span></span>
 
@@ -233,7 +232,7 @@
 
         def insertFirst(self, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), 0, -1):                self.items[i] = self.items[i - 1]            self.items[0] = element        else:            print('Element index out of range')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3380dc36ebdc414ba073d9117fe68a5b"><span data-offset-key="3380dc36ebdc414ba073d9117fe68a5b:0">Define Insert At Index Function</span></span></span>
 
@@ -241,7 +240,7 @@
 
         def insertAtIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index, -1):                self.items[i] = self.items[i - 1]            self.items[index] = element        else:            print('Element index out of range')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="726a95eae14b431dac238ad8545830f6"><span data-offset-key="726a95eae14b431dac238ad8545830f6:0">Define Insert After Index Function</span></span></span>
 
@@ -249,7 +248,7 @@
 
         def insertAfterIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index + 1, -1):                self.items[i] = self.items[i - 1]            self.items[index + 1] = element        else:            print('Element index out of range')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d54b22be68a648f584b01b49294b5bb5"><span data-offset-key="d54b22be68a648f584b01b49294b5bb5:0">Define Insert Before Index Function</span></span></span>
 
@@ -257,7 +256,7 @@
 
         def insertBeforeIndex(self, index, element):        if (self.myLen() < self.size):            for i in range(self.myLen(), index - 1, -1):                self.items[i] = self.items[i - 1]            self.items[index - 1] = element        else:            print('Element index out of range')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8a4e6bc56f1d4243b447d8eea8f0367e"><span data-offset-key="8a4e6bc56f1d4243b447d8eea8f0367e:0">Define Delete Function</span></span></span>
 
@@ -265,7 +264,7 @@
 
         def delete(self, element):        if element in self.items:            Index = self.items.index(element)            self.items[Index] = None        else:            print('This element is not in the Array!')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="22026a58fdc94e99a8dfd1c165135c56"><span data-offset-key="22026a58fdc94e99a8dfd1c165135c56:0">Define Search Function</span></span></span>
 
@@ -273,7 +272,7 @@
 
         def search(self, element):        if element in self.items:            position = 0            for i in range(self.myLen()):                if(self.items[i] == element):                    break                else:                    position += 1​            print('Element {} found at position {}'.format(element, position))        else:            print('This element is not in the Array!')
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="557af2d5997f4e159b6e380184086c6b"><span data-offset-key="557af2d5997f4e159b6e380184086c6b:0">Define Main Condition</span></span></span>
 
@@ -285,7 +284,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3b19bde620f46eaa631cbd998e80b17"><span data-offset-key="a3b19bde620f46eaa631cbd998e80b17:0">Then, just use the object to call all the functions one by one.</span></span></span>
 
-    if __name__ == '__main__':    myArray = Array(5, [1])    print(myArray.items, myArray.myLen())          myArray.insertFirst(3)    print(myArray.items, myArray.myLen())           myArray.insertAfterIndex(1,4)    print(myArray.items, myArray.myLen())         myArray.insertBeforeIndex(3,5)    print(myArray.items, myArray.myLen())           myArray.delete(5)    print(myArray.items, myArray.myLen())           myArray.search(4)   
+    if __name__ == '__main__':    myArray = Array(5, [1])    print(myArray.items, myArray.myLen())          myArray.insertFirst(3)    print(myArray.items, myArray.myLen())           myArray.insertAfterIndex(1,4)    print(myArray.items, myArray.myLen())         myArray.insertBeforeIndex(3,5)    print(myArray.items, myArray.myLen())           myArray.delete(5)    print(myArray.items, myArray.myLen())           myArray.search(4)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49100fdd40bc4c2797dee2e9b2b7fa5d"><span data-offset-key="49100fdd40bc4c2797dee2e9b2b7fa5d:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

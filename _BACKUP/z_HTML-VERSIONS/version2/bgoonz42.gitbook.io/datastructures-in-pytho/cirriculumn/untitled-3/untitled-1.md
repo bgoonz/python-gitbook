@@ -132,8 +132,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3- Module 03 - Python III</span>
-===============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3- Module 03 - Python III</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -271,7 +270,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b651e46bf034c15b75fc32f64a56802"><span data-offset-key="3b651e46bf034c15b75fc32f64a56802:0">The performance of hash tables for search, insertion, and deletion is constant time (</span><span data-offset-key="3b651e46bf034c15b75fc32f64a56802:1">`O(1)`</span><span data-offset-key="3b651e46bf034c15b75fc32f64a56802:2">) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (</span><span data-offset-key="3b651e46bf034c15b75fc32f64a56802:3">`O(n)`</span><span data-offset-key="3b651e46bf034c15b75fc32f64a56802:4">). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2a01780d05244a5ba0c371c8d37adb2a"><span data-offset-key="2a01780d05244a5ba0c371c8d37adb2a:0">**Load Factor**</span></span></span>
 
@@ -319,7 +318,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e09d66124a1245bc8ab543152a6e698f"><span data-offset-key="e09d66124a1245bc8ab543152a6e698f:0">The performance of hash tables for search, insertion, and deletion is constant time (</span><span data-offset-key="e09d66124a1245bc8ab543152a6e698f:1">`O(1)`</span><span data-offset-key="e09d66124a1245bc8ab543152a6e698f:2">) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (</span><span data-offset-key="e09d66124a1245bc8ab543152a6e698f:3">`O(n)`</span><span data-offset-key="e09d66124a1245bc8ab543152a6e698f:4">). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a8211ce57a27475e86cf2886760e4b87"><span data-offset-key="a8211ce57a27475e86cf2886760e4b87:0">**Load Factor**</span></span></span>
 
@@ -363,9 +362,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0a4c11d371734ea393951dd67c8b6442"><span data-offset-key="0a4c11d371734ea393951dd67c8b6442:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c97625edfed489484136746a7914433"><span data-offset-key="3c97625edfed489484136746a7914433:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="272d790050f04d038922a4b1dc607543"><span data-offset-key="272d790050f04d038922a4b1dc607543:0">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</span></span></a><span data-key="38151f6bea8c4cd3b10d53bd7d21979a"><span data-offset-key="38151f6bea8c4cd3b10d53bd7d21979a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c97625edfed489484136746a7914433"><span data-offset-key="3c97625edfed489484136746a7914433:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="272d790050f04d038922a4b1dc607543"><span data-offset-key="272d790050f04d038922a4b1dc607543:0">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</span></span></a><span data-key="38151f6bea8c4cd3b10d53bd7d21979a"><span data-offset-key="38151f6bea8c4cd3b10d53bd7d21979a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-    for name, number in phonebook.items():    print("Name: %s, Number: %s" % (name, number))​# Name: Abe, Number: 4569874321# Name: Bill, Number: 7659803241# Name: Barry, Number: 6573214789
+  for name, number in phonebook.items(): print("Name: %s, Number: %s" % (name, number))​# Name: Abe, Number: 4569874321# Name: Bill, Number: 7659803241# Name: Barry, Number: 6573214789
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24bdda17aadc4d97a60ef1040595dc98"><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:0">To remove a key-value pair from a dictionary, you need to use the </span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:1">`del`</span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:2"> keyword or use the </span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:3">`pop()`</span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:4"> method available on dictionary objects. The difference is </span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:5">`pop()`</span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:6"> deletes the item from the dictionary and returns the value. When you use the </span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:7">`del`</span><span data-offset-key="24bdda17aadc4d97a60ef1040595dc98:8"> keyword, you've written a statement that doesn't evaluate to anything.</span></span></span>
 
@@ -373,11 +372,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9ad09152182473ba9692bc135c74ac8"><span data-offset-key="e9ad09152182473ba9692bc135c74ac8:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c95d912c9b534d84b2fed9c71b940d67"><span data-offset-key="c95d912c9b534d84b2fed9c71b940d67:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="90e246c1d20e45ecb6c2ca85c79be211"><span data-offset-key="90e246c1d20e45ecb6c2ca85c79be211:0"> Home</span></span></a><span data-key="8deb135082034cdb93bf0cbb39ca0cc8"><span data-offset-key="8deb135082034cdb93bf0cbb39ca0cc8:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c95d912c9b534d84b2fed9c71b940d67"><span data-offset-key="c95d912c9b534d84b2fed9c71b940d67:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="90e246c1d20e45ecb6c2ca85c79be211"><span data-offset-key="90e246c1d20e45ecb6c2ca85c79be211:0"> Home</span></span></a><span data-key="8deb135082034cdb93bf0cbb39ca0cc8"><span data-offset-key="8deb135082034cdb93bf0cbb39ca0cc8:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80b0f377510b4a259da9276b38f4bb86"><span data-offset-key="80b0f377510b4a259da9276b38f4bb86:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/grades" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e645e7c0d3e447d3b0f5e89856441dec"><span data-offset-key="e645e7c0d3e447d3b0f5e89856441dec:0">Grades</span></span></a><span data-key="0e694d57164e4e848b973204c3f5f164"><span data-offset-key="0e694d57164e4e848b973204c3f5f164:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80b0f377510b4a259da9276b38f4bb86"><span data-offset-key="80b0f377510b4a259da9276b38f4bb86:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/grades" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e645e7c0d3e447d3b0f5e89856441dec"><span data-offset-key="e645e7c0d3e447d3b0f5e89856441dec:0">Grades</span></span></a><span data-key="0e694d57164e4e848b973204c3f5f164"><span data-offset-key="0e694d57164e4e848b973204c3f5f164:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b0aab03c48ca46729e9ba0c127bb4c88"><span data-offset-key="b0aab03c48ca46729e9ba0c127bb4c88:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/modules" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="323c3ce2a0bb481f9698682f14c9a20f"><span data-offset-key="323c3ce2a0bb481f9698682f14c9a20f:0">Modules</span></span></a><span data-key="3755e6a226844841b5f8d72606d6083c"><span data-offset-key="3755e6a226844841b5f8d72606d6083c:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b0aab03c48ca46729e9ba0c127bb4c88"><span data-offset-key="b0aab03c48ca46729e9ba0c127bb4c88:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/modules" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="323c3ce2a0bb481f9698682f14c9a20f"><span data-offset-key="323c3ce2a0bb481f9698682f14c9a20f:0">Modules</span></span></a><span data-key="3755e6a226844841b5f8d72606d6083c"><span data-offset-key="3755e6a226844841b5f8d72606d6083c:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="b46e6fe16f944f31ae8ba90854ea1a4a"><span data-offset-key="b46e6fe16f944f31ae8ba90854ea1a4a:0">Objective 01 - Perform basic dictionary operations</span></span></span>
 
@@ -407,9 +406,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ef147d9468c544bea91b45c9c2d94700"><span data-offset-key="ef147d9468c544bea91b45c9c2d94700:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a662138f4e6a498b96fbf0c98c5aa8e7"><span data-offset-key="a662138f4e6a498b96fbf0c98c5aa8e7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5989e7a90c58454ab6b93ef25efce331"><span data-offset-key="5989e7a90c58454ab6b93ef25efce331:0">https://www.w3schools.com/python/python_dictionaries.asp (Links to an external site.)</span></span></a><span data-key="11012dc16076465d8537dbb6b152c0ad"><span data-offset-key="11012dc16076465d8537dbb6b152c0ad:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a662138f4e6a498b96fbf0c98c5aa8e7"><span data-offset-key="a662138f4e6a498b96fbf0c98c5aa8e7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.w3schools.com/python/python_dictionaries.asp" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5989e7a90c58454ab6b93ef25efce331"><span data-offset-key="5989e7a90c58454ab6b93ef25efce331:0">https://www.w3schools.com/python/python_dictionaries.asp (Links to an external site.)</span></span></a><span data-key="11012dc16076465d8537dbb6b152c0ad"><span data-offset-key="11012dc16076465d8537dbb6b152c0ad:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="30630e4a819845e5bed1a2f2c1f68eff"><span data-offset-key="30630e4a819845e5bed1a2f2c1f68eff:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ca07fb38134942989bc65da8ee9ef254"><span data-offset-key="ca07fb38134942989bc65da8ee9ef254:0">https://docs.python.org/3/tutorial/datastructures.html#dictionaries (Links to an external site.)</span></span></a><span data-key="cfe698eb6fce49aa8b330ca478b5e622"><span data-offset-key="cfe698eb6fce49aa8b330ca478b5e622:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="30630e4a819845e5bed1a2f2c1f68eff"><span data-offset-key="30630e4a819845e5bed1a2f2c1f68eff:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ca07fb38134942989bc65da8ee9ef254"><span data-offset-key="ca07fb38134942989bc65da8ee9ef254:0">https://docs.python.org/3/tutorial/datastructures.html#dictionaries (Links to an external site.)</span></span></a><span data-key="cfe698eb6fce49aa8b330ca478b5e622"><span data-offset-key="cfe698eb6fce49aa8b330ca478b5e622:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 
@@ -429,11 +428,11 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f2a23e4389e7465a900efb15ea03c907"><span data-offset-key="f2a23e4389e7465a900efb15ea03c907:0">Value</span></span></span>
 
-    >>> a = 1>>> # Identity... id(a)4483164816>>> # Type... type(a)<class 'int'>>>> # Value... a1>>>
+    > > > a = 1>>> # Identity... id(a)4483164816>>> # Type... type(a)<class 'int'>>>> # Value... a1>>>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b0919665b5834abda4d179f53d6d093a"><span data-offset-key="b0919665b5834abda4d179f53d6d093a:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d6899d2ae917416d89e109dd4a5de5bd"><span data-offset-key="d6899d2ae917416d89e109dd4a5de5bd:0">Identity</span></span></span>
 
@@ -447,7 +446,7 @@
 
     >>> id(a)4483164816>>> id(b)4483164816>>>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0c3e2257f9ee429a8ae425bb54e9d406"><span data-offset-key="0c3e2257f9ee429a8ae425bb54e9d406:0">Type</span></span></span>
 
@@ -457,13 +456,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="119b8b6e2b3a40bda588a746a573305c"><span data-offset-key="119b8b6e2b3a40bda588a746a573305c:0">Just like an object's identity, once an object is created, its identity can never change. It's an object's type that determines whether an object is </span><span data-offset-key="119b8b6e2b3a40bda588a746a573305c:1">**mutable**</span><span data-offset-key="119b8b6e2b3a40bda588a746a573305c:2"> or </span><span data-offset-key="119b8b6e2b3a40bda588a746a573305c:3">**immutable.**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="14c8ed166a3d474097b319cfe1181358"><span data-offset-key="14c8ed166a3d474097b319cfe1181358:0">Value</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04b89f1a3e52492ebf2f379fa0d7ed8c"><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:0">The value of some objects </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:1">*can be changed*</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:2"> after they are created. The value of some objects </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:3">*cannot be changed*</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:4"> after they are created. If the object's value can be changed, that object is considered to be </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:5">**mutable**</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:6"> (changeable). If the object's value cannot be changed, that object is considered to be </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:7">**immutable**</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:8"> (unchangeable).</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04b89f1a3e52492ebf2f379fa0d7ed8c"><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:0">The value of some objects </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:1">_can be changed_</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:2"> after they are created. The value of some objects </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:3">_cannot be changed_</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:4"> after they are created. If the object's value can be changed, that object is considered to be </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:5">**mutable**</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:6"> (changeable). If the object's value cannot be changed, that object is considered to be </span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:7">**immutable**</span><span data-offset-key="04b89f1a3e52492ebf2f379fa0d7ed8c:8"> (unchangeable).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b4b8fa6f9ccb46dd88468ddbaa1f559d"><span data-offset-key="b4b8fa6f9ccb46dd88468ddbaa1f559d:0">Mutable Objects</span></span></span>
 
@@ -473,15 +472,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a01445958044c59a7e2236063868c8c"><span data-offset-key="3a01445958044c59a7e2236063868c8c:0">The following types of objects are mutable:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="818d462d9b394a73a52f9b8fb291477b"><span data-offset-key="818d462d9b394a73a52f9b8fb291477b:0">list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="818d462d9b394a73a52f9b8fb291477b"><span data-offset-key="818d462d9b394a73a52f9b8fb291477b:0">list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf169e4f14c542628807b9d3bf882381"><span data-offset-key="cf169e4f14c542628807b9d3bf882381:0">set</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf169e4f14c542628807b9d3bf882381"><span data-offset-key="cf169e4f14c542628807b9d3bf882381:0">set</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f738634225cb42a7a3d3009b2ecd622c"><span data-offset-key="f738634225cb42a7a3d3009b2ecd622c:0">dict</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f738634225cb42a7a3d3009b2ecd622c"><span data-offset-key="f738634225cb42a7a3d3009b2ecd622c:0">dict</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e667168c2d0741f78840c38dc7dcd4ff"><span data-offset-key="e667168c2d0741f78840c38dc7dcd4ff:0">byte array</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e667168c2d0741f78840c38dc7dcd4ff"><span data-offset-key="e667168c2d0741f78840c38dc7dcd4ff:0">byte array</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5550bbd7619f4db9b46291b0287b9908"><span data-offset-key="5550bbd7619f4db9b46291b0287b9908:0">instances of user-defined classes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5550bbd7619f4db9b46291b0287b9908"><span data-offset-key="5550bbd7619f4db9b46291b0287b9908:0">instances of user-defined classes</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0280ea95d224110b3e1fd563fdbf231"><span data-offset-key="a0280ea95d224110b3e1fd563fdbf231:0">Let's look at a few examples in code:</span></span></span>
 
@@ -501,7 +500,7 @@
 
     >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}>>> type(my_dict)<class 'dict'>>>> my_dict["location"] = "Nepal">>> my_dict{'first_name': 'Mattieu', 'last_name': 'Ricard', 'location': 'Nepal'}>>> del my_dict['location']>>> my_dict{'first_name': 'Mattieu', 'last_name': 'Ricard'}
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c39091724270474e81e83016b012b2f1"><span data-offset-key="c39091724270474e81e83016b012b2f1:0">On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair </span><span data-offset-key="c39091724270474e81e83016b012b2f1:1">`"location":                                       "Nepal"`</span><span data-offset-key="c39091724270474e81e83016b012b2f1:2">. Last, we delete that same key-value pair.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c39091724270474e81e83016b012b2f1"><span data-offset-key="c39091724270474e81e83016b012b2f1:0">On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair </span><span data-offset-key="c39091724270474e81e83016b012b2f1:1">`"location": "Nepal"`</span><span data-offset-key="c39091724270474e81e83016b012b2f1:2">. Last, we delete that same key-value pair.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1e05be4046e4f46a464aaa23de346b7"><span data-offset-key="f1e05be4046e4f46a464aaa23de346b7:0">Mutable objects work great when you know you will likely need to change the size of the object as you use and interact with it. Changing mutable objects is cheap (because you don't have to copy all existing elements to a new object).</span></span></span>
 
@@ -527,27 +526,27 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17f262935ec74711ab3572aac1a32eee"><span data-offset-key="17f262935ec74711ab3572aac1a32eee:0">On line 4, we removed the element </span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:1">`1`</span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:2"> from </span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:3">`my_list_orig`</span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:4">. Notice, just like when we added to the list, </span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:5">`my_list_alias`</span><span data-offset-key="17f262935ec74711ab3572aac1a32eee:6"> is also affected.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7190198350bc4ad9ab2ba224a8e1f498"><span data-offset-key="7190198350bc4ad9ab2ba224a8e1f498:0">*This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7190198350bc4ad9ab2ba224a8e1f498"><span data-offset-key="7190198350bc4ad9ab2ba224a8e1f498:0">_This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="044ac43d93744bcda0e2bb57d75c4898"><span data-offset-key="044ac43d93744bcda0e2bb57d75c4898:0">Immutable Objects</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f05de17495b42d3a810bcce7e320591"><span data-offset-key="3f05de17495b42d3a810bcce7e320591:0">An immutable object is an object whose value cannot be changed after it is created. Immutable means </span><span data-offset-key="3f05de17495b42d3a810bcce7e320591:1">*not changeable*</span><span data-offset-key="3f05de17495b42d3a810bcce7e320591:2">. Anytime you try to update the value of an immutable object, a new object is created instead.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f05de17495b42d3a810bcce7e320591"><span data-offset-key="3f05de17495b42d3a810bcce7e320591:0">An immutable object is an object whose value cannot be changed after it is created. Immutable means </span><span data-offset-key="3f05de17495b42d3a810bcce7e320591:1">_not changeable_</span><span data-offset-key="3f05de17495b42d3a810bcce7e320591:2">. Anytime you try to update the value of an immutable object, a new object is created instead.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9368e008c1f4d93b61e050b5c409bc2"><span data-offset-key="c9368e008c1f4d93b61e050b5c409bc2:0">The following types are immutable:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94daf7d51bf045838295b3271ca64269"><span data-offset-key="94daf7d51bf045838295b3271ca64269:0">Numbers (int, float, complex)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94daf7d51bf045838295b3271ca64269"><span data-offset-key="94daf7d51bf045838295b3271ca64269:0">Numbers (int, float, complex)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54b6d83cd84f4b43a809327e8a06c5fe"><span data-offset-key="54b6d83cd84f4b43a809327e8a06c5fe:0">Strings</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54b6d83cd84f4b43a809327e8a06c5fe"><span data-offset-key="54b6d83cd84f4b43a809327e8a06c5fe:0">Strings</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="137ab474238f4d2599ef423ab82b65ab"><span data-offset-key="137ab474238f4d2599ef423ab82b65ab:0">Bytes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="137ab474238f4d2599ef423ab82b65ab"><span data-offset-key="137ab474238f4d2599ef423ab82b65ab:0">Bytes</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78a17476b88e46f99f547aa1ff63a64e"><span data-offset-key="78a17476b88e46f99f547aa1ff63a64e:0">Booleans</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78a17476b88e46f99f547aa1ff63a64e"><span data-offset-key="78a17476b88e46f99f547aa1ff63a64e:0">Booleans</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98a47bcb73044c0f890180d4b7b3899e"><span data-offset-key="98a47bcb73044c0f890180d4b7b3899e:0">Tuples</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98a47bcb73044c0f890180d4b7b3899e"><span data-offset-key="98a47bcb73044c0f890180d4b7b3899e:0">Tuples</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61c386ca1ab74e478fada9a3b71e646b"><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:0">Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more </span><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:1">*expensive*</span><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:2"> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61c386ca1ab74e478fada9a3b71e646b"><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:0">Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more </span><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:1">_expensive_</span><span data-offset-key="61c386ca1ab74e478fada9a3b71e646b:2"> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="727b9a04aecc4d6baa48b32765c22e3d"><span data-offset-key="727b9a04aecc4d6baa48b32765c22e3d:0">Let's look at a few examples:</span></span></span>
 
@@ -585,7 +584,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="69ee2acc90b54f1aab2f2b7d0ba5577e"><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:0">Notice that we cannot create a new list object and bind it to the name at position 1 of our tuple. This is demonstrated when </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:1">`my_tuple[1] = [4,5,6]`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:2"> raises a </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:3">`TypeError`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:4">. However, we can assign new objects to the list that is at position 1 of our tuple? Why is that? Well, what do we know about lists in Python? Lists are mutable objects. So, we can modify a list without creating a new object. So, when we are modifying the list directly (instead of assigning a new object), it doesn't affect our tuple's immutability. Notice that the identity (</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:5">`140716674620864`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:6">) of the list at </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:7">`my_tuple[1]`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:8"> doesn't change after replacing its three elements with </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:9">`4`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:10">, </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:11">`5`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:12">, and </span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:13">`6`</span><span data-offset-key="69ee2acc90b54f1aab2f2b7d0ba5577e:14">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ecbbd3ce2b044b07889860366155bbe4"><span data-offset-key="ecbbd3ce2b044b07889860366155bbe4:0">Passing Objects to Functions</span></span></span>
 
@@ -619,11 +618,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bb2595ae671413b85cb1b320593c372"><span data-offset-key="9bb2595ae671413b85cb1b320593c372:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d6f09f1a3b94186bf9df960ec665771"><span data-offset-key="0d6f09f1a3b94186bf9df960ec665771:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a2ea567f9eca48838bd4e96ca7a9ed79"><span data-offset-key="a2ea567f9eca48838bd4e96ca7a9ed79:0"> Home</span></span></a><span data-key="6b1542cc056c48c09cd6f37295b22022"><span data-offset-key="6b1542cc056c48c09cd6f37295b22022:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d6f09f1a3b94186bf9df960ec665771"><span data-offset-key="0d6f09f1a3b94186bf9df960ec665771:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a2ea567f9eca48838bd4e96ca7a9ed79"><span data-offset-key="a2ea567f9eca48838bd4e96ca7a9ed79:0"> Home</span></span></a><span data-key="6b1542cc056c48c09cd6f37295b22022"><span data-offset-key="6b1542cc056c48c09cd6f37295b22022:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="18cc4c1210534d0b9640709ca3fa2811"><span data-offset-key="18cc4c1210534d0b9640709ca3fa2811:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/grades" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="21d000508d23446aa6edf68aa13f4f5f"><span data-offset-key="21d000508d23446aa6edf68aa13f4f5f:0">Grades</span></span></a><span data-key="bc91f294249846f68d3dd5de698b32a6"><span data-offset-key="bc91f294249846f68d3dd5de698b32a6:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="18cc4c1210534d0b9640709ca3fa2811"><span data-offset-key="18cc4c1210534d0b9640709ca3fa2811:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/grades" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="21d000508d23446aa6edf68aa13f4f5f"><span data-offset-key="21d000508d23446aa6edf68aa13f4f5f:0">Grades</span></span></a><span data-key="bc91f294249846f68d3dd5de698b32a6"><span data-offset-key="bc91f294249846f68d3dd5de698b32a6:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f8a2588fb3c45159c3d82cb35ddcd08"><span data-offset-key="1f8a2588fb3c45159c3d82cb35ddcd08:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/modules" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8b6236e81f7b43a293de93a3000d609f"><span data-offset-key="8b6236e81f7b43a293de93a3000d609f:0">Modules</span></span></a><span data-key="919a7bd55bc24322a1c9e69df1b8342e"><span data-offset-key="919a7bd55bc24322a1c9e69df1b8342e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f8a2588fb3c45159c3d82cb35ddcd08"><span data-offset-key="1f8a2588fb3c45159c3d82cb35ddcd08:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://lambdaschool.instructure.com/courses/1575/modules" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8b6236e81f7b43a293de93a3000d609f"><span data-offset-key="8b6236e81f7b43a293de93a3000d609f:0">Modules</span></span></a><span data-key="919a7bd55bc24322a1c9e69df1b8342e"><span data-offset-key="919a7bd55bc24322a1c9e69df1b8342e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="4fdfb28387a247539c1cf9ded4d51562"><span data-offset-key="4fdfb28387a247539c1cf9ded4d51562:0">Objective 02 - Recognize mutable and immutable objects</span></span></span>
 
@@ -641,11 +640,11 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b10eed3e41f42509739cc6d5d7ce093"><span data-offset-key="2b10eed3e41f42509739cc6d5d7ce093:0">Value</span></span></span>
 
-    >>> a = 1>>> # Identity... id(a)4483164816>>> # Type... type(a)<class 'int'>>>> # Value... a1>>>
+    > > > a = 1>>> # Identity... id(a)4483164816>>> # Type... type(a)<class 'int'>>>> # Value... a1>>>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a43ae917cab6407f883f4c6b2171c3fd"><span data-offset-key="a43ae917cab6407f883f4c6b2171c3fd:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="476a54e7b04f4fd3872fc2f19531e993"><span data-offset-key="476a54e7b04f4fd3872fc2f19531e993:0">Identity</span></span></span>
 
@@ -659,7 +658,7 @@
 
     >>> id(a)4483164816>>> id(b)4483164816>>>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="cf2b82284a884c42ab9712aeb479d5cc"><span data-offset-key="cf2b82284a884c42ab9712aeb479d5cc:0">Type</span></span></span>
 
@@ -669,13 +668,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58f527ce0fd845139eefd347482b904a"><span data-offset-key="58f527ce0fd845139eefd347482b904a:0">Just like an object's identity, once an object is created, its identity can never change. It's an object's type that determines whether an object is </span><span data-offset-key="58f527ce0fd845139eefd347482b904a:1">**mutable**</span><span data-offset-key="58f527ce0fd845139eefd347482b904a:2"> or </span><span data-offset-key="58f527ce0fd845139eefd347482b904a:3">**immutable.**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="68d4796fe9724c3982bd73c8d5851db2"><span data-offset-key="68d4796fe9724c3982bd73c8d5851db2:0">Value</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b223a4a820704ee881f0e5c4fe07f895"><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:0">The value of some objects </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:1">*can be changed*</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:2"> after they are created. The value of some objects </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:3">*cannot be changed*</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:4"> after they are created. If the object's value can be changed, that object is considered to be </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:5">**mutable**</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:6"> (changeable). If the object's value cannot be changed, that object is considered to be </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:7">**immutable**</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:8"> (unchangeable).</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b223a4a820704ee881f0e5c4fe07f895"><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:0">The value of some objects </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:1">_can be changed_</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:2"> after they are created. The value of some objects </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:3">_cannot be changed_</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:4"> after they are created. If the object's value can be changed, that object is considered to be </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:5">**mutable**</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:6"> (changeable). If the object's value cannot be changed, that object is considered to be </span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:7">**immutable**</span><span data-offset-key="b223a4a820704ee881f0e5c4fe07f895:8"> (unchangeable).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6e4ba63a05dd4035a629bb5a69168867"><span data-offset-key="6e4ba63a05dd4035a629bb5a69168867:0">Mutable Objects</span></span></span>
 
@@ -685,15 +684,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b35a6b9cbb634f6cab570890dc9aeedf"><span data-offset-key="b35a6b9cbb634f6cab570890dc9aeedf:0">The following types of objects are mutable:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7c7532209794326bc18386a231687fe"><span data-offset-key="b7c7532209794326bc18386a231687fe:0">list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7c7532209794326bc18386a231687fe"><span data-offset-key="b7c7532209794326bc18386a231687fe:0">list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bcd9f912ada4e328e56dd0942404bb7"><span data-offset-key="5bcd9f912ada4e328e56dd0942404bb7:0">set</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bcd9f912ada4e328e56dd0942404bb7"><span data-offset-key="5bcd9f912ada4e328e56dd0942404bb7:0">set</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8633bf0692b54080a513a94a04ce7126"><span data-offset-key="8633bf0692b54080a513a94a04ce7126:0">dict</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8633bf0692b54080a513a94a04ce7126"><span data-offset-key="8633bf0692b54080a513a94a04ce7126:0">dict</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c58c55d1b35143d79c039900f6df5dab"><span data-offset-key="c58c55d1b35143d79c039900f6df5dab:0">byte array</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c58c55d1b35143d79c039900f6df5dab"><span data-offset-key="c58c55d1b35143d79c039900f6df5dab:0">byte array</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="29f49daa591b4284991655ee9571ed79"><span data-offset-key="29f49daa591b4284991655ee9571ed79:0">instances of user-defined classes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="29f49daa591b4284991655ee9571ed79"><span data-offset-key="29f49daa591b4284991655ee9571ed79:0">instances of user-defined classes</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a55ee0e4ab74481865caec1178ac146"><span data-offset-key="9a55ee0e4ab74481865caec1178ac146:0">Let's look at a few examples in code:</span></span></span>
 
@@ -713,7 +712,7 @@
 
     >>> my_dict = {"first_name": "Mattieu", "last_name": "Ricard"}>>> type(my_dict)<class 'dict'>>>> my_dict["location"] = "Nepal">>> my_dict{'first_name': 'Mattieu', 'last_name': 'Ricard', 'location': 'Nepal'}>>> del my_dict['location']>>> my_dict{'first_name': 'Mattieu', 'last_name': 'Ricard'}
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe49d3c2d46b46bfb9799534a92c6d56"><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:0">On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair </span><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:1">`"location":                                       "Nepal"`</span><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:2">. Last, we delete that same key-value pair.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe49d3c2d46b46bfb9799534a92c6d56"><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:0">On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair </span><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:1">`"location": "Nepal"`</span><span data-offset-key="fe49d3c2d46b46bfb9799534a92c6d56:2">. Last, we delete that same key-value pair.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ec9a781e29046c380213ded3e97fcaa"><span data-offset-key="3ec9a781e29046c380213ded3e97fcaa:0">Mutable objects work great when you know you will likely need to change the size of the object as you use and interact with it. Changing mutable objects is cheap (because you don't have to copy all existing elements to a new object).</span></span></span>
 
@@ -739,27 +738,27 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2e05c8a4febf4c849cf8f8aefb21e266"><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:0">On line 4, we removed the element </span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:1">`1`</span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:2"> from </span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:3">`my_list_orig`</span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:4">. Notice, just like when we added to the list, </span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:5">`my_list_alias`</span><span data-offset-key="2e05c8a4febf4c849cf8f8aefb21e266:6"> is also affected.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86b8fa841fe047ae944ecec922e6e1e5"><span data-offset-key="86b8fa841fe047ae944ecec922e6e1e5:0">*This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86b8fa841fe047ae944ecec922e6e1e5"><span data-offset-key="86b8fa841fe047ae944ecec922e6e1e5:0">_This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="af1af57af0ec4a1fafd813615e50878a"><span data-offset-key="af1af57af0ec4a1fafd813615e50878a:0">Immutable Objects</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32356aed2d8e48e3a099264b77e488bc"><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:0">An immutable object is an object whose value cannot be changed after it is created. Immutable means </span><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:1">*not changeable*</span><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:2">. Anytime you try to update the value of an immutable object, a new object is created instead.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32356aed2d8e48e3a099264b77e488bc"><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:0">An immutable object is an object whose value cannot be changed after it is created. Immutable means </span><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:1">_not changeable_</span><span data-offset-key="32356aed2d8e48e3a099264b77e488bc:2">. Anytime you try to update the value of an immutable object, a new object is created instead.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c8826ac790a648e38ed43b9d1ccd46ce"><span data-offset-key="c8826ac790a648e38ed43b9d1ccd46ce:0">The following types are immutable:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6dfbbb163b7440f0b780c861dfec53ed"><span data-offset-key="6dfbbb163b7440f0b780c861dfec53ed:0">Numbers (int, float, complex)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6dfbbb163b7440f0b780c861dfec53ed"><span data-offset-key="6dfbbb163b7440f0b780c861dfec53ed:0">Numbers (int, float, complex)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a150c9245b274841ae6c86da2d75fa94"><span data-offset-key="a150c9245b274841ae6c86da2d75fa94:0">Strings</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a150c9245b274841ae6c86da2d75fa94"><span data-offset-key="a150c9245b274841ae6c86da2d75fa94:0">Strings</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dcbf1eb261f94aacaffcd693b6fe70ed"><span data-offset-key="dcbf1eb261f94aacaffcd693b6fe70ed:0">Bytes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dcbf1eb261f94aacaffcd693b6fe70ed"><span data-offset-key="dcbf1eb261f94aacaffcd693b6fe70ed:0">Bytes</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb43d1ff95a04d08b1023468f8249d15"><span data-offset-key="eb43d1ff95a04d08b1023468f8249d15:0">Booleans</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb43d1ff95a04d08b1023468f8249d15"><span data-offset-key="eb43d1ff95a04d08b1023468f8249d15:0">Booleans</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="044441b8aefc42b99012d85fba81aa9a"><span data-offset-key="044441b8aefc42b99012d85fba81aa9a:0">Tuples</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="044441b8aefc42b99012d85fba81aa9a"><span data-offset-key="044441b8aefc42b99012d85fba81aa9a:0">Tuples</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d967ba8596d64cd19e375e09fa19c30e"><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:0">Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more </span><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:1">*expensive*</span><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:2"> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d967ba8596d64cd19e375e09fa19c30e"><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:0">Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more </span><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:1">_expensive_</span><span data-offset-key="d967ba8596d64cd19e375e09fa19c30e:2"> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06efb2fb262b4161a3d5492b980ae88a"><span data-offset-key="06efb2fb262b4161a3d5492b980ae88a:0">Let's look at a few examples:</span></span></span>
 
@@ -797,7 +796,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c5da0fa07dd249fd80dfba88f9035b6d"><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:0">Notice that we cannot create a new list object and bind it to the name at position 1 of our tuple. This is demonstrated when </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:1">`my_tuple[1] = [4,5,6]`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:2"> raises a </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:3">`TypeError`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:4">. However, we can assign new objects to the list that is at position 1 of our tuple? Why is that? Well, what do we know about lists in Python? Lists are mutable objects. So, we can modify a list without creating a new object. So, when we are modifying the list directly (instead of assigning a new object), it doesn't affect our tuple's immutability. Notice that the identity (</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:5">`140716674620864`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:6">) of the list at </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:7">`my_tuple[1]`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:8"> doesn't change after replacing its three elements with </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:9">`4`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:10">, </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:11">`5`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:12">, and </span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:13">`6`</span><span data-offset-key="c5da0fa07dd249fd80dfba88f9035b6d:14">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="16473a977cae4e3daf70fcbf6f9026d1"><span data-offset-key="16473a977cae4e3daf70fcbf6f9026d1:0">Passing Objects to Functions</span></span></span>
 
@@ -825,11 +824,11 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="382a65928931444d99906bb1bbbebd1c"><span data-offset-key="382a65928931444d99906bb1bbbebd1c:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de5cf17463d2487bb5bed85136f93389"><span data-offset-key="de5cf17463d2487bb5bed85136f93389:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="28157a5b40fc402cb7bb815db2fef469"><span data-offset-key="28157a5b40fc402cb7bb815db2fef469:0">Mutable vs. Immutable Objects in Python - A Visual and Hands-On Guide (Links to an external site.)</span></span></a><span data-key="5dd3659236534009b76a8d8960b970f1"><span data-offset-key="5dd3659236534009b76a8d8960b970f1:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de5cf17463d2487bb5bed85136f93389"><span data-offset-key="de5cf17463d2487bb5bed85136f93389:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="28157a5b40fc402cb7bb815db2fef469"><span data-offset-key="28157a5b40fc402cb7bb815db2fef469:0">Mutable vs. Immutable Objects in Python - A Visual and Hands-On Guide (Links to an external site.)</span></span></a><span data-key="5dd3659236534009b76a8d8960b970f1"><span data-offset-key="5dd3659236534009b76a8d8960b970f1:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b40a10a63de246c3a1875ab057b6c14e"><span data-offset-key="b40a10a63de246c3a1875ab057b6c14e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="29e84c18383e446787f7e39fc9728638"><span data-offset-key="29e84c18383e446787f7e39fc9728638:0">Python Basics: Mutable vs. Immutable Objects (Links to an external site.)</span></span></a><span data-key="8f96648f55df44748e7873fe3ba2675e"><span data-offset-key="8f96648f55df44748e7873fe3ba2675e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b40a10a63de246c3a1875ab057b6c14e"><span data-offset-key="b40a10a63de246c3a1875ab057b6c14e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="29e84c18383e446787f7e39fc9728638"><span data-offset-key="29e84c18383e446787f7e39fc9728638:0">Python Basics: Mutable vs. Immutable Objects (Links to an external site.)</span></span></a><span data-key="8f96648f55df44748e7873fe3ba2675e"><span data-offset-key="8f96648f55df44748e7873fe3ba2675e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d8590e60de64afa812d9d581921fb2e"><span data-offset-key="2d8590e60de64afa812d9d581921fb2e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.educative.io/edpresso/what-are-mutable-and-immutable-objects-in-python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d8e85f32ce1f4fc6910473a6aa141d0f"><span data-offset-key="d8e85f32ce1f4fc6910473a6aa141d0f:0">What are mutable and immutable objects in Python3? (Links to an external site.)</span></span></a><span data-key="738457ecb13a49a3942a3db16002bb0f"><span data-offset-key="738457ecb13a49a3942a3db16002bb0f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d8590e60de64afa812d9d581921fb2e"><span data-offset-key="2d8590e60de64afa812d9d581921fb2e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.educative.io/edpresso/what-are-mutable-and-immutable-objects-in-python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d8e85f32ce1f4fc6910473a6aa141d0f"><span data-offset-key="d8e85f32ce1f4fc6910473a6aa141d0f:0">What are mutable and immutable objects in Python3? (Links to an external site.)</span></span></a><span data-key="738457ecb13a49a3942a3db16002bb0f"><span data-offset-key="738457ecb13a49a3942a3db16002bb0f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="645abe30cf7746bbb8ed995853c8443a"><span data-offset-key="645abe30cf7746bbb8ed995853c8443a:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -839,23 +838,23 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="21d428af91904501abdda2ffbabeb5e8"><span data-offset-key="21d428af91904501abdda2ffbabeb5e8:0">Overview</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5ac4a5383c084e80aab8a000d7d07954"><span data-offset-key="5ac4a5383c084e80aab8a000d7d07954:0">What is an algorithm?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16ffeddd7db1480484b937a31c314d52"><span data-offset-key="16ffeddd7db1480484b937a31c314d52:0">An algorithm is a set of instructions for accomplishing a task. Within this broad definition, we could call every piece of code an algorithm.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="48975f2f6fd847c89fda8ca5772c20a9"><span data-offset-key="48975f2f6fd847c89fda8ca5772c20a9:0">How do we measure how "good" an algorithm is?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e1be04a18414443b3c4d1ae39cf8bff"><span data-offset-key="0e1be04a18414443b3c4d1ae39cf8bff:0">After coming up with a first-pass solution to a problem, we need to measure how "good" our answer is. Will it stand up to the test of millions of users? Is it fast enough that our users will be blown away by how quickly they get their results? Or will torturously slow speeds cause lag that scares them all away?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59bb4624bf0747dca845cd7be395bfab"><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:0">When given a choice between different algorithms, we want to choose the most efficient algorithm (considering both </span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:1">*time*</span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:2"> and </span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:3">*space*</span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:4"> efficiency depending on our needs).</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59bb4624bf0747dca845cd7be395bfab"><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:0">When given a choice between different algorithms, we want to choose the most efficient algorithm (considering both </span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:1">_time_</span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:2"> and </span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:3">_space_</span><span data-offset-key="59bb4624bf0747dca845cd7be395bfab:4"> efficiency depending on our needs).</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4b24a64dd7ca4c20ae32cda8f0845ecd"><span data-offset-key="4b24a64dd7ca4c20ae32cda8f0845ecd:0">*Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4b24a64dd7ca4c20ae32cda8f0845ecd"><span data-offset-key="4b24a64dd7ca4c20ae32cda8f0845ecd:0">_Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6ed28057132a4405a59314695901f0c9"><span data-offset-key="6ed28057132a4405a59314695901f0c9:0">What is Big O notation?</span></span></span>
 
@@ -867,11 +866,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abfa9867315f406cba28922dec1420cf"><span data-offset-key="abfa9867315f406cba28922dec1420cf:0">Why do we focus on the growth of runtime versus exact runtime? The actual runtime depends on the specific computer running the algorithm, so we cannot compare efficiencies that way. By focusing on the general growth, we can avoid exact runtime differences between machines and environments.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5ab09c5223f14866b100e38df166e710"><span data-offset-key="5ab09c5223f14866b100e38df166e710:0">We also talk about runtime relative to the input size because we need to express our speed in terms of </span><span data-offset-key="5ab09c5223f14866b100e38df166e710:1">*something*</span><span data-offset-key="5ab09c5223f14866b100e38df166e710:2">. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5ab09c5223f14866b100e38df166e710"><span data-offset-key="5ab09c5223f14866b100e38df166e710:0">We also talk about runtime relative to the input size because we need to express our speed in terms of </span><span data-offset-key="5ab09c5223f14866b100e38df166e710:1">_something_</span><span data-offset-key="5ab09c5223f14866b100e38df166e710:2">. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a728d58af1ef4267b704d9d346825f07"><span data-offset-key="a728d58af1ef4267b704d9d346825f07:0">We don't care about speed when the input size is small. The differences in speed are likely to be minimal when the input size is small. When the input size gets enormous, we can see the differences in efficiency between algorithms.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="575869b0e1f348ea877a7c1cfd62bc4f"><span data-offset-key="575869b0e1f348ea877a7c1cfd62bc4f:0">Common Big O run times</span></span></span>
 
@@ -885,9 +884,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ee9764840124bbda4f7b654b7c5c25d"><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:0">Again, </span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:1">`n`</span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:2"> represents the size of the data, and on the chart above, </span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:3">`N`</span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:4"> represents the number of operations. This visualization should help illustrate why </span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:5">`O(1)`</span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:6"> or </span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:7">`O(log n)`</span><span data-offset-key="0ee9764840124bbda4f7b654b7c5c25d:8"> is the most desirable.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8329a3dfc3574da1819f36378c7c4773"><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:0">*Note: Big O only matters for large data sets. An* </span><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:1">`O(n^3)`</span><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:2"> *solution is adequate, as long as you can guarantee that your datasets will always be small.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8329a3dfc3574da1819f36378c7c4773"><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:0">_Note: Big O only matters for large data sets. An_ </span><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:1">`O(n^3)`</span><span data-offset-key="8329a3dfc3574da1819f36378c7c4773:2"> _solution is adequate, as long as you can guarantee that your datasets will always be small._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="048962b7c4b148a28378d1bafd19710e"><span data-offset-key="048962b7c4b148a28378d1bafd19710e:0">A few examples</span></span></span>
 
@@ -911,7 +910,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb328bd8f5c44482baf30191eb7f6699"><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:0">Why is this quadratic time? The clue is the nested for loops. These nested for loops mean that for each item in </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:1">`list_of_things`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:2"> (the outer loop), we iterate through every item in </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:3">`list_of_things`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:4"> (the inner loop). For an input size of </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:5">`n`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:6">, we have to print </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:7">`n`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:8"> \* </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:9">`n`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:10"> times or </span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:11">`n^2`</span><span data-offset-key="eb328bd8f5c44482baf30191eb7f6699:12"> times.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ea93f935698b41369a358b732caab8a3"><span data-offset-key="ea93f935698b41369a358b732caab8a3:0">What are we supposed to do with the constants?</span></span></span>
 
@@ -927,7 +926,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6b3a2d04b2f04ee6aecb9ede0ec9239d"><span data-offset-key="6b3a2d04b2f04ee6aecb9ede0ec9239d:0">So, putting it all together, we could say that the efficiency is </span><span data-offset-key="6b3a2d04b2f04ee6aecb9ede0ec9239d:1">`O(1 + n/2 + 2000)`</span><span data-offset-key="6b3a2d04b2f04ee6aecb9ede0ec9239d:2">. However, we don't say this. We describe this function as having linear time </span><span data-offset-key="6b3a2d04b2f04ee6aecb9ede0ec9239d:3">`O(n)`</span><span data-offset-key="6b3a2d04b2f04ee6aecb9ede0ec9239d:4"> because we drop all of the constants. Why do we cut all of the constants? Because as the input size gets huge, adding 2000 or dividing by 2 has minimal effect on the algorithm's performance.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="68f29e4abd2c4795b68417c4ed48c15b"><span data-offset-key="68f29e4abd2c4795b68417c4ed48c15b:0">Most significant term</span></span></span>
 
@@ -937,7 +936,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e25d94e12fd45d2b6a28a81c0ca7471"><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:0">We could describe this function as </span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:1">`O(n + n^2)`</span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:2">; however, we only need to keep the essential term, </span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:3">`n^2`</span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:4">, so this would be </span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:5">`O(n^2)`</span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:6">. Why can we do this? Because as the input size (</span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:7">`n`</span><span data-offset-key="6e25d94e12fd45d2b6a28a81c0ca7471:8">) gets larger and larger, the less significant terms have less effect, and only the most significant term is important.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5a077645cc3e4d7a9aadf266241c932f"><span data-offset-key="5a077645cc3e4d7a9aadf266241c932f:0">Big O represents the worst-case</span></span></span>
 
@@ -947,9 +946,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22c17f85db2140fa85a42b9122e3a078"><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:0">What would the result be if it just so happens that the </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:1">`thing_we_are_trying_to_find`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:2"> in </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:3">`list_of_things`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:4"> is the very first item in the list? The function would only have to look at one item in </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:5">`list_of_things`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:6"> before returning. In this case, it would be </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:7">`O(1)`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:8">. But, when we talk about a function's complexity, we usually assume the "worst case." What would the "worst-case" be? It would be if it were the last item in </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:9">`list_of_things`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:10">. In that case, we would have to look through all the </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:11">`list_of_things`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:12">, and that complexity would be </span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:13">`O(n)`</span><span data-offset-key="22c17f85db2140fa85a42b9122e3a078:14">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0fbe31d6e2b844d389ea1b33c2285dc0"><span data-offset-key="0fbe31d6e2b844d389ea1b33c2285dc0:0">*Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:* </span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="683037aa20e84898a7395362d6cef07e"><span data-offset-key="683037aa20e84898a7395362d6cef07e:0"><em>Big-Theta notation (Links to an external site.)</em></span></span></a><span data-key="3b918818faee4e7b97ec66b839d423dc"><span data-offset-key="3b918818faee4e7b97ec66b839d423dc:0"> *and* </span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d330bdb25db84e488c4d65a0077c5ea4"><span data-offset-key="d330bdb25db84e488c4d65a0077c5ea4:0"><em>Big-O notation (Links to an external site.)</em></span></span></a><span data-key="151e376518984e619a0c0868daee8354"><span data-offset-key="151e376518984e619a0c0868daee8354:0">*.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0fbe31d6e2b844d389ea1b33c2285dc0"><span data-offset-key="0fbe31d6e2b844d389ea1b33c2285dc0:0">_Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:_ </span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="683037aa20e84898a7395362d6cef07e"><span data-offset-key="683037aa20e84898a7395362d6cef07e:0"><em>Big-Theta notation (Links to an external site.)</em></span></span></a><span data-key="3b918818faee4e7b97ec66b839d423dc"><span data-offset-key="3b918818faee4e7b97ec66b839d423dc:0"> _and_ </span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d330bdb25db84e488c4d65a0077c5ea4"><span data-offset-key="d330bdb25db84e488c4d65a0077c5ea4:0"><em>Big-O notation (Links to an external site.)</em></span></span></a><span data-key="151e376518984e619a0c0868daee8354"><span data-offset-key="151e376518984e619a0c0868daee8354:0">_._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1bfb8a1220904596a9242058327b8fc1"><span data-offset-key="1bfb8a1220904596a9242058327b8fc1:0">Do constants ever matter?</span></span></span>
 
@@ -965,7 +964,7 @@
 
     def foo(n):    i = 1    while i < n:        print(i)        i *= 2
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58a6c3fad87b415a8adaafa899bb732b"><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:0">First, let's think about what the above function is doing. It's printing </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:1">`i`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:2">…but </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:3">`i`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:4"> is not being incremented by 1, as we usually see. It's </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:5">*doubled*</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:6"> every time we run the loop. So, for example, if </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:7">`n = 100`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:8">, then the final result would be…</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58a6c3fad87b415a8adaafa899bb732b"><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:0">First, let's think about what the above function is doing. It's printing </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:1">`i`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:2">…but </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:3">`i`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:4"> is not being incremented by 1, as we usually see. It's </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:5">_doubled_</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:6"> every time we run the loop. So, for example, if </span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:7">`n = 100`</span><span data-offset-key="58a6c3fad87b415a8adaafa899bb732b:8">, then the final result would be…</span></span></span>
 
     1248163264
 
@@ -975,7 +974,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8b1f5028d4e540049be04b05de2ec7e5"><span data-offset-key="8b1f5028d4e540049be04b05de2ec7e5:0">We can use the process of elimination to narrow down which runtime classification makes sense for this algorithm. The number of times the loop runs seems to vary based on the value of </span><span data-offset-key="8b1f5028d4e540049be04b05de2ec7e5:1">`n`</span><span data-offset-key="8b1f5028d4e540049be04b05de2ec7e5:2">, so this is NOT O(1).</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a806da5fb2054ac196197e3ef332082b"><span data-offset-key="a806da5fb2054ac196197e3ef332082b:0">From the above examples, we can also see that the number of times the loop runs is increasing </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:1">*slower*</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:2"> than the input size is increasing. </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:3">`n`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:4"> must be </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:5">*doubled*</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:6"> before the loop will run one more time. We can eliminate classifications such as </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:7">`O(n log n)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:8">, </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:9">`O(n^c)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:10">, </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:11">`O(c^n)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:12">, and </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:13">`O(n!)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:14">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a806da5fb2054ac196197e3ef332082b"><span data-offset-key="a806da5fb2054ac196197e3ef332082b:0">From the above examples, we can also see that the number of times the loop runs is increasing </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:1">_slower_</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:2"> than the input size is increasing. </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:3">`n`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:4"> must be </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:5">_doubled_</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:6"> before the loop will run one more time. We can eliminate classifications such as </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:7">`O(n log n)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:8">, </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:9">`O(n^c)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:10">, </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:11">`O(c^n)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:12">, and </span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:13">`O(n!)`</span><span data-offset-key="a806da5fb2054ac196197e3ef332082b:14">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f2cc62b66624389bff831a2a431d352"><span data-offset-key="7f2cc62b66624389bff831a2a431d352:0">The only two options left at this point are logarithmic and linear. Since the two growth rates (input, the number of operations) are not the same, </span><span data-offset-key="7f2cc62b66624389bff831a2a431d352:1">**this function must run in logarithmic time!**</span></span></span>
 

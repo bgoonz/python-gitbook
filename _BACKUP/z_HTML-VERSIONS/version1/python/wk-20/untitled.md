@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2</span>
-=======================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -173,31 +172,31 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5088fe329afe4e0381737898135f2357"><span data-offset-key="5088fe329afe4e0381737898135f2357:0">The exact order will vary depending on which branches get taken first and which vertex is the starting vertex.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64213a7f0ff9429e86e915ce1b9ca974"><span data-offset-key="64213a7f0ff9429e86e915ce1b9ca974:0">*Note: it's essential to know the distinction between a breadth-first search and a breadth-first traversal. A breadth-first traversal is when you visit each vertex in the breadth-first order and do something during the traversal. A breadth-first search is when you search through vertexes in the breadth-first order until you find the target vertex. A breadth-first search usually returns the shortest path from the starting vertex to the target vertex once the target is found.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64213a7f0ff9429e86e915ce1b9ca974"><span data-offset-key="64213a7f0ff9429e86e915ce1b9ca974:0">_Note: it's essential to know the distinction between a breadth-first search and a breadth-first traversal. A breadth-first traversal is when you visit each vertex in the breadth-first order and do something during the traversal. A breadth-first search is when you search through vertexes in the breadth-first order until you find the target vertex. A breadth-first search usually returns the shortest path from the starting vertex to the target vertex once the target is found._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0375101a4903490cb5506d87437caf7c"><span data-offset-key="0375101a4903490cb5506d87437caf7c:0">**Applications of BFS**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c67d564e0e74174b49d66cd3f18d86d"><span data-offset-key="7c67d564e0e74174b49d66cd3f18d86d:0">Pathfinding, Routing</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c67d564e0e74174b49d66cd3f18d86d"><span data-offset-key="7c67d564e0e74174b49d66cd3f18d86d:0">Pathfinding, Routing</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="455242de6c4b43198ee6d5f79543b4bd"><span data-offset-key="455242de6c4b43198ee6d5f79543b4bd:0">Find neighbor nodes in a P2P network like BitTorrent</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="455242de6c4b43198ee6d5f79543b4bd"><span data-offset-key="455242de6c4b43198ee6d5f79543b4bd:0">Find neighbor nodes in a P2P network like BitTorrent</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="698a58d42890436fb38a4621ba4f8058"><span data-offset-key="698a58d42890436fb38a4621ba4f8058:0">Web crawlers</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="698a58d42890436fb38a4621ba4f8058"><span data-offset-key="698a58d42890436fb38a4621ba4f8058:0">Web crawlers</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="248de173e99844189c3b7da9218a80e8"><span data-offset-key="248de173e99844189c3b7da9218a80e8:0">Finding people </span><span data-offset-key="248de173e99844189c3b7da9218a80e8:1">`n`</span><span data-offset-key="248de173e99844189c3b7da9218a80e8:2"> connections away on a social network</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="248de173e99844189c3b7da9218a80e8"><span data-offset-key="248de173e99844189c3b7da9218a80e8:0">Finding people </span><span data-offset-key="248de173e99844189c3b7da9218a80e8:1">`n`</span><span data-offset-key="248de173e99844189c3b7da9218a80e8:2"> connections away on a social network</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a65e70e02f714135b341231f00057555"><span data-offset-key="a65e70e02f714135b341231f00057555:0">Find neighboring locations on the graph</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a65e70e02f714135b341231f00057555"><span data-offset-key="a65e70e02f714135b341231f00057555:0">Find neighboring locations on the graph</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54ad894b5dd14f0abaf6da3ded779f43"><span data-offset-key="54ad894b5dd14f0abaf6da3ded779f43:0">Broadcasting in a network</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54ad894b5dd14f0abaf6da3ded779f43"><span data-offset-key="54ad894b5dd14f0abaf6da3ded779f43:0">Broadcasting in a network</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28bbafdbad3e477a851990cfa5e4c617"><span data-offset-key="28bbafdbad3e477a851990cfa5e4c617:0">Cycle detection in a graph</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28bbafdbad3e477a851990cfa5e4c617"><span data-offset-key="28bbafdbad3e477a851990cfa5e4c617:0">Cycle detection in a graph</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="36209e48ebda43e5a3366e97cd0f7e78"><span data-offset-key="36209e48ebda43e5a3366e97cd0f7e78:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9b18eb082f5a4258827a177eee686fcf"><span data-offset-key="9b18eb082f5a4258827a177eee686fcf:0">Connected Components (Links to an external site.)</span></span></a><span data-key="51a357710b8b4e6da2ddda94854f0e35"><span data-offset-key="51a357710b8b4e6da2ddda94854f0e35:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="36209e48ebda43e5a3366e97cd0f7e78"><span data-offset-key="36209e48ebda43e5a3366e97cd0f7e78:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Connected_component_(graph_theory)" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9b18eb082f5a4258827a177eee686fcf"><span data-offset-key="9b18eb082f5a4258827a177eee686fcf:0">Connected Components (Links to an external site.)</span></span></a><span data-key="51a357710b8b4e6da2ddda94854f0e35"><span data-offset-key="51a357710b8b4e6da2ddda94854f0e35:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77e423ef326744d48bf343d66e7384a3"><span data-offset-key="77e423ef326744d48bf343d66e7384a3:0">Solving several theoretical graph problems</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77e423ef326744d48bf343d66e7384a3"><span data-offset-key="77e423ef326744d48bf343d66e7384a3:0">Solving several theoretical graph problems</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0fe9dae260fe4ef5b3f8800198a7d5ad"><span data-offset-key="0fe9dae260fe4ef5b3f8800198a7d5ad:0">**Coloring Vertexes**</span></span></span>
 
@@ -205,17 +204,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2bcbce391b5a4e7ead2a9679b216e8a3"><span data-offset-key="2bcbce391b5a4e7ead2a9679b216e8a3:0">Unvisited verts are white, verts whose neighbors are being explored are gray, and verts with no unexplored neighbors are black.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2d94ca5c017d4f229cdef3bb00714d29"><span data-offset-key="2d94ca5c017d4f229cdef3bb00714d29:0">**Keeping Track of What We Need to Explore**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="935de5dc4ddd4256aa0395a6d4422076"><span data-offset-key="935de5dc4ddd4256aa0395a6d4422076:0">In a BFS, it's useful to track which nodes we still need to explore. For example, in the diagram above, when we get to node 2, we know that we also need to explore nodes 3 and 4.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32eaacc55ed7439cad0ae7127f43b49c"><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:0">We can track that by adding neighbors to a </span><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:1">*queue*</span><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:2"> (which remember is first in, first out), and then explore the verts in the queue one by one.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32eaacc55ed7439cad0ae7127f43b49c"><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:0">We can track that by adding neighbors to a </span><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:1">_queue_</span><span data-offset-key="32eaacc55ed7439cad0ae7127f43b49c:2"> (which remember is first in, first out), and then explore the verts in the queue one by one.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="c0c07fb5171f46ef87b1026903e47f91"><span data-offset-key="c0c07fb5171f46ef87b1026903e47f91:0">**Follow Along**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="02c35503fad04fe1a901771f7bab3ae6"><span data-offset-key="02c35503fad04fe1a901771f7bab3ae6:0">**Pseudo-code for BFS**</span></span></span>
 
@@ -231,11 +230,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abc7c8409dde40918ce9b9d99ecf5951"><span data-offset-key="abc7c8409dde40918ce9b9d99ecf5951:0">Then, we loop through each of that vert's neighbors and:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f52a17e30e4416b915d74b7f579e24c"><span data-offset-key="1f52a17e30e4416b915d74b7f579e24c:0">We check if it is unvisited (the color white).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f52a17e30e4416b915d74b7f579e24c"><span data-offset-key="1f52a17e30e4416b915d74b7f579e24c:0">We check if it is unvisited (the color white).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b0f40ea1890a46bf952112ce77f5ba76"><span data-offset-key="b0f40ea1890a46bf952112ce77f5ba76:0">If it is unvisited, we mark it as gray (meaning we will explore its neighbors).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b0f40ea1890a46bf952112ce77f5ba76"><span data-offset-key="b0f40ea1890a46bf952112ce77f5ba76:0">If it is unvisited, we mark it as gray (meaning we will explore its neighbors).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7db0d8ebaf8c435f8a873825b62447a5"><span data-offset-key="7db0d8ebaf8c435f8a873825b62447a5:0">We enqueue the vert.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7db0d8ebaf8c435f8a873825b62447a5"><span data-offset-key="7db0d8ebaf8c435f8a873825b62447a5:0">We enqueue the vert.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97f350ddcda443ca8485c6b2366ccb71"><span data-offset-key="97f350ddcda443ca8485c6b2366ccb71:0">Next, we dequeue the current vert we've been exploring and mark that vert as black (marking it as visited).</span></span></span>
 
@@ -255,7 +254,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="11b995f2846345749142cc1f7d7ce728"><span data-offset-key="11b995f2846345749142cc1f7d7ce728:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c21a80350344481f825b29cbf4298005"><span data-offset-key="c21a80350344481f825b29cbf4298005:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://brilliant.org/wiki/breadth-first-search-bfs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e48061264aec40fab6e2ffdac5baf70d"><span data-offset-key="e48061264aec40fab6e2ffdac5baf70d:0">https://brilliant.org/wiki/breadth-first-search-bfs/</span></span></a><span data-key="856a0b2844cf4cffba7c47366a2c3338"><span data-offset-key="856a0b2844cf4cffba7c47366a2c3338:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c21a80350344481f825b29cbf4298005"><span data-offset-key="c21a80350344481f825b29cbf4298005:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://brilliant.org/wiki/breadth-first-search-bfs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e48061264aec40fab6e2ffdac5baf70d"><span data-offset-key="e48061264aec40fab6e2ffdac5baf70d:0">https://brilliant.org/wiki/breadth-first-search-bfs/</span></span></a><span data-key="856a0b2844cf4cffba7c47366a2c3338"><span data-offset-key="856a0b2844cf4cffba7c47366a2c3338:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="41c47d8cb9d64db4955cfa9c2f21afab"><span data-offset-key="41c47d8cb9d64db4955cfa9c2f21afab:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://brilliant.org/wiki/breadth-first-search-bfs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9e70baa9f0d2417fa83b1102d47015e6"><span data-offset-key="9e70baa9f0d2417fa83b1102d47015e6:0">Breadth-First Search (BFS) | Brilliant Math &amp; Science WikiBreadth-first search (BFS) is an important graph search algorithm that is used to solve many problems including finding the shortest path in a graph and solving puzzle games (such as Rubik&amp;#39;s Cubes). Many problems in computer science can be thought of in terms of graphs.https://brilliant.org/wiki/breadth-first-search-bfs/</span></span><span data-slate-void="true" data-key="a820f13d17034cce889b22c133c47d75"><span><span class="reset-3c756112--frameInlineVoid-73b6a96b" data-key="a820f13d17034cce889b22c133c47d75"><img src="https://brilliant.org/site_media/version-1a4dfc4f1b/images/open-graph/default.png" class="image-67b14f24--image-54d049be" /></span></span></span><span data-key="044a382a2dae4c3385b83f0807888cd2"><span data-offset-key="044a382a2dae4c3385b83f0807888cd2:0"><span data-slate-zero-width="z">​</span></span></span></a><span data-key="d45509bcfe0f43e5b398a1b402540ec4"><span data-offset-key="d45509bcfe0f43e5b398a1b402540ec4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
@@ -263,7 +262,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="2c0d9b2968784d9c925f1157d28051dc"><span data-offset-key="2c0d9b2968784d9c925f1157d28051dc:0">**Overview**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a46cfcc60a6f40819e596ebaefa5b9c5"><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:0">Another method we can use when searching a graph is a </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:1">**depth-first search**</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:2"> (DFS). This searching algorithm </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:3">*"dives"*</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:4"> </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:5">*"down"*</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:6"> the graph as far as it can before backtracking and exploring another branch.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a46cfcc60a6f40819e596ebaefa5b9c5"><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:0">Another method we can use when searching a graph is a </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:1">**depth-first search**</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:2"> (DFS). This searching algorithm </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:3">_"dives"_</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:4"> </span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:5">_"down"_</span><span data-offset-key="a46cfcc60a6f40819e596ebaefa5b9c5:6"> the graph as far as it can before backtracking and exploring another branch.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b0c149826ef5476d954c8e28bc9b974c"><span data-offset-key="b0c149826ef5476d954c8e28bc9b974c:0">The algorithm never attempts to explore a vert it has already explored or is exploring.</span></span></span>
 
@@ -273,25 +272,25 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6715c6fbe7d04a1fb65372a0be45e22e"><span data-offset-key="6715c6fbe7d04a1fb65372a0be45e22e:0">The exact order will vary depending on which branches get taken first and which vertex is the starting vertex.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0b69cb168440489993c56fa04d370687"><span data-offset-key="0b69cb168440489993c56fa04d370687:0">**Applications of DFS**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ca17fb155914947a2dea808fe35ec98"><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:0">DFS is often the preferred method or exploring a graph </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:1">*if we want to ensure we visit every node in the graph*</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:2">. For example, let's say that we have a graph representing all the friendships in the entire world. We want to find a path between two known people, </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:3">`Andy`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:4"> and </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:5">`Sarah`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:6">. If we used a depth-first search in this scenario, we could end up exceptionally far away from </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:7">`Andy`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:8"> while still not finding a path to </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:9">`Sarah`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:10">. Using a DFS, we will eventually find the path, but it won't find the shortest route, and it will also likely take a long time.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ca17fb155914947a2dea808fe35ec98"><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:0">DFS is often the preferred method or exploring a graph </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:1">_if we want to ensure we visit every node in the graph_</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:2">. For example, let's say that we have a graph representing all the friendships in the entire world. We want to find a path between two known people, </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:3">`Andy`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:4"> and </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:5">`Sarah`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:6">. If we used a depth-first search in this scenario, we could end up exceptionally far away from </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:7">`Andy`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:8"> while still not finding a path to </span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:9">`Sarah`</span><span data-offset-key="3ca17fb155914947a2dea808fe35ec98:10">. Using a DFS, we will eventually find the path, but it won't find the shortest route, and it will also likely take a long time.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ac1b7f1e20e4b6eb88bb93e8178d48e"><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:0">So, this is an example of where a DFS </span><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:1">*would not work well*</span><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:2">. What about a genuine use case for DFS. Here are a few examples:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ac1b7f1e20e4b6eb88bb93e8178d48e"><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:0">So, this is an example of where a DFS </span><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:1">_would not work well_</span><span data-offset-key="8ac1b7f1e20e4b6eb88bb93e8178d48e:2">. What about a genuine use case for DFS. Here are a few examples:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e55a83cadff741b99b48fc17978677bc"><span data-offset-key="e55a83cadff741b99b48fc17978677bc:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3039bfddb9f94db988777252f0d85470"><span data-offset-key="3039bfddb9f94db988777252f0d85470:0">Minimum Spanning Trees (Links to an external site.)</span></span></a><span data-key="d6f83a4498a9405e99ae3b67423e94b9"><span data-offset-key="d6f83a4498a9405e99ae3b67423e94b9:0"> of weighted graphs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e55a83cadff741b99b48fc17978677bc"><span data-offset-key="e55a83cadff741b99b48fc17978677bc:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3039bfddb9f94db988777252f0d85470"><span data-offset-key="3039bfddb9f94db988777252f0d85470:0">Minimum Spanning Trees (Links to an external site.)</span></span></a><span data-key="d6f83a4498a9405e99ae3b67423e94b9"><span data-offset-key="d6f83a4498a9405e99ae3b67423e94b9:0"> of weighted graphs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c06df2734744f37adb31ee46887ea01"><span data-offset-key="0c06df2734744f37adb31ee46887ea01:0">Pathfinding</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c06df2734744f37adb31ee46887ea01"><span data-offset-key="0c06df2734744f37adb31ee46887ea01:0">Pathfinding</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b8402a900ce468ba1700f0067291275"><span data-offset-key="9b8402a900ce468ba1700f0067291275:0">Detecting cycles in graphs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b8402a900ce468ba1700f0067291275"><span data-offset-key="9b8402a900ce468ba1700f0067291275:0">Detecting cycles in graphs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1753b33539e44b56920f9f2105da7226"><span data-offset-key="1753b33539e44b56920f9f2105da7226:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Topological_sorting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4922d451047041999fe10f05208d2cb8"><span data-offset-key="4922d451047041999fe10f05208d2cb8:0">Topological sorting (Links to an external site.)</span></span></a><span data-key="ae2da22d226e420488312d9765a5e646"><span data-offset-key="ae2da22d226e420488312d9765a5e646:0">, useful for scheduling sequences of dependent jobs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1753b33539e44b56920f9f2105da7226"><span data-offset-key="1753b33539e44b56920f9f2105da7226:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Topological_sorting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4922d451047041999fe10f05208d2cb8"><span data-offset-key="4922d451047041999fe10f05208d2cb8:0">Topological sorting (Links to an external site.)</span></span></a><span data-key="ae2da22d226e420488312d9765a5e646"><span data-offset-key="ae2da22d226e420488312d9765a5e646:0">, useful for scheduling sequences of dependent jobs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac9866bd0b804615b23d7676ea28c4fc"><span data-offset-key="ac9866bd0b804615b23d7676ea28c4fc:0">Solving and generating mazes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac9866bd0b804615b23d7676ea28c4fc"><span data-offset-key="ac9866bd0b804615b23d7676ea28c4fc:0">Solving and generating mazes</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c60006e875d640f7974e0ebdf44f5f46"><span data-offset-key="c60006e875d640f7974e0ebdf44f5f46:0">**Coloring Vertexes**</span></span></span>
 
@@ -299,7 +298,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6888766364a24e8b829d70e91f4d963d"><span data-offset-key="6888766364a24e8b829d70e91f4d963d:0">Unvisited verts are white, verts whose neighbors are being explored are gray, and verts with no unexplored neighbors are black.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="bda05ccb635c45ff97a85290716ee5cd"><span data-offset-key="bda05ccb635c45ff97a85290716ee5cd:0">**Recursion**</span></span></span>
 
@@ -311,7 +310,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="8c767757562f4170bbff065e6d215081"><span data-offset-key="8c767757562f4170bbff065e6d215081:0">**Follow Along**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7f97607cda9844748d0cdeee4e4cbbf8"><span data-offset-key="7f97607cda9844748d0cdeee4e4cbbf8:0">**Pseudo-code for DFS**</span></span></span>
 
@@ -335,7 +334,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0cb6d2ffa64b486998c0e0ab6314596b"><span data-offset-key="0cb6d2ffa64b486998c0e0ab6314596b:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bea55d14477343eabedcedddd46f11c0"><span data-offset-key="bea55d14477343eabedcedddd46f11c0:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://brilliant.org/wiki/depth-first-search-dfs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="084f38bee26e465b81ca2ef61127a461"><span data-offset-key="084f38bee26e465b81ca2ef61127a461:0">https://brilliant.org/wiki/depth-first-search-dfs/</span></span></a><span data-key="c5b5443f64444ce49023084332e020db"><span data-offset-key="c5b5443f64444ce49023084332e020db:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bea55d14477343eabedcedddd46f11c0"><span data-offset-key="bea55d14477343eabedcedddd46f11c0:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://brilliant.org/wiki/depth-first-search-dfs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="084f38bee26e465b81ca2ef61127a461"><span data-offset-key="084f38bee26e465b81ca2ef61127a461:0">https://brilliant.org/wiki/depth-first-search-dfs/</span></span></a><span data-key="c5b5443f64444ce49023084332e020db"><span data-offset-key="c5b5443f64444ce49023084332e020db:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="cdc8667a1e164a2aa1bc15c5cc9edb2a"><span data-offset-key="cdc8667a1e164a2aa1bc15c5cc9edb2a:0">Objective 03 - Implement a breadth-first search on a graph</span></span></span>
 
@@ -359,11 +358,11 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74e95fb3a1684218a58a54eb968c6443"><span data-offset-key="74e95fb3a1684218a58a54eb968c6443:0">What is time complexity in Big O notation of a breadth-first search on a graph with </span><span data-offset-key="74e95fb3a1684218a58a54eb968c6443:1">`V`</span><span data-offset-key="74e95fb3a1684218a58a54eb968c6443:2"> vertices and </span><span data-offset-key="74e95fb3a1684218a58a54eb968c6443:3">`E`</span><span data-offset-key="74e95fb3a1684218a58a54eb968c6443:4"> edges?</span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="671ccea4971f4d8b97ff0e7b60911f21"><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:0">Which method will find the </span><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:1">***shortest***</span><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:2"> path between a starting point and any other reachable node? A breadth-first search or a depth-first search?</span></span></span>
+2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="671ccea4971f4d8b97ff0e7b60911f21"><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:0">Which method will find the </span><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:1">**_shortest_**</span><span data-offset-key="671ccea4971f4d8b97ff0e7b60911f21:2"> path between a starting point and any other reachable node? A breadth-first search or a depth-first search?</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="950da742d67f49f2aeab63bfec76e5e5"><span data-offset-key="950da742d67f49f2aeab63bfec76e5e5:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aee972c8a4e24a89ae734ffe4b2cbac1"><span data-offset-key="aee972c8a4e24a89ae734ffe4b2cbac1:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7c033bba1ef1461981515df3f9bfe399"><span data-offset-key="7c033bba1ef1461981515df3f9bfe399:0">https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/</span></span></a><span data-key="b34f451c2e3c4271b9fce3b8875119b3"><span data-offset-key="b34f451c2e3c4271b9fce3b8875119b3:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aee972c8a4e24a89ae734ffe4b2cbac1"><span data-offset-key="aee972c8a4e24a89ae734ffe4b2cbac1:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7c033bba1ef1461981515df3f9bfe399"><span data-offset-key="7c033bba1ef1461981515df3f9bfe399:0">https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/</span></span></a><span data-key="b34f451c2e3c4271b9fce3b8875119b3"><span data-offset-key="b34f451c2e3c4271b9fce3b8875119b3:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <a href="d1.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

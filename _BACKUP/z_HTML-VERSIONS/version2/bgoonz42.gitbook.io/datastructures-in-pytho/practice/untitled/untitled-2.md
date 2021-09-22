@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Searching</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Searching</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -169,7 +168,7 @@
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">First Tab</span>
 
-<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect\_search.py</span>
+<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect_search.py</span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Binary Search</span>
 
@@ -181,7 +180,7 @@
 
     from collections import dequefrom collections.abc import Sequence​​def bfs_search_grid(grid: Sequence[Sequence[int]], start: tuple[int, int], goal: tuple[int, int]) -> bool:    """On a grid of 0s and 1s, find if start is connected to goal via a path of 1s."""    rows = range(len(grid))    cols = range(len(grid[0]))    seen = {start}    to_visit = deque([start])    while to_visit:        r, c = to_visit.popleft()        if (r, c) == goal:            return True        adjacent = {(r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)}        for next_node in adjacent - seen:            r1, c1 = next_node            # Using these range objects is a concise alternative to 0 <= r1 < len(graph) and 0 <= c1 < len(graph[0])            if r1 in rows and c1 in cols and grid[r1][c1]:                seen.add(next_node)                to_visit.append(next_node)    return False​
 
-<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect\_search.py</span>
+<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect_search.py</span>
 
     from collections.abc import Callable​​def bisect_search(predicate: Callable[[int], bool], low: int, high: int) -> int:    """Find the lowest int between low and high where predicate(int) is True."""    while low < high:        mid = low + (high - low) // 2  # Avoids integer overflow compared to mid = (low + high) // 2        if predicate(mid):            high = mid        else:            low = mid + 1    return low​
 

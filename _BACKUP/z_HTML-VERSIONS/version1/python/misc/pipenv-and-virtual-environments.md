@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Pipenv & Virtual Environments</span>
-==================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Pipenv & Virtual Environments</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -183,7 +182,7 @@
 
     >>> pythonTraceback (most recent call last):  File "<stdin>", line 1, in <module>NameError: name 'python' is not defined
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59e32e341b6c4b6288a1580f5d8bcc01"><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:0">It’s because this command is intended to be run in a </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:1">*shell*</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:2"> (also called a </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:3">*terminal*</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:4"> or </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:5">*console*</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:6">). See the Python for Beginners </span></span><a href="https://opentechschool.github.io/python-beginners/en/getting_started.html#what-is-python-exactly" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e878067350d04e4ab52c84da7b56c087"><span data-offset-key="e878067350d04e4ab52c84da7b56c087:0">getting started tutorial</span></span></a><span data-key="b208fcc0a7e64780b2436984bd497090"><span data-offset-key="b208fcc0a7e64780b2436984bd497090:0"> for an introduction to using your operating system’s shell and interacting with Python.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59e32e341b6c4b6288a1580f5d8bcc01"><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:0">It’s because this command is intended to be run in a </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:1">_shell_</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:2"> (also called a </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:3">_terminal_</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:4"> or </span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:5">_console_</span><span data-offset-key="59e32e341b6c4b6288a1580f5d8bcc01:6">). See the Python for Beginners </span></span><a href="https://opentechschool.github.io/python-beginners/en/getting_started.html#what-is-python-exactly" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e878067350d04e4ab52c84da7b56c087"><span data-offset-key="e878067350d04e4ab52c84da7b56c087:0">getting started tutorial</span></span></a><span data-key="b208fcc0a7e64780b2436984bd497090"><span data-offset-key="b208fcc0a7e64780b2436984bd497090:0"> for an introduction to using your operating system’s shell and interacting with Python.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="093af00603a4435b82698416a50582df"><span data-offset-key="093af00603a4435b82698416a50582df:0">Additionally, you’ll need to make sure you have </span></span><a href="https://pypi.org/project/pip/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="49377e2df2cb4449b1c6cfdb2cb8a055"><span data-offset-key="49377e2df2cb4449b1c6cfdb2cb8a055:0">pip</span></span></a><span data-key="f8b9993d1ac44e399cd8bed4f086ebf7"><span data-offset-key="f8b9993d1ac44e399cd8bed4f086ebf7:0"> available. You can check this by running:</span></span></span>
 
@@ -277,7 +276,7 @@
 
     $ source venv/bin/activate
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1793ccd22e74abd819df6976b07a1cc"><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:0">The name of the current virtual environment will now appear on the left of the prompt (e.g. </span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:1">`(venv)Your-Computer:project_folder                                       UserName$`</span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:2">) to let you know that it’s active. From now on, any package that you install using pip will be placed in the </span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:3">`venv`</span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:4"> folder, isolated from the global Python installation.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1793ccd22e74abd819df6976b07a1cc"><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:0">The name of the current virtual environment will now appear on the left of the prompt (e.g. </span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:1">`(venv)Your-Computer:project_folder UserName$`</span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:2">) to let you know that it’s active. From now on, any package that you install using pip will be placed in the </span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:3">`venv`</span><span data-offset-key="c1793ccd22e74abd819df6976b07a1cc:4"> folder, isolated from the global Python installation.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ab0cae3aecd24eddbdcdc8145d586c4e"><span data-offset-key="ab0cae3aecd24eddbdcdc8145d586c4e:0">For Windows, the same command mentioned in step 1 can be used to create a virtual environment. However, activating the environment requires a slightly different command.</span></span></span>
 
@@ -335,9 +334,9 @@
 
     $ pip install virtualenvwrapper-win
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bab220ce24d744398e717fbde2ebac91"><span data-offset-key="bab220ce24d744398e717fbde2ebac91:0">In Windows, the default path for WORKON\_HOME is %USERPROFILE%\\Envs</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bab220ce24d744398e717fbde2ebac91"><span data-offset-key="bab220ce24d744398e717fbde2ebac91:0">In Windows, the default path for WORKON_HOME is %USERPROFILE%\\Envs</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3e649dbc10034b8782812974af46f1b9"><span data-offset-key="3e649dbc10034b8782812974af46f1b9:0">Basic Usage</span></span></span>
 
@@ -367,7 +366,7 @@
 
     $ rmvirtualenv venv
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1b1b4915d9ea4a71bb9a787d4ef914c3"><span data-offset-key="1b1b4915d9ea4a71bb9a787d4ef914c3:0">Other useful commands</span></span></span>
 

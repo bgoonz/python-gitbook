@@ -122,14 +122,13 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">String-Methods</span>
-===================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">String-Methods</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
-    def initials(phrase):    words = phrase.split()    result = ""    for word in words:        result += word[0].upper()    return result​print(initials("Universal Serial Bus")) # Should be: USBprint(initials("local area network")) # Should be: LANprint(initials("Operating system")) # Should be: OS@bgoonz 
+    def initials(phrase):    words = phrase.split()    result = ""    for word in words:        result += word[0].upper()    return result​print(initials("Universal Serial Bus")) # Should be: USBprint(initials("local area network")) # Should be: LANprint(initials("Operating system")) # Should be: OS@bgoonz
 
 <a href="../untitled.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

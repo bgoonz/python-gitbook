@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Unsorted Examples</span>
-======================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Unsorted Examples</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -171,7 +170,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="240b3af7142f4dd1ac0cc27e59c4abe8"><span data-offset-key="240b3af7142f4dd1ac0cc27e59c4abe8:0">Assume all nodes in the linked list are 0-indexed.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f51a9e786f1445c48e8567824dcb0514"><span data-offset-key="f51a9e786f1445c48e8567824dcb0514:0">*Implement these functions in your linked list class:*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f51a9e786f1445c48e8567824dcb0514"><span data-offset-key="f51a9e786f1445c48e8567824dcb0514:0">_Implement these functions in your linked list class:_</span></span></span>
 
 <a href="https://leetcode.com/problems/design-linked-list" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
@@ -213,13 +212,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e45082700def4fcd86a1f104aacc6eb5"><span data-offset-key="e45082700def4fcd86a1f104aacc6eb5:0">If the character is present in the list, then we simply increment the count variable by 1 otherwise continue to the loop without incrementing the count variable.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed0c65fa0f8f4ad28eb7d72ab3ce8ff0"><span data-offset-key="ed0c65fa0f8f4ad28eb7d72ab3ce8ff0:0">***Read =&gt;*** </span></span><a href="https://codezup.com//check-number-greater-than-numbers-list-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2f9d13a487344a138382e39395ad88df"><span data-offset-key="2f9d13a487344a138382e39395ad88df:0"><strong><em>Check if a number is greater than all those numbers in the list</em></strong></span></span></a><span data-key="87d474f564e04cafb03760019ed1da06"><span data-offset-key="87d474f564e04cafb03760019ed1da06:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed0c65fa0f8f4ad28eb7d72ab3ce8ff0"><span data-offset-key="ed0c65fa0f8f4ad28eb7d72ab3ce8ff0:0">**_Read =&gt;_** </span></span><a href="https://codezup.com//check-number-greater-than-numbers-list-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2f9d13a487344a138382e39395ad88df"><span data-offset-key="2f9d13a487344a138382e39395ad88df:0"><strong><em>Check if a number is greater than all those numbers in the list</em></strong></span></span></a><span data-key="87d474f564e04cafb03760019ed1da06"><span data-offset-key="87d474f564e04cafb03760019ed1da06:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="652df03dde344de49737cf4a20643ba3"><span data-offset-key="652df03dde344de49737cf4a20643ba3:0">And at last, after traversing through the string, return the count variable back to the function call.</span></span></span>
 
     for c in sentence:    if c in ['a', 'e', 'i', 'o', 'u']:        count += 1return count
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0e48ff2f4a0e45c59ed3cf0f65ab6f9c"><span data-offset-key="0e48ff2f4a0e45c59ed3cf0f65ab6f9c:0">Define the Main Condition</span></span></span>
 
@@ -257,7 +256,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4805008b3eb244f3b6023b75e7a4ec4d"><span data-offset-key="4805008b3eb244f3b6023b75e7a4ec4d:0">So the logic behind converting is that first in each iteration, we need to get the last digit of Number either 1 or 0 and then multiply that last digit with the power of 2 and counter i.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0951fb1874d8449980eee284d7f3f0ef"><span data-offset-key="0951fb1874d8449980eee284d7f3f0ef:0">***Read =&gt;*** </span></span><a href="https://codezup.com/python-program-calculate-lcm-numbers/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c805bd0acaba45a39f92215d46f08699"><span data-offset-key="c805bd0acaba45a39f92215d46f08699:0"><em><strong>Python Program to Calculate LCM of Two Numbers</strong></em></span></span></a><span data-key="05fb143d16d0417b965dae3734ce4851"><span data-offset-key="05fb143d16d0417b965dae3734ce4851:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0951fb1874d8449980eee284d7f3f0ef"><span data-offset-key="0951fb1874d8449980eee284d7f3f0ef:0">**_Read =&gt;_** </span></span><a href="https://codezup.com/python-program-calculate-lcm-numbers/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c805bd0acaba45a39f92215d46f08699"><span data-offset-key="c805bd0acaba45a39f92215d46f08699:0"><em><strong>Python Program to Calculate LCM of Two Numbers</strong></em></span></span></a><span data-key="05fb143d16d0417b965dae3734ce4851"><span data-offset-key="05fb143d16d0417b965dae3734ce4851:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="11213f13a639448abb0dc5189f95e8d6"><span data-offset-key="11213f13a639448abb0dc5189f95e8d6:0">And at last, we divide the number by 10 and assign the same number back to binary to reduce it to 0.</span></span></span>
 
@@ -267,7 +266,7 @@
 
         print('Decimal equivalent of {} is {}'.format(binary1, decimal))
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="de8788e2f08f4189af3083f3d3adf557"><span data-offset-key="de8788e2f08f4189af3083f3d3adf557:0">Define the Main Method</span></span></span>
 
@@ -293,7 +292,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1e3289b8f7f143648a7664d263d5193a"><span data-offset-key="1e3289b8f7f143648a7664d263d5193a:0">Fibonacci Series With Recursion</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9cc6040702242acb4d098c15b55f472"><span data-offset-key="d9cc6040702242acb4d098c15b55f472:0">Let’s create a new Function named fibonacci\_with\_recursion() which is going to find the Fibonacci Series till the n-th term by calling it recursively.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9cc6040702242acb4d098c15b55f472"><span data-offset-key="d9cc6040702242acb4d098c15b55f472:0">Let’s create a new Function named fibonacci_with_recursion() which is going to find the Fibonacci Series till the n-th term by calling it recursively.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cdda027e06414c9aa2bbc1f47ea573f3"><span data-offset-key="cdda027e06414c9aa2bbc1f47ea573f3:0">So the base condition will be if the number is less than or equal to 1, then simply return the number.</span></span></span>
 
@@ -301,13 +300,13 @@
 
     def fibonacci_with_recursion(number):    if number <= 1:        return number    else:        return (fibonacci_with_recursion(number - 1) + fibonacci_with_recursion(number - 2))
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6be1faadc6344964972aeeb38c91d74f"><span data-offset-key="6be1faadc6344964972aeeb38c91d74f:0">Fibonacci Series Without Recursion</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2730a8cecc064d65949f3007cc1b967e"><span data-offset-key="2730a8cecc064d65949f3007cc1b967e:0">Let’s create a new Function named fibonacci\_without\_recursion() which is going to find the Fibonacci Series till the n-th term by using FOR Loops.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2730a8cecc064d65949f3007cc1b967e"><span data-offset-key="2730a8cecc064d65949f3007cc1b967e:0">Let’s create a new Function named fibonacci_without_recursion() which is going to find the Fibonacci Series till the n-th term by using FOR Loops.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d03ac01388a4edf8f28921b8e7f243d"><span data-offset-key="4d03ac01388a4edf8f28921b8e7f243d:0">***Read =&gt;*** </span></span><a href="https://codezup.com/program-check-whether-number-prime-not-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5685199b44164eab8ae787d1bdb4b957"><span data-offset-key="5685199b44164eab8ae787d1bdb4b957:0"><em><strong>Program to check whether the Number is Prime or Not</strong></em></span></span></a><span data-key="492955934b294c039188ab68cb657a21"><span data-offset-key="492955934b294c039188ab68cb657a21:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d03ac01388a4edf8f28921b8e7f243d"><span data-offset-key="4d03ac01388a4edf8f28921b8e7f243d:0">**_Read =&gt;_** </span></span><a href="https://codezup.com/program-check-whether-number-prime-not-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5685199b44164eab8ae787d1bdb4b957"><span data-offset-key="5685199b44164eab8ae787d1bdb4b957:0"><em><strong>Program to check whether the Number is Prime or Not</strong></em></span></span></a><span data-key="492955934b294c039188ab68cb657a21"><span data-offset-key="492955934b294c039188ab68cb657a21:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06649df09d6c44d9b673d8446a1cf3a4"><span data-offset-key="06649df09d6c44d9b673d8446a1cf3a4:0">So, the base condition for this function is if the number is equal to 0, then we return output as 0 because of how we calculate the Series if the number is 0.</span></span></span>
 
@@ -323,7 +322,7 @@
 
     def fibonacci_without_recursion(number):    if number == 0: return 0    fibonacci0, fibonacci1 = 0, 1    print(fibonacci0, end = ' ')    for i in range(2, number + 1):        print(fibonacci1, end = ' ')        fibonacci1, fibonacci0 = fibonacci0 + fibonacci1, fibonacci1    return fibonacci1
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ea4d9e42d4af4d169646b17e9754bdc4"><span data-offset-key="ea4d9e42d4af4d169646b17e9754bdc4:0">Define the Main Method</span></span></span>
 

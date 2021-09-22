@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Queues and Stacks</span>
-======================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Queues and Stacks</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -177,7 +176,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="29232dc6d1034541b231c68cb632c250"><span data-offset-key="29232dc6d1034541b231c68cb632c250:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="61d4a99fe7554e7da5f49ae7a803bc73"><span data-offset-key="61d4a99fe7554e7da5f49ae7a803bc73:0">Time and Space Complexity</span></span></span>
 
@@ -197,19 +196,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="befc232f77914c8fa943b73705f18cc7"><span data-offset-key="befc232f77914c8fa943b73705f18cc7:0">The space complexity of a queue is linear (</span><span data-offset-key="befc232f77914c8fa943b73705f18cc7:1">`O(n)`</span><span data-offset-key="befc232f77914c8fa943b73705f18cc7:2">). Each item in the queue will take up space in memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b9d5e81fd60b4fbb8650a8067a6fdd0d"><span data-offset-key="b9d5e81fd60b4fbb8650a8067a6fdd0d:0">Strengths</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09746f7b227944eeaa33330e9a8929a9"><span data-offset-key="09746f7b227944eeaa33330e9a8929a9:0">The primary strength of a queue is that all of its operations are fast (take </span><span data-offset-key="09746f7b227944eeaa33330e9a8929a9:1">`O(1)`</span><span data-offset-key="09746f7b227944eeaa33330e9a8929a9:2"> time).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fed5f28a2a204646a40c24f492dbd380"><span data-offset-key="fed5f28a2a204646a40c24f492dbd380:0">Weaknesses</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2452aeb78164498686f6c0dc35d8b391"><span data-offset-key="2452aeb78164498686f6c0dc35d8b391:0">There are no weaknesses in this data structure. The reason is that it is a very targeted data structure designed to do a few things well.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3bc2f2e3be2f48e0ace37d28f0ca0dc6"><span data-offset-key="3bc2f2e3be2f48e0ace37d28f0ca0dc6:0">When are queues useful?</span></span></span>
 
@@ -223,7 +222,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="53cc6f36d6dd461c84cdc9354f436d13"><span data-offset-key="53cc6f36d6dd461c84cdc9354f436d13:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a0f46423de24c82ad375123fd9bf711"><span data-offset-key="6a0f46423de24c82ad375123fd9bf711:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/queue-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a6df6127032643f1a64e7961a3bf9318"><span data-offset-key="a6df6127032643f1a64e7961a3bf9318:0">https://www.geeksforgeeks.org/queue-data-structure/ (Links to an external site.)</span></span></a><span data-key="0177496a4b1a4eb288592f3cc98a9218"><span data-offset-key="0177496a4b1a4eb288592f3cc98a9218:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a0f46423de24c82ad375123fd9bf711"><span data-offset-key="6a0f46423de24c82ad375123fd9bf711:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/queue-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a6df6127032643f1a64e7961a3bf9318"><span data-offset-key="a6df6127032643f1a64e7961a3bf9318:0">https://www.geeksforgeeks.org/queue-data-structure/ (Links to an external site.)</span></span></a><span data-key="0177496a4b1a4eb288592f3cc98a9218"><span data-offset-key="0177496a4b1a4eb288592f3cc98a9218:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 
@@ -239,7 +238,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b5d10f6b78e24c2c93549d20c15016c4"><span data-offset-key="b5d10f6b78e24c2c93549d20c15016c4:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="83d581fb93534664a0ff8bbcdb2a04e9"><span data-offset-key="83d581fb93534664a0ff8bbcdb2a04e9:0">Time and Space Complexity</span></span></span>
 
@@ -259,19 +258,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dedee1f8aa514fac94479413bbfd718e"><span data-offset-key="dedee1f8aa514fac94479413bbfd718e:0">The space complexity of a stack is linear (</span><span data-offset-key="dedee1f8aa514fac94479413bbfd718e:1">`O(n)`</span><span data-offset-key="dedee1f8aa514fac94479413bbfd718e:2">). Each item in the stack will take up space in memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="29990eaaa3514da68a5bd8daf244ce0a"><span data-offset-key="29990eaaa3514da68a5bd8daf244ce0a:0">Strengths</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91be96a748be4715b465f22e6afc151f"><span data-offset-key="91be96a748be4715b465f22e6afc151f:0">The primary strength of a stack is that all of its operations are fast (take </span><span data-offset-key="91be96a748be4715b465f22e6afc151f:1">`O(1)`</span><span data-offset-key="91be96a748be4715b465f22e6afc151f:2"> time).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="04fd94f019c14a16bc41fd5b66a959dc"><span data-offset-key="04fd94f019c14a16bc41fd5b66a959dc:0">Weaknesses</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a0b2d12ff5849e3a96904f5b2fead15"><span data-offset-key="9a0b2d12ff5849e3a96904f5b2fead15:0">There are no weaknesses in this data structure. The reason is that it is a very targeted data structure designed to do a few things well.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="82e9317964e446e19d1cee861abeb0c1"><span data-offset-key="82e9317964e446e19d1cee861abeb0c1:0">When are stacks useful?</span></span></span>
 
@@ -287,7 +286,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="e8385e089931445fb0359b17700bf013"><span data-offset-key="e8385e089931445fb0359b17700bf013:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da28b6c64bc3426ab90fd53d61621dc2"><span data-offset-key="da28b6c64bc3426ab90fd53d61621dc2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/stack-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6bf876558228436fad88cf57557d2a1b"><span data-offset-key="6bf876558228436fad88cf57557d2a1b:0">https://www.geeksforgeeks.org/stack-data-structure/ (Links to an external site.)</span></span></a><span data-key="7dc0a20b3ff04a2598e0dbd08e33e67a"><span data-offset-key="7dc0a20b3ff04a2598e0dbd08e33e67a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da28b6c64bc3426ab90fd53d61621dc2"><span data-offset-key="da28b6c64bc3426ab90fd53d61621dc2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/stack-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6bf876558228436fad88cf57557d2a1b"><span data-offset-key="6bf876558228436fad88cf57557d2a1b:0">https://www.geeksforgeeks.org/stack-data-structure/ (Links to an external site.)</span></span></a><span data-key="7dc0a20b3ff04a2598e0dbd08e33e67a"><span data-offset-key="7dc0a20b3ff04a2598e0dbd08e33e67a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f955c6060fbf4ac49e4ec2a3082511b3"><span data-offset-key="f955c6060fbf4ac49e4ec2a3082511b3:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

@@ -130,8 +130,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D4- Module 04 - Tree Traversal</span>
-===================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D4- Module 04 - Tree Traversal</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -165,7 +164,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="afd1551859604e2eb70db5a63bc6adfc"><span data-offset-key="afd1551859604e2eb70db5a63bc6adfc:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="589790e7df2f4e02a76d1e675c009ad3"><span data-offset-key="589790e7df2f4e02a76d1e675c009ad3:0">Depth-First Inorder Traversal</span></span></span>
 
@@ -185,7 +184,7 @@
 
     class TreeNode:     def __init__(self, val=0, left=None, right=None):         self.val = val         self.left = left         self.right = right​def helper(root, res):    if root is None:        return    helper(root.left, res)    res.append(root.val)    helper(root.right, res)​def inorder_traversal(root):    result = []    helper(root, result)    return result
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d9324c54c6074128a9525bb8a89933ec"><span data-offset-key="d9324c54c6074128a9525bb8a89933ec:0">Depth-First Preorder Traversal</span></span></span>
 
@@ -207,7 +206,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc4ce02a912c4427a9c416398daa30c4"><span data-offset-key="dc4ce02a912c4427a9c416398daa30c4:0">Notice that the only difference between the code above for preorder traversal and the example for inorder traversal is that in the preorder traversal code, we append the node's value to the result before we recurse to the left.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="cd4a7ef56b6c4ce885afc32063caf846"><span data-offset-key="cd4a7ef56b6c4ce885afc32063caf846:0">Depth-First Postorder Traversal</span></span></span>
 
@@ -229,7 +228,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="332e4338fa7149b3aa6c419c750ef70b"><span data-offset-key="332e4338fa7149b3aa6c419c750ef70b:0">Notice that the only difference between the code above for postorder traversal and the other examples is that in this version, we append the node's value to the result only after we've already recursed to the left and right subtrees.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b54881ea070443e8b6ea01fafdf7a61b"><span data-offset-key="b54881ea070443e8b6ea01fafdf7a61b:0">Breadth-First (Level Order) Traversal</span></span></span>
 
@@ -249,15 +248,15 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="4397a48c9a1246c7be97bf31f9fe23a6"><span data-offset-key="4397a48c9a1246c7be97bf31f9fe23a6:0">Challenge</span></span></span>
 
-1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b53f8eb7d1e94613b2d86fb0d94f92d9"><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:0">What data structure could you use to write an </span><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:1">*iterative*</span><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:2"> depth-first traversal method?</span></span></span>
+1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b53f8eb7d1e94613b2d86fb0d94f92d9"><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:0">What data structure could you use to write an </span><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:1">_iterative_</span><span data-offset-key="b53f8eb7d1e94613b2d86fb0d94f92d9:2"> depth-first traversal method?</span></span></span>
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d073ca896cc455ab114ad56f0284388"><span data-offset-key="1d073ca896cc455ab114ad56f0284388:0">In your own words, explain how a depth-first traversal and a breadth-first traversal are different?</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="542830956eb543afa93cc3eb246214c8"><span data-offset-key="542830956eb543afa93cc3eb246214c8:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebf7f0cae897470f91538375ad00d928"><span data-offset-key="ebf7f0cae897470f91538375ad00d928:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="aaaadf5c980e43a09fc31a623dba335d"><span data-offset-key="aaaadf5c980e43a09fc31a623dba335d:0">https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/ (Links to an external site.)</span></span></a><span data-key="a7af38802a1045c99e431d89a1bebf7e"><span data-offset-key="a7af38802a1045c99e431d89a1bebf7e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebf7f0cae897470f91538375ad00d928"><span data-offset-key="ebf7f0cae897470f91538375ad00d928:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="aaaadf5c980e43a09fc31a623dba335d"><span data-offset-key="aaaadf5c980e43a09fc31a623dba335d:0">https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/ (Links to an external site.)</span></span></a><span data-key="a7af38802a1045c99e431d89a1bebf7e"><span data-offset-key="a7af38802a1045c99e431d89a1bebf7e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d5f583cbf3e4d5e84fb5880d3d1078e"><span data-offset-key="4d5f583cbf3e4d5e84fb5880d3d1078e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/level-order-tree-traversal/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9157419cd79a41fbbba49ddf703d6196"><span data-offset-key="9157419cd79a41fbbba49ddf703d6196:0">https://www.geeksforgeeks.org/level-order-tree-traversal/ (Links to an external site.)</span></span></a><span data-key="07e6c95a6fd5456a8d01aafe9e0796ee"><span data-offset-key="07e6c95a6fd5456a8d01aafe9e0796ee:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d5f583cbf3e4d5e84fb5880d3d1078e"><span data-offset-key="4d5f583cbf3e4d5e84fb5880d3d1078e:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/level-order-tree-traversal/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9157419cd79a41fbbba49ddf703d6196"><span data-offset-key="9157419cd79a41fbbba49ddf703d6196:0">https://www.geeksforgeeks.org/level-order-tree-traversal/ (Links to an external site.)</span></span></a><span data-key="07e6c95a6fd5456a8d01aafe9e0796ee"><span data-offset-key="07e6c95a6fd5456a8d01aafe9e0796ee:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 

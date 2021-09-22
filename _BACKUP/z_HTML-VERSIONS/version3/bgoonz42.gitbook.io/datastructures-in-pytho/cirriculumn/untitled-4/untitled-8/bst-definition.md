@@ -160,8 +160,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Definition:</span>
-====================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">BST Definition:</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -171,9 +170,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ccc6bd615f714dc38e758b7839dbbb10"><span data-offset-key="ccc6bd615f714dc38e758b7839dbbb10:0">Definition</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d585244a2c584deebc8e71711a1abd14"><span data-offset-key="d585244a2c584deebc8e71711a1abd14:0">A </span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:1">*binary search tree*</span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:2"> (BST) is a </span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:3">*binary tree*</span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:4"> where every node in the left subtree is less than the root, and every node in the right subtree is of a value greater than the root. The properties of a binary search tree are recursive: if we consider any node as a “root,” these properties will remain true.</span></span><span data-slate-void="true" data-key="b01c334dc5764e27b56073614cfaeff1"><span class="reset-3c756112--frameInlineVoid-73b6a96b" data-key="b01c334dc5764e27b56073614cfaeff1"><img src="https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/bsttreetraversal.png" class="image-67b14f24--image-54d049be" /></span></span><span data-key="221c0724f17e4254b5c7a61f9ade6e3e"><span data-offset-key="221c0724f17e4254b5c7a61f9ade6e3e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d585244a2c584deebc8e71711a1abd14"><span data-offset-key="d585244a2c584deebc8e71711a1abd14:0">A </span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:1">_binary search tree_</span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:2"> (BST) is a </span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:3">_binary tree_</span><span data-offset-key="d585244a2c584deebc8e71711a1abd14:4"> where every node in the left subtree is less than the root, and every node in the right subtree is of a value greater than the root. The properties of a binary search tree are recursive: if we consider any node as a “root,” these properties will remain true.</span></span><span data-slate-void="true" data-key="b01c334dc5764e27b56073614cfaeff1"><span class="reset-3c756112--frameInlineVoid-73b6a96b" data-key="b01c334dc5764e27b56073614cfaeff1"><img src="https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/bsttreetraversal.png" class="image-67b14f24--image-54d049be" /></span></span><span data-key="221c0724f17e4254b5c7a61f9ade6e3e"><span data-offset-key="221c0724f17e4254b5c7a61f9ade6e3e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="591274dafbe64ea98109a8ac0d3d8f3a"><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:0">Due to the way nodes in a binary search tree are ordered, an </span><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:1">*in-order traversal*</span><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:2"> (left node, then root node, then right node) will always produce a sequence of values in increasing numerical order.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="591274dafbe64ea98109a8ac0d3d8f3a"><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:0">Due to the way nodes in a binary search tree are ordered, an </span><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:1">_in-order traversal_</span><span data-offset-key="591274dafbe64ea98109a8ac0d3d8f3a:2"> (left node, then root node, then right node) will always produce a sequence of values in increasing numerical order.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="0afe572c09254890925232cbd331cc77"><span data-offset-key="0afe572c09254890925232cbd331cc77:0">Searching</span></span></span>
 
@@ -181,7 +180,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="734bb067d9a64ad48a2f97b507eeeaa7"><span data-offset-key="734bb067d9a64ad48a2f97b507eeeaa7:0">Here is how we search in a binary search tree:</span></span></span>
 
-1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd957c8498f044fc936573285aea287f"><span data-offset-key="cd957c8498f044fc936573285aea287f:0">Begin at the tree’s </span><span data-offset-key="cd957c8498f044fc936573285aea287f:1">*root node*</span></span></span>
+1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd957c8498f044fc936573285aea287f"><span data-offset-key="cd957c8498f044fc936573285aea287f:0">Begin at the tree’s </span><span data-offset-key="cd957c8498f044fc936573285aea287f:1">_root node_</span></span></span>
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cc1da55e29b94ab0bf6bd3d3ac6cbfb7"><span data-offset-key="cc1da55e29b94ab0bf6bd3d3ac6cbfb7:0">If the value is smaller than the current node, move left</span></span></span>
 
@@ -191,7 +190,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="def1ae903cee4ea49cd54c3fed220688"><span data-offset-key="def1ae903cee4ea49cd54c3fed220688:0">Inserting</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60624cfd62954de39dcd075016c8b367"><span data-offset-key="60624cfd62954de39dcd075016c8b367:0">New nodes in a binary search tree are always added at a </span><span data-offset-key="60624cfd62954de39dcd075016c8b367:1">*leaf*</span><span data-offset-key="60624cfd62954de39dcd075016c8b367:2"> position. Performing a search can easily find the position for a new node.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60624cfd62954de39dcd075016c8b367"><span data-offset-key="60624cfd62954de39dcd075016c8b367:0">New nodes in a binary search tree are always added at a </span><span data-offset-key="60624cfd62954de39dcd075016c8b367:1">_leaf_</span><span data-offset-key="60624cfd62954de39dcd075016c8b367:2"> position. Performing a search can easily find the position for a new node.</span></span></span>
 
 <figure><img src="https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/insert.png" class="image-52799b3c" /></figure>
 
@@ -207,7 +206,7 @@
 
 <figure><img src="https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/onechildremove.png" class="image-52799b3c" /></figure>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28706d5c332c421e854dfa3b8bb691d7"><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:0">If the node has two children, we must first find the </span><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:1">*In-Order Predecessor*</span><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:2"> (IOP): the largest node in our node’s left subtree. The IOP is always a leaf node, and can be found by starting at the left subtree’s root and moving right. We can then swap the node being removed with its IOP and delete it, as it is now a leaf.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28706d5c332c421e854dfa3b8bb691d7"><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:0">If the node has two children, we must first find the </span><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:1">_In-Order Predecessor_</span><span data-offset-key="28706d5c332c421e854dfa3b8bb691d7:2"> (IOP): the largest node in our node’s left subtree. The IOP is always a leaf node, and can be found by starting at the left subtree’s root and moving right. We can then swap the node being removed with its IOP and delete it, as it is now a leaf.</span></span></span>
 
 <figure><img src="https://courses.engr.illinois.edu/cs225/sp2021/assets/notes/bst/remove2child.png" class="image-52799b3c" /></figure>
 

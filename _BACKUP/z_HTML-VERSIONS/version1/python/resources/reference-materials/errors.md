@@ -158,14 +158,13 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Errors</span>
-===========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Errors</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70aaafe554b3444584ce3ebfba22ebbe"><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:0">Until now error messages haven't been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: </span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:1">*syntax errors*</span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:2"> and </span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:3">*exceptions*</span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:4">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70aaafe554b3444584ce3ebfba22ebbe"><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:0">Until now error messages haven't been more than mentioned, but if you have tried out the examples you have probably seen some. There are (at least) two distinguishable kinds of errors: </span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:1">_syntax errors_</span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:2"> and </span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:3">_exceptions_</span><span data-offset-key="70aaafe554b3444584ce3ebfba22ebbe:4">.</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="aadaf81cdd454ae68b4820e90d794caa"><span data-offset-key="aadaf81cdd454ae68b4820e90d794caa:0">Syntax Errors</span></span></span>
 
@@ -173,13 +172,13 @@
 
 > > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="08a0672506a24f01a1e0e24865e6ccbd"><span data-offset-key="08a0672506a24f01a1e0e24865e6ccbd:0">while True print('Hello world') File "", line 1 while True print('Hello world') ^ SyntaxError: invalid syntax</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3911c8d361ab4379a23d10e4122791b1"><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:0">The parser repeats the offending line and displays a little 'arrow' pointing at the earliest point in the line where the error was detected. The error is caused by (or at least detected at) the token </span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:1">*preceding*</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:2"> the arrow: in the example, the error is detected at the function print, since a colon (</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:3">`':'`</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:4">) is missing before it. File name and line number are printed so you know where to look in case the input came from a script.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3911c8d361ab4379a23d10e4122791b1"><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:0">The parser repeats the offending line and displays a little 'arrow' pointing at the earliest point in the line where the error was detected. The error is caused by (or at least detected at) the token </span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:1">_preceding_</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:2"> the arrow: in the example, the error is detected at the function print, since a colon (</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:3">`':'`</span><span data-offset-key="3911c8d361ab4379a23d10e4122791b1:4">) is missing before it. File name and line number are printed so you know where to look in case the input came from a script.</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="42ef3c7e206e4354b8d3c7cf409ca829"><span data-offset-key="42ef3c7e206e4354b8d3c7cf409ca829:0">Exceptions</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c97a8884b4d44fddbc04f84ca9579d12"><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:0">Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it. Errors detected during execution are called </span><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:1">*exceptions*</span><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:2"> and are not unconditionally fatal: you will soon learn how to handle them in Python programs. Most exceptions are not handled by programs, however, and result in error messages as shown here:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c97a8884b4d44fddbc04f84ca9579d12"><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:0">Even if a statement or expression is syntactically correct, it may cause an error when an attempt is made to execute it. Errors detected during execution are called </span><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:1">_exceptions_</span><span data-offset-key="c97a8884b4d44fddbc04f84ca9579d12:2"> and are not unconditionally fatal: you will soon learn how to handle them in Python programs. Most exceptions are not handled by programs, however, and result in error messages as shown here:</span></span></span>
 
-> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c53eda942f904c0092890f931f5312de"><span data-offset-key="c53eda942f904c0092890f931f5312de:0">10 \_(1/0) Traceback (most recent call last): File "", line 1, in ZeroDivisionError: division by zero 4 + spam\_3 Traceback (most recent call last): File "", line 1, in NameError: name 'spam' is not defined '2' + 2 Traceback (most recent call last): File "", line 1, in TypeError: can only concatenate str (not "int") to str</span></span></span>
+> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c53eda942f904c0092890f931f5312de"><span data-offset-key="c53eda942f904c0092890f931f5312de:0">10 \_(1/0) Traceback (most recent call last): File "", line 1, in ZeroDivisionError: division by zero 4 + spam_3 Traceback (most recent call last): File "", line 1, in NameError: name 'spam' is not defined '2' + 2 Traceback (most recent call last): File "", line 1, in TypeError: can only concatenate str (not "int") to str</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3dfe0198e0a0447685da564e68e5163c"><span data-offset-key="3dfe0198e0a0447685da564e68e5163c:0">The last line of the error message indicates what happened. Exceptions come in different types, and the type is printed as part of the message: the types in the example are ZeroDivisionError, NameError and TypeError. The string printed as the exception type is the name of the built-in exception that occurred. This is true for all built-in exceptions, but need not be true for user-defined exceptions (although it is a useful convention). Standard exception names are built-in identifiers (not reserved keywords).</span></span></span>
 
@@ -197,29 +196,29 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8da082463b854a68a460fa057ca5049a"><span data-offset-key="8da082463b854a68a460fa057ca5049a:0">The try statement works as follows.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="36c4ee38224d440f9cc4e83debae96eb"><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:0">First, the </span><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:1">*try clause*</span><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:2"> (the statement(s) between the try and except</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="36c4ee38224d440f9cc4e83debae96eb"><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:0">First, the </span><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:1">_try clause_</span><span data-offset-key="36c4ee38224d440f9cc4e83debae96eb:2"> (the statement(s) between the try and except</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f522b4fb32184d16ba16d9cfbcff5e19"><span data-offset-key="f522b4fb32184d16ba16d9cfbcff5e19:0">keywords) is executed.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f522b4fb32184d16ba16d9cfbcff5e19"><span data-offset-key="f522b4fb32184d16ba16d9cfbcff5e19:0">keywords) is executed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61d2c66513b449278f7ce39cfcd06ff7"><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:0">If no exception occurs, the </span><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:1">*except clause*</span><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:2"> is skipped and execution</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61d2c66513b449278f7ce39cfcd06ff7"><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:0">If no exception occurs, the </span><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:1">_except clause_</span><span data-offset-key="61d2c66513b449278f7ce39cfcd06ff7:2"> is skipped and execution</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4e74f2cf6e44e4ebacefa5db6b166f5"><span data-offset-key="b4e74f2cf6e44e4ebacefa5db6b166f5:0">of the try statement is finished.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4e74f2cf6e44e4ebacefa5db6b166f5"><span data-offset-key="b4e74f2cf6e44e4ebacefa5db6b166f5:0">of the try statement is finished.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="18ba063760ae47c696dcb0827a85357e"><span data-offset-key="18ba063760ae47c696dcb0827a85357e:0">If an exception occurs during execution of the try clause, the rest</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="18ba063760ae47c696dcb0827a85357e"><span data-offset-key="18ba063760ae47c696dcb0827a85357e:0">If an exception occurs during execution of the try clause, the rest</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aca9a0678586427db89d9ca7d7f6216e"><span data-offset-key="aca9a0678586427db89d9ca7d7f6216e:0">of the clause is skipped. Then if its type matches the exception</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aca9a0678586427db89d9ca7d7f6216e"><span data-offset-key="aca9a0678586427db89d9ca7d7f6216e:0">of the clause is skipped. Then if its type matches the exception</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0243d0ad3b744dad92c8964f7a3d2f12"><span data-offset-key="0243d0ad3b744dad92c8964f7a3d2f12:0">named after the except keyword, the except clause is executed, and</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0243d0ad3b744dad92c8964f7a3d2f12"><span data-offset-key="0243d0ad3b744dad92c8964f7a3d2f12:0">named after the except keyword, the except clause is executed, and</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="414d43fcc0884b98a2bf6af83d409ab6"><span data-offset-key="414d43fcc0884b98a2bf6af83d409ab6:0">then execution continues after the try statement.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="414d43fcc0884b98a2bf6af83d409ab6"><span data-offset-key="414d43fcc0884b98a2bf6af83d409ab6:0">then execution continues after the try statement.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="061765a95f77429e9365cd1e84fa5570"><span data-offset-key="061765a95f77429e9365cd1e84fa5570:0">If an exception occurs which does not match the exception named in</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="061765a95f77429e9365cd1e84fa5570"><span data-offset-key="061765a95f77429e9365cd1e84fa5570:0">If an exception occurs which does not match the exception named in</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="baf396de8f2948989e9328b9ddbc03a7"><span data-offset-key="baf396de8f2948989e9328b9ddbc03a7:0">the except clause, it is passed on to outer try statements; if no</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="baf396de8f2948989e9328b9ddbc03a7"><span data-offset-key="baf396de8f2948989e9328b9ddbc03a7:0">the except clause, it is passed on to outer try statements; if no</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4007c8d53286416d8a8c3ce96f206784"><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:0">handler is found, it is an </span><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:1">*unhandled exception*</span><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:2"> and execution stops</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4007c8d53286416d8a8c3ce96f206784"><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:0">handler is found, it is an </span><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:1">_unhandled exception_</span><span data-offset-key="4007c8d53286416d8a8c3ce96f206784:2"> and execution stops</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c237e09db8d477b9ab2ad065d577608"><span data-offset-key="5c237e09db8d477b9ab2ad065d577608:0">with a message as shown above.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c237e09db8d477b9ab2ad065d577608"><span data-offset-key="5c237e09db8d477b9ab2ad065d577608:0">with a message as shown above.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d04cc932f3364faeb620ad02912d47ce"><span data-offset-key="d04cc932f3364faeb620ad02912d47ce:0">A try statement may have more than one except clause, to specify handlers for different exceptions. At most one handler will be executed. Handlers only handle exceptions that occur in the corresponding try clause, not in other handlers of the same !try statement. An except clause may name multiple exceptions as a parenthesized tuple, for example:</span></span></span>
 
@@ -235,13 +234,13 @@
 
     import sys​try:    f = open('myfile.txt')    s = f.readline()    i = int(s.strip())except OSError as err:    print("OS error: {0}".format(err))except ValueError:    print("Could not convert data to an integer.")except:    print("Unexpected error:", sys.exc_info()[0])    raise
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="728ef08e766544fa9166885256f67ac0"><span data-offset-key="728ef08e766544fa9166885256f67ac0:0">The try ... except statement has an optional </span><span data-offset-key="728ef08e766544fa9166885256f67ac0:1">*else clause*</span><span data-offset-key="728ef08e766544fa9166885256f67ac0:2">, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception. For example:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="728ef08e766544fa9166885256f67ac0"><span data-offset-key="728ef08e766544fa9166885256f67ac0:0">The try ... except statement has an optional </span><span data-offset-key="728ef08e766544fa9166885256f67ac0:1">_else clause_</span><span data-offset-key="728ef08e766544fa9166885256f67ac0:2">, which, when present, must follow all except clauses. It is useful for code that must be executed if the try clause does not raise an exception. For example:</span></span></span>
 
     for arg in sys.argv[1:]:    try:        f = open(arg, 'r')    except OSError:        print('cannot open', arg)    else:        print(arg, 'has', len(f.readlines()), 'lines')        f.close()
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06da682b330542f39e9a8c17f6499a18"><span data-offset-key="06da682b330542f39e9a8c17f6499a18:0">The use of the !else clause is better than adding additional code to the try clause because it avoids accidentally catching an exception that wasn't raised by the code being protected by the !try ... !except statement.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1401381415934cd19bf16fca1db9771a"><span data-offset-key="1401381415934cd19bf16fca1db9771a:0">When an exception occurs, it may have an associated value, also known as the exception's </span><span data-offset-key="1401381415934cd19bf16fca1db9771a:1">*argument*</span><span data-offset-key="1401381415934cd19bf16fca1db9771a:2">. The presence and type of the argument depend on the exception type.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1401381415934cd19bf16fca1db9771a"><span data-offset-key="1401381415934cd19bf16fca1db9771a:0">When an exception occurs, it may have an associated value, also known as the exception's </span><span data-offset-key="1401381415934cd19bf16fca1db9771a:1">_argument_</span><span data-offset-key="1401381415934cd19bf16fca1db9771a:2">. The presence and type of the argument depend on the exception type.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26a5560fea354f1abdf9e38779cc990e"><span data-offset-key="26a5560fea354f1abdf9e38779cc990e:0">The except clause may specify a variable after the exception name. The variable is bound to an exception instance with the arguments stored in </span><span data-offset-key="26a5560fea354f1abdf9e38779cc990e:1">`instance.args`</span><span data-offset-key="26a5560fea354f1abdf9e38779cc990e:2">. For convenience, the exception instance defines \_\_str\_\_ so the arguments can be printed directly without having to reference </span><span data-offset-key="26a5560fea354f1abdf9e38779cc990e:3">`.args`</span><span data-offset-key="26a5560fea354f1abdf9e38779cc990e:4">. One may also instantiate an exception first before raising it and add any attributes to it as desired. :</span></span></span>
 
@@ -251,7 +250,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="db8a63c436dc437a92c005ced0abc5d7"><span data-offset-key="db8a63c436dc437a92c005ced0abc5d7:0">Exception handlers don't just handle exceptions if they occur immediately in the try clause, but also if they occur inside functions that are called (even indirectly) in the try clause. For example:</span></span></span>
 
-> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="932854d86cf546ceb28e71fc274ea839"><span data-offset-key="932854d86cf546ceb28e71fc274ea839:0">def this\_fails(): ... x = 1/0 ... try: ... this\_fails() ... except ZeroDivisionError as err: ... print('Handling run-time error:', err) ... Handling run-time error: division by zero</span></span></span>
+> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="932854d86cf546ceb28e71fc274ea839"><span data-offset-key="932854d86cf546ceb28e71fc274ea839:0">def this_fails(): ... x = 1/0 ... try: ... this_fails() ... except ZeroDivisionError as err: ... print('Handling run-time error:', err) ... Handling run-time error: division by zero</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="e36c8c6d925d416daa57960c0969d994"><span data-offset-key="e36c8c6d925d416daa57960c0969d994:0">Raising Exceptions</span></span></span>
 
@@ -303,39 +302,39 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="acc8b53addd84f0f89da173c31b7dac2"><span data-offset-key="acc8b53addd84f0f89da173c31b7dac2:0">If a finally clause is present, the !finally clause will execute as the last task before the try statement completes. The !finally clause runs whether or not the !try statement produces an exception. The following points discuss more complex cases when an exception occurs:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3df88ed5fc741afb36b5612e8e5be6e"><span data-offset-key="a3df88ed5fc741afb36b5612e8e5be6e:0">If an exception occurs during execution of the !try clause, the</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3df88ed5fc741afb36b5612e8e5be6e"><span data-offset-key="a3df88ed5fc741afb36b5612e8e5be6e:0">If an exception occurs during execution of the !try clause, the</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c1a7901e273487fae5a86874805d05f"><span data-offset-key="2c1a7901e273487fae5a86874805d05f:0">exception may be handled by an except clause. If the exception is</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c1a7901e273487fae5a86874805d05f"><span data-offset-key="2c1a7901e273487fae5a86874805d05f:0">exception may be handled by an except clause. If the exception is</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7177ca750d0645939984ff05fe6771c1"><span data-offset-key="7177ca750d0645939984ff05fe6771c1:0">not handled by an !except clause, the exception is re-raised after</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7177ca750d0645939984ff05fe6771c1"><span data-offset-key="7177ca750d0645939984ff05fe6771c1:0">not handled by an !except clause, the exception is re-raised after</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffd5346e5efe4816a67b0ea000704572"><span data-offset-key="ffd5346e5efe4816a67b0ea000704572:0">the !finally clause has been executed.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffd5346e5efe4816a67b0ea000704572"><span data-offset-key="ffd5346e5efe4816a67b0ea000704572:0">the !finally clause has been executed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52db3ab37ce04231a4a2ddecb0405dc9"><span data-offset-key="52db3ab37ce04231a4a2ddecb0405dc9:0">An exception could occur during execution of an !except or !else</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52db3ab37ce04231a4a2ddecb0405dc9"><span data-offset-key="52db3ab37ce04231a4a2ddecb0405dc9:0">An exception could occur during execution of an !except or !else</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="236e559e138644b887c66fe77833ca22"><span data-offset-key="236e559e138644b887c66fe77833ca22:0">clause. Again, the exception is re-raised after the !finally clause</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="236e559e138644b887c66fe77833ca22"><span data-offset-key="236e559e138644b887c66fe77833ca22:0">clause. Again, the exception is re-raised after the !finally clause</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ae340ec107846179f8fe1d82b380b35"><span data-offset-key="6ae340ec107846179f8fe1d82b380b35:0">has been executed.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ae340ec107846179f8fe1d82b380b35"><span data-offset-key="6ae340ec107846179f8fe1d82b380b35:0">has been executed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c22d39202174235ad3fccbd55a5f42e"><span data-offset-key="7c22d39202174235ad3fccbd55a5f42e:0">If the !finally clause executes a break, continue or return</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c22d39202174235ad3fccbd55a5f42e"><span data-offset-key="7c22d39202174235ad3fccbd55a5f42e:0">If the !finally clause executes a break, continue or return</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4fe6198a193a4d24babe0b56956a4920"><span data-offset-key="4fe6198a193a4d24babe0b56956a4920:0">statement, exceptions are not re-raised.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4fe6198a193a4d24babe0b56956a4920"><span data-offset-key="4fe6198a193a4d24babe0b56956a4920:0">statement, exceptions are not re-raised.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81f0ae14625749e8aeeb2126f822560e"><span data-offset-key="81f0ae14625749e8aeeb2126f822560e:0">If the !try statement reaches a break, continue or return statement,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81f0ae14625749e8aeeb2126f822560e"><span data-offset-key="81f0ae14625749e8aeeb2126f822560e:0">If the !try statement reaches a break, continue or return statement,</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="360d07d2401944aba16cf24bf1cb7fbe"><span data-offset-key="360d07d2401944aba16cf24bf1cb7fbe:0">the !finally clause will execute just prior to the !break, !continue</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="360d07d2401944aba16cf24bf1cb7fbe"><span data-offset-key="360d07d2401944aba16cf24bf1cb7fbe:0">the !finally clause will execute just prior to the !break, !continue</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71cce7a7843444c78fd02769bc20524a"><span data-offset-key="71cce7a7843444c78fd02769bc20524a:0">or !return statement's execution.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71cce7a7843444c78fd02769bc20524a"><span data-offset-key="71cce7a7843444c78fd02769bc20524a:0">or !return statement's execution.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="807fab9ee1a441a7a2dc9006a73b0527"><span data-offset-key="807fab9ee1a441a7a2dc9006a73b0527:0">If a !finally clause includes a !return statement, the returned</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="807fab9ee1a441a7a2dc9006a73b0527"><span data-offset-key="807fab9ee1a441a7a2dc9006a73b0527:0">If a !finally clause includes a !return statement, the returned</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646965f0016e41e984f8fe0846dc7c7a"><span data-offset-key="646965f0016e41e984f8fe0846dc7c7a:0">value will be the one from the !finally clause's !return statement,</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646965f0016e41e984f8fe0846dc7c7a"><span data-offset-key="646965f0016e41e984f8fe0846dc7c7a:0">value will be the one from the !finally clause's !return statement,</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0a5bc2c21b04005b3d68ae700f646fc"><span data-offset-key="e0a5bc2c21b04005b3d68ae700f646fc:0">not the value from the !try clause's !return statement.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0a5bc2c21b04005b3d68ae700f646fc"><span data-offset-key="e0a5bc2c21b04005b3d68ae700f646fc:0">not the value from the !try clause's !return statement.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b30896a740b64e4a9b12a16770b86ca1"><span data-offset-key="b30896a740b64e4a9b12a16770b86ca1:0">For example:</span></span></span>
 
-> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="08f1afbb977c4d95b850609a33ce4b7a"><span data-offset-key="08f1afbb977c4d95b850609a33ce4b7a:0">def bool\_return(): ... try: ... return True ... finally: ... return False ... bool\_return() False</span></span></span>
+> > > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="08f1afbb977c4d95b850609a33ce4b7a"><span data-offset-key="08f1afbb977c4d95b850609a33ce4b7a:0">def bool_return(): ... try: ... return True ... finally: ... return False ... bool_return() False</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8fec842096ee45abb974ad1de6ef1464"><span data-offset-key="8fec842096ee45abb974ad1de6ef1464:0">A more complicated example:</span></span></span>
 
@@ -355,7 +354,7 @@
 
     with open("myfile.txt") as f:    for line in f:        print(line, end="")
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca09654dee15481a87ac707768072a44"><span data-offset-key="ca09654dee15481a87ac707768072a44:0">After the statement is executed, the file </span><span data-offset-key="ca09654dee15481a87ac707768072a44:1">*f*</span><span data-offset-key="ca09654dee15481a87ac707768072a44:2"> is always closed, even if a problem was encountered while processing the lines. Objects which, like files, provide predefined clean-up actions will indicate this in their documentation.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca09654dee15481a87ac707768072a44"><span data-offset-key="ca09654dee15481a87ac707768072a44:0">After the statement is executed, the file </span><span data-offset-key="ca09654dee15481a87ac707768072a44:1">_f_</span><span data-offset-key="ca09654dee15481a87ac707768072a44:2"> is always closed, even if a problem was encountered while processing the lines. Objects which, like files, provide predefined clean-up actions will indicate this in their documentation.</span></span></span>
 
 <a href="appendix.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

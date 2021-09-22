@@ -158,8 +158,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Stack</span>
-==========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Stack</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -175,33 +174,33 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c1db8bd1d9641fb95cab44f49c14f94"><span data-offset-key="7c1db8bd1d9641fb95cab44f49c14f94:0">The functions associated with stack are:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="047ebbb8980348509a8444286372d5b7"><span data-offset-key="047ebbb8980348509a8444286372d5b7:0">**empty()**</span><span data-offset-key="047ebbb8980348509a8444286372d5b7:1"> – Returns whether the stack is empty – Time Complexity: O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="047ebbb8980348509a8444286372d5b7"><span data-offset-key="047ebbb8980348509a8444286372d5b7:0">**empty()**</span><span data-offset-key="047ebbb8980348509a8444286372d5b7:1"> – Returns whether the stack is empty – Time Complexity: O(1)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4346c8d7f1549f0ac98ca730708482b"><span data-offset-key="f4346c8d7f1549f0ac98ca730708482b:0">**size()**</span><span data-offset-key="f4346c8d7f1549f0ac98ca730708482b:1"> – Returns the size of the stack – Time Complexity: O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4346c8d7f1549f0ac98ca730708482b"><span data-offset-key="f4346c8d7f1549f0ac98ca730708482b:0">**size()**</span><span data-offset-key="f4346c8d7f1549f0ac98ca730708482b:1"> – Returns the size of the stack – Time Complexity: O(1)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c04f3924fe44507a50ea65a1e985a99"><span data-offset-key="8c04f3924fe44507a50ea65a1e985a99:0">**top()**</span><span data-offset-key="8c04f3924fe44507a50ea65a1e985a99:1"> – Returns a reference to the topmost element of the stack – Time Complexity: O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c04f3924fe44507a50ea65a1e985a99"><span data-offset-key="8c04f3924fe44507a50ea65a1e985a99:0">**top()**</span><span data-offset-key="8c04f3924fe44507a50ea65a1e985a99:1"> – Returns a reference to the topmost element of the stack – Time Complexity: O(1)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c7f76533cda41a1be42148532341c60"><span data-offset-key="5c7f76533cda41a1be42148532341c60:0">**push(a)**</span><span data-offset-key="5c7f76533cda41a1be42148532341c60:1"> – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c7f76533cda41a1be42148532341c60"><span data-offset-key="5c7f76533cda41a1be42148532341c60:0">**push(a)**</span><span data-offset-key="5c7f76533cda41a1be42148532341c60:1"> – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a213ffb2f7547dbbf52c10b66291c9a"><span data-offset-key="9a213ffb2f7547dbbf52c10b66291c9a:0">**pop()**</span><span data-offset-key="9a213ffb2f7547dbbf52c10b66291c9a:1"> – Deletes the topmost element of the stack – Time Complexity: O(1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a213ffb2f7547dbbf52c10b66291c9a"><span data-offset-key="9a213ffb2f7547dbbf52c10b66291c9a:0">**pop()**</span><span data-offset-key="9a213ffb2f7547dbbf52c10b66291c9a:1"> – Deletes the topmost element of the stack – Time Complexity: O(1)</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="20a83d7fc9dc4616b649594d42b7e108"><span data-offset-key="20a83d7fc9dc4616b649594d42b7e108:0">Implementation</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81ddfe9a8e9b44f7ba45225cdcd887d4"><span data-offset-key="81ddfe9a8e9b44f7ba45225cdcd887d4:0">There are various ways from which a stack can be implemented in Python. This article covers the implementation of a stack using data structures and modules from the Python library. Stack in Python can be implemented using the following ways:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="439c97e4d0fb47008fdfe6f2e4a2f2c9"><span data-offset-key="439c97e4d0fb47008fdfe6f2e4a2f2c9:0">list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="439c97e4d0fb47008fdfe6f2e4a2f2c9"><span data-offset-key="439c97e4d0fb47008fdfe6f2e4a2f2c9:0">list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d640402889e2490ea2ed7b48dabca66d"><span data-offset-key="d640402889e2490ea2ed7b48dabca66d:0">Collections.deque</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d640402889e2490ea2ed7b48dabca66d"><span data-offset-key="d640402889e2490ea2ed7b48dabca66d:0">Collections.deque</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="199da7580aec48afbb7e316dddf92684"><span data-offset-key="199da7580aec48afbb7e316dddf92684:0">queue.LifoQueue</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="199da7580aec48afbb7e316dddf92684"><span data-offset-key="199da7580aec48afbb7e316dddf92684:0">queue.LifoQueue</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="19d6e75de47044dda7d350b4e9f6057f"><span data-offset-key="19d6e75de47044dda7d350b4e9f6057f:0">Implementation using list:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cf70ea82532144999240b0aff1c57dae"><span data-offset-key="cf70ea82532144999240b0aff1c57dae:0">Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order. Unfortunately, the list has a few shortcomings. The biggest issue is that it can run into speed issues as it grows. The items in the list are stored next to each other in memory, if the stack grows bigger than the block of memory that currently holds it, then Python needs to do some memory allocations. This can lead to some append() calls taking much longer than other ones.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3e5385ba0a3749fd9ba348156184316c"><span data-offset-key="3e5385ba0a3749fd9ba348156184316c:0">Python3</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3e5385ba0a3749fd9ba348156184316c"><span data-offset-key="3e5385ba0a3749fd9ba348156184316c:0">Python3</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="171c9a126f584443ae109c8a1a31ba08"><span data-offset-key="171c9a126f584443ae109c8a1a31ba08:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -217,13 +216,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ada3f45155d43d58e29c7274d336baa"><span data-offset-key="9ada3f45155d43d58e29c7274d336baa:0">Traceback (most recent call last): File "/home/2426bc32be6a59881fde0eec91247623.py", line 25, in print(stack.pop()) IndexError: pop from empty list</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b81964afe599437688add81ecfed58e1"><span data-offset-key="b81964afe599437688add81ecfed58e1:0">Implementation using collections.deque:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b48bb57427c440a0acbf8ee9dd339931"><span data-offset-key="b48bb57427c440a0acbf8ee9dd339931:0">Python stack can be implemented using the deque class from the collections module. Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. The same methods on deque as seen in the list are used, append() and pop().</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7128b148647a4a1583e88e2eac405098"><span data-offset-key="7128b148647a4a1583e88e2eac405098:0">Python3</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7128b148647a4a1583e88e2eac405098"><span data-offset-key="7128b148647a4a1583e88e2eac405098:0">Python3</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c1483aa5e4f4c28b8a9be40759ba1e0"><span data-offset-key="7c1483aa5e4f4c28b8a9be40759ba1e0:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -239,7 +238,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2e1f58520c6a42b2a569c0788a682fdb"><span data-offset-key="2e1f58520c6a42b2a569c0788a682fdb:0">Traceback (most recent call last): File "/home/97171a8f6fead6988ea96f86e4b01c32.py", line 29, in print(stack.pop()) IndexError: pop from an empty deque</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fa879894fa70452d922b9730d2ec6755"><span data-offset-key="fa879894fa70452d922b9730d2ec6755:0">Implementation using queue module</span></span></span>
 
@@ -247,23 +246,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68e1c80d68d8459683fff4a2e10e26b5"><span data-offset-key="68e1c80d68d8459683fff4a2e10e26b5:0">There are various functions available in this module:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39d7d2bfe8b849cba0604b45fbaff3c5"><span data-offset-key="39d7d2bfe8b849cba0604b45fbaff3c5:0">**maxsize**</span><span data-offset-key="39d7d2bfe8b849cba0604b45fbaff3c5:1"> – Number of items allowed in the queue.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39d7d2bfe8b849cba0604b45fbaff3c5"><span data-offset-key="39d7d2bfe8b849cba0604b45fbaff3c5:0">**maxsize**</span><span data-offset-key="39d7d2bfe8b849cba0604b45fbaff3c5:1"> – Number of items allowed in the queue.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="65ee142eae354fd6a75bda56b4cd9ad8"><span data-offset-key="65ee142eae354fd6a75bda56b4cd9ad8:0">**empty()**</span><span data-offset-key="65ee142eae354fd6a75bda56b4cd9ad8:1"> – Return True if the queue is empty, False otherwise.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="65ee142eae354fd6a75bda56b4cd9ad8"><span data-offset-key="65ee142eae354fd6a75bda56b4cd9ad8:0">**empty()**</span><span data-offset-key="65ee142eae354fd6a75bda56b4cd9ad8:1"> – Return True if the queue is empty, False otherwise.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d363ed230f64cbcb1fdf39d50dad878"><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:0">**full()**</span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:1"> – Return True if there are </span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:2">*maxsize*</span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:3"> items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d363ed230f64cbcb1fdf39d50dad878"><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:0">**full()**</span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:1"> – Return True if there are </span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:2">_maxsize_</span><span data-offset-key="4d363ed230f64cbcb1fdf39d50dad878:3"> items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="866af51db4574d06a7d65db33580d317"><span data-offset-key="866af51db4574d06a7d65db33580d317:0">**get()**</span><span data-offset-key="866af51db4574d06a7d65db33580d317:1"> – Remove and return an item from the queue. If the queue is empty, wait until an item is available.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="866af51db4574d06a7d65db33580d317"><span data-offset-key="866af51db4574d06a7d65db33580d317:0">**get()**</span><span data-offset-key="866af51db4574d06a7d65db33580d317:1"> – Remove and return an item from the queue. If the queue is empty, wait until an item is available.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6b3446febc584551a8f443bbd7ce5769"><span data-offset-key="6b3446febc584551a8f443bbd7ce5769:0">**get\_nowait()**</span><span data-offset-key="6b3446febc584551a8f443bbd7ce5769:1"> – Return an item if one is immediately available, else raise QueueEmpty.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6b3446febc584551a8f443bbd7ce5769"><span data-offset-key="6b3446febc584551a8f443bbd7ce5769:0">**get_nowait()**</span><span data-offset-key="6b3446febc584551a8f443bbd7ce5769:1"> – Return an item if one is immediately available, else raise QueueEmpty.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="469e07249aa24b0aac9298d1a7e271f1"><span data-offset-key="469e07249aa24b0aac9298d1a7e271f1:0">**put(item)**</span><span data-offset-key="469e07249aa24b0aac9298d1a7e271f1:1"> – Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="469e07249aa24b0aac9298d1a7e271f1"><span data-offset-key="469e07249aa24b0aac9298d1a7e271f1:0">**put(item)**</span><span data-offset-key="469e07249aa24b0aac9298d1a7e271f1:1"> – Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7fb5c8b0aff4798af512178d4ff5791"><span data-offset-key="a7fb5c8b0aff4798af512178d4ff5791:0">**put\_nowait(item)**</span><span data-offset-key="a7fb5c8b0aff4798af512178d4ff5791:1"> – Put an item into the queue without blocking.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7fb5c8b0aff4798af512178d4ff5791"><span data-offset-key="a7fb5c8b0aff4798af512178d4ff5791:0">**put_nowait(item)**</span><span data-offset-key="a7fb5c8b0aff4798af512178d4ff5791:1"> – Put an item into the queue without blocking.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="765fd37eda6245cea17e18624035b2fb"><span data-offset-key="765fd37eda6245cea17e18624035b2fb:0">**qsize()**</span><span data-offset-key="765fd37eda6245cea17e18624035b2fb:1"> – Return the number of items in the queue. If no free slot is immediately available, raise QueueFull.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="765fd37eda6245cea17e18624035b2fb"><span data-offset-key="765fd37eda6245cea17e18624035b2fb:0">**qsize()**</span><span data-offset-key="765fd37eda6245cea17e18624035b2fb:1"> – Return the number of items in the queue. If no free slot is immediately available, raise QueueFull.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c310f45a4aa14b708bb2d465d520860d"><span data-offset-key="c310f45a4aa14b708bb2d465d520860d:0">Python3</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c310f45a4aa14b708bb2d465d520860d"><span data-offset-key="c310f45a4aa14b708bb2d465d520860d:0">Python3</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5884e6d55bab48889c84f386926664e9"><span data-offset-key="5884e6d55bab48889c84f386926664e9:0">Python3</span></span></span>
 
@@ -283,25 +282,25 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc84d060a96149e4bde3e38afc2fb5af"><span data-offset-key="dc84d060a96149e4bde3e38afc2fb5af:0">Empty: True</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="51b83db63f2b4b57bd42942cc90f4d63"><span data-offset-key="51b83db63f2b4b57bd42942cc90f4d63:0">Implementation using singly linked list:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9625555d043241568281fcff198ffdec"><span data-offset-key="9625555d043241568281fcff198ffdec:0">The linked list has two methods addHead(item) and removeHead() that run in constant time. These two methods are suitable to implement a stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a083f97d0fb844b2a1ee69dff495b816"><span data-offset-key="a083f97d0fb844b2a1ee69dff495b816:0">**getSize()**</span><span data-offset-key="a083f97d0fb844b2a1ee69dff495b816:1">– Get the number of items in the stack.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a083f97d0fb844b2a1ee69dff495b816"><span data-offset-key="a083f97d0fb844b2a1ee69dff495b816:0">**getSize()**</span><span data-offset-key="a083f97d0fb844b2a1ee69dff495b816:1">– Get the number of items in the stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f167a5966afe4c1ebde8f2a2a07af34a"><span data-offset-key="f167a5966afe4c1ebde8f2a2a07af34a:0">**isEmpty()**</span><span data-offset-key="f167a5966afe4c1ebde8f2a2a07af34a:1"> – Return True if the stack is empty, False otherwise.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f167a5966afe4c1ebde8f2a2a07af34a"><span data-offset-key="f167a5966afe4c1ebde8f2a2a07af34a:0">**isEmpty()**</span><span data-offset-key="f167a5966afe4c1ebde8f2a2a07af34a:1"> – Return True if the stack is empty, False otherwise.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8de8bad570e34fd1bb283f4beaacb88a"><span data-offset-key="8de8bad570e34fd1bb283f4beaacb88a:0">**peek()**</span><span data-offset-key="8de8bad570e34fd1bb283f4beaacb88a:1"> – Return the top item in the stack. If the stack is empty, raise an exception.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8de8bad570e34fd1bb283f4beaacb88a"><span data-offset-key="8de8bad570e34fd1bb283f4beaacb88a:0">**peek()**</span><span data-offset-key="8de8bad570e34fd1bb283f4beaacb88a:1"> – Return the top item in the stack. If the stack is empty, raise an exception.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="537f06c197fe41e09ccd56b7c31fc480"><span data-offset-key="537f06c197fe41e09ccd56b7c31fc480:0">**push(value)**</span><span data-offset-key="537f06c197fe41e09ccd56b7c31fc480:1"> – Push a value into the head of the stack.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="537f06c197fe41e09ccd56b7c31fc480"><span data-offset-key="537f06c197fe41e09ccd56b7c31fc480:0">**push(value)**</span><span data-offset-key="537f06c197fe41e09ccd56b7c31fc480:1"> – Push a value into the head of the stack.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="53bfb0961b69400680b8435a5a23526c"><span data-offset-key="53bfb0961b69400680b8435a5a23526c:0">**pop()**</span><span data-offset-key="53bfb0961b69400680b8435a5a23526c:1"> – Remove and return a value in the head of the stack. If the stack is empty, raise an exception.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="53bfb0961b69400680b8435a5a23526c"><span data-offset-key="53bfb0961b69400680b8435a5a23526c:0">**pop()**</span><span data-offset-key="53bfb0961b69400680b8435a5a23526c:1"> – Remove and return a value in the head of the stack. If the stack is empty, raise an exception.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5adb0c4280a4818bfb2c5af3c5c5a09"><span data-offset-key="f5adb0c4280a4818bfb2c5af3c5c5a09:0">Below is the implementation of the above approach:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="582c0855c8b04e228299ade258261900"><span data-offset-key="582c0855c8b04e228299ade258261900:0">Python3</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="582c0855c8b04e228299ade258261900"><span data-offset-key="582c0855c8b04e228299ade258261900:0">Python3</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e43012d3f5c04f77b6b2e9268c7a9412"><span data-offset-key="e43012d3f5c04f77b6b2e9268c7a9412:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

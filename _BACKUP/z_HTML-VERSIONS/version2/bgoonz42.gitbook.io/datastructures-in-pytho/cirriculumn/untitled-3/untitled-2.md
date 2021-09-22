@@ -134,8 +134,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1-Module 01 - Python I</span>
-============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1-Module 01 - Python I</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -147,7 +146,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d4039888478544c3971e55fa560459c6"><span data-offset-key="d4039888478544c3971e55fa560459c6:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f67904b6d79442ce97c0d9d39016fe5a"><span data-offset-key="f67904b6d79442ce97c0d9d39016fe5a:0">Windows</span></span></span>
 
@@ -157,7 +156,7 @@
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66b360f6746b4695b13aef709368b58e"><span data-offset-key="66b360f6746b4695b13aef709368b58e:0">Run the installer and </span><span data-offset-key="66b360f6746b4695b13aef709368b58e:1">**make sure you check the box that says "Add Python 3.x to PATH" to ensure that you place the interpreter in your execution path.**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="83cf44a73f1e4caaaa84c6d890323d73"><span data-offset-key="83cf44a73f1e4caaaa84c6d890323d73:0">Linux</span></span></span>
 
@@ -169,7 +168,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59d8d7a2315b48de9e5a3a7823a7fd70"><span data-offset-key="59d8d7a2315b48de9e5a3a7823a7fd70:0">Use </span></span><a href="https://realpython.com/installing-python/#reader-comments" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="dea3519cfc9c4c94ad9e72aa19d42adc"><span data-offset-key="dea3519cfc9c4c94ad9e72aa19d42adc:0">this article (Links to an external site.)</span></span></a><span data-key="32741ec1db3b49dfa31c4f8aa22d9aaa"><span data-offset-key="32741ec1db3b49dfa31c4f8aa22d9aaa:0"> to find instructions specific to your Linux distribution.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="82155e782eb6427380ab01ac2aa01d03"><span data-offset-key="82155e782eb6427380ab01ac2aa01d03:0">macOS / Mac OS X</span></span></span>
 
@@ -195,33 +194,33 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2cbfc8d020b54e6cb9bc5fdee098f614"><span data-offset-key="2cbfc8d020b54e6cb9bc5fdee098f614:0">If you see help text from Python's "pip" package manager, you have a working Python installation.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="674aa4d7193743e7a4339ebe58a13da7"><span data-offset-key="674aa4d7193743e7a4339ebe58a13da7:0">Online Interpreters</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="774a390cc2984db7a188dc94a5c4a41a"><span data-offset-key="774a390cc2984db7a188dc94a5c4a41a:0">Here are a few websites that give you online access to the Python interpreter:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b8b218a5f9fc491984dd8a244ac72e8f"><span data-offset-key="b8b218a5f9fc491984dd8a244ac72e8f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://repl.it/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="67b58b2b5a4a46959e51bdabe102c669"><span data-offset-key="67b58b2b5a4a46959e51bdabe102c669:0">Repl.it (Links to an external site.)</span></span></a><span data-key="9ec3e87b045a46549921a1b359a13277"><span data-offset-key="9ec3e87b045a46549921a1b359a13277:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b8b218a5f9fc491984dd8a244ac72e8f"><span data-offset-key="b8b218a5f9fc491984dd8a244ac72e8f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://repl.it/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="67b58b2b5a4a46959e51bdabe102c669"><span data-offset-key="67b58b2b5a4a46959e51bdabe102c669:0">Repl.it (Links to an external site.)</span></span></a><span data-key="9ec3e87b045a46549921a1b359a13277"><span data-offset-key="9ec3e87b045a46549921a1b359a13277:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e623d74ec4243759262000794839ec7"><span data-offset-key="4e623d74ec4243759262000794839ec7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://trinket.io/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="761b9e8237d246fabeaf53f67eab722c"><span data-offset-key="761b9e8237d246fabeaf53f67eab722c:0">Trinket (Links to an external site.)</span></span></a><span data-key="eee21d5d6f2f4129a2e9f3f3d1d33a7a"><span data-offset-key="eee21d5d6f2f4129a2e9f3f3d1d33a7a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e623d74ec4243759262000794839ec7"><span data-offset-key="4e623d74ec4243759262000794839ec7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://trinket.io/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="761b9e8237d246fabeaf53f67eab722c"><span data-offset-key="761b9e8237d246fabeaf53f67eab722c:0">Trinket (Links to an external site.)</span></span></a><span data-key="eee21d5d6f2f4129a2e9f3f3d1d33a7a"><span data-offset-key="eee21d5d6f2f4129a2e9f3f3d1d33a7a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f5cf4b6ee0041a1abe718375b743077"><span data-offset-key="1f5cf4b6ee0041a1abe718375b743077:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://pythonfiddle.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="765a127f2ad440faad09a7445ea4e27e"><span data-offset-key="765a127f2ad440faad09a7445ea4e27e:0">Python Fiddle (Links to an external site.)</span></span></a><span data-key="64964170b384412d9d85257809b7b6c4"><span data-offset-key="64964170b384412d9d85257809b7b6c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f5cf4b6ee0041a1abe718375b743077"><span data-offset-key="1f5cf4b6ee0041a1abe718375b743077:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://pythonfiddle.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="765a127f2ad440faad09a7445ea4e27e"><span data-offset-key="765a127f2ad440faad09a7445ea4e27e:0">Python Fiddle (Links to an external site.)</span></span></a><span data-key="64964170b384412d9d85257809b7b6c4"><span data-offset-key="64964170b384412d9d85257809b7b6c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="115d3a5af1df4994a8cf4d6e4d91e648"><span data-offset-key="115d3a5af1df4994a8cf4d6e4d91e648:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.python.org/shell" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b49920cdced142d6b6a686b1de1cfbd3"><span data-offset-key="b49920cdced142d6b6a686b1de1cfbd3:0">Python.org Online Console (Links to an external site.)</span></span></a><span data-key="12caf2bdf0334cbd9d91462a91409c20"><span data-offset-key="12caf2bdf0334cbd9d91462a91409c20:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="115d3a5af1df4994a8cf4d6e4d91e648"><span data-offset-key="115d3a5af1df4994a8cf4d6e4d91e648:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.python.org/shell" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b49920cdced142d6b6a686b1de1cfbd3"><span data-offset-key="b49920cdced142d6b6a686b1de1cfbd3:0">Python.org Online Console (Links to an external site.)</span></span></a><span data-key="12caf2bdf0334cbd9d91462a91409c20"><span data-offset-key="12caf2bdf0334cbd9d91462a91409c20:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64fb4f68524f4128aa6acdd0f8488432"><span data-offset-key="64fb4f68524f4128aa6acdd0f8488432:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.pythonanywhere.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="bbbc191510ac40f7b30c35e2b76fc105"><span data-offset-key="bbbc191510ac40f7b30c35e2b76fc105:0">Python Anywhere</span></span></a><span data-key="1bace61498bd4719baa8ec6fd6261c99"><span data-offset-key="1bace61498bd4719baa8ec6fd6261c99:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64fb4f68524f4128aa6acdd0f8488432"><span data-offset-key="64fb4f68524f4128aa6acdd0f8488432:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.pythonanywhere.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="bbbc191510ac40f7b30c35e2b76fc105"><span data-offset-key="bbbc191510ac40f7b30c35e2b76fc105:0">Python Anywhere</span></span></a><span data-key="1bace61498bd4719baa8ec6fd6261c99"><span data-offset-key="1bace61498bd4719baa8ec6fd6261c99:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7ec39e945cc0418984a2a3367d046f71"><span data-offset-key="7ec39e945cc0418984a2a3367d046f71:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3acb1e86dd414baba3e72f7a9a22bb03"><span data-offset-key="3acb1e86dd414baba3e72f7a9a22bb03:0">Search and Research</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ad9df21b52741dda01ad9e06232cf21"><span data-offset-key="4ad9df21b52741dda01ad9e06232cf21:0">Before you do anything else, search for a solution to your problem on your own. One thing you should start doing is keeping track of all your research when solving a problem. One easy way to do this is to have a browser window represent a specific search for a solution, and each open tab represents an attempt at solving it. Keeping track of your research is vital because it's helpful to provide examples of similar questions or similar problems and explain why those didn't answer your specific problem or question. It also helps the person answering your question avoid pointing you toward resources you've already explored, and lets them know that you've already put in the work.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2805a2d592fd44779436b2c3f5acca87"><span data-offset-key="2805a2d592fd44779436b2c3f5acca87:0">Introduce the Problem</span></span></span>
 
@@ -231,7 +230,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c22b534022064437ad0d6eced92c6eb8"><span data-offset-key="c22b534022064437ad0d6eced92c6eb8:0">You should also provide as much detail about the context as possible. For instance, include the language version, the platform version, the operating system, the database type, specific IDE, and any web server information. You should also include your particular constraints. For example, you may not be allowed to use feature A or B that would provide an obvious solution. If you have an odd constraint, it may also help explain why you have that constraint.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="64429d97aa0f49d4b19b31c7ac19729e"><span data-offset-key="64429d97aa0f49d4b19b31c7ac19729e:0">Help Others Reproduce the Problem</span></span></span>
 
@@ -239,7 +238,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f722338cfb04e7a857557789e010f0c"><span data-offset-key="0f722338cfb04e7a857557789e010f0c:0">Here are some guidelines for when to include code in your question.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5d4cd161b2774503aee0ea530186c6c6"><span data-offset-key="5d4cd161b2774503aee0ea530186c6c6:0">**Minimal**</span></span></span>
 
@@ -249,13 +248,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f1dcc660fc443628176dfb5ae6d806c"><span data-offset-key="4f1dcc660fc443628176dfb5ae6d806c:0">Be careful not to remove too much code, either. Keep your question brief, but maintain enough context for clarity.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fc41cc84d9214e9e8a41725a27ba83a8"><span data-offset-key="fc41cc84d9214e9e8a41725a27ba83a8:0">Complete</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b4c697e16624da8bb019b0d913101f7"><span data-offset-key="7b4c697e16624da8bb019b0d913101f7:0">Make sure you include all the portions of the code needed to reproduce the problem. It would be best if you assumed that the person who is answering your question would not write any code to reproduce your issue. Again, remember, do not use images of code—those trying to help you need direct access to the code you include in your question.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="63c14a6ab2b049d8a028e174e757828a"><span data-offset-key="63c14a6ab2b049d8a028e174e757828a:0">Reproducible</span></span></span>
 
@@ -265,13 +264,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="859d1ff0f3df490888e9f5728a88b2a0"><span data-offset-key="859d1ff0f3df490888e9f5728a88b2a0:0">And to reiterate, do not post images of any code, data, or error messages—reserve images for things like rendering bugs—things that are impossible to describe accurately with just text.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a7fea6978ad0445aa40373506bc79400"><span data-offset-key="a7fea6978ad0445aa40373506bc79400:0">Proofread</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00edb84c25c84ecba4561a565b2ca9d9"><span data-offset-key="00edb84c25c84ecba4561a565b2ca9d9:0">Don't send a question you haven't proofread. When you post your question, you should have already read and reread it, taking care to follow all the best practices and making sure your question makes sense. It would be best if you imagined that you're coming to your question fresh, with no other context but the question itself. You want to make your question as easy for someone to answer as possible. Remember, the reader is likely choosing between several questions they could answer. You want your question to stand out as something concise and approachable. Don't forget to double-check your spelling, grammar, and formatting. Keep it as straightforward as you can; you're not writing a novel.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="69de9c13c8f14aa1911a71a925a5fe24"><span data-offset-key="69de9c13c8f14aa1911a71a925a5fe24:0">Respond to Feedback</span></span></span>
 
@@ -303,19 +302,19 @@
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77c4543b735b440a993710e1ce52631a"><span data-offset-key="77c4543b735b440a993710e1ce52631a:0">Identify an unanswered question in your cohort-specific help channel. Do your best to provide a helpful response to that question.</span></span></span>
 
-3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="783d74d12142472a978d6ae222b2a32f"><span data-offset-key="783d74d12142472a978d6ae222b2a32f:0">Find an example of a </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:1">**bad**</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:2"> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:3">*why*</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:4"> you believe it is a </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:5">**bad**</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:6"> question.</span></span></span>
+3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="783d74d12142472a978d6ae222b2a32f"><span data-offset-key="783d74d12142472a978d6ae222b2a32f:0">Find an example of a </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:1">**bad**</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:2"> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:3">_why_</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:4"> you believe it is a </span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:5">**bad**</span><span data-offset-key="783d74d12142472a978d6ae222b2a32f:6"> question.</span></span></span>
 
-4.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc6f4b6b7796455f856291471af34f35"><span data-offset-key="fc6f4b6b7796455f856291471af34f35:0">Find an example of a </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:1">**good**</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:2"> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:3">*why*</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:4"> you believe it is a </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:5">**good**</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:6"> question.</span></span></span>
+4.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc6f4b6b7796455f856291471af34f35"><span data-offset-key="fc6f4b6b7796455f856291471af34f35:0">Find an example of a </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:1">**good**</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:2"> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:3">_why_</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:4"> you believe it is a </span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:5">**good**</span><span data-offset-key="fc6f4b6b7796455f856291471af34f35:6"> question.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="fa879cd08d18457086b07a238e42f4ba"><span data-offset-key="fa879cd08d18457086b07a238e42f4ba:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ad7e2d135ae487a8be7fc9c4c0a7f43"><span data-offset-key="9ad7e2d135ae487a8be7fc9c4c0a7f43:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://stackoverflow.com/help/how-to-ask" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5fa744a0e72a4d6e8e2fba903c92fd18"><span data-offset-key="5fa744a0e72a4d6e8e2fba903c92fd18:0">Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)</span></span></a><span data-key="49373aa835a54a20a21b30cdbea1ca83"><span data-offset-key="49373aa835a54a20a21b30cdbea1ca83:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ad7e2d135ae487a8be7fc9c4c0a7f43"><span data-offset-key="9ad7e2d135ae487a8be7fc9c4c0a7f43:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://stackoverflow.com/help/how-to-ask" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5fa744a0e72a4d6e8e2fba903c92fd18"><span data-offset-key="5fa744a0e72a4d6e8e2fba903c92fd18:0">Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)</span></span></a><span data-key="49373aa835a54a20a21b30cdbea1ca83"><span data-offset-key="49373aa835a54a20a21b30cdbea1ca83:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c7ece0e988e2424f84b98b49ea0c727f"><span data-offset-key="c7ece0e988e2424f84b98b49ea0c727f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7e180a23d06a43ba927b0cdbf8a7fdfe"><span data-offset-key="7e180a23d06a43ba927b0cdbf8a7fdfe:0">Writing the Perfect Question (Links to an external site.)</span></span></a><span data-key="e8033a11aea949a4a44420f69430dacb"><span data-offset-key="e8033a11aea949a4a44420f69430dacb:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c7ece0e988e2424f84b98b49ea0c727f"><span data-offset-key="c7ece0e988e2424f84b98b49ea0c727f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7e180a23d06a43ba927b0cdbf8a7fdfe"><span data-offset-key="7e180a23d06a43ba927b0cdbf8a7fdfe:0">Writing the Perfect Question (Links to an external site.)</span></span></a><span data-key="e8033a11aea949a4a44420f69430dacb"><span data-offset-key="e8033a11aea949a4a44420f69430dacb:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aed1a957cc3248d999b04672caf96ab3"><span data-offset-key="aed1a957cc3248d999b04672caf96ab3:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://catb.org/esr/faqs/smart-questions.html" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e0c5e16982b042e28ef59d527e64f2f2"><span data-offset-key="e0c5e16982b042e28ef59d527e64f2f2:0">How to Ask Questions the Smart Way (Links to an external site.)</span></span></a><span data-key="11b8de55a9c441de8711583791615767"><span data-offset-key="11b8de55a9c441de8711583791615767:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aed1a957cc3248d999b04672caf96ab3"><span data-offset-key="aed1a957cc3248d999b04672caf96ab3:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://catb.org/esr/faqs/smart-questions.html" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e0c5e16982b042e28ef59d527e64f2f2"><span data-offset-key="e0c5e16982b042e28ef59d527e64f2f2:0">How to Ask Questions the Smart Way (Links to an external site.)</span></span></a><span data-key="11b8de55a9c441de8711583791615767"><span data-offset-key="11b8de55a9c441de8711583791615767:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6088f9ea46a04c1e80ce5d116b67ef8d"><span data-offset-key="6088f9ea46a04c1e80ce5d116b67ef8d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://ericlippert.com/2014/03/05/how-to-debug-small-programs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="15657602340f454cbf423dda2d77a575"><span data-offset-key="15657602340f454cbf423dda2d77a575:0">How to Debug Small Programs (Links to an external site.)</span></span></a><span data-key="702b9365e0da4acea719a125f8348361"><span data-offset-key="702b9365e0da4acea719a125f8348361:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6088f9ea46a04c1e80ce5d116b67ef8d"><span data-offset-key="6088f9ea46a04c1e80ce5d116b67ef8d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://ericlippert.com/2014/03/05/how-to-debug-small-programs/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="15657602340f454cbf423dda2d77a575"><span data-offset-key="15657602340f454cbf423dda2d77a575:0">How to Debug Small Programs (Links to an external site.)</span></span></a><span data-key="702b9365e0da4acea719a125f8348361"><span data-offset-key="702b9365e0da4acea719a125f8348361:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <figure><img src="https://gblobscdn.gitbook.com/assets%2F-Mij72ebV4OjqJvBacMy%2Fsync%2F24ac184b16b63195b5c5435103114ae3205a7ca7.png?alt=media" class="image-52799b3c" /></figure>
 
@@ -323,11 +322,11 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="8e279b0dfc944082a5d251bad38ce6f0"><span data-offset-key="8e279b0dfc944082a5d251bad38ce6f0:0">Overview</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="744c5f0cbea24a81a574300ed610078c"><span data-offset-key="744c5f0cbea24a81a574300ed610078c:0">Learning to use the </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:1">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:2"> function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:3">*output*</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:4"> from your program. The </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:5">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:6"> function is how you output the value of an object to the screen. You will learn how to use the </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:7">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:8"> function in Python.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="744c5f0cbea24a81a574300ed610078c"><span data-offset-key="744c5f0cbea24a81a574300ed610078c:0">Learning to use the </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:1">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:2"> function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:3">_output_</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:4"> from your program. The </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:5">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:6"> function is how you output the value of an object to the screen. You will learn how to use the </span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:7">`print`</span><span data-offset-key="744c5f0cbea24a81a574300ed610078c:8"> function in Python.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="efdfcc8146d344b7bf24c58b4c8fba04"><span data-offset-key="efdfcc8146d344b7bf24c58b4c8fba04:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b8cbc14c8b124916971d575e4ba5f785"><span data-offset-key="b8cbc14c8b124916971d575e4ba5f785:0">Using </span><span data-offset-key="b8cbc14c8b124916971d575e4ba5f785:1">`print`</span><span data-offset-key="b8cbc14c8b124916971d575e4ba5f785:2"> with different objects</span></span></span>
 
@@ -365,7 +364,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61ad3f627d0f4b00b9090c7bbf40d50b"><span data-offset-key="61ad3f627d0f4b00b9090c7bbf40d50b:0">You can see how the </span><span data-offset-key="61ad3f627d0f4b00b9090c7bbf40d50b:1">`print`</span><span data-offset-key="61ad3f627d0f4b00b9090c7bbf40d50b:2"> function is easy to use and how it can handle any object type that you pass into it.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e4f09222bb1046c6823bd33d665dddcd"><span data-offset-key="e4f09222bb1046c6823bd33d665dddcd:0">Passing multiple arguments into </span><span data-offset-key="e4f09222bb1046c6823bd33d665dddcd:1">`print`</span></span></span>
 
@@ -381,7 +380,7 @@
 
     >>> print("Lambda School", 2020, True, sep="!!!")Lambda School!!!2020!!!True>>> print("Lambda School", 2020, True, sep="\t")Lambda School   2020    True>>> print("Lambda School", 2020, True, sep="\n")Lambda School2020True>>> print("Lambda School", 2020, True, sep="")Lambda School2020True>>>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="90fd6a51eefe4ef0b3e6be1a214df1c7"><span data-offset-key="90fd6a51eefe4ef0b3e6be1a214df1c7:0">Specifying the </span><span data-offset-key="90fd6a51eefe4ef0b3e6be1a214df1c7:1">`end`</span><span data-offset-key="90fd6a51eefe4ef0b3e6be1a214df1c7:2"> value with </span><span data-offset-key="90fd6a51eefe4ef0b3e6be1a214df1c7:3">`print`</span></span></span>
 
@@ -407,11 +406,11 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="2d945652e40845d8affa6bcf017420f4"><span data-offset-key="2d945652e40845d8affa6bcf017420f4:0">Overview</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="23469b28f50f400b8aa7ee09375f6bad"><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:0">Learning to use the </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:1">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:2"> function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:3">*output*</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:4"> from your program. The </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:5">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:6"> function is how you output the value of an object to the screen. You will learn how to use the </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:7">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:8"> function in Python.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="23469b28f50f400b8aa7ee09375f6bad"><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:0">Learning to use the </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:1">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:2"> function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:3">_output_</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:4"> from your program. The </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:5">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:6"> function is how you output the value of an object to the screen. You will learn how to use the </span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:7">`print`</span><span data-offset-key="23469b28f50f400b8aa7ee09375f6bad:8"> function in Python.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="719f6d7476f54be281dd9402560ca5d3"><span data-offset-key="719f6d7476f54be281dd9402560ca5d3:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8ef3654fbeef40bbb28aa9521bbc3823"><span data-offset-key="8ef3654fbeef40bbb28aa9521bbc3823:0">Using </span><span data-offset-key="8ef3654fbeef40bbb28aa9521bbc3823:1">`print`</span><span data-offset-key="8ef3654fbeef40bbb28aa9521bbc3823:2"> with different objects</span></span></span>
 
@@ -449,7 +448,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="813bbd68c46b4794aba6bee75deb346f"><span data-offset-key="813bbd68c46b4794aba6bee75deb346f:0">You can see how the </span><span data-offset-key="813bbd68c46b4794aba6bee75deb346f:1">`print`</span><span data-offset-key="813bbd68c46b4794aba6bee75deb346f:2"> function is easy to use and how it can handle any object type that you pass into it.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="82cdd247b5e047d2ae15f0849d485573"><span data-offset-key="82cdd247b5e047d2ae15f0849d485573:0">Passing multiple arguments into </span><span data-offset-key="82cdd247b5e047d2ae15f0849d485573:1">`print`</span></span></span>
 
@@ -465,7 +464,7 @@
 
     >>> print("Lambda School", 2020, True, sep="!!!")Lambda School!!!2020!!!True>>> print("Lambda School", 2020, True, sep="\t")Lambda School   2020    True>>> print("Lambda School", 2020, True, sep="\n")Lambda School2020True>>> print("Lambda School", 2020, True, sep="")Lambda School2020True>>>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="276445a4939f4d348d71c4029955f778"><span data-offset-key="276445a4939f4d348d71c4029955f778:0">Specifying the </span><span data-offset-key="276445a4939f4d348d71c4029955f778:1">`end`</span><span data-offset-key="276445a4939f4d348d71c4029955f778:2"> value with </span><span data-offset-key="276445a4939f4d348d71c4029955f778:3">`print`</span></span></span>
 
@@ -485,7 +484,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="09139397ed45470c96c0ee0c162f1a92"><span data-offset-key="09139397ed45470c96c0ee0c162f1a92:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a26c5f08136d498c88e7dfdff2d4624f"><span data-offset-key="a26c5f08136d498c88e7dfdff2d4624f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.w3schools.com/python/ref_func_print.asp" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3d7e6539bf014fa6a2fd152573f6ddde"><span data-offset-key="3d7e6539bf014fa6a2fd152573f6ddde:0">https://www.w3schools.com/python/ref_func_print.asp</span></span></a><span data-key="30c96086addc4a24b53e11cd20423cc8"><span data-offset-key="30c96086addc4a24b53e11cd20423cc8:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a26c5f08136d498c88e7dfdff2d4624f"><span data-offset-key="a26c5f08136d498c88e7dfdff2d4624f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.w3schools.com/python/ref_func_print.asp" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3d7e6539bf014fa6a2fd152573f6ddde"><span data-offset-key="3d7e6539bf014fa6a2fd152573f6ddde:0">https://www.w3schools.com/python/ref_func_print.asp</span></span></a><span data-key="30c96086addc4a24b53e11cd20423cc8"><span data-offset-key="30c96086addc4a24b53e11cd20423cc8:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13f475417e3e45d58a6aa3e98dc82a7b"><span data-offset-key="13f475417e3e45d58a6aa3e98dc82a7b:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -499,7 +498,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="def16830c5904b18af315c651d67913e"><span data-offset-key="def16830c5904b18af315c651d67913e:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="173e25e9c33d4cb7b344764dba0743c5"><span data-offset-key="173e25e9c33d4cb7b344764dba0743c5:0">Whitespace Characters</span></span></span>
 
@@ -511,7 +510,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f3e1323e67c447888c8423baeca19c08"><span data-offset-key="f3e1323e67c447888c8423baeca19c08:0">You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with </span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:1">`" "`</span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:2">, </span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:3">`\t`</span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:4">, and </span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:5">`\n`</span><span data-offset-key="f3e1323e67c447888c8423baeca19c08:6">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="69bd5cfd82e84bbbaf8d04e11429f96b"><span data-offset-key="69bd5cfd82e84bbbaf8d04e11429f96b:0">Logical Lines of Code</span></span></span>
 
@@ -523,7 +522,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ae045c5dca1643af8b0fe712c07a2aa4"><span data-offset-key="ae045c5dca1643af8b0fe712c07a2aa4:0">It's important to understand that Python assumes meaning in newline characters when trying to interpret your code.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="77520d49b4854c16b78fcef09c7fedab"><span data-offset-key="77520d49b4854c16b78fcef09c7fedab:0">Code Blocks</span></span></span>
 
@@ -557,7 +556,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="00312662bbdc4c2eb7e5442614a80cbc"><span data-offset-key="00312662bbdc4c2eb7e5442614a80cbc:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aa2b976ee7a642f384259f70ee8f1647"><span data-offset-key="aa2b976ee7a642f384259f70ee8f1647:0">Numbers</span></span></span>
 
@@ -575,7 +574,7 @@
 
     my_float = 3.0my_float = float(3)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f7f9217c412844df874c59776cb1d4b4"><span data-offset-key="f7f9217c412844df874c59776cb1d4b4:0">Strings</span></span></span>
 
@@ -601,7 +600,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b1d788d7b724b44a1b026826c693341"><span data-offset-key="5b1d788d7b724b44a1b026826c693341:0">There are a few basic operators that you should be familiar with as you start writing Python code.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="58432cdeecda4f97b1475ac1269766be"><span data-offset-key="58432cdeecda4f97b1475ac1269766be:0">Arithmetic Operators</span></span></span>
 
@@ -617,7 +616,7 @@
 
     two_squared = 2 ** 2print(two_squared)    # 4two_cubed = 2 ** 3print(two_cubed)      # 8
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3466aab7bfe74733998c6fe1fba43182"><span data-offset-key="3466aab7bfe74733998c6fe1fba43182:0">Using operators with non-numbers</span></span></span>
 
@@ -657,7 +656,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a4958b618b944010a07218b25d23acaf"><span data-offset-key="a4958b618b944010a07218b25d23acaf:0">Overview</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee4736d0123f4a40a4f0b27fcc238c87"><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:0">To format a string in Python, you use the </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:1">`%`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:2"> operator to format a set of stored variables in a tuple. You also include </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:3">*argument specifiers*</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:4"> in your string with special symbols like </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:5">`%s`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:6"> and </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:7">`%d`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee4736d0123f4a40a4f0b27fcc238c87"><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:0">To format a string in Python, you use the </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:1">`%`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:2"> operator to format a set of stored variables in a tuple. You also include </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:3">_argument specifiers_</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:4"> in your string with special symbols like </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:5">`%s`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:6"> and </span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:7">`%d`</span><span data-offset-key="ee4736d0123f4a40a4f0b27fcc238c87:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa1ec656063a498baf88e07b50dc8717"><span data-offset-key="fa1ec656063a498baf88e07b50dc8717:0">For example, let's say you want to insert a </span><span data-offset-key="fa1ec656063a498baf88e07b50dc8717:1">`name`</span><span data-offset-key="fa1ec656063a498baf88e07b50dc8717:2"> variable inside a string. You would do the following:</span></span></span>
 
@@ -673,15 +672,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58216a38fee94a6a9f6b466a0517b309"><span data-offset-key="58216a38fee94a6a9f6b466a0517b309:0">A few of the common argument specifiers are:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="62ee32aa25514f7a821addcdf00c855b"><span data-offset-key="62ee32aa25514f7a821addcdf00c855b:0">`%s`</span><span data-offset-key="62ee32aa25514f7a821addcdf00c855b:1"> - String (or any object with a string representation)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="62ee32aa25514f7a821addcdf00c855b"><span data-offset-key="62ee32aa25514f7a821addcdf00c855b:0">`%s`</span><span data-offset-key="62ee32aa25514f7a821addcdf00c855b:1"> - String (or any object with a string representation)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10089460b34f42b6a862634b8978a3ec"><span data-offset-key="10089460b34f42b6a862634b8978a3ec:0">`%d`</span><span data-offset-key="10089460b34f42b6a862634b8978a3ec:1"> - Integers</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10089460b34f42b6a862634b8978a3ec"><span data-offset-key="10089460b34f42b6a862634b8978a3ec:0">`%d`</span><span data-offset-key="10089460b34f42b6a862634b8978a3ec:1"> - Integers</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c45fbaa491f243e6b543c0ba4c20b7e8"><span data-offset-key="c45fbaa491f243e6b543c0ba4c20b7e8:0">`%f`</span><span data-offset-key="c45fbaa491f243e6b543c0ba4c20b7e8:1"> - Floating point numbers</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c45fbaa491f243e6b543c0ba4c20b7e8"><span data-offset-key="c45fbaa491f243e6b543c0ba4c20b7e8:0">`%f`</span><span data-offset-key="c45fbaa491f243e6b543c0ba4c20b7e8:1"> - Floating point numbers</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7fb90aa9649f4158a66454de33632db3"><span data-offset-key="7fb90aa9649f4158a66454de33632db3:0">`%.<number of digits>f`</span><span data-offset-key="7fb90aa9649f4158a66454de33632db3:1"> - Floating point numbers with a fixed amount of digits to the dot's right.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7fb90aa9649f4158a66454de33632db3"><span data-offset-key="7fb90aa9649f4158a66454de33632db3:0">`%.<number of digits>f`</span><span data-offset-key="7fb90aa9649f4158a66454de33632db3:1"> - Floating point numbers with a fixed amount of digits to the dot's right.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09bea54d408646c18ef26d6000f283bb"><span data-offset-key="09bea54d408646c18ef26d6000f283bb:0">`%x/%X`</span><span data-offset-key="09bea54d408646c18ef26d6000f283bb:1"> - Integers in hexadecimal (lowercase/uppercase)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09bea54d408646c18ef26d6000f283bb"><span data-offset-key="09bea54d408646c18ef26d6000f283bb:0">`%x/%X`</span><span data-offset-key="09bea54d408646c18ef26d6000f283bb:1"> - Integers in hexadecimal (lowercase/uppercase)</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5fe8ea40841c4703971a1609658b12e7"><span data-offset-key="5fe8ea40841c4703971a1609658b12e7:0">Follow Along</span></span></span>
 
@@ -841,7 +840,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f9ea41e5fd149d8a42c6005105af249"><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:0">The </span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:1">`break`</span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:2"> statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the </span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:3">`break`</span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:4"> statement is inside a nested loop (loop inside another loop), the </span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:5">`break`</span><span data-offset-key="0f9ea41e5fd149d8a42c6005105af249:6"> statement will only terminate the innermost loop.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2746ebe0a432468cb53c90a400bebfdd"><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:0">You can use the </span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:1">`continue`</span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:2"> statement to skip the rest of the code inside a loop </span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:3">*for the current iteration only*</span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:4">. The loop does not terminate entirely but continues with the next iteration.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2746ebe0a432468cb53c90a400bebfdd"><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:0">You can use the </span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:1">`continue`</span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:2"> statement to skip the rest of the code inside a loop </span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:3">_for the current iteration only_</span><span data-offset-key="2746ebe0a432468cb53c90a400bebfdd:4">. The loop does not terminate entirely but continues with the next iteration.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b7a51abfe6de4fc7a15d3a0feaf1507b"><span data-offset-key="b7a51abfe6de4fc7a15d3a0feaf1507b:0">Follow Along</span></span></span>
 

@@ -152,16 +152,15 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Numbers</span>
-============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Numbers</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6968b55045634853bdf01a7deb960ac9"><span data-offset-key="6968b55045634853bdf01a7deb960ac9:0">Computers are designed to perform numerical calculations, but there are some important details about working with numbers that every programmer working with quantitative data should know. Python (and most other programming languages) distinguishes between two different types of numbers:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9867577366724275b65e1563840df89e"><span data-offset-key="9867577366724275b65e1563840df89e:0">Integers are called </span><span data-offset-key="9867577366724275b65e1563840df89e:1">`int`</span><span data-offset-key="9867577366724275b65e1563840df89e:2"> values in the Python language. They can only represent whole numbers (negative, zero, or positive) that don't have a fractional component</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9867577366724275b65e1563840df89e"><span data-offset-key="9867577366724275b65e1563840df89e:0">Integers are called </span><span data-offset-key="9867577366724275b65e1563840df89e:1">`int`</span><span data-offset-key="9867577366724275b65e1563840df89e:2"> values in the Python language. They can only represent whole numbers (negative, zero, or positive) that don't have a fractional component</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26b614db878547d2ac95700de80954ff"><span data-offset-key="26b614db878547d2ac95700de80954ff:0">Real numbers are called </span><span data-offset-key="26b614db878547d2ac95700de80954ff:1">`float`</span><span data-offset-key="26b614db878547d2ac95700de80954ff:2"> values (or </span><span data-offset-key="26b614db878547d2ac95700de80954ff:3">*floating point values*</span><span data-offset-key="26b614db878547d2ac95700de80954ff:4">) in the Python language. They can represent whole or fractional numbers but have some limitations.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26b614db878547d2ac95700de80954ff"><span data-offset-key="26b614db878547d2ac95700de80954ff:0">Real numbers are called </span><span data-offset-key="26b614db878547d2ac95700de80954ff:1">`float`</span><span data-offset-key="26b614db878547d2ac95700de80954ff:2"> values (or </span><span data-offset-key="26b614db878547d2ac95700de80954ff:3">_floating point values_</span><span data-offset-key="26b614db878547d2ac95700de80954ff:4">) in the Python language. They can represent whole or fractional numbers but have some limitations.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ad2ea0d7c7741dfa32851b3a069bab3"><span data-offset-key="0ad2ea0d7c7741dfa32851b3a069bab3:0">The type of a number is evident from the way it is displayed: </span><span data-offset-key="0ad2ea0d7c7741dfa32851b3a069bab3:1">`int`</span><span data-offset-key="0ad2ea0d7c7741dfa32851b3a069bab3:2"> values have no decimal point and </span><span data-offset-key="0ad2ea0d7c7741dfa32851b3a069bab3:3">`float`</span><span data-offset-key="0ad2ea0d7c7741dfa32851b3a069bab3:4"> values always have a decimal point.</span></span></span>
 

@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Index</span>
-==========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Index</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -271,7 +270,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/00_python_cheatsheet.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/00\_python\_cheatsheet.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/00_python_cheatsheet.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -297,7 +296,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/00_python_cheatsheet.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/00\_python\_cheatsheet.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/00_python_cheatsheet.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -325,7 +324,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/01_python_basics.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/01\_python\_basics.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/01_python_basics.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -353,7 +352,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/02_flow_control.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/02\_flow\_control.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/02_flow_control.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -371,7 +370,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/03_functions.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/03\_functions.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/03_functions.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -389,7 +388,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/04_exception_handling.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/04\_exception\_handling.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/04_exception_handling.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -407,7 +406,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/05_lists_and_tuples.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/05\_lists\_and\_tuples.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/05_lists_and_tuples.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -425,7 +424,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/06_dictionaries.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/06\_dictionaries.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/06_dictionaries.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -443,7 +442,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/07_sets.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/07\_sets.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/07_sets.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -461,7 +460,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/08_itertools_module.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/08\_itertools\_module.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/08_itertools_module.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -479,7 +478,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/09_comprehensions.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/09\_comprehensions.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/09_comprehensions.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -525,7 +524,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/10_manipulating_strings.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/10\_manipulating\_strings.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/10_manipulating_strings.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -543,7 +542,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/11_string_formatting.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/11\_string\_formatting.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/11_string_formatting.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -561,7 +560,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/12_regular_expressions.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/12\_regular\_expressions.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/12_regular_expressions.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -579,7 +578,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/13_file_and_directory_paths.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/13\_file\_and\_directory\_paths.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/13_file_and_directory_paths.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -597,7 +596,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/14_reading_and_writing_files.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/14\_reading\_and\_writing\_files.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/14_reading_and_writing_files.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -615,7 +614,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/15_json_yaml.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/15\_json\_yaml.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/15_json_yaml.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -633,7 +632,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/16_debugging.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/16\_debugging.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/16_debugging.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -651,7 +650,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/17_lambda_and_ternary_conditionals_operators.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/17\_lambda\_and\_ternary\_conditionals\_operators.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/17_lambda_and_ternary_conditionals_operators.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -669,7 +668,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/18_args_and_kwargs.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/18\_args\_and\_kwargs.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/18_args_and_kwargs.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -687,7 +686,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/19_context_manager.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/19\_context\_manager.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/19_context_manager.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -705,7 +704,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/20__main__top_level_script_environment.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/20\_\_main\_\_top\_level\_script\_environment.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/20\_\_main\_\_top_level_script_environment.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -723,7 +722,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/21_setup.py.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/21\_setup.py.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/21_setup.py.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -741,7 +740,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/22_dataclasses.ipynb" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/22\_dataclasses.ipynb at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/22_dataclasses.ipynb at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -791,7 +790,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/beginners_python_cheat_sheet_pcc_all.pdf" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/beginners\_python\_cheat\_sheet\_pcc\_all.pdf at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/beginners_python_cheat_sheet_pcc_all.pdf at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -825,7 +824,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_paths_dict.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs\_paths\_dict.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs_paths_dict.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -841,7 +840,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_search_dict.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs\_search\_dict.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs_search_dict.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -861,7 +860,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bfs_search_grid.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs\_search\_grid.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bfs_search_grid.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -905,7 +904,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bipartite_matching_single.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bipartite\_matching\_single.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bipartite_matching_single.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -925,7 +924,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bisect_search.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bisect\_search.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bisect_search.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -945,7 +944,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bst_make_balanced_recur.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bst\_make\_balanced\_recur.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bst_make_balanced_recur.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -965,7 +964,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_inorder_traversal_recur.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bt\_inorder\_traversal\_recur.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bt_inorder_traversal_recur.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -985,7 +984,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/bt_level_order_traversal_iter.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bt\_level\_order\_traversal\_iter.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/bt_level_order_traversal_iter.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1025,7 +1024,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_dict.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/counting\_sort\_dict.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/counting_sort_dict.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1047,7 +1046,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/counting_sort_list.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/counting\_sort\_list.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/counting_sort_list.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1065,7 +1064,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs\_component\_dict.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs_component_dict.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1083,7 +1082,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_component_dict_recur.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs\_component\_dict\_recur.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs_component_dict_recur.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1101,7 +1100,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_components_grid.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs\_components\_grid.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs_components_grid.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1119,7 +1118,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dfs_paths_dict_recur.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs\_paths\_dict\_recur.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dfs_paths_dict_recur.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1137,7 +1136,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_distances_min.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dijkstras\_distances\_min.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dijkstras_distances_min.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 
@@ -1157,7 +1156,7 @@
 
 <a href="https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/dijkstras_path_pq.py" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dijkstras\_path\_pq.py at master · bgoonz/python-gitbook</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">python-gitbook/dijkstras_path_pq.py at master · bgoonz/python-gitbook</span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/python-gitbook development by creating an account on GitHub.</span>
 

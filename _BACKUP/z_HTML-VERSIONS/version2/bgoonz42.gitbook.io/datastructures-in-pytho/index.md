@@ -120,8 +120,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Home</span>
-=========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Home</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -131,7 +130,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">self link: https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/</span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1d1775217d7d451891aa0fc43631d688"><span data-offset-key="1d1775217d7d451891aa0fc43631d688:0">self link: </span></span><a href="index.html" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ebd15a50a9364e9081f95471f40f49f1"><span data-offset-key="ebd15a50a9364e9081f95471f40f49f1:0">https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/</span></span></a><span data-key="ebff3242260947b090f59a60e4ce381c"><span data-offset-key="ebff3242260947b090f59a60e4ce381c:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
@@ -155,9 +154,9 @@
 
 <a href="https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--embedLink-55aeec7a"></a>
 
-<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">GitHub - bgoonz/DATA\_STRUC\_PYTHON\_NOTES</span>
+<span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1">GitHub - bgoonz/DATA_STRUC_PYTHON_NOTES</span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/DATA\_STRUC\_PYTHON\_NOTES development by creating an account on GitHub.</span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1">Contribute to bgoonz/DATA_STRUC_PYTHON_NOTES development by creating an account on GitHub.</span>
 
 <span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">github.com</span>
 
