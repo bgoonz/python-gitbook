@@ -1,5 +1,23 @@
 # Random Examples
 
+{% tabs %}
+{% tab title="Gists" %}
+```python
+
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
+
 {% file src="../../.gitbook/assets/backpedal.py" %}
 
 
