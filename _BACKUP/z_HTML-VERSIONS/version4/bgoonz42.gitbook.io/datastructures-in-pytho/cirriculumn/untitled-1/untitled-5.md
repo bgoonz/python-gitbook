@@ -172,8 +172,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1-Graphs I</span>
-================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D1-Graphs I</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -193,13 +192,13 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="80188b2ecb51476eb9d1ca71d0df051a"><span data-offset-key="80188b2ecb51476eb9d1ca71d0df051a:0">Overview</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5dc41d3f14564bc3bd2d9b736335bc0a"><span data-offset-key="5dc41d3f14564bc3bd2d9b736335bc0a:0">What Are Graphs?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="773fdd830ff54abf9d7cb8b8c4bc6370"><span data-offset-key="773fdd830ff54abf9d7cb8b8c4bc6370:0">Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops. By this definition, </span><span data-offset-key="773fdd830ff54abf9d7cb8b8c4bc6370:1">*all trees are graphs, but not all graphs are trees.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="773fdd830ff54abf9d7cb8b8c4bc6370"><span data-offset-key="773fdd830ff54abf9d7cb8b8c4bc6370:0">Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops. By this definition, </span><span data-offset-key="773fdd830ff54abf9d7cb8b8c4bc6370:1">_all trees are graphs, but not all graphs are trees._</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ccc27f19220e4d0d9cf01a5705ac2ed9"><span data-offset-key="ccc27f19220e4d0d9cf01a5705ac2ed9:0">Components of Graphs</span></span></span>
 
@@ -209,7 +208,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d2fbacb8df5f4e09993a06ef0f99b909"><span data-offset-key="d2fbacb8df5f4e09993a06ef0f99b909:0">An edge denotes a relationship or linkage between the two verts.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3fc0e74d2aca45d7ae075342b1b8c5cd"><span data-offset-key="3fc0e74d2aca45d7ae075342b1b8c5cd:0">What Graphs Represent</span></span></span>
 
@@ -227,7 +226,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c52102a1702247c08cadec35e212c8cb"><span data-offset-key="c52102a1702247c08cadec35e212c8cb:0">And so on.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="92b82403a69445dabf86f748c8d83e18"><span data-offset-key="92b82403a69445dabf86f748c8d83e18:0">Types of Graphs</span></span></span>
 
@@ -251,7 +250,7 @@
 
 <figure><img src="https://camo.githubusercontent.com/e23529f1bd2dfe3227dee64fe174252b0c310d1a/68747470733a2f2f692e696d6775722e636f6d2f58764d44616c302e6a7067" alt="https://camo.githubusercontent.com/e23529f1bd2dfe3227dee64fe174252b0c310d1a/68747470733a2f2f692e696d6775722e636f6d2f58764d44616c302e6a7067" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">https://camo.githubusercontent.com/e23529f1bd2dfe3227dee64fe174252b0c310d1a/68747470733a2f2f692e696d6775722e636f6d2f58764d44616c302e6a7067</span></figcaption></figure>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffc8bc00cc774c65940be4a9cce4654f"><span data-offset-key="ffc8bc00cc774c65940be4a9cce4654f:0">*Note: any undirected graph is automatically cyclic since you can always travel back across the same edge.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffc8bc00cc774c65940be4a9cce4654f"><span data-offset-key="ffc8bc00cc774c65940be4a9cce4654f:0">_Note: any undirected graph is automatically cyclic since you can always travel back across the same edge._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ae0910e304541c49b8866160e4c272e"><span data-offset-key="6ae0910e304541c49b8866160e4c272e:0">If you cannot form a cycle (for example, you cannot arrive at an already-visited vert by following the edges), we call the graph </span><span data-offset-key="6ae0910e304541c49b8866160e4c272e:1">**acyclic**</span><span data-offset-key="6ae0910e304541c49b8866160e4c272e:2">. In the example below, no matter which vert you start at, you cannot follow edges in such a way that you can arrive at an already-visited vert.</span></span></span>
 
@@ -267,7 +266,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35895dd2282f422f9b74bdbfb27d300a"><span data-offset-key="35895dd2282f422f9b74bdbfb27d300a:0">We can further modify weights. For example, if you were building a graph representing a map for bicycle routes, we could give roads with bad car traffic or very steep inclines unnaturally large weights. That way, a routing algorithm would be unlikely to take them. (This is how Google Maps avoids freeways when you ask it for walking directions.)</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d272355a8ace4f55b7027ac9d621d45e"><span data-offset-key="d272355a8ace4f55b7027ac9d621d45e:0">*Note:* </span></span><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2c539154f00e4feabc154a70101658c5"><span data-offset-key="2c539154f00e4feabc154a70101658c5:0"><em>Djikstra's Algorithm (Links to an external site.)</em></span></span></a><span data-key="e534908146184cb995330529ddf2eb03"><span data-offset-key="e534908146184cb995330529ddf2eb03:0"> *is a graph search variant that accounts for edge weights.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d272355a8ace4f55b7027ac9d621d45e"><span data-offset-key="d272355a8ace4f55b7027ac9d621d45e:0">_Note:_ </span></span><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2c539154f00e4feabc154a70101658c5"><span data-offset-key="2c539154f00e4feabc154a70101658c5:0"><em>Djikstra's Algorithm (Links to an external site.)</em></span></span></a><span data-key="e534908146184cb995330529ddf2eb03"><span data-offset-key="e534908146184cb995330529ddf2eb03:0"> _is a graph search variant that accounts for edge weights._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64f3031ed3a942b3810605dfbdab99aa"><span data-offset-key="64f3031ed3a942b3810605dfbdab99aa:0">**Directed Acyclic Graphs (DAGs)**</span></span></span>
 
@@ -277,11 +276,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96285c5db89642cf827fe4897f36db83"><span data-offset-key="96285c5db89642cf827fe4897f36db83:0">A DAG has several applications. DAGs can model many different kinds of information. Below is a small list of possible applications:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d6d16a5dbd0440cbfc3509a5ea2a49d"><span data-offset-key="2d6d16a5dbd0440cbfc3509a5ea2a49d:0">A spreadsheet where a vertex represents each cell and an edge for where one cell's formula uses another cell's value.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d6d16a5dbd0440cbfc3509a5ea2a49d"><span data-offset-key="2d6d16a5dbd0440cbfc3509a5ea2a49d:0">A spreadsheet where a vertex represents each cell and an edge for where one cell's formula uses another cell's value.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2b43e65547f4469ae99f4a2aa215d65"><span data-offset-key="a2b43e65547f4469ae99f4a2aa215d65:0">The milestones and activities of largescale projects where a topological ordering can help optimize the projects' schedule to use as little time as possible.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2b43e65547f4469ae99f4a2aa215d65"><span data-offset-key="a2b43e65547f4469ae99f4a2aa215d65:0">The milestones and activities of largescale projects where a topological ordering can help optimize the projects' schedule to use as little time as possible.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17447ca84b474e80a040721be18365c6"><span data-offset-key="17447ca84b474e80a040721be18365c6:0">Collections of events and their influence on each other like family trees or version histories.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17447ca84b474e80a040721be18365c6"><span data-offset-key="17447ca84b474e80a040721be18365c6:0">Collections of events and their influence on each other like family trees or version histories.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cdd821a1270f43ad8d678de45c4caab8"><span data-offset-key="cdd821a1270f43ad8d678de45c4caab8:0">It is also notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit (in a branch). A child could come from one parent commit or two (in the case of a merge). But there’s no way to go back and form a repeating loop in the git commit hierarchy.</span></span></span>
 
@@ -289,31 +288,31 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7743087db62841098ae893dbf80a6921"><span data-offset-key="7743087db62841098ae893dbf80a6921:0">Before you draw graphs on your own, let's draw some graphs together. For each graph, we will have a description.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f4e52d4cc60644e1b6b00157a16ee9ea"><span data-offset-key="f4e52d4cc60644e1b6b00157a16ee9ea:0">Exercise 1</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bc11b5622b94fbca6c62902f4f11d2b"><span data-offset-key="9bc11b5622b94fbca6c62902f4f11d2b:0">*Draw an undirected graph of 8 verts.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bc11b5622b94fbca6c62902f4f11d2b"><span data-offset-key="9bc11b5622b94fbca6c62902f4f11d2b:0">_Draw an undirected graph of 8 verts._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e7f7a3a62d741459d19b16a445fa000"><span data-offset-key="9e7f7a3a62d741459d19b16a445fa000:0">Remember, from our definitions above that an undirected graph has bidirectional edges. So, we can draw eight verts and then connect them with solid lines (not arrows) anyway we see fit.</span></span></span>
 
 <figure><img src="https://camo.githubusercontent.com/de48eaaa53f7fead48f3d09e394f8b1342f7d226/68747470733a2f2f692e696d6775722e636f6d2f6d6964443358642e6a7067" alt="https://camo.githubusercontent.com/de48eaaa53f7fead48f3d09e394f8b1342f7d226/68747470733a2f2f692e696d6775722e636f6d2f6d6964443358642e6a7067" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">https://camo.githubusercontent.com/de48eaaa53f7fead48f3d09e394f8b1342f7d226/68747470733a2f2f692e696d6775722e636f6d2f6d6964443358642e6a7067</span></figcaption></figure>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="67f31a769bae4582bf0bb75056c9170a"><span data-offset-key="67f31a769bae4582bf0bb75056c9170a:0">Exercise 2</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="692851d472cf46fda1a612509cbe4063"><span data-offset-key="692851d472cf46fda1a612509cbe4063:0">*Draw a directed graph of 7 verts.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="692851d472cf46fda1a612509cbe4063"><span data-offset-key="692851d472cf46fda1a612509cbe4063:0">_Draw a directed graph of 7 verts._</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a459dfb891467e8dc8935f590b6682"><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:0">A directed graph has at least one edge that is </span><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:1">*not*</span><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:2"> bidirectional. So, again, we can draw our seven verts and then connect them with edges. This time, we need to make sure that one of the edges is an arrow pointing in only one direction.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a459dfb891467e8dc8935f590b6682"><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:0">A directed graph has at least one edge that is </span><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:1">_not_</span><span data-offset-key="a3a459dfb891467e8dc8935f590b6682:2"> bidirectional. So, again, we can draw our seven verts and then connect them with edges. This time, we need to make sure that one of the edges is an arrow pointing in only one direction.</span></span></span>
 
 <figure><img src="https://camo.githubusercontent.com/53c2b80679e6731818f5bb72fecdf17579dd0f70/68747470733a2f2f692e696d6775722e636f6d2f3870436f6568412e6a7067" alt="https://camo.githubusercontent.com/53c2b80679e6731818f5bb72fecdf17579dd0f70/68747470733a2f2f692e696d6775722e636f6d2f3870436f6568412e6a7067" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">https://camo.githubusercontent.com/53c2b80679e6731818f5bb72fecdf17579dd0f70/68747470733a2f2f692e696d6775722e636f6d2f3870436f6568412e6a7067</span></figcaption></figure>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f6cc43322aaf453391f423c4a35646b5"><span data-offset-key="f6cc43322aaf453391f423c4a35646b5:0">Exercise 3</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8901fedb35114c40b9feb42370ea70c3"><span data-offset-key="8901fedb35114c40b9feb42370ea70c3:0">*Draw a cyclic directed graph of 5 verts.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8901fedb35114c40b9feb42370ea70c3"><span data-offset-key="8901fedb35114c40b9feb42370ea70c3:0">_Draw a cyclic directed graph of 5 verts._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f3cd93039dd6437a8d9d49e3c9fd6254"><span data-offset-key="f3cd93039dd6437a8d9d49e3c9fd6254:0">This drawing will be similar to one for Exercise 2 because it is a directed graph. However, in this graph, we also need to ensure that it has at least one cycle. Remember that a cycle is when you can follow the graph's edges and arrive at a vertex that you've already visited.</span></span></span>
 
@@ -321,11 +320,11 @@
 
 <figure><img src="https://camo.githubusercontent.com/8609287c7507ded66414ab2be7154d68436b82ac/68747470733a2f2f692e696d6775722e636f6d2f4a424f7572506e2e6a7067" alt="https://camo.githubusercontent.com/8609287c7507ded66414ab2be7154d68436b82ac/68747470733a2f2f692e696d6775722e636f6d2f4a424f7572506e2e6a7067" class="image-52799b3c" /><figcaption><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1" style="max-width: 100%">https://camo.githubusercontent.com/8609287c7507ded66414ab2be7154d68436b82ac/68747470733a2f2f692e696d6775722e636f6d2f4a424f7572506e2e6a7067</span></figcaption></figure>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8503fc5cf3ae497aaa10719ce79e7365"><span data-offset-key="8503fc5cf3ae497aaa10719ce79e7365:0">Exercise 4</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5452f0ef50e240149a5e62345aff8d9f"><span data-offset-key="5452f0ef50e240149a5e62345aff8d9f:0">*Draw a directed acyclic graph (DAG) of 8 verts.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5452f0ef50e240149a5e62345aff8d9f"><span data-offset-key="5452f0ef50e240149a5e62345aff8d9f:0">_Draw a directed acyclic graph (DAG) of 8 verts._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="75d277abdb0441e097fff2a830c6dbcd"><span data-offset-key="75d277abdb0441e097fff2a830c6dbcd:0">Again, this graph will be directed. The difference is that it will be acyclic—we can order a DAG’s vertices linearly so that every edge is directed from earlier to later in the sequence.</span></span></span>
 
@@ -347,7 +346,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="dc1ed504e2494ef5976eee24e9b4b84b"><span data-offset-key="dc1ed504e2494ef5976eee24e9b4b84b:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9830d3a2fa4b4b03b043c37d71a2635f"><span data-offset-key="9830d3a2fa4b4b03b043c37d71a2635f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4498dd3a3648428e9e75d867526294a1"><span data-offset-key="4498dd3a3648428e9e75d867526294a1:0">https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 (Links to an external site.)</span></span></a><span data-key="b05ffe9f88514287af2e8024149c7c6a"><span data-offset-key="b05ffe9f88514287af2e8024149c7c6a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9830d3a2fa4b4b03b043c37d71a2635f"><span data-offset-key="9830d3a2fa4b4b03b043c37d71a2635f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="4498dd3a3648428e9e75d867526294a1"><span data-offset-key="4498dd3a3648428e9e75d867526294a1:0">https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 (Links to an external site.)</span></span></a><span data-key="b05ffe9f88514287af2e8024149c7c6a"><span data-offset-key="b05ffe9f88514287af2e8024149c7c6a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f8fad03e85649ca911380c61eef9cff"><span data-offset-key="8f8fad03e85649ca911380c61eef9cff:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -361,7 +360,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="e41aadb4f32b411badeac2a9bee53058"><span data-offset-key="e41aadb4f32b411badeac2a9bee53058:0">Overview</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="069bd7c478894aaa9f6c155a0a9c18ce"><span data-offset-key="069bd7c478894aaa9f6c155a0a9c18ce:0">Graph Representations</span></span></span>
 
@@ -381,7 +380,7 @@
 
     class Graph:    def __init__(self):        self.vertices = {                            "A": {"B"},                            "B": {"C", "D"},                            "C": {"E"},                            "D": {"F", "G"},                            "E": {"C"},                            "F": {"C"},                            "G": {"A", "F"}                        }
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9746db8b9764f20a22439cb7d05f727"><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:0">Notice that this adjacency </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:1">*list*</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:2"> doesn't use any lists. The </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:3">`vertices`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:4"> collection is a </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:5">`dictionary`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:6"> which lets us access each collection of edges in O(1) constant time. Because a </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:7">`set`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:8"> contains the edges, we can check for edges in O(1) constant time.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9746db8b9764f20a22439cb7d05f727"><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:0">Notice that this adjacency </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:1">_list_</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:2"> doesn't use any lists. The </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:3">`vertices`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:4"> collection is a </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:5">`dictionary`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:6"> which lets us access each collection of edges in O(1) constant time. Because a </span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:7">`set`</span><span data-offset-key="f9746db8b9764f20a22439cb7d05f727:8"> contains the edges, we can check for edges in O(1) constant time.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5ea7b0256723487f8daaa22d64f8eafe"><span data-offset-key="5ea7b0256723487f8daaa22d64f8eafe:0">**Adjacency Matrix**</span></span></span>
 
@@ -395,7 +394,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="384d4fd4054d48cf98fe5ba17b5b51ce"><span data-offset-key="384d4fd4054d48cf98fe5ba17b5b51ce:0">In practice, implementing both the adjacency list and adjacency matrix would contain more information by including </span><span data-offset-key="384d4fd4054d48cf98fe5ba17b5b51ce:1">`Vertex`</span><span data-offset-key="384d4fd4054d48cf98fe5ba17b5b51ce:2"> and </span><span data-offset-key="384d4fd4054d48cf98fe5ba17b5b51ce:3">`Edge`</span><span data-offset-key="384d4fd4054d48cf98fe5ba17b5b51ce:4"> classes.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dbb800d38cb949ca8fd6e37da9283fa7"><span data-offset-key="dbb800d38cb949ca8fd6e37da9283fa7:0">Tradeoffs</span></span></span>
 
@@ -409,23 +408,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe860f31507049eda9333b7ee9ff09d8"><span data-offset-key="fe860f31507049eda9333b7ee9ff09d8:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46e66140df624dc6b4b5b24f0a889ed3"><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:0">*Complexity*</span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:1">: </span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:2">`O(V^2)`</span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:3"> space</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46e66140df624dc6b4b5b24f0a889ed3"><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:0">_Complexity_</span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:1">: </span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:2">`O(V^2)`</span><span data-offset-key="46e66140df624dc6b4b5b24f0a889ed3:3"> space</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19d3325bebe84b9094f480e31488925e"><span data-offset-key="19d3325bebe84b9094f480e31488925e:0">Consider a dense graph where each vertex points to each other vertex. Here, the total number of edges will approach V^2. This fact means that regardless of whether you choose an adjacency list or an adjacency matrix, both will have a comparable space complexity. However, dictionaries and sets are less space-efficient than lists. So, for dense graphs (graphs with a high average number of edges per vertex), the adjacency matrix is more efficient because it uses lists instead of dictionaries and sets.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b37527174fd48e1b2b036545def6294"><span data-offset-key="0b37527174fd48e1b2b036545def6294:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c7717006bfb54cdb8e13504f78ca0ede"><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:0">*Complexity*</span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:1">: </span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:2">`O(V+E)`</span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:3"> space</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c7717006bfb54cdb8e13504f78ca0ede"><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:0">_Complexity_</span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:1">: </span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:2">`O(V+E)`</span><span data-offset-key="c7717006bfb54cdb8e13504f78ca0ede:3"> space</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28a5976e814a4f7cbdc0b1a49544bd94"><span data-offset-key="28a5976e814a4f7cbdc0b1a49544bd94:0">Consider a sparse graph with 100 vertices and only one edge. An adjacency list would have to store all 100 vertices but only needs to keep track of that single edge. The adjacency matrix would need to store 100x100=10,000 connections, even though all but one would be 0.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="448a8eff896a4ca98f3c90dc3d59ade4"><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:0">*Takeaway: The worst-case storage of an adjacency list occurs when the graph is dense. The matrix and list representation have the same complexity (*</span><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:1">`O(V^2)`</span><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:2">*). However, for the general case, the list representation is usually more desirable. Also, since finding a vertex's neighbors is a common task, and adjacency lists make this operation more straightforward, it is most common to use adjacency lists to represent graphs.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="448a8eff896a4ca98f3c90dc3d59ade4"><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:0">_Takeaway: The worst-case storage of an adjacency list occurs when the graph is dense. The matrix and list representation have the same complexity (_</span><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:1">`O(V^2)`</span><span data-offset-key="448a8eff896a4ca98f3c90dc3d59ade4:2">_). However, for the general case, the list representation is usually more desirable. Also, since finding a vertex's neighbors is a common task, and adjacency lists make this operation more straightforward, it is most common to use adjacency lists to represent graphs._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b085f6e792744155b5bd33f601b357a6"><span data-offset-key="b085f6e792744155b5bd33f601b357a6:0">**Add Vertex**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="402933fb515d49cfa0b8672005031431"><span data-offset-key="402933fb515d49cfa0b8672005031431:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aeff04b4c58a42769288f5f2a8795da5"><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:0">*Complexity*</span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:1">: </span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:2">`O(V)`</span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:3"> time</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aeff04b4c58a42769288f5f2a8795da5"><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:0">_Complexity_</span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:1">: </span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:2">`O(V)`</span><span data-offset-key="aeff04b4c58a42769288f5f2a8795da5:3"> time</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a01a51ce0a1f4194a5e54c89c6fe5f0f"><span data-offset-key="a01a51ce0a1f4194a5e54c89c6fe5f0f:0">For an adjacency matrix, we would need to add a new value to the end of each existing row and add a new row.</span></span></span>
 
@@ -437,7 +436,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af666d00e5664da18d3a846fcf8775ce"><span data-offset-key="af666d00e5664da18d3a846fcf8775ce:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2282b0788420458eb2a792459a710272"><span data-offset-key="2282b0788420458eb2a792459a710272:0">*Complexity*</span><span data-offset-key="2282b0788420458eb2a792459a710272:1">: </span><span data-offset-key="2282b0788420458eb2a792459a710272:2">`O(1)`</span><span data-offset-key="2282b0788420458eb2a792459a710272:3"> time</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2282b0788420458eb2a792459a710272"><span data-offset-key="2282b0788420458eb2a792459a710272:0">_Complexity_</span><span data-offset-key="2282b0788420458eb2a792459a710272:1">: </span><span data-offset-key="2282b0788420458eb2a792459a710272:2">`O(1)`</span><span data-offset-key="2282b0788420458eb2a792459a710272:3"> time</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c52312f7c30b459b867ad16dae725185"><span data-offset-key="c52312f7c30b459b867ad16dae725185:0">Adding a vertex is simple in an adjacency list:</span></span></span>
 
@@ -445,29 +444,29 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9362049016474a1a809a14165b8e018a"><span data-offset-key="9362049016474a1a809a14165b8e018a:0">Adding a new key to a dictionary is a constant-time operation.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9fde046dea1463da2ac16aa49b01cc4"><span data-offset-key="e9fde046dea1463da2ac16aa49b01cc4:0">*Takeaway: Adding vertices is very inefficient for adjacency matrices but very efficient for adjacency lists.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9fde046dea1463da2ac16aa49b01cc4"><span data-offset-key="e9fde046dea1463da2ac16aa49b01cc4:0">_Takeaway: Adding vertices is very inefficient for adjacency matrices but very efficient for adjacency lists._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e68f7d5274324f8da986a13b0622dcb1"><span data-offset-key="e68f7d5274324f8da986a13b0622dcb1:0">**Remove Vertex**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14ba7c8e5be140128a5b13cc6d7aeddc"><span data-offset-key="14ba7c8e5be140128a5b13cc6d7aeddc:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa4462c6a89c44108f54e5feb4d5b9e0"><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:0">*Complexity*</span><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:1">: </span><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:2">`O(V^2)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa4462c6a89c44108f54e5feb4d5b9e0"><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:0">_Complexity_</span><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:1">: </span><span data-offset-key="fa4462c6a89c44108f54e5feb4d5b9e0:2">`O(V^2)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffb88203cc4f474c9408bd52f483d08b"><span data-offset-key="ffb88203cc4f474c9408bd52f483d08b:0">Removing vertices is inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex's row and then remove that column from each row. Removing an element from a list requires moving everything after that element over by one slot, which takes an average of </span><span data-offset-key="ffb88203cc4f474c9408bd52f483d08b:1">`V/2`</span><span data-offset-key="ffb88203cc4f474c9408bd52f483d08b:2"> operations. Since we need to do that for every single row in our matrix, that results in </span><span data-offset-key="ffb88203cc4f474c9408bd52f483d08b:3">`V^2`</span><span data-offset-key="ffb88203cc4f474c9408bd52f483d08b:4"> time complexity. We need to reduce each vertex index after our removed index by one as well, which doesn't add to our quadratic time complexity but adds extra operations.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8349e258092f4857b846e21eafa9f1b5"><span data-offset-key="8349e258092f4857b846e21eafa9f1b5:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76890b65acc245ce97603ec9aee34973"><span data-offset-key="76890b65acc245ce97603ec9aee34973:0">*Complexity*</span><span data-offset-key="76890b65acc245ce97603ec9aee34973:1">: </span><span data-offset-key="76890b65acc245ce97603ec9aee34973:2">`O(V)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76890b65acc245ce97603ec9aee34973"><span data-offset-key="76890b65acc245ce97603ec9aee34973:0">_Complexity_</span><span data-offset-key="76890b65acc245ce97603ec9aee34973:1">: </span><span data-offset-key="76890b65acc245ce97603ec9aee34973:2">`O(V)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9233d65b9de7405180a258feac6e4835"><span data-offset-key="9233d65b9de7405180a258feac6e4835:0">We need to visit each vertex for an adjacency list and remove all edges pointing to our removed vertex. Removing elements from sets and dictionaries is an </span><span data-offset-key="9233d65b9de7405180a258feac6e4835:1">`O(1)`</span><span data-offset-key="9233d65b9de7405180a258feac6e4835:2"> operation, resulting in an overall </span><span data-offset-key="9233d65b9de7405180a258feac6e4835:3">`O(V)`</span><span data-offset-key="9233d65b9de7405180a258feac6e4835:4"> time complexity.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7d643a2facab44bf82e927a5814bde03"><span data-offset-key="7d643a2facab44bf82e927a5814bde03:0">*Takeaway: Removing vertices is inefficient in both adjacency matrices and lists but more efficient in lists.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7d643a2facab44bf82e927a5814bde03"><span data-offset-key="7d643a2facab44bf82e927a5814bde03:0">_Takeaway: Removing vertices is inefficient in both adjacency matrices and lists but more efficient in lists._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47382c0a058c4a3d9688f8aa79e9eddd"><span data-offset-key="47382c0a058c4a3d9688f8aa79e9eddd:0">**Add Edge**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bda58f1e203a4e51b98c36007d2ac659"><span data-offset-key="bda58f1e203a4e51b98c36007d2ac659:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc68b2f6ef81469fbef179894472051c"><span data-offset-key="bc68b2f6ef81469fbef179894472051c:0">*Complexity*</span><span data-offset-key="bc68b2f6ef81469fbef179894472051c:1">: </span><span data-offset-key="bc68b2f6ef81469fbef179894472051c:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc68b2f6ef81469fbef179894472051c"><span data-offset-key="bc68b2f6ef81469fbef179894472051c:0">_Complexity_</span><span data-offset-key="bc68b2f6ef81469fbef179894472051c:1">: </span><span data-offset-key="bc68b2f6ef81469fbef179894472051c:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="790a73a8203c460dbebbb2498dcaee92"><span data-offset-key="790a73a8203c460dbebbb2498dcaee92:0">Adding an edge in an adjacency matrix is simple:</span></span></span>
 
@@ -475,7 +474,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee341dd106b34733a7411cfcbb809ec5"><span data-offset-key="ee341dd106b34733a7411cfcbb809ec5:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40b75ab3e94a4674bd5141d7286a8ed4"><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:0">*Complexity*</span><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:1">: </span><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="40b75ab3e94a4674bd5141d7286a8ed4"><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:0">_Complexity_</span><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:1">: </span><span data-offset-key="40b75ab3e94a4674bd5141d7286a8ed4:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c185aea6c1eb4c60aa2df8df74b13c41"><span data-offset-key="c185aea6c1eb4c60aa2df8df74b13c41:0">Adding an edge in an adjacency list is simple:</span></span></span>
 
@@ -483,13 +482,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac8516e6dd044a69b4828a89f5f5b7c3"><span data-offset-key="ac8516e6dd044a69b4828a89f5f5b7c3:0">Both are constant-time operations.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa1e47a31c384a16a2eb12e35ad99392"><span data-offset-key="fa1e47a31c384a16a2eb12e35ad99392:0">*Takeaway: Adding edges to both adjacency matrices and lists is very efficient.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa1e47a31c384a16a2eb12e35ad99392"><span data-offset-key="fa1e47a31c384a16a2eb12e35ad99392:0">_Takeaway: Adding edges to both adjacency matrices and lists is very efficient._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ff4516e88c243f48ca9ca68f4f7363d"><span data-offset-key="3ff4516e88c243f48ca9ca68f4f7363d:0">**Remove Edge**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f78b71105d2f4272a0481a4da7a511d4"><span data-offset-key="f78b71105d2f4272a0481a4da7a511d4:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5735b58dc61748aeb087c7183f6eff67"><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:0">*Complexity*</span><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:1">: </span><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5735b58dc61748aeb087c7183f6eff67"><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:0">_Complexity_</span><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:1">: </span><span data-offset-key="5735b58dc61748aeb087c7183f6eff67:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d15c1b41d48541f1a6ecfdb7d927ca67"><span data-offset-key="d15c1b41d48541f1a6ecfdb7d927ca67:0">Removing an edge from an adjacency matrix is simple:</span></span></span>
 
@@ -497,7 +496,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4ae684ad3bb447aa653427d002fcd90"><span data-offset-key="a4ae684ad3bb447aa653427d002fcd90:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4de6f24fba06420fb24aec463250ebeb"><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:0">*Complexity*</span><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:1">: </span><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4de6f24fba06420fb24aec463250ebeb"><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:0">_Complexity_</span><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:1">: </span><span data-offset-key="4de6f24fba06420fb24aec463250ebeb:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6dec99506e524fd58e9ea1887dc84310"><span data-offset-key="6dec99506e524fd58e9ea1887dc84310:0">Removing an edge from an adjacency list is simple:</span></span></span>
 
@@ -505,13 +504,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24822dc0c2f542ce8bc97e4facfd7b67"><span data-offset-key="24822dc0c2f542ce8bc97e4facfd7b67:0">Both are constant-time operations.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d0fd5b7a7bb4ab99c2a0c294e58b0ed"><span data-offset-key="6d0fd5b7a7bb4ab99c2a0c294e58b0ed:0">*Takeaway: Removing edges from both adjacency matrices and lists is very efficient.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d0fd5b7a7bb4ab99c2a0c294e58b0ed"><span data-offset-key="6d0fd5b7a7bb4ab99c2a0c294e58b0ed:0">_Takeaway: Removing edges from both adjacency matrices and lists is very efficient._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7bc0d26e6c264b16881b044b113d27bc"><span data-offset-key="7bc0d26e6c264b16881b044b113d27bc:0">**Find Edge**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="382ee85f2b574fbcbafc96c825934ba0"><span data-offset-key="382ee85f2b574fbcbafc96c825934ba0:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa466ca19ed24f4fa6d25159d5227d55"><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:0">*Complexity*</span><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:1">: </span><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa466ca19ed24f4fa6d25159d5227d55"><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:0">_Complexity_</span><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:1">: </span><span data-offset-key="fa466ca19ed24f4fa6d25159d5227d55:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac155aae00084db48e094b962e59eec7"><span data-offset-key="ac155aae00084db48e094b962e59eec7:0">Finding an edge in an adjacency matrix is simple:</span></span></span>
 
@@ -519,7 +518,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93295557feac452d845affc00991953d"><span data-offset-key="93295557feac452d845affc00991953d:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fbdeca5fe0f847438fc06a45a155d405"><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:0">*Complexity*</span><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:1">: </span><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fbdeca5fe0f847438fc06a45a155d405"><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:0">_Complexity_</span><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:1">: </span><span data-offset-key="fbdeca5fe0f847438fc06a45a155d405:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76aea0f4c4554ea1a72a1ec588c0e29e"><span data-offset-key="76aea0f4c4554ea1a72a1ec588c0e29e:0">Finding an edge in an adjacency list is simple:</span></span></span>
 
@@ -527,7 +526,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b097d20e3b346e695bbf05fbf9dd82f"><span data-offset-key="5b097d20e3b346e695bbf05fbf9dd82f:0">Both are constant-time operations.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58b8caf9a56144a3a1a40bbdd8f03d8e"><span data-offset-key="58b8caf9a56144a3a1a40bbdd8f03d8e:0">*Takeaway: Finding edges in both adjacency matrices and lists is very efficient.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58b8caf9a56144a3a1a40bbdd8f03d8e"><span data-offset-key="58b8caf9a56144a3a1a40bbdd8f03d8e:0">_Takeaway: Finding edges in both adjacency matrices and lists is very efficient._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25cf816ef02845b7908a7c875a4eb52f"><span data-offset-key="25cf816ef02845b7908a7c875a4eb52f:0">**Get All Edges from Vertex**</span></span></span>
 
@@ -535,7 +534,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b808eed2596745759fefe716d851e2e9"><span data-offset-key="b808eed2596745759fefe716d851e2e9:0">**Adjacency Matrix**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2f12b7eb2784183b6408e099fa9adf4"><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:0">*Complexity*</span><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:1">: </span><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:2">`O(V)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2f12b7eb2784183b6408e099fa9adf4"><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:0">_Complexity_</span><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:1">: </span><span data-offset-key="a2f12b7eb2784183b6408e099fa9adf4:2">`O(V)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2113db3dbb13457d9536f3d66bd3b1c8"><span data-offset-key="2113db3dbb13457d9536f3d66bd3b1c8:0">In an adjacency matrix, this is complicated. You would need to iterate through the entire row and populate a list based on the results:</span></span></span>
 
@@ -543,13 +542,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7489290c35845e28ee0755ba13d098e"><span data-offset-key="b7489290c35845e28ee0755ba13d098e:0">**Adjacency List**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a19c11662226433a9262f3e4cc151f46"><span data-offset-key="a19c11662226433a9262f3e4cc151f46:0">*Complexity*</span><span data-offset-key="a19c11662226433a9262f3e4cc151f46:1">: </span><span data-offset-key="a19c11662226433a9262f3e4cc151f46:2">`O(1)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a19c11662226433a9262f3e4cc151f46"><span data-offset-key="a19c11662226433a9262f3e4cc151f46:0">_Complexity_</span><span data-offset-key="a19c11662226433a9262f3e4cc151f46:1">: </span><span data-offset-key="a19c11662226433a9262f3e4cc151f46:2">`O(1)`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9202b9bc09fb40f0ac0d37bd828b92c7"><span data-offset-key="9202b9bc09fb40f0ac0d37bd828b92c7:0">With an adjacency list, this is as simple as returning the value from the vertex dictionary:</span></span></span>
 
     return self.vertex[v]
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc408d0d307d45268ca5186773e73a3c"><span data-offset-key="dc408d0d307d45268ca5186773e73a3c:0">*Takeaway: Fetching all edges is less efficient in an adjacency matrix than an adjacency list.*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc408d0d307d45268ca5186773e73a3c"><span data-offset-key="dc408d0d307d45268ca5186773e73a3c:0">_Takeaway: Fetching all edges is less efficient in an adjacency matrix than an adjacency list._</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b2ba7b21e3748b28b86fd33ab805bea"><span data-offset-key="5b2ba7b21e3748b28b86fd33ab805bea:0">**Summary**</span></span></span>
 
@@ -565,7 +564,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="28aa6dcab2504d5688dac3ff6fb435bc"><span data-offset-key="28aa6dcab2504d5688dac3ff6fb435bc:0">Together, we will now use the graph shown in the picture above and represent it in both an adjacency list and an adjacency matrix.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d31bd6b495fc4f068e87f45ffd5cb0b0"><span data-offset-key="d31bd6b495fc4f068e87f45ffd5cb0b0:0">Adjacency List</span></span></span>
 
@@ -575,7 +574,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7077aa20425943bbb817d39c954ac219"><span data-offset-key="7077aa20425943bbb817d39c954ac219:0">The difference between this implementation and the previous adjacency list is that this representation allows our edges to have weights.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="93823efa04ad4d0391c8ac680a53c709"><span data-offset-key="93823efa04ad4d0391c8ac680a53c709:0">Adjacency Matrix</span></span></span>
 
@@ -595,7 +594,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a790abc5d86f46ac87ace539762909b4"><span data-offset-key="a790abc5d86f46ac87ace539762909b4:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dae9560c51424c9d9285019b29259164"><span data-offset-key="dae9560c51424c9d9285019b29259164:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c17602abc113459f802e13f5b2e50436"><span data-offset-key="c17602abc113459f802e13f5b2e50436:0">https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs</span></span></a><span data-key="9cbb146b30f643019300e97506e86bcb"><span data-offset-key="9cbb146b30f643019300e97506e86bcb:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dae9560c51424c9d9285019b29259164"><span data-offset-key="dae9560c51424c9d9285019b29259164:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="c17602abc113459f802e13f5b2e50436"><span data-offset-key="c17602abc113459f802e13f5b2e50436:0">https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs</span></span></a><span data-key="9cbb146b30f643019300e97506e86bcb"><span data-offset-key="9cbb146b30f643019300e97506e86bcb:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b3aa64e7052343edba7696073b875c96"><span data-offset-key="b3aa64e7052343edba7696073b875c96:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -613,7 +612,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="c4f75ee3e8984228b093c5c8bd315ae2"><span data-offset-key="c4f75ee3e8984228b093c5c8bd315ae2:0">Follow Along</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3c5ab1914fab4c9c964e26fa340437b9"><span data-offset-key="3c5ab1914fab4c9c964e26fa340437b9:0">The </span><span data-offset-key="3c5ab1914fab4c9c964e26fa340437b9:1">`Vertex`</span><span data-offset-key="3c5ab1914fab4c9c964e26fa340437b9:2"> Class</span></span></span>
 
@@ -631,7 +630,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1eb25c2fd5194a78acde303f7be4e331"><span data-offset-key="1eb25c2fd5194a78acde303f7be4e331:0">We've finished our </span><span data-offset-key="1eb25c2fd5194a78acde303f7be4e331:1">`Vertex`</span><span data-offset-key="1eb25c2fd5194a78acde303f7be4e331:2"> class. Now, let's work on our </span><span data-offset-key="1eb25c2fd5194a78acde303f7be4e331:3">`Graph`</span><span data-offset-key="1eb25c2fd5194a78acde303f7be4e331:4"> class.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e06c12908a1947478aa3b28b16cb074a"><span data-offset-key="e06c12908a1947478aa3b28b16cb074a:0">The </span><span data-offset-key="e06c12908a1947478aa3b28b16cb074a:1">`Graph`</span><span data-offset-key="e06c12908a1947478aa3b28b16cb074a:2"> Class</span></span></span>
 
@@ -667,7 +666,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="3d3c7e912951436faeb84668e1fa9789"><span data-offset-key="3d3c7e912951436faeb84668e1fa9789:0">Additional Resources</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf8540a5658b4780bcb27e663efe56ba"><span data-offset-key="bf8540a5658b4780bcb27e663efe56ba:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b2fe221245ad48f7a76522f16b5eecec"><span data-offset-key="b2fe221245ad48f7a76522f16b5eecec:0">https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/</span></span></a><span data-key="6e99f6065a08486d8406b4380bb604f0"><span data-offset-key="6e99f6065a08486d8406b4380bb604f0:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf8540a5658b4780bcb27e663efe56ba"><span data-offset-key="bf8540a5658b4780bcb27e663efe56ba:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b2fe221245ad48f7a76522f16b5eecec"><span data-offset-key="b2fe221245ad48f7a76522f16b5eecec:0">https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/</span></span></a><span data-key="6e99f6065a08486d8406b4380bb604f0"><span data-offset-key="6e99f6065a08486d8406b4380bb604f0:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a812a704edd4d8a83ed721549df1bb5"><span data-offset-key="8a812a704edd4d8a83ed721549df1bb5:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

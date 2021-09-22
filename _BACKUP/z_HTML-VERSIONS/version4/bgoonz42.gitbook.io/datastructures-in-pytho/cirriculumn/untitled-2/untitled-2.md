@@ -178,8 +178,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Hash Tables I</span>
-==================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D2- Module 02 - Hash Tables I</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -209,29 +208,29 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a41c1d38965548d296ac3278557fff69"><span data-offset-key="a41c1d38965548d296ac3278557fff69:0">**Follow Along**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7640ae01e5d54eaba0b9b20e3aeba5df"><span data-offset-key="7640ae01e5d54eaba0b9b20e3aeba5df:0">**Time and Space Complexity**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="61b128c9a89f4f06aef10e6a9990abf6"><span data-offset-key="61b128c9a89f4f06aef10e6a9990abf6:0">**Lookup**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04760141f8454081aaf4ae201f6e9920"><span data-offset-key="04760141f8454081aaf4ae201f6e9920:0">Hash tables have fast lookups (</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:1">`O(1)`</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:2">) on </span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:3">*average.*</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:4"> However, in the worst case, they have slow (</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:5">`O(n)`</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:6">) lookups. The slow lookups happen when there is a hash collision (two different keys hash to the same index).</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04760141f8454081aaf4ae201f6e9920"><span data-offset-key="04760141f8454081aaf4ae201f6e9920:0">Hash tables have fast lookups (</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:1">`O(1)`</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:2">) on </span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:3">_average._</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:4"> However, in the worst case, they have slow (</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:5">`O(n)`</span><span data-offset-key="04760141f8454081aaf4ae201f6e9920:6">) lookups. The slow lookups happen when there is a hash collision (two different keys hash to the same index).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ad155b33febe444babdef3ef21344465"><span data-offset-key="ad155b33febe444babdef3ef21344465:0">**Insert**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="438c593d75b442e081669eadeeb31cc6"><span data-offset-key="438c593d75b442e081669eadeeb31cc6:0">Hash tables have fast insertions (</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:1">`O(1)`</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:2">) on </span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:3">*average*</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:4">. However, in the worst case, they have slow (</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:5">`O(n)`</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:6">) insertions. Just like with the lookups, the worst case occurs due to hash collisions.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="438c593d75b442e081669eadeeb31cc6"><span data-offset-key="438c593d75b442e081669eadeeb31cc6:0">Hash tables have fast insertions (</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:1">`O(1)`</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:2">) on </span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:3">_average_</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:4">. However, in the worst case, they have slow (</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:5">`O(n)`</span><span data-offset-key="438c593d75b442e081669eadeeb31cc6:6">) insertions. Just like with the lookups, the worst case occurs due to hash collisions.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="25a59f68bab84ef7a59e4b81492a09eb"><span data-offset-key="25a59f68bab84ef7a59e4b81492a09eb:0">**Delete**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7fdbf43e60cd4566bcb8787403a6290a"><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:0">Hash tables have fast deletes (</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:1">`O(1)`</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:2">) on </span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:3">*average*</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:4">. However, in the worst case, they have slow (</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:5">`O(n)`</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:6">) deletions. Just like with lookups and insertions, the worst case occurs due to hash collisions.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7fdbf43e60cd4566bcb8787403a6290a"><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:0">Hash tables have fast deletes (</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:1">`O(1)`</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:2">) on </span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:3">_average_</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:4">. However, in the worst case, they have slow (</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:5">`O(n)`</span><span data-offset-key="7fdbf43e60cd4566bcb8787403a6290a:6">) deletions. Just like with lookups and insertions, the worst case occurs due to hash collisions.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="978e0030f19649cab5f3c4f673c7badb"><span data-offset-key="978e0030f19649cab5f3c4f673c7badb:0">**Space**</span></span></span>
 
@@ -247,19 +246,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="22914a65d30c407097d6118475d43995"><span data-offset-key="22914a65d30c407097d6118475d43995:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0b6c8a8e2e9647308fccbd7799f9070f"><span data-offset-key="0b6c8a8e2e9647308fccbd7799f9070f:0">**Strengths**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="666d1b802c72450d9b5bc654a5a1bf1a"><span data-offset-key="666d1b802c72450d9b5bc654a5a1bf1a:0">The main reason why hash tables are great is that they have constant-time (</span><span data-offset-key="666d1b802c72450d9b5bc654a5a1bf1a:1">`O(1)`</span><span data-offset-key="666d1b802c72450d9b5bc654a5a1bf1a:2">) lookup operations in the average case. That makes them great to use in any situation where you will be conducting many lookup operations. The second reason they are great is that they allow you to use any hashable object as a key. This means they can be used in many different scenarios where you want to map one object (the key) to another object (the value).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6442d75f11c94abf9bf593210d2d0b33"><span data-offset-key="6442d75f11c94abf9bf593210d2d0b33:0">**Weaknesses**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86abeabe52c141a48c27639e5c383c0e"><span data-offset-key="86abeabe52c141a48c27639e5c383c0e:0">One weakness of the hash table is that the mapping goes only one way. So, if you know the key, it's incredibly efficient to retrieve the mapped value to that key. However, if you know the value and want to find the key that is mapped to that value, it is inefficient. Another weakness is that if your hash function produces lots of collisions, the hash table's time complexity gets worse and worse. This is because the underlying linked lists are inefficient for lookups.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2ba59e0de62e4e2f9eb6a61cdab827ad"><span data-offset-key="2ba59e0de62e4e2f9eb6a61cdab827ad:0">**What About Hash Collisions?**</span></span></span>
 
@@ -281,7 +280,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="36959e9fe0794744b35e8f188e1c6ef8"><span data-offset-key="36959e9fe0794744b35e8f188e1c6ef8:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31f3b4a5cb45437eb110b767a9aca0d9"><span data-offset-key="31f3b4a5cb45437eb110b767a9aca0d9:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/hashing-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3e024bfd70c14d6b83e57f917ad6fbbe"><span data-offset-key="3e024bfd70c14d6b83e57f917ad6fbbe:0">https://www.geeksforgeeks.org/hashing-data-structure/ (Links to an external site.)</span></span></a><span data-key="623eab677fb24297a972c20f9c366fed"><span data-offset-key="623eab677fb24297a972c20f9c366fed:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31f3b4a5cb45437eb110b767a9aca0d9"><span data-offset-key="31f3b4a5cb45437eb110b767a9aca0d9:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.geeksforgeeks.org/hashing-data-structure/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3e024bfd70c14d6b83e57f917ad6fbbe"><span data-offset-key="3e024bfd70c14d6b83e57f917ad6fbbe:0">https://www.geeksforgeeks.org/hashing-data-structure/ (Links to an external site.)</span></span></a><span data-key="623eab677fb24297a972c20f9c366fed"><span data-offset-key="623eab677fb24297a972c20f9c366fed:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="a842833696b94eae83e7c8d961b79294"><span data-offset-key="a842833696b94eae83e7c8d961b79294:0">Objective 02 - Describe and implement a hash function</span></span></span>
 
@@ -337,21 +336,21 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59a17eed820b4dfca31803b757fe7887"><span data-offset-key="59a17eed820b4dfca31803b757fe7887:0">We define a hash table as an empty array and hash function as a function that takes a value and converts it into an array index where you will store that value. Let's put the two together. Let's implement a </span><span data-offset-key="59a17eed820b4dfca31803b757fe7887:1">`HashTable`</span><span data-offset-key="59a17eed820b4dfca31803b757fe7887:2"> class where we can:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="266dc9a3be5d47bcb201afcaa3db0643"><span data-offset-key="266dc9a3be5d47bcb201afcaa3db0643:0">Insert values into a hash table</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="266dc9a3be5d47bcb201afcaa3db0643"><span data-offset-key="266dc9a3be5d47bcb201afcaa3db0643:0">Insert values into a hash table</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60e3b08117fa4263a7496e34b74ba0ab"><span data-offset-key="60e3b08117fa4263a7496e34b74ba0ab:0">Retrieve values from a hash table</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60e3b08117fa4263a7496e34b74ba0ab"><span data-offset-key="60e3b08117fa4263a7496e34b74ba0ab:0">Retrieve values from a hash table</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce7581ba9af64993a1fe24d4cf11cf92"><span data-offset-key="ce7581ba9af64993a1fe24d4cf11cf92:0">Delete values from a hash table</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce7581ba9af64993a1fe24d4cf11cf92"><span data-offset-key="ce7581ba9af64993a1fe24d4cf11cf92:0">Delete values from a hash table</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de747b33cfc7427db9eae2ea5e245104"><span data-offset-key="de747b33cfc7427db9eae2ea5e245104:0">Let's start with the insert function. For an insert, I need to insert a value with an associated key. Let's store the instructors at Lambda and where they live. We want to store:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ac0619c0fd5446a8432d979269c097d"><span data-offset-key="4ac0619c0fd5446a8432d979269c097d:0">`("Parth",                                             "California")`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ac0619c0fd5446a8432d979269c097d"><span data-offset-key="4ac0619c0fd5446a8432d979269c097d:0">`("Parth", "California")`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="88ef4022aa8248ada1928173a9500c59"><span data-offset-key="88ef4022aa8248ada1928173a9500c59:0">`("Beej",                                             "Oregon")`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="88ef4022aa8248ada1928173a9500c59"><span data-offset-key="88ef4022aa8248ada1928173a9500c59:0">`("Beej", "Oregon")`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10d040d5948b402e8f104fd300904a88"><span data-offset-key="10d040d5948b402e8f104fd300904a88:0">`("Dustin",                                             "Utah")`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10d040d5948b402e8f104fd300904a88"><span data-offset-key="10d040d5948b402e8f104fd300904a88:0">`("Dustin", "Utah")`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b91df34b10144f04bf29d3a33b424728"><span data-offset-key="b91df34b10144f04bf29d3a33b424728:0">`("Ryan",                                             "Utah")`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b91df34b10144f04bf29d3a33b424728"><span data-offset-key="b91df34b10144f04bf29d3a33b424728:0">`("Ryan", "Utah")`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25b6e4d8ca664797ab9047e536950b56"><span data-offset-key="25b6e4d8ca664797ab9047e536950b56:0">Here's what our </span><span data-offset-key="25b6e4d8ca664797ab9047e536950b56:1">`HashTable`</span><span data-offset-key="25b6e4d8ca664797ab9047e536950b56:2"> class looks like right now:</span></span></span>
 
@@ -361,19 +360,19 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="49d2d85a2d824e42a0d25aa389a6808d"><span data-offset-key="49d2d85a2d824e42a0d25aa389a6808d:0">**Follow Along**</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6197d0b1eba748ffa137c3a382dcdab2"><span data-offset-key="6197d0b1eba748ffa137c3a382dcdab2:0">**The** </span><span data-offset-key="6197d0b1eba748ffa137c3a382dcdab2:1">`put`</span><span data-offset-key="6197d0b1eba748ffa137c3a382dcdab2:2"> **Method**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b054b4a20be4b1e9065223ebbb4cdae"><span data-offset-key="0b054b4a20be4b1e9065223ebbb4cdae:0">Let's create our </span><span data-offset-key="0b054b4a20be4b1e9065223ebbb4cdae:1">`put`</span><span data-offset-key="0b054b4a20be4b1e9065223ebbb4cdae:2"> function. Before we code, let's break down what needs to happen:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea862ea557134336b9358a3f1ba59e1f"><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:0">Given a </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:1">`key`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:2"> and a </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:3">`value`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:4">, insert the respective </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:5">`value`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:6"> into a hash table array using the hashed </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:7">`key`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:8"> to determine the storage location index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea862ea557134336b9358a3f1ba59e1f"><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:0">Given a </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:1">`key`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:2"> and a </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:3">`value`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:4">, insert the respective </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:5">`value`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:6"> into a hash table array using the hashed </span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:7">`key`</span><span data-offset-key="ea862ea557134336b9358a3f1ba59e1f:8"> to determine the storage location index.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04e09023935f42bb80aed9bcb7c7eaf8"><span data-offset-key="04e09023935f42bb80aed9bcb7c7eaf8:0">Let's think about what we need to do:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="122c9601c9e84507ab24ac8ff9edbb95"><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:0">Hash the </span><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:1">`key`</span><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:2"> into an index using the hash function</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="122c9601c9e84507ab24ac8ff9edbb95"><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:0">Hash the </span><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:1">`key`</span><span data-offset-key="122c9601c9e84507ab24ac8ff9edbb95:2"> into an index using the hash function</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a618d2e0e494ae3b098170bedc032e2"><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:0">Put the </span><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:1">`value`</span><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:2"> into that index</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a618d2e0e494ae3b098170bedc032e2"><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:0">Put the </span><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:1">`value`</span><span data-offset-key="5a618d2e0e494ae3b098170bedc032e2:2"> into that index</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="be16a022e0044027a17f211b40978171"><span data-offset-key="be16a022e0044027a17f211b40978171:0">You might be thinking, "What if two keys hash to the same index?" That's a great question, and we will worry about that later. It's a nifty solution 🎉. But for now, let's worry about hashing a key and storing a value.</span></span></span>
 
@@ -387,7 +386,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1be25e5ae28946438da6821982aaae79"><span data-offset-key="1be25e5ae28946438da6821982aaae79:0">There we go! Given a key, we hashed it and inserted a value. Again, we will worry about colliding indices later 😀.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7ab12c4f00e54ba2a9248368b0ed88b7"><span data-offset-key="7ab12c4f00e54ba2a9248368b0ed88b7:0">**The** </span><span data-offset-key="7ab12c4f00e54ba2a9248368b0ed88b7:1">`delete`</span><span data-offset-key="7ab12c4f00e54ba2a9248368b0ed88b7:2"> **Method**</span></span></span>
 
@@ -401,7 +400,7 @@
 
     def delete(self, key):    """    Remove the value stored with the given key.    """    index = self.hash_index(key)    self.storage[index] = None
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8b3ac2f08d314d5f8d2ceb8c79af0fdd"><span data-offset-key="8b3ac2f08d314d5f8d2ceb8c79af0fdd:0">**The** </span><span data-offset-key="8b3ac2f08d314d5f8d2ceb8c79af0fdd:1">`get`</span><span data-offset-key="8b3ac2f08d314d5f8d2ceb8c79af0fdd:2"> **Method**</span></span></span>
 

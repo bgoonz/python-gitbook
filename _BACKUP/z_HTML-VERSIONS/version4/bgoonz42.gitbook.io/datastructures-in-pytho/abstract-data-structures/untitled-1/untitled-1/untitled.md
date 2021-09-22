@@ -214,8 +214,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Randomness</span>
-===============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Randomness</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -229,9 +228,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ae481287b59542358a09da5cea9ded20"><span data-offset-key="ae481287b59542358a09da5cea9ded20:0">Objectives</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c73270fe236495ea2c41b3b86e8c8ae"><span data-offset-key="1c73270fe236495ea2c41b3b86e8c8ae:0">Learn the difference between randomness and pseudorandomness</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c73270fe236495ea2c41b3b86e8c8ae"><span data-offset-key="1c73270fe236495ea2c41b3b86e8c8ae:0">Learn the difference between randomness and pseudorandomness</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="391dc0fbfb174e73b6c9c8580e5bc5da"><span data-offset-key="391dc0fbfb174e73b6c9c8580e5bc5da:0">Learn how how to shuffle an array in O(n) time and space complexity</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="391dc0fbfb174e73b6c9c8580e5bc5da"><span data-offset-key="391dc0fbfb174e73b6c9c8580e5bc5da:0">Learn how how to shuffle an array in O(n) time and space complexity</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="6821a8031b3641b981854f9020fcd872"><span data-offset-key="6821a8031b3641b981854f9020fcd872:0">What is randomness?</span></span></span>
 

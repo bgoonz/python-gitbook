@@ -216,8 +216,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph DFS</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph DFS</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -231,13 +230,13 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="faca0b1cfd9d40e6b3f3211e9b72a97c"><span data-offset-key="faca0b1cfd9d40e6b3f3211e9b72a97c:0">Objective</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c54b9fc3dd04843a1f03480b91b5af9"><span data-offset-key="2c54b9fc3dd04843a1f03480b91b5af9:0">Learn about one of the more famous graph algorithms</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c54b9fc3dd04843a1f03480b91b5af9"><span data-offset-key="2c54b9fc3dd04843a1f03480b91b5af9:0">Learn about one of the more famous graph algorithms</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d6dcbc7e379244738ee1677f6190d2a4"><span data-offset-key="d6dcbc7e379244738ee1677f6190d2a4:0">Learn uses of DFS</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d6dcbc7e379244738ee1677f6190d2a4"><span data-offset-key="d6dcbc7e379244738ee1677f6190d2a4:0">Learn uses of DFS</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="36cfa8a63a8642eba7d093f389dcbe5c"><span data-offset-key="36cfa8a63a8642eba7d093f389dcbe5c:0">Overview</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="87cb2e61e6f545258a476ceeabf30c28"><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:0">When searching a graph, one of the approaches is called </span><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:1">*depth first search*</span><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:2">. This "dives" "down" the graph as far as it can before needing to backtrack and explore another branch.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="87cb2e61e6f545258a476ceeabf30c28"><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:0">When searching a graph, one of the approaches is called </span><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:1">_depth first search_</span><span data-offset-key="87cb2e61e6f545258a476ceeabf30c28:2">. This "dives" "down" the graph as far as it can before needing to backtrack and explore another branch.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c6c7d16cab94ad6b555b68716df2b99"><span data-offset-key="3c6c7d16cab94ad6b555b68716df2b99:0">The algorithm never attempts to explore a vert that it either has explored or is exploring.</span></span></span>
 
@@ -251,15 +250,15 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7a97b0c39fbe4fe0b1b38de43afbe8bc"><span data-offset-key="7a97b0c39fbe4fe0b1b38de43afbe8bc:0">Applications of DFS</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cae980d9ce3c4481a0b7f981ddd79ffd"><span data-offset-key="cae980d9ce3c4481a0b7f981ddd79ffd:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="075213e05fae4d63bdafd51ed3f8d936"><span data-offset-key="075213e05fae4d63bdafd51ed3f8d936:0">Minimum Spanning Trees</span></span></a><span data-key="6bd31627360b45d0bb677433d5c5554b"><span data-offset-key="6bd31627360b45d0bb677433d5c5554b:0"> of weighted graphs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cae980d9ce3c4481a0b7f981ddd79ffd"><span data-offset-key="cae980d9ce3c4481a0b7f981ddd79ffd:0">Finding </span></span><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="075213e05fae4d63bdafd51ed3f8d936"><span data-offset-key="075213e05fae4d63bdafd51ed3f8d936:0">Minimum Spanning Trees</span></span></a><span data-key="6bd31627360b45d0bb677433d5c5554b"><span data-offset-key="6bd31627360b45d0bb677433d5c5554b:0"> of weighted graphs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f022348d935f4bf085fba2e5df415686"><span data-offset-key="f022348d935f4bf085fba2e5df415686:0">Path finding</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f022348d935f4bf085fba2e5df415686"><span data-offset-key="f022348d935f4bf085fba2e5df415686:0">Path finding</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a293b4705cc2466781767acba4e4f032"><span data-offset-key="a293b4705cc2466781767acba4e4f032:0">Detecting cycles in graphs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a293b4705cc2466781767acba4e4f032"><span data-offset-key="a293b4705cc2466781767acba4e4f032:0">Detecting cycles in graphs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="073c8d4ce34a4722819f23bd3c2f4585"><span data-offset-key="073c8d4ce34a4722819f23bd3c2f4585:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Topological_sorting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="dd536d28924b4930a0726ab549b47fd7"><span data-offset-key="dd536d28924b4930a0726ab549b47fd7:0">Topological sorting</span></span></a><span data-key="c962fee86ee64123b8776759f76da6e9"><span data-offset-key="c962fee86ee64123b8776759f76da6e9:0">, useful for scheduling sequences of dependent jobs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="073c8d4ce34a4722819f23bd3c2f4585"><span data-offset-key="073c8d4ce34a4722819f23bd3c2f4585:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Topological_sorting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="dd536d28924b4930a0726ab549b47fd7"><span data-offset-key="dd536d28924b4930a0726ab549b47fd7:0">Topological sorting</span></span></a><span data-key="c962fee86ee64123b8776759f76da6e9"><span data-offset-key="c962fee86ee64123b8776759f76da6e9:0">, useful for scheduling sequences of dependent jobs</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91afffca5e3a4469bfe5842351baa030"><span data-offset-key="91afffca5e3a4469bfe5842351baa030:0">Solving and generating mazes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91afffca5e3a4469bfe5842351baa030"><span data-offset-key="91afffca5e3a4469bfe5842351baa030:0">Solving and generating mazes</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a0e5700e50574edf93f83e3aa84c0c20"><span data-offset-key="a0e5700e50574edf93f83e3aa84c0c20:0">Coloring Vertexes</span></span></span>
 

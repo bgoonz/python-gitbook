@@ -172,8 +172,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3-Module 03 - Hash Tables II</span>
-==================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">D3-Module 03 - Hash Tables II</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -269,7 +268,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffc5b78cc23a4891ba979e61831dde93"><span data-offset-key="ffc5b78cc23a4891ba979e61831dde93:0">The performance of hash tables for search, insertion, and deletion is constant time (</span><span data-offset-key="ffc5b78cc23a4891ba979e61831dde93:1">`O(1)`</span><span data-offset-key="ffc5b78cc23a4891ba979e61831dde93:2">) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (</span><span data-offset-key="ffc5b78cc23a4891ba979e61831dde93:3">`O(n)`</span><span data-offset-key="ffc5b78cc23a4891ba979e61831dde93:4">). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dd38bd4c16984310b24f581336efc566"><span data-offset-key="dd38bd4c16984310b24f581336efc566:0">**Load Factor**</span></span></span>
 
@@ -317,7 +316,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d122654afcd42598059e13a2b51e407"><span data-offset-key="9d122654afcd42598059e13a2b51e407:0">The performance of hash tables for search, insertion, and deletion is constant time (</span><span data-offset-key="9d122654afcd42598059e13a2b51e407:1">`O(1)`</span><span data-offset-key="9d122654afcd42598059e13a2b51e407:2">) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (</span><span data-offset-key="9d122654afcd42598059e13a2b51e407:3">`O(n)`</span><span data-offset-key="9d122654afcd42598059e13a2b51e407:4">). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="18fa3fc0bd894b5589b2fe00598a91d1"><span data-offset-key="18fa3fc0bd894b5589b2fe00598a91d1:0">**Load Factor**</span></span></span>
 
@@ -361,7 +360,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="6e71ad3986404cec85348d4ac905a206"><span data-offset-key="6e71ad3986404cec85348d4ac905a206:0">**Additional Resources**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c0d2586dd9d41588093f063c14c7b44"><span data-offset-key="4c0d2586dd9d41588093f063c14c7b44:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d612dece21144a0cb9a2226bae2ef5aa"><span data-offset-key="d612dece21144a0cb9a2226bae2ef5aa:0">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</span></span></a><span data-key="885390b69b304db5bc2b04a1812bb42b"><span data-offset-key="885390b69b304db5bc2b04a1812bb42b:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c0d2586dd9d41588093f063c14c7b44"><span data-offset-key="4c0d2586dd9d41588093f063c14c7b44:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d612dece21144a0cb9a2226bae2ef5aa"><span data-offset-key="d612dece21144a0cb9a2226bae2ef5aa:0">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</span></span></a><span data-key="885390b69b304db5bc2b04a1812bb42b"><span data-offset-key="885390b69b304db5bc2b04a1812bb42b:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="823fc8b82c764657add7dc684f0501e4"><span data-offset-key="823fc8b82c764657add7dc684f0501e4:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

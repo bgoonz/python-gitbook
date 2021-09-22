@@ -216,8 +216,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph FAQ</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graph FAQ</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -229,35 +228,35 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ff59b80114b346e6876cd586faca1005"><span data-offset-key="ff59b80114b346e6876cd586faca1005:0">Contents</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c89beae51ae4279aea578629b84079a"><span data-offset-key="6c89beae51ae4279aea578629b84079a:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1b292990dfe8480fb1384941bdc9fa23"><span data-offset-key="1b292990dfe8480fb1384941bdc9fa23:0">What is a Graph?</span></span></a><span data-key="5daa9198285a42bfb4f4474ab3d90b87"><span data-offset-key="5daa9198285a42bfb4f4474ab3d90b87:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c89beae51ae4279aea578629b84079a"><span data-offset-key="6c89beae51ae4279aea578629b84079a:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1b292990dfe8480fb1384941bdc9fa23"><span data-offset-key="1b292990dfe8480fb1384941bdc9fa23:0">What is a Graph?</span></span></a><span data-key="5daa9198285a42bfb4f4474ab3d90b87"><span data-offset-key="5daa9198285a42bfb4f4474ab3d90b87:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c3d3440f2044372b170d7570a686a8d"><span data-offset-key="1c3d3440f2044372b170d7570a686a8d:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a15ca912484d4ba9add0984d4a8fa0c9"><span data-offset-key="a15ca912484d4ba9add0984d4a8fa0c9:0">Why is it important to learn Graphs?</span></span></a><span data-key="9fe3473d6bdb46d3ad9a404e6a5ec056"><span data-offset-key="9fe3473d6bdb46d3ad9a404e6a5ec056:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c3d3440f2044372b170d7570a686a8d"><span data-offset-key="1c3d3440f2044372b170d7570a686a8d:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a15ca912484d4ba9add0984d4a8fa0c9"><span data-offset-key="a15ca912484d4ba9add0984d4a8fa0c9:0">Why is it important to learn Graphs?</span></span></a><span data-key="9fe3473d6bdb46d3ad9a404e6a5ec056"><span data-offset-key="9fe3473d6bdb46d3ad9a404e6a5ec056:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f3564bb13bf345c29b7c2160618319fe"><span data-offset-key="f3564bb13bf345c29b7c2160618319fe:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="53d4f89142fa42b6aef4804ebb09db37"><span data-offset-key="53d4f89142fa42b6aef4804ebb09db37:0">How many types of graphs are there?</span></span></a><span data-key="f3dc9b02e1f0409da7efe9262d766185"><span data-offset-key="f3dc9b02e1f0409da7efe9262d766185:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f3564bb13bf345c29b7c2160618319fe"><span data-offset-key="f3564bb13bf345c29b7c2160618319fe:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="53d4f89142fa42b6aef4804ebb09db37"><span data-offset-key="53d4f89142fa42b6aef4804ebb09db37:0">How many types of graphs are there?</span></span></a><span data-key="f3dc9b02e1f0409da7efe9262d766185"><span data-offset-key="f3dc9b02e1f0409da7efe9262d766185:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf0f6c0a8d0b4262ad6abe2b9b5ad607"><span data-offset-key="bf0f6c0a8d0b4262ad6abe2b9b5ad607:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d62f624e0bfc4a4e97702648a81ef8b7"><span data-offset-key="d62f624e0bfc4a4e97702648a81ef8b7:0">What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?</span></span></a><span data-key="1943f216c46e4d69b1848b8ff894fa7a"><span data-offset-key="1943f216c46e4d69b1848b8ff894fa7a:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf0f6c0a8d0b4262ad6abe2b9b5ad607"><span data-offset-key="bf0f6c0a8d0b4262ad6abe2b9b5ad607:0"><span data-slate-zero-width="z">​</span></span></span><a href="file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d62f624e0bfc4a4e97702648a81ef8b7"><span data-offset-key="d62f624e0bfc4a4e97702648a81ef8b7:0">What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?</span></span></a><span data-key="1943f216c46e4d69b1848b8ff894fa7a"><span data-offset-key="1943f216c46e4d69b1848b8ff894fa7a:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="20ffc32f21ca497c884273852e9ddb34"><span data-offset-key="20ffc32f21ca497c884273852e9ddb34:0">Questions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="393a1cc6738b4877bcf28556703f9d06"><span data-offset-key="393a1cc6738b4877bcf28556703f9d06:0">What is a Graph?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="051aaa8934474aa6b01edce5a7e6a6e7"><span data-offset-key="051aaa8934474aa6b01edce5a7e6a6e7:0">A Graph is a data structure that models objects and pairwise relationships between them with nodes and edges. For example: Users and friendships, locations and paths between them, parents and children, etc.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="553fd910fd0b49809eafdf4410cf0666"><span data-offset-key="553fd910fd0b49809eafdf4410cf0666:0">Why is it important to learn Graphs?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="985699a357e24512bc777960688e8f64"><span data-offset-key="985699a357e24512bc777960688e8f64:0">Graphs represent relationships between data. Anytime you can identify a relationship pattern, you can build a graph and often gain insights through a traversal. These insights can be very powerful, allowing you to find new relationships, like users who have a similar taste in music or purchasing.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d99a595767564adbb22c1ebee0e71c74"><span data-offset-key="d99a595767564adbb22c1ebee0e71c74:0">How many types of graphs are there?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7ae2404c99445bd937e4219e55e79f9"><span data-offset-key="d7ae2404c99445bd937e4219e55e79f9:0">Graphs can be directed or undirected, cyclic or acyclic, weighted or unweighted. They can also be represented with different underlying structures including, but not limited to, adjacency lists, adjacency matrices, object and pointers, or a custom solution.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8842f27b160d44b387a252fb29d84950"><span data-offset-key="8842f27b160d44b387a252fb29d84950:0">What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?</span></span></span>
 

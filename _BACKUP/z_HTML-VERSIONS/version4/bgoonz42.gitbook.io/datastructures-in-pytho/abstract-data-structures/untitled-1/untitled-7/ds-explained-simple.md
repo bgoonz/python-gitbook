@@ -204,54 +204,53 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">DS-Explained-Simple</span>
-========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">DS-Explained-Simple</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="9313843c33af49d58fb653b67e6ed99b"><span data-offset-key="9313843c33af49d58fb653b67e6ed99b:0">Linear Data Structures</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba3d0d1e24e84534993e08a0de5e3929"><span data-offset-key="ba3d0d1e24e84534993e08a0de5e3929:0">Linear data structures store elements in a sequential manner. These are the most fundamental and widely used data structures.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b"><span data-offset-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b:0">**Array/List**</span><span data-offset-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b:1"> – An array or list is a linear data structure where elements are stored in a sequential manner, numbered from 0 to n-1, where n is the size of the array. The array elements can be accessed using their index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b"><span data-offset-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b:0">**Array/List**</span><span data-offset-key="c3dfa4aa6ffd4913a5bb0f3433a28c8b:1"> – An array or list is a linear data structure where elements are stored in a sequential manner, numbered from 0 to n-1, where n is the size of the array. The array elements can be accessed using their index.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="555fcabeb40e4d35a8365a0a6f8e3d29"><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:0">**Stacks**</span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:1"> – A stack is a linear data structure that stores data in a </span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:2">`Last In, First Out`</span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:3"> (LIFO) manner.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="555fcabeb40e4d35a8365a0a6f8e3d29"><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:0">**Stacks**</span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:1"> – A stack is a linear data structure that stores data in a </span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:2">`Last In, First Out`</span><span data-offset-key="555fcabeb40e4d35a8365a0a6f8e3d29:3"> (LIFO) manner.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b098929d3ec4a028169cc9f3283920b"><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:0">**Queues**</span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:1"> – A data structure that stores data in a </span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:2">`First In, First Out`</span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:3"> (FIFO) manner.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b098929d3ec4a028169cc9f3283920b"><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:0">**Queues**</span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:1"> – A data structure that stores data in a </span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:2">`First In, First Out`</span><span data-offset-key="7b098929d3ec4a028169cc9f3283920b:3"> (FIFO) manner.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ec5a80b50ff4b20a8541cb2fc701feb"><span data-offset-key="9ec5a80b50ff4b20a8541cb2fc701feb:0">**Linked Lists**</span><span data-offset-key="9ec5a80b50ff4b20a8541cb2fc701feb:1"> – A linear data structure that stores elements sequentially but cannot be accessed directly using an index. It consists of links to the next item, along with the data.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ec5a80b50ff4b20a8541cb2fc701feb"><span data-offset-key="9ec5a80b50ff4b20a8541cb2fc701feb:0">**Linked Lists**</span><span data-offset-key="9ec5a80b50ff4b20a8541cb2fc701feb:1"> – A linear data structure that stores elements sequentially but cannot be accessed directly using an index. It consists of links to the next item, along with the data.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="47965d4906e84166953a3b86f1053afd"><span data-offset-key="47965d4906e84166953a3b86f1053afd:0">Non-Linear Data Structures</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81627a686937450d9f6f2b04b69b7f74"><span data-offset-key="81627a686937450d9f6f2b04b69b7f74:0">Non-Linear data structures are more complex data structures, that are not sequential in manner.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d3d1b594fb04e4ca38410de16861ce0"><span data-offset-key="3d3d1b594fb04e4ca38410de16861ce0:0">**Trees**</span><span data-offset-key="3d3d1b594fb04e4ca38410de16861ce0:1"> – Trees store data in a tree-like manner. They consist of a root, which contains the data and links to children nodes. The children nodes may in turn contain more children. They are the building blocks of many other Data Structures.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d3d1b594fb04e4ca38410de16861ce0"><span data-offset-key="3d3d1b594fb04e4ca38410de16861ce0:0">**Trees**</span><span data-offset-key="3d3d1b594fb04e4ca38410de16861ce0:1"> – Trees store data in a tree-like manner. They consist of a root, which contains the data and links to children nodes. The children nodes may in turn contain more children. They are the building blocks of many other Data Structures.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76bee104661b42188e3f399e7f12e282"><span data-offset-key="76bee104661b42188e3f399e7f12e282:0">**Heaps**</span><span data-offset-key="76bee104661b42188e3f399e7f12e282:1"> – A heap is a tree, which is used as a priority queue. There are max-heaps, and min-heaps that contain the maximum value and the minimum value at the root node, respectively.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76bee104661b42188e3f399e7f12e282"><span data-offset-key="76bee104661b42188e3f399e7f12e282:0">**Heaps**</span><span data-offset-key="76bee104661b42188e3f399e7f12e282:1"> – A heap is a tree, which is used as a priority queue. There are max-heaps, and min-heaps that contain the maximum value and the minimum value at the root node, respectively.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01bebe31d3a24c929073ca530629f385"><span data-offset-key="01bebe31d3a24c929073ca530629f385:0">**Hash Tables**</span><span data-offset-key="01bebe31d3a24c929073ca530629f385:1"> – Hash Tables are data structures that contain key-value pairs. They use the concept of hashing to determine the keys in the tables. Usually used for quick access of values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01bebe31d3a24c929073ca530629f385"><span data-offset-key="01bebe31d3a24c929073ca530629f385:0">**Hash Tables**</span><span data-offset-key="01bebe31d3a24c929073ca530629f385:1"> – Hash Tables are data structures that contain key-value pairs. They use the concept of hashing to determine the keys in the tables. Usually used for quick access of values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8fc918ff9a38491eb34c4ec1271d034e"><span data-offset-key="8fc918ff9a38491eb34c4ec1271d034e:0">**Graphs**</span><span data-offset-key="8fc918ff9a38491eb34c4ec1271d034e:1"> – Graphs are complex data structures that implement a collection of nodes, connected together by vertices.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8fc918ff9a38491eb34c4ec1271d034e"><span data-offset-key="8fc918ff9a38491eb34c4ec1271d034e:0">**Graphs**</span><span data-offset-key="8fc918ff9a38491eb34c4ec1271d034e:1"> – Graphs are complex data structures that implement a collection of nodes, connected together by vertices.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0d12200357264aba8679e54b1e30466d"><span data-offset-key="0d12200357264aba8679e54b1e30466d:0">Python Collections and In-Built Data Structures</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fc4c49a9ff14489b99d1f3e9b913fbb"><span data-offset-key="1fc4c49a9ff14489b99d1f3e9b913fbb:0">**Tuples**</span><span data-offset-key="1fc4c49a9ff14489b99d1f3e9b913fbb:1"> – They are sequential data structures, that are similar to lists, but they’re immutable.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1fc4c49a9ff14489b99d1f3e9b913fbb"><span data-offset-key="1fc4c49a9ff14489b99d1f3e9b913fbb:0">**Tuples**</span><span data-offset-key="1fc4c49a9ff14489b99d1f3e9b913fbb:1"> – They are sequential data structures, that are similar to lists, but they’re immutable.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="adc53dbd31a04122b1cb6de83e24a146"><span data-offset-key="adc53dbd31a04122b1cb6de83e24a146:0">**Dictionary**</span><span data-offset-key="adc53dbd31a04122b1cb6de83e24a146:1"> – Dictionaries are python-specific data structures that are similar to hashtables, and are used for quick access of values.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="adc53dbd31a04122b1cb6de83e24a146"><span data-offset-key="adc53dbd31a04122b1cb6de83e24a146:0">**Dictionary**</span><span data-offset-key="adc53dbd31a04122b1cb6de83e24a146:1"> – Dictionaries are python-specific data structures that are similar to hashtables, and are used for quick access of values.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4fcd514f69342b1acc9b1f424dff2af"><span data-offset-key="a4fcd514f69342b1acc9b1f424dff2af:0">**Sets**</span><span data-offset-key="a4fcd514f69342b1acc9b1f424dff2af:1"> – A collection of unordered distinct elements, that have quick access time.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4fcd514f69342b1acc9b1f424dff2af"><span data-offset-key="a4fcd514f69342b1acc9b1f424dff2af:0">**Sets**</span><span data-offset-key="a4fcd514f69342b1acc9b1f424dff2af:1"> – A collection of unordered distinct elements, that have quick access time.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e7fb923ea5e4f7dbf25fc807bd68152"><span data-offset-key="1e7fb923ea5e4f7dbf25fc807bd68152:0">**Collections**</span><span data-offset-key="1e7fb923ea5e4f7dbf25fc807bd68152:1"> – Collections are a group of optimized implementations for data structures like dictionaries, maps, tuples, queues.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e7fb923ea5e4f7dbf25fc807bd68152"><span data-offset-key="1e7fb923ea5e4f7dbf25fc807bd68152:0">**Collections**</span><span data-offset-key="1e7fb923ea5e4f7dbf25fc807bd68152:1"> – Collections are a group of optimized implementations for data structures like dictionaries, maps, tuples, queues.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8e1c790f5870484e9ace7ab6a322b6a2"><span data-offset-key="8e1c790f5870484e9ace7ab6a322b6a2:0">Now that we have an overview of data structures, let’s delve into the nuances of each of them in the upcoming articles of the series. Here are some resources to get you started with interview and programming preparation.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3d68000671764df59246fa5e2225f287"><span data-offset-key="3d68000671764df59246fa5e2225f287:0">Choose a Platform</span></span></span>
 
@@ -265,7 +264,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="031ace3301ea4c11b48d355840e91b9c"><span data-offset-key="031ace3301ea4c11b48d355840e91b9c:0">LeetCode is an excellent website for company-specific preparation. If you pay for LeetCode Premium, you get company-specific questions. This is great for preparing for companies like FaceBook, Microsoft, NetFlix, Amazon, Apple, Google, etc. They also have contests and real-time mock interviews that boost your confidence and skills.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="db6ee5194bc24fcf8e2df5d73532d125"><span data-offset-key="db6ee5194bc24fcf8e2df5d73532d125:0">Implement the Data Structures from Scratch</span></span></span>
 

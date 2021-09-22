@@ -178,8 +178,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Hash Table / Hash Map In Python:</span>
-=====================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Hash Table / Hash Map In Python:</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -193,23 +192,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c0d7cfd20b1426bae55a9093961cbad"><span data-offset-key="5c0d7cfd20b1426bae55a9093961cbad:0">Before moving ahead, let us take a look at all the topics of discussion:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ab00c86a8a94813a0d32302de4692be"><span data-offset-key="2ab00c86a8a94813a0d32302de4692be:0">What is a Hash table or a Hashmap in Python?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ab00c86a8a94813a0d32302de4692be"><span data-offset-key="2ab00c86a8a94813a0d32302de4692be:0">What is a Hash table or a Hashmap in Python?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2284c87bd5e7408694a82bc6ef0583dc"><span data-offset-key="2284c87bd5e7408694a82bc6ef0583dc:0">Hash table vs Hashmap</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2284c87bd5e7408694a82bc6ef0583dc"><span data-offset-key="2284c87bd5e7408694a82bc6ef0583dc:0">Hash table vs Hashmap</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78fb883b772d470d8d818fa06c1f95be"><span data-offset-key="78fb883b772d470d8d818fa06c1f95be:0">Creating Dictionaries</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78fb883b772d470d8d818fa06c1f95be"><span data-offset-key="78fb883b772d470d8d818fa06c1f95be:0">Creating Dictionaries</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0eeb5db74ab342a6b384323189270f62"><span data-offset-key="0eeb5db74ab342a6b384323189270f62:0">Creating Nested Dictionaries</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0eeb5db74ab342a6b384323189270f62"><span data-offset-key="0eeb5db74ab342a6b384323189270f62:0">Creating Nested Dictionaries</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f88f9a8a6ea42cfa2316379dd7c5f5b"><span data-offset-key="7f88f9a8a6ea42cfa2316379dd7c5f5b:0">Performing Operations on Hash Tables using dictionaries</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7f88f9a8a6ea42cfa2316379dd7c5f5b"><span data-offset-key="7f88f9a8a6ea42cfa2316379dd7c5f5b:0">Performing Operations on Hash Tables using dictionaries</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ce34d3da7ef41c99150dce4e883bdfa"><span data-offset-key="1ce34d3da7ef41c99150dce4e883bdfa:0">Accessing Values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ce34d3da7ef41c99150dce4e883bdfa"><span data-offset-key="1ce34d3da7ef41c99150dce4e883bdfa:0">Accessing Values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2de3a8edd3b641749691dae9c8722674"><span data-offset-key="2de3a8edd3b641749691dae9c8722674:0">Updating Values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2de3a8edd3b641749691dae9c8722674"><span data-offset-key="2de3a8edd3b641749691dae9c8722674:0">Updating Values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4033fefc839546658509424470981722"><span data-offset-key="4033fefc839546658509424470981722:0">Deleting Items</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4033fefc839546658509424470981722"><span data-offset-key="4033fefc839546658509424470981722:0">Deleting Items</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4493e799c3b411087632fb31489918e"><span data-offset-key="c4493e799c3b411087632fb31489918e:0">Converting a Dictionary into a Dataframe</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4493e799c3b411087632fb31489918e"><span data-offset-key="c4493e799c3b411087632fb31489918e:0">Converting a Dictionary into a Dataframe</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="528617e53b314f1fb61b43cc402ccf4b"><span data-offset-key="528617e53b314f1fb61b43cc402ccf4b:0">In computer science, a Hash table or a Hashmap is a type of data structure that maps keys to its value pairs (implement abstract array data types). It basically makes use of a function that computes an index value that in turn holds the elements to be searched, inserted, removed, etc. This makes it easy and fast to access data. In general, hash tables store key-value pairs and the key is generated using a hash function.</span></span></span>
 
@@ -223,9 +222,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e76617d316c42698c8a5856618fe657"><span data-offset-key="7e76617d316c42698c8a5856618fe657:0">Dictionaries can be created in two ways:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a0a1d1398634496975ed5bc4ac8e1c3"><span data-offset-key="8a0a1d1398634496975ed5bc4ac8e1c3:0">Using curly braces ({})</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a0a1d1398634496975ed5bc4ac8e1c3"><span data-offset-key="8a0a1d1398634496975ed5bc4ac8e1c3:0">Using curly braces ({})</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b7f26b8630a42c0b65dcf0ed8558fe0"><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:0">Using the </span><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:1">*dict()*</span><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:2"> function</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b7f26b8630a42c0b65dcf0ed8558fe0"><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:0">Using the </span><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:1">_dict()_</span><span data-offset-key="3b7f26b8630a42c0b65dcf0ed8558fe0:2"> function</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="4299142bb64e40e199ca9b688cf656c1"><span data-offset-key="4299142bb64e40e199ca9b688cf656c1:0">Using curly braces:</span></span></span>
 
@@ -241,7 +240,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="c5be11fcb83d40a1bfabe0dcdfe597a1"><span data-offset-key="c5be11fcb83d40a1bfabe0dcdfe597a1:0">Using dict() function:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a20aa849c72445cfb9e0a8bf030bdaca"><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:0">Python has a built-in function, </span><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:1">*dict()*</span><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:2"> that can be used to create </span></span><a href="https://www.edureka.co/blog/sort-dictionary-by-value-in-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7244a3075f2e45ca9bb1faeed4baa429"><span data-offset-key="7244a3075f2e45ca9bb1faeed4baa429:0">dictionaries</span></span></a><span data-key="ade8bf5c1f394583ba1ceb8b2df90803"><span data-offset-key="ade8bf5c1f394583ba1ceb8b2df90803:0"> in Python. For example:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a20aa849c72445cfb9e0a8bf030bdaca"><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:0">Python has a built-in function, </span><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:1">_dict()_</span><span data-offset-key="a20aa849c72445cfb9e0a8bf030bdaca:2"> that can be used to create </span></span><a href="https://www.edureka.co/blog/sort-dictionary-by-value-in-python/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7244a3075f2e45ca9bb1faeed4baa429"><span data-offset-key="7244a3075f2e45ca9bb1faeed4baa429:0">dictionaries</span></span></a><span data-key="ade8bf5c1f394583ba1ceb8b2df90803"><span data-offset-key="ade8bf5c1f394583ba1ceb8b2df90803:0"> in Python. For example:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2656fbe3e56d4afdbdfb61f803547257"><span data-offset-key="2656fbe3e56d4afdbdfb61f803547257:0">**EXAMPLE:**</span></span></span>
 
@@ -269,21 +268,21 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="36407c9f94ea4b0783525ef6da2f37b8"><span data-offset-key="36407c9f94ea4b0783525ef6da2f37b8:0">There are a number of operations that can be performed on has tables in Python through dictionaries such as:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d34e4bec755455f9025b0406ed4603d"><span data-offset-key="4d34e4bec755455f9025b0406ed4603d:0">Accessing Values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d34e4bec755455f9025b0406ed4603d"><span data-offset-key="4d34e4bec755455f9025b0406ed4603d:0">Accessing Values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1c1cfb4db164238841580a72348bbb1"><span data-offset-key="b1c1cfb4db164238841580a72348bbb1:0">Updating Values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1c1cfb4db164238841580a72348bbb1"><span data-offset-key="b1c1cfb4db164238841580a72348bbb1:0">Updating Values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bef9fb391fad4b7398d1c8464e1ebf73"><span data-offset-key="bef9fb391fad4b7398d1c8464e1ebf73:0">Deleting Element</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bef9fb391fad4b7398d1c8464e1ebf73"><span data-offset-key="bef9fb391fad4b7398d1c8464e1ebf73:0">Deleting Element</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ac99b839f38c424fa545727769ce0adb"><span data-offset-key="ac99b839f38c424fa545727769ce0adb:0">Accessing Values:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f9cdb8d9c3449e79e6d02f3e88410c6"><span data-offset-key="1f9cdb8d9c3449e79e6d02f3e88410c6:0">The values of a dictionary can be accessed in many ways such as:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bf2d82526ce40e0bcd87ace51c51909"><span data-offset-key="5bf2d82526ce40e0bcd87ace51c51909:0">Using key values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bf2d82526ce40e0bcd87ace51c51909"><span data-offset-key="5bf2d82526ce40e0bcd87ace51c51909:0">Using key values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9c2167cfc58432394fd59eb7a860dbd"><span data-offset-key="d9c2167cfc58432394fd59eb7a860dbd:0">Using functions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9c2167cfc58432394fd59eb7a860dbd"><span data-offset-key="d9c2167cfc58432394fd59eb7a860dbd:0">Using functions</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a93a9de7bd2946fd855ebe532edfccfe"><span data-offset-key="a93a9de7bd2946fd855ebe532edfccfe:0">Implementing the for loop</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a93a9de7bd2946fd855ebe532edfccfe"><span data-offset-key="a93a9de7bd2946fd855ebe532edfccfe:0">Implementing the for loop</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="33aa28fef62c4e8aa7079b902dec0e9e"><span data-offset-key="33aa28fef62c4e8aa7079b902dec0e9e:0">Using key values:</span></span></span>
 
@@ -305,7 +304,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a20ef2260a44acbb85195a15fc2f97a"><span data-offset-key="5a20ef2260a44acbb85195a15fc2f97a:0">**OUTPUT:**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90f22dd128f74fe8a3b857f4c2ac8efa"><span data-offset-key="90f22dd128f74fe8a3b857f4c2ac8efa:0">dict\_keys(\[‘Dave’, ‘Ava’, ‘Joe’\]) dict\_values(\[‘001’, ‘002’, ‘003’\]) 001</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90f22dd128f74fe8a3b857f4c2ac8efa"><span data-offset-key="90f22dd128f74fe8a3b857f4c2ac8efa:0">dict_keys(\[‘Dave’, ‘Ava’, ‘Joe’\]) dict_values(\[‘001’, ‘002’, ‘003’\]) 001</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b11d954647c34ad09683916eb7c2fad4"><span data-offset-key="b11d954647c34ad09683916eb7c2fad4:0">Implementing the for loop:</span></span></span>
 
@@ -325,7 +324,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="63ff563df2814a33a5541ca0e83514c3"><span data-offset-key="63ff563df2814a33a5541ca0e83514c3:0">**OUTPUT:**</span><span data-offset-key="63ff563df2814a33a5541ca0e83514c3:1"> {‘Dave’: ‘004’, ‘Ava’: ‘002’, ‘Joe’: ‘003’, ‘Chris’: ‘005’}</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e71f0a0ff83c421e96fdb06dd0cda940"><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:0">There a number of functions that allow you to delete items from a dictionary such as </span><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:1">*del(), pop(), popitem(), clear(),*</span><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:2"> etc. For example:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e71f0a0ff83c421e96fdb06dd0cda940"><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:0">There a number of functions that allow you to delete items from a dictionary such as </span><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:1">_del(), pop(), popitem(), clear(),_</span><span data-offset-key="e71f0a0ff83c421e96fdb06dd0cda940:2"> etc. For example:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba28dae0b63748cd9e937b4c21184d58"><span data-offset-key="ba28dae0b63748cd9e937b4c21184d58:0">**EXAMPLE:**</span></span></span>
 

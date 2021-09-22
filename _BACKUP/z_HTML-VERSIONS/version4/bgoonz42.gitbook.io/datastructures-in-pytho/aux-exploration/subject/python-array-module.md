@@ -186,8 +186,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Array Module</span>
-========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Array Module</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -199,7 +198,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c55f06a200341aab9f6ffd48d24dbbf"><span data-offset-key="8c55f06a200341aab9f6ffd48d24dbbf:0">This article takes you from basic to advanced knowledge of Python array modules. So, let’s get started. </span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="85bc1b9331b54bf38c2f027160539de6"><span data-offset-key="85bc1b9331b54bf38c2f027160539de6:0">What is Array Module in Python?</span></span></span>
 
@@ -213,7 +212,7 @@
 
 <table><colgroup><col style="width: 25%" /><col style="width: 25%" /><col style="width: 25%" /><col style="width: 25%" /></colgroup><tbody><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="55644a74ee074fca8f952885ca283649"><span data-offset-key="55644a74ee074fca8f952885ca283649:0"><strong>Type Code</strong></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="a15f1fad1e564b34b4bd462addc881c9"><span data-offset-key="a15f1fad1e564b34b4bd462addc881c9:0"><strong>C Type</strong></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="63f96d6563754316ac98ab9e9c8fb586"><span data-offset-key="63f96d6563754316ac98ab9e9c8fb586:0"><strong>Python Type</strong></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="f9c5b67228a140d783e1e3c14bfb1492"><span data-offset-key="f9c5b67228a140d783e1e3c14bfb1492:0"><strong>Minimum size (bytes)</strong></span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3b59a52ff874a7da95447781a7099fe"><span data-offset-key="a3b59a52ff874a7da95447781a7099fe:0">b</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d852c9c07ec4539b2aaebc6aa8c379e"><span data-offset-key="6d852c9c07ec4539b2aaebc6aa8c379e:0">signed char</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2729e5784c1b43d7b9665070619a59d7"><span data-offset-key="2729e5784c1b43d7b9665070619a59d7:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c21817f24bd4df8988f6b3421ea5c6f"><span data-offset-key="1c21817f24bd4df8988f6b3421ea5c6f:0">1</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dfb9a624ef24d2f81e267206a5b87e3"><span data-offset-key="0dfb9a624ef24d2f81e267206a5b87e3:0">B</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c7b5865a620e407f9e6a13b69a046f66"><span data-offset-key="c7b5865a620e407f9e6a13b69a046f66:0">unsigned char</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7ef33bc342f042ac8d68d84f46b517b8"><span data-offset-key="7ef33bc342f042ac8d68d84f46b517b8:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6be5523b03084e26a1bf8fcd2fdae0d0"><span data-offset-key="6be5523b03084e26a1bf8fcd2fdae0d0:0">1</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8d294d96fa5f43e297787e62a885c70b"><span data-offset-key="8d294d96fa5f43e297787e62a885c70b:0">u</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="542a744d73ab471e8021d2c38245e3e9"><span data-offset-key="542a744d73ab471e8021d2c38245e3e9:0">Py_UNICODE</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="611a569bd303474e8ee6d6a9e516756a"><span data-offset-key="611a569bd303474e8ee6d6a9e516756a:0">Unicode character;</span></span></span></p><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5238475b48844b83afae2423969f8b16"><span data-offset-key="5238475b48844b83afae2423969f8b16:0">deprecated since Python 3.3</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77dc45d02b2e4f73921548fb75ffc491"><span data-offset-key="77dc45d02b2e4f73921548fb75ffc491:0">2</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f28dcf192c0484b8b91e1c6bbb70a4d"><span data-offset-key="3f28dcf192c0484b8b91e1c6bbb70a4d:0">h</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43ba5ab49dad472c81adb41cd038b67f"><span data-offset-key="43ba5ab49dad472c81adb41cd038b67f:0">signed short</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0805cb211bfd47d4a40ac67c21595480"><span data-offset-key="0805cb211bfd47d4a40ac67c21595480:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dfce0656c191452cbb11d393fd5c4b32"><span data-offset-key="dfce0656c191452cbb11d393fd5c4b32:0">2</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a9a89ac06c2a4384917d8ec9dcfc3dbe"><span data-offset-key="a9a89ac06c2a4384917d8ec9dcfc3dbe:0">H</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9cc22e8d3e6459fa847d63aee67bc62"><span data-offset-key="b9cc22e8d3e6459fa847d63aee67bc62:0">unsigned short</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="54d4e1c71c364abfbed653d6d554c2f7"><span data-offset-key="54d4e1c71c364abfbed653d6d554c2f7:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="019e80787d2f41e680e3ea52116d3aaa"><span data-offset-key="019e80787d2f41e680e3ea52116d3aaa:0">2</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b73cd7032b0246ef9cf8766dc53758f4"><span data-offset-key="b73cd7032b0246ef9cf8766dc53758f4:0">i</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c62899278e6f41a1a30324e6c752bc85"><span data-offset-key="c62899278e6f41a1a30324e6c752bc85:0">signed int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7cd50877bb72495b82b51457c6261a42"><span data-offset-key="7cd50877bb72495b82b51457c6261a42:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a1d21dfb86ab464a8f652d1d161c92fd"><span data-offset-key="a1d21dfb86ab464a8f652d1d161c92fd:0">2</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="51903586b137472ab731c2d40a8c3cc0"><span data-offset-key="51903586b137472ab731c2d40a8c3cc0:0">I</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="155591bcbf6746b19deda611b314d714"><span data-offset-key="155591bcbf6746b19deda611b314d714:0">unsigned int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0fee7552f528407eaba169bcb9e981f5"><span data-offset-key="0fee7552f528407eaba169bcb9e981f5:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1ba00771b48403887842a2bb220d72c"><span data-offset-key="b1ba00771b48403887842a2bb220d72c:0">2</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6548c498d9c3465680766208aae3d0bf"><span data-offset-key="6548c498d9c3465680766208aae3d0bf:0">l</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e763a5fc8b184f1b9a2195d093b80594"><span data-offset-key="e763a5fc8b184f1b9a2195d093b80594:0">signed long</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a5a5814541f64260a0dc5a34f4775de8"><span data-offset-key="a5a5814541f64260a0dc5a34f4775de8:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="402e6b9cbb104f478a39c58dcc0d372c"><span data-offset-key="402e6b9cbb104f478a39c58dcc0d372c:0">4</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86ab39b05cec4c928a869c88d5350eab"><span data-offset-key="86ab39b05cec4c928a869c88d5350eab:0">L</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02847f71bbe54159b783eef4cbcef27b"><span data-offset-key="02847f71bbe54159b783eef4cbcef27b:0">unsigned long</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cdad48da272e4d16ab7fb73841ffdb1c"><span data-offset-key="cdad48da272e4d16ab7fb73841ffdb1c:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="672f3c83567e44fb8a952b7e9d162b53"><span data-offset-key="672f3c83567e44fb8a952b7e9d162b53:0">4</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c26dcd01c824300a8e53a7d00006cce"><span data-offset-key="0c26dcd01c824300a8e53a7d00006cce:0">q</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb7fe76cfe3c499d9beb426a86b30983"><span data-offset-key="cb7fe76cfe3c499d9beb426a86b30983:0">signed long long</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a2c065ba7cfb4277a09aed48806f7214"><span data-offset-key="a2c065ba7cfb4277a09aed48806f7214:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7d84cd3fbd0c4fbbbb2fe3f99ab4f75a"><span data-offset-key="7d84cd3fbd0c4fbbbb2fe3f99ab4f75a:0">8</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8763516168624831b69b2dc0d3646f02"><span data-offset-key="8763516168624831b69b2dc0d3646f02:0">Q</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d02709593ae9441786d3aa6cd1b204ec"><span data-offset-key="d02709593ae9441786d3aa6cd1b204ec:0">unsigned long long</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ec285aa9a6424768a557107d67025b74"><span data-offset-key="ec285aa9a6424768a557107d67025b74:0">int</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c167aa6ff114c91ad00b48888bef01a"><span data-offset-key="9c167aa6ff114c91ad00b48888bef01a:0">8</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d179133be89948b3bf677d072053b9f6"><span data-offset-key="d179133be89948b3bf677d072053b9f6:0">f</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d5c5227fcb8b472baac82047148a851f"><span data-offset-key="d5c5227fcb8b472baac82047148a851f:0">float</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f2ff5d3c504247c888e1939350813d7a"><span data-offset-key="f2ff5d3c504247c888e1939350813d7a:0">float</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c7abf7bbfba49f48a433243219fe6f2"><span data-offset-key="9c7abf7bbfba49f48a433243219fe6f2:0">4</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efee745555944d5784e0b9113218c275"><span data-offset-key="efee745555944d5784e0b9113218c275:0">d</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c478e0290c3407ab3ce2638ce31c450"><span data-offset-key="3c478e0290c3407ab3ce2638ce31c450:0">double</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9040e2c8dd194a1cb903dffa075d9082"><span data-offset-key="9040e2c8dd194a1cb903dffa075d9082:0">float</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a4706a6fa1b460d9977506b11076c89"><span data-offset-key="3a4706a6fa1b460d9977506b11076c89:0">8</span></span></span></p></td></tr></tbody></table>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7bcd9b7ba3e84eb8a4360f688c8c1a5d"><span data-offset-key="7bcd9b7ba3e84eb8a4360f688c8c1a5d:0">How to Import Python Arrays?</span></span></span>
 
@@ -227,7 +226,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f24e45990414e7b921c98fa24260722"><span data-offset-key="6f24e45990414e7b921c98fa24260722:0">**Output**</span><span data-offset-key="6f24e45990414e7b921c98fa24260722:1">9</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c79340f44d404d8d8bf4a0a5fb5d46dc"><span data-offset-key="c79340f44d404d8d8bf4a0a5fb5d46dc:0">Python Array Class – Data Items</span></span></span>
 
@@ -267,7 +266,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="164f5d7ddea1403ba0e64ec03e657b97"><span data-offset-key="164f5d7ddea1403ba0e64ec03e657b97:0">&gt;&gt;&gt;arr.insert</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a9f26181abd40f2b6a1435e12bd74d0"><span data-offset-key="2a9f26181abd40f2b6a1435e12bd74d0:0">**11. array.buffer\_info()**</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a9f26181abd40f2b6a1435e12bd74d0"><span data-offset-key="2a9f26181abd40f2b6a1435e12bd74d0:0">**11. array.buffer_info()**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fcc27ced0b0e4a419a2e9c22a3cd6bf4"><span data-offset-key="fcc27ced0b0e4a419a2e9c22a3cd6bf4:0">This returns a tuple that holds the address in memory and the length of elements in the buffer that holds the contents of the array in the runtime.</span></span></span>
 
@@ -327,7 +326,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a222755d8beb4ba88811289351a2127d"><span data-offset-key="a222755d8beb4ba88811289351a2127d:0">&gt;&gt;&gt; arr.tounicode</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0c1c78b0c2f44b7480ed8840bd4c683c"><span data-offset-key="0c1c78b0c2f44b7480ed8840bd4c683c:0">How does Array Work in Python?</span></span></span>
 
@@ -343,39 +342,39 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc9525db355f4f058828cabecdf0c117"><span data-offset-key="dc9525db355f4f058828cabecdf0c117:0">Element at 2nd index: 50</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="28404b274f924ad785954e2ed93287bf"><span data-offset-key="28404b274f924ad785954e2ed93287bf:0">Python Array Representation</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f4cc4442b2eb443f96e6bbed3fc966bf"><span data-offset-key="f4cc4442b2eb443f96e6bbed3fc966bf:0">Arrays can be declared in various ways and in different languages. The important points that should be considered are as follows:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76591ef92dc5458f8d67685caf5ba55e"><span data-offset-key="76591ef92dc5458f8d67685caf5ba55e:0">Index always starts with 0.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76591ef92dc5458f8d67685caf5ba55e"><span data-offset-key="76591ef92dc5458f8d67685caf5ba55e:0">Index always starts with 0.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d151b3d0d69a4e7c96ada28339bec6f2"><span data-offset-key="d151b3d0d69a4e7c96ada28339bec6f2:0">We can access each element using its index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d151b3d0d69a4e7c96ada28339bec6f2"><span data-offset-key="d151b3d0d69a4e7c96ada28339bec6f2:0">We can access each element using its index.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79898afb85334bafaaa6f846d50071a7"><span data-offset-key="79898afb85334bafaaa6f846d50071a7:0">The length of the array defines the capacity to store the elements.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79898afb85334bafaaa6f846d50071a7"><span data-offset-key="79898afb85334bafaaa6f846d50071a7:0">The length of the array defines the capacity to store the elements.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="651c590b2dff40eca329bffb1bce3b5f"><span data-offset-key="651c590b2dff40eca329bffb1bce3b5f:0">Python Array Operations</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="480048722e2249c08f4e2f74316ba6b3"><span data-offset-key="480048722e2249c08f4e2f74316ba6b3:0">Some of the basic operations supported by an array are:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1579abe49274d3eb3785ee7dfd1ba84"><span data-offset-key="b1579abe49274d3eb3785ee7dfd1ba84:0">**Traverse**</span><span data-offset-key="b1579abe49274d3eb3785ee7dfd1ba84:1"> – It prints all elements one by one.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1579abe49274d3eb3785ee7dfd1ba84"><span data-offset-key="b1579abe49274d3eb3785ee7dfd1ba84:0">**Traverse**</span><span data-offset-key="b1579abe49274d3eb3785ee7dfd1ba84:1"> – It prints all elements one by one.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9404717ac2b47e1b965e9d8761af008"><span data-offset-key="f9404717ac2b47e1b965e9d8761af008:0">**Insertion**</span><span data-offset-key="f9404717ac2b47e1b965e9d8761af008:1"> – It adds an element at a given index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9404717ac2b47e1b965e9d8761af008"><span data-offset-key="f9404717ac2b47e1b965e9d8761af008:0">**Insertion**</span><span data-offset-key="f9404717ac2b47e1b965e9d8761af008:1"> – It adds an element at a given index.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97caf86a50184d36b6f9d910a8f14785"><span data-offset-key="97caf86a50184d36b6f9d910a8f14785:0">**Deletion**</span><span data-offset-key="97caf86a50184d36b6f9d910a8f14785:1"> – It deletes elements at the given index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="97caf86a50184d36b6f9d910a8f14785"><span data-offset-key="97caf86a50184d36b6f9d910a8f14785:0">**Deletion**</span><span data-offset-key="97caf86a50184d36b6f9d910a8f14785:1"> – It deletes elements at the given index.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="df26de0aa50c43e3bddaf390660ef3de"><span data-offset-key="df26de0aa50c43e3bddaf390660ef3de:0">**Search**</span><span data-offset-key="df26de0aa50c43e3bddaf390660ef3de:1"> – It searches the element using the given index or by the value.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="df26de0aa50c43e3bddaf390660ef3de"><span data-offset-key="df26de0aa50c43e3bddaf390660ef3de:0">**Search**</span><span data-offset-key="df26de0aa50c43e3bddaf390660ef3de:1"> – It searches the element using the given index or by the value.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="938115dbaf7e41e6a8cca6bd53816798"><span data-offset-key="938115dbaf7e41e6a8cca6bd53816798:0">**Update**</span><span data-offset-key="938115dbaf7e41e6a8cca6bd53816798:1"> – It updates elements at the given index.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="938115dbaf7e41e6a8cca6bd53816798"><span data-offset-key="938115dbaf7e41e6a8cca6bd53816798:0">**Update**</span><span data-offset-key="938115dbaf7e41e6a8cca6bd53816798:1"> – It updates elements at the given index.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7ba859d013544b2b3845f143181c2ca"><span data-offset-key="a7ba859d013544b2b3845f143181c2ca:0">**Searching Element in Python Array Example:** </span><span data-offset-key="a7ba859d013544b2b3845f143181c2ca:1">from array import \*array\_techvidvan = array(‘i’, \[0,1,2,3,4,5\])print (array\_techvidvan.index(3))</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7ba859d013544b2b3845f143181c2ca"><span data-offset-key="a7ba859d013544b2b3845f143181c2ca:0">**Searching Element in Python Array Example:** </span><span data-offset-key="a7ba859d013544b2b3845f143181c2ca:1">from array import \*array_techvidvan = array(‘i’, \[0,1,2,3,4,5\])print (array_techvidvan.index(3))</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ffbad38946454479a8a2811e8d93ee0c"><span data-offset-key="ffbad38946454479a8a2811e8d93ee0c:0">**Output:**</span><span data-offset-key="ffbad38946454479a8a2811e8d93ee0c:1">1</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04aa5b599bce435cbb3bd814eba7214e"><span data-offset-key="04aa5b599bce435cbb3bd814eba7214e:0">**Example of Traversing Array in Python** </span><span data-offset-key="04aa5b599bce435cbb3bd814eba7214e:1">from array import \*array\_TechVidvan = \[0,1,2,3,4,5\]for x in array\_TechVidvan: print (x)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04aa5b599bce435cbb3bd814eba7214e"><span data-offset-key="04aa5b599bce435cbb3bd814eba7214e:0">**Example of Traversing Array in Python** </span><span data-offset-key="04aa5b599bce435cbb3bd814eba7214e:1">from array import \*array_TechVidvan = \[0,1,2,3,4,5\]for x in array_TechVidvan: print (x)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7abb81ceec3849608c2574da0f4a8a63"><span data-offset-key="7abb81ceec3849608c2574da0f4a8a63:0">**Output:**</span></span></span>
 
@@ -389,7 +388,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6456c5dd555848798551db387623a19a"><span data-offset-key="6456c5dd555848798551db387623a19a:0">5</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="33ba6c014e9248f292fc95bc2a2eb8bd"><span data-offset-key="33ba6c014e9248f292fc95bc2a2eb8bd:0">Creating Python Arrays</span></span></span>
 
@@ -399,7 +398,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3fb4dc2a007e498e8bce90c0d36f344d"><span data-offset-key="3fb4dc2a007e498e8bce90c0d36f344d:0">**Output:**</span><span data-offset-key="3fb4dc2a007e498e8bce90c0d36f344d:1">array(‘q’, \[1,5\])</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7bb38f0d6bb04aa19be9f834945b5e01"><span data-offset-key="7bb38f0d6bb04aa19be9f834945b5e01:0">Accessing Python Array Elements</span></span></span>
 
@@ -407,7 +406,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4cdf93581c8b4cd6b4a81a9422092277"><span data-offset-key="4cdf93581c8b4cd6b4a81a9422092277:0">**Output:**</span><span data-offset-key="4cdf93581c8b4cd6b4a81a9422092277:1">First element of list: 2 Second element of list: 80</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aa7794d6b9e14d88b69bbeb10c15ffd7"><span data-offset-key="aa7794d6b9e14d88b69bbeb10c15ffd7:0">Changing and Adding Elements in Python Array</span></span></span>
 
@@ -425,7 +424,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5fd4a333765c4318a7d6d02d59c29bab"><span data-offset-key="5fd4a333765c4318a7d6d02d59c29bab:0">**Output:**</span><span data-offset-key="5fd4a333765c4318a7d6d02d59c29bab:1">array(‘i’, \[1,30,5\])</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3f423334abc046e38f7e5de0340501d8"><span data-offset-key="3f423334abc046e38f7e5de0340501d8:0">Removing Python Array Elements</span></span></span>
 
@@ -437,7 +436,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd6ed1193cee407aa837aca3d9197d99"><span data-offset-key="bd6ed1193cee407aa837aca3d9197d99:0">**Output:**</span><span data-offset-key="bd6ed1193cee407aa837aca3d9197d99:1">Traceback (most recent call last): NameError: name ‘numb’ is not defined</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="9c98d425f6f242f387cc7c7f2e030389"><span data-offset-key="9c98d425f6f242f387cc7c7f2e030389:0">Searching an element in an Array</span></span></span>
 
@@ -445,7 +444,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b14b0349e5394222b8d76360f6018aa1"><span data-offset-key="b14b0349e5394222b8d76360f6018aa1:0">**Output:** </span><span data-offset-key="b14b0349e5394222b8d76360f6018aa1:1">1</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f3c66f55b57d43f49a4d3aa334400ba3"><span data-offset-key="f3c66f55b57d43f49a4d3aa334400ba3:0">Updating Elements in an Array</span></span></span>
 
@@ -453,7 +452,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5028fb52a93f4124840355e5e43195f8"><span data-offset-key="5028fb52a93f4124840355e5e43195f8:0">**Output:**</span><span data-offset-key="5028fb52a93f4124840355e5e43195f8:1">Array before \[0\] \[1\] </span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="519d6ad166944ca996defd6a2d28f839"><span data-offset-key="519d6ad166944ca996defd6a2d28f839:0">Looping Array Elements in Python</span></span></span>
 
@@ -463,7 +462,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="525c49439c2c4f9d8891afb234389360"><span data-offset-key="525c49439c2c4f9d8891afb234389360:0">10</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c315e32e4a5d434e8c066c91f8c96516"><span data-offset-key="c315e32e4a5d434e8c066c91f8c96516:0">Calculating Length of an Array in Python</span></span></span>
 
@@ -471,13 +470,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95c83671f47d48d3b858191d911e9820"><span data-offset-key="95c83671f47d48d3b858191d911e9820:0">**Output:**</span><span data-offset-key="95c83671f47d48d3b858191d911e9820:1">2</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2fe01cb494054c4586b2b8158c38b6db"><span data-offset-key="2fe01cb494054c4586b2b8158c38b6db:0">Slicing Arrays in Python</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b5e4740cc0394e7fb44456562b115938"><span data-offset-key="b5e4740cc0394e7fb44456562b115938:0">By using the slicing operator (:), it’s possible to access a range of elements present in the array in Python programming language. The following code snippet demonstrates using the slicing operator with an array :</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da19b3b773ac49fe90b78790284a1a2e"><span data-offset-key="da19b3b773ac49fe90b78790284a1a2e:0">**Code**</span><span data-offset-key="da19b3b773ac49fe90b78790284a1a2e:1">number\_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range(1,5): print(i)for j in range(5,8): print(j)</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da19b3b773ac49fe90b78790284a1a2e"><span data-offset-key="da19b3b773ac49fe90b78790284a1a2e:0">**Code**</span><span data-offset-key="da19b3b773ac49fe90b78790284a1a2e:1">number_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range(1,5): print(i)for j in range(5,8): print(j)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c3224a5f7d54466db6c4c88b998777e3"><span data-offset-key="c3224a5f7d54466db6c4c88b998777e3:0">**Output:**</span></span></span>
 
@@ -497,7 +496,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="772dbc624fc64e8599436482ee504fc1"><span data-offset-key="772dbc624fc64e8599436482ee504fc1:0">Although knowing how to deal with arrays isn’t a compulsory part of learning Python, being able to do so is surely an added advantage.Typically, the array module is generally required for interfacing with C code. </span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="633290466daf40b39f79f7871596a940"><span data-offset-key="633290466daf40b39f79f7871596a940:0">Python Lists Vs Arrays</span></span></span>
 
@@ -509,7 +508,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26b6ca2c2f504fa1a49e4bf0b317d23d"><span data-offset-key="26b6ca2c2f504fa1a49e4bf0b317d23d:0">TypeError: must be real number, not str</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="df44ddb7d73e4b0ca52337b43c858e53"><span data-offset-key="df44ddb7d73e4b0ca52337b43c858e53:0">Summary</span></span></span>
 

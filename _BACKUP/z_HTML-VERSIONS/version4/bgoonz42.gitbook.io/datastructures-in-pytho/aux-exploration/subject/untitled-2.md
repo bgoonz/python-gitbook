@@ -186,8 +186,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Reading and Writing to text files in Python</span>
-================================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Reading and Writing to text files in Python</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -197,9 +196,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0238f33e7c446c8b7d10300ab9cd80f"><span data-offset-key="d0238f33e7c446c8b7d10300ab9cd80f:0">Python provides inbuilt functions for creating, writing and reading files. There are two types of files that can be handled in python, normal text files and binary files (written in binary language,0s and 1s). </span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca83d9077898492f9799457a37a43050"><span data-offset-key="ca83d9077898492f9799457a37a43050:0">**Text files:**</span><span data-offset-key="ca83d9077898492f9799457a37a43050:1"> In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character ('\\n') in python by default.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca83d9077898492f9799457a37a43050"><span data-offset-key="ca83d9077898492f9799457a37a43050:0">**Text files:**</span><span data-offset-key="ca83d9077898492f9799457a37a43050:1"> In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character ('\\n') in python by default.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a61060f5c53b4911b4d1c2b01f18e5ee"><span data-offset-key="a61060f5c53b4911b4d1c2b01f18e5ee:0">**Binary files:**</span><span data-offset-key="a61060f5c53b4911b4d1c2b01f18e5ee:1"> In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a61060f5c53b4911b4d1c2b01f18e5ee"><span data-offset-key="a61060f5c53b4911b4d1c2b01f18e5ee:0">**Binary files:**</span><span data-offset-key="a61060f5c53b4911b4d1c2b01f18e5ee:1"> In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74cb3f62201c4db39fc2b14b2db10abe"><span data-offset-key="74cb3f62201c4db39fc2b14b2db10abe:0"> In this article, we will be focusing on opening, closing, reading and writing data in a text file. </span></span></span>
 
@@ -233,7 +232,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d37cce4a8fd54a7aa447ccd65e6df58a"><span data-offset-key="d37cce4a8fd54a7aa447ccd65e6df58a:0">**Closing a file**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39e200d644fe45f1b417632cec3592f0"><span data-offset-key="39e200d644fe45f1b417632cec3592f0:0"> close() function closes the file and frees the memory space acquired by that file. It is used at the time when the file is no longer needed or if it is to be opened in a different file mode. File\_object.close() Python</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39e200d644fe45f1b417632cec3592f0"><span data-offset-key="39e200d644fe45f1b417632cec3592f0:0"> close() function closes the file and frees the memory space acquired by that file. It is used at the time when the file is no longer needed or if it is to be opened in a different file mode. File_object.close() Python</span></span></span>
 
     ​# Opening and Closing a file "MyFile.txt"# for object name file1.file1 = open("MyFile.txt","a")file1.close()
 
@@ -247,9 +246,9 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b0aaef385f246e388a8840a87db0d9f"><span data-offset-key="2b0aaef385f246e388a8840a87db0d9f:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8eb2c4ce3f044783b60967e73c8fa3a9"><span data-offset-key="8eb2c4ce3f044783b60967e73c8fa3a9:0">**writelines() :**</span><span data-offset-key="8eb2c4ce3f044783b60967e73c8fa3a9:1"> For a list of string elements, each string is inserted in the text file.Used to insert multiple strings at a single time. </span></span></span>
+1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8eb2c4ce3f044783b60967e73c8fa3a9"><span data-offset-key="8eb2c4ce3f044783b60967e73c8fa3a9:0">**writelines() :**</span><span data-offset-key="8eb2c4ce3f044783b60967e73c8fa3a9:1"> For a list of string elements, each string is inserted in the text file.Used to insert multiple strings at a single time. </span></span></span>
 
-    File_object.writelines(L) for L = [str1, str2, str3] 
+    File_object.writelines(L) for L = [str1, str2, str3]
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f2af96bfab154aeda70ed68891e7bfa5"><span data-offset-key="f2af96bfab154aeda70ed68891e7bfa5:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
@@ -263,13 +262,13 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b62dc5200be146f2b438be3e4c015d86"><span data-offset-key="b62dc5200be146f2b438be3e4c015d86:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9728e93153644049678b8d2d0ab1182"><span data-offset-key="c9728e93153644049678b8d2d0ab1182:0">**readline() :**</span><span data-offset-key="c9728e93153644049678b8d2d0ab1182:1"> Reads a line of the file and returns in form of a string.For specified n, reads at most n bytes. However, does not reads more than one line, even if n exceeds the length of the line. </span></span></span>
+1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9728e93153644049678b8d2d0ab1182"><span data-offset-key="c9728e93153644049678b8d2d0ab1182:0">**readline() :**</span><span data-offset-key="c9728e93153644049678b8d2d0ab1182:1"> Reads a line of the file and returns in form of a string.For specified n, reads at most n bytes. However, does not reads more than one line, even if n exceeds the length of the line. </span></span></span>
 
     File_object.readline([n])
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba6425b8426b4fcf982485a853c5b290"><span data-offset-key="ba6425b8426b4fcf982485a853c5b290:0">**readlines() :**</span><span data-offset-key="ba6425b8426b4fcf982485a853c5b290:1"> Reads all the lines and return them as each line a string element in a list. </span></span></span>
 
-      File_object.readlines()
+    File_object.readlines()
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a062cb76f84240e3b6b08b11a4d53d67"><span data-offset-key="a062cb76f84240e3b6b08b11a4d53d67:0"> </span><span data-offset-key="a062cb76f84240e3b6b08b11a4d53d67:1">**Note:**</span><span data-offset-key="a062cb76f84240e3b6b08b11a4d53d67:2"> '\\n' is treated as a special character of two bytes Python</span></span></span>
 

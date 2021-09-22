@@ -206,8 +206,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Linked List</span>
-================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Linked List</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -221,7 +220,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e6b6a133a1c46e5a8c8008d73c53056"><span data-offset-key="7e6b6a133a1c46e5a8c8008d73c53056:0">A Linked List is a data structure in which the objects are arranged in a linear order. Unlike an array, however, in which the linear order is determined by the array indices, the order in a linked list is determined by a pointer in each object.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a916c45db0034a76911c813c72c24ccd"><span data-offset-key="a916c45db0034a76911c813c72c24ccd:0">Each element of a </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:1">**doubly linked list**</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:2"> is an object with an attribute </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:3">*key*</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:4"> and two other pointer attributes </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:5">*next*</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:6"> and </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:7">*prev*</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a916c45db0034a76911c813c72c24ccd"><span data-offset-key="a916c45db0034a76911c813c72c24ccd:0">Each element of a </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:1">**doubly linked list**</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:2"> is an object with an attribute </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:3">_key_</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:4"> and two other pointer attributes </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:5">_next_</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:6"> and </span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:7">_prev_</span><span data-offset-key="a916c45db0034a76911c813c72c24ccd:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e856384b7ed248dea995d1c325efbe56"><span data-offset-key="e856384b7ed248dea995d1c325efbe56:0">A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.</span></span></span>
 
@@ -231,35 +230,35 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="db066a69b3ef402b8776339fc1529084"><span data-offset-key="db066a69b3ef402b8776339fc1529084:0">Linked List</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e12503e2e1e4323951b41899be689bb"><span data-offset-key="1e12503e2e1e4323951b41899be689bb:0">Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e12503e2e1e4323951b41899be689bb"><span data-offset-key="1e12503e2e1e4323951b41899be689bb:0">Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9569719fcd7f4a19a4706ae93f9c1c17"><span data-offset-key="9569719fcd7f4a19a4706ae93f9c1c17:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5334dd2b594b45c8b8a6cba9b19f4ab6"><span data-offset-key="5334dd2b594b45c8b8a6cba9b19f4ab6:0">Source</span></span></a><span data-key="a511b7b0df9b4c52b093ba6e19f9c2f1"><span data-offset-key="a511b7b0df9b4c52b093ba6e19f9c2f1:0"><span data-slate-zero-width="z">​</span></span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9569719fcd7f4a19a4706ae93f9c1c17"><span data-offset-key="9569719fcd7f4a19a4706ae93f9c1c17:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="5334dd2b594b45c8b8a6cba9b19f4ab6"><span data-offset-key="5334dd2b594b45c8b8a6cba9b19f4ab6:0">Source</span></span></a><span data-key="a511b7b0df9b4c52b093ba6e19f9c2f1"><span data-offset-key="a511b7b0df9b4c52b093ba6e19f9c2f1:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3eecd238fa4245cbbd3d63bcdc287f7e"><span data-offset-key="3eecd238fa4245cbbd3d63bcdc287f7e:0">Reverse a singly linked list. Implement it recursively and iteratively.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3eecd238fa4245cbbd3d63bcdc287f7e"><span data-offset-key="3eecd238fa4245cbbd3d63bcdc287f7e:0">Reverse a singly linked list. Implement it recursively and iteratively.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb4b02721ec84a7b9d9cb3a97e28d8fe"><span data-offset-key="bb4b02721ec84a7b9d9cb3a97e28d8fe:0">Convert a binary tree to a doubly circular linked list.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb4b02721ec84a7b9d9cb3a97e28d8fe"><span data-offset-key="bb4b02721ec84a7b9d9cb3a97e28d8fe:0">Convert a binary tree to a doubly circular linked list.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f20a178ec6442c6adc9baa8d571b5b3"><span data-offset-key="8f20a178ec6442c6adc9baa8d571b5b3:0">Implement an LRU cache with O(1) runtime for all its operations.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8f20a178ec6442c6adc9baa8d571b5b3"><span data-offset-key="8f20a178ec6442c6adc9baa8d571b5b3:0">Implement an LRU cache with O(1) runtime for all its operations.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35fb4f62631a4c4c9e389dc3b934ac3a"><span data-offset-key="35fb4f62631a4c4c9e389dc3b934ac3a:0">Check distance between values in linked list.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35fb4f62631a4c4c9e389dc3b934ac3a"><span data-offset-key="35fb4f62631a4c4c9e389dc3b934ac3a:0">Check distance between values in linked list.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10f728b3e043419691c87d7308d3395f"><span data-offset-key="10f728b3e043419691c87d7308d3395f:0">A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10f728b3e043419691c87d7308d3395f"><span data-offset-key="10f728b3e043419691c87d7308d3395f:0">A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b638ff7de84437cb6a88a8e2db54b90"><span data-offset-key="7b638ff7de84437cb6a88a8e2db54b90:0">Given a singly linked list (a list which can only be traversed in one direction), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b638ff7de84437cb6a88a8e2db54b90"><span data-offset-key="7b638ff7de84437cb6a88a8e2db54b90:0">Given a singly linked list (a list which can only be traversed in one direction), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20e2f57f622d4eb69b8dcf70e3e5db31"><span data-offset-key="20e2f57f622d4eb69b8dcf70e3e5db31:0">How can you tell if a Linked List is a Palindrome?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20e2f57f622d4eb69b8dcf70e3e5db31"><span data-offset-key="20e2f57f622d4eb69b8dcf70e3e5db31:0">How can you tell if a Linked List is a Palindrome?</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="04c8862486fc4b4bb6c2e783087bd5e8"><span data-offset-key="04c8862486fc4b4bb6c2e783087bd5e8:0"><span data-slate-zero-width="n">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="4c7d3d4d0352430fa379bd020cd7fca3"><span data-offset-key="4c7d3d4d0352430fa379bd020cd7fca3:0">Linked lists in Python</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="964cd1c4b3b44ea69c6abf7eeed5c3f1"><span data-offset-key="964cd1c4b3b44ea69c6abf7eeed5c3f1:0">Implementation:</span></span></span>
 
     # Singly-Linked List## The linked list is passed around as a variable pointing to the# root node of the linked list, or None if the list is empty.​class LinkedListNode:    def __init__(self, value):        self.value = value        self.next = None​def linked_list_append(linked_list, value):    '''Appends a value to the end of the linked list'''    node = linked_list    insert_node = LinkedListNode(value)    if not node:        return insert_node    while node.next:        node = node.next    node.next = insert_node    return linked_list​def linked_list_insert_index(linked_list, value, index):    '''Inserts a value at a particular index'''    node = linked_list    insert_node = LinkedListNode(value)        # Check if inserting at head    if index == 0:        insert_node.next = node        return insert_node​    # Skip ahead    for _ in range(index - 1):        node = node.next        if not node:            raise ValueError    insert_node.next = node.next    node.next = insert_node    return linked_list​def linked_list_delete(linked_list, value):    '''Deletes the first occurrence of a value in the linked list'''    node = linked_list        # Check if deleting at head    if node.value == value:        return node.next​    # Skip ahead    while node.next:        if node.next.value == value:            node.next = node.next.next            return linked_list        node = node.next    raise ValueError​def linked_list_delete_index(linked_list, index):    '''Deletes the element at a particular index in the linked list'''    node = linked_list        # Check if deleting at head    if index == 0:        return node.next​    # Skip ahead    for _ in range(index - 1):        node = node.next        if not node:            raise ValueError    if not node.next:        raise ValueError    node.next = node.next.next    return linked_list​def linked_list_iter(linked_list):    '''Lazy iterator over each node in the linked list'''    node = linked_list    while node is not None:        yield node        node = node.next​​# Append to backlinked_list = None    # Start with an empty linked listlinked_list = linked_list_append(linked_list, 1)linked_list = linked_list_append(linked_list, 2)linked_list = linked_list_append(linked_list, 4)print([node.value for node in linked_list_iter(linked_list)])​# Insert by indexlinked_list = linked_list_insert_index(linked_list, 0, 0) # Frontprint([node.value for node in linked_list_iter(linked_list)])linked_list = linked_list_insert_index(linked_list, 3, 3) # Backprint([node.value for node in linked_list_iter(linked_list)])​# Delete "3"linked_list = linked_list_delete(linked_list, 3)print([node.value for node in linked_list_iter(linked_list)])​# Delete by indexlinked_list = linked_list_delete_index(linked_list, 0)print([node.value for node in linked_list_iter(linked_list)])linked_list = linked_list_delete_index(linked_list, 1)print([node.value for node in linked_list_iter(linked_list)])​# Delete until emptylinked_list = linked_list_delete_index(linked_list, 0)linked_list = linked_list_delete_index(linked_list, 0)print([node.value for node in linked_list_iter(linked_list)])​
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ec97b0c4ecb5471eb3879ea75d585679"><span data-offset-key="ec97b0c4ecb5471eb3879ea75d585679:0">Output:</span></span></span>
 
@@ -289,37 +288,37 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b33e13291d0148f295d5e25ab72d25b7"><span data-offset-key="b33e13291d0148f295d5e25ab72d25b7:0">**Advantages:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="803c32fd73c64b58b277fc3cd31334a9"><span data-offset-key="803c32fd73c64b58b277fc3cd31334a9:0">Efficient insertion and deletion of new elements</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="803c32fd73c64b58b277fc3cd31334a9"><span data-offset-key="803c32fd73c64b58b277fc3cd31334a9:0">Efficient insertion and deletion of new elements</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10a477a9ec04433691e4e8281e974738"><span data-offset-key="10a477a9ec04433691e4e8281e974738:0">Simpler to reorganize than arrays</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10a477a9ec04433691e4e8281e974738"><span data-offset-key="10a477a9ec04433691e4e8281e974738:0">Simpler to reorganize than arrays</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dcc685f505f4950b678832f9ec5f7c5"><span data-offset-key="0dcc685f505f4950b678832f9ec5f7c5:0">Useful as a starting point for advanced data structures like graphs or trees</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dcc685f505f4950b678832f9ec5f7c5"><span data-offset-key="0dcc685f505f4950b678832f9ec5f7c5:0">Useful as a starting point for advanced data structures like graphs or trees</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afd4e04eb0da4eb8b61b66a7f157ae1b"><span data-offset-key="afd4e04eb0da4eb8b61b66a7f157ae1b:0">**Disadvantages:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afc5b17f1b1c41d6aa59becd0aac1eab"><span data-offset-key="afc5b17f1b1c41d6aa59becd0aac1eab:0">Storage of pointers with each data point increases memory usage</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afc5b17f1b1c41d6aa59becd0aac1eab"><span data-offset-key="afc5b17f1b1c41d6aa59becd0aac1eab:0">Storage of pointers with each data point increases memory usage</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c935c5f99c4b8c94ddb9943043174a"><span data-offset-key="66c935c5f99c4b8c94ddb9943043174a:0">Must always traverse the linked list from Head node to find a specific element</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c935c5f99c4b8c94ddb9943043174a"><span data-offset-key="66c935c5f99c4b8c94ddb9943043174a:0">Must always traverse the linked list from Head node to find a specific element</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb3835eed48947a1b9adc381a069e00d"><span data-offset-key="bb3835eed48947a1b9adc381a069e00d:0">**Applications:**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb5d247850c7448797d6be5bad5b443b"><span data-offset-key="fb5d247850c7448797d6be5bad5b443b:0">Building block for advanced data structures</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb5d247850c7448797d6be5bad5b443b"><span data-offset-key="fb5d247850c7448797d6be5bad5b443b:0">Building block for advanced data structures</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49152e8adbea4d9095658e4477315956"><span data-offset-key="49152e8adbea4d9095658e4477315956:0">Solutions that call for frequent addition and removal of data</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49152e8adbea4d9095658e4477315956"><span data-offset-key="49152e8adbea4d9095658e4477315956:0">Solutions that call for frequent addition and removal of data</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="41c7f006c6c04695932a4f47c21ffe83"><span data-offset-key="41c7f006c6c04695932a4f47c21ffe83:0">Common linked list interview questions in Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="913c3baaa8d94098946a133db4bb226f"><span data-offset-key="913c3baaa8d94098946a133db4bb226f:0">Print the middle element of a given linked list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="913c3baaa8d94098946a133db4bb226f"><span data-offset-key="913c3baaa8d94098946a133db4bb226f:0">Print the middle element of a given linked list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ae0bf98fa10d43dda8665d0a0d3c202a"><span data-offset-key="ae0bf98fa10d43dda8665d0a0d3c202a:0">Remove duplicate elements from a sorted linked list</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ae0bf98fa10d43dda8665d0a0d3c202a"><span data-offset-key="ae0bf98fa10d43dda8665d0a0d3c202a:0">Remove duplicate elements from a sorted linked list</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd2c6d63655345c18cb03960b23aa607"><span data-offset-key="cd2c6d63655345c18cb03960b23aa607:0">Check if a singly linked list is a palindrome</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd2c6d63655345c18cb03960b23aa607"><span data-offset-key="cd2c6d63655345c18cb03960b23aa607:0">Check if a singly linked list is a palindrome</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3304dcd3fb2c41f7ad8cb12a081ee297"><span data-offset-key="3304dcd3fb2c41f7ad8cb12a081ee297:0">Merge K sorted linked lists</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3304dcd3fb2c41f7ad8cb12a081ee297"><span data-offset-key="3304dcd3fb2c41f7ad8cb12a081ee297:0">Merge K sorted linked lists</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef0beb3b28674f22a76c56cacd46f708"><span data-offset-key="ef0beb3b28674f22a76c56cacd46f708:0">Find the intersection point of two linked lists</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef0beb3b28674f22a76c56cacd46f708"><span data-offset-key="ef0beb3b28674f22a76c56cacd46f708:0">Find the intersection point of two linked lists</span></span></span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Implementation </span>
 
@@ -341,19 +340,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f7d788992eb4d4db0e6a4ee5fb95987"><span data-offset-key="4f7d788992eb4d4db0e6a4ee5fb95987:0">A linked list is similar to an array, it holds values. However, links in a linked list do not have indexes.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a890e649e064279a44af8237fcc2615"><span data-offset-key="9a890e649e064279a44af8237fcc2615:0">This is an example of a double ended, doubly linked list.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a890e649e064279a44af8237fcc2615"><span data-offset-key="9a890e649e064279a44af8237fcc2615:0">This is an example of a double ended, doubly linked list.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3965836406e54f559ff943720b436c66"><span data-offset-key="3965836406e54f559ff943720b436c66:0">Each link references the next link and the previous one.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3965836406e54f559ff943720b436c66"><span data-offset-key="3965836406e54f559ff943720b436c66:0">Each link references the next link and the previous one.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6726611373841d6b844b5c18443e0fb"><span data-offset-key="b6726611373841d6b844b5c18443e0fb:0">A Doubly Linked List (DLL) contains an extra pointer, typically called previous</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6726611373841d6b844b5c18443e0fb"><span data-offset-key="b6726611373841d6b844b5c18443e0fb:0">A Doubly Linked List (DLL) contains an extra pointer, typically called previous</span></span></span>
 
-    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70ebf101ed8d4b18beac489f7a53106e"><span data-offset-key="70ebf101ed8d4b18beac489f7a53106e:0"> pointer, together with next pointer and data which are there in singly linked list.</span></span></span>
+  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="70ebf101ed8d4b18beac489f7a53106e"><span data-offset-key="70ebf101ed8d4b18beac489f7a53106e:0"> pointer, together with next pointer and data which are there in singly linked list.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d4e00d852dd54288a2e7cca84fc23144"><span data-offset-key="d4e00d852dd54288a2e7cca84fc23144:0">Advantages over SLL - It can be traversed in both forward and backward direction.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d4e00d852dd54288a2e7cca84fc23144"><span data-offset-key="d4e00d852dd54288a2e7cca84fc23144:0">Advantages over SLL - It can be traversed in both forward and backward direction.</span></span></span>
 
-        <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52ef0a816f064073976dc73a25295ce1"><span data-offset-key="52ef0a816f064073976dc73a25295ce1:0"> Delete operation is more efficient</span></span></span>
+    <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52ef0a816f064073976dc73a25295ce1"><span data-offset-key="52ef0a816f064073976dc73a25295ce1:0"> Delete operation is more efficient</span></span></span>
 
-    """Each ListNode holds a reference to its previous nodeas well as its next node in the List."""class ListNode:  def __init__(self, value, prev=None, next=None):    self.value = value    self.prev = prev    self.next = next​  """Wrap the given value in a ListNode and insert it  after this node. Note that this node could already  have a next node it is point to."""  def insert_after(self, value):    current_next = self.next    self.next = ListNode(value, self, current_next)    if current_next:      current_next.prev = self.next​  """Wrap the given value in a ListNode and insert it  before this node. Note that this node could already  have a previous node it is point to."""  def insert_before(self, value):    current_prev = self.prev    self.prev = ListNode(value, current_prev, self)    if current_prev:      current_prev.next = self.prev​  """Rearranges this ListNode's previous and next pointers  accordingly, effectively deleting this ListNode."""  def delete(self):    if self.prev:      self.prev.next = self.next    if self.next:      self.next.prev = self.prev​"""Our doubly-linked list class. It holds references tothe list's head and tail nodes."""class DoublyLinkedList:  def __init__(self, node=None):    self.head = node    self.tail = node    self.length = 1 if node is not None else 0​  def __len__(self):    return self.length​  def add_to_head(self, value):    pass​  def remove_from_head(self):    pass​  def add_to_tail(self, value):    pass​  def remove_from_tail(self):    pass​  def move_to_front(self, node):    pass​  def move_to_end(self, node):    pass​  def delete(self, node):    pass      def get_max(self):    pass​
+  """Each ListNode holds a reference to its previous nodeas well as its next node in the List."""class ListNode: def **init**(self, value, prev=None, next=None): self.value = value self.prev = prev self.next = next​ """Wrap the given value in a ListNode and insert it after this node. Note that this node could already have a next node it is point to.""" def insert_after(self, value): current_next = self.next self.next = ListNode(value, self, current_next) if current_next: current_next.prev = self.next​ """Wrap the given value in a ListNode and insert it before this node. Note that this node could already have a previous node it is point to.""" def insert_before(self, value): current_prev = self.prev self.prev = ListNode(value, current_prev, self) if current_prev: current_prev.next = self.prev​ """Rearranges this ListNode's previous and next pointers accordingly, effectively deleting this ListNode.""" def delete(self): if self.prev: self.prev.next = self.next if self.next: self.next.prev = self.prev​"""Our doubly-linked list class. It holds references tothe list's head and tail nodes."""class DoublyLinkedList: def **init**(self, node=None): self.head = node self.tail = node self.length = 1 if node is not None else 0​ def **len**(self): return self.length​ def add_to_head(self, value): pass​ def remove_from_head(self): pass​ def add_to_tail(self, value): pass​ def remove_from_tail(self): pass​ def move_to_front(self, node): pass​ def move_to_end(self, node): pass​ def delete(self, node): pass def get_max(self): pass​
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f31f0b77db64bf9856ccbd4e0864a48"><span data-offset-key="4f31f0b77db64bf9856ccbd4e0864a48:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

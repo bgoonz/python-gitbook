@@ -212,8 +212,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Sorting</span>
-============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Sorting</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -257,21 +256,21 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a2d10778660a4300895c598d36e29313"><span data-offset-key="a2d10778660a4300895c598d36e29313:0">Short description of package/script</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="423a643cc5ec45cfb1456287ff19a665"><span data-offset-key="423a643cc5ec45cfb1456287ff19a665:0">It is a python program of Bubble sort Algorithm.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="423a643cc5ec45cfb1456287ff19a665"><span data-offset-key="423a643cc5ec45cfb1456287ff19a665:0">It is a python program of Bubble sort Algorithm.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b792e62421454faa85f5f2c0d634f08d"><span data-offset-key="b792e62421454faa85f5f2c0d634f08d:0">It is written in a way that it takes user input.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b792e62421454faa85f5f2c0d634f08d"><span data-offset-key="b792e62421454faa85f5f2c0d634f08d:0">It is written in a way that it takes user input.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="85136e5beccf437e995d8395db8ab510"><span data-offset-key="85136e5beccf437e995d8395db8ab510:0">Workflow of the Project</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba8921acadb04c12aae64018daa4c374"><span data-offset-key="ba8921acadb04c12aae64018daa4c374:0">First a function is written to perform Bubble sort.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba8921acadb04c12aae64018daa4c374"><span data-offset-key="ba8921acadb04c12aae64018daa4c374:0">First a function is written to perform Bubble sort.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e0f24b13d734a18ad859a043850c3ae"><span data-offset-key="1e0f24b13d734a18ad859a043850c3ae:0">Then outside the function user input is taken.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e0f24b13d734a18ad859a043850c3ae"><span data-offset-key="1e0f24b13d734a18ad859a043850c3ae:0">Then outside the function user input is taken.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7f8bc65aa41e47d6b0ae8553151d230c"><span data-offset-key="7f8bc65aa41e47d6b0ae8553151d230c:0">Detailed explanation of script, if needed</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="053dd9b5394e44fc8bbac6167999a0db"><span data-offset-key="053dd9b5394e44fc8bbac6167999a0db:0">Start with the first element, compare the current element with the next element of the array. If the current element is greater than the next element of the array, swap both of them. If the current element is less than the next element, move to the next element. Keep on comparing the current element with all the elements in the array. The largest element of the array comes to its original position after 1st iteration. Repeat all the steps till the array is sorted.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3aabe8e43d15423dbc068c373e904caf"><span data-offset-key="3aabe8e43d15423dbc068c373e904caf:0">Example</span></span></span>
 
@@ -307,11 +306,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b8caa2c1bf4f4ceab0cdc34391299e41"><span data-offset-key="b8caa2c1bf4f4ceab0cdc34391299e41:0">Divide and conquer is when we take a problem, split it into the same type of sub-problem, and run the algorithm on those sub-problems.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd2bc255b95b4d478eebdf302b2f95f2"><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:0">If we have an algorithm that runs on a list, we could break the list into smaller lists and run the algorithm on those smaller lists. We will </span><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:1">*divide*</span><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:2"> the data into more manageable pieces.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd2bc255b95b4d478eebdf302b2f95f2"><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:0">If we have an algorithm that runs on a list, we could break the list into smaller lists and run the algorithm on those smaller lists. We will </span><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:1">_divide_</span><span data-offset-key="fd2bc255b95b4d478eebdf302b2f95f2:2"> the data into more manageable pieces.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a88ebd5bc6cd4f8eabe56439da5de633"><span data-offset-key="a88ebd5bc6cd4f8eabe56439da5de633:0">We break down our algorithm problems into </span><span data-offset-key="a88ebd5bc6cd4f8eabe56439da5de633:1">`base cases`</span><span data-offset-key="a88ebd5bc6cd4f8eabe56439da5de633:2"> -- the smallest possible size of data we can run our algorithm upon to determine the basic way our algorithm should work.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4f260bb79d647c5bad8c091dbadb0db"><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:0">These solutions can give us better time complexity solutions; however, they wouldn't work if a portion of the algorithm's data is </span><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:1">*dependent*</span><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:2"> upon the rest. If we broke the list into two halves, and one half is required to work on the other half, we could not use recursion.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4f260bb79d647c5bad8c091dbadb0db"><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:0">These solutions can give us better time complexity solutions; however, they wouldn't work if a portion of the algorithm's data is </span><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:1">_dependent_</span><span data-offset-key="a4f260bb79d647c5bad8c091dbadb0db:2"> upon the rest. If we broke the list into two halves, and one half is required to work on the other half, we could not use recursion.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="461eb96390314b79b68c7911744c7857"><span data-offset-key="461eb96390314b79b68c7911744c7857:0">Recursion requires independent sub-data.</span></span></span>
 
@@ -367,7 +366,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c22be9dafec42aaa35d9e23a2f89903"><span data-offset-key="3c22be9dafec42aaa35d9e23a2f89903:0">The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O(n), and we have to make </span><span data-offset-key="3c22be9dafec42aaa35d9e23a2f89903:1">`log n`</span><span data-offset-key="3c22be9dafec42aaa35d9e23a2f89903:2"> passes.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2d5378c0fba403bad77095b6e485cb3"><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:0">It takes </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:1">`O(log n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:2"> steps to pass through, with each pass taking </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:3">`O(n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:4">, so the </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:5">*average*</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:6"> case is </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:7">`O(n log n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:8">, the fastest search we can aim for.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e2d5378c0fba403bad77095b6e485cb3"><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:0">It takes </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:1">`O(log n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:2"> steps to pass through, with each pass taking </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:3">`O(n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:4">, so the </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:5">_average_</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:6"> case is </span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:7">`O(n log n)`</span><span data-offset-key="e2d5378c0fba403bad77095b6e485cb3:8">, the fastest search we can aim for.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="938e1e9b141345eea21afeff7a8c92a9"><span data-offset-key="938e1e9b141345eea21afeff7a8c92a9:0">What would be a bad case for quick sort?</span></span></span>
 
@@ -385,7 +384,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ab8796b45014580bf839f196a97d227"><span data-offset-key="8ab8796b45014580bf839f196a97d227:0">We could use </span><span data-offset-key="8ab8796b45014580bf839f196a97d227:1">`quick select`</span><span data-offset-key="8ab8796b45014580bf839f196a97d227:2"> to find the median at each step -- but this slows down our algorithm to </span><span data-offset-key="8ab8796b45014580bf839f196a97d227:3">`O(n)`</span><span data-offset-key="8ab8796b45014580bf839f196a97d227:4"> run time on average.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95559ecabd6e4c84a6f72cc3478acc03"><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:0">If we choose a </span><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:1">*random*</span><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:2"> pivot point, we generally do not pick the worst case pivot with each pass. Randomly selecting a pivot point results in the most time efficient average.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95559ecabd6e4c84a6f72cc3478acc03"><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:0">If we choose a </span><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:1">_random_</span><span data-offset-key="95559ecabd6e4c84a6f72cc3478acc03:2"> pivot point, we generally do not pick the worst case pivot with each pass. Randomly selecting a pivot point results in the most time efficient average.</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="783e1c1d4ef64758b7ab51a0b562df59"><span data-offset-key="783e1c1d4ef64758b7ab51a0b562df59:0">Implementing Quick Sort</span></span></span>
 
@@ -411,11 +410,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="917150ea5c78419493c90d6fd3adf8a0"><span data-offset-key="917150ea5c78419493c90d6fd3adf8a0:0">It's important to analyze what you know about your incoming data before choosing a type of algorithm. If you know that your list is almost completely sorted, bubble sort would handle that the quickest. If the list is completely garbled, quick sort would be best.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5478a2d070374e0e8e41bbc691e37363"><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:0">Even when we aren't handling sort, we need to customize our algorithmic choices to the data anticipated, </span><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:1">*especially*</span><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:2"> when dealing with large sets of data where time performance can have a huge impact.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5478a2d070374e0e8e41bbc691e37363"><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:0">Even when we aren't handling sort, we need to customize our algorithmic choices to the data anticipated, </span><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:1">_especially_</span><span data-offset-key="5478a2d070374e0e8e41bbc691e37363:2"> when dealing with large sets of data where time performance can have a huge impact.</span></span></span>
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="ff9e3f180e2441ccbdcbbee30c19b8fc"><span data-offset-key="ff9e3f180e2441ccbdcbbee30c19b8fc:0">In Place Sorting</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2b35565d3644c8a90f4e9ab7e35819f"><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:0">The quick sort function we wrote is not an in-place solution. When we sort that list, we're actually returning an entirely </span><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:1">*new*</span><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:2"> list. It's not returning the same list.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2b35565d3644c8a90f4e9ab7e35819f"><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:0">The quick sort function we wrote is not an in-place solution. When we sort that list, we're actually returning an entirely </span><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:1">_new_</span><span data-offset-key="c2b35565d3644c8a90f4e9ab7e35819f:2"> list. It's not returning the same list.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="04b41aa6f6824d32b1796d25ac97232d"><span data-offset-key="04b41aa6f6824d32b1796d25ac97232d:0">This isn't time or space efficient because it takes time and data to copy lists over to newly allocated spots in memory. It would be more efficient to move items around within the original given list.</span></span></span>
 
@@ -425,7 +424,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="115d061cdca24ac4a79294e9f02d8a52"><span data-offset-key="115d061cdca24ac4a79294e9f02d8a52:0">We can give it a low index, and a high index, to indicate the start and stop points of the section of the list to work on.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52df5baf4ec64ebd994dc9742cb2bf94"><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:0">As we keep going, the low and high indices will change. Our base case should now change to where if the low and high are the </span><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:1">*same*</span><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:2">, then our list is sorted.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52df5baf4ec64ebd994dc9742cb2bf94"><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:0">As we keep going, the low and high indices will change. Our base case should now change to where if the low and high are the </span><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:1">_same_</span><span data-offset-key="52df5baf4ec64ebd994dc9742cb2bf94:2">, then our list is sorted.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74285fdbbbe24a91a53cb6b37579379e"><span data-offset-key="74285fdbbbe24a91a53cb6b37579379e:0">Let's try it:</span></span></span>
 
@@ -433,7 +432,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7767778c7985418692e0dca8bad03053"><span data-offset-key="7767778c7985418692e0dca8bad03053:0">We're iterating through the list and checking if the item at </span><span data-offset-key="7767778c7985418692e0dca8bad03053:1">`list[i]`</span><span data-offset-key="7767778c7985418692e0dca8bad03053:2"> is less than the item at </span><span data-offset-key="7767778c7985418692e0dca8bad03053:3">`list[pivot_index]`</span><span data-offset-key="7767778c7985418692e0dca8bad03053:4">. If it is, then we need to swap these items.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94932a6de576400e8f1e2fa56cd56ba3"><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:0">That has to happen in two steps. First we swap i with an item one </span><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:1">*beyond*</span><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:2"> the pivot index. Then we swap the pivot with the item after the pivot.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94932a6de576400e8f1e2fa56cd56ba3"><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:0">That has to happen in two steps. First we swap i with an item one </span><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:1">_beyond_</span><span data-offset-key="94932a6de576400e8f1e2fa56cd56ba3:2"> the pivot index. Then we swap the pivot with the item after the pivot.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac9e2d5cefb54618ad063ca9d7da6dee"><span data-offset-key="ac9e2d5cefb54618ad063ca9d7da6dee:0">Then we update the pivot index to search for the next item to sort in the array.</span></span></span>
 

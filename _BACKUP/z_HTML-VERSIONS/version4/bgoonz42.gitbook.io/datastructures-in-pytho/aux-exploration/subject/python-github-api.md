@@ -186,8 +186,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python GitHub API</span>
-======================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python GitHub API</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -199,29 +198,29 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3df18cb1b30548898382360823b867b6"><span data-offset-key="3df18cb1b30548898382360823b867b6:0">In this article, we will request information related to Python projects on GitHub using the </span></span><a href="https://api.github.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9a2b4ace49b14e18a09a58ef151d9d91"><span data-offset-key="9a2b4ace49b14e18a09a58ef151d9d91:0">Github API</span></span></a><span data-key="f4ea3f992c65479790ea124237b858b3"><span data-offset-key="f4ea3f992c65479790ea124237b858b3:0">. We will also summarize information that we’ve obtained using the API.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="81d514a42e1541c2acc356421a58bc18"><span data-offset-key="81d514a42e1541c2acc356421a58bc18:0">Prerequisites</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efe322d58f144bbc93758ce503b73f54"><span data-offset-key="efe322d58f144bbc93758ce503b73f54:0">As a prerequisite, you must have a little understanding of Python to follow the tutorial along.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8ce0339b22ff4b798ceb71e0629e24df"><span data-offset-key="8ce0339b22ff4b798ceb71e0629e24df:0">Objectives</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da5aa01031b3446292d5f0320a4275b1"><span data-offset-key="da5aa01031b3446292d5f0320a4275b1:0">In this article we will go through:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2aee4ab5e14b4b959efcc3bfe8032b7c"><span data-offset-key="2aee4ab5e14b4b959efcc3bfe8032b7c:0">Using an API call to request data.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2aee4ab5e14b4b959efcc3bfe8032b7c"><span data-offset-key="2aee4ab5e14b4b959efcc3bfe8032b7c:0">Using an API call to request data.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c5533eca9f847cfb52540905614b49d"><span data-offset-key="6c5533eca9f847cfb52540905614b49d:0">Installation of </span><span data-offset-key="6c5533eca9f847cfb52540905614b49d:1">`requests`</span><span data-offset-key="6c5533eca9f847cfb52540905614b49d:2"> library.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c5533eca9f847cfb52540905614b49d"><span data-offset-key="6c5533eca9f847cfb52540905614b49d:0">Installation of </span><span data-offset-key="6c5533eca9f847cfb52540905614b49d:1">`requests`</span><span data-offset-key="6c5533eca9f847cfb52540905614b49d:2"> library.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0ff4091dfe44d8abdcda8ebccfdbfd7"><span data-offset-key="a0ff4091dfe44d8abdcda8ebccfdbfd7:0">Keeping track of an API response.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0ff4091dfe44d8abdcda8ebccfdbfd7"><span data-offset-key="a0ff4091dfe44d8abdcda8ebccfdbfd7:0">Keeping track of an API response.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a6fd185e154d6ca418ffb85484f04c"><span data-offset-key="a3a6fd185e154d6ca418ffb85484f04c:0">Using the response dictionary.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a6fd185e154d6ca418ffb85484f04c"><span data-offset-key="a3a6fd185e154d6ca418ffb85484f04c:0">Using the response dictionary.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0bd5ed13ac3047c6a583caf4dfb8845b"><span data-offset-key="0bd5ed13ac3047c6a583caf4dfb8845b:0">Summing up the top repositories.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0bd5ed13ac3047c6a583caf4dfb8845b"><span data-offset-key="0bd5ed13ac3047c6a583caf4dfb8845b:0">Summing up the top repositories.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="9f3a88bd6b414915acd4ac6d680ffc7a"><span data-offset-key="9f3a88bd6b414915acd4ac6d680ffc7a:0">Requesting data using an API call</span></span></span>
 
@@ -233,17 +232,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="915724ffd43340789dd20253167dba3f"><span data-offset-key="915724ffd43340789dd20253167dba3f:0">Let’s examine the parts of the API call:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7095decff1f4bbfa50bebc6d8226699"><span data-offset-key="a7095decff1f4bbfa50bebc6d8226699:0">`https://api.github.com/`</span><span data-offset-key="a7095decff1f4bbfa50bebc6d8226699:1"> - sends the request to the GitHub web server that handles API calls.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a7095decff1f4bbfa50bebc6d8226699"><span data-offset-key="a7095decff1f4bbfa50bebc6d8226699:0">`https://api.github.com/`</span><span data-offset-key="a7095decff1f4bbfa50bebc6d8226699:1"> - sends the request to the GitHub web server that handles API calls.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b01d73d024e9488cbe6942e0d6e3b332"><span data-offset-key="b01d73d024e9488cbe6942e0d6e3b332:0">`search/repositories`</span><span data-offset-key="b01d73d024e9488cbe6942e0d6e3b332:1"> - is the endpoint that informs the API to search across all of GitHub repositories.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b01d73d024e9488cbe6942e0d6e3b332"><span data-offset-key="b01d73d024e9488cbe6942e0d6e3b332:0">`search/repositories`</span><span data-offset-key="b01d73d024e9488cbe6942e0d6e3b332:1"> - is the endpoint that informs the API to search across all of GitHub repositories.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f227e4281b34908a761281edfdd332a"><span data-offset-key="9f227e4281b34908a761281edfdd332a:0">`?`</span><span data-offset-key="9f227e4281b34908a761281edfdd332a:1"> - indicates that an argument is about to be passed.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f227e4281b34908a761281edfdd332a"><span data-offset-key="9f227e4281b34908a761281edfdd332a:0">`?`</span><span data-offset-key="9f227e4281b34908a761281edfdd332a:1"> - indicates that an argument is about to be passed.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f10fe7f4f1654fa99051e8048237a3ff"><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:0">`q=`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:1">- the character </span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:2">`q`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:3"> stands for </span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:4">`query`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:5">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f10fe7f4f1654fa99051e8048237a3ff"><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:0">`q=`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:1">- the character </span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:2">`q`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:3"> stands for </span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:4">`query`</span><span data-offset-key="f10fe7f4f1654fa99051e8048237a3ff:5">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a99bc4c6e4624f5d9fb26be8fa1048af"><span data-offset-key="a99bc4c6e4624f5d9fb26be8fa1048af:0">`language:python`</span><span data-offset-key="a99bc4c6e4624f5d9fb26be8fa1048af:1"> - that queries repositories that use only Python as their main language.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a99bc4c6e4624f5d9fb26be8fa1048af"><span data-offset-key="a99bc4c6e4624f5d9fb26be8fa1048af:0">`language:python`</span><span data-offset-key="a99bc4c6e4624f5d9fb26be8fa1048af:1"> - that queries repositories that use only Python as their main language.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="790ed53d4de94f69bceb0ce47b79aa0c"><span data-offset-key="790ed53d4de94f69bceb0ce47b79aa0c:0">`&sort=stars`</span><span data-offset-key="790ed53d4de94f69bceb0ce47b79aa0c:1"> - the projects are sorted by the number of stars they have gotten.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="790ed53d4de94f69bceb0ce47b79aa0c"><span data-offset-key="790ed53d4de94f69bceb0ce47b79aa0c:0">`&sort=stars`</span><span data-offset-key="790ed53d4de94f69bceb0ce47b79aa0c:1"> - the projects are sorted by the number of stars they have gotten.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d905ea461d2a412db7f6f69a80f0bea2"><span data-offset-key="d905ea461d2a412db7f6f69a80f0bea2:0">Upon fetching the API data, the response will look like:</span></span></span>
 
@@ -253,15 +252,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="955d0a74d71f40e6ba398f17b512956b"><span data-offset-key="955d0a74d71f40e6ba398f17b512956b:0">Let’s examine the output:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13c6862e5a944ba68618a417629fb607"><span data-offset-key="13c6862e5a944ba68618a417629fb607:0">In the second line of the result, you can see that GitHub has detected a total of </span><span data-offset-key="13c6862e5a944ba68618a417629fb607:1">`7668509`</span><span data-offset-key="13c6862e5a944ba68618a417629fb607:2"> Python projects.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13c6862e5a944ba68618a417629fb607"><span data-offset-key="13c6862e5a944ba68618a417629fb607:0">In the second line of the result, you can see that GitHub has detected a total of </span><span data-offset-key="13c6862e5a944ba68618a417629fb607:1">`7668509`</span><span data-offset-key="13c6862e5a944ba68618a417629fb607:2"> Python projects.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="652dc0bffb304aecb8663a74dcef4f78"><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:0">We know the request was successful if the value for </span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:1">`incomplete results`</span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:2"> is </span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:3">`false`</span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="652dc0bffb304aecb8663a74dcef4f78"><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:0">We know the request was successful if the value for </span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:1">`incomplete results`</span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:2"> is </span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:3">`false`</span><span data-offset-key="652dc0bffb304aecb8663a74dcef4f78:4">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13b037e907184790bb7034c781444532"><span data-offset-key="13b037e907184790bb7034c781444532:0">The key </span><span data-offset-key="13b037e907184790bb7034c781444532:1">`items`</span><span data-offset-key="13b037e907184790bb7034c781444532:2"> holds a list of objects that contains information of the Python-based projects on GitHub.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13b037e907184790bb7034c781444532"><span data-offset-key="13b037e907184790bb7034c781444532:0">The key </span><span data-offset-key="13b037e907184790bb7034c781444532:1">`items`</span><span data-offset-key="13b037e907184790bb7034c781444532:2"> holds a list of objects that contains information of the Python-based projects on GitHub.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="82586a3e381945c08aa46c362a1fd194"><span data-offset-key="82586a3e381945c08aa46c362a1fd194:0">Let’s try to explore more information by parsing the API’s output using Python.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e9ecffc7936e412eaf049fc68e6403a3"><span data-offset-key="e9ecffc7936e412eaf049fc68e6403a3:0">Installing requests</span></span></span>
 
@@ -273,7 +272,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de1907a052574884b5da6d08e0284dc2"><span data-offset-key="de1907a052574884b5da6d08e0284dc2:0">Visit </span></span><a href="https://packaging.python.org/tutorials/installing-packages/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d11c48353fc34c8fbf33d327196d87a7"><span data-offset-key="d11c48353fc34c8fbf33d327196d87a7:0">this</span></span></a><span data-key="92c4c05168c34c3da6785439b1850932"><span data-offset-key="92c4c05168c34c3da6785439b1850932:0"> link, if this is your first time using </span><span data-offset-key="92c4c05168c34c3da6785439b1850932:1">`pip`</span><span data-offset-key="92c4c05168c34c3da6785439b1850932:2"> for installing packages.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="908d5545001b420497850d589a42fd10"><span data-offset-key="908d5545001b420497850d589a42fd10:0">Processing an API response</span></span></span>
 
@@ -283,25 +282,25 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="027a657da81a482caae5d5bcdc30aed6"><span data-offset-key="027a657da81a482caae5d5bcdc30aed6:0">Let’s understand the code snippet above:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d186bbbd4d44f30b4972af41ecc622f"><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:0">We begin by importing the </span><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:1">`requests`</span><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:2"> module.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d186bbbd4d44f30b4972af41ecc622f"><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:0">We begin by importing the </span><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:1">`requests`</span><span data-offset-key="9d186bbbd4d44f30b4972af41ecc622f:2"> module.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d5150a36a7b54769b0d9aec5f6131ade"><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:0">Then, we use the </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:1">`requests`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:2"> package to make the API call to the particular </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:3">`url`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:4"> using </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:5">`get()`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:6">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d5150a36a7b54769b0d9aec5f6131ade"><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:0">Then, we use the </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:1">`requests`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:2"> package to make the API call to the particular </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:3">`url`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:4"> using </span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:5">`get()`</span><span data-offset-key="d5150a36a7b54769b0d9aec5f6131ade:6">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9d479d777084ce78b52e7927311c2f1"><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:0">The API response is saved by a variable called </span><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:1">`response`</span><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9d479d777084ce78b52e7927311c2f1"><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:0">The API response is saved by a variable called </span><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:1">`response`</span><span data-offset-key="f9d479d777084ce78b52e7927311c2f1:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e2d1e3b7b834e27b1d3e47c28e4ce84"><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:0">The </span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:1">`status_code`</span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:2"> attribute of the </span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:3">`response`</span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:4"> object indicates if the request was complete.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e2d1e3b7b834e27b1d3e47c28e4ce84"><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:0">The </span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:1">`status_code`</span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:2"> attribute of the </span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:3">`response`</span><span data-offset-key="7e2d1e3b7b834e27b1d3e47c28e4ce84:4"> object indicates if the request was complete.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96644e48a0fc47c2bebe05c023af3db6"><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:0">A successful API call returns the </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:1">`status_code`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:2"> </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:3">`200`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:4">, while an unsuccessful one returns </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:5">`500`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:6">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96644e48a0fc47c2bebe05c023af3db6"><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:0">A successful API call returns the </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:1">`status_code`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:2"> </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:3">`200`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:4">, while an unsuccessful one returns </span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:5">`500`</span><span data-offset-key="96644e48a0fc47c2bebe05c023af3db6:6">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a171bf87d808419d89f8838d04e66ef9"><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:0">Then, we use the </span><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:1">`json()`</span><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:2"> function to convert the information from JSON format to a Python dictionary.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a171bf87d808419d89f8838d04e66ef9"><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:0">Then, we use the </span><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:1">`json()`</span><span data-offset-key="a171bf87d808419d89f8838d04e66ef9:2"> function to convert the information from JSON format to a Python dictionary.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07f67c9a8cf446e18b5692be7cf17170"><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:0">We store the converted JSON in </span><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:1">`response_dict`</span><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07f67c9a8cf446e18b5692be7cf17170"><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:0">We store the converted JSON in </span><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:1">`response_dict`</span><span data-offset-key="07f67c9a8cf446e18b5692be7cf17170:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e719ae156c96497ab2cef10479e9de84"><span data-offset-key="e719ae156c96497ab2cef10479e9de84:0">Then, we print the keys from </span><span data-offset-key="e719ae156c96497ab2cef10479e9de84:1">`response_dict`</span><span data-offset-key="e719ae156c96497ab2cef10479e9de84:2">, which are as follows:</span></span></span>
 
     Status code: 200dict_keys(['items', 'total_count', 'incomplete_results'])
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b1f4c3ad1bcc47b2b7d93d5b700d4e09"><span data-offset-key="b1f4c3ad1bcc47b2b7d93d5b700d4e09:0">Using the response dictionary</span></span></span>
 
@@ -313,15 +312,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aa02733fe3814689b97ecc1ba659ba7b"><span data-offset-key="aa02733fe3814689b97ecc1ba659ba7b:0">Let’s understand the code snippet above:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9749761f3da747c9b9848c82635a1a4f"><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:0">The value linked with the </span><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:1">`total_count`</span><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:2"> reflects the count of GitHub Python projects available.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9749761f3da747c9b9848c82635a1a4f"><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:0">The value linked with the </span><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:1">`total_count`</span><span data-offset-key="9749761f3da747c9b9848c82635a1a4f:2"> reflects the count of GitHub Python projects available.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f85f074990b45bcbed29824dfde0713"><span data-offset-key="9f85f074990b45bcbed29824dfde0713:0">The value of </span><span data-offset-key="9f85f074990b45bcbed29824dfde0713:1">`items`</span><span data-offset-key="9f85f074990b45bcbed29824dfde0713:2"> is a list of dictionaries, each providing information about a single Python repository.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f85f074990b45bcbed29824dfde0713"><span data-offset-key="9f85f074990b45bcbed29824dfde0713:0">The value of </span><span data-offset-key="9f85f074990b45bcbed29824dfde0713:1">`items`</span><span data-offset-key="9f85f074990b45bcbed29824dfde0713:2"> is a list of dictionaries, each providing information about a single Python repository.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2216f40b80bd420db579a9013024735e"><span data-offset-key="2216f40b80bd420db579a9013024735e:0">The list of dictionaries is then saved in </span><span data-offset-key="2216f40b80bd420db579a9013024735e:1">`repos_dicts`</span><span data-offset-key="2216f40b80bd420db579a9013024735e:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2216f40b80bd420db579a9013024735e"><span data-offset-key="2216f40b80bd420db579a9013024735e:0">The list of dictionaries is then saved in </span><span data-offset-key="2216f40b80bd420db579a9013024735e:1">`repos_dicts`</span><span data-offset-key="2216f40b80bd420db579a9013024735e:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98f60d6acd364e17b1bbf5fa2701a342"><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:0">We select the first item from </span><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:1">`repos_dicts`</span><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:2"> to look more closely at the information given about each repository.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98f60d6acd364e17b1bbf5fa2701a342"><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:0">We select the first item from </span><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:1">`repos_dicts`</span><span data-offset-key="98f60d6acd364e17b1bbf5fa2701a342:2"> to look more closely at the information given about each repository.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="56ea6fed2d1b4c128db4c721e6402521"><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:0">Finally, we print the all of keys of an </span><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:1">`item`</span><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="56ea6fed2d1b4c128db4c721e6402521"><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:0">Finally, we print the all of keys of an </span><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:1">`item`</span><span data-offset-key="56ea6fed2d1b4c128db4c721e6402521:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d143eaffd0fc47acaa78183c70963552"><span data-offset-key="d143eaffd0fc47acaa78183c70963552:0">**Output:**</span></span></span>
 
@@ -329,13 +328,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2964f0f55a814a3fa7e2921d1799db5c"><span data-offset-key="2964f0f55a814a3fa7e2921d1799db5c:0">The GitHub API gets back a range of data for every repository like:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ae38737e10e481ca3eadced6634c7c7"><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:0">`status_code`</span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:1"> as </span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:2">`200`</span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:3">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ae38737e10e481ca3eadced6634c7c7"><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:0">`status_code`</span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:1"> as </span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:2">`200`</span><span data-offset-key="9ae38737e10e481ca3eadced6634c7c7:3">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20a56f2576824e6ebbbe93364b536eb3"><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:0">Total number of repos as </span><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:1">`7694326`</span><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="20a56f2576824e6ebbbe93364b536eb3"><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:0">Total number of repos as </span><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:1">`7694326`</span><span data-offset-key="20a56f2576824e6ebbbe93364b536eb3:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="11a137b6468642df89120022eeb43ea1"><span data-offset-key="11a137b6468642df89120022eeb43ea1:0">Total number of repos found as </span><span data-offset-key="11a137b6468642df89120022eeb43ea1:1">`30`</span><span data-offset-key="11a137b6468642df89120022eeb43ea1:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="11a137b6468642df89120022eeb43ea1"><span data-offset-key="11a137b6468642df89120022eeb43ea1:0">Total number of repos found as </span><span data-offset-key="11a137b6468642df89120022eeb43ea1:1">`30`</span><span data-offset-key="11a137b6468642df89120022eeb43ea1:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5d901dbcd0b488fa5da9e5f676eafc3"><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:0">Each repository </span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:1">`repo_dict`</span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:2"> having </span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:3">`74`</span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:4"> keys.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5d901dbcd0b488fa5da9e5f676eafc3"><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:0">Each repository </span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:1">`repo_dict`</span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:2"> having </span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:3">`74`</span><span data-offset-key="f5d901dbcd0b488fa5da9e5f676eafc3:4"> keys.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="14a37a61d8ad4e49aae2686952a2c23e"><span data-offset-key="14a37a61d8ad4e49aae2686952a2c23e:0">You may get a sense of the type of information you can get about a repository by observing these keys.</span></span></span>
 
@@ -349,17 +348,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2849e461eb94447e8bec5905aa6f889d"><span data-offset-key="2849e461eb94447e8bec5905aa6f889d:0">Examining the output:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="284ffe5b85a6442b8afb9966e3ddff58"><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:0">You can observe that the most popular Python repository on GitHub is </span><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:1">`public-apis`</span><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="284ffe5b85a6442b8afb9966e3ddff58"><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:0">You can observe that the most popular Python repository on GitHub is </span><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:1">`public-apis`</span><span data-offset-key="284ffe5b85a6442b8afb9966e3ddff58:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aa0fcd35d40c4b25a95f7e8ee854c90b"><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:0">Owner of the repository is </span><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:1">`public-apis`</span><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aa0fcd35d40c4b25a95f7e8ee854c90b"><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:0">Owner of the repository is </span><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:1">`public-apis`</span><span data-offset-key="aa0fcd35d40c4b25a95f7e8ee854c90b:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="251d26041f9447599d869fbc91a39f94"><span data-offset-key="251d26041f9447599d869fbc91a39f94:0">It has been starred more than </span><span data-offset-key="251d26041f9447599d869fbc91a39f94:1">`140,000`</span><span data-offset-key="251d26041f9447599d869fbc91a39f94:2"> times.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="251d26041f9447599d869fbc91a39f94"><span data-offset-key="251d26041f9447599d869fbc91a39f94:0">It has been starred more than </span><span data-offset-key="251d26041f9447599d869fbc91a39f94:1">`140,000`</span><span data-offset-key="251d26041f9447599d869fbc91a39f94:2"> times.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="801034e7af87412bb3786396b7cd4a01"><span data-offset-key="801034e7af87412bb3786396b7cd4a01:0">Project was created on the date of </span><span data-offset-key="801034e7af87412bb3786396b7cd4a01:1">`2016 March`</span><span data-offset-key="801034e7af87412bb3786396b7cd4a01:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="801034e7af87412bb3786396b7cd4a01"><span data-offset-key="801034e7af87412bb3786396b7cd4a01:0">Project was created on the date of </span><span data-offset-key="801034e7af87412bb3786396b7cd4a01:1">`2016 March`</span><span data-offset-key="801034e7af87412bb3786396b7cd4a01:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="655cb0d991b64d77a1aa118ac2ff81cf"><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:0">Project description of </span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:1">`public-apis`</span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:2"> is </span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:3">`collective collection of open                                             APIs`</span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="655cb0d991b64d77a1aa118ac2ff81cf"><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:0">Project description of </span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:1">`public-apis`</span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:2"> is </span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:3">`collective collection of open APIs`</span><span data-offset-key="655cb0d991b64d77a1aa118ac2ff81cf:4">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a859c00d3ea54c22a74c6d947339afdb"><span data-offset-key="a859c00d3ea54c22a74c6d947339afdb:0">Summing up the top repositories</span></span></span>
 
@@ -373,21 +372,21 @@
 
     Name: public-apisOwner: public-apisStars: 144910Repository: https://github.com/public-apis/public-apisDescription: A collective list of free APIs​Name: system-design-primerOwner: donnemartinStars: 139818Repository: https://github.com/donnemartin/system-design-primerDescription: Learn how to design large-scale systems.--snip--​Name: PythonOwner: TheAlgorithmsStars: 113616Repository: https://github.com/TheAlgorithms/PythonDescription: All Algorithms implemented in Python
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b6523322c8b5422386cfdd9f94b48f15"><span data-offset-key="b6523322c8b5422386cfdd9f94b48f15:0">Conclusion</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="056a4a10635748d180e3b05d9f15299d"><span data-offset-key="056a4a10635748d180e3b05d9f15299d:0">In this tutorial, we have gone over the following:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="032fc0868b38453c84796118dff6d2f2"><span data-offset-key="032fc0868b38453c84796118dff6d2f2:0">Using an API call to request data.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="032fc0868b38453c84796118dff6d2f2"><span data-offset-key="032fc0868b38453c84796118dff6d2f2:0">Using an API call to request data.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b256bc0a338742d09a016ab62348a236"><span data-offset-key="b256bc0a338742d09a016ab62348a236:0">Installing requests.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b256bc0a338742d09a016ab62348a236"><span data-offset-key="b256bc0a338742d09a016ab62348a236:0">Installing requests.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c47e7e1819f495986695a899603f2ac"><span data-offset-key="8c47e7e1819f495986695a899603f2ac:0">Processing an API response.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c47e7e1819f495986695a899603f2ac"><span data-offset-key="8c47e7e1819f495986695a899603f2ac:0">Processing an API response.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8bc5ec29a0494f3c9389fe714ed0fea9"><span data-offset-key="8bc5ec29a0494f3c9389fe714ed0fea9:0">Using the response dictionary.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8bc5ec29a0494f3c9389fe714ed0fea9"><span data-offset-key="8bc5ec29a0494f3c9389fe714ed0fea9:0">Using the response dictionary.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b0f27ef47ed4a319847895ab5d4c229"><span data-offset-key="0b0f27ef47ed4a319847895ab5d4c229:0">Summing up the top repositories.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b0f27ef47ed4a319847895ab5d4c229"><span data-offset-key="0b0f27ef47ed4a319847895ab5d4c229:0">Summing up the top repositories.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f86b4239dc74b01a7b6617a19bea1a7"><span data-offset-key="3f86b4239dc74b01a7b6617a19bea1a7:0">You can check out the full code </span></span><a href="https://github.com/Bonimum/Working-with-GitHub-s-web-API-in-Python/blob/main/index.md" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a72cdd89fa9b46ae9f8577d157c3c0b9"><span data-offset-key="a72cdd89fa9b46ae9f8577d157c3c0b9:0">here</span></span></a><span data-key="3aac4530d1944709a36952388b9d47b3"><span data-offset-key="3aac4530d1944709a36952388b9d47b3:0">.</span></span></span>
 

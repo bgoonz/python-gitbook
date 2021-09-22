@@ -200,8 +200,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Recursion Explained</span>
-========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Recursion Explained</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -233,7 +232,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9f8e41846e443d9acc422d3a25eae00"><span data-offset-key="b9f8e41846e443d9acc422d3a25eae00:0">Let’s take some examples of using the Python recursive functions.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ab9c6b33dc064567806a984d9df3f968"><span data-offset-key="ab9c6b33dc064567806a984d9df3f968:0">1) A simple recursive function example in Python</span></span></span>
 
@@ -255,11 +254,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efa0392d94fa44f68166c185d6ac65a9"><span data-offset-key="efa0392d94fa44f68166c185d6ac65a9:0">To show the number 3, 2 and 1, you need to:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b405f202637462cb5a13cdda57c5ed6"><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:0">First, call the </span><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:1">`count_down(3)`</span><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:2"> to show the number 3.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b405f202637462cb5a13cdda57c5ed6"><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:0">First, call the </span><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:1">`count_down(3)`</span><span data-offset-key="5b405f202637462cb5a13cdda57c5ed6:2"> to show the number 3.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7747ebdf66a940dab5847cd12840046e"><span data-offset-key="7747ebdf66a940dab5847cd12840046e:0">Second, call the </span><span data-offset-key="7747ebdf66a940dab5847cd12840046e:1">`count_down(2)`</span><span data-offset-key="7747ebdf66a940dab5847cd12840046e:2"> to show the number 2.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7747ebdf66a940dab5847cd12840046e"><span data-offset-key="7747ebdf66a940dab5847cd12840046e:0">Second, call the </span><span data-offset-key="7747ebdf66a940dab5847cd12840046e:1">`count_down(2)`</span><span data-offset-key="7747ebdf66a940dab5847cd12840046e:2"> to show the number 2.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f355ffa9d6e24c9b8a444ee9e3075d5c"><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:0">Finally, call the </span><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:1">`count_down(1)`</span><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:2"> to show the number 1.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f355ffa9d6e24c9b8a444ee9e3075d5c"><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:0">Finally, call the </span><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:1">`count_down(1)`</span><span data-offset-key="f355ffa9d6e24c9b8a444ee9e3075d5c:2"> to show the number 1.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ae055efecda4d63bf24dead970a688b"><span data-offset-key="9ae055efecda4d63bf24dead970a688b:0">In order to do so, inside the </span><span data-offset-key="9ae055efecda4d63bf24dead970a688b:1">`count_down()`</span><span data-offset-key="9ae055efecda4d63bf24dead970a688b:2"> function, you’ll need to define a logic to call the function </span><span data-offset-key="9ae055efecda4d63bf24dead970a688b:3">`count_down()`</span><span data-offset-key="9ae055efecda4d63bf24dead970a688b:4"> with argument 2, and 1.</span></span></span>
 
@@ -297,13 +296,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00aec1225d71463c812dd54b2ae50de1"><span data-offset-key="00aec1225d71463c812dd54b2ae50de1:0">To apply the recursion technique, you can calculate the sum of the sequence from 1 to n as follows:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b1ae1327e4a420783f629abe7a79d31"><span data-offset-key="2b1ae1327e4a420783f629abe7a79d31:0">sum(n) = n + sum(n-1)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b1ae1327e4a420783f629abe7a79d31"><span data-offset-key="2b1ae1327e4a420783f629abe7a79d31:0">sum(n) = n + sum(n-1)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6953f4f478d409f9e15e6d7a0481b66"><span data-offset-key="f6953f4f478d409f9e15e6d7a0481b66:0">sum(n-1) = n-1 + sum(n-2)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6953f4f478d409f9e15e6d7a0481b66"><span data-offset-key="f6953f4f478d409f9e15e6d7a0481b66:0">sum(n-1) = n-1 + sum(n-2)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1c730dc4ef046448d551603cbdd594e"><span data-offset-key="c1c730dc4ef046448d551603cbdd594e:0">…</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1c730dc4ef046448d551603cbdd594e"><span data-offset-key="c1c730dc4ef046448d551603cbdd594e:0">…</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c55ac35ecffa495b9d07bc108ec3e899"><span data-offset-key="c55ac35ecffa495b9d07bc108ec3e899:0">sum(0) = 0</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c55ac35ecffa495b9d07bc108ec3e899"><span data-offset-key="c55ac35ecffa495b9d07bc108ec3e899:0">sum(0) = 0</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="09ba7be2436e42e28677856d1167fea5"><span data-offset-key="09ba7be2436e42e28677856d1167fea5:0">The </span><span data-offset-key="09ba7be2436e42e28677856d1167fea5:1">`sum()`</span><span data-offset-key="09ba7be2436e42e28677856d1167fea5:2"> function keeps calling itself as long as its argument is greater than zero.</span></span></span>
 
@@ -319,9 +318,9 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="f3ca53308fe04a8ba38ad6899bd64562"><span data-offset-key="f3ca53308fe04a8ba38ad6899bd64562:0">Summary</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78483cd2af914c41bb76dccec2105697"><span data-offset-key="78483cd2af914c41bb76dccec2105697:0">A recursive function is a function that calls itself until it doesn’t.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78483cd2af914c41bb76dccec2105697"><span data-offset-key="78483cd2af914c41bb76dccec2105697:0">A recursive function is a function that calls itself until it doesn’t.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2e3c437d658940f4bdab3e0aa3b05f16"><span data-offset-key="2e3c437d658940f4bdab3e0aa3b05f16:0">And a recursive function always has a condition that stops calling itself.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2e3c437d658940f4bdab3e0aa3b05f16"><span data-offset-key="2e3c437d658940f4bdab3e0aa3b05f16:0">And a recursive function always has a condition that stops calling itself.</span></span></span>
 
 <a href="../untitled-6.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 
