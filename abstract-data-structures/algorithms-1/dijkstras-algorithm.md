@@ -183,7 +183,7 @@ We will now update the adjacent vertices: 2, 3, 5, and 8.![](https://s3.stackabu
 
 ### Free eBook: Git Essentials
 
-Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually _learn_ it!Download the eBook
+Check out our hands-on, practical guide to learning Git, with best-practices, industry-accepted standards, and included cheat sheet. Stop Googling Git commands and actually _learn_ it!Download the eBook  
 
 * Since `9 + 2 < 13`, the new cost of vertex 2 is 11
 * Since `9 + 10 < infinity`, the new cost of vertex 3 is 19
@@ -270,7 +270,7 @@ Now that we've gone over an example, let's see how we can implement Dijkstra's a
 
 Before we start, we are first going to have to import a priority queue:
 
-```python
+```text
 from queue import PriorityQueue
 ```
 
@@ -278,7 +278,7 @@ We will use a priority queue to easily sort the vertices we haven't visited yet,
 
 Now, we'll implement a constructor for a class called `Graph`:
 
-```python
+```text
 class Graph:
 
     def __init__(self, num_of_vertices):
@@ -295,7 +295,7 @@ In this simple parametrized constructor, we provided the number of vertices in t
 
 Now, let's define a function which is going to add an edge to a graph:
 
-```python
+```text
     def add_edge(self, u, v, weight):
         self.edges[u][v] = weight
         self.edges[v][u] = weight
@@ -303,7 +303,7 @@ Now, let's define a function which is going to add an edge to a graph:
 
 Now, let's write the function for Dijkstra's algorithm:
 
-```python
+```text
     def dijkstra(self, start_vertex):
         D = {v:float('inf') for v in range(self.v)}
         D[start_vertex] = 0
@@ -343,6 +343,6 @@ If the new cost is lower than the old cost, we put the neighbor and its cost to 
 
 Finally, after all of the vertices are visited and the priority queue is empty, we return the list `D`. Our function is done!
 
-Let's put the graph we used in the example above as the input of our implemented algorithm:
+Let's put the graph we used in the example above as the input of our implemented algorithm:  
 
 

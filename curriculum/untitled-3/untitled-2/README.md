@@ -281,7 +281,7 @@ Python is unique because indentation instead of some other character marks block
 
 Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
 
-```python
+```text
 >>> import string
 >>> string.whitespace
 ' \t\n\r\x0b\x0c'
@@ -296,7 +296,7 @@ You've seen the different types of whitespace characters that can appear, but yo
 
 Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
 
-```python
+```text
 >>> first = "Lambda"
 >>> second = "School"
 >>> first + second
@@ -316,7 +316,7 @@ It's important to understand that Python assumes meaning in newline characters w
 
 Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
 
-```python
+```text
 >>> if True:
 ... if True:
   File "<stdin>", line 2
@@ -328,7 +328,7 @@ IndentationError: expected an indented block
 
 This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
 
-```python
+```text
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -339,7 +339,7 @@ it worked!
 
 The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
 
-```python
+```text
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -375,19 +375,19 @@ In Python, you can have integers and floating-point numbers.
 
 You can define an integer like so:
 
-```python
+```text
 my_int = 3
 ```
 
 You can also cast a floating-point number to be an integer like so:
 
-```python
+```text
 my_int = int(3.0)
 ```
 
 To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
 
-```python
+```text
 my_float = 3.0
 my_float = float(3)
 ```
@@ -396,20 +396,20 @@ my_float = float(3)
 
 You can define strings with either single or double quotes:
 
-```python
+```text
 my_string = 'Lambda School'
 my_string = "Lambda School"
 ```
 
 It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
 
-```python
+```text
 my_string = "I don't have to worry about apostrophes with my double-quotes."
 ```
 
 Let's practice declaring variables to store an int, a float, and a string:
 
-```python
+```text
 my_int = 2
 my_float = 5.0
 my_str = "Lambda School"
@@ -431,21 +431,21 @@ There are a few basic operators that you should be familiar with as you start wr
 
 You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
 
-```python
+```text
 my_number = 2 + 2 * 8 / 5.0
 print(my_number) # 5.2
 ```
 
 There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
 
-```python
+```text
 my_remainder = 9 % 4
 print(my_remainder) # 1
 ```
 
 You can use two multiplication operators to make the exponentiation operator \(`**`\).
 
-```python
+```text
 two_squared = 2 ** 2
 print(two_squared)    # 4
 two_cubed = 2 ** 3
@@ -456,7 +456,7 @@ print(two_cubed)      # 8
 
 You can use the addition operator to concatenate strings and lists:
 
-```python
+```text
 string_one = "Hello,"
 string_two = " World!"
 combined = string_one + string_two
@@ -470,7 +470,7 @@ print(big_lst) # [1, 2, 3, 4, 5, 6]
 
 You can also use the multiplication operator to create a new list or string that repeats the original sequence:
 
-```python
+```text
 my_string = "Bueller"
 repeated = my_string * 3
 print(repeated) # BuellerBuellerBueller
@@ -486,27 +486,27 @@ Now, let's see if we can combine all of this information in a quick demo.
 
 First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
 
-```python
+```text
 a = object()
 b = object()
 ```
 
 Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
 
-```python
+```text
 a_list = [a] * 5
 b_list = [b] * 5
 ```
 
 Then, let's combine `a_list` and `b_list` into a `combined` list.
 
-```python
+```text
 combined = a_list + b_list
 ```
 
 If our code works as expected, `combined` should have a length of 10.
 
-```python
+```text
 print(len(combined)) # 10
 ```
 
@@ -524,7 +524,7 @@ To format a string in Python, you use the `%` operator to format a set of stored
 
 For example, let's say you want to insert a `name` variable inside a string. You would do the following:
 
-```python
+```text
 name = "Austen"
 formatted_string = "Hello, %s!" % name
 print(formatted_string) # Hello, Austen!
@@ -532,7 +532,7 @@ print(formatted_string) # Hello, Austen!
 
 If you have more than one argument specifier, you need to enclose your arguments in a tuple:
 
-```python
+```text
 name = "Austen"
 year = 2020
 print("Hey %s! It's the year %d." % (name, year))
@@ -541,7 +541,7 @@ print("Hey %s! It's the year %d." % (name, year))
 
 Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
 
-```python
+```text
 my_list = [1,2,3]
 print("my_list: %s" % my_list)
 # my_list: [1, 2, 3]
@@ -561,7 +561,7 @@ Let's see if we can use all of this information to practice formatting a few str
 
 Let's imagine that we have some data that we want to inject into a string.
 
-```python
+```text
 product_name = "bananas"
 price = 1.23
 product_id = 123456
@@ -569,7 +569,7 @@ product_id = 123456
 
 We need to print a formatted string using argument specifiers and a tuple that contains our data:
 
-```python
+```text
 print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
@@ -596,14 +596,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```python
+```text
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -611,7 +611,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -619,7 +619,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -628,7 +628,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -636,7 +636,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -644,7 +644,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -673,14 +673,14 @@ There are lots of ways you can interact with strings in Python.
 
 The `len()` method prints out the number of characters in the string.
 
-```python
+```text
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -688,7 +688,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -696,7 +696,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -705,7 +705,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -713,7 +713,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -721,7 +721,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```python
+```text
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -893,7 +893,7 @@ while True:
 
 You can also use a `continue` statement to skip the current block but not exit the loop entirely.
 
-```python
+```text
 # Prints 1, 3, 5, 7
 for x in range(8):
     # if x is even, skip this block and do not print

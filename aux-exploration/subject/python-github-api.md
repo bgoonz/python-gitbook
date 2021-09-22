@@ -28,7 +28,7 @@ GitHub’s web API allows you to make API requests for a range of data.
 
 Type the following into your web browser URL bar and press **Enter** to see how an API call appears like:
 
-```python
+```text
 https://api.github.com/search/repositories?q=language:python&sort=stars
 ```
 
@@ -43,7 +43,7 @@ Let’s examine the parts of the API call:
 
 Upon fetching the API data, the response will look like:
 
-```python
+```text
 {
   "total_count": 7668509,
   "incomplete_results": false,
@@ -72,7 +72,7 @@ The `requests` package enables us to request data from the website and evaluate 
 
 Run the following command to install `requests`:
 
-```python
+```text
 pip install --user requests
 ```
 
@@ -82,10 +82,10 @@ Visit [this](https://packaging.python.org/tutorials/installing-packages/) link, 
 
 To fetch the most starred Python projects on GitHub, we’ll start writing a program that will make an API call and evaluate the data as shown:
 
-```python
+```text
 import requests
 
-# Create an API request
+# Create an API request 
 url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
 response = requests.get(url)
 print("Status code: ", response.status_code)
@@ -107,7 +107,7 @@ Let’s understand the code snippet above:
 
 Then, we print the keys from `response_dict`, which are as follows:
 
-```python
+```text
 Status code: 200
 dict_keys(['items', 'total_count', 'incomplete_results'])
 ```
@@ -118,7 +118,7 @@ Now, let’s make a report that sums up all the information.
 
 Here, we will be calculating the total number of available repositories with language as `Python`, and fetch all the keys under `items` as shown:
 
-```python
+```text
 print("Total repos:", response_dict['total_count'])
 # find total number of repositories
 repos_dicts = response_dict['items']
@@ -140,7 +140,7 @@ Let’s understand the code snippet above:
 
 **Output:**
 
-```python
+```text
 Status code: 200
 Total repos: 7694326
 Repos found: 30
@@ -166,7 +166,7 @@ You may get a sense of the type of information you can get about a repository by
 
 Let’s have a look at what some of the keys in repos dict entail:
 
-```python
+```text
 # Find out more about the repositories.
 repos_dicts = response_dict['items']
 print("Repositories found:", len(repos_dicts))
@@ -184,7 +184,7 @@ print('Description:', repo_dict['description']) #print the repository’s descri
 
 **Output:**
 
-```python
+```text
 Status-code: 200
 Total repos: 7588335
 Repositories found: 30
@@ -213,7 +213,7 @@ We’ll try to analyze more than one repository.
 
 Let’s create a loop that prints specified information about each of the repositories supplied by the API call:
 
-```python
+```text
  --snip--
 # Find out more about the repositories.
 repos_dicts = respons_dict['items']
@@ -229,7 +229,7 @@ for repos_dict in repos_dicts:   #loop through all the dictionaries in repos_dic
 
 We print the name of each project, its owner, the number of stars it has, its GitHub URL, and the project’s description inside the loop:
 
-```python
+```text
 Name: public-apis
 Owner: public-apis
 Stars: 144910

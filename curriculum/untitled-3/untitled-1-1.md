@@ -44,7 +44,7 @@ Any Python file that ends with the `.py` extension is considered a module. The n
 
 To import from other modules, we can use the `import` command.
 
-```python
+```text
 import math
 
 print(math.factorial(5))
@@ -55,7 +55,7 @@ So, by importing the built-in `math` module, we have access to all of the functi
 
 If you only need a specific function from a module, you can import that specific function like so:
 
-```python
+```text
 from math import factorial
 
 print(factorial(5))
@@ -64,7 +64,7 @@ print(factorial(5))
 
 You can also import all the names from a module with this syntax to avoid using dot notation throughout your file.
 
-```python
+```text
 from math import *
 
 print(factorial(5))
@@ -75,7 +75,7 @@ print(pow(2, 3))
 
 You can also bind the module to a name of your choice by using `as`.
 
-```python
+```text
 import math as alias
 
 print(alias.factorial(5))
@@ -84,7 +84,7 @@ print(alias.factorial(5))
 
 To find out which names a module defines when imported, you can use the `dir()` method. This method returns an alphabetically sorted list of strings for all of the names defined in the module.
 
-```python
+```text
 import math
 
 print(dir(math))
@@ -281,7 +281,7 @@ L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 Node\(45\) Node\(90\)
 
 {% hint style="info" %}
-```python
+```text
 Simple Singly Linked List Node Class
 value -> int
 next -> LinkedListNode
@@ -434,7 +434,7 @@ once.
 *Note: If you get stuck, try drawing a picture of a small linked list and
 running your function by hand. Does it actually work? Also, don't forget to
 consider edge cases (like a list with only 1 or 0 elements).*
-          cn         p
+          cn         p                
         None        [1] -> [2] ->[3] -> None
 
 - setup a current variable pointing to the head of the list

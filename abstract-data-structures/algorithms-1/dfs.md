@@ -43,10 +43,10 @@ output:
 
 def get_factors(n):
     """[summary]
-
+    
     Arguments:
         n {[int]} -- [to analysed number]
-
+    
     Returns:
         [list of lists] -- [all factors of the number n]
     """
@@ -60,7 +60,7 @@ def get_factors(n):
             i {[int]} -- [to tested divisor]
             combi {[list]} -- [catch divisors]
             res {[list]} -- [all factors of the number n]
-
+        
         Returns:
             [list] -- [res]
         """
@@ -83,7 +83,7 @@ def get_factors_iterative1(n):
 
     Arguments:
         n {[int]} -- [to analysed number]
-
+    
     Returns:
         [list of lists] -- [all factors]
     """
@@ -105,7 +105,7 @@ def get_factors_iterative2(n):
 
     Arguments:
         n {[int]} -- [description]
-
+    
     Returns:
         [list of lists] -- [all factors of n]
     """
@@ -405,7 +405,7 @@ class Sudoku:
 You are given a m x n 2D grid initialized with these three possible values:
     -1: A wall or an obstacle.
     0: A gate.
-    INF: Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 to represent INF
+    INF: Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 to represent INF 
          as you may assume that the distance to a gate is less than 2147483647.
 Fill the empty room with distance to its nearest gate.
 If it is impossible to reach a gate, it should be filled with INF.
@@ -487,7 +487,7 @@ By marking nodes as "visited", if we ever encounter that node again - we're in a
 
 Given these steps, we can summarize DFS in pseudocode:
 
-```python
+```text
 DFS(G, u):
     # Input processing
     u.visited = true
@@ -505,7 +505,7 @@ With this view, you can really start to appreciate just how simple yet useful th
 
 Depth-First Search implementation is usually **recursive** in code given how natural of a pair that is, but it can also be easily implemented non-recursively. We'll be using the recursive method as it's simpler and more fitting:
 
-```python
+```text
 def dfs(adj_list, start, target, path, visited = set()):
     path.append(start)
     visited.add(start)
@@ -530,7 +530,7 @@ In the end, if we find ourselves outside of the `for` loop, it means that all th
 
 Let's illustrate how the code works through an example. We'll be using a Python **dictionary** to represent the graph as an adjacency list. Here's the graph we'll be using in the following example:
 
-```python
+```text
 adj_list = {
     0 : [1, 2],
     1 : [0, 3],
@@ -554,7 +554,7 @@ We're searching for a path from node `0` to node `3`, if it exists, the path wil
 traversal_path = []
 ```
 
-```python
+```text
 traversal_path = dfs(adj_list, 0, 3, traversal_path)
 print(traversal_path)
 ```
@@ -576,7 +576,7 @@ The steps our algorithm will take are as follows:
 
 The algorithm stops and our program prints out the resulting traversal path from node `0` to node `3`:
 
-```python
+```text
 [0, 1, 3]
 ```
 

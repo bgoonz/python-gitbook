@@ -39,7 +39,7 @@ Dictionaries in Python can be created using curly braces as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print(my_dict)
 type(my_dict)
@@ -47,7 +47,7 @@ type(my_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
 dict
 
 ### Using dict\(\) function: <a id="using-dict-function"></a>
@@ -56,7 +56,7 @@ Python has a built-in function, _dict\(\)_ that can be used to create [dictionar
 
 **EXAMPLE:**
 
-```python
+```text
 new_dict=dict()
 print(new_dict)
 type(new_dict)
@@ -64,14 +64,14 @@ type(new_dict)
 
 **OUTPUT:**
 
-{}
+{}  
 dict
 
 In the above example, an empty dictionary is created since no key-value pairs are supplied as a parameter to the dict\(\) function. In case you want to add values, you can do as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 new_dict=dict(Dave = '001' , Ava= '002' , Joe= '003')
 print(new_dict)
 type(new_dict)
@@ -79,14 +79,14 @@ type(new_dict)
 
 **OUTPUT:**
 
-{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}
+{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}  
 dict
 
 Nested dictionaries are basically dictionaries that lie within other dictionaries. For example:
 
 **EXAMPLE:**
 
-```python
+```text
 emp_details = {'Employee': {'Dave': {'ID': '001',
  'Salary': 2000,
  'Designation':'Python Developer'},
@@ -118,7 +118,7 @@ Dictionary values can be accessed using the key values as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 my_dict\['Dave'\]
 ```
@@ -131,7 +131,7 @@ There are a number of built-in functions that can be used such as get\(\), keys\
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print(my_dict.keys())
 print(my_dict.values())
@@ -140,15 +140,15 @@ print(my_dict.get('Dave'))
 
 **OUTPUT:**
 
-dict\_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\)
-dict\_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\)
+dict\_keys\(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’\)  
+dict\_values\(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’\)  
 001
 
 ### Implementing the for loop: <a id="implementing-the-for-loop"></a>
 
 **The for loop allows you to access the key-value pairs of a dictionary easily by iterating over them. For example:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 print("All keys")
 for x in my_dict:
@@ -163,24 +163,24 @@ for x,y in my_dict.items():
 
 **OUTPUT:**
 
-All keys
-Dave
-Ava
-Joe
-All values
-001
-002
-003
-All keys and values
-Dave : 001
-Ava : 002
+All keys  
+Dave  
+Ava  
+Joe  
+All values  
+001  
+002  
+003  
+All keys and values  
+Dave : 001  
+Ava : 002  
 Joe : 003
 
 > Dictionaries are mutable data types and therefore, you can update them as and when required. For example, if I want to change the ID of the employee named Dave from ‘001’ to ‘004’ and if I want to add another key-value pair to my dictionary, I can do as follows:
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave' : '001' , 'Ava': '002' , 'Joe': '003'}
 my_dict\['Dave'\] = '004' #Updating the value of Dave
 my_dict\['Chris'\] = '005' #adding a key-value pair
@@ -193,7 +193,7 @@ There a number of functions that allow you to delete items from a dictionary suc
 
 **EXAMPLE:**
 
-```python
+```text
 my_dict={'Dave': '004', 'Ava': '002', 'Joe': '003', 'Chris': '005'}
 del my_dict\['Dave'\] #removes key-value pair of 'Dave'
 my_dict.pop('Ava') #removes the value of 'Ava'
@@ -209,7 +209,7 @@ As you have seen previously, I have created a nested dictionary containing emplo
 
 **EXAMPLE:**
 
-```python
+```text
 import pandas as pd
 emp_details = {'Employee': {'Dave': {'ID': '001',
  'Salary': 2000,

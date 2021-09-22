@@ -2365,7 +2365,7 @@ _Return to the Top_
 
 #### Indexing and Slicing Strings
 
-```python
+```text
 H   e   l   l   o       w   o   r   l   d    !
 0   1   2   3   4   5   6   7   8   9   10   11
 ```
@@ -4032,7 +4032,7 @@ The traceback info was written to errorInfo.txt.
 
 The 116 is the return value from the write\(\) method, since 116 characters were written to the file. The traceback text was written to errorInfo.txt.
 
-```python
+```text
 Traceback (most recent call last):
   File "<pyshell#28>", line 2, in <module>
 Exception: This is the error message.
@@ -4218,7 +4218,7 @@ _Return to the Top_
 
 Many programming languages have a ternary operator, which define a conditional expression. The most common usage is to make a terse simple conditional assignment statement. In other words, it offers one-line code to evaluate the first expression if the condition is true, otherwise it evaluates the second expression.
 
-```python
+```text
 <expression1> if <condition> else <expression2>
 ```
 
@@ -4553,13 +4553,13 @@ _Return to the Top_
 
 1. Install virtualenv
 
-   ```python
+   ```text
    pip install virtualenv
    ```
 
 2. Install virtualenvwrapper-win \(Windows\)
 
-   ```python
+   ```text
    pip install virtualenvwrapper-win
    ```
 
@@ -4567,7 +4567,7 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```python
+   ```text
    mkvirtualenv HelloWold
    ```
 
@@ -4577,7 +4577,7 @@ Usage:
 
    To bind our virtualenv with our current working directory we simply enter:
 
-   ```python
+   ```text
    setprojectdir .
    ```
 
@@ -4585,7 +4585,7 @@ Usage:
 
    To move onto something else in the command line type ‘deactivate’ to deactivate your environment.
 
-   ```python
+   ```text
    deactivate
    ```
 
@@ -4595,7 +4595,7 @@ Usage:
 
    Open up the command prompt and type ‘workon HelloWold’ to activate the environment and move into your root project folder
 
-   ```python
+   ```text
    workon HelloWold
    ```
 
@@ -4607,19 +4607,19 @@ _Return to the Top_
 
 1. Install Poetry
 
-   ```python
+   ```text
    pip install --user poetry
    ```
 
 2. Create a new project
 
-   ```python
+   ```text
    poetry new my-project
    ```
 
    This will create a my-project directory:
 
-   ```python
+   ```text
    my-project
    ├── pyproject.toml
    ├── README.rst
@@ -4632,7 +4632,7 @@ _Return to the Top_
 
    The pyproject.toml file will orchestrate your project and its dependencies:
 
-   ```python
+   ```text
    [tool.poetry]
    name = "my-project"
    version = "0.1.0"
@@ -4650,26 +4650,26 @@ _Return to the Top_
 
    To add dependencies to your project, you can specify them in the tool.poetry.dependencies section:
 
-   ```python
+   ```text
    [tool.poetry.dependencies]
    pendulum = "^1.4"
    ```
 
    Also, instead of modifying the pyproject.toml file by hand, you can use the add command and it will automatically find a suitable version constraint.
 
-   ```python
+   ```text
    $ poetry add pendulum
    ```
 
    To install the dependencies listed in the pyproject.toml:
 
-   ```python
+   ```text
    poetry install
    ```
 
    To remove dependencies:
 
-   ```python
+   ```text
    poetry remove pendulum
    ```
 
@@ -4683,13 +4683,13 @@ _Return to the Top_
 
 1. Install pipenv
 
-   ```python
+   ```text
    pip install pipenv
    ```
 
 2. Enter your Project directory and install the Packages for your project
 
-   ```python
+   ```text
    cd my_project
    pipenv install <package>
    ```
@@ -4698,19 +4698,19 @@ _Return to the Top_
 
 3. Uninstall Packages
 
-   ```python
+   ```text
    pipenv uninstall <package>
    ```
 
 4. Activate the Virtual Environment associated with your Python project
 
-   ```python
+   ```text
    pipenv shell
    ```
 
 5. Exit the Virtual Environment
 
-   ```python
+   ```text
    exit
    ```
 
@@ -4728,13 +4728,13 @@ Usage:
 
 1. Make a Virtual Environment
 
-   ```python
+   ```text
    conda create -n HelloWorld
    ```
 
 2. To use the Virtual Environment, activate it by:
 
-   ```python
+   ```text
    conda activate HelloWorld
    ```
 
@@ -4742,13 +4742,13 @@ Usage:
 
 3. Exit the Virtual Environment
 
-   ```python
+   ```text
    conda deactivate
    ```
 
 _Return to the Top_
 
-```python
+```text
 
 ## Python Cheatsheet
 

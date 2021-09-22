@@ -11,7 +11,7 @@ for num in arr: # O(n * 1) ==> O(n)
     print(num)  # O(1)
 for num in arr: # O(n * 1) ==> O(n)
     print(num)  # O(1)
-
+    
 # O(n) + O(1) => O(n)
 # O(n * 1) + O(n * 1) + O(1)
 # O(2n) + O(1) => O(n) + O(1) => O(n)
@@ -55,7 +55,7 @@ for x in arr: # O(n)
 * Given an array of integers, print out a histogram using the said array; include a base layer \(all stars\)
   * E.g. `[5, 4, 0, 3, 4, 1]`
 
-```python
+```text
 *
 **  *
 ** **

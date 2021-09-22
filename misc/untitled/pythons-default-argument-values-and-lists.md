@@ -116,7 +116,7 @@ $ python3 default_good.py
 
 Now, if we had a function that used an _immutable_ value as a default argument, we have no problem even though the same process is happening.
 
-```python
+```text
 def foo(a="hello!"):
     return a
 ```
