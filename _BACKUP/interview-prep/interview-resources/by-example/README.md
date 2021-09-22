@@ -1,5 +1,6 @@
-# By Example
+By Example
+==========
 
-{% embed url="https://replit.com/@bgoonz/interview-prep\#main.py" %}
+{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/interview-prep">@bgoonz/interview-prep</span>\#main.py” %}
 
-{% file src="../../../.gitbook/assets/interview-prep.zip" %}
+{% file src=“../../../.gitbook/assets/interview-prep.zip” %}

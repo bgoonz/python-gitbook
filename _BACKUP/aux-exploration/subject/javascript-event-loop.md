@@ -1,4 +1,5 @@
-# JavaScript Event Loop
+JavaScript Event Loop
+=====================
 
 **Summary**: in this tutorial, you’ll learn about the event loop in JavaScript and how JavaScript achieves the concurrency model based on the event loop.
 
@@ -14,30 +15,26 @@ A function that takes a long time to complete is called a blocking function. Tec
 
 A blocking function can be a function that downloads a file from a remote server or calls an API from an external server. For example:
 
-```python
-function task(message) {
-    // emulate time consuming task
-    let n = 10000000000;
-    while (n > 0){
-        n--;
+    function task(message) {
+        // emulate time consuming task
+        let n = 10000000000;
+        while (n > 0){
+            n--;
+        }
+        console.log(message);
     }
-    console.log(message);
-}
 
-console.log('Start script...');
-task('Download a file.');
-console.log('Done!');Code language: JavaScript (javascript)
-```
+    console.log('Start script...');
+    task('Download a file.');
+    console.log('Done!');Code language: JavaScript (javascript)
 
 In this example, we have a big [`while`](https://www.javascripttutorial.net/javascript-while-loop/) loop inside the `task()` function that emulates a time-consuming task. The `task()` function is a blocking function.
 
-The script hangs for a few seconds \(depending on how fast the computer is\) and issues the following output:
+The script hangs for a few seconds (depending on how fast the computer is) and issues the following output:
 
-```python
-Start script...
-Download a file.
-Done!
-```
+    Start script...
+    Download a file.
+    Done!
 
 to execute the script, the JavaScript engine places the first call `console.log()` on top of the stack and executes it. Then, JavaScript places the `task()` function on top of the call stack and executes the function.
 
@@ -49,25 +46,21 @@ Finally, the JavaScript engine places the last call to the `console.log('Done!')
 
 To prevent a blocking function from blocking other activities, you typically put it in a [callback function](https://www.javascripttutorial.net/javascript-callback/) for execution later. For example:
 
-```python
-console.log('Start script...');
+    console.log('Start script...');
 
-setTimeout(() => {
-    task('Download a file.');
-}, 1000);
+    setTimeout(() => {
+        task('Download a file.');
+    }, 1000);
 
-console.log('Done!');Code language: JavaScript (javascript)
-```
+    console.log('Done!');Code language: JavaScript (javascript)
 
 In this example, you’ll see the message `'Start script...'` and `'Done!'` immediately. And after that, you’ll see the message `'Download a file'`.
 
 Here’s the output:
 
-```python
-Start script...
-Done!
-Download a file.
-```
+    Start script...
+    Done!
+    Download a file.
 
 As mentioned earlier that JavaScript can do only one thing at a time. However, it’s more precise to say that the JavaScript runtime can do one thing at a time.
 
@@ -87,32 +80,26 @@ If the call stack is not empty, the event loop waits until it is empty and place
 
 See another example:
 
-```python
-console.log('Hi!');
+    console.log('Hi!');
 
-setTimeout(() => {
-    console.log('Execute immediately.');
-}, 0);
+    setTimeout(() => {
+        console.log('Execute immediately.');
+    }, 0);
 
-console.log('Bye!');
-Code language: JavaScript (javascript)
-```
+    console.log('Bye!');
+    Code language: JavaScript (javascript)
 
 In this example, the timeout is 0 second, so the message `'Execute immediately.'` should appear before the message `'Bye!'`. However, it is not the case. However, it doesn’t work like that.
 
 The JavaScript engine places the following function call on the callback queue and executes it when the call stack is empty. In other words, the JavaScript engine executes it after the `console.log('Bye!')`.
 
-```python
-console.log('Execute immediately.');Code language: JavaScript (javascript)
-```
+    console.log('Execute immediately.');Code language: JavaScript (javascript)
 
 Here’s the output:
 
-```python
-Hi!
-Bye!
-Execute immediately.
-```
+    Hi!
+    Bye!
+    Execute immediately.
 
 The following picture illustrates JavaScript runtime, Web API, Call stack, and Event loop:![javascript event loop](https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop.png)
 

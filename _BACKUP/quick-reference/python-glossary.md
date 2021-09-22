@@ -1,8 +1,5 @@
----
-description: Python Glossary
----
-
-# Python Glossary
+Python Glossary
+===============
 
 This page is meant to be a quick reference guide to Python. If you see something that needs to be added, please let us know and we will add it to the list.
 
@@ -56,7 +53,7 @@ Defines a function or method
 
 **dictionary**
 
-A mutable associative array \(or dictionary\) of key and value pairs. Can contain mixed types \(keys and values\). Keys must be a hashable type.
+A mutable associative array (or dictionary) of key and value pairs. Can contain mixed types (keys and values). Keys must be a hashable type.
 
 **distutils**
 
@@ -70,9 +67,9 @@ A docstring is a string literal that occurs as the first statement in a module, 
 
 A pseudo-module which programmers can use to enable new language features which are not compatible with the current interpreter.
 
-**easy_install**
+**easy\_install**
 
-Easy Install is a python module \(easy_install\) bundled with setuptools that lets you automatically download, build, install, and manage Python packages.
+Easy Install is a python module (easy\_install) bundled with setuptools that lets you automatically download, build, install, and manage Python packages.
 
 **evaluation order**
 
@@ -88,7 +85,7 @@ Python code that produces a value.
 
 **filter**
 
-filter\(function, sequence\) returns a sequence consisting of those items from the sequence for which function\(item\) is true
+filter(function, sequence) returns a sequence consisting of those items from the sequence for which function(item) is true
 
 **float**
 
@@ -124,7 +121,7 @@ Integrated development environment
 
 **if statement**
 
-Conditionally executes a block of code, along with else and elif \(a contraction of else-if\).
+Conditionally executes a block of code, along with else and elif (a contraction of else-if).
 
 **immutable**
 
@@ -178,7 +175,7 @@ Literals are notations for constant values of some built-in types.
 
 **map**
 
-map\(function, iterable, …\) Apply function to every item of iterable and return a list of the results.
+map(function, iterable, …) Apply function to every item of iterable and return a list of the results.
 
 **methods**
 
@@ -190,7 +187,7 @@ The basic unit of code reusability in Python. A block of code imported by some o
 
 **object**
 
-Any data with state \(attributes or value\) and defined behavior \(methods\).
+Any data with state (attributes or value) and defined behavior (methods).
 
 **object-oriented**
 
@@ -214,7 +211,7 @@ An idea or piece of code which closely follows the most common idioms of the Pyt
 
 **reduce**
 
-reduce\(function, sequence\) returns a single value constructed by calling the \(binary\) function on the first two items of the sequence, then on the result and the next item, and so on.
+reduce(function, sequence) returns a single value constructed by calling the (binary) function on the first two items of the sequence, then on the result and the next item, and so on.
 
 **set**
 
@@ -238,7 +235,7 @@ Can include numbers, letters, and various symbols and be enclosed by either doub
 
 **statement**
 
-A statement is part of a suite \(a “block” of code\).
+A statement is part of a suite (a “block” of code).
 
 **try**
 
@@ -250,7 +247,7 @@ Immutable, can contain mixed types.
 
 **variables**
 
-Placeholder for texts and numbers. The equal sign \(=\) is used to assign values to variables.
+Placeholder for texts and numbers. The equal sign (=) is used to assign values to variables.
 
 **while**
 

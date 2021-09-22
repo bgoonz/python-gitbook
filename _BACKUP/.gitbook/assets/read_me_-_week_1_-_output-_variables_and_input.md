@@ -1,36 +1,36 @@
 #### General Teacher Notes
 
-This week starts with some theory around Input/Process/Output and what an algorithm is. If you'd rather dive straight into the coding then that's fine.
+This week starts with some theory around Input/Process/Output and what an algorithm is. If you’d rather dive straight into the coding then that’s fine.
 
-There is a lot in this first week, don't be afraid to slow it down and really ensure that students have mastered these concepts. There are lots of similar tasks available online that you can use to supplement the ones in these resources. I can particularly recommend:
+There is a lot in this first week, don’t be afraid to slow it down and really ensure that students have mastered these concepts. There are lots of similar tasks available online that you can use to supplement the ones in these resources. I can particularly recommend:
 
-[[https://www.w3schools.com/python/python_exercises.asp]{.underline}](https://www.w3schools.com/python/python_exercises.asp)
+[<span class="underline">https://www.w3schools.com/python/python\_exercises.asp</span>](https://www.w3schools.com/python/python_exercises.asp)
 
-[[https://www.practicepython.org/]{.underline}](https://www.practicepython.org/)
+[<span class="underline">https://www.practicepython.org/</span>](https://www.practicepython.org/)
 
 The input/process/output diagram on the lesson slides will be referred back to in future sessions.
 
-It's important to ensure that students understand the difference between algorithm and program.
+It’s important to ensure that students understand the difference between algorithm and program.
 
 Once you have explained this we move on to coding output using the **print** statement. This is one of the simplest commands in Python. It offers instant feedback (users can see if it works or not straight away). When students have had a chance to predict & test, start to explore how to break the statement. This will give you a chance to highlight the importance of precision and correct syntax in programming. I find it really helps if students appreciate this very early on.
 
 At first, you start with printing set text (called strings). In later tasks you use variables to store text and refer back to it. Variables are used in a very similar way to letters in algebra - they represent the text. Students can call variables anything they like, but there are some good practice principles:
 
-- No two variables can have the same name.
+-   No two variables can have the same name.
 
-- Variable names should be meaningful (give you a clue as to the data
+-   Variable names should be meaningful (give you a clue as to the data
 
-  > stored therein
+    > stored therein
 
-- Variable names start with a lowercase letter.
+-   Variable names start with a lowercase letter.
 
-- Variable names cannot contain spaces.
+-   Variable names cannot contain spaces.
 
-- If a variable name is more than one word long, capitalise the first
+-   If a variable name is more than one word long, capitalise the first
 
-  > letter of the second word onwards, like this this is known as [**[camel > case]{.underline}**](https://en.wikipedia.org/wiki/Camel_case#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):
+    > letter of the second word onwards, like this this is known as \[**<span class="underline">camel &gt; case</span>**\](https://en.wikipedia.org/wiki/Camel\_case\#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):
 
-  - **_thisIsAnExampleVariableName_**
+    -   ***thisIsAnExampleVariableName***
 
 #### Key Concepts
 
@@ -52,9 +52,9 @@ Syntax - the format that code is written in. If code is not written in the corre
 
 ##### Task 1 - Output
 
-Task and instructions on repl.it - share this link with your students - [[https://repl.it/\@MrAColley/11-Output]{.underline}](https://repl.it/@MrAColley/11-Output)
+Task and instructions on repl.it - share this link with your students - [<span class="underline">https://repl.it/@MrAColley/11-Output</span>](https://repl.it/@MrAColley/11-Output)
 
-Example solution - [[https://repl.it/\@MrAColley/11-Output-Example-Solution]{.underline}](https://repl.it/@MrAColley/11-Output-Example-Solution)
+Example solution - [<span class="underline">https://repl.it/@MrAColley/11-Output-Example-Solution</span>](https://repl.it/@MrAColley/11-Output-Example-Solution)
 
 Task 1 - Add a comment on line 9 to predict what the code on line 10 will do.
 
@@ -64,37 +64,37 @@ Task 3 - Output a joke that outputs on multiple lines.
 
 ##### Task 2 - Variable Assignment
 
-Task and instructions - [[https://repl.it/\@MrAColley/12-Variable-Assignment]{.underline}](https://repl.it/@MrAColley/12-Variable-Assignment)
+Task and instructions - [<span class="underline">https://repl.it/@MrAColley/12-Variable-Assignment</span>](https://repl.it/@MrAColley/12-Variable-Assignment)
 
-Example solution - [[https://repl.it/\@MrAColley/12-Variable-Assignment-Example-Solution]{.underline}](https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution)
+Example solution - [<span class="underline">https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution</span>](https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution)
 
 Task 1 - Add comments to the code below to explain what it does
 
-name = \"Axl\"
+name = "Axl"
 
 print(name)
 
-Extra question - why isn\'t \'name\' in speech marks on line 5?
+Extra question - why isn't 'name' in speech marks on line 5?
 
 Task 2 - Concatenation
 
-name1 = \"Axl\"
+name1 = "Axl"
 
-name2 = \"Slash\"
+name2 = "Slash"
 
-\#Add 2 more variables to store \'Duff\' and \'Izzy\'
+\#Add 2 more variables to store 'Duff' and 'Izzy'
 
-This line uses concatenation to join the variables together with the string \'and\' to make a sentence.
+This line uses concatenation to join the variables together with the string 'and' to make a sentence.
 
 Complete the line to output all of the variables
 
-print(name1 + \" and \" + name2 + \" and \")
+print(name1 + " and " + name2 + " and ")
 
 ##### Task 3 - Variable Assignment Independent Challenge
 
-Task and instructions - [[https://repl.it/\@MrAColley/13-Variable-Assignment-Challenge]{.underline}](https://repl.it/@MrAColley/13-Variable-Assignment-Challenge)
+Task and instructions - [<span class="underline">https://repl.it/@MrAColley/13-Variable-Assignment-Challenge</span>](https://repl.it/@MrAColley/13-Variable-Assignment-Challenge)
 
-Example solution - [[https://repl.it/\@MrAColley/13-Variable-Assignment-Challenge-Example-Solution]{.underline}](https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution)
+Example solution - [<span class="underline">https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution</span>](https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution)
 
 Assign your name and your favourite food to 2 separate variables with suitable names.
 
@@ -114,9 +114,9 @@ Make sure that you have spaces and punctuation in the correct places.
 
 ##### Task 4 - Input
 
-Task and instructions - [**[https://repl.it/\@MrAColley/14-Input-With-Variables]{.underline}**](https://repl.it/@MrAColley/14-Input-With-Variables)
+Task and instructions - [**<span class="underline">https://repl.it/@MrAColley/14-Input-With-Variables</span>**](https://repl.it/@MrAColley/14-Input-With-Variables)
 
-Example solution - [[https://repl.it/\@MrAColley/14-Input-With-Variables-Example-Solution]{.underline}](https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution)
+Example solution - [<span class="underline">https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution</span>](https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution)
 
 \# Input With Variables
 
@@ -124,31 +124,31 @@ Example solution - [[https://repl.it/\@MrAColley/14-Input-With-Variables-Example
 
 \#Task 2 - add comments to the code to explain what the variables are called and where they are used. Make sure to show where the variable.
 
-print(\"Hi! What\'s your name?\")
+print("Hi! What's your name?")
 
 name = input()
 
-print(\"Hi \" + name + \"! How are you today?\")
+print("Hi " + name + "! How are you today?")
 
-\# Task 3 - Adapt the code so that it assigns input into the \'name\' variable. CHALLENGE - put a prompt in the input command to ask the user for their name.
+\# Task 3 - Adapt the code so that it assigns input into the 'name' variable. CHALLENGE - put a prompt in the input command to ask the user for their name.
 
-\# Task 4 - Combine lines 'Do you like programming' and answer = input() so that the input has a prompt in it.
+\# Task 4 - Combine lines ‘Do you like programming’ and answer = input() so that the input has a prompt in it.
 
 \#Task 5 - Adapt the output on the next to last line so that it includes both the name and the answer variables.
 
-name = \"Billy\"
+name = "Billy"
 
-print(\"We want to know if you like progamming!\")
+print("We want to know if you like progamming!")
 
 print()
 
-print(\"Do you like programming \" + name + \"?\")
+print("Do you like programming " + name + "?")
 
 answer = input()
 
-print(\"Great! You said \" + answer + \"!\")
+print("Great! You said " + answer + "!")
 
-print(\"Let\'s learn some Python today\")
+print("Let's learn some Python today")
 
 ##### Task 5 - Homework - The Chat Bot Challenge
 
@@ -162,6 +162,6 @@ The chatbot should work like this:
 
 •Ask the user three questions about themselves and store their responses in three different suitably named variables.
 
-•Respond to each of the questions one by one, using the user's name in the response.
+•Respond to each of the questions one by one, using the user’s name in the response.
 
-•Output a summary of all of the user's answers in a single sentence.
+•Output a summary of all of the user’s answers in a single sentence.

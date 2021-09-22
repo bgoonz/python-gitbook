@@ -1,6 +1,8 @@
-# Installing Python Modules
+Installing Python Modules
+=========================
 
-## Installing Python Modules
+Installing Python Modules
+-------------------------
 
 Email
 
@@ -8,7 +10,7 @@ Email
 
 As a popular open source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open source license terms.
 
-This allows Python users to share and collaborate effectively, benefiting from the solutions others have already created to common \(and sometimes even rare!\) problems, as well as potentially contributing their own solutions to the common pool.
+This allows Python users to share and collaborate effectively, benefiting from the solutions others have already created to common (and sometimes even rare!) problems, as well as potentially contributing their own solutions to the common pool.
 
 This guide covers the installation part of the process. For a guide to creating and sharing your own Python projects, refer to the [distribution guide](https://docs.python.org/3/distributing/index.html#distributing-index).
 
@@ -18,13 +20,13 @@ For corporate and other institutional users, be aware that many organisations ha
 
 ### Key terms
 
-- `pip` is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers.
-- A _virtual environment_ is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.
-- `venv` is the standard tool for creating virtual environments, and has been part of Python since Python 3.3. Starting with Python 3.4, it defaults to installing `pip` into all created virtual environments.
-- `virtualenv` is a third party alternative \(and predecessor\) to `venv`. It allows virtual environments to be used on versions of Python prior to 3.4, which either don’t provide `venv` at all, or aren’t able to automatically install `pip` into created environments.
-- The [Python Packaging Index](https://pypi.org/) is a public repository of open source licensed packages made available for use by other Python users.
-- the [Python Packaging Authority](https://www.pypa.io/) is the group of developers and documentation authors responsible for the maintenance and evolution of the standard packaging tools and the associated metadata and file format standards. They maintain a variety of tools, documentation, and issue trackers on both [GitHub](https://github.com/pypa) and [Bitbucket](https://bitbucket.org/pypa/).
-- `distutils` is the original build and distribution system first added to the Python standard library in 1998. While direct use of `distutils` is being phased out, it still laid the foundation for the current packaging and distribution infrastructure, and it not only remains part of the standard library, but its name lives on in other ways \(such as the name of the mailing list used to coordinate Python packaging standards development\).
+-   `pip` is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers.
+-   A *virtual environment* is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.
+-   `venv` is the standard tool for creating virtual environments, and has been part of Python since Python 3.3. Starting with Python 3.4, it defaults to installing `pip` into all created virtual environments.
+-   `virtualenv` is a third party alternative (and predecessor) to `venv`. It allows virtual environments to be used on versions of Python prior to 3.4, which either don’t provide `venv` at all, or aren’t able to automatically install `pip` into created environments.
+-   The [Python Packaging Index](https://pypi.org/) is a public repository of open source licensed packages made available for use by other Python users.
+-   the [Python Packaging Authority](https://www.pypa.io/) is the group of developers and documentation authors responsible for the maintenance and evolution of the standard packaging tools and the associated metadata and file format standards. They maintain a variety of tools, documentation, and issue trackers on both [GitHub](https://github.com/pypa) and [Bitbucket](https://bitbucket.org/pypa/).
+-   `distutils` is the original build and distribution system first added to the Python standard library in 1998. While direct use of `distutils` is being phased out, it still laid the foundation for the current packaging and distribution infrastructure, and it not only remains part of the standard library, but its name lives on in other ways (such as the name of the mailing list used to coordinate Python packaging standards development).
 
 Changed in version 3.5: The use of `venv` is now recommended for creating virtual environments.
 
@@ -38,28 +40,22 @@ The standard packaging tools are all designed to be used from the command line.
 
 The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
 
-```python
-python -m pip install SomePackage
-```
+    python -m pip install SomePackage
 
 Note
 
-For POSIX users \(including Mac OS X and Linux users\), the examples in this guide assume the use of a [virtual environment](https://docs.python.org/3/glossary.html#term-virtual-environment).
+For POSIX users (including Mac OS X and Linux users), the examples in this guide assume the use of a [virtual environment](https://docs.python.org/3/glossary.html#term-virtual-environment).
 
 For Windows users, the examples in this guide assume that the option to adjust the system PATH environment variable was selected when installing Python.
 
 It’s also possible to specify an exact or minimum version directly on the command line. When using comparator operators such as `>`, `<` or some other special character which get interpreted by shell, the package name and the version should be enclosed within double quotes:
 
-```python
-python -m pip install SomePackage==1.0.4    # specific version
-python -m pip install "SomePackage>=1.0.4"  # minimum version
-```
+    python -m pip install SomePackage==1.0.4    # specific version
+    python -m pip install "SomePackage>=1.0.4"  # minimum version
 
 Normally, if a suitable module is already installed, attempting to install it again will have no effect. Upgrading existing modules must be requested explicitly:
 
-```python
-python -m pip install --upgrade SomePackage
-```
+    python -m pip install --upgrade SomePackage
 
 More information and resources regarding `pip` and its capabilities can be found in the [Python Packaging User Guide](https://packaging.python.org/).
 
@@ -97,23 +93,19 @@ See also
 
 On Linux, Mac OS X, and other POSIX systems, use the versioned Python commands in combination with the `-m` switch to run the appropriate copy of `pip`:
 
-```python
-python2   -m pip install SomePackage  # default Python 2
-python2.7 -m pip install SomePackage  # specifically Python 2.7
-python3   -m pip install SomePackage  # default Python 3
-python3.4 -m pip install SomePackage  # specifically Python 3.4
-```
+    python2   -m pip install SomePackage  # default Python 2
+    python2.7 -m pip install SomePackage  # specifically Python 2.7
+    python3   -m pip install SomePackage  # default Python 3
+    python3.4 -m pip install SomePackage  # specifically Python 3.4
 
 Appropriately versioned `pip` commands may also be available.
 
 On Windows, use the `py` Python launcher in combination with the `-m` switch:
 
-```python
-py -2   -m pip install SomePackage  # default Python 2
-py -2.7 -m pip install SomePackage  # specifically Python 2.7
-py -3   -m pip install SomePackage  # default Python 3
-py -3.4 -m pip install SomePackage  # specifically Python 3.4
-```
+    py -2   -m pip install SomePackage  # default Python 2
+    py -2.7 -m pip install SomePackage  # specifically Python 2.7
+    py -3   -m pip install SomePackage  # default Python 3
+    py -3.4 -m pip install SomePackage  # specifically Python 3.4
 
 ### Common installation issues
 
@@ -127,9 +119,7 @@ On such systems, it is often better to use a virtual environment or a per-user i
 
 It is possible that `pip` does not get installed by default. One potential fix is:
 
-```python
-python -m ensurepip --default-pip
-```
+    python -m ensurepip --default-pip
 
 There are also additional resources for [installing pip.](https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel)
 

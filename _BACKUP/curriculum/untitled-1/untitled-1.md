@@ -1,6 +1,7 @@
-# DFS
+DFS
+===
 
-**Depth-first search \(DFS\)** is an [algorithm](https://brilliant.org/wiki/algorithm/) for searching a [graph](https://brilliant.org/wiki/depth-first-search-dfs/%28https://brilliant.org/wiki/graphs/%29) or [tree](https://brilliant.org/wiki/trees-basic/) data structure. The algorithm starts at the root \(top\) node of a tree and goes as far as it can down a given branch \(path\), then backtracks until it finds an unexplored path, and then explores it. The algorithm does this until the entire graph has been explored. Many problems in computer science can be thought of in terms of graphs. For example, analyzing networks, mapping routes, scheduling, and finding [spanning trees](https://brilliant.org/wiki/spanning-trees/) are graph problems. To analyze these problems, [graph-search algorithms](https://brilliant.org/wiki/graph-search-algorithm/) like depth-first search are useful.
+**Depth-first search (DFS)** is an [algorithm](https://brilliant.org/wiki/algorithm/) for searching a [graph](https://brilliant.org/wiki/depth-first-search-dfs/%28https://brilliant.org/wiki/graphs/%29) or [tree](https://brilliant.org/wiki/trees-basic/) data structure. The algorithm starts at the root (top) node of a tree and goes as far as it can down a given branch (path), then backtracks until it finds an unexplored path, and then explores it. The algorithm does this until the entire graph has been explored. Many problems in computer science can be thought of in terms of graphs. For example, analyzing networks, mapping routes, scheduling, and finding [spanning trees](https://brilliant.org/wiki/spanning-trees/) are graph problems. To analyze these problems, [graph-search algorithms](https://brilliant.org/wiki/graph-search-algorithm/) like depth-first search are useful.
 
 Depth-first searches are often used as subroutines in other more complex algorithms. For example, the [matching algorithm](https://brilliant.org/wiki/matching-algorithms/), [Hopcroft–Karp](https://brilliant.org/wiki/hopcroft-karp/), uses a DFS as part of its algorithm to help to find a [matching](https://brilliant.org/wiki/matching/) in a graph. DFS is also used in [tree-traversal](https://brilliant.org/wiki/traversals/) algorithms, also known as tree searches, which have applications in the [traveling-salesman problem](https://brilliant.org/wiki/travelling-salesman-problem/) and the [Ford-Fulkerson algorithm](https://brilliant.org/wiki/ford-fulkerson-algorithm/).
 
@@ -8,17 +9,17 @@ Depth-first searches are often used as subroutines in other more complex algorit
 
 > **How do you solve a maze?**
 >
-> Depth-first search is a common way that many people naturally approach solving problems like mazes. First, we select a path in the maze \(for the sake of the example, let's choose a path according to some rule we lay out ahead of time\) and we follow it until we hit a dead end or reach the finishing point of the maze. If a given path doesn’t work, we backtrack and take an alternative path from a past junction, and try that path. Below is an animation of a DFS approach to solving this maze.
+> Depth-first search is a common way that many people naturally approach solving problems like mazes. First, we select a path in the maze (for the sake of the example, let’s choose a path according to some rule we lay out ahead of time) and we follow it until we hit a dead end or reach the finishing point of the maze. If a given path doesn’t work, we backtrack and take an alternative path from a past junction, and try that path. Below is an animation of a DFS approach to solving this maze.
 >
 > ![DFS is a great way to solve mazes and other puzzles that have a single solution.](https://d18l82el6cdm1i.cloudfront.net/uploads/mf7THWHAbL-mazegif.gif)DFS is a great way to solve mazes and other puzzles that have a single solution.
 
 **Contents**
 
-- [Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#depth-first-search)
-- [Implementing Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#implementing-depth-first-search)
-- [Complexity of Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#complexity-of-depth-first-search)
-- [Applications](https://brilliant.org/wiki/depth-first-search-dfs/#applications)
-- [References](https://brilliant.org/wiki/depth-first-search-dfs/#references)
+-   [Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#depth-first-search)
+-   [Implementing Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#implementing-depth-first-search)
+-   [Complexity of Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#complexity-of-depth-first-search)
+-   [Applications](https://brilliant.org/wiki/depth-first-search-dfs/#applications)
+-   [References](https://brilliant.org/wiki/depth-first-search-dfs/#references)
 
 ### Depth-first Search
 
@@ -26,15 +27,15 @@ The main strategy of depth-first search is to explore deeper into the graph when
 
 > Here are the basic steps for performing a depth-first search:
 >
-> - Visit a vertex ss.
-> - Mark ss as visited.
-> - Recursively visit each unvisited vertex attached to ss.
+> -   Visit a vertex ss.
+> -   Mark ss as visited.
+> -   Recursively visit each unvisited vertex attached to ss.
 
 This animation illustrates the depth-first search algorithm:
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
 
-Note: This animation does not show the marking of a node as "visited," which would more clearly illustrate the backtracking step.
+Note: This animation does not show the marking of a node as “visited,” which would more clearly illustrate the backtracking step.
 
 > Fill out the following graph by labeling each node 1 through 12 according to the order in which the depth-first search would visit the nodes:
 >
@@ -48,24 +49,15 @@ Below are examples of pseudocode and Python code implementing DFS both recursive
 
 > **Pseudocode**[\[1\]](https://brilliant.org/wiki/depth-first-search-dfs/#citation-1)
 >
-> |     |     |
-> | :-- | :-- |
->
 > **Python Implementation without Recursion**
->
-> |     |     |
-> | :-- | :-- |
 
 DFS can also be implemented using recursion, which greatly reduces the number of lines of code.
 
 > **Python Implementation Using Recursion**
->
-> |     |     |
-> | :-- | :-- |
 
 It is common to modify the algorithm in order to keep track of the edges instead of the vertices, as each edge describes the nodes at each end. This is useful when one is attempting to reconstruct the traversed tree after processing each node. In case of a forest or a group of trees, this algorithm can be expanded to include an outer loop that iterates over all trees in order to process every single node.
 
-There are three different strategies for implementing DFS: _pre-order_, _in-order_, and _post-order_.
+There are three different strategies for implementing DFS: *pre-order*, *in-order*, and *post-order*.
 
 **Pre-order** DFS works by visiting the current node and successively moving to the left until a leaf is reached, visiting each node on the way there. Once there are no more children on the left of a node, the children on the right are visited. This is the most standard DFS algorithm.
 
@@ -75,7 +67,7 @@ A **post-order** strategy works by visiting the leftmost leaf in the tree, then 
 
 ### Complexity of Depth-first Search
 
-Depth-first search visits every vertex once and checks every edge in the graph once. Therefore, DFS complexity is O\(V + E\)O\(V+E\). This assumes that the graph is represented as an [adjacency list](https://brilliant.org/wiki/graphs-intermediate/).
+Depth-first search visits every vertex once and checks every edge in the graph once. Therefore, DFS complexity is O(V + E)O(V+E). This assumes that the graph is represented as an [adjacency list](https://brilliant.org/wiki/graphs-intermediate/).
 
 **DFS vs BFS**
 
@@ -87,15 +79,15 @@ BFS always returns an optimal answer, but this is not guaranteed for DFS.
 
 > ![](https://ds055uzetaobb.cloudfront.net/brioche/uploads/YVBRdBvFp3-screen-shot-2016-07-20-at-13837-pm.png?width=1200)
 >
-> Here is an example that compares the order that the graph is searched in when using a BFS and then a DFS \(by each of the three approaches\).[\[2\]](https://brilliant.org/wiki/depth-first-search-dfs/#citation-2)
+> Here is an example that compares the order that the graph is searched in when using a BFS and then a DFS (by each of the three approaches).[\[2\]](https://brilliant.org/wiki/depth-first-search-dfs/#citation-2)
 >
 > **Breadth First Search** : 1 2 3 4 5
 >
 > **Depth First Search**
 >
-> - Pre-order: 1 2 4 5 3
-> - In-order : 4 2 5 1 3
-> - Post-order : 4 5 2 3 1
+> -   Pre-order: 1 2 4 5 3
+> -   In-order : 4 2 5 1 3
+> -   Post-order : 4 5 2 3 1
 
 ### Applications
 

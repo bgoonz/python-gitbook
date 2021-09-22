@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>touple</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="touple">Touple</h1>
+<p>A tuple is an ordered collection of items. An ordered collection keeps the items in the order you insert or initialize them. In other words, the order is preserved. This is in contrast to dictionaries or sets, where the order is not preserved (unordered collections).</p>
+<p>Tuples are like lists but vary in the following aspects: They are immutable, (we cannot change them) unlike lists which are mutable (we can change them). Let us learn more about tuples and their related methods. We’ll also learn to effectively use them in Python.</p>
+<p>For more background on the different data structures in Python, check out the following articles:</p>
+<ul>
+<li><a href="https://www.section.io/data-structures-python-part-1/">Introduction to Data Structures</a></li>
+<li><a href="https://www.section.io/list-data-structure-python/">List</a></li>
+<li><a href="https://www.section.io/stack-data-structure-python/">Stack</a></li>
+<li><a href="https://www.section.io/queue-data-structure-python/">Queue</a></li>
+<li><a href="https://www.section.io/linked-list-data-structure-python/">Linked Lists</a></li>
+<li><a href="https://www.section.io/binary-tree-data-structure-python/">Binary Trees</a></li>
+<li><a href="https://www.section.io/heap-data-structure-python/">Heaps</a></li>
+<li><a href="https://www.section.io/graph-data-structure-python/">Graphs</a></li>
+</ul>
+<p><em>Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)</em></p>
+<h4 id="table-of-contents">Table of Contents <a id="table-of-contents"></a></h4>
+<ul>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#tuples-lets-code">Tuples: Let’s Code</a>
+<ul>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#creating-a-tuple">Creating a Tuple</a></li>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#accessing-items-in-a-tuple">Accessing Items in a Tuple</a></li>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#modifying-tuples">Modifying Tuples</a></li>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#tuple-methods">Tuple Methods</a></li>
+</ul></li>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#applications-of-tuples">Applications of Tuples</a></li>
+<li><a href="https://www.section.io/engineering-education/tuples-data-structure-python/#further-reading">Further Reading</a></li>
+</ul>
+<h4 id="tuples-lets-code">Tuples: Let’s Code <a id="tuples-lets-code"></a></h4>
+<p>As we discussed, a Tuple is a collection of items that are immutable. Let’s start by creating a tuple.</p>
+<p><strong>Creating a Tuple</strong></p>
+<p>A tuple can be created in multiple ways. The simplest way of creating a tuple is by setting a variable to a pair of empty parantheses.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Set the tuple1 variable to an empty tuple</span></a>
+<a class="sourceLine" id="cb1-2" title="2">tuple1 <span class="op">=</span> ()</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># Check if the tuple is initialized properly</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="bu">print</span>(<span class="bu">type</span>(tuple1))</a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co"># Output : &lt;class &#39;tuple&#39;&gt;</span></a></code></pre></div>
+<p>The code above snippet gives an output of <code>&lt;class: 'tuple'&gt;</code>, which indicates that the tuple has been created successfully. We can also create a tuple by using the in-built <code>tuple()</code> method in Python.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># Set the tuple2 variable to an empty tuple by using the tuple() method</span></a>
+<a class="sourceLine" id="cb2-2" title="2">tuple2 <span class="op">=</span> <span class="bu">tuple</span>()</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co"># Check if the tuple is initialized properly</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="bu">print</span>(<span class="bu">type</span>(tuple2))</a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co"># Output : &lt;class &#39;tuple&#39;&gt;</span></a></code></pre></div>
+<p>While initializing a tuple, we can also specify what data exists inside it.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># tuple3 consists of values 40, 50, 60</span></a>
+<a class="sourceLine" id="cb3-2" title="2">tuple3 <span class="op">=</span> (<span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># tuples can also consist of different datatypes</span></a>
+<a class="sourceLine" id="cb3-5" title="5">tuple4 <span class="op">=</span> (<span class="dv">45</span>, <span class="st">&quot;55&quot;</span>, <span class="st">&quot;Hello World&quot;</span>, <span class="va">True</span>, <span class="fl">42.6</span>)</a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co"># we can also create a tuple of lists</span></a>
+<a class="sourceLine" id="cb3-8" title="8">tuple5 <span class="op">=</span> ([<span class="dv">10</span>, <span class="dv">20</span>], [<span class="dv">30</span>, <span class="dv">40</span>], [<span class="dv">50</span>, <span class="dv">60</span>])</a></code></pre></div>
+<p><strong>Accessing Items in a Tuple</strong></p>
+<p>Tuples follow <a href="https://en.wikipedia.org/wiki/Zero-based_numbering">zero indexing</a>. In zero indexing, the first element of the tuple has the index ‘0’, the second element of the tuple has the index ‘1’, and so on.</p>
+<p><strong>Positive Indexing</strong></p>
+<p>For example, let’s create a tuple, <code>tuple1</code>. Tuple elements can be accessed the same way as a list element.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="bu">print</span>(tuple1[<span class="dv">0</span>]) <span class="co"># Output: 0</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="bu">print</span>(tuple1[<span class="dv">1</span>]) <span class="co"># Output: 1</span></a></code></pre></div>
+<p>This tuple follows zero indexing.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/tuples-data-structure-python/tuple-positive-index.png" alt="Tuple Positive Indexing" /><figcaption>Tuple Positive Indexing</figcaption>
+</figure>
+<p><em>Tuple Positive Indexing: Source –</em> <a href="https://www.geeksforgeeks.org/python-tuples/"><em>GeeksforGeeks</em></a></p>
+<p><strong>Negative Indexing</strong></p>
+<p>Similar to lists, we can also use negative indexing on a tuple. Therefore, ‘-1’ refers to the Nth element of a tuple, -2 refers to the (N-1)th element, and so on (where N is the length of the tuple).</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>, <span class="dv">60</span>)</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="bu">print</span>(tuple1[<span class="op">-</span><span class="dv">1</span>]) <span class="co"># Output: 60</span></a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="bu">print</span>(tuple1[<span class="op">-</span><span class="dv">3</span>]) <span class="co"># Output: 40</span></a></code></pre></div>
+<figure>
+<img src="https://www.section.io/engineering-education/tuples-data-structure-python/tuple-negative-index.png" alt="Tuple Negative Indexing" /><figcaption>Tuple Negative Indexing</figcaption>
+</figure>
+<p><em>Tuple Negative Indexing</em></p>
+<p><strong>Slicing</strong></p>
+<p>In Python, slicing is used to return a range of values. Like lists, tuples can also be sliced.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">13</span>)</a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="bu">print</span>(tuple1[<span class="dv">0</span>:<span class="dv">3</span>]) <span class="co"># Output: (1, 2, 3)</span></a>
+<a class="sourceLine" id="cb6-4" title="4"></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="bu">print</span>(tuple1[<span class="dv">4</span>:]) <span class="co"># Output: (8, 13)</span></a></code></pre></div>
+<p>As per the examples shown above, if we slice a range of [a : b), it would return from tuple index a to tuple index (b - 1). For more tricks on Python slicing, check out <a href="https://stackoverflow.com/questions/509211/understanding-slice-notation">this page</a>.</p>
+<p><strong>Modifying Tuples</strong></p>
+<p>Tuples are immutable.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">2000</span>, <span class="dv">3000</span>, <span class="dv">4000</span>)</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3">tuple1[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">1000</span></a></code></pre></div>
+<p>If we execute the code above, the Python interpreter throws the following error:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb8-2" title="2">    File <span class="st">&quot;main.py&quot;</span>, line <span class="dv">3</span> <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb8-3" title="3">        tuple1[<span class="dv">1</span>] <span class="op">=</span> <span class="dv">1000</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="pp">TypeError</span>: <span class="st">&#39;tuple&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a></code></pre></div>
+<p>This is because a tuple is designed to be immutable. However, we can change a tuple that contains mutable objects.</p>
+<p>For example, let us take a tuple of lists.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">tuple1 <span class="op">=</span> ([<span class="dv">10</span>, <span class="dv">20</span>], [<span class="dv">30</span>, <span class="dv">40</span>], [<span class="dv">50</span>, <span class="dv">60</span>])</a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3">tuple1[<span class="dv">1</span>][<span class="dv">0</span>] <span class="op">=</span> <span class="dv">70</span></a>
+<a class="sourceLine" id="cb9-4" title="4"></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="bu">print</span>(tuple1) <span class="co"># Output: ([10, 20], [70, 40], [50, 60])</span></a></code></pre></div>
+<p>This works perfectly because we are modifying the list within a tuple (which is mutable). We can also create new tuples from existing ones.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">tuple1 <span class="op">=</span> ([<span class="dv">10</span>, <span class="dv">20</span>], [<span class="dv">30</span>, <span class="dv">40</span>], [<span class="dv">50</span>, <span class="dv">60</span>])</a>
+<a class="sourceLine" id="cb10-2" title="2">tuple2 <span class="op">=</span> ([<span class="dv">100</span>, <span class="dv">200</span>], [<span class="dv">300</span>, <span class="dv">400</span>])</a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co"># Creating a new tuple from tuple1 and tuple2</span></a>
+<a class="sourceLine" id="cb10-5" title="5">tuple3 <span class="op">=</span> tuple1 <span class="op">+</span> tuple2</a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7"><span class="bu">print</span>(tuple3) <span class="co"># Output: ([10, 20], [30, 40], [50, 60], [100, 200], [300, 400])</span></a></code></pre></div>
+<p><strong>Tuple Methods</strong></p>
+<p>Tuples have the following in-built methods that make them extremely powerful:</p>
+<ul>
+<li><strong><code>cmp(tuple1, tuple2)</code></strong></li>
+<li><strong><code>len(tuple)</code></strong></li>
+<li><strong><code>min(tuple)</code></strong></li>
+<li><strong><code>max(tuple)</code></strong></li>
+<li><strong><code>tuple(list)</code></strong></li>
+<li><strong><code>t.count(el)</code></strong></li>
+<li><strong><code>t.index(el)</code></strong></li>
+</ul>
+<p><strong>cmp(tuple1, tuple2)</strong></p>
+<p><em>Note: The cmp() method existed in python2. It wasn’t included in python3. Therefore we define our own compare method.</em></p>
+<p>The compare method analyses two tuples element by element.</p>
+<p>It compares them and returns the following:</p>
+<ul>
+<li>If tuple1 &gt; tuple2: the method returns 1.</li>
+<li>If tuple2 &gt; tuple1: the method returns -1.</li>
+<li>If tuple1 == tuple2: the method returns 0.</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> <span class="bu">cmp</span>(t1, t2):</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="cf">return</span> <span class="bu">bool</span>(t1 <span class="op">&gt;</span> t2) <span class="op">-</span> <span class="bu">bool</span>(t1 <span class="op">&lt;</span> t2)</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="co">    When both tuples are equal,</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="co">        bool(t1 &gt; t2) = 0</span></a>
+<a class="sourceLine" id="cb11-6" title="6"><span class="co">        bool(t1 &lt; t2) = 0</span></a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="co">        Therefore, 0 - 0 = 0</span></a>
+<a class="sourceLine" id="cb11-8" title="8"></a>
+<a class="sourceLine" id="cb11-9" title="9"><span class="co">    When both tuple1 &gt; tuple2,</span></a>
+<a class="sourceLine" id="cb11-10" title="10"><span class="co">        bool(t1 &gt; t2) = 1</span></a>
+<a class="sourceLine" id="cb11-11" title="11"><span class="co">        bool(t1 &lt; t2) = 0</span></a>
+<a class="sourceLine" id="cb11-12" title="12"><span class="co">        Therefore, 1 - 0 = 1</span></a>
+<a class="sourceLine" id="cb11-13" title="13"></a>
+<a class="sourceLine" id="cb11-14" title="14"><span class="co">    When both tuple2 &gt; tuple1,</span></a>
+<a class="sourceLine" id="cb11-15" title="15"><span class="co">        bool(t1 &gt; t2) = 0</span></a>
+<a class="sourceLine" id="cb11-16" title="16"><span class="co">        bool(t1 &lt; t2) = 1</span></a>
+<a class="sourceLine" id="cb11-17" title="17"><span class="co">        Therefore, 0 - 1 = -1</span></a>
+<a class="sourceLine" id="cb11-18" title="18"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb11-19" title="19">tuple1 <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb11-20" title="20">tuple2 <span class="op">=</span> (<span class="dv">300</span>, <span class="dv">400</span>)</a>
+<a class="sourceLine" id="cb11-21" title="21"></a>
+<a class="sourceLine" id="cb11-22" title="22"><span class="bu">print</span>(<span class="bu">cmp</span>(tuple1, tuple2))</a>
+<a class="sourceLine" id="cb11-23" title="23"><span class="co"># Output: -1</span></a>
+<a class="sourceLine" id="cb11-24" title="24"></a>
+<a class="sourceLine" id="cb11-25" title="25"><span class="bu">print</span>(<span class="bu">cmp</span>(tuple2, tuple1))</a>
+<a class="sourceLine" id="cb11-26" title="26"><span class="co"># Output: 1</span></a>
+<a class="sourceLine" id="cb11-27" title="27"></a>
+<a class="sourceLine" id="cb11-28" title="28">tuple1 <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb11-29" title="29">tuple2 <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb11-30" title="30"></a>
+<a class="sourceLine" id="cb11-31" title="31"><span class="bu">print</span>(<span class="bu">cmp</span>(tuple2, tuple1))</a>
+<a class="sourceLine" id="cb11-32" title="32"><span class="co"># Output: 0</span></a>
+<a class="sourceLine" id="cb11-33" title="33"></a>
+<a class="sourceLine" id="cb11-34" title="34">tuple1 <span class="op">=</span> (<span class="dv">100</span>, <span class="dv">300</span>)</a>
+<a class="sourceLine" id="cb11-35" title="35">tuple2 <span class="op">=</span> (<span class="dv">200</span>, <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb11-36" title="36"></a>
+<a class="sourceLine" id="cb11-37" title="37"><span class="bu">print</span>(<span class="bu">cmp</span>(tuple2, tuple1))</a>
+<a class="sourceLine" id="cb11-38" title="38"><span class="co"># Output: 1</span></a>
+<a class="sourceLine" id="cb11-39" title="39"><span class="co"># This is because the tuple comparison is done left to right. When tuple2[0] &gt; tuple1[0], no further comparisons are made and the output is returned as zero. This is how the cmp() method works in Python.</span></a></code></pre></div>
+<p><strong>len(tuple)</strong></p>
+<p>The length method returns the length of the tuple.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>)</a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="bu">print</span>(<span class="bu">len</span>(tuple1))</a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="co"># Output: 5</span></a></code></pre></div>
+<p><strong>min(tuple)</strong></p>
+<p>The min method returns the smallest element in the tuple.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">1</span>, <span class="dv">90</span>, <span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="bu">print</span>(<span class="bu">min</span>(tuple1))</a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="co"># Output: 1</span></a></code></pre></div>
+<p><strong>max(tuple)</strong></p>
+<p>The max method returns the largest element in the tuple.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">9</span>, <span class="dv">1</span>, <span class="dv">90</span>, <span class="dv">200</span>)</a>
+<a class="sourceLine" id="cb14-2" title="2"></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="bu">print</span>(<span class="bu">max</span>(tuple1))</a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co"># Output: 200</span></a></code></pre></div>
+<p><strong>tuple(list)</strong></p>
+<p>The tuple method converts the list that is passed as parameter into a tuple.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">list1 <span class="op">=</span> [<span class="dv">23</span>, <span class="dv">34</span>, <span class="dv">45</span>, <span class="dv">56</span>]</a>
+<a class="sourceLine" id="cb15-2" title="2"></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="bu">print</span>(<span class="bu">tuple</span>(list1))</a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="co"># Output: (23, 34, 45, 56)</span></a></code></pre></div>
+<p><strong>t.count(el)</strong></p>
+<p>The count method returns the count of the element passed as parameter.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">24</span>, <span class="dv">45</span>, <span class="dv">54</span>, <span class="dv">6</span>, <span class="dv">34</span>, <span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb16-2" title="2"></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="bu">print</span>(tuple1.count(<span class="dv">24</span>))</a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="co"># Output: 2</span></a></code></pre></div>
+<p><strong>t.index(el)</strong></p>
+<p>The index method returns the index of the first occurence of the element in a tuple.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">24</span>, <span class="dv">45</span>, <span class="dv">54</span>, <span class="dv">6</span>, <span class="dv">34</span>, <span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb17-2" title="2"></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="bu">print</span>(tuple1.index(<span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="co"># Output: 0</span></a></code></pre></div>
+<p>You can also return the index of the last occurence of the element by using this method.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">24</span>, <span class="dv">45</span>, <span class="dv">54</span>, <span class="dv">6</span>, <span class="dv">34</span>, <span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb18-2" title="2"></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="bu">print</span>(tuple1.index(<span class="dv">24</span>, <span class="dv">-1</span>))</a>
+<a class="sourceLine" id="cb18-4" title="4"><span class="co"># Output: 6</span></a>
+<a class="sourceLine" id="cb18-5" title="5"><span class="co"># The second parameter specifies which index to start the search from</span></a>
+<a class="sourceLine" id="cb18-6" title="6"><span class="co"># -1 refers to the last element in the tuple, so it searches in reverse</span></a></code></pre></div>
+<p>It’s also possible to specify a range to search.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">tuple1 <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">24</span>, <span class="dv">45</span>, <span class="dv">54</span>, <span class="dv">24</span>, <span class="dv">6</span>, <span class="dv">34</span>, <span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb19-2" title="2"></a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="bu">print</span>(tuple1.index(<span class="dv">24</span>, <span class="dv">2</span>, <span class="dv">5</span>))</a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="co"># Output: 4</span></a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="co"># The second paramter is the starting index, third parameter is the ending index</span></a></code></pre></div>
+<h4 id="applications-of-tuples">Applications of Tuples <a id="applications-of-tuples"></a></h4>
+<ul>
+<li>Tuples are especially used as protection against modification. Since they are immutable, we can use tuples to write-protect data.</li>
+<li>When iterating over a tuple, a considerable performance gain is observed when we compare it to lists. This is more evident when the size of the tuple is large. Using the <code>timeit</code> module in Python, we see that tuples are considerably faster to iterate when compared to lists.</li>
+</ul>
+<figure>
+<img src="https://www.section.io/engineering-education/tuples-data-structure-python/tuples-performance.png" alt="Tuple Performance" /><figcaption>Tuple Performance</figcaption>
+</figure>
+<p><em>Note: For more in-depth analysis of why tuples perform better, check out</em> <a href="https://stackoverflow.com/questions/68630/are-tuples-more-efficient-than-lists-in-python#comment2117930_68817"><em>this</em></a> <em>StackOverflow thread.</em></p>
+<ul>
+<li>The dictionary data structure has an immutable key. Therefore tuples can be used as a key in a dictionary.</li>
+<li>Tuples can be used to group related data. For example, a row in a database table can be grouped together and stored in a tuple.</li>
+</ul>
+</body>
+</html>

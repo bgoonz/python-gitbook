@@ -1,22 +1,23 @@
-# Tree
+Tree
+====
 
-{% page-ref page="in-order-traversal.md" %}
+{% page-ref page=“in-order-traversal.md” %}
 
-{% page-ref page="tree-equal.md" %}
+{% page-ref page=“tree-equal.md” %}
 
-{% page-ref page="ternary-search-trees.md" %}
+{% page-ref page=“ternary-search-trees.md” %}
 
-{% page-ref page="red\_black-tree.md" %}
+{% page-ref page=“red\_black-tree.md” %}
 
-{% page-ref page="../../../curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md" %}
+{% page-ref page=“../../../curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md” %}
 
-{% page-ref page="../set/" %}
+{% page-ref page=“../set/” %}
 
-{% page-ref page="../binary-tree/" %}
+{% page-ref page=“../binary-tree/” %}
 
-{% page-ref page="../binary-search-tree/" %}
+{% page-ref page=“../binary-search-tree/” %}
 
-{% page-ref page="../binary-tree/" %}
+{% page-ref page=“../binary-tree/” %}
 
 ### Trees in Python
 
@@ -30,39 +31,39 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 > **Binary search trees have four strict rules:**
 >
-> - The left subtree contains only nodes with elements lesser than the root.
-> - The right subtree contains only nodes with elements greater than the root.
-> - Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
-> - There can be no duplicate nodes, i.e. no two nodes can have the same value.
+> -   The left subtree contains only nodes with elements lesser than the root.
+> -   The right subtree contains only nodes with elements greater than the root.
+> -   Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
+> -   There can be no duplicate nodes, i.e. no two nodes can have the same value.
 
-{% page-ref page="../array/" %}
+{% page-ref page=“../array/” %}
 
-{% page-ref page="../binary-search-tree/" %}
+{% page-ref page=“../binary-search-tree/” %}
 
-{% page-ref page="../untitled-4/" %}
+{% page-ref page=“../untitled-4/” %}
 
-{% page-ref page="../array/extra-array.md" %}
+{% page-ref page=“../array/extra-array.md” %}
 
-{% page-ref page="../stack/" %}
+{% page-ref page=“../stack/” %}
 
-{% page-ref page="../binary-tree/" %}
+{% page-ref page=“../binary-tree/” %}
 
-{% page-ref page="../untitled-6/" %}
+{% page-ref page=“../untitled-6/” %}
 
-{% page-ref page="../untitled-5/" %}
+{% page-ref page=“../untitled-5/” %}
 
-{% page-ref page="../untitled-2/" %}
+{% page-ref page=“../untitled-2/” %}
 
-{% page-ref page="../untitled-3/" %}
+{% page-ref page=“../untitled-3/” %}
 
-{% page-ref page="../queue/queue-sandbox.md" %}
+{% page-ref page=“../queue/queue-sandbox.md” %}
 
-{% page-ref page="../untitled-5/" %}
+{% page-ref page=“../untitled-5/” %}
 
-{% page-ref page="../untitled-4/double-linked-list.md" %}
+{% page-ref page=“../untitled-4/double-linked-list.md” %}
 
-{% page-ref page="../untitled-1/" %}
+{% page-ref page=“../untitled-1/” %}
 
-{% page-ref page="../untitled/" %}
+{% page-ref page=“../untitled/” %}
 
-{% page-ref page="../heap/" %}
+{% page-ref page=“../heap/” %}

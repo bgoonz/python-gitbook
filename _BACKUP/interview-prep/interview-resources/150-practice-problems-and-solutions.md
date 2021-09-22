@@ -1,40 +1,40 @@
-# 150 Practice Problems & Solutions
+150 Practice Problems & Solutions
+=================================
 
-## Exercises
+Exercises
+---------
 
-**1.** Write a Python program to print the following string in a specific format \(see the output\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample String :_ "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are" _Output :_
+**1.** Write a Python program to print the following string in a specific format (see the output). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample String :* “Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are” *Output :*
 
-```python
-Twinkle, twinkle, little star,    How I wonder what you are!         Up above the world so high,                   Like a diamond in the sky. Twinkle, twinkle, little star,     How I wonder what you are
-```
+    Twinkle, twinkle, little star,    How I wonder what you are!         Up above the world so high,                   Like a diamond in the sky. Twinkle, twinkle, little star,     How I wonder what you are
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-1.php)​
 
 **2.** Write a Python program to get the Python version you are using. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-2.php)​
 
-**3.** Write a Python program to display the current date and time. _Sample Output :_ Current date and time : 2014-07-05 14:34:14 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-3.php)​
+**3.** Write a Python program to display the current date and time. *Sample Output :* Current date and time : 2014-07-05 14:34:14 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-3.php)​
 
-**4.** Write a Python program which accepts the radius of a circle from the user and compute the area. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample Output :_ r = 1.1 Area = 3.8013271108436504 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-4.php)​
+**4.** Write a Python program which accepts the radius of a circle from the user and compute the area. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample Output :* r = 1.1 Area = 3.8013271108436504 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-4.php)​
 
-**5.** Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-5.php)​
+**5.** Write a Python program which accepts the user’s first and last name and print them in reverse order with a space between them. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-5.php)​
 
-**6.** Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample data :_ 3, 5, 7, 23 _Output :_ List : \['3', ' 5', ' 7', ' 23'\] Tuple : \('3', ' 5', ' 7', ' 23'\) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-6.php)​
+**6.** Write a Python program which accepts a sequence of comma-separated numbers from user and generate a list and a tuple with those numbers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample data :* 3, 5, 7, 23 *Output :* List : \[‘3’, ’ 5’, ’ 7’, ’ 23’\] Tuple : (‘3’, ’ 5’, ’ 7’, ’ 23’) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-6.php)​
 
-**7.** Write a Python program to accept a filename from the user and print the extension of that. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample filename :_ abc.java _Output :_ java [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-7.php)​
+**7.** Write a Python program to accept a filename from the user and print the extension of that. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample filename :* abc.java *Output :* java [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-7.php)​
 
-**8.** Write a Python program to display the first and last colors from the following list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) color_list = \["Red","Green","White" ,"Black"\] [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-8.php)​
+**8.** Write a Python program to display the first and last colors from the following list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) color\_list = \[“Red”,“Green”,“White” ,“Black”\] [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-8.php)​
 
-**9.** Write a Python program to display the examination schedule. \(extract the date from exam_st_date\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) exam_st_date = \(11, 12, 2014\) Sample Output : The examination will start from : 11 / 12 / 2014 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-9.php)​
+**9.** Write a Python program to display the examination schedule. (extract the date from exam\_st\_date). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) exam\_st\_date = (11, 12, 2014) Sample Output : The examination will start from : 11 / 12 / 2014 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-9.php)​
 
-**10.** Write a Python program that accepts an integer \(n\) and computes the value of n+nn+nnn. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample value of n is_ 5 _Expected Result :_ 615 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-10.php)​
+**10.** Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample value of n is* 5 *Expected Result :* 615 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-10.php)​
 
-**11.** Write a Python program to print the documents \(syntax, description etc.\) of Python built-in function\(s\). _Sample function_ : abs\(\) _Expected Result_ : abs\(number\) -&gt; number Return the absolute value of the argument. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-11.php)​
+**11.** Write a Python program to print the documents (syntax, description etc.) of Python built-in function(s). *Sample function* : abs() *Expected Result* : abs(number) -&gt; number Return the absolute value of the argument. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-11.php)​
 
-**12.** Write a Python program to print the calendar of a given month and year. _Note :_ Use 'calendar' module. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-12.php)​
+**12.** Write a Python program to print the calendar of a given month and year. *Note :* Use ‘calendar’ module. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-12.php)​
 
-**13.** Write a Python program to print the following 'here document'. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample string_ : a string that you "don't" have to escape This is a ....... multi-line heredoc string --------&gt; example [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-13.php)​
+**13.** Write a Python program to print the following ‘here document’. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample string* : a string that you “don’t” have to escape This is a ……. multi-line heredoc string ——–&gt; example [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-13.php)​
 
-**14.** Write a Python program to calculate number of days between two dates. _Sample dates_ : \(2014, 7, 2\), \(2014, 7, 11\) _Expected output_ : 9 days [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-14.php)​
+**14.** Write a Python program to calculate number of days between two dates. *Sample dates* : (2014, 7, 2), (2014, 7, 11) *Expected output* : 9 days [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-14.php)​
 
 **15.** Write a Python program to get the volume of a sphere with radius 6. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-15.php)​
 
@@ -44,19 +44,19 @@ Twinkle, twinkle, little star,    How I wonder what you are!         Up above th
 
 **18.** Write a Python program to calculate the sum of three given numbers, if the values are equal then return three times of their sum. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-18.php)​
 
-**19.** Write a Python program to get a new string from a given string where "Is" has been added to the front. If the given string already begins with "Is" then return the string unchanged. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-19.php)​
+**19.** Write a Python program to get a new string from a given string where “Is” has been added to the front. If the given string already begins with “Is” then return the string unchanged. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-19.php)​
 
-**20.** Write a Python program to get a string which is n \(non-negative integer\) copies of a given string. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-20.php)​
+**20.** Write a Python program to get a string which is n (non-negative integer) copies of a given string. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-20.php)​
 
-**21.** Write a Python program to find whether a given number \(accept from the user\) is even or odd, print out an appropriate message to the user. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-21.php)​
+**21.** Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-21.php)​
 
 **22.** Write a Python program to count the number 4 in a given list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-22.php)​
 
-**23.** Write a Python program to get the n \(non-negative integer\) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-23.php)​
+**23.** Write a Python program to get the n (non-negative integer) copies of the first 2 characters of a given string. Return the n copies of the whole string if the length is less than 2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-23.php)​
 
 **24.** Write a Python program to test whether a passed letter is a vowel or not. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-24.php)​
 
-**25.** Write a Python program to check whether a specified value is contained in a group of values. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : 3 -&gt; \[1, 5, 8, 3\] : True -1 -&gt; \[1, 5, 8, 3\] : False
+**25.** Write a Python program to check whether a specified value is contained in a group of values. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Test Data* : 3 -&gt; \[1, 5, 8, 3\] : True -1 -&gt; \[1, 5, 8, 3\] : False
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-25.php)​
 
@@ -64,21 +64,19 @@ Twinkle, twinkle, little star,    How I wonder what you are!         Up above th
 
 **27.** Write a Python program to concatenate all elements in a list into a string and return it. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-27.php)​
 
-**28.** Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Sample numbers list_ :
+**28.** Write a Python program to print all even numbers from a given numbers list in the same order and stop the printing if any numbers that come after 237 in the sequence. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Sample numbers list* :
 
-```python
-numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,     958,743, 527    ]
-```
+    numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 328, 615, 953, 345,     399, 162, 758, 219, 918, 237, 412, 566, 826, 248, 866, 950, 626, 949, 687, 217,     815, 67, 104, 58, 512, 24, 892, 894, 767, 553, 81, 379, 843, 831, 445, 742, 717,     958,743, 527    ]
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-28.php)​
 
-**29.** Write a Python program to print out a set containing all the colors from color_list_1 which are not present in color_list_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : color_list_1 = set\(\["White", "Black", "Red"\]\) color_list_2 = set\(\["Red", "Green"\]\) _Expected Output_ : {'Black', 'White'} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
+**29.** Write a Python program to print out a set containing all the colors from color\_list\_1 which are not present in color\_list\_2. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Test Data* : color\_list\_1 = set(\[“White”, “Black”, “Red”\]) color\_list\_2 = set(\[“Red”, “Green”\]) *Expected Output* : {‘Black’, ‘White’} [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-29.php)​
 
 **30.** Write a Python program that will accept the base and height of a triangle and compute the area. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-30.php)​
 
-**31.** Write a Python program to compute the greatest common divisor \(GCD\) of two positive integers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-31.php)​
+**31.** Write a Python program to compute the greatest common divisor (GCD) of two positive integers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-31.php)​
 
-**32.** Write a Python program to get the least common multiple \(LCM\) of two positive integers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-32.php)​
+**32.** Write a Python program to get the least common multiple (LCM) of two positive integers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-32.php)​
 
 **33.** Write a Python program to sum of three given integers. However, if two values are equal sum will be zero. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-33.php)​
 
@@ -90,11 +88,11 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **37.** Write a Python program to display your details like name, age, address in three different lines. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-37.php)​
 
-**38.** Write a Python program to solve \(x + y\) \* \(x + y\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : x = 4, y = 3 _Expected Output_ : \(4 + 3\) ^ 2\) = 49 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-38.php)​
+**38.** Write a Python program to solve (x + y) \* (x + y). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Test Data* : x = 4, y = 3 *Expected Output* : (4 + 3) ^ 2) = 49 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-38.php)​
 
-**39.** Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) _Test Data_ : amt = 10000, int = 3.5, years = 7 _Expected Output_ : 12722.79 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-39.php)​
+**39.** Write a Python program to compute the future value of a specified principal amount, rate of interest, and a number of years. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) *Test Data* : amt = 10000, int = 3.5, years = 7 *Expected Output* : 12722.79 [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-39.php)​
 
-**40.** Write a Python program to compute the distance between the points \(x1, y1\) and \(x2, y2\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-40.php)​
+**40.** Write a Python program to compute the distance between the points (x1, y1) and (x2, y2). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-40.php)​
 
 **41.** Write a Python program to check whether a file exists. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-41.php)​
 
@@ -124,7 +122,7 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **54.** Write a Python program to get the current username [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-54.php)​
 
-**55.** Write a Python to find local IP addresses using Python's stdlib [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-55.php)​
+**55.** Write a Python to find local IP addresses using Python’s stdlib [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-55.php)​
 
 **56.** Write a Python program to get height and width of the console window. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-56.php)​
 
@@ -132,11 +130,11 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **58.** Write a Python program to sum of the first n positive integers. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-58.php)​
 
-**59.** Write a Python program to convert height \(in feet and inches\) to centimeters. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-59.php)​
+**59.** Write a Python program to convert height (in feet and inches) to centimeters. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-59.php)​
 
 **60.** Write a Python program to calculate the hypotenuse of a right angled triangle. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-60.php)​
 
-**61.** Write a Python program to convert the distance \(in feet\) to inches, yards, and miles. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-61.php)​
+**61.** Write a Python program to convert the distance (in feet) to inches, yards, and miles. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-61.php)​
 
 **62.** Write a Python program to convert all units of time into seconds. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-62.php)​
 
@@ -148,7 +146,7 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **66.** Write a Python program to calculate body mass index. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-66.php)​
 
-**67.** Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury \(mmHg\) and atmosphere pressure. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-67.php)​
+**67.** Write a Python program to convert pressure in kilopascals to pounds per square inch, a millimeter of mercury (mmHg) and atmosphere pressure. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-67.php)​
 
 **68.** Write a Python program to calculate the sum of the digits in an integer. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-68.php)​
 
@@ -166,7 +164,7 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **75.** Write a Python program to get the copyright information and write Copyright information in Python code. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-75.php)​
 
-**76.** Write a Python program to get the command-line arguments \(name of the script, the number of arguments, arguments\) passed to a script. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-76.php)​
+**76.** Write a Python program to get the command-line arguments (name of the script, the number of arguments, arguments) passed to a script. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-76.php)​
 
 **77.** Write a Python program to test whether the system is a big-endian platform or little-endian platform. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-77.php)​
 
@@ -178,7 +176,7 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **81.** Write a Python program to concatenate N strings. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-81.php)​
 
-**82.** Write a Python program to calculate the sum of all items of a container \(tuple, list, set, dictionary\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-82.php)​
+**82.** Write a Python program to calculate the sum of all items of a container (tuple, list, set, dictionary). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-82.php)​
 
 **83.** Write a Python program to test whether all numbers of a list is greater than a certain number. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-83.php)​
 
@@ -190,9 +188,9 @@ numbers = [        386, 462, 47, 418, 907, 344, 236, 375, 823, 566, 597, 978, 32
 
 **87.** Write a Python program to get the size of a file. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-87.php)​
 
-**88.** Given variables x=30 and y=20, write a Python program to print "30+20=50". [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-88.php)​
+**88.** Given variables x=30 and y=20, write a Python program to print “30+20=50”. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-88.php)​
 
-**89.** Write a Python program to perform an action if a condition is true. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) Given a variable name, if the value is 1, display the string "First day of a Month!" and do nothing if the value is not equal. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-89.php)​
+**89.** Write a Python program to perform an action if a condition is true. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) Given a variable name, if the value is 1, display the string “First day of a Month!” and do nothing if the value is not equal. [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-89.php)​
 
 **90.** Write a Python program to create a copy of its own source code. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-90.php)​
 
@@ -218,7 +216,7 @@ Note : The system time is important for debugging, network information, random n
 
 **100.** Write a Python program to get the name of the host on which the routine is running. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-100.php)​
 
-**101.** Write a Python program to access and print a URL's content to the console. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-101.php)​
+**101.** Write a Python program to access and print a URL’s content to the console. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-101.php)​
 
 **102.** Write a Python program to get system command output. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-102.php)​
 
@@ -246,7 +244,7 @@ Note : The system time is important for debugging, network information, random n
 
 **114.** Write a Python program to filter the positive numbers from a list. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-114.php)​
 
-**115.** Write a Python program to compute the product of a list of integers \(without using for loop\). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-115.php)​
+**115.** Write a Python program to compute the product of a list of integers (without using for loop). [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-115.php)​
 
 **116.** Write a Python program to print Unicode characters. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-116.php)​
 
@@ -262,7 +260,7 @@ Note : The system time is important for debugging, network information, random n
 
 **122.** Write a Python program to empty a variable without destroying it. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR)​
 
-Sample data: n=20 d = {"x":200} Expected Output : 0 {}
+Sample data: n=20 d = {“x”:200} Expected Output : 0 {}
 
 ​[Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-122.php)​
 
@@ -286,11 +284,11 @@ Sample data: n=20 d = {"x":200} Expected Output : 0 {}
 
 **132.** Write a Python program to list home directory without absolute path. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-132.php)​
 
-**133.** Write a Python program to calculate the time runs \(difference between start and current time\) of a program. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-133.php)​
+**133.** Write a Python program to calculate the time runs (difference between start and current time) of a program. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-133.php)​
 
 **134.** Write a Python program to input two integers in a single line. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-134.php)​
 
-**135.** Write a Python program to print a variable without spaces between values. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) Sample value : x =30 Expected output : Value of x is "30" [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-135.php)​
+**135.** Write a Python program to print a variable without spaces between values. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) Sample value : x =30 Expected output : Value of x is “30” [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-135.php)​
 
 **136.** Write a Python program to find files and skip directories of a given directory. [Go to the editor](https://www.w3resource.com/python-exercises/python-basic-exercises.php#EDITOR) [Click me to see the sample solution](https://www.w3resource.com/python-exercises/python-basic-exercise-136.php)​
 

@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="classes-and-objects">Classes and objects</h1>
+<h2 id="section"></h2>
+<h3 id="classes-and-objects-1">Classes and Objects</h3>
+<p>Python is an object oriented programming language. Everything in Python is an object, with its properties and methods. A number, string, list, dictionary, tuple, set etc. used in a program is an object of a corresponding built-in class. We create class to create an object. A class is like an object constructor, or a “blueprint” for creating objects. We instantiate a class to create an object. The class defines attributes and the behavior of the object, while the object, on the other hand, represents the class.</p>
+<p>We have been working with classes and objects right from the beginning of this challenge unknowingly. Every element in a Python program is an object of a class. Let us check if everything in python is a class:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">asabeneh<span class="op">@</span>Asabeneh:<span class="op">~</span>$ python</a>
+<a class="sourceLine" id="cb1-2" title="2">Python <span class="dv">3</span>.<span class="fl">9.6</span> (default, Jun <span class="dv">28</span> <span class="dv">2021</span>, <span class="dv">15</span>:<span class="dv">26</span>:<span class="dv">21</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3">[Clang <span class="dv">11</span>.<span class="fl">0.0</span> (clang<span class="dv">-1100</span>.<span class="dv">0</span>.<span class="fl">33.8</span>)] on darwin</a>
+<a class="sourceLine" id="cb1-4" title="4">Type <span class="st">&quot;help&quot;</span>, <span class="st">&quot;copyright&quot;</span>, <span class="st">&quot;credits&quot;</span> <span class="kw">or</span> <span class="st">&quot;license&quot;</span> <span class="cf">for</span> more information.</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">&gt;&gt;&gt;</span> num <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(num)</a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="op">&gt;&gt;&gt;</span> string <span class="op">=</span> <span class="st">&#39;string&#39;</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(string)</a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="op">&gt;&gt;&gt;</span> boolean <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(boolean)</a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;bool&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="op">&gt;&gt;&gt;</span> lst <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(lst)</a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="op">&gt;&gt;&gt;</span> tpl <span class="op">=</span> ()</a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(tpl)</a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;tuple&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="op">&gt;&gt;&gt;</span> set1 <span class="op">=</span> <span class="bu">set</span>()</a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(set1)</a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="op">&gt;&gt;&gt;</span> dct <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(dct)</a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;dict&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<h4 id="creating-a-class">Creating a Class</h4>
+<p>To create a class we need the key word <strong>class</strong> followed by the name and colon. Class name should be <strong>CamelCase</strong>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># syntax</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="ex">class</span> ClassName:</a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="ex">code</span> goes here</a></code></pre></div>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="cf">pass</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="bu">print</span>(Person)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span><span class="ex">__main__.Person</span> object at 0x10804e510<span class="op">&gt;</span></a></code></pre></div>
+<h4 id="creating-an-object">Creating an Object</h4>
+<p>We can create an object by calling the class.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">p <span class="op">=</span> Person()</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="bu">print</span>(p)</a></code></pre></div>
+<h4 id="class-constructor">Class Constructor</h4>
+<p>In the examples above, we have created an object from the Person class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in <strong>init</strong>() constructor function. The <strong>init</strong> constructor function has self parameter which is a reference to the current instance of the class <strong>Examples:</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb6-2" title="2">      <span class="kw">def</span> <span class="fu">__init__</span> (<span class="va">self</span>, name):</a>
+<a class="sourceLine" id="cb6-3" title="3">        <span class="co"># self allows to attach parameter to the class</span></a>
+<a class="sourceLine" id="cb6-4" title="4">          <span class="va">self</span>.name <span class="op">=</span>name</a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6">p <span class="op">=</span> Person(<span class="st">&#39;Asabeneh&#39;</span>)</a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="bu">print</span>(p.name)</a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="bu">print</span>(p)</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="co"># output</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="ex">Asabeneh</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="op">&lt;</span><span class="ex">__main__.Person</span> object at 0x2abf46907e80<span class="op">&gt;</span></a></code></pre></div>
+<p>Let us add more parameters to the constructor function.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb8-2" title="2">      <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, firstname, lastname, age, country, city):</a>
+<a class="sourceLine" id="cb8-3" title="3">          <span class="va">self</span>.firstname <span class="op">=</span> firstname</a>
+<a class="sourceLine" id="cb8-4" title="4">          <span class="va">self</span>.lastname <span class="op">=</span> lastname</a>
+<a class="sourceLine" id="cb8-5" title="5">          <span class="va">self</span>.age <span class="op">=</span> age</a>
+<a class="sourceLine" id="cb8-6" title="6">          <span class="va">self</span>.country <span class="op">=</span> country</a>
+<a class="sourceLine" id="cb8-7" title="7">          <span class="va">self</span>.city <span class="op">=</span> city</a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9"></a>
+<a class="sourceLine" id="cb8-10" title="10">p <span class="op">=</span> Person(<span class="st">&#39;Asabeneh&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>, <span class="dv">250</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Helsinki&#39;</span>)</a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="bu">print</span>(p.firstname)</a>
+<a class="sourceLine" id="cb8-12" title="12"><span class="bu">print</span>(p.lastname)</a>
+<a class="sourceLine" id="cb8-13" title="13"><span class="bu">print</span>(p.age)</a>
+<a class="sourceLine" id="cb8-14" title="14"><span class="bu">print</span>(p.country)</a>
+<a class="sourceLine" id="cb8-15" title="15"><span class="bu">print</span>(p.city)</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># output</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="ex">Asabeneh</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="ex">Yetayeh</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="ex">250</span></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="ex">Finland</span></a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="ex">Helsinki</span></a></code></pre></div>
+<h4 id="object-methods">Object Methods</h4>
+<p>Objects can have methods. The methods are functions which belong to the object.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb10-2" title="2">      <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, firstname, lastname, age, country, city):</a>
+<a class="sourceLine" id="cb10-3" title="3">          <span class="va">self</span>.firstname <span class="op">=</span> firstname</a>
+<a class="sourceLine" id="cb10-4" title="4">          <span class="va">self</span>.lastname <span class="op">=</span> lastname</a>
+<a class="sourceLine" id="cb10-5" title="5">          <span class="va">self</span>.age <span class="op">=</span> age</a>
+<a class="sourceLine" id="cb10-6" title="6">          <span class="va">self</span>.country <span class="op">=</span> country</a>
+<a class="sourceLine" id="cb10-7" title="7">          <span class="va">self</span>.city <span class="op">=</span> city</a>
+<a class="sourceLine" id="cb10-8" title="8">      <span class="kw">def</span> person_info(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb10-9" title="9">        <span class="cf">return</span> <span class="ss">f&#39;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>firstname<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>lastname<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss"> years old. He lives in </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>city<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>country<span class="sc">}</span><span class="ss">&#39;</span></a>
+<a class="sourceLine" id="cb10-10" title="10"></a>
+<a class="sourceLine" id="cb10-11" title="11">p <span class="op">=</span> Person(<span class="st">&#39;Asabeneh&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>, <span class="dv">250</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Helsinki&#39;</span>)</a>
+<a class="sourceLine" id="cb10-12" title="12"><span class="bu">print</span>(p.person_info())</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="co"># output</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="ex">Asabeneh</span> Yetayeh is 250 years old. He lives in Helsinki, Finland</a></code></pre></div>
+<h4 id="object-default-methods">Object Default Methods</h4>
+<p>Sometimes, you may want to have a default values for your object methods. If we give default values for the parameters in the constructor, we can avoid errors when we call or instantiate our class without parameters. Let’s see how it looks:</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb12-2" title="2">      <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, firstname<span class="op">=</span><span class="st">&#39;Asabeneh&#39;</span>, lastname<span class="op">=</span><span class="st">&#39;Yetayeh&#39;</span>, age<span class="op">=</span><span class="dv">250</span>, country<span class="op">=</span><span class="st">&#39;Finland&#39;</span>, city<span class="op">=</span><span class="st">&#39;Helsinki&#39;</span>):</a>
+<a class="sourceLine" id="cb12-3" title="3">          <span class="va">self</span>.firstname <span class="op">=</span> firstname</a>
+<a class="sourceLine" id="cb12-4" title="4">          <span class="va">self</span>.lastname <span class="op">=</span> lastname</a>
+<a class="sourceLine" id="cb12-5" title="5">          <span class="va">self</span>.age <span class="op">=</span> age</a>
+<a class="sourceLine" id="cb12-6" title="6">          <span class="va">self</span>.country <span class="op">=</span> country</a>
+<a class="sourceLine" id="cb12-7" title="7">          <span class="va">self</span>.city <span class="op">=</span> city</a>
+<a class="sourceLine" id="cb12-8" title="8"></a>
+<a class="sourceLine" id="cb12-9" title="9">      <span class="kw">def</span> person_info(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb12-10" title="10">        <span class="cf">return</span> <span class="ss">f&#39;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>firstname<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>lastname<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss"> years old. He lives in </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>city<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>country<span class="sc">}</span><span class="ss">.&#39;</span></a>
+<a class="sourceLine" id="cb12-11" title="11"></a>
+<a class="sourceLine" id="cb12-12" title="12">p1 <span class="op">=</span> Person()</a>
+<a class="sourceLine" id="cb12-13" title="13"><span class="bu">print</span>(p1.person_info())</a>
+<a class="sourceLine" id="cb12-14" title="14">p2 <span class="op">=</span> Person(<span class="st">&#39;John&#39;</span>, <span class="st">&#39;Doe&#39;</span>, <span class="dv">30</span>, <span class="st">&#39;Nomanland&#39;</span>, <span class="st">&#39;Noman city&#39;</span>)</a>
+<a class="sourceLine" id="cb12-15" title="15"><span class="bu">print</span>(p2.person_info())</a></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="co"># output</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="ex">Asabeneh</span> Yetayeh is 250 years old. He lives in Helsinki, Finland.</a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="ex">John</span> Doe is 30 years old. He lives in Noman city, Nomanland.</a></code></pre></div>
+<h4 id="method-to-modify-class-default-values">Method to Modify Class Default Values</h4>
+<p>In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add_skill method to add skills to the skills list.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">class</span> Person:</a>
+<a class="sourceLine" id="cb14-2" title="2">      <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, firstname<span class="op">=</span><span class="st">&#39;Asabeneh&#39;</span>, lastname<span class="op">=</span><span class="st">&#39;Yetayeh&#39;</span>, age<span class="op">=</span><span class="dv">250</span>, country<span class="op">=</span><span class="st">&#39;Finland&#39;</span>, city<span class="op">=</span><span class="st">&#39;Helsinki&#39;</span>):</a>
+<a class="sourceLine" id="cb14-3" title="3">          <span class="va">self</span>.firstname <span class="op">=</span> firstname</a>
+<a class="sourceLine" id="cb14-4" title="4">          <span class="va">self</span>.lastname <span class="op">=</span> lastname</a>
+<a class="sourceLine" id="cb14-5" title="5">          <span class="va">self</span>.age <span class="op">=</span> age</a>
+<a class="sourceLine" id="cb14-6" title="6">          <span class="va">self</span>.country <span class="op">=</span> country</a>
+<a class="sourceLine" id="cb14-7" title="7">          <span class="va">self</span>.city <span class="op">=</span> city</a>
+<a class="sourceLine" id="cb14-8" title="8">          <span class="va">self</span>.skills <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb14-9" title="9"></a>
+<a class="sourceLine" id="cb14-10" title="10">      <span class="kw">def</span> person_info(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb14-11" title="11">        <span class="cf">return</span> <span class="ss">f&#39;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>firstname<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>lastname<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss"> years old. He lives in </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>city<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>country<span class="sc">}</span><span class="ss">.&#39;</span></a>
+<a class="sourceLine" id="cb14-12" title="12">      <span class="kw">def</span> add_skill(<span class="va">self</span>, skill):</a>
+<a class="sourceLine" id="cb14-13" title="13">          <span class="va">self</span>.skills.append(skill)</a>
+<a class="sourceLine" id="cb14-14" title="14"></a>
+<a class="sourceLine" id="cb14-15" title="15">p1 <span class="op">=</span> Person()</a>
+<a class="sourceLine" id="cb14-16" title="16"><span class="bu">print</span>(p1.person_info())</a>
+<a class="sourceLine" id="cb14-17" title="17">p1.add_skill(<span class="st">&#39;HTML&#39;</span>)</a>
+<a class="sourceLine" id="cb14-18" title="18">p1.add_skill(<span class="st">&#39;CSS&#39;</span>)</a>
+<a class="sourceLine" id="cb14-19" title="19">p1.add_skill(<span class="st">&#39;JavaScript&#39;</span>)</a>
+<a class="sourceLine" id="cb14-20" title="20">p2 <span class="op">=</span> Person(<span class="st">&#39;John&#39;</span>, <span class="st">&#39;Doe&#39;</span>, <span class="dv">30</span>, <span class="st">&#39;Nomanland&#39;</span>, <span class="st">&#39;Noman city&#39;</span>)</a>
+<a class="sourceLine" id="cb14-21" title="21"><span class="bu">print</span>(p2.person_info())</a>
+<a class="sourceLine" id="cb14-22" title="22"><span class="bu">print</span>(p1.skills)</a>
+<a class="sourceLine" id="cb14-23" title="23"><span class="bu">print</span>(p2.skills)</a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb15-1" title="1"><span class="co"># output</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="ex">Asabeneh</span> Yetayeh is 250 years old. He lives in Helsinki, Finland.</a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="ex">John</span> Doe is 30 years old. He lives in Noman city, Nomanland.</a>
+<a class="sourceLine" id="cb15-4" title="4">[<span class="st">&#39;HTML&#39;</span>, <span class="st">&#39;CSS&#39;</span>, <span class="st">&#39;JavaScript&#39;</span>]</a>
+<a class="sourceLine" id="cb15-5" title="5">[]</a></code></pre></div>
+<h4 id="inheritance">Inheritance</h4>
+<p>Using inheritance we can reuse parent class code. Inheritance allows us to define a class that inherits all the methods and properties from parent class. The parent class or super or base class is the class which gives all the methods and properties. Child class is the class that inherits from another or parent class. Let us create a student class by inheriting from person class.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">class</span> Student(Person):</a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="cf">pass</span></a>
+<a class="sourceLine" id="cb16-3" title="3"></a>
+<a class="sourceLine" id="cb16-4" title="4"></a>
+<a class="sourceLine" id="cb16-5" title="5">s1 <span class="op">=</span> Student(<span class="st">&#39;Eyob&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>, <span class="dv">30</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Helsinki&#39;</span>)</a>
+<a class="sourceLine" id="cb16-6" title="6">s2 <span class="op">=</span> Student(<span class="st">&#39;Lidiya&#39;</span>, <span class="st">&#39;Teklemariam&#39;</span>, <span class="dv">28</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Espoo&#39;</span>)</a>
+<a class="sourceLine" id="cb16-7" title="7"><span class="bu">print</span>(s1.person_info())</a>
+<a class="sourceLine" id="cb16-8" title="8">s1.add_skill(<span class="st">&#39;JavaScript&#39;</span>)</a>
+<a class="sourceLine" id="cb16-9" title="9">s1.add_skill(<span class="st">&#39;React&#39;</span>)</a>
+<a class="sourceLine" id="cb16-10" title="10">s1.add_skill(<span class="st">&#39;Python&#39;</span>)</a>
+<a class="sourceLine" id="cb16-11" title="11"><span class="bu">print</span>(s1.skills)</a>
+<a class="sourceLine" id="cb16-12" title="12"></a>
+<a class="sourceLine" id="cb16-13" title="13"><span class="bu">print</span>(s2.person_info())</a>
+<a class="sourceLine" id="cb16-14" title="14">s2.add_skill(<span class="st">&#39;Organizing&#39;</span>)</a>
+<a class="sourceLine" id="cb16-15" title="15">s2.add_skill(<span class="st">&#39;Marketing&#39;</span>)</a>
+<a class="sourceLine" id="cb16-16" title="16">s2.add_skill(<span class="st">&#39;Digital Marketing&#39;</span>)</a>
+<a class="sourceLine" id="cb16-17" title="17"><span class="bu">print</span>(s2.skills)</a></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb17-1" title="1"><span class="ex">output</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="ex">Eyob</span> Yetayeh is 30 years old. He lives in Helsinki, Finland.</a>
+<a class="sourceLine" id="cb17-3" title="3">[<span class="st">&#39;JavaScript&#39;</span>, <span class="st">&#39;React&#39;</span>, <span class="st">&#39;Python&#39;</span>]</a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="ex">Lidiya</span> Teklemariam is 28 years old. He lives in Espoo, Finland.</a>
+<a class="sourceLine" id="cb17-5" title="5">[<span class="st">&#39;Organizing&#39;</span>, <span class="st">&#39;Marketing&#39;</span>, <span class="st">&#39;Digital Marketing&#39;</span>]</a></code></pre></div>
+<p>We did not call the <strong>init</strong>() constructor in the child class. If we didn’t call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling <em>super</em>. We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the <strong>init</strong>() function, the child class will no longer inherit the parent’s <strong>init</strong>() function.</p>
+<h4 id="overriding-parent-method">Overriding parent method</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">class</span> Student(Person):</a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span> (<span class="va">self</span>, firstname<span class="op">=</span><span class="st">&#39;Asabeneh&#39;</span>, lastname<span class="op">=</span><span class="st">&#39;Yetayeh&#39;</span>,age<span class="op">=</span><span class="dv">250</span>, country<span class="op">=</span><span class="st">&#39;Finland&#39;</span>, city<span class="op">=</span><span class="st">&#39;Helsinki&#39;</span>, gender<span class="op">=</span><span class="st">&#39;male&#39;</span>):</a>
+<a class="sourceLine" id="cb18-3" title="3">        <span class="va">self</span>.gender <span class="op">=</span> gender</a>
+<a class="sourceLine" id="cb18-4" title="4">        <span class="bu">super</span>().<span class="fu">__init__</span>(firstname, lastname,age, country, city)</a>
+<a class="sourceLine" id="cb18-5" title="5">    <span class="kw">def</span> person_info(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb18-6" title="6">        gender <span class="op">=</span> <span class="st">&#39;He&#39;</span> <span class="cf">if</span> <span class="va">self</span>.gender <span class="op">==</span><span class="st">&#39;male&#39;</span> <span class="cf">else</span> <span class="st">&#39;She&#39;</span></a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="cf">return</span> <span class="ss">f&#39;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>firstname<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>lastname<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>age<span class="sc">}</span><span class="ss"> years old. </span><span class="sc">{</span>gender<span class="sc">}</span><span class="ss"> lives in </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>city<span class="sc">}</span><span class="ss">, </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>country<span class="sc">}</span><span class="ss">.&#39;</span></a>
+<a class="sourceLine" id="cb18-8" title="8"></a>
+<a class="sourceLine" id="cb18-9" title="9">s1 <span class="op">=</span> Student(<span class="st">&#39;Eyob&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>, <span class="dv">30</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Helsinki&#39;</span>,<span class="st">&#39;male&#39;</span>)</a>
+<a class="sourceLine" id="cb18-10" title="10">s2 <span class="op">=</span> Student(<span class="st">&#39;Lidiya&#39;</span>, <span class="st">&#39;Teklemariam&#39;</span>, <span class="dv">28</span>, <span class="st">&#39;Finland&#39;</span>, <span class="st">&#39;Espoo&#39;</span>, <span class="st">&#39;female&#39;</span>)</a>
+<a class="sourceLine" id="cb18-11" title="11"><span class="bu">print</span>(s1.person_info())</a>
+<a class="sourceLine" id="cb18-12" title="12">s1.add_skill(<span class="st">&#39;JavaScript&#39;</span>)</a>
+<a class="sourceLine" id="cb18-13" title="13">s1.add_skill(<span class="st">&#39;React&#39;</span>)</a>
+<a class="sourceLine" id="cb18-14" title="14">s1.add_skill(<span class="st">&#39;Python&#39;</span>)</a>
+<a class="sourceLine" id="cb18-15" title="15"><span class="bu">print</span>(s1.skills)</a>
+<a class="sourceLine" id="cb18-16" title="16"></a>
+<a class="sourceLine" id="cb18-17" title="17"><span class="bu">print</span>(s2.person_info())</a>
+<a class="sourceLine" id="cb18-18" title="18">s2.add_skill(<span class="st">&#39;Organizing&#39;</span>)</a>
+<a class="sourceLine" id="cb18-19" title="19">s2.add_skill(<span class="st">&#39;Marketing&#39;</span>)</a>
+<a class="sourceLine" id="cb18-20" title="20">s2.add_skill(<span class="st">&#39;Digital Marketing&#39;</span>)</a>
+<a class="sourceLine" id="cb18-21" title="21"><span class="bu">print</span>(s2.skills)</a></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb19-1" title="1"><span class="ex">Eyob</span> Yetayeh is 30 years old. He lives in Helsinki, Finland.</a>
+<a class="sourceLine" id="cb19-2" title="2">[<span class="st">&#39;JavaScript&#39;</span>, <span class="st">&#39;React&#39;</span>, <span class="st">&#39;Python&#39;</span>]</a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="ex">Lidiya</span> Teklemariam is 28 years old. She lives in Espoo, Finland.</a>
+<a class="sourceLine" id="cb19-4" title="4">[<span class="st">&#39;Organizing&#39;</span>, <span class="st">&#39;Marketing&#39;</span>, <span class="st">&#39;Digital Marketing&#39;</span>]</a></code></pre></div>
+<p>We can use super() built-in function or the parent name Person to automatically inherit the methods and properties from its parent. In the example above we override the parent method. The child method has a different feature, it can identify, if the gender is male or female and assign the proper pronoun(He/She).</p>
+<p>🌕 Now, you are fully charged with a super power of programming. Now do some exercises for your brain and muscles.</p>
+<h3 id="exercises-day-21">💻 Exercises: Day 21</h3>
+<h4 id="exercises-level-1">Exercises: Level 1</h4>
+<ol type="1">
+<li>Python has the module called <em>statistics</em> and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample (mean, median, mode) and measure of variability (range, variance, standard deviation). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1">ages <span class="op">=</span> [<span class="dv">31</span>, <span class="dv">26</span>, <span class="dv">34</span>, <span class="dv">37</span>, <span class="dv">27</span>, <span class="dv">26</span>, <span class="dv">32</span>, <span class="dv">32</span>, <span class="dv">26</span>, <span class="dv">27</span>, <span class="dv">27</span>, <span class="dv">24</span>, <span class="dv">32</span>, <span class="dv">33</span>, <span class="dv">27</span>, <span class="dv">25</span>, <span class="dv">26</span>, <span class="dv">38</span>, <span class="dv">37</span>, <span class="dv">31</span>, <span class="dv">34</span>, <span class="dv">24</span>, <span class="dv">33</span>, <span class="dv">29</span>, <span class="dv">26</span>]</a>
+<a class="sourceLine" id="cb20-2" title="2"></a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="bu">print</span>(<span class="st">&#39;Count:&#39;</span>, data.count()) <span class="co"># 25</span></a>
+<a class="sourceLine" id="cb20-4" title="4"><span class="bu">print</span>(<span class="st">&#39;Sum: &#39;</span>, data.<span class="bu">sum</span>()) <span class="co"># 744</span></a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="bu">print</span>(<span class="st">&#39;Min: &#39;</span>, data.<span class="bu">min</span>()) <span class="co"># 24</span></a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="bu">print</span>(<span class="st">&#39;Max: &#39;</span>, data.<span class="bu">max</span>()) <span class="co"># 38</span></a>
+<a class="sourceLine" id="cb20-7" title="7"><span class="bu">print</span>(<span class="st">&#39;Range: &#39;</span>, data.<span class="bu">range</span>() <span class="co"># 14</span></a>
+<a class="sourceLine" id="cb20-8" title="8"><span class="bu">print</span>(<span class="st">&#39;Mean: &#39;</span>, data.mean()) <span class="co"># 30</span></a>
+<a class="sourceLine" id="cb20-9" title="9"><span class="bu">print</span>(<span class="st">&#39;Median: &#39;</span>, data.median()) <span class="co"># 29</span></a>
+<a class="sourceLine" id="cb20-10" title="10"><span class="bu">print</span>(<span class="st">&#39;Mode: &#39;</span>, data.mode()) <span class="co"># {&#39;mode&#39;: 26, &#39;count&#39;: 5}</span></a>
+<a class="sourceLine" id="cb20-11" title="11"><span class="bu">print</span>(<span class="st">&#39;Standard Deviation: &#39;</span>, data.std()) <span class="co"># 4.2</span></a>
+<a class="sourceLine" id="cb20-12" title="12"><span class="bu">print</span>(<span class="st">&#39;Variance: &#39;</span>, data.var()) <span class="co"># 17.5</span></a>
+<a class="sourceLine" id="cb20-13" title="13"><span class="bu">print</span>(<span class="st">&#39;Frequency Distribution: &#39;</span>, data.freq_dist()) <span class="co"># [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]</span></a></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb21-1" title="1"><span class="co"># you output should look like this</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="ex">print</span>(data.describe())</a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="ex">Count</span>: 25</a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="ex">Sum</span>:  744</a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="ex">Min</span>:  24</a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="ex">Max</span>:  38</a>
+<a class="sourceLine" id="cb21-7" title="7"><span class="ex">Range</span>:  14</a>
+<a class="sourceLine" id="cb21-8" title="8"><span class="ex">Mean</span>:  30</a>
+<a class="sourceLine" id="cb21-9" title="9"><span class="ex">Median</span>:  29</a>
+<a class="sourceLine" id="cb21-10" title="10"><span class="ex">Mode</span>:  (26, 5)</a>
+<a class="sourceLine" id="cb21-11" title="11"><span class="ex">Variance</span>:  17.5</a>
+<a class="sourceLine" id="cb21-12" title="12"><span class="ex">Standard</span> Deviation:  4.2</a>
+<a class="sourceLine" id="cb21-13" title="13"><span class="ex">Frequency</span> Distribution: [(20.0, 26), <span class="kw">(</span><span class="ex">16.0</span>, 27<span class="kw">)</span>, <span class="kw">(</span><span class="ex">12.0</span>, 32<span class="kw">)</span>, <span class="kw">(</span><span class="ex">8.0</span>, 37<span class="kw">)</span>, <span class="kw">(</span><span class="ex">8.0</span>, 34<span class="kw">)</span>, <span class="kw">(</span><span class="ex">8.0</span>, 33<span class="kw">)</span>, <span class="kw">(</span><span class="ex">8.0</span>, 31<span class="kw">)</span>, <span class="kw">(</span><span class="ex">8.0</span>, 24<span class="kw">)</span>, <span class="kw">(</span><span class="ex">4.0</span>, 38<span class="kw">)</span>, <span class="kw">(</span><span class="ex">4.0</span>, 29<span class="kw">)</span>, <span class="kw">(</span><span class="ex">4.0</span>, 25<span class="kw">)</span>]</a></code></pre></div>
+<p>{% tabs %} {% tab title=“Abstract Class” %}</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="co">Abstract class is an extension of a basic class. Like a basic class, an</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="co">abstract class has methods and state. Unlike a basic class, it inherits</span></a>
+<a class="sourceLine" id="cb22-4" title="4"><span class="co">the `ABC` class and has at least one `abstractmethod`. That means we</span></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="co">cannot create an instance directly from its constructor. In this module,</span></a>
+<a class="sourceLine" id="cb22-6" title="6"><span class="co">we will create an abstract class and two concrete classes.</span></a>
+<a class="sourceLine" id="cb22-7" title="7"></a>
+<a class="sourceLine" id="cb22-8" title="8"><span class="co">For more about abstract classes, click the link below:</span></a>
+<a class="sourceLine" id="cb22-9" title="9"></a>
+<a class="sourceLine" id="cb22-10" title="10"><span class="co">https://www.python.org/dev/peps/pep-3119/</span></a>
+<a class="sourceLine" id="cb22-11" title="11"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-12" title="12"><span class="im">from</span> abc <span class="im">import</span> ABC, abstractmethod</a>
+<a class="sourceLine" id="cb22-13" title="13"></a>
+<a class="sourceLine" id="cb22-14" title="14"></a>
+<a class="sourceLine" id="cb22-15" title="15"><span class="kw">class</span> Employee(ABC):</a>
+<a class="sourceLine" id="cb22-16" title="16">    <span class="co">&quot;&quot;&quot;Abstract definition of an employee.</span></a>
+<a class="sourceLine" id="cb22-17" title="17"></a>
+<a class="sourceLine" id="cb22-18" title="18"><span class="co">    Any employee can work and relax. The way that one type of employee</span></a>
+<a class="sourceLine" id="cb22-19" title="19"><span class="co">    can work and relax is different from another type of employee.</span></a>
+<a class="sourceLine" id="cb22-20" title="20"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-21" title="21"></a>
+<a class="sourceLine" id="cb22-22" title="22">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, title):</a>
+<a class="sourceLine" id="cb22-23" title="23">        <span class="va">self</span>.name <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb22-24" title="24">        <span class="va">self</span>.title <span class="op">=</span> title</a>
+<a class="sourceLine" id="cb22-25" title="25"></a>
+<a class="sourceLine" id="cb22-26" title="26">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-27" title="27">        <span class="cf">return</span> <span class="va">self</span>.name</a>
+<a class="sourceLine" id="cb22-28" title="28"></a>
+<a class="sourceLine" id="cb22-29" title="29">    <span class="at">@abstractmethod</span></a>
+<a class="sourceLine" id="cb22-30" title="30">    <span class="kw">def</span> do_work(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-31" title="31">        <span class="co">&quot;&quot;&quot;Do something for work.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-32" title="32">        <span class="cf">raise</span> <span class="pp">NotImplementedError</span></a>
+<a class="sourceLine" id="cb22-33" title="33"></a>
+<a class="sourceLine" id="cb22-34" title="34">    <span class="at">@abstractmethod</span></a>
+<a class="sourceLine" id="cb22-35" title="35">    <span class="kw">def</span> do_relax(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-36" title="36">        <span class="co">&quot;&quot;&quot;Do something to relax.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-37" title="37">        <span class="cf">raise</span> <span class="pp">NotImplementedError</span></a>
+<a class="sourceLine" id="cb22-38" title="38"></a>
+<a class="sourceLine" id="cb22-39" title="39"></a>
+<a class="sourceLine" id="cb22-40" title="40"><span class="kw">class</span> Engineer(Employee):</a>
+<a class="sourceLine" id="cb22-41" title="41">    <span class="co">&quot;&quot;&quot;Concrete definition of an engineer.</span></a>
+<a class="sourceLine" id="cb22-42" title="42"></a>
+<a class="sourceLine" id="cb22-43" title="43"><span class="co">    The Engineer class is concrete because it implements every</span></a>
+<a class="sourceLine" id="cb22-44" title="44"><span class="co">    `abstractmethod` that was not implemented above.</span></a>
+<a class="sourceLine" id="cb22-45" title="45"></a>
+<a class="sourceLine" id="cb22-46" title="46"><span class="co">    Notice that we leverage the parent&#39;s constructor when creating</span></a>
+<a class="sourceLine" id="cb22-47" title="47"><span class="co">    this object. We also define `do_refactor` for an engineer, which</span></a>
+<a class="sourceLine" id="cb22-48" title="48"><span class="co">    is something that a manager prefers not to do.</span></a>
+<a class="sourceLine" id="cb22-49" title="49"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-50" title="50"></a>
+<a class="sourceLine" id="cb22-51" title="51">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, title, skill):</a>
+<a class="sourceLine" id="cb22-52" title="52">        <span class="bu">super</span>().<span class="fu">__init__</span>(name, title)</a>
+<a class="sourceLine" id="cb22-53" title="53">        <span class="va">self</span>.skill <span class="op">=</span> skill</a>
+<a class="sourceLine" id="cb22-54" title="54"></a>
+<a class="sourceLine" id="cb22-55" title="55">    <span class="kw">def</span> do_work(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-56" title="56">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is coding in </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>skill<span class="sc">}</span><span class="ss">&quot;</span></a>
+<a class="sourceLine" id="cb22-57" title="57"></a>
+<a class="sourceLine" id="cb22-58" title="58">    <span class="kw">def</span> do_relax(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-59" title="59">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is watching YouTube&quot;</span></a>
+<a class="sourceLine" id="cb22-60" title="60"></a>
+<a class="sourceLine" id="cb22-61" title="61">    <span class="kw">def</span> do_refactor(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-62" title="62">        <span class="co">&quot;&quot;&quot;Do the hard work of refactoring code, unlike managers.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-63" title="63">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is refactoring code&quot;</span></a>
+<a class="sourceLine" id="cb22-64" title="64"></a>
+<a class="sourceLine" id="cb22-65" title="65"></a>
+<a class="sourceLine" id="cb22-66" title="66"><span class="kw">class</span> Manager(Employee):</a>
+<a class="sourceLine" id="cb22-67" title="67">    <span class="co">&quot;&quot;&quot;Concrete definition of a manager.</span></a>
+<a class="sourceLine" id="cb22-68" title="68"></a>
+<a class="sourceLine" id="cb22-69" title="69"><span class="co">    The Manager class is concrete for the same reasons as the Engineer</span></a>
+<a class="sourceLine" id="cb22-70" title="70"><span class="co">    class is concrete. Notice that a manager has direct reports and</span></a>
+<a class="sourceLine" id="cb22-71" title="71"><span class="co">    has the responsibility of hiring people on the team, unlike an</span></a>
+<a class="sourceLine" id="cb22-72" title="72"><span class="co">    engineer.</span></a>
+<a class="sourceLine" id="cb22-73" title="73"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-74" title="74"></a>
+<a class="sourceLine" id="cb22-75" title="75">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name, title, direct_reports):</a>
+<a class="sourceLine" id="cb22-76" title="76">        <span class="bu">super</span>().<span class="fu">__init__</span>(name, title)</a>
+<a class="sourceLine" id="cb22-77" title="77">        <span class="va">self</span>.direct_reports <span class="op">=</span> direct_reports</a>
+<a class="sourceLine" id="cb22-78" title="78"></a>
+<a class="sourceLine" id="cb22-79" title="79">    <span class="kw">def</span> do_work(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-80" title="80">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is meeting up with </span><span class="sc">{</span><span class="bu">len</span>(<span class="va">self</span>.direct_reports)<span class="sc">}</span><span class="ss"> reports&quot;</span></a>
+<a class="sourceLine" id="cb22-81" title="81"></a>
+<a class="sourceLine" id="cb22-82" title="82">    <span class="kw">def</span> do_relax(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-83" title="83">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is taking a trip to the Bahamas&quot;</span></a>
+<a class="sourceLine" id="cb22-84" title="84"></a>
+<a class="sourceLine" id="cb22-85" title="85">    <span class="kw">def</span> do_hire(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-86" title="86">        <span class="co">&quot;&quot;&quot;Do the hard work of hiring employees, unlike engineers.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb22-87" title="87">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is hiring employees&quot;</span></a>
+<a class="sourceLine" id="cb22-88" title="88"></a>
+<a class="sourceLine" id="cb22-89" title="89"></a>
+<a class="sourceLine" id="cb22-90" title="90"><span class="kw">def</span> main():</a>
+<a class="sourceLine" id="cb22-91" title="91">    <span class="co"># Declare two engineers</span></a>
+<a class="sourceLine" id="cb22-92" title="92">    engineer_john <span class="op">=</span> Engineer(<span class="st">&quot;John Doe&quot;</span>, <span class="st">&quot;Software Engineer&quot;</span>, <span class="st">&quot;Android&quot;</span>)</a>
+<a class="sourceLine" id="cb22-93" title="93">    engineer_jane <span class="op">=</span> Engineer(<span class="st">&quot;Jane Doe&quot;</span>, <span class="st">&quot;Software Engineer&quot;</span>, <span class="st">&quot;iOS&quot;</span>)</a>
+<a class="sourceLine" id="cb22-94" title="94">    engineers <span class="op">=</span> [engineer_john, engineer_jane]</a>
+<a class="sourceLine" id="cb22-95" title="95"></a>
+<a class="sourceLine" id="cb22-96" title="96">    <span class="co"># These engineers are employees but not managers</span></a>
+<a class="sourceLine" id="cb22-97" title="97">    <span class="cf">assert</span> <span class="bu">all</span>(<span class="bu">isinstance</span>(engineer, Employee) <span class="cf">for</span> engineer <span class="kw">in</span> engineers)</a>
+<a class="sourceLine" id="cb22-98" title="98">    <span class="cf">assert</span> <span class="bu">all</span>(<span class="kw">not</span> <span class="bu">isinstance</span>(engineer, Manager) <span class="cf">for</span> engineer <span class="kw">in</span> engineers)</a>
+<a class="sourceLine" id="cb22-99" title="99"></a>
+<a class="sourceLine" id="cb22-100" title="100">    <span class="co"># Engineers can work, relax and refactor</span></a>
+<a class="sourceLine" id="cb22-101" title="101">    <span class="cf">assert</span> engineer_john.do_work() <span class="op">==</span> <span class="st">&quot;John Doe is coding in Android&quot;</span></a>
+<a class="sourceLine" id="cb22-102" title="102">    <span class="cf">assert</span> engineer_john.do_relax() <span class="op">==</span> <span class="st">&quot;John Doe is watching YouTube&quot;</span></a>
+<a class="sourceLine" id="cb22-103" title="103">    <span class="cf">assert</span> engineer_john.do_refactor() <span class="op">==</span> <span class="st">&quot;John Doe is refactoring code&quot;</span></a>
+<a class="sourceLine" id="cb22-104" title="104"></a>
+<a class="sourceLine" id="cb22-105" title="105">    <span class="co"># Declare manager with engineers as direct reports</span></a>
+<a class="sourceLine" id="cb22-106" title="106">    manager_max <span class="op">=</span> Manager(<span class="st">&quot;Max Doe&quot;</span>, <span class="st">&quot;Engineering Manager&quot;</span>, engineers)</a>
+<a class="sourceLine" id="cb22-107" title="107"></a>
+<a class="sourceLine" id="cb22-108" title="108">    <span class="co"># Managers are employees but not engineers</span></a>
+<a class="sourceLine" id="cb22-109" title="109">    <span class="cf">assert</span> <span class="bu">isinstance</span>(manager_max, Employee)</a>
+<a class="sourceLine" id="cb22-110" title="110">    <span class="cf">assert</span> <span class="kw">not</span> <span class="bu">isinstance</span>(manager_max, Engineer)</a>
+<a class="sourceLine" id="cb22-111" title="111"></a>
+<a class="sourceLine" id="cb22-112" title="112">    <span class="co"># Managers can work, relax and hire</span></a>
+<a class="sourceLine" id="cb22-113" title="113">    <span class="cf">assert</span> manager_max.do_work() <span class="op">==</span> <span class="st">&quot;Max Doe is meeting up with 2 reports&quot;</span></a>
+<a class="sourceLine" id="cb22-114" title="114">    <span class="cf">assert</span> manager_max.do_relax() <span class="op">==</span> <span class="st">&quot;Max Doe is taking a trip to the Bahamas&quot;</span></a>
+<a class="sourceLine" id="cb22-115" title="115">    <span class="cf">assert</span> manager_max.do_hire() <span class="op">==</span> <span class="st">&quot;Max Doe is hiring employees&quot;</span></a>
+<a class="sourceLine" id="cb22-116" title="116"></a>
+<a class="sourceLine" id="cb22-117" title="117"></a>
+<a class="sourceLine" id="cb22-118" title="118"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</a>
+<a class="sourceLine" id="cb22-119" title="119">    main()</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Basic Class” %}</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"></a>
+<a class="sourceLine" id="cb23-2" title="2"></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="co">A class is made up of methods and state. This allows code and data to be</span></a>
+<a class="sourceLine" id="cb23-5" title="5"><span class="co">combined as one logical entity. This module defines a basic car class,</span></a>
+<a class="sourceLine" id="cb23-6" title="6"><span class="co">creates a car instance and uses it for demonstration purposes.</span></a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-8" title="8"><span class="im">from</span> inspect <span class="im">import</span> isfunction, ismethod, signature</a>
+<a class="sourceLine" id="cb23-9" title="9"></a>
+<a class="sourceLine" id="cb23-10" title="10"></a>
+<a class="sourceLine" id="cb23-11" title="11"><span class="kw">class</span> Car:</a>
+<a class="sourceLine" id="cb23-12" title="12">    <span class="co">&quot;&quot;&quot;Basic definition of a car.</span></a>
+<a class="sourceLine" id="cb23-13" title="13"></a>
+<a class="sourceLine" id="cb23-14" title="14"><span class="co">    We begin with a simple mental model of what a car is. That way, we</span></a>
+<a class="sourceLine" id="cb23-15" title="15"><span class="co">    can start exploring the core concepts that are associated with a</span></a>
+<a class="sourceLine" id="cb23-16" title="16"><span class="co">    class definition.</span></a>
+<a class="sourceLine" id="cb23-17" title="17"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-18" title="18"></a>
+<a class="sourceLine" id="cb23-19" title="19">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, make, model, year, miles):</a>
+<a class="sourceLine" id="cb23-20" title="20">        <span class="co">&quot;&quot;&quot;Constructor logic.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-21" title="21">        <span class="va">self</span>.make <span class="op">=</span> make</a>
+<a class="sourceLine" id="cb23-22" title="22">        <span class="va">self</span>.model <span class="op">=</span> model</a>
+<a class="sourceLine" id="cb23-23" title="23">        <span class="va">self</span>.year <span class="op">=</span> year</a>
+<a class="sourceLine" id="cb23-24" title="24">        <span class="va">self</span>.miles <span class="op">=</span> miles</a>
+<a class="sourceLine" id="cb23-25" title="25"></a>
+<a class="sourceLine" id="cb23-26" title="26">    <span class="kw">def</span> <span class="fu">__repr__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb23-27" title="27">        <span class="co">&quot;&quot;&quot;Formal representation for developers.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-28" title="28">        <span class="cf">return</span> <span class="ss">f&quot;&lt;Car make=</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>make<span class="sc">}</span><span class="ss"> model=</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>model<span class="sc">}</span><span class="ss"> year=</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>year<span class="sc">}</span><span class="ss">&gt;&quot;</span></a>
+<a class="sourceLine" id="cb23-29" title="29"></a>
+<a class="sourceLine" id="cb23-30" title="30">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb23-31" title="31">        <span class="co">&quot;&quot;&quot;Informal representation for users.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-32" title="32">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>make<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>model<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span><span class="va">self</span><span class="sc">.</span>year<span class="sc">}</span><span class="ss">)&quot;</span></a>
+<a class="sourceLine" id="cb23-33" title="33"></a>
+<a class="sourceLine" id="cb23-34" title="34">    <span class="kw">def</span> drive(<span class="va">self</span>, rate_in_mph):</a>
+<a class="sourceLine" id="cb23-35" title="35">        <span class="co">&quot;&quot;&quot;Drive car at a certain rate in MPH.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb23-36" title="36">        <span class="cf">return</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="va">self</span><span class="sc">}</span><span class="ss"> is driving at </span><span class="sc">{</span>rate_in_mph<span class="sc">}</span><span class="ss"> MPH&quot;</span></a>
+<a class="sourceLine" id="cb23-37" title="37"></a>
+<a class="sourceLine" id="cb23-38" title="38"></a>
+<a class="sourceLine" id="cb23-39" title="39"><span class="kw">def</span> main():</a>
+<a class="sourceLine" id="cb23-40" title="40">    <span class="co"># Create a car with the provided class constructor</span></a>
+<a class="sourceLine" id="cb23-41" title="41">    car <span class="op">=</span> Car(<span class="st">&quot;Bumble&quot;</span>, <span class="st">&quot;Bee&quot;</span>, <span class="dv">2000</span>, <span class="fl">200000.0</span>)</a>
+<a class="sourceLine" id="cb23-42" title="42"></a>
+<a class="sourceLine" id="cb23-43" title="43">    <span class="co"># Formal representation is good for debugging issues</span></a>
+<a class="sourceLine" id="cb23-44" title="44">    <span class="cf">assert</span> <span class="bu">repr</span>(car) <span class="op">==</span> <span class="st">&quot;&lt;Car make=Bumble model=Bee year=2000&gt;&quot;</span></a>
+<a class="sourceLine" id="cb23-45" title="45"></a>
+<a class="sourceLine" id="cb23-46" title="46">    <span class="co"># Informal representation is good for user output</span></a>
+<a class="sourceLine" id="cb23-47" title="47">    <span class="cf">assert</span> <span class="bu">str</span>(car) <span class="op">==</span> <span class="st">&quot;Bumble Bee (2000)&quot;</span></a>
+<a class="sourceLine" id="cb23-48" title="48"></a>
+<a class="sourceLine" id="cb23-49" title="49">    <span class="co"># Call a method on the class constructor</span></a>
+<a class="sourceLine" id="cb23-50" title="50">    <span class="cf">assert</span> car.drive(<span class="dv">75</span>) <span class="op">==</span> <span class="st">&quot;Bumble Bee (2000) is driving at 75 MPH&quot;</span></a>
+<a class="sourceLine" id="cb23-51" title="51"></a>
+<a class="sourceLine" id="cb23-52" title="52">    <span class="co"># As a reminder: everything in Python is an object! And that applies</span></a>
+<a class="sourceLine" id="cb23-53" title="53">    <span class="co"># to classes in the most interesting way - because they&#39;re not only</span></a>
+<a class="sourceLine" id="cb23-54" title="54">    <span class="co"># subclasses of object - they are also instances of object. This</span></a>
+<a class="sourceLine" id="cb23-55" title="55">    <span class="co"># means that we can modify the `Car` class at runtime, just like any</span></a>
+<a class="sourceLine" id="cb23-56" title="56">    <span class="co"># other piece of data we define in Python</span></a>
+<a class="sourceLine" id="cb23-57" title="57">    <span class="cf">assert</span> <span class="bu">issubclass</span>(Car, <span class="bu">object</span>) <span class="kw">and</span> <span class="bu">isinstance</span>(Car, <span class="bu">object</span>)</a>
+<a class="sourceLine" id="cb23-58" title="58"></a>
+<a class="sourceLine" id="cb23-59" title="59">    <span class="co"># To emphasize the idea that everything is an object, let&#39;s look at</span></a>
+<a class="sourceLine" id="cb23-60" title="60">    <span class="co"># the `drive` method in more detail</span></a>
+<a class="sourceLine" id="cb23-61" title="61">    driving <span class="op">=</span> <span class="bu">getattr</span>(car, <span class="st">&quot;drive&quot;</span>)</a>
+<a class="sourceLine" id="cb23-62" title="62"></a>
+<a class="sourceLine" id="cb23-63" title="63">    <span class="co"># The variable method is the same as the instance method</span></a>
+<a class="sourceLine" id="cb23-64" title="64">    <span class="cf">assert</span> driving <span class="op">==</span> car.drive</a>
+<a class="sourceLine" id="cb23-65" title="65"></a>
+<a class="sourceLine" id="cb23-66" title="66">    <span class="co"># The variable method is bound to the instance</span></a>
+<a class="sourceLine" id="cb23-67" title="67">    <span class="cf">assert</span> driving.__self__ <span class="op">==</span> car</a>
+<a class="sourceLine" id="cb23-68" title="68"></a>
+<a class="sourceLine" id="cb23-69" title="69">    <span class="co"># That is why `driving` is considered a method and not a function</span></a>
+<a class="sourceLine" id="cb23-70" title="70">    <span class="cf">assert</span> ismethod(driving) <span class="kw">and</span> <span class="kw">not</span> isfunction(driving)</a>
+<a class="sourceLine" id="cb23-71" title="71"></a>
+<a class="sourceLine" id="cb23-72" title="72">    <span class="co"># And there is only one parameter for `driving` because `__self__`</span></a>
+<a class="sourceLine" id="cb23-73" title="73">    <span class="co"># binding is implicit</span></a>
+<a class="sourceLine" id="cb23-74" title="74">    driving_params <span class="op">=</span> signature(driving).parameters</a>
+<a class="sourceLine" id="cb23-75" title="75">    <span class="cf">assert</span> <span class="bu">len</span>(driving_params) <span class="op">==</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb23-76" title="76">    <span class="cf">assert</span> <span class="st">&quot;rate_in_mph&quot;</span> <span class="kw">in</span> driving_params</a>
+<a class="sourceLine" id="cb23-77" title="77"></a>
+<a class="sourceLine" id="cb23-78" title="78"></a>
+<a class="sourceLine" id="cb23-79" title="79"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</a>
+<a class="sourceLine" id="cb23-80" title="80">    main()</a></code></pre></div>
+<p>{% endtab %} {% endtabs %}</p>
+<h2 id="classes-and-objects-2">7. Classes and objects</h2>
+<h3 id="object-oriented-programming">7.1. Object-oriented programming</h3>
+<p>Python is an <strong>object-oriented programming language</strong>, which means that it provides features that support <a href="http://en.wikipedia.org/wiki/Object-oriented_programming">object-oriented programming</a> ( <strong>OOP</strong>).</p>
+<p>Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main <a href="http://en.wikipedia.org/wiki/Programming_paradigm">programming paradigm</a> used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.</p>
+<p>Up to now we have been writing programs using a <a href="http://en.wikipedia.org/wiki/Procedural_programming">procedural programming</a> paradigm. In procedural programming the focus is on writing functions or <em>procedures</em> which operate on data. In object-oriented programming the focus is on the creation of <strong>objects</strong> which contain both data and functionality together.</p>
+<h3 id="user-defined-compound-types">7.2. User-defined compound types</h3>
+<p>We will now introduce a new Python keyword, <strong>class</strong>, which in essence defines a new <strong>data type</strong>. We have been using several of Python’s built-in types throughout this book, we are now ready to create our own user-defined type: the <code>Point</code>.</p>
+<p>Consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, <code>(0, 0)</code> represents the origin, and <code>(x, y)</code> represents the point <code>x</code> units to the right and <code>y</code> units up from the origin.</p>
+<p>A natural way to represent a point in Python is with two numeric values. The question, then, is how to group these two values into a compound object. The quick and dirty solution is to use a list or tuple, and for some applications that might be the best choice.</p>
+<p>An alternative is to define a new user-defined compound type, called a <strong>class</strong>. This approach involves a bit more effort, but it has advantages that will be apparent soon.</p>
+<p>A class definition looks like this:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb24-2" title="2">    <span class="cf">pass</span></a></code></pre></div>
+<p>Class definitions can appear anywhere in a program, but they are usually near the beginning (after the <code>import</code> statements). The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, <code>class</code>, followed by the name of the class, and ending with a colon.</p>
+<p>This definition creates a new class called <code>Point</code>. The <strong>pass</strong> statement has no effect; it is only necessary because a compound statement must have something in its body. A docstring could serve the same purpose:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb25-2" title="2">    <span class="co">&quot;Point class for storing mathematical points.&quot;</span></a></code></pre></div>
+<p>By creating the <code>Point</code> class, we created a new type, also called <code>Point</code>. The members of this type are called <strong>instances</strong> of the type or <strong>objects</strong>. Creating a new instance is called <strong>instantiation</strong>, and is accomplished by <strong>calling the class</strong>. Classes, like functions, are callable, and we instantiate a <code>Point</code> object by calling the <code>Point</code> class:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(Point)</a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;type&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point()</a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(p)</a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;__main__.Point&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p>The variable <code>p</code> is assigned a reference to a new <code>Point</code> object.</p>
+<p>It may be helpful to think of a class as a factory for making objects, so our <code>Point</code> class is a factory for making points. The class itself isn’t an instance of a point, but it contains the machinary to make point instances.</p>
+<h3 id="attributes">7.3. Attributes</h3>
+<p>Like real world objects, object instances have both form and function. The form consists of data elements contained within the instance.</p>
+<p>We can add new data elements to an instance using <strong>dot notation</strong>:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="op">&gt;&gt;&gt;</span> p.x <span class="op">=</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="op">&gt;&gt;&gt;</span> p.y <span class="op">=</span> <span class="dv">4</span></a></code></pre></div>
+<p>This syntax is similar to the syntax for selecting a variable from a module, such as <code>math.pi</code> or <code>string.uppercase</code>. Both modules and instances create their own namespaces, and the syntax for accessing names contained in each, called <strong>attributes</strong>, is the same. In this case the attribute we are selecting is a data item from an instance.</p>
+<p>The following state diagram shows the result of these assignments:<img src="https://www.openbookproject.net/books/bpp4awd/_images/point.png" alt="Point state diagram" /></p>
+<p>The variable <code>p</code> refers to a Point object, which contains two attributes. Each attribute refers to a number.</p>
+<p>We can read the value of an attribute using the same syntax:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(p.y)</a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="dv">4</span></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="op">&gt;&gt;&gt;</span> x <span class="op">=</span> p.x</a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(x)</a>
+<a class="sourceLine" id="cb28-5" title="5"><span class="dv">3</span></a></code></pre></div>
+<p>The expression <code>p.x</code> means, “Go to the object <code>p</code> refers to and get the value of <code>x</code>”. In this case, we assign that value to a variable named <code>x</code>. There is no conflict between the variable <code>x</code> and the attribute <code>x</code>. The purpose of dot notation is to identify which variable you are referring to unambiguously.</p>
+<p>You can use dot notation as part of any expression, so the following statements are legal:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="bu">print</span>(<span class="st">&#39;(</span><span class="sc">{0}</span><span class="st">, </span><span class="sc">{1}</span><span class="st">)&#39;</span>.<span class="bu">format</span>(p.x, p.y))</a>
+<a class="sourceLine" id="cb29-2" title="2">distance_squared <span class="op">=</span> p.x <span class="op">*</span> p.x <span class="op">+</span> p.y <span class="op">*</span> p.y</a></code></pre></div>
+<p>The first line outputs <code>(3, 4)</code>; the second line calculates the value 25.</p>
+<h3 id="the-initialization-method-and-self">7.4. The <strong>initialization method</strong> and <code>self</code></h3>
+<p>Since our <code>Point</code> class is intended to represent two dimensional mathematical points, <em>all</em> point instances ought to have <code>x</code> and <code>y</code> attributes, but that is not yet so with our <code>Point</code> objects.</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="op">&gt;&gt;&gt;</span> p2 <span class="op">=</span> Point()</a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="op">&gt;&gt;&gt;</span> p2.x</a>
+<a class="sourceLine" id="cb30-3" title="3">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb30-4" title="4">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb30-5" title="5"><span class="pp">AttributeError</span>: <span class="st">&#39;Point&#39;</span> <span class="bu">object</span> has no attribute <span class="st">&#39;x&#39;</span></a>
+<a class="sourceLine" id="cb30-6" title="6"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>To solve this problem we add an <strong>initialization method</strong> to our class.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb31-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):</a>
+<a class="sourceLine" id="cb31-3" title="3">        <span class="va">self</span>.x <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb31-4" title="4">        <span class="va">self</span>.y <span class="op">=</span> y</a></code></pre></div>
+<p>A <strong>method</strong> behaves like a function but it is part of an object. Like a data attribute it is accessed using dot notation.</p>
+<p>The initialization method is a special method that is invoked automatically when an object is created by calling the class. The name of this method is <code>__init__</code> (two underscore characters, followed by <code>init</code>, and then two more underscores). This name must be used to make a method an initialization method in Python.</p>
+<p>There is no conflict between the attribute <code>self.x</code> and the parameter <code>x</code>. Dot notation specifies which variable we are referring to.</p>
+<p>Let’s add another method, <code>distance_from_origin</code>, to see better how methods work:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb32-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):</a>
+<a class="sourceLine" id="cb32-3" title="3">        <span class="va">self</span>.x <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb32-4" title="4">        <span class="va">self</span>.y <span class="op">=</span> y</a>
+<a class="sourceLine" id="cb32-5" title="5"></a>
+<a class="sourceLine" id="cb32-6" title="6">    <span class="kw">def</span> distance_from_origin(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb32-7" title="7">        <span class="cf">return</span> ((<span class="va">self</span>.x <span class="op">**</span> <span class="dv">2</span>) <span class="op">+</span> (<span class="va">self</span>.y <span class="op">**</span> <span class="dv">2</span>)) <span class="op">**</span> <span class="fl">0.5</span></a></code></pre></div>
+<p>Let’s create a few point instances, look at their attributes, and call our new method on them:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb33-2" title="2"><span class="op">&gt;&gt;&gt;</span> p.x</a>
+<a class="sourceLine" id="cb33-3" title="3"><span class="dv">3</span></a>
+<a class="sourceLine" id="cb33-4" title="4"><span class="op">&gt;&gt;&gt;</span> p.y</a>
+<a class="sourceLine" id="cb33-5" title="5"><span class="dv">4</span></a>
+<a class="sourceLine" id="cb33-6" title="6"><span class="op">&gt;&gt;&gt;</span> p.distance_from_origin()</a>
+<a class="sourceLine" id="cb33-7" title="7"><span class="fl">5.0</span></a>
+<a class="sourceLine" id="cb33-8" title="8"><span class="op">&gt;&gt;&gt;</span> q <span class="op">=</span> Point(<span class="dv">5</span>, <span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb33-9" title="9"><span class="op">&gt;&gt;&gt;</span> q.x</a>
+<a class="sourceLine" id="cb33-10" title="10"><span class="dv">5</span></a>
+<a class="sourceLine" id="cb33-11" title="11"><span class="op">&gt;&gt;&gt;</span> q.y</a>
+<a class="sourceLine" id="cb33-12" title="12"><span class="dv">12</span></a>
+<a class="sourceLine" id="cb33-13" title="13"><span class="op">&gt;&gt;&gt;</span> q.distance_from_origin()</a>
+<a class="sourceLine" id="cb33-14" title="14"><span class="fl">13.0</span></a>
+<a class="sourceLine" id="cb33-15" title="15"><span class="op">&gt;&gt;&gt;</span> r <span class="op">=</span> Point(<span class="dv">0</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb33-16" title="16"><span class="op">&gt;&gt;&gt;</span> r.x</a>
+<a class="sourceLine" id="cb33-17" title="17"><span class="dv">0</span></a>
+<a class="sourceLine" id="cb33-18" title="18"><span class="op">&gt;&gt;&gt;</span> r.y</a>
+<a class="sourceLine" id="cb33-19" title="19"><span class="dv">0</span></a>
+<a class="sourceLine" id="cb33-20" title="20"><span class="op">&gt;&gt;&gt;</span> r.distance_from_origin()</a>
+<a class="sourceLine" id="cb33-21" title="21"><span class="fl">0.0</span></a></code></pre></div>
+<p>When defining a method, the first parameter refers to the instance being created. It is customary to name this parameter <strong>self</strong>. In the example session above, the <code>self</code> parameter refers to the instances <code>p</code>, <code>q</code>, and <code>r</code> respectively.</p>
+<h3 id="instances-as-parameters">7.5. Instances as parameters</h3>
+<p>You can pass an instance as a parameter to a function in the usual way. For example:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">def</span> print_point(p):</a>
+<a class="sourceLine" id="cb34-2" title="2">    <span class="bu">print</span>(<span class="st">&#39;(</span><span class="sc">{0}</span><span class="st">, </span><span class="sc">{1}</span><span class="st">)&#39;</span>.<span class="bu">format</span>(p.x, p.y))</a></code></pre></div>
+<p><code>print_point</code> takes a point as an argument and displays it in the standard format. If you call <code>print_point(p)</code> with point <code>p</code> as defined previously, the output is <code>(3, 4)</code>.</p>
+<p>To convert <code>print_point</code> to a method, do the following:</p>
+<ol type="1">
+<li>Indent the function definition so that it is inside the class definition.</li>
+<li>Rename the parameter to <code>self</code>.</li>
+</ol>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb35-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x<span class="op">=</span><span class="dv">0</span>, y<span class="op">=</span><span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb35-3" title="3">        <span class="va">self</span>.x <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb35-4" title="4">        <span class="va">self</span>.y <span class="op">=</span> y</a>
+<a class="sourceLine" id="cb35-5" title="5"></a>
+<a class="sourceLine" id="cb35-6" title="6">    <span class="kw">def</span> distance_from_origin(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb35-7" title="7">        <span class="cf">return</span> ((<span class="va">self</span>.x <span class="op">**</span> <span class="dv">2</span>) <span class="op">+</span> (<span class="va">self</span>.y <span class="op">**</span> <span class="dv">2</span>)) <span class="op">**</span> <span class="fl">0.5</span></a>
+<a class="sourceLine" id="cb35-8" title="8"></a>
+<a class="sourceLine" id="cb35-9" title="9">    <span class="kw">def</span> print_point(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb35-10" title="10">        <span class="bu">print</span>(<span class="st">&#39;(</span><span class="sc">{0}</span><span class="st">, </span><span class="sc">{1}</span><span class="st">)&#39;</span>.<span class="bu">format</span>(<span class="va">self</span>.x, <span class="va">self</span>.y))</a></code></pre></div>
+<p>We can now invoke the method using dot notation.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="op">&gt;&gt;&gt;</span> p.print_point()</a>
+<a class="sourceLine" id="cb36-3" title="3">(<span class="dv">3</span>, <span class="dv">4</span>)</a></code></pre></div>
+<p>The object on which the method is invoked is assigned to the first parameter, so in this case <code>p</code> is assigned to the parameter <code>self</code>. By convention, the first parameter of a method is called <code>self</code>. The reason for this is a little convoluted, but it is based on a useful metaphor.</p>
+<p>The syntax for a function call, <code>print_point(p)</code>, suggests that the function is the active agent. It says something like, Hey <code>print_point</code>! Here’s an object for you to print.</p>
+<p>In object-oriented programming, the objects are the active agents. An invocation like <code>p.print_point()</code> says Hey <code>p</code>! Please print yourself!</p>
+<p>This change in perspective might be more polite, but it is not obvious that it is useful. In the examples we have seen so far, it may not be. But sometimes shifting responsibility from the functions onto the objects makes it possible to write more versatile functions, and makes it easier to maintain and reuse code.</p>
+<h3 id="object-oriented-features">7.6. Object-oriented features</h3>
+<p>It is not easy to define object-oriented programming, but we have already seen some of its characteristics:</p>
+<ol type="1">
+<li>Programs are made up of class definitions which contain attributes that can be data (instance variables) or behaviors (methods).</li>
+<li>Each object definition corresponds to some object or concept in the real world, and the functions that operate on that object correspond to the ways real-world objects interact.</li>
+<li>Most of the computation is expressed in terms of operations on objects.</li>
+</ol>
+<p>For example, the <code>Point</code> class corresponds to the mathematical concept of a point.</p>
+<h3 id="time">7.7. Time</h3>
+<p>As another example of a user-defined type, we’ll define a class called <code>Time</code> that records the time of day. Since times will need hours, minutes, and second attributes, we’ll start with an initialization method similar to the one we created for Points.</p>
+<p>The class definition looks like this:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">class</span> Time:</a>
+<a class="sourceLine" id="cb37-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, hours, minutes, seconds):</a>
+<a class="sourceLine" id="cb37-3" title="3">        <span class="va">self</span>.hours <span class="op">=</span> hours</a>
+<a class="sourceLine" id="cb37-4" title="4">        <span class="va">self</span>.minutes <span class="op">=</span> minutes</a>
+<a class="sourceLine" id="cb37-5" title="5">        <span class="va">self</span>.seconds <span class="op">=</span> seconds</a></code></pre></div>
+<p>When we call the <code>Time</code> class, the arguments we provide are passed along to <code>init</code>:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(<span class="dv">9</span>, <span class="dv">14</span>, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb38-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.hours</a>
+<a class="sourceLine" id="cb38-3" title="3"><span class="dv">9</span></a>
+<a class="sourceLine" id="cb38-4" title="4"><span class="op">&gt;&gt;&gt;</span> current_time.minutes</a>
+<a class="sourceLine" id="cb38-5" title="5"><span class="dv">14</span></a>
+<a class="sourceLine" id="cb38-6" title="6"><span class="op">&gt;&gt;&gt;</span> current_time.seconds</a>
+<a class="sourceLine" id="cb38-7" title="7"><span class="dv">30</span></a></code></pre></div>
+<p>Here is a <code>print_time</code> method for our <code>Time</code> objects that uses string formating to display minutes and seconds with two digits.</p>
+<p>To save space, we will leave out the initialization method, but you should include it:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">class</span> Time:</a>
+<a class="sourceLine" id="cb39-2" title="2">    <span class="co"># previous method definitions here...</span></a>
+<a class="sourceLine" id="cb39-3" title="3"></a>
+<a class="sourceLine" id="cb39-4" title="4">    <span class="kw">def</span> print_time(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb39-5" title="5">        s <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{0}</span><span class="st">:</span><span class="sc">{1:02d}</span><span class="st">:</span><span class="sc">{2:02d}</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb39-6" title="6">        <span class="bu">print</span>(s.<span class="bu">format</span>(<span class="va">self</span>.hours, <span class="va">self</span>.minutes, <span class="va">self</span>.seconds)</a></code></pre></div>
+<p>which we can now invoke on time instances in the usual way:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> t1 <span class="op">=</span> Time(<span class="dv">9</span>, <span class="dv">14</span>, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb40-2" title="2"><span class="op">&gt;&gt;&gt;</span> t1.print_time()</a>
+<a class="sourceLine" id="cb40-3" title="3"><span class="dv">9</span>:<span class="dv">14</span>:<span class="dv">30</span></a>
+<a class="sourceLine" id="cb40-4" title="4"><span class="op">&gt;&gt;&gt;</span> t2 <span class="op">=</span> Time(<span class="dv">7</span>, <span class="dv">4</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb40-5" title="5"><span class="op">&gt;&gt;&gt;</span> t2.print_time()</a>
+<a class="sourceLine" id="cb40-6" title="6"><span class="dv">7</span>:<span class="dv">04</span>:<span class="dv">00</span></a></code></pre></div>
+<h3 id="optional-arguments">7.8. Optional arguments</h3>
+<p>We have seen built-in functions that take a variable number of arguments. For example, <code>string.find</code> can take two, three, or four arguments.</p>
+<p>It is possible to write user-defined functions with optional argument lists. For example, we can upgrade our own version of <code>find</code> to do the same thing as <code>string.find</code>.</p>
+<p>This is the original version:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">def</span> find(<span class="bu">str</span>, ch):</a>
+<a class="sourceLine" id="cb41-2" title="2">    index <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb41-3" title="3">    <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(<span class="bu">str</span>):</a>
+<a class="sourceLine" id="cb41-4" title="4">        <span class="cf">if</span> <span class="bu">str</span>[index] <span class="op">==</span> ch:</a>
+<a class="sourceLine" id="cb41-5" title="5">            <span class="cf">return</span> index</a>
+<a class="sourceLine" id="cb41-6" title="6">        index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb41-7" title="7">    <span class="cf">return</span> <span class="dv">-1</span></a></code></pre></div>
+<p>This is the new and improved version:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">def</span> find(<span class="bu">str</span>, ch, start<span class="op">=</span><span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb42-2" title="2">    index <span class="op">=</span> start</a>
+<a class="sourceLine" id="cb42-3" title="3">    <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(<span class="bu">str</span>):</a>
+<a class="sourceLine" id="cb42-4" title="4">        <span class="cf">if</span> <span class="bu">str</span>[index] <span class="op">==</span> ch:</a>
+<a class="sourceLine" id="cb42-5" title="5">            <span class="cf">return</span> index</a>
+<a class="sourceLine" id="cb42-6" title="6">        index <span class="op">=</span> index <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb42-7" title="7">    <span class="cf">return</span> <span class="dv">-1</span></a></code></pre></div>
+<p>The third parameter, <code>start</code>, is optional because a default value, <code>0</code>, is provided. If we invoke <code>find</code> with only two arguments, we use the default value and start from the beginning of the string:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="op">&gt;&gt;&gt;</span> find(<span class="st">&quot;apple&quot;</span>, <span class="st">&quot;p&quot;</span>)</a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="dv">1</span></a></code></pre></div>
+<p>If we provide a third parameter, it <strong>overrides</strong> the default:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="op">&gt;&gt;&gt;</span> find(<span class="st">&quot;apple&quot;</span>, <span class="st">&quot;p&quot;</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb44-2" title="2"><span class="dv">2</span></a>
+<a class="sourceLine" id="cb44-3" title="3"><span class="op">&gt;&gt;&gt;</span> find(<span class="st">&quot;apple&quot;</span>, <span class="st">&quot;p&quot;</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb44-4" title="4"><span class="dv">-1</span></a></code></pre></div>
+<p>We can rewrite our initialization method for the <code>Time</code> class so that <code>hours</code>, <code>minutes</code>, and <code>seconds</code> are each optional arguments.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1"><span class="kw">class</span> Time:</a>
+<a class="sourceLine" id="cb45-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, hours<span class="op">=</span><span class="dv">0</span>, minutes<span class="op">=</span><span class="dv">0</span>, seconds<span class="op">=</span><span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb45-3" title="3">        <span class="va">self</span>.hours <span class="op">=</span> hours</a>
+<a class="sourceLine" id="cb45-4" title="4">        <span class="va">self</span>.minutes <span class="op">=</span> minutes</a>
+<a class="sourceLine" id="cb45-5" title="5">        <span class="va">self</span>.seconds <span class="op">=</span> seconds</a></code></pre></div>
+<p>When we instantiate a <code>Time</code> object, we can pass in values for the three parameters, as we did with</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(<span class="dv">9</span>, <span class="dv">14</span>, <span class="dv">30</span>)</a></code></pre></div>
+<p>Because the parameters are now optional, however, we can omit them:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time()</a>
+<a class="sourceLine" id="cb47-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.print_time()</a>
+<a class="sourceLine" id="cb47-3" title="3"><span class="dv">0</span>:<span class="dv">00</span>:<span class="dv">00</span></a></code></pre></div>
+<p>Or provide only the first parameter:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(<span class="dv">9</span>)</a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.print_time()</a>
+<a class="sourceLine" id="cb48-3" title="3"><span class="dv">9</span>:<span class="dv">00</span>:<span class="dv">00</span></a></code></pre></div>
+<p>Or the first two parameters:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time (<span class="dv">9</span>, <span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.print_time()</a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="dv">9</span>:<span class="dv">14</span>:<span class="dv">00</span></a></code></pre></div>
+<p>Finally, we can provide a subset of the parameters by naming them explicitly:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(seconds <span class="op">=</span> <span class="dv">30</span>, hours <span class="op">=</span> <span class="dv">9</span>)</a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.print_time()</a>
+<a class="sourceLine" id="cb50-3" title="3"><span class="dv">9</span>:<span class="dv">00</span>:<span class="dv">30</span></a></code></pre></div>
+<h3 id="another-method">7.9. Another method</h3>
+<p>Let’s add a method <code>increment</code>, which increments a time instance by a given number of seconds. To save space, we will continue to leave out previously defined methods, but you should always keep them in your version:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1"><span class="kw">class</span> Time:</a>
+<a class="sourceLine" id="cb51-2" title="2">    <span class="co"># previous method definitions here...</span></a>
+<a class="sourceLine" id="cb51-3" title="3"></a>
+<a class="sourceLine" id="cb51-4" title="4">    <span class="kw">def</span> increment(<span class="va">self</span>, seconds):</a>
+<a class="sourceLine" id="cb51-5" title="5">        <span class="va">self</span>.seconds <span class="op">=</span> seconds <span class="op">+</span> <span class="va">self</span>.seconds</a>
+<a class="sourceLine" id="cb51-6" title="6"></a>
+<a class="sourceLine" id="cb51-7" title="7">        <span class="cf">while</span> <span class="va">self</span>.seconds <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb51-8" title="8">            <span class="va">self</span>.seconds <span class="op">=</span> <span class="va">self</span>.seconds <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb51-9" title="9">            <span class="va">self</span>.minutes <span class="op">=</span> <span class="va">self</span>.minutes <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb51-10" title="10"></a>
+<a class="sourceLine" id="cb51-11" title="11">        <span class="cf">while</span> <span class="va">self</span>.minutes <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb51-12" title="12">            <span class="va">self</span>.minutes <span class="op">=</span> <span class="va">self</span>.minutes <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb51-13" title="13">            <span class="va">self</span>.hours <span class="op">=</span> <span class="va">self</span>.hours <span class="op">+</span> <span class="dv">1</span></a></code></pre></div>
+<p>Now we can invoke <code>increment</code> on a time instance.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(<span class="dv">9</span>, <span class="dv">14</span>, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb52-2" title="2"><span class="op">&gt;&gt;&gt;</span> current_time.increment(<span class="dv">125</span>)</a>
+<a class="sourceLine" id="cb52-3" title="3"><span class="op">&gt;&gt;&gt;</span> current_time.print_time()</a>
+<a class="sourceLine" id="cb52-4" title="4"><span class="dv">9</span>:<span class="dv">16</span>:<span class="dv">35</span></a></code></pre></div>
+<p>Again, the object on which the method is invoked gets assigned to the first parameter, <code>self</code>. The second parameter, <code>seconds</code> gets the value <code>125</code>.</p>
+<h3 id="an-example-with-two-times">7.10. An example with two <code>Time</code>s</h3>
+<p>Let’s add a boolen method, <code>after</code>, that takes two time instances and returns <code>True</code> when the first one is chronologically after the second.</p>
+<p>We can only convert one of the parameters to <code>self</code>; the other we will call <code>other</code>, and it will have to be a parameter of the method.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb53-1" title="1"><span class="kw">class</span> Time:</a>
+<a class="sourceLine" id="cb53-2" title="2">    <span class="co"># previous method definitions here...</span></a>
+<a class="sourceLine" id="cb53-3" title="3"></a>
+<a class="sourceLine" id="cb53-4" title="4">    <span class="kw">def</span> after(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb53-5" title="5">        <span class="cf">if</span> <span class="va">self</span>.hours <span class="op">&gt;</span> other.hours:</a>
+<a class="sourceLine" id="cb53-6" title="6">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb53-7" title="7">        <span class="cf">if</span> <span class="va">self</span>.hours <span class="op">&lt;</span> other.hours:</a>
+<a class="sourceLine" id="cb53-8" title="8">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb53-9" title="9"></a>
+<a class="sourceLine" id="cb53-10" title="10">        <span class="cf">if</span> <span class="va">self</span>.minutes <span class="op">&gt;</span> other.minutes:</a>
+<a class="sourceLine" id="cb53-11" title="11">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb53-12" title="12">        <span class="cf">if</span> <span class="va">self</span>.minutes <span class="op">&lt;</span> other.minutes:</a>
+<a class="sourceLine" id="cb53-13" title="13">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb53-14" title="14"></a>
+<a class="sourceLine" id="cb53-15" title="15">        <span class="cf">if</span> <span class="va">self</span>.seconds <span class="op">&gt;</span> other.seconds:</a>
+<a class="sourceLine" id="cb53-16" title="16">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb53-17" title="17">        <span class="cf">return</span> <span class="va">False</span></a></code></pre></div>
+<p>We invoke this method on one object and pass the other as an argument:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb54-1" title="1"><span class="cf">if</span> time1.after(time2):</a>
+<a class="sourceLine" id="cb54-2" title="2">    <span class="bu">print</span>(<span class="st">&quot;It&#39;s later than you think.&quot;</span>)</a></code></pre></div>
+<p>You can almost read the invocation like English: If time1 is after time2, then…</p>
+<h4 id="pure-functions-and-modifiers-again">7.10.1. Pure functions and modifiers (again)</h4>
+<p>In the next few sections, we’ll write two versions of a function called <code>add_time</code>, which calculates the sum of two <code>Time</code>s. They will demonstrate two kinds of functions: pure functions and modifiers, which we first encountered in the <a href="https://www.openbookproject.net/books/bpp4awd/ch05.html#functions-chapter">Functions</a> chapter.</p>
+<p>The following is a rough version of <code>add_time</code>:</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb55-1" title="1"><span class="kw">def</span> add_time(t1, t2):</a>
+<a class="sourceLine" id="cb55-2" title="2">    <span class="bu">sum</span> <span class="op">=</span> Time()</a>
+<a class="sourceLine" id="cb55-3" title="3">    <span class="bu">sum</span>.hours <span class="op">=</span> t1.hours <span class="op">+</span> t2.hours</a>
+<a class="sourceLine" id="cb55-4" title="4">    <span class="bu">sum</span>.minutes <span class="op">=</span> t1.minutes <span class="op">+</span> t2.minutes</a>
+<a class="sourceLine" id="cb55-5" title="5">    <span class="bu">sum</span>.seconds <span class="op">=</span> t1.seconds <span class="op">+</span> t2.seconds</a>
+<a class="sourceLine" id="cb55-6" title="6">    <span class="cf">return</span> <span class="bu">sum</span></a></code></pre></div>
+<p>The function creates a new <code>Time</code> object, initializes its attributes, and returns a reference to the new object. This is called a <strong>pure function</strong> because it does not modify any of the objects passed to it as parameters and it has no side effects, such as displaying a value or getting user input.</p>
+<p>Here is an example of how to use this function. We’ll create two <code>Time</code> objects: <code>current_time</code>, which contains the current time; and <code>bread_time</code>, which contains the amount of time it takes for a breadmaker to make bread. Then we’ll use <code>add_time</code> to figure out when the bread will be done. If you haven’t finished writing <code>print_time</code> yet, take a look ahead to Section before you try this:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb56-1" title="1"><span class="op">&gt;&gt;&gt;</span> current_time <span class="op">=</span> Time(<span class="dv">9</span>, <span class="dv">14</span>, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb56-2" title="2"><span class="op">&gt;&gt;&gt;</span> bread_time <span class="op">=</span> Time(<span class="dv">3</span>, <span class="dv">35</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb56-3" title="3"><span class="op">&gt;&gt;&gt;</span> done_time <span class="op">=</span> add_time(current_time, bread_time)</a>
+<a class="sourceLine" id="cb56-4" title="4"><span class="op">&gt;&gt;&gt;</span> print_time(done_time)</a>
+<a class="sourceLine" id="cb56-5" title="5"><span class="dv">12</span>:<span class="dv">49</span>:<span class="dv">30</span></a></code></pre></div>
+<p>The output of this program is <code>12:49:30</code>, which is correct. On the other hand, there are cases where the result is not correct. Can you think of one?</p>
+<p>The problem is that this function does not deal with cases where the number of seconds or minutes adds up to more than sixty. When that happens, we have to carry the extra seconds into the minutes column or the extra minutes into the hours column.</p>
+<p>Here’s a second corrected version of the function:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb57-1" title="1"><span class="kw">def</span> add_time(t1, t2):</a>
+<a class="sourceLine" id="cb57-2" title="2">    <span class="bu">sum</span> <span class="op">=</span> Time()</a>
+<a class="sourceLine" id="cb57-3" title="3">    <span class="bu">sum</span>.hours <span class="op">=</span> t1.hours <span class="op">+</span> t2.hours</a>
+<a class="sourceLine" id="cb57-4" title="4">    <span class="bu">sum</span>.minutes <span class="op">=</span> t1.minutes <span class="op">+</span> t2.minutes</a>
+<a class="sourceLine" id="cb57-5" title="5">    <span class="bu">sum</span>.seconds <span class="op">=</span> t1.seconds <span class="op">+</span> t2.seconds</a>
+<a class="sourceLine" id="cb57-6" title="6"></a>
+<a class="sourceLine" id="cb57-7" title="7">    <span class="cf">if</span> <span class="bu">sum</span>.seconds <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb57-8" title="8">        <span class="bu">sum</span>.seconds <span class="op">=</span> <span class="bu">sum</span>.seconds <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb57-9" title="9">        <span class="bu">sum</span>.minutes <span class="op">=</span> <span class="bu">sum</span>.minutes <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb57-10" title="10"></a>
+<a class="sourceLine" id="cb57-11" title="11">    <span class="cf">if</span> <span class="bu">sum</span>.minutes <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb57-12" title="12">        <span class="bu">sum</span>.minutes <span class="op">=</span> <span class="bu">sum</span>.minutes <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb57-13" title="13">        <span class="bu">sum</span>.hours <span class="op">=</span> <span class="bu">sum</span>.hours <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb57-14" title="14"></a>
+<a class="sourceLine" id="cb57-15" title="15">    <span class="cf">return</span> <span class="bu">sum</span></a></code></pre></div>
+<p>Although this function is correct, it is starting to get big. Later we will suggest an alternative approach that yields shorter code.</p>
+<h4 id="modifiers">7.10.2. Modifiers</h4>
+<p>There are times when it is useful for a function to modify one or more of the objects it gets as parameters. Usually, the caller keeps a reference to the objects it passes, so any changes the function makes are visible to the caller. Functions that work this way are called <strong>modifiers</strong>.</p>
+<p><code>increment</code>, which adds a given number of seconds to a <code>Time</code> object, would be written most naturally as a modifier. A rough draft of the function looks like this:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb58-1" title="1"><span class="kw">def</span> increment(time, seconds):</a>
+<a class="sourceLine" id="cb58-2" title="2">    time.seconds <span class="op">=</span> time.seconds <span class="op">+</span> seconds</a>
+<a class="sourceLine" id="cb58-3" title="3"></a>
+<a class="sourceLine" id="cb58-4" title="4">    <span class="cf">if</span> time.seconds <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb58-5" title="5">        time.seconds <span class="op">=</span> time.seconds <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb58-6" title="6">        time.minutes <span class="op">=</span> time.minutes <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb58-7" title="7"></a>
+<a class="sourceLine" id="cb58-8" title="8">    <span class="cf">if</span> time.minutes <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb58-9" title="9">        time.minutes <span class="op">=</span> time.minutes <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb58-10" title="10">        time.hours <span class="op">=</span> time.hours <span class="op">+</span> <span class="dv">1</span></a></code></pre></div>
+<p>The first line performs the basic operation; the remainder deals with the special cases we saw before.</p>
+<p>Is this function correct? What happens if the parameter <code>seconds</code> is much greater than sixty? In that case, it is not enough to carry once; we have to keep doing it until <code>seconds</code> is less than sixty. One solution is to replace the <code>if</code> statements with <code>while</code> statements:</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb59-1" title="1"><span class="kw">def</span> increment(time, seconds):</a>
+<a class="sourceLine" id="cb59-2" title="2">    time.seconds <span class="op">=</span> time.seconds <span class="op">+</span> seconds</a>
+<a class="sourceLine" id="cb59-3" title="3"></a>
+<a class="sourceLine" id="cb59-4" title="4">    <span class="cf">while</span> time.seconds <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb59-5" title="5">        time.seconds <span class="op">=</span> time.seconds <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb59-6" title="6">        time.minutes <span class="op">=</span> time.minutes <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb59-7" title="7"></a>
+<a class="sourceLine" id="cb59-8" title="8">    <span class="cf">while</span> time.minutes <span class="op">&gt;=</span> <span class="dv">60</span>:</a>
+<a class="sourceLine" id="cb59-9" title="9">        time.minutes <span class="op">=</span> time.minutes <span class="op">-</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb59-10" title="10">        time.hours <span class="op">=</span> time.hours <span class="op">+</span> <span class="dv">1</span></a></code></pre></div>
+<p>This function is now correct, but it is not the most efficient solution.</p>
+<h3 id="prototype-development-versus-planning">7.11. Prototype development versus planning</h3>
+<p>So far in this chapter, we’ve used an approach to program development that we’ll call <strong>prototype development</strong>. We wrote a rough draft (or prototype) that performed the basic calculation and then tested it on a few cases, correcting flaws as we found them.</p>
+<p>Although this approach can be effective, it can lead to code that is unnecessarily complicated – since it deals with many special cases – and unreliable – since it is hard to know if we’ve found all the errors.</p>
+<p>An alternative is <strong>planned development</strong>, in which high-level insight into the problem can make the programming much easier. In this case, the insight is that a <code>Time</code> object is really a three-digit number in base 60! The <code>second</code> component is the ones column, the <code>minute</code> component is the sixties column, and the <code>hour</code> component is the thirty-six hundreds column.</p>
+<p>When we wrote <code>add_time</code> and <code>increment</code>, we were effectively doing addition in base 60, which is why we had to carry from one column to the next.</p>
+<p>This observation suggests another approach to the whole problem – we can convert a <code>Time</code> object into a single number and take advantage of the fact that the computer knows how to do arithmetic with numbers. The following function converts a <code>Time</code> object into an integer:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb60-1" title="1"><span class="kw">def</span> convert_to_seconds(time):</a>
+<a class="sourceLine" id="cb60-2" title="2">    minutes <span class="op">=</span> time.hours <span class="op">*</span> <span class="dv">60</span> <span class="op">+</span> time.minutes</a>
+<a class="sourceLine" id="cb60-3" title="3">    seconds <span class="op">=</span> minutes <span class="op">*</span> <span class="dv">60</span> <span class="op">+</span> time.seconds</a>
+<a class="sourceLine" id="cb60-4" title="4">    <span class="cf">return</span> seconds</a></code></pre></div>
+<p>Now, all we need is a way to convert from an integer to a <code>Time</code> object:</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb61-1" title="1"><span class="kw">def</span> make_time(seconds):</a>
+<a class="sourceLine" id="cb61-2" title="2">    time <span class="op">=</span> Time()</a>
+<a class="sourceLine" id="cb61-3" title="3">    time.hours <span class="op">=</span> seconds <span class="op">//</span> <span class="dv">3600</span></a>
+<a class="sourceLine" id="cb61-4" title="4">    seconds <span class="op">=</span> seconds <span class="op">-</span> time.hours <span class="op">*</span> <span class="dv">3600</span></a>
+<a class="sourceLine" id="cb61-5" title="5">    time.minutes <span class="op">=</span> seconds <span class="op">//</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb61-6" title="6">    seconds <span class="op">=</span> seconds <span class="op">-</span> time.minutes <span class="op">*</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb61-7" title="7">    time.seconds <span class="op">=</span> seconds</a>
+<a class="sourceLine" id="cb61-8" title="8">    <span class="cf">return</span> time</a></code></pre></div>
+<p>You might have to think a bit to convince yourself that this technique to convert from one base to another is correct. Assuming you are convinced, you can use these functions to rewrite <code>add_time</code>:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb62-1" title="1"><span class="kw">def</span> add_time(t1, t2):</a>
+<a class="sourceLine" id="cb62-2" title="2">    seconds <span class="op">=</span> convert_to_seconds(t1) <span class="op">+</span> convert_to_seconds(t2)</a>
+<a class="sourceLine" id="cb62-3" title="3">    <span class="cf">return</span> make_time(seconds)</a></code></pre></div>
+<p>This version is much shorter than the original, and it is much easier to demonstrate that it is correct (assuming, as usual, that the functions it calls are correct).</p>
+<h3 id="generalization">7.12. Generalization</h3>
+<p>In some ways, converting from base 60 to base 10 and back is harder than just dealing with times. Base conversion is more abstract; our intuition for dealing with times is better.</p>
+<p>But if we have the insight to treat times as base 60 numbers and make the investment of writing the conversion functions (<code>convert_to_seconds</code> and <code>make_time</code>), we get a program that is shorter, easier to read and debug, and more reliable.</p>
+<p>It is also easier to add features later. For example, imagine subtracting two <code>Time</code>s to find the duration between them. The naive approach would be to implement subtraction with borrowing. Using the conversion functions would be easier and more likely to be correct.</p>
+<p>Ironically, sometimes making a problem harder (or more general) makes it easier (because there are fewer special cases and fewer opportunities for error).</p>
+<h3 id="algorithms">7.13. Algorithms</h3>
+<p>When you write a general solution for a class of problems, as opposed to a specific solution to a single problem, you have written an <strong>algorithm</strong>. We mentioned this word before but did not define it carefully. It is not easy to define, so we will try a couple of approaches.</p>
+<p>First, consider something that is not an algorithm. When you learned to multiply single-digit numbers, you probably memorized the multiplication table. In effect, you memorized 100 specific solutions. That kind of knowledge is not algorithmic.</p>
+<p>But if you were lazy, you probably cheated by learning a few tricks. For example, to find the product of <code>n</code> and 9, you can write <code>n-1</code> as the first digit and <code>10-n</code> as the second digit. This trick is a general solution for multiplying any single-digit number by 9. That’s an algorithm!</p>
+<p>Similarly, the techniques you learned for addition with carrying, subtraction with borrowing, and long division are all algorithms. One of the characteristics of algorithms is that they do not require any intelligence to carry out. They are mechanical processes in which each step follows from the last according to a simple set of rules.</p>
+<p>In my opinion, it is embarrassing that humans spend so much time in school learning to execute algorithms that, quite literally, require no intelligence.</p>
+<p>On the other hand, the process of designing algorithms is interesting, intellectually challenging, and a central part of what we call programming.</p>
+<p>Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain <em>how</em> we do it, at least not in the form of an algorithm.</p>
+<h3 id="points-revisited">7.14. Points revisited</h3>
+<p>Let’s rewrite the <code>Point</code> class in a more object- oriented style:</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb63-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb63-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x<span class="op">=</span><span class="dv">0</span>, y<span class="op">=</span><span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb63-3" title="3">        <span class="va">self</span>.x <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb63-4" title="4">        <span class="va">self</span>.y <span class="op">=</span> y</a>
+<a class="sourceLine" id="cb63-5" title="5"></a>
+<a class="sourceLine" id="cb63-6" title="6">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb63-7" title="7">        <span class="cf">return</span> <span class="st">&#39;(</span><span class="sc">{0}</span><span class="st">, </span><span class="sc">{1}</span><span class="st">)&#39;</span>.<span class="bu">format</span>(<span class="va">self</span>.x, <span class="va">self</span>.y)</a></code></pre></div>
+<p>The next method, <code>__str__</code>, returns a string representation of a <code>Point</code> object. If a class provides a method named <code>__str__</code>, it overrides the default behavior of the Python built-in <code>str</code> function.</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb64-1" title="1"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb64-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">str</span>(p)</a>
+<a class="sourceLine" id="cb64-3" title="3"><span class="co">&#39;(3, 4)&#39;</span></a></code></pre></div>
+<p>Printing a <code>Point</code> object implicitly invokes <code>__str__</code> on the object, so defining <code>__str__</code> also changes the behavior of <code>print</code>:</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb65-1" title="1"><span class="op">&gt;&gt;&gt;</span> p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb65-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(p)</a>
+<a class="sourceLine" id="cb65-3" title="3">(<span class="dv">3</span>, <span class="dv">4</span>)</a></code></pre></div>
+<p>When we write a new class, we almost always start by writing <code>__init__</code>, which makes it easier to instantiate objects, and <code>__str__</code>, which is almost always useful for debugging.</p>
+<h3 id="operator-overloading">7.15. Operator overloading</h3>
+<p>Some languages make it possible to change the definition of the built-in operators when they are applied to user-defined types. This feature is called <strong>operator overloading</strong>. It is especially useful when defining new mathematical types.</p>
+<p>For example, to override the addition operator <code>+</code>, we provide a method named <code>__add__</code>:</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb66-1" title="1"><span class="kw">class</span> Point:</a>
+<a class="sourceLine" id="cb66-2" title="2">    <span class="co"># previously defined methods here...</span></a>
+<a class="sourceLine" id="cb66-3" title="3"></a>
+<a class="sourceLine" id="cb66-4" title="4">    <span class="kw">def</span> <span class="fu">__add__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb66-5" title="5">        <span class="cf">return</span> Point(<span class="va">self</span>.x <span class="op">+</span> other.x, <span class="va">self</span>.y <span class="op">+</span> other.y)</a></code></pre></div>
+<p>As usual, the first parameter is the object on which the method is invoked. The second parameter is conveniently named <code>other</code> to distinguish it from <code>self</code>. To add two <code>Point</code>s, we create and return a new <code>Point</code> that contains the sum of the <code>x</code> coordinates and the sum of the <code>y</code> coordinates.</p>
+<p>Now, when we apply the <code>+</code> operator to <code>Point</code> objects, Python invokes <code>__add__</code>:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb67-1" title="1"><span class="op">&gt;&gt;&gt;</span>  p1 <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb67-2" title="2"><span class="op">&gt;&gt;&gt;</span>  p2 <span class="op">=</span> Point(<span class="dv">5</span>, <span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb67-3" title="3"><span class="op">&gt;&gt;&gt;</span>  p3 <span class="op">=</span> p1 <span class="op">+</span> p2</a>
+<a class="sourceLine" id="cb67-4" title="4"><span class="op">&gt;&gt;&gt;</span>  <span class="bu">print</span>(p3)</a>
+<a class="sourceLine" id="cb67-5" title="5">(<span class="dv">8</span>, <span class="dv">11</span>)</a></code></pre></div>
+<p>The expression <code>p1 + p2</code> is equivalent to <code>p1.__add__(p2)</code>, but obviously more elegant. As an exercise, add a method <code>__sub__(self, other)</code> that overloads the subtraction operator, and try it out. There are several ways to override the behavior of the multiplication operator: by defining a method named <code>__mul__</code>, or <code>__rmul__</code>, or both.</p>
+<p>If the left operand of <code>*</code> is a <code>Point</code>, Python invokes <code>__mul__</code>, which assumes that the other operand is also a <code>Point</code>. It computes the <strong>dot product</strong> of the two points, defined according to the rules of linear algebra:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb68-1" title="1"><span class="kw">def</span> <span class="fu">__mul__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb68-2" title="2">    <span class="cf">return</span> <span class="va">self</span>.x <span class="op">*</span> other.x <span class="op">+</span> <span class="va">self</span>.y <span class="op">*</span> other.y</a></code></pre></div>
+<p>If the left operand of <code>*</code> is a primitive type and the right operand is a <code>Point</code>, Python invokes <code>__rmul__</code>, which performs <strong>scalar multiplication</strong>:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb69-1" title="1"><span class="kw">def</span> <span class="fu">__rmul__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb69-2" title="2">    <span class="cf">return</span> Point(other <span class="op">*</span> <span class="va">self</span>.x,  other <span class="op">*</span> <span class="va">self</span>.y)</a></code></pre></div>
+<p>The result is a new <code>Point</code> whose coordinates are a multiple of the original coordinates. If <code>other</code> is a type that cannot be multiplied by a floating-point number, then <code>__rmul__</code> will yield an error.</p>
+<p>This example demonstrates both kinds of multiplication:</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb70-1" title="1"><span class="op">&gt;&gt;&gt;</span> p1 <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb70-2" title="2"><span class="op">&gt;&gt;&gt;</span> p2 <span class="op">=</span> Point(<span class="dv">5</span>, <span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb70-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(p1 <span class="op">*</span> p2)</a>
+<a class="sourceLine" id="cb70-4" title="4"><span class="dv">43</span></a>
+<a class="sourceLine" id="cb70-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="dv">2</span> <span class="op">*</span> p2)</a>
+<a class="sourceLine" id="cb70-6" title="6">(<span class="dv">10</span>, <span class="dv">14</span>)</a></code></pre></div>
+<p>What happens if we try to evaluate <code>p2 * 2</code>? Since the first parameter is a <code>Point</code>, Python invokes <code>__mul__</code> with <code>2</code> as the second argument. Inside <code>__mul__</code>, the program tries to access the <code>x</code> coordinate of <code>other</code>, which fails because an integer has no attributes:</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb71-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(p2 <span class="op">*</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb71-2" title="2"><span class="pp">AttributeError</span>: <span class="st">&#39;int&#39;</span> <span class="bu">object</span> has no attribute <span class="st">&#39;x&#39;</span></a></code></pre></div>
+<p>Unfortunately, the error message is a bit opaque. This example demonstrates some of the difficulties of object-oriented programming. Sometimes it is hard enough just to figure out what code is running.</p>
+<p>For a more complete example of operator overloading, see Appendix (reference overloading).</p>
+<h3 id="polymorphism">7.16. Polymorphism</h3>
+<p>Most of the methods we have written only work for a specific type. When you create a new object, you write methods that operate on that type.</p>
+<p>But there are certain operations that you will want to apply to many types, such as the arithmetic operations in the previous sections. If many types support the same set of operations, you can write functions that work on any of those types.</p>
+<p>For example, the <code>multadd</code> operation (which is common in linear algebra) takes three parameters; it multiplies the first two and then adds the third. We can write it in Python like this:</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb72-1" title="1"><span class="kw">def</span> multadd(x, y, z):</a>
+<a class="sourceLine" id="cb72-2" title="2">    <span class="cf">return</span> x <span class="op">*</span> y <span class="op">+</span> z</a></code></pre></div>
+<p>This method will work for any values of <code>x</code> and <code>y</code> that can be multiplied and for any value of <code>z</code> that can be added to the product.</p>
+<p>We can invoke it with numeric values:</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb73-1" title="1"><span class="op">&gt;&gt;&gt;</span> multadd(<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb73-2" title="2"><span class="dv">7</span></a></code></pre></div>
+<p>Or with <code>Point</code>s:</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb74-1" title="1"><span class="op">&gt;&gt;&gt;</span> p1 <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb74-2" title="2"><span class="op">&gt;&gt;&gt;</span> p2 <span class="op">=</span> Point(<span class="dv">5</span>, <span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb74-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(multadd(<span class="dv">2</span>, p1, p2))</a>
+<a class="sourceLine" id="cb74-4" title="4">(<span class="dv">11</span>, <span class="dv">15</span>)</a>
+<a class="sourceLine" id="cb74-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(multadd(p1, p2, <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb74-6" title="6"><span class="dv">44</span></a></code></pre></div>
+<p>In the first case, the <code>Point</code> is multiplied by a scalar and then added to another <code>Point</code>. In the second case, the dot product yields a numeric value, so the third parameter also has to be a numeric value.</p>
+<p>A function like this that can take parameters with different types is called <strong>polymorphic</strong>.</p>
+<p>As another example, consider the method <code>front_and_back</code>, which prints a list twice, forward and backward:</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb75-1" title="1"><span class="kw">def</span> front_and_back(front):</a>
+<a class="sourceLine" id="cb75-2" title="2">    <span class="im">import</span> copy</a>
+<a class="sourceLine" id="cb75-3" title="3">    back <span class="op">=</span> copy.copy(front)</a>
+<a class="sourceLine" id="cb75-4" title="4">    back.reverse()</a>
+<a class="sourceLine" id="cb75-5" title="5">    <span class="bu">print</span>(<span class="bu">str</span>(front) <span class="op">+</span> <span class="bu">str</span>(back))</a></code></pre></div>
+<p>Because the <code>reverse</code> method is a modifier, we make a copy of the list before reversing it. That way, this method doesn’t modify the list it gets as a parameter.</p>
+<p>Here’s an example that applies <code>front_and_back</code> to a list:</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb76-1" title="1"><span class="op">&gt;&gt;&gt;</span>   myList <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</a>
+<a class="sourceLine" id="cb76-2" title="2"><span class="op">&gt;&gt;&gt;</span>   front_and_back(myList)</a>
+<a class="sourceLine" id="cb76-3" title="3">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>][<span class="dv">4</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>]</a></code></pre></div>
+<p>Of course, we intended to apply this function to lists, so it is not surprising that it works. What would be surprising is if we could apply it to a <code>Point</code>.</p>
+<p>To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: <em>If all of the operations inside the function can be applied to the type, the function can be applied to the type.</em> The operations in the method include <code>copy</code>, <code>reverse</code>, and <code>print</code>.</p>
+<p><code>copy</code> works on any object, and we have already written a <code>__str__</code> method for <code>Point</code>s, so all we need is a <code>reverse</code> method in the <code>Point</code> class:</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb77-1" title="1"><span class="kw">def</span> reverse(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb77-2" title="2">    <span class="va">self</span>.x , <span class="va">self</span>.y <span class="op">=</span> <span class="va">self</span>.y, <span class="va">self</span>.x</a></code></pre></div>
+<p>Then we can pass <code>Point</code>s to <code>front_and_back</code>:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb78-1" title="1"><span class="op">&gt;&gt;&gt;</span>   p <span class="op">=</span> Point(<span class="dv">3</span>, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb78-2" title="2"><span class="op">&gt;&gt;&gt;</span>   front_and_back(p)</a>
+<a class="sourceLine" id="cb78-3" title="3">(<span class="dv">3</span>, <span class="dv">4</span>)(<span class="dv">4</span>, <span class="dv">3</span>)</a></code></pre></div>
+<p>The best kind of polymorphism is the unintentional kind, where you discover that a function you have already written can be applied to a type for which you never planned.</p>
+<h3 id="glossary">7.17. Glossary</h3>
+<p>class</p>
+<p>A user-defined compound type. A class can also be thought of as a template for the objects that are instances of it.instantiate</p>
+<p>To create an instance of a class.instance</p>
+<p>An object that belongs to a class.object</p>
+<p>A compound data type that is often used to model a thing or concept in the real world.attribute</p>
+<p>One of the named data items that makes up an instance.pure function</p>
+<p>A function that does not modify any of the objects it receives as parameters. Most pure functions are fruitful.modifier</p>
+<p>A function that changes one or more of the objects it receives as parameters. Most modifiers are void.functional programming style</p>
+<p>A style of program design in which the majority of functions are pure.prototype development</p>
+<p>A way of developing programs starting with a prototype and gradually testing and improving it.planned development</p>
+<p>A way of developing programs that involves high-level insight into the problem and more planning than incremental development or prototype development.object-oriented language</p>
+<p>A language that provides features, such as user-defined classes and inheritance, that facilitate object-oriented programming.object-oriented programming</p>
+<p>A style of programming in which data and the operations that manipulate it are organized into classes and methods.method</p>
+<p>A function that is defined inside a class definition and is invoked on instances of that class. :override:: To replace a default. Examples include replacing a default parameter with a particular argument and replacing a default method by providing a new method with the same name.initialization method</p>
+<p>A special method that is invoked automatically when a new object is created and that initializes the object’s attributes.operator overloading</p>
+<p>Extending built-in operators ( <code>+</code>, <code>-</code>, <code>*</code>, <code>&gt;</code>, <code>&lt;</code>, etc.) so that they work with user-defined types.dot product</p>
+<p>An operation defined in linear algebra that multiplies two <code>Point</code>s and yields a numeric value.scalar multiplication</p>
+<p>An operation defined in linear algebra that multiplies each of the coordinates of a <code>Point</code> by a numeric value.polymorphic</p>
+<p>A function that can operate on more than one type. If all the operations in a function can be applied to a type, then the function can be applied to a type.</p>
+</body>
+</html>

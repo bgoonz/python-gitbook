@@ -1,4 +1,5 @@
-# Merge Sort
+Merge Sort
+==========
 
 ### What is Merge Sort?
 
@@ -8,15 +9,15 @@ Most implementations produce a stable sort, which means that the order of equal 
 
 It is a divide and conquers algorithm. In the divide and conquer paradigm, a problem is broken into pieces where each piece still retains all the properties of the larger problem – except its size.
 
-#### [Advantages ](https://en.wikipedia.org/wiki/Merge_sort)of Merge Sort
+#### [Advantages](https://en.wikipedia.org/wiki/Merge_sort)of Merge Sort
 
-1. [Simple implementation](https://codezup.com//insertion-sort-implementation-example-in-python/).
+1.  [Simple implementation](https://codezup.com//insertion-sort-implementation-example-in-python/).
 
-2. Much More Efficient for small and large data sets.
+2.  Much More Efficient for small and large data sets.
 
-3. Adaptive that is efficient for the type of data sets that are already substantially sorted.
+3.  Adaptive that is efficient for the type of data sets that are already substantially sorted.
 
-4. Stable Sorting Algorithm
+4.  Stable Sorting Algorithm
 
 #### Define Merge Sorting Function
 
@@ -34,43 +35,39 @@ Otherwise, just divide the array into two equal halves and pass both arrays to r
 
 And at last, we are going to call merge function after each recursive call to join both sorted array.
 
-```python
-def mergeSort(x):
-    if len(x) == 0 or len(x) == 1:
-        return x
-    else:
-        middle = len(x)//2
-        a = mergeSort(x[:middle])
-        b = mergeSort(x[middle:])
-        return merge(a,b)
-```
+    def mergeSort(x):
+        if len(x) == 0 or len(x) == 1:
+            return x
+        else:
+            middle = len(x)//2
+            a = mergeSort(x[:middle])
+            b = mergeSort(x[middle:])
+            return merge(a,b)
 
 #### Define Merge Function
 
 Now we are breaking the array until they are divided individually. So what we want is just join the arrays that we passed in a sorted way to this function and then returned the new array as a result.
 
-```python
-def merge(a,b):
-    c = []
-    while len(a) != 0 and len(b) != 0:
-        if a[0] < b[0]:
-            c.append(a[0])
-            a.remove(a[0])
+    def merge(a,b):
+        c = []
+        while len(a) != 0 and len(b) != 0:
+            if a[0] < b[0]:
+                c.append(a[0])
+                a.remove(a[0])
+            else:
+                c.append(b[0])
+                b.remove(b[0])
+        if len(a) == 0:
+            c += b
         else:
-            c.append(b[0])
-            b.remove(b[0])
-    if len(a) == 0:
-        c += b
-    else:
-        c += a
-    return c
-```
+            c += a
+        return c
 
 **Complexity**
 
-The overall time complexity of Merge is O\(nLogn\).
+The overall time complexity of Merge is O(nLogn).
 
-The space complexity of Merge-sort is O\(n\).
+The space complexity of Merge-sort is O(n).
 
 This means that this algorithm takes a lot of space and may slow down operations for large data sets.
 
@@ -80,52 +77,48 @@ Now, let’s create a main condition where we need to call the above function an
 
 So let’s manually defined the list which we want to pass as an argument to the function.
 
-```python
-if __name__ == '__main__':
-    List = [3, 4, 2, 6, 5, 7, 1, 9]
-    print('Sorted List : ',mergeSort(List))
-```
+    if __name__ == '__main__':
+        List = [3, 4, 2, 6, 5, 7, 1, 9]
+        print('Sorted List : ',mergeSort(List))
 
 **Source Code**
 
-```python
-
-def merge(a,b):
-    c = []
-    while len(a) != 0 and len(b) != 0:
-        if a[0] < b[0]:
-            c.append(a[0])
-            a.remove(a[0])
+    def merge(a,b):
+        c = []
+        while len(a) != 0 and len(b) != 0:
+            if a[0] < b[0]:
+                c.append(a[0])
+                a.remove(a[0])
+            else:
+                c.append(b[0])
+                b.remove(b[0])
+        if len(a) == 0:
+            c += b
         else:
-            c.append(b[0])
-            b.remove(b[0])
-    if len(a) == 0:
-        c += b
-    else:
-        c += a
-    return c
+            c += a
+        return c
 
-# Code for merge sort
+    # Code for merge sort
 
-def mergeSort(x):
-    if len(x) == 0 or len(x) == 1:
-        return x
-    else:
-        middle = len(x)//2
-        a = mergeSort(x[:middle])
-        b = mergeSort(x[middle:])
-        return merge(a,b)
+    def mergeSort(x):
+        if len(x) == 0 or len(x) == 1:
+            return x
+        else:
+            middle = len(x)//2
+            a = mergeSort(x[:middle])
+            b = mergeSort(x[middle:])
+            return merge(a,b)
 
-if __name__ == '__main__':
-    List = [3, 4, 2, 6, 5, 7, 1, 9]
-    print('Sorted List : ',mergeSort(List))
-```
+    if __name__ == '__main__':
+        List = [3, 4, 2, 6, 5, 7, 1, 9]
+        print('Sorted List : ',mergeSort(List))
 
 **Output**
 
 ![Merge Sort implementation example in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2020/01/Merge-Sort-implementation-example-in-Python-Output.png?resize=665%2C264&ssl=1)
 
-## JS Implementation:
+JS Implementation:
+------------------
 
 #### Merge sort divides an array into halves, calls itself for the two halves, and then merges the two halves.
 
@@ -157,15 +150,15 @@ if __name__ == '__main__':
 
 #### As both arguments returned something, the **merge** function actually gets called now. The **merge** function receives two arguments: left and right. In this case, left is 6, and right is 4. In the merge function, we declare 3 variables: a new empty array to which we will push the right values later on, the index on the left side, and the index on the right side.
 
-#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns true: the length of both arrays is 1, and the index is 0. \(**0 &lt; 1 && 0 &lt; 1**\). The if-statement, **left\[leftIndex\] &lt; right\[rightIndex\],** returns false:
+#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns true: the length of both arrays is 1, and the index is 0. (**0 &lt; 1 && 0 &lt; 1**). The if-statement, **left\[leftIndex\] &lt; right\[rightIndex\],** returns false:
 
 #### **left** is **\[6\]**, so **left\[0\]** is **6**, and **right** is **\[4\]**, so **right\[0\]** is **4**! This means that the else-block gets run, and we push right\[0\] to the results array. The results array is now \[4\]. We also increment the **rightIndex** from 0 to 1. This means that now,
 
-#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned. This means that the **mergeSort\(left\)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort\(right\).**
+#### **leftIndex &lt; left.length && rightIndex &lt; right.length** returns false, because **0 &lt; 1 && 1 &lt; 1** is not true. The two arrays get concatenated, and returned. This means that the **mergeSort(left)** in the **merge** function we invoked first, finally returned. The exact same logic now applies to **mergeSort(right).**
 
 ![Screen Shot 2018-12-22 at 17.44.10.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497080696-2DFK2SPSB6XRLSTD5UOX/Screen+Shot+2018-12-22+at+17.44.10.png?format=300w)
 
-#### Right now, **mergeSort\(left\)** and **mergeSort\(right\)** have returned from the very first merge call! **left** is **\[4,6\]** and **\[1, 5\]** is **right.**
+#### Right now, **mergeSort(left)** and **mergeSort(right)** have returned from the very first merge call! **left** is **\[4,6\]** and **\[1, 5\]** is **right.**
 
 ![Screen Shot 2018-12-22 at 17.50.35.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497554635-ATKE1MDEVLDOOIUZYQZK/Screen+Shot+2018-12-22+at+17.50.35.png?format=300w)![Screen Shot 2018-12-22 at 17.52.12.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497564298-7DWJ6O5VR3BULDD7GKNY/Screen+Shot+2018-12-22+at+17.52.12.png?format=300w)
 
@@ -175,7 +168,7 @@ if __name__ == '__main__':
 
 #### As the **rightIndex** gets incremented by one, **right\[1\]** is now 5. **4 &lt; 5** returns true, so **left\[leftIndex\]** gets pushed to the **results** array.
 
-####
+#### 
 
 ![](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497669811-HRRJS0W6SMFPCCOE053V/image-asset.png?format=300w)
 
@@ -187,6 +180,6 @@ if __name__ == '__main__':
 
 ![Screen Shot 2018-12-24 at 14.52.48.png](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545659604186-QAY63QJ8S5XAHXO7APIJ/Screen+Shot+2018-12-24+at+14.52.48.png?format=750w)
 
-#### **Best**, **average and worst**: Each partitioning takes **O\(n\)** operations, and every partitioning splits the array **O\(log\(n\)\)**. This results in **O\(n log\(n\)\)**.
+#### **Best**, **average and worst**: Each partitioning takes **O(n)** operations, and every partitioning splits the array **O(log(n))**. This results in **O(n log(n))**.
 
 #### **Worst space**: We save three variables for each element in the array.

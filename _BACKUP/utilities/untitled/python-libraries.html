@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>python-libraries</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="python-libraries">Python Libraries</h1>
+<h2 id="the-standard-library">The Standard Library</h2>
+<p>The libraries that tend to get all the attention are the ones heavily used for operating-system interaction, like <a href="http://bit.ly/py-sys"><code>sys</code></a>, <a href="http://bit.ly/py-os"><code>os</code></a>, <a href="http://bit.ly/py-os"><code>shutil</code></a>, and to a slightly lesser extent, <a href="http://bit.ly/py-glob"><code>glob</code></a>. This is understandable because most Python applications deal with input processing; however, the Python standard library is very rich and includes a bunch of additional functionality that many Python programmers take too long to discover. In this chapter we will mention a few libraries that every Python programmer should know very well.</p>
+<h3 id="collections">collections</h3>
+<p>First up we have the <code>collections</code> module. If you’ve been working with Python for any length of time, it is very likely that you have made use of the this module; however, the batteries contained within are so important that we’ll go over them anyway, <em>just in case</em>.</p>
+<h4 id="collections.ordereddict">collections.OrderedDict</h4>
+<p><code>collections.OrderedDict</code> gives you a <code>dict</code> that will preserve the order in which items are added to it; note that this is <em>not</em> the same as a sorted order.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608">1</a></p>
+<p>The need for an <em>ordered</em> <code>dict</code> comes up surprisingly often. A common example is processing lines in a file where the lines (or something within them) maps to other data. A mapping is the right solution, and you often need to produce results in the same order in which the input data appeared. Here is a simple example of how the ordering changes with a normal <code>dict</code>:</p>
+<pre class="text"><code>&gt;&gt;&gt; dict(zip(ascii_lowercase, range(4)))
+{&#39;a&#39;: 0, &#39;b&#39;: 1, &#39;c&#39;: 2, &#39;d&#39;: 3}
+
+&gt;&gt;&gt; dict(zip(ascii_lowercase, range(5)))
+{&#39;a&#39;: 0, &#39;b&#39;: 1, &#39;c&#39;: 2, &#39;d&#39;: 3, &#39;e&#39;: 4}
+
+&gt;&gt;&gt; dict(zip(ascii_lowercase, range(6)))
+{&#39;a&#39;: 0, &#39;b&#39;: 1, &#39;c&#39;: 2, &#39;d&#39;: 3, &#39;f&#39;: 5, &#39;e&#39;: 4}
+
+&gt;&gt;&gt; dict(zip(ascii_lowercase, range(7)))
+{&#39;a&#39;: 0, &#39;b&#39;: 1, &#39;c&#39;: 2, &#39;d&#39;: 3, &#39;g&#39;: 6, &#39;f&#39;: 5, &#39;e&#39;: 4}</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO1-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>See how the key “<code>f</code>” now appears before the “<code>e</code>” key in the sequence of keys? They no longer appear in the order of insertion, due to how the <code>dict</code> internals manage the assignment of hash entries.</p>
+<p>The <code>OrderedDict</code>, however, retains the order in which items are inserted:</p>
+<pre class="text"><code>&gt;&gt;&gt; from collections import OrderedDict
+
+&gt;&gt;&gt; OrderedDict(zip(ascii_lowercase, range(5)))
+OrderedDict([(&#39;a&#39;, 0), (&#39;b&#39;, 1), (&#39;c&#39;, 2), (&#39;d&#39;, 3),
+(&#39;e&#39;, 4)])
+
+&gt;&gt;&gt; OrderedDict(zip(ascii_lowercase, range(6)))
+OrderedDict([(&#39;a&#39;, 0), (&#39;b&#39;, 1), (&#39;c&#39;, 2), (&#39;d&#39;, 3),
+(&#39;e&#39;, 4), (&#39;f&#39;, 5)])
+
+&gt;&gt;&gt; OrderedDict(zip(ascii_lowercase, range(7)))
+OrderedDict([(&#39;a&#39;, 0), (&#39;b&#39;, 1), (&#39;c&#39;, 2), (&#39;d&#39;, 3),
+(&#39;e&#39;, 4), (&#39;f&#39;, 5), (&#39;g&#39;, 6)])</code></pre>
+<h2 id="ordereddict-beware-creation-with-keyword-arguments">ORDEREDDICT: BEWARE CREATION WITH KEYWORD ARGUMENTS</h2>
+<p>There is an unfortunate catch with <code>OrderedDict</code> you need to be aware of: it doesn’t work when you <em>create</em> the <code>OrderedDict</code> with keyword arguments, a very common Python idiom:</p>
+<pre class="text"><code>&gt;&gt;&gt; collections.OrderedDict(a=1,b=2,c=3)
+OrderedDict([(&#39;b&#39;, 2), (&#39;a&#39;, 1), (&#39;c&#39;, 3)])</code></pre>
+<p>This seems like a bug, but as explained in the documentation, it happens because the keyword arguments are first processed as a <em>normal</em> <code>dict</code> before they are passed on to the <code>OrderedDict</code>.</p>
+<h4 id="collections.defaultdict">collections.defaultdict</h4>
+<p><code>collections.defaultdict</code> is another special-case dictionary: it allows you to specify a default value for all new keys.</p>
+<p>Here’s a common example:</p>
+<pre class="text"><code>&gt;&gt;&gt; d = collections.defaultdict(list)
+&gt;&gt;&gt; d[&#39;a&#39;]
+[]</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO2-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>You didn’t create this item yet? No problem! Key lookups automatically create <em>values</em> using the function provided when creating the <code>defaultdict</code> instance.</p>
+<p>By setting up the default value as the <code>list</code> constructor in the preceding example, you can avoid wordy code that looks like this:</p>
+<pre class="text"><code>d = {}
+for k in keydata:
+    if not k in d:
+            d[k] = []
+    d[k].append(...)</code></pre>
+<p>The <code>setdefault()</code> method of a <code>dict</code> can be used in a somewhat similar way to initialize items with defaults, but <code>defaultdict</code> generally results in clearer code.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737068560688">2</a></p>
+<p>In the preceding examples, we’re saying that every new element, by default, will be an empty list. If, instead, you wanted every new element to contain a dictionary, you might say <code>defaultdict(dict)</code>.</p>
+<h4 id="collections.namedtuple">collections.namedtuple</h4>
+<p>The next tool, <code>collections.namedtuple</code>, is magic in a bottle! Instead of working with this:</p>
+<pre class="text"><code>tup = (1, True, &quot;red&quot;)</code></pre>
+<p>You get to work with this:</p>
+<pre class="text"><code>&gt;&gt;&gt; from collections import namedtuple
+&gt;&gt;&gt; A = namedtuple(&#39;A&#39;, &#39;count enabled color&#39;)
+&gt;&gt;&gt; tup = A(count=1, enabled=True, color=&quot;red&quot;)
+&gt;&gt;&gt; tup.count
+1
+&gt;&gt;&gt; tup.enabled
+True
+&gt;&gt;&gt; tup.color
+&quot;red&quot;
+&gt;&gt;&gt; tup
+A(count=1, enabled=True, color=&#39;red&#39;)</code></pre>
+<p>The best thing about <code>namedtuple</code> is that you can add it to existing code and use it to progressively replace tuples: it can appear anywhere a tuple is currently being used, without breaking existing code, and without using any extra resources beyond what plain tuples require. Using <code>namedtuple</code> incurs no extra runtime cost, and can make code much easier to read. The most common situation where a <code>namedtuple</code> is recommended is when a function returns multiple results, which are then unpacked into a tuple. Let’s look at an example of code that uses plain tuples, to see why such code can be problematic:</p>
+<pre class="text"><code>&gt;&gt;&gt; def f():
+...    return 2, False, &quot;blue&quot;
+&gt;&gt;&gt; count, enabled, color = f()
+
+&gt;&gt;&gt; tup = f()
+&gt;&gt;&gt; enabled = tup[1]</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO3-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Simple function returning a tuple.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO3-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>When the function is evaluated, the results are unpacked into separate names.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO3-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>Worse, the caller might access values inside the returned tuple <em>by index</em>.</p>
+<p>The problem with this approach is that this code is fragile to future changes. If the function changes (perhaps by changing the order of the returned items, or adding more items), the unpacking of the returned value will be incorrect. Instead, you can modify <em>existing</em> code to return a <code>namedtuple</code> instance:</p>
+<pre class="text"><code>&gt;&gt;&gt; def f():
+...    # Return a namedtuple!
+...    return A(2, False, &quot;blue&quot;)
+
+&gt;&gt;&gt; count, enabled, color = f()</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO4-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Even though our function now returns a <code>namedtuple</code>, the same calling code stills works.</p>
+<p>You now also have the option of working with the returned <code>namedtuple</code> in the calling code:</p>
+<pre class="text"><code>&gt;&gt;&gt; tup = f()
+&gt;&gt;&gt; print(tup.count)
+2</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO5-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Being able to use <em>attributes</em> to access data inside the tuple is much safer rather than relying on indexing alone; if future changes in the code added new fields to the <code>namedtuple</code>, the <code>tup.count</code> would continue to work.</p>
+<p>The <code>collections</code> module has a few other tricks up its sleeve, and your time is well spent brushing up on the <a href="http://bit.ly/coll-docs">documentation</a>. In addition to the classes shown here, there is also a <code>Counter</code> class for easily counting occurrences, a <em>list-like</em> container for efficiently appending and removing items from either end (<code>deque</code>), and several helper classes to make subclassing lists, dicts, and strings easier.</p>
+<h3 id="contextlib">contextlib</h3>
+<p>A context manager is what you use with the <code>with</code> statement. A very common idiom in Python for working with file data demonstrates the context manager:</p>
+<pre class="text"><code>with open(&#39;data.txt&#39;, &#39;r&#39;) as f:
+    data = f.read()</code></pre>
+<p>This is good syntax because it simplifies the <em>cleanup</em> step where the file handle is closed. Using the context manager means that you don’t have to remember to do <code>f.close()</code> yourself: this will happen automatically when the <code>with</code> block exits.</p>
+<p>You can use the <code>contextmanager</code> decorator from the <code>contextlib</code> library to benefit from this language feature in your own nefarious schemes. Here’s a creative demonstration where we create a new context manager to print out performance (timing) data.</p>
+<p>This might be useful for quickly testing the time cost of code snippets, as shown in the following example. The numbered notes are intentionally not in numerical order in the code. Follow the notes in numerical order as shown following the code snippet.</p>
+<pre class="text"><code>from time import perf_counter
+from array import array
+from contextlib import contextmanager
+
+@contextmanager
+def timing(label: str):
+    t0 = perf_counter()
+    yield lambda: (label, t1 - t0)
+    t1 = perf_counter()
+
+with timing(&#39;Array tests&#39;) as total:
+    with timing(&#39;Array creation innermul&#39;) as inner:
+        x = array(&#39;d&#39;, [0] * 1000000)
+
+    with timing(&#39;Array creation outermul&#39;) as outer:
+        x = array(&#39;d&#39;, [0]) * 1000000
+
+
+print(&#39;Total [%s]: %.6f s&#39; % total())
+print(&#39;    Timing [%s]: %.6f s&#39; % inner())
+print(&#39;    Timing [%s]: %.6f s&#39; % outer())</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-6"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The <code>array</code> module in the standard library has an unusual approach to initialization: you pass it an existing sequence, such as a large list, and it converts the data into the datatype of your array if possible; however, you <em>can</em> also create an array from a short sequence, after which you expand it to its full size. Have you ever wondered which is faster? In a moment, we’ll create a <em>timing</em> context manager to measure this and know for sure<embed src="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-1" /></p>
+<p>The key step you need to do to make your own context manager is to use the <code>@contextmanager</code> decorator.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>The section before the <code>yield</code> is where you can write code that must execute before the <em>body</em> of your context manager will run. Here we record the timestamp <em>before</em> the body will run.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>The <code>yield</code> is where execution is transferred to the body of your context manager; in our case, this is where our arrays get created. You can also return data: here I return a closure that will calculate the elapsed time when called. It’s a little <em>clever</em> but hopefully not excessively so: the <em>final time</em> <code>t1</code> is captured within the closure even though it will only be determined on the next line.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>After the <code>yield</code>, we write the code that will be executed when the context manager finishes. For scenarios like file handling, this would be where you close them. In this example, this is where we record the final time <code>t1</code>.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-7"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png" alt="6" /></a></p>
+<p>Here we try the alternative array-creation strategy: first, create the array and then increase size.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/7.png" alt="7" /></a></p>
+<p>For fun, we’ll use our awesome, new context manager to also measure the total time.</p>
+<p>On my computer, this code produces this output:</p>
+<pre class="text"><code>Total [Array tests]: 0.064896 s
+    Timing [Array creation innermul]: 0.064195 s
+    Timing [Array creation outermul]: 0.000659 s</code></pre>
+<p>Quite surprisingly, the <em>second</em> method of producing a large array is around 100 times faster than the first. This means that it is <em>much</em> more efficient to create a small array, and then expand it, rather than to create an array entirely from a large list.</p>
+<p>The point of this example is not to show the best way to create an array: rather, it is that the <code>contextmanager</code> decorator makes it exceptionally easy to create your own context manager, and context managers are a great way of providing a clean and safe means of managing before-and-after coding tasks.</p>
+<h3 id="concurrent.futures">concurrent.futures</h3>
+<p>The <a href="http://bit.ly/conc-fut"><code>concurrent.futures</code></a> module that was introduced in Python 3 provides a convenient way to manage pools of workers. If you have previously used the threading module in the Python standard library, you will have seen code like this before:</p>
+<pre class="text"><code>import threading
+
+def work():
+    return sum(x for x in range(1000000))
+
+thread = threading.Thread(target=work)
+thread.start()
+thread.join()</code></pre>
+<p>This code is very clean with only one thread, but with many threads it can become quite tricky to deal with sharing work between them. Also, in this example the result of the <code>sum</code> is not obtained from the work function, simply to avoid all the extra code that would be required to do so. There are various techniques for obtaining the result of a work function, such as passing a queue to the function, or subclassing <code>threading.Thread</code>, but we’re not going discuss them any further, because the <a href="http://bit.ly/multipr-py">multiprocessing</a> package provides a better method for using pools, and the <code>concurrent.futures</code> module goes even further to simplify the interface. And, similar to multiprocessing, both thread-based pools and process-based pools have the same interface making it easy to switch between either thread-based or process-based approaches.</p>
+<p>Here we have a trivial example using the <code>ThreadPoolExecutor</code>. We download the landing page of a plethora of popular social media sites, and, to keep the example simple, we print out the size of each. Note that in the results, we show only the first four to keep the output short.</p>
+<pre class="text"><code>from concurrent.futures import ThreadPoolExecutor as Executor
+
+urls = &quot;&quot;&quot;google twitter facebook youtube pinterest tumblr
+instagram reddit flickr meetup classmates microsoft apple
+linkedin xing renren disqus snapchat twoo whatsapp&quot;&quot;&quot;.split()
+
+def fetch(url):
+    from urllib import request, error
+    try:
+        data = request.urlopen(url).read()
+        return &#39;{}: length {}&#39;.format(url, len(data))
+    except error.HTTPError as e:
+        return &#39;{}: {}&#39;.format(url, e)
+
+with Executor(max_workers=4) as exe:
+    template = &#39;http://www.{}.com&#39;
+    jobs = [exe.submit(
+        fetch, template.format(u)) for u in urls]
+    results = [job.result() for job in jobs]
+
+print(&#39;\n&#39;.join(results))</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Our work function, <code>fetch()</code>, simply downloads the given URL.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>Yes, it <em>is</em> rather odd nowadays to see <code>urllib</code> because the fantastic third-party library <a href="http://bit.ly/py-reqs">requests</a> is a great choice for all your web-access needs. However, <code>urllib</code> still exists and depending on your needs, may allow you to avoid an external dependency.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>We create a <code>ThreadPoolExecutor</code> instance, and here you can specify how many workers are required.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p><em>Jobs</em> are created, one for every URL in our considerable list. The <em>executor</em> manages the delivery of jobs to the four threads.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>This is a simple way of waiting for all the threads to return.</p>
+<p>This produces the following output (I’ve shortened the number of results for brevity):</p>
+<pre class="text"><code>http://www.google.com: length 10560
+http://www.twitter.com: length 268924
+http://www.facebook.com: length 56667
+http://www.youtube.com: length 437754
+[snip]</code></pre>
+<p>Even though one job is created for every URL, we limit the number of active threads to only four using <code>max_workers</code> and the results are all captured in the results list as they become available. If you wanted to use processes instead of threads, all that needs to change is the first line, from this:</p>
+<pre class="text"><code>from concurrent.futures import ThreadPoolExecutor as Executor</code></pre>
+<p>To this:</p>
+<pre class="text"><code>from concurrent.futures import ProcessPoolExecutor as Executor</code></pre>
+<p>Of course, for this kind of application, which is limited by network latency, a thread-based pool is fine. It is with CPU-bound tasks that Python threads are problematic because of how thread safety has been in implemented inside the CPython<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067445472">3</a> runtime interpreter, and in these situations it is best to use a process-based pool instead.</p>
+<p>The primary problem with using processes for parallelism is that each process is confined to its own memory space, which makes it difficult for multiple workers to chew on the same large chunk of data. There are ways to get around this, but in such situations threads provide a much simpler programming model. However, as we shall see in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#cython">“Cython”</a>, there is a third-party package called Cython that makes it very easy to circumvent this problem with threads.</p>
+<h3 id="logging">logging</h3>
+<p>The <code>logging</code> module is very well known in the web development community, but is far less used in other domains, such as the scientific one; this is unfortunate, because even for general use, the logging module is far superior to the <code>print()</code> function. It doesn’t seem that way at first, because the <code>print()</code> function is so simple; however, once you initialize <code>logging</code>, it can look very similar. For instance, compare these two:</p>
+<pre class="text"><code>print(&#39;This is output to the console&#39;)
+
+logger.debug(&#39;This is output to the console&#39;)</code></pre>
+<p>The huge advantage of the latter is that, with a single change to a setting on the logger instance, you can either show or hide all your debugging messages. This means you no longer have to go through the process of commenting and uncommenting your <code>print()</code> statements in order to show or hide them. <code>logging</code> also gives you a few different <em>levels</em> so that you can adjust the verbosity of output in your programs. Here’s an example of different levels:</p>
+<pre class="text"><code>logger.debug(&#39;This is for debugging. Very talkative!&#39;)
+logger.info(&#39;This is for normal chatter&#39;)
+logger.warning(&#39;Warnings should almost always be seen.&#39;)
+logger.error(&#39;You definitely want to see all errors!&#39;)
+logger.critical(&#39;Last message before a program crash!&#39;)</code></pre>
+<p>Another really neat trick is that when you use logging, writing messages during exception handling is a whole lot easier. You don’t have to deal with <code>sys.exc_info()</code> and the <code>traceback</code> module merely for printing out the exception message with a traceback. You can do this instead:</p>
+<pre class="text"><code>try:
+    1/0
+except:
+    logger.exception(&quot;Something failed:&quot;)</code></pre>
+<p>Just those four lines produces a full traceback in the output:</p>
+<pre class="text"><code>ERROR:root:Something failed:
+Traceback (most recent call last):
+  File &quot;logtb.py&quot;, line 5, in &lt;module&gt;
+    1/0
+ZeroDivisionError: division by zero</code></pre>
+<p>Earlier I said that logging requires some setup. The documentation for the <code>logging</code> module is extensive and might seem overwhelming; here is a quick recipe to get you started:</p>
+<pre class="text"><code># Top of the file
+import logging
+logger = logging.getLogger()
+
+# All your normal code goes here
+def blah():
+    return &#39;blah&#39;
+
+# Bottom of the file
+if __name__ == &#39;__main__&#39;:
+    logging.basicConfig(level=logging.DEBUG)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO8-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Without arguments, the <code>getLogger()</code> function returns the <em>root</em> logger, but it’s more common to create a <em>named</em> logger. If you’re just starting out, exploring with the root logger is fine.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO8-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>You need to call a <code>config</code> method; otherwise, calls to the logger will not log anything. The config step is necessary.</p>
+<p>In the preceding <code>basicConfig()</code> line, by changing only <code>logging.DEBUG</code> to, say, <code>logging.WARNING</code>, you can affect which messages get processed and which don’t.</p>
+<p>Finally, there’s a neat trick you can use for easily changing the logging level on the command line. Python scripts that are directly executable usually have the startup code in a conditional block beginning with <code>if __name__ == '__main__'</code>. This is where <em>command-line parameters</em> are handled, e.g., using the <code>argparse</code> library in the Python standard library. We can create command-line arguments specifically for the logging level:</p>
+<pre class="text"><code># Bottom of the file
+if __name__ == &#39;__main__&#39;:
+    from argparse import ArgumentParser
+    parser = ArgumentParser(description=&#39;My app which is mine&#39;)
+    parser.add_argument(&#39;-ll&#39;, &#39;--loglevel&#39;,
+        type=str,
+        choices=[&#39;DEBUG&#39;,&#39;INFO&#39;,&#39;WARNING&#39;,&#39;ERROR&#39;,&#39;CRITICAL&#39;],
+        help=&#39;Set the logging level&#39;)
+    args = parser.parseargs()
+    logging.basicConfig(level=args.loglevel)</code></pre>
+<p>With this setup, if you call your program with</p>
+<pre class="text"><code>$ python main.py -ll DEBUG</code></pre>
+<p>it will run with the logging level set to <code>DEBUG</code> (so all logger messages will be shown), whereas if you run it with</p>
+<pre class="text"><code>$ python main.py -ll WARNING</code></pre>
+<p>it will run at the <code>WARNING</code> level for logging, so all <code>INFO</code> and <code>DEBUG</code> logger messages will be hidden.</p>
+<p>There are many more features packed into the <code>logging</code> module, but I hope I’ve convinced you to consider using it instead of using <code>print()</code> for your next program. There is much more information about the <code>logging</code> module online, both in the official Python documentation and elsewhere in blogs and tutorials. The goal here is only to convince you that the <code>logging</code> module is worth investigating, and getting started with it is easy to do.</p>
+<h3 id="sched">sched</h3>
+<p>There is increasing interest in the creation of bots<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067174608">4</a> and other monitoring and automation applications. For these applications, a common requirement is to perform actions at specified times or specified intervals. This functionality is provided by the <code>sched</code> module in the standard library. There are already similar tools provided by operating systems, such as <code>cron</code> on Linux and <em>Windows Task Scheduler</em>, but with Python’s own <code>sched</code> module you can ignore these platform differences, as well as incorporate scheduled tasks into a program that might have many other functions.</p>
+<p>The <a href="http://bit.ly/sched-docs">documentation</a> for sched is rather terse, but hopefully these examples will get you started. The easy way to begin is to schedule a function to be executed after a specified delay (this is a complete example to make sure you can run it successfully):</p>
+<pre class="text"><code>import sched
+import time
+from datetime import datetime, timedelta
+
+scheduler = sched.scheduler(timefunc=time.time)
+
+def saytime():
+    print(time.ctime())
+    scheduler.enter(10, priority=0, action=saytime)
+
+saytime()
+try:
+    scheduler.run(blocking=True)
+except KeyboardInterrupt:
+    print(&#39;Stopped.&#39;)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO9-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>A scheduler instance is created.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO9-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>A work function is declared, in our case <code>saytime()</code>, which simply prints out the current time.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO9-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>Note that we reschedule the function inside itself, with a ten-second delay.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO9-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>The scheduler is started with <code>run(blocking=True)</code>, and the execution point remains here until the program is terminated or Ctrl-C is pressed.</p>
+<p>There are a few annoying details about using <code>sched</code>: you have to pass <code>timefunc=time.time</code> as this isn’t set by default, and you have to supply a priority even when not required. However, overall, the <code>sched</code> module still provides a clean way to get <code>cron</code>-like behavior.</p>
+<p>Working with delays can be frustrating if what you <em>really</em> want is for a task to execute at specific times. In addition to <code>enter()</code>, a <code>sched</code> instance also provides the <code>enterabs()</code> method with which you can trigger an event at a specific time. We can use that method to trigger a function, say, every <em>whole</em> minute:</p>
+<pre class="text"><code>import sched
+import time
+from datetime import datetime, timedelta
+
+scheduler = sched.scheduler(timefunc=time.time)
+
+def reschedule():
+    new_target = datetime.now().replace(
+        second=0, microsecond=0)
+    new_target += timedelta(minutes=1)
+    scheduler.enterabs(
+        new_target.timestamp(), priority=0, action=saytime)
+
+def saytime():
+    print(time.ctime(), flush=True)
+    reschedule()
+
+reschedule()
+try:
+    scheduler.run(blocking=True)
+except KeyboardInterrupt:
+    print(&#39;Stopped.&#39;)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Create a <code>scheduler</code> instance, as before.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>Get <em>current time</em>, but strip off seconds and microseconds to obtain a whole minute.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>The target time is exactly one minute ahead of the current whole minute.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>The <code>enterabs()</code> method schedules the task.</p>
+<p>This code produces the following output:</p>
+<pre class="text"><code>Sat Jun 18 18:14:00 2016
+Sat Jun 18 18:15:00 2016
+Sat Jun 18 18:16:00 2016
+Sat Jun 18 18:17:00 2016
+Stopped.</code></pre>
+<p>With the growing interest in “Internet of Things” applications, the built-in <code>sched</code> library provides a convenient way to manage repetitive tasks. The <a href="http://bit.ly/sched-docs">documentation</a> provides further information about how to cancel future tasks.</p>
+<h2 id="in-the-wild">In the Wild</h2>
+<p>From here on we’ll look at some third-party Python libraries that you might not yet have discovered. There are thousands of excellent packages described at <a href="http://bit.ly/py-guide">the Python guide</a>.</p>
+<p>There are quite a few guides similar to this report that you can find online. There could be as many “favorite Python libraries” lists as there are Python developers, and so the selection presented here is necessarily subjective. I spent a lot of time finding and testing various third-party libraries in order to find these hidden gems.</p>
+<p>My selection criteria were that a library should be:</p>
+<ul>
+<li>easy to use</li>
+<li>easy to install</li>
+<li>cross-platform</li>
+<li>applicable to more than one domain</li>
+<li>not yet super-popular, but likely to become so</li>
+<li>the <em>X</em> factor</li>
+</ul>
+<p>The last two items in that list bear further explanation.</p>
+<p>Popularity is difficult to define exactly, since different libraries tend to get used to varying degrees within different Python communities. For instance, <a href="http://www.numpy.org/">Numpy</a> and <a href="http://www.scipy.org/">Scipy</a> are much more heavily used within the <em>scientific</em> Python community, while <a href="https://www.djangoproject.com/">Django</a> and <a href="http://flask.pocoo.org/">Flask</a> enjoy more attention in the web development community. Furthermore, the popularity of these libraries is such that everybody already knows about them. A candidate for this list <em>might</em> have been something like <a href="http://dask.pydata.org/en/latest">Dask</a>, which seems poised to become an eventual successor to Numpy, but in the medium term it is likely to be mostly applicable to the scientific community, thus failing my applicability test.</p>
+<p>The <em>X</em> factor means that really cool things are likely to be built with that Python library. Such a criterion is of course strongly subjective, but I hope, in making these selections, to inspire you to experiment and create something new!</p>
+<p>Each of the following chapters describes a library that met all the criteria on my list, and which I think you’ll find useful in your everyday Python activities, no matter your specialization.</p>
+<h2 id="easier-python-packaging-with-flit">Easier Python Packaging with flit</h2>
+<p><a href="http://bit.ly/flit-py">flit</a> is a tool that dramatically simplifies the process of submitting a Python package to the Python Package Index (PyPI). The <a href="http://bit.ly/pkg-py">traditional process</a> begins by creating a <code>setup.py</code> file; simply figuring out how to do that requires a considerable amount of work even to understand what to do. In contrast, flit will create its config file interactively, and for typical simple packages you’ll be ready to upload to PyPI almost immediately. Let’s have a look: consider this simple package structure:</p>
+<pre class="text"><code> $ tree
+.
+└── mypkg
+    ├── __init__.py
+    └── main.py</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO11-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The package’s <em>init</em> file is a great place to add package information like documentation, version numbers, and author information.</p>
+<p>After installing flit into your environment with <code>pip install flit</code>, you can run the interactive initializer, which will create your package configuration. It asks only five questions, most of which will have applicable defaults once you have made your first package with <code>flit</code>:</p>
+<pre class="text"><code> $ flit init
+Module name [mypkg]:
+Author [Caleb Hattingh]:
+Author email [caleb.hattingh@gmail.com]:
+Home page [https://github.com/cjrh/mypkg]:
+Choose a license
+ 1. MIT
+ 2. Apache
+ 3. GPL
+ 4. Skip - choose a license later
+Enter 1-4 [2]: 2
+Written flit.ini; edit that file to add optional extra info.</code></pre>
+<p>The final line tells you that a <em>flit.ini</em> file was created. Let’s have a look at that:</p>
+<pre class="text"><code> $ cat flit.ini
+// [metadata]
+module = mypkg
+author = Caleb Hattingh
+author-email = caleb.hattingh@gmail.com
+home-page = https://github.com/cjrh/mypkg
+classifiers = License :: OSI Approved :: Apache Software License</code></pre>
+<p>It’s pretty much what we specified in the interactive <code>flit init</code> sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the <em>mypkg/__init__.py _file at the top using triple quotes (<code>"""</code>). The second is that you must add a line for the version to the same file. Your finished</em> __init__.py_ file might look like this:</p>
+<pre class="text"><code># file: __init__.py
+&quot;&quot;&quot; This is the documentation for the package. &quot;&quot;&quot;
+
+__version__ = &#39;1.0.0&#39;</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO12-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>This documentation will be used as your package description on PyPI.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO12-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>Likewise, the version tag within your package will also be reused for PyPI when the package is uploaded. These automatic integrations help to simplify the packaging process. It might not seem like much is gained, but experience with Python packaging will show that too many steps (even when they’re simple), when combined, can lead to a complex packaging experience.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066652496">5</a></p>
+<p>After filling in the basic description and the version, you are ready to build a wheel and upload it to PyPI:</p>
+<pre class="text"><code>$ flit wheel --upload
+Copying package file(s) from mypkg
+Writing metadata files
+Writing the record of files
+Wheel built: dist/mypkg-1.0.0-py2.py3-none-any.whl
+Using repository at https://pypi.python.org/pypi
+Uploading dist/mypkg-1.0.0-py2.py3-none-any.whl...
+Starting new HTTPS connection (1): pypi.python.org
+Uploading forbidden; trying to register and upload again
+Starting new HTTPS connection (1): pypi.python.org
+Registered mypkg with PyPI
+Uploading dist/mypkg-1.0.0-py2.py3-none-any.whl...
+Starting new HTTPS connection (1): pypi.python.org
+Package is at https://pypi.python.org/pypi/mypkg</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO13-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Note that flit automatically registers your package if the initial upload fails.</p>
+<p>And that’s it! <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#flit_mypkg">Figure 1-1</a> shows our package on PyPI.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0401.png" alt="tply 0401" /></p>
+<p><strong>Figure 1-1. It’s alive! Our demo package on the PyPI.</strong></p>
+<p><code>flit</code> allows you to specify more options, but for simple packages what you see here can get you pretty far.</p>
+<h2 id="command-line-applications">Command-Line Applications</h2>
+<p>If you’ve spent any time whatsoever developing Python code, you will surely have used several command-line applications. Some command-line programs seem much friendlier than others, and in this chapter we show two fantastic libraries that will make it easy for you to offer the best experience for users of your own command-line applications. <code>colorama</code> allows you to use colors in your output, while <code>begins</code> makes it easy to provide a rich interface for specifying and processing command-line options.</p>
+<h3 id="colorama">colorama</h3>
+<p>Many of your desktop Python programs will only ever be used on the command line, so it makes sense to do whatever you can to improve the experience of your users as much as possible. The use of <em>color</em> can dramatically improve your user interface, and <code>colorama</code> makes it very easy to add splashes of color into your command-line applications.</p>
+<p>Let’s begin with a simple example.</p>
+<pre class="text"><code>from colorama import init, Fore, Back, Style
+init(autoreset=True)
+
+messages = [
+    &#39;blah blah blah&#39;,
+    (Fore.LIGHTYELLOW_EX + Style.BRIGHT
+        + BACK.MAGENTA + &#39;Alert!!!&#39;),
+    &#39;blah blah blah&#39;
+]
+
+for m in messages:
+    print(m)</code></pre>
+<p>Notice in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#colorama_first">Figure 1-2</a> how the important message jumps right out at you? There are other packages like <code>curses</code>, <code>blessings</code>, and <code>prompt-toolkit</code> that let you do a whole lot more with the terminal screen itself, but they also have a slightly steeper learning curve; with <code>colorama</code> the API is simple enough to be easy to remember.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0501.png" alt="tply 0501" /></p>
+<p><strong>Figure 1-2. Add color to your output messages with simple string concatenation.</strong></p>
+<p>The great thing about <code>colorama</code> is that it also works on Windows, in addition to Linux and Mac OS X. In the preceding example, we used the <code>init()</code> function to enable automatic reset to default colors after each <code>print()</code>, but even when not required, <code>init()</code> should always be called (when your code runs on Windows, the <code>init()</code> call enables the mapping from ANSI color codes to the Windows color system).</p>
+<pre class="text"><code>from colorama import init
+init()</code></pre>
+<p>The preceding example is clear enough to follow, but I would be a sorry author if I—after having emphasized the benefits of the <em>logging</em> module—told you that the only way to get colors into your console was to use <code>print()</code>. As usual with Python, it turns out that the hard work has already been done for us. After installing the <code>colorlog</code> package,<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760">6</a> you can use colors in your log messages immediately:</p>
+<pre class="text"><code>import colorlog
+
+logger = colorlog.getLogger()
+logger.setLevel(colorlog.colorlog.logging.DEBUG)
+
+handler = colorlog.StreamHandler()
+handler.setFormatter(colorlog.ColoredFormatter())
+logger.addHandler(handler)
+
+logger.debug(&quot;Debug message&quot;)
+logger.info(&quot;Information message&quot;)
+logger.warning(&quot;Warning message&quot;)
+logger.error(&quot;Error message&quot;)
+logger.critical(&quot;Critical message&quot;)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO14-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Obtain a <code>logger</code> instance, exactly as you would normally do.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO14-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>Set the logging level. You can also use the constants like <code>DEBUG</code> and <code>INFO</code> from the logging module directly.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO14-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>Set the message formatter to be the <code>ColoredFormatter</code> provided by the <code>colorlog</code> library.</p>
+<p>This produces the output shown in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#colorlogdemo">Figure 1-3</a>.</p>
+<p>There are several other similar Python packages worth watching, such as the <a href="https://jart.github.io/fabulous"><code>fabulous</code></a> command-line beautifier, which would have made this list if it had been updated for Python 3 just a few weeks sooner!<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0502.png" alt="tply 0502" /></p>
+<p><strong>Figure 1-3. Beautiful and automatic colors for your logging messages.</strong></p>
+<h3 id="begins">begins</h3>
+<p>As far as user-interfaces go, most Python programs start out as command-line applications, and many remain so. It makes sense to offer your users the very best experience you can. For such programs, options are specified with command-line arguments, and the Python standard library offers the <a href="http://bit.ly/argparse-py">argparse</a> library to help with that.</p>
+<p><code>argparse</code> is a robust, solid implementation for command-line processing, but it is somewhat verbose to use. For example, here we have an extremely simple script that will add two numbers passed on the command line:</p>
+<pre class="text"><code>import argparse
+
+def main(a, b):
+    &quot;&quot;&quot; Short script to add two numbers &quot;&quot;&quot;
+    return a + b
+
+if __name__ == &#39;__main__&#39;:
+    parser = argparse.ArgumentParser(
+        description=&quot;Add two numbers&quot;)
+    parser.add_argument(&#39;-a&#39;,
+                        help=&#39;First value&#39;,
+                        type=float,
+                        default=0)
+    parser.add_argument(&#39;-b&#39;,
+                        help=&#39;Second value&#39;,
+                        type=float,
+                        default=0)
+    args = parser.parse_args()
+    print(main(args.a, args.b))</code></pre>
+<p>As one would expect, help can be obtained by passing <code>-h</code> to this program:</p>
+<pre class="text"><code>$ python argparsedemo.py -h
+usage: argparsedemo.py [-h] [-a A] [-b B]
+
+Add two numbers
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -a A        First value
+  -b B        Second value</code></pre>
+<p>In contrast, the <code>begins</code> library takes a machete to the API of <code>argparse</code> and maximally exploits features of the Python language to simplify setting up the same command-line interface:</p>
+<pre class="text"><code>import begin
+
+@begin.start(auto_convert=True)
+def main(a: &#39;First value&#39; = 0.0, b: &#39;Second value&#39; = 0.0):
+    &quot;&quot;&quot; Add two numbers &quot;&quot;&quot;
+    print(a + b)</code></pre>
+<p>There is so much happening in so few lines, yet everything is still explicit:</p>
+<ul>
+<li>Each parameter in the main function becomes a command-line argument.</li>
+<li>The <em>function annotations</em> are exploited to provide an inline help description of each parameter.</li>
+<li>The default value of each parameter (here, <code>0.0</code>) is used both as a default value, as well as to indicate the required datatype (in this case, a <code>float</code> number value).</li>
+<li>The <code>auto_convert=True</code> is used to enforce type coercion from a string to the target parameter type.</li>
+<li>The docstring for the <em>function</em> now becomes the help documentation of the program itself.</li>
+</ul>
+<p>Also, you may have noticed that this example lacks the usual <code>if __name__ == '__main__'</code> boilerplate: that’s because <code>begins</code> is smart enough to work with Python’s stack frames so that your target function becomes the starting point.</p>
+<p>For completeness, here is the help for the <code>begins</code>-version, produced with <code>-h</code>:</p>
+<pre class="text"><code>$ python beginsdemo.py -h
+usage: beginsdemo.py [-h] [--a A] [--b B]
+
+Add two numbers
+
+optional arguments:
+  -h, --help   show this help message and exit
+  --a A, -a A  First value (default: 0.0)
+  --b B, -b B  Second value (default: 0.0)</code></pre>
+<p>There are a bunch more tricks that <code>begins</code> makes available, and you are encouraged to read the <a href="http://bit.ly/begins-docs">documentation</a>; for instance, if the parameters are words:</p>
+<pre class="text"><code>@begin.start
+def main(directory: &#39;Target dir&#39;):
+    ...</code></pre>
+<p>then both <code>-d VALUE</code> and <code>--directory VALUE</code> will work for specifying the value of the <code>directory</code> parameter on the command line. A sequence of positional arguments of unknown length is easily defined with unpacking:</p>
+<pre class="text"><code>#demo.py
+@begin.start
+def main(directory: &#39;Target dir&#39;, *filters):
+    ...</code></pre>
+<p>When called with:</p>
+<pre class="text"><code>$ python demo.py -d /home/user tmp temp TEMP</code></pre>
+<p>the <code>filters</code> argument would be the list <code>['tmp', 'temp', 'TEMP']</code>.</p>
+<p>If that were all that <code>begins</code> supported, it would already be sufficient for the vast majority of simple programs; however, <code>begins</code> also provides support for <em>subcommands</em>:</p>
+<pre class="text"><code>import begin
+
+@begin.subcommand
+def status(compact: &#39;Short or long format&#39; = True):
+    &quot;&quot;&quot; Report the current status. &quot;&quot;&quot;
+    if compact:
+        print(&#39;ok.&#39;)
+    else:
+        print(&#39;Very well, thank-you.&#39;)
+
+@begin.subcommand
+def fetch(url: &#39;Data source&#39; = &#39;http://google.com&#39;):
+    &quot;&quot;&quot; Fetch data from the URL. &quot;&quot;&quot;
+    print(&#39;Work goes here&#39;)
+
+@begin.start(auto_convert=True)
+def main(a: &#39;First value&#39; = 0.0, b: &#39;Second value&#39; = 0.0):
+    &quot;&quot;&quot; Add two numbers &quot;&quot;&quot;
+    print(a + b)</code></pre>
+<p>The <code>main</code> function is the same as before, but we’ve added two subcommands:</p>
+<ul>
+<li>The first, <code>status</code>, represents a subcommand that could be used to provide some kind of <em>system status</em> message (think “git status”).</li>
+<li>The second, <code>fetch</code>, represents a subcommand for some kind of work function (think “git fetch”).</li>
+</ul>
+<p>Each subcommand has its own set of parameters, and the rules work in the same way as before with the <code>main</code> function. For instance, observe the updated help (obtained with the <code>-h</code> parameter) for the program:</p>
+<pre class="text"><code>$ python beginssubdemo.py -h
+usage: beginssubdemo.py [-h] [--a A] [--b B] {fetch,status} ...
+
+Add two numbers
+
+optional arguments:
+  -h, --help      show this help message and exit
+  --a A, -a A     First value (default: 0.0)
+  --b B, -b B     Second value (default: 0.0)
+
+Available subcommands:
+  {fetch,status}
+    fetch         Fetch data from the URL.
+    status        Report the current status.</code></pre>
+<p>We still have the same documentation for the main program, but now additional help for the subcommands have been added. Note that the function docstrings for <code>status</code> and <code>fetch</code> have also been recycled into CLI help descriptions. Here is an example of how our program might be called:</p>
+<pre class="text"><code>$ python beginssubdemo.py -a 7 -b 7 status --compact
+14.0
+ok.
+
+$ python beginssubdemo.py -a 7 -b 7 status --no-compact
+14.0
+Very well, thank-you.</code></pre>
+<p>You can also see how <em>boolean</em> parameters get some special treatment: they evaluate <code>True</code> if present and <code>False</code> when <code>no-</code> is prefixed to the parameter name, as shown for the parameter <code>compact</code>.</p>
+<p><code>begins</code> has even more tricks up its sleeve, such as automatic handling for <a href="http://bit.ly/env-var">environment variables</a>, <a href="http://bit.ly/beg-config">config files</a>, <a href="http://bit.ly/beg-err">error handling</a>, and <a href="http://bit.ly/beg-log">logging</a>, and I once again urge you to check out the project documentation.</p>
+<p>If <code>begins</code> seems too extreme for you, there are a bunch of other tools for easing the creation of command-line interfaces. One particular option that has been growing in popularity is <a href="http://click.pocoo.org/">click</a>.</p>
+<h2 id="graphical-user-interfaces">Graphical User Interfaces</h2>
+<p>Python offers a wealth of options for creating graphical user interfaces (GUIs) including <a href="http://bit.ly/py-qt">PyQt</a>, <a href="https://www.wxpython.org/">wxPython</a>, and <a href="http://bit.ly/tkinter-py">tkinter</a>, which is also available directly in the standard library. In this chapter we will describe two significant, but largely undiscovered, additions to the lineup. The first, <code>pyqtgraph</code>, is much more than simply a chart-plotting library, while <code>pywebview</code> gives you a full-featured web-technology interface for your desktop Python applications.</p>
+<h3 id="pyqtgraph">pyqtgraph</h3>
+<p>The most popular chart-plotting library in Python is <a href="http://matplotlib.org/">matplotlib</a>, but you may not yet have heard of the wonderful alternative, <a href="http://www.pyqtgraph.org/">pyqtgraph</a>. Pyqtgraph is not a one-to-one replacement for matplotlib; rather, it offers a different selection of features and in particular is excellent for real-time and interactive visualization.</p>
+<p>It is very easy to get an idea of what pyqtgraph offers: simply run the built-in examples application:</p>
+<pre class="text"><code>$ pip install pyqtgraph
+$ python -m pyqtgraph.examples</code></pre>
+<p>This will install and run the examples browser. You can see a screenshot of one of the examples in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pyqtgraph_ex">Figure 1-4</a>.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0601.png" alt="tply 0601" /></p>
+<p><strong>Figure 1-4. Interactive pyqtgraph window.</strong></p>
+<p>This example shows an array of interactive plots. You can’t tell from the screenshot, but when you run this example, the yellow chart on the right is a high-speed animation. Each plot, including the animated one (in yellow), can be panned and scaled in real-time with your cursor. If you’ve used Python GUI frameworks in the past, and in particular ones with free-form graphics, you would probably expect sluggish performance. This is not the case with <code>pyqtgraph</code>: because <code>pyqtgraph</code> uses, unsurprisingly, <code>PyQt</code> for the UI. This allows <code>pyqtgraph</code> itself to be a pure-python package, making installation and distribution easy.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737065700880">7</a></p>
+<p>By default, the style configuration for graphs in <code>pyqtgraph</code> uses a black background with a white foreground. In <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pyqtgraph_ex">Figure 1-4</a>, I sneakily used a style configuration change to reverse the colors, since dark backgrounds look terrible in print. This information is also available in the documentation:</p>
+<pre class="text"><code>import pyqtgraph as pg
+# Switch to using white background and black foreground
+pg.setConfigOption(&#39;background&#39;, &#39;w&#39;)
+pg.setConfigOption(&#39;foreground&#39;, &#39;k&#39;)</code></pre>
+<p>There is more on offer than simply plotting graphs: <code>pyqtgraph</code> also has features for 3D visualization, widget docking, and automatic data widgets with two-way binding. In <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pyqtgraph_light">Figure 1-5</a>, the data-entry and manipulation widgets were generated automatically from a Numpy table array, and UI interaction with these widgets changes the graph automatically.</p>
+<p><code>pyqtgraph</code> is typically used as a direct visualizer, much like how <code>matplotlib</code> is used, but with better interactivity. However, it is also quite easy to <em>embed</em> <code>pyqtgraph</code> into another separate <code>PyQt</code> application and the documentation for this is easy to follow. <code>pyqtgraph</code> also provides a few useful extras, like edit widgets that are units-aware (kilograms, meters and so on), and tree widgets that can be built automatically from (nested!) standard Python data structures like lists, dictionaries, and arrays.</p>
+<p>The author of <code>pyqtgraph</code> is now working with the authors of other visualization packages on a new high-performance visualization package: <a href="http://vispy.org/gallery.html">vispy</a>. Based on how useful <code>pyqtgraph</code> has been for me, I’ve no doubt that <code>vispy</code> is likely to become another indispensable tool for data visualization.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0602.png" alt="tply 0602" /></p>
+<p><strong>Figure 1-5. Another pyqtgraph example: the data fields and widgets on the left are automatically created from a Numpy table array.</strong></p>
+<h3 id="pywebview">pywebview</h3>
+<p>There are a huge number of ways to make <em>desktop</em> GUI applications with Python, but in recent years the idea of using a browser-like interface as a desktop client interface has become popular. This approach is based around tools like <a href="http://bit.ly/cefpy">cefpython</a> (using the Chrome-embedded framework) and <a href="http://bit.ly/electron-py">Electron</a>, which has been used to build many popular tools such as the Atom text editor and Slack social messaging application.</p>
+<p>Usually, such an approach involves bundling a browser engine with your application, but <a href="http://bit.ly/pywebview">Pywebview</a> gives you a one-line command to create a GUI window that wraps a <em>system native</em> “web view” window. By combining this with a Python web abb like Flask or Bottle, it becomes very easy to create a local application with a GUI, while also taking advantage of the latest GUI technologies that have been developed in the browser space. The benefit to using the system native browser widget is that you don’t have to distribute a potentially large application bundle to your users.</p>
+<p>Let’s begin with an example. Since our application will be built up as a web-page template in HTML, it might be interesting to use a Python tool to build the HTML rather than writing it out by hand.</p>
+<pre class="text"><code>from string import ascii_letters
+from random import choice, randint
+import webview
+import dominate
+from dominate.tags import *
+from bottle import route, run, template
+
+bootstrap = &#39;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/&#39;
+bootswatch = &#39;https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/&#39;
+
+doc = dominate.document()
+
+with doc.head:
+  link(rel=&#39;stylesheet&#39;,
+       href=bootstrap + &#39;css/bootstrap.min.css&#39;)
+  link(rel=&#39;stylesheet&#39;,
+       href=bootswatch + &#39;paper/bootstrap.min.css&#39;)
+  script(src=&#39;https://code.jquery.com/jquery-2.1.1.min.js&#39;)
+  [script(src=bootstrap + &#39;js/&#39; + x)
+    for x in [&#39;bootstrap.min.js&#39;, &#39;bootstrap-dropdown.js&#39;]]
+
+with doc:
+  with div(cls=&#39;container&#39;):
+    with h1():
+      span(cls=&#39;glyphicon glyphicon-map-marker&#39;)
+      span(&#39;My Heading&#39;)
+    with div(cls=&#39;row&#39;):
+      with div(cls=&#39;col-sm-6&#39;):
+        p(&#39;{{body}}&#39;)
+      with div(cls=&#39;col-sm-6&#39;):
+        p(&#39;Evaluate an expression:&#39;)
+        input_(id=&#39;expression&#39;, type=&#39;text&#39;)
+        button(&#39;Evaluate&#39;, cls=&#39;btn btn-primary&#39;)
+        div(style=&#39;margin-top: 10px;&#39;)
+        with div(cls=&#39;dropdown&#39;):
+          with button(cls=&quot;btn btn-default dropdown-toggle&quot;,
+                      type=&quot;button&quot;, data_toggle=&#39;dropdown&#39;):
+            span(&#39;Dropdown&#39;)
+            span(cls=&#39;caret&#39;)
+          items = (&#39;Action&#39;, &#39;Another action&#39;,
+                   &#39;Yet another action&#39;)
+          ul((li(a(x, href=&#39;#&#39;)) for x in items),
+             cls=&#39;dropdown-menu&#39;)
+
+    with div(cls=&#39;row&#39;):
+      h3(&#39;Progress:&#39;)
+      with div(cls=&#39;progress&#39;):
+        with div(cls=&#39;progress-bar&#39;, role=&#39;progressbar&#39;,
+                 style=&#39;width: 60%;&#39;):
+          span(&#39;60%&#39;)
+
+    with div(cls=&#39;row&#39;):
+      for vid in [&#39;4vuW6tQ0218&#39;, &#39;wZZ7oFKsKzY&#39;, &#39;NfnMJMkhDoQ&#39;]:
+        with div(cls=&#39;col-sm-4&#39;):
+          with div(cls=&#39;embed-responsive embed-responsive-16by9&#39;):
+            iframe(
+               cls=&#39;embed-responsive-item&#39;,
+               src=&#39;https://www.youtube.com/embed/&#39; + vid,
+               frameborder=&#39;0&#39;)
+
+
+@route(&#39;/&#39;)
+def root():
+    word = lambda: &#39;&#39;.join(
+        choice(ascii_letters) for i in range(randint(2, 10)))
+    nih_lorem = &#39; &#39;.join(word() for i in range(50))
+    return template(str(doc), body=nih_lorem)
+
+
+if __name__ == &#39;__main__&#39;:
+    import threading
+    thread = threading.Thread(
+        target=run, kwargs=dict(host=&#39;localhost&#39;, port=8080),
+        daemon=True)
+    thread.start()
+
+    webview.create_window(
+        &quot;Not a browser, honest!&quot;, &quot;http://localhost:8080&quot;,
+        width=800, height=600, resizable=False)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p><code>webview</code>, the star of the show<embed src="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-2" /></p>
+<p>The other star of the show. <code>dominate</code> lets you create HTML with a series of nested context handlers.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>The third star of the show! The <code>bottle</code> framework provides a very simple interface for building a basic web app with templates and routing.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>Building up HTML in Python has the tremendous advantage of using all the syntax tools the language has to offer.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>By using Bootstrap, one of the oldest and most robust front-end frameworks, we get access to fun things like glyph icons.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-6"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png" alt="6" /></a></p>
+<p>Template variables can still be entered into our HTML and substituted later using the web framework’s tools.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-8"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/7.png" alt="7" /></a></p>
+<p>To demonstrate that we really do have Bootstrap, here is a progress bar widget. With <code>pywebview</code>, you can, of course, use any Bootstrap widget, and indeed any other tools that would normally be used in web browser user interfaces.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO15-9"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/8.png" alt="8" /></a></p>
+<p>I’ve embedded a few fun videos from YouTube.</p>
+<p>Running this program produces a great-looking interface, as shown in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pywebview_basic">Figure 1-6</a>.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0603.png" alt="tply 0603" /></p>
+<p><strong>Figure 1-6. A beautiful and pleasing interface with very little effort.</strong></p>
+<p>For this demonstration, I’ve used the <em>Paper</em> Bootstrap theme, but by changing a single word you can use an entirely different one! The <em>Superhero</em> Bootstrap theme is shown in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pywebview_theme">Figure 1-7</a>.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0604.png" alt="tply 0604" /></p>
+<p><strong>Figure 1-7. The same application, but using the Superhero theme from Bootswatch.</strong></p>
+<p><strong>NOTE</strong></p>
+<p>In the preceding example we also used the <a href="http://bit.ly/dominate-py"><code>dominate</code></a> library, which is a handy utility for generating HTML procedurally. It’s not only for simple tasks: this demo shows how it can handle Bootstrap attributes and widgets quite successfully. <code>dominate</code> works with nested context managers to manage the scope of HTML tags, while HTML attributes are assigned with keyword arguments.</p>
+<p>For the kind of application that <code>Pywebview</code> is aimed at, it would be very interesting to think about how <code>dominate</code> could be used to make an abstraction that completely hides browser technologies like HTML and JavaScript, and lets you create (e.g., button-click handlers) entirely in Python without worrying about the intermediate event processing within the JavaScript engine. This technique is already explored in existing tools like <a href="http://bit.ly/flexx-py">flexx</a>.</p>
+<h2 id="system-tools">System Tools</h2>
+<p>Python is heavily used to make tools that work closely with the operating system, and it should be no surprise to discover that there are excellent libraries waiting to be discovered. The <code>psutil</code> library gives you all the access to operating-system and process information you could possibly hope for, while the <code>Watchdog</code> library gives you hooks into system file-event notifications. Finally, we close out this chapter with a look at <code>ptpython</code>, which gives you a significantly enriched interactive Python prompt.</p>
+<h3 id="psutil">psutil</h3>
+<p>Psutil provides complete access to system information. Here’s a simple example of a basic report for CPU load sampled over 5 seconds:</p>
+<pre class="text"><code>import psutil
+
+cpu = psutil.cpu_percent(interval=5, percpu=True)
+print(cpu)</code></pre>
+<p>Output:</p>
+<pre class="text"><code>[21.4, 1.2, 18.0, 1.4, 15.6, 1.8, 17.4, 1.6]</code></pre>
+<p>It produces one value for each logical CPU: on my computer, eight. The rest of the <code>psutil</code> API is as simple and clean as this example shows, and the API also provides access to memory, disk, and network information. It is <em>very</em> extensive.</p>
+<p>There is also detailed information about processes. To demonstrate, here is a program that monitors its own memory consumption and throws in the towel when a limit is reached:</p>
+<pre class="text"><code>import psutil
+import os, sys, time
+
+pid = os.getpid()
+p = psutil.Process(pid)
+print(&#39;Process info:&#39;)
+print(&#39;  name  :&#39;, p.name())
+print(&#39;  exe   :&#39;, p.exe())
+
+data = []
+while True:
+    data += list(range(100000))
+    info = p.memory_full_info()
+    # Convert to MB
+    memory = info.uss / 1024 / 1024
+    print(&#39;Memory used: {:.2f} MB&#39;.format(memory))
+    if memory &gt; 40:
+        print(&#39;Memory too big! Exiting.&#39;)
+        sys.exit()
+    time.sleep(1)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO16-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The <code>os</code> module in the standard library provides our process ID (PID).<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO16-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p><code>psutil</code> constructs a <code>Process()</code> object based on the PID. In this case the PID is our own, but it could be any running process on the system.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO16-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>This looks bad: an infinite loop <em>and</em> an ever-growing list!</p>
+<p>Output:</p>
+<pre class="text"><code>Process info:
+  name  : Python
+  exe   : /usr/local/Cellar/.../Python
+Memory used: 11.82 MB
+Memory used: 14.91 MB
+Memory used: 18.77 MB
+Memory used: 22.63 MB
+Memory used: 26.48 MB
+Memory used: 30.34 MB
+Memory used: 34.19 MB
+Memory used: 38.05 MB
+Memory used: 41.90 MB
+Memory too big! Exiting.</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO17-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The full path has been shortened here to improve the appearance of the snippet. There are many more methods besides <code>name</code> and <code>exe</code> available on <code>psutil.Process()</code> instances.</p>
+<p>The type of memory shown here is the <em>unique set size</em>, which is the real memory released when that process terminates. The reporting of the unique set size is a new feature in version 4 of <code>psutil</code>, which also works on Windows.</p>
+<p>There is an extensive set of process properties you can interrogate with <code>psutil</code>, and I encourage you to read the documentation. Once you begin using <code>psutil</code>, you will discover more and more scenarios in which it can make sense to capture process properties. For example, it might be useful, depending on your application, to capture process information inside exception handlers so that your error logging can include information about CPU and memory load.</p>
+<h3 id="watchdog">Watchdog</h3>
+<p><code>Watchdog</code> is a high-quality, cross-platform library for receiving notifications of changes in the file system. Such file-system notifications is a fundamental requirement in many automation applications, and <code>Watchdog</code> handles all the low-level and cross-platform details of notifications for system events. And, the great thing about <code>Watchdog</code> is that it doesn’t use <em>polling</em>.</p>
+<p>The problem with polling is that having many such processes running can sometimes consume more resources than you may be willing to part with, particularly on lower-spec systems like the <a href="https://www.raspberrypi.org/">Raspberry Pi</a>. By using the native notification systems on each platform, the operating system <em>tells you</em> immediately when something has changed, rather than you having to ask. On Linux, the <code>inotify</code> API is used; on Mac OS X, either <code>kqueue</code> or <code>FSEvents</code> are used; and on Windows, the <code>ReadDirectoryChangesW</code> API is used. <code>Watchdog</code> allows you to write cross-platform code and not worry too much about how the sausage is made.</p>
+<p><code>Watchdog</code> has a mature API, but one way to get immediate use out of it is to use the included <code>watchmedo</code> command-line utility to run a shell command when something changes. Here are a few ideas for inspiration:</p>
+<ul>
+<li>Compiling template and markup languages:</li>
+</ul>
+<pre class="text"><code># Compile Jade template language into HTML
+$ watchmedo shell-command \
+      --patterns=&quot;*.jade&quot; \
+      --command=&#39;pyjade -c jinja &quot;${watch_src_path}&quot;&#39; \
+      --ignore-directories
+
+# Convert an asciidoc to HTML
+$ watchmedo shell-command \
+      --patterns=&quot;*.asciidoc&quot; \
+      --command=&#39;asciidoctor &quot;${watch_src_path}&quot;&#39; \
+      --ignore-directories</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO18-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Watchdog will substitute the name of the specific changed file using this template name.</p>
+<ul>
+<li>Maintenance tasks, like backups or mirroring:</li>
+</ul>
+<pre class="text"><code># Synchronize files to a server
+$ watchmedo shell-command \
+      --patterns=&quot;*&quot; \
+      --command=&#39;rsync -avz mydir/ host:/home/ubuntu&quot;&#39;</code></pre>
+<ul>
+<li>Convenience tasks, like automatically running formatters, linters, and tests:</li>
+</ul>
+<pre class="text"><code># Automatically format Python source code to PEP8(!)
+$ watchmedo shell-command \
+      --patterns=&quot;*.py&quot; \
+      --command=&#39;pyfmt -i &quot;${watch_src_path}&quot;&#39; \
+      --ignore-directories</code></pre>
+<ul>
+<li>Calling API endpoints on the Web, or even sending emails and SMS messages:</li>
+</ul>
+<pre class="text"><code># Mail a file every time it changes!
+$ watchmedo shell-command \
+      --patterns=&quot;*&quot; \
+      --command=&#39;cat &quot;${watch_src_path}&quot; | ↲
+      mail -s &quot;New version&quot; me@domain.com&#39; \
+      --ignore-directories</code></pre>
+<p>The API of <code>Watchdog</code> as a library is fairly similar to the command-line interface introduced earlier. There are the usual quirks with thread-based programming that you have to be aware of, but the typical idioms are sufficient:</p>
+<pre class="text"><code>from watchdog.observers import Observer
+from watchdog.events import (
+    PatternMatchingEventHandler, FileModifiedEvent,
+    FileCreatedEvent)
+
+observer = Observer()
+
+class Handler(PatternMatchingEventHandler):
+    def on_created(self, event: FileCreatedEvent):
+        print(&#39;File Created: &#39;, event.src_path)
+
+    def on_modified(self, event: FileModifiedEvent):
+        print(&#39;File Modified: %s [%s]&#39; % (
+            event.src_path, event.event_type))
+
+observer.schedule(event_handler=Handler(&#39;*&#39;), path=&#39;.&#39;)
+observer.daemon = False
+observer.start()
+
+try:
+    observer.join()
+except KeyboardInterrupt:
+    print(&#39;Stopped.&#39;)
+    observer.stop()
+    observer.join()</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Create an <em>observer</em> instance.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>You have to subclass one of the <em>handler</em> classes, and override the methods for events that you want to process. Here I’ve implemented handlers for creation and modification, but there are several other methods you can supply, as explained in the <a href="http://bit.ly/watchdog-docs">documentation</a>.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>You <em>schedule</em> the event handler, and tell <code>watchdog</code> what it should be watching. In this case I’ve asked for notifications on <em>all files</em> (<code>*</code>) n the <em>current directory</em> (<code>.</code>).<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p><code>Watchdog</code> runs in a separate thread. By calling the <code>join()</code> method, you can force the program flow to block at this point.</p>
+<p>With that code running, I cunningly executed a few of these:</p>
+<pre class="text"><code>$ touch secrets.txt
+$ touch secrets.txt
+$ touch secrets.txt
+[etc]</code></pre>
+<p>This is the console output from the running <code>Watchdog</code> demo:</p>
+<pre class="text"><code>File Created:  ./secrets.txt
+File Modified: . [modified]
+File Modified: ./secrets.txt [modified]
+File Modified: ./secrets.txt [modified]
+File Modified: ./secrets.txt [modified]
+File Modified: ./secrets.txt [modified]
+Stopped.
+
+Process finished with exit code 0</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO20-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Here I terminated the program by pressing Ctrl-C.</p>
+<p>As we can see, <code>Watchdog</code> saw all the modifications I made to a file in the directory being watched.</p>
+<h3 id="ptpython">ptpython</h3>
+<p><code>ptpython</code> is an alternative interpreter interface, offering a beautiful interactive Python experience. As such, <code>ptpython</code> is more like a tool than a library to include in your own projects, but what a tool! <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#ptpy_completion">Figure 1-8</a> shows a screenshot showing the basic user interface.</p>
+<p>When you need to work with blocks in the interpreter, like classes and functions, you will find that accessing the command history is much more convenient than the standard interpreter interface: when you scroll to a previous command, the entire block is shown, not only single lines, as shown in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#ptpy_history">Figure 1-9</a>.</p>
+<p>Here, I retrieved the code for the function declaration by pressing the up arrow (or Ctrl-p) and the entire block is shown, rather than having to scroll through lines separately.</p>
+<p>The additional features include <em>vi</em> and <em>Emacs</em> keys, theming support, docstring hinting, and input validation, which checks a command (or block) for syntax errors before allowing evaluation. To see the full set of configurable options, press F2, as seen in <a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#ptpy_menu">Figure 1-10</a>.<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0701.png" alt="tply 0701" /></p>
+<p><strong>Figure 1-8. The code-completion suggestions pop up automatically as you type.</strong></p>
+<figure>
+<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0702.png" alt="tply 0702" /><figcaption>tply 0702</figcaption>
+</figure>
+<p><strong>Figure 1-9. When you scroll to previous entries, entire blocks are suggested (e.g., function f()), not only single lines.</strong></p>
+<figure>
+<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0703.png" alt="tply 0703" /><figcaption>tply 0703</figcaption>
+</figure>
+<p><strong>Figure 1-10. The settings menu accessible via F2.</strong></p>
+<p>On the command line, <code>ptpython</code> offers highly productive features that are sure to enhance your workflow. I have found that <code>ptpython</code> is the fastest way to quickly test some syntax or a library call, without having to open an editor or integrated development environment (IDE). And if you prefer <em>IPython</em>, you’ll be glad to hear that <code>ptpython</code> includes an integration which you can launch with <code>ptipython</code>. This makes available the shell integration that <em>IPython</em> offers, as well as its wealth of magic commands.</p>
+<h2 id="web-apis-with-hug">Web APIs with hug</h2>
+<p>Python is famously used in a large number of web frameworks, and an extension of this area is the web services domain in which APIs are exposed for other users’ programs to consume. In this domain, <a href="http://www.django-rest-framework.org/">Django REST framework</a> and <a href="http://flask.pocoo.org/">Flask</a> are very popular choices, but you may not yet have heard of <code>hug</code>.</p>
+<p><a href="http://www.hug.rest/">hug</a> is a library that provides an extremely simple way to create Internet APIs for web services. By exploiting some of the language features of Python, much of the usual boilerplate normally required when creating APIs for web services is removed.</p>
+<p>Here is a small web service that converts between the hex value of a color and its <a href="http://bit.ly/w3-hex">CSS3 name</a>:</p>
+<pre class="text"><code>import hug
+import webcolors
+
+@hug.get()
+def hextoname(hex: hug.types.text):
+    return webcolors.hex_to_name(&#39;#&#39; + hex)
+
+@hug.get()
+def nametohex(name: hug.types.text):
+    return webcolors.name_to_hex(name)</code></pre>
+<p><strong>NOTE</strong></p>
+<p>We are also using the <a href="https://webcolors.readthedocs.io/">webcolors</a> library here: your one-stop shop for converting web-safe colors between various formats like name, hex, and <code>rgb</code>. Don’t forget that you can also convert between <code>rgb</code> and other formats like <code>hsl</code> with the <a href="http://bit.ly/colorsys">colorsys</a> library that’s already included in the Python standard library!</p>
+<p>In the <code>hug</code> example, we’ve done little more than wrap two functions from the <code>webcolors</code> package: one to convert from hex to name and one to do the opposite. It’s hard to believe at first, but those <code>@hug.get</code> decorators are all you need to start a basic API. The server is launched by using the included <code>hug</code> command-line tool (<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#hug">Figure 1-11</a>).<img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0704.png" alt="tply 0704" /></p>
+<p><strong>Figure 1-11. Hug goes a long way to make you feel welcome.</strong></p>
+<p>And that’s it! We can immediately test our API. You could use a web browser for this, but it’s easy enough to use a tool like <code>cURL</code>. You call the URL endpoint with the correct parameters, and <code>hug</code> returns the answer:</p>
+<pre class="text"><code>$ curl http://localhost:8000/hextoname?hex=ff0000
+
+&quot;red&quot;
+
+$ curl http://localhost:8000/nametohex?name=lightskyblue
+
+&quot;#87cefa&quot;</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO21-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The function name was <code>hextoname</code>, and the parameter name was <code>hex</code>. Note that we don’t supply the hash, <code>#</code>, as part of the request data because it interferes with the parsing of the HTTP request.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO21-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>This API has a different endpoint function, <code>nametohex</code>, and its parameter is called <code>name</code>.</p>
+<p>It’s quite impressive to get a live web API up with so little work. And the features don’t stop there: <code>hug</code> automatically generates API documentation, which is what you get by omitting an endpoint:</p>
+<pre class="text"><code>$ curl http://localhost:8000/
+{
+  &quot;404&quot;: &quot;The API call you tried to make was not defined. Here&#39;s
+      a definition of the API to help you get going :)&quot;,
+  &quot;documentation&quot;: {
+    &quot;handlers&quot;: {
+      &quot;/hextoname&quot;: {
+        &quot;GET&quot;: {
+          &quot;outputs&quot;: {
+            &quot;format&quot;: &quot;JSON (Javascript Serialized
+                Object Notation)&quot;,
+            &quot;content_type&quot;: &quot;application/json&quot;
+          },
+          &quot;inputs&quot;: {
+            &quot;hex&quot;: {
+              &quot;type&quot;: &quot;Basic text / string value&quot;
+            }
+          }
+        }
+      },
+      &quot;/nametohex&quot;: {
+        &quot;GET&quot;: {
+          &quot;outputs&quot;: {
+            &quot;format&quot;: &quot;JSON (Javascript Serialized
+                Object Notation)&quot;,
+            &quot;content_type&quot;: &quot;application/json&quot;
+          },
+          &quot;inputs&quot;: {
+            &quot;name&quot;: {
+            &quot;type&quot;: &quot;Basic text / string value&quot;
+            }
+          }
+        }
+      }
+    }
+  }
+}</code></pre>
+<p>The types of the parameters we specified with <code>hug.types.text</code> are used not only for the documentation, but also for type conversions.</p>
+<p>If these were all the features provided by <code>hug</code>, it would already be enough for many API tasks; however, one of hug’s best features is that it automatically handles versions. Consider the following example:</p>
+<pre class="text"><code>import hug
+import inflect
+engine = inflect.engine()
+
+@hug.get(versions=1)
+def singular(word: hug.types.text):
+    &quot;&quot;&quot; Return the singular version of the word&quot;&quot;&quot;
+    return engine.singular_noun(word).lower()
+
+@hug.get(versions=1)
+def plural(word: hug.types.text):
+    &quot;&quot;&quot; Return the plural version of the word&quot;&quot;&quot;
+    return engine.plural(word).lower()
+
+@hug.get(versions=2)
+def singular(word: hug.types.text):
+    &quot;&quot;&quot; Return the singular of word, preserving case &quot;&quot;&quot;
+    return engine.singular_noun(word)
+
+@hug.get(versions=2)
+def plural(word: hug.types.text):
+    &quot;&quot;&quot; Return the plural of word, preserving case &quot;&quot;&quot;
+    return engine.plural(word)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO22-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>This new <code>hug</code> API wraps the <code>inflect</code> package, which provides tools for word manipulation.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO22-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>The first version of the API returns lowercased results.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO22-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>The second, newer version of the <em>same API</em> returns the result as calculated by <code>inflect</code>, without any alteration.</p>
+<p><strong>NOTE</strong></p>
+<p>We are also using the <a href="http://bit.ly/inflect-py">inflect</a> library, which makes an enormous number of word transformations possible, including pluralization, gender transformation of pronouns, counting (“was no error” versus “were no errors”), correct article selection (“a,” “an,” and “the”), Roman numerals, and many more!</p>
+<p>Imagine that we’ve created this web service to provide an API to transform words into their singular or plural version: one apple, many apples, and so on. For some reason that now escapes us, in the first release we lowercased the results before returning them:</p>
+<pre class="text"><code>$ curl http://localhost:8000/v1/singular/?word=Silly%20Walks
+
+&quot;silly walk&quot;
+
+
+$ curl http://localhost:8000/v1/plural?word=Crisis
+
+&quot;crises&quot;</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO23-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Note: the URL now has a “v1” specifier for “version 1.”</p>
+<p>It didn’t occur to us that some users may <em>prefer</em> to have the case of input words preserved: for example, if a word at the beginning of a sentence is being altered, it would be best to preserve the capitalization. Fortunately, the <code>inflect</code> library already does this by default, and <code>hug</code> provides versioning that allows us to provide a second version of the API (so as not to hurt existing users who may expect the lower-case transformation):</p>
+<pre class="text"><code>$ curl http://localhost:8000/v2/singular/?word=Silly%20Walks
+
+&quot;Silly Walk&quot;
+
+
+$ curl http://localhost:8000/v2/plural/?word=Crisis
+
+&quot;Crises&quot;</code></pre>
+<p>These API calls use version 2 of our web service. And finally, the documentation is also versioned, and for this example, you can see how the function <em>docstrings</em> are also incorporated as usage text:</p>
+<pre class="text"><code>$ curl http://localhost:8000/v2/
+{
+  &quot;404&quot;: &quot;The API call you tried to make was not defined. Here&#39;s
+      a definition of the API to help you get going :)&quot;,
+  &quot;documentation&quot;: {
+    &quot;version&quot;: 2,
+    &quot;versions&quot;: [
+      1,
+      2
+    ],
+    &quot;handlers&quot;: {
+      &quot;/singular&quot;: {
+        &quot;GET&quot;: {
+          &quot;usage&quot;: &quot; Return the singular of word,
+              preserving case &quot;,
+          &quot;outputs&quot;: {
+            &quot;format&quot;: &quot;JSON (Javascript Serialized
+                Object Notation)&quot;,
+            &quot;content_type&quot;: &quot;application/json&quot;
+          },
+          &quot;inputs&quot;: {
+            &quot;word&quot;: {
+              &quot;type&quot;: &quot;Basic text / string value&quot;
+            }
+          }
+        }
+      },
+
+[snip...]</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO24-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Each version has separate documentation, and calling that version endpoint, i.e., <code>v2</code>, returns the documentation for that version.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO24-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>The <em>docstring</em> of each function is reused as the usage text for that API call.</p>
+<p><code>hug</code> has <a href="http://www.hug.rest/">extensive documentation</a> in which there are even more features to discover. With the exploding interest in internet-of-things applications, it is likely that simple and powerful libraries like <code>hug</code> will enjoy widespread popularity.</p>
+<h2 id="dates-and-times">Dates and Times</h2>
+<p>Many Python users cite two major pain points: the first is <em>packaging</em>, and for this we covered <code>flit</code> in an earlier chapter. The second is working with dates and times. In this chapter we cover two libraries that will make an enormous difference in how you deal with temporal matters. <code>arrow</code> is a reimagined library for working with <code>datetime</code> objects in which timezones are always present, which helps to minimize a large class of errors that new Python programmers encounter frequently. <code>parsedatetime</code> is a library that lets your code parse natural-language inputs for dates and times, which can make it vastly easier for your users to provide such information.</p>
+<h3 id="arrow">arrow</h3>
+<p>Though opinions differ, there are those who have found the standard library’s <code>datetime</code> module confusing to use. The module documentation itself in the <a href="http://bit.ly/datetime-module">first few paragraphs</a> explains why: it provides both <em>naive</em> and <em>aware</em> objects to represent dates and times. The <em>naive</em> ones are the source of confusion, because application developers increasingly find themselves working on projects in which timezones are critically important. The dramatic rise of cloud infrastructure and software-as-a-service applications have contributed to the reality that your application will frequently run in a different timezone (e.g., on a server) than where developers are located, and different again to where your users are located.</p>
+<p>The <em>naive</em> <code>datetime</code> objects are the ones you typically see in demos and tutorials:</p>
+<pre class="text"><code>import datetime
+
+dt = datetime.datetime.now()
+dt_utc = datetime.datetime.utcnow()
+difference = (dt - dt_utc).total_seconds()
+
+print(&#39;Total difference: %.2f seconds&#39; % difference)</code></pre>
+<p>This code could not be any simpler: we create two <code>datetime</code> objects, and calculate the difference. The problem is that we probably intended both <code>now()</code> and <code>utcnow()</code> to mean <em>now</em> as in “this moment in time,” but perhaps in different timezones. When the difference is calculated, we get what seems an absurdly large result:</p>
+<pre class="text"><code>Total difference: 36000.00 seconds</code></pre>
+<p>The difference is, in fact, the timezone difference between my current location and UTC: +10 hours. This result is the worst kind of “incorrect” because it is, in fact, <em>correct</em> if timezones are not taken into account; and here lies the root of the problem: a misunderstanding of what the functions actually do. The <code>now()</code> and <code>utcnow()</code> functions <em>do</em> return the current time in local and UTC timezones, but unfortunately both results are <em>naive</em> <code>datetime</code> objects and therefore lack timezone data.</p>
+<p>Note that it <em>is</em> possible to create <code>datetime</code> objects with timezone data attached, albeit in a subjectively cumbersome manner: you create an <em>aware</em> <code>datetime</code> by setting the <code>tzinfo</code> attribute to the correct timezone. In our example, we could (and should!) have created a current <code>datetime</code> object in the following way, by passing the timezone into the <code>now()</code> function:</p>
+<pre class="text"><code>dt = datetime.datetime.now(tz=datetime.timezone.utc)</code></pre>
+<p>Of course, if you make this change on line 3 and try to rerun the code, the following error appears:</p>
+<pre class="text"><code>TypeError: can&#39;t subtract offset-naive and
+offset-aware datetimes</code></pre>
+<p>This happens because even though the <code>utcnow()</code> function produces a <code>datetime</code> for the UTC timezone, the result is a <em>naive</em> <code>datetime</code> object, and Python prevents you from mixing naive and aware <code>datetime</code> objects. If you are suddenly scared to work with dates and times, that’s an understandable response, but I’d rather encourage you to instead be afraid of <code>datetimes</code> that lack timezone data. The <code>TypeError</code> just shown is the kind of error we really do want: it forces us to ensure that all our <code>datetime</code> instances are <em>aware</em>.</p>
+<p>Naturally, to handle this in the general case requires some kind of database of timezones. Unfortunately, except for UTC, the Python standard library does not include timezone data; instead, the recommendation is to use a separately maintained library called <a href="https://pythonhosted.org/pytz">pytz</a>, and if you need to work with dates and times, I strongly encourage you to investigate that library in more detail.</p>
+<p>Now we can finally delve into the main topic of this section, which is <code>arrow</code>: a third-party library that offers a much simpler API for working with dates and times. With <code>arrow</code>, <em>everything</em> has a timezone attached (and is thus “aware”):</p>
+<pre class="text"><code>import arrow
+
+t0 = arrow.now()
+print(t0)
+
+t1 = arrow.utcnow()
+print(t1)
+
+difference = (t0 - t1).total_seconds()
+
+print(&#39;Total difference: %.2f seconds&#39; % difference)</code></pre>
+<p>Output:</p>
+<pre class="text"><code>2016-06-26T18:43:55.328561+10:00
+2016-06-26T08:43:55.328630+00:00
+Total difference: -0.00 seconds</code></pre>
+<p>As you can see, the <code>now()</code> function produces the current date and time <em>with</em> my local timezone attached (UTC+10), while the <code>utcnow()</code> function <em>also</em> produces the current date and time, but with the UTC timezone attached. As a consequence, the actual difference between the two times is as it should be: zero.</p>
+<p>And the delightful <code>arrow</code> library just gets better from there. The objects themselves have convenient attributes and methods you would expect:</p>
+<pre class="text"><code>&gt;&gt;&gt; t0 = arrow.now()
+&gt;&gt;&gt; t0
+&lt;Arrow [2016-06-26T18:59:07.691803+10:00]&gt;
+
+&gt;&gt;&gt; t0.date()
+datetime.date(2016, 6, 26)
+
+&gt;&gt;&gt; t0.time()
+datetime.time(18, 59, 7, 691803)
+
+&gt;&gt;&gt; t0.timestamp
+1466931547
+
+&gt;&gt;&gt; t0.year
+2016
+
+&gt;&gt;&gt; t0.month
+6
+
+&gt;&gt;&gt; t0.day
+26
+
+&gt;&gt;&gt; t0.datetime
+datetime.datetime(2016, 6, 26, 18, 59, 7, 691803,
+    tzinfo=tzlocal())</code></pre>
+<p>Note that the <code>datetime</code> produced from the same attribute correctly carries the essential timezone information.</p>
+<p>There are several other features of the module that you can read more about in <a href="http://crsmithdev.com/arrow">the documentation</a>, but this last feature provides an appropriate segue to the next section:</p>
+<pre class="text"><code>&gt;&gt;&gt; t0 = arrow.now()
+&gt;&gt;&gt; t0.humanize()
+&#39;just now&#39;
+&gt;&gt;&gt; t0.humanize()
+&#39;seconds ago&#39;
+
+&gt;&gt;&gt; t0 = t0.replace(hours=-3,minutes=10)
+&gt;&gt;&gt; t0.humanize()
+&#39;2 hours ago&#39;</code></pre>
+<p>The humanization even has built-in support for several locales!</p>
+<pre class="text"><code>&gt;&gt;&gt; t0.humanize(locale=&#39;ko&#39;)
+&#39;2시간 전&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;ja&#39;)
+&#39;2時間前&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;hu&#39;)
+&#39;2 órával ezelőtt&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;de&#39;)
+&#39;vor 2 Stunden&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;fr&#39;)
+&#39;il y a 2 heures&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;el&#39;)
+&#39;2 ώρες πριν&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;hi&#39;)
+&#39;2 घंटे पहले&#39;
+&gt;&gt;&gt; t0.humanize(locale=&#39;zh&#39;)
+&#39;2小时前&#39;</code></pre>
+<h2 id="alternative-libraries-for-dates-and-times">ALTERNATIVE LIBRARIES FOR DATES AND TIMES</h2>
+<p>There are several other excellent libraries for dealing with dates and times in Python, and it would be worth checking out both <a href="http://bit.ly/delorean-py">Delorean</a> and the very new <a href="http://pendulum.eustace.io/">Pendulum</a> library.</p>
+<h3 id="parsedatetime">parsedatetime</h3>
+<p><code>parsedatetime</code> is a wonderful library with a dedicated focus: parsing text into dates and times. As you’d expect, it can be obtained with <code>pip install parsedatetime</code>. The <a href="http://bit.ly/parsedatetime">official documentation</a> is very API-like, which makes it harder than it should be to get a quick overview of what the library offers, but you can get a pretty good idea of what’s available by browsing the extensive <a href="http://bit.ly/pdt-test">test suite</a>.</p>
+<p>The minimum you should expect of a <code>datetime</code>-parsing library is to handle the more common formats, and the following code sample demonstrates this:</p>
+<pre class="text"><code>import parsedatetime as pdt
+
+cal = pdt.Calendar()
+
+examples = [
+    &quot;2016-07-16&quot;,
+    &quot;2016/07/16&quot;,
+    &quot;2016-7-16&quot;,
+    &quot;2016/7/16&quot;,
+    &quot;07-16-2016&quot;,
+    &quot;7-16-2016&quot;,
+    &quot;7-16-16&quot;,
+    &quot;7/16/16&quot;,
+]
+
+print(&#39;{:30s}{:&gt;30s}&#39;.format(&#39;Input&#39;, &#39;Result&#39;))
+print(&#39;=&#39; * 60)
+for e in examples:
+    dt, result = cal.parseDT(e)
+    print(&#39;{:&lt;30s}{:&gt;30}&#39;.format(&#39;&quot;&#39; + e + &#39;&quot;&#39;, dt.ctime()))</code></pre>
+<p>This produces the following, and unsurprising, output:</p>
+<pre class="text"><code>Input                                                 Result
+============================================================
+&quot;2016-07-16&quot;                        Sat Jul 16 16:25:20 2016
+&quot;2016/07/16&quot;                        Sat Jul 16 16:25:20 2016
+&quot;2016-7-16&quot;                         Sat Jul 16 16:25:20 2016
+&quot;2016/7/16&quot;                         Sat Jul 16 16:25:20 2016
+&quot;07-16-2016&quot;                        Sat Jul 16 16:25:20 2016
+&quot;7-16-2016&quot;                         Sat Jul 16 16:25:20 2016
+&quot;7-16-16&quot;                           Sat Jul 16 16:25:20 2016
+&quot;7/16/16&quot;                           Sat Jul 16 16:25:20 2016</code></pre>
+<p>By default, if the year is given <em>last</em>, then <em>month-day-year</em> is assumed, and the library also conveniently handles the presence or absence of leading zeros, as well as whether hyphens (<code>-</code>) or slashes (<code>/</code>) are used as delimiters.</p>
+<p>Significantly more impressive, however, is how <code>parsedatetime</code> handles more complicated, “natural language” inputs:</p>
+<pre class="text"><code>import parsedatetime as pdt
+from datetime import datetime
+
+cal = pdt.Calendar()
+
+examples = [
+    &quot;19 November 1975&quot;,
+    &quot;19 November 75&quot;,
+    &quot;19 Nov 75&quot;,
+    &quot;tomorrow&quot;,
+    &quot;yesterday&quot;,
+    &quot;10 minutes from now&quot;,
+    &quot;the first of January, 2001&quot;,
+    &quot;3 days ago&quot;,
+    &quot;in four days&#39; time&quot;,
+    &quot;two weeks from now&quot;,
+    &quot;three months ago&quot;,
+    &quot;2 weeks and 3 days in the future&quot;,
+]
+
+print(&#39;Now: {}&#39;.format(datetime.now().ctime()), end=&#39;\n\n&#39;)
+print(&#39;{:40s}{:&gt;30s}&#39;.format(&#39;Input&#39;, &#39;Result&#39;))
+print(&#39;=&#39; * 70)
+for e in examples:
+    dt, result = cal.parseDT(e)
+    print(&#39;{:&lt;40s}{:&gt;30}&#39;.format(&#39;&quot;&#39; + e + &#39;&quot;&#39;, dt.ctime()))</code></pre>
+<p>Incredibly, this all works just as you’d hope:</p>
+<pre class="text"><code>Now: Mon Jun 20 08:41:38 2016
+
+Input                                                     Result
+================================================================
+&quot;19 November 1975&quot;                      Wed Nov 19 08:41:38 1975
+&quot;19 November 75&quot;                        Wed Nov 19 08:41:38 1975
+&quot;19 Nov 75&quot;                             Wed Nov 19 08:41:38 1975
+&quot;tomorrow&quot;                              Tue Jun 21 09:00:00 2016
+&quot;yesterday&quot;                             Sun Jun 19 09:00:00 2016
+&quot;10 minutes from now&quot;                   Mon Jun 20 08:51:38 2016
+&quot;the first of January, 2001&quot;            Mon Jan  1 08:41:38 2001
+&quot;3 days ago&quot;                            Fri Jun 17 08:41:38 2016
+&quot;in four days&#39; time&quot;                    Fri Jun 24 08:41:38 2016
+&quot;two weeks from now&quot;                    Mon Jul  4 08:41:38 2016
+&quot;three months ago&quot;                      Sun Mar 20 08:41:38 2016
+&quot;2 weeks and 3 days in the future&quot;      Thu Jul  7 08:41:38 2016</code></pre>
+<p>The urge to combine this with a speech-to-text package like <a href="http://bit.ly/speechrec">SpeechRecognition</a> or <a href="http://bit.ly/wordwatcher">watson-word-watcher</a> (which provides confidence values per word) is almost irresistible, but of course you don’t need complex projects to make use of <code>parsedatetime</code>: even allowing a user to type in a friendly and natural description of a date or time interval might be much more convenient than the usual but frequently clumsy <em>DateTimePicker</em> widgets we’ve become accustomed to.</p>
+<p><strong>NOTE</strong></p>
+<p>Another library featuring excellent datetime parsing abilities is <a href="http://bit.ly/chronyk">Chronyk</a>.</p>
+<h2 id="general-purpose-libraries">General-Purpose Libraries</h2>
+<p>In this chapter we take a look at a few batteries that have not yet been included in the Python standard library, but which would make excellent additions.</p>
+<p>General-purpose libraries are quite rare in the Python world because the standard library covers most areas sufficiently well that library authors usually focus on very specific areas. Here we discuss <code>boltons</code> (a play on the word <em>builtins</em>), which provides a large number of useful additions to the standard library. We also cover the <code>Cython</code> library, which provides facilities for <em>both</em> massively speeding up Python code, as well as bypassing Python’s famous <em>global interpreter lock</em> (GIL) to enable true multi-CPU multi-threading.</p>
+<h3 id="boltons">boltons</h3>
+<p>The <code>boltons</code> library is a general-purpose collection of Python modules that covers a wide range of situations you may encounter. The library is well-maintained and high-quality; it’s well worth adding to your toolset.</p>
+<p>As a general-purpose library, <code>boltons</code> does not have a specific focus. Instead, it contains several smaller libraries that focus on specific areas. In this section I will describe a few of these libraries that <code>boltons</code> offers.</p>
+<h4 id="boltons.cacheutils">boltons.cacheutils</h4>
+<p><code>boltons.cacheutils</code> provides tools for using a <em>cache</em> inside your code. Caches are very useful for saving the results of expensive operations and reusing those previously calculated results.</p>
+<p>The <code>functools</code> module in the <a href="http://bit.ly/functools-docs">standard library</a> already provides a decorator called <code>lru_cache</code>, which can be used to <em>memoize</em> calls: this means that the function remembers the parameters from previous calls, and when the same parameter values appear in a new call, the previous answer is returned directly, bypassing any calculation.</p>
+<p><code>boltons</code> provides similar caching functionality, but with a few convenient tweaks. Consider the following sample, in which we attempt to rewrite some lyrics from Taylor Swift’s <em>1989</em> juggernaut record. We will use tools from <code>boltons.cacheutils</code> to speed up processing time:</p>
+<pre class="text"><code>import json
+import shelve
+import atexit
+from random import choice
+from string import punctuation
+from vocabulary import Vocabulary as vb
+
+
+blank_space = &quot;&quot;&quot;
+Nice to meet you, where you been?
+I could show you incredible things
+Magic, madness, heaven, sin
+Saw you there and I thought
+Oh my God, look at that face
+You look like my next mistake
+Love&#39;s a game, wanna play?
+
+New money, suit and tie
+I can read you like a magazine
+Ain&#39;t it funny, rumors fly
+And I know you heard about me
+So hey, let&#39;s be friends
+I&#39;m dying to see how this one ends
+Grab your passport and my hand
+I can make the bad guys good for a weekend
+&quot;&quot;&quot;
+
+from boltons.cacheutils import LRI, LRU, cached
+
+# Persistent LRU cache for the parts of speech
+cached_data = shelve.open(&#39;cached_data&#39;, writeback=True)
+atexit.register(cached_data.close)
+
+# Retrieve or create the &quot;parts of speech&quot; cache
+cache_POS = cached_data.setdefault(
+    &#39;parts_of_speech&#39;, LRU(max_size=5000))
+
+@cached(cache_POS)
+def part_of_speech(word):
+    items = vb.part_of_speech(word.lower())
+    if items:
+        return json.loads(items)[0][&#39;text&#39;]
+
+# Temporary LRI cache for word substitutions
+cache = LRI(max_size=30)
+
+@cached(cache)
+def synonym(word):
+    items = vb.synonym(word)
+    if items:
+        return choice(json.loads(items))[&#39;text&#39;]
+
+@cached(cache)
+def antonym(word):
+    items = vb.antonym(word)
+    if items:
+        return choice(items[&#39;text&#39;])
+
+for raw_word in blank_space.strip().split(&#39; &#39;):
+    if raw_word == &#39;\n&#39;:
+        print(raw_word)
+        continue
+    alternate = raw_word  # default is the original word.
+    # Remove punctuation
+    word = raw_word.translate(
+        {ord(x): None for x in punctuation})
+    if part_of_speech(word) in [&#39;noun&#39;, &#39;verb&#39;,
+                                &#39;adjective&#39;, &#39;adverb&#39;]:
+        alternate = choice((synonym, antonym))(word) or raw_word
+    print(alternate, end=&#39; &#39;)</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>Our code detects “parts of speech” in order to know which lyrics to change. Looking up words online is slow, so we create a small database using the <code>shelve</code> module in the standard library to save the cache data between runs.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>We use the <code>atexit</code> module, also in the standard library, to make sure that our “parts of speech” cache data will get saved when the program exits.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>Here we obtain the <code>LRU</code> cache provided by <code>boltons.cacheutils</code> that we saved from a previous run.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>Here we use the <code>@cache</code> decorator provided by <code>boltons.cacheutils</code> to enable caching of the <code>part_of_speech()</code> function call. If the <code>word</code> argument has been used in a previous call to this function, the answer will be obtained from the cache rather than a slow call to the Internet.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>For synonyms and antonyms, we used a different kind of cache, called a <em>least recently inserted</em> cache (this choice is explained later in this section). An LRI cache is not provided in the Python Standard Library.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-7"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png" alt="6" /></a></p>
+<p>Here we restrict which kinds of words will be substituted.</p>
+<p><strong>NOTE</strong></p>
+<p>The excellent <code>vocabulary</code> package is used here to provide access to synonyms and antonyms. Install it with <code>pip install vocabulary</code>.</p>
+<p>For brevity, I’ve included only the first verse and chorus. The plan is staggeringly unsophisticated: we’re going to simply swap words with either a synonym or antonym, and which is decided randomly! Iteration over the words is straightforward, but we obtain synonyms and antonyms using the <code>vocabulary</code> package, which internally calls APIs on the Internet to fetch the data. Naturally, this can be slow since the lookup is going to be performed for every word, and this is why a cache will be used. In fact, in this code sample we use two different kinds of caching strategies.</p>
+<p><code>boltons.cacheutils</code> offers two kinds of caches: the <em>least recently used</em> (LRU) version, which is the same as <code>functools.lru_cache</code>, and a simpler <em>least recently inserted</em> (LRI) version, which expires entries based on their insertion order.</p>
+<p>In our code, we use an <em>LRU</em> cache to keep a record of the <em>parts of speech</em> lookups, and we even save this cache to disk so that it can be reused in successive runs.</p>
+<p>We also use an <em>LRI</em> cache to keep a record of word substitutions. For example, if a word is to be swapped with its antonym, the replacement will be stored in the LRI cache so that it can be reused. However, we apply a very small limit to the setting for maximum size on the LRI cache, so that words will fall out of the cache quite regularly. Using an LRI cache with a small maximum size means that the same word will be replaced with the same substitution only locally, say within the same verse; but if that same word appears later in the song (and that word has been dropped from the LRI cache), it might get a different substitution entirely.</p>
+<p>The design of the caches in <code>boltons.cacheutils</code> is great in that it is easy to use the same cache for multiple functions, as we do here for the <code>synonym()</code> and <code>antonym()</code> functions. This means that once a word substitution appears in the cache, a call to <em>either</em> function returns the predetermined result from the same cache.</p>
+<p>Here is an example of the output:</p>
+<pre class="text"><code>Nice to meet you, wherever you been?
+I indeed conduct you astonishing things
+Magic, madness, Hell sin
+Saw you be and I thought
+Oh my God, seek at who face
+You seek same my following mistake
+Love&#39;s a game, wanna play?
+
+New financial satisfy both tie
+I be able read you like a magazine
+Ain&#39;t it funny, rumors fly
+And gladly can you heard substantially me
+So hey, let&#39;s inclination friends
+I&#39;m nascent to visit whatever that one ends
+Grab your passport in addition my hand
+I can take the bad guys ill in exchange for member weekend</code></pre>
+<p>On second thought, perhaps the original was best after all! It is worth noting just how much functionality is possible with a tiny amount of code, as long as the abstractions available to you are powerful enough.</p>
+<p><code>boltons</code> has many features and we cannot cover everything here; however, we can do a whirlwind tour and pick out a few notable APIs that solve problems frequently encountered, e.g., in StackOverflow questions.</p>
+<h4 id="boltons.iterutils">boltons.iterutils</h4>
+<p><code>boltons.iterutils.chunked_iter(src, size)</code> returns pieces of the source iterable in <code>size</code>-sized chunks (this example was copied <a href="http://bit.ly/boltons-chunk">from the docs</a>):</p>
+<pre class="text"><code>&gt;&gt;&gt; list(chunked_iter(range(10), 3))
+[[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]</code></pre>
+<p>A similar requirement that often comes up is to have a moving window (of a particular size) slide over a sequence of data, and you can use <a href="http://bit.ly/boltons-window"><code>boltons.iterutils.windowed_iter</code></a> for that:</p>
+<pre class="text"><code>&gt;&gt;&gt; list(windowed_iter(range(7), 3))
+[(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]</code></pre>
+<p>Note that both <code>chunked_iter()</code> and <code>windowed_iter()</code> can operate on <em>iterables</em>, which means that very large sequences of data can be processed while keeping memory requirements tolerable for your usage scenario.</p>
+<h4 id="boltons.fileutils">boltons.fileutils</h4>
+<p>The <a href="http://bit.ly/boltons-copytree">copytree()</a> function alleviates a particularly irritating behavior of the standard library’s <code>shutil.copytree()</code> function: Boltons’ <code>copytree()</code> will not complain if some or all of the destination file-system tree already exists.</p>
+<p>The <code>boltons.fileutils.AtomicSaver</code> context manager helps to make sure that file-writes are <a href="http://bit.ly/boltons-atom">protected against corruption</a>. It achieves this by writing file data to temporary, or intermediate files, and then using an atomic renaming function to guarantee that the data is consistent. This is particularly valuable if there are multiple readers of a large file, and you want to ensure that the readers only ever see a consistent state, even though you have a (single!) writer changing the file data.</p>
+<h4 id="boltons.debugutils">boltons.debugutils</h4>
+<p>If you’ve ever had a long-running python application, and wished that you could drop into an interactive debugger session to see what was happening, <code>boltons.debugutils.pdb_on_signal()</code> can make that happen. By default, a <code>KeyboardInterrupt</code> handler is automatically set up, which means that by pressing Ctrl-C you can drop immediately into the debugger prompt. This is a really great way to deal with infinite loops if your application is difficult to debug from a fresh start otherwise.</p>
+<h4 id="boltons.strutils">boltons.strutils</h4>
+<p>There are several functions in <code>boltons.strutils</code> that are enormously useful:</p>
+<ul>
+<li><code>slugify()</code>: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.</li>
+<li><code>ordinalize()</code>: given a numerical value, create a string referring to its position:</li>
+</ul>
+<pre class="text"><code>&gt;&gt;&gt; print(ordinalize(1))
+1st
+&gt;&gt;&gt; print(ordinalize(2))
+2nd</code></pre>
+<ul>
+<li><code>cardinalize</code>: given a word and a count, change the word for plurality and <em>preserve case</em>:</li>
+</ul>
+<pre class="text"><code>&gt;&gt;&gt; cardinalize(&#39;python&#39;, 99)
+&#39;pythons&#39;
+&gt;&gt;&gt; cardinalize(&#39;foot&#39;, 6)
+&#39;feet&#39;
+&gt;&gt;&gt; cardinalize(&#39;Foot&#39;, 6)
+&#39;Feet&#39;
+&gt;&gt;&gt; cardinalize(&#39;FOOT&#39;, 6)
+&#39;FEET&#39;
+&gt;&gt;&gt; &#39;blind &#39; + cardinalize(&#39;mouse&#39;, 3)
+&#39;blind mice&#39;</code></pre>
+<ul>
+<li><code>singularize</code> and <code>pluralize</code>:</li>
+</ul>
+<pre class="text"><code>&gt;&gt;&gt; pluralize(&#39;theory&#39;)
+&#39;theories&#39;
+&gt;&gt;&gt; singularize(&#39;mice&#39;)
+&#39;mouse&#39;</code></pre>
+<ul>
+<li><code>bytes2human</code>: convert data sizes into friendler forms:</li>
+</ul>
+<pre class="text"><code>&gt;&gt;&gt; bytes2human(1e6)
+&#39;977K&#39;
+&gt;&gt;&gt; bytes2human(20)
+&#39;20B&#39;
+&gt;&gt;&gt; bytes2human(1024 * 1024)
+&#39;1024K&#39;
+&gt;&gt;&gt; bytes2human(2e4, ndigits=2)
+&#39;19.53K&#39;</code></pre>
+<p>There are several other useful <code>boltons</code> libraries not mentioned here, and I encourage you to at least skim <a href="http://bit.ly/boltons-docs">the documentation</a> to learn about features you can use in your next project.</p>
+<h3 id="cython">Cython</h3>
+<p><a href="http://cython.org/">Cython</a> is a magical tool! As with most magical devices, it is difficult to describe exactly what it is. Cython is a tool that converts Python source code into C source code; this new code is then compiled into a native binary that is linked to the CPython runtime.</p>
+<p>That sounds complicated, but basically Cython lets you convert your Python modules into compiled extension modules. There are two main reasons you might need to do this:</p>
+<ul>
+<li>You want to wrap a C/C++ library, and use it from Python.</li>
+<li>You want to speed up Python code.</li>
+</ul>
+<p>The <em>second</em> reason is the one I’m going to focus on. By adding a few type declarations to your Python source code, you can dramatically speed up certain kinds of functions.</p>
+<p>Consider the following code, which is as simple as I could possibly make it for this example:</p>
+<pre class="text"><code>import array
+
+n = int(1e8)
+a = array.array(&#39;d&#39;, [0.0]) * n
+
+for i in range(n):
+    a[i] = i % 3
+
+print(a[:5])</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO26-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>We’re using the built-in <code>array</code> module.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO26-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>Set the size of our data.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO26-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>Create fictional data: a sequence of double-precision numbers; in reality your data would come from another source such as an image for image-processing applications, or numerical data for science or engineering applications.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO26-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>A very simple loop that modifies our data.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO26-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>Print the modified data; here, we only show the first five entries.</p>
+<p>This code represents the most basic computer processing: data comes in, is transformed, and goes out. The specific code we’re using is quite silly, but I hope it is clear enough so that it will be easy to understand how we implement this in Cython later.</p>
+<p>We can run this program on the command line in the following way:</p>
+<pre class="text"><code>$ time python cythondemoslow.py
+array(&#39;d&#39;, [0.0, 1.0, 2.0, 0.0, 1.0])
+
+real    0m27.622s
+user    0m27.109s
+sys     0m0.443s</code></pre>
+<p>I’ve include the <code>time</code> command to get some performance measurements. Here we can see that this simple program takes around 30 seconds to run.</p>
+<p>In order to use Cython, we need to modify the code slightly to take advantage of the Cython compiler’s features:</p>
+<pre class="text"><code>import array
+
+cdef int n = int(1e8)
+cdef object a = array.array(&#39;d&#39;, [0.0]) * n
+cdef double[:] mv = a
+
+cdef int i
+for i in range(n):
+    mv[i] = i % 3
+
+print(a[:5])</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>We import the array module as before.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p>The variable for the data size, <code>n</code>, now gets a specific datatype.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>This line is new: we create a <em>memory view</em> of the data inside the array <code>a</code>. This allows Cython to generate code that can access the data inside the array directly.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>As with <code>n</code>, we also specify a type for the loop index <code>i</code>.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>The work inside the loop is identical to before, except that we manipulate elements of the <em>memory view</em> rather than <code>a</code> itself.</p>
+<p>Having modified our source code by adding information about native datatypes, we need to make three further departures from the normal Python workflow necessary before running our Cython code.</p>
+<p>The first is that, by convention, we change the file extension of our source-code file to <em>pyx</em> instead of <em>py</em>, to reflect the fact that our source code is no longer normal Python.</p>
+<p>The second is that we must use Cython to <em>compile</em> our source code into a native machine binary file. There are many ways to do this depending on your situation, but here we’re going to go with the simple option and use a command-line tool provided by Cython itself:</p>
+<pre class="text"><code>$ cythonize -b -i cythondemofast.pyx</code></pre>
+<p>Running this command produces many lines of output messages from the compiler, but when the smoke clears you should find a new binary file in the same place as the <code>.pyx</code> file:</p>
+<pre class="text"><code>$ ls -l cythondemofast.cpython-35m-darwin.so
+-rwxr-xr-x@ calebhattingh 140228 3 Jul 15:51
+                            cythondemofast.cpython-35m-darwin.so</code></pre>
+<p>This is a native binary that Cython produced from our slightly modified Python source code! Now we need to run it, and this brings us to the third departure from the normal Python workflow: by default, Cython makes <em>native extensions</em> (as shared libraries), which means you have to import these in the same way you might import other Python extensions that use shared libraries.</p>
+<p>With the first version of our example in ordinary Python, we could run the program easily with <code>python cythondemoslow.py</code>. We can run the code in our compiled <em>Cython</em> version simply by <em>importing</em> the native extension. As before, we include the <code>time</code> for measurement:</p>
+<pre class="text"><code>$ time python -c &quot;import cythondemofast&quot;
+array(&#39;d&#39;, [0.0, 1.0, 2.0, 0.0, 1.0])
+
+real    0m0.751s
+user    0m0.478s
+sys     0m0.270s</code></pre>
+<p>The Cython program gives us a speed-up over the plain Python program of almost 40 times! In larger numerical programs where the time cost of start-up and other initialization is a much smaller part of the overall execution time, the speed-up is usually more than 100 times!</p>
+<p>In the example shown here, all our code was set out in the module itself, but usually you would write functions and after compiling with Cython, and then import these functions into your main Python program. Here’s how Cython can easily integrate into your normal Python workflow:</p>
+<ol type="1">
+<li>Begin your project with normal Python.</li>
+<li>Benchmark your performance.</li>
+<li>If you need more speed, <em>profile</em> your code to find the functions that consume most of the time.</li>
+<li>Convert these functions to Cython functions, and compile the new <code>.pyx</code> Cython modules into native extensions.</li>
+<li>Import the new Cython functions into your main Python program.</li>
+</ol>
+<h4 id="multithreading-with-cython">Multithreading with Cython</h4>
+<p>It won’t take long for a newcomer to the Python world to hear about Python’s so-called GIL, a safety mechanism Python uses to decrease the possibility of problems when using threads.</p>
+<p>Threading is a tool that lets you execute different sections of code in <em>parallel</em>, allowing the operating system to run each section on a separate CPU. The “GIL problem” is that the safety lock that prevents the interpreter state from being clobbered by parallel execution <em>also</em> has the unfortunate effect of limiting the ability of threads to actually run on different CPUs. The net effect is that Python threads do not achieve the parallel performance one would expect based on the availability of CPU resources.</p>
+<p>Cython gives us a way out of this dilemma, and enables multithreading at full performance. This is because <em>native extensions</em> (which is what Cython makes) are allowed to tell the main Python interpreter that they will be well-behaved and don’t need to be protected with the global safety lock. This means that threads containing Cython code can run in a fully parallel way on multiple CPUs; we just need to ask Python for permission.</p>
+<p>In the following code snippet, we demonstrate how to use normal Python threading to speed up the same nonsense calculation I used in previous examples:</p>
+<pre class="text"><code># cython: boundscheck=False, cdivision=True
+import array
+import threading
+
+cpdef void target(double[:] piece) nogil:
+    cdef int i, n = piece.shape[0]
+    with nogil:
+        for i in range(n):
+            piece[i] = i % 3
+
+
+cdef int n = int(1e8)
+cdef object a = array.array(&#39;d&#39;, [0.0]) * n
+
+
+view = memoryview(a)
+piece_size = int(n / 2)
+
+thread1 = threading.Thread(
+    target=target,
+    args=(view[:piece_size],)
+)
+
+thread2 = threading.Thread(
+    target=target,
+    args=(view[piece_size:],)
+)
+
+thread1.start()
+thread2.start()
+
+thread1.join()
+thread2.join()
+
+print(a[:5])</code></pre>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-1"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png" alt="1" /></a></p>
+<p>The threading module in the standard library.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-2"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png" alt="2" /></a></p>
+<p><code>Thread</code> objects want a target function to execute, so we wrap our calculation inside a function. We declare (with the <code>nogil</code> keyword) that our function may want to release the GIL.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-3"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png" alt="3" /></a></p>
+<p>The actual point where the GIL is released. The rest of the function is identical to before.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-4"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png" alt="4" /></a></p>
+<p>Exactly the same as before.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-5"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png" alt="5" /></a></p>
+<p>We create a <em>memory view</em> of the data inside the array. Cython is optimized to work with these kinds of memory views efficiently. (Did you know that <code>memoryview()</code> is a built-in <em>Python</em> function?)<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-6"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png" alt="6" /></a></p>
+<p>We’re going to split up our big data array into two parts.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-7"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/7.png" alt="7" /></a></p>
+<p>Create normal Python threads: we must pass both the target function and the <em>view section</em> as the argument for the function. Note how each thread gets a different part of the view<embed src="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-8" /></p>
+<p>Threads are started.<a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-9"><img src="https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/9.png" alt="9" /></a></p>
+<p>We wait for the threads to complete.</p>
+<p>I’ve also sneakily added a few small optimization options such as disabling bounds checking and enabling the faster “C division.” Cython is very configurable in how it generates C code behind the scenes and <a href="http://docs.cython.org/">the documentation</a> is well worth investigating.</p>
+<p>As before, we must compile our program:</p>
+<pre class="text"><code>$ cythonize -b -i -a cythondemopll.pyx</code></pre>
+<p>Then we can test the impact of our changes:</p>
+<pre class="text"><code>$ time python -c &quot;import cythondemopll&quot;
+array(&#39;d&#39;, [0.0, 1.0, 2.0, 0.0, 1.0])
+
+real    0m0.593s
+user    0m0.390s
+sys     0m0.276s</code></pre>
+<p>The use of threading has given us around 30% improvement over the previous, single-threaded version, and we’re about 50 times faster than the original Python version in this example. For a longer-running program the speedup factor would be even more significant because the startup time for the Python interpreter would account for a smaller portion of the time cost.</p>
+<h4 id="executables-with-cython">Executables with Cython</h4>
+<p>One final trick with Cython is creating executables. So far we’ve been compiling our Cython code for use as a native extension module, which we then import to run. However, Cython also makes it possible to create a native binary executable directly. The key is to invoke <code>cython</code> directly with the <code>--embed</code> option:</p>
+<pre class="text"><code>$ cython --embed cythondemopll.pyx</code></pre>
+<p>This produces a C source file that will compile to an executable rather than a shared library.</p>
+<p>The next step depends on your platform because you must invoke the C compiler directly, but the main thing you need to provide is the path to the Python header file and linking library. This is how it looks on my Mac:</p>
+<pre class="text"><code>$ gcc `python3.5-config --cflags` cythondemopll.c \
+      `python3.5-config --ldflags` -o cythondemopll</code></pre>
+<p>Here I’ve used a utility called <code>python3.5-config</code> that conveniently returns the path to the header file and the Python library, but you could also provide the paths directly.</p>
+<p>The compilation step using <code>gcc</code> produces a <em>native binary</em> executable that can be run directly on the command line:</p>
+<pre class="text"><code>$ ./cythondemopll
+array(&#39;d&#39;, [0.0, 1.0, 2.0, 0.0, 1.0])</code></pre>
+<p>There is much more to learn about Cython, and I’ve made a comprehensive video series, <em>Learning Cython</em> (O’Reilly) that covers all the details. <a href="http://docs.cython.org/#">Cython’s online documentation</a> is also an excellent reference.</p>
+<h3 id="awesome-python">awesome-python</h3>
+<p>Finally, we have <a href="http://bit.ly/awesome-py">awesome-python</a>. It’s not a library, but rather a huge, curated list of a high-quality Python libraries covering a large number of domains. If you have not seen this list before, make sure to reserve some time before browsing because once you begin, you’ll have a hard time tearing yourself away!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>There is much more to discover than what you’ve seen in this report. One of the best things about the Python world is its enormous repository of high-quality libraries.</p>
+<p>You have seen a few of the very special features of the standard library like the <code>collections</code> module, <code>contextlib</code>, the <code>concurrent.futures</code> module, and the <code>logging</code> module. If you do not yet use these heavily, I sincerely hope you try them out in your next project.</p>
+<p>In addition to those standard library modules, we also covered several excellent libraries that are also available to you on the PyPI. You’ve seen how:</p>
+<ul>
+<li><em>flit</em> makes it easy for you to create your own Python packages, and submit them to the PyPI.</li>
+<li>libraries like <em>colorama</em> and <em>begins</em> improve your command-line applications.</li>
+<li>tools like <em>pyqtgraph</em> and <em>pywebview</em> can save you lots of time when creating modern user interfaces, including <em>hug</em>, which can give your applications an easily created web API.</li>
+<li>system libraries like <em>psutil</em> and <em>watchdog</em> can give you a clean integration with the host operating system.</li>
+<li>temporal libraries like <em>arrow</em> and <em>parsedatetime</em> can simplify the tangled mess that working with dates and times often becomes.</li>
+<li>general-purpose libraries like <em>boltons</em> and <em>Cython</em> can further enrich the already powerful facilities in the Python standard library.</li>
+</ul>
+<p>Hopefully you will be able to use one or more of the great libraries in your next project, and I wish you the best of luck!</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608-marker">1</a> Looking for <em>sorted</em> container types? The excellent <a href="http://bit.ly/sorted-cont">sorted containers</a> package has high-performance sorted versions of the <code>list</code>, <code>dict</code>, and <code>set</code> datatypes.</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737068560688-marker">2</a> For instance, this example with <code>setdefault()</code> looks like <code>d.setdefault(k, []).append(...)</code>. The default value is always evaluated, whereas with <code>defaultdict</code> the default value generator is only evaluated when necessary. But there are still cases where you’ll need <code>setdefault()</code>, such as when using different default values depending on the key.</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067445472-marker">3</a> <em>CPython</em> means the specific implementation of the Python language that is written in the C language. There are other implementations of Python, created with various other languages and technologies such as .NET, Java and even subsets of Python itself.</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067174608-marker">4</a> Programs that automate some task, often communicating data across different network services like Twitter, IRC, and Slack.</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066652496-marker">5</a> The <code>X.Y.Z</code> versioning scheme shown here is known as <em>semantic versioning</em> (“semver”), but an alternative scheme worth investigating further is <em>calendar versioning</em>, which you can learn more about at <a href="http://calver.org/"><em>calver.org</em></a>.</p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760-marker">6</a> <code>pip install colorlog</code></p>
+<p><a href="https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737065700880-marker">7</a> Unfortunately, <code>PyQt</code> itself can be either trivial or very tricky to install, depending on your platform. At the time of writing, the stable release of <code>pyqtgraph</code> requires <code>PyQt4</code> for which no prebuilt installer is available on PyPI; however, the development branch of <code>pyqtgraph</code> works with <code>PyQt5</code>, for which a prebuilt, <code>pip</code>-installable version <em>does</em> exist on PyPI. With any luck, by the time you read this a new version of <code>pyqtgraph</code> will have been released!</p>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>more-on-lists</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="more-on-lists">More On Lists</h1>
+<h4 id="creation">Creation <a id="creation"></a></h4>
+<p>In Python, lists are represented by <strong>square brackets</strong>. Therefore, we create a list as follows.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">colors <span class="op">=</span> [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;</span>, <span class="st">&#39;green&#39;</span>]</a></code></pre></div>
+<p>The above list, <code>colors</code> is stored in memory as shown below.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/list-data-structure-python/list-vis.png" alt="List, Visualization" /><figcaption>List, Visualization</figcaption>
+</figure>
+<p>We can also create a list that contains multiple data types, like strings, integers, and floats.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="bu">type</span> <span class="op">=</span> [<span class="st">&#39;hello&#39;</span>, <span class="fl">3.14</span>, <span class="dv">420</span>]</a></code></pre></div>
+<h4 id="accessing-various-elements">Accessing Various Elements <a id="accessing-various-elements"></a></h4>
+<p>Python lists follow a <strong>zero indexing</strong> structure, meaning the list index starts from 0. Nested lists are accessed using <strong>nested indexing</strong>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># List Initialization and Assignment</span></a>
+<a class="sourceLine" id="cb3-2" title="2">colors <span class="op">=</span> [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;</span>, <span class="st">&#39;green&#39;</span>]</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="co"># Output: &#39;red&#39;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="bu">print</span>(colors[<span class="dv">0</span>])</a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co"># Nested List</span></a>
+<a class="sourceLine" id="cb3-8" title="8">nest <span class="op">=</span> [[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>], [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]]</a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="co"># Output: 4</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="bu">print</span>(nest[<span class="dv">1</span>][<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb3-12" title="12"></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="co"># Error Thrown: IndexError</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="bu">print</span>(colors[<span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb3-15" title="15"></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="co"># Error Thrown: TypeError</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="bu">print</span>(colors[<span class="fl">1.0</span>])</a></code></pre></div>
+<p>Python has a very handy <strong>negative indexing</strong> feature as well, which starts from the end of the list:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">colors <span class="op">=</span> [<span class="st">&#39;red&#39;</span>, <span class="st">&#39;blue&#39;</span>, <span class="st">&#39;green&#39;</span>]</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"># Output: &#39;green&#39;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="bu">print</span>(colors[<span class="op">-</span><span class="dv">1</span>])</a></code></pre></div>
+<h4 id="list-slicing-and-reversing">List Slicing and Reversing <a id="list-slicing-and-reversing"></a></h4>
+<p>We can reverse and slice lists using list indices, as follows</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">nums <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>]</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="co"># This notation slices from start index -&gt; stop index - 1</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co"># Output: [0, 1, 2, 3]</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="bu">print</span>(nums[<span class="dv">0</span>:<span class="dv">4</span>])</a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="co"># The third number in the notation defines the step (indices to skip)</span></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="co"># By default, step is 1.</span></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="co"># Output: [0, 2]</span></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="bu">print</span>(nums[<span class="dv">0</span>:<span class="dv">4</span>:<span class="dv">2</span>])</a>
+<a class="sourceLine" id="cb5-11" title="11"></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="co"># If step is a negative number, it slices from the end of list (reverse)</span></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="co"># Output: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="bu">print</span>(nums[::<span class="op">-</span><span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="co"># Output: [0, 1, 2, 3, 4] (beginning to 4th)</span></a>
+<a class="sourceLine" id="cb5-17" title="17"><span class="bu">print</span>(nums[:<span class="op">-</span><span class="dv">5</span>])</a>
+<a class="sourceLine" id="cb5-18" title="18"></a>
+<a class="sourceLine" id="cb5-19" title="19"><span class="co"># Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</span></a>
+<a class="sourceLine" id="cb5-20" title="20"><span class="bu">print</span>(nums[:])</a></code></pre></div>
+<p>For more information regarding list slicing, refer to this <a href="https://stackoverflow.com/questions/509211/understanding-slice-notation">link</a>.</p>
+<h4 id="list-methods">List Methods <a id="list-methods"></a></h4>
+<p><strong>list.index()</strong></p>
+<p><code>list.index()</code> returns the index of a specified element in the list. The syntax is: <code>list.index(element, start, end)</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="co"># vowels list</span></a>
+<a class="sourceLine" id="cb6-2" title="2">vowels <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;i&#39;</span>, <span class="st">&#39;o&#39;</span>, <span class="st">&#39;i&#39;</span>, <span class="st">&#39;u&#39;</span>]</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co"># index of &#39;e&#39; in vowels</span></a>
+<a class="sourceLine" id="cb6-5" title="5">index <span class="op">=</span> vowels.index(<span class="st">&#39;e&#39;</span>)</a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="co"># Output: 1</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="bu">print</span>(index)</a>
+<a class="sourceLine" id="cb6-8" title="8"></a>
+<a class="sourceLine" id="cb6-9" title="9">index <span class="op">=</span> vowels.index(<span class="st">&#39;x&#39;</span>)</a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="co"># Output: Throws ValueError exception</span></a></code></pre></div>
+<p><strong>list.append()</strong></p>
+<p>The <code>list.append()</code> method adds an item at the end of a list.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">fruits <span class="op">=</span> [<span class="st">&#39;apple&#39;</span>]</a>
+<a class="sourceLine" id="cb7-2" title="2">fruits.append(<span class="st">&#39;orange&#39;</span>)</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co"># Output: [&#39;apple&#39;, &#39;orange&#39;]</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="bu">print</span>(fruits)</a></code></pre></div>
+<p><strong>list.extend()</strong></p>
+<p><code>list.extend()</code> extends the list by appending items.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">animals <span class="op">=</span> [<span class="st">&#39;lion&#39;</span>, <span class="st">&#39;tiger&#39;</span>]</a>
+<a class="sourceLine" id="cb8-2" title="2">animals1 <span class="op">=</span> [<span class="st">&#39;wolf&#39;</span>, <span class="st">&#39;panther&#39;</span>]</a>
+<a class="sourceLine" id="cb8-3" title="3">animals.extend(animals1)</a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="bu">print</span>(animals)</a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="co"># Output: [&#39;lion&#39;, &#39;tiger&#39;, &#39;wolf&#39;, &#39;panther&#39;]</span></a></code></pre></div>
+<p><strong>list.insert()</strong></p>
+<p><code>list.insert()</code> inserts an element into the mentioned index.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">nums <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>]</a>
+<a class="sourceLine" id="cb9-2" title="2">nums.insert(<span class="dv">5</span>, <span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="co"># Note: the element 6 is inserted in the index 5</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="bu">print</span>(nums)</a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="co"># Output: [1, 2, 3, 4, 5, 6]</span></a></code></pre></div>
+<p><strong>list.remove()</strong></p>
+<p><code>list.remove()</code> removes the first element that matches from the specified list.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">languages <span class="op">=</span> [<span class="st">&#39;english&#39;</span>, <span class="st">&#39;tamil&#39;</span>, <span class="st">&#39;french&#39;</span>]</a>
+<a class="sourceLine" id="cb10-2" title="2">languages.remove(<span class="st">&#39;tamil&#39;</span>)</a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="bu">print</span>(languages)</a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co"># Output: [&#39;english&#39;, &#39;french&#39;]</span></a>
+<a class="sourceLine" id="cb10-5" title="5"></a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="co"># Throws not in list exception</span></a>
+<a class="sourceLine" id="cb10-7" title="7">languages.remove(<span class="st">&#39;tamil&#39;</span>)</a></code></pre></div>
+<p><strong>list.count(x)</strong></p>
+<p><code>list.count()</code> returns the number of times that ‘x’ appears in the list.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">counts <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="bu">print</span>(<span class="bu">list</span>.count(<span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="co"># Output: 3</span></a></code></pre></div>
+<p><strong>list.pop()</strong></p>
+<p>The <code>list.pop()</code> method removes and returns the element specified in the parameter. If the parameter is not specified, it removes and returns the last element in the list.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">alpha <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>]</a>
+<a class="sourceLine" id="cb12-2" title="2">x <span class="op">=</span> alpha.pop()</a>
+<a class="sourceLine" id="cb12-3" title="3"></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="co"># Output: &#39;e&#39;</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="bu">print</span>(x)</a>
+<a class="sourceLine" id="cb12-6" title="6"><span class="co"># Output: [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]</span></a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="bu">print</span>(alpha)</a></code></pre></div>
+<p><strong>list.reverse()</strong></p>
+<p>The <code>list.reverse()</code> method reverses the list, and updates it. It has no return value.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">alpha <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>]</a>
+<a class="sourceLine" id="cb13-2" title="2">alpha.reverse()</a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="co"># Output: [&#39;e&#39;, &#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;a&#39;]</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="bu">print</span>(alpha)</a></code></pre></div>
+<p><strong>list.sort()</strong></p>
+<p>The <code>list.sort()</code> method sorts the elements of the given list using the syntax: <code>list.sort(key= , reverse= )</code></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="co"># vowels list</span></a>
+<a class="sourceLine" id="cb14-2" title="2">vowels <span class="op">=</span> [<span class="st">&#39;e&#39;</span>, <span class="st">&#39;a&#39;</span>, <span class="st">&#39;u&#39;</span>, <span class="st">&#39;o&#39;</span>, <span class="st">&#39;i&#39;</span>]</a>
+<a class="sourceLine" id="cb14-3" title="3"></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co"># sort the vowels</span></a>
+<a class="sourceLine" id="cb14-5" title="5">vowels.sort()</a>
+<a class="sourceLine" id="cb14-6" title="6"></a>
+<a class="sourceLine" id="cb14-7" title="7"><span class="co"># print vowels</span></a>
+<a class="sourceLine" id="cb14-8" title="8"><span class="bu">print</span>(vowels)</a>
+<a class="sourceLine" id="cb14-9" title="9"><span class="co"># Output: [&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, &#39;u&#39;]</span></a>
+<a class="sourceLine" id="cb14-10" title="10"></a>
+<a class="sourceLine" id="cb14-11" title="11"><span class="co"># sort in reverse</span></a>
+<a class="sourceLine" id="cb14-12" title="12">vowels.sort(reverse<span class="op">=</span><span class="va">True</span>)</a>
+<a class="sourceLine" id="cb14-13" title="13"></a>
+<a class="sourceLine" id="cb14-14" title="14"><span class="co"># print vowels</span></a>
+<a class="sourceLine" id="cb14-15" title="15"><span class="bu">print</span>(vowels)</a>
+<a class="sourceLine" id="cb14-16" title="16"><span class="co"># Output: [&#39;u&#39;, &#39;o&#39;, &#39;i&#39;, &#39;e&#39;, &#39;a&#39;]</span></a></code></pre></div>
+<p><strong>list.copy()</strong></p>
+<p>The <code>list.copy()</code> method copies the list into another list.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">list1 <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb15-2" title="2">list2 <span class="op">=</span> list1.copy()</a>
+<a class="sourceLine" id="cb15-3" title="3"></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="co"># Output: [1, 2, 3]</span></a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="bu">print</span>(list2)</a></code></pre></div>
+<p><strong>list.clear()</strong></p>
+<p>The <code>list.clear()</code> method empties the given list.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">l <span class="op">=</span> [<span class="st">&#39;hello&#39;</span>, <span class="st">&#39;world&#39;</span>]</a>
+<a class="sourceLine" id="cb16-2" title="2"></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="co"># Output: [&#39;hello&#39;, &#39;world&#39;]</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="bu">print</span>(l)</a>
+<a class="sourceLine" id="cb16-5" title="5"></a>
+<a class="sourceLine" id="cb16-6" title="6"><span class="co"># Clearing the list</span></a>
+<a class="sourceLine" id="cb16-7" title="7">l.clear()</a>
+<a class="sourceLine" id="cb16-8" title="8"></a>
+<a class="sourceLine" id="cb16-9" title="9"><span class="co"># Output: []</span></a>
+<a class="sourceLine" id="cb16-10" title="10"><span class="bu">print</span>(l)</a></code></pre></div>
+<h4 id="list-comprehension">List Comprehension <a id="list-comprehension"></a></h4>
+<p>List Comprehensions are advanced features in Python that enable you to create a new list from an existing list, and it consists of expressions within a for statement inside square brackets.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="co"># The below statement creates a list with 5, 10, ...</span></a>
+<a class="sourceLine" id="cb17-2" title="2">p <span class="op">=</span> [<span class="dv">5</span> <span class="op">+</span> x <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)]</a>
+<a class="sourceLine" id="cb17-3" title="3"></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="co"># Output: [5, 10, 15, 20, 25]</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="bu">print</span>(p)</a></code></pre></div>
+<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+<p>Lists are one of the most commonly used and most powerful data structures in Python. If one manages to master lists, he/she will perform very well in programming interviews. Once you’re done reading and using the list methods, check out the below links and start solving programs based on lists.</p>
+<h2 id="strings-lists-and-tuples">Strings, lists, and tuples</h2>
+<h3 id="sequence-data-types">3.1. Sequence data types</h3>
+<p>Last chapter we introduced Python’s built-in types <code>int</code>, <code>float</code>, and <code>str</code>, and we stumbled upon <code>tuple</code>.</p>
+<p>Integers and floats are <strong>numeric types</strong>, which means they hold numbers. We can use the numeric operators we saw last chapter with them to form numeric expressions. The Python interpreter can then evaluate these expressions to produce numeric values, making Python a very powerful <a href="http://en.wikipedia.org/wiki/Calculator">calculator</a>.</p>
+<p>Strings, lists, and tuples are all <strong>sequence types</strong>, so called because they behave like a <a href="http://en.wikipedia.org/wiki/Sequence">sequence</a> - an ordered collection of objects.</p>
+<p>Squence types are qualitatively different from numeric types because they are <strong>compound data types</strong> - meaning they are made up of smaller pieces. In the case of strings, they’re made up of smaller strings, each containing one <a href="http://en.wikipedia.org/wiki/Character_%28computing%29">character</a>. There is also the <strong>empty string</strong>, containing no characters at all.</p>
+<p>In the case of lists or tuples, they are made up of <strong>elements</strong>, which are values of any Python datatype, including other lists and tuples.</p>
+<p><strong>Lists</strong> are enclosed in square brackets (<code>[</code> and <code>]</code>) and <strong>tuples</strong> in parentheses (<code>(</code> and <code>)</code>).</p>
+<p>A list containing no elements is called an <em>empty list</em>, and a tuple with no elements is an <em>empty tuple</em>.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">[<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">40</span>, <span class="dv">50</span>]</a>
+<a class="sourceLine" id="cb18-2" title="2">[<span class="st">&quot;spam&quot;</span>, <span class="st">&quot;bungee&quot;</span>, <span class="st">&quot;swallow&quot;</span>]</a>
+<a class="sourceLine" id="cb18-3" title="3">(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb18-4" title="4">(<span class="st">&quot;two&quot;</span>, <span class="st">&quot;four&quot;</span>, <span class="st">&quot;six&quot;</span>, <span class="st">&quot;eight&quot;</span>)</a>
+<a class="sourceLine" id="cb18-5" title="5">[(<span class="st">&quot;cheese&quot;</span>, <span class="st">&quot;queso&quot;</span>), (<span class="st">&quot;red&quot;</span>, <span class="st">&quot;rojo&quot;</span>), (<span class="st">&quot;school&quot;</span>, <span class="st">&quot;escuela&quot;</span>)]</a></code></pre></div>
+<p>The first example is a list of five integers, and the next is a list of three strings. The third is a tuple containing four integers, followed by a tuple containing four strings. The last is a list containing three tuples, each of which contains a pair of strings.</p>
+<p>Depending on what we are doing, we may want to treat a compound data type as a single thing, or we may want to access its parts. This ambiguity is useful.</p>
+<p>Note</p>
+<p>It is possible to drop the parentheses when specifiying a tuple, and only use a comma seperated list of values:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> thing <span class="op">=</span> <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span></a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(thing)</a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;tuple&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="op">&gt;&gt;&gt;</span> thing</a>
+<a class="sourceLine" id="cb19-5" title="5">(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>)</a></code></pre></div>
+<p>Also, it is required to include a comma when specifying a tuple with only one element:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="op">&gt;&gt;&gt;</span> singleton <span class="op">=</span> (<span class="dv">2</span>,)</a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(singleton)</a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;tuple&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb20-4" title="4"><span class="op">&gt;&gt;&gt;</span> not_tuple <span class="op">=</span> (<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(not_tuple)</a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb20-7" title="7"><span class="op">&gt;&gt;&gt;</span> empty_tuple <span class="op">=</span> ()</a>
+<a class="sourceLine" id="cb20-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(empty_tuple)</a>
+<a class="sourceLine" id="cb20-9" title="9"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;tuple&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p>Except for the case of the empty tuple, it is really the commas, not the parentheses, that tell Python it is a tuple.</p>
+<h3 id="working-with-the-parts-of-a-sequence">3.2. Working with the parts of a sequence</h3>
+<p>The sequence types share a common set of operations.</p>
+<h4 id="indexing">3.2.1. Indexing</h4>
+<p>The <strong>indexing operator</strong> (<code>[</code> <code>]</code>) selects a single element from a sequence. The expression inside brackets is called the <strong>index</strong>, and must be an integer value. The index <em>indicates</em> which element to select, hence its name.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="op">&gt;&gt;&gt;</span> fruit <span class="op">=</span> <span class="st">&quot;banana&quot;</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="op">&gt;&gt;&gt;</span> fruit[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="co">&#39;a&#39;</span></a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="op">&gt;&gt;&gt;</span> fruits <span class="op">=</span> [<span class="st">&#39;apples&#39;</span>, <span class="st">&#39;cherries&#39;</span>, <span class="st">&#39;pears&#39;</span>]</a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="op">&gt;&gt;&gt;</span> fruits[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="co">&#39;apples&#39;</span></a>
+<a class="sourceLine" id="cb21-7" title="7"><span class="op">&gt;&gt;&gt;</span> prices <span class="op">=</span> (<span class="fl">3.99</span>, <span class="fl">6.00</span>, <span class="fl">10.00</span>, <span class="fl">5.25</span>)</a>
+<a class="sourceLine" id="cb21-8" title="8"><span class="op">&gt;&gt;&gt;</span> prices[<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb21-9" title="9"><span class="fl">5.25</span></a>
+<a class="sourceLine" id="cb21-10" title="10"><span class="op">&gt;&gt;&gt;</span> pairs <span class="op">=</span> [(<span class="st">&#39;cheese&#39;</span>, <span class="st">&#39;queso&#39;</span>), (<span class="st">&#39;red&#39;</span>, <span class="st">&#39;rojo&#39;</span>), (<span class="st">&#39;school&#39;</span>, <span class="st">&#39;escuela&#39;</span>)]</a>
+<a class="sourceLine" id="cb21-11" title="11"><span class="op">&gt;&gt;&gt;</span> pairs[<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb21-12" title="12">(<span class="st">&#39;school&#39;</span>, <span class="st">&#39;escuela&#39;</span>)</a></code></pre></div>
+<p>The expression <code>fruit[1]</code> selects the character with index <code>1</code> from <code>fruit</code>, and creates a new string containing just this one character, which you may be surprised to see is <code>'a'</code>.</p>
+<p>You probably expected to see <code>'b'</code>, but computer scientists typically start counting from zero, not one. Think of the index as the numbers on a ruler measuring how many elements you have moved into the sequence from the beginning. Both rulers and indices start at <code>0</code>.</p>
+<h4 id="length">3.2.2. Length</h4>
+<p>Last chapter you saw the <code>len</code> function used to get the number of characters in a string:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(<span class="st">&#39;banana&#39;</span>)</a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="dv">6</span></a></code></pre></div>
+<p>With lists and tuples, <code>len</code> returns the number of elements in the sequence:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>([<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>])</a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="dv">4</span></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>((<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">12</span>))</a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="dv">6</span></a>
+<a class="sourceLine" id="cb23-5" title="5"><span class="op">&gt;&gt;&gt;</span> pairs <span class="op">=</span> [(<span class="st">&#39;cheese&#39;</span>, <span class="st">&#39;queso&#39;</span>), (<span class="st">&#39;red&#39;</span>, <span class="st">&#39;rojo&#39;</span>), (<span class="st">&#39;school&#39;</span>, <span class="st">&#39;escuela&#39;</span>)]</a>
+<a class="sourceLine" id="cb23-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(pairs)</a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="dv">3</span></a></code></pre></div>
+<h4 id="accessing-elements-at-the-end-of-a-sequence">3.2.3. Accessing elements at the end of a sequence</h4>
+<p>It is common in computer programming to need to access elements at the end of a sequence. Now that you have seen the <code>len</code> function, you might be tempted to try something like this:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="op">&gt;&gt;&gt;</span> seq <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="op">&gt;&gt;&gt;</span> last <span class="op">=</span> seq[<span class="bu">len</span>(seq)]       <span class="co"># ERROR!</span></a></code></pre></div>
+<p>That won’t work. It causes the runtime error <code>IndexError: list index out of range</code>. The reason is that <code>len(seq)</code> returns the number of elements in the list, 16, but there is no element at index position 16 in <code>seq</code>.</p>
+<p>Since we started counting at zero, the sixteen indices are numbered 0 to 15. To get the last element, we have to subtract 1 from the length:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="op">&gt;&gt;&gt;</span> last <span class="op">=</span> seq[<span class="bu">len</span>(seq) <span class="op">-</span> <span class="dv">1</span>]</a></code></pre></div>
+<p>This is such a common in pattern that Python provides a short hand notation for it, <strong>negative indexing</strong>, which counts backward from the end of the sequence.</p>
+<p>The expression <code>seq[-1]</code> yields the last element, <code>seq[-2]</code> yields the second to last, and so on.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="op">&gt;&gt;&gt;</span> prime_nums <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">17</span>, <span class="dv">19</span>, <span class="dv">23</span>, <span class="dv">29</span>, <span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="op">&gt;&gt;&gt;</span> prime_nums[<span class="op">-</span><span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="dv">29</span></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="op">&gt;&gt;&gt;</span> classmates <span class="op">=</span> (<span class="st">&quot;Alejandro&quot;</span>, <span class="st">&quot;Ed&quot;</span>, <span class="st">&quot;Kathryn&quot;</span>, <span class="st">&quot;Presila&quot;</span>, <span class="st">&quot;Sean&quot;</span>, <span class="st">&quot;Peter&quot;</span>)</a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="op">&gt;&gt;&gt;</span> classmates[<span class="op">-</span><span class="dv">5</span>]</a>
+<a class="sourceLine" id="cb26-6" title="6"><span class="co">&#39;Ed&#39;</span></a>
+<a class="sourceLine" id="cb26-7" title="7"><span class="op">&gt;&gt;&gt;</span> word <span class="op">=</span> <span class="st">&quot;Alphabet&quot;</span></a>
+<a class="sourceLine" id="cb26-8" title="8"><span class="op">&gt;&gt;&gt;</span> word[<span class="op">-</span><span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb26-9" title="9"><span class="co">&#39;b&#39;</span></a></code></pre></div>
+<h4 id="traversal-and-the-for-loop">3.2.4. Traversal and the <code>for</code> loop</h4>
+<p>A lot of computations involve processing a sequence one element at a time. The most common pattern is to start at the beginning, select each element in turn, do something to it, and continue until the end. This pattern of processing is called a <strong>traversal</strong>.</p>
+<p>Python’s <code>for</code> loop makes traversal easy to express:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1">prime_nums <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">17</span>, <span class="dv">19</span>, <span class="dv">23</span>, <span class="dv">29</span>, <span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb27-2" title="2"></a>
+<a class="sourceLine" id="cb27-3" title="3"><span class="cf">for</span> num <span class="kw">in</span> prime_nums:</a>
+<a class="sourceLine" id="cb27-4" title="4">    <span class="bu">print</span>(num <span class="op">**</span> <span class="dv">2</span>)</a></code></pre></div>
+<p>Note</p>
+<p>We will discuss looping in greater detail in the next chapter. For now just note that the colon (:) at the end of the first line and the indentation on the second line are both required for this statement to be syntactically correct.</p>
+<h3 id="enumerate">3.3. <code>enumerate</code></h3>
+<p>As the standard <code>for</code> loop traverses a sequence, it assigns each <em>value</em> in the sequence to the loop variable in the order it occurs in the sequence. Sometimes it is helpful to have both the value and the index of each element. The <code>enumerate</code> function gives us this:</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1">fruits <span class="op">=</span> [<span class="st">&#39;apples&#39;</span>, <span class="st">&#39;bananas&#39;</span>, <span class="st">&#39;blueberries&#39;</span>, <span class="st">&#39;oranges&#39;</span>, <span class="st">&#39;mangos&#39;</span>]</a>
+<a class="sourceLine" id="cb28-2" title="2"></a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="cf">for</span> index, fruit <span class="kw">in</span> <span class="bu">enumerate</span>(fruits):</a>
+<a class="sourceLine" id="cb28-4" title="4">    <span class="bu">print</span>(<span class="st">&quot;The fruit, &quot;</span> <span class="op">+</span> fruit <span class="op">+</span> <span class="st">&quot;, is in position &quot;</span> <span class="op">+</span> <span class="bu">str</span>(index) <span class="op">+</span> <span class="st">&quot;.&quot;</span>)</a></code></pre></div>
+<h4 id="slices">3.3.1. Slices</h4>
+<p>A subsequence of a sequence is called a <strong>slice</strong> and the operation that extracts a subsequence is called <strong>slicing</strong>. Like with indexing, we use square brackets (<code>[</code> <code>]</code>) as the slice operator, but instead of one integer value inside we have two, seperated by a colon (<code>:</code>):</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="op">&gt;&gt;&gt;</span> singers <span class="op">=</span> <span class="st">&quot;Peter, Paul, and Mary&quot;</span></a>
+<a class="sourceLine" id="cb29-2" title="2"><span class="op">&gt;&gt;&gt;</span> singers[<span class="dv">0</span>:<span class="dv">5</span>]</a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="co">&#39;Peter&#39;</span></a>
+<a class="sourceLine" id="cb29-4" title="4"><span class="op">&gt;&gt;&gt;</span> singers[<span class="dv">7</span>:<span class="dv">11</span>]</a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="co">&#39;Paul&#39;</span></a>
+<a class="sourceLine" id="cb29-6" title="6"><span class="op">&gt;&gt;&gt;</span> singers[<span class="dv">17</span>:<span class="dv">21</span>]</a>
+<a class="sourceLine" id="cb29-7" title="7"><span class="co">&#39;Mary&#39;</span></a>
+<a class="sourceLine" id="cb29-8" title="8"><span class="op">&gt;&gt;&gt;</span> classmates <span class="op">=</span> (<span class="st">&quot;Alejandro&quot;</span>, <span class="st">&quot;Ed&quot;</span>, <span class="st">&quot;Kathryn&quot;</span>, <span class="st">&quot;Presila&quot;</span>, <span class="st">&quot;Sean&quot;</span>, <span class="st">&quot;Peter&quot;</span>)</a>
+<a class="sourceLine" id="cb29-9" title="9"><span class="op">&gt;&gt;&gt;</span> classmates[<span class="dv">2</span>:<span class="dv">4</span>]</a>
+<a class="sourceLine" id="cb29-10" title="10">(<span class="st">&#39;Kathryn&#39;</span>, <span class="st">&#39;Presila&#39;</span>)</a></code></pre></div>
+<p>The operator <code>[n:m]</code> returns the part of the sequence from the n’th element to the m’th element, including the first but excluding the last. This behavior is counter-intuitive; it makes more sense if you imagine the indices pointing <em>between</em> the characters, as in the following diagram:<img src="https://www.openbookproject.net/books/bpp4awd/_images/banana.png" alt="‘banana’ string" /></p>
+<p>If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string. Thus:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="op">&gt;&gt;&gt;</span> fruit <span class="op">=</span> <span class="st">&quot;banana&quot;</span></a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="op">&gt;&gt;&gt;</span> fruit[:<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="co">&#39;ban&#39;</span></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="op">&gt;&gt;&gt;</span> fruit[<span class="dv">3</span>:]</a>
+<a class="sourceLine" id="cb30-5" title="5"><span class="co">&#39;ana&#39;</span></a></code></pre></div>
+<p>What do you think <code>s[:]</code> means? What about <code>classmates[4:]</code>?</p>
+<p>Negative indexes are also allowed, so</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="op">&gt;&gt;&gt;</span> fruit[<span class="op">-</span><span class="dv">2</span>:]</a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="co">&#39;na&#39;</span></a>
+<a class="sourceLine" id="cb31-3" title="3"><span class="op">&gt;&gt;&gt;</span> classmates[:<span class="op">-</span><span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb31-4" title="4">(<span class="st">&#39;Alejandro&#39;</span>, <span class="st">&#39;Ed&#39;</span>, <span class="st">&#39;Kathryn&#39;</span>, <span class="st">&#39;Presila&#39;</span>)</a></code></pre></div>
+<p>Tip</p>
+<p>Developing a firm understanding of how slicing works is important. Keep creating your own “experiments” with sequences and slices until you can consistently predict the result of a slicing operation before you run it.</p>
+<p>When you slice a sequence, the resulting subsequence always has the same type as the sequence from which it was derived. This is not generally true with indexing, except in the case of strings.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="op">&gt;&gt;&gt;</span> strange_list <span class="op">=</span> [(<span class="dv">1</span>, <span class="dv">2</span>), [<span class="dv">1</span>, <span class="dv">2</span>], <span class="st">&#39;12&#39;</span>, <span class="dv">12</span>, <span class="fl">12.0</span>]</a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(strange_list[<span class="dv">0</span>], <span class="bu">type</span>(strange_list[<span class="dv">0</span>]))</a>
+<a class="sourceLine" id="cb32-3" title="3">(<span class="dv">1</span>, <span class="dv">2</span>) <span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;tuple&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(strange_list[<span class="dv">0</span>:<span class="dv">1</span>], <span class="bu">type</span>(strange_list[<span class="dv">0</span>:<span class="dv">1</span>]))</a>
+<a class="sourceLine" id="cb32-5" title="5">[(<span class="dv">1</span>, <span class="dv">2</span>)] <span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb32-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(strange_list[<span class="dv">2</span>], <span class="bu">type</span>(strange_list[<span class="dv">2</span>]))</a>
+<a class="sourceLine" id="cb32-7" title="7"><span class="dv">12</span> <span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb32-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(strange_list[<span class="dv">2</span>:<span class="dv">3</span>], <span class="bu">type</span>(strange_list[<span class="dv">2</span>:<span class="dv">3</span>]))</a>
+<a class="sourceLine" id="cb32-9" title="9">[<span class="dv">12</span>] <span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb32-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>While the elements of a list (or tuple) can be of any type, no matter how you slice it, a slice of a list is a list.</p>
+<h4 id="the-in-operator">3.3.2. The <code>in</code> operator</h4>
+<p>The <code>in</code> operator returns whether a given element is contained in a list or tuple:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="op">&gt;&gt;&gt;</span> stuff <span class="op">=</span> [<span class="st">&#39;this&#39;</span>, <span class="st">&#39;that&#39;</span>, <span class="st">&#39;these&#39;</span>, <span class="st">&#39;those&#39;</span>]</a>
+<a class="sourceLine" id="cb33-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;this&#39;</span> <span class="kw">in</span> stuff</a>
+<a class="sourceLine" id="cb33-3" title="3"><span class="va">True</span></a>
+<a class="sourceLine" id="cb33-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;everything&#39;</span> <span class="kw">in</span> stuff</a>
+<a class="sourceLine" id="cb33-5" title="5"><span class="va">False</span></a>
+<a class="sourceLine" id="cb33-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="dv">4</span> <span class="kw">in</span> (<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb33-7" title="7"><span class="va">True</span></a>
+<a class="sourceLine" id="cb33-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span> <span class="kw">in</span> (<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb33-9" title="9"><span class="va">False</span></a></code></pre></div>
+<p><code>in</code> works somewhat differently with strings. It evaluates to <code>True</code> if one string is a substring of another:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;p&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="va">True</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;i&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb34-4" title="4"><span class="va">False</span></a>
+<a class="sourceLine" id="cb34-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;ap&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb34-6" title="6"><span class="va">True</span></a>
+<a class="sourceLine" id="cb34-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;pa&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb34-8" title="8"><span class="va">False</span></a></code></pre></div>
+<p>Note that a string is a substring of itself, and the empty string is a substring of any other string. (Also note that computer programmers like to think about these edge cases quite carefully!)</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;a&#39;</span> <span class="kw">in</span> <span class="st">&#39;a&#39;</span></a>
+<a class="sourceLine" id="cb35-2" title="2"><span class="va">True</span></a>
+<a class="sourceLine" id="cb35-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;apple&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="va">True</span></a>
+<a class="sourceLine" id="cb35-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;&#39;</span> <span class="kw">in</span> <span class="st">&#39;a&#39;</span></a>
+<a class="sourceLine" id="cb35-6" title="6"><span class="va">True</span></a>
+<a class="sourceLine" id="cb35-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;&#39;</span> <span class="kw">in</span> <span class="st">&#39;apple&#39;</span></a>
+<a class="sourceLine" id="cb35-8" title="8"><span class="va">True</span></a></code></pre></div>
+<h3 id="objects-and-methods">3.4. Objects and methods</h3>
+<p>Strings, lists, and tuples are <a href="http://en.wikipedia.org/wiki/Object_%28computer_science%29">objects</a>, which means that they not only hold values, but have built-in behaviors called <a href="http://en.wikipedia.org/wiki/Method_%28computer_programming%29">methods</a>, that act on the values in the object.</p>
+<p>Let’s look at some string methods in action to see how this works.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;apple&#39;</span>.upper()</a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="co">&#39;APPLE&#39;</span></a>
+<a class="sourceLine" id="cb36-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;COSATU&#39;</span>.lower()</a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="co">&#39;cosatu&#39;</span></a>
+<a class="sourceLine" id="cb36-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;rojina&#39;</span>.capitalize()</a>
+<a class="sourceLine" id="cb36-6" title="6"><span class="co">&#39;Rojina&#39;</span></a>
+<a class="sourceLine" id="cb36-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;42&#39;</span>.isdigit()</a>
+<a class="sourceLine" id="cb36-8" title="8"><span class="va">True</span></a>
+<a class="sourceLine" id="cb36-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;four&#39;</span>.isdigit()</a>
+<a class="sourceLine" id="cb36-10" title="10"><span class="va">False</span></a>
+<a class="sourceLine" id="cb36-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;   remove_the_spaces   &#39;</span>.strip()</a>
+<a class="sourceLine" id="cb36-12" title="12"><span class="co">&#39;remove_the_spaces&#39;</span></a>
+<a class="sourceLine" id="cb36-13" title="13"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;Mississippi&#39;</span>.startswith(<span class="st">&#39;Miss&#39;</span>)</a>
+<a class="sourceLine" id="cb36-14" title="14"><span class="va">True</span></a>
+<a class="sourceLine" id="cb36-15" title="15"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;Aardvark&#39;</span>.startswith(<span class="st">&#39;Ant&#39;</span>)</a>
+<a class="sourceLine" id="cb36-16" title="16"><span class="va">False</span></a></code></pre></div>
+<p>Now let’s learn to describe what we just saw. Each string in the above examples is followed by a <strong>dot operator</strong>, a method name, and a <strong>parameter list</strong>, which may be empty.</p>
+<p>In the first example, the string <code>'apple'</code> is followed by the dot operator and then the <code>upper()</code> method, which has an empty parameter list. We say that the “<code>upper()</code> method is <strong>invoked</strong> on the string, <code>'apple'</code>. Invoking the method causes an action to take place using the value on which the method is invoked. The action produces a result, in this case the string value <code>'Apple'</code>. We say that the <code>upper()</code> method <strong>returns</strong> the string <code>'Apple'</code> when it is invoked on (or <em>called on</em>) the string <code>'apple'</code>.</p>
+<p>In the fourth example, the method <code>isdigit()</code> (again with an empty parameter list) is invoked on the string <code>'42'</code>. Since each of the characters in the string represents a digit, the <code>isdigit()</code> method returns the boolean value <code>True</code>. Invoking <code>isdigit()</code> on <code>'four'</code> produces <code>False</code>.</p>
+<p>The <code>strip()</code> removes leading and trailing whitespace.</p>
+<h3 id="the-dir-function-and-docstrings">3.5. The <code>dir()</code> function and docstrings</h3>
+<p>The previous section introduced several of the methods of string objects. To find all the methods that strings have, we can use Python’s built-in <code>dir</code> function:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"> <span class="op">&gt;&gt;&gt;</span> <span class="bu">dir</span>(<span class="bu">str</span>)</a>
+<a class="sourceLine" id="cb37-2" title="2"> [<span class="st">&#39;__add__&#39;</span>, <span class="st">&#39;__class__&#39;</span>, <span class="st">&#39;__contains__&#39;</span>, <span class="st">&#39;__delattr__&#39;</span>, <span class="st">&#39;__doc__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-3" title="3">  <span class="st">&#39;__eq__&#39;</span>, <span class="st">&#39;__format__&#39;</span>, <span class="st">&#39;__ge__&#39;</span>, <span class="st">&#39;__getattribute__&#39;</span>, <span class="st">&#39;__getitem__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-4" title="4">  <span class="st">&#39;__getnewargs__&#39;</span>, <span class="st">&#39;__gt__&#39;</span>, <span class="st">&#39;__hash__&#39;</span>, <span class="st">&#39;__init__&#39;</span>, <span class="st">&#39;__iter__&#39;</span>, <span class="st">&#39;__le__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-5" title="5">  <span class="st">&#39;__len__&#39;</span>, <span class="st">&#39;__lt__&#39;</span>, <span class="st">&#39;__mod__&#39;</span>, <span class="st">&#39;__mul__&#39;</span>, <span class="st">&#39;__ne__&#39;</span>, <span class="st">&#39;__new__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-6" title="6">  <span class="st">&#39;__reduce__&#39;</span>, <span class="st">&#39;__reduce_ex__&#39;</span>, <span class="st">&#39;__repr__&#39;</span>, <span class="st">&#39;__rmod__&#39;</span>, <span class="st">&#39;__rmul__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-7" title="7">  <span class="st">&#39;__setattr__&#39;</span>, <span class="st">&#39;__sizeof__&#39;</span>, <span class="st">&#39;__str__&#39;</span>, <span class="st">&#39;__subclasshook__&#39;</span>,</a>
+<a class="sourceLine" id="cb37-8" title="8">  <span class="st">&#39;capitalize&#39;</span>, <span class="st">&#39;center&#39;</span>, <span class="st">&#39;count&#39;</span>, <span class="st">&#39;encode&#39;</span>, <span class="st">&#39;endswith&#39;</span>, <span class="st">&#39;expandtabs&#39;</span>,</a>
+<a class="sourceLine" id="cb37-9" title="9">  <span class="st">&#39;find&#39;</span>, <span class="st">&#39;format&#39;</span>, <span class="st">&#39;format_map&#39;</span>, <span class="st">&#39;index&#39;</span>, <span class="st">&#39;isalnum&#39;</span>, <span class="st">&#39;isalpha&#39;</span>,</a>
+<a class="sourceLine" id="cb37-10" title="10">  <span class="st">&#39;isdecimal&#39;</span>, <span class="st">&#39;isdigit&#39;</span>, <span class="st">&#39;isidentifier&#39;</span>, <span class="st">&#39;islower&#39;</span>, <span class="st">&#39;isnumeric&#39;</span>,</a>
+<a class="sourceLine" id="cb37-11" title="11">  <span class="st">&#39;isprintable&#39;</span>, <span class="st">&#39;isspace&#39;</span>, <span class="st">&#39;istitle&#39;</span>, <span class="st">&#39;isupper&#39;</span>, <span class="st">&#39;join&#39;</span>, <span class="st">&#39;ljust&#39;</span>,</a>
+<a class="sourceLine" id="cb37-12" title="12">  <span class="st">&#39;lower&#39;</span>, <span class="st">&#39;lstrip&#39;</span>, <span class="st">&#39;maketrans&#39;</span>, <span class="st">&#39;partition&#39;</span>, <span class="st">&#39;replace&#39;</span>, <span class="st">&#39;rfind&#39;</span>,</a>
+<a class="sourceLine" id="cb37-13" title="13">  <span class="st">&#39;rindex&#39;</span>, <span class="st">&#39;rjust&#39;</span>, <span class="st">&#39;rpartition&#39;</span>, <span class="st">&#39;rsplit&#39;</span>, <span class="st">&#39;rstrip&#39;</span>, <span class="st">&#39;split&#39;</span>,</a>
+<a class="sourceLine" id="cb37-14" title="14">  <span class="st">&#39;splitlines&#39;</span>, <span class="st">&#39;startswith&#39;</span>, <span class="st">&#39;strip&#39;</span>, <span class="st">&#39;swapcase&#39;</span>, <span class="st">&#39;title&#39;</span>, <span class="st">&#39;translate&#39;</span>,</a>
+<a class="sourceLine" id="cb37-15" title="15">  <span class="st">&#39;upper&#39;</span>, <span class="st">&#39;zfill&#39;</span>]</a>
+<a class="sourceLine" id="cb37-16" title="16"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>We will postpone talking about the ones that begin with double underscores (<code>__</code>) until later. You can find out more about each of these methods by printing out their <a href="http://en.wikipedia.org/wiki/Docstring">docstrings</a>. To find out what the <code>replace</code> method does, for example, we do this:</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">str</span>.replace.__doc__)</a>
+<a class="sourceLine" id="cb38-2" title="2">S.replace(old, new[, count]) <span class="op">-&gt;</span> <span class="bu">str</span></a>
+<a class="sourceLine" id="cb38-3" title="3"></a>
+<a class="sourceLine" id="cb38-4" title="4">Return a copy of S <span class="cf">with</span> <span class="bu">all</span> occurrences of substring</a>
+<a class="sourceLine" id="cb38-5" title="5">old replaced by new.  If the optional argument count <span class="kw">is</span></a>
+<a class="sourceLine" id="cb38-6" title="6">given, only the first count occurrences are replaced.</a></code></pre></div>
+<p>Using this information, we can try using the replace method to varify that we know how it works.</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;Mississippi&#39;</span>.replace(<span class="st">&#39;i&#39;</span>, <span class="st">&#39;X&#39;</span>)</a>
+<a class="sourceLine" id="cb39-2" title="2"><span class="co">&#39;MXssXssXppX&#39;</span></a>
+<a class="sourceLine" id="cb39-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;Mississippi&#39;</span>.replace(<span class="st">&#39;p&#39;</span>, <span class="st">&#39;MO&#39;</span>)</a>
+<a class="sourceLine" id="cb39-4" title="4"><span class="co">&#39;MississiMOMOi&#39;</span></a>
+<a class="sourceLine" id="cb39-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;Mississippi&#39;</span>.replace(<span class="st">&#39;i&#39;</span>, <span class="st">&#39;&#39;</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb39-6" title="6"><span class="co">&#39;Mssssippi&#39;</span></a></code></pre></div>
+<p>The first example replaces all occurances of <code>'i'</code> with <code>'X'</code>. The second replaces the single character <code>'p'</code> with the two characters <code>'MO'</code>. The third example replaces the first two occurances of <code>'i''</code> with the empty string.</p>
+<h3 id="count-and-index-methods">3.6. <code>count</code> and <code>index</code> methods</h3>
+<p>There are two methods that are common to all three sequence types: <code>count</code> and <code>index</code>. Let’s look at their docstrings to see what they do.</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">str</span>.count.__doc__)</a>
+<a class="sourceLine" id="cb40-2" title="2">S.count(sub[, start[, end]]) <span class="op">-&gt;</span> <span class="bu">int</span></a>
+<a class="sourceLine" id="cb40-3" title="3"></a>
+<a class="sourceLine" id="cb40-4" title="4">Return the number of non<span class="op">-</span>overlapping occurrences of substring sub <span class="kw">in</span></a>
+<a class="sourceLine" id="cb40-5" title="5">string S[start:end].  Optional arguments start <span class="kw">and</span> end are</a>
+<a class="sourceLine" id="cb40-6" title="6">interpreted <span class="im">as</span> <span class="kw">in</span> <span class="bu">slice</span> notation.</a>
+<a class="sourceLine" id="cb40-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">tuple</span>.count.__doc__)</a>
+<a class="sourceLine" id="cb40-8" title="8">T.count(value) <span class="op">-&gt;</span> integer <span class="op">--</span> <span class="cf">return</span> number of occurrences of value</a>
+<a class="sourceLine" id="cb40-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">list</span>.count.__doc__)</a>
+<a class="sourceLine" id="cb40-10" title="10">L.count(value) <span class="op">-&gt;</span> integer <span class="op">--</span> <span class="cf">return</span> number of occurrences of value</a>
+<a class="sourceLine" id="cb40-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">str</span>.index.__doc__)</a>
+<a class="sourceLine" id="cb40-12" title="12">S.index(sub[, start[, end]]) <span class="op">-&gt;</span> <span class="bu">int</span></a>
+<a class="sourceLine" id="cb40-13" title="13"></a>
+<a class="sourceLine" id="cb40-14" title="14">Like S.find() but <span class="cf">raise</span> <span class="pp">ValueError</span> when the substring <span class="kw">is</span> <span class="kw">not</span> found.</a>
+<a class="sourceLine" id="cb40-15" title="15"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="bu">tuple</span>.index.__doc__)</a>
+<a class="sourceLine" id="cb40-16" title="16">T.index(value, [start, [stop]]) <span class="op">-&gt;</span> integer <span class="op">--</span> <span class="cf">return</span> first index of value.</a>
+<a class="sourceLine" id="cb40-17" title="17">Raises <span class="pp">ValueError</span> <span class="cf">if</span> the value <span class="kw">is</span> <span class="kw">not</span> present.</a>
+<a class="sourceLine" id="cb40-18" title="18"><span class="op">&gt;&gt;&gt;</span>  <span class="bu">print</span>(<span class="bu">list</span>.index.__doc__)</a>
+<a class="sourceLine" id="cb40-19" title="19">L.index(value, [start, [stop]]) <span class="op">-&gt;</span> integer <span class="op">--</span> <span class="cf">return</span> first index of value.</a>
+<a class="sourceLine" id="cb40-20" title="20">Raises <span class="pp">ValueError</span> <span class="cf">if</span> the value <span class="kw">is</span> <span class="kw">not</span> present.</a></code></pre></div>
+<p>We will explore these functions in the exercises.</p>
+<h3 id="lists-are-mutable">3.7. Lists are mutable</h3>
+<p>Unlike strings and tuples, which are <a href="http://en.wikipedia.org/wiki/Immutable_object">immutable objects</a>, lists are <strong>mutable</strong>, which means we can change their elements. Using the bracket operator on the left side of an assignment, we can update one of the elements:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="op">&gt;&gt;&gt;</span> fruit <span class="op">=</span> [<span class="st">&quot;banana&quot;</span>, <span class="st">&quot;apple&quot;</span>, <span class="st">&quot;quince&quot;</span>]</a>
+<a class="sourceLine" id="cb41-2" title="2"><span class="op">&gt;&gt;&gt;</span> fruit[<span class="dv">0</span>] <span class="op">=</span> <span class="st">&quot;pear&quot;</span></a>
+<a class="sourceLine" id="cb41-3" title="3"><span class="op">&gt;&gt;&gt;</span> fruit[<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> <span class="st">&quot;orange&quot;</span></a>
+<a class="sourceLine" id="cb41-4" title="4"><span class="op">&gt;&gt;&gt;</span> fruit</a>
+<a class="sourceLine" id="cb41-5" title="5">[<span class="st">&#39;pear&#39;</span>, <span class="st">&#39;apple&#39;</span>, <span class="st">&#39;orange&#39;</span>]</a></code></pre></div>
+<p>The bracket operator applied to a list can appear anywhere in an expression. When it appears on the left side of an assignment, it changes one of the elements in the list, so the first element of <code>fruit</code> has been changed from <code>'banana'</code> to <code>'pear'</code>, and the last from <code>'quince'</code> to <code>'orange'</code>. An assignment to an element of a list is called <strong>item assignment</strong>. Item assignment does not work for strings:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_string <span class="op">=</span> <span class="st">&#39;TEST&#39;</span></a>
+<a class="sourceLine" id="cb42-2" title="2"><span class="op">&gt;&gt;&gt;</span> my_string[<span class="dv">2</span>] <span class="op">=</span> <span class="st">&#39;X&#39;</span></a>
+<a class="sourceLine" id="cb42-3" title="3">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb42-4" title="4">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb42-5" title="5"><span class="pp">TypeError</span>: <span class="st">&#39;str&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a></code></pre></div>
+<p>but it does for lists:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&#39;T&#39;</span>, <span class="st">&#39;E&#39;</span>, <span class="st">&#39;S&#39;</span>, <span class="st">&#39;T&#39;</span>]</a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="op">&gt;&gt;&gt;</span> my_list[<span class="dv">2</span>] <span class="op">=</span> <span class="st">&#39;X&#39;</span></a>
+<a class="sourceLine" id="cb43-3" title="3"><span class="op">&gt;&gt;&gt;</span> my_list</a>
+<a class="sourceLine" id="cb43-4" title="4">[<span class="st">&#39;T&#39;</span>, <span class="st">&#39;E&#39;</span>, <span class="st">&#39;X&#39;</span>, <span class="st">&#39;T&#39;</span>]</a></code></pre></div>
+<p>With the slice operator we can update several elements at once:</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_list <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a>
+<a class="sourceLine" id="cb44-2" title="2"><span class="op">&gt;&gt;&gt;</span> a_list[<span class="dv">1</span>:<span class="dv">3</span>] <span class="op">=</span> [<span class="st">&#39;x&#39;</span>, <span class="st">&#39;y&#39;</span>]</a>
+<a class="sourceLine" id="cb44-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_list</a>
+<a class="sourceLine" id="cb44-4" title="4">[<span class="st">&#39;a&#39;</span>, <span class="st">&#39;x&#39;</span>, <span class="st">&#39;y&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a></code></pre></div>
+<p>We can also remove elements from a list by assigning the empty list to them:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_list <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a>
+<a class="sourceLine" id="cb45-2" title="2"><span class="op">&gt;&gt;&gt;</span> a_list[<span class="dv">1</span>:<span class="dv">3</span>] <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb45-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_list</a>
+<a class="sourceLine" id="cb45-4" title="4">[<span class="st">&#39;a&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a></code></pre></div>
+<p>And we can add elements to a list by squeezing them into an empty slice at the desired location:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_list <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;f&#39;</span>]</a>
+<a class="sourceLine" id="cb46-2" title="2"><span class="op">&gt;&gt;&gt;</span> a_list[<span class="dv">1</span>:<span class="dv">1</span>] <span class="op">=</span> [<span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>]</a>
+<a class="sourceLine" id="cb46-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_list</a>
+<a class="sourceLine" id="cb46-4" title="4">[<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;f&#39;</span>]</a>
+<a class="sourceLine" id="cb46-5" title="5"><span class="op">&gt;&gt;&gt;</span> a_list[<span class="dv">4</span>:<span class="dv">4</span>] <span class="op">=</span> [<span class="st">&#39;e&#39;</span>]</a>
+<a class="sourceLine" id="cb46-6" title="6"><span class="op">&gt;&gt;&gt;</span> a_list</a>
+<a class="sourceLine" id="cb46-7" title="7">[<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a></code></pre></div>
+<h3 id="list-deletion">3.8. List deletion</h3>
+<p>Using slices to delete list elements can be awkward, and therefore error-prone. Python provides an alternative that is more readable.</p>
+<p><code>del</code> removes an element from a list:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> [<span class="st">&#39;one&#39;</span>, <span class="st">&#39;two&#39;</span>, <span class="st">&#39;three&#39;</span>]</a>
+<a class="sourceLine" id="cb47-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> a[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb47-3" title="3"><span class="op">&gt;&gt;&gt;</span> a</a>
+<a class="sourceLine" id="cb47-4" title="4">[<span class="st">&#39;one&#39;</span>, <span class="st">&#39;three&#39;</span>]</a></code></pre></div>
+<p>As you might expect, <code>del</code> handles negative indices and causes a runtime error if the index is out of range.</p>
+<p>You can use a slice as an index for <code>del</code>:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_list <span class="op">=</span> [<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;e&#39;</span>, <span class="st">&#39;f&#39;</span>]</a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> a_list[<span class="dv">1</span>:<span class="dv">5</span>]</a>
+<a class="sourceLine" id="cb48-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_list</a>
+<a class="sourceLine" id="cb48-4" title="4">[<span class="st">&#39;a&#39;</span>, <span class="st">&#39;f&#39;</span>]</a></code></pre></div>
+<p>As usual, slices select all the elements up to, but not including, the second index.</p>
+<h3 id="list-methods-1">3.9. List methods</h3>
+<p>In addition to <code>count</code> and <code>index</code>, lists have several useful methods. Since lists are mutable, these methods modify the list on which they are invoked, rather than returning a new list.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1"><span class="op">&gt;&gt;&gt;</span> mylist <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="op">&gt;&gt;&gt;</span> mylist.append(<span class="st">&#39;this&#39;</span>)</a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-4" title="4">[<span class="st">&#39;this&#39;</span>]</a>
+<a class="sourceLine" id="cb49-5" title="5"><span class="op">&gt;&gt;&gt;</span> mylist.append(<span class="st">&#39;that&#39;</span>)</a>
+<a class="sourceLine" id="cb49-6" title="6"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-7" title="7">[<span class="st">&#39;this&#39;</span>, <span class="st">&#39;that&#39;</span>]</a>
+<a class="sourceLine" id="cb49-8" title="8"><span class="op">&gt;&gt;&gt;</span> mylist.insert(<span class="dv">1</span>, <span class="st">&#39;thing&#39;</span>)</a>
+<a class="sourceLine" id="cb49-9" title="9"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-10" title="10">[<span class="st">&#39;this&#39;</span>, <span class="st">&#39;thing&#39;</span>, <span class="st">&#39;that&#39;</span>]</a>
+<a class="sourceLine" id="cb49-11" title="11"><span class="op">&gt;&gt;&gt;</span> mylist.sort()</a>
+<a class="sourceLine" id="cb49-12" title="12"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-13" title="13">[<span class="st">&#39;that&#39;</span>, <span class="st">&#39;thing&#39;</span>, <span class="st">&#39;this&#39;</span>]</a>
+<a class="sourceLine" id="cb49-14" title="14"><span class="op">&gt;&gt;&gt;</span> mylist.remove(<span class="st">&#39;thing&#39;</span>)</a>
+<a class="sourceLine" id="cb49-15" title="15"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-16" title="16">[<span class="st">&#39;that&#39;</span>, <span class="st">&#39;this&#39;</span>]</a>
+<a class="sourceLine" id="cb49-17" title="17"><span class="op">&gt;&gt;&gt;</span> mylist.reverse()</a>
+<a class="sourceLine" id="cb49-18" title="18"><span class="op">&gt;&gt;&gt;</span> mylist</a>
+<a class="sourceLine" id="cb49-19" title="19">[<span class="st">&#39;this&#39;</span>, <span class="st">&#39;that&#39;</span>]</a></code></pre></div>
+<p>The <code>sort</code> method is particularly useful, since it makes it easy to use Python to sort data that you have put in a list.</p>
+<h3 id="names-and-mutable-values">3.10. Names and mutable values</h3>
+<p>If we execute these assignment statements,</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb50-2" title="2"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a></code></pre></div>
+<p>we know that the names <code>a</code> and <code>b</code> will refer to a list with the numbers <code>1</code>, <code>2</code>, and <code>3</code>. But we don’t know yet whether they point to the <em>same</em> list.</p>
+<p>There are two possible states:<img src="https://www.openbookproject.net/books/bpp4awd/_images/mult_references1.png" alt="State diagram for multiple references with lists" /></p>
+<p>or<img src="https://www.openbookproject.net/books/bpp4awd/_images/mult_references2.png" alt="State diagrams for aliasing multiple references with lists" /></p>
+<p>In one case, <code>a</code> and <code>b</code> refer to two different things that have the same value. In the second case, they refer to the same object.</p>
+<p>We can test whether two names have the same value using <code>==</code>:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">==</span> b</a>
+<a class="sourceLine" id="cb51-2" title="2"><span class="va">True</span></a></code></pre></div>
+<p>We can test whether two names refer to the same object using the <em>is</em> operator:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="kw">is</span> b</a>
+<a class="sourceLine" id="cb52-2" title="2"><span class="va">False</span></a></code></pre></div>
+<p>This tells us that both <code>a</code> and <code>b</code> do not refer to the same object, and that it is the first of the two state diagrams that describes the relationship.</p>
+<h3 id="aliasing">3.11. Aliasing</h3>
+<p>Since variables refer to objects, if we assign one variable to another, both variables refer to the same object:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb53-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb53-2" title="2"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> a</a>
+<a class="sourceLine" id="cb53-3" title="3"><span class="op">&gt;&gt;&gt;</span> a <span class="kw">is</span> b</a>
+<a class="sourceLine" id="cb53-4" title="4"><span class="va">True</span></a></code></pre></div>
+<p>In this case, it is the second of the two state diagrams that describes the relationship between the variables.</p>
+<p>Because the same list has two different names, <code>a</code> and <code>b</code>, we say that it is <strong>aliased</strong>. Since lists are mutable, changes made with one alias affect the other:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb54-1" title="1"><span class="op">&gt;&gt;&gt;</span> b[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="op">&gt;&gt;&gt;</span> a</a>
+<a class="sourceLine" id="cb54-3" title="3">[<span class="dv">5</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a></code></pre></div>
+<p>Although this behavior can be useful, it is sometimes unexpected or undesirable. In general, it is safer to avoid aliasing when you are working with mutable objects. Of course, for immutable objects, there’s no problem, since they can’t be changed after they are created.</p>
+<h3 id="cloning-lists">3.12. Cloning lists</h3>
+<p>If we want to modify a list and also keep a copy of the original, we need to be able to make a copy of the list itself, not just the reference. This process is sometimes called <strong>cloning</strong>, to avoid the ambiguity of the word copy.</p>
+<p>The easiest way to clone a list is to use the slice operator:</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb55-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb55-2" title="2"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> a[:]</a>
+<a class="sourceLine" id="cb55-3" title="3"><span class="op">&gt;&gt;&gt;</span> b</a>
+<a class="sourceLine" id="cb55-4" title="4">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a></code></pre></div>
+<p>Taking any slice of <code>a</code> creates a new list. In this case the slice happens to consist of the whole list.</p>
+<p>Now we are free to make changes to <code>b</code> without worrying about <code>a</code>:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb56-1" title="1"><span class="op">&gt;&gt;&gt;</span> b[<span class="dv">0</span>] <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb56-2" title="2"><span class="op">&gt;&gt;&gt;</span> a</a>
+<a class="sourceLine" id="cb56-3" title="3">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</a></code></pre></div>
+<h3 id="nested-lists">3.13. Nested lists</h3>
+<p>A nested list is a list that appears as an element in another list. In this list, the element with index 3 is a nested list:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb57-1" title="1"><span class="op">&gt;&gt;&gt;</span> nested <span class="op">=</span> [<span class="st">&quot;hello&quot;</span>, <span class="fl">2.0</span>, <span class="dv">5</span>, [<span class="dv">10</span>, <span class="dv">20</span>]]</a></code></pre></div>
+<p>If we print <code>nested[3]</code>, we get <code>[10, 20]</code>. To extract an element from the nested list, we can proceed in two steps:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb58-1" title="1"><span class="op">&gt;&gt;&gt;</span> elem <span class="op">=</span> nested[<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb58-2" title="2"><span class="op">&gt;&gt;&gt;</span> elem[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb58-3" title="3"><span class="dv">10</span></a></code></pre></div>
+<p>Or we can combine them:</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb59-1" title="1"><span class="op">&gt;&gt;&gt;</span> nested[<span class="dv">3</span>][<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb59-2" title="2"><span class="dv">20</span></a></code></pre></div>
+<p>Bracket operators evaluate from left to right, so this expression gets the three-eth element of <code>nested</code> and extracts the one-eth element from it.</p>
+<h3 id="strings-and-lists">3.14. Strings and lists</h3>
+<p>Python has several tools which combine lists of strings into strings and separate strings into lists of strings.</p>
+<p>The <code>list</code> command takes a sequence type as an argument and creates a list out of its elements. When applied to a string, you get a list of characters.</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb60-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">list</span>(<span class="st">&quot;Crunchy Frog&quot;</span>)</a>
+<a class="sourceLine" id="cb60-2" title="2">[<span class="st">&#39;C&#39;</span>, <span class="st">&#39;r&#39;</span>, <span class="st">&#39;u&#39;</span>, <span class="st">&#39;n&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;h&#39;</span>, <span class="st">&#39;y&#39;</span>, <span class="st">&#39; &#39;</span>, <span class="st">&#39;F&#39;</span>, <span class="st">&#39;r&#39;</span>, <span class="st">&#39;o&#39;</span>, <span class="st">&#39;g&#39;</span>]</a></code></pre></div>
+<p>The <code>split</code> method invoked on a string and separates the string into a list of strings, breaking it apart whenever a substring called the <a href="http://en.wikipedia.org/wiki/Delimiter">delimiter</a> occurs. The default delimiter is whitespace, which includes spaces, tabs, and newlines.</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb61-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;Crunchy frog covered in dark, bittersweet chocolate&quot;</span>.split()</a>
+<a class="sourceLine" id="cb61-2" title="2">[<span class="st">&#39;Crunchy&#39;</span>, <span class="st">&#39;frog&#39;</span>, <span class="st">&#39;covered&#39;</span>, <span class="st">&#39;in&#39;</span>, <span class="st">&#39;dark,&#39;</span>, <span class="st">&#39;bittersweet&#39;</span>, <span class="st">&#39;chocolate&#39;</span>]</a></code></pre></div>
+<p>Here we have <code>'o'</code> as the delimiter.</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb62-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;Crunchy frog covered in dark, bittersweet chocolate&quot;</span>.split(<span class="st">&#39;o&#39;</span>)</a>
+<a class="sourceLine" id="cb62-2" title="2">[<span class="st">&#39;Crunchy fr&#39;</span>, <span class="st">&#39;g c&#39;</span>, <span class="st">&#39;vered in dark, bittersweet ch&#39;</span>, <span class="st">&#39;c&#39;</span>, <span class="st">&#39;late&#39;</span>]</a></code></pre></div>
+<p>Notice that the delimiter doesn’t appear in the list.</p>
+<p>The <code>join</code> method does approximately the oposite of the <code>split</code> method. It takes a list of strings as an argument and returns a string of all the list elements joined together.</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb63-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39; &#39;</span>. join([<span class="st">&#39;crunchy&#39;</span>, <span class="st">&#39;raw&#39;</span>, <span class="st">&#39;unboned&#39;</span>, <span class="st">&#39;real&#39;</span>, <span class="st">&#39;dead&#39;</span>, <span class="st">&#39;frog&#39;</span>])</a>
+<a class="sourceLine" id="cb63-2" title="2"><span class="co">&#39;crunchy raw unboned real dead frog&#39;</span></a></code></pre></div>
+<p>The string value on which the <code>join</code> method is invoked acts as a <em>separator</em> that gets placed between each element in the list in the returned string.</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb64-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;**&#39;</span>.join([<span class="st">&#39;crunchy&#39;</span>, <span class="st">&#39;raw&#39;</span>, <span class="st">&#39;unboned&#39;</span>, <span class="st">&#39;real&#39;</span>, <span class="st">&#39;dead&#39;</span>, <span class="st">&#39;frog&#39;</span>])</a>
+<a class="sourceLine" id="cb64-2" title="2"><span class="co">&#39;crunchy**raw**unboned**real**dead**frog&#39;</span></a></code></pre></div>
+<p>The separator can also be the empty string.</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb65-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;&#39;</span>.join([<span class="st">&#39;crunchy&#39;</span>, <span class="st">&#39;raw&#39;</span>, <span class="st">&#39;unboned&#39;</span>, <span class="st">&#39;real&#39;</span>, <span class="st">&#39;dead&#39;</span>, <span class="st">&#39;frog&#39;</span>])</a>
+<a class="sourceLine" id="cb65-2" title="2"><span class="co">&#39;crunchyrawunbonedrealdeadfrog&#39;</span></a></code></pre></div>
+<h3 id="tuple-assignment">3.15. Tuple assignment</h3>
+<p>Once in a while, it is useful to swap the values of two variables. With conventional assignment statements, we have to use a temporary variable. For example, to swap <code>a</code> and <code>b</code>:</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb66-1" title="1">temp <span class="op">=</span> a</a>
+<a class="sourceLine" id="cb66-2" title="2">a <span class="op">=</span> b</a>
+<a class="sourceLine" id="cb66-3" title="3">b <span class="op">=</span> temp</a></code></pre></div>
+<p>If we have to do this often, this approach becomes cumbersome. Python provides a form of <strong>tuple assignment</strong> that solves this problem neatly:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb67-1" title="1">a, b <span class="op">=</span> b, a</a></code></pre></div>
+<p>The left side is a tuple of variables; the right side is a tuple of values. Each value is assigned to its respective variable. All the expressions on the right side are evaluated before any of the assignments. This feature makes tuple assignment quite versatile.</p>
+<p>Naturally, the number of variables on the left and the number of values on the right have to be the same:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb68-1" title="1"><span class="op">&gt;&gt;&gt;</span> a, b, c, d <span class="op">=</span> <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span></a>
+<a class="sourceLine" id="cb68-2" title="2"><span class="pp">ValueError</span>: need more than <span class="dv">3</span> values to unpack</a></code></pre></div>
+<h3 id="boolean-values">3.16. Boolean values</h3>
+<p>We will now look at a new type of value - <a href="http://en.wikipedia.org/wiki/Boolean_data_type">boolean values</a> - named after the British mathematician, <a href="http://en.wikipedia.org/wiki/George_Boole">George Boole</a>. He created the mathematics we call <a href="http://en.wikipedia.org/wiki/Boolean_algebra">Boolean algebra</a>, which is the basis of all modern computer arithmetic.</p>
+<p>Note</p>
+<p>It is a computer’s ability to alter its flow of execution depending on whether a boolean value is true or false that makes a general purpose computer more than just a calculator.</p>
+<p>There are only two boolean values, <code>True</code> and <code>False</code>.</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb69-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(<span class="va">True</span>)</a>
+<a class="sourceLine" id="cb69-2" title="2"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;bool&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb69-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(<span class="va">False</span>)</a>
+<a class="sourceLine" id="cb69-4" title="4"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;bool&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p>Capitalization is important, since <code>true</code> and <code>false</code> are not boolean values in Python.:</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb70-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(true)</a>
+<a class="sourceLine" id="cb70-2" title="2">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb70-3" title="3">File <span class="st">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb70-4" title="4"><span class="pp">NameError</span>: name <span class="st">&#39;true&#39;</span> <span class="kw">is</span> <span class="kw">not</span> defined</a></code></pre></div>
+<h3 id="boolean-expressions">3.17. Boolean expressions</h3>
+<p>A <strong>boolean expression</strong> is an expression that evaluates to a boolean value.</p>
+<p>The operator <code>==</code> compares two values and produces a boolean value:</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb71-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb71-2" title="2"><span class="va">True</span></a>
+<a class="sourceLine" id="cb71-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">6</span></a>
+<a class="sourceLine" id="cb71-4" title="4"><span class="va">False</span></a></code></pre></div>
+<p>In the first statement, the two operands are equal, so the expression evaluates to <code>True</code>; in the second statement, 5 is not equal to 6, so we get <code>False</code>.</p>
+<p>The <code>==</code> operator is one of six common <strong>comparison operators</strong>; the others are:</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb72-1" title="1">x <span class="op">!=</span> y       <span class="co"># x is not equal to y</span></a>
+<a class="sourceLine" id="cb72-2" title="2">x <span class="op">&gt;</span> y        <span class="co"># x is greater than y</span></a>
+<a class="sourceLine" id="cb72-3" title="3">x <span class="op">&lt;</span> y        <span class="co"># x is less than y</span></a>
+<a class="sourceLine" id="cb72-4" title="4">x <span class="op">&gt;=</span> y       <span class="co"># x is greater than or equal to y</span></a>
+<a class="sourceLine" id="cb72-5" title="5">x <span class="op">&lt;=</span> y       <span class="co"># x is less than or equal to y</span></a></code></pre></div>
+<p>Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (<code>=</code>) instead of a double equal sign (<code>==</code>). Remember that <code>=</code> is an <em>assignment operator</em> and <code>==</code> is a <em>comparison operator</em>. Also, there is no such thing as <code>=&lt;</code> or <code>=&gt;</code>.</p>
+<h3 id="logical-operators">3.18. Logical operators</h3>
+<p>There are three <strong>logical operators</strong>: <code>and</code>, <code>or</code>, and <code>not</code>. The semantics (meaning) of these operators is similar to their meaning in English. For example, <code>x &gt; 0 and x &lt; 10</code> is true only if <code>x</code> is greater than 0 <em>and</em> at the same time, x is less than 10.</p>
+<p><code>n % 2 == 0 or n % 3 == 0</code> is true if <em>either</em> of the conditions is true, that is, if the number is divisible by 2 <em>or</em> divisible by 3.</p>
+<p>Finally, the <code>not</code> operator negates a boolean expression, so <code>not (x &gt; y)</code> is true if <code>(x &gt; y)</code> is false, that is, if <code>x</code> is less than or equal to <code>y</code>.</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb73-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">4</span> <span class="kw">and</span> <span class="dv">8</span> <span class="op">==</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb73-2" title="2"><span class="va">True</span></a>
+<a class="sourceLine" id="cb73-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="va">True</span> <span class="kw">and</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb73-4" title="4"><span class="va">False</span></a>
+<a class="sourceLine" id="cb73-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="va">False</span> <span class="kw">or</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb73-6" title="6"><span class="va">True</span></a></code></pre></div>
+<h3 id="short-circuit-evaluation">3.19. Short-circuit evaluation</h3>
+<p>Boolean expressions in Python use <strong>short-circuit evaluation</strong>, which means only the first argument of an <code>and</code> or <code>or</code> expression is evaluated when its value is suffient to determine the value of the entire expression.</p>
+<p>This can be quite useful in preventing runtime errors. Imagine you want check if the fifth number in a tuple of integers named <code>numbers</code> is even.</p>
+<p>The following expression will work:</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb74-1" title="1"><span class="op">&gt;&gt;&gt;</span> numbers <span class="op">=</span> (<span class="dv">5</span>, <span class="dv">11</span>, <span class="dv">13</span>, <span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb74-2" title="2"><span class="op">&gt;&gt;&gt;</span> numbers[<span class="dv">4</span>] <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span></a></code></pre></div>
+<p>unless of course there are not 5 elements in <code>numbers</code>, in which case you will get:</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb75-1" title="1">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb75-2" title="2">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb75-3" title="3"><span class="pp">IndexError</span>: <span class="bu">tuple</span> index out of <span class="bu">range</span></a>
+<a class="sourceLine" id="cb75-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Short-circuit evaluation makes it possible to avoid this problem.</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb76-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(numbers) <span class="op">&gt;=</span> <span class="dv">5</span> <span class="kw">and</span> numbers[<span class="dv">4</span>] <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb76-2" title="2"><span class="va">False</span></a></code></pre></div>
+<p>Since the left hand side of this <code>and</code> expression is false, Python does not need to evaluate the right hand side to determine that the whole expression is false. Since it uses short-circuit evaluation, it does not, and the runtime error is avoided.</p>
+<h3 id="truthiness">3.20. “Truthiness”</h3>
+<p>All Python values have a “truthiness” or “falsiness” which means they can be used in places requiring a boolean. For the numeric and sequence types we have seen thus far, truthiness is defined as follows:numberic types</p>
+<p>Values equal to 0 are false, all others are true.sequence types</p>
+<p>Empty sequences are false, non-empty sequences are true.</p>
+<p>Combining this notion of truthiness with an understanding of short-circuit evaluation makes it possible to understand what Python is doing in the following expressions:</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb77-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;A&#39;</span> <span class="kw">and</span> <span class="st">&#39;apples&#39;</span></a>
+<a class="sourceLine" id="cb77-2" title="2"><span class="co">&#39;apples&#39;</span></a>
+<a class="sourceLine" id="cb77-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;&#39;</span> <span class="kw">and</span> <span class="st">&#39;apples&#39;</span></a>
+<a class="sourceLine" id="cb77-4" title="4"><span class="co">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb77-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;&#39;</span> <span class="kw">or</span> [<span class="dv">5</span>, <span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb77-6" title="6">[<span class="dv">5</span>, <span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb77-7" title="7"><span class="op">&gt;&gt;&gt;</span> (<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>) <span class="kw">or</span> [<span class="dv">5</span>, <span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb77-8" title="8">(<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;c&#39;</span>)</a></code></pre></div>
+<h3 id="glossary">3.21. Glossary</h3>
+<p>aliases</p>
+<p>Multiple variables that contain references to the same object.boolean value</p>
+<p>There are exactly two boolean values: <code>True</code> and <code>False</code>. Boolean values result when a boolean expression is evaluated by the Python interepreter. They have type <code>bool</code>.boolean expression</p>
+<p>An expression that is either true or false.clone</p>
+<p>To create a new object that has the same value as an existing object. Copying a reference to an object creates an alias but doesn’t clone the object.comparison operator</p>
+<p>One of the operators that compares two values: <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, and <code>&lt;=</code>.compound data type</p>
+<p>A data type in which the values are made up of components, or elements, that are themselves values.element</p>
+<p>One of the parts that make up a sequence type (string, list, or tuple). Elements have a value and an index. The value is accessed by using the index operator (<code>[*index*]</code>) on the sequence.immutable data type</p>
+<p>A data type which cannot be modified. Assignments to elements or slices of immutable types cause a runtime error.index</p>
+<p>A variable or value used to select a member of an ordered collection, such as a character from a string, or an element from a list or tuple.logical operator</p>
+<p>One of the operators that combines boolean expressions: <code>and</code>, <code>or</code>, and <code>not</code>.mutable data type</p>
+<p>A data type which can be modified. All mutable types are compound types. Lists and dictionaries are mutable data types; strings and tuples are not.nested list</p>
+<p>A list that is an element of another list.slice</p>
+<p>A part of a string (substring) specified by a range of indices. More generally, a subsequence of any sequence type in Python can be created using the slice operator (<code>sequence[start:stop]</code>).step size</p>
+<p>The interval between successive elements of a linear sequence. The third (and optional argument) to the <code>range</code> function is called the step size. If not specified, it defaults to 1.traverse</p>
+<p>To iterate through the elements of a collection, performing a similar operation on each.tuple</p>
+<p>A data type that contains a sequence of elements of any type, like a list, but is immutable. Tuples can be used wherever an immutable type is required, such as a key in a dictionary (see next chapter).tuple assignment</p>
+<p>An assignment to all of the elements in a tuple using a single assignment statement. Tuple assignment occurs in parallel rather than in sequence, making it useful for swapping values.</p>
+</body>
+</html>

@@ -1,8 +1,9 @@
-# Quick Sort
+Quick Sort
+==========
 
 ### What is Quick Sort in Python?
 
-Quicksort \(sometimes called [**partition-exchange sort**](https://en.wikipedia.org/wiki/Quicksort)\) is an efficient sorting algorithm, serving as a systematic method for placing the elements of a random access file or an array in order.
+Quicksort (sometimes called [**partition-exchange sort**](https://en.wikipedia.org/wiki/Quicksort)) is an efficient sorting algorithm, serving as a systematic method for placing the elements of a random access file or an array in order.
 
 Quicksort works by selecting an element called a pivot and splitting the array around that pivot in Python.
 
@@ -12,13 +13,13 @@ The splitting continues until the array can no longer be broken into pieces. Tha
 
 #### Advantages of Quick Sort in Python
 
-1. Easy implementation.
+1.  Easy implementation.
 
-2. High performance.
+2.  High performance.
 
-3. **Cache Performance** is higher than other [sorting algorithms](https://codezup.com//merge-sort-implementation-example-python/).
+3.  **Cache Performance** is higher than other [sorting algorithms](https://codezup.com//merge-sort-implementation-example-python/).
 
-4. No extra memory.
+4.  No extra memory.
 
 #### Define Quick Sorting Function
 
@@ -34,56 +35,52 @@ In the first solution, we are going to first find the pivot by using a partition
 
 In this solution, we are recursively calling the quicksort function which leads to more complexity in Python.
 
-```python
-def quickSort(myList, start, end):
-    if start < end:
-        pivot = partition(myList, start, end)
-        quickSort(myList, start, pivot-1)
-        quickSort(myList, pivot+1, end)
-    return myList
+    def quickSort(myList, start, end):
+        if start < end:
+            pivot = partition(myList, start, end)
+            quickSort(myList, start, pivot-1)
+            quickSort(myList, pivot+1, end)
+        return myList
 
-def partition(myList, start, end):
-    pivot = myList[start]
-    left = start+1
-    right = end
-    done = False
-    while not done:
-        while left <= right and myList[left] <= pivot:
-            left = left + 1
-        while myList[right] >= pivot and right >=left:
-            right = right -1
-        if right < left:
-            done= True
-        else:
-            temp=myList[left]
-            myList[left]=myList[right]
-            myList[right]=temp
-    temp=myList[start]
-    myList[start]=myList[right]
-    myList[right]=temp
-    return right
-```
+    def partition(myList, start, end):
+        pivot = myList[start]
+        left = start+1
+        right = end
+        done = False
+        while not done:
+            while left <= right and myList[left] <= pivot:
+                left = left + 1
+            while myList[right] >= pivot and right >=left:
+                right = right -1
+            if right < left:
+                done= True
+            else:
+                temp=myList[left]
+                myList[left]=myList[right]
+                myList[right]=temp
+        temp=myList[start]
+        myList[start]=myList[right]
+        myList[right]=temp
+        return right
 
 **Solution 2**
 
 This second solution is much more efficient than the first one.
 
-```python
-def quicksortBetter(arr):
-    if len(arr) <= 1:
-        return arr
-    pivot = arr[len(arr) // 2]
-    left = [x for x in arr if x < pivot]
-    middle = [x for x in arr if x == pivot]
-    right = [x for x in arr if x > pivot]
-    return quicksortBetter(left) + middle + quicksortBetter(right)
-```
+    def quicksortBetter(arr):
+        if len(arr) <= 1:
+            return arr
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quicksortBetter(left) + middle + quicksortBetter(right)
 
 **Complexity**
 
-The overall time complexity of OuickSort is O\(nLogn\).
+The overall time complexity of OuickSort is O(nLogn).
 
-The space complexity of Quick Sort is O\(log n\).
+The space complexity of Quick Sort is O(log n).
 
 **Define Main Condition**
 
@@ -93,74 +90,69 @@ So let’s manually defined the list which we want to pass as an argument to the
 
 So, one more thing we want to do is to calculate the time for both solutions to check which solution works better.
 
-```python
-if __name__ == '__main__':
-    List = [3, 4, 2, 6, 5, 7, 1, 9]
-    start = time.time()
-    print('Sorted List:',quickSort(List, 0, len(List) - 1))
-    stop = time.time()
-    print('Time Required:', (stop - start))
-    start = time.time()
-    print('Sorted List:', quicksortBetter(List))
-    stop = time.time()
-    print('Time Required:', (stop - start))
-```
+    if __name__ == '__main__':
+        List = [3, 4, 2, 6, 5, 7, 1, 9]
+        start = time.time()
+        print('Sorted List:',quickSort(List, 0, len(List) - 1))
+        stop = time.time()
+        print('Time Required:', (stop - start))
+        start = time.time()
+        print('Sorted List:', quicksortBetter(List))
+        stop = time.time()
+        print('Time Required:', (stop - start))
 
 **Source Code**
 
-```python
+    import time
 
-import time
+    def quickSort(myList, start, end):
+        if start < end:
+            pivot = partition(myList, start, end)
+            quickSort(myList, start, pivot-1)
+            quickSort(myList, pivot+1, end)
+        return myList
 
-def quickSort(myList, start, end):
-    if start < end:
-        pivot = partition(myList, start, end)
-        quickSort(myList, start, pivot-1)
-        quickSort(myList, pivot+1, end)
-    return myList
+    def partition(myList, start, end):
+        pivot = myList[start]
+        left = start+1
+        right = end
+        done = False
+        while not done:
+            while left <= right and myList[left] <= pivot:
+                left = left + 1
+            while myList[right] >= pivot and right >=left:
+                right = right -1
+            if right < left:
+                done= True
+            else:
+                temp=myList[left]
+                myList[left]=myList[right]
+                myList[right]=temp
+        temp=myList[start]
+        myList[start]=myList[right]
+        myList[right]=temp
+        return right
 
-def partition(myList, start, end):
-    pivot = myList[start]
-    left = start+1
-    right = end
-    done = False
-    while not done:
-        while left <= right and myList[left] <= pivot:
-            left = left + 1
-        while myList[right] >= pivot and right >=left:
-            right = right -1
-        if right < left:
-            done= True
-        else:
-            temp=myList[left]
-            myList[left]=myList[right]
-            myList[right]=temp
-    temp=myList[start]
-    myList[start]=myList[right]
-    myList[right]=temp
-    return right
+    # A more efficient solution
+    def quicksortBetter(arr):
+        if len(arr) <= 1:
+            return arr
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quicksortBetter(left) + middle + quicksortBetter(right)
 
-# A more efficient solution
-def quicksortBetter(arr):
-    if len(arr) <= 1:
-        return arr
-    pivot = arr[len(arr) // 2]
-    left = [x for x in arr if x < pivot]
-    middle = [x for x in arr if x == pivot]
-    right = [x for x in arr if x > pivot]
-    return quicksortBetter(left) + middle + quicksortBetter(right)
-
-if __name__ == '__main__':
-    List = [3, 4, 2, 6, 5, 7, 1, 9]
-    start = time.time()
-    print('Sorted List:',quickSort(List, 0, len(List) - 1))
-    stop = time.time()
-    print('Time Required:', (stop - start))
-    start = time.time()
-    print('Sorted List:', quicksortBetter(List))
-    stop = time.time()
-    print('Time Required:', (stop - start))
-```
+    if __name__ == '__main__':
+        List = [3, 4, 2, 6, 5, 7, 1, 9]
+        start = time.time()
+        print('Sorted List:',quickSort(List, 0, len(List) - 1))
+        stop = time.time()
+        print('Time Required:', (stop - start))
+        start = time.time()
+        print('Sorted List:', quicksortBetter(List))
+        stop = time.time()
+        print('Time Required:', (stop - start))
 
 **Output**
 

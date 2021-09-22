@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>strings-continued</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="strings-continued">Strings Continued</h1>
+<h4 id="working-with-strings"><strong>Working with Strings</strong> <a id="calibre_link-208"></a></h4>
+<p>Let’s look at some of the ways Python lets you write, print, and access strings in your code.</p>
+<p><strong>String Literals</strong></p>
+<p>Typing string values in Python code is fairly straightforward: they begin and end with a single quote. But then how can you use a quote inside a string? Typing ‘That is Alice’s cat.’ won’t work, because Python thinks the string ends after Alice, and the rest (s cat.’) is invalid Python code. Fortunately, there are multiple ways to type strings.</p>
+<p><strong>Double Quotes</strong></p>
+<p>Strings can begin and end with double quotes, just as they do with single quotes. One benefit of using double quotes is that the string can have a single quote character in it. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = “That is Alice’s cat.”</p>
+<p>Since the string begins with a double quote, Python knows that the single quote is part of the string and not marking the end of the string. However, if you need to use both single quotes and double quotes in the string, you’ll need to use escape characters.</p>
+<p><strong>Escape Characters</strong></p>
+<p>An <em>escape character</em> lets you use characters that are otherwise impossible to put into a string. An escape character consists of a backslash (\) followed by the character you want to add to the string. (Despite consisting of two characters, it is commonly referred to as a singular escape character.) For example, the escape character for a single quote is '. You can use this inside a string that begins and ends with single quotes. To see how escape characters work, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ‘Say hi to Bob's mother.’</p>
+<p>Python knows that since the single quote in Bob's has a backslash, it is not a single quote meant to end the string value. The escape characters ' and " let you put single quotes and double quotes inside your strings, respectively.</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1615">Table 6-1</a> lists the escape characters you can use.</p>
+<p><strong>Table 6-1:</strong> Escape Characters</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Escape character</strong></th>
+<th style="text-align: left;"><strong>Prints as</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">'</td>
+<td style="text-align: left;">Single quote</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">"</td>
+<td style="text-align: left;">Double quote</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"> Tab</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Newline (line break)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">\</td>
+<td style="text-align: left;">Backslash</td>
+</tr>
+</tbody>
+</table>
+<p>Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; print(“Hello there!are you?'m doing fine.”)<br />
+Hello there!<br />
+How are you?<br />
+I’m doing fine.</p>
+<p><strong>Raw Strings</strong></p>
+<p>You can place an r before the beginning quotation mark of a string to make it a raw string. A <em>raw string</em> completely ignores all escape characters and prints any backslash that appears in the string. For example, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; print(r’That is Carol's cat.’)<br />
+That is Carol's cat.</p>
+<p>Because this is a raw string, Python considers the backslash as part of the string and not as the start of an escape character. Raw strings are helpful if you are typing string values that contain many backslashes, such as the strings used for Windows file paths like r’C:’ or regular expressions described in the next chapter.</p>
+<p><strong>Multiline Strings with Triple Quotes</strong></p>
+<p>While you can use the escape character to put a newline into a string, it is often easier to use multiline strings. A multiline string in Python begins and ends with either three single quotes or three double quotes. Any quotes, tabs, or newlines in between the “triple quotes” are considered part of the string. Python’s indentation rules for blocks do not apply to lines inside a multiline string.</p>
+<p>Open the file editor and write the following:</p>
+<p>print(’’’Dear Alice,</p>
+<p>Eve’s cat has been arrested for catnapping, cat burglary, and extortion.</p>
+<p>Sincerely,<br />
+Bob’’’)</p>
+<p>Save this program as <em>catnapping.py</em> and run it. The output will look like this:</p>
+<p>Dear Alice,</p>
+<p>Eve’s cat has been arrested for catnapping, cat burglary, and extortion.</p>
+<p>Sincerely,<br />
+Bob</p>
+<p>Notice that the single quote character in Eve’s does not need to be escaped. Escaping single and double quotes is optional in multiline strings. The following print() call would print identical text but doesn’t use a multiline string:</p>
+<p>print(‘Dear Alice,'s cat has been arrested for catnapping, cat<br />
+burglary, and extortion.,’)</p>
+<p><strong>Multiline Comments</strong></p>
+<p>While the hash character (#) marks the beginning of a comment for the rest of the line, a multiline string is often used for comments that span multiple lines. The following is perfectly valid Python code:</p>
+<p>"""This is a test Python program.<br />
+Written by Al Sweigart al@inventwithpython.com</p>
+<p>This program was designed for Python 3, not Python 2.<br />
+"""</p>
+<p>def spam():<br />
+""“This is a multiline comment to help<br />
+explain what the spam() function does.”""<br />
+print(‘Hello!’)</p>
+<p><strong>Indexing and Slicing Strings</strong></p>
+<p>Strings use indexes and slices the same way lists do. You can think of the string ‘Hello, world!’ as a list and each character in the string as an item with a corresponding index.</p>
+<p>’ H e l l o , w o r l d ! ’<br />
+0 1 2 3 4 5 6 7 8 9 10 11 12</p>
+<p>The space and exclamation point are included in the character count, so ‘Hello, world!’ is 13 characters long, from H at index 0 to ! at index 12.</p>
+<p>Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ‘Hello, world!’<br />
+&gt;&gt;&gt; spam[0]<br />
+‘H’<br />
+&gt;&gt;&gt; spam[4]<br />
+‘o’<br />
+&gt;&gt;&gt; spam[-1]<br />
+‘!’<br />
+&gt;&gt;&gt; spam[0:5]<br />
+‘Hello’<br />
+&gt;&gt;&gt; spam[:5]<br />
+‘Hello’<br />
+&gt;&gt;&gt; spam[7:]<br />
+‘world!’</p>
+<p>If you specify an index, you’ll get the character at that position in the string. If you specify a range from one index to another, the starting index is included and the ending index is not. That’s why, if spam is ‘Hello, world!’, spam[0:5] is ‘Hello’. The substring you get from spam[0:5] will include everything from spam[0] to spam[4], leaving out the comma at index 5 and the space at index 6. This is similar to how range(5) will cause a for loop to iterate up to, but not including, 5.</p>
+<p>Note that slicing a string does not modify the original string. You can capture a slice from one variable in a separate variable. Try entering the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ‘Hello, world!’<br />
+&gt;&gt;&gt; fizz = spam[0:5]<br />
+&gt;&gt;&gt; fizz<br />
+‘Hello’</p>
+<p>By slicing and storing the resulting substring in another variable, you can have both the whole string and the substring handy for quick, easy access.</p>
+<p><strong>The in and not in Operators with Strings</strong></p>
+<p>The in and not in operators can be used with strings just like with list values. An expression with two strings joined using in or not in will evaluate to a Boolean True or False. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello’ in ‘Hello, World’<br />
+True<br />
+&gt;&gt;&gt; ‘Hello’ in ‘Hello’<br />
+True<br />
+&gt;&gt;&gt; ‘HELLO’ in ‘Hello, World’<br />
+False<br />
+&gt;&gt;&gt; ’’ in ‘spam’<br />
+True<br />
+&gt;&gt;&gt; ‘cats’ not in ‘cats and dogs’<br />
+False</p>
+<p>These expressions test whether the first string (the exact string, case-sensitive) can be found within the second string.</p>
+<h4 id="putting-strings-inside-other-strings"><strong>Putting Strings Inside Other Strings</strong> <a id="calibre_link-212"></a></h4>
+<p>Putting strings inside other strings is a common operation in programming. So far, we’ve been using the + operator and string concatenation to do this:</p>
+<p>&gt;&gt;&gt; name = ‘Al’<br />
+&gt;&gt;&gt; age = 4000<br />
+&gt;&gt;&gt; ‘Hello, my name is’ + name + ‘. I am’ + str(age) + ’ years old.’<br />
+‘Hello, my name is Al. I am 4000 years old.’</p>
+<p>However, this requires a lot of tedious typing. A simpler approach is to use <em>string interpolation</em>, in which the %s operator inside the string acts as a marker to be replaced by values following the string. One benefit of string interpolation is that str() doesn’t have to be called to convert values to strings. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; name = ‘Al’<br />
+&gt;&gt;&gt; age = 4000<br />
+&gt;&gt;&gt; ‘My name is %s. I am %s years old.’ % (name, age)<br />
+‘My name is Al. I am 4000 years old.’</p>
+<p>Python 3.6 introduced <em>f-strings</em>, which is similar to string interpolation except that braces are used instead of %s, with the expressions placed directly inside the braces. Like raw strings, f-strings have an f prefix before the starting quotation mark. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; name = ‘Al’<br />
+&gt;&gt;&gt; age = 4000<br />
+&gt;&gt;&gt; f’My name is {name}. Next year I will be {age + 1}.’<br />
+‘My name is Al. Next year I will be 4001.’</p>
+<p>Remember to include the f prefix; otherwise, the braces and their contents will be a part of the string value:</p>
+<p>&gt;&gt;&gt; ‘My name is {name}. Next year I will be {age + 1}.’<br />
+‘My name is {name}. Next year I will be {age + 1}.’</p>
+<h4 id="useful-string-methods"><strong>Useful String Methods</strong> <a id="calibre_link-213"></a></h4>
+<p>Several string methods analyze strings or create transformed string values. This section describes the methods you’ll be using most often.</p>
+<p><strong>The upper(), lower(), isupper(), and islower() Methods</strong></p>
+<p>The upper() and lower() string methods return a new string where all the letters in the original string have been converted to uppercase or lowercase, respectively. Nonletter characters in the string remain unchanged. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ‘Hello, world!’<br />
+&gt;&gt;&gt; spam = spam.upper()<br />
+&gt;&gt;&gt; spam<br />
+‘HELLO, WORLD!’<br />
+&gt;&gt;&gt; spam = spam.lower()<br />
+&gt;&gt;&gt; spam<br />
+‘hello, world!’</p>
+<p>Note that these methods do not change the string itself but return new string values. If you want to change the original string, you have to call upper() or lower() on the string and then assign the new string to the variable where the original was stored. This is why you must use spam = spam.upper() to change the string in spam instead of simply spam.upper(). (This is just like if a variable eggs contains the value 10. Writing eggs + 3 does not change the value of eggs, but eggs = eggs + 3 does.)</p>
+<p>The upper() and lower() methods are helpful if you need to make a case-insensitive comparison. For example, the strings ‘great’ and ‘GREat’ are not equal to each other. But in the following small program, it does not matter whether the user types Great, GREAT, or grEAT, because the string is first converted to lowercase.</p>
+<p>print(‘How are you?’)<br />
+feeling = input()<br />
+if feeling.lower() == ‘great’:<br />
+print(‘I feel great too.’)<br />
+else:<br />
+print(‘I hope the rest of your day is good.’)</p>
+<p>When you run this program, the question is displayed, and entering a variation on great, such as GREat, will still give the output I feel great too. Adding code to your program to handle variations or mistakes in user input, such as inconsistent capitalization, will make your programs easier to use and less likely to fail.</p>
+<p>How are you?<br />
+GREat<br />
+I feel great too.</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/convertlowercase/"><em>https://autbor.com/convertlowercase/</em></a>. The isupper() and islower() methods will return a Boolean True value if the string has at least one letter and all the letters are uppercase or lowercase, respectively. Otherwise, the method returns False. Enter the following into the interactive shell, and notice what each method call returns:</p>
+<p>&gt;&gt;&gt; spam = ‘Hello, world!’<br />
+&gt;&gt;&gt; spam.islower()<br />
+False<br />
+&gt;&gt;&gt; spam.isupper()<br />
+False<br />
+&gt;&gt;&gt; ‘HELLO’.isupper()<br />
+True<br />
+&gt;&gt;&gt; ‘abc12345’.islower()<br />
+True<br />
+&gt;&gt;&gt; ‘12345’.islower()<br />
+False<br />
+&gt;&gt;&gt; ‘12345’.isupper()<br />
+False</p>
+<p>Since the upper() and lower() string methods themselves return strings, you can call string methods on <em>those</em> returned string values as well. Expressions that do this will look like a chain of method calls. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello’.upper()<br />
+‘HELLO’<br />
+&gt;&gt;&gt; ‘Hello’.upper().lower()<br />
+‘hello’<br />
+&gt;&gt;&gt; ‘Hello’.upper().lower().upper()<br />
+‘HELLO’<br />
+&gt;&gt;&gt; ‘HELLO’.lower()<br />
+‘hello’<br />
+&gt;&gt;&gt; ‘HELLO’.lower().islower()<br />
+True</p>
+<p><strong>The isX() Methods</strong></p>
+<p>Along with islower() and isupper(), there are several other string methods that have names beginning with the word <em>is</em>. These methods return a Boolean value that describes the nature of the string. Here are some common isX string methods:</p>
+<p>isalpha() Returns True if the string consists only of letters and isn’t blank</p>
+<p>isalnum() Returns True if the string consists only of letters and numbers and is not blank</p>
+<p>isdecimal() Returns True if the string consists only of numeric characters and is not blank</p>
+<p>isspace() Returns True if the string consists only of spaces, tabs, and newlines and is not blank</p>
+<p>istitle() Returns True if the string consists only of words that begin with an uppercase letter followed by only lowercase letters</p>
+<p>Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘hello’.isalpha()<br />
+True<br />
+&gt;&gt;&gt; ‘hello123’.isalpha()<br />
+False<br />
+&gt;&gt;&gt; ‘hello123’.isalnum()<br />
+True<br />
+&gt;&gt;&gt; ‘hello’.isalnum()<br />
+True<br />
+&gt;&gt;&gt; ‘123’.isdecimal()<br />
+True<br />
+&gt;&gt;&gt; ’ ‘.isspace()<br />
+True<br />
+&gt;&gt;&gt; ’This Is Title Case’.istitle()<br />
+True<br />
+&gt;&gt;&gt; ‘This Is Title Case 123’.istitle()<br />
+True<br />
+&gt;&gt;&gt; ‘This Is not Title Case’.istitle()<br />
+False<br />
+&gt;&gt;&gt; ‘This Is NOT Title Case Either’.istitle()<br />
+False</p>
+<p>The isX() string methods are helpful when you need to validate user input. For example, the following program repeatedly asks users for their age and a password until they provide valid input. Open a new file editor window and enter this program, saving it as <em>validateInput.py</em>:</p>
+<p>while True:<br />
+print(‘Enter your age:’)<br />
+age = input()<br />
+if age.isdecimal():<br />
+break<br />
+print(‘Please enter a number for your age.’)</p>
+<p>while True:<br />
+print(‘Select a new password (letters and numbers only):’)<br />
+password = input()<br />
+if password.isalnum():<br />
+break<br />
+print(‘Passwords can only have letters and numbers.’)</p>
+<p>In the first while loop, we ask the user for their age and store their input in age. If age is a valid (decimal) value, we break out of this first while loop and move on to the second, which asks for a password. Otherwise, we inform the user that they need to enter a number and again ask them to enter their age. In the second while loop, we ask for a password, store the user’s input in password, and break out of the loop if the input was alpha­numeric. If it wasn’t, we’re not satisfied, so we tell the user the password needs to be alphanumeric and again ask them to enter a password.</p>
+<p>When run, the program’s output looks like this:</p>
+<p>Enter your age:<br />
+forty two<br />
+Please enter a number for your age.<br />
+Enter your age:<br />
+42<br />
+Select a new password (letters and numbers only):<br />
+secr3t!<br />
+Passwords can only have letters and numbers.<br />
+Select a new password (letters and numbers only):<br />
+secr3t</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/validateinput/"><em>https://autbor.com/validateinput/</em></a>. Calling isdecimal() and isalnum() on variables, we’re able to test whether the values stored in those variables are decimal or not, alphanumeric or not. Here, these tests help us reject the input forty two but accept 42, and reject secr3t! but accept secr3t.</p>
+<p><strong>The startswith() and endswith() Methods</strong></p>
+<p>The startswith() and endswith() methods return True if the string value they are called on begins or ends (respectively) with the string passed to the method; otherwise, they return False. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello, world!’.startswith(‘Hello’)<br />
+True<br />
+&gt;&gt;&gt; ‘Hello, world!’.endswith(‘world!’)<br />
+True<br />
+&gt;&gt;&gt; ‘abc123’.startswith(‘abcdef’)<br />
+False<br />
+&gt;&gt;&gt; ‘abc123’.endswith(‘12’)<br />
+False<br />
+&gt;&gt;&gt; ‘Hello, world!’.startswith(‘Hello, world!’)<br />
+True<br />
+&gt;&gt;&gt; ‘Hello, world!’.endswith(‘Hello, world!’)<br />
+True</p>
+<p>These methods are useful alternatives to the == equals operator if you need to check only whether the first or last part of the string, rather than the whole thing, is equal to another string.</p>
+<p><strong>The join() and split() Methods</strong></p>
+<p>The join() method is useful when you have a list of strings that need to be joined together into a single string value. The join() method is called on a string, gets passed a list of strings, and returns a string. The returned string is the concatenation of each string in the passed-in list. For example, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘,’.join([‘cats’, ‘rats’, ‘bats’])<br />
+‘cats, rats, bats’<br />
+&gt;&gt;&gt; ’ ‘.join([’My’, ‘name’, ‘is’, ‘Simon’])<br />
+‘My name is Simon’<br />
+&gt;&gt;&gt; ‘ABC’.join([‘My’, ‘name’, ‘is’, ‘Simon’])<br />
+‘MyABCnameABCisABCSimon’</p>
+<p>Notice that the string join() calls on is inserted between each string of the list argument. For example, when join([‘cats’, ‘rats’, ‘bats’]) is called on the ‘,’ string, the returned string is ‘cats, rats, bats’.</p>
+<p>Remember that join() is called on a string value and is passed a list value. (It’s easy to accidentally call it the other way around.) The split() method does the opposite: It’s called on a string value and returns a list of strings. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘My name is Simon’.split()<br />
+[‘My’, ‘name’, ‘is’, ‘Simon’]</p>
+<p>By default, the string ‘My name is Simon’ is split wherever whitespace characters such as the space, tab, or newline characters are found. These whitespace characters are not included in the strings in the returned list. You can pass a delimiter string to the split() method to specify a different string to split upon. For example, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘MyABCnameABCisABCSimon’.split(‘ABC’)<br />
+[‘My’, ‘name’, ‘is’, ‘Simon’]<br />
+&gt;&gt;&gt; ‘My name is Simon’.split(‘m’)<br />
+[‘My na’, ‘e is Si’, ‘on’]</p>
+<p>A common use of split() is to split a multiline string along the newline characters. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ’’’Dear Alice,<br />
+How have you been? I am fine.<br />
+There is a container in the fridge<br />
+that is labeled “Milk Experiment.”</p>
+<p>Please do not drink it.<br />
+Sincerely,<br />
+Bob’’’<br />
+&gt;&gt;&gt; spam.split(‘’)<br />
+[‘Dear Alice,’, ‘How have you been? I am fine.’, ‘There is a container in the<br />
+fridge’, ‘that is labeled “Milk Experiment.”’, ’‘, ’Please do not drink it.’,<br />
+‘Sincerely,’, ‘Bob’]</p>
+<p>Passing split() the argument ‘’ lets us split the multiline string stored in spam along the newlines and return a list in which each item corresponds to one line of the string.</p>
+<p><strong>Splitting Strings with the partition() Method</strong></p>
+<p>The partition() string method can split a string into the text before and after a separator string. This method searches the string it is called on for the separator string it is passed, and returns a tuple of three substrings for the “before,” “separator,” and “after” substrings. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello, world!’.partition(‘w’)<br />
+(‘Hello,’, ‘w’, ‘orld!’)<br />
+&gt;&gt;&gt; ‘Hello, world!’.partition(‘world’)<br />
+(‘Hello,’, ‘world’, ‘!’)</p>
+<p>If the separator string you pass to partition() occurs multiple times in the string that partition() calls on, the method splits the string only on the first occurrence:</p>
+<p>&gt;&gt;&gt; ‘Hello, world!’.partition(‘o’)<br />
+(‘Hell’, ‘o’, ‘, world!’)</p>
+<p>If the separator string can’t be found, the first string returned in the tuple will be the entire string, and the other two strings will be empty:</p>
+<p>&gt;&gt;&gt; ‘Hello, world!’.partition(‘XYZ’)<br />
+(‘Hello, world!’, ’‘,’’)</p>
+<p>You can use the multiple assignment trick to assign the three returned strings to three variables:</p>
+<p>&gt;&gt;&gt; before, sep, after = ‘Hello, world!’.partition(’ ‘)<br />
+&gt;&gt;&gt; before<br />
+’Hello,’<br />
+&gt;&gt;&gt; after<br />
+‘world!’</p>
+<p>The partition() method is useful for splitting a string whenever you need the parts before, including, and after a particular separator string.</p>
+<p><strong>Justifying Text with the rjust(), ljust(), and center() Methods</strong></p>
+<p>The rjust() and ljust() string methods return a padded version of the string they are called on, with spaces inserted to justify the text. The first argument to both methods is an integer length for the justified string. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello’.rjust(10)<br />
+’ Hello’<br />
+&gt;&gt;&gt; ‘Hello’.rjust(20)<br />
+’ Hello’<br />
+&gt;&gt;&gt; ‘Hello, World’.rjust(20)<br />
+’ Hello, World’<br />
+&gt;&gt;&gt; ‘Hello’.ljust(10)<br />
+‘Hello’</p>
+<p>‘Hello’.rjust(10) says that we want to right-justify ‘Hello’ in a string of total length 10. ‘Hello’ is five characters, so five spaces will be added to its left, giving us a string of 10 characters with ‘Hello’ justified right.</p>
+<p>An optional second argument to rjust() and ljust() will specify a fill character other than a space character. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello’.rjust(20, ‘*’)<br />
+‘***************Hello’<br />
+&gt;&gt;&gt; ‘Hello’.ljust(20, ‘-’)<br />
+‘Hello—————’</p>
+<p>The center() string method works like ljust() and rjust() but centers the text rather than justifying it to the left or right. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ‘Hello’.center(20)<br />
+’ Hello ’<br />
+&gt;&gt;&gt; ‘Hello’.center(20, ‘=’)<br />
+‘=======Hello========’</p>
+<p>These methods are especially useful when you need to print tabular data that has correct spacing. Open a new file editor window and enter the following code, saving it as <em>picnicTable.py</em>:</p>
+<p>def printPicnic(itemsDict, leftWidth, rightWidth):<br />
+print(‘PICNIC ITEMS’.center(leftWidth + rightWidth, ‘-’))<br />
+for k, v in itemsDict.items():<br />
+print(k.ljust(leftWidth, ‘.’) + str(v).rjust(rightWidth))</p>
+<p>picnicItems = {‘sandwiches’: 4, ‘apples’: 12, ‘cups’: 4, ‘cookies’: 8000}<br />
+printPicnic(picnicItems, 12, 5)<br />
+printPicnic(picnicItems, 20, 6)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/picnictable/"><em>https://autbor.com/picnictable/</em></a>. In this program, we define a printPicnic() method that will take in a dictionary of information and use center(), ljust(), and rjust() to display that information in a neatly aligned table-like format.</p>
+<p>The dictionary that we’ll pass to printPicnic() is picnicItems. In picnicItems, we have 4 sandwiches, 12 apples, 4 cups, and 8,000 cookies. We want to organize this information into two columns, with the name of the item on the left and the quantity on the right.</p>
+<p>To do this, we decide how wide we want the left and right columns to be. Along with our dictionary, we’ll pass these values to printPicnic().</p>
+<p>The printPicnic() function takes in a dictionary, a leftWidth for the left column of a table, and a rightWidth for the right column. It prints a title, PICNIC ITEMS, centered above the table. Then, it loops through the dictionary, printing each key-value pair on a line with the key justified left and padded by periods, and the value justified right and padded by spaces.</p>
+<p>After defining printPicnic(), we define the dictionary picnicItems and call printPicnic() twice, passing it different widths for the left and right table columns.</p>
+<p>When you run this program, the picnic items are displayed twice. The first time the left column is 12 characters wide, and the right column is 5 characters wide. The second time they are 20 and 6 characters wide, respectively.</p>
+<p>—PICNIC ITEMS–<br />
+sandwiches.. 4<br />
+apples…… 12<br />
+cups…….. 4<br />
+cookies….. 8000<br />
+——-PICNIC ITEMS——-<br />
+sandwiches………. 4<br />
+apples………….. 12<br />
+cups……………. 4<br />
+cookies…………. 8000</p>
+<p>Using rjust(), ljust(), and center() lets you ensure that strings are neatly aligned, even if you aren’t sure how many characters long your strings are.</p>
+<p><strong>Removing Whitespace with the strip(), rstrip(), and lstrip() Methods</strong></p>
+<p>Sometimes you may want to strip off whitespace characters (space, tab, and newline) from the left side, right side, or both sides of a string. The strip() string method will return a new string without any whitespace characters at the beginning or end. The lstrip() and rstrip() methods will remove whitespace characters from the left and right ends, respectively. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ’ Hello, World ’<br />
+&gt;&gt;&gt; spam.strip()<br />
+‘Hello, World’<br />
+&gt;&gt;&gt; spam.lstrip()<br />
+‘Hello, World’<br />
+&gt;&gt;&gt; spam.rstrip()<br />
+’ Hello, World’</p>
+<p>Optionally, a string argument will specify which characters on the ends should be stripped. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = ‘SpamSpamBaconSpamEggsSpamSpam’<br />
+&gt;&gt;&gt; spam.strip(‘ampS’)<br />
+‘BaconSpamEggs’</p>
+<p>Passing strip() the argument ‘ampS’ will tell it to strip occurrences of a, m, p, and capital S from the ends of the string stored in spam. The order of the characters in the string passed to strip() does not matter: strip(‘ampS’) will do the same thing as strip(‘mapS’) or strip(‘Spam’).</p>
+<h4 id="numeric-values-of-characters-with-the-ord-and-chr-functions"><strong>Numeric Values of Characters with the ord() and chr() Functions</strong> <a id="calibre_link-221"></a></h4>
+<p>Computers store information as bytes—strings of binary numbers, which means we need to be able to convert text to numbers. Because of this, every text character has a corresponding numeric value called a <em>Unicode code point</em>. For example, the numeric code point is 65 for ‘A’, 52 for ‘4’, and 33 for ‘!’. You can use the ord() function to get the code point of a one-character string, and the chr() function to get the one-character string of an integer code point. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; ord(‘A’)<br />
+65<br />
+&gt;&gt;&gt; ord(‘4’)<br />
+52<br />
+&gt;&gt;&gt; ord(‘!’)<br />
+33<br />
+&gt;&gt;&gt; chr(65)<br />
+‘A’</p>
+<p>These functions are useful when you need to do an ordering or mathematical operation on characters:</p>
+<p>&gt;&gt;&gt; ord(‘B’)<br />
+66<br />
+&gt;&gt;&gt; ord(‘A’) &lt; ord(‘B’)<br />
+True<br />
+&gt;&gt;&gt; chr(ord(‘A’))<br />
+‘A’<br />
+&gt;&gt;&gt; chr(ord(‘A’) + 1)<br />
+‘B’</p>
+<p>There is more to Unicode and code points, but those details are beyond the scope of this book. If you’d like to know more, I recommend watching Ned Batchelder’s 2012 PyCon talk, “Pragmatic Unicode, or, How Do I Stop the Pain?” at <a href="https://youtu.be/sgHbC6udIqc"><em>https://youtu.be/sgHbC6udIqc</em></a>.</p>
+<h4 id="copying-and-pasting-strings-with-the-pyperclip-module"><strong>Copying and Pasting Strings with the pyperclip Module</strong> <a id="calibre_link-222"></a></h4>
+<p>The pyperclip module has copy() and paste() functions that can send text to and receive text from your computer’s clipboard. Sending the output of your program to the clipboard will make it easy to paste it into an email, word processor, or some other software.</p>
+<p><strong>RUNNING PYTHON SCRIPTS OUTSIDE OF MU</strong></p>
+<p>So far, you’ve been running your Python scripts using the interactive shell and file editor in Mu. However, you won’t want to go through the inconvenience of opening Mu and the Python script each time you want to run a script. Fortunately, there are shortcuts you can set up to make running Python scripts easier. The steps are slightly different for Windows, macOS, and Linux, but each is described in <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a>. Turn to <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a> to learn how to run your Python scripts conveniently and be able to pass command line arguments to them. (You will not be able to pass command line arguments to your programs using Mu.)</p>
+<p>The pyperclip module does not come with Python. To install it, follow the directions for installing third-party modules in <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-2">Appendix A</a>. After installing pyperclip, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; import pyperclip<br />
+&gt;&gt;&gt; pyperclip.copy(‘Hello, world!’)<br />
+&gt;&gt;&gt; pyperclip.paste()<br />
+‘Hello, world!’</p>
+<p>Of course, if something outside of your program changes the clipboard contents, the paste() function will return it. For example, if I copied this sentence to the clipboard and then called paste(), it would look like this:</p>
+<p>&gt;&gt;&gt; pyperclip.paste()<br />
+‘For example, if I copied this sentence to the clipboard and then called<br />
+paste(), it would look like this:’</p>
+<h4 id="project-multi-clipboard-automatic-messages"><strong>Project: Multi-Clipboard Automatic Messages</strong> <a id="calibre_link-223"></a></h4>
+<p>If you’ve responded to a large number of emails with similar phrasing, you’ve probably had to do a lot of repetitive typing. Maybe you keep a text document with these phrases so you can easily copy and paste them using the clipboard. But your clipboard can only store one message at a time, which isn’t very convenient. Let’s make this process a bit easier with a program that stores multiple phrases.</p>
+<p><strong>Step 1: Program Design and Data Structures</strong></p>
+<p>You want to be able to run this program with a command line argument that is a short key phrase—for instance, <em>agree</em> or <em>busy</em>. The message associated with that key phrase will be copied to the clipboard so that the user can paste it into an email. This way, the user can have long, detailed messages without having to retype them.</p>
+<p><strong>THE CHAPTER PROJECTS</strong></p>
+<p>This is the first “chapter project” of the book. From here on, each chapter will have projects that demonstrate the concepts covered in the chapter. The projects are written in a style that takes you from a blank file editor window to a full, working program. Just like with the interactive shell examples, don’t only read the project sections—follow along on your computer!</p>
+<p>Open a new file editor window and save the program as <em>mclip.py</em>. You need to start the program with a #! (<em>shebang</em>) line (see <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a>) and should also write a comment that briefly describes the program. Since you want to associate each piece of text with its key phrase, you can store these as strings in a dictionary. The dictionary will be the data structure that organizes your key phrases and text. Make your program look like the following:</p>
+<p>#! python3<br />
+# mclip.py - A multi-clipboard program.</p>
+<p>TEXT = {‘agree’: ""“Yes, I agree. That sounds fine to me.”"“,<br />
+‘busy’:”"“Sorry, can we do this later this week or next week?”"“,<br />
+‘upsell’:”"“Would you consider making this a monthly donation?”""}</p>
+<p><strong>Step 2: Handle Command Line Arguments</strong></p>
+<p>The command line arguments will be stored in the variable sys.argv. (See <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a> for more information on how to use command line arguments in your programs.) The first item in the sys.argv list should always be a string containing the program’s filename (‘mclip.py’), and the second item should be the first command line argument. For this program, this argument is the key phrase of the message you want. Since the command line argument is mandatory, you display a usage message to the user if they forget to add it (that is, if the sys.argv list has fewer than two values in it). Make your program look like the following:</p>
+<p>#! python3<br />
+# mclip.py - A multi-clipboard program.</p>
+<p>TEXT = {‘agree’: ""“Yes, I agree. That sounds fine to me.”"“,<br />
+‘busy’:”"“Sorry, can we do this later this week or next week?”"“,<br />
+‘upsell’:”"“Would you consider making this a monthly donation?”""}</p>
+<p>import sys<br />
+if len(sys.argv) &lt; 2:<br />
+print(‘Usage: python mclip.py [keyphrase] - copy phrase text’)<br />
+sys.exit()</p>
+<p>keyphrase = sys.argv[1] # first command line arg is the keyphrase</p>
+<p><strong>Step 3: Copy the Right Phrase</strong></p>
+<p>Now that the key phrase is stored as a string in the variable keyphrase, you need to see whether it exists in the TEXT dictionary as a key. If so, you want to copy the key’s value to the clipboard using pyperclip.copy(). (Since you’re using the pyperclip module, you need to import it.) Note that you don’t actually <em>need</em> the keyphrase variable; you could just use sys.argv[1] everywhere keyphrase is used in this program. But a variable named keyphrase is much more readable than something cryptic like sys.argv[1].</p>
+<p>Make your program look like the following:</p>
+<p>#! python3<br />
+# mclip.py - A multi-clipboard program.</p>
+<p>TEXT = {‘agree’: ""“Yes, I agree. That sounds fine to me.”"“,<br />
+‘busy’:”"“Sorry, can we do this later this week or next week?”"“,<br />
+‘upsell’:”"“Would you consider making this a monthly donation?”""}</p>
+<p>import sys, pyperclip<br />
+if len(sys.argv) &lt; 2:<br />
+print(‘Usage: py mclip.py [keyphrase] - copy phrase text’)<br />
+sys.exit()</p>
+<p>keyphrase = sys.argv[1] # first command line arg is the keyphrase</p>
+<p>if keyphrase in TEXT:<br />
+pyperclip.copy(TEXT[keyphrase])<br />
+print(‘Text for’ + keyphrase + ’ copied to clipboard.’)<br />
+else:<br />
+print(‘There is no text for’ + keyphrase)</p>
+<p>This new code looks in the TEXT dictionary for the key phrase. If the key phrase is a key in the dictionary, we get the value corresponding to that key, copy it to the clipboard, and print a message saying that we copied the value. Otherwise, we print a message saying there’s no key phrase with that name.</p>
+<p>That’s the complete script. Using the instructions in <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a> for launching command line programs easily, you now have a fast way to copy messages to the clipboard. You will have to modify the TEXT dictionary value in the source whenever you want to update the program with a new message.</p>
+<p>On Windows, you can create a batch file to run this program with the WIN-R Run window. (For more about batch files, see <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35">Appendix B</a>.) Enter the following into the file editor and save the file as <em>mclip.bat</em> in the <em>C:</em> folder:</p>
+<p><span class="citation" data-cites="py.exe">@py.exe</span> C:_to_file.py %*<br />
+<span class="citation" data-cites="pause">@pause</span></p>
+<p>With this batch file created, running the multi-clipboard program on Windows is just a matter of pressing WIN-R and typing mclip key phrase.</p>
+<h4 id="project-adding-bullets-to-wiki-markup"><strong>Project: Adding Bullets to Wiki Markup</strong> <a id="calibre_link-227"></a></h4>
+<p>When editing a Wikipedia article, you can create a bulleted list by putting each list item on its own line and placing a star in front. But say you have a really large list that you want to add bullet points to. You could just type those stars at the beginning of each line, one by one. Or you could automate this task with a short Python script.</p>
+<p>The <em>bulletPointAdder.py</em> script will get the text from the clipboard, add a star and space to the beginning of each line, and then paste this new text to the clipboard. For example, if I copied the following text (for the Wikipedia article “List of Lists of Lists”) to the clipboard:</p>
+<p>Lists of animals<br />
+Lists of aquarium life<br />
+Lists of biologists by author abbreviation<br />
+Lists of cultivars</p>
+<p>and then ran the <em>bulletPointAdder.py</em> program, the clipboard would then contain the following:</p>
+<p>* Lists of animals<br />
+* Lists of aquarium life<br />
+* Lists of biologists by author abbreviation<br />
+* Lists of cultivars</p>
+<p>This star-prefixed text is ready to be pasted into a Wikipedia article as a bulleted list.</p>
+<p><strong>Step 1: Copy and Paste from the Clipboard</strong></p>
+<p>You want the <em>bulletPointAdder.py</em> program to do the following:</p>
+<ol type="1">
+<li>Paste text from the clipboard.</li>
+<li>Do something to it.</li>
+<li>Copy the new text to the clipboard.</li>
+</ol>
+<p>That second step is a little tricky, but steps 1 and 3 are pretty straightforward: they just involve the pyperclip.copy() and pyperclip.paste() functions. For now, let’s just write the part of the program that covers steps 1 and 3. Enter the following, saving the program as <em>bulletPointAdder.py</em>:</p>
+<p>#! python3<br />
+# bulletPointAdder.py - Adds Wikipedia bullet points to the start<br />
+# of each line of text on the clipboard.</p>
+<p>import pyperclip<br />
+text = pyperclip.paste()</p>
+<p># TODO: Separate lines and add stars.</p>
+<p>pyperclip.copy(text)</p>
+<p>The TODO comment is a reminder that you should complete this part of the program eventually. The next step is to actually implement that piece of the program.</p>
+<p><strong>Step 2: Separate the Lines of Text and Add the Star</strong></p>
+<p>The call to pyperclip.paste() returns all the text on the clipboard as one big string. If we used the “List of Lists of Lists” example, the string stored in text would look like this:</p>
+<p>‘Lists of animalsof aquarium lifeof biologists by author<br />
+abbreviationof cultivars’</p>
+<p>The newline characters in this string cause it to be displayed with multiple lines when it is printed or pasted from the clipboard. There are many “lines” in this one string value. You want to add a star to the start of each of these lines.</p>
+<p>You could write code that searches for each newline character in the string and then adds the star just after that. But it would be easier to use the split() method to return a list of strings, one for each line in the original string, and then add the star to the front of each string in the list.</p>
+<p>Make your program look like the following:</p>
+<p>#! python3<br />
+# bulletPointAdder.py - Adds Wikipedia bullet points to the start<br />
+# of each line of text on the clipboard.</p>
+<p>import pyperclip<br />
+text = pyperclip.paste()</p>
+<p># Separate lines and add stars.<br />
+lines = text.split(‘’)<br />
+for i in range(len(lines)): # loop through all indexes in the “lines” list<br />
+lines[i] = ‘*’ + lines[i] # add star to each string in “lines” list</p>
+<p>pyperclip.copy(text)</p>
+<p>We split the text along its newlines to get a list in which each item is one line of the text. We store the list in lines and then loop through the items in lines. For each line, we add a star and a space to the start of the line. Now each string in lines begins with a star.</p>
+<p><strong>Step 3: Join the Modified Lines</strong></p>
+<p>The lines list now contains modified lines that start with stars. But pyperclip.copy() is expecting a single string value, however, not a list of string values. To make this single string value, pass lines into the join() method to get a single string joined from the list’s strings. Make your program look like the following:</p>
+<p>#! python3<br />
+# bulletPointAdder.py - Adds Wikipedia bullet points to the start<br />
+# of each line of text on the clipboard.</p>
+<p>import pyperclip<br />
+text = pyperclip.paste()</p>
+<p># Separate lines and add stars.<br />
+lines = text.split(‘’)<br />
+for i in range(len(lines)): # loop through all indexes for “lines” list<br />
+lines[i] = ‘*’ + lines[i] # add star to each string in “lines” list<br />
+text = ‘’.join(lines)<br />
+pyperclip.copy(text)</p>
+<p>When this program is run, it replaces the text on the clipboard with text that has stars at the start of each line. Now the program is complete, and you can try running it with text copied to the clipboard.</p>
+<p>Even if you don’t need to automate this specific task, you might want to automate some other kind of text manipulation, such as removing trailing spaces from the end of lines or converting text to uppercase or lowercase. Whatever your needs, you can use the clipboard for input and output.</p>
+<h4 id="a-short-progam-pig-latin"><strong>A Short Progam: Pig Latin</strong> <a id="calibre_link-231"></a></h4>
+<p>Pig Latin is a silly made-up language that alters English words. If a word begins with a vowel, the word <em>yay</em> is added to the end of it. If a word begins with a consonant or consonant cluster (like <em>ch</em> or <em>gr</em>), that consonant or cluster is moved to the end of the word followed by <em>ay</em>.</p>
+<p>Let’s write a Pig Latin program that will output something like this:</p>
+<p>Enter the English message to translate into Pig Latin:<br />
+My name is AL SWEIGART and I am 4,000 years old.<br />
+Ymay amenay isyay ALYAY EIGARTSWAY andyay Iyay amyay 4,000 yearsyay oldyay.</p>
+<p>This program works by altering a string using the methods introduced in this chapter. Type the following source code into the file editor, and save the file as <em>pigLat.py</em>:</p>
+<p># English to Pig Latin<br />
+print(‘Enter the English message to translate into Pig Latin:’)<br />
+message = input()</p>
+<p>VOWELS = (‘a’, ‘e’, ‘i’, ‘o’, ‘u’, ‘y’)</p>
+<p>pigLatin = [] # A list of the words in Pig Latin.<br />
+for word in message.split():<br />
+# Separate the non-letters at the start of this word:<br />
+prefixNonLetters = ’’<br />
+while len(word) &gt; 0 and not word[0].isalpha():<br />
+prefixNonLetters += word[0]<br />
+word = word[1:]<br />
+if len(word) == 0:<br />
+pigLatin.append(prefixNonLetters)<br />
+continue</p>
+<pre><code>\# Separate the non-letters at the end of this word:
+suffixNonLetters = &#39;&#39;
+while not word\[-1\].isalpha\(\):
+    suffixNonLetters += word\[-1\]
+    word = word\[:-1\]
+
+\# Remember if the word was in uppercase or title case.
+wasUpper = word.isupper\(\)
+wasTitle = word.istitle\(\)
+
+word = word.lower\(\) \# Make the word lowercase for translation.
+
+\# Separate the consonants at the start of this word:
+prefixConsonants = &#39;&#39;
+while len\(word\) &amp;gt; 0 and not word\[0\] in VOWELS:
+    prefixConsonants += word\[0\]
+    word = word\[1:\]
+
+\# Add the Pig Latin ending to the word:
+if prefixConsonants != &#39;&#39;:
+    word += prefixConsonants + &#39;ay&#39;
+else:
+    word += &#39;yay&#39;
+
+\# Set the word back to uppercase or title case:
+if wasUpper:
+    word = word.upper\(\)
+if wasTitle:
+    word = word.title\(\)
+
+\# Add the non-letters back to the start or end of the word.
+pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)</code></pre>
+<p># Join all the words back together into a single string:<br />
+print(’ ’.join(pigLatin))</p>
+<p>Let’s look at this code line by line, starting at the top:</p>
+<p># English to Pig Latin<br />
+print(‘Enter the English message to translate into Pig Latin:’)<br />
+message = input()</p>
+<p>VOWELS = (‘a’, ‘e’, ‘i’, ‘o’, ‘u’, ‘y’)</p>
+<p>First, we ask the user to enter the English text to translate into Pig Latin. Also, we create a constant that holds every lowercase vowel letter (and <em>y</em>) as a tuple of strings. This will be used later in our program.</p>
+<p>Next, we’re going to create the pigLatin variable to store the words as we translate them into Pig Latin:</p>
+<p>pigLatin = [] # A list of the words in Pig Latin.<br />
+for word in message.split():<br />
+# Separate the non-letters at the start of this word:<br />
+prefixNonLetters = ’’<br />
+while len(word) &gt; 0 and not word[0].isalpha():<br />
+prefixNonLetters += word[0]<br />
+word = word[1:]<br />
+if len(word) == 0:<br />
+pigLatin.append(prefixNonLetters)<br />
+continue</p>
+<p>We need each word to be its own string, so we call message.split() to get a list of the words as separate strings. The string ‘My name is AL SWEIGART and I am 4,000 years old.’ would cause split() to return [‘My’, ‘name’, ‘is’, ‘AL’, ‘SWEIGART’, ‘and’, ‘I’, ‘am’, ‘4,000’, ‘years’, ‘old.’].</p>
+<p>We need to remove any non-letters from the start and end of each word so that strings like ‘old.’ translate to ‘oldyay.’ instead of ‘old.yay’. We’ll save these non-letters to a variable named prefixNonLetters.</p>
+<pre><code>\# Separate the non-letters at the end of this word:
+suffixNonLetters = &#39;&#39;
+while not word\[-1\].isalpha\(\):
+    suffixNonLetters += word\[-1\]
+    word = word\[:-1\]</code></pre>
+<p>A loop that calls isalpha() on the first character in the word will determine if we should remove a character from a word and concatenate it to the end of prefixNonLetters. If the entire word is made of non-letter characters, like ‘4,000’, we can simply append it to the pigLatin list and continue to the next word to translate. We also need to save the non-letters at the end of the word string. This code is similar to the previous loop.</p>
+<p>Next, we’ll make sure the program remembers if the word was in uppercase or title case so we can restore it after translating the word to Pig Latin:</p>
+<pre><code>\# Remember if the word was in uppercase or title case.
+wasUpper = word.isupper\(\)
+wasTitle = word.istitle\(\)
+
+word = word.lower\(\) \# Make the word lowercase for translation.</code></pre>
+<p>For the rest of the code in the for loop, we’ll work on a lowercase version of word.</p>
+<p>To convert a word like <em>sweigart</em> to <em>eigart-sway</em>, we need to remove all of the consonants from the beginning of word:</p>
+<pre><code>\# Separate the consonants at the start of this word:
+prefixConsonants = &#39;&#39;
+while len\(word\) &amp;gt; 0 and not word\[0\] in VOWELS:
+    prefixConsonants += word\[0\]
+    word = word\[1:\]</code></pre>
+<p>We use a loop similar to the loop that removed the non-letters from the start of word, except now we are pulling off consonants and storing them to a variable named prefixConsonants.</p>
+<p>If there were any consonants at the start of the word, they are now in prefixConsonants and we should concatenate that variable and the string ‘ay’ to the end of word. Otherwise, we can assume word begins with a vowel and we only need to concatenate ‘yay’:</p>
+<pre><code>\# Add the Pig Latin ending to the word:
+if prefixConsonants != &#39;&#39;:
+    word += prefixConsonants + &#39;ay&#39;
+else:
+    word += &#39;yay&#39;</code></pre>
+<p>Recall that we set word to its lowercase version with word = word.lower(). If word was originally in uppercase or title case, this code will convert word back to its original case:</p>
+<pre><code>\# Set the word back to uppercase or title case:
+if wasUpper:
+    word = word.upper\(\)
+if wasTitle:
+    word = word.title\(\)</code></pre>
+<p>At the end of the for loop, we append the word, along with any non-letter prefix or suffix it originally had, to the pigLatin list:</p>
+<pre><code>\# Add the non-letters back to the start or end of the word.
+pigLatin.append\(prefixNonLetters + word + suffixNonLetters\)</code></pre>
+<p># Join all the words back together into a single string:<br />
+print(’ ’.join(pigLatin))</p>
+<p>After this loop finishes, we combine the list of strings into a single string by calling the join() method. This single string is passed to print() to display our Pig Latin on the screen.</p>
+<p>You can find other short, text-based Python programs like this one at <a href="https://github.com/asweigart/pythonstdiogames/"><em>https://github.com/asweigart/pythonstdiogames/</em></a>.</p>
+<h4 id="summary"><strong>Summary</strong> <a id="calibre_link-232"></a></h4>
+<p>Text is a common form of data, and Python comes with many helpful string methods to process the text stored in string values. You will make use of indexing, slicing, and string methods in almost every Python program you write.</p>
+<p>The programs you are writing now don’t seem too sophisticated—they don’t have graphical user interfaces with images and colorful text. So far, you’re displaying text with print() and letting the user enter text with input(). However, the user can quickly enter large amounts of text through the clipboard. This ability provides a useful avenue for writing programs that manipulate massive amounts of text. These text-based programs might not have flashy windows or graphics, but they can get a lot of useful work done quickly.</p>
+<p>Another way to manipulate large amounts of text is reading and writing files directly off the hard drive. You’ll learn how to do this with Python in <a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-32">Chapter 9</a>.</p>
+<p>That just about covers all the basic concepts of Python programming! You’ll continue to learn new concepts throughout the rest of this book, but you now know enough to start writing some useful programs that can automate tasks. If you’d like to see a collection of short, simple Python programs built from the basic concepts you’ve learned so far, check out <a href="https://github.com/asweigart/pythonstdiogames/"><em>https://github.com/asweigart/pythonstdiogames/</em></a>. Try copying the source code for each program by hand, and then make modifications to see how they affect the behavior of the program. Once you have an understanding of how the program works, try re-creating the program yourself from scratch. You don’t need to re-create the source code exactly; just focus on what the program does rather than how it does it.</p>
+<p>You might not think you have enough Python knowledge to do things such as download web pages, update spreadsheets, or send text messages, but that’s where Python modules come in! These modules, written by other programmers, provide functions that make it easy for you to do all these things. So let’s learn how to write real programs to do useful automated tasks.</p>
+<h4 id="practice-questions"><strong>Practice Questions</strong> <a id="calibre_link-233"></a></h4>
+<p><a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1616">1</a>. What are escape characters?</p>
+<a href="https://automatetheboringstuff.com/2e/chapter6/#calibre_link-1617">2</a>. What do the and
+</body>
+</html>

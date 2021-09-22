@@ -1,28 +1,30 @@
-# Graph FAQ
+Graph FAQ
+=========
 
-## Graphs FAQ <a id="graphs-faq"></a>
+Graphs FAQ <span id="graphs-faq"></span>
+----------------------------------------
 
-### Contents <a id="contents"></a>
+### Contents <span id="contents"></span>
 
-- [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
-- [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
-- [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
-- [What is the time complexity \(big-O\) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
+-   [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
+-   [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
+-   [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
+-   [What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
 
-### Questions <a id="questions"></a>
+### Questions <span id="questions"></span>
 
-#### What is a Graph? <a id="what-is-a-graph"></a>
+#### What is a Graph? <span id="what-is-a-graph"></span>
 
 A Graph is a data structure that models objects and pairwise relationships between them with nodes and edges. For example: Users and friendships, locations and paths between them, parents and children, etc.
 
-#### Why is it important to learn Graphs? <a id="why-is-it-important-to-learn-graphs"></a>
+#### Why is it important to learn Graphs? <span id="why-is-it-important-to-learn-graphs"></span>
 
 Graphs represent relationships between data. Anytime you can identify a relationship pattern, you can build a graph and often gain insights through a traversal. These insights can be very powerful, allowing you to find new relationships, like users who have a similar taste in music or purchasing.
 
-#### How many types of graphs are there? <a id="how-many-types-of-graphs-are-there"></a>
+#### How many types of graphs are there? <span id="how-many-types-of-graphs-are-there"></span>
 
 Graphs can be directed or undirected, cyclic or acyclic, weighted or unweighted. They can also be represented with different underlying structures including, but not limited to, adjacency lists, adjacency matrices, object and pointers, or a custom solution.
 
-#### What is the time complexity \(big-O\) to add/remove/get a vertex/edge for a graph? <a id="what-is-the-time-complexity-big-o-to-addremoveget-a-vertexedge-for-a-graph"></a>
+#### What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph? <span id="what-is-the-time-complexity-big-o-to-addremoveget-a-vertexedge-for-a-graph"></span>
 
-It depends on the implementation. \([Graph Representations](https://github.com/LambdaSchool/Graphs/tree/master/objectives/graph-representations)\). Before choosing an implementation, it is wise to consider the tradeoffs and complexities of the most commonly used operations.
+It depends on the implementation. ([Graph Representations](https://github.com/LambdaSchool/Graphs/tree/master/objectives/graph-representations)). Before choosing an implementation, it is wise to consider the tradeoffs and complexities of the most commonly used operations.
