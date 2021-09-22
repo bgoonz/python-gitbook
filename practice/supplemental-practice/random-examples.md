@@ -2,12 +2,9 @@
 
 {% tabs %}
 {% tab title="Gists" %}
-
-
 ## Given an integer n, return any array containing n unique integers such that they add up to 0.
 
 ```python
-
 # Example 1:  Input: n = 5   |   Output: [-7,-1,1,3,4]
 # Explanation: These arrays also are accepted [-5,-1,1,2,3] , [-3,-1,2,-2,4].
 # Example 2:  Input: n = 3   |   Output: [-1,0,1]
@@ -552,8 +549,6 @@ print(longest_semialternating_ss("abaaaa"))
 {% endtab %}
 
 {% tab title="Gists2" %}
-
-
 ```python
 # Alexa is given n piles of equal or unequal heights.
 # In one step, Alexa can remove any number of boxes from
@@ -3189,15 +3184,7 @@ def add(param1, param2):
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
-
-
 {% file src="../../.gitbook/assets/backpedal.py" %}
-
-
 
 {% file src="../../.gitbook/assets/bfs\_search\_dict.py" %}
 
@@ -3217,25 +3204,17 @@ def add(param1, param2):
 
 {% file src="../../.gitbook/assets/celebrity.py" %}
 
-
-
 {% file src="../../.gitbook/assets/counting\_sort\_dict \(1\).py" %}
 
 {% file src="../../.gitbook/assets/counting\_sort\_list.py" %}
 
 {% file src="../../.gitbook/assets/dfs\_component\_dict \(2\).py" %}
 
-
-
 {% file src="../../.gitbook/assets/selection\_sort\_recur.py" %}
-
-
 
 {% file src="../../.gitbook/assets/selection\_sort\_iter.py" %}
 
 {% file src="../../.gitbook/assets/dijkstras\_path\_pq.py" %}
-
-
 
 {% file src="../../.gitbook/assets/dijkstras\_distances\_min \(1\).py" %}
 
@@ -3243,91 +3222,7 @@ def add(param1, param2):
 
 {% file src="../../.gitbook/assets/counting\_sort\_list \(1\).py" %}
 
-
-
 {% file src="../../.gitbook/assets/dfs\_component\_dict.py" %}
 
 {% file src="../../.gitbook/assets/dfs\_component\_dict\_recur \(1\).py" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
