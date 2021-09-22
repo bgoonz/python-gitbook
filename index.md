@@ -118,11 +118,17 @@ Awesome Find:
 
 
 
+## MIT OPENCOURSEWARE:
 
+
+
+{% file src=".gitbook/assets/6-0001-fall-2016.bin" caption="mit-open-courseware" %}
 
 
 
 ## 
+
+{% file src=".gitbook/assets/pythonlearn.pdf" %}
 
 
 
