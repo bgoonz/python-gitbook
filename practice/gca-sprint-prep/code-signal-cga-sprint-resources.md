@@ -4,8 +4,8 @@
 
 
 
-
-
+{% tabs %}
+{% tab title="First Tab" %}
 ```python
 """
 GCA Practice
@@ -740,6 +740,11 @@ def meanGroups(a):
     return result
 
 # print(meanGroups(a))
-
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 

@@ -267,6 +267,7 @@
   * [Employee Manager](aux-exploration/subject/untitled-5.md)
   * [OS Module](aux-exploration/subject/untitled-4.md)
   * [server-side-scripting](aux-exploration/subject/untitled-3.md)
+  * [Web Scraping](aux-exploration/subject/web-scraping.md)
   * [Reading and Writing to text files in Python](aux-exploration/subject/untitled-2.md)
   * [General Data Structures](aux-exploration/subject/untitled-1.md)
   * [Touple](aux-exploration/subject/touple.md)
