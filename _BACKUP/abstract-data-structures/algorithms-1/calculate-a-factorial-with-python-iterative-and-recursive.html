@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>calculate-a-factorial-with-python-iterative-and-recursive</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="calculate-a-factorial-with-python---iterative-and-recursive">Calculate a Factorial With Python - Iterative and Recursive</h1>
+<h4 id="introduction">Introduction <a id="introduction"></a></h4>
+<p>By definition, a <strong>factorial</strong> is the product of a positive integer and all the positive integers that are less than or equal to the given number. In other words, getting a factorial of a number means to multiply all whole numbers from that number, down to 1.</p>
+<blockquote>
+<p><strong>0!</strong> equals 1 as well, by convention.</p>
+</blockquote>
+<p>A factorial is denoted by the integer and followed by an exclamation mark.</p>
+<blockquote>
+<p><strong>5!</strong> denotes a <em><strong>factorial</strong></em> of <em><strong>five</strong></em>.</p>
+</blockquote>
+<p>And to calculate that factorial, we multiply the number with every whole number smaller than it, until we reach 1:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="dv">5</span><span class="op">!</span> <span class="op">=</span> <span class="dv">5</span> <span class="op">*</span> <span class="dv">4</span> <span class="op">*</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">*</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="dv">5</span><span class="op">!</span> <span class="op">=</span> <span class="dv">120</span></a></code></pre></div>
+<p>Keeping these rules in mind, in this tutorial, we will learn how to calculate the factorial of an integer with Python, using loops and recursion. Let’s start with calculating the factorial using loops.</p>
+<h4 id="calculating-factorial-using-loops">Calculating Factorial Using Loops <a id="calculatingfactorialusingloops"></a></h4>
+<p>We can calculate factorials using both the <code>while</code> loop and the <code>for</code> loop. The general process is pretty similar for both. All we need is a parameter as input and a counter.</p>
+<p>Let’s start with the <code>for</code> loop:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> get_factorial_for_loop(n):</a>
+<a class="sourceLine" id="cb2-2" title="2">    result <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="cf">if</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb2-4" title="4">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n<span class="op">+</span><span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb2-5" title="5">            result <span class="op">=</span> result <span class="op">*</span> i</a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="cf">return</span> result</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-8" title="8">        <span class="cf">return</span> <span class="st">&#39;n has to be positive&#39;</span></a></code></pre></div>
+<p>You may have noticed that we are counting starting from <strong>1</strong> to the <code>n</code>, whilst the definition of factorial was <em>from the given number down to 1</em>. But mathematically:</p>
+<p>1∗2∗3∗4…∗n=n∗(n−1)∗(n−2)∗(n−3)∗(n−4)…∗(n−(n−1))1∗2∗3∗4…∗n=n∗(n−1)∗(n−2)∗(n−3)∗(n−4)…∗(n−(n−1))</p>
+<blockquote>
+<p>To simplify, <code>(n - (n-1))</code> will always be equal to <strong>1</strong>.</p>
+</blockquote>
+<p>That means that it doesn’t matter in which direction we’re counting. It can start from <strong>1</strong> and increase towards the <code>n</code>, or it can start from <code>n</code> and decrease towards <strong>1</strong>. Now that’s clarified, let’s start breaking down the function we’ve just wrote.</p>
+<p>Our function takes in a parameter <code>n</code> which denotes the number we’re calculating a factorial for. First, we define a variable named <code>result</code> and assign <code>1</code> as a value to it.</p>
+<blockquote>
+<p>Why assign <strong>1</strong> and not <strong>0</strong> you ask?</p>
+</blockquote>
+<p>Because if we were to assign <strong>0</strong> to it then all the following multiplications with <strong>0</strong>, naturally would result in a huge <strong>0</strong>.</p>
+<p>Then we start our <code>for</code> loop in the range from <code>1</code> to <code>n+1</code>. Remember, the Python range will stop before the second argument. To include the last number as well, we simply add an additional <code>1</code>.</p>
+<p>Inside the <code>for</code> loop, we multiply the current value of <code>result</code> with the current value of our index <code>i</code>.</p>
+<p>Finally, we return the final value of the <code>result</code>. Let’s test our function print out the result:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">inp <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Enter a number: &quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" title="2">inp <span class="op">=</span> <span class="bu">int</span>(inp)</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="bu">print</span>(<span class="ss">f&quot;The result is: </span><span class="sc">{</span>get_factorial_for_loop(inp)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<blockquote>
+<p>If you’d like to read more about how to get user input, read our <a href="https://stackabuse.com/getting-user-input-in-python/">Getting User Input in Python</a>.</p>
+</blockquote>
+<p>It will prompt the user to give input. We’ll try it with <code>4</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">Enter a number: <span class="dv">4</span></a>
+<a class="sourceLine" id="cb4-2" title="2">The result <span class="kw">is</span>: <span class="dv">24</span></a></code></pre></div>
+<p>You can use a calculator to verify the result:</p>
+<p><strong>4!</strong> is <code>4 * 3 * 2 * 1</code>, which results <strong>24</strong>.</p>
+<p>Now let’s see how we can calculate factorial using the <code>while</code> loop. Here’s our modified function:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> get_factorial_while_loop(n):</a>
+<a class="sourceLine" id="cb5-2" title="2">    result <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="cf">while</span> n <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb5-4" title="4">        result <span class="op">=</span> result <span class="op">*</span> n</a>
+<a class="sourceLine" id="cb5-5" title="5">        n <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="cf">return</span> result</a></code></pre></div>
+<p>This is pretty similar to the <code>for</code> loop. Except for this time we’re moving from <code>n</code> towards the <strong>1</strong>, closer to the mathematical definition. Let’s test our function:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">inp <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Enter a number: &quot;</span>)</a>
+<a class="sourceLine" id="cb6-2" title="2">inp <span class="op">=</span> <span class="bu">int</span>(inp)</a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="bu">print</span>(<span class="ss">f&quot;The result is: </span><span class="sc">{</span>get_factorial_while_loop(inp)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>We’ll enter 4 as an input once more:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">Enter a number: <span class="dv">4</span></a>
+<a class="sourceLine" id="cb7-2" title="2">The result <span class="kw">is</span>: <span class="dv">24</span></a></code></pre></div>
+<h3 id="section"></h3>
+<p>Although the calculation was <code>4 * 3 * 2 * 1</code> the final result is the same as before.</p>
+<p>Calculating factorials using loops was easy. Now let’s take a look at how to calculate the factorial using a recursive function.</p>
+<h4 id="calculating-factorial-using-recursion">Calculating Factorial Using Recursion <a id="calculatingfactorialusingrecursion"></a></h4>
+<p>A recursive function is a function that <em>calls itself</em>. It may sound a bit intimidating at first but bear with us and you’ll see that recursive functions are easy to understand.</p>
+<p>In general, every recursive function has two main components: a <strong>base case</strong> and a <strong>recursive step</strong>.</p>
+<p>Base cases are the smallest instances of the problem. Also a break, a case that will return a value and will <em>get out</em> of the recursion. In terms of factorial functions, the base case is when we return the final element of the factorial, which is <strong>1</strong>.</p>
+<blockquote>
+<p>Without a base case or with an incorrect base case, your recursive function can run infinitely, causing an overflow.</p>
+</blockquote>
+<p>Recursive steps - as the name implies- are the recursive part of the function, where the whole problem is transformed into something smaller. If the recursive step fails to shrink the problem, then again recursion can run infinitely.</p>
+<p>Consider the recurring part of the factorials:</p>
+<ul>
+<li><strong>5!</strong> is <code>5 * 4 * 3 * 2 * 1</code>.</li>
+</ul>
+<p>But we also know that:</p>
+<ul>
+<li><code>4 * 3 * 2 * 1</code> <em>is</em> <strong>4!</strong>.</li>
+</ul>
+<p>In other words <strong>5!</strong> is <code>5 * 4!</code>, and <strong>4!</strong> is <code>4 * 3!</code> and so on.</p>
+<blockquote>
+<p>So we can say that <code>n! = n * (n-1)!</code>. This will be the recursive step of our factorial!</p>
+</blockquote>
+<p>A factorial recursion ends when it hits <strong>1</strong>. This will be our <strong>base case</strong>. We will return <code>1</code> if <code>n</code> is <code>1</code> or less, covering the zero input.</p>
+<p>Let’s take a look at our recursive factorial function:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> get_factorial_recursively(n):</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="cf">if</span> n <span class="op">&lt;=</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb8-3" title="3">        <span class="cf">return</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb8-5" title="5">        <span class="cf">return</span> n <span class="op">*</span> get_factorial_recursively(n<span class="dv">-1</span>)</a></code></pre></div>
+<p>As you see the <code>if</code> block embodies our <strong>base case</strong>, while the <code>else</code> block covers the <strong>recursive step</strong>.</p>
+<p>Let’s test our function:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">inp <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;Enter a number: &quot;</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">inp <span class="op">=</span> <span class="bu">int</span>(inp)</a>
+<a class="sourceLine" id="cb9-3" title="3"></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="bu">print</span>(<span class="ss">f&quot;The result is: </span><span class="sc">{</span>get_factorial_recursively(inp)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>We will enter 3 as input this time:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">Enter a number:<span class="dv">3</span></a>
+<a class="sourceLine" id="cb10-2" title="2">The result <span class="kw">is</span>: <span class="dv">6</span></a></code></pre></div>
+<p>We get the same result. But this time, what goes under the hood is rather interesting:</p>
+<p>You see, when we enter the input, the function will check with the <code>if</code> block, and since 3 is greater than 1, it will skip to the <code>else</code> block. In this block, we see the line <code>return n * get_factorial_recursively(n-1)</code>.</p>
+<blockquote>
+<p>We know the current value of <code>n</code> for the moment, it’s <code>3</code>, but <code>get_factorial_recursively(n-1)</code> is still to be calculated.</p>
+</blockquote>
+<p>Then the program calls the same function once more, <em>but</em> this time our function takes <strong>2</strong> as the parameter. It checks the <code>if</code> block and skips to the <code>else</code> block and again encounters with the last line. Now, the current value of the <code>n</code> is <code>2</code> but the program still must calculate the <code>get_factorial_recursively(n-1)</code>.</p>
+<p>So it calls the function once again, but this time the <code>if</code> block, or rather, the base class succeeds to return 1 and breaks out from the recursion.</p>
+<p>Following the same pattern to upwards, it returns each function result, multiplying the current result with the previous <code>n</code> and returning it for the previous function call. In other words, our program first gets to the bottom of the factorial (which is 1), then builds its way up, while multiplying on each step.</p>
+<p>Also removing the function from the call stack one by one, up until the final result of the <code>n * (n-1)</code> is returned.</p>
+<p>This is generally how recursive functions work. Some more complicated problems may require deeper recursions with more than one base case or more than one recursive step. But for now, this simple recursion is good enough to solve our factorial problem!</p>
+</body>
+</html>

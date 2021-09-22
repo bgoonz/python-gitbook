@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>python3-regex</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="python3-regex">Python3 Regex</h1>
+<p>Regex or Regular Expressions are an important part of Python Programming or any other Programming Language. It is used for searching and even replacing the specified text pattern. In the regular expression, a set of characters together form the search pattern. It is also known as reg-ex pattern. Tough thing about Regex is not learning or understanding it but remembering syntax and how to form pattern according to our requirements. So here we have provided a regex cheat sheet containing all the different character classes, special characters, modifiers, sets etc. which are used in regular expression.</p>
+<h4 id="basic-characters">Basic Characters:</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expression</th>
+<th style="text-align: left;">Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>^</strong></td>
+<td style="text-align: left;">Matches the expression to its right, at the start of a string before it experiences a line break</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>$</strong></td>
+<td style="text-align: left;">Matches the expression to its left, at the end of a string before it experiences a line break</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>.</strong></td>
+<td style="text-align: left;">Matches any character except newline</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>a</strong></td>
+<td style="text-align: left;">Matches exactly one character a</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>xy</strong></td>
+<td style="text-align: left;">Matches the string xy</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>a|b</strong></td>
+<td style="text-align: left;">Matches expression a or b. If a is matched first, b is left untried.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong>Python3</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="bu">print</span>(re.search(<span class="vs">r&quot;^x&quot;</span>,<span class="st">&quot;xenon&quot;</span>))</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="bu">print</span>(re.search(<span class="vs">r&quot;s$&quot;</span>,<span class="st">&quot;geeks&quot;</span>))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">1</span>), match<span class="op">=</span><span class="st">&#39;x&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">4</span>, <span class="dv">5</span>), match<span class="op">=</span><span class="st">&#39;s&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>First import the regex module with the command <strong>import re</strong></p>
+<p>Then, in the first example, we are searching for “<strong>^x”</strong> in the word <strong>“xenon”</strong> using regex. <strong>^</strong> this character matches the expression to its right, at the start of a string. So, <strong>^x</strong> will search for character x in the beginning of the string. Since <strong>xenon</strong> starts with <strong>x,</strong> it will find the match and will return the match(‘x’) and its position(0,1)</p>
+<p>Similarly, in the second example <strong>s$</strong> will search for the character <strong>s</strong> at the end of the string, now since geeks end with <strong>s</strong>, so it will find the match and will return the match(‘s’) and its position(4,5).</p>
+<h4 id="quantifiers">Quantifiers:</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expressions</th>
+<th style="text-align: left;">Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>+</strong></td>
+<td style="text-align: left;">Matches the expression to its left 1 or more times.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>*</strong></td>
+<td style="text-align: left;">Matches the expression to its left 0 or more times.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>?</strong></td>
+<td style="text-align: left;">Matches the expression to its left 0 or 1 times</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>{p}</strong></td>
+<td style="text-align: left;">Matches the expression to its left p times, and not less.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>{p, q}</strong></td>
+<td style="text-align: left;">Matches the expression to its left p to q times, and not less.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>{p, }</strong></td>
+<td style="text-align: left;">Matches the expression to its left p or more times.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>{ , q}</strong></td>
+<td style="text-align: left;">Matches the expression to its left up to q times</td>
+</tr>
+</tbody>
+</table>
+<p>Their default searching method is Greedy. But if ? is added to qualifiers (+, *, and ? itself) it will perform matches in a non-greedy manner.</p>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="bu">print</span>(re.search(<span class="vs">r&quot;9+&quot;</span>,<span class="st">&quot;289908&quot;</span>))</a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="bu">print</span>(re.search(<span class="vs">r&quot;\d</span><span class="sc">{3}</span><span class="vs">&quot;</span>,<span class="st">&quot;hello1234&quot;</span>))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">2</span>, <span class="dv">4</span>), match<span class="op">=</span><span class="st">&#39;99&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">8</span>), match<span class="op">=</span><span class="st">&#39;123&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, <strong>9+</strong> will search for the number <strong>9</strong> one or more times. Since <strong>289908</strong> contains <strong>9</strong> two times, the regex will match it and will print the match(‘99’) and its position(2,4)</p>
+<p>In the second example, <strong></strong> will search for digits exactly 3 times. Since <strong>hello1234</strong> have digits, it will match exactly 3 digits which will be encountered first that are 123 and not 4, because <strong>{3}</strong> will match for exactly 3 digits. So it will print the match(‘123’) and its position(5,8)</p>
+<h4 id="character-classes">Character Classes:</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expressions</th>
+<th style="text-align: left;">Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches alphanumeric characters, that is a-z, A-Z, 0-9, and underscore(_)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches non-alphanumeric characters, that is except a-z, A-Z, 0-9 and _</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;">Matches digits, from 0-9.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches any non-digits.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches whitespace characters, which also include the  ,  and space characters.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches non-whitespace characters.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches the expression to its right at the absolute start of a string whether in single or multi-line mode.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches the expression to its left at the absolute end of a string whether in single or multi-line mode.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">***</td>
+<td style="text-align: left;">Matches a newline character</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;">Matches tab character</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">**</td>
+<td style="text-align: left;">Matches the word boundary (or empty string) at the start and end of a word.</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">*** | Matches where </div>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="bu">print</span>(re.search(<span class="vs">r&quot;\s&quot;</span>,<span class="st">&quot;xenon is a gas&quot;</span>))</a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="bu">print</span>(re.search(<span class="vs">r&quot;\D+\d*&quot;</span>,<span class="st">&quot;123geeks123&quot;</span>))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">6</span>), match<span class="op">=</span><span class="st">&#39; &#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">11</span>), match<span class="op">=</span><span class="st">&#39;geeks123&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, <strong>* will search for the blank space and whenever it encounters the first blank space it will print out that match. Since </strong>xenon is a gas** that contains blank spaces, it will encounter the first blank space and print out that match(’ ’) and its position(5,6)</p>
+<p>In the second example, <strong>+* will search for one or more non-digits characters followed by 0 or more digits. In our case, </strong>geeks123** best fits the description as it contains 1 or more non-digits characters(geeks) followed by 0 or more digit characters(123). So it will print the match(‘geeks123’) and its position(3,11).</p>
+<h4 id="sets">Sets:</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expressions</th>
+<th style="text-align: left;">Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>[abc]</strong></td>
+<td style="text-align: left;">Matches either a, b, or c. It does not match abc.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>[a-z]</strong></td>
+<td style="text-align: left;">Matches any alphabet from a to z.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>[A-Z]</strong></td>
+<td style="text-align: left;">Matches any alphabets in capital from A to Z</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>[a-p]</strong></td>
+<td style="text-align: left;">Matches a, -, or p. It matches - because  escapes it.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>[-z]</strong></td>
+<td style="text-align: left;">Matches - or z</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>[a-z0-9]</strong></td>
+<td style="text-align: left;">Matches characters from a to z or from 0 to 9.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>[(+*)]</strong></td>
+<td style="text-align: left;">Special characters become literal inside a set, so this matches (, +, *, or )</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>[^ab5]</strong></td>
+<td style="text-align: left;">Adding ^ excludes any character in the set. Here, it matches characters that are not a, b, or 5.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>\[a\]</strong></td>
+<td style="text-align: left;">Matches [a] because both parentheses [ ] are escaped</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="bu">print</span>(re.search(<span class="vs">r&quot;[^abc]&quot;</span>,<span class="st">&quot;abcde&quot;</span>))</a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="bu">print</span>(re.search(<span class="vs">r&quot;[a-p]&quot;</span>,<span class="st">&quot;xenon&quot;</span>))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>), match<span class="op">=</span><span class="st">&#39;d&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">1</span>, <span class="dv">2</span>), match<span class="op">=</span><span class="st">&#39;e&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, <strong>[^abc]</strong> will search for anything except a, b and c, so regex will match the first character which is not a or b or c and will print out that match. Since <strong>abcde</strong> contains <strong>d</strong> as its first match that is neither a nor b nor c, it will print out that match. So match would be (‘d’) and its position would be (3,4)</p>
+<p>In the second example, <strong>[a-p]</strong> will search for the character between a to p. In <strong>xenon</strong> the first word between a-p is <strong>e</strong> it will print out that search. So match would be (‘e’) and its position would be (1,2)</p>
+<h4 id="groups">Groups:</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expressions</th>
+<th style="text-align: left;">Explanations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>( )</strong></td>
+<td style="text-align: left;">Matches the expression inside the parentheses and groups it which we can capture as required</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(?#…)</strong></td>
+<td style="text-align: left;">Read a comment</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(?PAB)</strong></td>
+<td style="text-align: left;">Matches the expression AB, which can be retrieved with the group name.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(?:A)</strong></td>
+<td style="text-align: left;">Matches the expression as represented by A, but cannot be retrieved afterwards.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(?P=group)</strong></td>
+<td style="text-align: left;">Matches the expression matched by an earlier group named “group”</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3">example <span class="op">=</span> (re.search(<span class="vs">r&quot;(?:AB)&quot;</span>,<span class="st">&quot;ACABC&quot;</span>))</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="bu">print</span>(example)</a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="bu">print</span>(example.groups())</a>
+<a class="sourceLine" id="cb9-6" title="6"></a>
+<a class="sourceLine" id="cb9-7" title="7">result <span class="op">=</span> re.search(<span class="vs">r&quot;(\w*), (\w*)&quot;</span>,<span class="st">&quot;geeks, best&quot;</span>)</a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="bu">print</span>(result.groups())</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">2</span>, <span class="dv">4</span>), match<span class="op">=</span><span class="st">&#39;AB&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">()</a>
+<a class="sourceLine" id="cb10-3" title="3">(<span class="st">&#39;geeks&#39;</span>, <span class="st">&#39;best&#39;</span>)</a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, <strong>(?:AB)</strong> will search and matches the expression <strong>AB</strong> and will print out the match and its position. Since <strong>ACABC</strong> contains <strong>AB,</strong> it will print the match(‘AB’) and its position(2,4) but as stated, this cannot be retrieved afterward. So, if we try to print the group of the output, it will show an empty bracket.</p>
+<p>In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In <strong>geeks, best geeks</strong> and <strong>best</strong> are captured as the first and second groups. So, when we print out these groups we will have (‘geeks’, ’best) as the groups captured.</p>
+<h4 id="assertions">Assertions:</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expression</th>
+<th style="text-align: left;">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>A(?=B)</strong></td>
+<td style="text-align: left;">This matches the expression A only if it is followed by B. (Positive look ahead assertion)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>A(?!B)</strong></td>
+<td style="text-align: left;">This matches the expression A only if it is not followed by B. (Negative look ahead assertion)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(?&lt;=B)A</strong></td>
+<td style="text-align: left;">This matches the expression A only if B is immediate to its left. (Positive look behind assertion)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(?&lt;!B)A</strong></td>
+<td style="text-align: left;">This matches the expression A only if B is not immediately to its left. (Negative look behind assertion)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(?()|)</strong></td>
+<td style="text-align: left;">If else conditional</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb11-2" title="2"></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="bu">print</span>(re.search(<span class="vs">r&quot;z(?=a)&quot;</span>, <span class="st">&quot;pizza&quot;</span>))</a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="bu">print</span>(re.search(<span class="vs">r&quot;z(?!a)&quot;</span>, <span class="st">&quot;pizza&quot;</span>))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">3</span>, <span class="dv">4</span>), match<span class="op">=</span><span class="st">&#39;z&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">2</span>, <span class="dv">3</span>), match<span class="op">=</span><span class="st">&#39;z&#39;</span><span class="op">&gt;</span></a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, <strong>z(?=a)</strong> will search for the character z which is followed by the character a. Since in <strong>pizza,</strong> we have a character <strong>z</strong> which is immediately followed by the character <strong>a</strong> (piz<strong>za</strong>), so there will be a match. Regex will print the match(‘z’) which is followed by <strong>a</strong> with its position(3,4)</p>
+<p>In the second example, <strong>z(?!a)</strong> will search for the character <strong>z</strong> which is <strong>not</strong> followed by the character <strong>a.</strong> Since in <strong>pizza,</strong> we have a character <strong>z</strong> which is not followed by <strong>a</strong> but followed by <strong>z</strong> (pi<strong>zz</strong>a), so there will be a match. Regex will print the match(‘z’) not followed by <strong>a</strong> with its position (2,3)</p>
+<h4 id="flags">Flags:</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Expression</th>
+<th style="text-align: left;">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>a</strong></td>
+<td style="text-align: left;">Matches ASCII only</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>i</strong></td>
+<td style="text-align: left;">Ignore case</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>L</strong></td>
+<td style="text-align: left;">Locale character classes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>m</strong></td>
+<td style="text-align: left;">^ and $ match start and end of the line (Multi-line)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>s</strong></td>
+<td style="text-align: left;">Matches everything including newline as well</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>u</strong></td>
+<td style="text-align: left;">Matches Unicode character classes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>x</strong></td>
+<td style="text-align: left;">Allow spaces and comments (Verbose)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong>Python3</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3">exp <span class="op">=</span> <span class="st">&quot;&quot;&quot;hello there</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="st">I am from</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="st">Geeks for Geeks&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb13-6" title="6"></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="bu">print</span>(re.search(<span class="vs">r&quot;and&quot;</span>, <span class="st">&quot;Sun And Moon&quot;</span>, flags<span class="op">=</span>re.IGNORECASE))</a>
+<a class="sourceLine" id="cb13-8" title="8"><span class="bu">print</span>(re.findall(<span class="vs">r&quot;^\w&quot;</span>, exp, flags <span class="op">=</span> re.MULTILINE))</a></code></pre></div>
+<p><strong>Output:</strong></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&lt;</span>re.Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">4</span>, <span class="dv">7</span>), match<span class="op">=</span><span class="st">&#39;And&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb14-2" title="2">[<span class="st">&#39;h&#39;</span>, <span class="st">&#39;I&#39;</span>, <span class="st">&#39;G&#39;</span>]</a></code></pre></div>
+<p><strong>Explanation:</strong></p>
+<p>In the first example, the IGNORECASE flag will search for the word <strong>and</strong> irrespective of its case (whether uppercase or lowercase), So it ignores the case and matches <strong>And</strong> in the expression. So it will print the match(‘And’) and its position(4,7)</p>
+<p>In the second example, the MULTILINE flag will search in each and every line and will match when the line is starting an alphanumeric character. Since in Multi-line <strong>hello there I am from Geeks for Geeks,</strong> every line is starting with an alphanumeric character, so it will match every line and will print the match in an array ([‘h’, ‘I’, ‘G’]).</p>
+<p>Note: In MULTILINE flag, we have to use re.findall, since it has many matches (for every line)</p>
+<h2 id="what-are-regular-expressions">What are Regular Expressions? <a id="977d"></a></h2>
+<p>Regular Expression is an advanced string searching method that allows users to search for something in a text. This is done by creating a pattern that matches the information that we want to retrieve. Regular Expression has such power that it has been incorporated in many programming languages like Python, Pearl, JavaScript, PHP, and Java.</p>
+<p>So, let’s come back to our problem!</p>
+<p>We can get the users’ phone numbers by first creating a pattern. Observe that the phone numbers are located between the brackets “( )”. It’s a useful information and we can use it to our advantage. To access the goodness of Regular Expressions in Python, we will need to <strong>import</strong> the <strong>re library</strong>.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="im">import</span> re phone_numbers <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb15-2" title="2">pattern <span class="op">=</span> <span class="vs">r&quot;\(([\d\-+]+)\)&quot;</span>with <span class="bu">open</span>(<span class="st">&quot;log.txt&quot;</span>, <span class="st">&quot;r&quot;</span>) <span class="im">as</span> <span class="bu">file</span>:</a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="cf">for</span> line <span class="kw">in</span> <span class="bu">file</span>:</a>
+<a class="sourceLine" id="cb15-4" title="4">        result <span class="op">=</span> re.search(pattern, line)</a>
+<a class="sourceLine" id="cb15-5" title="5">        phone_numbers.append(result.group(<span class="dv">1</span>))<span class="bu">print</span>(phone_numbers)</a></code></pre></div>
+<p>The Output:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">[<span class="st">&#39;+1-202-555-0189&#39;</span>, <span class="st">&#39;+33-93-751-3845&#39;</span>, <span class="st">&#39;+49-30-833-931-313&#39;</span>]</a></code></pre></div>
+<p>I will go through this code one by one:</p>
+<ol type="1">
+<li>import re — Importing the Regular Expressions library in Python.</li>
+<li>phone_numbers = [] — Preparing a list to store the phone numbers.</li>
+<li>pattern = r”\(([+]+)\)” — The pattern that we use to locate the phone number, we will go through what each symbols do later in this article!</li>
+<li>with open(“log.txt”, “r”) as file: — Opening the file that we want to process.</li>
+<li>for line in file: — Iterating(going through) each line in the log.txt.</li>
+<li>result = re.search(pattern, line) — Searching for the phone number in the line</li>
+<li>phone_numbers.append(result.group(1)) — Adding the customer’s phone number into the phone numbers list</li>
+<li>print(phone_numbers) — Printing the list of phone numbers.</li>
+</ol>
+<p>There are many useful functions and characters in the re library, yet learning everything might be overwhelming. Therefore, I have selected the most useful functions and characters that will help you to start implementing RegEx in your Python script.</p>
+<p>Let’s start diving in the re library!</p>
+<h2 id="regex-raw-string">RegEx Raw String <a id="cdd9"></a></h2>
+<p>In our example, we use this pattern in log.txt : r”\(([+]+)\)”</p>
+<p>Are you wondering why should we type an “r” before the string? “r” here stands for the raw string. Python RegEx use a backslash(\)to indicate a special sequence or as an escape character. This collides with Python’s usage of the backslash(\) for the same purpose in string lateral. Thus, the raw string here is used to avoid confusion between the two. Besides that, it also helps us in making our pattern shorter. Without typing “r”, one might need to type “\\” just for indicating a backslash(\).</p>
+<p>So, don’t forget your “r”!</p>
+<h2 id="regex-special-sequences"><strong>RegEx Special Sequences</strong> <a id="0c7b"></a></h2>
+<p>We’ll start off with the simplest syntax in RegEx, the special sequences. Special sequences in RegEx starts with a backslash(\). So if you meet a backslash in the RegEx pattern, chances are it is the syntax for a special sequence.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">\</span>d               matches a single digit character [<span class="dv">0-9</span>]<span class="op">\</span>w               matches <span class="bu">any</span> alphabet, digit, <span class="kw">or</span> underscore<span class="op">\</span>s               matches a white space character (space, tab, enter)</a></code></pre></div>
+<p>The negations of these sequences are also available by using the capital letter. For example, is the negation of </p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="op">\</span>D               matches a single non<span class="op">-</span>digit character</a></code></pre></div>
+<h2 id="regex-meta-characters"><strong>RegEx Meta Characters</strong> <a id="7a0c"></a></h2>
+<p>We’ll then go through the meta characters which will assist us in reaching our goal. Each one of these characters has its special meaning.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">.                matches <span class="bu">any</span> character(<span class="cf">except</span> <span class="cf">for</span> newline character)<span class="op">^</span>                the string starts <span class="cf">with</span> a character$                the string ends <span class="cf">with</span> a character<span class="op">*</span>                zero <span class="kw">or</span> more occurrences <span class="op">+</span>                one <span class="kw">or</span> more occurrences?                one <span class="kw">or</span> no occurrence {}               exactly the specified number of occurrences<span class="op">|</span>                either <span class="kw">or</span></a></code></pre></div>
+<p>Example :</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="co">&quot;c.t&quot;</span>            will match anything like <span class="st">&quot;cat&quot;</span>, <span class="st">&quot;c*t&quot;</span>, <span class="st">&quot;c1t&quot;</span>, etc<span class="st">&quot;^a&quot;</span>             will match <span class="st">&quot;a&quot;</span> <span class="im">from</span> <span class="st">&quot;a cat&quot;</span> but <span class="kw">not</span> <span class="st">&quot;eat a cake&quot;&quot;cat$&quot;</span>           will match <span class="st">&quot;a cat&quot;</span> but <span class="kw">not</span> <span class="st">&quot;cat party&quot;&quot;a*b&quot;</span>            will match <span class="st">&quot;b&quot;</span>, <span class="st">&quot;ab&quot;</span>, <span class="st">&quot;aab&quot;</span>, <span class="st">&quot;aaab&quot;</span>, ...<span class="st">&quot;a+b&quot;</span>            will match <span class="st">&quot;ab&quot;</span>, <span class="st">&quot;aab&quot;</span>, <span class="st">&quot;aaab&quot;</span>, ...<span class="st">&quot;a?b&quot;</span>            will match <span class="st">&quot;b&quot;</span> <span class="kw">or</span> <span class="st">&quot;ab&quot;&quot;a</span><span class="sc">{1}</span><span class="st">b&quot;</span>          will match <span class="st">&quot;ab&quot;&quot;a{1,3}b&quot;</span>        will match <span class="st">&quot;ab&quot;</span>, <span class="st">&quot;aab&quot;</span>, <span class="kw">or</span> <span class="st">&quot;aaab&quot;&quot;cat|dog&quot;</span>        will match <span class="st">&quot;cat&quot;</span> <span class="kw">or</span> <span class="st">&quot;dog&quot;</span></a></code></pre></div>
+<h2 id="regex-sets">RegEx Sets <a id="703d"></a></h2>
+<p>Sets can be used to match one of the characters inside the square brackets.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">[abcd]           matches either a, b, c <span class="kw">or</span> d</a></code></pre></div>
+<p>You can also use the special sequences that we have discussed earlier here. Besides that, there is also the dash character that we’ll get to shortly.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">[a<span class="op">-</span>z0<span class="dv">-9</span>]         matches one of the characters <span class="im">from</span> a<span class="op">-</span>z <span class="kw">or</span> <span class="dv">0-9</span>[<span class="op">\</span>w]             matches an alphabet, digit, <span class="kw">or</span> underscore</a></code></pre></div>
+<p>The caret character(^) stands for except.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">[<span class="op">^\</span>d]            matches a character that <span class="kw">is</span> <span class="kw">not</span> a digit [<span class="dv">0-9</span>]</a></code></pre></div>
+<p>To include characters that have special meaning in the set like backslash (\) and dash(-), you will need to use add a backslash in the front (\) and (-)-the first backslash stands as an escaping character. Escaping character makes characters that have special meaning to be taken literally.</p>
+<p>However, characters that don’t have any special meaning like ?_+*.|()${} can be used directly.</p>
+<h2 id="regex-function">RegEx Function <a id="2fd7"></a></h2>
+<p>Lastly, we’ll go through the things that we can do with RegEx by using the functions available!</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1">findall()        Returns a <span class="bu">list</span> that contains <span class="bu">all</span> matches       search()         Returns a <span class="st">&#39;match object&#39;</span> <span class="cf">if</span> there <span class="kw">is</span> a match <span class="kw">in</span>          the stringsplit()          Returns a <span class="bu">list</span> of string that has been split at each matchsub()            Replaces the matches <span class="cf">with</span> a string</a></code></pre></div>
+<p>In all these functions, the arguments are all the same, which are &lt;pattern&gt; and &lt;string&gt;.</p>
+<p>Example :</p>
+<ol type="1">
+<li>findall()</li>
+</ol>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;.at&quot;</span></a>
+<a class="sourceLine" id="cb25-2" title="2">line <span class="op">=</span> <span class="st">&quot;The big fat cat sat on a cat&quot;</span></a>
+<a class="sourceLine" id="cb25-3" title="3">result <span class="op">=</span> re.findall(pattern, line)<span class="bu">print</span>(result)</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1">[<span class="st">&#39;fat&#39;</span>, <span class="st">&#39;cat&#39;</span>, <span class="st">&#39;sat&#39;</span>, <span class="st">&#39;cat&#39;</span>]</a></code></pre></div>
+<ol start="2" type="1">
+<li>search()</li>
+</ol>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;.* .*&quot;</span></a>
+<a class="sourceLine" id="cb27-2" title="2">line <span class="op">=</span> <span class="st">&quot;Ada Lovelace&quot;</span></a>
+<a class="sourceLine" id="cb27-3" title="3">result <span class="op">=</span> re.search(pattern, line)<span class="bu">print</span>(result)</a>
+<a class="sourceLine" id="cb27-4" title="4"><span class="bu">print</span>(result.group())</a>
+<a class="sourceLine" id="cb27-5" title="5"><span class="bu">print</span>(result.group(<span class="dv">0</span>))</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="op">&lt;</span>_sre.SRE_Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">12</span>), match<span class="op">=</span><span class="st">&#39;Ada Lovelace&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb28-2" title="2">Ada Lovelace</a>
+<a class="sourceLine" id="cb28-3" title="3">Ada Lovelace</a></code></pre></div>
+<ol start="3" type="1">
+<li>split()</li>
+</ol>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;cat&quot;</span></a>
+<a class="sourceLine" id="cb29-2" title="2">line <span class="op">=</span> <span class="st">&quot;The big fat cat sat on a cat&quot;</span></a>
+<a class="sourceLine" id="cb29-3" title="3">result <span class="op">=</span> re.split(pattern, line)<span class="bu">print</span>(result)</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1">[<span class="st">&#39;The big fat &#39;</span>, <span class="st">&#39; sat on a &#39;</span>, <span class="st">&#39;&#39;</span>]</a></code></pre></div>
+<ol start="4" type="1">
+<li>sub()</li>
+</ol>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;Ada&quot;</span></a>
+<a class="sourceLine" id="cb31-2" title="2">line <span class="op">=</span> <span class="st">&quot;Ada Lovelace&quot;</span></a>
+<a class="sourceLine" id="cb31-3" title="3">result <span class="op">=</span> re.sub(pattern, <span class="vs">r&quot;Tom&quot;</span>, line)<span class="bu">print</span>(result)</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1">Tom Lovelace</a></code></pre></div>
+<h2 id="regex-capturing-group">RegEx Capturing Group <a id="fa62"></a></h2>
+<p>The capturing group is very useful when we want to extract information from a match, like in our example, log.txt.</p>
+<p>We use this pattern in log.txt : r”\(([+]+)\)”</p>
+<p>Here, we are using the capturing group just to extract the phone number without including the parentheses character.</p>
+<p>The phone number that we want to extract can be accessed with result.group(1).</p>
+<p>Understanding the capturing group will be easier through examples.</p>
+<p>Example :</p>
+<ol type="1">
+<li>search()</li>
+</ol>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;(.*) (.*)&quot;</span></a>
+<a class="sourceLine" id="cb33-2" title="2">line <span class="op">=</span> <span class="st">&quot;Ada Lovelace&quot;</span></a>
+<a class="sourceLine" id="cb33-3" title="3">result <span class="op">=</span> re.search(pattern, line)<span class="bu">print</span>(result)</a>
+<a class="sourceLine" id="cb33-4" title="4"><span class="bu">print</span>(result.groups())</a>
+<a class="sourceLine" id="cb33-5" title="5"><span class="bu">print</span>(result.group(<span class="dv">0</span>))</a>
+<a class="sourceLine" id="cb33-6" title="6"><span class="bu">print</span>(result.group(<span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb33-7" title="7"><span class="bu">print</span>(result.group(<span class="dv">2</span>))</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="op">&lt;</span>_sre.SRE_Match <span class="bu">object</span><span class="op">;</span> span<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">12</span>), match<span class="op">=</span><span class="st">&#39;Ada Lovelace&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb34-2" title="2">(<span class="st">&#39;Ada&#39;</span>, <span class="st">&#39;Lovelace&#39;</span>)</a>
+<a class="sourceLine" id="cb34-3" title="3">Ada Lovelace</a>
+<a class="sourceLine" id="cb34-4" title="4">Ada</a>
+<a class="sourceLine" id="cb34-5" title="5">Lovelace</a></code></pre></div>
+<ol start="2" type="1">
+<li>split()</li>
+</ol>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;(cat)&quot;</span></a>
+<a class="sourceLine" id="cb35-2" title="2">line <span class="op">=</span> <span class="st">&quot;The big fat cat sat on a cat&quot;</span></a>
+<a class="sourceLine" id="cb35-3" title="3">result <span class="op">=</span> re.split(pattern, line)<span class="bu">print</span>(result)</a></code></pre></div>
+<p>The Output :</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1">[<span class="st">&#39;The big fat &#39;</span>, <span class="st">&#39;cat&#39;</span>, <span class="st">&#39; sat on a &#39;</span>, <span class="st">&#39;cat&#39;</span>, <span class="st">&#39;&#39;</span>]</a></code></pre></div>
+<ol start="3" type="1">
+<li>sub()</li>
+</ol>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"><span class="im">import</span> repattern <span class="op">=</span> <span class="vs">r&quot;(.*) (.*)&quot;</span></a>
+<a class="sourceLine" id="cb37-2" title="2">line <span class="op">=</span> <span class="st">&quot;Ada Lovelace&quot;</span></a>
+<a class="sourceLine" id="cb37-3" title="3">result1 <span class="op">=</span> re.sub(pattern, <span class="vs">r&quot;\2 \1&quot;</span>, line)</a>
+<a class="sourceLine" id="cb37-4" title="4">result2 <span class="op">=</span> re.sub(pattern, <span class="vs">r&quot;Tom&quot;</span>, line)<span class="bu">print</span>(result1)</a>
+<a class="sourceLine" id="cb37-5" title="5"><span class="bu">print</span>(result2)</a></code></pre></div>
+<p>“\1” and “\2” stand for the first and second capturing group respectively.</p>
+<p>The Output :</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1">Lovelace Ada</a>
+<a class="sourceLine" id="cb38-2" title="2">Tom</a></code></pre></div>
+</body>
+</html>

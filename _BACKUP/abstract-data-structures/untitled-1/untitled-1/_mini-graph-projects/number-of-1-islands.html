@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>number-of-1-islands</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="number-of-1-islands">number of 1 islands</h1>
+<h2 id="write-a-function-that-takes-a-2d-binary-array-and">Write a function that takes a 2D binary array and</h2>
+<h2 id="returns-the-number-of-1-islands.-an-island-consists">returns the number of 1 islands. An island consists</h2>
+<h2 id="of-1s-that-are-connected-to-the-north-south-east-or-west.">of 1s that are connected to the north, south, east or west.</h2>
+<h2 id="for-example">For example:</h2>
+<h2 id="unweighted">Unweighted</h2>
+<h2 id="undirected">Undirected</h2>
+<h2 id="cyclic">Cyclic</h2>
+<h2 id="nodes-are-numbers-edges-are-connections-between-1s">Nodes are numbers, edges are connections between 1s</h2>
+<p>islands = [ [0, 1, 0, 1, 0], [1, 1, 0, 1, 1], [0, 0, 1, 0, 0], [1, 0, 1, 0, 0], [1, 1, 0, 0, 0], ]</p>
+<h2 id="visit-each-cell-in-the-2d-array.">Visit each cell in the 2d array.</h2>
+<h2 id="when-you-come-across-a-1-traverse-it-and-mark-all-connected-nodes-as-visited">When you come across a 1, traverse it and mark all connected nodes as visited,</h2>
+<h2 id="then-increment-a-counter">then increment a counter</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Write a function that takes a 2D binary array and</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co"># returns the number of 1 islands. An island consists</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># of 1s that are connected to the north, south, east or west.</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co"># For example:</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co"># Unweighted</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co"># Undirected</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co"># Cyclic</span></a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="co"># Nodes are numbers, edges are connections between 1s</span></a>
+<a class="sourceLine" id="cb1-12" title="12"></a>
+<a class="sourceLine" id="cb1-13" title="13">islands <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb1-14" title="14">    [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-15" title="15">    [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>],</a>
+<a class="sourceLine" id="cb1-16" title="16">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-17" title="17">    [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-18" title="18">    [<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-19" title="19">]</a>
+<a class="sourceLine" id="cb1-20" title="20"></a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="co"># Visit each cell in the 2d array.</span></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="co"># When you come across a 1, traverse it and mark all connected nodes as visited,</span></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="co"># then increment a counter</span></a>
+<a class="sourceLine" id="cb1-25" title="25"></a>
+<a class="sourceLine" id="cb1-26" title="26"></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="kw">class</span> Stack:</a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-29" title="29">        <span class="va">self</span>.stack <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31">    <span class="kw">def</span> push(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb1-32" title="32">        <span class="va">self</span>.stack.append(value)</a>
+<a class="sourceLine" id="cb1-33" title="33"></a>
+<a class="sourceLine" id="cb1-34" title="34">    <span class="kw">def</span> pop(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-35" title="35">        <span class="cf">if</span> <span class="va">self</span>.size() <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-36" title="36">            <span class="cf">return</span> <span class="va">self</span>.stack.pop()</a>
+<a class="sourceLine" id="cb1-37" title="37">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-38" title="38">            <span class="cf">return</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-39" title="39"></a>
+<a class="sourceLine" id="cb1-40" title="40">    <span class="kw">def</span> size(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-41" title="41">        <span class="cf">return</span> <span class="bu">len</span>(<span class="va">self</span>.stack)</a>
+<a class="sourceLine" id="cb1-42" title="42"></a>
+<a class="sourceLine" id="cb1-43" title="43"></a>
+<a class="sourceLine" id="cb1-44" title="44"><span class="kw">def</span> get_island_neighbors(x, y, matrix):</a>
+<a class="sourceLine" id="cb1-45" title="45">    neighbors <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-46" title="46">    <span class="co"># Check if there&#39;s a 1 to the north</span></a>
+<a class="sourceLine" id="cb1-47" title="47">    <span class="cf">if</span> y <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> matrix[y <span class="op">-</span> <span class="dv">1</span>][x] <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-48" title="48">        neighbors.append((x, y <span class="op">-</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-49" title="49">    <span class="co"># Check south</span></a>
+<a class="sourceLine" id="cb1-50" title="50">    <span class="cf">if</span> y <span class="op">&lt;</span> <span class="bu">len</span>(matrix) <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> matrix[y <span class="op">+</span> <span class="dv">1</span>][x] <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-51" title="51">        neighbors.append((x, y <span class="op">+</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-52" title="52">    <span class="co"># Check east</span></a>
+<a class="sourceLine" id="cb1-53" title="53">    <span class="cf">if</span> x <span class="op">&lt;</span> <span class="bu">len</span>(matrix[<span class="dv">0</span>]) <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> matrix[y][x <span class="op">+</span> <span class="dv">1</span>] <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-54" title="54">        neighbors.append((x <span class="op">+</span> <span class="dv">1</span>, y))</a>
+<a class="sourceLine" id="cb1-55" title="55">    <span class="co"># Check west</span></a>
+<a class="sourceLine" id="cb1-56" title="56">    <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> matrix[y][x <span class="op">-</span> <span class="dv">1</span>] <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-57" title="57">        neighbors.append((x <span class="op">-</span> <span class="dv">1</span>, y))</a>
+<a class="sourceLine" id="cb1-58" title="58">    <span class="cf">return</span> neighbors</a>
+<a class="sourceLine" id="cb1-59" title="59"></a>
+<a class="sourceLine" id="cb1-60" title="60"></a>
+<a class="sourceLine" id="cb1-61" title="61"><span class="kw">def</span> dft_islands(start_x, start_y, matrix, visited):</a>
+<a class="sourceLine" id="cb1-62" title="62">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-63" title="63"><span class="co">    Returns an updated visited matrix after a dft of matrix starting from x, y</span></a>
+<a class="sourceLine" id="cb1-64" title="64"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-65" title="65">    <span class="co"># Create an empty stack and push the starting vertex</span></a>
+<a class="sourceLine" id="cb1-66" title="66">    s <span class="op">=</span> Stack()</a>
+<a class="sourceLine" id="cb1-67" title="67">    s.push((start_x, start_y))</a>
+<a class="sourceLine" id="cb1-68" title="68">    <span class="co"># While the stack is not empty...</span></a>
+<a class="sourceLine" id="cb1-69" title="69">    <span class="cf">while</span> s.size() <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-70" title="70">        <span class="co"># Pop the first vertex</span></a>
+<a class="sourceLine" id="cb1-71" title="71">        v <span class="op">=</span> s.pop()</a>
+<a class="sourceLine" id="cb1-72" title="72">        x <span class="op">=</span> v[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb1-73" title="73">        y <span class="op">=</span> v[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-74" title="74">        <span class="co"># If that vertex has not been visited...</span></a>
+<a class="sourceLine" id="cb1-75" title="75">        <span class="cf">if</span> <span class="kw">not</span> visited[y][x]:</a>
+<a class="sourceLine" id="cb1-76" title="76">            <span class="co"># Mark it as visited...</span></a>
+<a class="sourceLine" id="cb1-77" title="77">            visited[y][x] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-78" title="78">            <span class="co"># Then add all of its neighbors to the top of the stack</span></a>
+<a class="sourceLine" id="cb1-79" title="79">            <span class="cf">for</span> neighbor <span class="kw">in</span> get_island_neighbors(x, y, matrix):  <span class="co"># STUB</span></a>
+<a class="sourceLine" id="cb1-80" title="80">                s.push(neighbor)</a>
+<a class="sourceLine" id="cb1-81" title="81">    <span class="cf">return</span> visited</a>
+<a class="sourceLine" id="cb1-82" title="82"></a>
+<a class="sourceLine" id="cb1-83" title="83"></a>
+<a class="sourceLine" id="cb1-84" title="84"><span class="kw">def</span> island_counter(matrix):</a>
+<a class="sourceLine" id="cb1-85" title="85">    <span class="co"># Create a visited matrix with the same dimensions as the islands matrix</span></a>
+<a class="sourceLine" id="cb1-86" title="86">    visited <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-87" title="87">    matrix_height <span class="op">=</span> <span class="bu">len</span>(matrix)</a>
+<a class="sourceLine" id="cb1-88" title="88">    matrix_width <span class="op">=</span> <span class="bu">len</span>(matrix[<span class="dv">0</span>])</a>
+<a class="sourceLine" id="cb1-89" title="89">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(matrix_height):</a>
+<a class="sourceLine" id="cb1-90" title="90">        visited.append([<span class="va">False</span>] <span class="op">*</span> matrix_width)</a>
+<a class="sourceLine" id="cb1-91" title="91">    <span class="co"># Create a counter, initialize to 0</span></a>
+<a class="sourceLine" id="cb1-92" title="92">    counter <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-93" title="93">    <span class="co"># For each cell in the 2d array...</span></a>
+<a class="sourceLine" id="cb1-94" title="94">    <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(matrix_width):</a>
+<a class="sourceLine" id="cb1-95" title="95">        <span class="cf">for</span> y <span class="kw">in</span> <span class="bu">range</span>(matrix_height):</a>
+<a class="sourceLine" id="cb1-96" title="96">            <span class="co"># If it has not been visited...</span></a>
+<a class="sourceLine" id="cb1-97" title="97">            <span class="cf">if</span> <span class="kw">not</span> visited[y][x]:</a>
+<a class="sourceLine" id="cb1-98" title="98">                <span class="co"># When you come across a 1,</span></a>
+<a class="sourceLine" id="cb1-99" title="99">                <span class="cf">if</span> matrix[y][x] <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-100" title="100">                    <span class="co"># DFT it and mark all connected nodes as visited,</span></a>
+<a class="sourceLine" id="cb1-101" title="101">                    visited <span class="op">=</span> dft_islands(x, y, matrix, visited)  <span class="co"># STUB</span></a>
+<a class="sourceLine" id="cb1-102" title="102">                    <span class="co"># then increment a counter</span></a>
+<a class="sourceLine" id="cb1-103" title="103">                    counter <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-104" title="104">    <span class="cf">return</span> counter</a>
+<a class="sourceLine" id="cb1-105" title="105"></a>
+<a class="sourceLine" id="cb1-106" title="106"></a>
+<a class="sourceLine" id="cb1-107" title="107">big_islands <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb1-108" title="108">    [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</a>
+<a class="sourceLine" id="cb1-109" title="109">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-110" title="110">    [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>],</a>
+<a class="sourceLine" id="cb1-111" title="111">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>],</a>
+<a class="sourceLine" id="cb1-112" title="112">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-113" title="113">    [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-114" title="114">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-115" title="115">    [<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-116" title="116">    [<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-117" title="117">    [<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>],</a>
+<a class="sourceLine" id="cb1-118" title="118">]</a>
+<a class="sourceLine" id="cb1-119" title="119"></a>
+<a class="sourceLine" id="cb1-120" title="120">i1 <span class="op">=</span> island_counter(big_islands)  <span class="co"># 13</span></a>
+<a class="sourceLine" id="cb1-121" title="121"></a>
+<a class="sourceLine" id="cb1-122" title="122">i2 <span class="op">=</span> island_counter(islands)  <span class="co"># returns 4</span></a>
+<a class="sourceLine" id="cb1-123" title="123"></a>
+<a class="sourceLine" id="cb1-124" title="124"><span class="bu">print</span>(<span class="ss">f&quot;Island 1 - Should be 13: </span><span class="ch">\t</span><span class="ss"> </span><span class="sc">{i1}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-125" title="125"><span class="bu">print</span>(<span class="ss">f&quot;Island 2 - Should be 04: </span><span class="ch">\t</span><span class="ss"> </span><span class="sc">{i2}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+</body>
+</html>

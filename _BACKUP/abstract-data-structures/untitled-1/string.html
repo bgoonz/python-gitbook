@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>string</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="string">String</h1>
+<h2 id="string-1">String</h2>
+<ul>
+<li>Output list of strings representing a page of hostings given a list of CSV strings.</li>
+<li>Given a list of words, find the word pairs that when concatenated form a palindrome.</li>
+<li>Find the most efficient way to identify what character is out of place in a non-palindrome.</li>
+<li>Implement a simple regex parser which, given a string and a pattern, returns a boolean indicating whether the input matches the pattern. By simple, we mean that the regex can only contain the following special characters: <code>*</code> (star), <code>.</code> (dot), <code>+</code> (plus). The star means that there will be zero or more of the previous character in that place in the pattern. The dot means any character for that position. The plus means one or more of previous character in that place in the pattern.</li>
+<li>Find all words from a dictionary that are x edit distance away.</li>
+<li>Given a string IP and number n, print all CIDR addresses that cover that range.</li>
+<li>Write a function called <code>eval</code>, which takes a string and returns a boolean. This string is allowed 6 different characters: <code>0</code>, <code>1</code>, <code>&amp;</code>, <code>|</code>, <code>(</code>, and <code>)</code>. <code>eval</code> should evaluate the string as a boolean expression, where <code>0</code> is <code>false</code>, <code>1</code> is <code>true</code>, <code>&amp;</code> is an <code>and</code>, and <code>|</code> is an <code>or</code>.
+<ul>
+<li>E.g <code>"(0 | (1 | 0)) &amp; (1 &amp; ((1 | 0) &amp; 0))"</code></li>
+</ul></li>
+<li>Given a pattern string like <code>"abba"</code> and an input string like <code>"redbluebluered"</code>, return <code>true</code> if and only if there’s a one to one mapping of letters in the pattern to substrings of the input.
+<ul>
+<li>E.g. <code>"abba"</code> and <code>"redbluebluered"</code> should return <code>true</code>.</li>
+<li>E.g. <code>"aaaa"</code> and <code>"asdasdasdasd"</code> should return <code>true</code>.</li>
+<li>E.g. <code>"aabb"</code> and <code>"xyzabcxzyabc"</code> should return <code>false</code>.</li>
+</ul></li>
+<li>If you received a file in chunks, calculate when you have the full file. Quite an open-ended question. Can assume chunks come with start and end, or size, etc.</li>
+<li>Given a list of names (strings) and the width of a line, design an algorithm to display them using the minimum number of lines.</li>
+<li>Design a spell-checking algorithm.</li>
+<li>Count and say problem.</li>
+<li>Longest substring with <code>K</code> unique characters.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/04/12/find-the-longest-substring-with-k-unique-characters/">Source</a></li>
+</ul></li>
+<li>Given a set of random strings, write a function that returns a set that groups all the anagrams together.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/05/06/group-anagrams/">Source</a></li>
+</ul></li>
+<li>Given a string, find the longest substring without repeating characters. For example, for string <code>'abccdefgh'</code>, the longest substring is <code>'cdefgh'</code>.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/10/07/facebook-interview-longest-substring-without-repeating-characters/">Source</a></li>
+</ul></li>
+<li>Given a string, return the string with duplicate characters removed.</li>
+<li>Write a function that receives a regular expression (allowed chars = from <code>'a'</code> to <code>'z'</code>, <code>'*'</code>, <code>'.'</code>) and a string containing lower case english alphabet characters and return <code>true</code> or <code>false</code> whether the string matches the regex.
+<ul>
+<li>E.g. <code>'ab*a'</code>, <code>'abbbbba'</code> =&gt; <code>true</code>.</li>
+<li>E.g. <code>'ab*b.'</code>, <code>'aba'</code> =&gt; <code>true</code>.</li>
+<li>E.g. <code>'abc*'</code>, <code>'acccc'</code> =&gt; <code>false</code>.</li>
+</ul></li>
+<li>Given a rectangular grid with letters, search if some word is in the grid.</li>
+<li>Given two strings representing integer numbers (<code>'123'</code> , <code>'30'</code>) return a string representing the sum of the two numbers: <code>'153'</code>.</li>
+<li>A professor wants to see if two students have cheated when writing a paper. Design a function <code>hasCheated(String s1, String s2, int N)</code> that evaluates to <code>true</code> if two strings have a common substring of length <code>N</code>.
+<ul>
+<li>Follow up: Assume you don’t have the possibility of using <code>String.contains()</code> and <code>String.substring()</code>. How would you implement this?</li>
+</ul></li>
+<li>Print all permutations of a given string.</li>
+<li>Parse a string containing numbers and <code>'+'</code>, <code>'-'</code> and parentheses. Evaluate the expression. <code>-2+(3-5)</code> should return <code>-4</code>.</li>
+<li>Output a substring with at most <code>K</code> unique characters.
+<ul>
+<li>E.g. <code>'aabc'</code> and <code>k</code> = 2 =&gt; <code>'aab'</code>.</li>
+</ul></li>
+<li>Ensure that there are a minimum of <code>N</code> dashes between any two of the same characters of a string.
+<ul>
+<li>E.g. <code>n = 2, string = 'ab-bcdecca'</code> =&gt; <code>'ab--bcdec--ca'</code>.</li>
+</ul></li>
+<li>Find the longest palindrome in a string.</li>
+<li>Give the count and the number following in the series.
+<ul>
+<li>E.g. <code>1122344</code>, next: <code>21221324</code>, next: <code>12112211121214</code>.</li>
+<li>Count and say problem.</li>
+</ul></li>
+<li>Compress a string by grouping consecutive similar questions together:
+<ul>
+<li>E.g. <code>'aaabbbcc' =&gt;</code> ‘a3b3c2’`.</li>
+</ul></li>
+<li>You have a string consisting of open and closed parentheses, but parentheses may be imbalanced. Make the parentheses balanced and return the new string.</li>
+<li>Given a set of strings, return the smallest subset that contains prefixes for every string.
+<ul>
+<li>E.g. <code>['foo', 'foog', 'food', 'asdf']</code> =&gt; <code>['foo', 'asdf']</code>.</li>
+</ul></li>
+<li>Write a function that would return all the possible words generated when using a phone (pre-smartphone era) numpad to type.</li>
+<li>Given a dictionary and a word, find the minimum number of deletions needed on the word in order to make it a valid word.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/04/29/minimum-number-of-deletions-of-a-string/">Source</a></li>
+</ul></li>
+<li>How to check if a string contains an anagram of another string?
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/04/08/if-a-string-contains-an-anagram-of-another-string/">Source</a></li>
+</ul></li>
+<li>Find all k-lettered words from a string.</li>
+<li>Given a string of open and close parentheses, find the minimum number of edits needed to balance a string of parentheses.</li>
+<li>Run length encoding - Write a string compress function that returns <code>'R2G1B1'</code> given <code>'RRGB'</code>.</li>
+<li>Write a function that finds all the different ways you can split up a word into a concatenation of two other words.</li>
+</ul>
+<p>{% page-ref page=“array/” %}</p>
+<p>{% page-ref page=“binary-search-tree/” %}</p>
+<p>{% page-ref page=“untitled-4/” %}</p>
+<p>{% page-ref page=“array/extra-array.md” %}</p>
+<p>{% page-ref page=“stack/” %}</p>
+<p>{% page-ref page=“binary-tree/” %}</p>
+<p>{% page-ref page=“untitled-6/” %}</p>
+<p>{% page-ref page=“untitled-5/” %}</p>
+<p>{% page-ref page=“untitled-2/” %}</p>
+<p>{% page-ref page=“untitled-3/” %}</p>
+<p>{% page-ref page=“queue/queue-sandbox.md” %}</p>
+<p>{% page-ref page=“untitled-5/” %}</p>
+<p>{% page-ref page=“untitled-4/double-linked-list.md” %}</p>
+<p>{% page-ref page=“untitled-1/” %}</p>
+<p>{% page-ref page=“untitled/” %}</p>
+<p>{% page-ref page=“heap/” %}</p>
+</body>
+</html>

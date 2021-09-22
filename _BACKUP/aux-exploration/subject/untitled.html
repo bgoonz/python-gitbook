@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="how-to-round-python-values-to-whole-numbers">How to round Python values to whole numbers?</h1>
+<h2 id="how-to-round-python-values-to-whole-numbers-1">How to round Python values to whole numbers?</h2>
+<blockquote>
+<p>Three Python functions round numbers to an integer. round() rounds up and down, math.floor() rounds down, and math.ceil() rounds up to a whole number.</p>
+</blockquote>
+<p>When our Python program works with numerical values, every so often we have turn values with a fractional component into whole (integer) numbers. But how to do so? And what options does Python have? Let’s find out together.</p>
+<h3 id="round-numerical-values-up-and-down-in-python-bookmark-for-round-numerical-values-up-and-down-in-python-round-numerical-values-up-and-down-in-python">[#](#round-numerical-values-up-and-down-in-python “Bookmark for ‘Round numerical values up and down in Python’”) Round numerical values up and down in Python</h3>
+<p>When we round values, we go from a numerical value with decimal places to a whole number. With this process we do lose some precision, but the rounded value is often much easier to read and interpret.</p>
+<p>Python has three ways to turn a floating-point value into a whole (integer) number:</p>
+<ul>
+<li>The built-in <code>round()</code> function rounds values up and down.</li>
+<li>The <code>math.floor()</code> function rounds <em>down</em> to the next full integer.</li>
+<li>The <code>math.ceil()</code> function rounds <em>up</em> to the next full integer.</li>
+</ul>
+<p>If you just want a string or script output with a whole number, then a Python format string can perform that task too. That way you also don’t lose precision in the original value.</p>
+<p>Let’s see how these three approaches work.</p>
+<h3 id="round-values-up-and-down-pythons-round-function-bookmark-for-round-values-up-and-down-pythons-round-function-round-values-up-and-down-pythons-round-function">[#](#round-values-up-and-down-pythons-round-function “Bookmark for ‘Round values up and down: Python’s <code>round()</code> function’”) Round values up and down: Python’s <code>round()</code> function</h3>
+<p>To round floating-point values up and down we use Python’s <code>round()</code> function (Lutz, 2013; Python Docs, n.d. a). There are two ways to use this function. The first option is to <a href="https://kodify.net/python/math/round-decimals/">round values to a certain number of decimals</a>. The other option turns a floating-point value into a whole number.</p>
+<p>To do that latter, we call <code>round()</code> with one argument: the value to turn into an integer. For example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">    <span class="bu">round</span>(<span class="fl">5.4598</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co"># Returns: 5</span></a></code></pre></div>
+<p>The <code>round()</code> function rounds values of <code>.5</code> towards an even integer (Python Docs, n.d. a). So <code>.5</code> is round up for positive values and round down for negative values.</p>
+<p>For instance, both <code>round(0.5)</code> and <code>round(-0.5)</code> return <code>0</code>, while <code>round(1.5)</code> gives <code>2</code> and <code>round(-1.5)</code> gives <code>-2</code>. This Python behaviour is a bit different from how rounding usually goes.</p>
+<p>When we give <code>round()</code> an integer, the function simply returns that whole number. There’s no error in that case, and so we don’t have to check if the function’s argument has a fractional value. It does need to be a number though; string values are not allowed in <code>round()</code>.</p>
+<h4 id="example-round-python-numbers-to-the-nearest-full-integer-bookmark-for-example-round-python-numbers-to-the-nearest-full-integer-example-round-python-numbers-to-the-nearest-full-integer">[#](#example-round-python-numbers-to-the-nearest-full-integer “Bookmark for ‘Example: round Python numbers to the nearest full integer’”) Example: round Python numbers to the nearest full integer</h4>
+<p>To see how the <code>round()</code> function works in practice, let’s consider the following mini-program:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">    <span class="co"># Some numbers to round</span></a>
+<a class="sourceLine" id="cb2-2" title="2">    valueA <span class="op">=</span> <span class="fl">3.14159265359</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    valueB <span class="op">=</span> <span class="fl">1845.7409947</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    valueC <span class="op">=</span> <span class="fl">-100.95</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    valueD <span class="op">=</span> <span class="fl">9.5432</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    valueE <span class="op">=</span> <span class="fl">34.49953</span></a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="co"># Round values to whole numbers</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    roundA <span class="op">=</span> <span class="bu">round</span>(valueA)</a>
+<a class="sourceLine" id="cb2-10" title="10">    roundB <span class="op">=</span> <span class="bu">round</span>(valueB)</a>
+<a class="sourceLine" id="cb2-11" title="11">    roundC <span class="op">=</span> <span class="bu">round</span>(valueC)</a>
+<a class="sourceLine" id="cb2-12" title="12">    roundD <span class="op">=</span> <span class="bu">round</span>(valueD)</a>
+<a class="sourceLine" id="cb2-13" title="13">    roundE <span class="op">=</span> <span class="bu">round</span>(valueE)</a>
+<a class="sourceLine" id="cb2-14" title="14"></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="co"># Output rounded values</span></a>
+<a class="sourceLine" id="cb2-16" title="16">    <span class="bu">print</span>(<span class="st">&quot;Value:&quot;</span>.ljust(<span class="dv">15</span>), <span class="st">&quot;Rounded:&quot;</span>)</a>
+<a class="sourceLine" id="cb2-17" title="17"></a>
+<a class="sourceLine" id="cb2-18" title="18">    <span class="bu">print</span>(<span class="bu">str</span>(valueA).ljust(<span class="dv">15</span>), roundA)</a>
+<a class="sourceLine" id="cb2-19" title="19">    <span class="bu">print</span>(<span class="bu">str</span>(valueB).ljust(<span class="dv">15</span>), roundB)</a>
+<a class="sourceLine" id="cb2-20" title="20">    <span class="bu">print</span>(<span class="bu">str</span>(valueC).ljust(<span class="dv">15</span>), roundC)</a>
+<a class="sourceLine" id="cb2-21" title="21">    <span class="bu">print</span>(<span class="bu">str</span>(valueD).ljust(<span class="dv">15</span>), roundD)</a>
+<a class="sourceLine" id="cb2-22" title="22">    <span class="bu">print</span>(<span class="bu">str</span>(valueE).ljust(<span class="dv">15</span>), roundE)</a></code></pre></div>
+<p>Here we first make five variables with floating-point values. Some have a lot of decimal places and others just a few.</p>
+<p>Then we do some rounding. For that we call the <code>round()</code> function and provide one argument: the value to round. We store the rounded integers in the variables <code>roundA</code> through <code>roundE</code>.</p>
+<p>Next we output the results with the <code>print()</code> function. For each variable we display the original value (e.g., <code>valueA</code>) and its rounded result (<code>roundA</code>). With the <code>ljust()</code> string method we justify that first value to the left. That aligns the values for a prettier output.</p>
+<p>Here’s how the rounded values look:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">Value:          Rounded:</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="fl">3.14159265359</span>   <span class="dv">3</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="fl">1845.7409947</span>    <span class="dv">1846</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="fl">-100.95</span>         <span class="dv">-101</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="fl">9.55432</span>         <span class="dv">10</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="fl">34.49953</span>        <span class="dv">34</span></a></code></pre></div>
+<h3 id="round-down-to-the-next-integer-pythons-mathfloor-function-bookmark-for-round-down-to-the-next-integer-pythons-math.floor-function-round-down-to-the-next-integer-pythons-math.floor-function">[#](#round-down-to-the-next-integer-pythons-mathfloor-function “Bookmark for ‘Round down to the next integer: Python’s <code>math.floor()</code> function’”) Round down to the next integer: Python’s <code>math.floor()</code> function</h3>
+<p>The <code>math.floor()</code> function returns the <em>floor value</em> of its argument, which is the nearest integer less than or equal to that argument’s value (Python Docs, n.d. b).</p>
+<p>That sounds abstract, but is just another way of saying that <code>math.floor()</code> rounds down to the next whole number. So <code>7.8</code> becomes <code>7</code> and <code>5.4</code> is turned into <code>5</code>. And since the function rounds <em>down</em> to a smaller value, <code>-8.2</code> becomes <code>-9</code>.</p>
+<p>Here’s a quick example of the <code>math.floor()</code> function:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3">    math.floor(<span class="fl">12.75</span>)</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="co"># Returns: 12</span></a></code></pre></div>
+<p><code>math.floor()</code> only accepts one argument: the value to round down. With a small custom function we can also round down to a number of decimal places. See <a href="https://kodify.net/python/math/round-decimals/">round down to a specific decimal amount</a> for more.</p>
+<h4 id="example-round-values-down-to-the-next-full-integer-bookmark-for-example-round-values-down-to-the-next-full-integer-example-round-values-down-to-the-next-full-integer">[#](#example-round-values-down-to-the-next-full-integer “Bookmark for ‘Example: round values down to the next full integer’”) Example: round values down to the next full integer</h4>
+<p>To explore how the <code>math.floor()</code> function works in practice, let’s examine the following Python program:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co"># Some random values</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    valueA <span class="op">=</span> <span class="fl">11.2829850</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    valueB <span class="op">=</span> <span class="fl">19.2545879</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    valueC <span class="op">=</span> <span class="fl">0.50000001</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    valueD <span class="op">=</span> <span class="fl">34.6403001</span></a>
+<a class="sourceLine" id="cb5-8" title="8">    valueE <span class="op">=</span> <span class="fl">-9.9121138</span></a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="co"># Round values down to the nearest full integer</span></a>
+<a class="sourceLine" id="cb5-11" title="11">    roundA <span class="op">=</span> math.floor(valueA)</a>
+<a class="sourceLine" id="cb5-12" title="12">    roundB <span class="op">=</span> math.floor(valueB)</a>
+<a class="sourceLine" id="cb5-13" title="13">    roundC <span class="op">=</span> math.floor(valueC)</a>
+<a class="sourceLine" id="cb5-14" title="14">    roundD <span class="op">=</span> math.floor(valueD)</a>
+<a class="sourceLine" id="cb5-15" title="15">    roundE <span class="op">=</span> math.floor(valueE)</a>
+<a class="sourceLine" id="cb5-16" title="16"></a>
+<a class="sourceLine" id="cb5-17" title="17">    <span class="co"># Print the results</span></a>
+<a class="sourceLine" id="cb5-18" title="18">    <span class="bu">print</span>(valueA, <span class="st">&quot;rounded =&quot;</span>, roundA)</a>
+<a class="sourceLine" id="cb5-19" title="19">    <span class="bu">print</span>(valueB, <span class="st">&quot;rounded =&quot;</span>, roundB)</a>
+<a class="sourceLine" id="cb5-20" title="20">    <span class="bu">print</span>(valueC, <span class="st">&quot;rounded =&quot;</span>, roundC)</a>
+<a class="sourceLine" id="cb5-21" title="21">    <span class="bu">print</span>(valueD, <span class="st">&quot;rounded =&quot;</span>, roundD)</a>
+<a class="sourceLine" id="cb5-22" title="22">    <span class="bu">print</span>(valueE, <span class="st">&quot;rounded =&quot;</span>, roundE)</a></code></pre></div>
+<p>We first import the <code>math</code> module. That makes it possible to use the <code>math.floor()</code> function. Then we make five variables, <code>valueA</code> through <code>valueE</code>. Each holds a floating-point value.</p>
+<p>Next we round those values down. For that we call the <code>math.floor()</code> function on each variable. We store the outcome in new variables (<code>roundA</code> through <code>roundE</code>).</p>
+<p>The program’s third part outputs the variables with Python’s <code>print()</code> function. Here each <code>print()</code> statement displays the original value and its rounded down version. Here’s how that looks:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">    <span class="fl">11.282985</span> rounded <span class="op">=</span> <span class="dv">11</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="fl">19.2545879</span> rounded <span class="op">=</span> <span class="dv">19</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="fl">0.50000001</span> rounded <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="fl">34.6403001</span> rounded <span class="op">=</span> <span class="dv">34</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="fl">-9.9121138</span> rounded <span class="op">=</span> <span class="dv">-10</span></a></code></pre></div>
+<h3 id="round-up-to-the-next-integer-pythons-mathceil-function-bookmark-for-round-up-to-the-next-integer-pythons-math.ceil-function-round-up-to-the-next-integer-pythons-math.ceil-function">[#](#round-up-to-the-next-integer-pythons-mathceil-function “Bookmark for ‘Round up to the next integer: Python’s <code>math.ceil()</code> function’”) Round up to the next integer: Python’s <code>math.ceil()</code> function</h3>
+<p>The <code>math.ceil()</code> function returns the <em>ceiling</em> of its argument, which is the nearest integer greater than or equal to that argument’s value (Python Docs, n.d. b).</p>
+<p>That’s just a way of saying that <code>math.ceil()</code> rounds up to a whole number: <code>3.2</code> becomes <code>4</code> and <code>7.75</code> gets turned into <code>8</code>. And because the function rounds <em>up</em> to a greater value, <code>-9.8</code> becomes <code>-9</code>.</p>
+<p>Here’s a quick example of <code>math.ceil()</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3">    math.ceil(<span class="fl">12.45</span>)</a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="co"># Returns: 13</span></a></code></pre></div>
+<p>Here’s a way to remember the difference between <code>math.floor()</code> and <code>math.ceil()</code>. As you know, each floating-point value lies between two consecutive integers. <code>12.45</code>, for instance, is between <code>12</code> and <code>13</code>.</p>
+<p>Now the “ceiling” is the higher endpoint of this interval. So <code>math.ceil()</code> returns <code>13</code>. The lower start point of that integer interval is called the “floor”. So <code>math.floor()</code> returns 12.</p>
+<p>Python’s <code>math.ceil()</code> function always rounds up to a full integer. But with a small custom function we can also round up to a number of decimal places. See <a href="https://kodify.net/python/math/round-decimals/">round Python values to decimal places</a> for how.</p>
+<h4 id="example-round-python-values-up-to-whole-numbers-bookmark-for-example-round-python-values-up-to-whole-numbers-example-round-python-values-up-to-whole-numbers">[#](#example-round-python-values-up-to-whole-numbers “Bookmark for ‘Example: round Python values up to whole numbers’”) Example: round Python values up to whole numbers</h4>
+<p>Let’s see how <code>math.ceil()</code> works in practice. This example program rounds several floating-point values up to a whole number:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="co"># Some random values</span></a>
+<a class="sourceLine" id="cb8-4" title="4">    valueA <span class="op">=</span> <span class="fl">11.2829850</span></a>
+<a class="sourceLine" id="cb8-5" title="5">    valueB <span class="op">=</span> <span class="fl">19.2545879</span></a>
+<a class="sourceLine" id="cb8-6" title="6">    valueC <span class="op">=</span> <span class="fl">0.50000001</span></a>
+<a class="sourceLine" id="cb8-7" title="7">    valueD <span class="op">=</span> <span class="fl">34.6403001</span></a>
+<a class="sourceLine" id="cb8-8" title="8">    valueE <span class="op">=</span> <span class="fl">-9.9121138</span></a>
+<a class="sourceLine" id="cb8-9" title="9"></a>
+<a class="sourceLine" id="cb8-10" title="10">    <span class="co"># Round values up to the nearest full integer</span></a>
+<a class="sourceLine" id="cb8-11" title="11">    roundA <span class="op">=</span> math.ceil(valueA)</a>
+<a class="sourceLine" id="cb8-12" title="12">    roundB <span class="op">=</span> math.ceil(valueB)</a>
+<a class="sourceLine" id="cb8-13" title="13">    roundC <span class="op">=</span> math.ceil(valueC)</a>
+<a class="sourceLine" id="cb8-14" title="14">    roundD <span class="op">=</span> math.ceil(valueD)</a>
+<a class="sourceLine" id="cb8-15" title="15">    roundE <span class="op">=</span> math.ceil(valueE)</a>
+<a class="sourceLine" id="cb8-16" title="16"></a>
+<a class="sourceLine" id="cb8-17" title="17">    <span class="co"># Output the results</span></a>
+<a class="sourceLine" id="cb8-18" title="18">    <span class="bu">print</span>(valueA, <span class="st">&quot;rounded =&quot;</span>, roundA)</a>
+<a class="sourceLine" id="cb8-19" title="19">    <span class="bu">print</span>(valueB, <span class="st">&quot;rounded =&quot;</span>, roundB)</a>
+<a class="sourceLine" id="cb8-20" title="20">    <span class="bu">print</span>(valueC, <span class="st">&quot;rounded =&quot;</span>, roundC)</a>
+<a class="sourceLine" id="cb8-21" title="21">    <span class="bu">print</span>(valueD, <span class="st">&quot;rounded =&quot;</span>, roundD)</a>
+<a class="sourceLine" id="cb8-22" title="22">    <span class="bu">print</span>(valueE, <span class="st">&quot;rounded =&quot;</span>, roundE)</a></code></pre></div>
+<p>We first import the <code>math</code> module. That makes the <code>math.ceil()</code> function available. Then we make five different variables, named <code>valueA</code> through <code>valueE</code>. Each has a number with several decimal places.</p>
+<p>The next part rounds those values up to a full integer. To make that happen we call the <code>math.ceil()</code> function on each variable. We put the values returns by that function in new variables, <code>roundA</code> through <code>roundE</code>.</p>
+<p>The third code segment has the <code>print()</code> function output both the original and rounded value. Here’s what that displays:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">    <span class="fl">11.282985</span> rounded <span class="op">=</span> <span class="dv">12</span></a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="fl">19.2545879</span> rounded <span class="op">=</span> <span class="dv">20</span></a>
+<a class="sourceLine" id="cb9-3" title="3">    <span class="fl">0.50000001</span> rounded <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb9-4" title="4">    <span class="fl">34.6403001</span> rounded <span class="op">=</span> <span class="dv">35</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="fl">-9.9121138</span> rounded <span class="op">=</span> <span class="dv">-9</span></a></code></pre></div>
+<h3 id="round-all-values-in-a-python-list-or-array-bookmark-for-round-all-values-in-a-python-list-or-array-round-all-values-in-a-python-list-or-array">[#](#round-all-values-in-a-python-list-or-array “Bookmark for ‘Round all values in a Python list or array’”) Round all values in a Python list or array</h3>
+<p>Of course there are also situations where we have a bunch of values to round, rather than a single value. There are two main ways to do that: with a list comprehension or <code>for</code> loop. Let’s see.</p>
+<h4 id="round-python-values-with-a-list-comprehension-bookmark-for-round-python-values-with-a-list-comprehension-round-python-values-with-a-list-comprehension">[#](#round-python-values-with-a-list-comprehension “Bookmark for ‘Round Python values with a list comprehension’”) Round Python values with a list comprehension</h4>
+<p>When we have a sequence of floating-point values, one way to round them is with a list comprehension. That requires just a bit of code and runs efficiently.</p>
+<p>Here’s a mini-program that does just that:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb10-2" title="2"></a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="co"># Some random values</span></a>
+<a class="sourceLine" id="cb10-4" title="4">    values <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb10-5" title="5">        <span class="fl">3.46410162</span>, <span class="fl">6.70820393</span>, <span class="fl">11.04536102</span>,</a>
+<a class="sourceLine" id="cb10-6" title="6">        <span class="fl">15.29705854</span>, <span class="fl">21.21320344</span>, <span class="fl">31.4960315</span></a>
+<a class="sourceLine" id="cb10-7" title="7">    ]</a>
+<a class="sourceLine" id="cb10-8" title="8"></a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="co"># Generate new lists with values rounded</span></a>
+<a class="sourceLine" id="cb10-10" title="10">    valuesRounded <span class="op">=</span> [<span class="bu">round</span>(number) <span class="cf">for</span> number <span class="kw">in</span> values]</a>
+<a class="sourceLine" id="cb10-11" title="11">    valuesRoundUp <span class="op">=</span> [math.ceil(number) <span class="cf">for</span> number <span class="kw">in</span> values]</a>
+<a class="sourceLine" id="cb10-12" title="12">    valuesRoundDown <span class="op">=</span> [math.floor(number) <span class="cf">for</span> number <span class="kw">in</span> values]</a>
+<a class="sourceLine" id="cb10-13" title="13"></a>
+<a class="sourceLine" id="cb10-14" title="14">    <span class="co"># Output data</span></a>
+<a class="sourceLine" id="cb10-15" title="15">    <span class="bu">print</span>(<span class="st">&quot;Original values:</span><span class="ch">\n</span><span class="st">&quot;</span>, values)</a>
+<a class="sourceLine" id="cb10-16" title="16">    <span class="bu">print</span>(<span class="st">&quot;Rounded:</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRounded)</a>
+<a class="sourceLine" id="cb10-17" title="17">    <span class="bu">print</span>(<span class="st">&quot;Rounded up to next integer:</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRoundUp)</a>
+<a class="sourceLine" id="cb10-18" title="18">    <span class="bu">print</span>(<span class="st">&quot;Rounded down to next integer:</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRoundDown)</a></code></pre></div>
+<p>First we import the <code>math</code> module. That makes the <code>math.ceil()</code> and <code>math.floor()</code> rounding functions available. Then we make a list named <code>values</code>, which holds several floating-point values.</p>
+<p>To round those values to whole numbers we make three list comprehensions. The first one executes <code>round()</code> for each list value. The other two execute <code>math.ceil()</code> and <code>math.floor()</code> functions on the list values.</p>
+<p>We generate the values that those functions use with an in-line <code>for</code> loop: <code>for number in values</code>. This takes one value from the <code>values</code> list at a time, and makes it available through the <code>number</code> variable.</p>
+<p>Those list comprehensions generate new lists. We assign those to the <code>valuesRounded</code>, <code>valuesRoundUp</code>, and <code>valuesRoundDown</code> variables.</p>
+<p>The last part of the program outputs the original list and the three rounded ones. Here’s how that looks:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">Original values:</a>
+<a class="sourceLine" id="cb11-2" title="2"> [<span class="fl">3.46410162</span>, <span class="fl">6.70820393</span>, <span class="fl">11.04536102</span>, <span class="fl">15.29705854</span>, <span class="fl">21.21320344</span>, <span class="fl">31.4960315</span>]</a>
+<a class="sourceLine" id="cb11-3" title="3">Rounded:</a>
+<a class="sourceLine" id="cb11-4" title="4"> [<span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">15</span>, <span class="dv">21</span>, <span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb11-5" title="5">Rounded up to <span class="bu">next</span> integer:</a>
+<a class="sourceLine" id="cb11-6" title="6"> [<span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">12</span>, <span class="dv">16</span>, <span class="dv">22</span>, <span class="dv">32</span>]</a>
+<a class="sourceLine" id="cb11-7" title="7">Rounded down to <span class="bu">next</span> integer:</a>
+<a class="sourceLine" id="cb11-8" title="8"> [<span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">11</span>, <span class="dv">15</span>, <span class="dv">21</span>, <span class="dv">31</span>]</a></code></pre></div>
+<p>In the above example we kept the original list. If you don’t need to retain those values, you can also overwrite the original list with rounded values. Here’s how a list comprehension does that:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="co"># Round all numbers in the &#39;values&#39; list,</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="co"># in place (to replace the original numbers)</span></a>
+<a class="sourceLine" id="cb12-3" title="3">values <span class="op">=</span> [<span class="bu">round</span>(value) <span class="cf">for</span> value <span class="kw">in</span> values]</a></code></pre></div>
+<h4 id="round-all-values-with-pythons-for-loop-bookmark-for-round-all-values-with-pythons-for-loop-round-all-values-with-pythons-for-loop">[#](#round-all-values-with-pythons-for-loop “Bookmark for ‘Round all values with Python’s <code>for</code> loop’”) Round all values with Python’s <code>for</code> loop</h4>
+<p>Of course we can also round list or array values with a regular <code>for</code> loop. This requires a bit more code than a list comprehension, but makes it easier to perform additional operations on each element. Plus a <code>for</code> loop is easier to read in complex situations.</p>
+<p>Here’s how a Python program rounds values inside a <code>for</code> loop:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">    <span class="im">import</span> math</a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3">    <span class="co"># Some random values</span></a>
+<a class="sourceLine" id="cb13-4" title="4">    values <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="fl">3.46410162</span>, <span class="fl">6.70820393</span>, <span class="fl">11.04536102</span>,</a>
+<a class="sourceLine" id="cb13-6" title="6">        <span class="fl">15.29705854</span>, <span class="fl">21.21320344</span>, <span class="fl">31.4960315</span></a>
+<a class="sourceLine" id="cb13-7" title="7">    ]</a>
+<a class="sourceLine" id="cb13-8" title="8"></a>
+<a class="sourceLine" id="cb13-9" title="9">    <span class="co"># Create the new lists</span></a>
+<a class="sourceLine" id="cb13-10" title="10">    valuesRounded <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb13-11" title="11">    valuesRoundUp <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb13-12" title="12">    valuesRoundDown <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb13-13" title="13"></a>
+<a class="sourceLine" id="cb13-14" title="14">    <span class="co"># Populate new lists with rounded values</span></a>
+<a class="sourceLine" id="cb13-15" title="15">    <span class="cf">for</span> number <span class="kw">in</span> values:</a>
+<a class="sourceLine" id="cb13-16" title="16">        valuesRounded.append(<span class="bu">round</span>(number))</a>
+<a class="sourceLine" id="cb13-17" title="17">        valuesRoundUp.append(math.ceil(number))</a>
+<a class="sourceLine" id="cb13-18" title="18">        valuesRoundDown.append(math.floor(number))</a>
+<a class="sourceLine" id="cb13-19" title="19"></a>
+<a class="sourceLine" id="cb13-20" title="20">    <span class="co"># Output data</span></a>
+<a class="sourceLine" id="cb13-21" title="21">    <span class="bu">print</span>(<span class="st">&quot;Original values:</span><span class="ch">\n</span><span class="st">&quot;</span>, values)</a>
+<a class="sourceLine" id="cb13-22" title="22">    <span class="bu">print</span>(<span class="st">&quot;Rounded (standard):</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRounded)</a>
+<a class="sourceLine" id="cb13-23" title="23">    <span class="bu">print</span>(<span class="st">&quot;Rounded up to next integer:</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRoundUp)</a>
+<a class="sourceLine" id="cb13-24" title="24">    <span class="bu">print</span>(<span class="st">&quot;Rounded down to next integer:</span><span class="ch">\n</span><span class="st">&quot;</span>, valuesRoundDown)</a></code></pre></div>
+<p>We again first import the <code>math</code> module to be able to use <code>math.ceil()</code> and <code>math.floor()</code>. Then we make a list (<code>values</code>) with floating-point values.</p>
+<p>Then we make three initially empty lists: <code>valuesRounded</code>, <code>valuesRoundUp</code>, and <code>valuesRoundDown</code>. These are going to hold our rounded values.</p>
+<p>To fill those lists we make a Python <code>for</code> loop. This loop goes through all elements in the <code>values</code> list. During each loop cycle the <code>number</code> variable holds a single element from that list.</p>
+<p>Inside the loop we call the <code>append()</code> method on each of the three new lists. That way we add a new element to them. The value we add each pass through the loop is the <code>number</code> variable rounded with <code>round()</code>, <code>math.ceil()</code>, and <code>math.floor()</code>. After this loop is done, each of those three lists has a rounded value from the original list.</p>
+<p>The program ends with several <code>print()</code> statements. That displays the original list and its rounded derivatives. Here’s what that output looks like:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">Original values:</a>
+<a class="sourceLine" id="cb14-2" title="2"> [<span class="fl">3.46410162</span>, <span class="fl">6.70820393</span>, <span class="fl">11.04536102</span>, <span class="fl">15.29705854</span>, <span class="fl">21.21320344</span>, <span class="fl">31.4960315</span>]</a>
+<a class="sourceLine" id="cb14-3" title="3">Rounded (standard):</a>
+<a class="sourceLine" id="cb14-4" title="4"> [<span class="dv">3</span>, <span class="dv">7</span>, <span class="dv">11</span>, <span class="dv">15</span>, <span class="dv">21</span>, <span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb14-5" title="5">Rounded up to <span class="bu">next</span> integer:</a>
+<a class="sourceLine" id="cb14-6" title="6"> [<span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">12</span>, <span class="dv">16</span>, <span class="dv">22</span>, <span class="dv">32</span>]</a>
+<a class="sourceLine" id="cb14-7" title="7">Rounded down to <span class="bu">next</span> integer:</a>
+<a class="sourceLine" id="cb14-8" title="8"> [<span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">11</span>, <span class="dv">15</span>, <span class="dv">21</span>, <span class="dv">31</span>]</a></code></pre></div>
+<p>By the way, you don’t have to make a new list when you round values. If you’re fine with losing the original data, you can also overwrite the existing list. Doing so is easy when you combine a <code>for</code> loop with the <code>enumerate()</code> function:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">    <span class="co"># Loop through the original &#39;values&#39; list, and</span></a>
+<a class="sourceLine" id="cb15-2" title="2">    <span class="co"># round the numbers (in place)</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="cf">for</span> index, value <span class="kw">in</span> <span class="bu">enumerate</span>(values):</a>
+<a class="sourceLine" id="cb15-4" title="4">        values[index] <span class="op">=</span> <span class="bu">round</span>(value)</a></code></pre></div>
+<h3 id="summary-bookmark-for-summary-summary">[#](#summary “Bookmark for ‘Summary’”) Summary</h3>
+<p>Python has three ways to round a floating-point value to a whole number. The <code>round()</code> function rounds a value up or down. A decimal digit of <code>.5</code> has Python round towards an even integer. That makes it round up for positive values and down for negative ones.</p>
+<p>The <code>math.floor()</code> function, on the other hand, always rounds down to the nearest full integer. <code>math.ceil()</code> does the opposite. That function always rounds up to a whole number.</p>
+<p>All three functions work in the same way: provide the function with one argument, which is the floating-point value to round.</p>
+</body>
+</html>

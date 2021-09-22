@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>selectionsort</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="selectionsort">SelectionSort</h1>
+<h3 id="what-is-selection-sort">What is Selection Sort?</h3>
+<p>In computer science, it is a <a href="https://en.wikipedia.org/wiki/Selection_sort">sorting algorithm</a>, specifically an in-place comparison sort.</p>
+<p>It has O(n2) time complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort.</p>
+<p>Selection sorting is noted for its simplicity, and it has performance advantages over more complicated algorithms in certain situations, particularly where auxiliary memory is limited.</p>
+<h4 id="define-selection-sort">Define Selection Sort</h4>
+<p>Now, let’s create a new function named SelectionSort which accepts 1 parameter as an argument.</p>
+<p>The argument which we pass to this function is an unordered list that is passed to this above function to perform Selection Sorting algorithm on this list and return sorted list back to function call.</p>
+<p><em><strong>Read =&gt;</strong></em> <a href="https://codezup.com//binary-search-algorithm-sorted-list-loop-python/"><em><strong>Binary Search Algorithm on Sorted List using Loop in Python</strong></em></a></p>
+<p>So the logic or the algorithm behind Selection Sort is that it iterates all the elements of the list and if the smallest element in the list is found then that number is swapped with the first.</p>
+<p>So for this algorithm, we are going to use two for loops, one for traversing through each element from index 0 to n-1.</p>
+<p>Another nested loop is used to compare each element until the last element for each iteration.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> selectionSort(List):</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(List) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-3" title="3">        minimum <span class="op">=</span> i</a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>( i <span class="op">+</span> <span class="dv">1</span>, <span class="bu">len</span>(List)):</a>
+<a class="sourceLine" id="cb1-5" title="5">            <span class="cf">if</span>(List[j] <span class="op">&lt;</span> List[minimum]):</a>
+<a class="sourceLine" id="cb1-6" title="6">                minimum <span class="op">=</span> j</a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="cf">if</span>(minimum <span class="op">!=</span> i):</a>
+<a class="sourceLine" id="cb1-8" title="8">            List[i], List[minimum] <span class="op">=</span> List[minimum], List[i]</a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="cf">return</span> List</a></code></pre></div>
+<p><strong>The Complexity of Selection Sort</strong></p>
+<p>The time efficiency of selection sort is quadratic, so there are a number of sorting techniques which have better time complexity than selection sort.</p>
+<p>One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, <em>n</em> − 1 in the worst case.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Best O(n<span class="op">^</span><span class="dv">2</span>)<span class="op">;</span> Average O(n<span class="op">^</span><span class="dv">2</span>)<span class="op">;</span> Worst O(n<span class="op">^</span><span class="dv">2</span>)</a></code></pre></div>
+<h4 id="define-main-condition">Define Main Condition</h4>
+<p>Now let’s define the main condition where we define our unordered list which needs to be passed to the above function we created.</p>
+<p>So, pass the user-defined lists to function and print the returned sorted list using the print statement.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</a>
+<a class="sourceLine" id="cb3-2" title="2">    List <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">1</span>, <span class="dv">9</span>]</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="bu">print</span>(<span class="st">&#39;Sorted List:&#39;</span>,selectionSort(List))</a></code></pre></div>
+<p><strong>Source Code</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">def</span> selectionSort_Ascending(List):</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(List) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb4-4" title="4">        minimum <span class="op">=</span> i</a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>( i <span class="op">+</span> <span class="dv">1</span>, <span class="bu">len</span>(List)):</a>
+<a class="sourceLine" id="cb4-6" title="6">            <span class="cf">if</span>(List[j] <span class="op">&lt;</span> List[minimum]):</a>
+<a class="sourceLine" id="cb4-7" title="7">                minimum <span class="op">=</span> j</a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="cf">if</span>(minimum <span class="op">!=</span> i):</a>
+<a class="sourceLine" id="cb4-9" title="9">            List[i], List[minimum] <span class="op">=</span> List[minimum], List[i]</a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="cf">return</span> List</a>
+<a class="sourceLine" id="cb4-11" title="11"></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="kw">def</span> selectionSort_Descending(List):</a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(List) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb4-14" title="14">        minimum <span class="op">=</span> i</a>
+<a class="sourceLine" id="cb4-15" title="15">        <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(List)<span class="op">-</span><span class="dv">1</span>,i,<span class="op">-</span><span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb4-16" title="16">            <span class="cf">if</span>(List[j] <span class="op">&gt;</span> List[minimum]):</a>
+<a class="sourceLine" id="cb4-17" title="17">                minimum <span class="op">=</span> j</a>
+<a class="sourceLine" id="cb4-18" title="18">        <span class="cf">if</span>(minimum <span class="op">!=</span> i):</a>
+<a class="sourceLine" id="cb4-19" title="19">            List[i], List[minimum] <span class="op">=</span> List[minimum], List[i]</a>
+<a class="sourceLine" id="cb4-20" title="20">    <span class="cf">return</span> List</a>
+<a class="sourceLine" id="cb4-21" title="21"></a>
+<a class="sourceLine" id="cb4-22" title="22"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</a>
+<a class="sourceLine" id="cb4-23" title="23">    List1 <span class="op">=</span> [<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">1</span>, <span class="dv">9</span>]</a>
+<a class="sourceLine" id="cb4-24" title="24">    <span class="bu">print</span>(<span class="st">&#39;Sorted List Ascending:&#39;</span>,selectionSort_Ascending(List1))</a>
+<a class="sourceLine" id="cb4-25" title="25">    <span class="bu">print</span>(<span class="st">&#39;Sorted List Descending:&#39;</span>,selectionSort_Descending(List1))</a></code></pre></div>
+<p><strong>Output</strong></p>
+<figure>
+<img src="https://i2.wp.com/codezup.com/wp-content/uploads/2020/01/Selection-Sort-using-For-loop-in-Python-Output.png?resize=665%2C129&amp;ssl=1" alt="Selection Sort using For loop in Python Output" /><figcaption>Selection Sort using For loop in Python Output</figcaption>
+</figure>
+</body>
+</html>

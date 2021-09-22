@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="d1-module-01---python-i">D1-Module 01 - Python I</h1>
+<p><img src="../../../.gitbook/assets/image.png" /></p>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/d1">@bgoonz/d1</span>#main.py” %}</p>
+<h4 id="windows">Windows <a id="windows"></a></h4>
+<p>Windows machines usually do not ship with Python installed. Installing on Windows is pretty simple.</p>
+<ol type="1">
+<li>Download the latest Python 3 Installer from <a href="https://www.python.org/downloads/windows/">python.org (Links to an external site.)</a> (make sure you pay attention to 32-bit vs. 64-bit and select the right one for your machine).</li>
+<li>Run the installer and <strong>make sure you check the box that says “Add Python 3.x to PATH” to ensure that you place the interpreter in your execution path.</strong></li>
+</ol>
+<h4 id="linux">Linux <a id="linux"></a></h4>
+<p>Most likely, your Linux distribution already has Python installed. However, it is likely to be Python 2 and not Python 3.</p>
+<p>You can determine what version you have by opening a terminal and typing <code>python --version</code>. If the version shown is <code>Python 2.x.x</code>, then you want to install the latest version of Python 3.</p>
+<p>The procedure for installing the latest version of Python depends on which distribution of Linux you are running.</p>
+<p>Use <a href="https://realpython.com/installing-python/#reader-comments">this article (Links to an external site.)</a> to find instructions specific to your Linux distribution.</p>
+<h4 id="macos-mac-os-x">macOS / Mac OS X <a id="macos--mac-os-x"></a></h4>
+<p>Current versions of macOS include a version of Python 2, but you want to be using Python 3.</p>
+<p>The best way to install Python 3 on macOS is to use the Homebrew package manager.</p>
+<p><strong>Install Homebrew</strong></p>
+<ol type="1">
+<li>Go to <a href="http://brew.sh/">http://brew.sh/ (Links to an external site.)</a> and select the Homebrew bootstrap code under “Install Homebrew” and copy the complete command to your clipboard.</li>
+<li>Open a terminal window, paste the Homebrew bootstrap code, and hit “Enter.”</li>
+<li>It may take some time to install Homebrew, so you need to wait for that process to complete before moving on.</li>
+</ol>
+<p>After Homebrew has finished its installation process, you then need to install Python.</p>
+<p><strong>Install Python</strong></p>
+<ol type="1">
+<li>Open a terminal and run the following command <code>brew install python3</code>. This command will download and install the latest version of Python.</li>
+<li>Ensure that everything was installed correctly by opening a terminal window and running the command <code>pip3</code>.</li>
+<li>If you see help text from Python’s “pip” package manager, you have a working Python installation.</li>
+</ol>
+<h4 id="online-interpreters">Online Interpreters <a id="online-interpreters"></a></h4>
+<p>Here are a few websites that give you online access to the Python interpreter:</p>
+<ul>
+<li><a href="https://repl.it/">Repl.it (Links to an external site.)</a></li>
+<li><a href="https://trinket.io/">Trinket (Links to an external site.)</a></li>
+<li><a href="http://pythonfiddle.com/">Python Fiddle (Links to an external site.)</a></li>
+<li><a href="https://www.python.org/shell">Python.org Online Console (Links to an external site.)</a></li>
+<li><a href="https://www.pythonanywhere.com/">Python Anywhere</a></li>
+</ul>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png" /></p>
+<h4 id="search-and-research">Search and Research <a id="search-and-research"></a></h4>
+<p>Before you do anything else, search for a solution to your problem on your own. One thing you should start doing is keeping track of all your research when solving a problem. One easy way to do this is to have a browser window represent a specific search for a solution, and each open tab represents an attempt at solving it. Keeping track of your research is vital because it’s helpful to provide examples of similar questions or similar problems and explain why those didn’t answer your specific problem or question. It also helps the person answering your question avoid pointing you toward resources you’ve already explored, and lets them know that you’ve already put in the work.</p>
+<h4 id="introduce-the-problem">Introduce the Problem <a id="introduce-the-problem"></a></h4>
+<p>The first thing you do when you ask a question￼￼￼￼ is to introduce the problem. The first paragraph of your written question should serve as an executive summary of the problem. All the following paragraphs should fill in the details of the problem.</p>
+<p>An important thing to include in your problem introduction is a precise explanation of how you encountered the problem. Write about the difficulties that kept you from solving it. Describe what you already tried and include the results of the research you’ve done.</p>
+<p>You should also provide as much detail about the context as possible. For instance, include the language version, the platform version, the operating system, the database type, specific IDE, and any web server information. You should also include your particular constraints. For example, you may not be allowed to use feature A or B that would provide an obvious solution. If you have an odd constraint, it may also help explain why you have that constraint.</p>
+<h4 id="help-others-reproduce-the-problem">Help Others Reproduce the Problem <a id="help-others-reproduce-the-problem"></a></h4>
+<p>One thing to remember is that not all questions benefit from including code. However, if you include code, definitely do not just copy in your entire program! By having irrelevant details, you make your question much harder to answer and decrease the chances of someone helping you.</p>
+<p>Here are some guidelines for when to include code in your question.</p>
+<h4 id="minimal"><strong>Minimal</strong> <a id="minimal"></a></h4>
+<p>Include just enough code to allow others to reproduce your specific problem.￼￼ One way to do this is to restart from scratch. Do not include snippets of your entire program. Instead, create a new program, but only add what’s necessary to recreate the problem.</p>
+<p>If you aren’t exactly sure where the problem code is, one way to find it is by removing code chunks one at a time until the problem disappears — then add back the last part. This way, you can deduce that the last piece of code you added back is likely the source of your problem.</p>
+<p>Be careful not to remove too much code, either. Keep your question brief, but maintain enough context for clarity.</p>
+<h4 id="complete">Complete <a id="complete"></a></h4>
+<p>Make sure you include all the portions of the code needed to reproduce the problem. It would be best if you assumed that the person who is answering your question would not write any code to reproduce your issue. Again, remember, do not use images of code—those trying to help you need direct access to the code you include in your question.</p>
+<h4 id="reproducible">Reproducible <a id="reproducible"></a></h4>
+<p>When you include your code, it’s also important to tell the reader exactly what you expect the behavior to be. Be sure to show the reader the exact wording of the error message you encountered (if there was one). It’s also crucial to double-check that your included example reproduces the problem.</p>
+<p>One other thing you can do is create a live example on a site like sqlfiddle.com or jsbin.com. If you do, make sure you also include a copy of your code in your question. Not everyone will utilize the link to the live example.</p>
+<p>And to reiterate, do not post images of any code, data, or error messages—reserve images for things like rendering bugs—things that are impossible to describe accurately with just text.</p>
+<h4 id="proofread">Proofread <a id="proofread"></a></h4>
+<p>Don’t send a question you haven’t proofread. When you post your question, you should have already read and reread it, taking care to follow all the best practices and making sure your question makes sense. It would be best if you imagined that you’re coming to your question fresh, with no other context but the question itself. You want to make your question as easy for someone to answer as possible. Remember, the reader is likely choosing between several questions they could answer. You want your question to stand out as something concise and approachable. Don’t forget to double-check your spelling, grammar, and formatting. Keep it as straightforward as you can; you’re not writing a novel.</p>
+<h4 id="respond-to-feedback">Respond to Feedback <a id="respond-to-feedback"></a></h4>
+<p>As feedback and responses to your question begin coming in, respond as quickly as possible. You’ll likely receive clarifying questions, and your readers need that clarification to help you.￼￼￼￼</p>
+<h3 id="follow-along">Follow Along <a id="follow-along"></a></h3>
+<p>Now let’s look at an example of a question posted to Stack Overflow and analyze it to see if it follows the best practices outlined above.</p>
+<p><a href="https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops">The question (Links to an external site.)</a>:</p>
+<figure>
+<img src="https://camo.githubusercontent.com/9be35d94fd27e59fc716b00942c22b5b3438a99a/68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f64383031393630662d626530662d346633362d383634612d3564626666616435306631635f53637265656e53686f74323032302d30332d33306174332e31352e3330504d2e706e67" alt="https://camo.githubusercontent.com/9be35d94fd27e59fc716b00942c22b5b3438a99a/68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f64383031393630662d626530662d346633362d383634612d3564626666616435306631635f53637265656e53686f74323032302d30332d33306174332e31352e3330504d2e706e67" /><figcaption>https://camo.githubusercontent.com/9be35d94fd27e59fc716b00942c22b5b3438a99a/68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f64383031393630662d626530662d346633362d383634612d3564626666616435306631635f53637265656e53686f74323032302d30332d33306174332e31352e3330504d2e706e67</figcaption>
+</figure>
+<p>The first thing to notice is that the post has a short but descriptive title that adequately summarizes the question.</p>
+<blockquote>
+<p>Accessing the index in ‘for’ loops?</p>
+</blockquote>
+<p>Next, did the questioner provide any additional context or proof of the research they’ve done so far? It doesn’t look like it. They could improve the question by including what they tried and the resources they explored.</p>
+<p>The questioner did an excellent job of introducing the question and including code that shows what they are trying to do. In this case, they did not need to include experience vs. expected behavior; they just needed to have the expected behavior. By clearly stating what the desired result was, it helped the person answering to respond appropriately.</p>
+<p>The code they included is a minimal and complete example, allowing someone to reproduce the problem quickly. The questioner left out irrelevant details and code that would’ve distracted from the primary question. They also included an example of what the desired output would be, which is helpful.</p>
+<p>It appears the questioner proofread their question beforehand as it does not contain any glaring spelling, grammar, or formatting problems. However, we could critique this example for including a redundant sentence at the end. Instead of including that sentence, they might have rephrased the first sentence of the question to be more precise.</p>
+<h3 id="challenge">Challenge <a id="challenge"></a></h3>
+<ol type="1">
+<li>Choose a real-world example from a recent problem/challenge. Use the guidelines and process outlined above to ask for help in your cohort-specific help channel.</li>
+<li>Identify an unanswered question in your cohort-specific help channel. Do your best to provide a helpful response to that question.</li>
+<li>Find an example of a <strong>bad</strong> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining <em>why</em> you believe it is a <strong>bad</strong> question.</li>
+<li>Find an example of a <strong>good</strong> question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining <em>why</em> you believe it is a <strong>good</strong> question.</li>
+</ol>
+<h3 id="additional-resources">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://stackoverflow.com/help/how-to-ask">Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)</a></li>
+<li><a href="https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/">Writing the Perfect Question (Links to an external site.)</a></li>
+<li><a href="http://catb.org/esr/faqs/smart-questions.html">How to Ask Questions the Smart Way (Links to an external site.)</a></li>
+<li><a href="https://ericlippert.com/2014/03/05/how-to-debug-small-programs/">How to Debug Small Programs (Links to an external site.)</a></li>
+</ul>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%285%29.png" /></p>
+<h2 id="objective-04---use-a-print-statement">Objective 04 - Use a print statement</h2>
+<h3 id="overview">Overview <a id="overview"></a></h3>
+<p>Learning to use the <code>print</code> function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some <em>output</em> from your program. The <code>print</code> function is how you output the value of an object to the screen. You will learn how to use the <code>print</code> function in Python.</p>
+<h3 id="follow-along-1">Follow Along <a id="follow-along"></a></h3>
+<h4 id="using-print-with-different-objects">Using <code>print</code> with different objects <a id="using-print-with-different-objects"></a></h4>
+<p>Let’s start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the <code>print</code> function.</p>
+<p>Using <code>print</code> with no arguments:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice the empty line after calling the <code>print</code> function. The default <code>end</code> value when calling print is the newline character <code>\n</code>.</p>
+<p>Using <code>print</code> with a string literal:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;School is awesome!&quot;</span>)</a>
+<a class="sourceLine" id="cb2-2" title="2">School <span class="kw">is</span> awesome<span class="op">!</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice how calling <code>print</code> with the string literal printed the exact string we passed in onto the screen.</p>
+<p>Using <code>print</code> with a variable:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> slogan <span class="op">=</span> <span class="st">&quot;i love lamp&quot;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(slogan)</a>
+<a class="sourceLine" id="cb3-3" title="3">i love lamp</a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice how calling <code>print</code> with the <code>slogan</code> variable prints the value assigned to the <code>slogan</code> variable.</p>
+<p>Using <code>print</code> with an expression:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> superlative <span class="op">=</span> <span class="st">&quot;wonderful&quot;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="op">&gt;&gt;&gt;</span> school <span class="op">=</span> <span class="st">&quot;Lambda School&quot;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(school <span class="op">+</span> <span class="st">&quot; is &quot;</span> <span class="op">+</span> superlative)</a>
+<a class="sourceLine" id="cb4-4" title="4">Lambda School <span class="kw">is</span> wonderful</a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice how the argument for the <code>print</code> function can be an expression. Once the expression is resolved to a string object, the <code>print</code> function can output it to the screen.</p>
+<p>Using <code>print</code> with other object types:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="bu">print</span>(<span class="dv">2020</span>)</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="dv">2020</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="fl">123.456</span>)</a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="fl">123.456</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="va">False</span>)</a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="va">False</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>([<span class="st">&quot;Lambda&quot;</span>, <span class="st">&quot;School&quot;</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>])</a>
+<a class="sourceLine" id="cb5-8" title="8">[<span class="st">&#39;Lambda&#39;</span>, <span class="st">&#39;School&#39;</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>((<span class="st">&quot;Lambda&quot;</span>, <span class="st">&quot;School&quot;</span>))</a>
+<a class="sourceLine" id="cb5-10" title="10">(<span class="st">&#39;Lambda&#39;</span>, <span class="st">&#39;School&#39;</span>)</a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>({<span class="st">&quot;school&quot;</span>: <span class="st">&quot;Lambda School&quot;</span>, <span class="st">&quot;year&quot;</span>: <span class="dv">2020</span>})</a>
+<a class="sourceLine" id="cb5-12" title="12">{<span class="st">&#39;school&#39;</span>: <span class="st">&#39;Lambda School&#39;</span>, <span class="st">&#39;year&#39;</span>: <span class="dv">2020</span>}</a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Any object passed as an argument into <code>print</code> will get converted into a string type before outputted to the screen.</p>
+<p>You can see how the <code>print</code> function is easy to use and how it can handle any object type that you pass into it.</p>
+<h4 id="passing-multiple-arguments-into-print">Passing multiple arguments into <code>print</code> <a id="passing-multiple-arguments-into-print"></a></h4>
+<p>Now, let’s look at how we can pass multiple arguments into the <code>print</code> function. Using <code>print</code> with multiple arguments gives you a flexible and easy way to output items to the screen.</p>
+<p>We can pass multiple objects, all of the same or different types, into <code>print</code>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Lambda School&quot;</span>, <span class="dv">2020</span>, <span class="va">True</span>)</a>
+<a class="sourceLine" id="cb6-2" title="2">Lambda School <span class="dv">2020</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice how each object we passed in was converted to a string and then output to the screen. Notice also that <code>print</code> used <code>" "</code> as the default separator value.</p>
+<p>We can change the separator value by assigning a value to the keyword argument <code>sep</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Lambda School&quot;</span>, <span class="dv">2020</span>, <span class="va">True</span>, sep<span class="op">=</span><span class="st">&quot;!!!&quot;</span>)</a>
+<a class="sourceLine" id="cb7-2" title="2">Lambda School<span class="op">!!!</span><span class="dv">2020</span><span class="op">!!!</span><span class="va">True</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Lambda School&quot;</span>, <span class="dv">2020</span>, <span class="va">True</span>, sep<span class="op">=</span><span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)</a>
+<a class="sourceLine" id="cb7-4" title="4">Lambda School   <span class="dv">2020</span>    <span class="va">True</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Lambda School&quot;</span>, <span class="dv">2020</span>, <span class="va">True</span>, sep<span class="op">=</span><span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span>)</a>
+<a class="sourceLine" id="cb7-6" title="6">Lambda School</a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="dv">2020</span></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="va">True</span></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Lambda School&quot;</span>, <span class="dv">2020</span>, <span class="va">True</span>, sep<span class="op">=</span><span class="st">&quot;&quot;</span>)</a>
+<a class="sourceLine" id="cb7-10" title="10">Lambda School2020True</a>
+<a class="sourceLine" id="cb7-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<h4 id="specifying-the-end-value-with-print">Specifying the <code>end</code> value with <code>print</code> <a id="specifying-the-end-value-with-print"></a></h4>
+<p>You can also specify the <code>end</code> value by assigning a value to the <code>end</code> keyword argument when you call the <code>print</code> function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.</p>
+<p>Here is how you can change the default <code>end</code> value (which is <code>\n</code>) when calling the <code>print</code> function.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(<span class="st">&quot;Are you a Lambda School student?&quot;</span>, end<span class="op">=</span><span class="st">&quot; (Y or N)&quot;</span>)</a>
+<a class="sourceLine" id="cb8-2" title="2">Are you a Lambda School student? (Y <span class="kw">or</span> N)<span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Customizing the <code>end</code> value when calling the <code>print</code> function can be useful and necessary in some circumstances.</p>
+<p>You have now learned the basics of using the <code>print</code> function in Python. You learned how to call the <code>print</code> function to print objects of different types. You now know how to use <code>print</code> with multiple positional arguments. In certain necessary situations, you also know how to change the default <code>end</code> value when calling the <code>print</code> function.</p>
+<p>Now, get some practice using the <code>print</code> function by completing the challenge below.</p>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-print-3">@bgoonz/cs-unit-1-sprint-1-module-1-print-3</span>#main.py” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29.png" /></p>
+<h2 id="objective-05---use-white-space-to-denote-blocks">Objective 05 - Use white space to denote blocks</h2>
+<h3 id="overview-1">Overview <a id="overview"></a></h3>
+<p>Python is unique because indentation instead of some other character marks blocks of code. A block of code is a collection of statements that are grouped. The syntax for denoting blocks varies from language to language. For example, in C, blocks are delimited by curly braces (<code>{</code> and <code>}</code>). Understanding how Python uses whitespace and indentation to denote logical lines and code blocks is essential.</p>
+<h3 id="follow-along-2">Follow Along <a id="follow-along"></a></h3>
+<h4 id="whitespace-characters">Whitespace Characters <a id="whitespace-characters"></a></h4>
+<p>Whitespace is any character represented by something that appears empty (usually <code>\t</code> or <code>" "</code>). The characters that Python considers to be whitespace can be seen by printing out the value of <code>string.whitespace</code> from the <code>string</code> library.</p>
+<pre class="text"><code>&gt;&gt;&gt; import string
+&gt;&gt;&gt; string.whitespace
+&#39; \t\n\r\x0b\x0c&#39;
+&gt;&gt;&gt;</code></pre>
+<p>Notice the characters are <code>" "</code> (space), <code>\t</code> (tab), <code>\n</code> (newline), <code>\r</code> (return), <code>\x0b</code> (unicode line tabulation), and <code>\x0c</code> (unicode form feed).</p>
+<p>You’ve seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with <code>" "</code>, <code>\t</code>, and <code>\n</code>.</p>
+<h4 id="logical-lines-of-code">Logical Lines of Code <a id="logical-lines-of-code"></a></h4>
+<p>Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code’s end (a statement or a definition) is marked by a <code>\n</code>.</p>
+<pre class="text"><code>&gt;&gt;&gt; first = &quot;Lambda&quot;
+&gt;&gt;&gt; second = &quot;School&quot;
+&gt;&gt;&gt; first + second
+&#39;LambdaSchool&#39;
+&gt;&gt;&gt; first \
+... + \
+... second
+&#39;LambdaSchool&#39;
+&gt;&gt;&gt;</code></pre>
+<p>Notice how the REPL evaluates the expression <code>first + second</code> when I return on line 3. Below that, I can write one logical line of code over multiple lines by ending each line with a <code>\</code> character. That <code>\</code> character lets the Python interpreter that even though there is a newline, you don’t want it to treat it as the end of a logical line.</p>
+<p>It’s important to understand that Python assumes meaning in newline characters when trying to interpret your code.</p>
+<h4 id="code-blocks">Code Blocks <a id="code-blocks"></a></h4>
+<p>Whitespace (indentation) can denote code blocks. Python gives meaning to the amount of whitespace (indentation level) that comes before a logical line of code.</p>
+<pre class="text"><code>&gt;&gt;&gt; if True:
+... if True:
+  File &quot;&lt;stdin&gt;&quot;, line 2
+    if True:
+    ^
+IndentationError: expected an indented block
+&gt;&gt;&gt;</code></pre>
+<p>This code raises an <code>Indentation Error</code> because the Python interpreter expects to find additional whitespace inside the <code>if</code> block.</p>
+<pre class="text"><code>&gt;&gt;&gt; if True:
+...     if True:
+...         print(&quot;it worked!&quot;)
+...
+it worked!
+&gt;&gt;&gt;</code></pre>
+<p>The Python interpreter can successfully run this code because consistent whitespace (level of indentation) is used.</p>
+<pre class="text"><code>&gt;&gt;&gt; if True:
+...     if True:
+...         print(&quot;it worked!&quot;)
+  File &quot;&lt;stdin&gt;&quot;, line 3
+    print(&quot;it worked!&quot;)
+                      ^
+TabError: inconsistent use of tabs and spaces in indentation</code></pre>
+<p>Although you can’t tell in the code snippet above, for the second <code>if</code> statement, I used a <code>\t</code> to indent. But, for the indentation on <code>print("it worked!"</code>, I used eight <code>" "</code> (spaces). The mismatch of tab usage and spaces raises an error when Python tries to interpret the code.</p>
+<p>Consistent whitespace usage (indentation) is crucial to making sure that Python can interpret your code correctly.</p>
+<p>In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are <code>" "</code>, <code>\t</code>, and <code>\n</code>. The Python interpreter knows where the end of a logical line of code is because of the <code>\n</code>. The amount of whitespace (level of indentation) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.</p>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-white-space-3">@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3</span>#main.py” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%282%29.png" /></p>
+<h2 id="section">#6:</h2>
+<h3 id="overview-2">Overview <a id="overview"></a></h3>
+<p>Python is not a “statically typed” language, and every variable in Python is an object. You don’t have to declare a variable’s type.</p>
+<h3 id="follow-along-3">Follow Along <a id="follow-along"></a></h3>
+<h4 id="numbers">Numbers <a id="numbers"></a></h4>
+<p>In Python, you can have integers and floating-point numbers.</p>
+<p>You can define an integer like so:</p>
+<pre class="text"><code>my_int = 3</code></pre>
+<p>You can also cast a floating-point number to be an integer like so:</p>
+<pre class="text"><code>my_int = int(3.0)</code></pre>
+<p>To define a floating-point number, you can declare it literally or typecast it with the float constructor function:</p>
+<pre class="text"><code>my_float = 3.0
+my_float = float(3)</code></pre>
+<h4 id="strings">Strings <a id="strings"></a></h4>
+<p>You can define strings with either single or double quotes:</p>
+<pre class="text"><code>my_string = &#39;Lambda School&#39;
+my_string = &quot;Lambda School&quot;</code></pre>
+<p>It’s common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.</p>
+<pre class="text"><code>my_string = &quot;I don&#39;t have to worry about apostrophes with my double-quotes.&quot;</code></pre>
+<p>Let’s practice declaring variables to store an int, a float, and a string:</p>
+<pre class="text"><code>my_int = 2
+my_float = 5.0
+my_str = &quot;Lambda School&quot;</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3">@bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3</span>” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h3 id="overview-3">Overview <a id="overview"></a></h3>
+<p>There are a few basic operators that you should be familiar with as you start writing Python code.</p>
+<h4 id="arithmetic-operators">Arithmetic Operators <a id="arithmetic-operators"></a></h4>
+<p>You can use the addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), and division (<code>/</code>) operators with numbers in Python.</p>
+<pre class="text"><code>my_number = 2 + 2 * 8 / 5.0
+print(my_number) # 5.2</code></pre>
+<p>There is also an operator called the modulo operator (<code>%</code>). This operator returns the remainder of integer division.</p>
+<pre class="text"><code>my_remainder = 9 % 4
+print(my_remainder) # 1</code></pre>
+<p>You can use two multiplication operators to make the exponentiation operator (<code>**</code>).</p>
+<pre class="text"><code>two_squared = 2 ** 2
+print(two_squared)    # 4
+two_cubed = 2 ** 3
+print(two_cubed)      # 8</code></pre>
+<h4 id="using-operators-with-non-numbers">Using operators with non-numbers <a id="using-operators-with-non-numbers"></a></h4>
+<p>You can use the addition operator to concatenate strings and lists:</p>
+<pre class="text"><code>string_one = &quot;Hello,&quot;
+string_two = &quot; World!&quot;
+combined = string_one + string_two
+print(combined) # Hello, World!
+
+lst_one = [1,2,3]
+lst_two = [4,5,6]
+big_lst = lst_one + lst_two
+print(big_lst) # [1, 2, 3, 4, 5, 6]</code></pre>
+<p>You can also use the multiplication operator to create a new list or string that repeats the original sequence:</p>
+<pre class="text"><code>my_string = &quot;Bueller&quot;
+repeated = my_string * 3
+print(repeated) # BuellerBuellerBueller
+
+my_list = [1, 2, 3]
+repeated_list = my_list * 3
+print(repeated_list) # [1, 2, 3, 1, 2, 3, 1, 2, 3]</code></pre>
+<h3 id="follow-along-4">Follow Along <a id="follow-along"></a></h3>
+<p>Now, let’s see if we can combine all of this information in a quick demo.</p>
+<p>First, let’s create two variables, <code>a</code> and <code>b</code>, where each variable stores an instance of the <code>object</code> class.</p>
+<pre class="text"><code>a = object()
+b = object()</code></pre>
+<p>Next, let’s see if we can make two lists, one containing five instances of <code>a</code>, and the second with five instances of <code>b</code>.</p>
+<pre class="text"><code>a_list = [a] * 5
+b_list = [b] * 5</code></pre>
+<p>Then, let’s combine <code>a_list</code> and <code>b_list</code> into a <code>combined</code> list.</p>
+<pre class="text"><code>combined = a_list + b_list</code></pre>
+<p>If our code works as expected, <code>combined</code> should have a length of 10.</p>
+<pre class="text"><code>print(len(combined)) # 10</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1">@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1</span>#main.py” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h3 id="overview-4">Overview <a id="overview"></a></h3>
+<p>To format a string in Python, you use the <code>%</code> operator to format a set of stored variables in a tuple. You also include <em>argument specifiers</em> in your string with special symbols like <code>%s</code> and <code>%d</code>.</p>
+<p>For example, let’s say you want to insert a <code>name</code> variable inside a string. You would do the following:</p>
+<pre class="text"><code>name = &quot;Austen&quot;
+formatted_string = &quot;Hello, %s!&quot; % name
+print(formatted_string) # Hello, Austen!</code></pre>
+<p>If you have more than one argument specifier, you need to enclose your arguments in a tuple:</p>
+<pre class="text"><code>name = &quot;Austen&quot;
+year = 2020
+print(&quot;Hey %s! It&#39;s the year %d.&quot; % (name, year))
+# Hey Austen! It&#39;s the year 2020.</code></pre>
+<p>Any object that is not a string can also be formatted using the <code>%s</code> operator. The string which returns from the object’s <code>repr</code> method will be used in the formatted string.</p>
+<pre class="text"><code>my_list = [1,2,3]
+print(&quot;my_list: %s&quot; % my_list)
+# my_list: [1, 2, 3]</code></pre>
+<p>A few of the common argument specifiers are:</p>
+<ul>
+<li><code>%s</code> - String (or any object with a string representation)</li>
+<li><code>%d</code> - Integers</li>
+<li><code>%f</code> - Floating point numbers</li>
+<li><code>%.&lt;number of digits&gt;f</code> - Floating point numbers with a fixed amount of digits to the dot’s right.</li>
+<li><code>%x/%X</code> - Integers in hexadecimal (lowercase/uppercase)</li>
+</ul>
+<h3 id="follow-along-5">Follow Along <a id="follow-along"></a></h3>
+<p>Let’s see if we can use all of this information to practice formatting a few strings.</p>
+<p>Let’s imagine that we have some data that we want to inject into a string.</p>
+<pre class="text"><code>product_name = &quot;bananas&quot;
+price = 1.23
+product_id = 123456</code></pre>
+<p>We need to print a formatted string using argument specifiers and a tuple that contains our data:</p>
+<pre class="text"><code>print(&quot;%s (id: %d) are currently $%.2f.&quot; % (product_name, product_id, price))
+# bananas (id: 123456) are currently $1.23.</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2">@bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2</span>” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<p>8</p>
+<h3 id="overview-5">Overview <a id="overview"></a></h3>
+<p>You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.</p>
+<p>There are lots of ways you can interact with strings in Python.</p>
+<h3 id="follow-along-6">Follow Along <a id="follow-along"></a></h3>
+<p>The <code>len()</code> method prints out the number of characters in the string.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(len(my_string)) # 12</code></pre>
+<p>The <code>index()</code> method prints out the index of the substring argument’s first occurrence.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.index(&quot;o&quot;))   # 4
+print(my_string.index(&quot;, w&quot;)) # 5</code></pre>
+<p>The <code>count()</code> method returns the number of occurrences of the substring argument.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.count(&quot;o&quot;))  # 2
+print(my_string.count(&quot;ll&quot;)) # 1</code></pre>
+<p>To slice a string, you can use this syntax: <code>[start:stop:step]</code>. To reverse the string’s order, you can set the step value to be <code>-1</code>.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string[3:7])   # lo,
+print(my_string[3:7:2]) # l,
+print(my_string[::-1])  # !dlrow ,olleH</code></pre>
+<p>You can convert a string to uppercase or lowercase with the <code>upper()</code> and <code>lower()</code> methods.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.upper()) # HELLO, WORLD!
+print(my_string.lower()) # hello, world!</code></pre>
+<p>You can determine if a string starts with or ends with a specific sequence with the <code>startswith()</code> and <code>endswith()</code> methods.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.startswith(&quot;Hello&quot;)) # True
+print(my_string.endswith(&quot;globe!&quot;))  # False</code></pre>
+<p>The <code>split()</code> method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.split())    # [&#39;Hello,&#39;, &#39;world!&#39;]
+print(my_string.split(&quot;,&quot;)) # [&#39;Hello&#39;, &#39; world!&#39;]
+print(my_string.split(&quot;l&quot;)) # [&#39;He&#39;, &#39;&#39;, &#39;o, wor&#39;, &#39;d!&#39;]</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2">@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2</span>” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-09---perform-basic-string-operations">Objective 09 - Perform basic string operations</h2>
+<h3 id="overview-6">Overview <a id="overview"></a></h3>
+<p>You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.</p>
+<p>There are lots of ways you can interact with strings in Python.</p>
+<h3 id="follow-along-7">Follow Along <a id="follow-along"></a></h3>
+<p>The <code>len()</code> method prints out the number of characters in the string.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(len(my_string)) # 12</code></pre>
+<p>The <code>index()</code> method prints out the index of the substring argument’s first occurrence.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.index(&quot;o&quot;))   # 4
+print(my_string.index(&quot;, w&quot;)) # 5</code></pre>
+<p>The <code>count()</code> method returns the number of occurrences of the substring argument.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.count(&quot;o&quot;))  # 2
+print(my_string.count(&quot;ll&quot;)) # 1</code></pre>
+<p>To slice a string, you can use this syntax: <code>[start:stop:step]</code>. To reverse the string’s order, you can set the step value to be <code>-1</code>.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string[3:7])   # lo,
+print(my_string[3:7:2]) # l,
+print(my_string[::-1])  # !dlrow ,olleH</code></pre>
+<p>You can convert a string to uppercase or lowercase with the <code>upper()</code> and <code>lower()</code> methods.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.upper()) # HELLO, WORLD!
+print(my_string.lower()) # hello, world!</code></pre>
+<p>You can determine if a string starts with or ends with a specific sequence with the <code>startswith()</code> and <code>endswith()</code> methods.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.startswith(&quot;Hello&quot;)) # True
+print(my_string.endswith(&quot;globe!&quot;))  # False</code></pre>
+<p>The <code>split()</code> method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.</p>
+<pre class="text"><code>my_string = &quot;Hello, world!&quot;
+print(my_string.split())    # [&#39;Hello,&#39;, &#39;world!&#39;]
+print(my_string.split(&quot;,&quot;)) # [&#39;Hello&#39;, &#39; world!&#39;]
+print(my_string.split(&quot;l&quot;)) # [&#39;He&#39;, &#39;&#39;, &#39;o, wor&#39;, &#39;d!&#39;]
+</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-3">@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-3</span>” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h3 id="overview-7">Overview <a id="overview"></a></h3>
+<p>Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program’s flow. Python’s boolean values are written as <code>True</code> and <code>False</code> (make sure you capitalize the first character).</p>
+<h3 id="follow-along-8">Follow Along <a id="follow-along"></a></h3>
+<p>To compare the value of two expressions for equality, you use the <code>==</code> operator. You can also use <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code> (less than or equal), <code>&gt;=</code> (greater than or equal), and <code>!=</code> (not equal).</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1">x <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="bu">print</span>(x <span class="op">==</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb48-3" title="3"><span class="bu">print</span>(x <span class="op">==</span> <span class="dv">5</span>)  <span class="co"># False</span></a>
+<a class="sourceLine" id="cb48-4" title="4"><span class="bu">print</span>(x <span class="op">&lt;</span> <span class="dv">15</span>)  <span class="co"># True</span></a>
+<a class="sourceLine" id="cb48-5" title="5"><span class="bu">print</span>(x <span class="op">&gt;</span> <span class="dv">15</span>)  <span class="co"># False</span></a>
+<a class="sourceLine" id="cb48-6" title="6"><span class="bu">print</span>(x <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb48-7" title="7"><span class="bu">print</span>(x <span class="op">&gt;=</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb48-8" title="8"><span class="bu">print</span>(x <span class="op">!=</span> <span class="dv">20</span>) <span class="co"># True</span></a></code></pre></div>
+<p>You build up more complex boolean expressions by using the <code>and</code> and <code>or</code> operators.</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1">name <span class="op">=</span> <span class="st">&quot;Elon&quot;</span></a>
+<a class="sourceLine" id="cb49-2" title="2">age <span class="op">=</span> <span class="dv">49</span></a>
+<a class="sourceLine" id="cb49-3" title="3"><span class="cf">if</span> name <span class="op">==</span> <span class="st">&quot;Elon&quot;</span> <span class="kw">and</span> age <span class="op">==</span> <span class="dv">49</span>:</a>
+<a class="sourceLine" id="cb49-4" title="4">    <span class="bu">print</span>(<span class="st">&quot;You are a 49 year old person named Elon.&quot;</span>)</a>
+<a class="sourceLine" id="cb49-5" title="5"></a>
+<a class="sourceLine" id="cb49-6" title="6"><span class="cf">if</span> name <span class="op">==</span> <span class="st">&quot;Elon&quot;</span> <span class="kw">or</span> name <span class="op">==</span> <span class="st">&quot;Bill&quot;</span>:</a>
+<a class="sourceLine" id="cb49-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;Your name is either Elon or Bill.&quot;</span>)</a></code></pre></div>
+<p>Any time you have an iterable object (like a list), you can check if a specific item exists inside that iterable by using the <code>in</code> operator.</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1">years <span class="op">=</span> [<span class="dv">2018</span>, <span class="dv">2019</span>, <span class="dv">2020</span>, <span class="dv">2021</span>]</a>
+<a class="sourceLine" id="cb50-2" title="2">year <span class="op">=</span> <span class="dv">2020</span></a>
+<a class="sourceLine" id="cb50-3" title="3"></a>
+<a class="sourceLine" id="cb50-4" title="4"><span class="cf">if</span> year <span class="kw">in</span> years:</a>
+<a class="sourceLine" id="cb50-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%s</span><span class="st"> is in the years collection&quot;</span> <span class="op">%</span> year)</a>
+<a class="sourceLine" id="cb50-6" title="6"></a>
+<a class="sourceLine" id="cb50-7" title="7"><span class="co"># 2020 is in the years collection</span></a></code></pre></div>
+<p>We can use the <code>if</code>, <code>elif</code>, and the <code>else</code> keywords to define a series of code blocks that will execute conditionally.</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1">first_statement <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb51-2" title="2">second_statement <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb51-3" title="3"></a>
+<a class="sourceLine" id="cb51-4" title="4"><span class="cf">if</span> first_statement:</a>
+<a class="sourceLine" id="cb51-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;The first statement is true&quot;</span>)</a>
+<a class="sourceLine" id="cb51-6" title="6"><span class="cf">elif</span> second_statement:</a>
+<a class="sourceLine" id="cb51-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;The second statement is true&quot;</span>)</a>
+<a class="sourceLine" id="cb51-8" title="8"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb51-9" title="9">    <span class="bu">print</span>(<span class="st">&quot;Neither the first statement nor the second statement are true&quot;</span>)</a></code></pre></div>
+<p>Any object that is considered “empty” evaluates to <code>False</code>. For example, <code>""</code>, <code>[]</code>, and <code>0</code> all evaluate to <code>False</code>.</p>
+<p>If we want to determine if two objects are actually the same instance in memory, we use the <code>is</code> operator instead of the value comparison operator <code>==</code>.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1">a <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb52-2" title="2">b <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb52-3" title="3"></a>
+<a class="sourceLine" id="cb52-4" title="4"><span class="bu">print</span>(a <span class="op">==</span> b) <span class="co"># True because a and b have the same value</span></a>
+<a class="sourceLine" id="cb52-5" title="5"><span class="bu">print</span>(a <span class="kw">is</span> b) <span class="co"># False because a and b reference two different list objects</span></a>
+<a class="sourceLine" id="cb52-6" title="6"></a>
+<a class="sourceLine" id="cb52-7" title="7">x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb52-8" title="8">y <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb52-9" title="9"></a>
+<a class="sourceLine" id="cb52-10" title="10"><span class="bu">print</span>(x <span class="op">==</span> y) <span class="co"># True because x and y have the same value</span></a>
+<a class="sourceLine" id="cb52-11" title="11"><span class="bu">print</span>(x <span class="kw">is</span> y) <span class="co"># True because x and y reference the same list object</span></a></code></pre></div>
+<p>There is also the <code>not</code> operator, which inverts the boolean that follows it:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb53-1" title="1"><span class="bu">print</span>(<span class="kw">not</span> <span class="va">False</span>)    <span class="co"># True</span></a>
+<a class="sourceLine" id="cb53-2" title="2"><span class="bu">print</span>(<span class="kw">not</span> (<span class="dv">1</span> <span class="op">==</span> <span class="dv">1</span>)) <span class="co"># False because 1 == 1 is True and then is inverted by not</span></a></code></pre></div>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2">@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2</span>#main.py” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h3 id="overview-8">Overview <a id="overview"></a></h3>
+<p>You can use two types of loops in Python, a <code>for</code> loop and a <code>while</code> loop. A <code>for</code> loop iterates over a given sequence (iterator expression). A <code>while</code> loop repeats as long as a boolean context evaluates to <code>True</code>.</p>
+<p>The <code>break</code> statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the <code>break</code> statement is inside a nested loop (loop inside another loop), the <code>break</code> statement will only terminate the innermost loop.</p>
+<p>You can use the <code>continue</code> statement to skip the rest of the code inside a loop <em>for the current iteration only</em>. The loop does not terminate entirely but continues with the next iteration.</p>
+<h3 id="follow-along-9">Follow Along <a id="follow-along"></a></h3>
+<p>Here is an example of a few different ways you can use a <code>range</code> as the iterable for a <code>for</code> loop.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb54-1" title="1"><span class="co"># Prints 0, 1, 2, 3, 4</span></a>
+<a class="sourceLine" id="cb54-2" title="2"><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</a>
+<a class="sourceLine" id="cb54-3" title="3">    <span class="bu">print</span>(x):</a>
+<a class="sourceLine" id="cb54-4" title="4"></a>
+<a class="sourceLine" id="cb54-5" title="5"><span class="co"># Prints 2, 3, 4, 5, 6</span></a>
+<a class="sourceLine" id="cb54-6" title="6"><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="dv">7</span>):</a>
+<a class="sourceLine" id="cb54-7" title="7">    <span class="bu">print</span>(x)</a>
+<a class="sourceLine" id="cb54-8" title="8"></a>
+<a class="sourceLine" id="cb54-9" title="9"><span class="co"># Prints 1, 3, 5, 7</span></a>
+<a class="sourceLine" id="cb54-10" title="10"><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">8</span>, <span class="dv">2</span>):</a>
+<a class="sourceLine" id="cb54-11" title="11">    <span class="bu">print</span>(x)</a></code></pre></div>
+<p>This example shows the simple usage of a <code>while</code> loop to print the same values as the <code>for</code> loops above.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb55-1" title="1"><span class="co"># Prints 0, 1, 2, 3, 4</span></a>
+<a class="sourceLine" id="cb55-2" title="2">count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb55-3" title="3"><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">5</span>:</a>
+<a class="sourceLine" id="cb55-4" title="4">    <span class="bu">print</span>(count)</a>
+<a class="sourceLine" id="cb55-5" title="5">    count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb55-6" title="6"></a>
+<a class="sourceLine" id="cb55-7" title="7"><span class="co"># Prints 2, 3, 4, 5, 6</span></a>
+<a class="sourceLine" id="cb55-8" title="8">count <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb55-9" title="9"><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">7</span>:</a>
+<a class="sourceLine" id="cb55-10" title="10">    <span class="bu">print</span>(count)</a>
+<a class="sourceLine" id="cb55-11" title="11">    count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb55-12" title="12"></a>
+<a class="sourceLine" id="cb55-13" title="13"><span class="co"># Prints 1, 3, 5, 7</span></a>
+<a class="sourceLine" id="cb55-14" title="14">count <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb55-15" title="15"><span class="cf">while</span> count <span class="op">&lt;</span> <span class="dv">8</span>:</a>
+<a class="sourceLine" id="cb55-16" title="16">    <span class="bu">print</span>(count)</a>
+<a class="sourceLine" id="cb55-17" title="17">      count <span class="op">+=</span> <span class="dv">2</span></a></code></pre></div>
+<p>You can use a <code>break</code> statement to exit a <code>for</code> loop or a <code>while</code> loop.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb56-1" title="1"><span class="co"># Prints 0, 1, 2, 3, 4</span></a>
+<a class="sourceLine" id="cb56-2" title="2">count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb56-3" title="3"><span class="cf">while</span> <span class="va">True</span>:</a>
+<a class="sourceLine" id="cb56-4" title="4">    <span class="bu">print</span>(count)</a>
+<a class="sourceLine" id="cb56-5" title="5">    count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb56-6" title="6">    <span class="cf">if</span> count <span class="op">&gt;=</span> <span class="dv">5</span>:</a>
+<a class="sourceLine" id="cb56-7" title="7">        <span class="cf">break</span></a></code></pre></div>
+<p>You can also use a <code>continue</code> statement to skip the current block but not exit the loop entirely.</p>
+<pre class="text"><code># Prints 1, 3, 5, 7
+for x in range(8):
+    # if x is even, skip this block and do not print
+    if x % 2 == 0:
+        continue
+    print(x)</code></pre>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-loops-2">@bgoonz/cs-unit-1-sprint-1-module-1-loops-2</span>#main.py” %}</p>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-12---create-user-defined-functions-and-call-them">Objective 12 - Create user-defined functions and call them</h2>
+<p>To make our code more readable and DRY (Don’t Repeat Yourself), we often want to encapsulate code inside a callable function.</p>
+<p>To define a function in Python, we follow this syntax:</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb58-1" title="1"><span class="kw">def</span> function_name(argument_1, argument_2, etc.):</a>
+<a class="sourceLine" id="cb58-2" title="2">    <span class="co"># function line 1</span></a>
+<a class="sourceLine" id="cb58-3" title="3">    <span class="co"># function line 2</span></a>
+<a class="sourceLine" id="cb58-4" title="4">    <span class="co"># etc.</span></a></code></pre></div>
+<h3 id="follow-along-10">Follow Along <a id="follow-along"></a></h3>
+<p>Let’s define a greeting function that allows us to specify a name and a specific greeting.</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb59-1" title="1"><span class="kw">def</span> greet(name, greeting):</a>
+<a class="sourceLine" id="cb59-2" title="2">    <span class="bu">print</span>(<span class="st">&quot;Hello, </span><span class="sc">%s</span><span class="st">, </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (name, greeting))</a></code></pre></div>
+<p>Now, we can call our <code>greet</code> function and pass in the data that we want.</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb60-1" title="1">greet(<span class="st">&quot;Austen&quot;</span>, <span class="st">&quot;I hope you are having an excellent day!&quot;</span>)</a>
+<a class="sourceLine" id="cb60-2" title="2"><span class="co"># Hello, Austen, I hope you are having an excellent day!</span></a></code></pre></div>
+<p>If we want to define a function that returns a value to the caller, we use the <code>return</code> keyword.</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb61-1" title="1"><span class="kw">def</span> double(x):</a>
+<a class="sourceLine" id="cb61-2" title="2">    <span class="cf">return</span> x <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb61-3" title="3"></a>
+<a class="sourceLine" id="cb61-4" title="4">eight <span class="op">=</span> double(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb61-5" title="5"><span class="bu">print</span>(eight)</a>
+<a class="sourceLine" id="cb61-6" title="6"><span class="co"># 8</span></a></code></pre></div>
+<p><img src="../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-loops-3">@bgoonz/cs-unit-1-sprint-1-module-1-loops-3</span>#main.py” %}</p>
+<p>{% embed url=“https://gist.github.com/bgoonz/4f5c0b5fe80a84421ff9a5a66dce29da” %}</p>
+<h3 id="overview-9">Overview <a id="overview"></a></h3>
+<p>Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program’s flow. Python’s boolean values are written as <code>True</code> and <code>False</code> (make sure you capitalize the first character).</p>
+<h3 id="follow-along-11">Follow Along <a id="follow-along"></a></h3>
+<p>To compare the value of two expressions for equality, you use the <code>==</code> operator. You can also use <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code> (less than or equal), <code>&gt;=</code> (greater than or equal), and <code>!=</code> (not equal).</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb62-1" title="1">x <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb62-2" title="2"><span class="bu">print</span>(x <span class="op">==</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb62-3" title="3"><span class="bu">print</span>(x <span class="op">==</span> <span class="dv">5</span>)  <span class="co"># False</span></a>
+<a class="sourceLine" id="cb62-4" title="4"><span class="bu">print</span>(x <span class="op">&lt;</span> <span class="dv">15</span>)  <span class="co"># True</span></a>
+<a class="sourceLine" id="cb62-5" title="5"><span class="bu">print</span>(x <span class="op">&gt;</span> <span class="dv">15</span>)  <span class="co"># False</span></a>
+<a class="sourceLine" id="cb62-6" title="6"><span class="bu">print</span>(x <span class="op">&lt;=</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb62-7" title="7"><span class="bu">print</span>(x <span class="op">&gt;=</span> <span class="dv">10</span>) <span class="co"># True</span></a>
+<a class="sourceLine" id="cb62-8" title="8"><span class="bu">print</span>(x <span class="op">!=</span> <span class="dv">20</span>) <span class="co"># True</span></a></code></pre></div>
+<p>You build up more complex boolean expressions by using the <code>and</code> and <code>or</code> operators.</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb63-1" title="1">name <span class="op">=</span> <span class="st">&quot;Elon&quot;</span></a>
+<a class="sourceLine" id="cb63-2" title="2">age <span class="op">=</span> <span class="dv">49</span></a>
+<a class="sourceLine" id="cb63-3" title="3"><span class="cf">if</span> name <span class="op">==</span> <span class="st">&quot;Elon&quot;</span> <span class="kw">and</span> age <span class="op">==</span> <span class="dv">49</span>:</a>
+<a class="sourceLine" id="cb63-4" title="4">    <span class="bu">print</span>(<span class="st">&quot;You are a 49 year old person named Elon.&quot;</span>)</a>
+<a class="sourceLine" id="cb63-5" title="5"></a>
+<a class="sourceLine" id="cb63-6" title="6"><span class="cf">if</span> name <span class="op">==</span> <span class="st">&quot;Elon&quot;</span> <span class="kw">or</span> name <span class="op">==</span> <span class="st">&quot;Bill&quot;</span>:</a>
+<a class="sourceLine" id="cb63-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;Your name is either Elon or Bill.&quot;</span>)</a></code></pre></div>
+<p>Any time you have an iterable object (like a list), you can check if a specific item exists inside that iterable by using the <code>in</code> operator.</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb64-1" title="1">years <span class="op">=</span> [<span class="dv">2018</span>, <span class="dv">2019</span>, <span class="dv">2020</span>, <span class="dv">2021</span>]</a>
+<a class="sourceLine" id="cb64-2" title="2">year <span class="op">=</span> <span class="dv">2020</span></a>
+<a class="sourceLine" id="cb64-3" title="3"></a>
+<a class="sourceLine" id="cb64-4" title="4"><span class="cf">if</span> year <span class="kw">in</span> years:</a>
+<a class="sourceLine" id="cb64-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%s</span><span class="st"> is in the years collection&quot;</span> <span class="op">%</span> year)</a>
+<a class="sourceLine" id="cb64-6" title="6"></a>
+<a class="sourceLine" id="cb64-7" title="7"><span class="co"># 2020 is in the years collection</span></a></code></pre></div>
+<p>We can use the <code>if</code>, <code>elif</code>, and the <code>else</code> keywords to define a series of code blocks that will execute conditionally.</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb65-1" title="1">first_statement <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb65-2" title="2">second_statement <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb65-3" title="3"></a>
+<a class="sourceLine" id="cb65-4" title="4"><span class="cf">if</span> first_statement:</a>
+<a class="sourceLine" id="cb65-5" title="5">    <span class="bu">print</span>(<span class="st">&quot;The first statement is true&quot;</span>)</a>
+<a class="sourceLine" id="cb65-6" title="6"><span class="cf">elif</span> second_statement:</a>
+<a class="sourceLine" id="cb65-7" title="7">    <span class="bu">print</span>(<span class="st">&quot;The second statement is true&quot;</span>)</a>
+<a class="sourceLine" id="cb65-8" title="8"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb65-9" title="9">    <span class="bu">print</span>(<span class="st">&quot;Neither the first statement nor the second statement are true&quot;</span>)</a></code></pre></div>
+<p>Any object that is considered “empty” evaluates to <code>False</code>. For example, <code>""</code>, <code>[]</code>, and <code>0</code> all evaluate to <code>False</code>.</p>
+<p>If we want to determine if two objects are actually the same instance in memory, we use the <code>is</code> operator instead of the value comparison operator <code>==</code>.</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb66-1" title="1">a <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb66-2" title="2">b <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb66-3" title="3"></a>
+<a class="sourceLine" id="cb66-4" title="4"><span class="bu">print</span>(a <span class="op">==</span> b) <span class="co"># True because a and b have the same value</span></a>
+<a class="sourceLine" id="cb66-5" title="5"><span class="bu">print</span>(a <span class="kw">is</span> b) <span class="co"># False because a and b reference two different list objects</span></a>
+<a class="sourceLine" id="cb66-6" title="6"></a>
+<a class="sourceLine" id="cb66-7" title="7">x <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb66-8" title="8">y <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb66-9" title="9"></a>
+<a class="sourceLine" id="cb66-10" title="10"><span class="bu">print</span>(x <span class="op">==</span> y) <span class="co"># True because x and y have the same value</span></a>
+<a class="sourceLine" id="cb66-11" title="11"><span class="bu">print</span>(x <span class="kw">is</span> y) <span class="co"># True because x and y reference the same list object</span></a></code></pre></div>
+<p>There is also the <code>not</code> operator, which inverts the boolean that follows it:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb67-1" title="1"><span class="bu">print</span>(<span class="kw">not</span> <span class="va">False</span>)    <span class="co"># True</span></a>
+<a class="sourceLine" id="cb67-2" title="2"><span class="bu">print</span>(<span class="kw">not</span> (<span class="dv">1</span> <span class="op">==</span> <span class="dv">1</span>)) <span class="co"># False because 1 == 1 is True and then is inverted by not</span></a></code></pre></div>
+</body>
+</html>

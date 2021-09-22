@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>helpful-resource</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="helpful-resource">Helpful Resource</h1>
+<h4 id="sorting-a-linked-list-using-bubble-sort">Sorting a Linked List using Bubble Sort <a id="sortingalinkedlistusingbubblesort"></a></h4>
+<p>There are two ways to sort a linked list using <a href="https://en.wikipedia.org/wiki/Bubble_sort">bubble sort</a>:</p>
+<ol type="1">
+<li>Exchanging data between nodes</li>
+<li>Modifying the links between nodes</li>
+</ol>
+<p>In this section, we will see how both these approaches work. We will use the bubble sort algorithm to first sort the linked list by changing the data, and then we will see how we can use bubble sort to change the links in order to sort the linked list.</p>
+<p><strong>Sorting Linked List by Exchanging Data</strong></p>
+<p>To sort a linked list by exchanging data, we need to declare three variables <code>p</code>, <code>q</code>, and <code>end</code>.</p>
+<p>The variable <code>p</code> will be initialized with the start node, while <code>end</code> will be set to <code>None</code>.</p>
+<p>It is important to remember that to sort the list with <code>n</code> elements using bubble sort, you need <code>n-1</code> iterations.</p>
+<p>To implement bubble sort, we need two while loops. The outer while loop executes until the value of variable <code>end</code> is equal to the <code>self.start_node</code>.</p>
+<p>The inner while loop executes until <code>p</code> becomes equal to the <code>end</code> variable. Inside the outer while loop, the value of <code>p</code> will be set to <code>self.start_node</code> which is the first node. Inside the inner while loop, the value of <code>q</code> will be set to <code>p.link</code> which is actually the node next to <code>q</code>. Then the values of <code>p</code> and <code>q</code> will be compared if <code>p</code> is greater than <code>q</code> the values of both the variables will be swapped and then <code>p</code> will point to <code>p.ref</code>, which is the next node. Finally, the <code>end</code> will be assigned the value of <code>p</code>. This process continues until the linked list is sorted.</p>
+<p>Let’s understand this process with the help of an example. Suppose we have the following list:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">9</span></a></code></pre></div>
+<p>Let’s implement our algorithm to sort the list. We’ll see what will happen during each iteration. The purpose of the bubble sort is that during each iteration, the largest value should be pushed to the end, hence at the end of all iterations, the list will automatically be sorted.</p>
+<p>Before the loop executes, the value of <code>end</code> is set to <code>None</code>.</p>
+<p>In the first iteration, <code>p</code> will be set to 8, and <code>q</code> will be set to <code>7</code>. Since <code>p</code> is greater than <code>q</code>, the values will be swapped and <code>p</code> will become <code>p.ref</code>. At this point of time the linked list will look like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">9</span></a></code></pre></div>
+<p>Since at this point of time, <code>p</code> is not equal to <code>end</code>, the loop will continue and now <code>p</code> will become 8 and <code>q</code> will become 1. Since again <code>p</code> is greater than <code>q</code>, the values will be swapped again and <code>p</code> will again become <code>p.ref</code>. The list will look like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="dv">7</span>,<span class="dv">1</span>,<span class="dv">8</span>,<span class="dv">6</span>,<span class="dv">9</span></a></code></pre></div>
+<p>Here again, <code>p</code> is not equal to <code>end</code>, the loop will continue and now <code>p</code> will become 8 and <code>q</code> will become 6. Since again <code>p</code> is greater than <code>q</code>, the values will be swapped again and <code>p</code> will again become <code>p.ref</code>. The list will look like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="dv">7</span>,<span class="dv">1</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">9</span></a></code></pre></div>
+<p>Again <code>p</code> is not equal to <code>end</code>, the loop will continue and now <code>p</code> will become 8 and <code>q</code> will become 9. Here since <code>p</code> is not greater than <code>q</code>, the values will not be swapped and <code>p</code> will become <code>p.ref</code>. At this point of time, the reference of <code>p</code> will point to <code>None</code>, and <code>end</code> also points to <code>None</code>. Hence the inner while loop will break and <code>end</code> will be set to <code>p</code>.</p>
+<p>In the next set of iterations, the loop will execute until 8, since 9 is already at the end. The process continues until the list is completely sorted.</p>
+<p>The Python code for sorting the linked list using bubble sort by exchanging the data is as follows:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="kw">def</span> bub_sort_datachange(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb5-2" title="2">        end <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="cf">while</span> end <span class="op">!=</span> <span class="va">self</span>.start_node:</a>
+<a class="sourceLine" id="cb5-4" title="4">            p <span class="op">=</span> <span class="va">self</span>.start_node</a>
+<a class="sourceLine" id="cb5-5" title="5">            <span class="cf">while</span> p.ref <span class="op">!=</span> end:</a>
+<a class="sourceLine" id="cb5-6" title="6">                q <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb5-7" title="7">                <span class="cf">if</span> p.item <span class="op">&gt;</span> q.item:</a>
+<a class="sourceLine" id="cb5-8" title="8">                    p.item, q.item <span class="op">=</span> q.item, p.item</a>
+<a class="sourceLine" id="cb5-9" title="9">                p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb5-10" title="10">            end <span class="op">=</span> p</a></code></pre></div>
+<p>Add the <code>bub_sort_dataexchange()</code> method to the <code>LinkedList</code> class that you created in the last article.</p>
+<p>Once you add the method to the linked list, create any set of nodes using the <code>make_new_list()</code> function and then use the <code>bub_sort_dataexchange()</code> to sort the list. You should see the sorted list when you execute the <code>traverse_list()</code> function.</p>
+<p><strong>Sorting Linked List by Modifying Links</strong></p>
+<p>Bubble sort can also be used to sort a linked list by modifying the links instead of changing data. The process remains quite similar to sorting the list by exchanging data, however, in this case, we have an additional variable <code>r</code> that will always correspond to the node previous than the <code>p</code> node.</p>
+<p>Let’s take a simple example of how we will swap two nodes by modifying links. Suppose we have a linked list with the following items:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="dv">10</span>,<span class="dv">45</span>,<span class="dv">65</span>,<span class="dv">35</span>,<span class="dv">1</span></a></code></pre></div>
+<p>And we want to swap 65 and 35. At this point in time <code>p</code> corresponds to node 65, and <code>q</code> corresponds to node 35. The variable <code>r</code> will correspond to node 45 (previous to node <code>p</code>). Now if the node <code>p</code> is greater than node <code>q</code>, which is the case here, the <code>p.ref</code> will be set to <code>q.ref</code> and <code>q.ref</code> will be set to <code>p</code>. Similarly, <code>r.ref</code> will be set to <code>q</code>. This will swap nodes 65 and 35.</p>
+<p>The following method implements the bubble sorting for the linked list by modifying links:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">def</span> bub_sort_linkchange(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-2" title="2">        end <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-3" title="3">        <span class="cf">while</span> end <span class="op">!=</span> <span class="va">self</span>.start_node:</a>
+<a class="sourceLine" id="cb7-4" title="4">            r <span class="op">=</span> p <span class="op">=</span> <span class="va">self</span>.start_node</a>
+<a class="sourceLine" id="cb7-5" title="5">            <span class="cf">while</span> p.ref <span class="op">!=</span> end:</a>
+<a class="sourceLine" id="cb7-6" title="6">                q <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb7-7" title="7">                <span class="cf">if</span> p.item <span class="op">&gt;</span> q.item:</a>
+<a class="sourceLine" id="cb7-8" title="8">                    p.ref <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb7-9" title="9">                    q.ref <span class="op">=</span> p</a>
+<a class="sourceLine" id="cb7-10" title="10">                    <span class="cf">if</span> p <span class="op">!=</span> <span class="va">self</span>.start_node:</a>
+<a class="sourceLine" id="cb7-11" title="11">                        r.ref <span class="op">=</span> q</a>
+<a class="sourceLine" id="cb7-12" title="12">                    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-13" title="13">                        <span class="va">self</span>.start_node <span class="op">=</span> q</a>
+<a class="sourceLine" id="cb7-14" title="14">                    p,q <span class="op">=</span> q,p</a>
+<a class="sourceLine" id="cb7-15" title="15">                r <span class="op">=</span> p</a>
+<a class="sourceLine" id="cb7-16" title="16">                p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb7-17" title="17">            end <span class="op">=</span> p</a></code></pre></div>
+<p>Add the <code>bub_sort_linkchange()</code> method to the <code>LinkedList</code> class that you created in the last article.</p>
+<p>Once you add the method to the linked list, create any set of nodes using the <code>make_new_list()</code> function and then use the <code>bub_sort_linkchange()</code> to sort the list. You should see the sorted list when you execute the <code>traverse_list()</code> function.</p>
+<h4 id="merging-sorted-linked-list">Merging Sorted Linked List <a id="mergingsortedlinkedlist"></a></h4>
+<p>In this section we will see how we can merge two sorted linked lists in a manner that the resulting linked list is also sorted. There are two approaches to achieve this. We can create a new linked list that contains individually sorted lists or we can simply change links of the two linked list to join the two sorted linked list. In the second case, we do not have to create a new linked list.</p>
+<p>Let’s first see how we can merge two linked lists by creating a new list.</p>
+<p><strong>Merging Sorted Linked Lists by Creating a New List</strong></p>
+<p>Let’s first dry run the algorithm to see how we can merge two sorted linked list with the help of a new list.</p>
+<p>Suppose we have the following two sorted linked lists:</p>
+<p><strong>list1:</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="dv">10</span>,<span class="dv">45</span>,<span class="dv">65</span>,</a></code></pre></div>
+<p><strong>list2:</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="dv">5</span>,<span class="dv">15</span>,<span class="dv">35</span>,<span class="dv">68</span></a></code></pre></div>
+<p>These are the two lists we want to merge. The algorithm is straight forward. All we will need is three variables, <code>p</code>, <code>q</code>, and <code>em</code>, and an empty list <code>newlist</code>.</p>
+<p>At the beginning of the algorithm, <code>p</code> will point to the first element of the <code>list1</code> whereas <code>q</code> will point to the first element of the <code>list2</code>. The variable <code>em</code> will be empty. At the start of the algorithm, we will have the following values:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">p <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb10-2" title="2">q <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb10-3" title="3">em <span class="op">=</span> none</a>
+<a class="sourceLine" id="cb10-4" title="4">newlist <span class="op">=</span> none</a></code></pre></div>
+<p>Next, we will compare the first element of the <code>list1</code> with the first element of <code>list2</code>, in other words, we will compare the values of <code>p</code> and <code>q</code> and the smaller value will be stored in the variable <code>em</code> which will become the first node of the new list. The value of <code>em</code> will be added to the end of the <code>newlist</code>.</p>
+<p>After the first comparison we will have the following values:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">p <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb11-2" title="2">q <span class="op">=</span> <span class="dv">15</span></a>
+<a class="sourceLine" id="cb11-3" title="3">em <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb11-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span></a></code></pre></div>
+<p>Since <code>q</code> was less than <code>p</code>, therefore, we store the value of <code>q</code> in <code>em</code> moved ‘q’ one index to the right. In the second pass, we will have the following values:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb12-2" title="2">q <span class="op">=</span> <span class="dv">15</span></a>
+<a class="sourceLine" id="cb12-3" title="3">em <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb12-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span></a></code></pre></div>
+<p>Here since <code>p</code> was smaller, we add the value of <code>p</code> to <code>newlist</code>, and set <code>em</code> to <code>p</code> and then moved <code>p</code> one index to the right. In the next iteration we have:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb13-2" title="2">q <span class="op">=</span> <span class="dv">35</span></a>
+<a class="sourceLine" id="cb13-3" title="3">em <span class="op">=</span> <span class="dv">15</span></a>
+<a class="sourceLine" id="cb13-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span></a></code></pre></div>
+<h3 id="section"></h3>
+<p>Similarly, in the next iteration:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb14-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb14-3" title="3">em <span class="op">=</span> <span class="dv">35</span></a>
+<a class="sourceLine" id="cb14-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span></a></code></pre></div>
+<p>And in the next iteration, <code>p</code> will again be smaller than <code>q</code>, hence:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">p <span class="op">=</span> <span class="dv">65</span></a>
+<a class="sourceLine" id="cb15-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb15-3" title="3">em <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb15-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span></a></code></pre></div>
+<p>Finally,</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">p <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb16-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb16-3" title="3">em <span class="op">=</span> <span class="dv">65</span></a>
+<a class="sourceLine" id="cb16-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">65</span></a></code></pre></div>
+<p>When one of the list becomes <code>None</code>, all the elements of the second list are added at the end of the new list. Therefore, the final list will be:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">p <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb17-2" title="2">q <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb17-3" title="3">em <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb17-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">65</span>, <span class="dv">68</span></a></code></pre></div>
+<p>The Python script for merging two sorted lists is as follows:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">    <span class="kw">def</span> merge_helper(<span class="va">self</span>, list2):</a>
+<a class="sourceLine" id="cb18-2" title="2">        merged_list <span class="op">=</span> LinkedList()</a>
+<a class="sourceLine" id="cb18-3" title="3">        merged_list.start_node <span class="op">=</span> <span class="va">self</span>.merge_by_newlist(<span class="va">self</span>.start_node, list2.start_node)</a>
+<a class="sourceLine" id="cb18-4" title="4">        <span class="cf">return</span> merged_list</a>
+<a class="sourceLine" id="cb18-5" title="5"></a>
+<a class="sourceLine" id="cb18-6" title="6">    <span class="kw">def</span> merge_by_newlist(<span class="va">self</span>, p, q):</a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="cf">if</span> p.item <span class="op">&lt;=</span> q.item:</a>
+<a class="sourceLine" id="cb18-8" title="8">            startNode <span class="op">=</span> Node(p.item)</a>
+<a class="sourceLine" id="cb18-9" title="9">            p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb18-10" title="10">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb18-11" title="11">            startNode <span class="op">=</span> Node(q.item)</a>
+<a class="sourceLine" id="cb18-12" title="12">            q <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb18-13" title="13"></a>
+<a class="sourceLine" id="cb18-14" title="14">        em <span class="op">=</span> startNode</a>
+<a class="sourceLine" id="cb18-15" title="15"></a>
+<a class="sourceLine" id="cb18-16" title="16">        <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> q <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-17" title="17">            <span class="cf">if</span> p.item <span class="op">&lt;=</span> q.item:</a>
+<a class="sourceLine" id="cb18-18" title="18">                em.ref <span class="op">=</span> Node(p.item)</a>
+<a class="sourceLine" id="cb18-19" title="19">                p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb18-20" title="20">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb18-21" title="21">                em.ref <span class="op">=</span> Node(q.item)</a>
+<a class="sourceLine" id="cb18-22" title="22">                q <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb18-23" title="23">            em <span class="op">=</span> em.ref</a>
+<a class="sourceLine" id="cb18-24" title="24"></a>
+<a class="sourceLine" id="cb18-25" title="25">        <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-26" title="26">            em.ref <span class="op">=</span> Node(p.item)</a>
+<a class="sourceLine" id="cb18-27" title="27">            p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb18-28" title="28">            em <span class="op">=</span> em.ref</a>
+<a class="sourceLine" id="cb18-29" title="29"></a>
+<a class="sourceLine" id="cb18-30" title="30">        <span class="cf">while</span> q <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-31" title="31">            em.ref <span class="op">=</span> Node(q.item)</a>
+<a class="sourceLine" id="cb18-32" title="32">            q <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb18-33" title="33">            em <span class="op">=</span> em.ref</a>
+<a class="sourceLine" id="cb18-34" title="34"></a>
+<a class="sourceLine" id="cb18-35" title="35">        <span class="cf">return</span> startNode</a></code></pre></div>
+<p>In the script above we have two methods: <code>merge_helper()</code> and <code>merge_by_newlist()</code>. The first method <code>merge_helper()</code> takes a linked list as a parameter and then passes the <code>self</code> class, which is a linked list itself and the linked list passed to it as a parameter, to the <code>merge_by_newlist()</code> method.</p>
+<p>The <code>merge_by_newlist()</code> method merges the two linked by creating a new linked list and returns the start node of the new linked list. Add these two methods to the <code>LinkedList</code> class. Create two new linked lists, sort them using the <code>bub_sort_datachange()</code> or the <code>bub_sort_linkchange()</code> methods that you created in the last section and then use the <code>merge_by_newlist()</code> to see if you can merge two sorted linked lists or not.</p>
+<p><strong>Merging Sorted Linked Lists by Rearranging Links</strong></p>
+<p>In this approach, a new linked list is not used to store the merger of two sorted linked lists. Rather, the links of the two linked lists are modified in such a way that two linked lists are merged in a sorted manner.</p>
+<p>Let’s see a simple example of how we can do this. Suppose we have the same two lists <code>list1</code> and <code>list2</code>:</p>
+<p><strong>list1:</strong></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="dv">10</span>,<span class="dv">45</span>,<span class="dv">65</span>,</a></code></pre></div>
+<p><strong>list2:</strong></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="dv">5</span>,<span class="dv">15</span>,<span class="dv">35</span>,<span class="dv">68</span></a></code></pre></div>
+<p>We want to merge them in a sorted manner by rearranging the links. To do so we need variables <code>p</code>, <code>q</code> and <code>em</code>. Initially, they will have the following values:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">p <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb21-2" title="2">q <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb21-3" title="3">em <span class="op">=</span> none</a>
+<a class="sourceLine" id="cb21-4" title="4">newlist <span class="op">=</span> none</a></code></pre></div>
+<p>Next, we will compare the first element of the <code>list1</code> with the first element of <code>list2</code>, in other words, we will compare the values of <code>p</code> and <code>q</code> and the smaller value will be stored in the variable <code>em</code> which will become the first node of the new list.</p>
+<p>After the first comparison we will have the following values:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">p <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb22-2" title="2">q <span class="op">=</span> <span class="dv">15</span></a>
+<a class="sourceLine" id="cb22-3" title="3">start <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb22-4" title="4">em <span class="op">=</span> start</a></code></pre></div>
+<p>After the first iteration, since <code>q</code> is less than <code>p</code>, the start node will point towards <code>q</code> and <code>q</code> will become <code>q.ref</code>. The <code>em</code> will be equal to start. The <code>em</code> will always refer to the newly inserted node in the merged list.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb23-2" title="2">q <span class="op">=</span> <span class="dv">15</span></a>
+<a class="sourceLine" id="cb23-3" title="3">em <span class="op">=</span> <span class="dv">10</span></a></code></pre></div>
+<p>Here since <code>p</code> was smaller than the <code>q</code>, the variable <code>em</code> now points towards the original value of <code>p</code> and <code>p</code> becomes <code>p.ref</code>.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb24-2" title="2">q <span class="op">=</span> <span class="dv">35</span></a>
+<a class="sourceLine" id="cb24-3" title="3">em <span class="op">=</span> <span class="dv">15</span></a></code></pre></div>
+<p>Here since <code>q</code> was smaller than <code>p</code>, <code>em</code> points towards <code>q</code> and <code>q</code> becomes <code>q.ref</code>.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1">p <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb25-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb25-3" title="3">em <span class="op">=</span> <span class="dv">35</span></a></code></pre></div>
+<p>Similarly <code>em</code> here points towards <code>q</code>.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1">p <span class="op">=</span> <span class="dv">65</span></a>
+<a class="sourceLine" id="cb26-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb26-3" title="3">em <span class="op">=</span> <span class="dv">45</span></a>
+<a class="sourceLine" id="cb26-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span></a></code></pre></div>
+<p>And here <code>em</code> points towards becomes <code>p</code>.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1">p <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb27-2" title="2">q <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb27-3" title="3">em <span class="op">=</span> <span class="dv">65</span></a>
+<a class="sourceLine" id="cb27-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">65</span></a></code></pre></div>
+<p>When one of the lists becomes <code>None</code>, the elements from the second list are simply added at the end.</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1">p <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb28-2" title="2">q <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb28-3" title="3">em <span class="op">=</span> <span class="dv">68</span></a>
+<a class="sourceLine" id="cb28-4" title="4">newlist <span class="op">=</span> <span class="dv">5</span>, <span class="dv">10</span>, <span class="dv">15</span>, <span class="dv">35</span>, <span class="dv">45</span>, <span class="dv">65</span>, <span class="dv">68</span></a></code></pre></div>
+<p>The script that contains functions for merging two lists without creating a new list is as follows:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1">    <span class="kw">def</span> merge_helper2(<span class="va">self</span>, list2):</a>
+<a class="sourceLine" id="cb29-2" title="2">        merged_list <span class="op">=</span> LinkedList()</a>
+<a class="sourceLine" id="cb29-3" title="3">        merged_list.start_node <span class="op">=</span> <span class="va">self</span>.merge_by_linkChange(<span class="va">self</span>.start_node, list2.start_node)</a>
+<a class="sourceLine" id="cb29-4" title="4">        <span class="cf">return</span> merged_list</a>
+<a class="sourceLine" id="cb29-5" title="5"></a>
+<a class="sourceLine" id="cb29-6" title="6">    <span class="kw">def</span> merge_by_linkChange(<span class="va">self</span>, p, q):</a>
+<a class="sourceLine" id="cb29-7" title="7">        <span class="cf">if</span> p.item <span class="op">&lt;=</span> q.item:</a>
+<a class="sourceLine" id="cb29-8" title="8">            startNode <span class="op">=</span> Node(p.item)</a>
+<a class="sourceLine" id="cb29-9" title="9">            p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb29-10" title="10">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb29-11" title="11">            startNode <span class="op">=</span> Node(q.item)</a>
+<a class="sourceLine" id="cb29-12" title="12">            q <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb29-13" title="13"></a>
+<a class="sourceLine" id="cb29-14" title="14">        em <span class="op">=</span> startNode</a>
+<a class="sourceLine" id="cb29-15" title="15"></a>
+<a class="sourceLine" id="cb29-16" title="16">        <span class="cf">while</span> p <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> q <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb29-17" title="17">            <span class="cf">if</span> p.item <span class="op">&lt;=</span> q.item:</a>
+<a class="sourceLine" id="cb29-18" title="18">                em.ref <span class="op">=</span> Node(p.item)</a>
+<a class="sourceLine" id="cb29-19" title="19">                em <span class="op">=</span> em.ref</a>
+<a class="sourceLine" id="cb29-20" title="20">                p <span class="op">=</span> p.ref</a>
+<a class="sourceLine" id="cb29-21" title="21">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb29-22" title="22">                em.ref <span class="op">=</span> Node(q.item)</a>
+<a class="sourceLine" id="cb29-23" title="23">                em <span class="op">=</span> em.ref</a>
+<a class="sourceLine" id="cb29-24" title="24">                q <span class="op">=</span> q.ref</a>
+<a class="sourceLine" id="cb29-25" title="25"></a>
+<a class="sourceLine" id="cb29-26" title="26"></a>
+<a class="sourceLine" id="cb29-27" title="27">        <span class="cf">if</span> p <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb29-28" title="28">            em.ref <span class="op">=</span> q</a>
+<a class="sourceLine" id="cb29-29" title="29">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb29-30" title="30">            em.ref <span class="op">=</span> p</a>
+<a class="sourceLine" id="cb29-31" title="31"></a>
+<a class="sourceLine" id="cb29-32" title="32">        <span class="cf">return</span> startNode</a></code></pre></div>
+<p>In the script above we have two methods: <code>merge_helper2()</code> and <code>merge_by_linkChange()</code>. The first method <code>merge_helper2()</code> takes a linked list as a parameter and then passes the self class which is a linked list itself and the linked list passed to it as a parameter, to the <code>merge_by_linkChange()</code>, which merges the two linked by modifying the links and returns the start node of the merged list. Add these two methods to the <code>LinkedList</code> class. Create two new linked lists, sort them using the <code>bub_sort_datachange()</code> or the <code>bub_sort_linkchange()</code> methods that you created in the last section and then use the <code>merge_by_newlist()</code> to see if you can merge two sorted linked lists or not. Let’s see this process in action.</p>
+<p>Create a new linked list using the following script:</p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1">new_linked_list1 <span class="op">=</span> LinkedList()</a>
+<a class="sourceLine" id="cb30-2" title="2">new_linked_list1.make_new_list()</a></code></pre></div>
+<p>The script will ask you for the number of nodes to enter. Enter as many nodes as you like and then add values for each node as shown below:</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1">How many nodes do you want to create: <span class="dv">4</span></a>
+<a class="sourceLine" id="cb31-2" title="2">Enter the value <span class="cf">for</span> the node:<span class="dv">12</span></a>
+<a class="sourceLine" id="cb31-3" title="3">Enter the value <span class="cf">for</span> the node:<span class="dv">45</span></a>
+<a class="sourceLine" id="cb31-4" title="4">Enter the value <span class="cf">for</span> the node:<span class="dv">32</span></a>
+<a class="sourceLine" id="cb31-5" title="5">Enter the value <span class="cf">for</span> the node:<span class="dv">61</span></a></code></pre></div>
+<p>Next, create another linked list repeating the above process:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1">new_linked_list2 <span class="op">=</span> LinkedList()</a>
+<a class="sourceLine" id="cb32-2" title="2">new_linked_list2.make_new_list()</a></code></pre></div>
+<p>Next, add a few dummy nodes with the help of the following script:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1">How many nodes do you want to create: <span class="dv">4</span></a>
+<a class="sourceLine" id="cb33-2" title="2">Enter the value <span class="cf">for</span> the node:<span class="dv">36</span></a>
+<a class="sourceLine" id="cb33-3" title="3">Enter the value <span class="cf">for</span> the node:<span class="dv">41</span></a>
+<a class="sourceLine" id="cb33-4" title="4">Enter the value <span class="cf">for</span> the node:<span class="dv">25</span></a>
+<a class="sourceLine" id="cb33-5" title="5">Enter the value <span class="cf">for</span> the node:<span class="dv">9</span></a></code></pre></div>
+<p>The next step is to sort both the lists. Execute the following script:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1">new_linked_list1. bub_sort_datachange()</a>
+<a class="sourceLine" id="cb34-2" title="2">new_linked_list2. bub_sort_datachange()</a></code></pre></div>
+<p>Finally, the following script merges the two linked lists:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1">list3 <span class="op">=</span> new_linked_list1.merge_helper2(new_linked_list2)</a></code></pre></div>
+<p>To see if the lists have actually been merged, execute the following script:</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1">list3.traverse_list()</a></code></pre></div>
+<p>The output looks like this:</p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"><span class="dv">9</span></a>
+<a class="sourceLine" id="cb37-2" title="2"><span class="dv">12</span></a>
+<a class="sourceLine" id="cb37-3" title="3"><span class="dv">25</span></a>
+<a class="sourceLine" id="cb37-4" title="4"><span class="dv">32</span></a>
+<a class="sourceLine" id="cb37-5" title="5"><span class="dv">36</span></a>
+<a class="sourceLine" id="cb37-6" title="6"><span class="dv">41</span></a>
+<a class="sourceLine" id="cb37-7" title="7"><span class="dv">45</span></a>
+<a class="sourceLine" id="cb37-8" title="8"><span class="dv">61</span></a></code></pre></div>
+<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+<p>In this article, we continued from where we left in the <a href="https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/">previous article</a>. We saw how we can sort merge lists by changing data and then my modifying links. Finally, we also studied different ways of merging two sorted linked lists.</p>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="exotic">Exotic</h1>
+<p>{% tabs %} {% tab title=“num-class” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> math</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="im">from</span> numbers <span class="im">import</span> Rational</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">def</span> number_decorate(func):</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="kw">def</span> number_wrapper(<span class="op">*</span>args, <span class="op">**</span>kwargs):</a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="cf">return</span> Number(func(<span class="op">*</span>args, <span class="op">**</span>kwargs))</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="cf">return</span> number_wrapper</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="kw">def</span> about(number):</a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="cf">return</span> Number(<span class="bu">float</span>(number.value))</a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="kw">def</span> point(number):</a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="cf">return</span> Number(number.value <span class="op">/</span> <span class="dv">10</span> <span class="op">**</span> (<span class="bu">int</span>(math.log10(number.value)) <span class="op">+</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-17" title="17"></a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="kw">class</span> Number(Rational):</a>
+<a class="sourceLine" id="cb1-20" title="20">    names_list <span class="op">=</span> [<span class="st">&#39;ZERO&#39;</span>, <span class="st">&#39;ONE&#39;</span>, <span class="st">&#39;TWO&#39;</span>, <span class="st">&#39;THREE&#39;</span>, <span class="st">&#39;FOUR&#39;</span>, <span class="st">&#39;FIVE&#39;</span>, <span class="st">&#39;SIX&#39;</span>, <span class="st">&#39;SEVEN&#39;</span>, <span class="st">&#39;EIGHT&#39;</span>, <span class="st">&#39;NINE&#39;</span>]</a>
+<a class="sourceLine" id="cb1-21" title="21">    names <span class="op">=</span> {i: name <span class="cf">for</span> i, name <span class="kw">in</span> <span class="bu">enumerate</span>(names_list)}</a>
+<a class="sourceLine" id="cb1-22" title="22"></a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb1-24" title="24">        <span class="cf">if</span> <span class="bu">isinstance</span>(value, Number):</a>
+<a class="sourceLine" id="cb1-25" title="25">            value <span class="op">=</span> value.value</a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb1-27" title="27"></a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="kw">def</span> <span class="fu">__complex__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-29" title="29">        <span class="cf">return</span> <span class="bu">compile</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31">    <span class="kw">def</span> __bool__(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-32" title="32">        <span class="cf">return</span> <span class="bu">bool</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-33" title="33"></a>
+<a class="sourceLine" id="cb1-34" title="34">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-35" title="35">    <span class="kw">def</span> <span class="fu">__add__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-36" title="36">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">+</span> other</a>
+<a class="sourceLine" id="cb1-37" title="37"></a>
+<a class="sourceLine" id="cb1-38" title="38">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-39" title="39">    <span class="kw">def</span> <span class="fu">__radd__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-40" title="40">        <span class="cf">return</span> other <span class="op">+</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-41" title="41"></a>
+<a class="sourceLine" id="cb1-42" title="42">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-43" title="43">    <span class="kw">def</span> <span class="fu">__neg__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-44" title="44">        <span class="cf">return</span> <span class="op">-</span><span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-45" title="45"></a>
+<a class="sourceLine" id="cb1-46" title="46">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-47" title="47">    <span class="kw">def</span> <span class="fu">__pos__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-48" title="48">        <span class="cf">return</span> <span class="op">+</span><span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-49" title="49"></a>
+<a class="sourceLine" id="cb1-50" title="50">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-51" title="51">    <span class="kw">def</span> <span class="fu">__mul__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-52" title="52">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">*</span> other</a>
+<a class="sourceLine" id="cb1-53" title="53"></a>
+<a class="sourceLine" id="cb1-54" title="54">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-55" title="55">    <span class="kw">def</span> <span class="fu">__rmul__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-56" title="56">        <span class="cf">return</span> other <span class="op">*</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-57" title="57"></a>
+<a class="sourceLine" id="cb1-58" title="58">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-59" title="59">    <span class="kw">def</span> <span class="fu">__truediv__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-60" title="60">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">/</span> other</a>
+<a class="sourceLine" id="cb1-61" title="61"></a>
+<a class="sourceLine" id="cb1-62" title="62">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-63" title="63">    <span class="kw">def</span> <span class="fu">__rtruediv__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-64" title="64">        <span class="cf">return</span> other <span class="op">/</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-65" title="65"></a>
+<a class="sourceLine" id="cb1-66" title="66">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-67" title="67">    <span class="kw">def</span> <span class="fu">__pow__</span>(<span class="va">self</span>, power):</a>
+<a class="sourceLine" id="cb1-68" title="68">        <span class="cf">return</span> <span class="va">self</span>.value<span class="op">**</span>power</a>
+<a class="sourceLine" id="cb1-69" title="69"></a>
+<a class="sourceLine" id="cb1-70" title="70">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-71" title="71">    <span class="kw">def</span> <span class="fu">__rpow__</span>(<span class="va">self</span>, base):</a>
+<a class="sourceLine" id="cb1-72" title="72">        <span class="cf">return</span> base <span class="op">**</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-73" title="73"></a>
+<a class="sourceLine" id="cb1-74" title="74">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-75" title="75">    <span class="kw">def</span> <span class="fu">__abs__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-76" title="76">        <span class="cf">return</span> <span class="bu">abs</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-77" title="77"></a>
+<a class="sourceLine" id="cb1-78" title="78">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-79" title="79">    <span class="kw">def</span> conjugate(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-80" title="80">        <span class="cf">return</span> <span class="va">self</span>.value.conjugate()</a>
+<a class="sourceLine" id="cb1-81" title="81"></a>
+<a class="sourceLine" id="cb1-82" title="82">    <span class="kw">def</span> <span class="fu">__eq__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-83" title="83">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">==</span> other</a>
+<a class="sourceLine" id="cb1-84" title="84"></a>
+<a class="sourceLine" id="cb1-85" title="85">    <span class="kw">def</span> <span class="fu">__float__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-86" title="86">        <span class="cf">return</span> <span class="bu">float</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-87" title="87"></a>
+<a class="sourceLine" id="cb1-88" title="88">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-89" title="89">    <span class="kw">def</span> __trunc__(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-90" title="90">        <span class="cf">return</span> math.trunc(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-91" title="91"></a>
+<a class="sourceLine" id="cb1-92" title="92">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-93" title="93">    <span class="kw">def</span> __floor__(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-94" title="94">        <span class="cf">return</span> math.floor(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-95" title="95"></a>
+<a class="sourceLine" id="cb1-96" title="96">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-97" title="97">    <span class="kw">def</span> __ceil__(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-98" title="98">        <span class="cf">return</span> math.ceil(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-99" title="99"></a>
+<a class="sourceLine" id="cb1-100" title="100">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-101" title="101">    <span class="kw">def</span> __round__(<span class="va">self</span>, n<span class="op">=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-102" title="102">        <span class="cf">return</span> <span class="bu">round</span>(<span class="va">self</span>.value, n)</a>
+<a class="sourceLine" id="cb1-103" title="103"></a>
+<a class="sourceLine" id="cb1-104" title="104">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-105" title="105">    <span class="kw">def</span> <span class="fu">__floordiv__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-106" title="106">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">//</span> other</a>
+<a class="sourceLine" id="cb1-107" title="107"></a>
+<a class="sourceLine" id="cb1-108" title="108">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-109" title="109">    <span class="kw">def</span> <span class="fu">__rfloordiv__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-110" title="110">        <span class="cf">return</span> other <span class="op">//</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-111" title="111"></a>
+<a class="sourceLine" id="cb1-112" title="112">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-113" title="113">    <span class="kw">def</span> <span class="fu">__mod__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-114" title="114">        <span class="cf">return</span> other <span class="op">%</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-115" title="115"></a>
+<a class="sourceLine" id="cb1-116" title="116">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-117" title="117">    <span class="kw">def</span> <span class="fu">__rmod__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-118" title="118">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">%</span> other</a>
+<a class="sourceLine" id="cb1-119" title="119"></a>
+<a class="sourceLine" id="cb1-120" title="120">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-121" title="121">    <span class="kw">def</span> <span class="fu">__lt__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-122" title="122">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">&lt;</span> other</a>
+<a class="sourceLine" id="cb1-123" title="123"></a>
+<a class="sourceLine" id="cb1-124" title="124">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-125" title="125">    <span class="kw">def</span> <span class="fu">__le__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-126" title="126">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">&lt;=</span> other</a>
+<a class="sourceLine" id="cb1-127" title="127"></a>
+<a class="sourceLine" id="cb1-128" title="128">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-129" title="129">    <span class="kw">def</span> <span class="fu">__gt__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-130" title="130">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">&gt;</span> other</a>
+<a class="sourceLine" id="cb1-131" title="131"></a>
+<a class="sourceLine" id="cb1-132" title="132">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-133" title="133">    <span class="kw">def</span> <span class="fu">__ge__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-134" title="134">        <span class="cf">return</span> <span class="va">self</span>.value <span class="op">&gt;=</span> other</a>
+<a class="sourceLine" id="cb1-135" title="135"></a>
+<a class="sourceLine" id="cb1-136" title="136">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-137" title="137">    <span class="kw">def</span> numerator(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-138" title="138">        <span class="cf">return</span> <span class="va">self</span>.value.numerator</a>
+<a class="sourceLine" id="cb1-139" title="139"></a>
+<a class="sourceLine" id="cb1-140" title="140">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-141" title="141">    <span class="kw">def</span> denominator(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-142" title="142">        <span class="cf">return</span> <span class="va">self</span>.value.denominator</a>
+<a class="sourceLine" id="cb1-143" title="143"></a>
+<a class="sourceLine" id="cb1-144" title="144">    <span class="kw">def</span> <span class="fu">__int__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-145" title="145">        <span class="cf">return</span> <span class="bu">int</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-146" title="146"></a>
+<a class="sourceLine" id="cb1-147" title="147">    <span class="kw">def</span> <span class="fu">__repr__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-148" title="148">        <span class="cf">return</span> <span class="bu">repr</span>(<span class="va">self</span>.value)</a>
+<a class="sourceLine" id="cb1-149" title="149"></a>
+<a class="sourceLine" id="cb1-150" title="150">    <span class="at">@number_decorate</span></a>
+<a class="sourceLine" id="cb1-151" title="151">    <span class="kw">def</span> <span class="fu">__and__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb1-152" title="152">        <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;</span> other <span class="op">&lt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-153" title="153">            <span class="cf">return</span> <span class="va">self</span>.value <span class="op">+</span> other</a>
+<a class="sourceLine" id="cb1-154" title="154">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-155" title="155">            <span class="cf">return</span> <span class="va">self</span>.value <span class="op">*</span> <span class="dv">10</span> <span class="op">+</span> other</a>
+<a class="sourceLine" id="cb1-156" title="156"></a>
+<a class="sourceLine" id="cb1-157" title="157"></a>
+<a class="sourceLine" id="cb1-158" title="158">ZERO <span class="op">=</span> Number(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb1-159" title="159">ONE <span class="op">=</span> Number(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-160" title="160">TWO <span class="op">=</span> Number(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-161" title="161">THREE <span class="op">=</span> Number(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-162" title="162">FOUR <span class="op">=</span> Number(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb1-163" title="163">FIVE <span class="op">=</span> Number(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb1-164" title="164">SIX <span class="op">=</span> Number(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb1-165" title="165">SEVEN <span class="op">=</span> Number(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb1-166" title="166">EIGHT <span class="op">=</span> Number(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb1-167" title="167">NINE <span class="op">=</span> Number(<span class="dv">9</span>)</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Second Tab” %}</p>
+<p>{% endtab %} {% endtabs %}</p>
+<p>{% page-ref page=“../array/” %}</p>
+<p>{% page-ref page=“../binary-search-tree/” %}</p>
+<p>{% page-ref page=“../untitled-4/” %}</p>
+<p>{% page-ref page=“../array/extra-array.md” %}</p>
+<p>{% page-ref page=“../stack/” %}</p>
+<p>{% page-ref page=“../binary-tree/” %}</p>
+<p>{% page-ref page=“../untitled-6/” %}</p>
+<p>{% page-ref page=“../untitled-5/” %}</p>
+<p>{% page-ref page=“../untitled-2/” %}</p>
+<p>{% page-ref page=“../untitled-3/” %}</p>
+<p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
+<p>{% page-ref page=“../untitled-5/” %}</p>
+<p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
+<p>{% page-ref page=“../untitled-1/” %}</p>
+<p>{% page-ref page=“./” %}</p>
+<p>{% page-ref page=“../heap/” %}</p>
+</body>
+</html>

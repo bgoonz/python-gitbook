@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>untitled-1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="d3--module-03---python-iii">D3- Module 03 - Python III</h1>
+<h2 id="objective-02---perform-basic-list-operations">Objective 02 - Perform basic list operations</h2>
+<h3 id="overview">Overview <a id="overview"></a></h3>
+<p>Lists are similar to arrays. They can store any type of variable and as many variables as you want. You can iterate over lists effortlessly.</p>
+<h3 id="overview-1">Overview <a id="overview"></a></h3>
+<p>A dictionary is like a list, but instead of accessing values with an index, you access values with a “key.” A “key” can be any type of object (string, number, list, etc.). Also, unlike lists, dictionaries do not have an order.</p>
+<p>To build a list, you can do the following:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">my_list <span class="op">=</span> [] <span class="co"># empty list literal</span></a>
+<a class="sourceLine" id="cb1-2" title="2">my_list.append(<span class="dv">1</span>) <span class="co"># add 1 to end of list</span></a>
+<a class="sourceLine" id="cb1-3" title="3">my_list.append(<span class="dv">2</span>) <span class="co"># add 2 to end of list</span></a>
+<a class="sourceLine" id="cb1-4" title="4">my_list.append(<span class="dv">3</span>) <span class="co"># add 3 to end of list</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="bu">print</span>(my_list[<span class="dv">0</span>]) <span class="co"># prints 1</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="bu">print</span>(my_list[<span class="dv">1</span>]) <span class="co"># prints 2</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="bu">print</span>(my_list[<span class="dv">2</span>]) <span class="co"># prints 3</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co"># iterate over the list with for statement to print each item in my_list</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="cf">for</span> item <span class="kw">in</span> my_list:</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="bu">print</span>(item)</a></code></pre></div>
+<p>In Python, if you try to access a list index that does not exist, you get an <code>IndexError: list index out of range</code> message:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(my_list[<span class="dv">10</span>])</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="pp">IndexError</span>: <span class="bu">list</span> index out of <span class="bu">range</span></a></code></pre></div>
+<h3 id="follow-along">Follow Along <a id="follow-along"></a></h3>
+<p>Let’s make sure we can perform basic list operations.</p>
+<p>First, let’s create a <code>numbers</code> list that contains the numbers <code>1</code>, <code>2</code>, and <code>3</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">numbers <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb3-2" title="2">numbers.append(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3">numbers.append(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb3-4" title="4">numbers.append(<span class="dv">3</span>)</a></code></pre></div>
+<p>Now, let’s create a <code>strings</code> list that contains the strings <code>"Lambda"</code> and <code>"School"</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">strings <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb4-2" title="2">strings.append(<span class="st">&quot;Lambda&quot;</span>)</a>
+<a class="sourceLine" id="cb4-3" title="3">strings.append(<span class="st">&quot;School&quot;</span>)</a></code></pre></div>
+<p>Now, let’s make sure we can access items from a specific index in a list. Let’s access the 3rd item from numbers and the 2nd item from strings and print them out (don’t forget that lists are zero-indexed).</p>
+<pre class="text"><code>print(numbers[2], strings[1])</code></pre>
+<p>Last, let’s iterate through our <code>numbers</code> list to sum up all of the numbers:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="bu">sum</span> <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="cf">for</span> number <span class="kw">in</span> numbers:</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="bu">sum</span> <span class="op">+=</span> number</a></code></pre></div>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-list-operations-1">@bgoonz/cs-unit-1-sprint-1-module-1-list-operations-1</span>” %}</p>
+<h3 id="follow-along-1">Follow Along <a id="follow-along"></a></h3>
+<p>Let’s use a dictionary to create a collection that maps first names as keys (strings) to phone numbers as values.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">phonebook <span class="op">=</span> {} <span class="co"># creates an empty dictionary</span></a>
+<a class="sourceLine" id="cb7-2" title="2">phonebook[<span class="st">&quot;Abe&quot;</span>] <span class="op">=</span> <span class="dv">4569874321</span></a>
+<a class="sourceLine" id="cb7-3" title="3">phonebook[<span class="st">&quot;Bill&quot;</span>] <span class="op">=</span> <span class="dv">7659803241</span></a>
+<a class="sourceLine" id="cb7-4" title="4">phonebook[<span class="st">&quot;Barry&quot;</span>] <span class="op">=</span> <span class="dv">6573214789</span></a>
+<a class="sourceLine" id="cb7-5" title="5"></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="bu">print</span>(phonebook)</a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="co"># {&#39;Abe&#39;: 4569874321, &#39;Bill&#39;: 7659803241, &#39;Barry&#39;: 6573214789}</span></a></code></pre></div>
+<p>Instead of adding one key-value pair at a time, we can initialize the dictionary to have the same values.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">phonebook <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="st">&quot;Abe&quot;</span>: <span class="dv">4569874321</span>,</a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="st">&quot;Bill&quot;</span>: <span class="dv">7659803241</span>,</a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="st">&quot;Barry&quot;</span>: <span class="dv">6573214789</span></a>
+<a class="sourceLine" id="cb8-5" title="5">}</a>
+<a class="sourceLine" id="cb8-6" title="6"></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="bu">print</span>(phonebook)</a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="co"># {&#39;Abe&#39;: 4569874321, &#39;Bill&#39;: 7659803241, &#39;Barry&#39;: 6573214789}</span></a></code></pre></div>
+<p>We can iterate over a dictionary as we iterated over a list. We can use the <code>items()</code> method, which returns a tuple with the key and value for each item in the dictionary.</p>
+<p>Original:<a href="https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM542p?usp=sharing#scrollTo=Um92huhOx2BD">https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM542p?usp=sharing#scrollTo=Um92huhOx2BD</a></p>
+<p><a href="https://gist.github.com/bgoonz/c10af728179ff056894c6f17dfb819bc#file-ht2-ipynb">https://gist.github.com/bgoonz/c10af728179ff056894c6f17dfb819bc#file-ht2-ipynb</a></p>
+<figure>
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" /><figcaption>https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png</figcaption>
+</figure>
+<h2 id="objective-01---understand-hash-collisions-and-use-a-linked-list-for-collision-resolution-in-a-user-defined-hashtable-class">Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined HashTable class</h2>
+<h3 id="overview-2"><strong>Overview</strong></h3>
+<p>Remember when we wondered what would happen if multiple keys hashed to the same index, and we said that we would worry about it later? Whelp, it’s later 🤪.</p>
+<p>Let’s say we were given the key-value pair <code>("Ryan", 10)</code>. Our hash code then maps “Ryan” to index 3. Excellent, that works!Now let’s say after we inserted <code>("Ryan", 10)</code>, we have to insert <code>("Parth", 12)</code>. Our hash code maps “Parth” to index 3. Uh oh! Ryan is already there! What do we do?? 😱</p>
+<p>Ok, let’s stop freaking out, and let’s think about this. If we don’t do anything, the value stored at index 3 will just get overwritten. Meaning if we try to retrieve the value associated with <code>"Ryan"</code>, 12 will be returned instead of 10. That might not seem like a big deal, but what if we were returning passwords based on a user ID, and we returned someone else’s password. That would be horrible.</p>
+<p>Let’s fix this problem. The most common way to solve this is with <strong>chaining</strong>. If we see multiple values hashed to an index, we will chain them in a some data structure that can hold multiple items. In our case, we’ll use Python’s <code>list</code> type, but a more typical solution would use a linked list. We’ll cover linked lists in a future module.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif" alt="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif" /><figcaption>https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif</figcaption>
+</figure>
+<p>Ok, sounds ideal? But how does this work in code? Let’s write some of it together.</p>
+<h3 id="follow-along-2"><strong>Follow Along</strong></h3>
+<p>Below is a partially filled out hash table class where we will be using <code>HashTableEntry</code> as our chain entries.</p>
+<p>Take a look at the code below.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="co">    Hash table key/value pair to go in our collision chain</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb9-6" title="6">        <span class="va">self</span>.key <span class="op">=</span> key</a>
+<a class="sourceLine" id="cb9-7" title="7">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb9-8" title="8"></a>
+<a class="sourceLine" id="cb9-9" title="9"><span class="co"># Hash table can&#39;t have fewer than this many slots</span></a>
+<a class="sourceLine" id="cb9-10" title="10">MIN_CAPACITY <span class="op">=</span> <span class="dv">8</span></a>
+<a class="sourceLine" id="cb9-11" title="11"></a>
+<a class="sourceLine" id="cb9-12" title="12"><span class="kw">class</span> HashTable:</a>
+<a class="sourceLine" id="cb9-13" title="13">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-14" title="14"><span class="co">    A hash table with `capacity` buckets</span></a>
+<a class="sourceLine" id="cb9-15" title="15"><span class="co">    that accepts string keys</span></a>
+<a class="sourceLine" id="cb9-16" title="16"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb9-17" title="17"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-18" title="18"></a>
+<a class="sourceLine" id="cb9-19" title="19">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, capacity):</a>
+<a class="sourceLine" id="cb9-20" title="20">        <span class="va">self</span>.capacity <span class="op">=</span> capacity  <span class="co"># Number of buckets in the hash table</span></a>
+<a class="sourceLine" id="cb9-21" title="21"></a>
+<a class="sourceLine" id="cb9-22" title="22">        <span class="va">self</span>.storage <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb9-23" title="23">        <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(capacity):   <span class="co"># Initialize with empty lists</span></a>
+<a class="sourceLine" id="cb9-24" title="24">            <span class="va">self</span>.storage.append([])</a>
+<a class="sourceLine" id="cb9-25" title="25"></a>
+<a class="sourceLine" id="cb9-26" title="26">        <span class="va">self</span>.item_count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-27" title="27"></a>
+<a class="sourceLine" id="cb9-28" title="28">    <span class="kw">def</span> get_num_slots(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-29" title="29">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-30" title="30"><span class="co">        Return the length of the list you&#39;re using to hold the hash table data. (Not the number of items stored in the hash table,</span></a>
+<a class="sourceLine" id="cb9-31" title="31"><span class="co">        but the number of slots in the main list.)</span></a>
+<a class="sourceLine" id="cb9-32" title="32"><span class="co">        One of the tests relies on this.</span></a>
+<a class="sourceLine" id="cb9-33" title="33"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb9-34" title="34"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-35" title="35">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb9-36" title="36"></a>
+<a class="sourceLine" id="cb9-37" title="37">    <span class="kw">def</span> get_load_factor(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-38" title="38">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-39" title="39"><span class="co">        Return the load factor for this hash table.</span></a>
+<a class="sourceLine" id="cb9-40" title="40"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb9-41" title="41"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-42" title="42">        <span class="cf">return</span> <span class="bu">len</span>(<span class="va">self</span>.storage)</a>
+<a class="sourceLine" id="cb9-43" title="43"></a>
+<a class="sourceLine" id="cb9-44" title="44">    <span class="kw">def</span> djb2(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb9-45" title="45">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-46" title="46"><span class="co">        DJB2 hash, 32-bit</span></a>
+<a class="sourceLine" id="cb9-47" title="47"><span class="co">        Implement this, and/or FNV-1.</span></a>
+<a class="sourceLine" id="cb9-48" title="48"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-49" title="49">        str_key <span class="op">=</span> <span class="bu">str</span>(key).encode()</a>
+<a class="sourceLine" id="cb9-50" title="50"></a>
+<a class="sourceLine" id="cb9-51" title="51">        <span class="bu">hash</span> <span class="op">=</span> FNV_offset_basis_64</a>
+<a class="sourceLine" id="cb9-52" title="52"></a>
+<a class="sourceLine" id="cb9-53" title="53">        <span class="cf">for</span> b <span class="kw">in</span> str_key:</a>
+<a class="sourceLine" id="cb9-54" title="54">            <span class="bu">hash</span> <span class="op">*=</span> FNV_prime_64</a>
+<a class="sourceLine" id="cb9-55" title="55">            <span class="bu">hash</span> <span class="op">^=</span> b</a>
+<a class="sourceLine" id="cb9-56" title="56">            <span class="bu">hash</span> <span class="op">&amp;=</span> <span class="bn">0xffffffffffffffff</span>  <span class="co"># 64-bit hash</span></a>
+<a class="sourceLine" id="cb9-57" title="57"></a>
+<a class="sourceLine" id="cb9-58" title="58">        <span class="cf">return</span> <span class="bu">hash</span></a>
+<a class="sourceLine" id="cb9-59" title="59"></a>
+<a class="sourceLine" id="cb9-60" title="60">    <span class="kw">def</span> hash_index(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb9-61" title="61">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-62" title="62"><span class="co">        Take an arbitrary key and return a valid integer index between within the hash table&#39;s storage capacity.</span></a>
+<a class="sourceLine" id="cb9-63" title="63"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-64" title="64">        <span class="cf">return</span> <span class="va">self</span>.djb2(key) <span class="op">%</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb9-65" title="65"></a>
+<a class="sourceLine" id="cb9-66" title="66">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb9-67" title="67">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-68" title="68"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb9-69" title="69"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb9-70" title="70"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb9-71" title="71"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-72" title="72">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb9-73" title="73"></a>
+<a class="sourceLine" id="cb9-74" title="74">    <span class="kw">def</span> delete(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb9-75" title="75">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-76" title="76"><span class="co">        Remove the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb9-77" title="77"><span class="co">        Print a warning if the key is not found.</span></a>
+<a class="sourceLine" id="cb9-78" title="78"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb9-79" title="79"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-80" title="80">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb9-81" title="81"></a>
+<a class="sourceLine" id="cb9-82" title="82">    <span class="kw">def</span> get(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb9-83" title="83">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-84" title="84"><span class="co">        Retrieve the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb9-85" title="85"><span class="co">        Returns None if the key is not found.</span></a>
+<a class="sourceLine" id="cb9-86" title="86"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb9-87" title="87"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb9-88" title="88">        <span class="co"># Your code here</span></a></code></pre></div>
+<p>Let’s implement the <code>put</code> method with collision resolution by chaining. What are the two cases we need to handle?</p>
+<ol type="1">
+<li><strong>There are no entries at the index</strong>. Great! We can initialize the entry to a list with the new <code>HashTableEntry</code> in it.</li>
+<li><strong>There are multiple entries at the index.</strong> We need to check every entry in the chain. If the key in one of the entries is equal to the key we are passing in, we need to replace it. For instance, let’s say we pass in <code>("Ryan", 12),</code> and then we later pass in <code>("Ryan", 15)</code>. We would need to replace “Ryan”’s old value with 15. If there are no entries that match, we create a new entry at the end of the chain.</li>
+</ol>
+<p>Ok, that might sound confusing. Let’s start breaking it down into code.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb10-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb10-7" title="7">        <span class="co"># Your code here</span></a></code></pre></div>
+<p>First, we need to hash the key and start with the first entry at that index.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb11-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb11-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb11-7" title="7">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb11-8" title="8"></a>
+<a class="sourceLine" id="cb11-9" title="9">        chain <span class="op">=</span> <span class="va">self</span>.storage[index]</a></code></pre></div>
+<p>Next, we need to go through the chain. We need to check two conditions:</p>
+<ol type="1">
+<li>The current entry is not empty.</li>
+<li>The key or the current entry is not equal to the key we are passing in.</li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb12-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb12-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb12-7" title="7">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb12-8" title="8"></a>
+<a class="sourceLine" id="cb12-9" title="9">        chain <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb12-10" title="10"></a>
+<a class="sourceLine" id="cb12-11" title="11">        existing_entry <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb12-12" title="12"></a>
+<a class="sourceLine" id="cb12-13" title="13">        <span class="cf">for</span> current_entry <span class="kw">in</span> chain:</a>
+<a class="sourceLine" id="cb12-14" title="14">            <span class="cf">if</span> current_entry.key <span class="op">==</span> key:</a>
+<a class="sourceLine" id="cb12-15" title="15">                exiting_entry <span class="op">=</span> current_entry</a>
+<a class="sourceLine" id="cb12-16" title="16">                <span class="cf">break</span></a></code></pre></div>
+<p>Sweet! Now we need to check what happens when the loop breaks. It would only break for two reasons:</p>
+<ol type="1">
+<li>We reached an entry with the same key and need to replace the value.</li>
+<li>We reached the end of the chain and need to create a new entry.</li>
+</ol>
+<p>Let’s write that in code!</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb13-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb13-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb13-7" title="7">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb13-8" title="8"></a>
+<a class="sourceLine" id="cb13-9" title="9">        chain <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb13-10" title="10"></a>
+<a class="sourceLine" id="cb13-11" title="11">        existing_entry <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb13-12" title="12"></a>
+<a class="sourceLine" id="cb13-13" title="13">        <span class="cf">for</span> current_entry <span class="kw">in</span> chain:</a>
+<a class="sourceLine" id="cb13-14" title="14">            <span class="cf">if</span> current_entry.key <span class="op">==</span> key:</a>
+<a class="sourceLine" id="cb13-15" title="15">                existing_entry <span class="op">=</span> current_entry</a>
+<a class="sourceLine" id="cb13-16" title="16">                <span class="cf">break</span></a>
+<a class="sourceLine" id="cb13-17" title="17"></a>
+<a class="sourceLine" id="cb13-18" title="18">        <span class="cf">if</span> existing_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb13-19" title="19">            existing_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb13-20" title="20">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb13-21" title="21">            new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb13-22" title="22">            chain.append(new_entry)</a></code></pre></div>
+<p>Great! We created the <code>put</code> method.</p>
+<h3 id="challenge"><strong>Challenge</strong></h3>
+<p><span class="citation" data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution">[https://replit.com/@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution\#main.py]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py">@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py</span>)</p>
+<figure>
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" /><figcaption>https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png</figcaption>
+</figure>
+<h2 id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor">Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor</h2>
+<h3 id="overview-3"><strong>Overview</strong></h3>
+<p>What does runtime look like with linked list chaining?</p>
+<p>The performance of hash tables for search, insertion, and deletion is constant time (<code>O(1)</code>) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (<code>O(n)</code>). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</p>
+<h4 id="load-factor"><strong>Load Factor</strong></h4>
+<p>The load factor of a hash table is trivial to calculate. You take the number of items stored in the hash table divided by the number of slots.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" /><figcaption>https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg</figcaption>
+</figure>
+<p>Hash tables use an array for storage. So, the load factor is the number of occupied slots divided by the length of the array. So, an array of length 10 with three items in it has a load factor of 0.3, and an array of length 20 with twenty items has a load factor of 1. If you use linear probing for collision resolution, then the maximum load factor is 1. If you use chaining for collision resolution, then the load factor can be greater than 1.</p>
+<p>As the load factor of your hash table increases, so does the likelihood of a collision, which reduces your hash table’s performance. Therefore, you need to monitor the load factor and resize your hash table when the load factor gets too large. The general rule of thumb is to resize your hash table when your load factor is greater than 0.7. Also, when you resize, it is common to double the size of the hash table. When you resize the array, you need to re-insert all of the items into this new hash table. You cannot simply copy the old items into the new hash table. Each item has to be rerun through the hashing function because the hashing function considers the size of the hash table when determining the index that it returns.</p>
+<p>You can see that resizing is an expensive operation, so you don’t want to resize too often. However, when we average it out, hash tables are constant time (<code>O(1)</code>) even with resizing.</p>
+<p>The load factor can also be too small. If the hash table is too large for the data that it is storing, then memory is being wasted. So, in addition to resizing, when the load factor gets too high, you should also resize when the load factor gets too low.</p>
+<p>One way to know when to resize your hash table is to compute the load factor whenever an item is inserted or deleted into the hash table. If the load factor is too high or too low, then you need to resize.</p>
+<p>We added a <code>get_load_factor</code> and <code>resize</code> method to calculate the load factor and resize the hash table with a new capacity when necessary.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+<a class="sourceLine" id="cb14-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="co">    Linked List hash table key/value pair</span></a>
+<a class="sourceLine" id="cb14-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-5" title="5">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb14-6" title="6">        <span class="va">self</span>.key <span class="op">=</span> key</a>
+<a class="sourceLine" id="cb14-7" title="7">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb14-8" title="8">        <span class="va">self</span>.<span class="bu">next</span> <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb14-9" title="9"></a>
+<a class="sourceLine" id="cb14-10" title="10"><span class="co"># Hash table can&#39;t have fewer than this many slots</span></a>
+<a class="sourceLine" id="cb14-11" title="11">MIN_CAPACITY <span class="op">=</span> <span class="dv">8</span></a>
+<a class="sourceLine" id="cb14-12" title="12"></a>
+<a class="sourceLine" id="cb14-13" title="13"><span class="kw">class</span> HashTable:</a>
+<a class="sourceLine" id="cb14-14" title="14">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-15" title="15"><span class="co">    A hash table with `capacity` buckets</span></a>
+<a class="sourceLine" id="cb14-16" title="16"><span class="co">    that accepts string keys</span></a>
+<a class="sourceLine" id="cb14-17" title="17"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb14-18" title="18"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-19" title="19"></a>
+<a class="sourceLine" id="cb14-20" title="20">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, capacity):</a>
+<a class="sourceLine" id="cb14-21" title="21">        <span class="va">self</span>.capacity <span class="op">=</span> capacity  <span class="co"># Number of buckets in the hash table</span></a>
+<a class="sourceLine" id="cb14-22" title="22">        <span class="va">self</span>.storage <span class="op">=</span> [<span class="va">None</span>] <span class="op">*</span> capacity</a>
+<a class="sourceLine" id="cb14-23" title="23">        <span class="va">self</span>.item_count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb14-24" title="24"></a>
+<a class="sourceLine" id="cb14-25" title="25">    <span class="kw">def</span> get_num_slots(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb14-26" title="26">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-27" title="27"><span class="co">        Return the length of the list you&#39;re using to hold the hash</span></a>
+<a class="sourceLine" id="cb14-28" title="28"><span class="co">        table data. (Not the number of items stored in the hash table,</span></a>
+<a class="sourceLine" id="cb14-29" title="29"><span class="co">        but the number of slots in the main list.)</span></a>
+<a class="sourceLine" id="cb14-30" title="30"><span class="co">        One of the tests relies on this.</span></a>
+<a class="sourceLine" id="cb14-31" title="31"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-32" title="32"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-33" title="33">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb14-34" title="34"></a>
+<a class="sourceLine" id="cb14-35" title="35">    <span class="kw">def</span> get_load_factor(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb14-36" title="36">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-37" title="37"><span class="co">        Return the load factor for this hash table.</span></a>
+<a class="sourceLine" id="cb14-38" title="38"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-39" title="39"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-40" title="40">        <span class="cf">return</span> <span class="va">self</span>.item_count <span class="op">/</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb14-41" title="41"></a>
+<a class="sourceLine" id="cb14-42" title="42">    <span class="kw">def</span> resize(<span class="va">self</span>, new_capacity):</a>
+<a class="sourceLine" id="cb14-43" title="43">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-44" title="44"><span class="co">        Changes the capacity of the hash table and</span></a>
+<a class="sourceLine" id="cb14-45" title="45"><span class="co">        rehashes all key/value pairs.</span></a>
+<a class="sourceLine" id="cb14-46" title="46"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-47" title="47"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-48" title="48">        old_storage <span class="op">=</span> <span class="va">self</span>.storage</a>
+<a class="sourceLine" id="cb14-49" title="49">        <span class="va">self</span>.capacity <span class="op">=</span> new_capacity</a>
+<a class="sourceLine" id="cb14-50" title="50">        <span class="va">self</span>.storage <span class="op">=</span> [<span class="va">None</span>] <span class="op">*</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb14-51" title="51"></a>
+<a class="sourceLine" id="cb14-52" title="52">        current_entry <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb14-53" title="53"></a>
+<a class="sourceLine" id="cb14-54" title="54">        <span class="co"># Save this because put adds to it, and we don&#39;t want that.</span></a>
+<a class="sourceLine" id="cb14-55" title="55">        <span class="co"># It might be less hackish to pass a flag to put indicating that</span></a>
+<a class="sourceLine" id="cb14-56" title="56">        <span class="co"># we&#39;re in a resize and don&#39;t want to modify item count.</span></a>
+<a class="sourceLine" id="cb14-57" title="57">        old_item_count <span class="op">=</span> <span class="va">self</span>.item_count</a>
+<a class="sourceLine" id="cb14-58" title="58"></a>
+<a class="sourceLine" id="cb14-59" title="59">        <span class="cf">for</span> bucket_item <span class="kw">in</span> old_storage:</a>
+<a class="sourceLine" id="cb14-60" title="60">            current_entry <span class="op">=</span> bucket_item</a>
+<a class="sourceLine" id="cb14-61" title="61">            <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb14-62" title="62">                <span class="va">self</span>.put(current_entry.key, current_entry.value)</a>
+<a class="sourceLine" id="cb14-63" title="63">                current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb14-64" title="64"></a>
+<a class="sourceLine" id="cb14-65" title="65">        <span class="co"># Restore this to the correct number</span></a>
+<a class="sourceLine" id="cb14-66" title="66">        <span class="va">self</span>.item_count <span class="op">=</span> old_item_count</a>
+<a class="sourceLine" id="cb14-67" title="67"></a>
+<a class="sourceLine" id="cb14-68" title="68">    <span class="kw">def</span> djb2(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb14-69" title="69">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-70" title="70"><span class="co">        DJB2 hash, 32-bit</span></a>
+<a class="sourceLine" id="cb14-71" title="71"><span class="co">        Implement this, and/or FNV-1.</span></a>
+<a class="sourceLine" id="cb14-72" title="72"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-73" title="73">        str_key <span class="op">=</span> <span class="bu">str</span>(key).encode()</a>
+<a class="sourceLine" id="cb14-74" title="74"></a>
+<a class="sourceLine" id="cb14-75" title="75">        <span class="bu">hash</span> <span class="op">=</span> FNV_offset_basis_64</a>
+<a class="sourceLine" id="cb14-76" title="76"></a>
+<a class="sourceLine" id="cb14-77" title="77">        <span class="cf">for</span> b <span class="kw">in</span> str_key:</a>
+<a class="sourceLine" id="cb14-78" title="78">            <span class="bu">hash</span> <span class="op">*=</span> FNV_prime_64</a>
+<a class="sourceLine" id="cb14-79" title="79">            <span class="bu">hash</span> <span class="op">^=</span> b</a>
+<a class="sourceLine" id="cb14-80" title="80">            <span class="bu">hash</span> <span class="op">&amp;=</span> <span class="bn">0xffffffffffffffff</span>  <span class="co"># 64-bit hash</span></a>
+<a class="sourceLine" id="cb14-81" title="81"></a>
+<a class="sourceLine" id="cb14-82" title="82">        <span class="cf">return</span> <span class="bu">hash</span></a>
+<a class="sourceLine" id="cb14-83" title="83"></a>
+<a class="sourceLine" id="cb14-84" title="84">    <span class="kw">def</span> hash_index(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb14-85" title="85">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-86" title="86"><span class="co">        Take an arbitrary key and return a valid integer index</span></a>
+<a class="sourceLine" id="cb14-87" title="87"><span class="co">        within the hash table&#39;s storage capacity.</span></a>
+<a class="sourceLine" id="cb14-88" title="88"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-89" title="89">        <span class="cf">return</span> <span class="va">self</span>.djb2(key) <span class="op">%</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb14-90" title="90"></a>
+<a class="sourceLine" id="cb14-91" title="91">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb14-92" title="92">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-93" title="93"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb14-94" title="94"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb14-95" title="95"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-96" title="96"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-97" title="97">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb14-98" title="98"></a>
+<a class="sourceLine" id="cb14-99" title="99">        current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb14-100" title="100"></a>
+<a class="sourceLine" id="cb14-101" title="101">        <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb14-102" title="102">            current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb14-103" title="103"></a>
+<a class="sourceLine" id="cb14-104" title="104">        <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb14-105" title="105">            current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb14-106" title="106">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb14-107" title="107">            new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb14-108" title="108">            new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb14-109" title="109">            <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb14-110" title="110"></a>
+<a class="sourceLine" id="cb14-111" title="111">    <span class="kw">def</span> delete(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb14-112" title="112">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-113" title="113"><span class="co">        Remove the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb14-114" title="114"><span class="co">        Print a warning if the key is not found.</span></a>
+<a class="sourceLine" id="cb14-115" title="115"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-116" title="116"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-117" title="117">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb14-118" title="118"></a>
+<a class="sourceLine" id="cb14-119" title="119">    <span class="kw">def</span> get(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb14-120" title="120">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-121" title="121"><span class="co">        Retrieve the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb14-122" title="122"><span class="co">        Returns None if the key is not found.</span></a>
+<a class="sourceLine" id="cb14-123" title="123"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb14-124" title="124"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb14-125" title="125">        <span class="co"># Your code here</span></a></code></pre></div>
+<h3 id="follow-along-3"><strong>Follow Along</strong></h3>
+<p>Let’s change our <code>put</code> method to resize when the load factor gets too high. Here’s how our current <code>put</code> method looks:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb15-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb15-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb15-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb15-8" title="8"></a>
+<a class="sourceLine" id="cb15-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb15-10" title="10"></a>
+<a class="sourceLine" id="cb15-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb15-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb15-13" title="13"></a>
+<a class="sourceLine" id="cb15-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb15-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb15-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb15-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb15-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb15-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre></div>
+<p>To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let’s go ahead and add that.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb16-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb16-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb16-8" title="8"></a>
+<a class="sourceLine" id="cb16-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb16-10" title="10"></a>
+<a class="sourceLine" id="cb16-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb16-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb16-13" title="13"></a>
+<a class="sourceLine" id="cb16-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb16-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb16-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb16-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb16-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb16-20" title="20"></a>
+<a class="sourceLine" id="cb16-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
+<p>Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb17-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb17-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb17-8" title="8"></a>
+<a class="sourceLine" id="cb17-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb17-10" title="10"></a>
+<a class="sourceLine" id="cb17-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb17-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb17-13" title="13"></a>
+<a class="sourceLine" id="cb17-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb17-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb17-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb17-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb17-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb17-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb17-20" title="20"></a>
+<a class="sourceLine" id="cb17-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb17-22" title="22"></a>
+<a class="sourceLine" id="cb17-23" title="23">        <span class="cf">if</span> <span class="va">self</span>.get_load_factor() <span class="op">&gt;</span> <span class="fl">0.7</span>:</a>
+<a class="sourceLine" id="cb17-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre></div>
+<p>Fantastic, we did it!</p>
+<figure>
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png" /><figcaption>https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png</figcaption>
+</figure>
+<h2 id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor-1">Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor</h2>
+<h3 id="overview-4"><strong>Overview</strong></h3>
+<p>What does runtime look like with linked list chaining?</p>
+<p>The performance of hash tables for search, insertion, and deletion is constant time (<code>O(1)</code>) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (<code>O(n)</code>). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</p>
+<h4 id="load-factor-1"><strong>Load Factor</strong></h4>
+<p>The load factor of a hash table is trivial to calculate. You take the number of items stored in the hash table divided by the number of slots.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" /><figcaption>https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg</figcaption>
+</figure>
+<p>Hash tables use an array for storage. So, the load factor is the number of occupied slots divided by the length of the array. So, an array of length 10 with three items in it has a load factor of 0.3, and an array of length 20 with twenty items has a load factor of 1. If you use linear probing for collision resolution, then the maximum load factor is 1. If you use chaining for collision resolution, then the load factor can be greater than 1.</p>
+<p>As the load factor of your hash table increases, so does the likelihood of a collision, which reduces your hash table’s performance. Therefore, you need to monitor the load factor and resize your hash table when the load factor gets too large. The general rule of thumb is to resize your hash table when your load factor is greater than 0.7. Also, when you resize, it is common to double the size of the hash table. When you resize the array, you need to re-insert all of the items into this new hash table. You cannot simply copy the old items into the new hash table. Each item has to be rerun through the hashing function because the hashing function considers the size of the hash table when determining the index that it returns.</p>
+<p>You can see that resizing is an expensive operation, so you don’t want to resize too often. However, when we average it out, hash tables are constant time (<code>O(1)</code>) even with resizing.</p>
+<p>The load factor can also be too small. If the hash table is too large for the data that it is storing, then memory is being wasted. So, in addition to resizing, when the load factor gets too high, you should also resize when the load factor gets too low.</p>
+<p>One way to know when to resize your hash table is to compute the load factor whenever an item is inserted or deleted into the hash table. If the load factor is too high or too low, then you need to resize.</p>
+<p>We added a <code>get_load_factor</code> and <code>resize</code> method to calculate the load factor and resize the hash table with a new capacity when necessary.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="co">    Linked List hash table key/value pair</span></a>
+<a class="sourceLine" id="cb18-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-5" title="5">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb18-6" title="6">        <span class="va">self</span>.key <span class="op">=</span> key</a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb18-8" title="8">        <span class="va">self</span>.<span class="bu">next</span> <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb18-9" title="9"></a>
+<a class="sourceLine" id="cb18-10" title="10"><span class="co"># Hash table can&#39;t have fewer than this many slots</span></a>
+<a class="sourceLine" id="cb18-11" title="11">MIN_CAPACITY <span class="op">=</span> <span class="dv">8</span></a>
+<a class="sourceLine" id="cb18-12" title="12"></a>
+<a class="sourceLine" id="cb18-13" title="13"><span class="kw">class</span> HashTable:</a>
+<a class="sourceLine" id="cb18-14" title="14">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-15" title="15"><span class="co">    A hash table with `capacity` buckets</span></a>
+<a class="sourceLine" id="cb18-16" title="16"><span class="co">    that accepts string keys</span></a>
+<a class="sourceLine" id="cb18-17" title="17"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb18-18" title="18"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-19" title="19"></a>
+<a class="sourceLine" id="cb18-20" title="20">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, capacity):</a>
+<a class="sourceLine" id="cb18-21" title="21">        <span class="va">self</span>.capacity <span class="op">=</span> capacity  <span class="co"># Number of buckets in the hash table</span></a>
+<a class="sourceLine" id="cb18-22" title="22">        <span class="va">self</span>.storage <span class="op">=</span> [<span class="va">None</span>] <span class="op">*</span> capacity</a>
+<a class="sourceLine" id="cb18-23" title="23">        <span class="va">self</span>.item_count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb18-24" title="24"></a>
+<a class="sourceLine" id="cb18-25" title="25">    <span class="kw">def</span> get_num_slots(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb18-26" title="26">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-27" title="27"><span class="co">        Return the length of the list you&#39;re using to hold the hash</span></a>
+<a class="sourceLine" id="cb18-28" title="28"><span class="co">        table data. (Not the number of items stored in the hash table,</span></a>
+<a class="sourceLine" id="cb18-29" title="29"><span class="co">        but the number of slots in the main list.)</span></a>
+<a class="sourceLine" id="cb18-30" title="30"><span class="co">        One of the tests relies on this.</span></a>
+<a class="sourceLine" id="cb18-31" title="31"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-32" title="32"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-33" title="33">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb18-34" title="34"></a>
+<a class="sourceLine" id="cb18-35" title="35">    <span class="kw">def</span> get_load_factor(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb18-36" title="36">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-37" title="37"><span class="co">        Return the load factor for this hash table.</span></a>
+<a class="sourceLine" id="cb18-38" title="38"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-39" title="39"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-40" title="40">        <span class="cf">return</span> <span class="va">self</span>.item_count <span class="op">/</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb18-41" title="41"></a>
+<a class="sourceLine" id="cb18-42" title="42">    <span class="kw">def</span> resize(<span class="va">self</span>, new_capacity):</a>
+<a class="sourceLine" id="cb18-43" title="43">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-44" title="44"><span class="co">        Changes the capacity of the hash table and</span></a>
+<a class="sourceLine" id="cb18-45" title="45"><span class="co">        rehashes all key/value pairs.</span></a>
+<a class="sourceLine" id="cb18-46" title="46"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-47" title="47"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-48" title="48">        old_storage <span class="op">=</span> <span class="va">self</span>.storage</a>
+<a class="sourceLine" id="cb18-49" title="49">        <span class="va">self</span>.capacity <span class="op">=</span> new_capacity</a>
+<a class="sourceLine" id="cb18-50" title="50">        <span class="va">self</span>.storage <span class="op">=</span> [<span class="va">None</span>] <span class="op">*</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb18-51" title="51"></a>
+<a class="sourceLine" id="cb18-52" title="52">        current_entry <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb18-53" title="53"></a>
+<a class="sourceLine" id="cb18-54" title="54">        <span class="co"># Save this because put adds to it, and we don&#39;t want that.</span></a>
+<a class="sourceLine" id="cb18-55" title="55">        <span class="co"># It might be less hackish to pass a flag to put indicating that</span></a>
+<a class="sourceLine" id="cb18-56" title="56">        <span class="co"># we&#39;re in a resize and don&#39;t want to modify item count.</span></a>
+<a class="sourceLine" id="cb18-57" title="57">        old_item_count <span class="op">=</span> <span class="va">self</span>.item_count</a>
+<a class="sourceLine" id="cb18-58" title="58"></a>
+<a class="sourceLine" id="cb18-59" title="59">        <span class="cf">for</span> bucket_item <span class="kw">in</span> old_storage:</a>
+<a class="sourceLine" id="cb18-60" title="60">            current_entry <span class="op">=</span> bucket_item</a>
+<a class="sourceLine" id="cb18-61" title="61">            <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-62" title="62">                <span class="va">self</span>.put(current_entry.key, current_entry.value)</a>
+<a class="sourceLine" id="cb18-63" title="63">                current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb18-64" title="64"></a>
+<a class="sourceLine" id="cb18-65" title="65">        <span class="co"># Restore this to the correct number</span></a>
+<a class="sourceLine" id="cb18-66" title="66">        <span class="va">self</span>.item_count <span class="op">=</span> old_item_count</a>
+<a class="sourceLine" id="cb18-67" title="67"></a>
+<a class="sourceLine" id="cb18-68" title="68">    <span class="kw">def</span> djb2(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb18-69" title="69">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-70" title="70"><span class="co">        DJB2 hash, 32-bit</span></a>
+<a class="sourceLine" id="cb18-71" title="71"><span class="co">        Implement this, and/or FNV-1.</span></a>
+<a class="sourceLine" id="cb18-72" title="72"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-73" title="73">        str_key <span class="op">=</span> <span class="bu">str</span>(key).encode()</a>
+<a class="sourceLine" id="cb18-74" title="74"></a>
+<a class="sourceLine" id="cb18-75" title="75">        <span class="bu">hash</span> <span class="op">=</span> FNV_offset_basis_64</a>
+<a class="sourceLine" id="cb18-76" title="76"></a>
+<a class="sourceLine" id="cb18-77" title="77">        <span class="cf">for</span> b <span class="kw">in</span> str_key:</a>
+<a class="sourceLine" id="cb18-78" title="78">            <span class="bu">hash</span> <span class="op">*=</span> FNV_prime_64</a>
+<a class="sourceLine" id="cb18-79" title="79">            <span class="bu">hash</span> <span class="op">^=</span> b</a>
+<a class="sourceLine" id="cb18-80" title="80">            <span class="bu">hash</span> <span class="op">&amp;=</span> <span class="bn">0xffffffffffffffff</span>  <span class="co"># 64-bit hash</span></a>
+<a class="sourceLine" id="cb18-81" title="81"></a>
+<a class="sourceLine" id="cb18-82" title="82">        <span class="cf">return</span> <span class="bu">hash</span></a>
+<a class="sourceLine" id="cb18-83" title="83"></a>
+<a class="sourceLine" id="cb18-84" title="84">    <span class="kw">def</span> hash_index(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb18-85" title="85">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-86" title="86"><span class="co">        Take an arbitrary key and return a valid integer index</span></a>
+<a class="sourceLine" id="cb18-87" title="87"><span class="co">        within the hash table&#39;s storage capacity.</span></a>
+<a class="sourceLine" id="cb18-88" title="88"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-89" title="89">        <span class="cf">return</span> <span class="va">self</span>.djb2(key) <span class="op">%</span> <span class="va">self</span>.capacity</a>
+<a class="sourceLine" id="cb18-90" title="90"></a>
+<a class="sourceLine" id="cb18-91" title="91">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb18-92" title="92">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-93" title="93"><span class="co">        Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb18-94" title="94"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb18-95" title="95"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-96" title="96"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-97" title="97">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb18-98" title="98"></a>
+<a class="sourceLine" id="cb18-99" title="99">        current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb18-100" title="100"></a>
+<a class="sourceLine" id="cb18-101" title="101">        <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb18-102" title="102">            current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb18-103" title="103"></a>
+<a class="sourceLine" id="cb18-104" title="104">        <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-105" title="105">            current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb18-106" title="106">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb18-107" title="107">            new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb18-108" title="108">            new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb18-109" title="109">            <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb18-110" title="110"></a>
+<a class="sourceLine" id="cb18-111" title="111">    <span class="kw">def</span> delete(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb18-112" title="112">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-113" title="113"><span class="co">        Remove the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb18-114" title="114"><span class="co">        Print a warning if the key is not found.</span></a>
+<a class="sourceLine" id="cb18-115" title="115"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-116" title="116"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-117" title="117">        <span class="co"># Your code here</span></a>
+<a class="sourceLine" id="cb18-118" title="118"></a>
+<a class="sourceLine" id="cb18-119" title="119">    <span class="kw">def</span> get(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb18-120" title="120">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-121" title="121"><span class="co">        Retrieve the value stored with the given key.</span></a>
+<a class="sourceLine" id="cb18-122" title="122"><span class="co">        Returns None if the key is not found.</span></a>
+<a class="sourceLine" id="cb18-123" title="123"><span class="co">        Implement this.</span></a>
+<a class="sourceLine" id="cb18-124" title="124"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb18-125" title="125">        <span class="co"># Your code here</span></a></code></pre></div>
+<h3 id="follow-along-4"><strong>Follow Along</strong></h3>
+<p>Let’s change our <code>put</code> method to resize when the load factor gets too high. Here’s how our current <code>put</code> method looks:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb19-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb19-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb19-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb19-8" title="8"></a>
+<a class="sourceLine" id="cb19-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb19-10" title="10"></a>
+<a class="sourceLine" id="cb19-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb19-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb19-13" title="13"></a>
+<a class="sourceLine" id="cb19-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb19-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb19-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb19-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb19-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb19-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre></div>
+<p>To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let’s go ahead and add that.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb20-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb20-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb20-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb20-8" title="8"></a>
+<a class="sourceLine" id="cb20-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb20-10" title="10"></a>
+<a class="sourceLine" id="cb20-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb20-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb20-13" title="13"></a>
+<a class="sourceLine" id="cb20-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb20-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb20-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb20-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb20-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb20-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb20-20" title="20"></a>
+<a class="sourceLine" id="cb20-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
+<p>Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb21-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="co">    Store the value with the given key.</span></a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="co">    Implement this.</span></a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb21-7" title="7">    index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
+<a class="sourceLine" id="cb21-8" title="8"></a>
+<a class="sourceLine" id="cb21-9" title="9">    current_entry <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb21-10" title="10"></a>
+<a class="sourceLine" id="cb21-11" title="11">    <span class="cf">while</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> current_entry.key <span class="op">!=</span> key:</a>
+<a class="sourceLine" id="cb21-12" title="12">        current_entry <span class="op">=</span> current_entry.<span class="bu">next</span></a>
+<a class="sourceLine" id="cb21-13" title="13"></a>
+<a class="sourceLine" id="cb21-14" title="14">    <span class="cf">if</span> current_entry <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb21-15" title="15">        current_entry.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb21-16" title="16">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb21-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
+<a class="sourceLine" id="cb21-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
+<a class="sourceLine" id="cb21-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
+<a class="sourceLine" id="cb21-20" title="20"></a>
+<a class="sourceLine" id="cb21-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb21-22" title="22"></a>
+<a class="sourceLine" id="cb21-23" title="23">        <span class="cf">if</span> <span class="va">self</span>.get_load_factor() <span class="op">&gt;</span> <span class="fl">0.7</span>:</a>
+<a class="sourceLine" id="cb21-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre></div>
+<p>Fantastic, we did it!</p>
+<h3 id="challenge-1"><strong>Challenge</strong></h3>
+<ol type="1">
+<li>Do we need to modify our <code>delete</code> and <code>get</code> methods to account for the new <code>get_load_factor</code> and <code>resize</code> methods? Why or why not?</li>
+</ol>
+<h3 id="additional-resources"><strong>Additional Resources</strong></h3>
+<ul>
+<li><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</a></li>
+</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="cf">for</span> name, number <span class="kw">in</span> phonebook.items():</a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="bu">print</span>(<span class="st">&quot;Name: </span><span class="sc">%s</span><span class="st">, Number: </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (name, number))</a>
+<a class="sourceLine" id="cb22-3" title="3"></a>
+<a class="sourceLine" id="cb22-4" title="4"><span class="co"># Name: Abe, Number: 4569874321</span></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="co"># Name: Bill, Number: 7659803241</span></a>
+<a class="sourceLine" id="cb22-6" title="6"><span class="co"># Name: Barry, Number: 6573214789</span></a></code></pre></div>
+<p>To remove a key-value pair from a dictionary, you need to use the <code>del</code> keyword or use the <code>pop()</code> method available on dictionary objects. The difference is <code>pop()</code> deletes the item from the dictionary and returns the value. When you use the <code>del</code> keyword, you’ve written a statement that doesn’t evaluate to anything.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">phonebook <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb23-2" title="2">    <span class="st">&quot;Abe&quot;</span>: <span class="dv">4569874321</span>,</a>
+<a class="sourceLine" id="cb23-3" title="3">    <span class="st">&quot;Bill&quot;</span>: <span class="dv">7659803241</span>,</a>
+<a class="sourceLine" id="cb23-4" title="4">    <span class="st">&quot;Barry&quot;</span>: <span class="dv">6573214789</span></a>
+<a class="sourceLine" id="cb23-5" title="5">}</a>
+<a class="sourceLine" id="cb23-6" title="6"></a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="kw">del</span> phonebook[<span class="st">&quot;Abe&quot;</span>]</a>
+<a class="sourceLine" id="cb23-8" title="8"></a>
+<a class="sourceLine" id="cb23-9" title="9"><span class="bu">print</span>(phonebook.pop(<span class="st">&quot;Bill&quot;</span>))</a>
+<a class="sourceLine" id="cb23-10" title="10"><span class="co"># 7659803241</span></a></code></pre></div>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-1-dictionaries-1">@bgoonz/cs-unit-1-sprint-1-module-1-dictionaries-1</span>#main.py” %}</p>
+<h2 id="section"></h2>
+<h4 id="identity">Identity <a id="identity"></a></h4>
+<p>An object’s <strong>identity</strong> can never change once it has been created. You can think of an object’s identity as its specific address in memory. In the code above, <code>a = 1</code> created a new object in memory whose identity is represented by the integer <code>4483164816</code>.</p>
+<p>Python has an <code>is</code> operator that allows you to compare two object’s identities.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="op">&gt;&gt;&gt;</span> a <span class="kw">is</span> b</a>
+<a class="sourceLine" id="cb24-4" title="4"><span class="va">False</span></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> a</a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="op">&gt;&gt;&gt;</span> a <span class="kw">is</span> b</a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="va">True</span></a>
+<a class="sourceLine" id="cb24-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>In the code above, we first assign <code>1</code> to the variable <code>a</code>. Then, we assign <code>2</code> to the variable <code>b</code>. These are two different objects in memory and thus have different identities. We verify that they are different by using the <code>is</code> operator, which returns <code>False</code>. The line <code>b = a</code> assigns the variable <code>b</code> the object that the variable <code>a</code> is pointed to. Now, both <code>a</code> and <code>b</code> are referencing the same object in memory. We can use the <code>id()</code> function to verify that this is the case as well:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(a)</a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="dv">4483164816</span></a>
+<a class="sourceLine" id="cb25-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(b)</a>
+<a class="sourceLine" id="cb25-4" title="4"><span class="dv">4483164816</span></a>
+<a class="sourceLine" id="cb25-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<h4 id="type">Type <a id="type"></a></h4>
+<p>The <strong>type</strong> of an object determines what are its possible values and what operations that object supports. The <code>type()</code> function will return what type an object is:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> <span class="st">&#39;Hello&#39;</span></a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(a)</a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(b)</a>
+<a class="sourceLine" id="cb26-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb26-7" title="7"><span class="op">&gt;&gt;&gt;</span> c <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb26-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(c)</a>
+<a class="sourceLine" id="cb26-9" title="9"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;bool&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb26-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Just like an object’s identity, once an object is created, its identity can never change. It’s an object’s type that determines whether an object is <strong>mutable</strong> or <strong>immutable.</strong></p>
+<h4 id="value">Value <a id="value"></a></h4>
+<p>The value of some objects <em>can be changed</em> after they are created. The value of some objects <em>cannot be changed</em> after they are created. If the object’s value can be changed, that object is considered to be <strong>mutable</strong> (changeable). If the object’s value cannot be changed, that object is considered to be <strong>immutable</strong> (unchangeable).</p>
+<h4 id="mutable-objects">Mutable Objects <a id="mutable-objects"></a></h4>
+<p>A mutable object is an object whose value can be changed after it is created. The word mutable is defined as:</p>
+<blockquote>
+<p>liable to change</p>
+</blockquote>
+<p>The following types of objects are mutable:</p>
+<ul>
+<li>list</li>
+<li>set</li>
+<li>dict</li>
+<li>byte array</li>
+<li>instances of user-defined classes</li>
+</ul>
+<p>Let’s look at a few examples in code:</p>
+<p><strong>Lists</strong></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;love&#39;</span>]</a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_list)</a>
+<a class="sourceLine" id="cb27-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb27-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_list[<span class="dv">2</span>] <span class="op">=</span> <span class="st">&#39;joy&#39;</span></a>
+<a class="sourceLine" id="cb27-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_list.append(<span class="st">&#39;excellent&#39;</span>)</a>
+<a class="sourceLine" id="cb27-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_list</a>
+<a class="sourceLine" id="cb27-7" title="7">[<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;joy&#39;</span>, <span class="st">&#39;excellent&#39;</span>]</a>
+<a class="sourceLine" id="cb27-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>In the first line, we create a list object with three elements and assign it to the variable <code>my_list</code>. Then, because lists are mutable, we change <code>'love'</code> at index 2 to be <code>'joy'</code> instead. We also can grow our list by appending a new element to the list.</p>
+<p><strong>Sets</strong></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_set <span class="op">=</span> {<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;love&#39;</span>}</a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_set)</a>
+<a class="sourceLine" id="cb28-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_set.add(<span class="st">&#39;happy&#39;</span>)</a>
+<a class="sourceLine" id="cb28-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_set</a>
+<a class="sourceLine" id="cb28-6" title="6">{<span class="st">&#39;love&#39;</span>, <span class="st">&#39;happy&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;laughter&#39;</span>}</a>
+<a class="sourceLine" id="cb28-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_set.remove(<span class="st">&#39;happiness&#39;</span>)</a>
+<a class="sourceLine" id="cb28-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_set</a>
+<a class="sourceLine" id="cb28-9" title="9">{<span class="st">&#39;love&#39;</span>, <span class="st">&#39;happy&#39;</span>, <span class="st">&#39;laughter&#39;</span>}</a></code></pre></div>
+<p>In the first line, we create a set object with three elements and assign it to the variable <code>my_set</code>. Because set objects are mutable, we can add <code>'happy'</code> to the set and remove <code>'happiness'</code> from the set.</p>
+<p><strong>Dicts</strong></p>
+<pre class="text"><code>&gt;&gt;&gt; my_dict = {&quot;first_name&quot;: &quot;Mattieu&quot;, &quot;last_name&quot;: &quot;Ricard&quot;}
+&gt;&gt;&gt; type(my_dict)
+&lt;class &#39;dict&#39;&gt;
+&gt;&gt;&gt; my_dict[&quot;location&quot;] = &quot;Nepal&quot;
+&gt;&gt;&gt; my_dict
+{&#39;first_name&#39;: &#39;Mattieu&#39;, &#39;last_name&#39;: &#39;Ricard&#39;, &#39;location&#39;: &#39;Nepal&#39;}
+&gt;&gt;&gt; del my_dict[&#39;location&#39;]
+&gt;&gt;&gt; my_dict
+{&#39;first_name&#39;: &#39;Mattieu&#39;, &#39;last_name&#39;: &#39;Ricard&#39;}</code></pre>
+<p>On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair <code>"location": "Nepal"</code>. Last, we delete that same key-value pair.</p>
+<p>Mutable objects work great when you know you will likely need to change the size of the object as you use and interact with it. Changing mutable objects is cheap (because you don’t have to copy all existing elements to a new object).</p>
+<p><strong>Aliasing with Mutable Objects</strong></p>
+<p>Below, I’m going to walk through what happens when you <strong>alias</strong> a mutable object. In Python, aliasing happens whenever a variable’s value is assigned to another variable because variables are just names that store references to values.</p>
+<p>Let me illustrate this with a helpful code visualizer tool called <a href="http://www.pythontutor.com/">Python Tutor (Links to an external site.)</a>:</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png" alt="https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png" /><figcaption>https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png</figcaption>
+</figure>
+<p>On line 1, we instantiate a new list object with three elements (<code>1</code>, <code>2</code>, and <code>3</code>). The name <code>my_list_orig</code> is the variable that we assign the new list to.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png" alt="https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png" /><figcaption>https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png</figcaption>
+</figure>
+<p>Then, on line 2, we create an alias of <code>my_list_orig</code> by pointing <code>my_list_alias</code> to whatever object <code>my_list_orig</code> is pointing at. Notice in the image above that there is still only one list object. However, there are two variables in the global frame, and they are both pointing to the same object.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png" alt="https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png" /><figcaption>https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png</figcaption>
+</figure>
+<p>On line 3, we append a new element to <code>my_list_orig</code>. Notice that, because both variables are referencing the same object, even though we appended to <code>my_list_orig</code>, we also modified <code>my_list_alias</code>.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png" alt="https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png" /><figcaption>https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png</figcaption>
+</figure>
+<p>On line 4, we removed the element <code>1</code> from <code>my_list_orig</code>. Notice, just like when we added to the list, <code>my_list_alias</code> is also affected.</p>
+<p><em>This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.</em></p>
+<h4 id="immutable-objects">Immutable Objects <a id="immutable-objects"></a></h4>
+<p>An immutable object is an object whose value cannot be changed after it is created. Immutable means <em>not changeable</em>. Anytime you try to update the value of an immutable object, a new object is created instead.</p>
+<p>The following types are immutable:</p>
+<ul>
+<li>Numbers (int, float, complex)</li>
+<li>Strings</li>
+<li>Bytes</li>
+<li>Booleans</li>
+<li>Tuples</li>
+</ul>
+<p>Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more <em>expensive</em> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</p>
+<p>Let’s look at a few examples:</p>
+<p><strong>Numbers</strong></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_int <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb30-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_int)</a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="dv">4513307280</span></a>
+<a class="sourceLine" id="cb30-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_int)</a>
+<a class="sourceLine" id="cb30-5" title="5"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb30-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_int</a>
+<a class="sourceLine" id="cb30-7" title="7"><span class="dv">1</span></a>
+<a class="sourceLine" id="cb30-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_int <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb30-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_int)</a>
+<a class="sourceLine" id="cb30-10" title="10"><span class="dv">4513307312</span></a>
+<a class="sourceLine" id="cb30-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_int)</a>
+<a class="sourceLine" id="cb30-12" title="12"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb30-13" title="13"><span class="op">&gt;&gt;&gt;</span> my_int</a>
+<a class="sourceLine" id="cb30-14" title="14"><span class="dv">2</span></a>
+<a class="sourceLine" id="cb30-15" title="15"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>In the code above, the first line creates a new int object, and the variable <code>my_int</code> now points at that object. You can see that this object has <code>int</code> for its type, <code>4513307280</code> for its identity (location in memory), and <code>1</code> for its value.</p>
+<p>Then, we assign <code>2</code> to <code>my_int</code>which creates a whole new object and assigns it to the variable <code>my_int</code>. This object has <code>int</code> for its type, <code>4513307312</code> for its identity (which you can see is different from the first object), and <code>2</code> for its value.</p>
+<p><strong>Strings</strong></p>
+<p>Let’s look at how string concatenation works in Python. Remember that str objects are immutable.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_str <span class="op">=</span> <span class="st">&#39;a&#39;</span></a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_str)</a>
+<a class="sourceLine" id="cb31-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb31-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_str)</a>
+<a class="sourceLine" id="cb31-5" title="5"><span class="dv">140716674193840</span></a>
+<a class="sourceLine" id="cb31-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_str</a>
+<a class="sourceLine" id="cb31-7" title="7"><span class="co">&#39;a&#39;</span></a>
+<a class="sourceLine" id="cb31-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_str <span class="op">+=</span> <span class="st">&#39;b&#39;</span></a>
+<a class="sourceLine" id="cb31-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_str)</a>
+<a class="sourceLine" id="cb31-10" title="10"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb31-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_str)</a>
+<a class="sourceLine" id="cb31-12" title="12"><span class="dv">140716674658992</span></a>
+<a class="sourceLine" id="cb31-13" title="13"><span class="op">&gt;&gt;&gt;</span> my_str</a>
+<a class="sourceLine" id="cb31-14" title="14"><span class="co">&#39;ab&#39;</span></a>
+<a class="sourceLine" id="cb31-15" title="15"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>So, on line 1, we create a string object with the value <code>'a'</code> and assign it to the variable <code>my_str</code>. We verify that the object is of type <code>str</code>, we print its identity (<code>140716674193840</code>) and print its value.</p>
+<p>Then, we concatenate <code>'b'</code> onto the existing string with the line <code>my_str += 'b'</code>. Now, because string objects are immutable, we cannot change a string object’s value after it has been created. To concatenate, we create a new string object and assign the value <code>'ab'</code> to that object.</p>
+<p>This behavior in Python is vital to be aware of when working with string concatenation. If you have to add and remove frequently from a string, this will be inefficient if you work with string objects directly.</p>
+<p><strong>Tuples</strong></p>
+<p>Tuples are an immutable container of names, where each name has an unchangeable (immutable) binding to an object in memory. You cannot change the bindings of the names to the objects.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_tuple <span class="op">=</span> (<span class="st">&#39;love&#39;</span>, [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>], <span class="va">True</span>)</a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="co">&#39;love&#39;</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">0</span>] <span class="op">=</span> <span class="st">&#39;laughter&#39;</span></a>
+<a class="sourceLine" id="cb32-5" title="5">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb32-6" title="6"> File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb32-7" title="7"><span class="pp">TypeError</span>: <span class="st">&#39;tuple&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a>
+<a class="sourceLine" id="cb32-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Here we created a tuple using <code>(</code> and <code>)</code> to denote the tuple literal syntax. Just like a list, tuples can contain elements of any type. Above, we’ve included a string, a list, and a boolean as our tuple elements. We are proving the tuple object’s immutability by showing the error that occurs when trying to assign a new item to a position in the tuple.</p>
+<p>One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb33-2" title="2">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb33-3" title="3"> File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb33-4" title="4"><span class="pp">TypeError</span>: <span class="st">&#39;tuple&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a>
+<a class="sourceLine" id="cb33-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_tuple[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb33-6" title="6"><span class="dv">140716674620864</span></a>
+<a class="sourceLine" id="cb33-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">0</span>] <span class="op">=</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb33-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb33-9" title="9"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">=</span> <span class="dv">6</span></a>
+<a class="sourceLine" id="cb33-10" title="10"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb33-11" title="11">[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb33-12" title="12"><span class="op">&gt;&gt;&gt;</span> my_tuple</a>
+<a class="sourceLine" id="cb33-13" title="13">(<span class="st">&#39;love&#39;</span>, [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>], <span class="va">True</span>)</a>
+<a class="sourceLine" id="cb33-14" title="14"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_tuple[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb33-15" title="15"><span class="dv">140716674620864</span></a>
+<a class="sourceLine" id="cb33-16" title="16"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice that we cannot create a new list object and bind it to the name at position 1 of our tuple. This is demonstrated when <code>my_tuple[1] = [4,5,6]</code> raises a <code>TypeError</code>. However, we can assign new objects to the list that is at position 1 of our tuple? Why is that? Well, what do we know about lists in Python? Lists are mutable objects. So, we can modify a list without creating a new object. So, when we are modifying the list directly (instead of assigning a new object), it doesn’t affect our tuple’s immutability. Notice that the identity (<code>140716674620864</code>) of the list at <code>my_tuple[1]</code> doesn’t change after replacing its three elements with <code>4</code>, <code>5</code>, and <code>6</code>.</p>
+<h4 id="passing-objects-to-functions">Passing Objects to Functions <a id="passing-objects-to-functions"></a></h4>
+<p>Mutable and immutable objects are not treated the same when they are passed as arguments to functions. When mutable objects are passed into a function, they are passed by reference. So, suppose you change the mutable object that was passed in as an argument. In that case, you are changing the original object as well.</p>
+<p><strong>Mutable Objects as Arguments</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> append_num_to_list(lst, num):</a>
+<a class="sourceLine" id="cb34-3" title="3">... lst.append(num)</a>
+<a class="sourceLine" id="cb34-4" title="4">...</a>
+<a class="sourceLine" id="cb34-5" title="5"><span class="op">&gt;&gt;&gt;</span> append_num_to_list(my_list, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb34-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_list</a>
+<a class="sourceLine" id="cb34-7" title="7">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</a>
+<a class="sourceLine" id="cb34-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif" alt="https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif" /><figcaption>https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif</figcaption>
+</figure>
+<p>Notice that when <code>append_num_to_list</code> is called and <code>my_list</code> is passed in as an argument. When <code>my_list</code> is bound to <code>lst</code> in that stack frame, <code>lst</code> points to the original <code>my_list</code> in memory. The function call did not create a copy of <code>my_list</code>. This behavior is because lists are mutable objects in Python.</p>
+<p><strong>Immutable Objects as Arguments</strong></p>
+<p>Next, let’s see how Python behaves when we pass an immutable object as an argument to a function:</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_string <span class="op">=</span> <span class="st">&quot;I am an immutable object.&quot;</span></a>
+<a class="sourceLine" id="cb35-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> concatenate_string_to_string(orig_string, string_to_add):</a>
+<a class="sourceLine" id="cb35-3" title="3">... <span class="cf">return</span> orig_string <span class="op">+</span> string_to_add</a>
+<a class="sourceLine" id="cb35-4" title="4">...</a>
+<a class="sourceLine" id="cb35-5" title="5"><span class="op">&gt;&gt;&gt;</span> concatenate_string_to_string(my_string, <span class="st">&quot; I hope!&quot;</span>)</a>
+<a class="sourceLine" id="cb35-6" title="6"><span class="co">&#39;I am an immutable object. I hope!&#39;</span></a>
+<a class="sourceLine" id="cb35-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_string</a>
+<a class="sourceLine" id="cb35-8" title="8"><span class="co">&#39;I am an immutable object.&#39;</span></a>
+<a class="sourceLine" id="cb35-9" title="9"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif" alt="https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif" /><figcaption>https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif</figcaption>
+</figure>
+<p>Notice when an immutable object is passed into a function, the object is copied and bound to the parameter name. In the example above, when <code>my_string</code> is passed into <code>concatenate_string_to_string</code>, <code>my_string</code> is copied to a new object bound to the name <code>orig_string</code>.</p>
+<h3 id="challenge-2">Challenge <a id="challenge"></a></h3>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1">@bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1</span>” %}</p>
+<ul>
+<li><a href="https://lambdaschool.instructure.com/courses/1575">Home</a></li>
+<li><a href="https://lambdaschool.instructure.com/courses/1575/grades">Grades</a></li>
+<li><a href="https://lambdaschool.instructure.com/courses/1575/modules">Modules</a></li>
+</ul>
+<h2 id="objective-02---recognize-mutable-and-immutable-objects">Objective 02 - Recognize mutable and immutable objects</h2>
+<h3 id="overview-5">Overview <a id="overview"></a></h3>
+<p>In Python, everything is an object.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> <span class="st">&quot;hello&quot;</span></a>
+<a class="sourceLine" id="cb36-3" title="3"><span class="op">&gt;&gt;&gt;</span> c <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">isinstance</span>(a, <span class="bu">object</span>)</a>
+<a class="sourceLine" id="cb36-5" title="5"><span class="va">True</span></a>
+<a class="sourceLine" id="cb36-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">isinstance</span>(b, <span class="bu">object</span>)</a>
+<a class="sourceLine" id="cb36-7" title="7"><span class="va">True</span></a>
+<a class="sourceLine" id="cb36-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">isinstance</span>(c, <span class="bu">object</span>)</a>
+<a class="sourceLine" id="cb36-9" title="9"><span class="va">True</span></a>
+<a class="sourceLine" id="cb36-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Additionally, all objects in Python have three things:</p>
+<ol type="1">
+<li>Identity</li>
+<li>Type</li>
+<li>Value</li>
+</ol>
+<pre class="text"><code>&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; # Identity
+... id(a)
+4483164816
+&gt;&gt;&gt; # Type
+... type(a)
+&lt;class &#39;int&#39;&gt;
+&gt;&gt;&gt; # Value
+... a
+1
+&gt;&gt;&gt;</code></pre>
+<h3 id="follow-along-5">Follow Along <a id="follow-along"></a></h3>
+<h4 id="identity-1">Identity <a id="identity"></a></h4>
+<p>An object’s <strong>identity</strong> can never change once it has been created. You can think of an object’s identity as its specific address in memory. In the code above, <code>a = 1</code> created a new object in memory whose identity is represented by the integer <code>4483164816</code>.</p>
+<p>Python has an <code>is</code> operator that allows you to compare two object’s identities.</p>
+<pre class="text"><code>&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 2
+&gt;&gt;&gt; a is b
+False
+&gt;&gt;&gt; b = a
+&gt;&gt;&gt; a is b
+True
+&gt;&gt;&gt;</code></pre>
+<p>In the code above, we first assign <code>1</code> to the variable <code>a</code>. Then, we assign <code>2</code> to the variable <code>b</code>. These are two different objects in memory and thus have different identities. We verify that they are different by using the <code>is</code> operator, which returns <code>False</code>. The line <code>b = a</code> assigns the variable <code>b</code> the object that the variable <code>a</code> is pointed to. Now, both <code>a</code> and <code>b</code> are referencing the same object in memory. We can use the <code>id()</code> function to verify that this is the case as well:</p>
+<pre class="text"><code>&gt;&gt;&gt; id(a)
+4483164816
+&gt;&gt;&gt; id(b)
+4483164816
+&gt;&gt;&gt;</code></pre>
+<h4 id="type-1">Type <a id="type"></a></h4>
+<p>The <strong>type</strong> of an object determines what are its possible values and what operations that object supports. The <code>type()</code> function will return what type an object is:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> <span class="st">&#39;Hello&#39;</span></a>
+<a class="sourceLine" id="cb40-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(a)</a>
+<a class="sourceLine" id="cb40-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;str&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb40-4" title="4"><span class="op">&gt;&gt;&gt;</span> b <span class="op">=</span> <span class="dv">100</span></a>
+<a class="sourceLine" id="cb40-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(b)</a>
+<a class="sourceLine" id="cb40-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb40-7" title="7"><span class="op">&gt;&gt;&gt;</span> c <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb40-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(c)</a>
+<a class="sourceLine" id="cb40-9" title="9"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;bool&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb40-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Just like an object’s identity, once an object is created, its identity can never change. It’s an object’s type that determines whether an object is <strong>mutable</strong> or <strong>immutable.</strong></p>
+<h4 id="value-1">Value <a id="value"></a></h4>
+<p>The value of some objects <em>can be changed</em> after they are created. The value of some objects <em>cannot be changed</em> after they are created. If the object’s value can be changed, that object is considered to be <strong>mutable</strong> (changeable). If the object’s value cannot be changed, that object is considered to be <strong>immutable</strong> (unchangeable).</p>
+<h4 id="mutable-objects-1">Mutable Objects <a id="mutable-objects"></a></h4>
+<p>A mutable object is an object whose value can be changed after it is created. The word mutable is defined as:</p>
+<blockquote>
+<p>liable to change</p>
+</blockquote>
+<p>The following types of objects are mutable:</p>
+<ul>
+<li>list</li>
+<li>set</li>
+<li>dict</li>
+<li>byte array</li>
+<li>instances of user-defined classes</li>
+</ul>
+<p>Let’s look at a few examples in code:</p>
+<p><strong>Lists</strong></p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;love&#39;</span>]</a>
+<a class="sourceLine" id="cb41-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_list)</a>
+<a class="sourceLine" id="cb41-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb41-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_list[<span class="dv">2</span>] <span class="op">=</span> <span class="st">&#39;joy&#39;</span></a>
+<a class="sourceLine" id="cb41-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_list.append(<span class="st">&#39;excellent&#39;</span>)</a>
+<a class="sourceLine" id="cb41-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_list</a>
+<a class="sourceLine" id="cb41-7" title="7">[<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;joy&#39;</span>, <span class="st">&#39;excellent&#39;</span>]</a>
+<a class="sourceLine" id="cb41-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>In the first line, we create a list object with three elements and assign it to the variable <code>my_list</code>. Then, because lists are mutable, we change <code>'love'</code> at index 2 to be <code>'joy'</code> instead. We also can grow our list by appending a new element to the list.</p>
+<p><strong>Sets</strong></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_set <span class="op">=</span> {<span class="st">&#39;laughter&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;love&#39;</span>}</a>
+<a class="sourceLine" id="cb42-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_set)</a>
+<a class="sourceLine" id="cb42-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb42-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_set.add(<span class="st">&#39;happy&#39;</span>)</a>
+<a class="sourceLine" id="cb42-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_set</a>
+<a class="sourceLine" id="cb42-6" title="6">{<span class="st">&#39;love&#39;</span>, <span class="st">&#39;happy&#39;</span>, <span class="st">&#39;happiness&#39;</span>, <span class="st">&#39;laughter&#39;</span>}</a>
+<a class="sourceLine" id="cb42-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_set.remove(<span class="st">&#39;happiness&#39;</span>)</a>
+<a class="sourceLine" id="cb42-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_set</a>
+<a class="sourceLine" id="cb42-9" title="9">{<span class="st">&#39;love&#39;</span>, <span class="st">&#39;happy&#39;</span>, <span class="st">&#39;laughter&#39;</span>}</a></code></pre></div>
+<p>In the first line, we create a set object with three elements and assign it to the variable <code>my_set</code>. Because set objects are mutable, we can add <code>'happy'</code> to the set and remove <code>'happiness'</code> from the set.</p>
+<p><strong>Dicts</strong></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_dict <span class="op">=</span> {<span class="st">&quot;first_name&quot;</span>: <span class="st">&quot;Mattieu&quot;</span>, <span class="st">&quot;last_name&quot;</span>: <span class="st">&quot;Ricard&quot;</span>}</a>
+<a class="sourceLine" id="cb43-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_dict)</a>
+<a class="sourceLine" id="cb43-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;dict&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb43-4" title="4"><span class="op">&gt;&gt;&gt;</span> my_dict[<span class="st">&quot;location&quot;</span>] <span class="op">=</span> <span class="st">&quot;Nepal&quot;</span></a>
+<a class="sourceLine" id="cb43-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_dict</a>
+<a class="sourceLine" id="cb43-6" title="6">{<span class="st">&#39;first_name&#39;</span>: <span class="st">&#39;Mattieu&#39;</span>, <span class="st">&#39;last_name&#39;</span>: <span class="st">&#39;Ricard&#39;</span>, <span class="st">&#39;location&#39;</span>: <span class="st">&#39;Nepal&#39;</span>}</a>
+<a class="sourceLine" id="cb43-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> my_dict[<span class="st">&#39;location&#39;</span>]</a>
+<a class="sourceLine" id="cb43-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_dict</a>
+<a class="sourceLine" id="cb43-9" title="9">{<span class="st">&#39;first_name&#39;</span>: <span class="st">&#39;Mattieu&#39;</span>, <span class="st">&#39;last_name&#39;</span>: <span class="st">&#39;Ricard&#39;</span>}</a></code></pre></div>
+<p>On line one, we create a dict object that has two key-value pairs. Then, because dict objects are mutable, we add key-value pair <code>"location": "Nepal"</code>. Last, we delete that same key-value pair.</p>
+<p>Mutable objects work great when you know you will likely need to change the size of the object as you use and interact with it. Changing mutable objects is cheap (because you don’t have to copy all existing elements to a new object).</p>
+<p><strong>Aliasing with Mutable Objects</strong></p>
+<p>Below, I’m going to walk through what happens when you <strong>alias</strong> a mutable object. In Python, aliasing happens whenever a variable’s value is assigned to another variable because variables are just names that store references to values.</p>
+<p>Let me illustrate this with a helpful code visualizer tool called <a href="http://www.pythontutor.com/">Python Tutor (Links to an external site.)</a>:</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png" alt="https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png" /><figcaption>https://tk-assets.lambdaschool.com/ba46ee2f-6bb4-421e-8be7-cba3a55eedcf_Untitled.png</figcaption>
+</figure>
+<p>On line 1, we instantiate a new list object with three elements (<code>1</code>, <code>2</code>, and <code>3</code>). The name <code>my_list_orig</code> is the variable that we assign the new list to.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png" alt="https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png" /><figcaption>https://tk-assets.lambdaschool.com/23cd8845-e086-4cf6-9b50-70b37a11731b_Untitled-2.png</figcaption>
+</figure>
+<p>Then, on line 2, we create an alias of <code>my_list_orig</code> by pointing <code>my_list_alias</code> to whatever object <code>my_list_orig</code> is pointing at. Notice in the image above that there is still only one list object. However, there are two variables in the global frame, and they are both pointing to the same object.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png" alt="https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png" /><figcaption>https://tk-assets.lambdaschool.com/604c130d-254c-4126-87a8-49625e676ef4_Untitled-3.png</figcaption>
+</figure>
+<p>On line 3, we append a new element to <code>my_list_orig</code>. Notice that, because both variables are referencing the same object, even though we appended to <code>my_list_orig</code>, we also modified <code>my_list_alias</code>.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png" alt="https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png" /><figcaption>https://tk-assets.lambdaschool.com/f1655834-f68c-4b49-95ca-93d4a1578423_Untitled-4.png</figcaption>
+</figure>
+<p>On line 4, we removed the element <code>1</code> from <code>my_list_orig</code>. Notice, just like when we added to the list, <code>my_list_alias</code> is also affected.</p>
+<p><em>This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.</em></p>
+<h4 id="immutable-objects-1">Immutable Objects <a id="immutable-objects"></a></h4>
+<p>An immutable object is an object whose value cannot be changed after it is created. Immutable means <em>not changeable</em>. Anytime you try to update the value of an immutable object, a new object is created instead.</p>
+<p>The following types are immutable:</p>
+<ul>
+<li>Numbers (int, float, complex)</li>
+<li>Strings</li>
+<li>Bytes</li>
+<li>Booleans</li>
+<li>Tuples</li>
+</ul>
+<p>Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more <em>expensive</em> to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.</p>
+<p>Let’s look at a few examples:</p>
+<p><strong>Numbers</strong></p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_int <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb44-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_int)</a>
+<a class="sourceLine" id="cb44-3" title="3"><span class="dv">4513307280</span></a>
+<a class="sourceLine" id="cb44-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_int)</a>
+<a class="sourceLine" id="cb44-5" title="5"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb44-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_int</a>
+<a class="sourceLine" id="cb44-7" title="7"><span class="dv">1</span></a>
+<a class="sourceLine" id="cb44-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_int <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb44-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_int)</a>
+<a class="sourceLine" id="cb44-10" title="10"><span class="dv">4513307312</span></a>
+<a class="sourceLine" id="cb44-11" title="11"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(my_int)</a>
+<a class="sourceLine" id="cb44-12" title="12"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;int&#39;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb44-13" title="13"><span class="op">&gt;&gt;&gt;</span> my_int</a>
+<a class="sourceLine" id="cb44-14" title="14"><span class="dv">2</span></a>
+<a class="sourceLine" id="cb44-15" title="15"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>In the code above, the first line creates a new int object, and the variable <code>my_int</code> now points at that object. You can see that this object has <code>int</code> for its type, <code>4513307280</code> for its identity (location in memory), and <code>1</code> for its value.</p>
+<p>Then, we assign <code>2</code> to <code>my_int</code>which creates a whole new object and assigns it to the variable <code>my_int</code>. This object has <code>int</code> for its type, <code>4513307312</code> for its identity (which you can see is different from the first object), and <code>2</code> for its value.</p>
+<p><strong>Strings</strong></p>
+<p>Let’s look at how string concatenation works in Python. Remember that str objects are immutable.</p>
+<pre class="text"><code>&gt;&gt;&gt; my_str = &#39;a&#39;
+&gt;&gt;&gt; type(my_str)
+&lt;class &#39;str&#39;&gt;
+&gt;&gt;&gt; id(my_str)
+140716674193840
+&gt;&gt;&gt; my_str
+&#39;a&#39;
+&gt;&gt;&gt; my_str += &#39;b&#39;
+&gt;&gt;&gt; type(my_str)
+&lt;class &#39;str&#39;&gt;
+&gt;&gt;&gt; id(my_str)
+140716674658992
+&gt;&gt;&gt; my_str
+&#39;ab&#39;
+&gt;&gt;&gt;</code></pre>
+<p>So, on line 1, we create a string object with the value <code>'a'</code> and assign it to the variable <code>my_str</code>. We verify that the object is of type <code>str</code>, we print its identity (<code>140716674193840</code>) and print its value.</p>
+<p>Then, we concatenate <code>'b'</code> onto the existing string with the line <code>my_str += 'b'</code>. Now, because string objects are immutable, we cannot change a string object’s value after it has been created. To concatenate, we create a new string object and assign the value <code>'ab'</code> to that object.</p>
+<p>This behavior in Python is vital to be aware of when working with string concatenation. If you have to add and remove frequently from a string, this will be inefficient if you work with string objects directly.</p>
+<p><strong>Tuples</strong></p>
+<p>Tuples are an immutable container of names, where each name has an unchangeable (immutable) binding to an object in memory. You cannot change the bindings of the names to the objects.</p>
+<pre class="text"><code>&gt;&gt;&gt; my_tuple = (&#39;love&#39;, [1,2,3], True)
+&gt;&gt;&gt; my_tuple[0]
+&#39;love&#39;
+&gt;&gt;&gt; my_tuple[0] = &#39;laughter&#39;
+Traceback (most recent call last):
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: &#39;tuple&#39; object does not support item assignment
+&gt;&gt;&gt;</code></pre>
+<p>Here we created a tuple using <code>(</code> and <code>)</code> to denote the tuple literal syntax. Just like a list, tuples can contain elements of any type. Above, we’ve included a string, a list, and a boolean as our tuple elements. We are proving the tuple object’s immutability by showing the error that occurs when trying to assign a new item to a position in the tuple.</p>
+<p>One thing that often causes confusion surrounding the immutability of tuples in Python is demonstrated by the following behavior:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>] <span class="op">=</span> [<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb47-2" title="2">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb47-3" title="3"> File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb47-4" title="4"><span class="pp">TypeError</span>: <span class="st">&#39;tuple&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a>
+<a class="sourceLine" id="cb47-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_tuple[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb47-6" title="6"><span class="dv">140716674620864</span></a>
+<a class="sourceLine" id="cb47-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">0</span>] <span class="op">=</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb47-8" title="8"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">1</span>] <span class="op">=</span> <span class="dv">5</span></a>
+<a class="sourceLine" id="cb47-9" title="9"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>][<span class="dv">2</span>] <span class="op">=</span> <span class="dv">6</span></a>
+<a class="sourceLine" id="cb47-10" title="10"><span class="op">&gt;&gt;&gt;</span> my_tuple[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb47-11" title="11">[<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</a>
+<a class="sourceLine" id="cb47-12" title="12"><span class="op">&gt;&gt;&gt;</span> my_tuple</a>
+<a class="sourceLine" id="cb47-13" title="13">(<span class="st">&#39;love&#39;</span>, [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>], <span class="va">True</span>)</a>
+<a class="sourceLine" id="cb47-14" title="14"><span class="op">&gt;&gt;&gt;</span> <span class="bu">id</span>(my_tuple[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb47-15" title="15"><span class="dv">140716674620864</span></a>
+<a class="sourceLine" id="cb47-16" title="16"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<p>Notice that we cannot create a new list object and bind it to the name at position 1 of our tuple. This is demonstrated when <code>my_tuple[1] = [4,5,6]</code> raises a <code>TypeError</code>. However, we can assign new objects to the list that is at position 1 of our tuple? Why is that? Well, what do we know about lists in Python? Lists are mutable objects. So, we can modify a list without creating a new object. So, when we are modifying the list directly (instead of assigning a new object), it doesn’t affect our tuple’s immutability. Notice that the identity (<code>140716674620864</code>) of the list at <code>my_tuple[1]</code> doesn’t change after replacing its three elements with <code>4</code>, <code>5</code>, and <code>6</code>.</p>
+<h4 id="passing-objects-to-functions-1">Passing Objects to Functions <a id="passing-objects-to-functions"></a></h4>
+<p>Mutable and immutable objects are not treated the same when they are passed as arguments to functions. When mutable objects are passed into a function, they are passed by reference. So, suppose you change the mutable object that was passed in as an argument. In that case, you are changing the original object as well.</p>
+<p><strong>Mutable Objects as Arguments</strong></p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> append_num_to_list(lst, num):</a>
+<a class="sourceLine" id="cb48-3" title="3">... lst.append(num)</a>
+<a class="sourceLine" id="cb48-4" title="4">...</a>
+<a class="sourceLine" id="cb48-5" title="5"><span class="op">&gt;&gt;&gt;</span> append_num_to_list(my_list, <span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb48-6" title="6"><span class="op">&gt;&gt;&gt;</span> my_list</a>
+<a class="sourceLine" id="cb48-7" title="7">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>]</a>
+<a class="sourceLine" id="cb48-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif" alt="https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif" /><figcaption>https://tk-assets.lambdaschool.com/5528e90f-2784-4199-b520-a4d03adccbbc_mutable-object-passed-as-argument-to-function.gif</figcaption>
+</figure>
+<p>Notice that when <code>append_num_to_list</code> is called and <code>my_list</code> is passed in as an argument. When <code>my_list</code> is bound to <code>lst</code> in that stack frame, <code>lst</code> points to the original <code>my_list</code> in memory. The function call did not create a copy of <code>my_list</code>. This behavior is because lists are mutable objects in Python.</p>
+<p><strong>Immutable Objects as Arguments</strong></p>
+<p>Next, let’s see how Python behaves when we pass an immutable object as an argument to a function:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_string <span class="op">=</span> <span class="st">&quot;I am an immutable object.&quot;</span></a>
+<a class="sourceLine" id="cb49-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> concatenate_string_to_string(orig_string, string_to_add):</a>
+<a class="sourceLine" id="cb49-3" title="3">... <span class="cf">return</span> orig_string <span class="op">+</span> string_to_add</a>
+<a class="sourceLine" id="cb49-4" title="4">...</a>
+<a class="sourceLine" id="cb49-5" title="5"><span class="op">&gt;&gt;&gt;</span> concatenate_string_to_string(my_string, <span class="st">&quot; I hope!&quot;</span>)</a>
+<a class="sourceLine" id="cb49-6" title="6"><span class="co">&#39;I am an immutable object. I hope!&#39;</span></a>
+<a class="sourceLine" id="cb49-7" title="7"><span class="op">&gt;&gt;&gt;</span> my_string</a>
+<a class="sourceLine" id="cb49-8" title="8"><span class="co">&#39;I am an immutable object.&#39;</span></a>
+<a class="sourceLine" id="cb49-9" title="9"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif" alt="https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif" /><figcaption>https://tk-assets.lambdaschool.com/3e6a1461-9853-4494-8c17-33919e641eb0_immutable-object-passed-argument-to-function.gif</figcaption>
+</figure>
+<p>Notice when an immutable object is passed into a function, the object is copied and bound to the parameter name. In the example above, when <code>my_string</code> is passed into <code>concatenate_string_to_string</code>, <code>my_string</code> is copied to a new object bound to the name <code>orig_string</code>.</p>
+<h3 id="chpallenge">Chpallenge <a id="challenge"></a></h3>
+<h3 id="additional-resources-1">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/">Mutable vs. Immutable Objects in Python - A Visual and Hands-On Guide (Links to an external site.)</a></li>
+<li><a href="https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a">Python Basics: Mutable vs. Immutable Objects (Links to an external site.)</a></li>
+<li><a href="https://www.educative.io/edpresso/what-are-mutable-and-immutable-objects-in-python3">What are mutable and immutable objects in Python3? (Links to an external site.)</a></li>
+</ul>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1">@bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1</span>#main.py” %}</p>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-03---compare-the-time-complexity-of-different-approaches-to-a-problem-using-big-o-notation">Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation</h2>
+<h3 id="overview-6">Overview <a id="overview"></a></h3>
+<h4 id="what-is-an-algorithm">What is an algorithm? <a id="what-is-an-algorithm"></a></h4>
+<p>An algorithm is a set of instructions for accomplishing a task. Within this broad definition, we could call every piece of code an algorithm.</p>
+<h4 id="how-do-we-measure-how-good-an-algorithm-is">How do we measure how “good” an algorithm is? <a id="how-do-we-measure-how-good-an-algorithm-is"></a></h4>
+<p>After coming up with a first-pass solution to a problem, we need to measure how “good” our answer is. Will it stand up to the test of millions of users? Is it fast enough that our users will be blown away by how quickly they get their results? Or will torturously slow speeds cause lag that scares them all away?</p>
+<p>When given a choice between different algorithms, we want to choose the most efficient algorithm (considering both <em>time</em> and <em>space</em> efficiency depending on our needs).</p>
+<p><em>Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for.</em></p>
+<h4 id="what-is-big-o-notation">What is Big O notation? <a id="what-is-big-o-notation"></a></h4>
+<p>We need a way to talk about efficiency (number of operations in the worst case) in a more general sense.</p>
+<p>Big O notation is the language we use for describing how efficient an algorithm is.</p>
+<p>The specific terms of Big O notation describe how fast the runtime grows (relative to the input size), focusing on when the input gets extremely large.</p>
+<p>Why do we focus on the growth of runtime versus exact runtime? The actual runtime depends on the specific computer running the algorithm, so we cannot compare efficiencies that way. By focusing on the general growth, we can avoid exact runtime differences between machines and environments.</p>
+<p>We also talk about runtime relative to the input size because we need to express our speed in terms of <em>something</em>. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.</p>
+<p>We don’t care about speed when the input size is small. The differences in speed are likely to be minimal when the input size is small. When the input size gets enormous, we can see the differences in efficiency between algorithms.</p>
+<h4 id="common-big-o-run-times">Common Big O run times <a id="common-big-o-run-times"></a></h4>
+<p>Refer to the table below to see a list of the most common runtimes. The table is ordered from fastest to slowest.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Classification</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Constant <code>O(1)</code></td>
+<td style="text-align: left;">The runtime is entirely unaffected by the input size. This is the ideal solution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Logarithmic <code>O(log n)</code></td>
+<td style="text-align: left;">As the input size increases, the runtime will grow slightly slower. This is a pretty good solution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Linear <code>O(n)</code></td>
+<td style="text-align: left;">As the input size increases, the runtime will grow at the same rate. This is a pretty good solution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Polynomial <code>O(n^c)</code></td>
+<td style="text-align: left;">As the input size increases, the runtime will grow at a faster rate. This might work for small inputs but is not a scalable solution.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Exponential <code>O(c^n)</code></td>
+<td style="text-align: left;">As the input size increases, the runtime will grow at a much faster rate. This solution is inefficient.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Factorial <code>O(n!)</code></td>
+<td style="text-align: left;">As the input size increases, the runtime will grow astronomically, even with relatively small inputs. This solution is exceptionally inefficient.</td>
+</tr>
+</tbody>
+</table>
+<p>Besides the table, it’s also essential to look at the curves of these different runtimes.</p>
+<figure>
+<img src="https://tk-assets.lambdaschool.com/1b27038a-098f-46e5-bc20-03be9a3480b9_68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f65343335376235662d316436332d343463642d623861302d3439353732363061653965635f556e7469746c6564312e706e67.png" alt="https://tk-assets.lambdaschool.com/1b27038a-098f-46e5-bc20-03be9a3480b9_68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f65343335376235662d316436332d343463642d623861302d3439353732363061653965635f556e7469746c6564312e706e67.png" /><figcaption>https://tk-assets.lambdaschool.com/1b27038a-098f-46e5-bc20-03be9a3480b9_68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f65343335376235662d316436332d343463642d623861302d3439353732363061653965635f556e7469746c6564312e706e67.png</figcaption>
+</figure>
+<p>Again, <code>n</code> represents the size of the data, and on the chart above, <code>N</code> represents the number of operations. This visualization should help illustrate why <code>O(1)</code> or <code>O(log n)</code> is the most desirable.</p>
+<p><em>Note: Big O only matters for large data sets. An <code>O(n^3)</code> solution is adequate, as long as you can guarantee that your datasets will always be small.</em></p>
+<h4 id="a-few-examples">A few examples <a id="a-few-examples"></a></h4>
+<p>Let’s look at a few different examples of Python functions that print something to the output. For each of these, the input will be <code>items</code>.</p>
+<p><strong>Constant Time O(1)</strong></p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">def</span> print_only_one_thing(list_of_things):</a>
+<a class="sourceLine" id="cb50-2" title="2">    <span class="bu">print</span>(list_of_things[<span class="dv">0</span>])</a></code></pre></div>
+<p>Why is this constant time? Because no matter how large or small the input is (1,000,000 or 10), the number of computations within the function is the same.</p>
+<p><strong>Linear Time O(n)</strong></p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1"><span class="kw">def</span> print_list(list_of_things):</a>
+<a class="sourceLine" id="cb51-2" title="2">    <span class="cf">for</span> thing <span class="kw">in</span> list_of_things:</a>
+<a class="sourceLine" id="cb51-3" title="3">        <span class="bu">print</span>(thing)</a></code></pre></div>
+<p>Why is this classified as linear time? Because the speed of the algorithm increases at the same rate as the input size. If <code>list_of_things</code> has ten items, then the function will print ten times. If it has 10,000 items, then the function will print 10,000 times.</p>
+<p><strong>Quadratic Time O(n^2)</strong></p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="kw">def</span> print_permutations(list_of_things):</a>
+<a class="sourceLine" id="cb52-2" title="2">    <span class="cf">for</span> thing_one <span class="kw">in</span> list_of_things:</a>
+<a class="sourceLine" id="cb52-3" title="3">        <span class="cf">for</span> thing_two <span class="kw">in</span> list_of_things:</a>
+<a class="sourceLine" id="cb52-4" title="4">            <span class="bu">print</span>(thing_one, thing_two)</a></code></pre></div>
+<p>Why is this quadratic time? The clue is the nested for loops. These nested for loops mean that for each item in <code>list_of_things</code> (the outer loop), we iterate through every item in <code>list_of_things</code> (the inner loop). For an input size of <code>n</code>, we have to print <code>n</code> * <code>n</code> times or <code>n^2</code> times.</p>
+<h4 id="what-are-we-supposed-to-do-with-the-constants">What are we supposed to do with the constants? <a id="what-are-we-supposed-to-do-with-the-constants"></a></h4>
+<p>What if we had a function like this?</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb53-1" title="1"><span class="kw">def</span> do_a_bunch_of_stuff(list_of_things): <span class="co"># O(1 + n/2 + 2000)</span></a>
+<a class="sourceLine" id="cb53-2" title="2">    last_idx <span class="op">=</span> <span class="bu">len</span>(list_of_things) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb53-3" title="3">    <span class="bu">print</span>(list_of_things[last_idx]) <span class="co"># O(1)</span></a>
+<a class="sourceLine" id="cb53-4" title="4"></a>
+<a class="sourceLine" id="cb53-5" title="5">    middle_idx <span class="op">=</span> <span class="bu">len</span>(list_of_things) <span class="op">/</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb53-6" title="6">    idx <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb53-7" title="7">    <span class="cf">while</span> idx <span class="op">&lt;</span> middle_idx: <span class="co"># O(n/2)</span></a>
+<a class="sourceLine" id="cb53-8" title="8">        <span class="bu">print</span>(list_of_things[idx])</a>
+<a class="sourceLine" id="cb53-9" title="9">        idx <span class="op">=</span> idx <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb53-10" title="10"></a>
+<a class="sourceLine" id="cb53-11" title="11">    <span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2000</span>): <span class="co"># O(2000)</span></a>
+<a class="sourceLine" id="cb53-12" title="12">        <span class="bu">print</span>(num)</a></code></pre></div>
+<p><code>print(items[last_idx])</code> is constant time because it doesn’t change as the input changes. So, that portion of the function is <code>O(1)</code>.</p>
+<p>The while loop that prints up to the middle index is 1/2 of whatever the input size is; we can say that portion of the function is <code>O(n/2)</code>.</p>
+<p>The final portion will run 2000 times, no matter the size of the input.</p>
+<p>So, putting it all together, we could say that the efficiency is <code>O(1 + n/2 + 2000)</code>. However, we don’t say this. We describe this function as having linear time <code>O(n)</code> because we drop all of the constants. Why do we cut all of the constants? Because as the input size gets huge, adding 2000 or dividing by 2 has minimal effect on the algorithm’s performance.</p>
+<h4 id="most-significant-term">Most significant term <a id="most-significant-term"></a></h4>
+<p>Let’s consider the following function:</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb54-1" title="1"><span class="kw">def</span> do_different_things_in_the_same_function(list_of_things): <span class="co"># O(n + n^2)</span></a>
+<a class="sourceLine" id="cb54-2" title="2">    <span class="co"># print all each item in the list</span></a>
+<a class="sourceLine" id="cb54-3" title="3">    <span class="cf">for</span> thing <span class="kw">in</span> list_of_things: <span class="co"># O(n)</span></a>
+<a class="sourceLine" id="cb54-4" title="4">        <span class="bu">print</span>(thing)</a>
+<a class="sourceLine" id="cb54-5" title="5"></a>
+<a class="sourceLine" id="cb54-6" title="6">    <span class="co"># print every possible pair of things in the list</span></a>
+<a class="sourceLine" id="cb54-7" title="7">    <span class="cf">for</span> thing_one <span class="kw">in</span> list_of_things: <span class="co"># O(n * n) = O(n^2)</span></a>
+<a class="sourceLine" id="cb54-8" title="8">        <span class="cf">for</span> thing_two <span class="kw">in</span> list_of_things:</a>
+<a class="sourceLine" id="cb54-9" title="9">            <span class="bu">print</span>(thing_one, thing_two)</a></code></pre></div>
+<p>We could describe this function as <code>O(n + n^2)</code>; however, we only need to keep the essential term, <code>n^2</code>, so this would be <code>O(n^2)</code>. Why can we do this? Because as the input size (<code>n</code>) gets larger and larger, the less significant terms have less effect, and only the most significant term is important.</p>
+<h4 id="big-o-represents-the-worst-case">Big O represents the worst-case <a id="big-o-represents-the-worst-case"></a></h4>
+<p>Let’s consider the following function:</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb55-1" title="1"><span class="kw">def</span> find_thing(list_of_things, thing_we_are_trying_to_find):</a>
+<a class="sourceLine" id="cb55-2" title="2">    <span class="cf">for</span> thing <span class="kw">in</span> list_of_things:</a>
+<a class="sourceLine" id="cb55-3" title="3">        <span class="cf">if</span> thing <span class="op">==</span> thing_we_are_trying_to_find:</a>
+<a class="sourceLine" id="cb55-4" title="4">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb55-5" title="5"></a>
+<a class="sourceLine" id="cb55-6" title="6">    <span class="cf">return</span> <span class="va">False</span></a></code></pre></div>
+<p>What would the result be if it just so happens that the <code>thing_we_are_trying_to_find</code> in <code>list_of_things</code> is the very first item in the list? The function would only have to look at one item in <code>list_of_things</code> before returning. In this case, it would be <code>O(1)</code>. But, when we talk about a function’s complexity, we usually assume the “worst case.” What would the “worst-case” be? It would be if it were the last item in <code>list_of_things</code>. In that case, we would have to look through all the <code>list_of_things</code>, and that complexity would be <code>O(n)</code>.</p>
+<p><em>Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:</em> <a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation"><em>Big-Theta notation (Links to an external site.)</em></a> <em>and</em> <a href="https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation"><em>Big-O notation (Links to an external site.)</em></a><em>.</em></p>
+<h4 id="do-constants-ever-matter">Do constants ever matter? <a id="do-constants-ever-matter"></a></h4>
+<p>Complexity analysis with Big O notation is a valuable tool. It would be best if you got in the habit of thinking about the efficiency of the algorithms you write and use in your code. However, just because two algorithms have the same Big O notation doesn’t mean they are equal.</p>
+<p>Imagine you have a script that takes 1 hour to run. By improving the function, you can divide that runtime by six, and now it only takes 10 minutes to run. With Big O notation, <code>O(n)</code> and <code>O(n/6)</code> can both be written as <code>O(n)</code>, but that doesn’t mean it isn’t worth optimizing the script to save 50 minutes every time the script runs.</p>
+<p>That being said, there is a term you should become familiar with: <strong>premature optimization</strong> (<a href="https://xkcd.com/1691/">xkcd: Optimization (Links to an external site.)</a>). Sometimes, you can sacrifice readability or spend too much time on something to improve its efficiency. Depending on the situation, it could be that having a finished product to iterate on is more important than maximally efficient code. It is your job as a developer to know when making your code more efficient is necessary. You will always be making calculated tradeoffs between runtime, memory, development time, readability, and maintainability. It takes time to develop the wisdom to strike the right balance depending on the scenario.</p>
+<h3 id="follow-along-6">Follow Along <a id="follow-along"></a></h3>
+<p>Let’s look at a few code snippets and classify their runtime complexity using Big O notation.</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb56-1" title="1"><span class="kw">def</span> foo(n):</a>
+<a class="sourceLine" id="cb56-2" title="2">    i <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb56-3" title="3">    <span class="cf">while</span> i <span class="op">&lt;</span> n:</a>
+<a class="sourceLine" id="cb56-4" title="4">        <span class="bu">print</span>(i)</a>
+<a class="sourceLine" id="cb56-5" title="5">        i <span class="op">*=</span> <span class="dv">2</span></a></code></pre></div>
+<p>First, let’s think about what the above function is doing. It’s printing <code>i</code>…but <code>i</code> is not being incremented by 1, as we usually see. It’s <em>doubled</em> every time we run the loop. So, for example, if <code>n = 100</code>, then the final result would be…</p>
+<pre class="text"><code>1
+2
+4
+8
+16
+32
+64</code></pre>
+<p>Or if <code>n = 10</code>, then we would print…</p>
+<pre class="text"><code>1
+2
+4
+8</code></pre>
+<p>We can use the process of elimination to narrow down which runtime classification makes sense for this algorithm. The number of times the loop runs seems to vary based on the value of <code>n</code>, so this is NOT O(1).</p>
+<p>From the above examples, we can also see that the number of times the loop runs is increasing <em>slower</em> than the input size is increasing. <code>n</code> must be <em>doubled</em> before the loop will run one more time. We can eliminate classifications such as <code>O(n log n)</code>, <code>O(n^c)</code>, <code>O(c^n)</code>, and <code>O(n!)</code>.</p>
+<p>The only two options left at this point are logarithmic and linear. Since the two growth rates (input, the number of operations) are not the same, <strong>this function must run in logarithmic time!</strong></p>
+<h3 id="challenge-3">Challenge <a id="challenge"></a></h3>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-2-time-complexity-1">@bgoonz/cs-unit-1-sprint-1-module-2-time-complexity-1</span>” %}</p>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+</body>
+</html>

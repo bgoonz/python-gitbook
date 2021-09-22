@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>untitled-4</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="d2-graphs-2">D2-Graphs 2</h1>
+<p>{% embed url=“https://gist.github.com/bgoonz/4dc35438f8c293cf68e81c0d73ddfe1a” %}</p>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-01---represent-a-breadth-first-search-of-a-graph-in-pseudo-code-and-recall-typical-applications-for-its-use">Objective 01 - Represent a breadth-first-search of a graph in pseudo-code and recall typical applications for its use</h2>
+<h3 id="overview">Overview <a id="overview"></a></h3>
+<p>One method we can use when searching a graph is a <strong>breadth-first search</strong> (BFS). This sorting algorithm explores the graph outward in rings of increasing distance from the starting vertex.</p>
+<p>The algorithm never attempts to explore a vert it has already explored or is currently exploring.</p>
+<p>For example, when starting from the upper left, the numbers on this graph show a vertex visitation order in a BFS:</p>
+<figure>
+<img src="https://camo.githubusercontent.com/b22308d5dd2fe7ee7f295f89482bdab2f8e8976f/68747470733a2f2f692e696d6775722e636f6d2f314c506e4f41582e6a7067" alt="https://camo.githubusercontent.com/b22308d5dd2fe7ee7f295f89482bdab2f8e8976f/68747470733a2f2f692e696d6775722e636f6d2f314c506e4f41582e6a7067" /><figcaption>https://camo.githubusercontent.com/b22308d5dd2fe7ee7f295f89482bdab2f8e8976f/68747470733a2f2f692e696d6775722e636f6d2f314c506e4f41582e6a7067</figcaption>
+</figure>
+<p>We followed the edges represented with thicker black arrows. We did not follow the edges represented with thinner grey arrows because we already visited their destination nodes.</p>
+<p>The exact order will vary depending on which branches get taken first and which vertex is the starting vertex.</p>
+<p><em>Note: it’s essential to know the distinction between a breadth-first search and a breadth-first traversal. A breadth-first traversal is when you visit each vertex in the breadth-first order and do something during the traversal. A breadth-first search is when you search through vertexes in the breadth-first order until you find the target vertex. A breadth-first search usually returns the shortest path from the starting vertex to the target vertex once the target is found.</em></p>
+<h4 id="applications-of-bfs">Applications of BFS <a id="applications-of-bfs"></a></h4>
+<ul>
+<li>Pathfinding, Routing</li>
+<li>Find neighbor nodes in a P2P network like BitTorrent</li>
+<li>Web crawlers</li>
+<li>Finding people <code>n</code> connections away on a social network</li>
+<li>Find neighboring locations on the graph</li>
+<li>Broadcasting in a network</li>
+<li>Cycle detection in a graph</li>
+<li>Finding <a href="https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29">Connected Components (Links to an external site.)</a></li>
+<li>Solving several theoretical graph problems</li>
+</ul>
+<h4 id="coloring-vertexes">Coloring Vertexes <a id="coloring-vertexes"></a></h4>
+<p>As we explore the graph, it is useful to color verts as we arrive at them and as we leave them behind as “already searched”.</p>
+<p>Unvisited verts are white, verts whose neighbors are being explored are gray, and verts with no unexplored neighbors are black.</p>
+<h4 id="keeping-track-of-what-we-need-to-explore">Keeping Track of What We Need to Explore <a id="keeping-track-of-what-we-need-to-explore"></a></h4>
+<p>In a BFS, it’s useful to track which nodes we still need to explore. For example, in the diagram above, when we get to node 2, we know that we also need to explore nodes 3 and 4.</p>
+<p>We can track that by adding neighbors to a <em>queue</em> (which remember is first in, first out), and then explore the verts in the queue one by one.</p>
+<h3 id="follow-along">Follow Along <a id="follow-along"></a></h3>
+<h4 id="pseudo-code-for-bfs">Pseudo-code for BFS <a id="pseudo-code-for-bfs"></a></h4>
+<p>Let’s explore some pseudo-code that shows a basic implementation of a breadth-first-search of a graph. Make sure you can read the pseudo-code and understand what each line is doing before moving on.</p>
+<pre class="text"><code>BFS(graph, startVert):
+    for v of graph.vertexes:
+        v.color = white
+
+    startVert.color = gray
+        queue.enqueue(startVert)
+
+    while !queue.isEmpty():
+        u = queue[0]  // Peek at head of the queue, but do not dequeue!
+
+        for v of u.neighbors:
+            if v.color == white:
+                v.color = gray
+                queue.enqueue(v)
+
+        queue.dequeue()
+        u.color = black</code></pre>
+<p>You can see that we start with a graph and the vertex we will start on. The very first thing we do is go through each of the vertices in the graph and mark them with the color white. At the outset, we mark all the verts as unvisited.</p>
+<p>Next, we mark the starting vert as gray. We are exploring the starting verts’ neighbors. We also enqueue the starting vert, which means it will be the first vert we look at once we enter the while loop.</p>
+<p>The condition we check at the outset of each while loop is if the queue is <strong>not</strong> empty. If it is not empty, we peek at the first item in the queue by storing it in a variable.</p>
+<p>Then, we loop through each of that vert’s neighbors and:</p>
+<ul>
+<li>We check if it is unvisited (the color white).</li>
+<li>If it is unvisited, we mark it as gray (meaning we will explore its neighbors).</li>
+<li>We enqueue the vert.</li>
+</ul>
+<p>Next, we dequeue the current vert we’ve been exploring and mark that vert as black (marking it as visited).</p>
+<p>We continue with this process until we have explored all the verts in the graph.</p>
+<h3 id="challenge">Challenge <a id="challenge"></a></h3>
+<p>On your own, complete the following tasks:</p>
+<ol type="1">
+<li>Please spend a few minutes researching to find a unique use-case of a breadth-first-search that we did not mention in the list above.</li>
+<li><p>Using the graph represented below, draw a picture of the graph and label each of the verts to show the correct vertex visitation order for a breadth-first-search starting with vertex <code>"I"</code>.</p>
+<pre class="text"><code>class Graph:
+    def __init__(self):
+        self.vertices = {
+                            &quot;A&quot;: {&quot;B&quot;, &quot;C&quot;, &quot;D&quot;},
+                            &quot;B&quot;: {},
+                            &quot;C&quot;: {&quot;E&quot;, &quot;F&quot;},
+                            &quot;D&quot;: {&quot;G&quot;},
+                            &quot;E&quot;: {&quot;G&quot;},
+                            &quot;F&quot;: {&quot;J&quot;},
+                            &quot;G&quot;: {},
+                            &quot;H&quot;: {&quot;C&quot;, &quot;J&quot;, &quot;K&quot;},
+                            &quot;I&quot;: {&quot;D&quot;, &quot;E&quot;, &quot;H&quot;},
+                            &quot;J&quot;: {&quot;L&quot;},
+                            &quot;K&quot;: {&quot;C&quot;},
+                            &quot;L&quot;: {&quot;M&quot;},
+                            &quot;M&quot;: {},
+                            &quot;N&quot;: {&quot;H&quot;, &quot;K&quot;, &quot;M&quot;}
+                        }</code></pre></li>
+<li><p>Besides marking verts with colors as in the pseudo-code example above, how else could you track the verts we have already visited?</p></li>
+</ol>
+<h3 id="additional-resources">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://brilliant.org/wiki/breadth-first-search-bfs/">https://brilliant.org/wiki/breadth-first-search-bfs/</a></li>
+</ul>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-02---represent-a-depth-first-search-of-a-graph-in-pseudo-code-and-recall-typical-applications-for-its-use">Objective 02 - Represent a depth-first-search of a graph in pseudo-code and recall typical applications for its use</h2>
+<h3 id="overview-1">Overview <a id="overview"></a></h3>
+<p>Another method we can use when searching a graph is a <strong>depth-first search</strong> (DFS). This searching algorithm <em>“dives”</em> <em>“down”</em> the graph as far as it can before backtracking and exploring another branch.</p>
+<p>The algorithm never attempts to explore a vert it has already explored or is exploring.</p>
+<p>For example, when starting from the upper left, the numbers on this graph show a vertex visitation order in a DFS:</p>
+<figure>
+<img src="https://camo.githubusercontent.com/30ab40a62286d6fe39210efa52f5b802f383daa0/68747470733a2f2f692e696d6775722e636f6d2f565654433959782e6a7067" alt="https://camo.githubusercontent.com/30ab40a62286d6fe39210efa52f5b802f383daa0/68747470733a2f2f692e696d6775722e636f6d2f565654433959782e6a7067" /><figcaption>https://camo.githubusercontent.com/30ab40a62286d6fe39210efa52f5b802f383daa0/68747470733a2f2f692e696d6775722e636f6d2f565654433959782e6a7067</figcaption>
+</figure>
+<p>We followed the edges represented with thicker black arrows. We did not follow the edges represented with thinner grey arrows because we already visited their destination nodes.</p>
+<p>The exact order will vary depending on which branches get taken first and which vertex is the starting vertex.</p>
+<h4 id="applications-of-dfs">Applications of DFS <a id="applications-of-dfs"></a></h4>
+<p>DFS is often the preferred method or exploring a graph <em>if we want to ensure we visit every node in the graph</em>. For example, let’s say that we have a graph representing all the friendships in the entire world. We want to find a path between two known people, <code>Andy</code> and <code>Sarah</code>. If we used a depth-first search in this scenario, we could end up exceptionally far away from <code>Andy</code> while still not finding a path to <code>Sarah</code>. Using a DFS, we will eventually find the path, but it won’t find the shortest route, and it will also likely take a long time.</p>
+<p>So, this is an example of where a DFS <em>would not work well</em>. What about a genuine use case for DFS. Here are a few examples:</p>
+<ul>
+<li>Finding <a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">Minimum Spanning Trees (Links to an external site.)</a> of weighted graphs</li>
+<li>Pathfinding</li>
+<li>Detecting cycles in graphs</li>
+<li><a href="https://en.wikipedia.org/wiki/Topological_sorting">Topological sorting (Links to an external site.)</a>, useful for scheduling sequences of dependent jobs</li>
+<li>Solving and generating mazes</li>
+</ul>
+<h4 id="coloring-vertexes-1">Coloring Vertexes <a id="coloring-vertexes"></a></h4>
+<p>Again, as we explore the graph, it is useful to color verts as we arrive at them and as we leave them behind as “already searched”.</p>
+<p>Unvisited verts are white, verts whose neighbors are being explored are gray, and verts with no unexplored neighbors are black.</p>
+<h4 id="recursion">Recursion <a id="recursion"></a></h4>
+<p>Since DFS will pursue leads in the graph as far as it can, and then “back up” to an earlier branch point to explore that way, recursion is an excellent approach to help “remember” where we left off.</p>
+<p>Looking at it with pseudo-code to make the recursion more clear:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">explore(graph) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    visit(this_vert)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    explore(remaining_graph)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">}</a></code></pre></div>
+<h3 id="follow-along-1">Follow Along <a id="follow-along"></a></h3>
+<h4 id="pseudo-code-for-dfs">Pseudo-code for DFS <a id="pseudo-code-for-dfs"></a></h4>
+<p>Let’s explore some pseudo-code that shows a basic implementation of a depth-first-search of a graph. Make sure you can read the pseudo-code and understand what each line is doing before moving on.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">DFS(graph):</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">for</span> v of graph.verts:</a>
+<a class="sourceLine" id="cb4-3" title="3">        v.color <span class="op">=</span> white</a>
+<a class="sourceLine" id="cb4-4" title="4">        v.parent <span class="op">=</span> null</a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="cf">for</span> v of graph.verts:</a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="cf">if</span> v.color <span class="op">==</span> white:</a>
+<a class="sourceLine" id="cb4-8" title="8">            DFS_visit(v)</a>
+<a class="sourceLine" id="cb4-9" title="9"></a>
+<a class="sourceLine" id="cb4-10" title="10">DFS_visit(v):</a>
+<a class="sourceLine" id="cb4-11" title="11">    v.color <span class="op">=</span> gray</a>
+<a class="sourceLine" id="cb4-12" title="12"></a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="cf">for</span> neighbor of v.adjacent_nodes:</a>
+<a class="sourceLine" id="cb4-14" title="14">        <span class="cf">if</span> neighbor.color <span class="op">==</span> white:</a>
+<a class="sourceLine" id="cb4-15" title="15">            neighbor.parent <span class="op">=</span> v</a>
+<a class="sourceLine" id="cb4-16" title="16">            DFS_visit(neighbor)</a>
+<a class="sourceLine" id="cb4-17" title="17"></a>
+<a class="sourceLine" id="cb4-18" title="18">    v.color <span class="op">=</span> black</a></code></pre></div>
+<p>You can see that we have two functions in our pseudo-code above. The first function, <code>DFS()</code> takes the graph as a parameter and marks all the verts as unvisited (white). It also sets the parent of each vert to <code>null</code>. The next loop in this function visits each vert in the graph, and if it is unvisited, it passes that vert into our second function <code>DFS_visit()</code>.</p>
+<p><code>DFS_visit()</code> starts by marking the vert as gray (in the process of being explored). Then, it loops through all of its unvisited neighbors. In that loop, it sets the parent and then makes a recursive call to the <code>DFS_visit()</code>. Once it’s done exploring all the neighbors, it marks the vert as black (visited).</p>
+<h3 id="challenge-1">Challenge <a id="challenge"></a></h3>
+<p>On your own, complete the following tasks:</p>
+<ol type="1">
+<li>Please spend a few minutes researching to find a unique use-case of a depth-first search that we did not mention in the list above.</li>
+<li>Using the graph represented below, draw a picture of the graph and label each of the verts to show the correct vertex visitation order for a depth-first-search starting with vertex <code>"I"</code>.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Graph:</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="va">self</span>.vertices <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb5-4" title="4">                            <span class="st">&quot;A&quot;</span>: {<span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>},</a>
+<a class="sourceLine" id="cb5-5" title="5">                            <span class="st">&quot;B&quot;</span>: {},</a>
+<a class="sourceLine" id="cb5-6" title="6">                            <span class="st">&quot;C&quot;</span>: {<span class="st">&quot;E&quot;</span>, <span class="st">&quot;F&quot;</span>},</a>
+<a class="sourceLine" id="cb5-7" title="7">                            <span class="st">&quot;D&quot;</span>: {<span class="st">&quot;G&quot;</span>},</a>
+<a class="sourceLine" id="cb5-8" title="8">                            <span class="st">&quot;E&quot;</span>: {<span class="st">&quot;G&quot;</span>},</a>
+<a class="sourceLine" id="cb5-9" title="9">                            <span class="st">&quot;F&quot;</span>: {<span class="st">&quot;J&quot;</span>},</a>
+<a class="sourceLine" id="cb5-10" title="10">                            <span class="st">&quot;G&quot;</span>: {},</a>
+<a class="sourceLine" id="cb5-11" title="11">                            <span class="st">&quot;H&quot;</span>: {<span class="st">&quot;C&quot;</span>, <span class="st">&quot;J&quot;</span>, <span class="st">&quot;K&quot;</span>},</a>
+<a class="sourceLine" id="cb5-12" title="12">                            <span class="st">&quot;I&quot;</span>: {<span class="st">&quot;D&quot;</span>, <span class="st">&quot;E&quot;</span>, <span class="st">&quot;H&quot;</span>},</a>
+<a class="sourceLine" id="cb5-13" title="13">                            <span class="st">&quot;J&quot;</span>: {<span class="st">&quot;L&quot;</span>},</a>
+<a class="sourceLine" id="cb5-14" title="14">                            <span class="st">&quot;K&quot;</span>: {<span class="st">&quot;C&quot;</span>},</a>
+<a class="sourceLine" id="cb5-15" title="15">                            <span class="st">&quot;L&quot;</span>: {<span class="st">&quot;M&quot;</span>},</a>
+<a class="sourceLine" id="cb5-16" title="16">                            <span class="st">&quot;M&quot;</span>: {},</a>
+<a class="sourceLine" id="cb5-17" title="17">                            <span class="st">&quot;N&quot;</span>: {<span class="st">&quot;H&quot;</span>, <span class="st">&quot;K&quot;</span>, <span class="st">&quot;M&quot;</span>}</a>
+<a class="sourceLine" id="cb5-18" title="18">                        }</a></code></pre></div>
+<h3 id="additional-resources-1">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://brilliant.org/wiki/depth-first-search-dfs/">https://brilliant.org/wiki/depth-first-search-dfs/ (Links to an external site.)</a></li>
+</ul>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-03---implement-a-breadth-first-search-on-a-graph">Objective 03 - Implement a breadth-first search on a graph</h2>
+<h3 id="overview-2">Overview <a id="overview"></a></h3>
+<p>Now that we’ve looked at and understand the basics of a breadth-first search (BFS) on a graph, let’s implement a BFS algorithm.</p>
+<h3 id="follow-along-2">Follow Along <a id="follow-along"></a></h3>
+<p>Before defining our breadth-first search method, review our <code>Vertex</code> and <code>Graph</code> classes that we defined previously.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> Vertex:</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb6-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb6-4" title="4">        <span class="va">self</span>.connections <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb6-7" title="7">        <span class="cf">return</span> <span class="bu">str</span>(<span class="va">self</span>.value) <span class="op">+</span> <span class="st">&#39; connections: &#39;</span> <span class="op">+</span> <span class="bu">str</span>([x.value <span class="cf">for</span> x <span class="kw">in</span> <span class="va">self</span>.connections])</a>
+<a class="sourceLine" id="cb6-8" title="8"></a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="kw">def</span> add_connection(<span class="va">self</span>, vert, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="va">self</span>.connections[vert] <span class="op">=</span> weight</a>
+<a class="sourceLine" id="cb6-11" title="11"></a>
+<a class="sourceLine" id="cb6-12" title="12">    <span class="kw">def</span> get_connections(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb6-13" title="13">        <span class="cf">return</span> <span class="va">self</span>.connections.keys()</a>
+<a class="sourceLine" id="cb6-14" title="14"></a>
+<a class="sourceLine" id="cb6-15" title="15">    <span class="kw">def</span> get_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb6-16" title="16">        <span class="cf">return</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb6-17" title="17"></a>
+<a class="sourceLine" id="cb6-18" title="18">    <span class="kw">def</span> get_weight(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb6-19" title="19">        <span class="cf">return</span> <span class="va">self</span>.connections[vert]</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Graph:</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-3" title="3">        <span class="va">self</span>.vertices <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb7-4" title="4">        <span class="va">self</span>.count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-5" title="5"></a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="kw">def</span> <span class="fu">__contains__</span>(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb7-7" title="7">        <span class="cf">return</span> vert <span class="kw">in</span> <span class="va">self</span>.vertices</a>
+<a class="sourceLine" id="cb7-8" title="8"></a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="kw">def</span> <span class="fu">__iter__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-10" title="10">        <span class="cf">return</span> <span class="bu">iter</span>(<span class="va">self</span>.vertices.values())</a>
+<a class="sourceLine" id="cb7-11" title="11"></a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="kw">def</span> add_vertex(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb7-13" title="13">        <span class="va">self</span>.count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb7-14" title="14">        new_vert <span class="op">=</span> Vertex(value)</a>
+<a class="sourceLine" id="cb7-15" title="15">        <span class="va">self</span>.vertices[value] <span class="op">=</span> new_vert</a>
+<a class="sourceLine" id="cb7-16" title="16">        <span class="cf">return</span> new_vert</a>
+<a class="sourceLine" id="cb7-17" title="17"></a>
+<a class="sourceLine" id="cb7-18" title="18">    <span class="kw">def</span> add_edge(<span class="va">self</span>, v1, v2, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb7-19" title="19">        <span class="cf">if</span> v1 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb7-20" title="20">            <span class="va">self</span>.add_vertex(v1)</a>
+<a class="sourceLine" id="cb7-21" title="21">        <span class="cf">if</span> v2 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb7-22" title="22">            <span class="va">self</span>.add_vertex(v2)</a>
+<a class="sourceLine" id="cb7-23" title="23">        <span class="va">self</span>.vertices[v1].add_connection(<span class="va">self</span>.vertices[v2], weight)</a>
+<a class="sourceLine" id="cb7-24" title="24"></a>
+<a class="sourceLine" id="cb7-25" title="25">    <span class="kw">def</span> get_vertices(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-26" title="26">        <span class="cf">return</span> <span class="va">self</span>.vertices.keys()</a></code></pre></div>
+<p>Now, we will add a <code>breadth_first_search</code> method to our <code>Graph</code> class. One of the most common and simplest ways to implement a BFS is to use a queue to keep track of unvisited nodes and a set to keep track of visited nodes. Let’s start by defining the start of our function with these structures:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> Graph:</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb8-3" title="3">        <span class="va">self</span>.vertices <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb8-4" title="4">        <span class="va">self</span>.count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb8-5" title="5"></a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="kw">def</span> <span class="fu">__contains__</span>(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb8-7" title="7">        <span class="cf">return</span> vert <span class="kw">in</span> <span class="va">self</span>.vertices</a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="kw">def</span> <span class="fu">__iter__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb8-10" title="10">        <span class="cf">return</span> <span class="bu">iter</span>(<span class="va">self</span>.vertices.values())</a>
+<a class="sourceLine" id="cb8-11" title="11"></a>
+<a class="sourceLine" id="cb8-12" title="12">    <span class="kw">def</span> add_vertex(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb8-13" title="13">        <span class="va">self</span>.count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-14" title="14">        new_vert <span class="op">=</span> Vertex(value)</a>
+<a class="sourceLine" id="cb8-15" title="15">        <span class="va">self</span>.vertices[value] <span class="op">=</span> new_vert</a>
+<a class="sourceLine" id="cb8-16" title="16">        <span class="cf">return</span> new_vert</a>
+<a class="sourceLine" id="cb8-17" title="17"></a>
+<a class="sourceLine" id="cb8-18" title="18">    <span class="kw">def</span> add_edge(<span class="va">self</span>, v1, v2, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb8-19" title="19">        <span class="cf">if</span> v1 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb8-20" title="20">            <span class="va">self</span>.add_vertex(v1)</a>
+<a class="sourceLine" id="cb8-21" title="21">        <span class="cf">if</span> v2 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb8-22" title="22">            <span class="va">self</span>.add_vertex(v2)</a>
+<a class="sourceLine" id="cb8-23" title="23">        <span class="va">self</span>.vertices[v1].add_connection(<span class="va">self</span>.vertices[v2], weight)</a>
+<a class="sourceLine" id="cb8-24" title="24"></a>
+<a class="sourceLine" id="cb8-25" title="25">    <span class="kw">def</span> get_vertices(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb8-26" title="26">        <span class="cf">return</span> <span class="va">self</span>.vertices.keys()</a>
+<a class="sourceLine" id="cb8-27" title="27"></a>
+<a class="sourceLine" id="cb8-28" title="28">    <span class="kw">def</span> breadth_first_search(<span class="va">self</span>, starting_vert):</a>
+<a class="sourceLine" id="cb8-29" title="29">        to_visit <span class="op">=</span> Queue()</a>
+<a class="sourceLine" id="cb8-30" title="30">        visited <span class="op">=</span> <span class="bu">set</span>()</a>
+<a class="sourceLine" id="cb8-31" title="31">        to_visit.enqueue(starting_vert)</a>
+<a class="sourceLine" id="cb8-32" title="32">        visited.add(starting_vert)</a>
+<a class="sourceLine" id="cb8-33" title="33">        <span class="cf">while</span> to_visit.size() <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb8-34" title="34">            current_vert <span class="op">=</span> to_visit.dequeue()</a>
+<a class="sourceLine" id="cb8-35" title="35">            <span class="cf">for</span> next_vert <span class="kw">in</span> current_vert.get_connections():</a>
+<a class="sourceLine" id="cb8-36" title="36">                <span class="cf">if</span> next_vert <span class="kw">not</span> <span class="kw">in</span> visited:</a>
+<a class="sourceLine" id="cb8-37" title="37">                    visited.add(next_vert)</a>
+<a class="sourceLine" id="cb8-38" title="38">                    to_visit.enqueue(next_vert)</a></code></pre></div>
+<h3 id="challenge-2">Challenge <a id="challenge"></a></h3>
+<ol type="1">
+<li>What is time complexity in Big O notation of a breadth-first search on a graph with <code>V</code> vertices and <code>E</code> edges?</li>
+<li>Which method will find the <em><strong>shortest</strong></em> path between a starting point and any other reachable node? A breadth-first search or a depth-first search?</li>
+</ol>
+<h3 id="additional-resources-2">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/">https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/ (Links to an external site.)</a></li>
+</ul>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-04---implement-a-depth-first-search-on-a-graph">Objective 04 - Implement a depth-first search on a graph</h2>
+<h3 id="overview-3">Overview <a id="overview"></a></h3>
+<p>The depth-first search algorithm on a graph starts at an arbitrary vertex in the graph and explores as far as possible down each branch before backtracking. So, you start at the starting vertex, mark it as visited, and then move to an adjacent unvisited vertex. You continue this loop until every reachable vertex is visited.</p>
+<h3 id="follow-along-3">Follow Along <a id="follow-along"></a></h3>
+<p>Before defining our depth-first search method, review our <code>Vertex</code> and <code>Graph</code> classes that we defined previously.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">class</span> Vertex:</a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb9-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb9-4" title="4">        <span class="va">self</span>.connections <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb9-5" title="5"></a>
+<a class="sourceLine" id="cb9-6" title="6">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-7" title="7">        <span class="cf">return</span> <span class="bu">str</span>(<span class="va">self</span>.value) <span class="op">+</span> <span class="st">&#39; connections: &#39;</span> <span class="op">+</span> <span class="bu">str</span>([x.value <span class="cf">for</span> x <span class="kw">in</span> <span class="va">self</span>.connections])</a>
+<a class="sourceLine" id="cb9-8" title="8"></a>
+<a class="sourceLine" id="cb9-9" title="9">    <span class="kw">def</span> add_connection(<span class="va">self</span>, vert, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb9-10" title="10">        <span class="va">self</span>.connections[vert] <span class="op">=</span> weight</a>
+<a class="sourceLine" id="cb9-11" title="11"></a>
+<a class="sourceLine" id="cb9-12" title="12">    <span class="kw">def</span> get_connections(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-13" title="13">        <span class="cf">return</span> <span class="va">self</span>.connections.keys()</a>
+<a class="sourceLine" id="cb9-14" title="14"></a>
+<a class="sourceLine" id="cb9-15" title="15">    <span class="kw">def</span> get_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-16" title="16">        <span class="cf">return</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb9-17" title="17"></a>
+<a class="sourceLine" id="cb9-18" title="18">    <span class="kw">def</span> get_weight(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb9-19" title="19">        <span class="cf">return</span> <span class="va">self</span>.connections[vert]</a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">class</span> Graph:</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb10-3" title="3">        <span class="va">self</span>.vertices <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb10-4" title="4">        <span class="va">self</span>.count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb10-5" title="5"></a>
+<a class="sourceLine" id="cb10-6" title="6">    <span class="kw">def</span> <span class="fu">__contains__</span>(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb10-7" title="7">        <span class="cf">return</span> vert <span class="kw">in</span> <span class="va">self</span>.vertices</a>
+<a class="sourceLine" id="cb10-8" title="8"></a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="kw">def</span> <span class="fu">__iter__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb10-10" title="10">        <span class="cf">return</span> <span class="bu">iter</span>(<span class="va">self</span>.vertices.values())</a>
+<a class="sourceLine" id="cb10-11" title="11"></a>
+<a class="sourceLine" id="cb10-12" title="12">    <span class="kw">def</span> add_vertex(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb10-13" title="13">        <span class="va">self</span>.count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-14" title="14">        new_vert <span class="op">=</span> Vertex(value)</a>
+<a class="sourceLine" id="cb10-15" title="15">        <span class="va">self</span>.vertices[value] <span class="op">=</span> new_vert</a>
+<a class="sourceLine" id="cb10-16" title="16">        <span class="cf">return</span> new_vert</a>
+<a class="sourceLine" id="cb10-17" title="17"></a>
+<a class="sourceLine" id="cb10-18" title="18">    <span class="kw">def</span> add_edge(<span class="va">self</span>, v1, v2, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb10-19" title="19">        <span class="cf">if</span> v1 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb10-20" title="20">            <span class="va">self</span>.add_vertex(v1)</a>
+<a class="sourceLine" id="cb10-21" title="21">        <span class="cf">if</span> v2 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb10-22" title="22">            <span class="va">self</span>.add_vertex(v2)</a>
+<a class="sourceLine" id="cb10-23" title="23">        <span class="va">self</span>.vertices[v1].add_connection(<span class="va">self</span>.vertices[v2], weight)</a>
+<a class="sourceLine" id="cb10-24" title="24"></a>
+<a class="sourceLine" id="cb10-25" title="25">    <span class="kw">def</span> get_vertices(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb10-26" title="26">        <span class="cf">return</span> <span class="va">self</span>.vertices.keys()</a></code></pre></div>
+<p>Now, we will add a <code>depth_first_search</code> method to our <code>Graph</code> class. One of the most common and simplest ways to implement a DFS is to use a set to keep track of visited vertices and use recursion to manage the visitation order. Let’s now define our function:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">class</span> Graph:</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb11-3" title="3">        <span class="va">self</span>.vertices <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb11-4" title="4">        <span class="va">self</span>.count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb11-5" title="5"></a>
+<a class="sourceLine" id="cb11-6" title="6">    <span class="kw">def</span> <span class="fu">__contains__</span>(<span class="va">self</span>, vert):</a>
+<a class="sourceLine" id="cb11-7" title="7">        <span class="cf">return</span> vert <span class="kw">in</span> <span class="va">self</span>.vertices</a>
+<a class="sourceLine" id="cb11-8" title="8"></a>
+<a class="sourceLine" id="cb11-9" title="9">    <span class="kw">def</span> <span class="fu">__iter__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb11-10" title="10">        <span class="cf">return</span> <span class="bu">iter</span>(<span class="va">self</span>.vertices.values())</a>
+<a class="sourceLine" id="cb11-11" title="11"></a>
+<a class="sourceLine" id="cb11-12" title="12">    <span class="kw">def</span> add_vertex(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb11-13" title="13">        <span class="va">self</span>.count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb11-14" title="14">        new_vert <span class="op">=</span> Vertex(value)</a>
+<a class="sourceLine" id="cb11-15" title="15">        <span class="va">self</span>.vertices[value] <span class="op">=</span> new_vert</a>
+<a class="sourceLine" id="cb11-16" title="16">        <span class="cf">return</span> new_vert</a>
+<a class="sourceLine" id="cb11-17" title="17"></a>
+<a class="sourceLine" id="cb11-18" title="18">    <span class="kw">def</span> add_edge(<span class="va">self</span>, v1, v2, weight <span class="op">=</span> <span class="dv">0</span>):</a>
+<a class="sourceLine" id="cb11-19" title="19">        <span class="cf">if</span> v1 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb11-20" title="20">            <span class="va">self</span>.add_vertex(v1)</a>
+<a class="sourceLine" id="cb11-21" title="21">        <span class="cf">if</span> v2 <span class="kw">not</span> <span class="kw">in</span> <span class="va">self</span>.vertices:</a>
+<a class="sourceLine" id="cb11-22" title="22">            <span class="va">self</span>.add_vertex(v2)</a>
+<a class="sourceLine" id="cb11-23" title="23">        <span class="va">self</span>.vertices[v1].add_connection(<span class="va">self</span>.vertices[v2], weight)</a>
+<a class="sourceLine" id="cb11-24" title="24"></a>
+<a class="sourceLine" id="cb11-25" title="25">    <span class="kw">def</span> get_vertices(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb11-26" title="26">        <span class="cf">return</span> <span class="va">self</span>.vertices.keys()</a>
+<a class="sourceLine" id="cb11-27" title="27"></a>
+<a class="sourceLine" id="cb11-28" title="28">    <span class="kw">def</span> depth_first_search(<span class="va">self</span>, vertex, visited <span class="op">=</span> <span class="bu">set</span>()):</a>
+<a class="sourceLine" id="cb11-29" title="29">        visited.add(vertex)</a>
+<a class="sourceLine" id="cb11-30" title="30">        <span class="cf">for</span> next_vert <span class="kw">in</span> vertex.get_connections():</a>
+<a class="sourceLine" id="cb11-31" title="31">            <span class="cf">if</span> next_vert <span class="kw">not</span> <span class="kw">in</span> visited:</a>
+<a class="sourceLine" id="cb11-32" title="32">                <span class="va">self</span>.depth_first_search(next_vert, visited)</a></code></pre></div>
+<h3 id="challenge-3">Challenge <a id="challenge"></a></h3>
+<ol type="1">
+<li>Does a depth-first search reliably find the shortest path?</li>
+<li>If you didn’t want to use recursion, what data structure could you use to write an iterative depth-first search?</li>
+</ol>
+<h3 id="additional-resources-3">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/">https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/ (Links to an external site.)</a></li>
+</ul>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+</body>
+</html>

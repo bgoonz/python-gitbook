@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>js-event-loop</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="js-event-loop">JS-Event Loop</h1>
+<p>JavaScript is <strong>single-threaded</strong>: only one task can run at a time. Usually that’s no big deal, but now imagine you’re running a task which takes 30 seconds.. Ya.. During that task we’re waiting for 30 seconds before anything else can happen (JavaScript runs on the browser’s main thread by default, so the entire UI is stuck) 😬 It’s 2019, no one wants a slow, unresponsive website.</p>
+<p>Luckily, the browser gives us some features that the JavaScript engine itself doesn’t provide: a Web API. This includes the DOM API, <code>setTimeout</code>, HTTP requests, and so on. This can help us create some async, non-blocking behavior 🚀</p>
+<p>When we invoke a function, it gets added to something called the call stack. The call stack is part of the JS engine, this isn’t browser specific. It’s a stack, meaning that it’s first in, last out (think of a pile of pancakes). When a function returns a value, it gets popped off the stack 👋</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--44yasyNX--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gid1.6.gif" /></p>
+<p>The <code>respond</code> function returns a <code>setTimeout</code> function. The <code>setTimeout</code> is provided to us by the Web API: it lets us delay tasks without blocking the main thread. The callback function that we passed to the <code>setTimeout</code> function, the arrow function <code>() =&gt; { return</code> <code>'Hey'</code> } gets added to the Web API. In the meantime, the <code>setTimeout</code> function and the respond function get popped off the stack, they both returned their values!</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--d_n4m4HH--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif2.1.gif" /></p>
+<p>In the Web API, a timer runs for as long as the second argument we passed to it, 1000ms. The callback doesn’t immediately get added to the call stack, instead it’s passed to something called the queue.</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MewGMdte--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif3.1.gif" /></p>
+<p>This can be a confusing part: it doesn’t mean that the callback function gets added to the callstack(thus returns a value) after 1000ms! It simply gets added to the <em>queue</em> after 1000ms. But it’s a queue, the function has got to wait for its turn!</p>
+<p>Now this is the part we’ve all been waiting for… Time for the event loop to do its only task: <strong>connecting the queue with the call stack</strong>! If the call stack is <strong>empty</strong>, so if all previously invoked functions have returned their values and have been popped off the stack, the <em>first item</em> in the queue gets added to the call stack. In this case, no other functions were invoked, meaning that the call stack was empty by the time the callback function was the first item in the queue.</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--b2BtLfdz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif4.gif" /></p>
+<p>The callback is added to the call stack, gets invoked, and returns a value, and gets popped off the stack.</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NYOknEYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif5.gif" /></p>
+<p>Reading an article is fun, but you’ll only get entirely comfortable with this by actually working with it over and over. Try to figure out what gets logged to the console if we run the following:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> foo <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;First&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">const</span> bar <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="at">setTimeout</span>(() <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;Second&#39;</span>)<span class="op">,</span> <span class="dv">500</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">const</span> baz <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;Third&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="at">bar</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="at">foo</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="at">baz</span>()<span class="op">;</span></a></code></pre></div>
+<p>Got it? Let’s quickly take a look at what’s happening when we’re running this code in a browser:</p>
+<p><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--BLtCLQcd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif14.1.gif" /></p>
+<ol type="1">
+<li>We invoke <code>bar</code>. <code>bar</code> returns a <code>setTimeout</code> function.</li>
+<li>The callback we passed to <code>setTimeout</code> gets added to the Web API, the <code>setTimeout</code> function and <code>bar</code> get popped off the callstack.</li>
+<li>The timer runs, in the meantime <code>foo</code> gets invoked and logs <code>First</code>. <code>foo</code> returns (undefined),<code>baz</code> gets invoked, and the callback gets added to the queue.</li>
+<li><code>baz</code> logs <code>Third</code>. The event loop sees the callstack is empty after <code>baz</code> returned, after which the callback gets added to the call stack.</li>
+<li>The callback logs <code>Second</code>.</li>
+</ol>
+</body>
+</html>

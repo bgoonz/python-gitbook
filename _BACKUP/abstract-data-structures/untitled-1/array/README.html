@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="array">Array</h1>
+<p>{% page-ref page=“extra-array.md” %}</p>
+<p>{% tabs %} {% tab title=“BIGO” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Linear time iterate over all items</span></a>
+<a class="sourceLine" id="cb1-2" title="2">arr <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">23</span>, <span class="dv">56</span>, <span class="dv">87</span>, <span class="dv">14</span>]  <span class="co"># n = 5</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="cf">for</span> num <span class="kw">in</span> arr: <span class="co"># O(n * 1) ==&gt; O(n)</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="bu">print</span>(num)  <span class="co"># O(1)</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="cf">for</span> num <span class="kw">in</span> arr: <span class="co"># O(n * 1) ==&gt; O(n)</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="bu">print</span>(num)  <span class="co"># O(1)</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co"># O(n) + O(1) =&gt; O(n)</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co"># O(n * 1) + O(n * 1) + O(1)</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="co"># O(2n) + O(1) =&gt; O(n) + O(1) =&gt; O(n)</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="co"># constant time lookup</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="bu">print</span>(arr[<span class="dv">3</span>]) <span class="co"># O(1)</span></a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="co"># quadratic time nested iteration</span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="cf">for</span> x <span class="kw">in</span> arr: <span class="co"># O(n)</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="cf">for</span> y <span class="kw">in</span> arr:  <span class="co"># O(n) =&gt; O(n^2)</span></a>
+<a class="sourceLine" id="cb1-18" title="18">        <span class="cf">for</span> z <span class="kw">in</span> arr: <span class="co"># O(n^3)</span></a>
+<a class="sourceLine" id="cb1-19" title="19">            <span class="bu">print</span>(x, y, z) <span class="co"># O(1) =&gt; O(1 * n^2)</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co"># O(n^2) + O(n) + O(1 * n^2)</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="co"># O(2n^2) + O(n) =&gt; O(n^2) + O(n^2)</span></a>
+<a class="sourceLine" id="cb1-22" title="22"></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="co"># O(n^2) =&gt; O(n^3)</span></a>
+<a class="sourceLine" id="cb1-24" title="24"></a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="co"># 10 * 10 * 10 =&gt; 1000</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="co"># 100 * 100 * 100 =&gt; 1000000</span></a>
+<a class="sourceLine" id="cb1-27" title="27"></a>
+<a class="sourceLine" id="cb1-28" title="28"></a>
+<a class="sourceLine" id="cb1-29" title="29"><span class="co"># can we do better?</span></a>
+<a class="sourceLine" id="cb1-30" title="30"></a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Second Tab” %}</p>
+<p>{% endtab %} {% endtabs %}</p>
+<h2 id="arrays">Arrays</h2>
+<ul>
+<li>In an array of arrays, e.g. given <code>[[], [1, 2, 3], [4, 5], [], [], [6, 7], [8], [9, 10], [], []]</code>, print: <code>1, 2, 3, 4, 5, 6, 7, 8, 9, 10</code>.
+<ul>
+<li>Implement an iterator that supports <code>hasNext()</code>, <code>next()</code> and <code>remove()</code> methods.</li>
+</ul></li>
+<li>Given a list of item prices, find all possible combinations of items that sum a particular value <code>K</code>.</li>
+<li>Paginate an array with constraints, such as skipping certain items.</li>
+<li>Implement a circular buffer using an array.</li>
+<li>Given array of arrays, sort them in ascending order.</li>
+<li>Given an array of integers, print out a histogram using the said array; include a base layer (all stars)
+<ul>
+<li>E.g. <code>[5, 4, 0, 3, 4, 1]</code></li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">*</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="op">**</span>  <span class="op">*</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">**</span> <span class="op">**</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="op">**</span> <span class="op">**</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="op">**</span> <span class="op">***</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="op">******</span></a></code></pre></div>
+<ul>
+<li>Given an array and an index, find the product of the elements of the array except the element at that index.</li>
+<li>Given a set of rectangles represented by a height and an interval along the y-axis, determine the size of its union.</li>
+<li>Given 2 separate arrays, write a method to find the values that exist in both arrays and return them.</li>
+<li>Given an array of integers find whether there is a sub-sequence that sums to 0 and return it.
+<ul>
+<li>E.g. <code>[1, 2, -3, 1]</code> =&gt; <code>[1, 2, -3]</code> or <code>[2, -3, 1]</code>.</li>
+</ul></li>
+<li>Given an input array and another array that describes a new index for each element, mutate the input array so that each element ends up in their new index. Discuss the runtime of the algorithm and how you can be sure there would not be any infinite loops.</li>
+<li>Given an array of non-negative numbers, find continuous subarray with sum to S.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/06/01/subarray-with-given-sum/">Source</a>.</li>
+</ul></li>
+<li>Given an array of numbers list out all triplets that sum to 0. Do so with a running time of less than O(n^3).
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/07/19/3sum/">Source</a>.</li>
+</ul></li>
+<li>Given an array of numbers list out all quadruplets that sum to 0. Do so with a running time of less than O(n^4).</li>
+<li>Given an array of integers, move all the zeroes to the end while preserving the order of the other elements. You have to do it in-place and are not allowed to use any extra storage.</li>
+<li>Given an array of integers, find the subarray with the largest sum. Can you do it in linear time.
+<ul>
+<li>Maximum subarray sum problem.</li>
+</ul></li>
+<li>You have an array with the heights of an island (at point 1, point 2 etc) and you want to know how much water would remain on this island (without flowing away).
+<ul>
+<li>Trapping rain water question.</li>
+</ul></li>
+<li>Given an array containing only digits <code>0-9</code>, add one to the number and return the array.
+<ul>
+<li>E.g. Given <code>[1, 4, 2, 1]</code> which represents <code>1421</code>, return <code>[1, 4, 2, 2]</code> which represents <code>1422</code>.</li>
+</ul></li>
+<li>Find the second maximum value in an array.</li>
+<li>Given an array, find the longest arithmetic progression.</li>
+<li>Rotate an array by an offset of k.</li>
+<li>Remove duplicates in an unsorted array where the duplicates are at a distance of k or less from each other.</li>
+<li>Given an unsorted list of integers, return true if the list contains any duplicates within k indices of each element. Do it faster than O(n^2).</li>
+<li>Given an unsorted list of integers, return true if the list contains any fuzzy duplicates within k indices of each element. A fuzzy duplicate is another integer within d of the original integer. Do it faster than O(n^2).
+<ul>
+<li>E.g. If d = 4, then 6 is a fuzzy duplicate of 3 but 8 is not.</li>
+</ul></li>
+<li>Say you have an unordered list of numbers ranging from 1 to n, and one of the numbers is removed, how do you find that number? What if two numbers are removed?</li>
+<li>Given an array of string, find the duplicated elements.
+<ul>
+<li><a href="http://blog.gainlo.co/index.php/2016/05/10/duplicate-elements-of-an-array/">Source</a>.</li>
+</ul></li>
+<li>Given an array of integers, find a maximum sum of non-adjacent elements.
+<ul>
+<li>E.g. <code>[1, 0, 3, 9, 2]</code> should return <code>10 (1 + 9)</code>.</li>
+<li><a href="http://blog.gainlo.co/index.php/2016/12/02/uber-interview-question-maximum-sum-non-adjacent-elements/">Source</a></li>
+</ul></li>
+<li>Given an array of integers, modify the array by moving all the zeros to the end (right side). The order of other elements doesn’t matter.
+<ul>
+<li>E.g. <code>[1, 2, 0, 3, 0, 1, 2]</code>, the program can output <code>[1, 2, 3, 1, 2, 0, 0]</code>.</li>
+<li><a href="http://blog.gainlo.co/index.php/2016/11/18/uber-interview-question-move-zeroes/">Source</a>.</li>
+</ul></li>
+<li>Given an array, return the length of the longest increasing contiguous subarray.
+<ul>
+<li>E.g., <code>[1, 3, 2, 3, 4, 8, 7, 9]</code>, should return <code>4</code> because the longest increasing array is <code>[2, 3, 4, 8]</code>.</li>
+<li><a href="http://blog.gainlo.co/index.php/2017/02/02/uber-interview-questions-longest-increasing-subarray/">Source</a>.</li>
+</ul></li>
+<li>Given an array of integers where every value appears twice except one, find the single, non-repeating value. Follow up: do so with O(1) space.
+<ul>
+<li>E.g., <code>[2, 5, 3, 2, 1, 3, 4, 5, 1]</code> returns 4, because it is the only value that appears in the array only once.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Python Program to demonstrate creation of Array using array creations</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="im">import</span> array <span class="im">as</span> arr</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="bu">print</span>(<span class="st">&quot;INTEGER ARRAY OPERATIONS:&quot;</span>)</a>
+<a class="sourceLine" id="cb3-5" title="5">size <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot; Enter the size of Array: &quot;</span>))</a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co"># creating an array with integer type</span></a>
+<a class="sourceLine" id="cb3-7" title="7">lst <span class="op">=</span> <span class="bu">list</span>()</a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(size):</a>
+<a class="sourceLine" id="cb3-9" title="9">    lst.append(<span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the  Integer Element:&quot;</span>)))</a>
+<a class="sourceLine" id="cb3-10" title="10">n <span class="op">=</span> arr.array(lst)</a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co"># printing array</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="kw">def</span> pr(n):</a>
+<a class="sourceLine" id="cb3-14" title="14">    <span class="bu">print</span>(<span class="st">&quot;The new integer array is : &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-16" title="16">        <span class="bu">print</span>(n[i], end <span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-17" title="17">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-18" title="18"></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="kw">def</span> add(n,j):</a>
+<a class="sourceLine" id="cb3-20" title="20">    <span class="bu">print</span>(<span class="st">&quot;The Array before adding: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-21" title="21">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-22" title="22">        <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-23" title="23">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-24" title="24">    <span class="co">#Append() method</span></a>
+<a class="sourceLine" id="cb3-25" title="25">    n.append(j)</a>
+<a class="sourceLine" id="cb3-26" title="26">    <span class="bu">print</span>(<span class="st">&quot;The Array After adding: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-27" title="27">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-28" title="28">        <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-29" title="29">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-30" title="30"></a>
+<a class="sourceLine" id="cb3-31" title="31"><span class="kw">def</span> adde(n,j,p):</a>
+<a class="sourceLine" id="cb3-32" title="32">    <span class="bu">print</span>(<span class="st">&quot;The Array before adding: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-33" title="33">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-34" title="34">        <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-35" title="35">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-36" title="36">    <span class="co">#insert() method</span></a>
+<a class="sourceLine" id="cb3-37" title="37">    n.insert(p,j)</a>
+<a class="sourceLine" id="cb3-38" title="38">    <span class="bu">print</span>(<span class="st">&quot;The Array After adding: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-39" title="39">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-40" title="40">        <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-41" title="41">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-42" title="42"></a>
+<a class="sourceLine" id="cb3-43" title="43"><span class="kw">def</span> pp(n,j):</a>
+<a class="sourceLine" id="cb3-44" title="44">    <span class="cf">if</span> n:</a>
+<a class="sourceLine" id="cb3-45" title="45">        <span class="bu">print</span>(<span class="st">&quot;The Array before Popping: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-46" title="46">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-47" title="47">            <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-48" title="48">        <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-49" title="49">        <span class="co"># pop() method</span></a>
+<a class="sourceLine" id="cb3-50" title="50">        n.pop(j)</a>
+<a class="sourceLine" id="cb3-51" title="51">        <span class="bu">print</span>(<span class="st">&quot;The Array After Popping: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-52" title="52">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-53" title="53">            <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-54" title="54">        <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-55" title="55">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-56" title="56">        <span class="bu">print</span>(<span class="st">&quot;Array Empty&quot;</span>)</a>
+<a class="sourceLine" id="cb3-57" title="57"></a>
+<a class="sourceLine" id="cb3-58" title="58"><span class="kw">def</span> prt(n,j):</a>
+<a class="sourceLine" id="cb3-59" title="59">    <span class="cf">if</span> n:</a>
+<a class="sourceLine" id="cb3-60" title="60">        <span class="cf">if</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-61" title="61">            <span class="bu">print</span>(<span class="st">&quot;The Array before Removing: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-62" title="62">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-63" title="63">                <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-64" title="64">            <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-65" title="65">            <span class="co">#remove Method</span></a>
+<a class="sourceLine" id="cb3-66" title="66">            n.remove(j)</a>
+<a class="sourceLine" id="cb3-67" title="67">            <span class="bu">print</span>(<span class="st">&quot;The Array After Removing: &quot;</span>, end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb3-68" title="68">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(n)):</a>
+<a class="sourceLine" id="cb3-69" title="69">                <span class="bu">print</span>(n[i], end<span class="op">=</span><span class="st">&quot;, &quot;</span>)</a>
+<a class="sourceLine" id="cb3-70" title="70">            <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-71" title="71">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-72" title="72">            <span class="bu">print</span>(<span class="st">&quot;Index Out of Bound&quot;</span>)</a>
+<a class="sourceLine" id="cb3-73" title="73">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-74" title="74">        <span class="bu">print</span>(<span class="st">&quot;Array Empty&quot;</span>)</a>
+<a class="sourceLine" id="cb3-75" title="75"></a>
+<a class="sourceLine" id="cb3-76" title="76"><span class="co">#Driver code</span></a>
+<a class="sourceLine" id="cb3-77" title="77">flag <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-78" title="78"><span class="cf">while</span>(flag):</a>
+<a class="sourceLine" id="cb3-79" title="79">    <span class="bu">print</span>()</a>
+<a class="sourceLine" id="cb3-80" title="80">    <span class="bu">print</span>(<span class="st">&quot;1.Print Array</span><span class="ch">\n</span><span class="st">2.Add Element using append()</span><span class="ch">\n</span><span class="st">3.Add Element using insert()</span><span class="ch">\n</span><span class="st">4.Pop() Element</span><span class="ch">\n</span><span class="st">5.Remove Element at position</span><span class="ch">\n</span><span class="st">6.Exit</span><span class="ch">\n</span><span class="st">&quot;</span>)</a>
+<a class="sourceLine" id="cb3-81" title="81">    option <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the option :&quot;</span>))</a>
+<a class="sourceLine" id="cb3-82" title="82">    <span class="cf">if</span> option <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb3-83" title="83">        pr(n)</a>
+<a class="sourceLine" id="cb3-84" title="84">    <span class="cf">elif</span> option <span class="op">==</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb3-85" title="85">        i <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the Element to be added: &quot;</span>))</a>
+<a class="sourceLine" id="cb3-86" title="86">        add(n,i)</a>
+<a class="sourceLine" id="cb3-87" title="87">    <span class="cf">elif</span> option <span class="op">==</span> <span class="dv">3</span>:</a>
+<a class="sourceLine" id="cb3-88" title="88">        p <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the position to add element:&quot;</span>))</a>
+<a class="sourceLine" id="cb3-89" title="89">        i <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the Element: &quot;</span>))</a>
+<a class="sourceLine" id="cb3-90" title="90">        adde(n, i, p)</a>
+<a class="sourceLine" id="cb3-91" title="91">    <span class="cf">elif</span> option <span class="op">==</span> <span class="dv">4</span>:</a>
+<a class="sourceLine" id="cb3-92" title="92">        i <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the Index position To be popped: &quot;</span>))</a>
+<a class="sourceLine" id="cb3-93" title="93">        pp(n, i)</a>
+<a class="sourceLine" id="cb3-94" title="94">    <span class="cf">elif</span> option <span class="op">==</span> <span class="dv">5</span>:</a>
+<a class="sourceLine" id="cb3-95" title="95">        i <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter the Element Position To be Removed: &quot;</span>))</a>
+<a class="sourceLine" id="cb3-96" title="96">        prt(n, i)</a>
+<a class="sourceLine" id="cb3-97" title="97">    <span class="cf">elif</span> option <span class="op">==</span> <span class="dv">6</span> :</a>
+<a class="sourceLine" id="cb3-98" title="98">        flag <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-99" title="99"></a>
+<a class="sourceLine" id="cb3-100" title="100"></a>
+<a class="sourceLine" id="cb3-101" title="101"></a>
+<a class="sourceLine" id="cb3-102" title="102"></a>
+<a class="sourceLine" id="cb3-103" title="103"></a>
+<a class="sourceLine" id="cb3-104" title="104"></a></code></pre></div>
+<p>{% page-ref page=“./” %}</p>
+<p>{% page-ref page=“../binary-search-tree/” %}</p>
+<p>{% page-ref page=“../untitled-4/” %}</p>
+<p>{% page-ref page=“extra-array.md” %}</p>
+<p>{% page-ref page=“../stack/” %}</p>
+<p>{% page-ref page=“../binary-tree/” %}</p>
+<p>{% page-ref page=“../untitled-6/” %}</p>
+<p>{% page-ref page=“../untitled-5/” %}</p>
+<p>{% page-ref page=“../untitled-2/” %}</p>
+<p>{% page-ref page=“../untitled-3/” %}</p>
+<p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
+<p>{% page-ref page=“../untitled-5/” %}</p>
+<p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
+<p>{% page-ref page=“../untitled-1/” %}</p>
+<p>{% page-ref page=“../untitled/” %}</p>
+<p>{% page-ref page=“../heap/” %}</p>
+</body>
+</html>

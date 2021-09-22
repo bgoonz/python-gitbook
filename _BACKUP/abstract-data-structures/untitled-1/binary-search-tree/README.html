@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="binary-search-tree">Binary Search Tree</h1>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/BST">@bgoonz/BST</span>” %}</p>
+<p>{% tabs %} {% tab title=“bst.py” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">def</span> insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="co"># create a node for the new value</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        new_node <span class="op">=</span> BSTNode(value)</a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="co"># compare the node value to the self value</span></a>
+<a class="sourceLine" id="cb1-11" title="11">        <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb1-12" title="12">            new_node.value <span class="op">&lt;=</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb1-13" title="13">        ):  <span class="co"># less then or equal to will all go to the left if any duplicats too</span></a>
+<a class="sourceLine" id="cb1-14" title="14">            <span class="co"># we add to the left</span></a>
+<a class="sourceLine" id="cb1-15" title="15">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-16" title="16">                <span class="va">self</span>.left <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb1-17" title="17">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-18" title="18">                <span class="va">self</span>.left.insert(value)</a>
+<a class="sourceLine" id="cb1-19" title="19">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-20" title="20">            <span class="co"># we add to the right</span></a>
+<a class="sourceLine" id="cb1-21" title="21">            <span class="co"># if space exists</span></a>
+<a class="sourceLine" id="cb1-22" title="22">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-23" title="23">                <span class="va">self</span>.right <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb1-24" title="24">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-25" title="25">                <span class="va">self</span>.right.insert(value)</a>
+<a class="sourceLine" id="cb1-26" title="26"></a>
+<a class="sourceLine" id="cb1-27" title="27">    <span class="kw">def</span> search(<span class="va">self</span>, target):</a>
+<a class="sourceLine" id="cb1-28" title="28">        <span class="cf">if</span> target <span class="op">==</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb1-29" title="29">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-30" title="30">        <span class="co"># check if value is less than self.value</span></a>
+<a class="sourceLine" id="cb1-31" title="31"></a>
+<a class="sourceLine" id="cb1-32" title="32">        <span class="cf">if</span> target <span class="op">&lt;</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb1-33" title="33">            <span class="co"># look to the left</span></a>
+<a class="sourceLine" id="cb1-34" title="34">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-35" title="35">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-36" title="36">            <span class="cf">return</span> <span class="va">self</span>.left.search(target)</a>
+<a class="sourceLine" id="cb1-37" title="37"></a>
+<a class="sourceLine" id="cb1-38" title="38">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-39" title="39">            <span class="co"># look to the right</span></a>
+<a class="sourceLine" id="cb1-40" title="40">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-41" title="41">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-42" title="42">            <span class="cf">return</span> <span class="va">self</span>.right.search(target)</a>
+<a class="sourceLine" id="cb1-43" title="43"></a>
+<a class="sourceLine" id="cb1-44" title="44">    <span class="kw">def</span> find_minimum_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-45" title="45">        <span class="co"># if self.left is None: #recursive here</span></a>
+<a class="sourceLine" id="cb1-46" title="46">        <span class="co">#     return self.value</span></a>
+<a class="sourceLine" id="cb1-47" title="47">        <span class="co"># min_value =  self.left.find_minimum_value()</span></a>
+<a class="sourceLine" id="cb1-48" title="48">        <span class="co"># return min_value</span></a>
+<a class="sourceLine" id="cb1-49" title="49">        curr_node <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb1-50" title="50">        <span class="cf">while</span> curr_node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-51" title="51">            curr_node <span class="op">=</span> curr_node.left</a>
+<a class="sourceLine" id="cb1-52" title="52">        <span class="cf">return</span> curr_node.value</a>
+<a class="sourceLine" id="cb1-53" title="53"></a>
+<a class="sourceLine" id="cb1-54" title="54"></a>
+<a class="sourceLine" id="cb1-55" title="55">root <span class="op">=</span> BSTNode(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-56" title="56"><span class="co"># root.left = BSTNode(6)</span></a>
+<a class="sourceLine" id="cb1-57" title="57"><span class="co"># root.right = BSTNode(12)</span></a>
+<a class="sourceLine" id="cb1-58" title="58">root.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb1-59" title="59">root.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb1-60" title="60">root.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb1-61" title="61">root.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb1-62" title="62">root.insert(<span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb1-63" title="63">root.insert(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb1-64" title="64"></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="bu">print</span>(<span class="ss">f&quot;minimum value in tree is: </span><span class="sc">{</span>root<span class="sc">.</span>find_minimum_value()<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-66" title="66"></a>
+<a class="sourceLine" id="cb1-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>{% endtab %} {% endtabs %}</p>
+<p>{% tabs %} {% tab title=“bst.py” %}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb2-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="kw">def</span> insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb2-8" title="8">        <span class="co"># create a node for the new value</span></a>
+<a class="sourceLine" id="cb2-9" title="9">        new_node <span class="op">=</span> BSTNode(value)</a>
+<a class="sourceLine" id="cb2-10" title="10">        <span class="co"># compare the node value to the self value</span></a>
+<a class="sourceLine" id="cb2-11" title="11">        <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb2-12" title="12">            new_node.value <span class="op">&lt;=</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb2-13" title="13">        ):  <span class="co"># less then or equal to will all go to the left if any duplicats too</span></a>
+<a class="sourceLine" id="cb2-14" title="14">            <span class="co"># we add to the left</span></a>
+<a class="sourceLine" id="cb2-15" title="15">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-16" title="16">                <span class="va">self</span>.left <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb2-17" title="17">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-18" title="18">                <span class="va">self</span>.left.insert(value)</a>
+<a class="sourceLine" id="cb2-19" title="19">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-20" title="20">            <span class="co"># we add to the right</span></a>
+<a class="sourceLine" id="cb2-21" title="21">            <span class="co"># if space exists</span></a>
+<a class="sourceLine" id="cb2-22" title="22">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-23" title="23">                <span class="va">self</span>.right <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb2-24" title="24">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-25" title="25">                <span class="va">self</span>.right.insert(value)</a>
+<a class="sourceLine" id="cb2-26" title="26"></a>
+<a class="sourceLine" id="cb2-27" title="27">    <span class="kw">def</span> search(<span class="va">self</span>, target):</a>
+<a class="sourceLine" id="cb2-28" title="28">        <span class="cf">if</span> target <span class="op">==</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb2-29" title="29">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb2-30" title="30">        <span class="co"># check if value is less than self.value</span></a>
+<a class="sourceLine" id="cb2-31" title="31"></a>
+<a class="sourceLine" id="cb2-32" title="32">        <span class="cf">if</span> target <span class="op">&lt;</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb2-33" title="33">            <span class="co"># look to the left</span></a>
+<a class="sourceLine" id="cb2-34" title="34">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-35" title="35">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb2-36" title="36">            <span class="cf">return</span> <span class="va">self</span>.left.search(target)</a>
+<a class="sourceLine" id="cb2-37" title="37"></a>
+<a class="sourceLine" id="cb2-38" title="38">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-39" title="39">            <span class="co"># look to the right</span></a>
+<a class="sourceLine" id="cb2-40" title="40">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-41" title="41">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb2-42" title="42">            <span class="cf">return</span> <span class="va">self</span>.right.search(target)</a>
+<a class="sourceLine" id="cb2-43" title="43"></a>
+<a class="sourceLine" id="cb2-44" title="44">    <span class="kw">def</span> find_minimum_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb2-45" title="45">        <span class="co"># if self.left is None: #recursive here</span></a>
+<a class="sourceLine" id="cb2-46" title="46">        <span class="co">#     return self.value</span></a>
+<a class="sourceLine" id="cb2-47" title="47">        <span class="co"># min_value =  self.left.find_minimum_value()</span></a>
+<a class="sourceLine" id="cb2-48" title="48">        <span class="co"># return min_value</span></a>
+<a class="sourceLine" id="cb2-49" title="49">        curr_node <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb2-50" title="50">        <span class="cf">while</span> curr_node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-51" title="51">            curr_node <span class="op">=</span> curr_node.left</a>
+<a class="sourceLine" id="cb2-52" title="52">        <span class="cf">return</span> curr_node.value</a>
+<a class="sourceLine" id="cb2-53" title="53"></a>
+<a class="sourceLine" id="cb2-54" title="54"></a>
+<a class="sourceLine" id="cb2-55" title="55">root <span class="op">=</span> BSTNode(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb2-56" title="56"><span class="co"># root.left = BSTNode(6)</span></a>
+<a class="sourceLine" id="cb2-57" title="57"><span class="co"># root.right = BSTNode(12)</span></a>
+<a class="sourceLine" id="cb2-58" title="58">root.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb2-59" title="59">root.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb2-60" title="60">root.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb2-61" title="61">root.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb2-62" title="62">root.insert(<span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb2-63" title="63">root.insert(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb2-64" title="64"></a>
+<a class="sourceLine" id="cb2-65" title="65"><span class="bu">print</span>(<span class="ss">f&quot;minimum value in tree is: </span><span class="sc">{</span>root<span class="sc">.</span>find_minimum_value()<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-66" title="66"></a>
+<a class="sourceLine" id="cb2-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)<span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb2-70" title="70">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb2-71" title="71">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb2-72" title="72">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb2-73" title="73">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb2-74" title="74"></a>
+<a class="sourceLine" id="cb2-75" title="75">    <span class="kw">def</span> insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb2-76" title="76">        <span class="co"># create a node for the new value</span></a>
+<a class="sourceLine" id="cb2-77" title="77">        new_node <span class="op">=</span> BSTNode(value)</a>
+<a class="sourceLine" id="cb2-78" title="78">        <span class="co"># compare the node value to the self value</span></a>
+<a class="sourceLine" id="cb2-79" title="79">        <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb2-80" title="80">            new_node.value <span class="op">&lt;=</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb2-81" title="81">        ):  <span class="co"># less then or equal to will all go to the left if any duplicats too</span></a>
+<a class="sourceLine" id="cb2-82" title="82">            <span class="co"># we add to the left</span></a>
+<a class="sourceLine" id="cb2-83" title="83">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-84" title="84">                <span class="va">self</span>.left <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb2-85" title="85">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-86" title="86">                <span class="va">self</span>.left.insert(value)</a>
+<a class="sourceLine" id="cb2-87" title="87">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-88" title="88">            <span class="co"># we add to the right</span></a>
+<a class="sourceLine" id="cb2-89" title="89">            <span class="co"># if space exists</span></a>
+<a class="sourceLine" id="cb2-90" title="90">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-91" title="91">                <span class="va">self</span>.right <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb2-92" title="92">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-93" title="93">                <span class="va">self</span>.right.insert(value)</a>
+<a class="sourceLine" id="cb2-94" title="94"></a>
+<a class="sourceLine" id="cb2-95" title="95">    <span class="kw">def</span> search(<span class="va">self</span>, target):</a>
+<a class="sourceLine" id="cb2-96" title="96">        <span class="cf">if</span> target <span class="op">==</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb2-97" title="97">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb2-98" title="98">        <span class="co"># check if value is less than self.value</span></a>
+<a class="sourceLine" id="cb2-99" title="99"></a>
+<a class="sourceLine" id="cb2-100" title="100">        <span class="cf">if</span> target <span class="op">&lt;</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb2-101" title="101">            <span class="co"># look to the left</span></a>
+<a class="sourceLine" id="cb2-102" title="102">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-103" title="103">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb2-104" title="104">            <span class="cf">return</span> <span class="va">self</span>.left.search(target)</a>
+<a class="sourceLine" id="cb2-105" title="105"></a>
+<a class="sourceLine" id="cb2-106" title="106">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-107" title="107">            <span class="co"># look to the right</span></a>
+<a class="sourceLine" id="cb2-108" title="108">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-109" title="109">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb2-110" title="110">            <span class="cf">return</span> <span class="va">self</span>.right.search(target)</a>
+<a class="sourceLine" id="cb2-111" title="111"></a>
+<a class="sourceLine" id="cb2-112" title="112">    <span class="kw">def</span> find_minimum_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb2-113" title="113">        <span class="co"># if self.left is None: #recursive here</span></a>
+<a class="sourceLine" id="cb2-114" title="114">        <span class="co">#     return self.value</span></a>
+<a class="sourceLine" id="cb2-115" title="115">        <span class="co"># min_value =  self.left.find_minimum_value()</span></a>
+<a class="sourceLine" id="cb2-116" title="116">        <span class="co"># return min_value</span></a>
+<a class="sourceLine" id="cb2-117" title="117">        curr_node <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb2-118" title="118">        <span class="cf">while</span> curr_node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-119" title="119">            curr_node <span class="op">=</span> curr_node.left</a>
+<a class="sourceLine" id="cb2-120" title="120">        <span class="cf">return</span> curr_node.value</a>
+<a class="sourceLine" id="cb2-121" title="121"></a>
+<a class="sourceLine" id="cb2-122" title="122"></a>
+<a class="sourceLine" id="cb2-123" title="123">root <span class="op">=</span> BSTNode(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb2-124" title="124"><span class="co"># root.left = BSTNode(6)</span></a>
+<a class="sourceLine" id="cb2-125" title="125"><span class="co"># root.right = BSTNode(12)</span></a>
+<a class="sourceLine" id="cb2-126" title="126">root.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb2-127" title="127">root.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb2-128" title="128">root.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb2-129" title="129">root.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb2-130" title="130">root.insert(<span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb2-131" title="131">root.insert(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb2-132" title="132"></a>
+<a class="sourceLine" id="cb2-133" title="133"><span class="bu">print</span>(<span class="ss">f&quot;minimum value in tree is: </span><span class="sc">{</span>root<span class="sc">.</span>find_minimum_value()<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-134" title="134"></a>
+<a class="sourceLine" id="cb2-135" title="135"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-136" title="136"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb2-137" title="137"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>{% endtab %} {% endtabs %}</p>
+<p>{% tabs %} {% tab title=“bst.py” %}</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb3-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">def</span> insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb3-8" title="8">        <span class="co"># create a node for the new value</span></a>
+<a class="sourceLine" id="cb3-9" title="9">        new_node <span class="op">=</span> BSTNode(value)</a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="co"># compare the node value to the self value</span></a>
+<a class="sourceLine" id="cb3-11" title="11">        <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb3-12" title="12">            new_node.value <span class="op">&lt;=</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb3-13" title="13">        ):  <span class="co"># less then or equal to will all go to the left if any duplicats too</span></a>
+<a class="sourceLine" id="cb3-14" title="14">            <span class="co"># we add to the left</span></a>
+<a class="sourceLine" id="cb3-15" title="15">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb3-16" title="16">                <span class="va">self</span>.left <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb3-17" title="17">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-18" title="18">                <span class="va">self</span>.left.insert(value)</a>
+<a class="sourceLine" id="cb3-19" title="19">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-20" title="20">            <span class="co"># we add to the right</span></a>
+<a class="sourceLine" id="cb3-21" title="21">            <span class="co"># if space exists</span></a>
+<a class="sourceLine" id="cb3-22" title="22">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb3-23" title="23">                <span class="va">self</span>.right <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb3-24" title="24">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-25" title="25">                <span class="va">self</span>.right.insert(value)</a>
+<a class="sourceLine" id="cb3-26" title="26"></a>
+<a class="sourceLine" id="cb3-27" title="27">    <span class="kw">def</span> search(<span class="va">self</span>, target):</a>
+<a class="sourceLine" id="cb3-28" title="28">        <span class="cf">if</span> target <span class="op">==</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb3-29" title="29">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb3-30" title="30">        <span class="co"># check if value is less than self.value</span></a>
+<a class="sourceLine" id="cb3-31" title="31"></a>
+<a class="sourceLine" id="cb3-32" title="32">        <span class="cf">if</span> target <span class="op">&lt;</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb3-33" title="33">            <span class="co"># look to the left</span></a>
+<a class="sourceLine" id="cb3-34" title="34">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb3-35" title="35">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb3-36" title="36">            <span class="cf">return</span> <span class="va">self</span>.left.search(target)</a>
+<a class="sourceLine" id="cb3-37" title="37"></a>
+<a class="sourceLine" id="cb3-38" title="38">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-39" title="39">            <span class="co"># look to the right</span></a>
+<a class="sourceLine" id="cb3-40" title="40">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb3-41" title="41">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb3-42" title="42">            <span class="cf">return</span> <span class="va">self</span>.right.search(target)</a>
+<a class="sourceLine" id="cb3-43" title="43"></a>
+<a class="sourceLine" id="cb3-44" title="44">    <span class="kw">def</span> find_minimum_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb3-45" title="45">        <span class="co"># if self.left is None: #recursive here</span></a>
+<a class="sourceLine" id="cb3-46" title="46">        <span class="co">#     return self.value</span></a>
+<a class="sourceLine" id="cb3-47" title="47">        <span class="co"># min_value =  self.left.find_minimum_value()</span></a>
+<a class="sourceLine" id="cb3-48" title="48">        <span class="co"># return min_value</span></a>
+<a class="sourceLine" id="cb3-49" title="49">        curr_node <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb3-50" title="50">        <span class="cf">while</span> curr_node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb3-51" title="51">            curr_node <span class="op">=</span> curr_node.left</a>
+<a class="sourceLine" id="cb3-52" title="52">        <span class="cf">return</span> curr_node.value</a>
+<a class="sourceLine" id="cb3-53" title="53"></a>
+<a class="sourceLine" id="cb3-54" title="54"></a>
+<a class="sourceLine" id="cb3-55" title="55">root <span class="op">=</span> BSTNode(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb3-56" title="56"><span class="co"># root.left = BSTNode(6)</span></a>
+<a class="sourceLine" id="cb3-57" title="57"><span class="co"># root.right = BSTNode(12)</span></a>
+<a class="sourceLine" id="cb3-58" title="58">root.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb3-59" title="59">root.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb3-60" title="60">root.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb3-61" title="61">root.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb3-62" title="62">root.insert(<span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb3-63" title="63">root.insert(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb3-64" title="64"></a>
+<a class="sourceLine" id="cb3-65" title="65"><span class="bu">print</span>(<span class="ss">f&quot;minimum value in tree is: </span><span class="sc">{</span>root<span class="sc">.</span>find_minimum_value()<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb3-66" title="66"></a>
+<a class="sourceLine" id="cb3-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb3-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb3-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>{% endtab %} {% endtabs %}</p>
+<p>{% tabs %} {% tab title=“Implementation” %}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Implement a Binary Search Tree (BST) that can insert values and check if</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"># values are present</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb4-9" title="9"></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="kw">class</span> BST(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="va">self</span>.root <span class="op">=</span> Node(root)</a>
+<a class="sourceLine" id="cb4-13" title="13"></a>
+<a class="sourceLine" id="cb4-14" title="14">    <span class="kw">def</span> insert(<span class="va">self</span>, new_val):</a>
+<a class="sourceLine" id="cb4-15" title="15">        <span class="cf">if</span>(<span class="va">self</span>.root.left<span class="op">==</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb4-16" title="16">            <span class="cf">if</span>(<span class="va">self</span>.root.value<span class="op">&gt;</span>new_val):</a>
+<a class="sourceLine" id="cb4-17" title="17">                <span class="va">self</span>.root.left <span class="op">=</span> Node(new_val)</a>
+<a class="sourceLine" id="cb4-18" title="18">        <span class="cf">elif</span>(<span class="va">self</span>.root.right<span class="op">==</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb4-19" title="19">            <span class="cf">if</span>(<span class="va">self</span>.root.value<span class="op">&lt;</span>new_val):</a>
+<a class="sourceLine" id="cb4-20" title="20">                <span class="va">self</span>.root.right <span class="op">=</span> Node(new_val)</a>
+<a class="sourceLine" id="cb4-21" title="21">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-22" title="22">            current <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb4-23" title="23">            <span class="cf">while</span>(current.left<span class="op">!=</span><span class="va">None</span> <span class="kw">or</span> current.right<span class="op">!=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb4-24" title="24">                <span class="cf">if</span>(current.value<span class="op">&gt;</span>new_val):</a>
+<a class="sourceLine" id="cb4-25" title="25">                    current <span class="op">=</span> current.left</a>
+<a class="sourceLine" id="cb4-26" title="26">                <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-27" title="27">                    current <span class="op">=</span> current.right</a>
+<a class="sourceLine" id="cb4-28" title="28"></a>
+<a class="sourceLine" id="cb4-29" title="29">            <span class="cf">if</span>(current.left<span class="op">==</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb4-30" title="30">                current.left <span class="op">=</span> Node(new_val)</a>
+<a class="sourceLine" id="cb4-31" title="31">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-32" title="32">                current.right <span class="op">=</span> Node(new_val)</a>
+<a class="sourceLine" id="cb4-33" title="33"></a>
+<a class="sourceLine" id="cb4-34" title="34">    <span class="kw">def</span> search(<span class="va">self</span>, find_val):</a>
+<a class="sourceLine" id="cb4-35" title="35">        <span class="cf">if</span>(<span class="va">self</span>.root.left<span class="op">==</span><span class="va">None</span> <span class="kw">and</span> <span class="va">self</span>.root.right<span class="op">==</span><span class="va">None</span> <span class="kw">and</span> <span class="va">self</span>.root.value<span class="op">!=</span>find_val):</a>
+<a class="sourceLine" id="cb4-36" title="36">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb4-37" title="37">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-38" title="38">            current <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb4-39" title="39">            val_possible <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb4-40" title="40">            <span class="cf">while</span>(val_possible):</a>
+<a class="sourceLine" id="cb4-41" title="41">                <span class="cf">if</span>(current.value<span class="op">==</span>find_val):</a>
+<a class="sourceLine" id="cb4-42" title="42">                        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb4-43" title="43">                <span class="cf">if</span>(current.value<span class="op">&lt;</span>find_val):</a>
+<a class="sourceLine" id="cb4-44" title="44">                    current <span class="op">=</span> current.right</a>
+<a class="sourceLine" id="cb4-45" title="45">                <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-46" title="46">                    current <span class="op">=</span> current.left</a>
+<a class="sourceLine" id="cb4-47" title="47">                <span class="cf">if</span>(current<span class="op">==</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb4-48" title="48">                    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb4-49" title="49">                <span class="cf">if</span>(current.value<span class="op">&lt;</span>find_val <span class="kw">and</span> (current.right<span class="op">==</span><span class="va">None</span> <span class="kw">or</span> current.right<span class="op">&gt;</span>find_val)):</a>
+<a class="sourceLine" id="cb4-50" title="50">                    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb4-51" title="51">                <span class="cf">if</span>(current.value<span class="op">&gt;</span>find_val <span class="kw">and</span> (current.left<span class="op">==</span><span class="va">None</span> <span class="kw">or</span> current.left<span class="op">&lt;</span>find_val)):</a>
+<a class="sourceLine" id="cb4-52" title="52">                    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb4-53" title="53"></a>
+<a class="sourceLine" id="cb4-54" title="54"><span class="co"># Set up tree</span></a>
+<a class="sourceLine" id="cb4-55" title="55">tree <span class="op">=</span> BST(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb4-56" title="56"></a>
+<a class="sourceLine" id="cb4-57" title="57"><span class="co"># Insert elements</span></a>
+<a class="sourceLine" id="cb4-58" title="58">tree.insert(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb4-59" title="59">tree.insert(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb4-60" title="60">tree.insert(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb4-61" title="61">tree.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb4-62" title="62"></a>
+<a class="sourceLine" id="cb4-63" title="63"><span class="co"># Check search</span></a>
+<a class="sourceLine" id="cb4-64" title="64"><span class="co"># Should be True</span></a>
+<a class="sourceLine" id="cb4-65" title="65"><span class="bu">print</span> tree.search(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb4-66" title="66"><span class="co"># Should be False</span></a>
+<a class="sourceLine" id="cb4-67" title="67"><span class="bu">print</span> tree.search(<span class="dv">6</span>)</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Preorder Operations” %}</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb5-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb5-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="kw">class</span> BinaryTree(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb5-9" title="9">        <span class="va">self</span>.root <span class="op">=</span> Node(root)</a>
+<a class="sourceLine" id="cb5-10" title="10"></a>
+<a class="sourceLine" id="cb5-11" title="11">    <span class="kw">def</span> preorder_search(<span class="va">self</span>, start, find_val):</a>
+<a class="sourceLine" id="cb5-12" title="12">        <span class="co">&quot;&quot;&quot;Helper method - use this to create a</span></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="co">        recursive search solution.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb5-14" title="14">        <span class="cf">if</span>(start.value <span class="op">==</span> find_val):</a>
+<a class="sourceLine" id="cb5-15" title="15">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb5-16" title="16">        <span class="cf">if</span>(start.left<span class="op">!=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb5-17" title="17">            left_result <span class="op">=</span> <span class="va">self</span>.preorder_search(start.left, find_val)</a>
+<a class="sourceLine" id="cb5-18" title="18">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-19" title="19">            left_result <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb5-20" title="20">        <span class="cf">if</span>(start.right<span class="op">!=</span><span class="va">None</span> <span class="kw">and</span> left_result<span class="op">!=</span><span class="va">True</span>):</a>
+<a class="sourceLine" id="cb5-21" title="21">            right_result <span class="op">=</span> <span class="va">self</span>.preorder_search(start.right, find_val)</a>
+<a class="sourceLine" id="cb5-22" title="22">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-23" title="23">            right_result <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb5-24" title="24"></a>
+<a class="sourceLine" id="cb5-25" title="25">        <span class="cf">if</span>(left_result<span class="op">==</span><span class="va">True</span> <span class="kw">or</span> right_result<span class="op">==</span><span class="va">True</span>):</a>
+<a class="sourceLine" id="cb5-26" title="26">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb5-27" title="27">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-28" title="28">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb5-29" title="29"></a>
+<a class="sourceLine" id="cb5-30" title="30">    <span class="kw">def</span> preorder_print(<span class="va">self</span>, start, traversal):</a>
+<a class="sourceLine" id="cb5-31" title="31">        <span class="co">&quot;&quot;&quot;Helper method - use this to create a</span></a>
+<a class="sourceLine" id="cb5-32" title="32"><span class="co">        recursive print solution.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb5-33" title="33">        traversal <span class="op">+=</span> <span class="st">&#39;-&#39;</span> <span class="op">+</span> <span class="bu">str</span>(start.value)</a>
+<a class="sourceLine" id="cb5-34" title="34">        left_nums <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb5-35" title="35">        right_nums <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb5-36" title="36">        <span class="cf">if</span>(start.left<span class="op">!=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb5-37" title="37">            traversal <span class="op">=</span> <span class="va">self</span>.preorder_print(start.left, traversal)</a>
+<a class="sourceLine" id="cb5-38" title="38">        <span class="cf">if</span>(start.right<span class="op">!=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb5-39" title="39">            traversal <span class="op">=</span> <span class="va">self</span>.preorder_print(start.right, traversal)</a>
+<a class="sourceLine" id="cb5-40" title="40">        <span class="cf">return</span> traversal</a>
+<a class="sourceLine" id="cb5-41" title="41"></a>
+<a class="sourceLine" id="cb5-42" title="42">    <span class="kw">def</span> search(<span class="va">self</span>, find_val):</a>
+<a class="sourceLine" id="cb5-43" title="43">        <span class="co">&quot;&quot;&quot;Return True if the value</span></a>
+<a class="sourceLine" id="cb5-44" title="44"><span class="co">        is in the tree, return</span></a>
+<a class="sourceLine" id="cb5-45" title="45"><span class="co">        False otherwise.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb5-46" title="46">        <span class="cf">return</span> <span class="va">self</span>.preorder_search(<span class="va">self</span>.root, find_val)</a>
+<a class="sourceLine" id="cb5-47" title="47">        <span class="co">#print(self.preorder_search(self.root, find_val))</span></a>
+<a class="sourceLine" id="cb5-48" title="48"></a>
+<a class="sourceLine" id="cb5-49" title="49">    <span class="kw">def</span> print_tree(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb5-50" title="50">        <span class="co">&quot;&quot;&quot;Print out all tree nodes</span></a>
+<a class="sourceLine" id="cb5-51" title="51"><span class="co">        as they are visited in</span></a>
+<a class="sourceLine" id="cb5-52" title="52"><span class="co">        a pre-order traversal.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb5-53" title="53">        all_nodes <span class="op">=</span> <span class="va">self</span>.preorder_print(<span class="va">self</span>.root, <span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb5-54" title="54">        all_nodes <span class="op">=</span> all_nodes[<span class="dv">1</span>:]</a>
+<a class="sourceLine" id="cb5-55" title="55">        <span class="cf">return</span> all_nodes</a>
+<a class="sourceLine" id="cb5-56" title="56"></a>
+<a class="sourceLine" id="cb5-57" title="57"></a>
+<a class="sourceLine" id="cb5-58" title="58"><span class="co"># Set up tree</span></a>
+<a class="sourceLine" id="cb5-59" title="59">tree <span class="op">=</span> BinaryTree(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb5-60" title="60">tree.root.left <span class="op">=</span> Node(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb5-61" title="61">tree.root.right <span class="op">=</span> Node(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb5-62" title="62">tree.root.left.left <span class="op">=</span> Node(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb5-63" title="63">tree.root.left.right <span class="op">=</span> Node(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb5-64" title="64"></a>
+<a class="sourceLine" id="cb5-65" title="65"><span class="co"># Test search</span></a>
+<a class="sourceLine" id="cb5-66" title="66"><span class="co"># Should be True</span></a>
+<a class="sourceLine" id="cb5-67" title="67"><span class="bu">print</span>(tree.search(<span class="dv">4</span>))</a>
+<a class="sourceLine" id="cb5-68" title="68"><span class="co"># Should be False</span></a>
+<a class="sourceLine" id="cb5-69" title="69"><span class="bu">print</span>(tree.search(<span class="dv">6</span>))</a>
+<a class="sourceLine" id="cb5-70" title="70"></a>
+<a class="sourceLine" id="cb5-71" title="71"><span class="co"># Test print_tree</span></a>
+<a class="sourceLine" id="cb5-72" title="72"><span class="co"># Should be 1-2-4-5-3</span></a>
+<a class="sourceLine" id="cb5-73" title="73"><span class="bu">print</span>(tree.print_tree())</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“bst.py” %}</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb6-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb6-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb6-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="kw">def</span> insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb6-8" title="8">        <span class="co"># create a node for the new value</span></a>
+<a class="sourceLine" id="cb6-9" title="9">        new_node <span class="op">=</span> BSTNode(value)</a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="co"># compare the node value to the self value</span></a>
+<a class="sourceLine" id="cb6-11" title="11">        <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb6-12" title="12">            new_node.value <span class="op">&lt;=</span> <span class="va">self</span>.value</a>
+<a class="sourceLine" id="cb6-13" title="13">        ):  <span class="co"># less then or equal to will all go to the left if any duplicats too</span></a>
+<a class="sourceLine" id="cb6-14" title="14">            <span class="co"># we add to the left</span></a>
+<a class="sourceLine" id="cb6-15" title="15">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb6-16" title="16">                <span class="va">self</span>.left <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb6-17" title="17">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb6-18" title="18">                <span class="va">self</span>.left.insert(value)</a>
+<a class="sourceLine" id="cb6-19" title="19">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb6-20" title="20">            <span class="co"># we add to the right</span></a>
+<a class="sourceLine" id="cb6-21" title="21">            <span class="co"># if space exists</span></a>
+<a class="sourceLine" id="cb6-22" title="22">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb6-23" title="23">                <span class="va">self</span>.right <span class="op">=</span> new_node</a>
+<a class="sourceLine" id="cb6-24" title="24">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb6-25" title="25">                <span class="va">self</span>.right.insert(value)</a>
+<a class="sourceLine" id="cb6-26" title="26"></a>
+<a class="sourceLine" id="cb6-27" title="27">    <span class="kw">def</span> search(<span class="va">self</span>, target):</a>
+<a class="sourceLine" id="cb6-28" title="28">        <span class="cf">if</span> target <span class="op">==</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb6-29" title="29">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb6-30" title="30">        <span class="co"># check if value is less than self.value</span></a>
+<a class="sourceLine" id="cb6-31" title="31"></a>
+<a class="sourceLine" id="cb6-32" title="32">        <span class="cf">if</span> target <span class="op">&lt;</span> <span class="va">self</span>.value:</a>
+<a class="sourceLine" id="cb6-33" title="33">            <span class="co"># look to the left</span></a>
+<a class="sourceLine" id="cb6-34" title="34">            <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb6-35" title="35">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb6-36" title="36">            <span class="cf">return</span> <span class="va">self</span>.left.search(target)</a>
+<a class="sourceLine" id="cb6-37" title="37"></a>
+<a class="sourceLine" id="cb6-38" title="38">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb6-39" title="39">            <span class="co"># look to the right</span></a>
+<a class="sourceLine" id="cb6-40" title="40">            <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb6-41" title="41">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb6-42" title="42">            <span class="cf">return</span> <span class="va">self</span>.right.search(target)</a>
+<a class="sourceLine" id="cb6-43" title="43"></a>
+<a class="sourceLine" id="cb6-44" title="44">    <span class="kw">def</span> find_minimum_value(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb6-45" title="45">        <span class="co"># if self.left is None: #recursive here</span></a>
+<a class="sourceLine" id="cb6-46" title="46">        <span class="co">#     return self.value</span></a>
+<a class="sourceLine" id="cb6-47" title="47">        <span class="co"># min_value =  self.left.find_minimum_value()</span></a>
+<a class="sourceLine" id="cb6-48" title="48">        <span class="co"># return min_value</span></a>
+<a class="sourceLine" id="cb6-49" title="49">        curr_node <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb6-50" title="50">        <span class="cf">while</span> curr_node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb6-51" title="51">            curr_node <span class="op">=</span> curr_node.left</a>
+<a class="sourceLine" id="cb6-52" title="52">        <span class="cf">return</span> curr_node.value</a>
+<a class="sourceLine" id="cb6-53" title="53"></a>
+<a class="sourceLine" id="cb6-54" title="54"></a>
+<a class="sourceLine" id="cb6-55" title="55">root <span class="op">=</span> BSTNode(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb6-56" title="56"><span class="co"># root.left = BSTNode(6)</span></a>
+<a class="sourceLine" id="cb6-57" title="57"><span class="co"># root.right = BSTNode(12)</span></a>
+<a class="sourceLine" id="cb6-58" title="58">root.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb6-59" title="59">root.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb6-60" title="60">root.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb6-61" title="61">root.insert(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb6-62" title="62">root.insert(<span class="dv">14</span>)</a>
+<a class="sourceLine" id="cb6-63" title="63">root.insert(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb6-64" title="64"></a>
+<a class="sourceLine" id="cb6-65" title="65"><span class="bu">print</span>(<span class="ss">f&quot;minimum value in tree is: </span><span class="sc">{</span>root<span class="sc">.</span>find_minimum_value()<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb6-66" title="66"></a>
+<a class="sourceLine" id="cb6-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb6-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb6-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Another One” %}</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb7-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
+<a class="sourceLine" id="cb7-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-5" title="5">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="kw">class</span> BST:</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-8" title="8">        <span class="va">self</span>.root <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="kw">def</span> Insert(<span class="va">self</span>, value):</a>
+<a class="sourceLine" id="cb7-10" title="10">        <span class="va">self</span>.root <span class="op">=</span> <span class="va">self</span>.__InsertWrap(<span class="va">self</span>.root, value)</a>
+<a class="sourceLine" id="cb7-11" title="11">    <span class="kw">def</span> __InsertWrap(<span class="va">self</span>, x, value):</a>
+<a class="sourceLine" id="cb7-12" title="12">        <span class="cf">if</span> x <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-13" title="13">            x <span class="op">=</span> Node(value)</a>
+<a class="sourceLine" id="cb7-14" title="14">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-15" title="15">            <span class="cf">if</span> value <span class="op">&lt;</span> x.value:</a>
+<a class="sourceLine" id="cb7-16" title="16">                <span class="co"># print(&quot;left&quot;)</span></a>
+<a class="sourceLine" id="cb7-17" title="17">                x.left <span class="op">=</span> <span class="va">self</span>.__InsertWrap(x.left, value)</a>
+<a class="sourceLine" id="cb7-18" title="18">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-19" title="19">                <span class="co"># print(&quot;right&quot;)</span></a>
+<a class="sourceLine" id="cb7-20" title="20">                x.right <span class="op">=</span> <span class="va">self</span>.__InsertWrap(x.right, value)</a>
+<a class="sourceLine" id="cb7-21" title="21">        <span class="cf">return</span> x</a>
+<a class="sourceLine" id="cb7-22" title="22">    <span class="kw">def</span> InOrder(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-23" title="23">        <span class="cf">return</span> <span class="va">self</span>.__InOrder(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb7-24" title="24">    <span class="kw">def</span> __InOrder(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-25" title="25">        <span class="cf">if</span> x:</a>
+<a class="sourceLine" id="cb7-26" title="26">            <span class="va">self</span>.__InOrder(x.left)</a>
+<a class="sourceLine" id="cb7-27" title="27">            <span class="bu">print</span>(x.value)</a>
+<a class="sourceLine" id="cb7-28" title="28">            <span class="va">self</span>.__InOrder(x.right)</a>
+<a class="sourceLine" id="cb7-29" title="29">    <span class="kw">def</span> PreOrder(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-30" title="30">        <span class="cf">return</span> <span class="va">self</span>.__PreOrder(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb7-31" title="31">    <span class="kw">def</span> __PreOrder(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-32" title="32">        <span class="cf">if</span> x:</a>
+<a class="sourceLine" id="cb7-33" title="33">            <span class="bu">print</span>(x.value)</a>
+<a class="sourceLine" id="cb7-34" title="34">            <span class="va">self</span>.__PreOrder(x.left)</a>
+<a class="sourceLine" id="cb7-35" title="35">            <span class="va">self</span>.__PreOrder(x.right)</a>
+<a class="sourceLine" id="cb7-36" title="36">    <span class="kw">def</span> PostOrder(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-37" title="37">        <span class="cf">return</span> <span class="va">self</span>.__PostOrder(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb7-38" title="38">    <span class="kw">def</span> __PostOrder(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-39" title="39">        <span class="cf">if</span> x:</a>
+<a class="sourceLine" id="cb7-40" title="40">            <span class="va">self</span>.__PostOrder(x.left)</a>
+<a class="sourceLine" id="cb7-41" title="41">            <span class="va">self</span>.__PostOrder(x.right)</a>
+<a class="sourceLine" id="cb7-42" title="42">            <span class="bu">print</span>(x.value)</a>
+<a class="sourceLine" id="cb7-43" title="43">    <span class="kw">def</span> FindMin(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-44" title="44">        <span class="cf">while</span> x.left <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-45" title="45">            x <span class="op">=</span> x.left</a>
+<a class="sourceLine" id="cb7-46" title="46">        <span class="cf">return</span> x.value</a>
+<a class="sourceLine" id="cb7-47" title="47">    <span class="kw">def</span> FindMax(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-48" title="48">        <span class="cf">while</span> x.right <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-49" title="49">            x <span class="op">=</span> x.right</a>
+<a class="sourceLine" id="cb7-50" title="50">        <span class="cf">return</span> x.value</a>
+<a class="sourceLine" id="cb7-51" title="51">    <span class="kw">def</span> successor(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-52" title="52">        <span class="cf">if</span> x.right <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-53" title="53">            xx <span class="op">=</span> x.right</a>
+<a class="sourceLine" id="cb7-54" title="54">            <span class="cf">while</span> xx.left <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-55" title="55">                xx <span class="op">=</span> xx.left</a>
+<a class="sourceLine" id="cb7-56" title="56">        <span class="cf">return</span> xx.value</a>
+<a class="sourceLine" id="cb7-57" title="57">    <span class="kw">def</span> predecessor(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-58" title="58">        <span class="cf">if</span> x.left <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-59" title="59">            xx <span class="op">=</span> x.left</a>
+<a class="sourceLine" id="cb7-60" title="60">            <span class="cf">while</span> xx.right <span class="op">!=</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-61" title="61">                xx <span class="op">=</span> x.right</a>
+<a class="sourceLine" id="cb7-62" title="62">        <span class="cf">return</span> xx.value</a>
+<a class="sourceLine" id="cb7-63" title="63">    <span class="kw">def</span> Height(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-64" title="64">        y <span class="op">=</span> <span class="va">self</span>.__Height(x)</a>
+<a class="sourceLine" id="cb7-65" title="65">        <span class="cf">return</span> y</a>
+<a class="sourceLine" id="cb7-66" title="66">    <span class="kw">def</span> __Height(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb7-67" title="67">        <span class="cf">if</span> x <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-68" title="68">            <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-69" title="69">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-70" title="70">            <span class="cf">return</span> <span class="dv">1</span> <span class="op">+</span> <span class="bu">max</span>(<span class="va">self</span>.__Height(x.left), <span class="va">self</span>.__Height(x.right))</a>
+<a class="sourceLine" id="cb7-71" title="71">    <span class="kw">def</span> delete(<span class="va">self</span>, node):</a>
+<a class="sourceLine" id="cb7-72" title="72">        x <span class="op">=</span> <span class="va">self</span>.root  <span class="co"># rootNode, {Parent Node of desired Node}</span></a>
+<a class="sourceLine" id="cb7-73" title="73">        <span class="cf">if</span> node <span class="op">&gt;</span> x.value:</a>
+<a class="sourceLine" id="cb7-74" title="74">            y <span class="op">=</span> x.right  <span class="co"># desiredNode {Node to be delted} [iff on right]</span></a>
+<a class="sourceLine" id="cb7-75" title="75">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-76" title="76">            y <span class="op">=</span> x.left  <span class="co"># desiredNode [iff left]</span></a>
+<a class="sourceLine" id="cb7-77" title="77">        <span class="cf">while</span> y.value <span class="op">!=</span> node:  <span class="co"># Searching the Node to delete</span></a>
+<a class="sourceLine" id="cb7-78" title="78">            <span class="cf">if</span> node <span class="op">&gt;</span> y.value:</a>
+<a class="sourceLine" id="cb7-79" title="79">                x <span class="op">=</span> x.right</a>
+<a class="sourceLine" id="cb7-80" title="80">                y <span class="op">=</span> y.right</a>
+<a class="sourceLine" id="cb7-81" title="81">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-82" title="82">                x <span class="op">=</span> x.left</a>
+<a class="sourceLine" id="cb7-83" title="83">                y <span class="op">=</span> y.left</a>
+<a class="sourceLine" id="cb7-84" title="84">        <span class="co"># print(&quot;xr&quot;, x.right.value)</span></a>
+<a class="sourceLine" id="cb7-85" title="85">        <span class="co"># print(&quot;y&quot;, y.value)</span></a>
+<a class="sourceLine" id="cb7-86" title="86">        left <span class="op">=</span> x.left  <span class="co"># left of ParentNode</span></a>
+<a class="sourceLine" id="cb7-87" title="87">        right <span class="op">=</span> x.right  <span class="co"># right of ParentNode</span></a>
+<a class="sourceLine" id="cb7-88" title="88">        <span class="co"># Case 01</span></a>
+<a class="sourceLine" id="cb7-89" title="89">        <span class="cf">if</span> left.value <span class="op">==</span> y.value <span class="kw">and</span> left.left <span class="kw">is</span> <span class="va">None</span> <span class="kw">and</span> left.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-90" title="90">            <span class="co"># print(&quot;left&quot;, x.left.value)</span></a>
+<a class="sourceLine" id="cb7-91" title="91">            x.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-92" title="92">        <span class="cf">elif</span> right.value <span class="op">==</span> y.value <span class="kw">and</span> right.left <span class="kw">is</span> <span class="va">None</span> <span class="kw">and</span> right.right <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-93" title="93">            <span class="co"># print(&quot;right&quot;, x.right.value)</span></a>
+<a class="sourceLine" id="cb7-94" title="94">            x.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-95" title="95">        <span class="co"># Case 02</span></a>
+<a class="sourceLine" id="cb7-96" title="96">        <span class="cf">elif</span> (</a>
+<a class="sourceLine" id="cb7-97" title="97">            left.value <span class="op">==</span> y.value</a>
+<a class="sourceLine" id="cb7-98" title="98">            <span class="kw">and</span> (left.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> left.right <span class="kw">is</span> <span class="va">None</span>)</a>
+<a class="sourceLine" id="cb7-99" title="99">            <span class="kw">or</span> (left.left <span class="kw">is</span> <span class="va">None</span> <span class="kw">and</span> left.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>)</a>
+<a class="sourceLine" id="cb7-100" title="100">        ):</a>
+<a class="sourceLine" id="cb7-101" title="101">            <span class="cf">if</span> left.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-102" title="102">                child <span class="op">=</span> left.left</a>
+<a class="sourceLine" id="cb7-103" title="103">            <span class="cf">elif</span> left.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-104" title="104">                child <span class="op">=</span> left.right</a>
+<a class="sourceLine" id="cb7-105" title="105">            x.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-106" title="106">            x.left <span class="op">=</span> child</a>
+<a class="sourceLine" id="cb7-107" title="107">            <span class="co"># print(&quot;x&quot;,x.left.value)</span></a>
+<a class="sourceLine" id="cb7-108" title="108">        <span class="cf">elif</span> (</a>
+<a class="sourceLine" id="cb7-109" title="109">            right.value <span class="op">==</span> y.value</a>
+<a class="sourceLine" id="cb7-110" title="110">            <span class="kw">and</span> (right.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> right.right <span class="kw">is</span> <span class="va">None</span>)</a>
+<a class="sourceLine" id="cb7-111" title="111">            <span class="kw">or</span> (right.left <span class="kw">is</span> <span class="va">None</span> <span class="kw">and</span> right.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>)</a>
+<a class="sourceLine" id="cb7-112" title="112">        ):</a>
+<a class="sourceLine" id="cb7-113" title="113">            <span class="cf">if</span> right.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-114" title="114">                child <span class="op">=</span> right.left</a>
+<a class="sourceLine" id="cb7-115" title="115">            <span class="cf">elif</span> right.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-116" title="116">                child <span class="op">=</span> right.right</a>
+<a class="sourceLine" id="cb7-117" title="117">            x.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-118" title="118">            x.right <span class="op">=</span> child</a>
+<a class="sourceLine" id="cb7-119" title="119">        <span class="co"># Case 03</span></a>
+<a class="sourceLine" id="cb7-120" title="120">        <span class="cf">elif</span> left.value <span class="op">==</span> y.value <span class="kw">and</span> left.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> left.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-121" title="121">            lChild <span class="op">=</span> left.left</a>
+<a class="sourceLine" id="cb7-122" title="122">            rChild <span class="op">=</span> left.right</a>
+<a class="sourceLine" id="cb7-123" title="123">            <span class="bu">min</span> <span class="op">=</span> <span class="va">self</span>.successor(left)</a>
+<a class="sourceLine" id="cb7-124" title="124">            <span class="va">self</span>.delete(<span class="bu">min</span>)</a>
+<a class="sourceLine" id="cb7-125" title="125">            minNode <span class="op">=</span> Node(<span class="bu">min</span>)</a>
+<a class="sourceLine" id="cb7-126" title="126">            minNode.left <span class="op">=</span> lChild</a>
+<a class="sourceLine" id="cb7-127" title="127">            minNode.right <span class="op">=</span> rChild</a>
+<a class="sourceLine" id="cb7-128" title="128">            x.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-129" title="129">            x.left <span class="op">=</span> minNode</a>
+<a class="sourceLine" id="cb7-130" title="130">        <span class="cf">elif</span> (</a>
+<a class="sourceLine" id="cb7-131" title="131">            right.value <span class="op">==</span> y.value</a>
+<a class="sourceLine" id="cb7-132" title="132">            <span class="kw">and</span> right.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-133" title="133">            <span class="kw">and</span> right.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-134" title="134">        ):</a>
+<a class="sourceLine" id="cb7-135" title="135">            lChild <span class="op">=</span> right.left</a>
+<a class="sourceLine" id="cb7-136" title="136">            rChild <span class="op">=</span> right.right</a>
+<a class="sourceLine" id="cb7-137" title="137">            <span class="bu">min</span> <span class="op">=</span> <span class="va">self</span>.successor(right)</a>
+<a class="sourceLine" id="cb7-138" title="138">            <span class="va">self</span>.delete(<span class="bu">min</span>)</a>
+<a class="sourceLine" id="cb7-139" title="139">            minNode <span class="op">=</span> Node(<span class="bu">min</span>)</a>
+<a class="sourceLine" id="cb7-140" title="140">            minNode.left <span class="op">=</span> lChild</a>
+<a class="sourceLine" id="cb7-141" title="141">            minNode.right <span class="op">=</span> rChild</a>
+<a class="sourceLine" id="cb7-142" title="142">            x.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-143" title="143">            x.right <span class="op">=</span> minNode</a>
+<a class="sourceLine" id="cb7-144" title="144"><span class="co"># Driver Code</span></a>
+<a class="sourceLine" id="cb7-145" title="145">a <span class="op">=</span> BST()</a>
+<a class="sourceLine" id="cb7-146" title="146">a.Insert(<span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb7-147" title="147">a.Insert(<span class="dv">40</span>)</a>
+<a class="sourceLine" id="cb7-148" title="148">a.Insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb7-149" title="149">a.Insert(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb7-150" title="150">root <span class="op">=</span> a.root</a>
+<a class="sourceLine" id="cb7-151" title="151"><span class="bu">print</span>(<span class="st">&quot;Getting Inorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-152" title="152">a.InOrder()</a>
+<a class="sourceLine" id="cb7-153" title="153"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Preorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-154" title="154">a.PreOrder()</a>
+<a class="sourceLine" id="cb7-155" title="155"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting PostOrder:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-156" title="156">a.PostOrder()</a>
+<a class="sourceLine" id="cb7-157" title="157"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Height:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-158" title="158"><span class="bu">print</span>(a.Height(root))</a>
+<a class="sourceLine" id="cb7-159" title="159"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Minimum Node:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-160" title="160"><span class="bu">print</span>(a.FindMin(root))</a>
+<a class="sourceLine" id="cb7-161" title="161"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Maximum Node:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-162" title="162"><span class="bu">print</span>(a.FindMax(root))</a>
+<a class="sourceLine" id="cb7-163" title="163"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Successor:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-164" title="164"><span class="bu">print</span>(a.successor(root))</a>
+<a class="sourceLine" id="cb7-165" title="165"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Getting Predecessor:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-166" title="166"><span class="bu">print</span>(a.predecessor(root))</a>
+<a class="sourceLine" id="cb7-167" title="167"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Deleting a specific Node:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-168" title="168">a.delete(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb7-169" title="169"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">To cross-check deletion, printing preorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb7-170" title="170">a.PreOrder()</a>
+<a class="sourceLine" id="cb7-171" title="171"><span class="co"># In[ ]:</span></a></code></pre></div>
+<p>{% endtab %} {% endtabs %}</p>
+<p>The following is the definition of Binary Search Tree(BST) according to <a href="http://en.wikipedia.org/wiki/Binary_search_tree">Wikipedia</a> Binary Search Tree is a node-based binary tree data structure which has the following properties:</p>
+<ul>
+<li>The left subtree of a node contains only nodes with keys lesser than the node’s key.</li>
+<li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
+<li>The left and right subtree each must also be a binary search tree. There must be no duplicate nodes.</li>
+</ul>
+<figure>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="200px-Binary_search_tree.svg" /><figcaption>200px-Binary_search_tree.svg</figcaption>
+</figure>
+<p>The above properties of Binary Search Tree provides an ordering among keys so that the operations like search, minimum and maximum can be done fast. If there is no ordering, then we may have to compare every key to search for a given key.</p>
+<p><strong>Searching a key</strong> For searching a value, if we had a sorted array we could have performed a binary search. Let’s say we want to search a number in the array what we do in binary search is we first define the complete list as our search space, the number can exist only within the search space. Now we compare the number to be searched or the element to be searched with the mid element of the search space or the median and if the record being searched is lesser we go searching in the left half else we go searching in the right half, in case of equality we have found the element. In binary search we start with <strong>‘n’</strong> elements in search space and then if the mid element is not the element that we are looking for, we reduce the search space to <strong>‘n/2’</strong> and we go on reducing the search space till we either find the record that we are looking for or we get to only one element in search space and be done with this whole reduction. Search operation in binary search tree will be very similar. Let’s say we want to search for the number, what we’ll do is we’ll start at the root, and then we will compare the value to be searched with the value of the root if it’s equal we are done with the search if it’s lesser we know that we need to go to the left subtree because in a binary search tree all the elements in the left subtree are lesser and all the elements in the right subtree are greater. Searching an element in the binary search tree is basically this traversal in which at each step we will go either towards left or right and hence in at each step we discard one of the sub-trees. If the tree is balanced, we call a tree balanced if for all nodes the difference between the heights of left and right subtrees is not greater than one, we will start with a search space of <strong>‘n’</strong>nodes and when we will discard one of the sub-trees we will discard <strong>‘n/2’</strong> nodes so our search space will be reduced to <strong>‘n/2’</strong> and then in the next step we will reduce the search space to <strong>‘n/4’</strong> and we will go on reducing like this till we find the element or till our search space is reduced to only one node. The search here is also a binary search and that’s why the name binary search tree.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="co"># A utility function to search a given key in BST</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">def</span> search(root,key):</a>
+<a class="sourceLine" id="cb8-4" title="4"></a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="co"># Base Cases: root is null or key is present at root</span></a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="cf">if</span> root <span class="kw">is</span> <span class="va">None</span> <span class="kw">or</span> root.val <span class="op">==</span> key:</a>
+<a class="sourceLine" id="cb8-7" title="7">        <span class="cf">return</span> root</a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="co"># Key is greater than root&#39;s key</span></a>
+<a class="sourceLine" id="cb8-10" title="10">    <span class="cf">if</span> root.val <span class="op">&lt;</span> key:</a>
+<a class="sourceLine" id="cb8-11" title="11">        <span class="cf">return</span> search(root.right,key)</a>
+<a class="sourceLine" id="cb8-12" title="12"></a>
+<a class="sourceLine" id="cb8-13" title="13">    <span class="co"># Key is smaller than root&#39;s key</span></a>
+<a class="sourceLine" id="cb8-14" title="14">    <span class="cf">return</span> search(root.left,key)</a></code></pre></div>
+<p><strong>Illustration to search 6 in below tree:</strong></p>
+<ol type="1">
+<li>Start from the root.</li>
+<li>Compare the searching element with root, if less than root, then recurse for left, else recurse for right.</li>
+<li>If the element to search is found anywhere, return true, else return false.</li>
+</ol>
+<figure>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="bstsearch" /><figcaption>bstsearch</figcaption>
+</figure>
+<p><strong>Insertion of a key</strong> A new key is always inserted at the leaf. We start searching a key from the root until we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">         <span class="dv">100</span>                               <span class="dv">100</span></a>
+<a class="sourceLine" id="cb9-2" title="2">        <span class="op">/</span>   <span class="op">\</span>        Insert <span class="dv">40</span>            <span class="op">/</span>    <span class="op">\</span></a>
+<a class="sourceLine" id="cb9-3" title="3">      <span class="dv">20</span>     <span class="dv">500</span>    <span class="op">---------&gt;</span>          <span class="dv">20</span>     <span class="dv">500</span></a>
+<a class="sourceLine" id="cb9-4" title="4">     <span class="op">/</span>  <span class="op">\</span>                              <span class="op">/</span>  <span class="op">\</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="dv">10</span>   <span class="dv">30</span>                           <span class="dv">10</span>   <span class="dv">30</span></a>
+<a class="sourceLine" id="cb9-6" title="6">                                              <span class="op">\</span></a>
+<a class="sourceLine" id="cb9-7" title="7">                                              <span class="dv">40</span></a></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># Python program to demonstrate</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="co"># insert operation in binary search tree</span></a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="co"># A utility class that represents</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="co"># an individual node in a BST</span></a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7"></a>
+<a class="sourceLine" id="cb10-8" title="8"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, key):</a>
+<a class="sourceLine" id="cb10-10" title="10">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb10-11" title="11">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb10-12" title="12">        <span class="va">self</span>.val <span class="op">=</span> key</a>
+<a class="sourceLine" id="cb10-13" title="13"></a>
+<a class="sourceLine" id="cb10-14" title="14"><span class="co"># A utility function to insert</span></a>
+<a class="sourceLine" id="cb10-15" title="15"><span class="co"># a new node with the given key</span></a>
+<a class="sourceLine" id="cb10-16" title="16"></a>
+<a class="sourceLine" id="cb10-17" title="17"></a>
+<a class="sourceLine" id="cb10-18" title="18"><span class="kw">def</span> insert(root, key):</a>
+<a class="sourceLine" id="cb10-19" title="19">    <span class="cf">if</span> root <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb10-20" title="20">        <span class="cf">return</span> Node(key)</a>
+<a class="sourceLine" id="cb10-21" title="21">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb10-22" title="22">        <span class="cf">if</span> root.val <span class="op">==</span> key:</a>
+<a class="sourceLine" id="cb10-23" title="23">            <span class="cf">return</span> root</a>
+<a class="sourceLine" id="cb10-24" title="24">        <span class="cf">elif</span> root.val <span class="op">&lt;</span> key:</a>
+<a class="sourceLine" id="cb10-25" title="25">            root.right <span class="op">=</span> insert(root.right, key)</a>
+<a class="sourceLine" id="cb10-26" title="26">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb10-27" title="27">            root.left <span class="op">=</span> insert(root.left, key)</a>
+<a class="sourceLine" id="cb10-28" title="28">    <span class="cf">return</span> root</a>
+<a class="sourceLine" id="cb10-29" title="29"></a>
+<a class="sourceLine" id="cb10-30" title="30"><span class="co"># A utility function to do inorder tree traversal</span></a>
+<a class="sourceLine" id="cb10-31" title="31"></a>
+<a class="sourceLine" id="cb10-32" title="32"></a>
+<a class="sourceLine" id="cb10-33" title="33"><span class="kw">def</span> inorder(root):</a>
+<a class="sourceLine" id="cb10-34" title="34">    <span class="cf">if</span> root:</a>
+<a class="sourceLine" id="cb10-35" title="35">        inorder(root.left)</a>
+<a class="sourceLine" id="cb10-36" title="36">        <span class="bu">print</span>(root.val)</a>
+<a class="sourceLine" id="cb10-37" title="37">        inorder(root.right)</a>
+<a class="sourceLine" id="cb10-38" title="38"></a>
+<a class="sourceLine" id="cb10-39" title="39"></a>
+<a class="sourceLine" id="cb10-40" title="40"><span class="co"># Driver program to test the above functions</span></a>
+<a class="sourceLine" id="cb10-41" title="41"><span class="co"># Let us create the following BST</span></a>
+<a class="sourceLine" id="cb10-42" title="42"><span class="co">#    50</span></a>
+<a class="sourceLine" id="cb10-43" title="43"><span class="co">#  /     \</span></a>
+<a class="sourceLine" id="cb10-44" title="44"><span class="co"># 30     70</span></a>
+<a class="sourceLine" id="cb10-45" title="45"><span class="co">#  / \ / \</span></a>
+<a class="sourceLine" id="cb10-46" title="46"><span class="co"># 20 40 60 80</span></a>
+<a class="sourceLine" id="cb10-47" title="47"></a>
+<a class="sourceLine" id="cb10-48" title="48">r <span class="op">=</span> Node(<span class="dv">50</span>)</a>
+<a class="sourceLine" id="cb10-49" title="49">r <span class="op">=</span> insert(r, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb10-50" title="50">r <span class="op">=</span> insert(r, <span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb10-51" title="51">r <span class="op">=</span> insert(r, <span class="dv">40</span>)</a>
+<a class="sourceLine" id="cb10-52" title="52">r <span class="op">=</span> insert(r, <span class="dv">70</span>)</a>
+<a class="sourceLine" id="cb10-53" title="53">r <span class="op">=</span> insert(r, <span class="dv">60</span>)</a>
+<a class="sourceLine" id="cb10-54" title="54">r <span class="op">=</span> insert(r, <span class="dv">80</span>)</a>
+<a class="sourceLine" id="cb10-55" title="55"></a>
+<a class="sourceLine" id="cb10-56" title="56"><span class="co"># Print inoder traversal of the BST</span></a>
+<a class="sourceLine" id="cb10-57" title="57">inorder(r)</a></code></pre></div>
+<p><strong>Output</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">20</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="dv">30</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="dv">40</span></a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="dv">50</span></a>
+<a class="sourceLine" id="cb11-5" title="5"><span class="dv">60</span></a>
+<a class="sourceLine" id="cb11-6" title="6"><span class="dv">70</span></a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="dv">80</span></a></code></pre></div>
+<p><strong>Illustration to insert 2 in below tree:</strong></p>
+<ol type="1">
+<li>Start from the root.</li>
+<li>Compare the inserting element with root, if less than root, then recurse for left, else recurse for right.</li>
+<li>After reaching the end, just insert that node at left(if less than current) else right.</li>
+</ol>
+<figure>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="bstsearch" /><figcaption>bstsearch</figcaption>
+</figure>
+<p><strong>Time Complexity:</strong> The worst-case time complexity of search and insert operations is O(h) where h is the height of the Binary Search Tree. In the worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert operation may become O(n).</p>
+<p><strong>Insertion using loop:</strong></p>
+<p>****</p>
+<p><strong>Output</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="dv">10</span> <span class="dv">15</span> <span class="dv">20</span> <span class="dv">30</span> <span class="dv">40</span> <span class="dv">50</span> <span class="dv">60</span></a></code></pre></div>
+<p><strong>Some Interesting Facts:</strong></p>
+<ul>
+<li>Inorder traversal of BST always produces sorted output.</li>
+<li>We can construct a BST with only Preorder or Postorder or Level Order traversal. Note that we can always get inorder traversal by sorting the only given traversal.</li>
+<li><a href="https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-using-catalan-number/">Number of unique BSTs with n distinct keys is Catalan Number</a></li>
+</ul>
+<p><strong>Related Links:</strong></p>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/">Binary Search Tree Delete Operation</a></li>
+<li><a href="https://www.geeksforgeeks.org/data-structure-gq/binary-search-trees-gq/">Quiz on Binary Search Tree</a></li>
+<li><a href="https://practice.geeksforgeeks.org/tag-page.php?tag=BST&amp;isCmp=0">Coding practice on BST</a></li>
+<li><a href="https://www.geeksforgeeks.org/binary-search-tree/">All Articles on BST</a></li>
+</ul>
+<p>****</p>
+<p>****</p>
+<p>BST</p>
+<figure>
+<img src="https://qvault.io/wp-content/uploads/2021/01/bst.jpg" alt="Binary Search Tree" /><figcaption>Binary Search Tree</figcaption>
+</figure>
+<h4 id="pros-of-a-bst">Pros of a BST</h4>
+<ul>
+<li>When balanced, a BST provides lightning-fast <code>O(log(n))</code> insertions, deletions, and lookups.</li>
+<li>Binary search trees are pretty simple. An ordinary BST, unlike a balanced tree like a red-black tree, requires very little code to get running.</li>
+</ul>
+<h4 id="cons-of-a-bst">Cons of a BST</h4>
+<ul>
+<li>Slow for a brute-force search. If you need to iterate over each node, you might have more success with an array.</li>
+<li>When the tree becomes unbalanced, all fast <code>O(log(n))</code> operations quickly degrade to <code>O(n)</code>.</li>
+<li>Since pointers to whole objects are typically involved, a BST can require quite a bit more memory than an array, although this depends on the implementation.</li>
+</ul>
+<h3 id="implementing-a-bst-in-python">Implementing a BST in Python</h3>
+<h4 id="step-1-bstnode-class">Step 1 – BSTNode Class</h4>
+<p>Our implementation won’t use a <code>Tree</code> class, but instead just a <code>Node</code> class. Binary trees are really just a pointer to a root node that in turn connects to each child node, so we’ll run with that idea.</p>
+<p>First, we create a constructor:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb13-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, val<span class="op">=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb13-3" title="3">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb13-4" title="4">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="va">self</span>.val <span class="op">=</span> valCode language: Python (python)</a></code></pre></div>
+<p>We’ll allow a value (key) to be provided, but if one isn’t provided we’ll just set it to <code>None</code>. We’ll also initialize both children of the new node to <code>None</code>.</p>
+<h4 id="step-2-insert">Step 2 – Insert</h4>
+<p>We need a way to insert new data. The insert method is as follows:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">def</span> insert(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb14-2" title="2">    <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb14-3" title="3">        <span class="va">self</span>.val <span class="op">=</span> val</a>
+<a class="sourceLine" id="cb14-4" title="4">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb14-5" title="5"></a>
+<a class="sourceLine" id="cb14-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.val <span class="op">==</span> val:</a>
+<a class="sourceLine" id="cb14-7" title="7">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb14-8" title="8"></a>
+<a class="sourceLine" id="cb14-9" title="9">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb14-10" title="10">        <span class="cf">if</span> <span class="va">self</span>.left:</a>
+<a class="sourceLine" id="cb14-11" title="11">            <span class="va">self</span>.left.insert(val)</a>
+<a class="sourceLine" id="cb14-12" title="12">            <span class="cf">return</span></a>
+<a class="sourceLine" id="cb14-13" title="13">        <span class="va">self</span>.left <span class="op">=</span> BSTNode(val)</a>
+<a class="sourceLine" id="cb14-14" title="14">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb14-15" title="15"></a>
+<a class="sourceLine" id="cb14-16" title="16">    <span class="cf">if</span> <span class="va">self</span>.right:</a>
+<a class="sourceLine" id="cb14-17" title="17">        <span class="va">self</span>.right.insert(val)</a>
+<a class="sourceLine" id="cb14-18" title="18">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb14-19" title="19">    <span class="va">self</span>.right <span class="op">=</span> BSTNode(val)Code language: Python (python)</a></code></pre></div>
+<p>If the node doesn’t yet have a value, we can just set the given value and return. If we ever try to insert a value that also exists, we can also simply return as this can be considered a <code>noop</code>. If the given value is less than our node’s value and we already have a left child then we recursively call <code>insert</code> on our left child. If we don’t have a left child yet then we just make the given value our new left child. We can do the same (but inverted) for our right side.</p>
+<h4 id="step-3-get-min-and-get-max">Step 3 – Get Min and Get Max</h4>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> get_min(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb15-2" title="2">    current <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    <span class="cf">while</span> current.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb15-4" title="4">        current <span class="op">=</span> current.left</a>
+<a class="sourceLine" id="cb15-5" title="5">    <span class="cf">return</span> current.val</a>
+<a class="sourceLine" id="cb15-6" title="6"></a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="kw">def</span> get_max(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb15-8" title="8">    current <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb15-9" title="9">    <span class="cf">while</span> current.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb15-10" title="10">        current <span class="op">=</span> current.right</a>
+<a class="sourceLine" id="cb15-11" title="11">    <span class="cf">return</span> current.valCode language: Python (python)</a></code></pre></div>
+<p><code>getMin</code> and <code>getMax</code> are useful helper functions, and they’re easy to write! They are simple recursive functions that traverse the edges of the tree to find the smallest or largest values stored therein.</p>
+<h4 id="step-4-delete">Step 4 – Delete</h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">def</span> delete(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="cf">if</span> <span class="va">self</span> <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-3" title="3">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-4" title="4">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-5" title="5">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">self</span>.left.delete(val)</a>
+<a class="sourceLine" id="cb16-6" title="6">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-7" title="7">    <span class="cf">if</span> val <span class="op">&gt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-8" title="8">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(val)</a>
+<a class="sourceLine" id="cb16-9" title="9">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-10" title="10">    <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-11" title="11">        <span class="cf">return</span> <span class="va">self</span>.left</a>
+<a class="sourceLine" id="cb16-12" title="12">    <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-13" title="13">        <span class="cf">return</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-14" title="14">    min_larger_node <span class="op">=</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-15" title="15">    <span class="cf">while</span> min_larger_node.left:</a>
+<a class="sourceLine" id="cb16-16" title="16">        min_larger_node <span class="op">=</span> min_larger_node.left</a>
+<a class="sourceLine" id="cb16-17" title="17">    <span class="va">self</span>.val <span class="op">=</span> min_larger_node.val</a>
+<a class="sourceLine" id="cb16-18" title="18">    <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(min_larger_node.val)</a>
+<a class="sourceLine" id="cb16-19" title="19">    <span class="cf">return</span> selfdef delete(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb16-20" title="20">    <span class="cf">if</span> <span class="va">self</span> <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-21" title="21">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-22" title="22">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-23" title="23">        <span class="cf">if</span> <span class="va">self</span>.left:</a>
+<a class="sourceLine" id="cb16-24" title="24">            <span class="va">self</span>.left <span class="op">=</span> <span class="va">self</span>.left.delete(val)</a>
+<a class="sourceLine" id="cb16-25" title="25">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-26" title="26">    <span class="cf">if</span> val <span class="op">&gt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-27" title="27">        <span class="cf">if</span> <span class="va">self</span>.right:</a>
+<a class="sourceLine" id="cb16-28" title="28">            <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(val)</a>
+<a class="sourceLine" id="cb16-29" title="29">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-30" title="30">    <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-31" title="31">        <span class="cf">return</span> <span class="va">self</span>.left</a>
+<a class="sourceLine" id="cb16-32" title="32">    <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-33" title="33">        <span class="cf">return</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-34" title="34">    min_larger_node <span class="op">=</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-35" title="35">    <span class="cf">while</span> min_larger_node.left:</a>
+<a class="sourceLine" id="cb16-36" title="36">        min_larger_node <span class="op">=</span> min_larger_node.left</a>
+<a class="sourceLine" id="cb16-37" title="37">    <span class="va">self</span>.val <span class="op">=</span> min_larger_node.val</a>
+<a class="sourceLine" id="cb16-38" title="38">    <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(min_larger_node.val)</a>
+<a class="sourceLine" id="cb16-39" title="39">    <span class="cf">return</span> selfdef delete(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb16-40" title="40">    <span class="cf">if</span> <span class="va">self</span> <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-41" title="41">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-42" title="42">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-43" title="43">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">self</span>.left.delete(val)</a>
+<a class="sourceLine" id="cb16-44" title="44">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-45" title="45">    <span class="cf">if</span> val <span class="op">&gt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb16-46" title="46">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(val)</a>
+<a class="sourceLine" id="cb16-47" title="47">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb16-48" title="48">    <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-49" title="49">        <span class="cf">return</span> <span class="va">self</span>.left</a>
+<a class="sourceLine" id="cb16-50" title="50">    <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb16-51" title="51">        <span class="cf">return</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-52" title="52">    min_larger_node <span class="op">=</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb16-53" title="53">    <span class="cf">while</span> min_larger_node.left:</a>
+<a class="sourceLine" id="cb16-54" title="54">        min_larger_node <span class="op">=</span> min_larger_node.left</a>
+<a class="sourceLine" id="cb16-55" title="55">    <span class="va">self</span>.val <span class="op">=</span> min_larger_node.val</a>
+<a class="sourceLine" id="cb16-56" title="56">    <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(min_larger_node.val)</a>
+<a class="sourceLine" id="cb16-57" title="57">    <span class="cf">return</span> selfCode language: Python (python)</a></code></pre></div>
+<p>The delete operation is one of the more complex ones. It is a recursive function as well, but it also returns the new state of the given node after performing the delete operation. This allows a parent whose child has been deleted to properly set it’s <code>left</code> or <code>right</code> data member to <code>None</code>.</p>
+<h4 id="step-5-exists">Step 5 – Exists</h4>
+<p>The exists function is another simple recursive function that returns <code>True</code> or <code>False</code> depending on whether a given value already exists in the tree.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">def</span> exists(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="cf">if</span> val <span class="op">==</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb17-3" title="3">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb17-4" title="4"></a>
+<a class="sourceLine" id="cb17-5" title="5">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb17-6" title="6">        <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb17-7" title="7">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb17-8" title="8">        <span class="cf">return</span> <span class="va">self</span>.left.exists(val)</a>
+<a class="sourceLine" id="cb17-9" title="9"></a>
+<a class="sourceLine" id="cb17-10" title="10">    <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb17-11" title="11">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb17-12" title="12">    <span class="cf">return</span> <span class="va">self</span>.right.exists(val)Code language: Python (python)</a></code></pre></div>
+<h4 id="step-6-inorder">Step 6 – Inorder</h4>
+<p>It’s useful to be able to print out the tree in a readable format. The <code>inorder</code> method print’s the values in the tree in the order of their keys.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">def</span> inorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb18-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-3" title="3">        <span class="va">self</span>.left.inorder(vals)</a>
+<a class="sourceLine" id="cb18-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-5" title="5">        vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb18-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb18-7" title="7">        <span class="va">self</span>.right.inorder(vals)</a>
+<a class="sourceLine" id="cb18-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
+<h4 id="step-7-preorder">Step 7 – Preorder</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">def</span> preorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb19-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb19-3" title="3">        vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb19-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb19-5" title="5">        <span class="va">self</span>.left.preorder(vals)</a>
+<a class="sourceLine" id="cb19-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb19-7" title="7">        <span class="va">self</span>.right.preorder(vals)</a>
+<a class="sourceLine" id="cb19-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
+<h4 id="step-8-postorder">Step 8 – Postorder</h4>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> postorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb20-3" title="3">        <span class="va">self</span>.left.postorder(vals)</a>
+<a class="sourceLine" id="cb20-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb20-5" title="5">        <span class="va">self</span>.right.postorder(vals)</a>
+<a class="sourceLine" id="cb20-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb20-7" title="7">        vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb20-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
+<h4 id="using-the-bst">Using the BST</h4>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">def</span> main():</a>
+<a class="sourceLine" id="cb21-2" title="2">    nums <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">6</span>, <span class="dv">18</span>, <span class="dv">19</span>, <span class="dv">21</span>, <span class="dv">11</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">18</span>]</a>
+<a class="sourceLine" id="cb21-3" title="3">    bst <span class="op">=</span> BSTNode()</a>
+<a class="sourceLine" id="cb21-4" title="4">    <span class="cf">for</span> num <span class="kw">in</span> nums:</a>
+<a class="sourceLine" id="cb21-5" title="5">        bst.insert(num)</a>
+<a class="sourceLine" id="cb21-6" title="6">    <span class="bu">print</span>(<span class="st">&quot;preorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-7" title="7">    <span class="bu">print</span>(bst.preorder([]))</a>
+<a class="sourceLine" id="cb21-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;#&quot;</span>)</a>
+<a class="sourceLine" id="cb21-9" title="9"></a>
+<a class="sourceLine" id="cb21-10" title="10">    <span class="bu">print</span>(<span class="st">&quot;postorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-11" title="11">    <span class="bu">print</span>(bst.postorder([]))</a>
+<a class="sourceLine" id="cb21-12" title="12">    <span class="bu">print</span>(<span class="st">&quot;#&quot;</span>)</a>
+<a class="sourceLine" id="cb21-13" title="13"></a>
+<a class="sourceLine" id="cb21-14" title="14">    <span class="bu">print</span>(<span class="st">&quot;inorder:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-15" title="15">    <span class="bu">print</span>(bst.inorder([]))</a>
+<a class="sourceLine" id="cb21-16" title="16">    <span class="bu">print</span>(<span class="st">&quot;#&quot;</span>)</a>
+<a class="sourceLine" id="cb21-17" title="17"></a>
+<a class="sourceLine" id="cb21-18" title="18">    nums <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">20</span>]</a>
+<a class="sourceLine" id="cb21-19" title="19">    <span class="bu">print</span>(<span class="st">&quot;deleting &quot;</span> <span class="op">+</span> <span class="bu">str</span>(nums))</a>
+<a class="sourceLine" id="cb21-20" title="20">    <span class="cf">for</span> num <span class="kw">in</span> nums:</a>
+<a class="sourceLine" id="cb21-21" title="21">        bst.delete(num)</a>
+<a class="sourceLine" id="cb21-22" title="22">    <span class="bu">print</span>(<span class="st">&quot;#&quot;</span>)</a>
+<a class="sourceLine" id="cb21-23" title="23"></a>
+<a class="sourceLine" id="cb21-24" title="24">    <span class="bu">print</span>(<span class="st">&quot;4 exists:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-25" title="25">    <span class="bu">print</span>(bst.exists(<span class="dv">4</span>))</a>
+<a class="sourceLine" id="cb21-26" title="26">    <span class="bu">print</span>(<span class="st">&quot;2 exists:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-27" title="27">    <span class="bu">print</span>(bst.exists(<span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb21-28" title="28">    <span class="bu">print</span>(<span class="st">&quot;12 exists:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-29" title="29">    <span class="bu">print</span>(bst.exists(<span class="dv">12</span>))</a>
+<a class="sourceLine" id="cb21-30" title="30">    <span class="bu">print</span>(<span class="st">&quot;18 exists:&quot;</span>)</a>
+<a class="sourceLine" id="cb21-31" title="31">    <span class="bu">print</span>(bst.exists(<span class="dv">18</span>))Code language: Python (python)</a></code></pre></div>
+<h3 id="full-binary-search-tree-in-python">Full Binary Search Tree in Python</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb22-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, val<span class="op">=</span><span class="va">None</span>):</a>
+<a class="sourceLine" id="cb22-3" title="3">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb22-4" title="4">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb22-5" title="5">        <span class="va">self</span>.val <span class="op">=</span> val</a>
+<a class="sourceLine" id="cb22-6" title="6"></a>
+<a class="sourceLine" id="cb22-7" title="7">    <span class="kw">def</span> insert(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb22-8" title="8">        <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-9" title="9">            <span class="va">self</span>.val <span class="op">=</span> val</a>
+<a class="sourceLine" id="cb22-10" title="10">            <span class="cf">return</span></a>
+<a class="sourceLine" id="cb22-11" title="11"></a>
+<a class="sourceLine" id="cb22-12" title="12">        <span class="cf">if</span> <span class="va">self</span>.val <span class="op">==</span> val:</a>
+<a class="sourceLine" id="cb22-13" title="13">            <span class="cf">return</span></a>
+<a class="sourceLine" id="cb22-14" title="14"></a>
+<a class="sourceLine" id="cb22-15" title="15">        <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-16" title="16">            <span class="cf">if</span> <span class="va">self</span>.left:</a>
+<a class="sourceLine" id="cb22-17" title="17">                <span class="va">self</span>.left.insert(val)</a>
+<a class="sourceLine" id="cb22-18" title="18">                <span class="cf">return</span></a>
+<a class="sourceLine" id="cb22-19" title="19">            <span class="va">self</span>.left <span class="op">=</span> BSTNode(val)</a>
+<a class="sourceLine" id="cb22-20" title="20">            <span class="cf">return</span></a>
+<a class="sourceLine" id="cb22-21" title="21"></a>
+<a class="sourceLine" id="cb22-22" title="22">        <span class="cf">if</span> <span class="va">self</span>.right:</a>
+<a class="sourceLine" id="cb22-23" title="23">            <span class="va">self</span>.right.insert(val)</a>
+<a class="sourceLine" id="cb22-24" title="24">            <span class="cf">return</span></a>
+<a class="sourceLine" id="cb22-25" title="25">        <span class="va">self</span>.right <span class="op">=</span> BSTNode(val)</a>
+<a class="sourceLine" id="cb22-26" title="26"></a>
+<a class="sourceLine" id="cb22-27" title="27">    <span class="kw">def</span> get_min(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-28" title="28">        current <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-29" title="29">        <span class="cf">while</span> current.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-30" title="30">            current <span class="op">=</span> current.left</a>
+<a class="sourceLine" id="cb22-31" title="31">        <span class="cf">return</span> current.val</a>
+<a class="sourceLine" id="cb22-32" title="32"></a>
+<a class="sourceLine" id="cb22-33" title="33">    <span class="kw">def</span> get_max(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb22-34" title="34">        current <span class="op">=</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-35" title="35">        <span class="cf">while</span> current.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-36" title="36">            current <span class="op">=</span> current.right</a>
+<a class="sourceLine" id="cb22-37" title="37">        <span class="cf">return</span> current.val</a>
+<a class="sourceLine" id="cb22-38" title="38"></a>
+<a class="sourceLine" id="cb22-39" title="39">    <span class="kw">def</span> delete(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb22-40" title="40">        <span class="cf">if</span> <span class="va">self</span> <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-41" title="41">            <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-42" title="42">        <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-43" title="43">            <span class="cf">if</span> <span class="va">self</span>.left:</a>
+<a class="sourceLine" id="cb22-44" title="44">                <span class="va">self</span>.left <span class="op">=</span> <span class="va">self</span>.left.delete(val)</a>
+<a class="sourceLine" id="cb22-45" title="45">            <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-46" title="46">        <span class="cf">if</span> val <span class="op">&gt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-47" title="47">            <span class="cf">if</span> <span class="va">self</span>.right:</a>
+<a class="sourceLine" id="cb22-48" title="48">                <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(val)</a>
+<a class="sourceLine" id="cb22-49" title="49">            <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-50" title="50">        <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-51" title="51">            <span class="cf">return</span> <span class="va">self</span>.left</a>
+<a class="sourceLine" id="cb22-52" title="52">        <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-53" title="53">            <span class="cf">return</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb22-54" title="54">        min_larger_node <span class="op">=</span> <span class="va">self</span>.right</a>
+<a class="sourceLine" id="cb22-55" title="55">        <span class="cf">while</span> min_larger_node.left:</a>
+<a class="sourceLine" id="cb22-56" title="56">            min_larger_node <span class="op">=</span> min_larger_node.left</a>
+<a class="sourceLine" id="cb22-57" title="57">        <span class="va">self</span>.val <span class="op">=</span> min_larger_node.val</a>
+<a class="sourceLine" id="cb22-58" title="58">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(min_larger_node.val)</a>
+<a class="sourceLine" id="cb22-59" title="59">        <span class="cf">return</span> <span class="va">self</span></a>
+<a class="sourceLine" id="cb22-60" title="60"></a>
+<a class="sourceLine" id="cb22-61" title="61">    <span class="kw">def</span> exists(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb22-62" title="62">        <span class="cf">if</span> val <span class="op">==</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-63" title="63">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb22-64" title="64"></a>
+<a class="sourceLine" id="cb22-65" title="65">        <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
+<a class="sourceLine" id="cb22-66" title="66">            <span class="cf">if</span> <span class="va">self</span>.left <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-67" title="67">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb22-68" title="68">            <span class="cf">return</span> <span class="va">self</span>.left.exists(val)</a>
+<a class="sourceLine" id="cb22-69" title="69"></a>
+<a class="sourceLine" id="cb22-70" title="70">        <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-71" title="71">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb22-72" title="72">        <span class="cf">return</span> <span class="va">self</span>.right.exists(val)</a>
+<a class="sourceLine" id="cb22-73" title="73"></a>
+<a class="sourceLine" id="cb22-74" title="74">    <span class="kw">def</span> preorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb22-75" title="75">        <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-76" title="76">            vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb22-77" title="77">        <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-78" title="78">            <span class="va">self</span>.left.preorder(vals)</a>
+<a class="sourceLine" id="cb22-79" title="79">        <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-80" title="80">            <span class="va">self</span>.right.preorder(vals)</a>
+<a class="sourceLine" id="cb22-81" title="81">        <span class="cf">return</span> vals</a>
+<a class="sourceLine" id="cb22-82" title="82"></a>
+<a class="sourceLine" id="cb22-83" title="83">    <span class="kw">def</span> inorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb22-84" title="84">        <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-85" title="85">            <span class="va">self</span>.left.inorder(vals)</a>
+<a class="sourceLine" id="cb22-86" title="86">        <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-87" title="87">            vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb22-88" title="88">        <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-89" title="89">            <span class="va">self</span>.right.inorder(vals)</a>
+<a class="sourceLine" id="cb22-90" title="90">        <span class="cf">return</span> vals</a>
+<a class="sourceLine" id="cb22-91" title="91"></a>
+<a class="sourceLine" id="cb22-92" title="92">    <span class="kw">def</span> postorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb22-93" title="93">        <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-94" title="94">            <span class="va">self</span>.left.postorder(vals)</a>
+<a class="sourceLine" id="cb22-95" title="95">        <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-96" title="96">            <span class="va">self</span>.right.postorder(vals)</a>
+<a class="sourceLine" id="cb22-97" title="97">        <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb22-98" title="98">            vals.append(<span class="va">self</span>.val)</a>
+<a class="sourceLine" id="cb22-99" title="99">        <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
+<h3 id="where-would-you-use-a-binary-search-tree-in-real-life">Where would you use a binary search tree in real life?</h3>
+<p>There are many applications of binary search trees in real life, and one of the most common use-cases is in storing indexes and keys in a database. For example, in MySQL or PostgresQL when you create a primary key column, what you’re really doing is creating a binary tree where the keys are the values of the column, and those nodes point to database rows. This lets the application easily search database rows by providing a key. For example, getting a user record by the <code>email</code> primary key.</p>
+<p>There are many applications of binary search trees in real life, and one of the most common use cases is storing indexes and keys in a database. For example, when you create a primary key column in MySQL or PostgresQL, you create a binary tree where the keys are the values of the column and the nodes point to database rows. This allows the application to easily search for database rows by specifying a key, for example, to find a user record using the email primary key.</p>
+<p>Other common uses include:</p>
+<ul>
+<li>Pathfinding algorithms in videogames (A*) use BSTs</li>
+<li>File compression using a Huffman encoding scheme uses a binary search tree</li>
+<li>Rendering calculations – Doom (1993) was famously the first game to use a BST</li>
+<li>Compilers for low-level coding languages parse syntax using a BST</li>
+<li>Almost every database in existence uses BSTs for key lookups</li>
+</ul>
+<h2 id="example-binary-tree">Example Binary Tree</h2>
+<h4 id="visual-aid">Visual Aid</h4>
+<h3 id="picture-alt"><img src="https://assets.aaonline.io/data_structures_algorithms/trees/images/graph_a.png" alt="picture alt" /></h3>
+<h4 id="example-code">Example Code</h4>
+<div class="sourceCode" id="cb23"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb23-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-4" title="4">    <span class="kw">this</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb23-5" title="5">    <span class="kw">this</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb23-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb23-8" title="8"></a>
+<a class="sourceLine" id="cb23-9" title="9"><span class="kw">let</span> a <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;a&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-10" title="10"><span class="kw">let</span> b <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;b&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-11" title="11"><span class="kw">let</span> c <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;c&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-12" title="12"><span class="kw">let</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;d&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-13" title="13"><span class="kw">let</span> e <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;e&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-14" title="14"><span class="kw">let</span> f <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(<span class="st">&#39;f&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-15" title="15"></a>
+<a class="sourceLine" id="cb23-16" title="16"><span class="va">a</span>.<span class="at">left</span> <span class="op">=</span> b<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-17" title="17"><span class="va">a</span>.<span class="at">right</span> <span class="op">=</span> c<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-18" title="18"><span class="va">b</span>.<span class="at">left</span> <span class="op">=</span> d<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-19" title="19"><span class="va">b</span>.<span class="at">right</span> <span class="op">=</span> e<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-20" title="20"><span class="va">c</span>.<span class="at">right</span> <span class="op">=</span> f<span class="op">;</span></a></code></pre></div>
+<h2 id="terms">Terms</h2>
+<ul>
+<li>tree - graph with no cycles</li>
+<li>binary tree - tree where nodes have at most 2 nodes</li>
+<li>root - the ultimate parent, the single node of a tree that can access every other node through edges; by definition the root will not have a parent</li>
+<li>internal node - a node that has children</li>
+<li>leaf - a node that does not have any children</li>
+<li>path - a series of nodes that can be traveled through edges - for example A, B, E is a path through the above tree</li>
+</ul>
+<h2 id="search-patterns">Search Patterns</h2>
+<ul>
+<li>Breadth First Search - Check all nodes at a level before moving down a level
+<ul>
+<li>Think of this of searching horizontally in rows</li>
+</ul></li>
+<li><p>Depth First Search - Check the depth as far as it goes for one child, before</p>
+<p>moving on to the next child.</p>
+<ul>
+<li>Think of this as searching vertically in diagonals</li>
+<li>Pre-Order Traversal - Access the data of the current node, recursively visit the left sub tree, recursively visit the right sub tree
+<ul>
+<li>All the way to the left, top down, going right after other options have already been logged.</li>
+</ul></li>
+<li>In-Order Traversal - Recursively visit the left sub tree, access the data of the current node, recursively visit the right sub tree
+<ul>
+<li>In the order they were the “current root”, the actual return order of the recursive calls.</li>
+</ul></li>
+<li>Post-Order Traversal - Recursively visit the left sub tree, recursively visit the right sub tree, access the data of the current node.
+<ul>
+<li>Starting with the bottom most nodes working up through the tree</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="constraints">Constraints</h2>
+<ul>
+<li>Binary trees have at most two children per node</li>
+<li>Given any node of the tree, the values on the left must be strictly less than that node</li>
+<li>Given any node of the tree, the values on the right must be strictly greater than or equal to that node</li>
+<li>Given these constraints a binary tree is necessarily a sorted data structure</li>
+<li>The worst binary trees devolve into a linked list, the best are height balanced (think branching).</li>
+</ul>
+<h2 id="pseudocode-for-insertion">PseudoCode For Insertion</h2>
+<ul>
+<li>Create a new node</li>
+<li>Start at the root
+<ul>
+<li>Check if there is a root
+<ul>
+<li>If not the root becomes the new node</li>
+</ul></li>
+<li>If there is a root check if the value of the new node is equal to, greater then, or less then the value of the root
+<ul>
+<li>If it is greater or equal to
+<ul>
+<li>Check to see if there is a node to the right
+<ul>
+<li>If there is, move to the new node and continue with the node to the right as the subtree root</li>
+<li>If there is not, add the new node as the right property of the current node</li>
+</ul></li>
+</ul></li>
+<li>If it is smaller
+<ul>
+<li>Check to see if there is a node to the left
+<ul>
+<li>If there is, move to the new node and continue with the node to the left as the subtree root</li>
+<li>If there is not, add the new node as the left property of the current node</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="pseudocode-for-search-of-a-single-item">PseudoCode For Search Of A single Item</h2>
+<ul>
+<li>Start at the root
+<ul>
+<li>Check if there is a root
+<ul>
+<li>If not, there is nothing in the tree, so the search is over</li>
+</ul></li>
+<li>If there is a root, check if the value of the root is equal to, greater then, or less then the value were looking for;
+<ul>
+<li>If it is equal to the value
+<ul>
+<li>We found what we are searching for</li>
+</ul></li>
+<li>If it is less than the value
+<ul>
+<li>Check to see if there is a node to the left
+<ul>
+<li>If there isn’t
+<ul>
+<li>the value isn’t in our tree</li>
+</ul></li>
+<li>If there is
+<ul>
+<li>repeat these steps with the node to the left as the new subtree root</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>If it is greater than the value
+<ul>
+<li>Check to see if there is a node to the right
+<ul>
+<li>If there isn’t
+<ul>
+<li>the value isn’t in our tree</li>
+</ul></li>
+<li>If there is
+<ul>
+<li>repeat these steps with the node to the right as the new subtree root</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="pseudocode-for-breadth-first-search-traversal">PseudoCode For Breadth First Search Traversal</h2>
+<ul>
+<li>Create a queue class or use an array</li>
+<li>Create a variable to store the values of the nodes visited</li>
+<li>Place the root in the queue</li>
+<li>Loop as many times as there are items in the queue
+<ul>
+<li>Dequeue a node</li>
+<li>If there is a left value to the node dequeued, add it to the queue</li>
+<li>If there is a right value to the node dequeued, add it to the queue</li>
+<li>Push the nodes value into the variable that stores nodes visited</li>
+</ul></li>
+</ul>
+<h2 id="pseudocode-for-depth-first-search-traversal">PseudoCode For Depth First Search Traversal</h2>
+<h3 id="pre-order">Pre-Order</h3>
+<p><strong>Iterative</strong></p>
+<ul>
+<li>Create a stack class or use an array</li>
+<li>Push the root into the stack</li>
+<li>Create a variable to store the values of the nodes visited</li>
+<li>Do this as long as there is something on the stack
+<ul>
+<li>Pop a node from the stack</li>
+<li>Push that nodes value into the variable that stores nodes visited.</li>
+<li>If there is a node to the right push it into the stack</li>
+<li>If there is a node to the left push it into the stack</li>
+</ul></li>
+<li>Return the variable storing the values</li>
+</ul>
+<p><strong>Recursive</strong></p>
+<ul>
+<li>Create a variable to store the current root</li>
+<li>Push the value of current root to the variable storing the values</li>
+<li>If the current root has a left propety call the function on that the left property</li>
+<li>If the current root has a right propety call the function on that the right property</li>
+<li>Spread the current root, the left values, and the right values</li>
+</ul>
+<h3 id="in-order">In-Order</h3>
+<p><strong>Iterative</strong></p>
+<ul>
+<li>Create a stack class or use an array</li>
+<li>Create a variable to store the current root</li>
+<li>Create a variable to store the values of the nodes visited</li>
+<li>Create a loop
+<ul>
+<li>While the current root exists
+<ul>
+<li>push the current root to the call stack</li>
+<li>current root is equal to the left of current root</li>
+</ul></li>
+<li>if the stack is empty break out of the loop</li>
+<li>set a variable to equal the popped value of the stack</li>
+<li>push that variable into the variable that stores values</li>
+<li>set the current root to the right of the current loop</li>
+</ul></li>
+<li>Return the variable storing the values</li>
+</ul>
+<p><strong>Recursive</strong></p>
+<ul>
+<li>Create a variable to store the current root</li>
+<li>Push the value of current root to the variable storing the values</li>
+<li>If the current root has a left propety call the function on that the left property</li>
+<li>If the current root has a right propety call the function on that the right property</li>
+<li>Spread the the left values, current root ,and the right values</li>
+</ul>
+<h3 id="post-order">Post-Order</h3>
+<p><strong>Iterative</strong></p>
+<ul>
+<li>Haven’t figured this one out yet.</li>
+</ul>
+<p><strong>Recursive</strong></p>
+<ul>
+<li>Create a variable to store the current root</li>
+<li>Push the value of current root to the variable storing the values</li>
+<li>If the current root has a left propety call the function on that the left property</li>
+<li>If the current root has a right propety call the function on that the right property</li>
+<li>Spread the the left values, the right values, and current root</li>
+</ul>
+<h2 id="example-binary-search-tree">Example Binary Search Tree</h2>
+<div class="sourceCode" id="cb24"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-4" title="4">    <span class="kw">this</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-5" title="5">    <span class="kw">this</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb24-8" title="8"></a>
+<a class="sourceLine" id="cb24-9" title="9"><span class="kw">class</span> BST <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-10" title="10">  <span class="at">constructor</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-11" title="11">    <span class="kw">this</span>.<span class="at">root</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-12" title="12">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-13" title="13"></a>
+<a class="sourceLine" id="cb24-14" title="14">  <span class="co">//Insert a new node</span></a>
+<a class="sourceLine" id="cb24-15" title="15"></a>
+<a class="sourceLine" id="cb24-16" title="16">  <span class="at">recursiveInsert</span>(val<span class="op">,</span> currentNode <span class="op">=</span> <span class="kw">this</span>.<span class="at">root</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-17" title="17">    <span class="cf">if</span> (<span class="op">!</span><span class="kw">this</span>.<span class="at">root</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-18" title="18">      <span class="kw">this</span>.<span class="at">root</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-19" title="19">      <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-21" title="21">    <span class="cf">if</span> (val <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-22" title="22">      <span class="cf">if</span> (<span class="op">!</span><span class="va">currentNode</span>.<span class="at">left</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-23" title="23">        <span class="va">currentNode</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-24" title="24">      <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-25" title="25">        <span class="kw">this</span>.<span class="at">insert</span>(val<span class="op">,</span> <span class="va">currentNode</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-26" title="26">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-27" title="27">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-28" title="28">      <span class="cf">if</span> (<span class="op">!</span><span class="va">currentNode</span>.<span class="at">right</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-29" title="29">        <span class="va">currentNode</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-30" title="30">      <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-31" title="31">        <span class="kw">this</span>.<span class="at">insert</span>(val<span class="op">,</span> <span class="va">currentNode</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-32" title="32">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-33" title="33">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-34" title="34">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-35" title="35"></a>
+<a class="sourceLine" id="cb24-36" title="36">  <span class="at">iterativeInsert</span>(val<span class="op">,</span> currentNode <span class="op">=</span> <span class="kw">this</span>.<span class="at">root</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-37" title="37">    <span class="cf">if</span> (<span class="op">!</span><span class="kw">this</span>.<span class="at">root</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-38" title="38">      <span class="kw">this</span>.<span class="at">root</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(val)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-39" title="39">      <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-40" title="40">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-41" title="41">    <span class="cf">if</span> (val <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-42" title="42">      <span class="cf">if</span> (<span class="op">!</span><span class="va">currentNode</span>.<span class="at">left</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-43" title="43">        <span class="va">currentNode</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-44" title="44">      <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-45" title="45">        <span class="cf">while</span> (<span class="kw">true</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-46" title="46">          <span class="cf">if</span> (val <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-47" title="47">            <span class="cf">if</span> (<span class="op">!</span><span class="va">currenNodet</span>.<span class="at">left</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-48" title="48">              <span class="va">currentNode</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-49" title="49">              <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-50" title="50">            <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-51" title="51">              currentNode <span class="op">=</span> <span class="va">currentNode</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-52" title="52">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-53" title="53">          <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-54" title="54">            <span class="cf">if</span> (<span class="op">!</span><span class="va">currentNode</span>.<span class="at">right</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-55" title="55">              <span class="va">currentNode</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-56" title="56">              <span class="cf">return</span> <span class="kw">this</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-57" title="57">            <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-58" title="58">              currentNode <span class="op">=</span> <span class="va">currentNode</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-59" title="59">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-60" title="60">          <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-61" title="61">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-62" title="62">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-63" title="63">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-64" title="64">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-65" title="65"></a>
+<a class="sourceLine" id="cb24-66" title="66">  <span class="co">//Search the tree</span></a>
+<a class="sourceLine" id="cb24-67" title="67"></a>
+<a class="sourceLine" id="cb24-68" title="68">  <span class="at">searchRecur</span>(val<span class="op">,</span> currentNode <span class="op">=</span> <span class="kw">this</span>.<span class="at">root</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-69" title="69">    <span class="cf">if</span> (<span class="op">!</span>currentNode) <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-70" title="70">    <span class="cf">if</span> (val <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-71" title="71">      <span class="cf">return</span> <span class="kw">this</span>.<span class="at">searchRecur</span>(val<span class="op">,</span> <span class="va">currentNode</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-72" title="72">    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (val <span class="op">&gt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-73" title="73">      <span class="cf">return</span> <span class="kw">this</span>.<span class="at">searchRecur</span>(val<span class="op">,</span> <span class="va">currentNode</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-74" title="74">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-75" title="75">      <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-76" title="76">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-77" title="77">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-78" title="78"></a>
+<a class="sourceLine" id="cb24-79" title="79">  <span class="at">searchIter</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-80" title="80">    <span class="kw">let</span> currentNode <span class="op">=</span> <span class="kw">this</span>.<span class="at">root</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-81" title="81">    <span class="cf">while</span> (currentNode) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-82" title="82">      <span class="cf">if</span> (val <span class="op">&lt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-83" title="83">        currentNode <span class="op">=</span> <span class="va">currentNode</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-84" title="84">      <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (val <span class="op">&gt;</span> <span class="va">currentNode</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-85" title="85">        currentNode <span class="op">=</span> <span class="va">currentNode</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-86" title="86">      <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-87" title="87">        <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-88" title="88">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-89" title="89">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-90" title="90">    <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-91" title="91">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-92" title="92"></a>
+<a class="sourceLine" id="cb24-93" title="93">  <span class="co">// Maybe works, who knows, pulled it off the internet....</span></a>
+<a class="sourceLine" id="cb24-94" title="94"></a>
+<a class="sourceLine" id="cb24-95" title="95">  <span class="at">deleteNodeHelper</span>(root<span class="op">,</span> key) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-96" title="96">    <span class="cf">if</span> (root <span class="op">===</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-97" title="97">      <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-98" title="98">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-99" title="99">    <span class="cf">if</span> (key <span class="op">&lt;</span> <span class="va">root</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-100" title="100">      <span class="va">root</span>.<span class="at">left</span> <span class="op">=</span> <span class="at">deleteNodeHelper</span>(<span class="va">root</span>.<span class="at">left</span><span class="op">,</span> key)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-101" title="101">      <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-102" title="102">    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (key <span class="op">&gt;</span> <span class="va">root</span>.<span class="at">val</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-103" title="103">      <span class="va">root</span>.<span class="at">right</span> <span class="op">=</span> <span class="at">deleteNodeHelper</span>(<span class="va">root</span>.<span class="at">right</span><span class="op">,</span> key)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-104" title="104">      <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-105" title="105">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-106" title="106">      <span class="cf">if</span> (<span class="va">root</span>.<span class="at">left</span> <span class="op">===</span> <span class="kw">null</span> <span class="op">&amp;&amp;</span> <span class="va">root</span>.<span class="at">right</span> <span class="op">===</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-107" title="107">        root <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-108" title="108">        <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-109" title="109">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-110" title="110">      <span class="cf">if</span> (<span class="va">root</span>.<span class="at">left</span> <span class="op">===</span> <span class="kw">null</span>) <span class="cf">return</span> <span class="va">root</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-111" title="111">      <span class="cf">if</span> (<span class="va">root</span>.<span class="at">right</span> <span class="op">===</span> <span class="kw">null</span>) <span class="cf">return</span> <span class="va">root</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-112" title="112"></a>
+<a class="sourceLine" id="cb24-113" title="113">      <span class="kw">let</span> currNode <span class="op">=</span> <span class="va">root</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-114" title="114">      <span class="cf">while</span> (<span class="va">currNode</span>.<span class="at">left</span> <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-115" title="115">        currNode <span class="op">=</span> <span class="va">currNode</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-116" title="116">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-117" title="117">      <span class="va">root</span>.<span class="at">val</span> <span class="op">=</span> <span class="va">currNode</span>.<span class="at">val</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-118" title="118">      <span class="va">root</span>.<span class="at">right</span> <span class="op">=</span> <span class="at">deleteNodeHelper</span>(<span class="va">root</span>.<span class="at">right</span><span class="op">,</span> <span class="va">currNode</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-119" title="119">      <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-120" title="120">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-121" title="121">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-122" title="122"></a>
+<a class="sourceLine" id="cb24-123" title="123">  <span class="co">//Recursive Depth First Search</span></a>
+<a class="sourceLine" id="cb24-124" title="124"></a>
+<a class="sourceLine" id="cb24-125" title="125">  <span class="at">preOrderTraversal</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-126" title="126">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-127" title="127">    <span class="kw">let</span> left <span class="op">=</span> <span class="kw">this</span>.<span class="at">preOrderTraversal</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-128" title="128">    <span class="kw">let</span> right <span class="op">=</span> <span class="kw">this</span>.<span class="at">preOrderTraversal</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-129" title="129">    <span class="cf">return</span> [<span class="va">root</span>.<span class="at">val</span><span class="op">,</span> ...<span class="at">left</span><span class="op">,</span> ...<span class="at">right</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-130" title="130">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-131" title="131"></a>
+<a class="sourceLine" id="cb24-132" title="132">  <span class="at">preOrderTraversalV2</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-133" title="133">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-134" title="134">    <span class="kw">let</span> newArray <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-135" title="135">    <span class="va">newArray</span>.<span class="at">push</span>(<span class="va">root</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-136" title="136">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">preOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">left</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-137" title="137">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">preOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">right</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-138" title="138">    <span class="cf">return</span> newArray<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-139" title="139">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-140" title="140"></a>
+<a class="sourceLine" id="cb24-141" title="141">  <span class="at">inOrderTraversal</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-142" title="142">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-143" title="143">    <span class="kw">let</span> left <span class="op">=</span> <span class="kw">this</span>.<span class="at">inOrderTraversal</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-144" title="144">    <span class="kw">let</span> right <span class="op">=</span> <span class="kw">this</span>.<span class="at">inOrderTraversal</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-145" title="145">    <span class="cf">return</span> [...<span class="at">left</span><span class="op">,</span> <span class="va">root</span>.<span class="at">val</span><span class="op">,</span> ...<span class="at">right</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-146" title="146">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-147" title="147"></a>
+<a class="sourceLine" id="cb24-148" title="148">  <span class="at">inOrderTraversalV2</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-149" title="149">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-150" title="150">    <span class="kw">let</span> newArray <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-151" title="151">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">inOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">left</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-152" title="152">    <span class="va">newArray</span>.<span class="at">push</span>(<span class="va">root</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-153" title="153">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">inOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">right</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-154" title="154">    <span class="cf">return</span> newArray<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-155" title="155">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-156" title="156"></a>
+<a class="sourceLine" id="cb24-157" title="157">  <span class="at">postOrderTraversal</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-158" title="158">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-159" title="159">    <span class="kw">let</span> left <span class="op">=</span> <span class="kw">this</span>.<span class="at">postOrderTraversal</span>(<span class="va">root</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-160" title="160">    <span class="kw">let</span> right <span class="op">=</span> <span class="kw">this</span>.<span class="at">postOrderTraversal</span>(<span class="va">root</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-161" title="161">    <span class="cf">return</span> [...<span class="at">left</span><span class="op">,</span> ...<span class="at">right</span><span class="op">,</span> <span class="va">root</span>.<span class="at">val</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-162" title="162">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-163" title="163"></a>
+<a class="sourceLine" id="cb24-164" title="164">  <span class="at">postOrderTraversalV2</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-165" title="165">    <span class="cf">if</span> (<span class="op">!</span>root) <span class="cf">return</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-166" title="166">    <span class="kw">let</span> newArray <span class="op">=</span> <span class="kw">new</span> <span class="at">Array</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-167" title="167">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">postOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">left</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-168" title="168">    <span class="va">newArray</span>.<span class="at">push</span>(...<span class="va">this</span>.<span class="at">postOrderTraversalV2</span>(<span class="va">root</span>.<span class="at">right</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-169" title="169">    <span class="va">newArray</span>.<span class="at">push</span>(<span class="va">root</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-170" title="170">    <span class="cf">return</span> newArray<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-171" title="171">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-172" title="172"></a>
+<a class="sourceLine" id="cb24-173" title="173">  <span class="co">// Iterative Depth First Search</span></a>
+<a class="sourceLine" id="cb24-174" title="174"></a>
+<a class="sourceLine" id="cb24-175" title="175">  <span class="at">iterativePreOrder</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-176" title="176">    <span class="kw">let</span> stack <span class="op">=</span> [root]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-177" title="177">    <span class="kw">let</span> results <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-178" title="178">    <span class="cf">while</span> (<span class="va">stack</span>.<span class="at">length</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-179" title="179">      <span class="kw">let</span> current <span class="op">=</span> <span class="va">stack</span>.<span class="at">pop</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-180" title="180">      <span class="va">results</span>.<span class="at">push</span>(current)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-181" title="181">      <span class="cf">if</span> (<span class="va">current</span>.<span class="at">left</span>) <span class="va">stack</span>.<span class="at">push</span>(<span class="va">current</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-182" title="182">      <span class="cf">if</span> (<span class="va">current</span>.<span class="at">right</span>) <span class="va">stack</span>.<span class="at">push</span>(<span class="va">current</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-183" title="183">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-184" title="184">    <span class="cf">return</span> results<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-185" title="185">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-186" title="186"></a>
+<a class="sourceLine" id="cb24-187" title="187">  <span class="at">iterativeInOrder</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-188" title="188">    <span class="kw">let</span> stack <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-189" title="189">    <span class="kw">let</span> current <span class="op">=</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-190" title="190">    <span class="kw">let</span> results <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-191" title="191">    <span class="cf">while</span> (<span class="kw">true</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-192" title="192">      <span class="cf">while</span> (current) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-193" title="193">        <span class="va">stack</span>.<span class="at">push</span>(current)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-194" title="194">        current <span class="op">=</span> <span class="va">current</span>.<span class="at">left</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-195" title="195">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-196" title="196"></a>
+<a class="sourceLine" id="cb24-197" title="197">      <span class="cf">if</span> (<span class="op">!</span><span class="va">stack</span>.<span class="at">length</span>) <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-198" title="198">      <span class="kw">let</span> removed <span class="op">=</span> <span class="va">stack</span>.<span class="at">pop</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-199" title="199">      <span class="va">results</span>.<span class="at">push</span>(removed)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-200" title="200">      current <span class="op">=</span> <span class="va">current</span>.<span class="at">right</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-201" title="201">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-202" title="202">    <span class="cf">return</span> results<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-203" title="203">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-204" title="204"></a>
+<a class="sourceLine" id="cb24-205" title="205">  <span class="co">//To-Do iterativePostOrder</span></a>
+<a class="sourceLine" id="cb24-206" title="206"></a>
+<a class="sourceLine" id="cb24-207" title="207">  <span class="co">//Breadth First Search</span></a>
+<a class="sourceLine" id="cb24-208" title="208"></a>
+<a class="sourceLine" id="cb24-209" title="209">  <span class="at">breadthFirstSearch</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-210" title="210">    <span class="kw">let</span> queue <span class="op">=</span> [root]<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-211" title="211">    <span class="kw">let</span> result <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-212" title="212">    <span class="cf">while</span> (<span class="va">queue</span>.<span class="at">length</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-213" title="213">      <span class="kw">let</span> current <span class="op">=</span> <span class="va">queue</span>.<span class="at">shift</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-214" title="214">      <span class="cf">if</span> (<span class="va">current</span>.<span class="at">left</span>) <span class="va">queue</span>.<span class="at">push</span>(<span class="va">current</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-215" title="215">      <span class="cf">if</span> (<span class="va">current</span>.<span class="at">right</span>) <span class="va">queue</span>.<span class="at">push</span>(<span class="va">current</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-216" title="216">      <span class="va">current</span>.<span class="at">push</span>(result)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-217" title="217">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-218" title="218">    <span class="cf">return</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-219" title="219">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-220" title="220"></a>
+<a class="sourceLine" id="cb24-221" title="221">  <span class="co">// Converting a Sorted Array to a Binary Search Tree</span></a>
+<a class="sourceLine" id="cb24-222" title="222"></a>
+<a class="sourceLine" id="cb24-223" title="223">  <span class="at">sortedArrayToBST</span>(nums) <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-224" title="224">    <span class="cf">if</span> (<span class="va">nums</span>.<span class="at">length</span> <span class="op">===</span> <span class="dv">0</span>) <span class="cf">return</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-225" title="225"></a>
+<a class="sourceLine" id="cb24-226" title="226">    <span class="kw">let</span> mid <span class="op">=</span> <span class="va">Math</span>.<span class="at">floor</span>(<span class="va">nums</span>.<span class="at">length</span> / <span class="dv">2</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-227" title="227">    <span class="kw">let</span> root <span class="op">=</span> <span class="kw">new</span> <span class="at">TreeNode</span>(nums[mid])<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-228" title="228"></a>
+<a class="sourceLine" id="cb24-229" title="229">    <span class="kw">let</span> left <span class="op">=</span> <span class="va">nums</span>.<span class="at">slice</span>(<span class="dv">0</span><span class="op">,</span> mid)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-230" title="230">    <span class="va">root</span>.<span class="at">left</span> <span class="op">=</span> <span class="at">sortedArrayToBST</span>(left)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-231" title="231"></a>
+<a class="sourceLine" id="cb24-232" title="232">    <span class="kw">let</span> right <span class="op">=</span> <span class="va">nums</span>.<span class="at">slice</span>(mid <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-233" title="233">    <span class="va">root</span>.<span class="at">right</span> <span class="op">=</span> <span class="at">sortedArrayToBST</span>(right)<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-234" title="234"></a>
+<a class="sourceLine" id="cb24-235" title="235">    <span class="cf">return</span> root<span class="op">;</span></a>
+<a class="sourceLine" id="cb24-236" title="236">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-237" title="237"><span class="op">}</span></a></code></pre></div>
+</body>
+</html>

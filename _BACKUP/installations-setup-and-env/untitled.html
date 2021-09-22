@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="python-setup">python-setup</h1>
+<h2 id="installing-python-modules">Installing Python Modules</h2>
+<p>Email</p>
+<p><a href="mailto:distutils-sig%40python.org">distutils-sig@python.org</a></p>
+<p>As a popular open source development project, Python has an active supporting community of contributors and users that also make their software available for other Python developers to use under open source license terms.</p>
+<p>This allows Python users to share and collaborate effectively, benefiting from the solutions others have already created to common (and sometimes even rare!) problems, as well as potentially contributing their own solutions to the common pool.</p>
+<p>This guide covers the installation part of the process. For a guide to creating and sharing your own Python projects, refer to the <a href="https://docs.python.org/3/distributing/index.html#distributing-index">distribution guide</a>.</p>
+<p>Note</p>
+<p>For corporate and other institutional users, be aware that many organisations have their own policies around using and contributing to open source software. Please take such policies into account when making use of the distribution and installation tools provided with Python.</p>
+<h3 id="key-terms">Key terms</h3>
+<ul>
+<li><code>pip</code> is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers.</li>
+<li>A <em>virtual environment</em> is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.</li>
+<li><code>venv</code> is the standard tool for creating virtual environments, and has been part of Python since Python 3.3. Starting with Python 3.4, it defaults to installing <code>pip</code> into all created virtual environments.</li>
+<li><code>virtualenv</code> is a third party alternative (and predecessor) to <code>venv</code>. It allows virtual environments to be used on versions of Python prior to 3.4, which either don’t provide <code>venv</code> at all, or aren’t able to automatically install <code>pip</code> into created environments.</li>
+<li>The <a href="https://pypi.org/">Python Packaging Index</a> is a public repository of open source licensed packages made available for use by other Python users.</li>
+<li>the <a href="https://www.pypa.io/">Python Packaging Authority</a> is the group of developers and documentation authors responsible for the maintenance and evolution of the standard packaging tools and the associated metadata and file format standards. They maintain a variety of tools, documentation, and issue trackers on both <a href="https://github.com/pypa">GitHub</a> and <a href="https://bitbucket.org/pypa/">Bitbucket</a>.</li>
+<li><code>distutils</code> is the original build and distribution system first added to the Python standard library in 1998. While direct use of <code>distutils</code> is being phased out, it still laid the foundation for the current packaging and distribution infrastructure, and it not only remains part of the standard library, but its name lives on in other ways (such as the name of the mailing list used to coordinate Python packaging standards development).</li>
+</ul>
+<p>Changed in version 3.5: The use of <code>venv</code> is now recommended for creating virtual environments.</p>
+<p>See also</p>
+<p><a href="https://packaging.python.org/installing/#creating-virtual-environments">Python Packaging User Guide: Creating and using virtual environments</a></p>
+<h3 id="basic-usage">Basic usage</h3>
+<p>The standard packaging tools are all designed to be used from the command line.</p>
+<p>The following command will install the latest version of a module and its dependencies from the Python Packaging Index:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">python <span class="op">-</span>m pip install SomePackage</a></code></pre></div>
+<p>Note</p>
+<p>For POSIX users (including Mac OS X and Linux users), the examples in this guide assume the use of a <a href="https://docs.python.org/3/glossary.html#term-virtual-environment">virtual environment</a>.</p>
+<p>For Windows users, the examples in this guide assume that the option to adjust the system PATH environment variable was selected when installing Python.</p>
+<p>It’s also possible to specify an exact or minimum version directly on the command line. When using comparator operators such as <code>&gt;</code>, <code>&lt;</code> or some other special character which get interpreted by shell, the package name and the version should be enclosed within double quotes:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">python <span class="op">-</span>m pip install SomePackage<span class="op">==</span><span class="dv">1</span>.<span class="fl">0.4</span>    <span class="co"># specific version</span></a>
+<a class="sourceLine" id="cb2-2" title="2">python <span class="op">-</span>m pip install <span class="st">&quot;SomePackage&gt;=1.0.4&quot;</span>  <span class="co"># minimum version</span></a></code></pre></div>
+<p>Normally, if a suitable module is already installed, attempting to install it again will have no effect. Upgrading existing modules must be requested explicitly:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">python <span class="op">-</span>m pip install <span class="op">--</span>upgrade SomePackage</a></code></pre></div>
+<p>More information and resources regarding <code>pip</code> and its capabilities can be found in the <a href="https://packaging.python.org/">Python Packaging User Guide</a>.</p>
+<p>Creation of virtual environments is done through the <a href="https://docs.python.org/3/library/venv.html#module-venv"><code>venv</code></a> module. Installing packages into an active virtual environment uses the commands shown above.</p>
+<p>See also</p>
+<p><a href="https://packaging.python.org/installing/">Python Packaging User Guide: Installing Python Distribution Packages</a></p>
+<h3 id="how-do-i">How do I …?</h3>
+<p>These are quick answers or links for some common tasks.</p>
+<h4 id="install-pip-in-versions-of-python-prior-to-python-3.4">… install <code>pip</code> in versions of Python prior to Python 3.4?</h4>
+<p>Python only started bundling <code>pip</code> with Python 3.4. For earlier versions, <code>pip</code> needs to be “bootstrapped” as described in the Python Packaging User Guide.</p>
+<p>See also</p>
+<p><a href="https://packaging.python.org/installing/#requirements-for-installing-packages">Python Packaging User Guide: Requirements for Installing Packages</a></p>
+<h4 id="install-packages-just-for-the-current-user">… install packages just for the current user?</h4>
+<p>Passing the <code>--user</code> option to <code>python -m pip install</code> will install a package just for the current user, rather than for all users of the system.</p>
+<h4 id="install-scientific-python-packages">… install scientific Python packages?</h4>
+<p>A number of scientific Python packages have complex binary dependencies, and aren’t currently easy to install using <code>pip</code> directly. At this point in time, it will often be easier for users to install these packages by <a href="https://packaging.python.org/science/">other means</a> rather than attempting to install them with <code>pip</code>.</p>
+<p>See also</p>
+<p><a href="https://packaging.python.org/science/">Python Packaging User Guide: Installing Scientific Packages</a></p>
+<h4 id="work-with-multiple-versions-of-python-installed-in-parallel">… work with multiple versions of Python installed in parallel?</h4>
+<p>On Linux, Mac OS X, and other POSIX systems, use the versioned Python commands in combination with the <code>-m</code> switch to run the appropriate copy of <code>pip</code>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">python2   <span class="op">-</span>m pip install SomePackage  <span class="co"># default Python 2</span></a>
+<a class="sourceLine" id="cb4-2" title="2">python2<span class="fl">.7</span> <span class="op">-</span>m pip install SomePackage  <span class="co"># specifically Python 2.7</span></a>
+<a class="sourceLine" id="cb4-3" title="3">python3   <span class="op">-</span>m pip install SomePackage  <span class="co"># default Python 3</span></a>
+<a class="sourceLine" id="cb4-4" title="4">python3<span class="fl">.4</span> <span class="op">-</span>m pip install SomePackage  <span class="co"># specifically Python 3.4</span></a></code></pre></div>
+<p>Appropriately versioned <code>pip</code> commands may also be available.</p>
+<p>On Windows, use the <code>py</code> Python launcher in combination with the <code>-m</code> switch:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">py <span class="dv">-2</span>   <span class="op">-</span>m pip install SomePackage  <span class="co"># default Python 2</span></a>
+<a class="sourceLine" id="cb5-2" title="2">py <span class="fl">-2.7</span> <span class="op">-</span>m pip install SomePackage  <span class="co"># specifically Python 2.7</span></a>
+<a class="sourceLine" id="cb5-3" title="3">py <span class="dv">-3</span>   <span class="op">-</span>m pip install SomePackage  <span class="co"># default Python 3</span></a>
+<a class="sourceLine" id="cb5-4" title="4">py <span class="fl">-3.4</span> <span class="op">-</span>m pip install SomePackage  <span class="co"># specifically Python 3.4</span></a></code></pre></div>
+<h3 id="common-installation-issues">Common installation issues</h3>
+<h4 id="installing-into-the-system-python-on-linux">Installing into the system Python on Linux</h4>
+<p>On Linux systems, a Python installation will typically be included as part of the distribution. Installing into this Python installation requires root access to the system, and may interfere with the operation of the system package manager and other components of the system if a component is unexpectedly upgraded using <code>pip</code>.</p>
+<p>On such systems, it is often better to use a virtual environment or a per-user installation when installing packages with <code>pip</code>.</p>
+<h4 id="pip-not-installed">Pip not installed</h4>
+<p>It is possible that <code>pip</code> does not get installed by default. One potential fix is:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">python <span class="op">-</span>m ensurepip <span class="op">--</span>default<span class="op">-</span>pip</a></code></pre></div>
+<p>There are also additional resources for <a href="https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel">installing pip.</a></p>
+<h4 id="installing-binary-extensions">Installing binary extensions</h4>
+<p>Python has typically relied heavily on source based distribution, with end users being expected to compile extension modules from source as part of the installation process.</p>
+<p>With the introduction of support for the binary <code>wheel</code> format, and the ability to publish wheels for at least Windows and Mac OS X through the Python Packaging Index, this problem is expected to diminish over time, as users are more regularly able to install pre-built extensions rather than needing to build them themselves.</p>
+<p>Some of the solutions for installing <a href="https://packaging.python.org/science/">scientific software</a> that are not yet available as pre-built <code>wheel</code> files may also help with obtaining other binary extensions without needing to build them locally.</p>
+<hr />
+<h2 id="alternate-python-setup">Alternate Python Setup:</h2>
+<hr />
+<h2 id="section"></h2>
+<h2 id="python-installation-instructions">Python Installation Instructions</h2>
+<p>Python is the second programming language we will use in this course.</p>
+<blockquote>
+<p>Note: We do not install the python using the installer from the python.org website in this course. If you have one installed you should uninstall it before installing this version of python.</p>
+</blockquote>
+<p>Currently the curriculum for this course is compatible with Python 3.9.</p>
+<h3 id="installing-pyenv">Installing pyenv</h3>
+<p>The first thing we need is to install the Python version manager (<a href="https://github.com/pyenv/pyenv">pyenv</a>). This is similar to the <code>nvm</code> tool we used to install Node.JS, except it controls what versions of python we use on our system.</p>
+<p>To install pyenv we use the <a href="https://github.com/pyenv/pyenv-installer">pyenv-installer</a></p>
+<p>From the installation instructions on the <a href="https://github.com/pyenv/pyenv-installer">pyenv-installer</a> website, it says we run the following command:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">curl https:<span class="op">//</span>pyenv.run <span class="op">|</span> bash</a></code></pre></div>
+<p>Unlike <code>nvm</code>, <code>pyenv</code> does not automatically add it’s startup lines to your shell startup file.</p>
+<p>The files that you have to change will depend on which shell you are running (you can check which shell you have by running <code>echo $SHELL</code>). Follow the instructions to update the startup files associated with the shell that you are running.</p>
+<h4 id="if-your-shell-is-zsh">If your shell is <code>zsh</code></h4>
+<ol type="1">
+<li>Open up your <code>.profile</code> file with the following command.</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">code <span class="op">~/</span>.profile</a></code></pre></div>
+<ol type="1">
+<li>Add the following lines to your <code>.profile</code>.</li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">export PYENV_ROOT<span class="op">=</span><span class="st">&quot;$HOME/.pyenv&quot;</span></a>
+<a class="sourceLine" id="cb9-2" title="2">export PATH<span class="op">=</span><span class="st">&quot;$PYENV_ROOT/bin:$PATH&quot;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init --path)&quot;</span></a></code></pre></div>
+<ol type="1">
+<li>Open up your <code>.zprofile</code> file with the following command.</li>
+</ol>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">code <span class="op">~/</span>.zprofile</a></code></pre></div>
+<ol type="1">
+<li>Add the following lines to your <code>.zprofile</code>. (Yes, these are the same as above.)</li>
+</ol>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">export PYENV_ROOT<span class="op">=</span><span class="st">&quot;$HOME/.pyenv&quot;</span></a>
+<a class="sourceLine" id="cb11-2" title="2">export PATH<span class="op">=</span><span class="st">&quot;$PYENV_ROOT/bin:$PATH&quot;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init --path)&quot;</span></a></code></pre></div>
+<ol type="1">
+<li>Open your <code>.zshrc</code> with the following command</li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">code <span class="op">~/</span>.zshrc</a></code></pre></div>
+<ol type="1">
+<li>Add the following line.</li>
+</ol>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init -)&quot;</span></a></code></pre></div>
+<h4 id="if-your-shell-is-bash">If your shell is <code>bash</code></h4>
+<ol type="1">
+<li>Open up your <code>.profile</code> file with the following command.</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">code <span class="op">~/</span>.profile</a></code></pre></div>
+<ol type="1">
+<li>Add the following lines.</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">export PYENV_ROOT<span class="op">=</span><span class="st">&quot;$HOME/.pyenv&quot;</span></a>
+<a class="sourceLine" id="cb15-2" title="2">export PATH<span class="op">=</span><span class="st">&quot;$PYENV_ROOT/bin:$PATH&quot;</span></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init --path)&quot;</span></a></code></pre></div>
+<ol type="1">
+<li>Check if you have a <code>.bash_profile</code>. Run the following at the command line if you don’t know.</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="cf">if</span> [ <span class="op">-</span>f <span class="op">~/</span>.bash_profile ]<span class="op">;</span> then echo <span class="st">&quot;bash_profile exists&quot;</span><span class="op">;</span> <span class="cf">else</span> echo <span class="st">&quot;bash_profile does not exist&quot;</span><span class="op">;</span> fi</a></code></pre></div>
+<p>If you don’t have a <code>.bash_profile</code>, you can skip the rest of this step. If you do, open up your <code>.bash_profile</code> file with the following command.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">code <span class="op">~/</span>.bash_profile</a></code></pre></div>
+<ol type="1">
+<li>Add the following lines to your <code>.bash_profile</code>. (Yes, these are the same as above.)</li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">export PYENV_ROOT<span class="op">=</span><span class="st">&quot;$HOME/.pyenv&quot;</span></a>
+<a class="sourceLine" id="cb18-2" title="2">export PATH<span class="op">=</span><span class="st">&quot;$PYENV_ROOT/bin:$PATH&quot;</span></a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init --path)&quot;</span></a></code></pre></div>
+<ol type="1">
+<li>Open your <code>.bashrc</code> with the following command</li>
+</ol>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">code <span class="op">~/</span>.bashrc</a></code></pre></div>
+<ol type="1">
+<li>Add the following line.</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="bu">eval</span> <span class="st">&quot;$(pyenv init -)&quot;</span></a></code></pre></div>
+<p>To get your startup file to execute, restart your terminal.</p>
+<h3 id="installing-dependencies-on-windows-and-ubuntu">Installing dependencies on Windows and Ubuntu</h3>
+<p>If you use macOS you can skip this step.</p>
+<p>For Windows and Ubuntu users you will need to install some extra dependencies for python. (See here for more information about the prerequisites: <a href="https://github.com/pyenv/pyenv/wiki/Common-build-problems">pyenv Prerequities</a>)</p>
+<p>First run this command to update your apt repositories:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">sudo apt update</a></code></pre></div>
+<p>and then run this command to install the packages listed on the pyenv.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">sudo apt<span class="op">-</span>get install <span class="op">-</span>y build<span class="op">-</span>essential libssl<span class="op">-</span>dev zlib1g<span class="op">-</span>dev libbz2<span class="op">-</span>dev <span class="op">\</span></a>
+<a class="sourceLine" id="cb22-2" title="2">libreadline<span class="op">-</span>dev libsqlite3<span class="op">-</span>dev wget curl llvm libncurses5<span class="op">-</span>dev libncursesw5<span class="op">-</span>dev <span class="op">\</span></a>
+<a class="sourceLine" id="cb22-3" title="3">xz<span class="op">-</span>utils tk<span class="op">-</span>dev libffi<span class="op">-</span>dev liblzma<span class="op">-</span>dev python<span class="op">-</span>openssl git</a></code></pre></div>
+<h3 id="installing-python-itself">Installing python itself</h3>
+<p>Now we are ready to install python. We will be installing Python version 3.9.4.</p>
+<p>Then run this command to install python (you’ll notice pyenv makes us put in the <em>exact</em> version instead of being able to just say <code>3.9</code> or <code>3</code>)</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">pyenv install <span class="dv">3</span>.<span class="fl">9.4</span></a></code></pre></div>
+<p>After some time this should complete without any errors. It could take a while since you are compiling python from source code.</p>
+<p>Once this is finished we also need to tell pyenv this is our default version of python using this command:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1">pyenv <span class="kw">global</span> <span class="dv">3</span>.<span class="fl">9.4</span></a></code></pre></div>
+<p>Ensure that these changes take effect by closing your terminal and opening a new one. Then, we can verify our python is the correct version by typing</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1">python <span class="op">--</span>version</a>
+<a class="sourceLine" id="cb25-2" title="2">python3 <span class="op">--</span>version</a></code></pre></div>
+<p>Both of these commands should show 3.9.4</p>
+<h3 id="pipenv">Pipenv</h3>
+<p>Another piece of software we will use in class is Pipenv. Don’t worry about what this is right now, it’s just enough to install it.</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1">pip install pipenv</a></code></pre></div>
+<p>Then after you have installed pipenv, add this line to your shell startup file (either your <code>.bashrc</code> or your <code>.zshrc</code>) somewhere after the <code>eval "$(pyenv init -)"</code>.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1">export PIPENV_VENV_IN_PROJECT<span class="op">=</span><span class="dv">1</span></a></code></pre></div>
+<p>Congratulations! If you’ve completed all these steps you are ready to code in Python!</p>
+</body>
+</html>

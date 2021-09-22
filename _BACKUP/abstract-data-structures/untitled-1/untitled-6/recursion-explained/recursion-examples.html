@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>recursion-examples</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="recursion-examples">Recursion Examples</h1>
+<p>{% tabs %} {% tab title=“explained” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> typing <span class="im">import</span> List, Optional, Sequence</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># A recursive function is a function that calls itself. They&#39;re an alternative option to iteration, like using a while</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co"># or for loop. Sometimes, they can make code easier to read and write. The examples below are overly simplified and</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co"># have obviously better alternatives.</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">def</span> multiply_string(s: <span class="bu">str</span>, n: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="co"># There are 3 main parts to a recursive function.</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="co"># 1. A way to go to either the base case (no recursion) or recursive case (function calls itself).</span></a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># The switch between base and recursive is often an if statement.</span></a>
+<a class="sourceLine" id="cb1-12" title="12">        <span class="co"># 2. The base case. This is the case that doesn&#39;t require recursion.</span></a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="cf">return</span> <span class="st">&#39;&#39;</span>  <span class="co"># Any string times 0 is empty string. That&#39;s easy.</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="co"># 3. The recursive case. This same function gets called again, but slightly differently.</span></a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="co"># This needs to eventually get to the base case.</span></a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="cf">return</span> s <span class="op">+</span> multiply_string(s, n <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># Add the string to result of multiplying the string times n -1.</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="co"># Eventually, n will be 0 and we&#39;ll be at the base case.</span></a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co"># This is also a good order to first write your recursive functions, even if you rewrite in a different order later.</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="co"># 1. What input is the base case?</span></a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="co"># 2. What calculation needs to be done for the base case (if any)?</span></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="co"># 3. What calculation needs to be done for the recursive case?</span></a>
+<a class="sourceLine" id="cb1-24" title="24"></a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="co"># For the base case, there are some common patterns. It&#39;s often when an integer input is 0 or 1, the collection is</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="co"># totally empty, or you&#39;re at the thing you&#39;re looking for. A good question is: &quot;What&#39;s the easiest possible case?&quot;</span></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="co"># There can also be more than one base case! You&#39;ve searched everywhere and haven&#39;t found the thing could be one</span></a>
+<a class="sourceLine" id="cb1-28" title="28"><span class="co"># base case, and you&#39;ve found the thing could be another.</span></a>
+<a class="sourceLine" id="cb1-29" title="29"><span class="co"># For the recursive case, it&#39;s often easiest to think of being one step away from a base case. If your base case is</span></a>
+<a class="sourceLine" id="cb1-30" title="30"><span class="co"># n=0, think of how to get from n=0 to n=1. This is usually easier than how to get from n=9 to n=10.</span></a>
+<a class="sourceLine" id="cb1-31" title="31"></a>
+<a class="sourceLine" id="cb1-32" title="32"><span class="kw">def</span> triangle_number(n: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb1-33" title="33">    <span class="co">&quot;&quot;&quot;Calculate the sum of 1, 2, n. This is like a triangle with n items on the bottom.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-34" title="34">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># Easy case. n == 1 is just as easy, but this way our function also supports 0.</span></a>
+<a class="sourceLine" id="cb1-35" title="35">        <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-36" title="36">    <span class="cf">return</span> n <span class="op">+</span> triangle_number(n <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># This will sum the numbers from highest to lowest. The calculation is like:</span></a>
+<a class="sourceLine" id="cb1-37" title="37">    <span class="co"># (3 + (2 + (1 + (0))))</span></a>
+<a class="sourceLine" id="cb1-38" title="38"></a>
+<a class="sourceLine" id="cb1-39" title="39"></a>
+<a class="sourceLine" id="cb1-40" title="40"><span class="co"># Recursive functions often have default arguments. These aren&#39;t used when you call the function from the outside,</span></a>
+<a class="sourceLine" id="cb1-41" title="41"><span class="co"># but they are used when you call the function recursively. They often hold data about the path to get where you are,</span></a>
+<a class="sourceLine" id="cb1-42" title="42"><span class="co"># or what you&#39;ve already looked at.</span></a>
+<a class="sourceLine" id="cb1-43" title="43"><span class="kw">def</span> contains(item: <span class="bu">object</span>, sequence: Sequence, index: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>) <span class="op">-&gt;</span> <span class="bu">bool</span>:</a>
+<a class="sourceLine" id="cb1-44" title="44">    <span class="co"># When this function gets called by a user, they won&#39;t provide an index and we&#39;ll start at 0.</span></a>
+<a class="sourceLine" id="cb1-45" title="45">    <span class="cf">if</span> index <span class="op">==</span> <span class="bu">len</span>(sequence):  <span class="co"># This means we&#39;ve gone past the last index in the sequence.</span></a>
+<a class="sourceLine" id="cb1-46" title="46">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-47" title="47">    <span class="cf">if</span> sequence[index] <span class="op">==</span> item:  <span class="co"># Another base case. We&#39;ve found the item.</span></a>
+<a class="sourceLine" id="cb1-48" title="48">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-49" title="49">    <span class="co"># For the recursion, the item stays the same, the sequence stays the same, but let&#39;s check what&#39;s at the next index.</span></a>
+<a class="sourceLine" id="cb1-50" title="50">    <span class="co"># Any outside user of this function won&#39;t provide the index, but we can provide it now and check the next item.</span></a>
+<a class="sourceLine" id="cb1-51" title="51">    <span class="cf">return</span> contains(item, sequence, index <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-52" title="52"></a>
+<a class="sourceLine" id="cb1-53" title="53"></a>
+<a class="sourceLine" id="cb1-54" title="54"><span class="co"># The default arguments also might be mutated. This can help runtime. Rather than create a new thing every time,</span></a>
+<a class="sourceLine" id="cb1-55" title="55"><span class="co"># just mutate what was provided. Maybe you return it at the end.</span></a>
+<a class="sourceLine" id="cb1-56" title="56"><span class="kw">def</span> path_to_zero(n: <span class="bu">int</span>, path: Optional[List[<span class="bu">int</span>]] <span class="op">=</span> <span class="va">None</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb1-57" title="57">    <span class="co">&quot;&quot;&quot;Returns a list of how to get from n to 0 by subtracting 1.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-58" title="58">    <span class="cf">if</span> path <span class="kw">is</span> <span class="va">None</span>:  <span class="co"># Classic Python mutable default stuff.</span></a>
+<a class="sourceLine" id="cb1-59" title="59">        path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-60" title="60"></a>
+<a class="sourceLine" id="cb1-61" title="61">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># If we&#39;re already at 0 (the end)</span></a>
+<a class="sourceLine" id="cb1-62" title="62">        path.append(<span class="dv">0</span>)  <span class="co"># Our base case, no recursion required.</span></a>
+<a class="sourceLine" id="cb1-63" title="63">        <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb1-64" title="64">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-65" title="65">        path.append(n)  <span class="co"># Put the current number on the path.</span></a>
+<a class="sourceLine" id="cb1-66" title="66">        path_to_zero(n <span class="op">-</span> <span class="dv">1</span>, path)  <span class="co"># The path will get mutated in the recursive calls, adding the remaining numbers.</span></a>
+<a class="sourceLine" id="cb1-67" title="67">        <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb1-68" title="68"></a>
+<a class="sourceLine" id="cb1-69" title="69"></a>
+<a class="sourceLine" id="cb1-70" title="70"><span class="co">#  It can be helpful to write recursive functions in a verbose (if: base case, else: recursive) way, then refactor</span></a>
+<a class="sourceLine" id="cb1-71" title="71"><span class="co">#  them to be simpler. Here&#39;s the function above, refactored.</span></a>
+<a class="sourceLine" id="cb1-72" title="72"><span class="kw">def</span> path_to_zero_refactored(n: <span class="bu">int</span>, path: Optional[List[<span class="bu">int</span>]] <span class="op">=</span> <span class="va">None</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb1-73" title="73">    <span class="cf">if</span> path <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-74" title="74">        path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-75" title="75"></a>
+<a class="sourceLine" id="cb1-76" title="76">    path.append(n)  <span class="co"># Add the number we&#39;re at.</span></a>
+<a class="sourceLine" id="cb1-77" title="77">    <span class="cf">if</span> n:  <span class="co"># If we&#39;re not at 0</span></a>
+<a class="sourceLine" id="cb1-78" title="78">        path_to_zero_refactored(n <span class="op">-</span> <span class="dv">1</span>, path)  <span class="co"># Add the next thing until we are.</span></a>
+<a class="sourceLine" id="cb1-79" title="79">    <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb1-80" title="80"></a>
+<a class="sourceLine" id="cb1-81" title="81"></a>
+<a class="sourceLine" id="cb1-82" title="82"><span class="co">#  A good exercise is translating recursive functions to iterative, or vice versa.</span></a>
+<a class="sourceLine" id="cb1-83" title="83"><span class="kw">def</span> path_to_zero_iterative(n: <span class="bu">int</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb1-84" title="84">    <span class="co"># This isn&#39;t the best code, but it&#39;s the closest to the recursive version above.</span></a>
+<a class="sourceLine" id="cb1-85" title="85">    path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-86" title="86">    <span class="cf">while</span> n <span class="op">!=</span> <span class="dv">0</span>:  <span class="co"># Recursive to iterative translations will often have &quot;while not base case&quot; loops.</span></a>
+<a class="sourceLine" id="cb1-87" title="87">        path.append(n)</a>
+<a class="sourceLine" id="cb1-88" title="88">        n <span class="op">-=</span> <span class="dv">1</span>  <span class="co"># This is the same transformation to n that happens in the recursive call above.</span></a>
+<a class="sourceLine" id="cb1-89" title="89">    path.append(<span class="dv">0</span>)  <span class="co"># Our while loop skips the base case, so we do it here.</span></a>
+<a class="sourceLine" id="cb1-90" title="90">    <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb1-91" title="91"></a>
+<a class="sourceLine" id="cb1-92" title="92"></a>
+<a class="sourceLine" id="cb1-93" title="93"><span class="co">#  The above examples are contrived, but this is an example where the recursive version makes for code that&#39;s just</span></a>
+<a class="sourceLine" id="cb1-94" title="94"><span class="co">#  as good or better than the iterative version.</span></a>
+<a class="sourceLine" id="cb1-95" title="95"><span class="kw">def</span> collatz(n: <span class="bu">int</span>, steps: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb1-96" title="96">    <span class="co">&quot;&quot;&quot;Calculates how many steps to get from n to 1 following the Collatz rules.</span></a>
+<a class="sourceLine" id="cb1-97" title="97"></a>
+<a class="sourceLine" id="cb1-98" title="98"><span class="co">    The Collatz rules are:</span></a>
+<a class="sourceLine" id="cb1-99" title="99"><span class="co">        If the number is even, get the next number by dividing it by 2.</span></a>
+<a class="sourceLine" id="cb1-100" title="100"><span class="co">        If the number is odd, get the next number by multiplying by 3 and adding 1.</span></a>
+<a class="sourceLine" id="cb1-101" title="101"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-102" title="102">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:  <span class="co"># We&#39;re at the end.</span></a>
+<a class="sourceLine" id="cb1-103" title="103">        <span class="cf">return</span> steps</a>
+<a class="sourceLine" id="cb1-104" title="104">    <span class="cf">elif</span> n <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># If n is even</span></a>
+<a class="sourceLine" id="cb1-105" title="105">        <span class="cf">return</span> collatz(n <span class="op">//</span> <span class="dv">2</span>, steps <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-106" title="106">    <span class="cf">else</span>:  <span class="co"># n is odd</span></a>
+<a class="sourceLine" id="cb1-107" title="107">        <span class="cf">return</span> collatz(n <span class="op">*</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">1</span>, steps <span class="op">+</span> <span class="dv">1</span>)  <span class="co"># Woah, a second recursive case!</span></a>
+<a class="sourceLine" id="cb1-108" title="108"></a>
+<a class="sourceLine" id="cb1-109" title="109"></a>
+<a class="sourceLine" id="cb1-110" title="110"><span class="co"># A downside to recursion in Python is that there is a limit to the call stack. This means there&#39;s a limit to how</span></a>
+<a class="sourceLine" id="cb1-111" title="111"><span class="co"># deep your recursion can go. The default is 1,000.</span></a>
+<a class="sourceLine" id="cb1-112" title="112"><span class="kw">def</span> deep_recursion():</a>
+<a class="sourceLine" id="cb1-113" title="113">    <span class="co">&quot;&quot;&quot;Requires over 1,000 recursive calls, raising a RecursionError on most Python implementations.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-114" title="114">    collatz(<span class="dv">9780657630</span>)</a>
+<a class="sourceLine" id="cb1-115" title="115"></a>
+<a class="sourceLine" id="cb1-116" title="116"><span class="co"># Those are some recursion in Python basics. Go find some other recursive problems and enjoy!</span></a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“1” %}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="im">from</span> typing <span class="im">import</span> List, Optional, Sequence</a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co"># A recursive function is a function that calls itself. They&#39;re an alternative option to iteration, like using a while</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co"># or for loop. Sometimes, they can make code easier to read and write. The examples below are overly simplified and</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co"># have obviously better alternatives.</span></a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="kw">def</span> multiply_string(s: <span class="bu">str</span>, n: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="co"># There are 3 main parts to a recursive function.</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="co"># 1. A way to go to either the base case (no recursion) or recursive case (function calls itself).</span></a>
+<a class="sourceLine" id="cb2-11" title="11">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># The switch between base and recursive is often an if statement.</span></a>
+<a class="sourceLine" id="cb2-12" title="12">        <span class="co"># 2. The base case. This is the case that doesn&#39;t require recursion.</span></a>
+<a class="sourceLine" id="cb2-13" title="13">        <span class="cf">return</span> <span class="st">&#39;&#39;</span>  <span class="co"># Any string times 0 is empty string. That&#39;s easy.</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="co"># 3. The recursive case. This same function gets called again, but slightly differently.</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="co"># This needs to eventually get to the base case.</span></a>
+<a class="sourceLine" id="cb2-16" title="16">    <span class="cf">return</span> s <span class="op">+</span> multiply_string(s, n <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># Add the string to result of multiplying the string times n -1.</span></a>
+<a class="sourceLine" id="cb2-17" title="17">    <span class="co"># Eventually, n will be 0 and we&#39;ll be at the base case.</span></a>
+<a class="sourceLine" id="cb2-18" title="18"></a>
+<a class="sourceLine" id="cb2-19" title="19"></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="co"># This is also a good order to first write your recursive functions, even if you rewrite in a different order later.</span></a>
+<a class="sourceLine" id="cb2-21" title="21"><span class="co"># 1. What input is the base case?</span></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="co"># 2. What calculation needs to be done for the base case (if any)?</span></a>
+<a class="sourceLine" id="cb2-23" title="23"><span class="co"># 3. What calculation needs to be done for the recursive case?</span></a>
+<a class="sourceLine" id="cb2-24" title="24"></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="co"># For the base case, there are some common patterns. It&#39;s often when an integer input is 0 or 1, the collection is</span></a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="co"># totally empty, or you&#39;re at the thing you&#39;re looking for. A good question is: &quot;What&#39;s the easiest possible case?&quot;</span></a>
+<a class="sourceLine" id="cb2-27" title="27"><span class="co"># There can also be more than one base case! You&#39;ve searched everywhere and haven&#39;t found the thing could be one</span></a>
+<a class="sourceLine" id="cb2-28" title="28"><span class="co"># base case, and you&#39;ve found the thing could be another.</span></a>
+<a class="sourceLine" id="cb2-29" title="29"><span class="co"># For the recursive case, it&#39;s often easiest to think of being one step away from a base case. If your base case is</span></a>
+<a class="sourceLine" id="cb2-30" title="30"><span class="co"># n=0, think of how to get from n=0 to n=1. This is usually easier than how to get from n=9 to n=10.</span></a>
+<a class="sourceLine" id="cb2-31" title="31"></a>
+<a class="sourceLine" id="cb2-32" title="32"><span class="kw">def</span> triangle_number(n: <span class="bu">int</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb2-33" title="33">    <span class="co">&quot;&quot;&quot;Calculate the sum of 1, 2, n. This is like a triangle with n items on the bottom.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-34" title="34">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># Easy case. n == 1 is just as easy, but this way our function also supports 0.</span></a>
+<a class="sourceLine" id="cb2-35" title="35">        <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-36" title="36">    <span class="cf">return</span> n <span class="op">+</span> triangle_number(n <span class="op">-</span> <span class="dv">1</span>)  <span class="co"># This will sum the numbers from highest to lowest. The calculation is like:</span></a>
+<a class="sourceLine" id="cb2-37" title="37">    <span class="co"># (3 + (2 + (1 + (0))))</span></a>
+<a class="sourceLine" id="cb2-38" title="38"></a>
+<a class="sourceLine" id="cb2-39" title="39"></a>
+<a class="sourceLine" id="cb2-40" title="40"><span class="co"># Recursive functions often have default arguments. These aren&#39;t used when you call the function from the outside,</span></a>
+<a class="sourceLine" id="cb2-41" title="41"><span class="co"># but they are used when you call the function recursively. They often hold data about the path to get where you are,</span></a>
+<a class="sourceLine" id="cb2-42" title="42"><span class="co"># or what you&#39;ve already looked at.</span></a>
+<a class="sourceLine" id="cb2-43" title="43"><span class="kw">def</span> contains(item: <span class="bu">object</span>, sequence: Sequence, index: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>) <span class="op">-&gt;</span> <span class="bu">bool</span>:</a>
+<a class="sourceLine" id="cb2-44" title="44">    <span class="co"># When this function gets called by a user, they won&#39;t provide an index and we&#39;ll start at 0.</span></a>
+<a class="sourceLine" id="cb2-45" title="45">    <span class="cf">if</span> index <span class="op">==</span> <span class="bu">len</span>(sequence):  <span class="co"># This means we&#39;ve gone past the last index in the sequence.</span></a>
+<a class="sourceLine" id="cb2-46" title="46">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb2-47" title="47">    <span class="cf">if</span> sequence[index] <span class="op">==</span> item:  <span class="co"># Another base case. We&#39;ve found the item.</span></a>
+<a class="sourceLine" id="cb2-48" title="48">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb2-49" title="49">    <span class="co"># For the recursion, the item stays the same, the sequence stays the same, but let&#39;s check what&#39;s at the next index.</span></a>
+<a class="sourceLine" id="cb2-50" title="50">    <span class="co"># Any outside user of this function won&#39;t provide the index, but we can provide it now and check the next item.</span></a>
+<a class="sourceLine" id="cb2-51" title="51">    <span class="cf">return</span> contains(item, sequence, index <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb2-52" title="52"></a>
+<a class="sourceLine" id="cb2-53" title="53"></a>
+<a class="sourceLine" id="cb2-54" title="54"><span class="co"># The default arguments also might be mutated. This can help runtime. Rather than create a new thing every time,</span></a>
+<a class="sourceLine" id="cb2-55" title="55"><span class="co"># just mutate what was provided. Maybe you return it at the end.</span></a>
+<a class="sourceLine" id="cb2-56" title="56"><span class="kw">def</span> path_to_zero(n: <span class="bu">int</span>, path: Optional[List[<span class="bu">int</span>]] <span class="op">=</span> <span class="va">None</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb2-57" title="57">    <span class="co">&quot;&quot;&quot;Returns a list of how to get from n to 0 by subtracting 1.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-58" title="58">    <span class="cf">if</span> path <span class="kw">is</span> <span class="va">None</span>:  <span class="co"># Classic Python mutable default stuff.</span></a>
+<a class="sourceLine" id="cb2-59" title="59">        path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb2-60" title="60"></a>
+<a class="sourceLine" id="cb2-61" title="61">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># If we&#39;re already at 0 (the end)</span></a>
+<a class="sourceLine" id="cb2-62" title="62">        path.append(<span class="dv">0</span>)  <span class="co"># Our base case, no recursion required.</span></a>
+<a class="sourceLine" id="cb2-63" title="63">        <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb2-64" title="64">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-65" title="65">        path.append(n)  <span class="co"># Put the current number on the path.</span></a>
+<a class="sourceLine" id="cb2-66" title="66">        path_to_zero(n <span class="op">-</span> <span class="dv">1</span>, path)  <span class="co"># The path will get mutated in the recursive calls, adding the remaining numbers.</span></a>
+<a class="sourceLine" id="cb2-67" title="67">        <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb2-68" title="68"></a>
+<a class="sourceLine" id="cb2-69" title="69"></a>
+<a class="sourceLine" id="cb2-70" title="70"><span class="co">#  It can be helpful to write recursive functions in a verbose (if: base case, else: recursive) way, then refactor</span></a>
+<a class="sourceLine" id="cb2-71" title="71"><span class="co">#  them to be simpler. Here&#39;s the function above, refactored.</span></a>
+<a class="sourceLine" id="cb2-72" title="72"><span class="kw">def</span> path_to_zero_refactored(n: <span class="bu">int</span>, path: Optional[List[<span class="bu">int</span>]] <span class="op">=</span> <span class="va">None</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb2-73" title="73">    <span class="cf">if</span> path <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb2-74" title="74">        path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb2-75" title="75"></a>
+<a class="sourceLine" id="cb2-76" title="76">    path.append(n)  <span class="co"># Add the number we&#39;re at.</span></a>
+<a class="sourceLine" id="cb2-77" title="77">    <span class="cf">if</span> n:  <span class="co"># If we&#39;re not at 0</span></a>
+<a class="sourceLine" id="cb2-78" title="78">        path_to_zero_refactored(n <span class="op">-</span> <span class="dv">1</span>, path)  <span class="co"># Add the next thing until we are.</span></a>
+<a class="sourceLine" id="cb2-79" title="79">    <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb2-80" title="80"></a>
+<a class="sourceLine" id="cb2-81" title="81"></a>
+<a class="sourceLine" id="cb2-82" title="82"><span class="co">#  A good exercise is translating recursive functions to iterative, or vice versa.</span></a>
+<a class="sourceLine" id="cb2-83" title="83"><span class="kw">def</span> path_to_zero_iterative(n: <span class="bu">int</span>) <span class="op">-&gt;</span> List[<span class="bu">int</span>]:</a>
+<a class="sourceLine" id="cb2-84" title="84">    <span class="co"># This isn&#39;t the best code, but it&#39;s the closest to the recursive version above.</span></a>
+<a class="sourceLine" id="cb2-85" title="85">    path <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb2-86" title="86">    <span class="cf">while</span> n <span class="op">!=</span> <span class="dv">0</span>:  <span class="co"># Recursive to iterative translations will often have &quot;while not base case&quot; loops.</span></a>
+<a class="sourceLine" id="cb2-87" title="87">        path.append(n)</a>
+<a class="sourceLine" id="cb2-88" title="88">        n <span class="op">-=</span> <span class="dv">1</span>  <span class="co"># This is the same transformation to n that happens in the recursive call above.</span></a>
+<a class="sourceLine" id="cb2-89" title="89">    path.append(<span class="dv">0</span>)  <span class="co"># Our while loop skips the base case, so we do it here.</span></a>
+<a class="sourceLine" id="cb2-90" title="90">    <span class="cf">return</span> path</a>
+<a class="sourceLine" id="cb2-91" title="91"></a>
+<a class="sourceLine" id="cb2-92" title="92"></a>
+<a class="sourceLine" id="cb2-93" title="93"><span class="co">#  The above examples are contrived, but this is an example where the recursive version makes for code that&#39;s just</span></a>
+<a class="sourceLine" id="cb2-94" title="94"><span class="co">#  as good or better than the iterative version.</span></a>
+<a class="sourceLine" id="cb2-95" title="95"><span class="kw">def</span> collatz(n: <span class="bu">int</span>, steps: <span class="bu">int</span> <span class="op">=</span> <span class="dv">0</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb2-96" title="96">    <span class="co">&quot;&quot;&quot;Calculates how many steps to get from n to 1 following the Collatz rules.</span></a>
+<a class="sourceLine" id="cb2-97" title="97"></a>
+<a class="sourceLine" id="cb2-98" title="98"><span class="co">    The Collatz rules are:</span></a>
+<a class="sourceLine" id="cb2-99" title="99"><span class="co">        If the number is even, get the next number by dividing it by 2.</span></a>
+<a class="sourceLine" id="cb2-100" title="100"><span class="co">        If the number is odd, get the next number by multiplying by 3 and adding 1.</span></a>
+<a class="sourceLine" id="cb2-101" title="101"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-102" title="102">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:  <span class="co"># We&#39;re at the end.</span></a>
+<a class="sourceLine" id="cb2-103" title="103">        <span class="cf">return</span> steps</a>
+<a class="sourceLine" id="cb2-104" title="104">    <span class="cf">elif</span> n <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:  <span class="co"># If n is even</span></a>
+<a class="sourceLine" id="cb2-105" title="105">        <span class="cf">return</span> collatz(n <span class="op">//</span> <span class="dv">2</span>, steps <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb2-106" title="106">    <span class="cf">else</span>:  <span class="co"># n is odd</span></a>
+<a class="sourceLine" id="cb2-107" title="107">        <span class="cf">return</span> collatz(n <span class="op">*</span> <span class="dv">3</span> <span class="op">+</span> <span class="dv">1</span>, steps <span class="op">+</span> <span class="dv">1</span>)  <span class="co"># Woah, a second recursive case!</span></a>
+<a class="sourceLine" id="cb2-108" title="108"></a>
+<a class="sourceLine" id="cb2-109" title="109"></a>
+<a class="sourceLine" id="cb2-110" title="110"><span class="co"># A downside to recursion in Python is that there is a limit to the call stack. This means there&#39;s a limit to how</span></a>
+<a class="sourceLine" id="cb2-111" title="111"><span class="co"># deep your recursion can go. The default is 1,000.</span></a>
+<a class="sourceLine" id="cb2-112" title="112"><span class="kw">def</span> deep_recursion():</a>
+<a class="sourceLine" id="cb2-113" title="113">    <span class="co">&quot;&quot;&quot;Requires over 1,000 recursive calls, raising a RecursionError on most Python implementations.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb2-114" title="114">    collatz(<span class="dv">9780657630</span>)</a>
+<a class="sourceLine" id="cb2-115" title="115"></a>
+<a class="sourceLine" id="cb2-116" title="116"><span class="co"># Those are some recursion in Python basics. Go find some other recursive problems and enjoy!</span></a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“factorial” %}</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co">#recursions example-2</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="bu">print</span>(<span class="st">&quot;Factoriaal called with &quot;</span> <span class="op">+</span> <span class="bu">str</span>(n))</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">if</span> n <span class="op">&lt;</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="bu">print</span>(<span class="st">&quot;Returning 1&quot;</span>)</a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="cf">return</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    result <span class="op">=</span> n <span class="op">*</span> factorial(n <span class="op">-</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;Returning &quot;</span> <span class="op">+</span> <span class="bu">str</span>(result) <span class="op">+</span> <span class="st">&quot; for factorial of &quot;</span> <span class="op">+</span> <span class="bu">str</span>(n))</a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="cf">return</span> result</a>
+<a class="sourceLine" id="cb3-10" title="10">factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb3-11" title="11"></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co">#output</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="co">#Factoriaal called with 4</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="co">#Factoriaal called with 3</span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="co">#Factoriaal called with 2</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="co">#Factoriaal called with 1</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="co">#Returning 1</span></a>
+<a class="sourceLine" id="cb3-18" title="18"><span class="co">#Returning 2 for factorial of 2</span></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="co">#Returning 6 for factorial of 3</span></a>
+<a class="sourceLine" id="cb3-20" title="20"><span class="co">#Returning 24 for factorial of 4</span></a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“3” %}</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">from</span> collections.abc <span class="im">import</span> MutableSequence</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="im">from</span> src.typehints <span class="im">import</span> T</a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="kw">def</span> selection_sort_recur(seq: MutableSequence[T], i<span class="op">=</span><span class="dv">0</span>) <span class="op">-&gt;</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="co">&quot;&quot;&quot;Use selection sort recursively on a list in-place.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="cf">if</span> i <span class="op">&gt;=</span> <span class="bu">len</span>(seq) <span class="op">-</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    min_val <span class="op">=</span> <span class="bu">min</span>(seq[i:])</a>
+<a class="sourceLine" id="cb4-11" title="11">    min_val_i <span class="op">=</span> seq.index(min_val, i)</a>
+<a class="sourceLine" id="cb4-12" title="12">    seq[min_val_i] <span class="op">=</span> seq[i]</a>
+<a class="sourceLine" id="cb4-13" title="13">    seq[i] <span class="op">=</span> min_val</a>
+<a class="sourceLine" id="cb4-14" title="14">    selection_sort_recur(seq, i <span class="op">+</span> <span class="dv">1</span>)</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“4” %}</p>
+<pre><code></code></pre>
+<p>{% endtab %}</p>
+<p>{% tab title=“5” %}</p>
+<pre><code></code></pre>
+<p>{% endtab %}</p>
+<p>{% tab title=“6” %}</p>
+<pre><code></code></pre>
+<p>{% endtab %}</p>
+<p>{% tab title=“7” %}</p>
+<pre><code></code></pre>
+<p>{% endtab %} {% endtabs %}</p>
+</body>
+</html>

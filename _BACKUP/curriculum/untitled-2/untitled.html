@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>untitled</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="d4--module-04---searching-and-recursion">D4- Module 04 - Searching and Recursion</h1>
+<p>{% embed url=“https://www.youtube.com/watch?v=OQig62–r6w” %}</p>
+<p>{% page-ref page=“../../abstract-data-structures/untitled-1/untitled-6/recursion-explained/” %}</p>
+<p>{% page-ref page=“../../abstract-data-structures/untitled-1/untitled-6/recursion-explained/recursion-examples.md” %}</p>
+<p>{% embed url=“https://gist.github.com/bgoonz/f1aa6200c2acad7abb38261c76ef7efa” %}</p>
+<p>{% embed url=“https://gist.github.com/bgoonz/debbe502eb068371b1ee5a52d657c993#file-searching-and-recursion-ipynb” %}</p>
+<h2 id="objective-01---understand-logarithms-and-recall-the-common-cases-where-they-come-up-in-technical-interviews">Objective 01 - Understand logarithms and recall the common cases where they come up in technical interviews</h2>
+<h3 id="overview">Overview <a id="overview"></a></h3>
+<h4 id="what-is-a-logarithm">What is a logarithm? <a id="what-is-a-logarithm"></a></h4>
+<p>Logarithms are a way of looking differently at exponentials. I know that this is a bit of a vague definition, so let’s look at an example:</p>
+<figure>
+<img src="https://i.upmath.me/svg/2%5E5" alt="2^5" /><figcaption>2^5</figcaption>
+</figure>
+<p>What does the mathematical expression above <em>mean</em>? It’s an abbreviation for the following expression:</p>
+<figure>
+<img src="https://i.upmath.me/svg/2%20*%202%20*%202%20*%202%20*%202" alt="2 * 2 * 2 * 2 * 2" /><figcaption>2 * 2 * 2 * 2 * 2</figcaption>
+</figure>
+<p>What we are looking at above is two different ways to express an object that doubles in size with each iteration.</p>
+<p>Another way to think about <code>2^5 = 32</code> is that <code>2</code> is the “growth rate” and <code>5</code> is the number of times you went through the growth (doubling). <code>32</code> is the final result.</p>
+<p>Let’s look at a few more expressions:</p>
+<figure>
+<img src="https://i.upmath.me/svg/2%5E5%20%3D%2032" alt="2^5 = 32" /><figcaption>2^5 = 32</figcaption>
+</figure>
+<figure>
+<img src="https://i.upmath.me/svg/2%5E0%20%3D%201" alt="2^0 = 1" /><figcaption>2^0 = 1</figcaption>
+</figure>
+<figure>
+<img src="https://i.upmath.me/svg/2%5E%7B-1%7D%20%3D%20%5Cfrac%7B1%7D%7B2%7D" alt="2^{-1} = " /><figcaption>2^{-1} = </figcaption>
+</figure>
+<p>Now, to begin looking at logarithms, let’s rewrite the exponential expressions above in logarithmic form.</p>
+<figure>
+<img src="https://i.upmath.me/svg/log_2%2032%20%3D%205" alt="log_2 32 = 5" /><figcaption>log_2 32 = 5</figcaption>
+</figure>
+<figure>
+<img src="https://i.upmath.me/svg/log_2%201%20%3D%200" alt="log_2 1 = 0" /><figcaption>log_2 1 = 0</figcaption>
+</figure>
+<figure>
+<img src="https://i.upmath.me/svg/log_2%20%5Cfrac%7B1%7D%7B2%7D%20%3D%201" alt="log_2  = 1" /><figcaption>log_2  = 1</figcaption>
+</figure>
+<p>Notice how we have essentially just moved around different pieces of the expression.</p>
+<p>For our first expression,</p>
+<figure>
+<img src="https://i.upmath.me/svg/2%5E5%20%3D%2032" alt="2^5 = 32" /><figcaption>2^5 = 32</figcaption>
+</figure>
+<p><code>2</code> was the “growth rate”, <code>5</code> was the “time” spent growing, and <code>32</code> was where we ended up. When we rewrite this logarithmically, we have</p>
+<figure>
+<img src="https://i.upmath.me/svg/log_2%2032%20%3D%205" alt="log_2 32 = 5" /><figcaption>log_2 32 = 5</figcaption>
+</figure>
+<p>In this case, <code>2</code> still represents the “growth rate” and <code>32</code> still represents where we end up. The <code>5</code> also still represents the “time” spent growing.</p>
+<p>So, the difference between when we would use a logarithm and when we use exponentiation depends on what factors we know ahead of time. If you know the growth rate and you know how long you are growing, you can use exponentiation (<code>2^5</code>) to figure out where you end up (<code>32</code>). However, if you know the growth rate and where you end up but do not know the time spent growing, you can use a logarithm (<code>log_2 32</code>) to figure that out.</p>
+<p>Logarithms have an <em>inverse</em> relationship with exponents, just like division and multiplication have an inverse relationship.</p>
+<p>For example, if you know that you have one group of <code>5</code> items and you want to identify the total you would have if you had <code>4</code> of those groups instead of just one, you could express that with <code>5 * 4 = 20</code>. However, if you knew that you had a total of <code>20</code> items and you wanted to know how many groups of <code>5</code> you could make out your total, you could express that with <code>20 \ 5 = 4</code>.</p>
+<h3 id="follow-along">Follow Along <a id="follow-along"></a></h3>
+<h4 id="why-should-i-care-what-does-this-have-to-do-with-programming-and-interview-preparation">Why should I care? What does this have to do with programming and interview preparation? <a id="why-should-i-care-what-does-this-have-to-do-with-programming-and-interview-preparation"></a></h4>
+<p>In computer science, you often ask questions like <em>“How many times must <code>n</code> be divided in half before we get to one?”</em> or <em>“How many times will we halve this collection before the collection has only one item?”</em> To answer these questions, <strong>you can use logarithms!</strong> Halving is like doubling, so we can say that <code>log_2 n</code> would give us the answer we’re seeking.</p>
+<p>You will see this come up when analyzing the time complexity of specific algorithms. Any algorithm that doubles or halves a number or collection on each iteration of a loop is likely to have <code>O(log n)</code> time complexity. You will see this come up specifically when we talk about binary search and its time complexity. You will also see this come up in specific sorting algorithms (like merge sort). In simple terms, merge sort divides a collection in half and then merges the sorted halves. The fact that the algorithm repeatedly <em>halves</em> something is your clue that it includes a logarithm in its time complexity. One last place you’re likely to see logarithms come up is with a perfect binary tree. One property of these binary trees is that the number of nodes <em>doubles</em> at each level.</p>
+<h3 id="challenge">Challenge <a id="challenge"></a></h3>
+<ol type="1">
+<li><p>Write a logarithmic expression that is identical to this exponential expression:</p>
+<figure>
+<img src="https://i.upmath.me/svg/2%5En%20%3D%2064" alt="2^n = 64" /><figcaption>2^n = 64</figcaption>
+</figure></li>
+<li><p>Write an exponential expression that is identical to this logarithmic expression:</p>
+<figure>
+<img src="https://i.upmath.me/svg/log_2%20128%20%3D%20n" alt="log_2 128 = n" /><figcaption>log_2 128 = n</figcaption>
+</figure></li>
+<li><p>What keywords should you look out for that might alert you that logarithms are involved?</p></li>
+</ol>
+<h3 id="additional-resources">Additional Resources <a id="additional-resources"></a></h3>
+<ul>
+<li><a href="https://www.mathsisfun.com/algebra/logarithms.html">https://www.mathsisfun.com/algebra/logarithms.html (Links to an external site.)</a></li>
+<li><a href="https://www.interviewcake.com/article/java/logarithms">https://www.interviewcake.com/article/python3/logarithms</a></li>
+</ul>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="objective-02---write-a-linear-search-algorithm">Objective 02 - Write a linear search algorithm</h2>
+<h3 id="overview-1">Overview <a id="overview"></a></h3>
+<p>Imagine that I’ve chosen a random number from 1 to 20. Then, you must guess the number. One approach would be to start picking at 1 and increment your guess by 1 with each guess. If the computer randomly selected 20, then it would take you 20 guesses to get the correct answer. If the computer guessed 1, then you would have the right answer on your very first guess. On average, you will get the correct answer on the 10th or 11th guess.</p>
+<p>If the collection we are searching through is random and unsorted, linear search is the most efficient way to search through it. Once we have a sorted list, then there are more efficient approaches to use.</p>
+<h3 id="follow-along-1">Follow Along <a id="follow-along"></a></h3>
+<p>We want to write a simple program to conduct a linear search on a collection of data. Let’s write a function that takes a list (<code>arr</code>) and an integer (<code>target</code>) as its input and returns the integer <code>idx</code> where the target is found. If the <code>target</code> does not exist in the <code>arr</code>, then the function should return <code>-1</code>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> linear_search(arr, target):</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co"># loop through each item in the input array</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">for</span> idx <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(arr)):</a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="co"># check if the item at the current index is equal to the target</span></a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="cf">if</span> arr[idx] <span class="op">==</span> target:</a>
+<a class="sourceLine" id="cb1-6" title="6">            <span class="co"># return the current index as the match</span></a>
+<a class="sourceLine" id="cb1-7" title="7">            <span class="cf">return</span> idx</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="co"># if we were able to loop through the entire array, the target is not present</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="cf">return</span> <span class="dv">-1</span></a></code></pre></div>
+<h3 id="challenge-1">Challenge <a id="challenge"></a></h3>
+<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-2-module-4-linear-search-2">@bgoonz/cs-unit-1-sprint-2-module-4-linear-search-2</span>” %}</p>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h3 id="what-is-recursion">What Is Recursion?</h3>
+<p>The word <strong>recursion</strong> comes from the Latin word <em>recurrere</em>, meaning to run or hasten back, return, revert, or recur. Here are some online definitions of recursion:</p>
+<ul>
+<li><a href="https://www.dictionary.com/browse/recursion"><strong>Dictionary.com</strong>:</a> The act or process of returning or running back</li>
+<li><a href="https://en.wiktionary.org/wiki/recursion"><strong>Wiktionary</strong>:</a> The act of defining an object (usually a function) in terms of that object itself</li>
+<li><a href="https://www.thefreedictionary.com/recursion"><strong>The Free Dictionary</strong>:</a> A method of defining a sequence of objects, such as an expression, function, or set, where some number of initial objects are given and each successive object is defined in terms of the preceding objects</li>
+</ul>
+<p>A <strong>recursive</strong> definition is one in which the defined term appears in the definition itself. Self-referential situations often crop up in real life, even if they aren’t immediately recognizable as such. For example, suppose you wanted to describe the set of people that make up your ancestors. You could describe them this way:<a href="https://files.realpython.com/media/jsturtz-ancestors.9f0adeb014ef.png"><img src="https://files.realpython.com/media/jsturtz-ancestors.9f0adeb014ef.png" alt="Recursive definition of ancestors" /></a></p>
+<p>Notice how the concept that is being defined, <strong>ancestors</strong>, shows up in its own definition. This is a recursive definition.</p>
+<p>In programming, recursion has a very precise meaning. It refers to a coding technique in which a function calls itself.</p>
+<h3 id="why-use-recursion">Why Use Recursion?</h3>
+<p>Most programming problems are solvable without recursion. So, strictly speaking, recursion usually isn’t necessary.</p>
+<p>However, some situations particularly lend themselves to a <strong>self-referential</strong> definition—for example, the definition of ancestors shown above. If you were devising an algorithm to handle such a case programmatically, a recursive solution would likely be cleaner and more concise.</p>
+<p>Traversal of <a href="https://en.wikipedia.org/wiki/Tree_%28data_structure%29">tree-like data structures</a> is another good example. Because these are nested structures, they readily fit a recursive definition. A non-recursive algorithm to walk through a nested structure is likely to be somewhat clunky, while a recursive solution will be relatively elegant. An example of this appears later in this tutorial.</p>
+<p>On the other hand, recursion isn’t for every situation. Here are some other factors to consider:</p>
+<ul>
+<li>For some problems, a recursive solution, though possible, will be awkward rather than elegant.</li>
+<li>Recursive implementations often consume more memory than non-recursive ones.</li>
+<li>In some cases, using recursion may result in slower execution time.</li>
+</ul>
+<p>Typically, the readability of the code will be the biggest determining factor. But it depends on the circumstances. The examples presented below should help you get a feel for when you should choose recursion.</p>
+<h3 id="recursion-in-python">Recursion in Python</h3>
+<p>When you call a function in Python, the interpreter creates a new <a href="https://realpython.com/python-namespaces-scope/">local namespace</a> so that names defined within that function don’t <a href="https://en.wikipedia.org/wiki/Name_collision">collide</a> with identical names defined elsewhere. One function can call another, and even if they both define objects with the same name, it all works out fine because those objects exist in separate <strong>namespaces</strong>.</p>
+<p>The same holds true if multiple instances of the same function are running concurrently. For example, consider the following definition:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> function():</a>
+<a class="sourceLine" id="cb2-2" title="2">    x <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    function()</a></code></pre></div>
+<p>When <code>function()</code> executes the first time, Python creates a namespace and assigns <code>x</code> the value <code>10</code> in that namespace. Then <code>function()</code> calls itself recursively. The second time <code>function()</code> runs, the interpreter creates a second namespace and assigns <code>10</code> to <code>x</code> there as well. These two instances of the name <code>x</code> are distinct from each another and can coexist without clashing because they are in separate namespaces.</p>
+<p>Unfortunately, running <code>function()</code> as it stands produces a result that is less than inspiring, as the following <a href="https://realpython.com/python-traceback/">traceback</a> shows:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> function()</a>
+<a class="sourceLine" id="cb3-2" title="2">Traceback (most recent call last):</a>
+<a class="sourceLine" id="cb3-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">3</span>, <span class="kw">in</span> function</a>
+<a class="sourceLine" id="cb3-5" title="5">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">3</span>, <span class="kw">in</span> function</a>
+<a class="sourceLine" id="cb3-6" title="6">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">3</span>, <span class="kw">in</span> function</a>
+<a class="sourceLine" id="cb3-7" title="7">  [Previous line repeated <span class="dv">996</span> more times]</a>
+<a class="sourceLine" id="cb3-8" title="8">RecursionError: maximum recursion depth exceeded</a></code></pre></div>
+<p>As written, <code>function()</code> would in theory go on forever, calling itself over and over without any of the calls ever returning. In practice, of course, nothing is truly forever. Your computer only has so much memory, and it would run out eventually.</p>
+<p>Python doesn’t allow that to happen. The interpreter limits the maximum number of times a function can call itself recursively, and when it reaches that limit, it raises a <code>RecursionError</code> <a href="https://realpython.com/python-exceptions/">exception</a>, as you see above.</p>
+<p><strong>Technical note:</strong> You can find out what Python’s recursion limit is with a function from the <code>sys</code> module called <code>getrecursionlimit()</code>:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; from sys import getrecursionlimit
+&gt;&gt;&gt; getrecursionlimit()
+1000</code></pre>
+<p>You can change it, too, with <code>setrecursionlimit()</code>:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; from sys import setrecursionlimit
+&gt;&gt;&gt; setrecursionlimit(2000)
+&gt;&gt;&gt; getrecursionlimit()
+2000</code></pre>
+<p>You can set it to be pretty large, but you can’t make it infinite.</p>
+<p>There isn’t much use for a function to indiscriminately call itself recursively without end. It’s reminiscent of the instructions that you sometimes find on shampoo bottles: “Lather, rinse, repeat.” If you were to follow these instructions literally, you’d shampoo your hair forever!</p>
+<p>This logical flaw has evidently occurred to some shampoo manufacturers, because some shampoo bottles instead say “Lather, rinse, repeat <em>as necessary</em>.” That provides a termination condition to the instructions. Presumably, you’ll eventually feel your hair is sufficiently clean to consider additional repetitions unnecessary. Shampooing can then stop.</p>
+<p>Similarly, a function that calls itself recursively must have a plan to eventually stop. Recursive functions typically follow this pattern:</p>
+<ul>
+<li>There are one or more base cases that are directly solvable without the need for further recursion.</li>
+<li>Each recursive call moves the solution progressively closer to a base case.</li>
+</ul>
+<p>You’re now ready to see how this works with some examples.</p>
+<h3 id="get-started-count-down-to-zero">Get Started: Count Down to Zero</h3>
+<p>The first example is a function called <code>countdown()</code>, which takes a positive number as an argument and prints the numbers from the specified argument down to zero:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> countdown(n):</a>
+<a class="sourceLine" id="cb6-2" title="2">...     <span class="bu">print</span>(n)</a>
+<a class="sourceLine" id="cb6-3" title="3">...     <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb6-4" title="4">...         <span class="cf">return</span>             <span class="co"># Terminate recursion</span></a>
+<a class="sourceLine" id="cb6-5" title="5">...     <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb6-6" title="6">...         countdown(n <span class="op">-</span> <span class="dv">1</span>)   <span class="co"># Recursive call</span></a>
+<a class="sourceLine" id="cb6-7" title="7">...</a>
+<a class="sourceLine" id="cb6-8" title="8"></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="op">&gt;&gt;&gt;</span> countdown(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="dv">5</span></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="dv">4</span></a>
+<a class="sourceLine" id="cb6-12" title="12"><span class="dv">3</span></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="dv">2</span></a>
+<a class="sourceLine" id="cb6-14" title="14"><span class="dv">1</span></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="dv">0</span></a></code></pre></div>
+<p>Notice how <code>countdown()</code> fits the paradigm for a recursive algorithm described above:</p>
+<ul>
+<li>The base case occurs when <code>n</code> is zero, at which point recursion stops.</li>
+<li>In the recursive call, the argument is one less than the current value of <code>n</code>, so each recursion moves closer to the base case.</li>
+</ul>
+<p><strong>Note:</strong> For simplicity, <code>countdown()</code> doesn’t check its argument for validity. If <code>n</code> is either a non-integer or negative, you’ll get a <code>RecursionError</code> exception because the base case is never reached.</p>
+<p>The version of <code>countdown()</code> shown above clearly highlights the base case and the recursive call, but there’s a more concise way to express it:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">def</span> countdown(n):</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="bu">print</span>(n)</a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="cf">if</span> n <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb7-4" title="4">        countdown(n <span class="op">-</span> <span class="dv">1</span>)</a></code></pre></div>
+<p>Here’s one possible non-recursive implementation for comparison:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> countdown(n):</a>
+<a class="sourceLine" id="cb8-2" title="2">...     <span class="cf">while</span> n <span class="op">&gt;=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb8-3" title="3">...         <span class="bu">print</span>(n)</a>
+<a class="sourceLine" id="cb8-4" title="4">...         n <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-5" title="5">...</a>
+<a class="sourceLine" id="cb8-6" title="6"></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="op">&gt;&gt;&gt;</span> countdown(<span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="dv">5</span></a>
+<a class="sourceLine" id="cb8-9" title="9"><span class="dv">4</span></a>
+<a class="sourceLine" id="cb8-10" title="10"><span class="dv">3</span></a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="dv">2</span></a>
+<a class="sourceLine" id="cb8-12" title="12"><span class="dv">1</span></a>
+<a class="sourceLine" id="cb8-13" title="13"><span class="dv">0</span></a></code></pre></div>
+<p>This is a case where the non-recursive solution is at least as clear and intuitive as the recursive one, and probably more so.</p>
+<h3 id="calculate-factorial">Calculate Factorial</h3>
+<p>The next example involves the mathematical concept of <a href="https://en.wikipedia.org/wiki/Factorial">factorial</a>. The factorial of a positive integer <em>n</em>, denoted as <em>n</em>!, is defined as follows:<a href="https://files.realpython.com/media/jsturtz-factorial-defn.b3cd3711a627.png"><img src="https://files.realpython.com/media/jsturtz-factorial-defn.b3cd3711a627.png" alt="Definition of factorial" /></a></p>
+<p>In other words, <em>n</em>! is the product of all integers from 1 to <em>n</em>, inclusive.</p>
+<p>Factorial so lends itself to recursive definition that programming texts nearly always include it as one of the first examples. You can express the definition of <em>n</em>! recursively like this:<a href="https://files.realpython.com/media/jsturtz-recursive-factorial-defn.32f2c2a3048a.png"><img src="https://files.realpython.com/media/jsturtz-recursive-factorial-defn.32f2c2a3048a.png" alt="Recursive definition of factorial" /></a></p>
+<p>As with the example shown above, there are base cases that are solvable without recursion. The more complicated cases are <strong>reductive</strong>, meaning that they reduce to one of the base cases:</p>
+<ul>
+<li>The base cases (<em>n</em> = 0 or <em>n</em> = 1) are solvable without recursion.</li>
+<li>For values of <em>n</em> greater than 1, <em>n</em>! is defined in terms of (<em>n</em> - 1)!, so the recursive solution progressively approaches the base case.</li>
+</ul>
+<p>For example, recursive computation of 4! looks like this:<a href="https://files.realpython.com/media/jsturtz-factorial-example.496c01139673.png"><img src="https://files.realpython.com/media/jsturtz-factorial-example.496c01139673.png" alt="Factorial illustration" /></a>Recursive Calculation of 4!</p>
+<p>The calculations of 4!, 3!, and 2! suspend until the algorithm reaches the base case where <em>n</em> = 1. At that point, 1! is computable without further recursion, and the deferred calculations run to completion.</p>
+<h4 id="define-a-python-factorial-function">Define a Python Factorial Function</h4>
+<p>Here’s a recursive Python function to calculate factorial. Note how concise it is and how well it mirrors the definition shown above:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb9-2" title="2">...     <span class="cf">return</span> <span class="dv">1</span> <span class="cf">if</span> n <span class="op">&lt;=</span> <span class="dv">1</span> <span class="cf">else</span> n <span class="op">*</span> factorial(n <span class="op">-</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb9-3" title="3">...</a>
+<a class="sourceLine" id="cb9-4" title="4"></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="op">&gt;&gt;&gt;</span> factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="dv">24</span></a></code></pre></div>
+<p>A little embellishment of this function with some <a href="https://realpython.com/python-print/"><code>print()</code></a> statements gives a clearer idea of the call and return sequence:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb10-2" title="2">...     <span class="bu">print</span>(<span class="ss">f&quot;factorial() called with n = </span><span class="sc">{n}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb10-3" title="3">...     return_value <span class="op">=</span> <span class="dv">1</span> <span class="cf">if</span> n <span class="op">&lt;=</span> <span class="dv">1</span> <span class="cf">else</span> n <span class="op">*</span> factorial(n <span class="dv">-1</span>)</a>
+<a class="sourceLine" id="cb10-4" title="4">...     <span class="bu">print</span>(<span class="ss">f&quot;-&gt; factorial(</span><span class="sc">{n}</span><span class="ss">) returns </span><span class="sc">{</span>return_value<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb10-5" title="5">...     <span class="cf">return</span> return_value</a>
+<a class="sourceLine" id="cb10-6" title="6">...</a>
+<a class="sourceLine" id="cb10-7" title="7"></a>
+<a class="sourceLine" id="cb10-8" title="8"><span class="op">&gt;&gt;&gt;</span> factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb10-9" title="9">factorial() called <span class="cf">with</span> n <span class="op">=</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb10-10" title="10">factorial() called <span class="cf">with</span> n <span class="op">=</span> <span class="dv">3</span></a>
+<a class="sourceLine" id="cb10-11" title="11">factorial() called <span class="cf">with</span> n <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb10-12" title="12">factorial() called <span class="cf">with</span> n <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-13" title="13"><span class="op">-&gt;</span> factorial(<span class="dv">1</span>) returns <span class="dv">1</span></a>
+<a class="sourceLine" id="cb10-14" title="14"><span class="op">-&gt;</span> factorial(<span class="dv">2</span>) returns <span class="dv">2</span></a>
+<a class="sourceLine" id="cb10-15" title="15"><span class="op">-&gt;</span> factorial(<span class="dv">3</span>) returns <span class="dv">6</span></a>
+<a class="sourceLine" id="cb10-16" title="16"><span class="op">-&gt;</span> factorial(<span class="dv">4</span>) returns <span class="dv">24</span></a>
+<a class="sourceLine" id="cb10-17" title="17"><span class="dv">24</span></a></code></pre></div>
+<p>Notice how all the recursive calls <em>stack up</em>. The function gets called with <code>n</code> = <code>4</code>, <code>3</code>, <code>2</code>, and <code>1</code> in succession before any of the calls return. Finally, when <code>n</code> is <code>1</code>, the problem can be solved without any more recursion. Then each of the stacked-up recursive calls unwinds back out, returning <code>1</code>, <code>2</code>, <code>6</code>, and finally <code>24</code> from the outermost call.</p>
+<p>Recursion isn’t necessary here. You could implement <code>factorial()</code> iteratively using a <a href="https://realpython.com/python-for-loop/"><code>for</code></a> loop:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb11-2" title="2">...     return_value <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb11-3" title="3">...     <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, n <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb11-4" title="4">...         return_value <span class="op">*=</span> i</a>
+<a class="sourceLine" id="cb11-5" title="5">...     <span class="cf">return</span> return_value</a>
+<a class="sourceLine" id="cb11-6" title="6">...</a>
+<a class="sourceLine" id="cb11-7" title="7"></a>
+<a class="sourceLine" id="cb11-8" title="8"><span class="op">&gt;&gt;&gt;</span> factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb11-9" title="9"><span class="dv">24</span></a></code></pre></div>
+<p>You can also implement factorial using Python’s <a href="https://realpython.com/python-reduce-function/"><code>reduce()</code></a>, which you can <a href="https://realpython.com/python-import/">import</a> from the <code>functools</code> module:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb12-3" title="3">...     <span class="cf">return</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> x, y: x <span class="op">*</span> y, <span class="bu">range</span>(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>) <span class="kw">or</span> [<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb12-4" title="4">...</a>
+<a class="sourceLine" id="cb12-5" title="5"></a>
+<a class="sourceLine" id="cb12-6" title="6"><span class="op">&gt;&gt;&gt;</span> factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb12-7" title="7"><span class="dv">24</span></a></code></pre></div>
+<p>Again, this shows that if a problem is solvable with recursion, there will also likely be several viable non-recursive solutions as well. You’ll typically choose based on which one results in the most readable and intuitive code.</p>
+<p>Another factor to take into consideration is execution speed. There can be significant performance differences between recursive and non-recursive solutions. In the next section, you’ll explore these differences a little further.</p>
+<h4 id="speed-comparison-of-factorial-implementations">Speed Comparison of Factorial Implementations</h4>
+<p>To evaluate execution time, you can use a function called <a href="https://docs.python.org/3/library/timeit.html#timeit.timeit"><code>timeit()</code></a> from a module that is also called <code>timeit</code>. This function supports a number of different formats, but you’ll use the following format in this tutorial:</p>
+<pre class="text"><code>timeit(&lt;command&gt;, setup=&lt;setup_string&gt;, number=&lt;iterations&gt;)</code></pre>
+<p><code>timeit()</code> first executes the commands contained in the specified <code>&lt;setup_string&gt;</code>. Then it executes <code>&lt;command&gt;</code> the given number of <code>&lt;iterations&gt;</code> and reports the cumulative execution time in seconds:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> timeit <span class="im">import</span> timeit</a>
+<a class="sourceLine" id="cb14-2" title="2"></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="op">&gt;&gt;&gt;</span> timeit(<span class="st">&quot;print(string)&quot;</span>, setup<span class="op">=</span><span class="st">&quot;string=&#39;foobar&#39;&quot;</span>, number<span class="op">=</span><span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb14-4" title="4">foobar</a>
+<a class="sourceLine" id="cb14-5" title="5">foobar</a>
+<a class="sourceLine" id="cb14-6" title="6">foobar</a>
+<a class="sourceLine" id="cb14-7" title="7">   .</a>
+<a class="sourceLine" id="cb14-8" title="8">   . [<span class="dv">100</span> repetitions]</a>
+<a class="sourceLine" id="cb14-9" title="9">   .</a>
+<a class="sourceLine" id="cb14-10" title="10">foobar</a>
+<a class="sourceLine" id="cb14-11" title="11"><span class="fl">0.03347089999988384</span></a></code></pre></div>
+<p>Here, the <code>setup</code> parameter assigns <code>string</code> the value <code>'foobar'</code>. Then <code>timeit()</code> prints <code>string</code> one hundred times. The total execution time is just over 3/100 of a second.</p>
+<p>The examples shown below use <code>timeit()</code> to compare the recursive, iterative, and <code>reduce()</code> implementations of factorial from above. In each case, <code>setup_string</code> contains a setup string that defines the relevant <code>factorial()</code> function. <code>timeit()</code> then executes <code>factorial(4)</code> a total of ten million times and reports the aggregate execution.</p>
+<p>First, here’s the recursive version:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&gt;&gt;&gt;</span> setup_string <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="st">... print(&quot;Recursive:&quot;)</span></a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="st">... def factorial(n):</span></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="st">...     return 1 if n &lt;= 1 else n * factorial(n - 1)</span></a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="st">... &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb15-6" title="6"></a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> timeit <span class="im">import</span> timeit</a>
+<a class="sourceLine" id="cb15-8" title="8"><span class="op">&gt;&gt;&gt;</span> timeit(<span class="st">&quot;factorial(4)&quot;</span>, setup<span class="op">=</span>setup_string, number<span class="op">=</span><span class="dv">10000000</span>)</a>
+<a class="sourceLine" id="cb15-9" title="9">Recursive:</a>
+<a class="sourceLine" id="cb15-10" title="10"><span class="fl">4.957105500000125</span></a></code></pre></div>
+<p>Next up is the iterative implementation:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="op">&gt;&gt;&gt;</span> setup_string <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="st">... print(&quot;Iterative:&quot;)</span></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="st">... def factorial(n):</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="st">...     return_value = 1</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="st">...     for i in range(2, n + 1):</span></a>
+<a class="sourceLine" id="cb16-6" title="6"><span class="st">...         return_value *= i</span></a>
+<a class="sourceLine" id="cb16-7" title="7"><span class="st">...     return return_value</span></a>
+<a class="sourceLine" id="cb16-8" title="8"><span class="st">... &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb16-9" title="9"></a>
+<a class="sourceLine" id="cb16-10" title="10"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> timeit <span class="im">import</span> timeit</a>
+<a class="sourceLine" id="cb16-11" title="11"><span class="op">&gt;&gt;&gt;</span> timeit(<span class="st">&quot;factorial(4)&quot;</span>, setup<span class="op">=</span>setup_string, number<span class="op">=</span><span class="dv">10000000</span>)</a>
+<a class="sourceLine" id="cb16-12" title="12">Iterative:</a>
+<a class="sourceLine" id="cb16-13" title="13"><span class="fl">3.733752099999947</span></a></code></pre></div>
+<p>Last, here’s the version that uses <code>reduce()</code>:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">&gt;&gt;&gt;</span> setup_string <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="st">... from functools import reduce</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="st">... print(&quot;reduce():&quot;)</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="st">... def factorial(n):</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="st">...     return reduce(lambda x, y: x * y, range(1, n + 1) or [1])</span></a>
+<a class="sourceLine" id="cb17-6" title="6"><span class="st">... &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb17-7" title="7"></a>
+<a class="sourceLine" id="cb17-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> timeit <span class="im">import</span> timeit</a>
+<a class="sourceLine" id="cb17-9" title="9"><span class="op">&gt;&gt;&gt;</span> timeit(<span class="st">&quot;factorial(4)&quot;</span>, setup<span class="op">=</span>setup_string, number<span class="op">=</span><span class="dv">10000000</span>)</a>
+<a class="sourceLine" id="cb17-10" title="10"><span class="bu">reduce</span>():</a>
+<a class="sourceLine" id="cb17-11" title="11"><span class="fl">8.101526299999932</span></a></code></pre></div>
+<p>In this case, the iterative implementation is the fastest, although the recursive solution isn’t far behind. The method using <code>reduce()</code> is the slowest. Your mileage will probably vary if you try these examples on your own machine. You certainly won’t get the same times, and you may not even get the same ranking.</p>
+<p>Does it matter? There’s a difference of almost four seconds in execution time between the iterative implementation and the one that uses <code>reduce()</code>, but it took ten million calls to see it.</p>
+<p>If you’ll be calling a function many times, you might need to take execution speed into account when choosing an implementation. On the other hand, if the function will run relatively infrequently, then the difference in execution times will probably be negligible. In that case, you’d be better off choosing the implementation that seems to express the solution to the problem most clearly.</p>
+<p>For factorial, the timings recorded above suggest a recursive implementation is a reasonable choice.</p>
+<p>Frankly, if you’re coding in Python, you don’t need to implement a factorial function at all. It’s already available in the standard <a href="https://realpython.com/python-math-module/"><code>math</code> module</a>:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> math <span class="im">import</span> factorial</a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="op">&gt;&gt;&gt;</span> factorial(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb18-3" title="3"><span class="dv">24</span></a></code></pre></div>
+<p>Perhaps it might interest you to know how this performs in the timing test:&gt;&gt;&gt;</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> setup_string <span class="op">=</span> <span class="st">&quot;from math import factorial&quot;</span></a>
+<a class="sourceLine" id="cb19-2" title="2"></a>
+<a class="sourceLine" id="cb19-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> timeit <span class="im">import</span> timeit</a>
+<a class="sourceLine" id="cb19-4" title="4"><span class="op">&gt;&gt;&gt;</span> timeit(<span class="st">&quot;factorial(4)&quot;</span>, setup<span class="op">=</span>setup_string, number<span class="op">=</span><span class="dv">10000000</span>)</a>
+<a class="sourceLine" id="cb19-5" title="5"><span class="fl">0.3724050999999946</span></a></code></pre></div>
+<p>Wow! <code>math.factorial()</code> performs better than the best of the other three implementations shown above by roughly a factor of 10.</p>
+<p><strong>Technical note:</strong> The fact that <code>math.factorial()</code> is so much speedier probably has nothing to do with whether it’s implemented recursively. More likely it’s because the function is implemented in <a href="https://en.wikipedia.org/wiki/C_%28programming_language%29">C</a> rather than Python. For more reading on Python and C, see these resources:</p>
+<ul>
+<li><a href="https://realpython.com/python-bindings-overview/">Python Bindings: Calling C or C++ From Python</a></li>
+<li><a href="https://realpython.com/build-python-c-extension-module/">Building a Python C Extension Module</a></li>
+<li><a href="https://realpython.com/c-for-python-programmers/">C for Python Programmers</a></li>
+<li><a href="https://realpython.com/cpython-source-code-guide/">Your Guide to the CPython Source Code</a></li>
+<li><a href="https://realpython.com/products/cpython-internals-book/"><em>CPython Internals</em> book</a></li>
+</ul>
+<p>A function implemented in C will virtually always be faster than a corresponding function implemented in pure Python.</p>
+<h3 id="traverse-a-nested-list">Traverse a Nested List</h3>
+<p>The next example involves visiting each item in a nested list structure. Consider the following Python <a href="https://realpython.com/python-lists-tuples/#python-lists">list</a>:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1">names <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="st">&quot;Adam&quot;</span>,</a>
+<a class="sourceLine" id="cb20-3" title="3">    [</a>
+<a class="sourceLine" id="cb20-4" title="4">        <span class="st">&quot;Bob&quot;</span>,</a>
+<a class="sourceLine" id="cb20-5" title="5">        [</a>
+<a class="sourceLine" id="cb20-6" title="6">            <span class="st">&quot;Chet&quot;</span>,</a>
+<a class="sourceLine" id="cb20-7" title="7">            <span class="st">&quot;Cat&quot;</span>,</a>
+<a class="sourceLine" id="cb20-8" title="8">        ],</a>
+<a class="sourceLine" id="cb20-9" title="9">        <span class="st">&quot;Barb&quot;</span>,</a>
+<a class="sourceLine" id="cb20-10" title="10">        <span class="st">&quot;Bert&quot;</span></a>
+<a class="sourceLine" id="cb20-11" title="11">    ],</a>
+<a class="sourceLine" id="cb20-12" title="12">    <span class="st">&quot;Alex&quot;</span>,</a>
+<a class="sourceLine" id="cb20-13" title="13">    [</a>
+<a class="sourceLine" id="cb20-14" title="14">        <span class="st">&quot;Bea&quot;</span>,</a>
+<a class="sourceLine" id="cb20-15" title="15">        <span class="st">&quot;Bill&quot;</span></a>
+<a class="sourceLine" id="cb20-16" title="16">    ],</a>
+<a class="sourceLine" id="cb20-17" title="17">    <span class="st">&quot;Ann&quot;</span></a>
+<a class="sourceLine" id="cb20-18" title="18">]</a></code></pre></div>
+<p>As the following diagram shows, <code>names</code> contains two sublists. The first of these sublists itself contains another sublist:<a href="https://files.realpython.com/media/jsturtz-nested-list.20eb8fe32366.png"><img src="https://files.realpython.com/media/jsturtz-nested-list.20eb8fe32366.png" alt="Nested list example" /></a></p>
+<p>Suppose you wanted to count the number of <strong>leaf elements</strong> in this list—the lowest-level <code>str</code> objects—as though you’d flattened out the list. The leaf elements are <code>"Adam"</code>, <code>"Bob"</code>, <code>"Chet"</code>, <code>"Cat"</code>, <code>"Barb"</code>, <code>"Bert"</code>, <code>"Alex"</code>, <code>"Bea"</code>, <code>"Bill"</code>, and <code>"Ann"</code>, so the answer should be <code>10</code>.</p>
+<p>Just calling <code>len()</code> on the list doesn’t give the correct answer:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; len(names)
+5</code></pre>
+<p><code>len()</code> counts the objects at the top level of <code>names</code>, which are the three leaf elements <code>"Adam"</code>, <code>"Alex"</code>, and <code>"Ann"</code> and two sublists <code>["Bob", ["Chet", "Cat"], "Barb", "Bert"]</code> and <code>["Bea", "Bill"]</code>:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; for index, item in enumerate(names):
+...     print(index, item)
+...
+0 Adam
+1 [&#39;Bob&#39;, [&#39;Chet&#39;, &#39;Cat&#39;], &#39;Barb&#39;, &#39;Bert&#39;]
+2 Alex
+3 [&#39;Bea&#39;, &#39;Bill&#39;]
+4 Ann</code></pre>
+<p>What you need here is a function that traverses the entire list structure, sublists included. The algorithm goes something like this:</p>
+<ol type="1">
+<li>Walk through the list, examining each item in turn.</li>
+<li>If you find a leaf element, then add it to the accumulated count.</li>
+<li>If you encounter a sublist, then do the following:
+<ul>
+<li>Drop down into that sublist and similarly walk through it.</li>
+<li>Once you’ve exhausted the sublist, go back up, add the elements from the sublist to the accumulated count, and resume the walk through the parent list where you left off.</li>
+</ul></li>
+</ol>
+<p>Note the self-referential nature of this description: <em>Walk through the list</em>. If you encounter a sublist, then similarly <em>walk through that list</em>. This situation begs for recursion!</p>
+<h4 id="traverse-a-nested-list-recursively">Traverse a Nested List Recursively</h4>
+<p>Recursion fits this problem very nicely. To solve it, you need to be able to determine whether a given list item is leaf item or not. For that, you can use the built-in Python function <a href="https://docs.python.org/3/library/functions.html#isinstance"><code>isinstance()</code></a>.</p>
+<p>In the case of the <code>names</code> list, if an item is an instance of type <code>list</code>, then it’s a sublist. Otherwise, it’s a leaf item:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; names
+[&#39;Adam&#39;, [&#39;Bob&#39;, [&#39;Chet&#39;, &#39;Cat&#39;], &#39;Barb&#39;, &#39;Bert&#39;], &#39;Alex&#39;, [&#39;Bea&#39;, &#39;Bill&#39;], &#39;Ann&#39;]
+
+&gt;&gt;&gt; names[0]
+&#39;Adam&#39;
+&gt;&gt;&gt; isinstance(names[0], list)
+False
+
+&gt;&gt;&gt; names[1]
+[&#39;Bob&#39;, [&#39;Chet&#39;, &#39;Cat&#39;], &#39;Barb&#39;, &#39;Bert&#39;]
+&gt;&gt;&gt; isinstance(names[1], list)
+True
+
+&gt;&gt;&gt; names[1][1]
+[&#39;Chet&#39;, &#39;Cat&#39;]
+&gt;&gt;&gt; isinstance(names[1][1], list)
+True
+
+&gt;&gt;&gt; names[1][1][0]
+&#39;Chet&#39;
+&gt;&gt;&gt; isinstance(names[1][1][0], list)
+False</code></pre>
+<p>Now you have the tools in place to implement a function that counts leaf elements in a list, accounting for sublists recursively:</p>
+<pre class="text"><code>def count_leaf_items(item_list):
+    &quot;&quot;&quot;Recursively counts and returns the
+       number of leaf items in a (potentially
+       nested) list.
+    &quot;&quot;&quot;
+    count = 0
+    for item in item_list:
+        if isinstance(item, list):
+            count += count_leaf_items(item)
+        else:
+            count += 1
+
+    return count</code></pre>
+<p>If you run <code>count_leaf_items()</code> on several lists, including the <code>names</code> list defined above, you get this:&gt;&gt;&gt;</p>
+<pre class="text"><code>&gt;&gt;&gt; count_leaf_items([1, 2, 3, 4])
+4
+&gt;&gt;&gt; count_leaf_items([1, [2.1, 2.2], 3])
+4
+&gt;&gt;&gt; count_leaf_items([])
+0
+
+&gt;&gt;&gt; count_leaf_items(names)
+10
+&gt;&gt;&gt; # Success!</code></pre>
+<p>As with the factorial example, adding some <a href="https://realpython.com/python-print/"><code>print()</code></a> statements helps to demonstrate the sequence of recursive calls and <a href="https://realpython.com/python-return-statement/">return</a> values:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"> 1def count_leaf_items(item_list):</a>
+<a class="sourceLine" id="cb26-2" title="2"> <span class="dv">2</span>    <span class="st">&quot;&quot;&quot;Recursively counts and returns the</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="st"> 3       number of leaf items in a (potentially</span></a>
+<a class="sourceLine" id="cb26-4" title="4"><span class="st"> 4       nested) list.</span></a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="st"> 5    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb26-6" title="6"> <span class="dv">6</span>    <span class="bu">print</span>(<span class="ss">f&quot;List: </span><span class="sc">{</span>item_list<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb26-7" title="7"> <span class="dv">7</span>    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb26-8" title="8"> <span class="dv">8</span>    <span class="cf">for</span> item <span class="kw">in</span> item_list:</a>
+<a class="sourceLine" id="cb26-9" title="9"> <span class="dv">9</span>        <span class="cf">if</span> <span class="bu">isinstance</span>(item, <span class="bu">list</span>):</a>
+<a class="sourceLine" id="cb26-10" title="10"><span class="dv">10</span>            <span class="bu">print</span>(<span class="st">&quot;Encountered sublist&quot;</span>)</a>
+<a class="sourceLine" id="cb26-11" title="11"><span class="dv">11</span>            count <span class="op">+=</span> count_leaf_items(item)</a>
+<a class="sourceLine" id="cb26-12" title="12"><span class="dv">12</span>        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb26-13" title="13"><span class="dv">13</span>            <span class="bu">print</span>(<span class="ss">f&quot;Counted leaf item </span><span class="ch">\&quot;</span><span class="sc">{</span>item<span class="sc">}</span><span class="ch">\&quot;</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb26-14" title="14"><span class="dv">14</span>            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb26-15" title="15"><span class="dv">15</span></a>
+<a class="sourceLine" id="cb26-16" title="16"><span class="dv">16</span>    <span class="bu">print</span>(<span class="ss">f&quot;-&gt; Returning count </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb26-17" title="17"><span class="dv">17</span>    <span class="cf">return</span> count</a></code></pre></div>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+<h2 id="homework">Homework</h2>
+<p><img src="../../.gitbook/assets/2021-09-09-14-03-46.png" /></p>
+<h2 id="binary-search">Binary Search</h2>
+<h3 id="which-logarithmic-expression-is-identical-to-the-following-exponential-expression">Which logarithmic expression is identical to the following exponential expression?</h3>
+<blockquote>
+<p>2^n = 64 log_2(64)=n</p>
+</blockquote>
+<figure>
+<img src="../../.gitbook/assets/true4algo-2-work.png" alt="The list must be ordered from least to greatest" /><figcaption>The list must be ordered from least to greatest</figcaption>
+</figure>
+<h2 id="item_list-must-be-sorted-from-least-to-greatest.">item_list must be sorted from least to greatest.</h2>
+<p>For a given positive integer <code>n</code> determine if it can be represented as a sum of two <a href="keyword://fibonacci-sequence">Fibonacci numbers</a> (possibly equal).</p>
+<p>Example</p>
+<ul>
+<li><p>For <code>n = 1</code>, the output should be <code>fibonacciSimpleSum2(n) = true</code>.</p>
+<p>Explanation: <code>1 = 0 + 1 = F~0~ + F~1~</code>.</p></li>
+<li><p>For <code>n = 11</code>, the output should be <code>fibonacciSimpleSum2(n) = true</code>.</p>
+<p>Explanation: <code>11 = 3 + 8 = F~4~ + F~6~</code>.</p></li>
+<li><p>For <code>n = 60</code>, the output should be <code>fibonacciSimpleSum2(n) = true</code>.</p>
+<p>Explanation: <code>60 = 5 + 55 = F~5~ + F~10~</code>.</p></li>
+<li><p>For <code>n = 66</code>, the output should be <code>fibonacciSimpleSum2(n) = false</code>.</p></li>
+</ul>
+<p>Input/Output</p>
+<ul>
+<li>[execution time limit] 4 seconds (py3)</li>
+<li><p>[input] integer n</p>
+<p><em>Guaranteed constraints:</em> <code>1 ≤ n ≤ 2 - 10^9^</code>.</p></li>
+<li><p>[output] boolean</p>
+<p><code>true</code> if <code>n</code> can be represented as <code>F~i~ + F~j~</code>, <code>false</code> otherwise.</p></li>
+</ul>
+<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">def</span> fibonacciSimpleSum2(n):</a>
+<a class="sourceLine" id="cb27-2" title="2">    <span class="co"># if 0 is less than n and n is less than 5 then we know we can return</span></a>
+<a class="sourceLine" id="cb27-3" title="3">    <span class="co"># true because n will be 1-4 which can be created with 2 fib numbers</span></a>
+<a class="sourceLine" id="cb27-4" title="4">    <span class="cf">if</span> <span class="dv">0</span> <span class="op">&lt;</span> n <span class="op">&lt;</span> <span class="dv">5</span>:</a>
+<a class="sourceLine" id="cb27-5" title="5">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb27-6" title="6"></a>
+<a class="sourceLine" id="cb27-7" title="7">    <span class="co"># first get fibonacci sequence up to n</span></a>
+<a class="sourceLine" id="cb27-8" title="8">    seq <span class="op">=</span> [<span class="dv">0</span>, <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb27-9" title="9">    <span class="co"># starting from 2 and ending at n</span></a>
+<a class="sourceLine" id="cb27-10" title="10">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, n):</a>
+<a class="sourceLine" id="cb27-11" title="11">        <span class="co"># add seq at i - 2 (0 to start) and seq at i - 1 (1 to start)</span></a>
+<a class="sourceLine" id="cb27-12" title="12">        fib <span class="op">=</span> seq[i <span class="op">-</span> <span class="dv">2</span>] <span class="op">+</span> seq[i <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb27-13" title="13">        <span class="co"># if n is greater than fib</span></a>
+<a class="sourceLine" id="cb27-14" title="14">        <span class="cf">if</span> n <span class="op">&gt;=</span> fib:</a>
+<a class="sourceLine" id="cb27-15" title="15">            <span class="co"># we can append fib to the sequence</span></a>
+<a class="sourceLine" id="cb27-16" title="16">            seq.append(fib)</a>
+<a class="sourceLine" id="cb27-17" title="17">            <span class="co"># if fib is greater than or equal to n we can stop</span></a>
+<a class="sourceLine" id="cb27-18" title="18">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb27-19" title="19">            <span class="cf">break</span></a>
+<a class="sourceLine" id="cb27-20" title="20">    <span class="bu">print</span>(seq)</a>
+<a class="sourceLine" id="cb27-21" title="21"></a>
+<a class="sourceLine" id="cb27-22" title="22">    <span class="co"># The check I googled</span></a>
+<a class="sourceLine" id="cb27-23" title="23">    <span class="co"># for i, number in enumerate(seq[:-1]):</span></a>
+<a class="sourceLine" id="cb27-24" title="24">    <span class="co">#     paired = n - number</span></a>
+<a class="sourceLine" id="cb27-25" title="25">    <span class="co">#     if paired in seq[i + 1:]:</span></a>
+<a class="sourceLine" id="cb27-26" title="26">    <span class="co">#         return True</span></a>
+<a class="sourceLine" id="cb27-27" title="27"></a>
+<a class="sourceLine" id="cb27-28" title="28">    <span class="co"># check if any 2 of the numbers in seq add up to n</span></a>
+<a class="sourceLine" id="cb27-29" title="29">    <span class="co"># My check</span></a>
+<a class="sourceLine" id="cb27-30" title="30">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(seq) <span class="op">-</span> <span class="dv">1</span>):  <span class="co"># O(n^2)</span></a>
+<a class="sourceLine" id="cb27-31" title="31">        j <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb27-32" title="32">        <span class="cf">while</span> (seq[i] <span class="op">+</span> seq[j]) <span class="op">!=</span> n:</a>
+<a class="sourceLine" id="cb27-33" title="33">            <span class="cf">if</span> j <span class="op">==</span> <span class="bu">len</span>(seq) <span class="op">-</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb27-34" title="34">                <span class="cf">break</span></a>
+<a class="sourceLine" id="cb27-35" title="35">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb27-36" title="36">                j <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb27-37" title="37">        <span class="cf">if</span> seq[i] <span class="op">+</span> seq[j] <span class="op">==</span> n:</a>
+<a class="sourceLine" id="cb27-38" title="38">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb27-39" title="39"></a>
+<a class="sourceLine" id="cb27-40" title="40">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb27-41" title="41"></a>
+<a class="sourceLine" id="cb27-42" title="42"></a>
+<a class="sourceLine" id="cb27-43" title="43"><span class="bu">print</span>(fibonacciSimpleSum2(<span class="dv">5</span>))</a></code></pre></div>
+<p>Given an integer array <code>nums</code> sorted in ascending order, and an integer <code>target</code>.</p>
+<p>Suppose that <code>nums</code> is rotated at some pivot unknown to you beforehand (i.e., [1,2,3,4,5,6,7] might become [4,5,6,7,1,2,3]).</p>
+<p>You should search for <code>target</code> in <code>nums</code> and if found return its index, otherwise return -1.</p>
+<p>Example 1: Input: nums = [6,7,1,2,3,4,5], target = 1 Output: 2</p>
+<p>Example 2: Input: nums = [6,7,1,2,3,4,5], target = 3 Output: 4</p>
+<p>Example 3: Input: nums = [1], target = 2 Output: -1</p>
+<p>Your solution should have better than O(n) time complexity over the number of items in the list. There is an O(log n) solution. There is also an O(1) solution.</p>
+<p>Note:</p>
+<ol type="1">
+<li><code>1 &lt;= nums.length &lt; 100</code></li>
+<li><code>1 &lt;= nums[i] &lt;= 100</code></li>
+<li>All values of <code>nums</code> are unique.</li>
+<li>Numbers from 1 up to the length of the list will be contained in the list.</li>
+<li>[execution time limit] 4 seconds (py3)</li>
+<li>[input] array.integer nums</li>
+<li>[input] integer target</li>
+<li>[output] integer</li>
+</ol>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">def</span> csSearchRotatedSortedArray(nums, target):</a>
+<a class="sourceLine" id="cb28-2" title="2">    <span class="bu">min</span> <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb28-3" title="3">    <span class="bu">max</span> <span class="op">=</span> <span class="bu">len</span>(nums) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb28-4" title="4"></a>
+<a class="sourceLine" id="cb28-5" title="5">    <span class="cf">while</span> <span class="kw">not</span> <span class="bu">max</span> <span class="op">&lt;</span> <span class="bu">min</span>:</a>
+<a class="sourceLine" id="cb28-6" title="6">        guess <span class="op">=</span> (<span class="bu">max</span> <span class="op">+</span> <span class="bu">min</span>) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb28-7" title="7">        <span class="co"># print(f&#39;min: {nums[min]} max: {nums[max]} guess:{nums[guess]} target:&#39;</span></a>
+<a class="sourceLine" id="cb28-8" title="8">        <span class="co">#       f&#39; {target}&#39;)</span></a>
+<a class="sourceLine" id="cb28-9" title="9">        <span class="co"># if the guess is the target we got it and return the guess</span></a>
+<a class="sourceLine" id="cb28-10" title="10">        <span class="cf">if</span> nums[guess] <span class="op">==</span> target:</a>
+<a class="sourceLine" id="cb28-11" title="11">            <span class="co"># print(&#39;guessed the target&#39;)</span></a>
+<a class="sourceLine" id="cb28-12" title="12">            <span class="cf">return</span> guess</a>
+<a class="sourceLine" id="cb28-13" title="13">        <span class="co"># if min is less than or equal to the guess</span></a>
+<a class="sourceLine" id="cb28-14" title="14">        <span class="cf">elif</span> nums[<span class="bu">min</span>] <span class="op">&lt;=</span> nums[guess]:</a>
+<a class="sourceLine" id="cb28-15" title="15">            <span class="co"># print(&#39;min less than guess&#39;)</span></a>
+<a class="sourceLine" id="cb28-16" title="16">            <span class="co"># if min is less than or equal to the target and less than the guess</span></a>
+<a class="sourceLine" id="cb28-17" title="17">            <span class="cf">if</span> nums[<span class="bu">min</span>] <span class="op">&lt;=</span> target <span class="op">&lt;</span> nums[guess]:</a>
+<a class="sourceLine" id="cb28-18" title="18">                <span class="co"># print(&#39;min less than or equal to target and less than guess&#39;)</span></a>
+<a class="sourceLine" id="cb28-19" title="19">                <span class="co"># we can set max to the guess because nothing past the guess</span></a>
+<a class="sourceLine" id="cb28-20" title="20">                <span class="co"># can be the target</span></a>
+<a class="sourceLine" id="cb28-21" title="21">                <span class="bu">max</span> <span class="op">=</span> guess</a>
+<a class="sourceLine" id="cb28-22" title="22">                <span class="co"># else we can set min to guess + 1 because nothing before it</span></a>
+<a class="sourceLine" id="cb28-23" title="23">                <span class="co"># can be the target</span></a>
+<a class="sourceLine" id="cb28-24" title="24">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb28-25" title="25">                <span class="co"># print(&#39;min is greater than target and greater than or equal &#39;</span></a>
+<a class="sourceLine" id="cb28-26" title="26">                <span class="co">#       &#39;to guess&#39;)</span></a>
+<a class="sourceLine" id="cb28-27" title="27">                <span class="bu">min</span> <span class="op">=</span> guess <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb28-28" title="28">        <span class="co"># else if min is greater than the guess</span></a>
+<a class="sourceLine" id="cb28-29" title="29">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb28-30" title="30">            <span class="bu">print</span>(<span class="st">&#39;min is greater than or equal to guess&#39;</span>)</a>
+<a class="sourceLine" id="cb28-31" title="31">            <span class="co"># if max - 1 is greater than the target and greater than the guess</span></a>
+<a class="sourceLine" id="cb28-32" title="32">            <span class="cf">if</span> nums[<span class="bu">max</span> <span class="op">-</span> <span class="dv">1</span>] <span class="op">&gt;=</span> target <span class="op">&gt;</span> nums[guess]:</a>
+<a class="sourceLine" id="cb28-33" title="33">                <span class="co"># print(&#39;max - 1 greater than or equal to target and greater &#39;</span></a>
+<a class="sourceLine" id="cb28-34" title="34">                <span class="co">#       &#39;than guess&#39;)</span></a>
+<a class="sourceLine" id="cb28-35" title="35">                <span class="co"># we can set min to guess plus one because nothing before it</span></a>
+<a class="sourceLine" id="cb28-36" title="36">                <span class="co"># can be the target</span></a>
+<a class="sourceLine" id="cb28-37" title="37">                <span class="bu">min</span> <span class="op">=</span> guess <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb28-38" title="38">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb28-39" title="39">                <span class="co"># print(&#39;max -1 less than target and less than or equal to guess&#39;)</span></a>
+<a class="sourceLine" id="cb28-40" title="40">                <span class="co"># else we set max equal to guess because nothing after it can</span></a>
+<a class="sourceLine" id="cb28-41" title="41">                <span class="co"># be the target</span></a>
+<a class="sourceLine" id="cb28-42" title="42">                <span class="bu">max</span> <span class="op">=</span> guess</a>
+<a class="sourceLine" id="cb28-43" title="43"></a>
+<a class="sourceLine" id="cb28-44" title="44">    <span class="cf">return</span> <span class="op">-</span>1C:<span class="op">\</span>Lambda<span class="op">\</span>CIRRICULUMN_NOTES<span class="op">\</span>CS<span class="op">-</span>python<span class="op">-</span>notes_WEEKS<span class="op">\</span>wk18<span class="op">\</span>d4<span class="op">\</span>homework<span class="op">\</span><span class="dv">2021-09-09-14-03</span><span class="fl">-46.</span>png</a></code></pre></div>
+<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png" /></p>
+</body>
+</html>

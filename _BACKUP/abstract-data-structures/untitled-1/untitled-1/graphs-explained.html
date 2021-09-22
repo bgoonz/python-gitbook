@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>graphs-explained</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="graphs-explained">Graphs Explained</h1>
+<p>Graphs are complex, non-linear data structures that are characterized by a group of vertices, connected by edges. For more information on the <em>different types of data structures in Python</em>, check out the following articles:</p>
+<ul>
+<li><a href="https://www.section.io/data-structures-python-part-1/">Introduction to Data Structures</a></li>
+<li><a href="https://www.section.io/list-data-structure-python/">List</a></li>
+<li><a href="https://www.section.io/stack-data-structure-python/">Stack</a></li>
+<li><a href="https://www.section.io/queue-data-structure-python/">Queue</a></li>
+<li><a href="https://www.section.io/linked-list-data-structure-python/">Linked Lists</a></li>
+<li><a href="https://www.section.io/binary-tree-data-structure-python/">Binary Trees</a></li>
+<li><a href="https://www.section.io/heap-data-structure-python/">Heaps</a></li>
+</ul>
+<h4 id="table-of-contents">Table of Contents <a id="table-of-contents"></a></h4>
+<ul>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#graphs:-introduction">Graphs: Introduction</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#applications-of-graphs">Applications of Graphs</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#types-of-graphs">Types of Graphs</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#representing-graphs">Representing Graphs</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#conclusion">Conclusion</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#further-reading">Further Reading</a></li>
+</ul>
+<h4 id="graphs-introduction">Graphs: Introduction <a id="graphs-introduction"></a></h4>
+<p>Graphs are non-linear data structures made up of two major components:</p>
+<ul>
+<li><strong>Vertices</strong> – Vertices are entities in a graph. Every vertex has a value associated with it. For example, if we represent a list of cities using a graph, the vertices would represent the cities.</li>
+<li><strong>Edges</strong> – Edges represent the relationship between the vertices in the graph. Edges may or may not have a value associated with them. For example, if we represent a list of cities using a graph, the edges would represent the path between the cities.</li>
+</ul>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/graph.png" alt="Graph Diagram" /><figcaption>Graph Diagram</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html"><em>Graph</em></a></p>
+<h4 id="applications-of-graphs">Applications of Graphs <a id="applications-of-graphs"></a></h4>
+<p>Graphs are used everywhere, from schooling to business. Especially in the fields of computer science, physics, and chemistry.</p>
+<p>A few other applications of graphs are:</p>
+<ul>
+<li>To visualize organized data.</li>
+<li>Directed Graphs are used in Google’s <a href="https://en.wikipedia.org/wiki/PageRank">Page Ranking Algorithm</a>.</li>
+<li>Social Networks use graphs to represent different users as vertices and edges to represent the connections between them.</li>
+<li>In a mapping application, graphs are used to represent places and the path (distance) between them.</li>
+</ul>
+<h4 id="types-of-graphs">Types of Graphs <a id="types-of-graphs"></a></h4>
+<p>There are many types of graphs, based on weights, direction, interconnectivity, and special properties. Let’s look at the most common types of graphs.</p>
+<ul>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#based-on-direction">Graphs Based on Direction</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#based-on-weights">Graphs Based on Weights</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#special-graphs">Special Graphs</a></li>
+</ul>
+<p><strong>Based on Direction</strong></p>
+<p><strong>Undirected Graphs</strong></p>
+<p>In an undirected graph, the edges have no path or direction. If there is a path from vertex X to vertex Y, then there is a path from vertex Y to vertex X. Edge (X, Y) represents the edge connecting vertex X to vertex Y.</p>
+<p>That is, <code>edge (X, Y) == edge (Y, X)</code>.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/undirected-graph.png" alt="Undirected Graph" /><figcaption>Undirected Graph</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://pediaa.com/what-is-the-difference-between-directed-and-undirected-graph/"><em>Undirected Graph</em></a></p>
+<p><strong>Directed Graphs</strong></p>
+<p>In a directed graph or digraph, the edges have an orientation. If there is a path from vertex X to vertex Y, then there isn’t necessarily a path from vertex Y to vertex X.</p>
+<p>That is, <code>edge (X, Y) != edge (Y, X)</code>.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/directed-graph.png" alt="Directed Graphs" /><figcaption>Directed Graphs</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://pediaa.com/what-is-the-difference-between-directed-and-undirected-graph/"><em>Directed Graph</em></a></p>
+<p><strong>Based on Weights</strong></p>
+<p><strong>Weighted Graphs</strong></p>
+<p>A weighted graph has a value associated with every edge. The value may represent quantities like cost, distance, time, etc., depending on the graph. An edge of a weighted graph is represented as, <code>(u, v, w)</code>.</p>
+<ul>
+<li><code>u</code> -&gt; Source vertex</li>
+<li><code>v</code> -&gt; Destination vertex</li>
+<li><code>w</code> -&gt; Weight associated to go from u to v.</li>
+</ul>
+<p>These weighted graphs are extensively used in modelling Computer Networks. For a career as a Networking Engineer, the knowledge of weighted graphs are a must.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/weighted-graph.png" alt="Weighted Graphs" /><figcaption>Weighted Graphs</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://www.clipartmax.com/middle/m2i8Z5i8G6b1b1b1_directed-weighted-ex1-directed-weighted-graph/"><em>Weighted Graph</em></a></p>
+<p><strong>Unweighted Graphs</strong></p>
+<p>An unweighted graph does not have a value associated with every edge. An edge of an unweighted graph is represented as, <code>(u, v)</code>.</p>
+<ul>
+<li><code>u</code> -&gt; Source vertex</li>
+<li><code>v</code> -&gt; Destination vertex</li>
+</ul>
+<p>Relationships in query languages like GraphQL can be represented by using Unweighted Graphs.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/unweighted-graph.png" alt="Unweighted Graphs" /><figcaption>Unweighted Graphs</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://www.researchgate.net/figure/Unweighted-Undirected-Graph_fig3_327864836"><em>Unweighted Graph</em></a></p>
+<p><strong>Special Graphs</strong></p>
+<p><strong>Trees</strong></p>
+<p>An undirected graph with zero cycles is called a tree. A cycle in a graph is a sequence with the first and last vertices in the repeating sequence.</p>
+<p>It has X vertices and X-1 edges.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/tree-graph.png" alt="Tree - Graphs" /><figcaption>Tree - Graphs</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://en.wikipedia.org/wiki/Tree_%28graph_theory%29"><em>Tree</em></a></p>
+<p><strong>Rooted Tree</strong></p>
+<p>A rooted tree is a tree that has a designated root node. If edges point away from the root, it is called an <strong>arborescence/out-tree</strong>. If edges point towards the root, it is called an <strong>anti-arborescence/in-tree</strong>.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/rooted-trees.png" alt="Rooted Tree" /><figcaption>Rooted Tree</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://www.youtube.com/watch?v=09_LlHjoEiY&amp;t=213s"><em>Rooted Tree</em></a></p>
+<p><strong>Directed Acyclic Graphs</strong></p>
+<p>Directed Acyclic Graphs or DAGs are graphs with no directed cycles. They represent structures with dependencies. It’s also important to note that: All <a href="https://en.wikipedia.org/wiki/Arborescence_%28graph_theory%29">arborescences</a> are DAGs, but not all DAGs are arborescences.</p>
+<p>Directed Acyclic Graphs are used by compilers to represent expressions and relationships in a program.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/dag.png" alt="Directed Acyclic Graph" /><figcaption>Directed Acyclic Graph</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph"><em>Directed Acyclic Graph</em></a></p>
+<p><strong>Complete Graphs</strong></p>
+<p>Complete graphs have a unique edge between every pair of vertices. A complete graph <code>n</code> vertices have <code>(n*(n-1)) / 2</code> edges and are represented by Kn.</p>
+<p>Fully connected networks in a Computer Network uses a complete graph in its representation.</p>
+<figure>
+<img src="https://www.section.io/engineering-education/graph-data-structure-python/complete-graph.png" alt="Complete Graph" /><figcaption>Complete Graph</figcaption>
+</figure>
+<p><em>Figure:</em> <a href="https://www.geeksforgeeks.org/mathematics-graph-theory-basics/"><em>Complete Graph</em></a></p>
+<h4 id="representing-graphs">Representing Graphs <a id="representing-graphs"></a></h4>
+<p>There are multiple ways of using data structures to represent a graph. The three most common ways are:</p>
+<ul>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-matrix">Adjacency Matrix</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#adjacency-list">Adjacency List</a></li>
+<li><a href="https://www.section.io/engineering-education/graph-data-structure-python/#edge-list">Edge List</a></li>
+</ul>
+<p><strong>Adjacency Matrix</strong></p>
+<p>An Adjacency Matrix is a very simple way to represent a graph. In a weighted graph, the element <code>A[i][j]</code> represents the cost of moving from vertex <code>i</code> to vertex <code>j</code>.</p>
+<p>In an unweighted graph, the element <code>A[i][j]</code> represents a Boolean value that determines if a path exists from vertex <code>i</code> to vertex <code>j</code>. If <code>A[i][j] == 0</code>, then no path from vertex <code>i</code> to vertex <code>j</code> exists. If <code>A[i][j] == 1</code>, there is a path from vertex <code>i</code> to vertex <code>j</code>.</p>
+<p>For example, a snake and ladder game can be represented by using an adjacency matrix. This enables us to use various algorithms to find the shortest path to finish the game. Similarly, many shortest path algorithms use an adjacency matrix.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">graph <span class="op">=</span> [[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>],</a>
+<a class="sourceLine" id="cb1-2" title="2">         [<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">5</span>],</a>
+<a class="sourceLine" id="cb1-3" title="3">         [<span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">0</span>]]</a></code></pre></div>
+<p>The adjacency matrix above represents a graph that has 3 vertices. The cost of moving from vertex 0 to vertex 1 is 1, the cost of moving from vertex 0 to vertex 2 is 2, and so on. Usually, the cost of travelling from a vertex to itself is zero.</p>
+<p><strong>Advantages and Disadvantages of Adjacency Matrix</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Advantages</th>
+<th style="text-align: left;">Disadvantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Space-efficient for dense graph representation.</td>
+<td style="text-align: left;">Space Complexity of this Data Structure - O(V^2).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The time complexity of getting an edge weight is O(1).</td>
+<td style="text-align: left;">Iterating through the edges takes O(V^2) time.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Simplest Graph Representation.</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Adjacency List</strong></p>
+<p>An adjacency list represents a graph as a list that has vertex-edge mappings. Example, A → [(B, 4), (C, 1)] represents an adjacency list where the vertex A is connected to B (weight 4) and C (weight 1). This works really well for sparse graphs.</p>
+<p><strong>Advantages and Disadvantages of Adjacency List</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Advantages</th>
+<th style="text-align: left;">Disadvantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Space-efficient for sparse graphs.</td>
+<td style="text-align: left;">Less space efficient for dense graphs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Iterating over the edges is efficient.</td>
+<td style="text-align: left;">Edge weight lookup is O(E). (worse case)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Slightly more complex to represent.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Edge List</strong></p>
+<p>An edge list represents the graph as an unstructured list of edges.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">graph <span class="op">=</span> [(C, A, <span class="dv">4</span>), (A, C, <span class="dv">1</span>), (B, C, <span class="dv">6</span>),</a>
+<a class="sourceLine" id="cb2-2" title="2">         (A, B, <span class="dv">4</span>), (C, B, <span class="dv">1</span>), (C, D, <span class="dv">2</span>)]</a></code></pre></div>
+<p>They are not widely used because this representation lacks structure.</p>
+<p><strong>Advantages and Disadvantages of Edge List</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Advantages</th>
+<th style="text-align: left;">Disadvantages</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Space-efficient for sparse graphs.</td>
+<td style="text-align: left;">Less space efficient for dense graphs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Iterating over the edges is efficient.</td>
+<td style="text-align: left;">Edge weight lookup is O(E). (worse case)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Extremely simple representation.</td>
+<td style="text-align: left;">This representation lacks structure.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+<p>In this article, we learned about the various types of graphs, their representations, and their applications.</p>
+<p>To summarize,</p>
+<p><strong>Types of Graphs</strong></p>
+<ul>
+<li>Based on Direction
+<ul>
+<li>Undirected Graph</li>
+<li>Directed Graph</li>
+</ul></li>
+<li>Based on Weights
+<ul>
+<li>Weighted Graph</li>
+<li>Unweighted Graph</li>
+</ul></li>
+<li>Special Graphs
+<ul>
+<li>Tree</li>
+<li>Rooted Tree</li>
+<li>Directed Acyclic Graph</li>
+<li>Complete Graph</li>
+</ul></li>
+</ul>
+<p><strong>Graph Representation</strong></p>
+<ul>
+<li>Adjacency Matrix
+<ul>
+<li>Used for dense graphs</li>
+</ul></li>
+<li>Adjacency List
+<ul>
+<li>Used for sparse graphs</li>
+</ul></li>
+<li>Edge List
+<ul>
+<li>Used for simple representation</li>
+</ul></li>
+</ul>
+<h4 id="further-reading">Further Reading <a id="further-reading"></a></h4>
+<p>To learn more about graphs, check out the following pages:</p>
+<ul>
+<li>Practice Graphs – <a href="https://leetcode.com/tag/graph/">LeetCode</a></li>
+<li>Graph Theory <a href="https://www.cpp.edu/~ftang/courses/CS241/notes/graph.htm">Notes</a></li>
+<li>Graph Representation – <a href="https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/">HackerEarth</a></li>
+</ul>
+</body>
+</html>

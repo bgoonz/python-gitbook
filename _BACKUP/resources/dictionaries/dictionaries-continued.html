@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dictionaries-continued</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="dictionaries-continued">Dictionaries Continued</h1>
+<h2 id="the-dictionary-data-type"><strong>The Dictionary Data Type</strong> <a id="calibre_link-191"></a></h2>
+<p>Like a list, a <em>dictionary</em> is a mutable collection of many values. But unlike indexes for lists, indexes for dictionaries can use many different data types, not just integers. Indexes for dictionaries are called <em>keys</em>, and a key with its associated value is called a <em>key-value pair</em>.</p>
+<p>In code, a dictionary is typed with braces, {}. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; myCat = {‘size’: ‘fat’, ‘color’: ‘gray’, ‘disposition’: ‘loud’}</p>
+<p>This assigns a dictionary to the myCat variable. This dictionary’s keys are ‘size’, ‘color’, and ‘disposition’. The values for these keys are ‘fat’, ‘gray’, and ‘loud’, respectively. You can access these values through their keys:</p>
+<p>&gt;&gt;&gt; myCat[‘size’] ‘fat’ &gt;&gt;&gt; ‘My cat has’ + myCat[‘color’] + ’ fur.’ ‘My cat has gray fur.’</p>
+<p>Dictionaries can still use integer values as keys, just like lists use integers for indexes, but they do not have to start at 0 and can be any number.</p>
+<p>&gt;&gt;&gt; spam = {12345: ‘Luggage Combination’, 42: ‘The Answer’}</p>
+<p><strong>Dictionaries vs. Lists</strong></p>
+<p>Unlike lists, items in dictionaries are unordered. The first item in a list named spam would be spam[0]. But there is no “first” item in a dictionary. While the order of items matters for determining whether two lists are the same, it does not matter in what order the key-value pairs are typed in a dictionary. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = [‘cats’, ‘dogs’, ‘moose’] &gt;&gt;&gt; bacon = [‘dogs’, ‘moose’, ‘cats’] &gt;&gt;&gt; spam == bacon False &gt;&gt;&gt; eggs = {‘name’: ‘Zophie’, ‘species’: ‘cat’, ‘age’: ‘8’} &gt;&gt;&gt; ham = {‘species’: ‘cat’, ‘age’: ‘8’, ‘name’: ‘Zophie’} &gt;&gt;&gt; eggs == ham True</p>
+<p>Because dictionaries are not ordered, they can’t be sliced like lists.</p>
+<p>Trying to access a key that does not exist in a dictionary will result in a KeyError error message, much like a list’s “out-of-range” IndexError error message. Enter the following into the interactive shell, and notice the error message that shows up because there is no ‘color’ key:</p>
+<p>&gt;&gt;&gt; spam = {‘name’: ‘Zophie’, ‘age’: 7} &gt;&gt;&gt; spam[‘color’] Traceback (most recent call last): File “&lt;pyshell#1&gt;”, line 1, in &lt;module&gt; spam[‘color’] KeyError: ‘color’</p>
+<p>Though dictionaries are not ordered, the fact that you can have arbitrary values for the keys allows you to organize your data in powerful ways. Say you wanted your program to store data about your friends’ birthdays. You can use a dictionary with the names as keys and the birthdays as values. Open a new file editor window and enter the following code. Save it as <em>birthdays.py</em>.</p>
+<p>➊ birthdays = {‘Alice’: ‘Apr 1’, ‘Bob’: ‘Dec 12’, ‘Carol’: ‘Mar 4’}</p>
+<p>while True: print(‘Enter a name: (blank to quit)’) name = input() if name == ’’: break</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">➋ <span class="cf">if</span> name <span class="kw">in</span> birthdays:</a>
+<a class="sourceLine" id="cb1-2" title="2">    ➌ <span class="bu">print</span><span class="op">\</span>(birthdays<span class="op">\</span>[name<span class="op">\</span>] <span class="op">+</span> <span class="st">&#39; is the birthday of &#39;</span> <span class="op">+</span> name<span class="op">\</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3">   <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-4" title="4">       <span class="bu">print</span><span class="op">\</span>(<span class="st">&#39;I do not have birthday information for &#39;</span> <span class="op">+</span> name<span class="op">\</span>)</a>
+<a class="sourceLine" id="cb1-5" title="5">       <span class="bu">print</span><span class="op">\</span>(<span class="st">&#39;What is their birthday?&#39;</span><span class="op">\</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6">       bday <span class="op">=</span> <span class="bu">input</span><span class="op">\</span>(<span class="op">\</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7">    ➍ birthdays<span class="op">\</span>[name<span class="op">\</span>] <span class="op">=</span> bday</a>
+<a class="sourceLine" id="cb1-8" title="8">       <span class="bu">print</span><span class="op">\</span>(<span class="st">&#39;Birthday database updated.&#39;</span><span class="op">\</span>)</a></code></pre></div>
+<p>You can view the execution of this program at <a href="https://autbor.com/bdaydb"><em>https://autbor.com/bdaydb</em></a>. You create an initial dictionary and store it in birthdays ➊. You can see if the entered name exists as a key in the dictionary with the in keyword ➋, just as you did for lists. If the name is in the dictionary, you access the associated value using square brackets ➌; if not, you can add it using the same square bracket syntax combined with the assignment operator ➍.</p>
+<p>When you run this program, it will look like this:</p>
+<p>Enter a name: (blank to quit) Alice Apr 1 is the birthday of Alice Enter a name: (blank to quit) Eve I do not have birthday information for Eve What is their birthday? Dec 5 Birthday database updated. Enter a name: (blank to quit) Eve Dec 5 is the birthday of Eve Enter a name: (blank to quit)</p>
+<p>Of course, all the data you enter in this program is forgotten when the program terminates. You’ll learn how to save data to files on the hard drive in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-32">Chapter 9</a>.</p>
+<p><strong>ORDERED DICTIONARIES IN PYTHON 3.7</strong></p>
+<p>While they’re still not ordered and have no “first” key-value pair, dictionaries in Python 3.7 and later will remember the insertion order of their key-value pairs if you create a sequence value from them. For example, notice the order of items in the lists made from the eggs and ham dictionaries matches the order in which they were entered:</p>
+<p>&gt;&gt;&gt; eggs = {‘name’: ‘Zophie’, ‘species’: ‘cat’, ‘age’: ‘8’} &gt;&gt;&gt; list(eggs) [‘name’, ‘species’, ‘age’] &gt;&gt;&gt; ham = {‘species’: ‘cat’, ‘age’: ‘8’, ‘name’: ‘Zophie’} &gt;&gt;&gt; list(ham) [‘species’, ‘age’, ‘name’]</p>
+<p>The dictionaries are still unordered, as you can’t access items in them using integer indexes like eggs[0] or ham[2]. You shouldn’t rely on this behavior, as dictionaries in older versions of Python don’t remember the insertion order of key-value pairs. For example, notice how the list doesn’t match the insertion order of the dictionary’s key-value pairs when I run this code in Python 3.5:</p>
+<p>&gt;&gt;&gt; spam = {} &gt;&gt;&gt; spam[‘first key’] = ‘value’ &gt;&gt;&gt; spam[‘second key’] = ‘value’ &gt;&gt;&gt; spam[‘third key’] = ‘value’ &gt;&gt;&gt; list(spam) [‘first key’, ‘third key’, ‘second key’]</p>
+<p><strong>The keys(), values(), and items() Methods</strong></p>
+<p>There are three dictionary methods that will return list-like values of the dictionary’s keys, values, or both keys and values: keys(), values(), and items(). The values returned by these methods are not true lists: they cannot be modified and do not have an append() method. But these data types (dict_keys, dict_values, and dict_items, respectively) <em>can</em> be used in for loops. To see how these methods work, enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = {‘color’: ‘red’, ‘age’: 42} &gt;&gt;&gt; for v in spam.values(): … print(v)</p>
+<p>red 42</p>
+<p>Here, a for loop iterates over each of the values in the spam dictionary. A for loop can also iterate over the keys or both keys and values:</p>
+<p>&gt;&gt;&gt; for k in spam.keys(): … print(k)</p>
+<p>color age &gt;&gt;&gt; for i in spam.items(): … print(i)</p>
+<p>(‘color’, ‘red’) (‘age’, 42)</p>
+<p>When you use the keys(), values(), and items() methods, a for loop can iterate over the keys, values, or key-value pairs in a dictionary, respectively. Notice that the values in the dict_items value returned by the items() method are tuples of the key and value.</p>
+<p>If you want a true list from one of these methods, pass its list-like return value to the list() function. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = {‘color’: ‘red’, ‘age’: 42} &gt;&gt;&gt; spam.keys() dict_keys([‘color’, ‘age’]) &gt;&gt;&gt; list(spam.keys()) [‘color’, ‘age’]</p>
+<p>The list(spam.keys()) line takes the dict_keys value returned from keys() and passes it to list(), which then returns a list value of [‘color’, ‘age’].</p>
+<p>You can also use the multiple assignment trick in a for loop to assign the key and value to separate variables. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = {‘color’: ‘red’, ‘age’: 42} &gt;&gt;&gt; for k, v in spam.items(): … print(‘Key:’ + k + ’ Value: ’ + str(v))</p>
+<p>Key: age Value: 42 Key: color Value: red</p>
+<p><strong>Checking Whether a Key or Value Exists in a Dictionary</strong></p>
+<p>Recall from the previous chapter that the in and not in operators can check whether a value exists in a list. You can also use these operators to see whether a certain key or value exists in a dictionary. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = {‘name’: ‘Zophie’, ‘age’: 7} &gt;&gt;&gt; ‘name’ in spam.keys() True &gt;&gt;&gt; ‘Zophie’ in spam.values() True &gt;&gt;&gt; ‘color’ in spam.keys() False &gt;&gt;&gt; ‘color’ not in spam.keys() True &gt;&gt;&gt; ‘color’ in spam False</p>
+<p>In the previous example, notice that ‘color’ in spam is essentially a shorter version of writing ‘color’ in spam.keys(). This is always the case: if you ever want to check whether a value is (or isn’t) a key in the dictionary, you can simply use the in (or not in) keyword with the dictionary value itself.</p>
+<p><strong>The get() Method</strong></p>
+<p>It’s tedious to check whether a key exists in a dictionary before accessing that key’s value. Fortunately, dictionaries have a get() method that takes two arguments: the key of the value to retrieve and a fallback value to return if that key does not exist.</p>
+<p>Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; picnicItems = {‘apples’: 5, ‘cups’: 2} &gt;&gt;&gt; ‘I am bringing’ + str(picnicItems.get(‘cups’, 0)) + ’ cups.’ ‘I am bringing 2 cups.’ &gt;&gt;&gt; ‘I am bringing’ + str(picnicItems.get(‘eggs’, 0)) + ’ eggs.’ ‘I am bringing 0 eggs.’</p>
+<p>Because there is no ‘eggs’ key in the picnicItems dictionary, the default value 0 is returned by the get() method. Without using get(), the code would have caused an error message, such as in the following example:</p>
+<p>&gt;&gt;&gt; picnicItems = {‘apples’: 5, ‘cups’: 2} &gt;&gt;&gt; ‘I am bringing’ + str(picnicItems[‘eggs’]) + ’ eggs.’ Traceback (most recent call last): File “&lt;pyshell#34&gt;”, line 1, in &lt;module&gt; ‘I am bringing’ + str(picnicItems[‘eggs’]) + ’ eggs.’ KeyError: ‘eggs’</p>
+<p><strong>The setdefault() Method</strong></p>
+<p>You’ll often have to set a value in a dictionary for a certain key only if that key does not already have a value. The code looks something like this:</p>
+<p>spam = {‘name’: ‘Pooka’, ‘age’: 5} if ‘color’ not in spam: spam[‘color’] = ‘black’</p>
+<p>The setdefault() method offers a way to do this in one line of code. The first argument passed to the method is the key to check for, and the second argument is the value to set at that key if the key does not exist. If the key does exist, the setdefault() method returns the key’s value. Enter the following into the interactive shell:</p>
+<p>&gt;&gt;&gt; spam = {‘name’: ‘Pooka’, ‘age’: 5} &gt;&gt;&gt; spam.setdefault(‘color’, ‘black’) ‘black’ &gt;&gt;&gt; spam {‘color’: ‘black’, ‘age’: 5, ‘name’: ‘Pooka’} &gt;&gt;&gt; spam.setdefault(‘color’, ‘white’) ‘black’ &gt;&gt;&gt; spam {‘color’: ‘black’, ‘age’: 5, ‘name’: ‘Pooka’}</p>
+<p>The first time setdefault() is called, the dictionary in spam changes to {‘color’: ‘black’, ‘age’: 5, ‘name’: ‘Pooka’}. The method returns the value ‘black’ because this is now the value set for the key ‘color’. When spam.setdefault(‘color’, ‘white’) is called next, the value for that key is <em>not</em> changed to ‘white’, because spam already has a key named ‘color’.</p>
+<p>The setdefault() method is a nice shortcut to ensure that a key exists. Here is a short program that counts the number of occurrences of each letter in a string. Open the file editor window and enter the following code, saving it as <em>characterCount.py</em>:</p>
+<p>message = ‘It was a bright cold day in April, and the clocks were striking thirteen.’ count = {}</p>
+<p>for character in message: ➊ count.setdefault(character, 0) ➋ count[character] = count[character] + 1</p>
+<p>print(count)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/setdefault"><em>https://autbor.com/setdefault</em></a>. The program loops over each character in the message variable’s string, counting how often each character appears. The setdefault() method call ➊ ensures that the key is in the count dictionary (with a default value of 0) so the program doesn’t throw a KeyError error when count[character] = count[character] + 1 is executed ➋. When you run this program, the output will look like this:</p>
+<p>{’ ‘: 13,’,‘: 1,’.’: 1, ‘A’: 1, ‘I’: 1, ‘a’: 4, ‘c’: 3, ‘b’: 1, ‘e’: 5, ‘d’: 3, ‘g’: 2, ‘i’: 6, ‘h’: 3, ‘k’: 2, ‘l’: 3, ‘o’: 2, ‘n’: 4, ‘p’: 1, ‘s’: 3, ‘r’: 5, ‘t’: 6, ‘w’: 2, ‘y’: 1}</p>
+<p>From the output, you can see that the lowercase letter <em>c</em> appears 3 times, the space character appears 13 times, and the uppercase letter <em>A</em> appears 1 time. This program will work no matter what string is inside the message variable, even if the string is millions of characters long!</p>
+<h2 id="pretty-printing"><strong>Pretty Printing</strong> <a id="calibre_link-197"></a></h2>
+<p>If you import the pprint module into your programs, you’ll have access to the pprint() and pformat() functions that will “pretty print” a dictionary’s values. This is helpful when you want a cleaner display of the items in a dictionary than what print() provides. Modify the previous <em>characterCount.py</em> program and save it as <em>prettyCharacterCount.py</em>.</p>
+<p>import pprint message = ‘It was a bright cold day in April, and the clocks were striking thirteen.’ count = {}</p>
+<p>for character in message: count.setdefault(character, 0) count[character] = count[character] + 1</p>
+<p>pprint.pprint(count)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/pprint/"><em>https://autbor.com/pprint/</em></a>. This time, when the program is run, the output looks much cleaner, with the keys sorted.</p>
+<p>{’ ‘: 13,’,‘: 1,’.’: 1, ‘A’: 1, ‘I’: 1, –snip– ‘t’: 6, ‘w’: 2, ‘y’: 1}</p>
+<p>The pprint.pprint() function is especially helpful when the dictionary itself contains nested lists or dictionaries.</p>
+<p>If you want to obtain the prettified text as a string value instead of displaying it on the screen, call pprint.pformat() instead. These two lines are equivalent to each other:</p>
+<p>pprint.pprint(someDictionaryValue) print(pprint.pformat(someDictionaryValue))</p>
+<h2 id="using-data-structures-to-model-real-world-things"><strong>Using Data Structures to Model Real-World Things</strong> <a id="calibre_link-198"></a></h2>
+<p>Even before the internet, it was possible to play a game of chess with someone on the other side of the world. Each player would set up a chessboard at their home and then take turns mailing a postcard to each other describing each move. To do this, the players needed a way to unambiguously describe the state of the board and their moves.</p>
+<p>In <em>algebraic chess notation</em>, the spaces on the chessboard are identified by a number and letter coordinate, as in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1128">Figure 5-1</a>.<img src="https://automatetheboringstuff.com/2e/images/000006.jpg" alt="image" /></p>
+<p><em>Figure 5-1: The coordinates of a chessboard in algebraic chess notation</em></p>
+<p>The chess pieces are identified by letters: <em>K</em> for king, <em>Q</em> for queen, <em>R</em> for rook, <em>B</em> for bishop, and <em>N</em> for knight. Describing a move uses the letter of the piece and the coordinates of its destination. A pair of these moves describes what happens in a single turn (with white going first); for instance, the notation <em>2. Nf3 Nc6</em> indicates that white moved a knight to f3 and black moved a knight to c6 on the second turn of the game.</p>
+<p>There’s a bit more to algebraic notation than this, but the point is that you can unambiguously describe a game of chess without needing to be in front of a chessboard. Your opponent can even be on the other side of the world! In fact, you don’t even need a physical chess set if you have a good memory: you can just read the mailed chess moves and update boards you have in your imagination.</p>
+<p>Computers have good memories. A program on a modern computer can easily store billions of strings like ‘2. Nf3 Nc6’. This is how computers can play chess without having a physical chessboard. They model data to represent a chessboard, and you can write code to work with this model.</p>
+<p>This is where lists and dictionaries can come in. For example, the dictionary {‘1h’: ‘bking’, ‘6c’: ‘wqueen’, ‘2g’: ‘bbishop’, ‘5h’: ‘bqueen’, ‘3e’: ‘wking’} could represent the chess board in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1129">Figure 5-2</a>.<img src="https://automatetheboringstuff.com/2e/images/000101.jpg" alt="image" /></p>
+<p><em>Figure 5-2: A chess board modeled by the dictionary</em> ‘1h’: ‘bking’, ‘6c’: ‘wqueen’, ‘2g’: ‘bbishop’, ‘5h’: ‘bqueen’, ‘3e’: ‘wking’}</p>
+<p>But for another example, you’ll use a game that’s a little simpler than chess: tic-tac-toe.</p>
+<p><strong>A Tic-Tac-Toe Board</strong></p>
+<p>A tic-tac-toe board looks like a large hash symbol (#) with nine slots that can each contain an <em>X</em>, an <em>O</em>, or a blank. To represent the board with a dictionary, you can assign each slot a string-value key, as shown in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1130">Figure 5-3</a>.<img src="https://automatetheboringstuff.com/2e/images/000048.jpg" alt="image" /></p>
+<p><em>Figure 5-3: The slots of a tic-tac-toe board with their corresponding keys</em></p>
+<p>You can use string values to represent what’s in each slot on the board: ‘X’, ‘O’, or ’ ’ (a space). Thus, you’ll need to store nine strings. You can use a dictionary of values for this. The string value with the key ‘top-R’ can represent the top-right corner, the string value with the key ‘low-L’ can represent the bottom-left corner, the string value with the key ‘mid-M’ can represent the middle, and so on.</p>
+<p>This dictionary is a data structure that represents a tic-tac-toe board. Store this board-as-a-dictionary in a variable named theBoard. Open a new file editor window, and enter the following source code, saving it as <em>ticTacToe.py</em>:</p>
+<p>theBoard = {‘top-L’: ’ ‘, ’top-M’: ’ ‘, ’top-R’: ’ ‘, ’mid-L’: ’ ‘, ’mid-M’: ’ ‘, ’mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ’ ’}</p>
+<p>The data structure stored in the theBoard variable represents the tic-tac-toe board in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1131">Figure 5-4</a>.<img src="https://automatetheboringstuff.com/2e/images/000141.jpg" alt="image" /></p>
+<p><em>Figure 5-4: An empty tic-tac-toe board</em></p>
+<p>Since the value for every key in theBoard is a single-space string, this dictionary represents a completely clear board. If player X went first and chose the middle space, you could represent that board with this dictionary:</p>
+<p>theBoard = {‘top-L’: ’ ‘, ’top-M’: ’ ‘, ’top-R’: ’ ‘, ’mid-L’: ’ ‘, ’mid-M’: ‘X’, ‘mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ’ ’}</p>
+<p>The data structure in theBoard now represents the tic-tac-toe board in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1132">Figure 5-5</a>.<img src="https://automatetheboringstuff.com/2e/images/000084.jpg" alt="image" /></p>
+<p><em>Figure 5-5: The first move</em></p>
+<p>A board where player O has won by placing _O_s across the top might look like this:</p>
+<p>theBoard = {‘top-L’: ‘O’, ‘top-M’: ‘O’, ‘top-R’: ‘O’, ‘mid-L’: ‘X’, ‘mid-M’: ‘X’, ‘mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ‘X’}</p>
+<p>The data structure in theBoard now represents the tic-tac-toe board in <a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1133">Figure 5-6</a>.<img src="https://automatetheboringstuff.com/2e/images/000020.jpg" alt="image" /></p>
+<p><em>Figure 5-6: Player O wins.</em></p>
+<p>Of course, the player sees only what is printed to the screen, not the contents of variables. Let’s create a function to print the board dictionary onto the screen. Make the following addition to <em>ticTacToe.py</em> (new code is in bold):</p>
+<p>theBoard = {‘top-L’: ’ ‘, ’top-M’: ’ ‘, ’top-R’: ’ ‘, ’mid-L’: ’ ‘, ’mid-M’: ’ ‘, ’mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ’ ‘} def printBoard(board): print(board[’top-L’] + ‘|’ + board[‘top-M’] + ‘|’ + board[‘top-R’]) print(‘-+-+-’) print(board[‘mid-L’] + ‘|’ + board[‘mid-M’] + ‘|’ + board[‘mid-R’]) print(‘-+-+-’) print(board[‘low-L’] + ‘|’ + board[‘low-M’] + ‘|’ + board[‘low-R’]) printBoard(theBoard)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/tictactoe1/"><em>https://autbor.com/tictactoe1/</em></a>. When you run this program, printBoard() will print out a blank tic-tac-toe board.</p>
+<p>| | -+-+- | | -+-+- | |</p>
+<p>The printBoard() function can handle any tic-tac-toe data structure you pass it. Try changing the code to the following:</p>
+<p>theBoard = {‘top-L’: ‘O’, ‘top-M’: ‘O’, ‘top-R’: ‘O’, ‘mid-L’: ‘X’, ‘mid-M’: ‘X’, ‘mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ‘X’}</p>
+<p>def printBoard(board): print(board[‘top-L’] + ‘|’ + board[‘top-M’] + ‘|’ + board[‘top-R’]) print(‘-+-+-’) print(board[‘mid-L’] + ‘|’ + board[‘mid-M’] + ‘|’ + board[‘mid-R’]) print(‘-+-+-’) print(board[‘low-L’] + ‘|’ + board[‘low-M’] + ‘|’ + board[‘low-R’]) printBoard(theBoard)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/tictactoe2/"><em>https://autbor.com/tictactoe2/</em></a>. Now when you run this program, the new board will be printed to the screen.</p>
+<p>O|O|O -+-+- X|X| -+-+- | |X</p>
+<p>Because you created a data structure to represent a tic-tac-toe board and wrote code in printBoard() to interpret that data structure, you now have a program that “models” the tic-tac-toe board. You could have organized your data structure differently (for example, using keys like ‘TOP-LEFT’ instead of ‘top-L’), but as long as the code works with your data structures, you will have a correctly working program.</p>
+<p>For example, the printBoard() function expects the tic-tac-toe data structure to be a dictionary with keys for all nine slots. If the dictionary you passed was missing, say, the ‘mid-L’ key, your program would no longer work.</p>
+<p>O|O|O -+-+- Traceback (most recent call last): File “ticTacToe.py”, line 10, in &lt;module&gt; printBoard(theBoard) File “ticTacToe.py”, line 6, in printBoard print(board[‘mid-L’] + ‘|’ + board[‘mid-M’] + ‘|’ + board[‘mid-R’]) KeyError: ‘mid-L’</p>
+<p>Now let’s add code that allows the players to enter their moves. Modify the <em>ticTacToe.py</em> program to look like this:</p>
+<p>theBoard = {‘top-L’: ’ ‘, ’top-M’: ’ ‘, ’top-R’: ’ ‘, ’mid-L’: ’ ‘, ’mid-M’: ’ ‘, ’mid-R’: ’ ‘, ’low-L’: ’ ‘, ’low-M’: ’ ‘, ’low-R’: ’ ’}</p>
+<p>def printBoard(board): print(board[‘top-L’] + ‘|’ + board[‘top-M’] + ‘|’ + board[‘top-R’]) print(‘-+-+-’) print(board[‘mid-L’] + ‘|’ + board[‘mid-M’] + ‘|’ + board[‘mid-R’]) print(‘-+-+-’) print(board[‘low-L’] + ‘|’ + board[‘low-M’] + ‘|’ + board[‘low-R’]) turn = ‘X’ for i in range(9): ➊ printBoard(theBoard) print(‘Turn for’ + turn + ‘. Move on which space?’) ➋ move = input() ➌ theBoard[move] = turn ➍ if turn == ‘X’: turn = ‘O’ else: turn = ‘X’ printBoard(theBoard)</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/tictactoe3/"><em>https://autbor.com/tictactoe3/</em></a>. The new code prints out the board at the start of each new turn ➊, gets the active player’s move ➋, updates the game board accordingly ➌, and then swaps the active player ➍ before moving on to the next turn.</p>
+<p>When you run this program, it will look something like this:</p>
+<p>| | -+-+- | | -+-+- | | Turn for X. Move on which space? mid-M | | -+-+- |X| -+-+- | |</p>
+<p>–snip–</p>
+<p>O|O|X -+-+- X|X|O -+-+- O| |X Turn for X. Move on which space? low-M O|O|X -+-+- X|X|O -+-+- O|X|X</p>
+<p>This isn’t a complete tic-tac-toe game—for instance, it doesn’t ever check whether a player has won—but it’s enough to see how data structures can be used in programs.</p>
+<p><strong>NOTE</strong></p>
+<p><em>If you are curious, the source code for a complete tic-tac-toe program is described in the resources available from</em> <a href="https://nostarch.com/automatestuff2/">https://nostarch.com/automatestuff2/</a>.</p>
+<p><strong>Nested Dictionaries and Lists</strong></p>
+<p>Modeling a tic-tac-toe board was fairly simple: the board needed only a single dictionary value with nine key-value pairs. As you model more complicated things, you may find you need dictionaries and lists that contain other dictionaries and lists. Lists are useful to contain an ordered series of values, and dictionaries are useful for associating keys with values. For example, here’s a program that uses a dictionary that contains other dictionaries of what items guests are bringing to a picnic. The totalBrought() function can read this data structure and calculate the total number of an item being brought by all the guests.</p>
+<p>allGuests = {‘Alice’: {‘apples’: 5, ‘pretzels’: 12}, ‘Bob’: {‘ham sandwiches’: 3, ‘apples’: 2}, ‘Carol’: {‘cups’: 3, ‘apple pies’: 1}}</p>
+<p>def totalBrought(guests, item): numBrought = 0 ➊ for k, v in guests.items(): ➋ numBrought = numBrought + v.get(item, 0) return numBrought</p>
+<p>print(‘Number of things being brought:’) print(’ - Apples ’ + str(totalBrought(allGuests, ‘apples’))) print(’ - Cups ’ + str(totalBrought(allGuests, ‘cups’))) print(’ - Cakes ’ + str(totalBrought(allGuests, ‘cakes’))) print(’ - Ham Sandwiches ’ + str(totalBrought(allGuests, ‘ham sandwiches’))) print(’ - Apple Pies ’ + str(totalBrought(allGuests, ‘apple pies’)))</p>
+<p>You can view the execution of this program at <a href="https://autbor.com/guestpicnic/"><em>https://autbor.com/guestpicnic/</em></a>. Inside the totalBrought() function, the for loop iterates over the key-value pairs in guests ➊. Inside the loop, the string of the guest’s name is assigned to k, and the dictionary of picnic items they’re bringing is assigned to v. If the item parameter exists as a key in this dictionary, its value (the quantity) is added to numBrought ➋. If it does not exist as a key, the get() method returns 0 to be added to numBrought.</p>
+<p>The output of this program looks like this:</p>
+<p>Number of things being brought:</p>
+<ul>
+<li>Apples 7</li>
+<li>Cups 3</li>
+<li>Cakes 0</li>
+<li>Ham Sandwiches 3</li>
+<li>Apple Pies 1</li>
+</ul>
+<p>This may seem like such a simple thing to model that you wouldn’t need to bother with writing a program to do it. But realize that this same totalBrought() function could easily handle a dictionary that contains thousands of guests, each bringing <em>thousands</em> of different picnic items. Then having this information in a data structure along with the totalBrought() function would save you a lot of time!</p>
+<p>You can model things with data structures in whatever way you like, as long as the rest of the code in your program can work with the data model correctly. When you first begin programming, don’t worry so much about the “right” way to model data. As you gain more experience, you may come up with more efficient models, but the important thing is that the data model works for your program’s needs.</p>
+<h2 id="summary"><strong>Summary</strong> <a id="calibre_link-201"></a></h2>
+<p>You learned all about dictionaries in this chapter. Lists and dictionaries are values that can contain multiple values, including other lists and dictionaries. Dictionaries are useful because you can map one item (the key) to another (the value), as opposed to lists, which simply contain a series of values in order. Values inside a dictionary are accessed using square brackets just as with lists. Instead of an integer index, dictionaries can have keys of a variety of data types: integers, floats, strings, or tuples. By organizing a program’s values into data structures, you can create representations of real-world objects. You saw an example of this with a tic-tac-toe board.</p>
+<h2 id="practice-questions"><strong>Practice Questions</strong> <a id="calibre_link-202"></a></h2>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1134">1</a>. What does the code for an empty dictionary look like?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1135">2</a>. What does a dictionary value with a key ‘foo’ and a value 42 look like?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1136">3</a>. What is the main difference between a dictionary and a list?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1137">4</a>. What happens if you try to access spam[‘foo’] if spam is {‘bar’: 100}?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1138">5</a>. If a dictionary is stored in spam, what is the difference between the expressions ‘cat’ in spam and ‘cat’ in spam.keys()?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1139">6</a>. If a dictionary is stored in spam, what is the difference between the expressions ‘cat’ in spam and ‘cat’ in spam.values()?</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1140">7</a>. What is a shortcut for the following code?</p>
+<p>if ‘color’ not in spam: spam[‘color’] = ‘black’</p>
+<p><a href="https://automatetheboringstuff.com/2e/chapter5/#calibre_link-1141">8</a>. What module and function can be used to “pretty print” dictionary values?</p>
+<h2 id="practice-projects"><strong>Practice Projects</strong> <a id="calibre_link-203"></a></h2>
+<p>For practice, write programs to do the following tasks.</p>
+<p><strong>Chess Dictionary Validator</strong></p>
+<p>In this chapter, we used the dictionary value {‘1h’: ‘bking’, ‘6c’: ‘wqueen’, ‘2g’: ‘bbishop’, ‘5h’: ‘bqueen’, ‘3e’: ‘wking’} to represent a chess board. Write a function named isValidChessBoard() that takes a dictionary argument and returns True or False depending on if the board is valid.</p>
+<p>A valid board will have exactly one black king and exactly one white king. Each player can only have at most 16 pieces, at most 8 pawns, and all pieces must be on a valid space from ‘1a’ to ‘8h’; that is, a piece can’t be on space ‘9z’. The piece names begin with either a ‘w’ or ‘b’ to represent white or black, followed by ‘pawn’, ‘knight’, ‘bishop’, ‘rook’, ‘queen’, or ‘king’. This function should detect when a bug has resulted in an improper chess board.</p>
+<p><strong>Fantasy Game Inventory</strong></p>
+<p>You are creating a fantasy video game. The data structure to model the player’s inventory will be a dictionary where the keys are string values describing the item in the inventory and the value is an integer value detailing how many of that item the player has. For example, the dictionary value {‘rope’: 1, ‘torch’: 6, ‘gold coin’: 42, ‘dagger’: 1, ‘arrow’: 12} means the player has 1 rope, 6 torches, 42 gold coins, and so on.</p>
+<p>Write a function named displayInventory() that would take any possible “inventory” and display it like the following:</p>
+<p>Inventory: 12 arrow 42 gold coin 1 rope 6 torch 1 dagger Total number of items: 62</p>
+<p>Hint: You can use a for loop to loop through all the keys in a dictionary.</p>
+<p># inventory.py stuff = {‘rope’: 1, ‘torch’: 6, ‘gold coin’: 42, ‘dagger’: 1, ‘arrow’: 12}</p>
+<p>def displayInventory(inventory): print(“Inventory:”) item_total = 0 for k, v in inventory.items(): # FILL THIS PART IN print(“Total number of items:” + str(item_total))</p>
+<p>displayInventory(stuff)</p>
+<p><strong>List to Dictionary Function for Fantasy Game Inventory</strong></p>
+<p>Imagine that a vanquished dragon’s loot is represented as a list of strings like this:</p>
+<p>dragonLoot = [‘gold coin’, ‘dagger’, ‘gold coin’, ‘gold coin’, ‘ruby’]</p>
+<p>Write a function named addToInventory(inventory, addedItems), where the inventory parameter is a dictionary representing the player’s inventory (like in the previous project) and the addedItems parameter is a list like dragonLoot. The addToInventory() function should return a dictionary that represents the updated inventory. Note that the addedItems list can contain multiples of the same item. Your code could look something like this:</p>
+<p>def addToInventory(inventory, addedItems): # your code goes here</p>
+<p>inv = {‘gold coin’: 42, ‘rope’: 1} dragonLoot = [‘gold coin’, ‘dagger’, ‘gold coin’, ‘gold coin’, ‘ruby’] inv = addToInventory(inv, dragonLoot) displayInventory(inv)</p>
+<p>The previous program (with your displayInventory() function from the previous project) would output the following:</p>
+<p>Inventory: 45 gold coin 1 rope 1 ruby 1 dagger</p>
+<p>Total number of items: 48</p>
+</body>
+</html>

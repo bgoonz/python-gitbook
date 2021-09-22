@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>binary-search</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="binary-search">Binary Search</h1>
+<h4 id="in-a-nutshell-this-search-algorithm-takes-advantage-of-a-collection-of-elements-that-is-already-sorted-by-ignoring-half-of-the-elements-after-just-one-comparison.">In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.</h4>
+<ol type="1">
+<li><a href="#section"></a> <em><strong>Compare x with the middle element.</strong></em></li>
+<li><a href="#section"></a> <em><strong>If x matches with the middle element, we return the mid index.</strong></em></li>
+<li><a href="#section"></a> <em><strong>Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half.</strong></em></li>
+<li><a href="#section"></a> <em><strong>Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.</strong></em></li>
+</ol>
+<p>Pseudo Code Algorithm:</p>
+<p>{% hint style=“info” %} parameter list: a list of sorted value parameter target: the value to search for {% endhint %}</p>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>if the list has zero length, then return false {% endhint %}</p>
+</blockquote>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>determine the slice point: if the list has an even number of elements, the slice point is the number of elements divided by two if the list has an odd number of elements, the slice point is the number of elements minus one divided by two {% endhint %}</p>
+</blockquote>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>create an list of the elements from 0 to the slice point, not including the slice point, which is known as the “left half” create an list of the elements from the slice point to the end of the list which is known as the “right half” {% endhint %}</p>
+</blockquote>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>if the target is less than the value in the original array at the slice point, then return the binary search of the “left half” and the target {% endhint %}</p>
+</blockquote>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>if the target is greater than the value in the original array at the slice point, then return the binary search of the “right half” and the target {% endhint %}</p>
+</blockquote>
+<p>{% hint style=“info” %}</p>
+<blockquote>
+<p>if neither of those is true, return true {% endhint %}</p>
+</blockquote>
+<blockquote>
+
+</blockquote>
+<p><img src="https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif" /></p>
+<h3 id="section"></h3>
+<h2 id="recursive-binary-search">Recursive Binary Search</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Python 3 program for recursive binary search.</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co"># Modifications needed for the older Python 2 are found in comments.</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># Returns index of x in arr if present, else -1</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">def</span> binary_search(arr, low, high, x):</a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="co"># Check base case</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="cf">if</span> high <span class="op">&gt;=</span> low:</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10">        mid <span class="op">=</span> (high <span class="op">+</span> low) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">        <span class="co"># If element is present at the middle itself</span></a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="cf">if</span> arr[mid] <span class="op">==</span> x:</a>
+<a class="sourceLine" id="cb1-14" title="14">            <span class="cf">return</span> mid</a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16">        <span class="co"># If element is smaller than mid, then it can only</span></a>
+<a class="sourceLine" id="cb1-17" title="17">        <span class="co"># be present in left subarray</span></a>
+<a class="sourceLine" id="cb1-18" title="18">        <span class="cf">elif</span> arr[mid] <span class="op">&gt;</span> x:</a>
+<a class="sourceLine" id="cb1-19" title="19">            <span class="cf">return</span> binary_search(arr, low, mid <span class="op">-</span> <span class="dv">1</span>, x)</a>
+<a class="sourceLine" id="cb1-20" title="20"></a>
+<a class="sourceLine" id="cb1-21" title="21">        <span class="co"># Else the element can only be present in right subarray</span></a>
+<a class="sourceLine" id="cb1-22" title="22">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-23" title="23">            <span class="cf">return</span> binary_search(arr, mid <span class="op">+</span> <span class="dv">1</span>, high, x)</a>
+<a class="sourceLine" id="cb1-24" title="24"></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="co"># Element is not present in the array</span></a>
+<a class="sourceLine" id="cb1-27" title="27">        <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb1-28" title="28"></a>
+<a class="sourceLine" id="cb1-29" title="29"><span class="co"># Test array</span></a>
+<a class="sourceLine" id="cb1-30" title="30">arr <span class="op">=</span> [ <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">40</span> ]</a>
+<a class="sourceLine" id="cb1-31" title="31">x <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb1-32" title="32"></a>
+<a class="sourceLine" id="cb1-33" title="33"><span class="co"># Function call</span></a>
+<a class="sourceLine" id="cb1-34" title="34">result <span class="op">=</span> binary_search(arr, <span class="dv">0</span>, <span class="bu">len</span>(arr)<span class="op">-</span><span class="dv">1</span>, x)</a>
+<a class="sourceLine" id="cb1-35" title="35"></a>
+<a class="sourceLine" id="cb1-36" title="36"><span class="cf">if</span> result <span class="op">!=</span> <span class="dv">-1</span>:</a>
+<a class="sourceLine" id="cb1-37" title="37">    <span class="bu">print</span>(<span class="st">&quot;Element is present at index&quot;</span>, <span class="bu">str</span>(result))</a>
+<a class="sourceLine" id="cb1-38" title="38"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-39" title="39">    <span class="bu">print</span>(<span class="st">&quot;Element is not present in array&quot;</span>)</a></code></pre></div>
+<h3 id="itterative-binary-search">Itterative Binary Search:</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># Iterative Binary Search Function</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"># It returns index of x in given array arr if present,</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co"># else returns -1</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">def</span> binary_search(arr, x):</a>
+<a class="sourceLine" id="cb2-5" title="5">    low <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    high <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    mid <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="cf">while</span> low <span class="op">&lt;=</span> high:</a>
+<a class="sourceLine" id="cb2-10" title="10"></a>
+<a class="sourceLine" id="cb2-11" title="11">        mid <span class="op">=</span> (high <span class="op">+</span> low) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13">        <span class="co"># If x is greater, ignore left half</span></a>
+<a class="sourceLine" id="cb2-14" title="14">        <span class="cf">if</span> arr[mid] <span class="op">&lt;</span> x:</a>
+<a class="sourceLine" id="cb2-15" title="15">            low <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-16" title="16"></a>
+<a class="sourceLine" id="cb2-17" title="17">        <span class="co"># If x is smaller, ignore right half</span></a>
+<a class="sourceLine" id="cb2-18" title="18">        <span class="cf">elif</span> arr[mid] <span class="op">&gt;</span> x:</a>
+<a class="sourceLine" id="cb2-19" title="19">            high <span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-20" title="20"></a>
+<a class="sourceLine" id="cb2-21" title="21">        <span class="co"># means x is present at mid</span></a>
+<a class="sourceLine" id="cb2-22" title="22">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-23" title="23">            <span class="cf">return</span> mid</a>
+<a class="sourceLine" id="cb2-24" title="24"></a>
+<a class="sourceLine" id="cb2-25" title="25">    <span class="co"># If we reach here, then the element was not present</span></a>
+<a class="sourceLine" id="cb2-26" title="26">    <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb2-27" title="27"></a>
+<a class="sourceLine" id="cb2-28" title="28"></a>
+<a class="sourceLine" id="cb2-29" title="29"><span class="co"># Test array</span></a>
+<a class="sourceLine" id="cb2-30" title="30">arr <span class="op">=</span> [ <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">10</span>, <span class="dv">40</span> ]</a>
+<a class="sourceLine" id="cb2-31" title="31">x <span class="op">=</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb2-32" title="32"></a>
+<a class="sourceLine" id="cb2-33" title="33"><span class="co"># Function call</span></a>
+<a class="sourceLine" id="cb2-34" title="34">result <span class="op">=</span> binary_search(arr, x)</a>
+<a class="sourceLine" id="cb2-35" title="35"></a>
+<a class="sourceLine" id="cb2-36" title="36"><span class="cf">if</span> result <span class="op">!=</span> <span class="dv">-1</span>:</a>
+<a class="sourceLine" id="cb2-37" title="37">    <span class="bu">print</span>(<span class="st">&quot;Element is present at index&quot;</span>, <span class="bu">str</span>(result))</a>
+<a class="sourceLine" id="cb2-38" title="38"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb2-39" title="39">    <span class="bu">print</span>(<span class="st">&quot;Element is not present in array&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"></a>
+<a class="sourceLine" id="cb3-2" title="2"></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co"># Uses python3</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="im">import</span> random</a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="co">&quot;&quot;&quot;You&#39;re going to write a binary search function.</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co">You should use an iterative approach - meaning</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co">using loops.</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="co">Your function should take two inputs:</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="co">a Python list to search through, and the value</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="co">you&#39;re searching for.</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="co">Assume the list only has distinct elements,</span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co">meaning there are no repeated values, and</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="co">elements are in a strictly increasing order.</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="co">Return the index of value, or -1 if the value</span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="co">doesn&#39;t exist in the list.&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb3-16" title="16"></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="kw">def</span> binary_search(input_array, value):</a>
+<a class="sourceLine" id="cb3-18" title="18">    test_array <span class="op">=</span> input_array</a>
+<a class="sourceLine" id="cb3-19" title="19">    current_index <span class="op">=</span> <span class="bu">len</span>(input_array)<span class="op">//</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb3-20" title="20">    input_index <span class="op">=</span> current_index</a>
+<a class="sourceLine" id="cb3-21" title="21"></a>
+<a class="sourceLine" id="cb3-22" title="22">    found_value <span class="op">=</span> test_array[current_index]</a>
+<a class="sourceLine" id="cb3-23" title="23">    <span class="cf">while</span>(<span class="bu">len</span>(test_array)<span class="op">&gt;</span><span class="dv">1</span> <span class="kw">and</span> found_value<span class="op">!=</span>value):</a>
+<a class="sourceLine" id="cb3-24" title="24">        <span class="cf">if</span>(found_value<span class="op">&lt;</span>value):</a>
+<a class="sourceLine" id="cb3-25" title="25">            test_array <span class="op">=</span> test_array[current_index:]</a>
+<a class="sourceLine" id="cb3-26" title="26">            current_index <span class="op">=</span> <span class="bu">len</span>(test_array)<span class="op">//</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb3-27" title="27">            input_index <span class="op">+=</span> current_index</a>
+<a class="sourceLine" id="cb3-28" title="28">            found_value <span class="op">=</span> input_array[input_index]</a>
+<a class="sourceLine" id="cb3-29" title="29">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-30" title="30">            test_array <span class="op">=</span> test_array[<span class="dv">0</span>:current_index]</a>
+<a class="sourceLine" id="cb3-31" title="31">            current_index <span class="op">=</span> <span class="bu">len</span>(test_array)<span class="op">//</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb3-32" title="32">            <span class="co"># divmod needed to be used instead of round() since the behavior</span></a>
+<a class="sourceLine" id="cb3-33" title="33">            <span class="co"># for .5 changed from rounding up to rounding down in Python 3</span></a>
+<a class="sourceLine" id="cb3-34" title="34">            q, r <span class="op">=</span> <span class="bu">divmod</span>(<span class="bu">len</span>(test_array), <span class="fl">2.0</span>)</a>
+<a class="sourceLine" id="cb3-35" title="35">            input_index <span class="op">=</span> <span class="bu">int</span>(input_index <span class="op">-</span> q <span class="op">-</span> r)</a>
+<a class="sourceLine" id="cb3-36" title="36">            found_value <span class="op">=</span> input_array[input_index]</a>
+<a class="sourceLine" id="cb3-37" title="37">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-38" title="38">        <span class="cf">if</span>(found_value<span class="op">==</span>value):</a>
+<a class="sourceLine" id="cb3-39" title="39">            <span class="cf">return</span> input_index</a>
+<a class="sourceLine" id="cb3-40" title="40"></a>
+<a class="sourceLine" id="cb3-41" title="41">    <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb3-42" title="42"></a>
+<a class="sourceLine" id="cb3-43" title="43"><span class="kw">def</span> linear_search(a, x):</a>
+<a class="sourceLine" id="cb3-44" title="44">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(a)):</a>
+<a class="sourceLine" id="cb3-45" title="45">        <span class="cf">if</span> a[i] <span class="op">==</span> x:</a>
+<a class="sourceLine" id="cb3-46" title="46">            <span class="cf">return</span> i</a>
+<a class="sourceLine" id="cb3-47" title="47">    <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb3-48" title="48"></a>
+<a class="sourceLine" id="cb3-49" title="49"><span class="co"># compare naive algorithm linear search vs. binary search results</span></a>
+<a class="sourceLine" id="cb3-50" title="50"><span class="kw">def</span> stress_test(n, m):</a>
+<a class="sourceLine" id="cb3-51" title="51">    test_cond <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb3-52" title="52">    <span class="cf">while</span>(test_cond):</a>
+<a class="sourceLine" id="cb3-53" title="53">        a <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb3-54" title="54">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</a>
+<a class="sourceLine" id="cb3-55" title="55">            a.append(random.randint(<span class="dv">0</span>, <span class="dv">10</span><span class="op">**</span><span class="dv">9</span>))</a>
+<a class="sourceLine" id="cb3-56" title="56">        a.sort()</a>
+<a class="sourceLine" id="cb3-57" title="57">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(m):</a>
+<a class="sourceLine" id="cb3-58" title="58">            b <span class="op">=</span> random.randint(<span class="dv">0</span>, n<span class="dv">-1</span>)</a>
+<a class="sourceLine" id="cb3-59" title="59">            <span class="bu">print</span>([linear_search(a, a[b]), binary_search(a, a[b])])</a>
+<a class="sourceLine" id="cb3-60" title="60">            <span class="co"># stops if the searches do not give identical answers</span></a>
+<a class="sourceLine" id="cb3-61" title="61">            <span class="cf">if</span>(linear_search(a, a[b]) <span class="op">!=</span> binary_search(a, a[b])):</a>
+<a class="sourceLine" id="cb3-62" title="62">                test_cond <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb3-63" title="63">                <span class="bu">print</span>(<span class="st">&#39;broke here!&#39;</span>)</a>
+<a class="sourceLine" id="cb3-64" title="64">                <span class="cf">break</span></a>
+<a class="sourceLine" id="cb3-65" title="65"></a>
+<a class="sourceLine" id="cb3-66" title="66"></a>
+<a class="sourceLine" id="cb3-67" title="67"></a>
+<a class="sourceLine" id="cb3-68" title="68">stress_test(<span class="dv">100</span>, <span class="dv">100000</span>)</a>
+<a class="sourceLine" id="cb3-69" title="69"></a>
+<a class="sourceLine" id="cb3-70" title="70"></a>
+<a class="sourceLine" id="cb3-71" title="71"></a>
+<a class="sourceLine" id="cb3-72" title="72"><span class="co">#test_list = [1,3,9,11,15,19,29, 35, 36, 37]</span></a>
+<a class="sourceLine" id="cb3-73" title="73"><span class="co">#test_val1 = 25</span></a>
+<a class="sourceLine" id="cb3-74" title="74"><span class="co">#test_val2 = 15</span></a>
+<a class="sourceLine" id="cb3-75" title="75"><span class="co">#print(binary_search(test_list, test_val1))</span></a>
+<a class="sourceLine" id="cb3-76" title="76"><span class="co">#print(binary_search(test_list, test_val2))</span></a>
+<a class="sourceLine" id="cb3-77" title="77"><span class="co">#print(binary_search(test_list, 11))</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># given array a and need to find value x</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"># left and right correspond to initial indices of array a bounding the search</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"># segment of array a above and below, respectively</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="kw">def</span> binary_search_recursive(a, x, left<span class="op">=</span><span class="dv">0</span>, right<span class="op">=</span>(<span class="bu">len</span>(a)<span class="op">-</span><span class="dv">1</span>)):</a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co">&quot;&quot;&quot;Recursive Binary Search algorithm implemented using list indexing&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    index <span class="op">=</span> (left<span class="op">+</span>right)<span class="op">//</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="cf">if</span> a[index]<span class="op">==</span>x:</a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="cf">return</span> index</a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="cf">elif</span> x<span class="op">&gt;</span>(a[right]) <span class="kw">or</span> x<span class="op">&lt;</span>a[left]: <span class="co"># first case where x is not in the list!</span></a>
+<a class="sourceLine" id="cb4-10" title="10">        <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="cf">elif</span> left<span class="op">==</span>right: <span class="co"># case where search is complete and no value x not found</span></a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="cf">elif</span> left<span class="op">==</span>right<span class="dv">-1</span>: <span class="co"># case where there are only two numbers left, check both!</span></a>
+<a class="sourceLine" id="cb4-14" title="14">        left <span class="op">=</span> right</a>
+<a class="sourceLine" id="cb4-15" title="15">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a>
+<a class="sourceLine" id="cb4-16" title="16">    <span class="cf">elif</span> a[index]<span class="op">&lt;</span>x:</a>
+<a class="sourceLine" id="cb4-17" title="17">        left <span class="op">=</span> index</a>
+<a class="sourceLine" id="cb4-18" title="18">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a>
+<a class="sourceLine" id="cb4-19" title="19">    <span class="cf">elif</span> a[index]<span class="op">&gt;</span>x:</a>
+<a class="sourceLine" id="cb4-20" title="20">        right <span class="op">=</span> index</a>
+<a class="sourceLine" id="cb4-21" title="21">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a></code></pre></div>
+<h3 id="binary-search-recursive">Binary Search Recursive:</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> binarySearch(arr, searchValue):</a>
+<a class="sourceLine" id="cb5-2" title="2">    low <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    high <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="cf">while</span> low <span class="op">&lt;=</span> high:</a>
+<a class="sourceLine" id="cb5-5" title="5">        mid <span class="op">=</span> (low <span class="op">+</span> high) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb5-6" title="6">        <span class="cf">if</span> arr[mid] <span class="op">&lt;</span> searchValue:</a>
+<a class="sourceLine" id="cb5-7" title="7">            low <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-8" title="8">        <span class="cf">elif</span> arr[mid] <span class="op">&gt;</span> searchValue:</a>
+<a class="sourceLine" id="cb5-9" title="9">            high <span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-10" title="10">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-11" title="11">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb5-12" title="12"></a>
+<a class="sourceLine" id="cb5-13" title="13">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb5-14" title="14"></a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="kw">def</span> binarySearchRec(arr, search_value):</a>
+<a class="sourceLine" id="cb5-17" title="17">    <span class="cf">if</span> <span class="bu">len</span>(arr) <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb5-18" title="18">        <span class="cf">return</span> <span class="va">False</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="co">Given an array where elements are sorted in ascending order,</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="co">convert it to a height balanced BST.</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"></a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="kw">class</span> TreeNode(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb6-9" title="9">        <span class="va">self</span>.val <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb6-11" title="11">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13"></a>
+<a class="sourceLine" id="cb6-14" title="14"><span class="kw">def</span> array_to_bst(nums):</a>
+<a class="sourceLine" id="cb6-15" title="15">    <span class="cf">if</span> <span class="kw">not</span> nums:</a>
+<a class="sourceLine" id="cb6-16" title="16">        <span class="cf">return</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb6-17" title="17">    mid <span class="op">=</span> <span class="bu">len</span>(nums) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb6-18" title="18">    node <span class="op">=</span> TreeNode(nums[mid])</a>
+<a class="sourceLine" id="cb6-19" title="19">    node.left <span class="op">=</span> array_to_bst(nums[:mid])</a>
+<a class="sourceLine" id="cb6-20" title="20">    node.right <span class="op">=</span> array_to_bst(nums[mid <span class="op">+</span> <span class="dv">1</span> :])</a>
+<a class="sourceLine" id="cb6-21" title="21">    <span class="cf">return</span> node</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="co">Implement Binary Search Tree. It has method:</span></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="co">    1. Insert</span></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="co">    2. Search</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="co">    3. Size</span></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="co">    4. Traversal (Preorder, Inorder, Postorder)</span></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-8" title="8"></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="im">import</span> unittest</a>
+<a class="sourceLine" id="cb7-10" title="10"></a>
+<a class="sourceLine" id="cb7-11" title="11"></a>
+<a class="sourceLine" id="cb7-12" title="12"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb7-14" title="14">        <span class="va">self</span>.data <span class="op">=</span> data</a>
+<a class="sourceLine" id="cb7-15" title="15">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-16" title="16">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-17" title="17"></a>
+<a class="sourceLine" id="cb7-18" title="18"></a>
+<a class="sourceLine" id="cb7-19" title="19"><span class="kw">class</span> BST(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb7-20" title="20">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-21" title="21">        <span class="va">self</span>.root <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb7-22" title="22"></a>
+<a class="sourceLine" id="cb7-23" title="23">    <span class="kw">def</span> get_root(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-24" title="24">        <span class="cf">return</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb7-25" title="25"></a>
+<a class="sourceLine" id="cb7-26" title="26">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-27" title="27"><span class="co">        Get the number of elements</span></a>
+<a class="sourceLine" id="cb7-28" title="28"><span class="co">        Using recursion. Complexity O(logN)</span></a>
+<a class="sourceLine" id="cb7-29" title="29"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-30" title="30"></a>
+<a class="sourceLine" id="cb7-31" title="31">    <span class="kw">def</span> size(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-32" title="32">        <span class="cf">return</span> <span class="va">self</span>.recur_size(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb7-33" title="33"></a>
+<a class="sourceLine" id="cb7-34" title="34">    <span class="kw">def</span> recur_size(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb7-35" title="35">        <span class="cf">if</span> root <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-36" title="36">            <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-37" title="37">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-38" title="38">            <span class="cf">return</span> <span class="dv">1</span> <span class="op">+</span> <span class="va">self</span>.recur_size(root.left) <span class="op">+</span> <span class="va">self</span>.recur_size(root.right)</a>
+<a class="sourceLine" id="cb7-39" title="39"></a>
+<a class="sourceLine" id="cb7-40" title="40">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-41" title="41"><span class="co">        Search data in bst</span></a>
+<a class="sourceLine" id="cb7-42" title="42"><span class="co">        Using recursion. Complexity O(logN)</span></a>
+<a class="sourceLine" id="cb7-43" title="43"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-44" title="44"></a>
+<a class="sourceLine" id="cb7-45" title="45">    <span class="kw">def</span> search(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb7-46" title="46">        <span class="cf">return</span> <span class="va">self</span>.recur_search(<span class="va">self</span>.root, data)</a>
+<a class="sourceLine" id="cb7-47" title="47"></a>
+<a class="sourceLine" id="cb7-48" title="48">    <span class="kw">def</span> recur_search(<span class="va">self</span>, root, data):</a>
+<a class="sourceLine" id="cb7-49" title="49">        <span class="cf">if</span> root <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb7-50" title="50">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb7-51" title="51">        <span class="cf">if</span> root.data <span class="op">==</span> data:</a>
+<a class="sourceLine" id="cb7-52" title="52">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb7-53" title="53">        <span class="cf">elif</span> data <span class="op">&gt;</span> root.data:  <span class="co"># Go to right root</span></a>
+<a class="sourceLine" id="cb7-54" title="54">            <span class="cf">return</span> <span class="va">self</span>.recur_search(root.right, data)</a>
+<a class="sourceLine" id="cb7-55" title="55">        <span class="cf">else</span>:  <span class="co"># Go to left root</span></a>
+<a class="sourceLine" id="cb7-56" title="56">            <span class="cf">return</span> <span class="va">self</span>.recur_search(root.left, data)</a>
+<a class="sourceLine" id="cb7-57" title="57"></a>
+<a class="sourceLine" id="cb7-58" title="58">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-59" title="59"><span class="co">        Insert data in bst</span></a>
+<a class="sourceLine" id="cb7-60" title="60"><span class="co">        Using recursion. Complexity O(logN)</span></a>
+<a class="sourceLine" id="cb7-61" title="61"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-62" title="62"></a>
+<a class="sourceLine" id="cb7-63" title="63">    <span class="kw">def</span> insert(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb7-64" title="64">        <span class="cf">if</span> <span class="va">self</span>.root:</a>
+<a class="sourceLine" id="cb7-65" title="65">            <span class="cf">return</span> <span class="va">self</span>.recur_insert(<span class="va">self</span>.root, data)</a>
+<a class="sourceLine" id="cb7-66" title="66">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-67" title="67">            <span class="va">self</span>.root <span class="op">=</span> Node(data)</a>
+<a class="sourceLine" id="cb7-68" title="68">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb7-69" title="69"></a>
+<a class="sourceLine" id="cb7-70" title="70">    <span class="kw">def</span> recur_insert(<span class="va">self</span>, root, data):</a>
+<a class="sourceLine" id="cb7-71" title="71">        <span class="cf">if</span> root.data <span class="op">==</span> data:  <span class="co"># The data is already there</span></a>
+<a class="sourceLine" id="cb7-72" title="72">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb7-73" title="73">        <span class="cf">elif</span> data <span class="op">&lt;</span> root.data:  <span class="co"># Go to left root</span></a>
+<a class="sourceLine" id="cb7-74" title="74">            <span class="cf">if</span> root.left:  <span class="co"># If left root is a node</span></a>
+<a class="sourceLine" id="cb7-75" title="75">                <span class="cf">return</span> <span class="va">self</span>.recur_insert(root.left, data)</a>
+<a class="sourceLine" id="cb7-76" title="76">            <span class="cf">else</span>:  <span class="co"># left root is a None</span></a>
+<a class="sourceLine" id="cb7-77" title="77">                root.left <span class="op">=</span> Node(data)</a>
+<a class="sourceLine" id="cb7-78" title="78">                <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb7-79" title="79">        <span class="cf">else</span>:  <span class="co"># Go to right root</span></a>
+<a class="sourceLine" id="cb7-80" title="80">            <span class="cf">if</span> root.right:  <span class="co"># If right root is a node</span></a>
+<a class="sourceLine" id="cb7-81" title="81">                <span class="cf">return</span> <span class="va">self</span>.recur_insert(root.right, data)</a>
+<a class="sourceLine" id="cb7-82" title="82">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb7-83" title="83">                root.right <span class="op">=</span> Node(data)</a>
+<a class="sourceLine" id="cb7-84" title="84">                <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb7-85" title="85"></a>
+<a class="sourceLine" id="cb7-86" title="86">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-87" title="87"><span class="co">        Preorder, Postorder, Inorder traversal bst</span></a>
+<a class="sourceLine" id="cb7-88" title="88"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-89" title="89"></a>
+<a class="sourceLine" id="cb7-90" title="90">    <span class="kw">def</span> preorder(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb7-91" title="91">        <span class="cf">if</span> root:</a>
+<a class="sourceLine" id="cb7-92" title="92">            <span class="bu">print</span>(<span class="bu">str</span>(root.data), end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb7-93" title="93">            <span class="va">self</span>.preorder(root.left)</a>
+<a class="sourceLine" id="cb7-94" title="94">            <span class="va">self</span>.preorder(root.right)</a>
+<a class="sourceLine" id="cb7-95" title="95"></a>
+<a class="sourceLine" id="cb7-96" title="96">    <span class="kw">def</span> inorder(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb7-97" title="97">        <span class="cf">if</span> root:</a>
+<a class="sourceLine" id="cb7-98" title="98">            <span class="va">self</span>.inorder(root.left)</a>
+<a class="sourceLine" id="cb7-99" title="99">            <span class="bu">print</span>(<span class="bu">str</span>(root.data), end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb7-100" title="100">            <span class="va">self</span>.inorder(root.right)</a>
+<a class="sourceLine" id="cb7-101" title="101"></a>
+<a class="sourceLine" id="cb7-102" title="102">    <span class="kw">def</span> postorder(<span class="va">self</span>, root):</a>
+<a class="sourceLine" id="cb7-103" title="103">        <span class="cf">if</span> root:</a>
+<a class="sourceLine" id="cb7-104" title="104">            <span class="va">self</span>.postorder(root.left)</a>
+<a class="sourceLine" id="cb7-105" title="105">            <span class="va">self</span>.postorder(root.right)</a>
+<a class="sourceLine" id="cb7-106" title="106">            <span class="bu">print</span>(<span class="bu">str</span>(root.data), end<span class="op">=</span><span class="st">&quot; &quot;</span>)</a>
+<a class="sourceLine" id="cb7-107" title="107"></a>
+<a class="sourceLine" id="cb7-108" title="108"></a>
+<a class="sourceLine" id="cb7-109" title="109"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-110" title="110"><span class="co">    The tree is created for testing:</span></a>
+<a class="sourceLine" id="cb7-111" title="111"></a>
+<a class="sourceLine" id="cb7-112" title="112"><span class="co">                    10</span></a>
+<a class="sourceLine" id="cb7-113" title="113"><span class="co">                 /      \</span></a>
+<a class="sourceLine" id="cb7-114" title="114"><span class="co">               6         15</span></a>
+<a class="sourceLine" id="cb7-115" title="115"><span class="co">              / \       /   \</span></a>
+<a class="sourceLine" id="cb7-116" title="116"><span class="co">            4     9   12      24</span></a>
+<a class="sourceLine" id="cb7-117" title="117"><span class="co">                 /          /    \</span></a>
+<a class="sourceLine" id="cb7-118" title="118"><span class="co">                7         20      30</span></a>
+<a class="sourceLine" id="cb7-119" title="119"><span class="co">                         /</span></a>
+<a class="sourceLine" id="cb7-120" title="120"><span class="co">                       18</span></a>
+<a class="sourceLine" id="cb7-121" title="121"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-122" title="122"></a>
+<a class="sourceLine" id="cb7-123" title="123"></a>
+<a class="sourceLine" id="cb7-124" title="124"><span class="kw">class</span> TestSuite(unittest.TestCase):</a>
+<a class="sourceLine" id="cb7-125" title="125">    <span class="kw">def</span> setUp(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-126" title="126">        <span class="va">self</span>.tree <span class="op">=</span> BST()</a>
+<a class="sourceLine" id="cb7-127" title="127">        <span class="va">self</span>.tree.insert(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb7-128" title="128">        <span class="va">self</span>.tree.insert(<span class="dv">15</span>)</a>
+<a class="sourceLine" id="cb7-129" title="129">        <span class="va">self</span>.tree.insert(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb7-130" title="130">        <span class="va">self</span>.tree.insert(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb7-131" title="131">        <span class="va">self</span>.tree.insert(<span class="dv">9</span>)</a>
+<a class="sourceLine" id="cb7-132" title="132">        <span class="va">self</span>.tree.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb7-133" title="133">        <span class="va">self</span>.tree.insert(<span class="dv">24</span>)</a>
+<a class="sourceLine" id="cb7-134" title="134">        <span class="va">self</span>.tree.insert(<span class="dv">7</span>)</a>
+<a class="sourceLine" id="cb7-135" title="135">        <span class="va">self</span>.tree.insert(<span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb7-136" title="136">        <span class="va">self</span>.tree.insert(<span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb7-137" title="137">        <span class="va">self</span>.tree.insert(<span class="dv">18</span>)</a>
+<a class="sourceLine" id="cb7-138" title="138"></a>
+<a class="sourceLine" id="cb7-139" title="139">    <span class="kw">def</span> test_search(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-140" title="140">        <span class="va">self</span>.assertTrue(<span class="va">self</span>.tree.search(<span class="dv">24</span>))</a>
+<a class="sourceLine" id="cb7-141" title="141">        <span class="va">self</span>.assertFalse(<span class="va">self</span>.tree.search(<span class="dv">50</span>))</a>
+<a class="sourceLine" id="cb7-142" title="142"></a>
+<a class="sourceLine" id="cb7-143" title="143">    <span class="kw">def</span> test_size(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-144" title="144">        <span class="va">self</span>.assertEqual(<span class="dv">11</span>, <span class="va">self</span>.tree.size())</a>
+<a class="sourceLine" id="cb7-145" title="145"></a>
+<a class="sourceLine" id="cb7-146" title="146"></a>
+<a class="sourceLine" id="cb7-147" title="147"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</a>
+<a class="sourceLine" id="cb7-148" title="148">    unittest.main()</a></code></pre></div>
+<h2 id="delete-node">Delete Node</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="co">Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</span></a>
+<a class="sourceLine" id="cb8-3" title="3"></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co">Basically, the deletion can be divided into two stages:</span></a>
+<a class="sourceLine" id="cb8-5" title="5"></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="co">Search for a node to remove.</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="co">If the node is found, delete the node.</span></a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="co">Note: Time complexity should be O(height of tree).</span></a>
+<a class="sourceLine" id="cb8-9" title="9"></a>
+<a class="sourceLine" id="cb8-10" title="10"><span class="co">Example:</span></a>
+<a class="sourceLine" id="cb8-11" title="11"></a>
+<a class="sourceLine" id="cb8-12" title="12"><span class="co">root = [5,3,6,2,4,null,7]</span></a>
+<a class="sourceLine" id="cb8-13" title="13"><span class="co">key = 3</span></a>
+<a class="sourceLine" id="cb8-14" title="14"></a>
+<a class="sourceLine" id="cb8-15" title="15"><span class="co">    5</span></a>
+<a class="sourceLine" id="cb8-16" title="16"><span class="co">   / \</span></a>
+<a class="sourceLine" id="cb8-17" title="17"><span class="co">  3   6</span></a>
+<a class="sourceLine" id="cb8-18" title="18"><span class="co"> / \   \</span></a>
+<a class="sourceLine" id="cb8-19" title="19"><span class="co">2   4   7</span></a>
+<a class="sourceLine" id="cb8-20" title="20"></a>
+<a class="sourceLine" id="cb8-21" title="21"><span class="co">Given key to delete is 3. So we find the node with value 3 and delete it.</span></a>
+<a class="sourceLine" id="cb8-22" title="22"></a>
+<a class="sourceLine" id="cb8-23" title="23"><span class="co">One valid answer is [5,4,6,2,null,null,7], shown in the following BST.</span></a>
+<a class="sourceLine" id="cb8-24" title="24"></a>
+<a class="sourceLine" id="cb8-25" title="25"><span class="co">    5</span></a>
+<a class="sourceLine" id="cb8-26" title="26"><span class="co">   / \</span></a>
+<a class="sourceLine" id="cb8-27" title="27"><span class="co">  4   6</span></a>
+<a class="sourceLine" id="cb8-28" title="28"><span class="co"> /     \</span></a>
+<a class="sourceLine" id="cb8-29" title="29"><span class="co">2       7</span></a>
+<a class="sourceLine" id="cb8-30" title="30"></a>
+<a class="sourceLine" id="cb8-31" title="31"><span class="co">Another valid answer is [5,2,6,null,4,null,7].</span></a>
+<a class="sourceLine" id="cb8-32" title="32"></a>
+<a class="sourceLine" id="cb8-33" title="33"><span class="co">    5</span></a>
+<a class="sourceLine" id="cb8-34" title="34"><span class="co">   / \</span></a>
+<a class="sourceLine" id="cb8-35" title="35"><span class="co">  2   6</span></a>
+<a class="sourceLine" id="cb8-36" title="36"><span class="co">   \   \</span></a>
+<a class="sourceLine" id="cb8-37" title="37"><span class="co">    4   7</span></a>
+<a class="sourceLine" id="cb8-38" title="38"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb8-39" title="39"></a>
+<a class="sourceLine" id="cb8-40" title="40"></a>
+<a class="sourceLine" id="cb8-41" title="41"><span class="kw">class</span> Solution(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb8-42" title="42">    <span class="kw">def</span> delete_node(<span class="va">self</span>, root, key):</a>
+<a class="sourceLine" id="cb8-43" title="43">        <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb8-44" title="44"><span class="co">        :type root: TreeNode</span></a>
+<a class="sourceLine" id="cb8-45" title="45"><span class="co">        :type key: int</span></a>
+<a class="sourceLine" id="cb8-46" title="46"><span class="co">        :rtype: TreeNode</span></a>
+<a class="sourceLine" id="cb8-47" title="47"><span class="co">        &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb8-48" title="48">        <span class="cf">if</span> <span class="kw">not</span> root:</a>
+<a class="sourceLine" id="cb8-49" title="49">            <span class="cf">return</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb8-50" title="50"></a>
+<a class="sourceLine" id="cb8-51" title="51">        <span class="cf">if</span> root.val <span class="op">==</span> key:</a>
+<a class="sourceLine" id="cb8-52" title="52">            <span class="cf">if</span> root.left:</a>
+<a class="sourceLine" id="cb8-53" title="53">                <span class="co"># Find the right most leaf of the left sub-tree</span></a>
+<a class="sourceLine" id="cb8-54" title="54">                left_right_most <span class="op">=</span> root.left</a>
+<a class="sourceLine" id="cb8-55" title="55">                <span class="cf">while</span> left_right_most.right:</a>
+<a class="sourceLine" id="cb8-56" title="56">                    left_right_most <span class="op">=</span> left_right_most.right</a>
+<a class="sourceLine" id="cb8-57" title="57">                <span class="co"># Attach right child to the right of that leaf</span></a>
+<a class="sourceLine" id="cb8-58" title="58">                left_right_most.right <span class="op">=</span> root.right</a>
+<a class="sourceLine" id="cb8-59" title="59">                <span class="co"># Return left child instead of root, a.k.a delete root</span></a>
+<a class="sourceLine" id="cb8-60" title="60">                <span class="cf">return</span> root.left</a>
+<a class="sourceLine" id="cb8-61" title="61">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb8-62" title="62">                <span class="cf">return</span> root.right</a>
+<a class="sourceLine" id="cb8-63" title="63">        <span class="co"># If left or right child got deleted, the returned root is the child of the deleted node.</span></a>
+<a class="sourceLine" id="cb8-64" title="64">        <span class="cf">elif</span> root.val <span class="op">&gt;</span> key:</a>
+<a class="sourceLine" id="cb8-65" title="65">            root.left <span class="op">=</span> <span class="va">self</span>.deleteNode(root.left, key)</a>
+<a class="sourceLine" id="cb8-66" title="66">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb8-67" title="67">            root.right <span class="op">=</span> <span class="va">self</span>.deleteNode(root.right, key)</a>
+<a class="sourceLine" id="cb8-68" title="68">        <span class="cf">return</span> root</a></code></pre></div>
+<h2 id="another">Another:</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> binary_search(arr, x):</a>
+<a class="sourceLine" id="cb9-2" title="2">    start<span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-3" title="3">    end <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb9-4" title="4">    mid <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="cf">while</span> start<span class="op">&lt;=</span> end:</a>
+<a class="sourceLine" id="cb9-6" title="6">        mid <span class="op">=</span> (start<span class="op">+</span> end) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb9-7" title="7">        <span class="co"># If x is greater, search in right array</span></a>
+<a class="sourceLine" id="cb9-8" title="8">        <span class="cf">if</span> arr[mid] <span class="op">&lt;</span> x:</a>
+<a class="sourceLine" id="cb9-9" title="9">            start <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb9-10" title="10"></a>
+<a class="sourceLine" id="cb9-11" title="11">        <span class="co"># If x is smaller, search in left array</span></a>
+<a class="sourceLine" id="cb9-12" title="12">        <span class="cf">elif</span> arr[mid] <span class="op">&gt;</span> x:</a>
+<a class="sourceLine" id="cb9-13" title="13">            end<span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb9-14" title="14">        <span class="co"># if x is present at mid</span></a>
+<a class="sourceLine" id="cb9-15" title="15">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb9-16" title="16">            <span class="cf">return</span> mid</a>
+<a class="sourceLine" id="cb9-17" title="17"></a>
+<a class="sourceLine" id="cb9-18" title="18"></a>
+<a class="sourceLine" id="cb9-19" title="19">    <span class="co"># when we reach at the end of array, then the element was not present</span></a>
+<a class="sourceLine" id="cb9-20" title="20">    <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb9-21" title="21"></a>
+<a class="sourceLine" id="cb9-22" title="22"></a>
+<a class="sourceLine" id="cb9-23" title="23">arr <span class="op">=</span> [ ]</a>
+<a class="sourceLine" id="cb9-24" title="24">n<span class="op">=</span><span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter size of array : &quot;</span>))</a>
+<a class="sourceLine" id="cb9-25" title="25"><span class="bu">print</span>(<span class="st">&quot;Enter array  elements : &quot;</span>)</a>
+<a class="sourceLine" id="cb9-26" title="26"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</a>
+<a class="sourceLine" id="cb9-27" title="27">    e<span class="op">=</span><span class="bu">int</span>(<span class="bu">input</span>())</a>
+<a class="sourceLine" id="cb9-28" title="28">    arr.append(e)</a>
+<a class="sourceLine" id="cb9-29" title="29">x <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">&quot;Enter element to search &quot;</span>))</a>
+<a class="sourceLine" id="cb9-30" title="30">ans <span class="op">=</span> binary_search(arr, x)</a>
+<a class="sourceLine" id="cb9-31" title="31"><span class="cf">if</span>(ans<span class="op">==-</span><span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb9-32" title="32">    <span class="bu">print</span>(<span class="st">&quot;Element not found&quot;</span>)</a>
+<a class="sourceLine" id="cb9-33" title="33"><span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb9-34" title="34">    <span class="bu">print</span>(<span class="st">&quot;Element found at &quot;</span>,ans)</a></code></pre></div>
+<p>{% page-ref page=“array/” %}</p>
+<p>{% page-ref page=“binary-search-tree/” %}</p>
+<p>{% page-ref page=“untitled-4/” %}</p>
+<p>{% page-ref page=“array/extra-array.md” %}</p>
+<p>{% page-ref page=“stack/” %}</p>
+<p>{% page-ref page=“binary-tree/” %}</p>
+<p>{% page-ref page=“untitled-6/” %}</p>
+<p>{% page-ref page=“untitled-5/” %}</p>
+<p>{% page-ref page=“untitled-2/” %}</p>
+<p>{% page-ref page=“untitled-3/” %}</p>
+<p>{% page-ref page=“queue/queue-sandbox.md” %}</p>
+<p>{% page-ref page=“untitled-5/” %}</p>
+<p>{% page-ref page=“untitled-4/double-linked-list.md” %}</p>
+<p>{% page-ref page=“untitled-1/” %}</p>
+<p>{% page-ref page=“untitled/” %}</p>
+<p>{% page-ref page=“heap/” %}</p>
+</body>
+</html>

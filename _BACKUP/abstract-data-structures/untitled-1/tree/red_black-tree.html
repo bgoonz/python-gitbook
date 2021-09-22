@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>red_black-tree</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="red_black-tree">Red_Black Tree</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># Faster insertion and deletion than AVL, slower search</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">class</span> Color:</a>
+<a class="sourceLine" id="cb1-3" title="3">    RED <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    BLACK <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, data, parent<span class="op">=</span><span class="va">None</span>, color<span class="op">=</span>Color.RED):</a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="va">self</span>.data <span class="op">=</span> data</a>
+<a class="sourceLine" id="cb1-11" title="11">        <span class="va">self</span>.color <span class="op">=</span> color</a>
+<a class="sourceLine" id="cb1-12" title="12">        <span class="va">self</span>.parent <span class="op">=</span> parent</a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-14" title="14">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="kw">class</span> RedBlackTree:</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-20" title="20">        <span class="va">self</span>.root <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="kw">def</span> insert(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb1-23" title="23">        <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.root:</a>
+<a class="sourceLine" id="cb1-24" title="24">            <span class="va">self</span>.root <span class="op">=</span> Node(data)</a>
+<a class="sourceLine" id="cb1-25" title="25">            <span class="va">self</span>.violate(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-27" title="27">            <span class="va">self</span>.insert_node(data, <span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb1-28" title="28"></a>
+<a class="sourceLine" id="cb1-29" title="29">    <span class="kw">def</span> insert_node(<span class="va">self</span>, data, node):</a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31">        <span class="cf">if</span> data <span class="op">&lt;</span> node.data:</a>
+<a class="sourceLine" id="cb1-32" title="32">            <span class="cf">if</span> node.left:</a>
+<a class="sourceLine" id="cb1-33" title="33">                <span class="va">self</span>.insert_node(data, node.left)</a>
+<a class="sourceLine" id="cb1-34" title="34">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-35" title="35">                node.left <span class="op">=</span> Node(data, node)</a>
+<a class="sourceLine" id="cb1-36" title="36">                <span class="va">self</span>.violate(node.left)</a>
+<a class="sourceLine" id="cb1-37" title="37">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-38" title="38">            <span class="cf">if</span> node.right:</a>
+<a class="sourceLine" id="cb1-39" title="39">                <span class="va">self</span>.insert_node(data, node.right)</a>
+<a class="sourceLine" id="cb1-40" title="40">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-41" title="41">                node.right <span class="op">=</span> Node(data, node)</a>
+<a class="sourceLine" id="cb1-42" title="42">                <span class="va">self</span>.violate(node.right)</a>
+<a class="sourceLine" id="cb1-43" title="43"></a>
+<a class="sourceLine" id="cb1-44" title="44">    <span class="kw">def</span> violate(<span class="va">self</span>, node):</a>
+<a class="sourceLine" id="cb1-45" title="45"></a>
+<a class="sourceLine" id="cb1-46" title="46">        parent_node <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-47" title="47">        grand_parent_node <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-48" title="48"></a>
+<a class="sourceLine" id="cb1-49" title="49">        <span class="cf">while</span> node <span class="op">!=</span> <span class="va">self</span>.root <span class="kw">and</span> node.parent.color <span class="op">==</span> Color.RED:</a>
+<a class="sourceLine" id="cb1-50" title="50"></a>
+<a class="sourceLine" id="cb1-51" title="51">            parent_node <span class="op">=</span> node.parent</a>
+<a class="sourceLine" id="cb1-52" title="52">            grand_parent_node <span class="op">=</span> parent_node.parent</a>
+<a class="sourceLine" id="cb1-53" title="53"></a>
+<a class="sourceLine" id="cb1-54" title="54">            <span class="cf">if</span> grand_parent_node <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-55" title="55">                <span class="cf">return</span></a>
+<a class="sourceLine" id="cb1-56" title="56"></a>
+<a class="sourceLine" id="cb1-57" title="57">            <span class="cf">if</span> parent_node <span class="op">==</span> grand_parent_node.left:</a>
+<a class="sourceLine" id="cb1-58" title="58"></a>
+<a class="sourceLine" id="cb1-59" title="59">                uncle <span class="op">=</span> grand_parent_node.right</a>
+<a class="sourceLine" id="cb1-60" title="60"></a>
+<a class="sourceLine" id="cb1-61" title="61">                <span class="cf">if</span> uncle <span class="kw">and</span> uncle.color <span class="op">==</span> Color.RED:</a>
+<a class="sourceLine" id="cb1-62" title="62">                    <span class="co"># case 1 and case 4</span></a>
+<a class="sourceLine" id="cb1-63" title="63">                    <span class="bu">print</span>(<span class="st">&quot;Re-coloring node </span><span class="sc">%s</span><span class="st"> to RED&quot;</span> <span class="op">%</span> grand_parent_node.data)</a>
+<a class="sourceLine" id="cb1-64" title="64">                    grand_parent_node.color <span class="op">=</span> Color.RED</a>
+<a class="sourceLine" id="cb1-65" title="65">                    <span class="bu">print</span>(<span class="st">&quot;Re-coloring node </span><span class="sc">%s</span><span class="st"> to BLACK&quot;</span> <span class="op">%</span> parent_node.data)</a>
+<a class="sourceLine" id="cb1-66" title="66">                    parent_node.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-67" title="67">                    uncle.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-68" title="68">                    node <span class="op">=</span> grand_parent_node</a>
+<a class="sourceLine" id="cb1-69" title="69">                <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-70" title="70">                    <span class="co"># case 2: uncle node is black and node is a right child</span></a>
+<a class="sourceLine" id="cb1-71" title="71">                    <span class="cf">if</span> node <span class="op">==</span> parent_node.right:</a>
+<a class="sourceLine" id="cb1-72" title="72">                        <span class="va">self</span>.rotate_left(parent_node)</a>
+<a class="sourceLine" id="cb1-73" title="73">                        node <span class="op">=</span> parent_node</a>
+<a class="sourceLine" id="cb1-74" title="74">                        parent_node <span class="op">=</span> node.parent</a>
+<a class="sourceLine" id="cb1-75" title="75"></a>
+<a class="sourceLine" id="cb1-76" title="76">                    <span class="co"># case 3</span></a>
+<a class="sourceLine" id="cb1-77" title="77">                    parent_node.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-78" title="78">                    grand_parent_node.color <span class="op">=</span> Color.RED</a>
+<a class="sourceLine" id="cb1-79" title="79">                    <span class="bu">print</span>(<span class="st">&quot;Re-color </span><span class="sc">%s</span><span class="st"> to BLACK&quot;</span> <span class="op">%</span> parent_node.data)</a>
+<a class="sourceLine" id="cb1-80" title="80">                    <span class="bu">print</span>(<span class="st">&quot;Re-color </span><span class="sc">%s</span><span class="st"> to RED&quot;</span> <span class="op">%</span> grand_parent_node.data)</a>
+<a class="sourceLine" id="cb1-81" title="81">                    <span class="va">self</span>.rotate_right(grand_parent_node)</a>
+<a class="sourceLine" id="cb1-82" title="82">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-83" title="83"></a>
+<a class="sourceLine" id="cb1-84" title="84">                uncle <span class="op">=</span> grand_parent_node.left</a>
+<a class="sourceLine" id="cb1-85" title="85"></a>
+<a class="sourceLine" id="cb1-86" title="86">                <span class="cf">if</span> uncle <span class="kw">and</span> uncle.color <span class="op">==</span> Color.RED:</a>
+<a class="sourceLine" id="cb1-87" title="87">                    <span class="co"># case 1 and case 4</span></a>
+<a class="sourceLine" id="cb1-88" title="88">                    <span class="bu">print</span>(<span class="st">&quot;Re-coloring node </span><span class="sc">%s</span><span class="st"> to RED&quot;</span> <span class="op">%</span> grand_parent_node.data)</a>
+<a class="sourceLine" id="cb1-89" title="89">                    grand_parent_node.color <span class="op">=</span> Color.RED</a>
+<a class="sourceLine" id="cb1-90" title="90">                    <span class="bu">print</span>(<span class="st">&quot;Re-coloring node </span><span class="sc">%s</span><span class="st"> to BLACK&quot;</span> <span class="op">%</span> parent_node.data)</a>
+<a class="sourceLine" id="cb1-91" title="91">                    parent_node.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-92" title="92">                    uncle.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-93" title="93">                    node <span class="op">=</span> grand_parent_node</a>
+<a class="sourceLine" id="cb1-94" title="94">                <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-95" title="95">                    <span class="co"># case 2: uncle node is black and node is a right child</span></a>
+<a class="sourceLine" id="cb1-96" title="96">                    <span class="cf">if</span> node <span class="op">==</span> parent_node.left:</a>
+<a class="sourceLine" id="cb1-97" title="97">                        <span class="va">self</span>.rotate_right(parent_node)</a>
+<a class="sourceLine" id="cb1-98" title="98">                        node <span class="op">=</span> parent_node</a>
+<a class="sourceLine" id="cb1-99" title="99">                        parent_node <span class="op">=</span> node.parent</a>
+<a class="sourceLine" id="cb1-100" title="100"></a>
+<a class="sourceLine" id="cb1-101" title="101">                    <span class="co"># case 3</span></a>
+<a class="sourceLine" id="cb1-102" title="102">                    parent_node.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-103" title="103">                    grand_parent_node.color <span class="op">=</span> Color.RED</a>
+<a class="sourceLine" id="cb1-104" title="104">                    <span class="bu">print</span>(<span class="st">&quot;Re-color </span><span class="sc">%s</span><span class="st"> to BLACK&quot;</span> <span class="op">%</span> parent_node.data)</a>
+<a class="sourceLine" id="cb1-105" title="105">                    <span class="bu">print</span>(<span class="st">&quot;Re-color </span><span class="sc">%s</span><span class="st"> to RED&quot;</span> <span class="op">%</span> grand_parent_node.data)</a>
+<a class="sourceLine" id="cb1-106" title="106">                    <span class="va">self</span>.rotate_left(grand_parent_node)</a>
+<a class="sourceLine" id="cb1-107" title="107"></a>
+<a class="sourceLine" id="cb1-108" title="108">        <span class="cf">if</span> <span class="va">self</span>.root.color <span class="op">==</span> Color.RED:</a>
+<a class="sourceLine" id="cb1-109" title="109">            <span class="bu">print</span>(<span class="st">&quot;Recoloring the root to black...&quot;</span>)</a>
+<a class="sourceLine" id="cb1-110" title="110">            <span class="va">self</span>.root.color <span class="op">=</span> Color.BLACK</a>
+<a class="sourceLine" id="cb1-111" title="111"></a>
+<a class="sourceLine" id="cb1-112" title="112">    <span class="kw">def</span> traverse(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb1-113" title="113">        <span class="cf">if</span> <span class="va">self</span>.root <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-114" title="114">            <span class="va">self</span>.traverse_in_order(<span class="va">self</span>.root)</a>
+<a class="sourceLine" id="cb1-115" title="115"></a>
+<a class="sourceLine" id="cb1-116" title="116">    <span class="kw">def</span> traverse_in_order(<span class="va">self</span>, node):</a>
+<a class="sourceLine" id="cb1-117" title="117">        <span class="cf">if</span> node.left:</a>
+<a class="sourceLine" id="cb1-118" title="118">            <span class="va">self</span>.traverse_in_order(node.left)</a>
+<a class="sourceLine" id="cb1-119" title="119"></a>
+<a class="sourceLine" id="cb1-120" title="120">        l <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb1-121" title="121">        r <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb1-122" title="122">        p <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb1-123" title="123"></a>
+<a class="sourceLine" id="cb1-124" title="124">        <span class="cf">if</span> node.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-125" title="125">            l <span class="op">=</span> node.left.data</a>
+<a class="sourceLine" id="cb1-126" title="126">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-127" title="127">            l <span class="op">=</span> <span class="st">&#39;NULL&#39;</span></a>
+<a class="sourceLine" id="cb1-128" title="128"></a>
+<a class="sourceLine" id="cb1-129" title="129">        <span class="cf">if</span> node.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-130" title="130">            r <span class="op">=</span> node.right.data</a>
+<a class="sourceLine" id="cb1-131" title="131">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-132" title="132">            r <span class="op">=</span> <span class="st">&#39;NULL&#39;</span></a>
+<a class="sourceLine" id="cb1-133" title="133"></a>
+<a class="sourceLine" id="cb1-134" title="134">        <span class="cf">if</span> node.parent <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-135" title="135">            p <span class="op">=</span> node.parent.data</a>
+<a class="sourceLine" id="cb1-136" title="136">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-137" title="137">            p <span class="op">=</span> <span class="st">&#39;NULL&#39;</span></a>
+<a class="sourceLine" id="cb1-138" title="138"></a>
+<a class="sourceLine" id="cb1-139" title="139">        <span class="bu">print</span>(<span class="st">&quot;</span><span class="sc">%s</span><span class="st"> left: </span><span class="sc">%s</span><span class="st"> right: </span><span class="sc">%s</span><span class="st"> parent: </span><span class="sc">%s</span><span class="st"> color: </span><span class="sc">%s</span><span class="st">&quot;</span> <span class="op">%</span> (node.data, l, r, p, node.color))</a>
+<a class="sourceLine" id="cb1-140" title="140"></a>
+<a class="sourceLine" id="cb1-141" title="141">        <span class="cf">if</span> node.right:</a>
+<a class="sourceLine" id="cb1-142" title="142">            <span class="va">self</span>.traverse_in_order(node.right)</a>
+<a class="sourceLine" id="cb1-143" title="143"></a>
+<a class="sourceLine" id="cb1-144" title="144">    <span class="kw">def</span> rotate_right(<span class="va">self</span>, node):</a>
+<a class="sourceLine" id="cb1-145" title="145">        <span class="bu">print</span>(<span class="st">&quot;Rotating to the right on node &quot;</span>, node.data)</a>
+<a class="sourceLine" id="cb1-146" title="146"></a>
+<a class="sourceLine" id="cb1-147" title="147">        temp_left_node <span class="op">=</span> node.left</a>
+<a class="sourceLine" id="cb1-148" title="148">        t <span class="op">=</span> temp_left_node.right</a>
+<a class="sourceLine" id="cb1-149" title="149"></a>
+<a class="sourceLine" id="cb1-150" title="150">        temp_left_node.right <span class="op">=</span> node</a>
+<a class="sourceLine" id="cb1-151" title="151">        node.left <span class="op">=</span> t</a>
+<a class="sourceLine" id="cb1-152" title="152"></a>
+<a class="sourceLine" id="cb1-153" title="153">        <span class="cf">if</span> t <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-154" title="154">            t.parent <span class="op">=</span> node</a>
+<a class="sourceLine" id="cb1-155" title="155"></a>
+<a class="sourceLine" id="cb1-156" title="156">        temp_parent <span class="op">=</span> node.parent</a>
+<a class="sourceLine" id="cb1-157" title="157">        node.parent <span class="op">=</span> temp_left_node</a>
+<a class="sourceLine" id="cb1-158" title="158">        temp_left_node.parent <span class="op">=</span> temp_parent</a>
+<a class="sourceLine" id="cb1-159" title="159"></a>
+<a class="sourceLine" id="cb1-160" title="160">        <span class="cf">if</span> temp_left_node.parent <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> temp_left_node.parent.left <span class="op">==</span> node:</a>
+<a class="sourceLine" id="cb1-161" title="161">            temp_left_node.parent.left <span class="op">=</span> temp_left_node</a>
+<a class="sourceLine" id="cb1-162" title="162"></a>
+<a class="sourceLine" id="cb1-163" title="163">        <span class="cf">if</span> temp_left_node.parent <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> temp_left_node.parent.right <span class="op">==</span> node:</a>
+<a class="sourceLine" id="cb1-164" title="164">            temp_left_node.parent.right <span class="op">=</span> temp_left_node</a>
+<a class="sourceLine" id="cb1-165" title="165"></a>
+<a class="sourceLine" id="cb1-166" title="166">        <span class="cf">if</span> node <span class="op">==</span> <span class="va">self</span>.root:</a>
+<a class="sourceLine" id="cb1-167" title="167">            <span class="va">self</span>.root <span class="op">=</span> temp_left_node</a>
+<a class="sourceLine" id="cb1-168" title="168"></a>
+<a class="sourceLine" id="cb1-169" title="169">    <span class="kw">def</span> rotate_left(<span class="va">self</span>, node):</a>
+<a class="sourceLine" id="cb1-170" title="170">        <span class="bu">print</span>(<span class="st">&quot;Rotating to the left on node &quot;</span>, node.data)</a>
+<a class="sourceLine" id="cb1-171" title="171"></a>
+<a class="sourceLine" id="cb1-172" title="172">        temp_right_node <span class="op">=</span> node.right</a>
+<a class="sourceLine" id="cb1-173" title="173">        t <span class="op">=</span> temp_right_node.left</a>
+<a class="sourceLine" id="cb1-174" title="174"></a>
+<a class="sourceLine" id="cb1-175" title="175">        temp_right_node.left <span class="op">=</span> node</a>
+<a class="sourceLine" id="cb1-176" title="176">        node.right <span class="op">=</span> t</a>
+<a class="sourceLine" id="cb1-177" title="177"></a>
+<a class="sourceLine" id="cb1-178" title="178">        <span class="cf">if</span> t <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb1-179" title="179">            t.parent <span class="op">=</span> node</a>
+<a class="sourceLine" id="cb1-180" title="180"></a>
+<a class="sourceLine" id="cb1-181" title="181">        temp_parent <span class="op">=</span> node.parent</a>
+<a class="sourceLine" id="cb1-182" title="182">        node.parent <span class="op">=</span> temp_right_node</a>
+<a class="sourceLine" id="cb1-183" title="183">        temp_right_node.parent <span class="op">=</span> temp_parent</a>
+<a class="sourceLine" id="cb1-184" title="184"></a>
+<a class="sourceLine" id="cb1-185" title="185">        <span class="cf">if</span> temp_right_node.parent <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> temp_right_node.parent.left <span class="op">==</span> node:</a>
+<a class="sourceLine" id="cb1-186" title="186">            temp_right_node.parent.left <span class="op">=</span> temp_right_node</a>
+<a class="sourceLine" id="cb1-187" title="187"></a>
+<a class="sourceLine" id="cb1-188" title="188">        <span class="cf">if</span> temp_right_node.parent <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span> <span class="kw">and</span> temp_right_node.parent.right <span class="op">==</span> node:</a>
+<a class="sourceLine" id="cb1-189" title="189">            temp_right_node.parent.right <span class="op">=</span> temp_right_node</a>
+<a class="sourceLine" id="cb1-190" title="190"></a>
+<a class="sourceLine" id="cb1-191" title="191">        <span class="cf">if</span> node <span class="op">==</span> <span class="va">self</span>.root:</a>
+<a class="sourceLine" id="cb1-192" title="192">            <span class="va">self</span>.root <span class="op">=</span> temp_right_node</a>
+<a class="sourceLine" id="cb1-193" title="193"></a>
+<a class="sourceLine" id="cb1-194" title="194"></a>
+<a class="sourceLine" id="cb1-195" title="195">rbt <span class="op">=</span> RedBlackTree()</a>
+<a class="sourceLine" id="cb1-196" title="196">rbt.insert(<span class="dv">32</span>)</a>
+<a class="sourceLine" id="cb1-197" title="197">rbt.insert(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-198" title="198">rbt.insert(<span class="dv">55</span>)</a>
+<a class="sourceLine" id="cb1-199" title="199">rbt.insert(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-200" title="200">rbt.insert(<span class="dv">19</span>)</a>
+<a class="sourceLine" id="cb1-201" title="201">rbt.insert(<span class="dv">79</span>)</a>
+<a class="sourceLine" id="cb1-202" title="202">rbt.insert(<span class="dv">16</span>)</a>
+<a class="sourceLine" id="cb1-203" title="203">rbt.insert(<span class="dv">23</span>)</a>
+<a class="sourceLine" id="cb1-204" title="204">rbt.insert(<span class="dv">12</span>)</a>
+<a class="sourceLine" id="cb1-205" title="205"></a>
+<a class="sourceLine" id="cb1-206" title="206">rbt.traverse()</a>
+<a class="sourceLine" id="cb1-207" title="207"></a>
+<a class="sourceLine" id="cb1-208" title="208"></a></code></pre></div>
+</body>
+</html>

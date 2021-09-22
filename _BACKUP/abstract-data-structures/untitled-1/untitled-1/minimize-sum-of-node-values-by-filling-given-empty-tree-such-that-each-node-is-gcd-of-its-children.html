@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children">Minimize sum of node values by filling given empty Tree such that each node is GCD of its children</h1>
+<p>Given a Binary Tree consisting of <strong>N</strong> nodes having no values in it and an integer <strong>X</strong>, that represents the value of the root node, the task is to find the minimum sum of all the nodes value of the given Tree such that the value of each node must be the value of GCDs of its children. Also, no two <a href="https://www.geeksforgeeks.org/check-if-two-nodes-in-a-binary-tree-are-siblings/">siblings</a> can have the same value.</p>
+<p><strong>Examples:</strong></p>
+<blockquote>
+<p><strong>Input:</strong></p>
+<p><strong>Output:</strong> 22<br />
+<strong>Explanation:</strong> The given tree can be filled as shown below:</p>
+<p><strong>Input:</strong></p>
+<p><strong>Output:</strong> 18<br />
+<strong>Explanation:</strong> The given tree can be filled as shown below:</p>
+</blockquote>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142526/newtreedrawio2-660x224.png" /></p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142050/tree11-660x290.png" /></p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142615/newtreedrawio2.png" /></p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910140356/tree1-288x300.png" /></p>
+<p><strong>Approach:</strong> In order to minimize the sum, both of the children can have the value of <strong>X</strong> and <strong>2*X</strong> where <strong>X</strong> is the value of the parent. Now, if the node has only one child, then its value is going to be equal to its parent node. But to decide which child should have a value of <strong>X</strong> and <strong>2*X</strong> to get the minimum sum, the depth of each subtree for every node will be considered. The child having more depth will be given a value of <strong>X</strong> so that it can transfer it to more of its children while another one will get the value of <strong>2*X</strong>. Follow the below steps to solve this problem:</p>
+<ol type="1">
+<li>Find the depth of each node and store it in a <a href="http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/">map</a> alongside the node address as the key.</li>
+<li>Now, perform the <a href="http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/">DFS Traversal</a>, starting from the <strong>root node</strong>, and in each call assign the node a value of <strong>X</strong> if it has more depth than its sibling. Otherwise, assign the value <strong>2*X</strong>.</li>
+<li>After the above step, find the sum of both left and right child values while <a href="http://www.geeksforgeeks.org/backtracking-algorithms/">backtracking</a> and return the total sum, i.e., the sum of the value of the left child, right child, and current node in each call.</li>
+<li>After completing the above steps, print the value returned from the <strong>DFS Call</strong> as the minimum sum possible.</li>
+</ol>
+<p>{% tabs %} {% tab title=“Python” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co"># Python3 program for the above approach</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co"># Structure of Tree Node</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="va">self</span>.val <span class="op">=</span> val</a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11">depth <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb1-12" title="12"></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="co"># Function to find the depth of all</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="co"># nodes and store it in map depth</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="kw">def</span> findDepth(cur):</a>
+<a class="sourceLine" id="cb1-16" title="16">    mx <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="cf">if</span> (cur.left <span class="op">!=</span> <span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-18" title="18">        mx <span class="op">=</span> findDepth(cur.left)</a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="cf">if</span> (cur.right <span class="op">!=</span> <span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-20" title="20">        mx <span class="op">=</span> <span class="bu">max</span>(mx, findDepth(cur.right))</a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="co"># Update and return the maximum</span></a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="co"># depth of the tree</span></a>
+<a class="sourceLine" id="cb1-24" title="24">    depth[cur] <span class="op">=</span> mx <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="cf">return</span> depth[cur]</a>
+<a class="sourceLine" id="cb1-26" title="26"></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="co"># Function to assign values to nodes</span></a>
+<a class="sourceLine" id="cb1-28" title="28"><span class="co"># and return the minimum sum possible</span></a>
+<a class="sourceLine" id="cb1-29" title="29"><span class="kw">def</span> dfs(cur, flag, parValue):</a>
+<a class="sourceLine" id="cb1-30" title="30">    <span class="cf">if</span> (parValue <span class="op">!=</span> <span class="dv">-1</span>):</a>
+<a class="sourceLine" id="cb1-31" title="31">        <span class="cf">if</span> flag:</a>
+<a class="sourceLine" id="cb1-32" title="32">            cur.val <span class="op">=</span> parValue</a>
+<a class="sourceLine" id="cb1-33" title="33">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-34" title="34">            cur.val <span class="op">=</span> parValue <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-35" title="35">    l, r <span class="op">=</span> <span class="dv">0</span>,  <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-36" title="36">    <span class="cf">if</span> (cur.left <span class="op">!=</span> <span class="va">None</span> <span class="kw">and</span> cur.right <span class="op">!=</span> <span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-37" title="37">        <span class="cf">if</span> ((cur.left <span class="kw">in</span> depth) <span class="kw">and</span> (cur.right <span class="kw">in</span> depth) <span class="kw">and</span> depth[cur.left] <span class="op">&gt;</span> depth[cur.right]):</a>
+<a class="sourceLine" id="cb1-38" title="38">            l <span class="op">=</span> dfs(cur.left, <span class="dv">1</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-39" title="39">            r <span class="op">=</span> dfs(cur.right, <span class="dv">0</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-40" title="40">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-41" title="41">            l <span class="op">=</span> dfs(cur.left, <span class="dv">0</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-42" title="42">            r <span class="op">=</span> dfs(cur.right, <span class="dv">1</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-43" title="43">    <span class="cf">elif</span> (cur.left <span class="op">!=</span> <span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-44" title="44">        l <span class="op">=</span> dfs(cur.left, <span class="dv">1</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-45" title="45">    <span class="cf">elif</span> (cur.right <span class="op">!=</span> <span class="va">None</span>):</a>
+<a class="sourceLine" id="cb1-46" title="46">        r <span class="op">=</span> dfs(cur.right, <span class="dv">1</span>, cur.val)</a>
+<a class="sourceLine" id="cb1-47" title="47"></a>
+<a class="sourceLine" id="cb1-48" title="48">    <span class="cf">return</span> (l <span class="op">+</span> r <span class="op">+</span> cur.val)</a>
+<a class="sourceLine" id="cb1-49" title="49"></a>
+<a class="sourceLine" id="cb1-50" title="50"><span class="co"># Function to find the minimum sum</span></a>
+<a class="sourceLine" id="cb1-51" title="51"><span class="co"># for the given tree by assign the</span></a>
+<a class="sourceLine" id="cb1-52" title="52"><span class="co"># values to the node according to</span></a>
+<a class="sourceLine" id="cb1-53" title="53"><span class="co"># the given criteria</span></a>
+<a class="sourceLine" id="cb1-54" title="54"><span class="kw">def</span> minimumSum(root):</a>
+<a class="sourceLine" id="cb1-55" title="55"></a>
+<a class="sourceLine" id="cb1-56" title="56">    <span class="co"># Find the maximum depth</span></a>
+<a class="sourceLine" id="cb1-57" title="57">    findDepth(root)</a>
+<a class="sourceLine" id="cb1-58" title="58"></a>
+<a class="sourceLine" id="cb1-59" title="59">    <span class="co"># Calculate the minimum sum and</span></a>
+<a class="sourceLine" id="cb1-60" title="60">    <span class="co"># return it</span></a>
+<a class="sourceLine" id="cb1-61" title="61">    <span class="cf">return</span> dfs(root, <span class="dv">1</span>, <span class="dv">-1</span>)</a>
+<a class="sourceLine" id="cb1-62" title="62"></a>
+<a class="sourceLine" id="cb1-63" title="63"><span class="co"># Given root node value</span></a>
+<a class="sourceLine" id="cb1-64" title="64">X <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-65" title="65"></a>
+<a class="sourceLine" id="cb1-66" title="66"><span class="co"># Given empty tree structure</span></a>
+<a class="sourceLine" id="cb1-67" title="67">root <span class="op">=</span> Node(X)</a>
+<a class="sourceLine" id="cb1-68" title="68">root.left <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-69" title="69">root.right <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-70" title="70">root.left.left <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-71" title="71">root.left.right <span class="op">=</span>Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-72" title="72">root.left.right.left <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-73" title="73">root.left.right.right <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-74" title="74">root.left.right.right.left <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-75" title="75"></a>
+<a class="sourceLine" id="cb1-76" title="76"><span class="co"># Fill the tree and print minimum tree sum</span></a>
+<a class="sourceLine" id="cb1-77" title="77"><span class="bu">print</span>(minimumSum(root))</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“JS” %}</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// Javascript program for the above approach</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">// Structure of Tree Node</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">class</span> Node <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-5" title="5">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">this</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="kw">this</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-11" title="11"></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="kw">let</span> depth <span class="op">=</span> <span class="kw">new</span> <span class="at">Map</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-13" title="13"></a>
+<a class="sourceLine" id="cb2-14" title="14"><span class="co">// Function to find the depth of all</span></a>
+<a class="sourceLine" id="cb2-15" title="15"><span class="co">// nodes and store it in map depth</span></a>
+<a class="sourceLine" id="cb2-16" title="16"><span class="kw">function</span> <span class="at">findDepth</span>(cur) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-17" title="17">  <span class="kw">let</span> mx <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-18" title="18">  <span class="cf">if</span> (<span class="va">cur</span>.<span class="at">left</span> <span class="op">!=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-19" title="19">    mx <span class="op">=</span> <span class="at">findDepth</span>(<span class="va">cur</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-20" title="20">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-21" title="21">  <span class="cf">if</span> (<span class="va">cur</span>.<span class="at">right</span> <span class="op">!=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-22" title="22">    mx <span class="op">=</span> <span class="va">Math</span>.<span class="at">max</span>(mx<span class="op">,</span> <span class="at">findDepth</span>(<span class="va">cur</span>.<span class="at">right</span>))<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-23" title="23">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-24" title="24"></a>
+<a class="sourceLine" id="cb2-25" title="25">  <span class="co">// Update and return the maximum</span></a>
+<a class="sourceLine" id="cb2-26" title="26">  <span class="co">// depth of the tree</span></a>
+<a class="sourceLine" id="cb2-27" title="27">  depth[cur] <span class="op">=</span> mx <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-28" title="28">  <span class="cf">return</span> depth[cur]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-29" title="29"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-30" title="30"></a>
+<a class="sourceLine" id="cb2-31" title="31"><span class="co">// Function to assign values to nodes</span></a>
+<a class="sourceLine" id="cb2-32" title="32"><span class="co">// and return the minimum sum possible</span></a>
+<a class="sourceLine" id="cb2-33" title="33"><span class="kw">function</span> <span class="at">dfs</span>(cur<span class="op">,</span> flag<span class="op">,</span> parValue) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-34" title="34">  <span class="cf">if</span> (parValue <span class="op">!=</span> <span class="dv">-1</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-35" title="35">    <span class="cf">if</span> (flag) <span class="va">cur</span>.<span class="at">val</span> <span class="op">=</span> parValue<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-36" title="36">    <span class="cf">else</span> <span class="va">cur</span>.<span class="at">val</span> <span class="op">=</span> parValue <span class="op">*</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-37" title="37">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-38" title="38">  <span class="kw">let</span> l <span class="op">=</span> <span class="dv">0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-39" title="39">    r <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-40" title="40">  <span class="cf">if</span> (<span class="va">cur</span>.<span class="at">left</span> <span class="op">!=</span> <span class="kw">null</span> <span class="op">&amp;&amp;</span> <span class="va">cur</span>.<span class="at">right</span> <span class="op">!=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-41" title="41">    <span class="cf">if</span> (</a>
+<a class="sourceLine" id="cb2-42" title="42">      <span class="va">depth</span>.<span class="at">has</span>(<span class="va">cur</span>.<span class="at">left</span>) <span class="op">&amp;&amp;</span></a>
+<a class="sourceLine" id="cb2-43" title="43">      <span class="va">depth</span>.<span class="at">has</span>(<span class="va">cur</span>.<span class="at">right</span>) <span class="op">&amp;&amp;</span></a>
+<a class="sourceLine" id="cb2-44" title="44">      depth[<span class="va">cur</span>.<span class="at">left</span>] <span class="op">&gt;</span> depth[<span class="va">cur</span>.<span class="at">right</span>]</a>
+<a class="sourceLine" id="cb2-45" title="45">    ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-46" title="46">      l <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">left</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-47" title="47">      r <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">right</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-48" title="48">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-49" title="49">      l <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">left</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-50" title="50">      r <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">right</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-51" title="51">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-52" title="52">  <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (<span class="va">cur</span>.<span class="at">left</span> <span class="op">!=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-53" title="53">    l <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">left</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-54" title="54">  <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (<span class="va">cur</span>.<span class="at">right</span> <span class="op">!=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-55" title="55">    r <span class="op">=</span> <span class="at">dfs</span>(<span class="va">cur</span>.<span class="at">right</span><span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="va">cur</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-56" title="56">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-57" title="57"></a>
+<a class="sourceLine" id="cb2-58" title="58">  <span class="cf">return</span> l <span class="op">+</span> r <span class="op">+</span> <span class="va">cur</span>.<span class="at">val</span> / <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-59" title="59"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-60" title="60"></a>
+<a class="sourceLine" id="cb2-61" title="61"><span class="co">// Function to find the minimum sum</span></a>
+<a class="sourceLine" id="cb2-62" title="62"><span class="co">// for the given tree by assign the</span></a>
+<a class="sourceLine" id="cb2-63" title="63"><span class="co">// values to the node according to</span></a>
+<a class="sourceLine" id="cb2-64" title="64"><span class="co">// the given criteria</span></a>
+<a class="sourceLine" id="cb2-65" title="65"><span class="kw">function</span> <span class="at">minimumSum</span>(root) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-66" title="66">  <span class="co">// Find the maximum depth</span></a>
+<a class="sourceLine" id="cb2-67" title="67">  <span class="at">findDepth</span>(root)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-68" title="68"></a>
+<a class="sourceLine" id="cb2-69" title="69">  <span class="co">// Calculate the minimum sum and</span></a>
+<a class="sourceLine" id="cb2-70" title="70">  <span class="co">// return it</span></a>
+<a class="sourceLine" id="cb2-71" title="71">  <span class="cf">return</span> <span class="at">dfs</span>(root<span class="op">,</span> <span class="dv">1</span><span class="op">,</span> <span class="dv">-1</span>) <span class="op">+</span> <span class="dv">4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-72" title="72"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-73" title="73"></a>
+<a class="sourceLine" id="cb2-74" title="74"><span class="co">// Given root node value</span></a>
+<a class="sourceLine" id="cb2-75" title="75"><span class="kw">let</span> X <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-76" title="76"></a>
+<a class="sourceLine" id="cb2-77" title="77"><span class="co">// Given empty tree structure</span></a>
+<a class="sourceLine" id="cb2-78" title="78"><span class="kw">let</span> root <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(X)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-79" title="79"><span class="va">root</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-80" title="80"><span class="va">root</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-81" title="81"><span class="va">root</span>.<span class="va">left</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-82" title="82"><span class="va">root</span>.<span class="va">left</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-83" title="83"><span class="va">root</span>.<span class="va">left</span>.<span class="va">right</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-84" title="84"><span class="va">root</span>.<span class="va">left</span>.<span class="va">right</span>.<span class="at">right</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-85" title="85"><span class="va">root</span>.<span class="va">left</span>.<span class="va">right</span>.<span class="va">right</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-86" title="86"></a>
+<a class="sourceLine" id="cb2-87" title="87"><span class="co">// Fill the tree and print minimum tree sum</span></a>
+<a class="sourceLine" id="cb2-88" title="88"><span class="va">document</span>.<span class="at">write</span>(<span class="at">minimumSum</span>(root))<span class="op">;</span></a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“REPL” %} {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/prac4242">@bgoonz/prac4242</span>#another.py” %} {% endtab %} {% endtabs %}</p>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>general-data-structures-notes</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="general-data-structures-notes">General Data Structures Notes</h1>
+<h3 id="section-1-data-structures-and-algorithms">Section 1: Data Structures and Algorithms</h3>
+<p><strong>Book:</strong> <a href="https://runestone.academy/runestone/books/published/pythonds/index.html">Problem Solving with Algorithms and Data Structures using Python</a></p>
+<ul>
+<li>For those who needs to study the fundamental data structures and algorithms, highly recommend to go over above textbook thoroughly first, and then come back to the following content, or practice on Leetcode or other platform</li>
+</ul>
+<p><strong>Basic data structures</strong>:</p>
+<ul>
+<li>Array</li>
+<li>Linked List</li>
+<li>Stack</li>
+<li>Queue</li>
+<li>Hash Table</li>
+<li>Tree</li>
+<li>Graph</li>
+</ul>
+<p><strong>Common Algorithm Types</strong>:</p>
+<ul>
+<li>Brute Force</li>
+<li>Search and Sort</li>
+<li>Recursive</li>
+<li>Backtracking</li>
+<li>Dynamic Programming</li>
+<li>Divide and Conquer</li>
+<li>Greedy</li>
+<li>Branch and Bound</li>
+</ul>
+<p><strong>Big O Notations</strong>:</p>
+<ul>
+<li>It is critical that you understand and are able to calculate the Big O for the code you wrote.</li>
+<li><strong>The order of magnitude function describes the part of T(n) that increases the fastest as the value of n increases. Order of magnitude is often called Big-O notation (for “order”) and written as O(f(n)).</strong></li>
+<li><p>Basically, the Big O measures the number of assignment statements</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">f(n)</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Constant</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">log n</td>
+<td style="text-align: left;">Logarithmic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">n</td>
+<td style="text-align: left;">Linear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">n log n</td>
+<td style="text-align: left;">Log Linear</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">n^2</td>
+<td style="text-align: left;">Quadratic</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">n^3</td>
+<td style="text-align: left;">Cubic</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2^n</td>
+<td style="text-align: left;">Exponential</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://camo.githubusercontent.com/0c10cd72cb4a5c73e7139648bcb79b107fb6df017d84b8f321fea2aa63d4d47d/68747470733a2f2f72756e6573746f6e652e61636164656d792f72756e6573746f6e652f626f6f6b732f7075626c69736865642f707974686f6e64732f5f696d616765732f6e6577706c6f742e706e67"><img src="https://camo.githubusercontent.com/0c10cd72cb4a5c73e7139648bcb79b107fb6df017d84b8f321fea2aa63d4d47d/68747470733a2f2f72756e6573746f6e652e61636164656d792f72756e6573746f6e652f626f6f6b732f7075626c69736865642f707974686f6e64732f5f696d616765732f6e6577706c6f742e706e67" alt="BigO Image" /></a></p></li>
+</ul>
+<h4 id="chapter-1-data-structures">Chapter 1: Data Structures</h4>
+<p><strong>1.1 Array</strong></p>
+<ul>
+<li>An array (in Python its called <em>list</em>) is a collection of items where each item holds a relative position with respect to the others.</li>
+</ul>
+<p><strong>1.2 Linked List</strong></p>
+<ul>
+<li>Similar to array, but requires O(N) time on average to visit an element by index</li>
+<li>Linked list utilize memory better than array, since it can use discrete memory space, whereas array must use continuous memory space</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/linked_list.md">Details and Templates</a></li>
+</ul>
+<p><strong>1.3 Stack</strong></p>
+<ul>
+<li>Stacks are fundamentally important, as they can be used to reverse the order of items.</li>
+<li>The order of insertion is the reverse of the order of removal.</li>
+<li>Stack maintain a FILO (first in last out) ordering property.</li>
+<li>When pop is called on the end of the list it takes O(1) but when pop is called on the first element in the list or anywhere in the middle it is O(n) (in Python).</li>
+</ul>
+<p><strong>1.3.1 Arithmetic Expressions</strong></p>
+<ul>
+<li>Infix: the operator is in between the two operands that it is working on (i.e. A+B)
+<ul>
+<li>Fully Parenthesized expression: uses one pair of parentheses for each operator. (i.e. ((A + (B * C)) + D))</li>
+</ul></li>
+<li>Prefix: all operators precede the two operands that they work on (i.e. +AB)</li>
+<li>Postfix: operators come after the corresponding operands (i.e. AB+)</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Infix Expression</th>
+<th style="text-align: left;">Prefix Expression</th>
+<th style="text-align: left;">Postfix Expression</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A + B</td>
+<td style="text-align: left;">+ A B</td>
+<td style="text-align: left;">A B +</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A + B * C</td>
+<td style="text-align: left;">+ A * B C</td>
+<td style="text-align: left;">A B C * +</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">(A + B) * C</td>
+<td style="text-align: left;">* + A B C</td>
+<td style="text-align: left;">A B + C *</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A + B * C + D</td>
+<td style="text-align: left;">+ + A * B C D</td>
+<td style="text-align: left;">A B C * + D +</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">(A + B) * (C + D)</td>
+<td style="text-align: left;">* + A B + C D</td>
+<td style="text-align: left;">A B + C D + *</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A * B + C * D</td>
+<td style="text-align: left;">+ * A B * C D</td>
+<td style="text-align: left;">A B * C D * +</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A + B + C + D</td>
+<td style="text-align: left;">+ + + A B C D</td>
+<td style="text-align: left;">A B + C + D +</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>NOTE:</strong>
+<ul>
+<li>Only infix notation requires parentheses to determine precedence</li>
+<li>The order of operations within prefix and postfix expressions is completely determined by the position of the operator and nothing else</li>
+</ul></li>
+</ul>
+<p><strong>1.4 Queue</strong></p>
+<ul>
+<li>A queue is structured as an ordered collection of items which are added at one end, called the “rear,” and removed from the other end, called the “front.”</li>
+<li>Queues maintain a FIFO ordering property.</li>
+<li>A <em><strong>deque</strong></em>, also known as a double-ended queue, is an ordered collection of items similar to the queue.
+<ul>
+<li>It has two ends, a front and a rear, and the items remain positioned in the collection.</li>
+<li>New items can be added at either the front or the rear.</li>
+<li>Likewise, existing items can be removed from either end.</li>
+</ul></li>
+</ul>
+<p><strong>1.5 Hash Table</strong></p>
+<ul>
+<li>A <strong>hash table</strong> is a collection of items which are stored in such a way as to make it easy to find them later.</li>
+<li>Each position of the hash table, often called a slot, can hold an item and is named by an integer value starting at 0.</li>
+<li>The mapping between an item and the slot where that item belongs in the hash table is called the <strong>hash function</strong>.
+<ul>
+<li><strong>Remainder method</strong> takes an item and divides it by the table size, returning the remainder as its hash value (i.e. <code>h(item) = item % 11</code>)</li>
+<li><strong>load factor</strong> is the number of items devided by the table size</li>
+<li><strong>collision</strong> refers to the situation that multiple items have the same hash value</li>
+<li><strong>folding method</strong> for constructing hash functions begins by dividing the item into equal-size pieces (the last piece may not be of equal size). These pieces are then added together to give the resulting hash value.</li>
+<li><strong>mid-square method</strong> first squares the item, and then extract some portion of the resulting digits. For example, 44^2 = 1936, extract middle two digits 93, then perform remainder step (93%11=5).</li>
+</ul></li>
+<li><strong>Collision Resolution</strong> is the process to systemacticly place the second item in the hash table when two items hash to the same slot.</li>
+<li><strong>Open addressing (linear probing):</strong> sequentially find the next open slot or address in the hash table
+<ul>
+<li>A disadvantage to linear probing is the tendency for clustering; items become clustered in the table.</li>
+<li><strong>Rehashing</strong> is one way to deal with clustering, which is to skip the slot when looking sequentially for the next open slot, thereby more evenly distributing the items that have caused collisions.</li>
+</ul></li>
+<li><strong>Quadratic probing:</strong> instead of using a constant “skip” value, we use a rehash function that increments the hash value by 1, 3, 5, 7, 9, and so on. This means that if the first hash value is h, the successive values are h+1, h+4, h+9, h+16, and so on.</li>
+<li><strong>Chaining</strong> allows many items to exist at the same location in the hash table.
+<ul>
+<li>When collisions happen, the item is still placed in the proper slot of the hash table.</li>
+<li>As more and more items hash to the same location, the difficulty of searching for the item in the collection increases. <a href="https://camo.githubusercontent.com/2f688991ef488f29242d72b62e9f5137545ee3653290adb7557dd875e5851c28/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f636861696e696e672e706e67"><img src="https://camo.githubusercontent.com/2f688991ef488f29242d72b62e9f5137545ee3653290adb7557dd875e5851c28/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f636861696e696e672e706e67" /></a></li>
+</ul></li>
+<li>The initial size for the hash table has to be a prime number so that the collision resolution algorithm can be as efficient as possible.</li>
+</ul>
+<p><strong>1.6 Trees</strong></p>
+<ul>
+<li>A tree data structure has its root at the top and its leaves on the bottom.</li>
+<li>Three properties of tree:
+<ol type="1">
+<li>we start at the top of the tree and follow a path made of circles and arrows all the way to the bottom.</li>
+<li>all of the children of one node are independent of the children of another node.</li>
+<li>each leaf node is unique.</li>
+</ol></li>
+<li><strong>binary tree:</strong> each node in the tree has a maximum of two children.
+<ul>
+<li>A <strong>balanced binary tree</strong> has roughly the same number of nodes in the left and right subtrees of the root.</li>
+</ul></li>
+</ul>
+<p><strong>1.6.1 Tree Traversal: access the nodes of the tree</strong></p>
+<ul>
+<li>Tree traversal is the foundation of all tree related problems.</li>
+<li>Here are a few different ways to traverse a tree:
+<ul>
+<li>BFS: Level-order</li>
+<li>DFS: Pre-order, In-order, Post-order</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/tree_traversal.md">Details and Templates</a></li>
+</ul></li>
+</ul>
+<p><strong>1.6.2 Binary Search Tree (BST)</strong></p>
+<ul>
+<li>BST Property (left subtree &lt; root &lt; right subtree):
+<ol type="1">
+<li>The value in each node must be <code>greater than (or equal to)</code> any values stored in its left subtree.</li>
+<li>The value in each node must be <code>less than (or equal to)</code> any values stored in its right subtree.</li>
+</ol></li>
+<li><code>Inorder traversal</code> in BST will be in <code>ascending order</code>. Therefore, the inorder traversal is the most frequent used traversal method of a BST.</li>
+<li><strong>successor:</strong> the node that has the next-largest key in the tree
+<ul>
+<li>it has no more than one child</li>
+</ul></li>
+<li>You could go over the <a href="https://leetcode.com/explore/learn/card/introduction-to-data-structure-binary-search-tree/">Leetcode Binary Search Tree topic</a> for details</li>
+</ul>
+<p><strong>1.6.3 Heap / Priority Queue / Binary Heap</strong></p>
+<ul>
+<li><strong>Priority Queue:</strong>
+<ul>
+<li>the logical order of items inside a queue is determined by their priority.</li>
+<li>The highest priority items are at the front of the queue and the lowest priority items are at the back.</li>
+</ul></li>
+<li><strong>Binary Heap:</strong> the classic way to implement a priority queue.
+<ul>
+<li>both enqueue and dequeue items are <strong>O(logn)</strong></li>
+<li><strong>min heap:</strong> the smallest key is always at the front</li>
+<li><strong>max heap:</strong> the largest key value is always at the front</li>
+<li><strong>complete binary tree:</strong> a tree in which each level has all of its nodes (except the bottom level)
+<ul>
+<li>can be implemented using a single list</li>
+<li>Because the tree is complete, the left child of a parent (at position <strong>p</strong>) is the node that is found in position <strong>2p</strong> in the list. Similarly, the right child of the parent is at position <strong>2p+1</strong> in the list. <a href="https://camo.githubusercontent.com/8d52ed9541e243376b0824903076f293cee0a483c1487ed9d204e29637983c9a/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f686561704f726465722e706e67"><img src="https://camo.githubusercontent.com/8d52ed9541e243376b0824903076f293cee0a483c1487ed9d204e29637983c9a/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f686561704f726465722e706e67" /></a></li>
+</ul></li>
+<li><strong>heap order property:</strong> In a heap, for every node <strong>x</strong> with parent <strong>p</strong>, the key in <strong>p</strong> is smaller than or equal to the key in <strong>x</strong>.
+<ul>
+<li>For example, the root of the tree must be the smallest item in the tree</li>
+</ul></li>
+<li>When to use heap:
+<ul>
+<li>Priority Queue implementation</li>
+<li>whenever need quick access to largest/smallest item
+<ul>
+<li>Instant access to the item</li>
+<li>insertions are fast, allow in-place sorting</li>
+</ul></li>
+<li>More details can be seen in <a href="https://stackoverflow.com/questions/749199/when-would-i-want-to-use-a-heap">this discussion</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><strong>1.6.4 More Trees</strong></p>
+<ul>
+<li><em><strong>Parse tree</strong></em> can be used to represent real-world constructions like sentences or mathematical expressions.
+<ul>
+<li>A simple solution to keeping track of parents as we traverse the tree is to use a stack.</li>
+<li>When we want to descend to a child of the current node, we first push the current node on the stack.</li>
+<li>When we want to return to the parent of the current node, we pop the parent off the stack.</li>
+</ul></li>
+<li><em><strong>AVL Tree</strong></em>: a balanced binary tree. the AVL is named for its inventors G.M. Adelson-Velskii and E.M. Landis.
+<ul>
+<li>For each node: <em>balanceFactor</em> = <em>height(leftSubTree)</em> − <em>height(rightSubTree)</em></li>
+<li>a subtree is left-heavy if <em>balance_factor &gt; 0</em></li>
+<li>a subtree is right-heavy if <em>balance_factor &lt; 0</em></li>
+<li>a subtree is perfectly in balance if <em>balance_factor = 0</em></li>
+<li>For simplicity we can define a tree to be in balance if the balance factor is -1, 0, or 1.</li>
+<li>The number of nodes follows the pattern of <em>Fibonacci sequence</em>, as the number of elements get larger the ratio of Fi/Fi-1 closes to the golden ratio, so the time complexity is derived to be <strong>O(log n)</strong></li>
+</ul></li>
+<li><em><strong>Red-Black Tree</strong></em>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">Details in Wiki</a></li>
+</ul></li>
+<li><em><strong>B+ Tree</strong></em>: N-array tree
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/B%2B_tree">Details in Wiki</a></li>
+</ul></li>
+<li><em><strong>Trie</strong></em>
+<ul>
+<li><em>This is a common data structure in interviews</em></li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/trie.md">Template</a></li>
+</ul></li>
+<li><em><strong>Binary Index Tree (Fenwick Tree)</strong></em>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/">Binary Index Tree (Fenwick Tree)</a></li>
+<li><a href="https://leetcode.com/problems/count-of-smaller-numbers-after-self/">315. Count of Smaller Numbers After Self</a></li>
+</ul></li>
+</ul>
+<p><strong>1.7 Graph</strong></p>
+<p><strong>1.7.1 Vocabulary and Definitions</strong></p>
+<ul>
+<li><strong>Vertex (or Node):</strong> the name is called “key” and the additional information is called “payload”</li>
+<li><strong>Edge (or arc):</strong> it connects two vertices to show that there is a relationship between them.
+<ul>
+<li>One way edge is called <strong>directed graph (or digraph)</strong></li>
+</ul></li>
+<li><strong>Weight:</strong> edges maybe weighted to show that there is a coset to fo from one vertex to another.</li>
+<li><strong>Path:</strong> a sequence of vertices that are connected bny edges
+<ul>
+<li>Unweighted path length is the number of edges in the path, specifically n-</li>
+<li>Weighted path is the sum of the weights of all the edges in the path</li>
+</ul></li>
+<li><strong>Cycle:</strong> a path that starts and ends at the same vertex
+<ul>
+<li>A graph with no cycles is called an <strong>acyclic graph</strong>.</li>
+<li>A directed graph with no cycles is called a <strong>directed acyclic graph (or DAG)</strong></li>
+</ul></li>
+<li><strong>Graph:</strong> a graph (G) is composed with a set of vertices (V) and edges (E) Each edge is a tuple of vertex and weight (v,w). G=(V,E) where w,v∈V</li>
+</ul>
+<p><strong>1.7.2 Graph Representation</strong></p>
+<ul>
+<li>Adjacency Matrix (2D matrix)
+<ul>
+<li>Good when number of edges is large</li>
+<li>Each of the rows and columns represent a vertex in the graph.</li>
+<li>The value in the cell at the intersection of row v and column w indicates if there is an edge from vertex v to vertex w. It also represents the weight of the edge from vertex v to vertex w.</li>
+<li>When two vertices are connected by an edge, we say that they are <strong>adjacent</strong> <a href="https://camo.githubusercontent.com/72d272bc0fbbee67b8b6a54f62208602d612edc61052a55c7fa339bd955ff4df/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f61646a4d61742e706e67"><img src="https://camo.githubusercontent.com/72d272bc0fbbee67b8b6a54f62208602d612edc61052a55c7fa339bd955ff4df/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f61646a4d61742e706e67" /></a></li>
+<li><strong>sparse:</strong> most of the cells in the matrix are empty</li>
+</ul></li>
+<li>Adjacency List
+<ul>
+<li>space-efficient way for implementation</li>
+<li>keep a master list of all the vertices in the Graph object. each vertex is an element of the list with the vertex as ID and a list of its adjacent vertices as value <a href="https://camo.githubusercontent.com/57590f7986a5ec8f3e66b93edd06da65ed00c57b199a11d210a4aa10e19cf6ce/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f61646a6c6973742e706e67"><img src="https://camo.githubusercontent.com/57590f7986a5ec8f3e66b93edd06da65ed00c57b199a11d210a4aa10e19cf6ce/687474703a2f2f696e746572616374697665707974686f6e2e6f72672f72756e6573746f6e652f7374617469632f707974686f6e64732f5f696d616765732f61646a6c6973742e706e67" /></a></li>
+</ul></li>
+</ul>
+<p><strong>1.7.3 Graph Algorithms</strong></p>
+<ul>
+<li>Graph traversal: BFS &amp; DFS
+<ul>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/graph_traversal.md">Template</a></li>
+</ul></li>
+<li>Graph Algorithms:
+<ul>
+<li>Shortest Path:
+<ul>
+<li>Dijkstra’s Algorithm (Single source point)
+<ul>
+<li><em><strong>Essentially, this is a BFS using priority queue instead of queue</strong></em></li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/dijkstra.md">Template</a></li>
+</ul></li>
+<li>Floyd Warshall Algorithm (Multiple source point)</li>
+</ul></li>
+<li>Topological Sort
+<ul>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/topological_sort.md">Template</a></li>
+</ul></li>
+<li>Strongly Connected Components
+<ul>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/graph_SCC.md">More Info</a></li>
+</ul></li>
+<li>Prim’s Spanning Tree Algorithm
+<ul>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/prim_spanning_tree.md">More Info</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h4 id="chapter-2-common-algorithm-types">Chapter 2: Common Algorithm Types</h4>
+<p><strong>2.1 Brute Force</strong></p>
+<ul>
+<li>Most common algorithm</li>
+<li>Whenever you are facing a problem without many clues, you should solve it using brute force first, and observe the process and try to optimize your solution</li>
+</ul>
+<p><strong>2.2 Search</strong></p>
+<p><strong>2.2.1 Sequential Search</strong></p>
+<ul>
+<li>Sequential Search: visit the stored value in a sequence (use loop)</li>
+</ul>
+<p><strong>2.2.2 Binary Search</strong></p>
+<ul>
+<li>Examine the middle item of an ordered list</li>
+<li>KEY is the search interval</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/binary_search.md">Template</a></li>
+</ul>
+<p><strong>2.3 Sort</strong></p>
+<p><strong>2.3.1 Bubble Sort</strong></p>
+<ul>
+<li>Compares adjacent items and exchanges those that are out of order.</li>
+<li><strong>Short bubble:</strong> stop early if it finds that the list has become sorted.</li>
+<li>time complexity: O(n2)</li>
+</ul>
+<p><strong>2.3.2 Selection Sort</strong></p>
+<ul>
+<li>Looks for the largest value as it makes a pass and, after completing the pass, places it in the proper location.</li>
+<li>time complexity: O(n2)</li>
+</ul>
+<p><strong>2.3.3 Insertion Sort</strong></p>
+<ul>
+<li>Maintains a sorted sub-list in the lower positions of the list.</li>
+<li>Each new item is then “inserted” back into the previous sub-list such that the sorted sub-list is one item larger.</li>
+<li>time complexity: O(n2)</li>
+</ul>
+<p><strong>2.3.4 Shell Sort</strong></p>
+<ul>
+<li>Breaks the original list into a number of smaller sub-lists, each of which is sorted using an insertion sort.
+<ul>
+<li>the shell sort uses an increment <em>i</em>, sometimes called the <strong>gap</strong>, to create a sub-list by choosing all items that are <em>i</em> items apart.</li>
+<li>After all the sub-lists are sorted, it finally does a standard insertion sort</li>
+<li>time complexity goes between O(n) and O(n2), by changing the increment, a shell sort can perform at O(n^(3/2)).</li>
+</ul></li>
+</ul>
+<p><strong>2.3.5 Merge Sort</strong></p>
+<ul>
+<li>A recursive algorithm that continually splits a list in half.</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/merge_sort.md">Details and Templates</a></li>
+</ul>
+<p><strong>2.3.6 Quick Sort</strong></p>
+<ul>
+<li>First selects a value (<strong>pivot value</strong>), and then use this value to assist with splitting the list.</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/quick_sort.md">Details and Templates</a></li>
+</ul>
+<p><strong>2.3.7 Heap Sort</strong></p>
+<ul>
+<li>Use the property of heap to sort the list</li>
+</ul>
+<p><strong>2.4 Recursion</strong></p>
+<p><strong>Recursion</strong> is a method of solving problems that involves breaking a problem down into smaller and smaller sub-problems until you get to a small enough problem that it can be solved trivially. Usually recursion involves a function calling itself.</p>
+<p>Three Laws of Recursion:</p>
+<ol type="1">
+<li>A recursive algorithm must have a base case.</li>
+<li>A recursive algorithm must change its state and move toward the base case.</li>
+<li>A recursive algorithm must call itself, recursively.</li>
+</ol>
+<p>Recursive visualization: Fractal tree</p>
+<ul>
+<li>A <strong>fractal</strong> is something that looks the same at all different levels of magnification.</li>
+<li>A fractal tree: a small twig has the same shape and characteristics as a whole tree.</li>
+</ul>
+<p><strong>2.4.1 Recursive function in Python</strong></p>
+<ul>
+<li>When a function is called in Python, a stack frame is allocated to handle the local variables of the function.</li>
+<li>When the function returns, the return value is left on top of the stack for the calling function to access.</li>
+<li>Even though we are calling the same function over and over, each call creates a new scope for the variables that are local to the function.</li>
+</ul>
+<p><strong>2.5 Backtracking</strong></p>
+<ul>
+<li>a general algorithm for finding all (or some) solutions to constraint satisfaction problems (i.e. chess, puzzles, crosswords, verbal arithmetic, Sudoku, etc)</li>
+<li><a href="https://github.com/zmcddn/coding-interview-guide/blob/master/Templates/backtrack.md">Template</a></li>
+</ul>
+<p><strong>2.6 Dynamic Programming</strong></p>
+<p><strong>Dynamic Programming (DP)</strong> is an algorithm technique which is usually based on a recurrent formula and one (or some) starting states. - A sub-solution of the problem is constructed from previously found ones. - Usually used to find the extreme cases such as shortest path, best fit, smallest set, etc.</p>
+<p><strong>2.7 Divide and Conquer</strong></p>
+<ul>
+<li><strong>Divide</strong>: break into non-overlapping sub-problems of the same type (of problem)</li>
+<li><strong>Conquer</strong>: solve sub-problems</li>
+<li>the algorithm is to keep dividing and conquering, and finally combine them to get the solution</li>
+<li>the algorithm can be written in recursive or loop</li>
+</ul>
+<p><strong>2.8 Greedy</strong></p>
+<p><strong>Greedy algorithm:</strong></p>
+<ul>
+<li>find a safe move first</li>
+<li>prove safety</li>
+<li>solve subproblem (which should be similar to original problem)</li>
+<li>estimate running time</li>
+</ul>
+</body>
+</html>

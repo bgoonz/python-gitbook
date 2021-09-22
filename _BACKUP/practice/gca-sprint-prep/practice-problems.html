@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>practice-problems</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="practice-problems">Practice Problems</h1>
+<p>{% tabs %} {% tab title=“Arcade” %}</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> add(param1, param2):</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="cf">return</span> param1 <span class="op">+</span> param2</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="kw">def</span> centuryFromYear(year):</a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="cf">return</span> ((year <span class="op">-</span> <span class="dv">1</span>) <span class="op">//</span> <span class="dv">100</span>) <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="kw">def</span> checkPalindrome(inputString):</a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="cf">return</span> inputString <span class="op">==</span> inputString[::<span class="op">-</span><span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22"></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="kw">def</span> adjacentElementsProduct(inputArray):</a>
+<a class="sourceLine" id="cb1-24" title="24">    <span class="bu">max</span> <span class="op">=</span> inputArray[<span class="dv">0</span>] <span class="op">*</span> inputArray[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(inputArray) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="cf">if</span> inputArray[i] <span class="op">*</span> inputArray[i <span class="op">+</span> <span class="dv">1</span>] <span class="op">&gt;</span> <span class="bu">max</span>:</a>
+<a class="sourceLine" id="cb1-27" title="27">            <span class="bu">max</span> <span class="op">=</span> inputArray[i] <span class="op">*</span> inputArray[i <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="cf">return</span> <span class="bu">max</span></a>
+<a class="sourceLine" id="cb1-29" title="29"></a>
+<a class="sourceLine" id="cb1-30" title="30"></a>
+<a class="sourceLine" id="cb1-31" title="31"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-32" title="32"></a>
+<a class="sourceLine" id="cb1-33" title="33"></a>
+<a class="sourceLine" id="cb1-34" title="34"><span class="kw">def</span> shapeArea(n):</a>
+<a class="sourceLine" id="cb1-35" title="35">    <span class="bu">sum</span> <span class="op">=</span> n <span class="op">*</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-36" title="36">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, (n <span class="op">*</span> <span class="dv">2</span>) <span class="op">-</span> <span class="dv">1</span>, <span class="dv">2</span>):</a>
+<a class="sourceLine" id="cb1-37" title="37">        <span class="bu">sum</span> <span class="op">+=</span> i <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-38" title="38">    <span class="cf">return</span> <span class="bu">sum</span></a>
+<a class="sourceLine" id="cb1-39" title="39"></a>
+<a class="sourceLine" id="cb1-40" title="40"></a>
+<a class="sourceLine" id="cb1-41" title="41"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-42" title="42"></a>
+<a class="sourceLine" id="cb1-43" title="43"></a>
+<a class="sourceLine" id="cb1-44" title="44"><span class="kw">def</span> makeArrayConsecutive2(statues):</a>
+<a class="sourceLine" id="cb1-45" title="45">    <span class="cf">return</span> <span class="bu">max</span>(statues) <span class="op">-</span> <span class="bu">min</span>(statues) <span class="op">-</span> <span class="bu">len</span>(statues) <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-46" title="46"></a>
+<a class="sourceLine" id="cb1-47" title="47"></a>
+<a class="sourceLine" id="cb1-48" title="48"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-49" title="49"></a>
+<a class="sourceLine" id="cb1-50" title="50"></a>
+<a class="sourceLine" id="cb1-51" title="51"><span class="kw">def</span> almostIncreasingSequence(sequence):</a>
+<a class="sourceLine" id="cb1-52" title="52">    i <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-53" title="53">    <span class="cf">while</span> i <span class="op">&lt;</span> <span class="bu">len</span>(sequence) <span class="op">-</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-54" title="54">        <span class="cf">if</span> <span class="kw">not</span> sequence[i] <span class="op">&lt;</span> sequence[i <span class="op">+</span> <span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-55" title="55">            <span class="cf">if</span> increasingSequence(</a>
+<a class="sourceLine" id="cb1-56" title="56">                sequence[:i] <span class="op">+</span> sequence[i <span class="op">+</span> <span class="dv">1</span> :]</a>
+<a class="sourceLine" id="cb1-57" title="57">            ) <span class="kw">or</span> increasingSequence(sequence[: i <span class="op">+</span> <span class="dv">1</span>] <span class="op">+</span> sequence[i <span class="op">+</span> <span class="dv">2</span> :]):</a>
+<a class="sourceLine" id="cb1-58" title="58">                <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-59" title="59">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-60" title="60">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-61" title="61">        i <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-62" title="62">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-63" title="63"></a>
+<a class="sourceLine" id="cb1-64" title="64"></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-66" title="66"></a>
+<a class="sourceLine" id="cb1-67" title="67"></a>
+<a class="sourceLine" id="cb1-68" title="68"><span class="kw">def</span> increasingSequence(sequence):</a>
+<a class="sourceLine" id="cb1-69" title="69">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(sequence) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-70" title="70">        <span class="cf">if</span> <span class="kw">not</span> sequence[i] <span class="op">&lt;</span> sequence[i <span class="op">+</span> <span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-71" title="71">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-72" title="72">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-73" title="73"></a>
+<a class="sourceLine" id="cb1-74" title="74"></a>
+<a class="sourceLine" id="cb1-75" title="75"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-76" title="76"></a>
+<a class="sourceLine" id="cb1-77" title="77"></a>
+<a class="sourceLine" id="cb1-78" title="78"><span class="kw">def</span> matrixElementsSum(matrix):</a>
+<a class="sourceLine" id="cb1-79" title="79">    <span class="cf">if</span> <span class="bu">len</span>(matrix) <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-80" title="80">        <span class="cf">for</span> row <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(matrix)):</a>
+<a class="sourceLine" id="cb1-81" title="81">            <span class="cf">for</span> room <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matrix[row])):</a>
+<a class="sourceLine" id="cb1-82" title="82">                <span class="cf">if</span> matrix[row <span class="op">-</span> <span class="dv">1</span>][room] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-83" title="83">                    matrix[row][room] <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-84" title="84">    <span class="bu">sum</span> <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-85" title="85">    <span class="cf">for</span> row <span class="kw">in</span> matrix:</a>
+<a class="sourceLine" id="cb1-86" title="86">        <span class="cf">for</span> room <span class="kw">in</span> row:</a>
+<a class="sourceLine" id="cb1-87" title="87">            <span class="bu">sum</span> <span class="op">+=</span> room</a>
+<a class="sourceLine" id="cb1-88" title="88">    <span class="cf">return</span> <span class="bu">sum</span></a>
+<a class="sourceLine" id="cb1-89" title="89"></a>
+<a class="sourceLine" id="cb1-90" title="90"></a>
+<a class="sourceLine" id="cb1-91" title="91"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-92" title="92"></a>
+<a class="sourceLine" id="cb1-93" title="93"></a>
+<a class="sourceLine" id="cb1-94" title="94"><span class="kw">def</span> allLongestStrings(inputArray):</a>
+<a class="sourceLine" id="cb1-95" title="95">    length <span class="op">=</span> <span class="bu">max</span>([<span class="bu">len</span>(word) <span class="cf">for</span> word <span class="kw">in</span> inputArray])</a>
+<a class="sourceLine" id="cb1-96" title="96">    result <span class="op">=</span> [word <span class="cf">for</span> word <span class="kw">in</span> inputArray <span class="cf">if</span> <span class="bu">len</span>(word) <span class="op">==</span> length]</a>
+<a class="sourceLine" id="cb1-97" title="97">    <span class="cf">return</span> result</a>
+<a class="sourceLine" id="cb1-98" title="98"></a>
+<a class="sourceLine" id="cb1-99" title="99"></a>
+<a class="sourceLine" id="cb1-100" title="100"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-101" title="101"></a>
+<a class="sourceLine" id="cb1-102" title="102"></a>
+<a class="sourceLine" id="cb1-103" title="103"><span class="kw">def</span> commonCharacterCount(s1, s2):</a>
+<a class="sourceLine" id="cb1-104" title="104">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-105" title="105">    word2 <span class="op">=</span> <span class="bu">list</span>(s2)</a>
+<a class="sourceLine" id="cb1-106" title="106">    <span class="cf">for</span> letter <span class="kw">in</span> s1:</a>
+<a class="sourceLine" id="cb1-107" title="107">        <span class="cf">if</span> letter <span class="kw">in</span> word2:</a>
+<a class="sourceLine" id="cb1-108" title="108">            word2.remove(letter)</a>
+<a class="sourceLine" id="cb1-109" title="109">            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-110" title="110">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-111" title="111"></a>
+<a class="sourceLine" id="cb1-112" title="112"></a>
+<a class="sourceLine" id="cb1-113" title="113"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-114" title="114"></a>
+<a class="sourceLine" id="cb1-115" title="115"></a>
+<a class="sourceLine" id="cb1-116" title="116"><span class="kw">def</span> isLucky(n):</a>
+<a class="sourceLine" id="cb1-117" title="117">    string <span class="op">=</span> <span class="bu">str</span>(n)</a>
+<a class="sourceLine" id="cb1-118" title="118">    top <span class="op">=</span> [<span class="bu">int</span>(x) <span class="cf">for</span> x <span class="kw">in</span> string[: <span class="bu">len</span>(string) <span class="op">//</span> <span class="dv">2</span>]]</a>
+<a class="sourceLine" id="cb1-119" title="119">    bottom <span class="op">=</span> [<span class="bu">int</span>(x) <span class="cf">for</span> x <span class="kw">in</span> string[<span class="bu">len</span>(string) <span class="op">//</span> <span class="dv">2</span> :]]</a>
+<a class="sourceLine" id="cb1-120" title="120">    <span class="cf">return</span> <span class="bu">sum</span>(top) <span class="op">==</span> <span class="bu">sum</span>(bottom)</a>
+<a class="sourceLine" id="cb1-121" title="121"></a>
+<a class="sourceLine" id="cb1-122" title="122"></a>
+<a class="sourceLine" id="cb1-123" title="123"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-124" title="124"></a>
+<a class="sourceLine" id="cb1-125" title="125"></a>
+<a class="sourceLine" id="cb1-126" title="126"><span class="kw">def</span> sortByHeight(a):</a>
+<a class="sourceLine" id="cb1-127" title="127">    treePositions <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(a)) <span class="cf">if</span> a[x] <span class="op">==</span> <span class="dv">-1</span>]</a>
+<a class="sourceLine" id="cb1-128" title="128">    people <span class="op">=</span> <span class="bu">sorted</span>([x <span class="cf">for</span> x <span class="kw">in</span> a <span class="cf">if</span> x <span class="op">!=</span> <span class="dv">-1</span>])</a>
+<a class="sourceLine" id="cb1-129" title="129">    <span class="cf">for</span> tree <span class="kw">in</span> treePositions:</a>
+<a class="sourceLine" id="cb1-130" title="130">        people.insert(tree, <span class="dv">-1</span>)</a>
+<a class="sourceLine" id="cb1-131" title="131">    <span class="cf">return</span> people</a>
+<a class="sourceLine" id="cb1-132" title="132"></a>
+<a class="sourceLine" id="cb1-133" title="133"></a>
+<a class="sourceLine" id="cb1-134" title="134"><span class="im">import</span> re</a>
+<a class="sourceLine" id="cb1-135" title="135"></a>
+<a class="sourceLine" id="cb1-136" title="136"></a>
+<a class="sourceLine" id="cb1-137" title="137"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-138" title="138"></a>
+<a class="sourceLine" id="cb1-139" title="139"></a>
+<a class="sourceLine" id="cb1-140" title="140"><span class="kw">def</span> reverseParentheses(s):</a>
+<a class="sourceLine" id="cb1-141" title="141">    <span class="cf">while</span> <span class="st">&quot;(&quot;</span> <span class="kw">in</span> s:</a>
+<a class="sourceLine" id="cb1-142" title="142">        match <span class="op">=</span> re.search(<span class="st">&quot;\([^()]*\)&quot;</span>, s)</a>
+<a class="sourceLine" id="cb1-143" title="143">        match_string <span class="op">=</span> match.group(<span class="dv">0</span>)[<span class="dv">1</span> : <span class="bu">len</span>(match.group(<span class="dv">0</span>)) <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-144" title="144">        reversed_match_string <span class="op">=</span> match_string[::<span class="op">-</span><span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-145" title="145">        s <span class="op">=</span> s[: match.start()] <span class="op">+</span> reversed_match_string <span class="op">+</span> s[match.end() :]</a>
+<a class="sourceLine" id="cb1-146" title="146">    <span class="cf">return</span> s</a>
+<a class="sourceLine" id="cb1-147" title="147"></a>
+<a class="sourceLine" id="cb1-148" title="148"></a>
+<a class="sourceLine" id="cb1-149" title="149"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-150" title="150"></a>
+<a class="sourceLine" id="cb1-151" title="151"></a>
+<a class="sourceLine" id="cb1-152" title="152"><span class="kw">def</span> alternatingSums(a):</a>
+<a class="sourceLine" id="cb1-153" title="153">    team1 <span class="op">=</span> <span class="bu">sum</span>(a[<span class="dv">0</span>::<span class="dv">2</span>])</a>
+<a class="sourceLine" id="cb1-154" title="154">    team2 <span class="op">=</span> <span class="bu">sum</span>(a[<span class="dv">1</span>::<span class="dv">2</span>])</a>
+<a class="sourceLine" id="cb1-155" title="155">    <span class="cf">return</span> [team1, team2]</a>
+<a class="sourceLine" id="cb1-156" title="156"></a>
+<a class="sourceLine" id="cb1-157" title="157"></a>
+<a class="sourceLine" id="cb1-158" title="158"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-159" title="159"></a>
+<a class="sourceLine" id="cb1-160" title="160"></a>
+<a class="sourceLine" id="cb1-161" title="161"><span class="kw">def</span> addBorder(picture):</a>
+<a class="sourceLine" id="cb1-162" title="162">    picture <span class="op">=</span> [<span class="st">&quot;*&quot;</span> <span class="op">+</span> string <span class="op">+</span> <span class="st">&quot;*&quot;</span> <span class="cf">for</span> string <span class="kw">in</span> picture]</a>
+<a class="sourceLine" id="cb1-163" title="163">    picture <span class="op">=</span> [(<span class="st">&quot;*&quot;</span> <span class="op">*</span> <span class="bu">len</span>(picture[<span class="dv">0</span>]))] <span class="op">+</span> picture <span class="op">+</span> [(<span class="st">&quot;*&quot;</span> <span class="op">*</span> <span class="bu">len</span>(picture[<span class="dv">0</span>]))]</a>
+<a class="sourceLine" id="cb1-164" title="164">    <span class="cf">return</span> picture</a>
+<a class="sourceLine" id="cb1-165" title="165"></a>
+<a class="sourceLine" id="cb1-166" title="166"></a>
+<a class="sourceLine" id="cb1-167" title="167"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-168" title="168"></a>
+<a class="sourceLine" id="cb1-169" title="169"></a>
+<a class="sourceLine" id="cb1-170" title="170"><span class="kw">def</span> areSimilar(a, b):</a>
+<a class="sourceLine" id="cb1-171" title="171">    diff <span class="op">=</span> [i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(a)) <span class="cf">if</span> a[i] <span class="op">!=</span> b[i]]</a>
+<a class="sourceLine" id="cb1-172" title="172">    <span class="cf">if</span> <span class="bu">len</span>(diff) <span class="op">==</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-173" title="173">        b[diff[<span class="dv">0</span>]], b[diff[<span class="dv">1</span>]] <span class="op">=</span> b[diff[<span class="dv">1</span>]], b[diff[<span class="dv">0</span>]]</a>
+<a class="sourceLine" id="cb1-174" title="174">    <span class="cf">return</span> a <span class="op">==</span> b</a>
+<a class="sourceLine" id="cb1-175" title="175"></a>
+<a class="sourceLine" id="cb1-176" title="176"></a>
+<a class="sourceLine" id="cb1-177" title="177"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-178" title="178"></a>
+<a class="sourceLine" id="cb1-179" title="179"></a>
+<a class="sourceLine" id="cb1-180" title="180"><span class="kw">def</span> arrayChange(inputArray):</a>
+<a class="sourceLine" id="cb1-181" title="181">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-182" title="182">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(inputArray)):</a>
+<a class="sourceLine" id="cb1-183" title="183">        <span class="cf">if</span> inputArray[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">&gt;=</span> inputArray[i]:</a>
+<a class="sourceLine" id="cb1-184" title="184">            difference <span class="op">=</span> inputArray[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">-</span> inputArray[i]</a>
+<a class="sourceLine" id="cb1-185" title="185">            inputArray[i] <span class="op">+=</span> difference <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-186" title="186">            count <span class="op">+=</span> difference <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-187" title="187">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-188" title="188"></a>
+<a class="sourceLine" id="cb1-189" title="189"></a>
+<a class="sourceLine" id="cb1-190" title="190"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-191" title="191"></a>
+<a class="sourceLine" id="cb1-192" title="192"></a>
+<a class="sourceLine" id="cb1-193" title="193"><span class="kw">def</span> palindromeRearranging(inputString):</a>
+<a class="sourceLine" id="cb1-194" title="194">    inputList <span class="op">=</span> <span class="bu">sorted</span>(inputString)</a>
+<a class="sourceLine" id="cb1-195" title="195">    foundMiddle <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-196" title="196">    <span class="cf">while</span> <span class="bu">len</span>(inputList) <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-197" title="197">        <span class="cf">if</span> inputList[<span class="dv">0</span>] <span class="op">==</span> inputList[<span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-198" title="198">            <span class="kw">del</span> inputList[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-199" title="199">        <span class="cf">elif</span> <span class="kw">not</span> foundMiddle:</a>
+<a class="sourceLine" id="cb1-200" title="200">            foundMiddle <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-201" title="201">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-202" title="202">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-203" title="203">        <span class="kw">del</span> inputList[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb1-204" title="204">    <span class="cf">return</span> <span class="bu">len</span>(inputList) <span class="op">==</span> <span class="dv">0</span> <span class="kw">or</span> <span class="kw">not</span> foundMiddle</a>
+<a class="sourceLine" id="cb1-205" title="205"></a>
+<a class="sourceLine" id="cb1-206" title="206"></a>
+<a class="sourceLine" id="cb1-207" title="207"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-208" title="208"></a>
+<a class="sourceLine" id="cb1-209" title="209"></a>
+<a class="sourceLine" id="cb1-210" title="210"><span class="kw">def</span> areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight):</a>
+<a class="sourceLine" id="cb1-211" title="211">    sameHands <span class="op">=</span> yourLeft <span class="op">==</span> friendsLeft <span class="kw">and</span> yourRight <span class="op">==</span> friendsRight</a>
+<a class="sourceLine" id="cb1-212" title="212">    differentHands <span class="op">=</span> yourLeft <span class="op">==</span> friendsRight <span class="kw">and</span> yourRight <span class="op">==</span> friendsLeft</a>
+<a class="sourceLine" id="cb1-213" title="213">    <span class="cf">return</span> sameHands <span class="kw">or</span> differentHands</a>
+<a class="sourceLine" id="cb1-214" title="214"></a>
+<a class="sourceLine" id="cb1-215" title="215"></a>
+<a class="sourceLine" id="cb1-216" title="216"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-217" title="217"></a>
+<a class="sourceLine" id="cb1-218" title="218"></a>
+<a class="sourceLine" id="cb1-219" title="219"><span class="kw">def</span> arrayMaximalAdjacentDifference(inputArray):</a>
+<a class="sourceLine" id="cb1-220" title="220">    diffs <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-221" title="221">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(inputArray) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-222" title="222">        diffs.append(<span class="bu">abs</span>(inputArray[i] <span class="op">-</span> inputArray[i <span class="op">+</span> <span class="dv">1</span>]))</a>
+<a class="sourceLine" id="cb1-223" title="223">    <span class="cf">return</span> <span class="bu">max</span>(diffs)</a>
+<a class="sourceLine" id="cb1-224" title="224"></a>
+<a class="sourceLine" id="cb1-225" title="225"></a>
+<a class="sourceLine" id="cb1-226" title="226"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-227" title="227"></a>
+<a class="sourceLine" id="cb1-228" title="228"></a>
+<a class="sourceLine" id="cb1-229" title="229"><span class="kw">def</span> isIPv4Address(inputString):</a>
+<a class="sourceLine" id="cb1-230" title="230">    strings <span class="op">=</span> [string <span class="cf">for</span> string <span class="kw">in</span> inputString.split(<span class="st">&quot;.&quot;</span>)]</a>
+<a class="sourceLine" id="cb1-231" title="231">    <span class="cf">for</span> string <span class="kw">in</span> strings:</a>
+<a class="sourceLine" id="cb1-232" title="232">        <span class="cf">if</span> <span class="kw">not</span> string.isdecimal():</a>
+<a class="sourceLine" id="cb1-233" title="233">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-234" title="234">    nums <span class="op">=</span> [<span class="bu">int</span>(num) <span class="cf">for</span> num <span class="kw">in</span> strings]</a>
+<a class="sourceLine" id="cb1-235" title="235">    <span class="cf">return</span> <span class="bu">max</span>(nums) <span class="op">&lt;=</span> <span class="dv">255</span> <span class="kw">and</span> <span class="bu">min</span>(nums) <span class="op">&gt;=</span> <span class="dv">0</span> <span class="kw">and</span> <span class="bu">len</span>(nums) <span class="op">==</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-236" title="236"></a>
+<a class="sourceLine" id="cb1-237" title="237"></a>
+<a class="sourceLine" id="cb1-238" title="238"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-239" title="239"></a>
+<a class="sourceLine" id="cb1-240" title="240"></a>
+<a class="sourceLine" id="cb1-241" title="241"><span class="kw">def</span> avoidObstacles(inputArray):</a>
+<a class="sourceLine" id="cb1-242" title="242">    <span class="cf">for</span> length <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="bu">max</span>(inputArray) <span class="op">+</span> <span class="dv">2</span>):</a>
+<a class="sourceLine" id="cb1-243" title="243">        done <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-244" title="244">        jump <span class="op">=</span> length</a>
+<a class="sourceLine" id="cb1-245" title="245">        <span class="cf">while</span> jump <span class="op">&lt;</span> (<span class="bu">max</span>(inputArray) <span class="op">+</span> length):</a>
+<a class="sourceLine" id="cb1-246" title="246">            <span class="cf">if</span> jump <span class="kw">in</span> inputArray:</a>
+<a class="sourceLine" id="cb1-247" title="247">                done <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-248" title="248">                <span class="cf">break</span></a>
+<a class="sourceLine" id="cb1-249" title="249">            jump <span class="op">+=</span> length</a>
+<a class="sourceLine" id="cb1-250" title="250">        <span class="cf">if</span> done:</a>
+<a class="sourceLine" id="cb1-251" title="251">            <span class="cf">return</span> length</a>
+<a class="sourceLine" id="cb1-252" title="252"></a>
+<a class="sourceLine" id="cb1-253" title="253"></a>
+<a class="sourceLine" id="cb1-254" title="254"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-255" title="255"></a>
+<a class="sourceLine" id="cb1-256" title="256"></a>
+<a class="sourceLine" id="cb1-257" title="257"><span class="kw">def</span> boxBlur(image):</a>
+<a class="sourceLine" id="cb1-258" title="258">    outImage <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-259" title="259">    <span class="cf">for</span> row <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(image) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-260" title="260">        line <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-261" title="261">        <span class="cf">for</span> pixel <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(image[row]) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-262" title="262">            total <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb1-263" title="263">                image[row <span class="op">-</span> <span class="dv">1</span>][pixel <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-264" title="264">                <span class="op">+</span> image[row <span class="op">-</span> <span class="dv">1</span>][pixel]</a>
+<a class="sourceLine" id="cb1-265" title="265">                <span class="op">+</span> image[row <span class="op">-</span> <span class="dv">1</span>][pixel <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-266" title="266">                <span class="op">+</span> image[row][pixel <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-267" title="267">                <span class="op">+</span> image[row][pixel]</a>
+<a class="sourceLine" id="cb1-268" title="268">                <span class="op">+</span> image[row][pixel <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-269" title="269">                <span class="op">+</span> image[row <span class="op">+</span> <span class="dv">1</span>][pixel <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-270" title="270">                <span class="op">+</span> image[row <span class="op">+</span> <span class="dv">1</span>][pixel]</a>
+<a class="sourceLine" id="cb1-271" title="271">                <span class="op">+</span> image[row <span class="op">+</span> <span class="dv">1</span>][pixel <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-272" title="272">            )</a>
+<a class="sourceLine" id="cb1-273" title="273">            line.append(total <span class="op">//</span> <span class="dv">9</span>)</a>
+<a class="sourceLine" id="cb1-274" title="274">        outImage.append(line)</a>
+<a class="sourceLine" id="cb1-275" title="275">    <span class="cf">return</span> outImage</a>
+<a class="sourceLine" id="cb1-276" title="276"></a>
+<a class="sourceLine" id="cb1-277" title="277"></a>
+<a class="sourceLine" id="cb1-278" title="278"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-279" title="279"></a>
+<a class="sourceLine" id="cb1-280" title="280"></a>
+<a class="sourceLine" id="cb1-281" title="281"><span class="kw">def</span> minesweeper(matrix):</a>
+<a class="sourceLine" id="cb1-282" title="282">    TOP <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-283" title="283">    BOTTOM <span class="op">=</span> <span class="bu">len</span>(matrix) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-284" title="284">    LEFT <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-285" title="285">    RIGHT <span class="op">=</span> <span class="bu">len</span>(matrix[<span class="dv">0</span>]) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-286" title="286"></a>
+<a class="sourceLine" id="cb1-287" title="287">    outMatrix <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-288" title="288">    <span class="cf">for</span> row <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matrix)):</a>
+<a class="sourceLine" id="cb1-289" title="289">        outRow <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-290" title="290">        <span class="cf">for</span> cell <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matrix[row])):</a>
+<a class="sourceLine" id="cb1-291" title="291">            outRow.append(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb1-292" title="292">            <span class="cf">if</span> row <span class="op">!=</span> TOP:</a>
+<a class="sourceLine" id="cb1-293" title="293">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">-</span> <span class="dv">1</span>][cell]</a>
+<a class="sourceLine" id="cb1-294" title="294">            <span class="cf">if</span> row <span class="op">!=</span> BOTTOM:</a>
+<a class="sourceLine" id="cb1-295" title="295">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">+</span> <span class="dv">1</span>][cell]</a>
+<a class="sourceLine" id="cb1-296" title="296">            <span class="cf">if</span> cell <span class="op">!=</span> LEFT:</a>
+<a class="sourceLine" id="cb1-297" title="297">                outRow[cell] <span class="op">+=</span> matrix[row][cell <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-298" title="298">            <span class="cf">if</span> cell <span class="op">!=</span> RIGHT:</a>
+<a class="sourceLine" id="cb1-299" title="299">                outRow[cell] <span class="op">+=</span> matrix[row][cell <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-300" title="300">            <span class="cf">if</span> row <span class="op">!=</span> TOP <span class="kw">and</span> cell <span class="op">!=</span> LEFT:</a>
+<a class="sourceLine" id="cb1-301" title="301">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">-</span> <span class="dv">1</span>][cell <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-302" title="302">            <span class="cf">if</span> row <span class="op">!=</span> TOP <span class="kw">and</span> cell <span class="op">!=</span> RIGHT:</a>
+<a class="sourceLine" id="cb1-303" title="303">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">-</span> <span class="dv">1</span>][cell <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-304" title="304">            <span class="cf">if</span> row <span class="op">!=</span> BOTTOM <span class="kw">and</span> cell <span class="op">!=</span> LEFT:</a>
+<a class="sourceLine" id="cb1-305" title="305">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">+</span> <span class="dv">1</span>][cell <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-306" title="306">            <span class="cf">if</span> row <span class="op">!=</span> BOTTOM <span class="kw">and</span> cell <span class="op">!=</span> RIGHT:</a>
+<a class="sourceLine" id="cb1-307" title="307">                outRow[cell] <span class="op">+=</span> matrix[row <span class="op">+</span> <span class="dv">1</span>][cell <span class="op">+</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-308" title="308">        outMatrix.append(outRow)</a>
+<a class="sourceLine" id="cb1-309" title="309">    <span class="cf">return</span> outMatrix</a>
+<a class="sourceLine" id="cb1-310" title="310"></a>
+<a class="sourceLine" id="cb1-311" title="311"></a>
+<a class="sourceLine" id="cb1-312" title="312"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-313" title="313"></a>
+<a class="sourceLine" id="cb1-314" title="314"></a>
+<a class="sourceLine" id="cb1-315" title="315"><span class="kw">def</span> arrayReplace(inputArray, elemToReplace, substitutionElem):</a>
+<a class="sourceLine" id="cb1-316" title="316">    <span class="cf">return</span> [x <span class="cf">if</span> x <span class="op">!=</span> elemToReplace <span class="cf">else</span> substitutionElem <span class="cf">for</span> x <span class="kw">in</span> inputArray]</a>
+<a class="sourceLine" id="cb1-317" title="317"></a>
+<a class="sourceLine" id="cb1-318" title="318"></a>
+<a class="sourceLine" id="cb1-319" title="319"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-320" title="320"></a>
+<a class="sourceLine" id="cb1-321" title="321"></a>
+<a class="sourceLine" id="cb1-322" title="322"><span class="kw">def</span> evenDigitsOnly(n):</a>
+<a class="sourceLine" id="cb1-323" title="323">    <span class="cf">return</span> <span class="bu">all</span>(</a>
+<a class="sourceLine" id="cb1-324" title="324">        (<span class="va">True</span> <span class="cf">if</span> digit <span class="kw">in</span> (<span class="st">&quot;0&quot;</span>, <span class="st">&quot;2&quot;</span>, <span class="st">&quot;4&quot;</span>, <span class="st">&quot;6&quot;</span>, <span class="st">&quot;8&quot;</span>) <span class="cf">else</span> <span class="va">False</span> <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">str</span>(n))</a>
+<a class="sourceLine" id="cb1-325" title="325">    )</a>
+<a class="sourceLine" id="cb1-326" title="326"></a>
+<a class="sourceLine" id="cb1-327" title="327"></a>
+<a class="sourceLine" id="cb1-328" title="328"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-329" title="329"></a>
+<a class="sourceLine" id="cb1-330" title="330"></a>
+<a class="sourceLine" id="cb1-331" title="331"><span class="kw">def</span> variableName(name):</a>
+<a class="sourceLine" id="cb1-332" title="332">    <span class="cf">return</span> name.replace(<span class="st">&quot;_&quot;</span>, <span class="st">&quot;&quot;</span>).isalnum() <span class="kw">and</span> <span class="kw">not</span> name[<span class="dv">0</span>].isdigit()</a>
+<a class="sourceLine" id="cb1-333" title="333"></a>
+<a class="sourceLine" id="cb1-334" title="334"></a>
+<a class="sourceLine" id="cb1-335" title="335"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-336" title="336"></a>
+<a class="sourceLine" id="cb1-337" title="337"></a>
+<a class="sourceLine" id="cb1-338" title="338"><span class="kw">def</span> alphabeticShift(inputString):</a>
+<a class="sourceLine" id="cb1-339" title="339">    <span class="cf">return</span> <span class="st">&quot;&quot;</span>.join([<span class="bu">chr</span>(<span class="bu">ord</span>(x) <span class="op">+</span> <span class="dv">1</span>) <span class="cf">if</span> x <span class="op">!=</span> <span class="st">&quot;z&quot;</span> <span class="cf">else</span> <span class="st">&quot;a&quot;</span> <span class="cf">for</span> x <span class="kw">in</span> inputString])</a>
+<a class="sourceLine" id="cb1-340" title="340"></a>
+<a class="sourceLine" id="cb1-341" title="341"></a>
+<a class="sourceLine" id="cb1-342" title="342"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-343" title="343"></a>
+<a class="sourceLine" id="cb1-344" title="344"></a>
+<a class="sourceLine" id="cb1-345" title="345"><span class="kw">def</span> chessBoardCellColor(cell1, cell2):</a>
+<a class="sourceLine" id="cb1-346" title="346">    color1 <span class="op">=</span> ((<span class="bu">ord</span>(cell1[<span class="dv">0</span>]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&quot;A&quot;</span>)) <span class="op">+</span> <span class="bu">ord</span>(cell1[<span class="dv">1</span>]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&quot;1&quot;</span>)) <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-347" title="347">    color2 <span class="op">=</span> ((<span class="bu">ord</span>(cell2[<span class="dv">0</span>]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&quot;A&quot;</span>)) <span class="op">+</span> <span class="bu">ord</span>(cell2[<span class="dv">1</span>]) <span class="op">-</span> <span class="bu">ord</span>(<span class="st">&quot;1&quot;</span>)) <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-348" title="348">    <span class="cf">return</span> color1 <span class="op">==</span> color2</a>
+<a class="sourceLine" id="cb1-349" title="349"></a>
+<a class="sourceLine" id="cb1-350" title="350"></a>
+<a class="sourceLine" id="cb1-351" title="351"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-352" title="352"></a>
+<a class="sourceLine" id="cb1-353" title="353"></a>
+<a class="sourceLine" id="cb1-354" title="354"><span class="kw">def</span> circleOfNumbers(n, firstNumber):</a>
+<a class="sourceLine" id="cb1-355" title="355">    <span class="cf">return</span> (firstNumber <span class="op">+</span> (n <span class="op">/</span> <span class="dv">2</span>)) <span class="op">%</span> n</a>
+<a class="sourceLine" id="cb1-356" title="356"></a>
+<a class="sourceLine" id="cb1-357" title="357"></a>
+<a class="sourceLine" id="cb1-358" title="358"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-359" title="359"></a>
+<a class="sourceLine" id="cb1-360" title="360"></a>
+<a class="sourceLine" id="cb1-361" title="361"><span class="kw">def</span> depositProfit(deposit, rate, threshold):</a>
+<a class="sourceLine" id="cb1-362" title="362">    year <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-363" title="363">    <span class="cf">while</span> deposit <span class="op">&lt;</span> threshold:</a>
+<a class="sourceLine" id="cb1-364" title="364">        deposit <span class="op">*=</span> <span class="dv">1</span> <span class="op">+</span> (rate <span class="op">/</span> <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb1-365" title="365">        year <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-366" title="366">    <span class="cf">return</span> year</a>
+<a class="sourceLine" id="cb1-367" title="367"></a>
+<a class="sourceLine" id="cb1-368" title="368"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-369" title="369"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-370" title="370"></a>
+<a class="sourceLine" id="cb1-371" title="371"></a>
+<a class="sourceLine" id="cb1-372" title="372"><span class="kw">def</span> absoluteValuesSumMinimization(a):</a>
+<a class="sourceLine" id="cb1-373" title="373">    sums <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb1-374" title="374">    <span class="cf">for</span> num <span class="kw">in</span> a:</a>
+<a class="sourceLine" id="cb1-375" title="375">        total <span class="op">=</span> <span class="bu">sum</span>([<span class="bu">abs</span>(a[i] <span class="op">-</span> num) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(a))])</a>
+<a class="sourceLine" id="cb1-376" title="376">        <span class="cf">if</span> total <span class="kw">in</span> sums:</a>
+<a class="sourceLine" id="cb1-377" title="377">            sums[total] <span class="op">=</span> <span class="bu">min</span>(num, sums[total])</a>
+<a class="sourceLine" id="cb1-378" title="378">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-379" title="379">            sums[total] <span class="op">=</span> num</a>
+<a class="sourceLine" id="cb1-380" title="380">        <span class="bu">print</span>(sums)</a>
+<a class="sourceLine" id="cb1-381" title="381">    <span class="cf">return</span> sums[<span class="bu">min</span>(sums)]</a>
+<a class="sourceLine" id="cb1-382" title="382"></a>
+<a class="sourceLine" id="cb1-383" title="383"></a>
+<a class="sourceLine" id="cb1-384" title="384"><span class="im">import</span> itertools</a>
+<a class="sourceLine" id="cb1-385" title="385"></a>
+<a class="sourceLine" id="cb1-386" title="386"></a>
+<a class="sourceLine" id="cb1-387" title="387"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-388" title="388"></a>
+<a class="sourceLine" id="cb1-389" title="389"></a>
+<a class="sourceLine" id="cb1-390" title="390"><span class="kw">def</span> stringsRearrangement(inputArray):</a>
+<a class="sourceLine" id="cb1-391" title="391">    permutations <span class="op">=</span> itertools.permutations(inputArray)</a>
+<a class="sourceLine" id="cb1-392" title="392">    <span class="cf">for</span> array <span class="kw">in</span> permutations:</a>
+<a class="sourceLine" id="cb1-393" title="393">        <span class="cf">if</span> testArrangement(array):</a>
+<a class="sourceLine" id="cb1-394" title="394">            <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-395" title="395">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-396" title="396"></a>
+<a class="sourceLine" id="cb1-397" title="397"></a>
+<a class="sourceLine" id="cb1-398" title="398"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-399" title="399"></a>
+<a class="sourceLine" id="cb1-400" title="400"></a>
+<a class="sourceLine" id="cb1-401" title="401"><span class="kw">def</span> testArrangement(array):</a>
+<a class="sourceLine" id="cb1-402" title="402">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(array) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-403" title="403">        <span class="cf">if</span> <span class="bu">sum</span>([a <span class="op">!=</span> b <span class="cf">for</span> a, b <span class="kw">in</span> <span class="bu">zip</span>(array[i], array[i <span class="op">+</span> <span class="dv">1</span>])]) <span class="op">!=</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-404" title="404">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-405" title="405">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-406" title="406"></a>
+<a class="sourceLine" id="cb1-407" title="407"></a>
+<a class="sourceLine" id="cb1-408" title="408"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-409" title="409"></a>
+<a class="sourceLine" id="cb1-410" title="410"></a>
+<a class="sourceLine" id="cb1-411" title="411"><span class="kw">def</span> extractEachKth(inputArray, k):</a>
+<a class="sourceLine" id="cb1-412" title="412">    <span class="cf">return</span> [inputArray[x] <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(inputArray)) <span class="cf">if</span> (x <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> k <span class="op">!=</span> <span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb1-413" title="413"></a>
+<a class="sourceLine" id="cb1-414" title="414"></a>
+<a class="sourceLine" id="cb1-415" title="415"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-416" title="416"></a>
+<a class="sourceLine" id="cb1-417" title="417"></a>
+<a class="sourceLine" id="cb1-418" title="418"><span class="kw">def</span> firstDigit(inputString):</a>
+<a class="sourceLine" id="cb1-419" title="419">    <span class="cf">for</span> char <span class="kw">in</span> inputString:</a>
+<a class="sourceLine" id="cb1-420" title="420">        <span class="cf">if</span> char.isdigit():</a>
+<a class="sourceLine" id="cb1-421" title="421">            <span class="cf">return</span> char</a>
+<a class="sourceLine" id="cb1-422" title="422"></a>
+<a class="sourceLine" id="cb1-423" title="423"></a>
+<a class="sourceLine" id="cb1-424" title="424"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-425" title="425"></a>
+<a class="sourceLine" id="cb1-426" title="426"></a>
+<a class="sourceLine" id="cb1-427" title="427"><span class="kw">def</span> differentSymbolsNaive(s):</a>
+<a class="sourceLine" id="cb1-428" title="428">    <span class="cf">return</span> <span class="bu">len</span>(<span class="bu">set</span>(s))</a>
+<a class="sourceLine" id="cb1-429" title="429"></a>
+<a class="sourceLine" id="cb1-430" title="430"></a>
+<a class="sourceLine" id="cb1-431" title="431"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-432" title="432"></a>
+<a class="sourceLine" id="cb1-433" title="433"></a>
+<a class="sourceLine" id="cb1-434" title="434"><span class="kw">def</span> arrayMaxConsecutiveSum(inputArray, k):</a>
+<a class="sourceLine" id="cb1-435" title="435">    sums <span class="op">=</span> [<span class="bu">sum</span>(inputArray[:k])]</a>
+<a class="sourceLine" id="cb1-436" title="436">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(inputArray) <span class="op">-</span> k <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-437" title="437">        sums.append(sums[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">-</span> inputArray[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> inputArray[i <span class="op">+</span> k <span class="op">-</span> <span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-438" title="438">    <span class="cf">return</span> <span class="bu">max</span>(sums)</a>
+<a class="sourceLine" id="cb1-439" title="439"></a>
+<a class="sourceLine" id="cb1-440" title="440"></a>
+<a class="sourceLine" id="cb1-441" title="441"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-442" title="442"></a>
+<a class="sourceLine" id="cb1-443" title="443"></a>
+<a class="sourceLine" id="cb1-444" title="444"><span class="kw">def</span> growingPlant(upSpeed, downSpeed, desiredHeight):</a>
+<a class="sourceLine" id="cb1-445" title="445">    height <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-446" title="446">    days <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-447" title="447">    height <span class="op">+=</span> upSpeed</a>
+<a class="sourceLine" id="cb1-448" title="448">    <span class="cf">while</span> height <span class="op">&lt;</span> desiredHeight:</a>
+<a class="sourceLine" id="cb1-449" title="449">        days <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-450" title="450">        height <span class="op">-=</span> downSpeed</a>
+<a class="sourceLine" id="cb1-451" title="451">        height <span class="op">+=</span> upSpeed</a>
+<a class="sourceLine" id="cb1-452" title="452">    <span class="cf">return</span> days</a>
+<a class="sourceLine" id="cb1-453" title="453"></a>
+<a class="sourceLine" id="cb1-454" title="454"></a>
+<a class="sourceLine" id="cb1-455" title="455"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-456" title="456"></a>
+<a class="sourceLine" id="cb1-457" title="457"></a>
+<a class="sourceLine" id="cb1-458" title="458"><span class="kw">def</span> knapsackLight(value1, weight1, value2, weight2, maxW):</a>
+<a class="sourceLine" id="cb1-459" title="459">    <span class="cf">if</span> weight1 <span class="op">+</span> weight2 <span class="op">&lt;=</span> maxW:</a>
+<a class="sourceLine" id="cb1-460" title="460">        <span class="cf">return</span> value1 <span class="op">+</span> value2</a>
+<a class="sourceLine" id="cb1-461" title="461">    <span class="cf">if</span> weight1 <span class="op">&lt;=</span> maxW <span class="kw">and</span> (weight2 <span class="op">&gt;</span> maxW <span class="kw">or</span> value1 <span class="op">&gt;=</span> value2):</a>
+<a class="sourceLine" id="cb1-462" title="462">        <span class="cf">return</span> value1</a>
+<a class="sourceLine" id="cb1-463" title="463">    <span class="cf">if</span> weight2 <span class="op">&lt;=</span> maxW <span class="kw">and</span> (weight1 <span class="op">&gt;</span> maxW <span class="kw">or</span> value2 <span class="op">&gt;=</span> value1):</a>
+<a class="sourceLine" id="cb1-464" title="464">        <span class="cf">return</span> value2</a>
+<a class="sourceLine" id="cb1-465" title="465">    <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-466" title="466"></a>
+<a class="sourceLine" id="cb1-467" title="467"></a>
+<a class="sourceLine" id="cb1-468" title="468"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-469" title="469"></a>
+<a class="sourceLine" id="cb1-470" title="470"></a>
+<a class="sourceLine" id="cb1-471" title="471"><span class="kw">def</span> longestDigitsPrefix(inputString):</a>
+<a class="sourceLine" id="cb1-472" title="472">    <span class="cf">for</span> char <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(inputString)):</a>
+<a class="sourceLine" id="cb1-473" title="473">        <span class="cf">if</span> <span class="kw">not</span> inputString[char].isdigit():</a>
+<a class="sourceLine" id="cb1-474" title="474">            <span class="cf">return</span> inputString[:char]</a>
+<a class="sourceLine" id="cb1-475" title="475">    <span class="cf">return</span> inputString</a>
+<a class="sourceLine" id="cb1-476" title="476"></a>
+<a class="sourceLine" id="cb1-477" title="477"></a>
+<a class="sourceLine" id="cb1-478" title="478"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-479" title="479"></a>
+<a class="sourceLine" id="cb1-480" title="480"></a>
+<a class="sourceLine" id="cb1-481" title="481"><span class="kw">def</span> digitDegree(n):</a>
+<a class="sourceLine" id="cb1-482" title="482">    degree <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-483" title="483">    <span class="cf">while</span> <span class="bu">len</span>(<span class="bu">str</span>(n)) <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-484" title="484">        n <span class="op">=</span> <span class="bu">sum</span>((<span class="bu">int</span>(digit) <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">str</span>(n)))</a>
+<a class="sourceLine" id="cb1-485" title="485">        degree <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-486" title="486">    <span class="cf">return</span> degree</a>
+<a class="sourceLine" id="cb1-487" title="487"></a>
+<a class="sourceLine" id="cb1-488" title="488"></a>
+<a class="sourceLine" id="cb1-489" title="489"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-490" title="490"></a>
+<a class="sourceLine" id="cb1-491" title="491"></a>
+<a class="sourceLine" id="cb1-492" title="492"><span class="kw">def</span> bishopAndPawn(bishop, pawn):</a>
+<a class="sourceLine" id="cb1-493" title="493">    <span class="cf">return</span> <span class="bu">abs</span>(<span class="bu">ord</span>(bishop[<span class="dv">0</span>]) <span class="op">-</span> <span class="bu">ord</span>(pawn[<span class="dv">0</span>])) <span class="op">==</span> <span class="bu">abs</span>(<span class="bu">ord</span>(bishop[<span class="dv">1</span>]) <span class="op">-</span> <span class="bu">ord</span>(pawn[<span class="dv">1</span>]))</a>
+<a class="sourceLine" id="cb1-494" title="494"></a>
+<a class="sourceLine" id="cb1-495" title="495"></a>
+<a class="sourceLine" id="cb1-496" title="496"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-497" title="497"></a>
+<a class="sourceLine" id="cb1-498" title="498"></a>
+<a class="sourceLine" id="cb1-499" title="499"><span class="kw">def</span> isBeautifulString(inputString):</a>
+<a class="sourceLine" id="cb1-500" title="500">    <span class="cf">for</span> letter <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">ord</span>(<span class="st">&quot;a&quot;</span>), <span class="bu">ord</span>(<span class="st">&quot;z&quot;</span>)):</a>
+<a class="sourceLine" id="cb1-501" title="501">        <span class="cf">if</span> inputString.count(<span class="bu">chr</span>(letter)) <span class="op">&lt;</span> inputString.count(<span class="bu">chr</span>(letter <span class="op">+</span> <span class="dv">1</span>)):</a>
+<a class="sourceLine" id="cb1-502" title="502">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-503" title="503">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-504" title="504"></a>
+<a class="sourceLine" id="cb1-505" title="505"></a>
+<a class="sourceLine" id="cb1-506" title="506"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-507" title="507"></a>
+<a class="sourceLine" id="cb1-508" title="508"></a>
+<a class="sourceLine" id="cb1-509" title="509"><span class="kw">def</span> findEmailDomain(address):</a>
+<a class="sourceLine" id="cb1-510" title="510">    <span class="cf">return</span> address[address.rfind(<span class="st">&quot;@&quot;</span>) <span class="op">+</span> <span class="dv">1</span> :]</a>
+<a class="sourceLine" id="cb1-511" title="511"></a>
+<a class="sourceLine" id="cb1-512" title="512"></a>
+<a class="sourceLine" id="cb1-513" title="513"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-514" title="514"></a>
+<a class="sourceLine" id="cb1-515" title="515"></a>
+<a class="sourceLine" id="cb1-516" title="516"><span class="kw">def</span> buildPalindrome(st):</a>
+<a class="sourceLine" id="cb1-517" title="517">    <span class="cf">if</span> st <span class="op">==</span> st[::<span class="op">-</span><span class="dv">1</span>]:  <span class="co"># Check for initial palindrome</span></a>
+<a class="sourceLine" id="cb1-518" title="518">        <span class="cf">return</span> st</a>
+<a class="sourceLine" id="cb1-519" title="519">    index <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-520" title="520">    subStr <span class="op">=</span> st[index:]</a>
+<a class="sourceLine" id="cb1-521" title="521">    <span class="cf">while</span> subStr <span class="op">!=</span> subStr[::<span class="op">-</span><span class="dv">1</span>]:  <span class="co"># while substring is not a palindrome</span></a>
+<a class="sourceLine" id="cb1-522" title="522">        index <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-523" title="523">        subStr <span class="op">=</span> st[index:]</a>
+<a class="sourceLine" id="cb1-524" title="524">    <span class="cf">return</span> st <span class="op">+</span> st[index <span class="op">-</span> <span class="dv">1</span> :: <span class="dv">-1</span>]</a>
+<a class="sourceLine" id="cb1-525" title="525"></a>
+<a class="sourceLine" id="cb1-526" title="526"></a>
+<a class="sourceLine" id="cb1-527" title="527"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-528" title="528"></a>
+<a class="sourceLine" id="cb1-529" title="529"></a>
+<a class="sourceLine" id="cb1-530" title="530"><span class="kw">def</span> electionsWinners(votes, k):</a>
+<a class="sourceLine" id="cb1-531" title="531">    winners <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-532" title="532">    current_winner <span class="op">=</span> <span class="bu">max</span>(votes)</a>
+<a class="sourceLine" id="cb1-533" title="533">    <span class="cf">for</span> candidate <span class="kw">in</span> votes:</a>
+<a class="sourceLine" id="cb1-534" title="534">        <span class="cf">if</span> k <span class="op">&gt;</span> <span class="dv">0</span> <span class="kw">and</span> candidate <span class="op">+</span> k <span class="op">&gt;</span> current_winner:</a>
+<a class="sourceLine" id="cb1-535" title="535">            winners <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-536" title="536">        <span class="cf">if</span> k <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> candidate <span class="op">==</span> current_winner <span class="kw">and</span> votes.count(candidate) <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-537" title="537">            winners <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-538" title="538">    <span class="cf">return</span> winners</a>
+<a class="sourceLine" id="cb1-539" title="539"></a>
+<a class="sourceLine" id="cb1-540" title="540"></a>
+<a class="sourceLine" id="cb1-541" title="541"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-542" title="542"></a>
+<a class="sourceLine" id="cb1-543" title="543"></a>
+<a class="sourceLine" id="cb1-544" title="544"><span class="kw">def</span> isMAC48Address(inputString):</a>
+<a class="sourceLine" id="cb1-545" title="545">    hex_chars <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb1-546" title="546">        <span class="st">&quot;1&quot;</span>,</a>
+<a class="sourceLine" id="cb1-547" title="547">        <span class="st">&quot;2&quot;</span>,</a>
+<a class="sourceLine" id="cb1-548" title="548">        <span class="st">&quot;3&quot;</span>,</a>
+<a class="sourceLine" id="cb1-549" title="549">        <span class="st">&quot;4&quot;</span>,</a>
+<a class="sourceLine" id="cb1-550" title="550">        <span class="st">&quot;5&quot;</span>,</a>
+<a class="sourceLine" id="cb1-551" title="551">        <span class="st">&quot;6&quot;</span>,</a>
+<a class="sourceLine" id="cb1-552" title="552">        <span class="st">&quot;7&quot;</span>,</a>
+<a class="sourceLine" id="cb1-553" title="553">        <span class="st">&quot;8&quot;</span>,</a>
+<a class="sourceLine" id="cb1-554" title="554">        <span class="st">&quot;9&quot;</span>,</a>
+<a class="sourceLine" id="cb1-555" title="555">        <span class="st">&quot;0&quot;</span>,</a>
+<a class="sourceLine" id="cb1-556" title="556">        <span class="st">&quot;A&quot;</span>,</a>
+<a class="sourceLine" id="cb1-557" title="557">        <span class="st">&quot;B&quot;</span>,</a>
+<a class="sourceLine" id="cb1-558" title="558">        <span class="st">&quot;C&quot;</span>,</a>
+<a class="sourceLine" id="cb1-559" title="559">        <span class="st">&quot;D&quot;</span>,</a>
+<a class="sourceLine" id="cb1-560" title="560">        <span class="st">&quot;E&quot;</span>,</a>
+<a class="sourceLine" id="cb1-561" title="561">        <span class="st">&quot;F&quot;</span>,</a>
+<a class="sourceLine" id="cb1-562" title="562">        <span class="st">&quot;a&quot;</span>,</a>
+<a class="sourceLine" id="cb1-563" title="563">        <span class="st">&quot;b&quot;</span>,</a>
+<a class="sourceLine" id="cb1-564" title="564">        <span class="st">&quot;c&quot;</span>,</a>
+<a class="sourceLine" id="cb1-565" title="565">        <span class="st">&quot;d&quot;</span>,</a>
+<a class="sourceLine" id="cb1-566" title="566">        <span class="st">&quot;e&quot;</span>,</a>
+<a class="sourceLine" id="cb1-567" title="567">        <span class="st">&quot;f&quot;</span>,</a>
+<a class="sourceLine" id="cb1-568" title="568">    )</a>
+<a class="sourceLine" id="cb1-569" title="569">    groups <span class="op">=</span> inputString.split(<span class="st">&quot;-&quot;</span>)</a>
+<a class="sourceLine" id="cb1-570" title="570">    <span class="cf">if</span> <span class="bu">len</span>(groups) <span class="op">!=</span> <span class="dv">6</span>:</a>
+<a class="sourceLine" id="cb1-571" title="571">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-572" title="572">    <span class="cf">if</span> <span class="kw">not</span> <span class="bu">all</span>((<span class="bu">len</span>(group) <span class="op">==</span> <span class="dv">2</span> <span class="cf">for</span> group <span class="kw">in</span> groups)):</a>
+<a class="sourceLine" id="cb1-573" title="573">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-574" title="574">    <span class="cf">if</span> <span class="kw">not</span> <span class="bu">all</span>((group[<span class="dv">0</span>] <span class="kw">in</span> hex_chars <span class="kw">and</span> group[<span class="dv">1</span>] <span class="kw">in</span> hex_chars <span class="cf">for</span> group <span class="kw">in</span> groups)):</a>
+<a class="sourceLine" id="cb1-575" title="575">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-576" title="576">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-577" title="577"></a>
+<a class="sourceLine" id="cb1-578" title="578"></a>
+<a class="sourceLine" id="cb1-579" title="579"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-580" title="580"></a>
+<a class="sourceLine" id="cb1-581" title="581"></a>
+<a class="sourceLine" id="cb1-582" title="582"><span class="kw">def</span> isDigit(symbol):</a>
+<a class="sourceLine" id="cb1-583" title="583">    <span class="cf">return</span> symbol.isdigit()</a>
+<a class="sourceLine" id="cb1-584" title="584"></a>
+<a class="sourceLine" id="cb1-585" title="585"></a>
+<a class="sourceLine" id="cb1-586" title="586"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-587" title="587"></a>
+<a class="sourceLine" id="cb1-588" title="588"></a>
+<a class="sourceLine" id="cb1-589" title="589"><span class="kw">def</span> lineEncoding(s):</a>
+<a class="sourceLine" id="cb1-590" title="590">    count <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-591" title="591">    output <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-592" title="592">    <span class="cf">for</span> char <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(s)):</a>
+<a class="sourceLine" id="cb1-593" title="593">        <span class="cf">if</span> s[char] <span class="op">==</span> s[char <span class="op">-</span> <span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-594" title="594">            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-595" title="595">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-596" title="596">            <span class="cf">if</span> count <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-597" title="597">                output.append(<span class="bu">str</span>(count) <span class="op">+</span> s[char <span class="op">-</span> <span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-598" title="598">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-599" title="599">                output.append(s[char <span class="op">-</span> <span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-600" title="600">            count <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-601" title="601">    <span class="cf">if</span> s[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>] <span class="op">==</span> s[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">2</span>]:</a>
+<a class="sourceLine" id="cb1-602" title="602">        output.append(<span class="bu">str</span>(count) <span class="op">+</span> s[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-603" title="603">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-604" title="604">        output.append(s[<span class="bu">len</span>(s) <span class="op">-</span> <span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-605" title="605">    <span class="cf">return</span> <span class="st">&quot;&quot;</span>.join(output)</a>
+<a class="sourceLine" id="cb1-606" title="606"></a>
+<a class="sourceLine" id="cb1-607" title="607"></a>
+<a class="sourceLine" id="cb1-608" title="608"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-609" title="609"></a>
+<a class="sourceLine" id="cb1-610" title="610"></a>
+<a class="sourceLine" id="cb1-611" title="611"><span class="kw">def</span> chessKnight(cell):</a>
+<a class="sourceLine" id="cb1-612" title="612">    moves <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-613" title="613">    <span class="co"># Starting at the top left, going counter-clockwise</span></a>
+<a class="sourceLine" id="cb1-614" title="614">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;b&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;6&quot;</span>):</a>
+<a class="sourceLine" id="cb1-615" title="615">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-616" title="616">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;c&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;7&quot;</span>):</a>
+<a class="sourceLine" id="cb1-617" title="617">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-618" title="618">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;c&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;2&quot;</span>):</a>
+<a class="sourceLine" id="cb1-619" title="619">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-620" title="620">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;b&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;3&quot;</span>):</a>
+<a class="sourceLine" id="cb1-621" title="621">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-622" title="622">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;g&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;3&quot;</span>):</a>
+<a class="sourceLine" id="cb1-623" title="623">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-624" title="624">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;f&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&gt;=</span> <span class="bu">ord</span>(<span class="st">&quot;2&quot;</span>):</a>
+<a class="sourceLine" id="cb1-625" title="625">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-626" title="626">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;f&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;7&quot;</span>):</a>
+<a class="sourceLine" id="cb1-627" title="627">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-628" title="628">    <span class="cf">if</span> <span class="bu">ord</span>(cell[<span class="dv">0</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;g&quot;</span>) <span class="kw">and</span> <span class="bu">ord</span>(cell[<span class="dv">1</span>]) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;6&quot;</span>):</a>
+<a class="sourceLine" id="cb1-629" title="629">        moves <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-630" title="630"></a>
+<a class="sourceLine" id="cb1-631" title="631">    <span class="cf">return</span> moves</a>
+<a class="sourceLine" id="cb1-632" title="632"></a>
+<a class="sourceLine" id="cb1-633" title="633"></a>
+<a class="sourceLine" id="cb1-634" title="634"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-635" title="635"></a>
+<a class="sourceLine" id="cb1-636" title="636"></a>
+<a class="sourceLine" id="cb1-637" title="637"><span class="kw">def</span> deleteDigit(n):</a>
+<a class="sourceLine" id="cb1-638" title="638">    num <span class="op">=</span> <span class="bu">str</span>(n)</a>
+<a class="sourceLine" id="cb1-639" title="639">    highest <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-640" title="640">    <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(num)):</a>
+<a class="sourceLine" id="cb1-641" title="641">        output <span class="op">=</span> num[:digit] <span class="op">+</span> num[digit <span class="op">+</span> <span class="dv">1</span> :]</a>
+<a class="sourceLine" id="cb1-642" title="642">        <span class="cf">if</span> <span class="bu">int</span>(output) <span class="op">&gt;</span> <span class="bu">int</span>(highest):</a>
+<a class="sourceLine" id="cb1-643" title="643">            highest <span class="op">=</span> output</a>
+<a class="sourceLine" id="cb1-644" title="644">    <span class="cf">return</span> <span class="bu">int</span>(highest)</a>
+<a class="sourceLine" id="cb1-645" title="645"></a>
+<a class="sourceLine" id="cb1-646" title="646"></a>
+<a class="sourceLine" id="cb1-647" title="647"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-648" title="648"></a>
+<a class="sourceLine" id="cb1-649" title="649"></a>
+<a class="sourceLine" id="cb1-650" title="650"><span class="kw">def</span> longestWord(text):</a>
+<a class="sourceLine" id="cb1-651" title="651">    longest <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-652" title="652">    word <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-653" title="653">    <span class="cf">for</span> char <span class="kw">in</span> text:</a>
+<a class="sourceLine" id="cb1-654" title="654">        <span class="cf">if</span> <span class="bu">ord</span>(<span class="st">&quot;A&quot;</span>) <span class="op">&lt;=</span> <span class="bu">ord</span>(char) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;Z&quot;</span>) <span class="kw">or</span> <span class="bu">ord</span>(<span class="st">&quot;a&quot;</span>) <span class="op">&lt;=</span> <span class="bu">ord</span>(char) <span class="op">&lt;=</span> <span class="bu">ord</span>(<span class="st">&quot;z&quot;</span>):</a>
+<a class="sourceLine" id="cb1-655" title="655">            word.append(char)</a>
+<a class="sourceLine" id="cb1-656" title="656">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-657" title="657">            <span class="cf">if</span> <span class="bu">len</span>(word) <span class="op">&gt;</span> <span class="bu">len</span>(longest):</a>
+<a class="sourceLine" id="cb1-658" title="658">                longest <span class="op">=</span> word</a>
+<a class="sourceLine" id="cb1-659" title="659">            word <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-660" title="660">    <span class="cf">if</span> <span class="bu">len</span>(word) <span class="op">&gt;</span> <span class="bu">len</span>(longest):</a>
+<a class="sourceLine" id="cb1-661" title="661">        longest <span class="op">=</span> word</a>
+<a class="sourceLine" id="cb1-662" title="662">    <span class="cf">return</span> <span class="st">&quot;&quot;</span>.join(longest)</a>
+<a class="sourceLine" id="cb1-663" title="663"></a>
+<a class="sourceLine" id="cb1-664" title="664"></a>
+<a class="sourceLine" id="cb1-665" title="665"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-666" title="666"></a>
+<a class="sourceLine" id="cb1-667" title="667"></a>
+<a class="sourceLine" id="cb1-668" title="668"><span class="kw">def</span> validTime(time):</a>
+<a class="sourceLine" id="cb1-669" title="669">    groups <span class="op">=</span> time.split(<span class="st">&quot;:&quot;</span>)</a>
+<a class="sourceLine" id="cb1-670" title="670">    <span class="cf">if</span> <span class="bu">len</span>(groups) <span class="op">!=</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-671" title="671">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-672" title="672">    <span class="cf">if</span> <span class="kw">not</span> (groups[<span class="dv">0</span>].isdigit() <span class="kw">and</span> groups[<span class="dv">1</span>].isdigit()):</a>
+<a class="sourceLine" id="cb1-673" title="673">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-674" title="674">    <span class="cf">if</span> <span class="bu">int</span>(groups[<span class="dv">0</span>]) <span class="op">&gt;</span> <span class="dv">23</span> <span class="kw">or</span> <span class="bu">int</span>(groups[<span class="dv">1</span>]) <span class="op">&gt;</span> <span class="dv">59</span>:</a>
+<a class="sourceLine" id="cb1-675" title="675">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-676" title="676">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-677" title="677"></a>
+<a class="sourceLine" id="cb1-678" title="678"></a>
+<a class="sourceLine" id="cb1-679" title="679"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-680" title="680"></a>
+<a class="sourceLine" id="cb1-681" title="681"></a>
+<a class="sourceLine" id="cb1-682" title="682"><span class="kw">def</span> sumUpNumbers(inputString):</a>
+<a class="sourceLine" id="cb1-683" title="683">    total <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-684" title="684">    current_num <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-685" title="685">    <span class="cf">for</span> char <span class="kw">in</span> inputString:</a>
+<a class="sourceLine" id="cb1-686" title="686">        <span class="cf">if</span> char.isdigit():</a>
+<a class="sourceLine" id="cb1-687" title="687">            current_num.append(char)</a>
+<a class="sourceLine" id="cb1-688" title="688">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-689" title="689">            <span class="cf">if</span> <span class="bu">len</span>(current_num) <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-690" title="690">                num <span class="op">=</span> <span class="bu">int</span>(<span class="st">&quot;&quot;</span>.join(current_num))</a>
+<a class="sourceLine" id="cb1-691" title="691">                total <span class="op">+=</span> num</a>
+<a class="sourceLine" id="cb1-692" title="692">                current_num <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-693" title="693">    <span class="cf">if</span> <span class="bu">len</span>(current_num) <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-694" title="694">        num <span class="op">=</span> <span class="bu">int</span>(<span class="st">&quot;&quot;</span>.join(current_num))</a>
+<a class="sourceLine" id="cb1-695" title="695">        total <span class="op">+=</span> num</a>
+<a class="sourceLine" id="cb1-696" title="696">    <span class="cf">return</span> total</a>
+<a class="sourceLine" id="cb1-697" title="697"></a>
+<a class="sourceLine" id="cb1-698" title="698"></a>
+<a class="sourceLine" id="cb1-699" title="699"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-700" title="700"></a>
+<a class="sourceLine" id="cb1-701" title="701"></a>
+<a class="sourceLine" id="cb1-702" title="702"><span class="kw">def</span> differentSquares(matrix):</a>
+<a class="sourceLine" id="cb1-703" title="703">    squares <span class="op">=</span> <span class="bu">set</span>()</a>
+<a class="sourceLine" id="cb1-704" title="704">    <span class="cf">for</span> row <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matrix) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-705" title="705">        <span class="cf">for</span> cell <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(matrix[row]) <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-706" title="706">            square <span class="op">=</span> (</a>
+<a class="sourceLine" id="cb1-707" title="707">                (matrix[row][cell], matrix[row][cell <span class="op">+</span> <span class="dv">1</span>]),</a>
+<a class="sourceLine" id="cb1-708" title="708">                (matrix[row <span class="op">+</span> <span class="dv">1</span>][cell], matrix[row <span class="op">+</span> <span class="dv">1</span>][cell <span class="op">+</span> <span class="dv">1</span>]),</a>
+<a class="sourceLine" id="cb1-709" title="709">            )</a>
+<a class="sourceLine" id="cb1-710" title="710">            squares.add(square)</a>
+<a class="sourceLine" id="cb1-711" title="711">    <span class="cf">return</span> <span class="bu">len</span>(squares)</a>
+<a class="sourceLine" id="cb1-712" title="712"></a>
+<a class="sourceLine" id="cb1-713" title="713"></a>
+<a class="sourceLine" id="cb1-714" title="714"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-715" title="715"></a>
+<a class="sourceLine" id="cb1-716" title="716"></a>
+<a class="sourceLine" id="cb1-717" title="717"><span class="kw">def</span> digitsProduct(product):</a>
+<a class="sourceLine" id="cb1-718" title="718">    <span class="co"># New idea: add product to factors</span></a>
+<a class="sourceLine" id="cb1-719" title="719">    <span class="co"># while max(factors) &gt; 10: split that num into factors</span></a>
+<a class="sourceLine" id="cb1-720" title="720">    <span class="cf">if</span> product <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-721" title="721">        <span class="cf">return</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb1-722" title="722"></a>
+<a class="sourceLine" id="cb1-723" title="723">    factors <span class="op">=</span> [product]</a>
+<a class="sourceLine" id="cb1-724" title="724">    <span class="cf">while</span> <span class="bu">max</span>(factors) <span class="op">&gt;</span> <span class="dv">9</span>:</a>
+<a class="sourceLine" id="cb1-725" title="725">        factored <span class="op">=</span> findFactors(<span class="bu">max</span>(factors))</a>
+<a class="sourceLine" id="cb1-726" title="726">        <span class="cf">if</span> factored:</a>
+<a class="sourceLine" id="cb1-727" title="727">            factors.remove(<span class="bu">max</span>(factors))</a>
+<a class="sourceLine" id="cb1-728" title="728">            factors.extend(factored)</a>
+<a class="sourceLine" id="cb1-729" title="729">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-730" title="730">            <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb1-731" title="731"></a>
+<a class="sourceLine" id="cb1-732" title="732">    <span class="cf">while</span> factors.count(<span class="dv">3</span>) <span class="op">&gt;=</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-733" title="733">        factors.remove(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-734" title="734">        factors.remove(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-735" title="735">        factors.append(<span class="dv">9</span>)</a>
+<a class="sourceLine" id="cb1-736" title="736"></a>
+<a class="sourceLine" id="cb1-737" title="737">    <span class="cf">while</span> factors.count(<span class="dv">2</span>) <span class="op">&gt;</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-738" title="738">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-739" title="739">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-740" title="740">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-741" title="741">        factors.append(<span class="dv">8</span>)</a>
+<a class="sourceLine" id="cb1-742" title="742"></a>
+<a class="sourceLine" id="cb1-743" title="743">    <span class="cf">while</span> factors.count(<span class="dv">2</span>) <span class="op">&gt;</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-744" title="744">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-745" title="745">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-746" title="746">        factors.append(<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb1-747" title="747"></a>
+<a class="sourceLine" id="cb1-748" title="748">    <span class="cf">while</span> <span class="dv">2</span> <span class="kw">in</span> factors <span class="kw">and</span> <span class="dv">3</span> <span class="kw">in</span> factors:</a>
+<a class="sourceLine" id="cb1-749" title="749">        factors.remove(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-750" title="750">        factors.remove(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-751" title="751">        factors.append(<span class="dv">6</span>)</a>
+<a class="sourceLine" id="cb1-752" title="752"></a>
+<a class="sourceLine" id="cb1-753" title="753">    <span class="cf">return</span> <span class="bu">int</span>(<span class="st">&quot;&quot;</span>.join(<span class="bu">map</span>(<span class="bu">str</span>, <span class="bu">sorted</span>(factors))))</a>
+<a class="sourceLine" id="cb1-754" title="754"></a>
+<a class="sourceLine" id="cb1-755" title="755"></a>
+<a class="sourceLine" id="cb1-756" title="756"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-757" title="757"></a>
+<a class="sourceLine" id="cb1-758" title="758"></a>
+<a class="sourceLine" id="cb1-759" title="759"><span class="kw">def</span> findFactors(n):</a>
+<a class="sourceLine" id="cb1-760" title="760">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, <span class="bu">int</span>(n <span class="op">**</span> <span class="fl">0.5</span>) <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-761" title="761">        <span class="cf">if</span> n <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-762" title="762">            <span class="cf">return</span> i, n <span class="op">//</span> i</a>
+<a class="sourceLine" id="cb1-763" title="763">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-764" title="764"></a>
+<a class="sourceLine" id="cb1-765" title="765"></a>
+<a class="sourceLine" id="cb1-766" title="766"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-767" title="767"></a>
+<a class="sourceLine" id="cb1-768" title="768"></a>
+<a class="sourceLine" id="cb1-769" title="769"><span class="kw">def</span> fileNaming(names):</a>
+<a class="sourceLine" id="cb1-770" title="770">    outnames <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-771" title="771">    <span class="cf">for</span> name <span class="kw">in</span> names:</a>
+<a class="sourceLine" id="cb1-772" title="772">        <span class="cf">if</span> name <span class="kw">in</span> outnames:</a>
+<a class="sourceLine" id="cb1-773" title="773">            k <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-774" title="774">            <span class="cf">while</span> <span class="st">&quot;</span><span class="sc">{}</span><span class="st">(</span><span class="sc">{}</span><span class="st">)&quot;</span>.<span class="bu">format</span>(name, k) <span class="kw">in</span> outnames:</a>
+<a class="sourceLine" id="cb1-775" title="775">                k <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-776" title="776">            name <span class="op">=</span> <span class="st">&quot;</span><span class="sc">{}</span><span class="st">(</span><span class="sc">{}</span><span class="st">)&quot;</span>.<span class="bu">format</span>(name, k)</a>
+<a class="sourceLine" id="cb1-777" title="777">        outnames.append(name)</a>
+<a class="sourceLine" id="cb1-778" title="778">    <span class="cf">return</span> outnames</a>
+<a class="sourceLine" id="cb1-779" title="779"></a>
+<a class="sourceLine" id="cb1-780" title="780"></a>
+<a class="sourceLine" id="cb1-781" title="781"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-782" title="782"></a>
+<a class="sourceLine" id="cb1-783" title="783"></a>
+<a class="sourceLine" id="cb1-784" title="784"><span class="kw">def</span> messageFromBinaryCode(code):</a>
+<a class="sourceLine" id="cb1-785" title="785">    output <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-786" title="786">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(code), <span class="dv">8</span>):</a>
+<a class="sourceLine" id="cb1-787" title="787">        letter <span class="op">=</span> <span class="bu">chr</span>(<span class="bu">int</span>(code[i : i <span class="op">+</span> <span class="dv">8</span>], <span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb1-788" title="788">        output.append(letter)</a>
+<a class="sourceLine" id="cb1-789" title="789">    <span class="cf">return</span> <span class="st">&quot;&quot;</span>.join(output)</a>
+<a class="sourceLine" id="cb1-790" title="790"></a>
+<a class="sourceLine" id="cb1-791" title="791"></a>
+<a class="sourceLine" id="cb1-792" title="792"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-793" title="793"></a>
+<a class="sourceLine" id="cb1-794" title="794"></a>
+<a class="sourceLine" id="cb1-795" title="795"><span class="kw">def</span> spiralNumbers(n):</a>
+<a class="sourceLine" id="cb1-796" title="796">    LEFT <span class="op">=</span> <span class="st">&quot;left&quot;</span></a>
+<a class="sourceLine" id="cb1-797" title="797">    RIGHT <span class="op">=</span> <span class="st">&quot;right&quot;</span></a>
+<a class="sourceLine" id="cb1-798" title="798">    UP <span class="op">=</span> <span class="st">&quot;up&quot;</span></a>
+<a class="sourceLine" id="cb1-799" title="799">    DOWN <span class="op">=</span> <span class="st">&quot;down&quot;</span></a>
+<a class="sourceLine" id="cb1-800" title="800">    direction <span class="op">=</span> RIGHT</a>
+<a class="sourceLine" id="cb1-801" title="801">    spiral <span class="op">=</span> [[<span class="dv">0</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n)] <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(n)]</a>
+<a class="sourceLine" id="cb1-802" title="802">    row <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-803" title="803">    cell <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-804" title="804">    <span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, (n <span class="op">*</span> n) <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-805" title="805">        spiral[row][cell] <span class="op">=</span> num</a>
+<a class="sourceLine" id="cb1-806" title="806">        <span class="cf">if</span> direction <span class="op">==</span> RIGHT:</a>
+<a class="sourceLine" id="cb1-807" title="807">            <span class="cf">if</span> cell <span class="op">!=</span> n <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> spiral[row][cell <span class="op">+</span> <span class="dv">1</span>] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-808" title="808">                cell <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-809" title="809">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-810" title="810">                direction <span class="op">=</span> DOWN</a>
+<a class="sourceLine" id="cb1-811" title="811">                row <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-812" title="812">        <span class="cf">elif</span> direction <span class="op">==</span> DOWN:</a>
+<a class="sourceLine" id="cb1-813" title="813">            <span class="cf">if</span> row <span class="op">!=</span> n <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> spiral[row <span class="op">+</span> <span class="dv">1</span>][cell] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-814" title="814">                row <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-815" title="815">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-816" title="816">                direction <span class="op">=</span> LEFT</a>
+<a class="sourceLine" id="cb1-817" title="817">                cell <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-818" title="818">        <span class="cf">elif</span> direction <span class="op">==</span> LEFT:</a>
+<a class="sourceLine" id="cb1-819" title="819">            <span class="cf">if</span> cell <span class="op">!=</span> <span class="dv">0</span> <span class="kw">and</span> spiral[row][cell <span class="op">-</span> <span class="dv">1</span>] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-820" title="820">                cell <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-821" title="821">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-822" title="822">                direction <span class="op">=</span> UP</a>
+<a class="sourceLine" id="cb1-823" title="823">                row <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-824" title="824">        <span class="cf">elif</span> direction <span class="op">==</span> UP:</a>
+<a class="sourceLine" id="cb1-825" title="825">            <span class="cf">if</span> row <span class="op">!=</span> <span class="dv">0</span> <span class="kw">and</span> spiral[row <span class="op">-</span> <span class="dv">1</span>][cell] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-826" title="826">                row <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-827" title="827">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-828" title="828">                direction <span class="op">=</span> RIGHT</a>
+<a class="sourceLine" id="cb1-829" title="829">                cell <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-830" title="830">    <span class="cf">return</span> spiral</a>
+<a class="sourceLine" id="cb1-831" title="831"></a>
+<a class="sourceLine" id="cb1-832" title="832"></a>
+<a class="sourceLine" id="cb1-833" title="833"><span class="bu">print</span>(spiralNumbers(<span class="dv">5</span>))</a>
+<a class="sourceLine" id="cb1-834" title="834"></a>
+<a class="sourceLine" id="cb1-835" title="835"></a>
+<a class="sourceLine" id="cb1-836" title="836"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-837" title="837"></a>
+<a class="sourceLine" id="cb1-838" title="838"></a>
+<a class="sourceLine" id="cb1-839" title="839"><span class="kw">def</span> sudoku(grid):</a>
+<a class="sourceLine" id="cb1-840" title="840">    match <span class="op">=</span> [i <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">10</span>)]</a>
+<a class="sourceLine" id="cb1-841" title="841">    <span class="cf">for</span> row <span class="kw">in</span> grid:</a>
+<a class="sourceLine" id="cb1-842" title="842">        <span class="cf">if</span> <span class="bu">sorted</span>(row) <span class="op">!=</span> match:</a>
+<a class="sourceLine" id="cb1-843" title="843">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-844" title="844">    <span class="cf">for</span> column_index <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">9</span>):</a>
+<a class="sourceLine" id="cb1-845" title="845">        column <span class="op">=</span> [grid[row_index][column_index] <span class="cf">for</span> row_index <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">9</span>)]</a>
+<a class="sourceLine" id="cb1-846" title="846">        <span class="cf">if</span> <span class="bu">sorted</span>(column) <span class="op">!=</span> match:</a>
+<a class="sourceLine" id="cb1-847" title="847">            <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-848" title="848">    <span class="cf">for</span> row <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">9</span>, <span class="dv">3</span>):</a>
+<a class="sourceLine" id="cb1-849" title="849">        <span class="cf">for</span> column <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">9</span>, <span class="dv">3</span>):</a>
+<a class="sourceLine" id="cb1-850" title="850">            box <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-851" title="851">            box.extend(grid[row][column : column <span class="op">+</span> <span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb1-852" title="852">            box.extend(grid[row <span class="op">+</span> <span class="dv">1</span>][column : column <span class="op">+</span> <span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb1-853" title="853">            box.extend(grid[row <span class="op">+</span> <span class="dv">2</span>][column : column <span class="op">+</span> <span class="dv">3</span>])</a>
+<a class="sourceLine" id="cb1-854" title="854">            <span class="cf">if</span> <span class="bu">sorted</span>(box) <span class="op">!=</span> match:</a>
+<a class="sourceLine" id="cb1-855" title="855">                <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-856" title="856">    <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-857" title="857"></a>
+<a class="sourceLine" id="cb1-858" title="858"></a>
+<a class="sourceLine" id="cb1-859" title="859"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-860" title="860"></a>
+<a class="sourceLine" id="cb1-861" title="861"></a>
+<a class="sourceLine" id="cb1-862" title="862"><span class="kw">def</span> addTwoDigits(n):</a>
+<a class="sourceLine" id="cb1-863" title="863">    <span class="cf">return</span> (n <span class="op">//</span> <span class="dv">10</span>) <span class="op">+</span> (n <span class="op">%</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-864" title="864"></a>
+<a class="sourceLine" id="cb1-865" title="865"></a>
+<a class="sourceLine" id="cb1-866" title="866"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-867" title="867"></a>
+<a class="sourceLine" id="cb1-868" title="868"></a>
+<a class="sourceLine" id="cb1-869" title="869"><span class="kw">def</span> largestNumber(n):</a>
+<a class="sourceLine" id="cb1-870" title="870">    <span class="cf">return</span> <span class="bu">int</span>(<span class="st">&quot;9&quot;</span> <span class="op">*</span> n)</a>
+<a class="sourceLine" id="cb1-871" title="871"></a>
+<a class="sourceLine" id="cb1-872" title="872"></a>
+<a class="sourceLine" id="cb1-873" title="873"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-874" title="874"></a>
+<a class="sourceLine" id="cb1-875" title="875"></a>
+<a class="sourceLine" id="cb1-876" title="876"><span class="kw">def</span> candies(n, m):</a>
+<a class="sourceLine" id="cb1-877" title="877">    <span class="cf">return</span> (m <span class="op">//</span> n) <span class="op">*</span> n</a>
+<a class="sourceLine" id="cb1-878" title="878"></a>
+<a class="sourceLine" id="cb1-879" title="879"></a>
+<a class="sourceLine" id="cb1-880" title="880"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-881" title="881"></a>
+<a class="sourceLine" id="cb1-882" title="882"></a>
+<a class="sourceLine" id="cb1-883" title="883"><span class="kw">def</span> seatsInTheater(nCols, nRows, col, row):</a>
+<a class="sourceLine" id="cb1-884" title="884">    <span class="cf">return</span> (nCols <span class="op">-</span> col <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> (nRows <span class="op">-</span> row)</a>
+<a class="sourceLine" id="cb1-885" title="885"></a>
+<a class="sourceLine" id="cb1-886" title="886"></a>
+<a class="sourceLine" id="cb1-887" title="887"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-888" title="888"></a>
+<a class="sourceLine" id="cb1-889" title="889"></a>
+<a class="sourceLine" id="cb1-890" title="890"><span class="kw">def</span> maxMultiple(divisor, bound):</a>
+<a class="sourceLine" id="cb1-891" title="891">    <span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(bound, <span class="dv">1</span>, <span class="dv">-1</span>):</a>
+<a class="sourceLine" id="cb1-892" title="892">        <span class="cf">if</span> num <span class="op">%</span> divisor <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-893" title="893">            <span class="cf">return</span> num</a>
+<a class="sourceLine" id="cb1-894" title="894">    <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-895" title="895"></a>
+<a class="sourceLine" id="cb1-896" title="896"></a>
+<a class="sourceLine" id="cb1-897" title="897"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-898" title="898"></a>
+<a class="sourceLine" id="cb1-899" title="899"></a>
+<a class="sourceLine" id="cb1-900" title="900"><span class="kw">def</span> circleOfNumbers(n, firstNumber):</a>
+<a class="sourceLine" id="cb1-901" title="901">    <span class="cf">return</span> (firstNumber <span class="op">+</span> (n <span class="op">//</span> <span class="dv">2</span>)) <span class="op">%</span> n</a>
+<a class="sourceLine" id="cb1-902" title="902"></a>
+<a class="sourceLine" id="cb1-903" title="903"></a>
+<a class="sourceLine" id="cb1-904" title="904"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-905" title="905"></a>
+<a class="sourceLine" id="cb1-906" title="906"></a>
+<a class="sourceLine" id="cb1-907" title="907"><span class="kw">def</span> lateRide(n):</a>
+<a class="sourceLine" id="cb1-908" title="908">    hours <span class="op">=</span> n <span class="op">//</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb1-909" title="909">    minutes <span class="op">=</span> n <span class="op">%</span> <span class="dv">60</span></a>
+<a class="sourceLine" id="cb1-910" title="910">    <span class="cf">return</span> (hours <span class="op">//</span> <span class="dv">10</span>) <span class="op">+</span> (hours <span class="op">%</span> <span class="dv">10</span>) <span class="op">+</span> (minutes <span class="op">//</span> <span class="dv">10</span>) <span class="op">+</span> (minutes <span class="op">%</span> <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb1-911" title="911"></a>
+<a class="sourceLine" id="cb1-912" title="912"></a>
+<a class="sourceLine" id="cb1-913" title="913"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-914" title="914"></a>
+<a class="sourceLine" id="cb1-915" title="915"></a>
+<a class="sourceLine" id="cb1-916" title="916"><span class="kw">def</span> phoneCall(min1, min2_10, min11, s):</a>
+<a class="sourceLine" id="cb1-917" title="917">    <span class="cf">if</span> s <span class="op">&lt;</span> min1:</a>
+<a class="sourceLine" id="cb1-918" title="918">        <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-919" title="919">    <span class="cf">if</span> s <span class="op">==</span> min1:</a>
+<a class="sourceLine" id="cb1-920" title="920">        <span class="cf">return</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-921" title="921">    <span class="cf">if</span> s <span class="op">&lt;=</span> min1 <span class="op">+</span> (min2_10 <span class="op">*</span> <span class="dv">9</span>):</a>
+<a class="sourceLine" id="cb1-922" title="922">        s <span class="op">-=</span> min1</a>
+<a class="sourceLine" id="cb1-923" title="923">        <span class="cf">return</span> (s <span class="op">//</span> min2_10) <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-924" title="924">    s <span class="op">-=</span> min1</a>
+<a class="sourceLine" id="cb1-925" title="925">    s <span class="op">-=</span> min2_10 <span class="op">*</span> <span class="dv">9</span></a>
+<a class="sourceLine" id="cb1-926" title="926">    <span class="cf">return</span> (s <span class="op">//</span> min11) <span class="op">+</span> <span class="dv">10</span></a>
+<a class="sourceLine" id="cb1-927" title="927"></a>
+<a class="sourceLine" id="cb1-928" title="928"></a>
+<a class="sourceLine" id="cb1-929" title="929"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-930" title="930"></a>
+<a class="sourceLine" id="cb1-931" title="931"></a>
+<a class="sourceLine" id="cb1-932" title="932"><span class="kw">def</span> reachNextLevel(experience, threshold, reward):</a>
+<a class="sourceLine" id="cb1-933" title="933">    <span class="cf">return</span> experience <span class="op">+</span> reward <span class="op">&gt;=</span> threshold</a>
+<a class="sourceLine" id="cb1-934" title="934"></a>
+<a class="sourceLine" id="cb1-935" title="935"></a>
+<a class="sourceLine" id="cb1-936" title="936"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-937" title="937"></a>
+<a class="sourceLine" id="cb1-938" title="938"></a>
+<a class="sourceLine" id="cb1-939" title="939"><span class="kw">def</span> knapsackLight(value1, weight1, value2, weight2, maxW):</a>
+<a class="sourceLine" id="cb1-940" title="940">    <span class="cf">if</span> weight1 <span class="op">+</span> weight2 <span class="op">&lt;=</span> maxW:</a>
+<a class="sourceLine" id="cb1-941" title="941">        <span class="cf">return</span> value1 <span class="op">+</span> value2</a>
+<a class="sourceLine" id="cb1-942" title="942">    <span class="cf">if</span> weight1 <span class="op">&lt;=</span> maxW <span class="kw">and</span> weight2 <span class="op">&lt;=</span> maxW:</a>
+<a class="sourceLine" id="cb1-943" title="943">        <span class="cf">return</span> <span class="bu">max</span>(value1, value2)</a>
+<a class="sourceLine" id="cb1-944" title="944">    <span class="cf">if</span> weight1 <span class="op">&lt;=</span> maxW:</a>
+<a class="sourceLine" id="cb1-945" title="945">        <span class="cf">return</span> value1</a>
+<a class="sourceLine" id="cb1-946" title="946">    <span class="cf">if</span> weight2 <span class="op">&lt;=</span> maxW:</a>
+<a class="sourceLine" id="cb1-947" title="947">        <span class="cf">return</span> value2</a>
+<a class="sourceLine" id="cb1-948" title="948">    <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-949" title="949"></a>
+<a class="sourceLine" id="cb1-950" title="950"></a>
+<a class="sourceLine" id="cb1-951" title="951"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-952" title="952"></a>
+<a class="sourceLine" id="cb1-953" title="953"></a>
+<a class="sourceLine" id="cb1-954" title="954"><span class="kw">def</span> extraNumber(a, b, c):</a>
+<a class="sourceLine" id="cb1-955" title="955">    <span class="cf">if</span> a <span class="op">==</span> b:</a>
+<a class="sourceLine" id="cb1-956" title="956">        <span class="cf">return</span> c</a>
+<a class="sourceLine" id="cb1-957" title="957">    <span class="cf">if</span> a <span class="op">==</span> c:</a>
+<a class="sourceLine" id="cb1-958" title="958">        <span class="cf">return</span> b</a>
+<a class="sourceLine" id="cb1-959" title="959">    <span class="cf">return</span> a</a>
+<a class="sourceLine" id="cb1-960" title="960"></a>
+<a class="sourceLine" id="cb1-961" title="961"></a>
+<a class="sourceLine" id="cb1-962" title="962"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-963" title="963"></a>
+<a class="sourceLine" id="cb1-964" title="964"></a>
+<a class="sourceLine" id="cb1-965" title="965"><span class="kw">def</span> isInfiniteProcess(a, b):</a>
+<a class="sourceLine" id="cb1-966" title="966">    <span class="cf">return</span> a <span class="op">&gt;</span> b <span class="kw">or</span> (a <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> b <span class="op">%</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-967" title="967"></a>
+<a class="sourceLine" id="cb1-968" title="968"></a>
+<a class="sourceLine" id="cb1-969" title="969"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-970" title="970"></a>
+<a class="sourceLine" id="cb1-971" title="971"></a>
+<a class="sourceLine" id="cb1-972" title="972"><span class="kw">def</span> arithmeticExpression(a, b, c):</a>
+<a class="sourceLine" id="cb1-973" title="973">    <span class="cf">return</span> a <span class="op">+</span> b <span class="op">==</span> c <span class="kw">or</span> a <span class="op">-</span> b <span class="op">==</span> c <span class="kw">or</span> a <span class="op">*</span> b <span class="op">==</span> c <span class="kw">or</span> a <span class="op">/</span> b <span class="op">==</span> c</a>
+<a class="sourceLine" id="cb1-974" title="974"></a>
+<a class="sourceLine" id="cb1-975" title="975"></a>
+<a class="sourceLine" id="cb1-976" title="976"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-977" title="977"></a>
+<a class="sourceLine" id="cb1-978" title="978"></a>
+<a class="sourceLine" id="cb1-979" title="979"><span class="kw">def</span> tennisSet(score1, score2):</a>
+<a class="sourceLine" id="cb1-980" title="980">    <span class="cf">if</span> <span class="bu">max</span>(score1, score2) <span class="op">==</span> <span class="dv">6</span> <span class="kw">and</span> <span class="bu">min</span>(score1, score2) <span class="op">&lt;</span> <span class="dv">5</span>:</a>
+<a class="sourceLine" id="cb1-981" title="981">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-982" title="982">    <span class="cf">if</span> <span class="dv">5</span> <span class="op">&lt;=</span> <span class="bu">min</span>(score1, score2) <span class="op">&lt;=</span> <span class="dv">6</span> <span class="kw">and</span> <span class="bu">max</span>(score1, score2) <span class="op">==</span> <span class="dv">7</span>:</a>
+<a class="sourceLine" id="cb1-983" title="983">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-984" title="984">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-985" title="985"></a>
+<a class="sourceLine" id="cb1-986" title="986"></a>
+<a class="sourceLine" id="cb1-987" title="987"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-988" title="988"></a>
+<a class="sourceLine" id="cb1-989" title="989"></a>
+<a class="sourceLine" id="cb1-990" title="990"><span class="kw">def</span> willYou(young, beautiful, loved):</a>
+<a class="sourceLine" id="cb1-991" title="991">    <span class="cf">return</span> (young <span class="kw">and</span> beautiful) <span class="op">!=</span> loved</a>
+<a class="sourceLine" id="cb1-992" title="992"></a>
+<a class="sourceLine" id="cb1-993" title="993"></a>
+<a class="sourceLine" id="cb1-994" title="994"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-995" title="995"></a>
+<a class="sourceLine" id="cb1-996" title="996"></a>
+<a class="sourceLine" id="cb1-997" title="997"><span class="kw">def</span> metroCard(lastNumberOfDays):</a>
+<a class="sourceLine" id="cb1-998" title="998">    <span class="cf">if</span> lastNumberOfDays <span class="op">==</span> <span class="dv">30</span> <span class="kw">or</span> lastNumberOfDays <span class="op">==</span> <span class="dv">28</span>:</a>
+<a class="sourceLine" id="cb1-999" title="999">        <span class="cf">return</span> [<span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb1-1000" title="1000">    <span class="cf">return</span> [<span class="dv">28</span>, <span class="dv">30</span>, <span class="dv">31</span>]</a>
+<a class="sourceLine" id="cb1-1001" title="1001"></a>
+<a class="sourceLine" id="cb1-1002" title="1002"></a>
+<a class="sourceLine" id="cb1-1003" title="1003"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1004" title="1004"></a>
+<a class="sourceLine" id="cb1-1005" title="1005"></a>
+<a class="sourceLine" id="cb1-1006" title="1006"><span class="kw">def</span> killKthBit(n, k):</a>
+<a class="sourceLine" id="cb1-1007" title="1007">    <span class="cf">return</span> n <span class="op">&amp;</span> <span class="op">~</span>(<span class="dv">2</span> <span class="op">**</span> (k <span class="op">-</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-1008" title="1008"></a>
+<a class="sourceLine" id="cb1-1009" title="1009"></a>
+<a class="sourceLine" id="cb1-1010" title="1010"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1011" title="1011"></a>
+<a class="sourceLine" id="cb1-1012" title="1012"></a>
+<a class="sourceLine" id="cb1-1013" title="1013"><span class="kw">def</span> arrayPacking(a):</a>
+<a class="sourceLine" id="cb1-1014" title="1014">    binary_array <span class="op">=</span> [<span class="bu">bin</span>(num)[<span class="dv">2</span>:].rjust(<span class="dv">8</span>, <span class="st">&quot;0&quot;</span>) <span class="cf">for</span> num <span class="kw">in</span> a]</a>
+<a class="sourceLine" id="cb1-1015" title="1015">    out_string <span class="op">=</span> <span class="st">&quot;&quot;</span>.join(binary_array[::<span class="op">-</span><span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-1016" title="1016">    <span class="cf">return</span> <span class="bu">int</span>(out_string, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-1017" title="1017"></a>
+<a class="sourceLine" id="cb1-1018" title="1018"></a>
+<a class="sourceLine" id="cb1-1019" title="1019"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1020" title="1020"></a>
+<a class="sourceLine" id="cb1-1021" title="1021"></a>
+<a class="sourceLine" id="cb1-1022" title="1022"><span class="kw">def</span> rangeBitCount(a, b):</a>
+<a class="sourceLine" id="cb1-1023" title="1023">    array <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(a, b <span class="op">+</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-1024" title="1024">    binary_array <span class="op">=</span> [<span class="bu">bin</span>(num) <span class="cf">for</span> num <span class="kw">in</span> array]</a>
+<a class="sourceLine" id="cb1-1025" title="1025">    count_array <span class="op">=</span> [binary.count(<span class="st">&quot;1&quot;</span>) <span class="cf">for</span> binary <span class="kw">in</span> binary_array]</a>
+<a class="sourceLine" id="cb1-1026" title="1026">    <span class="cf">return</span> <span class="bu">sum</span>(count_array)</a>
+<a class="sourceLine" id="cb1-1027" title="1027"></a>
+<a class="sourceLine" id="cb1-1028" title="1028"></a>
+<a class="sourceLine" id="cb1-1029" title="1029"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1030" title="1030"></a>
+<a class="sourceLine" id="cb1-1031" title="1031"></a>
+<a class="sourceLine" id="cb1-1032" title="1032"><span class="kw">def</span> mirrorBits(a):</a>
+<a class="sourceLine" id="cb1-1033" title="1033">    binary <span class="op">=</span> <span class="bu">bin</span>(a)[<span class="dv">2</span>:]</a>
+<a class="sourceLine" id="cb1-1034" title="1034">    <span class="cf">return</span> <span class="bu">int</span>(binary[::<span class="op">-</span><span class="dv">1</span>], <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb1-1035" title="1035"></a>
+<a class="sourceLine" id="cb1-1036" title="1036"></a>
+<a class="sourceLine" id="cb1-1037" title="1037"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1038" title="1038"></a>
+<a class="sourceLine" id="cb1-1039" title="1039"></a>
+<a class="sourceLine" id="cb1-1040" title="1040"><span class="kw">def</span> secondRightmostZeroBit(n):</a>
+<a class="sourceLine" id="cb1-1041" title="1041">    <span class="cf">return</span> <span class="dv">2</span> <span class="op">**</span> <span class="bu">bin</span>(n)[::<span class="op">-</span><span class="dv">1</span>].find(<span class="st">&quot;0&quot;</span>, <span class="bu">bin</span>(n)[::<span class="op">-</span><span class="dv">1</span>].find(<span class="st">&quot;0&quot;</span>) <span class="op">+</span> <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb1-1042" title="1042"></a>
+<a class="sourceLine" id="cb1-1043" title="1043"></a>
+<a class="sourceLine" id="cb1-1044" title="1044"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1045" title="1045"></a>
+<a class="sourceLine" id="cb1-1046" title="1046"></a>
+<a class="sourceLine" id="cb1-1047" title="1047"><span class="kw">def</span> swapAdjacentBits(n):</a>
+<a class="sourceLine" id="cb1-1048" title="1048">    <span class="cf">return</span> ((n <span class="op">&gt;&gt;</span> <span class="dv">1</span>) <span class="op">&amp;</span> <span class="dv">1431655765</span>) <span class="op">|</span> ((n <span class="op">&lt;&lt;</span> <span class="dv">1</span>) <span class="op">&amp;</span> <span class="dv">2863311530</span>)</a>
+<a class="sourceLine" id="cb1-1049" title="1049"></a>
+<a class="sourceLine" id="cb1-1050" title="1050"></a>
+<a class="sourceLine" id="cb1-1051" title="1051"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1052" title="1052"></a>
+<a class="sourceLine" id="cb1-1053" title="1053"></a>
+<a class="sourceLine" id="cb1-1054" title="1054"><span class="kw">def</span> differentRightmostBit(n, m):</a>
+<a class="sourceLine" id="cb1-1055" title="1055">    <span class="cf">return</span> <span class="dv">2</span> <span class="op">**</span> <span class="bu">bin</span>((n <span class="op">^</span> m))[::<span class="op">-</span><span class="dv">1</span>].find(<span class="st">&quot;1&quot;</span>)</a>
+<a class="sourceLine" id="cb1-1056" title="1056"></a>
+<a class="sourceLine" id="cb1-1057" title="1057"></a>
+<a class="sourceLine" id="cb1-1058" title="1058"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1059" title="1059"></a>
+<a class="sourceLine" id="cb1-1060" title="1060"></a>
+<a class="sourceLine" id="cb1-1061" title="1061"><span class="kw">def</span> equalPairOfBits(n, m):</a>
+<a class="sourceLine" id="cb1-1062" title="1062">    <span class="cf">return</span> <span class="dv">2</span> <span class="op">**</span> <span class="bu">bin</span>(<span class="op">~</span>(n <span class="op">^</span> m))[::<span class="op">-</span><span class="dv">1</span>].find(<span class="st">&quot;1&quot;</span>)</a>
+<a class="sourceLine" id="cb1-1063" title="1063"></a>
+<a class="sourceLine" id="cb1-1064" title="1064"></a>
+<a class="sourceLine" id="cb1-1065" title="1065"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1066" title="1066"></a>
+<a class="sourceLine" id="cb1-1067" title="1067"></a>
+<a class="sourceLine" id="cb1-1068" title="1068"><span class="kw">def</span> leastFactorial(n):</a>
+<a class="sourceLine" id="cb1-1069" title="1069">    factorial <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1070" title="1070">    index <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1071" title="1071">    <span class="cf">while</span> factorial <span class="op">&lt;</span> n:</a>
+<a class="sourceLine" id="cb1-1072" title="1072">        index <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1073" title="1073">        factorial <span class="op">*=</span> index</a>
+<a class="sourceLine" id="cb1-1074" title="1074">    <span class="cf">return</span> factorial</a>
+<a class="sourceLine" id="cb1-1075" title="1075"></a>
+<a class="sourceLine" id="cb1-1076" title="1076"></a>
+<a class="sourceLine" id="cb1-1077" title="1077"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1078" title="1078"></a>
+<a class="sourceLine" id="cb1-1079" title="1079"></a>
+<a class="sourceLine" id="cb1-1080" title="1080"><span class="kw">def</span> countSumOfTwoRepresentations2(n, l, r):</a>
+<a class="sourceLine" id="cb1-1081" title="1081">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1082" title="1082">    a <span class="op">=</span> <span class="bu">max</span>(n <span class="op">-</span> r, l)</a>
+<a class="sourceLine" id="cb1-1083" title="1083">    b <span class="op">=</span> n <span class="op">-</span> a</a>
+<a class="sourceLine" id="cb1-1084" title="1084">    <span class="cf">while</span> a <span class="op">&lt;=</span> r <span class="kw">and</span> a <span class="op">&lt;=</span> b:</a>
+<a class="sourceLine" id="cb1-1085" title="1085">        count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1086" title="1086">        a <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1087" title="1087">        b <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1088" title="1088">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-1089" title="1089"></a>
+<a class="sourceLine" id="cb1-1090" title="1090"></a>
+<a class="sourceLine" id="cb1-1091" title="1091"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1092" title="1092"></a>
+<a class="sourceLine" id="cb1-1093" title="1093"></a>
+<a class="sourceLine" id="cb1-1094" title="1094"><span class="kw">def</span> magicalWell(a, b, n):</a>
+<a class="sourceLine" id="cb1-1095" title="1095">    total <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1096" title="1096">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</a>
+<a class="sourceLine" id="cb1-1097" title="1097">        total <span class="op">+=</span> a <span class="op">*</span> b</a>
+<a class="sourceLine" id="cb1-1098" title="1098">        a <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1099" title="1099">        b <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1100" title="1100">    <span class="cf">return</span> total</a>
+<a class="sourceLine" id="cb1-1101" title="1101"></a>
+<a class="sourceLine" id="cb1-1102" title="1102"></a>
+<a class="sourceLine" id="cb1-1103" title="1103"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1104" title="1104"></a>
+<a class="sourceLine" id="cb1-1105" title="1105"></a>
+<a class="sourceLine" id="cb1-1106" title="1106"><span class="kw">def</span> lineUp(commands):</a>
+<a class="sourceLine" id="cb1-1107" title="1107">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1108" title="1108">    smart_student <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1109" title="1109">    dumb_student <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1110" title="1110">    <span class="cf">for</span> command <span class="kw">in</span> commands:</a>
+<a class="sourceLine" id="cb1-1111" title="1111">        <span class="cf">if</span> command <span class="op">==</span> <span class="st">&quot;L&quot;</span>:</a>
+<a class="sourceLine" id="cb1-1112" title="1112">            smart_student <span class="op">=</span> (smart_student <span class="op">-</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1113" title="1113">            dumb_student <span class="op">=</span> (dumb_student <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1114" title="1114">        <span class="cf">elif</span> command <span class="op">==</span> <span class="st">&quot;R&quot;</span>:</a>
+<a class="sourceLine" id="cb1-1115" title="1115">            smart_student <span class="op">=</span> (smart_student <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1116" title="1116">            dumb_student <span class="op">=</span> (dumb_student <span class="op">-</span> <span class="dv">1</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1117" title="1117">        <span class="cf">elif</span> command <span class="op">==</span> <span class="st">&quot;A&quot;</span>:</a>
+<a class="sourceLine" id="cb1-1118" title="1118">            smart_student <span class="op">=</span> (smart_student <span class="op">+</span> <span class="dv">2</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1119" title="1119">            dumb_student <span class="op">=</span> (dumb_student <span class="op">+</span> <span class="dv">2</span>) <span class="op">%</span> <span class="dv">4</span></a>
+<a class="sourceLine" id="cb1-1120" title="1120"></a>
+<a class="sourceLine" id="cb1-1121" title="1121">        <span class="cf">if</span> smart_student <span class="op">==</span> dumb_student:</a>
+<a class="sourceLine" id="cb1-1122" title="1122">            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1123" title="1123">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-1124" title="1124"></a>
+<a class="sourceLine" id="cb1-1125" title="1125"></a>
+<a class="sourceLine" id="cb1-1126" title="1126"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1127" title="1127"></a>
+<a class="sourceLine" id="cb1-1128" title="1128"></a>
+<a class="sourceLine" id="cb1-1129" title="1129"><span class="kw">def</span> additionWithoutCarrying(param1, param2):</a>
+<a class="sourceLine" id="cb1-1130" title="1130">    <span class="co"># Convert numbers to strings</span></a>
+<a class="sourceLine" id="cb1-1131" title="1131">    str1 <span class="op">=</span> <span class="bu">str</span>(param1)</a>
+<a class="sourceLine" id="cb1-1132" title="1132">    str2 <span class="op">=</span> <span class="bu">str</span>(param2)</a>
+<a class="sourceLine" id="cb1-1133" title="1133">    <span class="co"># Pad both to the same length with zeroes (to the left of the numbers)</span></a>
+<a class="sourceLine" id="cb1-1134" title="1134">    length <span class="op">=</span> <span class="bu">max</span>(<span class="bu">len</span>(str2), <span class="bu">len</span>(str1))</a>
+<a class="sourceLine" id="cb1-1135" title="1135">    str1 <span class="op">=</span> str1.rjust(length, <span class="st">&quot;0&quot;</span>)</a>
+<a class="sourceLine" id="cb1-1136" title="1136">    str2 <span class="op">=</span> str2.rjust(length, <span class="st">&quot;0&quot;</span>)</a>
+<a class="sourceLine" id="cb1-1137" title="1137">    output <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-1138" title="1138">    <span class="cf">for</span> num1, num2 <span class="kw">in</span> <span class="bu">zip</span>(str1, str2):</a>
+<a class="sourceLine" id="cb1-1139" title="1139">        result <span class="op">=</span> <span class="bu">str</span>(<span class="bu">int</span>(num1) <span class="op">+</span> <span class="bu">int</span>(num2))[<span class="op">-</span><span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-1140" title="1140">        output.append(result)</a>
+<a class="sourceLine" id="cb1-1141" title="1141">    <span class="cf">return</span> <span class="bu">int</span>(<span class="st">&quot;&quot;</span>.join(output))</a>
+<a class="sourceLine" id="cb1-1142" title="1142"></a>
+<a class="sourceLine" id="cb1-1143" title="1143"></a>
+<a class="sourceLine" id="cb1-1144" title="1144"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1145" title="1145"></a>
+<a class="sourceLine" id="cb1-1146" title="1146"></a>
+<a class="sourceLine" id="cb1-1147" title="1147"><span class="kw">def</span> appleBoxes(k):</a>
+<a class="sourceLine" id="cb1-1148" title="1148">    red <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1149" title="1149">    yellow <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1150" title="1150">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, k <span class="op">+</span> <span class="dv">1</span>, <span class="dv">2</span>):</a>
+<a class="sourceLine" id="cb1-1151" title="1151">        yellow <span class="op">+=</span> i <span class="op">*</span> i</a>
+<a class="sourceLine" id="cb1-1152" title="1152">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">2</span>, k <span class="op">+</span> <span class="dv">1</span>, <span class="dv">2</span>):</a>
+<a class="sourceLine" id="cb1-1153" title="1153">        red <span class="op">+=</span> i <span class="op">*</span> i</a>
+<a class="sourceLine" id="cb1-1154" title="1154"></a>
+<a class="sourceLine" id="cb1-1155" title="1155">    <span class="cf">return</span> red <span class="op">-</span> yellow</a>
+<a class="sourceLine" id="cb1-1156" title="1156"></a>
+<a class="sourceLine" id="cb1-1157" title="1157"></a>
+<a class="sourceLine" id="cb1-1158" title="1158"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1159" title="1159"></a>
+<a class="sourceLine" id="cb1-1160" title="1160"></a>
+<a class="sourceLine" id="cb1-1161" title="1161"><span class="kw">def</span> increaseNumberRoundness(n):</a>
+<a class="sourceLine" id="cb1-1162" title="1162">    string <span class="op">=</span> <span class="bu">str</span>(n)</a>
+<a class="sourceLine" id="cb1-1163" title="1163">    <span class="co"># Check for immediate rejection</span></a>
+<a class="sourceLine" id="cb1-1164" title="1164">    <span class="cf">if</span> <span class="st">&quot;0&quot;</span> <span class="kw">not</span> <span class="kw">in</span> string <span class="kw">or</span> <span class="bu">len</span>(string) <span class="op">&lt;</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-1165" title="1165">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-1166" title="1166">    <span class="co"># Since we know there&#39;s a 0, if it&#39;s not on</span></a>
+<a class="sourceLine" id="cb1-1167" title="1167">    <span class="co"># the left, then we know to accept</span></a>
+<a class="sourceLine" id="cb1-1168" title="1168">    <span class="cf">if</span> string[<span class="op">-</span><span class="dv">1</span>] <span class="op">!=</span> <span class="st">&quot;0&quot;</span>:</a>
+<a class="sourceLine" id="cb1-1169" title="1169">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-1170" title="1170">    <span class="co"># If there is only one 0, it must be at the end, so reject.</span></a>
+<a class="sourceLine" id="cb1-1171" title="1171">    <span class="cf">if</span> string.count(<span class="st">&quot;0&quot;</span>) <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-1172" title="1172">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-1173" title="1173">    <span class="co"># If there are any numbers between the first 0</span></a>
+<a class="sourceLine" id="cb1-1174" title="1174">    <span class="co"># and the end of the string, then accept.</span></a>
+<a class="sourceLine" id="cb1-1175" title="1175">    first_zero <span class="op">=</span> string.find(<span class="st">&quot;0&quot;</span>)</a>
+<a class="sourceLine" id="cb1-1176" title="1176">    zero_sandwich <span class="op">=</span> string[first_zero:]</a>
+<a class="sourceLine" id="cb1-1177" title="1177">    <span class="cf">return</span> zero_sandwich.count(<span class="st">&quot;0&quot;</span>) <span class="op">!=</span> <span class="bu">len</span>(zero_sandwich)</a>
+<a class="sourceLine" id="cb1-1178" title="1178"></a>
+<a class="sourceLine" id="cb1-1179" title="1179"></a>
+<a class="sourceLine" id="cb1-1180" title="1180"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1181" title="1181"></a>
+<a class="sourceLine" id="cb1-1182" title="1182"></a>
+<a class="sourceLine" id="cb1-1183" title="1183"><span class="kw">def</span> rounders(value):</a>
+<a class="sourceLine" id="cb1-1184" title="1184">    length <span class="op">=</span> <span class="bu">len</span>(<span class="bu">str</span>(value))</a>
+<a class="sourceLine" id="cb1-1185" title="1185">    magnitude <span class="op">=</span> length <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1186" title="1186">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(length <span class="op">-</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-1187" title="1187">        value <span class="op">=</span> <span class="bu">int</span>((value <span class="op">/</span> <span class="dv">10</span>) <span class="op">+</span> <span class="fl">0.5</span>)</a>
+<a class="sourceLine" id="cb1-1188" title="1188">    <span class="cf">return</span> value <span class="op">*</span> (<span class="dv">10</span> <span class="op">**</span> magnitude)</a>
+<a class="sourceLine" id="cb1-1189" title="1189"></a>
+<a class="sourceLine" id="cb1-1190" title="1190"></a>
+<a class="sourceLine" id="cb1-1191" title="1191"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1192" title="1192"></a>
+<a class="sourceLine" id="cb1-1193" title="1193"></a>
+<a class="sourceLine" id="cb1-1194" title="1194"><span class="kw">def</span> candles(candlesNumber, makeNew):</a>
+<a class="sourceLine" id="cb1-1195" title="1195">    totalBurned <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1196" title="1196">    leftovers <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1197" title="1197">    <span class="cf">while</span> candlesNumber <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-1198" title="1198">        totalBurned <span class="op">+=</span> candlesNumber</a>
+<a class="sourceLine" id="cb1-1199" title="1199">        leftovers <span class="op">+=</span> candlesNumber</a>
+<a class="sourceLine" id="cb1-1200" title="1200">        candlesNumber <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1201" title="1201">        candlesNumber <span class="op">=</span> leftovers <span class="op">//</span> makeNew</a>
+<a class="sourceLine" id="cb1-1202" title="1202">        leftovers <span class="op">=</span> leftovers <span class="op">%</span> makeNew</a>
+<a class="sourceLine" id="cb1-1203" title="1203">    <span class="cf">return</span> totalBurned</a>
+<a class="sourceLine" id="cb1-1204" title="1204"></a>
+<a class="sourceLine" id="cb1-1205" title="1205"></a>
+<a class="sourceLine" id="cb1-1206" title="1206"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1207" title="1207"></a>
+<a class="sourceLine" id="cb1-1208" title="1208"></a>
+<a class="sourceLine" id="cb1-1209" title="1209"><span class="kw">def</span> countBlackCells(n, m):</a>
+<a class="sourceLine" id="cb1-1210" title="1210">    gcd <span class="op">=</span> find_gcd(n, m)</a>
+<a class="sourceLine" id="cb1-1211" title="1211">    line_cells <span class="op">=</span> n <span class="op">+</span> m <span class="op">-</span> gcd</a>
+<a class="sourceLine" id="cb1-1212" title="1212">    line_corner_cells <span class="op">=</span> (gcd <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1213" title="1213">    <span class="cf">return</span> line_cells <span class="op">+</span> line_corner_cells</a>
+<a class="sourceLine" id="cb1-1214" title="1214"></a>
+<a class="sourceLine" id="cb1-1215" title="1215"></a>
+<a class="sourceLine" id="cb1-1216" title="1216"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1217" title="1217"></a>
+<a class="sourceLine" id="cb1-1218" title="1218"></a>
+<a class="sourceLine" id="cb1-1219" title="1219"><span class="kw">def</span> find_gcd(a, b):</a>
+<a class="sourceLine" id="cb1-1220" title="1220">    <span class="cf">while</span> b <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-1221" title="1221">        a, b <span class="op">=</span> b, a <span class="op">%</span> b</a>
+<a class="sourceLine" id="cb1-1222" title="1222">    <span class="cf">return</span> a</a>
+<a class="sourceLine" id="cb1-1223" title="1223"></a>
+<a class="sourceLine" id="cb1-1224" title="1224"></a>
+<a class="sourceLine" id="cb1-1225" title="1225"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1226" title="1226"></a>
+<a class="sourceLine" id="cb1-1227" title="1227"></a>
+<a class="sourceLine" id="cb1-1228" title="1228"><span class="kw">def</span> createArray(size):</a>
+<a class="sourceLine" id="cb1-1229" title="1229">    <span class="cf">return</span> [<span class="dv">1</span>] <span class="op">*</span> size</a>
+<a class="sourceLine" id="cb1-1230" title="1230"></a>
+<a class="sourceLine" id="cb1-1231" title="1231"></a>
+<a class="sourceLine" id="cb1-1232" title="1232"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1233" title="1233"></a>
+<a class="sourceLine" id="cb1-1234" title="1234"></a>
+<a class="sourceLine" id="cb1-1235" title="1235"><span class="kw">def</span> arrayReplace(inputArray, elemToReplace, substitutionElem):</a>
+<a class="sourceLine" id="cb1-1236" title="1236">    output <span class="op">=</span> [</a>
+<a class="sourceLine" id="cb1-1237" title="1237">        elem <span class="cf">if</span> elem <span class="op">!=</span> elemToReplace <span class="cf">else</span> substitutionElem <span class="cf">for</span> elem <span class="kw">in</span> inputArray</a>
+<a class="sourceLine" id="cb1-1238" title="1238">    ]</a>
+<a class="sourceLine" id="cb1-1239" title="1239">    <span class="cf">return</span> output</a>
+<a class="sourceLine" id="cb1-1240" title="1240"></a>
+<a class="sourceLine" id="cb1-1241" title="1241"></a>
+<a class="sourceLine" id="cb1-1242" title="1242"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1243" title="1243"></a>
+<a class="sourceLine" id="cb1-1244" title="1244"></a>
+<a class="sourceLine" id="cb1-1245" title="1245"><span class="kw">def</span> firstReverseTry(arr):</a>
+<a class="sourceLine" id="cb1-1246" title="1246">    <span class="cf">if</span> <span class="bu">len</span>(arr) <span class="op">&lt;</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-1247" title="1247">        <span class="cf">return</span> arr</a>
+<a class="sourceLine" id="cb1-1248" title="1248">    <span class="cf">if</span> <span class="bu">len</span>(arr) <span class="op">&lt;</span> <span class="dv">4</span>:</a>
+<a class="sourceLine" id="cb1-1249" title="1249">        <span class="cf">return</span> arr[::<span class="op">-</span><span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-1250" title="1250">    <span class="cf">return</span> arr[<span class="op">-</span><span class="dv">1</span>:] <span class="op">+</span> arr[<span class="dv">1</span>:<span class="op">-</span><span class="dv">1</span>] <span class="op">+</span> arr[:<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-1251" title="1251"></a>
+<a class="sourceLine" id="cb1-1252" title="1252"></a>
+<a class="sourceLine" id="cb1-1253" title="1253"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1254" title="1254"></a>
+<a class="sourceLine" id="cb1-1255" title="1255"></a>
+<a class="sourceLine" id="cb1-1256" title="1256"><span class="kw">def</span> concatenateArrays(a, b):</a>
+<a class="sourceLine" id="cb1-1257" title="1257">    <span class="cf">return</span> a <span class="op">+</span> b</a>
+<a class="sourceLine" id="cb1-1258" title="1258"></a>
+<a class="sourceLine" id="cb1-1259" title="1259"></a>
+<a class="sourceLine" id="cb1-1260" title="1260"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1261" title="1261"></a>
+<a class="sourceLine" id="cb1-1262" title="1262"></a>
+<a class="sourceLine" id="cb1-1263" title="1263"><span class="kw">def</span> removeArrayPart(inputArray, l, r):</a>
+<a class="sourceLine" id="cb1-1264" title="1264">    <span class="cf">return</span> inputArray[:l] <span class="op">+</span> inputArray[r <span class="op">+</span> <span class="dv">1</span> :]</a>
+<a class="sourceLine" id="cb1-1265" title="1265"></a>
+<a class="sourceLine" id="cb1-1266" title="1266"></a>
+<a class="sourceLine" id="cb1-1267" title="1267"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1268" title="1268"></a>
+<a class="sourceLine" id="cb1-1269" title="1269"></a>
+<a class="sourceLine" id="cb1-1270" title="1270"><span class="kw">def</span> isSmooth(arr):</a>
+<a class="sourceLine" id="cb1-1271" title="1271">    <span class="cf">if</span> arr[<span class="dv">0</span>] <span class="op">!=</span> arr[<span class="op">-</span><span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-1272" title="1272">        <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-1273" title="1273">    <span class="cf">if</span> <span class="bu">len</span>(arr) <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-1274" title="1274">        middle <span class="op">=</span> arr[<span class="bu">len</span>(arr) <span class="op">//</span> <span class="dv">2</span>] <span class="op">+</span> arr[(<span class="bu">len</span>(arr) <span class="op">//</span> <span class="dv">2</span>) <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-1275" title="1275">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-1276" title="1276">        middle <span class="op">=</span> arr[<span class="bu">len</span>(arr) <span class="op">//</span> <span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb1-1277" title="1277">    <span class="cf">return</span> arr[<span class="dv">0</span>] <span class="op">==</span> middle</a>
+<a class="sourceLine" id="cb1-1278" title="1278"></a>
+<a class="sourceLine" id="cb1-1279" title="1279"></a>
+<a class="sourceLine" id="cb1-1280" title="1280"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1281" title="1281"></a>
+<a class="sourceLine" id="cb1-1282" title="1282"></a>
+<a class="sourceLine" id="cb1-1283" title="1283"><span class="kw">def</span> replaceMiddle(arr):</a>
+<a class="sourceLine" id="cb1-1284" title="1284">    <span class="cf">if</span> <span class="bu">len</span>(arr) <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-1285" title="1285">        <span class="cf">return</span> arr</a>
+<a class="sourceLine" id="cb1-1286" title="1286">    right_middle <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">//</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1287" title="1287">    middle_value <span class="op">=</span> arr[right_middle] <span class="op">+</span> arr[right_middle <span class="op">-</span> <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb1-1288" title="1288">    <span class="cf">return</span> arr[: right_middle <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> [middle_value] <span class="op">+</span> arr[right_middle <span class="op">+</span> <span class="dv">1</span> :]</a>
+<a class="sourceLine" id="cb1-1289" title="1289"></a>
+<a class="sourceLine" id="cb1-1290" title="1290"></a>
+<a class="sourceLine" id="cb1-1291" title="1291"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1292" title="1292"></a>
+<a class="sourceLine" id="cb1-1293" title="1293"></a>
+<a class="sourceLine" id="cb1-1294" title="1294"><span class="kw">def</span> makeArrayConsecutive2(statues):</a>
+<a class="sourceLine" id="cb1-1295" title="1295">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1296" title="1296">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">min</span>(statues), <span class="bu">max</span>(statues)):</a>
+<a class="sourceLine" id="cb1-1297" title="1297">        <span class="cf">if</span> i <span class="kw">not</span> <span class="kw">in</span> statues:</a>
+<a class="sourceLine" id="cb1-1298" title="1298">            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1299" title="1299">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-1300" title="1300"></a>
+<a class="sourceLine" id="cb1-1301" title="1301"></a>
+<a class="sourceLine" id="cb1-1302" title="1302"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1303" title="1303"></a>
+<a class="sourceLine" id="cb1-1304" title="1304"></a>
+<a class="sourceLine" id="cb1-1305" title="1305"><span class="kw">def</span> isPower(n):</a>
+<a class="sourceLine" id="cb1-1306" title="1306">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-1307" title="1307">        <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-1308" title="1308"></a>
+<a class="sourceLine" id="cb1-1309" title="1309">    a <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1310" title="1310">    b <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1311" title="1311">    <span class="cf">while</span> a <span class="op">**</span> <span class="dv">2</span> <span class="op">&lt;=</span> n:</a>
+<a class="sourceLine" id="cb1-1312" title="1312">        <span class="cf">while</span> a <span class="op">**</span> b <span class="op">&lt;=</span> n:</a>
+<a class="sourceLine" id="cb1-1313" title="1313">            <span class="cf">if</span> a <span class="op">**</span> b <span class="op">==</span> n:</a>
+<a class="sourceLine" id="cb1-1314" title="1314">                <span class="cf">return</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb1-1315" title="1315">            b <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1316" title="1316">        b <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1317" title="1317">        a <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1318" title="1318">    <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb1-1319" title="1319"></a>
+<a class="sourceLine" id="cb1-1320" title="1320"></a>
+<a class="sourceLine" id="cb1-1321" title="1321"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1322" title="1322"></a>
+<a class="sourceLine" id="cb1-1323" title="1323"></a>
+<a class="sourceLine" id="cb1-1324" title="1324"><span class="kw">def</span> isSumOfConsecutive2(n):</a>
+<a class="sourceLine" id="cb1-1325" title="1325">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1326" title="1326">    right <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1327" title="1327">    arr <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb1-1328" title="1328">    <span class="cf">while</span> right <span class="op">&lt;=</span> (n <span class="op">//</span> <span class="dv">2</span>) <span class="op">+</span> <span class="dv">1</span>:</a>
+<a class="sourceLine" id="cb1-1329" title="1329">        total <span class="op">=</span> <span class="bu">sum</span>(arr)</a>
+<a class="sourceLine" id="cb1-1330" title="1330">        <span class="cf">if</span> total <span class="op">==</span> n:</a>
+<a class="sourceLine" id="cb1-1331" title="1331">            count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1332" title="1332">            <span class="kw">del</span> arr[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb1-1333" title="1333">        <span class="cf">elif</span> total <span class="op">&lt;</span> n:</a>
+<a class="sourceLine" id="cb1-1334" title="1334">            right <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1335" title="1335">            arr.append(right)</a>
+<a class="sourceLine" id="cb1-1336" title="1336">        <span class="cf">elif</span> total <span class="op">&gt;</span> n:</a>
+<a class="sourceLine" id="cb1-1337" title="1337">            <span class="kw">del</span> arr[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb1-1338" title="1338">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-1339" title="1339"></a>
+<a class="sourceLine" id="cb1-1340" title="1340"></a>
+<a class="sourceLine" id="cb1-1341" title="1341"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1342" title="1342"></a>
+<a class="sourceLine" id="cb1-1343" title="1343"></a>
+<a class="sourceLine" id="cb1-1344" title="1344"><span class="kw">def</span> squareDigitsSequence(a0):</a>
+<a class="sourceLine" id="cb1-1345" title="1345">    sequence <span class="op">=</span> [a0]</a>
+<a class="sourceLine" id="cb1-1346" title="1346">    <span class="cf">while</span> sequence[<span class="op">-</span><span class="dv">1</span>] <span class="kw">not</span> <span class="kw">in</span> sequence[:<span class="op">-</span><span class="dv">1</span>]:</a>
+<a class="sourceLine" id="cb1-1347" title="1347">        next_value <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1348" title="1348">        <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">str</span>(sequence[<span class="op">-</span><span class="dv">1</span>]):</a>
+<a class="sourceLine" id="cb1-1349" title="1349">            next_value <span class="op">+=</span> <span class="bu">int</span>(digit) <span class="op">**</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-1350" title="1350">        sequence.append(next_value)</a>
+<a class="sourceLine" id="cb1-1351" title="1351">    <span class="cf">return</span> <span class="bu">len</span>(sequence)</a>
+<a class="sourceLine" id="cb1-1352" title="1352"></a>
+<a class="sourceLine" id="cb1-1353" title="1353"></a>
+<a class="sourceLine" id="cb1-1354" title="1354"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1355" title="1355"></a>
+<a class="sourceLine" id="cb1-1356" title="1356"></a>
+<a class="sourceLine" id="cb1-1357" title="1357"><span class="kw">def</span> pagesNumberingWithInk(current, numberOfDigits):</a>
+<a class="sourceLine" id="cb1-1358" title="1358">    numberOfDigits <span class="op">-=</span> <span class="bu">len</span>(<span class="bu">str</span>(current))</a>
+<a class="sourceLine" id="cb1-1359" title="1359">    next_digits <span class="op">=</span> <span class="bu">len</span>(<span class="bu">str</span>(current <span class="op">+</span> <span class="dv">1</span>))</a>
+<a class="sourceLine" id="cb1-1360" title="1360">    <span class="cf">while</span> numberOfDigits <span class="op">&gt;=</span> next_digits:</a>
+<a class="sourceLine" id="cb1-1361" title="1361">        current <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1362" title="1362">        numberOfDigits <span class="op">-=</span> next_digits</a>
+<a class="sourceLine" id="cb1-1363" title="1363">        next_digits <span class="op">=</span> <span class="bu">len</span>(<span class="bu">str</span>(current))</a>
+<a class="sourceLine" id="cb1-1364" title="1364">    <span class="cf">return</span> current</a>
+<a class="sourceLine" id="cb1-1365" title="1365"></a>
+<a class="sourceLine" id="cb1-1366" title="1366"></a>
+<a class="sourceLine" id="cb1-1367" title="1367"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1368" title="1368"></a>
+<a class="sourceLine" id="cb1-1369" title="1369"></a>
+<a class="sourceLine" id="cb1-1370" title="1370"><span class="kw">def</span> comfortableNumbers(l, r):</a>
+<a class="sourceLine" id="cb1-1371" title="1371">    count <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1372" title="1372">    <span class="cf">for</span> a <span class="kw">in</span> <span class="bu">range</span>(l, r):</a>
+<a class="sourceLine" id="cb1-1373" title="1373">        <span class="cf">for</span> b <span class="kw">in</span> <span class="bu">range</span>(a <span class="op">+</span> <span class="dv">1</span>, r <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-1374" title="1374">            a_sum <span class="op">=</span> <span class="bu">sum</span>(<span class="bu">int</span>(digit) <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">str</span>(a))</a>
+<a class="sourceLine" id="cb1-1375" title="1375">            b_sum <span class="op">=</span> <span class="bu">sum</span>(<span class="bu">int</span>(digit) <span class="cf">for</span> digit <span class="kw">in</span> <span class="bu">str</span>(b))</a>
+<a class="sourceLine" id="cb1-1376" title="1376">            <span class="cf">if</span> b <span class="op">&lt;=</span> a <span class="op">+</span> a_sum <span class="kw">and</span> a <span class="op">&gt;=</span> b <span class="op">-</span> b_sum:</a>
+<a class="sourceLine" id="cb1-1377" title="1377">                count <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1378" title="1378">    <span class="cf">return</span> count</a>
+<a class="sourceLine" id="cb1-1379" title="1379"></a>
+<a class="sourceLine" id="cb1-1380" title="1380"></a>
+<a class="sourceLine" id="cb1-1381" title="1381"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1382" title="1382"></a>
+<a class="sourceLine" id="cb1-1383" title="1383"></a>
+<a class="sourceLine" id="cb1-1384" title="1384"><span class="kw">def</span> weakNumbers(n):</a>
+<a class="sourceLine" id="cb1-1385" title="1385">    all_factors <span class="op">=</span> [count_factors(num) <span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>)]</a>
+<a class="sourceLine" id="cb1-1386" title="1386">    weaknesses <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-1387" title="1387">    <span class="cf">for</span> num, num_factors <span class="kw">in</span> <span class="bu">enumerate</span>(all_factors, <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-1388" title="1388">        weakness <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1389" title="1389">        <span class="cf">for</span> factor <span class="kw">in</span> all_factors[:num]:</a>
+<a class="sourceLine" id="cb1-1390" title="1390">            <span class="cf">if</span> factor <span class="op">&gt;</span> num_factors:</a>
+<a class="sourceLine" id="cb1-1391" title="1391">                weakness <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1392" title="1392">        weaknesses.append(weakness)</a>
+<a class="sourceLine" id="cb1-1393" title="1393">        weakest <span class="op">=</span> <span class="bu">max</span>(weaknesses)</a>
+<a class="sourceLine" id="cb1-1394" title="1394">        <span class="cf">return</span> [weakest, weaknesses.count(weakest)]</a>
+<a class="sourceLine" id="cb1-1395" title="1395"></a>
+<a class="sourceLine" id="cb1-1396" title="1396"></a>
+<a class="sourceLine" id="cb1-1397" title="1397"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1398" title="1398"></a>
+<a class="sourceLine" id="cb1-1399" title="1399"></a>
+<a class="sourceLine" id="cb1-1400" title="1400"><span class="kw">def</span> count_factors(n):</a>
+<a class="sourceLine" id="cb1-1401" title="1401">    factors <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-1402" title="1402">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, n <span class="op">+</span> <span class="dv">1</span>):</a>
+<a class="sourceLine" id="cb1-1403" title="1403">        <span class="cf">if</span> n <span class="op">%</span> i <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-1404" title="1404">            factors <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1405" title="1405">    <span class="cf">return</span> factors</a>
+<a class="sourceLine" id="cb1-1406" title="1406"></a>
+<a class="sourceLine" id="cb1-1407" title="1407"></a>
+<a class="sourceLine" id="cb1-1408" title="1408"><span class="bu">print</span>(weakNumbers(<span class="dv">500</span>))</a>
+<a class="sourceLine" id="cb1-1409" title="1409"></a>
+<a class="sourceLine" id="cb1-1410" title="1410"><span class="im">import</span> math</a>
+<a class="sourceLine" id="cb1-1411" title="1411"></a>
+<a class="sourceLine" id="cb1-1412" title="1412"></a>
+<a class="sourceLine" id="cb1-1413" title="1413"><span class="co">#------------------------------------------------------------------------------------------------#</span></a>
+<a class="sourceLine" id="cb1-1414" title="1414"></a>
+<a class="sourceLine" id="cb1-1415" title="1415"></a>
+<a class="sourceLine" id="cb1-1416" title="1416"><span class="kw">def</span> rectangleRotation(a, b):</a>
+<a class="sourceLine" id="cb1-1417" title="1417">    n <span class="op">=</span> a <span class="op">/</span> (<span class="dv">2</span> <span class="op">**</span> <span class="fl">0.5</span>)</a>
+<a class="sourceLine" id="cb1-1418" title="1418">    m <span class="op">=</span> b <span class="op">/</span> (<span class="dv">2</span> <span class="op">**</span> <span class="fl">0.5</span>)</a>
+<a class="sourceLine" id="cb1-1419" title="1419">    points <span class="op">=</span> (math.floor(n) <span class="op">*</span> math.floor(m)) <span class="op">+</span> (math.ceil(n) <span class="op">*</span> math.ceil(m))</a>
+<a class="sourceLine" id="cb1-1420" title="1420">    <span class="cf">if</span> math.floor(n) <span class="op">%</span> <span class="dv">2</span> <span class="op">!=</span> math.floor(m) <span class="op">%</span> <span class="dv">2</span>:</a>
+<a class="sourceLine" id="cb1-1421" title="1421">        points <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-1422" title="1422">    <span class="cf">return</span> points</a>
+<a class="sourceLine" id="cb1-1423" title="1423"></a>
+<a class="sourceLine" id="cb1-1424" title="1424"></a>
+<a class="sourceLine" id="cb1-1425" title="1425"><span class="co"># rectangleRotation(6, 4)</span></a>
+<a class="sourceLine" id="cb1-1426" title="1426"><span class="bu">print</span>(rectangleRotation(<span class="dv">8</span>, <span class="dv">6</span>))</a></code></pre></div>
+<p>{% endtab %}</p>
+<p>{% tab title=“Second Tab” %}</p>
+<p>{% endtab %} {% endtabs %}</p>
+</body>
+</html>

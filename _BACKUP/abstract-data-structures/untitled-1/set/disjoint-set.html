@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>disjoint-set</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="disjoint-set">Disjoint Set</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co">    disjoint set</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co">    Reference: https://en.wikipedia.org/wiki/Disjoint-set_data_structure</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="va">self</span>.data <span class="op">=</span> data</a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="kw">def</span> make_set(x):</a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="co">    make x as a set.</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="co"># rank is the distance from x to its&#39; parent</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="co"># root&#39;s rank is 0</span></a>
+<a class="sourceLine" id="cb1-18" title="18">    x.rank <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-19" title="19">    x.parent <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb1-20" title="20"></a>
+<a class="sourceLine" id="cb1-21" title="21"></a>
+<a class="sourceLine" id="cb1-22" title="22"><span class="kw">def</span> union_set(x, y):</a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="co">    union two sets.</span></a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="co">    set with bigger rank should be parent, so that the</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="co">    disjoint set tree will be more flat.</span></a>
+<a class="sourceLine" id="cb1-27" title="27"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-28" title="28">    x, y <span class="op">=</span> find_set(x), find_set(y)</a>
+<a class="sourceLine" id="cb1-29" title="29">    <span class="cf">if</span> x.rank <span class="op">&gt;</span> y.rank:</a>
+<a class="sourceLine" id="cb1-30" title="30">        y.parent <span class="op">=</span> x</a>
+<a class="sourceLine" id="cb1-31" title="31">    <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-32" title="32">        x.parent <span class="op">=</span> y</a>
+<a class="sourceLine" id="cb1-33" title="33">        <span class="cf">if</span> x.rank <span class="op">==</span> y.rank:</a>
+<a class="sourceLine" id="cb1-34" title="34">            y.rank <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-35" title="35"></a>
+<a class="sourceLine" id="cb1-36" title="36"></a>
+<a class="sourceLine" id="cb1-37" title="37"><span class="kw">def</span> find_set(x):</a>
+<a class="sourceLine" id="cb1-38" title="38">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-39" title="39"><span class="co">    return the parent of x</span></a>
+<a class="sourceLine" id="cb1-40" title="40"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-41" title="41">    <span class="cf">if</span> x <span class="op">!=</span> x.parent:</a>
+<a class="sourceLine" id="cb1-42" title="42">        x.parent <span class="op">=</span> find_set(x.parent)</a>
+<a class="sourceLine" id="cb1-43" title="43">    <span class="cf">return</span> x.parent</a>
+<a class="sourceLine" id="cb1-44" title="44"></a>
+<a class="sourceLine" id="cb1-45" title="45"></a>
+<a class="sourceLine" id="cb1-46" title="46"><span class="kw">def</span> find_python_set(node: Node) <span class="op">-&gt;</span> <span class="bu">set</span>:</a>
+<a class="sourceLine" id="cb1-47" title="47">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-48" title="48"><span class="co">    Return a Python Standard Library set that contains i.</span></a>
+<a class="sourceLine" id="cb1-49" title="49"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-50" title="50">    sets <span class="op">=</span> ({<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>}, {<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>})</a>
+<a class="sourceLine" id="cb1-51" title="51">    <span class="cf">for</span> s <span class="kw">in</span> sets:</a>
+<a class="sourceLine" id="cb1-52" title="52">        <span class="cf">if</span> node.data <span class="kw">in</span> s:</a>
+<a class="sourceLine" id="cb1-53" title="53">            <span class="cf">return</span> s</a>
+<a class="sourceLine" id="cb1-54" title="54">    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="ss">f&quot;</span><span class="sc">{</span>node<span class="sc">.</span>data<span class="sc">}</span><span class="ss"> is not in </span><span class="sc">{</span>sets<span class="sc">}</span><span class="ss">&quot;</span>)</a>
+<a class="sourceLine" id="cb1-55" title="55"></a>
+<a class="sourceLine" id="cb1-56" title="56"></a>
+<a class="sourceLine" id="cb1-57" title="57"><span class="kw">def</span> test_disjoint_set():</a>
+<a class="sourceLine" id="cb1-58" title="58">    <span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-59" title="59"><span class="co">    &gt;&gt;&gt; test_disjoint_set()</span></a>
+<a class="sourceLine" id="cb1-60" title="60"><span class="co">    &quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb1-61" title="61">    vertex <span class="op">=</span> [Node(i) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>)]</a>
+<a class="sourceLine" id="cb1-62" title="62">    <span class="cf">for</span> v <span class="kw">in</span> vertex:</a>
+<a class="sourceLine" id="cb1-63" title="63">        make_set(v)</a>
+<a class="sourceLine" id="cb1-64" title="64"></a>
+<a class="sourceLine" id="cb1-65" title="65">    union_set(vertex[<span class="dv">0</span>], vertex[<span class="dv">1</span>])</a>
+<a class="sourceLine" id="cb1-66" title="66">    union_set(vertex[<span class="dv">1</span>], vertex[<span class="dv">2</span>])</a>
+<a class="sourceLine" id="cb1-67" title="67">    union_set(vertex[<span class="dv">3</span>], vertex[<span class="dv">4</span>])</a>
+<a class="sourceLine" id="cb1-68" title="68">    union_set(vertex[<span class="dv">3</span>], vertex[<span class="dv">5</span>])</a>
+<a class="sourceLine" id="cb1-69" title="69"></a>
+<a class="sourceLine" id="cb1-70" title="70">    <span class="cf">for</span> node0 <span class="kw">in</span> vertex:</a>
+<a class="sourceLine" id="cb1-71" title="71">        <span class="cf">for</span> node1 <span class="kw">in</span> vertex:</a>
+<a class="sourceLine" id="cb1-72" title="72">            <span class="cf">if</span> find_python_set(node0).isdisjoint(find_python_set(node1)):</a>
+<a class="sourceLine" id="cb1-73" title="73">                <span class="cf">assert</span> find_set(node0) <span class="op">!=</span> find_set(node1)</a>
+<a class="sourceLine" id="cb1-74" title="74">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-75" title="75">                <span class="cf">assert</span> find_set(node0) <span class="op">==</span> find_set(node1)</a>
+<a class="sourceLine" id="cb1-76" title="76"></a>
+<a class="sourceLine" id="cb1-77" title="77"></a>
+<a class="sourceLine" id="cb1-78" title="78"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</a>
+<a class="sourceLine" id="cb1-79" title="79">    test_disjoint_set()</a></code></pre></div>
+</body>
+</html>
