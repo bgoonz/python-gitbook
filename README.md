@@ -82,6 +82,10 @@
 
 ### **Downloads:**
 
+{% file src=".gitbook/assets/spaces\_-mij72ebv4ojqjvbacmy\_pdf\_3321739661.pdf" %}
+
+
+
 ​
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/index" caption="" %}
