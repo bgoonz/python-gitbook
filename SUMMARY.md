@@ -180,7 +180,6 @@
 * [Useful Links](resources/untitled/README.md)
   * [Awesome Python](resources/untitled/awesome-python.md)
   * [My-Links](resources/untitled/my-links.md)
-  * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## Docs <a id="stdlib"></a>
 
