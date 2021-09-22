@@ -1,5 +1,7 @@
 # Outline
 
+{% embed url="https://codepen.io/bgoonz/embed/ZEyXNVr?\#result-box" %}
+
 
 
 {% embed url="https://codesandbox.io/embed/ds-algo-forked-60s1b?fontsize=14&hidenavigation=1&theme=light&view=preview" %}
