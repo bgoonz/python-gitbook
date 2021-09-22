@@ -126,7 +126,9 @@ Awesome Find:
 
 
 
-## 
+{% file src=".gitbook/assets/learning\_python.pdf" %}
+
+
 
 {% file src=".gitbook/assets/pythonlearn.pdf" %}
 
