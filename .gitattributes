@@ -2,7 +2,7 @@
 
 
 *.html linguist-vendored=true
-
+*.js linguist-vendored=true
 
 # Linguist::FileBlob.new("./*.html").vendored? # => true
 # Auto detect text files and perform LF normalization
