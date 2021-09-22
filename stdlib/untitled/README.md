@@ -12,13 +12,9 @@ h
 
 {% page-ref page="built-in-functions/" %}
 
+{% embed url="https://docs.python.org/3/" caption="" %}
 
-
-{% embed url="https://docs.python.org/3/" %}
-
-{% embed url="https://codesandbox.io/s/ds-algo-forked-60s1b" %}
-
-
+{% embed url="https://codesandbox.io/s/ds-algo-forked-60s1b" caption="" %}
 
 ## The Python Tutorial
 
@@ -170,65 +166,7 @@ The [Glossary](https://docs.python.org/3.9/glossary.html#glossary) is also worth
     * [16.1.3. The Interactive Startup File](https://docs.python.org/3.9/tutorial/appendix.html#the-interactive-startup-file)
     * [16.1.4. The Customization Modules](https://docs.python.org/3.9/tutorial/appendix.html#the-customization-modules)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 General Docs:
 
 [https://codesandbox.io/s/ds-algo-forked-lfujh?from-embed](https://codesandbox.io/s/ds-algo-forked-lfujh?from-embed)
-
-
-
-
-
-
-
-
 

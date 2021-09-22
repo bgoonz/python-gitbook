@@ -22,8 +22,6 @@
 
 {% file src="../.gitbook/assets/mit6\_0001f16\_ps5 \(2\).pdf" %}
 
-
-
 {% file src="../.gitbook/assets/6lowphpdwvc \(5\).pdf" %}
 
 {% file src="../.gitbook/assets/mit6\_0001f16\_lec12 \(9\).pdf" %}
@@ -50,9 +48,5 @@
 
 {% file src="../.gitbook/assets/mit6\_0001f16\_lec9 \(1\).pdf" %}
 
-
-
 {% file src="../.gitbook/assets/mit6\_0001f16\_lec12 \(7\).pdf" %}
-
-
 

@@ -10,8 +10,6 @@ here each elements in the list is separated by comma and enclosed by a pair of s
 
 ![](../../../.gitbook/assets/image%20%2832%29.png)
 
-
-
 Other ways of creating list.
 
 You can use index operator \(`[]`\) to access individual elements in the list. List index starts from `0`.

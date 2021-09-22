@@ -8,17 +8,13 @@
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
+{% embed url="https://gist.github.com/bgoonz/df0237e949950dfd81add75e2b95f60a" caption="" %}
 
-
-{% embed url="https://gist.github.com/bgoonz/df0237e949950dfd81add75e2b95f60a" %}
-
-
-
-### Dictionaries
+## Dictionaries
 
 A dictionary is a collection of unordered, modifiable\(mutable\) paired \(key: value\) data type.
 
-#### Creating a Dictionary
+### Creating a Dictionary
 
 To create a dictionary we use curly brackets, {} or the _dict\(\)_ built-in function.
 
@@ -48,7 +44,7 @@ person = {
 
 The dictionary above shows that a value could be any data types:string, boolean, list, tuple, set or a dictionary.
 
-#### Dictionary Length
+### Dictionary Length
 
 It checks the number of 'key: value' pairs in the dictionary.
 
@@ -76,7 +72,7 @@ person = {
 print(len(person)) # 7
 ```
 
-#### Accessing Dictionary Items
+### Accessing Dictionary Items
 
 We can access Dictionary items by referring to its key name.
 
@@ -131,7 +127,7 @@ print(person.get('skills')) #['HTML','CSS','JavaScript', 'React', 'Node', 'Mongo
 print(person.get('city'))   # None
 ```
 
-#### Adding Items to a Dictionary
+### Adding Items to a Dictionary
 
 We can add new key and value pairs to a dictionary
 
@@ -161,7 +157,7 @@ person['skills'].append('HTML')
 print(person)
 ```
 
-#### Modifying Items in a Dictionary
+### Modifying Items in a Dictionary
 
 We can modify items in a dictionary
 
@@ -190,7 +186,7 @@ person['first_name'] = 'Eyob'
 person['age'] = 252
 ```
 
-#### Checking Keys in a Dictionary
+### Checking Keys in a Dictionary
 
 We use the _in_ operator to check if a key exist in a dictionary
 
@@ -201,7 +197,7 @@ print('key2' in dct) # True
 print('key5' in dct) # False
 ```
 
-#### Removing Key and Value Pairs from a Dictionary
+### Removing Key and Value Pairs from a Dictionary
 
 * _pop\(key\)_: removes the item with the specified key name:
 * _popitem\(\)_: removes the last item
@@ -236,7 +232,7 @@ person.popitem()                # Removes the address item
 del person['is_married']        # Removes the is_married item
 ```
 
-#### Changing Dictionary to a List of Items
+### Changing Dictionary to a List of Items
 
 The _items\(\)_ method changes dictionary to a list of tuples.
 
@@ -246,7 +242,7 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(dct.items()) # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
 ```
 
-#### Clearing a Dictionary
+### Clearing a Dictionary
 
 If we don't want the items in a dictionary we can clear them using _clear\(\)_ method
 
@@ -256,7 +252,7 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 print(dct.clear()) # None
 ```
 
-#### Deleting a Dictionary
+### Deleting a Dictionary
 
 If we do not use the dictionary we can delete it completely
 
@@ -266,7 +262,7 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 del dct
 ```
 
-#### Copy a Dictionary
+### Copy a Dictionary
 
 We can copy a dictionary using a _copy\(\)_ method. Using copy we can avoid mutation of the original dictionary.
 
@@ -276,7 +272,7 @@ dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 dct_copy = dct.copy() # {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
 ```
 
-#### Getting Dictionary Keys as a List
+### Getting Dictionary Keys as a List
 
 The _keys\(\)_ method gives us all the keys of a a dictionary as a list.
 
@@ -287,7 +283,7 @@ keys = dct.keys()
 print(keys)     # dict_keys(['key1', 'key2', 'key3', 'key4'])
 ```
 
-#### Getting Dictionary Values as a List
+### Getting Dictionary Values as a List
 
 The _values_ method gives us all the values of a a dictionary as a list.
 
@@ -358,10 +354,7 @@ def combine_sets(set1, set2):
     for item2 in set2:
         together_set.add(item2)
     return together_set
-
 ```
-
-
 
 ```python
 # need strings[i] = strings[j] for all patterns[i] = patterns[j] to be true -
@@ -389,12 +382,7 @@ def areFollowingPatterns(strings, patterns):
         return False
 
     return True
-
 ```
-
-
-
-
 
 ```python
 # gives True if two duplicate numbers in the nums array are within k distance
@@ -437,12 +425,5 @@ def containsCloseNums(nums, k):
             last_ind = next_ind
 
     return False
-
 ```
-
-
-
-
-
-
 

@@ -2,6 +2,18 @@
 
 
 
+## Search for keywords in files reachable from current directory.
+
+{% embed url="https://gist.github.com/bgoonz/4070fe43eadfcf574c5711f4ed5ad0a9" %}
+
+
+
+
+
+
+
+
+
 #### Calculates the date of `n` days from the given date.
 
 * Use `datetime.timedelta` and the `+` operator to calculate the new `datetime.datetime` value after adding `n` days to `d`.

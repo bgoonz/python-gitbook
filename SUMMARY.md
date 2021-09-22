@@ -58,7 +58,6 @@
 
 * [Algorithms](abstract-data-structures/algorithms-1/README.md)
   * [Dijkstra's algorithm](abstract-data-structures/algorithms-1/dijkstras-algorithm.md)
-  * [Recursion](abstract-data-structures/algorithms-1/recursion.md)
   * [Calculate a Factorial With Python - Iterative and Recursive](abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive.md)
   * [DFS](abstract-data-structures/algorithms-1/dfs.md)
   * [BFS](abstract-data-structures/algorithms-1/bfs.md)
@@ -84,7 +83,6 @@
     * [Tire](abstract-data-structures/untitled-1/untitled/tire.md)
     * [Dynamic Programming](abstract-data-structures/untitled-1/untitled/dynamic-programming.md)
   * [Graphs](abstract-data-structures/untitled-1/untitled-1/README.md)
-    * [Minimize sum of node values by filling given empty Tree such that each node is GCD of its children](abstract-data-structures/untitled-1/untitled-1/minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children.md)
     * [Overflow Practice Problems](abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems.md)
     * [Graphs Explained](abstract-data-structures/untitled-1/untitled-1/graphs-explained.md)
     * [Earliest Ancestor](abstract-data-structures/untitled-1/untitled-1/earliest-ancestor.md)
@@ -180,6 +178,7 @@
 * [Useful Links](resources/untitled/README.md)
   * [Awesome Python](resources/untitled/awesome-python.md)
   * [My-Links](resources/untitled/my-links.md)
+  * [Beginners Guide To Python](resources/untitled/beginners-guide-to-python.md)
 
 ## Docs <a id="stdlib"></a>
 
