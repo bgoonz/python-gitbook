@@ -8,9 +8,9 @@ description: Introduction to Python
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-## 
+##
 
-## 
+##
 
 ## Variable Conventions
 
@@ -18,12 +18,12 @@ description: Introduction to Python
 
 ​
 
-* Variables do not need to be initialized. e.g!\(let, const, var\) just a name and an assignment
-* Variables are always block scoped
-* Variables should be snake\_case \(think of python as a snake lol\)
-* CAPITAL\_SNAKE\_CASE usually refers to constants
-* UpperCamelCase usually refers to a class
-* \_\_double_underscore\_\_ is used with variables that should be private or left alone \(dunder\)
+- Variables do not need to be initialized. e.g!\(let, const, var\) just a name and an assignment
+- Variables are always block scoped
+- Variables should be snake_case \(think of python as a snake lol\)
+- CAPITAL_SNAKE_CASE usually refers to constants
+- UpperCamelCase usually refers to a class
+- \_\_double_underscore\_\_ is used with variables that should be private or left alone \(dunder\)
 
   ​
 
@@ -35,14 +35,14 @@ description: Introduction to Python
 
 ​
 
-* **Boolean**: True or False; Written with uppercase first letter
-* **Integer**: Whole Numbers
-* **Float**: Any number with a decimal. Division always returns a float;
-* **String**: A sequence of unicode characters; "I am a string!"
-* **List**: An ordered sequence of values \[1,2,3\], \["a","b","c"\]
-* **Dictionary**: A collection of key value pairs {"first\_name": "William", "last\_name": "Vincent"}
-* **Tuples**: An ordered and immutable collection of objects \(1,2,3,4,5\)
-* **None**: Like null in other languages. Written with an uppercase first letter.
+- **Boolean**: True or False; Written with uppercase first letter
+- **Integer**: Whole Numbers
+- **Float**: Any number with a decimal. Division always returns a float;
+- **String**: A sequence of unicode characters; "I am a string!"
+- **List**: An ordered sequence of values \[1,2,3\], \["a","b","c"\]
+- **Dictionary**: A collection of key value pairs {"first_name": "William", "last_name": "Vincent"}
+- **Tuples**: An ordered and immutable collection of objects \(1,2,3,4,5\)
+- **None**: Like null in other languages. Written with an uppercase first letter.
 
   ​
 
@@ -67,9 +67,9 @@ print(formatted)
 
 ​ Python can use negative indexing: ​
 
-* name = "Bill"
-* name\[0\] == name\[-4\]
-* name\[3\] == name\[-1\]
+- name = "Bill"
+- name\[0\] == name\[-4\]
+- name\[3\] == name\[-1\]
 
   ​
 
@@ -81,18 +81,19 @@ print(formatted)
 
 ​
 
-* **To Int**:
-  * decimal = 12.43563456
-  * integer = int\(decimal\)
-  * integer == 12
-* **To String**:
-  * list = \[1,2,3\]
-  * to\_string = str\(list\)
-  * to\_string == "\[1,2,3\]"
-* **To Float**:
-  * integer = 12
-  * to\_float = float\(integer\)
-  * float == 12.0
+- **To Int**:
+  - decimal = 12.43563456
+  - integer = int\(decimal\)
+  - integer == 12
+- **To String**:
+  - list = \[1,2,3\]
+  - to_string = str\(list\)
+  - to_string == "\[1,2,3\]"
+- **To Float**:
+
+  - integer = 12
+  - to_float = float\(integer\)
+  - float == 12.0
 
     ​
 
@@ -117,10 +118,10 @@ else:
 
 ​
 
-* **":"** represents an indented block below, allowing python to understand the end of the condition and the beginning of the response.
-* **Falsey Values**: empty objects, empty strings, None, 0
-* **Comparison Operators**: ==, !=, &gt;, &gt;=, &lt;, &lt;=
-* **Logical Operators**: and, or, not
+- **":"** represents an indented block below, allowing python to understand the end of the condition and the beginning of the response.
+- **Falsey Values**: empty objects, empty strings, None, 0
+- **Comparison Operators**: ==, !=, &gt;, &gt;=, &lt;, &lt;=
+- **Logical Operators**: and, or, not
 
   ​
 
@@ -132,12 +133,13 @@ else:
 
 ​
 
-* **Iterable Objects**:
-  * String: " "
-  * List: \[a, b\]
-  * Dictionary: {key: value}
-  * Tuples: \(a,b,c\)
-  * Range: range\(min, max\). Inclusive start and end.
+- **Iterable Objects**:
+
+  - String: " "
+  - List: \[a, b\]
+  - Dictionary: {key: value}
+  - Tuples: \(a,b,c\)
+  - Range: range\(min, max\). Inclusive start and end.
 
     ​
 
@@ -164,7 +166,7 @@ else:
     ​
     ```
 
-## 
+##
 
 ## Intro 2 Python continued...
 
@@ -622,10 +624,10 @@ Of course, we can use Python for more complicated tasks than adding two and two 
 
 This example introduces several new features.
 
-* The first line contains a _multiple assignment_: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
-* The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition \(here: `a < 10`\) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` \(less than\), `>` \(greater than\), `==` \(equal to\), `<=` \(less than or equal to\), `>=` \(greater than or equal to\) and `!=` \(not equal to\).
-* The _body_ of the loop is _indented_: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space\(s\) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion \(since the parser cannot guess when you have typed the last line\). Note that each line within a basic block must be indented by the same amount.
-* The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument\(s\) it is given. It differs from just writing the expression you want to write \(as we did earlier in the calculator examples\) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
+- The first line contains a _multiple assignment_: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
+- The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition \(here: `a < 10`\) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` \(less than\), `>` \(greater than\), `==` \(equal to\), `<=` \(less than or equal to\), `>=` \(greater than or equal to\) and `!=` \(not equal to\).
+- The _body_ of the loop is _indented_: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space\(s\) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion \(since the parser cannot guess when you have typed the last line\). Note that each line within a basic block must be indented by the same amount.
+- The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument\(s\) it is given. It differs from just writing the expression you want to write \(as we did earlier in the calculator examples\) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
 
   ```python
   >>> i = 256*256
@@ -900,8 +902,8 @@ It is simple to write a function that returns a list of the numbers of the Fibon
 
 This example, as usual, demonstrates some new Python features:
 
-* The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
-* The statement `result.append(a)` calls a _method_ of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object \(this may be an expression\), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. \(It is possible to define your own object types and methods, using _classes_, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)\) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
+- The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
+- The statement `result.append(a)` calls a _method_ of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object \(this may be an expression\), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. \(It is possible to define your own object types and methods, using _classes_, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)\) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
 
 #### 4.7. More on Defining Functions
 
@@ -927,9 +929,9 @@ def ask_ok(prompt, retries=4, reminder='Please try again!'):
 
 This function can be called in several ways:
 
-* giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
-* giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
-* or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
+- giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
+- giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
+- or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
 
 This example also introduces the [`in`](https://docs.python.org/3.9/reference/expressions.html#in) keyword. This tests whether or not a sequence contains a certain value.
 
@@ -1200,9 +1202,9 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
 
 As guidance:
 
-* Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
-* Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
-* For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
+- Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
+- Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
+- For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
 
 **4.7.4. Arbitrary Argument Lists**
 
@@ -2010,9 +2012,9 @@ This is often used either to provide a convenient user interface to a module, or
 
 When a module named `spam` is imported, the interpreter first searches for a built-in module with that name. If not found, it then searches for a file named `spam.py` in a list of directories given by the variable [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path). [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path) is initialized from these locations:
 
-* The directory containing the input script \(or the current directory when no file is specified\).
-* [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) \(a list of directory names, with the same syntax as the shell variable `PATH`\).
-* The installation-dependent default.
+- The directory containing the input script \(or the current directory when no file is specified\).
+- [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) \(a list of directory names, with the same syntax as the shell variable `PATH`\).
+- The installation-dependent default.
 
 Note
 
@@ -2030,10 +2032,10 @@ Python does not check the cache in two circumstances. First, it always recompile
 
 Some tips for experts:
 
-* You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
-* A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
-* The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
-* There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
+- You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
+- A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
+- The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
+- There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
 
 #### 6.2. Standard Modules
 
@@ -2068,7 +2070,7 @@ The built-in function [`dir()`](https://docs.python.org/3.9/library/functions.ht
 >>> import fibo, sys
 >>> dir(fibo)
 ['__name__', 'fib', 'fib2']
->>> dir(sys)  
+>>> dir(sys)
 ['__breakpointhook__', '__displayhook__', '__doc__', '__excepthook__',
  '__interactivehook__', '__loader__', '__name__', '__package__', '__spec__',
  '__stderr__', '__stdin__', '__stdout__', '__unraisablehook__',
@@ -2108,7 +2110,7 @@ Note that it lists all types of names: variables, modules, functions, etc.
 
 ```python
 >>> import builtins
->>> dir(builtins)  
+>>> dir(builtins)
 ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException',
  'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning',
  'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError',
@@ -2261,4 +2263,3 @@ Note that relative imports are based on the name of the current module. Since th
 Packages support one more special attribute, [`__path__`](https://docs.python.org/3.9/reference/import.html#__path__). This is initialized to be a list containing the name of the directory holding the package’s `__init__.py` before the code in that file is executed. This variable can be modified; doing so affects future searches for modules and subpackages contained in the package.
 
 While this feature is not often needed, it can be used to extend the set of modules found in a package.
-

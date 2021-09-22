@@ -1,37 +1,23 @@
 # Calculating Big O
 
-{% tabs %}
-{% tab title="Order Of Growth" %}
+{% tabs %} {% tab title="Order Of Growth" %}
 
-
-![](../.gitbook/assets/image%20%2834%29.png)
-{% endtab %}
+![](../.gitbook/assets/image%20%2834%29.png) {% endtab %}
 
 {% tab title="Notation" %}
 
-
-![](../.gitbook/assets/image%20%2830%29.png)
-{% endtab %}
+![](../.gitbook/assets/image%20%2830%29.png) {% endtab %}
 
 {% tab title="Big O Complexity Chart" %}
 
+![](../.gitbook/assets/image%20%2828%29%20%281%29.png) {% endtab %}
 
-![](../.gitbook/assets/image%20%2828%29%20%281%29.png)
-{% endtab %}
+{% tab title="Class Name Table" %} ![](../.gitbook/assets/image%20%2843%29.png) {% endtab %}
 
-{% tab title="Class Name Table" %}
-![](../.gitbook/assets/image%20%2843%29.png)
-{% endtab %}
+{% tab title="Simplifying Big O" %} ![](../.gitbook/assets/image%20%2842%29.png) {% endtab %} {% endtabs %}
 
-{% tab title="Simplifying Big O" %}
-![](../.gitbook/assets/image%20%2842%29.png)
-{% endtab %}
-{% endtabs %}
+{% tabs %} {% tab title="Big O Python" %}
 
-
-
-{% tabs %}
-{% tab title="Big O Python" %}
 ```python
 # O(c) / o(1)
 def constant_algo(items):
@@ -104,33 +90,33 @@ def fact_r(n):
 
 
 ```
+
 {% endtab %}
 
 {% tab title="JS" %}
 
-
 ## big ‘O’ notation <a id="5fc8"></a>
 
-* Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
-* Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
-* The function should be defined by the size of the input.
-* `Smaller` Big O is better \(lower time complexity\)
-* Big O is used to describe the worst case scenario.
-* Big O is simplified to show only its most dominant mathematical term.
+- Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
+- Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
+- The function should be defined by the size of the input.
+- `Smaller` Big O is better \(lower time complexity\)
+- Big O is used to describe the worst case scenario.
+- Big O is simplified to show only its most dominant mathematical term.
 
 ## Simplifying Math Terms <a id="6083"></a>
 
-* We can use the following rules to simplify the our Big O functions:
-* `Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.
-* `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
-* `n` : size of the input
-* `T(f)` : unsimplified math function
-* `O(f)` : simplified math function.
+- We can use the following rules to simplify the our Big O functions:
+- `Simplify Products` : If the function is a product of many terms, we drop the terms that don't depend on n.
+- `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
+- `n` : size of the input
+- `T(f)` : unsimplified math function
+- `O(f)` : simplified math function.
 
 `Putting it all together`![](https://miro.medium.com/max/15/1*TT8uuv1x3nmGUw5rvtoZ8A.png?q=20)![](https://miro.medium.com/max/374/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
 
-* First we apply the product rule to drop all constants.
-* Then we apply the sum rule to select the single most dominant term.
+- First we apply the product rule to drop all constants.
+- Then we apply the sum rule to select the single most dominant term.
 
 ## Complexity Classes <a id="915e"></a>
 
@@ -192,9 +178,7 @@ Common Complexity Classes
 
 {% embed url="https://gist.github.com/eengineergz/5dec7e3736d7b5e28a5f1c85b5b50705\#file-exponential-js" %}
 
-\*\*\*\*
-{% endtab %}
-{% endtabs %}
+\*\*\*\* {% endtab %} {% endtabs %}
 
 ## Computing Big O
 
@@ -204,8 +188,8 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ### Steps to compute Big O
 
-* Things in sequence that _aren't_ loops add together
-* A single thing inside a loop gets multiplied by the loop
+- Things in sequence that _aren't_ loops add together
+- A single thing inside a loop gets multiplied by the loop
 
 1. Go a line at a time, only looking at lines that are executable
 2. Add all the things in sequence that you can first
@@ -216,26 +200,26 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ### Hints
 
-* If you have something that's `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
-* Individual statements tend to be `O(1)`.
-* Loop statements tend to be `O(how-many-times-they-loop)`.
-* Anything that doubles the runtime each step is `O(2^n)` \(e.g. naive Fibonacci\).
-* Anything that triples the runtime each step is `O(3^n)`.
-* Anything that halves the runtime each step is `O(log n)` \(e.g. binary search\).
-* By _dominant term_ we mean, "thing which is largest given some large value of _n_, like 10000". `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
-* Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
-* But loops that binary search over a list are `O(log n)`!
+- If you have something that's `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
+- Individual statements tend to be `O(1)`.
+- Loop statements tend to be `O(how-many-times-they-loop)`.
+- Anything that doubles the runtime each step is `O(2^n)` \(e.g. naive Fibonacci\).
+- Anything that triples the runtime each step is `O(3^n)`.
+- Anything that halves the runtime each step is `O(log n)` \(e.g. binary search\).
+- By _dominant term_ we mean, "thing which is largest given some large value of _n_, like 10000". `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
+- Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
+- But loops that binary search over a list are `O(log n)`!
 
 ### Recursion
 
-* Recursive functions are like loops, where the body of the function is the body of the loop.
-* You need to figure out how many times the function will call itself, and that's the Big O that you need to multiply against the Big O of the function body.
-* Keep in mind that recursion comes with an inherent memory cost that loops don't incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
+- Recursive functions are like loops, where the body of the function is the body of the loop.
+- You need to figure out how many times the function will call itself, and that's the Big O that you need to multiply against the Big O of the function body.
+- Keep in mind that recursion comes with an inherent memory cost that loops don't incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
 
 ### Gotchas
 
-* Built in functions might incur significant Big O without you noticing. Python's list `.copy()` might seem like just a simple `O(1)` line, but [it's `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
-* Beware of loops that modify their index in weird ways.
+- Built in functions might incur significant Big O without you noticing. Python's list `.copy()` might seem like just a simple `O(1)` line, but [it's `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
+- Beware of loops that modify their index in weird ways.
 
 ### Example
 
@@ -366,10 +350,6 @@ n^3                                       Drop the constant
 
 With practice, you can do this in your head. Looking back, the nested loop _must_ have been where the function spent the most of its time; an experienced dev would see that and just quickly compute the Big O for that function from that nested loop alone.
 
-
-
-
-
 ![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
 ### Example with two variables
@@ -455,4 +435,3 @@ This is an `O(2^n)` recursive call. \(With an `O(1)` body.\)
 Sure, `fib(n-2)` only calls it `1/2 * n` times, but we chuck that constant for Big O.
 
 And the base case won't necessarily let `n` get all the way down to zero, but those are just some `-1`s or `-2`s, and those terms aren't dominant in Big O.
-
