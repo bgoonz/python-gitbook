@@ -267,7 +267,9 @@ In case it’s been a while since you’ve looked at any HTML, here’s a quick 
 
 &lt;strong&gt;Hello&lt;/strong&gt;, world!
 
-This HTML will look like [Figure 12-1](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-37) in a browser.![image](https://automatetheboringstuff.com/2e/images/000018.jpg)
+This HTML will look like [Figure 12-1](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-37) in a browser.
+
+![image](https://automatetheboringstuff.com/2e/images/000018.jpg)
 
 _Figure 12-1:_ Hello, world! _rendered in the browser_
 
@@ -277,7 +279,9 @@ There are many different tags in HTML. Some of these tags have extra properties 
 
 Al's free &lt;a href="https://inventwithpython.com"&gt;Python books&lt;/a&gt;.
 
-This HTML will look like [Figure 12-2](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-38) in a browser.![image](https://automatetheboringstuff.com/2e/images/000111.jpg)
+This HTML will look like [Figure 12-2](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-38) in a browser.
+
+![image](https://automatetheboringstuff.com/2e/images/000111.jpg)
 
 _Figure 12-2: The link rendered in the browser_
 
@@ -285,7 +289,9 @@ Some elements have an id attribute that is used to uniquely identify the element
 
 **Viewing the Source HTML of a Web Page**
 
-You’ll need to look at the HTML source of the web pages that your programs will work with. To do this, right-click \(or CTRL-click on macOS\) any web page in your web browser, and select **View Source** or **View page source** to see the HTML text of the page \(see [Figure 12-3](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-39)\). This is the text your browser actually receives. The browser knows how to display, or _render_, the web page from this HTML.![image](https://automatetheboringstuff.com/2e/images/000056.jpg)
+You’ll need to look at the HTML source of the web pages that your programs will work with. To do this, right-click \(or CTRL-click on macOS\) any web page in your web browser, and select **View Source** or **View page source** to see the HTML text of the page \(see [Figure 12-3](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-39)\). This is the text your browser actually receives. The browser knows how to display, or _render_, the web page from this HTML.
+
+![image](https://automatetheboringstuff.com/2e/images/000056.jpg)
 
 _Figure 12-3: Viewing the source of a web page_
 
@@ -293,7 +299,9 @@ I highly recommend viewing the source HTML of some of your favorite sites. It’
 
 **Opening Your Browser’s Developer Tools**
 
-In addition to viewing a web page’s source, you can look through a page’s HTML using your browser’s developer tools. In Chrome and Internet Explorer for Windows, the developer tools are already installed, and you can press F12 to make them appear \(see [Figure 12-4](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-40)\). Pressing F12 again will make the developer tools disappear. In Chrome, you can also bring up the developer tools by selecting **View** ▸ **Developer** ▸ **Developer Tools**. In macOS, pressing ![image](https://automatetheboringstuff.com/2e/images/000064.jpg)-OPTION-I will open Chrome’s Developer Tools.![image](https://automatetheboringstuff.com/2e/images/000152.jpg)
+In addition to viewing a web page’s source, you can look through a page’s HTML using your browser’s developer tools. In Chrome and Internet Explorer for Windows, the developer tools are already installed, and you can press F12 to make them appear \(see [Figure 12-4](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-40)\). Pressing F12 again will make the developer tools disappear. In Chrome, you can also bring up the developer tools by selecting **View** ▸ **Developer** ▸ **Developer Tools**. In macOS, pressing ![image](https://automatetheboringstuff.com/2e/images/000064.jpg)-OPTION-I will open Chrome’s Developer Tools.
+
+![image](https://automatetheboringstuff.com/2e/images/000152.jpg)
 
 _Figure 12-4: The Developer Tools window in the Chrome browser_
 
@@ -315,7 +323,9 @@ Once your program has downloaded a web page using the requests module, you will 
 
 This is where the browser’s developer tools can help. Say you want to write a program to pull weather forecast data from [_https://weather.gov/_](https://weather.gov/). Before writing any code, do a little research. If you visit the site and search for the 94105 ZIP code, the site will take you to a page showing the forecast for that area.
 
-What if you’re interested in scraping the weather information for that ZIP code? Right-click where it is on the page \(or CONTROL-click on macOS\) and select **Inspect Element** from the context menu that appears. This will bring up the Developer Tools window, which shows you the HTML that produces this particular part of the web page. [Figure 12-5](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-41) shows the developer tools open to the HTML of the nearest forecast. Note that if the [_https://weather.gov/_](https://weather.gov/) site changes the design of its web pages, you’ll need to repeat this process to inspect the new elements.![image](https://automatetheboringstuff.com/2e/images/000094.jpg)
+What if you’re interested in scraping the weather information for that ZIP code? Right-click where it is on the page \(or CONTROL-click on macOS\) and select **Inspect Element** from the context menu that appears. This will bring up the Developer Tools window, which shows you the HTML that produces this particular part of the web page. [Figure 12-5](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-41) shows the developer tools open to the HTML of the nearest forecast. Note that if the [_https://weather.gov/_](https://weather.gov/) site changes the design of its web pages, you’ll need to repeat this process to inspect the new elements.
+
+![image](https://automatetheboringstuff.com/2e/images/000094.jpg)
 
 _Figure 12-5: Inspecting the element that holds forecast text with the developer tools_
 
@@ -542,7 +552,9 @@ The benefit of tabbed browsing is that you can easily open links in new tabs to 
 
 Blogs and other regularly updating websites usually have a front page with the most recent post as well as a Previous button on the page that takes you to the previous post. Then that post will also have a Previous button, and so on, creating a trail from the most recent page to the first post on the site. If you wanted a copy of the site’s content to read when you’re not online, you could manually navigate over every page and save each one. But this is pretty boring work, so let’s write a program to do it instead.
 
-XKCD is a popular geek webcomic with a website that fits this structure \(see [Figure 12-6](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-43)\). The front page at [_https://xkcd.com/_](https://xkcd.com/) has a Prev button that guides the user back through prior comics. Downloading each comic by hand would take forever, but you can write a script to do this in a couple of minutes.![image](https://automatetheboringstuff.com/2e/images/000040.jpg)
+XKCD is a popular geek webcomic with a website that fits this structure \(see [Figure 12-6](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-43)\). The front page at [_https://xkcd.com/_](https://xkcd.com/) has a Prev button that guides the user back through prior comics. Downloading each comic by hand would take forever, but you can write a script to do this in a couple of minutes.
+
+![image](https://automatetheboringstuff.com/2e/images/000040.jpg)
 
 _Figure 12-6: XKCD, “a webcomic of romance, sarcasm, math, and language”_
 
@@ -742,7 +754,9 @@ Importing the modules for selenium is slightly tricky. Instead of import seleniu
 &lt;class 'selenium.webdriver.firefox.webdriver.WebDriver'&gt;  
 &gt;&gt;&gt; browser.get\('https://inventwithpython.com'\)
 
-You’ll notice when webdriver.Firefox\(\) is called, the Firefox web browser starts up. Calling type\(\) on the value webdriver.Firefox\(\) reveals it’s of the WebDriver data type. And calling browser.get\('https://inventwithpython.com'\) directs the browser to [_https://inventwithpython.com/_](https://inventwithpython.com/). Your browser should look something like [Figure 12-7](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-44).![image](https://automatetheboringstuff.com/2e/images/000131.jpg)
+You’ll notice when webdriver.Firefox\(\) is called, the Firefox web browser starts up. Calling type\(\) on the value webdriver.Firefox\(\) reveals it’s of the WebDriver data type. And calling browser.get\('https://inventwithpython.com'\) directs the browser to [_https://inventwithpython.com/_](https://inventwithpython.com/). Your browser should look something like [Figure 12-7](https://automatetheboringstuff.com/2e/chapter12/#calibre_link-44).
+
+![image](https://automatetheboringstuff.com/2e/images/000131.jpg)
 
 _Figure 12-7: After we call webdriver.Firefox\(\) and get\(\) in Mu, the Firefox browser appears._
 
