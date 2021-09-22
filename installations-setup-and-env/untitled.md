@@ -38,7 +38,7 @@ The standard packaging tools are all designed to be used from the command line.
 
 The following command will install the latest version of a module and its dependencies from the Python Packaging Index:
 
-```text
+```python
 python -m pip install SomePackage
 ```
 
@@ -50,14 +50,14 @@ For Windows users, the examples in this guide assume that the option to adjust t
 
 It’s also possible to specify an exact or minimum version directly on the command line. When using comparator operators such as `>`, `<` or some other special character which get interpreted by shell, the package name and the version should be enclosed within double quotes:
 
-```text
+```python
 python -m pip install SomePackage==1.0.4    # specific version
 python -m pip install "SomePackage>=1.0.4"  # minimum version
 ```
 
 Normally, if a suitable module is already installed, attempting to install it again will have no effect. Upgrading existing modules must be requested explicitly:
 
-```text
+```python
 python -m pip install --upgrade SomePackage
 ```
 
@@ -97,7 +97,7 @@ See also
 
 On Linux, Mac OS X, and other POSIX systems, use the versioned Python commands in combination with the `-m` switch to run the appropriate copy of `pip`:
 
-```text
+```python
 python2   -m pip install SomePackage  # default Python 2
 python2.7 -m pip install SomePackage  # specifically Python 2.7
 python3   -m pip install SomePackage  # default Python 3
@@ -108,7 +108,7 @@ Appropriately versioned `pip` commands may also be available.
 
 On Windows, use the `py` Python launcher in combination with the `-m` switch:
 
-```text
+```python
 py -2   -m pip install SomePackage  # default Python 2
 py -2.7 -m pip install SomePackage  # specifically Python 2.7
 py -3   -m pip install SomePackage  # default Python 3
@@ -127,7 +127,7 @@ On such systems, it is often better to use a virtual environment or a per-user i
 
 It is possible that `pip` does not get installed by default. One potential fix is:
 
-```text
+```python
 python -m ensurepip --default-pip
 ```
 
@@ -167,7 +167,7 @@ To install pyenv we use the [pyenv-installer](https://github.com/pyenv/pyenv-ins
 
 From the installation instructions on the [pyenv-installer](https://github.com/pyenv/pyenv-installer) website, it says we run the following command:
 
-```text
+```python
 curl https://pyenv.run | bash
 ```
 
@@ -179,13 +179,13 @@ The files that you have to change will depend on which shell you are running \(y
 
 1. Open up your `.profile` file with the following command.
 
-```text
+```python
 code ~/.profile
 ```
 
 1. Add the following lines to your `.profile`.
 
-```text
+```python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -193,13 +193,13 @@ eval "$(pyenv init --path)"
 
 1. Open up your `.zprofile` file with the following command.
 
-```text
+```python
 code ~/.zprofile
 ```
 
 1. Add the following lines to your `.zprofile`. \(Yes, these are the same as above.\)
 
-```text
+```python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -207,13 +207,13 @@ eval "$(pyenv init --path)"
 
 1. Open your `.zshrc` with the following command
 
-```text
+```python
 code ~/.zshrc
 ```
 
 1. Add the following line.
 
-```text
+```python
 eval "$(pyenv init -)"
 ```
 
@@ -221,13 +221,13 @@ eval "$(pyenv init -)"
 
 1. Open up your `.profile` file with the following command.
 
-```text
+```python
 code ~/.profile
 ```
 
 1. Add the following lines.
 
-```text
+```python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -235,19 +235,19 @@ eval "$(pyenv init --path)"
 
 1. Check if you have a `.bash_profile`. Run the following at the command line if you don't know.
 
-```text
+```python
 if [ -f ~/.bash_profile ]; then echo "bash_profile exists"; else echo "bash_profile does not exist"; fi
 ```
 
 If you don't have a `.bash_profile`, you can skip the rest of this step. If you do, open up your `.bash_profile` file with the following command.
 
-```text
+```python
 code ~/.bash_profile
 ```
 
 1. Add the following lines to your `.bash_profile`. \(Yes, these are the same as above.\)
 
-```text
+```python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -255,13 +255,13 @@ eval "$(pyenv init --path)"
 
 1. Open your `.bashrc` with the following command
 
-```text
+```python
 code ~/.bashrc
 ```
 
 1. Add the following line.
 
-```text
+```python
 eval "$(pyenv init -)"
 ```
 
@@ -275,13 +275,13 @@ For Windows and Ubuntu users you will need to install some extra dependencies fo
 
 First run this command to update your apt repositories:
 
-```text
+```python
 sudo apt update
 ```
 
 and then run this command to install the packages listed on the pyenv.
 
-```text
+```python
 sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
@@ -293,7 +293,7 @@ Now we are ready to install python. We will be installing Python version 3.9.4.
 
 Then run this command to install python \(you'll notice pyenv makes us put in the _exact_ version instead of being able to just say `3.9` or `3`\)
 
-```text
+```python
 pyenv install 3.9.4
 ```
 
@@ -301,13 +301,13 @@ After some time this should complete without any errors. It could take a while s
 
 Once this is finished we also need to tell pyenv this is our default version of python using this command:
 
-```text
+```python
 pyenv global 3.9.4
 ```
 
 Ensure that these changes take effect by closing your terminal and opening a new one. Then, we can verify our python is the correct version by typing
 
-```text
+```python
 python --version
 python3 --version
 ```
@@ -318,13 +318,13 @@ Both of these commands should show 3.9.4
 
 Another piece of software we will use in class is Pipenv. Don't worry about what this is right now, it's just enough to install it.
 
-```text
+```python
 pip install pipenv
 ```
 
 Then after you have installed pipenv, add this line to your shell startup file \(either your `.bashrc` or your `.zshrc`\) somewhere after the `eval "$(pyenv init -)"`.
 
-```text
+```python
 export PIPENV_VENV_IN_PROJECT=1
 ```
 

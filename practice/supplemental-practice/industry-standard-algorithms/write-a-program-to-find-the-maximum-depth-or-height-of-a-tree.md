@@ -8,7 +8,7 @@ Given a binary tree, find height of it. Height of empty tree is 0 and height of 
 Recursively calculate height of left and right subtrees of a node and assign height to the node as max of the heights of two children plus 1. See below pseudo code and program for details.  
 **Algorithm:** 
 
-```text
+```python
  maxDepth()
 1. If tree is empty then return 0
 2. Else
@@ -26,7 +26,7 @@ Recursively calculate height of left and right subtrees of a node and assign hei
 
 **See the below diagram for more clarity about execution of the recursive function maxDepth\(\) for above example tree.** 
 
-```text
+```python
             maxDepth('1') = max(maxDepth('2'), maxDepth('3')) + 1
                                = 1 + 1
                                   /    \
@@ -157,7 +157,7 @@ class Node
   
 **Output**
 
-```text
+```python
 Height of tree is 2
 ```
 

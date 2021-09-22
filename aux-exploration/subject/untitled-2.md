@@ -31,7 +31,7 @@ Access modes govern the type of operations possible in the opened file. It refer
 It is done using the open\(\) function. No module is required to be imported for this function.  
  
 
-```text
+```python
 File_object = open(r"File_Name","Access_Mode")
 ```
 
@@ -40,7 +40,7 @@ The file should exist in the same directory as the python program file else, ful
 Note: The **r** is placed before filename to prevent the characters in filename string to be treated as special character. For example, if there is \temp in the file address, then \t is treated as the tab character and error is raised of invalid address. The r makes the string raw, that is, it tells that the string is without any special characters. The r can be ignored if the file is in same directory and address is not being placed.   
  Python
 
-```text
+```python
 
 # Open function to open the file "MyFile1.txt" 
 # (same directory) in append mode and
@@ -62,7 +62,7 @@ close\(\) function closes the file and frees the memory space acquired by that f
 File\_object.close\(\)  
  Python
 
-```text
+```python
 
 # Opening and Closing a file "MyFile.txt"
 # for object name file1.
@@ -77,13 +77,13 @@ There are two ways to write in a file.
 
 1. **write\(\) :** Inserts the string str1 in a single line in the text file. 
 
-```text
+```python
 File_object.write(str1)
 ```
 
 1. 2. **writelines\(\) :** For a list of string elements, each string is inserted in the text file.Used to insert multiple strings at a single time.   
 
-```text
+```python
 File_object.writelines(L) for L = [str1, str2, str3] 
 ```
 
@@ -96,19 +96,19 @@ There are three ways to read data from a text file.
 
 1. **read\(\) :** Returns the read bytes in form of a string. Reads n bytes, if no n specified, reads the entire file.   
 
-```text
+```python
 File_object.read([n])
 ```
 
 1. 2. **readline\(\) :** Reads a line of the file and returns in form of a string.For specified n, reads at most n bytes. However, does not reads more than one line, even if n exceeds the length of the line.   
 
-```text
+```python
 File_object.readline([n])
 ```
 
 1. **readlines\(\) :** Reads all the lines and return them as each line a string element in a list. 
 
-```text
+```python
   File_object.readlines()
 ```
 
@@ -116,7 +116,7 @@ File_object.readline([n])
 **Note:** '\n' is treated as a special character of two bytes   
  Python
 
-```text
+```python
 
 # Program to show various ways to read and
 # write data in a file.
@@ -165,7 +165,7 @@ file1.close()
 Output:   
  
 
-```text
+```python
 Output of Read function is 
 Hello 
 This is Delhi 
@@ -193,7 +193,7 @@ Output of Readlines function is
   
  Python
 
-```text
+```python
 
 # Python program to illustrate
 # Append vs write mode
@@ -227,7 +227,7 @@ file1.close()
 Output:   
  
 
-```text
+```python
 Output of Readlines after appending
 ['This is Delhi \n', 'This is Paris \n', 'This is London \n', 'Today \n']
 

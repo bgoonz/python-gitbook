@@ -3,7 +3,7 @@
 Output:   
  
 
-```text
+```python
 The zipped result is : {('Shambhavi', 3, 60), ('Astha', 2, 70),
 ('Manjeet', 4, 40), ('Nikhil', 1, 50)}
 ```

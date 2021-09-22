@@ -16,7 +16,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 
 Example
 
-```text
+```python
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
@@ -26,7 +26,7 @@ Explanation: 342 + 465 = 807.
 
 Mind the last carry.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -76,7 +76,7 @@ Find the median of the two sorted arrays. The overall run time complexity should
 
 Example 1:
 
-```text
+```python
 nums1 = [1, 3]
 nums2 = [2]
 
@@ -85,7 +85,7 @@ The median is 2.0
 
 Example 2:
 
-```text
+```python
 nums1 = [1, 2]
 nums2 = [3, 4]
 
@@ -113,7 +113,7 @@ Otherwise, if `nums1[i] <= nums2[j]` then we know `nums1[i] < nums2[j-1]` \(beca
 
 Same goes `nums1[i-1] <= nums2[j] <= nums1[i]`.
 
-```text
+```python
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -178,7 +178,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: \(you may want to display this pattern in a fixed font for better legibility\)
 
-```text
+```python
 P   A   H   N
 A P L S I I G
 Y   I   R
@@ -188,20 +188,20 @@ And then read line by line: `"PAHNAPLSIIGYIR"`
 
 Write the code that will take a string and make this conversion given a number of rows:
 
-```text
+```python
 string convert(string s, int numRows);
 ```
 
 **Example 1:**
 
-```text
+```python
 Input: s = "PAYPALISHIRING", numRows = 3
 Output: "PAHNAPLSIIGYIR"
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: s = "PAYPALISHIRING", numRows = 4
 Output: "PINALSIGYAHRPI"
 Explanation:
@@ -218,7 +218,7 @@ Squeeze the zigzag pattern horizontally to form a matrix. Now deal with the odd 
 
 For example let numRows be 5, if we list out the indecies:
 
-```text
+```python
 row
  1    00    08    16
  2    01 07 09 15 17
@@ -229,7 +229,7 @@ row
 
 First calculate the matrix width:
 
-```text
+```python
 pairs = floor( len(s) / (numRows + numRows - 2) )
 width = pairs * 2 + ceil( (len(s) - pairs * (numRows + numRows - 2)) / numRows )
 ```
@@ -240,18 +240,18 @@ Let the first column be index 0 and let i be the current position at column col.
 
 We need to count the items between matrix\[row\]\[col\] and matrix\[row\]\[col+1\], exclusive.
 
-```text
+```python
 next_i = i + (numRows - row) + (numRows - row), if col is even && 1 < row < numRows
 next_i = i + row - 2 + row, if col is odd && 1 < row < numRows
 ```
 
 If row == 1 or row == numRows, skip the odd columns.
 
-```text
+```python
 next_i = i + numRows + (numRows - 2), if col is even && (row == 1 || row == numRows)
 ```
 
-```text
+```python
 /**
  * @param {string} s
  * @param {number} numRows
@@ -302,21 +302,21 @@ Given a 32-bit signed integer, reverse digits of an integer.
 
 **Example 1:**
 
-```text
+```python
 Input: 123
 Output: 321
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: -123
 Output: -321
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: 120
 Output: 21
 ```
@@ -330,7 +330,7 @@ Assume we are dealing with an environment which could only store integers within
 
 This is a JavaScript specific solution. It is esay to write but slow to run because it generates O\(n\) space. This could end up a huge array.
 
-```text
+```python
 /**
  * @param {number} x
  * @return {number}
@@ -346,7 +346,7 @@ let reverse = function(x) {
 
 Pure mathamatical solution.
 
-```text
+```python
 /**
  * @param {number} x
  * @return {number}
@@ -386,14 +386,14 @@ Assume we are dealing with an environment which could only store integers within
 
 **Example 1:**
 
-```text
+```python
 Input: "42"
 Output: 42
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: "   -42"
 Output: -42
 Explanation: The first non-whitespace character is '-', which is the minus sign.
@@ -402,7 +402,7 @@ Explanation: The first non-whitespace character is '-', which is the minus sign.
 
 **Example 3:**
 
-```text
+```python
 Input: "4193 with words"
 Output: 4193
 Explanation: Conversion stops at digit '3' as the next character is not a numerical digit.
@@ -410,7 +410,7 @@ Explanation: Conversion stops at digit '3' as the next character is not a numeri
 
 **Example 4:**
 
-```text
+```python
 Input: "words and 987"
 Output: 0
 Explanation: The first non-whitespace character is 'w', which is not a numerical 
@@ -419,7 +419,7 @@ Explanation: The first non-whitespace character is 'w', which is not a numerical
 
 **Example 5:**
 
-```text
+```python
 Input: "-91283472332"
 Output: -2147483648
 Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer.
@@ -430,7 +430,7 @@ Explanation: The number "-91283472332" is out of the range of a 32-bit signed in
 
 **ONE**
 
-```text
+```python
 /**
  * @param {string} str
  * @return {number}
@@ -444,7 +444,7 @@ let myAtoi = function (str) {
 
 Looks like `Number()` is faster than `parseInt()`.
 
-```text
+```python
 /**
  * @param {string} str
  * @return {number}
@@ -458,7 +458,7 @@ let myAtoi = function (str) {
 
 General solution.
 
-```text
+```python
 /**
  * @param {string} str
  * @return {number}
@@ -507,14 +507,14 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 
 **Example 1:**
 
-```text
+```python
 Input: 121
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: -121
 Output: false
 Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
@@ -522,7 +522,7 @@ Explanation: From left to right, it reads -121. From right to left, it becomes 1
 
 **Example 3:**
 
-```text
+```python
 Input: 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
@@ -538,7 +538,7 @@ Coud you solve it without converting the integer to a string?
 
 Easy to write but slow since it generates an array.
 
-```text
+```python
 /**
  * @param {number} x
  * @return {boolean}
@@ -552,7 +552,7 @@ let isPalindrome = function(x) {
 
 A bit faster.
 
-```text
+```python
 /**
  * @param {number} x
  * @return {boolean}
@@ -572,7 +572,7 @@ let isPalindrome = function(x) {
 
 General solution. Combining [7. Reverse Integer](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/007.%20Reverse%20Integer.md).
 
-```text
+```python
 /**
  * @param {number} x
  * @return {boolean}
@@ -606,7 +606,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given an input string \(`s`\) and a pattern \(`p`\), implement regular expression matching with support for `'.'` and `'*'`.
 
-```text
+```python
 '.' Matches any single character.
 '*' Matches zero or more of the preceding element.
 ```
@@ -620,7 +620,7 @@ The matching should cover the **entire** input string \(not partial\).
 
 **Example 1:**
 
-```text
+```python
 Input:
 s = "aa"
 p = "a"
@@ -630,7 +630,7 @@ Explanation: "a" does not match the entire string "aa".
 
 **Example 2:**
 
-```text
+```python
 Input:
 s = "aa"
 p = "a*"
@@ -640,7 +640,7 @@ Explanation: '*' means zero or more of the precedeng element, 'a'. Therefore, by
 
 **Example 3:**
 
-```text
+```python
 Input:
 s = "ab"
 p = ".*"
@@ -650,7 +650,7 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 
 **Example 4:**
 
-```text
+```python
 Input:
 s = "aab"
 p = "c*a*b"
@@ -660,7 +660,7 @@ Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore it m
 
 **Example 5:**
 
-```text
+```python
 Input:
 s = "mississippi"
 p = "mis*is*p*."
@@ -673,7 +673,7 @@ Output: false
 
 Cheating with real RegExp matching.
 
-```text
+```python
 /**
  * @param {string} s
  * @param {string} p
@@ -689,7 +689,7 @@ let isMatch = function(s, p) {
 
 Let f\(i, j\) be the matching result of s\[0...i\) and p\[0...j\).
 
-```text
+```python
 f(0, j) =
     j == 0 || // empty
     p[j-1] == '*' && f(i, j-2) // matches 0 time, which matches empty string
@@ -706,7 +706,7 @@ f(i, j) =
         f(i-1, j-1) && s[i-1] == p[j-1]
 ```
 
-```text
+```python
 /**
  * @param {string} s
  * @param {string} p
@@ -772,7 +772,7 @@ Here we conclude rule NO.1: Get rid of the smaller one.
 
 What if `height[l] == height[r]`? It is safe to get rid of both. We do not need any of them to constrain the max height of the rest points.
 
-```text
+```python
 /**
  * @param {number[]} height
  * @return {number}
@@ -801,7 +801,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D` and `M`.
 
-```text
+```python
 Symbol       Value
 I             1
 V             5
@@ -824,28 +824,28 @@ Given an integer, convert it to a roman numeral. Input is guaranteed to be withi
 
 **Example 1:**
 
-```text
+```python
 Input: 3
 Output: "III"
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: 4
 Output: "IV"
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: 9
 Output: "IX"
 ```
 
 **Example 4:**
 
-```text
+```python
 Input: 58
 Output: "LVIII"
 Explanation: C = 100, L = 50, XXX = 30 and III = 3.
@@ -853,7 +853,7 @@ Explanation: C = 100, L = 50, XXX = 30 and III = 3.
 
 **Example 5:**
 
-```text
+```python
 Input: 1994
 Output: "MCMXCIV"
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
@@ -863,7 +863,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 Treat 4, 40, 400 and 9, 90, 900 specially.
 
-```text
+```python
 /**
  * @param {number} num
  * @return {string}
@@ -895,7 +895,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D` and `M`.
 
-```text
+```python
 Symbol       Value
 I             1
 V             5
@@ -918,28 +918,28 @@ Given a roman numeral, convert it to an integer. Input is guaranteed to be withi
 
 **Example 1:**
 
-```text
+```python
 Input: "III"
 Output: 3
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: "IV"
 Output: 4
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: "IX"
 Output: 9
 ```
 
 **Example 4:**
 
-```text
+```python
 Input: "LVIII"
 Output: 58
 Explanation: C = 100, L = 50, XXX = 30 and III = 3.
@@ -947,7 +947,7 @@ Explanation: C = 100, L = 50, XXX = 30 and III = 3.
 
 **Example 5:**
 
-```text
+```python
 Input: "MCMXCIV"
 Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
@@ -957,7 +957,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 Normally we just add up the digits, except when the digit is greater than its left \(e.g. IV\). In that case we need to fallback and remove the last digit then combine the two as new digit. That is why we subtract the last digit twice.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {number}
@@ -997,14 +997,14 @@ If there is no common prefix, return an empty string `""`.
 
 **Example 1:**
 
-```text
+```python
 Input: ["flower","flow","flight"]
 Output: "fl"
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: ["dog","racecar","car"]
 Output: ""
 Explanation: There is no common prefix among the input strings.
@@ -1020,7 +1020,7 @@ All given inputs are in lowercase letters `a-z`.
 
 JavaScript specific solution. Get the min len then narrow down the prefix.
 
-```text
+```python
 /**
  * @param {string[]} strs
  * @return {string}
@@ -1042,7 +1042,7 @@ let longestCommonPrefix = function (strs) {
 
 **TWO**
 
-```text
+```python
 /**
  * @param {string[]} strs
  * @return {string}
@@ -1062,7 +1062,7 @@ let longestCommonPrefix = function(strs) {
 
 General solution. Build up the prefix.
 
-```text
+```python
 /**
  * @param {string[]} strs
  * @return {string}
@@ -1101,7 +1101,7 @@ The solution set must not contain duplicate triplets.
 
 **Example:**
 
-```text
+```python
 Given array nums = [-1, 0, 1, 2, -1, -4],
 
 A solution set is:
@@ -1126,7 +1126,7 @@ Let `l = i + 1`, `r = len(sorted) - 1`, we want to narrow them down to enumerate
 
 Skip any duplicate number as we iterate to avoid duplicate triplets.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -1181,7 +1181,7 @@ Given an array `nums` of _n_ integers and an integer `target`, find three intege
 
 **Example:**
 
-```text
+```python
 Given array nums = [-1, 2, 1, -4], and target = 1.
 
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
@@ -1191,7 +1191,7 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 
 Simplified version of [15. 3Sum](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/015.%203Sum.md).
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -1248,7 +1248,7 @@ A mapping of digit to letters \(just like on the telephone buttons\) is given be
 
 **Example:**
 
-```text
+```python
 Input: "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 ```
@@ -1267,7 +1267,7 @@ JavaScript specific optimization.
 
 Also, appending string is faster than prepending.
 
-```text
+```python
 /**
  * @param {string} digits
  * @return {string[]}
@@ -1305,7 +1305,7 @@ let letterCombinations = function(digits) {
 
 General recursive DFS solution.
 
-```text
+```python
 /**
  * @param {string} digits
  * @return {string[]}
@@ -1347,7 +1347,7 @@ The solution set must not contain duplicate quadruplets.
 
 **Example:**
 
-```text
+```python
 Given array nums = [1, 0, -1, 0, -2, 2], and target = 0.
 
 A solution set is:
@@ -1362,7 +1362,7 @@ A solution set is:
 
 Like [15. 3Sum](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/015.%203Sum.md) and [16. 3Sum Closest](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/016.%203Sum%20Closest.md). Wrap one more loop.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -1418,7 +1418,7 @@ Given a linked list, remove the _n_-th node from the end of list and return its 
 
 **Example:**
 
-```text
+```python
 Given linked list: 1->2->3->4->5, and n = 2.
 
 After removing the second node from the end, the linked list becomes 1->2->3->5.
@@ -1442,7 +1442,7 @@ Boundaries that should be awared of:
 * `p2` could be larger than the length of the list \(Though the description says `n` will always be valid, we take care of it anyway\).
 * It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -1494,35 +1494,35 @@ Note that an empty string is also considered valid.
 
 **Example 1:**
 
-```text
+```python
 Input: "()"
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: "()[]{}"
 Output: true
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: "(]"
 Output: false
 ```
 
 **Example 4:**
 
-```text
+```python
 Input: "([)]"
 Output: false
 ```
 
 **Example 5:**
 
-```text
+```python
 Input: "{[]}"
 Output: true
 ```
@@ -1537,7 +1537,7 @@ That is why we use stack to store open brackets: first in, last out.
 
 And since there is only bracket characters, the last open bracket happens to be the last character.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -1575,7 +1575,7 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 
 Example:
 
-```text
+```python
 Input: 1->2->4, 1->3->4
 Output: 1->1->2->3->4->4
 ```
@@ -1584,7 +1584,7 @@ Output: 1->1->2->3->4->4
 
 Keep tracking the head of two lists and keep moving the pointer of smaller one to the next node.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -1634,7 +1634,7 @@ Given n pairs of parentheses, write a function to generate all combinations of w
 
 For example, given n = 3, a solution set is:
 
-```text
+```python
 [
   "((()))",
   "(()())",
@@ -1650,7 +1650,7 @@ For example, given n = 3, a solution set is:
 
 Recursive DFS backtracking.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string[]}
@@ -1683,7 +1683,7 @@ function dfs (n, nopen, nclose, path, result) {
 
 BFS.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string[]}
@@ -1737,7 +1737,7 @@ Merge _k_ sorted linked lists and return it as one sorted list. Analyze and desc
 
 **Example:**
 
-```text
+```python
 Input:
 [
   1->4->5,
@@ -1767,7 +1767,7 @@ Divide and conquer. Also O\(N \* log\(K\)\).
 
 Divide N lists into ceil\(N/2\) pairs and merge your way up.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -1834,7 +1834,7 @@ Given a linked list, swap every two adjacent nodes and return its head.
 
 **Example:**
 
-```text
+```python
 Given 1->2->3->4, you should return the list as 2->1->4->3.
 ```
 
@@ -1848,7 +1848,7 @@ Given 1->2->3->4, you should return the list as 2->1->4->3.
 1. Draw the nodes down on paper to reason about the relationships.
 2. Pointing to every active node is an easy way to keep on track.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -1908,7 +1908,7 @@ For _k_ = 3, you should return: `3->2->1->4->5`
 3. Reverse the portion using the next node as edge\(null\) pointer.
 4. Connect it back to the main linked list.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -1971,7 +1971,7 @@ Do not allocate extra space for another array, you must do this by **modifying t
 
 **Example 1:**
 
-```text
+```python
 Given nums = [1,1,2],
 
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
@@ -1981,7 +1981,7 @@ It doesn't matter what you leave beyond the returned length.
 
 **Example 2:**
 
-```text
+```python
 Given nums = [0,0,1,1,1,2,2,3,3,4],
 
 Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.
@@ -1997,7 +1997,7 @@ Note that the input array is passed in by **reference**, which means modificatio
 
 Internally you can think of this:
 
-```text
+```python
 // nums is passed in by reference. (i.e., without making a copy)
 int len = removeDuplicates(nums);
 
@@ -2012,7 +2012,7 @@ for (int i = 0; i < len; i++) {
 
 The result array can only be shorter. That is why we can build the array in-place with the new length.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -2044,7 +2044,7 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
 
 **Example 1:**
 
-```text
+```python
 Given nums = [3,2,2,3], val = 3,
 
 Your function should return length = 2, with the first two elements of nums being 2.
@@ -2054,7 +2054,7 @@ It doesn't matter what you leave beyond the returned length.
 
 **Example 2:**
 
-```text
+```python
 Given nums = [0,1,2,2,3,0,4,2], val = 2,
 
 Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
@@ -2072,7 +2072,7 @@ Note that the input array is passed in by **reference**, which means modificatio
 
 Internally you can think of this:
 
-```text
+```python
 // nums is passed in by reference. (i.e., without making a copy)
 int len = removeElement(nums, val);
 
@@ -2087,7 +2087,7 @@ for (int i = 0; i < len; i++) {
 
 The order does not matter. So just take the last number to fill the vacancy.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} val
@@ -2120,14 +2120,14 @@ The integer division should truncate toward zero.
 
 **Example 1:**
 
-```text
+```python
 Input: dividend = 10, divisor = 3
 Output: 3
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: dividend = 7, divisor = -3
 Output: -2
 ```
@@ -2144,7 +2144,7 @@ Every decimal number can be represented as `a0*2^0 + a1*2^1 + a2*2^2 + ... + an*
 
 Replace multiplication and division with binary shifting.
 
-```text
+```python
 /**
  * @param {number} dividend
  * @param {number} divisor
@@ -2211,7 +2211,7 @@ Reverse the second half and find the smallest number in it that is greater the l
 
 Swap the two.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
@@ -2268,14 +2268,14 @@ Your algorithm's runtime complexity must be in the order of _O_\(log _n_\).
 
 **Example 1:**
 
-```text
+```python
 Input: nums = [4,5,6,7,0,1,2], target = 0
 Output: 4
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: nums = [4,5,6,7,0,1,2], target = 3
 Output: -1
 ```
@@ -2295,7 +2295,7 @@ Whenever we choose a pivot, it must be in one of the two sorted parts of the rot
 * If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
 * Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -2352,14 +2352,14 @@ If the target is not found in the array, return `[-1, -1]`.
 
 **Example 1:**
 
-```text
+```python
 Input: nums = [5,7,7,8,8,10], target = 8
 Output: [3,4]
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: nums = [5,7,7,8,8,10], target = 6
 Output: [-1,-1]
 ```
@@ -2372,7 +2372,7 @@ They are basically the same as simple binary search except when we got the match
 
 If we want to get the first, we dump the right half. Vice versa.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -2444,28 +2444,28 @@ You may assume no duplicates in the array.
 
 **Example 1:**
 
-```text
+```python
 Input: [1,3,5,6], 5
 Output: 2
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: [1,3,5,6], 2
 Output: 1
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: [1,3,5,6], 7
 Output: 4
 ```
 
 **Example 4:**
 
-```text
+```python
 Input: [1,3,5,6], 0
 Output: 0
 ```
@@ -2474,7 +2474,7 @@ Output: 0
 
 Same as simple binary search except it returns the start index when does not find a match.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -2522,7 +2522,7 @@ The Sudoku board could be partially filled, where empty cells are filled with th
 
 **Example 1:**
 
-```text
+```python
 Input:
 [
   ["5","3",".",".","7",".",".",".","."],
@@ -2540,7 +2540,7 @@ Output: true
 
 **Example 2:**
 
-```text
+```python
 Input:
 [
   ["8","3",".",".","7",".",".",".","."],
@@ -2569,7 +2569,7 @@ Explanation: Same as Example 1, except with the 5 in the top left corner being
 
 Scan the board once.
 
-```text
+```python
 /**
  * @param {character[][]} board
  * @return {boolean}
@@ -2649,7 +2649,7 @@ If the next position fails, we come back and try the next possible solution of t
 
 If all possible solutions fail, we just dump the current position and go back to the last position.
 
-```text
+```python
 /**
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
@@ -2718,7 +2718,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 The count-and-say sequence is the sequence of integers with the first five terms as following:
 
-```text
+```python
 1.     1
 2.     11
 3.     21
@@ -2736,14 +2736,14 @@ Note: Each term of the sequence of integers will be represented as a string.
 
 Example 1:
 
-```text
+```python
 Input: 1
 Output: "1"
 ```
 
 Example 2:
 
-```text
+```python
 Input: 4
 Output: "1211"
 ```
@@ -2756,7 +2756,7 @@ Just loop and grow the sequence.
 
 JavaScript specific.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string}
@@ -2776,7 +2776,7 @@ let countAndSay = function(n) {
 
 General solution.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string}
@@ -2818,7 +2818,7 @@ The **same** repeated number may be chosen from `candidates` unlimited number of
 
 **Example 1:**
 
-```text
+```python
 Input: candidates = [2,3,6,7], target = 7,
 A solution set is:
 [
@@ -2829,7 +2829,7 @@ A solution set is:
 
 **Example 2:**
 
-```text
+```python
 Input: candidates = [2,3,5], target = 8,
 A solution set is:
 [
@@ -2845,7 +2845,7 @@ DFS + Backtracking.
 
 To prevent duplications, only loop the right side of the candidates.
 
-```text
+```python
 /**
  * @param {number[]} candidates
  * @param {number} target
@@ -2895,7 +2895,7 @@ Each number in `candidates` may only be used **once** in the combination.
 
 **Example 1:**
 
-```text
+```python
 Input: candidates = [10,1,2,7,6,1,5], target = 8,
 A solution set is:
 [
@@ -2908,7 +2908,7 @@ A solution set is:
 
 **Example 2:**
 
-```text
+```python
 Input: candidates = [2,5,2,1,2], target = 5,
 A solution set is:
 [
@@ -2929,7 +2929,7 @@ To prvent duplicate results, stop searching if the current number is same as the
 
 Notice the number at `start` is immune by the rule because we assume that the current group of candidates begins at `start`.
 
-```text
+```python
 /**
  * @param {number[]} candidates
  * @param {number} target
@@ -2976,21 +2976,21 @@ Given an unsorted integer array, find the smallest missing positive integer.
 
 **Example 1:**
 
-```text
+```python
 Input: [1,2,0]
 Output: 3
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: [3,4,-1,1]
 Output: 2
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: [7,8,9,11,12]
 Output: 1
 ```
@@ -3015,7 +3015,7 @@ If more than one are missing, pick the smallest.
 
 So here we reuse the array and keep trying to put integer `k` into the slot indexed `k-1` \(via swapping\).
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -3056,7 +3056,7 @@ The above elevation map is represented by array \[0,1,0,2,1,0,1,3,2,1,2,1\]. In 
 
 **Example:**
 
-```text
+```python
 Input: [0,1,0,2,1,0,1,3,2,1,2,1]
 Output: 6
 ```
@@ -3065,7 +3065,7 @@ Output: 6
 
 Well explained by Leetcode official: [https://leetcode.com/articles/trapping-rain-water/](https://leetcode.com/articles/trapping-rain-water/) .
 
-```text
+```python
 /**
  * @param {number[]} height
  * @return {number}
@@ -3113,14 +3113,14 @@ Given two non-negative integers `num1` and `num2` represented as strings, return
 
 **Example 1:**
 
-```text
+```python
 Input: num1 = "2", num2 = "3"
 Output: "6"
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: num1 = "123", num2 = "456"
 Output: "56088"
 ```
@@ -3136,7 +3136,7 @@ Output: "56088"
 
 Same as we do multiplication on a paper.
 
-```text
+```python
 /**
  * @param {string} num1
  * @param {string} num2
@@ -3173,7 +3173,7 @@ Your goal is to reach the last index in the minimum number of jumps.
 
 **Example:**
 
-```text
+```python
 Input: [2,3,1,1,4]
 Output: 2
 Explanation: The minimum number of jumps to reach the last index is 2.
@@ -3188,7 +3188,7 @@ You can assume that you can always reach the last index.
 
 Greedy. Always pick the one that would allow to jump to the rightest.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -3223,7 +3223,7 @@ Given a collection of **distinct** integers, return all possible permutations.
 
 **Example:**
 
-```text
+```python
 Input: [1,2,3]
 Output:
 [
@@ -3240,7 +3240,7 @@ Output:
 
 One position at a time, pick a number from the unused set and put it in that position \(by swapping\). Then move on to the next.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -3283,7 +3283,7 @@ Given a collection of numbers that might contain duplicates, return all possible
 
 **Example:**
 
-```text
+```python
 Input: [1,1,2]
 Output:
 [
@@ -3297,7 +3297,7 @@ Output:
 
 Same as [46. Permutations](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/046.%20Permutations.md). To avoid duplication, when picking a number for a position, only pick the unused. Either sort the `nums` or use a set to mark.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -3353,7 +3353,7 @@ You have to rotate the image [**in-place**](https://en.wikipedia.org/wiki/In-pla
 
 **Example 1:**
 
-```text
+```python
 Given input matrix = 
 [
   [1,2,3],
@@ -3371,7 +3371,7 @@ rotate the input matrix in-place such that it becomes:
 
 **Example 2:**
 
-```text
+```python
 Given input matrix =
 [
   [ 5, 1, 9,11],
@@ -3393,7 +3393,7 @@ rotate the input matrix in-place such that it becomes:
 
 Outside-in. Rotate one square at a time.
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
@@ -3431,7 +3431,7 @@ Given an array of strings, group anagrams together.
 
 **Example:**
 
-```text
+```python
 Input: ["eat", "tea", "tan", "ate", "nat", "bat"],
 Output:
 [
@@ -3454,7 +3454,7 @@ It's all about hashing the words.
 
 Sort each word to get the key.
 
-```text
+```python
 /**
  * @param {string[]} strs
  * @return {string[][]}
@@ -3474,7 +3474,7 @@ let groupAnagrams = function(strs) {
 
 Use the product of prime numbers to generate unique keys.
 
-```text
+```python
 const prime = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101]
 
 /**
@@ -3508,21 +3508,21 @@ Implement [pow\(_x_, _n_\)](http://www.cplusplus.com/reference/valarray/pow/), w
 
 **Example 1:**
 
-```text
+```python
 Input: 2.00000, 10
 Output: 1024.00000
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: 2.10000, 3
 Output: 9.26100
 ```
 
 **Example 3:**
 
-```text
+```python
 Input: 2.00000, -2
 Output: 0.25000
 Explanation: 2-2 = 1/22 = 1/4 = 0.25
@@ -3535,7 +3535,7 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 #### Solution: <a id="solution-42"></a>
 
-```text
+```python
 x^n = x^(n/2) * x^(n/2), if n is even
 x^n = x^((n-1)/2) * x^((n-1)/2) * x, if n is odd
 ```
@@ -3547,7 +3547,7 @@ Corner cases:
 
 Note here we can not use any bitwise operator, `n = -2^31` might overflow.
 
-```text
+```python
 /**
  * @param {number} x
  * @param {number} n
@@ -3584,7 +3584,7 @@ Each solution contains a distinct board configuration of the _n_-queens' placeme
 
 **Example:**
 
-```text
+```python
 Input: 4
 Output: [
  [".Q..",  // Solution 1
@@ -3608,7 +3608,7 @@ Now use the permutation algorithm from [46. Permutations](file:///C:/MY-WEB-DEV/
 
 **ONE**
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string[][]}
@@ -3663,7 +3663,7 @@ This is slow because we test diagonal in the end. We can do a tree pruning by mo
 
 **TWO**
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string[][]}
@@ -3734,7 +3734,7 @@ Given an integer _n_, return the number of distinct solutions to the _n_-queens 
 
 **Example:**
 
-```text
+```python
 Input: 4
 Output: 2
 Explanation: There are two distinct solutions to the 4-queens puzzle as shown below.
@@ -3755,7 +3755,7 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown be
 
 Just modify [51. N-Queens](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/051.%20N-Queens.md).
 
-```text
+```python
 /**
  * @param {number} n
  * @return {string[][]}
@@ -3811,7 +3811,7 @@ Given an integer array `nums`, find the contiguous subarray \(containing at leas
 
 **Example:**
 
-```text
+```python
 Input: [-2,1,-3,4,-1,2,1,-5,4],
 Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
@@ -3829,14 +3829,14 @@ Define `f(i)` to be the largest sum of a contiguous subarray that ends with `num
 
 If `f(i-1)` is negative, then `nums[i]` must be greater than `f(i-1) + nums[i]`.
 
-```text
+```python
 f(0) = nums[0]
 f(i) = max( f(i-1), 0 ) + nums[i]
 ```
 
 Then return the largest one.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -3854,7 +3854,7 @@ let maxSubArray = function(nums) {
 
 We can also compress the dp array:
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -3881,7 +3881,7 @@ Given a matrix of _m_ x _n_ elements \(_m_ rows, _n_ columns\), return all eleme
 
 **Example 1:**
 
-```text
+```python
 Input:
 [
  [ 1, 2, 3 ],
@@ -3893,7 +3893,7 @@ Output: [1,2,3,6,9,8,7,4,5]
 
 **Example 2:**
 
-```text
+```python
 Input:
 [
   [1, 2, 3, 4],
@@ -3907,7 +3907,7 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
 Loop outside-in. Break each cycle into four stages. Note that the last two stages need at least two rows/columns.
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @return {number[]}
@@ -3960,7 +3960,7 @@ Determine if you are able to reach the last index.
 
 **Example 1:**
 
-```text
+```python
 Input: [2,3,1,1,4]
 Output: true
 Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
@@ -3968,7 +3968,7 @@ Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
 **Example 2:**
 
-```text
+```python
 Input: [3,2,1,0,4]
 Output: false
 Explanation: You will always arrive at index 3 no matter what. Its maximum
@@ -3981,7 +3981,7 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 
 See [45. Jump Game II](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/045.%20Jump%20Game%20II.md). If the range does not expand at some point, we know it is stuck.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {boolean}
@@ -4009,7 +4009,7 @@ If we view it backward, and if the range of `nums[n-2]` covers `nums[n-1]`, then
 
 If `nums[0]` can cover the last destination point, it is good.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {boolean}
@@ -4037,7 +4037,7 @@ Given a collection of intervals, merge all overlapping intervals.
 
 **Example 1:**
 
-```text
+```python
 Input: [[1,3],[2,6],[8,10],[15,18]]
 Output: [[1,6],[8,10],[15,18]]
 Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
@@ -4045,7 +4045,7 @@ Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
 
 **Example 2:**
 
-```text
+```python
 Input: [[1,4],[4,5]]
 Output: [[1,5]]
 Explanation: Intervals [1,4] and [4,5] are considerred overlapping.
@@ -4055,7 +4055,7 @@ Explanation: Intervals [1,4] and [4,5] are considerred overlapping.
 
 Sort then merge.
 
-```text
+```python
 /**
  * Definition for an interval.
  * function Interval(start, end) {
@@ -4099,14 +4099,14 @@ You may assume that the intervals were initially sorted according to their start
 
 **Example 1:**
 
-```text
+```python
 Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
 Output: [[1,5],[6,9]]
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
 Output: [[1,2],[3,10],[12,16]]
 Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
@@ -4116,7 +4116,7 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 The logic of the solution is pretty straight forward. Just need to carefully think through all the edge cases. It is better to choose readability over performance.
 
-```text
+```python
 /**
  * Definition for an interval.
  * function Interval(start, end) {
@@ -4171,7 +4171,7 @@ Note: A word is defined as a character sequence consists of non-space characters
 
 Example:
 
-```text
+```python
 Input: "Hello World"
 Output: 5
 ```
@@ -4182,7 +4182,7 @@ JavaScript specific solutions:
 
 **ONE**
 
-```text
+```python
 /**
  * @param {string} s
  * @return {number}
@@ -4196,7 +4196,7 @@ let lengthOfLastWord = function(s) {
 
 Super fast. `split` will guarantee that there is at least one item in the resulted array.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {number}
@@ -4210,7 +4210,7 @@ let lengthOfLastWord = function(s) {
 
 General solution.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {number}
@@ -4242,7 +4242,7 @@ Given a positive integer _n_, generate a square matrix filled with elements from
 
 **Example:**
 
-```text
+```python
 Input: 3
 Output:
 [
@@ -4256,7 +4256,7 @@ Output:
 
 Straight-forward.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {number[][]}
@@ -4312,14 +4312,14 @@ Given _n_ and _k_, return the _k_th permutation sequence.
 
 **Example 1:**
 
-```text
+```python
 Input: n = 3, k = 3
 Output: "213"
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: n = 4, k = 9
 Output: "2314"
 ```
@@ -4332,7 +4332,7 @@ Each digit appears `(n-1)!` times in `result[0]`. And for a fixed `result[0]` ea
 
 We also need `k--` to convert `k` into index so that `k <= (n-1)!` maps `0` \(and get `1` from the set\).
 
-```text
+```python
 /**
  * @param {number} n
  * @param {number} k
@@ -4372,7 +4372,7 @@ Given a linked list, rotate the list to the right by _k_ places, where _k_ is no
 
 **Example 1:**
 
-```text
+```python
 Input: 1->2->3->4->5->NULL, k = 2
 Output: 4->5->1->2->3->NULL
 Explanation:
@@ -4382,7 +4382,7 @@ rotate 2 steps to the right: 4->5->1->2->3->NULL
 
 **Example 2:**
 
-```text
+```python
 Input: 0->1->2->NULL, k = 4
 Output: 2->0->1->NULL
 Explanation:
@@ -4402,7 +4402,7 @@ If we hit the end of list and still do not have the right pointer, we know `k` i
 
 Locate the right pointer again with `k % len`.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -4472,7 +4472,7 @@ Above is a 7 x 3 grid. How many possible unique paths are there?
 
 **Example 1:**
 
-```text
+```python
 Input: m = 3, n = 2
 Output: 3
 Explanation:
@@ -4484,7 +4484,7 @@ From the top-left corner, there are a total of 3 ways to reach the bottom-right 
 
 **Example 2:**
 
-```text
+```python
 Input: m = 7, n = 3
 Output: 28
 ```
@@ -4495,7 +4495,7 @@ DP.
 
 Define `f(i, j)` to be the number of total unique paths from `(0, 0)` to `(i, j)`.
 
-```text
+```python
 f(i, 0) = 1
 f(0, j) = 1
 f(i, j) = f(i-1, j) + f(i, j-1)
@@ -4503,7 +4503,7 @@ f(i, j) = f(i-1, j) + f(i, j-1)
 
 Only two previous states are dependant. Use dynamic array to reduce memory allocation.
 
-```text
+```python
 /**
  * @param {number} m
  * @param {number} n
@@ -4534,7 +4534,7 @@ Given a _m_ x _n_ grid filled with non-negative numbers, find a path from top le
 
 **Example:**
 
-```text
+```python
 Input:
 [
   [1,3,1],
@@ -4549,7 +4549,7 @@ Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 
 Define `f(i, j)` to be the min sum from `(0, 0)` to `(i, j)`.
 
-```text
+```python
 f(0, 0) = grid[0][0]
 f(0, j) = f(0, j-1) + grid[0][j], j > 0
 f(i, 0) = f(i-1, 0) + grid[i][0], i > 0
@@ -4558,7 +4558,7 @@ f(i, j) = min( f(i-1, j), f(i, j-1) ) + grid[i][j], j > 0 && i > 0
 
 Only two previous states are dependant. Use dynamic array to reduce memory allocation.
 
-```text
+```python
 /**
  * @param {number[][]} grid
  * @return {number}
@@ -4613,7 +4613,7 @@ JavaScript specific solutions:
 * `Math.abs` will first convert the argument to number.
 * `Math.abs(' ') === 0`.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -4628,7 +4628,7 @@ let isNumber = function(s) {
 * `isNaN` will first convert the argument to number.
 * `isNaN(' ') === false`.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -4644,7 +4644,7 @@ General solution. Take a look at the [ECMA Spec](https://www.ecma-international.
 
 Similary, we can define our own syntax, which requires a few changes:
 
-```text
+```python
 SignedDecimalLiteral::
   DecimalLiteral
   + DecimalLiteral
@@ -4676,7 +4676,7 @@ SignedInteger::
 
 Now implement the parser. It is much easier now because we have a clear mental map of the syntax.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -4797,7 +4797,7 @@ You may assume the integer does not contain any leading zero, except the number 
 
 **Example 1:**
 
-```text
+```python
 Input: [1,2,3]
 Output: [1,2,4]
 Explanation: The array represents the integer 123.
@@ -4805,7 +4805,7 @@ Explanation: The array represents the integer 123.
 
 **Example 2:**
 
-```text
+```python
 Input: [4,3,2,1]
 Output: [4,3,2,2]
 Explanation: The array represents the integer 4321.
@@ -4817,7 +4817,7 @@ Explanation: The array represents the integer 4321.
 
 JavaScript specific solution. Note that `unshift` is much slower that expanding.
 
-```text
+```python
 /**
  * @param {number[]} digits
  * @return {number[]}
@@ -4838,7 +4838,7 @@ let plusOne = function(digits) {
 
 General solution.
 
-```text
+```python
 /**
  * @param {number[]} digits
  * @return {number[]}
@@ -4885,7 +4885,7 @@ For the last line of text, it should be left justified and no **extra** space is
 
 **Example 1:**
 
-```text
+```python
 Input:
 words = ["This", "is", "an", "example", "of", "text", "justification."]
 maxWidth = 16
@@ -4899,7 +4899,7 @@ Output:
 
 **Example 2:**
 
-```text
+```python
 Input:
 words = ["What","must","be","acknowledgment","shall","be"]
 maxWidth = 16
@@ -4916,7 +4916,7 @@ Explanation: Note that the last line is "shall be    " instead of "shall     be"
 
 **Example 3:**
 
-```text
+```python
 Input:
 words = ["Science","is","what","we","understand","well","enough","to","explain",
          "to","a","computer.","Art","is","everything","else","we","do"]
@@ -4940,7 +4940,7 @@ Output:
   * Otherwise calculate the gap length using `Math.ceil`.
 * Handle the last line.
 
-```text
+```python
 /**
  * @param {string[]} words
  * @param {number} maxWidth
@@ -5002,14 +5002,14 @@ Since the return type is an integer, the decimal digits are truncated and only t
 
 **Example 1:**
 
-```text
+```python
 Input: 4
 Output: 2
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: 8
 Output: 2
 Explanation: The square root of 8 is 2.82842..., and since 
@@ -5020,7 +5020,7 @@ Explanation: The square root of 8 is 2.82842..., and since
 
 Binary Search. The square root of x is within \[0...\(x+1\)/2\].
 
-```text
+```python
 /**
  * @param {number} x
  * @return {number}
@@ -5070,7 +5070,7 @@ Use stack to handle `/../`.
 
 RegExp matching.
 
-```text
+```python
 /**
  * @param {string} path
  * @return {string}
@@ -5093,7 +5093,7 @@ let simplifyPath = function(path) {
 
 Direct search.
 
-```text
+```python
 /**
  * @param {string} path
  * @return {string}
@@ -5141,7 +5141,7 @@ You have the following 3 operations permitted on a word:
 
 **Example 1:**
 
-```text
+```python
 Input: word1 = "horse", word2 = "ros"
 Output: 3
 Explanation: 
@@ -5152,7 +5152,7 @@ rose -> ros (remove 'e')
 
 **Example 2:**
 
-```text
+```python
 Input: word1 = "intention", word2 = "execution"
 Output: 5
 Explanation: 
@@ -5169,7 +5169,7 @@ DP.
 
 Define `f(i, j)` to be the min edit distance from `word1[0...i)` to `word2[0...j)`.
 
-```text
+```python
 f(0, 0) = 0
 f(0, j) = f(0, j-1) + 1 // can only insert
 f(i, 0) = f(i-1, 0) + 1 // can only delete
@@ -5180,7 +5180,7 @@ f(i, j) = min(
 )
 ```
 
-```text
+```python
 /**
  * @param {string} word1
  * @param {string} word2
@@ -5230,7 +5230,7 @@ Given a _m_ x _n_ matrix, if an element is 0, set its entire row and column to 0
 
 **Example 1:**
 
-```text
+```python
 Input: 
 [
   [1,1,1],
@@ -5247,7 +5247,7 @@ Output:
 
 **Example 2:**
 
-```text
+```python
 Input: 
 [
   [0,1,2,0],
@@ -5286,7 +5286,7 @@ Walk the matrix again and set 0 according to the first row and column.
 
 Finally set the first row and column to 0 if needed.
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
@@ -5341,7 +5341,7 @@ Use `NaN` to mark cells that need to be set 0.
 
 Still constant space just a bit slower due to repeatedly setting overlapping `NaN`s.
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
@@ -5395,7 +5395,7 @@ Write an efficient algorithm that searches for a value in an _m_ x _n_ matrix. T
 
 **Example 1:**
 
-```text
+```python
 Input:
 matrix = [
   [1,   3,  5,  7],
@@ -5408,7 +5408,7 @@ Output: true
 
 **Example 2:**
 
-```text
+```python
 Input:
 matrix = [
   [1,   3,  5,  7],
@@ -5425,7 +5425,7 @@ Output: false
 
 Search from top-left to bottom-right. O\(_n_\).
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @param {number} target
@@ -5462,7 +5462,7 @@ View the matrix as an sorted array that is cut into `n` slices.
 
 Take the algorithm from [35. Search Insert Position](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/035.%20Search%20Insert%20Position.md).
 
-```text
+```python
 /**
  * @param {number[][]} matrix
  * @param {number} target
@@ -5508,7 +5508,7 @@ Here, we will use the integers 0, 1, and 2 to represent the color red, white, an
 
 **Example:**
 
-```text
+```python
 Input: [2,0,2,1,1,0]
 Output: [0,0,1,1,2,2]
 ```
@@ -5526,7 +5526,7 @@ Take the idea of the partition algorithm from quick sort. Use `1` as pivot.
 
 Count the number of sorted `0`s and `2`s so that we know where to swap.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
@@ -5566,7 +5566,7 @@ Given two integers _n_ and _k_, return all possible combinations of _k_ numbers 
 
 **Example:**
 
-```text
+```python
 Input: n = 4, k = 2
 Output:
 [
@@ -5583,7 +5583,7 @@ Output:
 
 Basic DFS + Backtracking.
 
-```text
+```python
 /**
  * @param {number} n
  * @param {number} k
@@ -5622,7 +5622,7 @@ Given a set of **distinct** integers, _nums_, return all possible subsets \(the 
 
 **Example:**
 
-```text
+```python
 Input: nums = [1,2,3]
 Output:
 [
@@ -5643,7 +5643,7 @@ Output:
 
 BFS.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -5655,7 +5655,7 @@ let subsets = function(nums) {
 
 Or more imperative. Loop backward to avoid crossing the boundary.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -5675,7 +5675,7 @@ let subsets = function(nums) {
 
 DFS + Backtracking.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -5710,7 +5710,7 @@ The word can be constructed from letters of sequentially adjacent cell, where "a
 
 **Example:**
 
-```text
+```python
 board =
 [
   ['A','B','C','E'],
@@ -5727,7 +5727,7 @@ Given word = "ABCB", return false.
 
 DFS + Backtracking. Replace the cell with `NaN` before proceeding to the next level and restore when backtracking.
 
-```text
+```python
 /**
  * @param {character[][]} board
  * @param {string} word
@@ -5790,7 +5790,7 @@ Do not allocate extra space for another array, you must do this by **modifying t
 
 **Example 1:**
 
-```text
+```python
 Given nums = [1,1,1,2,2,3],
 
 Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.
@@ -5800,7 +5800,7 @@ It doesn't matter what you leave beyond the returned length.
 
 **Example 2:**
 
-```text
+```python
 Given nums = [0,0,1,1,1,1,2,3,3],
 
 Your function should return length = 7, with the first seven elements of nums being modified to 0, 0, 1, 1, 2, 3 and 3 respectively.
@@ -5816,7 +5816,7 @@ Note that the input array is passed in by **reference**, which means modificatio
 
 Internally you can think of this:
 
-```text
+```python
 // nums is passed in by reference. (i.e., without making a copy)
 int len = removeDuplicates(nums);
 
@@ -5831,7 +5831,7 @@ for (int i = 0; i < len; i++) {
 
 Similar to [26. Remove Duplicates from Sorted Array](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/026.%20Remove%20Duplicates%20from%20Sorted%20Array.md).
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -5863,14 +5863,14 @@ You are given a target value to search. If found in the array return `true`, oth
 
 **Example 1:**
 
-```text
+```python
 Input: nums = [2,5,6,0,0,1,2], target = 0
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: nums = [2,5,6,0,0,1,2], target = 3
 Output: false
 ```
@@ -5884,7 +5884,7 @@ Output: false
 
 See [33. Search in Rotated Sorted Array](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/033.%20Search%20in%20Rotated%20Sorted%20Array.md). The code is basically the same. Except with duplicates we can not tell which way to jump when `pivot == nums[e]`. The only thing we can do is to ditch `nums[e]`. SO worst case `O(*n*)`.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @param {number} target
@@ -5935,14 +5935,14 @@ Given a sorted linked list, delete all nodes that have duplicate numbers, leavin
 
 **Example 1:**
 
-```text
+```python
 Input: 1->2->3->3->4->4->5
 Output: 1->2->5
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: 1->1->1->2->3
 Output: 2->3
 ```
@@ -5953,7 +5953,7 @@ Output: 2->3
 
 The list is sorted so we only need `dupVal` to keep the latest duplicate value.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -5999,14 +5999,14 @@ Given a sorted linked list, delete all duplicates such that each element appear 
 
 **Example 1:**
 
-```text
+```python
 Input: 1->1->2
 Output: 1->2
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: 1->1->2->3->3
 Output: 1->2->3
 ```
@@ -6017,7 +6017,7 @@ Output: 1->2->3
 
 Just like [82. Remove Duplicates from Sorted List II](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/082.%20Remove%20Duplicates%20from%20Sorted%20List%20II.md) except keeping the first duplicate node.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -6055,7 +6055,7 @@ let deleteDuplicates = function(head) {
 
 Just compare the next node. This is way more faster.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -6103,7 +6103,7 @@ The largest rectangle is shown in the shaded area, which has area = `10` unit.
 
 **Example:**
 
-```text
+```python
 Input: [2,1,5,6,2,3]
 Output: 10
 ```
@@ -6130,7 +6130,7 @@ Observe how `i1` and `i2` changes depending on the height.
 
 To reduce O\(_n^2_\) to O\(_n_\), we use a stack to store incremental `b`s. Because `b1` and `b2` are both lower than `b`, whenever we reach a bar that is lower than the top of the stack, we know it's a `b2`. So stack top is a `b`. Second top is a `b1`. Keep popping the `b` to calculate areas until `b2` is no longer lower than stack top.
 
-```text
+```python
 /**
  * @param {number[]} heights
  * @return {number}
@@ -6163,7 +6163,7 @@ Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle con
 
 **Example:**
 
-```text
+```python
 Input:
 [
   ["1","0","1","0","0"],
@@ -6180,7 +6180,7 @@ Output: 6
 
 View every row as a base line then we just have to solve `height(matrix)` times the problem of [84. Largest Rectangle in Histogram](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/084.%20Largest%20Rectangle%20in%20Histogram.md).
 
-```text
+```python
 /**
  * @param {character[][]} matrix
  * @return {number}
@@ -6242,7 +6242,7 @@ Also:
 
 With `conLeft` and `conRight` we can know if the rectangle on `(row, col)` shrinks comparing to `(row-1, col)`.
 
-```text
+```python
 if matrix[row][col] == 1
   height(row, col) = height(row-1, col) + 1
   
@@ -6266,7 +6266,7 @@ area(row, col) = (right(row, col) - left(row, col) + 1) * height(row, col)
 
 We only need to keep the last state. Use dynamic arrays to reduce space complexity.
 
-```text
+```python
 /**
  * @param {character[][]} matrix
  * @return {number}
@@ -6329,7 +6329,7 @@ You should preserve the original relative order of the nodes in each of the two 
 
 **Example:**
 
-```text
+```python
 Input: head = 1->4->3->2->5->2, x = 3
 Output: 1->2->2->4->3->5
 ```
@@ -6338,7 +6338,7 @@ Output: 1->2->2->4->3->5
 
 Take the second part out as a new list and connect it back.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -6395,7 +6395,7 @@ Given two sorted integer arrays _nums1_ and _nums2_, merge _nums2_ into _nums1_ 
 
 **Example:**
 
-```text
+```python
 Input:
 nums1 = [1,2,3,0,0,0], m = 3
 nums2 = [2,5,6],       n = 3
@@ -6407,7 +6407,7 @@ Output: [1,2,2,3,5,6]
 
 Loop backward and keep picking the larger one. `nums1` is guaranteed longer than `nums2` so just use `n` as boundary.
 
-```text
+```python
 /**
  * @param {number[]} nums1
  * @param {number} m
@@ -6437,7 +6437,7 @@ Given a non-negative integer _n_ representing the total number of bits in the co
 
 **Example 1:**
 
-```text
+```python
 Input: 2
 Output: [0,1,3,2]
 Explanation:
@@ -6457,7 +6457,7 @@ For example, [0,2,3,1] is also a valid gray code sequence.
 
 **Example 2:**
 
-```text
+```python
 Input: 0
 Output: [0]
 Explanation: We define the gray code sequence to begin with 0.
@@ -6467,7 +6467,7 @@ Explanation: We define the gray code sequence to begin with 0.
 
 #### Solution: <a id="solution-76"></a>
 
-```text
+```python
 0: [  0                                   ]
 1: [  0,   1                              ]
 2: [ 00,  01,  11,  10                    ]
@@ -6478,7 +6478,7 @@ The pattern is self-evident. Reverse the result set and prepend '1' to each item
 
 Use bitwise shift to speed up the calculation. It is unlikely to overflow since the result set is exponential.
 
-```text
+```python
 /**
  * @param {number} n
  * @return {number[]}
@@ -6509,7 +6509,7 @@ Given a collection of integers that might contain duplicates, **nums**, return a
 
 **Example:**
 
-```text
+```python
 Input: [1,2,2]
 Output:
 [
@@ -6529,7 +6529,7 @@ See [78. Subsets](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTEN
 1. Sort input to group duplicates.
 2. Only consider each duplicate once, that is, when it is at the first slot.
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number[][]}
@@ -6563,7 +6563,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 A message containing letters from `A-Z` is being encoded to numbers using the following mapping:
 
-```text
+```python
 'A' -> 1
 'B' -> 2
 ...
@@ -6574,7 +6574,7 @@ Given a **non-empty** string containing only digits, determine the total number 
 
 **Example 1:**
 
-```text
+```python
 Input: "12"
 Output: 2
 Explanation: It could be decoded as "AB" (1 2) or "L" (12).
@@ -6582,7 +6582,7 @@ Explanation: It could be decoded as "AB" (1 2) or "L" (12).
 
 **Example 2:**
 
-```text
+```python
 Input: "226"
 Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
@@ -6594,7 +6594,7 @@ Define `f(i)` to be the number of ways to decode `s[0...i]`.
 
 Note that there could be `'0'`.
 
-```text
+```python
 f(0) = 1, if s[i] !== '0'
 f(i) = 0, if s.length <= 0 || s[i] === '0'
 f(i) = f(i-1), if i > 0 && s[i] !== '0'
@@ -6604,7 +6604,7 @@ f(i) = f(i-1), if i > 0 && s[i] !== '0'
 
 Only need to store the last two states. Init `f(-1) = 1` for easy calculation.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {number}
@@ -6644,7 +6644,7 @@ Reverse a linked list from position _m_ to _n_. Do it in one-pass.
 
 **Example:**
 
-```text
+```python
 Input: 1->2->3->4->5->NULL, m = 2, n = 4
 Output: 1->4->3->2->5->NULL
 ```
@@ -6653,7 +6653,7 @@ Output: 1->4->3->2->5->NULL
 
 Break the list into 3 parts.
 
-```text
+```python
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -6708,7 +6708,7 @@ Given a string containing only digits, restore it by returning all possible vali
 
 **Example:**
 
-```text
+```python
 Input: "25525511135"
 Output: ["255.255.11.135", "255.255.111.35"]
 ```
@@ -6717,7 +6717,7 @@ Output: ["255.255.11.135", "255.255.111.35"]
 
 Backtracking. Note that leading `'0'` is not allowed except just `'0'`.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {string[]}
@@ -6769,14 +6769,14 @@ Given _s1_, _s2_, _s3_, find whether _s3_ is formed by the interleaving of _s1_ 
 
 **Example 1:**
 
-```text
+```python
 Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"
 Output: true
 ```
 
 **Example 2:**
 
-```text
+```python
 Input: s1 = "aabcc", s2 = "dbbca", s3 = "aadbbbaccc"
 Output: false
 ```
@@ -6785,14 +6785,14 @@ Output: false
 
 Define `f(i, j)` to be whether `s3[0...i+j-1)` can be formed by the interleaving of `s1[0...i)` and `s2[0...j)`.
 
-```text
+```python
 f(i, j) = true, i <= 0 || j <= 0 // meaningless, skipped
 f(i, j) = f(i-1, j) && s1[i-1] == s3[i+j-1] || f(i, j-1) && s2[j-1] == s3[i+j-1], 0 < i <= len(s1), 0 < j <= len(s2)
 ```
 
 Dynamic array can be used.
 
-```text
+```python
 /**
  * @param {string} s1
  * @param {string} s2
@@ -6832,7 +6832,7 @@ Two binary trees are considered the same if they are structurally identical and 
 
 **Example 1:**
 
-```text
+```python
 Input:     1         1
           / \       / \
          2   3     2   3
@@ -6844,7 +6844,7 @@ Output: true
 
 **Example 2:**
 
-```text
+```python
 Input:     1         1
           /           \
          2             2
@@ -6856,7 +6856,7 @@ Output: false
 
 **Example 3:**
 
-```text
+```python
 Input:     1         1
           / \       / \
          2   1     1   2
@@ -6870,7 +6870,7 @@ Output: false
 
 The code should be self-evident.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -6901,7 +6901,7 @@ Given a binary tree, check whether it is a mirror of itself \(ie, symmetric arou
 
 For example, this binary tree `[1,2,2,3,4,4,3]` is symmetric:
 
-```text
+```python
 1
    / \
   2   2
@@ -6911,7 +6911,7 @@ For example, this binary tree `[1,2,2,3,4,4,3]` is symmetric:
 
 But the following `[1,2,2,null,3,null,3]` is not:
 
-```text
+```python
 1
    / \
   2   2
@@ -6930,7 +6930,7 @@ The result of pre-order and post-order traversal on a symmetric tree should be t
 
 So just like [100. Same Tree](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/100.%20Same%20Tree.md). Except one is pre-order traversal and the other is post-order.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -6961,7 +6961,7 @@ function isSymmetricTree (p, q) {
 
 Level order traversal. Check symmetry before entering the next level.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7015,7 +7015,7 @@ Given a binary tree, return the level order traversal of its nodes' values. \(ie
 For example:  
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-```text
+```python
 3
    / \
   9  20
@@ -7025,7 +7025,7 @@ Given binary tree `[3,9,20,null,null,15,7]`,
 
 return its level order traversal as:
 
-```text
+```python
 [
   [3],
   [9,20],
@@ -7037,7 +7037,7 @@ return its level order traversal as:
 
 The code should be self-evident.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7082,7 +7082,7 @@ Given a binary tree, return the zigzag level order traversal of its nodes' value
 For example:  
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-```text
+```python
 3
    / \
   9  20
@@ -7092,7 +7092,7 @@ Given binary tree `[3,9,20,null,null,15,7]`,
 
 return its zigzag level order traversal as:
 
-```text
+```python
 [
   [3],
   [20,9],
@@ -7104,7 +7104,7 @@ return its zigzag level order traversal as:
 
 Reverse the level when pushing to the reuslt.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7159,7 +7159,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-```text
+```python
     3
    / \
   9  20
@@ -7173,7 +7173,7 @@ return its depth = 3.
 
 The code should be self-evident.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7207,14 +7207,14 @@ You may assume that duplicates do not exist in the tree.
 
 For example, given
 
-```text
+```python
 preorder = [3,9,20,15,7]
 inorder = [9,3,15,20,7]
 ```
 
 Return the following binary tree:
 
-```text
+```python
     3
    / \
   9  20
@@ -7232,7 +7232,7 @@ There are no duplicates so get the first item in preorder result, pinpoint it in
 
 Repeat the process on subtrees.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7281,14 +7281,14 @@ You may assume that duplicates do not exist in the tree.
 
 For example, given
 
-```text
+```python
 inorder = [9,3,15,20,7]
 postorder = [9,15,7,20,3]
 ```
 
 Return the following binary tree:
 
-```text
+```python
     3
    / \
   9  20
@@ -7306,7 +7306,7 @@ There are no duplicates so get the first item in preorder result, pinpoint it in
 
 Repeat the process on subtrees.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7353,7 +7353,7 @@ Given a binary tree, return the bottom-up level order traversal of its nodes' va
 For example:  
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-```text
+```python
     3
    / \
   9  20
@@ -7363,7 +7363,7 @@ Given binary tree `[3,9,20,null,null,15,7]`,
 
 return its bottom-up level order traversal as:
 
-```text
+```python
 [
   [15,7],
   [9,20],
@@ -7375,7 +7375,7 @@ return its bottom-up level order traversal as:
 
 See [102. Binary Tree Level Order Traversal](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/102.%20Binary%20Tree%20Level%20Order%20Traversal.md).
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7425,7 +7425,7 @@ a binary tree in which the depth of the two subtrees of _every_ node never diffe
 
 Given the following tree `[3,9,20,null,null,15,7]`:
 
-```text
+```python
     3
    / \
   9  20
@@ -7439,7 +7439,7 @@ Return true.
 
 Given the following tree `[1,2,2,3,3,null,null,4,4]`:
 
-```text
+```python
        1
       / \
      2   2
@@ -7455,7 +7455,7 @@ Return false.
 
 Get the depth of subtrees and compare. Prune the DFS tree by returning `-1`.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7499,7 +7499,7 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 Given binary tree `[3,9,20,null,null,15,7]`,
 
-```text
+```python
     3
    / \
   9  20
@@ -7513,7 +7513,7 @@ return its minimum depth = 2.
 
 Ignore `null` children.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7553,7 +7553,7 @@ Given a binary tree and a sum, determine if the tree has a root-to-leaf path suc
 
 Given the below binary tree and `sum = 22`,
 
-```text
+```python
       5
      / \
     4   8
@@ -7569,7 +7569,7 @@ return true, as there exist a root-to-leaf path `5->4->11->2` which sum is 22.
 
 Note that node value could be negative so pruning can not be performed.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7605,7 +7605,7 @@ Given a binary tree and a sum, find all root-to-leaf paths where each path's sum
 
 Given the below binary tree and `sum = 22`,
 
-```text
+```python
       5
      / \
     4   8
@@ -7617,7 +7617,7 @@ Given the below binary tree and `sum = 22`,
 
 Return:
 
-```text
+```python
 [
    [5,4,11,2],
    [5,8,4,5]
@@ -7628,7 +7628,7 @@ Return:
 
 Simple backtracking.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7672,7 +7672,7 @@ Given a binary tree, flatten it to a linked list in-place.
 
 For example, given the following tree:
 
-```text
+```python
     1
    / \
   2   5
@@ -7682,7 +7682,7 @@ For example, given the following tree:
 
 The flattened tree should look like:
 
-```text
+```python
 1
  \
   2
@@ -7700,7 +7700,7 @@ The flattened tree should look like:
 
 Return the leaf node of a flattened subtree for concatenation.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -7750,7 +7750,7 @@ A subsequence of a string is a new string which is formed from the original stri
 
 **Example 1:**
 
-```text
+```python
 Input: S = "rabbbit", T = "rabbit"
 Output: 3
 Explanation:
@@ -7768,7 +7768,7 @@ rabbbit
 
 **Example 2:**
 
-```text
+```python
 Input: S = "babgbag", T = "bag"
 Output: 5
 Explanation:
@@ -7794,7 +7794,7 @@ Define `f(i, j)` to be the number of ways that generate `T[0...j)` from `S[0...i
 
 For `f(i, j)` you can always skip `S[i-1]`, but can only take it when `S[i-1] === T[j-1]`.
 
-```text
+```python
 f(0, j) = 0, j > 0 // nothing to delete
 f(i, 0) = 1 // delete all
 f(i, j) = f(i-1, j) + (S[i-1] === T[j-1] ? f(i-1, j-1) : 0)
@@ -7802,7 +7802,7 @@ f(i, j) = f(i-1, j) + (S[i-1] === T[j-1] ? f(i-1, j-1) : 0)
 
 Dynamic array can be used.
 
-```text
+```python
 /**
  * @param {string} s
  * @param {string} t
@@ -7835,7 +7835,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree
 
-```text
+```python
 struct TreeLinkNode {
   TreeLinkNode *left;
   TreeLinkNode *right;
@@ -7858,7 +7858,7 @@ Initially, all next pointers are set to `NULL`.
 
 Given the following perfect binary tree,
 
-```text
+```python
      1
    /  \
   2    3
@@ -7869,7 +7869,7 @@ Given the following perfect binary tree,
 
 After calling your function, the tree should look like:
 
-```text
+```python
      1 -> NULL
    /  \
   2 -> 3 -> NULL
@@ -7889,7 +7889,7 @@ For every `node`:
 * Left child: points to `node.right`.
 * Right child: points to `node.next.left` if `node.next` exists.
 
-```text
+```python
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -7921,7 +7921,7 @@ let connect = function(root) {
 
 Level order traversal.
 
-```text
+```python
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -7963,7 +7963,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 Given a binary tree
 
-```text
+```python
 struct TreeLinkNode {
   TreeLinkNode *left;
   TreeLinkNode *right;
@@ -7985,7 +7985,7 @@ Initially, all next pointers are set to `NULL`.
 
 Given the following binary tree,
 
-```text
+```python
      1
    /  \
   2    3
@@ -7996,7 +7996,7 @@ Given the following binary tree,
 
 After calling your function, the tree should look like:
 
-```text
+```python
      1 -> NULL
    /  \
   2 -> 3 -> NULL
@@ -8015,7 +8015,7 @@ The tree may not be perfect now. So keep finding `next` until there is a node wi
 
 This also means post-order traversal is required.
 
-```text
+```python
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -8056,7 +8056,7 @@ let connect = function(root) {
 
 Level order traversal. Exact same as [116. Populating Next Right Pointers in Each Node](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.md).
 
-```text
+```python
 /**
  * Definition for binary tree with next pointer.
  * function TreeLinkNode(val) {
@@ -8104,7 +8104,7 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 
 **Example:**
 
-```text
+```python
 Input: 5
 Output:
 [
@@ -8121,7 +8121,7 @@ Output:
 
 Dynamic Programming 101.
 
-```text
+```python
 /**
  * @param {number} numRows
  * @return {number[][]}
@@ -8162,7 +8162,7 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 
 **Example:**
 
-```text
+```python
 Input: 3
 Output: [1,3,3,1]
 
@@ -8178,7 +8178,7 @@ Dynamic Programming 101 with dynamic array.
 
 State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)` iteration must be from right to left.
 
-```text
+```python
 /**
  * @param {number} rowIndex
  * @return {number[]}
@@ -8210,7 +8210,7 @@ Given a triangle, find the minimum path sum from top to bottom. Each step you ma
 
 For example, given the following triangle
 
-```text
+```python
 [
      [2],
     [3,4],
@@ -8230,7 +8230,7 @@ Bonus point if you are able to do this using only _O_\(_n_\) extra space, where 
 
 Define `f(i, j)` to be the minimum path sum from `triangle[0][0]` to `triangle[i][j]`.
 
-```text
+```python
 f(i, 0) = f(i-1, j) + triangle[i][0]
 f(i, j) = min( f(i-1, j-1), f(i-1, j) ) + triangle[i][j], 0 < j < i
 f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
@@ -8238,7 +8238,7 @@ f(i, i) = f(i-1, i-1) + triangle[i][i], i > 0
 
 Dynamic array can be used.
 
-```text
+```python
 /**
  * @param {number[][]} triangle
  * @return {number}
@@ -8274,7 +8274,7 @@ Note that you cannot sell a stock before you buy one.
 
 **Example 1:**
 
-```text
+```python
 Input: [7,1,5,3,6,4]
 Output: 5
 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
@@ -8284,7 +8284,7 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
 
 **Example 2:**
 
-```text
+```python
 Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
@@ -8297,7 +8297,7 @@ Only care about positive profits. Take the frist item as base and scan to the ri
 
 Because `price[j]` is lower that the base, using `j` as new base is guaranteed to gain more profit comparing to the old one.
 
-```text
+```python
 /**
  * @param {number[]} prices
  * @return {number}
@@ -8333,7 +8333,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 **Example 1:**
 
-```text
+```python
 Input: [7,1,5,3,6,4]
 Output: 7
 Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
@@ -8343,7 +8343,7 @@ Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-
 
 **Example 2:**
 
-```text
+```python
 Input: [1,2,3,4,5]
 Output: 4
 Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
@@ -8354,7 +8354,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```text
+```python
 Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
@@ -8364,7 +8364,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 Sell immediately after the price drops. Or in other perspective, it is the sum of all the incremental pairs \(buy in then immediately sell out\).
 
-```text
+```python
 /**
  * @param {number[]} prices
  * @return {number}
@@ -8396,7 +8396,7 @@ Design an algorithm to find the maximum profit. You may complete at most _two_ t
 
 **Example 1:**
 
-```text
+```python
 Input: [3,3,5,0,0,3,1,4]
 Output: 6
 Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
@@ -8405,7 +8405,7 @@ Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-
 
 **Example 2:**
 
-```text
+```python
 Input: [1,2,3,4,5]
 Output: 4
 Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
@@ -8416,7 +8416,7 @@ Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-
 
 **Example 3:**
 
-```text
+```python
 Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
@@ -8428,21 +8428,21 @@ Multiple transactions may not be engaged in at the same time. That means if we v
 
 Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
 
-```text
+```python
 p1(0) = 0
 p1(i) = max( p1(i-1), prices[i] - min(prices[0], ..., prices[i-1]) ), 0 < i <= n-1
 ```
 
 Define `p2(i)` to be the max profit of day `[i...n-1]`. This is the mirror of `p1`.
 
-```text
+```python
 p2(n-1) = 0
 p2(i) = max( p2(i+1), max(prices[i], ..., prices[n-1]) - prices[i] ), n-1 > i >= 0
 ```
 
 Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
 
-```text
+```python
 /**
  * @param {number[]} prices
  * @return {number}
@@ -8485,7 +8485,7 @@ For this problem, a path is defined as any sequence of nodes from some starting 
 
 **Example 1:**
 
-```text
+```python
 Input: [1,2,3]
 
        1
@@ -8498,7 +8498,7 @@ Output: 6
 
 **Example 2:**
 
-```text
+```python
 Input: [-10,9,20,null,null,15,7]
 
    -10
@@ -8530,7 +8530,7 @@ There are two ways to implement this.
 
 Define a function that returns two values. The max sum of a path that may or may not end with `root` node, and the max sum of the path that ends with `root` node.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -8566,7 +8566,7 @@ function _maxPathSum (root) {
 
 Just return the later \(max sum of a path that ends with `root`\). Maintain a global variable to store the disconnected max sum.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -8616,7 +8616,7 @@ Given a string, determine if it is a palindrome, considering only alphanumeric c
 
 **Example 1:**
 
-```text
+```python
 Input: "A man, a plan, a canal: Panama"
 Output: true
 
@@ -8624,7 +8624,7 @@ Output: true
 
 **Example 2:**
 
-```text
+```python
 Input: "race a car"
 Output: false
 
@@ -8634,7 +8634,7 @@ Output: false
 
 **ONE**
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -8649,7 +8649,7 @@ let isPalindrome = function(s) {
 
 Remove non-alphanumeric characters then compare.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -8667,7 +8667,7 @@ let isPalindrome = function(s) {
 
 Compare the char codes.
 
-```text
+```python
 /**
  * @param {string} s
  * @return {boolean}
@@ -8722,7 +8722,7 @@ Given two words \(_beginWord_ and _endWord_\), and a dictionary's word list, fin
 
 **Example 1:**
 
-```text
+```python
 Input:
 beginWord = "hit",
 endWord = "cog",
@@ -8738,7 +8738,7 @@ Output:
 
 **Example 2:**
 
-```text
+```python
 Input:
 beginWord = "hit"
 endWord = "cog"
@@ -8758,7 +8758,7 @@ The constrain still works, but instead of deleting the words right away, collect
 
 The items in the queue are not just words now. Parent nodes are also kept so that we can backtrack the path from the end.
 
-```text
+```python
 /**
  * @param {string} beginWord
  * @param {string} endWord
@@ -8841,7 +8841,7 @@ Given two words \(_beginWord_ and _endWord_\), and a dictionary's word list, fin
 
 **Example 1:**
 
-```text
+```python
 Input:
 beginWord = "hit",
 endWord = "cog",
@@ -8856,7 +8856,7 @@ return its length 5.
 
 **Example 2:**
 
-```text
+```python
 Input:
 beginWord = "hit"
 endWord = "cog"
@@ -8878,7 +8878,7 @@ We do not actually build the tree because it is expensive \(astronomical if the 
 
 To find all the next words, instead of filtering the `wordList`, enumerate all 25 possible words and check if in `wordList`.
 
-```text
+```python
 /**
  * @param {string} beginWord
  * @param {string} endWord
@@ -8938,7 +8938,7 @@ Your algorithm should run in O\(_n_\) complexity.
 
 **Example:**
 
-```text
+```python
 Input: [100, 4, 200, 1, 3, 2]
 Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
@@ -8949,7 +8949,7 @@ Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefor
 
 Build a Set from the list. Pick a number, find all it's adjacent numbers that are also in the Set. Count them and remove them all from the Set. Repeat until the Set is empty. Time complexity O\(n + n\) = O\(n\).
 
-```text
+```python
 /**
  * @param {number[]} nums
  * @return {number}
@@ -8993,7 +8993,7 @@ Find the total sum of all root-to-leaf numbers.
 
 **Example:**
 
-```text
+```python
 Input: [1,2,3]
     1
    / \
@@ -9007,7 +9007,7 @@ Therefore, sum = 12 + 13 = 25.
 
 **Example 2:**
 
-```text
+```python
 Input: [4,9,0,5,1]
     4
    / \
@@ -9026,7 +9026,7 @@ Therefore, sum = 495 + 491 + 40 = 1026.
 
 To write a clean solution for this promblem, use `0` as indicator of leaf node. If all the children get `0`, it is a leaf node, return the sum of current level.
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -9059,7 +9059,7 @@ A region is captured by flipping all `'O'`s into `'X'`s in that surrounded regio
 
 **Example:**
 
-```text
+```python
 X X X X
 X O O X
 X X O X
@@ -9069,7 +9069,7 @@ X O X X
 
 After running your function, the board should be:
 
-```text
+```python
 X X X X
 X X X X
 X X X X
@@ -9089,7 +9089,7 @@ The process of finding the connected `O`s is just like tree traversal. `O`s on t
 
 So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor of its readability.
 
-```text
+```python
 /**
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
@@ -9186,7 +9186,7 @@ The graph has a total of three nodes, and therefore contains three parts as sepa
 
 Visually, the graph looks like the following:
 
-```text
+```python
        1
       / \
      /   \
@@ -9202,7 +9202,7 @@ Visually, the graph looks like the following:
 
 DFS. Cache the visited node before entering the next recursion.
 
-```text
+```python
 /**
  * Definition for undirected graph.
  * function UndirectedGraphNode(label) {
@@ -9235,7 +9235,7 @@ _Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/binary-tree-upside-down.webp)
 
-```text
+```python
 /**
  * Definition for a binary tree node.
  * function TreeNode(val) {
@@ -9280,7 +9280,7 @@ const upsideDownBinaryTree = function(root) {
 
 ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/maximum-sum-circular-subarray.png)
 
-```text
+```python
 /**
  * @param {number[]} A
  * @return {number}
@@ -9346,7 +9346,7 @@ Given the sorted array:-10,-3,0,5,9−10,−3,0,5,9,
 
 One possible answer is:0,-3,9,-10,null,50,−3,9,−10,null,5, which represents the following height balanced BST:
 
-```text
+```python
   0
  / \\
 ```
@@ -9401,7 +9401,7 @@ Please notice that another valid answer is5,2,6,null,4,null,75,2,6,null,4,null,7
 [Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg)  
 ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-1.jpg)
 
-```text
+```python
 /**
  * @param {number[][]} intervals
  * @return {number}

@@ -270,7 +270,7 @@ Now that we've gone over an example, let's see how we can implement Dijkstra's a
 
 Before we start, we are first going to have to import a priority queue:
 
-```text
+```python
 from queue import PriorityQueue
 ```
 
@@ -278,7 +278,7 @@ We will use a priority queue to easily sort the vertices we haven't visited yet,
 
 Now, we'll implement a constructor for a class called `Graph`:
 
-```text
+```python
 class Graph:
 
     def __init__(self, num_of_vertices):
@@ -295,7 +295,7 @@ In this simple parametrized constructor, we provided the number of vertices in t
 
 Now, let's define a function which is going to add an edge to a graph:
 
-```text
+```python
     def add_edge(self, u, v, weight):
         self.edges[u][v] = weight
         self.edges[v][u] = weight
@@ -303,7 +303,7 @@ Now, let's define a function which is going to add an edge to a graph:
 
 Now, let's write the function for Dijkstra's algorithm:
 
-```text
+```python
     def dijkstra(self, start_vertex):
         D = {v:float('inf') for v in range(self.v)}
         D[start_vertex] = 0

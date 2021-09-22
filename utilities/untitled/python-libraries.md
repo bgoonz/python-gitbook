@@ -14,7 +14,7 @@ First up we have the `collections` module. If you’ve been working with Python 
 
 The need for an _ordered_ `dict` comes up surprisingly often. A common example is processing lines in a file where the lines \(or something within them\) maps to other data. A mapping is the right solution, and you often need to produce results in the same order in which the input data appeared. Here is a simple example of how the ordering changes with a normal `dict`:
 
-```text
+```python
 >>> dict(zip(ascii_lowercase, range(4)))
 {'a': 0, 'b': 1, 'c': 2, 'd': 3}
 
@@ -34,7 +34,7 @@ See how the key "`f`" now appears before the "`e`" key in the sequence of keys? 
 
 The `OrderedDict`, however, retains the order in which items are inserted:
 
-```text
+```python
 >>> from collections import OrderedDict
 
 >>> OrderedDict(zip(ascii_lowercase, range(5)))
@@ -54,7 +54,7 @@ OrderedDict([('a', 0), ('b', 1), ('c', 2), ('d', 3),
 
 There is an unfortunate catch with `OrderedDict` you need to be aware of: it doesn’t work when you _create_ the `OrderedDict` with keyword arguments, a very common Python idiom:
 
-```text
+```python
 >>> collections.OrderedDict(a=1,b=2,c=3)
 OrderedDict([('b', 2), ('a', 1), ('c', 3)])
 ```
@@ -67,7 +67,7 @@ This seems like a bug, but as explained in the documentation, it happens because
 
 Here’s a common example:
 
-```text
+```python
 >>> d = collections.defaultdict(list)
 >>> d['a']  
 []
@@ -79,7 +79,7 @@ You didn’t create this item yet? No problem! Key lookups automatically create 
 
 By setting up the default value as the `list` constructor in the preceding example, you can avoid wordy code that looks like this:
 
-```text
+```python
 d = {}
 for k in keydata:
     if not k in d:
@@ -95,13 +95,13 @@ In the preceding examples, we’re saying that every new element, by default, wi
 
 The next tool, `collections.namedtuple`, is magic in a bottle! Instead of working with this:
 
-```text
+```python
 tup = (1, True, "red")
 ```
 
 You get to work with this:
 
-```text
+```python
 >>> from collections import namedtuple
 >>> A = namedtuple('A', 'count enabled color')
 >>> tup = A(count=1, enabled=True, color="red")
@@ -117,7 +117,7 @@ A(count=1, enabled=True, color='red')
 
 The best thing about `namedtuple` is that you can add it to existing code and use it to progressively replace tuples: it can appear anywhere a tuple is currently being used, without breaking existing code, and without using any extra resources beyond what plain tuples require. Using `namedtuple` incurs no extra runtime cost, and can make code much easier to read. The most common situation where a `namedtuple` is recommended is when a function returns multiple results, which are then unpacked into a tuple. Let’s look at an example of code that uses plain tuples, to see why such code can be problematic:
 
-```text
+```python
 >>> def f():
 ...    return 2, False, "blue"  
 >>> count, enabled, color = f()  
@@ -136,7 +136,7 @@ Worse, the caller might access values inside the returned tuple _by index_.
 
 The problem with this approach is that this code is fragile to future changes. If the function changes \(perhaps by changing the order of the returned items, or adding more items\), the unpacking of the returned value will be incorrect. Instead, you can modify _existing_ code to return a `namedtuple` instance:
 
-```text
+```python
 >>> def f():
 ...    # Return a namedtuple!
 ...    return A(2, False, "blue")
@@ -150,7 +150,7 @@ Even though our function now returns a `namedtuple`, the same calling code still
 
 You now also have the option of working with the returned `namedtuple` in the calling code:
 
-```text
+```python
 >>> tup = f()
 >>> print(tup.count)  
 2
@@ -166,7 +166,7 @@ The `collections` module has a few other tricks up its sleeve, and your time is 
 
 A context manager is what you use with the `with` statement. A very common idiom in Python for working with file data demonstrates the context manager:
 
-```text
+```python
 with open('data.txt', 'r') as f:
     data = f.read()
 ```
@@ -177,7 +177,7 @@ You can use the `contextmanager` decorator from the `contextlib` library to bene
 
 This might be useful for quickly testing the time cost of code snippets, as shown in the following example. The numbered notes are intentionally not in numerical order in the code. Follow the notes in numerical order as shown following the code snippet.
 
-```text
+```python
 from time import perf_counter
 from array import array
 from contextlib import contextmanager
@@ -219,7 +219,7 @@ For fun, we’ll use our awesome, new context manager to also measure the total 
 
 On my computer, this code produces this output:
 
-```text
+```python
 Total [Array tests]: 0.064896 s
     Timing [Array creation innermul]: 0.064195 s
     Timing [Array creation outermul]: 0.000659 s
@@ -233,7 +233,7 @@ The point of this example is not to show the best way to create an array: rather
 
 The [`concurrent.futures`](http://bit.ly/conc-fut) module that was introduced in Python 3 provides a convenient way to manage pools of workers. If you have previously used the threading module in the Python standard library, you will have seen code like this before:
 
-```text
+```python
 import threading
 
 def work():
@@ -248,7 +248,7 @@ This code is very clean with only one thread, but with many threads it can becom
 
 Here we have a trivial example using the `ThreadPoolExecutor`. We download the landing page of a plethora of popular social media sites, and, to keep the example simple, we print out the size of each. Note that in the results, we show only the first four to keep the output short.
 
-```text
+```python
 from concurrent.futures import ThreadPoolExecutor as Executor
 
 urls = """google twitter facebook youtube pinterest tumblr
@@ -286,7 +286,7 @@ This is a simple way of waiting for all the threads to return.
 
 This produces the following output \(I’ve shortened the number of results for brevity\):
 
-```text
+```python
 http://www.google.com: length 10560
 http://www.twitter.com: length 268924
 http://www.facebook.com: length 56667
@@ -296,13 +296,13 @@ http://www.youtube.com: length 437754
 
 Even though one job is created for every URL, we limit the number of active threads to only four using `max_workers` and the results are all captured in the results list as they become available. If you wanted to use processes instead of threads, all that needs to change is the first line, from this:
 
-```text
+```python
 from concurrent.futures import ThreadPoolExecutor as Executor
 ```
 
 To this:
 
-```text
+```python
 from concurrent.futures import ProcessPoolExecutor as Executor
 ```
 
@@ -314,7 +314,7 @@ The primary problem with using processes for parallelism is that each process is
 
 The `logging` module is very well known in the web development community, but is far less used in other domains, such as the scientific one; this is unfortunate, because even for general use, the logging module is far superior to the `print()` function. It doesn’t seem that way at first, because the `print()` function is so simple; however, once you initialize `logging`, it can look very similar. For instance, compare these two:
 
-```text
+```python
 print('This is output to the console')
 
 logger.debug('This is output to the console')
@@ -322,7 +322,7 @@ logger.debug('This is output to the console')
 
 The huge advantage of the latter is that, with a single change to a setting on the logger instance, you can either show or hide all your debugging messages. This means you no longer have to go through the process of commenting and uncommenting your `print()` statements in order to show or hide them. `logging` also gives you a few different _levels_ so that you can adjust the verbosity of output in your programs. Here’s an example of different levels:
 
-```text
+```python
 logger.debug('This is for debugging. Very talkative!')
 logger.info('This is for normal chatter')
 logger.warning('Warnings should almost always be seen.')
@@ -332,7 +332,7 @@ logger.critical('Last message before a program crash!')
 
 Another really neat trick is that when you use logging, writing messages during exception handling is a whole lot easier. You don’t have to deal with `sys.exc_info()` and the `traceback` module merely for printing out the exception message with a traceback. You can do this instead:
 
-```text
+```python
 try:
     1/0
 except:
@@ -341,7 +341,7 @@ except:
 
 Just those four lines produces a full traceback in the output:
 
-```text
+```python
 ERROR:root:Something failed:
 Traceback (most recent call last):
   File "logtb.py", line 5, in <module>
@@ -351,7 +351,7 @@ ZeroDivisionError: division by zero
 
 Earlier I said that logging requires some setup. The documentation for the `logging` module is extensive and might seem overwhelming; here is a quick recipe to get you started:
 
-```text
+```python
 # Top of the file
 import logging
 logger = logging.getLogger()  
@@ -375,7 +375,7 @@ In the preceding `basicConfig()` line, by changing only `logging.DEBUG` to, say,
 
 Finally, there’s a neat trick you can use for easily changing the logging level on the command line. Python scripts that are directly executable usually have the startup code in a conditional block beginning with `if __name__ == '__main__'`. This is where _command-line parameters_ are handled, e.g., using the `argparse` library in the Python standard library. We can create command-line arguments specifically for the logging level:
 
-```text
+```python
 # Bottom of the file
 if __name__ == '__main__':
     from argparse import ArgumentParser
@@ -390,13 +390,13 @@ if __name__ == '__main__':
 
 With this setup, if you call your program with
 
-```text
+```python
 $ python main.py -ll DEBUG
 ```
 
 it will run with the logging level set to `DEBUG` \(so all logger messages will be shown\), whereas if you run it with
 
-```text
+```python
 $ python main.py -ll WARNING
 ```
 
@@ -410,7 +410,7 @@ There is increasing interest in the creation of bots[4](https://learning.oreilly
 
 The [documentation](http://bit.ly/sched-docs) for sched is rather terse, but hopefully these examples will get you started. The easy way to begin is to schedule a function to be executed after a specified delay \(this is a complete example to make sure you can run it successfully\):
 
-```text
+```python
 import sched
 import time
 from datetime import datetime, timedelta
@@ -442,7 +442,7 @@ There are a few annoying details about using `sched`: you have to pass `timefunc
 
 Working with delays can be frustrating if what you _really_ want is for a task to execute at specific times. In addition to `enter()`, a `sched` instance also provides the `enterabs()` method with which you can trigger an event at a specific time. We can use that method to trigger a function, say, every _whole_ minute:
 
-```text
+```python
 import sched
 import time
 from datetime import datetime, timedelta
@@ -479,7 +479,7 @@ The `enterabs()` method schedules the task.
 
 This code produces the following output:
 
-```text
+```python
 Sat Jun 18 18:14:00 2016
 Sat Jun 18 18:15:00 2016
 Sat Jun 18 18:16:00 2016
@@ -516,7 +516,7 @@ Each of the following chapters describes a library that met all the criteria on 
 
 [flit](http://bit.ly/flit-py) is a tool that dramatically simplifies the process of submitting a Python package to the Python Package Index \(PyPI\). The [traditional process](http://bit.ly/pkg-py) begins by creating a `setup.py` file; simply figuring out how to do that requires a considerable amount of work even to understand what to do. In contrast, flit will create its config file interactively, and for typical simple packages you’ll be ready to upload to PyPI almost immediately. Let’s have a look: consider this simple package structure:
 
-```text
+```python
  $ tree
 .
 └── mypkg
@@ -530,7 +530,7 @@ The package’s _init_ file is a great place to add package information like doc
 
 After installing flit into your environment with `pip install flit`, you can run the interactive initializer, which will create your package configuration. It asks only five questions, most of which will have applicable defaults once you have made your first package with `flit`:
 
-```text
+```python
  $ flit init
 Module name [mypkg]:
 Author [Caleb Hattingh]:
@@ -547,7 +547,7 @@ Written flit.ini; edit that file to add optional extra info.
 
 The final line tells you that a _flit.ini_ file was created. Let’s have a look at that:
 
-```text
+```python
  $ cat flit.ini
 // [metadata]
 module = mypkg
@@ -559,7 +559,7 @@ classifiers = License :: OSI Approved :: Apache Software License
 
 It’s pretty much what we specified in the interactive `flit init` sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the _mypkg/\_\_init\_\_.py _file at the top using triple quotes \(`"""`\). The second is that you must add a line for the version to the same file. Your finished_ \_\_init\_\_.py\_ file might look like this:
 
-```text
+```python
 # file: __init__.py
 """ This is the documentation for the package. """ 
 
@@ -574,7 +574,7 @@ Likewise, the version tag within your package will also be reused for PyPI when 
 
 After filling in the basic description and the version, you are ready to build a wheel and upload it to PyPI:
 
-```text
+```python
 $ flit wheel --upload
 Copying package file(s) from mypkg
 Writing metadata files
@@ -611,7 +611,7 @@ Many of your desktop Python programs will only ever be used on the command line,
 
 Let’s begin with a simple example.
 
-```text
+```python
 from colorama import init, Fore, Back, Style
 init(autoreset=True)
 
@@ -632,14 +632,14 @@ Notice in [Figure 1-2](https://learning.oreilly.com/library/view/20-python-libra
 
 The great thing about `colorama` is that it also works on Windows, in addition to Linux and Mac OS X. In the preceding example, we used the `init()` function to enable automatic reset to default colors after each `print()`, but even when not required, `init()` should always be called \(when your code runs on Windows, the `init()` call enables the mapping from ANSI color codes to the Windows color system\).
 
-```text
+```python
 from colorama import init
 init()
 ```
 
 The preceding example is clear enough to follow, but I would be a sorry author if I—after having emphasized the benefits of the _logging_ module—told you that the only way to get colors into your console was to use `print()`. As usual with Python, it turns out that the hard work has already been done for us. After installing the `colorlog` package,[6](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760) you can use colors in your log messages immediately:
 
-```text
+```python
 import colorlog
 
 logger = colorlog.getLogger()  
@@ -676,7 +676,7 @@ As far as user-interfaces go, most Python programs start out as command-line app
 
 `argparse` is a robust, solid implementation for command-line processing, but it is somewhat verbose to use. For example, here we have an extremely simple script that will add two numbers passed on the command line:
 
-```text
+```python
 import argparse
 
 def main(a, b):
@@ -700,7 +700,7 @@ if __name__ == '__main__':
 
 As one would expect, help can be obtained by passing `-h` to this program:
 
-```text
+```python
 $ python argparsedemo.py -h
 usage: argparsedemo.py [-h] [-a A] [-b B]
 
@@ -714,7 +714,7 @@ optional arguments:
 
 In contrast, the `begins` library takes a machete to the API of `argparse` and maximally exploits features of the Python language to simplify setting up the same command-line interface:
 
-```text
+```python
 import begin
 
 @begin.start(auto_convert=True)
@@ -735,7 +735,7 @@ Also, you may have noticed that this example lacks the usual `if __name__ == '__
 
 For completeness, here is the help for the `begins`-version, produced with `-h`:
 
-```text
+```python
 $ python beginsdemo.py -h
 usage: beginsdemo.py [-h] [--a A] [--b B]
 
@@ -749,7 +749,7 @@ optional arguments:
 
 There are a bunch more tricks that `begins` makes available, and you are encouraged to read the [documentation](http://bit.ly/begins-docs); for instance, if the parameters are words:
 
-```text
+```python
 @begin.start
 def main(directory: 'Target dir'):
     ...
@@ -757,7 +757,7 @@ def main(directory: 'Target dir'):
 
 then both `-d VALUE` and `--directory VALUE` will work for specifying the value of the `directory` parameter on the command line. A sequence of positional arguments of unknown length is easily defined with unpacking:
 
-```text
+```python
 #demo.py
 @begin.start
 def main(directory: 'Target dir', *filters):
@@ -766,7 +766,7 @@ def main(directory: 'Target dir', *filters):
 
 When called with:
 
-```text
+```python
 $ python demo.py -d /home/user tmp temp TEMP
 ```
 
@@ -774,7 +774,7 @@ the `filters` argument would be the list `['tmp', 'temp', 'TEMP']`.
 
 If that were all that `begins` supported, it would already be sufficient for the vast majority of simple programs; however, `begins` also provides support for _subcommands_:
 
-```text
+```python
 import begin
 
 @begin.subcommand
@@ -803,7 +803,7 @@ The `main` function is the same as before, but we’ve added two subcommands:
 
 Each subcommand has its own set of parameters, and the rules work in the same way as before with the `main` function. For instance, observe the updated help \(obtained with the `-h` parameter\) for the program:
 
-```text
+```python
 $ python beginssubdemo.py -h
 usage: beginssubdemo.py [-h] [--a A] [--b B] {fetch,status} ...
 
@@ -822,7 +822,7 @@ Available subcommands:
 
 We still have the same documentation for the main program, but now additional help for the subcommands have been added. Note that the function docstrings for `status` and `fetch` have also been recycled into CLI help descriptions. Here is an example of how our program might be called:
 
-```text
+```python
 $ python beginssubdemo.py -a 7 -b 7 status --compact
 14.0
 ok.
@@ -848,7 +848,7 @@ The most popular chart-plotting library in Python is [matplotlib](http://matplot
 
 It is very easy to get an idea of what pyqtgraph offers: simply run the built-in examples application:
 
-```text
+```python
 $ pip install pyqtgraph
 $ python -m pyqtgraph.examples
 ```
@@ -861,7 +861,7 @@ This example shows an array of interactive plots. You can’t tell from the scre
 
 By default, the style configuration for graphs in `pyqtgraph` uses a black background with a white foreground. In [Figure 1-4](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pyqtgraph_ex), I sneakily used a style configuration change to reverse the colors, since dark backgrounds look terrible in print. This information is also available in the documentation:
 
-```text
+```python
 import pyqtgraph as pg
 # Switch to using white background and black foreground
 pg.setConfigOption('background', 'w')
@@ -884,7 +884,7 @@ Usually, such an approach involves bundling a browser engine with your applicati
 
 Let’s begin with an example. Since our application will be built up as a web-page template in HTML, it might be interesting to use a Python tool to build the HTML rather than writing it out by hand.
 
-```text
+```python
 from string import ascii_letters
 from random import choice, randint
 import webview  
@@ -1006,7 +1006,7 @@ Python is heavily used to make tools that work closely with the operating system
 
 Psutil provides complete access to system information. Here’s a simple example of a basic report for CPU load sampled over 5 seconds:
 
-```text
+```python
 import psutil
 
 cpu = psutil.cpu_percent(interval=5, percpu=True)
@@ -1015,7 +1015,7 @@ print(cpu)
 
 Output:
 
-```text
+```python
 [21.4, 1.2, 18.0, 1.4, 15.6, 1.8, 17.4, 1.6]
 ```
 
@@ -1023,7 +1023,7 @@ It produces one value for each logical CPU: on my computer, eight. The rest of t
 
 There is also detailed information about processes. To demonstrate, here is a program that monitors its own memory consumption and throws in the towel when a limit is reached:
 
-```text
+```python
 import psutil
 import os, sys, time
 
@@ -1056,7 +1056,7 @@ This looks bad: an infinite loop _and_ an ever-growing list!
 
 Output:
 
-```text
+```python
 Process info:
   name  : Python
   exe   : /usr/local/Cellar/.../Python  
@@ -1090,7 +1090,7 @@ The problem with polling is that having many such processes running can sometime
 
 * Compiling template and markup languages:
 
-```text
+```python
 # Compile Jade template language into HTML
 $ watchmedo shell-command \
       --patterns="*.jade" \
@@ -1110,7 +1110,7 @@ Watchdog will substitute the name of the specific changed file using this templa
 
 * Maintenance tasks, like backups or mirroring:
 
-```text
+```python
 # Synchronize files to a server
 $ watchmedo shell-command \
       --patterns="*" \
@@ -1119,7 +1119,7 @@ $ watchmedo shell-command \
 
 * Convenience tasks, like automatically running formatters, linters, and tests:
 
-```text
+```python
 # Automatically format Python source code to PEP8(!)
 $ watchmedo shell-command \
       --patterns="*.py" \
@@ -1129,7 +1129,7 @@ $ watchmedo shell-command \
 
 * Calling API endpoints on the Web, or even sending emails and SMS messages:
 
-```text
+```python
 # Mail a file every time it changes!
 $ watchmedo shell-command \
       --patterns="*" \
@@ -1140,7 +1140,7 @@ $ watchmedo shell-command \
 
 The API of `Watchdog` as a library is fairly similar to the command-line interface introduced earlier. There are the usual quirks with thread-based programming that you have to be aware of, but the typical idioms are sufficient:
 
-```text
+```python
 from watchdog.observers import Observer
 from watchdog.events import (
     PatternMatchingEventHandler, FileModifiedEvent,
@@ -1180,7 +1180,7 @@ You _schedule_ the event handler, and tell `watchdog` what it should be watching
 
 With that code running, I cunningly executed a few of these:
 
-```text
+```python
 $ touch secrets.txt
 $ touch secrets.txt
 $ touch secrets.txt
@@ -1189,7 +1189,7 @@ $ touch secrets.txt
 
 This is the console output from the running `Watchdog` demo:
 
-```text
+```python
 File Created:  ./secrets.txt
 File Modified: . [modified]
 File Modified: ./secrets.txt [modified]
@@ -1237,7 +1237,7 @@ Python is famously used in a large number of web frameworks, and an extension of
 
 Here is a small web service that converts between the hex value of a color and its [CSS3 name](http://bit.ly/w3-hex):
 
-```text
+```python
 import hug
 import webcolors
 
@@ -1260,7 +1260,7 @@ In the `hug` example, we’ve done little more than wrap two functions from the 
 
 And that’s it! We can immediately test our API. You could use a web browser for this, but it’s easy enough to use a tool like `cURL`. You call the URL endpoint with the correct parameters, and `hug` returns the answer:
 
-```text
+```python
 $ curl http://localhost:8000/hextoname?hex=ff0000  
 
 "red"
@@ -1278,7 +1278,7 @@ This API has a different endpoint function, `nametohex`, and its parameter is ca
 
 It’s quite impressive to get a live web API up with so little work. And the features don’t stop there: `hug` automatically generates API documentation, which is what you get by omitting an endpoint:
 
-```text
+```python
 $ curl http://localhost:8000/
 {
   "404": "The API call you tried to make was not defined. Here's
@@ -1322,7 +1322,7 @@ The types of the parameters we specified with `hug.types.text` are used not only
 
 If these were all the features provided by `hug`, it would already be enough for many API tasks; however, one of hug’s best features is that it automatically handles versions. Consider the following example:
 
-```text
+```python
 import hug
 import inflect  
 engine = inflect.engine()
@@ -1362,7 +1362,7 @@ We are also using the [inflect](http://bit.ly/inflect-py) library, which makes a
 
 Imagine that we’ve created this web service to provide an API to transform words into their singular or plural version: one apple, many apples, and so on. For some reason that now escapes us, in the first release we lowercased the results before returning them:
 
-```text
+```python
 $ curl http://localhost:8000/v1/singular/?word=Silly%20Walks  
 
 "silly walk"
@@ -1379,7 +1379,7 @@ Note: the URL now has a “v1” specifier for “version 1.”
 
 It didn’t occur to us that some users may _prefer_ to have the case of input words preserved: for example, if a word at the beginning of a sentence is being altered, it would be best to preserve the capitalization. Fortunately, the `inflect` library already does this by default, and `hug` provides versioning that allows us to provide a second version of the API \(so as not to hurt existing users who may expect the lower-case transformation\):
 
-```text
+```python
 $ curl http://localhost:8000/v2/singular/?word=Silly%20Walks
 
 "Silly Walk"
@@ -1392,7 +1392,7 @@ $ curl http://localhost:8000/v2/plural/?word=Crisis
 
 These API calls use version 2 of our web service. And finally, the documentation is also versioned, and for this example, you can see how the function _docstrings_ are also incorporated as usage text:
 
-```text
+```python
 $ curl http://localhost:8000/v2/  
 {
   "404": "The API call you tried to make was not defined. Here's
@@ -1442,7 +1442,7 @@ Though opinions differ, there are those who have found the standard library’s 
 
 The _naive_ `datetime` objects are the ones you typically see in demos and tutorials:
 
-```text
+```python
 import datetime
 
 dt = datetime.datetime.now()
@@ -1454,7 +1454,7 @@ print('Total difference: %.2f seconds' % difference)
 
 This code could not be any simpler: we create two `datetime` objects, and calculate the difference. The problem is that we probably intended both `now()` and `utcnow()` to mean _now_ as in “this moment in time,” but perhaps in different timezones. When the difference is calculated, we get what seems an absurdly large result:
 
-```text
+```python
 Total difference: 36000.00 seconds
 ```
 
@@ -1462,13 +1462,13 @@ The difference is, in fact, the timezone difference between my current location 
 
 Note that it _is_ possible to create `datetime` objects with timezone data attached, albeit in a subjectively cumbersome manner: you create an _aware_ `datetime` by setting the `tzinfo` attribute to the correct timezone. In our example, we could \(and should!\) have created a current `datetime` object in the following way, by passing the timezone into the `now()` function:
 
-```text
+```python
 dt = datetime.datetime.now(tz=datetime.timezone.utc)
 ```
 
 Of course, if you make this change on line 3 and try to rerun the code, the following error appears:
 
-```text
+```python
 TypeError: can't subtract offset-naive and
 offset-aware datetimes
 ```
@@ -1479,7 +1479,7 @@ Naturally, to handle this in the general case requires some kind of database of 
 
 Now we can finally delve into the main topic of this section, which is `arrow`: a third-party library that offers a much simpler API for working with dates and times. With `arrow`, _everything_ has a timezone attached \(and is thus “aware”\):
 
-```text
+```python
 import arrow
 
 t0 = arrow.now()
@@ -1495,7 +1495,7 @@ print('Total difference: %.2f seconds' % difference)
 
 Output:
 
-```text
+```python
 2016-06-26T18:43:55.328561+10:00
 2016-06-26T08:43:55.328630+00:00
 Total difference: -0.00 seconds
@@ -1505,7 +1505,7 @@ As you can see, the `now()` function produces the current date and time _with_ m
 
 And the delightful `arrow` library just gets better from there. The objects themselves have convenient attributes and methods you would expect:
 
-```text
+```python
 >>> t0 = arrow.now()
 >>> t0
 <Arrow [2016-06-26T18:59:07.691803+10:00]>
@@ -1537,7 +1537,7 @@ Note that the `datetime` produced from the same attribute correctly carries the 
 
 There are several other features of the module that you can read more about in [the documentation](http://crsmithdev.com/arrow), but this last feature provides an appropriate segue to the next section:
 
-```text
+```python
 >>> t0 = arrow.now()
 >>> t0.humanize()
 'just now'
@@ -1551,7 +1551,7 @@ There are several other features of the module that you can read more about in [
 
 The humanization even has built-in support for several locales!
 
-```text
+```python
 >>> t0.humanize(locale='ko')
 '2시간 전'
 >>> t0.humanize(locale='ja')
@@ -1580,7 +1580,7 @@ There are several other excellent libraries for dealing with dates and times in 
 
 The minimum you should expect of a `datetime`-parsing library is to handle the more common formats, and the following code sample demonstrates this:
 
-```text
+```python
 import parsedatetime as pdt
 
 cal = pdt.Calendar()
@@ -1605,7 +1605,7 @@ for e in examples:
 
 This produces the following, and unsurprising, output:
 
-```text
+```python
 Input                                                 Result
 ============================================================
 "2016-07-16"                        Sat Jul 16 16:25:20 2016
@@ -1622,7 +1622,7 @@ By default, if the year is given _last_, then _month-day-year_ is assumed, and t
 
 Significantly more impressive, however, is how `parsedatetime` handles more complicated, “natural language” inputs:
 
-```text
+```python
 import parsedatetime as pdt
 from datetime import datetime
 
@@ -1653,7 +1653,7 @@ for e in examples:
 
 Incredibly, this all works just as you’d hope:
 
-```text
+```python
 Now: Mon Jun 20 08:41:38 2016
 
 Input                                                     Result
@@ -1698,7 +1698,7 @@ The `functools` module in the [standard library](http://bit.ly/functools-docs) a
 
 `boltons` provides similar caching functionality, but with a few convenient tweaks. Consider the following sample, in which we attempt to rewrite some lyrics from Taylor Swift’s _1989_ juggernaut record. We will use tools from `boltons.cacheutils` to speed up processing time:
 
-```text
+```python
 import json
 import shelve
 import atexit
@@ -1801,7 +1801,7 @@ The design of the caches in `boltons.cacheutils` is great in that it is easy to 
 
 Here is an example of the output:
 
-```text
+```python
 Nice to meet you, wherever you been?
 I indeed conduct you astonishing things
 Magic, madness, Hell sin
@@ -1828,14 +1828,14 @@ On second thought, perhaps the original was best after all! It is worth noting j
 
 `boltons.iterutils.chunked_iter(src, size)` returns pieces of the source iterable in `size`-sized chunks \(this example was copied [from the docs](http://bit.ly/boltons-chunk)\):
 
-```text
+```python
 >>> list(chunked_iter(range(10), 3))
 [[0, 1, 2], [3, 4, 5], [6, 7, 8], [9]]
 ```
 
 A similar requirement that often comes up is to have a moving window \(of a particular size\) slide over a sequence of data, and you can use [`boltons.iterutils.windowed_iter`](http://bit.ly/boltons-window) for that:
 
-```text
+```python
 >>> list(windowed_iter(range(7), 3))
 [(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]
 ```
@@ -1859,7 +1859,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 * `slugify()`: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
 * `ordinalize()`: given a numerical value, create a string referring to its position:
 
-```text
+```python
 >>> print(ordinalize(1))
 1st
 >>> print(ordinalize(2))
@@ -1868,7 +1868,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 
 * `cardinalize`: given a word and a count, change the word for plurality and _preserve case_:
 
-```text
+```python
 >>> cardinalize('python', 99)
 'pythons'
 >>> cardinalize('foot', 6)
@@ -1883,7 +1883,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 
 * `singularize` and `pluralize`:
 
-```text
+```python
 >>> pluralize('theory')
 'theories'
 >>> singularize('mice')
@@ -1892,7 +1892,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
 
 * `bytes2human`: convert data sizes into friendler forms:
 
-```text
+```python
 >>> bytes2human(1e6)
 '977K'
 >>> bytes2human(20)
@@ -1918,7 +1918,7 @@ The _second_ reason is the one I’m going to focus on. By adding a few type dec
 
 Consider the following code, which is as simple as I could possibly make it for this example:
 
-```text
+```python
 import array  
 
 n = int(1e8) 
@@ -1946,7 +1946,7 @@ This code represents the most basic computer processing: data comes in, is trans
 
 We can run this program on the command line in the following way:
 
-```text
+```python
 $ time python cythondemoslow.py
 array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
 
@@ -1959,7 +1959,7 @@ I’ve include the `time` command to get some performance measurements. Here we 
 
 In order to use Cython, we need to modify the code slightly to take advantage of the Cython compiler’s features:
 
-```text
+```python
 import array  
 
 cdef int n = int(1e8)  
@@ -1991,13 +1991,13 @@ The first is that, by convention, we change the file extension of our source-cod
 
 The second is that we must use Cython to _compile_ our source code into a native machine binary file. There are many ways to do this depending on your situation, but here we’re going to go with the simple option and use a command-line tool provided by Cython itself:
 
-```text
+```python
 $ cythonize -b -i cythondemofast.pyx
 ```
 
 Running this command produces many lines of output messages from the compiler, but when the smoke clears you should find a new binary file in the same place as the `.pyx` file:
 
-```text
+```python
 $ ls -l cythondemofast.cpython-35m-darwin.so
 -rwxr-xr-x@ calebhattingh 140228 3 Jul 15:51
                             cythondemofast.cpython-35m-darwin.so
@@ -2007,7 +2007,7 @@ This is a native binary that Cython produced from our slightly modified Python s
 
 With the first version of our example in ordinary Python, we could run the program easily with `python cythondemoslow.py`. We can run the code in our compiled _Cython_ version simply by _importing_ the native extension. As before, we include the `time` for measurement:
 
-```text
+```python
 $ time python -c "import cythondemofast"
 array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
 
@@ -2036,7 +2036,7 @@ Cython gives us a way out of this dilemma, and enables multithreading at full pe
 
 In the following code snippet, we demonstrate how to use normal Python threading to speed up the same nonsense calculation I used in previous examples:
 
-```text
+```python
 # cython: boundscheck=False, cdivision=True
 import array
 import threading  
@@ -2098,13 +2098,13 @@ I’ve also sneakily added a few small optimization options such as disabling bo
 
 As before, we must compile our program:
 
-```text
+```python
 $ cythonize -b -i -a cythondemopll.pyx
 ```
 
 Then we can test the impact of our changes:
 
-```text
+```python
 $ time python -c "import cythondemopll"
 array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
 
@@ -2119,7 +2119,7 @@ The use of threading has given us around 30% improvement over the previous, sing
 
 One final trick with Cython is creating executables. So far we’ve been compiling our Cython code for use as a native extension module, which we then import to run. However, Cython also makes it possible to create a native binary executable directly. The key is to invoke `cython` directly with the `--embed` option:
 
-```text
+```python
 $ cython --embed cythondemopll.pyx
 ```
 
@@ -2127,7 +2127,7 @@ This produces a C source file that will compile to an executable rather than a s
 
 The next step depends on your platform because you must invoke the C compiler directly, but the main thing you need to provide is the path to the Python header file and linking library. This is how it looks on my Mac:
 
-```text
+```python
 $ gcc `python3.5-config --cflags` cythondemopll.c \
       `python3.5-config --ldflags` -o cythondemopll
 ```
@@ -2136,7 +2136,7 @@ Here I’ve used a utility called `python3.5-config` that conveniently returns t
 
 The compilation step using `gcc` produces a _native binary_ executable that can be run directly on the command line:
 
-```text
+```python
 $ ./cythondemopll
 array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
 ```

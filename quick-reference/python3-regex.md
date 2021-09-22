@@ -15,7 +15,7 @@ Regex or Regular Expressions are an important part of Python Programming or any 
 
 **Example:**Python3
 
-```text
+```python
 import re
 
 print(re.search(r"^x","xenon"))
@@ -24,7 +24,7 @@ print(re.search(r"s$","geeks"))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(0, 1), match='x'>
 <re.Match object; span=(4, 5), match='s'>
 ```
@@ -53,7 +53,7 @@ Their default searching method is Greedy. But if ? is added to qualifiers \(+, \
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 print(re.search(r"9+","289908"))
@@ -62,7 +62,7 @@ print(re.search(r"\d{3}","hello1234"))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(2, 4), match='99'>
 <re.Match object; span=(5, 8), match='123'>
 ```
@@ -92,7 +92,7 @@ In the second example, **\d{3}** will search for digits exactly 3 times. Since *
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 print(re.search(r"\s","xenon is a gas"))
@@ -101,7 +101,7 @@ print(re.search(r"\D+\d*","123geeks123"))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(5, 6), match=' '>
 <re.Match object; span=(3, 11), match='geeks123'>
 ```
@@ -128,7 +128,7 @@ In the second example, **\D+\d\*** will search for one or more non-digits charac
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 print(re.search(r"[^abc]","abcde"))
@@ -137,7 +137,7 @@ print(re.search(r"[a-p]","xenon"))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(3, 4), match='d'>
 <re.Match object; span=(1, 2), match='e'>
 ```
@@ -160,7 +160,7 @@ In the second example, **\[a-p\]** will search for the character between a to p.
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 example = (re.search(r"(?:AB)","ACABC"))
@@ -173,7 +173,7 @@ print(result.groups())
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(2, 4), match='AB'>
 ()
 ('geeks', 'best')
@@ -197,7 +197,7 @@ In the second example, we have captured two groups, one group which has 0 or mor
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 print(re.search(r"z(?=a)", "pizza"))
@@ -206,7 +206,7 @@ print(re.search(r"z(?!a)", "pizza"))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(3, 4), match='z'>
 <re.Match object; span=(2, 3), match='z'>
 ```
@@ -231,7 +231,7 @@ In the second example, **z\(?!a\)** will search for the character **z** which is
 
 **Examples:**Python3
 
-```text
+```python
 import re
 
 exp = """hello there
@@ -244,7 +244,7 @@ print(re.findall(r"^\w", exp, flags = re.MULTILINE))
 
 **Output:**
 
-```text
+```python
 <re.Match object; span=(4, 7), match='And'>
 ['h', 'I', 'G']
 ```
@@ -271,7 +271,7 @@ So, let’s come back to our problem!
 
 We can get the users’ phone numbers by first creating a pattern. Observe that the phone numbers are located between the brackets “\( \)”. It’s a useful information and we can use it to our advantage. To access the goodness of Regular Expressions in Python, we will need to **import** the **re library**.
 
-```text
+```python
 import re phone_numbers = [] 
 pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file: 
     for line in file: 
@@ -281,7 +281,7 @@ pattern = r"\(([\d\-+]+)\)"with open("log.txt", "r") as file:
 
 The Output:
 
-```text
+```python
 ['+1-202-555-0189', '+33-93-751-3845', '+49-30-833-931-313']
 ```
 
@@ -312,13 +312,13 @@ So, don’t forget your “r”!
 
 We’ll start off with the simplest syntax in RegEx, the special sequences. Special sequences in RegEx starts with a backslash\(\\). So if you meet a backslash in the RegEx pattern, chances are it is the syntax for a special sequence.
 
-```text
+```python
 \d               matches a single digit character [0-9]\w               matches any alphabet, digit, or underscore\s               matches a white space character (space, tab, enter)
 ```
 
 The negations of these sequences are also available by using the capital letter. For example, \D is the negation of \d.
 
-```text
+```python
 \D               matches a single non-digit character
 ```
 
@@ -326,13 +326,13 @@ The negations of these sequences are also available by using the capital letter.
 
 We’ll then go through the meta characters which will assist us in reaching our goal. Each one of these characters has its special meaning.
 
-```text
+```python
 .                matches any character(except for newline character)^                the string starts with a character$                the string ends with a character*                zero or more occurrences +                one or more occurrences?                one or no occurrence {}               exactly the specified number of occurrences|                either or
 ```
 
 Example :
 
-```text
+```python
 "c.t"            will match anything like "cat", "c*t", "c1t", etc"^a"             will match "a" from "a cat" but not "eat a cake""cat$"           will match "a cat" but not "cat party""a*b"            will match "b", "ab", "aab", "aaab", ..."a+b"            will match "ab", "aab", "aaab", ..."a?b"            will match "b" or "ab""a{1}b"          will match "ab""a{1,3}b"        will match "ab", "aab", or "aaab""cat|dog"        will match "cat" or "dog"
 ```
 
@@ -340,19 +340,19 @@ Example :
 
 Sets can be used to match one of the characters inside the square brackets.
 
-```text
+```python
 [abcd]           matches either a, b, c or d
 ```
 
 You can also use the special sequences that we have discussed earlier here. Besides that, there is also the dash character that we’ll get to shortly.
 
-```text
+```python
 [a-z0-9]         matches one of the characters from a-z or 0-9[\w]             matches an alphabet, digit, or underscore
 ```
 
 The caret character\(^\) stands for except.
 
-```text
+```python
 [^\d]            matches a character that is not a digit [0-9]
 ```
 
@@ -364,7 +364,7 @@ However, characters that don’t have any special meaning like ?\_+\*.\|\(\)${} 
 
 Lastly, we’ll go through the things that we can do with RegEx by using the functions available!
 
-```text
+```python
 findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string            
 ```
 
@@ -374,7 +374,7 @@ Example :
 
 1. findall\(\)
 
-```text
+```python
 import repattern = r".at"
 line = "The big fat cat sat on a cat"
 result = re.findall(pattern, line)print(result)
@@ -382,13 +382,13 @@ result = re.findall(pattern, line)print(result)
 
 The Output :
 
-```text
+```python
 ['fat', 'cat', 'sat', 'cat']
 ```
 
 2. search\(\)
 
-```text
+```python
 import repattern = r".* .*"
 line = "Ada Lovelace"
 result = re.search(pattern, line)print(result)
@@ -398,7 +398,7 @@ print(result.group(0))
 
 The Output :
 
-```text
+```python
 <_sre.SRE_Match object; span=(0, 12), match='Ada Lovelace'>
 Ada Lovelace
 Ada Lovelace
@@ -406,7 +406,7 @@ Ada Lovelace
 
 3. split\(\)
 
-```text
+```python
 import repattern = r"cat"
 line = "The big fat cat sat on a cat"
 result = re.split(pattern, line)print(result)
@@ -414,13 +414,13 @@ result = re.split(pattern, line)print(result)
 
 The Output :
 
-```text
+```python
 ['The big fat ', ' sat on a ', '']
 ```
 
 4. sub\(\)
 
-```text
+```python
 import repattern = r"Ada"
 line = "Ada Lovelace"
 result = re.sub(pattern, r"Tom", line)print(result)
@@ -428,7 +428,7 @@ result = re.sub(pattern, r"Tom", line)print(result)
 
 The Output :
 
-```text
+```python
 Tom Lovelace
 ```
 
@@ -448,7 +448,7 @@ Example :
 
 1. search\(\)
 
-```text
+```python
 import repattern = r"(.*) (.*)"
 line = "Ada Lovelace"
 result = re.search(pattern, line)print(result)
@@ -460,7 +460,7 @@ print(result.group(2))
 
 The Output :
 
-```text
+```python
 <_sre.SRE_Match object; span=(0, 12), match='Ada Lovelace'>
 ('Ada', 'Lovelace')
 Ada Lovelace
@@ -470,7 +470,7 @@ Lovelace
 
 2. split\(\)
 
-```text
+```python
 import repattern = r"(cat)"
 line = "The big fat cat sat on a cat"
 result = re.split(pattern, line)print(result)
@@ -478,13 +478,13 @@ result = re.split(pattern, line)print(result)
 
 The Output :
 
-```text
+```python
 ['The big fat ', 'cat', ' sat on a ', 'cat', '']
 ```
 
 3. sub\(\)
 
-```text
+```python
 import repattern = r"(.*) (.*)"
 line = "Ada Lovelace"
 result1 = re.sub(pattern, r"\2 \1", line)
@@ -496,7 +496,7 @@ print(result2)
 
 The Output :
 
-```text
+```python
 Lovelace Ada
 Tom
 ```

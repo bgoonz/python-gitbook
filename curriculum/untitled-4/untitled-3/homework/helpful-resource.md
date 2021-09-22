@@ -124,13 +124,13 @@ Suppose we have the following two sorted linked lists:
 
 **list1:**
 
-```text
+```python
 10,45,65,
 ```
 
 **list2:**
 
-```text
+```python
 5,15,35,68
 ```
 

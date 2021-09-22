@@ -37,7 +37,7 @@ Python 3.x is the current version, but there are a number of packages and sites 
 
 On some systems, you might have to be explicit when you invoke Python about which version you want by running `python2` or `python3`. The `--version` command line switch will tell you which version is running. Example:
 
-```text
+```python
 $ python --version
 Python 2.7.10
 $ python2 --version
@@ -64,7 +64,7 @@ For managing project packages and Python versions, the classic tool is `virtuale
 
 Running from the command line with NodeJS:
 
-```text
+```python
 node program.js arg1 arg2 etc
 ```
 
@@ -78,7 +78,7 @@ In a web page, a script is referenced with a `<script>` HTML tag:
 
 Running from the command line:
 
-```text
+```python
 python program.py arg1 arg2 etc
 ```
 

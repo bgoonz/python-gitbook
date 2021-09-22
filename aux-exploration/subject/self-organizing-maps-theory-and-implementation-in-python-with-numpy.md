@@ -24,7 +24,7 @@ Next, the BMU's weights and weights of the cells neighboring the BMU, are adapte
 
 As we'll be using some Python routines to demonstrate the functions used to train an SOM, let's import a few of the libraries we'll be using:
 
-```text
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -96,7 +96,7 @@ Where λ&lt;0λ&lt;0 is the decay rate.
 
 To understand how the learning rate changes with the decay rate, let's plot the learning rate against various epochs when the initial learning rate is set to one:
 
-```text
+```python
 epochs = np.arange(0, 50)
 lr_decay = [0.001, 0.1, 0.5, 0.99]
 fig,ax = plt.subplots(nrows=1, ncols=4, figsize=(15,4))
@@ -136,7 +136,7 @@ Here β&lt;0β&lt;0 is the decay rate. The decay rate corresponding to radius ha
 
 We'll use this fact later to make training more efficient in the implementation part:
 
-```text
+```python
 distance = np.arange(0, 30)
 sigma_sq = [0.1, 1, 10, 100]
 fig,ax = plt.subplots(nrows=1, ncols=4, figsize=(15,4))
@@ -160,7 +160,7 @@ As there is no built-in routine for an SOM in the de-facto standard machine lear
 
 We'll implement the SOM as a 2D `mxn` grid, hence requiring a 3D `NumPy` array. The third dimension is required for storing the weights in each cell:
 
-```text
+```python
 # Return the (g,h) index of the BMU in the grid
 def find_BMU(SOM,x):
     distSq = (np.square(SOM - x)).sum(axis=2)
@@ -219,7 +219,7 @@ Let's run the `train_SOM()` function on a training data matrix filled with rando
 
 The code below initializes a training data matrix and an SOM grid with random RGB colors. It also displays the training data and the randomly initialized _SOM grid_. Note, the training matrix is a 3000x3 matrix, however, we have reshaped it to 50x60x3 matrix for visualization:
 
-```text
+```python
 # Dimensions of the SOM grid
 m = 10
 n = 10
@@ -244,7 +244,7 @@ ax[1].title.set_text('Randomly Initialized SOM Grid')
 
 Let's now train the SOM and check up on it every 5 epochs as a quick overview of its progress:
 
-```text
+```python
 fig, ax = plt.subplots(
     nrows=1, ncols=4, figsize=(15, 3.5), 
     subplot_kw=dict(xticks=[], yticks=[]))
@@ -266,7 +266,7 @@ To see how the learning rate varies for different learning rates and radii, we c
 
 The SOM is rendered after 5 epochs for each simulation:
 
-```text
+```python
 fig, ax = plt.subplots(
     nrows=3, ncols=3, figsize=(15, 15), 
     subplot_kw=dict(xticks=[], yticks=[]))
