@@ -9,7 +9,7 @@ const dot_object_1 = require('dot-object');
  * Version of 'object' from 'dot-object' that doesn't mutate the existing variable.
  * It converts eg.
  *
- * ```js
+ * ```javascript
  * { 'activityBar.background': '#ddd' }
  * to
  * { activityBar: {background: '#ddd' } }

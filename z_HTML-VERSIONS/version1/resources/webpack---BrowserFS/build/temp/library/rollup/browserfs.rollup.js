@@ -5047,7 +5047,7 @@ function syncNotAvailableError() {
  *
  * Listings objects look like the following:
  *
- * ```json
+ * ```javascripton
  * {
  *   "home": {
  *     "jvilk": {
@@ -6128,7 +6128,7 @@ function syncNotAvailableError$1() {
  *
  * Listings objects look like the following:
  *
- * ```json
+ * ```javascripton
  * {
  *   "home": {
  *     "jvilk": {
@@ -6623,7 +6623,7 @@ function syncNotAvailableError$2() {
  *
  * Listings objects look like the following:
  *
- * ```json
+ * ```javascripton
  * {
  *   "home": {
  *     "jvilk": {
@@ -10966,7 +10966,7 @@ function syncNotAvailableError$3() {
  *
  * Listings objects look like the following:
  *
- * ```json
+ * ```javascripton
  * {
  *   "home": {
  *     "jvilk": {
@@ -11373,7 +11373,7 @@ function syncNotAvailableError$4() {
  *
  * Listings objects look like the following:
  *
- * ```json
+ * ```javascripton
  * {
  *   "home": {
  *     "jvilk": {
@@ -13202,10 +13202,10 @@ CentralDirectory.prototype.produceFilename = function produceFilename() {
        * Filename doesn't begin with a slash.
        * No drive letters or any nonsense like that.
        * If filename is missing, the input came from standard input.
-    
+
        Unfortunately, this isn't true in practice. Some Windows zip utilities use
        a backslash here, but the correct Unix-style path in file headers.
-    
+
        To avoid seeking all over the file to recover the known-good filenames
        from file headers, we simply convert '/' to '\' here.
      */
