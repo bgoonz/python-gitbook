@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Basic Syntax</span>
-=================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Basic Syntax</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -175,11 +174,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="578d1ad054b14f5a941dac9a9e4513e0"><span data-offset-key="578d1ad054b14f5a941dac9a9e4513e0:0">By using indentation and whitespace to organize the code, Python code gains the following advantages:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4cd91a3521ae4b1480705e4c78fb73a7"><span data-offset-key="4cd91a3521ae4b1480705e4c78fb73a7:0">First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4cd91a3521ae4b1480705e4c78fb73a7"><span data-offset-key="4cd91a3521ae4b1480705e4c78fb73a7:0">First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6bc450ef93304072a19b24836f670e8b"><span data-offset-key="6bc450ef93304072a19b24836f670e8b:0">Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6bc450ef93304072a19b24836f670e8b"><span data-offset-key="6bc450ef93304072a19b24836f670e8b:0">Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e5b8416ef5946dea73611fdf4c86cd9"><span data-offset-key="0e5b8416ef5946dea73611fdf4c86cd9:0">Third, the code is more readable and clear in comparison with other programming languages.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e5b8416ef5946dea73611fdf4c86cd9"><span data-offset-key="0e5b8416ef5946dea73611fdf4c86cd9:0">Third, the code is more readable and clear in comparison with other programming languages.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="60fe13d6819c4afe9598b76c689e4e1e"><span data-offset-key="60fe13d6819c4afe9598b76c689e4e1e:0">Comments</span></span></span>
 
@@ -223,7 +222,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1a615a3033b4545bade5da28b0672f2"><span data-offset-key="e1a615a3033b4545bade5da28b0672f2:0">Python is a growing and evolving language. So its keywords will keep increasing and changing.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1683100d95f74c4f8d2253acd159b4c3"><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:0">Python provides a special module for listing its keywords called </span><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:1">`keyword`</span><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:2">*.* </span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1683100d95f74c4f8d2253acd159b4c3"><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:0">Python provides a special module for listing its keywords called </span><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:1">`keyword`</span><span data-offset-key="1683100d95f74c4f8d2253acd159b4c3:2">_._ </span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="492dbc24354b4c74910ac861249d6bd6"><span data-offset-key="492dbc24354b4c74910ac861249d6bd6:0">To find the current keyword list, you use the following code:</span></span></span>
 
@@ -241,15 +240,15 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="c42bb152bee849bb8af880c92c15f13c"><span data-offset-key="c42bb152bee849bb8af880c92c15f13c:0">Summary</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5832811c5a74471da40ab277eab1c1c9"><span data-offset-key="5832811c5a74471da40ab277eab1c1c9:0">A Python statement ends with a newline character.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5832811c5a74471da40ab277eab1c1c9"><span data-offset-key="5832811c5a74471da40ab277eab1c1c9:0">A Python statement ends with a newline character.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16f2e53575d14d64aca327d5279c78af"><span data-offset-key="16f2e53575d14d64aca327d5279c78af:0">Python uses spaces and identation to organize its code structure.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16f2e53575d14d64aca327d5279c78af"><span data-offset-key="16f2e53575d14d64aca327d5279c78af:0">Python uses spaces and identation to organize its code structure.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="84480b3e1db9430bb73669e65b50e7a5"><span data-offset-key="84480b3e1db9430bb73669e65b50e7a5:0">Identifiers are names that identify variables, functions, modules, classes, etc. in Python.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="84480b3e1db9430bb73669e65b50e7a5"><span data-offset-key="84480b3e1db9430bb73669e65b50e7a5:0">Identifiers are names that identify variables, functions, modules, classes, etc. in Python.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c101deabbcb74fc0ba6368c9f33d2cb1"><span data-offset-key="c101deabbcb74fc0ba6368c9f33d2cb1:0">Comments describe why the code works. They are ingored by the Python interpreter.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c101deabbcb74fc0ba6368c9f33d2cb1"><span data-offset-key="c101deabbcb74fc0ba6368c9f33d2cb1:0">Comments describe why the code works. They are ingored by the Python interpreter.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c13d293acb54d539accc5aca734b295"><span data-offset-key="4c13d293acb54d539accc5aca734b295:0">Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c13d293acb54d539accc5aca734b295"><span data-offset-key="4c13d293acb54d539accc5aca734b295:0">Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote</span></span></span>
 
 <a href="../quick-reference/bash-commands.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 

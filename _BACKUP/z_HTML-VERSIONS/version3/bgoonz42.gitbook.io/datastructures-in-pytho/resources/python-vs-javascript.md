@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python VS JavaScript</span>
-=========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python VS JavaScript</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -163,57 +162,57 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="96a9b02f0c44402b8ff2ff2f4c7ca19b"><span data-offset-key="96a9b02f0c44402b8ff2ff2f4c7ca19b:0">Contents</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e44f3bc05d23452d92fa83d55f1d41b8"><span data-offset-key="e44f3bc05d23452d92fa83d55f1d41b8:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="71ebc22fb94f4a249e5f1b9e904fe40f"><span data-offset-key="71ebc22fb94f4a249e5f1b9e904fe40f:0">Versions</span></span></a><span data-key="a5365b5ad42940b18ea8b5184711ded1"><span data-offset-key="a5365b5ad42940b18ea8b5184711ded1:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e44f3bc05d23452d92fa83d55f1d41b8"><span data-offset-key="e44f3bc05d23452d92fa83d55f1d41b8:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="71ebc22fb94f4a249e5f1b9e904fe40f"><span data-offset-key="71ebc22fb94f4a249e5f1b9e904fe40f:0">Versions</span></span></a><span data-key="a5365b5ad42940b18ea8b5184711ded1"><span data-offset-key="a5365b5ad42940b18ea8b5184711ded1:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="51184f5cd38149b4afc8d7a747ba10d7"><span data-offset-key="51184f5cd38149b4afc8d7a747ba10d7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e875a74ec2674f8c85e63eee28b9e87d"><span data-offset-key="e875a74ec2674f8c85e63eee28b9e87d:0">Development Environments</span></span></a><span data-key="416a950fdc54477b9ce9c330a9d10434"><span data-offset-key="416a950fdc54477b9ce9c330a9d10434:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="51184f5cd38149b4afc8d7a747ba10d7"><span data-offset-key="51184f5cd38149b4afc8d7a747ba10d7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e875a74ec2674f8c85e63eee28b9e87d"><span data-offset-key="e875a74ec2674f8c85e63eee28b9e87d:0">Development Environments</span></span></a><span data-key="416a950fdc54477b9ce9c330a9d10434"><span data-offset-key="416a950fdc54477b9ce9c330a9d10434:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19f1b2d2a40343e481a4d136904b1d6c"><span data-offset-key="19f1b2d2a40343e481a4d136904b1d6c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="708db3919b964bd593578004869a8c59"><span data-offset-key="708db3919b964bd593578004869a8c59:0">Running Programs</span></span></a><span data-key="7c64ff13fbe642aca986fcffacdbe5a8"><span data-offset-key="7c64ff13fbe642aca986fcffacdbe5a8:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19f1b2d2a40343e481a4d136904b1d6c"><span data-offset-key="19f1b2d2a40343e481a4d136904b1d6c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="708db3919b964bd593578004869a8c59"><span data-offset-key="708db3919b964bd593578004869a8c59:0">Running Programs</span></span></a><span data-key="7c64ff13fbe642aca986fcffacdbe5a8"><span data-offset-key="7c64ff13fbe642aca986fcffacdbe5a8:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a8cfea5f81140e0bfcd9c64e8cc974b"><span data-offset-key="7a8cfea5f81140e0bfcd9c64e8cc974b:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="eff68094b7bf452a9f982527861261cf"><span data-offset-key="eff68094b7bf452a9f982527861261cf:0">Comments</span></span></a><span data-key="c5e0234309a948b19ee3cd12159bd351"><span data-offset-key="c5e0234309a948b19ee3cd12159bd351:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a8cfea5f81140e0bfcd9c64e8cc974b"><span data-offset-key="7a8cfea5f81140e0bfcd9c64e8cc974b:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="eff68094b7bf452a9f982527861261cf"><span data-offset-key="eff68094b7bf452a9f982527861261cf:0">Comments</span></span></a><span data-key="c5e0234309a948b19ee3cd12159bd351"><span data-offset-key="c5e0234309a948b19ee3cd12159bd351:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfb9decb1a524390af7b389fb4ecd7db"><span data-offset-key="cfb9decb1a524390af7b389fb4ecd7db:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a89d1accaedb4e61bc64866e3e8b8dbc"><span data-offset-key="a89d1accaedb4e61bc64866e3e8b8dbc:0">Semicolons</span></span></a><span data-key="64069e8045d94293a06ad515671a0809"><span data-offset-key="64069e8045d94293a06ad515671a0809:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfb9decb1a524390af7b389fb4ecd7db"><span data-offset-key="cfb9decb1a524390af7b389fb4ecd7db:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a89d1accaedb4e61bc64866e3e8b8dbc"><span data-offset-key="a89d1accaedb4e61bc64866e3e8b8dbc:0">Semicolons</span></span></a><span data-key="64069e8045d94293a06ad515671a0809"><span data-offset-key="64069e8045d94293a06ad515671a0809:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ab0cd7f7730495eb259d9f70fee53b3"><span data-offset-key="8ab0cd7f7730495eb259d9f70fee53b3:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="799be65642f34c82872a4bf89fa4106d"><span data-offset-key="799be65642f34c82872a4bf89fa4106d:0">Whitespace, Blocks</span></span></a><span data-key="53f39d3ac9374d93bda432bb895a6242"><span data-offset-key="53f39d3ac9374d93bda432bb895a6242:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ab0cd7f7730495eb259d9f70fee53b3"><span data-offset-key="8ab0cd7f7730495eb259d9f70fee53b3:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="799be65642f34c82872a4bf89fa4106d"><span data-offset-key="799be65642f34c82872a4bf89fa4106d:0">Whitespace, Blocks</span></span></a><span data-key="53f39d3ac9374d93bda432bb895a6242"><span data-offset-key="53f39d3ac9374d93bda432bb895a6242:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3729ed0e3c314a9c9cc2409543d6b9d7"><span data-offset-key="3729ed0e3c314a9c9cc2409543d6b9d7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="172bdaa94b9e4b5391321a79cbe4f7eb"><span data-offset-key="172bdaa94b9e4b5391321a79cbe4f7eb:0">Functions</span></span></a><span data-key="9379fb34fd534ad8b1bc2ecd0609132e"><span data-offset-key="9379fb34fd534ad8b1bc2ecd0609132e:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3729ed0e3c314a9c9cc2409543d6b9d7"><span data-offset-key="3729ed0e3c314a9c9cc2409543d6b9d7:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="172bdaa94b9e4b5391321a79cbe4f7eb"><span data-offset-key="172bdaa94b9e4b5391321a79cbe4f7eb:0">Functions</span></span></a><span data-key="9379fb34fd534ad8b1bc2ecd0609132e"><span data-offset-key="9379fb34fd534ad8b1bc2ecd0609132e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dfda16f405df456398adeb6ee9fea7ad"><span data-offset-key="dfda16f405df456398adeb6ee9fea7ad:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="0c8959026e044b488ef63986e338a679"><span data-offset-key="0c8959026e044b488ef63986e338a679:0">Arithmetic Operators</span></span></a><span data-key="cf4c16940d8d4052bc94e77d6ef544f5"><span data-offset-key="cf4c16940d8d4052bc94e77d6ef544f5:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dfda16f405df456398adeb6ee9fea7ad"><span data-offset-key="dfda16f405df456398adeb6ee9fea7ad:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="0c8959026e044b488ef63986e338a679"><span data-offset-key="0c8959026e044b488ef63986e338a679:0">Arithmetic Operators</span></span></a><span data-key="cf4c16940d8d4052bc94e77d6ef544f5"><span data-offset-key="cf4c16940d8d4052bc94e77d6ef544f5:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86d9ee8b410a4ceca27afa0478fba813"><span data-offset-key="86d9ee8b410a4ceca27afa0478fba813:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="317d5b10e4414be6bc4906a70f466f22"><span data-offset-key="317d5b10e4414be6bc4906a70f466f22:0">Variables</span></span></a><span data-key="4fab4b7329264a04b55e6811e14a7a58"><span data-offset-key="4fab4b7329264a04b55e6811e14a7a58:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="86d9ee8b410a4ceca27afa0478fba813"><span data-offset-key="86d9ee8b410a4ceca27afa0478fba813:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="317d5b10e4414be6bc4906a70f466f22"><span data-offset-key="317d5b10e4414be6bc4906a70f466f22:0">Variables</span></span></a><span data-key="4fab4b7329264a04b55e6811e14a7a58"><span data-offset-key="4fab4b7329264a04b55e6811e14a7a58:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e7e2ba869a3949229457c33800e6eb41"><span data-offset-key="e7e2ba869a3949229457c33800e6eb41:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="20dfedea4b24488895f31172ddde71d2"><span data-offset-key="20dfedea4b24488895f31172ddde71d2:0">Data Types</span></span></a><span data-key="5a9ac470dfe94318a431a070156395c0"><span data-offset-key="5a9ac470dfe94318a431a070156395c0:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e7e2ba869a3949229457c33800e6eb41"><span data-offset-key="e7e2ba869a3949229457c33800e6eb41:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="20dfedea4b24488895f31172ddde71d2"><span data-offset-key="20dfedea4b24488895f31172ddde71d2:0">Data Types</span></span></a><span data-key="5a9ac470dfe94318a431a070156395c0"><span data-offset-key="5a9ac470dfe94318a431a070156395c0:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a180495739c84f6ba06d29fe42720833"><span data-offset-key="a180495739c84f6ba06d29fe42720833:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="80e7924e524c4b2ba686527fee8b8311"><span data-offset-key="80e7924e524c4b2ba686527fee8b8311:0">Arrays/Lists</span></span></a><span data-key="7d35dd5c613242c7a7d09913048ac462"><span data-offset-key="7d35dd5c613242c7a7d09913048ac462:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a180495739c84f6ba06d29fe42720833"><span data-offset-key="a180495739c84f6ba06d29fe42720833:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="80e7924e524c4b2ba686527fee8b8311"><span data-offset-key="80e7924e524c4b2ba686527fee8b8311:0">Arrays/Lists</span></span></a><span data-key="7d35dd5c613242c7a7d09913048ac462"><span data-offset-key="7d35dd5c613242c7a7d09913048ac462:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80c22b35f3294492bbc059bcc1643a84"><span data-offset-key="80c22b35f3294492bbc059bcc1643a84:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e14aa2d3a4d048778e016f5c51becac1"><span data-offset-key="e14aa2d3a4d048778e016f5c51becac1:0">Slices</span></span></a><span data-key="35b862226c1d40f09920f6231324930f"><span data-offset-key="35b862226c1d40f09920f6231324930f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80c22b35f3294492bbc059bcc1643a84"><span data-offset-key="80c22b35f3294492bbc059bcc1643a84:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e14aa2d3a4d048778e016f5c51becac1"><span data-offset-key="e14aa2d3a4d048778e016f5c51becac1:0">Slices</span></span></a><span data-key="35b862226c1d40f09920f6231324930f"><span data-offset-key="35b862226c1d40f09920f6231324930f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2a73fa205204d44afde901b8afb192d"><span data-offset-key="c2a73fa205204d44afde901b8afb192d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6746fda52abb4e4381ffe32287f24102"><span data-offset-key="6746fda52abb4e4381ffe32287f24102:0">Objects/Dicts</span></span></a><span data-key="a56a5d9c72774867b47e2a3503c77630"><span data-offset-key="a56a5d9c72774867b47e2a3503c77630:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2a73fa205204d44afde901b8afb192d"><span data-offset-key="c2a73fa205204d44afde901b8afb192d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6746fda52abb4e4381ffe32287f24102"><span data-offset-key="6746fda52abb4e4381ffe32287f24102:0">Objects/Dicts</span></span></a><span data-key="a56a5d9c72774867b47e2a3503c77630"><span data-offset-key="a56a5d9c72774867b47e2a3503c77630:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c6423d76dcf4254961da7673a32ae0d"><span data-offset-key="2c6423d76dcf4254961da7673a32ae0d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="73862f28eb694bab83147af80f0ff850"><span data-offset-key="73862f28eb694bab83147af80f0ff850:0">String Formatting</span></span></a><span data-key="e3972da0a8924814a499e1f6ab83e251"><span data-offset-key="e3972da0a8924814a499e1f6ab83e251:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c6423d76dcf4254961da7673a32ae0d"><span data-offset-key="2c6423d76dcf4254961da7673a32ae0d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="73862f28eb694bab83147af80f0ff850"><span data-offset-key="73862f28eb694bab83147af80f0ff850:0">String Formatting</span></span></a><span data-key="e3972da0a8924814a499e1f6ab83e251"><span data-offset-key="e3972da0a8924814a499e1f6ab83e251:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fee9c33ab26e47ac8e11175274ebe353"><span data-offset-key="fee9c33ab26e47ac8e11175274ebe353:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ec291bc5bc23478e8dfdfcfad468e2a1"><span data-offset-key="ec291bc5bc23478e8dfdfcfad468e2a1:0">Booleans and Conditionals</span></span></a><span data-key="0a818b536b17425698c371212ce341fb"><span data-offset-key="0a818b536b17425698c371212ce341fb:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fee9c33ab26e47ac8e11175274ebe353"><span data-offset-key="fee9c33ab26e47ac8e11175274ebe353:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ec291bc5bc23478e8dfdfcfad468e2a1"><span data-offset-key="ec291bc5bc23478e8dfdfcfad468e2a1:0">Booleans and Conditionals</span></span></a><span data-key="0a818b536b17425698c371212ce341fb"><span data-offset-key="0a818b536b17425698c371212ce341fb:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a3f059806cd4be6abf8c8bd45cc7642"><span data-offset-key="3a3f059806cd4be6abf8c8bd45cc7642:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ca3e4f1f5fe243b9acd56ea3e91eec01"><span data-offset-key="ca3e4f1f5fe243b9acd56ea3e91eec01:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">for</code></span><span data-offset-key="ca3e4f1f5fe243b9acd56ea3e91eec01:1"> Loops</span></span></a><span data-key="18bf7a88bbac484c96af917b0255b160"><span data-offset-key="18bf7a88bbac484c96af917b0255b160:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a3f059806cd4be6abf8c8bd45cc7642"><span data-offset-key="3a3f059806cd4be6abf8c8bd45cc7642:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="ca3e4f1f5fe243b9acd56ea3e91eec01"><span data-offset-key="ca3e4f1f5fe243b9acd56ea3e91eec01:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">for</code></span><span data-offset-key="ca3e4f1f5fe243b9acd56ea3e91eec01:1"> Loops</span></span></a><span data-key="18bf7a88bbac484c96af917b0255b160"><span data-offset-key="18bf7a88bbac484c96af917b0255b160:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1bc9479c2514793a319ba7ad9df0a87"><span data-offset-key="e1bc9479c2514793a319ba7ad9df0a87:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3ebd4d8f5b5d4447b188a8befc26404d"><span data-offset-key="3ebd4d8f5b5d4447b188a8befc26404d:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">while</code></span><span data-offset-key="3ebd4d8f5b5d4447b188a8befc26404d:1"> Loops</span></span></a><span data-key="46a855f8f57e422e98b91c564af70521"><span data-offset-key="46a855f8f57e422e98b91c564af70521:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e1bc9479c2514793a319ba7ad9df0a87"><span data-offset-key="e1bc9479c2514793a319ba7ad9df0a87:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="3ebd4d8f5b5d4447b188a8befc26404d"><span data-offset-key="3ebd4d8f5b5d4447b188a8befc26404d:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">while</code></span><span data-offset-key="3ebd4d8f5b5d4447b188a8befc26404d:1"> Loops</span></span></a><span data-key="46a855f8f57e422e98b91c564af70521"><span data-offset-key="46a855f8f57e422e98b91c564af70521:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35ce5ea2167c406aa28ba47bcd5e2b0c"><span data-offset-key="35ce5ea2167c406aa28ba47bcd5e2b0c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="876674fa85a14f88b8a5b887e91c22b7"><span data-offset-key="876674fa85a14f88b8a5b887e91c22b7:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">switch</code></span><span data-offset-key="876674fa85a14f88b8a5b887e91c22b7:1"> Statement</span></span></a><span data-key="a54dd3d120d5428881f67db76bcfc060"><span data-offset-key="a54dd3d120d5428881f67db76bcfc060:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35ce5ea2167c406aa28ba47bcd5e2b0c"><span data-offset-key="35ce5ea2167c406aa28ba47bcd5e2b0c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="876674fa85a14f88b8a5b887e91c22b7"><span data-offset-key="876674fa85a14f88b8a5b887e91c22b7:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">switch</code></span><span data-offset-key="876674fa85a14f88b8a5b887e91c22b7:1"> Statement</span></span></a><span data-key="a54dd3d120d5428881f67db76bcfc060"><span data-offset-key="a54dd3d120d5428881f67db76bcfc060:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c3a011237e4fb8914b73fc81b62e83"><span data-offset-key="64c3a011237e4fb8914b73fc81b62e83:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9e02fdcf1fe94d23b6a542b0a39fbda7"><span data-offset-key="9e02fdcf1fe94d23b6a542b0a39fbda7:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">if</code></span><span data-offset-key="9e02fdcf1fe94d23b6a542b0a39fbda7:1"> Conditionals</span></span></a><span data-key="4287f87343764a59a6a793bc71518b77"><span data-offset-key="4287f87343764a59a6a793bc71518b77:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c3a011237e4fb8914b73fc81b62e83"><span data-offset-key="64c3a011237e4fb8914b73fc81b62e83:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9e02fdcf1fe94d23b6a542b0a39fbda7"><span data-offset-key="9e02fdcf1fe94d23b6a542b0a39fbda7:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">if</code></span><span data-offset-key="9e02fdcf1fe94d23b6a542b0a39fbda7:1"> Conditionals</span></span></a><span data-key="4287f87343764a59a6a793bc71518b77"><span data-offset-key="4287f87343764a59a6a793bc71518b77:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="873e93f39f5b4b94a0f2d456175a7b8c"><span data-offset-key="873e93f39f5b4b94a0f2d456175a7b8c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="05c7d64d964e4fb39f769d3f0a6680b6"><span data-offset-key="05c7d64d964e4fb39f769d3f0a6680b6:0">Classes</span></span></a><span data-key="ad4c23e2f5ac44a0a292d0b2e7393eb9"><span data-offset-key="ad4c23e2f5ac44a0a292d0b2e7393eb9:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="873e93f39f5b4b94a0f2d456175a7b8c"><span data-offset-key="873e93f39f5b4b94a0f2d456175a7b8c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="05c7d64d964e4fb39f769d3f0a6680b6"><span data-offset-key="05c7d64d964e4fb39f769d3f0a6680b6:0">Classes</span></span></a><span data-key="ad4c23e2f5ac44a0a292d0b2e7393eb9"><span data-offset-key="ad4c23e2f5ac44a0a292d0b2e7393eb9:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="892b7d6a75e54e9aa8d737ad8e531d36"><span data-offset-key="892b7d6a75e54e9aa8d737ad8e531d36:0">Versions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="af32123fc65143fca5f14a00908248c0"><span data-offset-key="af32123fc65143fca5f14a00908248c0:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a4f657da11545ea902a57a87a7f2961"><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:0">The standard defining JavaScript (JS) is </span><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:1">*ECMAScript*</span><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:2"> (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a4f657da11545ea902a57a87a7f2961"><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:0">The standard defining JavaScript (JS) is </span><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:1">_ECMAScript_</span><span data-offset-key="4a4f657da11545ea902a57a87a7f2961:2"> (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a55bd8e68e1418ba6d30f92f6c23d33"><span data-offset-key="0a55bd8e68e1418ba6d30f92f6c23d33:0">The website </span></span><a href="https://caniuse.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="724450a096584cb8a942cb2ac394bfda"><span data-offset-key="724450a096584cb8a942cb2ac394bfda:0">caniuse.com</span></span></a><span data-key="56c66642df0a4be7a749dbe11335fb36"><span data-offset-key="56c66642df0a4be7a749dbe11335fb36:0"> will show which browsers support specific JS features.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2891f926c71e4753843b67db691f7c83"><span data-offset-key="2891f926c71e4753843b67db691f7c83:0">Python</span></span></span>
 
@@ -227,13 +226,13 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="dcb1f5541f9744cf8020af28faa45676"><span data-offset-key="dcb1f5541f9744cf8020af28faa45676:0">Development Environments</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="30a0d9503351467eabff9c2c3c344c5f"><span data-offset-key="30a0d9503351467eabff9c2c3c344c5f:0">JavaScript</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7501a564621d44aeb462a54c61e6ffea"><span data-offset-key="7501a564621d44aeb462a54c61e6ffea:0">For managing project packages, the classic tool is </span><span data-offset-key="7501a564621d44aeb462a54c61e6ffea:1">`npm`</span><span data-offset-key="7501a564621d44aeb462a54c61e6ffea:2">. This is slowly being superseded by the newer </span><span data-offset-key="7501a564621d44aeb462a54c61e6ffea:3">`yarn`</span><span data-offset-key="7501a564621d44aeb462a54c61e6ffea:4"> tool. Choose one for a project, and don't mix and match.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="38928288d6f141c1b7c883218f397ad5"><span data-offset-key="38928288d6f141c1b7c883218f397ad5:0">Python</span></span></span>
 
@@ -241,7 +240,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="9a7706bbf02e44eb979c3340d129483a"><span data-offset-key="9a7706bbf02e44eb979c3340d129483a:0">Running Programs</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="02e3d5a784584212bc144e851e3dfb62"><span data-offset-key="02e3d5a784584212bc144e851e3dfb62:0">JavaScript</span></span></span>
 
@@ -253,7 +252,7 @@
 
     <script src="program.js"></script>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="114f3418e4f54c9bb26d30d584279697"><span data-offset-key="114f3418e4f54c9bb26d30d584279697:0">Python</span></span></span>
 
@@ -263,7 +262,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="10649021407845e99f160a8813e4ba0d"><span data-offset-key="10649021407845e99f160a8813e4ba0d:0">Comments</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="01711d5b7e444d338d563c1454253f91"><span data-offset-key="01711d5b7e444d338d563c1454253f91:0">JavaScript</span></span></span>
 
@@ -277,7 +276,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3302605acb2343eaa45a6ebbfd125961"><span data-offset-key="3302605acb2343eaa45a6ebbfd125961:0">You may not nest multi-line comments.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="10dadaa6f198497a950c73bfd2087fa4"><span data-offset-key="10dadaa6f198497a950c73bfd2087fa4:0">Python</span></span></span>
 
@@ -291,7 +290,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="269222aa89d24b69bd51203b7211d712"><span data-offset-key="269222aa89d24b69bd51203b7211d712:0">Semicolons</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1951f34b3cca48f8b9c87838277c82cc"><span data-offset-key="1951f34b3cca48f8b9c87838277c82cc:0">JavaScript</span></span></span>
 
@@ -301,7 +300,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90e7375003c54d9b90e666ba82577d7e"><span data-offset-key="90e7375003c54d9b90e666ba82577d7e:0">Javascript interpreters will let you get away without using semicolons at ends of lines, but you should use them.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="565fb5e4080f48968c6600ce4e6c5bf0"><span data-offset-key="565fb5e4080f48968c6600ce4e6c5bf0:0">Python</span></span></span>
 
@@ -311,7 +310,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="fc18ed1ca37b46c7abd653d6e2ac7982"><span data-offset-key="fc18ed1ca37b46c7abd653d6e2ac7982:0">Whitespace, blocks</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aad8966dc55040f185d9a83afd5a37b5"><span data-offset-key="aad8966dc55040f185d9a83afd5a37b5:0">JavaScript</span></span></span>
 
@@ -319,7 +318,7 @@
 
     if (x == 2) {  console.log("x must be 2")} else {  if (x == 3) {    console.log("x must be 3")  } else {    console.log("x must be something else")  }}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c06be29553c149b8b7e430cfebcf162d"><span data-offset-key="c06be29553c149b8b7e430cfebcf162d:0">Python</span></span></span>
 
@@ -329,7 +328,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="4107efc7524e4873ae8c438508f155dd"><span data-offset-key="4107efc7524e4873ae8c438508f155dd:0">Functions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="09e3d38cb92d478693c7110d5d43b43f"><span data-offset-key="09e3d38cb92d478693c7110d5d43b43f:0">JavaScript</span></span></span>
 
@@ -337,11 +336,11 @@
 
     function foobar(x, y, z) {  console.log(x, y, z);  return 12;}
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="636bee263edd421a828af9cac16cfe38"><span data-offset-key="636bee263edd421a828af9cac16cfe38:0">An alternate syntax for functions is growing increasingly common, called </span><span data-offset-key="636bee263edd421a828af9cac16cfe38:1">*arrow functions*</span><span data-offset-key="636bee263edd421a828af9cac16cfe38:2">:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="636bee263edd421a828af9cac16cfe38"><span data-offset-key="636bee263edd421a828af9cac16cfe38:0">An alternate syntax for functions is growing increasingly common, called </span><span data-offset-key="636bee263edd421a828af9cac16cfe38:1">_arrow functions_</span><span data-offset-key="636bee263edd421a828af9cac16cfe38:2">:</span></span></span>
 
     let hello = () => {  console.log("hello");  console.log("world");}​hello(); // prints hello, then world​// Arrow functions with single parameters don't// need parens around the parameter:let printNum = x => {  console.log(x);}​// If you don't explicitly return a value, the value// of the last expression in the function is used.// Also, single-expression functions don't need// braces around them.let add = (x, y) => x + y;​console.log(add(4, 5)); // prints 9
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b5dba14373e847acaaec3117bd1c47e6"><span data-offset-key="b5dba14373e847acaaec3117bd1c47e6:0">Python</span></span></span>
 
@@ -349,19 +348,19 @@
 
     def foobar(x, y, z):  print(x, y, z)  return 12
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef14af7c17fd4a24aeb3fde3aa76240c"><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:0">Python also supports the concept of </span><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:1">*lambda functions*</span><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:2">, which are simple functions that can do basic operations.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef14af7c17fd4a24aeb3fde3aa76240c"><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:0">Python also supports the concept of </span><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:1">_lambda functions_</span><span data-offset-key="ef14af7c17fd4a24aeb3fde3aa76240c:2">, which are simple functions that can do basic operations.</span></span></span>
 
     add = lambda x, y: x + y​print(add(4, 5)) # prints 9
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b4159320d16b4837b6f323780c886856"><span data-offset-key="b4159320d16b4837b6f323780c886856:0">Arithmetic Operators</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="478995187e754693a5b958efbc9b2dd5"><span data-offset-key="478995187e754693a5b958efbc9b2dd5:0">JavaScript</span></span></span>
 
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="0b41eb40f50142f590370627f415866b"><span data-offset-key="0b41eb40f50142f590370627f415866b:0">Operator</span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--UIH400-4e41e82a--textContentFamily-49a318e1"><span data-key="5ecabc8af7fa40feb3ea7c820c39bf0a"><span data-offset-key="5ecabc8af7fa40feb3ea7c820c39bf0a:0">Description</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74d59b84559945fabd3416dc301de347"><span data-offset-key="74d59b84559945fabd3416dc301de347:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">+</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2cf7ef256c344f449c6348297c0ca19c"><span data-offset-key="2cf7ef256c344f449c6348297c0ca19c:0">Addition</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f3f631f67e0f411196b23ef9d3ef2ddf"><span data-offset-key="f3f631f67e0f411196b23ef9d3ef2ddf:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">-</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="29907d4b691d40ddb6c8e28d36a002be"><span data-offset-key="29907d4b691d40ddb6c8e28d36a002be:0">Subtraction</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4b9b4337ff24af9a28a9d58524728dd"><span data-offset-key="c4b9b4337ff24af9a28a9d58524728dd:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">*</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4443504d44340be9d767d7105cea728"><span data-offset-key="e4443504d44340be9d767d7105cea728:0">Multiplication</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45fdc81da0ee4c7484ead6a6a21ec0d8"><span data-offset-key="45fdc81da0ee4c7484ead6a6a21ec0d8:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">/</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d88638bfefb44449394d4da131d2607"><span data-offset-key="1d88638bfefb44449394d4da131d2607:0">Division</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b9dce367262480ca00bd8ed45d60ddf"><span data-offset-key="5b9dce367262480ca00bd8ed45d60ddf:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">%</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="69bc0da58f9c4076bda89107ee0f1ff1"><span data-offset-key="69bc0da58f9c4076bda89107ee0f1ff1:0">Modulo (remainder)</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef527e99afa44468b9a0f8c2f9893dc8"><span data-offset-key="ef527e99afa44468b9a0f8c2f9893dc8:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">--</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb4b76939d6243b69c4f6e948464ec40"><span data-offset-key="bb4b76939d6243b69c4f6e948464ec40:0">Pre-decrement, post-decrement</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ee0a11d2f1d44bd3bcd89aaf8c1e57e0"><span data-offset-key="ee0a11d2f1d44bd3bcd89aaf8c1e57e0:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">++</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e54baf10b3e422da9bdc58d1feef0a8"><span data-offset-key="0e54baf10b3e422da9bdc58d1feef0a8:0">Pre-increment, post-increment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f0494ea8bc9b4623bba961309a02d3d2"><span data-offset-key="f0494ea8bc9b4623bba961309a02d3d2:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">**</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1baf18d4e5d94c3fb34712afdbcf9d37"><span data-offset-key="1baf18d4e5d94c3fb34712afdbcf9d37:0">Exponentiation (power)</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8eec61d4dbc14e309a72a3efbba94ee7"><span data-offset-key="8eec61d4dbc14e309a72a3efbba94ee7:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b8edebb23d4f4bc2a09a56281655e985"><span data-offset-key="b8edebb23d4f4bc2a09a56281655e985:0">Assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="33dd413aab6c41de850512772e0aa151"><span data-offset-key="33dd413aab6c41de850512772e0aa151:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">+=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6363ca5e37644f20b3da6261f99522c1"><span data-offset-key="6363ca5e37644f20b3da6261f99522c1:0">Addition assignment</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2713a00d4e5d481cbf0d5b2e4616ba94"><span data-offset-key="2713a00d4e5d481cbf0d5b2e4616ba94:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">-=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c0bb940e40f44399f76f1ac5537c9a5"><span data-offset-key="0c0bb940e40f44399f76f1ac5537c9a5:0">Subtraction assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1a0c67e4fe7243aaa7b71cd2cadc5837"><span data-offset-key="1a0c67e4fe7243aaa7b71cd2cadc5837:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">*=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ffdb2a2e1264e90afeed6709db26466"><span data-offset-key="2ffdb2a2e1264e90afeed6709db26466:0">Multiplication assignment</span></span></span></p></td></tr><tr class="even"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="087c8ae0896b41c49451059fec39ad01"><span data-offset-key="087c8ae0896b41c49451059fec39ad01:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">/=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc3d760ec15e4cb2b0bcc60b3ac8ccd7"><span data-offset-key="dc3d760ec15e4cb2b0bcc60b3ac8ccd7:0">Division assignment</span></span></span></p></td></tr><tr class="odd"><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5cd7df5e45a341fab4ee3b1290d6c8e6"><span data-offset-key="5cd7df5e45a341fab4ee3b1290d6c8e6:0"><code class="code-0458e21e" spellcheck="false" data-slate-leaf="true">%=</code></span></span></span></p></td><td style="text-align: left;"><p><span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6c1fd57f9724488b4b974976c8ea04d"><span data-offset-key="f6c1fd57f9724488b4b974976c8ea04d:0">Modulo assignment</span></span></span></p></td></tr></tbody></table>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ffb072667b9f40e99a0276120d4d7f01"><span data-offset-key="ffb072667b9f40e99a0276120d4d7f01:0">Python</span></span></span>
 
@@ -371,7 +370,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="ff62fb0934a84f1a9a10c4bc289c65b5"><span data-offset-key="ff62fb0934a84f1a9a10c4bc289c65b5:0">Variables</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1ea026b06e0a4c2eba5f788c0b9857e3"><span data-offset-key="1ea026b06e0a4c2eba5f788c0b9857e3:0">Javascript</span></span></span>
 
@@ -381,7 +380,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32084e007dd4487e867d207231d614a9"><span data-offset-key="32084e007dd4487e867d207231d614a9:0">`var`</span><span data-offset-key="32084e007dd4487e867d207231d614a9:1"> is an outdated way of declaring variables in Javascript.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="301e675ccf8540b48085f57335dc8ba7"><span data-offset-key="301e675ccf8540b48085f57335dc8ba7:0">Python</span></span></span>
 
@@ -391,7 +390,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b5e15c56afd84a08a85017e89f68ddc5"><span data-offset-key="b5e15c56afd84a08a85017e89f68ddc5:0">Data Types</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d89721aa05a344a4874f742b1fcb6252"><span data-offset-key="d89721aa05a344a4874f742b1fcb6252:0">JavaScript</span></span></span>
 
@@ -405,11 +404,11 @@
 
     let x = 12;console.log(`x is ${x}`); // prints "x is 12"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6736de58fb0643abb66d26572793ec1e"><span data-offset-key="6736de58fb0643abb66d26572793ec1e:0">JS is </span><span data-offset-key="6736de58fb0643abb66d26572793ec1e:1">*weakly typed*</span><span data-offset-key="6736de58fb0643abb66d26572793ec1e:2"> so it supports operations on multiple types of data at once.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6736de58fb0643abb66d26572793ec1e"><span data-offset-key="6736de58fb0643abb66d26572793ec1e:0">JS is </span><span data-offset-key="6736de58fb0643abb66d26572793ec1e:1">_weakly typed_</span><span data-offset-key="6736de58fb0643abb66d26572793ec1e:2"> so it supports operations on multiple types of data at once.</span></span></span>
 
     "2" + 4;           // string "24"parseInt("2") + 4; // number 6Number("2") + 4;   // number 6
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="500c84e417084b7aafae1606cef1edea"><span data-offset-key="500c84e417084b7aafae1606cef1edea:0">Python</span></span></span>
 
@@ -423,17 +422,17 @@
 
     x = 12print(f'x is {x}')   # prints "x is 12"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f3209958f114c22a472da27dd4cd3fb"><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:0">Python is generally </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:1">*strongly typed*</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:2"> so it it will often complain if you try to mix and match types. You can coerce a type with the </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:3">`int()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:4">, </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:5">`float()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:6">, </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:7">`str()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:8">, and </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:9">`bool()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:10"> functions.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f3209958f114c22a472da27dd4cd3fb"><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:0">Python is generally </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:1">_strongly typed_</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:2"> so it it will often complain if you try to mix and match types. You can coerce a type with the </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:3">`int()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:4">, </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:5">`float()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:6">, </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:7">`str()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:8">, and </span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:9">`bool()`</span><span data-offset-key="3f3209958f114c22a472da27dd4cd3fb:10"> functions.</span></span></span>
 
     "2" + 4        # ERROR: can't mix typesint("2") + 4   # integer 6"2" + str(4)   # string 24
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1f492233f78440c98204954c2350e5ca"><span data-offset-key="1f492233f78440c98204954c2350e5ca:0">Arrays/Lists</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ad3a8626637643ea91e10f15897c867c"><span data-offset-key="ad3a8626637643ea91e10f15897c867c:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed166d73dad94bd6b535f8b87ecc5319"><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:0">In JS, lists are called </span><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:1">*arrays*</span><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed166d73dad94bd6b535f8b87ecc5319"><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:0">In JS, lists are called </span><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:1">_arrays_</span><span data-offset-key="ed166d73dad94bd6b535f8b87ecc5319:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef3c2a5ffa844c3fb3539ad1ac690996"><span data-offset-key="ef3c2a5ffa844c3fb3539ad1ac690996:0">Arrays are zero-based.</span></span></span>
 
@@ -449,11 +448,11 @@
 
     a4.length; // 3
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="be5193f9db1547909c198373a977e16a"><span data-offset-key="be5193f9db1547909c198373a977e16a:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c0a72d601e814fb8afe365e3ce4f36b5"><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:0">In Python, arrays are called </span><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:1">*lists*</span><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c0a72d601e814fb8afe365e3ce4f36b5"><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:0">In Python, arrays are called </span><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:1">_lists_</span><span data-offset-key="c0a72d601e814fb8afe365e3ce4f36b5:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9fe8765cf9d40ed9702c58b3cea86c7"><span data-offset-key="d9fe8765cf9d40ed9702c58b3cea86c7:0">Lists are zero-based.</span></span></span>
 
@@ -483,23 +482,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="952b3a8fa95b4c3d8d5f4d9bcade2f2a"><span data-offset-key="952b3a8fa95b4c3d8d5f4d9bcade2f2a:0">**Tuples**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="347daace652342328f203406e575b9e9"><span data-offset-key="347daace652342328f203406e575b9e9:0">Python supports a read-only type of list called a </span><span data-offset-key="347daace652342328f203406e575b9e9:1">*tuple*</span><span data-offset-key="347daace652342328f203406e575b9e9:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="347daace652342328f203406e575b9e9"><span data-offset-key="347daace652342328f203406e575b9e9:0">Python supports a read-only type of list called a </span><span data-offset-key="347daace652342328f203406e575b9e9:1">_tuple_</span><span data-offset-key="347daace652342328f203406e575b9e9:2">.</span></span></span>
 
     x = (1, 2, 3)print(x[1])  # prints 2​y = (10,)    # A tuple of one element, comma required
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb794ef5e46c402480d0ce5e36f19660"><span data-offset-key="cb794ef5e46c402480d0ce5e36f19660:0">**List Comprehensions**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81752fd4cc1f42788046b2f9c4ef3313"><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:0">Python supports building lists with </span><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:1">*list comprehensions*</span><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:2">. This is often useful for filtering lists.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="81752fd4cc1f42788046b2f9c4ef3313"><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:0">Python supports building lists with </span><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:1">_list comprehensions_</span><span data-offset-key="81752fd4cc1f42788046b2f9c4ef3313:2">. This is often useful for filtering lists.</span></span></span>
 
     a = [1, 2, 3, 4, 5]​# Make a list b that is the same as list a:b = [i for i in a]  # Pretty boring​# Make a list c that contains only the# even elements of a:c = [i for i in a if i % 2 == 0]
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="496ff4adb1684ae7b1fd91d3eac9af39"><span data-offset-key="496ff4adb1684ae7b1fd91d3eac9af39:0">Objects/Dicts</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="07209e481f5c40559e82b984c0915925"><span data-offset-key="07209e481f5c40559e82b984c0915925:0">JavaScript</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="82fbf4552784405f8a3a673822878afc"><span data-offset-key="82fbf4552784405f8a3a673822878afc:0">*Objects*</span><span data-offset-key="82fbf4552784405f8a3a673822878afc:1"> hold data which can be found by a specific key called a </span><span data-offset-key="82fbf4552784405f8a3a673822878afc:2">*property*</span><span data-offset-key="82fbf4552784405f8a3a673822878afc:3">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="82fbf4552784405f8a3a673822878afc"><span data-offset-key="82fbf4552784405f8a3a673822878afc:0">_Objects_</span><span data-offset-key="82fbf4552784405f8a3a673822878afc:1"> hold data which can be found by a specific key called a </span><span data-offset-key="82fbf4552784405f8a3a673822878afc:2">_property_</span><span data-offset-key="82fbf4552784405f8a3a673822878afc:3">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24bf6c6918424bf7aa83c7a040a620e5"><span data-offset-key="24bf6c6918424bf7aa83c7a040a620e5:0">Creation:</span></span></span>
 
@@ -509,11 +508,11 @@
 
     console.log(o2.x);      // prints 12console.log(o4["foo"]); // prints hello
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c45f32d13497475d87f6b5005cc9a44a"><span data-offset-key="c45f32d13497475d87f6b5005cc9a44a:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a3b19e7adb443499dcd6d9a9a0588af"><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:0">*Dicts*</span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:1"> hold information that can be accessed by a </span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:2">*key*</span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:3">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a3b19e7adb443499dcd6d9a9a0588af"><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:0">_Dicts_</span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:1"> hold information that can be accessed by a </span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:2">_key_</span><span data-offset-key="6a3b19e7adb443499dcd6d9a9a0588af:3">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed5d61b3da354bc3bd5ae528b47c2b9d"><span data-offset-key="ed5d61b3da354bc3bd5ae528b47c2b9d:0">Unlike objects in JS, a </span><span data-offset-key="ed5d61b3da354bc3bd5ae528b47c2b9d:1">`dict`</span><span data-offset-key="ed5d61b3da354bc3bd5ae528b47c2b9d:2"> is its own beast, and is not the same as an object obtained by instantiating a Python class.</span></span></span>
 
@@ -529,7 +528,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5646ab3a581041cda60133cdb3923e19"><span data-offset-key="5646ab3a581041cda60133cdb3923e19:0">String Formatting</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="08c1e3f59a734ab7884da074d782a3b1"><span data-offset-key="08c1e3f59a734ab7884da074d782a3b1:0">JavaScript</span></span></span>
 
@@ -549,7 +548,7 @@
 
     let x = 3.1415926;let y = "Hello";let z = 67;​// 'x is 3.14, y is "Hello", z is 01000011'let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z.toString(2).padStart(8, '0')}`
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="df1680e483d24d2981968220204a22de"><span data-offset-key="df1680e483d24d2981968220204a22de:0">Python</span></span></span>
 
@@ -563,7 +562,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a19a3cdc517b4a348e1841b6d5aea1aa"><span data-offset-key="a19a3cdc517b4a348e1841b6d5aea1aa:0">Booleans and Conditionals</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="22cb4f0c7a694f5eabc6ab11a052b564"><span data-offset-key="22cb4f0c7a694f5eabc6ab11a052b564:0">JavaScript</span></span></span>
 
@@ -591,7 +590,7 @@
 
     if (a == 2 && b !== "") {  // Something complicated}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e91ab1c45a874e5982658103e3ceb1e4"><span data-offset-key="e91ab1c45a874e5982658103e3ceb1e4:0">Python</span></span></span>
 
@@ -617,7 +616,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="8b525e0d629d4c02bdea873d24d7f5de"><span data-offset-key="8b525e0d629d4c02bdea873d24d7f5de:0">`for`</span><span data-offset-key="8b525e0d629d4c02bdea873d24d7f5de:1"> Loops</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4408e5520869448289257a3258862796"><span data-offset-key="4408e5520869448289257a3258862796:0">JavaScript</span></span></span>
 
@@ -633,11 +632,11 @@
 
     a = [10, 20, 30];​for (let i of a) {  console.log(i);  # 10 20 30}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2c66c38c882443ceb487aaf35145f370"><span data-offset-key="2c66c38c882443ceb487aaf35145f370:0">Python</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46e6a59fdef241198e6bea92b515889b"><span data-offset-key="46e6a59fdef241198e6bea92b515889b:0">`for`</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:1">-</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:2">`in`</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:3"> loops over an </span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:4">*iteratable*</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:5">. This can be a list, object, or other type of iterable item.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46e6a59fdef241198e6bea92b515889b"><span data-offset-key="46e6a59fdef241198e6bea92b515889b:0">`for`</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:1">-</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:2">`in`</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:3"> loops over an </span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:4">_iteratable_</span><span data-offset-key="46e6a59fdef241198e6bea92b515889b:5">. This can be a list, object, or other type of iterable item.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f16eb3e654d4f3c94e7fd91aaf8796e"><span data-offset-key="0f16eb3e654d4f3c94e7fd91aaf8796e:0">Counting loops:</span></span></span>
 
@@ -649,7 +648,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="5dc8cdce8b99453092c9a548c64bf0b4"><span data-offset-key="5dc8cdce8b99453092c9a548c64bf0b4:0">`while`</span><span data-offset-key="5dc8cdce8b99453092c9a548c64bf0b4:1"> Loops</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b689e9908ab447878b393128548a93d4"><span data-offset-key="b689e9908ab447878b393128548a93d4:0">JavaScript</span></span></span>
 
@@ -657,7 +656,7 @@
 
     // Print 10 down to 0:​let x = 10;while (x >= 0) {  console.log(x);  x--;}​// Print 0 up to 9:let x = 0;do {  console.log(x);  x++;while (x < 10);
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="40b0cb9115dd4981bcab3499bf5eb351"><span data-offset-key="40b0cb9115dd4981bcab3499bf5eb351:0">Python</span></span></span>
 
@@ -667,7 +666,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="62b69f2c09004010b502180f5b9937af"><span data-offset-key="62b69f2c09004010b502180f5b9937af:0">`switch`</span><span data-offset-key="62b69f2c09004010b502180f5b9937af:1"> Statement</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6013900990aa4c6b8e3008556b3d8a7e"><span data-offset-key="6013900990aa4c6b8e3008556b3d8a7e:0">JavaScript</span></span></span>
 
@@ -675,7 +674,7 @@
 
     switch(x) {  case "foo":    console.log("x is foo, all right");    break;  case 23:    console.log("but here x is 23");    break;  default:    console.log("x is something else entirely");}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c094ebc4ad9e47ab9eec1f164d42a9dd"><span data-offset-key="c094ebc4ad9e47ab9eec1f164d42a9dd:0">Python</span></span></span>
 
@@ -687,7 +686,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="eba68945ce9e4c86b2a07c5004d11918"><span data-offset-key="eba68945ce9e4c86b2a07c5004d11918:0">`if`</span><span data-offset-key="eba68945ce9e4c86b2a07c5004d11918:1"> Conditionals</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b2da5e72749c42aea51d4bd977ae3b38"><span data-offset-key="b2da5e72749c42aea51d4bd977ae3b38:0">JavaScript</span></span></span>
 
@@ -695,7 +694,7 @@
 
     if (x == 10) {  console.log("x is 10");} else if (x == 20) {  console.log("x is 20");} else {  console.log("x is something else");}
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c032f48927f24fc4ab478086565656fc"><span data-offset-key="c032f48927f24fc4ab478086565656fc:0">Python</span></span></span>
 
@@ -705,7 +704,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="d14251503743437b83b6c9ef62859f20"><span data-offset-key="d14251503743437b83b6c9ef62859f20:0">Classes</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b196c8b44cc441f5b6de571e80da2325"><span data-offset-key="b196c8b44cc441f5b6de571e80da2325:0">JavaScript</span></span></span>
 
@@ -723,9 +722,9 @@
 
     class Creature {  constructor(type) {    this.type = type;  }}​class Goat extends Creature {  constructor(color) {    super("mammal");    this.legs = 4;    this.color = color;  }​  jump() {    console.log("I'm jumping! Yay!");  }}​g = new Goat("orange");g.type;   // "mammal"g.jump(); // "I'm jumping! Yay!"
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc5ef57292b247c5998eebc9862e31a1"><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:0">JS does not support multiple inheritance since each object can only have one prototype object. You have to use a </span><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:1">*mix-in*</span><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:2"> if you want to achieve similar functionality.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dc5ef57292b247c5998eebc9862e31a1"><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:0">JS does not support multiple inheritance since each object can only have one prototype object. You have to use a </span><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:1">_mix-in_</span><span data-offset-key="dc5ef57292b247c5998eebc9862e31a1:2"> if you want to achieve similar functionality.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dcb0f429d531437ca8429a2065a9f473"><span data-offset-key="dcb0f429d531437ca8429a2065a9f473:0">Python</span></span></span>
 

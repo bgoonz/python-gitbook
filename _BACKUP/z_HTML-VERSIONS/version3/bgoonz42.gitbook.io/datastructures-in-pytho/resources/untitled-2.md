@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Inheritance</span>
-================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Inheritance</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -297,7 +296,7 @@
 
     class Deck:    ...    def pop(self):        return self.cards.pop()
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="23e22c3ba393404485f6e9e2cecfd86f"><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:0">Actually, </span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:1">`pop`</span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:2"> removes the </span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:3">*last*</span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:4"> card in the list, so we are in effect dealing from the bottom of the deck.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="23e22c3ba393404485f6e9e2cecfd86f"><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:0">Actually, </span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:1">`pop`</span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:2"> removes the </span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:3">_last_</span><span data-offset-key="23e22c3ba393404485f6e9e2cecfd86f:4"> card in the list, so we are in effect dealing from the bottom of the deck.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="695a9982ed9741508ecc9a494830af3d"><span data-offset-key="695a9982ed9741508ecc9a494830af3d:0">One more operation that we are likely to want is the boolean function </span><span data-offset-key="695a9982ed9741508ecc9a494830af3d:1">`is_empty`</span><span data-offset-key="695a9982ed9741508ecc9a494830af3d:2">, which returns true if the deck contains no cards:</span></span></span>
 

@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python3 Regex</span>
-==================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python3 Regex</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -159,7 +158,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ce68976d9254469962ff8579c46dd34"><span data-offset-key="8ce68976d9254469962ff8579c46dd34:0">Regex or Regular Expressions are an important part of Python Programming or any other Programming Language. It is used for searching and even replacing the specified text pattern. In the regular expression, a set of characters together form the search pattern. It is also known as reg-ex pattern. Tough thing about Regex is not learning or understanding it but remembering syntax and how to form pattern according to our requirements. So here we have provided a regex cheat sheet containing all the different character classes, special characters, modifiers, sets etc. which are used in regular expression.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="cf3a3bceddf84a7a8b07cbd34865531e"><span data-offset-key="cf3a3bceddf84a7a8b07cbd34865531e:0">Basic Characters:</span></span></span>
 
@@ -181,7 +180,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1081ae0bd3d34af58a9cdea77c7849e5"><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:0">Similarly, in the second example </span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:1">**s$**</span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:2"> will search for the character </span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:3">**s**</span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:4"> at the end of the string, now since geeks end with </span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:5">**s**</span><span data-offset-key="1081ae0bd3d34af58a9cdea77c7849e5:6">, so it will find the match and will return the match('s') and its position(4,5).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1249871aefef4a93a7f7cbea2f26654f"><span data-offset-key="1249871aefef4a93a7f7cbea2f26654f:0">Quantifiers:</span></span></span>
 
@@ -203,7 +202,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd6bca12fa964eefba0e3fbb7f9a18af"><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:0">In the second example, </span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:1">**\\d{3}**</span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:2"> will search for digits exactly 3 times. Since </span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:3">**hello1234**</span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:4"> have digits, it will match exactly 3 digits which will be encountered first that are 123 and not 4, because </span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:5">**{3}**</span><span data-offset-key="cd6bca12fa964eefba0e3fbb7f9a18af:6"> will match for exactly 3 digits. So it will print the match('123') and its position(5,8)</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="cefb48a8b8b24aa49b9289c130e0c5ad"><span data-offset-key="cefb48a8b8b24aa49b9289c130e0c5ad:0">Character Classes:</span></span></span>
 
@@ -223,7 +222,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fba56fd1a2e840688f4829749aa7ef99"><span data-offset-key="fba56fd1a2e840688f4829749aa7ef99:0">In the second example, </span><span data-offset-key="fba56fd1a2e840688f4829749aa7ef99:1">**\\D+\\d\***</span><span data-offset-key="fba56fd1a2e840688f4829749aa7ef99:2"> will search for one or more non-digits characters followed by 0 or more digits. In our case, </span><span data-offset-key="fba56fd1a2e840688f4829749aa7ef99:3">**geeks123**</span><span data-offset-key="fba56fd1a2e840688f4829749aa7ef99:4"> best fits the description as it contains 1 or more non-digits characters(geeks) followed by 0 or more digit characters(123). So it will print the match('geeks123') and its position(3,11).</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="af9f8b07820d47f0bcc502c743eb9f5c"><span data-offset-key="af9f8b07820d47f0bcc502c743eb9f5c:0">Sets:</span></span></span>
 
@@ -243,7 +242,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="498705086d4147ce9c55f121c1d3628e"><span data-offset-key="498705086d4147ce9c55f121c1d3628e:0">In the second example, </span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:1">**\[a-p\]**</span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:2"> will search for the character between a to p. In </span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:3">**xenon**</span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:4"> the first word between a-p is </span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:5">**e**</span><span data-offset-key="498705086d4147ce9c55f121c1d3628e:6"> it will print out that search. So match would be ('e') and its position would be (1,2)</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6160b4bb5ec741888ec23d58f1bbcc9e"><span data-offset-key="6160b4bb5ec741888ec23d58f1bbcc9e:0">Groups:</span></span></span>
 
@@ -263,7 +262,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c8c0248af56944bd9a707ab5715cbf14"><span data-offset-key="c8c0248af56944bd9a707ab5715cbf14:0">In the second example, we have captured two groups, one group which has 0 or more alphanumeric characters followed by comma and space and then followed by another group which has again 0 or more alphanumeric characters. In </span><span data-offset-key="c8c0248af56944bd9a707ab5715cbf14:1">**geeks, best geeks**</span><span data-offset-key="c8c0248af56944bd9a707ab5715cbf14:2"> and </span><span data-offset-key="c8c0248af56944bd9a707ab5715cbf14:3">**best**</span><span data-offset-key="c8c0248af56944bd9a707ab5715cbf14:4"> are captured as the first and second groups. So, when we print out these groups we will have ('geeks', 'best) as the groups captured. </span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="be35100e4a7e419c9b3d08b8df28c93d"><span data-offset-key="be35100e4a7e419c9b3d08b8df28c93d:0">Assertions:</span></span></span>
 
@@ -283,7 +282,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b98bf87b7e40497eb9621ffcf66e5302"><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:0">In the second example, </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:1">**z(?!a)**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:2"> will search for the character </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:3">**z**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:4"> which is </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:5">**not**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:6"> followed by the character </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:7">**a.**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:8"> Since in </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:9">**pizza,**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:10"> we have a character </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:11">**z**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:12"> which is not followed by </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:13">**a**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:14"> but followed by </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:15">**z**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:16"> (pi</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:17">**zz**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:18">a), so there will be a match. Regex will print the match('z') not followed by </span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:19">**a**</span><span data-offset-key="b98bf87b7e40497eb9621ffcf66e5302:20"> with its position (2,3)</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e985006bbb364d4a93cf3cce5b5041b8"><span data-offset-key="e985006bbb364d4a93cf3cce5b5041b8:0">Flags:</span></span></span>
 
@@ -329,7 +328,7 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="373ac16d07da4a55b402e8b15bea0e59"><span data-offset-key="373ac16d07da4a55b402e8b15bea0e59:0">import re — Importing the Regular Expressions library in Python.</span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4ad6cb8238e48648bf7183e74351d66"><span data-offset-key="a4ad6cb8238e48648bf7183e74351d66:0">phone\_numbers = \[\] — Preparing a list to store the phone numbers.</span></span></span>
+2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4ad6cb8238e48648bf7183e74351d66"><span data-offset-key="a4ad6cb8238e48648bf7183e74351d66:0">phone_numbers = \[\] — Preparing a list to store the phone numbers.</span></span></span>
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8452070b5f02423a8b16c820707da0bc"><span data-offset-key="8452070b5f02423a8b16c820707da0bc:0">pattern = r”\\((\[\\d\\-+\]+)\\)” — The pattern that we use to locate the phone number, we will go through what each symbols do later in this article!</span></span></span>
 
@@ -339,9 +338,9 @@
 
 6.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2bf2e2c51dac4eebb159592847b46a33"><span data-offset-key="2bf2e2c51dac4eebb159592847b46a33:0">result = re.search(pattern, line) — Searching for the phone number in the line</span></span></span>
 
-7.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c743a2070ac54be38cb6bf35f5e77317"><span data-offset-key="c743a2070ac54be38cb6bf35f5e77317:0">phone\_numbers.append(result.group(1)) — Adding the customer’s phone number into the phone numbers list</span></span></span>
+7.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c743a2070ac54be38cb6bf35f5e77317"><span data-offset-key="c743a2070ac54be38cb6bf35f5e77317:0">phone_numbers.append(result.group(1)) — Adding the customer’s phone number into the phone numbers list</span></span></span>
 
-8.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd8910fd78ec45f39346412972fccf3b"><span data-offset-key="dd8910fd78ec45f39346412972fccf3b:0">print(phone\_numbers) — Printing the list of phone numbers.</span></span></span>
+8.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd8910fd78ec45f39346412972fccf3b"><span data-offset-key="dd8910fd78ec45f39346412972fccf3b:0">print(phone_numbers) — Printing the list of phone numbers.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e1b88c835934733bec6fe60a30f4298"><span data-offset-key="7e1b88c835934733bec6fe60a30f4298:0">There are many useful functions and characters in the re library, yet learning everything might be overwhelming. Therefore, I have selected the most useful functions and characters that will help you to start implementing RegEx in your Python script.</span></span></span>
 
@@ -397,7 +396,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e426313a4d8e48e4b975bf6c52683173"><span data-offset-key="e426313a4d8e48e4b975bf6c52683173:0">Lastly, we’ll go through the things that we can do with RegEx by using the functions available!</span></span></span>
 
-    findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string            
+    findall()        Returns a list that contains all matches       search()         Returns a 'match object' if there is a match in          the stringsplit()          Returns a list of string that has been split at each matchsub()            Replaces the matches with a string
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6803b9a043374c69a0ee5d739ee27fee"><span data-offset-key="6803b9a043374c69a0ee5d739ee27fee:0">In all these functions, the arguments are all the same, which are &lt;pattern&gt; and &lt;string&gt;.</span></span></span>
 
@@ -451,7 +450,7 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="372ddbd413834cc0b5b04b95ceee7560"><span data-offset-key="372ddbd413834cc0b5b04b95ceee7560:0">search()</span></span></span>
 
-    import repattern = r"(.*) (.*)"line = "Ada Lovelace"result = re.search(pattern, line)print(result)print(result.groups())print(result.group(0))print(result.group(1))print(result.group(2))
+    import repattern = r"(._) (._)"line = "Ada Lovelace"result = re.search(pattern, line)print(result)print(result.groups())print(result.group(0))print(result.group(1))print(result.group(2))
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="03941eb096434ffc9464308f1e3de33a"><span data-offset-key="03941eb096434ffc9464308f1e3de33a:0">The Output :</span></span></span>
 

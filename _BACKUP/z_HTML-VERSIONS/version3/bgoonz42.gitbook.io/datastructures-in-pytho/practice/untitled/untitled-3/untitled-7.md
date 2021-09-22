@@ -194,8 +194,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Quick Sort</span>
-===============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Quick Sort</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -211,7 +210,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="06953fb51bea4e3da4cea3013b17e2c7"><span data-offset-key="06953fb51bea4e3da4cea3013b17e2c7:0">The splitting continues until the array can no longer be broken into pieces. That’s it. Quicksort is done.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="132615bf5b6341a786eb61cced027414"><span data-offset-key="132615bf5b6341a786eb61cced027414:0">Advantages of Quick Sort in Python</span></span></span>
 
@@ -223,7 +222,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5b0a14fd1204fd897efe8feec4a23ea"><span data-offset-key="f5b0a14fd1204fd897efe8feec4a23ea:0">4. No extra memory.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4ea527e3aaea4b39ae77f07386108d59"><span data-offset-key="4ea527e3aaea4b39ae77f07386108d59:0">Define Quick Sorting Function</span></span></span>
 

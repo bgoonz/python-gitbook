@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">README</span>
-===========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">README</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -161,9 +160,9 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="29322a5bead0464096227fdd968eca36"><span data-offset-key="29322a5bead0464096227fdd968eca36:0">Python syntax was made for readability, and easy editing. For example, the python language uses a </span><span data-offset-key="29322a5bead0464096227fdd968eca36:1">`:`</span><span data-offset-key="29322a5bead0464096227fdd968eca36:2"> and indented code, while javascript and others generally use </span><span data-offset-key="29322a5bead0464096227fdd968eca36:3">`{}`</span><span data-offset-key="29322a5bead0464096227fdd968eca36:4"> and indented code.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abf9c23d6fe34217adf722be2fcddc36"><span data-offset-key="abf9c23d6fe34217adf722be2fcddc36:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="db6a78eaa7624bf3bbdb502bd85e173e"><span data-offset-key="db6a78eaa7624bf3bbdb502bd85e173e:0">python 3</span></span></a><span data-key="bb31f7d001304046b9c3cfe63713a316"><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:0"> repl, and call it </span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:1">*Hello World*</span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:2">. Now you have a blank file called </span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:3">*main.py*</span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:4">. Now let us write our first line of code:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abf9c23d6fe34217adf722be2fcddc36"><span data-offset-key="abf9c23d6fe34217adf722be2fcddc36:0">Lets create a </span></span><a href="https://repl.it/languages/python3" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="db6a78eaa7624bf3bbdb502bd85e173e"><span data-offset-key="db6a78eaa7624bf3bbdb502bd85e173e:0">python 3</span></span></a><span data-key="bb31f7d001304046b9c3cfe63713a316"><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:0"> repl, and call it </span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:1">_Hello World_</span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:2">. Now you have a blank file called </span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:3">_main.py_</span><span data-offset-key="bb31f7d001304046b9c3cfe63713a316:4">. Now let us write our first line of code:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddf5dc56e8474811bf7050e562fe53ce"><span data-offset-key="ddf5dc56e8474811bf7050e562fe53ce:0">*helloworld.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddf5dc56e8474811bf7050e562fe53ce"><span data-offset-key="ddf5dc56e8474811bf7050e562fe53ce:0">_helloworld.py_</span></span></span>
 
     print('Hello world!')
 
@@ -179,25 +178,25 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d20ab03741644e4ab9cf3a7c0907a181"><span data-offset-key="d20ab03741644e4ab9cf3a7c0907a181:0">Another cool thing that you can generally do with all languages, are comments. In python, a comment starts with a </span><span data-offset-key="d20ab03741644e4ab9cf3a7c0907a181:1">`#`</span><span data-offset-key="d20ab03741644e4ab9cf3a7c0907a181:2">. The computer ignores all text starting after the </span><span data-offset-key="d20ab03741644e4ab9cf3a7c0907a181:3">`#`</span><span data-offset-key="d20ab03741644e4ab9cf3a7c0907a181:4">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1c6bad4b9134ccdb3547cd92a038197"><span data-offset-key="b1c6bad4b9134ccdb3547cd92a038197:0">*shortcom.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1c6bad4b9134ccdb3547cd92a038197"><span data-offset-key="b1c6bad4b9134ccdb3547cd92a038197:0">_shortcom.py_</span></span></span>
 
     # Write some comments!
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af497e656f43496581e8f317dcd0fdea"><span data-offset-key="af497e656f43496581e8f317dcd0fdea:0">If you have a huge comment, do </span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:1">**not**</span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:2"> comment all the 350 lines, just put </span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:3">`'''`</span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:4"> before it, and </span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:5">`'''`</span><span data-offset-key="af497e656f43496581e8f317dcd0fdea:6"> at the end. Technically, this is not a comment but a string, but the computer still ignores it, so we will use it.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="44915029cbf14c9b89089e43dd081eb8"><span data-offset-key="44915029cbf14c9b89089e43dd081eb8:0">*longcom.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="44915029cbf14c9b89089e43dd081eb8"><span data-offset-key="44915029cbf14c9b89089e43dd081eb8:0">_longcom.py_</span></span></span>
 
     '''Dear PYer,I am confused about how you said you could use triple quotes to makeSUPERLONGCOMMENTS!​I am wondering if this is true,and if so,I am wondering if this is correct.​Could you help me with this?​Thanks,Random guy who used your tutorial.'''print('Testing')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddee4eb18fa14553b64954b14cbf9f88"><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:0">Unlike many other languages, there is no </span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:1">`var`</span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:2">, </span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:3">`let`</span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:4">, or </span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:5">`const`</span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:6"> to declare a variable in python. You simply go </span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:7">`name = 'value'`</span><span data-offset-key="ddee4eb18fa14553b64954b14cbf9f88:8">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ca51407a5444cb58ddc34b892430c9c"><span data-offset-key="8ca51407a5444cb58ddc34b892430c9c:0">*vars1.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ca51407a5444cb58ddc34b892430c9c"><span data-offset-key="8ca51407a5444cb58ddc34b892430c9c:0">_vars1.py_</span></span></span>
 
     x = 5y = 7z = x*y # 35print(z) # => 35
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f331ae5ab4494d4d812cb48160f1892f"><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:0">Remember, there is a difference between integers and strings. </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:1">*Remember: String =* </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:2">*`""`*</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:3">*.*</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:4"> To convert between these two, you can put an int in a </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:5">`str()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:6"> function, and a string in a </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:7">`int()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:8"> function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:9">`float()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:10"> command.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f331ae5ab4494d4d812cb48160f1892f"><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:0">Remember, there is a difference between integers and strings. </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:1">_Remember: String =_ </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:2">_`""`_</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:3">_._</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:4"> To convert between these two, you can put an int in a </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:5">`str()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:6"> function, and a string in a </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:7">`int()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:8"> function. There is also a less used one, called a float. Mainly, these are integers with decimals. Change them using the </span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:9">`float()`</span><span data-offset-key="f331ae5ab4494d4d812cb48160f1892f:10"> command.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbde45028d0f451f827649f3589fcbeb"><span data-offset-key="dbde45028d0f451f827649f3589fcbeb:0">*vars2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbde45028d0f451f827649f3589fcbeb"><span data-offset-key="dbde45028d0f451f827649f3589fcbeb:0">_vars2.py_</span></span></span>
 
     x = 5x = str(x)b = '5'b = int(b)print('x = ', x, '; b = ', str(b), ';') # => x = 5; b = 5;
 
@@ -205,35 +204,35 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="84f4f941786442a099dafe1d2fc38c05"><span data-offset-key="84f4f941786442a099dafe1d2fc38c05:0">There are many operators in python:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e890088a33f745f6a6296361dd6ab948"><span data-offset-key="e890088a33f745f6a6296361dd6ab948:0">`+`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e890088a33f745f6a6296361dd6ab948"><span data-offset-key="e890088a33f745f6a6296361dd6ab948:0">`+`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d38744108234aa4aff9b38b532abbe5"><span data-offset-key="4d38744108234aa4aff9b38b532abbe5:0">`-`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d38744108234aa4aff9b38b532abbe5"><span data-offset-key="4d38744108234aa4aff9b38b532abbe5:0">`-`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07482237dfc0416a97118d1411d75101"><span data-offset-key="07482237dfc0416a97118d1411d75101:0">`/`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07482237dfc0416a97118d1411d75101"><span data-offset-key="07482237dfc0416a97118d1411d75101:0">`/`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4a18f4678dd4873b6f49918272acc3b"><span data-offset-key="e4a18f4678dd4873b6f49918272acc3b:0">`*`</span><span data-offset-key="e4a18f4678dd4873b6f49918272acc3b:1"> These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e4a18f4678dd4873b6f49918272acc3b"><span data-offset-key="e4a18f4678dd4873b6f49918272acc3b:0">`*`</span><span data-offset-key="e4a18f4678dd4873b6f49918272acc3b:1"> These operators are the same in most languages, and allow for addition, subtraction, division, and multiplicaiton. Now, we can look at a few more complicated ones:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efdb537b03ee48cab983f643473f5cc7"><span data-offset-key="efdb537b03ee48cab983f643473f5cc7:0">`%`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efdb537b03ee48cab983f643473f5cc7"><span data-offset-key="efdb537b03ee48cab983f643473f5cc7:0">`%`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d57f3ee8b1ee4be095d9dfdbeb0317fe"><span data-offset-key="d57f3ee8b1ee4be095d9dfdbeb0317fe:0">`//`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d57f3ee8b1ee4be095d9dfdbeb0317fe"><span data-offset-key="d57f3ee8b1ee4be095d9dfdbeb0317fe:0">`//`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9078dc372f6c473c811330a269380829"><span data-offset-key="9078dc372f6c473c811330a269380829:0">`**`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9078dc372f6c473c811330a269380829"><span data-offset-key="9078dc372f6c473c811330a269380829:0">`**`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e3c982f97d2143aa9e33436cb1989155"><span data-offset-key="e3c982f97d2143aa9e33436cb1989155:0">`+=`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e3c982f97d2143aa9e33436cb1989155"><span data-offset-key="e3c982f97d2143aa9e33436cb1989155:0">`+=`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba53c05db52545798cf5bec344a32e14"><span data-offset-key="ba53c05db52545798cf5bec344a32e14:0">`-=`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba53c05db52545798cf5bec344a32e14"><span data-offset-key="ba53c05db52545798cf5bec344a32e14:0">`-=`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4adf9ce9b26b4def9f87666c44ace725"><span data-offset-key="4adf9ce9b26b4def9f87666c44ace725:0">`/=`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4adf9ce9b26b4def9f87666c44ace725"><span data-offset-key="4adf9ce9b26b4def9f87666c44ace725:0">`/=`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="894792afef4949bc881c790a5d83ce3d"><span data-offset-key="894792afef4949bc881c790a5d83ce3d:0">`*=`</span><span data-offset-key="894792afef4949bc881c790a5d83ce3d:1"> Research these if you want to find out more…</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="894792afef4949bc881c790a5d83ce3d"><span data-offset-key="894792afef4949bc881c790a5d83ce3d:0">`*=`</span><span data-offset-key="894792afef4949bc881c790a5d83ce3d:1"> Research these if you want to find out more…</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a34fb45bfbb54972b76a38e1ea2a686d"><span data-offset-key="a34fb45bfbb54972b76a38e1ea2a686d:0">*simpleops.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a34fb45bfbb54972b76a38e1ea2a686d"><span data-offset-key="a34fb45bfbb54972b76a38e1ea2a686d:0">_simpleops.py_</span></span></span>
 
     x = 4a = x + 1a = x - 1a = x * 2a = x / 2
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="694305c6dde14303ad59209892e68679"><span data-offset-key="694305c6dde14303ad59209892e68679:0">You should already know everything shown above, as it is similar to other languages. If you continue down, you will see more complicated ones.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35c303e7c3e14721a38e4675ab4fd091"><span data-offset-key="35c303e7c3e14721a38e4675ab4fd091:0">*complexop.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35c303e7c3e14721a38e4675ab4fd091"><span data-offset-key="35c303e7c3e14721a38e4675ab4fd091:0">_complexop.py_</span></span></span>
 
     a += 1a -= 1a *= 2a /= 2
 
@@ -245,13 +244,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b753da70b8f84fd797fbfa0cc205457c"><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:0">Like the title? Anyways, a </span><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:1">`'`</span><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:2"> and a </span><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:3">`"`</span><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:4"> both indicate a string, but </span><span data-offset-key="b753da70b8f84fd797fbfa0cc205457c:5">**do not combine them!**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b45f50566c984d64b621e57e88810550"><span data-offset-key="b45f50566c984d64b621e57e88810550:0">*quotes.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b45f50566c984d64b621e57e88810550"><span data-offset-key="b45f50566c984d64b621e57e88810550:0">_quotes.py_</span></span></span>
 
     x = 'hello' # Goodx = "hello" # Goodx = "hello' # ERRORRR!!!
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c562f194e704c4aa423aeb508e35041"><span data-offset-key="1c562f194e704c4aa423aeb508e35041:0">*slicing.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c562f194e704c4aa423aeb508e35041"><span data-offset-key="1c562f194e704c4aa423aeb508e35041:0">_slicing.py_</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d9841fd7eca4477c955be24c05191746"><span data-offset-key="d9841fd7eca4477c955be24c05191746:0">String Slicing</span></span></span>
 
@@ -259,27 +258,27 @@
 
     x = 'Hello everybody!'x[1] # 'e'x[-1] # '!'x[5] # ' 'x[1:] # 'ello everybody!'x[:-1] # 'Hello everybod'x[2:-3] # 'llo everyb'
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8df81d8cb55f4ca7b1bfd41652d4f72e"><span data-offset-key="8df81d8cb55f4ca7b1bfd41652d4f72e:0">Methods and Functions</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f8cee693447444239cc74f8d0eec35b1"><span data-offset-key="f8cee693447444239cc74f8d0eec35b1:0">Here is a list of functions/methods we will go over:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d05960a102e4c338ff1d513ca1133c2"><span data-offset-key="3d05960a102e4c338ff1d513ca1133c2:0">`.strip()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d05960a102e4c338ff1d513ca1133c2"><span data-offset-key="3d05960a102e4c338ff1d513ca1133c2:0">`.strip()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="852293010fbf40989e0ad21cf138735e"><span data-offset-key="852293010fbf40989e0ad21cf138735e:0">`len()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="852293010fbf40989e0ad21cf138735e"><span data-offset-key="852293010fbf40989e0ad21cf138735e:0">`len()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98f2944bf4a5404285ece88bd3a7ec93"><span data-offset-key="98f2944bf4a5404285ece88bd3a7ec93:0">`.lower()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98f2944bf4a5404285ece88bd3a7ec93"><span data-offset-key="98f2944bf4a5404285ece88bd3a7ec93:0">`.lower()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac2abc2b5075451fa3f96feebddb6271"><span data-offset-key="ac2abc2b5075451fa3f96feebddb6271:0">`.upper()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac2abc2b5075451fa3f96feebddb6271"><span data-offset-key="ac2abc2b5075451fa3f96feebddb6271:0">`.upper()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dde62872371443ab92408bf38c629903"><span data-offset-key="dde62872371443ab92408bf38c629903:0">`.replace()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dde62872371443ab92408bf38c629903"><span data-offset-key="dde62872371443ab92408bf38c629903:0">`.replace()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b92397b2462a40e18ba586a9e8fa8c6f"><span data-offset-key="b92397b2462a40e18ba586a9e8fa8c6f:0">`.split()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b92397b2462a40e18ba586a9e8fa8c6f"><span data-offset-key="b92397b2462a40e18ba586a9e8fa8c6f:0">`.split()`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c90eedfec4c4fe7a7c29b05a954174f"><span data-offset-key="8c90eedfec4c4fe7a7c29b05a954174f:0">I will make you try these out yourself. See if you can figure out how they work.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6252a0de6121475596ee471a2e22d706"><span data-offset-key="6252a0de6121475596ee471a2e22d706:0">*strings.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6252a0de6121475596ee471a2e22d706"><span data-offset-key="6252a0de6121475596ee471a2e22d706:0">_strings.py_</span></span></span>
 
     x = " Testing, testing, testing, testing       "print(x.strip())print(len(x))print(x.lower())print(x.upper())print(x.replace('test', 'runn'))print(x.split(','))
 
@@ -287,33 +286,33 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60a2022d3ec445e09f1512ec6d749b06"><span data-offset-key="60a2022d3ec445e09f1512ec6d749b06:0">Input is a function that gathers input entered from the user in the command line. It takes one optional parameter, which is the users prompt.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="663f316d837e46a98d41fed31cfbbde3"><span data-offset-key="663f316d837e46a98d41fed31cfbbde3:0">*inp.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="663f316d837e46a98d41fed31cfbbde3"><span data-offset-key="663f316d837e46a98d41fed31cfbbde3:0">_inp.py_</span></span></span>
 
     print('Type something: ')x = input()print('Here is what you said: ', x)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5cabf695c1b4d1da92f11d6f81705e9"><span data-offset-key="f5cabf695c1b4d1da92f11d6f81705e9:0">If you wanted to make it smaller, and look neater to the user, you could do…</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="724d1d1a49924782a32b94b826238eda"><span data-offset-key="724d1d1a49924782a32b94b826238eda:0">*inp2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="724d1d1a49924782a32b94b826238eda"><span data-offset-key="724d1d1a49924782a32b94b826238eda:0">_inp2.py_</span></span></span>
 
     print('Here is what you said: ', input('Type something: '))
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a982ef2314f74e8fb6566870fa73e82e"><span data-offset-key="a982ef2314f74e8fb6566870fa73e82e:0">Running: </span><span data-offset-key="a982ef2314f74e8fb6566870fa73e82e:1">*inp.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a982ef2314f74e8fb6566870fa73e82e"><span data-offset-key="a982ef2314f74e8fb6566870fa73e82e:0">Running: </span><span data-offset-key="a982ef2314f74e8fb6566870fa73e82e:1">_inp.py_</span></span></span>
 
     Type something:Hello WorldHere is what you said: Hello World
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="05cf61a91c1541599b3bbd6ebd651564"><span data-offset-key="05cf61a91c1541599b3bbd6ebd651564:0">*inp2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="05cf61a91c1541599b3bbd6ebd651564"><span data-offset-key="05cf61a91c1541599b3bbd6ebd651564:0">_inp2.py_</span></span></span>
 
     Type something: Hello WorldHere is what you said: Hello World
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bad1ec1dd6854fcf9ed2425d1298ede4"><span data-offset-key="bad1ec1dd6854fcf9ed2425d1298ede4:0">Python has created a lot of functions that are located in other .py files. You need to import these </span><span data-offset-key="bad1ec1dd6854fcf9ed2425d1298ede4:1">**modules**</span><span data-offset-key="bad1ec1dd6854fcf9ed2425d1298ede4:2"> to gain access to the,, You may wonder why python did this. The purpose of separate modules is to make python faster. Instead of storing millions and millions of functions, , it only needs a few basic ones. To import a module, you must write </span><span data-offset-key="bad1ec1dd6854fcf9ed2425d1298ede4:3">`input <modulename>`</span><span data-offset-key="bad1ec1dd6854fcf9ed2425d1298ede4:4">. Do not add the .py extension to the file name. In this example , we will be using a python created module named random.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eadb25757e26455c908d660250fed344"><span data-offset-key="eadb25757e26455c908d660250fed344:0">*module.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eadb25757e26455c908d660250fed344"><span data-offset-key="eadb25757e26455c908d660250fed344:0">_module.py_</span></span></span>
 
     import random
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9af231cac7ed49938f8d17bdc3193d6f"><span data-offset-key="9af231cac7ed49938f8d17bdc3193d6f:0">Now, I have access to all functions in the random.py file. To access a specific function in the module, you would do </span><span data-offset-key="9af231cac7ed49938f8d17bdc3193d6f:1">`<module>.<function>`</span><span data-offset-key="9af231cac7ed49938f8d17bdc3193d6f:2">. For example:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e350af2d078a4a9e864b504fc84591cd"><span data-offset-key="e350af2d078a4a9e864b504fc84591cd:0">*module2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e350af2d078a4a9e864b504fc84591cd"><span data-offset-key="e350af2d078a4a9e864b504fc84591cd:0">_module2.py_</span></span></span>
 
     import randomprint(random.randint(3,5)) # Prints a random number between 3 and 5
 
@@ -325,13 +324,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="151a7848b9694518b0ef50e18d9bec45"><span data-offset-key="151a7848b9694518b0ef50e18d9bec45:0">The for loop goes through a list of variables, making a seperate variable equal one of the list every time. Let’s say we wanted to create the example above.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4342207f8b0f4f5b8176fbe9fca51d38"><span data-offset-key="4342207f8b0f4f5b8176fbe9fca51d38:0">*loop.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4342207f8b0f4f5b8176fbe9fca51d38"><span data-offset-key="4342207f8b0f4f5b8176fbe9fca51d38:0">_loop.py_</span></span></span>
 
     from time import sleepfor i in range(100):     print('Hello')     sleep(.3)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31bb9ed7ae094b3b8effb064b40d036a"><span data-offset-key="31bb9ed7ae094b3b8effb064b40d036a:0">This will print Hello with a .3 second delay 100 times. This is just one way to use it, but it is usually used like this:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="001f74e58a9e4b3f8e9ea38bd7421453"><span data-offset-key="001f74e58a9e4b3f8e9ea38bd7421453:0">*loop2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="001f74e58a9e4b3f8e9ea38bd7421453"><span data-offset-key="001f74e58a9e4b3f8e9ea38bd7421453:0">_loop2.py_</span></span></span>
 
     import timefor number in range(100):     print(number)     time.sleep(.1)
 
@@ -339,31 +338,31 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ab081a5ad3a48aeb3db025bbbf124fa"><span data-offset-key="4ab081a5ad3a48aeb3db025bbbf124fa:0">The while loop runs the code while something stays true. You would put </span><span data-offset-key="4ab081a5ad3a48aeb3db025bbbf124fa:1">`while <expression>`</span><span data-offset-key="4ab081a5ad3a48aeb3db025bbbf124fa:2">. Every time the loop runs, it evaluates if the expression is True. It it is, it runs the code, if not it continues outside of the loop. For example:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af5491a9c0e14f0592cca3c908c016c2"><span data-offset-key="af5491a9c0e14f0592cca3c908c016c2:0">*while.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af5491a9c0e14f0592cca3c908c016c2"><span data-offset-key="af5491a9c0e14f0592cca3c908c016c2:0">_while.py_</span></span></span>
 
     while True: # Runs forever     print('Hello World!')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1eb48c47369d4682b3cf1b93577beb3c"><span data-offset-key="1eb48c47369d4682b3cf1b93577beb3c:0">Or you could do:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="130233ab5f7d4ef89ac0976759307206"><span data-offset-key="130233ab5f7d4ef89ac0976759307206:0">*while2.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="130233ab5f7d4ef89ac0976759307206"><span data-offset-key="130233ab5f7d4ef89ac0976759307206:0">_while2.py_</span></span></span>
 
     import randomposition = '<placeholder>'while position != 1: # will run at least once    position = random.randint(1, 10)    print(position)
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52d69c0399cf4d4ab484d9a339f6f373"><span data-offset-key="52d69c0399cf4d4ab484d9a339f6f373:0">The if statement allows you to check if something is True. If so, it runs the code, if not, it continues on. It is kind of like a while loop, but it executes </span><span data-offset-key="52d69c0399cf4d4ab484d9a339f6f373:1">**only once**</span><span data-offset-key="52d69c0399cf4d4ab484d9a339f6f373:2">. An if statement is written:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea431092550f471ba578f3852a5c6069"><span data-offset-key="ea431092550f471ba578f3852a5c6069:0">*if.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea431092550f471ba578f3852a5c6069"><span data-offset-key="ea431092550f471ba578f3852a5c6069:0">_if.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:     print('num is 3. Hooray!!!')if num > 5:     print('Num is greater than 5')if num == 12:     print('Num is 12, which means that there is a problem with the python language, see if you can figure it out. Extra credit if you can figure it out!')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e7a75cd06d6d4793b918a5694f893717"><span data-offset-key="e7a75cd06d6d4793b918a5694f893717:0">Now, you may think that it would be better if you could make it print only one message. Not as many that are True. You can do that with an </span><span data-offset-key="e7a75cd06d6d4793b918a5694f893717:1">`elif`</span><span data-offset-key="e7a75cd06d6d4793b918a5694f893717:2"> statement:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f867c4a3be84898b3cd2b496fd88b75"><span data-offset-key="3f867c4a3be84898b3cd2b496fd88b75:0">*elif.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f867c4a3be84898b3cd2b496fd88b75"><span data-offset-key="3f867c4a3be84898b3cd2b496fd88b75:0">_elif.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:    print('Num is three, this is the only msg you will see.')elif num > 2:    print('Num is not three, but is greater than 1')
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16038e58feb8455f9195d7052f6b7e06"><span data-offset-key="16038e58feb8455f9195d7052f6b7e06:0">Now, you may wonder how to run code if none work. Well, there is a simple statement called </span><span data-offset-key="16038e58feb8455f9195d7052f6b7e06:1">`else:`</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68e9d884cafb42b7a92c5838d21d9eb9"><span data-offset-key="68e9d884cafb42b7a92c5838d21d9eb9:0">*else.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68e9d884cafb42b7a92c5838d21d9eb9"><span data-offset-key="68e9d884cafb42b7a92c5838d21d9eb9:0">_else.py_</span></span></span>
 
     import randomnum = random.randint(1, 10)if num == 3:    print('Num is three, this is the only msg you will see.')elif num > 2:    print('Num is not three, but is greater than 1')else:    print('No category')
 
@@ -371,7 +370,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7be4bf7050d049179d57b189ae405725"><span data-offset-key="7be4bf7050d049179d57b189ae405725:0">Characters: 389</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1bfcc179f64245c2be60cba0b7da1b9d"><span data-offset-key="1bfcc179f64245c2be60cba0b7da1b9d:0">*nofunc.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1bfcc179f64245c2be60cba0b7da1b9d"><span data-offset-key="1bfcc179f64245c2be60cba0b7da1b9d:0">_nofunc.py_</span></span></span>
 
     import randomprint(random.randint(1, 9))print('Wow that was interesting.')print(random.randint(1, 9))print('Look at the number above ^')print(random.randint(1, 9))print('All of these have been interesting numbers.')print(random.randint(1, 9))print("these random.randint's are getting annoying to type")print(random.randint(1, 9))print('Hi')print(random.randint(1, 9))print('j')
 
@@ -379,37 +378,37 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d8e693d08e241e288c2916de27e1cc3"><span data-offset-key="4d8e693d08e241e288c2916de27e1cc3:0">Characters: 254</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9089f6b09d65452989e57b0dfa12e1d2"><span data-offset-key="9089f6b09d65452989e57b0dfa12e1d2:0">*functions.py*</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9089f6b09d65452989e57b0dfa12e1d2"><span data-offset-key="9089f6b09d65452989e57b0dfa12e1d2:0">_functions.py_</span></span></span>
 
     import randomdef r(t):     print(random.randint(1, 9))     print(t)r('Wow that was interesting.')r('Look at the number above ^')r('All of these have been interesting numbers.')r("these random.randint's are getting annoying to type")r('Hi')r('j')
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="b39194465bd3453da6d7438d80c35dc3"><span data-offset-key="b39194465bd3453da6d7438d80c35dc3:0">Chapter 01 - Getting Ready with Python</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8bab7dc197cd4bd8b29ad28e47b1d09a"><span data-offset-key="8bab7dc197cd4bd8b29ad28e47b1d09a:0">Installing Python 3, And Launching Python Shell</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b56fdd29290c4fe5a0034307af4d978f"><span data-offset-key="b56fdd29290c4fe5a0034307af4d978f:0">This video should help you get up and running with Python 3</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1900f9f899e74a07b975aac4ae535228"><span data-offset-key="1900f9f899e74a07b975aac4ae535228:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Ji1WW4Suaww" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e559905424e64f479e20e6beb502b0e7"><span data-offset-key="e559905424e64f479e20e6beb502b0e7:0">Installing Python 3 and Launch Python Shell</span></span></a><span data-key="d831459078a5402b9bc25868a04727ff"><span data-offset-key="d831459078a5402b9bc25868a04727ff:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1900f9f899e74a07b975aac4ae535228"><span data-offset-key="1900f9f899e74a07b975aac4ae535228:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Ji1WW4Suaww" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e559905424e64f479e20e6beb502b0e7"><span data-offset-key="e559905424e64f479e20e6beb502b0e7:0">Installing Python 3 and Launch Python Shell</span></span></a><span data-key="d831459078a5402b9bc25868a04727ff"><span data-offset-key="d831459078a5402b9bc25868a04727ff:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a91cc0dbab9473baacec73812376051"><span data-offset-key="7a91cc0dbab9473baacec73812376051:0">Installing Python is really a cakewalk. Search for “Python download” on </span></span><a href="http://www.google.com/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="d4f31420a70a412b995b7a4ba8d9d027"><span data-offset-key="d4f31420a70a412b995b7a4ba8d9d027:0">www.google.com</span></span></a><span data-key="36e65cd9e00e4f6cb8cc2035966c6991"><span data-offset-key="36e65cd9e00e4f6cb8cc2035966c6991:0">. Download the installable and install it.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cbca151fa524402db8fc5563da3fd308"><span data-offset-key="cbca151fa524402db8fc5563da3fd308:0">A quick word of caution on Windows</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d9343550a6f4b82bceba4453d2e956b"><span data-offset-key="0d9343550a6f4b82bceba4453d2e956b:0">Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d9343550a6f4b82bceba4453d2e956b"><span data-offset-key="0d9343550a6f4b82bceba4453d2e956b:0">Make sure that you have the check-box “Add Python 3.6 to PATH”, checked.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="68fec4a893484f71be205f4ec5c92813"><span data-offset-key="68fec4a893484f71be205f4ec5c92813:0">Once you have installed Python, you can launch the Python Shell.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4491e43811bf4a9fba0f8a5af76f01e1"><span data-offset-key="4491e43811bf4a9fba0f8a5af76f01e1:0">Windows - Launch cmd prompt by typing in ‘cmd’ command.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4491e43811bf4a9fba0f8a5af76f01e1"><span data-offset-key="4491e43811bf4a9fba0f8a5af76f01e1:0">Windows - Launch cmd prompt by typing in ‘cmd’ command.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b74cb5759a464f21925e86ad6c432ee2"><span data-offset-key="b74cb5759a464f21925e86ad6c432ee2:0">Mac or Linux - Launch up terminal.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b74cb5759a464f21925e86ad6c432ee2"><span data-offset-key="b74cb5759a464f21925e86ad6c432ee2:0">Mac or Linux - Launch up terminal.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2f39dd1c7e8f4d8dba4b680a338b01cb"><span data-offset-key="2f39dd1c7e8f4d8dba4b680a338b01cb:0">Command to launch Python 3 is different in Mac.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0aff443c6ce140fe9b71c7c8d8d90117"><span data-offset-key="0aff443c6ce140fe9b71c7c8d8d90117:0">In Mac, type in </span><span data-offset-key="0aff443c6ce140fe9b71c7c8d8d90117:1">`python3`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0aff443c6ce140fe9b71c7c8d8d90117"><span data-offset-key="0aff443c6ce140fe9b71c7c8d8d90117:0">In Mac, type in </span><span data-offset-key="0aff443c6ce140fe9b71c7c8d8d90117:1">`python3`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dce62544833d4cb28c0807017c6bacc0"><span data-offset-key="dce62544833d4cb28c0807017c6bacc0:0">In other operating systems, including windows, type </span><span data-offset-key="dce62544833d4cb28c0807017c6bacc0:1">`python`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dce62544833d4cb28c0807017c6bacc0"><span data-offset-key="dce62544833d4cb28c0807017c6bacc0:0">In other operating systems, including windows, type </span><span data-offset-key="dce62544833d4cb28c0807017c6bacc0:1">`python`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dacadc7a31674b39a3cfc1faf6f53bfe"><span data-offset-key="dacadc7a31674b39a3cfc1faf6f53bfe:0">You can type code in python shell and code as well!</span></span></span>
 
@@ -423,7 +422,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a66c22a305f41dba66a064c88751d54"><span data-offset-key="5a66c22a305f41dba66a064c88751d54:0">Most programmers find programming a lot of fun, and besides, it also gets their work done.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f40e90aebf2840a3bbed7217eb6a6bea"><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:0">Programming mainly involves </span><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:1">*problem solving*</span><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:2">, where one makes use of a computer to solve a real world problem.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f40e90aebf2840a3bbed7217eb6a6bea"><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:0">Programming mainly involves </span><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:1">_problem solving_</span><span data-offset-key="f40e90aebf2840a3bbed7217eb6a6bea:2">, where one makes use of a computer to solve a real world problem.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a8c4b8085ad4a2dba29a5cc7028361f"><span data-offset-key="0a8c4b8085ad4a2dba29a5cc7028361f:0">During our journey here, we will approach programming in a very different way. We will not only introduce you to the Python language, but also help you pick up essential problem solving skills.</span></span></span>
 
@@ -439,15 +438,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a29d07f3799420d9863e12c2b3d4d83"><span data-offset-key="7a29d07f3799420d9863e12c2b3d4d83:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93e6ec4b762940fc86a9a349cd1e02e8"><span data-offset-key="93e6ec4b762940fc86a9a349cd1e02e8:0">Were introduced to the concept of problem solving</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93e6ec4b762940fc86a9a349cd1e02e8"><span data-offset-key="93e6ec4b762940fc86a9a349cd1e02e8:0">Were introduced to the concept of problem solving</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cedd208631df4ffb9f05829e712cc5c2"><span data-offset-key="cedd208631df4ffb9f05829e712cc5c2:0">Understood how good programmers approach problem solving</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cedd208631df4ffb9f05829e712cc5c2"><span data-offset-key="cedd208631df4ffb9f05829e712cc5c2:0">Understood how good programmers approach problem solving</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2a2b04cb4ac94f0194ac5ee2ac5414d1"><span data-offset-key="2a2b04cb4ac94f0194ac5ee2ac5414d1:0">Step 01: Our First Programming Challenge</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b3accecd15154ab49ee510c2859b0f8a"><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:0">Our first </span><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:1">*programming challenge*</span><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:2"> aims to do, what every kid does in math class: read out a multiplication table. We now want to give this task to the computer. Here is the statement of our problem:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b3accecd15154ab49ee510c2859b0f8a"><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:0">Our first </span><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:1">_programming challenge_</span><span data-offset-key="b3accecd15154ab49ee510c2859b0f8a:2"> aims to do, what every kid does in math class: read out a multiplication table. We now want to give this task to the computer. Here is the statement of our problem:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd94ca8467724e489f1a01b69439fefb"><span data-offset-key="dd94ca8467724e489f1a01b69439fefb:0">**The Print Multiplication Table Challenge (PMT-Challenge)**</span></span></span>
 
@@ -457,73 +456,73 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bcd78182339441d788f840f678746c65"><span data-offset-key="bcd78182339441d788f840f678746c65:0">The display needs to be:</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49c42b5ebbb849c8a8eeb61cec87087a"><span data-offset-key="49c42b5ebbb849c8a8eeb61cec87087a:0">***5 \* 1 = 5***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49c42b5ebbb849c8a8eeb61cec87087a"><span data-offset-key="49c42b5ebbb849c8a8eeb61cec87087a:0">**_5 \* 1 = 5_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8257488c7d0c4d91a84d2cc0d6406e7d"><span data-offset-key="8257488c7d0c4d91a84d2cc0d6406e7d:0">***5 \* 2 = 10***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8257488c7d0c4d91a84d2cc0d6406e7d"><span data-offset-key="8257488c7d0c4d91a84d2cc0d6406e7d:0">**_5 \* 2 = 10_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc2424437fe340a7b44b1d339daa7f73"><span data-offset-key="bc2424437fe340a7b44b1d339daa7f73:0">***5 \* 3 = 15***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bc2424437fe340a7b44b1d339daa7f73"><span data-offset-key="bc2424437fe340a7b44b1d339daa7f73:0">**_5 \* 3 = 15_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d9b8859755f48109a31b700f0055416"><span data-offset-key="2d9b8859755f48109a31b700f0055416:0">***5 \* 4 = 20***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d9b8859755f48109a31b700f0055416"><span data-offset-key="2d9b8859755f48109a31b700f0055416:0">**_5 \* 4 = 20_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d924e5cb99c74f4f9463a642821f9f88"><span data-offset-key="d924e5cb99c74f4f9463a642821f9f88:0">***5 \* 5 = 25***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d924e5cb99c74f4f9463a642821f9f88"><span data-offset-key="d924e5cb99c74f4f9463a642821f9f88:0">**_5 \* 5 = 25_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a9e041a8b6647e9a23497070c6f8c6a"><span data-offset-key="5a9e041a8b6647e9a23497070c6f8c6a:0">***5 \* 6 = 30***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a9e041a8b6647e9a23497070c6f8c6a"><span data-offset-key="5a9e041a8b6647e9a23497070c6f8c6a:0">**_5 \* 6 = 30_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b8123bce4a44c9e92235bba91ea8129"><span data-offset-key="9b8123bce4a44c9e92235bba91ea8129:0">***5 \* 7 = 35***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b8123bce4a44c9e92235bba91ea8129"><span data-offset-key="9b8123bce4a44c9e92235bba91ea8129:0">**_5 \* 7 = 35_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91f642e6361248369f28d7b185f1e267"><span data-offset-key="91f642e6361248369f28d7b185f1e267:0">***5 \* 8 = 40***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91f642e6361248369f28d7b185f1e267"><span data-offset-key="91f642e6361248369f28d7b185f1e267:0">**_5 \* 8 = 40_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19d0cf9a16b44bcf94cbdc45a5eac429"><span data-offset-key="19d0cf9a16b44bcf94cbdc45a5eac429:0">***5 \* 9 = 45***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19d0cf9a16b44bcf94cbdc45a5eac429"><span data-offset-key="19d0cf9a16b44bcf94cbdc45a5eac429:0">**_5 \* 9 = 45_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c9efebc26ad4c7cbdcf955b12d48101"><span data-offset-key="3c9efebc26ad4c7cbdcf955b12d48101:0">***5 \* 10 = 50***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3c9efebc26ad4c7cbdcf955b12d48101"><span data-offset-key="3c9efebc26ad4c7cbdcf955b12d48101:0">**_5 \* 10 = 50_**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd61c6693d544a3f93a68bb68b0edaee"><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:0">This is the challenge. For convenience, let’s give it a label, say </span><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:1">*PMT-Challenge*</span><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:2">. What would be the important concepts we need to learn, to solve this challenge? The following list of concepts would be a good starting point:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bd61c6693d544a3f93a68bb68b0edaee"><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:0">This is the challenge. For convenience, let’s give it a label, say </span><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:1">_PMT-Challenge_</span><span data-offset-key="bd61c6693d544a3f93a68bb68b0edaee:2">. What would be the important concepts we need to learn, to solve this challenge? The following list of concepts would be a good starting point:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0552925aff14fea8fb37a1da2808c3a"><span data-offset-key="a0552925aff14fea8fb37a1da2808c3a:0">**Statements**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0552925aff14fea8fb37a1da2808c3a"><span data-offset-key="a0552925aff14fea8fb37a1da2808c3a:0">**Statements**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8e63a372026e4772bcb3bd4f7bd55dd4"><span data-offset-key="8e63a372026e4772bcb3bd4f7bd55dd4:0">**Expressions**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8e63a372026e4772bcb3bd4f7bd55dd4"><span data-offset-key="8e63a372026e4772bcb3bd4f7bd55dd4:0">**Expressions**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d26a6fd0424cd9b4bda87bc7889666"><span data-offset-key="71d26a6fd0424cd9b4bda87bc7889666:0">**Variables**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d26a6fd0424cd9b4bda87bc7889666"><span data-offset-key="71d26a6fd0424cd9b4bda87bc7889666:0">**Variables**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4693d06ca25447a84baa47255c91a85"><span data-offset-key="b4693d06ca25447a84baa47255c91a85:0">**Literals**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4693d06ca25447a84baa47255c91a85"><span data-offset-key="b4693d06ca25447a84baa47255c91a85:0">**Literals**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d8b5787814b4c86bb5b0f0f6be11c88"><span data-offset-key="5d8b5787814b4c86bb5b0f0f6be11c88:0">**Conditionals**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5d8b5787814b4c86bb5b0f0f6be11c88"><span data-offset-key="5d8b5787814b4c86bb5b0f0f6be11c88:0">**Conditionals**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f6327078c2a44ba9522004e7f58aa72"><span data-offset-key="1f6327078c2a44ba9522004e7f58aa72:0">**Loops**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1f6327078c2a44ba9522004e7f58aa72"><span data-offset-key="1f6327078c2a44ba9522004e7f58aa72:0">**Loops**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f90faab362e548bba700bdac83de0e38"><span data-offset-key="f90faab362e548bba700bdac83de0e38:0">**Methods**</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f90faab362e548bba700bdac83de0e38"><span data-offset-key="f90faab362e548bba700bdac83de0e38:0">**Methods**</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5e98972be970417881c6ed14424e8721"><span data-offset-key="5e98972be970417881c6ed14424e8721:0">In the rest of this chapter, we will introduce these concepts to you, one-by-one. We will also show you how learning each concept, takes us closer to a solution to </span><span data-offset-key="5e98972be970417881c6ed14424e8721:1">*PMT-Challenge*</span><span data-offset-key="5e98972be970417881c6ed14424e8721:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5e98972be970417881c6ed14424e8721"><span data-offset-key="5e98972be970417881c6ed14424e8721:0">In the rest of this chapter, we will introduce these concepts to you, one-by-one. We will also show you how learning each concept, takes us closer to a solution to </span><span data-offset-key="5e98972be970417881c6ed14424e8721:1">_PMT-Challenge_</span><span data-offset-key="5e98972be970417881c6ed14424e8721:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95e737f2a2f9429293a48c72ff86706c"><span data-offset-key="95e737f2a2f9429293a48c72ff86706c:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e8a58dc1a344c52b3ab724a7f7142ae"><span data-offset-key="4e8a58dc1a344c52b3ab724a7f7142ae:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7684e4846f9748689253f5bf9cd08dd0"><span data-offset-key="7684e4846f9748689253f5bf9cd08dd0:0">Stated our first programming challenge</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7684e4846f9748689253f5bf9cd08dd0"><span data-offset-key="7684e4846f9748689253f5bf9cd08dd0:0">Stated our first programming challenge</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d636438d6f414d92893bc69d3014f0"><span data-offset-key="71d636438d6f414d92893bc69d3014f0:0">Identified what programming concepts we need to learn, to solve this challenge</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d636438d6f414d92893bc69d3014f0"><span data-offset-key="71d636438d6f414d92893bc69d3014f0:0">Identified what programming concepts we need to learn, to solve this challenge</span></span></span>
 
-### 
+###
 
-<span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4ba5d6889c0047aca422711cf1426788"><span data-offset-key="4ba5d6889c0047aca422711cf1426788:0">Step 02: Breaking Down </span><span data-offset-key="4ba5d6889c0047aca422711cf1426788:1">*PMT-Challenge*</span></span></span>
+<span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4ba5d6889c0047aca422711cf1426788"><span data-offset-key="4ba5d6889c0047aca422711cf1426788:0">Step 02: Breaking Down </span><span data-offset-key="4ba5d6889c0047aca422711cf1426788:1">_PMT-Challenge_</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ccb1987f77e4d1ebf1b527d8f37d69d"><span data-offset-key="1ccb1987f77e4d1ebf1b527d8f37d69d:0">Typically when we do programming, we have problems. Solving the problem typically need a step-by -step approach. Common sense tells us that to solve a complex problem, we break it into smaller parts, and solve each part one by one. Here is how any good programmer worth her salt, would solve a problem:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91ffd79c53744d01982a7daa92c78fae"><span data-offset-key="91ffd79c53744d01982a7daa92c78fae:0">Simplify the problem, by breaking it into sub-problems</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91ffd79c53744d01982a7daa92c78fae"><span data-offset-key="91ffd79c53744d01982a7daa92c78fae:0">Simplify the problem, by breaking it into sub-problems</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10c5f19df6b4489db78c576c25254e58"><span data-offset-key="10c5f19df6b4489db78c576c25254e58:0">Solve the sub-problems in stages (in some order), using the language</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10c5f19df6b4489db78c576c25254e58"><span data-offset-key="10c5f19df6b4489db78c576c25254e58:0">Solve the sub-problems in stages (in some order), using the language</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d000747384ac43e99caf40d2e9919caa"><span data-offset-key="d000747384ac43e99caf40d2e9919caa:0">Combine these solutions to get a final solution</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d000747384ac43e99caf40d2e9919caa"><span data-offset-key="d000747384ac43e99caf40d2e9919caa:0">Combine these solutions to get a final solution</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ccca6f254766426391f184b4446f49cf"><span data-offset-key="ccca6f254766426391f184b4446f49cf:0">The </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:1">*PMT-Challenge*</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:2"> is no different! Now how do we break it down, and where do we really start? Once again, your common sense will reveal a solution. As a first step, we could get the computer to calculate say, </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:3">`5 * 3`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:4">. The second thing we can do, is to try and print the calculated value, in a manner similar to </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:5">`5 * 3 = 15`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:6">. Then, we could repeat what we just did, to print out all the entries of the </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:7">`5`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:8"> multiplication table. Let’s put it down a little more formally:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ccca6f254766426391f184b4446f49cf"><span data-offset-key="ccca6f254766426391f184b4446f49cf:0">The </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:1">_PMT-Challenge_</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:2"> is no different! Now how do we break it down, and where do we really start? Once again, your common sense will reveal a solution. As a first step, we could get the computer to calculate say, </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:3">`5 * 3`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:4">. The second thing we can do, is to try and print the calculated value, in a manner similar to </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:5">`5 * 3 = 15`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:6">. Then, we could repeat what we just did, to print out all the entries of the </span><span data-offset-key="ccca6f254766426391f184b4446f49cf:7">`5`</span><span data-offset-key="ccca6f254766426391f184b4446f49cf:8"> multiplication table. Let’s put it down a little more formally:</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5c2b8dc0b9a4c2885fd96d91522e99a"><span data-offset-key="f5c2b8dc0b9a4c2885fd96d91522e99a:0">Here is how our draft steps look like</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c57b4b03c28442fa913b67644a0db6c4"><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:0">Calculate </span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:1">`5 * 3`</span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:2"> and print result as </span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:3">`15`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c57b4b03c28442fa913b67644a0db6c4"><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:0">Calculate </span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:1">`5 * 3`</span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:2"> and print result as </span><span data-offset-key="c57b4b03c28442fa913b67644a0db6c4:3">`15`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0687cedd7e7d45ce929848387faec858"><span data-offset-key="0687cedd7e7d45ce929848387faec858:0">Print </span><span data-offset-key="0687cedd7e7d45ce929848387faec858:1">`5 * 3 = 15`</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:2"> (</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:3">`15`</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:4"> is result of previous calculation)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0687cedd7e7d45ce929848387faec858"><span data-offset-key="0687cedd7e7d45ce929848387faec858:0">Print </span><span data-offset-key="0687cedd7e7d45ce929848387faec858:1">`5 * 3 = 15`</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:2"> (</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:3">`15`</span><span data-offset-key="0687cedd7e7d45ce929848387faec858:4"> is result of previous calculation)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="266ae9056fbd4004bf5a8eec878f992b"><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:0">Do this ten times, once for each table entry (going from </span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:1">`1`</span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:2"> to </span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:3">`10`</span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:4">)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="266ae9056fbd4004bf5a8eec878f992b"><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:0">Do this ten times, once for each table entry (going from </span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:1">`1`</span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:2"> to </span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:3">`10`</span><span data-offset-key="266ae9056fbd4004bf5a8eec878f992b:4">)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="03bcfabcda6c4b26b9340b169eaecc65"><span data-offset-key="03bcfabcda6c4b26b9340b169eaecc65:0">Let’s start with that kind of a game plan, and see where it takes us.</span></span></span>
 
@@ -531,15 +530,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ddc71ed5eee454db324032c76b75f84"><span data-offset-key="4ddc71ed5eee454db324032c76b75f84:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6acf5d15e21a485bb94417e48be78fdc"><span data-offset-key="6acf5d15e21a485bb94417e48be78fdc:0">Learned that breaking down a problem into sub-problems is a great help</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6acf5d15e21a485bb94417e48be78fdc"><span data-offset-key="6acf5d15e21a485bb94417e48be78fdc:0">Learned that breaking down a problem into sub-problems is a great help</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f741590cf963405e8e9976a911409a66"><span data-offset-key="f741590cf963405e8e9976a911409a66:0">Found a way to break down the </span><span data-offset-key="f741590cf963405e8e9976a911409a66:1">*PMT-Challenge*</span><span data-offset-key="f741590cf963405e8e9976a911409a66:2"> problem</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f741590cf963405e8e9976a911409a66"><span data-offset-key="f741590cf963405e8e9976a911409a66:0">Found a way to break down the </span><span data-offset-key="f741590cf963405e8e9976a911409a66:1">_PMT-Challenge_</span><span data-offset-key="f741590cf963405e8e9976a911409a66:2"> problem</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="bd5c8bc40cad43c2ada4adc43ca8ec16"><span data-offset-key="bd5c8bc40cad43c2ada4adc43ca8ec16:0">Step 03: Introducing Operators And Expressions</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe0cb4f5806547ff8e76df644b1ea5ad"><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:0">Let’s focus on solving the first sub-problem of </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:1">*PMT-Challenge*</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:2">, the numeric computation. We want the computer to calculate </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:3">`5 * 5`</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:4"> for example, and print </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:5">`25`</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:6"> for us. How do we get it to do that? That’s what we would be looking at in this step.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fe0cb4f5806547ff8e76df644b1ea5ad"><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:0">Let’s focus on solving the first sub-problem of </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:1">_PMT-Challenge_</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:2">, the numeric computation. We want the computer to calculate </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:3">`5 * 5`</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:4"> for example, and print </span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:5">`25`</span><span data-offset-key="fe0cb4f5806547ff8e76df644b1ea5ad:6"> for us. How do we get it to do that? That’s what we would be looking at in this step.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7be03dc1e03f456c9f8e8dcde09f47ae"><span data-offset-key="7be03dc1e03f456c9f8e8dcde09f47ae:0">**Snippet-01: Introducing Operators**</span></span></span>
 
@@ -549,37 +548,37 @@
 
         >>> 5 X 5    File "< stdin >", line 1    5 X 5      ^    SyntaxError: invalid syntax
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c61ec7ce036d46be90ff262d60f497b6"><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:0">The Python Shell hits back at us, saying “</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:1">*invalid syntax*</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:2">”. This is how Python complains, when it doesn’t fully understand the code you type in. Here, it says our code has a “</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:3">**SyntaxError**</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:4">”.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c61ec7ce036d46be90ff262d60f497b6"><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:0">The Python Shell hits back at us, saying “</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:1">_invalid syntax_</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:2">”. This is how Python complains, when it doesn’t fully understand the code you type in. Here, it says our code has a “</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:3">**SyntaxError**</span><span data-offset-key="c61ec7ce036d46be90ff262d60f497b6:4">”.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b6dc9e64d7c432fbf0f3e8abac187d2"><span data-offset-key="9b6dc9e64d7c432fbf0f3e8abac187d2:0">The reason why it complains, is because ‘</span><span data-offset-key="9b6dc9e64d7c432fbf0f3e8abac187d2:1">`X`</span><span data-offset-key="9b6dc9e64d7c432fbf0f3e8abac187d2:2">’ is not a valid </span><span data-offset-key="9b6dc9e64d7c432fbf0f3e8abac187d2:3">**operator**</span><span data-offset-key="9b6dc9e64d7c432fbf0f3e8abac187d2:4"> in Python.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7cab9d100a7846dda09d295e9a41d847"><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:0">The way you can do multiplication is by using the ‘</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:1">`*`</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:2">’ </span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:3">*operator*</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:4"> .</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7cab9d100a7846dda09d295e9a41d847"><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:0">The way you can do multiplication is by using the ‘</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:1">`*`</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:2">’ </span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:3">_operator_</span><span data-offset-key="7cab9d100a7846dda09d295e9a41d847:4"> .</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d739369adfe6474194e3ec210ab0522e"><span data-offset-key="d739369adfe6474194e3ec210ab0522e:0">“</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:1">*5 into 5*</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:2">” is achieved by the code </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:3">`5 * 5`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:4">, and you can see the result </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:5">`25`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:6"> being printed. Similarly, </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:7">`5 * 6`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:8"> gives us </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:9">`30`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:10">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d739369adfe6474194e3ec210ab0522e"><span data-offset-key="d739369adfe6474194e3ec210ab0522e:0">“</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:1">_5 into 5_</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:2">” is achieved by the code </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:3">`5 * 5`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:4">, and you can see the result </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:5">`25`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:6"> being printed. Similarly, </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:7">`5 * 6`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:8"> gives us </span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:9">`30`</span><span data-offset-key="d739369adfe6474194e3ec210ab0522e:10">.</span></span></span>
 
         >>> 5 * 6    30
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9f3ce5e3744441694885d8ce1a51907"><span data-offset-key="e9f3ce5e3744441694885d8ce1a51907:0">There are a wide range of other operators in Python:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f2687db10d6434eb4672e4564231d4d"><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:0">`5 + 6`</span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:1"> gives a result of </span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:2">`11`</span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:3">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3f2687db10d6434eb4672e4564231d4d"><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:0">`5 + 6`</span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:1"> gives a result of </span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:2">`11`</span><span data-offset-key="3f2687db10d6434eb4672e4564231d4d:3">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c74bc4e94e284b728bf2480fb5cee382"><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:0">`5 - 6`</span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:1"> leads to </span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:2">`-1`</span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:3">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c74bc4e94e284b728bf2480fb5cee382"><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:0">`5 - 6`</span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:1"> leads to </span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:2">`-1`</span><span data-offset-key="c74bc4e94e284b728bf2480fb5cee382:3">.</span></span></span>
 
-        >>> 5 + 611>>> 5 - 6-1
+      >>> 5 + 611>>> 5 - 6-1
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3929b48f3a684d26914f2d3800232249"><span data-offset-key="3929b48f3a684d26914f2d3800232249:0">`10 / 2`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:1">, gives an output of </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:2">`5.0`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:3"> . There is one interesting operator, </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:4">`**`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:5">. Let’s try </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:6">`10 ** 3`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:7">. We ran this code, and the result we get is </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:8">`1000`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:9">. Yes you guessed right, the operator performs “to the power of”. “</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:10">`10`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:11"> to the power of </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:12">`3`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:13">” is </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:14">`10 * 10 * 10`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:15">, or </span><span data-offset-key="3929b48f3a684d26914f2d3800232249:16">`1000`</span><span data-offset-key="3929b48f3a684d26914f2d3800232249:17">.</span></span></span>
 
         >>> 10 / 2    5.0    >>> 10 ** 3    1000
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a86b1f2bdf7f41a08fa8a0b21921c51f"><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:0">Another interesting operator is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:1">`%`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:2">, called “</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:3">*modulo*</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:4">”, which computes the remainder on integer division. If we do </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:5">`10 % 3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:6">, what is the remainder when </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:7">`10`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:8"> is divided by </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:9">`3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:10">? </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:11">`3 * 3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:12"> is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:13">`9`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:14">, and </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:15">`10 - 9`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:16"> is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:17">`1`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:18">, which is what </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:19">`%`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:20"> returns in this case.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a86b1f2bdf7f41a08fa8a0b21921c51f"><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:0">Another interesting operator is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:1">`%`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:2">, called “</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:3">_modulo_</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:4">”, which computes the remainder on integer division. If we do </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:5">`10 % 3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:6">, what is the remainder when </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:7">`10`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:8"> is divided by </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:9">`3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:10">? </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:11">`3 * 3`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:12"> is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:13">`9`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:14">, and </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:15">`10 - 9`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:16"> is </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:17">`1`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:18">, which is what </span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:19">`%`</span><span data-offset-key="a86b1f2bdf7f41a08fa8a0b21921c51f:20"> returns in this case.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bfc18b78f5a540979abdbea81fa2377c"><span data-offset-key="bfc18b78f5a540979abdbea81fa2377c:0">Let’s look at some terminology:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c03d3fdb7334760b24d7c8a3201b271"><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:0">Whatever pieces of code we gave Python shell to run, are called </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:1">**expressions**</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:2">. So, </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:3">`5 * 5`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:4">, </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:5">`5 * 6`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:6"> and </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:7">`5 - 6`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:8"> are all </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:9">*expressions*</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:10">. An expression is composed of </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:11">*operators*</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:12"> and </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:13">**operands**</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:14">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c03d3fdb7334760b24d7c8a3201b271"><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:0">Whatever pieces of code we gave Python shell to run, are called </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:1">**expressions**</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:2">. So, </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:3">`5 * 5`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:4">, </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:5">`5 * 6`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:6"> and </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:7">`5 - 6`</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:8"> are all </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:9">_expressions_</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:10">. An expression is composed of </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:11">_operators_</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:12"> and </span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:13">**operands**</span><span data-offset-key="8c03d3fdb7334760b24d7c8a3201b271:14">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3929ff5b795d4dc2a5dfcea54a976241"><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:0">In the expression </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:1">`5 * 6`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:2">, the two values </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:3">`5`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:4"> and </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:5">`6`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:6"> are called operands, and the </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:7">`*`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:8"> operator </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:9">*operates*</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:10"> on them.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3929ff5b795d4dc2a5dfcea54a976241"><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:0">In the expression </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:1">`5 * 6`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:2">, the two values </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:3">`5`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:4"> and </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:5">`6`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:6"> are called operands, and the </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:7">`*`</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:8"> operator </span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:9">_operates_</span><span data-offset-key="3929ff5b795d4dc2a5dfcea54a976241:10"> on them.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ee19165d9b749ceafccb49133ccc9c6"><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:0">The values </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:1">`5`</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:2"> and </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:3">`6`</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:4"> are </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:5">**literals**</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:6">, because those are constants which cannot be changed.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ee19165d9b749ceafccb49133ccc9c6"><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:0">The values </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:1">`5`</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:2"> and </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:3">`6`</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:4"> are </span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:5">**literals**</span><span data-offset-key="2ee19165d9b749ceafccb49133ccc9c6:6">, because those are constants which cannot be changed.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a5f961dd3a64622b93fe38ea6568c59"><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:0">The cool thing about Python, is that you can even have expressions with multiple operators. Therefore, you can form an expression with </span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:1">`5 + 5 + 5`</span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:2">, which evaluates to </span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:3">`15`</span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:4">. This is an expression which has three operands, and two </span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:5">`+`</span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:6"> operators. You can even have expressions with different types of operators, such as in </span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:7">`5 + 5 * 5`</span><span data-offset-key="6a5f961dd3a64622b93fe38ea6568c59:8">.</span></span></span>
 
@@ -591,13 +590,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27b3f0d9687c4a3db76cf27210e029db"><span data-offset-key="27b3f0d9687c4a3db76cf27210e029db:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01c216612bb4460988fb657c358af87b"><span data-offset-key="01c216612bb4460988fb657c358af87b:0">Learned how to give code input to the Python Shell</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01c216612bb4460988fb657c358af87b"><span data-offset-key="01c216612bb4460988fb657c358af87b:0">Learned how to give code input to the Python Shell</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba5061dc2f204822b5c269bdf3289514"><span data-offset-key="ba5061dc2f204822b5c269bdf3289514:0">Understood that Python has a predefined set of operators</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba5061dc2f204822b5c269bdf3289514"><span data-offset-key="ba5061dc2f204822b5c269bdf3289514:0">Understood that Python has a predefined set of operators</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d889a9c53e034a6eb67fa7902f5dadb1"><span data-offset-key="d889a9c53e034a6eb67fa7902f5dadb1:0">Used a few types of basic operators and their operands, to form expressions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d889a9c53e034a6eb67fa7902f5dadb1"><span data-offset-key="d889a9c53e034a6eb67fa7902f5dadb1:0">Used a few types of basic operators and their operands, to form expressions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4f5d2393708f4353983f640af88472bf"><span data-offset-key="4f5d2393708f4353983f640af88472bf:0">Step 04: Programming Exercise IN-PE-01</span></span></span>
 
@@ -621,11 +620,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="12b3d4c9821642fc960636f3952cd32d"><span data-offset-key="12b3d4c9821642fc960636f3952cd32d:0">We wanted to calculate the number of minutes in a day. How do we do that? Think about this…</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1b0042c7d474c73b0ca2d007f4c35e0"><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:0">How many number of hours are there in a day? </span><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:1">`24`</span><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b1b0042c7d474c73b0ca2d007f4c35e0"><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:0">How many number of hours are there in a day? </span><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:1">`24`</span><span data-offset-key="b1b0042c7d474c73b0ca2d007f4c35e0:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1a75a71f35b74eaebe41b2aa78007a6e"><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:0">And how many minutes does each hour have? It’s </span><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:1">`60`</span><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1a75a71f35b74eaebe41b2aa78007a6e"><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:0">And how many minutes does each hour have? It’s </span><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:1">`60`</span><span data-offset-key="1a75a71f35b74eaebe41b2aa78007a6e:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cc77ce6d7d4c480b8edf20d1eb7067d4"><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:0">So if you want to find out the number of minutes in a day, it’s </span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:1">`24 * 60`</span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:2">, which is </span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:3">`1440`</span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cc77ce6d7d4c480b8edf20d1eb7067d4"><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:0">So if you want to find out the number of minutes in a day, it’s </span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:1">`24 * 60`</span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:2">, which is </span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:3">`1440`</span><span data-offset-key="cc77ce6d7d4c480b8edf20d1eb7067d4:4">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="efe57e28e86d47d6b2424a81ddf9a23a"><span data-offset-key="efe57e28e86d47d6b2424a81ddf9a23a:0">**Solution 2**</span></span></span>
 
@@ -633,27 +632,27 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b3ba64f2f1d4893b8352b1080d5bf3b"><span data-offset-key="5b3ba64f2f1d4893b8352b1080d5bf3b:0">How many seconds are there in a day?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f204374a919842ef93b6988b065403c3"><span data-offset-key="f204374a919842ef93b6988b065403c3:0">Let’s start with the number of hours, </span><span data-offset-key="f204374a919842ef93b6988b065403c3:1">`24`</span><span data-offset-key="f204374a919842ef93b6988b065403c3:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f204374a919842ef93b6988b065403c3"><span data-offset-key="f204374a919842ef93b6988b065403c3:0">Let’s start with the number of hours, </span><span data-offset-key="f204374a919842ef93b6988b065403c3:1">`24`</span><span data-offset-key="f204374a919842ef93b6988b065403c3:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8fdbaadb55db4719aed80ee3bd9e4cff"><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:0">The number of minutes in an hour is </span><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:1">`60`</span><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:2">, and</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8fdbaadb55db4719aed80ee3bd9e4cff"><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:0">The number of minutes in an hour is </span><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:1">`60`</span><span data-offset-key="8fdbaadb55db4719aed80ee3bd9e4cff:2">, and</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ef3dd3b359a4b65aca125b58e19405e"><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:0">The number of seconds in a minute is </span><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:1">`60`</span><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:2"> as well.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ef3dd3b359a4b65aca125b58e19405e"><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:0">The number of seconds in a minute is </span><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:1">`60`</span><span data-offset-key="6ef3dd3b359a4b65aca125b58e19405e:2"> as well.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c0ffc02375b498394f9b6e3abd863cd"><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:0">So it’s </span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:1">`24 * 60 * 60`</span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:2">, or </span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:3">`86400`</span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8c0ffc02375b498394f9b6e3abd863cd"><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:0">So it’s </span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:1">`24 * 60 * 60`</span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:2">, or </span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:3">`86400`</span><span data-offset-key="8c0ffc02375b498394f9b6e3abd863cd:4">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="961baf7a6f904bafbca13ee5ca580257"><span data-offset-key="961baf7a6f904bafbca13ee5ca580257:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02288b21ca294088823dd7a7d12256ba"><span data-offset-key="02288b21ca294088823dd7a7d12256ba:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3466fc8e7866414fb429cadf0f163f0e"><span data-offset-key="3466fc8e7866414fb429cadf0f163f0e:0">Solved a Programming Exercise involving common scenarios, using Python code involving:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3466fc8e7866414fb429cadf0f163f0e"><span data-offset-key="3466fc8e7866414fb429cadf0f163f0e:0">Solved a Programming Exercise involving common scenarios, using Python code involving:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e3a4366affd4e62b09341bb0760d544"><span data-offset-key="6e3a4366affd4e62b09341bb0760d544:0">Expressions</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e3a4366affd4e62b09341bb0760d544"><span data-offset-key="6e3a4366affd4e62b09341bb0760d544:0">Expressions</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c675561a66468486693ec5b5a9ddcd"><span data-offset-key="64c675561a66468486693ec5b5a9ddcd:0">Operators</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c675561a66468486693ec5b5a9ddcd"><span data-offset-key="64c675561a66468486693ec5b5a9ddcd:0">Operators</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49dac4cc0db34130bf000857b4cfecf1"><span data-offset-key="49dac4cc0db34130bf000857b4cfecf1:0">Literals</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49dac4cc0db34130bf000857b4cfecf1"><span data-offset-key="49dac4cc0db34130bf000857b4cfecf1:0">Literals</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2a5c28e4faae4ec0965106856f515176"><span data-offset-key="2a5c28e4faae4ec0965106856f515176:0">Step 05: Puzzles On Expressions</span></span></span>
 
@@ -691,9 +690,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="807896f2e32b4ebfae2051f48856245b"><span data-offset-key="807896f2e32b4ebfae2051f48856245b:0">Operators in Python are divided into two sets as follows:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bc15305c6014a1b9f7cf657cc02a980"><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:0">`**`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:1">, </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:2">`*`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:3">, </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:4">`/`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:5"> and </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:6">`%`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:7"> have higher precedence, or priority.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9bc15305c6014a1b9f7cf657cc02a980"><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:0">`**`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:1">, </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:2">`*`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:3">, </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:4">`/`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:5"> and </span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:6">`%`</span><span data-offset-key="9bc15305c6014a1b9f7cf657cc02a980:7"> have higher precedence, or priority.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ee4d1437d54481ebe96dedc4b25317d"><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:0">`+`</span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:1"> and </span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:2">`-`</span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:3"> have a lower precedence.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ee4d1437d54481ebe96dedc4b25317d"><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:0">`+`</span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:1"> and </span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:2">`-`</span><span data-offset-key="2ee4d1437d54481ebe96dedc4b25317d:3"> have a lower precedence.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e986931a711b418093893a2d21687f3a"><span data-offset-key="e986931a711b418093893a2d21687f3a:0">Sub-expressions involving operators from {</span><span data-offset-key="e986931a711b418093893a2d21687f3a:1">`*`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:2">, </span><span data-offset-key="e986931a711b418093893a2d21687f3a:3">`/`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:4">, </span><span data-offset-key="e986931a711b418093893a2d21687f3a:5">`%`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:6">, </span><span data-offset-key="e986931a711b418093893a2d21687f3a:7">`**`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:8">} are evaluated before those involving operators from {</span><span data-offset-key="e986931a711b418093893a2d21687f3a:9">`+`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:10">, </span><span data-offset-key="e986931a711b418093893a2d21687f3a:11">`-`</span><span data-offset-key="e986931a711b418093893a2d21687f3a:12">}</span></span></span>
 
@@ -715,17 +714,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1bd99152293e475ea3a9575224b00642"><span data-offset-key="1bd99152293e475ea3a9575224b00642:0">In this step, we went about solving a few puzzles about expressions, touching concepts such as:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a492da803bd4f158a770361865d52ae"><span data-offset-key="8a492da803bd4f158a770361865d52ae:0">`SyntaxError`</span><span data-offset-key="8a492da803bd4f158a770361865d52ae:1"> for incorrect operators</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a492da803bd4f158a770361865d52ae"><span data-offset-key="8a492da803bd4f158a770361865d52ae:0">`SyntaxError`</span><span data-offset-key="8a492da803bd4f158a770361865d52ae:1"> for incorrect operators</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71a013b008ea46598e65150fde28dc1d"><span data-offset-key="71a013b008ea46598e65150fde28dc1d:0">White-space in expressions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71a013b008ea46598e65150fde28dc1d"><span data-offset-key="71a013b008ea46598e65150fde28dc1d:0">White-space in expressions</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2be8cff2620148a581fd6ce1b419ab11"><span data-offset-key="2be8cff2620148a581fd6ce1b419ab11:0">Floating Point division by default</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2be8cff2620148a581fd6ce1b419ab11"><span data-offset-key="2be8cff2620148a581fd6ce1b419ab11:0">Floating Point division by default</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16f42d03fe9948ff80c497c10607eb4e"><span data-offset-key="16f42d03fe9948ff80c497c10607eb4e:0">Operator Precedence</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="16f42d03fe9948ff80c497c10607eb4e"><span data-offset-key="16f42d03fe9948ff80c497c10607eb4e:0">Operator Precedence</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="87453a4aaf874299afb4031f12eac727"><span data-offset-key="87453a4aaf874299afb4031f12eac727:0">Using parentheses</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="87453a4aaf874299afb4031f12eac727"><span data-offset-key="87453a4aaf874299afb4031f12eac727:0">Using parentheses</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="16e36137345248c6a37668335d87e008"><span data-offset-key="16e36137345248c6a37668335d87e008:0">Step 06: Printing Text</span></span></span>
 
@@ -765,17 +764,17 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a23bb11f880d4e868f18b35ad0a1e508"><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:0">`print("Hello")`</span><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:1"> finally results in </span><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:2">`"Hello"`</span><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:3"> being printed out. To be able to print </span><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:4">`"Hello"`</span><span data-offset-key="a23bb11f880d4e868f18b35ad0a1e508:5">, the things we need to do are:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e5f09a4e320b4a82aae430f3f358862f"><span data-offset-key="e5f09a4e320b4a82aae430f3f358862f:0">Typing the method name print ,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e5f09a4e320b4a82aae430f3f358862f"><span data-offset-key="e5f09a4e320b4a82aae430f3f358862f:0">Typing the method name print ,</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17a031cb4a464baca89ee78ac27c2717"><span data-offset-key="17a031cb4a464baca89ee78ac27c2717:0">open parentheses ( ,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="17a031cb4a464baca89ee78ac27c2717"><span data-offset-key="17a031cb4a464baca89ee78ac27c2717:0">open parentheses ( ,</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba5cdf92dc374f768edb3b72a4dc5c88"><span data-offset-key="ba5cdf92dc374f768edb3b72a4dc5c88:0">Followed by a double quote " ,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba5cdf92dc374f768edb3b72a4dc5c88"><span data-offset-key="ba5cdf92dc374f768edb3b72a4dc5c88:0">Followed by a double quote " ,</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a63d9ed3b9e843ee8508f88b975cd0e1"><span data-offset-key="a63d9ed3b9e843ee8508f88b975cd0e1:0">The text Hello,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a63d9ed3b9e843ee8508f88b975cd0e1"><span data-offset-key="a63d9ed3b9e843ee8508f88b975cd0e1:0">The text Hello,</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ccb9882265c44bc9870b008fa138b75d"><span data-offset-key="ccb9882265c44bc9870b008fa138b75d:0">and another double quote " ,</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ccb9882265c44bc9870b008fa138b75d"><span data-offset-key="ccb9882265c44bc9870b008fa138b75d:0">and another double quote " ,</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39f49a508d714120a616f6be8b2ec27d"><span data-offset-key="39f49a508d714120a616f6be8b2ec27d:0">finished off with a closed parentheses ).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39f49a508d714120a616f6be8b2ec27d"><span data-offset-key="39f49a508d714120a616f6be8b2ec27d:0">finished off with a closed parentheses ).</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="56070911544a4a7e831b1138a7ff0536"><span data-offset-key="56070911544a4a7e831b1138a7ff0536:0">What we have written here is called a </span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:1">**statement**</span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:2">, a simple piece of code to execute. As part of this statement, we are </span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:3">**calling**</span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:4"> a </span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:5">**function**</span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:6">, named </span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:7">`print()`</span><span data-offset-key="56070911544a4a7e831b1138a7ff0536:8">.</span></span></span>
 
@@ -795,13 +794,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="89d4a09b1f6b4f62aa3ce8c7d9eb2030"><span data-offset-key="89d4a09b1f6b4f62aa3ce8c7d9eb2030:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61bc5258c531425d9e92fffe8d4603ea"><span data-offset-key="61bc5258c531425d9e92fffe8d4603ea:0">Understood that displaying text on the console is not the same as printing an expression value</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="61bc5258c531425d9e92fffe8d4603ea"><span data-offset-key="61bc5258c531425d9e92fffe8d4603ea:0">Understood that displaying text on the console is not the same as printing an expression value</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d0cdaa8535a4c33a8c749c0f20601f5"><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:0">Learned about the </span><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:1">`print()`</span><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:2"> function, that is used to print text in Python.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1d0cdaa8535a4c33a8c749c0f20601f5"><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:0">Learned about the </span><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:1">`print()`</span><span data-offset-key="1d0cdaa8535a4c33a8c749c0f20601f5:2"> function, that is used to print text in Python.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f22388aa2d21489eb9baed711347a9bb"><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:0">Found a way to print the text </span><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:1">`"5 * 6 = 30"`</span><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:2"> on the console, by hard-coding values in a string</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f22388aa2d21489eb9baed711347a9bb"><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:0">Found a way to print the text </span><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:1">`"5 * 6 = 30"`</span><span data-offset-key="f22388aa2d21489eb9baed711347a9bb:2"> on the console, by hard-coding values in a string</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="32d7b7a81b8b42cd9655eba0f4dc1693"><span data-offset-key="32d7b7a81b8b42cd9655eba0f4dc1693:0">Step 07: Puzzles On Utility Methods, And Strings</span></span></span>
 
@@ -873,7 +872,7 @@
 
         >>> print("Hello"")      File "<stdin>", line 1        print("Hello"")                      ^    SyntaxError: EOL while scanning string literal
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce88dd0bdbc64caeb2b83d0187d10741"><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:0">If you want to print a </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:1">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:2"> inside a string, use an escape sequence. In Python, the symbol </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:3">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:4"> is used as an </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:5">**escape character**</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:6">. On using </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:7">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:8"> adjacent to the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:9">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:10">, it prints </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:11">`Hello"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:12"> (notice the trailing </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:13">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:14">). We have used the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:15">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:16"> to </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:17">**escape**</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:18"> the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:19">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:20">, by forming an </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:21">*escape sequence*</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:22"> </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:23">`\"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:24">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ce88dd0bdbc64caeb2b83d0187d10741"><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:0">If you want to print a </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:1">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:2"> inside a string, use an escape sequence. In Python, the symbol </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:3">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:4"> is used as an </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:5">**escape character**</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:6">. On using </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:7">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:8"> adjacent to the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:9">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:10">, it prints </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:11">`Hello"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:12"> (notice the trailing </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:13">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:14">). We have used the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:15">`'\'`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:16"> to </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:17">**escape**</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:18"> the </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:19">`"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:20">, by forming an </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:21">_escape sequence_</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:22"> </span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:23">`\"`</span><span data-offset-key="ce88dd0bdbc64caeb2b83d0187d10741:24">.</span></span></span>
 
     >>> print("Hello\"")Hello">>>
 
@@ -895,29 +894,29 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="21edd8abd485484394b491d2a017e7d9"><span data-offset-key="21edd8abd485484394b491d2a017e7d9:0">The above two examples can be used as a tip by newbie programmers when they form string literals, and want to use them in their code:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7848f8c58e5c47afaaa376567e661fa9"><span data-offset-key="7848f8c58e5c47afaaa376567e661fa9:0">If the string literal contains one or more single quotes, then you can use double quotes to enclose it.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7848f8c58e5c47afaaa376567e661fa9"><span data-offset-key="7848f8c58e5c47afaaa376567e661fa9:0">If the string literal contains one or more single quotes, then you can use double quotes to enclose it.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="85b72da9872c44f998a65edcbb2f9510"><span data-offset-key="85b72da9872c44f998a65edcbb2f9510:0">However if the string contains one or more double quotes, then prefer to use single quotes to enclose it.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="85b72da9872c44f998a65edcbb2f9510"><span data-offset-key="85b72da9872c44f998a65edcbb2f9510:0">However if the string contains one or more double quotes, then prefer to use single quotes to enclose it.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="87323919e65244ba8411347e7cf74822"><span data-offset-key="87323919e65244ba8411347e7cf74822:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f14a06312da841f7959ce4abbf2f4296"><span data-offset-key="f14a06312da841f7959ce4abbf2f4296:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58aa5dffb18a424e90d22c817dca1860"><span data-offset-key="58aa5dffb18a424e90d22c817dca1860:0">Explored a number of puzzles related to code involving:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58aa5dffb18a424e90d22c817dca1860"><span data-offset-key="58aa5dffb18a424e90d22c817dca1860:0">Explored a number of puzzles related to code involving:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d69bd6f3b5624018967790c0e96cb176"><span data-offset-key="d69bd6f3b5624018967790c0e96cb176:0">Built-in functions for numeric calculations</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d69bd6f3b5624018967790c0e96cb176"><span data-offset-key="d69bd6f3b5624018967790c0e96cb176:0">Built-in functions for numeric calculations</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c87910edba6408d83a1b789ee767df4"><span data-offset-key="6c87910edba6408d83a1b789ee767df4:0">The </span><span data-offset-key="6c87910edba6408d83a1b789ee767df4:1">`print()`</span><span data-offset-key="6c87910edba6408d83a1b789ee767df4:2"> function to display expressions and strings</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6c87910edba6408d83a1b789ee767df4"><span data-offset-key="6c87910edba6408d83a1b789ee767df4:0">The </span><span data-offset-key="6c87910edba6408d83a1b789ee767df4:1">`print()`</span><span data-offset-key="6c87910edba6408d83a1b789ee767df4:2"> function to display expressions and strings</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60efa7d7660b453b826033d9d95b6da0"><span data-offset-key="60efa7d7660b453b826033d9d95b6da0:0">Covered the following aspects of the above utilities:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60efa7d7660b453b826033d9d95b6da0"><span data-offset-key="60efa7d7660b453b826033d9d95b6da0:0">Covered the following aspects of the above utilities:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff267b0d8eed465389d3335de6c44fef"><span data-offset-key="ff267b0d8eed465389d3335de6c44fef:0">Case-sensitive aspects of names and strings</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff267b0d8eed465389d3335de6c44fef"><span data-offset-key="ff267b0d8eed465389d3335de6c44fef:0">Case-sensitive aspects of names and strings</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dbcf9a3396c48019a0d9fcf88b54519"><span data-offset-key="0dbcf9a3396c48019a0d9fcf88b54519:0">The role played by whitespace</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0dbcf9a3396c48019a0d9fcf88b54519"><span data-offset-key="0dbcf9a3396c48019a0d9fcf88b54519:0">The role played by whitespace</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3427c4f21f34d22a0b326ef66acbe97"><span data-offset-key="d3427c4f21f34d22a0b326ef66acbe97:0">The escape character, and common escape sequences</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3427c4f21f34d22a0b326ef66acbe97"><span data-offset-key="d3427c4f21f34d22a0b326ef66acbe97:0">The escape character, and common escape sequences</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b697c70f2b7b4ab8aeac5e630846553c"><span data-offset-key="b697c70f2b7b4ab8aeac5e630846553c:0">Step 08: Formatted Output With print()</span></span></span>
 
@@ -975,13 +974,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed6214b5bbf1428d97e71783822a44e6"><span data-offset-key="ed6214b5bbf1428d97e71783822a44e6:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91fef50319734e0b8b510718b3054e35"><span data-offset-key="91fef50319734e0b8b510718b3054e35:0">Discovered that Python provides a way to do formatted printing of string values</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91fef50319734e0b8b510718b3054e35"><span data-offset-key="91fef50319734e0b8b510718b3054e35:0">Discovered that Python provides a way to do formatted printing of string values</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6ed51103cb0461a9ee19f561c2e23ef"><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:0">Looked at the </span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:1">`format()`</span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:2"> function, and saw how to call it within </span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:3">`print()`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6ed51103cb0461a9ee19f561c2e23ef"><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:0">Looked at the </span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:1">`format()`</span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:2"> function, and saw how to call it within </span><span data-offset-key="f6ed51103cb0461a9ee19f561c2e23ef:3">`print()`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="56fc2cf0c1bd4b1984282f6b980522c7"><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:0">Observed how we could work only with the indexes of parameters to </span><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:1">`format()`</span><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:2">, and change the parameters we pass without changing the code</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="56fc2cf0c1bd4b1984282f6b980522c7"><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:0">Observed how we could work only with the indexes of parameters to </span><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:1">`format()`</span><span data-offset-key="56fc2cf0c1bd4b1984282f6b980522c7:2">, and change the parameters we pass without changing the code</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f6cdeb35409e4f4482b6bcb845d21ec4"><span data-offset-key="f6cdeb35409e4f4482b6bcb845d21ec4:0">Step 09: Puzzles On format() and print()</span></span></span>
 
@@ -1013,7 +1012,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ac2c8a3221b4d8db82984ed28b8132a"><span data-offset-key="6ac2c8a3221b4d8db82984ed28b8132a:0">Now, are there are other types of data that </span><span data-offset-key="6ac2c8a3221b4d8db82984ed28b8132a:1">`format()`</span><span data-offset-key="6ac2c8a3221b4d8db82984ed28b8132a:2"> works with? Yes, strings can join the party.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e907065355a4765b6cc2d9ab373bb23"><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:0">Let’s say over here, we do: </span><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:1">`print("My name is                                       {0}".format("Ranga"))`</span><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:2">. What would happen?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e907065355a4765b6cc2d9ab373bb23"><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:0">Let’s say over here, we do: </span><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:1">`print("My name is {0}".format("Ranga"))`</span><span data-offset-key="9e907065355a4765b6cc2d9ab373bb23:2">. What would happen?</span></span></span>
 
         >>> print("My name is {0}".format("Ranga"))    My name is Ranga
 
@@ -1023,15 +1022,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d30cd498745c4bcf91846b1f7ef48ee9"><span data-offset-key="d30cd498745c4bcf91846b1f7ef48ee9:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b547a250cca4430db7c46784325a4b29"><span data-offset-key="b547a250cca4430db7c46784325a4b29:0">Understood the behavior when the parameters passed to </span><span data-offset-key="b547a250cca4430db7c46784325a4b29:1">`format()`</span><span data-offset-key="b547a250cca4430db7c46784325a4b29:2">:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b547a250cca4430db7c46784325a4b29"><span data-offset-key="b547a250cca4430db7c46784325a4b29:0">Understood the behavior when the parameters passed to </span><span data-offset-key="b547a250cca4430db7c46784325a4b29:1">`format()`</span><span data-offset-key="b547a250cca4430db7c46784325a4b29:2">:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afc6559d02b043a48715d5d44e257049"><span data-offset-key="afc6559d02b043a48715d5d44e257049:0">Exceed the indexes accessed by </span><span data-offset-key="afc6559d02b043a48715d5d44e257049:1">`print()`</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="afc6559d02b043a48715d5d44e257049"><span data-offset-key="afc6559d02b043a48715d5d44e257049:0">Exceed the indexes accessed by </span><span data-offset-key="afc6559d02b043a48715d5d44e257049:1">`print()`</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e2cc7c4701c4d9a868aa49d81b82a4b"><span data-offset-key="6e2cc7c4701c4d9a868aa49d81b82a4b:0">Are less than the indexes accessed by </span><span data-offset-key="6e2cc7c4701c4d9a868aa49d81b82a4b:1">`print()`</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e2cc7c4701c4d9a868aa49d81b82a4b"><span data-offset-key="6e2cc7c4701c4d9a868aa49d81b82a4b:0">Are less than the indexes accessed by </span><span data-offset-key="6e2cc7c4701c4d9a868aa49d81b82a4b:1">`print()`</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e74ced25b84b4d558d67bbda50c8686f"><span data-offset-key="e74ced25b84b4d558d67bbda50c8686f:0">Are of type integer, floating-point or string</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e74ced25b84b4d558d67bbda50c8686f"><span data-offset-key="e74ced25b84b4d558d67bbda50c8686f:0">Are of type integer, floating-point or string</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2d74c58ad655434c8e2e8d03a5890f43"><span data-offset-key="2d74c58ad655434c8e2e8d03a5890f43:0">Step 10: Introducing Variables</span></span></span>
 
@@ -1079,7 +1078,7 @@
 
         >>> index = 1    >>> print("{0} * {1} = {2}".format(5,index,5*index))    5 * 1 = 5    >>> index = 2    >>> print("{0} * {1} = {2}".format(5,index,5*index))    5 * 2 = 10    >>> index = 3    >>> print("{0} * {1} = {2}".format(5,index,5*index))    5 * 3 = 15
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb8d0e91f306454287b98893daabe1c6"><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:0">With the same statement </span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:1">`print("{0} * {1} =                                       {2}".format(5,index,5*index))`</span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:2">, we are able to print different values. The value of </span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:3">`index`</span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:4"> varies, but the code remains the same!</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb8d0e91f306454287b98893daabe1c6"><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:0">With the same statement </span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:1">`print("{0} * {1} = {2}".format(5,index,5*index))`</span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:2">, we are able to print different values. The value of </span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:3">`index`</span><span data-offset-key="eb8d0e91f306454287b98893daabe1c6:4"> varies, but the code remains the same!</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4d85a70dd90e45fa8dc50abad3859491"><span data-offset-key="4d85a70dd90e45fa8dc50abad3859491:0">Variables make the program much more easier to read, as well as more generic.</span></span></span>
 
@@ -1097,7 +1096,7 @@
 
         >>> a = 5    >>> b = 6    >>> c = 7    >>> print("5 + 6 + 7 = 18")    5 + 6 + 7 = 18    >>> print("5 + 6 + 7 = 18".format(a,b,c,a+b+c))    5 + 6 + 7 = 18
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57f66cb5b7bf4ee5b04247b99db6abc3"><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:0">The way you can do that is with code like this: </span><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:1">`print("{0} + {1} + {2} =                                       {3}".format(a,b,c,a+b+c))`</span><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57f66cb5b7bf4ee5b04247b99db6abc3"><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:0">The way you can do that is with code like this: </span><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:1">`print("{0} + {1} + {2} = {3}".format(a,b,c,a+b+c))`</span><span data-offset-key="57f66cb5b7bf4ee5b04247b99db6abc3:2">.</span></span></span>
 
         >>> print("{0} + {1} + {2} = {3}".format(a,b,c,a+b+c))    5 + 6 + 7 = 18
 
@@ -1113,11 +1112,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38032a3f6eb449beba4eb61c7a6ab392"><span data-offset-key="38032a3f6eb449beba4eb61c7a6ab392:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="530654d0b7cb40bb992bfe19ece6974d"><span data-offset-key="530654d0b7cb40bb992bfe19ece6974d:0">Were introduced to variables, or names, in Python</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="530654d0b7cb40bb992bfe19ece6974d"><span data-offset-key="530654d0b7cb40bb992bfe19ece6974d:0">Were introduced to variables, or names, in Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a22413ed2eb43a49f7b23dc3a0a671b"><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:0">Observed how we could pass in values of variables to the </span><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:1">`format()`</span><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:2"> function</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a22413ed2eb43a49f7b23dc3a0a671b"><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:0">Observed how we could pass in values of variables to the </span><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:1">`format()`</span><span data-offset-key="0a22413ed2eb43a49f7b23dc3a0a671b:2"> function</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ea38cfa2987245fe96fc807a56543440"><span data-offset-key="ea38cfa2987245fe96fc807a56543440:0">Step 11: Puzzles On Variables</span></span></span>
 
@@ -1159,19 +1158,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7bc10cfb05184855b24d92ada795daca"><span data-offset-key="7bc10cfb05184855b24d92ada795daca:0">To summarize the rules for naming variables.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb58ef32631e4d7bbb0aeae14c176458"><span data-offset-key="cb58ef32631e4d7bbb0aeae14c176458:0">This should start with an alphabet (a capital or a small alphabet) or underscore.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb58ef32631e4d7bbb0aeae14c176458"><span data-offset-key="cb58ef32631e4d7bbb0aeae14c176458:0">This should start with an alphabet (a capital or a small alphabet) or underscore.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e62145e2b0e4430c9f2ea1f32b63903e"><span data-offset-key="e62145e2b0e4430c9f2ea1f32b63903e:0">Starting the second character, it can be alphabet, or underscore, or a numeric value.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e62145e2b0e4430c9f2ea1f32b63903e"><span data-offset-key="e62145e2b0e4430c9f2ea1f32b63903e:0">Starting the second character, it can be alphabet, or underscore, or a numeric value.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c45dd20d2fe14aca9178d4763f9ae9b6"><span data-offset-key="c45dd20d2fe14aca9178d4763f9ae9b6:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="897a3a65ea9c4039bad47056563d49e4"><span data-offset-key="897a3a65ea9c4039bad47056563d49e4:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c48bc848a746028691df5c24960850"><span data-offset-key="64c48bc848a746028691df5c24960850:0">Understood that a variable needs to be defined before it is used</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64c48bc848a746028691df5c24960850"><span data-offset-key="64c48bc848a746028691df5c24960850:0">Understood that a variable needs to be defined before it is used</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c9252e52f074ba2a484b60f253bc80b"><span data-offset-key="4c9252e52f074ba2a484b60f253bc80b:0">Learned that there are certain rules to be followed while giving names to variables</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4c9252e52f074ba2a484b60f253bc80b"><span data-offset-key="4c9252e52f074ba2a484b60f253bc80b:0">Learned that there are certain rules to be followed while giving names to variables</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a0a6e4e762c74f68b4a4f16c2286cb0d"><span data-offset-key="a0a6e4e762c74f68b4a4f16c2286cb0d:0">Step 12: Introducing Assignment</span></span></span>
 
@@ -1215,11 +1214,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27fc1e7f1f5f4461a0c139ea77d9caf9"><span data-offset-key="27fc1e7f1f5f4461a0c139ea77d9caf9:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c88d7015796441cb7c14f7223a7265f"><span data-offset-key="9c88d7015796441cb7c14f7223a7265f:0">Learned what happens when you assign a value to a variable, which may or may not exist</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9c88d7015796441cb7c14f7223a7265f"><span data-offset-key="9c88d7015796441cb7c14f7223a7265f:0">Learned what happens when you assign a value to a variable, which may or may not exist</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d5d06db00224f6cad8bfded348cea7c"><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:0">Discovered that literal constants cannot be placed on the left hand side of the assignment(</span><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:1">`=`</span><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:2">) operator</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d5d06db00224f6cad8bfded348cea7c"><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:0">Discovered that literal constants cannot be placed on the left hand side of the assignment(</span><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:1">`=`</span><span data-offset-key="9d5d06db00224f6cad8bfded348cea7c:2">) operator</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="1f054305e189423490d6bce0af699110"><span data-offset-key="1f054305e189423490d6bce0af699110:0">Step 13: Introducing Formatted Printing</span></span></span>
 
@@ -1249,7 +1248,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="325f2d6608c74949ac5b0b0ead380a2e"><span data-offset-key="325f2d6608c74949ac5b0b0ead380a2e:0">You can see how easy it turns out to be!</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8ce5d726bfeb4d7e845dce422d208723"><span data-offset-key="8ce5d726bfeb4d7e845dce422d208723:0">Step 14: The PMT-Challenge Revisited</span></span></span>
 
@@ -1279,11 +1278,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="421d624e1df04ca2896940a7ffc9c197"><span data-offset-key="421d624e1df04ca2896940a7ffc9c197:0">You would see that it prints from </span><span data-offset-key="421d624e1df04ca2896940a7ffc9c197:1">`1`</span><span data-offset-key="421d624e1df04ca2896940a7ffc9c197:2"> to </span><span data-offset-key="421d624e1df04ca2896940a7ffc9c197:3">`9`</span><span data-offset-key="421d624e1df04ca2896940a7ffc9c197:4">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93994d9c874d4059aac10197039be2d1"><span data-offset-key="93994d9c874d4059aac10197039be2d1:0">When we run a loop in </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:1">`range(1, 10)`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:2">, </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:3">`1`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:4"> is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:5">*inclusive*</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:6"> and </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:7">`10`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:8"> is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:9">**exclusive**</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:10">.The loop runs from </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:11">`1`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:12"> to the value before </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:13">`10`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:14">, which is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:15">`9`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:16">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="93994d9c874d4059aac10197039be2d1"><span data-offset-key="93994d9c874d4059aac10197039be2d1:0">When we run a loop in </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:1">`range(1, 10)`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:2">, </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:3">`1`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:4"> is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:5">_inclusive_</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:6"> and </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:7">`10`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:8"> is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:9">**exclusive**</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:10">.The loop runs from </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:11">`1`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:12"> to the value before </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:13">`10`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:14">, which is </span><span data-offset-key="93994d9c874d4059aac10197039be2d1:15">`9`</span><span data-offset-key="93994d9c874d4059aac10197039be2d1:16">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a05d079a4b574a83b3f94922b4b937ea"><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:0">The leading whitespace before </span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:1">`print(i)`</span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:2"> is called </span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:3">**indentation**</span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:4">. We’ll talk about indentation later, when we talk about puzzles related to the </span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:5">`for`</span><span data-offset-key="a05d079a4b574a83b3f94922b4b937ea:6"> loop.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4c19dca2a3948f4a7cc156fd5157b52"><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:0">How can you extend this concept to solving our </span><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:1">*PMT-Challenge*</span><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:2"> problem?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a4c19dca2a3948f4a7cc156fd5157b52"><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:0">How can you extend this concept to solving our </span><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:1">_PMT-Challenge_</span><span data-offset-key="a4c19dca2a3948f4a7cc156fd5157b52:2"> problem?</span></span></span>
 
         >>> print(f"{5} * {index} = {5*index}")    5 * 7 = 35
 
@@ -1301,9 +1300,9 @@
 
         >>> for i in range(1,11):    ...   print(f"5 * {i} = {5 * i}")    ...    5 * 1 = 5    5 * 2 = 10    5 * 3 = 15    5 * 4 = 20    5 * 5 = 25    5 * 6 = 30    5 * 7 = 35    5 * 8 = 40    5 * 9 = 45    5 * 10 = 50    >>> 5 * 4 * 50    1000
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46dc29cd2c7a4ead8330b359a0e68fa1"><span data-offset-key="46dc29cd2c7a4ead8330b359a0e68fa1:0">`print(f"5 * {i} = {5 *                                       i}")`</span><span data-offset-key="46dc29cd2c7a4ead8330b359a0e68fa1:1"> prints a specific multiple of 5.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46dc29cd2c7a4ead8330b359a0e68fa1"><span data-offset-key="46dc29cd2c7a4ead8330b359a0e68fa1:0">`print(f"5 * {i} = {5 * i}")`</span><span data-offset-key="46dc29cd2c7a4ead8330b359a0e68fa1:1"> prints a specific multiple of 5.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="835ffde70cbf45c192d46d9f130acc4d"><span data-offset-key="835ffde70cbf45c192d46d9f130acc4d:0">Step 15: Loops</span></span></span>
 
@@ -1351,21 +1350,21 @@
 
         >>> for i in range (1,11,2):    ...   print(i)    ...    1    3    5    7    9
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a35c8b9ffaf2402488ca1a31ca9d59d5"><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:0">In </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:1">`for i in range(1, 11, 2)`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:2">, we pass in a third argument, called a </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:3">*step*</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:4">. After each iteration, the value of </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:5">`i`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:6"> is increment by </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:7">`step`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a35c8b9ffaf2402488ca1a31ca9d59d5"><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:0">In </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:1">`for i in range(1, 11, 2)`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:2">, we pass in a third argument, called a </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:3">_step_</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:4">. After each iteration, the value of </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:5">`i`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:6"> is increment by </span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:7">`step`</span><span data-offset-key="a35c8b9ffaf2402488ca1a31ca9d59d5:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="273292cb93654897a2c2c59b1ccc0b7c"><span data-offset-key="273292cb93654897a2c2c59b1ccc0b7c:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="581b2a4d152f4546abed90bbb4f0721e"><span data-offset-key="581b2a4d152f4546abed90bbb4f0721e:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f7f6e727a4f456187d611f3afda81f1"><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:0">Looked at a few puzzles about the </span><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:1">`for`</span><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:2"> loop, which lay emphasis on the following aspects of for:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5f7f6e727a4f456187d611f3afda81f1"><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:0">Looked at a few puzzles about the </span><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:1">`for`</span><span data-offset-key="5f7f6e727a4f456187d611f3afda81f1:2"> loop, which lay emphasis on the following aspects of for:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27045876dd7841fd9b9ba08fae3f0d7e"><span data-offset-key="27045876dd7841fd9b9ba08fae3f0d7e:0">The importance of syntax elements such as the colon</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="27045876dd7841fd9b9ba08fae3f0d7e"><span data-offset-key="27045876dd7841fd9b9ba08fae3f0d7e:0">The importance of syntax elements such as the colon</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea65199e2cf84556b119a261d7812b34"><span data-offset-key="ea65199e2cf84556b119a261d7812b34:0">Indentation</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea65199e2cf84556b119a261d7812b34"><span data-offset-key="ea65199e2cf84556b119a261d7812b34:0">Indentation</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a16499f2a54459fbf089a56f82f4634"><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:0">Variations of the </span><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:1">`range()`</span><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:2"> function</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a16499f2a54459fbf089a56f82f4634"><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:0">Variations of the </span><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:1">`range()`</span><span data-offset-key="4a16499f2a54459fbf089a56f82f4634:2"> function</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fa2db0476be742768a90911c0c295655"><span data-offset-key="fa2db0476be742768a90911c0c295655:0">Step 16: Programming Exercise PE-BA-02</span></span></span>
 
@@ -1435,9 +1434,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="31db39e390a346a2a12dc2ea4ab77211"><span data-offset-key="31db39e390a346a2a12dc2ea4ab77211:0">In this video, we: \* Tried out a few exercises involving the for loop, by playing around with printing sequences of numbers.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e"><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:0">Used the for loop to simplify the solution to the </span><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:1">*PMT-Challenge*</span><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:2"> problem.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e"><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:0">Used the for loop to simplify the solution to the </span><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:1">_PMT-Challenge_</span><span data-offset-key="eca4847e68a14ab6ae9ca6bb1fdd3c7e:2"> problem.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4ae5e78a7ff24631ad7bcd668d8fa26d"><span data-offset-key="4ae5e78a7ff24631ad7bcd668d8fa26d:0">Step 17: Review: The Basics Of Python</span></span></span>
 
@@ -1445,21 +1444,21 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3158f76c110146a5acc87a2135ee3712"><span data-offset-key="3158f76c110146a5acc87a2135ee3712:0">Let’s quickly revise the important concepts we have learned during this small journey.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5835be2869934fb8aeaaebebfef93d08"><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:0">`1`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:1">, </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:2">`11`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:3">, </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:4">`5`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:5">, … are all called literals because these are constant values. Their values don’t really change. \_Consider </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:6">`` 5 _ 4 _ 50`. This is an expression.                                             `_`is an operator, and`5`,                                             `4`and`50 ``</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:7"> are operands.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5835be2869934fb8aeaaebebfef93d08"><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:0">`1`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:1">, </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:2">`11`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:3">, </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:4">`5`</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:5">, … are all called literals because these are constant values. Their values don’t really change. \_Consider </span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:6">`` 5 _ 4 _ 50`. This is an expression. `_`is an operator, and`5`, `4`and`50 ``</span><span data-offset-key="5835be2869934fb8aeaaebebfef93d08:7"> are operands.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9aef2074d41465eaa6f1c7054bb4697"><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:0">The name </span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:1">`i`</span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:2"> in </span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:3">`i = 1`</span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:4">, is called a variable. It can refer to different values, at different points in time.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c9aef2074d41465eaa6f1c7054bb4697"><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:0">The name </span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:1">`i`</span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:2"> in </span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:3">`i = 1`</span><span data-offset-key="c9aef2074d41465eaa6f1c7054bb4697:4">, is called a variable. It can refer to different values, at different points in time.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c40c2ab92e4592acdb35c6cad6d645"><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:0">`range()`</span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:1"> and </span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:2">`print()`</span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:3"> are in-built Python functions.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c40c2ab92e4592acdb35c6cad6d645"><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:0">`range()`</span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:1"> and </span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:2">`print()`</span><span data-offset-key="66c40c2ab92e4592acdb35c6cad6d645:3"> are in-built Python functions.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="640b25bf0d1e43a1bdb22f5e59a10385"><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:0">Every complete line of code is called statement. The specific statement </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:1">`print()`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:2">, is invoking a method. The other statement which we looked at earlier, was an assignment statement. </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:3">`index = index + 1`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:4"> would evaluate </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:5">`index + 1`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:6">, and have the </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:7">`index`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:8"> variable refer to that value.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="640b25bf0d1e43a1bdb22f5e59a10385"><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:0">Every complete line of code is called statement. The specific statement </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:1">`print()`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:2">, is invoking a method. The other statement which we looked at earlier, was an assignment statement. </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:3">`index = index + 1`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:4"> would evaluate </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:5">`index + 1`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:6">, and have the </span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:7">`index`</span><span data-offset-key="640b25bf0d1e43a1bdb22f5e59a10385:8"> variable refer to that value.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c96a26bc85f4bb78395200a3747ee08"><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:0">The syntax of the </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:1">`for`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:2"> loop was very simple. </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:3">`for var in range(1, 10) : ...`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:4">, followed by statements you would want to execute in a loop, with indentation. For the sake of indentation we left four </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:5">`<SPACE>`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:6">s in front of each statement inside the </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:7">`for`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:8"> loop.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c96a26bc85f4bb78395200a3747ee08"><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:0">The syntax of the </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:1">`for`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:2"> loop was very simple. </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:3">`for var in range(1, 10) : ...`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:4">, followed by statements you would want to execute in a loop, with indentation. For the sake of indentation we left four </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:5">`<SPACE>`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:6">s in front of each statement inside the </span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:7">`for`</span><span data-offset-key="5c96a26bc85f4bb78395200a3747ee08:8"> loop.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="608d0763b2104af9bb277d60119da98e"><span data-offset-key="608d0763b2104af9bb277d60119da98e:0">So that, in a nutshell, is what we have learned over the course of our first section.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="605e6d23052f488ca5d94bf0acd80819"><span data-offset-key="605e6d23052f488ca5d94bf0acd80819:0">Chapter 03 - Introducing Methods</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43aff0ff73d344368586593a6f9fc3c3"><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:0">In the last section, we introduced you to the basics of python. We learned those concepts by applying them to solve the </span><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:1">*PMT-Challenge*</span><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:2"> problem. The code below is what we ended up with as we solved that chellenge.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43aff0ff73d344368586593a6f9fc3c3"><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:0">In the last section, we introduced you to the basics of python. We learned those concepts by applying them to solve the </span><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:1">_PMT-Challenge_</span><span data-offset-key="43aff0ff73d344368586593a6f9fc3c3:2"> problem. The code below is what we ended up with as we solved that chellenge.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="78ec0f88aed44ef9bd3b5c98d09f13d4"><span data-offset-key="78ec0f88aed44ef9bd3b5c98d09f13d4:0">**Snippet-01: Current Solution To PMT-Challenge**</span></span></span>
 
@@ -1475,11 +1474,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="106284773e6243a1b86f57183ae5451f"><span data-offset-key="106284773e6243a1b86f57183ae5451f:0">Similarly, </span><span data-offset-key="106284773e6243a1b86f57183ae5451f:1">`print_multiplication_table(8)`</span><span data-offset-key="106284773e6243a1b86f57183ae5451f:2">, could print the multiplication table for </span><span data-offset-key="106284773e6243a1b86f57183ae5451f:3">`8`</span><span data-offset-key="106284773e6243a1b86f57183ae5451f:4">!</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ecb5322c614453fbce512e56a7b4801"><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:0">To be able to do this, we need to create a </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:1">**method**</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:2">, or a </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:3">**function**</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:4">. Creating a method makes the code </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:5">*reusable*</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:6">, and we can invoke that method very easily by passing </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:7">*arguments*</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6ecb5322c614453fbce512e56a7b4801"><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:0">To be able to do this, we need to create a </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:1">**method**</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:2">, or a </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:3">**function**</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:4">. Creating a method makes the code </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:5">_reusable_</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:6">, and we can invoke that method very easily by passing </span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:7">_arguments_</span><span data-offset-key="6ecb5322c614453fbce512e56a7b4801:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79a6dff6f57646c0a6ce764c498de994"><span data-offset-key="79a6dff6f57646c0a6ce764c498de994:0">In this section, we take an in-depth look at methods.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="314dbf0d62d942f1b50d9e8a4bea38f6"><span data-offset-key="314dbf0d62d942f1b50d9e8a4bea38f6:0">Step 01: Defining Your First Method</span></span></span>
 
@@ -1495,15 +1494,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b00c4e58b564e06a33715e594621b29"><span data-offset-key="3b00c4e58b564e06a33715e594621b29:0">The syntax to create a method in Python is straightforward:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95c07c2bacea484c88f05c822824258d"><span data-offset-key="95c07c2bacea484c88f05c822824258d:0">At the start, use the keyword </span><span data-offset-key="95c07c2bacea484c88f05c822824258d:1">`def`</span><span data-offset-key="95c07c2bacea484c88f05c822824258d:2"> followed by a space.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="95c07c2bacea484c88f05c822824258d"><span data-offset-key="95c07c2bacea484c88f05c822824258d:0">At the start, use the keyword </span><span data-offset-key="95c07c2bacea484c88f05c822824258d:1">`def`</span><span data-offset-key="95c07c2bacea484c88f05c822824258d:2"> followed by a space.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13e39aa8ffeb432f8f80e35eae529236"><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:0">Followed by name of the method - </span><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:1">`print_hello_world_twice`</span><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="13e39aa8ffeb432f8f80e35eae529236"><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:0">Followed by name of the method - </span><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:1">`print_hello_world_twice`</span><span data-offset-key="13e39aa8ffeb432f8f80e35eae529236:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="42b2b1f8b21f43e69339d8a7eb8b5124"><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:0">Add a pair of parenthesis: </span><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:1">`()`</span><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:2">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="42b2b1f8b21f43e69339d8a7eb8b5124"><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:0">Add a pair of parenthesis: </span><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:1">`()`</span><span data-offset-key="42b2b1f8b21f43e69339d8a7eb8b5124:2">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b273bbb4ef034cdf9b19ce0506ee2e3b"><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:0">This is followed by a colon </span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:1">`:`</span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:2"> (similar to what we used in a </span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:3">`for`</span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:4"> loop).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b273bbb4ef034cdf9b19ce0506ee2e3b"><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:0">This is followed by a colon </span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:1">`:`</span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:2"> (similar to what we used in a </span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:3">`for`</span><span data-offset-key="b273bbb4ef034cdf9b19ce0506ee2e3b:4"> loop).</span></span></span>
 
-        >>> def print_hello_world_twice():...     print("Hello World")...     print("Hello World")...
+      >>> def print_hello_world_twice():...     print("Hello World")...     print("Hello World")...
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3d4601431d3945f4892d529e4b9c704e"><span data-offset-key="3d4601431d3945f4892d529e4b9c704e:0">All statements in a method should be indented. The two </span><span data-offset-key="3d4601431d3945f4892d529e4b9c704e:1">`print("Hello World")`</span><span data-offset-key="3d4601431d3945f4892d529e4b9c704e:2"> are indented. So, they are part of the method body.</span></span></span>
 
@@ -1525,13 +1524,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b551272a57b4fc1bcb8b762615da16f"><span data-offset-key="9b551272a57b4fc1bcb8b762615da16f:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f87a4194b5c343419b97730c4e860ba9"><span data-offset-key="f87a4194b5c343419b97730c4e860ba9:0">Learned we can define our own methods in the code we write</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f87a4194b5c343419b97730c4e860ba9"><span data-offset-key="f87a4194b5c343419b97730c4e860ba9:0">Learned we can define our own methods in the code we write</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="89df17be3ecb425c8141b5a008e7c016"><span data-offset-key="89df17be3ecb425c8141b5a008e7c016:0">Understood how to define a method, and all its syntax elements</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="89df17be3ecb425c8141b5a008e7c016"><span data-offset-key="89df17be3ecb425c8141b5a008e7c016:0">Understood how to define a method, and all its syntax elements</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e669b381d534ef6ac7919b2ba12ad8f"><span data-offset-key="0e669b381d534ef6ac7919b2ba12ad8f:0">Saw how we can invoke a method we write</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e669b381d534ef6ac7919b2ba12ad8f"><span data-offset-key="0e669b381d534ef6ac7919b2ba12ad8f:0">Saw how we can invoke a method we write</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="0ac21726ebf84a9db14dcc399c6fafd8"><span data-offset-key="0ac21726ebf84a9db14dcc399c6fafd8:0">Step 02: Programming Exercise PE-MD-01</span></span></span>
 
@@ -1581,19 +1580,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e6844b4696964a8eb3fa37296af85ab9"><span data-offset-key="e6844b4696964a8eb3fa37296af85ab9:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9636d57303b749799836263bea89e889"><span data-offset-key="9636d57303b749799836263bea89e889:0">Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9636d57303b749799836263bea89e889"><span data-offset-key="9636d57303b749799836263bea89e889:0">Implemented solutions to a few exercises that test our understanding of Python methods. We touched concepts such as:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfd88e70c60b4f0b9bfadea8b071b206"><span data-offset-key="cfd88e70c60b4f0b9bfadea8b071b206:0">Defining a method body</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfd88e70c60b4f0b9bfadea8b071b206"><span data-offset-key="cfd88e70c60b4f0b9bfadea8b071b206:0">Defining a method body</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="baefe2c9bdaf47aea60b7cadfdd69af2"><span data-offset-key="baefe2c9bdaf47aea60b7cadfdd69af2:0">The way to invoke a method, to run its code</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="baefe2c9bdaf47aea60b7cadfdd69af2"><span data-offset-key="baefe2c9bdaf47aea60b7cadfdd69af2:0">The way to invoke a method, to run its code</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f408a157ec1846808a9631a8f2ee0c4b"><span data-offset-key="f408a157ec1846808a9631a8f2ee0c4b:0">The difference between the two</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f408a157ec1846808a9631a8f2ee0c4b"><span data-offset-key="f408a157ec1846808a9631a8f2ee0c4b:0">The difference between the two</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ff0356fb5aec41ab8e8b12b7466d0fe0"><span data-offset-key="ff0356fb5aec41ab8e8b12b7466d0fe0:0">Step 03: Passing Parameters To Methods</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ed3eeafb8934a3ba30368a5fda55240"><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:0">In the previous step,we created methods. We defined </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:1">`print_hello_world_twice()`</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:2">, and this printed </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:3">`"Hello World"`</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:4"> twice. In this step, let’s talk about </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:5">*method arguments*</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:6">, or </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:7">*parameters*</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ed3eeafb8934a3ba30368a5fda55240"><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:0">In the previous step,we created methods. We defined </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:1">`print_hello_world_twice()`</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:2">, and this printed </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:3">`"Hello World"`</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:4"> twice. In this step, let’s talk about </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:5">_method arguments_</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:6">, or </span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:7">_parameters_</span><span data-offset-key="4ed3eeafb8934a3ba30368a5fda55240:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3980573e7a0d44d192f0347cfc3eec71"><span data-offset-key="3980573e7a0d44d192f0347cfc3eec71:0">**Snippet-01:**</span></span></span>
 
@@ -1609,7 +1608,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f0cc0f5573e406cac442a411b051c9c"><span data-offset-key="9f0cc0f5573e406cac442a411b051c9c:0">How do we define our method to accept this argument?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="971a662b3bdf4f22a5eba49a54ced721"><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:0">Let’s call our argument </span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:1">`no_of_times`</span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:2">. If you have any experience with other programming languages, they generally need you to specify the parameter type. Something like </span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:3">`This parameter is an                                       integer/float/string, or other types`</span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:4">. But Python does not require parameter type.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="971a662b3bdf4f22a5eba49a54ced721"><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:0">Let’s call our argument </span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:1">`no_of_times`</span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:2">. If you have any experience with other programming languages, they generally need you to specify the parameter type. Something like </span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:3">`This parameter is an integer/float/string, or other types`</span><span data-offset-key="971a662b3bdf4f22a5eba49a54ced721:4">. But Python does not require parameter type.</span></span></span>
 
         >>> def print_hello_world(no_of_times):    ...    print("Hello World")    ...    print(no_of_times)    ...
 
@@ -1659,13 +1658,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c4559f179e349a49a9c9d0cbe52f145"><span data-offset-key="0c4559f179e349a49a9c9d0cbe52f145:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77613bab9c8641e483fb1a9999a52a32"><span data-offset-key="77613bab9c8641e483fb1a9999a52a32:0">Learned how to pass arguments to a method</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="77613bab9c8641e483fb1a9999a52a32"><span data-offset-key="77613bab9c8641e483fb1a9999a52a32:0">Learned how to pass arguments to a method</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b44b6ea47f8244fc9cbce69b04c12baf"><span data-offset-key="b44b6ea47f8244fc9cbce69b04c12baf:0">Understood that the method definition needs to have parameters coded in</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b44b6ea47f8244fc9cbce69b04c12baf"><span data-offset-key="b44b6ea47f8244fc9cbce69b04c12baf:0">Understood that the method definition needs to have parameters coded in</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="67230a8fbef94b709835c9b6bcd7ff3d"><span data-offset-key="67230a8fbef94b709835c9b6bcd7ff3d:0">Observed that arguments passed during a method call can be accessed inside a methods body</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="67230a8fbef94b709835c9b6bcd7ff3d"><span data-offset-key="67230a8fbef94b709835c9b6bcd7ff3d:0">Observed that arguments passed during a method call can be accessed inside a methods body</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="46ce252b131845e2a3251f2d73b45c94"><span data-offset-key="46ce252b131845e2a3251f2d73b45c94:0">Step 04: Classroom Exercise CE-MD-01</span></span></span>
 
@@ -1695,21 +1694,21 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6597c2d18e3249a2b9083ceba33323ad"><span data-offset-key="6597c2d18e3249a2b9083ceba33323ad:0">How is a parameter different from an argument?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="052537476d6044e5bbd83dbb62b20e4b"><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:0">Inside the definition of the method, the name within parentheses is referred to as a </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:1">**parameter**</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:2">. In our recent exercise, </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:3">`n`</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:4"> is a parameter, because it’s used in the definition of </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:5">`print_squares_of_numbers`</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:6">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="052537476d6044e5bbd83dbb62b20e4b"><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:0">Inside the definition of the method, the name within parentheses is referred to as a </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:1">**parameter**</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:2">. In our recent exercise, </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:3">`n`</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:4"> is a parameter, because it’s used in the definition of </span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:5">`print_squares_of_numbers`</span><span data-offset-key="052537476d6044e5bbd83dbb62b20e4b:6">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e41f083c37544b1bf795e35d2c07cfa"><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:0">When you are passing a value to a method during a method call, say </span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:1">`5`</span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:2">, that value is called an </span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:3">**argument**</span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e41f083c37544b1bf795e35d2c07cfa"><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:0">When you are passing a value to a method during a method call, say </span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:1">`5`</span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:2">, that value is called an </span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:3">**argument**</span><span data-offset-key="6e41f083c37544b1bf795e35d2c07cfa:4">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="72843cd0ac524502837e2a6323c4a751"><span data-offset-key="72843cd0ac524502837e2a6323c4a751:0">Don’t worry too much about it. Just follow this convention for now:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="72843cd0ac524502837e2a6323c4a751"><span data-offset-key="72843cd0ac524502837e2a6323c4a751:0">Don’t worry too much about it. Just follow this convention for now:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a487b2f59334138bb7c06c71b5e3a44"><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:0">In the method call, call it an </span><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:1">*argument*</span><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:2">.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a487b2f59334138bb7c06c71b5e3a44"><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:0">In the method call, call it an </span><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:1">_argument_</span><span data-offset-key="4a487b2f59334138bb7c06c71b5e3a44:2">.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="947d6ee3f89f4cdaae20f2795ff90725"><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:0">In a method definition, call it a </span><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:1">*parameter*</span><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:2">.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="947d6ee3f89f4cdaae20f2795ff90725"><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:0">In a method definition, call it a </span><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:1">_parameter_</span><span data-offset-key="947d6ee3f89f4cdaae20f2795ff90725:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="409c7d29f08e4271bd61c711b087e872"><span data-offset-key="409c7d29f08e4271bd61c711b087e872:0">**Summary**</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02eef908f1ac48c4a1361048d7eb111c"><span data-offset-key="02eef908f1ac48c4a1361048d7eb111c:0">In this step, we looked at a few simple exercises related to passing method arguments</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="f6d5a8fd202d4534a4e2b25e75139025"><span data-offset-key="f6d5a8fd202d4534a4e2b25e75139025:0">Step 05: Methods With Multiple Parameters</span></span></span>
 
@@ -1733,13 +1732,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8368078e07754fde8a7f5d7d1eb242fd"><span data-offset-key="8368078e07754fde8a7f5d7d1eb242fd:0">The good programmer that you are, you created a new method called </span><span data-offset-key="8368078e07754fde8a7f5d7d1eb242fd:1">`print_string(str, no_of_times)`</span><span data-offset-key="8368078e07754fde8a7f5d7d1eb242fd:2"> accepting a text parameter, in addition to </span><span data-offset-key="8368078e07754fde8a7f5d7d1eb242fd:3">`no_of_times`</span><span data-offset-key="8368078e07754fde8a7f5d7d1eb242fd:4">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d0c728d21624c71b3a3aff859f54e4c"><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:0">Syntax rules for method parameters are quite strict. If we say </span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:1">`print_string("Welcome to                                       Python")`</span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:2"> and run it, we get an error! Python Shell says: “I need </span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:3">`no_of_times`</span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:4"> to be present in here”.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d0c728d21624c71b3a3aff859f54e4c"><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:0">Syntax rules for method parameters are quite strict. If we say </span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:1">`print_string("Welcome to Python")`</span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:2"> and run it, we get an error! Python Shell says: “I need </span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:3">`no_of_times`</span><span data-offset-key="0d0c728d21624c71b3a3aff859f54e4c:4"> to be present in here”.</span></span></span>
 
         >>> print_string("Welcome to Python")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>    TypeError: print_string() missing 1 required positional argument: 'no_of_times'
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1af3c0f05c184357a718c536d4c9cec5"><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:0">Let’s say you want to assign default values for </span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:1">`str`</span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:2"> and </span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:3">`no_of_times`</span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:4"> in </span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:5">`print_string()`</span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:6">. By default, we want to always print </span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:7">`"Hello World"`</span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:8">, and that too </span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:9">`5`</span><span data-offset-key="1af3c0f05c184357a718c536d4c9cec5:10"> times.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ed36385e9de4bf3a5400634753f44c8"><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:0">The Python language makes this very easy. </span><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:1">`def print_string(str = "Hello                                       World", no_of_times=5)`</span><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:2">. The rest of the method remains the same.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ed36385e9de4bf3a5400634753f44c8"><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:0">The Python language makes this very easy. </span><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:1">`def print_string(str = "Hello World", no_of_times=5)`</span><span data-offset-key="9ed36385e9de4bf3a5400634753f44c8:2">. The rest of the method remains the same.</span></span></span>
 
         >>> def print_string(str="Hello World", no_of_times=5):    ...    for i in range(1,no_of_times+1):    ...       print(str)    ...
 
@@ -1747,11 +1746,11 @@
 
         >>> print_string()    Hello World    Hello World    Hello World    Hello World    Hello World
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e9a3e517cbd4b3290701c240e728341"><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:0">If it’s </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:1">`print_string("Welcome To                                       Python")`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:2">, what does it do? It prints </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:3">`"Welcome To Python"`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:4">, </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:5">`5`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:6"> times.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6e9a3e517cbd4b3290701c240e728341"><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:0">If it’s </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:1">`print_string("Welcome To Python")`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:2">, what does it do? It prints </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:3">`"Welcome To Python"`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:4">, </span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:5">`5`</span><span data-offset-key="6e9a3e517cbd4b3290701c240e728341:6"> times.</span></span></span>
 
         >>> print_string("Welcome to Python")    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a7a1ea0ecb3470d855e8028552ec43a"><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:0">Consider </span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:1">`print_string("Welcome to                                       Python", 8)`</span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:2">, it would print that string </span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:3">`8`</span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:4"> times.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0a7a1ea0ecb3470d855e8028552ec43a"><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:0">Consider </span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:1">`print_string("Welcome to Python", 8)`</span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:2">, it would print that string </span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:3">`8`</span><span data-offset-key="0a7a1ea0ecb3470d855e8028552ec43a:4"> times.</span></span></span>
 
         >>> print_string("Welcome to Python", 8)    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python    Welcome to Python
 
@@ -1761,13 +1760,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c548de4b304a43d091e0d50da28b2a51"><span data-offset-key="c548de4b304a43d091e0d50da28b2a51:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f604653eaf74e1bb230b44ce5f3eda1"><span data-offset-key="4f604653eaf74e1bb230b44ce5f3eda1:0">Looked at how to pass multiple parameters to a method, starting with two arguments</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f604653eaf74e1bb230b44ce5f3eda1"><span data-offset-key="4f604653eaf74e1bb230b44ce5f3eda1:0">Looked at how to pass multiple parameters to a method, starting with two arguments</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="759609215e634fb18bf8a97e2f02f700"><span data-offset-key="759609215e634fb18bf8a97e2f02f700:0">Learned how you can define default values for those parameters</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="759609215e634fb18bf8a97e2f02f700"><span data-offset-key="759609215e634fb18bf8a97e2f02f700:0">Learned how you can define default values for those parameters</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5cfc1b79fd1c46ee8fed176464e95729"><span data-offset-key="5cfc1b79fd1c46ee8fed176464e95729:0">Observed we could pass default arguments for none, some or all of those parameters</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5cfc1b79fd1c46ee8fed176464e95729"><span data-offset-key="5cfc1b79fd1c46ee8fed176464e95729:0">Observed we could pass default arguments for none, some or all of those parameters</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7323fafc7fab476da0cff3b1c20a393b"><span data-offset-key="7323fafc7fab476da0cff3b1c20a393b:0">Step 06: Back To Multiplication Table - Using Methods</span></span></span>
 
@@ -1807,13 +1806,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="611b6ebcbe394cb49a2bd48dfdf99fca"><span data-offset-key="611b6ebcbe394cb49a2bd48dfdf99fca:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="12e866dfba184ada88f8547225e9d2dc"><span data-offset-key="12e866dfba184ada88f8547225e9d2dc:0">Learned how to define a method to print the multiplication table for a number</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="12e866dfba184ada88f8547225e9d2dc"><span data-offset-key="12e866dfba184ada88f8547225e9d2dc:0">Learned how to define a method to print the multiplication table for a number</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c43bd8392e774170bdf11d73374e2255"><span data-offset-key="c43bd8392e774170bdf11d73374e2255:0">Looked at how to enhance this method to make table printing more flexible</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c43bd8392e774170bdf11d73374e2255"><span data-offset-key="c43bd8392e774170bdf11d73374e2255:0">Looked at how to enhance this method to make table printing more flexible</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea8a2930bdf748ae820c6c720486a49d"><span data-offset-key="ea8a2930bdf748ae820c6c720486a49d:0">Further enhanced that method to accept default arguments while printing a table</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ea8a2930bdf748ae820c6c720486a49d"><span data-offset-key="ea8a2930bdf748ae820c6c720486a49d:0">Further enhanced that method to accept default arguments while printing a table</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a1495e85db7b48febd7ca16360c09c56"><span data-offset-key="a1495e85db7b48febd7ca16360c09c56:0">Step 07: Indentation Is King</span></span></span>
 
@@ -1847,9 +1846,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="91d771632a714c6ea7a267e14397f934"><span data-offset-key="91d771632a714c6ea7a267e14397f934:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f7763ffd6104066bb6a1321249a87a7"><span data-offset-key="9f7763ffd6104066bb6a1321249a87a7:0">Ran through a few examples to see how indentation works in Python</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f7763ffd6104066bb6a1321249a87a7"><span data-offset-key="9f7763ffd6104066bb6a1321249a87a7:0">Ran through a few examples to see how indentation works in Python</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d997673a49c44e2eb06a0daa0865236f"><span data-offset-key="d997673a49c44e2eb06a0daa0865236f:0">Step 08: Puzzles on Methods - Named Parameters</span></span></span>
 
@@ -1891,13 +1890,13 @@
 
         >>> print_string(7.5, 8)    7.5    7.5    7.5    7.5    7.5    7.5    7.5    7.5
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0bd26e086c547b28be90ad920ee270f"><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:0">What would be the result of this - </span><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:1">`print_string(7.5,                                       "eight")`</span><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:2">?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0bd26e086c547b28be90ad920ee270f"><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:0">What would be the result of this - </span><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:1">`print_string(7.5, "eight")`</span><span data-offset-key="a0bd26e086c547b28be90ad920ee270f:2">?</span></span></span>
 
         >>> print_string(7.5, "eight")    Traceback (most recent call last):      File "<stdin>", line 1, in <module>      File "<stdin>", line 2, in print_string    TypeError: must be str, not int
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59a64bdbd2454503b4c2e3dbb6512046"><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:0">Note how </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:1">`no_of_times`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:2"> is used inside the method… as an argument to </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:3">`range()`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:4">. </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:5">`range()`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:6"> only accepts integers, nothing else. When you run the code with </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:7">`print_string(7.5,                                       "eight")`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:8">, we get an error.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59a64bdbd2454503b4c2e3dbb6512046"><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:0">Note how </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:1">`no_of_times`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:2"> is used inside the method… as an argument to </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:3">`range()`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:4">. </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:5">`range()`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:6"> only accepts integers, nothing else. When you run the code with </span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:7">`print_string(7.5, "eight")`</span><span data-offset-key="59a64bdbd2454503b4c2e3dbb6512046:8">, we get an error.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0b25c51aee94989b7098e3b780244f4"><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:0">It says: </span><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:1">```` TypeError: ```no_of_times``` must be                                       ```int```, not string ````</span><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:2">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0b25c51aee94989b7098e3b780244f4"><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:0">It says: </span><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:1">` TypeError: ```no_of_times``` must be ```int```, not string `</span><span data-offset-key="a0b25c51aee94989b7098e3b780244f4:2">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f22e6cbe7984a66845162ae51b088d9"><span data-offset-key="9f22e6cbe7984a66845162ae51b088d9:0">A simple rule of thumb is, if you have a parameter, you can pass any type of data to it. That could be an integer, a floating point value a string, or a boolean value. The Python language does not check for the type of a parameter. However, Python will throw an error if the function which is using that parameter, expects it to be of a specific type. The </span><span data-offset-key="9f22e6cbe7984a66845162ae51b088d9:1">`range()`</span><span data-offset-key="9f22e6cbe7984a66845162ae51b088d9:2"> function expects that the </span><span data-offset-key="9f22e6cbe7984a66845162ae51b088d9:3">`no_of_times`</span><span data-offset-key="9f22e6cbe7984a66845162ae51b088d9:4"> is an integer value.</span></span></span>
 
@@ -1915,9 +1914,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5fbea86ef0994120a192885370b6dd50"><span data-offset-key="5fbea86ef0994120a192885370b6dd50:0">Similarly, </span><span data-offset-key="5fbea86ef0994120a192885370b6dd50:1">`1_print`</span><span data-offset-key="5fbea86ef0994120a192885370b6dd50:2"> will not be accepted as a method name.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8b14ac1f8eed4f15aa1e85dded3668ae"><span data-offset-key="8b14ac1f8eed4f15aa1e85dded3668ae:0">You can start a name with an alphabet, or with an underscore.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8b14ac1f8eed4f15aa1e85dded3668ae"><span data-offset-key="8b14ac1f8eed4f15aa1e85dded3668ae:0">You can start a name with an alphabet, or with an underscore.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49eb411970c94edd95c6243d22bda2f8"><span data-offset-key="49eb411970c94edd95c6243d22bda2f8:0">From the second character onward, you are allowed to use numeric symbols.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49eb411970c94edd95c6243d22bda2f8"><span data-offset-key="49eb411970c94edd95c6243d22bda2f8:0">From the second character onward, you are allowed to use numeric symbols.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0333d21ab37845a18a404400287fe608"><span data-offset-key="0333d21ab37845a18a404400287fe608:0">Methods and variables cannot be named using Python keywords.</span></span></span>
 
@@ -1925,11 +1924,11 @@
 
     ```for i in range(1, 11): print(i)```...
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="445b4ec5afd34ed0a56a93f7be2f96d4"><span data-offset-key="445b4ec5afd34ed0a56a93f7be2f96d4:0">**`for`**</span><span data-offset-key="445b4ec5afd34ed0a56a93f7be2f96d4:1"> is a keyword</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="445b4ec5afd34ed0a56a93f7be2f96d4"><span data-offset-key="445b4ec5afd34ed0a56a93f7be2f96d4:0">**`for`**</span><span data-offset-key="445b4ec5afd34ed0a56a93f7be2f96d4:1"> is a keyword</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc8bd2a8a9494371a2697613b18ae5c8"><span data-offset-key="fc8bd2a8a9494371a2697613b18ae5c8:0">**`in`**</span><span data-offset-key="fc8bd2a8a9494371a2697613b18ae5c8:1"> is a keyword</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc8bd2a8a9494371a2697613b18ae5c8"><span data-offset-key="fc8bd2a8a9494371a2697613b18ae5c8:0">**`in`**</span><span data-offset-key="fc8bd2a8a9494371a2697613b18ae5c8:1"> is a keyword</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02c4962fcd9c4587a54dd60246751c33"><span data-offset-key="02c4962fcd9c4587a54dd60246751c33:0">**`def`**</span><span data-offset-key="02c4962fcd9c4587a54dd60246751c33:1"> is a keyword.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02c4962fcd9c4587a54dd60246751c33"><span data-offset-key="02c4962fcd9c4587a54dd60246751c33:0">**`def`**</span><span data-offset-key="02c4962fcd9c4587a54dd60246751c33:1"> is a keyword.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b7f90a88c7ce43809a38dad0f895c087"><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:0">Later we will look at a few other keywords, such as </span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:1">**`while`**</span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:2">, </span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:3">**`return`**</span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:4">, </span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:5">**`if`**</span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:6">, </span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:7">**`else`**</span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:8">, </span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:9">**`elif`**</span><span data-offset-key="b7f90a88c7ce43809a38dad0f895c087:10">, and many more.</span></span></span>
 
@@ -1939,13 +1938,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f618b5fa38bd42f497f1e1298902bee5"><span data-offset-key="f618b5fa38bd42f497f1e1298902bee5:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a654bdfcb6264b69864f9070c87fbded"><span data-offset-key="a654bdfcb6264b69864f9070c87fbded:0">Were introduced to the concept of named parameters</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a654bdfcb6264b69864f9070c87fbded"><span data-offset-key="a654bdfcb6264b69864f9070c87fbded:0">Were introduced to the concept of named parameters</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff177a404fec46aea4d9d884508ea53b"><span data-offset-key="ff177a404fec46aea4d9d884508ea53b:0">Explored the typical naming rules and conventions for methods in Python</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff177a404fec46aea4d9d884508ea53b"><span data-offset-key="ff177a404fec46aea4d9d884508ea53b:0">Explored the typical naming rules and conventions for methods in Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b3b182c128d478aa37443bd1192aa30"><span data-offset-key="5b3b182c128d478aa37443bd1192aa30:0">Observed that reserved keywords cannot be used to name variables or methods</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b3b182c128d478aa37443bd1192aa30"><span data-offset-key="5b3b182c128d478aa37443bd1192aa30:0">Observed that reserved keywords cannot be used to name variables or methods</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dfc0d2f7ae6b4dd68a618f32f5ffa404"><span data-offset-key="dfc0d2f7ae6b4dd68a618f32f5ffa404:0">Step 09: Methods - Return Values</span></span></span>
 
@@ -1959,7 +1958,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="10affe18b3fc475ca66844ed12901117"><span data-offset-key="10affe18b3fc475ca66844ed12901117:0">Can we take the product of these two numbers into a variable, and use it in other code, in the same program?</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57b0a02f73e94eab9ca9422767aaa14d"><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:0">Suppose we say a </span><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:1">`product =                                       product_of_two_numbers(1,2)`</span><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:2">, is this allowed?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="57b0a02f73e94eab9ca9422767aaa14d"><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:0">Suppose we say a </span><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:1">`product = product_of_two_numbers(1,2)`</span><span data-offset-key="57b0a02f73e94eab9ca9422767aaa14d:2">, is this allowed?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="038c49700cfd44e284d7f05a68a4d9b2"><span data-offset-key="038c49700cfd44e284d7f05a68a4d9b2:0">Let’s run this code, and see what’s stored in </span><span data-offset-key="038c49700cfd44e284d7f05a68a4d9b2:1">`product`</span><span data-offset-key="038c49700cfd44e284d7f05a68a4d9b2:2">.</span></span></span>
 
@@ -1983,7 +1982,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1cb038c79ebb43f5b525ab51b99dfdcf"><span data-offset-key="1cb038c79ebb43f5b525ab51b99dfdcf:0">We are creating a variable </span><span data-offset-key="1cb038c79ebb43f5b525ab51b99dfdcf:1">`product`</span><span data-offset-key="1cb038c79ebb43f5b525ab51b99dfdcf:2"> and doing a </span><span data-offset-key="1cb038c79ebb43f5b525ab51b99dfdcf:3">`return product`</span><span data-offset-key="1cb038c79ebb43f5b525ab51b99dfdcf:4">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1932b017c984266a95a95521b18a8f2"><span data-offset-key="c1932b017c984266a95a95521b18a8f2:0">Lets run </span><span data-offset-key="c1932b017c984266a95a95521b18a8f2:1">`product_result =                                       product_of_two_numbers(2, 3)`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1932b017c984266a95a95521b18a8f2"><span data-offset-key="c1932b017c984266a95a95521b18a8f2:0">Lets run </span><span data-offset-key="c1932b017c984266a95a95521b18a8f2:1">`product_result = product_of_two_numbers(2, 3)`</span></span></span>
 
         >>> product_result = product_of_two_numbers(2,3)    >>> product_result    6    >>> product_result * 10    60
 
@@ -1993,11 +1992,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5f90fed6aa9453fb78ea5a8dd86c2fc"><span data-offset-key="f5f90fed6aa9453fb78ea5a8dd86c2fc:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d978821115b44484a135711df89a7b55"><span data-offset-key="d978821115b44484a135711df89a7b55:0">Learned how to return values from inside a method</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d978821115b44484a135711df89a7b55"><span data-offset-key="d978821115b44484a135711df89a7b55:0">Learned how to return values from inside a method</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b70aea6e25de44c1b3f0597650f549ce"><span data-offset-key="b70aea6e25de44c1b3f0597650f549ce:0">Observed how we can store the values returned by a method call</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b70aea6e25de44c1b3f0597650f549ce"><span data-offset-key="b70aea6e25de44c1b3f0597650f549ce:0">Observed how we can store the values returned by a method call</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fdbabbdea05b46a0baa9e8a553bb2603"><span data-offset-key="fdbabbdea05b46a0baa9e8a553bb2603:0">Step 10: Programming Exercise PE-MD-02</span></span></span>
 
@@ -2035,9 +2034,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa9601f50b9743bfb69d1ef631920ece"><span data-offset-key="fa9601f50b9743bfb69d1ef631920ece:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d2f2f01ff0248689bde229b5cf076c2"><span data-offset-key="0d2f2f01ff0248689bde229b5cf076c2:0">Looked at a couple of exercises related to returning values from methods</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d2f2f01ff0248689bde229b5cf076c2"><span data-offset-key="0d2f2f01ff0248689bde229b5cf076c2:0">Looked at a couple of exercises related to returning values from methods</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e59553d3cd9f4a89aa4e3b66ae0aafa7"><span data-offset-key="e59553d3cd9f4a89aa4e3b66ae0aafa7:0">Observed that returning expressions avoids creating unnecessary variables, and shortens method definitions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e59553d3cd9f4a89aa4e3b66ae0aafa7"><span data-offset-key="e59553d3cd9f4a89aa4e3b66ae0aafa7:0">Observed that returning expressions avoids creating unnecessary variables, and shortens method definitions</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7c03bb52b87742f19cca4efc4a1d00bb"><span data-offset-key="7c03bb52b87742f19cca4efc4a1d00bb:0">Chapter 04 - Introduction To Python Platform</span></span></span>
 
@@ -2051,11 +2050,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e41dbc498b6d49b4b98ce5ae5db96797"><span data-offset-key="e41dbc498b6d49b4b98ce5ae5db96797:0">Here are a few videos you might want to look at.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07b7c4fc7a324e52a83043e941e5081f"><span data-offset-key="07b7c4fc7a324e52a83043e941e5081f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=ORmDD1R7lNc" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9cda057bc98948edb7331d3d986c2f81"><span data-offset-key="9cda057bc98948edb7331d3d986c2f81:0">Writing and Executing your First Python Script</span></span></a><span data-key="efa884ef3d1b4edb8320b496d06f67ed"><span data-offset-key="efa884ef3d1b4edb8320b496d06f67ed:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="07b7c4fc7a324e52a83043e941e5081f"><span data-offset-key="07b7c4fc7a324e52a83043e941e5081f:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=ORmDD1R7lNc" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9cda057bc98948edb7331d3d986c2f81"><span data-offset-key="9cda057bc98948edb7331d3d986c2f81:0">Writing and Executing your First Python Script</span></span></a><span data-key="efa884ef3d1b4edb8320b496d06f67ed"><span data-offset-key="efa884ef3d1b4edb8320b496d06f67ed:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59b646eb7dc14f29895434edad607ffd"><span data-offset-key="59b646eb7dc14f29895434edad607ffd:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=HE-FC0csG68" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6ef7d902a9c04181abeec0b0e95bde6f"><span data-offset-key="6ef7d902a9c04181abeec0b0e95bde6f:0">Understanding Python Virtual Machine and bytecode</span></span></a><span data-key="3423333b7a1548e78180d328bf632963"><span data-offset-key="3423333b7a1548e78180d328bf632963:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="59b646eb7dc14f29895434edad607ffd"><span data-offset-key="59b646eb7dc14f29895434edad607ffd:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=HE-FC0csG68" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6ef7d902a9c04181abeec0b0e95bde6f"><span data-offset-key="6ef7d902a9c04181abeec0b0e95bde6f:0">Understanding Python Virtual Machine and bytecode</span></span></a><span data-key="3423333b7a1548e78180d328bf632963"><span data-offset-key="3423333b7a1548e78180d328bf632963:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7c01ef0085344c008f5f5298ae9f30d8"><span data-offset-key="7c01ef0085344c008f5f5298ae9f30d8:0">Step 01 - Writing and Executing Python Shell Programs</span></span></span>
 
@@ -2067,7 +2066,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9edc6884c6ce40708d936b268bb2a549"><span data-offset-key="9edc6884c6ce40708d936b268bb2a549:0">We’ll save this into any folder on our hard disk, with a name ‘first.py’ .</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="997a4173167c406e9e1f2525bed35a3b"><span data-offset-key="997a4173167c406e9e1f2525bed35a3b:0">***first.py***</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="997a4173167c406e9e1f2525bed35a3b"><span data-offset-key="997a4173167c406e9e1f2525bed35a3b:0">**_first.py_**</span></span></span>
 
     print("Hello world")
 
@@ -2075,11 +2074,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b502fce0150b438d81ed5e79b87fa0cb"><span data-offset-key="b502fce0150b438d81ed5e79b87fa0cb:0">Here’s how you can run it:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60ae157869c344c3850f68e5f5e1b540"><span data-offset-key="60ae157869c344c3850f68e5f5e1b540:0">Launch your terminal, or command prompt</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60ae157869c344c3850f68e5f5e1b540"><span data-offset-key="60ae157869c344c3850f68e5f5e1b540:0">Launch your terminal, or command prompt</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b38408d2bca41c2a33b996f26d38fcf"><span data-offset-key="9b38408d2bca41c2a33b996f26d38fcf:0">‘cd’ to the folder where this python script file is saved</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9b38408d2bca41c2a33b996f26d38fcf"><span data-offset-key="9b38408d2bca41c2a33b996f26d38fcf:0">‘cd’ to the folder where this python script file is saved</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9a9120a650a498abf8d59b92235f5fd"><span data-offset-key="d9a9120a650a498abf8d59b92235f5fd:0">execute the command </span><span data-offset-key="d9a9120a650a498abf8d59b92235f5fd:1">`python first.py`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9a9120a650a498abf8d59b92235f5fd"><span data-offset-key="d9a9120a650a498abf8d59b92235f5fd:0">execute the command </span><span data-offset-key="d9a9120a650a498abf8d59b92235f5fd:1">`python first.py`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7a27ce39d313412b9610326a72921cff"><span data-offset-key="7a27ce39d313412b9610326a72921cff:0">You will see that </span><span data-offset-key="7a27ce39d313412b9610326a72921cff:1">`Hello World`</span><span data-offset-key="7a27ce39d313412b9610326a72921cff:2"> will be printed.</span></span></span>
 
@@ -2095,7 +2094,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a431840637345fca97632287740bf3f"><span data-offset-key="3a431840637345fca97632287740bf3f:0">As an exercise, try and add a few more methods and try to run those methods as well, as part of this script.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="069368054ea144229eedb355224294b7"><span data-offset-key="069368054ea144229eedb355224294b7:0">Step 02 - Python virtual machine and bytecode</span></span></span>
 
@@ -2111,9 +2110,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60091bf1ddc34336bb59ef23fd4cbe3d"><span data-offset-key="60091bf1ddc34336bb59ef23fd4cbe3d:0">In Python, </span><span data-offset-key="60091bf1ddc34336bb59ef23fd4cbe3d:1">`bytecode`</span><span data-offset-key="60091bf1ddc34336bb59ef23fd4cbe3d:2"> is not standardized. Different implementations of Python have different byte code. There are about 80 Python implementations, like CPython and Jython.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d800d5532c214284a96a37ae31a10db4"><span data-offset-key="d800d5532c214284a96a37ae31a10db4:0">CPython is a Python implementation in C language.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d800d5532c214284a96a37ae31a10db4"><span data-offset-key="d800d5532c214284a96a37ae31a10db4:0">CPython is a Python implementation in C language.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e90a868ffef44e698f8daae1bd78166"><span data-offset-key="9e90a868ffef44e698f8daae1bd78166:0">Jython is a Python implementation in Java language. The bytecode which Jython uses is actually Java bytecode, and you can run it on the Java virtual machine.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9e90a868ffef44e698f8daae1bd78166"><span data-offset-key="9e90a868ffef44e698f8daae1bd78166:0">Jython is a Python implementation in Java language. The bytecode which Jython uses is actually Java bytecode, and you can run it on the Java virtual machine.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5344c74fb7354156bb4aa81fbbaed485"><span data-offset-key="5344c74fb7354156bb4aa81fbbaed485:0">Python leaves a lot of flexibility to the implementations of Python. They have the flexibility to choose the bytecode, and to choose the virtual machine that is compatible. The bytecode is tied to the specific virtual machine you are using. Therefore, if you’re using CPython to compile the bytecode, you’ll not be able to use Jython to run it.</span></span></span>
 
@@ -2133,13 +2132,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b67e90e7aa5147d3970363f912a36576"><span data-offset-key="b67e90e7aa5147d3970363f912a36576:0">Here are recommended videos to watch</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b6a05c6c83042bc81101196f6cc5f95"><span data-offset-key="0b6a05c6c83042bc81101196f6cc5f95:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=pI_cnCXpCTU" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="153faa50c8f94b98861549415a19618d"><span data-offset-key="153faa50c8f94b98861549415a19618d:0">Installing VSCode</span></span></a><span data-key="a085cc6bca464e36a76f49b0d42892d0"><span data-offset-key="a085cc6bca464e36a76f49b0d42892d0:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b6a05c6c83042bc81101196f6cc5f95"><span data-offset-key="0b6a05c6c83042bc81101196f6cc5f95:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=pI_cnCXpCTU" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="153faa50c8f94b98861549415a19618d"><span data-offset-key="153faa50c8f94b98861549415a19618d:0">Installing VSCode</span></span></a><span data-key="a085cc6bca464e36a76f49b0d42892d0"><span data-offset-key="a085cc6bca464e36a76f49b0d42892d0:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a6a323484a4e5393b2b8a6c95434de"><span data-offset-key="a3a6a323484a4e5393b2b8a6c95434de:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Na05tSP21Jg" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6fdb364c7f424a1fb322683759250c68"><span data-offset-key="6fdb364c7f424a1fb322683759250c68:0">Write and Execute a Python File with VSCode</span></span></a><span data-key="2cdad0dd421b40c5bcb956c4e34caad5"><span data-offset-key="2cdad0dd421b40c5bcb956c4e34caad5:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a3a6a323484a4e5393b2b8a6c95434de"><span data-offset-key="a3a6a323484a4e5393b2b8a6c95434de:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Na05tSP21Jg" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="6fdb364c7f424a1fb322683759250c68"><span data-offset-key="6fdb364c7f424a1fb322683759250c68:0">Write and Execute a Python File with VSCode</span></span></a><span data-key="2cdad0dd421b40c5bcb956c4e34caad5"><span data-offset-key="2cdad0dd421b40c5bcb956c4e34caad5:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39cea32664554e00bcdcdf4a301d7799"><span data-offset-key="39cea32664554e00bcdcdf4a301d7799:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=PvYSlWbXuCw" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8b75343bba7d4cb98baa4ecc2ce1520a"><span data-offset-key="8b75343bba7d4cb98baa4ecc2ce1520a:0">Write Your First Python Program with VSCode</span></span></a><span data-key="bbd65ba3a1ea410b8e4acf15c59634fc"><span data-offset-key="bbd65ba3a1ea410b8e4acf15c59634fc:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="39cea32664554e00bcdcdf4a301d7799"><span data-offset-key="39cea32664554e00bcdcdf4a301d7799:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=PvYSlWbXuCw" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="8b75343bba7d4cb98baa4ecc2ce1520a"><span data-offset-key="8b75343bba7d4cb98baa4ecc2ce1520a:0">Write Your First Python Program with VSCode</span></span></a><span data-key="bbd65ba3a1ea410b8e4acf15c59634fc"><span data-offset-key="bbd65ba3a1ea410b8e4acf15c59634fc:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="77a5d0d2829d4ac1bf31e0f9d2b487aa"><span data-offset-key="77a5d0d2829d4ac1bf31e0f9d2b487aa:0">Step 01 - Installing and Introduction to VSCode</span></span></span>
 
@@ -2147,7 +2146,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4ae6b9e1533546c7919c27c6e108bfbe"><span data-offset-key="4ae6b9e1533546c7919c27c6e108bfbe:0">Here’s the video guide for this step</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2826edfdd31747c29b33bf0b09a9cd5c"><span data-offset-key="2826edfdd31747c29b33bf0b09a9cd5c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=pI_cnCXpCTU" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b465741098fa486d82a762ec0ee73bdc"><span data-offset-key="b465741098fa486d82a762ec0ee73bdc:0">Installing VSCode</span></span></a><span data-key="228db9e87d884e0393d672c6587c3aa4"><span data-offset-key="228db9e87d884e0393d672c6587c3aa4:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2826edfdd31747c29b33bf0b09a9cd5c"><span data-offset-key="2826edfdd31747c29b33bf0b09a9cd5c:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=pI_cnCXpCTU" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="b465741098fa486d82a762ec0ee73bdc"><span data-offset-key="b465741098fa486d82a762ec0ee73bdc:0">Installing VSCode</span></span></a><span data-key="228db9e87d884e0393d672c6587c3aa4"><span data-offset-key="228db9e87d884e0393d672c6587c3aa4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="abcd9861f7864d47b9be3667a25c61ff"><span data-offset-key="abcd9861f7864d47b9be3667a25c61ff:0">Go to Google and type in “VSCode Community Edition Download”. Click the link which comes up first: </span></span><a href="https://www.jetbrains.com/VSCode/download" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="9bdf7793789b4e418b250d29bb316c6f"><span data-offset-key="9bdf7793789b4e418b250d29bb316c6f:0">https://www.jetbrains.com/VSCode/download</span></span></a><span data-key="5beda6ca9e6f4f84a32b8e08c8d602ad"><span data-offset-key="5beda6ca9e6f4f84a32b8e08c8d602ad:0">.</span></span></span>
 
@@ -2167,7 +2166,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="808b0d5291034bc8836d789aba5ca862"><span data-offset-key="808b0d5291034bc8836d789aba5ca862:0">VSCode is an awesome IDE, and I’m sure you learn a lot about it.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2f1fc487605643eb92a1565f5dcd8bf8"><span data-offset-key="2f1fc487605643eb92a1565f5dcd8bf8:0">Step 02 - Write and Execute a Python File with VSCode</span></span></span>
 
@@ -2175,7 +2174,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b2510fad27b84007aaf261bfae66793d"><span data-offset-key="b2510fad27b84007aaf261bfae66793d:0">Here’s the video guide for this step</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="870c755765e94d12a611a689e5c55aa2"><span data-offset-key="870c755765e94d12a611a689e5c55aa2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Na05tSP21Jg" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="bec55fd911de4b54ae26c4339df9f9af"><span data-offset-key="bec55fd911de4b54ae26c4339df9f9af:0">Write and Execute a Python File with VSCode</span></span></a><span data-key="b784850fbd5445b7a8cdbf44086107c4"><span data-offset-key="b784850fbd5445b7a8cdbf44086107c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="870c755765e94d12a611a689e5c55aa2"><span data-offset-key="870c755765e94d12a611a689e5c55aa2:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=Na05tSP21Jg" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="bec55fd911de4b54ae26c4339df9f9af"><span data-offset-key="bec55fd911de4b54ae26c4339df9f9af:0">Write and Execute a Python File with VSCode</span></span></a><span data-key="b784850fbd5445b7a8cdbf44086107c4"><span data-offset-key="b784850fbd5445b7a8cdbf44086107c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8956229a3bd3469da8b85917547ab262"><span data-offset-key="8956229a3bd3469da8b85917547ab262:0">Launch the VSCode IDE. You’ll see that it takes a little while to launch the first time, and then brings up a welcome screen.</span></span></span>
 
@@ -2187,15 +2186,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="08b8da002a814c9dabd8684acf65aa42"><span data-offset-key="08b8da002a814c9dabd8684acf65aa42:0">Let’s create our first Python file, using the IDE.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0dabb4aa4ea4a1da0c9f12715dc27bc"><span data-offset-key="a0dabb4aa4ea4a1da0c9f12715dc27bc:0">The way you can do that is by saying ‘right-click’ -&gt; ‘new’ -&gt; ‘Python file’, and then we’ll give this a name of ‘hello\_world’, and click OK.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0dabb4aa4ea4a1da0c9f12715dc27bc"><span data-offset-key="a0dabb4aa4ea4a1da0c9f12715dc27bc:0">The way you can do that is by saying ‘right-click’ -&gt; ‘new’ -&gt; ‘Python file’, and then we’ll give this a name of ‘hello_world’, and click OK.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32f51ff0e68f410caa38ecb700c72e14"><span data-offset-key="32f51ff0e68f410caa38ecb700c72e14:0">Now you can go ahead and write your first Python program. Let’s write some simple code, like </span><span data-offset-key="32f51ff0e68f410caa38ecb700c72e14:1">`print("Hello World")`</span><span data-offset-key="32f51ff0e68f410caa38ecb700c72e14:2">, and save it.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da6b6e2a89fc4762a4be783d3fafee09"><span data-offset-key="da6b6e2a89fc4762a4be783d3fafee09:0">You can do a right-click here, and say ‘Run hello\_world’.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="da6b6e2a89fc4762a4be783d3fafee09"><span data-offset-key="da6b6e2a89fc4762a4be783d3fafee09:0">You can do a right-click here, and say ‘Run hello_world’.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="49b9155a82ad4596afb57d38d4349ea9"><span data-offset-key="49b9155a82ad4596afb57d38d4349ea9:0">A small window comes up below, which shows the output. It says </span><span data-offset-key="49b9155a82ad4596afb57d38d4349ea9:1">`'Hello World'`</span><span data-offset-key="49b9155a82ad4596afb57d38d4349ea9:2">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4d0b66da51364c70abb2943f73e34596"><span data-offset-key="4d0b66da51364c70abb2943f73e34596:0">Step 03 - Execise - Write Multiplication Table Method with VSCode</span></span></span>
 
@@ -2203,13 +2202,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6864db59211a4e529a6b6ab78384129f"><span data-offset-key="6864db59211a4e529a6b6ab78384129f:0">Here’s the video guide for this step:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ba0e6cf1f004f03b6d227ac4c6503c0"><span data-offset-key="3ba0e6cf1f004f03b6d227ac4c6503c0:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=PvYSlWbXuCw" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2a7bb56429d94e57ab9edd256eae6110"><span data-offset-key="2a7bb56429d94e57ab9edd256eae6110:0">Write Your First Python Program with VSCode</span></span></a><span data-key="84457a32aa614ce1a5572ab4e6c1bc5c"><span data-offset-key="84457a32aa614ce1a5572ab4e6c1bc5c:0"><span data-slate-zero-width="z">​</span></span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3ba0e6cf1f004f03b6d227ac4c6503c0"><span data-offset-key="3ba0e6cf1f004f03b6d227ac4c6503c0:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.youtube.com/watch?v=PvYSlWbXuCw" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="2a7bb56429d94e57ab9edd256eae6110"><span data-offset-key="2a7bb56429d94e57ab9edd256eae6110:0">Write Your First Python Program with VSCode</span></span></a><span data-key="84457a32aa614ce1a5572ab4e6c1bc5c"><span data-offset-key="84457a32aa614ce1a5572ab4e6c1bc5c:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="bd4159b8c18144af880c9c2881f8ef91"><span data-offset-key="bd4159b8c18144af880c9c2881f8ef91:0">Chapter 06 - Introducing Data Types and Conditionals</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71455966e12942bfb456daf15b144c95"><span data-offset-key="71455966e12942bfb456daf15b144c95:0">Welcome to this section, where we will talk about numeric data types, and conditional program execution. After looking at the numeric and boolean data types, we will turn our attention to executing code, based on logical conditions.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="208b7fdff502457881cf78ee0050f35b"><span data-offset-key="208b7fdff502457881cf78ee0050f35b:0">Step 01: Numeric Data Types</span></span></span>
 
@@ -2253,11 +2252,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7da6c0081b42405ca6a907f33fe7c25e"><span data-offset-key="7da6c0081b42405ca6a907f33fe7c25e:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac1e3ab71bee40d297a03e121250a943"><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:0">Looked at the two basic numeric types: </span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:1">`int`</span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:2"> and </span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:3">`float`</span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac1e3ab71bee40d297a03e121250a943"><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:0">Looked at the two basic numeric types: </span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:1">`int`</span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:2"> and </span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:3">`float`</span><span data-offset-key="ac1e3ab71bee40d297a03e121250a943:4">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a14e5785881441c9f7e69a2088e430d"><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:0">Saw the basic operations you can do among </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:1">`int`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:2">s, among </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:3">`float`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:4">s, and also between </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:5">`int`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:6">s and </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:7">`float`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:8">s.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3a14e5785881441c9f7e69a2088e430d"><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:0">Saw the basic operations you can do among </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:1">`int`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:2">s, among </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:3">`float`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:4">s, and also between </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:5">`int`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:6">s and </span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:7">`float`</span><span data-offset-key="3a14e5785881441c9f7e69a2088e430d:8">s.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8e79cf72aea14c1abfafa12ed703dce9"><span data-offset-key="8e79cf72aea14c1abfafa12ed703dce9:0">Step 02: Programming Exercise PE-DT-01</span></span></span>
 
@@ -2277,9 +2276,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6734fbb383c249959405716f46f46d54"><span data-offset-key="6734fbb383c249959405716f46f46d54:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3471de1cdb784a19aff1056943a1aec0"><span data-offset-key="3471de1cdb784a19aff1056943a1aec0:0">Wrote a very simple method to do a simple interest calculation</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3471de1cdb784a19aff1056943a1aec0"><span data-offset-key="3471de1cdb784a19aff1056943a1aec0:0">Wrote a very simple method to do a simple interest calculation</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="c8a7b5cd63bf4174a1dd99d9cb6fa55e"><span data-offset-key="c8a7b5cd63bf4174a1dd99d9cb6fa55e:0">Step 03: Puzzles On Numeric Types</span></span></span>
 
@@ -2345,13 +2344,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8014856acd0c40ce95730b0221436450"><span data-offset-key="8014856acd0c40ce95730b0221436450:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1edbcd0b17ba4fafbc1428d9d3e52d16"><span data-offset-key="1edbcd0b17ba4fafbc1428d9d3e52d16:0">Looked at a few corner cases related to your numeric types.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1edbcd0b17ba4fafbc1428d9d3e52d16"><span data-offset-key="1edbcd0b17ba4fafbc1428d9d3e52d16:0">Looked at a few corner cases related to your numeric types.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35733feac68e4242bac4e94ccffdf91a"><span data-offset-key="35733feac68e4242bac4e94ccffdf91a:0">Examined the different operators available for use with values of numeric types</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="35733feac68e4242bac4e94ccffdf91a"><span data-offset-key="35733feac68e4242bac4e94ccffdf91a:0">Examined the different operators available for use with values of numeric types</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e442a982c0604734baaf240f9819887a"><span data-offset-key="e442a982c0604734baaf240f9819887a:0">Learned about the usage of type conversion functions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e442a982c0604734baaf240f9819887a"><span data-offset-key="e442a982c0604734baaf240f9819887a:0">Learned about the usage of type conversion functions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="4409f4be566e46f7b891f460ca8a1df6"><span data-offset-key="4409f4be566e46f7b891f460ca8a1df6:0">Step 04: Introducing Boolean Type</span></span></span>
 
@@ -2387,11 +2386,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba965d18c11748338435834dab46a0f1"><span data-offset-key="ba965d18c11748338435834dab46a0f1:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="392a8d04ffe946c4b145c89407b8fc71"><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:0">Were introduced to the </span><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:1">`bool`</span><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:2"> data type</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="392a8d04ffe946c4b145c89407b8fc71"><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:0">Were introduced to the </span><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:1">`bool`</span><span data-offset-key="392a8d04ffe946c4b145c89407b8fc71:2"> data type</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6226896660348858e22b2a9402e8d8c"><span data-offset-key="f6226896660348858e22b2a9402e8d8c:0">Learned that </span><span data-offset-key="f6226896660348858e22b2a9402e8d8c:1">`bool`</span><span data-offset-key="f6226896660348858e22b2a9402e8d8c:2"> variables are useful handy while testing logical conditions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6226896660348858e22b2a9402e8d8c"><span data-offset-key="f6226896660348858e22b2a9402e8d8c:0">Learned that </span><span data-offset-key="f6226896660348858e22b2a9402e8d8c:1">`bool`</span><span data-offset-key="f6226896660348858e22b2a9402e8d8c:2"> variables are useful handy while testing logical conditions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="d18a54b951eb4583bdb768b0b91e23e8"><span data-offset-key="d18a54b951eb4583bdb768b0b91e23e8:0">Step 05: Introducing Conditionals</span></span></span>
 
@@ -2425,11 +2424,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c4bd2c291188438296a588b1f23af079"><span data-offset-key="c4bd2c291188438296a588b1f23af079:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d4c4a5e8c2c4c708bbf74dca4e61f05"><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:0">Were introduced to the </span><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:1">`if`</span><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:2"> statement, the simplest Python conditional</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6d4c4a5e8c2c4c708bbf74dca4e61f05"><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:0">Were introduced to the </span><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:1">`if`</span><span data-offset-key="6d4c4a5e8c2c4c708bbf74dca4e61f05:2"> statement, the simplest Python conditional</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="669b1f9fd74f4dbca8b51457b84fecea"><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:0">Understood how an </span><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:1">`if`</span><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:2"> helps in implementing conditional program logic</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="669b1f9fd74f4dbca8b51457b84fecea"><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:0">Understood how an </span><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:1">`if`</span><span data-offset-key="669b1f9fd74f4dbca8b51457b84fecea:2"> helps in implementing conditional program logic</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2fbd159772f54686801a7c55770c04a8"><span data-offset-key="2fbd159772f54686801a7c55770c04a8:0">Step 06: Classroom Exercise CE-DT-01</span></span></span>
 
@@ -2455,9 +2454,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="acb78a1651f4430fb915aca0e56d169a"><span data-offset-key="acb78a1651f4430fb915aca0e56d169a:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b23c4c7a2611400cbe2e89846d8b20f7"><span data-offset-key="b23c4c7a2611400cbe2e89846d8b20f7:0">Looked at a few exercises related to the if statement, for writing and testing conditions.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b23c4c7a2611400cbe2e89846d8b20f7"><span data-offset-key="b23c4c7a2611400cbe2e89846d8b20f7:0">Looked at a few exercises related to the if statement, for writing and testing conditions.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="05e3b45472b5411e81059fb1e1bb15f2"><span data-offset-key="05e3b45472b5411e81059fb1e1bb15f2:0">Step 07 - Logical Operators - and or not</span></span></span>
 
@@ -2485,11 +2484,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c69c146494ae4588b87cb6df91e05072"><span data-offset-key="c69c146494ae4588b87cb6df91e05072:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e923b152832841b1abe573c8a74e8f92"><span data-offset-key="e923b152832841b1abe573c8a74e8f92:0">Looked at the logical operators that act on boolean values, such as </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:1">`and`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:2">, </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:3">`or`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:4">, </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:5">`not`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:6"> and </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:7">`^`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e923b152832841b1abe573c8a74e8f92"><span data-offset-key="e923b152832841b1abe573c8a74e8f92:0">Looked at the logical operators that act on boolean values, such as </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:1">`and`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:2">, </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:3">`or`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:4">, </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:5">`not`</span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:6"> and </span><span data-offset-key="e923b152832841b1abe573c8a74e8f92:7">`^`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f28bc81210774a74afdd7454f8832f5b"><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:0">Explored each of these operators, finding out when they return </span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:1">`True`</span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:2">, and when </span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:3">`False`</span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f28bc81210774a74afdd7454f8832f5b"><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:0">Explored each of these operators, finding out when they return </span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:1">`True`</span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:2">, and when </span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:3">`False`</span><span data-offset-key="f28bc81210774a74afdd7454f8832f5b:4">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="780c5e4ee7894216a049f5ddde4b02f4"><span data-offset-key="780c5e4ee7894216a049f5ddde4b02f4:0">Step 08: Puzzles On Logical Operators</span></span></span>
 
@@ -2505,7 +2504,7 @@
 
         >>> i = 15    >>> j    14    >>> if i%2==0 or j%2==0:    ...   print("atleast one of i and j are even")    ...    atleast one of i and j are even    >>> j = 23    >>> if i%2==0 or j%2==0:    ...   print("atleast one of i and j are even")    ...    >>> i    15
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c76786624fc0476bab11ad1bd54be429"><span data-offset-key="c76786624fc0476bab11ad1bd54be429:0">Now try and guess the value of this. </span><span data-offset-key="c76786624fc0476bab11ad1bd54be429:1">`if(True ^ False):                                       print("Message")`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c76786624fc0476bab11ad1bd54be429"><span data-offset-key="c76786624fc0476bab11ad1bd54be429:0">Now try and guess the value of this. </span><span data-offset-key="c76786624fc0476bab11ad1bd54be429:1">`if(True ^ False): print("Message")`</span></span></span>
 
         >>> if(True ^ False):    ...     print("This will Print")    ...    This will Print    >>> if(False ^ True):    ...     print("This will Print")    ...    This will Print    >>> if(True ^ True):    ...     print("This will Print")    ...
 
@@ -2515,7 +2514,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f8f151ceb6b14d51972f34c953a08683"><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:0">So you would use </span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:1">`^`</span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:2"> in situations, where you’d want one of the operands to be </span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:3">`True`</span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:4">, and the other to be </span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:5">`False`</span><span data-offset-key="f8f151ceb6b14d51972f34c953a08683:6">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43d81b09b17d40189e878f5c37a3903f"><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:0">Let’s say, </span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:1">`x = 5`</span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:2">, and you want to check </span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:3">`if not x == 6:                                       print("This")`</span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:4">. What will be the result of running this code?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43d81b09b17d40189e878f5c37a3903f"><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:0">Let’s say, </span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:1">`x = 5`</span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:2">, and you want to check </span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:3">`if not x == 6: print("This")`</span><span data-offset-key="43d81b09b17d40189e878f5c37a3903f:4">. What will be the result of running this code?</span></span></span>
 
         >>> x = 5    >>> if not x == 6:    ...   print("This")    ...    This    >>> x = 6    >>> if not x == 6:    ...   print("This")    ...
 
@@ -2543,11 +2542,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="250e49a7bf79425e87adcc5a25b462db"><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:0">You can use the function </span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:1">`bool()`</span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:2">, to convert </span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:3">`int`</span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:4"> to a </span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:5">`bool`</span><span data-offset-key="250e49a7bf79425e87adcc5a25b462db:6"> value.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ad67ef06b6734a7a9c7e3611a5f5d2fe"><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:0">`bool(6)`</span><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:1"> returns </span><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:2">`True`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ad67ef06b6734a7a9c7e3611a5f5d2fe"><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:0">`bool(6)`</span><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:1"> returns </span><span data-offset-key="ad67ef06b6734a7a9c7e3611a5f5d2fe:2">`True`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a74b99ef0e942b88d8fb95a5764e37b"><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:0">`bool(-6)`</span><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:1"> returns </span><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:2">`True`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a74b99ef0e942b88d8fb95a5764e37b"><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:0">`bool(-6)`</span><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:1"> returns </span><span data-offset-key="8a74b99ef0e942b88d8fb95a5764e37b:2">`True`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b859b4316234b35b267dc5b4e550f29"><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:0">`bool(0)`</span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:1"> returns </span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:2">`False`</span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:3">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5b859b4316234b35b267dc5b4e550f29"><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:0">`bool(0)`</span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:1"> returns </span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:2">`False`</span><span data-offset-key="5b859b4316234b35b267dc5b4e550f29:3">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6a0769df8eed42ca9b14db3a315c72c5"><span data-offset-key="6a0769df8eed42ca9b14db3a315c72c5:0">Except for </span><span data-offset-key="6a0769df8eed42ca9b14db3a315c72c5:1">`bool(0)`</span><span data-offset-key="6a0769df8eed42ca9b14db3a315c72c5:2">, all the other results would be </span><span data-offset-key="6a0769df8eed42ca9b14db3a315c72c5:3">`True`</span><span data-offset-key="6a0769df8eed42ca9b14db3a315c72c5:4">.</span></span></span>
 
@@ -2555,11 +2554,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a31437d1425a432aa62dd59ef3e96a27"><span data-offset-key="a31437d1425a432aa62dd59ef3e96a27:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ef33064359b4bd69e21bbdcefe800a3"><span data-offset-key="9ef33064359b4bd69e21bbdcefe800a3:0">Looked at a few puzzles related to the logical operators</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9ef33064359b4bd69e21bbdcefe800a3"><span data-offset-key="9ef33064359b4bd69e21bbdcefe800a3:0">Looked at a few puzzles related to the logical operators</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ade94e864d9d423c96e1e49991a4fdcf"><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:0">Looked at conversion functions such as </span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:1">`bool()`</span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:2"> and </span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:3">`int()`</span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:4"> to convert between boolean and integer data</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ade94e864d9d423c96e1e49991a4fdcf"><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:0">Looked at conversion functions such as </span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:1">`bool()`</span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:2"> and </span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:3">`int()`</span><span data-offset-key="ade94e864d9d423c96e1e49991a4fdcf:4"> to convert between boolean and integer data</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="8b97284b5ef748919138752448c61684"><span data-offset-key="8b97284b5ef748919138752448c61684:0">Step 09:</span></span></span>
 
@@ -2569,7 +2568,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b8d1485a712d4322934081191bf406f3"><span data-offset-key="b8d1485a712d4322934081191bf406f3:0">Consider a scenario where </span><span data-offset-key="b8d1485a712d4322934081191bf406f3:1">`i`</span><span data-offset-key="b8d1485a712d4322934081191bf406f3:2"> has a value of </span><span data-offset-key="b8d1485a712d4322934081191bf406f3:3">`2`</span><span data-offset-key="b8d1485a712d4322934081191bf406f3:4">. Let’s try to print a message </span><span data-offset-key="b8d1485a712d4322934081191bf406f3:5">`"i is even"`</span><span data-offset-key="b8d1485a712d4322934081191bf406f3:6"> if </span><span data-offset-key="b8d1485a712d4322934081191bf406f3:7">`i`</span><span data-offset-key="b8d1485a712d4322934081191bf406f3:8"> is an even number. Otherwise, print </span><span data-offset-key="b8d1485a712d4322934081191bf406f3:9">`"i is odd"`</span><span data-offset-key="b8d1485a712d4322934081191bf406f3:10">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="736ab58b3f614658b9fa8553baa4c3fb"><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:0">Earlier we wrote code along these lines: </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:1">`if i % 2 == 0 : print("i is                                       even")`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:2">. However if this condition is not </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:3">`True`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:4">, we would want to </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:5">`print("i is odd")`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:6">. How do we accomplish that?</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="736ab58b3f614658b9fa8553baa4c3fb"><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:0">Earlier we wrote code along these lines: </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:1">`if i % 2 == 0 : print("i is even")`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:2">. However if this condition is not </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:3">`True`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:4">, we would want to </span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:5">`print("i is odd")`</span><span data-offset-key="736ab58b3f614658b9fa8553baa4c3fb:6">. How do we accomplish that?</span></span></span>
 
         >>> i = 2    >>> if i%2 == 0:    ...   print("i is even");    ... else:    ...   print("i is odd");    ...    i is even
 
@@ -2591,11 +2590,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="909fe0d6c6724f55a23e031c086f56bb"><span data-offset-key="909fe0d6c6724f55a23e031c086f56bb:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2f6c5567355f486f9f0cd8df09e0ad7f"><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:0">Looked at two important components of the </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:1">`if`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:2"> statement: </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:3">`else`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:4"> and </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:5">`elif`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:6">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2f6c5567355f486f9f0cd8df09e0ad7f"><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:0">Looked at two important components of the </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:1">`if`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:2"> statement: </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:3">`else`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:4"> and </span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:5">`elif`</span><span data-offset-key="2f6c5567355f486f9f0cd8df09e0ad7f:6">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="184e3bc70acc412fa431809570451455"><span data-offset-key="184e3bc70acc412fa431809570451455:0">Understood that the </span><span data-offset-key="184e3bc70acc412fa431809570451455:1">`elif`</span><span data-offset-key="184e3bc70acc412fa431809570451455:2"> clauses and the final </span><span data-offset-key="184e3bc70acc412fa431809570451455:3">`else`</span><span data-offset-key="184e3bc70acc412fa431809570451455:4"> clause provide alternative conditions to check, when earlier if conditions are true.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="184e3bc70acc412fa431809570451455"><span data-offset-key="184e3bc70acc412fa431809570451455:0">Understood that the </span><span data-offset-key="184e3bc70acc412fa431809570451455:1">`elif`</span><span data-offset-key="184e3bc70acc412fa431809570451455:2"> clauses and the final </span><span data-offset-key="184e3bc70acc412fa431809570451455:3">`else`</span><span data-offset-key="184e3bc70acc412fa431809570451455:4"> clause provide alternative conditions to check, when earlier if conditions are true.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a6c280b1c4d641c2b97bccbb680ae8a4"><span data-offset-key="a6c280b1c4d641c2b97bccbb680ae8a4:0">Step 10: Classroom Exercise CE-DT-02</span></span></span>
 
@@ -2611,7 +2610,7 @@
 
         value = input("Enter a Value: ")    print("you entered ", value)
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="251c9314b03344a7b01ac4d4750590c7"><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:0">We can call the </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:1">`input()`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:2"> method with a text ‘prompt’, such as </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:3">`"Enter A Value: "`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:4">. What we can initially do here, is print the value which was entered, back to the console, by </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:5">`print("you entered ",                                       integer_value)`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:6">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="251c9314b03344a7b01ac4d4750590c7"><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:0">We can call the </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:1">`input()`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:2"> method with a text ‘prompt’, such as </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:3">`"Enter A Value: "`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:4">. What we can initially do here, is print the value which was entered, back to the console, by </span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:5">`print("you entered ", integer_value)`</span><span data-offset-key="251c9314b03344a7b01ac4d4750590c7:6">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d36994d7fe934848beee28386ce3a45e"><span data-offset-key="d36994d7fe934848beee28386ce3a45e:0">An interesting point to explore here, is the type of data input at the console.</span></span></span>
 
@@ -2637,23 +2636,23 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="432c9b351e1e483c8119aec7399f401c"><span data-offset-key="432c9b351e1e483c8119aec7399f401c:0">**Design a menu**</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f9639bc54a8449aa6c8679049892fef"><span data-offset-key="6f9639bc54a8449aa6c8679049892fef:0">Ask the User for input:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6f9639bc54a8449aa6c8679049892fef"><span data-offset-key="6f9639bc54a8449aa6c8679049892fef:0">Ask the User for input:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="448d207bc3574f19a3a36d84cfdbde9c"><span data-offset-key="448d207bc3574f19a3a36d84cfdbde9c:0">Enter two numbers</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="448d207bc3574f19a3a36d84cfdbde9c"><span data-offset-key="448d207bc3574f19a3a36d84cfdbde9c:0">Enter two numbers</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0c6b2e83ba043489058af4413238971"><span data-offset-key="a0c6b2e83ba043489058af4413238971:0">Choose the Option:</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a0c6b2e83ba043489058af4413238971"><span data-offset-key="a0c6b2e83ba043489058af4413238971:0">Choose the Option:</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80bad337fc004a9685423e7d9add81e1"><span data-offset-key="80bad337fc004a9685423e7d9add81e1:0">1 - Add</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="80bad337fc004a9685423e7d9add81e1"><span data-offset-key="80bad337fc004a9685423e7d9add81e1:0">1 - Add</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="145f9307ebae4bc198780b6524f040df"><span data-offset-key="145f9307ebae4bc198780b6524f040df:0">2 - Subtract</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="145f9307ebae4bc198780b6524f040df"><span data-offset-key="145f9307ebae4bc198780b6524f040df:0">2 - Subtract</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1d1f9c0fdc043e68945d6a752f4f6a6"><span data-offset-key="d1d1f9c0fdc043e68945d6a752f4f6a6:0">3 - Multiply</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1d1f9c0fdc043e68945d6a752f4f6a6"><span data-offset-key="d1d1f9c0fdc043e68945d6a752f4f6a6:0">3 - Multiply</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a3b8a489cee4d608133a29637db7816"><span data-offset-key="8a3b8a489cee4d608133a29637db7816:0">4 - Divide</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a3b8a489cee4d608133a29637db7816"><span data-offset-key="8a3b8a489cee4d608133a29637db7816:0">4 - Divide</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f64a08de9c2b4fd783220c8fd89d7e90"><span data-offset-key="f64a08de9c2b4fd783220c8fd89d7e90:0">Perform the Operation</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f64a08de9c2b4fd783220c8fd89d7e90"><span data-offset-key="f64a08de9c2b4fd783220c8fd89d7e90:0">Perform the Operation</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19a9069f16424559bd822b8e11055951"><span data-offset-key="19a9069f16424559bd822b8e11055951:0">Publish the Result</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19a9069f16424559bd822b8e11055951"><span data-offset-key="19a9069f16424559bd822b8e11055951:0">Publish the Result</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2aeb1ba8106e40a186c367108fa181a3"><span data-offset-key="2aeb1ba8106e40a186c367108fa181a3:0">Let’s design a menu, and then ask the user for input.</span></span></span>
 
@@ -2673,13 +2672,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="00b70f66bc08420686f7143b4d2aa8ce"><span data-offset-key="00b70f66bc08420686f7143b4d2aa8ce:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddadf6ed9dd44b5f88b3f2021de4c28d"><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:0">Looked at the in-built </span><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:1">`input()`</span><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:2"> function that can read console input</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddadf6ed9dd44b5f88b3f2021de4c28d"><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:0">Looked at the in-built </span><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:1">`input()`</span><span data-offset-key="ddadf6ed9dd44b5f88b3f2021de4c28d:2"> function that can read console input</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3dfe78b8069b4b93905b903c6b67202e"><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:0">Learned that </span><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:1">`input()`</span><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:2"> always returns what the user enters, as a string</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3dfe78b8069b4b93905b903c6b67202e"><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:0">Learned that </span><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:1">`input()`</span><span data-offset-key="3dfe78b8069b4b93905b903c6b67202e:2"> always returns what the user enters, as a string</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a30eacc663a42f1b371a894629c5208"><span data-offset-key="2a30eacc663a42f1b371a894629c5208:0">We can convert the string from </span><span data-offset-key="2a30eacc663a42f1b371a894629c5208:1">`input()`</span><span data-offset-key="2a30eacc663a42f1b371a894629c5208:2">, to the data type we expect by invoking conversion functions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a30eacc663a42f1b371a894629c5208"><span data-offset-key="2a30eacc663a42f1b371a894629c5208:0">We can convert the string from </span><span data-offset-key="2a30eacc663a42f1b371a894629c5208:1">`input()`</span><span data-offset-key="2a30eacc663a42f1b371a894629c5208:2">, to the data type we expect by invoking conversion functions</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ec27d648c32f40bf895d4df1ca167352"><span data-offset-key="ec27d648c32f40bf895d4df1ca167352:0">Step 11: Continued - Classroom Exercise CE-DT-02</span></span></span>
 
@@ -2701,11 +2700,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eb4a23ecf0804aeb94d9493ee779e931"><span data-offset-key="eb4a23ecf0804aeb94d9493ee779e931:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2bbbe7035ed417d84e264d3e223c292"><span data-offset-key="c2bbbe7035ed417d84e264d3e223c292:0">Augmented the Menu Exercise to get all the input from the console, and compute a value from them</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2bbbe7035ed417d84e264d3e223c292"><span data-offset-key="c2bbbe7035ed417d84e264d3e223c292:0">Augmented the Menu Exercise to get all the input from the console, and compute a value from them</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3e20edfa4da647c5bbbe6392e8435d90"><span data-offset-key="3e20edfa4da647c5bbbe6392e8435d90:0">Corrected the logic to handle incorrect input</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3e20edfa4da647c5bbbe6392e8435d90"><span data-offset-key="3e20edfa4da647c5bbbe6392e8435d90:0">Corrected the logic to handle incorrect input</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="661b31b606334a7fb3186d649879d6df"><span data-offset-key="661b31b606334a7fb3186d649879d6df:0">Step 12: Puzzles On Conditionals</span></span></span>
 
@@ -2775,11 +2774,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0f31b886c46f41348b8217b4c772afc2"><span data-offset-key="0f31b886c46f41348b8217b4c772afc2:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1f5a2699d04402ab34bb2746630991a"><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:0">Looked at a few puzzles related to </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:1">`if`</span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:2">, </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:3">`elif`</span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:4"> and </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:5">`else`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c1f5a2699d04402ab34bb2746630991a"><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:0">Looked at a few puzzles related to </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:1">`if`</span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:2">, </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:3">`elif`</span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:4"> and </span><span data-offset-key="c1f5a2699d04402ab34bb2746630991a:5">`else`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ed19f83a4314e3bb01c385c7f6937a5"><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:0">Explored the importance of indentation and the different condition clauses inside an </span><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:1">`if`</span><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:2"> statement</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8ed19f83a4314e3bb01c385c7f6937a5"><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:0">Explored the importance of indentation and the different condition clauses inside an </span><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:1">`if`</span><span data-offset-key="8ed19f83a4314e3bb01c385c7f6937a5:2"> statement</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e0fdf18fbcba4df29514cbed0a2fa25a"><span data-offset-key="e0fdf18fbcba4df29514cbed0a2fa25a:0">Step 01: The Python Type To Denote Text</span></span></span>
 
@@ -2809,15 +2808,15 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b6fdfbddd2bb4ce88254dbb789a86168"><span data-offset-key="b6fdfbddd2bb4ce88254dbb789a86168:0">Now let’s shift our attention to methods, which gives us more information about the specific contents of a string.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="853a01d9a5f54fd094d9232d4af1bbae"><span data-offset-key="853a01d9a5f54fd094d9232d4af1bbae:0">We want to find out if this string contains numeric values?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="853a01d9a5f54fd094d9232d4af1bbae"><span data-offset-key="853a01d9a5f54fd094d9232d4af1bbae:0">We want to find out if this string contains numeric values?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0cea4e64e5114b9b8271b3b53f5e2cf1"><span data-offset-key="0cea4e64e5114b9b8271b3b53f5e2cf1:0">Does it contain alphabets only?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0cea4e64e5114b9b8271b3b53f5e2cf1"><span data-offset-key="0cea4e64e5114b9b8271b3b53f5e2cf1:0">Does it contain alphabets only?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="708bd5a83c184fbe870a680267d256c5"><span data-offset-key="708bd5a83c184fbe870a680267d256c5:0">Does it contain alpha-numeric values?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="708bd5a83c184fbe870a680267d256c5"><span data-offset-key="708bd5a83c184fbe870a680267d256c5:0">Does it contain alpha-numeric values?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8948e7505c074f3ebceff0334098f8b1"><span data-offset-key="8948e7505c074f3ebceff0334098f8b1:0">Is it lowercase?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8948e7505c074f3ebceff0334098f8b1"><span data-offset-key="8948e7505c074f3ebceff0334098f8b1:0">Is it lowercase?</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd239dde0d5e41df9a2258ed041f34ba"><span data-offset-key="dd239dde0d5e41df9a2258ed041f34ba:0">Is it uppercase?</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dd239dde0d5e41df9a2258ed041f34ba"><span data-offset-key="dd239dde0d5e41df9a2258ed041f34ba:0">Is it uppercase?</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3b05e95b20f24f818c1aa533eeb77837"><span data-offset-key="3b05e95b20f24f818c1aa533eeb77837:0">To find if a piece of text contains only lower case alphabets.</span></span></span>
 
@@ -2863,7 +2862,7 @@
 
         >>> 'Hello World'.find('Ello')    -1    >>> 'Hello World'.find('bello')    -1    >>> 'Hello World'.find('Ello')    -1
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="eb045726f92f4f609657b7bb154fedcc"><span data-offset-key="eb045726f92f4f609657b7bb154fedcc:0">Step 02: Type Conversion Puzzles</span></span></span>
 
@@ -2899,7 +2898,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45876574c5ee443081b5fb2a926169ba"><span data-offset-key="45876574c5ee443081b5fb2a926169ba:0">In this quick step, we looked at converting different types to strings, and converting strings to different types. So we looked at </span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:1">`int`</span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:2">, </span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:3">`bool`</span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:4"> and </span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:5">`float`</span><span data-offset-key="45876574c5ee443081b5fb2a926169ba:6"> values, and we looked at how to convert them to string, and how to convert strings back to these specific types.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="725a5b8ed94e494cb72d1fa1cd1ce390"><span data-offset-key="725a5b8ed94e494cb72d1fa1cd1ce390:0">Step 02: Strings Are Immutable</span></span></span>
 
@@ -2933,11 +2932,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9a6f408d0aa04ced8beffefd57f43bfb"><span data-offset-key="9a6f408d0aa04ced8beffefd57f43bfb:0">When we run </span><span data-offset-key="9a6f408d0aa04ced8beffefd57f43bfb:1">`message = 'Hello'`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24de8a06a2ce4100b70a0d3c13efdd02"><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:0">We are creating one object of </span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:1">`str`</span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:2"> class with a values </span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:3">`'Hello'`</span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24de8a06a2ce4100b70a0d3c13efdd02"><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:0">We are creating one object of </span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:1">`str`</span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:2"> class with a values </span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:3">`'Hello'`</span><span data-offset-key="24de8a06a2ce4100b70a0d3c13efdd02:4">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c553b1287e724b5da993382662c63ddd"><span data-offset-key="c553b1287e724b5da993382662c63ddd:0">We are creating one variable called </span><span data-offset-key="c553b1287e724b5da993382662c63ddd:1">`message`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c553b1287e724b5da993382662c63ddd"><span data-offset-key="c553b1287e724b5da993382662c63ddd:0">We are creating one variable called </span><span data-offset-key="c553b1287e724b5da993382662c63ddd:1">`message`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5378b4c3a2d484a9f710f462ea41c89"><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:0">The location of </span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:1">`'Hello'`</span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:2"> is stored into </span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:3">`message`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f5378b4c3a2d484a9f710f462ea41c89"><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:0">The location of </span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:1">`'Hello'`</span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:2"> is stored into </span><span data-offset-key="f5378b4c3a2d484a9f710f462ea41c89:3">`message`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="25772c7e2c224e02b9f4d783d7c6421b"><span data-offset-key="25772c7e2c224e02b9f4d783d7c6421b:0">In Python, your variables are nothing but a name.</span></span></span>
 
@@ -2953,7 +2952,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4b5d54740a9c441ea1d76b2be8f94a3d"><span data-offset-key="4b5d54740a9c441ea1d76b2be8f94a3d:0">Variables are just names referring to a location. They don’t really contain the value. Variables contain a reference to the location that contains the object.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="06f35954a1954c9fb963ba8f1db3e6c6"><span data-offset-key="06f35954a1954c9fb963ba8f1db3e6c6:0">Step 03: Python Has No Separate Character Type</span></span></span>
 
@@ -2985,7 +2984,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9f0d3fb6bf954adf89aa16d5c153f49e"><span data-offset-key="9f0d3fb6bf954adf89aa16d5c153f49e:0">In this short step, we looked at the fact that there is no separate character class, or data type in Python. We also looked at how do we loop over a given string, and print all the characters present inside this string.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="53119f9b696e48bb8596bb451bb4943a"><span data-offset-key="53119f9b696e48bb8596bb451bb4943a:0">Step 04: The </span><span data-offset-key="53119f9b696e48bb8596bb451bb4943a:1">`string`</span><span data-offset-key="53119f9b696e48bb8596bb451bb4943a:2"> </span><span data-offset-key="53119f9b696e48bb8596bb451bb4943a:3">`module`</span></span></span>
 
@@ -3017,7 +3016,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8eabfab0d1ad4f0390216efc32682a80"><span data-offset-key="8eabfab0d1ad4f0390216efc32682a80:0">In this step, we explored more exercises involving the </span><span data-offset-key="8eabfab0d1ad4f0390216efc32682a80:1">`str`</span><span data-offset-key="8eabfab0d1ad4f0390216efc32682a80:2"> module of Python.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="04de968a5ddc44d6843bb8bebe783f7c"><span data-offset-key="04de968a5ddc44d6843bb8bebe783f7c:0">Step 05: More Exercises With The </span><span data-offset-key="04de968a5ddc44d6843bb8bebe783f7c:1">`str`</span><span data-offset-key="04de968a5ddc44d6843bb8bebe783f7c:2"> Module</span></span></span>
 
@@ -3047,11 +3046,11 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8a82b23e42a14d5aa7735a1d1896da0c"><span data-offset-key="8a82b23e42a14d5aa7735a1d1896da0c:0">The last exercise which we want to leave you with, is to check if something is a consonant.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f748848c7fe2426db5e994544b0be8f8"><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:0">A consonant is an alphabet which is not a vowel, so any alphabet which is not in </span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:1">`'aeiou'`</span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:2"> is a consonant. The simplest way of doing this is to say </span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:3">`consonant_string =                                       'bcdfghj...'`</span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:4"> and so on. Looks like a very long solution? There is an easier way out.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f748848c7fe2426db5e994544b0be8f8"><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:0">A consonant is an alphabet which is not a vowel, so any alphabet which is not in </span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:1">`'aeiou'`</span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:2"> is a consonant. The simplest way of doing this is to say </span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:3">`consonant_string = 'bcdfghj...'`</span><span data-offset-key="f748848c7fe2426db5e994544b0be8f8:4"> and so on. Looks like a very long solution? There is an easier way out.</span></span></span>
 
         >>> vowel_string = 'aeiou'    >>> char = 'b'    >>> char.isalpha() and char.lower() not in vowel_string    True
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="27f02b8f775745e3ad41f56d3e493091"><span data-offset-key="27f02b8f775745e3ad41f56d3e493091:0">Step 06: More Exercises On Strings</span></span></span>
 
@@ -3099,19 +3098,19 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="94200eb919ef42b182bdabb2a2170c10"><span data-offset-key="94200eb919ef42b182bdabb2a2170c10:0">In this step, we explored a few exercises on strings, covering areas such as:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b82aa473a2474e54a9c9174d40003829"><span data-offset-key="b82aa473a2474e54a9c9174d40003829:0">Splitting a given sentence into individual words</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b82aa473a2474e54a9c9174d40003829"><span data-offset-key="b82aa473a2474e54a9c9174d40003829:0">Splitting a given sentence into individual words</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a93b4c97bd842cf952cf780a386d0ef"><span data-offset-key="2a93b4c97bd842cf952cf780a386d0ef:0">The concatenation operator, </span><span data-offset-key="2a93b4c97bd842cf952cf780a386d0ef:1">`+`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2a93b4c97bd842cf952cf780a386d0ef"><span data-offset-key="2a93b4c97bd842cf952cf780a386d0ef:0">The concatenation operator, </span><span data-offset-key="2a93b4c97bd842cf952cf780a386d0ef:1">`+`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76686d89329740b8b52026729c67fa89"><span data-offset-key="76686d89329740b8b52026729c67fa89:0">The string multiplication pattern, </span><span data-offset-key="76686d89329740b8b52026729c67fa89:1">`*`</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="76686d89329740b8b52026729c67fa89"><span data-offset-key="76686d89329740b8b52026729c67fa89:0">The string multiplication pattern, </span><span data-offset-key="76686d89329740b8b52026729c67fa89:1">`*`</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2242150a8f2846bc9ad846f29a823964"><span data-offset-key="2242150a8f2846bc9ad846f29a823964:0">The use of the </span><span data-offset-key="2242150a8f2846bc9ad846f29a823964:1">`==`</span><span data-offset-key="2242150a8f2846bc9ad846f29a823964:2"> operator to compare strings</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2242150a8f2846bc9ad846f29a823964"><span data-offset-key="2242150a8f2846bc9ad846f29a823964:0">The use of the </span><span data-offset-key="2242150a8f2846bc9ad846f29a823964:1">`==`</span><span data-offset-key="2242150a8f2846bc9ad846f29a823964:2"> operator to compare strings</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="f4e900a58b2642429519466b30650c91"><span data-offset-key="f4e900a58b2642429519466b30650c91:0">Chapter 07 - Introducing Loops</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="268a8b48cd7244ff9c81c698dc873468"><span data-offset-key="268a8b48cd7244ff9c81c698dc873468:0">Welcome to the section on Loops. In this section, we will look at a variety of loops that are available in Python. We will look mainly at the </span><span data-offset-key="268a8b48cd7244ff9c81c698dc873468:1">**`for`**</span><span data-offset-key="268a8b48cd7244ff9c81c698dc873468:2"> loop, and the </span><span data-offset-key="268a8b48cd7244ff9c81c698dc873468:3">**`while`**</span><span data-offset-key="268a8b48cd7244ff9c81c698dc873468:4"> loop.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="fa9f9bd762834c52b81a11570e897dbc"><span data-offset-key="fa9f9bd762834c52b81a11570e897dbc:0">Step 01: Revisited: The for Loop</span></span></span>
 
@@ -3149,7 +3148,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="98c1cc85287642dda356d96bc83e2f1f"><span data-offset-key="98c1cc85287642dda356d96bc83e2f1f:0">In this step, we started with discussing and revising basic concepts about the </span><span data-offset-key="98c1cc85287642dda356d96bc83e2f1f:1">`for`</span><span data-offset-key="98c1cc85287642dda356d96bc83e2f1f:2"> loop</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="033c33705ef24d0ab913dd29b0adf9aa"><span data-offset-key="033c33705ef24d0ab913dd29b0adf9aa:0">Step 02: Programming Exercise PE-LO-01</span></span></span>
 
@@ -3185,7 +3184,7 @@
 
     def is_prime(number):
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38c4f3f0d95847e281ec02c2b568de4b"><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:0">We can use a </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:1">`for`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:2"> loop. We can structure it like this: </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:3">`for divisor in range(1, number):                                       ...`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:4">. We would not want to divide it with </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:5">`1`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:6">, but start with </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:7">`2`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:8"> instead, and go up to </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:9">`number-1`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:10">, which is </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:11">`4`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:12">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="38c4f3f0d95847e281ec02c2b568de4b"><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:0">We can use a </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:1">`for`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:2"> loop. We can structure it like this: </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:3">`for divisor in range(1, number): ...`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:4">. We would not want to divide it with </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:5">`1`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:6">, but start with </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:7">`2`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:8"> instead, and go up to </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:9">`number-1`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:10">, which is </span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:11">`4`</span><span data-offset-key="38c4f3f0d95847e281ec02c2b568de4b:12">.</span></span></span>
 
     for divisor in range(2,number):
 
@@ -3207,7 +3206,7 @@
 
     def is_prime(number):    if(number < 2):        return False    for divisor in range(2,number):        if number % divisor == 0:            return False    return Trueprint(is_prime(5));
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3b18712052aa4a7aa5c558f0d645b505"><span data-offset-key="3b18712052aa4a7aa5c558f0d645b505:0">Step 03: Continued - Programming Exercise PE-LO-01</span></span></span>
 
@@ -3219,9 +3218,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64685c27e2d144f195f548d00e559c8c"><span data-offset-key="64685c27e2d144f195f548d00e559c8c:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb7531fa32e94b7fb47d41bd7b3b3f27"><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:0">Wrote a Python function to compute the sum of all integers, from </span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:1">`1`</span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:2">, up to the input integer </span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:3">`n`</span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:4">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb7531fa32e94b7fb47d41bd7b3b3f27"><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:0">Wrote a Python function to compute the sum of all integers, from </span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:1">`1`</span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:2">, up to the input integer </span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:3">`n`</span><span data-offset-key="fb7531fa32e94b7fb47d41bd7b3b3f27:4">.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="512c0536250b402284a81c4ee672dc8b"><span data-offset-key="512c0536250b402284a81c4ee672dc8b:0">Step 04: Continued - Programming Exercise PE-LO-01</span></span></span>
 
@@ -3233,7 +3232,7 @@
 
     def calculate_sum_of_divisors(number):    sum = 0    if(number < 2):        return sum    for divisor in range(1,number+1):        if number % divisor == 0:            sum = sum + divisor    return sumprint(calculate_sum_of_divisors(6))print(calculate_sum_of_divisors(15))
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6fb024ce6fa14843817e0d4c82156188"><span data-offset-key="6fb024ce6fa14843817e0d4c82156188:0">Step 05: Continued - Programming Exercise PE-LO-01</span></span></span>
 
@@ -3245,13 +3244,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b0f1648003a4bcb87ecec5fdf58549d"><span data-offset-key="1b0f1648003a4bcb87ecec5fdf58549d:0">Let start with a simple thing. Let’s try and print </span><span data-offset-key="1b0f1648003a4bcb87ecec5fdf58549d:1">`1 2 3 4 5`</span><span data-offset-key="1b0f1648003a4bcb87ecec5fdf58549d:2"> first, and then we would look at how to print the rest of the output. Lets proceed with defining this method.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="348df1a9f1794eeb8ffa4feda98b02a7"><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:0">We can say </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:1">`def print_a_number_triangle(number):                                       ...`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:2"> that takes a number as an input. You want to print a sequence of integers starting from </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:3">`1`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:4">, up to that specific </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:5">`number`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:6">. How can you do that? Let’s try this: </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:7">`for i in range(1,number+1):                                       print(i)`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:8"> What would happen? Let’s call </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:9">`print_a_number_triangle(5)`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:10"> now. It prints:</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="348df1a9f1794eeb8ffa4feda98b02a7"><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:0">We can say </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:1">`def print_a_number_triangle(number): ...`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:2"> that takes a number as an input. You want to print a sequence of integers starting from </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:3">`1`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:4">, up to that specific </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:5">`number`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:6">. How can you do that? Let’s try this: </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:7">`for i in range(1,number+1): print(i)`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:8"> What would happen? Let’s call </span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:9">`print_a_number_triangle(5)`</span><span data-offset-key="348df1a9f1794eeb8ffa4feda98b02a7:10"> now. It prints:</span></span></span>
 
         1    2    3    4    5
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e2de0a81c9b491e8da33f6f5a46a080"><span data-offset-key="7e2de0a81c9b491e8da33f6f5a46a080:0">on individual lines.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba9fdb6756e6426bb4e1c36ee456df33"><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:0">To print this sequence on a single line, let’s delimit them with </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:1">`<SPACE>`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:2"> instead. Call </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:3">`print()`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:4"> like this instead: </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:5">`for i in range(1,number+1): print(i,                                       end=" ")`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:6">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba9fdb6756e6426bb4e1c36ee456df33"><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:0">To print this sequence on a single line, let’s delimit them with </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:1">`<SPACE>`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:2"> instead. Call </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:3">`print()`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:4"> like this instead: </span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:5">`for i in range(1,number+1): print(i, end=" ")`</span><span data-offset-key="ba9fdb6756e6426bb4e1c36ee456df33:6">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bff9839bb63c4c4494218ff9713adab1"><span data-offset-key="bff9839bb63c4c4494218ff9713adab1:0">Let’s see what would happen now. </span><span data-offset-key="bff9839bb63c4c4494218ff9713adab1:1">`1 2 3 4 5`</span></span></span>
 
@@ -3265,7 +3264,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46246e3de0224b2697f1f09d4aa16310"><span data-offset-key="46246e3de0224b2697f1f09d4aa16310:0">The output of above program is</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b789d755e36a49cc93f9fb052c39bc84"><span data-offset-key="b789d755e36a49cc93f9fb052c39bc84:0">`1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1                                       2 3 4 5`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b789d755e36a49cc93f9fb052c39bc84"><span data-offset-key="b789d755e36a49cc93f9fb052c39bc84:0">`1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5 1 2 3 4 5`</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c2fea042e51d4516ab2f57cc8764abf4"><span data-offset-key="c2fea042e51d4516ab2f57cc8764abf4:0">Let’s add </span><span data-offset-key="c2fea042e51d4516ab2f57cc8764abf4:1">`print("\n")`</span><span data-offset-key="c2fea042e51d4516ab2f57cc8764abf4:2">, so we have a new line at the end of each outer loop iteration.</span></span></span>
 
@@ -3303,9 +3302,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="772db05b8f3f4bed934eb7da847aed8a"><span data-offset-key="772db05b8f3f4bed934eb7da847aed8a:0">In this step, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c5317323e2c4ac7b2fe3a8bcf70a628"><span data-offset-key="7c5317323e2c4ac7b2fe3a8bcf70a628:0">Presented a solution to the exercise for printing a number triangle.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7c5317323e2c4ac7b2fe3a8bcf70a628"><span data-offset-key="7c5317323e2c4ac7b2fe3a8bcf70a628:0">Presented a solution to the exercise for printing a number triangle.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="6b6260272e21431087e6d0493498f38a"><span data-offset-key="6b6260272e21431087e6d0493498f38a:0">Step 06: Introducing The while Loop</span></span></span>
 
@@ -3339,9 +3338,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64a360a8e9d84397a72d31e87597c960"><span data-offset-key="64a360a8e9d84397a72d31e87597c960:0">So how does it work? \*</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:1">`i`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:2"> initially had a value of </span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:3">`0`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:4">. First the condition is checked. It’s </span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:5">`True`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:6">, so </span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:7">`0`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:8"> is printed and then the value of </span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:9">`i`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:10"> is incremented to </span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:11">`1`</span><span data-offset-key="64a360a8e9d84397a72d31e87597c960:12">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d94205ccc9c4f32b0dd685284e3f594"><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:0">`i`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:1"> is still less than </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:2">`5`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:3">, so the loop continues to execute, and this happens until </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:4">`4`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:5"> is printed. </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:6">`i`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:7"> again gets incremented to </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:8">`4 + 1`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:9">, or </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:10">`5`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:11">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9d94205ccc9c4f32b0dd685284e3f594"><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:0">`i`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:1"> is still less than </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:2">`5`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:3">, so the loop continues to execute, and this happens until </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:4">`4`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:5"> is printed. </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:6">`i`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:7"> again gets incremented to </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:8">`4 + 1`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:9">, or </span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:10">`5`</span><span data-offset-key="9d94205ccc9c4f32b0dd685284e3f594:11">.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c10f8855e6741d384a8488878b585d4"><span data-offset-key="5c10f8855e6741d384a8488878b585d4:0">Then we check the condition </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:1">`i < 5`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:2">. This is now </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:3">`False`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:4">. Control goes out of the </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:5">`while`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:6"> loop, and terminates it.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c10f8855e6741d384a8488878b585d4"><span data-offset-key="5c10f8855e6741d384a8488878b585d4:0">Then we check the condition </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:1">`i < 5`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:2">. This is now </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:3">`False`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:4">. Control goes out of the </span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:5">`while`</span><span data-offset-key="5c10f8855e6741d384a8488878b585d4:6"> loop, and terminates it.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="030b39ab35494bb0915c28368a2d18cb"><span data-offset-key="030b39ab35494bb0915c28368a2d18cb:0">When executing a </span><span data-offset-key="030b39ab35494bb0915c28368a2d18cb:1">`while`</span><span data-offset-key="030b39ab35494bb0915c28368a2d18cb:2">, control flow is just based on a condition. As long as the condition is </span><span data-offset-key="030b39ab35494bb0915c28368a2d18cb:3">`True`</span><span data-offset-key="030b39ab35494bb0915c28368a2d18cb:4">, we keep executing the code. An important thing to remember, is to make sure the control variable is updated.</span></span></span>
 
@@ -3357,13 +3356,13 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b06443bf69fe482ba90c7cd1eab0c387"><span data-offset-key="b06443bf69fe482ba90c7cd1eab0c387:0">In this video, we:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1"><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:0">Were introduced to the concept of a </span><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:1">`while`</span><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:2"> loop in Python</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1"><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:0">Were introduced to the concept of a </span><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:1">`while`</span><span data-offset-key="9fb2a8d5ec9640e488ee8c3dc3e2b2f1:2"> loop in Python</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2df04a097a8243d9a687a678c20c7455"><span data-offset-key="2df04a097a8243d9a687a678c20c7455:0">Understood the importance of a control variable being incremented inside the loop</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2df04a097a8243d9a687a678c20c7455"><span data-offset-key="2df04a097a8243d9a687a678c20c7455:0">Understood the importance of a control variable being incremented inside the loop</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e8971f27010422c94f02a7684d45cca"><span data-offset-key="7e8971f27010422c94f02a7684d45cca:0">Observed differences between the working of a </span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:1">`while`</span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:2">, and a </span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:3">`for`</span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:4"> loop</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7e8971f27010422c94f02a7684d45cca"><span data-offset-key="7e8971f27010422c94f02a7684d45cca:0">Observed differences between the working of a </span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:1">`while`</span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:2">, and a </span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:3">`for`</span><span data-offset-key="7e8971f27010422c94f02a7684d45cca:4"> loop</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="619f3877d7384b9785becec410f80c97"><span data-offset-key="619f3877d7384b9785becec410f80c97:0">Step 07: Programming Exercise PE-LO-02</span></span></span>
 
@@ -3393,53 +3392,53 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e83b7a7cedb14a60b41949eb52557896"><span data-offset-key="e83b7a7cedb14a60b41949eb52557896:0">If we do not know, how many times a loop will run, </span><span data-offset-key="e83b7a7cedb14a60b41949eb52557896:1">`while`</span><span data-offset-key="e83b7a7cedb14a60b41949eb52557896:2"> is a better option.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3eb583207a4c47168ae15d771ad84b26"><span data-offset-key="3eb583207a4c47168ae15d771ad84b26:0">Step 08: While Example</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb773202a61b4e91b40e9869a52159dc"><span data-offset-key="bb773202a61b4e91b40e9869a52159dc:0">Earlier we used </span><span data-offset-key="bb773202a61b4e91b40e9869a52159dc:1">`if`</span><span data-offset-key="bb773202a61b4e91b40e9869a52159dc:2"> statement to implement a solution for this:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0bd01233ab4d48f585073672e89f7bd4"><span data-offset-key="0bd01233ab4d48f585073672e89f7bd4:0">Ask the User for input:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0bd01233ab4d48f585073672e89f7bd4"><span data-offset-key="0bd01233ab4d48f585073672e89f7bd4:0">Ask the User for input:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a76f9817ef964d27b87fb7fe9ec7d542"><span data-offset-key="a76f9817ef964d27b87fb7fe9ec7d542:0">Enter two numbers</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a76f9817ef964d27b87fb7fe9ec7d542"><span data-offset-key="a76f9817ef964d27b87fb7fe9ec7d542:0">Enter two numbers</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d305abf685a4698a79d24b4d3c3e876"><span data-offset-key="0d305abf685a4698a79d24b4d3c3e876:0">Choose the Option:</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0d305abf685a4698a79d24b4d3c3e876"><span data-offset-key="0d305abf685a4698a79d24b4d3c3e876:0">Choose the Option:</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa333fa19ea14fdcb5748cc4555e0b07"><span data-offset-key="fa333fa19ea14fdcb5748cc4555e0b07:0">1 - Add</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fa333fa19ea14fdcb5748cc4555e0b07"><span data-offset-key="fa333fa19ea14fdcb5748cc4555e0b07:0">1 - Add</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96f344469a1249c08b0ca5c23c4173d2"><span data-offset-key="96f344469a1249c08b0ca5c23c4173d2:0">2 - Subtract</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="96f344469a1249c08b0ca5c23c4173d2"><span data-offset-key="96f344469a1249c08b0ca5c23c4173d2:0">2 - Subtract</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5eb461c7c16940ae85f72c5fd3e27fa7"><span data-offset-key="5eb461c7c16940ae85f72c5fd3e27fa7:0">3 - Multiply</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5eb461c7c16940ae85f72c5fd3e27fa7"><span data-offset-key="5eb461c7c16940ae85f72c5fd3e27fa7:0">3 - Multiply</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1a7c117c3c44dacb6708d9204633162"><span data-offset-key="d1a7c117c3c44dacb6708d9204633162:0">4 - Divide</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1a7c117c3c44dacb6708d9204633162"><span data-offset-key="d1a7c117c3c44dacb6708d9204633162:0">4 - Divide</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d95aa800234437966d4a2ca33f72c9"><span data-offset-key="71d95aa800234437966d4a2ca33f72c9:0">Perform the Operation</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="71d95aa800234437966d4a2ca33f72c9"><span data-offset-key="71d95aa800234437966d4a2ca33f72c9:0">Perform the Operation</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aac1771963224224ba0a27fceef981b3"><span data-offset-key="aac1771963224224ba0a27fceef981b3:0">Publish the Result</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="aac1771963224224ba0a27fceef981b3"><span data-offset-key="aac1771963224224ba0a27fceef981b3:0">Publish the Result</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bf5f8af7e1174972ac7de2a310ea6e0a"><span data-offset-key="bf5f8af7e1174972ac7de2a310ea6e0a:0">We would want to enhance it to execute in a loop multiple times, until the user chooses to exit. We will add an option 5 - Exit.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79843b2850924e97b2317e54d75fed03"><span data-offset-key="79843b2850924e97b2317e54d75fed03:0">Ask the User for input:</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="79843b2850924e97b2317e54d75fed03"><span data-offset-key="79843b2850924e97b2317e54d75fed03:0">Ask the User for input:</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e430d93d40e43138631a2e3694c3330"><span data-offset-key="4e430d93d40e43138631a2e3694c3330:0">Enter two numbers</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e430d93d40e43138631a2e3694c3330"><span data-offset-key="4e430d93d40e43138631a2e3694c3330:0">Enter two numbers</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac7f4d64da294ddf8cef681d2f977048"><span data-offset-key="ac7f4d64da294ddf8cef681d2f977048:0">Choose the Option:</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ac7f4d64da294ddf8cef681d2f977048"><span data-offset-key="ac7f4d64da294ddf8cef681d2f977048:0">Choose the Option:</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9298f7b565044c2bb33ff1a5ae8a04be"><span data-offset-key="9298f7b565044c2bb33ff1a5ae8a04be:0">1 - Add</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9298f7b565044c2bb33ff1a5ae8a04be"><span data-offset-key="9298f7b565044c2bb33ff1a5ae8a04be:0">1 - Add</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1d1a777dac74aebb9716ce15345990f"><span data-offset-key="f1d1a777dac74aebb9716ce15345990f:0">2 - Subtract</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f1d1a777dac74aebb9716ce15345990f"><span data-offset-key="f1d1a777dac74aebb9716ce15345990f:0">2 - Subtract</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4e4f59ab5e94c8daf5980203dd626e0"><span data-offset-key="b4e4f59ab5e94c8daf5980203dd626e0:0">3 - Multiply</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b4e4f59ab5e94c8daf5980203dd626e0"><span data-offset-key="b4e4f59ab5e94c8daf5980203dd626e0:0">3 - Multiply</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb60dae10a814ee49c76527e9badc164"><span data-offset-key="cb60dae10a814ee49c76527e9badc164:0">4 - Divide</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cb60dae10a814ee49c76527e9badc164"><span data-offset-key="cb60dae10a814ee49c76527e9badc164:0">4 - Divide</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eaf2617780cd4a918886103fb0f6d23d"><span data-offset-key="eaf2617780cd4a918886103fb0f6d23d:0">5 - Exit</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="eaf2617780cd4a918886103fb0f6d23d"><span data-offset-key="eaf2617780cd4a918886103fb0f6d23d:0">5 - Exit</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3135c726b8cb4785b475802af12eead9"><span data-offset-key="3135c726b8cb4785b475802af12eead9:0">Perform the Operation</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3135c726b8cb4785b475802af12eead9"><span data-offset-key="3135c726b8cb4785b475802af12eead9:0">Perform the Operation</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecb39c09d0af4fa8a12d235552c54c21"><span data-offset-key="ecb39c09d0af4fa8a12d235552c54c21:0">Publish the Result</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecb39c09d0af4fa8a12d235552c54c21"><span data-offset-key="ecb39c09d0af4fa8a12d235552c54c21:0">Publish the Result</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d78899889e9f4398b4258fa3bb86fe5d"><span data-offset-key="d78899889e9f4398b4258fa3bb86fe5d:0">Repeat until Option 5 is chosen.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d78899889e9f4398b4258fa3bb86fe5d"><span data-offset-key="d78899889e9f4398b4258fa3bb86fe5d:0">Repeat until Option 5 is chosen.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52c3036308734626af56511f87c45d37"><span data-offset-key="52c3036308734626af56511f87c45d37:0">**Snippet-01 Explained**</span></span></span>
 

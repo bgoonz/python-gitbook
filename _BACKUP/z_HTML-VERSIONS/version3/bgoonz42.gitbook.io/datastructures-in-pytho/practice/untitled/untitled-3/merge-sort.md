@@ -194,8 +194,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Merge Sort</span>
-===============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Merge Sort</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -209,7 +208,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ef1ff74ace744fe4adf79f093a443b3e"><span data-offset-key="ef1ff74ace744fe4adf79f093a443b3e:0">It is a divide and conquers algorithm. In the divide and conquer paradigm, a problem is broken into pieces where each piece still retains all the properties of the larger problem – except its size.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="dcd50c46ef68401899a185404325e52d"><span data-offset-key="dcd50c46ef68401899a185404325e52d:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://en.wikipedia.org/wiki/Merge_sort" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="328bb3bc9b8542dfb5fc3f64ec64aa97"><span data-offset-key="328bb3bc9b8542dfb5fc3f64ec64aa97:0">Advantages </span></span></a><span data-key="7310365c1d2f4e5188613e61546b72e9"><span data-offset-key="7310365c1d2f4e5188613e61546b72e9:0">of Merge Sort</span></span></span>
 
@@ -221,7 +220,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cd3554e4a518459bae15b66048011ebb"><span data-offset-key="cd3554e4a518459bae15b66048011ebb:0">4. Stable Sorting Algorithm</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="2e77f24a1ec444768508e82bb03e493e"><span data-offset-key="2e77f24a1ec444768508e82bb03e493e:0">Define Merge Sorting Function</span></span></span>
 
@@ -241,7 +240,7 @@
 
     def mergeSort(x):    if len(x) == 0 or len(x) == 1:        return x    else:        middle = len(x)//2        a = mergeSort(x[:middle])        b = mergeSort(x[middle:])        return merge(a,b)
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="aa8e6b122d07453baf5fce9ded6548e1"><span data-offset-key="aa8e6b122d07453baf5fce9ded6548e1:0">Define Merge Function</span></span></span>
 
@@ -257,7 +256,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="90a78ed327aa4094842659bf45470fc9"><span data-offset-key="90a78ed327aa4094842659bf45470fc9:0">This means that this algorithm takes a lot of space and may slow down operations for large data sets.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a5848d60ab064c249927eb3be74f619e"><span data-offset-key="a5848d60ab064c249927eb3be74f619e:0">Define Main Condition</span></span></span>
 

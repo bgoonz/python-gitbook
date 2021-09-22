@@ -184,8 +184,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Hash Table</span>
-===============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Hash Table</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -195,11 +194,11 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="b1df3cdec8924419a8e841a6bb851e75"><span data-offset-key="b1df3cdec8924419a8e841a6bb851e75:0">Hash Table</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9fe3ee4a2eb04b8588d9bd72c219ce0e"><span data-offset-key="9fe3ee4a2eb04b8588d9bd72c219ce0e:0">Describe an implementation of a least-used cache, and big-O notation of it.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9fe3ee4a2eb04b8588d9bd72c219ce0e"><span data-offset-key="9fe3ee4a2eb04b8588d9bd72c219ce0e:0">Describe an implementation of a least-used cache, and big-O notation of it.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="243a79e9ceb642288f4fefdc988e9bf3"><span data-offset-key="243a79e9ceb642288f4fefdc988e9bf3:0">A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="243a79e9ceb642288f4fefdc988e9bf3"><span data-offset-key="243a79e9ceb642288f4fefdc988e9bf3:0">A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="15ef902df8884a258b98bfbf066f11ce"><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:0">Implement data structure </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:1">`Map`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:2"> storing pairs of integers (key, value) and define following member functions in O(1) runtime: </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:3">`void insert(key, value)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:4">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:5">`void delete(key)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:6">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:7">`int get(key)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:8">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:9">`int getRandomKey()`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:10">.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="15ef902df8884a258b98bfbf066f11ce"><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:0">Implement data structure </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:1">`Map`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:2"> storing pairs of integers (key, value) and define following member functions in O(1) runtime: </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:3">`void insert(key, value)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:4">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:5">`void delete(key)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:6">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:7">`int get(key)`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:8">, </span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:9">`int getRandomKey()`</span><span data-offset-key="15ef902df8884a258b98bfbf066f11ce:10">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="29a9da62f47c4b5cbd89886479e5fe7c"><span data-offset-key="29a9da62f47c4b5cbd89886479e5fe7c:0"><span data-slate-zero-width="n">​</span></span></span></span>
 

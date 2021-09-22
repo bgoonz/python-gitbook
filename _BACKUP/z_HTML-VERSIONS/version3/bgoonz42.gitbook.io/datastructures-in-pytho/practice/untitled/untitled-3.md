@@ -194,8 +194,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Sorting</span>
-============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Sorting</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -237,21 +236,21 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a2d10778660a4300895c598d36e29313"><span data-offset-key="a2d10778660a4300895c598d36e29313:0">Short description of package/script</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="423a643cc5ec45cfb1456287ff19a665"><span data-offset-key="423a643cc5ec45cfb1456287ff19a665:0">It is a python program of Bubble sort Algorithm.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="423a643cc5ec45cfb1456287ff19a665"><span data-offset-key="423a643cc5ec45cfb1456287ff19a665:0">It is a python program of Bubble sort Algorithm.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b792e62421454faa85f5f2c0d634f08d"><span data-offset-key="b792e62421454faa85f5f2c0d634f08d:0">It is written in a way that it takes user input.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b792e62421454faa85f5f2c0d634f08d"><span data-offset-key="b792e62421454faa85f5f2c0d634f08d:0">It is written in a way that it takes user input.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="85136e5beccf437e995d8395db8ab510"><span data-offset-key="85136e5beccf437e995d8395db8ab510:0">Workflow of the Project</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba8921acadb04c12aae64018daa4c374"><span data-offset-key="ba8921acadb04c12aae64018daa4c374:0">First a function is written to perform Bubble sort.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ba8921acadb04c12aae64018daa4c374"><span data-offset-key="ba8921acadb04c12aae64018daa4c374:0">First a function is written to perform Bubble sort.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e0f24b13d734a18ad859a043850c3ae"><span data-offset-key="1e0f24b13d734a18ad859a043850c3ae:0">Then outside the function user input is taken.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1e0f24b13d734a18ad859a043850c3ae"><span data-offset-key="1e0f24b13d734a18ad859a043850c3ae:0">Then outside the function user input is taken.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="7f8bc65aa41e47d6b0ae8553151d230c"><span data-offset-key="7f8bc65aa41e47d6b0ae8553151d230c:0">Detailed explanation of script, if needed</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="053dd9b5394e44fc8bbac6167999a0db"><span data-offset-key="053dd9b5394e44fc8bbac6167999a0db:0">Start with the first element, compare the current element with the next element of the array. If the current element is greater than the next element of the array, swap both of them. If the current element is less than the next element, move to the next element. Keep on comparing the current element with all the elements in the array. The largest element of the array comes to its original position after 1st iteration. Repeat all the steps till the array is sorted.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="3aabe8e43d15423dbc068c373e904caf"><span data-offset-key="3aabe8e43d15423dbc068c373e904caf:0">Example</span></span></span>
 

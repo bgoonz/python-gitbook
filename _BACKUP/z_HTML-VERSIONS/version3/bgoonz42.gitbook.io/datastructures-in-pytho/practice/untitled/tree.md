@@ -196,8 +196,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree</span>
-=========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Tree</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -217,15 +216,15 @@
 
 > <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af04824725354a9482f83babc5e279c9"><span data-offset-key="af04824725354a9482f83babc5e279c9:0">**Binary search trees have four strict rules:**</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af67bfe49e584c4fbf1e32ebb9485e33"><span data-offset-key="af67bfe49e584c4fbf1e32ebb9485e33:0">The left subtree contains only nodes with elements lesser than the root.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="af67bfe49e584c4fbf1e32ebb9485e33"><span data-offset-key="af67bfe49e584c4fbf1e32ebb9485e33:0">The left subtree contains only nodes with elements lesser than the root.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4828d7c81d0f42b2af1289dd64c8bc1e"><span data-offset-key="4828d7c81d0f42b2af1289dd64c8bc1e:0">The right subtree contains only nodes with elements greater than the root.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4828d7c81d0f42b2af1289dd64c8bc1e"><span data-offset-key="4828d7c81d0f42b2af1289dd64c8bc1e:0">The right subtree contains only nodes with elements greater than the root.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47a05f4df40e44719c9532ac987eb90e"><span data-offset-key="47a05f4df40e44719c9532ac987eb90e:0">Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="47a05f4df40e44719c9532ac987eb90e"><span data-offset-key="47a05f4df40e44719c9532ac987eb90e:0">Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</span></span></span>
 >
-> -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32b7fea29a5241149607240229480551"><span data-offset-key="32b7fea29a5241149607240229480551:0">There can be no duplicate nodes, i.e. no two nodes can have the same value.</span></span></span>
+> - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="32b7fea29a5241149607240229480551"><span data-offset-key="32b7fea29a5241149607240229480551:0">There can be no duplicate nodes, i.e. no two nodes can have the same value.</span></span></span>
 >
-<a href="binary-search.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
+> <a href="binary-search.html" class="reset-3c756112--card-6570f064--whiteCard-fff091a4--cardPrevious-56a5e674"></a>
 
 <span class="text-4505230f--TextH200-a3425406--textContentFamily-49a318e1">Previous</span>
 

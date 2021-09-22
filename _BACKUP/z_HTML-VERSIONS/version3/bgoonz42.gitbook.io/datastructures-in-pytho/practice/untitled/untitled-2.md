@@ -184,8 +184,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Searching</span>
-==============================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Searching</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -195,35 +194,35 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="def683d0c6d5415aa53d6c11c000d026"><span data-offset-key="def683d0c6d5415aa53d6c11c000d026:0">Sorting and Searching</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="302380d189364fe19da9f17e6dccde20"><span data-offset-key="302380d189364fe19da9f17e6dccde20:0">Sorting search results on a page given a certain set of criteria.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="302380d189364fe19da9f17e6dccde20"><span data-offset-key="302380d189364fe19da9f17e6dccde20:0">Sorting search results on a page given a certain set of criteria.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ab506e3a6b274f349bcdcb354ca51e99"><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:0">Sort a list of numbers in which each number is at a distance </span><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:1">`K`</span><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:2"> from its actual position.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ab506e3a6b274f349bcdcb354ca51e99"><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:0">Sort a list of numbers in which each number is at a distance </span><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:1">`K`</span><span data-offset-key="ab506e3a6b274f349bcdcb354ca51e99:2"> from its actual position.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ab347ba70d843d5b1ad21ade2c017a3"><span data-offset-key="0ab347ba70d843d5b1ad21ade2c017a3:0">Given an array of integers, sort the array so that all odd indexes are greater than the even indexes.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ab347ba70d843d5b1ad21ade2c017a3"><span data-offset-key="0ab347ba70d843d5b1ad21ade2c017a3:0">Given an array of integers, sort the array so that all odd indexes are greater than the even indexes.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9e2b43be71a4fb789b6594aa8007acd"><span data-offset-key="e9e2b43be71a4fb789b6594aa8007acd:0">Given users with locations in a list and a logged-in user with locations, find their travel buddies (people who shared more than half of your locations).</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e9e2b43be71a4fb789b6594aa8007acd"><span data-offset-key="e9e2b43be71a4fb789b6594aa8007acd:0">Given users with locations in a list and a logged-in user with locations, find their travel buddies (people who shared more than half of your locations).</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f80e7db077b14b0fa20716ab540f1dd4"><span data-offset-key="f80e7db077b14b0fa20716ab540f1dd4:0">Search for an element in a sorted and rotated array.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f80e7db077b14b0fa20716ab540f1dd4"><span data-offset-key="f80e7db077b14b0fa20716ab540f1dd4:0">Search for an element in a sorted and rotated array.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b33985408d8478fa903019a1debe155"><span data-offset-key="7b33985408d8478fa903019a1debe155:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2017/01/12/rotated-array-binary-search/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e507d2db6a2043cdb046217d684251dd"><span data-offset-key="e507d2db6a2043cdb046217d684251dd:0">Source</span></span></a><span data-key="27eb6ea11c2645bc97cfe67ac4d68f4f"><span data-offset-key="27eb6ea11c2645bc97cfe67ac4d68f4f:0"><span data-slate-zero-width="z">​</span></span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7b33985408d8478fa903019a1debe155"><span data-offset-key="7b33985408d8478fa903019a1debe155:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2017/01/12/rotated-array-binary-search/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="e507d2db6a2043cdb046217d684251dd"><span data-offset-key="e507d2db6a2043cdb046217d684251dd:0">Source</span></span></a><span data-key="27eb6ea11c2645bc97cfe67ac4d68f4f"><span data-offset-key="27eb6ea11c2645bc97cfe67ac4d68f4f:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60f65533cdec4588acbf6596632205d9"><span data-offset-key="60f65533cdec4588acbf6596632205d9:0">Sort a list where each element is no more than k positions away from its sorted position.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="60f65533cdec4588acbf6596632205d9"><span data-offset-key="60f65533cdec4588acbf6596632205d9:0">Sort a list where each element is no more than k positions away from its sorted position.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de75c984485049c9b112bef18fcd6854"><span data-offset-key="de75c984485049c9b112bef18fcd6854:0">Search for an item in a sorted, but rotated, array.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="de75c984485049c9b112bef18fcd6854"><span data-offset-key="de75c984485049c9b112bef18fcd6854:0">Search for an item in a sorted, but rotated, array.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="889e2ad026d544b090843c0aef0b36e7"><span data-offset-key="889e2ad026d544b090843c0aef0b36e7:0">Merge two sorted lists together.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="889e2ad026d544b090843c0aef0b36e7"><span data-offset-key="889e2ad026d544b090843c0aef0b36e7:0">Merge two sorted lists together.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3fce6ad5beff4448b5ac61f8a0e16630"><span data-offset-key="3fce6ad5beff4448b5ac61f8a0e16630:0">Give 3 distinct algorithms to find the K largest values in a list of N items.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3fce6ad5beff4448b5ac61f8a0e16630"><span data-offset-key="3fce6ad5beff4448b5ac61f8a0e16630:0">Give 3 distinct algorithms to find the K largest values in a list of N items.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbee1563347549a1b07aa12ef85c01cb"><span data-offset-key="dbee1563347549a1b07aa12ef85c01cb:0">Find the minimum element in a sorted rotated array in faster than O(n) time.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dbee1563347549a1b07aa12ef85c01cb"><span data-offset-key="dbee1563347549a1b07aa12ef85c01cb:0">Find the minimum element in a sorted rotated array in faster than O(n) time.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="99b83359f26e42ddb1cd6fdb1b9a2831"><span data-offset-key="99b83359f26e42ddb1cd6fdb1b9a2831:0">Write a function that takes a number as input and outputs the biggest number with the same set of digits.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="99b83359f26e42ddb1cd6fdb1b9a2831"><span data-offset-key="99b83359f26e42ddb1cd6fdb1b9a2831:0">Write a function that takes a number as input and outputs the biggest number with the same set of digits.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b7175b202694fc7a4833956f78f46aa"><span data-offset-key="2b7175b202694fc7a4833956f78f46aa:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2017/01/20/arrange-given-numbers-to-form-the-biggest-number-possible/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="f0219748e7bc4b65a3b9224111a424d3"><span data-offset-key="f0219748e7bc4b65a3b9224111a424d3:0">Source</span></span></a><span data-key="11eee281bf504fb3ac1860a982dd12c4"><span data-offset-key="11eee281bf504fb3ac1860a982dd12c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2b7175b202694fc7a4833956f78f46aa"><span data-offset-key="2b7175b202694fc7a4833956f78f46aa:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://blog.gainlo.co/index.php/2017/01/20/arrange-given-numbers-to-form-the-biggest-number-possible/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="f0219748e7bc4b65a3b9224111a424d3"><span data-offset-key="f0219748e7bc4b65a3b9224111a424d3:0">Source</span></span></a><span data-key="11eee281bf504fb3ac1860a982dd12c4"><span data-offset-key="11eee281bf504fb3ac1860a982dd12c4:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">First Tab</span>
 
-<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect\_search.py</span>
+<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect_search.py</span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Binary Search</span>
 
@@ -235,7 +234,7 @@
 
     from collections import dequefrom collections.abc import Sequence​​def bfs_search_grid(grid: Sequence[Sequence[int]], start: tuple[int, int], goal: tuple[int, int]) -> bool:    """On a grid of 0s and 1s, find if start is connected to goal via a path of 1s."""    rows = range(len(grid))    cols = range(len(grid[0]))    seen = {start}    to_visit = deque([start])    while to_visit:        r, c = to_visit.popleft()        if (r, c) == goal:            return True        adjacent = {(r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)}        for next_node in adjacent - seen:            r1, c1 = next_node            # Using these range objects is a concise alternative to 0 <= r1 < len(graph) and 0 <= c1 < len(graph[0])            if r1 in rows and c1 in cols and grid[r1][c1]:                seen.add(next_node)                to_visit.append(next_node)    return False​
 
-<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect\_search.py</span>
+<span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">bisect_search.py</span>
 
     from collections.abc import Callable​​def bisect_search(predicate: Callable[[int], bool], low: int, high: int) -> int:    """Find the lowest int between low and high where predicate(int) is True."""    while low < high:        mid = low + (high - low) // 2  # Avoids integer overflow compared to mid = (low + high) // 2        if predicate(mid):            high = mid        else:            low = mid + 1    return low​
 

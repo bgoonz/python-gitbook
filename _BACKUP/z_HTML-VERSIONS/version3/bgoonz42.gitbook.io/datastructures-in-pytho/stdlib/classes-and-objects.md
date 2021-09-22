@@ -148,8 +148,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Classes and objects</span>
-========================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Classes and objects</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -183,7 +182,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4866cdebdd824bbfb39ec9d79a1998fd"><span data-offset-key="4866cdebdd824bbfb39ec9d79a1998fd:0">Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main </span></span><a href="http://en.wikipedia.org/wiki/Programming_paradigm" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="1a724c7ab8a74e4695443e2ad37550e0"><span data-offset-key="1a724c7ab8a74e4695443e2ad37550e0:0">programming paradigm</span></span></a><span data-key="fdc6bd5b1a014baab3e744de0160557a"><span data-offset-key="fdc6bd5b1a014baab3e744de0160557a:0"> used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43adde8d6c6744d3af9c4a70cf13a37b"><span data-offset-key="43adde8d6c6744d3af9c4a70cf13a37b:0">Up to now we have been writing programs using a </span></span><a href="http://en.wikipedia.org/wiki/Procedural_programming" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="27d0b2ddbfde4118a0577c3156f50463"><span data-offset-key="27d0b2ddbfde4118a0577c3156f50463:0">procedural programming</span></span></a><span data-key="775d710f8ec54176b09b78c81318d4c2"><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:0"> paradigm. In procedural programming the focus is on writing functions or </span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:1">*procedures*</span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:2"> which operate on data. In object-oriented programming the focus is on the creation of </span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:3">**objects**</span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:4"> which contain both data and functionality together.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="43adde8d6c6744d3af9c4a70cf13a37b"><span data-offset-key="43adde8d6c6744d3af9c4a70cf13a37b:0">Up to now we have been writing programs using a </span></span><a href="http://en.wikipedia.org/wiki/Procedural_programming" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="27d0b2ddbfde4118a0577c3156f50463"><span data-offset-key="27d0b2ddbfde4118a0577c3156f50463:0">procedural programming</span></span></a><span data-key="775d710f8ec54176b09b78c81318d4c2"><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:0"> paradigm. In procedural programming the focus is on writing functions or </span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:1">_procedures_</span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:2"> which operate on data. In object-oriented programming the focus is on the creation of </span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:3">**objects**</span><span data-offset-key="775d710f8ec54176b09b78c81318d4c2:4"> which contain both data and functionality together.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="bbc1e8dbd18945f8a3061e617e7f2f02"><span data-offset-key="bbc1e8dbd18945f8a3061e617e7f2f02:0">7.2. User-defined compound types</span></span></span>
 
@@ -241,7 +240,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="23f7694ebbec4a76b71f3b05848e13ec"><span data-offset-key="23f7694ebbec4a76b71f3b05848e13ec:0">7.4. The </span><span data-offset-key="23f7694ebbec4a76b71f3b05848e13ec:1">**initialization method**</span><span data-offset-key="23f7694ebbec4a76b71f3b05848e13ec:2"> and </span><span data-offset-key="23f7694ebbec4a76b71f3b05848e13ec:3">`self`</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfddeea9076747dfa9423030970aa880"><span data-offset-key="cfddeea9076747dfa9423030970aa880:0">Since our </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:1">`Point`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:2"> class is intended to represent two dimensional mathematical points, </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:3">*all*</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:4"> point instances ought to have </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:5">`x`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:6"> and </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:7">`y`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:8"> attributes, but that is not yet so with our </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:9">`Point`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:10"> objects.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cfddeea9076747dfa9423030970aa880"><span data-offset-key="cfddeea9076747dfa9423030970aa880:0">Since our </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:1">`Point`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:2"> class is intended to represent two dimensional mathematical points, </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:3">_all_</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:4"> point instances ought to have </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:5">`x`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:6"> and </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:7">`y`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:8"> attributes, but that is not yet so with our </span><span data-offset-key="cfddeea9076747dfa9423030970aa880:9">`Point`</span><span data-offset-key="cfddeea9076747dfa9423030970aa880:10"> objects.</span></span></span>
 
     >>> p2 = Point()>>> p2.xTraceback (most recent call last):  File "<stdin>", line 1, in <module>AttributeError: 'Point' object has no attribute 'x'>>>
 
@@ -279,7 +278,7 @@
 
 2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="74b053ad39f34da993b209a365f38a1b"><span data-offset-key="74b053ad39f34da993b209a365f38a1b:0">Rename the parameter to </span><span data-offset-key="74b053ad39f34da993b209a365f38a1b:1">`self`</span><span data-offset-key="74b053ad39f34da993b209a365f38a1b:2">.</span></span></span>
 
-    class Point:    def __init__(self, x=0, y=0):        self.x = x        self.y = y​    def distance_from_origin(self):        return ((self.x ** 2) + (self.y ** 2)) ** 0.5​    def print_point(self):        print('({0}, {1})'.format(self.x, self.y))
+    class Point: def **init**(self, x=0, y=0): self.x = x self.y = y​ def distance_from_origin(self): return ((self.x ** 2) + (self.y ** 2)) \*\* 0.5​ def print_point(self): print('({0}, {1})'.format(self.x, self.y))
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ec55139dba9241989788948b73f29640"><span data-offset-key="ec55139dba9241989788948b73f29640:0">We can now invoke the method using dot notation.</span></span></span>
 
@@ -399,7 +398,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0cfa6b43b0344131b779a3128e0d4ed0"><span data-offset-key="0cfa6b43b0344131b779a3128e0d4ed0:0">You can almost read the invocation like English: If time1 is after time2, then…</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="a4db208746624888a05139708a465bbb"><span data-offset-key="a4db208746624888a05139708a465bbb:0">7.10.1. Pure functions and modifiers (again)</span></span></span>
 
@@ -425,7 +424,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="dae10595918a4dc785e9582da0eaa2e2"><span data-offset-key="dae10595918a4dc785e9582da0eaa2e2:0">Although this function is correct, it is starting to get big. Later we will suggest an alternative approach that yields shorter code.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="7a5d15405565437b95955b32f12a0aee"><span data-offset-key="7a5d15405565437b95955b32f12a0aee:0">7.10.2. Modifiers</span></span></span>
 
@@ -491,7 +490,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e973ce9ada65498484f5ab4904d13802"><span data-offset-key="e973ce9ada65498484f5ab4904d13802:0">On the other hand, the process of designing algorithms is interesting, intellectually challenging, and a central part of what we call programming.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7497a7fc466c4af0a187b23b2a799803"><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:0">Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain </span><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:1">*how*</span><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:2"> we do it, at least not in the form of an algorithm.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7497a7fc466c4af0a187b23b2a799803"><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:0">Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain </span><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:1">_how_</span><span data-offset-key="7497a7fc466c4af0a187b23b2a799803:2"> we do it, at least not in the form of an algorithm.</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="05116436001e4d65ac6b8969fc8cf3b0"><span data-offset-key="05116436001e4d65ac6b8969fc8cf3b0:0">7.14. Points revisited</span></span></span>
 
@@ -583,7 +582,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b389222ddc164d31af19ff20fe94d177"><span data-offset-key="b389222ddc164d31af19ff20fe94d177:0">Of course, we intended to apply this function to lists, so it is not surprising that it works. What would be surprising is if we could apply it to a </span><span data-offset-key="b389222ddc164d31af19ff20fe94d177:1">`Point`</span><span data-offset-key="b389222ddc164d31af19ff20fe94d177:2">.</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff31541d8a234038b2c66a5618f41c75"><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:0">To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:1">*If all of the operations inside the function can be applied to the type, the function can be applied to the type.*</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:2"> The operations in the method include </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:3">`copy`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:4">, </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:5">`reverse`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:6">, and </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:7">`print`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:8">.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ff31541d8a234038b2c66a5618f41c75"><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:0">To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:1">_If all of the operations inside the function can be applied to the type, the function can be applied to the type._</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:2"> The operations in the method include </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:3">`copy`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:4">, </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:5">`reverse`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:6">, and </span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:7">`print`</span><span data-offset-key="ff31541d8a234038b2c66a5618f41c75:8">.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c6ef8bc2362e41b08038b9ca0b69ea1e"><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:0">`copy`</span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:1"> works on any object, and we have already written a </span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:2">`__str__`</span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:3"> method for </span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:4">`Point`</span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:5">s, so all we need is a </span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:6">`reverse`</span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:7"> method in the </span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:8">`Point`</span><span data-offset-key="c6ef8bc2362e41b08038b9ca0b69ea1e:9"> class:</span></span></span>
 

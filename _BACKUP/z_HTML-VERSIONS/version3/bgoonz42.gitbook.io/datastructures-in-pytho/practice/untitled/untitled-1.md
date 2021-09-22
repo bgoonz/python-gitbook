@@ -186,8 +186,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graphs</span>
-===========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Graphs</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -197,19 +196,19 @@
 
 <span class="text-4505230f--HeadingH700-04e1a2a3--textContentFamily-49a318e1"><span data-key="f36415f0bb644e1394b5a232015b265f"><span data-offset-key="f36415f0bb644e1394b5a232015b265f:0">Graph</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9c883644c634c23945a2cce09a339aa"><span data-offset-key="b9c883644c634c23945a2cce09a339aa:0">Given a list of sorted words from an alien dictionary, find the order of the alphabet.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b9c883644c634c23945a2cce09a339aa"><span data-offset-key="b9c883644c634c23945a2cce09a339aa:0">Given a list of sorted words from an alien dictionary, find the order of the alphabet.</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca5205399ee341d5b388e483a1ec0156"><span data-offset-key="ca5205399ee341d5b388e483a1ec0156:0">Alien Dictionary Topological Sort question.</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ca5205399ee341d5b388e483a1ec0156"><span data-offset-key="ca5205399ee341d5b388e483a1ec0156:0">Alien Dictionary Topological Sort question.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a83e6340d48f45c3b332af02913b9dca"><span data-offset-key="a83e6340d48f45c3b332af02913b9dca:0">Find if a given string matches any path in a labeled graph. A path may contain cycles.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a83e6340d48f45c3b332af02913b9dca"><span data-offset-key="a83e6340d48f45c3b332af02913b9dca:0">Find if a given string matches any path in a labeled graph. A path may contain cycles.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d6896675700454a872c0af253664ff7"><span data-offset-key="2d6896675700454a872c0af253664ff7:0">Given a bipartite graph, separate the vertices into two sets.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2d6896675700454a872c0af253664ff7"><span data-offset-key="2d6896675700454a872c0af253664ff7:0">Given a bipartite graph, separate the vertices into two sets.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b56b6d3dca64773b3bda803ddafc535"><span data-offset-key="1b56b6d3dca64773b3bda803ddafc535:0">You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1b56b6d3dca64773b3bda803ddafc535"><span data-offset-key="1b56b6d3dca64773b3bda803ddafc535:0">You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ec60ce85aba493081dd716891723729"><span data-offset-key="0ec60ce85aba493081dd716891723729:0">Given a graph and two nodes, determine if there exists a path between them.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0ec60ce85aba493081dd716891723729"><span data-offset-key="0ec60ce85aba493081dd716891723729:0">Given a graph and two nodes, determine if there exists a path between them.</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a7e5684e6074b1ab1354c68bb1e9505"><span data-offset-key="4a7e5684e6074b1ab1354c68bb1e9505:0">Determine if a cycle exists in the graph.</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4a7e5684e6074b1ab1354c68bb1e9505"><span data-offset-key="4a7e5684e6074b1ab1354c68bb1e9505:0">Determine if a cycle exists in the graph.</span></span></span>
 
 <span class="text-4505230f--UIH300-2063425d--textContentFamily-49a318e1">Directed Graph:</span>
 

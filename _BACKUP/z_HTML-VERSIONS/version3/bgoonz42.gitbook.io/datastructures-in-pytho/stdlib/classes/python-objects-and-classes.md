@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Objects & Classes</span>
-=============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Python Objects & Classes</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -169,7 +168,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="15dad70759b54de69bb7f480d49110ab"><span data-offset-key="15dad70759b54de69bb7f480d49110ab:0">Defining class \#</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9dbfb0350e3149b4a0e66c459f03a394"><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:0">Class name in python is preceded with </span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:1">`class`</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:2"> keyword followed by a colon (</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:3">`:`</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:4">). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called </span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:5">*initializer*</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:6"> (also commonly known as constructors), which get invoked automatically every time new object is created.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9dbfb0350e3149b4a0e66c459f03a394"><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:0">Class name in python is preceded with </span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:1">`class`</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:2"> keyword followed by a colon (</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:3">`:`</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:4">). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called </span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:5">_initializer_</span><span data-offset-key="9dbfb0350e3149b4a0e66c459f03a394:6"> (also commonly known as constructors), which get invoked automatically every time new object is created.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bb8470805089468182e9da04b3e1e60b"><span data-offset-key="bb8470805089468182e9da04b3e1e60b:0">Let's see an example.</span></span></span>
 
