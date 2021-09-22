@@ -276,6 +276,7 @@
   * [Python GitHub API](aux-exploration/subject/python-github-api.md)
   * [JS-Event Loop](aux-exploration/subject/js-event-loop.md)
   * [JavaScript Event Loop](aux-exploration/subject/javascript-event-loop.md)
+  * [Manipulating Files & Folders](aux-exploration/subject/manipulating-files-and-folders.md)
 
 ## experiments
 
