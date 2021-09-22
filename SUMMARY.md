@@ -57,7 +57,8 @@
 ## Abstract Data Structures
 
 * [Algorithms](abstract-data-structures/algorithms-1/README.md)
-  * [Algo-Resources](abstract-data-structures/algorithms-1/algo-resources.md)
+  * [Algo-Resources](abstract-data-structures/algorithms-1/algo-resources/README.md)
+    * [List-Of-Solutions-To-Common-Interview-Questions](abstract-data-structures/algorithms-1/algo-resources/list-of-solutions-to-common-interview-questions.md)
   * [Dijkstra's algorithm](abstract-data-structures/algorithms-1/dijkstras-algorithm.md)
   * [Calculate a Factorial With Python - Iterative and Recursive](abstract-data-structures/algorithms-1/calculate-a-factorial-with-python-iterative-and-recursive.md)
   * [DFS](abstract-data-structures/algorithms-1/dfs.md)
