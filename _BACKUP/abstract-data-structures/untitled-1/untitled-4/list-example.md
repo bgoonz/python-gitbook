@@ -1,5 +1,4 @@
-List Example
-============
+# List Example
 
 {% tabs %} {% tab title=“First Tab” %}
 

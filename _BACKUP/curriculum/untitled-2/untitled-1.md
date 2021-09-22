@@ -1,5 +1,4 @@
-D3-Module 03 - Hash Tables II
-=============================
+# D3-Module 03 - Hash Tables II
 
 Original:
 
@@ -9,8 +8,7 @@ Original:
 
 {% embed url=“https://gist.github.com/bgoonz/c10af728179ff056894c6f17dfb819bc\#file-ht2-ipynb” %}
 
-Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined Hashable class
--------------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined Hashable class
 
 ### **Overview**
 
@@ -208,8 +206,7 @@ Great! We created the `put` method.
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png)
 
-Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
---------------------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
 
 ### **Overview**
 
@@ -440,8 +437,7 @@ Fantastic, we did it!
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
 
-Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
---------------------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
 
 ### **Overview**
 
@@ -676,58 +672,41 @@ Fantastic, we did it!
 
 ### **Additional Resources**
 
--   [https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)](https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf)
+- [https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)](https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf)
 
-Homework:
----------
+## Homework:
 
-Given a string text, you need to use the characters of text to form as many instances of the word “lambda” as possible.
------------------------------------------------------------------------------------------------------------------------
+## Given a string text, you need to use the characters of text to form as many instances of the word “lambda” as possible.
 
-You can use each character in text at most once.
-------------------------------------------------
+## You can use each character in text at most once.
 
-Write a function that returns the maximum number of instances of “lambda” that can be formed.
----------------------------------------------------------------------------------------------
+## Write a function that returns the maximum number of instances of “lambda” that can be formed.
 
-Input: text = “mbxcdatlas”
---------------------------
+## Input: text = “mbxcdatlas”
 
-Output: 1
----------
+## Output: 1
 
-Example 2:
-----------
+## Example 2:
 
-Input: text = “lalaaxcmbdtsumbdav”
-----------------------------------
+## Input: text = “lalaaxcmbdtsumbdav”
 
-Output: 2
----------
+## Output: 2
 
-Example 3:
-----------
+## Example 3:
 
-Input: text = “sctlamb”
------------------------
+## Input: text = “sctlamb”
 
-Output: 0
----------
+## Output: 0
 
-Notes:
-------
+## Notes:
 
-text consists of lowercase English characters only
---------------------------------------------------
+## text consists of lowercase English characters only
 
-\[execution time limit\] 4 seconds (py3)
-----------------------------------------
+## \[execution time limit\] 4 seconds (py3)
 
-\[input\] string text
----------------------
+## \[input\] string text
 
-\[output\] integer
-------------------
+## \[output\] integer
 
     def csMaxNumberOfLambdas(text):
         sub_string = "lambda"

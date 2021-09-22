@@ -1,109 +1,267 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>modules</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="modules">Modules</h1>
-<h3 id="modules-1">Modules</h3>
-<h4 id="what-is-a-module">What is a Module</h4>
-<p>A module is a file containing a set of codes or a set of functions which can be included to an application. A module could be a file containing a single variable, a function or a big code base.</p>
-<h4 id="creating-a-module">Creating a Module</h4>
-<p>To create a module we write our codes in a python script and we save it as a .py file. Create a file named mymodule.py inside your project folder. Let us write some code in this file.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># mymodule.py file</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>modules</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="modules">Modules</h1>
+    <h3 id="modules-1">Modules</h3>
+    <h4 id="what-is-a-module">What is a Module</h4>
+    <p>
+      A module is a file containing a set of codes or a set of functions which
+      can be included to an application. A module could be a file containing a
+      single variable, a function or a big code base.
+    </p>
+    <h4 id="creating-a-module">Creating a Module</h4>
+    <p>
+      To create a module we write our codes in a python script and we save it as
+      a .py file. Create a file named mymodule.py inside your project folder.
+      Let us write some code in this file.
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># mymodule.py file</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="kw">def</span> generate_full_name(firstname, lastname):</a>
-<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">return</span> firstname <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> lastname</a></code></pre></div>
-<p>Create main.py file in your project directory and import the mymodule.py file.</p>
-<h4 id="importing-a-module">Importing a Module</h4>
-<p>To import the file we use the <em>import</em> keyword and the name of the file only.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># main.py file</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">return</span> firstname <span class="op">+</span> <span class="st">&#39; &#39;</span> <span class="op">+</span> lastname</a></code></pre>
+    </div>
+    <p>
+      Create main.py file in your project directory and import the mymodule.py
+      file.
+    </p>
+    <h4 id="importing-a-module">Importing a Module</h4>
+    <p>
+      To import the file we use the <em>import</em> keyword and the name of the
+      file only.
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># main.py file</span></a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="im">import</span> mymodule</a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="bu">print</span>(mymodule.generate_full_name(<span class="st">&#39;Asabeneh&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>)) <span class="co"># Asabeneh Yetayeh</span></a></code></pre></div>
-<h4 id="import-functions-from-a-module">Import Functions from a Module</h4>
-<p>We can have many functions in a file and we can import all the functions differently.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># main.py file</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="bu">print</span>(mymodule.generate_full_name(<span class="st">&#39;Asabeneh&#39;</span>, <span class="st">&#39;Yetayeh&#39;</span>)) <span class="co"># Asabeneh Yetayeh</span></a></code></pre>
+    </div>
+    <h4 id="import-functions-from-a-module">Import Functions from a Module</h4>
+    <p>
+      We can have many functions in a file and we can import all the functions
+      differently.
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># main.py file</span></a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="im">from</span> mymodule <span class="im">import</span> generate_full_name, sum_two_nums, person, gravity</a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="bu">print</span>(generate_full_name(<span class="st">&#39;Asabneh&#39;</span>,<span class="st">&#39;Yetayeh&#39;</span>))</a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="bu">print</span>(sum_two_nums(<span class="dv">1</span>,<span class="dv">9</span>))</a>
 <a class="sourceLine" id="cb3-5" title="5">mass <span class="op">=</span> <span class="dv">100</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb3-6" title="6">weight <span class="op">=</span> mass <span class="op">*</span> gravity</a>
 <a class="sourceLine" id="cb3-7" title="7"><span class="bu">print</span>(weight)</a>
-<a class="sourceLine" id="cb3-8" title="8"><span class="bu">print</span>(person[<span class="st">&#39;firstname&#39;</span>])</a></code></pre></div>
-<h4 id="import-functions-from-a-module-and-renaming">Import Functions from a Module and Renaming</h4>
-<p>During importing we can rename the name of the module.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># main.py file</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="bu">print</span>(person[<span class="st">&#39;firstname&#39;</span>])</a></code></pre>
+    </div>
+    <h4 id="import-functions-from-a-module-and-renaming">
+      Import Functions from a Module and Renaming
+    </h4>
+    <p>During importing we can rename the name of the module.</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># main.py file</span></a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="im">from</span> mymodule <span class="im">import</span> generate_full_name <span class="im">as</span> fullname, sum_two_nums <span class="im">as</span> total, person <span class="im">as</span> p, gravity <span class="im">as</span> g</a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="bu">print</span>(fullname(<span class="st">&#39;Asabneh&#39;</span>,<span class="st">&#39;Yetayeh&#39;</span>))</a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="bu">print</span>(total(<span class="dv">1</span>, <span class="dv">9</span>))</a>
@@ -111,12 +269,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-6" title="6">weight <span class="op">=</span> mass <span class="op">*</span> g</a>
 <a class="sourceLine" id="cb4-7" title="7"><span class="bu">print</span>(weight)</a>
 <a class="sourceLine" id="cb4-8" title="8"><span class="bu">print</span>(p)</a>
-<a class="sourceLine" id="cb4-9" title="9"><span class="bu">print</span>(p[<span class="st">&#39;firstname&#39;</span>])</a></code></pre></div>
-<h3 id="import-built-in-modules">Import Built-in Modules</h3>
-<p>Like other programming languages we can also import modules by importing the file/function using the key word <em>import</em>. Let’s import the common module we will use most of the time. Some of the common built-in modules: <em>math</em>, <em>datetime</em>, <em>os</em>,<em>sys</em>, <em>random</em>, <em>statistics</em>, <em>collections</em>, <em>json</em>,<em>re</em></p>
-<h4 id="os-module">OS Module</h4>
-<p>Using python <em>os</em> module it is possible to automatically perform many operating system tasks. The OS module in Python provides functions for creating, changing current working directory, and removing a directory (folder), fetching its contents, changing and identifying the current directory.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># import the module</span></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="bu">print</span>(p[<span class="st">&#39;firstname&#39;</span>])</a></code></pre>
+    </div>
+    <h3 id="import-built-in-modules">Import Built-in Modules</h3>
+    <p>
+      Like other programming languages we can also import modules by importing
+      the file/function using the key word <em>import</em>. Let’s import the
+      common module we will use most of the time. Some of the common built-in
+      modules: <em>math</em>, <em>datetime</em>, <em>os</em>,<em>sys</em>,
+      <em>random</em>, <em>statistics</em>, <em>collections</em>,
+      <em>json</em>,<em>re</em>
+    </p>
+    <h4 id="os-module">OS Module</h4>
+    <p>
+      Using python <em>os</em> module it is possible to automatically perform
+      many operating system tasks. The OS module in Python provides functions
+      for creating, changing current working directory, and removing a directory
+      (folder), fetching its contents, changing and identifying the current
+      directory.
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># import the module</span></a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="im">import</span> os</a>
 <a class="sourceLine" id="cb5-3" title="3"><span class="co"># Creating a directory</span></a>
 <a class="sourceLine" id="cb5-4" title="4">os.mkdir(<span class="st">&#39;directory_name&#39;</span>)</a>
@@ -125,86 +300,186 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-7" title="7"><span class="co"># Getting current working directory</span></a>
 <a class="sourceLine" id="cb5-8" title="8">os.getcwd()</a>
 <a class="sourceLine" id="cb5-9" title="9"><span class="co"># Removing directory</span></a>
-<a class="sourceLine" id="cb5-10" title="10">os.rmdir()</a></code></pre></div>
-<h4 id="sys-module">Sys Module</h4>
-<p>The sys module provides functions and variables used to manipulate different parts of the Python runtime environment. Function sys.argv returns a list of command line arguments passed to a Python script. The item at index 0 in this list is always the name of the script, at index 1 is the argument passed from the command line.</p>
-<p>Example of a script.py file:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> sys</a>
+<a class="sourceLine" id="cb5-10" title="10">os.rmdir()</a></code></pre>
+    </div>
+    <h4 id="sys-module">Sys Module</h4>
+    <p>
+      The sys module provides functions and variables used to manipulate
+      different parts of the Python runtime environment. Function sys.argv
+      returns a list of command line arguments passed to a Python script. The
+      item at index 0 in this list is always the name of the script, at index 1
+      is the argument passed from the command line.
+    </p>
+    <p>Example of a script.py file:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> sys</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="co">#print(sys.argv[0], argv[1],sys.argv[2])  # this line would print out: filename argument1 argument2</span></a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="bu">print</span>(<span class="st">&#39;Welcome </span><span class="sc">{}</span><span class="st">. Enjoy  </span><span class="sc">{}</span><span class="st"> challenge!&#39;</span>.<span class="bu">format</span>(sys.argv[<span class="dv">1</span>], sys.argv[<span class="dv">2</span>]))</a></code></pre></div>
-<p>Now to check how this script works I wrote in command line:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> script.py Asabeneh 30DaysOfPython</a></code></pre></div>
-<p>The result:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">Welcome</span> Asabeneh. Enjoy  30DayOfPython challenge!</a></code></pre></div>
-<p>Some useful sys commands:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># to exit sys</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="bu">print</span>(<span class="st">&#39;Welcome </span><span class="sc">{}</span><span class="st">. Enjoy  </span><span class="sc">{}</span><span class="st"> challenge!&#39;</span>.<span class="bu">format</span>(sys.argv[<span class="dv">1</span>], sys.argv[<span class="dv">2</span>]))</a></code></pre>
+    </div>
+    <p>Now to check how this script works I wrote in command line:</p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> script.py Asabeneh 30DaysOfPython</a></code></pre>
+    </div>
+    <p>The result:</p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">Welcome</span> Asabeneh. Enjoy  30DayOfPython challenge!</a></code></pre>
+    </div>
+    <p>Some useful sys commands:</p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># to exit sys</span></a>
 <a class="sourceLine" id="cb9-2" title="2">sys.exit()</a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="co"># To know the largest integer variable it takes</span></a>
 <a class="sourceLine" id="cb9-4" title="4">sys.maxsize</a>
 <a class="sourceLine" id="cb9-5" title="5"><span class="co"># To know environment path</span></a>
 <a class="sourceLine" id="cb9-6" title="6">sys.path</a>
 <a class="sourceLine" id="cb9-7" title="7"><span class="co"># To know the version of python you are using</span></a>
-<a class="sourceLine" id="cb9-8" title="8">sys.version</a></code></pre></div>
-<h4 id="statistics-module">Statistics Module</h4>
-<p>The statistics module provides functions for mathematical statistics of numeric data. The popular statistical functions which are defined in this module: <em>mean</em>, <em>median</em>, <em>mode</em>, <em>stdev</em> etc.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="im">from</span> statistics <span class="im">import</span> <span class="op">*</span> <span class="co"># importing all the statistics modules</span></a>
+<a class="sourceLine" id="cb9-8" title="8">sys.version</a></code></pre>
+    </div>
+    <h4 id="statistics-module">Statistics Module</h4>
+    <p>
+      The statistics module provides functions for mathematical statistics of
+      numeric data. The popular statistical functions which are defined in this
+      module: <em>mean</em>, <em>median</em>, <em>mode</em>, <em>stdev</em> etc.
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="im">from</span> statistics <span class="im">import</span> <span class="op">*</span> <span class="co"># importing all the statistics modules</span></a>
 <a class="sourceLine" id="cb10-2" title="2">ages <span class="op">=</span> [<span class="dv">20</span>, <span class="dv">20</span>, <span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">25</span>, <span class="dv">22</span>, <span class="dv">26</span>, <span class="dv">20</span>, <span class="dv">23</span>, <span class="dv">22</span>, <span class="dv">26</span>]</a>
 <a class="sourceLine" id="cb10-3" title="3"><span class="bu">print</span>(mean(ages))       <span class="co"># ~22.9</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="bu">print</span>(median(ages))     <span class="co"># 23</span></a>
 <a class="sourceLine" id="cb10-5" title="5"><span class="bu">print</span>(mode(ages))       <span class="co"># 20</span></a>
-<a class="sourceLine" id="cb10-6" title="6"><span class="bu">print</span>(stdev(ages))      <span class="co"># ~2.3</span></a></code></pre></div>
-<h4 id="math-module">Math Module</h4>
-<p>Module containing many mathematical operations and constants.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="im">import</span> math</a>
+<a class="sourceLine" id="cb10-6" title="6"><span class="bu">print</span>(stdev(ages))      <span class="co"># ~2.3</span></a></code></pre>
+    </div>
+    <h4 id="math-module">Math Module</h4>
+    <p>Module containing many mathematical operations and constants.</p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="im">import</span> math</a>
 <a class="sourceLine" id="cb11-2" title="2"><span class="bu">print</span>(math.pi)           <span class="co"># 3.141592653589793, pi constant</span></a>
 <a class="sourceLine" id="cb11-3" title="3"><span class="bu">print</span>(math.sqrt(<span class="dv">2</span>))      <span class="co"># 1.4142135623730951, square root</span></a>
 <a class="sourceLine" id="cb11-4" title="4"><span class="bu">print</span>(math.<span class="bu">pow</span>(<span class="dv">2</span>, <span class="dv">3</span>))    <span class="co"># 8.0, exponential function</span></a>
 <a class="sourceLine" id="cb11-5" title="5"><span class="bu">print</span>(math.floor(<span class="fl">9.81</span>))  <span class="co"># 9, rounding to the lowest</span></a>
 <a class="sourceLine" id="cb11-6" title="6"><span class="bu">print</span>(math.ceil(<span class="fl">9.81</span>))   <span class="co"># 10, rounding to the highest</span></a>
-<a class="sourceLine" id="cb11-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))   <span class="co"># 2, logarithm with 10 as base</span></a></code></pre></div>
-<p>Now, we have imported the <em>math</em> module which contains lots of function which can help us to perform mathematical calculations. To check what functions the module has got, we can use <em>help(math)</em>, or <em>dir(math)</em>. This will display the available functions in the module. If we want to import only a specific function from the module we import it as follows:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi</a>
-<a class="sourceLine" id="cb12-2" title="2"><span class="bu">print</span>(pi)</a></code></pre></div>
-<p>It is also possible to import multiple functions at once</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi, sqrt, <span class="bu">pow</span>, floor, ceil, log10</a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))   <span class="co"># 2, logarithm with 10 as base</span></a></code></pre>
+    </div>
+    <p>
+      Now, we have imported the <em>math</em> module which contains lots of
+      function which can help us to perform mathematical calculations. To check
+      what functions the module has got, we can use <em>help(math)</em>, or
+      <em>dir(math)</em>. This will display the available functions in the
+      module. If we want to import only a specific function from the module we
+      import it as follows:
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi</a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="bu">print</span>(pi)</a></code></pre>
+    </div>
+    <p>It is also possible to import multiple functions at once</p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi, sqrt, <span class="bu">pow</span>, floor, ceil, log10</a>
 <a class="sourceLine" id="cb13-2" title="2"><span class="bu">print</span>(pi)                 <span class="co"># 3.141592653589793</span></a>
 <a class="sourceLine" id="cb13-3" title="3"><span class="bu">print</span>(sqrt(<span class="dv">2</span>))            <span class="co"># 1.4142135623730951</span></a>
 <a class="sourceLine" id="cb13-4" title="4"><span class="bu">print</span>(<span class="bu">pow</span>(<span class="dv">2</span>, <span class="dv">3</span>))          <span class="co"># 8.0</span></a>
 <a class="sourceLine" id="cb13-5" title="5"><span class="bu">print</span>(floor(<span class="fl">9.81</span>))        <span class="co"># 9</span></a>
 <a class="sourceLine" id="cb13-6" title="6"><span class="bu">print</span>(ceil(<span class="fl">9.81</span>))         <span class="co"># 10</span></a>
-<a class="sourceLine" id="cb13-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))    <span class="co"># 2</span></a></code></pre></div>
-<p>But if we want to import all the function in math module we can use * .</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="im">from</span> math <span class="im">import</span> <span class="op">*</span></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))    <span class="co"># 2</span></a></code></pre>
+    </div>
+    <p>
+      But if we want to import all the function in math module we can use * .
+    </p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="im">from</span> math <span class="im">import</span> <span class="op">*</span></a>
 <a class="sourceLine" id="cb14-2" title="2"><span class="bu">print</span>(pi)                  <span class="co"># 3.141592653589793, pi constant</span></a>
 <a class="sourceLine" id="cb14-3" title="3"><span class="bu">print</span>(sqrt(<span class="dv">2</span>))             <span class="co"># 1.4142135623730951, square root</span></a>
 <a class="sourceLine" id="cb14-4" title="4"><span class="bu">print</span>(<span class="bu">pow</span>(<span class="dv">2</span>, <span class="dv">3</span>))           <span class="co"># 8.0, exponential</span></a>
 <a class="sourceLine" id="cb14-5" title="5"><span class="bu">print</span>(floor(<span class="fl">9.81</span>))         <span class="co"># 9, rounding to the lowest</span></a>
 <a class="sourceLine" id="cb14-6" title="6"><span class="bu">print</span>(ceil(<span class="fl">9.81</span>))          <span class="co"># 10, rounding to the highest</span></a>
-<a class="sourceLine" id="cb14-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))     <span class="co"># 2</span></a></code></pre></div>
-<p>When we import we can also rename the name of the function.</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi <span class="im">as</span>  PI</a>
-<a class="sourceLine" id="cb15-2" title="2"><span class="bu">print</span>(PI) <span class="co"># 3.141592653589793</span></a></code></pre></div>
-<h4 id="string-module">String Module</h4>
-<p>A string module is a useful module for many purposes. The example below shows some use of the string module.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="im">import</span> string</a>
+<a class="sourceLine" id="cb14-7" title="7"><span class="bu">print</span>(math.log10(<span class="dv">100</span>))     <span class="co"># 2</span></a></code></pre>
+    </div>
+    <p>When we import we can also rename the name of the function.</p>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="im">from</span> math <span class="im">import</span> pi <span class="im">as</span>  PI</a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="bu">print</span>(PI) <span class="co"># 3.141592653589793</span></a></code></pre>
+    </div>
+    <h4 id="string-module">String Module</h4>
+    <p>
+      A string module is a useful module for many purposes. The example below
+      shows some use of the string module.
+    </p>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="im">import</span> string</a>
 <a class="sourceLine" id="cb16-2" title="2"><span class="bu">print</span>(string.ascii_letters) <span class="co"># abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</span></a>
 <a class="sourceLine" id="cb16-3" title="3"><span class="bu">print</span>(string.digits)        <span class="co"># 0123456789</span></a>
-<a class="sourceLine" id="cb16-4" title="4"><span class="bu">print</span>(string.punctuation)   <span class="co"># !&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</span></a></code></pre></div>
-<h4 id="random-module">Random Module</h4>
-<p>By now you are familiar with importing modules. Let us do one more import to get very familiar with it. Let us import <em>random</em> module which gives us a random number between 0 and 0.9999…. The <em>random</em> module has lots of functions but in this section we will only use <em>random</em> and <em>randint</em>.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="im">from</span> random <span class="im">import</span> random, randint</a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="bu">print</span>(string.punctuation)   <span class="co"># !&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</span></a></code></pre>
+    </div>
+    <h4 id="random-module">Random Module</h4>
+    <p>
+      By now you are familiar with importing modules. Let us do one more import
+      to get very familiar with it. Let us import <em>random</em> module which
+      gives us a random number between 0 and 0.9999…. The <em>random</em> module
+      has lots of functions but in this section we will only use
+      <em>random</em> and <em>randint</em>.
+    </p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="im">from</span> random <span class="im">import</span> random, randint</a>
 <a class="sourceLine" id="cb17-2" title="2"><span class="bu">print</span>(random())   <span class="co"># it doesn&#39;t take any arguments; it returns a value between 0 and 0.9999</span></a>
-<a class="sourceLine" id="cb17-3" title="3"><span class="bu">print</span>(randint(<span class="dv">5</span>, <span class="dv">20</span>)) <span class="co"># it returns a random integer number between [5, 20] inclusive</span></a></code></pre></div>
-<p>🌕 You are going far. Keep going! You have just completed day 12 challenges and you are 12 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.</p>
-<h3 id="exercises-day-12">💻 Exercises: Day 12</h3>
-<h4 id="exercises-level-1">Exercises: Level 1</h4>
-<ol type="1">
-<li><p>Writ a function which generates a six digit/character random_user_id.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">  <span class="bu">print</span>(random_user_id())<span class="op">;</span></a>
-<a class="sourceLine" id="cb18-2" title="2">  <span class="co">&#39;1ee33d&#39;</span></a></code></pre></div></li>
-<li><p>Modify the previous task. Declare a function named user_id_gen_by_user. It doesn’t take any parameters but it takes two inputs using input(). One of the inputs is the number of characters and the second input is the number of IDs which are supposed to be generated.</p></li>
-</ol>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="bu">print</span>(user_id_gen_by_user()) <span class="co"># user input: 5 5</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="bu">print</span>(randint(<span class="dv">5</span>, <span class="dv">20</span>)) <span class="co"># it returns a random integer number between [5, 20] inclusive</span></a></code></pre>
+    </div>
+    <p>
+      🌕 You are going far. Keep going! You have just completed day 12
+      challenges and you are 12 steps a head in to your way to greatness. Now do
+      some exercises for your brain and muscles.
+    </p>
+    <h3 id="exercises-day-12">💻 Exercises: Day 12</h3>
+    <h4 id="exercises-level-1">Exercises: Level 1</h4>
+    <ol type="1">
+      <li>
+        <p>
+          Writ a function which generates a six digit/character random_user_id.
+        </p>
+        <div class="sourceCode" id="cb18">
+          <pre
+            class="sourceCode python"
+          ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">  <span class="bu">print</span>(random_user_id())<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="co">&#39;1ee33d&#39;</span></a></code></pre>
+        </div>
+      </li>
+      <li>
+        <p>
+          Modify the previous task. Declare a function named
+          user_id_gen_by_user. It doesn’t take any parameters but it takes two
+          inputs using input(). One of the inputs is the number of characters
+          and the second input is the number of IDs which are supposed to be
+          generated.
+        </p>
+      </li>
+    </ol>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="bu">print</span>(user_id_gen_by_user()) <span class="co"># user input: 5 5</span></a>
 <a class="sourceLine" id="cb19-2" title="2"><span class="co">#output:</span></a>
 <a class="sourceLine" id="cb19-3" title="3"><span class="co">#kcsy2</span></a>
 <a class="sourceLine" id="cb19-4" title="4"><span class="co">#SMFYb</span></a>
@@ -217,21 +492,44 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb19-11" title="11"><span class="co">#YD7eFwNQKNs7qXaT</span></a>
 <a class="sourceLine" id="cb19-12" title="12"><span class="co">#ycArC5yrRupyG00S</span></a>
 <a class="sourceLine" id="cb19-13" title="13"><span class="co">#UbGxOFI7UXSWAyKN</span></a>
-<a class="sourceLine" id="cb19-14" title="14"><span class="co">#dIV0SSUTgAdKwStr</span></a></code></pre></div>
-<ol type="1">
-<li>Write a function named rgb_color_gen. It will generate rgb colors (3 values ranging from 0 to 255 each).</li>
-</ol>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="bu">print</span>(rgb_color_gen())</a>
-<a class="sourceLine" id="cb20-2" title="2"><span class="co"># rgb(125,244,255) - the output should be in this form</span></a></code></pre></div>
-<h4 id="exercises-level-2">Exercises: Level 2</h4>
-<ol type="1">
-<li>Write a function list_of_hexa_colors which returns any number of hexadecimal colors in an array (six hexadecimal numbers written after #. Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6 letters of the alphabet, a-f. Check the task 6 for output examples).</li>
-<li>Write a function list_of_rgb_colors which returns any number of RGB colors in an array.</li>
-<li>Write a function generate_colors which can generate any number of hexa or rgb colors.</li>
-</ol>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">   generate_colors(<span class="st">&#39;hexa&#39;</span>, <span class="dv">3</span>) <span class="co"># [&#39;#a3e12f&#39;,&#39;#03ed55&#39;,&#39;#eb3d2b&#39;]</span></a>
+<a class="sourceLine" id="cb19-14" title="14"><span class="co">#dIV0SSUTgAdKwStr</span></a></code></pre>
+    </div>
+    <ol type="1">
+      <li>
+        Write a function named rgb_color_gen. It will generate rgb colors (3
+        values ranging from 0 to 255 each).
+      </li>
+    </ol>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="bu">print</span>(rgb_color_gen())</a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="co"># rgb(125,244,255) - the output should be in this form</span></a></code></pre>
+    </div>
+    <h4 id="exercises-level-2">Exercises: Level 2</h4>
+    <ol type="1">
+      <li>
+        Write a function list_of_hexa_colors which returns any number of
+        hexadecimal colors in an array (six hexadecimal numbers written after #.
+        Hexadecimal numeral system is made out of 16 symbols, 0-9 and first 6
+        letters of the alphabet, a-f. Check the task 6 for output examples).
+      </li>
+      <li>
+        Write a function list_of_rgb_colors which returns any number of RGB
+        colors in an array.
+      </li>
+      <li>
+        Write a function generate_colors which can generate any number of hexa
+        or rgb colors.
+      </li>
+    </ol>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">   generate_colors(<span class="st">&#39;hexa&#39;</span>, <span class="dv">3</span>) <span class="co"># [&#39;#a3e12f&#39;,&#39;#03ed55&#39;,&#39;#eb3d2b&#39;]</span></a>
 <a class="sourceLine" id="cb21-2" title="2">   generate_colors(<span class="st">&#39;hexa&#39;</span>, <span class="dv">1</span>) <span class="co"># [&#39;#b334ef&#39;]</span></a>
 <a class="sourceLine" id="cb21-3" title="3">   generate_colors(<span class="st">&#39;rgb&#39;</span>, <span class="dv">3</span>)  <span class="co"># [&#39;rgb(5, 55, 175&#39;,&#39;rgb(50, 105, 100&#39;,&#39;rgb(15, 26, 80&#39;]</span></a>
-<a class="sourceLine" id="cb21-4" title="4">   generate_colors(<span class="st">&#39;rgb&#39;</span>, <span class="dv">1</span>)  <span class="co"># [&#39;rgb(33,79, 176)&#39;]</span></a></code></pre></div>
-</body>
+<a class="sourceLine" id="cb21-4" title="4">   generate_colors(<span class="st">&#39;rgb&#39;</span>, <span class="dv">1</span>)  <span class="co"># [&#39;rgb(33,79, 176)&#39;]</span></a></code></pre>
+    </div>
+  </body>
 </html>

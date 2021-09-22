@@ -1,5 +1,4 @@
-Trinket
-=======
+# Trinket
 
 **1.** [**Numbers and math**](https://docs.trinket.io/getting-started-with-python#/numbers/numbers-in-python)  
 **2.** [**Logic**](https://docs.trinket.io/getting-started-with-python#/logic/booleans)  
@@ -13,8 +12,7 @@ Trinket
 
 {% embed url=“https://codesandbox.io/s/iframe-inception-forked-j5ofi?file=/index.html” %}
 
-Numbers in Python
------------------
+## Numbers in Python
 
 {% embed url=“https://trinket.io/python3/61c47663ad” %}
 
@@ -26,8 +24,7 @@ Numbers in Python
 
 \*\*\*\*
 
-Learn Python, Part 8: Loops
----------------------------
+## Learn Python, Part 8: Loops
 
 {% embed url=“https://learnpython.trinket.io/learn-python-part-8-loops\#/welcome/where-well-go” %}
 

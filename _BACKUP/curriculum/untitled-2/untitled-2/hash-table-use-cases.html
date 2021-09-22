@@ -1,39 +1,197 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>hash-table-use-cases</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="hash-table-use-cases">Hash Table Use Cases</h1>
-<h4 id="associative-arrays">Associative arrays</h4>
-<p>Main article: <a href="https://en.wikipedia.org/wiki/Associative_array">Associative array</a></p>
-<p>Hash tables are commonly used to implement many types of in-memory tables. They are used to implement <a href="https://en.wikipedia.org/wiki/Associative_array">associative arrays</a> (arrays whose indices are arbitrary <a href="https://en.wikipedia.org/wiki/String_%28computing%29">strings</a> or other complicated objects), especially in <a href="https://en.wikipedia.org/wiki/Interpreter_%28computing%29">interpreted</a> <a href="https://en.wikipedia.org/wiki/Programming_language">programming languages</a> like <a href="https://en.wikipedia.org/wiki/Ruby_%28programming_language%29">Ruby</a>, <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a>, and <a href="https://en.wikipedia.org/wiki/PHP">PHP</a>.</p>
-<p>When storing a new item into a <a href="https://en.wikipedia.org/wiki/Multimap">multimap</a> and a hash collision occurs, the multimap unconditionally stores both items.</p>
-<p>When storing a new item into a typical associative array and a hash collision occurs, but the actual keys themselves are different, the associative array likewise stores both items. However, if the key of the new item exactly matches the key of an old item, the associative array typically erases the old item and overwrites it with the new item, so every item in the table has a unique key.</p>
-<h4 id="database-indexing">Database indexing</h4>
-<p>Hash tables may also be used as <a href="https://en.wikipedia.org/wiki/Disk_drive">disk</a>-based data structures and <a href="https://en.wikipedia.org/wiki/Index_%28database%29">database indices</a> (such as in <a href="https://en.wikipedia.org/wiki/DBM_%28computing%29">dbm</a>) although <a href="https://en.wikipedia.org/wiki/B-tree">B-trees</a> are more popular in these applications. In multi-node database systems, hash tables are commonly used to distribute rows amongst nodes, reducing network traffic for <a href="https://en.wikipedia.org/wiki/Hash_join">hash joins</a>.</p>
-<h4 id="cachesedit">Caches[<a href="https://en.wikipedia.org/w/index.php?title=Hash_table&amp;action=edit&amp;section=32">edit</a>]</h4>
-<p>Main article: <a href="https://en.wikipedia.org/wiki/Cache_%28computing%29">Cache (computing)</a></p>
-<p>Hash tables can be used to implement <a href="https://en.wikipedia.org/wiki/Cache_%28computing%29">caches</a>, auxiliary data tables that are used to speed up the access to data that is primarily stored in slower media. In this application, hash collisions can be handled by discarding one of the two colliding entries—usually erasing the old item that is currently stored in the table and overwriting it with the new item, so every item in the table has a unique hash value.</p>
-<h4 id="setsedit">Sets[<a href="https://en.wikipedia.org/w/index.php?title=Hash_table&amp;action=edit&amp;section=33">edit</a>]</h4>
-<p>Besides recovering the entry that has a given key, many hash table implementations can also tell whether such an entry exists or not.</p>
-<p>Those structures can therefore be used to implement a <a href="https://en.wikipedia.org/wiki/Set_data_structure">set data structure</a>,<a href="https://en.wikipedia.org/wiki/Hash_table#cite_note-43">[43]</a> which merely records whether a given key belongs to a specified set of keys. In this case, the structure can be simplified by eliminating all parts that have to do with the entry values. Hashing can be used to implement both static and dynamic sets.</p>
-<h4 id="object-representation">Object representation</h4>
-<p>Several dynamic languages, such as <a href="https://en.wikipedia.org/wiki/Perl">Perl</a>, <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a>, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, <a href="https://en.wikipedia.org/wiki/Lua_%28programming_language%29">Lua</a>, and <a href="https://en.wikipedia.org/wiki/Ruby_%28programming_language%29">Ruby</a>, use hash tables to implement <a href="https://en.wikipedia.org/wiki/Object_%28computer_science%29">objects</a>. In this representation, the keys are the names of the members and methods of the object, and the values are pointers to the corresponding member or method.</p>
-<h4 id="unique-data-representation">Unique data representation</h4>
-<p>Main article: <a href="https://en.wikipedia.org/wiki/String_interning">String interning</a></p>
-<p>Hash tables can be used by some programs to avoid creating multiple character strings with the same contents. For that purpose, all strings in use by the program are stored in a single string pool implemented as a hash table, which is checked whenever a new string has to be created. This technique was introduced in <a href="https://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a> interpreters under the name <a href="https://en.wikipedia.org/wiki/Hash_consing">hash consing</a>, and can be used with many other kinds of data (<a href="https://en.wikipedia.org/wiki/Expression_tree">expression trees</a> in a <a href="https://en.wikipedia.org/wiki/Computer_algebra_system">symbolic algebra</a> system, records in a database, files in a file system, binary decision diagrams, etc.).</p>
-<h4 id="transposition-table">Transposition table</h4>
-<p>Main article: <a href="https://en.wikipedia.org/wiki/Transposition_table">Transposition table</a></p>
-<p>A <a href="https://en.wikipedia.org/wiki/Transposition_table">transposition table</a> to a complex Hash Table which stores information about each section that has been searched.<a href="https://en.wikipedia.org/wiki/Hash_table#cite_note-44">[44]</a></p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>hash-table-use-cases</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="hash-table-use-cases">Hash Table Use Cases</h1>
+    <h4 id="associative-arrays">Associative arrays</h4>
+    <p>
+      Main article:
+      <a href="https://en.wikipedia.org/wiki/Associative_array"
+        >Associative array</a
+      >
+    </p>
+    <p>
+      Hash tables are commonly used to implement many types of in-memory tables.
+      They are used to implement
+      <a href="https://en.wikipedia.org/wiki/Associative_array"
+        >associative arrays</a
+      >
+      (arrays whose indices are arbitrary
+      <a href="https://en.wikipedia.org/wiki/String_%28computing%29">strings</a>
+      or other complicated objects), especially in
+      <a href="https://en.wikipedia.org/wiki/Interpreter_%28computing%29"
+        >interpreted</a
+      >
+      <a href="https://en.wikipedia.org/wiki/Programming_language"
+        >programming languages</a
+      >
+      like
+      <a href="https://en.wikipedia.org/wiki/Ruby_%28programming_language%29"
+        >Ruby</a
+      >,
+      <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29"
+        >Python</a
+      >, and <a href="https://en.wikipedia.org/wiki/PHP">PHP</a>.
+    </p>
+    <p>
+      When storing a new item into a
+      <a href="https://en.wikipedia.org/wiki/Multimap">multimap</a> and a hash
+      collision occurs, the multimap unconditionally stores both items.
+    </p>
+    <p>
+      When storing a new item into a typical associative array and a hash
+      collision occurs, but the actual keys themselves are different, the
+      associative array likewise stores both items. However, if the key of the
+      new item exactly matches the key of an old item, the associative array
+      typically erases the old item and overwrites it with the new item, so
+      every item in the table has a unique key.
+    </p>
+    <h4 id="database-indexing">Database indexing</h4>
+    <p>
+      Hash tables may also be used as
+      <a href="https://en.wikipedia.org/wiki/Disk_drive">disk</a>-based data
+      structures and
+      <a href="https://en.wikipedia.org/wiki/Index_%28database%29"
+        >database indices</a
+      >
+      (such as in
+      <a href="https://en.wikipedia.org/wiki/DBM_%28computing%29">dbm</a>)
+      although <a href="https://en.wikipedia.org/wiki/B-tree">B-trees</a> are
+      more popular in these applications. In multi-node database systems, hash
+      tables are commonly used to distribute rows amongst nodes, reducing
+      network traffic for
+      <a href="https://en.wikipedia.org/wiki/Hash_join">hash joins</a>.
+    </p>
+    <h4 id="cachesedit">
+      Caches[<a
+        href="https://en.wikipedia.org/w/index.php?title=Hash_table&amp;action=edit&amp;section=32"
+        >edit</a
+      >]
+    </h4>
+    <p>
+      Main article:
+      <a href="https://en.wikipedia.org/wiki/Cache_%28computing%29"
+        >Cache (computing)</a
+      >
+    </p>
+    <p>
+      Hash tables can be used to implement
+      <a href="https://en.wikipedia.org/wiki/Cache_%28computing%29">caches</a>,
+      auxiliary data tables that are used to speed up the access to data that is
+      primarily stored in slower media. In this application, hash collisions can
+      be handled by discarding one of the two colliding entries—usually erasing
+      the old item that is currently stored in the table and overwriting it with
+      the new item, so every item in the table has a unique hash value.
+    </p>
+    <h4 id="setsedit">
+      Sets[<a
+        href="https://en.wikipedia.org/w/index.php?title=Hash_table&amp;action=edit&amp;section=33"
+        >edit</a
+      >]
+    </h4>
+    <p>
+      Besides recovering the entry that has a given key, many hash table
+      implementations can also tell whether such an entry exists or not.
+    </p>
+    <p>
+      Those structures can therefore be used to implement a
+      <a href="https://en.wikipedia.org/wiki/Set_data_structure"
+        >set data structure</a
+      >,<a href="https://en.wikipedia.org/wiki/Hash_table#cite_note-43">[43]</a>
+      which merely records whether a given key belongs to a specified set of
+      keys. In this case, the structure can be simplified by eliminating all
+      parts that have to do with the entry values. Hashing can be used to
+      implement both static and dynamic sets.
+    </p>
+    <h4 id="object-representation">Object representation</h4>
+    <p>
+      Several dynamic languages, such as
+      <a href="https://en.wikipedia.org/wiki/Perl">Perl</a>,
+      <a href="https://en.wikipedia.org/wiki/Python_%28programming_language%29"
+        >Python</a
+      >, <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a>,
+      <a href="https://en.wikipedia.org/wiki/Lua_%28programming_language%29"
+        >Lua</a
+      >, and
+      <a href="https://en.wikipedia.org/wiki/Ruby_%28programming_language%29"
+        >Ruby</a
+      >, use hash tables to implement
+      <a href="https://en.wikipedia.org/wiki/Object_%28computer_science%29"
+        >objects</a
+      >. In this representation, the keys are the names of the members and
+      methods of the object, and the values are pointers to the corresponding
+      member or method.
+    </p>
+    <h4 id="unique-data-representation">Unique data representation</h4>
+    <p>
+      Main article:
+      <a href="https://en.wikipedia.org/wiki/String_interning"
+        >String interning</a
+      >
+    </p>
+    <p>
+      Hash tables can be used by some programs to avoid creating multiple
+      character strings with the same contents. For that purpose, all strings in
+      use by the program are stored in a single string pool implemented as a
+      hash table, which is checked whenever a new string has to be created. This
+      technique was introduced in
+      <a href="https://en.wikipedia.org/wiki/Lisp_%28programming_language%29"
+        >Lisp</a
+      >
+      interpreters under the name
+      <a href="https://en.wikipedia.org/wiki/Hash_consing">hash consing</a>, and
+      can be used with many other kinds of data (<a
+        href="https://en.wikipedia.org/wiki/Expression_tree"
+        >expression trees</a
+      >
+      in a
+      <a href="https://en.wikipedia.org/wiki/Computer_algebra_system"
+        >symbolic algebra</a
+      >
+      system, records in a database, files in a file system, binary decision
+      diagrams, etc.).
+    </p>
+    <h4 id="transposition-table">Transposition table</h4>
+    <p>
+      Main article:
+      <a href="https://en.wikipedia.org/wiki/Transposition_table"
+        >Transposition table</a
+      >
+    </p>
+    <p>
+      A
+      <a href="https://en.wikipedia.org/wiki/Transposition_table"
+        >transposition table</a
+      >
+      to a complex Hash Table which stores information about each section that
+      has been searched.<a
+        href="https://en.wikipedia.org/wiki/Hash_table#cite_note-44"
+        >[44]</a
+      >
+    </p>
+  </body>
 </html>

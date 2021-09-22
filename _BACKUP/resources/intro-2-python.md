@@ -1,54 +1,50 @@
-Intro 2 Python
-==============
+# Intro 2 Python
 
 ![](../.gitbook/assets/image%20%2815%29.png)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
-Variable Conventions
---------------------
+## Variable Conventions
 
 ### ​
 
 ​
 
--   Variables do not need to be initialized. e.g!(let, const, var) just a name and an assignment
--   Variables are always block scoped
--   Variables should be snake\_case (think of python as a snake lol)
--   CAPITAL\_SNAKE\_CASE usually refers to constants
--   UpperCamelCase usually refers to a class
--   \_\_double\_underscore\_\_ is used with variables that should be private or left alone (dunder)
+- Variables do not need to be initialized. e.g!(let, const, var) just a name and an assignment
+- Variables are always block scoped
+- Variables should be snake_case (think of python as a snake lol)
+- CAPITAL_SNAKE_CASE usually refers to constants
+- UpperCamelCase usually refers to a class
+- \_\_double_underscore\_\_ is used with variables that should be private or left alone (dunder)
 
-    ​
+  ​
 
 ​
 
-Data Types
-----------
+## Data Types
 
 ### ​
 
 ​
 
--   **Boolean**: True or False; Written with uppercase first letter
--   **Integer**: Whole Numbers
--   **Float**: Any number with a decimal. Division always returns a float;
--   **String**: A sequence of unicode characters; “I am a string!”
--   **List**: An ordered sequence of values \[1,2,3\], \[“a”,“b”,“c”\]
--   **Dictionary**: A collection of key value pairs {“first\_name”: “William”, “last\_name”: “Vincent”}
--   **Tuples**: An ordered and immutable collection of objects (1,2,3,4,5)
--   **None**: Like null in other languages. Written with an uppercase first letter.
+- **Boolean**: True or False; Written with uppercase first letter
+- **Integer**: Whole Numbers
+- **Float**: Any number with a decimal. Division always returns a float;
+- **String**: A sequence of unicode characters; “I am a string!”
+- **List**: An ordered sequence of values \[1,2,3\], \[“a”,“b”,“c”\]
+- **Dictionary**: A collection of key value pairs {“first_name”: “William”, “last_name”: “Vincent”}
+- **Tuples**: An ordered and immutable collection of objects (1,2,3,4,5)
+- **None**: Like null in other languages. Written with an uppercase first letter.
 
-    ​
+  ​
 
-    Python is dynamically typed. Meaning that variables can be reassigned to a different type
+  Python is dynamically typed. Meaning that variables can be reassigned to a different type
 
-    ​
+  ​
 
 ​
 
-Strings
--------
+## Strings
 
 ### ​
 
@@ -61,41 +57,39 @@ Strings
 
 ​ Python can use negative indexing: ​
 
--   name = “Bill”
--   name\[0\] == name\[-4\]
--   name\[3\] == name\[-1\]
+- name = “Bill”
+- name\[0\] == name\[-4\]
+- name\[3\] == name\[-1\]
 
-    ​
+  ​
 
 ​
 
-Type Conversion
----------------
+## Type Conversion
 
 ### ​
 
 ​
 
--   **To Int**:
-    -   decimal = 12.43563456
-    -   integer = int(decimal)
-    -   integer == 12
--   **To String**:
-    -   list = \[1,2,3\]
-    -   to\_string = str(list)
-    -   to\_string == “\[1,2,3\]”
--   **To Float**:
+- **To Int**:
+  - decimal = 12.43563456
+  - integer = int(decimal)
+  - integer == 12
+- **To String**:
+  - list = \[1,2,3\]
+  - to_string = str(list)
+  - to_string == “\[1,2,3\]”
+- **To Float**:
 
-    -   integer = 12
-    -   to\_float = float(integer)
-    -   float == 12.0
+  - integer = 12
+  - to_float = float(integer)
+  - float == 12.0
 
-        ​
+    ​
 
 ​
 
-Boolean and Conditional Logic
------------------------------
+## Boolean and Conditional Logic
 
 ### ​
 
@@ -112,53 +106,51 @@ Boolean and Conditional Logic
 
 ​
 
--   **“:”** represents an indented block below, allowing python to understand the end of the condition and the beginning of the response.
--   **Falsey Values**: empty objects, empty strings, None, 0
--   **Comparison Operators**: ==, !=, &gt;, &gt;=, &lt;, &lt;=
--   **Logical Operators**: and, or, not
+- **“:”** represents an indented block below, allowing python to understand the end of the condition and the beginning of the response.
+- **Falsey Values**: empty objects, empty strings, None, 0
+- **Comparison Operators**: ==, !=, &gt;, &gt;=, &lt;, &lt;=
+- **Logical Operators**: and, or, not
 
-    ​
+  ​
 
 ​
 
-Loops
------
+## Loops
 
 ### ​
 
 ​
 
--   **Iterable Objects**:
+- **Iterable Objects**:
 
-    -   String: " "
-    -   List: \[a, b\]
-    -   Dictionary: {key: value}
-    -   Tuples: (a,b,c)
-    -   Range: range(min, max). Inclusive start and end.
+  - String: " "
+  - List: \[a, b\]
+  - Dictionary: {key: value}
+  - Tuples: (a,b,c)
+  - Range: range(min, max). Inclusive start and end.
 
+    ​
+
+    **For Loops**
+
+    ​
+
+        for temp_variable in name_of_iterable_object:
+        do a thing
         ​
 
-        **For Loops**
+    ​
+
+    **While Loops**
+
+    ​
 
         ​
-
-            for temp_variable in name_of_iterable_object:
-            do a thing
-            ​
-
+        while conditional:
+        do a thing
         ​
 
-        **While Loops**
-
-        ​
-
-            ​
-            while conditional:
-            do a thing
-            ​
-
-Intro 2 Python continued…
--------------------------
+## Intro 2 Python continued…
 
 In the following examples, input and output are distinguished by the presence or absence of prompts ([&gt;&gt;&gt;](https://docs.python.org/3.9/glossary.html#term-0) and […](https://docs.python.org/3.9/glossary.html#term-1)): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
 
@@ -273,7 +265,7 @@ In the interactive interpreter, the output string is enclosed in quotes and spec
     First line.
     Second line.
 
-If you don’t want characters prefaced by `\` to be interpreted as special characters, you can use *raw strings* by adding an `r` before the first quote:&gt;&gt;&gt;
+If you don’t want characters prefaced by `\` to be interpreted as special characters, you can use _raw strings_ by adding an `r` before the first quote:&gt;&gt;&gt;
 
     >>> print('C:\some\name')  # here \n means newline!
     C:\some
@@ -301,7 +293,7 @@ Strings can be concatenated (glued together) with the `+` operator, and repeated
     >>> 3 * 'un' + 'ium'
     'unununium'
 
-Two or more *string literals* (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.&gt;&gt;&gt;
+Two or more _string literals_ (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.&gt;&gt;&gt;
 
     >>> 'Py' 'thon'
     'Python'
@@ -332,7 +324,7 @@ If you want to concatenate variables or a variable and a literal, use `+`:&gt;&g
     >>> prefix + 'thon'
     'Python'
 
-Strings can be *indexed* (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:&gt;&gt;&gt;
+Strings can be _indexed_ (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:&gt;&gt;&gt;
 
     >>> word = 'Python'
     >>> word[0]  # character in position 0
@@ -351,7 +343,7 @@ Indices may also be negative numbers, to start counting from the right:&gt;&gt;&
 
 Note that since -0 is the same as 0, negative indices start from -1.
 
-In addition to indexing, *slicing* is also supported. While indexing is used to obtain individual characters, *slicing* allows you to obtain substring:&gt;&gt;&gt;
+In addition to indexing, _slicing_ is also supported. While indexing is used to obtain individual characters, _slicing_ allows you to obtain substring:&gt;&gt;&gt;
 
     >>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
     'Py'
@@ -374,7 +366,7 @@ Note how the start is always included, and the end always excluded. This makes s
     >>> word[:4] + word[4:]
     'Python'
 
-One way to remember how slices work is to think of the indices as pointing *between* characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of *n* characters has index *n*, for example:
+One way to remember how slices work is to think of the indices as pointing _between_ characters, with the left edge of the first character numbered 0. Then the right edge of the last character of a string of _n_ characters has index _n_, for example:
 
      +---+---+---+---+---+---+
      | P | y | t | h | o | n |
@@ -382,7 +374,7 @@ One way to remember how slices work is to think of the indices as pointing *betw
      0   1   2   3   4   5   6
     -6  -5  -4  -3  -2  -1
 
-The first row of numbers gives the position of the indices 0…6 in the string; the second row gives the corresponding negative indices. The slice from *i* to *j* consists of all characters between the edges labeled *i* and *j*, respectively.
+The first row of numbers gives the position of the indices 0…6 in the string; the second row gives the corresponding negative indices. The slice from _i_ to _j_ consists of all characters between the edges labeled _i_ and _j_, respectively.
 
 For non-negative indices, the length of a slice is the difference of the indices, if both are within bounds. For example, the length of `word[1:3]` is 2.
 
@@ -426,7 +418,7 @@ The built-in function [`len()`](https://docs.python.org/3.9/library/functions.ht
 
 See also[Text Sequence Type — str](https://docs.python.org/3.9/library/stdtypes.html#textseq)
 
-Strings are examples of *sequence types*, and support the common operations supported by such types.[String Methods](https://docs.python.org/3.9/library/stdtypes.html#string-methods)
+Strings are examples of _sequence types_, and support the common operations supported by such types.[String Methods](https://docs.python.org/3.9/library/stdtypes.html#string-methods)
 
 Strings support a large number of methods for basic transformations and searching.[Formatted string literals](https://docs.python.org/3.9/reference/lexical_analysis.html#f-strings)
 
@@ -438,7 +430,7 @@ The old formatting operations invoked when strings are the left operand of the `
 
 **3.1.3. Lists**
 
-Python knows a number of *compound* data types, used to group together other values. The most versatile is the *list*, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.&gt;&gt;&gt;
+Python knows a number of _compound_ data types, used to group together other values. The most versatile is the _list_, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.&gt;&gt;&gt;
 
     >>> squares = [1, 4, 9, 16, 25]
     >>> squares
@@ -472,7 +464,7 @@ Unlike strings, which are [immutable](https://docs.python.org/3.9/glossary.html#
     >>> cubes
     [1, 8, 27, 64, 125]
 
-You can also add new items at the end of the list, by using the `append()` *method* (we will see more about methods later):&gt;&gt;&gt;
+You can also add new items at the end of the list, by using the `append()` _method_ (we will see more about methods later):&gt;&gt;&gt;
 
     >>> cubes.append(216)  # add the cube of 6
     >>> cubes.append(7 ** 3)  # and the cube of 7
@@ -536,23 +528,23 @@ Of course, we can use Python for more complicated tasks than adding two and two 
 
 This example introduces several new features.
 
--   The first line contains a *multiple assignment*: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
--   The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition (here: `a < 10`) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` (less than), `>` (greater than), `==` (equal to), `<=` (less than or equal to), `>=` (greater than or equal to) and `!=` (not equal to).
--   The *body* of the loop is *indented*: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space(s) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion (since the parser cannot guess when you have typed the last line). Note that each line within a basic block must be indented by the same amount.
--   The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
+- The first line contains a _multiple assignment_: the variables `a` and `b` simultaneously get the new values 0 and 1. On the last line this is used again, demonstrating that the expressions on the right-hand side are all evaluated first before any of the assignments take place. The right-hand side expressions are evaluated from the left to the right.
+- The [`while`](https://docs.python.org/3.9/reference/compound_stmts.html#while) loop executes as long as the condition (here: `a < 10`) remains true. In Python, like in C, any non-zero integer value is true; zero is false. The condition may also be a string or list value, in fact any sequence; anything with a non-zero length is true, empty sequences are false. The test used in the example is a simple comparison. The standard comparison operators are written the same as in C: `<` (less than), `>` (greater than), `==` (equal to), `<=` (less than or equal to), `>=` (greater than or equal to) and `!=` (not equal to).
+- The _body_ of the loop is _indented_: indentation is Python’s way of grouping statements. At the interactive prompt, you have to type a tab or space(s) for each indented line. In practice you will prepare more complicated input for Python with a text editor; all decent text editors have an auto-indent facility. When a compound statement is entered interactively, it must be followed by a blank line to indicate completion (since the parser cannot guess when you have typed the last line). Note that each line within a basic block must be indented by the same amount.
+- The [`print()`](https://docs.python.org/3.9/library/functions.html#print) function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely, like this:&gt;&gt;&gt;
 
-        >>> i = 256*256
-        >>> print('The value of i is', i)
-        The value of i is 65536
+      >>> i = 256*256
+      >>> print('The value of i is', i)
+      The value of i is 65536
 
-    The keyword argument *end* can be used to avoid the newline after the output, or end the output with a different string:&gt;&gt;&gt;
+  The keyword argument _end_ can be used to avoid the newline after the output, or end the output with a different string:&gt;&gt;&gt;
 
-        >>> a, b = 0, 1
-        >>> while a < 1000:
-        ...     print(a, end=',')
-        ...     a, b = b, a+b
-        ...
-        0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
+      >>> a, b = 0, 1
+      >>> while a < 1000:
+      ...     print(a, end=',')
+      ...     a, b = b, a+b
+      ...
+      0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
 
 ### Control Flow
 
@@ -737,13 +729,13 @@ We can create a function that writes the Fibonacci series to an arbitrary bounda
     ... fib(2000)
     0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
 
-The keyword [`def`](https://docs.python.org/3.9/reference/compound_stmts.html#def) introduces a function *definition*. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.
+The keyword [`def`](https://docs.python.org/3.9/reference/compound_stmts.html#def) introduces a function _definition_. It must be followed by the function name and the parenthesized list of formal parameters. The statements that form the body of the function start at the next line, and must be indented.
 
-The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or *docstring*. (More about docstrings can be found in the section [Documentation Strings](https://docs.python.org/3.9/tutorial/controlflow.html#tut-docstrings).) There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
+The first statement of the function body can optionally be a string literal; this string literal is the function’s documentation string, or _docstring_. (More about docstrings can be found in the section [Documentation Strings](https://docs.python.org/3.9/tutorial/controlflow.html#tut-docstrings).) There are tools which use docstrings to automatically produce online or printed documentation, or to let the user interactively browse through code; it’s good practice to include docstrings in code that you write, so make a habit of it.
 
-The *execution* of a function introduces a new symbol table used for the local variables of the function. More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables and variables of enclosing functions cannot be directly assigned a value within a function (unless, for global variables, named in a [`global`](https://docs.python.org/3.9/reference/simple_stmts.html#global) statement, or, for variables of enclosing functions, named in a [`nonlocal`](https://docs.python.org/3.9/reference/simple_stmts.html#nonlocal) statement), although they may be referenced.
+The _execution_ of a function introduces a new symbol table used for the local variables of the function. More precisely, all variable assignments in a function store the value in the local symbol table; whereas variable references first look in the local symbol table, then in the local symbol tables of enclosing functions, then in the global symbol table, and finally in the table of built-in names. Thus, global variables and variables of enclosing functions cannot be directly assigned a value within a function (unless, for global variables, named in a [`global`](https://docs.python.org/3.9/reference/simple_stmts.html#global) statement, or, for variables of enclosing functions, named in a [`nonlocal`](https://docs.python.org/3.9/reference/simple_stmts.html#nonlocal) statement), although they may be referenced.
 
-The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using *call by value* (where the *value* is always an object *reference*, not the value of the object). [1](https://docs.python.org/3.9/tutorial/controlflow.html#id2) When a function calls another function, or calls itself recursively, a new local symbol table is created for that call.
+The actual parameters (arguments) to a function call are introduced in the local symbol table of the called function when it is called; thus, arguments are passed using _call by value_ (where the _value_ is always an object _reference_, not the value of the object). [1](https://docs.python.org/3.9/tutorial/controlflow.html#id2) When a function calls another function, or calls itself recursively, a new local symbol table is created for that call.
 
 A function definition associates the function name with the function object in the current symbol table. The interpreter recognizes the object pointed to by that name as a user-defined function. Other names can also point to that same function object and can also be used to access the function:&gt;&gt;&gt;
 
@@ -776,8 +768,8 @@ It is simple to write a function that returns a list of the numbers of the Fibon
 
 This example, as usual, demonstrates some new Python features:
 
--   The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
--   The statement `result.append(a)` calls a *method* of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object (this may be an expression), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. (It is possible to define your own object types and methods, using *classes*, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
+- The [`return`](https://docs.python.org/3.9/reference/simple_stmts.html#return) statement returns with a value from a function. `return` without an expression argument returns `None`. Falling off the end of a function also returns `None`.
+- The statement `result.append(a)` calls a _method_ of the list object `result`. A method is a function that ‘belongs’ to an object and is named `obj.methodname`, where `obj` is some object (this may be an expression), and `methodname` is the name of a method that is defined by the object’s type. Different types define different methods. Methods of different types may have the same name without causing ambiguity. (It is possible to define your own object types and methods, using _classes_, see [Classes](https://docs.python.org/3.9/tutorial/classes.html#tut-classes)) The method `append()` shown in the example is defined for list objects; it adds a new element at the end of the list. In this example it is equivalent to `result = result + [a]`, but more efficient.
 
 #### 4.7. More on Defining Functions
 
@@ -801,13 +793,13 @@ The most useful form is to specify a default value for one or more arguments. Th
 
 This function can be called in several ways:
 
--   giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
--   giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
--   or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
+- giving only the mandatory argument: `ask_ok('Do you really want to quit?')`
+- giving one of the optional arguments: `ask_ok('OK to overwrite the file?', 2)`
+- or even giving all arguments: `ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')`
 
 This example also introduces the [`in`](https://docs.python.org/3.9/reference/expressions.html#in) keyword. This tests whether or not a sequence contains a certain value.
 
-The default values are evaluated at the point of function definition in the *defining* scope, so that
+The default values are evaluated at the point of function definition in the _defining_ scope, so that
 
     i = 5
 
@@ -932,13 +924,13 @@ If `/` and `*` are not present in the function definition, arguments may be pass
 
 **4.7.3.2. Positional-Only Parameters**
 
-Looking at this in a bit more detail, it is possible to mark certain parameters as *positional-only*. If *positional-only*, the parameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a `/` (forward-slash). The `/` is used to logically separate the positional-only parameters from the rest of the parameters. If there is no `/` in the function definition, there are no positional-only parameters.
+Looking at this in a bit more detail, it is possible to mark certain parameters as _positional-only_. If _positional-only_, the parameters’ order matters, and the parameters cannot be passed by keyword. Positional-only parameters are placed before a `/` (forward-slash). The `/` is used to logically separate the positional-only parameters from the rest of the parameters. If there is no `/` in the function definition, there are no positional-only parameters.
 
-Parameters following the `/` may be *positional-or-keyword* or *keyword-only*.
+Parameters following the `/` may be _positional-or-keyword_ or _keyword-only_.
 
 **4.7.3.3. Keyword-Only Arguments**
 
-To mark parameters as *keyword-only*, indicating the parameters must be passed by keyword argument, place an `*` in the arguments list just before the first *keyword-only* parameter.
+To mark parameters as _keyword-only_, indicating the parameters must be passed by keyword argument, place an `*` in the arguments list just before the first _keyword-only_ parameter.
 
 **4.7.3.4. Function Examples**
 
@@ -1032,9 +1024,9 @@ The use case will determine which parameters to use in the function definition:
 
 As guidance:
 
--   Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
--   Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
--   For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
+- Use positional-only if you want the name of the parameters to not be available to the user. This is useful when parameter names have no real meaning, if you want to enforce the order of the arguments when the function is called or if you need to take some positional parameters and arbitrary keywords.
+- Use keyword-only when names have meaning and the function definition is more understandable by being explicit with names or you want to prevent users relying on the position of the argument being passed.
+- For an API, use positional-only to prevent breaking API changes if the parameter’s name is modified in the future.
 
 **4.7.4. Arbitrary Argument Lists**
 
@@ -1055,7 +1047,7 @@ Normally, these `variadic` arguments will be last in the list of formal paramete
 
 **4.7.5. Unpacking Argument Lists**
 
-The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments. For instance, the built-in [`range()`](https://docs.python.org/3.9/library/stdtypes.html#range) function expects separate *start* and *stop* arguments. If they are not available separately, write the function call with the `*`-operator to unpack the arguments out of a list or tuple:&gt;&gt;&gt;
+The reverse situation occurs when the arguments are already in a list or tuple but need to be unpacked for a function call requiring separate positional arguments. For instance, the built-in [`range()`](https://docs.python.org/3.9/library/stdtypes.html#range) function expects separate _start_ and _stop_ arguments. If they are not available separately, write the function call with the `*`-operator to unpack the arguments out of a list or tuple:&gt;&gt;&gt;
 
     >>> list(range(3, 6))            # normal call with separate arguments
     [3, 4, 5]
@@ -1102,7 +1094,7 @@ The first line should always be a short, concise summary of the object’s purpo
 
 If there are more lines in the documentation string, the second line should be blank, visually separating the summary from the rest of the description. The following lines should be one or more paragraphs describing the object’s calling conventions, its side effects, etc.
 
-The Python parser does not strip indentation from multi-line string literals in Python, so tools that process documentation have to strip indentation if desired. This is done using the following convention. The first non-blank line *after* the first line of the string determines the amount of indentation for the entire documentation string. (We can’t use the first line since it is generally adjacent to the string’s opening quotes so its indentation is not apparent in the string literal.) Whitespace “equivalent” to this indentation is then stripped from the start of all lines of the string. Lines that are indented less should not occur, but if they occur all their leading whitespace should be stripped. Equivalence of whitespace should be tested after expansion of tabs (to 8 spaces, normally).
+The Python parser does not strip indentation from multi-line string literals in Python, so tools that process documentation have to strip indentation if desired. This is done using the following convention. The first non-blank line _after_ the first line of the string determines the amount of indentation for the entire documentation string. (We can’t use the first line since it is generally adjacent to the string’s opening quotes so its indentation is not apparent in the string literal.) Whitespace “equivalent” to this indentation is then stripped from the start of all lines of the string. Lines that are indented less should not occur, but if they occur all their leading whitespace should be stripped. Equivalence of whitespace should be tested after expansion of tabs (to 8 spaces, normally).
 
 Here is an example of a multi-line docstring:&gt;&gt;&gt;
 
@@ -1140,25 +1132,25 @@ This chapter describes some things you’ve learned about already in more detail
 
 #### 5.1. More on Lists
 
-The list data type has some more methods. Here are all of the methods of list objects:`list.append`(*x*)
+The list data type has some more methods. Here are all of the methods of list objects:`list.append`(_x_)
 
-Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.`list.extend`(*iterable*)
+Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.`list.extend`(_iterable_)
 
-Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.`list.insert`(*i*, *x*)
+Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.`list.insert`(_i_, _x_)
 
-Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.`list.remove`(*x*)
+Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.`list.remove`(_x_)
 
-Remove the first item from the list whose value is equal to *x*. It raises a [`ValueError`](https://docs.python.org/3.9/library/exceptions.html#ValueError) if there is no such item.`list.pop`(\[*i*\])
+Remove the first item from the list whose value is equal to _x_. It raises a [`ValueError`](https://docs.python.org/3.9/library/exceptions.html#ValueError) if there is no such item.`list.pop`(\[_i_\])
 
-Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list. (The square brackets around the *i* in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.)`list.clear`()
+Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list. (The square brackets around the _i_ in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.)`list.clear`()
 
-Remove all items from the list. Equivalent to `del a[:]`.`list.index`(*x*\[, *start*\[, *end*\]\])
+Remove all items from the list. Equivalent to `del a[:]`.`list.index`(_x_\[, _start_\[, _end_\]\])
 
-Return zero-based index in the list of the first item whose value is equal to *x*. Raises a [`ValueError`](https://docs.python.org/3.9/library/exceptions.html#ValueError) if there is no such item.
+Return zero-based index in the list of the first item whose value is equal to _x_. Raises a [`ValueError`](https://docs.python.org/3.9/library/exceptions.html#ValueError) if there is no such item.
 
-The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the *start* argument.`list.count`(*x*)
+The optional arguments _start_ and _end_ are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the _start_ argument.`list.count`(_x_)
 
-Return the number of times *x* appears in the list.`list.sort`(*\**, *key=None*, *reverse=False*)
+Return the number of times _x_ appears in the list.`list.sort`(\*\**, *key=None*, *reverse=False\*)
 
 Sort the items of the list in place (the arguments can be used for sort customization, see [`sorted()`](https://docs.python.org/3.9/library/functions.html#sorted) for their explanation).`list.reverse`()
 
@@ -1191,7 +1183,7 @@ An example that uses most of the list methods:&gt;&gt;&gt;
 
 You might have noticed that methods like `insert`, `remove` or `sort` that only modify the list have no return value printed – they return the default `None`. [1](https://docs.python.org/3.9/tutorial/datastructures.html#id2) This is a design principle for all mutable data structures in Python.
 
-Another thing you might notice is that not all data can be sorted or compared. For instance, `[None, 'hello', 10]` doesn’t sort because integers can’t be compared to strings and *None* can’t be compared to other types. Also, there are some types that don’t have a defined ordering relation. For example, `3+4j < 5+7j` isn’t a valid comparison.
+Another thing you might notice is that not all data can be sorted or compared. For instance, `[None, 'hello', 10]` doesn’t sort because integers can’t be compared to strings and _None_ can’t be compared to other types. Also, there are some types that don’t have a defined ordering relation. For example, `3+4j < 5+7j` isn’t a valid comparison.
 
 **5.1.1. Using Lists as Stacks**
 
@@ -1376,7 +1368,7 @@ Referencing the name `a` hereafter is an error (at least until another value is 
 
 #### 5.3. Tuples and Sequences
 
-We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of *sequence* data types (see [Sequence Types — list, tuple, range](https://docs.python.org/3.9/library/stdtypes.html#typesseq)). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the *tuple*.
+We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of _sequence_ data types (see [Sequence Types — list, tuple, range](https://docs.python.org/3.9/library/stdtypes.html#typesseq)). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the _tuple_.
 
 A tuple consists of a number of values separated by commas, for instance:&gt;&gt;&gt;
 
@@ -1414,15 +1406,15 @@ A special problem is the construction of tuples containing 0 or 1 items: the syn
     >>> singleton
     ('hello',)
 
-The statement `t = 12345, 54321, 'hello!'` is an example of *tuple packing*: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
+The statement `t = 12345, 54321, 'hello!'` is an example of _tuple packing_: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
 
     >>> x, y, z = t
 
-This is called, appropriately enough, *sequence unpacking* and works for any sequence on the right-hand side. Sequence unpacking requires that there are as many variables on the left side of the equals sign as there are elements in the sequence. Note that multiple assignment is really just a combination of tuple packing and sequence unpacking.
+This is called, appropriately enough, _sequence unpacking_ and works for any sequence on the right-hand side. Sequence unpacking requires that there are as many variables on the left side of the equals sign as there are elements in the sequence. Note that multiple assignment is really just a combination of tuple packing and sequence unpacking.
 
 #### 5.4. Sets
 
-Python also includes a data type for *sets*. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+Python also includes a data type for _sets_. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
 
 Curly braces or the [`set()`](https://docs.python.org/3.9/library/stdtypes.html#set) function can be used to create sets. Note: to create an empty set you have to use `set()`, not `{}`; the latter creates an empty dictionary, a data structure that we discuss in the next section.
 
@@ -1459,9 +1451,9 @@ Similarly to [list comprehensions](https://docs.python.org/3.9/tutorial/datastru
 
 #### 5.5. Dictionaries
 
-Another useful data type built into Python is the *dictionary* (see [Mapping Types — dict](https://docs.python.org/3.9/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by *keys*, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
+Another useful data type built into Python is the _dictionary_ (see [Mapping Types — dict](https://docs.python.org/3.9/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by _keys_, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
 
-It is best to think of a dictionary as a set of *key: value* pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
+It is best to think of a dictionary as a set of _key: value_ pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
 
 The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with `del`. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
 
@@ -1591,7 +1583,7 @@ Comparisons can be chained. For example, `a < b == c` tests whether `a` is less 
 
 Comparisons may be combined using the Boolean operators `and` and `or`, and the outcome of a comparison (or of any other Boolean expression) may be negated with `not`. These have lower priorities than comparison operators; between them, `not` has the highest priority and `or` the lowest, so that `A and not B or C` is equivalent to `(A and (not B)) or C`. As always, parentheses can be used to express the desired composition.
 
-The Boolean operators `and` and `or` are so-called *short-circuit* operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined. For example, if `A` and `C` are true but `B` is false, `A and B and C` does not evaluate the expression `C`. When used as a general value and not as a Boolean, the return value of a short-circuit operator is the last evaluated argument.
+The Boolean operators `and` and `or` are so-called _short-circuit_ operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined. For example, if `A` and `C` are true but `B` is false, `A and B and C` does not evaluate the expression `C`. When used as a general value and not as a Boolean, the return value of a short-circuit operator is the last evaluated argument.
 
 It is possible to assign the result of a comparison or other Boolean expression to a variable. For example,&gt;&gt;&gt;
 
@@ -1604,7 +1596,7 @@ Note that in Python, unlike C, assignment inside expressions must be done explic
 
 #### 5.8. Comparing Sequences and Other Types
 
-Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses *lexicographical* ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type:
+Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses _lexicographical_ ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type:
 
     (1, 2, 3)              < (1, 2, 4)
     [1, 2, 3]              < [1, 2, 4]
@@ -1618,9 +1610,9 @@ Note that comparing objects of different types with `<` or `>` is legal provided
 
 ### Modules
 
-If you quit from the Python interpreter and enter it again, the definitions you have made (functions and variables) are lost. Therefore, if you want to write a somewhat longer program, you are better off using a text editor to prepare the input for the interpreter and running it with that file as input instead. This is known as creating a *script*. As your program gets longer, you may want to split it into several files for easier maintenance. You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.
+If you quit from the Python interpreter and enter it again, the definitions you have made (functions and variables) are lost. Therefore, if you want to write a somewhat longer program, you are better off using a text editor to prepare the input for the interpreter and running it with that file as input instead. This is known as creating a _script_. As your program gets longer, you may want to split it into several files for easier maintenance. You may also want to use a handy function that you’ve written in several programs without copying its definition into each program.
 
-To support this, Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a *module*; definitions from a module can be *imported* into other modules or into the *main* module (the collection of variables that you have access to in a script executed at the top level and in calculator mode).
+To support this, Python has a way to put definitions in a file and use them in a script or in an interactive instance of the interpreter. Such a file is called a _module_; definitions from a module can be _imported_ into other modules or into the _main_ module (the collection of variables that you have access to in a script executed at the top level and in calculator mode).
 
 A module is a file containing Python definitions and statements. The file name is the module name with the suffix `.py` appended. Within a module, the module’s name (as a string) is available as the value of the global variable `__name__`. For instance, use your favorite text editor to create a file called `fibo.py` in the current directory with the following contents:
 
@@ -1662,7 +1654,7 @@ If you intend to use a function often you can assign it to a local name:&gt;&gt;
 
 #### 6.1. More on Modules
 
-A module can contain executable statements as well as function definitions. These statements are intended to initialize the module. They are executed only the *first* time the module name is encountered in an import statement. [1](https://docs.python.org/3.9/tutorial/modules.html#id2) (They are also run if the file is executed as a script.)
+A module can contain executable statements as well as function definitions. These statements are intended to initialize the module. They are executed only the _first_ time the module name is encountered in an import statement. [1](https://docs.python.org/3.9/tutorial/modules.html#id2) (They are also run if the file is executed as a script.)
 
 Each module has its own private symbol table, which is used as the global symbol table by all functions defined in the module. Thus, the author of a module can use global variables in the module without worrying about accidental clashes with a user’s global variables. On the other hand, if you know what you are doing you can touch a module’s global variables with the same notation used to refer to its functions, `modname.itemname`.
 
@@ -1732,9 +1724,9 @@ This is often used either to provide a convenient user interface to a module, or
 
 When a module named `spam` is imported, the interpreter first searches for a built-in module with that name. If not found, it then searches for a file named `spam.py` in a list of directories given by the variable [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path). [`sys.path`](https://docs.python.org/3.9/library/sys.html#sys.path) is initialized from these locations:
 
--   The directory containing the input script (or the current directory when no file is specified).
--   [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) (a list of directory names, with the same syntax as the shell variable `PATH`).
--   The installation-dependent default.
+- The directory containing the input script (or the current directory when no file is specified).
+- [`PYTHONPATH`](https://docs.python.org/3.9/using/cmdline.html#envvar-PYTHONPATH) (a list of directory names, with the same syntax as the shell variable `PATH`).
+- The installation-dependent default.
 
 Note
 
@@ -1744,7 +1736,7 @@ After initialization, Python programs can modify [`sys.path`](https://docs.pytho
 
 **6.1.3. “Compiled” Python files**
 
-To speed up loading modules, Python caches the compiled version of each module in the `__pycache__` directory under the name `module.`*`version`*`.pyc`, where the version encodes the format of the compiled file; it generally contains the Python version number. For example, in CPython release 3.3 the compiled version of spam.py would be cached as `__pycache__/spam.cpython-33.pyc`. This naming convention allows compiled modules from different releases and different versions of Python to coexist.
+To speed up loading modules, Python caches the compiled version of each module in the `__pycache__` directory under the name `module.`_`version`_`.pyc`, where the version encodes the format of the compiled file; it generally contains the Python version number. For example, in CPython release 3.3 the compiled version of spam.py would be cached as `__pycache__/spam.cpython-33.pyc`. This naming convention allows compiled modules from different releases and different versions of Python to coexist.
 
 Python checks the modification date of the source against the compiled version to see if it’s out of date and needs to be recompiled. This is a completely automatic process. Also, the compiled modules are platform-independent, so the same library can be shared among systems with different architectures.
 
@@ -1752,10 +1744,10 @@ Python does not check the cache in two circumstances. First, it always recompile
 
 Some tips for experts:
 
--   You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
--   A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
--   The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
--   There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
+- You can use the [`-O`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-o) or [`-OO`](https://docs.python.org/3.9/using/cmdline.html#cmdoption-oo) switches on the Python command to reduce the size of a compiled module. The `-O` switch removes assert statements, the `-OO` switch removes both assert statements and \_\_doc\_\_ strings. Since some programs may rely on having these available, you should only use this option if you know what you’re doing. “Optimized” modules have an `opt-` tag and are usually smaller. Future releases may change the effects of optimization.
+- A program doesn’t run any faster when it is read from a `.pyc` file than when it is read from a `.py` file; the only thing that’s faster about `.pyc` files is the speed with which they are loaded.
+- The module [`compileall`](https://docs.python.org/3.9/library/compileall.html#module-compileall) can create .pyc files for all modules in a directory.
+- There is more detail on this process, including a flow chart of the decisions, in [**PEP 3147**](https://www.python.org/dev/peps/pep-3147).
 
 #### 6.2. Standard Modules
 
@@ -1924,7 +1916,7 @@ The only solution is for the package author to provide an explicit index of the 
 
 This would mean that `from sound.effects import *` would import the three named submodules of the `sound` package.
 
-If `__all__` is not defined, the statement `from sound.effects import *` does *not* import all submodules from the package `sound.effects` into the current namespace; it only ensures that the package `sound.effects` has been imported (possibly running any initialization code in `__init__.py`) and then imports whatever names are defined in the package. This includes any names defined (and submodules explicitly loaded) by `__init__.py`. It also includes any submodules of the package that were explicitly loaded by previous [`import`](https://docs.python.org/3.9/reference/simple_stmts.html#import) statements. Consider this code:
+If `__all__` is not defined, the statement `from sound.effects import *` does _not_ import all submodules from the package `sound.effects` into the current namespace; it only ensures that the package `sound.effects` has been imported (possibly running any initialization code in `__init__.py`) and then imports whatever names are defined in the package. This includes any names defined (and submodules explicitly loaded) by `__init__.py`. It also includes any submodules of the package that were explicitly loaded by previous [`import`](https://docs.python.org/3.9/reference/simple_stmts.html#import) statements. Consider this code:
 
     import sound.effects.echo
     import sound.effects.surround

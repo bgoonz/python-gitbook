@@ -1,5 +1,4 @@
-Strings Continued
-=================
+# Strings Continued
 
 #### **Working with Strings** <span id="calibre_link-208"></span>
 
@@ -19,7 +18,7 @@ Since the string begins with a double quote, Python knows that the single quote 
 
 **Escape Characters**
 
-An *escape character* lets you use characters that are otherwise impossible to put into a string. An escape character consists of a backslash (\\) followed by the character you want to add to the string. (Despite consisting of two characters, it is commonly referred to as a singular escape character.) For example, the escape character for a single quote is '. You can use this inside a string that begins and ends with single quotes. To see how escape characters work, enter the following into the interactive shell:
+An _escape character_ lets you use characters that are otherwise impossible to put into a string. An escape character consists of a backslash (\\) followed by the character you want to add to the string. (Despite consisting of two characters, it is commonly referred to as a singular escape character.) For example, the escape character for a single quote is '. You can use this inside a string that begins and ends with single quotes. To see how escape characters work, enter the following into the interactive shell:
 
 &gt;&gt;&gt; spam = ‘Say hi to Bob's mother.’
 
@@ -40,7 +39,7 @@ I’m doing fine.
 
 **Raw Strings**
 
-You can place an r before the beginning quotation mark of a string to make it a raw string. A *raw string* completely ignores all escape characters and prints any backslash that appears in the string. For example, enter the following into the interactive shell:
+You can place an r before the beginning quotation mark of a string to make it a raw string. A _raw string_ completely ignores all escape characters and prints any backslash that appears in the string. For example, enter the following into the interactive shell:
 
 &gt;&gt;&gt; print(r’That is Carol's cat.’)  
 That is Carol's cat.
@@ -60,7 +59,7 @@ Eve’s cat has been arrested for catnapping, cat burglary, and extortion.
 Sincerely,  
 Bob’’’)
 
-Save this program as *catnapping.py* and run it. The output will look like this:
+Save this program as _catnapping.py_ and run it. The output will look like this:
 
 Dear Alice,
 
@@ -151,14 +150,14 @@ Putting strings inside other strings is a common operation in programming. So fa
 &gt;&gt;&gt; ‘Hello, my name is’ + name + ‘. I am’ + str(age) + ’ years old.’  
 ‘Hello, my name is Al. I am 4000 years old.’
 
-However, this requires a lot of tedious typing. A simpler approach is to use *string interpolation*, in which the %s operator inside the string acts as a marker to be replaced by values following the string. One benefit of string interpolation is that str() doesn’t have to be called to convert values to strings. Enter the following into the interactive shell:
+However, this requires a lot of tedious typing. A simpler approach is to use _string interpolation_, in which the %s operator inside the string acts as a marker to be replaced by values following the string. One benefit of string interpolation is that str() doesn’t have to be called to convert values to strings. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; name = ‘Al’  
 &gt;&gt;&gt; age = 4000  
 &gt;&gt;&gt; ‘My name is %s. I am %s years old.’ % (name, age)  
 ‘My name is Al. I am 4000 years old.’
 
-Python 3.6 introduced *f-strings*, which is similar to string interpolation except that braces are used instead of %s, with the expressions placed directly inside the braces. Like raw strings, f-strings have an f prefix before the starting quotation mark. Enter the following into the interactive shell:
+Python 3.6 introduced _f-strings_, which is similar to string interpolation except that braces are used instead of %s, with the expressions placed directly inside the braces. Like raw strings, f-strings have an f prefix before the starting quotation mark. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; name = ‘Al’  
 &gt;&gt;&gt; age = 4000  
@@ -203,7 +202,7 @@ How are you?
 GREat  
 I feel great too.
 
-You can view the execution of this program at [*https://autbor.com/convertlowercase/*](https://autbor.com/convertlowercase/). The isupper() and islower() methods will return a Boolean True value if the string has at least one letter and all the letters are uppercase or lowercase, respectively. Otherwise, the method returns False. Enter the following into the interactive shell, and notice what each method call returns:
+You can view the execution of this program at [_https://autbor.com/convertlowercase/_](https://autbor.com/convertlowercase/). The isupper() and islower() methods will return a Boolean True value if the string has at least one letter and all the letters are uppercase or lowercase, respectively. Otherwise, the method returns False. Enter the following into the interactive shell, and notice what each method call returns:
 
 &gt;&gt;&gt; spam = ‘Hello, world!’  
 &gt;&gt;&gt; spam.islower()  
@@ -219,7 +218,7 @@ False
 &gt;&gt;&gt; ‘12345’.isupper()  
 False
 
-Since the upper() and lower() string methods themselves return strings, you can call string methods on *those* returned string values as well. Expressions that do this will look like a chain of method calls. Enter the following into the interactive shell:
+Since the upper() and lower() string methods themselves return strings, you can call string methods on _those_ returned string values as well. Expressions that do this will look like a chain of method calls. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; ‘Hello’.upper()  
 ‘HELLO’  
@@ -234,7 +233,7 @@ True
 
 **The isX() Methods**
 
-Along with islower() and isupper(), there are several other string methods that have names beginning with the word *is*. These methods return a Boolean value that describes the nature of the string. Here are some common isX string methods:
+Along with islower() and isupper(), there are several other string methods that have names beginning with the word _is_. These methods return a Boolean value that describes the nature of the string. Here are some common isX string methods:
 
 isalpha() Returns True if the string consists only of letters and isn’t blank
 
@@ -269,7 +268,7 @@ False
 &gt;&gt;&gt; ‘This Is NOT Title Case Either’.istitle()  
 False
 
-The isX() string methods are helpful when you need to validate user input. For example, the following program repeatedly asks users for their age and a password until they provide valid input. Open a new file editor window and enter this program, saving it as *validateInput.py*:
+The isX() string methods are helpful when you need to validate user input. For example, the following program repeatedly asks users for their age and a password until they provide valid input. Open a new file editor window and enter this program, saving it as _validateInput.py_:
 
 while True:  
 print(‘Enter your age:’)  
@@ -300,7 +299,7 @@ Passwords can only have letters and numbers.
 Select a new password (letters and numbers only):  
 secr3t
 
-You can view the execution of this program at [*https://autbor.com/validateinput/*](https://autbor.com/validateinput/). Calling isdecimal() and isalnum() on variables, we’re able to test whether the values stored in those variables are decimal or not, alphanumeric or not. Here, these tests help us reject the input forty two but accept 42, and reject secr3t! but accept secr3t.
+You can view the execution of this program at [_https://autbor.com/validateinput/_](https://autbor.com/validateinput/). Calling isdecimal() and isalnum() on variables, we’re able to test whether the values stored in those variables are decimal or not, alphanumeric or not. Here, these tests help us reject the input forty two but accept 42, and reject secr3t! but accept secr3t.
 
 **The startswith() and endswith() Methods**
 
@@ -421,7 +420,7 @@ The center() string method works like ljust() and rjust() but centers the text r
 &gt;&gt;&gt; ‘Hello’.center(20, ‘=’)  
 ‘=======Hello========’
 
-These methods are especially useful when you need to print tabular data that has correct spacing. Open a new file editor window and enter the following code, saving it as *picnicTable.py*:
+These methods are especially useful when you need to print tabular data that has correct spacing. Open a new file editor window and enter the following code, saving it as _picnicTable.py_:
 
 def printPicnic(itemsDict, leftWidth, rightWidth):  
 print(‘PICNIC ITEMS’.center(leftWidth + rightWidth, ‘-’))  
@@ -432,7 +431,7 @@ picnicItems = {‘sandwiches’: 4, ‘apples’: 12, ‘cups’: 4, ‘cookies�
 printPicnic(picnicItems, 12, 5)  
 printPicnic(picnicItems, 20, 6)
 
-You can view the execution of this program at [*https://autbor.com/picnictable/*](https://autbor.com/picnictable/). In this program, we define a printPicnic() method that will take in a dictionary of information and use center(), ljust(), and rjust() to display that information in a neatly aligned table-like format.
+You can view the execution of this program at [_https://autbor.com/picnictable/_](https://autbor.com/picnictable/). In this program, we define a printPicnic() method that will take in a dictionary of information and use center(), ljust(), and rjust() to display that information in a neatly aligned table-like format.
 
 The dictionary that we’ll pass to printPicnic() is picnicItems. In picnicItems, we have 4 sandwiches, 12 apples, 4 cups, and 8,000 cookies. We want to organize this information into two columns, with the name of the item on the left and the quantity on the right.
 
@@ -479,7 +478,7 @@ Passing strip() the argument ‘ampS’ will tell it to strip occurrences of a, 
 
 #### **Numeric Values of Characters with the ord() and chr() Functions** <span id="calibre_link-221"></span>
 
-Computers store information as bytes—strings of binary numbers, which means we need to be able to convert text to numbers. Because of this, every text character has a corresponding numeric value called a *Unicode code point*. For example, the numeric code point is 65 for ‘A’, 52 for ‘4’, and 33 for ‘!’. You can use the ord() function to get the code point of a one-character string, and the chr() function to get the one-character string of an integer code point. Enter the following into the interactive shell:
+Computers store information as bytes—strings of binary numbers, which means we need to be able to convert text to numbers. Because of this, every text character has a corresponding numeric value called a _Unicode code point_. For example, the numeric code point is 65 for ‘A’, 52 for ‘4’, and 33 for ‘!’. You can use the ord() function to get the code point of a one-character string, and the chr() function to get the one-character string of an integer code point. Enter the following into the interactive shell:
 
 &gt;&gt;&gt; ord(‘A’)  
 65  
@@ -501,7 +500,7 @@ True
 &gt;&gt;&gt; chr(ord(‘A’) + 1)  
 ‘B’
 
-There is more to Unicode and code points, but those details are beyond the scope of this book. If you’d like to know more, I recommend watching Ned Batchelder’s 2012 PyCon talk, “Pragmatic Unicode, or, How Do I Stop the Pain?” at [*https://youtu.be/sgHbC6udIqc*](https://youtu.be/sgHbC6udIqc).
+There is more to Unicode and code points, but those details are beyond the scope of this book. If you’d like to know more, I recommend watching Ned Batchelder’s 2012 PyCon talk, “Pragmatic Unicode, or, How Do I Stop the Pain?” at [_https://youtu.be/sgHbC6udIqc_](https://youtu.be/sgHbC6udIqc).
 
 #### **Copying and Pasting Strings with the pyperclip Module** <span id="calibre_link-222"></span>
 
@@ -530,13 +529,13 @@ If you’ve responded to a large number of emails with similar phrasing, you’v
 
 **Step 1: Program Design and Data Structures**
 
-You want to be able to run this program with a command line argument that is a short key phrase—for instance, *agree* or *busy*. The message associated with that key phrase will be copied to the clipboard so that the user can paste it into an email. This way, the user can have long, detailed messages without having to retype them.
+You want to be able to run this program with a command line argument that is a short key phrase—for instance, _agree_ or _busy_. The message associated with that key phrase will be copied to the clipboard so that the user can paste it into an email. This way, the user can have long, detailed messages without having to retype them.
 
 **THE CHAPTER PROJECTS**
 
 This is the first “chapter project” of the book. From here on, each chapter will have projects that demonstrate the concepts covered in the chapter. The projects are written in a style that takes you from a blank file editor window to a full, working program. Just like with the interactive shell examples, don’t only read the project sections—follow along on your computer!
 
-Open a new file editor window and save the program as *mclip.py*. You need to start the program with a \#! (*shebang*) line (see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35)) and should also write a comment that briefly describes the program. Since you want to associate each piece of text with its key phrase, you can store these as strings in a dictionary. The dictionary will be the data structure that organizes your key phrases and text. Make your program look like the following:
+Open a new file editor window and save the program as _mclip.py_. You need to start the program with a \#! (_shebang_) line (see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35)) and should also write a comment that briefly describes the program. Since you want to associate each piece of text with its key phrase, you can store these as strings in a dictionary. The dictionary will be the data structure that organizes your key phrases and text. Make your program look like the following:
 
 \#! python3  
 \# mclip.py - A multi-clipboard program.
@@ -565,7 +564,7 @@ keyphrase = sys.argv\[1\] \# first command line arg is the keyphrase
 
 **Step 3: Copy the Right Phrase**
 
-Now that the key phrase is stored as a string in the variable keyphrase, you need to see whether it exists in the TEXT dictionary as a key. If so, you want to copy the key’s value to the clipboard using pyperclip.copy(). (Since you’re using the pyperclip module, you need to import it.) Note that you don’t actually *need* the keyphrase variable; you could just use sys.argv\[1\] everywhere keyphrase is used in this program. But a variable named keyphrase is much more readable than something cryptic like sys.argv\[1\].
+Now that the key phrase is stored as a string in the variable keyphrase, you need to see whether it exists in the TEXT dictionary as a key. If so, you want to copy the key’s value to the clipboard using pyperclip.copy(). (Since you’re using the pyperclip module, you need to import it.) Note that you don’t actually _need_ the keyphrase variable; you could just use sys.argv\[1\] everywhere keyphrase is used in this program. But a variable named keyphrase is much more readable than something cryptic like sys.argv\[1\].
 
 Make your program look like the following:
 
@@ -593,9 +592,9 @@ This new code looks in the TEXT dictionary for the key phrase. If the key phrase
 
 That’s the complete script. Using the instructions in [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35) for launching command line programs easily, you now have a fast way to copy messages to the clipboard. You will have to modify the TEXT dictionary value in the source whenever you want to update the program with a new message.
 
-On Windows, you can create a batch file to run this program with the WIN-R Run window. (For more about batch files, see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35).) Enter the following into the file editor and save the file as *mclip.bat* in the *C:* folder:
+On Windows, you can create a batch file to run this program with the WIN-R Run window. (For more about batch files, see [Appendix B](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-35).) Enter the following into the file editor and save the file as _mclip.bat_ in the _C:_ folder:
 
-<span class="citation" data-cites="py.exe">@py.exe</span> C:\_to\_file.py %\*  
+<span class="citation" data-cites="py.exe">@py.exe</span> C:\_to_file.py %\*  
 <span class="citation" data-cites="pause">@pause</span>
 
 With this batch file created, running the multi-clipboard program on Windows is just a matter of pressing WIN-R and typing mclip key phrase.
@@ -604,14 +603,14 @@ With this batch file created, running the multi-clipboard program on Windows is 
 
 When editing a Wikipedia article, you can create a bulleted list by putting each list item on its own line and placing a star in front. But say you have a really large list that you want to add bullet points to. You could just type those stars at the beginning of each line, one by one. Or you could automate this task with a short Python script.
 
-The *bulletPointAdder.py* script will get the text from the clipboard, add a star and space to the beginning of each line, and then paste this new text to the clipboard. For example, if I copied the following text (for the Wikipedia article “List of Lists of Lists”) to the clipboard:
+The _bulletPointAdder.py_ script will get the text from the clipboard, add a star and space to the beginning of each line, and then paste this new text to the clipboard. For example, if I copied the following text (for the Wikipedia article “List of Lists of Lists”) to the clipboard:
 
 Lists of animals  
 Lists of aquarium life  
 Lists of biologists by author abbreviation  
 Lists of cultivars
 
-and then ran the *bulletPointAdder.py* program, the clipboard would then contain the following:
+and then ran the _bulletPointAdder.py_ program, the clipboard would then contain the following:
 
 \* Lists of animals  
 \* Lists of aquarium life  
@@ -622,13 +621,13 @@ This star-prefixed text is ready to be pasted into a Wikipedia article as a bull
 
 **Step 1: Copy and Paste from the Clipboard**
 
-You want the *bulletPointAdder.py* program to do the following:
+You want the _bulletPointAdder.py_ program to do the following:
 
 1.  Paste text from the clipboard.
 2.  Do something to it.
 3.  Copy the new text to the clipboard.
 
-That second step is a little tricky, but steps 1 and 3 are pretty straightforward: they just involve the pyperclip.copy() and pyperclip.paste() functions. For now, let’s just write the part of the program that covers steps 1 and 3. Enter the following, saving the program as *bulletPointAdder.py*:
+That second step is a little tricky, but steps 1 and 3 are pretty straightforward: they just involve the pyperclip.copy() and pyperclip.paste() functions. For now, let’s just write the part of the program that covers steps 1 and 3. Enter the following, saving the program as _bulletPointAdder.py_:
 
 \#! python3  
 \# bulletPointAdder.py - Adds Wikipedia bullet points to the start  
@@ -696,7 +695,7 @@ Even if you don’t need to automate this specific task, you might want to autom
 
 #### **A Short Progam: Pig Latin** <span id="calibre_link-231"></span>
 
-Pig Latin is a silly made-up language that alters English words. If a word begins with a vowel, the word *yay* is added to the end of it. If a word begins with a consonant or consonant cluster (like *ch* or *gr*), that consonant or cluster is moved to the end of the word followed by *ay*.
+Pig Latin is a silly made-up language that alters English words. If a word begins with a vowel, the word _yay_ is added to the end of it. If a word begins with a consonant or consonant cluster (like _ch_ or _gr_), that consonant or cluster is moved to the end of the word followed by _ay_.
 
 Let’s write a Pig Latin program that will output something like this:
 
@@ -704,7 +703,7 @@ Enter the English message to translate into Pig Latin:
 My name is AL SWEIGART and I am 4,000 years old.  
 Ymay amenay isyay ALYAY EIGARTSWAY andyay Iyay amyay 4,000 yearsyay oldyay.
 
-This program works by altering a string using the methods introduced in this chapter. Type the following source code into the file editor, and save the file as *pigLat.py*:
+This program works by altering a string using the methods introduced in this chapter. Type the following source code into the file editor, and save the file as _pigLat.py_:
 
 \# English to Pig Latin  
 print(‘Enter the English message to translate into Pig Latin:’)  
@@ -767,7 +766,7 @@ message = input()
 
 VOWELS = (‘a’, ‘e’, ‘i’, ‘o’, ‘u’, ‘y’)
 
-First, we ask the user to enter the English text to translate into Pig Latin. Also, we create a constant that holds every lowercase vowel letter (and *y*) as a tuple of strings. This will be used later in our program.
+First, we ask the user to enter the English text to translate into Pig Latin. Also, we create a constant that holds every lowercase vowel letter (and _y_) as a tuple of strings. This will be used later in our program.
 
 Next, we’re going to create the pigLatin variable to store the words as we translate them into Pig Latin:
 
@@ -804,7 +803,7 @@ Next, we’ll make sure the program remembers if the word was in uppercase or ti
 
 For the rest of the code in the for loop, we’ll work on a lowercase version of word.
 
-To convert a word like *sweigart* to *eigart-sway*, we need to remove all of the consonants from the beginning of word:
+To convert a word like _sweigart_ to _eigart-sway_, we need to remove all of the consonants from the beginning of word:
 
     \# Separate the consonants at the start of this word:
     prefixConsonants = ''
@@ -840,7 +839,7 @@ print(’ ’.join(pigLatin))
 
 After this loop finishes, we combine the list of strings into a single string by calling the join() method. This single string is passed to print() to display our Pig Latin on the screen.
 
-You can find other short, text-based Python programs like this one at [*https://github.com/asweigart/pythonstdiogames/*](https://github.com/asweigart/pythonstdiogames/).
+You can find other short, text-based Python programs like this one at [_https://github.com/asweigart/pythonstdiogames/_](https://github.com/asweigart/pythonstdiogames/).
 
 #### **Summary** <span id="calibre_link-232"></span>
 
@@ -850,7 +849,7 @@ The programs you are writing now don’t seem too sophisticated—they don’t h
 
 Another way to manipulate large amounts of text is reading and writing files directly off the hard drive. You’ll learn how to do this with Python in [Chapter 9](https://automatetheboringstuff.com/2e/chapter6/#calibre_link-32).
 
-That just about covers all the basic concepts of Python programming! You’ll continue to learn new concepts throughout the rest of this book, but you now know enough to start writing some useful programs that can automate tasks. If you’d like to see a collection of short, simple Python programs built from the basic concepts you’ve learned so far, check out [*https://github.com/asweigart/pythonstdiogames/*](https://github.com/asweigart/pythonstdiogames/). Try copying the source code for each program by hand, and then make modifications to see how they affect the behavior of the program. Once you have an understanding of how the program works, try re-creating the program yourself from scratch. You don’t need to re-create the source code exactly; just focus on what the program does rather than how it does it.
+That just about covers all the basic concepts of Python programming! You’ll continue to learn new concepts throughout the rest of this book, but you now know enough to start writing some useful programs that can automate tasks. If you’d like to see a collection of short, simple Python programs built from the basic concepts you’ve learned so far, check out [_https://github.com/asweigart/pythonstdiogames/_](https://github.com/asweigart/pythonstdiogames/). Try copying the source code for each program by hand, and then make modifications to see how they affect the behavior of the program. Once you have an understanding of how the program works, try re-creating the program yourself from scratch. You don’t need to re-create the source code exactly; just focus on what the program does rather than how it does it.
 
 You might not think you have enough Python knowledge to do things such as download web pages, update spreadsheets, or send text messages, but that’s where Python modules come in! These modules, written by other programmers, provide functions that make it easy for you to do all these things. So let’s learn how to write real programs to do useful automated tasks.
 

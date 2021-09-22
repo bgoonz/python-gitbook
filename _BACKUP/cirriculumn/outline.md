@@ -1,5 +1,4 @@
-Outline
-=======
+# Outline
 
 {% embed url=“https://60s1b.csb.app/” %}
 

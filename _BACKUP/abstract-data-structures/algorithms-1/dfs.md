@@ -1,5 +1,4 @@
-DFS
-===
+# DFS
 
 {% tabs %} {% tab title=“First Tab” %}
 
@@ -449,21 +448,21 @@ DFS
 
 #### Introduction <span id="introduction"></span>
 
-Originating from mathematics, graphs are now widely used data structures in Computer Science. One of the first problems we encounter when constructing any algorithm regarding Graph processing or traversal, is *how we represent the graph* and then, how to *traverse that representation*.
+Originating from mathematics, graphs are now widely used data structures in Computer Science. One of the first problems we encounter when constructing any algorithm regarding Graph processing or traversal, is _how we represent the graph_ and then, how to _traverse that representation_.
 
 > Graph traversal is not a trivial problem, and given the difficulty of the task - many algorithms have been devised for efficient (yet not perfect) graph traversal.
 
-In this guide, we’ll take a look at one of the two fundamental and simplest algorithms for Graph traversal - ***Depth-First Search (DFS).*** It’s the most commonly used algorithm alongside the related ***Breadth-First Search (BFS)*** given their simplicity. After going over the main idea used for DFS, we’ll implement it in Python on a Graph representation - an ***adjacency list***.
+In this guide, we’ll take a look at one of the two fundamental and simplest algorithms for Graph traversal - **_Depth-First Search (DFS)._** It’s the most commonly used algorithm alongside the related **_Breadth-First Search (BFS)_** given their simplicity. After going over the main idea used for DFS, we’ll implement it in Python on a Graph representation - an **_adjacency list_**.
 
 #### Depth-First Search - Theory <span id="depthfirstsearchtheory"></span>
 
-***Depth-First Search (DFS)*** is an algorithm used to ***traverse*** or locate a ***target*** node in a graph or tree data structure. It priorities *depth* and searches along one branch, as far as it can go - until the end of that branch. Once there, it **backtracks** to the first possible divergence from that branch, and searches until the end of *that* branch, repeating the process.
+**_Depth-First Search (DFS)_** is an algorithm used to **_traverse_** or locate a **_target_** node in a graph or tree data structure. It priorities _depth_ and searches along one branch, as far as it can go - until the end of that branch. Once there, it **backtracks** to the first possible divergence from that branch, and searches until the end of _that_ branch, repeating the process.
 
 Given the nature of the algorithm, you can easily implement it recursively - and you can always implement a recursive algorithm iteratively as well:
 
 ![](https://stackabuse.s3.amazonaws.com/media/graph-traversal-in-java-depth-first-search-dfs-1.gif)
 
-The ***start node*** is the ***root node*** for *tree data structures*, while with more generic graphs - it can be any node.
+The **_start node_** is the **_root node_** for _tree data structures_, while with more generic graphs - it can be any node.
 
 DFS is widely-used as a part of many other algorithms that resolve graph-represented problems. From cycle searches, path finding, topological sorting, to finding articulation points and strongly connected components. The reason behind this widespread use of the DFS algorithm lays in its overall simplicity and easy recursive implementation.
 
@@ -472,7 +471,7 @@ DFS is widely-used as a part of many other algorithms that resolve graph-represe
 The DFS algorithm is pretty simple and consists of the following steps:
 
 1.  Mark the current node as **visited**.
-2.  Traverse the **neighbouring** nodes that *aren’t visited* and recursively call the DFS function for that node.
+2.  Traverse the **neighbouring** nodes that _aren’t visited_ and recursively call the DFS function for that node.
 
 The algorithm stops either when the target node is found, or the whole graph has been **traversed** (all nodes are visited).
 
@@ -548,12 +547,12 @@ We’re searching for a path from node `0` to node `3`, if it exists, the path w
 
 The steps our algorithm will take are as follows:
 
--   Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it’s not, continue and traverse it’s neighbours (`1` and `2`).
--   Is neighbour `1` visited? - No. Then, the algorithm calls the function recursively for that node.
-    -   Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it’s neighbours (`0` and `3`).
-    -   Is neighbour `0` visited? - Yes, move onto the next one.
-    -   Is neighbour `3` visited? - No, call the function recursively for this node.
-        -   Recursive call for node `3`: Add node `3` to the traversal path and mark it as visited. Is `3` equal to our target node `3`? - Yes, target node has been found, return the traversal path.
+- Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it’s not, continue and traverse it’s neighbours (`1` and `2`).
+- Is neighbour `1` visited? - No. Then, the algorithm calls the function recursively for that node.
+  - Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it’s neighbours (`0` and `3`).
+  - Is neighbour `0` visited? - Yes, move onto the next one.
+  - Is neighbour `3` visited? - No, call the function recursively for this node.
+    - Recursive call for node `3`: Add node `3` to the traversal path and mark it as visited. Is `3` equal to our target node `3`? - Yes, target node has been found, return the traversal path.
 
 <table><thead><tr class="header"><th style="text-align: left;">Current Node</th><th style="text-align: left;">Path</th><th style="text-align: left;">Visited</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><code>0</code></td><td style="text-align: left;">[<code>0</code>]</td><td style="text-align: left;">{<code>0</code>}</td></tr><tr class="even"><td style="text-align: left;"><code>1</code></td><td style="text-align: left;">[<code>0</code>, <code>1</code>]</td><td style="text-align: left;">{<code>0</code>, <code>1</code>}</td></tr><tr class="odd"><td style="text-align: left;"><code>3</code></td><td style="text-align: left;">[<code>0</code>, <code>1</code>, <code>3</code>]</td><td style="text-align: left;">{<code>0</code>, <code>1</code>, <code>3</code>}</td></tr></tbody></table>
 

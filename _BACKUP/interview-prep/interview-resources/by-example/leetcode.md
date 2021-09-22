@@ -1,5 +1,4 @@
-Algo-Prep
-=========
+# Algo-Prep
 
 {% tabs %} {% tab title=“LeetCode” %}
 

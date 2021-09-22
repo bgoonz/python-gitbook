@@ -1,5 +1,4 @@
-Recursion
-=========
+# Recursion
 
 When a function call itself is knows as recursion. Recursion works like loop but sometimes it makes more sense to use recursion than loop. You can convert any loop to recursion.
 

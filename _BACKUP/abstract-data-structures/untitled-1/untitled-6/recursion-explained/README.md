@@ -1,5 +1,4 @@
-Recursion Explained
-===================
+# Recursion Explained
 
 ### Introduction to recursive functions
 
@@ -58,9 +57,9 @@ If you call the `count_down()` function now:
 
 To show the number 3, 2 and 1, you need to:
 
--   First, call the `count_down(3)` to show the number 3.
--   Second, call the `count_down(2)` to show the number 2.
--   Finally, call the `count_down(1)` to show the number 1.
+- First, call the `count_down(3)` to show the number 3.
+- Second, call the `count_down(2)` to show the number 2.
+- Finally, call the `count_down(1)` to show the number 1.
 
 In order to do so, inside the `count_down()` function, you’ll need to define a logic to call the function `count_down()` with argument 2, and 1.
 
@@ -126,10 +125,10 @@ Output:
 
 To apply the recursion technique, you can calculate the sum of the sequence from 1 to n as follows:
 
--   sum(n) = n + sum(n-1)
--   sum(n-1) = n-1 + sum(n-2)
--   …
--   sum(0) = 0
+- sum(n) = n + sum(n-1)
+- sum(n-1) = n-1 + sum(n-2)
+- …
+- sum(0) = 0
 
 The `sum()` function keeps calling itself as long as its argument is greater than zero.
 
@@ -158,5 +157,5 @@ If you use the [ternary operator](https://www.pythontutorial.net/python-basics/p
 
 ### Summary
 
--   A recursive function is a function that calls itself until it doesn’t.
--   And a recursive function always has a condition that stops calling itself.
+- A recursive function is a function that calls itself until it doesn’t.
+- And a recursive function always has a condition that stops calling itself.

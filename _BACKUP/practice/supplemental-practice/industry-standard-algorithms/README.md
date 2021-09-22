@@ -1,5 +1,4 @@
-Industry Standard Algorithms
-============================
+# Industry Standard Algorithms
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/Data-Structures-6">@bgoonz/Data-Structures-6</span>\#main.py” %}
 
@@ -7,8 +6,7 @@ Industry Standard Algorithms
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/main-prac">@bgoonz/main-prac</span>\#directed\_graph.py” %}
 
-Is Subsequence:
----------------
+## Is Subsequence:
 
     def is_subsequence(s, t):
         """
@@ -24,8 +22,7 @@ Is Subsequence:
                 matched_s += 1
         return matched_s == len(s)
 
-Reverse String:
----------------
+## Reverse String:
 
     def reverse(lines):
         return "Reverse order: " + lines[::-1] + "\n" + "Normal Order: " + lines

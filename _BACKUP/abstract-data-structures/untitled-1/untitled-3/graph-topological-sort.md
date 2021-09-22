@@ -1,5 +1,4 @@
-Graph Topological Sort
-======================
+# Graph Topological Sort
 
     def graph_topo_sort(num_nodes, edges):
         from collections import deque

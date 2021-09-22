@@ -1,66 +1,133 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>python-objects-and-classes</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="python-objects-classes">Python Objects &amp; Classes</h1>
-<h3 id="creating-object-and-classes">Creating object and classes #</h3>
-<p>Python is an object-oriented language. In python everything is object i.e <code>int</code>, <code>str</code>, <code>bool</code> even modules, functions are also objects.</p>
-<p>Object oriented programming use objects to create programs, and these objects stores data and behaviours.</p>
-<h3 id="defining-class">Defining class #</h3>
-<p>Class name in python is preceded with <code>class</code> keyword followed by a colon (<code>:</code>). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called <em>initializer</em> (also commonly known as constructors), which get invoked automatically every time new object is created.</p>
-<p>Let’s see an example.</p>
-<table>
-<tbody>
-</tbody>
-</table>
-<p>Here we have created a class called <code>Person</code> which contains one data field called <code>name</code> and method <code>whoami()</code>.</p>
-<h3 id="what-is-self">What is self? #</h3>
-<p>All methods in python including some special methods like initializer have first parameter <code>self</code>. This parameter refers to the object which invokes the method. When you create new object the <code>self</code> parameter in the <code>__init__</code> method is automatically set to reference the object you have just created.</p>
-<h3 id="creating-object-from-class">Creating object from class #</h3>
-<table>
-<tbody>
-</tbody>
-</table>
-<p><strong>Expected Output:</strong></p>
-<p><strong>note:</strong></p>
-<p>When you call a method you don’t need to pass anything to <code>self</code> parameter, python automatically does that for you behind the scenes.</p>
-<p>You can also change the <code>name</code> data field.</p>
-<table>
-<tbody>
-</tbody>
-</table>
-<p><strong>Expected Output:</strong></p>
-<p>Although it is a bad practice to give access to your data fields outside the class. We will discuss how to prevent this next.</p>
-<h3 id="hiding-data-fields">Hiding data fields #</h3>
-<p>To hide data fields you need to define private data fields. In python you can create private data field using two leading underscores. You can also define a private method using two leading underscores.</p>
-<p>Let’s see an example</p>
-<table>
-<tbody>
-</tbody>
-</table>
-<p><strong>Expected Output:</strong></p>
-<table>
-<tbody>
-</tbody>
-</table>
-<p>Let’s try to access <code>__balance</code> data field outside of class.</p>
-<p><strong>Expected Output:</strong></p>
-<p>AttributeError: ‘BankAccount’ object has no attribute ‘__balance’</p>
-<p>As you can see, now the <code>__balance</code> field is not accessible outside the class.</p>
-<p>In next chapter we will learn about <a href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/python-operator-overloading/">operator overloading</a>.</p>
-<p>Other Tutorials (Sponsors)</p>
-<p>This site generously supported by <a href="https://www.datacamp.com/?utm_source=thepythonguru&amp;utm_campaign=thepythonguru_tutorials">DataCamp</a>. DataCamp offers online interactive <a href="https://www.datacamp.com/courses/?utm_source=thepythonguru&amp;utm_campaign=thepythonguru_tutorials">Python Tutorials</a> for Data Science. Join over a million other learners and get started learning Python for data science today!</p>
-<p><a href="https://thepythonguru.com/python-object-and-classes/">Source</a></p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>python-objects-and-classes</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="python-objects-classes">Python Objects &amp; Classes</h1>
+    <h3 id="creating-object-and-classes">Creating object and classes #</h3>
+    <p>
+      Python is an object-oriented language. In python everything is object i.e
+      <code>int</code>, <code>str</code>, <code>bool</code> even modules,
+      functions are also objects.
+    </p>
+    <p>
+      Object oriented programming use objects to create programs, and these
+      objects stores data and behaviours.
+    </p>
+    <h3 id="defining-class">Defining class #</h3>
+    <p>
+      Class name in python is preceded with <code>class</code> keyword followed
+      by a colon (<code>:</code>). Classes commonly contains data field to store
+      the data and methods for defining behaviors. Also every class in python
+      contains a special method called <em>initializer</em> (also commonly known
+      as constructors), which get invoked automatically every time new object is
+      created.
+    </p>
+    <p>Let’s see an example.</p>
+    <table>
+      <tbody></tbody>
+    </table>
+    <p>
+      Here we have created a class called <code>Person</code> which contains one
+      data field called <code>name</code> and method <code>whoami()</code>.
+    </p>
+    <h3 id="what-is-self">What is self? #</h3>
+    <p>
+      All methods in python including some special methods like initializer have
+      first parameter <code>self</code>. This parameter refers to the object
+      which invokes the method. When you create new object the
+      <code>self</code> parameter in the <code>__init__</code> method is
+      automatically set to reference the object you have just created.
+    </p>
+    <h3 id="creating-object-from-class">Creating object from class #</h3>
+    <table>
+      <tbody></tbody>
+    </table>
+    <p><strong>Expected Output:</strong></p>
+    <p><strong>note:</strong></p>
+    <p>
+      When you call a method you don’t need to pass anything to
+      <code>self</code> parameter, python automatically does that for you behind
+      the scenes.
+    </p>
+    <p>You can also change the <code>name</code> data field.</p>
+    <table>
+      <tbody></tbody>
+    </table>
+    <p><strong>Expected Output:</strong></p>
+    <p>
+      Although it is a bad practice to give access to your data fields outside
+      the class. We will discuss how to prevent this next.
+    </p>
+    <h3 id="hiding-data-fields">Hiding data fields #</h3>
+    <p>
+      To hide data fields you need to define private data fields. In python you
+      can create private data field using two leading underscores. You can also
+      define a private method using two leading underscores.
+    </p>
+    <p>Let’s see an example</p>
+    <table>
+      <tbody></tbody>
+    </table>
+    <p><strong>Expected Output:</strong></p>
+    <table>
+      <tbody></tbody>
+    </table>
+    <p>
+      Let’s try to access <code>__balance</code> data field outside of class.
+    </p>
+    <p><strong>Expected Output:</strong></p>
+    <p>AttributeError: ‘BankAccount’ object has no attribute ‘__balance’</p>
+    <p>
+      As you can see, now the <code>__balance</code> field is not accessible
+      outside the class.
+    </p>
+    <p>
+      In next chapter we will learn about
+      <a
+        href="chrome-extension://cjedbglnccaioiolemnfhjncicchinao/python-operator-overloading/"
+        >operator overloading</a
+      >.
+    </p>
+    <p>Other Tutorials (Sponsors)</p>
+    <p>
+      This site generously supported by
+      <a
+        href="https://www.datacamp.com/?utm_source=thepythonguru&amp;utm_campaign=thepythonguru_tutorials"
+        >DataCamp</a
+      >. DataCamp offers online interactive
+      <a
+        href="https://www.datacamp.com/courses/?utm_source=thepythonguru&amp;utm_campaign=thepythonguru_tutorials"
+        >Python Tutorials</a
+      >
+      for Data Science. Join over a million other learners and get started
+      learning Python for data science today!
+    </p>
+    <p>
+      <a href="https://thepythonguru.com/python-object-and-classes/">Source</a>
+    </p>
+  </body>
 </html>

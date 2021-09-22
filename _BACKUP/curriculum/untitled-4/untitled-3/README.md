@@ -1,5 +1,4 @@
-D1- Module 01 - Linked Lists
-============================
+# D1- Module 01 - Linked Lists
 
 {% embed url=“https://www.youtube.com/watch?v=totrhOjxUVo” %}
 
@@ -7,8 +6,7 @@ D1- Module 01 - Linked Lists
 
 {% embed url=“https://gist.github.com/bgoonz/10811c10bd2f7650aa7f7a37e2340d5f” %}
 
-Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
------------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
 
 ### Overview <span id="overview"></span>
 
@@ -155,7 +153,7 @@ You must be able to understand and interact with linked lists. You now know the 
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
+- [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
 
 {% file src=“../../../.gitbook/assets/10-linkedlist.pdf” caption=“Linked List Pdf” %}
 

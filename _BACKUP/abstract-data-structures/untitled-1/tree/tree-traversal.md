@@ -1,5 +1,4 @@
-Tree Traversal
-==============
+# Tree Traversal
 
     # Various iterative ways of traversing a tree.
     def inorder_traversal(root):

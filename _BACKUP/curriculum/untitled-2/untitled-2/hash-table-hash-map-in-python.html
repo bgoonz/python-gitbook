@@ -1,135 +1,325 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>hash-table-hash-map-in-python</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="hash-table-hash-map-in-python">Hash Table / Hash Map In Python:</h1>
-<h2 id="hash-table-and-hashmap-in-python">Hash Table and Hashmap in Python</h2>
-<p>Data requires a number of ways in which it can be stored and accessed. One of the most important implementations includes Hash Tables. In Python, these Hash tables are implemented through the built-in data type i.e, dictionary. In this article, you will learn what are Hash Tables and Hashmaps in Python and how you can implement them using dictionaries.</p>
-<p>Before moving ahead, let us take a look at all the topics of discussion:</p>
-<ul>
-<li>What is a Hash table or a Hashmap in Python?</li>
-<li>Hash table vs Hashmap</li>
-<li>Creating Dictionaries</li>
-<li>Creating Nested Dictionaries</li>
-<li>Performing Operations on Hash Tables using dictionaries</li>
-<li>Accessing Values</li>
-<li>Updating Values</li>
-<li>Deleting Items</li>
-<li>Converting a Dictionary into a Dataframe</li>
-</ul>
-<p>In computer science, a Hash table or a Hashmap is a type of data structure that maps keys to its value pairs (implement abstract array data types). It basically makes use of a function that computes an index value that in turn holds the elements to be searched, inserted, removed, etc. This makes it easy and fast to access data. In general, hash tables store key-value pairs and the key is generated using a hash function.</p>
-<p>Hash tables or has maps in Python are implemented through the built-in dictionary data type. The keys of a dictionary in Python are generated by a hashing function. The elements of a dictionary are not ordered and they can be changed.</p>
-<p>An example of a dictionary can be a mapping of employee names and their employee IDs or the names of students along with their student IDs.</p>
-<p>Moving ahead, let’s see the difference between the hash table and hashmap in Python.</p>
-<p><img src="https://miro.medium.com/max/1400/1*mUKDOooYtIfHfWNC1d2yVQ.png" /></p>
-<p>Dictionaries can be created in two ways:</p>
-<ul>
-<li>Using curly braces ({})</li>
-<li>Using the <em>dict()</em> function</li>
-</ul>
-<h3 id="using-curly-braces">Using curly braces:</h3>
-<p>Dictionaries in Python can be created using curly braces as follows:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>hash-table-hash-map-in-python</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="hash-table-hash-map-in-python">Hash Table / Hash Map In Python:</h1>
+    <h2 id="hash-table-and-hashmap-in-python">
+      Hash Table and Hashmap in Python
+    </h2>
+    <p>
+      Data requires a number of ways in which it can be stored and accessed. One
+      of the most important implementations includes Hash Tables. In Python,
+      these Hash tables are implemented through the built-in data type i.e,
+      dictionary. In this article, you will learn what are Hash Tables and
+      Hashmaps in Python and how you can implement them using dictionaries.
+    </p>
+    <p>
+      Before moving ahead, let us take a look at all the topics of discussion:
+    </p>
+    <ul>
+      <li>What is a Hash table or a Hashmap in Python?</li>
+      <li>Hash table vs Hashmap</li>
+      <li>Creating Dictionaries</li>
+      <li>Creating Nested Dictionaries</li>
+      <li>Performing Operations on Hash Tables using dictionaries</li>
+      <li>Accessing Values</li>
+      <li>Updating Values</li>
+      <li>Deleting Items</li>
+      <li>Converting a Dictionary into a Dataframe</li>
+    </ul>
+    <p>
+      In computer science, a Hash table or a Hashmap is a type of data structure
+      that maps keys to its value pairs (implement abstract array data types).
+      It basically makes use of a function that computes an index value that in
+      turn holds the elements to be searched, inserted, removed, etc. This makes
+      it easy and fast to access data. In general, hash tables store key-value
+      pairs and the key is generated using a hash function.
+    </p>
+    <p>
+      Hash tables or has maps in Python are implemented through the built-in
+      dictionary data type. The keys of a dictionary in Python are generated by
+      a hashing function. The elements of a dictionary are not ordered and they
+      can be changed.
+    </p>
+    <p>
+      An example of a dictionary can be a mapping of employee names and their
+      employee IDs or the names of students along with their student IDs.
+    </p>
+    <p>
+      Moving ahead, let’s see the difference between the hash table and hashmap
+      in Python.
+    </p>
+    <p>
+      <img
+        src="https://miro.medium.com/max/1400/1*mUKDOooYtIfHfWNC1d2yVQ.png"
+      />
+    </p>
+    <p>Dictionaries can be created in two ways:</p>
+    <ul>
+      <li>Using curly braces ({})</li>
+      <li>Using the <em>dict()</em> function</li>
+    </ul>
+    <h3 id="using-curly-braces">Using curly braces:</h3>
+    <p>Dictionaries in Python can be created using curly braces as follows:</p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="bu">print</span>(my_dict)</a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="bu">type</span>(my_dict)</a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p>{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}<br />
-dict</p>
-<h3 id="using-dict-function">Using dict() function:</h3>
-<p>Python has a built-in function, <em>dict()</em> that can be used to create <a href="https://www.edureka.co/blog/sort-dictionary-by-value-in-python/">dictionaries</a> in Python. For example:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">new_dict<span class="op">=</span><span class="bu">dict</span>()</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="bu">type</span>(my_dict)</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      {‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}<br />
+      dict
+    </p>
+    <h3 id="using-dict-function">Using dict() function:</h3>
+    <p>
+      Python has a built-in function, <em>dict()</em> that can be used to create
+      <a href="https://www.edureka.co/blog/sort-dictionary-by-value-in-python/"
+        >dictionaries</a
+      >
+      in Python. For example:
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">new_dict<span class="op">=</span><span class="bu">dict</span>()</a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="bu">print</span>(new_dict)</a>
-<a class="sourceLine" id="cb2-3" title="3"><span class="bu">type</span>(new_dict)</a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p>{}<br />
-dict</p>
-<p>In the above example, an empty dictionary is created since no key-value pairs are supplied as a parameter to the dict() function. In case you want to add values, you can do as follows:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">new_dict<span class="op">=</span><span class="bu">dict</span>(Dave <span class="op">=</span> <span class="st">&#39;001&#39;</span> , Ava<span class="op">=</span> <span class="st">&#39;002&#39;</span> , Joe<span class="op">=</span> <span class="st">&#39;003&#39;</span>)</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="bu">type</span>(new_dict)</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      {}<br />
+      dict
+    </p>
+    <p>
+      In the above example, an empty dictionary is created since no key-value
+      pairs are supplied as a parameter to the dict() function. In case you want
+      to add values, you can do as follows:
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">new_dict<span class="op">=</span><span class="bu">dict</span>(Dave <span class="op">=</span> <span class="st">&#39;001&#39;</span> , Ava<span class="op">=</span> <span class="st">&#39;002&#39;</span> , Joe<span class="op">=</span> <span class="st">&#39;003&#39;</span>)</a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="bu">print</span>(new_dict)</a>
-<a class="sourceLine" id="cb3-3" title="3"><span class="bu">type</span>(new_dict)</a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p>{‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}<br />
-dict</p>
-<p>Nested dictionaries are basically dictionaries that lie within other dictionaries. For example:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">emp_details <span class="op">=</span> {<span class="st">&#39;Employee&#39;</span>: {<span class="st">&#39;Dave&#39;</span>: {<span class="st">&#39;ID&#39;</span>: <span class="st">&#39;001&#39;</span>,</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="bu">type</span>(new_dict)</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      {‘Dave’: ‘001’, ‘Ava’: ‘002’, ‘Joe’: ‘003’}<br />
+      dict
+    </p>
+    <p>
+      Nested dictionaries are basically dictionaries that lie within other
+      dictionaries. For example:
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">emp_details <span class="op">=</span> {<span class="st">&#39;Employee&#39;</span>: {<span class="st">&#39;Dave&#39;</span>: {<span class="st">&#39;ID&#39;</span>: <span class="st">&#39;001&#39;</span>,</a>
 <a class="sourceLine" id="cb4-2" title="2"> <span class="st">&#39;Salary&#39;</span>: <span class="dv">2000</span>,</a>
 <a class="sourceLine" id="cb4-3" title="3"> <span class="st">&#39;Designation&#39;</span>:<span class="st">&#39;Python Developer&#39;</span>},</a>
 <a class="sourceLine" id="cb4-4" title="4"> <span class="st">&#39;Ava&#39;</span>: {<span class="st">&#39;ID&#39;</span>:<span class="st">&#39;002&#39;</span>,</a>
@@ -137,40 +327,65 @@ dict</p>
 <a class="sourceLine" id="cb4-6" title="6"> <span class="st">&#39;Designation&#39;</span>: <span class="st">&#39;Java Developer&#39;</span>},</a>
 <a class="sourceLine" id="cb4-7" title="7"> <span class="st">&#39;Joe&#39;</span>: {<span class="st">&#39;ID&#39;</span>: <span class="st">&#39;003&#39;</span>,</a>
 <a class="sourceLine" id="cb4-8" title="8"> <span class="st">&#39;Salary&#39;</span>: <span class="dv">1843</span>,</a>
-<a class="sourceLine" id="cb4-9" title="9"> <span class="st">&#39;Designation&#39;</span>: <span class="st">&#39;Hadoop Developer&#39;</span>}}}</a></code></pre></div>
-<p>There are a number of operations that can be performed on has tables in Python through dictionaries such as:</p>
-<ul>
-<li>Accessing Values</li>
-<li>Updating Values</li>
-<li>Deleting Element</li>
-</ul>
-<h3 id="accessing-values">Accessing Values:</h3>
-<p>The values of a dictionary can be accessed in many ways such as:</p>
-<ul>
-<li>Using key values</li>
-<li>Using functions</li>
-<li>Implementing the for loop</li>
-</ul>
-<h3 id="using-key-values">Using key values:</h3>
-<p>Dictionary values can be accessed using the key values as follows:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
-<a class="sourceLine" id="cb5-2" title="2">my_dict<span class="op">\</span>[<span class="st">&#39;Dave&#39;</span><span class="op">\</span>]</a></code></pre></div>
-<p><strong>OUTPUT: ‘</strong> 001′</p>
-<h3 id="using-functions">Using functions:</h3>
-<p>There are a number of built-in functions that can be used such as get(), keys(), values(), etc.</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
+<a class="sourceLine" id="cb4-9" title="9"> <span class="st">&#39;Designation&#39;</span>: <span class="st">&#39;Hadoop Developer&#39;</span>}}}</a></code></pre>
+    </div>
+    <p>
+      There are a number of operations that can be performed on has tables in
+      Python through dictionaries such as:
+    </p>
+    <ul>
+      <li>Accessing Values</li>
+      <li>Updating Values</li>
+      <li>Deleting Element</li>
+    </ul>
+    <h3 id="accessing-values">Accessing Values:</h3>
+    <p>The values of a dictionary can be accessed in many ways such as:</p>
+    <ul>
+      <li>Using key values</li>
+      <li>Using functions</li>
+      <li>Implementing the for loop</li>
+    </ul>
+    <h3 id="using-key-values">Using key values:</h3>
+    <p>Dictionary values can be accessed using the key values as follows:</p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
+<a class="sourceLine" id="cb5-2" title="2">my_dict<span class="op">\</span>[<span class="st">&#39;Dave&#39;</span><span class="op">\</span>]</a></code></pre>
+    </div>
+    <p><strong>OUTPUT: ‘</strong> 001′</p>
+    <h3 id="using-functions">Using functions:</h3>
+    <p>
+      There are a number of built-in functions that can be used such as get(),
+      keys(), values(), etc.
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="bu">print</span>(my_dict.keys())</a>
 <a class="sourceLine" id="cb6-3" title="3"><span class="bu">print</span>(my_dict.values())</a>
-<a class="sourceLine" id="cb6-4" title="4"><span class="bu">print</span>(my_dict.get(<span class="st">&#39;Dave&#39;</span>))</a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p>dict_keys([‘Dave’, ‘Ava’, ‘Joe’])<br />
-dict_values([‘001’, ‘002’, ‘003’])<br />
-001</p>
-<h3 id="implementing-the-for-loop">Implementing the for loop:</h3>
-<p><strong>The for loop allows you to access the key-value pairs of a dictionary easily by iterating over them. For example:</strong></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="bu">print</span>(my_dict.get(<span class="st">&#39;Dave&#39;</span>))</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      dict_keys([‘Dave’, ‘Ava’, ‘Joe’])<br />
+      dict_values([‘001’, ‘002’, ‘003’])<br />
+      001
+    </p>
+    <h3 id="implementing-the-for-loop">Implementing the for loop:</h3>
+    <p>
+      <strong
+        >The for loop allows you to access the key-value pairs of a dictionary
+        easily by iterating over them. For example:</strong
+      >
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
 <a class="sourceLine" id="cb7-2" title="2"><span class="bu">print</span>(<span class="st">&quot;All keys&quot;</span>)</a>
 <a class="sourceLine" id="cb7-3" title="3"><span class="cf">for</span> x <span class="kw">in</span> my_dict:</a>
 <a class="sourceLine" id="cb7-4" title="4"> <span class="bu">print</span>(x) <span class="co">#prints the keys</span></a>
@@ -179,41 +394,75 @@ dict_values([‘001’, ‘002’, ‘003’])<br />
 <a class="sourceLine" id="cb7-7" title="7"> <span class="bu">print</span>(x) <span class="co">#prints values</span></a>
 <a class="sourceLine" id="cb7-8" title="8"><span class="bu">print</span>(<span class="st">&quot;All keys and values&quot;</span>)</a>
 <a class="sourceLine" id="cb7-9" title="9"><span class="cf">for</span> x,y <span class="kw">in</span> my_dict.items():</a>
-<a class="sourceLine" id="cb7-10" title="10"> <span class="bu">print</span>(x, <span class="st">&quot;:&quot;</span> , y) <span class="co">#prints keys and values</span></a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p>All keys<br />
-Dave<br />
-Ava<br />
-Joe<br />
-All values<br />
-001<br />
-002<br />
-003<br />
-All keys and values<br />
-Dave : 001<br />
-Ava : 002<br />
-Joe : 003</p>
-<blockquote>
-<p>Dictionaries are mutable data types and therefore, you can update them as and when required. For example, if I want to change the ID of the employee named Dave from ‘001’ to ‘004’ and if I want to add another key-value pair to my dictionary, I can do as follows:</p>
-</blockquote>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
+<a class="sourceLine" id="cb7-10" title="10"> <span class="bu">print</span>(x, <span class="st">&quot;:&quot;</span> , y) <span class="co">#prints keys and values</span></a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      All keys<br />
+      Dave<br />
+      Ava<br />
+      Joe<br />
+      All values<br />
+      001<br />
+      002<br />
+      003<br />
+      All keys and values<br />
+      Dave : 001<br />
+      Ava : 002<br />
+      Joe : 003
+    </p>
+    <blockquote>
+      <p>
+        Dictionaries are mutable data types and therefore, you can update them
+        as and when required. For example, if I want to change the ID of the
+        employee named Dave from ‘001’ to ‘004’ and if I want to add another
+        key-value pair to my dictionary, I can do as follows:
+      </p>
+    </blockquote>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span> : <span class="st">&#39;001&#39;</span> , <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span> , <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>}</a>
 <a class="sourceLine" id="cb8-2" title="2">my_dict<span class="op">\</span>[<span class="st">&#39;Dave&#39;</span><span class="op">\</span>] <span class="op">=</span> <span class="st">&#39;004&#39;</span> <span class="co">#Updating the value of Dave</span></a>
 <a class="sourceLine" id="cb8-3" title="3">my_dict<span class="op">\</span>[<span class="st">&#39;Chris&#39;</span><span class="op">\</span>] <span class="op">=</span> <span class="st">&#39;005&#39;</span> <span class="co">#adding a key-value pair</span></a>
-<a class="sourceLine" id="cb8-4" title="4"><span class="bu">print</span>(my_dict)</a></code></pre></div>
-<p><strong>OUTPUT:</strong> {‘Dave’: ‘004’, ‘Ava’: ‘002’, ‘Joe’: ‘003’, ‘Chris’: ‘005’}</p>
-<p>There a number of functions that allow you to delete items from a dictionary such as <em>del(), pop(), popitem(), clear(),</em> etc. For example:</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span>: <span class="st">&#39;004&#39;</span>, <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span>, <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>, <span class="st">&#39;Chris&#39;</span>: <span class="st">&#39;005&#39;</span>}</a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="bu">print</span>(my_dict)</a></code></pre>
+    </div>
+    <p>
+      <strong>OUTPUT:</strong> {‘Dave’: ‘004’, ‘Ava’: ‘002’, ‘Joe’: ‘003’,
+      ‘Chris’: ‘005’}
+    </p>
+    <p>
+      There a number of functions that allow you to delete items from a
+      dictionary such as <em>del(), pop(), popitem(), clear(),</em> etc. For
+      example:
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">my_dict<span class="op">=</span>{<span class="st">&#39;Dave&#39;</span>: <span class="st">&#39;004&#39;</span>, <span class="st">&#39;Ava&#39;</span>: <span class="st">&#39;002&#39;</span>, <span class="st">&#39;Joe&#39;</span>: <span class="st">&#39;003&#39;</span>, <span class="st">&#39;Chris&#39;</span>: <span class="st">&#39;005&#39;</span>}</a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="kw">del</span> my_dict<span class="op">\</span>[<span class="st">&#39;Dave&#39;</span><span class="op">\</span>] <span class="co">#removes key-value pair of &#39;Dave&#39;</span></a>
 <a class="sourceLine" id="cb9-3" title="3">my_dict.pop(<span class="st">&#39;Ava&#39;</span>) <span class="co">#removes the value of &#39;Ava&#39;</span></a>
 <a class="sourceLine" id="cb9-4" title="4">my_dict.popitem() <span class="co">#removes the last inserted item</span></a>
-<a class="sourceLine" id="cb9-5" title="5"><span class="bu">print</span>(my_dict)</a></code></pre></div>
-<p><strong>OUTPUT:</strong> {‘Joe’: ‘003’}</p>
-<p>The above output shows that all the elements except ‘Joe: 003’ have been removed from the dictionary using the various functions.</p>
-<p>As you have seen previously, I have created a nested dictionary containing employee names and their details mapped to it. Now to make a clear table out of that, I will make use of the pandas library in order to put everything as a dataframe.</p>
-<p><strong>EXAMPLE:</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="im">import</span> pandas <span class="im">as</span> pd</a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="bu">print</span>(my_dict)</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong> {‘Joe’: ‘003’}</p>
+    <p>
+      The above output shows that all the elements except ‘Joe: 003’ have been
+      removed from the dictionary using the various functions.
+    </p>
+    <p>
+      As you have seen previously, I have created a nested dictionary containing
+      employee names and their details mapped to it. Now to make a clear table
+      out of that, I will make use of the pandas library in order to put
+      everything as a dataframe.
+    </p>
+    <p><strong>EXAMPLE:</strong></p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="im">import</span> pandas <span class="im">as</span> pd</a>
 <a class="sourceLine" id="cb10-2" title="2">emp_details <span class="op">=</span> {<span class="st">&#39;Employee&#39;</span>: {<span class="st">&#39;Dave&#39;</span>: {<span class="st">&#39;ID&#39;</span>: <span class="st">&#39;001&#39;</span>,</a>
 <a class="sourceLine" id="cb10-3" title="3"> <span class="st">&#39;Salary&#39;</span>: <span class="dv">2000</span>,</a>
 <a class="sourceLine" id="cb10-4" title="4"> <span class="st">&#39;Designation&#39;</span>:<span class="st">&#39;Python Developer&#39;</span>},</a>
@@ -224,8 +473,13 @@ Joe : 003</p>
 <a class="sourceLine" id="cb10-9" title="9"> <span class="st">&#39;Salary&#39;</span>: <span class="dv">1843</span>,</a>
 <a class="sourceLine" id="cb10-10" title="10"> <span class="st">&#39;Designation&#39;</span>: <span class="st">&#39;Hadoop Developer&#39;</span>}}}</a>
 <a class="sourceLine" id="cb10-11" title="11">df<span class="op">=</span>pd.DataFrame(emp_details<span class="op">\</span>[<span class="st">&#39;Employee&#39;</span><span class="op">\</span>])</a>
-<a class="sourceLine" id="cb10-12" title="12"><span class="bu">print</span>(df)</a></code></pre></div>
-<p><strong>OUTPUT:</strong></p>
-<p><img src="https://miro.medium.com/max/1320/1*it6P3nXxkJLE5kckWPMkOg.png" /></p>
-</body>
+<a class="sourceLine" id="cb10-12" title="12"><span class="bu">print</span>(df)</a></code></pre>
+    </div>
+    <p><strong>OUTPUT:</strong></p>
+    <p>
+      <img
+        src="https://miro.medium.com/max/1320/1*it6P3nXxkJLE5kckWPMkOg.png"
+      />
+    </p>
+  </body>
 </html>

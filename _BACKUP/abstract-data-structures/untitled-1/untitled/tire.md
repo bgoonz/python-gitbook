@@ -1,5 +1,4 @@
-Tire
-====
+# Tire
 
 {% tabs %} {% tab title=“Examples” %}
 

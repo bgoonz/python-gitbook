@@ -1,24 +1,22 @@
-Hash Table and HashMap in Python
-================================
+# Hash Table and HashMap in Python
 
-Hash Table and HashMap in Python <span id="hash-table-and-hashmap-in-python"></span>
-------------------------------------------------------------------------------------
+## Hash Table and HashMap in Python <span id="hash-table-and-hashmap-in-python"></span>
 
 Data requires a number of ways in which it can be stored and accessed. One of the most important implementations includes Hash Tables. In Python, these Hash tables are implemented through the built-in data type i.e, dictionary. In this article, you will learn what are Hash Tables and Hashmaps in Python and how you can implement them using dictionaries.
 
 Before moving ahead, let us take a look at all the topics of discussion:
 
--   What is a Hash table or a Hashmap in Python?
--   Hash table vs Hashmap
--   Creating Dictionaries
--   Creating Nested Dictionaries
--   Performing Operations on Hash Tables using dictionaries
+- What is a Hash table or a Hashmap in Python?
+- Hash table vs Hashmap
+- Creating Dictionaries
+- Creating Nested Dictionaries
+- Performing Operations on Hash Tables using dictionaries
 
 1.  Accessing Values
 2.  Updating Values
 3.  Deleting Items
 
--   Converting a Dictionary into a Dataframe
+- Converting a Dictionary into a Dataframe
 
 In computer science, a Hash table or a Hashmap is a type of data structure that maps keys to its value pairs (implement abstract array data types). It basically makes use of a function that computes an index value that in turn holds the elements to be searched, inserted, removed, etc. This makes it easy and fast to access data. In general, hash tables store key-value pairs and the key is generated using a hash function.
 
@@ -32,8 +30,8 @@ Moving ahead, let’s see the difference between the hash table and hashmap in P
 
 Dictionaries can be created in two ways:
 
--   Using curly braces ({})
--   Using the *dict()* function
+- Using curly braces ({})
+- Using the _dict()_ function
 
 ### Using curly braces: <span id="using-curly-braces"></span>
 
@@ -51,7 +49,7 @@ Dictionaries in Python can be created using curly braces as follows:
 
 ### Using dict() function: <span id="using-dict-function"></span>
 
-Python has a built-in function, *dict()* that can be used to create [dictionaries](https://www.edureka.co/blog/sort-dictionary-by-value-in-python/) in Python. For example:
+Python has a built-in function, _dict()_ that can be used to create [dictionaries](https://www.edureka.co/blog/sort-dictionary-by-value-in-python/) in Python. For example:
 
 **EXAMPLE:**
 
@@ -91,17 +89,17 @@ Nested dictionaries are basically dictionaries that lie within other dictionarie
 
 There are a number of operations that can be performed on has tables in Python through dictionaries such as:
 
--   Accessing Values
--   Updating Values
--   Deleting Element
+- Accessing Values
+- Updating Values
+- Deleting Element
 
 ### Accessing Values: <span id="accessing-values"></span>
 
 The values of a dictionary can be accessed in many ways such as:
 
--   Using key values
--   Using functions
--   Implementing the for loop
+- Using key values
+- Using functions
+- Implementing the for loop
 
 ### Using key values: <span id="using-key-values"></span>
 
@@ -127,7 +125,7 @@ There are a number of built-in functions that can be used such as get(), keys(),
 
 **OUTPUT:**
 
-dict\_keys(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’) dict\_values(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’) 001
+dict_keys(‘Dave’, ‘Ava’, ‘Joe’‘Dave’,‘Ava’,‘Joe’) dict_values(‘001’, ‘002’, ‘003’‘001’,‘002’,‘003’) 001
 
 ### Implementing the for loop: <span id="implementing-the-for-loop"></span>
 
@@ -159,7 +157,7 @@ All keys Dave Ava Joe All values 001 002 003 All keys and values Dave : 001 Ava 
 
 **OUTPUT:** {‘Dave’: ‘004’, ‘Ava’: ‘002’, ‘Joe’: ‘003’, ‘Chris’: ‘005’}
 
-There a number of functions that allow you to delete items from a dictionary such as *del(), pop(), popitem(), clear(),* etc. For example:
+There a number of functions that allow you to delete items from a dictionary such as _del(), pop(), popitem(), clear(),_ etc. For example:
 
 **EXAMPLE:**
 

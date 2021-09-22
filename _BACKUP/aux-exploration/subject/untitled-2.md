@@ -1,10 +1,9 @@
-Reading and Writing to text files in Python
-===========================================
+# Reading and Writing to text files in Python
 
 Python provides inbuilt functions for creating, writing and reading files. There are two types of files that can be handled in python, normal text files and binary files (written in binary language,0s and 1s).
 
--   **Text files:** In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character (‘’) in python by default.
--   **Binary files:** In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.
+- **Text files:** In this type of file, Each line of text is terminated with a special character called EOL (End of Line), which is the new line character (‘’) in python by default.
+- **Binary files:** In this type of file, there is no terminator for a line and the data is stored after converting it into machine understandable binary language.
 
 In this article, we will be focusing on opening, closing, reading and writing data in a text file.
 

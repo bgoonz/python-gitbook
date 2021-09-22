@@ -1,7 +1,6 @@
-Configuring Ubuntu for Python Web Development
-=============================================
+# Configuring Ubuntu for Python Web Development
 
-*Note:* the following instructions assume that you are connected to the Internet and that you have both the `main` and `universe` package repositories enabled. All unix shell commands are assumed to be running from your home directory ($HOME). Finally, any command that begins with `sudo` assums that you have administrative rights on your machine. If you do not — please ask your system administrator about installing the software you need.
+_Note:_ the following instructions assume that you are connected to the Internet and that you have both the `main` and `universe` package repositories enabled. All unix shell commands are assumed to be running from your home directory ($HOME). Finally, any command that begins with `sudo` assums that you have administrative rights on your machine. If you do not — please ask your system administrator about installing the software you need.
 
 What follows are instructions for setting up an Ubuntu 16.04 (Xenial) home environment for use with this book. I use Ubuntu GNU/Linux for both development and testing of the book, so it is the only system about which I can personally answer setup and configuration questions.
 
@@ -13,7 +12,7 @@ ThanksArlington, Virginia
 
 Ubuntu 16.04 comes with both Python 2 and Python 3 installed. Typing `python` at the shell prompt still launches Python 2. Use the command `python3` for Python 3.
 
-In addition to the [debian packages](http://en.wikipedia.org/wiki/Debian_package) in the [Ubuntu Package archive](http://packages.ubuntu.com/), we will be using Python software from the [Python Package Index](https://pypi.python.org/pypi) or PyPI. The tool for installing packages from PyPI is called [pip](http://en.wikipedia.org/wiki/Pip_%28package_manager%29). Since we want Python 3 packages installed which will work with the Python 3 already on our Ubuntu system, we will use the Ubuntu *python3-pip* debian package.
+In addition to the [debian packages](http://en.wikipedia.org/wiki/Debian_package) in the [Ubuntu Package archive](http://packages.ubuntu.com/), we will be using Python software from the [Python Package Index](https://pypi.python.org/pypi) or PyPI. The tool for installing packages from PyPI is called [pip](http://en.wikipedia.org/wiki/Pip_%28package_manager%29). Since we want Python 3 packages installed which will work with the Python 3 already on our Ubuntu system, we will use the Ubuntu _python3-pip_ debian package.
 
 To add this package run following from the unix command prompt:
 
@@ -104,7 +103,7 @@ Lumpy is used in several of the exercises in this book to help illustrate python
 
 ### Making a python script executable and runnable from anywhere
 
-On unix systems, Python scripts can be made *executable* using the following process:
+On unix systems, Python scripts can be made _executable_ using the following process:
 
 1.  Add this line as the first line in the script:
 

@@ -1,109 +1,299 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>read_me_-_week_1_-_output-_variables_and_input</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h4 id="general-teacher-notes">General Teacher Notes</h4>
-<p>This week starts with some theory around Input/Process/Output and what an algorithm is. If you’d rather dive straight into the coding then that’s fine.</p>
-<p>There is a lot in this first week, don’t be afraid to slow it down and really ensure that students have mastered these concepts. There are lots of similar tasks available online that you can use to supplement the ones in these resources. I can particularly recommend:</p>
-<p><a href="https://www.w3schools.com/python/python_exercises.asp"><span class="underline">https://www.w3schools.com/python/python_exercises.asp</span></a></p>
-<p><a href="https://www.practicepython.org/"><span class="underline">https://www.practicepython.org/</span></a></p>
-<p>The input/process/output diagram on the lesson slides will be referred back to in future sessions.</p>
-<p>It’s important to ensure that students understand the difference between algorithm and program.</p>
-<p>Once you have explained this we move on to coding output using the <strong>print</strong> statement. This is one of the simplest commands in Python. It offers instant feedback (users can see if it works or not straight away). When students have had a chance to predict &amp; test, start to explore how to break the statement. This will give you a chance to highlight the importance of precision and correct syntax in programming. I find it really helps if students appreciate this very early on.</p>
-<p>At first, you start with printing set text (called strings). In later tasks you use variables to store text and refer back to it. Variables are used in a very similar way to letters in algebra - they represent the text. Students can call variables anything they like, but there are some good practice principles:</p>
-<ul>
-<li><p>No two variables can have the same name.</p></li>
-<li><p>Variable names should be meaningful (give you a clue as to the data</p>
-<blockquote>
-<p>stored therein</p>
-</blockquote></li>
-<li><p>Variable names start with a lowercase letter.</p></li>
-<li><p>Variable names cannot contain spaces.</p></li>
-<li><p>If a variable name is more than one word long, capitalise the first</p>
-<blockquote>
-<p>letter of the second word onwards, like this this is known as [<strong><span class="underline">camel &gt; case</span></strong>](https://en.wikipedia.org/wiki/Camel_case#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):</p>
-</blockquote>
-<ul>
-<li><strong><em>thisIsAnExampleVariableName</em></strong></li>
-</ul></li>
-</ul>
-<h4 id="key-concepts">Key Concepts</h4>
-<p>Algorithms - sequences of instructions for a task.</p>
-<p>Output - the information presented to the user by the computer. In our programs output will be in the form of text on screen.</p>
-<p>Variable - a placeholder for information that can change as the program runs.</p>
-<p>String variable assignment - A string is data that the computer treats as text.</p>
-<p>Concatenation - joining the contents of variables to other variables and/or strings in output.</p>
-<p>Input - the data collected by the computer. In our programs input will be in the form of the user typing in.</p>
-<p>Syntax - the format that code is written in. If code is not written in the correct format it creates a <strong>syntax error</strong> and the program will not run.</p>
-<h4 id="lesson-tasks---links-to-repls">Lesson Tasks - Links to repls</h4>
-<h5 id="task-1---output">Task 1 - Output</h5>
-<p>Task and instructions on repl.it - share this link with your students - <a href="https://repl.it/@MrAColley/11-Output"><span class="underline">https://repl.it/@MrAColley/11-Output</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/11-Output-Example-Solution"><span class="underline">https://repl.it/@MrAColley/11-Output-Example-Solution</span></a></p>
-<p>Task 1 - Add a comment on line 9 to predict what the code on line 10 will do.</p>
-<p>Task 2 - Reuse the code to output your own message. Add comments to show what it does.</p>
-<p>Task 3 - Output a joke that outputs on multiple lines.</p>
-<h5 id="task-2---variable-assignment">Task 2 - Variable Assignment</h5>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/12-Variable-Assignment"><span class="underline">https://repl.it/@MrAColley/12-Variable-Assignment</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution"><span class="underline">https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution</span></a></p>
-<p>Task 1 - Add comments to the code below to explain what it does</p>
-<p>name = "Axl"</p>
-<p>print(name)</p>
-<p>Extra question - why isn't 'name' in speech marks on line 5?</p>
-<p>Task 2 - Concatenation</p>
-<p>name1 = "Axl"</p>
-<p>name2 = "Slash"</p>
-<p>#Add 2 more variables to store 'Duff' and 'Izzy'</p>
-<p>This line uses concatenation to join the variables together with the string 'and' to make a sentence.</p>
-<p>Complete the line to output all of the variables</p>
-<p>print(name1 + " and " + name2 + " and ")</p>
-<h5 id="task-3---variable-assignment-independent-challenge">Task 3 - Variable Assignment Independent Challenge</h5>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/13-Variable-Assignment-Challenge"><span class="underline">https://repl.it/@MrAColley/13-Variable-Assignment-Challenge</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution"><span class="underline">https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution</span></a></p>
-<p>Assign your name and your favourite food to 2 separate variables with suitable names.</p>
-<p>############# SIMPLE ###################</p>
-<p>Output the contents of the variables on 2 separate lines</p>
-<p>############# MEDIUM ###########################</p>
-<p>Output two sentences (not just the contents of the variables). The first with your name, the second with your favourite food.</p>
-<p>############ COMPLEX #########################</p>
-<p>Output both pieces of information as part of the same sentence.</p>
-<p>Make sure that you have spaces and punctuation in the correct places.</p>
-<h5 id="task-4---input">Task 4 - Input</h5>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/14-Input-With-Variables"><strong><span class="underline">https://repl.it/@MrAColley/14-Input-With-Variables</span></strong></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution"><span class="underline">https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution</span></a></p>
-<p># Input With Variables</p>
-<p>#Task 1 - Add comments to the code below to predict what will happen when it is run.</p>
-<p>#Task 2 - add comments to the code to explain what the variables are called and where they are used. Make sure to show where the variable.</p>
-<p>print("Hi! What's your name?")</p>
-<p>name = input()</p>
-<p>print("Hi " + name + "! How are you today?")</p>
-<p># Task 3 - Adapt the code so that it assigns input into the 'name' variable. CHALLENGE - put a prompt in the input command to ask the user for their name.</p>
-<p># Task 4 - Combine lines ‘Do you like programming’ and answer = input() so that the input has a prompt in it.</p>
-<p>#Task 5 - Adapt the output on the next to last line so that it includes both the name and the answer variables.</p>
-<p>name = "Billy"</p>
-<p>print("We want to know if you like progamming!")</p>
-<p>print()</p>
-<p>print("Do you like programming " + name + "?")</p>
-<p>answer = input()</p>
-<p>print("Great! You said " + answer + "!")</p>
-<p>print("Let's learn some Python today")</p>
-<h5 id="task-5---homework---the-chat-bot-challenge">Task 5 - Homework - The Chat Bot Challenge</h5>
-<p>Lots of websites use chatbots to interact with their customers. These chatbots are often very sophisticated and use AI to learn and adapt to the user. Our chat bot is going to be a bit simpler.</p>
-<p>The chatbot should work like this:</p>
-<p>•Ask the user their name and store it in a variable.</p>
-<p>•Greet the user by name.</p>
-<p>•Ask the user three questions about themselves and store their responses in three different suitably named variables.</p>
-<p>•Respond to each of the questions one by one, using the user’s name in the response.</p>
-<p>•Output a summary of all of the user’s answers in a single sentence.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>read_me_-_week_1_-_output-_variables_and_input</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h4 id="general-teacher-notes">General Teacher Notes</h4>
+    <p>
+      This week starts with some theory around Input/Process/Output and what an
+      algorithm is. If you’d rather dive straight into the coding then that’s
+      fine.
+    </p>
+    <p>
+      There is a lot in this first week, don’t be afraid to slow it down and
+      really ensure that students have mastered these concepts. There are lots
+      of similar tasks available online that you can use to supplement the ones
+      in these resources. I can particularly recommend:
+    </p>
+    <p>
+      <a href="https://www.w3schools.com/python/python_exercises.asp"
+        ><span class="underline"
+          >https://www.w3schools.com/python/python_exercises.asp</span
+        ></a
+      >
+    </p>
+    <p>
+      <a href="https://www.practicepython.org/"
+        ><span class="underline">https://www.practicepython.org/</span></a
+      >
+    </p>
+    <p>
+      The input/process/output diagram on the lesson slides will be referred
+      back to in future sessions.
+    </p>
+    <p>
+      It’s important to ensure that students understand the difference between
+      algorithm and program.
+    </p>
+    <p>
+      Once you have explained this we move on to coding output using the
+      <strong>print</strong> statement. This is one of the simplest commands in
+      Python. It offers instant feedback (users can see if it works or not
+      straight away). When students have had a chance to predict &amp; test,
+      start to explore how to break the statement. This will give you a chance
+      to highlight the importance of precision and correct syntax in
+      programming. I find it really helps if students appreciate this very early
+      on.
+    </p>
+    <p>
+      At first, you start with printing set text (called strings). In later
+      tasks you use variables to store text and refer back to it. Variables are
+      used in a very similar way to letters in algebra - they represent the
+      text. Students can call variables anything they like, but there are some
+      good practice principles:
+    </p>
+    <ul>
+      <li><p>No two variables can have the same name.</p></li>
+      <li>
+        <p>
+          Variable names should be meaningful (give you a clue as to the data
+        </p>
+        <blockquote>
+          <p>stored therein</p>
+        </blockquote>
+      </li>
+      <li><p>Variable names start with a lowercase letter.</p></li>
+      <li><p>Variable names cannot contain spaces.</p></li>
+      <li>
+        <p>
+          If a variable name is more than one word long, capitalise the first
+        </p>
+        <blockquote>
+          <p>
+            letter of the second word onwards, like this this is known as
+            [<strong><span class="underline">camel &gt; case</span></strong
+            >](https://en.wikipedia.org/wiki/Camel_case#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):
+          </p>
+        </blockquote>
+        <ul>
+          <li>
+            <strong><em>thisIsAnExampleVariableName</em></strong>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h4 id="key-concepts">Key Concepts</h4>
+    <p>Algorithms - sequences of instructions for a task.</p>
+    <p>
+      Output - the information presented to the user by the computer. In our
+      programs output will be in the form of text on screen.
+    </p>
+    <p>
+      Variable - a placeholder for information that can change as the program
+      runs.
+    </p>
+    <p>
+      String variable assignment - A string is data that the computer treats as
+      text.
+    </p>
+    <p>
+      Concatenation - joining the contents of variables to other variables
+      and/or strings in output.
+    </p>
+    <p>
+      Input - the data collected by the computer. In our programs input will be
+      in the form of the user typing in.
+    </p>
+    <p>
+      Syntax - the format that code is written in. If code is not written in the
+      correct format it creates a <strong>syntax error</strong> and the program
+      will not run.
+    </p>
+    <h4 id="lesson-tasks---links-to-repls">Lesson Tasks - Links to repls</h4>
+    <h5 id="task-1---output">Task 1 - Output</h5>
+    <p>
+      Task and instructions on repl.it - share this link with your students -
+      <a href="https://repl.it/@MrAColley/11-Output"
+        ><span class="underline">https://repl.it/@MrAColley/11-Output</span></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a href="https://repl.it/@MrAColley/11-Output-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/11-Output-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p>
+      Task 1 - Add a comment on line 9 to predict what the code on line 10 will
+      do.
+    </p>
+    <p>
+      Task 2 - Reuse the code to output your own message. Add comments to show
+      what it does.
+    </p>
+    <p>Task 3 - Output a joke that outputs on multiple lines.</p>
+    <h5 id="task-2---variable-assignment">Task 2 - Variable Assignment</h5>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/12-Variable-Assignment"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/12-Variable-Assignment</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a
+        href="https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/12-Variable-Assignment-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p>Task 1 - Add comments to the code below to explain what it does</p>
+    <p>name = "Axl"</p>
+    <p>print(name)</p>
+    <p>Extra question - why isn't 'name' in speech marks on line 5?</p>
+    <p>Task 2 - Concatenation</p>
+    <p>name1 = "Axl"</p>
+    <p>name2 = "Slash"</p>
+    <p>#Add 2 more variables to store 'Duff' and 'Izzy'</p>
+    <p>
+      This line uses concatenation to join the variables together with the
+      string 'and' to make a sentence.
+    </p>
+    <p>Complete the line to output all of the variables</p>
+    <p>print(name1 + " and " + name2 + " and ")</p>
+    <h5 id="task-3---variable-assignment-independent-challenge">
+      Task 3 - Variable Assignment Independent Challenge
+    </h5>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/13-Variable-Assignment-Challenge"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/13-Variable-Assignment-Challenge</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a
+        href="https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/13-Variable-Assignment-Challenge-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p>
+      Assign your name and your favourite food to 2 separate variables with
+      suitable names.
+    </p>
+    <p>############# SIMPLE ###################</p>
+    <p>Output the contents of the variables on 2 separate lines</p>
+    <p>############# MEDIUM ###########################</p>
+    <p>
+      Output two sentences (not just the contents of the variables). The first
+      with your name, the second with your favourite food.
+    </p>
+    <p>############ COMPLEX #########################</p>
+    <p>Output both pieces of information as part of the same sentence.</p>
+    <p>Make sure that you have spaces and punctuation in the correct places.</p>
+    <h5 id="task-4---input">Task 4 - Input</h5>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/14-Input-With-Variables"
+        ><strong
+          ><span class="underline"
+            >https://repl.it/@MrAColley/14-Input-With-Variables</span
+          ></strong
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a
+        href="https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/14-Input-With-Variables-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p># Input With Variables</p>
+    <p>
+      #Task 1 - Add comments to the code below to predict what will happen when
+      it is run.
+    </p>
+    <p>
+      #Task 2 - add comments to the code to explain what the variables are
+      called and where they are used. Make sure to show where the variable.
+    </p>
+    <p>print("Hi! What's your name?")</p>
+    <p>name = input()</p>
+    <p>print("Hi " + name + "! How are you today?")</p>
+    <p>
+      # Task 3 - Adapt the code so that it assigns input into the 'name'
+      variable. CHALLENGE - put a prompt in the input command to ask the user
+      for their name.
+    </p>
+    <p>
+      # Task 4 - Combine lines ‘Do you like programming’ and answer = input() so
+      that the input has a prompt in it.
+    </p>
+    <p>
+      #Task 5 - Adapt the output on the next to last line so that it includes
+      both the name and the answer variables.
+    </p>
+    <p>name = "Billy"</p>
+    <p>print("We want to know if you like progamming!")</p>
+    <p>print()</p>
+    <p>print("Do you like programming " + name + "?")</p>
+    <p>answer = input()</p>
+    <p>print("Great! You said " + answer + "!")</p>
+    <p>print("Let's learn some Python today")</p>
+    <h5 id="task-5---homework---the-chat-bot-challenge">
+      Task 5 - Homework - The Chat Bot Challenge
+    </h5>
+    <p>
+      Lots of websites use chatbots to interact with their customers. These
+      chatbots are often very sophisticated and use AI to learn and adapt to the
+      user. Our chat bot is going to be a bit simpler.
+    </p>
+    <p>The chatbot should work like this:</p>
+    <p>•Ask the user their name and store it in a variable.</p>
+    <p>•Greet the user by name.</p>
+    <p>
+      •Ask the user three questions about themselves and store their responses
+      in three different suitably named variables.
+    </p>
+    <p>
+      •Respond to each of the questions one by one, using the user’s name in the
+      response.
+    </p>
+    <p>•Output a summary of all of the user’s answers in a single sentence.</p>
+  </body>
 </html>

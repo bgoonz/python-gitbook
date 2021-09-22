@@ -1,57 +1,117 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="tree">Tree</h1>
-<p>{% page-ref page=“in-order-traversal.md” %}</p>
-<p>{% page-ref page=“tree-equal.md” %}</p>
-<p>{% page-ref page=“ternary-search-trees.md” %}</p>
-<p>{% page-ref page=“red_black-tree.md” %}</p>
-<p>{% page-ref page=“../../../curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md” %}</p>
-<p>{% page-ref page=“../set/” %}</p>
-<p>{% page-ref page=“../binary-tree/” %}</p>
-<p>{% page-ref page=“../binary-search-tree/” %}</p>
-<p>{% page-ref page=“../binary-tree/” %}</p>
-<h3 id="trees-in-python">Trees in Python</h3>
-<p><a href="https://www.educative.io/blog/data-structures-trees-java">Trees</a> are another relation-based data structure, which specialize in representing hierarchical structures. Like a linked list, they’re populated with <code>Node</code> objects that contain a data value and one or more pointers to define its relation to immediate nodes.</p>
-<p>Each tree has a <strong>root</strong> node that all other nodes branch off from. The root contains pointers to all elements directly below it, which are known as its <strong>child nodes</strong>. These child nodes can then have child nodes of their own. Binary trees cannot have nodes with more than two child nodes.</p>
-<p>Any nodes on the same level are called <strong>sibling nodes</strong>. Nodes with no connected child nodes are known as <strong>leaf nodes</strong>.<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODE4NSIgaGVpZ2h0PSI2NTgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg==" /><img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/6470804819148800" alt="widget" /><img src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/6470804819148800" alt="widget" /></p>
-<p>The most common application of the binary tree is a <strong>binary search tree</strong>. Binary search trees excel at searching large collections of data, as the time complexity depends on the depth of the tree rather than the number of nodes.</p>
-<blockquote>
-<p><strong>Binary search trees have four strict rules:</strong></p>
-<ul>
-<li>The left subtree contains only nodes with elements lesser than the root.</li>
-<li>The right subtree contains only nodes with elements greater than the root.</li>
-<li>Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.</li>
-<li>There can be no duplicate nodes, i.e. no two nodes can have the same value.</li>
-</ul>
-</blockquote>
-<p>{% page-ref page=“../array/” %}</p>
-<p>{% page-ref page=“../binary-search-tree/” %}</p>
-<p>{% page-ref page=“../untitled-4/” %}</p>
-<p>{% page-ref page=“../array/extra-array.md” %}</p>
-<p>{% page-ref page=“../stack/” %}</p>
-<p>{% page-ref page=“../binary-tree/” %}</p>
-<p>{% page-ref page=“../untitled-6/” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-2/” %}</p>
-<p>{% page-ref page=“../untitled-3/” %}</p>
-<p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
-<p>{% page-ref page=“../untitled-1/” %}</p>
-<p>{% page-ref page=“../untitled/” %}</p>
-<p>{% page-ref page=“../heap/” %}</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="tree">Tree</h1>
+    <p>{% page-ref page=“in-order-traversal.md” %}</p>
+    <p>{% page-ref page=“tree-equal.md” %}</p>
+    <p>{% page-ref page=“ternary-search-trees.md” %}</p>
+    <p>{% page-ref page=“red_black-tree.md” %}</p>
+    <p>
+      {% page-ref
+      page=“../../../curriculum/untitled-4/untitled-5/tree-traversals-inorder-preorder-and-postorder.md”
+      %}
+    </p>
+    <p>{% page-ref page=“../set/” %}</p>
+    <p>{% page-ref page=“../binary-tree/” %}</p>
+    <p>{% page-ref page=“../binary-search-tree/” %}</p>
+    <p>{% page-ref page=“../binary-tree/” %}</p>
+    <h3 id="trees-in-python">Trees in Python</h3>
+    <p>
+      <a href="https://www.educative.io/blog/data-structures-trees-java"
+        >Trees</a
+      >
+      are another relation-based data structure, which specialize in
+      representing hierarchical structures. Like a linked list, they’re
+      populated with <code>Node</code> objects that contain a data value and one
+      or more pointers to define its relation to immediate nodes.
+    </p>
+    <p>
+      Each tree has a <strong>root</strong> node that all other nodes branch off
+      from. The root contains pointers to all elements directly below it, which
+      are known as its <strong>child nodes</strong>. These child nodes can then
+      have child nodes of their own. Binary trees cannot have nodes with more
+      than two child nodes.
+    </p>
+    <p>
+      Any nodes on the same level are called <strong>sibling nodes</strong>.
+      Nodes with no connected child nodes are known as
+      <strong>leaf nodes</strong>.<img
+        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODE4NSIgaGVpZ2h0PSI2NTgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+      /><img
+        src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/6470804819148800"
+        alt="widget"
+      /><img
+        src="https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/6470804819148800"
+        alt="widget"
+      />
+    </p>
+    <p>
+      The most common application of the binary tree is a
+      <strong>binary search tree</strong>. Binary search trees excel at
+      searching large collections of data, as the time complexity depends on the
+      depth of the tree rather than the number of nodes.
+    </p>
+    <blockquote>
+      <p><strong>Binary search trees have four strict rules:</strong></p>
+      <ul>
+        <li>
+          The left subtree contains only nodes with elements lesser than the
+          root.
+        </li>
+        <li>
+          The right subtree contains only nodes with elements greater than the
+          root.
+        </li>
+        <li>
+          Left and right subtrees must also be a binary search tree. They must
+          follow the above rules with the “root” of their tree.
+        </li>
+        <li>
+          There can be no duplicate nodes, i.e. no two nodes can have the same
+          value.
+        </li>
+      </ul>
+    </blockquote>
+    <p>{% page-ref page=“../array/” %}</p>
+    <p>{% page-ref page=“../binary-search-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-4/” %}</p>
+    <p>{% page-ref page=“../array/extra-array.md” %}</p>
+    <p>{% page-ref page=“../stack/” %}</p>
+    <p>{% page-ref page=“../binary-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-6/” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-2/” %}</p>
+    <p>{% page-ref page=“../untitled-3/” %}</p>
+    <p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
+    <p>{% page-ref page=“../untitled-1/” %}</p>
+    <p>{% page-ref page=“../untitled/” %}</p>
+    <p>{% page-ref page=“../heap/” %}</p>
+  </body>
 </html>

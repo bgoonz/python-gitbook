@@ -1,179 +1,482 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>dictionaries-sets-files-and-modules</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="dictionaries-sets-files-and-modules">Dictionaries, sets, files, and modules</h1>
-<h2 id="dictionaries-sets-files-and-modules-1">6. Dictionaries, sets, files, and modules</h2>
-<p><img src="../.gitbook/assets/image%20%289%29.png" /></p>
-<p><img src="../.gitbook/assets/image%20%2810%29.png" /></p>
-<p><img src="../.gitbook/assets/image%20%2811%29.png" /></p>
-<h2 id="dictionaries">Dictionaries</h2>
-<p><strong>Dictionaries</strong> are a compound type different from the sequence types we studied in the <a href="https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter">Strings, lists, and tuples</a> chapter. They are Python’s built-in <strong>mapping type</strong>. They map <strong>keys</strong>, which can be any immutable type, to values, which can be any type, just like the values of a list or tuple.</p>
-<p>Note</p>
-<p>Other names for dictionaries in computer science include <em>maps</em>, <em>symbol tables</em>, and <a href="http://en.wikipedia.org/wiki/Associative_array">associative arrays</a>. The pairs of values are referred to as <em>name-value</em>, <em>key-value</em>, <em>field-value</em>, or <a href="http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair">attribute-value</a> pairs.</p>
-<p>As an example, we will create a dictionary to translate English words into Spanish. For this dictionary, the keys are strings.</p>
-<p>One way to create a dictionary is to start with the empty dictionary and add <strong>key-value pairs</strong>. The empty dictionary is denoted with a pair of <strong>curly braces</strong>, <code>{}</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp <span class="op">=</span> {}</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>dictionaries-sets-files-and-modules</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="dictionaries-sets-files-and-modules">
+      Dictionaries, sets, files, and modules
+    </h1>
+    <h2 id="dictionaries-sets-files-and-modules-1">
+      6. Dictionaries, sets, files, and modules
+    </h2>
+    <p><img src="../.gitbook/assets/image%20%289%29.png" /></p>
+    <p><img src="../.gitbook/assets/image%20%2810%29.png" /></p>
+    <p><img src="../.gitbook/assets/image%20%2811%29.png" /></p>
+    <h2 id="dictionaries">Dictionaries</h2>
+    <p>
+      <strong>Dictionaries</strong> are a compound type different from the
+      sequence types we studied in the
+      <a
+        href="https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter"
+        >Strings, lists, and tuples</a
+      >
+      chapter. They are Python’s built-in <strong>mapping type</strong>. They
+      map <strong>keys</strong>, which can be any immutable type, to values,
+      which can be any type, just like the values of a list or tuple.
+    </p>
+    <p>Note</p>
+    <p>
+      Other names for dictionaries in computer science include <em>maps</em>,
+      <em>symbol tables</em>, and
+      <a href="http://en.wikipedia.org/wiki/Associative_array"
+        >associative arrays</a
+      >. The pairs of values are referred to as <em>name-value</em>,
+      <em>key-value</em>, <em>field-value</em>, or
+      <a href="http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair"
+        >attribute-value</a
+      >
+      pairs.
+    </p>
+    <p>
+      As an example, we will create a dictionary to translate English words into
+      Spanish. For this dictionary, the keys are strings.
+    </p>
+    <p>
+      One way to create a dictionary is to start with the empty dictionary and
+      add <strong>key-value pairs</strong>. The empty dictionary is denoted with
+      a pair of <strong>curly braces</strong>, <code>{}</code>:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp <span class="op">=</span> {}</a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(eng2sp)</a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;dict&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;one&#39;</span>] <span class="op">=</span> <span class="st">&#39;uno&#39;</span></a>
 <a class="sourceLine" id="cb1-5" title="5"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;two&#39;</span>] <span class="op">=</span> <span class="st">&#39;dos&#39;</span></a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;three&#39;</span>] <span class="op">=</span> <span class="st">&#39;tres&#39;</span></a></code></pre></div>
-<p>The first assignment creates a dictionary named <code>eng2sp</code>; the other assignments add new key-value pairs to the dictionary. We can print the current value of the dictionary in the usual way:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(eng2sp)</a>
-<a class="sourceLine" id="cb2-2" title="2">{<span class="st">&#39;three&#39;</span>: <span class="st">&#39;tres&#39;</span>, <span class="st">&#39;one&#39;</span>: <span class="st">&#39;uno&#39;</span>, <span class="st">&#39;two&#39;</span>: <span class="st">&#39;dos&#39;</span>}</a></code></pre></div>
-<p>The key-value pairs of the dictionary are seperated by commas. Each pair contains a key and a value separated by a colon.</p>
-<p>The order of the pairs may not be what you expected. Python uses complex algorithms to determine where the key-value pairs are stored in a dictionary. For our purposes we can think of this ordering as unpredicatable, so you should not try to rely on it. Instead, look up values by using a known key.</p>
-<p>Another way to create a dictionary is to provide a list of key-value pairs using the same syntax as the previous output:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp <span class="op">=</span> {<span class="st">&#39;one&#39;</span>: <span class="st">&#39;uno&#39;</span>, <span class="st">&#39;two&#39;</span>: <span class="st">&#39;dos&#39;</span>, <span class="st">&#39;three&#39;</span>: <span class="st">&#39;tres&#39;</span>}</a></code></pre></div>
-<p>It doesn’t matter what order we write the pairs. The values in a dictionary are accessed with keys, not with indices, so ordering is unimportant.</p>
-<p>Here is how we use a key to look up the corresponding value:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;two&#39;</span>]</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="co">&#39;dos&#39;</span></a></code></pre></div>
-<p>The key <code>'two'</code> yields the value <code>'dos'</code>.</p>
-<h3 id="dictionary-operations">6.2. Dictionary operations</h3>
-<p>The <code>del</code> statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory <span class="op">=</span> {<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">217</span>}</a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;three&#39;</span>] <span class="op">=</span> <span class="st">&#39;tres&#39;</span></a></code></pre>
+    </div>
+    <p>
+      The first assignment creates a dictionary named <code>eng2sp</code>; the
+      other assignments add new key-value pairs to the dictionary. We can print
+      the current value of the dictionary in the usual way:
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(eng2sp)</a>
+<a class="sourceLine" id="cb2-2" title="2">{<span class="st">&#39;three&#39;</span>: <span class="st">&#39;tres&#39;</span>, <span class="st">&#39;one&#39;</span>: <span class="st">&#39;uno&#39;</span>, <span class="st">&#39;two&#39;</span>: <span class="st">&#39;dos&#39;</span>}</a></code></pre>
+    </div>
+    <p>
+      The key-value pairs of the dictionary are seperated by commas. Each pair
+      contains a key and a value separated by a colon.
+    </p>
+    <p>
+      The order of the pairs may not be what you expected. Python uses complex
+      algorithms to determine where the key-value pairs are stored in a
+      dictionary. For our purposes we can think of this ordering as
+      unpredicatable, so you should not try to rely on it. Instead, look up
+      values by using a known key.
+    </p>
+    <p>
+      Another way to create a dictionary is to provide a list of key-value pairs
+      using the same syntax as the previous output:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp <span class="op">=</span> {<span class="st">&#39;one&#39;</span>: <span class="st">&#39;uno&#39;</span>, <span class="st">&#39;two&#39;</span>: <span class="st">&#39;dos&#39;</span>, <span class="st">&#39;three&#39;</span>: <span class="st">&#39;tres&#39;</span>}</a></code></pre>
+    </div>
+    <p>
+      It doesn’t matter what order we write the pairs. The values in a
+      dictionary are accessed with keys, not with indices, so ordering is
+      unimportant.
+    </p>
+    <p>Here is how we use a key to look up the corresponding value:</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> eng2sp[<span class="st">&#39;two&#39;</span>]</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co">&#39;dos&#39;</span></a></code></pre>
+    </div>
+    <p>The key <code>'two'</code> yields the value <code>'dos'</code>.</p>
+    <h3 id="dictionary-operations">6.2. Dictionary operations</h3>
+    <p>
+      The <code>del</code> statement removes a key-value pair from a dictionary.
+      For example, the following dictionary contains the names of various fruits
+      and the number of each fruit in stock:
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory <span class="op">=</span> {<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">217</span>}</a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(inventory)</a>
-<a class="sourceLine" id="cb5-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">217</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre></div>
-<p>If someone buys all of the pears, we can remove the entry from the dictionary:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> inventory[<span class="st">&#39;pears&#39;</span>]</a>
+<a class="sourceLine" id="cb5-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">217</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre>
+    </div>
+    <p>
+      If someone buys all of the pears, we can remove the entry from the
+      dictionary:
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">del</span> inventory[<span class="st">&#39;pears&#39;</span>]</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(inventory)</a>
-<a class="sourceLine" id="cb6-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre></div>
-<p>Or if we’re expecting more pears soon, we might just change the value associated with pears:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory[<span class="st">&#39;pears&#39;</span>] <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre>
+    </div>
+    <p>
+      Or if we’re expecting more pears soon, we might just change the value
+      associated with pears:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory[<span class="st">&#39;pears&#39;</span>] <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb7-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(inventory)</a>
-<a class="sourceLine" id="cb7-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre></div>
-<p>The <code>len</code> function also works on dictionaries; it returns the number of key-value pairs:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(inventory)</a>
-<a class="sourceLine" id="cb8-2" title="2"><span class="dv">4</span></a></code></pre></div>
-<p>The <code>in</code> operator returns <code>True</code> if the key appears in the dictionary and <code>False</code> otherwise:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;pears&#39;</span> <span class="kw">in</span> inventory</a>
+<a class="sourceLine" id="cb7-3" title="3">{<span class="st">&#39;apples&#39;</span>: <span class="dv">430</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">312</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">0</span>, <span class="st">&#39;oranges&#39;</span>: <span class="dv">525</span>}</a></code></pre>
+    </div>
+    <p>
+      The <code>len</code> function also works on dictionaries; it returns the
+      number of key-value pairs:
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">len</span>(inventory)</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="dv">4</span></a></code></pre>
+    </div>
+    <p>
+      The <code>in</code> operator returns <code>True</code> if the key appears
+      in the dictionary and <code>False</code> otherwise:
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;pears&#39;</span> <span class="kw">in</span> inventory</a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="va">True</span></a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="st">&#39;blueberries&#39;</span> <span class="kw">in</span> inventory</a>
-<a class="sourceLine" id="cb9-4" title="4"><span class="va">False</span></a></code></pre></div>
-<p>This operator can be very useful, since looking up a non-existant key in a dictionary causes a runtime error:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory[<span class="st">&#39;blueberries&#39;</span>]</a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="va">False</span></a></code></pre>
+    </div>
+    <p>
+      This operator can be very useful, since looking up a non-existant key in a
+      dictionary causes a runtime error:
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory[<span class="st">&#39;blueberries&#39;</span>]</a>
 <a class="sourceLine" id="cb10-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb10-3" title="3">  File <span class="st">&quot;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="pp">KeyError</span>: <span class="st">&#39;blueberries&#39;</span></a>
-<a class="sourceLine" id="cb10-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>To address this problem, the built-in <code>get</code> method provides a default value that is returned when a key is not found:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory.get(<span class="st">&#39;blueberries&#39;</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      To address this problem, the built-in <code>get</code> method provides a
+      default value that is returned when a key is not found:
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="op">&gt;&gt;&gt;</span> inventory.get(<span class="st">&#39;blueberries&#39;</span>, <span class="dv">0</span>)</a>
 <a class="sourceLine" id="cb11-2" title="2"><span class="dv">0</span></a>
 <a class="sourceLine" id="cb11-3" title="3"><span class="op">&gt;&gt;&gt;</span> inventory.get(<span class="st">&#39;bananas&#39;</span>, <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb11-4" title="4"><span class="dv">312</span></a></code></pre></div>
-<p>Python’s built-in <code>sorted</code> function returns a list of a dictionaries keys in sorted order:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sorted</span>(inventory)</a>
-<a class="sourceLine" id="cb12-2" title="2">[<span class="st">&#39;apples&#39;</span>, <span class="st">&#39;bananas&#39;</span>, <span class="st">&#39;oranges&#39;</span>, <span class="st">&#39;pears&#39;</span>]</a></code></pre></div>
-<h3 id="aliasing-and-copying">6.3. Aliasing and copying</h3>
-<p>Because dictionaries are mutable, you need to be aware of aliasing. Whenever two variables refer to the same object, changes to one affect the other.</p>
-<p>If you want to modify a dictionary and keep a copy of the original, use the <code>copy</code> method. For example, <code>opposites</code> is a dictionary that contains pairs of opposites:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="op">&gt;&gt;&gt;</span> opposites <span class="op">=</span> {<span class="st">&#39;up&#39;</span>: <span class="st">&#39;down&#39;</span>, <span class="st">&#39;right&#39;</span>: <span class="st">&#39;wrong&#39;</span>, <span class="st">&#39;true&#39;</span>: <span class="st">&#39;false&#39;</span>}</a>
+<a class="sourceLine" id="cb11-4" title="4"><span class="dv">312</span></a></code></pre>
+    </div>
+    <p>
+      Python’s built-in <code>sorted</code> function returns a list of a
+      dictionaries keys in sorted order:
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sorted</span>(inventory)</a>
+<a class="sourceLine" id="cb12-2" title="2">[<span class="st">&#39;apples&#39;</span>, <span class="st">&#39;bananas&#39;</span>, <span class="st">&#39;oranges&#39;</span>, <span class="st">&#39;pears&#39;</span>]</a></code></pre>
+    </div>
+    <h3 id="aliasing-and-copying">6.3. Aliasing and copying</h3>
+    <p>
+      Because dictionaries are mutable, you need to be aware of aliasing.
+      Whenever two variables refer to the same object, changes to one affect the
+      other.
+    </p>
+    <p>
+      If you want to modify a dictionary and keep a copy of the original, use
+      the <code>copy</code> method. For example, <code>opposites</code> is a
+      dictionary that contains pairs of opposites:
+    </p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="op">&gt;&gt;&gt;</span> opposites <span class="op">=</span> {<span class="st">&#39;up&#39;</span>: <span class="st">&#39;down&#39;</span>, <span class="st">&#39;right&#39;</span>: <span class="st">&#39;wrong&#39;</span>, <span class="st">&#39;true&#39;</span>: <span class="st">&#39;false&#39;</span>}</a>
 <a class="sourceLine" id="cb13-2" title="2"><span class="op">&gt;&gt;&gt;</span> an_alias <span class="op">=</span> opposites</a>
-<a class="sourceLine" id="cb13-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_copy <span class="op">=</span> opposites.copy()</a></code></pre></div>
-<p><code>an_alias</code> and <code>opposites</code> refer to the same object; <code>a_copy</code> refers to a fresh copy of the same dictionary. If we modify <code>alias</code>, <code>opposites</code> is also changed:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&gt;&gt;&gt;</span> an_alias[<span class="st">&#39;right&#39;</span>] <span class="op">=</span> <span class="st">&#39;left&#39;</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="op">&gt;&gt;&gt;</span> a_copy <span class="op">=</span> opposites.copy()</a></code></pre>
+    </div>
+    <p>
+      <code>an_alias</code> and <code>opposites</code> refer to the same object;
+      <code>a_copy</code> refers to a fresh copy of the same dictionary. If we
+      modify <code>alias</code>, <code>opposites</code> is also changed:
+    </p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&gt;&gt;&gt;</span> an_alias[<span class="st">&#39;right&#39;</span>] <span class="op">=</span> <span class="st">&#39;left&#39;</span></a>
 <a class="sourceLine" id="cb14-2" title="2"><span class="op">&gt;&gt;&gt;</span> opposites[<span class="st">&#39;right&#39;</span>]</a>
-<a class="sourceLine" id="cb14-3" title="3"><span class="co">&#39;left&#39;</span></a></code></pre></div>
-<p>If we modify <code>a_copy</code>, <code>opposites</code> is unchanged:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_copy[<span class="st">&#39;right&#39;</span>] <span class="op">=</span> <span class="st">&#39;privilege&#39;</span></a>
+<a class="sourceLine" id="cb14-3" title="3"><span class="co">&#39;left&#39;</span></a></code></pre>
+    </div>
+    <p>
+      If we modify <code>a_copy</code>, <code>opposites</code> is unchanged:
+    </p>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&gt;&gt;&gt;</span> a_copy[<span class="st">&#39;right&#39;</span>] <span class="op">=</span> <span class="st">&#39;privilege&#39;</span></a>
 <a class="sourceLine" id="cb15-2" title="2"><span class="op">&gt;&gt;&gt;</span> opposites[<span class="st">&#39;right&#39;</span>]</a>
-<a class="sourceLine" id="cb15-3" title="3"><span class="co">&#39;left&#39;</span></a></code></pre></div>
-<h3 id="sets">6.4. Sets</h3>
-<p>A <strong>set</strong> is a Python data type that holds an unordered collection of unique elements. It implements the <a href="http://en.wikipedia.org/wiki/Set_%28computer_science%29">set abstract data type</a> which is in turn based on the mathematical concept of a finite <a href="http://en.wikipedia.org/wiki/Set_%28mathematics%29">set</a>. As with dictionaries, Python uses curly braces to indicate a set, but with elements instead of key-value pairs:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> {<span class="st">&#39;apples&#39;</span>: <span class="dv">32</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">47</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">17</span>}</a>
+<a class="sourceLine" id="cb15-3" title="3"><span class="co">&#39;left&#39;</span></a></code></pre>
+    </div>
+    <h3 id="sets">6.4. Sets</h3>
+    <p>
+      A <strong>set</strong> is a Python data type that holds an unordered
+      collection of unique elements. It implements the
+      <a href="http://en.wikipedia.org/wiki/Set_%28computer_science%29"
+        >set abstract data type</a
+      >
+      which is in turn based on the mathematical concept of a finite
+      <a href="http://en.wikipedia.org/wiki/Set_%28mathematics%29">set</a>. As
+      with dictionaries, Python uses curly braces to indicate a set, but with
+      elements instead of key-value pairs:
+    </p>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> {<span class="st">&#39;apples&#39;</span>: <span class="dv">32</span>, <span class="st">&#39;bananas&#39;</span>: <span class="dv">47</span>, <span class="st">&#39;pears&#39;</span>: <span class="dv">17</span>}</a>
 <a class="sourceLine" id="cb16-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(what_am_i)</a>
 <a class="sourceLine" id="cb16-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;dict&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb16-4" title="4"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> {<span class="st">&#39;apples&#39;</span>, <span class="st">&#39;bananas&#39;</span>, <span class="st">&#39;pears&#39;</span>}</a>
 <a class="sourceLine" id="cb16-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(what_am_i)</a>
-<a class="sourceLine" id="cb16-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a></code></pre></div>
-<p>To create an empty set, you can not use empty curly braces.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb16-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a></code></pre>
+    </div>
+    <p>To create an empty set, you can not use empty curly braces.</p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> {}</a>
 <a class="sourceLine" id="cb17-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(what_am_i)</a>
 <a class="sourceLine" id="cb17-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;dict&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb17-4" title="4"><span class="op">&gt;&gt;&gt;</span> what_am_i <span class="op">=</span> <span class="bu">set</span>()</a>
 <a class="sourceLine" id="cb17-5" title="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(what_am_i)</a>
 <a class="sourceLine" id="cb17-6" title="6"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;set&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb17-7" title="7"><span class="op">&gt;&gt;&gt;</span> what_am_i</a>
-<a class="sourceLine" id="cb17-8" title="8"><span class="bu">set</span>()</a></code></pre></div>
-<p>Instead, use the <code>set</code> type converter function without an argument.</p>
-<p>Sets contain a unique collection of elements of any type. You can add to a set using its add method, and test for membership with the <code>in</code> operator.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="op">&gt;&gt;&gt;</span> set_of_numbers <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</a>
+<a class="sourceLine" id="cb17-8" title="8"><span class="bu">set</span>()</a></code></pre>
+    </div>
+    <p>
+      Instead, use the <code>set</code> type converter function without an
+      argument.
+    </p>
+    <p>
+      Sets contain a unique collection of elements of any type. You can add to a
+      set using its add method, and test for membership with the
+      <code>in</code> operator.
+    </p>
+    <div class="sourceCode" id="cb18">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="op">&gt;&gt;&gt;</span> set_of_numbers <span class="op">=</span> {<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</a>
 <a class="sourceLine" id="cb18-2" title="2"><span class="op">&gt;&gt;&gt;</span> set_of_numbers</a>
 <a class="sourceLine" id="cb18-3" title="3">{<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>}</a>
 <a class="sourceLine" id="cb18-4" title="4"><span class="op">&gt;&gt;&gt;</span> set_of_numbers.add(<span class="dv">5</span>)</a>
@@ -182,16 +485,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb18-7" title="7"><span class="op">&gt;&gt;&gt;</span> <span class="dv">3</span> <span class="kw">in</span> set_of_numbers</a>
 <a class="sourceLine" id="cb18-8" title="8"><span class="va">True</span></a>
 <a class="sourceLine" id="cb18-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="dv">6</span> <span class="kw">in</span> set_of_numbers</a>
-<a class="sourceLine" id="cb18-10" title="10"><span class="va">False</span></a></code></pre></div>
-<p>Since sets hold unique collections of elements, you can use the <code>set</code> type conversion function to remove duplicates from a list.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> list_of_numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">11</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">8</span>]</a>
+<a class="sourceLine" id="cb18-10" title="10"><span class="va">False</span></a></code></pre>
+    </div>
+    <p>
+      Since sets hold unique collections of elements, you can use the
+      <code>set</code> type conversion function to remove duplicates from a
+      list.
+    </p>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> list_of_numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">11</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">8</span>]</a>
 <a class="sourceLine" id="cb19-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">set</span>(list_of_numbers)</a>
-<a class="sourceLine" id="cb19-3" title="3">{<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">11</span>}</a></code></pre></div>
-<h3 id="formatting-strings">6.5. Formatting Strings</h3>
-<p>This book is aimed at aspiring <a href="http://en.wikipedia.org/wiki/Web_developers">web developers</a>, so much of our focus will be on creating dynamic <a href="http://en.wikipedia.org/wiki/Web_page">web pages</a> using Python. Web pages are stored in <a href="http://en.wikipedia.org/wiki/Text_file">text files</a>, which are essentially files containing a string of text. The ability to process and format text is quite important to us. That’s what this section is about.</p>
-<h3 id="the-format-method-for-strings">6.6. The <code>format</code> method for strings</h3>
-<p>The easiest and most powerful way to format a string in Python 3 is to use the <code>format</code> method.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;His name is </span><span class="sc">{0}</span><span class="st">!&quot;</span>.<span class="bu">format</span>(<span class="st">&quot;Arthur&quot;</span>)</a>
+<a class="sourceLine" id="cb19-3" title="3">{<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">8</span>, <span class="dv">11</span>}</a></code></pre>
+    </div>
+    <h3 id="formatting-strings">6.5. Formatting Strings</h3>
+    <p>
+      This book is aimed at aspiring
+      <a href="http://en.wikipedia.org/wiki/Web_developers">web developers</a>,
+      so much of our focus will be on creating dynamic
+      <a href="http://en.wikipedia.org/wiki/Web_page">web pages</a> using
+      Python. Web pages are stored in
+      <a href="http://en.wikipedia.org/wiki/Text_file">text files</a>, which are
+      essentially files containing a string of text. The ability to process and
+      format text is quite important to us. That’s what this section is about.
+    </p>
+    <h3 id="the-format-method-for-strings">
+      6.6. The <code>format</code> method for strings
+    </h3>
+    <p>
+      The easiest and most powerful way to format a string in Python 3 is to use
+      the <code>format</code> method.
+    </p>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;His name is </span><span class="sc">{0}</span><span class="st">!&quot;</span>.<span class="bu">format</span>(<span class="st">&quot;Arthur&quot;</span>)</a>
 <a class="sourceLine" id="cb20-2" title="2"><span class="co">&#39;His name is Arthur!&#39;</span></a>
 <a class="sourceLine" id="cb20-3" title="3"><span class="op">&gt;&gt;&gt;</span> name <span class="op">=</span> <span class="st">&quot;Alice&quot;</span></a>
 <a class="sourceLine" id="cb20-4" title="4"><span class="op">&gt;&gt;&gt;</span> age <span class="op">=</span> <span class="dv">10</span></a>
@@ -200,17 +529,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb20-7" title="7"><span class="op">&gt;&gt;&gt;</span> n1 <span class="op">=</span> <span class="dv">4</span></a>
 <a class="sourceLine" id="cb20-8" title="8"><span class="op">&gt;&gt;&gt;</span> n2 <span class="op">=</span> <span class="dv">5</span></a>
 <a class="sourceLine" id="cb20-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;2 ** 10 = </span><span class="sc">{0}</span><span class="st"> and </span><span class="sc">{1}</span><span class="st"> * </span><span class="sc">{2}</span><span class="st"> = </span><span class="sc">{3:f}</span><span class="st">&quot;</span>.<span class="bu">format</span>(<span class="dv">2</span> <span class="op">**</span> <span class="dv">10</span>, n1, n2, n1 <span class="op">*</span> n2)</a>
-<a class="sourceLine" id="cb20-10" title="10"><span class="co">&#39;2 ** 10 = 1024 and 4 * 5 = 20.000000&#39;</span></a></code></pre></div>
-<p>The key idea is that one provides a <em>formatter string</em> which contains <em>placeholder fields</em>, <code>... {0} ... {1} ... {2} ...</code> etc. The <strong>format method</strong> of a string uses the numbers as indexes into its arguments, and substitutes the appropriate argument into each placeholder field.</p>
-<p>Each of the placeholders can also contain a <strong>format specification</strong> — it is always introduced by the <code>:</code> symbol. This can control things like</p>
-<ul>
-<li>whether the field is aligned left <code>&lt;</code>, centered <code>^</code>, or right <code>&gt;</code></li>
-<li>the width allocated to the field within the result string (a number like <code>10</code>)</li>
-<li>the type of conversion (we’ll initially only force conversion to float, <code>f</code>, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using <code>x</code>)</li>
-<li>if the type conversion is a float, you can also specify how many decimal places are wanted (typically, <code>.2f</code> is useful for working with currencies to two decimal places.)</li>
-</ul>
-<p>You can have multiple placeholders indexing the same argument, or perhaps even have extra arguments that are not referenced at all:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">letter <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb20-10" title="10"><span class="co">&#39;2 ** 10 = 1024 and 4 * 5 = 20.000000&#39;</span></a></code></pre>
+    </div>
+    <p>
+      The key idea is that one provides a <em>formatter string</em> which
+      contains <em>placeholder fields</em>,
+      <code>... {0} ... {1} ... {2} ...</code> etc. The
+      <strong>format method</strong> of a string uses the numbers as indexes
+      into its arguments, and substitutes the appropriate argument into each
+      placeholder field.
+    </p>
+    <p>
+      Each of the placeholders can also contain a
+      <strong>format specification</strong> — it is always introduced by the
+      <code>:</code> symbol. This can control things like
+    </p>
+    <ul>
+      <li>
+        whether the field is aligned left <code>&lt;</code>, centered
+        <code>^</code>, or right <code>&gt;</code>
+      </li>
+      <li>
+        the width allocated to the field within the result string (a number like
+        <code>10</code>)
+      </li>
+      <li>
+        the type of conversion (we’ll initially only force conversion to float,
+        <code>f</code>, as we did in line 11 of the code above, or perhaps we’ll
+        ask integer numbers to be converted to hexadecimal using <code>x</code>)
+      </li>
+      <li>
+        if the type conversion is a float, you can also specify how many decimal
+        places are wanted (typically, <code>.2f</code> is useful for working
+        with currencies to two decimal places.)
+      </li>
+    </ul>
+    <p>
+      You can have multiple placeholders indexing the same argument, or perhaps
+      even have extra arguments that are not referenced at all:
+    </p>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">letter <span class="op">=</span> <span class="st">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb21-2" title="2"><span class="st">Dear </span><span class="sc">{0}</span><span class="st"> </span><span class="sc">{2}</span><span class="st">,</span></a>
 <a class="sourceLine" id="cb21-3" title="3"></a>
 <a class="sourceLine" id="cb21-4" title="4"><span class="sc">{0}</span><span class="st">, I have an interesting money-making proposition for you!</span></a>
@@ -219,9 +580,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb21-7" title="7"><span class="st">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb21-8" title="8"></a>
 <a class="sourceLine" id="cb21-9" title="9"><span class="bu">print</span>(letter.<span class="bu">format</span>(<span class="st">&quot;Paris&quot;</span>, <span class="st">&quot;Whitney&quot;</span>, <span class="st">&quot;Hilton&quot;</span>))</a>
-<a class="sourceLine" id="cb21-10" title="10"><span class="bu">print</span>(letter.<span class="bu">format</span>(<span class="st">&quot;Bill&quot;</span>, <span class="st">&quot;Henry&quot;</span>, <span class="st">&quot;Gates&quot;</span>))</a></code></pre></div>
-<p>This produces the following:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">Dear Paris Hilton,</a>
+<a class="sourceLine" id="cb21-10" title="10"><span class="bu">print</span>(letter.<span class="bu">format</span>(<span class="st">&quot;Bill&quot;</span>, <span class="st">&quot;Henry&quot;</span>, <span class="st">&quot;Gates&quot;</span>))</a></code></pre>
+    </div>
+    <p>This produces the following:</p>
+    <div class="sourceCode" id="cb22">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1">Dear Paris Hilton,</a>
 <a class="sourceLine" id="cb22-2" title="2"></a>
 <a class="sourceLine" id="cb22-3" title="3">Paris, I have an interesting money<span class="op">-</span>making proposition <span class="cf">for</span> you<span class="op">!</span></a>
 <a class="sourceLine" id="cb22-4" title="4">If you deposit $<span class="dv">10</span> million into my bank account, I can</a>
@@ -231,24 +596,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb22-8" title="8"></a>
 <a class="sourceLine" id="cb22-9" title="9">Bill, I have an interesting money<span class="op">-</span>making proposition <span class="cf">for</span> you<span class="op">!</span></a>
 <a class="sourceLine" id="cb22-10" title="10">If you deposit $<span class="dv">10</span> million into my bank account I can,</a>
-<a class="sourceLine" id="cb22-11" title="11">double your money ...</a></code></pre></div>
-<p>As you might expect, you’ll get an index error if your placeholders refer to arguments that you do not provide:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;hello </span><span class="sc">{3}</span><span class="st">&quot;</span>.<span class="bu">format</span>(<span class="st">&quot;Dave&quot;</span>)</a>
+<a class="sourceLine" id="cb22-11" title="11">double your money ...</a></code></pre>
+    </div>
+    <p>
+      As you might expect, you’ll get an index error if your placeholders refer
+      to arguments that you do not provide:
+    </p>
+    <div class="sourceCode" id="cb23">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;hello </span><span class="sc">{3}</span><span class="st">&quot;</span>.<span class="bu">format</span>(<span class="st">&quot;Dave&quot;</span>)</a>
 <a class="sourceLine" id="cb23-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb23-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb23-4" title="4"><span class="pp">IndexError</span>: <span class="bu">tuple</span> index out of <span class="bu">range</span></a></code></pre></div>
-<p>In addition to positional arguments in format strings, <em>named arguments</em> are also supported:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="op">&gt;&gt;&gt;</span> s <span class="op">=</span> <span class="st">&quot;&#39;</span><span class="sc">{cat}</span><span class="st">&#39;ll </span><span class="sc">{verb1}</span><span class="st"> me very much </span><span class="sc">{time}</span><span class="st">, I should </span><span class="sc">{verb2}</span><span class="st">!&#39;&quot;</span></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="pp">IndexError</span>: <span class="bu">tuple</span> index out of <span class="bu">range</span></a></code></pre>
+    </div>
+    <p>
+      In addition to positional arguments in format strings,
+      <em>named arguments</em> are also supported:
+    </p>
+    <div class="sourceCode" id="cb24">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="op">&gt;&gt;&gt;</span> s <span class="op">=</span> <span class="st">&quot;&#39;</span><span class="sc">{cat}</span><span class="st">&#39;ll </span><span class="sc">{verb1}</span><span class="st"> me very much </span><span class="sc">{time}</span><span class="st">, I should </span><span class="sc">{verb2}</span><span class="st">!&#39;&quot;</span></a>
 <a class="sourceLine" id="cb24-2" title="2"><span class="op">&gt;&gt;&gt;</span> s.<span class="bu">format</span>(verb1<span class="op">=</span><span class="st">&quot;miss&quot;</span>, cat<span class="op">=</span><span class="st">&quot;Dinah&quot;</span>, time<span class="op">=</span><span class="st">&quot;to-night&quot;</span>, verb2<span class="op">=</span><span class="st">&quot;think&quot;</span>)</a>
-<a class="sourceLine" id="cb24-3" title="3"><span class="co">&quot;&#39;Dinah&#39;ll miss me very much to-night, I should think!&#39;&quot;</span></a></code></pre></div>
-<p>Notice that the order of the arguments to the <code>format</code> method example doesn’t correspond with the order they appear in the format string. These are keywords, as with dictionaries, so their order is not relevant.</p>
-<p>Old style format strings</p>
-<p>Earlier versions of Python used a cryptic way to format strings. It is considered deprecated and will eventually disappear from the language.</p>
-<p>While we won’t use it in this book, you will still see it around in lots of existing Python code, so it is good to be aware of it.</p>
-<p>The syntax for the old string formatting operation looks like this:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="co">&quot;&lt;FORMAT&gt;&quot;</span> <span class="op">%</span> (<span class="op">&lt;</span>VALUES<span class="op">&gt;</span>)</a></code></pre></div>
-<p>To see how this works, here are a few examples:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;His name is </span><span class="sc">%s</span><span class="st">.&quot;</span>  <span class="op">%</span> <span class="st">&quot;Arthur&quot;</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="co">&quot;&#39;Dinah&#39;ll miss me very much to-night, I should think!&#39;&quot;</span></a></code></pre>
+    </div>
+    <p>
+      Notice that the order of the arguments to the <code>format</code> method
+      example doesn’t correspond with the order they appear in the format
+      string. These are keywords, as with dictionaries, so their order is not
+      relevant.
+    </p>
+    <p>Old style format strings</p>
+    <p>
+      Earlier versions of Python used a cryptic way to format strings. It is
+      considered deprecated and will eventually disappear from the language.
+    </p>
+    <p>
+      While we won’t use it in this book, you will still see it around in lots
+      of existing Python code, so it is good to be aware of it.
+    </p>
+    <p>The syntax for the old string formatting operation looks like this:</p>
+    <div class="sourceCode" id="cb25">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="co">&quot;&lt;FORMAT&gt;&quot;</span> <span class="op">%</span> (<span class="op">&lt;</span>VALUES<span class="op">&gt;</span>)</a></code></pre>
+    </div>
+    <p>To see how this works, here are a few examples:</p>
+    <div class="sourceCode" id="cb26">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;His name is </span><span class="sc">%s</span><span class="st">.&quot;</span>  <span class="op">%</span> <span class="st">&quot;Arthur&quot;</span></a>
 <a class="sourceLine" id="cb26-2" title="2"><span class="co">&#39;His name is Arthur.&#39;</span></a>
 <a class="sourceLine" id="cb26-3" title="3"><span class="op">&gt;&gt;&gt;</span> name <span class="op">=</span> <span class="st">&quot;Alice&quot;</span></a>
 <a class="sourceLine" id="cb26-4" title="4"><span class="op">&gt;&gt;&gt;</span> age <span class="op">=</span> <span class="dv">10</span></a>
@@ -258,16 +656,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb26-8" title="8"><span class="op">&gt;&gt;&gt;</span> n2 <span class="op">=</span> <span class="dv">5</span></a>
 <a class="sourceLine" id="cb26-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="st">&quot;2**10 = </span><span class="sc">%d</span><span class="st"> and </span><span class="sc">%d</span><span class="st"> * </span><span class="sc">%d</span><span class="st"> = </span><span class="sc">%f</span><span class="st">&quot;</span> <span class="op">%</span> (<span class="dv">2</span><span class="op">**</span><span class="dv">10</span>, n1, n2, n1 <span class="op">*</span> n2)</a>
 <a class="sourceLine" id="cb26-10" title="10"><span class="co">&#39;2 ** 10 = 1024 and 4 * 5 = 20.000000&#39;</span></a>
-<a class="sourceLine" id="cb26-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<h3 id="files">6.7. Files</h3>
-<h4 id="about-files">6.7.1. About files</h4>
-<p>While a program is running, its data is stored in <a href="http://en.wikipedia.org/wiki/Random_access_memory">random access memory</a> (RAM). RAM is extremely fast, but it is also <strong>volatile</strong>, which means that when the program ends, or the computer shuts down, data in RAM disappears. To make data available the next time you turn on your computer and start your program, you have to write it to a <strong>non-volatile</strong> storage medium, such a hard drive, usb drive, or CD-RW.</p>
-<p>Data on non-volatile storage media is stored in named locations on the media called <a href="http://en.wikipedia.org/wiki/Computer_file">files</a>. By reading and writing files, programs can save information between program runs. A file is a block of data stored in the <a href="http://en.wikipedia.org/wiki/File_system">file system</a> of the computer’s <a href="http://en.wikipedia.org/wiki/Operating_system">operating system</a>.</p>
-<p>To use a file, you have to open it. When you’re done, you have to close it. When you open the file, you have to decide ahead of time whether you want to read data from the file or write data to it. If you plan to write data to the file you have to choose between starting a new version of the file or writing data at the end of what was already there. This second option for writing to the file is called <strong>appending</strong>. The first option destroys any previously existing data in the file.</p>
-<h4 id="the-open-function">6.7.2. The <code>open</code> function</h4>
-<p>The <code>open</code> function takes two arguments. The first is the name of the file, and the second is the <strong>mode</strong>. Mode <code>'w'</code> means that we are opening the file for writing. Mode <code>'r'</code> means reading, and mode <code>'a'</code> means appending.</p>
-<p>Let’s begin with an example that shows these three modes in operation:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="op">&gt;&gt;&gt;</span> myfile <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;w&#39;</span>)</a>
+<a class="sourceLine" id="cb26-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <h3 id="files">6.7. Files</h3>
+    <h4 id="about-files">6.7.1. About files</h4>
+    <p>
+      While a program is running, its data is stored in
+      <a href="http://en.wikipedia.org/wiki/Random_access_memory"
+        >random access memory</a
+      >
+      (RAM). RAM is extremely fast, but it is also <strong>volatile</strong>,
+      which means that when the program ends, or the computer shuts down, data
+      in RAM disappears. To make data available the next time you turn on your
+      computer and start your program, you have to write it to a
+      <strong>non-volatile</strong> storage medium, such a hard drive, usb
+      drive, or CD-RW.
+    </p>
+    <p>
+      Data on non-volatile storage media is stored in named locations on the
+      media called
+      <a href="http://en.wikipedia.org/wiki/Computer_file">files</a>. By reading
+      and writing files, programs can save information between program runs. A
+      file is a block of data stored in the
+      <a href="http://en.wikipedia.org/wiki/File_system">file system</a> of the
+      computer’s
+      <a href="http://en.wikipedia.org/wiki/Operating_system"
+        >operating system</a
+      >.
+    </p>
+    <p>
+      To use a file, you have to open it. When you’re done, you have to close
+      it. When you open the file, you have to decide ahead of time whether you
+      want to read data from the file or write data to it. If you plan to write
+      data to the file you have to choose between starting a new version of the
+      file or writing data at the end of what was already there. This second
+      option for writing to the file is called <strong>appending</strong>. The
+      first option destroys any previously existing data in the file.
+    </p>
+    <h4 id="the-open-function">6.7.2. The <code>open</code> function</h4>
+    <p>
+      The <code>open</code> function takes two arguments. The first is the name
+      of the file, and the second is the <strong>mode</strong>. Mode
+      <code>'w'</code> means that we are opening the file for writing. Mode
+      <code>'r'</code> means reading, and mode <code>'a'</code> means appending.
+    </p>
+    <p>
+      Let’s begin with an example that shows these three modes in operation:
+    </p>
+    <div class="sourceCode" id="cb27">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="op">&gt;&gt;&gt;</span> myfile <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;w&#39;</span>)</a>
 <a class="sourceLine" id="cb27-2" title="2"><span class="op">&gt;&gt;&gt;</span> myfile.write(<span class="st">&#39;My first file written from Python</span><span class="ch">\n</span><span class="st">&#39;</span>)</a>
 <a class="sourceLine" id="cb27-3" title="3"><span class="dv">34</span></a>
 <a class="sourceLine" id="cb27-4" title="4"><span class="op">&gt;&gt;&gt;</span> myfile.write(<span class="st">&#39;---------------------------------</span><span class="ch">\n</span><span class="st">&#39;</span>)</a>
@@ -281,14 +720,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb27-12" title="12"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(contents)</a>
 <a class="sourceLine" id="cb27-13" title="13">My first <span class="bu">file</span> written <span class="im">from</span> Python</a>
 <a class="sourceLine" id="cb27-14" title="14"><span class="op">---------------------------------</span></a>
-<a class="sourceLine" id="cb27-15" title="15">Hello, world<span class="op">!</span></a></code></pre></div>
-<p>Opening a file creates what we call a <a href="http://en.wikipedia.org/wiki/File_descriptor">file descriptor</a>. In this example, the variable <code>myfile</code> refers to the new descriptor object. Our program calls methods on the descriptor, and this makes changes to the actual file which is located in non-volatile storage.</p>
-<p>The first line opens the <code>test.txt</code> for writing. If there is no file named <code>test.txt</code> on the disk, it will be created. If there already is one, it will be replaced by the file we are writing and any previous data in it will be lost.</p>
-<p>To put data in the file we invoke the <code>write</code> method on the file descriptor. We do this three times in the example above, but in bigger programs, the three separate calls to <code>write</code> will usually be replaced by a loop that writes many more lines into the file. The <code>write</code> method returns the number of <a href="http://en.wikipedia.org/wiki/Byte">bytes</a> (characters) written to the file.</p>
-<p>Closing the file handle tells the system that we are done writing and makes the disk file available for reading by other programs (or by our own program).</p>
-<p>We finish this example by openning <code>test.txt</code> for reading. We then call the <code>read</code> method, assigning the contents of the file, which is a string, to a variable named <code>contents</code>, and finally print <code>contents</code> to see that it is indeed what we wrote to the file previously.</p>
-<p>If we want to add to an already existing file, use the <em>append</em> mode.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="op">&gt;&gt;&gt;</span> myfile <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;a&#39;</span>)</a>
+<a class="sourceLine" id="cb27-15" title="15">Hello, world<span class="op">!</span></a></code></pre>
+    </div>
+    <p>
+      Opening a file creates what we call a
+      <a href="http://en.wikipedia.org/wiki/File_descriptor">file descriptor</a
+      >. In this example, the variable <code>myfile</code> refers to the new
+      descriptor object. Our program calls methods on the descriptor, and this
+      makes changes to the actual file which is located in non-volatile storage.
+    </p>
+    <p>
+      The first line opens the <code>test.txt</code> for writing. If there is no
+      file named <code>test.txt</code> on the disk, it will be created. If there
+      already is one, it will be replaced by the file we are writing and any
+      previous data in it will be lost.
+    </p>
+    <p>
+      To put data in the file we invoke the <code>write</code> method on the
+      file descriptor. We do this three times in the example above, but in
+      bigger programs, the three separate calls to <code>write</code> will
+      usually be replaced by a loop that writes many more lines into the file.
+      The <code>write</code> method returns the number of
+      <a href="http://en.wikipedia.org/wiki/Byte">bytes</a> (characters) written
+      to the file.
+    </p>
+    <p>
+      Closing the file handle tells the system that we are done writing and
+      makes the disk file available for reading by other programs (or by our own
+      program).
+    </p>
+    <p>
+      We finish this example by openning <code>test.txt</code> for reading. We
+      then call the <code>read</code> method, assigning the contents of the
+      file, which is a string, to a variable named <code>contents</code>, and
+      finally print <code>contents</code> to see that it is indeed what we wrote
+      to the file previously.
+    </p>
+    <p>
+      If we want to add to an already existing file, use the
+      <em>append</em> mode.
+    </p>
+    <div class="sourceCode" id="cb28">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="op">&gt;&gt;&gt;</span> myfile <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;a&#39;</span>)</a>
 <a class="sourceLine" id="cb28-2" title="2"><span class="op">&gt;&gt;&gt;</span> myfile.write(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">Ooops, I forgot to add this line ;-)&#39;</span>)</a>
 <a class="sourceLine" id="cb28-3" title="3"><span class="dv">37</span></a>
 <a class="sourceLine" id="cb28-4" title="4"><span class="op">&gt;&gt;&gt;</span> myfile.close()</a>
@@ -298,27 +773,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb28-8" title="8"><span class="op">---------------------------------</span></a>
 <a class="sourceLine" id="cb28-9" title="9">Hello, world<span class="op">!</span></a>
 <a class="sourceLine" id="cb28-10" title="10">Ooops, I forgot to add this line <span class="op">;-</span>)</a>
-<a class="sourceLine" id="cb28-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<h3 id="opening-a-file-that-doesnt-exist">6.8. Opening a file that doesn’t exist</h3>
-<p>If we try to open a file that doesn’t exist, we get an error:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="op">&gt;&gt;&gt;</span> f <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;wharrah.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
+<a class="sourceLine" id="cb28-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <h3 id="opening-a-file-that-doesnt-exist">
+      6.8. Opening a file that doesn’t exist
+    </h3>
+    <p>If we try to open a file that doesn’t exist, we get an error:</p>
+    <div class="sourceCode" id="cb29">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="op">&gt;&gt;&gt;</span> f <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;wharrah.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
 <a class="sourceLine" id="cb29-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb29-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb29-4" title="4"><span class="pp">IOError</span>: [Errno <span class="dv">2</span>] No such <span class="bu">file</span> <span class="kw">or</span> directory: <span class="st">&#39;wharrah.txt&#39;</span></a>
-<a class="sourceLine" id="cb29-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>There is nothing wrong with the syntax of the line that resulted in the error. The error occurred because the file did not exist. Errors like these are called <strong>exceptions</strong>. Most modern programming languages provide support for dealing with situations like this. The process is called <a href="http://en.wikipedia.org/wiki/Exception_handling">exception handling</a>.</p>
-<p>In Python, exceptions are handled with the <code>try ... except</code> statement.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="cf">try</span>:</a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      There is nothing wrong with the syntax of the line that resulted in the
+      error. The error occurred because the file did not exist. Errors like
+      these are called <strong>exceptions</strong>. Most modern programming
+      languages provide support for dealing with situations like this. The
+      process is called
+      <a href="http://en.wikipedia.org/wiki/Exception_handling"
+        >exception handling</a
+      >.
+    </p>
+    <p>
+      In Python, exceptions are handled with the
+      <code>try ... except</code> statement.
+    </p>
+    <div class="sourceCode" id="cb30">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="cf">try</span>:</a>
 <a class="sourceLine" id="cb30-2" title="2">    f <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;thefile.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
 <a class="sourceLine" id="cb30-3" title="3">    mydata <span class="op">=</span> f.read()</a>
 <a class="sourceLine" id="cb30-4" title="4">    f.close()</a>
 <a class="sourceLine" id="cb30-5" title="5"><span class="cf">except</span> <span class="pp">IOError</span>:</a>
-<a class="sourceLine" id="cb30-6" title="6">    mydata <span class="op">=</span> <span class="st">&#39;&#39;</span></a></code></pre></div>
-<p>In this example we <em>try</em> to open the data file for reading. If it succeeds, we use the <code>read()</code> method to read the file contents as a string into the variable <code>mydata</code> and close the file. If an <code>IOError</code> exception occurs, we still create <code>mydata</code> as an empty string and continue on with the program.</p>
-<h3 id="reading-data-from-files">6.9. Reading data from files</h3>
-<p>Python file descriptors have three methods for reading in data from a file. We’ve already seen the <code>read()</code> method, which returns the entire contents of the file as a single string. For really big files this may not be what you want.</p>
-<p>The <code>readline()</code> method returns one <a href="http://en.wikipedia.org/wiki/Line_%28text_file%29">line</a> of the file at a time. Each time you call it <code>readline()</code> returns the next line. Calls made to <code>readline()</code> after reaching the end of the file return an empty string (<code>''</code>).</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1">f <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
+<a class="sourceLine" id="cb30-6" title="6">    mydata <span class="op">=</span> <span class="st">&#39;&#39;</span></a></code></pre>
+    </div>
+    <p>
+      In this example we <em>try</em> to open the data file for reading. If it
+      succeeds, we use the <code>read()</code> method to read the file contents
+      as a string into the variable <code>mydata</code> and close the file. If
+      an <code>IOError</code> exception occurs, we still create
+      <code>mydata</code> as an empty string and continue on with the program.
+    </p>
+    <h3 id="reading-data-from-files">6.9. Reading data from files</h3>
+    <p>
+      Python file descriptors have three methods for reading in data from a
+      file. We’ve already seen the <code>read()</code> method, which returns the
+      entire contents of the file as a single string. For really big files this
+      may not be what you want.
+    </p>
+    <p>
+      The <code>readline()</code> method returns one
+      <a href="http://en.wikipedia.org/wiki/Line_%28text_file%29">line</a> of
+      the file at a time. Each time you call it <code>readline()</code> returns
+      the next line. Calls made to <code>readline()</code> after reaching the
+      end of the file return an empty string (<code>''</code>).
+    </p>
+    <div class="sourceCode" id="cb31">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1">f <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;test.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
 <a class="sourceLine" id="cb31-2" title="2"><span class="cf">while</span> <span class="va">True</span>:                             <span class="co"># keep reading forever</span></a>
 <a class="sourceLine" id="cb31-3" title="3">    theline <span class="op">=</span> f.readline()              <span class="co"># try to read next line</span></a>
 <a class="sourceLine" id="cb31-4" title="4">    <span class="cf">if</span> <span class="bu">len</span>(theline) <span class="op">==</span> <span class="dv">0</span>:               <span class="co"># if there are no more lines</span></a>
@@ -327,12 +845,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb31-7" title="7">    <span class="co"># Now process the line we&#39;ve just read</span></a>
 <a class="sourceLine" id="cb31-8" title="8">    <span class="bu">print</span>(theline, end<span class="op">=</span><span class="st">&#39;&#39;</span>)</a>
 <a class="sourceLine" id="cb31-9" title="9"></a>
-<a class="sourceLine" id="cb31-10" title="10">f.close()</a></code></pre></div>
-<p>This is a handy pattern for our toolbox. In bigger programs, we’d squeeze more extensive logic into the body of the loop at line 8 — for example, if each line of the file contained the name and email address of one of our friends, perhaps we’d split the line into some pieces and call a function to send the friend a party invitation.</p>
-<p>On line 8 we suppress the newline character that <code>print</code> usually appends to our strings. Why? This is because the string already has its own newline: the <code>readline</code> method in line 3 returns everything up to <em>and including</em> the newline character. This also explains the end-of-file detection logic: when there are no more lines to be read from the file, <code>readline</code> returns an empty string — one that does not even have a newline at the end, hence it’s length is 0.</p>
-<h4 id="turning-a-file-into-a-list-of-lines">6.9.1. Turning a file into a list of lines</h4>
-<p>It is often useful to fetch data from a disk file and turn it into a list of lines. Suppose we have a file containing our friends and their email addresses, one per line in the file. But we’d like the lines sorted into alphabetical order. A good plan is to read everything into a list of lines, then sort the list, and then write the sorted list back to another file:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1">f1 <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;friends.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
+<a class="sourceLine" id="cb31-10" title="10">f.close()</a></code></pre>
+    </div>
+    <p>
+      This is a handy pattern for our toolbox. In bigger programs, we’d squeeze
+      more extensive logic into the body of the loop at line 8 — for example, if
+      each line of the file contained the name and email address of one of our
+      friends, perhaps we’d split the line into some pieces and call a function
+      to send the friend a party invitation.
+    </p>
+    <p>
+      On line 8 we suppress the newline character that
+      <code>print</code> usually appends to our strings. Why? This is because
+      the string already has its own newline: the <code>readline</code> method
+      in line 3 returns everything up to <em>and including</em> the newline
+      character. This also explains the end-of-file detection logic: when there
+      are no more lines to be read from the file, <code>readline</code> returns
+      an empty string — one that does not even have a newline at the end, hence
+      it’s length is 0.
+    </p>
+    <h4 id="turning-a-file-into-a-list-of-lines">
+      6.9.1. Turning a file into a list of lines
+    </h4>
+    <p>
+      It is often useful to fetch data from a disk file and turn it into a list
+      of lines. Suppose we have a file containing our friends and their email
+      addresses, one per line in the file. But we’d like the lines sorted into
+      alphabetical order. A good plan is to read everything into a list of
+      lines, then sort the list, and then write the sorted list back to another
+      file:
+    </p>
+    <div class="sourceCode" id="cb32">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1">f1 <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;friends.txt&#39;</span>, <span class="st">&#39;r&#39;</span>)</a>
 <a class="sourceLine" id="cb32-2" title="2">friends_list <span class="op">=</span> f.readlines()</a>
 <a class="sourceLine" id="cb32-3" title="3">f1.close()</a>
 <a class="sourceLine" id="cb32-4" title="4"></a>
@@ -341,13 +887,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb32-7" title="7">f2 <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;sortedfriends.txt&#39;</span>, <span class="st">&#39;w&#39;</span>)</a>
 <a class="sourceLine" id="cb32-8" title="8"><span class="cf">for</span> friend <span class="kw">in</span> friends_list:</a>
 <a class="sourceLine" id="cb32-9" title="9">    f2.write(v)</a>
-<a class="sourceLine" id="cb32-10" title="10">f2.close()</a></code></pre></div>
-<p>The <code>readlines</code> method in line 2 reads all the lines and returns a list of the strings.</p>
-<p>We could have used the template from the previous section to read each line one-at-a-time, and to build up the list ourselves, but it is a lot easier to use the method that the Python implementors gave us!</p>
-<h4 id="an-example">6.9.2. An example</h4>
-<p>Many useful line-processing programs will read a text file line-at-a-time and do some minor processing as they write the lines to an output file. They might number the lines in the output file, or insert extra blank lines after every 60 lines to make it convenient for printing on sheets of paper, or extract some specific columns only from each line in the source file, or only print lines that contain a specific substring. We call this kind of program a <strong>filter</strong>.</p>
-<p>Here is a filter that copies one file to another, omitting any lines that begin with <code>#</code>:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1">infile <span class="op">=</span> <span class="bu">open</span>(oldfile, <span class="st">&#39;r&#39;</span>)</a>
+<a class="sourceLine" id="cb32-10" title="10">f2.close()</a></code></pre>
+    </div>
+    <p>
+      The <code>readlines</code> method in line 2 reads all the lines and
+      returns a list of the strings.
+    </p>
+    <p>
+      We could have used the template from the previous section to read each
+      line one-at-a-time, and to build up the list ourselves, but it is a lot
+      easier to use the method that the Python implementors gave us!
+    </p>
+    <h4 id="an-example">6.9.2. An example</h4>
+    <p>
+      Many useful line-processing programs will read a text file line-at-a-time
+      and do some minor processing as they write the lines to an output file.
+      They might number the lines in the output file, or insert extra blank
+      lines after every 60 lines to make it convenient for printing on sheets of
+      paper, or extract some specific columns only from each line in the source
+      file, or only print lines that contain a specific substring. We call this
+      kind of program a <strong>filter</strong>.
+    </p>
+    <p>
+      Here is a filter that copies one file to another, omitting any lines that
+      begin with <code>#</code>:
+    </p>
+    <div class="sourceCode" id="cb33">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1">infile <span class="op">=</span> <span class="bu">open</span>(oldfile, <span class="st">&#39;r&#39;</span>)</a>
 <a class="sourceLine" id="cb33-2" title="2">outfile <span class="op">=</span> <span class="bu">open</span>(newfile, <span class="st">&#39;w&#39;</span>)</a>
 <a class="sourceLine" id="cb33-3" title="3"><span class="cf">while</span> <span class="va">True</span>:</a>
 <a class="sourceLine" id="cb33-4" title="4">    text <span class="op">=</span> infile.readline()</a>
@@ -360,14 +928,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb33-11" title="11">    outfile.write(text)</a>
 <a class="sourceLine" id="cb33-12" title="12"></a>
 <a class="sourceLine" id="cb33-13" title="13">infile.close()</a>
-<a class="sourceLine" id="cb33-14" title="14">outfile.close()</a></code></pre></div>
-<p>The <code>continue</code> statement at line 9 skips over the remaining lines in the current iteration of the loop, but the loop will still iterate. This style looks a bit contrived here, but it is often useful to say <em>“get the lines we’re not concerned with out of the way early, so that we have cleaner more focussed logic in the meaty part of the loop that might be written around line 11.”</em></p>
-<p>Thus, if <code>text</code> is the empty string, the loop exits. If the first character of <code>text</code> is a hash mark, the flow of execution goes to the top of the loop, ready to start processing the next line. Only if both conditions fail do we fall through to do the processing at line 11, in this example, writing the line into the new file.</p>
-<p>Let’s consider one more case: suppose your original file contained empty lines. At line 6 above, would this program find the first empty line in the file, and terminate immediately? No! Recall that <code>readline</code> always includes the newline character in the string it returns. It is only when we try to read <em>beyond</em> the end of the file that we get back the empty string of length 0.</p>
-<h3 id="repr-and-eval-functions">6.10. <code>repr()</code> and <code>eval()</code> functions</h3>
-<p>Python has a built-in function named <code>repr</code> that takes a Python object as an argument and returns a string <em>representation</em> of that object. For Python’s built-in types, the string representation of an object can be <em>evaluated</em> using the built-in <code>eval</code> function to recreate the object.</p>
-<p>The way this works is easiest to demonstrate by example.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="op">&gt;&gt;&gt;</span> mylist <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">&#39;buckle&#39;</span>, <span class="st">&#39;my&#39;</span>, <span class="st">&#39;shoe&#39;</span>]</a>
+<a class="sourceLine" id="cb33-14" title="14">outfile.close()</a></code></pre>
+    </div>
+    <p>
+      The <code>continue</code> statement at line 9 skips over the remaining
+      lines in the current iteration of the loop, but the loop will still
+      iterate. This style looks a bit contrived here, but it is often useful to
+      say
+      <em
+        >“get the lines we’re not concerned with out of the way early, so that
+        we have cleaner more focussed logic in the meaty part of the loop that
+        might be written around line 11.”</em
+      >
+    </p>
+    <p>
+      Thus, if <code>text</code> is the empty string, the loop exits. If the
+      first character of <code>text</code> is a hash mark, the flow of execution
+      goes to the top of the loop, ready to start processing the next line. Only
+      if both conditions fail do we fall through to do the processing at line
+      11, in this example, writing the line into the new file.
+    </p>
+    <p>
+      Let’s consider one more case: suppose your original file contained empty
+      lines. At line 6 above, would this program find the first empty line in
+      the file, and terminate immediately? No! Recall that
+      <code>readline</code> always includes the newline character in the string
+      it returns. It is only when we try to read <em>beyond</em> the end of the
+      file that we get back the empty string of length 0.
+    </p>
+    <h3 id="repr-and-eval-functions">
+      6.10. <code>repr()</code> and <code>eval()</code> functions
+    </h3>
+    <p>
+      Python has a built-in function named <code>repr</code> that takes a Python
+      object as an argument and returns a string <em>representation</em> of that
+      object. For Python’s built-in types, the string representation of an
+      object can be <em>evaluated</em> using the built-in
+      <code>eval</code> function to recreate the object.
+    </p>
+    <p>The way this works is easiest to demonstrate by example.</p>
+    <div class="sourceCode" id="cb34">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="op">&gt;&gt;&gt;</span> mylist <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">&#39;buckle&#39;</span>, <span class="st">&#39;my&#39;</span>, <span class="st">&#39;shoe&#39;</span>]</a>
 <a class="sourceLine" id="cb34-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(mylist)</a>
 <a class="sourceLine" id="cb34-3" title="3"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb34-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">repr</span>(mylist)</a>
@@ -384,43 +987,112 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb34-15" title="15">[<span class="dv">1</span>, <span class="dv">2</span>, <span class="st">&#39;buckle&#39;</span>, <span class="st">&#39;my&#39;</span>, <span class="st">&#39;shoe&#39;</span>]</a>
 <a class="sourceLine" id="cb34-16" title="16"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(thing)</a>
 <a class="sourceLine" id="cb34-17" title="17"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;list&#39;</span><span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb34-18" title="18"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>The list object, <code>mylist</code> is converted into a <em>string representation</em> using the <code>repr</code> function, and this string representation is than converted back into a Python list object using the <code>eval</code> function (which <em>evaluates</em> the string representation).</p>
-<p>While we will learn much better ways to achieve the goal of storing Python objects into data files later, <code>repr</code> and <code>eval</code> provide us with an easy to understand tool for writing and then reading back Python data to files that we can use now.</p>
-<h3 id="modules">6.11. Modules</h3>
-<p>A <strong>module</strong> is a file containing Python definitions and statements intended for use in other Python programs. There are many Python modules that come with Python as part of the <strong>standard library</strong>. We have seen two of these already, the <code>doctest</code> module and the <code>string</code> module.</p>
-<h3 id="creating-modules">6.12. Creating modules</h3>
-<p>All we need to create a module is a text file with a <code>.py</code> extension on the filename:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="co">#  seqtools.py</span></a>
+<a class="sourceLine" id="cb34-18" title="18"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      The list object, <code>mylist</code> is converted into a
+      <em>string representation</em> using the <code>repr</code> function, and
+      this string representation is than converted back into a Python list
+      object using the <code>eval</code> function (which <em>evaluates</em> the
+      string representation).
+    </p>
+    <p>
+      While we will learn much better ways to achieve the goal of storing Python
+      objects into data files later, <code>repr</code> and
+      <code>eval</code> provide us with an easy to understand tool for writing
+      and then reading back Python data to files that we can use now.
+    </p>
+    <h3 id="modules">6.11. Modules</h3>
+    <p>
+      A <strong>module</strong> is a file containing Python definitions and
+      statements intended for use in other Python programs. There are many
+      Python modules that come with Python as part of the
+      <strong>standard library</strong>. We have seen two of these already, the
+      <code>doctest</code> module and the <code>string</code> module.
+    </p>
+    <h3 id="creating-modules">6.12. Creating modules</h3>
+    <p>
+      All we need to create a module is a text file with a
+      <code>.py</code> extension on the filename:
+    </p>
+    <div class="sourceCode" id="cb35">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="co">#  seqtools.py</span></a>
 <a class="sourceLine" id="cb35-2" title="2"><span class="co">#</span></a>
 <a class="sourceLine" id="cb35-3" title="3"><span class="kw">def</span> remove_at(pos, seq):</a>
-<a class="sourceLine" id="cb35-4" title="4">    <span class="cf">return</span> seq[:pos] <span class="op">+</span> seq[pos<span class="op">+</span><span class="dv">1</span>:]</a></code></pre></div>
-<p>We can now use our module in both scripts and the Python shell. To do so, we must first <em>import</em> the module. There are two ways to do this:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> seqtools <span class="im">import</span> remove_at</a>
+<a class="sourceLine" id="cb35-4" title="4">    <span class="cf">return</span> seq[:pos] <span class="op">+</span> seq[pos<span class="op">+</span><span class="dv">1</span>:]</a></code></pre>
+    </div>
+    <p>
+      We can now use our module in both scripts and the Python shell. To do so,
+      we must first <em>import</em> the module. There are two ways to do this:
+    </p>
+    <div class="sourceCode" id="cb36">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> seqtools <span class="im">import</span> remove_at</a>
 <a class="sourceLine" id="cb36-2" title="2"><span class="op">&gt;&gt;&gt;</span> s <span class="op">=</span> <span class="st">&quot;A string!&quot;</span></a>
 <a class="sourceLine" id="cb36-3" title="3"><span class="op">&gt;&gt;&gt;</span> remove_at(<span class="dv">4</span>, s)</a>
-<a class="sourceLine" id="cb36-4" title="4"><span class="co">&#39;A sting!&#39;</span></a></code></pre></div>
-<p>and:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> seqtools</a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="co">&#39;A sting!&#39;</span></a></code></pre>
+    </div>
+    <p>and:</p>
+    <div class="sourceCode" id="cb37">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> seqtools</a>
 <a class="sourceLine" id="cb37-2" title="2"><span class="op">&gt;&gt;&gt;</span> s <span class="op">=</span> <span class="st">&quot;A string!&quot;</span></a>
 <a class="sourceLine" id="cb37-3" title="3"><span class="op">&gt;&gt;&gt;</span> seqtools.remove_at(<span class="dv">4</span>, s)</a>
-<a class="sourceLine" id="cb37-4" title="4"><span class="co">&#39;A sting!&#39;</span></a></code></pre></div>
-<p>In the first example, <code>remove_at</code> is called just like the functions we have seen previously. In the second example the name of the module and a dot (.) are written before the function name.</p>
-<p>Notice that in either case we do not include the <code>.py</code> file extension when importing. Python expects the file names of Python modules to end in <code>.py</code>, so the file extention is not included in the <strong>import statement</strong>.</p>
-<p>The use of modules makes it possible to break up very large programs into manageable sized parts, and to keep related parts together.</p>
-<h3 id="namespaces">6.13. Namespaces</h3>
-<p>A <strong>namespace</strong> is a syntactic container which permits the same name to be used in different modules or functions (and as we will see soon, in classes and methods).</p>
-<p>Each module determines its own namespace, so we can use the same name in multiple modules without causing an identification problem.</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1"><span class="co"># module1.py</span></a>
+<a class="sourceLine" id="cb37-4" title="4"><span class="co">&#39;A sting!&#39;</span></a></code></pre>
+    </div>
+    <p>
+      In the first example, <code>remove_at</code> is called just like the
+      functions we have seen previously. In the second example the name of the
+      module and a dot (.) are written before the function name.
+    </p>
+    <p>
+      Notice that in either case we do not include the <code>.py</code> file
+      extension when importing. Python expects the file names of Python modules
+      to end in <code>.py</code>, so the file extention is not included in the
+      <strong>import statement</strong>.
+    </p>
+    <p>
+      The use of modules makes it possible to break up very large programs into
+      manageable sized parts, and to keep related parts together.
+    </p>
+    <h3 id="namespaces">6.13. Namespaces</h3>
+    <p>
+      A <strong>namespace</strong> is a syntactic container which permits the
+      same name to be used in different modules or functions (and as we will see
+      soon, in classes and methods).
+    </p>
+    <p>
+      Each module determines its own namespace, so we can use the same name in
+      multiple modules without causing an identification problem.
+    </p>
+    <div class="sourceCode" id="cb38">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1"><span class="co"># module1.py</span></a>
 <a class="sourceLine" id="cb38-2" title="2"></a>
 <a class="sourceLine" id="cb38-3" title="3">question <span class="op">=</span> <span class="st">&quot;What is the meaning of life, the Universe, and everything?&quot;</span></a>
-<a class="sourceLine" id="cb38-4" title="4">answer <span class="op">=</span> <span class="dv">42</span></a></code></pre></div>
-<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="co"># module2.py</span></a>
+<a class="sourceLine" id="cb38-4" title="4">answer <span class="op">=</span> <span class="dv">42</span></a></code></pre>
+    </div>
+    <div class="sourceCode" id="cb39">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="co"># module2.py</span></a>
 <a class="sourceLine" id="cb39-2" title="2"></a>
 <a class="sourceLine" id="cb39-3" title="3">question <span class="op">=</span> <span class="st">&quot;What is your quest?&quot;</span></a>
-<a class="sourceLine" id="cb39-4" title="4">answer <span class="op">=</span> <span class="st">&quot;To seek the holy grail.&quot;</span></a></code></pre></div>
-<p>We can now import both modules and access <code>question</code> and <code>answer</code> in each:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> module1</a>
+<a class="sourceLine" id="cb39-4" title="4">answer <span class="op">=</span> <span class="st">&quot;To seek the holy grail.&quot;</span></a></code></pre>
+    </div>
+    <p>
+      We can now import both modules and access <code>question</code> and
+      <code>answer</code> in each:
+    </p>
+    <div class="sourceCode" id="cb40">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> module1</a>
 <a class="sourceLine" id="cb40-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> module2</a>
 <a class="sourceLine" id="cb40-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> module1.question</a>
 <a class="sourceLine" id="cb40-4" title="4">What <span class="kw">is</span> the meaning of life, the Universe, <span class="kw">and</span> everything?</a>
@@ -430,10 +1102,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb40-8" title="8"><span class="dv">42</span></a>
 <a class="sourceLine" id="cb40-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> module2.answer</a>
 <a class="sourceLine" id="cb40-10" title="10">To seek the holy grail.</a>
-<a class="sourceLine" id="cb40-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>If we had used <code>from module1 import *</code> and <code>from module2 import *</code> instead, we would have a <strong>naming collision</strong> and would not be able to access <code>question</code> and <code>answer</code> from <code>module1</code>.</p>
-<p>Functions also have their own namespace:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">def</span> f():</a>
+<a class="sourceLine" id="cb40-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      If we had used <code>from module1 import *</code> and
+      <code>from module2 import *</code> instead, we would have a
+      <strong>naming collision</strong> and would not be able to access
+      <code>question</code> and <code>answer</code> from <code>module1</code>.
+    </p>
+    <p>Functions also have their own namespace:</p>
+    <div class="sourceCode" id="cb41">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">def</span> f():</a>
 <a class="sourceLine" id="cb41-2" title="2">    n <span class="op">=</span> <span class="dv">7</span></a>
 <a class="sourceLine" id="cb41-3" title="3">    <span class="bu">print</span>(<span class="st">&quot;printing n inside of f: </span><span class="sc">{0}</span><span class="st">&quot;</span>.<span class="bu">format</span>(n))</a>
 <a class="sourceLine" id="cb41-4" title="4"></a>
@@ -446,20 +1127,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb41-11" title="11">f()</a>
 <a class="sourceLine" id="cb41-12" title="12"><span class="bu">print</span>(<span class="st">&quot;printing n after calling f: </span><span class="sc">{0}</span><span class="st">&quot;</span>.<span class="bu">format</span>(n))</a>
 <a class="sourceLine" id="cb41-13" title="13">g()</a>
-<a class="sourceLine" id="cb41-14" title="14"><span class="bu">print</span>(<span class="st">&quot;printing n after calling g: </span><span class="sc">{0}</span><span class="st">&quot;</span>.<span class="bu">format</span>(n))</a></code></pre></div>
-<p>Running this program produces the following output:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1">printing n before calling f: <span class="dv">11</span></a>
+<a class="sourceLine" id="cb41-14" title="14"><span class="bu">print</span>(<span class="st">&quot;printing n after calling g: </span><span class="sc">{0}</span><span class="st">&quot;</span>.<span class="bu">format</span>(n))</a></code></pre>
+    </div>
+    <p>Running this program produces the following output:</p>
+    <div class="sourceCode" id="cb42">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1">printing n before calling f: <span class="dv">11</span></a>
 <a class="sourceLine" id="cb42-2" title="2">printing n inside of f: <span class="dv">7</span></a>
 <a class="sourceLine" id="cb42-3" title="3">printing n after calling f: <span class="dv">11</span></a>
 <a class="sourceLine" id="cb42-4" title="4">printing n inside of g: <span class="dv">42</span></a>
-<a class="sourceLine" id="cb42-5" title="5">printing n after calling g: <span class="dv">11</span></a></code></pre></div>
-<p>The three <code>n</code>’s here do not collide since they are each in a different namespace.</p>
-<p>Namespaces permit several programmers to work on the same project without having naming collisions.</p>
-<h3 id="attributes-and-the-dot-operator">6.14. Attributes and the dot operator</h3>
-<p>Variables defined inside a module are called <strong>attributes</strong> of the module. They are accessed by using the <strong>dot operator</strong> ( <code>.</code>). The <code>question</code> attribute of <code>module1</code> and <code>module2</code> are accessed using <code>module1.question</code> and <code>module2.question</code>.</p>
-<p>Modules contain functions as well as attributes, and the dot operator is used to access them in the same way. <code>seqtools.remove_at</code> refers to the <code>remove_at</code> function in the <code>seqtools</code> module.</p>
-<p>In Chapter 7 we introduced the <code>find</code> function from the <code>string</code> module. The <code>string</code> module contains many other useful functions:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> string</a>
+<a class="sourceLine" id="cb42-5" title="5">printing n after calling g: <span class="dv">11</span></a></code></pre>
+    </div>
+    <p>
+      The three <code>n</code>’s here do not collide since they are each in a
+      different namespace.
+    </p>
+    <p>
+      Namespaces permit several programmers to work on the same project without
+      having naming collisions.
+    </p>
+    <h3 id="attributes-and-the-dot-operator">
+      6.14. Attributes and the dot operator
+    </h3>
+    <p>
+      Variables defined inside a module are called
+      <strong>attributes</strong> of the module. They are accessed by using the
+      <strong>dot operator</strong> ( <code>.</code>). The
+      <code>question</code> attribute of <code>module1</code> and
+      <code>module2</code> are accessed using <code>module1.question</code> and
+      <code>module2.question</code>.
+    </p>
+    <p>
+      Modules contain functions as well as attributes, and the dot operator is
+      used to access them in the same way.
+      <code>seqtools.remove_at</code> refers to the
+      <code>remove_at</code> function in the <code>seqtools</code> module.
+    </p>
+    <p>
+      In Chapter 7 we introduced the <code>find</code> function from the
+      <code>string</code> module. The <code>string</code> module contains many
+      other useful functions:
+    </p>
+    <div class="sourceCode" id="cb43">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> string</a>
 <a class="sourceLine" id="cb43-2" title="2"><span class="op">&gt;&gt;&gt;</span> string.capitalize(<span class="st">&#39;maryland&#39;</span>)</a>
 <a class="sourceLine" id="cb43-3" title="3"><span class="co">&#39;Maryland&#39;</span></a>
 <a class="sourceLine" id="cb43-4" title="4"><span class="op">&gt;&gt;&gt;</span> string.capwords(<span class="st">&quot;what&#39;s all this, then, amen?&quot;</span>)</a>
@@ -468,53 +1181,141 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb43-7" title="7"><span class="co">&#39;                   How to Center Text Using Python                    &#39;</span></a>
 <a class="sourceLine" id="cb43-8" title="8"><span class="op">&gt;&gt;&gt;</span> string.upper(<span class="st">&#39;angola&#39;</span>)</a>
 <a class="sourceLine" id="cb43-9" title="9"><span class="co">&#39;ANGOLA&#39;</span></a>
-<a class="sourceLine" id="cb43-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>You should use pydoc to browse the other functions and attributes in the string module.</p>
-<h3 id="glossary">6.15. Glossary</h3>
-<p>dictionary</p>
-<p>A collection of key-value pairs that maps from keys to values. The keys can be any immutable type, and the values can be any type.file</p>
-<p>A named entity, usually stored on a hard drive, floppy disk, or CD-ROM, that contains a stream of characters.file system</p>
-<p>A method for naming, accessing, and organizing files and the data they contain.fully qualified name</p>
-<p>A name that is prefixed by some namespace identifier and the dot operator, or by an instance object, e.g. <code>math.sqrt</code> or <code>f.open('myfile.txt', 'r')</code>.handle</p>
-<p>An object in our program that is connected to an underlying resource (e.g. a file). The file handle lets our program manipulate / read/ write / close the actual file that is on our disk.import</p>
-<p>A statement which permits functions and variables defined in a Python script to be brought into the environment of another script or a running Python shell.For example, assume the following is in a script named <code>tryme.py</code>:</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">def</span> print_thrice(thing):</a>
+<a class="sourceLine" id="cb43-10" title="10"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      You should use pydoc to browse the other functions and attributes in the
+      string module.
+    </p>
+    <h3 id="glossary">6.15. Glossary</h3>
+    <p>dictionary</p>
+    <p>
+      A collection of key-value pairs that maps from keys to values. The keys
+      can be any immutable type, and the values can be any type.file
+    </p>
+    <p>
+      A named entity, usually stored on a hard drive, floppy disk, or CD-ROM,
+      that contains a stream of characters.file system
+    </p>
+    <p>
+      A method for naming, accessing, and organizing files and the data they
+      contain.fully qualified name
+    </p>
+    <p>
+      A name that is prefixed by some namespace identifier and the dot operator,
+      or by an instance object, e.g. <code>math.sqrt</code> or
+      <code>f.open('myfile.txt', 'r')</code>.handle
+    </p>
+    <p>
+      An object in our program that is connected to an underlying resource
+      (e.g. a file). The file handle lets our program manipulate / read/ write /
+      close the actual file that is on our disk.import
+    </p>
+    <p>
+      A statement which permits functions and variables defined in a Python
+      script to be brought into the environment of another script or a running
+      Python shell.For example, assume the following is in a script named
+      <code>tryme.py</code>:
+    </p>
+    <div class="sourceCode" id="cb44">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">def</span> print_thrice(thing):</a>
 <a class="sourceLine" id="cb44-2" title="2">    <span class="bu">print</span> thing, thing, thing</a>
 <a class="sourceLine" id="cb44-3" title="3"></a>
 <a class="sourceLine" id="cb44-4" title="4">n <span class="op">=</span> <span class="dv">42</span></a>
-<a class="sourceLine" id="cb44-5" title="5">s <span class="op">=</span> <span class="st">&quot;And now for something completely different...&quot;</span></a></code></pre></div>
-<p>Now begin a python shell from within the same directory where <code>tryme.py</code> is located:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1">$ ls</a>
+<a class="sourceLine" id="cb44-5" title="5">s <span class="op">=</span> <span class="st">&quot;And now for something completely different...&quot;</span></a></code></pre>
+    </div>
+    <p>
+      Now begin a python shell from within the same directory where
+      <code>tryme.py</code> is located:
+    </p>
+    <div class="sourceCode" id="cb45">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1">$ ls</a>
 <a class="sourceLine" id="cb45-2" title="2">tryme.py</a>
 <a class="sourceLine" id="cb45-3" title="3">$ python</a>
-<a class="sourceLine" id="cb45-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Three names are defined in <code>tryme.py</code>: <code>print_thrice</code>, <code>n</code>, and <code>s</code>. If we try to access any of these in the shell without first importing, we get an error:</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="op">&gt;&gt;&gt;</span> n</a>
+<a class="sourceLine" id="cb45-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Three names are defined in <code>tryme.py</code>:
+      <code>print_thrice</code>, <code>n</code>, and <code>s</code>. If we try
+      to access any of these in the shell without first importing, we get an
+      error:
+    </p>
+    <div class="sourceCode" id="cb46">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="op">&gt;&gt;&gt;</span> n</a>
 <a class="sourceLine" id="cb46-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb46-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb46-4" title="4"><span class="pp">NameError</span>: name <span class="st">&#39;n&#39;</span> <span class="kw">is</span> <span class="kw">not</span> defined</a>
 <a class="sourceLine" id="cb46-5" title="5"><span class="op">&gt;&gt;&gt;</span> print_thrice(<span class="st">&quot;ouch!&quot;</span>)</a>
 <a class="sourceLine" id="cb46-6" title="6">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb46-7" title="7">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
-<a class="sourceLine" id="cb46-8" title="8"><span class="pp">NameError</span>: name <span class="st">&#39;print_thrice&#39;</span> <span class="kw">is</span> <span class="kw">not</span> defined</a></code></pre></div>
-<p>If we import everything from <code>tryme.py</code>, however, we can use everything defined in it:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> tryme <span class="im">import</span> <span class="op">*</span></a>
+<a class="sourceLine" id="cb46-8" title="8"><span class="pp">NameError</span>: name <span class="st">&#39;print_thrice&#39;</span> <span class="kw">is</span> <span class="kw">not</span> defined</a></code></pre>
+    </div>
+    <p>
+      If we import everything from <code>tryme.py</code>, however, we can use
+      everything defined in it:
+    </p>
+    <div class="sourceCode" id="cb47">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> tryme <span class="im">import</span> <span class="op">*</span></a>
 <a class="sourceLine" id="cb47-2" title="2"><span class="op">&gt;&gt;&gt;</span> n</a>
 <a class="sourceLine" id="cb47-3" title="3"><span class="dv">42</span></a>
 <a class="sourceLine" id="cb47-4" title="4"><span class="op">&gt;&gt;&gt;</span> s</a>
 <a class="sourceLine" id="cb47-5" title="5"><span class="co">&#39;And now for something completely different...&#39;</span></a>
 <a class="sourceLine" id="cb47-6" title="6"><span class="op">&gt;&gt;&gt;</span> print_thrice(<span class="st">&quot;Yipee!&quot;</span>)</a>
 <a class="sourceLine" id="cb47-7" title="7">Yipee<span class="op">!</span> Yipee<span class="op">!</span> Yipee<span class="op">!</span></a>
-<a class="sourceLine" id="cb47-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Note that you do not include the <code>.py</code> from the script name in the import statement.key</p>
-<p>A data item that is <em>mapped to</em> a value in a dictionary. Keys are used to look up values in a dictionary.key-value pair</p>
-<p>One of the pairs of items in a dictionary. Values are looked up in a dictionary by key.mapping type</p>
-<p>A mapping type is a data type comprised of a collection of keys and associated values. Python’s only built-in mapping type is the dictionary. Dictionaries implement the <a href="http://en.wikipedia.org/wiki/Associative_array">associative array</a> abstract data type.mode</p>
-<p>A distinct method of operation within a computer program. Files in Python can be openned in one of three modes: read (<code>'r'</code>), write (<code>'w'</code>), and append (<code>'a'</code>).non-volatile memory</p>
-<p>Memory that can maintain its state without power. Hard drives, flash drives, and rewritable compact disks (CD-RW) are each examples of non-volatile memory.path</p>
-<p>A sequence of directory names that specifies the exact location of a file.set</p>
-<p>A collection of unique, unordered elements.text file</p>
-<p>A file that contains printable characters organized into lines separated by newline characters.volatile memory</p>
-<p>Memory which requires an electrical current to maintain state. The <em>main memory</em> or RAM of a computer is volatile. Information stored in RAM is lost when the computer is turned off.</p>
-</body>
+<a class="sourceLine" id="cb47-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Note that you do not include the <code>.py</code> from the script name in
+      the import statement.key
+    </p>
+    <p>
+      A data item that is <em>mapped to</em> a value in a dictionary. Keys are
+      used to look up values in a dictionary.key-value pair
+    </p>
+    <p>
+      One of the pairs of items in a dictionary. Values are looked up in a
+      dictionary by key.mapping type
+    </p>
+    <p>
+      A mapping type is a data type comprised of a collection of keys and
+      associated values. Python’s only built-in mapping type is the dictionary.
+      Dictionaries implement the
+      <a href="http://en.wikipedia.org/wiki/Associative_array"
+        >associative array</a
+      >
+      abstract data type.mode
+    </p>
+    <p>
+      A distinct method of operation within a computer program. Files in Python
+      can be openned in one of three modes: read (<code>'r'</code>), write
+      (<code>'w'</code>), and append (<code>'a'</code>).non-volatile memory
+    </p>
+    <p>
+      Memory that can maintain its state without power. Hard drives, flash
+      drives, and rewritable compact disks (CD-RW) are each examples of
+      non-volatile memory.path
+    </p>
+    <p>
+      A sequence of directory names that specifies the exact location of a
+      file.set
+    </p>
+    <p>A collection of unique, unordered elements.text file</p>
+    <p>
+      A file that contains printable characters organized into lines separated
+      by newline characters.volatile memory
+    </p>
+    <p>
+      Memory which requires an electrical current to maintain state. The
+      <em>main memory</em> or RAM of a computer is volatile. Information stored
+      in RAM is lost when the computer is turned off.
+    </p>
+  </body>
 </html>

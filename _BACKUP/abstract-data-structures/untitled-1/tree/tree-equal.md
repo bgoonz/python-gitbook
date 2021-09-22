@@ -1,5 +1,4 @@
-Tree Equal ?
-============
+# Tree Equal ?
 
 {% tabs %} {% tab title=“Python” %}
 

@@ -1,5 +1,4 @@
-Palendrome
-==========
+# Palendrome
 
 {% tabs %} {% tab title=“Pal.py” %}
 

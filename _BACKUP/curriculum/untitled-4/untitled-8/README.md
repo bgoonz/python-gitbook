@@ -1,5 +1,4 @@
-D3- Module 03 - Binary Search Trees
-===================================
+# D3- Module 03 - Binary Search Trees
 
 {% embed url=“https://gist.github.com/bgoonz/c6ddd80d7ae24eca670f5fbebb7795f0” %}
 
@@ -9,8 +8,7 @@ D3- Module 03 - Binary Search Trees
 
 {% embed url=“https://www.youtube.com/watch?v=Z0ZnRd2w8Ik” %}
 
-Objective 01 - Describe the properties of a binary tree and the properties of a “perfect” tree
-----------------------------------------------------------------------------------------------
+## Objective 01 - Describe the properties of a binary tree and the properties of a “perfect” tree
 
 ### Overview <span id="overview"></span>
 
@@ -40,9 +38,9 @@ A “perfect” tree has all of its levels full. This means that there are not a
 
 Second, the quantity of the last level’s nodes is the same as the quantity of all the other nodes plus one.
 
-These properties are useful for understanding how to calculate the *height* of a tree. The height of a tree is the number of levels that it contains. Based on the properties outlined above, we can deduce that we can calculate the tree’s height with the following formula:
+These properties are useful for understanding how to calculate the _height_ of a tree. The height of a tree is the number of levels that it contains. Based on the properties outlined above, we can deduce that we can calculate the tree’s height with the following formula:
 
-![log\_2(n+1) = h](https://i.upmath.me/svg/log_2%28n%2B1%29%20%3D%20h)
+![log_2(n+1) = h](https://i.upmath.me/svg/log_2%28n%2B1%29%20%3D%20h)
 
 In the formula above, `n` is the total number of nodes. If you know the tree’s height and want to calculate the total number of nodes, you can do so with the following formula:
 
@@ -57,13 +55,12 @@ We can represent the relationship between a perfect binary tree’s total number
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://en.wikipedia.org/wiki/Binary\_tree (Links to an external site.)](https://en.wikipedia.org/wiki/Binary_tree)
--   [https://www.geeksforgeeks.org/binary-tree-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-tree-data-structure/)
+- [https://en.wikipedia.org/wiki/Binary_tree (Links to an external site.)](https://en.wikipedia.org/wiki/Binary_tree)
+- [https://www.geeksforgeeks.org/binary-tree-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-tree-data-structure/)
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 02 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a binary search tree
-------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a binary search tree
 
 ### Overview <span id="overview"></span>
 
@@ -109,13 +106,12 @@ If you want to learn more about trees that automatically rearrange their nodes t
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.geeksforgeeks.org/binary-search-tree-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
--   [https://en.wikipedia.org/wiki/Binary\_search\_tree (Links to an external site.)](https://en.wikipedia.org/wiki/Binary_search_tree)
+- [https://www.geeksforgeeks.org/binary-search-tree-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)
+- [https://en.wikipedia.org/wiki/Binary_search_tree (Links to an external site.)](https://en.wikipedia.org/wiki/Binary_search_tree)
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 03 - Construct a binary search tree that can perform basic operations with a logarithmic time complexity
-------------------------------------------------------------------------------------------------------------------
+## Objective 03 - Construct a binary search tree that can perform basic operations with a logarithmic time complexity
 
 ### Overview <span id="overview"></span>
 
@@ -214,11 +210,11 @@ To implement a `delete` operation on our `BST` and `BSTNode` classes, we must co
 2.  If the `BSTNode` to be deleted has only one child, we copy the child node to be deleted and delete it.
 3.  If the `BSTNode` to be deleted has two children, we have to find the “in-order successor”. The “in-order successor” is the next highest value, the node that has the minimum value in the right subtree.
 
-Given the above information, can you write pseudocode for a method that can find the *minimum value* of all the nodes within a tree or subtree?
+Given the above information, can you write pseudocode for a method that can find the _minimum value_ of all the nodes within a tree or subtree?
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
--   [https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/)
+- [https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)
+- [https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/ (Links to an external site.)](https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/)
 
 {% embed url=“https://gist.github.com/bgoonz/4e4fd86bc6c83f7a7cbf5392772f7519\#file-bst-ipynb” %}

@@ -1,5 +1,4 @@
-More On Lists
-=============
+# More On Lists
 
 #### Creation <span id="creation"></span>
 
@@ -221,8 +220,7 @@ For example:
 
 Lists are one of the most commonly used and most powerful data structures in Python. If one manages to master lists, he/she will perform very well in programming interviews. Once you’re done reading and using the list methods, check out the below links and start solving programs based on lists.
 
-Strings, lists, and tuples
---------------------------
+## Strings, lists, and tuples
 
 ### 3.1. Sequence data types
 
@@ -238,7 +236,7 @@ In the case of lists or tuples, they are made up of **elements**, which are valu
 
 **Lists** are enclosed in square brackets (`[` and `]`) and **tuples** in parentheses (`(` and `)`).
 
-A list containing no elements is called an *empty list*, and a tuple with no elements is an *empty tuple*.
+A list containing no elements is called an _empty list_, and a tuple with no elements is an _empty tuple_.
 
     [10, 20, 30, 40, 50]
     ["spam", "bungee", "swallow"]
@@ -280,7 +278,7 @@ The sequence types share a common set of operations.
 
 #### 3.2.1. Indexing
 
-The **indexing operator** (`[` `]`) selects a single element from a sequence. The expression inside brackets is called the **index**, and must be an integer value. The index *indicates* which element to select, hence its name.
+The **indexing operator** (`[` `]`) selects a single element from a sequence. The expression inside brackets is called the **index**, and must be an integer value. The index _indicates_ which element to select, hence its name.
 
     >>> fruit = "banana"
     >>> fruit[1]
@@ -360,7 +358,7 @@ We will discuss looping in greater detail in the next chapter. For now just note
 
 ### 3.3. `enumerate`
 
-As the standard `for` loop traverses a sequence, it assigns each *value* in the sequence to the loop variable in the order it occurs in the sequence. Sometimes it is helpful to have both the value and the index of each element. The `enumerate` function gives us this:
+As the standard `for` loop traverses a sequence, it assigns each _value_ in the sequence to the loop variable in the order it occurs in the sequence. Sometimes it is helpful to have both the value and the index of each element. The `enumerate` function gives us this:
 
     fruits = ['apples', 'bananas', 'blueberries', 'oranges', 'mangos']
 
@@ -382,7 +380,7 @@ A subsequence of a sequence is called a **slice** and the operation that extract
     >>> classmates[2:4]
     ('Kathryn', 'Presila')
 
-The operator `[n:m]` returns the part of the sequence from the n’th element to the m’th element, including the first but excluding the last. This behavior is counter-intuitive; it makes more sense if you imagine the indices pointing *between* the characters, as in the following diagram:![‘banana’ string](https://www.openbookproject.net/books/bpp4awd/_images/banana.png)
+The operator `[n:m]` returns the part of the sequence from the n’th element to the m’th element, including the first but excluding the last. This behavior is counter-intuitive; it makes more sense if you imagine the indices pointing _between_ the characters, as in the following diagram:![‘banana’ string](https://www.openbookproject.net/books/bpp4awd/_images/banana.png)
 
 If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string. Thus:
 
@@ -481,7 +479,7 @@ Let’s look at some string methods in action to see how this works.
 
 Now let’s learn to describe what we just saw. Each string in the above examples is followed by a **dot operator**, a method name, and a **parameter list**, which may be empty.
 
-In the first example, the string `'apple'` is followed by the dot operator and then the `upper()` method, which has an empty parameter list. We say that the “`upper()` method is **invoked** on the string, `'apple'`. Invoking the method causes an action to take place using the value on which the method is invoked. The action produces a result, in this case the string value `'Apple'`. We say that the `upper()` method **returns** the string `'Apple'` when it is invoked on (or *called on*) the string `'apple'`.
+In the first example, the string `'apple'` is followed by the dot operator and then the `upper()` method, which has an empty parameter list. We say that the “`upper()` method is **invoked** on the string, `'apple'`. Invoking the method causes an action to take place using the value on which the method is invoked. The action produces a result, in this case the string value `'Apple'`. We say that the `upper()` method **returns** the string `'Apple'` when it is invoked on (or _called on_) the string `'apple'`.
 
 In the fourth example, the method `isdigit()` (again with an empty parameter list) is invoked on the string `'42'`. Since each of the characters in the string represents a digit, the `isdigit()` method returns the boolean value `True`. Invoking `isdigit()` on `'four'` produces `False`.
 
@@ -659,7 +657,7 @@ If we execute these assignment statements,
     >>> a = [1, 2, 3]
     >>> b = [1, 2, 3]
 
-we know that the names `a` and `b` will refer to a list with the numbers `1`, `2`, and `3`. But we don’t know yet whether they point to the *same* list.
+we know that the names `a` and `b` will refer to a list with the numbers `1`, `2`, and `3`. But we don’t know yet whether they point to the _same_ list.
 
 There are two possible states:![State diagram for multiple references with lists](https://www.openbookproject.net/books/bpp4awd/_images/mult_references1.png)
 
@@ -672,7 +670,7 @@ We can test whether two names have the same value using `==`:
     >>> a == b
     True
 
-We can test whether two names refer to the same object using the *is* operator:
+We can test whether two names refer to the same object using the _is_ operator:
 
     >>> a is b
     False
@@ -762,7 +760,7 @@ The `join` method does approximately the oposite of the `split` method. It takes
     >>> ' '. join(['crunchy', 'raw', 'unboned', 'real', 'dead', 'frog'])
     'crunchy raw unboned real dead frog'
 
-The string value on which the `join` method is invoked acts as a *separator* that gets placed between each element in the list in the returned string.
+The string value on which the `join` method is invoked acts as a _separator_ that gets placed between each element in the list in the returned string.
 
     >>> '**'.join(['crunchy', 'raw', 'unboned', 'real', 'dead', 'frog'])
     'crunchy**raw**unboned**real**dead**frog'
@@ -834,13 +832,13 @@ The `==` operator is one of six common **comparison operators**; the others are:
     x >= y       # x is greater than or equal to y
     x <= y       # x is less than or equal to y
 
-Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (`=`) instead of a double equal sign (`==`). Remember that `=` is an *assignment operator* and `==` is a *comparison operator*. Also, there is no such thing as `=<` or `=>`.
+Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols. A common error is to use a single equal sign (`=`) instead of a double equal sign (`==`). Remember that `=` is an _assignment operator_ and `==` is a _comparison operator_. Also, there is no such thing as `=<` or `=>`.
 
 ### 3.18. Logical operators
 
-There are three **logical operators**: `and`, `or`, and `not`. The semantics (meaning) of these operators is similar to their meaning in English. For example, `x > 0 and x < 10` is true only if `x` is greater than 0 *and* at the same time, x is less than 10.
+There are three **logical operators**: `and`, `or`, and `not`. The semantics (meaning) of these operators is similar to their meaning in English. For example, `x > 0 and x < 10` is true only if `x` is greater than 0 _and_ at the same time, x is less than 10.
 
-`n % 2 == 0 or n % 3 == 0` is true if *either* of the conditions is true, that is, if the number is divisible by 2 *or* divisible by 3.
+`n % 2 == 0 or n % 3 == 0` is true if _either_ of the conditions is true, that is, if the number is divisible by 2 _or_ divisible by 3.
 
 Finally, the `not` operator negates a boolean expression, so `not (x > y)` is true if `(x > y)` is false, that is, if `x` is less than or equal to `y`.
 

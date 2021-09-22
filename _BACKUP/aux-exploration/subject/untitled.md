@@ -1,8 +1,6 @@
-How to round Python values to whole numbers?
-============================================
+# How to round Python values to whole numbers?
 
-How to round Python values to whole numbers?
---------------------------------------------
+## How to round Python values to whole numbers?
 
 > Three Python functions round numbers to an integer. round() rounds up and down, math.floor() rounds down, and math.ceil() rounds up to a whole number.
 
@@ -14,9 +12,9 @@ When we round values, we go from a numerical value with decimal places to a whol
 
 Python has three ways to turn a floating-point value into a whole (integer) number:
 
--   The built-in `round()` function rounds values up and down.
--   The `math.floor()` function rounds *down* to the next full integer.
--   The `math.ceil()` function rounds *up* to the next full integer.
+- The built-in `round()` function rounds values up and down.
+- The `math.floor()` function rounds _down_ to the next full integer.
+- The `math.ceil()` function rounds _up_ to the next full integer.
 
 If you just want a string or script output with a whole number, then a Python format string can perform that task too. That way you also don’t lose precision in the original value.
 
@@ -81,9 +79,9 @@ Here’s how the rounded values look:
 
 ### \[\#\](\#round-down-to-the-next-integer-pythons-mathfloor-function “Bookmark for ‘Round down to the next integer: Python’s `math.floor()` function’”) Round down to the next integer: Python’s `math.floor()` function
 
-The `math.floor()` function returns the *floor value* of its argument, which is the nearest integer less than or equal to that argument’s value (Python Docs, n.d. b).
+The `math.floor()` function returns the _floor value_ of its argument, which is the nearest integer less than or equal to that argument’s value (Python Docs, n.d. b).
 
-That sounds abstract, but is just another way of saying that `math.floor()` rounds down to the next whole number. So `7.8` becomes `7` and `5.4` is turned into `5`. And since the function rounds *down* to a smaller value, `-8.2` becomes `-9`.
+That sounds abstract, but is just another way of saying that `math.floor()` rounds down to the next whole number. So `7.8` becomes `7` and `5.4` is turned into `5`. And since the function rounds _down_ to a smaller value, `-8.2` becomes `-9`.
 
 Here’s a quick example of the `math.floor()` function:
 
@@ -135,9 +133,9 @@ The program’s third part outputs the variables with Python’s `print()` funct
 
 ### \[\#\](\#round-up-to-the-next-integer-pythons-mathceil-function “Bookmark for ‘Round up to the next integer: Python’s `math.ceil()` function’”) Round up to the next integer: Python’s `math.ceil()` function
 
-The `math.ceil()` function returns the *ceiling* of its argument, which is the nearest integer greater than or equal to that argument’s value (Python Docs, n.d. b).
+The `math.ceil()` function returns the _ceiling_ of its argument, which is the nearest integer greater than or equal to that argument’s value (Python Docs, n.d. b).
 
-That’s just a way of saying that `math.ceil()` rounds up to a whole number: `3.2` becomes `4` and `7.75` gets turned into `8`. And because the function rounds *up* to a greater value, `-9.8` becomes `-9`.
+That’s just a way of saying that `math.ceil()` rounds up to a whole number: `3.2` becomes `4` and `7.75` gets turned into `8`. And because the function rounds _up_ to a greater value, `-9.8` becomes `-9`.
 
 Here’s a quick example of `math.ceil()`:
 

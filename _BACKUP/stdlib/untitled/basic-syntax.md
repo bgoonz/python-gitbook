@@ -1,5 +1,4 @@
-Basic Syntax
-============
+# Basic Syntax
 
 ### Whitespace and indentation
 
@@ -26,9 +25,9 @@ At the end of each line, you don’t see any semicolon to terminate the statemen
 
 By using indentation and whitespace to organize the code, Python code gains the following advantages:
 
--   First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.
--   Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.
--   Third, the code is more readable and clear in comparison with other programming languages.
+- First, you’ll never miss the beginning or ending code of a block like in other programming languages such as Java or C\#.
+- Second, the coding style is essentially uniform. If you have to maintain another developer’s code, that code looks the same as yours.
+- Third, the code is more readable and clear in comparison with other programming languages.
 
 ### Comments
 
@@ -80,7 +79,7 @@ The following shows the list of keywords in Python:
 
 Python is a growing and evolving language. So its keywords will keep increasing and changing.
 
-Python provides a special module for listing its keywords called `keyword`*.*
+Python provides a special module for listing its keywords called `keyword`_._
 
 To find the current keyword list, you use the following code:
 
@@ -106,8 +105,8 @@ The following shows some examples of string literals:
 
 ### Summary
 
--   A Python statement ends with a newline character.
--   Python uses spaces and identation to organize its code structure.
--   Identifiers are names that identify variables, functions, modules, classes, etc. in Python.
--   Comments describe why the code works. They are ingored by the Python interpreter.
--   Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote
+- A Python statement ends with a newline character.
+- Python uses spaces and identation to organize its code structure.
+- Identifiers are names that identify variables, functions, modules, classes, etc. in Python.
+- Comments describe why the code works. They are ingored by the Python interpreter.
+- Use the single quote, double-quotes, tripple-quotes, or tripple double-quotes to denote

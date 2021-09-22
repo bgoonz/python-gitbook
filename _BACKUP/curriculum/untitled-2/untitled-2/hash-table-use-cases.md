@@ -1,5 +1,4 @@
-Hash Table Use Cases
-====================
+# Hash Table Use Cases
 
 #### Associative arrays
 

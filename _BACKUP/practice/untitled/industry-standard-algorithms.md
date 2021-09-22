@@ -1,10 +1,8 @@
-Industry Standard Algorithms
-============================
+# Industry Standard Algorithms
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/main-prac">@bgoonz/main-prac</span>\#directed\_graph.py” %}
 
-Reverse String:
----------------
+## Reverse String:
 
     def reverse(lines):
         return "Reverse order: " + lines[::-1] + "\n" + "Normal Order: " + lines

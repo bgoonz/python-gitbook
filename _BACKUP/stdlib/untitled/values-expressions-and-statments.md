@@ -1,18 +1,18 @@
-Values Expressions & Statments
-==============================
+# Values Expressions & Statments
 
 2. Values, expressions, and statements
---------------------------------------
+
+---
 
 ### 2.1. Programs and data
 
 We can restate our previous definition of a computer program colloquially:
 
-> A computer program is a step-by-step set of instructions to tell a computer to *do things* to *stuff*.
+> A computer program is a step-by-step set of instructions to tell a computer to _do things_ to _stuff_.
 
-We will be spending the rest of this book deepening and refining our understanding of exactly what kinds of *things* a computer can *do*. Your ability to program a computer effectively will depend in large part on your ability to understand these things well, so that you can *express what you want to accomplish in a language the computer can execute*.
+We will be spending the rest of this book deepening and refining our understanding of exactly what kinds of _things_ a computer can _do_. Your ability to program a computer effectively will depend in large part on your ability to understand these things well, so that you can _express what you want to accomplish in a language the computer can execute_.
 
-Before we get to that, however, we need to talk about the *stuff* on which computers operate.
+Before we get to that, however, we need to talk about the _stuff_ on which computers operate.
 
 Computer programs operate on [data](http://en.wikipedia.org/wiki/Data_%28computing%29). A single piece of data can be called a datum, but we will use the related term, [value](http://en.wikipedia.org/wiki/Value_%28computer_science%29).
 
@@ -26,7 +26,7 @@ At the level of the hardware of the machine, all values are stored as a sequence
 
 Thankfully, high-level languages like Python give us flexible, high-level data types which abstract away the tedious details of all these bits and better fit our human brains.
 
-`4` is an *integer*, and `"Hello, World!"` is a *string*, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.
+`4` is an _integer_, and `"Hello, World!"` is a _string_, so-called because it contains a string of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.
 
 If you are not sure what class a value falls into, Python has a function called **type** which can tell you.
 
@@ -35,7 +35,7 @@ If you are not sure what class a value falls into, Python has a function called 
     >>> type(17)
     <class 'int'>
 
-Not surprisingly, strings belong to the class **str** and integers belong to the class **int**. Less obviously, numbers with a point between their whole number and fractional parts belong to a class called **float**, because these numbers are represented in a format called [floating-point](http://en.wikipedia.org/wiki/Floating_point). At this stage, you can treat the words *class* and *type* interchangeably. We’ll come back to a deeper understanding of what a class is in later chapters.
+Not surprisingly, strings belong to the class **str** and integers belong to the class **int**. Less obviously, numbers with a point between their whole number and fractional parts belong to a class called **float**, because these numbers are represented in a format called [floating-point](http://en.wikipedia.org/wiki/Floating_point). At this stage, you can treat the words _class_ and _type_ interchangeably. We’ll come back to a deeper understanding of what a class is in later chapters.
 
     >>> type(3.2)
     <class 'float'>
@@ -58,7 +58,7 @@ When you type a large integer, you might be tempted to use commas between groups
     >>> 42,000
     (42, 0)
 
-Well, that’s not what we expected at all! Because of the comma, Python treats this as a *pair* of values in a **tuple**. So, remember not to put commas or spaces in your integers. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
+Well, that’s not what we expected at all! Because of the comma, Python treats this as a _pair_ of values in a **tuple**. So, remember not to put commas or spaces in your integers. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
 
 ### 2.2. Three ways to write strings
 
@@ -105,7 +105,7 @@ So the Python language designers chose to usually surround their strings by sing
 
 A [literal](http://en.wikipedia.org/wiki/Literal_%28computer_programming%29) is a notation for representing a constant value of a built-in data type.
 
-In *string literals*, most characters represent themselves, so if we want the literal with letters `s-t-r-i-n-g`, we simply write `'string'`.
+In _string literals_, most characters represent themselves, so if we want the literal with letters `s-t-r-i-n-g`, we simply write `'string'`.
 
 But what if we want to represent the literal for a linefeed (what you get when you press the &lt;Enter&gt; key on the keyboard), or a tab? These string literals are not printable the way an `s` or a `t` is. To solve this problem Python uses an [escape sequence](http://en.wikipedia.org/wiki/Escape_sequence) to represent these string literals.
 
@@ -124,7 +124,7 @@ There are several of these escape sequences that are helpful to know.
 
 ### 2.4. Names and assignment statements
 
-In order to write programs that *do things* to the *stuff* we now call **values**, we need a way to store our values in the memory of the computer and to name them for later retrieval.
+In order to write programs that _do things_ to the _stuff_ we now call **values**, we need a way to store our values in the memory of the computer and to name them for later retrieval.
 
 We use Python’s [assignment statement](http://en.wikipedia.org/wiki/Assignment_statement) for just this purpose:
 
@@ -160,9 +160,9 @@ A common way to represent variables on paper is to write the name of the variabl
 
 This diagram shows the result of executing the previous assignment statements:![Object diagram 1](https://www.openbookproject.net/books/bpp4awd/_images/object_diagram1.png)
 
-### 2.5. Variables are *variable*
+### 2.5. Variables are _variable_
 
-We use variables in a program to “remember” things, like the current score at the football game. But variables are *variable*. This means they can change over time, just like the scoreboard at a football game. You can assign a value to a variable, and later assign a different value to the same variable.
+We use variables in a program to “remember” things, like the current score at the football game. But variables are _variable_. This means they can change over time, just like the scoreboard at a football game. You can assign a value to a variable, and later assign a different value to the same variable.
 
 Note
 
@@ -186,18 +186,18 @@ A great deal of programming is about having the computer remember things, like a
 
 In the Python shell, entering a name at the prompt causes the interpreter to look up the value associated with the name (or return an error message if the name is not defined), and to display it. In a script, a defined name not in a `print` function call does not display at all.
 
-### 2.6. The assignment operator is *not* an equal sign!
+### 2.6. The assignment operator is _not_ an equal sign!
 
-The semantics of the assignment statement can be confusing to beginning programmers, especially since the **assignment token**, `=` can be easily confused with the with *equals* (Python uses the token `==` for equals, as we will see soon). It is not!
+The semantics of the assignment statement can be confusing to beginning programmers, especially since the **assignment token**, `=` can be easily confused with the with _equals_ (Python uses the token `==` for equals, as we will see soon). It is not!
 
     >>> n = 17
     >>> n = n + 1
     >>> n
     18
 
-The middle statement above would be impossible if `=` meant equals, since `n` could never be equal to `n + 1`. This statement is perfectly legal Python, however. The assignment statement links a *name*, on the left hand side of the operator, with a *value*, on the right hand side.
+The middle statement above would be impossible if `=` meant equals, since `n` could never be equal to `n + 1`. This statement is perfectly legal Python, however. The assignment statement links a _name_, on the left hand side of the operator, with a _value_, on the right hand side.
 
-The two `n`s in `n = n + 1` have different meanings: the `n` on the right is a memory look-up that is replaced by a value when the right hand side is *evaluated* by the Python interpreter. It has to already exist or a name error will result. The right hand side of the assignment statement is evaluated first.
+The two `n`s in `n = n + 1` have different meanings: the `n` on the right is a memory look-up that is replaced by a value when the right hand side is _evaluated_ by the Python interpreter. It has to already exist or a name error will result. The right hand side of the assignment statement is evaluated first.
 
 The `n` on the left is the name given to the new value computed on the right hand side as it is stored in the computer’s memory. It does not have to exist previously, since it will be added to the running program’s available names if it isn’t there already.
 
@@ -248,7 +248,7 @@ Python 3 has thirty-three keywords (and every now and again improvements to Pyth
 
 <table><thead><tr class="header"><th style="text-align: left;">and</th><th style="text-align: left;">as</th><th style="text-align: left;">assert</th><th style="text-align: left;">break</th><th style="text-align: left;">class</th><th style="text-align: left;">continue</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;">def</td><td style="text-align: left;">del</td><td style="text-align: left;">elif</td><td style="text-align: left;">else</td><td style="text-align: left;">except</td><td style="text-align: left;">finally</td></tr><tr class="even"><td style="text-align: left;">for</td><td style="text-align: left;">from</td><td style="text-align: left;">global</td><td style="text-align: left;">if</td><td style="text-align: left;">import</td><td style="text-align: left;">in</td></tr><tr class="odd"><td style="text-align: left;">is</td><td style="text-align: left;">lambda</td><td style="text-align: left;">nonlocal</td><td style="text-align: left;">not</td><td style="text-align: left;">or</td><td style="text-align: left;">pass</td></tr><tr class="even"><td style="text-align: left;">raise</td><td style="text-align: left;">return</td><td style="text-align: left;">try</td><td style="text-align: left;">while</td><td style="text-align: left;">with</td><td style="text-align: left;">yield</td></tr><tr class="odd"><td style="text-align: left;">True</td><td style="text-align: left;">False</td><td style="text-align: left;">None</td><td style="text-align: left;"></td><td style="text-align: left;"></td><td style="text-align: left;"></td></tr></tbody></table>
 
-You might want to keep this list handy. Actually, as will often be the case when learning to program with Python, when you aren’t sure about something, you can *ask Python*:
+You might want to keep this list handy. Actually, as will often be the case when learning to program with Python, when you aren’t sure about something, you can _ask Python_:
 
     >>> import keyword
     >>> keyword.kwlist
@@ -265,7 +265,7 @@ Programmers generally choose names for their variables that are meaningful to th
 
 Caution
 
-Beginners sometimes confuse *meaningful to the human readers* with *meaningful to the computer*. So they’ll wrongly think that because they’ve called some variable `average` or `pi`, it will somehow automatically calculate an average, or automatically associate the variable `pi` with the value 3.14159. No! The computer doesn’t attach semantic meaning to your variable names. It is up to you to do that.
+Beginners sometimes confuse _meaningful to the human readers_ with _meaningful to the computer_. So they’ll wrongly think that because they’ve called some variable `average` or `pi`, it will somehow automatically calculate an average, or automatically associate the variable `pi` with the value 3.14159. No! The computer doesn’t attach semantic meaning to your variable names. It is up to you to do that.
 
 ### 2.8. Statements and expressions
 
@@ -273,7 +273,7 @@ A [statement](http://en.wikipedia.org/wiki/Statement_%28programming%29) is an in
 
 When you type a statement on the command line, Python executes it. The interpreter does not display any results.
 
-An [expression](http://en.wikipedia.org/wiki/Expression_%28programming%29) is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter **evaluates** it and displays the result, which is always a *value*:
+An [expression](http://en.wikipedia.org/wiki/Expression_%28programming%29) is a combination of values, variables, operators, and calls to functions. If you type an expression at the Python prompt, the interpreter **evaluates** it and displays the result, which is always a _value_:
 
     >>> 1 + 1
     2
@@ -282,7 +282,7 @@ An [expression](http://en.wikipedia.org/wiki/Expression_%28programming%29) is a 
 
 In this example `len` is a built-in Python function that returns the number of characters in a string. We’ve previously seen the `print` and the `type` functions, so this is our third example of a function.
 
-The *evaluation of an expression* produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable.
+The _evaluation of an expression_ produces a value, which is why expressions can appear on the right hand side of assignment statements. A value all by itself is a simple expression, and so is a variable.
 
     >>> 17
     17
@@ -320,7 +320,7 @@ Example: so let us convert 645 minutes into hours:
     >>> hours
     10.75
 
-Oops! In Python 3, the division operator `/` always yields a floating point result. What we might have wanted to know was how many *whole* hours there are, and how many minutes remain. Python gives us two different flavors of the division operator. The second, called **integer division** uses the token `//`. It always *truncates* its result down to the next smallest integer (to the left on the number line).
+Oops! In Python 3, the division operator `/` always yields a floating point result. What we might have wanted to know was how many _whole_ hours there are, and how many minutes remain. Python gives us two different flavors of the division operator. The second, called **integer division** uses the token `//`. It always _truncates_ its result down to the next smallest integer (to the left on the number line).
 
     >>> 7 / 4
     1.75
@@ -364,7 +364,7 @@ When more than one operator appears in an expression, the order of evaluation de
 
 1.  **P**arentheses have the highest precedence and can be used to force an expression to evaluate in the order you want. Since expressions in parentheses are evaluated first, `2 * (3-1)` is 4, and `(1+1)**(5-2)` is 8. You can also use parentheses to make an expression easier to read, as in `(minute * 100) / 60`, even though it doesn’t change the result.
 2.  **E**xponentiation has the next highest precedence, so `2**1+1` is 3 and not 4, and `3*1**3` is 3 and not 27.
-3.  **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So `2*3-1` yields 5 rather than 4, and `5-2*2` is 1, not 6. \#. Operators with the *same* precedence are evaluated from left-to-right. In algebra we say they are *left-associative*. So in the expression `6-3+2`, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been `6-(3+2)`, which is 1. (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don’t be misled. Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
+3.  **M**ultiplication and both **D**ivision operators have the same precedence, which is higher than **A**ddition and **S**ubtraction, which also have the same precedence. So `2*3-1` yields 5 rather than 4, and `5-2*2` is 1, not 6. \#. Operators with the _same_ precedence are evaluated from left-to-right. In algebra we say they are _left-associative_. So in the expression `6-3+2`, the subtraction happens first, yielding 3. We then add 2 to get the result 5. If the operations had been evaluated from right to left, the result would have been `6-(3+2)`, which is 1. (The acronym PEDMAS could mislead you to thinking that division has higher precedence than multiplication, and addition is done ahead of subtraction - don’t be misled. Subtraction and addition are at the same precedence, and the left-to-right rule applies.)
 
 Note
 
@@ -399,7 +399,7 @@ On one hand, this interpretation of `+` and `*` makes sense by analogy with addi
 
 Here we’ll look at three more Python functions, `int`, `float` and `str`, which will (attempt to) convert their arguments into types `int`, `float` and `str` respectively. We call these **type converter** functions.
 
-The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it *discards* the fractional portion of the number - a process we call *truncation towards zero* on the number line. Let us see this in action:
+The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it _discards_ the fractional portion of the number - a process we call _truncation towards zero_ on the number line. Let us see this in action:
 
     >>> int(3.14)
     3
@@ -444,7 +444,7 @@ There is a built-in function in Python for getting input from the user:
 
 The user of the program can enter the name and press `return`. When this happens the text that has been entered is returned from the `input` function, and in this case assigned to the variable `name`.
 
-The string value inside the parentheses is called a **prompt** and contains a message which will be displayed to the user when the statement is executed to *prompt* their response.
+The string value inside the parentheses is called a **prompt** and contains a message which will be displayed to the user when the statement is executed to _prompt_ their response.
 
 When a key is pressed on a keyboard a single character is sent to a [keyboard buffer](http://en.wikipedia.org/wiki/Keyboard_buffer) inside the computer. When the [enter key](http://en.wikipedia.org/wiki/Enter_key) is pressed, the sequence of characters inside the keyboard buffer in the order in which they were received are returned by the `input` function as a single string value.
 
@@ -505,7 +505,7 @@ A statement that assigns a value to a name (variable). To the left of the assign
 
     n = n + 1
 
-`n` plays a very different role on each side of the `=`. On the right it is a *value* and makes up part of the *expression* which will be evaluated by the Python interpreter before assigning it to the name on the left.assignment token
+`n` plays a very different role on each side of the `=`. On the right it is a _value_ and makes up part of the _expression_ which will be evaluated by the Python interpreter before assigning it to the name on the left.assignment token
 
 `=` is Python’s assignment token, which should not be confused with the mathematical comparison operator using the same symbol.composition
 
@@ -521,7 +521,7 @@ To simplify an expression by performing the operations in order to yield a singl
 
 A combination of variables, operators, and values that represents a single result value.float
 
-A Python data type which stores *floating-point* numbers. Floating-point numbers are stored internally in two parts: a *base* and an *exponent*. When printed in the standard format, they look like decimal numbers. Beware of rounding errors when you use `float`s, and remember that they are only approximate values.int
+A Python data type which stores _floating-point_ numbers. Floating-point numbers are stored internally in two parts: a _base_ and an _exponent_. When printed in the standard format, they look like decimal numbers. Beware of rounding errors when you use `float`s, and remember that they are only approximate values.int
 
 A Python data type that holds positive and negative whole numbers.integer division
 
@@ -551,4 +551,4 @@ A number, string, or any of the other things that can be stored in a variable or
 
 A name that refers to a value.variable name
 
-A name given to a variable. Variable names in Python consist of a sequence of letters (a..z, A..Z, and \_) and digits (0..9) that begins with a letter. In best programming practice, variable names should be chosen so that they describe their use in the program, making the program *self documenting*.
+A name given to a variable. Variable names in Python consist of a sequence of letters (a..z, A..Z, and \_) and digits (0..9) that begins with a letter. In best programming practice, variable names should be chosen so that they describe their use in the program, making the program _self documenting_.

@@ -1,5 +1,4 @@
-Minimize sum of node values by filling given empty Tree such that each node is GCD of its children
-==================================================================================================
+# Minimize sum of node values by filling given empty Tree such that each node is GCD of its children
 
 Given a Binary Tree consisting of **N** nodes having no values in it and an integer **X**, that represents the value of the root node, the task is to find the minimum sum of all the nodes value of the given Tree such that the value of each node must be the value of GCDs of its children. Also, no two [siblings](https://www.geeksforgeeks.org/check-if-two-nodes-in-a-binary-tree-are-siblings/) can have the same value.
 

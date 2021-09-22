@@ -1,5 +1,4 @@
-Topological Sort
-================
+# Topological Sort
 
 {% tabs %} {% tab title=“Python” %}
 

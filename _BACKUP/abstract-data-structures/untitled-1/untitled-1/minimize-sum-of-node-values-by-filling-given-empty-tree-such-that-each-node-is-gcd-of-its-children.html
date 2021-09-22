@@ -1,105 +1,309 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children">Minimize sum of node values by filling given empty Tree such that each node is GCD of its children</h1>
-<p>Given a Binary Tree consisting of <strong>N</strong> nodes having no values in it and an integer <strong>X</strong>, that represents the value of the root node, the task is to find the minimum sum of all the nodes value of the given Tree such that the value of each node must be the value of GCDs of its children. Also, no two <a href="https://www.geeksforgeeks.org/check-if-two-nodes-in-a-binary-tree-are-siblings/">siblings</a> can have the same value.</p>
-<p><strong>Examples:</strong></p>
-<blockquote>
-<p><strong>Input:</strong></p>
-<p><strong>Output:</strong> 22<br />
-<strong>Explanation:</strong> The given tree can be filled as shown below:</p>
-<p><strong>Input:</strong></p>
-<p><strong>Output:</strong> 18<br />
-<strong>Explanation:</strong> The given tree can be filled as shown below:</p>
-</blockquote>
-<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142526/newtreedrawio2-660x224.png" /></p>
-<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142050/tree11-660x290.png" /></p>
-<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142615/newtreedrawio2.png" /></p>
-<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20210910140356/tree1-288x300.png" /></p>
-<p><strong>Approach:</strong> In order to minimize the sum, both of the children can have the value of <strong>X</strong> and <strong>2*X</strong> where <strong>X</strong> is the value of the parent. Now, if the node has only one child, then its value is going to be equal to its parent node. But to decide which child should have a value of <strong>X</strong> and <strong>2*X</strong> to get the minimum sum, the depth of each subtree for every node will be considered. The child having more depth will be given a value of <strong>X</strong> so that it can transfer it to more of its children while another one will get the value of <strong>2*X</strong>. Follow the below steps to solve this problem:</p>
-<ol type="1">
-<li>Find the depth of each node and store it in a <a href="http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/">map</a> alongside the node address as the key.</li>
-<li>Now, perform the <a href="http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/">DFS Traversal</a>, starting from the <strong>root node</strong>, and in each call assign the node a value of <strong>X</strong> if it has more depth than its sibling. Otherwise, assign the value <strong>2*X</strong>.</li>
-<li>After the above step, find the sum of both left and right child values while <a href="http://www.geeksforgeeks.org/backtracking-algorithms/">backtracking</a> and return the total sum, i.e., the sum of the value of the left child, right child, and current node in each call.</li>
-<li>After completing the above steps, print the value returned from the <strong>DFS Call</strong> as the minimum sum possible.</li>
-</ol>
-<p>{% tabs %} {% tab title=“Python” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>
+      minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children
+    </title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1
+      id="minimize-sum-of-node-values-by-filling-given-empty-tree-such-that-each-node-is-gcd-of-its-children"
+    >
+      Minimize sum of node values by filling given empty Tree such that each
+      node is GCD of its children
+    </h1>
+    <p>
+      Given a Binary Tree consisting of <strong>N</strong> nodes having no
+      values in it and an integer <strong>X</strong>, that represents the value
+      of the root node, the task is to find the minimum sum of all the nodes
+      value of the given Tree such that the value of each node must be the value
+      of GCDs of its children. Also, no two
+      <a
+        href="https://www.geeksforgeeks.org/check-if-two-nodes-in-a-binary-tree-are-siblings/"
+        >siblings</a
+      >
+      can have the same value.
+    </p>
+    <p><strong>Examples:</strong></p>
+    <blockquote>
+      <p><strong>Input:</strong></p>
+      <p>
+        <strong>Output:</strong> 22<br />
+        <strong>Explanation:</strong> The given tree can be filled as shown
+        below:
+      </p>
+      <p><strong>Input:</strong></p>
+      <p>
+        <strong>Output:</strong> 18<br />
+        <strong>Explanation:</strong> The given tree can be filled as shown
+        below:
+      </p>
+    </blockquote>
+    <p>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142526/newtreedrawio2-660x224.png"
+      />
+    </p>
+    <p>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142050/tree11-660x290.png"
+      />
+    </p>
+    <p>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20210910142615/newtreedrawio2.png"
+      />
+    </p>
+    <p>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/20210910140356/tree1-288x300.png"
+      />
+    </p>
+    <p>
+      <strong>Approach:</strong> In order to minimize the sum, both of the
+      children can have the value of <strong>X</strong> and
+      <strong>2*X</strong> where <strong>X</strong> is the value of the parent.
+      Now, if the node has only one child, then its value is going to be equal
+      to its parent node. But to decide which child should have a value of
+      <strong>X</strong> and <strong>2*X</strong> to get the minimum sum, the
+      depth of each subtree for every node will be considered. The child having
+      more depth will be given a value of <strong>X</strong> so that it can
+      transfer it to more of its children while another one will get the value
+      of <strong>2*X</strong>. Follow the below steps to solve this problem:
+    </p>
+    <ol type="1">
+      <li>
+        Find the depth of each node and store it in a
+        <a
+          href="http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/"
+          >map</a
+        >
+        alongside the node address as the key.
+      </li>
+      <li>
+        Now, perform the
+        <a
+          href="http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/"
+          >DFS Traversal</a
+        >, starting from the <strong>root node</strong>, and in each call assign
+        the node a value of <strong>X</strong> if it has more depth than its
+        sibling. Otherwise, assign the value <strong>2*X</strong>.
+      </li>
+      <li>
+        After the above step, find the sum of both left and right child values
+        while
+        <a href="http://www.geeksforgeeks.org/backtracking-algorithms/"
+          >backtracking</a
+        >
+        and return the total sum, i.e., the sum of the value of the left child,
+        right child, and current node in each call.
+      </li>
+      <li>
+        After completing the above steps, print the value returned from the
+        <strong>DFS Call</strong> as the minimum sum possible.
+      </li>
+    </ol>
+    <p>{% tabs %} {% tab title=“Python” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="co"># Python3 program for the above approach</span></a>
 <a class="sourceLine" id="cb1-3" title="3"></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="co"># Structure of Tree Node</span></a>
@@ -175,10 +379,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-74" title="74">root.left.right.right.left <span class="op">=</span> Node(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-75" title="75"></a>
 <a class="sourceLine" id="cb1-76" title="76"><span class="co"># Fill the tree and print minimum tree sum</span></a>
-<a class="sourceLine" id="cb1-77" title="77"><span class="bu">print</span>(minimumSum(root))</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“JS” %}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// Javascript program for the above approach</span></a>
+<a class="sourceLine" id="cb1-77" title="77"><span class="bu">print</span>(minimumSum(root))</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“JS” %}</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// Javascript program for the above approach</span></a>
 <a class="sourceLine" id="cb2-2" title="2"></a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="co">// Structure of Tree Node</span></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="kw">class</span> Node <span class="op">{</span></a>
@@ -265,8 +473,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-85" title="85"><span class="va">root</span>.<span class="va">left</span>.<span class="va">right</span>.<span class="va">right</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="op">-</span><span class="dv">1</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb2-86" title="86"></a>
 <a class="sourceLine" id="cb2-87" title="87"><span class="co">// Fill the tree and print minimum tree sum</span></a>
-<a class="sourceLine" id="cb2-88" title="88"><span class="va">document</span>.<span class="at">write</span>(<span class="at">minimumSum</span>(root))<span class="op">;</span></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“REPL” %} {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/prac4242">@bgoonz/prac4242</span>#another.py” %} {% endtab %} {% endtabs %}</p>
-</body>
+<a class="sourceLine" id="cb2-88" title="88"><span class="va">document</span>.<span class="at">write</span>(<span class="at">minimumSum</span>(root))<span class="op">;</span></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>
+      {% tab title=“REPL” %} {% embed url=“https://replit.com/<span
+        class="citation"
+        data-cites="bgoonz/prac4242"
+        >@bgoonz/prac4242</span
+      >#another.py” %} {% endtab %} {% endtabs %}
+    </p>
+  </body>
 </html>

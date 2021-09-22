@@ -1,146 +1,356 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>stack-continued</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="stack-continued">Stack Continued</h1>
-<h2 id="stack">Stack <a id="cb03"></a></h2>
-<p>Unlike an array structure, which allows random access at all the positions, a stack limits the inserting and removing operation to only one side of the data sequence. A stack follows the last in, first out (LIFO) principle.</p>
-<p>In Python, stack can be implemented using a list. To follow the LIFO principle, inserting and removing operations both occur at the tail of the list.Python implementation of a stack</p>
-<p>{% embed url=“https://gist.github.com/bgoonz/cc65371ece0512994e704b8ce9f702d5” %}</p>
-<h4 id="stack-introduction">Stack: Introduction <a id="stack-introduction"></a></h4>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><img src="https://www.section.io/engineering-education/stack-data-structure-python/stack-books.jpg" alt="Stack, Books" /></th>
-<th style="text-align: left;">A great analogy we can use is stacking a pile of books. We always keep a new book on top and remove the topmost book. Stacks are similar to queues in that they are linear collections of items, but they differ in the order in which they are accessed. Stacks are used in a variety of areas from Operating System Software, in Compilers and Language Parsing, and to implement other complex Data Structures like Trees and Graphs.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-<p><img src="https://www.section.io/engineering-education/stack-data-structure-python/pushpop.png" alt="Push Pop" /> <code>push</code> in a stack is putting an item on top of the stack.</p>
-<p><code>pop</code> in a stack is taking out the top item in the stack.</p>
-<h4 id="uses-of-stacks">Uses of Stacks <a id="uses-of-stacks"></a></h4>
-<p>Stacks are used extensively in a lot of places.</p>
-<p><strong>Compilers and Parsers –</strong> Expression evaluation is done by stacks by postfix or prefix using stacks in compilers.</p>
-<p><strong>Activation Records –</strong> An activation record is data that keeps track of the procedure activities during the runtime of a program.</p>
-<ul>
-<li>When the function is called, an activation record is created for it and keeps track of parameters and information like local variables, return address, static and dynamic links, and the return value.</li>
-<li>This activation record is the fundamental part of programming languages and is <strong>implemented</strong> using a <strong>stack</strong>.</li>
-<li><strong>Web Browsers –</strong> Web Browsers use a stack to keep track of URLs that you have visited previously. When you visit a new page, it is added to the stack and when you hit the back button, the stack is popped and the previous URL is accessed.</li>
-<li><strong>To implement other Data Structures –</strong> Stacks are used to implement searches in Graphs and Trees, which are other complex data structures.</li>
-</ul>
-<h4 id="implementing-stacks">Implementing Stacks <a id="implementing-stacks"></a></h4>
-<p><strong>Stack Methods</strong></p>
-<p>There are various functions that are associated with a stack. They are,</p>
-<p><strong>stack.isEmpty()</strong></p>
-<ul>
-<li>The <code>stack.isEmpty()</code> method returns <code>True</code> if the stack is empty. Else, returns <code>False</code></li>
-<li>Time Complexity - O(1)</li>
-</ul>
-<p><strong>stack.length()</strong></p>
-<ul>
-<li>The <code>stack.length()</code> method returns the length of the stack.</li>
-<li>Time Complexity - O(1)</li>
-</ul>
-<p><strong>stack.top()</strong></p>
-<ul>
-<li>The <code>stack.top()</code> method returns a pointer/reference to the top element in the stack.</li>
-<li>Time Complexity - O(1)</li>
-</ul>
-<p><strong>stack.push(x)</strong></p>
-<ul>
-<li>The <code>stack.push()</code> method inserts the element, <code>x</code> to the top of the stack.</li>
-<li>Time Complexity - O(1)</li>
-</ul>
-<p><strong>stack.pop()</strong></p>
-<ul>
-<li>The <code>stack.pop()</code> method removes the top element of the stack and returns it.</li>
-<li>Time Complexity - O(1)</li>
-</ul>
-<h4 id="stack-implementations">Stack Implementations <a id="stack-implementations"></a></h4>
-<p>In Python, we can implement the stack by various methods. We are going to dive into two of the methods - the <strong>common method</strong> and the <strong>efficient method</strong>.</p>
-<h4 id="stack-using-a-list">Stack using a List <a id="stack-using-a-list"></a></h4>
-<p>We use the list methods <code>append</code> and <code>pop</code> to implement a Stack.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> Stack:</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>stack-continued</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="stack-continued">Stack Continued</h1>
+    <h2 id="stack">Stack <a id="cb03"></a></h2>
+    <p>
+      Unlike an array structure, which allows random access at all the
+      positions, a stack limits the inserting and removing operation to only one
+      side of the data sequence. A stack follows the last in, first out (LIFO)
+      principle.
+    </p>
+    <p>
+      In Python, stack can be implemented using a list. To follow the LIFO
+      principle, inserting and removing operations both occur at the tail of the
+      list.Python implementation of a stack
+    </p>
+    <p>
+      {% embed
+      url=“https://gist.github.com/bgoonz/cc65371ece0512994e704b8ce9f702d5” %}
+    </p>
+    <h4 id="stack-introduction">
+      Stack: Introduction <a id="stack-introduction"></a>
+    </h4>
+    <table>
+      <colgroup>
+        <col style="width: 50%" />
+        <col style="width: 50%" />
+      </colgroup>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left">
+            <img
+              src="https://www.section.io/engineering-education/stack-data-structure-python/stack-books.jpg"
+              alt="Stack, Books"
+            />
+          </th>
+          <th style="text-align: left">
+            A great analogy we can use is stacking a pile of books. We always
+            keep a new book on top and remove the topmost book. Stacks are
+            similar to queues in that they are linear collections of items, but
+            they differ in the order in which they are accessed. Stacks are used
+            in a variety of areas from Operating System Software, in Compilers
+            and Language Parsing, and to implement other complex Data Structures
+            like Trees and Graphs.
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p>
+      <img
+        src="https://www.section.io/engineering-education/stack-data-structure-python/pushpop.png"
+        alt="Push Pop"
+      />
+      <code>push</code> in a stack is putting an item on top of the stack.
+    </p>
+    <p><code>pop</code> in a stack is taking out the top item in the stack.</p>
+    <h4 id="uses-of-stacks">Uses of Stacks <a id="uses-of-stacks"></a></h4>
+    <p>Stacks are used extensively in a lot of places.</p>
+    <p>
+      <strong>Compilers and Parsers –</strong> Expression evaluation is done by
+      stacks by postfix or prefix using stacks in compilers.
+    </p>
+    <p>
+      <strong>Activation Records –</strong> An activation record is data that
+      keeps track of the procedure activities during the runtime of a program.
+    </p>
+    <ul>
+      <li>
+        When the function is called, an activation record is created for it and
+        keeps track of parameters and information like local variables, return
+        address, static and dynamic links, and the return value.
+      </li>
+      <li>
+        This activation record is the fundamental part of programming languages
+        and is <strong>implemented</strong> using a <strong>stack</strong>.
+      </li>
+      <li>
+        <strong>Web Browsers –</strong> Web Browsers use a stack to keep track
+        of URLs that you have visited previously. When you visit a new page, it
+        is added to the stack and when you hit the back button, the stack is
+        popped and the previous URL is accessed.
+      </li>
+      <li>
+        <strong>To implement other Data Structures –</strong> Stacks are used to
+        implement searches in Graphs and Trees, which are other complex data
+        structures.
+      </li>
+    </ul>
+    <h4 id="implementing-stacks">
+      Implementing Stacks <a id="implementing-stacks"></a>
+    </h4>
+    <p><strong>Stack Methods</strong></p>
+    <p>
+      There are various functions that are associated with a stack. They are,
+    </p>
+    <p><strong>stack.isEmpty()</strong></p>
+    <ul>
+      <li>
+        The <code>stack.isEmpty()</code> method returns <code>True</code> if the
+        stack is empty. Else, returns <code>False</code>
+      </li>
+      <li>Time Complexity - O(1)</li>
+    </ul>
+    <p><strong>stack.length()</strong></p>
+    <ul>
+      <li>
+        The <code>stack.length()</code> method returns the length of the stack.
+      </li>
+      <li>Time Complexity - O(1)</li>
+    </ul>
+    <p><strong>stack.top()</strong></p>
+    <ul>
+      <li>
+        The <code>stack.top()</code> method returns a pointer/reference to the
+        top element in the stack.
+      </li>
+      <li>Time Complexity - O(1)</li>
+    </ul>
+    <p><strong>stack.push(x)</strong></p>
+    <ul>
+      <li>
+        The <code>stack.push()</code> method inserts the element,
+        <code>x</code> to the top of the stack.
+      </li>
+      <li>Time Complexity - O(1)</li>
+    </ul>
+    <p><strong>stack.pop()</strong></p>
+    <ul>
+      <li>
+        The <code>stack.pop()</code> method removes the top element of the stack
+        and returns it.
+      </li>
+      <li>Time Complexity - O(1)</li>
+    </ul>
+    <h4 id="stack-implementations">
+      Stack Implementations <a id="stack-implementations"></a>
+    </h4>
+    <p>
+      In Python, we can implement the stack by various methods. We are going to
+      dive into two of the methods - the <strong>common method</strong> and the
+      <strong>efficient method</strong>.
+    </p>
+    <h4 id="stack-using-a-list">
+      Stack using a List <a id="stack-using-a-list"></a>
+    </h4>
+    <p>
+      We use the list methods <code>append</code> and <code>pop</code> to
+      implement a Stack.
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> Stack:</a>
 <a class="sourceLine" id="cb1-2" title="2"></a>
 <a class="sourceLine" id="cb1-3" title="3">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb1-4" title="4">        <span class="co">&quot;&quot;&quot;</span></a>
@@ -162,11 +372,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-20" title="20">        <span class="va">self</span>.stack.append(x)</a>
 <a class="sourceLine" id="cb1-21" title="21"></a>
 <a class="sourceLine" id="cb1-22" title="22">    <span class="kw">def</span> pop(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="va">None</span>:</a>
-<a class="sourceLine" id="cb1-23" title="23">        <span class="va">self</span>.stack.pop()</a></code></pre></div>
-<h4 id="stack-using-collection.deque">Stack using collection.Deque <a id="stack-using-collectiondeque"></a></h4>
-<p>Python <code>collections</code> are container classes that are used for data collection storage. They are highly optimized, are really fast, and have lots of methods built-in.</p>
-<p><code>Deque</code> is one such python collection that is used for inserting and removing items. We can use it to create a faster implementation of a stack.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="im">from</span> collections <span class="im">import</span> deque</a>
+<a class="sourceLine" id="cb1-23" title="23">        <span class="va">self</span>.stack.pop()</a></code></pre>
+    </div>
+    <h4 id="stack-using-collection.deque">
+      Stack using collection.Deque <a id="stack-using-collectiondeque"></a>
+    </h4>
+    <p>
+      Python <code>collections</code> are container classes that are used for
+      data collection storage. They are highly optimized, are really fast, and
+      have lots of methods built-in.
+    </p>
+    <p>
+      <code>Deque</code> is one such python collection that is used for
+      inserting and removing items. We can use it to create a faster
+      implementation of a stack.
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="im">from</span> collections <span class="im">import</span> deque</a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="kw">class</span> Stack:</a>
 <a class="sourceLine" id="cb2-3" title="3"></a>
 <a class="sourceLine" id="cb2-4" title="4">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
@@ -189,20 +413,66 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-21" title="21">        <span class="va">self</span>.stack.append(x)</a>
 <a class="sourceLine" id="cb2-22" title="22"></a>
 <a class="sourceLine" id="cb2-23" title="23">    <span class="kw">def</span> pop(<span class="va">self</span>) <span class="op">-&gt;</span> <span class="va">None</span>:</a>
-<a class="sourceLine" id="cb2-24" title="24">        <span class="va">self</span>.stack.pop()</a></code></pre></div>
-<h4 id="practice-stacks">Practice Stacks <a id="practice-stacks"></a></h4>
-<p>Once you are done with understanding the stack and the basic implementation, practice the following problems and problem-sets in order to get a strong grasp on stacks.</p>
-<ul>
-<li>Infix to Postfix - <a href="https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/">GeeksForGeeks</a></li>
-<li>Next Greater Element - <a href="https://www.geeksforgeeks.org/next-greater-element/">GeeksForGeeks</a></li>
-<li>Postfix to Prefix - <a href="https://www.geeksforgeeks.org/postfix-prefix-conversion/">GeeksForGeeks</a></li>
-<li>Reverse a String using Stack - <a href="https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/">GeeksForGeeks</a></li>
-<li>Mini Parser - <a href="https://leetcode.com/problems/mini-parser/">LeetCode</a></li>
-<li>Simplify Path - <a href="https://leetcode.com/problems/simplify-path/">LeetCode</a></li>
-<li>More Stack Problems - <a href="https://leetcode.com/tag/stack/">LeetCode</a></li>
-<li>Stack Problem Set - <a href="https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks">HackerRank</a></li>
-</ul>
-<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
-<p>We have learned the implementation, importance, and application of stacks. This is one of the most important data structures to know and it is extensively asked in the computer science industry. It is important to have strong knowledge on this topic as it would give you an edge.</p>
-</body>
+<a class="sourceLine" id="cb2-24" title="24">        <span class="va">self</span>.stack.pop()</a></code></pre>
+    </div>
+    <h4 id="practice-stacks">Practice Stacks <a id="practice-stacks"></a></h4>
+    <p>
+      Once you are done with understanding the stack and the basic
+      implementation, practice the following problems and problem-sets in order
+      to get a strong grasp on stacks.
+    </p>
+    <ul>
+      <li>
+        Infix to Postfix -
+        <a href="https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/"
+          >GeeksForGeeks</a
+        >
+      </li>
+      <li>
+        Next Greater Element -
+        <a href="https://www.geeksforgeeks.org/next-greater-element/"
+          >GeeksForGeeks</a
+        >
+      </li>
+      <li>
+        Postfix to Prefix -
+        <a href="https://www.geeksforgeeks.org/postfix-prefix-conversion/"
+          >GeeksForGeeks</a
+        >
+      </li>
+      <li>
+        Reverse a String using Stack -
+        <a
+          href="https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/"
+          >GeeksForGeeks</a
+        >
+      </li>
+      <li>
+        Mini Parser -
+        <a href="https://leetcode.com/problems/mini-parser/">LeetCode</a>
+      </li>
+      <li>
+        Simplify Path -
+        <a href="https://leetcode.com/problems/simplify-path/">LeetCode</a>
+      </li>
+      <li>
+        More Stack Problems -
+        <a href="https://leetcode.com/tag/stack/">LeetCode</a>
+      </li>
+      <li>
+        Stack Problem Set -
+        <a
+          href="https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks"
+          >HackerRank</a
+        >
+      </li>
+    </ul>
+    <h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+    <p>
+      We have learned the implementation, importance, and application of stacks.
+      This is one of the most important data structures to know and it is
+      extensively asked in the computer science industry. It is important to
+      have strong knowledge on this topic as it would give you an edge.
+    </p>
+  </body>
 </html>

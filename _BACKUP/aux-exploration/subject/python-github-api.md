@@ -1,5 +1,4 @@
-Python GitHub API
-=================
+# Python GitHub API
 
 When fetching information from the web, we usually request for complete web pages, and extract information by parsing the HTML scripts. Similarly, an Application Programming Interface (API) performs the same operation in a more efficient way.
 
@@ -17,11 +16,11 @@ As a prerequisite, you must have a little understanding of Python to follow the 
 
 In this article we will go through:
 
--   Using an API call to request data.
--   Installation of `requests` library.
--   Keeping track of an API response.
--   Using the response dictionary.
--   Summing up the top repositories.
+- Using an API call to request data.
+- Installation of `requests` library.
+- Keeping track of an API response.
+- Using the response dictionary.
+- Summing up the top repositories.
 
 #### Requesting data using an API call <span id="requesting-data-using-an-api-call"></span>
 
@@ -33,12 +32,12 @@ Type the following into your web browser URL bar and press **Enter** to see how 
 
 Let’s examine the parts of the API call:
 
--   `https://api.github.com/` - sends the request to the GitHub web server that handles API calls.
--   `search/repositories` - is the endpoint that informs the API to search across all of GitHub repositories.
--   `?` - indicates that an argument is about to be passed.
--   `q=`- the character `q` stands for `query`.
--   `language:python` - that queries repositories that use only Python as their main language.
--   `&sort=stars` - the projects are sorted by the number of stars they have gotten.
+- `https://api.github.com/` - sends the request to the GitHub web server that handles API calls.
+- `search/repositories` - is the endpoint that informs the API to search across all of GitHub repositories.
+- `?` - indicates that an argument is about to be passed.
+- `q=`- the character `q` stands for `query`.
+- `language:python` - that queries repositories that use only Python as their main language.
+- `&sort=stars` - the projects are sorted by the number of stars they have gotten.
 
 Upon fetching the API data, the response will look like:
 
@@ -57,9 +56,9 @@ Upon fetching the API data, the response will look like:
 
 Let’s examine the output:
 
--   In the second line of the result, you can see that GitHub has detected a total of `7668509` Python projects.
--   We know the request was successful if the value for `incomplete results` is `false`.
--   The key `items` holds a list of objects that contains information of the Python-based projects on GitHub.
+- In the second line of the result, you can see that GitHub has detected a total of `7668509` Python projects.
+- We know the request was successful if the value for `incomplete results` is `false`.
+- The key `items` holds a list of objects that contains information of the Python-based projects on GitHub.
 
 Let’s try to explore more information by parsing the API’s output using Python.
 
@@ -90,13 +89,13 @@ To fetch the most starred Python projects on GitHub, we’ll start writing a pro
 
 Let’s understand the code snippet above:
 
--   We begin by importing the `requests` module.
--   Then, we use the `requests` package to make the API call to the particular `url` using `get()`.
--   The API response is saved by a variable called `response`.
--   The `status_code` attribute of the `response` object indicates if the request was complete.
--   A successful API call returns the `status_code` `200`, while an unsuccessful one returns `500`.
--   Then, we use the `json()` function to convert the information from JSON format to a Python dictionary.
--   We store the converted JSON in `response_dict`.
+- We begin by importing the `requests` module.
+- Then, we use the `requests` package to make the API call to the particular `url` using `get()`.
+- The API response is saved by a variable called `response`.
+- The `status_code` attribute of the `response` object indicates if the request was complete.
+- A successful API call returns the `status_code` `200`, while an unsuccessful one returns `500`.
+- Then, we use the `json()` function to convert the information from JSON format to a Python dictionary.
+- We store the converted JSON in `response_dict`.
 
 Then, we print the keys from `response_dict`, which are as follows:
 
@@ -121,11 +120,11 @@ Here, we will be calculating the total number of available repositories with lan
 
 Let’s understand the code snippet above:
 
--   The value linked with the `total_count` reflects the count of GitHub Python projects available.
--   The value of `items` is a list of dictionaries, each providing information about a single Python repository.
--   The list of dictionaries is then saved in `repos_dicts`.
--   We select the first item from `repos_dicts` to look more closely at the information given about each repository.
--   Finally, we print the all of keys of an `item`.
+- The value linked with the `total_count` reflects the count of GitHub Python projects available.
+- The value of `items` is a list of dictionaries, each providing information about a single Python repository.
+- The list of dictionaries is then saved in `repos_dicts`.
+- We select the first item from `repos_dicts` to look more closely at the information given about each repository.
+- Finally, we print the all of keys of an `item`.
 
 **Output:**
 
@@ -144,10 +143,10 @@ Let’s understand the code snippet above:
 
 The GitHub API gets back a range of data for every repository like:
 
--   `status_code` as `200`.
--   Total number of repos as `7694326`.
--   Total number of repos found as `30`.
--   Each repository `repo_dict` having `74` keys.
+- `status_code` as `200`.
+- Total number of repos as `7694326`.
+- Total number of repos found as `30`.
+- Each repository `repo_dict` having `74` keys.
 
 You may get a sense of the type of information you can get about a repository by observing these keys.
 
@@ -184,11 +183,11 @@ Let’s have a look at what some of the keys in repos dict entail:
 
 Examining the output:
 
--   You can observe that the most popular Python repository on GitHub is `public-apis`.
--   Owner of the repository is `public-apis`.
--   It has been starred more than `140,000` times.
--   Project was created on the date of `2016 March`.
--   Project description of `public-apis` is `collective collection of open APIs`.
+- You can observe that the most popular Python repository on GitHub is `public-apis`.
+- Owner of the repository is `public-apis`.
+- It has been starred more than `140,000` times.
+- Project was created on the date of `2016 March`.
+- Project description of `public-apis` is `collective collection of open APIs`.
 
 #### Summing up the top repositories <span id="summing-up-the-top-repositories"></span>
 
@@ -233,10 +232,10 @@ We print the name of each project, its owner, the number of stars it has, its Gi
 
 In this tutorial, we have gone over the following:
 
--   Using an API call to request data.
--   Installing requests.
--   Processing an API response.
--   Using the response dictionary.
--   Summing up the top repositories.
+- Using an API call to request data.
+- Installing requests.
+- Processing an API response.
+- Using the response dictionary.
+- Summing up the top repositories.
 
 You can check out the full code [here](https://github.com/Bonimum/Working-with-GitHub-s-web-API-in-Python/blob/main/index.md).

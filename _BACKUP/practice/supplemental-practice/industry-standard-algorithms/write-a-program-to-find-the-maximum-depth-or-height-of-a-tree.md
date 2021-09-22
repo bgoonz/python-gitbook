@@ -1,5 +1,4 @@
-Write a Program to Find the Maximum Depth or Height of a Tree
-=============================================================
+# Write a Program to Find the Maximum Depth or Height of a Tree
 
 Given a binary tree, find height of it. Height of empty tree is 0 and height of below tree is 2. [Recommended: Please solve it on “**PRACTICE**” first, before moving on to the solution.](https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1)
 
@@ -41,7 +40,6 @@ Recursively calculate height of left and right subtrees of a node and assign hei
      maxDepth('4') = 0     maxDepth('5') = 0
 
 Python3
-
 
     # Python3 program to find the maximum depth of tree
 

@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Pip</span>
-========================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Pip</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -219,9 +218,9 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4f6b19812cdb4ccd8ade76e5798526ad"><span data-offset-key="4f6b19812cdb4ccd8ade76e5798526ad:0">pip can install directly from distribution files as well. They come in 2 forms:</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66fe177700ea4347950f1da572889217"><span data-offset-key="66fe177700ea4347950f1da572889217:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/glossary/#term-Source-Distribution-or-sdist" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="40570faf92174955a410080dfe05c0cc"><span data-offset-key="40570faf92174955a410080dfe05c0cc:0">source distribution</span></span></a><span data-key="6dcf98ab1ac3491790efba25e20a7038"><span data-offset-key="6dcf98ab1ac3491790efba25e20a7038:0"> (usually shortened to “sdist”)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66fe177700ea4347950f1da572889217"><span data-offset-key="66fe177700ea4347950f1da572889217:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/glossary/#term-Source-Distribution-or-sdist" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="40570faf92174955a410080dfe05c0cc"><span data-offset-key="40570faf92174955a410080dfe05c0cc:0">source distribution</span></span></a><span data-key="6dcf98ab1ac3491790efba25e20a7038"><span data-offset-key="6dcf98ab1ac3491790efba25e20a7038:0"> (usually shortened to “sdist”)</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0ede76f82b340e1ad5be5f2a9c23315"><span data-offset-key="d0ede76f82b340e1ad5be5f2a9c23315:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/glossary/#term-Wheel" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="29e2bd3a2ac5485db9929cb421ca79e7"><span data-offset-key="29e2bd3a2ac5485db9929cb421ca79e7:0">wheel distribution</span></span></a><span data-key="b174c6ba70014c29b386232a363dc2ee"><span data-offset-key="b174c6ba70014c29b386232a363dc2ee:0"> (usually shortened to “wheel”)</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0ede76f82b340e1ad5be5f2a9c23315"><span data-offset-key="d0ede76f82b340e1ad5be5f2a9c23315:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://packaging.python.org/glossary/#term-Wheel" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="29e2bd3a2ac5485db9929cb421ca79e7"><span data-offset-key="29e2bd3a2ac5485db9929cb421ca79e7:0">wheel distribution</span></span></a><span data-key="b174c6ba70014c29b386232a363dc2ee"><span data-offset-key="b174c6ba70014c29b386232a363dc2ee:0"> (usually shortened to “wheel”)</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="216d180290054e139f9ea02392a1d3b3"><span data-offset-key="216d180290054e139f9ea02392a1d3b3:0">Linux</span></span></span>
 

@@ -1,5 +1,4 @@
-D4- Module 04 - Tree Traversal
-==============================
+# D4- Module 04 - Tree Traversal
 
 ### Overview <span id="overview"></span>
 
@@ -162,13 +161,13 @@ Here is one way that you could code a breadth-first (level order) traversal in P
 
 ### Challenge <span id="challenge"></span>
 
-1.  What data structure could you use to write an *iterative* depth-first traversal method?
+1.  What data structure could you use to write an _iterative_ depth-first traversal method?
 2.  In your own words, explain how a depth-first traversal and a breadth-first traversal are different?
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/ (Links to an external site.)](https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/)
--   [https://www.geeksforgeeks.org/level-order-tree-traversal/ (Links to an external site.)](https://www.geeksforgeeks.org/level-order-tree-traversal/)
+- [https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/ (Links to an external site.)](https://www.geeksforgeeks.org/dfs-traversal-of-a-tree-using-recursion/)
+- [https://www.geeksforgeeks.org/level-order-tree-traversal/ (Links to an external site.)](https://www.geeksforgeeks.org/level-order-tree-traversal/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29.png)
 

@@ -1,85 +1,212 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="heap">Heap</h1>
-<p>{% page-ref page=“heap-examples.md” %}</p>
-<p>{% tabs %} {% tab title=“Max-Heap.js” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> BinaryHeap <span class="op">{</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="heap">Heap</h1>
+    <p>{% page-ref page=“heap-examples.md” %}</p>
+    <p>{% tabs %} {% tab title=“Max-Heap.js” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> BinaryHeap <span class="op">{</span></a>
 <a class="sourceLine" id="cb1-2" title="2">  <span class="at">constructor</span>() <span class="op">{</span></a>
 <a class="sourceLine" id="cb1-3" title="3">    <span class="kw">this</span>.<span class="at">heap</span> <span class="op">=</span> []<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-4" title="4">  <span class="op">}</span></a>
@@ -158,10 +285,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-77" title="77"><span class="cf">while</span> (<span class="op">!</span><span class="va">maxHeap</span>.<span class="at">empty</span>()) <span class="op">{</span></a>
 <a class="sourceLine" id="cb1-78" title="78">  <span class="kw">const</span> mx <span class="op">=</span> <span class="va">maxHeap</span>.<span class="at">extractMax</span>()<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-79" title="79">  <span class="va">console</span>.<span class="at">log</span>(mx)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-80" title="80"><span class="op">}</span></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Max-Priority-queue.js” %}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* Minimum Priority Queue</span></a>
+<a class="sourceLine" id="cb1-80" title="80"><span class="op">}</span></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Max-Priority-queue.js” %}</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* Minimum Priority Queue</span></a>
 <a class="sourceLine" id="cb2-2" title="2"><span class="co"> * It is a part of heap data structure</span></a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="co"> * A heap is a specific tree based data structure</span></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="co"> * in which all the nodes of tree are in a specific order.</span></a>
@@ -284,80 +415,303 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-121" title="121"><span class="va">q</span>.<span class="at">insert</span>(<span class="dv">8</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb2-122" title="122"><span class="va">q</span>.<span class="at">print</span>()<span class="op">;</span> <span class="co">// [ 1, 2, 3, 5, 7, 6, 4, 8 ]</span></a>
 <a class="sourceLine" id="cb2-123" title="123"><span class="va">q</span>.<span class="at">heapSort</span>()<span class="op">;</span></a>
-<a class="sourceLine" id="cb2-124" title="124"><span class="va">q</span>.<span class="at">print</span>()<span class="op">;</span> <span class="co">// [ 8, 7, 6, 5, 4, 3, 2, 1 ]</span></a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<h2 id="overview-of-heap">Overview of heap <a id="6d32"></a></h2>
-<p>A heap is one common implementation of <a href="https://en.wikipedia.org/wiki/Priority_queue">a priority queue</a>. A priority queue contains items with some priority. You can always take an item out in the priority order from a priority queue. It is important to take an item out based on the priority. When you look around poster presentations at an academic conference, it is very possible you have set in order to pick some presentations. Or you will make a priority list before you go sight-seeing (In this case, an item will be a tourist spot.). A stack and a queue also contain items. You can take an item out from a stack if the item is the last one added to the stack. This is first in, last out (FILO). As for a queue, you can take an item out from the queue if this item is the first one added to the queue. This is first in, first out (FIFO). You can regard these as a specific type of a priority queue. This is because the priority of an inserted item in stack increases and the priority of an inserted item in a queue decreases.<img src="https://miro.medium.com/max/60/1*oN767xTYckRTUjTIyS3oyw.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/409/1*oN767xTYckRTUjTIyS3oyw.png" /></p>
-<h2 id="representation">2. Representation <a id="b367"></a></h2>
-<p>A heap is one of the tree structures and represented as a binary tree. I put the image of heap below. You can implement a tree structure by a pointer or an array. In this post, I choose to use the array implementation like below. In terms of space complexity, the array implementation has more benefits than the pointer implementation. The indices of the array correspond to the node number in the below image.<img src="https://miro.medium.com/max/60/1*ds0JXOw3lLqNo6hw__NtZw.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/564/1*ds0JXOw3lLqNo6hw__NtZw.png" /></p>
-<p>The heap above is called <em>a min heap</em>, and <strong>each value of nodes is less than or equal to the value of child nodes</strong>_<strong>.</strong>_ We call this condition the heap property.<img src="https://miro.medium.com/max/60/1*MaIob54cy5Z7iL1TAEDt1A.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/258/1*MaIob54cy5Z7iL1TAEDt1A.png" /></p>
-<p>In a min heap, when you look at the parent node and its child nodes, the parent node always has the smallest value. When a heap has an opposite definition, we call it <em>a max heap</em>. For the following discussions, we call a min heap a heap.</p>
-<p>You can access a parent node or a child nodes in the array with indices below.</p>
-<ul>
-<li>A root node ｜<em>i</em> = 1, the first item of the array</li>
-<li>A parent node ｜ parent(<em>i</em>) = <em>i</em> / 2</li>
-<li>A left child node ｜ left(<em>i</em>) = 2<em>i</em></li>
-<li>A right child node ｜ right(<em>i</em>)=2<em>i</em>+1</li>
-</ul>
-<p>When you look at the node of index 4, the relation of nodes in the tree corresponds to the indices of the array below.<img src="https://miro.medium.com/max/60/1*ysSV1xV0OMm-1amWBpFb0A.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/552/1*ysSV1xV0OMm-1amWBpFb0A.png" /></p>
-<p>The parent node corresponds to the item of index 2 by parent(<em>i</em>) = 4 / 2 = 2. The child nodes correspond to the items of index 8 and 9 by left(<em>i</em>) = 2 * 2 = 4, right(<em>i</em>) = 2 * 2 + 1 = 5, respectively.</p>
-<h2 id="the-way-how-to-build-a-heap">3. The way how to build a heap <a id="5173"></a></h2>
-<p>You need two operations to build a heap from an arbitrary array.</p>
-<ol type="1">
-<li><code>min_heapify</code>｜ make some node and its descendant nodes meet the heap property.</li>
-<li><code>build_min_heap</code>｜ produce a heap from an arbitrary array.</li>
-</ol>
-<p>We can build a heap by applying <em>min_heapify</em> to each node repeatedly.</p>
-<h3 id="min_heapify">3.1 min_heapify <a id="ebe4"></a></h3>
-<p>In <em>min_heapify</em>, we exchange some nodes with its child nodes to satisfy the heap property under these two features below;</p>
-<ol type="1">
-<li>Some node and its child nodes don’t satisfy the heap property,</li>
-<li>That child nodes and its descendant nodes satisfy the property.</li>
-</ol>
-<p>A tree structure has the two features below.<img src="https://miro.medium.com/max/60/1*7GdM58KmWHBgEE-yOSRy4Q.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/519/1*7GdM58KmWHBgEE-yOSRy4Q.png" /></p>
-<p>Look at the nodes surrounded by the orange square. We find that 9 is larger than both of 2 and 3, so these three nodes don’t satisfy the heap property (The value of node should be less than or equal to the values of its child nodes). Please check the orange nodes below.<img src="https://miro.medium.com/max/60/1*iDBRhJGiIyCBIAdVOMQnyg.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/507/1*iDBRhJGiIyCBIAdVOMQnyg.png" /></p>
-<p>However, look at the blue nodes. These nodes satisfy the heap property.<img src="https://miro.medium.com/max/60/1*8DJyn5AJMYp4DqWgv0dJAg.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/559/1*8DJyn5AJMYp4DqWgv0dJAg.png" /></p>
-<p>Here we define <em>min_heapify</em>(<em>array</em>, <em>index</em>). This method takes two arguments, <em>array,</em> and <em>index</em>. We assume this method exchange the node of <em>array</em>[<em>index</em>] with its child nodes to satisfy the heap property.</p>
-<p>Let’s check the way how <em>min_heapify</em> works by producing a heap from the tree structure above. First, we call <em>min_heapify</em>(<em>array</em>, 2) to exchange the node of index 2 with the node of index 4.<img src="https://miro.medium.com/max/60/1*6ZsaVxXdLu0fyOz99GD1vg.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/522/1*6ZsaVxXdLu0fyOz99GD1vg.png" /></p>
-<p>After apply <em>min_heapify</em>(<em>array</em>, 2) to the subtree, the subtree changes below and meets the heap property. This subtree colored blue.<img src="https://miro.medium.com/max/60/1*Pg5r3aNAcMluu2YafmcOEw.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/530/1*Pg5r3aNAcMluu2YafmcOEw.png" /></p>
-<p>If the subtree exchanged the node of index 2 with the node of index5, the subtree won’t meet the heap property like below. So the subtree exchange the node has the smallest value in the subtree with the parent node to satisfy the heap property.<img src="https://miro.medium.com/max/60/1*1MXtFjQWaWTqNTGakj4DNg.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/527/1*1MXtFjQWaWTqNTGakj4DNg.png" /></p>
-<p>Get back to the tree correctly exchanged. When we look at the orange nodes, this subtree doesn’t satisfy the heap property.<img src="https://miro.medium.com/max/60/1*sE-XfLcquAc8u1Xzxe5PmA.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/564/1*sE-XfLcquAc8u1Xzxe5PmA.png" /></p>
-<p>So call <em>min_heapify</em>(<em>array</em>, 4) to make the subtree meet the heap property.<img src="https://miro.medium.com/max/60/1*NGqt-gG64O_X1GJei_MdJQ.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/532/1*NGqt-gG64O_X1GJei_MdJQ.png" /></p>
-<p>Now, this subtree satisfies the heap property by exchanging the node of index 4 with the node of index 8.</p>
-<p>These operations above produce the heap from the unordered tree (the array).</p>
-<h3 id="build_min_heap">3.2 build_min_heap <a id="caed"></a></h3>
-<p>The pseudo-code below stands for how <em>build_min_heap</em> works.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">build_min_heap(array)</a>
+<a class="sourceLine" id="cb2-124" title="124"><span class="va">q</span>.<span class="at">print</span>()<span class="op">;</span> <span class="co">// [ 8, 7, 6, 5, 4, 3, 2, 1 ]</span></a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <h2 id="overview-of-heap">Overview of heap <a id="6d32"></a></h2>
+    <p>
+      A heap is one common implementation of
+      <a href="https://en.wikipedia.org/wiki/Priority_queue">a priority queue</a
+      >. A priority queue contains items with some priority. You can always take
+      an item out in the priority order from a priority queue. It is important
+      to take an item out based on the priority. When you look around poster
+      presentations at an academic conference, it is very possible you have set
+      in order to pick some presentations. Or you will make a priority list
+      before you go sight-seeing (In this case, an item will be a tourist
+      spot.). A stack and a queue also contain items. You can take an item out
+      from a stack if the item is the last one added to the stack. This is first
+      in, last out (FILO). As for a queue, you can take an item out from the
+      queue if this item is the first one added to the queue. This is first in,
+      first out (FIFO). You can regard these as a specific type of a priority
+      queue. This is because the priority of an inserted item in stack increases
+      and the priority of an inserted item in a queue decreases.<img
+        src="https://miro.medium.com/max/60/1*oN767xTYckRTUjTIyS3oyw.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/409/1*oN767xTYckRTUjTIyS3oyw.png" />
+    </p>
+    <h2 id="representation">2. Representation <a id="b367"></a></h2>
+    <p>
+      A heap is one of the tree structures and represented as a binary tree. I
+      put the image of heap below. You can implement a tree structure by a
+      pointer or an array. In this post, I choose to use the array
+      implementation like below. In terms of space complexity, the array
+      implementation has more benefits than the pointer implementation. The
+      indices of the array correspond to the node number in the below image.<img
+        src="https://miro.medium.com/max/60/1*ds0JXOw3lLqNo6hw__NtZw.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/564/1*ds0JXOw3lLqNo6hw__NtZw.png" />
+    </p>
+    <p>
+      The heap above is called <em>a min heap</em>, and
+      <strong
+        >each value of nodes is less than or equal to the value of child
+        nodes</strong
+      >_<strong>.</strong>_ We call this condition the heap property.<img
+        src="https://miro.medium.com/max/60/1*MaIob54cy5Z7iL1TAEDt1A.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/258/1*MaIob54cy5Z7iL1TAEDt1A.png" />
+    </p>
+    <p>
+      In a min heap, when you look at the parent node and its child nodes, the
+      parent node always has the smallest value. When a heap has an opposite
+      definition, we call it <em>a max heap</em>. For the following discussions,
+      we call a min heap a heap.
+    </p>
+    <p>
+      You can access a parent node or a child nodes in the array with indices
+      below.
+    </p>
+    <ul>
+      <li>A root node ｜<em>i</em> = 1, the first item of the array</li>
+      <li>A parent node ｜ parent(<em>i</em>) = <em>i</em> / 2</li>
+      <li>A left child node ｜ left(<em>i</em>) = 2<em>i</em></li>
+      <li>A right child node ｜ right(<em>i</em>)=2<em>i</em>+1</li>
+    </ul>
+    <p>
+      When you look at the node of index 4, the relation of nodes in the tree
+      corresponds to the indices of the array below.<img
+        src="https://miro.medium.com/max/60/1*ysSV1xV0OMm-1amWBpFb0A.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/552/1*ysSV1xV0OMm-1amWBpFb0A.png" />
+    </p>
+    <p>
+      The parent node corresponds to the item of index 2 by parent(<em>i</em>) =
+      4 / 2 = 2. The child nodes correspond to the items of index 8 and 9 by
+      left(<em>i</em>) = 2 * 2 = 4, right(<em>i</em>) = 2 * 2 + 1 = 5,
+      respectively.
+    </p>
+    <h2 id="the-way-how-to-build-a-heap">
+      3. The way how to build a heap <a id="5173"></a>
+    </h2>
+    <p>You need two operations to build a heap from an arbitrary array.</p>
+    <ol type="1">
+      <li>
+        <code>min_heapify</code>｜ make some node and its descendant nodes meet
+        the heap property.
+      </li>
+      <li>
+        <code>build_min_heap</code>｜ produce a heap from an arbitrary array.
+      </li>
+    </ol>
+    <p>
+      We can build a heap by applying <em>min_heapify</em> to each node
+      repeatedly.
+    </p>
+    <h3 id="min_heapify">3.1 min_heapify <a id="ebe4"></a></h3>
+    <p>
+      In <em>min_heapify</em>, we exchange some nodes with its child nodes to
+      satisfy the heap property under these two features below;
+    </p>
+    <ol type="1">
+      <li>Some node and its child nodes don’t satisfy the heap property,</li>
+      <li>That child nodes and its descendant nodes satisfy the property.</li>
+    </ol>
+    <p>
+      A tree structure has the two features below.<img
+        src="https://miro.medium.com/max/60/1*7GdM58KmWHBgEE-yOSRy4Q.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/519/1*7GdM58KmWHBgEE-yOSRy4Q.png" />
+    </p>
+    <p>
+      Look at the nodes surrounded by the orange square. We find that 9 is
+      larger than both of 2 and 3, so these three nodes don’t satisfy the heap
+      property (The value of node should be less than or equal to the values of
+      its child nodes). Please check the orange nodes below.<img
+        src="https://miro.medium.com/max/60/1*iDBRhJGiIyCBIAdVOMQnyg.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/507/1*iDBRhJGiIyCBIAdVOMQnyg.png" />
+    </p>
+    <p>
+      However, look at the blue nodes. These nodes satisfy the heap
+      property.<img
+        src="https://miro.medium.com/max/60/1*8DJyn5AJMYp4DqWgv0dJAg.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/559/1*8DJyn5AJMYp4DqWgv0dJAg.png" />
+    </p>
+    <p>
+      Here we define <em>min_heapify</em>(<em>array</em>, <em>index</em>). This
+      method takes two arguments, <em>array,</em> and <em>index</em>. We assume
+      this method exchange the node of <em>array</em>[<em>index</em>] with its
+      child nodes to satisfy the heap property.
+    </p>
+    <p>
+      Let’s check the way how <em>min_heapify</em> works by producing a heap
+      from the tree structure above. First, we call
+      <em>min_heapify</em>(<em>array</em>, 2) to exchange the node of index 2
+      with the node of index 4.<img
+        src="https://miro.medium.com/max/60/1*6ZsaVxXdLu0fyOz99GD1vg.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/522/1*6ZsaVxXdLu0fyOz99GD1vg.png" />
+    </p>
+    <p>
+      After apply <em>min_heapify</em>(<em>array</em>, 2) to the subtree, the
+      subtree changes below and meets the heap property. This subtree colored
+      blue.<img
+        src="https://miro.medium.com/max/60/1*Pg5r3aNAcMluu2YafmcOEw.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/530/1*Pg5r3aNAcMluu2YafmcOEw.png" />
+    </p>
+    <p>
+      If the subtree exchanged the node of index 2 with the node of index5, the
+      subtree won’t meet the heap property like below. So the subtree exchange
+      the node has the smallest value in the subtree with the parent node to
+      satisfy the heap property.<img
+        src="https://miro.medium.com/max/60/1*1MXtFjQWaWTqNTGakj4DNg.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/527/1*1MXtFjQWaWTqNTGakj4DNg.png" />
+    </p>
+    <p>
+      Get back to the tree correctly exchanged. When we look at the orange
+      nodes, this subtree doesn’t satisfy the heap property.<img
+        src="https://miro.medium.com/max/60/1*sE-XfLcquAc8u1Xzxe5PmA.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/564/1*sE-XfLcquAc8u1Xzxe5PmA.png" />
+    </p>
+    <p>
+      So call <em>min_heapify</em>(<em>array</em>, 4) to make the subtree meet
+      the heap property.<img
+        src="https://miro.medium.com/max/60/1*NGqt-gG64O_X1GJei_MdJQ.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/532/1*NGqt-gG64O_X1GJei_MdJQ.png" />
+    </p>
+    <p>
+      Now, this subtree satisfies the heap property by exchanging the node of
+      index 4 with the node of index 8.
+    </p>
+    <p>
+      These operations above produce the heap from the unordered tree (the
+      array).
+    </p>
+    <h3 id="build_min_heap">3.2 build_min_heap <a id="caed"></a></h3>
+    <p>The pseudo-code below stands for how <em>build_min_heap</em> works.</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">build_min_heap(array)</a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="cf">for</span> i<span class="op">=</span>n<span class="op">/</span><span class="dv">2</span> downto <span class="dv">1</span></a>
-<a class="sourceLine" id="cb3-3" title="3">        do min_heapify(array, i)</a></code></pre></div>
-<p>This function iterates the nodes except the leaf nodes with the for-loop and applies <em>min_heapify</em> to each node. We don’t need to apply <em>min_heapify</em> to the items of indices after <em>n</em>/2+1, which are all the leaf nodes. We apply <em>min_heapify in</em> the orange nodes below.<img src="https://miro.medium.com/max/60/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/591/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png" /></p>
-<p>Each node can satisfy the heap property with meeting the conditions to be able to apply <em>min_heapfiy.</em> This is because this function iterates the nodes from the bottom (the second last level) to the top (the root node level). For instance, this function first applies <em>min_heapify</em> to the nodes both of index 4 and index 5 and then applying <em>min_heapify</em> to the node of index 2. So the node of the index and its descendent nodes satisfy the heap property when applying <em>min_heapify.</em></p>
-<h2 id="time-complexity">4. Time complexity <a id="afb9"></a></h2>
-<p>Let’s think about the time complexity of <em>build_min_heap.</em> First of all, we think the time complexity of <em>min_heapify</em>, which is a main part of <em>build_min_heap.</em></p>
-<p><em>min_heapify</em> repeats the operation of exchanging the items in an array, which runs in constant time. So the time complexity of <em>min_heapify</em> will be in proportional to the number of repeating. In the worst case, <em>min_heapify</em> should repeat the operation the height of the tree times. This is because in the worst case, min_heapify will exchange the root nodes with the most depth leaf node. Assuming <em>h</em> as the height of the root node, the time complexity of <em>min_heapify</em> will take <em>O</em>(<em>h</em>) time.</p>
-<p>The time complexities of <em>min_heapify</em> in each depth are shown below. The number of the nodes is also showed in right.<img src="https://miro.medium.com/max/60/1*a-h1jgMmLuIFq_ZhuMmBnw.png?q=20" /></p>
-<p><img src="https://miro.medium.com/max/591/1*a-h1jgMmLuIFq_ZhuMmBnw.png" /></p>
-<p>From the figure, the time complexity of <em>build_min_heap</em> will be the sum of the time complexity of inner nodes. The final time complexity becomes:<img src="https://miro.medium.com/max/60/1*nlTVz17IMbUwcrs6SxEWrw.png?q=20" /><img src="https://miro.medium.com/max/591/1*nlTVz17IMbUwcrs6SxEWrw.png" /></p>
-<p>So we should know the height of the tree to get the time complexity.</p>
-<p>The sum of the number of nodes in each depth will become <em>n</em>. So we will get this equation below.<img src="https://miro.medium.com/max/60/1*OA6ZyHHxwRFMDdspJooQ1A.png?q=20" /><img src="https://miro.medium.com/max/451/1*OA6ZyHHxwRFMDdspJooQ1A.png" /></p>
-<p>The equation above stands for the geometric sequence, so we can deform it and get the height of the tree as follow:<img src="https://miro.medium.com/max/60/1*etWYXqoPtFIl5C7j-K_TiA.png?q=20" /><img src="https://miro.medium.com/max/591/1*etWYXqoPtFIl5C7j-K_TiA.png" /></p>
-<p>Finally, we get <em>O</em>(<em>n</em>) as the time complexity of <em>build_min_heap</em>. Also, we get <em>O</em>(log<em>n</em>) as the time complexity of <em>min_heapify</em>.</p>
-<h2 id="implementation">5. Implementation <a id="5c96"></a></h2>
-<p>Here we implement <em>min_heapify</em> and <em>build_min_heap</em> with Python. the implementation of <em>min_heapify</em> will be as follow.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> min_heapify(array, i):</a>
+<a class="sourceLine" id="cb3-3" title="3">        do min_heapify(array, i)</a></code></pre>
+    </div>
+    <p>
+      This function iterates the nodes except the leaf nodes with the for-loop
+      and applies <em>min_heapify</em> to each node. We don’t need to apply
+      <em>min_heapify</em> to the items of indices after <em>n</em>/2+1, which
+      are all the leaf nodes. We apply <em>min_heapify in</em> the orange nodes
+      below.<img
+        src="https://miro.medium.com/max/60/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/591/1*Qa4zV-Ys8iXRbPCt2Xt3Zw.png" />
+    </p>
+    <p>
+      Each node can satisfy the heap property with meeting the conditions to be
+      able to apply <em>min_heapfiy.</em> This is because this function iterates
+      the nodes from the bottom (the second last level) to the top (the root
+      node level). For instance, this function first applies
+      <em>min_heapify</em> to the nodes both of index 4 and index 5 and then
+      applying <em>min_heapify</em> to the node of index 2. So the node of the
+      index and its descendent nodes satisfy the heap property when applying
+      <em>min_heapify.</em>
+    </p>
+    <h2 id="time-complexity">4. Time complexity <a id="afb9"></a></h2>
+    <p>
+      Let’s think about the time complexity of <em>build_min_heap.</em> First of
+      all, we think the time complexity of <em>min_heapify</em>, which is a main
+      part of <em>build_min_heap.</em>
+    </p>
+    <p>
+      <em>min_heapify</em> repeats the operation of exchanging the items in an
+      array, which runs in constant time. So the time complexity of
+      <em>min_heapify</em> will be in proportional to the number of repeating.
+      In the worst case, <em>min_heapify</em> should repeat the operation the
+      height of the tree times. This is because in the worst case, min_heapify
+      will exchange the root nodes with the most depth leaf node. Assuming
+      <em>h</em> as the height of the root node, the time complexity of
+      <em>min_heapify</em> will take <em>O</em>(<em>h</em>) time.
+    </p>
+    <p>
+      The time complexities of <em>min_heapify</em> in each depth are shown
+      below. The number of the nodes is also showed in right.<img
+        src="https://miro.medium.com/max/60/1*a-h1jgMmLuIFq_ZhuMmBnw.png?q=20"
+      />
+    </p>
+    <p>
+      <img src="https://miro.medium.com/max/591/1*a-h1jgMmLuIFq_ZhuMmBnw.png" />
+    </p>
+    <p>
+      From the figure, the time complexity of <em>build_min_heap</em> will be
+      the sum of the time complexity of inner nodes. The final time complexity
+      becomes:<img
+        src="https://miro.medium.com/max/60/1*nlTVz17IMbUwcrs6SxEWrw.png?q=20"
+      /><img
+        src="https://miro.medium.com/max/591/1*nlTVz17IMbUwcrs6SxEWrw.png"
+      />
+    </p>
+    <p>So we should know the height of the tree to get the time complexity.</p>
+    <p>
+      The sum of the number of nodes in each depth will become <em>n</em>. So we
+      will get this equation below.<img
+        src="https://miro.medium.com/max/60/1*OA6ZyHHxwRFMDdspJooQ1A.png?q=20"
+      /><img
+        src="https://miro.medium.com/max/451/1*OA6ZyHHxwRFMDdspJooQ1A.png"
+      />
+    </p>
+    <p>
+      The equation above stands for the geometric sequence, so we can deform it
+      and get the height of the tree as follow:<img
+        src="https://miro.medium.com/max/60/1*etWYXqoPtFIl5C7j-K_TiA.png?q=20"
+      /><img
+        src="https://miro.medium.com/max/591/1*etWYXqoPtFIl5C7j-K_TiA.png"
+      />
+    </p>
+    <p>
+      Finally, we get <em>O</em>(<em>n</em>) as the time complexity of
+      <em>build_min_heap</em>. Also, we get <em>O</em>(log<em>n</em>) as the
+      time complexity of <em>min_heapify</em>.
+    </p>
+    <h2 id="implementation">5. Implementation <a id="5c96"></a></h2>
+    <p>
+      Here we implement <em>min_heapify</em> and <em>build_min_heap</em> with
+      Python. the implementation of <em>min_heapify</em> will be as follow.
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> min_heapify(array, i):</a>
 <a class="sourceLine" id="cb4-2" title="2">    left <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> i <span class="op">+</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb4-3" title="3">    right <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> i <span class="op">+</span> <span class="dv">2</span></a>
 <a class="sourceLine" id="cb4-4" title="4">    length <span class="op">=</span> <span class="bu">len</span>(array) <span class="op">-</span> <span class="dv">1</span></a>
@@ -367,57 +721,137 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-8" title="8">        smallest <span class="op">=</span> right</a>
 <a class="sourceLine" id="cb4-9" title="9">    <span class="cf">if</span> smallest <span class="op">!=</span> i:</a>
 <a class="sourceLine" id="cb4-10" title="10">        array[i], array[smallest] <span class="op">=</span> array[smallest], array[i]</a>
-<a class="sourceLine" id="cb4-11" title="11">        min_heapify(array, smallest)</a></code></pre></div>
-<p>First, this method computes the node of the smallest value among the node of index <em>i</em> and its child nodes and then exchange the node of the smallest value with the node of index <em>i</em>. When the exchange happens, this method applies <em>min_heapify</em> to the node exchanged.</p>
-<p>Index of a list (an array) in Python starts from 0, the way to access the nodes will change as follow.</p>
-<ul>
-<li>The root node ｜<em>i</em> = 0</li>
-<li>The parent node ｜ parent(<em>i</em>) = (<em>i</em>-1) / 2</li>
-<li>The left child node ｜ left(<em>i</em>) = 2<em>i</em> + 1</li>
-<li>The right child node ｜ right(<em>i</em>)=2<em>i</em>+2</li>
-</ul>
-<p>The variable, <em>smallest</em> has the index of the node of the smallest value. If the <em>smallest</em> doesn’t equal to the <em>i</em>, which means this subtree doesn’t satisfy the heap property, this method exchanges the nodes and executes <em>min_heapify</em> to the node of the <em>smallest</em>.</p>
-<p>The implementation of <em>build_min_heap</em> is almost the same as the pseudo-code.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> build_min_heap(array):</a>
+<a class="sourceLine" id="cb4-11" title="11">        min_heapify(array, smallest)</a></code></pre>
+    </div>
+    <p>
+      First, this method computes the node of the smallest value among the node
+      of index <em>i</em> and its child nodes and then exchange the node of the
+      smallest value with the node of index <em>i</em>. When the exchange
+      happens, this method applies <em>min_heapify</em> to the node exchanged.
+    </p>
+    <p>
+      Index of a list (an array) in Python starts from 0, the way to access the
+      nodes will change as follow.
+    </p>
+    <ul>
+      <li>The root node ｜<em>i</em> = 0</li>
+      <li>The parent node ｜ parent(<em>i</em>) = (<em>i</em>-1) / 2</li>
+      <li>The left child node ｜ left(<em>i</em>) = 2<em>i</em> + 1</li>
+      <li>The right child node ｜ right(<em>i</em>)=2<em>i</em>+2</li>
+    </ul>
+    <p>
+      The variable, <em>smallest</em> has the index of the node of the smallest
+      value. If the <em>smallest</em> doesn’t equal to the <em>i</em>, which
+      means this subtree doesn’t satisfy the heap property, this method
+      exchanges the nodes and executes <em>min_heapify</em> to the node of the
+      <em>smallest</em>.
+    </p>
+    <p>
+      The implementation of <em>build_min_heap</em> is almost the same as the
+      pseudo-code.
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> build_min_heap(array):</a>
 <a class="sourceLine" id="cb5-2" title="2">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">reversed</span>(<span class="bu">range</span>(<span class="bu">len</span>(array)<span class="op">//</span><span class="dv">2</span>)):</a>
-<a class="sourceLine" id="cb5-3" title="3">        min_heapify(array, i)</a></code></pre></div>
-<p>The for-loop differs from the pseudo-code, but the behavior is the same. This for-loop also iterates the nodes from the second last level of nodes to the root nodes.</p>
-<h2 id="heapsort">6. Heapsort <a id="91ea"></a></h2>
-<p>Heapsort is one sort algorithm with a heap. It’s really easy to implement it with <em>min_heapify</em> and <em>build_min_heap.</em> The flow of sort will be as follow. Please note that the order of sort is ascending.</p>
-<ol type="1">
-<li>Build a heap from an arbitrary array with <em>build_min_heap.</em></li>
-<li>Swap the first item with the last item in the array.</li>
-<li>Remove the last item from the array.</li>
-<li>Run <em>min_heapify</em> to the first item.</li>
-<li>Back to step 2.</li>
-</ol>
-<p>In a heap, the smallest item is the first item of an array. The array after step 3 satisfies the conditions to apply <em>min_heapify</em> because we remove the last item after we swap the first item with the last item. By this nature, we can sort an array by repeating steps 2 to 4.</p>
-<p>The implementation of heapsort will become as follow.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> heapsort(array):</a>
+<a class="sourceLine" id="cb5-3" title="3">        min_heapify(array, i)</a></code></pre>
+    </div>
+    <p>
+      The for-loop differs from the pseudo-code, but the behavior is the same.
+      This for-loop also iterates the nodes from the second last level of nodes
+      to the root nodes.
+    </p>
+    <h2 id="heapsort">6. Heapsort <a id="91ea"></a></h2>
+    <p>
+      Heapsort is one sort algorithm with a heap. It’s really easy to implement
+      it with <em>min_heapify</em> and <em>build_min_heap.</em> The flow of sort
+      will be as follow. Please note that the order of sort is ascending.
+    </p>
+    <ol type="1">
+      <li>
+        Build a heap from an arbitrary array with <em>build_min_heap.</em>
+      </li>
+      <li>Swap the first item with the last item in the array.</li>
+      <li>Remove the last item from the array.</li>
+      <li>Run <em>min_heapify</em> to the first item.</li>
+      <li>Back to step 2.</li>
+    </ol>
+    <p>
+      In a heap, the smallest item is the first item of an array. The array
+      after step 3 satisfies the conditions to apply
+      <em>min_heapify</em> because we remove the last item after we swap the
+      first item with the last item. By this nature, we can sort an array by
+      repeating steps 2 to 4.
+    </p>
+    <p>The implementation of heapsort will become as follow.</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> heapsort(array):</a>
 <a class="sourceLine" id="cb6-2" title="2">    array <span class="op">=</span> array.copy()</a>
 <a class="sourceLine" id="cb6-3" title="3">    build_min_heap(array)    sorted_array <span class="op">=</span> []</a>
 <a class="sourceLine" id="cb6-4" title="4">    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(array)):</a>
 <a class="sourceLine" id="cb6-5" title="5">        array[<span class="dv">0</span>], array[<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> array[<span class="op">-</span><span class="dv">1</span>], array[<span class="dv">0</span>]</a>
 <a class="sourceLine" id="cb6-6" title="6">        sorted_array.append(array.pop())</a>
-<a class="sourceLine" id="cb6-7" title="7">        min_heapify(array, <span class="dv">0</span>)    <span class="cf">return</span> sorted_array</a></code></pre></div>
-<p>The time complexity of heapsort is <em>O</em>(<em>n_log_n</em>) because in the worst case, we should repeat <em>min_heapify</em> the number of items in array times, which is <em>n</em>.</p>
-<p>In <a href="https://docs.python.org/3/library/heapq.html">the heapq module</a> of Python, it has already implemented some operation for a heap. I followed the method in MIT’s lecture, the implementation differs from Python’s. If you’d like to know Python’s detail implementation, please visit <a href="https://github.com/python/cpython/blob/master/Lib/heapq.py">the source code here</a>. For example, these methods are implemented in Python.</p>
-<ul>
-<li><code>heapq.heapify</code> | corresponds to <em>build_min_heap</em></li>
-<li><code>heapq.heapop</code> | corresponds to swapping items, remove the last item, and <em>min_heapify</em> at once<em>.</em></li>
-</ul>
-<p>By using those methods above, we can implement heapsort as follow. Please note that it differs from <a href="https://docs.python.org/3/library/heapq.html#basic-examples">the implementation of heapsort in the official documents</a>.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="im">import</span> heapqdef heapsort(array):</a>
+<a class="sourceLine" id="cb6-7" title="7">        min_heapify(array, <span class="dv">0</span>)    <span class="cf">return</span> sorted_array</a></code></pre>
+    </div>
+    <p>
+      The time complexity of heapsort is <em>O</em>(<em>n_log_n</em>) because in
+      the worst case, we should repeat <em>min_heapify</em> the number of items
+      in array times, which is <em>n</em>.
+    </p>
+    <p>
+      In
+      <a href="https://docs.python.org/3/library/heapq.html"
+        >the heapq module</a
+      >
+      of Python, it has already implemented some operation for a heap. I
+      followed the method in MIT’s lecture, the implementation differs from
+      Python’s. If you’d like to know Python’s detail implementation, please
+      visit
+      <a href="https://github.com/python/cpython/blob/master/Lib/heapq.py"
+        >the source code here</a
+      >. For example, these methods are implemented in Python.
+    </p>
+    <ul>
+      <li>
+        <code>heapq.heapify</code> | corresponds to <em>build_min_heap</em>
+      </li>
+      <li>
+        <code>heapq.heapop</code> | corresponds to swapping items, remove the
+        last item, and <em>min_heapify</em> at once<em>.</em>
+      </li>
+    </ul>
+    <p>
+      By using those methods above, we can implement heapsort as follow. Please
+      note that it differs from
+      <a href="https://docs.python.org/3/library/heapq.html#basic-examples"
+        >the implementation of heapsort in the official documents</a
+      >.
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="im">import</span> heapqdef heapsort(array):</a>
 <a class="sourceLine" id="cb7-2" title="2">    h <span class="op">=</span> array.copy()</a>
 <a class="sourceLine" id="cb7-3" title="3">    heapq.heapify(h)</a>
-<a class="sourceLine" id="cb7-4" title="4">    <span class="cf">return</span> [heapq.heappop(h) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(array))]</a></code></pre></div>
-<p>So that’s all for this post. Thank you for reading!</p>
-<h3 id="references">References <a id="9803"></a></h3>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=B7hVxCmfPtM">MIT OpenCourseWare 4. Heaps and Heap Sort</a></li>
-</ul>
-<h2 id="implementation-1">Implementation</h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="cf">return</span> [heapq.heappop(h) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(array))]</a></code></pre>
+    </div>
+    <p>So that’s all for this post. Thank you for reading!</p>
+    <h3 id="references">References <a id="9803"></a></h3>
+    <ul>
+      <li>
+        <a href="https://www.youtube.com/watch?v=B7hVxCmfPtM"
+          >MIT OpenCourseWare 4. Heaps and Heap Sort</a
+        >
+      </li>
+    </ul>
+    <h2 id="implementation-1">Implementation</h2>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="co">Heaps (priority queues)</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb8-4" title="4"><span class="co"># the maximum number of items that can be stored in the heap</span></a>
@@ -558,8 +992,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-139" title="139">heap.insert(<span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb8-140" title="140">heap.insert(<span class="dv">321</span>)</a>
 <a class="sourceLine" id="cb8-141" title="141"></a>
-<a class="sourceLine" id="cb8-142" title="142">heap.heap_sort()</a></code></pre></div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># Implements a min-heap. For max-heap, simply reverse all comparison orders.</span></a>
+<a class="sourceLine" id="cb8-142" title="142">heap.heap_sort()</a></code></pre>
+    </div>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="co"># Implements a min-heap. For max-heap, simply reverse all comparison orders.</span></a>
 <a class="sourceLine" id="cb9-2" title="2"><span class="co">#</span></a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="co"># Note on alternate subroutine namings (used in some textbooks):</span></a>
 <a class="sourceLine" id="cb9-4" title="4"><span class="co">#     - _bubble_up = siftdown</span></a>
@@ -642,22 +1080,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb9-81" title="81">    heappush(heap, elem)</a>
 <a class="sourceLine" id="cb9-82" title="82"></a>
 <a class="sourceLine" id="cb9-83" title="83">sorted_list <span class="op">=</span> [heappop(heap) <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">200</span>)]</a>
-<a class="sourceLine" id="cb9-84" title="84"><span class="bu">print</span>(sorted_list <span class="op">==</span> <span class="bu">sorted</span>(sorted_list))</a></code></pre></div>
-<p>{% page-ref page=“../array/” %}</p>
-<p>{% page-ref page=“../binary-search-tree/” %}</p>
-<p>{% page-ref page=“../untitled-4/” %}</p>
-<p>{% page-ref page=“../array/extra-array.md” %}</p>
-<p>{% page-ref page=“../stack/” %}</p>
-<p>{% page-ref page=“../binary-tree/” %}</p>
-<p>{% page-ref page=“../untitled-6/” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-2/” %}</p>
-<p>{% page-ref page=“../untitled-3/” %}</p>
-<p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
-<p>{% page-ref page=“../untitled-1/” %}</p>
-<p>{% page-ref page=“../untitled/” %}</p>
-<p>{% page-ref page=“./” %}</p>
-</body>
+<a class="sourceLine" id="cb9-84" title="84"><span class="bu">print</span>(sorted_list <span class="op">==</span> <span class="bu">sorted</span>(sorted_list))</a></code></pre>
+    </div>
+    <p>{% page-ref page=“../array/” %}</p>
+    <p>{% page-ref page=“../binary-search-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-4/” %}</p>
+    <p>{% page-ref page=“../array/extra-array.md” %}</p>
+    <p>{% page-ref page=“../stack/” %}</p>
+    <p>{% page-ref page=“../binary-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-6/” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-2/” %}</p>
+    <p>{% page-ref page=“../untitled-3/” %}</p>
+    <p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
+    <p>{% page-ref page=“../untitled-1/” %}</p>
+    <p>{% page-ref page=“../untitled/” %}</p>
+    <p>{% page-ref page=“./” %}</p>
+  </body>
 </html>

@@ -1,20 +1,18 @@
-Python Libraries
-================
+# Python Libraries
 
-The Standard Library
---------------------
+## The Standard Library
 
 The libraries that tend to get all the attention are the ones heavily used for operating-system interaction, like [`sys`](http://bit.ly/py-sys), [`os`](http://bit.ly/py-os), [`shutil`](http://bit.ly/py-os), and to a slightly lesser extent, [`glob`](http://bit.ly/py-glob). This is understandable because most Python applications deal with input processing; however, the Python standard library is very rich and includes a bunch of additional functionality that many Python programmers take too long to discover. In this chapter we will mention a few libraries that every Python programmer should know very well.
 
 ### collections
 
-First up we have the `collections` module. If you’ve been working with Python for any length of time, it is very likely that you have made use of the this module; however, the batteries contained within are so important that we’ll go over them anyway, *just in case*.
+First up we have the `collections` module. If you’ve been working with Python for any length of time, it is very likely that you have made use of the this module; however, the batteries contained within are so important that we’ll go over them anyway, _just in case_.
 
 #### collections.OrderedDict
 
-`collections.OrderedDict` gives you a `dict` that will preserve the order in which items are added to it; note that this is *not* the same as a sorted order.[1](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608)
+`collections.OrderedDict` gives you a `dict` that will preserve the order in which items are added to it; note that this is _not_ the same as a sorted order.[1](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608)
 
-The need for an *ordered* `dict` comes up surprisingly often. A common example is processing lines in a file where the lines (or something within them) maps to other data. A mapping is the right solution, and you often need to produce results in the same order in which the input data appeared. Here is a simple example of how the ordering changes with a normal `dict`:
+The need for an _ordered_ `dict` comes up surprisingly often. A common example is processing lines in a file where the lines (or something within them) maps to other data. A mapping is the right solution, and you often need to produce results in the same order in which the input data appeared. Here is a simple example of how the ordering changes with a normal `dict`:
 
     >>> dict(zip(ascii_lowercase, range(4)))
     {'a': 0, 'b': 1, 'c': 2, 'd': 3}
@@ -48,15 +46,14 @@ The `OrderedDict`, however, retains the order in which items are inserted:
     OrderedDict([('a', 0), ('b', 1), ('c', 2), ('d', 3),
     ('e', 4), ('f', 5), ('g', 6)])
 
-ORDEREDDICT: BEWARE CREATION WITH KEYWORD ARGUMENTS
----------------------------------------------------
+## ORDEREDDICT: BEWARE CREATION WITH KEYWORD ARGUMENTS
 
-There is an unfortunate catch with `OrderedDict` you need to be aware of: it doesn’t work when you *create* the `OrderedDict` with keyword arguments, a very common Python idiom:
+There is an unfortunate catch with `OrderedDict` you need to be aware of: it doesn’t work when you _create_ the `OrderedDict` with keyword arguments, a very common Python idiom:
 
     >>> collections.OrderedDict(a=1,b=2,c=3)
     OrderedDict([('b', 2), ('a', 1), ('c', 3)])
 
-This seems like a bug, but as explained in the documentation, it happens because the keyword arguments are first processed as a *normal* `dict` before they are passed on to the `OrderedDict`.
+This seems like a bug, but as explained in the documentation, it happens because the keyword arguments are first processed as a _normal_ `dict` before they are passed on to the `OrderedDict`.
 
 #### collections.defaultdict
 
@@ -70,7 +67,7 @@ Here’s a common example:
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO2-1)
 
-You didn’t create this item yet? No problem! Key lookups automatically create *values* using the function provided when creating the `defaultdict` instance.
+You didn’t create this item yet? No problem! Key lookups automatically create _values_ using the function provided when creating the `defaultdict` instance.
 
 By setting up the default value as the `list` constructor in the preceding example, you can avoid wordy code that looks like this:
 
@@ -119,9 +116,9 @@ Simple function returning a tuple.[![2](https://learning.oreilly.com/api/v2/epub
 
 When the function is evaluated, the results are unpacked into separate names.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO3-3)
 
-Worse, the caller might access values inside the returned tuple *by index*.
+Worse, the caller might access values inside the returned tuple _by index_.
 
-The problem with this approach is that this code is fragile to future changes. If the function changes (perhaps by changing the order of the returned items, or adding more items), the unpacking of the returned value will be incorrect. Instead, you can modify *existing* code to return a `namedtuple` instance:
+The problem with this approach is that this code is fragile to future changes. If the function changes (perhaps by changing the order of the returned items, or adding more items), the unpacking of the returned value will be incorrect. Instead, you can modify _existing_ code to return a `namedtuple` instance:
 
     >>> def f():
     ...    # Return a namedtuple!
@@ -141,9 +138,9 @@ You now also have the option of working with the returned `namedtuple` in the ca
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO5-1)
 
-Being able to use *attributes* to access data inside the tuple is much safer rather than relying on indexing alone; if future changes in the code added new fields to the `namedtuple`, the `tup.count` would continue to work.
+Being able to use _attributes_ to access data inside the tuple is much safer rather than relying on indexing alone; if future changes in the code added new fields to the `namedtuple`, the `tup.count` would continue to work.
 
-The `collections` module has a few other tricks up its sleeve, and your time is well spent brushing up on the [documentation](http://bit.ly/coll-docs). In addition to the classes shown here, there is also a `Counter` class for easily counting occurrences, a *list-like* container for efficiently appending and removing items from either end (`deque`), and several helper classes to make subclassing lists, dicts, and strings easier.
+The `collections` module has a few other tricks up its sleeve, and your time is well spent brushing up on the [documentation](http://bit.ly/coll-docs). In addition to the classes shown here, there is also a `Counter` class for easily counting occurrences, a _list-like_ container for efficiently appending and removing items from either end (`deque`), and several helper classes to make subclassing lists, dicts, and strings easier.
 
 ### contextlib
 
@@ -152,7 +149,7 @@ A context manager is what you use with the `with` statement. A very common idiom
     with open('data.txt', 'r') as f:
         data = f.read()
 
-This is good syntax because it simplifies the *cleanup* step where the file handle is closed. Using the context manager means that you don’t have to remember to do `f.close()` yourself: this will happen automatically when the `with` block exits.
+This is good syntax because it simplifies the _cleanup_ step where the file handle is closed. Using the context manager means that you don’t have to remember to do `f.close()` yourself: this will happen automatically when the `with` block exits.
 
 You can use the `contextmanager` decorator from the `contextlib` library to benefit from this language feature in your own nefarious schemes. Here’s a creative demonstration where we create a new context manager to print out performance (timing) data.
 
@@ -182,13 +179,13 @@ This might be useful for quickly testing the time cost of code snippets, as show
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-6)
 
-The `array` module in the standard library has an unusual approach to initialization: you pass it an existing sequence, such as a large list, and it converts the data into the datatype of your array if possible; however, you *can* also create an array from a short sequence, after which you expand it to its full size. Have you ever wondered which is faster? In a moment, we’ll create a *timing* context manager to measure this and know for sure
+The `array` module in the standard library has an unusual approach to initialization: you pass it an existing sequence, such as a large list, and it converts the data into the datatype of your array if possible; however, you _can_ also create an array from a short sequence, after which you expand it to its full size. Have you ever wondered which is faster? In a moment, we’ll create a _timing_ context manager to measure this and know for sure
 
 The key step you need to do to make your own context manager is to use the `@contextmanager` decorator.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-2)
 
-The section before the `yield` is where you can write code that must execute before the *body* of your context manager will run. Here we record the timestamp *before* the body will run.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-3)
+The section before the `yield` is where you can write code that must execute before the _body_ of your context manager will run. Here we record the timestamp _before_ the body will run.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-3)
 
-The `yield` is where execution is transferred to the body of your context manager; in our case, this is where our arrays get created. You can also return data: here I return a closure that will calculate the elapsed time when called. It’s a little *clever* but hopefully not excessively so: the *final time* `t1` is captured within the closure even though it will only be determined on the next line.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-4)
+The `yield` is where execution is transferred to the body of your context manager; in our case, this is where our arrays get created. You can also return data: here I return a closure that will calculate the elapsed time when called. It’s a little _clever_ but hopefully not excessively so: the _final time_ `t1` is captured within the closure even though it will only be determined on the next line.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-4)
 
 After the `yield`, we write the code that will be executed when the context manager finishes. For scenarios like file handling, this would be where you close them. In this example, this is where we record the final time `t1`.[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO6-7)
 
@@ -202,7 +199,7 @@ On my computer, this code produces this output:
         Timing [Array creation innermul]: 0.064195 s
         Timing [Array creation outermul]: 0.000659 s
 
-Quite surprisingly, the *second* method of producing a large array is around 100 times faster than the first. This means that it is *much* more efficient to create a small array, and then expand it, rather than to create an array entirely from a large list.
+Quite surprisingly, the _second_ method of producing a large array is around 100 times faster than the first. This means that it is _much_ more efficient to create a small array, and then expand it, rather than to create an array entirely from a large list.
 
 The point of this example is not to show the best way to create an array: rather, it is that the `contextmanager` decorator makes it exceptionally easy to create your own context manager, and context managers are a great way of providing a clean and safe means of managing before-and-after coding tasks.
 
@@ -249,11 +246,11 @@ Here we have a trivial example using the `ThreadPoolExecutor`. We download the l
 
 Our work function, `fetch()`, simply downloads the given URL.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-2)
 
-Yes, it *is* rather odd nowadays to see `urllib` because the fantastic third-party library [requests](http://bit.ly/py-reqs) is a great choice for all your web-access needs. However, `urllib` still exists and depending on your needs, may allow you to avoid an external dependency.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-3)
+Yes, it _is_ rather odd nowadays to see `urllib` because the fantastic third-party library [requests](http://bit.ly/py-reqs) is a great choice for all your web-access needs. However, `urllib` still exists and depending on your needs, may allow you to avoid an external dependency.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-3)
 
 We create a `ThreadPoolExecutor` instance, and here you can specify how many workers are required.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-4)
 
-*Jobs* are created, one for every URL in our considerable list. The *executor* manages the delivery of jobs to the four threads.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-5)
+_Jobs_ are created, one for every URL in our considerable list. The _executor_ manages the delivery of jobs to the four threads.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO7-5)
 
 This is a simple way of waiting for all the threads to return.
 
@@ -285,7 +282,7 @@ The `logging` module is very well known in the web development community, but is
 
     logger.debug('This is output to the console')
 
-The huge advantage of the latter is that, with a single change to a setting on the logger instance, you can either show or hide all your debugging messages. This means you no longer have to go through the process of commenting and uncommenting your `print()` statements in order to show or hide them. `logging` also gives you a few different *levels* so that you can adjust the verbosity of output in your programs. Here’s an example of different levels:
+The huge advantage of the latter is that, with a single change to a setting on the logger instance, you can either show or hide all your debugging messages. This means you no longer have to go through the process of commenting and uncommenting your `print()` statements in order to show or hide them. `logging` also gives you a few different _levels_ so that you can adjust the verbosity of output in your programs. Here’s an example of different levels:
 
     logger.debug('This is for debugging. Very talkative!')
     logger.info('This is for normal chatter')
@@ -324,13 +321,13 @@ Earlier I said that logging requires some setup. The documentation for the `logg
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO8-1)
 
-Without arguments, the `getLogger()` function returns the *root* logger, but it’s more common to create a *named* logger. If you’re just starting out, exploring with the root logger is fine.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO8-2)
+Without arguments, the `getLogger()` function returns the _root_ logger, but it’s more common to create a _named_ logger. If you’re just starting out, exploring with the root logger is fine.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO8-2)
 
 You need to call a `config` method; otherwise, calls to the logger will not log anything. The config step is necessary.
 
 In the preceding `basicConfig()` line, by changing only `logging.DEBUG` to, say, `logging.WARNING`, you can affect which messages get processed and which don’t.
 
-Finally, there’s a neat trick you can use for easily changing the logging level on the command line. Python scripts that are directly executable usually have the startup code in a conditional block beginning with `if __name__ == '__main__'`. This is where *command-line parameters* are handled, e.g., using the `argparse` library in the Python standard library. We can create command-line arguments specifically for the logging level:
+Finally, there’s a neat trick you can use for easily changing the logging level on the command line. Python scripts that are directly executable usually have the startup code in a conditional block beginning with `if __name__ == '__main__'`. This is where _command-line parameters_ are handled, e.g., using the `argparse` library in the Python standard library. We can create command-line arguments specifically for the logging level:
 
     # Bottom of the file
     if __name__ == '__main__':
@@ -357,7 +354,7 @@ There are many more features packed into the `logging` module, but I hope I’ve
 
 ### sched
 
-There is increasing interest in the creation of bots[4](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067174608) and other monitoring and automation applications. For these applications, a common requirement is to perform actions at specified times or specified intervals. This functionality is provided by the `sched` module in the standard library. There are already similar tools provided by operating systems, such as `cron` on Linux and *Windows Task Scheduler*, but with Python’s own `sched` module you can ignore these platform differences, as well as incorporate scheduled tasks into a program that might have many other functions.
+There is increasing interest in the creation of bots[4](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067174608) and other monitoring and automation applications. For these applications, a common requirement is to perform actions at specified times or specified intervals. This functionality is provided by the `sched` module in the standard library. There are already similar tools provided by operating systems, such as `cron` on Linux and _Windows Task Scheduler_, but with Python’s own `sched` module you can ignore these platform differences, as well as incorporate scheduled tasks into a program that might have many other functions.
 
 The [documentation](http://bit.ly/sched-docs) for sched is rather terse, but hopefully these examples will get you started. The easy way to begin is to schedule a function to be executed after a specified delay (this is a complete example to make sure you can run it successfully):
 
@@ -389,7 +386,7 @@ The scheduler is started with `run(blocking=True)`, and the execution point rema
 
 There are a few annoying details about using `sched`: you have to pass `timefunc=time.time` as this isn’t set by default, and you have to supply a priority even when not required. However, overall, the `sched` module still provides a clean way to get `cron`-like behavior.
 
-Working with delays can be frustrating if what you *really* want is for a task to execute at specific times. In addition to `enter()`, a `sched` instance also provides the `enterabs()` method with which you can trigger an event at a specific time. We can use that method to trigger a function, say, every *whole* minute:
+Working with delays can be frustrating if what you _really_ want is for a task to execute at specific times. In addition to `enter()`, a `sched` instance also provides the `enterabs()` method with which you can trigger an event at a specific time. We can use that method to trigger a function, say, every _whole_ minute:
 
     import sched
     import time
@@ -418,7 +415,7 @@ Working with delays can be frustrating if what you *really* want is for a task t
 
 Create a `scheduler` instance, as before.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-2)
 
-Get *current time*, but strip off seconds and microseconds to obtain a whole minute.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-3)
+Get _current time_, but strip off seconds and microseconds to obtain a whole minute.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-3)
 
 The target time is exactly one minute ahead of the current whole minute.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO10-4)
 
@@ -434,8 +431,7 @@ This code produces the following output:
 
 With the growing interest in “Internet of Things” applications, the built-in `sched` library provides a convenient way to manage repetitive tasks. The [documentation](http://bit.ly/sched-docs) provides further information about how to cancel future tasks.
 
-In the Wild
------------
+## In the Wild
 
 From here on we’ll look at some third-party Python libraries that you might not yet have discovered. There are thousands of excellent packages described at [the Python guide](http://bit.ly/py-guide).
 
@@ -443,23 +439,22 @@ There are quite a few guides similar to this report that you can find online. Th
 
 My selection criteria were that a library should be:
 
--   easy to use
--   easy to install
--   cross-platform
--   applicable to more than one domain
--   not yet super-popular, but likely to become so
--   the *X* factor
+- easy to use
+- easy to install
+- cross-platform
+- applicable to more than one domain
+- not yet super-popular, but likely to become so
+- the _X_ factor
 
 The last two items in that list bear further explanation.
 
-Popularity is difficult to define exactly, since different libraries tend to get used to varying degrees within different Python communities. For instance, [Numpy](http://www.numpy.org/) and [Scipy](http://www.scipy.org/) are much more heavily used within the *scientific* Python community, while [Django](https://www.djangoproject.com/) and [Flask](http://flask.pocoo.org/) enjoy more attention in the web development community. Furthermore, the popularity of these libraries is such that everybody already knows about them. A candidate for this list *might* have been something like [Dask](http://dask.pydata.org/en/latest), which seems poised to become an eventual successor to Numpy, but in the medium term it is likely to be mostly applicable to the scientific community, thus failing my applicability test.
+Popularity is difficult to define exactly, since different libraries tend to get used to varying degrees within different Python communities. For instance, [Numpy](http://www.numpy.org/) and [Scipy](http://www.scipy.org/) are much more heavily used within the _scientific_ Python community, while [Django](https://www.djangoproject.com/) and [Flask](http://flask.pocoo.org/) enjoy more attention in the web development community. Furthermore, the popularity of these libraries is such that everybody already knows about them. A candidate for this list _might_ have been something like [Dask](http://dask.pydata.org/en/latest), which seems poised to become an eventual successor to Numpy, but in the medium term it is likely to be mostly applicable to the scientific community, thus failing my applicability test.
 
-The *X* factor means that really cool things are likely to be built with that Python library. Such a criterion is of course strongly subjective, but I hope, in making these selections, to inspire you to experiment and create something new!
+The _X_ factor means that really cool things are likely to be built with that Python library. Such a criterion is of course strongly subjective, but I hope, in making these selections, to inspire you to experiment and create something new!
 
 Each of the following chapters describes a library that met all the criteria on my list, and which I think you’ll find useful in your everyday Python activities, no matter your specialization.
 
-Easier Python Packaging with flit
----------------------------------
+## Easier Python Packaging with flit
 
 [flit](http://bit.ly/flit-py) is a tool that dramatically simplifies the process of submitting a Python package to the Python Package Index (PyPI). The [traditional process](http://bit.ly/pkg-py) begins by creating a `setup.py` file; simply figuring out how to do that requires a considerable amount of work even to understand what to do. In contrast, flit will create its config file interactively, and for typical simple packages you’ll be ready to upload to PyPI almost immediately. Let’s have a look: consider this simple package structure:
 
@@ -471,7 +466,7 @@ Easier Python Packaging with flit
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO11-1)
 
-The package’s *init* file is a great place to add package information like documentation, version numbers, and author information.
+The package’s _init_ file is a great place to add package information like documentation, version numbers, and author information.
 
 After installing flit into your environment with `pip install flit`, you can run the interactive initializer, which will create your package configuration. It asks only five questions, most of which will have applicable defaults once you have made your first package with `flit`:
 
@@ -488,7 +483,7 @@ After installing flit into your environment with `pip install flit`, you can run
     Enter 1-4 [2]: 2
     Written flit.ini; edit that file to add optional extra info.
 
-The final line tells you that a *flit.ini* file was created. Let’s have a look at that:
+The final line tells you that a _flit.ini_ file was created. Let’s have a look at that:
 
      $ cat flit.ini
     // [metadata]
@@ -498,7 +493,7 @@ The final line tells you that a *flit.ini* file was created. Let’s have a look
     home-page = https://github.com/cjrh/mypkg
     classifiers = License :: OSI Approved :: Apache Software License
 
-It’s pretty much what we specified in the interactive `flit init` sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the *mypkg/\_\_init\_\_.py \_file at the top using triple quotes (`"""`). The second is that you must add a line for the version to the same file. Your finished* \_\_init\_\_.py\_ file might look like this:
+It’s pretty much what we specified in the interactive `flit init` sequence. Before you can submit our package to the online PyPI, there are two more steps that you must complete. The first is to give your package a docstring. You add this to the _mypkg/\_\_init\_\_.py \_file at the top using triple quotes (`"""`). The second is that you must add a line for the version to the same file. Your finished_ \_\_init\_\_.py\_ file might look like this:
 
     # file: __init__.py
     """ This is the documentation for the package. """
@@ -538,14 +533,13 @@ And that’s it! [Figure 1-1](https://learning.oreilly.com/library/view/20-pytho
 
 `flit` allows you to specify more options, but for simple packages what you see here can get you pretty far.
 
-Command-Line Applications
--------------------------
+## Command-Line Applications
 
 If you’ve spent any time whatsoever developing Python code, you will surely have used several command-line applications. Some command-line programs seem much friendlier than others, and in this chapter we show two fantastic libraries that will make it easy for you to offer the best experience for users of your own command-line applications. `colorama` allows you to use colors in your output, while `begins` makes it easy to provide a rich interface for specifying and processing command-line options.
 
 ### colorama
 
-Many of your desktop Python programs will only ever be used on the command line, so it makes sense to do whatever you can to improve the experience of your users as much as possible. The use of *color* can dramatically improve your user interface, and `colorama` makes it very easy to add splashes of color into your command-line applications.
+Many of your desktop Python programs will only ever be used on the command line, so it makes sense to do whatever you can to improve the experience of your users as much as possible. The use of _color_ can dramatically improve your user interface, and `colorama` makes it very easy to add splashes of color into your command-line applications.
 
 Let’s begin with a simple example.
 
@@ -571,7 +565,7 @@ The great thing about `colorama` is that it also works on Windows, in addition t
     from colorama import init
     init()
 
-The preceding example is clear enough to follow, but I would be a sorry author if I—after having emphasized the benefits of the *logging* module—told you that the only way to get colors into your console was to use `print()`. As usual with Python, it turns out that the hard work has already been done for us. After installing the `colorlog` package,[6](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760) you can use colors in your log messages immediately:
+The preceding example is clear enough to follow, but I would be a sorry author if I—after having emphasized the benefits of the _logging_ module—told you that the only way to get colors into your console was to use `print()`. As usual with Python, it turns out that the hard work has already been done for us. After installing the `colorlog` package,[6](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760) you can use colors in your log messages immediately:
 
     import colorlog
 
@@ -651,11 +645,11 @@ In contrast, the `begins` library takes a machete to the API of `argparse` and m
 
 There is so much happening in so few lines, yet everything is still explicit:
 
--   Each parameter in the main function becomes a command-line argument.
--   The *function annotations* are exploited to provide an inline help description of each parameter.
--   The default value of each parameter (here, `0.0`) is used both as a default value, as well as to indicate the required datatype (in this case, a `float` number value).
--   The `auto_convert=True` is used to enforce type coercion from a string to the target parameter type.
--   The docstring for the *function* now becomes the help documentation of the program itself.
+- Each parameter in the main function becomes a command-line argument.
+- The _function annotations_ are exploited to provide an inline help description of each parameter.
+- The default value of each parameter (here, `0.0`) is used both as a default value, as well as to indicate the required datatype (in this case, a `float` number value).
+- The `auto_convert=True` is used to enforce type coercion from a string to the target parameter type.
+- The docstring for the _function_ now becomes the help documentation of the program itself.
 
 Also, you may have noticed that this example lacks the usual `if __name__ == '__main__'` boilerplate: that’s because `begins` is smart enough to work with Python’s stack frames so that your target function becomes the starting point.
 
@@ -690,7 +684,7 @@ When called with:
 
 the `filters` argument would be the list `['tmp', 'temp', 'TEMP']`.
 
-If that were all that `begins` supported, it would already be sufficient for the vast majority of simple programs; however, `begins` also provides support for *subcommands*:
+If that were all that `begins` supported, it would already be sufficient for the vast majority of simple programs; however, `begins` also provides support for _subcommands_:
 
     import begin
 
@@ -714,8 +708,8 @@ If that were all that `begins` supported, it would already be sufficient for the
 
 The `main` function is the same as before, but we’ve added two subcommands:
 
--   The first, `status`, represents a subcommand that could be used to provide some kind of *system status* message (think “git status”).
--   The second, `fetch`, represents a subcommand for some kind of work function (think “git fetch”).
+- The first, `status`, represents a subcommand that could be used to provide some kind of _system status_ message (think “git status”).
+- The second, `fetch`, represents a subcommand for some kind of work function (think “git fetch”).
 
 Each subcommand has its own set of parameters, and the rules work in the same way as before with the `main` function. For instance, observe the updated help (obtained with the `-h` parameter) for the program:
 
@@ -744,14 +738,13 @@ We still have the same documentation for the main program, but now additional he
     14.0
     Very well, thank-you.
 
-You can also see how *boolean* parameters get some special treatment: they evaluate `True` if present and `False` when `no-` is prefixed to the parameter name, as shown for the parameter `compact`.
+You can also see how _boolean_ parameters get some special treatment: they evaluate `True` if present and `False` when `no-` is prefixed to the parameter name, as shown for the parameter `compact`.
 
 `begins` has even more tricks up its sleeve, such as automatic handling for [environment variables](http://bit.ly/env-var), [config files](http://bit.ly/beg-config), [error handling](http://bit.ly/beg-err), and [logging](http://bit.ly/beg-log), and I once again urge you to check out the project documentation.
 
 If `begins` seems too extreme for you, there are a bunch of other tools for easing the creation of command-line interfaces. One particular option that has been growing in popularity is [click](http://click.pocoo.org/).
 
-Graphical User Interfaces
--------------------------
+## Graphical User Interfaces
 
 Python offers a wealth of options for creating graphical user interfaces (GUIs) including [PyQt](http://bit.ly/py-qt), [wxPython](https://www.wxpython.org/), and [tkinter](http://bit.ly/tkinter-py), which is also available directly in the standard library. In this chapter we will describe two significant, but largely undiscovered, additions to the lineup. The first, `pyqtgraph`, is much more than simply a chart-plotting library, while `pywebview` gives you a full-featured web-technology interface for your desktop Python applications.
 
@@ -779,7 +772,7 @@ By default, the style configuration for graphs in `pyqtgraph` uses a black backg
 
 There is more on offer than simply plotting graphs: `pyqtgraph` also has features for 3D visualization, widget docking, and automatic data widgets with two-way binding. In [Figure 1-5](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pyqtgraph_light), the data-entry and manipulation widgets were generated automatically from a Numpy table array, and UI interaction with these widgets changes the graph automatically.
 
-`pyqtgraph` is typically used as a direct visualizer, much like how `matplotlib` is used, but with better interactivity. However, it is also quite easy to *embed* `pyqtgraph` into another separate `PyQt` application and the documentation for this is easy to follow. `pyqtgraph` also provides a few useful extras, like edit widgets that are units-aware (kilograms, meters and so on), and tree widgets that can be built automatically from (nested!) standard Python data structures like lists, dictionaries, and arrays.
+`pyqtgraph` is typically used as a direct visualizer, much like how `matplotlib` is used, but with better interactivity. However, it is also quite easy to _embed_ `pyqtgraph` into another separate `PyQt` application and the documentation for this is easy to follow. `pyqtgraph` also provides a few useful extras, like edit widgets that are units-aware (kilograms, meters and so on), and tree widgets that can be built automatically from (nested!) standard Python data structures like lists, dictionaries, and arrays.
 
 The author of `pyqtgraph` is now working with the authors of other visualization packages on a new high-performance visualization package: [vispy](http://vispy.org/gallery.html). Based on how useful `pyqtgraph` has been for me, I’ve no doubt that `vispy` is likely to become another indispensable tool for data visualization.![tply 0602](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0602.png)
 
@@ -787,9 +780,9 @@ The author of `pyqtgraph` is now working with the authors of other visualization
 
 ### pywebview
 
-There are a huge number of ways to make *desktop* GUI applications with Python, but in recent years the idea of using a browser-like interface as a desktop client interface has become popular. This approach is based around tools like [cefpython](http://bit.ly/cefpy) (using the Chrome-embedded framework) and [Electron](http://bit.ly/electron-py), which has been used to build many popular tools such as the Atom text editor and Slack social messaging application.
+There are a huge number of ways to make _desktop_ GUI applications with Python, but in recent years the idea of using a browser-like interface as a desktop client interface has become popular. This approach is based around tools like [cefpython](http://bit.ly/cefpy) (using the Chrome-embedded framework) and [Electron](http://bit.ly/electron-py), which has been used to build many popular tools such as the Atom text editor and Slack social messaging application.
 
-Usually, such an approach involves bundling a browser engine with your application, but [Pywebview](http://bit.ly/pywebview) gives you a one-line command to create a GUI window that wraps a *system native* “web view” window. By combining this with a Python web abb like Flask or Bottle, it becomes very easy to create a local application with a GUI, while also taking advantage of the latest GUI technologies that have been developed in the browser space. The benefit to using the system native browser widget is that you don’t have to distribute a potentially large application bundle to your users.
+Usually, such an approach involves bundling a browser engine with your application, but [Pywebview](http://bit.ly/pywebview) gives you a one-line command to create a GUI window that wraps a _system native_ “web view” window. By combining this with a Python web abb like Flask or Bottle, it becomes very easy to create a local application with a GUI, while also taking advantage of the latest GUI technologies that have been developed in the browser space. The benefit to using the system native browser widget is that you don’t have to distribute a potentially large application bundle to your users.
 
 Let’s begin with an example. Since our application will be built up as a web-page template in HTML, it might be interesting to use a Python tool to build the HTML rather than writing it out by hand.
 
@@ -895,7 +888,7 @@ Running this program produces a great-looking interface, as shown in [Figure 1-6
 
 **Figure 1-6. A beautiful and pleasing interface with very little effort.**
 
-For this demonstration, I’ve used the *Paper* Bootstrap theme, but by changing a single word you can use an entirely different one! The *Superhero* Bootstrap theme is shown in [Figure 1-7](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pywebview_theme).![tply 0604](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0604.png)
+For this demonstration, I’ve used the _Paper_ Bootstrap theme, but by changing a single word you can use an entirely different one! The _Superhero_ Bootstrap theme is shown in [Figure 1-7](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#pywebview_theme).![tply 0604](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0604.png)
 
 **Figure 1-7. The same application, but using the Superhero theme from Bootswatch.**
 
@@ -905,8 +898,7 @@ In the preceding example we also used the [`dominate`](http://bit.ly/dominate-py
 
 For the kind of application that `Pywebview` is aimed at, it would be very interesting to think about how `dominate` could be used to make an abstraction that completely hides browser technologies like HTML and JavaScript, and lets you create (e.g., button-click handlers) entirely in Python without worrying about the intermediate event processing within the JavaScript engine. This technique is already explored in existing tools like [flexx](http://bit.ly/flexx-py).
 
-System Tools
-------------
+## System Tools
 
 Python is heavily used to make tools that work closely with the operating system, and it should be no surprise to discover that there are excellent libraries waiting to be discovered. The `psutil` library gives you all the access to operating-system and process information you could possibly hope for, while the `Watchdog` library gives you hooks into system file-event notifications. Finally, we close out this chapter with a look at `ptpython`, which gives you a significantly enriched interactive Python prompt.
 
@@ -923,7 +915,7 @@ Output:
 
     [21.4, 1.2, 18.0, 1.4, 15.6, 1.8, 17.4, 1.6]
 
-It produces one value for each logical CPU: on my computer, eight. The rest of the `psutil` API is as simple and clean as this example shows, and the API also provides access to memory, disk, and network information. It is *very* extensive.
+It produces one value for each logical CPU: on my computer, eight. The rest of the `psutil` API is as simple and clean as this example shows, and the API also provides access to memory, disk, and network information. It is _very_ extensive.
 
 There is also detailed information about processes. To demonstrate, here is a program that monitors its own memory consumption and throws in the towel when a limit is reached:
 
@@ -954,7 +946,7 @@ The `os` module in the standard library provides our process ID (PID).[![2](http
 
 `psutil` constructs a `Process()` object based on the PID. In this case the PID is our own, but it could be any running process on the system.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO16-3)
 
-This looks bad: an infinite loop *and* an ever-growing list!
+This looks bad: an infinite loop _and_ an ever-growing list!
 
 Output:
 
@@ -976,19 +968,19 @@ Output:
 
 The full path has been shortened here to improve the appearance of the snippet. There are many more methods besides `name` and `exe` available on `psutil.Process()` instances.
 
-The type of memory shown here is the *unique set size*, which is the real memory released when that process terminates. The reporting of the unique set size is a new feature in version 4 of `psutil`, which also works on Windows.
+The type of memory shown here is the _unique set size_, which is the real memory released when that process terminates. The reporting of the unique set size is a new feature in version 4 of `psutil`, which also works on Windows.
 
 There is an extensive set of process properties you can interrogate with `psutil`, and I encourage you to read the documentation. Once you begin using `psutil`, you will discover more and more scenarios in which it can make sense to capture process properties. For example, it might be useful, depending on your application, to capture process information inside exception handlers so that your error logging can include information about CPU and memory load.
 
 ### Watchdog
 
-`Watchdog` is a high-quality, cross-platform library for receiving notifications of changes in the file system. Such file-system notifications is a fundamental requirement in many automation applications, and `Watchdog` handles all the low-level and cross-platform details of notifications for system events. And, the great thing about `Watchdog` is that it doesn’t use *polling*.
+`Watchdog` is a high-quality, cross-platform library for receiving notifications of changes in the file system. Such file-system notifications is a fundamental requirement in many automation applications, and `Watchdog` handles all the low-level and cross-platform details of notifications for system events. And, the great thing about `Watchdog` is that it doesn’t use _polling_.
 
-The problem with polling is that having many such processes running can sometimes consume more resources than you may be willing to part with, particularly on lower-spec systems like the [Raspberry Pi](https://www.raspberrypi.org/). By using the native notification systems on each platform, the operating system *tells you* immediately when something has changed, rather than you having to ask. On Linux, the `inotify` API is used; on Mac OS X, either `kqueue` or `FSEvents` are used; and on Windows, the `ReadDirectoryChangesW` API is used. `Watchdog` allows you to write cross-platform code and not worry too much about how the sausage is made.
+The problem with polling is that having many such processes running can sometimes consume more resources than you may be willing to part with, particularly on lower-spec systems like the [Raspberry Pi](https://www.raspberrypi.org/). By using the native notification systems on each platform, the operating system _tells you_ immediately when something has changed, rather than you having to ask. On Linux, the `inotify` API is used; on Mac OS X, either `kqueue` or `FSEvents` are used; and on Windows, the `ReadDirectoryChangesW` API is used. `Watchdog` allows you to write cross-platform code and not worry too much about how the sausage is made.
 
 `Watchdog` has a mature API, but one way to get immediate use out of it is to use the included `watchmedo` command-line utility to run a shell command when something changes. Here are a few ideas for inspiration:
 
--   Compiling template and markup languages:
+- Compiling template and markup languages:
 
 <!-- -->
 
@@ -1008,7 +1000,7 @@ The problem with polling is that having many such processes running can sometime
 
 Watchdog will substitute the name of the specific changed file using this template name.
 
--   Maintenance tasks, like backups or mirroring:
+- Maintenance tasks, like backups or mirroring:
 
 <!-- -->
 
@@ -1017,7 +1009,7 @@ Watchdog will substitute the name of the specific changed file using this templa
           --patterns="*" \
           --command='rsync -avz mydir/ host:/home/ubuntu"'
 
--   Convenience tasks, like automatically running formatters, linters, and tests:
+- Convenience tasks, like automatically running formatters, linters, and tests:
 
 <!-- -->
 
@@ -1027,7 +1019,7 @@ Watchdog will substitute the name of the specific changed file using this templa
           --command='pyfmt -i "${watch_src_path}"' \
           --ignore-directories
 
--   Calling API endpoints on the Web, or even sending emails and SMS messages:
+- Calling API endpoints on the Web, or even sending emails and SMS messages:
 
 <!-- -->
 
@@ -1068,11 +1060,11 @@ The API of `Watchdog` as a library is fairly similar to the command-line interfa
 
 [![1](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/1.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-1)
 
-Create an *observer* instance.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-2)
+Create an _observer_ instance.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-2)
 
-You have to subclass one of the *handler* classes, and override the methods for events that you want to process. Here I’ve implemented handlers for creation and modification, but there are several other methods you can supply, as explained in the [documentation](http://bit.ly/watchdog-docs).[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-4)
+You have to subclass one of the _handler_ classes, and override the methods for events that you want to process. Here I’ve implemented handlers for creation and modification, but there are several other methods you can supply, as explained in the [documentation](http://bit.ly/watchdog-docs).[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-4)
 
-You *schedule* the event handler, and tell `watchdog` what it should be watching. In this case I’ve asked for notifications on *all files* (`*`) n the *current directory* (`.`).[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-5)
+You _schedule_ the event handler, and tell `watchdog` what it should be watching. In this case I’ve asked for notifications on _all files_ (`*`) n the _current directory_ (`.`).[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO19-5)
 
 `Watchdog` runs in a separate thread. By calling the `join()` method, you can force the program flow to block at this point.
 
@@ -1109,7 +1101,7 @@ When you need to work with blocks in the interpreter, like classes and functions
 
 Here, I retrieved the code for the function declaration by pressing the up arrow (or Ctrl-p) and the entire block is shown, rather than having to scroll through lines separately.
 
-The additional features include *vi* and *Emacs* keys, theming support, docstring hinting, and input validation, which checks a command (or block) for syntax errors before allowing evaluation. To see the full set of configurable options, press F2, as seen in [Figure 1-10](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#ptpy_menu).![tply 0701](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0701.png)
+The additional features include _vi_ and _Emacs_ keys, theming support, docstring hinting, and input validation, which checks a command (or block) for syntax errors before allowing evaluation. To see the full set of configurable options, press F2, as seen in [Figure 1-10](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#ptpy_menu).![tply 0701](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/tply_0701.png)
 
 **Figure 1-8. The code-completion suggestions pop up automatically as you type.**
 
@@ -1121,10 +1113,9 @@ The additional features include *vi* and *Emacs* keys, theming support, docstrin
 
 **Figure 1-10. The settings menu accessible via F2.**
 
-On the command line, `ptpython` offers highly productive features that are sure to enhance your workflow. I have found that `ptpython` is the fastest way to quickly test some syntax or a library call, without having to open an editor or integrated development environment (IDE). And if you prefer *IPython*, you’ll be glad to hear that `ptpython` includes an integration which you can launch with `ptipython`. This makes available the shell integration that *IPython* offers, as well as its wealth of magic commands.
+On the command line, `ptpython` offers highly productive features that are sure to enhance your workflow. I have found that `ptpython` is the fastest way to quickly test some syntax or a library call, without having to open an editor or integrated development environment (IDE). And if you prefer _IPython_, you’ll be glad to hear that `ptpython` includes an integration which you can launch with `ptipython`. This makes available the shell integration that _IPython_ offers, as well as its wealth of magic commands.
 
-Web APIs with hug
------------------
+## Web APIs with hug
 
 Python is famously used in a large number of web frameworks, and an extension of this area is the web services domain in which APIs are exposed for other users’ programs to consume. In this domain, [Django REST framework](http://www.django-rest-framework.org/) and [Flask](http://flask.pocoo.org/) are very popular choices, but you may not yet have heard of `hug`.
 
@@ -1241,7 +1232,7 @@ This new `hug` API wraps the `inflect` package, which provides tools for word ma
 
 The first version of the API returns lowercased results.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO22-4)
 
-The second, newer version of the *same API* returns the result as calculated by `inflect`, without any alteration.
+The second, newer version of the _same API_ returns the result as calculated by `inflect`, without any alteration.
 
 **NOTE**
 
@@ -1262,7 +1253,7 @@ Imagine that we’ve created this web service to provide an API to transform wor
 
 Note: the URL now has a “v1” specifier for “version 1.”
 
-It didn’t occur to us that some users may *prefer* to have the case of input words preserved: for example, if a word at the beginning of a sentence is being altered, it would be best to preserve the capitalization. Fortunately, the `inflect` library already does this by default, and `hug` provides versioning that allows us to provide a second version of the API (so as not to hurt existing users who may expect the lower-case transformation):
+It didn’t occur to us that some users may _prefer_ to have the case of input words preserved: for example, if a word at the beginning of a sentence is being altered, it would be best to preserve the capitalization. Fortunately, the `inflect` library already does this by default, and `hug` provides versioning that allows us to provide a second version of the API (so as not to hurt existing users who may expect the lower-case transformation):
 
     $ curl http://localhost:8000/v2/singular/?word=Silly%20Walks
 
@@ -1273,7 +1264,7 @@ It didn’t occur to us that some users may *prefer* to have the case of input w
 
     "Crises"
 
-These API calls use version 2 of our web service. And finally, the documentation is also versioned, and for this example, you can see how the function *docstrings* are also incorporated as usage text:
+These API calls use version 2 of our web service. And finally, the documentation is also versioned, and for this example, you can see how the function _docstrings_ are also incorporated as usage text:
 
     $ curl http://localhost:8000/v2/
     {
@@ -1309,20 +1300,19 @@ These API calls use version 2 of our web service. And finally, the documentation
 
 Each version has separate documentation, and calling that version endpoint, i.e., `v2`, returns the documentation for that version.[![2](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/2.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO24-3)
 
-The *docstring* of each function is reused as the usage text for that API call.
+The _docstring_ of each function is reused as the usage text for that API call.
 
 `hug` has [extensive documentation](http://www.hug.rest/) in which there are even more features to discover. With the exploding interest in internet-of-things applications, it is likely that simple and powerful libraries like `hug` will enjoy widespread popularity.
 
-Dates and Times
----------------
+## Dates and Times
 
-Many Python users cite two major pain points: the first is *packaging*, and for this we covered `flit` in an earlier chapter. The second is working with dates and times. In this chapter we cover two libraries that will make an enormous difference in how you deal with temporal matters. `arrow` is a reimagined library for working with `datetime` objects in which timezones are always present, which helps to minimize a large class of errors that new Python programmers encounter frequently. `parsedatetime` is a library that lets your code parse natural-language inputs for dates and times, which can make it vastly easier for your users to provide such information.
+Many Python users cite two major pain points: the first is _packaging_, and for this we covered `flit` in an earlier chapter. The second is working with dates and times. In this chapter we cover two libraries that will make an enormous difference in how you deal with temporal matters. `arrow` is a reimagined library for working with `datetime` objects in which timezones are always present, which helps to minimize a large class of errors that new Python programmers encounter frequently. `parsedatetime` is a library that lets your code parse natural-language inputs for dates and times, which can make it vastly easier for your users to provide such information.
 
 ### arrow
 
-Though opinions differ, there are those who have found the standard library’s `datetime` module confusing to use. The module documentation itself in the [first few paragraphs](http://bit.ly/datetime-module) explains why: it provides both *naive* and *aware* objects to represent dates and times. The *naive* ones are the source of confusion, because application developers increasingly find themselves working on projects in which timezones are critically important. The dramatic rise of cloud infrastructure and software-as-a-service applications have contributed to the reality that your application will frequently run in a different timezone (e.g., on a server) than where developers are located, and different again to where your users are located.
+Though opinions differ, there are those who have found the standard library’s `datetime` module confusing to use. The module documentation itself in the [first few paragraphs](http://bit.ly/datetime-module) explains why: it provides both _naive_ and _aware_ objects to represent dates and times. The _naive_ ones are the source of confusion, because application developers increasingly find themselves working on projects in which timezones are critically important. The dramatic rise of cloud infrastructure and software-as-a-service applications have contributed to the reality that your application will frequently run in a different timezone (e.g., on a server) than where developers are located, and different again to where your users are located.
 
-The *naive* `datetime` objects are the ones you typically see in demos and tutorials:
+The _naive_ `datetime` objects are the ones you typically see in demos and tutorials:
 
     import datetime
 
@@ -1332,13 +1322,13 @@ The *naive* `datetime` objects are the ones you typically see in demos and tutor
 
     print('Total difference: %.2f seconds' % difference)
 
-This code could not be any simpler: we create two `datetime` objects, and calculate the difference. The problem is that we probably intended both `now()` and `utcnow()` to mean *now* as in “this moment in time,” but perhaps in different timezones. When the difference is calculated, we get what seems an absurdly large result:
+This code could not be any simpler: we create two `datetime` objects, and calculate the difference. The problem is that we probably intended both `now()` and `utcnow()` to mean _now_ as in “this moment in time,” but perhaps in different timezones. When the difference is calculated, we get what seems an absurdly large result:
 
     Total difference: 36000.00 seconds
 
-The difference is, in fact, the timezone difference between my current location and UTC: +10 hours. This result is the worst kind of “incorrect” because it is, in fact, *correct* if timezones are not taken into account; and here lies the root of the problem: a misunderstanding of what the functions actually do. The `now()` and `utcnow()` functions *do* return the current time in local and UTC timezones, but unfortunately both results are *naive* `datetime` objects and therefore lack timezone data.
+The difference is, in fact, the timezone difference between my current location and UTC: +10 hours. This result is the worst kind of “incorrect” because it is, in fact, _correct_ if timezones are not taken into account; and here lies the root of the problem: a misunderstanding of what the functions actually do. The `now()` and `utcnow()` functions _do_ return the current time in local and UTC timezones, but unfortunately both results are _naive_ `datetime` objects and therefore lack timezone data.
 
-Note that it *is* possible to create `datetime` objects with timezone data attached, albeit in a subjectively cumbersome manner: you create an *aware* `datetime` by setting the `tzinfo` attribute to the correct timezone. In our example, we could (and should!) have created a current `datetime` object in the following way, by passing the timezone into the `now()` function:
+Note that it _is_ possible to create `datetime` objects with timezone data attached, albeit in a subjectively cumbersome manner: you create an _aware_ `datetime` by setting the `tzinfo` attribute to the correct timezone. In our example, we could (and should!) have created a current `datetime` object in the following way, by passing the timezone into the `now()` function:
 
     dt = datetime.datetime.now(tz=datetime.timezone.utc)
 
@@ -1347,11 +1337,11 @@ Of course, if you make this change on line 3 and try to rerun the code, the foll
     TypeError: can't subtract offset-naive and
     offset-aware datetimes
 
-This happens because even though the `utcnow()` function produces a `datetime` for the UTC timezone, the result is a *naive* `datetime` object, and Python prevents you from mixing naive and aware `datetime` objects. If you are suddenly scared to work with dates and times, that’s an understandable response, but I’d rather encourage you to instead be afraid of `datetimes` that lack timezone data. The `TypeError` just shown is the kind of error we really do want: it forces us to ensure that all our `datetime` instances are *aware*.
+This happens because even though the `utcnow()` function produces a `datetime` for the UTC timezone, the result is a _naive_ `datetime` object, and Python prevents you from mixing naive and aware `datetime` objects. If you are suddenly scared to work with dates and times, that’s an understandable response, but I’d rather encourage you to instead be afraid of `datetimes` that lack timezone data. The `TypeError` just shown is the kind of error we really do want: it forces us to ensure that all our `datetime` instances are _aware_.
 
 Naturally, to handle this in the general case requires some kind of database of timezones. Unfortunately, except for UTC, the Python standard library does not include timezone data; instead, the recommendation is to use a separately maintained library called [pytz](https://pythonhosted.org/pytz), and if you need to work with dates and times, I strongly encourage you to investigate that library in more detail.
 
-Now we can finally delve into the main topic of this section, which is `arrow`: a third-party library that offers a much simpler API for working with dates and times. With `arrow`, *everything* has a timezone attached (and is thus “aware”):
+Now we can finally delve into the main topic of this section, which is `arrow`: a third-party library that offers a much simpler API for working with dates and times. With `arrow`, _everything_ has a timezone attached (and is thus “aware”):
 
     import arrow
 
@@ -1371,7 +1361,7 @@ Output:
     2016-06-26T08:43:55.328630+00:00
     Total difference: -0.00 seconds
 
-As you can see, the `now()` function produces the current date and time *with* my local timezone attached (UTC+10), while the `utcnow()` function *also* produces the current date and time, but with the UTC timezone attached. As a consequence, the actual difference between the two times is as it should be: zero.
+As you can see, the `now()` function produces the current date and time _with_ my local timezone attached (UTC+10), while the `utcnow()` function _also_ produces the current date and time, but with the UTC timezone attached. As a consequence, the actual difference between the two times is as it should be: zero.
 
 And the delightful `arrow` library just gets better from there. The objects themselves have convenient attributes and methods you would expect:
 
@@ -1434,8 +1424,7 @@ The humanization even has built-in support for several locales!
     >>> t0.humanize(locale='zh')
     '2小时前'
 
-ALTERNATIVE LIBRARIES FOR DATES AND TIMES
------------------------------------------
+## ALTERNATIVE LIBRARIES FOR DATES AND TIMES
 
 There are several other excellent libraries for dealing with dates and times in Python, and it would be worth checking out both [Delorean](http://bit.ly/delorean-py) and the very new [Pendulum](http://pendulum.eustace.io/) library.
 
@@ -1479,7 +1468,7 @@ This produces the following, and unsurprising, output:
     "7-16-16"                           Sat Jul 16 16:25:20 2016
     "7/16/16"                           Sat Jul 16 16:25:20 2016
 
-By default, if the year is given *last*, then *month-day-year* is assumed, and the library also conveniently handles the presence or absence of leading zeros, as well as whether hyphens (`-`) or slashes (`/`) are used as delimiters.
+By default, if the year is given _last_, then _month-day-year_ is assumed, and the library also conveniently handles the presence or absence of leading zeros, as well as whether hyphens (`-`) or slashes (`/`) are used as delimiters.
 
 Significantly more impressive, however, is how `parsedatetime` handles more complicated, “natural language” inputs:
 
@@ -1529,18 +1518,17 @@ Incredibly, this all works just as you’d hope:
     "three months ago"                      Sun Mar 20 08:41:38 2016
     "2 weeks and 3 days in the future"      Thu Jul  7 08:41:38 2016
 
-The urge to combine this with a speech-to-text package like [SpeechRecognition](http://bit.ly/speechrec) or [watson-word-watcher](http://bit.ly/wordwatcher) (which provides confidence values per word) is almost irresistible, but of course you don’t need complex projects to make use of `parsedatetime`: even allowing a user to type in a friendly and natural description of a date or time interval might be much more convenient than the usual but frequently clumsy *DateTimePicker* widgets we’ve become accustomed to.
+The urge to combine this with a speech-to-text package like [SpeechRecognition](http://bit.ly/speechrec) or [watson-word-watcher](http://bit.ly/wordwatcher) (which provides confidence values per word) is almost irresistible, but of course you don’t need complex projects to make use of `parsedatetime`: even allowing a user to type in a friendly and natural description of a date or time interval might be much more convenient than the usual but frequently clumsy _DateTimePicker_ widgets we’ve become accustomed to.
 
 **NOTE**
 
 Another library featuring excellent datetime parsing abilities is [Chronyk](http://bit.ly/chronyk).
 
-General-Purpose Libraries
--------------------------
+## General-Purpose Libraries
 
 In this chapter we take a look at a few batteries that have not yet been included in the Python standard library, but which would make excellent additions.
 
-General-purpose libraries are quite rare in the Python world because the standard library covers most areas sufficiently well that library authors usually focus on very specific areas. Here we discuss `boltons` (a play on the word *builtins*), which provides a large number of useful additions to the standard library. We also cover the `Cython` library, which provides facilities for *both* massively speeding up Python code, as well as bypassing Python’s famous *global interpreter lock* (GIL) to enable true multi-CPU multi-threading.
+General-purpose libraries are quite rare in the Python world because the standard library covers most areas sufficiently well that library authors usually focus on very specific areas. Here we discuss `boltons` (a play on the word _builtins_), which provides a large number of useful additions to the standard library. We also cover the `Cython` library, which provides facilities for _both_ massively speeding up Python code, as well as bypassing Python’s famous _global interpreter lock_ (GIL) to enable true multi-CPU multi-threading.
 
 ### boltons
 
@@ -1550,11 +1538,11 @@ As a general-purpose library, `boltons` does not have a specific focus. Instead,
 
 #### boltons.cacheutils
 
-`boltons.cacheutils` provides tools for using a *cache* inside your code. Caches are very useful for saving the results of expensive operations and reusing those previously calculated results.
+`boltons.cacheutils` provides tools for using a _cache_ inside your code. Caches are very useful for saving the results of expensive operations and reusing those previously calculated results.
 
-The `functools` module in the [standard library](http://bit.ly/functools-docs) already provides a decorator called `lru_cache`, which can be used to *memoize* calls: this means that the function remembers the parameters from previous calls, and when the same parameter values appear in a new call, the previous answer is returned directly, bypassing any calculation.
+The `functools` module in the [standard library](http://bit.ly/functools-docs) already provides a decorator called `lru_cache`, which can be used to _memoize_ calls: this means that the function remembers the parameters from previous calls, and when the same parameter values appear in a new call, the previous answer is returned directly, bypassing any calculation.
 
-`boltons` provides similar caching functionality, but with a few convenient tweaks. Consider the following sample, in which we attempt to rewrite some lyrics from Taylor Swift’s *1989* juggernaut record. We will use tools from `boltons.cacheutils` to speed up processing time:
+`boltons` provides similar caching functionality, but with a few convenient tweaks. Consider the following sample, in which we attempt to rewrite some lyrics from Taylor Swift’s _1989_ juggernaut record. We will use tools from `boltons.cacheutils` to speed up processing time:
 
     import json
     import shelve
@@ -1637,7 +1625,7 @@ Here we obtain the `LRU` cache provided by `boltons.cacheutils` that we saved fr
 
 Here we use the `@cache` decorator provided by `boltons.cacheutils` to enable caching of the `part_of_speech()` function call. If the `word` argument has been used in a previous call to this function, the answer will be obtained from the cache rather than a slow call to the Internet.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-5)
 
-For synonyms and antonyms, we used a different kind of cache, called a *least recently inserted* cache (this choice is explained later in this section). An LRI cache is not provided in the Python Standard Library.[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-7)
+For synonyms and antonyms, we used a different kind of cache, called a _least recently inserted_ cache (this choice is explained later in this section). An LRI cache is not provided in the Python Standard Library.[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO25-7)
 
 Here we restrict which kinds of words will be substituted.
 
@@ -1647,13 +1635,13 @@ The excellent `vocabulary` package is used here to provide access to synonyms an
 
 For brevity, I’ve included only the first verse and chorus. The plan is staggeringly unsophisticated: we’re going to simply swap words with either a synonym or antonym, and which is decided randomly! Iteration over the words is straightforward, but we obtain synonyms and antonyms using the `vocabulary` package, which internally calls APIs on the Internet to fetch the data. Naturally, this can be slow since the lookup is going to be performed for every word, and this is why a cache will be used. In fact, in this code sample we use two different kinds of caching strategies.
 
-`boltons.cacheutils` offers two kinds of caches: the *least recently used* (LRU) version, which is the same as `functools.lru_cache`, and a simpler *least recently inserted* (LRI) version, which expires entries based on their insertion order.
+`boltons.cacheutils` offers two kinds of caches: the _least recently used_ (LRU) version, which is the same as `functools.lru_cache`, and a simpler _least recently inserted_ (LRI) version, which expires entries based on their insertion order.
 
-In our code, we use an *LRU* cache to keep a record of the *parts of speech* lookups, and we even save this cache to disk so that it can be reused in successive runs.
+In our code, we use an _LRU_ cache to keep a record of the _parts of speech_ lookups, and we even save this cache to disk so that it can be reused in successive runs.
 
-We also use an *LRI* cache to keep a record of word substitutions. For example, if a word is to be swapped with its antonym, the replacement will be stored in the LRI cache so that it can be reused. However, we apply a very small limit to the setting for maximum size on the LRI cache, so that words will fall out of the cache quite regularly. Using an LRI cache with a small maximum size means that the same word will be replaced with the same substitution only locally, say within the same verse; but if that same word appears later in the song (and that word has been dropped from the LRI cache), it might get a different substitution entirely.
+We also use an _LRI_ cache to keep a record of word substitutions. For example, if a word is to be swapped with its antonym, the replacement will be stored in the LRI cache so that it can be reused. However, we apply a very small limit to the setting for maximum size on the LRI cache, so that words will fall out of the cache quite regularly. Using an LRI cache with a small maximum size means that the same word will be replaced with the same substitution only locally, say within the same verse; but if that same word appears later in the song (and that word has been dropped from the LRI cache), it might get a different substitution entirely.
 
-The design of the caches in `boltons.cacheutils` is great in that it is easy to use the same cache for multiple functions, as we do here for the `synonym()` and `antonym()` functions. This means that once a word substitution appears in the cache, a call to *either* function returns the predetermined result from the same cache.
+The design of the caches in `boltons.cacheutils` is great in that it is easy to use the same cache for multiple functions, as we do here for the `synonym()` and `antonym()` functions. This means that once a word substitution appears in the cache, a call to _either_ function returns the predetermined result from the same cache.
 
 Here is an example of the output:
 
@@ -1690,7 +1678,7 @@ A similar requirement that often comes up is to have a moving window (of a parti
     >>> list(windowed_iter(range(7), 3))
     [(0, 1, 2), (1, 2, 3), (2, 3, 4), (3, 4, 5), (4, 5, 6)]
 
-Note that both `chunked_iter()` and `windowed_iter()` can operate on *iterables*, which means that very large sequences of data can be processed while keeping memory requirements tolerable for your usage scenario.
+Note that both `chunked_iter()` and `windowed_iter()` can operate on _iterables_, which means that very large sequences of data can be processed while keeping memory requirements tolerable for your usage scenario.
 
 #### boltons.fileutils
 
@@ -1706,8 +1694,8 @@ If you’ve ever had a long-running python application, and wished that you coul
 
 There are several functions in `boltons.strutils` that are enormously useful:
 
--   `slugify()`: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
--   `ordinalize()`: given a numerical value, create a string referring to its position:
+- `slugify()`: modify a string to be suitable, e.g., for use as a filename, by removing characters and symbols that would be invalid in a filename.
+- `ordinalize()`: given a numerical value, create a string referring to its position:
 
 <!-- -->
 
@@ -1716,7 +1704,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
     >>> print(ordinalize(2))
     2nd
 
--   `cardinalize`: given a word and a count, change the word for plurality and *preserve case*:
+- `cardinalize`: given a word and a count, change the word for plurality and _preserve case_:
 
 <!-- -->
 
@@ -1731,7 +1719,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
     >>> 'blind ' + cardinalize('mouse', 3)
     'blind mice'
 
--   `singularize` and `pluralize`:
+- `singularize` and `pluralize`:
 
 <!-- -->
 
@@ -1740,7 +1728,7 @@ There are several functions in `boltons.strutils` that are enormously useful:
     >>> singularize('mice')
     'mouse'
 
--   `bytes2human`: convert data sizes into friendler forms:
+- `bytes2human`: convert data sizes into friendler forms:
 
 <!-- -->
 
@@ -1761,10 +1749,10 @@ There are several other useful `boltons` libraries not mentioned here, and I enc
 
 That sounds complicated, but basically Cython lets you convert your Python modules into compiled extension modules. There are two main reasons you might need to do this:
 
--   You want to wrap a C/C++ library, and use it from Python.
--   You want to speed up Python code.
+- You want to wrap a C/C++ library, and use it from Python.
+- You want to speed up Python code.
 
-The *second* reason is the one I’m going to focus on. By adding a few type declarations to your Python source code, you can dramatically speed up certain kinds of functions.
+The _second_ reason is the one I’m going to focus on. By adding a few type declarations to your Python source code, you can dramatically speed up certain kinds of functions.
 
 Consider the following code, which is as simple as I could possibly make it for this example:
 
@@ -1823,17 +1811,17 @@ We import the array module as before.[![2](https://learning.oreilly.com/api/v2/e
 
 The variable for the data size, `n`, now gets a specific datatype.[![3](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/3.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-3)
 
-This line is new: we create a *memory view* of the data inside the array `a`. This allows Cython to generate code that can access the data inside the array directly.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-4)
+This line is new: we create a _memory view_ of the data inside the array `a`. This allows Cython to generate code that can access the data inside the array directly.[![4](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/4.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-4)
 
 As with `n`, we also specify a type for the loop index `i`.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO27-5)
 
-The work inside the loop is identical to before, except that we manipulate elements of the *memory view* rather than `a` itself.
+The work inside the loop is identical to before, except that we manipulate elements of the _memory view_ rather than `a` itself.
 
 Having modified our source code by adding information about native datatypes, we need to make three further departures from the normal Python workflow necessary before running our Cython code.
 
-The first is that, by convention, we change the file extension of our source-code file to *pyx* instead of *py*, to reflect the fact that our source code is no longer normal Python.
+The first is that, by convention, we change the file extension of our source-code file to _pyx_ instead of _py_, to reflect the fact that our source code is no longer normal Python.
 
-The second is that we must use Cython to *compile* our source code into a native machine binary file. There are many ways to do this depending on your situation, but here we’re going to go with the simple option and use a command-line tool provided by Cython itself:
+The second is that we must use Cython to _compile_ our source code into a native machine binary file. There are many ways to do this depending on your situation, but here we’re going to go with the simple option and use a command-line tool provided by Cython itself:
 
     $ cythonize -b -i cythondemofast.pyx
 
@@ -1843,9 +1831,9 @@ Running this command produces many lines of output messages from the compiler, b
     -rwxr-xr-x@ calebhattingh 140228 3 Jul 15:51
                                 cythondemofast.cpython-35m-darwin.so
 
-This is a native binary that Cython produced from our slightly modified Python source code! Now we need to run it, and this brings us to the third departure from the normal Python workflow: by default, Cython makes *native extensions* (as shared libraries), which means you have to import these in the same way you might import other Python extensions that use shared libraries.
+This is a native binary that Cython produced from our slightly modified Python source code! Now we need to run it, and this brings us to the third departure from the normal Python workflow: by default, Cython makes _native extensions_ (as shared libraries), which means you have to import these in the same way you might import other Python extensions that use shared libraries.
 
-With the first version of our example in ordinary Python, we could run the program easily with `python cythondemoslow.py`. We can run the code in our compiled *Cython* version simply by *importing* the native extension. As before, we include the `time` for measurement:
+With the first version of our example in ordinary Python, we could run the program easily with `python cythondemoslow.py`. We can run the code in our compiled _Cython_ version simply by _importing_ the native extension. As before, we include the `time` for measurement:
 
     $ time python -c "import cythondemofast"
     array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
@@ -1860,7 +1848,7 @@ In the example shown here, all our code was set out in the module itself, but us
 
 1.  Begin your project with normal Python.
 2.  Benchmark your performance.
-3.  If you need more speed, *profile* your code to find the functions that consume most of the time.
+3.  If you need more speed, _profile_ your code to find the functions that consume most of the time.
 4.  Convert these functions to Cython functions, and compile the new `.pyx` Cython modules into native extensions.
 5.  Import the new Cython functions into your main Python program.
 
@@ -1868,9 +1856,9 @@ In the example shown here, all our code was set out in the module itself, but us
 
 It won’t take long for a newcomer to the Python world to hear about Python’s so-called GIL, a safety mechanism Python uses to decrease the possibility of problems when using threads.
 
-Threading is a tool that lets you execute different sections of code in *parallel*, allowing the operating system to run each section on a separate CPU. The “GIL problem” is that the safety lock that prevents the interpreter state from being clobbered by parallel execution *also* has the unfortunate effect of limiting the ability of threads to actually run on different CPUs. The net effect is that Python threads do not achieve the parallel performance one would expect based on the availability of CPU resources.
+Threading is a tool that lets you execute different sections of code in _parallel_, allowing the operating system to run each section on a separate CPU. The “GIL problem” is that the safety lock that prevents the interpreter state from being clobbered by parallel execution _also_ has the unfortunate effect of limiting the ability of threads to actually run on different CPUs. The net effect is that Python threads do not achieve the parallel performance one would expect based on the availability of CPU resources.
 
-Cython gives us a way out of this dilemma, and enables multithreading at full performance. This is because *native extensions* (which is what Cython makes) are allowed to tell the main Python interpreter that they will be well-behaved and don’t need to be protected with the global safety lock. This means that threads containing Cython code can run in a fully parallel way on multiple CPUs; we just need to ask Python for permission.
+Cython gives us a way out of this dilemma, and enables multithreading at full performance. This is because _native extensions_ (which is what Cython makes) are allowed to tell the main Python interpreter that they will be well-behaved and don’t need to be protected with the global safety lock. This means that threads containing Cython code can run in a fully parallel way on multiple CPUs; we just need to ask Python for permission.
 
 In the following code snippet, we demonstrate how to use normal Python threading to speed up the same nonsense calculation I used in previous examples:
 
@@ -1920,11 +1908,11 @@ The actual point where the GIL is released. The rest of the function is identica
 
 Exactly the same as before.[![5](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/5.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-5)
 
-We create a *memory view* of the data inside the array. Cython is optimized to work with these kinds of memory views efficiently. (Did you know that `memoryview()` is a built-in *Python* function?)[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-6)
+We create a _memory view_ of the data inside the array. Cython is optimized to work with these kinds of memory views efficiently. (Did you know that `memoryview()` is a built-in _Python_ function?)[![6](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/6.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-6)
 
 We’re going to split up our big data array into two parts.[![7](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/7.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-7)
 
-Create normal Python threads: we must pass both the target function and the *view section* as the argument for the function. Note how each thread gets a different part of the view
+Create normal Python threads: we must pass both the target function and the _view section_ as the argument for the function. Note how each thread gets a different part of the view
 
 Threads are started.[![9](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9781492037866/files/assets/9.png)](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#co_expanding_your__span_class__keep_together__python_knowledge___span___span_class__keep_together__lesser_known_libraries__span__CO28-9)
 
@@ -1962,19 +1950,18 @@ The next step depends on your platform because you must invoke the C compiler di
 
 Here I’ve used a utility called `python3.5-config` that conveniently returns the path to the header file and the Python library, but you could also provide the paths directly.
 
-The compilation step using `gcc` produces a *native binary* executable that can be run directly on the command line:
+The compilation step using `gcc` produces a _native binary_ executable that can be run directly on the command line:
 
     $ ./cythondemopll
     array('d', [0.0, 1.0, 2.0, 0.0, 1.0])
 
-There is much more to learn about Cython, and I’ve made a comprehensive video series, *Learning Cython* (O’Reilly) that covers all the details. [Cython’s online documentation](http://docs.cython.org/#) is also an excellent reference.
+There is much more to learn about Cython, and I’ve made a comprehensive video series, _Learning Cython_ (O’Reilly) that covers all the details. [Cython’s online documentation](http://docs.cython.org/#) is also an excellent reference.
 
 ### awesome-python
 
 Finally, we have [awesome-python](http://bit.ly/awesome-py). It’s not a library, but rather a huge, curated list of a high-quality Python libraries covering a large number of domains. If you have not seen this list before, make sure to reserve some time before browsing because once you begin, you’ll have a hard time tearing yourself away!
 
-Conclusion
-----------
+## Conclusion
 
 There is much more to discover than what you’ve seen in this report. One of the best things about the Python world is its enormous repository of high-quality libraries.
 
@@ -1982,25 +1969,25 @@ You have seen a few of the very special features of the standard library like th
 
 In addition to those standard library modules, we also covered several excellent libraries that are also available to you on the PyPI. You’ve seen how:
 
--   *flit* makes it easy for you to create your own Python packages, and submit them to the PyPI.
--   libraries like *colorama* and *begins* improve your command-line applications.
--   tools like *pyqtgraph* and *pywebview* can save you lots of time when creating modern user interfaces, including *hug*, which can give your applications an easily created web API.
--   system libraries like *psutil* and *watchdog* can give you a clean integration with the host operating system.
--   temporal libraries like *arrow* and *parsedatetime* can simplify the tangled mess that working with dates and times often becomes.
--   general-purpose libraries like *boltons* and *Cython* can further enrich the already powerful facilities in the Python standard library.
+- _flit_ makes it easy for you to create your own Python packages, and submit them to the PyPI.
+- libraries like _colorama_ and _begins_ improve your command-line applications.
+- tools like _pyqtgraph_ and _pywebview_ can save you lots of time when creating modern user interfaces, including _hug_, which can give your applications an easily created web API.
+- system libraries like _psutil_ and _watchdog_ can give you a clean integration with the host operating system.
+- temporal libraries like _arrow_ and _parsedatetime_ can simplify the tangled mess that working with dates and times often becomes.
+- general-purpose libraries like _boltons_ and _Cython_ can further enrich the already powerful facilities in the Python standard library.
 
 Hopefully you will be able to use one or more of the great libraries in your next project, and I wish you the best of luck!
 
-[1](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608-marker) Looking for *sorted* container types? The excellent [sorted containers](http://bit.ly/sorted-cont) package has high-performance sorted versions of the `list`, `dict`, and `set` datatypes.
+[1](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737073220608-marker) Looking for _sorted_ container types? The excellent [sorted containers](http://bit.ly/sorted-cont) package has high-performance sorted versions of the `list`, `dict`, and `set` datatypes.
 
 [2](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737068560688-marker) For instance, this example with `setdefault()` looks like `d.setdefault(k, []).append(...)`. The default value is always evaluated, whereas with `defaultdict` the default value generator is only evaluated when necessary. But there are still cases where you’ll need `setdefault()`, such as when using different default values depending on the key.
 
-[3](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067445472-marker) *CPython* means the specific implementation of the Python language that is written in the C language. There are other implementations of Python, created with various other languages and technologies such as .NET, Java and even subsets of Python itself.
+[3](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067445472-marker) _CPython_ means the specific implementation of the Python language that is written in the C language. There are other implementations of Python, created with various other languages and technologies such as .NET, Java and even subsets of Python itself.
 
 [4](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737067174608-marker) Programs that automate some task, often communicating data across different network services like Twitter, IRC, and Slack.
 
-[5](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066652496-marker) The `X.Y.Z` versioning scheme shown here is known as *semantic versioning* (“semver”), but an alternative scheme worth investigating further is *calendar versioning*, which you can learn more about at [*calver.org*](http://calver.org/).
+[5](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066652496-marker) The `X.Y.Z` versioning scheme shown here is known as _semantic versioning_ (“semver”), but an alternative scheme worth investigating further is _calendar versioning_, which you can learn more about at [_calver.org_](http://calver.org/).
 
 [6](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737066327760-marker) `pip install colorlog`
 
-[7](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737065700880-marker) Unfortunately, `PyQt` itself can be either trivial or very tricky to install, depending on your platform. At the time of writing, the stable release of `pyqtgraph` requires `PyQt4` for which no prebuilt installer is available on PyPI; however, the development branch of `pyqtgraph` works with `PyQt5`, for which a prebuilt, `pip`-installable version *does* exist on PyPI. With any luck, by the time you read this a new version of `pyqtgraph` will have been released!
+[7](https://learning.oreilly.com/library/view/20-python-libraries/9781492037866/ch01.html#idm139737065700880-marker) Unfortunately, `PyQt` itself can be either trivial or very tricky to install, depending on your platform. At the time of writing, the stable release of `pyqtgraph` requires `PyQt4` for which no prebuilt installer is available on PyPI; however, the development branch of `pyqtgraph` works with `PyQt5`, for which a prebuilt, `pip`-installable version _does_ exist on PyPI. With any luck, by the time you read this a new version of `pyqtgraph` will have been released!

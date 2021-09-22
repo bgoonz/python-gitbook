@@ -1,5 +1,4 @@
-Heap Examples
-=============
+# Heap Examples
 
 {% tabs %} {% tab title=“Python” %}
 
@@ -360,48 +359,48 @@ A binary heap is a special data structure that resembles a binary tree. It diffe
 
 There are two main types of heaps.
 
--   **Minheap** – In a minheap, the root of every subtree is the smallest element.
--   **Maxheap** – In a maxheap, the root of every subtree is the largest element.
+- **Minheap** – In a minheap, the root of every subtree is the smallest element.
+- **Maxheap** – In a maxheap, the root of every subtree is the largest element.
 
 In this article, let’s take a look at heaps and dive into programming heaps in Python.
 
 For more background on the different types of data structures in Python, check out the following articles:
 
--   [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
--   [List](https://www.section.io/list-data-structure-python/)
--   [Stack](https://www.section.io/stack-data-structure-python/)
--   [Queue](https://www.section.io/queue-data-structure-python/)
--   [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
--   [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
+- [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
+- [List](https://www.section.io/list-data-structure-python/)
+- [Stack](https://www.section.io/stack-data-structure-python/)
+- [Queue](https://www.section.io/queue-data-structure-python/)
+- [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
+- [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
 
-*Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)*
+_Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)_
 
 #### Table of Contents <span id="table-of-contents"></span>
 
--   [Heaps: Introduction](https://www.section.io/engineering-education/heap-data-structure-python/#heaps:-introduction)
--   [Applications of Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#applications-of-heaps)
--   [Implementing a Heap](https://www.section.io/engineering-education/heap-data-structure-python/#implementing-a-heap)
--   [Practice Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#practice-heaps)
--   [Conclusion](https://www.section.io/engineering-education/heap-data-structure-python/#conclusion)
+- [Heaps: Introduction](https://www.section.io/engineering-education/heap-data-structure-python/#heaps:-introduction)
+- [Applications of Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#applications-of-heaps)
+- [Implementing a Heap](https://www.section.io/engineering-education/heap-data-structure-python/#implementing-a-heap)
+- [Practice Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#practice-heaps)
+- [Conclusion](https://www.section.io/engineering-education/heap-data-structure-python/#conclusion)
 
 #### Heaps: Introduction <span id="heaps-introduction"></span>
 
 Heaps are complete binary trees. Complete binary trees satisfy the following conditions:
 
--   All levels are filled, except the last.
--   All the nodes are as far left as possible.
+- All levels are filled, except the last.
+- All the nodes are as far left as possible.
 
 ![Complete Binary Tree](https://www.section.io/engineering-education/heap-data-structure-python/complete-binary-tree.png)
 
-[*Figure: Complete Binary Tree*](https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html)
+[_Figure: Complete Binary Tree_](https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html)
 
 Heaps satisfy the heap property. This means that the root of every subtree should be the greatest or smallest element in the subtree, recursively.
 
 #### Applications of Heaps <span id="applications-of-heaps"></span>
 
--   Priority Queues can be implemented using heaps. The root of a heap always contains the maximum or the minimum value, based on the heap type. Therefore, a min-priority queue is implemented using a minheap. A max-priority queue is implemented using a maxheap. The element with the highest priority can be retrieved in O(1) time.
--   Statistics – If we want to get ordered statistics, heaps serve as a great choice. If we want the kth smallest or largest element, we can pop the heap k times to retrieve them.
--   Heaps are used in implementing various graph algorithms like [Dijkstra’s algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Prim’s algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm).
+- Priority Queues can be implemented using heaps. The root of a heap always contains the maximum or the minimum value, based on the heap type. Therefore, a min-priority queue is implemented using a minheap. A max-priority queue is implemented using a maxheap. The element with the highest priority can be retrieved in O(1) time.
+- Statistics – If we want to get ordered statistics, heaps serve as a great choice. If we want the kth smallest or largest element, we can pop the heap k times to retrieve them.
+- Heaps are used in implementing various graph algorithms like [Dijkstra’s algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Prim’s algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm).
 
 #### Implementing a Heap <span id="implementing-a-heap"></span>
 
@@ -409,18 +408,18 @@ Heaps satisfy the heap property. This means that the root of every subtree shoul
 
 A heap has the following methods:
 
--   **`getMax()`**
-    -   This operation returns the root of the maxheap.
-    -   Time Complexity - O(1).
--   **`insert(k)`**
-    -   This operation inserts the key **k** into the heap.
-    -   Then it rearranges the heap to restore the heap property.
-    -   Time Complexity - O(log n).
--   **`heapify()`**
-    -   This operation restores the heap property by rearranging the heap.
-    -   Time complexity - O(log n).
--   **`printHeap()`**
-    -   Prints the heap’s level order traversal.
+- **`getMax()`**
+  - This operation returns the root of the maxheap.
+  - Time Complexity - O(1).
+- **`insert(k)`**
+  - This operation inserts the key **k** into the heap.
+  - Then it rearranges the heap to restore the heap property.
+  - Time Complexity - O(log n).
+- **`heapify()`**
+  - This operation restores the heap property by rearranging the heap.
+  - Time complexity - O(log n).
+- **`printHeap()`**
+  - Prints the heap’s level order traversal.
 
 **Maxheap using List**
 
@@ -428,15 +427,15 @@ We are going to do the list implementation of a heap. In this, the heap’s leve
 
 ![Level Order Traversal](https://www.section.io/engineering-education/heap-data-structure-python/level-order-traversal.png)
 
-[*Figure: Level-Order Traversal*](https://qph.fs.quoracdn.net/main-qimg-0ddd0cbca44f70d7845cc2caba5a0853)
+[_Figure: Level-Order Traversal_](https://qph.fs.quoracdn.net/main-qimg-0ddd0cbca44f70d7845cc2caba5a0853)
 
-*Note - Level-Order Traversal is a recursive traversal where the root is processed first, followed by the children of the root. This is followed by the grandchildren of the root until all the nodes are processed. In the diagram above, the root node is processed first, followed by the left child, right child and so on. The final level order traversal would be: 10 4 8 50 24 5 12 18. For an overview of what a level order traversal is, check out* [*this*](https://www.quora.com/What-is-level-order-traversal-in-a-binary-tree) *Quora page.*
+_Note - Level-Order Traversal is a recursive traversal where the root is processed first, followed by the children of the root. This is followed by the grandchildren of the root until all the nodes are processed. In the diagram above, the root node is processed first, followed by the left child, right child and so on. The final level order traversal would be: 10 4 8 50 24 5 12 18. For an overview of what a level order traversal is, check out_ [_this_](https://www.quora.com/What-is-level-order-traversal-in-a-binary-tree) _Quora page._
 
 In the array representation of a heap, for an element in array index i,
 
--   The Parent Node would be at position floor((i-1)/2).
--   The Left Child would be at position 2\*i + 1.
--   The Right Child would be at position 2\*i + 2.
+- The Parent Node would be at position floor((i-1)/2).
+- The Left Child would be at position 2\*i + 1.
+- The Right Child would be at position 2\*i + 2.
 
 Let us first define the Heap class.
 

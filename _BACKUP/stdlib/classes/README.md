@@ -1,5 +1,4 @@
-Classes
-=======
+# Classes
 
 As an object-oriented programming language, Python supports a full range of features, such as inheritance, polymorphism, and encapsulation. Getting things done in Python often requires writing new classes and defining how they interact through their interfaces and hierarchies.
 

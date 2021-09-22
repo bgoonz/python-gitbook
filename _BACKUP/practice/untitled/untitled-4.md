@@ -1,5 +1,4 @@
-Linked List
-===========
+# Linked List
 
     """Each ListNode holds a reference to its previous node
     as well as its next node in the List."""

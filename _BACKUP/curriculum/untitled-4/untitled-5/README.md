@@ -1,8 +1,6 @@
-D4- Module 04 - Tree Traversal
-==============================
+# D4- Module 04 - Tree Traversal
 
-D4-Module 04 - Python IV
-------------------------
+## D4-Module 04 - Python IV
 
 ### Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a static array
 
@@ -10,7 +8,7 @@ D4-Module 04 - Python IV
 
 Python does not have a static array data type. However, lists are built on dynamic arrays. As you will see, dynamic arrays rely on an underlying static array to work. So while you won’t be creating and using this data structure directly, it is still essential to understand.
 
-A data structure is a *structure* that is designed for holding information in a particular way. A static array is a data structure that is designing for storing information sequentially (in order). For example, if you were to store the English alphabet in a static array, you would expect the “B” character to right next to both the “A” character and the “C” character. Additionally, every position within the static array is labeled with an index. So, if you wanted to access the first item in the static array, you would expect that item to have an index of 0. The second item would have an index of 1. The third item would have an index of 2. This pattern continues for the entire capacity of the static array.
+A data structure is a _structure_ that is designed for holding information in a particular way. A static array is a data structure that is designing for storing information sequentially (in order). For example, if you were to store the English alphabet in a static array, you would expect the “B” character to right next to both the “A” character and the “C” character. Additionally, every position within the static array is labeled with an index. So, if you wanted to access the first item in the static array, you would expect that item to have an index of 0. The second item would have an index of 1. The third item would have an index of 2. This pattern continues for the entire capacity of the static array.
 
 #### Follow Along <span id="follow-along"></span>
 
@@ -54,13 +52,13 @@ In Python, the syntax looks like this:
 
     my_list[start_index:end_index]
 
-The default start index is 0, and if you leave off the end\_index, the slice will capture through the end of the list.
+The default start index is 0, and if you leave off the end_index, the slice will capture through the end of the list.
 
     my_list[:]  # This would be all of the items in my_list
     my_list[:5] # This would be the items from index 0 to 4
     my_list[5:] # This would be the items from index 5 to the end of the list
 
-You might be wondering, what is the time and space complexity of slicing an array? To understand the complexity, you need to know what is happening behind the scenes when you take a slice of an array. First, you are *actually allocating a new list*. Second, you copy all of the items in your slice from the original array into the newly allocated list. This means that you have an `O(n)` time cost (for the copying) and an `O(n)` space cost for the newly allocated list.
+You might be wondering, what is the time and space complexity of slicing an array? To understand the complexity, you need to know what is happening behind the scenes when you take a slice of an array. First, you are _actually allocating a new list_. Second, you copy all of the items in your slice from the original array into the newly allocated list. This means that you have an `O(n)` time cost (for the copying) and an `O(n)` space cost for the newly allocated list.
 
 You must keep these facts in mind and account for them when using a slice in your code. It’s not a free operation.
 
@@ -99,7 +97,7 @@ It would be best if you always defaulted to using an out-of-place function. This
 
 #### Follow Along <span id="follow-along"></span>
 
-Here is an example of a function that triples each number in an input list. This function does this *in-place*:
+Here is an example of a function that triples each number in an input list. This function does this _in-place_:
 
     def append_exclamations(str_list):
         for idx, item in enumerate(str_list):
@@ -114,7 +112,7 @@ Now, since this is an in-place function, watch what happens when we use it:
 
 `my_list` was modified when I called the function, and the function only returned the default return value of `None`.
 
-Let’s now write a similar function, but this time we will do it *out-of-place:*
+Let’s now write a similar function, but this time we will do it _out-of-place:_
 
     def append_exclamations(str_list):
         # Create a new empty list that has the same length as the input list
@@ -191,7 +189,7 @@ The main weakness of the dynamic array is related to its strength. To not have t
 
 Underneath the hood of a dynamic array is a static array. When you create a dynamic array, it is a static array that keeps track of the starting index, the index of the last item that it stores, and the index for the last slot in its capacity. This brings up an important point. An array has a size and a capacity. An array’s size is how many items it is storing at the moment. Its capacity is how many items it could store before it runs out of room.
 
-So, let’s say that your dynamic array instantiates with an underlying static array with a capacity of 10 and a size of 0 when you create it. Then, you add ten items to the array. Now, it has a capacity of 10 and a size of 10. If you now go to append an 11th item to the array, you’ve run out of capacity. Here is where the *dynamic* of the dynamic array comes into play. The data structure will create a new underlying static array with a capacity twice the size of the original underlying static array. It will then copy the ten original items into the new array and finally add the 11th item. The cost of copying the original items into the new array is `O(n)`. So, when we say that, in the worst-case, an append on a dynamic array has a time-complexity of `O(n)`, this is why. However, all the other appends still have a time-complexity of `O(1)`. So, in the average case append, the time-complexity is still efficient. Also, consider that as the array’s capacity keeps doubling, the doublings will occur less and less frequently.
+So, let’s say that your dynamic array instantiates with an underlying static array with a capacity of 10 and a size of 0 when you create it. Then, you add ten items to the array. Now, it has a capacity of 10 and a size of 10. If you now go to append an 11th item to the array, you’ve run out of capacity. Here is where the _dynamic_ of the dynamic array comes into play. The data structure will create a new underlying static array with a capacity twice the size of the original underlying static array. It will then copy the ten original items into the new array and finally add the 11th item. The cost of copying the original items into the new array is `O(n)`. So, when we say that, in the worst-case, an append on a dynamic array has a time-complexity of `O(n)`, this is why. However, all the other appends still have a time-complexity of `O(1)`. So, in the average case append, the time-complexity is still efficient. Also, consider that as the array’s capacity keeps doubling, the doublings will occur less and less frequently.
 
 #### Challenge <span id="challenge"></span>
 

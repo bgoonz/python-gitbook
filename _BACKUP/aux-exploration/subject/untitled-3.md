@@ -1,14 +1,14 @@
-server-side-scripting
-=====================
+# server-side-scripting
 
 9. Server-side scripting
-------------------------
+
+---
 
 We now have the Python tools we need to create our first [web applications](http://en.wikipedia.org/wiki/Web_application). The process of creating web applications is called [web application development](http://en.wikipedia.org/wiki/Web_application_development), the [raison d’être](http://en.wiktionary.org/wiki/raison_d%27%C3%AAtre) for this book.
 
 ### 9.1. Web documents and web servers
 
-The [World Wide Web](http://en.wikipedia.org/wiki/World_Wide_Web) – or more simply *the web* – is a global system of linked documents accessed through the [Internet](http://en.wikipedia.org/wiki/Internet), which is itself a global [computer network](http://en.wikipedia.org/wiki/Computer_network).
+The [World Wide Web](http://en.wikipedia.org/wiki/World_Wide_Web) – or more simply _the web_ – is a global system of linked documents accessed through the [Internet](http://en.wikipedia.org/wiki/Internet), which is itself a global [computer network](http://en.wikipedia.org/wiki/Computer_network).
 
 The web uses a [client-server model](http://en.wikipedia.org/wiki/Client%E2%80%93server_model) through which [web pages](http://en.wikipedia.org/wiki/Web_page) are retrieved from [web servers](http://en.wikipedia.org/wiki/Web_server) and then viewed in software applications running on the [client](http://en.wikipedia.org/wiki/Client_%28computing%29) computer called [web browsers](http://en.wikipedia.org/wiki/Web_browser).
 
@@ -24,7 +24,7 @@ The process of asking for a web page is called an **HTTP request**, and the exch
 
 ### 9.3. HTML
 
-[HTML](http://en.wikipedia.org/wiki/Html) stands for **HyperText Mark-up Language**. An HTML document is all [plain text](http://en.wikipedia.org/wiki/Plain_text). Because it must be able to express the structure of this text, information about which text is a heading, which text is paragraph, and so on, a few characters have a special meaning, somewhat like backslashes in Python strings. The “less than” and “greater than” characters are used to create **HTML tags**. Most tags occure in pairs, with a *start tag* and an *end tag*, with text data between them. The start and end tag together with the enclosed text form an [HTML element](http://en.wikipedia.org/wiki/Html_element).
+[HTML](http://en.wikipedia.org/wiki/Html) stands for **HyperText Mark-up Language**. An HTML document is all [plain text](http://en.wikipedia.org/wiki/Plain_text). Because it must be able to express the structure of this text, information about which text is a heading, which text is paragraph, and so on, a few characters have a special meaning, somewhat like backslashes in Python strings. The “less than” and “greater than” characters are used to create **HTML tags**. Most tags occure in pairs, with a _start tag_ and an _end tag_, with text data between them. The start and end tag together with the enclosed text form an [HTML element](http://en.wikipedia.org/wiki/Html_element).
 
 Elements provide extra information about the data in the document. They can stand on their own, for example to mark the place where a picture should appear in the page, or they can contain text and other elements, for example when they mark the start and end of a paragraph.
 
@@ -78,7 +78,7 @@ Some elements are compulsory, a whole HTML document must always be contained in 
 
 A rendered version of this web page can be see [here](https://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html).
 
-Elements that contain text or other tags are first opened with `<tagname>`, and afterwards finished with `</tagname>`. The `html` element always contains two children: `head` and `body`. The first contains information *about* the document, the second contains the actual document.
+Elements that contain text or other tags are first opened with `<tagname>`, and afterwards finished with `</tagname>`. The `html` element always contains two children: `head` and `body`. The first contains information _about_ the document, the second contains the actual document.
 
 Most tag names are cryptic abbreviations. `h1` stands for “heading 1”, the top level heading. There are also `h2` to `h6` for successive subheadings. `p` means “paragraph”, and `img` stands for “image”. The `img` element does not contain any text or other tags, but it does have some extra information, `src="timpeters.jpg"` and `alt="Tim Peters"`, which are called [attributes](http://en.wikipedia.org/wiki/HTML_attribute). In this case, they contain information about the image file that should be shown here.
 
@@ -90,7 +90,7 @@ These are the only bare basics of HTML, but they should be enough to get you thr
 
 [CSS](http://en.wikipedia.org/wiki/CSS) stands for **Cascading Style Sheets**. CSS is a styling language designed to describe the look and formatting (the [presentation semantics](http://en.wikipedia.org/wiki/Presentation_semantics)) of web pages. Together with HTML and JavaScript, it makes up the third of the three languages that can be natively consumed by web browsers.
 
-CSS syntax consists of a collection of *styles* or *rules*. Each rule is composed of a *selector* and a *declaration block*. The selector determines (selects) which HTML elements the style will apply to. The declaration block is in turm composed of a sequence of *property-value pairs*. The property is separated from the value by a colon (`:`), and property-value pairs are separated from each other by a semi-colon (`;`).
+CSS syntax consists of a collection of _styles_ or _rules_. Each rule is composed of a _selector_ and a _declaration block_. The selector determines (selects) which HTML elements the style will apply to. The declaration block is in turm composed of a sequence of _property-value pairs_. The property is separated from the value by a colon (`:`), and property-value pairs are separated from each other by a semi-colon (`;`).
 
 Here is an example of a style sheet:
 
@@ -233,7 +233,7 @@ A working knowledge of HTML and CSS is a prerequisit for creating web applicatio
 
 ### 9.5. Client-side scripting (JavaScript)
 
-In some cases, it is also practical to have a program that runs *after* the page has been sent, when the user is looking at it. This is called [client-side scripting](http://en.wikipedia.org/wiki/Client-side_scripting), because the program runs on the client computer. Client-side web scripting is what [JavaScript](http://en.wikipedia.org/wiki/JavaScript) was invented for.
+In some cases, it is also practical to have a program that runs _after_ the page has been sent, when the user is looking at it. This is called [client-side scripting](http://en.wikipedia.org/wiki/Client-side_scripting), because the program runs on the client computer. Client-side web scripting is what [JavaScript](http://en.wikipedia.org/wiki/JavaScript) was invented for.
 
 The scripts are enclosed in **script elements** (between `<script></script>` tags), usually in the document head. In addition to knowing how to [render](http://en.wiktionary.org/wiki/render) HTML styled with CSS, almost all current web browsers have built-in [JavaScript engines](http://en.wikipedia.org/wiki/JavaScript_engine) that enable them to interpret JavaScript source included in script elements.
 
@@ -318,6 +318,6 @@ The global system of linked documents accessed through the Internet.
 
 ### 9.10. Exercises
 
--   [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
--   [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
--   [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)
+- [Chapter 9 Exercise Set 0: Chapter Review](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s00.html#ch09s00)
+- [Chapter 9 exercise set 1](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s01.html#ch09s01)
+- [Chapter 9 exercise set 2](https://www.openbookproject.net/books/bpp4awd/exercises/ch09/ch09s02.html#ch09s02)

@@ -1,8 +1,8 @@
-Dictionaries, sets, files, and modules
-======================================
+# Dictionaries, sets, files, and modules
 
 6. Dictionaries, sets, files, and modules
------------------------------------------
+
+---
 
 ![](../../../.gitbook/assets/image%20%289%29.png)
 
@@ -10,14 +10,13 @@ Dictionaries, sets, files, and modules
 
 ![](../../../.gitbook/assets/image%20%2811%29.png)
 
-Dictionaries
-------------
+## Dictionaries
 
 **Dictionaries** are a compound type different from the sequence types we studied in the [Strings, lists, and tuples](https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter) chapter. They are Python’s built-in **mapping type**. They map **keys**, which can be any immutable type, to values, which can be any type, just like the values of a list or tuple.
 
 Note
 
-Other names for dictionaries in computer science include *maps*, *symbol tables*, and [associative arrays](http://en.wikipedia.org/wiki/Associative_array). The pairs of values are referred to as *name-value*, *key-value*, *field-value*, or [attribute-value](http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair) pairs.
+Other names for dictionaries in computer science include _maps_, _symbol tables_, and [associative arrays](http://en.wikipedia.org/wiki/Associative_array). The pairs of values are referred to as _name-value_, _key-value_, _field-value_, or [attribute-value](http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair) pairs.
 
 As an example, we will create a dictionary to translate English words into Spanish. For this dictionary, the keys are strings.
 
@@ -188,14 +187,14 @@ The easiest and most powerful way to format a string in Python 3 is to use the `
     >>> "2 ** 10 = {0} and {1} * {2} = {3:f}".format(2 ** 10, n1, n2, n1 * n2)
     '2 ** 10 = 1024 and 4 * 5 = 20.000000'
 
-The key idea is that one provides a *formatter string* which contains *placeholder fields*, `... {0} ... {1} ... {2} ...` etc. The **format method** of a string uses the numbers as indexes into its arguments, and substitutes the appropriate argument into each placeholder field.
+The key idea is that one provides a _formatter string_ which contains _placeholder fields_, `... {0} ... {1} ... {2} ...` etc. The **format method** of a string uses the numbers as indexes into its arguments, and substitutes the appropriate argument into each placeholder field.
 
 Each of the placeholders can also contain a **format specification** — it is always introduced by the `:` symbol. This can control things like
 
--   whether the field is aligned left `<`, centered `^`, or right `>`
--   the width allocated to the field within the result string (a number like `10`)
--   the type of conversion (we’ll initially only force conversion to float, `f`, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using `x`)
--   if the type conversion is a float, you can also specify how many decimal places are wanted (typically, `.2f` is useful for working with currencies to two decimal places.)
+- whether the field is aligned left `<`, centered `^`, or right `>`
+- the width allocated to the field within the result string (a number like `10`)
+- the type of conversion (we’ll initially only force conversion to float, `f`, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using `x`)
+- if the type conversion is a float, you can also specify how many decimal places are wanted (typically, `.2f` is useful for working with currencies to two decimal places.)
 
 You can have multiple placeholders indexing the same argument, or perhaps even have extra arguments that are not referenced at all:
 
@@ -231,7 +230,7 @@ As you might expect, you’ll get an index error if your placeholders refer to a
       File "<stdin>", line 1, in <module>
     IndexError: tuple index out of range
 
-In addition to positional arguments in format strings, *named arguments* are also supported:
+In addition to positional arguments in format strings, _named arguments_ are also supported:
 
     >>> s = "'{cat}'ll {verb1} me very much {time}, I should {verb2}!'"
     >>> s.format(verb1="miss", cat="Dinah", time="to-night", verb2="think")
@@ -305,7 +304,7 @@ Closing the file handle tells the system that we are done writing and makes the 
 
 We finish this example by openning `test.txt` for reading. We then call the `read` method, assigning the contents of the file, which is a string, to a variable named `contents`, and finally print `contents` to see that it is indeed what we wrote to the file previously.
 
-If we want to add to an already existing file, use the *append* mode.
+If we want to add to an already existing file, use the _append_ mode.
 
     >>> myfile = open('test.txt', 'a')
     >>> myfile.write('\nOoops, I forgot to add this line ;-)')
@@ -340,7 +339,7 @@ In Python, exceptions are handled with the `try ... except` statement.
     except IOError:
         mydata = ''
 
-In this example we *try* to open the data file for reading. If it succeeds, we use the `read()` method to read the file contents as a string into the variable `mydata` and close the file. If an `IOError` exception occurs, we still create `mydata` as an empty string and continue on with the program.
+In this example we _try_ to open the data file for reading. If it succeeds, we use the `read()` method to read the file contents as a string into the variable `mydata` and close the file. If an `IOError` exception occurs, we still create `mydata` as an empty string and continue on with the program.
 
 ### 6.9. Reading data from files
 
@@ -361,7 +360,7 @@ The `readline()` method returns one [line](http://en.wikipedia.org/wiki/Line_%28
 
 This is a handy pattern for our toolbox. In bigger programs, we’d squeeze more extensive logic into the body of the loop at line 8 — for example, if each line of the file contained the name and email address of one of our friends, perhaps we’d split the line into some pieces and call a function to send the friend a party invitation.
 
-On line 8 we suppress the newline character that `print` usually appends to our strings. Why? This is because the string already has its own newline: the `readline` method in line 3 returns everything up to *and including* the newline character. This also explains the end-of-file detection logic: when there are no more lines to be read from the file, `readline` returns an empty string — one that does not even have a newline at the end, hence it’s length is 0.
+On line 8 we suppress the newline character that `print` usually appends to our strings. Why? This is because the string already has its own newline: the `readline` method in line 3 returns everything up to _and including_ the newline character. This also explains the end-of-file detection logic: when there are no more lines to be read from the file, `readline` returns an empty string — one that does not even have a newline at the end, hence it’s length is 0.
 
 #### 6.9.1. Turning a file into a list of lines
 
@@ -403,15 +402,15 @@ Here is a filter that copies one file to another, omitting any lines that begin 
     infile.close()
     outfile.close()
 
-The `continue` statement at line 9 skips over the remaining lines in the current iteration of the loop, but the loop will still iterate. This style looks a bit contrived here, but it is often useful to say *“get the lines we’re not concerned with out of the way early, so that we have cleaner more focussed logic in the meaty part of the loop that might be written around line 11.”*
+The `continue` statement at line 9 skips over the remaining lines in the current iteration of the loop, but the loop will still iterate. This style looks a bit contrived here, but it is often useful to say _“get the lines we’re not concerned with out of the way early, so that we have cleaner more focussed logic in the meaty part of the loop that might be written around line 11.”_
 
 Thus, if `text` is the empty string, the loop exits. If the first character of `text` is a hash mark, the flow of execution goes to the top of the loop, ready to start processing the next line. Only if both conditions fail do we fall through to do the processing at line 11, in this example, writing the line into the new file.
 
-Let’s consider one more case: suppose your original file contained empty lines. At line 6 above, would this program find the first empty line in the file, and terminate immediately? No! Recall that `readline` always includes the newline character in the string it returns. It is only when we try to read *beyond* the end of the file that we get back the empty string of length 0.
+Let’s consider one more case: suppose your original file contained empty lines. At line 6 above, would this program find the first empty line in the file, and terminate immediately? No! Recall that `readline` always includes the newline character in the string it returns. It is only when we try to read _beyond_ the end of the file that we get back the empty string of length 0.
 
 ### 6.10. `repr()` and `eval()` functions
 
-Python has a built-in function named `repr` that takes a Python object as an argument and returns a string *representation* of that object. For Python’s built-in types, the string representation of an object can be *evaluated* using the built-in `eval` function to recreate the object.
+Python has a built-in function named `repr` that takes a Python object as an argument and returns a string _representation_ of that object. For Python’s built-in types, the string representation of an object can be _evaluated_ using the built-in `eval` function to recreate the object.
 
 The way this works is easiest to demonstrate by example.
 
@@ -434,7 +433,7 @@ The way this works is easiest to demonstrate by example.
     <class 'list'>
     >>>
 
-The list object, `mylist` is converted into a *string representation* using the `repr` function, and this string representation is than converted back into a Python list object using the `eval` function (which *evaluates* the string representation).
+The list object, `mylist` is converted into a _string representation_ using the `repr` function, and this string representation is than converted back into a Python list object using the `eval` function (which _evaluates_ the string representation).
 
 While we will learn much better ways to achieve the goal of storing Python objects into data files later, `repr` and `eval` provide us with an easy to understand tool for writing and then reading back Python data to files that we can use now.
 
@@ -451,7 +450,7 @@ All we need to create a module is a text file with a `.py` extension on the file
     def remove_at(pos, seq):
         return seq[:pos] + seq[pos+1:]
 
-We can now use our module in both scripts and the Python shell. To do so, we must first *import* the module. There are two ways to do this:
+We can now use our module in both scripts and the Python shell. To do so, we must first _import_ the module. There are two ways to do this:
 
     >>> from seqtools import remove_at
     >>> s = "A string!"
@@ -606,7 +605,7 @@ If we import everything from `tryme.py`, however, we can use everything defined 
 
 Note that you do not include the `.py` from the script name in the import statement.key
 
-A data item that is *mapped to* a value in a dictionary. Keys are used to look up values in a dictionary.key-value pair
+A data item that is _mapped to_ a value in a dictionary. Keys are used to look up values in a dictionary.key-value pair
 
 One of the pairs of items in a dictionary. Values are looked up in a dictionary by key.mapping type
 
@@ -622,4 +621,4 @@ A collection of unique, unordered elements.text file
 
 A file that contains printable characters organized into lines separated by newline characters.volatile memory
 
-Memory which requires an electrical current to maintain state. The *main memory* or RAM of a computer is volatile. Information stored in RAM is lost when the computer is turned off.
+Memory which requires an electrical current to maintain state. The _main memory_ or RAM of a computer is volatile. Information stored in RAM is lost when the computer is turned off.

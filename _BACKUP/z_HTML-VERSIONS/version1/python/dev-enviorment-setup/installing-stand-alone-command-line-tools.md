@@ -152,14 +152,13 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Installing stand alone command line tools</span>
-==============================================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Installing stand alone command line tools</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7343e7305564c448abb4a82c78a00e2"><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:0">**NOTE: pipenv is** </span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:1">***optional***</span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:2">**! We don't use it in CS.**</span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:3"> But it's a neat package manager if you get into more complex Python projects. It can be a headache of an install for some people. You can safely ignore anything about pipenv below if you don't want to mess with it.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d7343e7305564c448abb4a82c78a00e2"><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:0">**NOTE: pipenv is** </span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:1">**_optional_**</span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:2">**! We don't use it in CS.**</span><span data-offset-key="d7343e7305564c448abb4a82c78a00e2:3"> But it's a neat package manager if you get into more complex Python projects. It can be a headache of an install for some people. You can safely ignore anything about pipenv below if you don't want to mess with it.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="db06f07b8e5545a8a452eb5a9556e788"><span data-offset-key="db06f07b8e5545a8a452eb5a9556e788:0">We'll want to install Python 3 (version 3.x), which is the runtime for the language itself. The runtime is what allows you to execute Python code and files by typing </span><span data-offset-key="db06f07b8e5545a8a452eb5a9556e788:1">`python [file_or_code_to_execute]`</span><span data-offset-key="db06f07b8e5545a8a452eb5a9556e788:2"> in your terminal. You can also open up a Python REPL (Read-Eval-Print Loop) to quickly and easily mess around with Python code once you've gotten the runtime installed. If you recall how Node let's you execute and run JavaScript code locally on your machine instead of having to rely on the browser, the Python runtime pretty much let's you do the same thing but with Python code.</span></span></span>
 
@@ -197,17 +196,17 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="1f4cb11120e744cbaf7663b99ef88ac1"><span data-offset-key="1f4cb11120e744cbaf7663b99ef88ac1:0">Windows</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="134445b391624a56ad20b50931cacb41"><span data-offset-key="134445b391624a56ad20b50931cacb41:0">***Note***</span><span data-offset-key="134445b391624a56ad20b50931cacb41:1">*:*</span><span data-offset-key="134445b391624a56ad20b50931cacb41:2"> Git Bash doesn't seem to cooperate if you're trying to install Python on Windows. Try another terminal like Powershell.</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="134445b391624a56ad20b50931cacb41"><span data-offset-key="134445b391624a56ad20b50931cacb41:0">**_Note_**</span><span data-offset-key="134445b391624a56ad20b50931cacb41:1">_:_</span><span data-offset-key="134445b391624a56ad20b50931cacb41:2"> Git Bash doesn't seem to cooperate if you're trying to install Python on Windows. Try another terminal like Powershell.</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6632a1a526314b3daf24b487684078de"><span data-offset-key="6632a1a526314b3daf24b487684078de:0">Recommend updating Windows to the latest version.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="e6b32258c4fe42678cd1081473861e1f"><span data-offset-key="e6b32258c4fe42678cd1081473861e1f:0">Windows Store</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5c3dc76f45894e5e948e60d0a62b0e6c"><span data-offset-key="5c3dc76f45894e5e948e60d0a62b0e6c:0">Python 3 is in the Windows Store and can be installed from there.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="bf18df51b1be4916ae3c86a25b3f7b08"><span data-offset-key="bf18df51b1be4916ae3c86a25b3f7b08:0">Official Binaries</span></span></span>
 
@@ -219,7 +218,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="636d7666b17b4e65aa106da94f28ddf6"><span data-offset-key="636d7666b17b4e65aa106da94f28ddf6:0"><span data-slate-zero-width="z">​</span></span></span><a href="https://www.python.org/downloads/windows/" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="7d503e1740c04f26bb8eb4935bbfc355"><span data-offset-key="7d503e1740c04f26bb8eb4935bbfc355:0">Official Package</span></span></a><span data-key="f661d03a80884812bc4c1a7b5fa3bdbc"><span data-offset-key="f661d03a80884812bc4c1a7b5fa3bdbc:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="b0bec7a8a2ea41f3b8ba7c51da3fd4da"><span data-offset-key="b0bec7a8a2ea41f3b8ba7c51da3fd4da:0">Pipenv</span></span></span>
 
@@ -231,7 +230,7 @@
 
 3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="64b72109bb474670880fe17e622f1bde"><span data-offset-key="64b72109bb474670880fe17e622f1bde:0">Run </span><span data-offset-key="64b72109bb474670880fe17e622f1bde:1">`py -m pip`</span></span></span>
 
-4.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7191424f83144075a937b719110bd733"><span data-offset-key="7191424f83144075a937b719110bd733:0">Run </span><span data-offset-key="7191424f83144075a937b719110bd733:1">`py -m pip install --user                                             pipenv`</span></span></span>
+4.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7191424f83144075a937b719110bd733"><span data-offset-key="7191424f83144075a937b719110bd733:0">Run </span><span data-offset-key="7191424f83144075a937b719110bd733:1">`py -m pip install --user pipenv`</span></span></span>
 
     <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="548484bec6294e6fa369f8e116121bdf"><span data-offset-key="548484bec6294e6fa369f8e116121bdf:0">At this point, you should be able to always run pipenv with </span><span data-offset-key="548484bec6294e6fa369f8e116121bdf:1">`py -m pipenv`</span><span data-offset-key="548484bec6294e6fa369f8e116121bdf:2">, but that's a little inconvenient. Read on for making it easier.</span></span></span>
 
@@ -261,7 +260,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1c0986b40c224f74b99b70649a21b69f"><span data-offset-key="1c0986b40c224f74b99b70649a21b69f:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="383d14537eee4431aa0c609e31cb1e91"><span data-offset-key="383d14537eee4431aa0c609e31cb1e91:0">Install pipenv per these instructions</span></span></a><span data-key="84cc9a8c453b4d2196976ee664cd563e"><span data-offset-key="84cc9a8c453b4d2196976ee664cd563e:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="ba2d8c646ac44345927d6795733b49eb"><span data-offset-key="ba2d8c646ac44345927d6795733b49eb:0">Chocolatey</span></span></span>
 
@@ -271,7 +270,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d9fe7dae6780451484e703a516069664"><span data-offset-key="d9fe7dae6780451484e703a516069664:0"><span data-slate-zero-width="z">​</span></span></span><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref" class="link-a079aa82--primary-53a25e66--link-faf6c434"><span data-key="a42c684e4f964899ad09450d2d1091e6"><span data-offset-key="a42c684e4f964899ad09450d2d1091e6:0">Install pipenv per these instructions</span></span></a><span data-key="0b5725f48734436eb533fbb2327a4bec"><span data-offset-key="0b5725f48734436eb533fbb2327a4bec:0"><span data-slate-zero-width="z">​</span></span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="03af618a358347e9b40d93f2236d1787"><span data-offset-key="03af618a358347e9b40d93f2236d1787:0">WSL</span></span></span>
 
@@ -307,7 +306,7 @@
 
 1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fb39756a7a0d4eba9c0fc09c1c2967d6"><span data-offset-key="fb39756a7a0d4eba9c0fc09c1c2967d6:0">Open cmd.exe as an administrator and start bash with </span><span data-offset-key="fb39756a7a0d4eba9c0fc09c1c2967d6:1">`bash`</span></span></span>
 
-    1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a15e55beba6e46a4840583ae0ee4d3a9"><span data-offset-key="a15e55beba6e46a4840583ae0ee4d3a9:0">Type </span><span data-offset-key="a15e55beba6e46a4840583ae0ee4d3a9:1">`Python -V' and                                                   'Python3 -V`</span></span></span>
+    1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a15e55beba6e46a4840583ae0ee4d3a9"><span data-offset-key="a15e55beba6e46a4840583ae0ee4d3a9:0">Type </span><span data-offset-key="a15e55beba6e46a4840583ae0ee4d3a9:1">`Python -V' and 'Python3 -V`</span></span></span>
 
         1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e3d2d12970394a7c9c068281d7d534ca"><span data-offset-key="e3d2d12970394a7c9c068281d7d534ca:0">If one of these responds with </span><span data-offset-key="e3d2d12970394a7c9c068281d7d534ca:1">`Python 3.6.8`</span><span data-offset-key="e3d2d12970394a7c9c068281d7d534ca:2"> use that command from now on</span></span></span>
 
@@ -319,21 +318,21 @@
 
         3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="02fb53ae122342aba44cd9b72f8d378a"><span data-offset-key="02fb53ae122342aba44cd9b72f8d378a:0">Otherwise, update Ubuntu:</span></span></span>
 
-            1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cbdb314828b64bac9b4f4a4332548717"><span data-offset-key="cbdb314828b64bac9b4f4a4332548717:0">`sudo apt-get                                                               update`</span></span></span>
+            1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="cbdb314828b64bac9b4f4a4332548717"><span data-offset-key="cbdb314828b64bac9b4f4a4332548717:0">`sudo apt-get update`</span></span></span>
 
-            2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7514c6ccee924b218d6d95bfca0d089e"><span data-offset-key="7514c6ccee924b218d6d95bfca0d089e:0">`sudo apt-get                                                               upgrade`</span></span></span>
+            2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="7514c6ccee924b218d6d95bfca0d089e"><span data-offset-key="7514c6ccee924b218d6d95bfca0d089e:0">`sudo apt-get upgrade`</span></span></span>
 
-    2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd907b6141044c8f917e38a833e662d9"><span data-offset-key="fd907b6141044c8f917e38a833e662d9:0">Repeat 2.1 above to determine if you should use </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:1">`Python`</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:2"> or </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:3">`Python3`</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:4"> when using Python. </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:5">*Note:*</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:6"> inside the shell, you will always use </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:7">*Python*</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:8"> as the command.</span></span></span>
+    2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fd907b6141044c8f917e38a833e662d9"><span data-offset-key="fd907b6141044c8f917e38a833e662d9:0">Repeat 2.1 above to determine if you should use </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:1">`Python`</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:2"> or </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:3">`Python3`</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:4"> when using Python. </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:5">_Note:_</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:6"> inside the shell, you will always use </span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:7">_Python_</span><span data-offset-key="fd907b6141044c8f917e38a833e662d9:8"> as the command.</span></span></span>
 
-2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3fbdae8655314ab08d18a5e6dd3e2ccb"><span data-offset-key="3fbdae8655314ab08d18a5e6dd3e2ccb:0">Make sure pip is installed for </span><span data-offset-key="3fbdae8655314ab08d18a5e6dd3e2ccb:1">*Python 3*</span></span></span>
+2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="3fbdae8655314ab08d18a5e6dd3e2ccb"><span data-offset-key="3fbdae8655314ab08d18a5e6dd3e2ccb:0">Make sure pip is installed for </span><span data-offset-key="3fbdae8655314ab08d18a5e6dd3e2ccb:1">_Python 3_</span></span></span>
 
     1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0b1f0dd0e41f4c2988c4936d6ca7f6d0"><span data-offset-key="0b1f0dd0e41f4c2988c4936d6ca7f6d0:0">`pip --version`</span><span data-offset-key="0b1f0dd0e41f4c2988c4936d6ca7f6d0:1"> and </span><span data-offset-key="0b1f0dd0e41f4c2988c4936d6ca7f6d0:2">`pip3 --version`</span><span data-offset-key="0b1f0dd0e41f4c2988c4936d6ca7f6d0:3">. One of these needs to respond with a version that has a version of Python 3 at the end of the line.</span></span></span>
 
     2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a173dc9ab5a049919c704190a1778c35"><span data-offset-key="a173dc9ab5a049919c704190a1778c35:0">If you only have it for 2.7, you will need to install for 3 with:</span></span></span>
 
-        1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ad11060294e54e54953c68b0ed97c3f5"><span data-offset-key="ad11060294e54e54953c68b0ed97c3f5:0">`sudo apt update                                                         && sudo apt                                                         upgrade`</span></span></span>
+        1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ad11060294e54e54953c68b0ed97c3f5"><span data-offset-key="ad11060294e54e54953c68b0ed97c3f5:0">`sudo apt update && sudo apt upgrade`</span></span></span>
 
-        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc029d1789414b7fba63a8728ca62ed6"><span data-offset-key="fc029d1789414b7fba63a8728ca62ed6:0">`sudo apt install                                                         python3-pip`</span></span></span>
+        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="fc029d1789414b7fba63a8728ca62ed6"><span data-offset-key="fc029d1789414b7fba63a8728ca62ed6:0">`sudo apt install python3-pip`</span></span></span>
 
     3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bdb1b65d49f64ca781dfc03c1cf48b23"><span data-offset-key="bdb1b65d49f64ca781dfc03c1cf48b23:0">Check versions and commands again. You will likely need to use </span><span data-offset-key="bdb1b65d49f64ca781dfc03c1cf48b23:1">`pip3`</span><span data-offset-key="bdb1b65d49f64ca781dfc03c1cf48b23:2"> for the next step, but it's possible it may be just </span><span data-offset-key="bdb1b65d49f64ca781dfc03c1cf48b23:3">`pip`</span><span data-offset-key="bdb1b65d49f64ca781dfc03c1cf48b23:4">. Use the one with the version associated with Python 3.6.8</span></span></span>
 
@@ -341,9 +340,9 @@
 
     1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e702f889dc45428d9114e8930b91fb51"><span data-offset-key="e702f889dc45428d9114e8930b91fb51:0">If not, install pipenv:</span></span></span>
 
-        1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="697dcd161a964400b6fc03b1b352fac1"><span data-offset-key="697dcd161a964400b6fc03b1b352fac1:0">`sudo apt update                                                         && sudo apt                                                         upgrade`</span><span data-offset-key="697dcd161a964400b6fc03b1b352fac1:1"> (if you didn't just do this above)</span></span></span>
+        1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="697dcd161a964400b6fc03b1b352fac1"><span data-offset-key="697dcd161a964400b6fc03b1b352fac1:0">`sudo apt update && sudo apt upgrade`</span><span data-offset-key="697dcd161a964400b6fc03b1b352fac1:1"> (if you didn't just do this above)</span></span></span>
 
-        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="85defb7cf0ff47f593ff3fe17ed3676e"><span data-offset-key="85defb7cf0ff47f593ff3fe17ed3676e:0">`pip3 install --user                                                         pipenv`</span></span></span>
+        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="85defb7cf0ff47f593ff3fe17ed3676e"><span data-offset-key="85defb7cf0ff47f593ff3fe17ed3676e:0">`pip3 install --user pipenv`</span></span></span>
 
     2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ec3e6ea6f3e4ec383427110ee058b73"><span data-offset-key="1ec3e6ea6f3e4ec383427110ee058b73:0">Check the version again</span></span></span>
 
@@ -353,9 +352,9 @@
 
         1.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="99e0b57739e24b09a79e0598f9643549"><span data-offset-key="99e0b57739e24b09a79e0598f9643549:0">Confirm that </span><span data-offset-key="99e0b57739e24b09a79e0598f9643549:1">`python --version`</span><span data-offset-key="99e0b57739e24b09a79e0598f9643549:2"> refers to 2.7.something</span></span></span>
 
-        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6540a872b1d4443a227be2054107601"><span data-offset-key="f6540a872b1d4443a227be2054107601:0">Confirm that </span><span data-offset-key="f6540a872b1d4443a227be2054107601:1">`/usr/bin/python3                                                         --version`</span><span data-offset-key="f6540a872b1d4443a227be2054107601:2"> refers to 3.6.8</span></span></span>
+        2.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f6540a872b1d4443a227be2054107601"><span data-offset-key="f6540a872b1d4443a227be2054107601:0">Confirm that </span><span data-offset-key="f6540a872b1d4443a227be2054107601:1">`/usr/bin/python3 --version`</span><span data-offset-key="f6540a872b1d4443a227be2054107601:2"> refers to 3.6.8</span></span></span>
 
-        3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19eadbe910b843d7958425ddb45914d3"><span data-offset-key="19eadbe910b843d7958425ddb45914d3:0">`pipenv --three                                                         --python=`</span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:1">which python3\`\` </span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:2">*NOTE*</span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:3"> that there are backticks (\`) around </span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:4">*which python3*</span></span></span>
+        3.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="19eadbe910b843d7958425ddb45914d3"><span data-offset-key="19eadbe910b843d7958425ddb45914d3:0">`pipenv --three --python=`</span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:1">which python3\`\` </span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:2">_NOTE_</span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:3"> that there are backticks (\`) around </span><span data-offset-key="19eadbe910b843d7958425ddb45914d3:4">_which python3_</span></span></span>
 
         4.  <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="42b08584c5ab47709264af473f5dc535"><span data-offset-key="42b08584c5ab47709264af473f5dc535:0">This should create the shell forcing it to use 3.6.8</span></span></span>
 

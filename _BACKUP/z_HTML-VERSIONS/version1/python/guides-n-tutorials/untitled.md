@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Complete Beginner's Guide</span>
-==============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Complete Beginner's Guide</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -163,113 +162,113 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2151ca8cf1ab42f697a32fb7d85be1a8"><span data-offset-key="2151ca8cf1ab42f697a32fb7d85be1a8:0">Before I get started here is the Course Content</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ea03d4debe64fa299be1805f96872a6"><span data-offset-key="2ea03d4debe64fa299be1805f96872a6:0">Comments</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2ea03d4debe64fa299be1805f96872a6"><span data-offset-key="2ea03d4debe64fa299be1805f96872a6:0">Comments</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5eaa44e73361406da7e0250414cd3e13"><span data-offset-key="5eaa44e73361406da7e0250414cd3e13:0">Single-Line</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5eaa44e73361406da7e0250414cd3e13"><span data-offset-key="5eaa44e73361406da7e0250414cd3e13:0">Single-Line</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a06805a5e4af466f83e8ed877f3c9538"><span data-offset-key="a06805a5e4af466f83e8ed877f3c9538:0">Multi-Line</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a06805a5e4af466f83e8ed877f3c9538"><span data-offset-key="a06805a5e4af466f83e8ed877f3c9538:0">Multi-Line</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f57ac2d89e8546ee99defbdbc4021a76"><span data-offset-key="f57ac2d89e8546ee99defbdbc4021a76:0">Print Statements</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f57ac2d89e8546ee99defbdbc4021a76"><span data-offset-key="f57ac2d89e8546ee99defbdbc4021a76:0">Print Statements</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9544030d10624f78a2c5a2ed0eaf9617"><span data-offset-key="9544030d10624f78a2c5a2ed0eaf9617:0">Single-Line</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9544030d10624f78a2c5a2ed0eaf9617"><span data-offset-key="9544030d10624f78a2c5a2ed0eaf9617:0">Single-Line</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9a56f08159b4c768f22b84b7baefc9f"><span data-offset-key="f9a56f08159b4c768f22b84b7baefc9f:0">Multi-Line</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="f9a56f08159b4c768f22b84b7baefc9f"><span data-offset-key="f9a56f08159b4c768f22b84b7baefc9f:0">Multi-Line</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c849cc73080a4a2b8dfdb438c25bbc53"><span data-offset-key="c849cc73080a4a2b8dfdb438c25bbc53:0">Data Types</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c849cc73080a4a2b8dfdb438c25bbc53"><span data-offset-key="c849cc73080a4a2b8dfdb438c25bbc53:0">Data Types</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9720959cab62403d9b68e8f769349e4d"><span data-offset-key="9720959cab62403d9b68e8f769349e4d:0">Strings</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="9720959cab62403d9b68e8f769349e4d"><span data-offset-key="9720959cab62403d9b68e8f769349e4d:0">Strings</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebd5bbb8e7d1426d9ff360abcd03957e"><span data-offset-key="ebd5bbb8e7d1426d9ff360abcd03957e:0">Integers</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ebd5bbb8e7d1426d9ff360abcd03957e"><span data-offset-key="ebd5bbb8e7d1426d9ff360abcd03957e:0">Integers</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a76b3c87fb3e4783b4373c3928cb3a17"><span data-offset-key="a76b3c87fb3e4783b4373c3928cb3a17:0">Floating Points</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="a76b3c87fb3e4783b4373c3928cb3a17"><span data-offset-key="a76b3c87fb3e4783b4373c3928cb3a17:0">Floating Points</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58c095c2fc1a409cb2cb102529a8ebed"><span data-offset-key="58c095c2fc1a409cb2cb102529a8ebed:0">Booleans</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="58c095c2fc1a409cb2cb102529a8ebed"><span data-offset-key="58c095c2fc1a409cb2cb102529a8ebed:0">Booleans</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8e014e3d857448239d4423af2846325e"><span data-offset-key="8e014e3d857448239d4423af2846325e:0">Variables</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8e014e3d857448239d4423af2846325e"><span data-offset-key="8e014e3d857448239d4423af2846325e:0">Variables</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddbad243ca594baba8114c4c8e5791ac"><span data-offset-key="ddbad243ca594baba8114c4c8e5791ac:0">Proper Variable Names</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ddbad243ca594baba8114c4c8e5791ac"><span data-offset-key="ddbad243ca594baba8114c4c8e5791ac:0">Proper Variable Names</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45b405325ed6460597cbcd0ed536d55e"><span data-offset-key="45b405325ed6460597cbcd0ed536d55e:0">Printing them</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="45b405325ed6460597cbcd0ed536d55e"><span data-offset-key="45b405325ed6460597cbcd0ed536d55e:0">Printing them</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646147a3ef9447309ed4da338300b848"><span data-offset-key="646147a3ef9447309ed4da338300b848:0">Changing them</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="646147a3ef9447309ed4da338300b848"><span data-offset-key="646147a3ef9447309ed4da338300b848:0">Changing them</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46f01362682a48c5b219a7e3bdc22e6e"><span data-offset-key="46f01362682a48c5b219a7e3bdc22e6e:0">Type Function</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="46f01362682a48c5b219a7e3bdc22e6e"><span data-offset-key="46f01362682a48c5b219a7e3bdc22e6e:0">Type Function</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e4d724421484f2b8ff12ee999ae4390"><span data-offset-key="4e4d724421484f2b8ff12ee999ae4390:0">f-strings</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="4e4d724421484f2b8ff12ee999ae4390"><span data-offset-key="4e4d724421484f2b8ff12ee999ae4390:0">f-strings</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5722bbf67a494e52afaa2be70b15c778"><span data-offset-key="5722bbf67a494e52afaa2be70b15c778:0">.format</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5722bbf67a494e52afaa2be70b15c778"><span data-offset-key="5722bbf67a494e52afaa2be70b15c778:0">.format</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3ecab08027a49408c8b0ddcef8828b3"><span data-offset-key="d3ecab08027a49408c8b0ddcef8828b3:0">String Methods</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d3ecab08027a49408c8b0ddcef8828b3"><span data-offset-key="d3ecab08027a49408c8b0ddcef8828b3:0">String Methods</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="693ab2be11d349c2939fe3b252e41963"><span data-offset-key="693ab2be11d349c2939fe3b252e41963:0">indexing</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="693ab2be11d349c2939fe3b252e41963"><span data-offset-key="693ab2be11d349c2939fe3b252e41963:0">indexing</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2df8328208284451a7de54222075b632"><span data-offset-key="2df8328208284451a7de54222075b632:0">slicing</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2df8328208284451a7de54222075b632"><span data-offset-key="2df8328208284451a7de54222075b632:0">slicing</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d356ffb9de194ad0a252021f43ccd2d1"><span data-offset-key="d356ffb9de194ad0a252021f43ccd2d1:0">Concatenation</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d356ffb9de194ad0a252021f43ccd2d1"><span data-offset-key="d356ffb9de194ad0a252021f43ccd2d1:0">Concatenation</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecfeed742ac249319d82cbe65cf15fd5"><span data-offset-key="ecfeed742ac249319d82cbe65cf15fd5:0">Printing Using Concatenation</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ecfeed742ac249319d82cbe65cf15fd5"><span data-offset-key="ecfeed742ac249319d82cbe65cf15fd5:0">Printing Using Concatenation</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bd86ce48e9841f7a30089a4a11a41a8"><span data-offset-key="5bd86ce48e9841f7a30089a4a11a41a8:0">Assigning Variables Using Concatenation</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5bd86ce48e9841f7a30089a4a11a41a8"><span data-offset-key="5bd86ce48e9841f7a30089a4a11a41a8:0">Assigning Variables Using Concatenation</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c45e5fe8b292473788cdadecf9108758"><span data-offset-key="c45e5fe8b292473788cdadecf9108758:0">Type Casting</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c45e5fe8b292473788cdadecf9108758"><span data-offset-key="c45e5fe8b292473788cdadecf9108758:0">Type Casting</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e12aa16af3aa4be9bcbe8b0e69272ed8"><span data-offset-key="e12aa16af3aa4be9bcbe8b0e69272ed8:0">Operators</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e12aa16af3aa4be9bcbe8b0e69272ed8"><span data-offset-key="e12aa16af3aa4be9bcbe8b0e69272ed8:0">Operators</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a5f97a9a94b4aefb4d3cc8554511d8d"><span data-offset-key="5a5f97a9a94b4aefb4d3cc8554511d8d:0">Basic Operators</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5a5f97a9a94b4aefb4d3cc8554511d8d"><span data-offset-key="5a5f97a9a94b4aefb4d3cc8554511d8d:0">Basic Operators</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="575b0e566e6e42b383b7fb3607a310dc"><span data-offset-key="575b0e566e6e42b383b7fb3607a310dc:0">Assignment Operators</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="575b0e566e6e42b383b7fb3607a310dc"><span data-offset-key="575b0e566e6e42b383b7fb3607a310dc:0">Assignment Operators</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c0e1e7560d643f1b61df0d00254f916"><span data-offset-key="0c0e1e7560d643f1b61df0d00254f916:0">Comparison Operators</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0c0e1e7560d643f1b61df0d00254f916"><span data-offset-key="0c0e1e7560d643f1b61df0d00254f916:0">Comparison Operators</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1a056be3edcc4acb9c8e28e2b28feb8f"><span data-offset-key="1a056be3edcc4acb9c8e28e2b28feb8f:0">Getting Inputs</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1a056be3edcc4acb9c8e28e2b28feb8f"><span data-offset-key="1a056be3edcc4acb9c8e28e2b28feb8f:0">Getting Inputs</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1626200a0f7148289a84112101fba27c"><span data-offset-key="1626200a0f7148289a84112101fba27c:0">Storing inputs in a variable</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1626200a0f7148289a84112101fba27c"><span data-offset-key="1626200a0f7148289a84112101fba27c:0">Storing inputs in a variable</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0616b1157454754b4503b10f934e5cd"><span data-offset-key="e0616b1157454754b4503b10f934e5cd:0">Specifying input type</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e0616b1157454754b4503b10f934e5cd"><span data-offset-key="e0616b1157454754b4503b10f934e5cd:0">Specifying input type</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ec1debc852544559b3ba81019e0525d3"><span data-offset-key="ec1debc852544559b3ba81019e0525d3:0">Practice Problem</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ec1debc852544559b3ba81019e0525d3"><span data-offset-key="ec1debc852544559b3ba81019e0525d3:0">Practice Problem</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01fdd2570ad0463fbc6f5f5b6bc581b6"><span data-offset-key="01fdd2570ad0463fbc6f5f5b6bc581b6:0">Lists</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="01fdd2570ad0463fbc6f5f5b6bc581b6"><span data-offset-key="01fdd2570ad0463fbc6f5f5b6bc581b6:0">Lists</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ee86a75291d4d848fb5f92cb78f7b36"><span data-offset-key="1ee86a75291d4d848fb5f92cb78f7b36:0">List Methods</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="1ee86a75291d4d848fb5f92cb78f7b36"><span data-offset-key="1ee86a75291d4d848fb5f92cb78f7b36:0">List Methods</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0f6b09953304e0c8d38517045efe42c"><span data-offset-key="d0f6b09953304e0c8d38517045efe42c:0">Conditional Statements</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d0f6b09953304e0c8d38517045efe42c"><span data-offset-key="d0f6b09953304e0c8d38517045efe42c:0">Conditional Statements</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed84001613234763ad4d84b9ed9a9211"><span data-offset-key="ed84001613234763ad4d84b9ed9a9211:0">if</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="ed84001613234763ad4d84b9ed9a9211"><span data-offset-key="ed84001613234763ad4d84b9ed9a9211:0">if</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c36432f88c4bf0adc648e31f26206b"><span data-offset-key="66c36432f88c4bf0adc648e31f26206b:0">else</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="66c36432f88c4bf0adc648e31f26206b"><span data-offset-key="66c36432f88c4bf0adc648e31f26206b:0">else</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1447eec745447f49bc37c4dd8bf8c3f"><span data-offset-key="d1447eec745447f49bc37c4dd8bf8c3f:0">elif</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d1447eec745447f49bc37c4dd8bf8c3f"><span data-offset-key="d1447eec745447f49bc37c4dd8bf8c3f:0">elif</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c417ddc1087c4885aa813040166d25b4"><span data-offset-key="c417ddc1087c4885aa813040166d25b4:0">pass</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c417ddc1087c4885aa813040166d25b4"><span data-offset-key="c417ddc1087c4885aa813040166d25b4:0">pass</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c97d37916de14daeaf883f0387425f83"><span data-offset-key="c97d37916de14daeaf883f0387425f83:0">logic</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="c97d37916de14daeaf883f0387425f83"><span data-offset-key="c97d37916de14daeaf883f0387425f83:0">logic</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e10479e0406c492cbc1c6247d8c8de7a"><span data-offset-key="e10479e0406c492cbc1c6247d8c8de7a:0">Practice Problem</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="e10479e0406c492cbc1c6247d8c8de7a"><span data-offset-key="e10479e0406c492cbc1c6247d8c8de7a:0">Practice Problem</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26915f4e242d409086a3ebcdd33bfbe8"><span data-offset-key="26915f4e242d409086a3ebcdd33bfbe8:0">Loops</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="26915f4e242d409086a3ebcdd33bfbe8"><span data-offset-key="26915f4e242d409086a3ebcdd33bfbe8:0">Loops</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="48e8642d61c341ecb4c500788ddc9bb8"><span data-offset-key="48e8642d61c341ecb4c500788ddc9bb8:0">for Loops</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="48e8642d61c341ecb4c500788ddc9bb8"><span data-offset-key="48e8642d61c341ecb4c500788ddc9bb8:0">for Loops</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c5623537cbb44b0a36a3dd63cc803ec"><span data-offset-key="2c5623537cbb44b0a36a3dd63cc803ec:0">while Loops</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="2c5623537cbb44b0a36a3dd63cc803ec"><span data-offset-key="2c5623537cbb44b0a36a3dd63cc803ec:0">while Loops</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="948bce88f94a44b0bd3516377c29cde0"><span data-offset-key="948bce88f94a44b0bd3516377c29cde0:0">Practice Problem</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="948bce88f94a44b0bd3516377c29cde0"><span data-offset-key="948bce88f94a44b0bd3516377c29cde0:0">Practice Problem</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24109280fff44262a0e88ec94c95e413"><span data-offset-key="24109280fff44262a0e88ec94c95e413:0">Escape Codes</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="24109280fff44262a0e88ec94c95e413"><span data-offset-key="24109280fff44262a0e88ec94c95e413:0">Escape Codes</span></span></span>
 
--   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e41ac34ba354cff9d6bffe03e413011"><span data-offset-key="0e41ac34ba354cff9d6bffe03e413011:0">Functions</span></span></span>
+- <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0e41ac34ba354cff9d6bffe03e413011"><span data-offset-key="0e41ac34ba354cff9d6bffe03e413011:0">Functions</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="860a2ad79f9847a899975ae589307467"><span data-offset-key="860a2ad79f9847a899975ae589307467:0">Return</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="860a2ad79f9847a899975ae589307467"><span data-offset-key="860a2ad79f9847a899975ae589307467:0">Return</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5093d5f5c0d54397bcbef579f44c46f3"><span data-offset-key="5093d5f5c0d54397bcbef579f44c46f3:0">Parameters</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="5093d5f5c0d54397bcbef579f44c46f3"><span data-offset-key="5093d5f5c0d54397bcbef579f44c46f3:0">Parameters</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52b1734e04ca4df18a797f9b813ef185"><span data-offset-key="52b1734e04ca4df18a797f9b813ef185:0">Lambda</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="52b1734e04ca4df18a797f9b813ef185"><span data-offset-key="52b1734e04ca4df18a797f9b813ef185:0">Lambda</span></span></span>
 
-    -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8dd9dbb7cecb4f49a029890358fa527e"><span data-offset-key="8dd9dbb7cecb4f49a029890358fa527e:0">Scope</span></span></span>
+  - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="8dd9dbb7cecb4f49a029890358fa527e"><span data-offset-key="8dd9dbb7cecb4f49a029890358fa527e:0">Scope</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6fb1302b24854a9685a961d7548399f2"><span data-offset-key="6fb1302b24854a9685a961d7548399f2:0">Global</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="6fb1302b24854a9685a961d7548399f2"><span data-offset-key="6fb1302b24854a9685a961d7548399f2:0">Global</span></span></span>
 
-        -   <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0867bfef63974940ab0c80418d064242"><span data-offset-key="0867bfef63974940ab0c80418d064242:0">Local</span></span></span>
+    - <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="0867bfef63974940ab0c80418d064242"><span data-offset-key="0867bfef63974940ab0c80418d064242:0">Local</span></span></span>
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="513e66e7fe24493b93297beff96af557"><span data-offset-key="513e66e7fe24493b93297beff96af557:0">**Let's Get Started!**</span></span></span>
 
@@ -477,7 +476,7 @@
 
     User_Type = "Admin"Message = "Hello" + User_Type + "What would you like to do?"print(Message)
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="444c3ed6845e4ecea4d2bf552a2de29b"><span data-offset-key="444c3ed6845e4ecea4d2bf552a2de29b:0">Output: </span><span data-offset-key="444c3ed6845e4ecea4d2bf552a2de29b:1">`Hello Admin What would you like to                                       do?`</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="444c3ed6845e4ecea4d2bf552a2de29b"><span data-offset-key="444c3ed6845e4ecea4d2bf552a2de29b:0">Output: </span><span data-offset-key="444c3ed6845e4ecea4d2bf552a2de29b:1">`Hello Admin What would you like to do?`</span></span></span>
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="51b47e6433594e06966a980ffcb63e76"><span data-offset-key="51b47e6433594e06966a980ffcb63e76:0">Type Casting</span></span></span>
 
@@ -527,7 +526,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b517a4347fa64fbeb27521d4b318acc4"><span data-offset-key="b517a4347fa64fbeb27521d4b318acc4:0">Now let's have a few examples of using them</span></span></span>
 
-    a = 15b = 10​#After I print each value out prentend that I am reseting the value of aa += bprint(a)a -= bprint(a)a *= bprint(a)a /= bprint(a)a %= bprint(a)a //= bprint(a)a **= bprint(a)#I won't show the output for this because it is to big, but it would output the result of 15**10 
+    a = 15b = 10​#After I print each value out prentend that I am reseting the value of aa += bprint(a)a -= bprint(a)a *= bprint(a)a /= bprint(a)a %= bprint(a)a //= bprint(a)a **= bprint(a)#I won't show the output for this because it is to big, but it would output the result of 15**10
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="67f25d068faa4e99a9a6a721ade7d954"><span data-offset-key="67f25d068faa4e99a9a6a721ade7d954:0">Output:</span></span></span>
 
@@ -701,7 +700,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="267677b02164469aa8b4086191ff7f12"><span data-offset-key="267677b02164469aa8b4086191ff7f12:0">Output:</span></span></span>
 
-    #Nothing because in the first statement, age is not 13, so it won't run and in the second statement age is not 4 so it won't run either 
+    #Nothing because in the first statement, age is not 13, so it won't run and in the second statement age is not 4 so it won't run either
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="78126694e97f437da35ea31e9d2b9dfe"><span data-offset-key="78126694e97f437da35ea31e9d2b9dfe:0">Else</span></span></span>
 
@@ -931,7 +930,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="b825c247190e40bcbd68d18768b0394b"><span data-offset-key="b825c247190e40bcbd68d18768b0394b:0">And here's an example</span></span></span>
 
-    multiply_by5 = lambda num: num * 5 
+    multiply_by5 = lambda num: num * 5
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="497026b167df45c69a2be6399b3ed3cb"><span data-offset-key="497026b167df45c69a2be6399b3ed3cb:0">Calling it:</span></span></span>
 
@@ -949,7 +948,7 @@
 
 <span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="bfa890714562413d98a50c0b22127fbb"><span data-offset-key="bfa890714562413d98a50c0b22127fbb:0">A scope is where a variable is stored. Like if it's inside if a function.</span></span></span>
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="5ba4d68fa46a48cd89e630fd538fdc98"><span data-offset-key="5ba4d68fa46a48cd89e630fd538fdc98:0">Global</span></span></span>
 
@@ -957,7 +956,7 @@
 
     x = 'This is in the global scope'
 
-### 
+###
 
 <span class="text-4505230f--HeadingH400-686c0942--textContentFamily-49a318e1"><span data-key="acc1c9eeb6314ec19bb8e481d8fa810f"><span data-offset-key="acc1c9eeb6314ec19bb8e481d8fa810f:0">Local</span></span></span>
 

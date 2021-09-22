@@ -1,12 +1,11 @@
-Binary Search
-=============
+# Binary Search
 
 #### In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.
 
-1.  [](#section) ***Compare x with the middle element.***
-2.  [](#section) ***If x matches with the middle element, we return the mid index.***
-3.  [](#section) ***Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half.***
-4.  [](#section) ***Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.***
+1.  [](#section) **_Compare x with the middle element._**
+2.  [](#section) **_If x matches with the middle element, we return the mid index._**
+3.  [](#section) **_Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half._**
+4.  [](#section) **_Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half._**
 
 Pseudo Code Algorithm:
 
@@ -38,10 +37,9 @@ Pseudo Code Algorithm:
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
-### 
+###
 
-Recursive Binary Search
------------------------
+## Recursive Binary Search
 
     # Python 3 program for recursive binary search.
     # Modifications needed for the older Python 2 are found in comments.
@@ -416,8 +414,7 @@ Recursive Binary Search
     if __name__ == "__main__":
         unittest.main()
 
-Delete Node
------------
+## Delete Node
 
     """
     Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
@@ -488,8 +485,7 @@ Delete Node
                 root.right = self.deleteNode(root.right, key)
             return root
 
-Another:
---------
+## Another:
 
     def binary_search(arr, x):
         start= 0

@@ -1,5 +1,4 @@
-JS-Event Loop
-=============
+# JS-Event Loop
 
 JavaScript is **single-threaded**: only one task can run at a time. Usually that’s no big deal, but now imagine you’re running a task which takes 30 seconds.. Ya.. During that task we’re waiting for 30 seconds before anything else can happen (JavaScript runs on the browser’s main thread by default, so the entire UI is stuck) 😬 It’s 2019, no one wants a slow, unresponsive website.
 
@@ -17,9 +16,9 @@ In the Web API, a timer runs for as long as the second argument we passed to it,
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--MewGMdte--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif3.1.gif)
 
-This can be a confusing part: it doesn’t mean that the callback function gets added to the callstack(thus returns a value) after 1000ms! It simply gets added to the *queue* after 1000ms. But it’s a queue, the function has got to wait for its turn!
+This can be a confusing part: it doesn’t mean that the callback function gets added to the callstack(thus returns a value) after 1000ms! It simply gets added to the _queue_ after 1000ms. But it’s a queue, the function has got to wait for its turn!
 
-Now this is the part we’ve all been waiting for… Time for the event loop to do its only task: **connecting the queue with the call stack**! If the call stack is **empty**, so if all previously invoked functions have returned their values and have been popped off the stack, the *first item* in the queue gets added to the call stack. In this case, no other functions were invoked, meaning that the call stack was empty by the time the callback function was the first item in the queue.
+Now this is the part we’ve all been waiting for… Time for the event loop to do its only task: **connecting the queue with the call stack**! If the call stack is **empty**, so if all previously invoked functions have returned their values and have been popped off the stack, the _first item_ in the queue gets added to the call stack. In this case, no other functions were invoked, meaning that the call stack was empty by the time the callback function was the first item in the queue.
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--b2BtLfdz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://devtolydiahallie.s3-us-west-1.amazonaws.com/gif4.gif)
 

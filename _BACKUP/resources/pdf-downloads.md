@@ -1,5 +1,4 @@
-PDF Downloads
-=============
+# PDF Downloads
 
 {% file src=“../.gitbook/assets/mit6\_0001f16\_lec7 (6).pdf” %}
 

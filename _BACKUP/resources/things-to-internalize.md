@@ -1,5 +1,4 @@
-Things To Internalize:
-======================
+# Things To Internalize:
 
     """
     There are two main keywords for making loops of code in Python: for and while.

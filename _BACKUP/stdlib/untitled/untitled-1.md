@@ -1,8 +1,8 @@
-Functions
-=========
+# Functions
 
 5. Functions
-------------
+
+---
 
 Human beings are quite limited in their ability hold distinct pieces of information in their [working memories](http://en.wikipedia.org/wiki/Working_memory). Research suggests that for most people the number of unrelated [chunks](http://en.wikipedia.org/wiki/Chunking_%28psychology%29) is about seven. Computers, by contrast, have no difficulty managing thousands of separate pieces of information without ever forgetting them or getting them confused.
 
@@ -25,10 +25,10 @@ You can make up any names you want for the functions you create, except that you
 
 There can be any number of statements inside the function, but they have to be indented from the `def`.
 
-Function definitions are *compound statements*, similar to the branching and looping statements we saw in the [Conditionals and loops](https://www.openbookproject.net/books/bpp4awd/ch04.html#conditionals-n-loops-chapter) chapter, which means they have the following parts:
+Function definitions are _compound statements_, similar to the branching and looping statements we saw in the [Conditionals and loops](https://www.openbookproject.net/books/bpp4awd/ch04.html#conditionals-n-loops-chapter) chapter, which means they have the following parts:
 
 1.  A **header**, which begins with a keyword and ends with a colon.
-2.  A **body** consisting of one or more Python statements, each indented the same amount (*4 spaces is the Python standard* ) from the header.
+2.  A **body** consisting of one or more Python statements, each indented the same amount (_4 spaces is the Python standard_ ) from the header.
 
 In a function definition, the keyword in the header is `def`, which is followed by the name of the function and a list of [parameters](http://en.wikipedia.org/wiki/Parameter_%28computer_science%29) enclosed in parentheses. The parameter list may be empty, or it may contain any number of parameters. In either case, the parentheses are required.
 
@@ -36,7 +36,7 @@ In a function definition, the keyword in the header is `def`, which is followed 
 
 Back in high school Algebera class you were introduced to mathematical functions. Perhaps you were shown a diagram of a “function machine” that looked something like this:![Function machine](https://www.openbookproject.net/books/bpp4awd/_images/functionmachine.png)
 
-The idea behind this diagram is that a function is like a *machine* that takes an input, `x`, and transforms it into an output, `f(x)`. The light yellow box `f` is an abstraction of the process used to do the transformation from `x` to `f(x)`.
+The idea behind this diagram is that a function is like a _machine_ that takes an input, `x`, and transforms it into an output, `f(x)`. The light yellow box `f` is an abstraction of the process used to do the transformation from `x` to `f(x)`.
 
 Functions in Python can be thought of much the same way, and the similarity with functions from Algebra may help you understand them.
 
@@ -49,7 +49,7 @@ Here is the same function in Python:
     def f(x):
         return 3 * x ** 2 - 2 * x + 5
 
-Defining a new function does not make the function run. To do that we need a **function call**. Function calls contain the name of the function being executed followed by a list of values, called *arguments*, which are assigned to the parameters in the function definition.
+Defining a new function does not make the function run. To do that we need a **function call**. Function calls contain the name of the function being executed followed by a list of values, called _arguments_, which are assigned to the parameters in the function definition.
 
 Here is our function `f` being called with several different arguments:
 
@@ -64,20 +64,20 @@ Here is our function `f` being called with several different arguments:
     >>> f(5)
     70
 
-The function definition must *first* be entered into the Python shell before it can be called:
+The function definition must _first_ be entered into the Python shell before it can be called:
 
     >>> def f(x):
     ...     return 3 * x ** 2 - 2 * x + 5
     ...
     >>>
 
-Function calls involve an *implicit assignment* of the argument to the parameter
+Function calls involve an _implicit assignment_ of the argument to the parameter
 
-The relationship between the parameter and the argument in the definition and calling of a function is that of an *implicit assignment*. It is as if we had executed the assignment statements `x = 3`, `x = 0`, `x = 1`, `x = -1`, and `x = 5` respectively before making the function calls to `f` in the preceding example.
+The relationship between the parameter and the argument in the definition and calling of a function is that of an _implicit assignment_. It is as if we had executed the assignment statements `x = 3`, `x = 0`, `x = 1`, `x = -1`, and `x = 5` respectively before making the function calls to `f` in the preceding example.
 
 ### 5.3. The `return` statement
 
-The [return statement](http://en.wikipedia.org/wiki/Return_statement) causes a function to immediately stop executing statements in the function body and to send back (or *return*) the value after the keyword `return` to the calling statement.
+The [return statement](http://en.wikipedia.org/wiki/Return_statement) causes a function to immediately stop executing statements in the function body and to send back (or _return_) the value after the keyword `return` to the calling statement.
 
     >>> result = f(3)
     >>> result
@@ -115,7 +115,7 @@ All Python function calls return a value. If a function call finishes executing 
 
 Since `do_nothing_useful` does not have a return statement with a value, it returns a `None` value, which is assigned to `result`. `None` values don’t display in the Python shell unless they are explicited printed.
 
-Any statements in the body of a function *after* a `return` statement is encountered will never be executed and are referred to as [dead code](http://en.wikipedia.org/wiki/Dead_code).
+Any statements in the body of a function _after_ a `return` statement is encountered will never be executed and are referred to as [dead code](http://en.wikipedia.org/wiki/Dead_code).
 
     >>> def try_to_print_dead_code():
     ...    print("This will print...")
@@ -143,7 +143,7 @@ That sounds simple enough, until you remember that one function can call another
 
 Fortunately, Python is adept at keeping track of where it is, so each time a function completes, the program picks up where it left off in the function that called it. When it gets to the end of the program, it terminates.
 
-What’s the moral of this sordid tale? When you read a program, don’t just read from top to bottom. Instead, *follow the flow of execution*. Look at this program:
+What’s the moral of this sordid tale? When you read a program, don’t just read from top to bottom. Instead, _follow the flow of execution_. Look at this program:
 
     def f1():
         print("Moe")
@@ -173,7 +173,7 @@ Follow the flow of execution and see if you can understand why it does that.
 
 ### 5.5. Encapsulation and generalization
 
-Encapsulation is the process of *wrapping a piece of code in a function*, allowing you to take advantage of all the things functions are good for.
+Encapsulation is the process of _wrapping a piece of code in a function_, allowing you to take advantage of all the things functions are good for.
 
 Generalization means taking something specific, such as counting the number of digits in a given positive integer, and making it more general, such as counting the number of digits of any integer.
 
@@ -217,7 +217,7 @@ Running this program will give us the same result as before, but this time we ar
 
     print(num_digits(4203))
 
-By *parameterizing* the value, we can now use our logic to count the digits of any positive integer. A call to `print(num_digits(710))` will print `3`. A call to `print(num_digits(1345109))` will print `7`, and so forth.
+By _parameterizing_ the value, we can now use our logic to count the digits of any positive integer. A call to `print(num_digits(710))` will print `3`. A call to `print(num_digits(1345109))` will print `7`, and so forth.
 
 This function also contains bugs. If we call `num_digits(0)`, it will return a `0`, when it should return a `1`. If we call `num_digits(-23)`, the program goes into an infinite loop. You will be asked to fix both of these bugs as an exercise.
 
@@ -345,7 +345,7 @@ To use the pure function version of `double_stuff` to modify `things`, you would
 
 Anything that can be done with modifiers can also be done with pure functions. In fact, some programming languages only allow pure functions. There is some evidence that programs that use pure functions are faster to develop and less error-prone than programs that use modifiers. Nevertheless, modifiers are convenient at times, and in some cases, functional programs are less efficient.
 
-In general, we recommend that you write pure functions whenever it is reasonable to do so and resort to modifiers only if there is a compelling advantage. This approach might be called a *functional programming style*.
+In general, we recommend that you write pure functions whenever it is reasonable to do so and resort to modifiers only if there is a compelling advantage. This approach might be called a _functional programming style_.
 
 ### 5.11. Polymorphism and duck typing
 
@@ -444,7 +444,7 @@ This development plan is particularly useful if you don’t know how to divide t
 
 You might be wondering how we can use the same variable, `i`, in both `print_multiples` and `print_mult_table`. Doesn’t it cause problems when one of the functions changes the value of the variable?
 
-The answer is no, because the `i` in `print_multiples` and the `i` in `print_mult_table` are *not* the same variable.
+The answer is no, because the `i` in `print_multiples` and the `i` in `print_mult_table` are _not_ the same variable.
 
 Variables created inside a function definition are local; you can’t access a local variable from outside its home function. That means you are free to have multiple variables with the same name as long as they are not in the same function.
 
@@ -462,9 +462,9 @@ It is common and perfectly legal to have different local variables with the same
 
 All of the Python data types we have seen can be grouped inside lists and tuples in a variety of ways. Lists and tuples can also be nested, providing myriad possibilities for organizing data. The organization of data for the purpose of making it easier to use is called a [data structure](http://en.wikipedia.org/wiki/Data_structure).
 
-It’s election time and we are helping to compute the votes as they come in. Votes arriving from individual wards, precincts, municipalities, counties, and states are sometimes reported as a sum total of votes and sometimes as a list of subtotals of votes. After considering how best to store the tallies, we decide to use a *nested number list*, which we define as follows:
+It’s election time and we are helping to compute the votes as they come in. Votes arriving from individual wards, precincts, municipalities, counties, and states are sometimes reported as a sum total of votes and sometimes as a list of subtotals of votes. After considering how best to store the tallies, we decide to use a _nested number list_, which we define as follows:
 
-A *nested number list* is a list whose elements are either:
+A _nested number list_ is a list whose elements are either:
 
 1.  numbers
 2.  nested number lists
@@ -479,7 +479,7 @@ Now suppose our job is to write a function that will sum all of the values in a 
     16.5
     >>>
 
-For our *nested number list*, however, `sum` will not work:
+For our _nested number list_, however, `sum` will not work:
 
     >>> sum([1, 2, [11, 13], 8])
     Traceback (most recent call last):
@@ -491,9 +491,9 @@ The problem is that the third element of this list, `[11, 13]`, is itself a list
 
 ### 5.17. Recursion
 
-To sum all the numbers in our recursive nested number list we need to traverse the list, visiting each of the elements within its nested structure, adding any numeric elements to our sum, and *repeating this process* with any elements which are lists.
+To sum all the numbers in our recursive nested number list we need to traverse the list, visiting each of the elements within its nested structure, adding any numeric elements to our sum, and _repeating this process_ with any elements which are lists.
 
-Modern programming languages generally support [recursion](http://en.wikipedia.org/wiki/Recursion), which means that functions can *call themselves* within their definitions. Thanks to recursion, the Python code needed to sum the values of a nested number list is surprisingly short:
+Modern programming languages generally support [recursion](http://en.wikipedia.org/wiki/Recursion), which means that functions can _call themselves_ within their definitions. Thanks to recursion, the Python code needed to sum the values of a nested number list is surprisingly short:
 
     def recursive_sum(nested_num_list):
         the_sum = 0
@@ -753,4 +753,4 @@ A name used inside a function to refer to the value passed as an argument.stack 
 
 A graphical representation of a stack of functions, their variables, and the values to which they refer.traceback
 
-A list of the functions that are executing, printed when a runtime error occurs. A traceback is also commonly refered to as a *stack trace*, since it lists the functions in the order in which they are stored in the [runtime stack](http://en.wikipedia.org/wiki/Runtime_stack).
+A list of the functions that are executing, printed when a runtime error occurs. A traceback is also commonly refered to as a _stack trace_, since it lists the functions in the order in which they are stored in the [runtime stack](http://en.wikipedia.org/wiki/Runtime_stack).

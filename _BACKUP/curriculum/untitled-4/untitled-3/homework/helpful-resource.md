@@ -1,5 +1,4 @@
-Helpful Resource
-================
+# Helpful Resource
 
 #### Sorting a Linked List using Bubble Sort <span id="sortingalinkedlistusingbubblesort"></span>
 
@@ -149,7 +148,7 @@ Here since `p` was smaller, we add the value of `p` to `newlist`, and set `em` t
     em = 15
     newlist = 5, 10, 15
 
-### 
+###
 
 Similarly, in the next iteration:
 

@@ -1,5 +1,4 @@
-Docs
-====
+# Docs
 
 {% embed url=“https://docs.python.org/3/” %}
 

@@ -1,5 +1,4 @@
-Data Structures Overview
-========================
+# Data Structures Overview
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/ADS-practice">@bgoonz/ADS-practice</span>” %}
 
@@ -14,36 +13,38 @@ In this article, I will be briefly explaining 8 commonly used data structures ev
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/DATASTRUCTURES-NOTES">@bgoonz/DATASTRUCTURES-NOTES</span>\#sorting/insertion\_sort/insertion.py” %}
 
 1. Arrays <span id="31ab"></span>
----------------------------------
 
-An **array** is a structure of fixed-size, which can hold items of the same data type. It can be an array of integers, an array of floating-point numbers, an array of strings or even an array of arrays (such as *2-dimensional arrays*). Arrays are indexed, meaning that random access is possible.![](https://miro.medium.com/max/60/1*pYIKtQYbX8vgCWrwe1YOyg.png?q=20)Fig 1. Visualization of basic Terminology of Arrays (Image by author)
+---
+
+An **array** is a structure of fixed-size, which can hold items of the same data type. It can be an array of integers, an array of floating-point numbers, an array of strings or even an array of arrays (such as _2-dimensional arrays_). Arrays are indexed, meaning that random access is possible.![](https://miro.medium.com/max/60/1*pYIKtQYbX8vgCWrwe1YOyg.png?q=20)Fig 1. Visualization of basic Terminology of Arrays (Image by author)
 
 ![](https://miro.medium.com/max/473/1*pYIKtQYbX8vgCWrwe1YOyg.png)
 
 ### Array operations <span id="6504"></span>
 
--   **Traverse**: Go through the elements and print them.
--   **Search**: Search for an element in the array. You can search the element by its value or its index
--   **Update**: Update the value of an existing element at a given index
+- **Traverse**: Go through the elements and print them.
+- **Search**: Search for an element in the array. You can search the element by its value or its index
+- **Update**: Update the value of an existing element at a given index
 
 **Inserting** elements to an array and **deleting** elements from an array cannot be done straight away as arrays are fixed in size. If you want to insert an element to an array, first you will have to create a new array with increased size (current size + 1), copy the existing elements and add the new element. The same goes for the deletion with a new array of reduced size.
 
 ### **Applications of arrays** <span id="edcd"></span>
 
--   Used as the building blocks to build other data structures such as array lists, heaps, hash tables, vectors and matrices.
--   Used for different sorting algorithms such as insertion sort, quick sort, bubble sort and merge sort.
+- Used as the building blocks to build other data structures such as array lists, heaps, hash tables, vectors and matrices.
+- Used for different sorting algorithms such as insertion sort, quick sort, bubble sort and merge sort.
 
 2. Linked Lists <span id="d965"></span>
----------------------------------------
+
+---
 
 A **linked list** is a sequential structure that consists of a sequence of items in linear order which are linked to each other. Hence, you have to access data sequentially and random access is not possible. Linked lists provide a simple and flexible representation of dynamic sets.
 
 Let’s consider the following terms regarding linked lists. You can get a clear idea by referring to Figure 2.
 
--   Elements in a linked list are known as **nodes**.
--   Each node contains a **key** and a pointer to its successor node, known as **next**.
--   The attribute named **head** points to the first element of the linked list.
--   The last element of the linked list is known as the **tail**.
+- Elements in a linked list are known as **nodes**.
+- Each node contains a **key** and a pointer to its successor node, known as **next**.
+- The attribute named **head** points to the first element of the linked list.
+- The last element of the linked list is known as the **tail**.
 
 ![](https://miro.medium.com/max/60/1*4fuF6lHXOSmoVNcOV8aaJA.png?q=20)Fig 2. Visualization of basic Terminology of Linked Lists (Image by author)
 
@@ -51,23 +52,24 @@ Let’s consider the following terms regarding linked lists. You can get a clear
 
 Following are the various types of linked lists available.
 
--   **Singly linked list** — Traversal of items can be done in the forward direction only.
--   **Doubly linked list** — Traversal of items can be done in both forward and backward directions. Nodes consist of an additional pointer known as **prev**, pointing to the previous node.
--   **Circular linked lists** — Linked lists where the prev pointer of the head points to the tail and the next pointer of the tail points to the head.
+- **Singly linked list** — Traversal of items can be done in the forward direction only.
+- **Doubly linked list** — Traversal of items can be done in both forward and backward directions. Nodes consist of an additional pointer known as **prev**, pointing to the previous node.
+- **Circular linked lists** — Linked lists where the prev pointer of the head points to the tail and the next pointer of the tail points to the head.
 
 ### Linked list operations <span id="d683"></span>
 
--   **Search**: Find the first element with the key **k** in the given linked list by a simple linear search and returns a pointer to this element
--   **Insert**: Insert a key to the linked list. An insertion can be done in 3 different ways; insert at the beginning of the list, insert at the end of the list and insert in the middle of the list.
--   **Delete**: Removes an element **x** from a given linked list. You cannot delete a node by a single step. A deletion can be done in 3 different ways; delete from the beginning of the list, delete from the end of the list and delete from the middle of the list.
+- **Search**: Find the first element with the key **k** in the given linked list by a simple linear search and returns a pointer to this element
+- **Insert**: Insert a key to the linked list. An insertion can be done in 3 different ways; insert at the beginning of the list, insert at the end of the list and insert in the middle of the list.
+- **Delete**: Removes an element **x** from a given linked list. You cannot delete a node by a single step. A deletion can be done in 3 different ways; delete from the beginning of the list, delete from the end of the list and delete from the middle of the list.
 
 ### **Applications of linked lists** <span id="1da5"></span>
 
--   Used for *symbol table management* in compiler design.
--   Used in switching between programs using Alt + Tab (implemented using Circular Linked List).
+- Used for _symbol table management_ in compiler design.
+- Used in switching between programs using Alt + Tab (implemented using Circular Linked List).
 
 3. Stacks <span id="ca20"></span>
----------------------------------
+
+---
 
 A **stack** is a **LIFO** (Last In First Out — the element placed at last can be accessed at first) structure which can be commonly found in many programming languages. This structure is named as “stack” because it resembles a real-world stack — a stack of plates.Image by [congerdesign](https://pixabay.com/users/congerdesign-509903/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=629987)
 
@@ -77,8 +79,8 @@ A **stack** is a **LIFO** (Last In First Out — the element placed at last can 
 
 Given below are the 2 basic operations that can be performed on a stack. Please refer to Figure 3 to get a better understanding of the stack operations.
 
--   **Push**: Insert an element on to the top of the stack.
--   **Pop**: Delete the topmost element and return it.
+- **Push**: Insert an element on to the top of the stack.
+- **Pop**: Delete the topmost element and return it.
 
 ![](https://miro.medium.com/max/60/1*QMifqahZm4DGQ91GkOhu4g.png?q=20)Fig 3. Visualization of basic Operations of Stacks (Image by author)
 
@@ -86,17 +88,18 @@ Given below are the 2 basic operations that can be performed on a stack. Please 
 
 Furthermore, the following additional functions are provided for a stack in order to check its status.
 
--   **Peek**: Return the top element of the stack without deleting it.
--   **isEmpty**: Check if the stack is empty.
--   **isFull**: Check if the stack is full.
+- **Peek**: Return the top element of the stack without deleting it.
+- **isEmpty**: Check if the stack is empty.
+- **isFull**: Check if the stack is full.
 
 ### Applications of stacks <span id="f7fc"></span>
 
--   Used for expression evaluation (e.g.: *shunting-yard algorithm* for parsing and evaluating mathematical expressions).
--   Used to implement function calls in recursion programming.
+- Used for expression evaluation (e.g.: _shunting-yard algorithm_ for parsing and evaluating mathematical expressions).
+- Used to implement function calls in recursion programming.
 
 4. Queues <span id="0e94"></span>
----------------------------------
+
+---
 
 A **queue** is a **FIFO** (First In First Out — the element placed at first can be accessed at first) structure which can be commonly found in many programming languages. This structure is named as “queue” because it resembles a real-world queue — people waiting in a queue.![](https://miro.medium.com/max/60/1*GbtPRh9OWh1jtCtCa9czIg.jpeg?q=20)Image by [Sabine Felidae](https://pixabay.com/users/sheadquarters-5187/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=50119)
 
@@ -106,8 +109,8 @@ A **queue** is a **FIFO** (First In First Out — the element placed at first ca
 
 Given below are the 2 basic operations that can be performed on a queue. Please refer to Figure 4 to get a better understanding of the queue operations.
 
--   **Enqueue**: Insert an element to the end of the queue.
--   **Dequeue**: Delete the element from the beginning of the queue.
+- **Enqueue**: Insert an element to the end of the queue.
+- **Dequeue**: Delete the element from the beginning of the queue.
 
 ![](https://miro.medium.com/max/60/1*K4-7c0lyUcSGRPmv3_9uqw.png?q=20)Fig 4. Visualization of Basic Operations of Queues (Image by author)
 
@@ -115,11 +118,12 @@ Given below are the 2 basic operations that can be performed on a queue. Please 
 
 ### Applications of queues <span id="07fd"></span>
 
--   Used to manage threads in multithreading.
--   Used to implement queuing systems (e.g.: priority queues).
+- Used to manage threads in multithreading.
+- Used to implement queuing systems (e.g.: priority queues).
 
 5. Hash Tables <span id="4690"></span>
---------------------------------------
+
+---
 
 A **Hash Table** is a data structure that stores values which have keys associated with each of them. Furthermore, it supports lookup efficiently if we know the key associated with the value. Hence it is very efficient in inserting and searching, irrespective of the size of the data.
 
@@ -133,9 +137,9 @@ In direct accessing, a value with key **k** is stored in the slot **k**. Using t
 
 > **h(k) = k % m**
 
--   **h:** Hash function
--   **k:** Key of which the hash value should be determined
--   **m:** Size of the hash table (number of slots available). A prime value that is not close to an exact power of 2 is a good choice for **m**.
+- **h:** Hash function
+- **k:** Key of which the hash value should be determined
+- **m:** Size of the hash table (number of slots available). A prime value that is not close to an exact power of 2 is a good choice for **m**.
 
 ![](https://miro.medium.com/max/60/1*xOmBfzMxLLldy1ll4w7esg.png?q=20)Fig 5. Representation of a Hash Function (Image by author)
 
@@ -143,21 +147,22 @@ In direct accessing, a value with key **k** is stored in the slot **k**. Using t
 
 Consider the hash function **h(k) = k % 20**, where the size of the hash table is 20. Given a set of keys, we want to calculate the hash value of each to determine the index where it should go in the hash table. Consider we have the following keys, the hash and the hash table index.
 
--   1 → 1%20 → 1
--   5 → 5%20 → 5
--   23 → 23%20 → 3
--   63 → 63%20 → 3
+- 1 → 1%20 → 1
+- 5 → 5%20 → 5
+- 23 → 23%20 → 3
+- 63 → 63%20 → 3
 
 From the last two examples given above, we can see that **collision** can arise when the hash function generates the same index for more than one key. We can resolve collisions by selecting a suitable hash function h and use techniques such as **chaining** and **open addressing**.
 
 ### Applications of hash tables <span id="0328"></span>
 
--   Used to implement database indexes.
--   Used to implement associative arrays.
--   Used to implement the “set” data structure.
+- Used to implement database indexes.
+- Used to implement associative arrays.
+- Used to implement the “set” data structure.
 
 6. Trees <span id="1c0f"></span>
---------------------------------
+
+---
 
 A **tree** is a hierarchical structure where data is organized hierarchically and are linked together. This structure is different from a linked list whereas, in a linked list, items are linked in a linear order.
 
@@ -178,8 +183,8 @@ A binary search tree exhibits a unique property that distinguishes it from other
 
 Let **x** be a node in a binary search tree.
 
--   If **y** is a node in the **left** subtree of x, then **y.key ≤ x.key**
--   If **y** is a node in the **right** subtree of x, then **y.key ≥ x.key**
+- If **y** is a node in the **left** subtree of x, then **y.key ≤ x.key**
+- If **y** is a node in the **right** subtree of x, then **y.key ≥ x.key**
 
 ![](https://miro.medium.com/max/60/1*TMn800emvMuqwY3AZpfwCg.png?q=20)Fig 6. Visualization of Basic Terminology of Trees (Image by author)
 
@@ -187,15 +192,16 @@ Let **x** be a node in a binary search tree.
 
 ### Applications of trees <span id="3ea1"></span>
 
--   **Binary Trees**: Used to implement expression parsers and expression solvers.
--   **Binary Search Tree**: used in many search applications where data are constantly entering and leaving.
--   **Heaps**: used by JVM (Java Virtual Machine) to store Java objects.
--   **Treaps**: used in wireless networking.
+- **Binary Trees**: Used to implement expression parsers and expression solvers.
+- **Binary Search Tree**: used in many search applications where data are constantly entering and leaving.
+- **Heaps**: used by JVM (Java Virtual Machine) to store Java objects.
+- **Treaps**: used in wireless networking.
 
 Check my articles below on 8 useful tree data structures and self-balancing binary search trees.[8 Useful Tree Data Structures Worth KnowingAn overview of 8 different tree data structurestowardsdatascience.com](https://towardsdatascience.com/8-useful-tree-data-structures-worth-knowing-8532c7231e8c)[Self-Balancing Binary Search Trees 101Introduction to Self-Balancing Binary Search Treestowardsdatascience.com](https://towardsdatascience.com/self-balancing-binary-search-trees-101-fc4f51199e1d)
 
 7. Heaps <span id="9e26"></span>
---------------------------------
+
+---
 
 A **Heap** is a special case of a binary tree where the parent nodes are compared to their children with their values and are arranged accordingly.
 
@@ -212,15 +218,16 @@ Heaps can be of 2 types.
 
 ### Applications of heaps <span id="6986"></span>
 
--   Used in **heapsort algorithm**.
--   Used to implement priority queues as the priority values can be ordered according to the heap property where the heap can be implemented using an array.
--   Queue functions can be implemented using heaps within **O(log n)** time.
--   Used to find the kᵗʰ smallest (or largest) value in a given array.
+- Used in **heapsort algorithm**.
+- Used to implement priority queues as the priority values can be ordered according to the heap property where the heap can be implemented using an array.
+- Queue functions can be implemented using heaps within **O(log n)** time.
+- Used to find the kᵗʰ smallest (or largest) value in a given array.
 
 Check my article below on implementing a heap using the python heapq module.[Introduction to Python Heapq ModuleA simple introduction on how to use Python’s heapq moduletowardsdatascience.com](https://towardsdatascience.com/introduction-to-python-heapq-module-53534feda625)
 
 8. Graphs <span id="e0c7"></span>
----------------------------------
+
+---
 
 A **graph** consists of a finite set of **vertices** or nodes and a set of **edges** connecting these vertices.
 
@@ -248,9 +255,9 @@ You can read more about graph algorithms from my article [10 Graph Algorithms Vi
 
 ### Applications of graphs <span id="888d"></span>
 
--   Used to represent social media networks. Each user is a vertex, and when users connect they create an edge.
--   Used to represent web pages and links by search engines. Web pages on the internet are linked to each other by hyperlinks. Each page is a vertex and the hyperlink between two pages is an edge. Used for Page Ranking in Google.
--   Used to represent locations and routes in GPS. Locations are vertices and the routes connecting locations are edges. Used to calculate the shortest route between two locations.
+- Used to represent social media networks. Each user is a vertex, and when users connect they create an edge.
+- Used to represent web pages and links by search engines. Web pages on the internet are linked to each other by hyperlinks. Each page is a vertex and the hyperlink between two pages is an edge. Used for Page Ranking in Google.
+- Used to represent locations and routes in GPS. Locations are vertices and the routes connecting locations are edges. Used to calculate the shortest route between two locations.
 
 {% page-ref page=“../untitled-1/array/” %}
 

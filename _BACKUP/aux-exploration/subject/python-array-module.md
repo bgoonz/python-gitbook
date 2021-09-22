@@ -1,8 +1,6 @@
-Python Array Module
-===================
+# Python Array Module
 
-Python Arrays | Python Array Module
------------------------------------
+## Python Arrays | Python Array Module
 
 Array is yet another interesting topic of python, which covers and requires a good knowledge of basics before actually applying it. But the article is of course, one more magic spell from fairy basket, so why would it be partial to any coder?
 
@@ -71,7 +69,7 @@ The class array has the following data items-
 
 &gt;&gt;&gt;arr.insert
 
-**11. array.buffer\_info()**
+**11. array.buffer_info()**
 
 This returns a tuple that holds the address in memory and the length of elements in the buffer that holds the contents of the array in the runtime.
 
@@ -149,27 +147,27 @@ Element at 2nd index: 50
 
 Arrays can be declared in various ways and in different languages. The important points that should be considered are as follows:
 
--   Index always starts with 0.
--   We can access each element using its index.
--   The length of the array defines the capacity to store the elements.
+- Index always starts with 0.
+- We can access each element using its index.
+- The length of the array defines the capacity to store the elements.
 
 #### Python Array Operations
 
 Some of the basic operations supported by an array are:
 
--   **Traverse** – It prints all elements one by one.
--   **Insertion** – It adds an element at a given index.
--   **Deletion** – It deletes elements at the given index.
--   **Search** – It searches the element using the given index or by the value.
--   **Update** – It updates elements at the given index.
+- **Traverse** – It prints all elements one by one.
+- **Insertion** – It adds an element at a given index.
+- **Deletion** – It deletes elements at the given index.
+- **Search** – It searches the element using the given index or by the value.
+- **Update** – It updates elements at the given index.
 
 **Searching Element in Python Array Example:**  
-from array import \*array\_techvidvan = array(‘i’, \[0,1,2,3,4,5\])print (array\_techvidvan.index(3))
+from array import \*array_techvidvan = array(‘i’, \[0,1,2,3,4,5\])print (array_techvidvan.index(3))
 
 **Output:**1
 
 **Example of Traversing Array in Python**  
-from array import \*array\_TechVidvan = \[0,1,2,3,4,5\]for x in array\_TechVidvan: print (x)
+from array import \*array_TechVidvan = \[0,1,2,3,4,5\]for x in array_TechVidvan: print (x)
 
 **Output:**
 
@@ -256,7 +254,7 @@ NameError: name ‘numb’ is not defined
 
 By using the slicing operator (:), it’s possible to access a range of elements present in the array in Python programming language. The following code snippet demonstrates using the slicing operator with an array :
 
-**Code**number\_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range(1,5): print(i)for j in range(5,8): print(j)
+**Code**number_list = \[2, 4, 22, 25, 24, 52, 46,10\]for i in range(1,5): print(i)for j in range(5,8): print(j)
 
 **Output:**
 

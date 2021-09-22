@@ -1,8 +1,6 @@
-D2- Module 02 - Queues and Stacks
-=================================
+# D2- Module 02 - Queues and Stacks
 
-D2- Module 02 - Python II
--------------------------
+## D2- Module 02 - Python II
 
 {% embed url=“https://www.youtube.com/watch?v=8lB5fqmh2OY” %}
 

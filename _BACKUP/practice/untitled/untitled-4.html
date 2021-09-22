@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>untitled-4</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="linked-list">Linked List</h1>
-<pre class="pythonthon"><code>&quot;&quot;&quot;Each ListNode holds a reference to its previous node
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>untitled-4</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="linked-list">Linked List</h1>
+    <pre
+      class="pythonthon"
+    ><code>&quot;&quot;&quot;Each ListNode holds a reference to its previous node
 as well as its next node in the List.&quot;&quot;&quot;
 class ListNode:
   def __init__(self, value, prev=None, next=None):
@@ -83,8 +98,8 @@ class DoublyLinkedList:
   def get_max(self):
     pass
 </code></pre>
-<p>Test:</p>
-<pre class="pythonthon"><code>import unittest
+    <p>Test:</p>
+    <pre class="pythonthon"><code>import unittest
 from doubly_linked_list import ListNode
 from doubly_linked_list import DoublyLinkedList
 
@@ -237,5 +252,5 @@ class DoublyLinkedListTests(unittest.TestCase):
 
 if __name__ == &#39;__main__&#39;:
   unittest.main()</code></pre>
-</body>
+  </body>
 </html>

@@ -1,90 +1,247 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>javascript-event-loop</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="javascript-event-loop">JavaScript Event Loop</h1>
-<p><strong>Summary</strong>: in this tutorial, you’ll learn about the event loop in JavaScript and how JavaScript achieves the concurrency model based on the event loop.</p>
-<h3 id="javascript-single-threaded-model">JavaScript single-threaded model</h3>
-<p>JavaScript is a single-threaded programming language. In other words, JavaScript can do only one thing at a single point in time.</p>
-<p>The JavaScript engine executes a script from the top of the file and works its way down. JavaScript creates the <a href="https://www.javascripttutorial.net/javascript-execution-context/">execution contexts</a> and pushes and pops functions onto and off the <a href="https://www.javascripttutorial.net/javascript-call-stack/">call stack</a> in the execution process.</p>
-<p>If a function takes a long time to execute, you cannot interact with the web browser during the function’s execution because the page hangs.</p>
-<p>A function that takes a long time to complete is called a blocking function. Technically, a blocking function blocks all the interactions of the webpage, such as mouse click.</p>
-<p>A blocking function can be a function that downloads a file from a remote server or calls an API from an external server. For example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">function task(message) {</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>javascript-event-loop</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="javascript-event-loop">JavaScript Event Loop</h1>
+    <p>
+      <strong>Summary</strong>: in this tutorial, you’ll learn about the event
+      loop in JavaScript and how JavaScript achieves the concurrency model based
+      on the event loop.
+    </p>
+    <h3 id="javascript-single-threaded-model">
+      JavaScript single-threaded model
+    </h3>
+    <p>
+      JavaScript is a single-threaded programming language. In other words,
+      JavaScript can do only one thing at a single point in time.
+    </p>
+    <p>
+      The JavaScript engine executes a script from the top of the file and works
+      its way down. JavaScript creates the
+      <a href="https://www.javascripttutorial.net/javascript-execution-context/"
+        >execution contexts</a
+      >
+      and pushes and pops functions onto and off the
+      <a href="https://www.javascripttutorial.net/javascript-call-stack/"
+        >call stack</a
+      >
+      in the execution process.
+    </p>
+    <p>
+      If a function takes a long time to execute, you cannot interact with the
+      web browser during the function’s execution because the page hangs.
+    </p>
+    <p>
+      A function that takes a long time to complete is called a blocking
+      function. Technically, a blocking function blocks all the interactions of
+      the webpage, such as mouse click.
+    </p>
+    <p>
+      A blocking function can be a function that downloads a file from a remote
+      server or calls an API from an external server. For example:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">function task(message) {</a>
 <a class="sourceLine" id="cb1-2" title="2">    <span class="op">//</span> emulate time consuming task</a>
 <a class="sourceLine" id="cb1-3" title="3">    let n <span class="op">=</span> <span class="dv">10000000000</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb1-4" title="4">    <span class="cf">while</span> (n <span class="op">&gt;</span> <span class="dv">0</span>){</a>
@@ -95,54 +252,188 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-9" title="9"></a>
 <a class="sourceLine" id="cb1-10" title="10">console.log(<span class="st">&#39;Start script...&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb1-11" title="11">task(<span class="st">&#39;Download a file.&#39;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb1-12" title="12">console.log(<span class="st">&#39;Done!&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre></div>
-<p>In this example, we have a big <a href="https://www.javascripttutorial.net/javascript-while-loop/"><code>while</code></a> loop inside the <code>task()</code> function that emulates a time-consuming task. The <code>task()</code> function is a blocking function.</p>
-<p>The script hangs for a few seconds (depending on how fast the computer is) and issues the following output:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Start script...</a>
+<a class="sourceLine" id="cb1-12" title="12">console.log(<span class="st">&#39;Done!&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre>
+    </div>
+    <p>
+      In this example, we have a big
+      <a href="https://www.javascripttutorial.net/javascript-while-loop/"
+        ><code>while</code></a
+      >
+      loop inside the <code>task()</code> function that emulates a
+      time-consuming task. The <code>task()</code> function is a blocking
+      function.
+    </p>
+    <p>
+      The script hangs for a few seconds (depending on how fast the computer is)
+      and issues the following output:
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Start script...</a>
 <a class="sourceLine" id="cb2-2" title="2">Download a <span class="bu">file</span>.</a>
-<a class="sourceLine" id="cb2-3" title="3">Done<span class="op">!</span></a></code></pre></div>
-<p>to execute the script, the JavaScript engine places the first call <code>console.log()</code> on top of the stack and executes it. Then, JavaScript places the <code>task()</code> function on top of the call stack and executes the function.</p>
-<p>However, it’ll take a while to complete the <code>task()</code> function. Therefore, you’ll see the message <code>'Download a file.'</code> a little time later. After the <code>task()</code> function completes, the JavaScript engine pops it off the call stack.</p>
-<p>Finally, the JavaScript engine places the last call to the <code>console.log('Done!')</code> function and executes it, which will be very fast.<img src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-callstack.png" alt="javascript event loop - callstack" /></p>
-<h3 id="callbacks-to-the-rescue">Callbacks to the rescue</h3>
-<p>To prevent a blocking function from blocking other activities, you typically put it in a <a href="https://www.javascripttutorial.net/javascript-callback/">callback function</a> for execution later. For example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">console.log(<span class="st">&#39;Start script...&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3">Done<span class="op">!</span></a></code></pre>
+    </div>
+    <p>
+      to execute the script, the JavaScript engine places the first call
+      <code>console.log()</code> on top of the stack and executes it. Then,
+      JavaScript places the <code>task()</code> function on top of the call
+      stack and executes the function.
+    </p>
+    <p>
+      However, it’ll take a while to complete the <code>task()</code> function.
+      Therefore, you’ll see the message <code>'Download a file.'</code> a little
+      time later. After the <code>task()</code> function completes, the
+      JavaScript engine pops it off the call stack.
+    </p>
+    <p>
+      Finally, the JavaScript engine places the last call to the
+      <code>console.log('Done!')</code> function and executes it, which will be
+      very fast.<img
+        src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-callstack.png"
+        alt="javascript event loop - callstack"
+      />
+    </p>
+    <h3 id="callbacks-to-the-rescue">Callbacks to the rescue</h3>
+    <p>
+      To prevent a blocking function from blocking other activities, you
+      typically put it in a
+      <a href="https://www.javascripttutorial.net/javascript-callback/"
+        >callback function</a
+      >
+      for execution later. For example:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">console.log(<span class="st">&#39;Start script...&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-2" title="2"></a>
 <a class="sourceLine" id="cb3-3" title="3">setTimeout(() <span class="op">=&gt;</span> {</a>
 <a class="sourceLine" id="cb3-4" title="4">    task(<span class="st">&#39;Download a file.&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-5" title="5">}, <span class="dv">1000</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb3-6" title="6"></a>
-<a class="sourceLine" id="cb3-7" title="7">console.log(<span class="st">&#39;Done!&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre></div>
-<p>In this example, you’ll see the message <code>'Start script...'</code> and <code>'Done!'</code> immediately. And after that, you’ll see the message <code>'Download a file'</code>.</p>
-<p>Here’s the output:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">Start script...</a>
+<a class="sourceLine" id="cb3-7" title="7">console.log(<span class="st">&#39;Done!&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre>
+    </div>
+    <p>
+      In this example, you’ll see the message <code>'Start script...'</code> and
+      <code>'Done!'</code> immediately. And after that, you’ll see the message
+      <code>'Download a file'</code>.
+    </p>
+    <p>Here’s the output:</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">Start script...</a>
 <a class="sourceLine" id="cb4-2" title="2">Done<span class="op">!</span></a>
-<a class="sourceLine" id="cb4-3" title="3">Download a <span class="bu">file</span>.</a></code></pre></div>
-<p>As mentioned earlier that JavaScript can do only one thing at a time. However, it’s more precise to say that the JavaScript runtime can do one thing at a time.</p>
-<p>The web browser also has other components, not just the JavaScript engine.</p>
-<p>When you call the <a href="https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/"><code>setTimeout()</code></a> function, make a <a href="https://www.javascripttutorial.net/javascript-fetch-api/">fetch request</a> or click a button, the web browser can do these activities concurrently and asynchronously.</p>
-<p>The <a href="https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/"><code>setTimeout()</code></a>, fetch requests, and <a href="https://www.javascripttutorial.net/javascript-dom/">DOM</a> events are parts of the <a href="https://www.javascripttutorial.net/web-apis/">Web APIs</a> of the web browser.</p>
-<p>In our example, when you call the <code>setTimeout()</code> function, the JavaScript engine places it on the call stack, and the Web API creates a timer that expires in 1 second.<img src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-1.png" alt="javascript event loop - step 1" /></p>
-<p>Then JavaScript engine place the <code>task()</code> function is into a queue called a callback queue or a task queue:<img src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-2.png" alt="javascript event loop - step 2" /></p>
-<p>The event loop is a constantly running process that monitors both the callback queue and the call stack.</p>
-<p>If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:<img src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-3.png" alt="javascript event loop - step 3" /></p>
-<p>See another example:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">console.log(<span class="st">&#39;Hi!&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3">Download a <span class="bu">file</span>.</a></code></pre>
+    </div>
+    <p>
+      As mentioned earlier that JavaScript can do only one thing at a time.
+      However, it’s more precise to say that the JavaScript runtime can do one
+      thing at a time.
+    </p>
+    <p>
+      The web browser also has other components, not just the JavaScript engine.
+    </p>
+    <p>
+      When you call the
+      <a
+        href="https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/"
+        ><code>setTimeout()</code></a
+      >
+      function, make a
+      <a href="https://www.javascripttutorial.net/javascript-fetch-api/"
+        >fetch request</a
+      >
+      or click a button, the web browser can do these activities concurrently
+      and asynchronously.
+    </p>
+    <p>
+      The
+      <a
+        href="https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/"
+        ><code>setTimeout()</code></a
+      >, fetch requests, and
+      <a href="https://www.javascripttutorial.net/javascript-dom/">DOM</a>
+      events are parts of the
+      <a href="https://www.javascripttutorial.net/web-apis/">Web APIs</a> of the
+      web browser.
+    </p>
+    <p>
+      In our example, when you call the <code>setTimeout()</code> function, the
+      JavaScript engine places it on the call stack, and the Web API creates a
+      timer that expires in 1 second.<img
+        src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-1.png"
+        alt="javascript event loop - step 1"
+      />
+    </p>
+    <p>
+      Then JavaScript engine place the <code>task()</code> function is into a
+      queue called a callback queue or a task queue:<img
+        src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-2.png"
+        alt="javascript event loop - step 2"
+      />
+    </p>
+    <p>
+      The event loop is a constantly running process that monitors both the
+      callback queue and the call stack.
+    </p>
+    <p>
+      If the call stack is not empty, the event loop waits until it is empty and
+      places the next function from the callback queue to the call stack. If the
+      callback queue is empty, nothing will happen:<img
+        src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop-step-3.png"
+        alt="javascript event loop - step 3"
+      />
+    </p>
+    <p>See another example:</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">console.log(<span class="st">&#39;Hi!&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb5-2" title="2"></a>
 <a class="sourceLine" id="cb5-3" title="3">setTimeout(() <span class="op">=&gt;</span> {</a>
 <a class="sourceLine" id="cb5-4" title="4">    console.log(<span class="st">&#39;Execute immediately.&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb5-5" title="5">}, <span class="dv">0</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb5-6" title="6"></a>
 <a class="sourceLine" id="cb5-7" title="7">console.log(<span class="st">&#39;Bye!&#39;</span>)<span class="op">;</span></a>
-<a class="sourceLine" id="cb5-8" title="8">Code language: JavaScript (javascript)</a></code></pre></div>
-<p>In this example, the timeout is 0 second, so the message <code>'Execute immediately.'</code> should appear before the message <code>'Bye!'</code>. However, it is not the case. However, it doesn’t work like that.</p>
-<p>The JavaScript engine places the following function call on the callback queue and executes it when the call stack is empty. In other words, the JavaScript engine executes it after the <code>console.log('Bye!')</code>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">console.log(<span class="st">&#39;Execute immediately.&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre></div>
-<p>Here’s the output:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">Hi<span class="op">!</span></a>
+<a class="sourceLine" id="cb5-8" title="8">Code language: JavaScript (javascript)</a></code></pre>
+    </div>
+    <p>
+      In this example, the timeout is 0 second, so the message
+      <code>'Execute immediately.'</code> should appear before the message
+      <code>'Bye!'</code>. However, it is not the case. However, it doesn’t work
+      like that.
+    </p>
+    <p>
+      The JavaScript engine places the following function call on the callback
+      queue and executes it when the call stack is empty. In other words, the
+      JavaScript engine executes it after the <code>console.log('Bye!')</code>.
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">console.log(<span class="st">&#39;Execute immediately.&#39;</span>)<span class="op">;</span>Code language: JavaScript (javascript)</a></code></pre>
+    </div>
+    <p>Here’s the output:</p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">Hi<span class="op">!</span></a>
 <a class="sourceLine" id="cb7-2" title="2">Bye<span class="op">!</span></a>
-<a class="sourceLine" id="cb7-3" title="3">Execute immediately.</a></code></pre></div>
-<p>The following picture illustrates JavaScript runtime, Web API, Call stack, and Event loop:<img src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop.png" alt="javascript event loop" /></p>
-<p>In this tutorial, you have learned about the JavaScript event loop, a constantly running process that coordinates the tasks between the call stack and callback queue to achieve concurrency.</p>
-</body>
+<a class="sourceLine" id="cb7-3" title="3">Execute immediately.</a></code></pre>
+    </div>
+    <p>
+      The following picture illustrates JavaScript runtime, Web API, Call stack,
+      and Event loop:<img
+        src="https://www.javascripttutorial.net/wp-content/uploads/2019/12/javascript-event-loop.png"
+        alt="javascript event loop"
+      />
+    </p>
+    <p>
+      In this tutorial, you have learned about the JavaScript event loop, a
+      constantly running process that coordinates the tasks between the call
+      stack and callback queue to achieve concurrency.
+    </p>
+  </body>
 </html>

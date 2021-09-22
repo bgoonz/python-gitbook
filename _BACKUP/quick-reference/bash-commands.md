@@ -1,5 +1,4 @@
-List Of Python Cheat Sheets
-===========================
+# List Of Python Cheat Sheets
 
 \*\*\*\*[**https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4\#file-python-cheatsheet-py**](https://gist.github.com/bgoonz/dd7fd80df384fba134b42f256298bdb4#file-python-cheatsheet-py)
 
@@ -9,27 +8,27 @@ List Of Python Cheat Sheets
 
 Table of Contents
 
--   [Best Python Cheat Sheets](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Best_Python_Cheat_Sheets)
-    -   [(1) Python 3 Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#1_Python_3_Cheat_Sheet)
-    -   [(2) Python Beginner Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#2_Python_Beginner_Cheat_Sheet)
-    -   [(3) Python for Data Science](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#3_Python_for_Data_Science)
-    -   [(4) Python for Data Science (Importing Data)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#4_Python_for_Data_Science_Importing_Data)
-    -   [(5) Python Cheatography Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#5_Python_Cheatography_Cheat_Sheet)
-    -   [(6) The Ultimative Python Cheat Sheet Course (5x Email Series)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#6_The_Ultimative_Python_Cheat_Sheet_Course_5x_Email_Series)
-    -   [(7) Dataquest Data Science Cheat Sheet – Python Basics](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#7_Dataquest_Data_Science_Cheat_Sheet_-_Python_Basics)
-    -   [(8) Dataquest Data Science Cheat Sheet – Intermediate](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#8_Dataquest_Data_Science_Cheat_Sheet_-_Intermediate)
-    -   [(9) Dataquest NumPy](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#9_Dataquest_NumPy)
-    -   [(10) Python For Data Science (Bokeh)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#10_Python_For_Data_Science_Bokeh)
-    -   [(11) Pandas Cheat Sheet for Data Science](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#11_Pandas_Cheat_Sheet_for_Data_Science)
-    -   [(12) Regular Expressions Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#12_Regular_Expressions_Cheat_Sheet)
-    -   [(13) The World’s Most Concise Python Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#13_The_Worlds_Most_Concise_Python_Cheat_Sheet)
--   [What Cheat Sheets are NOT a Replacement For](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#What_Cheat_Sheets_are_NOT_a_Replacement_For)
--   [Cheat Sheet Alternatives](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Cheat_Sheet_Alternatives)
-    -   [Flashcards](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Flashcards)
-    -   [Personalised Cheat Sheets](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Personalised_Cheat_Sheets)
-    -   [Projects](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Projects)
--   [Summary](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Summary)
--   [Related Posts](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Related_Posts)
+- [Best Python Cheat Sheets](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Best_Python_Cheat_Sheets)
+  - [(1) Python 3 Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#1_Python_3_Cheat_Sheet)
+  - [(2) Python Beginner Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#2_Python_Beginner_Cheat_Sheet)
+  - [(3) Python for Data Science](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#3_Python_for_Data_Science)
+  - [(4) Python for Data Science (Importing Data)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#4_Python_for_Data_Science_Importing_Data)
+  - [(5) Python Cheatography Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#5_Python_Cheatography_Cheat_Sheet)
+  - [(6) The Ultimative Python Cheat Sheet Course (5x Email Series)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#6_The_Ultimative_Python_Cheat_Sheet_Course_5x_Email_Series)
+  - [(7) Dataquest Data Science Cheat Sheet – Python Basics](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#7_Dataquest_Data_Science_Cheat_Sheet_-_Python_Basics)
+  - [(8) Dataquest Data Science Cheat Sheet – Intermediate](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#8_Dataquest_Data_Science_Cheat_Sheet_-_Intermediate)
+  - [(9) Dataquest NumPy](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#9_Dataquest_NumPy)
+  - [(10) Python For Data Science (Bokeh)](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#10_Python_For_Data_Science_Bokeh)
+  - [(11) Pandas Cheat Sheet for Data Science](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#11_Pandas_Cheat_Sheet_for_Data_Science)
+  - [(12) Regular Expressions Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#12_Regular_Expressions_Cheat_Sheet)
+  - [(13) The World’s Most Concise Python Cheat Sheet](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#13_The_Worlds_Most_Concise_Python_Cheat_Sheet)
+- [What Cheat Sheets are NOT a Replacement For](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#What_Cheat_Sheets_are_NOT_a_Replacement_For)
+- [Cheat Sheet Alternatives](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Cheat_Sheet_Alternatives)
+  - [Flashcards](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Flashcards)
+  - [Personalised Cheat Sheets](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Personalised_Cheat_Sheets)
+  - [Projects](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Projects)
+- [Summary](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Summary)
+- [Related Posts](https://blog.finxter.com/collection-5-cheat-sheets-every-python-coder-must-own/#Related_Posts)
 
 {% embed url=“https://s3.amazonaws.com/dq-blog-files/python-cheat-sheet-basic.pdf” %}
 
@@ -109,7 +108,7 @@ Want to master the visualization library [Bokeh](https://docs.bokeh.org/en/lates
 
 [![](https://blog.finxter.com/wp-content/uploads/2020/06/image-5.png)](https://drive.google.com/file/d/1UHK8wtWbADvHKXFC937IS6MTnlSZC_zB/view)
 
-[Pandas](https://pandas.pydata.org/)is everywhere. If you want to master *“the Excel library for Python coders”*, why not start with this cheat sheet? It’ll get you started fast and introduces the most important Pandas functions to you.
+[Pandas](https://pandas.pydata.org/)is everywhere. If you want to master _“the Excel library for Python coders”_, why not start with this cheat sheet? It’ll get you started fast and introduces the most important Pandas functions to you.
 
 [You can find a best-of article about the](https://blog.finxter.com/pandas-cheat-sheets/)[7](https://blog.finxter.com/pandas-cheat-sheets/)[best Pandas Cheat Sheets here.](https://blog.finxter.com/pandas-cheat-sheets/)
 
@@ -125,7 +124,7 @@ Regex to the rescue! [Regular expressions](https://blog.finxter.com/python-regex
 
 This cheat sheet is the most concise Python cheat sheet in the world. It contains keywords, basic data structures, and complex data structures—all in a single 1-page PDF file. If you’re lazy, this cheat sheet is a must!
 
-*If you love cheat sheets, here are some interesting references for you (lots of more PDF downloads):*
+_If you love cheat sheets, here are some interesting references for you (lots of more PDF downloads):_
 
 {% embed url=“https://gist.github.com/bgoonz/265c5ba5114067d9c1cb0f907e02c4f9” %}
 

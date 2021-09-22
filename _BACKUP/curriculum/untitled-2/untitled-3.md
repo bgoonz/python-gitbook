@@ -1,10 +1,8 @@
-D1- Module 01 - Number Bases and Character Encoding
-===================================================
+# D1- Module 01 - Number Bases and Character Encoding
 
 {% embed url=“https://gist.github.com/bgoonz/85cf385ba5382cea548c2b6083cd1b3f” %}
 
-Objective 01 - Understand random access memory (RAM) as it relates to data structures
--------------------------------------------------------------------------------------
+## Objective 01 - Understand random access memory (RAM) as it relates to data structures
 
 ### Overview <span id="overview"></span>
 
@@ -42,14 +40,13 @@ Draw a model of how a processor interacts with the cache, memory controller, and
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://en.wikipedia.org/wiki/Random-access\_memory (Links to an external site.)](https://en.wikipedia.org/wiki/Random-access_memory)
--   [https://en.wikipedia.org/wiki/Memory\_controller (Links to an external site.)](https://en.wikipedia.org/wiki/Memory_controller)
--   [https://en.wikipedia.org/wiki/CPU\_cache (Links to an external site.)](https://en.wikipedia.org/wiki/CPU_cache)
+- [https://en.wikipedia.org/wiki/Random-access_memory (Links to an external site.)](https://en.wikipedia.org/wiki/Random-access_memory)
+- [https://en.wikipedia.org/wiki/Memory_controller (Links to an external site.)](https://en.wikipedia.org/wiki/Memory_controller)
+- [https://en.wikipedia.org/wiki/CPU_cache (Links to an external site.)](https://en.wikipedia.org/wiki/CPU_cache)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 02 - Convert back and forth from decimal to binary
-------------------------------------------------------------
+## Objective 02 - Convert back and forth from decimal to binary
 
 ### Overview <span id="overview"></span>
 
@@ -86,13 +83,12 @@ Convert the following decimal numbers into binary numbers:
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.mathsisfun.com/binary-number-system.html (Links to an external site.)](https://www.mathsisfun.com/binary-number-system.html)
--   <https://www.mathsisfun.com/definitions/decimal-number-system.html>
+- [https://www.mathsisfun.com/binary-number-system.html (Links to an external site.)](https://www.mathsisfun.com/binary-number-system.html)
+- <https://www.mathsisfun.com/definitions/decimal-number-system.html>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 03 - Understand how fixed-width integers are stored in memory
------------------------------------------------------------------------
+## Objective 03 - Understand how fixed-width integers are stored in memory
 
 ### Overview <span id="overview"></span>
 
@@ -104,9 +100,9 @@ Remember that each digit in a binary number is a successive power of 2. If we ha
 
 Let’s see if we can find a pattern:
 
--   With one bit, we can express two numbers (`0` and `1`)
--   With two bits, for each of the first numbers (`0` or `1`), we can put a `0` or a `1` after it, so we can express four numbers
--   With three bits, we can express eight numbers.
+- With one bit, we can express two numbers (`0` and `1`)
+- With two bits, for each of the first numbers (`0` or `1`), we can put a `0` or a `1` after it, so we can express four numbers
+- With three bits, we can express eight numbers.
 
 Every time we add a new bit, we double the number of possible numbers we can express in binary. This pattern can be generalized as `2^n` and `2^8 = 256`.
 
@@ -129,12 +125,11 @@ Storing numbers as fixed-width integers introduces a trade-off. We have constant
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://vladris.com/blog/2018/10/13/arithmetic-overflow-and-underflow.html (Links to an external site.)](https://vladris.com/blog/2018/10/13/arithmetic-overflow-and-underflow.html)
+- [https://vladris.com/blog/2018/10/13/arithmetic-overflow-and-underflow.html (Links to an external site.)](https://vladris.com/blog/2018/10/13/arithmetic-overflow-and-underflow.html)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 04 - Describe, in general terms, how arrays are stored in memory and the time complexity of lookups
--------------------------------------------------------------------------------------------------------------
+## Objective 04 - Describe, in general terms, how arrays are stored in memory and the time complexity of lookups
 
 ### Overview <span id="overview"></span>
 
@@ -160,12 +155,11 @@ Let’s say you need to store an array of 64-bit integers. Your array needs to h
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   <https://en.wikipedia.org/wiki/Array_data_type>
+- <https://en.wikipedia.org/wiki/Array_data_type>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 05 - Describe character encoding and how strings are stored in memory
--------------------------------------------------------------------------------
+## Objective 05 - Describe character encoding and how strings are stored in memory
 
 ### Overview <span id="overview"></span>
 
@@ -196,6 +190,6 @@ Draw out a model of a section of memory that stores the string `"Computer Scienc
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   <https://www.w3schools.com/charsets/ref_html_ascii.asp>
+- <https://www.w3schools.com/charsets/ref_html_ascii.asp>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)

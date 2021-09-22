@@ -1,84 +1,211 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>dfs</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="dfs">DFS</h1>
-<p>{% tabs %} {% tab title=“First Tab” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> .all_factors <span class="im">import</span> <span class="op">*</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>dfs</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="dfs">DFS</h1>
+    <p>{% tabs %} {% tab title=“First Tab” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> .all_factors <span class="im">import</span> <span class="op">*</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="im">from</span> .count_islands <span class="im">import</span> <span class="op">*</span></a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="im">from</span> .pacific_atlantic <span class="im">import</span> <span class="op">*</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="im">from</span> .sudoku_solver <span class="im">import</span> <span class="op">*</span></a>
@@ -515,47 +642,139 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-435" title="435">    dfs(rooms, i <span class="op">-</span> <span class="dv">1</span>, j, depth <span class="op">+</span> <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb1-436" title="436">    dfs(rooms, i, j <span class="op">+</span> <span class="dv">1</span>, depth <span class="op">+</span> <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb1-437" title="437">    dfs(rooms, i, j <span class="op">-</span> <span class="dv">1</span>, depth <span class="op">+</span> <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb1-438" title="438"></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Second Tab” %}</p>
-<p>{% endtab %} {% endtabs %}</p>
-<h4 id="introduction">Introduction <a id="introduction"></a></h4>
-<p>Originating from mathematics, graphs are now widely used data structures in Computer Science. One of the first problems we encounter when constructing any algorithm regarding Graph processing or traversal, is <em>how we represent the graph</em> and then, how to <em>traverse that representation</em>.</p>
-<blockquote>
-<p>Graph traversal is not a trivial problem, and given the difficulty of the task - many algorithms have been devised for efficient (yet not perfect) graph traversal.</p>
-</blockquote>
-<p>In this guide, we’ll take a look at one of the two fundamental and simplest algorithms for Graph traversal - <em><strong>Depth-First Search (DFS).</strong></em> It’s the most commonly used algorithm alongside the related <em><strong>Breadth-First Search (BFS)</strong></em> given their simplicity. After going over the main idea used for DFS, we’ll implement it in Python on a Graph representation - an <em><strong>adjacency list</strong></em>.</p>
-<h4 id="depth-first-search---theory">Depth-First Search - Theory <a id="depthfirstsearchtheory"></a></h4>
-<p><em><strong>Depth-First Search (DFS)</strong></em> is an algorithm used to <em><strong>traverse</strong></em> or locate a <em><strong>target</strong></em> node in a graph or tree data structure. It priorities <em>depth</em> and searches along one branch, as far as it can go - until the end of that branch. Once there, it <strong>backtracks</strong> to the first possible divergence from that branch, and searches until the end of <em>that</em> branch, repeating the process.</p>
-<p>Given the nature of the algorithm, you can easily implement it recursively - and you can always implement a recursive algorithm iteratively as well:</p>
-<p><img src="https://stackabuse.s3.amazonaws.com/media/graph-traversal-in-java-depth-first-search-dfs-1.gif" /></p>
-<p>The <em><strong>start node</strong></em> is the <em><strong>root node</strong></em> for <em>tree data structures</em>, while with more generic graphs - it can be any node.</p>
-<p>DFS is widely-used as a part of many other algorithms that resolve graph-represented problems. From cycle searches, path finding, topological sorting, to finding articulation points and strongly connected components. The reason behind this widespread use of the DFS algorithm lays in its overall simplicity and easy recursive implementation.</p>
-<h4 id="the-dfs-algorithm">The DFS Algorithm <a id="thedfsalgorithm"></a></h4>
-<p>The DFS algorithm is pretty simple and consists of the following steps:</p>
-<ol type="1">
-<li>Mark the current node as <strong>visited</strong>.</li>
-<li>Traverse the <strong>neighbouring</strong> nodes that <em>aren’t visited</em> and recursively call the DFS function for that node.</li>
-</ol>
-<p>The algorithm stops either when the target node is found, or the whole graph has been <strong>traversed</strong> (all nodes are visited).</p>
-<blockquote>
-<p>Since graphs can have <strong>cycles</strong>, we’ll need a system to avoid them so we don’t fall into infinity loops. That’s why we “mark” every node we pass as <strong>visited</strong> by adding them to a <code>Set</code> containing only unique entries.</p>
-</blockquote>
-<p>By marking nodes as “visited”, if we ever encounter that node again - we’re in a loop! Endless computational power and time has been wasted on loops, lost in the aether.</p>
-<p><strong>Pseudocode</strong></p>
-<p>Given these steps, we can summarize DFS in pseudocode:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">DFS(G, u):</a>
+<a class="sourceLine" id="cb1-438" title="438"></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Second Tab” %}</p>
+    <p>{% endtab %} {% endtabs %}</p>
+    <h4 id="introduction">Introduction <a id="introduction"></a></h4>
+    <p>
+      Originating from mathematics, graphs are now widely used data structures
+      in Computer Science. One of the first problems we encounter when
+      constructing any algorithm regarding Graph processing or traversal, is
+      <em>how we represent the graph</em> and then, how to
+      <em>traverse that representation</em>.
+    </p>
+    <blockquote>
+      <p>
+        Graph traversal is not a trivial problem, and given the difficulty of
+        the task - many algorithms have been devised for efficient (yet not
+        perfect) graph traversal.
+      </p>
+    </blockquote>
+    <p>
+      In this guide, we’ll take a look at one of the two fundamental and
+      simplest algorithms for Graph traversal -
+      <em><strong>Depth-First Search (DFS).</strong></em> It’s the most commonly
+      used algorithm alongside the related
+      <em><strong>Breadth-First Search (BFS)</strong></em> given their
+      simplicity. After going over the main idea used for DFS, we’ll implement
+      it in Python on a Graph representation - an
+      <em><strong>adjacency list</strong></em
+      >.
+    </p>
+    <h4 id="depth-first-search---theory">
+      Depth-First Search - Theory <a id="depthfirstsearchtheory"></a>
+    </h4>
+    <p>
+      <em><strong>Depth-First Search (DFS)</strong></em> is an algorithm used to
+      <em><strong>traverse</strong></em> or locate a
+      <em><strong>target</strong></em> node in a graph or tree data structure.
+      It priorities <em>depth</em> and searches along one branch, as far as it
+      can go - until the end of that branch. Once there, it
+      <strong>backtracks</strong> to the first possible divergence from that
+      branch, and searches until the end of <em>that</em> branch, repeating the
+      process.
+    </p>
+    <p>
+      Given the nature of the algorithm, you can easily implement it recursively
+      - and you can always implement a recursive algorithm iteratively as well:
+    </p>
+    <p>
+      <img
+        src="https://stackabuse.s3.amazonaws.com/media/graph-traversal-in-java-depth-first-search-dfs-1.gif"
+      />
+    </p>
+    <p>
+      The <em><strong>start node</strong></em> is the
+      <em><strong>root node</strong></em> for <em>tree data structures</em>,
+      while with more generic graphs - it can be any node.
+    </p>
+    <p>
+      DFS is widely-used as a part of many other algorithms that resolve
+      graph-represented problems. From cycle searches, path finding, topological
+      sorting, to finding articulation points and strongly connected components.
+      The reason behind this widespread use of the DFS algorithm lays in its
+      overall simplicity and easy recursive implementation.
+    </p>
+    <h4 id="the-dfs-algorithm">
+      The DFS Algorithm <a id="thedfsalgorithm"></a>
+    </h4>
+    <p>
+      The DFS algorithm is pretty simple and consists of the following steps:
+    </p>
+    <ol type="1">
+      <li>Mark the current node as <strong>visited</strong>.</li>
+      <li>
+        Traverse the <strong>neighbouring</strong> nodes that
+        <em>aren’t visited</em> and recursively call the DFS function for that
+        node.
+      </li>
+    </ol>
+    <p>
+      The algorithm stops either when the target node is found, or the whole
+      graph has been <strong>traversed</strong> (all nodes are visited).
+    </p>
+    <blockquote>
+      <p>
+        Since graphs can have <strong>cycles</strong>, we’ll need a system to
+        avoid them so we don’t fall into infinity loops. That’s why we “mark”
+        every node we pass as <strong>visited</strong> by adding them to a
+        <code>Set</code> containing only unique entries.
+      </p>
+    </blockquote>
+    <p>
+      By marking nodes as “visited”, if we ever encounter that node again -
+      we’re in a loop! Endless computational power and time has been wasted on
+      loops, lost in the aether.
+    </p>
+    <p><strong>Pseudocode</strong></p>
+    <p>Given these steps, we can summarize DFS in pseudocode:</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">DFS(G, u):</a>
 <a class="sourceLine" id="cb2-2" title="2">    <span class="co"># Input processing</span></a>
 <a class="sourceLine" id="cb2-3" title="3">    u.visited <span class="op">=</span> true</a>
 <a class="sourceLine" id="cb2-4" title="4">    <span class="cf">for</span> each v <span class="kw">in</span> G.adj[u]:</a>
 <a class="sourceLine" id="cb2-5" title="5">        <span class="cf">if</span> <span class="op">!</span>v.visited:</a>
 <a class="sourceLine" id="cb2-6" title="6">            DFS(G, v)</a>
-<a class="sourceLine" id="cb2-7" title="7">            <span class="co"># Output processing</span></a></code></pre></div>
-<p><strong>Input</strong> and <strong>output</strong> processing are performed depending on the purpose of the graph search. Our input processing for DFS will be checking if the <strong>current</strong> node is equal to the <strong>target</strong> node.</p>
-<p>With this view, you can really start to appreciate just how simple yet useful this algorithm is.</p>
-<h4 id="depth-first-search---implementation">Depth-First Search - Implementation <a id="depthfirstsearchimplementation"></a></h4>
-<p>Depth-First Search implementation is usually <strong>recursive</strong> in code given how natural of a pair that is, but it can also be easily implemented non-recursively. We’ll be using the recursive method as it’s simpler and more fitting:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> dfs(adj_list, start, target, path, visited <span class="op">=</span> <span class="bu">set</span>()):</a>
+<a class="sourceLine" id="cb2-7" title="7">            <span class="co"># Output processing</span></a></code></pre>
+    </div>
+    <p>
+      <strong>Input</strong> and <strong>output</strong> processing are
+      performed depending on the purpose of the graph search. Our input
+      processing for DFS will be checking if the <strong>current</strong> node
+      is equal to the <strong>target</strong> node.
+    </p>
+    <p>
+      With this view, you can really start to appreciate just how simple yet
+      useful this algorithm is.
+    </p>
+    <h4 id="depth-first-search---implementation">
+      Depth-First Search - Implementation
+      <a id="depthfirstsearchimplementation"></a>
+    </h4>
+    <p>
+      Depth-First Search implementation is usually <strong>recursive</strong> in
+      code given how natural of a pair that is, but it can also be easily
+      implemented non-recursively. We’ll be using the recursive method as it’s
+      simpler and more fitting:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> dfs(adj_list, start, target, path, visited <span class="op">=</span> <span class="bu">set</span>()):</a>
 <a class="sourceLine" id="cb3-2" title="2">    path.append(start)</a>
 <a class="sourceLine" id="cb3-3" title="3">    visited.add(start)</a>
 <a class="sourceLine" id="cb3-4" title="4">    <span class="cf">if</span> start <span class="op">==</span> target:</a>
@@ -566,83 +785,193 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-9" title="9">            <span class="cf">if</span> result <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb3-10" title="10">                <span class="cf">return</span> result</a>
 <a class="sourceLine" id="cb3-11" title="11">      path.pop()</a>
-<a class="sourceLine" id="cb3-12" title="12">    <span class="cf">return</span> <span class="va">None</span></a></code></pre></div>
-<p>We added the start node to the beginning of our traversal path and marked it as <strong>visited</strong> by adding it to a set of <code>visited</code> nodes. Then, we traversed the start node’s neighbours that <strong>aren’t</strong> already visited and called the function recursively for each of them. Recursive calls result in going as deep as we can along one “branch”.</p>
-<p>We saved the recursion result in a variable - in the case it returns <code>None</code> that means that the target node was not found in this branch and that we should try another. If the recursive call, in fact, does not return <code>None</code>, that means we have found our target node and we return the traversal path as result.</p>
-<p>In the end, if we find ourselves outside of the <code>for</code> loop, it means that all the neighbour branches of the current node have been visited and none of them lead to our target node. So, we remove the current node from the path, and return <code>None</code> as result.</p>
-<h4 id="running-dfs">Running DFS <a id="runningdfs"></a></h4>
-<p>Let’s illustrate how the code works through an example. We’ll be using a Python <strong>dictionary</strong> to represent the graph as an adjacency list. Here’s the graph we’ll be using in the following example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">adj_list <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb3-12" title="12">    <span class="cf">return</span> <span class="va">None</span></a></code></pre>
+    </div>
+    <p>
+      We added the start node to the beginning of our traversal path and marked
+      it as <strong>visited</strong> by adding it to a set of
+      <code>visited</code> nodes. Then, we traversed the start node’s neighbours
+      that <strong>aren’t</strong> already visited and called the function
+      recursively for each of them. Recursive calls result in going as deep as
+      we can along one “branch”.
+    </p>
+    <p>
+      We saved the recursion result in a variable - in the case it returns
+      <code>None</code> that means that the target node was not found in this
+      branch and that we should try another. If the recursive call, in fact,
+      does not return <code>None</code>, that means we have found our target
+      node and we return the traversal path as result.
+    </p>
+    <p>
+      In the end, if we find ourselves outside of the <code>for</code> loop, it
+      means that all the neighbour branches of the current node have been
+      visited and none of them lead to our target node. So, we remove the
+      current node from the path, and return <code>None</code> as result.
+    </p>
+    <h4 id="running-dfs">Running DFS <a id="runningdfs"></a></h4>
+    <p>
+      Let’s illustrate how the code works through an example. We’ll be using a
+      Python <strong>dictionary</strong> to represent the graph as an adjacency
+      list. Here’s the graph we’ll be using in the following example:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">adj_list <span class="op">=</span> {</a>
 <a class="sourceLine" id="cb4-2" title="2">    <span class="dv">0</span> : [<span class="dv">1</span>, <span class="dv">2</span>],</a>
 <a class="sourceLine" id="cb4-3" title="3">    <span class="dv">1</span> : [<span class="dv">0</span>, <span class="dv">3</span>],</a>
 <a class="sourceLine" id="cb4-4" title="4">    <span class="dv">2</span> : [<span class="dv">0</span>, <span class="dv">3</span>],</a>
 <a class="sourceLine" id="cb4-5" title="5">    <span class="dv">3</span> : [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>],</a>
 <a class="sourceLine" id="cb4-6" title="6">    <span class="dv">4</span> : [<span class="dv">3</span>]</a>
-<a class="sourceLine" id="cb4-7" title="7">}</a></code></pre></div>
-<blockquote>
-<p>An adjacency list is a type of graph representation in code, it consists of <strong>keys</strong> which represent each node, and a <strong>list</strong> of values for each of them containing nodes that are connected to the key node with an edge.</p>
-</blockquote>
-<p>Using a dictionary for this is the easiest way to quickly represent a graph in Python, though you could also define your own <code>Node</code> classes and add them to a <code>Graph</code> instance.</p>
-<p>Here’s what our example graph looks like:</p>
-<figure>
-<img src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-1.jpg" alt="graph" /><figcaption>graph</figcaption>
-</figure>
-<p>We’re searching for a path from node <code>0</code> to node <code>3</code>, if it exists, the path will be saved into a set of visited nodes, called <code>traversal_path</code> so we can reconstruct it for printing:</p>
-<pre><code>traversal_path = []</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">traversal_path <span class="op">=</span> dfs(adj_list, <span class="dv">0</span>, <span class="dv">3</span>, traversal_path)</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="bu">print</span>(traversal_path)</a></code></pre></div>
-<p>The steps our algorithm will take are as follows:</p>
-<ul>
-<li>Add node <code>0</code> to the traversal path and mark it as visited. Check if node <code>0</code> is equal to target node <code>3</code>, since it’s not, continue and traverse it’s neighbours (<code>1</code> and <code>2</code>).</li>
-<li>Is neighbour <code>1</code> visited? - No. Then, the algorithm calls the function recursively for that node.
-<ul>
-<li>Recursive call for node <code>1</code>: Add node <code>1</code> to the traversal path and mark it as visited, . Is <code>1</code> equal to our target node <code>3</code>? - No, continue and traverse it’s neighbours (<code>0</code> and <code>3</code>).</li>
-<li>Is neighbour <code>0</code> visited? - Yes, move onto the next one.</li>
-<li>Is neighbour <code>3</code> visited? - No, call the function recursively for this node.
-<ul>
-<li>Recursive call for node <code>3</code>: Add node <code>3</code> to the traversal path and mark it as visited. Is <code>3</code> equal to our target node <code>3</code>? - Yes, target node has been found, return the traversal path.</li>
-</ul></li>
-</ul></li>
-</ul>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Current Node</th>
-<th style="text-align: left;">Path</th>
-<th style="text-align: left;">Visited</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><code>0</code></td>
-<td style="text-align: left;">[<code>0</code>]</td>
-<td style="text-align: left;">{<code>0</code>}</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>1</code></td>
-<td style="text-align: left;">[<code>0</code>, <code>1</code>]</td>
-<td style="text-align: left;">{<code>0</code>, <code>1</code>}</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><code>3</code></td>
-<td style="text-align: left;">[<code>0</code>, <code>1</code>, <code>3</code>]</td>
-<td style="text-align: left;">{<code>0</code>, <code>1</code>, <code>3</code>}</td>
-</tr>
-</tbody>
-</table>
-<p>The algorithm stops and our program prints out the resulting traversal path from node <code>0</code> to node <code>3</code>:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>]</a></code></pre></div>
-<p>After the search, the marked nodes on the graph represent the path we took to get to the target node:</p>
-<figure>
-<img src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-2.png" alt="marked graph" /><figcaption>marked graph</figcaption>
-</figure>
-<p>In case there was no path between the start and target node, the traversal path would be <strong>empty</strong>.</p>
-<p><strong>Note</strong>: Graphs can also be <strong>disconnected</strong>, meaning that there are at least two nodes that cannot be connected by a path. In this case, DFS would ignore the nodes that it can’t get to:</p>
-<figure>
-<img src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-3.png" alt="disconnected graph" /><figcaption>disconnected graph</figcaption>
-</figure>
-<p>For example in this graph, if we were to start DFS from node <code>0</code> to node <code>4</code>, there would be no such path because it has no way of getting to the target node.</p>
-<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
-<p>In this article we’ve explained the theory behind the Depth-First Search algorithm. We’ve depicted the widely-used recursive Python implementation, and went over the borderline cases for which the algorithm will not work properly.</p>
-</body>
+<a class="sourceLine" id="cb4-7" title="7">}</a></code></pre>
+    </div>
+    <blockquote>
+      <p>
+        An adjacency list is a type of graph representation in code, it consists
+        of <strong>keys</strong> which represent each node, and a
+        <strong>list</strong> of values for each of them containing nodes that
+        are connected to the key node with an edge.
+      </p>
+    </blockquote>
+    <p>
+      Using a dictionary for this is the easiest way to quickly represent a
+      graph in Python, though you could also define your own
+      <code>Node</code> classes and add them to a <code>Graph</code> instance.
+    </p>
+    <p>Here’s what our example graph looks like:</p>
+    <figure>
+      <img
+        src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-1.jpg"
+        alt="graph"
+      />
+      <figcaption>graph</figcaption>
+    </figure>
+    <p>
+      We’re searching for a path from node <code>0</code> to node
+      <code>3</code>, if it exists, the path will be saved into a set of visited
+      nodes, called <code>traversal_path</code> so we can reconstruct it for
+      printing:
+    </p>
+    <pre><code>traversal_path = []</code></pre>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">traversal_path <span class="op">=</span> dfs(adj_list, <span class="dv">0</span>, <span class="dv">3</span>, traversal_path)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="bu">print</span>(traversal_path)</a></code></pre>
+    </div>
+    <p>The steps our algorithm will take are as follows:</p>
+    <ul>
+      <li>
+        Add node <code>0</code> to the traversal path and mark it as visited.
+        Check if node <code>0</code> is equal to target node <code>3</code>,
+        since it’s not, continue and traverse it’s neighbours (<code>1</code>
+        and <code>2</code>).
+      </li>
+      <li>
+        Is neighbour <code>1</code> visited? - No. Then, the algorithm calls the
+        function recursively for that node.
+        <ul>
+          <li>
+            Recursive call for node <code>1</code>: Add node <code>1</code> to
+            the traversal path and mark it as visited, . Is <code>1</code> equal
+            to our target node <code>3</code>? - No, continue and traverse it’s
+            neighbours (<code>0</code> and <code>3</code>).
+          </li>
+          <li>
+            Is neighbour <code>0</code> visited? - Yes, move onto the next one.
+          </li>
+          <li>
+            Is neighbour <code>3</code> visited? - No, call the function
+            recursively for this node.
+            <ul>
+              <li>
+                Recursive call for node <code>3</code>: Add node
+                <code>3</code> to the traversal path and mark it as visited. Is
+                <code>3</code> equal to our target node <code>3</code>? - Yes,
+                target node has been found, return the traversal path.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <table>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left">Current Node</th>
+          <th style="text-align: left">Path</th>
+          <th style="text-align: left">Visited</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td style="text-align: left"><code>0</code></td>
+          <td style="text-align: left">[<code>0</code>]</td>
+          <td style="text-align: left">{<code>0</code>}</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left"><code>1</code></td>
+          <td style="text-align: left">[<code>0</code>, <code>1</code>]</td>
+          <td style="text-align: left">{<code>0</code>, <code>1</code>}</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left"><code>3</code></td>
+          <td style="text-align: left">
+            [<code>0</code>, <code>1</code>, <code>3</code>]
+          </td>
+          <td style="text-align: left">
+            {<code>0</code>, <code>1</code>, <code>3</code>}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      The algorithm stops and our program prints out the resulting traversal
+      path from node <code>0</code> to node <code>3</code>:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">3</span>]</a></code></pre>
+    </div>
+    <p>
+      After the search, the marked nodes on the graph represent the path we took
+      to get to the target node:
+    </p>
+    <figure>
+      <img
+        src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-2.png"
+        alt="marked graph"
+      />
+      <figcaption>marked graph</figcaption>
+    </figure>
+    <p>
+      In case there was no path between the start and target node, the traversal
+      path would be <strong>empty</strong>.
+    </p>
+    <p>
+      <strong>Note</strong>: Graphs can also be <strong>disconnected</strong>,
+      meaning that there are at least two nodes that cannot be connected by a
+      path. In this case, DFS would ignore the nodes that it can’t get to:
+    </p>
+    <figure>
+      <img
+        src="https://s3.amazonaws.com/s3.stackabuse.com/media/articles/depth-first-search-dfs-in-python-theory-and-implementation-3.png"
+        alt="disconnected graph"
+      />
+      <figcaption>disconnected graph</figcaption>
+    </figure>
+    <p>
+      For example in this graph, if we were to start DFS from node
+      <code>0</code> to node <code>4</code>, there would be no such path because
+      it has no way of getting to the target node.
+    </p>
+    <h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+    <p>
+      In this article we’ve explained the theory behind the Depth-First Search
+      algorithm. We’ve depicted the widely-used recursive Python implementation,
+      and went over the borderline cases for which the algorithm will not work
+      properly.
+    </p>
+  </body>
 </html>

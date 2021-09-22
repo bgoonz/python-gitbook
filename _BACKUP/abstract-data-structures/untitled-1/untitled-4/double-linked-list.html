@@ -1,131 +1,366 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>double-linked-list</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="double-linked-list">Double Linked List</h1>
-<p>In single linked list each node of the list has two components, the actual value of the node and the reference to the next node in the linked list. In the doubly linked list, each node has three components: the value of the node, the reference to the previous node, and the reference to the next node. For the start node of the doubly linked list, the reference to the previous node is null. Similarly, for the last node in the doubly linked list, the reference to next node is null.</p>
-<h4 id="pros-and-cons-of-a-doubly-linked-list">Pros and Cons of a Doubly Linked List <a id="prosandconsofadoublylinkedlist"></a></h4>
-<p>Following are some of the pros and cons of a doubly linked list:</p>
-<p><strong>Pros</strong></p>
-<ul>
-<li>Unlike a single linked list, the doubly linked list can be traversed and searched in both directions. The reference to the next node helps in traversing the node in the forward direction while the references to the previous nodes allow traversal in the backward direction.</li>
-<li>Basic operations such as insertion and deletion are easier to implement in the doubly linked lists since, unlike single linked lists, we do not need to traverse to the predecessor node and store its reference. Rather, in a doubly linked list the reference of the predecessor node can be retrieved from the node that we want to delete.</li>
-</ul>
-<p><strong>Cons</strong></p>
-<ul>
-<li>One of the major drawbacks of the doubly linked list is that you need more memory space to store one extra reference for each node.</li>
-<li>A few additional steps are required to be performed in order to perform insertion and deletion operations.</li>
-</ul>
-<h4 id="implementing-the-doubly-linked-list-with-python">Implementing the Doubly Linked List with Python <a id="implementingthedoublylinkedlistwithpython"></a></h4>
-<p>In this section, we will see how we can create a very simple doubly linked list in Python. If you have read <a href="https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/">Part 1</a> and <a href="https://stackabuse.com/sorting-and-merging-single-linked-list/">Part 2</a> of this series of articles, the code should be pretty straight-forward.</p>
-<p>As always, let’s first create a class for the single node in the list. Add the following code to your file:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> Node:</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>double-linked-list</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="double-linked-list">Double Linked List</h1>
+    <p>
+      In single linked list each node of the list has two components, the actual
+      value of the node and the reference to the next node in the linked list.
+      In the doubly linked list, each node has three components: the value of
+      the node, the reference to the previous node, and the reference to the
+      next node. For the start node of the doubly linked list, the reference to
+      the previous node is null. Similarly, for the last node in the doubly
+      linked list, the reference to next node is null.
+    </p>
+    <h4 id="pros-and-cons-of-a-doubly-linked-list">
+      Pros and Cons of a Doubly Linked List
+      <a id="prosandconsofadoublylinkedlist"></a>
+    </h4>
+    <p>Following are some of the pros and cons of a doubly linked list:</p>
+    <p><strong>Pros</strong></p>
+    <ul>
+      <li>
+        Unlike a single linked list, the doubly linked list can be traversed and
+        searched in both directions. The reference to the next node helps in
+        traversing the node in the forward direction while the references to the
+        previous nodes allow traversal in the backward direction.
+      </li>
+      <li>
+        Basic operations such as insertion and deletion are easier to implement
+        in the doubly linked lists since, unlike single linked lists, we do not
+        need to traverse to the predecessor node and store its reference.
+        Rather, in a doubly linked list the reference of the predecessor node
+        can be retrieved from the node that we want to delete.
+      </li>
+    </ul>
+    <p><strong>Cons</strong></p>
+    <ul>
+      <li>
+        One of the major drawbacks of the doubly linked list is that you need
+        more memory space to store one extra reference for each node.
+      </li>
+      <li>
+        A few additional steps are required to be performed in order to perform
+        insertion and deletion operations.
+      </li>
+    </ul>
+    <h4 id="implementing-the-doubly-linked-list-with-python">
+      Implementing the Doubly Linked List with Python
+      <a id="implementingthedoublylinkedlistwithpython"></a>
+    </h4>
+    <p>
+      In this section, we will see how we can create a very simple doubly linked
+      list in Python. If you have read
+      <a
+        href="https://stackabuse.com/linked-lists-in-detail-with-python-examples-single-linked-lists/"
+        >Part 1</a
+      >
+      and
+      <a href="https://stackabuse.com/sorting-and-merging-single-linked-list/"
+        >Part 2</a
+      >
+      of this series of articles, the code should be pretty straight-forward.
+    </p>
+    <p>
+      As always, let’s first create a class for the single node in the list. Add
+      the following code to your file:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> Node:</a>
 <a class="sourceLine" id="cb1-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, data):</a>
 <a class="sourceLine" id="cb1-3" title="3">        <span class="va">self</span>.item <span class="op">=</span> data</a>
 <a class="sourceLine" id="cb1-4" title="4">        <span class="va">self</span>.nref <span class="op">=</span> <span class="va">None</span></a>
-<a class="sourceLine" id="cb1-5" title="5">        <span class="va">self</span>.pref <span class="op">=</span> <span class="va">None</span></a></code></pre></div>
-<p>You can see in the above code, we create a <code>Node</code> class with three member variables: <code>item</code>, <code>nref</code>, and <code>pref</code>. The <code>item</code> variable will store the actual data for the node. The <code>nref</code> stores the reference to the next node, while <code>pref</code> stores the reference to the previous node in the doubly linked list.</p>
-<p>Next, we need to create the <code>DoublyLinkedList</code> class, which contains different doubly linked list related functions. Add the following code:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> DoublyLinkedList:</a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="va">self</span>.pref <span class="op">=</span> <span class="va">None</span></a></code></pre>
+    </div>
+    <p>
+      You can see in the above code, we create a <code>Node</code> class with
+      three member variables: <code>item</code>, <code>nref</code>, and
+      <code>pref</code>. The <code>item</code> variable will store the actual
+      data for the node. The <code>nref</code> stores the reference to the next
+      node, while <code>pref</code> stores the reference to the previous node in
+      the doubly linked list.
+    </p>
+    <p>
+      Next, we need to create the <code>DoublyLinkedList</code> class, which
+      contains different doubly linked list related functions. Add the following
+      code:
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> DoublyLinkedList:</a>
 <a class="sourceLine" id="cb2-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">None</span></a></code></pre></div>
-<p>Throughout this article we will keep adding functions to this class.</p>
-<p><strong>Inserting Items in Doubly Linked List</strong></p>
-<p>In this section, we will see the different ways of inserting items in a doubly linked list.</p>
-<p><strong>Inserting Items in Empty List</strong></p>
-<p>The easiest way to insert an item in a doubly linked list is to insert an item in the empty list. The following script inserts an element at the start of the doubly linked list:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"> <span class="kw">def</span> insert_in_emptylist(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">None</span></a></code></pre>
+    </div>
+    <p>Throughout this article we will keep adding functions to this class.</p>
+    <p><strong>Inserting Items in Doubly Linked List</strong></p>
+    <p>
+      In this section, we will see the different ways of inserting items in a
+      doubly linked list.
+    </p>
+    <p><strong>Inserting Items in Empty List</strong></p>
+    <p>
+      The easiest way to insert an item in a doubly linked list is to insert an
+      item in the empty list. The following script inserts an element at the
+      start of the doubly linked list:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"> <span class="kw">def</span> insert_in_emptylist(<span class="va">self</span>, data):</a>
 <a class="sourceLine" id="cb3-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb3-3" title="3">            new_node <span class="op">=</span> Node(data)</a>
 <a class="sourceLine" id="cb3-4" title="4">            <span class="va">self</span>.start_node <span class="op">=</span> new_node</a>
 <a class="sourceLine" id="cb3-5" title="5">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb3-6" title="6">            <span class="bu">print</span>(<span class="st">&quot;list is not empty&quot;</span>)</a></code></pre></div>
-<p>In the script above, we define a method <code>insert_in_emptylist()</code>. The method first checks whether the <code>self.start_node</code> variable is <code>None</code> or not. If the variable is <code>None</code>, it means that the list is actually empty. Next, a new node is created and its value is initialized by the value passed as a parameter to the <code>data</code> parameter of the <code>insert_in_emptylist()</code> function. Finally, the value of <code>self.start_node</code> variable is set to the new node. In case if the list is not empty, a message is simply displayed to the user that the list is not empty.</p>
-<p>Add the <code>insert_in_emptylist()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Inserting Items at the Start</strong></p>
-<p>To insert an item at the beginning of the doubly linked list, we have to first check whether the list is empty or not. If the list is empty, we can simply use the logic defined in the <code>insert_in_emptylist()</code> to insert the element since in an empty list, the first element is always at the start.</p>
-<p>Else, if the list is not empty, we need to perform three operations:</p>
-<ol type="1">
-<li>For the new node, the reference to the next node will be set to <code>self.start_node</code>.</li>
-<li>For the <code>self.start_node</code> the reference to the previous node will be set to the newly inserted node.</li>
-<li>Finally, the <code>self.start_node</code> will become the newly inserted node.</li>
-</ol>
-<p>The following script inserts an item at the start of the doubly linked list:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="kw">def</span> insert_at_start(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb3-6" title="6">            <span class="bu">print</span>(<span class="st">&quot;list is not empty&quot;</span>)</a></code></pre>
+    </div>
+    <p>
+      In the script above, we define a method
+      <code>insert_in_emptylist()</code>. The method first checks whether the
+      <code>self.start_node</code> variable is <code>None</code> or not. If the
+      variable is <code>None</code>, it means that the list is actually empty.
+      Next, a new node is created and its value is initialized by the value
+      passed as a parameter to the <code>data</code> parameter of the
+      <code>insert_in_emptylist()</code> function. Finally, the value of
+      <code>self.start_node</code> variable is set to the new node. In case if
+      the list is not empty, a message is simply displayed to the user that the
+      list is not empty.
+    </p>
+    <p>
+      Add the <code>insert_in_emptylist()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Inserting Items at the Start</strong></p>
+    <p>
+      To insert an item at the beginning of the doubly linked list, we have to
+      first check whether the list is empty or not. If the list is empty, we can
+      simply use the logic defined in the <code>insert_in_emptylist()</code> to
+      insert the element since in an empty list, the first element is always at
+      the start.
+    </p>
+    <p>Else, if the list is not empty, we need to perform three operations:</p>
+    <ol type="1">
+      <li>
+        For the new node, the reference to the next node will be set to
+        <code>self.start_node</code>.
+      </li>
+      <li>
+        For the <code>self.start_node</code> the reference to the previous node
+        will be set to the newly inserted node.
+      </li>
+      <li>
+        Finally, the <code>self.start_node</code> will become the newly inserted
+        node.
+      </li>
+    </ol>
+    <p>
+      The following script inserts an item at the start of the doubly linked
+      list:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="kw">def</span> insert_at_start(<span class="va">self</span>, data):</a>
 <a class="sourceLine" id="cb4-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb4-3" title="3">            new_node <span class="op">=</span> Node(data)</a>
 <a class="sourceLine" id="cb4-4" title="4">            <span class="va">self</span>.start_node <span class="op">=</span> new_node</a>
@@ -134,12 +369,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-7" title="7">        new_node <span class="op">=</span> Node(data)</a>
 <a class="sourceLine" id="cb4-8" title="8">        new_node.nref <span class="op">=</span> <span class="va">self</span>.start_node</a>
 <a class="sourceLine" id="cb4-9" title="9">        <span class="va">self</span>.start_node.pref <span class="op">=</span> new_node</a>
-<a class="sourceLine" id="cb4-10" title="10">        <span class="va">self</span>.start_node <span class="op">=</span> new_node</a></code></pre></div>
-<p>Add the <code>insert_at_start()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Inserting Items at the End</strong></p>
-<p>Inserting an element at the end of the doubly linked list is somewhat similar to inserting an element at the start. At first, we need to check if the list is empty. If the list is empty then we can simply use the <code>insert_in_emptylist()</code> method to insert the element. If the list already contains some element, we traverse through the list until the reference to the next node becomes <code>None</code>. When the next node reference becomes <code>None</code> it means that the current node is the last node.</p>
-<p>The previous reference for the new node is set to the last node, and the next reference for the last node is set to the newly inserted node. The script for inserting an item at the last node is as follows:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="kw">def</span> insert_at_end(<span class="va">self</span>, data):</a>
+<a class="sourceLine" id="cb4-10" title="10">        <span class="va">self</span>.start_node <span class="op">=</span> new_node</a></code></pre>
+    </div>
+    <p>
+      Add the <code>insert_at_start()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Inserting Items at the End</strong></p>
+    <p>
+      Inserting an element at the end of the doubly linked list is somewhat
+      similar to inserting an element at the start. At first, we need to check
+      if the list is empty. If the list is empty then we can simply use the
+      <code>insert_in_emptylist()</code> method to insert the element. If the
+      list already contains some element, we traverse through the list until the
+      reference to the next node becomes <code>None</code>. When the next node
+      reference becomes <code>None</code> it means that the current node is the
+      last node.
+    </p>
+    <p>
+      The previous reference for the new node is set to the last node, and the
+      next reference for the last node is set to the newly inserted node. The
+      script for inserting an item at the last node is as follows:
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="kw">def</span> insert_at_end(<span class="va">self</span>, data):</a>
 <a class="sourceLine" id="cb5-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb5-3" title="3">            new_node <span class="op">=</span> Node(data)</a>
 <a class="sourceLine" id="cb5-4" title="4">            <span class="va">self</span>.start_node <span class="op">=</span> new_node</a>
@@ -149,19 +404,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-8" title="8">            n <span class="op">=</span> n.nref</a>
 <a class="sourceLine" id="cb5-9" title="9">        new_node <span class="op">=</span> Node(data)</a>
 <a class="sourceLine" id="cb5-10" title="10">        n.nref <span class="op">=</span> new_node</a>
-<a class="sourceLine" id="cb5-11" title="11">        new_node.pref <span class="op">=</span> n</a></code></pre></div>
-<p>Add the <code>insert_at_end()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Inserting Item after another Item</strong></p>
-<p>To insert an item after another item, we first check whether or not the list is empty. If the list is actually empty, we simply display the message that the “list is empty”.</p>
-<p>Otherwise we iterate through all the nodes in the doubly linked list. In case if the node after which we want to insert the new node is not found, we display the message to the user that the item is not found. Else if the node is found, it is selected and we perform four operations:</p>
-<ol type="1">
-<li>Set the previous reference of the newly inserted node to the selected node.</li>
-<li>Set the next reference of the newly inserted node to the next reference of the selected.</li>
-<li>If the selected node is not the last node, set the previous reference of the next node after the selected node to the newly added node.</li>
-<li>Finally, set the next reference of the selected node to the newly inserted node.</li>
-</ol>
-<p>The script for inserting item after another item is as follows:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">    <span class="kw">def</span> insert_after_item(<span class="va">self</span>, x, data):</a>
+<a class="sourceLine" id="cb5-11" title="11">        new_node.pref <span class="op">=</span> n</a></code></pre>
+    </div>
+    <p>
+      Add the <code>insert_at_end()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Inserting Item after another Item</strong></p>
+    <p>
+      To insert an item after another item, we first check whether or not the
+      list is empty. If the list is actually empty, we simply display the
+      message that the “list is empty”.
+    </p>
+    <p>
+      Otherwise we iterate through all the nodes in the doubly linked list. In
+      case if the node after which we want to insert the new node is not found,
+      we display the message to the user that the item is not found. Else if the
+      node is found, it is selected and we perform four operations:
+    </p>
+    <ol type="1">
+      <li>
+        Set the previous reference of the newly inserted node to the selected
+        node.
+      </li>
+      <li>
+        Set the next reference of the newly inserted node to the next reference
+        of the selected.
+      </li>
+      <li>
+        If the selected node is not the last node, set the previous reference of
+        the next node after the selected node to the newly added node.
+      </li>
+      <li>
+        Finally, set the next reference of the selected node to the newly
+        inserted node.
+      </li>
+    </ol>
+    <p>The script for inserting item after another item is as follows:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">    <span class="kw">def</span> insert_after_item(<span class="va">self</span>, x, data):</a>
 <a class="sourceLine" id="cb6-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb6-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;List is empty&quot;</span>)</a>
 <a class="sourceLine" id="cb6-4" title="4">            <span class="cf">return</span></a>
@@ -179,19 +462,49 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-16" title="16">                new_node.nref <span class="op">=</span> n.nref</a>
 <a class="sourceLine" id="cb6-17" title="17">                <span class="cf">if</span> n.nref <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb6-18" title="18">                    n.nref.prev <span class="op">=</span> new_node</a>
-<a class="sourceLine" id="cb6-19" title="19">                n.nref <span class="op">=</span> new_node</a></code></pre></div>
-<p>Add the <code>insert_after_item()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Inserting Item before another Item</strong></p>
-<p>To insert an item before another item, we first check whether or not the list is empty. If the list is actually empty, we simply display the message that the “list is empty”.</p>
-<p>Otherwise we iterate through all the nodes in the doubly linked list. In case if the node before which we want to insert the new node is not found, we display the message to the user that the item is not found. Else if the node is found, it is selected and we perform four operations:</p>
-<ol type="1">
-<li>Set the next reference of the newly inserted node to the selected node.</li>
-<li>Set the previous reference of the newly inserted node to the previous reference of the selected.</li>
-<li>Set the next reference of the node previous to the selected node, to the newly added node.</li>
-<li>Finally, set the previous reference of the selected node to the newly inserted node.</li>
-</ol>
-<p>The script for adding item before another item in a doubly linked list is as follows:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">def</span> insert_before_item(<span class="va">self</span>, x, data):</a>
+<a class="sourceLine" id="cb6-19" title="19">                n.nref <span class="op">=</span> new_node</a></code></pre>
+    </div>
+    <p>
+      Add the <code>insert_after_item()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Inserting Item before another Item</strong></p>
+    <p>
+      To insert an item before another item, we first check whether or not the
+      list is empty. If the list is actually empty, we simply display the
+      message that the “list is empty”.
+    </p>
+    <p>
+      Otherwise we iterate through all the nodes in the doubly linked list. In
+      case if the node before which we want to insert the new node is not found,
+      we display the message to the user that the item is not found. Else if the
+      node is found, it is selected and we perform four operations:
+    </p>
+    <ol type="1">
+      <li>
+        Set the next reference of the newly inserted node to the selected node.
+      </li>
+      <li>
+        Set the previous reference of the newly inserted node to the previous
+        reference of the selected.
+      </li>
+      <li>
+        Set the next reference of the node previous to the selected node, to the
+        newly added node.
+      </li>
+      <li>
+        Finally, set the previous reference of the selected node to the newly
+        inserted node.
+      </li>
+    </ol>
+    <p>
+      The script for adding item before another item in a doubly linked list is
+      as follows:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">def</span> insert_before_item(<span class="va">self</span>, x, data):</a>
 <a class="sourceLine" id="cb7-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb7-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;List is empty&quot;</span>)</a>
 <a class="sourceLine" id="cb7-4" title="4">            <span class="cf">return</span></a>
@@ -209,11 +522,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb7-16" title="16">                new_node.pref <span class="op">=</span> n.pref</a>
 <a class="sourceLine" id="cb7-17" title="17">                <span class="cf">if</span> n.pref <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb7-18" title="18">                    n.pref.nref <span class="op">=</span> new_node</a>
-<a class="sourceLine" id="cb7-19" title="19">                n.pref <span class="op">=</span> new_node</a></code></pre></div>
-<p>Add the <code>insert_before_item()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Traversing a Doubly Linked List</strong></p>
-<p>Traversing a doubly linked list is very similar to traversing a single linked list. The script is as follows:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">    <span class="kw">def</span> traverse_list(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb7-19" title="19">                n.pref <span class="op">=</span> new_node</a></code></pre>
+    </div>
+    <p>
+      Add the <code>insert_before_item()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Traversing a Doubly Linked List</strong></p>
+    <p>
+      Traversing a doubly linked list is very similar to traversing a single
+      linked list. The script is as follows:
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">    <span class="kw">def</span> traverse_list(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb8-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb8-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;List has no element&quot;</span>)</a>
 <a class="sourceLine" id="cb8-4" title="4">            <span class="cf">return</span></a>
@@ -221,13 +544,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-6" title="6">            n <span class="op">=</span> <span class="va">self</span>.start_node</a>
 <a class="sourceLine" id="cb8-7" title="7">            <span class="cf">while</span> n <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb8-8" title="8">                <span class="bu">print</span>(n.item , <span class="st">&quot; &quot;</span>)</a>
-<a class="sourceLine" id="cb8-9" title="9">                n <span class="op">=</span> n.nref</a></code></pre></div>
-<p>Add the <code>traverse_list()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Deleting Elements from Doubly Linked List</strong></p>
-<p>Like insertion, there can be multiple ways to delete elements from a doubly linked list. In this section, we will review some of them.</p>
-<p><strong>Deleting Elements from the Start</strong></p>
-<p>The easiest way to delete an element from a doubly linked list is from the start. To do so, all you have to do is set the value of the start node to the next node and then set the previous reference of the start node to <code>None</code>. However before we do that we need to perform two checks. First, we need to see if the list is empty. And then we have to see if the list contains only one element or not. If the list contains only one element then we can simply set the start node to <code>None</code>. The following script can be used to delete elements from the start of the doubly linked list.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">   <span class="kw">def</span> delete_at_start(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb8-9" title="9">                n <span class="op">=</span> n.nref</a></code></pre>
+    </div>
+    <p>
+      Add the <code>traverse_list()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Deleting Elements from Doubly Linked List</strong></p>
+    <p>
+      Like insertion, there can be multiple ways to delete elements from a
+      doubly linked list. In this section, we will review some of them.
+    </p>
+    <p><strong>Deleting Elements from the Start</strong></p>
+    <p>
+      The easiest way to delete an element from a doubly linked list is from the
+      start. To do so, all you have to do is set the value of the start node to
+      the next node and then set the previous reference of the start node to
+      <code>None</code>. However before we do that we need to perform two
+      checks. First, we need to see if the list is empty. And then we have to
+      see if the list contains only one element or not. If the list contains
+      only one element then we can simply set the start node to
+      <code>None</code>. The following script can be used to delete elements
+      from the start of the doubly linked list.
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">   <span class="kw">def</span> delete_at_start(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb9-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb9-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;The list has no element to delete&quot;</span>)</a>
 <a class="sourceLine" id="cb9-4" title="4">            <span class="cf">return</span></a>
@@ -235,11 +578,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb9-6" title="6">            <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb9-7" title="7">            <span class="cf">return</span></a>
 <a class="sourceLine" id="cb9-8" title="8">        <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">self</span>.start_node.nref</a>
-<a class="sourceLine" id="cb9-9" title="9">        <span class="va">self</span>.start_prev <span class="op">=</span> <span class="va">None</span><span class="op">;</span></a></code></pre></div>
-<p>Add the <code>delete_at_start()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Deleting Elements from the End</strong></p>
-<p>To delete the element from the end, we again check if the list is empty or if the list contains a single element. If the list contains a single element, all we have to do is to set the start node to <code>None</code>. If the list has more than one element, we iterate through the list until the last node is reached. Once we reach the last node, we set the next reference of the node previous to the last node, to <code>None</code> which actually removes the last node. The following script can be used to delete the element from the end.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">def</span> delete_at_end(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb9-9" title="9">        <span class="va">self</span>.start_prev <span class="op">=</span> <span class="va">None</span><span class="op">;</span></a></code></pre>
+    </div>
+    <p>
+      Add the <code>delete_at_start()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Deleting Elements from the End</strong></p>
+    <p>
+      To delete the element from the end, we again check if the list is empty or
+      if the list contains a single element. If the list contains a single
+      element, all we have to do is to set the start node to <code>None</code>.
+      If the list has more than one element, we iterate through the list until
+      the last node is reached. Once we reach the last node, we set the next
+      reference of the node previous to the last node, to
+      <code>None</code> which actually removes the last node. The following
+      script can be used to delete the element from the end.
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">def</span> delete_at_end(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb10-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb10-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;The list has no element to delete&quot;</span>)</a>
 <a class="sourceLine" id="cb10-4" title="4">            <span class="cf">return</span></a>
@@ -249,11 +608,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-8" title="8">        n <span class="op">=</span> <span class="va">self</span>.start_node</a>
 <a class="sourceLine" id="cb10-9" title="9">        <span class="cf">while</span> n.nref <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb10-10" title="10">            n <span class="op">=</span> n.nref</a>
-<a class="sourceLine" id="cb10-11" title="11">        n.pref.nref <span class="op">=</span> <span class="va">None</span></a></code></pre></div>
-<p>Add the <code>delete_at_end()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Deleting Elements by Value</strong></p>
-<p>Deleting an element by value is the trickiest of all the deletion functions in doubly linked lists since several cases have to be handled in order to remove an element by value. Let’s first see how the function looks like and then we will see the explanation of the individual piece of code.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">    <span class="kw">def</span> delete_element_by_value(<span class="va">self</span>, x):</a>
+<a class="sourceLine" id="cb10-11" title="11">        n.pref.nref <span class="op">=</span> <span class="va">None</span></a></code></pre>
+    </div>
+    <p>
+      Add the <code>delete_at_end()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Deleting Elements by Value</strong></p>
+    <p>
+      Deleting an element by value is the trickiest of all the deletion
+      functions in doubly linked lists since several cases have to be handled in
+      order to remove an element by value. Let’s first see how the function
+      looks like and then we will see the explanation of the individual piece of
+      code.
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">    <span class="kw">def</span> delete_element_by_value(<span class="va">self</span>, x):</a>
 <a class="sourceLine" id="cb11-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb11-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;The list has no element to delete&quot;</span>)</a>
 <a class="sourceLine" id="cb11-4" title="4">            <span class="cf">return</span></a>
@@ -281,32 +653,82 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb11-26" title="26">            <span class="cf">if</span> n.item <span class="op">==</span> x:</a>
 <a class="sourceLine" id="cb11-27" title="27">                n.pref.nref <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb11-28" title="28">            <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb11-29" title="29">                <span class="bu">print</span>(<span class="st">&quot;Element not found&quot;</span>)</a></code></pre></div>
-<p>In the above script we create <code>delete_element_by_value()</code> function that takes the node value as parameter and deletes that node. At the beginining of the function we check if the list is empty or not. If the list is empty we simply display the user that the list is empty.</p>
-<p>This logic is implemented in the following piece of code:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb11-29" title="29">                <span class="bu">print</span>(<span class="st">&quot;Element not found&quot;</span>)</a></code></pre>
+    </div>
+    <p>
+      In the above script we create
+      <code>delete_element_by_value()</code> function that takes the node value
+      as parameter and deletes that node. At the beginining of the function we
+      check if the list is empty or not. If the list is empty we simply display
+      the user that the list is empty.
+    </p>
+    <p>This logic is implemented in the following piece of code:</p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb12-2" title="2">            <span class="bu">print</span>(<span class="st">&quot;The list has no element to delete&quot;</span>)</a>
-<a class="sourceLine" id="cb12-3" title="3">            <span class="cf">return</span></a></code></pre></div>
-<p>Next, we check if the list has a single element and that element is actually the element we want to delete. If the only element is the one that we want to delete, we simply set the <code>self.start_node</code> to <code>None</code> which means that the list will now have no item. If there is only one item and that is not the item that we want to delete, we will simply display the message that item to be deleted is not found.</p>
-<p>The following piece of code implements this logic:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node.nref <span class="kw">is</span> <span class="va">None</span>:</a>
+<a class="sourceLine" id="cb12-3" title="3">            <span class="cf">return</span></a></code></pre>
+    </div>
+    <p>
+      Next, we check if the list has a single element and that element is
+      actually the element we want to delete. If the only element is the one
+      that we want to delete, we simply set the <code>self.start_node</code> to
+      <code>None</code> which means that the list will now have no item. If
+      there is only one item and that is not the item that we want to delete, we
+      will simply display the message that item to be deleted is not found.
+    </p>
+    <p>The following piece of code implements this logic:</p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node.nref <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb13-2" title="2">            <span class="cf">if</span> <span class="va">self</span>.start_node.item <span class="op">==</span> x:</a>
 <a class="sourceLine" id="cb13-3" title="3">                <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb13-4" title="4">            <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb13-5" title="5">                <span class="bu">print</span>(<span class="st">&quot;Item not found&quot;</span>)</a>
-<a class="sourceLine" id="cb13-6" title="6">            <span class="cf">return</span></a></code></pre></div>
-<p>Next, we handle the case where the list has more than one items but the item to be deleted is the first item. In that case we simply execute the logic that we wrote for the method <code>delete_at_start()</code>. The following piece of code deletes an element from the start in case of multiple items:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node.item <span class="op">==</span> x:</a>
+<a class="sourceLine" id="cb13-6" title="6">            <span class="cf">return</span></a></code></pre>
+    </div>
+    <p>
+      Next, we handle the case where the list has more than one items but the
+      item to be deleted is the first item. In that case we simply execute the
+      logic that we wrote for the method <code>delete_at_start()</code>. The
+      following piece of code deletes an element from the start in case of
+      multiple items:
+    </p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1">        <span class="cf">if</span> <span class="va">self</span>.start_node.item <span class="op">==</span> x:</a>
 <a class="sourceLine" id="cb14-2" title="2">            <span class="va">self</span>.start_node <span class="op">=</span> <span class="va">self</span>.start_node.nref</a>
 <a class="sourceLine" id="cb14-3" title="3">            <span class="va">self</span>.start_node.pref <span class="op">=</span> <span class="va">None</span></a>
-<a class="sourceLine" id="cb14-4" title="4">            <span class="cf">return</span></a></code></pre></div>
-<p>Finally, if the list contains multiple items and the item to be deleted is not the first item, we traverse all the elements in the list except the last one and see if any of the nodes has the value that matches the value be deleted. If the node is found, we perform the following two operations:</p>
-<ol type="1">
-<li>Set the value of the next reference of the previous node to the next reference of the node to be deleted.</li>
-<li>Set the previous value of the next node to the previous reference of the node to be deleted.</li>
-</ol>
-<p>Finally, if the node to be deleted is the last node, the next reference of the node previous to the last node is set to <code>None</code>. The following script implements this logic:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">        n <span class="op">=</span> <span class="va">self</span>.start_node</a>
+<a class="sourceLine" id="cb14-4" title="4">            <span class="cf">return</span></a></code></pre>
+    </div>
+    <p>
+      Finally, if the list contains multiple items and the item to be deleted is
+      not the first item, we traverse all the elements in the list except the
+      last one and see if any of the nodes has the value that matches the value
+      be deleted. If the node is found, we perform the following two operations:
+    </p>
+    <ol type="1">
+      <li>
+        Set the value of the next reference of the previous node to the next
+        reference of the node to be deleted.
+      </li>
+      <li>
+        Set the previous value of the next node to the previous reference of the
+        node to be deleted.
+      </li>
+    </ol>
+    <p>
+      Finally, if the node to be deleted is the last node, the next reference of
+      the node previous to the last node is set to <code>None</code>. The
+      following script implements this logic:
+    </p>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1">        n <span class="op">=</span> <span class="va">self</span>.start_node</a>
 <a class="sourceLine" id="cb15-2" title="2">        <span class="cf">while</span> n.nref <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb15-3" title="3">            <span class="cf">if</span> n.item <span class="op">==</span> x:</a>
 <a class="sourceLine" id="cb15-4" title="4">                <span class="cf">break</span><span class="op">;</span></a>
@@ -318,17 +740,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb15-10" title="10">            <span class="cf">if</span> n.item <span class="op">==</span> x:</a>
 <a class="sourceLine" id="cb15-11" title="11">                n.pref.nref <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb15-12" title="12">            <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb15-13" title="13">                <span class="bu">print</span>(<span class="st">&quot;Element not found&quot;</span>)</a></code></pre></div>
-<p>Add the <code>delete_element_by_value()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Reversing a Doubly Linked List</strong></p>
-<p>To reverse a doubly linked list, you basically have to perform the following operations:</p>
-<ol type="1">
-<li>The next reference of the start node should be set none because the first node will become the last node in the reversed list.</li>
-<li>The previous reference of the last node should be set to <code>None</code> since the last node will become the previous node.</li>
-<li>The next references of the nodes (except the first and last node) in the original list should be swapped with the previous references.</li>
-</ol>
-<p>The script for reversing a doubly linked list is as follows:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">    <span class="kw">def</span> reverse_linked_list(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb15-13" title="13">                <span class="bu">print</span>(<span class="st">&quot;Element not found&quot;</span>)</a></code></pre>
+    </div>
+    <p>
+      Add the <code>delete_element_by_value()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Reversing a Doubly Linked List</strong></p>
+    <p>
+      To reverse a doubly linked list, you basically have to perform the
+      following operations:
+    </p>
+    <ol type="1">
+      <li>
+        The next reference of the start node should be set none because the
+        first node will become the last node in the reversed list.
+      </li>
+      <li>
+        The previous reference of the last node should be set to
+        <code>None</code> since the last node will become the previous node.
+      </li>
+      <li>
+        The next references of the nodes (except the first and last node) in the
+        original list should be swapped with the previous references.
+      </li>
+    </ol>
+    <p>The script for reversing a doubly linked list is as follows:</p>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1">    <span class="kw">def</span> reverse_linked_list(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb16-2" title="2">        <span class="cf">if</span> <span class="va">self</span>.start_node <span class="kw">is</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb16-3" title="3">            <span class="bu">print</span>(<span class="st">&quot;The list has no element to delete&quot;</span>)</a>
 <a class="sourceLine" id="cb16-4" title="4">            <span class="cf">return</span></a>
@@ -341,55 +782,128 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb16-11" title="11">            q.nref <span class="op">=</span> p</a>
 <a class="sourceLine" id="cb16-12" title="12">            p <span class="op">=</span> q</a>
 <a class="sourceLine" id="cb16-13" title="13">            q <span class="op">=</span> q.pref</a>
-<a class="sourceLine" id="cb16-14" title="14">        <span class="va">self</span>.start_node <span class="op">=</span> p</a></code></pre></div>
-<p>Add the <code>reverse_linked_list()</code> method to the <code>DoublyLinkedList</code> class that you created earlier.</p>
-<p><strong>Testing Doubly Linked List Functions</strong></p>
-<p>In this section, we will test the doubly linked functions that we created in the previous sections.</p>
-<p>Let’s first create the object of the <code>DoublyLinkedList</code> class. Execute the following script:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">new_linked_list <span class="op">=</span> DoublyLinkedList()</a></code></pre></div>
-<p><strong>Testing Insertion Functions</strong></p>
-<p>Let’s test the insertion functions first. We’ll first add elements in the empty list. Execute the following script:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">new_linked_list.insert_in_emptylist(<span class="dv">50</span>)</a></code></pre></div>
-<p>Now if you traverse the list, you should see 50 as the only element in the list as shown below:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">new_linked_list.traverse_list()</a></code></pre></div>
-<p>Output:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="dv">50</span></a></code></pre></div>
-<p>Now let’s add a few elements at the start. Execute the following script:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">new_linked_list.insert_at_start(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb16-14" title="14">        <span class="va">self</span>.start_node <span class="op">=</span> p</a></code></pre>
+    </div>
+    <p>
+      Add the <code>reverse_linked_list()</code> method to the
+      <code>DoublyLinkedList</code> class that you created earlier.
+    </p>
+    <p><strong>Testing Doubly Linked List Functions</strong></p>
+    <p>
+      In this section, we will test the doubly linked functions that we created
+      in the previous sections.
+    </p>
+    <p>
+      Let’s first create the object of the <code>DoublyLinkedList</code> class.
+      Execute the following script:
+    </p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">new_linked_list <span class="op">=</span> DoublyLinkedList()</a></code></pre>
+    </div>
+    <p><strong>Testing Insertion Functions</strong></p>
+    <p>
+      Let’s test the insertion functions first. We’ll first add elements in the
+      empty list. Execute the following script:
+    </p>
+    <div class="sourceCode" id="cb18">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">new_linked_list.insert_in_emptylist(<span class="dv">50</span>)</a></code></pre>
+    </div>
+    <p>
+      Now if you traverse the list, you should see 50 as the only element in the
+      list as shown below:
+    </p>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">new_linked_list.traverse_list()</a></code></pre>
+    </div>
+    <p>Output:</p>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="dv">50</span></a></code></pre>
+    </div>
+    <p>
+      Now let’s add a few elements at the start. Execute the following script:
+    </p>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1">new_linked_list.insert_at_start(<span class="dv">10</span>)</a>
 <a class="sourceLine" id="cb21-2" title="2">new_linked_list.insert_at_start(<span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb21-3" title="3">new_linked_list.insert_at_start(<span class="dv">18</span>)</a></code></pre></div>
-<p>Now if you traverse the list, you should see the following elements in the list:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="dv">18</span></a>
+<a class="sourceLine" id="cb21-3" title="3">new_linked_list.insert_at_start(<span class="dv">18</span>)</a></code></pre>
+    </div>
+    <p>
+      Now if you traverse the list, you should see the following elements in the
+      list:
+    </p>
+    <div class="sourceCode" id="cb22">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="dv">18</span></a>
 <a class="sourceLine" id="cb22-2" title="2"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb22-3" title="3"><span class="dv">10</span></a>
-<a class="sourceLine" id="cb22-4" title="4"><span class="dv">50</span></a></code></pre></div>
-<p>To add the elements at the end, execute the following script:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">new_linked_list.insert_at_end(<span class="dv">29</span>)</a>
+<a class="sourceLine" id="cb22-4" title="4"><span class="dv">50</span></a></code></pre>
+    </div>
+    <p>To add the elements at the end, execute the following script:</p>
+    <div class="sourceCode" id="cb23">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1">new_linked_list.insert_at_end(<span class="dv">29</span>)</a>
 <a class="sourceLine" id="cb23-2" title="2">new_linked_list.insert_at_end(<span class="dv">39</span>)</a>
-<a class="sourceLine" id="cb23-3" title="3">new_linked_list.insert_at_end(<span class="dv">49</span>)</a></code></pre></div>
-<p>Now if you traverse the doubly linked list, you should see the following elements:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="dv">18</span></a>
+<a class="sourceLine" id="cb23-3" title="3">new_linked_list.insert_at_end(<span class="dv">49</span>)</a></code></pre>
+    </div>
+    <p>
+      Now if you traverse the doubly linked list, you should see the following
+      elements:
+    </p>
+    <div class="sourceCode" id="cb24">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="dv">18</span></a>
 <a class="sourceLine" id="cb24-2" title="2"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb24-3" title="3"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb24-4" title="4"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb24-5" title="5"><span class="dv">29</span></a>
 <a class="sourceLine" id="cb24-6" title="6"><span class="dv">39</span></a>
-<a class="sourceLine" id="cb24-7" title="7"><span class="dv">49</span></a></code></pre></div>
-<p>Let’s insert an element after 50.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1">new_linked_list.insert_after_item(<span class="dv">50</span>, <span class="dv">65</span>)</a></code></pre></div>
-<p>Now the list should look like this:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="dv">18</span></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="dv">49</span></a></code></pre>
+    </div>
+    <p>Let’s insert an element after 50.</p>
+    <div class="sourceCode" id="cb25">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1">new_linked_list.insert_after_item(<span class="dv">50</span>, <span class="dv">65</span>)</a></code></pre>
+    </div>
+    <p>Now the list should look like this:</p>
+    <div class="sourceCode" id="cb26">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="dv">18</span></a>
 <a class="sourceLine" id="cb26-2" title="2"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb26-3" title="3"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb26-4" title="4"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb26-5" title="5"><span class="dv">65</span></a>
 <a class="sourceLine" id="cb26-6" title="6"><span class="dv">29</span></a>
 <a class="sourceLine" id="cb26-7" title="7"><span class="dv">39</span></a>
-<a class="sourceLine" id="cb26-8" title="8"><span class="dv">49</span></a></code></pre></div>
-<p>Finally, let’s add an element before item 29.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1">new_linked_list.insert_before_item(<span class="dv">29</span>, <span class="dv">100</span>)</a></code></pre></div>
-<p>The list at this point of time, should contain the following elements:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="dv">18</span></a>
+<a class="sourceLine" id="cb26-8" title="8"><span class="dv">49</span></a></code></pre>
+    </div>
+    <p>Finally, let’s add an element before item 29.</p>
+    <div class="sourceCode" id="cb27">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1">new_linked_list.insert_before_item(<span class="dv">29</span>, <span class="dv">100</span>)</a></code></pre>
+    </div>
+    <p>
+      The list at this point of time, should contain the following elements:
+    </p>
+    <div class="sourceCode" id="cb28">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="dv">18</span></a>
 <a class="sourceLine" id="cb28-2" title="2"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb28-3" title="3"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb28-4" title="4"><span class="dv">50</span></a>
@@ -397,46 +911,103 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb28-6" title="6"><span class="dv">100</span></a>
 <a class="sourceLine" id="cb28-7" title="7"><span class="dv">29</span></a>
 <a class="sourceLine" id="cb28-8" title="8"><span class="dv">39</span></a>
-<a class="sourceLine" id="cb28-9" title="9"><span class="dv">49</span></a></code></pre></div>
-<p><strong>Testing Deletion Functions</strong></p>
-<p>Let’s now test the deletion functions on the items that we inserted in the last sections. Let’s first delete an element from the start.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1">new_linked_list.delete_at_start()</a></code></pre></div>
-<p>Item 18 will be removed and the list will now look like this:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="dv">5</span></a>
+<a class="sourceLine" id="cb28-9" title="9"><span class="dv">49</span></a></code></pre>
+    </div>
+    <p><strong>Testing Deletion Functions</strong></p>
+    <p>
+      Let’s now test the deletion functions on the items that we inserted in the
+      last sections. Let’s first delete an element from the start.
+    </p>
+    <div class="sourceCode" id="cb29">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1">new_linked_list.delete_at_start()</a></code></pre>
+    </div>
+    <p>Item 18 will be removed and the list will now look like this:</p>
+    <div class="sourceCode" id="cb30">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb30-2" title="2"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb30-3" title="3"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb30-4" title="4"><span class="dv">65</span></a>
 <a class="sourceLine" id="cb30-5" title="5"><span class="dv">100</span></a>
 <a class="sourceLine" id="cb30-6" title="6"><span class="dv">29</span></a>
 <a class="sourceLine" id="cb30-7" title="7"><span class="dv">39</span></a>
-<a class="sourceLine" id="cb30-8" title="8"><span class="dv">49</span></a></code></pre></div>
-<p>Similarly, the following script deletes the element from the end of the doubly linked list:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1">new_linked_list.delete_at_end()</a></code></pre></div>
-<p>Traversing the list now will return the following items:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="dv">5</span></a>
+<a class="sourceLine" id="cb30-8" title="8"><span class="dv">49</span></a></code></pre>
+    </div>
+    <p>
+      Similarly, the following script deletes the element from the end of the
+      doubly linked list:
+    </p>
+    <div class="sourceCode" id="cb31">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1">new_linked_list.delete_at_end()</a></code></pre>
+    </div>
+    <p>Traversing the list now will return the following items:</p>
+    <div class="sourceCode" id="cb32">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="dv">5</span></a>
 <a class="sourceLine" id="cb32-2" title="2"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb32-3" title="3"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb32-4" title="4"><span class="dv">65</span></a>
 <a class="sourceLine" id="cb32-5" title="5"><span class="dv">100</span></a>
 <a class="sourceLine" id="cb32-6" title="6"><span class="dv">29</span></a>
-<a class="sourceLine" id="cb32-7" title="7"><span class="dv">39</span></a></code></pre></div>
-<p>Finally, you can also delete the elements by value using the <code>delete_element_by_value()</code> function as shown below:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1">new_linked_list.delete_element_by_value(<span class="dv">65</span>)</a></code></pre></div>
-<p>If you traverse the list now, you will see that item 65 will be deleted from the list.</p>
-<p><strong>Testing Reverse Function</strong></p>
-<p>Finally, let’s reverse the list using the <code>reverse_linked_list()</code> function. Execute the following script:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1">new_linked_list.reverse_linked_list()</a></code></pre></div>
-<p>Now if you traverse the list, you will see the reversed linked list:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="dv">39</span></a>
+<a class="sourceLine" id="cb32-7" title="7"><span class="dv">39</span></a></code></pre>
+    </div>
+    <p>
+      Finally, you can also delete the elements by value using the
+      <code>delete_element_by_value()</code> function as shown below:
+    </p>
+    <div class="sourceCode" id="cb33">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1">new_linked_list.delete_element_by_value(<span class="dv">65</span>)</a></code></pre>
+    </div>
+    <p>
+      If you traverse the list now, you will see that item 65 will be deleted
+      from the list.
+    </p>
+    <p><strong>Testing Reverse Function</strong></p>
+    <p>
+      Finally, let’s reverse the list using the
+      <code>reverse_linked_list()</code> function. Execute the following script:
+    </p>
+    <div class="sourceCode" id="cb34">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1">new_linked_list.reverse_linked_list()</a></code></pre>
+    </div>
+    <p>Now if you traverse the list, you will see the reversed linked list:</p>
+    <div class="sourceCode" id="cb35">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="dv">39</span></a>
 <a class="sourceLine" id="cb35-2" title="2"><span class="dv">29</span></a>
 <a class="sourceLine" id="cb35-3" title="3"><span class="dv">100</span></a>
 <a class="sourceLine" id="cb35-4" title="4"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb35-5" title="5"><span class="dv">10</span></a>
-<a class="sourceLine" id="cb35-6" title="6"><span class="dv">5</span></a></code></pre></div>
-<h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
-<p>The doubly linked list is extremely useful specifically when you have to perform lots of inserts and delete operations. The links to the previous and next nodes make it very easy to insert and delete new elements without keeping track of the previous and next nodes.</p>
-<p>In this article, we saw how doubly linked list can be implemented with Python. We also saw different ways to perform insert and delete operations on doubly linked list. Finally we studied how to reverse a doubly linked list.</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="co"># Each ListNode holds a reference to its previous node</span></a>
+<a class="sourceLine" id="cb35-6" title="6"><span class="dv">5</span></a></code></pre>
+    </div>
+    <h4 id="conclusion">Conclusion <a id="conclusion"></a></h4>
+    <p>
+      The doubly linked list is extremely useful specifically when you have to
+      perform lots of inserts and delete operations. The links to the previous
+      and next nodes make it very easy to insert and delete new elements without
+      keeping track of the previous and next nodes.
+    </p>
+    <p>
+      In this article, we saw how doubly linked list can be implemented with
+      Python. We also saw different ways to perform insert and delete operations
+      on doubly linked list. Finally we studied how to reverse a doubly linked
+      list.
+    </p>
+    <div class="sourceCode" id="cb36">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="co"># Each ListNode holds a reference to its previous node</span></a>
 <a class="sourceLine" id="cb36-2" title="2"><span class="co"># as well as its next node in the List.</span></a>
 <a class="sourceLine" id="cb36-3" title="3"></a>
 <a class="sourceLine" id="cb36-4" title="4"></a>
@@ -630,6 +1201,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb36-192" title="192">ll.add_to_tail(<span class="dv">13</span>)  <span class="co"># should be 5,2,9,11,13</span></a>
 <a class="sourceLine" id="cb36-193" title="193">ll.remove_from_tail()  <span class="co"># should be 5,2,9,11</span></a>
 <a class="sourceLine" id="cb36-194" title="194">ll.get_max()  <span class="co"># should return 11</span></a>
-<a class="sourceLine" id="cb36-195" title="195"><span class="bu">print</span>(<span class="ss">f&quot;ll: </span><span class="sc">{ll}</span><span class="ss">&quot;</span>)  <span class="co"># return length 4, head: 5, tail: 11</span></a></code></pre></div>
-</body>
+<a class="sourceLine" id="cb36-195" title="195"><span class="bu">print</span>(<span class="ss">f&quot;ll: </span><span class="sc">{ll}</span><span class="ss">&quot;</span>)  <span class="co"># return length 4, head: 5, tail: 11</span></a></code></pre>
+    </div>
+  </body>
 </html>

@@ -1,5 +1,4 @@
-Sorting
-=======
+# Sorting
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/python-sorting">@bgoonz/python-sorting</span>\#main.py” %}
 
@@ -381,8 +380,7 @@ Sorting
 
 {% endtab %} {% endtabs %}
 
-JavaScript:
------------
+## JavaScript:
 
 {% tabs %} {% tab title=“Bubble” %}
 
@@ -671,11 +669,9 @@ JavaScript:
         quicksort(arr, 0, len(arr) - 1)
         #  >>> [1, 2, 3, 5, 7, 8]
 
-Bubble Sort
------------
+## Bubble Sort
 
-Script Name
------------
+## Script Name
 
 Bubble Sort Algorithm.
 
@@ -689,13 +685,13 @@ To get a understanding about Bubble sort.
 
 ### Short description of package/script
 
--   It is a python program of Bubble sort Algorithm.
--   It is written in a way that it takes user input.
+- It is a python program of Bubble sort Algorithm.
+- It is written in a way that it takes user input.
 
 ### Workflow of the Project
 
--   First a function is written to perform Bubble sort.
--   Then outside the function user input is taken.
+- First a function is written to perform Bubble sort.
+- Then outside the function user input is taken.
 
 ### Detailed explanation of script, if needed
 
@@ -848,18 +844,17 @@ Insertion Sort
     <img width = 221 height = 27 src="../Insertion Sort/Images/input.png">
     <img width = 385 height = 188 src="../Insertion Sort/Images/sort_output1.png">
 
-Divide and Conquer
-------------------
+## Divide and Conquer
 
 {% hint style=“info” %} When would we use recursive solutions? Tree traversals and quick sort are instances where recursion creates an elegant solution that wouldn’t be as possible iteratively. {% endhint %}
 
 Divide and conquer is when we take a problem, split it into the same type of sub-problem, and run the algorithm on those sub-problems.
 
-If we have an algorithm that runs on a list, we could break the list into smaller lists and run the algorithm on those smaller lists. We will *divide* the data into more manageable pieces.
+If we have an algorithm that runs on a list, we could break the list into smaller lists and run the algorithm on those smaller lists. We will _divide_ the data into more manageable pieces.
 
 We break down our algorithm problems into `base cases` – the smallest possible size of data we can run our algorithm upon to determine the basic way our algorithm should work.
 
-These solutions can give us better time complexity solutions; however, they wouldn’t work if a portion of the algorithm’s data is *dependent* upon the rest. If we broke the list into two halves, and one half is required to work on the other half, we could not use recursion.
+These solutions can give us better time complexity solutions; however, they wouldn’t work if a portion of the algorithm’s data is _dependent_ upon the rest. If we broke the list into two halves, and one half is required to work on the other half, we could not use recursion.
 
 Recursion requires independent sub-data.
 
@@ -902,8 +897,7 @@ When we use recursion, it uses a lot of memory, so each recursive calls allocate
 
 With Big O, we’re interested in the number of times we have to run an operation. `add_list` just runs basic addition, which is a single operation, and it is being called one time for every element in the list, so this is `O(n)`.
 
-Quick Sort
-----------
+## Quick Sort
 
 Quick sort is a great example use case of a recursive appropriate solution.
 
@@ -927,7 +921,7 @@ Our next step is to repeat this process until we hit our base case, which is an 
 
 The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O(n), and we have to make `log n` passes.
 
-It takes `O(log n)` steps to pass through, with each pass taking `O(n)`, so the *average* case is `O(n log n)`, the fastest search we can aim for.
+It takes `O(log n)` steps to pass through, with each pass taking `O(n)`, so the _average_ case is `O(n log n)`, the fastest search we can aim for.
 
 What would be a bad case for quick sort?
 
@@ -945,10 +939,9 @@ Quick sort shines when the first pivot chosen is roughly the median value of the
 
 We could use `quick select` to find the median at each step – but this slows down our algorithm to `O(n)` run time on average.
 
-If we choose a *random* pivot point, we generally do not pick the worst case pivot with each pass. Randomly selecting a pivot point results in the most time efficient average.
+If we choose a _random_ pivot point, we generally do not pick the worst case pivot with each pass. Randomly selecting a pivot point results in the most time efficient average.
 
-Implementing Quick Sort
------------------------
+## Implementing Quick Sort
 
 If we were to write out our quick sort algorithm in a basic way, it would look something like this:
 
@@ -1007,12 +1000,11 @@ So we can see that it handles all of our tests well.
 
 It’s important to analyze what you know about your incoming data before choosing a type of algorithm. If you know that your list is almost completely sorted, bubble sort would handle that the quickest. If the list is completely garbled, quick sort would be best.
 
-Even when we aren’t handling sort, we need to customize our algorithmic choices to the data anticipated, *especially* when dealing with large sets of data where time performance can have a huge impact.
+Even when we aren’t handling sort, we need to customize our algorithmic choices to the data anticipated, _especially_ when dealing with large sets of data where time performance can have a huge impact.
 
-In Place Sorting
-----------------
+## In Place Sorting
 
-The quick sort function we wrote is not an in-place solution. When we sort that list, we’re actually returning an entirely *new* list. It’s not returning the same list.
+The quick sort function we wrote is not an in-place solution. When we sort that list, we’re actually returning an entirely _new_ list. It’s not returning the same list.
 
 This isn’t time or space efficient because it takes time and data to copy lists over to newly allocated spots in memory. It would be more efficient to move items around within the original given list.
 
@@ -1022,7 +1014,7 @@ To do in-place sorting, we need to be able to pass into the function the bounds 
 
 We can give it a low index, and a high index, to indicate the start and stop points of the section of the list to work on.
 
-As we keep going, the low and high indices will change. Our base case should now change to where if the low and high are the *same*, then our list is sorted.
+As we keep going, the low and high indices will change. Our base case should now change to where if the low and high are the _same_, then our list is sorted.
 
 Let’s try it:
 
@@ -1055,7 +1047,7 @@ Let’s try it:
 
 We’re iterating through the list and checking if the item at `list[i]` is less than the item at `list[pivot_index]`. If it is, then we need to swap these items.
 
-That has to happen in two steps. First we swap i with an item one *beyond* the pivot index. Then we swap the pivot with the item after the pivot.
+That has to happen in two steps. First we swap i with an item one _beyond_ the pivot index. Then we swap the pivot with the item after the pivot.
 
 Then we update the pivot index to search for the next item to sort in the array.
 

@@ -1,5 +1,4 @@
-Lists
-=====
+# Lists
 
 List type is another sequence type defined by the list class of python. List allows you add, delete or process elements in very simple ways. List is very similar to arrays.
 

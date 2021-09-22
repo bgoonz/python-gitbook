@@ -1,8 +1,6 @@
-\# Social Graph
-===============
+# \# Social Graph
 
-Social Graph
-------------
+## Social Graph
 
 You have been assigned the task of building a new friend-based social network. In this network, users are able to view their own friends, friends of their friends, friends of their friends’ friends, and so on. People connected to you through any number of friendship connections are considered a part of your extended social network.
 
@@ -25,8 +23,8 @@ It will be easier to build your extended social network if you have users to tes
 
 Note that in the above example, the average number of friendships is exactly 2 but the actual number of friends per user ranges anywhere from 0 to 4.
 
--   Hint 1: To create N random friendships, you could create a list with all possible friendship combinations, shuffle the list, then grab the first N elements from the list. You will need to `import random` to get shuffle.
--   Hint 2: `addFriendship(1, 2)` is the same as `addFriendship(2, 1)`. You should avoid calling one after the other since it will do nothing but print a warning. You can avoid this by only creating friendships where user1 &lt; user2.
+- Hint 1: To create N random friendships, you could create a list with all possible friendship combinations, shuffle the list, then grab the first N elements from the list. You will need to `import random` to get shuffle.
+- Hint 2: `addFriendship(1, 2)` is the same as `addFriendship(2, 1)`. You should avoid calling one after the other since it will do nothing but print a warning. You can avoid this by only creating friendships where user1 &lt; user2.
 
 ### 2. Degrees of Separation
 
@@ -42,8 +40,8 @@ Now that you have a graph full of users and friendships, you can crawl through t
 
 Note that in this sample, Users 3, 4 and 9 are not in User 1’s extended social network.
 
--   Hint 1: What kind of graph search guarantees you a shortest path?
--   Hint 2: Instead of using a `set` to mark users as visited, you could use a `dictionary`. Similar to sets, checking if something is in a dictionary runs in O(1) time. If the visited user is the key, what would the value be?
+- Hint 1: What kind of graph search guarantees you a shortest path?
+- Hint 2: Instead of using a `set` to mark users as visited, you could use a `dictionary`. Similar to sets, checking if something is in a dictionary runs in O(1) time. If the visited user is the key, what would the value be?
 
 ### 3. Questions
 

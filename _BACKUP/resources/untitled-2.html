@@ -1,113 +1,324 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>untitled-2</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="inheritance">Inheritance</h1>
-<p><img src="https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png" /></p>
-<h2 id="inheritance-1">8. Inheritance</h2>
-<p>In this chapter we look at a larger example using object oriented programming and learn about the very useful OOP feature of <a href="http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29">inheritance</a>.</p>
-<h3 id="composition">8.1. Composition</h3>
-<p>By now, you have seen several examples of composition. One of the first examples was using a method invocation as part of an expression. Another example is the nested structure of statements; you can put an <code>if</code> statement within a <code>while</code> loop, within another <code>if</code> statement, and so on.</p>
-<p>Having seen this pattern, and having learned about lists and objects, you should not be surprised to learn that you can create lists of objects. You can also create objects that contain lists (as attributes); you can create lists that contain lists; you can create objects that contain objects; and so on.</p>
-<p>In this chapter we will look at some examples of these combinations, using <code>Card</code> objects as an example.</p>
-<h3 id="card-objects">8.2. <code>Card</code> objects</h3>
-<p>If you are not familiar with common playing cards, now would be a good time to get a deck, or else this chapter might not make much sense. There are fifty-two cards in a deck, each of which belongs to one of four suits and one of thirteen ranks. The suits are Spades, Hearts, Diamonds, and Clubs (in descending order in bridge). The ranks are Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King. Depending on the game that you are playing, the rank of Ace may be higher than King or lower than 2.</p>
-<p>If we want to define a new object to represent a playing card, it is obvious what the attributes should be: <code>rank</code> and <code>suit</code>. It is not as obvious what type the attributes should be. One possibility is to use strings containing words like <code>"Spade"</code> for suits and <code>"Queen"</code> for ranks. One problem with this implementation is that it would not be easy to compare cards to see which had a higher rank or suit.</p>
-<p>An alternative is to use integers to <strong>encode</strong> the ranks and suits. By encode, we do not mean what some people think, which is to encrypt or translate into a secret code. What a computer scientist means by encode is to define a mapping between a sequence of numbers and the items I want to represent. For example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">Spades   <span class="op">--&gt;</span>  <span class="dv">3</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>untitled-2</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="inheritance">Inheritance</h1>
+    <p>
+      <img
+        src="https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png"
+      />
+    </p>
+    <h2 id="inheritance-1">8. Inheritance</h2>
+    <p>
+      In this chapter we look at a larger example using object oriented
+      programming and learn about the very useful OOP feature of
+      <a
+        href="http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29"
+        >inheritance</a
+      >.
+    </p>
+    <h3 id="composition">8.1. Composition</h3>
+    <p>
+      By now, you have seen several examples of composition. One of the first
+      examples was using a method invocation as part of an expression. Another
+      example is the nested structure of statements; you can put an
+      <code>if</code> statement within a <code>while</code> loop, within another
+      <code>if</code> statement, and so on.
+    </p>
+    <p>
+      Having seen this pattern, and having learned about lists and objects, you
+      should not be surprised to learn that you can create lists of objects. You
+      can also create objects that contain lists (as attributes); you can create
+      lists that contain lists; you can create objects that contain objects; and
+      so on.
+    </p>
+    <p>
+      In this chapter we will look at some examples of these combinations, using
+      <code>Card</code> objects as an example.
+    </p>
+    <h3 id="card-objects">8.2. <code>Card</code> objects</h3>
+    <p>
+      If you are not familiar with common playing cards, now would be a good
+      time to get a deck, or else this chapter might not make much sense. There
+      are fifty-two cards in a deck, each of which belongs to one of four suits
+      and one of thirteen ranks. The suits are Spades, Hearts, Diamonds, and
+      Clubs (in descending order in bridge). The ranks are Ace, 2, 3, 4, 5, 6,
+      7, 8, 9, 10, Jack, Queen, and King. Depending on the game that you are
+      playing, the rank of Ace may be higher than King or lower than 2.
+    </p>
+    <p>
+      If we want to define a new object to represent a playing card, it is
+      obvious what the attributes should be: <code>rank</code> and
+      <code>suit</code>. It is not as obvious what type the attributes should
+      be. One possibility is to use strings containing words like
+      <code>"Spade"</code> for suits and <code>"Queen"</code> for ranks. One
+      problem with this implementation is that it would not be easy to compare
+      cards to see which had a higher rank or suit.
+    </p>
+    <p>
+      An alternative is to use integers to <strong>encode</strong> the ranks and
+      suits. By encode, we do not mean what some people think, which is to
+      encrypt or translate into a secret code. What a computer scientist means
+      by encode is to define a mapping between a sequence of numbers and the
+      items I want to represent. For example:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">Spades   <span class="op">--&gt;</span>  <span class="dv">3</span></a>
 <a class="sourceLine" id="cb1-2" title="2">Hearts   <span class="op">--&gt;</span>  <span class="dv">2</span></a>
 <a class="sourceLine" id="cb1-3" title="3">Diamonds <span class="op">--&gt;</span>  <span class="dv">1</span></a>
-<a class="sourceLine" id="cb1-4" title="4">Clubs    <span class="op">--&gt;</span>  <span class="dv">0</span></a></code></pre></div>
-<p>An obvious feature of this mapping is that the suits map to integers in order, so we can compare suits by comparing integers. The mapping for ranks is fairly obvious; each of the numerical ranks maps to the corresponding integer, and for face cards:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Jack   <span class="op">--&gt;</span>  <span class="dv">11</span></a>
+<a class="sourceLine" id="cb1-4" title="4">Clubs    <span class="op">--&gt;</span>  <span class="dv">0</span></a></code></pre>
+    </div>
+    <p>
+      An obvious feature of this mapping is that the suits map to integers in
+      order, so we can compare suits by comparing integers. The mapping for
+      ranks is fairly obvious; each of the numerical ranks maps to the
+      corresponding integer, and for face cards:
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Jack   <span class="op">--&gt;</span>  <span class="dv">11</span></a>
 <a class="sourceLine" id="cb2-2" title="2">Queen  <span class="op">--&gt;</span>  <span class="dv">12</span></a>
-<a class="sourceLine" id="cb2-3" title="3">King   <span class="op">--&gt;</span>  <span class="dv">13</span></a></code></pre></div>
-<p>The reason we are using mathematical notation for these mappings is that they are not part of the Python program. They are part of the program design, but they never appear explicitly in the code. The class definition for the <code>Card</code> type looks like this:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> Card:</a>
+<a class="sourceLine" id="cb2-3" title="3">King   <span class="op">--&gt;</span>  <span class="dv">13</span></a></code></pre>
+    </div>
+    <p>
+      The reason we are using mathematical notation for these mappings is that
+      they are not part of the Python program. They are part of the program
+      design, but they never appear explicitly in the code. The class definition
+      for the <code>Card</code> type looks like this:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> Card:</a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, suit<span class="op">=</span><span class="dv">0</span>, rank<span class="op">=</span><span class="dv">0</span>):</a>
 <a class="sourceLine" id="cb3-3" title="3">        <span class="va">self</span>.suit <span class="op">=</span> suit</a>
-<a class="sourceLine" id="cb3-4" title="4">        <span class="va">self</span>.rank <span class="op">=</span> rank</a></code></pre></div>
-<p>As usual, we provide an initialization method that takes an optional parameter for each attribute.</p>
-<p>To create an object that represents the 3 of Clubs, use this command:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">three_of_clubs <span class="op">=</span> Card(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre></div>
-<p>The first argument, <code>0</code>, represents the suit Clubs.</p>
-<h3 id="class-attributes-and-the-__str__-method">8.3. Class attributes and the <code>__str__</code> method</h3>
-<p>In order to print <code>Card</code> objects in a way that people can easily read, we want to map the integer codes onto words. A natural way to do that is with lists of strings. We assign these lists to <strong>class attributes</strong> at the top of the class definition:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Card:</a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="va">self</span>.rank <span class="op">=</span> rank</a></code></pre>
+    </div>
+    <p>
+      As usual, we provide an initialization method that takes an optional
+      parameter for each attribute.
+    </p>
+    <p>To create an object that represents the 3 of Clubs, use this command:</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">three_of_clubs <span class="op">=</span> Card(<span class="dv">0</span>, <span class="dv">3</span>)</a></code></pre>
+    </div>
+    <p>The first argument, <code>0</code>, represents the suit Clubs.</p>
+    <h3 id="class-attributes-and-the-__str__-method">
+      8.3. Class attributes and the <code>__str__</code> method
+    </h3>
+    <p>
+      In order to print <code>Card</code> objects in a way that people can
+      easily read, we want to map the integer codes onto words. A natural way to
+      do that is with lists of strings. We assign these lists to
+      <strong>class attributes</strong> at the top of the class definition:
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Card:</a>
 <a class="sourceLine" id="cb5-2" title="2">    SUITS <span class="op">=</span> (<span class="st">&#39;Clubs&#39;</span>, <span class="st">&#39;Diamonds&#39;</span>, <span class="st">&#39;Hearts&#39;</span>, <span class="st">&#39;Spades&#39;</span>)</a>
 <a class="sourceLine" id="cb5-3" title="3">    RANKS <span class="op">=</span> (<span class="st">&#39;narf&#39;</span>, <span class="st">&#39;Ace&#39;</span>, <span class="st">&#39;2&#39;</span>, <span class="st">&#39;3&#39;</span>, <span class="st">&#39;4&#39;</span>, <span class="st">&#39;5&#39;</span>, <span class="st">&#39;6&#39;</span>, <span class="st">&#39;7&#39;</span>,</a>
 <a class="sourceLine" id="cb5-4" title="4">             <span class="st">&#39;8&#39;</span>, <span class="st">&#39;9&#39;</span>, <span class="st">&#39;10&#39;</span>, <span class="st">&#39;Jack&#39;</span>, <span class="st">&#39;Queen&#39;</span>, <span class="st">&#39;King&#39;</span>]</a>
@@ -127,18 +338,71 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-18" title="18"></a>
 <a class="sourceLine" id="cb5-19" title="19"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</a>
 <a class="sourceLine" id="cb5-20" title="20">    <span class="im">import</span> doctest</a>
-<a class="sourceLine" id="cb5-21" title="21">    doctest.testmod()</a></code></pre></div>
-<p>Class attributes like <code>Card.SUITS</code> and <code>Card.RANKS</code> are defined outside of any method, and can be accessed from any of the methods in the class.</p>
-<p>Inside <code>__str__</code>, we can use <code>SUITS</code> and <code>RANKS</code> to map the numerical values of <code>suit</code> and <code>rank</code> to strings. For example, the expression <code>Card.SUITS[self.suit]</code> means use the attribute <code>suit</code> from the object <code>self</code> as an index into the class attribute named <code>SUITS</code>, and select the appropriate string.</p>
-<p>The reason for the <code>"narf"</code> in the first element in <code>ranks</code> is to act as a place keeper for the zero-eth element of the list, which will never be used. The only valid ranks are 1 to 13. This wasted item is not entirely necessary. We could have started at 0, as usual, but it is less confusing to encode 2 as 2, 3 as 3, and so on.</p>
-<p>We have a doctest in the <code>__str__</code> method to confirm that <code>Card(2, 11)</code> will display as “Queen of Hearts”.</p>
-<h3 id="comparing-cards">8.4. Comparing cards</h3>
-<p>For primitive types, there are conditional operators ( <code>&lt;</code>, <code>&gt;</code>, <code>==</code>, etc.) that compare values and determine when one is greater than, less than, or equal to another. For user-defined types, we can override the behavior of the built-in operators by providing a method named <code>__cmp__</code>. By convention, <code>__cmp__</code> takes two parameters, <code>self</code> and <code>other</code>, and returns 1 if the first object is greater, -1 if the second object is greater, and 0 if they are equal to each other.</p>
-<p>Some types are completely ordered, which means that you can compare any two elements and tell which is bigger. For example, the integers and the floating-point numbers are completely ordered. Some sets are unordered, which means that there is no meaningful way to say that one element is bigger than another. For example, the fruits are unordered, which is why you cannot compare apples and oranges.</p>
-<p>The set of playing cards is partially ordered, which means that sometimes you can compare cards and sometimes not. For example, you know that the 3 of Clubs is higher than the 2 of Clubs, and the 3 of Diamonds is higher than the 3 of Clubs. But which is better, the 3 of Clubs or the 2 of Diamonds? One has a higher rank, but the other has a higher suit.</p>
-<p>In order to make cards comparable, you have to decide which is more important, rank or suit. To be honest, the choice is arbitrary. For the sake of choosing, we will say that suit is more important, because a new deck of cards comes sorted with all the Clubs together, followed by all the Diamonds, and so on.</p>
-<p>With that decided, we can write <code>__cmp__</code>:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> <span class="fu">__cmp__</span>(<span class="va">self</span>, other):</a>
+<a class="sourceLine" id="cb5-21" title="21">    doctest.testmod()</a></code></pre>
+    </div>
+    <p>
+      Class attributes like <code>Card.SUITS</code> and
+      <code>Card.RANKS</code> are defined outside of any method, and can be
+      accessed from any of the methods in the class.
+    </p>
+    <p>
+      Inside <code>__str__</code>, we can use <code>SUITS</code> and
+      <code>RANKS</code> to map the numerical values of <code>suit</code> and
+      <code>rank</code> to strings. For example, the expression
+      <code>Card.SUITS[self.suit]</code> means use the attribute
+      <code>suit</code> from the object <code>self</code> as an index into the
+      class attribute named <code>SUITS</code>, and select the appropriate
+      string.
+    </p>
+    <p>
+      The reason for the <code>"narf"</code> in the first element in
+      <code>ranks</code> is to act as a place keeper for the zero-eth element of
+      the list, which will never be used. The only valid ranks are 1 to 13. This
+      wasted item is not entirely necessary. We could have started at 0, as
+      usual, but it is less confusing to encode 2 as 2, 3 as 3, and so on.
+    </p>
+    <p>
+      We have a doctest in the <code>__str__</code> method to confirm that
+      <code>Card(2, 11)</code> will display as “Queen of Hearts”.
+    </p>
+    <h3 id="comparing-cards">8.4. Comparing cards</h3>
+    <p>
+      For primitive types, there are conditional operators ( <code>&lt;</code>,
+      <code>&gt;</code>, <code>==</code>, etc.) that compare values and
+      determine when one is greater than, less than, or equal to another. For
+      user-defined types, we can override the behavior of the built-in operators
+      by providing a method named <code>__cmp__</code>. By convention,
+      <code>__cmp__</code> takes two parameters, <code>self</code> and
+      <code>other</code>, and returns 1 if the first object is greater, -1 if
+      the second object is greater, and 0 if they are equal to each other.
+    </p>
+    <p>
+      Some types are completely ordered, which means that you can compare any
+      two elements and tell which is bigger. For example, the integers and the
+      floating-point numbers are completely ordered. Some sets are unordered,
+      which means that there is no meaningful way to say that one element is
+      bigger than another. For example, the fruits are unordered, which is why
+      you cannot compare apples and oranges.
+    </p>
+    <p>
+      The set of playing cards is partially ordered, which means that sometimes
+      you can compare cards and sometimes not. For example, you know that the 3
+      of Clubs is higher than the 2 of Clubs, and the 3 of Diamonds is higher
+      than the 3 of Clubs. But which is better, the 3 of Clubs or the 2 of
+      Diamonds? One has a higher rank, but the other has a higher suit.
+    </p>
+    <p>
+      In order to make cards comparable, you have to decide which is more
+      important, rank or suit. To be honest, the choice is arbitrary. For the
+      sake of choosing, we will say that suit is more important, because a new
+      deck of cards comes sorted with all the Clubs together, followed by all
+      the Diamonds, and so on.
+    </p>
+    <p>With that decided, we can write <code>__cmp__</code>:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> <span class="fu">__cmp__</span>(<span class="va">self</span>, other):</a>
 <a class="sourceLine" id="cb6-2" title="2">    <span class="co"># check the suits</span></a>
 <a class="sourceLine" id="cb6-3" title="3">    <span class="cf">if</span> <span class="va">self</span>.suit <span class="op">&gt;</span> other.suit: <span class="cf">return</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb6-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.suit <span class="op">&lt;</span> other.suit: <span class="cf">return</span> <span class="dv">-1</span></a>
@@ -146,41 +410,117 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.rank <span class="op">&gt;</span> other.rank: <span class="cf">return</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb6-7" title="7">    <span class="cf">if</span> <span class="va">self</span>.rank <span class="op">&lt;</span> other.rank: <span class="cf">return</span> <span class="dv">-1</span></a>
 <a class="sourceLine" id="cb6-8" title="8">    <span class="co"># ranks are the same... it&#39;s a tie</span></a>
-<a class="sourceLine" id="cb6-9" title="9">    <span class="cf">return</span> <span class="dv">0</span></a></code></pre></div>
-<p>In this ordering, Aces appear lower than Deuces (2s).</p>
-<h3 id="decks">8.5. Decks</h3>
-<p>Now that we have objects to represent <code>Card</code>s, the next logical step is to define a class to represent a <code>Deck</code>. Of course, a deck is made up of cards, so each <code>Deck</code> object will contain a list of cards as an attribute.</p>
-<p>The following is a class definition for the <code>Deck</code> class. The initialization method creates the attribute <code>cards</code> and generates the standard set of fifty-two cards:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="cf">return</span> <span class="dv">0</span></a></code></pre>
+    </div>
+    <p>In this ordering, Aces appear lower than Deuces (2s).</p>
+    <h3 id="decks">8.5. Decks</h3>
+    <p>
+      Now that we have objects to represent <code>Card</code>s, the next logical
+      step is to define a class to represent a <code>Deck</code>. Of course, a
+      deck is made up of cards, so each <code>Deck</code> object will contain a
+      list of cards as an attribute.
+    </p>
+    <p>
+      The following is a class definition for the <code>Deck</code> class. The
+      initialization method creates the attribute <code>cards</code> and
+      generates the standard set of fifty-two cards:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb7-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb7-3" title="3">        <span class="va">self</span>.cards <span class="op">=</span> []</a>
 <a class="sourceLine" id="cb7-4" title="4">        <span class="cf">for</span> suit <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">4</span>):</a>
 <a class="sourceLine" id="cb7-5" title="5">            <span class="cf">for</span> rank <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">14</span>):</a>
-<a class="sourceLine" id="cb7-6" title="6">                <span class="va">self</span>.cards.append(Card(suit, rank))</a></code></pre></div>
-<p>The easiest way to populate the deck is with a nested loop. The outer loop enumerates the suits from 0 to 3. The inner loop enumerates the ranks from 1 to 13. Since the outer loop iterates four times, and the inner loop iterates thirteen times, the total number of times the body is executed is fifty-two (thirteen times four). Each iteration creates a new instance of <code>Card</code> with the current suit and rank, and appends that card to the <code>cards</code> list.</p>
-<p>The <code>append</code> method works on lists but not, of course, tuples.</p>
-<h3 id="printing-the-deck">8.6. Printing the deck</h3>
-<p>As usual, when we define a new type of object we want a method that prints the contents of an object. To print a <code>Deck</code>, we traverse the list and print each <code>Card</code>:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb7-6" title="6">                <span class="va">self</span>.cards.append(Card(suit, rank))</a></code></pre>
+    </div>
+    <p>
+      The easiest way to populate the deck is with a nested loop. The outer loop
+      enumerates the suits from 0 to 3. The inner loop enumerates the ranks from
+      1 to 13. Since the outer loop iterates four times, and the inner loop
+      iterates thirteen times, the total number of times the body is executed is
+      fifty-two (thirteen times four). Each iteration creates a new instance of
+      <code>Card</code> with the current suit and rank, and appends that card to
+      the <code>cards</code> list.
+    </p>
+    <p>
+      The <code>append</code> method works on lists but not, of course, tuples.
+    </p>
+    <h3 id="printing-the-deck">8.6. Printing the deck</h3>
+    <p>
+      As usual, when we define a new type of object we want a method that prints
+      the contents of an object. To print a <code>Deck</code>, we traverse the
+      list and print each <code>Card</code>:
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb8-2" title="2">    ...</a>
 <a class="sourceLine" id="cb8-3" title="3">    <span class="kw">def</span> print_deck(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb8-4" title="4">        <span class="cf">for</span> card <span class="kw">in</span> <span class="va">self</span>.cards:</a>
-<a class="sourceLine" id="cb8-5" title="5">            <span class="bu">print</span>(card)</a></code></pre></div>
-<p>Here, and from now on, the ellipsis ( <code>...</code>) indicates that we have omitted the other methods in the class.</p>
-<p>As an alternative to <code>print_deck</code>, we could write a <code>__str__</code> method for the <code>Deck</code> class. The advantage of <code>__str__</code> is that it is more flexible. Rather than just printing the contents of the object, it generates a string representation that other parts of the program can manipulate before printing, or store for later use.</p>
-<p>Here is a version of <code>__str__</code> that returns a string representation of a <code>Deck</code>. To add a bit of pizzazz, it arranges the cards in a cascade where each card is indented one space more than the previous card:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb8-5" title="5">            <span class="bu">print</span>(card)</a></code></pre>
+    </div>
+    <p>
+      Here, and from now on, the ellipsis ( <code>...</code>) indicates that we
+      have omitted the other methods in the class.
+    </p>
+    <p>
+      As an alternative to <code>print_deck</code>, we could write a
+      <code>__str__</code> method for the <code>Deck</code> class. The advantage
+      of <code>__str__</code> is that it is more flexible. Rather than just
+      printing the contents of the object, it generates a string representation
+      that other parts of the program can manipulate before printing, or store
+      for later use.
+    </p>
+    <p>
+      Here is a version of <code>__str__</code> that returns a string
+      representation of a <code>Deck</code>. To add a bit of pizzazz, it
+      arranges the cards in a cascade where each card is indented one space more
+      than the previous card:
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb9-2" title="2">    ...</a>
 <a class="sourceLine" id="cb9-3" title="3">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb9-4" title="4">        s <span class="op">=</span> <span class="st">&quot;&quot;</span></a>
 <a class="sourceLine" id="cb9-5" title="5">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(<span class="va">self</span>.cards)):</a>
 <a class="sourceLine" id="cb9-6" title="6">            s <span class="op">+=</span> <span class="st">&quot; &quot;</span> <span class="op">*</span> i <span class="op">+</span> <span class="bu">str</span>(<span class="va">self</span>.cards[i]) <span class="op">+</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">&quot;</span></a>
-<a class="sourceLine" id="cb9-7" title="7">        <span class="cf">return</span> s</a></code></pre></div>
-<p>This example demonstrates several features. First, instead of traversing <code>self.cards</code> and assigning each card to a variable, we are using <code>i</code> as a loop variable and an index into the list of cards.</p>
-<p>Second, we are using the string multiplication operator to indent each card by one more space than the last. The expression <code>" " * i</code> yields a number of spaces equal to the current value of <code>i</code>.</p>
-<p>Third, instead of using the <code>print</code> function to print the cards, we use the <code>str</code> function. Passing an object as an argument to <code>str</code> is equivalent to invoking the <code>__str__</code> method on the object.</p>
-<p>Finally, we are using the variable <code>s</code> as an <strong>accumulator</strong>. Initially, <code>s</code> is the empty string. Each time through the loop, a new string is generated and concatenated with the old value of <code>s</code> to get the new value. When the loop ends, <code>s</code> contains the complete string representation of the <code>Deck</code>, which looks like this:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> Deck()</a>
+<a class="sourceLine" id="cb9-7" title="7">        <span class="cf">return</span> s</a></code></pre>
+    </div>
+    <p>
+      This example demonstrates several features. First, instead of traversing
+      <code>self.cards</code> and assigning each card to a variable, we are
+      using <code>i</code> as a loop variable and an index into the list of
+      cards.
+    </p>
+    <p>
+      Second, we are using the string multiplication operator to indent each
+      card by one more space than the last. The expression
+      <code>" " * i</code> yields a number of spaces equal to the current value
+      of <code>i</code>.
+    </p>
+    <p>
+      Third, instead of using the <code>print</code> function to print the
+      cards, we use the <code>str</code> function. Passing an object as an
+      argument to <code>str</code> is equivalent to invoking the
+      <code>__str__</code> method on the object.
+    </p>
+    <p>
+      Finally, we are using the variable <code>s</code> as an
+      <strong>accumulator</strong>. Initially, <code>s</code> is the empty
+      string. Each time through the loop, a new string is generated and
+      concatenated with the old value of <code>s</code> to get the new value.
+      When the loop ends, <code>s</code> contains the complete string
+      representation of the <code>Deck</code>, which looks like this:
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> Deck()</a>
 <a class="sourceLine" id="cb10-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(deck)</a>
 <a class="sourceLine" id="cb10-3" title="3">Ace of Clubs</a>
 <a class="sourceLine" id="cb10-4" title="4"> <span class="dv">2</span> of Clubs</a>
@@ -195,76 +535,247 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-13" title="13">            Jack of Clubs</a>
 <a class="sourceLine" id="cb10-14" title="14">             Queen of Clubs</a>
 <a class="sourceLine" id="cb10-15" title="15">              King of Clubs</a>
-<a class="sourceLine" id="cb10-16" title="16">               Ace of Diamonds</a></code></pre></div>
-<p>And so on. Even though the result appears on 52 lines, it is one long string that contains newlines.</p>
-<h3 id="shuffling-the-deck">8.7. Shuffling the deck</h3>
-<p>If a deck is perfectly shuffled, then any card is equally likely to appear anywhere in the deck, and any location in the deck is equally likely to contain any card.</p>
-<p>To shuffle the deck, we will use the <code>randrange</code> function from the <code>random</code> module. With two integer arguments, <code>a</code> and <code>b</code>, <code>randrange</code> chooses a random integer in the range <code>a &lt;= x &lt; b</code>. Since the upper bound is strictly less than <code>b</code>, we can use the length of a list as the second parameter, and we are guaranteed to get a legal index. For example, this expression chooses the index of a random card in a deck:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">random.randrange(<span class="dv">0</span>, <span class="bu">len</span>(<span class="va">self</span>.cards))</a></code></pre></div>
-<p>An easy way to shuffle the deck is by traversing the cards and swapping each card with a randomly chosen one. It is possible that the card will be swapped with itself, but that is fine. In fact, if we precluded that possibility, the order of the cards would be less than entirely random:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb10-16" title="16">               Ace of Diamonds</a></code></pre>
+    </div>
+    <p>
+      And so on. Even though the result appears on 52 lines, it is one long
+      string that contains newlines.
+    </p>
+    <h3 id="shuffling-the-deck">8.7. Shuffling the deck</h3>
+    <p>
+      If a deck is perfectly shuffled, then any card is equally likely to appear
+      anywhere in the deck, and any location in the deck is equally likely to
+      contain any card.
+    </p>
+    <p>
+      To shuffle the deck, we will use the <code>randrange</code> function from
+      the <code>random</code> module. With two integer arguments,
+      <code>a</code> and <code>b</code>, <code>randrange</code> chooses a random
+      integer in the range <code>a &lt;= x &lt; b</code>. Since the upper bound
+      is strictly less than <code>b</code>, we can use the length of a list as
+      the second parameter, and we are guaranteed to get a legal index. For
+      example, this expression chooses the index of a random card in a deck:
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">random.randrange(<span class="dv">0</span>, <span class="bu">len</span>(<span class="va">self</span>.cards))</a></code></pre>
+    </div>
+    <p>
+      An easy way to shuffle the deck is by traversing the cards and swapping
+      each card with a randomly chosen one. It is possible that the card will be
+      swapped with itself, but that is fine. In fact, if we precluded that
+      possibility, the order of the cards would be less than entirely random:
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb12-2" title="2">    ...</a>
 <a class="sourceLine" id="cb12-3" title="3">    <span class="kw">def</span> shuffle(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb12-4" title="4">        <span class="im">import</span> random</a>
 <a class="sourceLine" id="cb12-5" title="5">        num_cards <span class="op">=</span> <span class="bu">len</span>(<span class="va">self</span>.cards)</a>
 <a class="sourceLine" id="cb12-6" title="6">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num_cards):</a>
 <a class="sourceLine" id="cb12-7" title="7">            j <span class="op">=</span> random.randrange(i, num_cards)</a>
-<a class="sourceLine" id="cb12-8" title="8">            <span class="va">self</span>.cards[i], <span class="va">self</span>.cards[j] <span class="op">=</span> <span class="va">self</span>.cards[j], <span class="va">self</span>.cards[i]</a></code></pre></div>
-<p>Rather than assume that there are fifty-two cards in the deck, we get the actual length of the list and store it in <code>num_cards</code>.</p>
-<p>For each card in the deck, we choose a random card from among the cards that haven’t been shuffled yet. Then we swap the current card ( <code>i</code>) with the selected card ( <code>j</code>). To swap the cards we use a tuple assignment:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="va">self</span>.cards[i], <span class="va">self</span>.cards[j] <span class="op">=</span> <span class="va">self</span>.cards[j], <span class="va">self</span>.cards[i]</a></code></pre></div>
-<h3 id="removing-and-dealing-cards">8.8. Removing and dealing cards</h3>
-<p>Another method that would be useful for the <code>Deck</code> class is <code>remove</code>, which takes a card as a parameter, removes it, and returns <code>True</code> if the card was in the deck and <code>False</code> otherwise:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb12-8" title="8">            <span class="va">self</span>.cards[i], <span class="va">self</span>.cards[j] <span class="op">=</span> <span class="va">self</span>.cards[j], <span class="va">self</span>.cards[i]</a></code></pre>
+    </div>
+    <p>
+      Rather than assume that there are fifty-two cards in the deck, we get the
+      actual length of the list and store it in <code>num_cards</code>.
+    </p>
+    <p>
+      For each card in the deck, we choose a random card from among the cards
+      that haven’t been shuffled yet. Then we swap the current card (
+      <code>i</code>) with the selected card ( <code>j</code>). To swap the
+      cards we use a tuple assignment:
+    </p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="va">self</span>.cards[i], <span class="va">self</span>.cards[j] <span class="op">=</span> <span class="va">self</span>.cards[j], <span class="va">self</span>.cards[i]</a></code></pre>
+    </div>
+    <h3 id="removing-and-dealing-cards">8.8. Removing and dealing cards</h3>
+    <p>
+      Another method that would be useful for the <code>Deck</code> class is
+      <code>remove</code>, which takes a card as a parameter, removes it, and
+      returns <code>True</code> if the card was in the deck and
+      <code>False</code> otherwise:
+    </p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb14-2" title="2">    ...</a>
 <a class="sourceLine" id="cb14-3" title="3">    <span class="kw">def</span> remove(<span class="va">self</span>, card):</a>
 <a class="sourceLine" id="cb14-4" title="4">        <span class="cf">if</span> card <span class="kw">in</span> <span class="va">self</span>.cards:</a>
 <a class="sourceLine" id="cb14-5" title="5">            <span class="va">self</span>.cards.remove(card)</a>
 <a class="sourceLine" id="cb14-6" title="6">            <span class="cf">return</span> <span class="va">True</span></a>
 <a class="sourceLine" id="cb14-7" title="7">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb14-8" title="8">            <span class="cf">return</span> <span class="va">False</span></a></code></pre></div>
-<p>The <code>in</code> operator returns <code>True</code> if the first operand is in the second, which must be a list or a tuple. If the first operand is an object, Python uses the object’s <code>__cmp__</code> method to determine equality with items in the list. Since the <code>__cmp__</code> in the <code>Card</code> class checks for deep equality, the <code>remove</code> method checks for deep equality.</p>
-<p>To deal cards, we want to remove and return the top card. The list method <code>pop</code> provides a convenient way to do that:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb14-8" title="8">            <span class="cf">return</span> <span class="va">False</span></a></code></pre>
+    </div>
+    <p>
+      The <code>in</code> operator returns <code>True</code> if the first
+      operand is in the second, which must be a list or a tuple. If the first
+      operand is an object, Python uses the object’s <code>__cmp__</code> method
+      to determine equality with items in the list. Since the
+      <code>__cmp__</code> in the <code>Card</code> class checks for deep
+      equality, the <code>remove</code> method checks for deep equality.
+    </p>
+    <p>
+      To deal cards, we want to remove and return the top card. The list method
+      <code>pop</code> provides a convenient way to do that:
+    </p>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb15-2" title="2">    ...</a>
 <a class="sourceLine" id="cb15-3" title="3">    <span class="kw">def</span> pop(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb15-4" title="4">        <span class="cf">return</span> <span class="va">self</span>.cards.pop()</a></code></pre></div>
-<p>Actually, <code>pop</code> removes the <em>last</em> card in the list, so we are in effect dealing from the bottom of the deck.</p>
-<p>One more operation that we are likely to want is the boolean function <code>is_empty</code>, which returns true if the deck contains no cards:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">class</span> Deck:</a>
+<a class="sourceLine" id="cb15-4" title="4">        <span class="cf">return</span> <span class="va">self</span>.cards.pop()</a></code></pre>
+    </div>
+    <p>
+      Actually, <code>pop</code> removes the <em>last</em> card in the list, so
+      we are in effect dealing from the bottom of the deck.
+    </p>
+    <p>
+      One more operation that we are likely to want is the boolean function
+      <code>is_empty</code>, which returns true if the deck contains no cards:
+    </p>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">class</span> Deck:</a>
 <a class="sourceLine" id="cb16-2" title="2">    ...</a>
 <a class="sourceLine" id="cb16-3" title="3">    <span class="kw">def</span> is_empty(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb16-4" title="4">        <span class="cf">return</span> (<span class="bu">len</span>(<span class="va">self</span>.cards) <span class="op">==</span> <span class="dv">0</span>)</a></code></pre></div>
-<h3 id="inheritance-2">8.9. Inheritance</h3>
-<p>The language feature most often associated with object-oriented programming is <strong>inheritance</strong>. Inheritance is the ability to define a new class that is a modified version of an existing class.</p>
-<p>The primary advantage of this feature is that you can add new methods to a class without modifying the existing class. It is called inheritance because the new class inherits all of the methods of the existing class. Extending this metaphor, the existing class is sometimes called the <strong>parent</strong> class. The new class may be called the <strong>child</strong> class or sometimes subclass.</p>
-<p>Inheritance is a powerful feature. Some programs that would be complicated without inheritance can be written concisely and simply with it. Also, inheritance can facilitate code reuse, since you can customize the behavior of parent classes without having to modify them. In some cases, the inheritance structure reflects the natural structure of the problem, which makes the program easier to understand.</p>
-<p>On the other hand, inheritance can make programs difficult to read. When a method is invoked, it is sometimes not clear where to find its definition. The relevant code may be scattered among several modules. Also, many of the things that can be done using inheritance can be done as elegantly (or more so) without it. If the natural structure of the problem does not lend itself to inheritance, this style of programming can do more harm than good.</p>
-<p>In this chapter we will demonstrate the use of inheritance as part of a program that plays the card game Old Maid. One of our goals is to write code that could be reused to implement other card games.</p>
-<h3 id="a-hand-of-cards">8.10. A hand of cards</h3>
-<p>For almost any card game, we need to represent a hand of cards. A hand is similar to a deck, of course. Both are made up of a set of cards, and both require operations like adding and removing cards. Also, we might like the ability to shuffle both decks and hands.</p>
-<p>A hand is also different from a deck. Depending on the game being played, we might want to perform some operations on hands that don’t make sense for a deck. For example, in poker we might classify a hand (straight, flush, etc.) or compare it with another hand. In bridge, we might want to compute a score for a hand in order to make a bid.</p>
-<p>This situation suggests the use of inheritance. If <code>Hand</code> is a subclass of <code>Deck</code>, it will have all the methods of <code>Deck</code>, and new methods can be added.</p>
-<p>In the class definition, the name of the parent class appears in parentheses:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
-<a class="sourceLine" id="cb17-2" title="2">    <span class="cf">pass</span></a></code></pre></div>
-<p>This statement indicates that the new <code>Hand</code> class inherits from the existing <code>Deck</code> class.</p>
-<p>The <code>Hand</code> constructor initializes the attributes for the hand, which are <code>name</code> and <code>cards</code>. The string <code>name</code> identifies this hand, probably by the name of the player that holds it. The name is an optional parameter with the empty string as a default value. <code>cards</code> is the list of cards in the hand, initialized to the empty list:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
+<a class="sourceLine" id="cb16-4" title="4">        <span class="cf">return</span> (<span class="bu">len</span>(<span class="va">self</span>.cards) <span class="op">==</span> <span class="dv">0</span>)</a></code></pre>
+    </div>
+    <h3 id="inheritance-2">8.9. Inheritance</h3>
+    <p>
+      The language feature most often associated with object-oriented
+      programming is <strong>inheritance</strong>. Inheritance is the ability to
+      define a new class that is a modified version of an existing class.
+    </p>
+    <p>
+      The primary advantage of this feature is that you can add new methods to a
+      class without modifying the existing class. It is called inheritance
+      because the new class inherits all of the methods of the existing class.
+      Extending this metaphor, the existing class is sometimes called the
+      <strong>parent</strong> class. The new class may be called the
+      <strong>child</strong> class or sometimes subclass.
+    </p>
+    <p>
+      Inheritance is a powerful feature. Some programs that would be complicated
+      without inheritance can be written concisely and simply with it. Also,
+      inheritance can facilitate code reuse, since you can customize the
+      behavior of parent classes without having to modify them. In some cases,
+      the inheritance structure reflects the natural structure of the problem,
+      which makes the program easier to understand.
+    </p>
+    <p>
+      On the other hand, inheritance can make programs difficult to read. When a
+      method is invoked, it is sometimes not clear where to find its definition.
+      The relevant code may be scattered among several modules. Also, many of
+      the things that can be done using inheritance can be done as elegantly (or
+      more so) without it. If the natural structure of the problem does not lend
+      itself to inheritance, this style of programming can do more harm than
+      good.
+    </p>
+    <p>
+      In this chapter we will demonstrate the use of inheritance as part of a
+      program that plays the card game Old Maid. One of our goals is to write
+      code that could be reused to implement other card games.
+    </p>
+    <h3 id="a-hand-of-cards">8.10. A hand of cards</h3>
+    <p>
+      For almost any card game, we need to represent a hand of cards. A hand is
+      similar to a deck, of course. Both are made up of a set of cards, and both
+      require operations like adding and removing cards. Also, we might like the
+      ability to shuffle both decks and hands.
+    </p>
+    <p>
+      A hand is also different from a deck. Depending on the game being played,
+      we might want to perform some operations on hands that don’t make sense
+      for a deck. For example, in poker we might classify a hand (straight,
+      flush, etc.) or compare it with another hand. In bridge, we might want to
+      compute a score for a hand in order to make a bid.
+    </p>
+    <p>
+      This situation suggests the use of inheritance. If <code>Hand</code> is a
+      subclass of <code>Deck</code>, it will have all the methods of
+      <code>Deck</code>, and new methods can be added.
+    </p>
+    <p>
+      In the class definition, the name of the parent class appears in
+      parentheses:
+    </p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
+<a class="sourceLine" id="cb17-2" title="2">    <span class="cf">pass</span></a></code></pre>
+    </div>
+    <p>
+      This statement indicates that the new <code>Hand</code> class inherits
+      from the existing <code>Deck</code> class.
+    </p>
+    <p>
+      The <code>Hand</code> constructor initializes the attributes for the hand,
+      which are <code>name</code> and <code>cards</code>. The string
+      <code>name</code> identifies this hand, probably by the name of the player
+      that holds it. The name is an optional parameter with the empty string as
+      a default value. <code>cards</code> is the list of cards in the hand,
+      initialized to the empty list:
+    </p>
+    <div class="sourceCode" id="cb18">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
 <a class="sourceLine" id="cb18-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, name<span class="op">=</span><span class="st">&quot;&quot;</span>):</a>
 <a class="sourceLine" id="cb18-3" title="3">       <span class="va">self</span>.cards <span class="op">=</span> []</a>
-<a class="sourceLine" id="cb18-4" title="4">       <span class="va">self</span>.name <span class="op">=</span> name</a></code></pre></div>
-<p>For just about any card game, it is necessary to add and remove cards from the deck. Removing cards is already taken care of, since <code>Hand</code> inherits <code>remove</code> from <code>Deck</code>. But we have to write <code>add</code>:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
+<a class="sourceLine" id="cb18-4" title="4">       <span class="va">self</span>.name <span class="op">=</span> name</a></code></pre>
+    </div>
+    <p>
+      For just about any card game, it is necessary to add and remove cards from
+      the deck. Removing cards is already taken care of, since
+      <code>Hand</code> inherits <code>remove</code> from <code>Deck</code>. But
+      we have to write <code>add</code>:
+    </p>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">class</span> Hand(Deck):</a>
 <a class="sourceLine" id="cb19-2" title="2">    ...</a>
 <a class="sourceLine" id="cb19-3" title="3">    <span class="kw">def</span> add(<span class="va">self</span>,card):</a>
-<a class="sourceLine" id="cb19-4" title="4">        <span class="va">self</span>.cards.append(card)</a></code></pre></div>
-<p>Again, the ellipsis indicates that we have omitted other methods. The list <code>append</code> method adds the new card to the end of the list of cards.</p>
-<h3 id="dealing-cards">8.11. Dealing cards</h3>
-<p>Now that we have a <code>Hand</code> class, we want to deal cards from the <code>Deck</code> into hands. It is not immediately obvious whether this method should go in the <code>Hand</code> class or in the <code>Deck</code> class, but since it operates on a single deck and (possibly) several hands, it is more natural to put it in <code>Deck</code>.</p>
-<p><code>deal</code> should be fairly general, since different games will have different requirements. We may want to deal out the entire deck at once or add one card to each hand.</p>
-<p><code>deal</code> takes two parameters, a list (or tuple) of hands and the total number of cards to deal. If there are not enough cards in the deck, the method deals out all of the cards and stops:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">class</span> Deck :</a>
+<a class="sourceLine" id="cb19-4" title="4">        <span class="va">self</span>.cards.append(card)</a></code></pre>
+    </div>
+    <p>
+      Again, the ellipsis indicates that we have omitted other methods. The list
+      <code>append</code> method adds the new card to the end of the list of
+      cards.
+    </p>
+    <h3 id="dealing-cards">8.11. Dealing cards</h3>
+    <p>
+      Now that we have a <code>Hand</code> class, we want to deal cards from the
+      <code>Deck</code> into hands. It is not immediately obvious whether this
+      method should go in the <code>Hand</code> class or in the
+      <code>Deck</code> class, but since it operates on a single deck and
+      (possibly) several hands, it is more natural to put it in
+      <code>Deck</code>.
+    </p>
+    <p>
+      <code>deal</code> should be fairly general, since different games will
+      have different requirements. We may want to deal out the entire deck at
+      once or add one card to each hand.
+    </p>
+    <p>
+      <code>deal</code> takes two parameters, a list (or tuple) of hands and the
+      total number of cards to deal. If there are not enough cards in the deck,
+      the method deals out all of the cards and stops:
+    </p>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">class</span> Deck :</a>
 <a class="sourceLine" id="cb20-2" title="2">    ...</a>
 <a class="sourceLine" id="cb20-3" title="3">    <span class="kw">def</span> deal(<span class="va">self</span>, hands, num_cards<span class="op">=</span><span class="dv">999</span>):</a>
 <a class="sourceLine" id="cb20-4" title="4">        num_hands <span class="op">=</span> <span class="bu">len</span>(hands)</a>
@@ -272,13 +783,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb20-6" title="6">            <span class="cf">if</span> <span class="va">self</span>.is_empty(): <span class="cf">break</span>   <span class="co"># break if out of cards</span></a>
 <a class="sourceLine" id="cb20-7" title="7">            card <span class="op">=</span> <span class="va">self</span>.pop()           <span class="co"># take the top card</span></a>
 <a class="sourceLine" id="cb20-8" title="8">            hand <span class="op">=</span> hands[i <span class="op">%</span> num_hands] <span class="co"># whose turn is next?</span></a>
-<a class="sourceLine" id="cb20-9" title="9">            hand.add(card)              <span class="co"># add the card to the hand</span></a></code></pre></div>
-<p>The second parameter, <code>num_cards</code>, is optional; the default is a large number, which effectively means that all of the cards in the deck will get dealt.</p>
-<p>The loop variable <code>i</code> goes from 0 to <code>nCards-1</code>. Each time through the loop, a card is removed from the deck using the list method <code>pop</code>, which removes and returns the last item in the list.</p>
-<p>The modulus operator ( <code>%</code>) allows us to deal cards in a round robin (one card at a time to each hand). When <code>i</code> is equal to the number of hands in the list, the expression <code>i % nHands</code> wraps around to the beginning of the list (index 0).</p>
-<h3 id="printing-a-hand">8.12. Printing a Hand</h3>
-<p>To print the contents of a hand, we can take advantage of the <code>printDeck</code> and <code>__str__</code> methods inherited from <code>Deck</code>. For example:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> Deck()</a>
+<a class="sourceLine" id="cb20-9" title="9">            hand.add(card)              <span class="co"># add the card to the hand</span></a></code></pre>
+    </div>
+    <p>
+      The second parameter, <code>num_cards</code>, is optional; the default is
+      a large number, which effectively means that all of the cards in the deck
+      will get dealt.
+    </p>
+    <p>
+      The loop variable <code>i</code> goes from 0 to <code>nCards-1</code>.
+      Each time through the loop, a card is removed from the deck using the list
+      method <code>pop</code>, which removes and returns the last item in the
+      list.
+    </p>
+    <p>
+      The modulus operator ( <code>%</code>) allows us to deal cards in a round
+      robin (one card at a time to each hand). When <code>i</code> is equal to
+      the number of hands in the list, the expression
+      <code>i % nHands</code> wraps around to the beginning of the list (index
+      0).
+    </p>
+    <h3 id="printing-a-hand">8.12. Printing a Hand</h3>
+    <p>
+      To print the contents of a hand, we can take advantage of the
+      <code>printDeck</code> and <code>__str__</code> methods inherited from
+      <code>Deck</code>. For example:
+    </p>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="op">&gt;&gt;&gt;</span> deck <span class="op">=</span> Deck()</a>
 <a class="sourceLine" id="cb21-2" title="2"><span class="op">&gt;&gt;&gt;</span> deck.shuffle()</a>
 <a class="sourceLine" id="cb21-3" title="3"><span class="op">&gt;&gt;&gt;</span> hand <span class="op">=</span> Hand(<span class="st">&quot;frank&quot;</span>)</a>
 <a class="sourceLine" id="cb21-4" title="4"><span class="op">&gt;&gt;&gt;</span> deck.deal([hand], <span class="dv">5</span>)</a>
@@ -288,10 +822,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb21-8" title="8"> <span class="dv">3</span> of Spades</a>
 <a class="sourceLine" id="cb21-9" title="9">  <span class="dv">4</span> of Spades</a>
 <a class="sourceLine" id="cb21-10" title="10">   Ace of Hearts</a>
-<a class="sourceLine" id="cb21-11" title="11">    <span class="dv">9</span> of Clubs</a></code></pre></div>
-<p>It’s not a great hand, but it has the makings of a straight flush.</p>
-<p>Although it is convenient to inherit the existing methods, there is additional information in a <code>Hand</code> object we might want to include when we print one. To do that, we can provide a <code>__str__</code> method in the <code>Hand</code> class that overrides the one in the <code>Deck</code> class:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> Hand(Deck)</a>
+<a class="sourceLine" id="cb21-11" title="11">    <span class="dv">9</span> of Clubs</a></code></pre>
+    </div>
+    <p>It’s not a great hand, but it has the makings of a straight flush.</p>
+    <p>
+      Although it is convenient to inherit the existing methods, there is
+      additional information in a <code>Hand</code> object we might want to
+      include when we print one. To do that, we can provide a
+      <code>__str__</code> method in the <code>Hand</code> class that overrides
+      the one in the <code>Deck</code> class:
+    </p>
+    <div class="sourceCode" id="cb22">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> Hand(Deck)</a>
 <a class="sourceLine" id="cb22-2" title="2">    ...</a>
 <a class="sourceLine" id="cb22-3" title="3">    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb22-4" title="4">        s <span class="op">=</span> <span class="st">&quot;Hand &quot;</span> <span class="op">+</span> <span class="va">self</span>.name</a>
@@ -299,26 +843,92 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb22-6" title="6">            s <span class="op">=</span> s <span class="op">+</span> <span class="st">&quot; is empty</span><span class="ch">\n</span><span class="st">&quot;</span></a>
 <a class="sourceLine" id="cb22-7" title="7">        <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb22-8" title="8">            s <span class="op">=</span> s <span class="op">+</span> <span class="st">&quot; contains</span><span class="ch">\n</span><span class="st">&quot;</span></a>
-<a class="sourceLine" id="cb22-9" title="9">        <span class="cf">return</span> s <span class="op">+</span> Deck.<span class="fu">__str__</span>(<span class="va">self</span>)</a></code></pre></div>
-<p>Initially, <code>s</code> is a string that identifies the hand. If the hand is empty, the program appends the words <code>is empty</code> and returns <code>s</code>.</p>
-<p>Otherwise, the program appends the word <code>contains</code> and the string representation of the <code>Deck</code>, computed by invoking the <code>__str__</code> method in the <code>Deck</code> class on <code>self</code>.</p>
-<p>It may seem odd to send <code>self</code>, which refers to the current <code>Hand</code>, to a <code>Deck</code> method, until you remember that a <code>Hand</code> is a kind of <code>Deck</code>. <code>Hand</code> objects can do everything <code>Deck</code> objects can, so it is legal to send a <code>Hand</code> to a <code>Deck</code> method.</p>
-<p>In general, it is always legal to use an instance of a subclass in place of an instance of a parent class.</p>
-<h3 id="the-cardgame-class">8.13. The <code>CardGame</code> class</h3>
-<p>The <code>CardGame</code> class takes care of some basic chores common to all games, such as creating the deck and shuffling it:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> CardGame:</a>
+<a class="sourceLine" id="cb22-9" title="9">        <span class="cf">return</span> s <span class="op">+</span> Deck.<span class="fu">__str__</span>(<span class="va">self</span>)</a></code></pre>
+    </div>
+    <p>
+      Initially, <code>s</code> is a string that identifies the hand. If the
+      hand is empty, the program appends the words <code>is empty</code> and
+      returns <code>s</code>.
+    </p>
+    <p>
+      Otherwise, the program appends the word <code>contains</code> and the
+      string representation of the <code>Deck</code>, computed by invoking the
+      <code>__str__</code> method in the <code>Deck</code> class on
+      <code>self</code>.
+    </p>
+    <p>
+      It may seem odd to send <code>self</code>, which refers to the current
+      <code>Hand</code>, to a <code>Deck</code> method, until you remember that
+      a <code>Hand</code> is a kind of <code>Deck</code>.
+      <code>Hand</code> objects can do everything <code>Deck</code> objects can,
+      so it is legal to send a <code>Hand</code> to a <code>Deck</code> method.
+    </p>
+    <p>
+      In general, it is always legal to use an instance of a subclass in place
+      of an instance of a parent class.
+    </p>
+    <h3 id="the-cardgame-class">8.13. The <code>CardGame</code> class</h3>
+    <p>
+      The <code>CardGame</code> class takes care of some basic chores common to
+      all games, such as creating the deck and shuffling it:
+    </p>
+    <div class="sourceCode" id="cb23">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> CardGame:</a>
 <a class="sourceLine" id="cb23-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb23-3" title="3">        <span class="va">self</span>.deck <span class="op">=</span> Deck()</a>
-<a class="sourceLine" id="cb23-4" title="4">        <span class="va">self</span>.deck.shuffle()</a></code></pre></div>
-<p>This is the first case we have seen where the initialization method performs a significant computation, beyond initializing attributes.</p>
-<p>To implement specific games, we can inherit from <code>CardGame</code> and add features for the new game. As an example, we’ll write a simulation of Old Maid.</p>
-<p>The object of Old Maid is to get rid of cards in your hand. You do this by matching cards by rank and color. For example, the 4 of Clubs matches the 4 of Spades since both suits are black. The Jack of Hearts matches the Jack of Diamonds since both are red.</p>
-<p>To begin the game, the Queen of Clubs is removed from the deck so that the Queen of Spades has no match. The fifty-one remaining cards are dealt to the players in a round robin. After the deal, all players match and discard as many cards as possible.</p>
-<p>When no more matches can be made, play begins. In turn, each player picks a card (without looking) from the closest neighbor to the left who still has cards. If the chosen card matches a card in the player’s hand, the pair is removed. Otherwise, the card is added to the player’s hand. Eventually all possible matches are made, leaving only the Queen of Spades in the loser’s hand.</p>
-<p>In our computer simulation of the game, the computer plays all hands. Unfortunately, some nuances of the real game are lost. In a real game, the player with the Old Maid goes to some effort to get their neighbor to pick that card, by displaying it a little more prominently, or perhaps failing to display it more prominently, or even failing to fail to display that card more prominently. The computer simply picks a neighbor’s card at random.</p>
-<h3 id="oldmaidhand-class">8.14. <code>OldMaidHand</code> class</h3>
-<p>A hand for playing Old Maid requires some abilities beyond the general abilities of a <code>Hand</code>. We will define a new class, <code>OldMaidHand</code>, that inherits from <code>Hand</code> and provides an additional method called <code>remove_matches</code>:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> OldMaidHand(Hand):</a>
+<a class="sourceLine" id="cb23-4" title="4">        <span class="va">self</span>.deck.shuffle()</a></code></pre>
+    </div>
+    <p>
+      This is the first case we have seen where the initialization method
+      performs a significant computation, beyond initializing attributes.
+    </p>
+    <p>
+      To implement specific games, we can inherit from <code>CardGame</code> and
+      add features for the new game. As an example, we’ll write a simulation of
+      Old Maid.
+    </p>
+    <p>
+      The object of Old Maid is to get rid of cards in your hand. You do this by
+      matching cards by rank and color. For example, the 4 of Clubs matches the
+      4 of Spades since both suits are black. The Jack of Hearts matches the
+      Jack of Diamonds since both are red.
+    </p>
+    <p>
+      To begin the game, the Queen of Clubs is removed from the deck so that the
+      Queen of Spades has no match. The fifty-one remaining cards are dealt to
+      the players in a round robin. After the deal, all players match and
+      discard as many cards as possible.
+    </p>
+    <p>
+      When no more matches can be made, play begins. In turn, each player picks
+      a card (without looking) from the closest neighbor to the left who still
+      has cards. If the chosen card matches a card in the player’s hand, the
+      pair is removed. Otherwise, the card is added to the player’s hand.
+      Eventually all possible matches are made, leaving only the Queen of Spades
+      in the loser’s hand.
+    </p>
+    <p>
+      In our computer simulation of the game, the computer plays all hands.
+      Unfortunately, some nuances of the real game are lost. In a real game, the
+      player with the Old Maid goes to some effort to get their neighbor to pick
+      that card, by displaying it a little more prominently, or perhaps failing
+      to display it more prominently, or even failing to fail to display that
+      card more prominently. The computer simply picks a neighbor’s card at
+      random.
+    </p>
+    <h3 id="oldmaidhand-class">8.14. <code>OldMaidHand</code> class</h3>
+    <p>
+      A hand for playing Old Maid requires some abilities beyond the general
+      abilities of a <code>Hand</code>. We will define a new class,
+      <code>OldMaidHand</code>, that inherits from <code>Hand</code> and
+      provides an additional method called <code>remove_matches</code>:
+    </p>
+    <div class="sourceCode" id="cb24">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> OldMaidHand(Hand):</a>
 <a class="sourceLine" id="cb24-2" title="2">    <span class="kw">def</span> remove_matches(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb24-3" title="3">        count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb24-4" title="4">        original_cards <span class="op">=</span> <span class="va">self</span>.cards[:]</a>
@@ -329,11 +939,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb24-9" title="9">                <span class="va">self</span>.cards.remove(match)</a>
 <a class="sourceLine" id="cb24-10" title="10">                <span class="bu">print</span>(<span class="st">&quot;Hand </span><span class="sc">{0}</span><span class="st">: </span><span class="sc">{1}</span><span class="st"> matches </span><span class="sc">{2}</span><span class="st">&quot;</span>.<span class="bu">format</span>(<span class="va">self</span>.name, card, match)</a>
 <a class="sourceLine" id="cb24-11" title="11">                count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb24-12" title="12">        <span class="cf">return</span> count</a></code></pre></div>
-<p>We start by making a copy of the list of cards, so that we can traverse the copy while removing cards from the original. Since <code>self.cards</code> is modified in the loop, we don’t want to use it to control the traversal. Python can get quite confused if it is traversing a list that is changing!</p>
-<p>For each card in the hand, we figure out what the matching card is and go looking for it. The match card has the same rank and the other suit of the same color. The expression <code>3 - card.suit</code> turns a Club (suit 0) into a Spade (suit 3) and a Diamond (suit 1) into a Heart (suit 2). You should satisfy yourself that the opposite operations also work. If the match card is also in the hand, both cards are removed.</p>
-<p>The following example demonstrates how to use <code>remove_matches</code>:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="op">&gt;&gt;&gt;</span> game <span class="op">=</span> CardGame()</a>
+<a class="sourceLine" id="cb24-12" title="12">        <span class="cf">return</span> count</a></code></pre>
+    </div>
+    <p>
+      We start by making a copy of the list of cards, so that we can traverse
+      the copy while removing cards from the original. Since
+      <code>self.cards</code> is modified in the loop, we don’t want to use it
+      to control the traversal. Python can get quite confused if it is
+      traversing a list that is changing!
+    </p>
+    <p>
+      For each card in the hand, we figure out what the matching card is and go
+      looking for it. The match card has the same rank and the other suit of the
+      same color. The expression <code>3 - card.suit</code> turns a Club (suit
+      0) into a Spade (suit 3) and a Diamond (suit 1) into a Heart (suit 2). You
+      should satisfy yourself that the opposite operations also work. If the
+      match card is also in the hand, both cards are removed.
+    </p>
+    <p>
+      The following example demonstrates how to use <code>remove_matches</code>:
+    </p>
+    <div class="sourceCode" id="cb25">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="op">&gt;&gt;&gt;</span> game <span class="op">=</span> CardGame()</a>
 <a class="sourceLine" id="cb25-2" title="2"><span class="op">&gt;&gt;&gt;</span> hand <span class="op">=</span> OldMaidHand(<span class="st">&quot;frank&quot;</span>)</a>
 <a class="sourceLine" id="cb25-3" title="3"><span class="op">&gt;&gt;&gt;</span> game.deck.deal([hand], <span class="dv">13</span>)</a>
 <a class="sourceLine" id="cb25-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(hand)</a>
@@ -363,12 +992,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb25-28" title="28">   Queen of Clubs</a>
 <a class="sourceLine" id="cb25-29" title="29">    <span class="dv">7</span> of Diamonds</a>
 <a class="sourceLine" id="cb25-30" title="30">     <span class="dv">5</span> of Clubs</a>
-<a class="sourceLine" id="cb25-31" title="31">      Jack of Diamonds</a></code></pre></div>
-<p>Notice that there is no <code>__init__</code> method for the <code>OldMaidHand</code> class. We inherit it from <code>Hand</code>.</p>
-<h3 id="oldmaidgame-class">8.15. <code>OldMaidGame</code> class</h3>
-<p>Now we can turn our attention to the game itself. <code>OldMaidGame</code> is a subclass of <code>CardGame</code> with a new method called <code>play</code> that takes a list of players as a parameter.</p>
-<p>Since <code>__init__</code> is inherited from <code>CardGame</code>, a new <code>OldMaidGame</code> object contains a new shuffled deck:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
+<a class="sourceLine" id="cb25-31" title="31">      Jack of Diamonds</a></code></pre>
+    </div>
+    <p>
+      Notice that there is no <code>__init__</code> method for the
+      <code>OldMaidHand</code> class. We inherit it from <code>Hand</code>.
+    </p>
+    <h3 id="oldmaidgame-class">8.15. <code>OldMaidGame</code> class</h3>
+    <p>
+      Now we can turn our attention to the game itself.
+      <code>OldMaidGame</code> is a subclass of <code>CardGame</code> with a new
+      method called <code>play</code> that takes a list of players as a
+      parameter.
+    </p>
+    <p>
+      Since <code>__init__</code> is inherited from <code>CardGame</code>, a new
+      <code>OldMaidGame</code> object contains a new shuffled deck:
+    </p>
+    <div class="sourceCode" id="cb26">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
 <a class="sourceLine" id="cb26-2" title="2">    <span class="kw">def</span> play(<span class="va">self</span>, names):</a>
 <a class="sourceLine" id="cb26-3" title="3">        <span class="co"># remove Queen of Clubs</span></a>
 <a class="sourceLine" id="cb26-4" title="4">        <span class="va">self</span>.deck.remove(Card(<span class="dv">0</span>,<span class="dv">12</span>))</a>
@@ -396,21 +1040,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb26-26" title="26">            turn <span class="op">=</span> (turn <span class="op">+</span> <span class="dv">1</span>) <span class="op">%</span> numHands</a>
 <a class="sourceLine" id="cb26-27" title="27"></a>
 <a class="sourceLine" id="cb26-28" title="28">        <span class="bu">print</span>(<span class="st">&quot;---------- Game is Over&quot;</span>)</a>
-<a class="sourceLine" id="cb26-29" title="29">        <span class="va">self</span>.printHands()</a></code></pre></div>
-<p>The writing of <code>printHands()</code> is left as an exercise.</p>
-<p>Some of the steps of the game have been separated into methods. <code>remove_all_matches</code> traverses the list of hands and invokes <code>remove_matches</code> on each:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
+<a class="sourceLine" id="cb26-29" title="29">        <span class="va">self</span>.printHands()</a></code></pre>
+    </div>
+    <p>The writing of <code>printHands()</code> is left as an exercise.</p>
+    <p>
+      Some of the steps of the game have been separated into methods.
+      <code>remove_all_matches</code> traverses the list of hands and invokes
+      <code>remove_matches</code> on each:
+    </p>
+    <div class="sourceCode" id="cb27">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
 <a class="sourceLine" id="cb27-2" title="2">    ...</a>
 <a class="sourceLine" id="cb27-3" title="3">    <span class="kw">def</span> remove_all_matches(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb27-4" title="4">        count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb27-5" title="5">        <span class="cf">for</span> hand <span class="kw">in</span> <span class="va">self</span>.hands:</a>
 <a class="sourceLine" id="cb27-6" title="6">            count <span class="op">=</span> count <span class="op">+</span> hand.remove_matches()</a>
-<a class="sourceLine" id="cb27-7" title="7">        <span class="cf">return</span> count</a></code></pre></div>
-<p><code>count</code> is an accumulator that adds up the number of matches in each hand and returns the total.</p>
-<p>When the total number of matches reaches twenty-five, fifty cards have been removed from the hands, which means that only one card is left and the game is over.</p>
-<p>The variable <code>turn</code> keeps track of which player’s turn it is. It starts at 0 and increases by one each time; when it reaches <code>numHands</code>, the modulus operator wraps it back around to 0.</p>
-<p>The method <code>playOneTurn</code> takes a parameter that indicates whose turn it is. The return value is the number of matches made during this turn:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
+<a class="sourceLine" id="cb27-7" title="7">        <span class="cf">return</span> count</a></code></pre>
+    </div>
+    <p>
+      <code>count</code> is an accumulator that adds up the number of matches in
+      each hand and returns the total.
+    </p>
+    <p>
+      When the total number of matches reaches twenty-five, fifty cards have
+      been removed from the hands, which means that only one card is left and
+      the game is over.
+    </p>
+    <p>
+      The variable <code>turn</code> keeps track of which player’s turn it is.
+      It starts at 0 and increases by one each time; when it reaches
+      <code>numHands</code>, the modulus operator wraps it back around to 0.
+    </p>
+    <p>
+      The method <code>playOneTurn</code> takes a parameter that indicates whose
+      turn it is. The return value is the number of matches made during this
+      turn:
+    </p>
+    <div class="sourceCode" id="cb28">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
 <a class="sourceLine" id="cb28-2" title="2">    ...</a>
 <a class="sourceLine" id="cb28-3" title="3">    <span class="kw">def</span> play_one_turn(<span class="va">self</span>, i):</a>
 <a class="sourceLine" id="cb28-4" title="4">        <span class="cf">if</span> <span class="va">self</span>.hands[i].is_empty():</a>
@@ -421,22 +1092,54 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb28-9" title="9">        <span class="bu">print</span>(<span class="st">&quot;Hand&quot;</span>, <span class="va">self</span>.hands[i].name, <span class="st">&quot;picked&quot;</span>, pickedCard)</a>
 <a class="sourceLine" id="cb28-10" title="10">        count <span class="op">=</span> <span class="va">self</span>.hands[i].remove_matches()</a>
 <a class="sourceLine" id="cb28-11" title="11">        <span class="va">self</span>.hands[i].shuffle()</a>
-<a class="sourceLine" id="cb28-12" title="12">        <span class="cf">return</span> count</a></code></pre></div>
-<p>If a player’s hand is empty, that player is out of the game, so he or she does nothing and returns 0.</p>
-<p>Otherwise, a turn consists of finding the first player on the left that has cards, taking one card from the neighbor, and checking for matches. Before returning, the cards in the hand are shuffled so that the next player’s choice is random.</p>
-<p>The method <code>find_neighbor</code> starts with the player to the immediate left and continues around the circle until it finds a player that still has cards:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
+<a class="sourceLine" id="cb28-12" title="12">        <span class="cf">return</span> count</a></code></pre>
+    </div>
+    <p>
+      If a player’s hand is empty, that player is out of the game, so he or she
+      does nothing and returns 0.
+    </p>
+    <p>
+      Otherwise, a turn consists of finding the first player on the left that
+      has cards, taking one card from the neighbor, and checking for matches.
+      Before returning, the cards in the hand are shuffled so that the next
+      player’s choice is random.
+    </p>
+    <p>
+      The method <code>find_neighbor</code> starts with the player to the
+      immediate left and continues around the circle until it finds a player
+      that still has cards:
+    </p>
+    <div class="sourceCode" id="cb29">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">class</span> OldMaidGame(CardGame):</a>
 <a class="sourceLine" id="cb29-2" title="2">    ...</a>
 <a class="sourceLine" id="cb29-3" title="3">    <span class="kw">def</span> find_neighbor(<span class="va">self</span>, i):</a>
 <a class="sourceLine" id="cb29-4" title="4">        numHands <span class="op">=</span> <span class="bu">len</span>(<span class="va">self</span>.hands)</a>
 <a class="sourceLine" id="cb29-5" title="5">        <span class="cf">for</span> <span class="bu">next</span> <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,numHands):</a>
 <a class="sourceLine" id="cb29-6" title="6">            neighbor <span class="op">=</span> (i <span class="op">+</span> <span class="bu">next</span>) <span class="op">%</span> numHands</a>
 <a class="sourceLine" id="cb29-7" title="7">            <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.hands[neighbor].is_empty():</a>
-<a class="sourceLine" id="cb29-8" title="8">                <span class="cf">return</span> neighbor</a></code></pre></div>
-<p>If <code>find_neighbor</code> ever went all the way around the circle without finding cards, it would return <code>None</code> and cause an error elsewhere in the program. Fortunately, we can prove that that will never happen (as long as the end of the game is detected correctly).</p>
-<p>We have omitted the <code>print_hands</code> method. You can write that one yourself.</p>
-<p>The following output is from a truncated form of the game where only the top fifteen cards (tens and higher) were dealt to three players. With this small deck, play stops after seven matches instead of twenty-five.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> cards</a>
+<a class="sourceLine" id="cb29-8" title="8">                <span class="cf">return</span> neighbor</a></code></pre>
+    </div>
+    <p>
+      If <code>find_neighbor</code> ever went all the way around the circle
+      without finding cards, it would return <code>None</code> and cause an
+      error elsewhere in the program. Fortunately, we can prove that that will
+      never happen (as long as the end of the game is detected correctly).
+    </p>
+    <p>
+      We have omitted the <code>print_hands</code> method. You can write that
+      one yourself.
+    </p>
+    <p>
+      The following output is from a truncated form of the game where only the
+      top fifteen cards (tens and higher) were dealt to three players. With this
+      small deck, play stops after seven matches instead of twenty-five.
+    </p>
+    <div class="sourceCode" id="cb30">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> cards</a>
 <a class="sourceLine" id="cb30-2" title="2"><span class="op">&gt;&gt;&gt;</span> game <span class="op">=</span> cards.OldMaidGame()</a>
 <a class="sourceLine" id="cb30-3" title="3"><span class="op">&gt;&gt;&gt;</span> game.play([<span class="st">&quot;Allen&quot;</span>,<span class="st">&quot;Jeff&quot;</span>,<span class="st">&quot;Chris&quot;</span>])</a>
 <a class="sourceLine" id="cb30-4" title="4"><span class="op">----------</span> Cards have been dealt</a>
@@ -505,15 +1208,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb30-67" title="67">Hand Jeff contains</a>
 <a class="sourceLine" id="cb30-68" title="68">Queen of Spades</a>
 <a class="sourceLine" id="cb30-69" title="69"></a>
-<a class="sourceLine" id="cb30-70" title="70">Hand Chris <span class="kw">is</span> empty</a></code></pre></div>
-<p>So Jeff loses.</p>
-<h3 id="glossary">8.16. Glossary</h3>
-<p>encode</p>
-<p>To represent one set of values using another set of values by constructing a mapping between them.class attribute</p>
-<p>A variable that is defined inside a class definition but outside any method. Class attributes are accessible from any method in the class and are shared by all instances of the class.accumulator</p>
-<p>A variable used in a loop to accumulate a series of values, such as by concatenating them onto a string or adding them to a running sum.inheritance</p>
-<p>The ability to define a new class that is a modified version of a previously defined class.parent class</p>
-<p>The class from which a child class inherits.child class</p>
-<p>A new class created by inheriting from an existing class; also called a subclass.</p>
-</body>
+<a class="sourceLine" id="cb30-70" title="70">Hand Chris <span class="kw">is</span> empty</a></code></pre>
+    </div>
+    <p>So Jeff loses.</p>
+    <h3 id="glossary">8.16. Glossary</h3>
+    <p>encode</p>
+    <p>
+      To represent one set of values using another set of values by constructing
+      a mapping between them.class attribute
+    </p>
+    <p>
+      A variable that is defined inside a class definition but outside any
+      method. Class attributes are accessible from any method in the class and
+      are shared by all instances of the class.accumulator
+    </p>
+    <p>
+      A variable used in a loop to accumulate a series of values, such as by
+      concatenating them onto a string or adding them to a running
+      sum.inheritance
+    </p>
+    <p>
+      The ability to define a new class that is a modified version of a
+      previously defined class.parent class
+    </p>
+    <p>The class from which a child class inherits.child class</p>
+    <p>
+      A new class created by inheriting from an existing class; also called a
+      subclass.
+    </p>
+  </body>
 </html>

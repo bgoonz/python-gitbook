@@ -1,5 +1,4 @@
-Built-in Methods & Functions
-============================
+# Built-in Methods & Functions
 
 The purpose of Python `zip()` method is to **map the similar index of multiple containers** so that they can be used just using as single entity.
 

@@ -1,5 +1,4 @@
-D1-Graphs I
-===========
+# D1-Graphs I
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/graphs">@bgoonz/graphs</span>\#main.py” caption="" %}
 
@@ -9,14 +8,13 @@ D1-Graphs I
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%283%29.png)
 
-Objective 01 - Describe what a graph is, explain its components, provide examples of its useful applications, and draw each of the different graph types
---------------------------------------------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Describe what a graph is, explain its components, provide examples of its useful applications, and draw each of the different graph types
 
 ### Overview <span id="overview"></span>
 
 #### What Are Graphs? <span id="what-are-graphs"></span>
 
-Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops. By this definition, *all trees are graphs, but not all graphs are trees.*
+Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops. By this definition, _all trees are graphs, but not all graphs are trees._
 
 #### Components of Graphs <span id="components-of-graphs"></span>
 
@@ -64,7 +62,7 @@ If you can form a cycle (for example, follow the edges and arrive again at an al
 
 ![](https://camo.githubusercontent.com/e23529f1bd2dfe3227dee64fe174252b0c310d1a/68747470733a2f2f692e696d6775722e636f6d2f58764d44616c302e6a7067)
 
-*Note: any undirected graph is automatically cyclic since you can always travel back across the same edge.*
+_Note: any undirected graph is automatically cyclic since you can always travel back across the same edge._
 
 If you cannot form a cycle (for example, you cannot arrive at an already-visited vert by following the edges), we call the graph **acyclic**. In the example below, no matter which vert you start at, you cannot follow edges in such a way that you can arrive at an already-visited vert.
 
@@ -80,7 +78,7 @@ The weights represent different data in different graphs. In a graph representin
 
 We can further modify weights. For example, if you were building a graph representing a map for bicycle routes, we could give roads with bad car traffic or very steep inclines unnaturally large weights. That way, a routing algorithm would be unlikely to take them. (This is how Google Maps avoids freeways when you ask it for walking directions.)
 
-*Note:* [*Djikstra’s Algorithm (Links to an external site.)*](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) *is a graph search variant that accounts for edge weights.*
+_Note:_ [_Djikstra’s Algorithm (Links to an external site.)_](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) _is a graph search variant that accounts for edge weights._
 
 **Directed Acyclic Graphs (DAGs)**
 
@@ -90,9 +88,9 @@ A **directed acyclic graph (DAG)** is a directed graph with no cycles. In other 
 
 A DAG has several applications. DAGs can model many different kinds of information. Below is a small list of possible applications:
 
--   A spreadsheet where a vertex represents each cell and an edge for where one cell’s formula uses another cell’s value.
--   The milestones and activities of largescale projects where a topological ordering can help optimize the projects’ schedule to use as little time as possible.
--   Collections of events and their influence on each other like family trees or version histories.
+- A spreadsheet where a vertex represents each cell and an edge for where one cell’s formula uses another cell’s value.
+- The milestones and activities of largescale projects where a topological ordering can help optimize the projects’ schedule to use as little time as possible.
+- Collections of events and their influence on each other like family trees or version histories.
 
 It is also notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit (in a branch). A child could come from one parent commit or two (in the case of a merge). But there’s no way to go back and form a repeating loop in the git commit hierarchy.
 
@@ -102,7 +100,7 @@ Before you draw graphs on your own, let’s draw some graphs together. For each 
 
 #### Exercise 1 <span id="exercise-1"></span>
 
-*Draw an undirected graph of 8 verts.*
+_Draw an undirected graph of 8 verts._
 
 Remember, from our definitions above that an undirected graph has bidirectional edges. So, we can draw eight verts and then connect them with solid lines (not arrows) anyway we see fit.
 
@@ -110,15 +108,15 @@ Remember, from our definitions above that an undirected graph has bidirectional 
 
 #### Exercise 2 <span id="exercise-2"></span>
 
-*Draw a directed graph of 7 verts.*
+_Draw a directed graph of 7 verts._
 
-A directed graph has at least one edge that is *not* bidirectional. So, again, we can draw our seven verts and then connect them with edges. This time, we need to make sure that one of the edges is an arrow pointing in only one direction.
+A directed graph has at least one edge that is _not_ bidirectional. So, again, we can draw our seven verts and then connect them with edges. This time, we need to make sure that one of the edges is an arrow pointing in only one direction.
 
 ![](https://camo.githubusercontent.com/53c2b80679e6731818f5bb72fecdf17579dd0f70/68747470733a2f2f692e696d6775722e636f6d2f3870436f6568412e6a7067)
 
 #### Exercise 3 <span id="exercise-3"></span>
 
-*Draw a cyclic directed graph of 5 verts.*
+_Draw a cyclic directed graph of 5 verts._
 
 This drawing will be similar to one for Exercise 2 because it is a directed graph. However, in this graph, we also need to ensure that it has at least one cycle. Remember that a cycle is when you can follow the graph’s edges and arrive at a vertex that you’ve already visited.
 
@@ -128,7 +126,7 @@ To draw this graph, we will draw our five verts and then draw our edges, making 
 
 #### Exercise 4 <span id="exercise-4"></span>
 
-*Draw a directed acyclic graph (DAG) of 8 verts.*
+_Draw a directed acyclic graph (DAG) of 8 verts._
 
 Again, this graph will be directed. The difference is that it will be acyclic—we can order a DAG’s vertices linearly so that every edge is directed from earlier to later in the sequence.
 
@@ -147,12 +145,11 @@ Draw one graph for each of the descriptions below:
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 (Links to an external site.)](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
+- [https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8 (Links to an external site.)](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%281%29.png)
 
-Objective 02 - Represent a graph as an adjacency list and an adjacency matrix and compare and contrast the respective representations
--------------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Represent a graph as an adjacency list and an adjacency matrix and compare and contrast the respective representations
 
 ### Overview <span id="overview"></span>
 
@@ -184,7 +181,7 @@ Below is a representation of the graph above in Python:
                                 "G": {"A", "F"}
                             }
 
-Notice that this adjacency *list* doesn’t use any lists. The `vertices` collection is a `dictionary` which lets us access each collection of edges in O(1) constant time. Because a `set` contains the edges, we can check for edges in O(1) constant time.
+Notice that this adjacency _list_ doesn’t use any lists. The `vertices` collection is a `dictionary` which lets us access each collection of edges in O(1) constant time. Because a `set` contains the edges, we can check for edges in O(1) constant time.
 
 **Adjacency Matrix**
 
@@ -218,23 +215,23 @@ In all the following examples, we are using the following shorthand to denote th
 
 **Adjacency Matrix**
 
-*Complexity*: `O(V^2)` space
+_Complexity_: `O(V^2)` space
 
 Consider a dense graph where each vertex points to each other vertex. Here, the total number of edges will approach V^2. This fact means that regardless of whether you choose an adjacency list or an adjacency matrix, both will have a comparable space complexity. However, dictionaries and sets are less space-efficient than lists. So, for dense graphs (graphs with a high average number of edges per vertex), the adjacency matrix is more efficient because it uses lists instead of dictionaries and sets.
 
 **Adjacency List**
 
-*Complexity*: `O(V+E)` space
+_Complexity_: `O(V+E)` space
 
 Consider a sparse graph with 100 vertices and only one edge. An adjacency list would have to store all 100 vertices but only needs to keep track of that single edge. The adjacency matrix would need to store 100x100=10,000 connections, even though all but one would be 0.
 
-*Takeaway: The worst-case storage of an adjacency list occurs when the graph is dense. The matrix and list representation have the same complexity (`O(V^2)`). However, for the general case, the list representation is usually more desirable. Also, since finding a vertex’s neighbors is a common task, and adjacency lists make this operation more straightforward, it is most common to use adjacency lists to represent graphs.*
+_Takeaway: The worst-case storage of an adjacency list occurs when the graph is dense. The matrix and list representation have the same complexity (`O(V^2)`). However, for the general case, the list representation is usually more desirable. Also, since finding a vertex’s neighbors is a common task, and adjacency lists make this operation more straightforward, it is most common to use adjacency lists to represent graphs._
 
 **Add Vertex**
 
 **Adjacency Matrix**
 
-*Complexity*: `O(V)` time
+_Complexity_: `O(V)` time
 
 For an adjacency matrix, we would need to add a new value to the end of each existing row and add a new row.
 
@@ -249,7 +246,7 @@ Remember that with Python lists, appending to the end of a list is `O(1)` becaus
 
 **Adjacency List**
 
-*Complexity*: `O(1)` time
+_Complexity_: `O(1)` time
 
 Adding a vertex is simple in an adjacency list:
 
@@ -257,29 +254,29 @@ Adding a vertex is simple in an adjacency list:
 
 Adding a new key to a dictionary is a constant-time operation.
 
-*Takeaway: Adding vertices is very inefficient for adjacency matrices but very efficient for adjacency lists.*
+_Takeaway: Adding vertices is very inefficient for adjacency matrices but very efficient for adjacency lists._
 
 **Remove Vertex**
 
 **Adjacency Matrix**
 
-*Complexity*: `O(V^2)`
+_Complexity_: `O(V^2)`
 
 Removing vertices is inefficient in both representations. In an adjacency matrix, we need to remove the removed vertex’s row and then remove that column from each row. Removing an element from a list requires moving everything after that element over by one slot, which takes an average of `V/2` operations. Since we need to do that for every single row in our matrix, that results in `V^2` time complexity. We need to reduce each vertex index after our removed index by one as well, which doesn’t add to our quadratic time complexity but adds extra operations.
 
 **Adjacency List**
 
-*Complexity*: `O(V)`
+_Complexity_: `O(V)`
 
 We need to visit each vertex for an adjacency list and remove all edges pointing to our removed vertex. Removing elements from sets and dictionaries is an `O(1)` operation, resulting in an overall `O(V)` time complexity.
 
-*Takeaway: Removing vertices is inefficient in both adjacency matrices and lists but more efficient in lists.*
+_Takeaway: Removing vertices is inefficient in both adjacency matrices and lists but more efficient in lists._
 
 **Add Edge**
 
 **Adjacency Matrix**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Adding an edge in an adjacency matrix is simple:
 
@@ -287,7 +284,7 @@ Adding an edge in an adjacency matrix is simple:
 
 **Adjacency List**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Adding an edge in an adjacency list is simple:
 
@@ -295,13 +292,13 @@ Adding an edge in an adjacency list is simple:
 
 Both are constant-time operations.
 
-*Takeaway: Adding edges to both adjacency matrices and lists is very efficient.*
+_Takeaway: Adding edges to both adjacency matrices and lists is very efficient._
 
 **Remove Edge**
 
 **Adjacency Matrix**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Removing an edge from an adjacency matrix is simple:
 
@@ -309,7 +306,7 @@ Removing an edge from an adjacency matrix is simple:
 
 **Adjacency List**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Removing an edge from an adjacency list is simple:
 
@@ -317,13 +314,13 @@ Removing an edge from an adjacency list is simple:
 
 Both are constant-time operations.
 
-*Takeaway: Removing edges from both adjacency matrices and lists is very efficient.*
+_Takeaway: Removing edges from both adjacency matrices and lists is very efficient._
 
 **Find Edge**
 
 **Adjacency Matrix**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Finding an edge in an adjacency matrix is simple:
 
@@ -331,7 +328,7 @@ Finding an edge in an adjacency matrix is simple:
 
 **Adjacency List**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 Finding an edge in an adjacency list is simple:
 
@@ -339,7 +336,7 @@ Finding an edge in an adjacency list is simple:
 
 Both are constant-time operations.
 
-*Takeaway: Finding edges in both adjacency matrices and lists is very efficient.*
+_Takeaway: Finding edges in both adjacency matrices and lists is very efficient._
 
 **Get All Edges from Vertex**
 
@@ -347,7 +344,7 @@ You can use several commands if you want to know all the edges originating from 
 
 **Adjacency Matrix**
 
-*Complexity*: `O(V)`
+_Complexity_: `O(V)`
 
 In an adjacency matrix, this is complicated. You would need to iterate through the entire row and populate a list based on the results:
 
@@ -359,13 +356,13 @@ In an adjacency matrix, this is complicated. You would need to iterate through t
 
 **Adjacency List**
 
-*Complexity*: `O(1)`
+_Complexity_: `O(1)`
 
 With an adjacency list, this is as simple as returning the value from the vertex dictionary:
 
     return self.vertex[v]
 
-*Takeaway: Fetching all edges is less efficient in an adjacency matrix than an adjacency list.*
+_Takeaway: Fetching all edges is less efficient in an adjacency matrix than an adjacency list._
 
 **Summary**
 
@@ -420,12 +417,11 @@ Now, we need to implement an adjacency matrix. Remember, that one benefit of the
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   <https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs>
+- <https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%284%29.png)
 
-Objective 03 - Implement user-defined Vertex and Graph classes that allow basic operations
-------------------------------------------------------------------------------------------
+## Objective 03 - Implement user-defined Vertex and Graph classes that allow basic operations
 
 ### Overview <span id="overview"></span>
 
@@ -626,7 +622,7 @@ Load the `Vertex` class and `Graph` class into an interactive Python environment
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   <https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/>
+- <https://www.geeksforgeeks.org/generate-graph-using-dictionary-python/>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29%20%282%29.png)
 

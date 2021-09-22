@@ -1,5 +1,4 @@
-Strings
-=======
+# Strings
 
     """
     Strings are an ordered collection of unicode characters that cannot be

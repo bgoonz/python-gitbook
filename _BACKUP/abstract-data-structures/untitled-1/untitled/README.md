@@ -1,5 +1,4 @@
-Exotic
-======
+# Exotic
 
 {% tabs %} {% tab title=“num-class” %}
 

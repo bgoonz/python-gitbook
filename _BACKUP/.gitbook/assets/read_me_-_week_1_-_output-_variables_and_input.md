@@ -4,7 +4,7 @@ This week starts with some theory around Input/Process/Output and what an algori
 
 There is a lot in this first week, don’t be afraid to slow it down and really ensure that students have mastered these concepts. There are lots of similar tasks available online that you can use to supplement the ones in these resources. I can particularly recommend:
 
-[<span class="underline">https://www.w3schools.com/python/python\_exercises.asp</span>](https://www.w3schools.com/python/python_exercises.asp)
+[<span class="underline">https://www.w3schools.com/python/python_exercises.asp</span>](https://www.w3schools.com/python/python_exercises.asp)
 
 [<span class="underline">https://www.practicepython.org/</span>](https://www.practicepython.org/)
 
@@ -16,21 +16,21 @@ Once you have explained this we move on to coding output using the **print** sta
 
 At first, you start with printing set text (called strings). In later tasks you use variables to store text and refer back to it. Variables are used in a very similar way to letters in algebra - they represent the text. Students can call variables anything they like, but there are some good practice principles:
 
--   No two variables can have the same name.
+- No two variables can have the same name.
 
--   Variable names should be meaningful (give you a clue as to the data
+- Variable names should be meaningful (give you a clue as to the data
 
-    > stored therein
+  > stored therein
 
--   Variable names start with a lowercase letter.
+- Variable names start with a lowercase letter.
 
--   Variable names cannot contain spaces.
+- Variable names cannot contain spaces.
 
--   If a variable name is more than one word long, capitalise the first
+- If a variable name is more than one word long, capitalise the first
 
-    > letter of the second word onwards, like this this is known as \[**<span class="underline">camel &gt; case</span>**\](https://en.wikipedia.org/wiki/Camel\_case\#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):
+  > letter of the second word onwards, like this this is known as \[**<span class="underline">camel &gt; case</span>**\](https://en.wikipedia.org/wiki/Camel\_case\#:~:text=Camel%20case%20(stylized%20as%20camelCase,no%20intervening%20spaces%20or%20punctuation.):
 
-    -   ***thisIsAnExampleVariableName***
+  - **_thisIsAnExampleVariableName_**
 
 #### Key Concepts
 

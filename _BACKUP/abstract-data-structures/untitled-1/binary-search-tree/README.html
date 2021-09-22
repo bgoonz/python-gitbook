@@ -1,85 +1,218 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="binary-search-tree">Binary Search Tree</h1>
-<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/BST">@bgoonz/BST</span>” %}</p>
-<p>{% tabs %} {% tab title=“bst.py” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> BSTNode:</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="binary-search-tree">Binary Search Tree</h1>
+    <p>
+      {% embed url=“https://replit.com/<span
+        class="citation"
+        data-cites="bgoonz/BST"
+        >@bgoonz/BST</span
+      >” %}
+    </p>
+    <p>{% tabs %} {% tab title=“bst.py” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb1-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb1-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb1-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -147,10 +280,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-66" title="66"></a>
 <a class="sourceLine" id="cb1-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
 <a class="sourceLine" id="cb1-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
-<a class="sourceLine" id="cb1-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<p>{% tabs %} {% tab title=“bst.py” %}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb1-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <p>{% tabs %} {% tab title=“bst.py” %}</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb2-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb2-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -286,10 +423,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-134" title="134"></a>
 <a class="sourceLine" id="cb2-135" title="135"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
 <a class="sourceLine" id="cb2-136" title="136"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
-<a class="sourceLine" id="cb2-137" title="137"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<p>{% tabs %} {% tab title=“bst.py” %}</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb2-137" title="137"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <p>{% tabs %} {% tab title=“bst.py” %}</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb3-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb3-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -357,10 +498,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-66" title="66"></a>
 <a class="sourceLine" id="cb3-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
 <a class="sourceLine" id="cb3-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
-<a class="sourceLine" id="cb3-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<p>{% tabs %} {% tab title=“Implementation” %}</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Implement a Binary Search Tree (BST) that can insert values and check if</span></a>
+<a class="sourceLine" id="cb3-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <p>{% tabs %} {% tab title=“Implementation” %}</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Implement a Binary Search Tree (BST) that can insert values and check if</span></a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="co"># values are present</span></a>
 <a class="sourceLine" id="cb4-3" title="3"></a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
@@ -426,10 +571,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-64" title="64"><span class="co"># Should be True</span></a>
 <a class="sourceLine" id="cb4-65" title="65"><span class="bu">print</span> tree.search(<span class="dv">4</span>)</a>
 <a class="sourceLine" id="cb4-66" title="66"><span class="co"># Should be False</span></a>
-<a class="sourceLine" id="cb4-67" title="67"><span class="bu">print</span> tree.search(<span class="dv">6</span>)</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Preorder Operations” %}</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb4-67" title="67"><span class="bu">print</span> tree.search(<span class="dv">6</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Preorder Operations” %}</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
 <a class="sourceLine" id="cb5-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb5-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb5-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -501,10 +650,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-70" title="70"></a>
 <a class="sourceLine" id="cb5-71" title="71"><span class="co"># Test print_tree</span></a>
 <a class="sourceLine" id="cb5-72" title="72"><span class="co"># Should be 1-2-4-5-3</span></a>
-<a class="sourceLine" id="cb5-73" title="73"><span class="bu">print</span>(tree.print_tree())</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“bst.py” %}</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb5-73" title="73"><span class="bu">print</span>(tree.print_tree())</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“bst.py” %}</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb6-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb6-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb6-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -572,10 +725,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-66" title="66"></a>
 <a class="sourceLine" id="cb6-67" title="67"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">8</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
 <a class="sourceLine" id="cb6-68" title="68"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">7</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a>
-<a class="sourceLine" id="cb6-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Another One” %}</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Node:</a>
+<a class="sourceLine" id="cb6-69" title="69"><span class="bu">print</span>(<span class="ss">f&quot;does 8 exist? </span><span class="sc">{</span>root<span class="sc">.</span>search(<span class="dv">15</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Another One” %}</p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> Node:</a>
 <a class="sourceLine" id="cb7-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb7-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb7-4" title="4">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
@@ -745,20 +902,80 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb7-168" title="168">a.delete(<span class="dv">12</span>)</a>
 <a class="sourceLine" id="cb7-169" title="169"><span class="bu">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">To cross-check deletion, printing preorder:&quot;</span>)</a>
 <a class="sourceLine" id="cb7-170" title="170">a.PreOrder()</a>
-<a class="sourceLine" id="cb7-171" title="171"><span class="co"># In[ ]:</span></a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<p>The following is the definition of Binary Search Tree(BST) according to <a href="http://en.wikipedia.org/wiki/Binary_search_tree">Wikipedia</a> Binary Search Tree is a node-based binary tree data structure which has the following properties:</p>
-<ul>
-<li>The left subtree of a node contains only nodes with keys lesser than the node’s key.</li>
-<li>The right subtree of a node contains only nodes with keys greater than the node’s key.</li>
-<li>The left and right subtree each must also be a binary search tree. There must be no duplicate nodes.</li>
-</ul>
-<figure>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="200px-Binary_search_tree.svg" /><figcaption>200px-Binary_search_tree.svg</figcaption>
-</figure>
-<p>The above properties of Binary Search Tree provides an ordering among keys so that the operations like search, minimum and maximum can be done fast. If there is no ordering, then we may have to compare every key to search for a given key.</p>
-<p><strong>Searching a key</strong> For searching a value, if we had a sorted array we could have performed a binary search. Let’s say we want to search a number in the array what we do in binary search is we first define the complete list as our search space, the number can exist only within the search space. Now we compare the number to be searched or the element to be searched with the mid element of the search space or the median and if the record being searched is lesser we go searching in the left half else we go searching in the right half, in case of equality we have found the element. In binary search we start with <strong>‘n’</strong> elements in search space and then if the mid element is not the element that we are looking for, we reduce the search space to <strong>‘n/2’</strong> and we go on reducing the search space till we either find the record that we are looking for or we get to only one element in search space and be done with this whole reduction. Search operation in binary search tree will be very similar. Let’s say we want to search for the number, what we’ll do is we’ll start at the root, and then we will compare the value to be searched with the value of the root if it’s equal we are done with the search if it’s lesser we know that we need to go to the left subtree because in a binary search tree all the elements in the left subtree are lesser and all the elements in the right subtree are greater. Searching an element in the binary search tree is basically this traversal in which at each step we will go either towards left or right and hence in at each step we discard one of the sub-trees. If the tree is balanced, we call a tree balanced if for all nodes the difference between the heights of left and right subtrees is not greater than one, we will start with a search space of <strong>‘n’</strong>nodes and when we will discard one of the sub-trees we will discard <strong>‘n/2’</strong> nodes so our search space will be reduced to <strong>‘n/2’</strong> and then in the next step we will reduce the search space to <strong>‘n/4’</strong> and we will go on reducing like this till we find the element or till our search space is reduced to only one node. The search here is also a binary search and that’s why the name binary search tree.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"></a>
+<a class="sourceLine" id="cb7-171" title="171"><span class="co"># In[ ]:</span></a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <p>
+      The following is the definition of Binary Search Tree(BST) according to
+      <a href="http://en.wikipedia.org/wiki/Binary_search_tree">Wikipedia</a>
+      Binary Search Tree is a node-based binary tree data structure which has
+      the following properties:
+    </p>
+    <ul>
+      <li>
+        The left subtree of a node contains only nodes with keys lesser than the
+        node’s key.
+      </li>
+      <li>
+        The right subtree of a node contains only nodes with keys greater than
+        the node’s key.
+      </li>
+      <li>
+        The left and right subtree each must also be a binary search tree. There
+        must be no duplicate nodes.
+      </li>
+    </ul>
+    <figure>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png"
+        alt="200px-Binary_search_tree.svg"
+      />
+      <figcaption>200px-Binary_search_tree.svg</figcaption>
+    </figure>
+    <p>
+      The above properties of Binary Search Tree provides an ordering among keys
+      so that the operations like search, minimum and maximum can be done fast.
+      If there is no ordering, then we may have to compare every key to search
+      for a given key.
+    </p>
+    <p>
+      <strong>Searching a key</strong> For searching a value, if we had a sorted
+      array we could have performed a binary search. Let’s say we want to search
+      a number in the array what we do in binary search is we first define the
+      complete list as our search space, the number can exist only within the
+      search space. Now we compare the number to be searched or the element to
+      be searched with the mid element of the search space or the median and if
+      the record being searched is lesser we go searching in the left half else
+      we go searching in the right half, in case of equality we have found the
+      element. In binary search we start with <strong>‘n’</strong> elements in
+      search space and then if the mid element is not the element that we are
+      looking for, we reduce the search space to <strong>‘n/2’</strong> and we
+      go on reducing the search space till we either find the record that we are
+      looking for or we get to only one element in search space and be done with
+      this whole reduction. Search operation in binary search tree will be very
+      similar. Let’s say we want to search for the number, what we’ll do is
+      we’ll start at the root, and then we will compare the value to be searched
+      with the value of the root if it’s equal we are done with the search if
+      it’s lesser we know that we need to go to the left subtree because in a
+      binary search tree all the elements in the left subtree are lesser and all
+      the elements in the right subtree are greater. Searching an element in the
+      binary search tree is basically this traversal in which at each step we
+      will go either towards left or right and hence in at each step we discard
+      one of the sub-trees. If the tree is balanced, we call a tree balanced if
+      for all nodes the difference between the heights of left and right
+      subtrees is not greater than one, we will start with a search space of
+      <strong>‘n’</strong>nodes and when we will discard one of the sub-trees we
+      will discard <strong>‘n/2’</strong> nodes so our search space will be
+      reduced to <strong>‘n/2’</strong> and then in the next step we will reduce
+      the search space to <strong>‘n/4’</strong> and we will go on reducing like
+      this till we find the element or till our search space is reduced to only
+      one node. The search here is also a binary search and that’s why the name
+      binary search tree.
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"></a>
 <a class="sourceLine" id="cb8-2" title="2"><span class="co"># A utility function to search a given key in BST</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="kw">def</span> search(root,key):</a>
 <a class="sourceLine" id="cb8-4" title="4"></a>
@@ -771,25 +988,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-11" title="11">        <span class="cf">return</span> search(root.right,key)</a>
 <a class="sourceLine" id="cb8-12" title="12"></a>
 <a class="sourceLine" id="cb8-13" title="13">    <span class="co"># Key is smaller than root&#39;s key</span></a>
-<a class="sourceLine" id="cb8-14" title="14">    <span class="cf">return</span> search(root.left,key)</a></code></pre></div>
-<p><strong>Illustration to search 6 in below tree:</strong></p>
-<ol type="1">
-<li>Start from the root.</li>
-<li>Compare the searching element with root, if less than root, then recurse for left, else recurse for right.</li>
-<li>If the element to search is found anywhere, return true, else return false.</li>
-</ol>
-<figure>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="bstsearch" /><figcaption>bstsearch</figcaption>
-</figure>
-<p><strong>Insertion of a key</strong> A new key is always inserted at the leaf. We start searching a key from the root until we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">         <span class="dv">100</span>                               <span class="dv">100</span></a>
+<a class="sourceLine" id="cb8-14" title="14">    <span class="cf">return</span> search(root.left,key)</a></code></pre>
+    </div>
+    <p><strong>Illustration to search 6 in below tree:</strong></p>
+    <ol type="1">
+      <li>Start from the root.</li>
+      <li>
+        Compare the searching element with root, if less than root, then recurse
+        for left, else recurse for right.
+      </li>
+      <li>
+        If the element to search is found anywhere, return true, else return
+        false.
+      </li>
+    </ol>
+    <figure>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png"
+        alt="bstsearch"
+      />
+      <figcaption>bstsearch</figcaption>
+    </figure>
+    <p>
+      <strong>Insertion of a key</strong> A new key is always inserted at the
+      leaf. We start searching a key from the root until we hit a leaf node.
+      Once a leaf node is found, the new node is added as a child of the leaf
+      node.
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">         <span class="dv">100</span>                               <span class="dv">100</span></a>
 <a class="sourceLine" id="cb9-2" title="2">        <span class="op">/</span>   <span class="op">\</span>        Insert <span class="dv">40</span>            <span class="op">/</span>    <span class="op">\</span></a>
 <a class="sourceLine" id="cb9-3" title="3">      <span class="dv">20</span>     <span class="dv">500</span>    <span class="op">---------&gt;</span>          <span class="dv">20</span>     <span class="dv">500</span></a>
 <a class="sourceLine" id="cb9-4" title="4">     <span class="op">/</span>  <span class="op">\</span>                              <span class="op">/</span>  <span class="op">\</span></a>
 <a class="sourceLine" id="cb9-5" title="5">    <span class="dv">10</span>   <span class="dv">30</span>                           <span class="dv">10</span>   <span class="dv">30</span></a>
 <a class="sourceLine" id="cb9-6" title="6">                                              <span class="op">\</span></a>
-<a class="sourceLine" id="cb9-7" title="7">                                              <span class="dv">40</span></a></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># Python program to demonstrate</span></a>
+<a class="sourceLine" id="cb9-7" title="7">                                              <span class="dv">40</span></a></code></pre>
+    </div>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># Python program to demonstrate</span></a>
 <a class="sourceLine" id="cb10-2" title="2"><span class="co"># insert operation in binary search tree</span></a>
 <a class="sourceLine" id="cb10-3" title="3"></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="co"># A utility class that represents</span></a>
@@ -845,72 +1085,161 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-54" title="54">r <span class="op">=</span> insert(r, <span class="dv">80</span>)</a>
 <a class="sourceLine" id="cb10-55" title="55"></a>
 <a class="sourceLine" id="cb10-56" title="56"><span class="co"># Print inoder traversal of the BST</span></a>
-<a class="sourceLine" id="cb10-57" title="57">inorder(r)</a></code></pre></div>
-<p><strong>Output</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">20</span></a>
+<a class="sourceLine" id="cb10-57" title="57">inorder(r)</a></code></pre>
+    </div>
+    <p><strong>Output</strong></p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">20</span></a>
 <a class="sourceLine" id="cb11-2" title="2"><span class="dv">30</span></a>
 <a class="sourceLine" id="cb11-3" title="3"><span class="dv">40</span></a>
 <a class="sourceLine" id="cb11-4" title="4"><span class="dv">50</span></a>
 <a class="sourceLine" id="cb11-5" title="5"><span class="dv">60</span></a>
 <a class="sourceLine" id="cb11-6" title="6"><span class="dv">70</span></a>
-<a class="sourceLine" id="cb11-7" title="7"><span class="dv">80</span></a></code></pre></div>
-<p><strong>Illustration to insert 2 in below tree:</strong></p>
-<ol type="1">
-<li>Start from the root.</li>
-<li>Compare the inserting element with root, if less than root, then recurse for left, else recurse for right.</li>
-<li>After reaching the end, just insert that node at left(if less than current) else right.</li>
-</ol>
-<figure>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png" alt="bstsearch" /><figcaption>bstsearch</figcaption>
-</figure>
-<p><strong>Time Complexity:</strong> The worst-case time complexity of search and insert operations is O(h) where h is the height of the Binary Search Tree. In the worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert operation may become O(n).</p>
-<p><strong>Insertion using loop:</strong></p>
-<p>****</p>
-<p><strong>Output</strong></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="dv">10</span> <span class="dv">15</span> <span class="dv">20</span> <span class="dv">30</span> <span class="dv">40</span> <span class="dv">50</span> <span class="dv">60</span></a></code></pre></div>
-<p><strong>Some Interesting Facts:</strong></p>
-<ul>
-<li>Inorder traversal of BST always produces sorted output.</li>
-<li>We can construct a BST with only Preorder or Postorder or Level Order traversal. Note that we can always get inorder traversal by sorting the only given traversal.</li>
-<li><a href="https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-using-catalan-number/">Number of unique BSTs with n distinct keys is Catalan Number</a></li>
-</ul>
-<p><strong>Related Links:</strong></p>
-<ul>
-<li><a href="https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/">Binary Search Tree Delete Operation</a></li>
-<li><a href="https://www.geeksforgeeks.org/data-structure-gq/binary-search-trees-gq/">Quiz on Binary Search Tree</a></li>
-<li><a href="https://practice.geeksforgeeks.org/tag-page.php?tag=BST&amp;isCmp=0">Coding practice on BST</a></li>
-<li><a href="https://www.geeksforgeeks.org/binary-search-tree/">All Articles on BST</a></li>
-</ul>
-<p>****</p>
-<p>****</p>
-<p>BST</p>
-<figure>
-<img src="https://qvault.io/wp-content/uploads/2021/01/bst.jpg" alt="Binary Search Tree" /><figcaption>Binary Search Tree</figcaption>
-</figure>
-<h4 id="pros-of-a-bst">Pros of a BST</h4>
-<ul>
-<li>When balanced, a BST provides lightning-fast <code>O(log(n))</code> insertions, deletions, and lookups.</li>
-<li>Binary search trees are pretty simple. An ordinary BST, unlike a balanced tree like a red-black tree, requires very little code to get running.</li>
-</ul>
-<h4 id="cons-of-a-bst">Cons of a BST</h4>
-<ul>
-<li>Slow for a brute-force search. If you need to iterate over each node, you might have more success with an array.</li>
-<li>When the tree becomes unbalanced, all fast <code>O(log(n))</code> operations quickly degrade to <code>O(n)</code>.</li>
-<li>Since pointers to whole objects are typically involved, a BST can require quite a bit more memory than an array, although this depends on the implementation.</li>
-</ul>
-<h3 id="implementing-a-bst-in-python">Implementing a BST in Python</h3>
-<h4 id="step-1-bstnode-class">Step 1 – BSTNode Class</h4>
-<p>Our implementation won’t use a <code>Tree</code> class, but instead just a <code>Node</code> class. Binary trees are really just a pointer to a root node that in turn connects to each child node, so we’ll run with that idea.</p>
-<p>First, we create a constructor:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb11-7" title="7"><span class="dv">80</span></a></code></pre>
+    </div>
+    <p><strong>Illustration to insert 2 in below tree:</strong></p>
+    <ol type="1">
+      <li>Start from the root.</li>
+      <li>
+        Compare the inserting element with root, if less than root, then recurse
+        for left, else recurse for right.
+      </li>
+      <li>
+        After reaching the end, just insert that node at left(if less than
+        current) else right.
+      </li>
+    </ol>
+    <figure>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/uploads/BSTSearch.png"
+        alt="bstsearch"
+      />
+      <figcaption>bstsearch</figcaption>
+    </figure>
+    <p>
+      <strong>Time Complexity:</strong> The worst-case time complexity of search
+      and insert operations is O(h) where h is the height of the Binary Search
+      Tree. In the worst case, we may have to travel from root to the deepest
+      leaf node. The height of a skewed tree may become n and the time
+      complexity of search and insert operation may become O(n).
+    </p>
+    <p><strong>Insertion using loop:</strong></p>
+    <p>****</p>
+    <p><strong>Output</strong></p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="dv">10</span> <span class="dv">15</span> <span class="dv">20</span> <span class="dv">30</span> <span class="dv">40</span> <span class="dv">50</span> <span class="dv">60</span></a></code></pre>
+    </div>
+    <p><strong>Some Interesting Facts:</strong></p>
+    <ul>
+      <li>Inorder traversal of BST always produces sorted output.</li>
+      <li>
+        We can construct a BST with only Preorder or Postorder or Level Order
+        traversal. Note that we can always get inorder traversal by sorting the
+        only given traversal.
+      </li>
+      <li>
+        <a
+          href="https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-using-catalan-number/"
+          >Number of unique BSTs with n distinct keys is Catalan Number</a
+        >
+      </li>
+    </ul>
+    <p><strong>Related Links:</strong></p>
+    <ul>
+      <li>
+        <a href="https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/"
+          >Binary Search Tree Delete Operation</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.geeksforgeeks.org/data-structure-gq/binary-search-trees-gq/"
+          >Quiz on Binary Search Tree</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://practice.geeksforgeeks.org/tag-page.php?tag=BST&amp;isCmp=0"
+          >Coding practice on BST</a
+        >
+      </li>
+      <li>
+        <a href="https://www.geeksforgeeks.org/binary-search-tree/"
+          >All Articles on BST</a
+        >
+      </li>
+    </ul>
+    <p>****</p>
+    <p>****</p>
+    <p>BST</p>
+    <figure>
+      <img
+        src="https://qvault.io/wp-content/uploads/2021/01/bst.jpg"
+        alt="Binary Search Tree"
+      />
+      <figcaption>Binary Search Tree</figcaption>
+    </figure>
+    <h4 id="pros-of-a-bst">Pros of a BST</h4>
+    <ul>
+      <li>
+        When balanced, a BST provides lightning-fast
+        <code>O(log(n))</code> insertions, deletions, and lookups.
+      </li>
+      <li>
+        Binary search trees are pretty simple. An ordinary BST, unlike a
+        balanced tree like a red-black tree, requires very little code to get
+        running.
+      </li>
+    </ul>
+    <h4 id="cons-of-a-bst">Cons of a BST</h4>
+    <ul>
+      <li>
+        Slow for a brute-force search. If you need to iterate over each node,
+        you might have more success with an array.
+      </li>
+      <li>
+        When the tree becomes unbalanced, all fast
+        <code>O(log(n))</code> operations quickly degrade to <code>O(n)</code>.
+      </li>
+      <li>
+        Since pointers to whole objects are typically involved, a BST can
+        require quite a bit more memory than an array, although this depends on
+        the implementation.
+      </li>
+    </ul>
+    <h3 id="implementing-a-bst-in-python">Implementing a BST in Python</h3>
+    <h4 id="step-1-bstnode-class">Step 1 – BSTNode Class</h4>
+    <p>
+      Our implementation won’t use a <code>Tree</code> class, but instead just a
+      <code>Node</code> class. Binary trees are really just a pointer to a root
+      node that in turn connects to each child node, so we’ll run with that
+      idea.
+    </p>
+    <p>First, we create a constructor:</p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb13-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, val<span class="op">=</span><span class="va">None</span>):</a>
 <a class="sourceLine" id="cb13-3" title="3">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb13-4" title="4">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
-<a class="sourceLine" id="cb13-5" title="5">        <span class="va">self</span>.val <span class="op">=</span> valCode language: Python (python)</a></code></pre></div>
-<p>We’ll allow a value (key) to be provided, but if one isn’t provided we’ll just set it to <code>None</code>. We’ll also initialize both children of the new node to <code>None</code>.</p>
-<h4 id="step-2-insert">Step 2 – Insert</h4>
-<p>We need a way to insert new data. The insert method is as follows:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">def</span> insert(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="va">self</span>.val <span class="op">=</span> valCode language: Python (python)</a></code></pre>
+    </div>
+    <p>
+      We’ll allow a value (key) to be provided, but if one isn’t provided we’ll
+      just set it to <code>None</code>. We’ll also initialize both children of
+      the new node to <code>None</code>.
+    </p>
+    <h4 id="step-2-insert">Step 2 – Insert</h4>
+    <p>We need a way to insert new data. The insert method is as follows:</p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">def</span> insert(<span class="va">self</span>, val):</a>
 <a class="sourceLine" id="cb14-2" title="2">    <span class="cf">if</span> <span class="kw">not</span> <span class="va">self</span>.val:</a>
 <a class="sourceLine" id="cb14-3" title="3">        <span class="va">self</span>.val <span class="op">=</span> val</a>
 <a class="sourceLine" id="cb14-4" title="4">        <span class="cf">return</span></a>
@@ -928,10 +1257,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb14-16" title="16">    <span class="cf">if</span> <span class="va">self</span>.right:</a>
 <a class="sourceLine" id="cb14-17" title="17">        <span class="va">self</span>.right.insert(val)</a>
 <a class="sourceLine" id="cb14-18" title="18">        <span class="cf">return</span></a>
-<a class="sourceLine" id="cb14-19" title="19">    <span class="va">self</span>.right <span class="op">=</span> BSTNode(val)Code language: Python (python)</a></code></pre></div>
-<p>If the node doesn’t yet have a value, we can just set the given value and return. If we ever try to insert a value that also exists, we can also simply return as this can be considered a <code>noop</code>. If the given value is less than our node’s value and we already have a left child then we recursively call <code>insert</code> on our left child. If we don’t have a left child yet then we just make the given value our new left child. We can do the same (but inverted) for our right side.</p>
-<h4 id="step-3-get-min-and-get-max">Step 3 – Get Min and Get Max</h4>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> get_min(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb14-19" title="19">    <span class="va">self</span>.right <span class="op">=</span> BSTNode(val)Code language: Python (python)</a></code></pre>
+    </div>
+    <p>
+      If the node doesn’t yet have a value, we can just set the given value and
+      return. If we ever try to insert a value that also exists, we can also
+      simply return as this can be considered a <code>noop</code>. If the given
+      value is less than our node’s value and we already have a left child then
+      we recursively call <code>insert</code> on our left child. If we don’t
+      have a left child yet then we just make the given value our new left
+      child. We can do the same (but inverted) for our right side.
+    </p>
+    <h4 id="step-3-get-min-and-get-max">Step 3 – Get Min and Get Max</h4>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">def</span> get_min(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb15-2" title="2">    current <span class="op">=</span> <span class="va">self</span></a>
 <a class="sourceLine" id="cb15-3" title="3">    <span class="cf">while</span> current.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb15-4" title="4">        current <span class="op">=</span> current.left</a>
@@ -941,10 +1282,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb15-8" title="8">    current <span class="op">=</span> <span class="va">self</span></a>
 <a class="sourceLine" id="cb15-9" title="9">    <span class="cf">while</span> current.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb15-10" title="10">        current <span class="op">=</span> current.right</a>
-<a class="sourceLine" id="cb15-11" title="11">    <span class="cf">return</span> current.valCode language: Python (python)</a></code></pre></div>
-<p><code>getMin</code> and <code>getMax</code> are useful helper functions, and they’re easy to write! They are simple recursive functions that traverse the edges of the tree to find the smallest or largest values stored therein.</p>
-<h4 id="step-4-delete">Step 4 – Delete</h4>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">def</span> delete(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb15-11" title="11">    <span class="cf">return</span> current.valCode language: Python (python)</a></code></pre>
+    </div>
+    <p>
+      <code>getMin</code> and <code>getMax</code> are useful helper functions,
+      and they’re easy to write! They are simple recursive functions that
+      traverse the edges of the tree to find the smallest or largest values
+      stored therein.
+    </p>
+    <h4 id="step-4-delete">Step 4 – Delete</h4>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">def</span> delete(<span class="va">self</span>, val):</a>
 <a class="sourceLine" id="cb16-2" title="2">    <span class="cf">if</span> <span class="va">self</span> <span class="op">==</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb16-3" title="3">        <span class="cf">return</span> <span class="va">self</span></a>
 <a class="sourceLine" id="cb16-4" title="4">    <span class="cf">if</span> val <span class="op">&lt;</span> <span class="va">self</span>.val:</a>
@@ -1000,11 +1350,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb16-54" title="54">        min_larger_node <span class="op">=</span> min_larger_node.left</a>
 <a class="sourceLine" id="cb16-55" title="55">    <span class="va">self</span>.val <span class="op">=</span> min_larger_node.val</a>
 <a class="sourceLine" id="cb16-56" title="56">    <span class="va">self</span>.right <span class="op">=</span> <span class="va">self</span>.right.delete(min_larger_node.val)</a>
-<a class="sourceLine" id="cb16-57" title="57">    <span class="cf">return</span> selfCode language: Python (python)</a></code></pre></div>
-<p>The delete operation is one of the more complex ones. It is a recursive function as well, but it also returns the new state of the given node after performing the delete operation. This allows a parent whose child has been deleted to properly set it’s <code>left</code> or <code>right</code> data member to <code>None</code>.</p>
-<h4 id="step-5-exists">Step 5 – Exists</h4>
-<p>The exists function is another simple recursive function that returns <code>True</code> or <code>False</code> depending on whether a given value already exists in the tree.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">def</span> exists(<span class="va">self</span>, val):</a>
+<a class="sourceLine" id="cb16-57" title="57">    <span class="cf">return</span> selfCode language: Python (python)</a></code></pre>
+    </div>
+    <p>
+      The delete operation is one of the more complex ones. It is a recursive
+      function as well, but it also returns the new state of the given node
+      after performing the delete operation. This allows a parent whose child
+      has been deleted to properly set it’s <code>left</code> or
+      <code>right</code> data member to <code>None</code>.
+    </p>
+    <h4 id="step-5-exists">Step 5 – Exists</h4>
+    <p>
+      The exists function is another simple recursive function that returns
+      <code>True</code> or <code>False</code> depending on whether a given value
+      already exists in the tree.
+    </p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">def</span> exists(<span class="va">self</span>, val):</a>
 <a class="sourceLine" id="cb17-2" title="2">    <span class="cf">if</span> val <span class="op">==</span> <span class="va">self</span>.val:</a>
 <a class="sourceLine" id="cb17-3" title="3">        <span class="cf">return</span> <span class="va">True</span></a>
 <a class="sourceLine" id="cb17-4" title="4"></a>
@@ -1015,37 +1379,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb17-9" title="9"></a>
 <a class="sourceLine" id="cb17-10" title="10">    <span class="cf">if</span> <span class="va">self</span>.right <span class="op">==</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb17-11" title="11">        <span class="cf">return</span> <span class="va">False</span></a>
-<a class="sourceLine" id="cb17-12" title="12">    <span class="cf">return</span> <span class="va">self</span>.right.exists(val)Code language: Python (python)</a></code></pre></div>
-<h4 id="step-6-inorder">Step 6 – Inorder</h4>
-<p>It’s useful to be able to print out the tree in a readable format. The <code>inorder</code> method print’s the values in the tree in the order of their keys.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">def</span> inorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb17-12" title="12">    <span class="cf">return</span> <span class="va">self</span>.right.exists(val)Code language: Python (python)</a></code></pre>
+    </div>
+    <h4 id="step-6-inorder">Step 6 – Inorder</h4>
+    <p>
+      It’s useful to be able to print out the tree in a readable format. The
+      <code>inorder</code> method print’s the values in the tree in the order of
+      their keys.
+    </p>
+    <div class="sourceCode" id="cb18">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">def</span> inorder(<span class="va">self</span>, vals):</a>
 <a class="sourceLine" id="cb18-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb18-3" title="3">        <span class="va">self</span>.left.inorder(vals)</a>
 <a class="sourceLine" id="cb18-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb18-5" title="5">        vals.append(<span class="va">self</span>.val)</a>
 <a class="sourceLine" id="cb18-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb18-7" title="7">        <span class="va">self</span>.right.inorder(vals)</a>
-<a class="sourceLine" id="cb18-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
-<h4 id="step-7-preorder">Step 7 – Preorder</h4>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">def</span> preorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb18-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre>
+    </div>
+    <h4 id="step-7-preorder">Step 7 – Preorder</h4>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">def</span> preorder(<span class="va">self</span>, vals):</a>
 <a class="sourceLine" id="cb19-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb19-3" title="3">        vals.append(<span class="va">self</span>.val)</a>
 <a class="sourceLine" id="cb19-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb19-5" title="5">        <span class="va">self</span>.left.preorder(vals)</a>
 <a class="sourceLine" id="cb19-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb19-7" title="7">        <span class="va">self</span>.right.preorder(vals)</a>
-<a class="sourceLine" id="cb19-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
-<h4 id="step-8-postorder">Step 8 – Postorder</h4>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> postorder(<span class="va">self</span>, vals):</a>
+<a class="sourceLine" id="cb19-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre>
+    </div>
+    <h4 id="step-8-postorder">Step 8 – Postorder</h4>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> postorder(<span class="va">self</span>, vals):</a>
 <a class="sourceLine" id="cb20-2" title="2">    <span class="cf">if</span> <span class="va">self</span>.left <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb20-3" title="3">        <span class="va">self</span>.left.postorder(vals)</a>
 <a class="sourceLine" id="cb20-4" title="4">    <span class="cf">if</span> <span class="va">self</span>.right <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb20-5" title="5">        <span class="va">self</span>.right.postorder(vals)</a>
 <a class="sourceLine" id="cb20-6" title="6">    <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb20-7" title="7">        vals.append(<span class="va">self</span>.val)</a>
-<a class="sourceLine" id="cb20-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
-<h4 id="using-the-bst">Using the BST</h4>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">def</span> main():</a>
+<a class="sourceLine" id="cb20-8" title="8">    <span class="cf">return</span> valsCode language: Python (python)</a></code></pre>
+    </div>
+    <h4 id="using-the-bst">Using the BST</h4>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">def</span> main():</a>
 <a class="sourceLine" id="cb21-2" title="2">    nums <span class="op">=</span> [<span class="dv">12</span>, <span class="dv">6</span>, <span class="dv">18</span>, <span class="dv">19</span>, <span class="dv">21</span>, <span class="dv">11</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">24</span>, <span class="dv">18</span>]</a>
 <a class="sourceLine" id="cb21-3" title="3">    bst <span class="op">=</span> BSTNode()</a>
 <a class="sourceLine" id="cb21-4" title="4">    <span class="cf">for</span> num <span class="kw">in</span> nums:</a>
@@ -1075,9 +1459,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb21-28" title="28">    <span class="bu">print</span>(<span class="st">&quot;12 exists:&quot;</span>)</a>
 <a class="sourceLine" id="cb21-29" title="29">    <span class="bu">print</span>(bst.exists(<span class="dv">12</span>))</a>
 <a class="sourceLine" id="cb21-30" title="30">    <span class="bu">print</span>(<span class="st">&quot;18 exists:&quot;</span>)</a>
-<a class="sourceLine" id="cb21-31" title="31">    <span class="bu">print</span>(bst.exists(<span class="dv">18</span>))Code language: Python (python)</a></code></pre></div>
-<h3 id="full-binary-search-tree-in-python">Full Binary Search Tree in Python</h3>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> BSTNode:</a>
+<a class="sourceLine" id="cb21-31" title="31">    <span class="bu">print</span>(bst.exists(<span class="dv">18</span>))Code language: Python (python)</a></code></pre>
+    </div>
+    <h3 id="full-binary-search-tree-in-python">
+      Full Binary Search Tree in Python
+    </h3>
+    <div class="sourceCode" id="cb22">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">class</span> BSTNode:</a>
 <a class="sourceLine" id="cb22-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, val<span class="op">=</span><span class="va">None</span>):</a>
 <a class="sourceLine" id="cb22-3" title="3">        <span class="va">self</span>.left <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb22-4" title="4">        <span class="va">self</span>.right <span class="op">=</span> <span class="va">None</span></a>
@@ -1175,23 +1565,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb22-96" title="96">            <span class="va">self</span>.right.postorder(vals)</a>
 <a class="sourceLine" id="cb22-97" title="97">        <span class="cf">if</span> <span class="va">self</span>.val <span class="kw">is</span> <span class="kw">not</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb22-98" title="98">            vals.append(<span class="va">self</span>.val)</a>
-<a class="sourceLine" id="cb22-99" title="99">        <span class="cf">return</span> valsCode language: Python (python)</a></code></pre></div>
-<h3 id="where-would-you-use-a-binary-search-tree-in-real-life">Where would you use a binary search tree in real life?</h3>
-<p>There are many applications of binary search trees in real life, and one of the most common use-cases is in storing indexes and keys in a database. For example, in MySQL or PostgresQL when you create a primary key column, what you’re really doing is creating a binary tree where the keys are the values of the column, and those nodes point to database rows. This lets the application easily search database rows by providing a key. For example, getting a user record by the <code>email</code> primary key.</p>
-<p>There are many applications of binary search trees in real life, and one of the most common use cases is storing indexes and keys in a database. For example, when you create a primary key column in MySQL or PostgresQL, you create a binary tree where the keys are the values of the column and the nodes point to database rows. This allows the application to easily search for database rows by specifying a key, for example, to find a user record using the email primary key.</p>
-<p>Other common uses include:</p>
-<ul>
-<li>Pathfinding algorithms in videogames (A*) use BSTs</li>
-<li>File compression using a Huffman encoding scheme uses a binary search tree</li>
-<li>Rendering calculations – Doom (1993) was famously the first game to use a BST</li>
-<li>Compilers for low-level coding languages parse syntax using a BST</li>
-<li>Almost every database in existence uses BSTs for key lookups</li>
-</ul>
-<h2 id="example-binary-tree">Example Binary Tree</h2>
-<h4 id="visual-aid">Visual Aid</h4>
-<h3 id="picture-alt"><img src="https://assets.aaonline.io/data_structures_algorithms/trees/images/graph_a.png" alt="picture alt" /></h3>
-<h4 id="example-code">Example Code</h4>
-<div class="sourceCode" id="cb23"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb22-99" title="99">        <span class="cf">return</span> valsCode language: Python (python)</a></code></pre>
+    </div>
+    <h3 id="where-would-you-use-a-binary-search-tree-in-real-life">
+      Where would you use a binary search tree in real life?
+    </h3>
+    <p>
+      There are many applications of binary search trees in real life, and one
+      of the most common use-cases is in storing indexes and keys in a database.
+      For example, in MySQL or PostgresQL when you create a primary key column,
+      what you’re really doing is creating a binary tree where the keys are the
+      values of the column, and those nodes point to database rows. This lets
+      the application easily search database rows by providing a key. For
+      example, getting a user record by the <code>email</code> primary key.
+    </p>
+    <p>
+      There are many applications of binary search trees in real life, and one
+      of the most common use cases is storing indexes and keys in a database.
+      For example, when you create a primary key column in MySQL or PostgresQL,
+      you create a binary tree where the keys are the values of the column and
+      the nodes point to database rows. This allows the application to easily
+      search for database rows by specifying a key, for example, to find a user
+      record using the email primary key.
+    </p>
+    <p>Other common uses include:</p>
+    <ul>
+      <li>Pathfinding algorithms in videogames (A*) use BSTs</li>
+      <li>
+        File compression using a Huffman encoding scheme uses a binary search
+        tree
+      </li>
+      <li>
+        Rendering calculations – Doom (1993) was famously the first game to use
+        a BST
+      </li>
+      <li>Compilers for low-level coding languages parse syntax using a BST</li>
+      <li>Almost every database in existence uses BSTs for key lookups</li>
+    </ul>
+    <h2 id="example-binary-tree">Example Binary Tree</h2>
+    <h4 id="visual-aid">Visual Aid</h4>
+    <h3 id="picture-alt">
+      <img
+        src="https://assets.aaonline.io/data_structures_algorithms/trees/images/graph_a.png"
+        alt="picture alt"
+      />
+    </h3>
+    <h4 id="example-code">Example Code</h4>
+    <div class="sourceCode" id="cb23">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
 <a class="sourceLine" id="cb23-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
 <a class="sourceLine" id="cb23-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
 <a class="sourceLine" id="cb23-4" title="4">    <span class="kw">this</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
@@ -1210,203 +1633,353 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb23-17" title="17"><span class="va">a</span>.<span class="at">right</span> <span class="op">=</span> c<span class="op">;</span></a>
 <a class="sourceLine" id="cb23-18" title="18"><span class="va">b</span>.<span class="at">left</span> <span class="op">=</span> d<span class="op">;</span></a>
 <a class="sourceLine" id="cb23-19" title="19"><span class="va">b</span>.<span class="at">right</span> <span class="op">=</span> e<span class="op">;</span></a>
-<a class="sourceLine" id="cb23-20" title="20"><span class="va">c</span>.<span class="at">right</span> <span class="op">=</span> f<span class="op">;</span></a></code></pre></div>
-<h2 id="terms">Terms</h2>
-<ul>
-<li>tree - graph with no cycles</li>
-<li>binary tree - tree where nodes have at most 2 nodes</li>
-<li>root - the ultimate parent, the single node of a tree that can access every other node through edges; by definition the root will not have a parent</li>
-<li>internal node - a node that has children</li>
-<li>leaf - a node that does not have any children</li>
-<li>path - a series of nodes that can be traveled through edges - for example A, B, E is a path through the above tree</li>
-</ul>
-<h2 id="search-patterns">Search Patterns</h2>
-<ul>
-<li>Breadth First Search - Check all nodes at a level before moving down a level
-<ul>
-<li>Think of this of searching horizontally in rows</li>
-</ul></li>
-<li><p>Depth First Search - Check the depth as far as it goes for one child, before</p>
-<p>moving on to the next child.</p>
-<ul>
-<li>Think of this as searching vertically in diagonals</li>
-<li>Pre-Order Traversal - Access the data of the current node, recursively visit the left sub tree, recursively visit the right sub tree
-<ul>
-<li>All the way to the left, top down, going right after other options have already been logged.</li>
-</ul></li>
-<li>In-Order Traversal - Recursively visit the left sub tree, access the data of the current node, recursively visit the right sub tree
-<ul>
-<li>In the order they were the “current root”, the actual return order of the recursive calls.</li>
-</ul></li>
-<li>Post-Order Traversal - Recursively visit the left sub tree, recursively visit the right sub tree, access the data of the current node.
-<ul>
-<li>Starting with the bottom most nodes working up through the tree</li>
-</ul></li>
-</ul></li>
-</ul>
-<h2 id="constraints">Constraints</h2>
-<ul>
-<li>Binary trees have at most two children per node</li>
-<li>Given any node of the tree, the values on the left must be strictly less than that node</li>
-<li>Given any node of the tree, the values on the right must be strictly greater than or equal to that node</li>
-<li>Given these constraints a binary tree is necessarily a sorted data structure</li>
-<li>The worst binary trees devolve into a linked list, the best are height balanced (think branching).</li>
-</ul>
-<h2 id="pseudocode-for-insertion">PseudoCode For Insertion</h2>
-<ul>
-<li>Create a new node</li>
-<li>Start at the root
-<ul>
-<li>Check if there is a root
-<ul>
-<li>If not the root becomes the new node</li>
-</ul></li>
-<li>If there is a root check if the value of the new node is equal to, greater then, or less then the value of the root
-<ul>
-<li>If it is greater or equal to
-<ul>
-<li>Check to see if there is a node to the right
-<ul>
-<li>If there is, move to the new node and continue with the node to the right as the subtree root</li>
-<li>If there is not, add the new node as the right property of the current node</li>
-</ul></li>
-</ul></li>
-<li>If it is smaller
-<ul>
-<li>Check to see if there is a node to the left
-<ul>
-<li>If there is, move to the new node and continue with the node to the left as the subtree root</li>
-<li>If there is not, add the new node as the left property of the current node</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-<h2 id="pseudocode-for-search-of-a-single-item">PseudoCode For Search Of A single Item</h2>
-<ul>
-<li>Start at the root
-<ul>
-<li>Check if there is a root
-<ul>
-<li>If not, there is nothing in the tree, so the search is over</li>
-</ul></li>
-<li>If there is a root, check if the value of the root is equal to, greater then, or less then the value were looking for;
-<ul>
-<li>If it is equal to the value
-<ul>
-<li>We found what we are searching for</li>
-</ul></li>
-<li>If it is less than the value
-<ul>
-<li>Check to see if there is a node to the left
-<ul>
-<li>If there isn’t
-<ul>
-<li>the value isn’t in our tree</li>
-</ul></li>
-<li>If there is
-<ul>
-<li>repeat these steps with the node to the left as the new subtree root</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>If it is greater than the value
-<ul>
-<li>Check to see if there is a node to the right
-<ul>
-<li>If there isn’t
-<ul>
-<li>the value isn’t in our tree</li>
-</ul></li>
-<li>If there is
-<ul>
-<li>repeat these steps with the node to the right as the new subtree root</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-<h2 id="pseudocode-for-breadth-first-search-traversal">PseudoCode For Breadth First Search Traversal</h2>
-<ul>
-<li>Create a queue class or use an array</li>
-<li>Create a variable to store the values of the nodes visited</li>
-<li>Place the root in the queue</li>
-<li>Loop as many times as there are items in the queue
-<ul>
-<li>Dequeue a node</li>
-<li>If there is a left value to the node dequeued, add it to the queue</li>
-<li>If there is a right value to the node dequeued, add it to the queue</li>
-<li>Push the nodes value into the variable that stores nodes visited</li>
-</ul></li>
-</ul>
-<h2 id="pseudocode-for-depth-first-search-traversal">PseudoCode For Depth First Search Traversal</h2>
-<h3 id="pre-order">Pre-Order</h3>
-<p><strong>Iterative</strong></p>
-<ul>
-<li>Create a stack class or use an array</li>
-<li>Push the root into the stack</li>
-<li>Create a variable to store the values of the nodes visited</li>
-<li>Do this as long as there is something on the stack
-<ul>
-<li>Pop a node from the stack</li>
-<li>Push that nodes value into the variable that stores nodes visited.</li>
-<li>If there is a node to the right push it into the stack</li>
-<li>If there is a node to the left push it into the stack</li>
-</ul></li>
-<li>Return the variable storing the values</li>
-</ul>
-<p><strong>Recursive</strong></p>
-<ul>
-<li>Create a variable to store the current root</li>
-<li>Push the value of current root to the variable storing the values</li>
-<li>If the current root has a left propety call the function on that the left property</li>
-<li>If the current root has a right propety call the function on that the right property</li>
-<li>Spread the current root, the left values, and the right values</li>
-</ul>
-<h3 id="in-order">In-Order</h3>
-<p><strong>Iterative</strong></p>
-<ul>
-<li>Create a stack class or use an array</li>
-<li>Create a variable to store the current root</li>
-<li>Create a variable to store the values of the nodes visited</li>
-<li>Create a loop
-<ul>
-<li>While the current root exists
-<ul>
-<li>push the current root to the call stack</li>
-<li>current root is equal to the left of current root</li>
-</ul></li>
-<li>if the stack is empty break out of the loop</li>
-<li>set a variable to equal the popped value of the stack</li>
-<li>push that variable into the variable that stores values</li>
-<li>set the current root to the right of the current loop</li>
-</ul></li>
-<li>Return the variable storing the values</li>
-</ul>
-<p><strong>Recursive</strong></p>
-<ul>
-<li>Create a variable to store the current root</li>
-<li>Push the value of current root to the variable storing the values</li>
-<li>If the current root has a left propety call the function on that the left property</li>
-<li>If the current root has a right propety call the function on that the right property</li>
-<li>Spread the the left values, current root ,and the right values</li>
-</ul>
-<h3 id="post-order">Post-Order</h3>
-<p><strong>Iterative</strong></p>
-<ul>
-<li>Haven’t figured this one out yet.</li>
-</ul>
-<p><strong>Recursive</strong></p>
-<ul>
-<li>Create a variable to store the current root</li>
-<li>Push the value of current root to the variable storing the values</li>
-<li>If the current root has a left propety call the function on that the left property</li>
-<li>If the current root has a right propety call the function on that the right property</li>
-<li>Spread the the left values, the right values, and current root</li>
-</ul>
-<h2 id="example-binary-search-tree">Example Binary Search Tree</h2>
-<div class="sourceCode" id="cb24"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb23-20" title="20"><span class="va">c</span>.<span class="at">right</span> <span class="op">=</span> f<span class="op">;</span></a></code></pre>
+    </div>
+    <h2 id="terms">Terms</h2>
+    <ul>
+      <li>tree - graph with no cycles</li>
+      <li>binary tree - tree where nodes have at most 2 nodes</li>
+      <li>
+        root - the ultimate parent, the single node of a tree that can access
+        every other node through edges; by definition the root will not have a
+        parent
+      </li>
+      <li>internal node - a node that has children</li>
+      <li>leaf - a node that does not have any children</li>
+      <li>
+        path - a series of nodes that can be traveled through edges - for
+        example A, B, E is a path through the above tree
+      </li>
+    </ul>
+    <h2 id="search-patterns">Search Patterns</h2>
+    <ul>
+      <li>
+        Breadth First Search - Check all nodes at a level before moving down a
+        level
+        <ul>
+          <li>Think of this of searching horizontally in rows</li>
+        </ul>
+      </li>
+      <li>
+        <p>
+          Depth First Search - Check the depth as far as it goes for one child,
+          before
+        </p>
+        <p>moving on to the next child.</p>
+        <ul>
+          <li>Think of this as searching vertically in diagonals</li>
+          <li>
+            Pre-Order Traversal - Access the data of the current node,
+            recursively visit the left sub tree, recursively visit the right sub
+            tree
+            <ul>
+              <li>
+                All the way to the left, top down, going right after other
+                options have already been logged.
+              </li>
+            </ul>
+          </li>
+          <li>
+            In-Order Traversal - Recursively visit the left sub tree, access the
+            data of the current node, recursively visit the right sub tree
+            <ul>
+              <li>
+                In the order they were the “current root”, the actual return
+                order of the recursive calls.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Post-Order Traversal - Recursively visit the left sub tree,
+            recursively visit the right sub tree, access the data of the current
+            node.
+            <ul>
+              <li>
+                Starting with the bottom most nodes working up through the tree
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="constraints">Constraints</h2>
+    <ul>
+      <li>Binary trees have at most two children per node</li>
+      <li>
+        Given any node of the tree, the values on the left must be strictly less
+        than that node
+      </li>
+      <li>
+        Given any node of the tree, the values on the right must be strictly
+        greater than or equal to that node
+      </li>
+      <li>
+        Given these constraints a binary tree is necessarily a sorted data
+        structure
+      </li>
+      <li>
+        The worst binary trees devolve into a linked list, the best are height
+        balanced (think branching).
+      </li>
+    </ul>
+    <h2 id="pseudocode-for-insertion">PseudoCode For Insertion</h2>
+    <ul>
+      <li>Create a new node</li>
+      <li>
+        Start at the root
+        <ul>
+          <li>
+            Check if there is a root
+            <ul>
+              <li>If not the root becomes the new node</li>
+            </ul>
+          </li>
+          <li>
+            If there is a root check if the value of the new node is equal to,
+            greater then, or less then the value of the root
+            <ul>
+              <li>
+                If it is greater or equal to
+                <ul>
+                  <li>
+                    Check to see if there is a node to the right
+                    <ul>
+                      <li>
+                        If there is, move to the new node and continue with the
+                        node to the right as the subtree root
+                      </li>
+                      <li>
+                        If there is not, add the new node as the right property
+                        of the current node
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                If it is smaller
+                <ul>
+                  <li>
+                    Check to see if there is a node to the left
+                    <ul>
+                      <li>
+                        If there is, move to the new node and continue with the
+                        node to the left as the subtree root
+                      </li>
+                      <li>
+                        If there is not, add the new node as the left property
+                        of the current node
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="pseudocode-for-search-of-a-single-item">
+      PseudoCode For Search Of A single Item
+    </h2>
+    <ul>
+      <li>
+        Start at the root
+        <ul>
+          <li>
+            Check if there is a root
+            <ul>
+              <li>
+                If not, there is nothing in the tree, so the search is over
+              </li>
+            </ul>
+          </li>
+          <li>
+            If there is a root, check if the value of the root is equal to,
+            greater then, or less then the value were looking for;
+            <ul>
+              <li>
+                If it is equal to the value
+                <ul>
+                  <li>We found what we are searching for</li>
+                </ul>
+              </li>
+              <li>
+                If it is less than the value
+                <ul>
+                  <li>
+                    Check to see if there is a node to the left
+                    <ul>
+                      <li>
+                        If there isn’t
+                        <ul>
+                          <li>the value isn’t in our tree</li>
+                        </ul>
+                      </li>
+                      <li>
+                        If there is
+                        <ul>
+                          <li>
+                            repeat these steps with the node to the left as the
+                            new subtree root
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                If it is greater than the value
+                <ul>
+                  <li>
+                    Check to see if there is a node to the right
+                    <ul>
+                      <li>
+                        If there isn’t
+                        <ul>
+                          <li>the value isn’t in our tree</li>
+                        </ul>
+                      </li>
+                      <li>
+                        If there is
+                        <ul>
+                          <li>
+                            repeat these steps with the node to the right as the
+                            new subtree root
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="pseudocode-for-breadth-first-search-traversal">
+      PseudoCode For Breadth First Search Traversal
+    </h2>
+    <ul>
+      <li>Create a queue class or use an array</li>
+      <li>Create a variable to store the values of the nodes visited</li>
+      <li>Place the root in the queue</li>
+      <li>
+        Loop as many times as there are items in the queue
+        <ul>
+          <li>Dequeue a node</li>
+          <li>
+            If there is a left value to the node dequeued, add it to the queue
+          </li>
+          <li>
+            If there is a right value to the node dequeued, add it to the queue
+          </li>
+          <li>
+            Push the nodes value into the variable that stores nodes visited
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 id="pseudocode-for-depth-first-search-traversal">
+      PseudoCode For Depth First Search Traversal
+    </h2>
+    <h3 id="pre-order">Pre-Order</h3>
+    <p><strong>Iterative</strong></p>
+    <ul>
+      <li>Create a stack class or use an array</li>
+      <li>Push the root into the stack</li>
+      <li>Create a variable to store the values of the nodes visited</li>
+      <li>
+        Do this as long as there is something on the stack
+        <ul>
+          <li>Pop a node from the stack</li>
+          <li>
+            Push that nodes value into the variable that stores nodes visited.
+          </li>
+          <li>If there is a node to the right push it into the stack</li>
+          <li>If there is a node to the left push it into the stack</li>
+        </ul>
+      </li>
+      <li>Return the variable storing the values</li>
+    </ul>
+    <p><strong>Recursive</strong></p>
+    <ul>
+      <li>Create a variable to store the current root</li>
+      <li>Push the value of current root to the variable storing the values</li>
+      <li>
+        If the current root has a left propety call the function on that the
+        left property
+      </li>
+      <li>
+        If the current root has a right propety call the function on that the
+        right property
+      </li>
+      <li>Spread the current root, the left values, and the right values</li>
+    </ul>
+    <h3 id="in-order">In-Order</h3>
+    <p><strong>Iterative</strong></p>
+    <ul>
+      <li>Create a stack class or use an array</li>
+      <li>Create a variable to store the current root</li>
+      <li>Create a variable to store the values of the nodes visited</li>
+      <li>
+        Create a loop
+        <ul>
+          <li>
+            While the current root exists
+            <ul>
+              <li>push the current root to the call stack</li>
+              <li>current root is equal to the left of current root</li>
+            </ul>
+          </li>
+          <li>if the stack is empty break out of the loop</li>
+          <li>set a variable to equal the popped value of the stack</li>
+          <li>push that variable into the variable that stores values</li>
+          <li>set the current root to the right of the current loop</li>
+        </ul>
+      </li>
+      <li>Return the variable storing the values</li>
+    </ul>
+    <p><strong>Recursive</strong></p>
+    <ul>
+      <li>Create a variable to store the current root</li>
+      <li>Push the value of current root to the variable storing the values</li>
+      <li>
+        If the current root has a left propety call the function on that the
+        left property
+      </li>
+      <li>
+        If the current root has a right propety call the function on that the
+        right property
+      </li>
+      <li>Spread the the left values, current root ,and the right values</li>
+    </ul>
+    <h3 id="post-order">Post-Order</h3>
+    <p><strong>Iterative</strong></p>
+    <ul>
+      <li>Haven’t figured this one out yet.</li>
+    </ul>
+    <p><strong>Recursive</strong></p>
+    <ul>
+      <li>Create a variable to store the current root</li>
+      <li>Push the value of current root to the variable storing the values</li>
+      <li>
+        If the current root has a left propety call the function on that the
+        left property
+      </li>
+      <li>
+        If the current root has a right propety call the function on that the
+        right property
+      </li>
+      <li>Spread the the left values, the right values, and current root</li>
+    </ul>
+    <h2 id="example-binary-search-tree">Example Binary Search Tree</h2>
+    <div class="sourceCode" id="cb24">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> TreeNode <span class="op">{</span></a>
 <a class="sourceLine" id="cb24-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
 <a class="sourceLine" id="cb24-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
 <a class="sourceLine" id="cb24-4" title="4">    <span class="kw">this</span>.<span class="at">left</span> <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
@@ -1642,6 +2215,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb24-234" title="234"></a>
 <a class="sourceLine" id="cb24-235" title="235">    <span class="cf">return</span> root<span class="op">;</span></a>
 <a class="sourceLine" id="cb24-236" title="236">  <span class="op">}</span></a>
-<a class="sourceLine" id="cb24-237" title="237"><span class="op">}</span></a></code></pre></div>
-</body>
+<a class="sourceLine" id="cb24-237" title="237"><span class="op">}</span></a></code></pre>
+    </div>
+  </body>
 </html>

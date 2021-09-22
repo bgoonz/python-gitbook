@@ -1,5 +1,4 @@
-Quick Sort
-==========
+# Quick Sort
 
 ### What is Quick Sort in Python?
 

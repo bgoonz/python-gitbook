@@ -1,17 +1,15 @@
-Graph DFS
-=========
+# Graph DFS
 
-Depth First Search (DFS)
-------------------------
+## Depth First Search (DFS)
 
 ### Objective
 
--   Learn about one of the more famous graph algorithms
--   Learn uses of DFS
+- Learn about one of the more famous graph algorithms
+- Learn uses of DFS
 
 ### Overview
 
-When searching a graph, one of the approaches is called *depth first search*. This “dives” “down” the graph as far as it can before needing to backtrack and explore another branch.
+When searching a graph, one of the approaches is called _depth first search_. This “dives” “down” the graph as far as it can before needing to backtrack and explore another branch.
 
 The algorithm never attempts to explore a vert that it either has explored or is exploring.
 
@@ -25,11 +23,11 @@ The bold lines show with edges were followed. (The thin edges were not followed 
 
 ### Applications of DFS
 
--   Finding [Minimum Spanning Trees](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
--   Path finding
--   Detecting cycles in graphs
--   [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
--   Solving and generating mazes
+- Finding [Minimum Spanning Trees](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
+- Path finding
+- Detecting cycles in graphs
+- [Topological sorting](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
+- Solving and generating mazes
 
 ### Coloring Vertexes
 
@@ -69,8 +67,7 @@ Looking at it with pseudocode to make the recursion more apparent:
 
         v.color = black
 
-Implementation:
----------------
+## Implementation:
 
     class Node(object):
 

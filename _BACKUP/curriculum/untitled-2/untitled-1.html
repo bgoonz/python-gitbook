@@ -1,100 +1,279 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>untitled-1</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="d3-module-03---hash-tables-ii">D3-Module 03 - Hash Tables II</h1>
-<p>Original:</p>
-<p>{% embed url=“https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM542p?usp=sharing#scrollTo=Um92huhOx2BD” %}</p>
-<p>{% embed url=“https://gist.github.com/bgoonz/85cf385ba5382cea548c2b6083cd1b3f” %}</p>
-<p>{% embed url=“https://gist.github.com/bgoonz/c10af728179ff056894c6f17dfb819bc#file-ht2-ipynb” %}</p>
-<h2 id="objective-01---understand-hash-collisions-and-use-a-linked-list-for-collision-resolution-in-a-user-defined-hashable-class">Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined Hashable class</h2>
-<h3 id="overview"><strong>Overview</strong></h3>
-<p>Remember when we wondered what would happen if multiple keys hashed to the same index, and we said that we would worry about it later? Whelp, it’s later 🤪.</p>
-<p>Let’s say we were given the key-value pair <code>("Ryan", 10)</code>. Our hash code then maps “Ryan” to index 3. Excellent, that works!Now let’s say after we inserted <code>("Ryan", 10)</code>, we have to insert <code>("Parth", 12)</code>. Our hash code maps “Parth” to index 3. Uh oh! Ryan is already there! What do we do?? 😱</p>
-<p>Ok, let’s stop freaking out, and let’s think about this. If we don’t do anything, the value stored at index 3 will just get overwritten. Meaning if we try to retrieve the value associated with <code>"Ryan"</code>, 12 will be returned instead of 10. That might not seem like a big deal, but what if we were returning passwords based on a user ID, and we returned someone else’s password. That would be horrible.</p>
-<p>Let’s fix this problem. The most common way to solve this is with <strong>chaining</strong>. If we see multiple values hashed to an index, we will chain them in a some data structure that can hold multiple items. In our case, we’ll use Python’s <code>list</code> type, but a more typical solution would use a linked list. We’ll cover linked lists in a future module.</p>
-<figure>
-<img src="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif" alt="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif" /><figcaption>https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif</figcaption>
-</figure>
-<p>Ok, sounds ideal? But how does this work in code? Let’s write some of it together.</p>
-<h3 id="follow-along"><strong>Follow Along</strong></h3>
-<p>Below is a partially filled out hash table class where we will be using <code>HashTableEntry</code> as our chain entries.</p>
-<p>Take a look at the code below.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>untitled-1</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="d3-module-03---hash-tables-ii">D3-Module 03 - Hash Tables II</h1>
+    <p>Original:</p>
+    <p>
+      {% embed
+      url=“https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM542p?usp=sharing#scrollTo=Um92huhOx2BD”
+      %}
+    </p>
+    <p>
+      {% embed
+      url=“https://gist.github.com/bgoonz/85cf385ba5382cea548c2b6083cd1b3f” %}
+    </p>
+    <p>
+      {% embed
+      url=“https://gist.github.com/bgoonz/c10af728179ff056894c6f17dfb819bc#file-ht2-ipynb”
+      %}
+    </p>
+    <h2
+      id="objective-01---understand-hash-collisions-and-use-a-linked-list-for-collision-resolution-in-a-user-defined-hashable-class"
+    >
+      Objective 01 - Understand hash collisions and use a linked list for
+      collision resolution in a user-defined Hashable class
+    </h2>
+    <h3 id="overview"><strong>Overview</strong></h3>
+    <p>
+      Remember when we wondered what would happen if multiple keys hashed to the
+      same index, and we said that we would worry about it later? Whelp, it’s
+      later 🤪.
+    </p>
+    <p>
+      Let’s say we were given the key-value pair <code>("Ryan", 10)</code>. Our
+      hash code then maps “Ryan” to index 3. Excellent, that works!Now let’s say
+      after we inserted <code>("Ryan", 10)</code>, we have to insert
+      <code>("Parth", 12)</code>. Our hash code maps “Parth” to index 3. Uh oh!
+      Ryan is already there! What do we do?? 😱
+    </p>
+    <p>
+      Ok, let’s stop freaking out, and let’s think about this. If we don’t do
+      anything, the value stored at index 3 will just get overwritten. Meaning
+      if we try to retrieve the value associated with <code>"Ryan"</code>, 12
+      will be returned instead of 10. That might not seem like a big deal, but
+      what if we were returning passwords based on a user ID, and we returned
+      someone else’s password. That would be horrible.
+    </p>
+    <p>
+      Let’s fix this problem. The most common way to solve this is with
+      <strong>chaining</strong>. If we see multiple values hashed to an index,
+      we will chain them in a some data structure that can hold multiple items.
+      In our case, we’ll use Python’s <code>list</code> type, but a more typical
+      solution would use a linked list. We’ll cover linked lists in a future
+      module.
+    </p>
+    <figure>
+      <img
+        src="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif"
+        alt="https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif"
+      />
+      <figcaption>
+        https://tk-assets.lambdaschool.com/f952600c-f3e0-4d96-bb53-def08235c9c0_collision.gif
+      </figcaption>
+    </figure>
+    <p>
+      Ok, sounds ideal? But how does this work in code? Let’s write some of it
+      together.
+    </p>
+    <h3 id="follow-along"><strong>Follow Along</strong></h3>
+    <p>
+      Below is a partially filled out hash table class where we will be using
+      <code>HashTableEntry</code> as our chain entries.
+    </p>
+    <p>Take a look at the code below.</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
 <a class="sourceLine" id="cb1-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="co">    Hash table key/value pair to go in our collision chain</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
@@ -181,22 +360,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-85" title="85"><span class="co">        Returns None if the key is not found.</span></a>
 <a class="sourceLine" id="cb1-86" title="86"><span class="co">        Implement this.</span></a>
 <a class="sourceLine" id="cb1-87" title="87"><span class="co">        &quot;&quot;&quot;</span></a>
-<a class="sourceLine" id="cb1-88" title="88">        <span class="co"># Your code here</span></a></code></pre></div>
-<p>Let’s implement the <code>put</code> method with collision resolution by chaining. What are the two cases we need to handle?</p>
-<ol type="1">
-<li><strong>There are no entries at the index</strong>. Great! We can initialize the entry to a list with the new <code>HashTableEntry</code> in it.</li>
-<li><strong>There are multiple entries at the index.</strong> We need to check every entry in the chain. If the key in one of the entries is equal to the key we are passing in, we need to replace it. For instance, let’s say we pass in <code>("Ryan", 12),</code> and then we later pass in <code>("Ryan", 15)</code>. We would need to replace “Ryan”’s old value with 15. If there are no entries that match, we create a new entry at the end of the chain.</li>
-</ol>
-<p>Ok, that might sound confusing. Let’s start breaking it down into code.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb1-88" title="88">        <span class="co"># Your code here</span></a></code></pre>
+    </div>
+    <p>
+      Let’s implement the <code>put</code> method with collision resolution by
+      chaining. What are the two cases we need to handle?
+    </p>
+    <ol type="1">
+      <li>
+        <strong>There are no entries at the index</strong>. Great! We can
+        initialize the entry to a list with the new
+        <code>HashTableEntry</code> in it.
+      </li>
+      <li>
+        <strong>There are multiple entries at the index.</strong> We need to
+        check every entry in the chain. If the key in one of the entries is
+        equal to the key we are passing in, we need to replace it. For instance,
+        let’s say we pass in <code>("Ryan", 12),</code> and then we later pass
+        in <code>("Ryan", 15)</code>. We would need to replace “Ryan”’s old
+        value with 15. If there are no entries that match, we create a new entry
+        at the end of the chain.
+      </li>
+    </ol>
+    <p>
+      Ok, that might sound confusing. Let’s start breaking it down into code.
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb2-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="co">        Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb2-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
 <a class="sourceLine" id="cb2-5" title="5"><span class="co">        Implement this.</span></a>
 <a class="sourceLine" id="cb2-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
-<a class="sourceLine" id="cb2-7" title="7">        <span class="co"># Your code here</span></a></code></pre></div>
-<p>First, we need to hash the key and start with the first entry at that index.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="co"># Your code here</span></a></code></pre>
+    </div>
+    <p>
+      First, we need to hash the key and start with the first entry at that
+      index.
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb3-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="co">        Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -204,13 +411,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-6" title="6"><span class="co">        &quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb3-7" title="7">        index <span class="op">=</span> <span class="va">self</span>.hash_index(key)</a>
 <a class="sourceLine" id="cb3-8" title="8"></a>
-<a class="sourceLine" id="cb3-9" title="9">        chain <span class="op">=</span> <span class="va">self</span>.storage[index]</a></code></pre></div>
-<p>Next, we need to go through the chain. We need to check two conditions:</p>
-<ol type="1">
-<li>The current entry is not empty.</li>
-<li>The key or the current entry is not equal to the key we are passing in.</li>
-</ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb3-9" title="9">        chain <span class="op">=</span> <span class="va">self</span>.storage[index]</a></code></pre>
+    </div>
+    <p>
+      Next, we need to go through the chain. We need to check two conditions:
+    </p>
+    <ol type="1">
+      <li>The current entry is not empty.</li>
+      <li>
+        The key or the current entry is not equal to the key we are passing in.
+      </li>
+    </ol>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb4-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="co">        Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -225,14 +440,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-13" title="13">        <span class="cf">for</span> current_entry <span class="kw">in</span> chain:</a>
 <a class="sourceLine" id="cb4-14" title="14">            <span class="cf">if</span> current_entry.key <span class="op">==</span> key:</a>
 <a class="sourceLine" id="cb4-15" title="15">                exiting_entry <span class="op">=</span> current_entry</a>
-<a class="sourceLine" id="cb4-16" title="16">                <span class="cf">break</span></a></code></pre></div>
-<p>Sweet! Now we need to check what happens when the loop breaks. It would only break for two reasons:</p>
-<ol type="1">
-<li>We reached an entry with the same key and need to replace the value.</li>
-<li>We reached the end of the chain and need to create a new entry.</li>
-</ol>
-<p>Let’s write that in code!</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb4-16" title="16">                <span class="cf">break</span></a></code></pre>
+    </div>
+    <p>
+      Sweet! Now we need to check what happens when the loop breaks. It would
+      only break for two reasons:
+    </p>
+    <ol type="1">
+      <li>
+        We reached an entry with the same key and need to replace the value.
+      </li>
+      <li>We reached the end of the chain and need to create a new entry.</li>
+    </ol>
+    <p>Let’s write that in code!</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">    <span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb5-2" title="2">        <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb5-3" title="3"><span class="co">        Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb5-4" title="4"><span class="co">        Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -253,29 +477,108 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-19" title="19">            existing_entry.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb5-20" title="20">        <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb5-21" title="21">            new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
-<a class="sourceLine" id="cb5-22" title="22">            chain.append(new_entry)</a></code></pre></div>
-<p>Great! We created the <code>put</code> method.</p>
-<h3 id="challenge"><strong>Challenge</strong></h3>
-<p><span class="citation" data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution">[https://replit.com/@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution\#main.py]</span>(https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py">@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py</span>)</p>
-<figure>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png" /><figcaption>https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png</figcaption>
-</figure>
-<h2 id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor">Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor</h2>
-<h3 id="overview-1"><strong>Overview</strong></h3>
-<p>What does runtime look like with linked list chaining?</p>
-<p>The performance of hash tables for search, insertion, and deletion is constant time (<code>O(1)</code>) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (<code>O(n)</code>). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</p>
-<h4 id="load-factor"><strong>Load Factor</strong></h4>
-<p>The load factor of a hash table is trivial to calculate. You take the number of items stored in the hash table divided by the number of slots.</p>
-<figure>
-<img src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" /><figcaption>https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg</figcaption>
-</figure>
-<p>Hash tables use an array for storage. So, the load factor is the number of occupied slots divided by the length of the array. So, an array of length 10 with three items in it has a load factor of 0.3, and an array of length 20 with twenty items has a load factor of 1. If you use linear probing for collision resolution, then the maximum load factor is 1. If you use chaining for collision resolution, then the load factor can be greater than 1.</p>
-<p>As the load factor of your hash table increases, so does the likelihood of a collision, which reduces your hash table’s performance. Therefore, you need to monitor the load factor and resize your hash table when the load factor gets too large. The general rule of thumb is to resize your hash table when your load factor is greater than 0.7. Also, when you resize, it is common to double the size of the hash table. When you resize the array, you need to re-insert all of the items into this new hash table. You cannot simply copy the old items into the new hash table. Each item has to be rerun through the hashing function because the hashing function considers the size of the hash table when determining the index that it returns.</p>
-<p>You can see that resizing is an expensive operation, so you don’t want to resize too often. However, when we average it out, hash tables are constant time (<code>O(1)</code>) even with resizing.</p>
-<p>The load factor can also be too small. If the hash table is too large for the data that it is storing, then memory is being wasted. So, in addition to resizing, when the load factor gets too high, you should also resize when the load factor gets too low.</p>
-<p>One way to know when to resize your hash table is to compute the load factor whenever an item is inserted or deleted into the hash table. If the load factor is too high or too low, then you need to resize.</p>
-<p>We added a <code>get_load_factor</code> and <code>resize</code> method to calculate the load factor and resize the hash table with a new capacity when necessary.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+<a class="sourceLine" id="cb5-22" title="22">            chain.append(new_entry)</a></code></pre>
+    </div>
+    <p>Great! We created the <code>put</code> method.</p>
+    <h3 id="challenge"><strong>Challenge</strong></h3>
+    <p>
+      <span
+        class="citation"
+        data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution"
+        >[https://replit.com/@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution\#main.py]</span
+      >(https://replit.com/<span
+        class="citation"
+        data-cites="bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py"
+        >@bgoonz/cs-unit-1-sprint-4-module-2-hash-table-collision-resolution#main.py</span
+      >)
+    </p>
+    <figure>
+      <img
+        src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png"
+        alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png"
+      />
+      <figcaption>
+        https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png
+      </figcaption>
+    </figure>
+    <h2
+      id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor"
+    >
+      Objective 02 - Define and compute the load factor of a hash table and
+      implement a hash table that automatically resizes based on load factor
+    </h2>
+    <h3 id="overview-1"><strong>Overview</strong></h3>
+    <p>What does runtime look like with linked list chaining?</p>
+    <p>
+      The performance of hash tables for search, insertion, and deletion is
+      constant time (<code>O(1)</code>) in the average case. However, as the
+      chains get longer and longer, in the worst case, those same operations are
+      done in linear time (<code>O(n)</code>). The more collisions that your
+      hash table has, the less performant the hash table is. To avoid
+      collisions, a proper hash function and maintaining a low load factor is
+      crucial. What is a load factor?
+    </p>
+    <h4 id="load-factor"><strong>Load Factor</strong></h4>
+    <p>
+      The load factor of a hash table is trivial to calculate. You take the
+      number of items stored in the hash table divided by the number of slots.
+    </p>
+    <figure>
+      <img
+        src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg"
+        alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg"
+      />
+      <figcaption>
+        https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg
+      </figcaption>
+    </figure>
+    <p>
+      Hash tables use an array for storage. So, the load factor is the number of
+      occupied slots divided by the length of the array. So, an array of length
+      10 with three items in it has a load factor of 0.3, and an array of length
+      20 with twenty items has a load factor of 1. If you use linear probing for
+      collision resolution, then the maximum load factor is 1. If you use
+      chaining for collision resolution, then the load factor can be greater
+      than 1.
+    </p>
+    <p>
+      As the load factor of your hash table increases, so does the likelihood of
+      a collision, which reduces your hash table’s performance. Therefore, you
+      need to monitor the load factor and resize your hash table when the load
+      factor gets too large. The general rule of thumb is to resize your hash
+      table when your load factor is greater than 0.7. Also, when you resize, it
+      is common to double the size of the hash table. When you resize the array,
+      you need to re-insert all of the items into this new hash table. You
+      cannot simply copy the old items into the new hash table. Each item has to
+      be rerun through the hashing function because the hashing function
+      considers the size of the hash table when determining the index that it
+      returns.
+    </p>
+    <p>
+      You can see that resizing is an expensive operation, so you don’t want to
+      resize too often. However, when we average it out, hash tables are
+      constant time (<code>O(1)</code>) even with resizing.
+    </p>
+    <p>
+      The load factor can also be too small. If the hash table is too large for
+      the data that it is storing, then memory is being wasted. So, in addition
+      to resizing, when the load factor gets too high, you should also resize
+      when the load factor gets too low.
+    </p>
+    <p>
+      One way to know when to resize your hash table is to compute the load
+      factor whenever an item is inserted or deleted into the hash table. If the
+      load factor is too high or too low, then you need to resize.
+    </p>
+    <p>
+      We added a <code>get_load_factor</code> and <code>resize</code> method to
+      calculate the load factor and resize the hash table with a new capacity
+      when necessary.
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
 <a class="sourceLine" id="cb6-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb6-3" title="3"><span class="co">    Linked List hash table key/value pair</span></a>
 <a class="sourceLine" id="cb6-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
@@ -399,10 +702,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-122" title="122"><span class="co">        Returns None if the key is not found.</span></a>
 <a class="sourceLine" id="cb6-123" title="123"><span class="co">        Implement this.</span></a>
 <a class="sourceLine" id="cb6-124" title="124"><span class="co">        &quot;&quot;&quot;</span></a>
-<a class="sourceLine" id="cb6-125" title="125">        <span class="co"># Your code here</span></a></code></pre></div>
-<h3 id="follow-along-1"><strong>Follow Along</strong></h3>
-<p>Let’s change our <code>put</code> method to resize when the load factor gets too high. Here’s how our current <code>put</code> method looks:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb6-125" title="125">        <span class="co"># Your code here</span></a></code></pre>
+    </div>
+    <h3 id="follow-along-1"><strong>Follow Along</strong></h3>
+    <p>
+      Let’s change our <code>put</code> method to resize when the load factor
+      gets too high. Here’s how our current <code>put</code> method looks:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb7-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb7-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb7-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -420,9 +730,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb7-16" title="16">    <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb7-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
 <a class="sourceLine" id="cb7-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
-<a class="sourceLine" id="cb7-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre></div>
-<p>To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let’s go ahead and add that.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb7-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre>
+    </div>
+    <p>
+      To know when to resize, we need to correctly increment the count whenever
+      we insert something new into the hash table. Let’s go ahead and add that.
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb8-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb8-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb8-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -442,9 +759,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
 <a class="sourceLine" id="cb8-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
 <a class="sourceLine" id="cb8-20" title="20"></a>
-<a class="sourceLine" id="cb8-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
-<p>Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb8-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre>
+    </div>
+    <p>
+      Next, we need to check if the load factor is greater than or equal to 0.7.
+      If it is, we need to double our capacity and resize.
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb9-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb9-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb9-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -467,27 +791,96 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb9-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb9-22" title="22"></a>
 <a class="sourceLine" id="cb9-23" title="23">        <span class="cf">if</span> <span class="va">self</span>.get_load_factor() <span class="op">&gt;</span> <span class="fl">0.7</span>:</a>
-<a class="sourceLine" id="cb9-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre></div>
-<p>Fantastic, we did it!</p>
-<figure>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png" /><figcaption>https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png</figcaption>
-</figure>
-<h2 id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor-1">Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor</h2>
-<h3 id="overview-2"><strong>Overview</strong></h3>
-<p>What does runtime look like with linked list chaining?</p>
-<p>The performance of hash tables for search, insertion, and deletion is constant time (<code>O(1)</code>) in the average case. However, as the chains get longer and longer, in the worst case, those same operations are done in linear time (<code>O(n)</code>). The more collisions that your hash table has, the less performant the hash table is. To avoid collisions, a proper hash function and maintaining a low load factor is crucial. What is a load factor?</p>
-<h4 id="load-factor-1"><strong>Load Factor</strong></h4>
-<p>The load factor of a hash table is trivial to calculate. You take the number of items stored in the hash table divided by the number of slots.</p>
-<figure>
-<img src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg" /><figcaption>https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg</figcaption>
-</figure>
-<p>Hash tables use an array for storage. So, the load factor is the number of occupied slots divided by the length of the array. So, an array of length 10 with three items in it has a load factor of 0.3, and an array of length 20 with twenty items has a load factor of 1. If you use linear probing for collision resolution, then the maximum load factor is 1. If you use chaining for collision resolution, then the load factor can be greater than 1.</p>
-<p>As the load factor of your hash table increases, so does the likelihood of a collision, which reduces your hash table’s performance. Therefore, you need to monitor the load factor and resize your hash table when the load factor gets too large. The general rule of thumb is to resize your hash table when your load factor is greater than 0.7. Also, when you resize, it is common to double the size of the hash table. When you resize the array, you need to re-insert all of the items into this new hash table. You cannot simply copy the old items into the new hash table. Each item has to be rerun through the hashing function because the hashing function considers the size of the hash table when determining the index that it returns.</p>
-<p>You can see that resizing is an expensive operation, so you don’t want to resize too often. However, when we average it out, hash tables are constant time (<code>O(1)</code>) even with resizing.</p>
-<p>The load factor can also be too small. If the hash table is too large for the data that it is storing, then memory is being wasted. So, in addition to resizing, when the load factor gets too high, you should also resize when the load factor gets too low.</p>
-<p>One way to know when to resize your hash table is to compute the load factor whenever an item is inserted or deleted into the hash table. If the load factor is too high or too low, then you need to resize.</p>
-<p>We added a <code>get_load_factor</code> and <code>resize</code> method to calculate the load factor and resize the hash table with a new capacity when necessary.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
+<a class="sourceLine" id="cb9-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre>
+    </div>
+    <p>Fantastic, we did it!</p>
+    <figure>
+      <img
+        src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png"
+        alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png"
+      />
+      <figcaption>
+        https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png
+      </figcaption>
+    </figure>
+    <h2
+      id="objective-02---define-and-compute-the-load-factor-of-a-hash-table-and-implement-a-hash-table-that-automatically-resizes-based-on-load-factor-1"
+    >
+      Objective 02 - Define and compute the load factor of a hash table and
+      implement a hash table that automatically resizes based on load factor
+    </h2>
+    <h3 id="overview-2"><strong>Overview</strong></h3>
+    <p>What does runtime look like with linked list chaining?</p>
+    <p>
+      The performance of hash tables for search, insertion, and deletion is
+      constant time (<code>O(1)</code>) in the average case. However, as the
+      chains get longer and longer, in the worst case, those same operations are
+      done in linear time (<code>O(n)</code>). The more collisions that your
+      hash table has, the less performant the hash table is. To avoid
+      collisions, a proper hash function and maintaining a low load factor is
+      crucial. What is a load factor?
+    </p>
+    <h4 id="load-factor-1"><strong>Load Factor</strong></h4>
+    <p>
+      The load factor of a hash table is trivial to calculate. You take the
+      number of items stored in the hash table divided by the number of slots.
+    </p>
+    <figure>
+      <img
+        src="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg"
+        alt="https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg"
+      />
+      <figcaption>
+        https://tk-assets.lambdaschool.com/59d00218-52e2-4f3d-9680-2b2d8baad3ae_S5-M3-O1LoadFactor.001.jpeg
+      </figcaption>
+    </figure>
+    <p>
+      Hash tables use an array for storage. So, the load factor is the number of
+      occupied slots divided by the length of the array. So, an array of length
+      10 with three items in it has a load factor of 0.3, and an array of length
+      20 with twenty items has a load factor of 1. If you use linear probing for
+      collision resolution, then the maximum load factor is 1. If you use
+      chaining for collision resolution, then the load factor can be greater
+      than 1.
+    </p>
+    <p>
+      As the load factor of your hash table increases, so does the likelihood of
+      a collision, which reduces your hash table’s performance. Therefore, you
+      need to monitor the load factor and resize your hash table when the load
+      factor gets too large. The general rule of thumb is to resize your hash
+      table when your load factor is greater than 0.7. Also, when you resize, it
+      is common to double the size of the hash table. When you resize the array,
+      you need to re-insert all of the items into this new hash table. You
+      cannot simply copy the old items into the new hash table. Each item has to
+      be rerun through the hashing function because the hashing function
+      considers the size of the hash table when determining the index that it
+      returns.
+    </p>
+    <p>
+      You can see that resizing is an expensive operation, so you don’t want to
+      resize too often. However, when we average it out, hash tables are
+      constant time (<code>O(1)</code>) even with resizing.
+    </p>
+    <p>
+      The load factor can also be too small. If the hash table is too large for
+      the data that it is storing, then memory is being wasted. So, in addition
+      to resizing, when the load factor gets too high, you should also resize
+      when the load factor gets too low.
+    </p>
+    <p>
+      One way to know when to resize your hash table is to compute the load
+      factor whenever an item is inserted or deleted into the hash table. If the
+      load factor is too high or too low, then you need to resize.
+    </p>
+    <p>
+      We added a <code>get_load_factor</code> and <code>resize</code> method to
+      calculate the load factor and resize the hash table with a new capacity
+      when necessary.
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">class</span> HashTableEntry:</a>
 <a class="sourceLine" id="cb10-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb10-3" title="3"><span class="co">    Linked List hash table key/value pair</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="co">    &quot;&quot;&quot;</span></a>
@@ -611,10 +1004,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb10-122" title="122"><span class="co">        Returns None if the key is not found.</span></a>
 <a class="sourceLine" id="cb10-123" title="123"><span class="co">        Implement this.</span></a>
 <a class="sourceLine" id="cb10-124" title="124"><span class="co">        &quot;&quot;&quot;</span></a>
-<a class="sourceLine" id="cb10-125" title="125">        <span class="co"># Your code here</span></a></code></pre></div>
-<h3 id="follow-along-2"><strong>Follow Along</strong></h3>
-<p>Let’s change our <code>put</code> method to resize when the load factor gets too high. Here’s how our current <code>put</code> method looks:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb10-125" title="125">        <span class="co"># Your code here</span></a></code></pre>
+    </div>
+    <h3 id="follow-along-2"><strong>Follow Along</strong></h3>
+    <p>
+      Let’s change our <code>put</code> method to resize when the load factor
+      gets too high. Here’s how our current <code>put</code> method looks:
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb11-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb11-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb11-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -632,9 +1032,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb11-16" title="16">    <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb11-17" title="17">        new_entry <span class="op">=</span> HashTableEntry(key, value)</a>
 <a class="sourceLine" id="cb11-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
-<a class="sourceLine" id="cb11-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre></div>
-<p>To know when to resize, we need to correctly increment the count whenever we insert something new into the hash table. Let’s go ahead and add that.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb11-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a></code></pre>
+    </div>
+    <p>
+      To know when to resize, we need to correctly increment the count whenever
+      we insert something new into the hash table. Let’s go ahead and add that.
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb12-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb12-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb12-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -654,9 +1061,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb12-18" title="18">        new_entry.<span class="bu">next</span> <span class="op">=</span> <span class="va">self</span>.storage[index]</a>
 <a class="sourceLine" id="cb12-19" title="19">        <span class="va">self</span>.storage[index] <span class="op">=</span> new_entry</a>
 <a class="sourceLine" id="cb12-20" title="20"></a>
-<a class="sourceLine" id="cb12-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
-<p>Next, we need to check if the load factor is greater than or equal to 0.7. If it is, we need to double our capacity and resize.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
+<a class="sourceLine" id="cb12-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a></code></pre>
+    </div>
+    <p>
+      Next, we need to check if the load factor is greater than or equal to 0.7.
+      If it is, we need to double our capacity and resize.
+    </p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">def</span> put(<span class="va">self</span>, key, value):</a>
 <a class="sourceLine" id="cb13-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb13-3" title="3"><span class="co">    Store the value with the given key.</span></a>
 <a class="sourceLine" id="cb13-4" title="4"><span class="co">    Hash collisions should be handled with Linked List Chaining.</span></a>
@@ -679,34 +1093,66 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb13-21" title="21">        <span class="va">self</span>.item_count <span class="op">+=</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb13-22" title="22"></a>
 <a class="sourceLine" id="cb13-23" title="23">        <span class="cf">if</span> <span class="va">self</span>.get_load_factor() <span class="op">&gt;</span> <span class="fl">0.7</span>:</a>
-<a class="sourceLine" id="cb13-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre></div>
-<p>Fantastic, we did it!</p>
-<h3 id="challenge-1"><strong>Challenge</strong></h3>
-<ol type="1">
-<li>Do we need to modify our <code>delete</code> and <code>get</code> methods to account for the new <code>get_load_factor</code> and <code>resize</code> methods? Why or why not?</li>
-</ol>
-<h3 id="additional-resources"><strong>Additional Resources</strong></h3>
-<ul>
-<li><a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf">https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)</a></li>
-</ul>
-<h2 id="homework">Homework:</h2>
-<h2 id="given-a-string-text-you-need-to-use-the-characters-of-text-to-form-as-many-instances-of-the-word-lambda-as-possible.">Given a string text, you need to use the characters of text to form as many instances of the word “lambda” as possible.</h2>
-<h2 id="you-can-use-each-character-in-text-at-most-once.">You can use each character in text at most once.</h2>
-<h2 id="write-a-function-that-returns-the-maximum-number-of-instances-of-lambda-that-can-be-formed.">Write a function that returns the maximum number of instances of “lambda” that can be formed.</h2>
-<h2 id="input-text-mbxcdatlas">Input: text = “mbxcdatlas”</h2>
-<h2 id="output-1">Output: 1</h2>
-<h2 id="example-2">Example 2:</h2>
-<h2 id="input-text-lalaaxcmbdtsumbdav">Input: text = “lalaaxcmbdtsumbdav”</h2>
-<h2 id="output-2">Output: 2</h2>
-<h2 id="example-3">Example 3:</h2>
-<h2 id="input-text-sctlamb">Input: text = “sctlamb”</h2>
-<h2 id="output-0">Output: 0</h2>
-<h2 id="notes">Notes:</h2>
-<h2 id="text-consists-of-lowercase-english-characters-only">text consists of lowercase English characters only</h2>
-<h2 id="execution-time-limit-4-seconds-py3">[execution time limit] 4 seconds (py3)</h2>
-<h2 id="input-string-text">[input] string text</h2>
-<h2 id="output-integer">[output] integer</h2>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"></a>
+<a class="sourceLine" id="cb13-24" title="24">            <span class="va">self</span>.resize(<span class="va">self</span>.capacity <span class="op">*</span> <span class="dv">2</span>)</a></code></pre>
+    </div>
+    <p>Fantastic, we did it!</p>
+    <h3 id="challenge-1"><strong>Challenge</strong></h3>
+    <ol type="1">
+      <li>
+        Do we need to modify our <code>delete</code> and
+        <code>get</code> methods to account for the new
+        <code>get_load_factor</code> and <code>resize</code> methods? Why or why
+        not?
+      </li>
+    </ol>
+    <h3 id="additional-resources"><strong>Additional Resources</strong></h3>
+    <ul>
+      <li>
+        <a href="https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf"
+          >https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to
+          an external site.)</a
+        >
+      </li>
+    </ul>
+    <h2 id="homework">Homework:</h2>
+    <h2
+      id="given-a-string-text-you-need-to-use-the-characters-of-text-to-form-as-many-instances-of-the-word-lambda-as-possible."
+    >
+      Given a string text, you need to use the characters of text to form as
+      many instances of the word “lambda” as possible.
+    </h2>
+    <h2 id="you-can-use-each-character-in-text-at-most-once.">
+      You can use each character in text at most once.
+    </h2>
+    <h2
+      id="write-a-function-that-returns-the-maximum-number-of-instances-of-lambda-that-can-be-formed."
+    >
+      Write a function that returns the maximum number of instances of “lambda”
+      that can be formed.
+    </h2>
+    <h2 id="input-text-mbxcdatlas">Input: text = “mbxcdatlas”</h2>
+    <h2 id="output-1">Output: 1</h2>
+    <h2 id="example-2">Example 2:</h2>
+    <h2 id="input-text-lalaaxcmbdtsumbdav">
+      Input: text = “lalaaxcmbdtsumbdav”
+    </h2>
+    <h2 id="output-2">Output: 2</h2>
+    <h2 id="example-3">Example 3:</h2>
+    <h2 id="input-text-sctlamb">Input: text = “sctlamb”</h2>
+    <h2 id="output-0">Output: 0</h2>
+    <h2 id="notes">Notes:</h2>
+    <h2 id="text-consists-of-lowercase-english-characters-only">
+      text consists of lowercase English characters only
+    </h2>
+    <h2 id="execution-time-limit-4-seconds-py3">
+      [execution time limit] 4 seconds (py3)
+    </h2>
+    <h2 id="input-string-text">[input] string text</h2>
+    <h2 id="output-integer">[output] integer</h2>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"></a>
 <a class="sourceLine" id="cb14-2" title="2"><span class="kw">def</span> csMaxNumberOfLambdas(text):</a>
 <a class="sourceLine" id="cb14-3" title="3">    sub_string <span class="op">=</span> <span class="st">&quot;lambda&quot;</span></a>
 <a class="sourceLine" id="cb14-4" title="4">    lambda_count <span class="op">=</span> {<span class="st">&quot;l&quot;</span>: <span class="dv">0</span>, <span class="st">&quot;a&quot;</span>: <span class="dv">0</span>, <span class="st">&quot;m&quot;</span>: <span class="dv">0</span>, <span class="st">&quot;b&quot;</span>: <span class="dv">0</span>, <span class="st">&quot;d&quot;</span>: <span class="dv">0</span>, <span class="st">&quot;a&quot;</span>: <span class="dv">0</span>}</a>
@@ -716,6 +1162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb14-8" title="8">            lambda_count[letter] <span class="op">+=</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb14-9" title="9">    <span class="cf">for</span> key, value <span class="kw">in</span> lambda_count.items():</a>
 <a class="sourceLine" id="cb14-10" title="10">        counts.append(value)</a>
-<a class="sourceLine" id="cb14-11" title="11">    <span class="cf">return</span> <span class="bu">min</span>(counts)</a></code></pre></div>
-</body>
+<a class="sourceLine" id="cb14-11" title="11">    <span class="cf">return</span> <span class="bu">min</span>(counts)</a></code></pre>
+    </div>
+  </body>
 </html>

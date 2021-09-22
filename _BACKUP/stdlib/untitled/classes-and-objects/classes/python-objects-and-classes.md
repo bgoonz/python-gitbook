@@ -1,5 +1,4 @@
-Python Objects & Classes
-========================
+# Python Objects & Classes
 
 ### Creating object and classes \#
 
@@ -9,7 +8,7 @@ Object oriented programming use objects to create programs, and these objects st
 
 ### Defining class \#
 
-Class name in python is preceded with `class` keyword followed by a colon (`:`). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called *initializer* (also commonly known as constructors), which get invoked automatically every time new object is created.
+Class name in python is preceded with `class` keyword followed by a colon (`:`). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called _initializer_ (also commonly known as constructors), which get invoked automatically every time new object is created.
 
 Let’s see an example.
 

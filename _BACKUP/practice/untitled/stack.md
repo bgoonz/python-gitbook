@@ -1,5 +1,4 @@
-Stack
-=====
+# Stack
 
 ### Stacks in Python
 
@@ -33,30 +32,29 @@ Adding elements is known as a **push,** and removing elements is known as a **po
 
 **Advantages:**
 
--   Offers LIFO data management that’s impossible with arrays
--   Automatic scaling and object cleanup
--   Simple and reliable data storage system
+- Offers LIFO data management that’s impossible with arrays
+- Automatic scaling and object cleanup
+- Simple and reliable data storage system
 
 **Disadvantages:**
 
--   Stack memory is limited
--   Too many objects on the stack leads to a stack overflow error
+- Stack memory is limited
+- Too many objects on the stack leads to a stack overflow error
 
 **Applications:**
 
--   Used for making highly reactive systems
--   Memory management systems use stacks to handle the most recent requests first
--   Helpful for questions like parenthesis matching
+- Used for making highly reactive systems
+- Memory management systems use stacks to handle the most recent requests first
+- Helpful for questions like parenthesis matching
 
 #### Common stacks interview questions in Python
 
--   Implement a queue using stacks
--   Evaluate a Postfix expression with a stack
--   Next greatest element using a stack
--   Create a `min()` function using a stack
+- Implement a queue using stacks
+- Evaluate a Postfix expression with a stack
+- Next greatest element using a stack
+- Create a `min()` function using a stack
 
-Stack in Python
----------------
+## Stack in Python
 
 > A Computer Science portal for geeks. It contains well written, well thought and well explained computer science and programming articles, quizzes and practice/competitive programming/company interview Questions.
 
@@ -64,58 +62,59 @@ A stack is a linear data structure that stores items in a Last-In/First-Out (LIF
 
 The functions associated with stack are:
 
--   **empty()** – Returns whether the stack is empty – Time Complexity: O(1)
--   **size()** – Returns the size of the stack – Time Complexity: O(1)
--   **top()** – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
--   **push(a)** – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
--   **pop()** – Deletes the topmost element of the stack – Time Complexity: O(1)
+- **empty()** – Returns whether the stack is empty – Time Complexity: O(1)
+- **size()** – Returns the size of the stack – Time Complexity: O(1)
+- **top()** – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
+- **push(a)** – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
+- **pop()** – Deletes the topmost element of the stack – Time Complexity: O(1)
 
 ### Implementation
 
 There are various ways from which a stack can be implemented in Python. This article covers the implementation of a stack using data structures and modules from the Python library.  
 Stack in Python can be implemented using the following ways:
 
--   list
--   Collections.deque
--   queue.LifoQueue
+- list
+- Collections.deque
+- queue.LifoQueue
 
 #### Implementation using list:
 
 Python’s built-in data structure list can be used as a stack. Instead of push(), append() is used to add elements to the top of the stack while pop() removes the element in LIFO order.  
 Unfortunately, the list has a few shortcomings. The biggest issue is that it can run into speed issues as it grows. The items in the list are stored next to each other in memory, if the stack grows bigger than the block of memory that currently holds it, then Python needs to do some memory allocations. This can lead to some append() calls taking much longer than other ones.
 
--   Python3
+- Python3
 
-    # Python program to
-    # demonstrate stack implementation
-    # using list
+  # Python program to
 
+  # demonstrate stack implementation
 
-    stack = []
+  # using list
 
-    # append() function to push
-    # element in the stack
-    stack.append('a')
-    stack.append('b')
-    stack.append('c')
+  stack = []
 
-    print('Initial stack')
-    print(stack)
+  # append() function to push
 
-    # pop() function to pop
-    # element from stack in
-    # LIFO order
-    print('\nElements popped from stack:')
-    print(stack.pop())
-    print(stack.pop())
-    print(stack.pop())
+  # element in the stack
 
-    print('\nStack after elements are popped:')
-    print(stack)
+  stack.append('a') stack.append('b') stack.append('c')
 
-    # uncommenting print(stack.pop())
-    # will cause an IndexError
-    # as the stack is now empty
+  print('Initial stack') print(stack)
+
+  # pop() function to pop
+
+  # element from stack in
+
+  # LIFO order
+
+  print('\nElements popped from stack:') print(stack.pop()) print(stack.pop()) print(stack.pop())
+
+  print('\nStack after elements are popped:') print(stack)
+
+  # uncommenting print(stack.pop())
+
+  # will cause an IndexError
+
+  # as the stack is now empty
 
 **Output:**
 
@@ -133,40 +132,41 @@ IndexError: pop from empty list
 Python stack can be implemented using the deque class from the collections module. Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity.  
 The same methods on deque as seen in the list are used, append() and pop().
 
--   Python3
+- Python3
 
-    # Python program to
-    # demonstrate stack implementation
-    # using collections.deque
+  # Python program to
 
+  # demonstrate stack implementation
 
-    from Collections import deque
+  # using collections.deque
 
-    stack = deque()
+  from Collections import deque
 
-    # append() function to push
-    # element in the stack
-    stack.append('a')
-    stack.append('b')
-    stack.append('c')
+  stack = deque()
 
-    print('Initial stack:')
-    print(stack)
+  # append() function to push
 
-    # pop() function to pop
-    # element from stack in
-    # LIFO order
-    print('\nElements popped from stack:')
-    print(stack.pop())
-    print(stack.pop())
-    print(stack.pop())
+  # element in the stack
 
-    print('\nStack after elements are popped:')
-    print(stack)
+  stack.append('a') stack.append('b') stack.append('c')
 
-    # uncommenting print(stack.pop())
-    # will cause an IndexError
-    # as the stack is now empty
+  print('Initial stack:') print(stack)
+
+  # pop() function to pop
+
+  # element from stack in
+
+  # LIFO order
+
+  print('\nElements popped from stack:') print(stack.pop()) print(stack.pop()) print(stack.pop())
+
+  print('\nStack after elements are popped:') print(stack)
+
+  # uncommenting print(stack.pop())
+
+  # will cause an IndexError
+
+  # as the stack is now empty
 
 **Output:**
 
@@ -185,15 +185,15 @@ Queue module also has a LIFO Queue, which is basically a Stack. Data is inserted
 
 There are various functions available in this module:
 
--   **maxsize** – Number of items allowed in the queue.
--   **empty()** – Return True if the queue is empty, False otherwise.
--   **full()** – Return True if there are *maxsize* items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True.
--   **get()** – Remove and return an item from the queue. If the queue is empty, wait until an item is available.
--   **get\_nowait()** – Return an item if one is immediately available, else raise QueueEmpty.
--   **put(item)** – Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.
--   **put\_nowait(item)** – Put an item into the queue without blocking.
--   **qsize()** – Return the number of items in the queue. If no free slot is immediately available, raise QueueFull.
--   Python3
+- **maxsize** – Number of items allowed in the queue.
+- **empty()** – Return True if the queue is empty, False otherwise.
+- **full()** – Return True if there are _maxsize_ items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True.
+- **get()** – Remove and return an item from the queue. If the queue is empty, wait until an item is available.
+- **get_nowait()** – Return an item if one is immediately available, else raise QueueEmpty.
+- **put(item)** – Put an item into the queue. If the queue is full, wait until a free slot is available before adding the item.
+- **put_nowait(item)** – Put an item into the queue without blocking.
+- **qsize()** – Return the number of items in the queue. If no free slot is immediately available, raise QueueFull.
+- Python3
 
 ### Python3
 
@@ -248,86 +248,69 @@ Empty: True
 
 The linked list has two methods addHead(item) and removeHead() that run in constant time. These two methods are suitable to implement a stack.
 
--   **getSize()**– Get the number of items in the stack.
--   **isEmpty()** – Return True if the stack is empty, False otherwise.
--   **peek()** – Return the top item in the stack. If the stack is empty, raise an exception.
--   **push(value)** – Push a value into the head of the stack.
--   **pop()** – Remove and return a value in the head of the stack. If the stack is empty, raise an exception.
+- **getSize()**– Get the number of items in the stack.
+- **isEmpty()** – Return True if the stack is empty, False otherwise.
+- **peek()** – Return the top item in the stack. If the stack is empty, raise an exception.
+- **push(value)** – Push a value into the head of the stack.
+- **pop()** – Remove and return a value in the head of the stack. If the stack is empty, raise an exception.
 
 Below is the implementation of the above approach:
 
--   Python3
+- Python3
 
-    # Python program to demonstrate
-    # stack implementation using a linked list.
-    # node class
-    class Node:
-       def __init__(self, value):
-          self.value = value
-          self.next = None
+  # Python program to demonstrate
 
-    class Stack:
+  # stack implementation using a linked list.
 
-       # Initializing a stack.
-       # Use a dummy node, which is
-       # easier for handling edge cases.
-       def __init__(self):
-          self.head = Node("head")
-          self.size = 0
+  # node class
 
-       # String representation of the stack
-       def __str__(self):
-          cur = self.head.next
-          out = ""
-          while cur:
-             out += str(cur.value) + "->"
-             cur = cur.next
-          return out[:-3]
+  class Node: def **init**(self, value): self.value = value self.next = None
 
-       # Get the current size of the stack
-       def getSize(self):
-          return self.size
+  class Stack:
 
-       # Check if the stack is empty
-       def isEmpty(self):
-          return self.size == 0
+  # Initializing a stack.
 
-       # Get the top item of the stack
-       def peek(self):
+  # Use a dummy node, which is
 
-          # Sanitary check to see if we
-          # are peeking an empty stack.
-          if self.isEmpty():
-             raise Exception("Peeking from an empty stack")
-          return self.head.next.value
+  # easier for handling edge cases.
 
-       # Push a value into the stack.
-       def push(self, value):
-          node = Node(value)
-          node.next = self.head.next
-          self.head.next = node
-          self.size += 1
+  def **init**(self): self.head = Node("head") self.size = 0
 
-       # Remove a value from the stack and return.
-       def pop(self):
-          if self.isEmpty():
-             raise Exception("Popping from an empty stack")
-          remove = self.head.next
-          self.head.next = self.head.next.next
-          self.size -= 1
-          return remove.value
+  # String representation of the stack
 
-    # Driver Code
-    if __name__ == "__main__":
-       stack = Stack()
-       for i in range(1, 11):
-          stack.push(i)
-       print(f"Stack: {stack}")
+  def **str**(self): cur = self.head.next out = "" while cur: out += str(cur.value) + "->" cur = cur.next return out[:-3]
 
-       for _ in range(1, 6):
-          remove = stack.pop()
-          print(f"Pop: {remove}")
-       print(f"Stack: {stack}")
+  # Get the current size of the stack
+
+  def getSize(self): return self.size
+
+  # Check if the stack is empty
+
+  def isEmpty(self): return self.size == 0
+
+  # Get the top item of the stack
+
+  def peek(self):
+
+        # Sanitary check to see if we
+        # are peeking an empty stack.
+        if self.isEmpty():
+           raise Exception("Peeking from an empty stack")
+        return self.head.next.value
+
+  # Push a value into the stack.
+
+  def push(self, value): node = Node(value) node.next = self.head.next self.head.next = node self.size += 1
+
+  # Remove a value from the stack and return.
+
+  def pop(self): if self.isEmpty(): raise Exception("Popping from an empty stack") remove = self.head.next self.head.next = self.head.next.next self.size -= 1 return remove.value
+
+  # Driver Code
+
+  if **name** == "**main**": stack = Stack() for i in range(1, 11): stack.push(i) print(f"Stack: {stack}")
+
+  for \_ in range(1, 6): remove = stack.pop() print(f"Pop: {remove}") print(f"Stack: {stack}")
 
 **Output:**
 

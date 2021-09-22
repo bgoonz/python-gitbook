@@ -1,208 +1,540 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>install-python</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="install-python">Install Python</h1>
-<h2 id="installing-python-3">Installing Python 3</h2>
-<p>Brian “Beej Jorgensen” Hall edited this page on May 29, 2020 · <a href="https://github.com/LambdaSchool/CS-Wiki/wiki/Installing-Python-3/_history">1 revision</a></p>
-<p><strong>NOTE: pipenv is</strong> <em><strong>optional</strong></em><strong>! We don’t use it in CS.</strong> But it’s a neat package manager if you get into more complex Python projects. It can be a headache of an install for some people. You can safely ignore anything about pipenv below if you don’t want to mess with it.</p>
-<p>We’ll want to install Python 3 (version 3.x), which is the runtime for the language itself. The runtime is what allows you to execute Python code and files by typing <code>python [file_or_code_to_execute]</code> in your terminal. You can also open up a Python REPL (Read-Eval-Print Loop) to quickly and easily mess around with Python code once you’ve gotten the runtime installed. If you recall how Node let’s you execute and run JavaScript code locally on your machine instead of having to rely on the browser, the Python runtime pretty much let’s you do the same thing but with Python code.</p>
-<p>Additionally, we’ll be talking about how to install the (optional) pipenv virtual environment manager. Think of it as the <code>npm</code> of Python (though pipenv is also capable of performing a bunch of other tasks as well, most notably running your Python projects in an isolated virtual environment).</p>
-<h3 id="note-for-anaconda-users">Note for Anaconda users</h3>
-<p>Unfortunately, we haven’t found a way to get Anaconda to play nicely with pipenv. If you get them working together, please let your instructor know how you did it.</p>
-<h3 id="testing-the-install">Testing the Install</h3>
-<p>If you can run <code>python</code> or <code>python3</code> and see a 3.7 or later version, you’re good to go:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">$ python3 <span class="op">--</span>version</a>
-<a class="sourceLine" id="cb1-2" title="2">Python <span class="dv">3</span>.<span class="fl">6.5</span></a></code></pre></div>
-<p>or on some systems, Python 3 is just <code>python</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">$ python <span class="op">--</span>version</a>
-<a class="sourceLine" id="cb2-2" title="2">Python <span class="dv">3</span>.<span class="fl">6.5</span></a></code></pre></div>
-<p>And optionally try <code>pipenv</code>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">$ pipenv <span class="op">--</span>version</a>
-<a class="sourceLine" id="cb3-2" title="2">pipenv, version [some remotely recent date, probably]</a></code></pre></div>
-<p>Otherwise, keep reading. :)</p>
-<h3 id="macos">macOS</h3>
-<p>While macOS comes with Python 2, we need to get Python 3 in there as well.</p>
-<p>If you don’t have Brew installed, <a href="https://brew.sh/">follow the instructions on the brew website</a>.</p>
-<p>Use Brew to install Python and pipenv at the Terminal prompt:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">brew install python pipenv</a></code></pre></div>
-<h3 id="windows">Windows</h3>
-<p><em><strong>Note</strong>:</em> Git Bash doesn’t seem to cooperate if you’re trying to install Python on Windows. Try another terminal like Powershell.</p>
-<p>Recommend updating Windows to the latest version.</p>
-<h4 id="windows-store">Windows Store</h4>
-<p>Python 3 is in the Windows Store and can be installed from there.</p>
-<h4 id="official-binaries">Official Binaries</h4>
-<p>When installing the official package, be sure to check the</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">[ ] Add to PATH</a></code></pre></div>
-<p>checkbox!!</p>
-<p><a href="https://www.python.org/downloads/windows/">Official Package</a></p>
-<h4 id="pipenv">Pipenv</h4>
-<p>This is what worked for Beej. YMMV.</p>
-<ol type="1">
-<li>Install Python, as per above.</li>
-<li>Bring up a shell (cmd.exe or Powershell)</li>
-<li>Run <code>py -m pip</code></li>
-<li><p>Run <code>py -m pip install --user pipenv</code></p>
-<p>At this point, you should be able to always run pipenv with <code>py -m pipenv</code>, but that’s a little inconvenient. Read on for making it easier.</p></li>
-<li><p>You’ll see a message like this in the pipenv install output, but with a slightly different path:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">add C:<span class="op">\</span>Users<span class="op">\</span>username<span class="op">\</span>AppData<span class="op">\</span>Roaming<span class="op">\</span>Python<span class="op">\</span>Python38<span class="op">\</span>Scripts to your path</a></code></pre></div></li>
-<li>Select that path (not including any quotes around it), and copy it</li>
-<li>Go to the Start menu, type “environment” and run the program <code>Edit Environment Variables</code></li>
-<li>In the System Properties popup, hit the <code>Advanced</code> tab, then <code>Environment Variables</code></li>
-<li>On the list of environment variables, doubleclick <code>Path</code></li>
-<li>Click <code>New</code></li>
-<li>Paste that path from step 5 into the new entry slot. Make sure there aren’t any quotes around it.</li>
-<li>Click <code>OK</code>, <code>OK</code>, <code>OK</code>.</li>
-<li>Relaunch any shells you have open.</li>
-<li><p>Now you should be able to just run <code>pip</code> and <code>pipenv</code> in Powershell without putting <code>py -m</code> in front of it.</p></li>
-</ol>
-<p><strong>Pipenv official instructions</strong></p>
-<p><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref">Install pipenv per these instructions</a></p>
-<h4 id="chocolatey">Chocolatey</h4>
-<p><a href="https://chocolatey.org/install">Install Chocolatey</a></p>
-<p><a href="https://chocolatey.org/packages/python3">Install Python 3 with Chocolatey</a></p>
-<p><a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref">Install pipenv per these instructions</a></p>
-<h4 id="wsl">WSL</h4>
-<p>If you’re running Windows 10+, you might want to install the Windows Subsystem for Linux. This gives you a mini, integrated Linux system inside Windows. You then install and use Python from there.</p>
-<ol type="1">
-<li>Update Windows to latest if you haven’t already.</li>
-<li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Install WSL from here</a>.</li>
-<li>Go to the Microsoft store and install Ubuntu.</li>
-<li>Run Ubuntu to get a bash shell.</li>
-<li>Make a new username and password. This is completely separate from your Windows username and password, but I made mine the same so that I wouldn’t forget.</li>
-<li><p>Upgrade the Ubuntu system. Run:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">sudo apt<span class="op">-</span>get update</a>
-<a class="sourceLine" id="cb7-2" title="2">sudo apt<span class="op">-</span>get upgrade</a></code></pre></div>
-<p>Give your newly-entered password if prompted.</p></li>
-<li>Running <code>python3 --version</code> should give you 3.6 or higher.</li>
-<li><p>Run <code>pip install pipenv</code>.</p></li>
-</ol>
-<p>If you’ve installed VS Code, add the “Remote WSL” extension. This way you can run <code>code</code> from within Ubuntu.</p>
-<p>In the Ubuntu shell, you can run <code>explorer.exe .</code> in any directory to open a Windows Explorer window in that directory.</p>
-<p>Also in Windows Explorer, you can put <code>\\wsl$</code> in the URL bar to see your Ubuntu drive. (If it doesn’t show up, relaunch your Ubuntu shell.)</p>
-<p>If you run into trouble with the above, try the following:</p>
-<ol type="1">
-<li>Open cmd.exe as an administrator and start bash with <code>bash</code>
-<ol type="1">
-<li>Type <code>Python -V' and 'Python3 -V</code>
-<ol type="1">
-<li>If one of these responds with <code>Python 3.6.8</code> use that command from now on</li>
-<li>If neither response is <code>Python 3.6.8</code> but one is a higher version of Python, this means one of two things
-<ol type="1">
-<li>If you have manually installed a higher version of Python, we recommend uninstalling it</li>
-<li>If you have not, it is possible that Microsoft has updated WSL and you will need to adjust these instructions to accommodate</li>
-</ol></li>
-<li>Otherwise, update Ubuntu:
-<ol type="1">
-<li><code>sudo apt-get update</code></li>
-<li><code>sudo apt-get upgrade</code></li>
-</ol></li>
-</ol></li>
-<li>Repeat 2.1 above to determine if you should use <code>Python</code> or <code>Python3</code> when using Python. <em>Note:</em> inside the shell, you will always use <em>Python</em> as the command.</li>
-</ol></li>
-<li>Make sure pip is installed for <em>Python 3</em>
-<ol type="1">
-<li><code>pip --version</code> and <code>pip3 --version</code>. One of these needs to respond with a version that has a version of Python 3 at the end of the line.</li>
-<li>If you only have it for 2.7, you will need to install for 3 with:
-<ol type="1">
-<li><code>sudo apt update &amp;&amp; sudo apt upgrade</code></li>
-<li><code>sudo apt install python3-pip</code></li>
-</ol></li>
-<li>Check versions and commands again. You will likely need to use <code>pip3</code> for the next step, but it’s possible it may be just <code>pip</code>. Use the one with the version associated with Python 3.6.8</li>
-</ol></li>
-<li>Make sure pipenv is installed for Python 3 <code>python3 -m pipenv --version</code>
-<ol type="1">
-<li>If not, install pipenv:
-<ol type="1">
-<li><code>sudo apt update &amp;&amp; sudo apt upgrade</code> (if you didn’t just do this above)</li>
-<li><code>pip3 install --user pipenv</code></li>
-</ol></li>
-<li>Check the version again</li>
-</ol></li>
-<li>Try <code>pipenv shell</code>. If this fails, make sure that every reference in the error refers to Python 3.6. If not, review the above steps
-<ol type="1">
-<li>If the error does refer to 3.6:
-<ol type="1">
-<li>Confirm that <code>python --version</code> refers to 2.7.something</li>
-<li>Confirm that <code>/usr/bin/python3 --version</code> refers to 3.6.8</li>
-<li><code>pipenv --three --python=</code>which python3`` <em>NOTE</em> that there are backticks (`) around <em>which python3</em></li>
-<li>This should create the shell forcing it to use 3.6.8</li>
-</ol></li>
-</ol></li>
-</ol>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>install-python</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="install-python">Install Python</h1>
+    <h2 id="installing-python-3">Installing Python 3</h2>
+    <p>
+      Brian “Beej Jorgensen” Hall edited this page on May 29, 2020 ·
+      <a
+        href="https://github.com/LambdaSchool/CS-Wiki/wiki/Installing-Python-3/_history"
+        >1 revision</a
+      >
+    </p>
+    <p>
+      <strong>NOTE: pipenv is</strong> <em><strong>optional</strong></em
+      ><strong>! We don’t use it in CS.</strong> But it’s a neat package manager
+      if you get into more complex Python projects. It can be a headache of an
+      install for some people. You can safely ignore anything about pipenv below
+      if you don’t want to mess with it.
+    </p>
+    <p>
+      We’ll want to install Python 3 (version 3.x), which is the runtime for the
+      language itself. The runtime is what allows you to execute Python code and
+      files by typing <code>python [file_or_code_to_execute]</code> in your
+      terminal. You can also open up a Python REPL (Read-Eval-Print Loop) to
+      quickly and easily mess around with Python code once you’ve gotten the
+      runtime installed. If you recall how Node let’s you execute and run
+      JavaScript code locally on your machine instead of having to rely on the
+      browser, the Python runtime pretty much let’s you do the same thing but
+      with Python code.
+    </p>
+    <p>
+      Additionally, we’ll be talking about how to install the (optional) pipenv
+      virtual environment manager. Think of it as the <code>npm</code> of Python
+      (though pipenv is also capable of performing a bunch of other tasks as
+      well, most notably running your Python projects in an isolated virtual
+      environment).
+    </p>
+    <h3 id="note-for-anaconda-users">Note for Anaconda users</h3>
+    <p>
+      Unfortunately, we haven’t found a way to get Anaconda to play nicely with
+      pipenv. If you get them working together, please let your instructor know
+      how you did it.
+    </p>
+    <h3 id="testing-the-install">Testing the Install</h3>
+    <p>
+      If you can run <code>python</code> or <code>python3</code> and see a 3.7
+      or later version, you’re good to go:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">$ python3 <span class="op">--</span>version</a>
+<a class="sourceLine" id="cb1-2" title="2">Python <span class="dv">3</span>.<span class="fl">6.5</span></a></code></pre>
+    </div>
+    <p>or on some systems, Python 3 is just <code>python</code>:</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">$ python <span class="op">--</span>version</a>
+<a class="sourceLine" id="cb2-2" title="2">Python <span class="dv">3</span>.<span class="fl">6.5</span></a></code></pre>
+    </div>
+    <p>And optionally try <code>pipenv</code>:</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">$ pipenv <span class="op">--</span>version</a>
+<a class="sourceLine" id="cb3-2" title="2">pipenv, version [some remotely recent date, probably]</a></code></pre>
+    </div>
+    <p>Otherwise, keep reading. :)</p>
+    <h3 id="macos">macOS</h3>
+    <p>
+      While macOS comes with Python 2, we need to get Python 3 in there as well.
+    </p>
+    <p>
+      If you don’t have Brew installed,
+      <a href="https://brew.sh/">follow the instructions on the brew website</a
+      >.
+    </p>
+    <p>Use Brew to install Python and pipenv at the Terminal prompt:</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">brew install python pipenv</a></code></pre>
+    </div>
+    <h3 id="windows">Windows</h3>
+    <p>
+      <em><strong>Note</strong>:</em> Git Bash doesn’t seem to cooperate if
+      you’re trying to install Python on Windows. Try another terminal like
+      Powershell.
+    </p>
+    <p>Recommend updating Windows to the latest version.</p>
+    <h4 id="windows-store">Windows Store</h4>
+    <p>Python 3 is in the Windows Store and can be installed from there.</p>
+    <h4 id="official-binaries">Official Binaries</h4>
+    <p>When installing the official package, be sure to check the</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">[ ] Add to PATH</a></code></pre>
+    </div>
+    <p>checkbox!!</p>
+    <p>
+      <a href="https://www.python.org/downloads/windows/">Official Package</a>
+    </p>
+    <h4 id="pipenv">Pipenv</h4>
+    <p>This is what worked for Beej. YMMV.</p>
+    <ol type="1">
+      <li>Install Python, as per above.</li>
+      <li>Bring up a shell (cmd.exe or Powershell)</li>
+      <li>Run <code>py -m pip</code></li>
+      <li>
+        <p>Run <code>py -m pip install --user pipenv</code></p>
+        <p>
+          At this point, you should be able to always run pipenv with
+          <code>py -m pipenv</code>, but that’s a little inconvenient. Read on
+          for making it easier.
+        </p>
+      </li>
+      <li>
+        <p>
+          You’ll see a message like this in the pipenv install output, but with
+          a slightly different path:
+        </p>
+        <div class="sourceCode" id="cb6">
+          <pre
+            class="sourceCode python"
+          ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">add C:<span class="op">\</span>Users<span class="op">\</span>username<span class="op">\</span>AppData<span class="op">\</span>Roaming<span class="op">\</span>Python<span class="op">\</span>Python38<span class="op">\</span>Scripts to your path</a></code></pre>
+        </div>
+      </li>
+      <li>
+        Select that path (not including any quotes around it), and copy it
+      </li>
+      <li>
+        Go to the Start menu, type “environment” and run the program
+        <code>Edit Environment Variables</code>
+      </li>
+      <li>
+        In the System Properties popup, hit the <code>Advanced</code> tab, then
+        <code>Environment Variables</code>
+      </li>
+      <li>
+        On the list of environment variables, doubleclick <code>Path</code>
+      </li>
+      <li>Click <code>New</code></li>
+      <li>
+        Paste that path from step 5 into the new entry slot. Make sure there
+        aren’t any quotes around it.
+      </li>
+      <li>Click <code>OK</code>, <code>OK</code>, <code>OK</code>.</li>
+      <li>Relaunch any shells you have open.</li>
+      <li>
+        <p>
+          Now you should be able to just run <code>pip</code> and
+          <code>pipenv</code> in Powershell without putting
+          <code>py -m</code> in front of it.
+        </p>
+      </li>
+    </ol>
+    <p><strong>Pipenv official instructions</strong></p>
+    <p>
+      <a
+        href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref"
+        >Install pipenv per these instructions</a
+      >
+    </p>
+    <h4 id="chocolatey">Chocolatey</h4>
+    <p><a href="https://chocolatey.org/install">Install Chocolatey</a></p>
+    <p>
+      <a href="https://chocolatey.org/packages/python3"
+        >Install Python 3 with Chocolatey</a
+      >
+    </p>
+    <p>
+      <a
+        href="http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref"
+        >Install pipenv per these instructions</a
+      >
+    </p>
+    <h4 id="wsl">WSL</h4>
+    <p>
+      If you’re running Windows 10+, you might want to install the Windows
+      Subsystem for Linux. This gives you a mini, integrated Linux system inside
+      Windows. You then install and use Python from there.
+    </p>
+    <ol type="1">
+      <li>Update Windows to latest if you haven’t already.</li>
+      <li>
+        <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10"
+          >Install WSL from here</a
+        >.
+      </li>
+      <li>Go to the Microsoft store and install Ubuntu.</li>
+      <li>Run Ubuntu to get a bash shell.</li>
+      <li>
+        Make a new username and password. This is completely separate from your
+        Windows username and password, but I made mine the same so that I
+        wouldn’t forget.
+      </li>
+      <li>
+        <p>Upgrade the Ubuntu system. Run:</p>
+        <div class="sourceCode" id="cb7">
+          <pre
+            class="sourceCode python"
+          ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">sudo apt<span class="op">-</span>get update</a>
+<a class="sourceLine" id="cb7-2" title="2">sudo apt<span class="op">-</span>get upgrade</a></code></pre>
+        </div>
+        <p>Give your newly-entered password if prompted.</p>
+      </li>
+      <li>
+        Running <code>python3 --version</code> should give you 3.6 or higher.
+      </li>
+      <li>
+        <p>Run <code>pip install pipenv</code>.</p>
+      </li>
+    </ol>
+    <p>
+      If you’ve installed VS Code, add the “Remote WSL” extension. This way you
+      can run <code>code</code> from within Ubuntu.
+    </p>
+    <p>
+      In the Ubuntu shell, you can run <code>explorer.exe .</code> in any
+      directory to open a Windows Explorer window in that directory.
+    </p>
+    <p>
+      Also in Windows Explorer, you can put <code>\\wsl$</code> in the URL bar
+      to see your Ubuntu drive. (If it doesn’t show up, relaunch your Ubuntu
+      shell.)
+    </p>
+    <p>If you run into trouble with the above, try the following:</p>
+    <ol type="1">
+      <li>
+        Open cmd.exe as an administrator and start bash with <code>bash</code>
+        <ol type="1">
+          <li>
+            Type <code>Python -V' and 'Python3 -V</code>
+            <ol type="1">
+              <li>
+                If one of these responds with <code>Python 3.6.8</code> use that
+                command from now on
+              </li>
+              <li>
+                If neither response is <code>Python 3.6.8</code> but one is a
+                higher version of Python, this means one of two things
+                <ol type="1">
+                  <li>
+                    If you have manually installed a higher version of Python,
+                    we recommend uninstalling it
+                  </li>
+                  <li>
+                    If you have not, it is possible that Microsoft has updated
+                    WSL and you will need to adjust these instructions to
+                    accommodate
+                  </li>
+                </ol>
+              </li>
+              <li>
+                Otherwise, update Ubuntu:
+                <ol type="1">
+                  <li><code>sudo apt-get update</code></li>
+                  <li><code>sudo apt-get upgrade</code></li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            Repeat 2.1 above to determine if you should use
+            <code>Python</code> or <code>Python3</code> when using Python.
+            <em>Note:</em> inside the shell, you will always use
+            <em>Python</em> as the command.
+          </li>
+        </ol>
+      </li>
+      <li>
+        Make sure pip is installed for <em>Python 3</em>
+        <ol type="1">
+          <li>
+            <code>pip --version</code> and <code>pip3 --version</code>. One of
+            these needs to respond with a version that has a version of Python 3
+            at the end of the line.
+          </li>
+          <li>
+            If you only have it for 2.7, you will need to install for 3 with:
+            <ol type="1">
+              <li><code>sudo apt update &amp;&amp; sudo apt upgrade</code></li>
+              <li><code>sudo apt install python3-pip</code></li>
+            </ol>
+          </li>
+          <li>
+            Check versions and commands again. You will likely need to use
+            <code>pip3</code> for the next step, but it’s possible it may be
+            just <code>pip</code>. Use the one with the version associated with
+            Python 3.6.8
+          </li>
+        </ol>
+      </li>
+      <li>
+        Make sure pipenv is installed for Python 3
+        <code>python3 -m pipenv --version</code>
+        <ol type="1">
+          <li>
+            If not, install pipenv:
+            <ol type="1">
+              <li>
+                <code>sudo apt update &amp;&amp; sudo apt upgrade</code> (if you
+                didn’t just do this above)
+              </li>
+              <li><code>pip3 install --user pipenv</code></li>
+            </ol>
+          </li>
+          <li>Check the version again</li>
+        </ol>
+      </li>
+      <li>
+        Try <code>pipenv shell</code>. If this fails, make sure that every
+        reference in the error refers to Python 3.6. If not, review the above
+        steps
+        <ol type="1">
+          <li>
+            If the error does refer to 3.6:
+            <ol type="1">
+              <li>
+                Confirm that <code>python --version</code> refers to
+                2.7.something
+              </li>
+              <li>
+                Confirm that <code>/usr/bin/python3 --version</code> refers to
+                3.6.8
+              </li>
+              <li>
+                <code>pipenv --three --python=</code>which python3``
+                <em>NOTE</em> that there are backticks (`) around
+                <em>which python3</em>
+              </li>
+              <li>This should create the shell forcing it to use 3.6.8</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </body>
 </html>

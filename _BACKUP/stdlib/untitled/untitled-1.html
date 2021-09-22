@@ -1,114 +1,353 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>untitled-1</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="functions">Functions</h1>
-<h2 id="functions-1">5. Functions</h2>
-<p>Human beings are quite limited in their ability hold distinct pieces of information in their <a href="http://en.wikipedia.org/wiki/Working_memory">working memories</a>. Research suggests that for most people the number of unrelated <a href="http://en.wikipedia.org/wiki/Chunking_%28psychology%29">chunks</a> is about seven. Computers, by contrast, have no difficulty managing thousands of separate pieces of information without ever forgetting them or getting them confused.</p>
-<p>Note</p>
-<p>See <a href="http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two">The Magical Number Seven, Plus or Minus Two</a> for more about this facinating topic.</p>
-<p>To make it possible for human beings (programmers) to write complex programs that can span thousands of lines of code, programming languages have features that allow programmers to use the power of <a href="http://en.wikipedia.org/wiki/Abstraction">abstracton</a> to give names to a sequence of instructions and then to use the new names without having to consider the details of the instructions to which they refer.</p>
-<p>This chapter discusses <a href="http://en.wikipedia.org/wiki/Function_%28computer_science%29">functions</a>, one of Python’s language features that support this kind of abstraction.</p>
-<h3 id="function-definition-and-use">5.1. Function definition and use</h3>
-<p>In the context of programming, a <a href="http://en.wikipedia.org/wiki/Function_%28computer_science%29">function</a> is a named sequence of statements that performs a desired operation. This operation is specified in a <strong>function definition</strong>. In Python, the syntax for a function definition is:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> NAME( LIST OF PARAMETERS ):</a>
-<a class="sourceLine" id="cb1-2" title="2">    STATEMENTS</a></code></pre></div>
-<p>You can make up any names you want for the functions you create, except that you can’t use a name that is a Python keyword. The list of parameters specifies what information, if any, you have to provide in order to use the new function.</p>
-<p>There can be any number of statements inside the function, but they have to be indented from the <code>def</code>.</p>
-<p>Function definitions are <em>compound statements</em>, similar to the branching and looping statements we saw in the <a href="https://www.openbookproject.net/books/bpp4awd/ch04.html#conditionals-n-loops-chapter">Conditionals and loops</a> chapter, which means they have the following parts:</p>
-<ol type="1">
-<li>A <strong>header</strong>, which begins with a keyword and ends with a colon.</li>
-<li>A <strong>body</strong> consisting of one or more Python statements, each indented the same amount (<em>4 spaces is the Python standard</em> ) from the header.</li>
-</ol>
-<p>In a function definition, the keyword in the header is <code>def</code>, which is followed by the name of the function and a list of <a href="http://en.wikipedia.org/wiki/Parameter_%28computer_science%29">parameters</a> enclosed in parentheses. The parameter list may be empty, or it may contain any number of parameters. In either case, the parentheses are required.</p>
-<h3 id="building-on-what-you-learned-in-high-school-algebra">5.2. Building on what you learned in high school Algebra</h3>
-<p>Back in high school Algebera class you were introduced to mathematical functions. Perhaps you were shown a diagram of a “function machine” that looked something like this:<img src="https://www.openbookproject.net/books/bpp4awd/_images/functionmachine.png" alt="Function machine" /></p>
-<p>The idea behind this diagram is that a function is like a <em>machine</em> that takes an input, <code>x</code>, and transforms it into an output, <code>f(x)</code>. The light yellow box <code>f</code> is an abstraction of the process used to do the transformation from <code>x</code> to <code>f(x)</code>.</p>
-<p>Functions in Python can be thought of much the same way, and the similarity with functions from Algebra may help you understand them.</p>
-<p>The following <a href="http://en.wikipedia.org/wiki/Quadratic_function">quadratic function</a> is an example:</p>
-<blockquote>
-<p>f(x) = 3x 2 - 2x + 5</p>
-</blockquote>
-<p>Here is the same function in Python:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> f(x):</a>
-<a class="sourceLine" id="cb2-2" title="2">    <span class="cf">return</span> <span class="dv">3</span> <span class="op">*</span> x <span class="op">**</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">5</span></a></code></pre></div>
-<p>Defining a new function does not make the function run. To do that we need a <strong>function call</strong>. Function calls contain the name of the function being executed followed by a list of values, called <em>arguments</em>, which are assigned to the parameters in the function definition.</p>
-<p>Here is our function <code>f</code> being called with several different arguments:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> f(<span class="dv">3</span>)</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>untitled-1</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="functions">Functions</h1>
+    <h2 id="functions-1">5. Functions</h2>
+    <p>
+      Human beings are quite limited in their ability hold distinct pieces of
+      information in their
+      <a href="http://en.wikipedia.org/wiki/Working_memory">working memories</a
+      >. Research suggests that for most people the number of unrelated
+      <a href="http://en.wikipedia.org/wiki/Chunking_%28psychology%29"
+        >chunks</a
+      >
+      is about seven. Computers, by contrast, have no difficulty managing
+      thousands of separate pieces of information without ever forgetting them
+      or getting them confused.
+    </p>
+    <p>Note</p>
+    <p>
+      See
+      <a
+        href="http://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two"
+        >The Magical Number Seven, Plus or Minus Two</a
+      >
+      for more about this facinating topic.
+    </p>
+    <p>
+      To make it possible for human beings (programmers) to write complex
+      programs that can span thousands of lines of code, programming languages
+      have features that allow programmers to use the power of
+      <a href="http://en.wikipedia.org/wiki/Abstraction">abstracton</a> to give
+      names to a sequence of instructions and then to use the new names without
+      having to consider the details of the instructions to which they refer.
+    </p>
+    <p>
+      This chapter discusses
+      <a href="http://en.wikipedia.org/wiki/Function_%28computer_science%29"
+        >functions</a
+      >, one of Python’s language features that support this kind of
+      abstraction.
+    </p>
+    <h3 id="function-definition-and-use">5.1. Function definition and use</h3>
+    <p>
+      In the context of programming, a
+      <a href="http://en.wikipedia.org/wiki/Function_%28computer_science%29"
+        >function</a
+      >
+      is a named sequence of statements that performs a desired operation. This
+      operation is specified in a <strong>function definition</strong>. In
+      Python, the syntax for a function definition is:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> NAME( LIST OF PARAMETERS ):</a>
+<a class="sourceLine" id="cb1-2" title="2">    STATEMENTS</a></code></pre>
+    </div>
+    <p>
+      You can make up any names you want for the functions you create, except
+      that you can’t use a name that is a Python keyword. The list of parameters
+      specifies what information, if any, you have to provide in order to use
+      the new function.
+    </p>
+    <p>
+      There can be any number of statements inside the function, but they have
+      to be indented from the <code>def</code>.
+    </p>
+    <p>
+      Function definitions are <em>compound statements</em>, similar to the
+      branching and looping statements we saw in the
+      <a
+        href="https://www.openbookproject.net/books/bpp4awd/ch04.html#conditionals-n-loops-chapter"
+        >Conditionals and loops</a
+      >
+      chapter, which means they have the following parts:
+    </p>
+    <ol type="1">
+      <li>
+        A <strong>header</strong>, which begins with a keyword and ends with a
+        colon.
+      </li>
+      <li>
+        A <strong>body</strong> consisting of one or more Python statements,
+        each indented the same amount (<em>4 spaces is the Python standard</em>
+        ) from the header.
+      </li>
+    </ol>
+    <p>
+      In a function definition, the keyword in the header is <code>def</code>,
+      which is followed by the name of the function and a list of
+      <a href="http://en.wikipedia.org/wiki/Parameter_%28computer_science%29"
+        >parameters</a
+      >
+      enclosed in parentheses. The parameter list may be empty, or it may
+      contain any number of parameters. In either case, the parentheses are
+      required.
+    </p>
+    <h3 id="building-on-what-you-learned-in-high-school-algebra">
+      5.2. Building on what you learned in high school Algebra
+    </h3>
+    <p>
+      Back in high school Algebera class you were introduced to mathematical
+      functions. Perhaps you were shown a diagram of a “function machine” that
+      looked something like this:<img
+        src="https://www.openbookproject.net/books/bpp4awd/_images/functionmachine.png"
+        alt="Function machine"
+      />
+    </p>
+    <p>
+      The idea behind this diagram is that a function is like a
+      <em>machine</em> that takes an input, <code>x</code>, and transforms it
+      into an output, <code>f(x)</code>. The light yellow box <code>f</code> is
+      an abstraction of the process used to do the transformation from
+      <code>x</code> to <code>f(x)</code>.
+    </p>
+    <p>
+      Functions in Python can be thought of much the same way, and the
+      similarity with functions from Algebra may help you understand them.
+    </p>
+    <p>
+      The following
+      <a href="http://en.wikipedia.org/wiki/Quadratic_function"
+        >quadratic function</a
+      >
+      is an example:
+    </p>
+    <blockquote>
+      <p>f(x) = 3x 2 - 2x + 5</p>
+    </blockquote>
+    <p>Here is the same function in Python:</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> f(x):</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="cf">return</span> <span class="dv">3</span> <span class="op">*</span> x <span class="op">**</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">5</span></a></code></pre>
+    </div>
+    <p>
+      Defining a new function does not make the function run. To do that we need
+      a <strong>function call</strong>. Function calls contain the name of the
+      function being executed followed by a list of values, called
+      <em>arguments</em>, which are assigned to the parameters in the function
+      definition.
+    </p>
+    <p>
+      Here is our function <code>f</code> being called with several different
+      arguments:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="op">&gt;&gt;&gt;</span> f(<span class="dv">3</span>)</a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="dv">26</span></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="op">&gt;&gt;&gt;</span> f(<span class="dv">0</span>)</a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="dv">5</span></a>
@@ -117,24 +356,60 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-7" title="7"><span class="op">&gt;&gt;&gt;</span> f(<span class="op">-</span><span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb3-8" title="8"><span class="dv">10</span></a>
 <a class="sourceLine" id="cb3-9" title="9"><span class="op">&gt;&gt;&gt;</span> f(<span class="dv">5</span>)</a>
-<a class="sourceLine" id="cb3-10" title="10"><span class="dv">70</span></a></code></pre></div>
-<p>The function definition must <em>first</em> be entered into the Python shell before it can be called:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f(x):</a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="dv">70</span></a></code></pre>
+    </div>
+    <p>
+      The function definition must <em>first</em> be entered into the Python
+      shell before it can be called:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f(x):</a>
 <a class="sourceLine" id="cb4-2" title="2">...     <span class="cf">return</span> <span class="dv">3</span> <span class="op">*</span> x <span class="op">**</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> <span class="dv">5</span></a>
 <a class="sourceLine" id="cb4-3" title="3">...</a>
-<a class="sourceLine" id="cb4-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Function calls involve an <em>implicit assignment</em> of the argument to the parameter</p>
-<p>The relationship between the parameter and the argument in the definition and calling of a function is that of an <em>implicit assignment</em>. It is as if we had executed the assignment statements <code>x = 3</code>, <code>x = 0</code>, <code>x = 1</code>, <code>x = -1</code>, and <code>x = 5</code> respectively before making the function calls to <code>f</code> in the preceding example.</p>
-<h3 id="the-return-statement">5.3. The <code>return</code> statement</h3>
-<p>The <a href="http://en.wikipedia.org/wiki/Return_statement">return statement</a> causes a function to immediately stop executing statements in the function body and to send back (or <em>return</em>) the value after the keyword <code>return</code> to the calling statement.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="op">&gt;&gt;&gt;</span> result <span class="op">=</span> f(<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Function calls involve an <em>implicit assignment</em> of the argument to
+      the parameter
+    </p>
+    <p>
+      The relationship between the parameter and the argument in the definition
+      and calling of a function is that of an <em>implicit assignment</em>. It
+      is as if we had executed the assignment statements <code>x = 3</code>,
+      <code>x = 0</code>, <code>x = 1</code>, <code>x = -1</code>, and
+      <code>x = 5</code> respectively before making the function calls to
+      <code>f</code> in the preceding example.
+    </p>
+    <h3 id="the-return-statement">5.3. The <code>return</code> statement</h3>
+    <p>
+      The
+      <a href="http://en.wikipedia.org/wiki/Return_statement"
+        >return statement</a
+      >
+      causes a function to immediately stop executing statements in the function
+      body and to send back (or <em>return</em>) the value after the keyword
+      <code>return</code> to the calling statement.
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="op">&gt;&gt;&gt;</span> result <span class="op">=</span> f(<span class="dv">3</span>)</a>
 <a class="sourceLine" id="cb5-2" title="2"><span class="op">&gt;&gt;&gt;</span> result</a>
 <a class="sourceLine" id="cb5-3" title="3"><span class="dv">26</span></a>
 <a class="sourceLine" id="cb5-4" title="4"><span class="op">&gt;&gt;&gt;</span> result <span class="op">=</span> f(<span class="dv">3</span>) <span class="op">+</span> f(<span class="op">-</span><span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb5-5" title="5"><span class="op">&gt;&gt;&gt;</span> result</a>
-<a class="sourceLine" id="cb5-6" title="6"><span class="dv">36</span></a></code></pre></div>
-<p>A return statement with no value after it still returns a value, of a type we haven’t seen before:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> mystery():</a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="dv">36</span></a></code></pre>
+    </div>
+    <p>
+      A return statement with no value after it still returns a value, of a type
+      we haven’t seen before:
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> mystery():</a>
 <a class="sourceLine" id="cb6-2" title="2">...    <span class="cf">return</span></a>
 <a class="sourceLine" id="cb6-3" title="3">...</a>
 <a class="sourceLine" id="cb6-4" title="4"><span class="op">&gt;&gt;&gt;</span> what_is_it <span class="op">=</span> mystery()</a>
@@ -142,10 +417,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-6" title="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(what_is_it)</a>
 <a class="sourceLine" id="cb6-7" title="7"><span class="op">&lt;</span><span class="kw">class</span> <span class="st">&#39;NoneType&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb6-8" title="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(what_is_it)</a>
-<a class="sourceLine" id="cb6-9" title="9"><span class="va">None</span></a></code></pre></div>
-<p><code>None</code> is the sole value of Python’s <code>NoneType</code>. We will use it frequently later on to represent an unknown or unassigned value. For now you need to be aware that it is the value that is returned by a <code>return</code> statement without an argument.</p>
-<p>All Python function calls return a value. If a function call finishes executing the statements in its body without hitting a <code>return</code> statement, a <code>None</code> value is returned from the function.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> do_nothing_useful(n, m):</a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="va">None</span></a></code></pre>
+    </div>
+    <p>
+      <code>None</code> is the sole value of Python’s <code>NoneType</code>. We
+      will use it frequently later on to represent an unknown or unassigned
+      value. For now you need to be aware that it is the value that is returned
+      by a <code>return</code> statement without an argument.
+    </p>
+    <p>
+      All Python function calls return a value. If a function call finishes
+      executing the statements in its body without hitting a
+      <code>return</code> statement, a <code>None</code> value is returned from
+      the function.
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> do_nothing_useful(n, m):</a>
 <a class="sourceLine" id="cb7-2" title="2">...     x <span class="op">=</span> n <span class="op">+</span> m</a>
 <a class="sourceLine" id="cb7-3" title="3">...     y <span class="op">=</span> n <span class="op">-</span> m</a>
 <a class="sourceLine" id="cb7-4" title="4">...</a>
@@ -154,10 +443,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb7-7" title="7"><span class="op">&gt;&gt;&gt;</span> result</a>
 <a class="sourceLine" id="cb7-8" title="8"><span class="op">&gt;&gt;&gt;</span></a>
 <a class="sourceLine" id="cb7-9" title="9"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(result)</a>
-<a class="sourceLine" id="cb7-10" title="10"><span class="va">None</span></a></code></pre></div>
-<p>Since <code>do_nothing_useful</code> does not have a return statement with a value, it returns a <code>None</code> value, which is assigned to <code>result</code>. <code>None</code> values don’t display in the Python shell unless they are explicited printed.</p>
-<p>Any statements in the body of a function <em>after</em> a <code>return</code> statement is encountered will never be executed and are referred to as <a href="http://en.wikipedia.org/wiki/Dead_code">dead code</a>.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> try_to_print_dead_code():</a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="va">None</span></a></code></pre>
+    </div>
+    <p>
+      Since <code>do_nothing_useful</code> does not have a return statement with
+      a value, it returns a <code>None</code> value, which is assigned to
+      <code>result</code>. <code>None</code> values don’t display in the Python
+      shell unless they are explicited printed.
+    </p>
+    <p>
+      Any statements in the body of a function <em>after</em> a
+      <code>return</code> statement is encountered will never be executed and
+      are referred to as
+      <a href="http://en.wikipedia.org/wiki/Dead_code">dead code</a>.
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> try_to_print_dead_code():</a>
 <a class="sourceLine" id="cb8-2" title="2">...    <span class="bu">print</span>(<span class="st">&quot;This will print...&quot;</span>)</a>
 <a class="sourceLine" id="cb8-3" title="3">...    <span class="bu">print</span>(<span class="st">&quot;...and so will this.&quot;</span>)</a>
 <a class="sourceLine" id="cb8-4" title="4">...    <span class="cf">return</span></a>
@@ -167,16 +470,51 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb8-8" title="8"><span class="op">&gt;&gt;&gt;</span> try_to_print_dead_code()</a>
 <a class="sourceLine" id="cb8-9" title="9">This will <span class="bu">print</span>...</a>
 <a class="sourceLine" id="cb8-10" title="10">...<span class="kw">and</span> so will this.</a>
-<a class="sourceLine" id="cb8-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<h3 id="flow-of-execution">5.4. Flow of execution</h3>
-<p>In order to ensure that a function is defined before its first use, you have to know the order in which statements are executed, which is called the <a href="http://en.wikipedia.org/wiki/Control_flow">flow of execution</a>.</p>
-<p>Execution always begins at the first statement of the program. Statements are executed one at a time, in order from top to bottom.</p>
-<p>Function definitions do not alter the flow of execution of the program, but remember that statements inside the function are not executed until the function is called.</p>
-<p>Function calls are like a detour in the flow of execution. Instead of going to the next statement, the flow jumps to the first line of the called function, executes all the statements there, and then comes back to pick up where it left off.</p>
-<p>That sounds simple enough, until you remember that one function can call another. While in the middle of one function, the program might have to execute the statements in another function. But while executing that new function, the program might have to execute yet another function!</p>
-<p>Fortunately, Python is adept at keeping track of where it is, so each time a function completes, the program picks up where it left off in the function that called it. When it gets to the end of the program, it terminates.</p>
-<p>What’s the moral of this sordid tale? When you read a program, don’t just read from top to bottom. Instead, <em>follow the flow of execution</em>. Look at this program:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> f1():</a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <h3 id="flow-of-execution">5.4. Flow of execution</h3>
+    <p>
+      In order to ensure that a function is defined before its first use, you
+      have to know the order in which statements are executed, which is called
+      the
+      <a href="http://en.wikipedia.org/wiki/Control_flow">flow of execution</a>.
+    </p>
+    <p>
+      Execution always begins at the first statement of the program. Statements
+      are executed one at a time, in order from top to bottom.
+    </p>
+    <p>
+      Function definitions do not alter the flow of execution of the program,
+      but remember that statements inside the function are not executed until
+      the function is called.
+    </p>
+    <p>
+      Function calls are like a detour in the flow of execution. Instead of
+      going to the next statement, the flow jumps to the first line of the
+      called function, executes all the statements there, and then comes back to
+      pick up where it left off.
+    </p>
+    <p>
+      That sounds simple enough, until you remember that one function can call
+      another. While in the middle of one function, the program might have to
+      execute the statements in another function. But while executing that new
+      function, the program might have to execute yet another function!
+    </p>
+    <p>
+      Fortunately, Python is adept at keeping track of where it is, so each time
+      a function completes, the program picks up where it left off in the
+      function that called it. When it gets to the end of the program, it
+      terminates.
+    </p>
+    <p>
+      What’s the moral of this sordid tale? When you read a program, don’t just
+      read from top to bottom. Instead, <em>follow the flow of execution</em>.
+      Look at this program:
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> f1():</a>
 <a class="sourceLine" id="cb9-2" title="2">    <span class="bu">print</span>(<span class="st">&quot;Moe&quot;</span>)</a>
 <a class="sourceLine" id="cb9-3" title="3"></a>
 <a class="sourceLine" id="cb9-4" title="4"><span class="kw">def</span> f2():</a>
@@ -191,28 +529,71 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb9-13" title="13"><span class="kw">def</span> f4():</a>
 <a class="sourceLine" id="cb9-14" title="14">    <span class="bu">print</span>(<span class="st">&quot;Eeny&quot;</span>)</a>
 <a class="sourceLine" id="cb9-15" title="15"></a>
-<a class="sourceLine" id="cb9-16" title="16">f3()</a></code></pre></div>
-<p>The output of this program is:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">Eeny</a>
+<a class="sourceLine" id="cb9-16" title="16">f3()</a></code></pre>
+    </div>
+    <p>The output of this program is:</p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">Eeny</a>
 <a class="sourceLine" id="cb10-2" title="2">Meeny</a>
 <a class="sourceLine" id="cb10-3" title="3">Miny</a>
-<a class="sourceLine" id="cb10-4" title="4">Moe</a></code></pre></div>
-<p>Follow the flow of execution and see if you can understand why it does that.</p>
-<h3 id="encapsulation-and-generalization">5.5. Encapsulation and generalization</h3>
-<p>Encapsulation is the process of <em>wrapping a piece of code in a function</em>, allowing you to take advantage of all the things functions are good for.</p>
-<p>Generalization means taking something specific, such as counting the number of digits in a given positive integer, and making it more general, such as counting the number of digits of any integer.</p>
-<p>To see how this process works, let’s start with a program that counts the number of digits in the number <code>4203</code>:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">number <span class="op">=</span> <span class="dv">4203</span></a>
+<a class="sourceLine" id="cb10-4" title="4">Moe</a></code></pre>
+    </div>
+    <p>
+      Follow the flow of execution and see if you can understand why it does
+      that.
+    </p>
+    <h3 id="encapsulation-and-generalization">
+      5.5. Encapsulation and generalization
+    </h3>
+    <p>
+      Encapsulation is the process of
+      <em>wrapping a piece of code in a function</em>, allowing you to take
+      advantage of all the things functions are good for.
+    </p>
+    <p>
+      Generalization means taking something specific, such as counting the
+      number of digits in a given positive integer, and making it more general,
+      such as counting the number of digits of any integer.
+    </p>
+    <p>
+      To see how this process works, let’s start with a program that counts the
+      number of digits in the number <code>4203</code>:
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">number <span class="op">=</span> <span class="dv">4203</span></a>
 <a class="sourceLine" id="cb11-2" title="2">count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb11-3" title="3"></a>
 <a class="sourceLine" id="cb11-4" title="4"><span class="cf">while</span> number <span class="op">!=</span> <span class="dv">0</span>:</a>
 <a class="sourceLine" id="cb11-5" title="5">    count <span class="op">+=</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb11-6" title="6">    number <span class="op">//=</span> <span class="dv">10</span></a>
 <a class="sourceLine" id="cb11-7" title="7"></a>
-<a class="sourceLine" id="cb11-8" title="8"><span class="bu">print</span>(count)</a></code></pre></div>
-<p>Apply what you learned in <a href="https://www.openbookproject.net/books/bpp4awd/ch04.html#tracing-a-program">Tracing a program</a> to this until you feel confident you understand how it works. This program demonstrates an important pattern of computation called a <strong>counter</strong>. The variable <code>count</code> is initialized to 0 and then incremented each time the loop body is executed. When the loop exits, <code>count</code> contains the result — the total number of times the loop body was executed, which is the same as the number of digits.</p>
-<p>The first step in encapsulating this logic is to wrap it in a function:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> num_digits():</a>
+<a class="sourceLine" id="cb11-8" title="8"><span class="bu">print</span>(count)</a></code></pre>
+    </div>
+    <p>
+      Apply what you learned in
+      <a
+        href="https://www.openbookproject.net/books/bpp4awd/ch04.html#tracing-a-program"
+        >Tracing a program</a
+      >
+      to this until you feel confident you understand how it works. This program
+      demonstrates an important pattern of computation called a
+      <strong>counter</strong>. The variable <code>count</code> is initialized
+      to 0 and then incremented each time the loop body is executed. When the
+      loop exits, <code>count</code> contains the result — the total number of
+      times the loop body was executed, which is the same as the number of
+      digits.
+    </p>
+    <p>
+      The first step in encapsulating this logic is to wrap it in a function:
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> num_digits():</a>
 <a class="sourceLine" id="cb12-2" title="2">    number <span class="op">=</span> <span class="dv">4203</span></a>
 <a class="sourceLine" id="cb12-3" title="3">    count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb12-4" title="4"></a>
@@ -222,9 +603,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb12-8" title="8"></a>
 <a class="sourceLine" id="cb12-9" title="9">    <span class="cf">return</span> count</a>
 <a class="sourceLine" id="cb12-10" title="10"></a>
-<a class="sourceLine" id="cb12-11" title="11"><span class="bu">print</span>(num_digits())</a></code></pre></div>
-<p>Running this program will give us the same result as before, but this time we are calling a function. It may seem like we have gained nothing from doing this, since our program is longer than before and does the same thing, but the next step reveals something powerful:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">def</span> num_digits(number):</a>
+<a class="sourceLine" id="cb12-11" title="11"><span class="bu">print</span>(num_digits())</a></code></pre>
+    </div>
+    <p>
+      Running this program will give us the same result as before, but this time
+      we are calling a function. It may seem like we have gained nothing from
+      doing this, since our program is longer than before and does the same
+      thing, but the next step reveals something powerful:
+    </p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">def</span> num_digits(number):</a>
 <a class="sourceLine" id="cb13-2" title="2">    count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb13-3" title="3"></a>
 <a class="sourceLine" id="cb13-4" title="4">    <span class="cf">while</span> number <span class="op">!=</span> <span class="dv">0</span>:</a>
@@ -233,12 +623,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb13-7" title="7"></a>
 <a class="sourceLine" id="cb13-8" title="8">    <span class="cf">return</span> count</a>
 <a class="sourceLine" id="cb13-9" title="9"></a>
-<a class="sourceLine" id="cb13-10" title="10"><span class="bu">print</span>(num_digits(<span class="dv">4203</span>))</a></code></pre></div>
-<p>By <em>parameterizing</em> the value, we can now use our logic to count the digits of any positive integer. A call to <code>print(num_digits(710))</code> will print <code>3</code>. A call to <code>print(num_digits(1345109))</code> will print <code>7</code>, and so forth.</p>
-<p>This function also contains bugs. If we call <code>num_digits(0)</code>, it will return a <code>0</code>, when it should return a <code>1</code>. If we call <code>num_digits(-23)</code>, the program goes into an infinite loop. You will be asked to fix both of these bugs as an exercise.</p>
-<h3 id="composition">5.6. Composition</h3>
-<p>Just as with mathematical functions, Python functions can be <strong>composed</strong>, meaning that you use the result of one function as the input to another.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f(x):</a>
+<a class="sourceLine" id="cb13-10" title="10"><span class="bu">print</span>(num_digits(<span class="dv">4203</span>))</a></code></pre>
+    </div>
+    <p>
+      By <em>parameterizing</em> the value, we can now use our logic to count
+      the digits of any positive integer. A call to
+      <code>print(num_digits(710))</code> will print <code>3</code>. A call to
+      <code>print(num_digits(1345109))</code> will print <code>7</code>, and so
+      forth.
+    </p>
+    <p>
+      This function also contains bugs. If we call <code>num_digits(0)</code>,
+      it will return a <code>0</code>, when it should return a <code>1</code>.
+      If we call <code>num_digits(-23)</code>, the program goes into an infinite
+      loop. You will be asked to fix both of these bugs as an exercise.
+    </p>
+    <h3 id="composition">5.6. Composition</h3>
+    <p>
+      Just as with mathematical functions, Python functions can be
+      <strong>composed</strong>, meaning that you use the result of one function
+      as the input to another.
+    </p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f(x):</a>
 <a class="sourceLine" id="cb14-2" title="2">...     <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> x</a>
 <a class="sourceLine" id="cb14-3" title="3">...</a>
 <a class="sourceLine" id="cb14-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> g(x):</a>
@@ -258,80 +667,195 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb14-18" title="18"><span class="dv">11</span></a>
 <a class="sourceLine" id="cb14-19" title="19"><span class="op">&gt;&gt;&gt;</span> h(f(g(<span class="dv">0</span>)))</a>
 <a class="sourceLine" id="cb14-20" title="20"><span class="dv">97</span></a>
-<a class="sourceLine" id="cb14-21" title="21"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>We can also use a variable as an argument:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="co"># Assume function definitions for f and g as in previous example</span></a>
+<a class="sourceLine" id="cb14-21" title="21"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>We can also use a variable as an argument:</p>
+    <div class="sourceCode" id="cb15">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="co"># Assume function definitions for f and g as in previous example</span></a>
 <a class="sourceLine" id="cb15-2" title="2"><span class="op">&gt;&gt;&gt;</span> val <span class="op">=</span> <span class="dv">10</span></a>
 <a class="sourceLine" id="cb15-3" title="3"><span class="op">&gt;&gt;&gt;</span> f(val)</a>
 <a class="sourceLine" id="cb15-4" title="4"><span class="dv">20</span></a>
 <a class="sourceLine" id="cb15-5" title="5"><span class="op">&gt;&gt;&gt;</span> f(g(val))</a>
 <a class="sourceLine" id="cb15-6" title="6"><span class="dv">30</span></a>
-<a class="sourceLine" id="cb15-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Notice something very important here. The name of the variable we pass as an argument (<code>val</code>) has nothing to do with the name of the parameter (<code>x</code>). Again, it is as if <code>x = val</code> is executed when <code>f(val)</code> is called. It doesn’t matter what the value was named in the caller, inside <code>f</code> and <code>g</code> its name is <code>x</code>.</p>
-<h3 id="functions-are-data-too">5.7. Functions are data too</h3>
-<p>The functions you define in Python are a type of data.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f():</a>
+<a class="sourceLine" id="cb15-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Notice something very important here. The name of the variable we pass as
+      an argument (<code>val</code>) has nothing to do with the name of the
+      parameter (<code>x</code>). Again, it is as if <code>x = val</code> is
+      executed when <code>f(val)</code> is called. It doesn’t matter what the
+      value was named in the caller, inside <code>f</code> and
+      <code>g</code> its name is <code>x</code>.
+    </p>
+    <h3 id="functions-are-data-too">5.7. Functions are data too</h3>
+    <p>The functions you define in Python are a type of data.</p>
+    <div class="sourceCode" id="cb16">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb16-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> f():</a>
 <a class="sourceLine" id="cb16-2" title="2">...     <span class="bu">print</span>(<span class="st">&quot;Hello from function f!&quot;</span>)</a>
 <a class="sourceLine" id="cb16-3" title="3">...</a>
 <a class="sourceLine" id="cb16-4" title="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">type</span>(f)</a>
 <a class="sourceLine" id="cb16-5" title="5"><span class="op">&lt;</span><span class="bu">type</span> <span class="st">&#39;function&#39;</span><span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb16-6" title="6"><span class="op">&gt;&gt;&gt;</span> f()</a>
 <a class="sourceLine" id="cb16-7" title="7">Hello, <span class="im">from</span> function f<span class="op">!</span></a>
-<a class="sourceLine" id="cb16-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Function values can be elements of a list. Assume <code>f</code>, <code>g</code>, and <code>h</code> have been defined as in the <a href="https://www.openbookproject.net/books/bpp4awd/ch05.html#composition">Composition</a> section above.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">&gt;&gt;&gt;</span> do_stuff <span class="op">=</span> [f, g, h]</a>
+<a class="sourceLine" id="cb16-8" title="8"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Function values can be elements of a list. Assume <code>f</code>,
+      <code>g</code>, and <code>h</code> have been defined as in the
+      <a
+        href="https://www.openbookproject.net/books/bpp4awd/ch05.html#composition"
+        >Composition</a
+      >
+      section above.
+    </p>
+    <div class="sourceCode" id="cb17">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1"><span class="op">&gt;&gt;&gt;</span> do_stuff <span class="op">=</span> [f, g, h]</a>
 <a class="sourceLine" id="cb17-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="cf">for</span> func <span class="kw">in</span> do_stuff:</a>
 <a class="sourceLine" id="cb17-3" title="3">...     func(<span class="dv">10</span>)</a>
 <a class="sourceLine" id="cb17-4" title="4">...</a>
 <a class="sourceLine" id="cb17-5" title="5"><span class="dv">20</span></a>
 <a class="sourceLine" id="cb17-6" title="6"><span class="dv">15</span></a>
-<a class="sourceLine" id="cb17-7" title="7"><span class="dv">97</span></a></code></pre></div>
-<p>As usual, you should trace the execution of this example until you feel confident you understand how it works.</p>
-<h3 id="list-parameters">5.8. List parameters</h3>
-<p>Passing a list as an argument actually passes a reference to the list, not a copy of the list. Since lists are mutable changes made to the parameter change the argument as well. For example, the function below takes a list as an argument and multiplies each element in the list by 2:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">def</span> double_stuff_v1(a_list):</a>
+<a class="sourceLine" id="cb17-7" title="7"><span class="dv">97</span></a></code></pre>
+    </div>
+    <p>
+      As usual, you should trace the execution of this example until you feel
+      confident you understand how it works.
+    </p>
+    <h3 id="list-parameters">5.8. List parameters</h3>
+    <p>
+      Passing a list as an argument actually passes a reference to the list, not
+      a copy of the list. Since lists are mutable changes made to the parameter
+      change the argument as well. For example, the function below takes a list
+      as an argument and multiplies each element in the list by 2:
+    </p>
+    <div class="sourceCode" id="cb18">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">def</span> double_stuff_v1(a_list):</a>
 <a class="sourceLine" id="cb18-2" title="2">    index <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb18-3" title="3">    <span class="cf">for</span> value <span class="kw">in</span> a_list:</a>
 <a class="sourceLine" id="cb18-4" title="4">        a_list[index] <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> value</a>
-<a class="sourceLine" id="cb18-5" title="5">        index <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
-<p>To test this function, we will put it in a file named <code>pure_v_modify.py</code>, and <strong>import</strong> it into our Python shell, were we can experiment with it:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> pure_v_modify <span class="im">import</span> double_stuff_v1</a>
+<a class="sourceLine" id="cb18-5" title="5">        index <span class="op">+=</span> <span class="dv">1</span></a></code></pre>
+    </div>
+    <p>
+      To test this function, we will put it in a file named
+      <code>pure_v_modify.py</code>, and <strong>import</strong> it into our
+      Python shell, were we can experiment with it:
+    </p>
+    <div class="sourceCode" id="cb19">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> pure_v_modify <span class="im">import</span> double_stuff_v1</a>
 <a class="sourceLine" id="cb19-2" title="2"><span class="op">&gt;&gt;&gt;</span> things <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">5</span>, <span class="st">&#39;Spam&#39;</span>, <span class="fl">9.5</span>]</a>
 <a class="sourceLine" id="cb19-3" title="3"><span class="op">&gt;&gt;&gt;</span> double_stuff_v1(things)</a>
 <a class="sourceLine" id="cb19-4" title="4"><span class="op">&gt;&gt;&gt;</span> things</a>
-<a class="sourceLine" id="cb19-5" title="5">[<span class="dv">4</span>, <span class="dv">10</span>, <span class="st">&#39;SpamSpam&#39;</span>, <span class="fl">19.0</span>]</a></code></pre></div>
-<p>Note</p>
-<p>The file containing the imported code must have a <code>.py</code> <a href="http://en.wikipedia.org/wiki/File_extension">file extention</a>, which is not written in the <strong>import statement</strong>.</p>
-<p>The parameter <code>a_list</code> and the variable <code>things</code> are aliases for the same object. The state diagram looks like this:<img src="https://www.openbookproject.net/books/bpp4awd/_images/mult_references4.png" alt="State diagram for multiple references to a list as a parameter" /></p>
-<p>Since the list object is shared by two frames, we drew it between them.</p>
-<p>If a function modifies a list parameter, the caller sees the change.</p>
-<h3 id="pure-functions-and-modifiers">5.9. Pure functions and modifiers</h3>
-<p>Functions which take lists as arguments and change them during execution are called <strong>modifiers</strong> and the changes they make are called <strong>side effects</strong>.</p>
-<p>A <strong>pure function</strong> does not produce side effects. It communicates with the calling program only through parameters, which it does not modify, and a return value. Here is <code>double_stuff_v2</code> written as a pure function:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> double_stuff_v2(a_list):</a>
+<a class="sourceLine" id="cb19-5" title="5">[<span class="dv">4</span>, <span class="dv">10</span>, <span class="st">&#39;SpamSpam&#39;</span>, <span class="fl">19.0</span>]</a></code></pre>
+    </div>
+    <p>Note</p>
+    <p>
+      The file containing the imported code must have a <code>.py</code>
+      <a href="http://en.wikipedia.org/wiki/File_extension">file extention</a>,
+      which is not written in the <strong>import statement</strong>.
+    </p>
+    <p>
+      The parameter <code>a_list</code> and the variable <code>things</code> are
+      aliases for the same object. The state diagram looks like this:<img
+        src="https://www.openbookproject.net/books/bpp4awd/_images/mult_references4.png"
+        alt="State diagram for multiple references to a list as a parameter"
+      />
+    </p>
+    <p>
+      Since the list object is shared by two frames, we drew it between them.
+    </p>
+    <p>If a function modifies a list parameter, the caller sees the change.</p>
+    <h3 id="pure-functions-and-modifiers">5.9. Pure functions and modifiers</h3>
+    <p>
+      Functions which take lists as arguments and change them during execution
+      are called <strong>modifiers</strong> and the changes they make are called
+      <strong>side effects</strong>.
+    </p>
+    <p>
+      A <strong>pure function</strong> does not produce side effects. It
+      communicates with the calling program only through parameters, which it
+      does not modify, and a return value. Here is
+      <code>double_stuff_v2</code> written as a pure function:
+    </p>
+    <div class="sourceCode" id="cb20">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">def</span> double_stuff_v2(a_list):</a>
 <a class="sourceLine" id="cb20-2" title="2">    new_list <span class="op">=</span> []</a>
 <a class="sourceLine" id="cb20-3" title="3">    <span class="cf">for</span> value <span class="kw">in</span> a_list:</a>
 <a class="sourceLine" id="cb20-4" title="4">        new_list <span class="op">+=</span> [<span class="dv">2</span> <span class="op">*</span> value]</a>
-<a class="sourceLine" id="cb20-5" title="5">    <span class="cf">return</span> new_list</a></code></pre></div>
-<p>This version of <code>double_stuff</code> does not change its arguments:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> pure_v_modify <span class="im">import</span> double_stuff_v2</a>
+<a class="sourceLine" id="cb20-5" title="5">    <span class="cf">return</span> new_list</a></code></pre>
+    </div>
+    <p>
+      This version of <code>double_stuff</code> does not change its arguments:
+    </p>
+    <div class="sourceCode" id="cb21">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb21-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> pure_v_modify <span class="im">import</span> double_stuff_v2</a>
 <a class="sourceLine" id="cb21-2" title="2"><span class="op">&gt;&gt;&gt;</span> things <span class="op">=</span> [<span class="dv">2</span>, <span class="dv">5</span>, <span class="st">&#39;Spam&#39;</span>, <span class="fl">9.5</span>]</a>
 <a class="sourceLine" id="cb21-3" title="3"><span class="op">&gt;&gt;&gt;</span> double_stuff_v2(things)</a>
 <a class="sourceLine" id="cb21-4" title="4">[<span class="dv">4</span>, <span class="dv">10</span>, <span class="st">&#39;SpamSpam&#39;</span>, <span class="fl">19.0</span>]</a>
 <a class="sourceLine" id="cb21-5" title="5"><span class="op">&gt;&gt;&gt;</span> things</a>
 <a class="sourceLine" id="cb21-6" title="6">[<span class="dv">2</span>, <span class="dv">5</span>, <span class="st">&#39;Spam&#39;</span>, <span class="fl">9.5</span>]</a>
-<a class="sourceLine" id="cb21-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>To use the pure function version of <code>double_stuff</code> to modify <code>things</code>, you would assign the return value back to <code>things</code>:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="op">&gt;&gt;&gt;</span> things <span class="op">=</span> double_stuff(things)</a>
+<a class="sourceLine" id="cb21-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      To use the pure function version of <code>double_stuff</code> to modify
+      <code>things</code>, you would assign the return value back to
+      <code>things</code>:
+    </p>
+    <div class="sourceCode" id="cb22">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb22-1" title="1"><span class="op">&gt;&gt;&gt;</span> things <span class="op">=</span> double_stuff(things)</a>
 <a class="sourceLine" id="cb22-2" title="2"><span class="op">&gt;&gt;&gt;</span> things</a>
 <a class="sourceLine" id="cb22-3" title="3">[<span class="dv">4</span>, <span class="dv">10</span>, <span class="st">&#39;SpamSpam&#39;</span>, <span class="fl">19.0</span>]</a>
-<a class="sourceLine" id="cb22-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<h3 id="which-is-better">5.10. Which is better?</h3>
-<p>Anything that can be done with modifiers can also be done with pure functions. In fact, some programming languages only allow pure functions. There is some evidence that programs that use pure functions are faster to develop and less error-prone than programs that use modifiers. Nevertheless, modifiers are convenient at times, and in some cases, functional programs are less efficient.</p>
-<p>In general, we recommend that you write pure functions whenever it is reasonable to do so and resort to modifiers only if there is a compelling advantage. This approach might be called a <em>functional programming style</em>.</p>
-<h3 id="polymorphism-and-duck-typing">5.11. Polymorphism and duck typing</h3>
-<p>The ability to call the same function with different types of data is called <a href="http://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29">polymorphism</a>. In Python, implementing polymorphism is easy, because Python functions handle types through <a href="http://en.wikipedia.org/wiki/Duck_typing">duck typing</a>. Basically, this means that as long as all the operations on a function parameter are valid, the function will handle the function call without complaint. The following simple example illustrates the concept:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> double(thing):</a>
+<a class="sourceLine" id="cb22-4" title="4"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <h3 id="which-is-better">5.10. Which is better?</h3>
+    <p>
+      Anything that can be done with modifiers can also be done with pure
+      functions. In fact, some programming languages only allow pure functions.
+      There is some evidence that programs that use pure functions are faster to
+      develop and less error-prone than programs that use modifiers.
+      Nevertheless, modifiers are convenient at times, and in some cases,
+      functional programs are less efficient.
+    </p>
+    <p>
+      In general, we recommend that you write pure functions whenever it is
+      reasonable to do so and resort to modifiers only if there is a compelling
+      advantage. This approach might be called a
+      <em>functional programming style</em>.
+    </p>
+    <h3 id="polymorphism-and-duck-typing">
+      5.11. Polymorphism and duck typing
+    </h3>
+    <p>
+      The ability to call the same function with different types of data is
+      called
+      <a href="http://en.wikipedia.org/wiki/Polymorphism_%28computer_science%29"
+        >polymorphism</a
+      >. In Python, implementing polymorphism is easy, because Python functions
+      handle types through
+      <a href="http://en.wikipedia.org/wiki/Duck_typing">duck typing</a>.
+      Basically, this means that as long as all the operations on a function
+      parameter are valid, the function will handle the function call without
+      complaint. The following simple example illustrates the concept:
+    </p>
+    <div class="sourceCode" id="cb23">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb23-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="kw">def</span> double(thing):</a>
 <a class="sourceLine" id="cb23-2" title="2">...    <span class="cf">return</span> <span class="dv">2</span> <span class="op">*</span> thing</a>
 <a class="sourceLine" id="cb23-3" title="3">...</a>
 <a class="sourceLine" id="cb23-4" title="4"><span class="op">&gt;&gt;&gt;</span> double(<span class="dv">5</span>)</a>
@@ -349,94 +873,306 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb23-16" title="16">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb23-17" title="17">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">2</span>, <span class="kw">in</span> double</a>
 <a class="sourceLine" id="cb23-18" title="18"><span class="pp">TypeError</span>: unsupported operand <span class="bu">type</span>(s) <span class="cf">for</span> <span class="op">*</span>: <span class="st">&#39;int&#39;</span> <span class="kw">and</span> <span class="st">&#39;NoneType&#39;</span></a>
-<a class="sourceLine" id="cb23-19" title="19"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Since <code>*</code> is defined for integers, strings, lists, floats, and tuples, calling our <code>double</code> function with any of these types as an argument is not a problem. <code>*</code> is not defined for the NoneType, however, so sending the <code>double</code> function a <code>None</code> value results in a run time error.</p>
-<h3 id="two-dimensional-tables">5.12. Two-dimensional tables</h3>
-<p>A two-dimensional table is a table where you read the value at the intersection of a row and a column. A multiplication table is a good example. Let’s say you want to print a multiplication table for the values from 1 to 6.</p>
-<p>A good way to start is to write a loop that prints the multiples of 2, all on one line:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
+<a class="sourceLine" id="cb23-19" title="19"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Since <code>*</code> is defined for integers, strings, lists, floats, and
+      tuples, calling our <code>double</code> function with any of these types
+      as an argument is not a problem. <code>*</code> is not defined for the
+      NoneType, however, so sending the <code>double</code> function a
+      <code>None</code> value results in a run time error.
+    </p>
+    <h3 id="two-dimensional-tables">5.12. Two-dimensional tables</h3>
+    <p>
+      A two-dimensional table is a table where you read the value at the
+      intersection of a row and a column. A multiplication table is a good
+      example. Let’s say you want to print a multiplication table for the values
+      from 1 to 6.
+    </p>
+    <p>
+      A good way to start is to write a loop that prints the multiples of 2, all
+      on one line:
+    </p>
+    <div class="sourceCode" id="cb24">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb24-1" title="1"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
 <a class="sourceLine" id="cb24-2" title="2">    <span class="bu">print</span>(<span class="dv">2</span> <span class="op">*</span> i, end<span class="op">=</span><span class="st">&quot;   &quot;</span>)</a>
-<a class="sourceLine" id="cb24-3" title="3"><span class="bu">print</span>()</a></code></pre></div>
-<p>Here we’ve used the <code>range</code> function, but made it start its sequence at 1. As the loop executes, the value of <code>i</code> changes from 1 to 6. When all the elements of the range have been assigned to <code>i</code>, the loop terminates. Each time through the loop, it displays the value of <code>2 * i</code>, followed by three spaces.</p>
-<p>Again, the extra <code>end=" "</code> argument in the <code>print</code> function suppresses the newline, and uses three spaces instead. After the loop completes, the call to <code>print</code> at line 3 finishes the current line, and starts a new line.</p>
-<p>The output of the program is:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="dv">2</span>      <span class="dv">4</span>      <span class="dv">6</span>      <span class="dv">8</span>      <span class="dv">10</span>     <span class="dv">12</span></a></code></pre></div>
-<p>So far, so good. The next step is to <strong>encapulate</strong> and <strong>generalize</strong>.</p>
-<h3 id="more-encapsulation">5.13. More encapsulation</h3>
-<p>This function encapsulates the previous loop and generalizes it to print multiples of <code>n</code>:</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">def</span> print_multiples(n):</a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="bu">print</span>()</a></code></pre>
+    </div>
+    <p>
+      Here we’ve used the <code>range</code> function, but made it start its
+      sequence at 1. As the loop executes, the value of <code>i</code> changes
+      from 1 to 6. When all the elements of the range have been assigned to
+      <code>i</code>, the loop terminates. Each time through the loop, it
+      displays the value of <code>2 * i</code>, followed by three spaces.
+    </p>
+    <p>
+      Again, the extra <code>end=" "</code> argument in the
+      <code>print</code> function suppresses the newline, and uses three spaces
+      instead. After the loop completes, the call to <code>print</code> at line
+      3 finishes the current line, and starts a new line.
+    </p>
+    <p>The output of the program is:</p>
+    <div class="sourceCode" id="cb25">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb25-1" title="1"><span class="dv">2</span>      <span class="dv">4</span>      <span class="dv">6</span>      <span class="dv">8</span>      <span class="dv">10</span>     <span class="dv">12</span></a></code></pre>
+    </div>
+    <p>
+      So far, so good. The next step is to <strong>encapulate</strong> and
+      <strong>generalize</strong>.
+    </p>
+    <h3 id="more-encapsulation">5.13. More encapsulation</h3>
+    <p>
+      This function encapsulates the previous loop and generalizes it to print
+      multiples of <code>n</code>:
+    </p>
+    <div class="sourceCode" id="cb26">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">def</span> print_multiples(n):</a>
 <a class="sourceLine" id="cb26-2" title="2">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
 <a class="sourceLine" id="cb26-3" title="3">        <span class="bu">print</span>(n <span class="op">*</span> i, end<span class="op">=</span><span class="st">&quot;   &quot;</span>)</a>
-<a class="sourceLine" id="cb26-4" title="4">    <span class="bu">print</span>()</a></code></pre></div>
-<p>To encapsulate, all we had to do was add the first line, which declares the name of the function and the parameter list. To generalize, all we had to do was replace the value 2 with the parameter <code>n</code>.</p>
-<p>If we call this function with the argument 2, we get the same output as before. With the argument 3, the output is:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="dv">3</span>      <span class="dv">6</span>      <span class="dv">9</span>      <span class="dv">12</span>     <span class="dv">15</span>     <span class="dv">18</span></a></code></pre></div>
-<p>With the argument 4, the output is:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="dv">4</span>      <span class="dv">8</span>      <span class="dv">12</span>     <span class="dv">16</span>     <span class="dv">20</span>     <span class="dv">24</span></a></code></pre></div>
-<p>By now you can probably guess how to print a multiplication table — by calling <code>print_multiples</code> repeatedly with different arguments. In fact, we can use another loop:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
-<a class="sourceLine" id="cb29-2" title="2">    print_multiples(i)</a></code></pre></div>
-<p>Notice how similar this loop is to the one inside <code>print_multiples</code>. All we did was replace the <code>print</code> function with a function call.</p>
-<p>The output of this program is a multiplication table:</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="dv">1</span>      <span class="dv">2</span>      <span class="dv">3</span>      <span class="dv">4</span>      <span class="dv">5</span>      <span class="dv">6</span></a>
+<a class="sourceLine" id="cb26-4" title="4">    <span class="bu">print</span>()</a></code></pre>
+    </div>
+    <p>
+      To encapsulate, all we had to do was add the first line, which declares
+      the name of the function and the parameter list. To generalize, all we had
+      to do was replace the value 2 with the parameter <code>n</code>.
+    </p>
+    <p>
+      If we call this function with the argument 2, we get the same output as
+      before. With the argument 3, the output is:
+    </p>
+    <div class="sourceCode" id="cb27">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb27-1" title="1"><span class="dv">3</span>      <span class="dv">6</span>      <span class="dv">9</span>      <span class="dv">12</span>     <span class="dv">15</span>     <span class="dv">18</span></a></code></pre>
+    </div>
+    <p>With the argument 4, the output is:</p>
+    <div class="sourceCode" id="cb28">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb28-1" title="1"><span class="dv">4</span>      <span class="dv">8</span>      <span class="dv">12</span>     <span class="dv">16</span>     <span class="dv">20</span>     <span class="dv">24</span></a></code></pre>
+    </div>
+    <p>
+      By now you can probably guess how to print a multiplication table — by
+      calling <code>print_multiples</code> repeatedly with different arguments.
+      In fact, we can use another loop:
+    </p>
+    <div class="sourceCode" id="cb29">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb29-1" title="1"><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
+<a class="sourceLine" id="cb29-2" title="2">    print_multiples(i)</a></code></pre>
+    </div>
+    <p>
+      Notice how similar this loop is to the one inside
+      <code>print_multiples</code>. All we did was replace the
+      <code>print</code> function with a function call.
+    </p>
+    <p>The output of this program is a multiplication table:</p>
+    <div class="sourceCode" id="cb30">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb30-1" title="1"><span class="dv">1</span>      <span class="dv">2</span>      <span class="dv">3</span>      <span class="dv">4</span>      <span class="dv">5</span>      <span class="dv">6</span></a>
 <a class="sourceLine" id="cb30-2" title="2"><span class="dv">2</span>      <span class="dv">4</span>      <span class="dv">6</span>      <span class="dv">8</span>      <span class="dv">10</span>     <span class="dv">12</span></a>
 <a class="sourceLine" id="cb30-3" title="3"><span class="dv">3</span>      <span class="dv">6</span>      <span class="dv">9</span>      <span class="dv">12</span>     <span class="dv">15</span>     <span class="dv">18</span></a>
 <a class="sourceLine" id="cb30-4" title="4"><span class="dv">4</span>      <span class="dv">8</span>      <span class="dv">12</span>     <span class="dv">16</span>     <span class="dv">20</span>     <span class="dv">24</span></a>
 <a class="sourceLine" id="cb30-5" title="5"><span class="dv">5</span>      <span class="dv">10</span>     <span class="dv">15</span>     <span class="dv">20</span>     <span class="dv">25</span>     <span class="dv">30</span></a>
-<a class="sourceLine" id="cb30-6" title="6"><span class="dv">6</span>      <span class="dv">12</span>     <span class="dv">18</span>     <span class="dv">24</span>     <span class="dv">30</span>     <span class="dv">36</span></a></code></pre></div>
-<h3 id="still-more-encapsulation">5.14. Still more encapsulation</h3>
-<p>To demonstrate encapsulation again, let’s take the code from the last section and wrap it up in a function:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">def</span> print_mult_table():</a>
+<a class="sourceLine" id="cb30-6" title="6"><span class="dv">6</span>      <span class="dv">12</span>     <span class="dv">18</span>     <span class="dv">24</span>     <span class="dv">30</span>     <span class="dv">36</span></a></code></pre>
+    </div>
+    <h3 id="still-more-encapsulation">5.14. Still more encapsulation</h3>
+    <p>
+      To demonstrate encapsulation again, let’s take the code from the last
+      section and wrap it up in a function:
+    </p>
+    <div class="sourceCode" id="cb31">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">def</span> print_mult_table():</a>
 <a class="sourceLine" id="cb31-2" title="2">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>):</a>
-<a class="sourceLine" id="cb31-3" title="3">        print_multiples(i)</a></code></pre></div>
-<p>This process is a common <strong>development plan</strong>. We develop code by writing lines of code outside any function, or typing them in to the interpreter. When we get the code working, we extract it and wrap it up in a function.</p>
-<p>This development plan is particularly useful if you don’t know how to divide the program into functions when you start writing. This approach lets you design as you go along.</p>
-<h3 id="local-variables">5.15. Local variables</h3>
-<p>You might be wondering how we can use the same variable, <code>i</code>, in both <code>print_multiples</code> and <code>print_mult_table</code>. Doesn’t it cause problems when one of the functions changes the value of the variable?</p>
-<p>The answer is no, because the <code>i</code> in <code>print_multiples</code> and the <code>i</code> in <code>print_mult_table</code> are <em>not</em> the same variable.</p>
-<p>Variables created inside a function definition are local; you can’t access a local variable from outside its home function. That means you are free to have multiple variables with the same name as long as they are not in the same function.</p>
-<p>Python examines all the statements in a function — if any of them assign a value to a variable, that is the clue that Python uses to make the variable a local variable.</p>
-<p>The stack diagram for this program shows that the two variables named <code>i</code> are not the same variable. They can refer to different values, and changing one does not affect the other.<img src="https://www.openbookproject.net/books/bpp4awd/_images/stack2.png" alt="Stack 2 diagram" /></p>
-<p>The value of <code>i</code> in <code>print_mult_table</code> goes from 1 to 6. In the diagram it happens to be 3. The next time through the loop it will be 4. Each time through the loop, <code>print_mult_table</code> calls <code>print_multiples</code> with the current value of <code>i</code> as an argument. That value gets assigned to the parameter <code>n</code>.</p>
-<p>Inside <code>print_multiples</code>, the value of <code>i</code> goes from 1 to 6. In the diagram, it happens to be 2. Changing this variable has no effect on the value of <code>i</code> in <code>print_mult_table</code>.</p>
-<p>It is common and perfectly legal to have different local variables with the same name. In particular, names like <code>i</code> and <code>j</code> are used frequently as loop variables. If you avoid using them in one function just because you used them somewhere else, you will probably make the program harder to read.</p>
-<h3 id="recursive-data-structures">5.16. Recursive data structures</h3>
-<p>All of the Python data types we have seen can be grouped inside lists and tuples in a variety of ways. Lists and tuples can also be nested, providing myriad possibilities for organizing data. The organization of data for the purpose of making it easier to use is called a <a href="http://en.wikipedia.org/wiki/Data_structure">data structure</a>.</p>
-<p>It’s election time and we are helping to compute the votes as they come in. Votes arriving from individual wards, precincts, municipalities, counties, and states are sometimes reported as a sum total of votes and sometimes as a list of subtotals of votes. After considering how best to store the tallies, we decide to use a <em>nested number list</em>, which we define as follows:</p>
-<p>A <em>nested number list</em> is a list whose elements are either:</p>
-<ol type="1">
-<li>numbers</li>
-<li>nested number lists</li>
-</ol>
-<p>Notice that the term, nested number list is used in its own definition. <a href="http://en.wikipedia.org/wiki/Recursive_definition">Recursive definitions</a> like this are quite common in mathematics and computer science. They provide a concise and powerful way to describe <a href="http://en.wikipedia.org/wiki/Recursive_data_type">recursive data structures</a> that are partially composed of smaller and simpler instances of themselves. The definition is not circular, since at some point we will reach a list that does not have any lists as elements.</p>
-<p>Now suppose our job is to write a function that will sum all of the values in a nested number list. Python has a built-in function which finds the sum of a sequence of numbers:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">8</span>])</a>
+<a class="sourceLine" id="cb31-3" title="3">        print_multiples(i)</a></code></pre>
+    </div>
+    <p>
+      This process is a common <strong>development plan</strong>. We develop
+      code by writing lines of code outside any function, or typing them in to
+      the interpreter. When we get the code working, we extract it and wrap it
+      up in a function.
+    </p>
+    <p>
+      This development plan is particularly useful if you don’t know how to
+      divide the program into functions when you start writing. This approach
+      lets you design as you go along.
+    </p>
+    <h3 id="local-variables">5.15. Local variables</h3>
+    <p>
+      You might be wondering how we can use the same variable, <code>i</code>,
+      in both <code>print_multiples</code> and <code>print_mult_table</code>.
+      Doesn’t it cause problems when one of the functions changes the value of
+      the variable?
+    </p>
+    <p>
+      The answer is no, because the <code>i</code> in
+      <code>print_multiples</code> and the <code>i</code> in
+      <code>print_mult_table</code> are <em>not</em> the same variable.
+    </p>
+    <p>
+      Variables created inside a function definition are local; you can’t access
+      a local variable from outside its home function. That means you are free
+      to have multiple variables with the same name as long as they are not in
+      the same function.
+    </p>
+    <p>
+      Python examines all the statements in a function — if any of them assign a
+      value to a variable, that is the clue that Python uses to make the
+      variable a local variable.
+    </p>
+    <p>
+      The stack diagram for this program shows that the two variables named
+      <code>i</code> are not the same variable. They can refer to different
+      values, and changing one does not affect the other.<img
+        src="https://www.openbookproject.net/books/bpp4awd/_images/stack2.png"
+        alt="Stack 2 diagram"
+      />
+    </p>
+    <p>
+      The value of <code>i</code> in <code>print_mult_table</code> goes from 1
+      to 6. In the diagram it happens to be 3. The next time through the loop it
+      will be 4. Each time through the loop, <code>print_mult_table</code> calls
+      <code>print_multiples</code> with the current value of <code>i</code> as
+      an argument. That value gets assigned to the parameter <code>n</code>.
+    </p>
+    <p>
+      Inside <code>print_multiples</code>, the value of <code>i</code> goes from
+      1 to 6. In the diagram, it happens to be 2. Changing this variable has no
+      effect on the value of <code>i</code> in <code>print_mult_table</code>.
+    </p>
+    <p>
+      It is common and perfectly legal to have different local variables with
+      the same name. In particular, names like <code>i</code> and
+      <code>j</code> are used frequently as loop variables. If you avoid using
+      them in one function just because you used them somewhere else, you will
+      probably make the program harder to read.
+    </p>
+    <h3 id="recursive-data-structures">5.16. Recursive data structures</h3>
+    <p>
+      All of the Python data types we have seen can be grouped inside lists and
+      tuples in a variety of ways. Lists and tuples can also be nested,
+      providing myriad possibilities for organizing data. The organization of
+      data for the purpose of making it easier to use is called a
+      <a href="http://en.wikipedia.org/wiki/Data_structure">data structure</a>.
+    </p>
+    <p>
+      It’s election time and we are helping to compute the votes as they come
+      in. Votes arriving from individual wards, precincts, municipalities,
+      counties, and states are sometimes reported as a sum total of votes and
+      sometimes as a list of subtotals of votes. After considering how best to
+      store the tallies, we decide to use a <em>nested number list</em>, which
+      we define as follows:
+    </p>
+    <p>A <em>nested number list</em> is a list whose elements are either:</p>
+    <ol type="1">
+      <li>numbers</li>
+      <li>nested number lists</li>
+    </ol>
+    <p>
+      Notice that the term, nested number list is used in its own definition.
+      <a href="http://en.wikipedia.org/wiki/Recursive_definition"
+        >Recursive definitions</a
+      >
+      like this are quite common in mathematics and computer science. They
+      provide a concise and powerful way to describe
+      <a href="http://en.wikipedia.org/wiki/Recursive_data_type"
+        >recursive data structures</a
+      >
+      that are partially composed of smaller and simpler instances of
+      themselves. The definition is not circular, since at some point we will
+      reach a list that does not have any lists as elements.
+    </p>
+    <p>
+      Now suppose our job is to write a function that will sum all of the values
+      in a nested number list. Python has a built-in function which finds the
+      sum of a sequence of numbers:
+    </p>
+    <div class="sourceCode" id="cb32">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb32-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">8</span>])</a>
 <a class="sourceLine" id="cb32-2" title="2"><span class="dv">11</span></a>
 <a class="sourceLine" id="cb32-3" title="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>((<span class="dv">3</span>, <span class="dv">5</span>, <span class="fl">8.5</span>))</a>
 <a class="sourceLine" id="cb32-4" title="4"><span class="fl">16.5</span></a>
-<a class="sourceLine" id="cb32-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>For our <em>nested number list</em>, however, <code>sum</code> will not work:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>([<span class="dv">1</span>, <span class="dv">2</span>, [<span class="dv">11</span>, <span class="dv">13</span>], <span class="dv">8</span>])</a>
+<a class="sourceLine" id="cb32-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      For our <em>nested number list</em>, however, <code>sum</code> will not
+      work:
+    </p>
+    <div class="sourceCode" id="cb33">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb33-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">sum</span>([<span class="dv">1</span>, <span class="dv">2</span>, [<span class="dv">11</span>, <span class="dv">13</span>], <span class="dv">8</span>])</a>
 <a class="sourceLine" id="cb33-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb33-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb33-4" title="4"><span class="pp">TypeError</span>: unsupported operand <span class="bu">type</span>(s) <span class="cf">for</span> <span class="op">+</span>: <span class="st">&#39;int&#39;</span> <span class="kw">and</span> <span class="st">&#39;list&#39;</span></a>
-<a class="sourceLine" id="cb33-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>The problem is that the third element of this list, <code>[11, 13]</code>, is itself a list, which can not be added to <code>1</code>, <code>2</code>, and <code>8</code>.</p>
-<h3 id="recursion">5.17. Recursion</h3>
-<p>To sum all the numbers in our recursive nested number list we need to traverse the list, visiting each of the elements within its nested structure, adding any numeric elements to our sum, and <em>repeating this process</em> with any elements which are lists.</p>
-<p>Modern programming languages generally support <a href="http://en.wikipedia.org/wiki/Recursion">recursion</a>, which means that functions can <em>call themselves</em> within their definitions. Thanks to recursion, the Python code needed to sum the values of a nested number list is surprisingly short:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">def</span> recursive_sum(nested_num_list):</a>
+<a class="sourceLine" id="cb33-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      The problem is that the third element of this list, <code>[11, 13]</code>,
+      is itself a list, which can not be added to <code>1</code>,
+      <code>2</code>, and <code>8</code>.
+    </p>
+    <h3 id="recursion">5.17. Recursion</h3>
+    <p>
+      To sum all the numbers in our recursive nested number list we need to
+      traverse the list, visiting each of the elements within its nested
+      structure, adding any numeric elements to our sum, and
+      <em>repeating this process</em> with any elements which are lists.
+    </p>
+    <p>
+      Modern programming languages generally support
+      <a href="http://en.wikipedia.org/wiki/Recursion">recursion</a>, which
+      means that functions can <em>call themselves</em> within their
+      definitions. Thanks to recursion, the Python code needed to sum the values
+      of a nested number list is surprisingly short:
+    </p>
+    <div class="sourceCode" id="cb34">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb34-1" title="1"><span class="kw">def</span> recursive_sum(nested_num_list):</a>
 <a class="sourceLine" id="cb34-2" title="2">    the_sum <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb34-3" title="3">    <span class="cf">for</span> element <span class="kw">in</span> nested_num_list:</a>
 <a class="sourceLine" id="cb34-4" title="4">        <span class="cf">if</span> <span class="bu">type</span>(element) <span class="op">==</span> <span class="bu">list</span>:</a>
 <a class="sourceLine" id="cb34-5" title="5">            the_sum <span class="op">=</span> the_sum <span class="op">+</span> recursive_sum(element)</a>
 <a class="sourceLine" id="cb34-6" title="6">        <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb34-7" title="7">            the_sum <span class="op">=</span> the_sum <span class="op">+</span> element</a>
-<a class="sourceLine" id="cb34-8" title="8">    <span class="cf">return</span> the_sum</a></code></pre></div>
-<p>The body of <code>recursive_sum</code> consists mainly of a <code>for</code> loop that traverses <code>nested_num_list</code>. If <code>element</code> is a numerical value (the <code>else</code> branch), it is simply added to <code>the_sum</code>. If <code>element</code> is a list, then <code>recursive_sum</code> is called again, with the element as an argument. The statement inside the function definition in which the function calls itself is known as the <a href="http://en.wikipedia.org/wiki/Recursion_%28computer_science%29">recursive call</a>.</p>
-<p>Recursion is truly one of the most beautiful and elegant tools in computer science.</p>
-<p>A slightly more complicated problem is finding the largest value in our nested number list:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">def</span> recursive_max(nested_num_list):</a>
+<a class="sourceLine" id="cb34-8" title="8">    <span class="cf">return</span> the_sum</a></code></pre>
+    </div>
+    <p>
+      The body of <code>recursive_sum</code> consists mainly of a
+      <code>for</code> loop that traverses <code>nested_num_list</code>. If
+      <code>element</code> is a numerical value (the <code>else</code> branch),
+      it is simply added to <code>the_sum</code>. If <code>element</code> is a
+      list, then <code>recursive_sum</code> is called again, with the element as
+      an argument. The statement inside the function definition in which the
+      function calls itself is known as the
+      <a href="http://en.wikipedia.org/wiki/Recursion_%28computer_science%29"
+        >recursive call</a
+      >.
+    </p>
+    <p>
+      Recursion is truly one of the most beautiful and elegant tools in computer
+      science.
+    </p>
+    <p>
+      A slightly more complicated problem is finding the largest value in our
+      nested number list:
+    </p>
+    <div class="sourceCode" id="cb35">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">def</span> recursive_max(nested_num_list):</a>
 <a class="sourceLine" id="cb35-2" title="2">    <span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb35-3" title="3"><span class="co">      &gt;&gt;&gt; recursive_max([2, 9, [1, 13], 8, 6])</span></a>
 <a class="sourceLine" id="cb35-4" title="4"><span class="co">      13</span></a>
@@ -460,79 +1196,199 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb35-22" title="22">            <span class="cf">if</span> largest <span class="op">&lt;</span> element:</a>
 <a class="sourceLine" id="cb35-23" title="23">                largest <span class="op">=</span> element</a>
 <a class="sourceLine" id="cb35-24" title="24"></a>
-<a class="sourceLine" id="cb35-25" title="25">    <span class="cf">return</span> largest</a></code></pre></div>
-<p>Doctests are included to provide examples of <code>recursive_max</code> at work.</p>
-<p>The added twist to this problem is finding a numerical value for initializing <code>largest</code>. We can’t just use <code>nested_num_list[0]</code>, since that my be either a number or a list. To solve this problem we use a while loop that assigns <code>largest</code> to the first numerical value no matter how deeply it is nested.</p>
-<p>The two examples above each have a <strong>base case</strong> which does not lead to a recursive call: the case where the element is a number and not a list. Without a base case, you have <strong>infinite recursion</strong>, and your program will not work. Python stops after reaching a maximum recursion depth and returns a runtime error.</p>
-<p>Write the following in a file named <code>infinite_recursion.py</code>:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="co">#</span></a>
+<a class="sourceLine" id="cb35-25" title="25">    <span class="cf">return</span> largest</a></code></pre>
+    </div>
+    <p>
+      Doctests are included to provide examples of <code>recursive_max</code> at
+      work.
+    </p>
+    <p>
+      The added twist to this problem is finding a numerical value for
+      initializing <code>largest</code>. We can’t just use
+      <code>nested_num_list[0]</code>, since that my be either a number or a
+      list. To solve this problem we use a while loop that assigns
+      <code>largest</code> to the first numerical value no matter how deeply it
+      is nested.
+    </p>
+    <p>
+      The two examples above each have a <strong>base case</strong> which does
+      not lead to a recursive call: the case where the element is a number and
+      not a list. Without a base case, you have
+      <strong>infinite recursion</strong>, and your program will not work.
+      Python stops after reaching a maximum recursion depth and returns a
+      runtime error.
+    </p>
+    <p>
+      Write the following in a file named <code>infinite_recursion.py</code>:
+    </p>
+    <div class="sourceCode" id="cb36">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb36-1" title="1"><span class="co">#</span></a>
 <a class="sourceLine" id="cb36-2" title="2"><span class="co"># infinite_recursion.py</span></a>
 <a class="sourceLine" id="cb36-3" title="3"><span class="co">#</span></a>
 <a class="sourceLine" id="cb36-4" title="4"><span class="kw">def</span> recursion_depth(number):</a>
 <a class="sourceLine" id="cb36-5" title="5">    <span class="bu">print</span> <span class="st">&quot;Recursion depth number </span><span class="sc">%d</span><span class="st">.&quot;</span> <span class="op">%</span> number</a>
 <a class="sourceLine" id="cb36-6" title="6">    recursion_depth(number <span class="op">+</span> <span class="dv">1</span>)</a>
 <a class="sourceLine" id="cb36-7" title="7"></a>
-<a class="sourceLine" id="cb36-8" title="8">recursion_depth(<span class="dv">0</span>)</a></code></pre></div>
-<p>At the unix command prompt in the same directory in which you saved your program, type the following:</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1">python infinite_recursion.py</a></code></pre></div>
-<p>After watching the messages flash by, you will be presented with the end of a long traceback that ends in with the following:</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1">  ...</a>
+<a class="sourceLine" id="cb36-8" title="8">recursion_depth(<span class="dv">0</span>)</a></code></pre>
+    </div>
+    <p>
+      At the unix command prompt in the same directory in which you saved your
+      program, type the following:
+    </p>
+    <div class="sourceCode" id="cb37">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb37-1" title="1">python infinite_recursion.py</a></code></pre>
+    </div>
+    <p>
+      After watching the messages flash by, you will be presented with the end
+      of a long traceback that ends in with the following:
+    </p>
+    <div class="sourceCode" id="cb38">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb38-1" title="1">  ...</a>
 <a class="sourceLine" id="cb38-2" title="2">  File <span class="st">&quot;infinite_recursion.py&quot;</span>, line <span class="dv">3</span>, <span class="kw">in</span> recursion_depth</a>
 <a class="sourceLine" id="cb38-3" title="3">    recursion_depth(number <span class="op">+</span> <span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb38-4" title="4"><span class="pp">RuntimeError</span>: maximum recursion depth exceeded</a></code></pre></div>
-<p>We would certainly never want something like this to happen to a user of one of our programs, so before finishing the recursion discussion, let’s see how errors like this are handled in Python.</p>
-<h3 id="exceptions">5.18. Exceptions</h3>
-<p>Whenever a runtime error occurs, it creates an <strong>exception</strong>. The program stops running at this point and Python prints out the traceback, which ends with the exception that occured.</p>
-<p>For example, dividing by zero creates an exception:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="dv">55</span><span class="op">/</span><span class="dv">0</span></a>
+<a class="sourceLine" id="cb38-4" title="4"><span class="pp">RuntimeError</span>: maximum recursion depth exceeded</a></code></pre>
+    </div>
+    <p>
+      We would certainly never want something like this to happen to a user of
+      one of our programs, so before finishing the recursion discussion, let’s
+      see how errors like this are handled in Python.
+    </p>
+    <h3 id="exceptions">5.18. Exceptions</h3>
+    <p>
+      Whenever a runtime error occurs, it creates an <strong>exception</strong>.
+      The program stops running at this point and Python prints out the
+      traceback, which ends with the exception that occured.
+    </p>
+    <p>For example, dividing by zero creates an exception:</p>
+    <div class="sourceCode" id="cb39">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb39-1" title="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> <span class="dv">55</span><span class="op">/</span><span class="dv">0</span></a>
 <a class="sourceLine" id="cb39-2" title="2">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb39-3" title="3">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb39-4" title="4"><span class="pp">ZeroDivisionError</span>: integer division <span class="kw">or</span> modulo by zero</a>
-<a class="sourceLine" id="cb39-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>So does accessing a nonexistent list item:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb39-5" title="5"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>So does accessing a nonexistent list item:</p>
+    <div class="sourceCode" id="cb40">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb40-1" title="1"><span class="op">&gt;&gt;&gt;</span> a <span class="op">=</span> []</a>
 <a class="sourceLine" id="cb40-2" title="2"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> a[<span class="dv">5</span>]</a>
 <a class="sourceLine" id="cb40-3" title="3">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb40-4" title="4">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb40-5" title="5"><span class="pp">IndexError</span>: <span class="bu">list</span> index out of <span class="bu">range</span></a>
-<a class="sourceLine" id="cb40-6" title="6"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Or trying to make an item assignment on a tuple:</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="op">&gt;&gt;&gt;</span> tup <span class="op">=</span> (<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;d&#39;</span>)</a>
+<a class="sourceLine" id="cb40-6" title="6"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>Or trying to make an item assignment on a tuple:</p>
+    <div class="sourceCode" id="cb41">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb41-1" title="1"><span class="op">&gt;&gt;&gt;</span> tup <span class="op">=</span> (<span class="st">&#39;a&#39;</span>, <span class="st">&#39;b&#39;</span>, <span class="st">&#39;d&#39;</span>, <span class="st">&#39;d&#39;</span>)</a>
 <a class="sourceLine" id="cb41-2" title="2"><span class="op">&gt;&gt;&gt;</span> tup[<span class="dv">2</span>] <span class="op">=</span> <span class="st">&#39;c&#39;</span></a>
 <a class="sourceLine" id="cb41-3" title="3">Traceback (most recent call last):</a>
 <a class="sourceLine" id="cb41-4" title="4">  File <span class="st">&quot;&lt;stdin&gt;&quot;</span>, line <span class="dv">1</span>, <span class="kw">in</span> <span class="op">&lt;</span>module<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb41-5" title="5"><span class="pp">TypeError</span>: <span class="st">&#39;tuple&#39;</span> <span class="bu">object</span> does <span class="kw">not</span> support item assignment</a>
-<a class="sourceLine" id="cb41-6" title="6"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>In each case, the error message on the last line has two parts: the type of error before the colon, and specifics about the error after the colon.</p>
-<p>Sometimes we want to execute an operation that might cause an exception, but we don’t want the program to stop. We can <strong>handle the exception</strong> using the <code>try</code> and <code>except</code> statements.</p>
-<p>For example, we might prompt the user for the name of a file and then try to open it. If the file doesn’t exist, we don’t want the program to crash; we want to handle the exception:</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1">filename <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&#39;Enter a file name: &#39;</span>)</a>
+<a class="sourceLine" id="cb41-6" title="6"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      In each case, the error message on the last line has two parts: the type
+      of error before the colon, and specifics about the error after the colon.
+    </p>
+    <p>
+      Sometimes we want to execute an operation that might cause an exception,
+      but we don’t want the program to stop. We can
+      <strong>handle the exception</strong> using the <code>try</code> and
+      <code>except</code> statements.
+    </p>
+    <p>
+      For example, we might prompt the user for the name of a file and then try
+      to open it. If the file doesn’t exist, we don’t want the program to crash;
+      we want to handle the exception:
+    </p>
+    <div class="sourceCode" id="cb42">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb42-1" title="1">filename <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">&#39;Enter a file name: &#39;</span>)</a>
 <a class="sourceLine" id="cb42-2" title="2"><span class="cf">try</span>:</a>
 <a class="sourceLine" id="cb42-3" title="3">    f <span class="op">=</span> <span class="bu">open</span> (filename, <span class="st">&quot;r&quot;</span>)</a>
 <a class="sourceLine" id="cb42-4" title="4"><span class="cf">except</span>:</a>
-<a class="sourceLine" id="cb42-5" title="5">    <span class="bu">print</span> <span class="st">&#39;There is no file named&#39;</span>, filename</a></code></pre></div>
-<p>The <code>try</code> statement executes the statements in the first block. If no exceptions occur, it ignores the <code>except</code> statement. If any exception occurs, it executes the statements in the <code>except</code> branch and then continues.</p>
-<p>We can encapsulate this capability in a function: <code>exists</code> takes a filename and returns true if the file exists, false if it doesn’t:</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">def</span> exists(filename):</a>
+<a class="sourceLine" id="cb42-5" title="5">    <span class="bu">print</span> <span class="st">&#39;There is no file named&#39;</span>, filename</a></code></pre>
+    </div>
+    <p>
+      The <code>try</code> statement executes the statements in the first block.
+      If no exceptions occur, it ignores the <code>except</code> statement. If
+      any exception occurs, it executes the statements in the
+      <code>except</code> branch and then continues.
+    </p>
+    <p>
+      We can encapsulate this capability in a function:
+      <code>exists</code> takes a filename and returns true if the file exists,
+      false if it doesn’t:
+    </p>
+    <div class="sourceCode" id="cb43">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">def</span> exists(filename):</a>
 <a class="sourceLine" id="cb43-2" title="2">    <span class="cf">try</span>:</a>
 <a class="sourceLine" id="cb43-3" title="3">        f <span class="op">=</span> <span class="bu">open</span>(filename)</a>
 <a class="sourceLine" id="cb43-4" title="4">        f.close()</a>
 <a class="sourceLine" id="cb43-5" title="5">        <span class="cf">return</span> <span class="va">True</span></a>
 <a class="sourceLine" id="cb43-6" title="6">    <span class="cf">except</span>:</a>
-<a class="sourceLine" id="cb43-7" title="7">        <span class="cf">return</span> <span class="va">False</span></a></code></pre></div>
-<p>You can use multiple <code>except</code> blocks to handle different kinds of exceptions (see the <a href="http://docs.python.org/tut/node10.html">Errors and Exceptions</a> lesson from Python creator Guido van Rossum’s <a href="http://docs.python.org/tut/tut.html">Python Tutorial</a> for a more complete discussion of exceptions).</p>
-<p>If your program detects an error condition, you can make it <strong>raise</strong> an exception. Here is an example that gets input from the user and checks that the number is non-negative.</p>
-<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="co">#</span></a>
+<a class="sourceLine" id="cb43-7" title="7">        <span class="cf">return</span> <span class="va">False</span></a></code></pre>
+    </div>
+    <p>
+      You can use multiple <code>except</code> blocks to handle different kinds
+      of exceptions (see the
+      <a href="http://docs.python.org/tut/node10.html">Errors and Exceptions</a>
+      lesson from Python creator Guido van Rossum’s
+      <a href="http://docs.python.org/tut/tut.html">Python Tutorial</a> for a
+      more complete discussion of exceptions).
+    </p>
+    <p>
+      If your program detects an error condition, you can make it
+      <strong>raise</strong> an exception. Here is an example that gets input
+      from the user and checks that the number is non-negative.
+    </p>
+    <div class="sourceCode" id="cb44">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb44-1" title="1"><span class="co">#</span></a>
 <a class="sourceLine" id="cb44-2" title="2"><span class="co"># learn_exceptions.py</span></a>
 <a class="sourceLine" id="cb44-3" title="3"><span class="co">#</span></a>
 <a class="sourceLine" id="cb44-4" title="4"><span class="kw">def</span> get_age():</a>
 <a class="sourceLine" id="cb44-5" title="5">    age <span class="op">=</span> <span class="bu">input</span>(<span class="st">&#39;Please enter your age: &#39;</span>)</a>
 <a class="sourceLine" id="cb44-6" title="6">    <span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">0</span>:</a>
 <a class="sourceLine" id="cb44-7" title="7">        <span class="cf">raise</span> <span class="pp">ValueError</span>, <span class="st">&#39;</span><span class="sc">%s</span><span class="st"> is not a valid age&#39;</span> <span class="op">%</span> age</a>
-<a class="sourceLine" id="cb44-8" title="8">    <span class="cf">return</span> age</a></code></pre></div>
-<p>The <code>raise</code> statement takes two arguments: the exception type, and specific information about the error. <code>ValueError</code> is the built-in exception which most closely matches the kind of error we want to raise. The complete listing of built-in exceptions is found in the <a href="http://docs.python.org/lib/module-exceptions.html">Built-in Exceptions</a> section of the <a href="http://docs.python.org/lib/">Python Library Reference</a>, again by Python’s creator, Guido van Rossum.</p>
-<p>If the function that called <code>get_age</code> handles the error, then the program can continue; otherwise, Python prints the traceback and exits:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1"><span class="op">&gt;&gt;&gt;</span> get_age()</a>
+<a class="sourceLine" id="cb44-8" title="8">    <span class="cf">return</span> age</a></code></pre>
+    </div>
+    <p>
+      The <code>raise</code> statement takes two arguments: the exception type,
+      and specific information about the error. <code>ValueError</code> is the
+      built-in exception which most closely matches the kind of error we want to
+      raise. The complete listing of built-in exceptions is found in the
+      <a href="http://docs.python.org/lib/module-exceptions.html"
+        >Built-in Exceptions</a
+      >
+      section of the
+      <a href="http://docs.python.org/lib/">Python Library Reference</a>, again
+      by Python’s creator, Guido van Rossum.
+    </p>
+    <p>
+      If the function that called <code>get_age</code> handles the error, then
+      the program can continue; otherwise, Python prints the traceback and
+      exits:
+    </p>
+    <div class="sourceCode" id="cb45">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb45-1" title="1"><span class="op">&gt;&gt;&gt;</span> get_age()</a>
 <a class="sourceLine" id="cb45-2" title="2">Please enter your age: <span class="dv">42</span></a>
 <a class="sourceLine" id="cb45-3" title="3"><span class="dv">42</span></a>
 <a class="sourceLine" id="cb45-4" title="4"><span class="op">&gt;&gt;&gt;</span> get_age()</a>
@@ -542,10 +1398,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb45-8" title="8">  File <span class="st">&quot;learn_exceptions.py&quot;</span>, line <span class="dv">4</span>, <span class="kw">in</span> get_age</a>
 <a class="sourceLine" id="cb45-9" title="9">    <span class="cf">raise</span> <span class="pp">ValueError</span>, <span class="st">&#39;</span><span class="sc">%s</span><span class="st"> is not a valid age&#39;</span> <span class="op">%</span> age</a>
 <a class="sourceLine" id="cb45-10" title="10"><span class="pp">ValueError</span>: <span class="dv">-2</span> <span class="kw">is</span> <span class="kw">not</span> a valid age</a>
-<a class="sourceLine" id="cb45-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>The error message includes the exception type and the additional information you provided.</p>
-<p>Using exception handling, we can now modify <code>infinite_recursion.py</code> so that it stops when it reaches the maximum recursion depth allowed:</p>
-<div class="sourceCode" id="cb46"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="co">#</span></a>
+<a class="sourceLine" id="cb45-11" title="11"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      The error message includes the exception type and the additional
+      information you provided.
+    </p>
+    <p>
+      Using exception handling, we can now modify
+      <code>infinite_recursion.py</code> so that it stops when it reaches the
+      maximum recursion depth allowed:
+    </p>
+    <div class="sourceCode" id="cb46">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb46-1" title="1"><span class="co">#</span></a>
 <a class="sourceLine" id="cb46-2" title="2"><span class="co"># infinite_recursion.py</span></a>
 <a class="sourceLine" id="cb46-3" title="3"><span class="co">#</span></a>
 <a class="sourceLine" id="cb46-4" title="4"><span class="kw">def</span> recursion_depth(number):</a>
@@ -555,62 +1422,164 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb46-8" title="8">    <span class="cf">except</span>:</a>
 <a class="sourceLine" id="cb46-9" title="9">        <span class="bu">print</span> <span class="st">&quot;Maximum recursion depth exceeded.&quot;</span></a>
 <a class="sourceLine" id="cb46-10" title="10"></a>
-<a class="sourceLine" id="cb46-11" title="11">recursion_depth(<span class="dv">0</span>)</a></code></pre></div>
-<p>Run this version and observe the results.</p>
-<h3 id="tail-recursion">5.19. Tail recursion</h3>
-<p>When the only thing returned from a function is a recursive call, it is refered to as <strong>tail recursion</strong>.</p>
-<p>Here is a version of the <code>countdown</code> function from chapter 6 written using tail recursion:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">def</span> countdown(n):</a>
+<a class="sourceLine" id="cb46-11" title="11">recursion_depth(<span class="dv">0</span>)</a></code></pre>
+    </div>
+    <p>Run this version and observe the results.</p>
+    <h3 id="tail-recursion">5.19. Tail recursion</h3>
+    <p>
+      When the only thing returned from a function is a recursive call, it is
+      refered to as <strong>tail recursion</strong>.
+    </p>
+    <p>
+      Here is a version of the <code>countdown</code> function from chapter 6
+      written using tail recursion:
+    </p>
+    <div class="sourceCode" id="cb47">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb47-1" title="1"><span class="kw">def</span> countdown(n):</a>
 <a class="sourceLine" id="cb47-2" title="2">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</a>
 <a class="sourceLine" id="cb47-3" title="3">        <span class="bu">print</span> <span class="st">&quot;Blastoff!&quot;</span></a>
 <a class="sourceLine" id="cb47-4" title="4">    <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb47-5" title="5">        <span class="bu">print</span> n</a>
-<a class="sourceLine" id="cb47-6" title="6">        countdown(n<span class="dv">-1</span>)</a></code></pre></div>
-<p>Any computation that can be made using iteration can also be made using recursion. Here is a version of <code>find_max</code> written using tail recursion:</p>
-<div class="sourceCode" id="cb48"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="kw">def</span> find_max(seq, max_so_far):</a>
+<a class="sourceLine" id="cb47-6" title="6">        countdown(n<span class="dv">-1</span>)</a></code></pre>
+    </div>
+    <p>
+      Any computation that can be made using iteration can also be made using
+      recursion. Here is a version of <code>find_max</code> written using tail
+      recursion:
+    </p>
+    <div class="sourceCode" id="cb48">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb48-1" title="1"><span class="kw">def</span> find_max(seq, max_so_far):</a>
 <a class="sourceLine" id="cb48-2" title="2">    <span class="cf">if</span> <span class="kw">not</span> seq:</a>
 <a class="sourceLine" id="cb48-3" title="3">        <span class="cf">return</span> max_so_far</a>
 <a class="sourceLine" id="cb48-4" title="4">    <span class="cf">if</span> max_so_far <span class="op">&lt;</span> seq[<span class="dv">0</span>]:</a>
 <a class="sourceLine" id="cb48-5" title="5">        <span class="cf">return</span> find_max(seq[<span class="dv">1</span>:], seq[<span class="dv">0</span>])</a>
 <a class="sourceLine" id="cb48-6" title="6">    <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb48-7" title="7">        <span class="cf">return</span> find_max(seq[<span class="dv">1</span>:], max_so_far)</a></code></pre></div>
-<p>Tail recursion is considered a bad practice in Python, since the Python compiler does not handle optimization for tail recursive calls. The recursive solution in cases like this use more system resources than the equivalent iterative solution.</p>
-<h3 id="recursive-mathematical-functions">5.20. Recursive mathematical functions</h3>
-<p>Several well known mathematical functions are defined recursively. <a href="http://en.wikipedia.org/wiki/Factorial">Factorial</a>, for example, is given the special operator, <code>!</code>, and is defined by:</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1"><span class="dv">0</span><span class="op">!</span> <span class="op">=</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb49-2" title="2">n<span class="op">!</span> <span class="op">=</span> n(n<span class="dv">-1</span>)</a></code></pre></div>
-<p>We can easily code this into Python:</p>
-<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">def</span> factorial(n):</a>
+<a class="sourceLine" id="cb48-7" title="7">        <span class="cf">return</span> find_max(seq[<span class="dv">1</span>:], max_so_far)</a></code></pre>
+    </div>
+    <p>
+      Tail recursion is considered a bad practice in Python, since the Python
+      compiler does not handle optimization for tail recursive calls. The
+      recursive solution in cases like this use more system resources than the
+      equivalent iterative solution.
+    </p>
+    <h3 id="recursive-mathematical-functions">
+      5.20. Recursive mathematical functions
+    </h3>
+    <p>
+      Several well known mathematical functions are defined recursively.
+      <a href="http://en.wikipedia.org/wiki/Factorial">Factorial</a>, for
+      example, is given the special operator, <code>!</code>, and is defined by:
+    </p>
+    <div class="sourceCode" id="cb49">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb49-1" title="1"><span class="dv">0</span><span class="op">!</span> <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb49-2" title="2">n<span class="op">!</span> <span class="op">=</span> n(n<span class="dv">-1</span>)</a></code></pre>
+    </div>
+    <p>We can easily code this into Python:</p>
+    <div class="sourceCode" id="cb50">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1"><span class="kw">def</span> factorial(n):</a>
 <a class="sourceLine" id="cb50-2" title="2">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</a>
 <a class="sourceLine" id="cb50-3" title="3">        <span class="cf">return</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb50-4" title="4">    <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb50-5" title="5">        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="dv">-1</span>)</a></code></pre></div>
-<p>Another well know recursive relation in mathematics is the <a href="http://en.wikipedia.org/wiki/Fibonacci_number">fibonacci sequence</a>, which is defined by:</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1">fibonacci(<span class="dv">0</span>) <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb50-5" title="5">        <span class="cf">return</span> n <span class="op">*</span> factorial(n<span class="dv">-1</span>)</a></code></pre>
+    </div>
+    <p>
+      Another well know recursive relation in mathematics is the
+      <a href="http://en.wikipedia.org/wiki/Fibonacci_number"
+        >fibonacci sequence</a
+      >, which is defined by:
+    </p>
+    <div class="sourceCode" id="cb51">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb51-1" title="1">fibonacci(<span class="dv">0</span>) <span class="op">=</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb51-2" title="2">fibonacci(<span class="dv">1</span>) <span class="op">=</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb51-3" title="3">fibonacci(n) <span class="op">=</span> fibonacci(n<span class="dv">-1</span>) <span class="op">+</span> fibonacci(n<span class="dv">-2</span>)</a></code></pre></div>
-<p>This can also be written easily in Python:</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="kw">def</span> fibonacci (n):</a>
+<a class="sourceLine" id="cb51-3" title="3">fibonacci(n) <span class="op">=</span> fibonacci(n<span class="dv">-1</span>) <span class="op">+</span> fibonacci(n<span class="dv">-2</span>)</a></code></pre>
+    </div>
+    <p>This can also be written easily in Python:</p>
+    <div class="sourceCode" id="cb52">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb52-1" title="1"><span class="kw">def</span> fibonacci (n):</a>
 <a class="sourceLine" id="cb52-2" title="2">    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span> <span class="kw">or</span> n <span class="op">==</span> <span class="dv">1</span>:</a>
 <a class="sourceLine" id="cb52-3" title="3">        <span class="cf">return</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb52-4" title="4">    <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb52-5" title="5">        <span class="cf">return</span> fibonacci(n<span class="dv">-1</span>) <span class="op">+</span> fibonacci(n<span class="dv">-2</span>)</a></code></pre></div>
-<p>Calling <code>factorial(1000)</code> will exceed the maximum recursion depth. And try running <code>fibonacci(35)</code> and see how long it takes to complete (be patient, it will complete).</p>
-<p>You will be asked to write an iterative version of <code>factorial</code> as an exercise, and we will see a better way to handle <code>fibonacci</code> in the next chapter.</p>
-<h3 id="glossary">5.21. Glossary</h3>
-<p>argument</p>
-<p>A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function.flow of execution</p>
-<p>The order in which statements are executed during a program run.frame</p>
-<p>A box in a stack diagram that represents a function call. It contains the local variables and parameters of the function.function</p>
-<p>A named sequence of statements that performs some useful operation. Functions may or may not take parameters and may or may not produce a result.function call</p>
-<p>A statement that executes a function. It consists of the name of the function followed by a list of arguments enclosed in parentheses.function composition</p>
-<p>Using the output from one function call as the input to another.function definition</p>
-<p>A statement that creates a new function, specifying its name, parameters, and the statements it executes.header</p>
-<p>The first part of a compound statement. Headers begin with a keyword and end with a colon (:)local variable</p>
-<p>A variable defined inside a function. A local variable can only be used inside its function.<code>None</code></p>
-<p>The sole value of &lt;class ‘NoneType’&gt;. <code>None</code> is often used to represent the absence of a value. It is also returned by a <code>return</code> statement with no argument or a function that reaches the end of its body without hitting a <code>return</code> statement containing a value.parameter</p>
-<p>A name used inside a function to refer to the value passed as an argument.stack diagram</p>
-<p>A graphical representation of a stack of functions, their variables, and the values to which they refer.traceback</p>
-<p>A list of the functions that are executing, printed when a runtime error occurs. A traceback is also commonly refered to as a <em>stack trace</em>, since it lists the functions in the order in which they are stored in the <a href="http://en.wikipedia.org/wiki/Runtime_stack">runtime stack</a>.</p>
-</body>
+<a class="sourceLine" id="cb52-5" title="5">        <span class="cf">return</span> fibonacci(n<span class="dv">-1</span>) <span class="op">+</span> fibonacci(n<span class="dv">-2</span>)</a></code></pre>
+    </div>
+    <p>
+      Calling <code>factorial(1000)</code> will exceed the maximum recursion
+      depth. And try running <code>fibonacci(35)</code> and see how long it
+      takes to complete (be patient, it will complete).
+    </p>
+    <p>
+      You will be asked to write an iterative version of
+      <code>factorial</code> as an exercise, and we will see a better way to
+      handle <code>fibonacci</code> in the next chapter.
+    </p>
+    <h3 id="glossary">5.21. Glossary</h3>
+    <p>argument</p>
+    <p>
+      A value provided to a function when the function is called. This value is
+      assigned to the corresponding parameter in the function.flow of execution
+    </p>
+    <p>The order in which statements are executed during a program run.frame</p>
+    <p>
+      A box in a stack diagram that represents a function call. It contains the
+      local variables and parameters of the function.function
+    </p>
+    <p>
+      A named sequence of statements that performs some useful operation.
+      Functions may or may not take parameters and may or may not produce a
+      result.function call
+    </p>
+    <p>
+      A statement that executes a function. It consists of the name of the
+      function followed by a list of arguments enclosed in parentheses.function
+      composition
+    </p>
+    <p>
+      Using the output from one function call as the input to another.function
+      definition
+    </p>
+    <p>
+      A statement that creates a new function, specifying its name, parameters,
+      and the statements it executes.header
+    </p>
+    <p>
+      The first part of a compound statement. Headers begin with a keyword and
+      end with a colon (:)local variable
+    </p>
+    <p>
+      A variable defined inside a function. A local variable can only be used
+      inside its function.<code>None</code>
+    </p>
+    <p>
+      The sole value of &lt;class ‘NoneType’&gt;. <code>None</code> is often
+      used to represent the absence of a value. It is also returned by a
+      <code>return</code> statement with no argument or a function that reaches
+      the end of its body without hitting a <code>return</code> statement
+      containing a value.parameter
+    </p>
+    <p>
+      A name used inside a function to refer to the value passed as an
+      argument.stack diagram
+    </p>
+    <p>
+      A graphical representation of a stack of functions, their variables, and
+      the values to which they refer.traceback
+    </p>
+    <p>
+      A list of the functions that are executing, printed when a runtime error
+      occurs. A traceback is also commonly refered to as a <em>stack trace</em>,
+      since it lists the functions in the order in which they are stored in the
+      <a href="http://en.wikipedia.org/wiki/Runtime_stack">runtime stack</a>.
+    </p>
+  </body>
 </html>

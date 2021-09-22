@@ -1,5 +1,4 @@
-Reverse A List
-==============
+# Reverse A List
 
 #### Introduction <span id="introduction"></span>
 
@@ -7,13 +6,13 @@ Python is a flexible language, and there’s typically several ways to perform t
 
 Python’s data structures are quite handy and intuitive, and their built-in functionalities are easy to work with. In this article, we’ll be looking at **how to reverse a list in Python**. A **Python List** is a heterogenous (can contain differing types) array-like structure that stores references to objects in memory.
 
-When manipulating a list, we can either create a *new, changed list*, or change the original list *in-place*. We’ll see the differences in these as we proceed through the article.
+When manipulating a list, we can either create a _new, changed list_, or change the original list _in-place_. We’ll see the differences in these as we proceed through the article.
 
-#### Reverse a List Using the *reverse()* Method <span id="reversealistusingthereversemethod"></span>
+#### Reverse a List Using the _reverse()_ Method <span id="reversealistusingthereversemethod"></span>
 
 Python has a powerful built-in library of methods when it comes to manipulating data in data structures. For the purposes of reversing a list, we can utilize the built-in **`reverse()`** method.
 
-**Note:** The `reverse()` method reverses the list *in-place*. Reversing a list *in-place* means that the original list is changed, instead of creating a new, reversed list.
+**Note:** The `reverse()` method reverses the list _in-place_. Reversing a list _in-place_ means that the original list is changed, instead of creating a new, reversed list.
 
 Due to this, we can’t assign the resulting object to a new variable, and if you want to keep the original list in memory, you’ll have to copy it before reversing:
 
@@ -39,11 +38,11 @@ This results in
     Reversed list:  [4, 3, 2, 1]
     Saved original list:  [1, 2, 3, 4]
 
-#### Reverse a List Using *Slice Notation* <span id="reversealistusingslicenotation"></span>
+#### Reverse a List Using _Slice Notation_ <span id="reversealistusingslicenotation"></span>
 
-The *slice notation* allows us to slice and reproduce parts of various collections or collection-based objects in Python, such as [*Lists*](https://stackabuse.com/python-slice-notation-on-list), [*Strings*](https://stackabuse.com/python-slice-notation-on-string), [*Tuples*](https://stackabuse.com/python-slice-notation-on-tuple) and [*NumPy Arrays*](https://stackabuse.com/python-slice-notation-on-numpy-arrays).
+The _slice notation_ allows us to slice and reproduce parts of various collections or collection-based objects in Python, such as [_Lists_](https://stackabuse.com/python-slice-notation-on-list), [_Strings_](https://stackabuse.com/python-slice-notation-on-string), [_Tuples_](https://stackabuse.com/python-slice-notation-on-tuple) and [_NumPy Arrays_](https://stackabuse.com/python-slice-notation-on-numpy-arrays).
 
-When you *slice* a list, a portion is returned from that list, and every `step`th element is included:
+When you _slice_ a list, a portion is returned from that list, and every `step`th element is included:
 
     my_list = [1, 2, 3, 4, 5, 6]
 
@@ -59,7 +58,7 @@ This results in:
     [2, 3, 4, 5]
     [2, 4]
 
-By omitting the `start` and `end` arguments, you can include the *entire* collection. And by setting the `step` to a negative number, you *iterate through the collection in reverse*. Naturally, if you pair these together:
+By omitting the `start` and `end` arguments, you can include the _entire_ collection. And by setting the `step` to a negative number, you _iterate through the collection in reverse_. Naturally, if you pair these together:
 
     original_list = [1, 2, 3, 4, 5, 6]
 
@@ -72,13 +71,13 @@ This results in:
     Original list:  [1, 2, 3, 4, 5, 6]
     Reversed list:  [6, 5, 4, 3, 2, 1]
 
-The *Slice Notation* doesn’t affect the original list at all, so the `original_list` stays the same even after the operation.
+The _Slice Notation_ doesn’t affect the original list at all, so the `original_list` stays the same even after the operation.
 
-#### Reverse a List Using *slice()* Method <span id="reversealistusingslicemethod"></span>
+#### Reverse a List Using _slice()_ Method <span id="reversealistusingslicemethod"></span>
 
 The `slice()` method accepts the very same parameters - `start`, `end` and `step`, and performs much the same operation as the Slice Notation. Though, instead of omitting the `start` and `end` arguments, you can pass in `None`.
 
-Its return type is a `Slice` object, which can be then be used to *slice a collection according to its contents*. It’s not called on the collection you’re slicing - you’re passing in the `Slice` object after creation, allowing you to create a single reusable and callable object for many different collections.
+Its return type is a `Slice` object, which can be then be used to _slice a collection according to its contents_. It’s not called on the collection you’re slicing - you’re passing in the `Slice` object after creation, allowing you to create a single reusable and callable object for many different collections.
 
 It’s internally transpiled into Slice Notation, so the end result is the same:
 
@@ -94,11 +93,11 @@ This results in:
     slice_obj type: <class 'slice'>
     Reversed list: [6, 5, 4, 3, 2, 1]
 
-#### Reverse a List Using a *For Loop* <span id="reversealistusingaforloop"></span>
+#### Reverse a List Using a _For Loop_ <span id="reversealistusingaforloop"></span>
 
 Depending on whether we want to keep the original list intact or not, we can `pop()` elements from the original list and add them to a new one, or we can just append them in reverse order.
 
-`pop()` removes the *last* element from a collection and returns it. We can combine the `append()` method with this to directly append the removed element to a new list, effectively resulting in a reversed list:
+`pop()` removes the _last_ element from a collection and returns it. We can combine the `append()` method with this to directly append the removed element to a new list, effectively resulting in a reversed list:
 
     original_list = [1, 2, 3, 4]
     reversed_list = []
@@ -108,9 +107,9 @@ Depending on whether we want to keep the original list intact or not, we can `po
 
     print(reversed_list) # Output: [4, 3, 2, 1]
 
-### 
+###
 
-Alternatively, we can iterate through the list *backwards*, until the `-1`th index (non-inclusive) and add each element we see along that list. The `range()` method accepts 3 arguments - `start`, `end` and `step`, which can again be used in much the same way as before:
+Alternatively, we can iterate through the list _backwards_, until the `-1`th index (non-inclusive) and add each element we see along that list. The `range()` method accepts 3 arguments - `start`, `end` and `step`, which can again be used in much the same way as before:
 
     original_list = [1, 2, 3, 4]
     reversed_list = []
@@ -120,7 +119,7 @@ Alternatively, we can iterate through the list *backwards*, until the `-1`th ind
 
     print(reversed_list) # Output: [4, 3, 2, 1]
 
-#### Reversing a List Using the *reversed()* Method <span id="reversingalistusingthereversedmethod"></span>
+#### Reversing a List Using the _reversed()_ Method <span id="reversingalistusingthereversedmethod"></span>
 
 Since iterating with a negative step and then accessing each element in the original list is a bit verbose, the `reversed()` method was added, which makes it much easier to manually implement the reversal logic, in case you want to add your own twist on it.
 

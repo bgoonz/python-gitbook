@@ -1,39 +1,37 @@
-Python VS JavaScript
-====================
+# Python VS JavaScript
 
-Javascript Python cheatsheet
-----------------------------
+## Javascript Python cheatsheet
 
 Tom Tarpey edited this page on May 26, 2019 · [24 revisions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet/_history)
 
 ### Contents
 
--   [Versions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions)
--   [Development Environments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments)
--   [Running Programs](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs)
--   [Comments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments)
--   [Semicolons](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons)
--   [Whitespace, Blocks](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks)
--   [Functions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions)
--   [Arithmetic Operators](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators)
--   [Variables](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables)
--   [Data Types](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types)
--   [Arrays/Lists](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists)
--   [Slices](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices)
--   [Objects/Dicts](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts)
--   [String Formatting](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting)
--   [Booleans and Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals)
--   [`for` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops)
--   [`while` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops)
--   [`switch` Statement](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement)
--   [`if` Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals)
--   [Classes](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes)
+- [Versions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#versions)
+- [Development Environments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#development-environments)
+- [Running Programs](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#running-programs)
+- [Comments](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#comments)
+- [Semicolons](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#semicolons)
+- [Whitespace, Blocks](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#whitespace-blocks)
+- [Functions](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#functions)
+- [Arithmetic Operators](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arithmetic-operators)
+- [Variables](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#variables)
+- [Data Types](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#data-types)
+- [Arrays/Lists](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#arrayslists)
+- [Slices](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#slices)
+- [Objects/Dicts](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#objectsdicts)
+- [String Formatting](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#string-formatting)
+- [Booleans and Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#booleans-and-conditionals)
+- [`for` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#for-loops)
+- [`while` Loops](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#while-loops)
+- [`switch` Statement](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#switch-statement)
+- [`if` Conditionals](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#if-conditionals)
+- [Classes](https://github.com/LambdaSchool/CS-Wiki/wiki/Javascript-Python-cheatsheet#classes)
 
 ### Versions
 
 #### JavaScript
 
-The standard defining JavaScript (JS) is *ECMAScript* (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.
+The standard defining JavaScript (JS) is _ECMAScript_ (ES). Modern browsers and NodeJS support ES6, which has a rich feature set. Older browsers might not support all ES6 features.
 
 The website [caniuse.com](https://caniuse.com/) will show which browsers support specific JS features.
 
@@ -170,7 +168,7 @@ Define functions as follows:
       return 12;
     }
 
-An alternate syntax for functions is growing increasingly common, called *arrow functions*:
+An alternate syntax for functions is growing increasingly common, called _arrow functions_:
 
     let hello = () => {
       console.log("hello");
@@ -201,7 +199,7 @@ Define functions as follows:
       print(x, y, z)
       return 12
 
-Python also supports the concept of *lambda functions*, which are simple functions that can do basic operations.
+Python also supports the concept of _lambda functions_, which are simple functions that can do basic operations.
 
     add = lambda x, y: x + y
 
@@ -258,7 +256,7 @@ Parameterized strings:
     let x = 12;
     console.log(`x is ${x}`); // prints "x is 12"
 
-JS is *weakly typed* so it supports operations on multiple types of data at once.
+JS is _weakly typed_ so it supports operations on multiple types of data at once.
 
     "2" + 4;           // string "24"
     parseInt("2") + 4; // number 6
@@ -283,7 +281,7 @@ Parameterized strings:
     x = 12
     print(f'x is {x}')   # prints "x is 12"
 
-Python is generally *strongly typed* so it it will often complain if you try to mix and match types. You can coerce a type with the `int()`, `float()`, `str()`, and `bool()` functions.
+Python is generally _strongly typed_ so it it will often complain if you try to mix and match types. You can coerce a type with the `int()`, `float()`, `str()`, and `bool()` functions.
 
     "2" + 4        # ERROR: can't mix types
     int("2") + 4   # integer 6
@@ -293,7 +291,7 @@ Python is generally *strongly typed* so it it will often complain if you try to 
 
 #### JavaScript
 
-In JS, lists are called *arrays*.
+In JS, lists are called _arrays_.
 
 Arrays are zero-based.
 
@@ -318,7 +316,7 @@ Length/number of elements:
 
 #### Python
 
-In Python, arrays are called *lists*.
+In Python, arrays are called _lists_.
 
 Lists are zero-based.
 
@@ -360,7 +358,7 @@ Starting from the end: We can also use negative numbers when creating slices, wh
 
 **Tuples**
 
-Python supports a read-only type of list called a *tuple*.
+Python supports a read-only type of list called a _tuple_.
 
     x = (1, 2, 3)
     print(x[1])  # prints 2
@@ -369,7 +367,7 @@ Python supports a read-only type of list called a *tuple*.
 
 **List Comprehensions**
 
-Python supports building lists with *list comprehensions*. This is often useful for filtering lists.
+Python supports building lists with _list comprehensions_. This is often useful for filtering lists.
 
     a = [1, 2, 3, 4, 5]
 
@@ -384,7 +382,7 @@ Python supports building lists with *list comprehensions*. This is often useful 
 
 #### JavaScript
 
-*Objects* hold data which can be found by a specific key called a *property*.
+_Objects_ hold data which can be found by a specific key called a _property_.
 
 Creation:
 
@@ -405,7 +403,7 @@ Access:
 
 #### Python
 
-*Dicts* hold information that can be accessed by a *key*.
+_Dicts_ hold information that can be accessed by a _key_.
 
 Unlike objects in JS, a `dict` is its own beast, and is not the same as an object obtained by instantiating a Python class.
 
@@ -583,7 +581,7 @@ C-style `for` loops:
 
 #### Python
 
-`for`-`in` loops over an *iteratable*. This can be a list, object, or other type of iterable item.
+`for`-`in` loops over an _iteratable_. This can be a list, object, or other type of iterable item.
 
 Counting loops:
 
@@ -767,7 +765,7 @@ Modern JS introduced the `class` keyword and a syntax more familiar to most othe
     g.type;   // "mammal"
     g.jump(); // "I'm jumping! Yay!"
 
-JS does not support multiple inheritance since each object can only have one prototype object. You have to use a *mix-in* if you want to achieve similar functionality.
+JS does not support multiple inheritance since each object can only have one prototype object. You have to use a _mix-in_ if you want to achieve similar functionality.
 
 #### Python
 

@@ -1,5 +1,4 @@
-Dequeue
-=======
+# Dequeue
 
     """
     A deque is similar to all of the other sequential data structures but

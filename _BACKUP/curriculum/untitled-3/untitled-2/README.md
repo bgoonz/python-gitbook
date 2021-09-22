@@ -1,5 +1,4 @@
-D1-Module 01 - Python I
-=======================
+# D1-Module 01 - Python I
 
 ![](../../../.gitbook/assets/image.png)
 
@@ -46,11 +45,11 @@ After Homebrew has finished its installation process, you then need to install P
 
 Here are a few websites that give you online access to the Python interpreter:
 
--   [Repl.it (Links to an external site.)](https://repl.it/)
--   [Trinket (Links to an external site.)](https://trinket.io/)
--   [Python Fiddle (Links to an external site.)](http://pythonfiddle.com/)
--   [Python.org Online Console (Links to an external site.)](https://www.python.org/shell)
--   [Python Anywhere](https://www.pythonanywhere.com/)
+- [Repl.it (Links to an external site.)](https://repl.it/)
+- [Trinket (Links to an external site.)](https://trinket.io/)
+- [Python Fiddle (Links to an external site.)](http://pythonfiddle.com/)
+- [Python.org Online Console (Links to an external site.)](https://www.python.org/shell)
+- [Python Anywhere](https://www.pythonanywhere.com/)
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
@@ -124,24 +123,23 @@ It appears the questioner proofread their question beforehand as it does not con
 
 1.  Choose a real-world example from a recent problem/challenge. Use the guidelines and process outlined above to ask for help in your cohort-specific help channel.
 2.  Identify an unanswered question in your cohort-specific help channel. Do your best to provide a helpful response to that question.
-3.  Find an example of a **bad** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining *why* you believe it is a **bad** question.
-4.  Find an example of a **good** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining *why* you believe it is a **good** question.
+3.  Find an example of a **bad** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining _why_ you believe it is a **bad** question.
+4.  Find an example of a **good** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining _why_ you believe it is a **good** question.
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)](https://stackoverflow.com/help/how-to-ask)
--   [Writing the Perfect Question (Links to an external site.)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
--   [How to Ask Questions the Smart Way (Links to an external site.)](http://catb.org/esr/faqs/smart-questions.html)
--   [How to Debug Small Programs (Links to an external site.)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
+- [Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)](https://stackoverflow.com/help/how-to-ask)
+- [Writing the Perfect Question (Links to an external site.)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
+- [How to Ask Questions the Smart Way (Links to an external site.)](http://catb.org/esr/faqs/smart-questions.html)
+- [How to Debug Small Programs (Links to an external site.)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%285%29.png)
 
-Objective 04 - Use a print statement
-------------------------------------
+## Objective 04 - Use a print statement
 
 ### Overview <span id="overview"></span>
 
-Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some *output* from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
+Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
 
 ### Follow Along <span id="follow-along"></span>
 
@@ -249,8 +247,7 @@ Now, get some practice using the `print` function by completing the challenge be
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29.png)
 
-Objective 05 - Use white space to denote blocks
------------------------------------------------
+## Objective 05 - Use white space to denote blocks
 
 ### Overview <span id="overview"></span>
 
@@ -330,8 +327,7 @@ In Python, whitespace has meaning; it denotes the end of logical lines and also 
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%282%29.png)
 
-\#6:
-----
+## \#6:
 
 ### Overview <span id="overview"></span>
 
@@ -452,7 +448,7 @@ If our code works as expected, `combined` should have a length of 10.
 
 ### Overview <span id="overview"></span>
 
-To format a string in Python, you use the `%` operator to format a set of stored variables in a tuple. You also include *argument specifiers* in your string with special symbols like `%s` and `%d`.
+To format a string in Python, you use the `%` operator to format a set of stored variables in a tuple. You also include _argument specifiers_ in your string with special symbols like `%s` and `%d`.
 
 For example, let’s say you want to insert a `name` variable inside a string. You would do the following:
 
@@ -475,11 +471,11 @@ Any object that is not a string can also be formatted using the `%s` operator. T
 
 A few of the common argument specifiers are:
 
--   `%s` - String (or any object with a string representation)
--   `%d` - Integers
--   `%f` - Floating point numbers
--   `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot’s right.
--   `%x/%X` - Integers in hexadecimal (lowercase/uppercase)
+- `%s` - String (or any object with a string representation)
+- `%d` - Integers
+- `%f` - Floating point numbers
+- `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot’s right.
+- `%x/%X` - Integers in hexadecimal (lowercase/uppercase)
 
 ### Follow Along <span id="follow-along"></span>
 
@@ -557,8 +553,7 @@ The `split()` method allows you to split up a string into a list. The default se
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 09 - Perform basic string operations
-----------------------------------------------
+## Objective 09 - Perform basic string operations
 
 ### Overview <span id="overview"></span>
 
@@ -695,7 +690,7 @@ You can use two types of loops in Python, a `for` loop and a `while` loop. A `fo
 
 The `break` statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the `break` statement is inside a nested loop (loop inside another loop), the `break` statement will only terminate the innermost loop.
 
-You can use the `continue` statement to skip the rest of the code inside a loop *for the current iteration only*. The loop does not terminate entirely but continues with the next iteration.
+You can use the `continue` statement to skip the rest of the code inside a loop _for the current iteration only_. The loop does not terminate entirely but continues with the next iteration.
 
 ### Follow Along <span id="follow-along"></span>
 
@@ -756,8 +751,7 @@ You can also use a `continue` statement to skip the current block but not exit t
 
 ![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 12 - Create user-defined functions and call them
-----------------------------------------------------------
+## Objective 12 - Create user-defined functions and call them
 
 To make our code more readable and DRY (Don’t Repeat Yourself), we often want to encapsulate code inside a callable function.
 

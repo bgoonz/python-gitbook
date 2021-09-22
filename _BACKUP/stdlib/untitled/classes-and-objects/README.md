@@ -1,5 +1,4 @@
-Classes and objects
-===================
+# Classes and objects
 
 ### Classes and Objects
 
@@ -148,7 +147,7 @@ Sometimes, you may want to have a default values for your object methods. If we 
 
 #### Method to Modify Class Default Values
 
-In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add\_skill method to add skills to the skills list.
+In the example below, the person class, all the constructor parameters have default values. In addition to that, we have skills parameter, which we can access using a method. Let us create add_skill method to add skills to the skills list.
 
     class Person:
           def __init__(self, firstname='Asabeneh', lastname='Yetayeh', age=250, country='Finland', city='Helsinki'):
@@ -208,7 +207,7 @@ Using inheritance we can reuse parent class code. Inheritance allows us to defin
     Lidiya Teklemariam is 28 years old. He lives in Espoo, Finland.
     ['Organizing', 'Marketing', 'Digital Marketing']
 
-We did not call the **init**() constructor in the child class. If we didn’t call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling *super*. We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**() function, the child class will no longer inherit the parent’s **init**() function.
+We did not call the **init**() constructor in the child class. If we didn’t call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_. We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**() function, the child class will no longer inherit the parent’s **init**() function.
 
 #### Overriding parent method
 
@@ -247,35 +246,15 @@ We can use super() built-in function or the parent name Person to automatically 
 
 #### Exercises: Level 1
 
-1.  Python has the module called *statistics* and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample (mean, median, mode) and measure of variability (range, variance, standard deviation). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.
+1.  Python has the module called _statistics_ and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample (mean, median, mode) and measure of variability (range, variance, standard deviation). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.
 
     ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
 
-    print('Count:', data.count()) # 25
-    print('Sum: ', data.sum()) # 744
-    print('Min: ', data.min()) # 24
-    print('Max: ', data.max()) # 38
-    print('Range: ', data.range() # 14
-    print('Mean: ', data.mean()) # 30
-    print('Median: ', data.median()) # 29
-    print('Mode: ', data.mode()) # {'mode': 26, 'count': 5}
-    print('Standard Deviation: ', data.std()) # 4.2
-    print('Variance: ', data.var()) # 17.5
-    print('Frequency Distribution: ', data.freq_dist()) # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+    print('Count:', data.count()) # 25 print('Sum: ', data.sum()) # 744 print('Min: ', data.min()) # 24 print('Max: ', data.max()) # 38 print('Range: ', data.range() # 14 print('Mean: ', data.mean()) # 30 print('Median: ', data.median()) # 29 print('Mode: ', data.mode()) # {'mode': 26, 'count': 5} print('Standard Deviation: ', data.std()) # 4.2 print('Variance: ', data.var()) # 17.5 print('Frequency Distribution: ', data.freq_dist()) # [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 
     # you output should look like this
-    print(data.describe())
-    Count: 25
-    Sum:  744
-    Min:  24
-    Max:  38
-    Range:  14
-    Mean:  30
-    Median:  29
-    Mode:  (26, 5)
-    Variance:  17.5
-    Standard Deviation:  4.2
-    Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
+
+    print(data.describe()) Count: 25 Sum: 744 Min: 24 Max: 38 Range: 14 Mean: 30 Median: 29 Mode: (26, 5) Variance: 17.5 Standard Deviation: 4.2 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 
 {% tabs %} {% tab title=“Abstract Class” %}
 
@@ -403,7 +382,6 @@ We can use super() built-in function or the parent name Person to automatically 
 
 {% tab title=“Basic Class” %}
 
-
     """
     A class is made up of methods and state. This allows code and data to be
     combined as one logical entity. This module defines a basic car class,
@@ -486,7 +464,8 @@ We can use super() built-in function or the parent name Person to automatically 
 {% endtab %} {% endtabs %}
 
 7. Classes and objects
-----------------------
+
+---
 
 ### 7.1. Object-oriented programming
 
@@ -494,7 +473,7 @@ Python is an **object-oriented programming language**, which means that it provi
 
 Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main [programming paradigm](http://en.wikipedia.org/wiki/Programming_paradigm) used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.
 
-Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming) paradigm. In procedural programming the focus is on writing functions or *procedures* which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
+Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming) paradigm. In procedural programming the focus is on writing functions or _procedures_ which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
 
 ### 7.2. User-defined compound types
 
@@ -564,7 +543,7 @@ The first line outputs `(3, 4)`; the second line calculates the value 25.
 
 ### 7.4. The **initialization method** and `self`
 
-Since our `Point` class is intended to represent two dimensional mathematical points, *all* point instances ought to have `x` and `y` attributes, but that is not yet so with our `Point` objects.
+Since our `Point` class is intended to represent two dimensional mathematical points, _all_ point instances ought to have `x` and `y` attributes, but that is not yet so with our `Point` objects.
 
     >>> p2 = Point()
     >>> p2.x
@@ -636,10 +615,7 @@ To convert `print_point` to a method, do the following:
 1.  Indent the function definition so that it is inside the class definition.
 2.  Rename the parameter to `self`.
 
-    class Point:
-        def __init__(self, x=0, y=0):
-            self.x = x
-            self.y = y
+    class Point: def **init**(self, x=0, y=0): self.x = x self.y = y
 
         def distance_from_origin(self):
             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
@@ -986,7 +962,7 @@ In my opinion, it is embarrassing that humans spend so much time in school learn
 
 On the other hand, the process of designing algorithms is interesting, intellectually challenging, and a central part of what we call programming.
 
-Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain *how* we do it, at least not in the form of an algorithm.
+Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain _how_ we do it, at least not in the form of an algorithm.
 
 ### 7.14. Points revisited
 
@@ -1117,7 +1093,7 @@ Here’s an example that applies `front_and_back` to a list:
 
 Of course, we intended to apply this function to lists, so it is not surprising that it works. What would be surprising is if we could apply it to a `Point`.
 
-To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: *If all of the operations inside the function can be applied to the type, the function can be applied to the type.* The operations in the method include `copy`, `reverse`, and `print`.
+To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: _If all of the operations inside the function can be applied to the type, the function can be applied to the type._ The operations in the method include `copy`, `reverse`, and `print`.
 
 `copy` works on any object, and we have already written a `__str__` method for `Point`s, so all we need is a `reverse` method in the `Point` class:
 

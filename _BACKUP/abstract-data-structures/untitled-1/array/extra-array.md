@@ -1,5 +1,4 @@
-Extra-Array
-===========
+# Extra-Array
 
 {% tabs %} {% tab title=“recur-bin-search.py” %}
 
@@ -234,7 +233,7 @@ Extra-Array
         print(myArray.items, myArray.myLen())
         myArray.search(4)
 
-### 
+###
 
 ### Create Array Class
 

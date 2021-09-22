@@ -1,32 +1,30 @@
-Python Data Structures
-======================
+# Python Data Structures
 
-Data Structures
----------------
+## Data Structures
 
 This chapter describes some things you’ve learned about already in more detail, and adds some new things as well.
 
 ### 5.1. More on Lists
 
-The list data type has some more methods. Here are all of the methods of list objects:`list.append`(*x*)
+The list data type has some more methods. Here are all of the methods of list objects:`list.append`(_x_)
 
-Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.`list.extend`(*iterable*)
+Add an item to the end of the list. Equivalent to `a[len(a):] = [x]`.`list.extend`(_iterable_)
 
-Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.`list.insert`(*i*, *x*)
+Extend the list by appending all the items from the iterable. Equivalent to `a[len(a):] = iterable`.`list.insert`(_i_, _x_)
 
-Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.`list.remove`(*x*)
+Insert an item at a given position. The first argument is the index of the element before which to insert, so `a.insert(0, x)` inserts at the front of the list, and `a.insert(len(a), x)` is equivalent to `a.append(x)`.`list.remove`(_x_)
 
-Remove the first item from the list whose value is equal to *x*. It raises a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) if there is no such item.`list.pop`(\[*i*\])
+Remove the first item from the list whose value is equal to _x_. It raises a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) if there is no such item.`list.pop`(\[_i_\])
 
-Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list. (The square brackets around the *i* in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.)`list.clear`()
+Remove the item at the given position in the list, and return it. If no index is specified, `a.pop()` removes and returns the last item in the list. (The square brackets around the _i_ in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.)`list.clear`()
 
-Remove all items from the list. Equivalent to `del a[:]`.`list.index`(*x*\[, *start*\[, *end*\]\])
+Remove all items from the list. Equivalent to `del a[:]`.`list.index`(_x_\[, _start_\[, _end_\]\])
 
-Return zero-based index in the list of the first item whose value is equal to *x*. Raises a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) if there is no such item.
+Return zero-based index in the list of the first item whose value is equal to _x_. Raises a [`ValueError`](https://docs.python.org/3/library/exceptions.html#ValueError) if there is no such item.
 
-The optional arguments *start* and *end* are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the *start* argument.`list.count`(*x*)
+The optional arguments _start_ and _end_ are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the _start_ argument.`list.count`(_x_)
 
-Return the number of times *x* appears in the list.`list.sort`(*\**, *key=None*, *reverse=False*)
+Return the number of times _x_ appears in the list.`list.sort`(\*\**, *key=None*, *reverse=False\*)
 
 Sort the items of the list in place (the arguments can be used for sort customization, see [`sorted()`](https://docs.python.org/3/library/functions.html#sorted) for their explanation).`list.reverse`()
 
@@ -59,7 +57,7 @@ An example that uses most of the list methods:&gt;&gt;&gt;
 
 You might have noticed that methods like `insert`, `remove` or `sort` that only modify the list have no return value printed – they return the default `None`. [1](https://docs.python.org/3/tutorial/datastructures.html#id2) This is a design principle for all mutable data structures in Python.
 
-Another thing you might notice is that not all data can be sorted or compared. For instance, `[None, 'hello', 10]` doesn’t sort because integers can’t be compared to strings and *None* can’t be compared to other types. Also, there are some types that don’t have a defined ordering relation. For example, `3+4j < 5+7j` isn’t a valid comparison.
+Another thing you might notice is that not all data can be sorted or compared. For instance, `[None, 'hello', 10]` doesn’t sort because integers can’t be compared to strings and _None_ can’t be compared to other types. Also, there are some types that don’t have a defined ordering relation. For example, `3+4j < 5+7j` isn’t a valid comparison.
 
 #### 5.1.1. Using Lists as Stacks
 
@@ -244,7 +242,7 @@ Referencing the name `a` hereafter is an error (at least until another value is 
 
 ### 5.3. Tuples and Sequences
 
-We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of *sequence* data types (see [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq)). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the *tuple*.
+We saw that lists and strings have many common properties, such as indexing and slicing operations. They are two examples of _sequence_ data types (see [Sequence Types — list, tuple, range](https://docs.python.org/3/library/stdtypes.html#typesseq)). Since Python is an evolving language, other sequence data types may be added. There is also another standard sequence data type: the _tuple_.
 
 A tuple consists of a number of values separated by commas, for instance:&gt;&gt;&gt;
 
@@ -282,15 +280,15 @@ A special problem is the construction of tuples containing 0 or 1 items: the syn
     >>> singleton
     ('hello',)
 
-The statement `t = 12345, 54321, 'hello!'` is an example of *tuple packing*: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
+The statement `t = 12345, 54321, 'hello!'` is an example of _tuple packing_: the values `12345`, `54321` and `'hello!'` are packed together in a tuple. The reverse operation is also possible:&gt;&gt;&gt;
 
     >>> x, y, z = t
 
-This is called, appropriately enough, *sequence unpacking* and works for any sequence on the right-hand side. Sequence unpacking requires that there are as many variables on the left side of the equals sign as there are elements in the sequence. Note that multiple assignment is really just a combination of tuple packing and sequence unpacking.
+This is called, appropriately enough, _sequence unpacking_ and works for any sequence on the right-hand side. Sequence unpacking requires that there are as many variables on the left side of the equals sign as there are elements in the sequence. Note that multiple assignment is really just a combination of tuple packing and sequence unpacking.
 
 ### 5.4. Sets
 
-Python also includes a data type for *sets*. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
+Python also includes a data type for _sets_. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.
 
 Curly braces or the [`set()`](https://docs.python.org/3/library/stdtypes.html#set) function can be used to create sets. Note: to create an empty set you have to use `set()`, not `{}`; the latter creates an empty dictionary, a data structure that we discuss in the next section.
 
@@ -327,9 +325,9 @@ Similarly to [list comprehensions](https://docs.python.org/3/tutorial/datastruct
 
 ### 5.5. Dictionaries
 
-Another useful data type built into Python is the *dictionary* (see [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by *keys*, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
+Another useful data type built into Python is the _dictionary_ (see [Mapping Types — dict](https://docs.python.org/3/library/stdtypes.html#typesmapping)). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by _keys_, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like `append()` and `extend()`.
 
-It is best to think of a dictionary as a set of *key: value* pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
+It is best to think of a dictionary as a set of _key: value_ pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: `{}`. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.
 
 The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with `del`. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.
 
@@ -459,7 +457,7 @@ Comparisons can be chained. For example, `a < b == c` tests whether `a` is less 
 
 Comparisons may be combined using the Boolean operators `and` and `or`, and the outcome of a comparison (or of any other Boolean expression) may be negated with `not`. These have lower priorities than comparison operators; between them, `not` has the highest priority and `or` the lowest, so that `A and not B or C` is equivalent to `(A and (not B)) or C`. As always, parentheses can be used to express the desired composition.
 
-The Boolean operators `and` and `or` are so-called *short-circuit* operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined. For example, if `A` and `C` are true but `B` is false, `A and B and C` does not evaluate the expression `C`. When used as a general value and not as a Boolean, the return value of a short-circuit operator is the last evaluated argument.
+The Boolean operators `and` and `or` are so-called _short-circuit_ operators: their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined. For example, if `A` and `C` are true but `B` is false, `A and B and C` does not evaluate the expression `C`. When used as a general value and not as a Boolean, the return value of a short-circuit operator is the last evaluated argument.
 
 It is possible to assign the result of a comparison or other Boolean expression to a variable. For example,&gt;&gt;&gt;
 
@@ -472,7 +470,7 @@ Note that in Python, unlike C, assignment inside expressions must be done explic
 
 ### 5.8. Comparing Sequences and Other Types
 
-Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses *lexicographical* ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type:
+Sequence objects typically may be compared to other objects with the same sequence type. The comparison uses _lexicographical_ ordering: first the first two items are compared, and if they differ this determines the outcome of the comparison; if they are equal, the next two items are compared, and so on, until either sequence is exhausted. If two items to be compared are themselves sequences of the same type, the lexicographical comparison is carried out recursively. If all items of two sequences compare equal, the sequences are considered equal. If one sequence is an initial sub-sequence of the other, the shorter sequence is the smaller (lesser) one. Lexicographical ordering for strings uses the Unicode code point number to order individual characters. Some examples of comparisons between sequences of the same type:
 
     (1, 2, 3)              < (1, 2, 4)
     [1, 2, 3]              < [1, 2, 4]

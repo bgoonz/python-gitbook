@@ -1,5 +1,4 @@
-List Directory Contents
-=======================
+# List Directory Contents
 
     import os
 

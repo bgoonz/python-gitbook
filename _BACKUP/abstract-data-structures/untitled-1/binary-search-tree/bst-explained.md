@@ -1,5 +1,4 @@
-BST Explained
-=============
+# BST Explained
 
 ### What is a Binary Search Tree?
 

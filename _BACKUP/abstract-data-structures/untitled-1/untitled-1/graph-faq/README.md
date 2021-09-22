@@ -1,15 +1,13 @@
-Graph FAQ
-=========
+# Graph FAQ
 
-Graphs FAQ <span id="graphs-faq"></span>
-----------------------------------------
+## Graphs FAQ <span id="graphs-faq"></span>
 
 ### Contents <span id="contents"></span>
 
--   [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
--   [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
--   [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
--   [What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
+- [What is a Graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q100)
+- [Why is it important to learn Graphs?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q101)
+- [How many types of graphs are there?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q102)
+- [What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?](file:///C:/Lambda/CIRRICULUMN/_NOTES/CS-python-notes/_RESOURCES/course-work/Graphs-andrew-brudnak/FAQs.md#q103)
 
 ### Questions <span id="questions"></span>
 

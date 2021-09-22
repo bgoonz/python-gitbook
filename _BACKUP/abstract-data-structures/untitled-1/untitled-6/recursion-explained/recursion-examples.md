@@ -1,5 +1,4 @@
-Recursion Examples
-==================
+# Recursion Examples
 
 {% tabs %} {% tab title=“explained” %}
 

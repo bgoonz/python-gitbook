@@ -1,5 +1,4 @@
-Touple
-======
+# Touple
 
 A tuple is an ordered collection of items. An ordered collection keeps the items in the order you insert or initialize them. In other words, the order is preserved. This is in contrast to dictionaries or sets, where the order is not preserved (unordered collections).
 
@@ -7,26 +6,26 @@ Tuples are like lists but vary in the following aspects: They are immutable, (we
 
 For more background on the different data structures in Python, check out the following articles:
 
--   [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
--   [List](https://www.section.io/list-data-structure-python/)
--   [Stack](https://www.section.io/stack-data-structure-python/)
--   [Queue](https://www.section.io/queue-data-structure-python/)
--   [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
--   [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
--   [Heaps](https://www.section.io/heap-data-structure-python/)
--   [Graphs](https://www.section.io/graph-data-structure-python/)
+- [Introduction to Data Structures](https://www.section.io/data-structures-python-part-1/)
+- [List](https://www.section.io/list-data-structure-python/)
+- [Stack](https://www.section.io/stack-data-structure-python/)
+- [Queue](https://www.section.io/queue-data-structure-python/)
+- [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
+- [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
+- [Heaps](https://www.section.io/heap-data-structure-python/)
+- [Graphs](https://www.section.io/graph-data-structure-python/)
 
-*Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)*
+_Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)_
 
 #### Table of Contents <span id="table-of-contents"></span>
 
--   [Tuples: Let’s Code](https://www.section.io/engineering-education/tuples-data-structure-python/#tuples-lets-code)
-    -   [Creating a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#creating-a-tuple)
-    -   [Accessing Items in a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#accessing-items-in-a-tuple)
-    -   [Modifying Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#modifying-tuples)
-    -   [Tuple Methods](https://www.section.io/engineering-education/tuples-data-structure-python/#tuple-methods)
--   [Applications of Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#applications-of-tuples)
--   [Further Reading](https://www.section.io/engineering-education/tuples-data-structure-python/#further-reading)
+- [Tuples: Let’s Code](https://www.section.io/engineering-education/tuples-data-structure-python/#tuples-lets-code)
+  - [Creating a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#creating-a-tuple)
+  - [Accessing Items in a Tuple](https://www.section.io/engineering-education/tuples-data-structure-python/#accessing-items-in-a-tuple)
+  - [Modifying Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#modifying-tuples)
+  - [Tuple Methods](https://www.section.io/engineering-education/tuples-data-structure-python/#tuple-methods)
+- [Applications of Tuples](https://www.section.io/engineering-education/tuples-data-structure-python/#applications-of-tuples)
+- [Further Reading](https://www.section.io/engineering-education/tuples-data-structure-python/#further-reading)
 
 #### Tuples: Let’s Code <span id="tuples-lets-code"></span>
 
@@ -83,7 +82,7 @@ This tuple follows zero indexing.
 
 ![Tuple Positive Indexing](https://www.section.io/engineering-education/tuples-data-structure-python/tuple-positive-index.png)
 
-*Tuple Positive Indexing: Source –* [*GeeksforGeeks*](https://www.geeksforgeeks.org/python-tuples/)
+_Tuple Positive Indexing: Source –_ [_GeeksforGeeks_](https://www.geeksforgeeks.org/python-tuples/)
 
 **Negative Indexing**
 
@@ -97,7 +96,7 @@ Similar to lists, we can also use negative indexing on a tuple. Therefore, ‘-1
 
 ![Tuple Negative Indexing](https://www.section.io/engineering-education/tuples-data-structure-python/tuple-negative-index.png)
 
-*Tuple Negative Indexing*
+_Tuple Negative Indexing_
 
 **Slicing**
 
@@ -152,65 +151,62 @@ This works perfectly because we are modifying the list within a tuple (which is 
 
 Tuples have the following in-built methods that make them extremely powerful:
 
--   **`cmp(tuple1, tuple2)`**
--   **`len(tuple)`**
--   **`min(tuple)`**
--   **`max(tuple)`**
--   **`tuple(list)`**
--   **`t.count(el)`**
--   **`t.index(el)`**
+- **`cmp(tuple1, tuple2)`**
+- **`len(tuple)`**
+- **`min(tuple)`**
+- **`max(tuple)`**
+- **`tuple(list)`**
+- **`t.count(el)`**
+- **`t.index(el)`**
 
 **cmp(tuple1, tuple2)**
 
-*Note: The cmp() method existed in python2. It wasn’t included in python3. Therefore we define our own compare method.*
+_Note: The cmp() method existed in python2. It wasn’t included in python3. Therefore we define our own compare method._
 
 The compare method analyses two tuples element by element.
 
 It compares them and returns the following:
 
--   If tuple1 &gt; tuple2: the method returns 1.
--   If tuple2 &gt; tuple1: the method returns -1.
--   If tuple1 == tuple2: the method returns 0.
+- If tuple1 &gt; tuple2: the method returns 1.
+- If tuple2 &gt; tuple1: the method returns -1.
+- If tuple1 == tuple2: the method returns 0.
 
-    def cmp(t1, t2):
-        return bool(t1 > t2) - bool(t1 < t2)
-        """
-        When both tuples are equal,
-            bool(t1 > t2) = 0
-            bool(t1 < t2) = 0
-            Therefore, 0 - 0 = 0
+  def cmp(t1, t2): return bool(t1 > t2) - bool(t1 < t2) """ When both tuples are equal, bool(t1 > t2) = 0 bool(t1 < t2) = 0 Therefore, 0 - 0 = 0
 
-        When both tuple1 > tuple2,
-            bool(t1 > t2) = 1
-            bool(t1 < t2) = 0
-            Therefore, 1 - 0 = 1
+      When both tuple1 > tuple2,
+          bool(t1 > t2) = 1
+          bool(t1 < t2) = 0
+          Therefore, 1 - 0 = 1
 
-        When both tuple2 > tuple1,
-            bool(t1 > t2) = 0
-            bool(t1 < t2) = 1
-            Therefore, 0 - 1 = -1
-        """
-    tuple1 = (100, 200)
-    tuple2 = (300, 400)
+      When both tuple2 > tuple1,
+          bool(t1 > t2) = 0
+          bool(t1 < t2) = 1
+          Therefore, 0 - 1 = -1
+      """
 
-    print(cmp(tuple1, tuple2))
-    # Output: -1
+  tuple1 = (100, 200) tuple2 = (300, 400)
 
-    print(cmp(tuple2, tuple1))
-    # Output: 1
+  print(cmp(tuple1, tuple2))
 
-    tuple1 = (100, 200)
-    tuple2 = (100, 200)
+  # Output: -1
 
-    print(cmp(tuple2, tuple1))
-    # Output: 0
+  print(cmp(tuple2, tuple1))
 
-    tuple1 = (100, 300)
-    tuple2 = (200, 100)
+  # Output: 1
 
-    print(cmp(tuple2, tuple1))
-    # Output: 1
-    # This is because the tuple comparison is done left to right. When tuple2[0] > tuple1[0], no further comparisons are made and the output is returned as zero. This is how the cmp() method works in Python.
+  tuple1 = (100, 200) tuple2 = (100, 200)
+
+  print(cmp(tuple2, tuple1))
+
+  # Output: 0
+
+  tuple1 = (100, 300) tuple2 = (200, 100)
+
+  print(cmp(tuple2, tuple1))
+
+  # Output: 1
+
+  # This is because the tuple comparison is done left to right. When tuple2[0] > tuple1[0], no further comparisons are made and the output is returned as zero. This is how the cmp() method works in Python.
 
 **len(tuple)**
 
@@ -285,12 +281,12 @@ It’s also possible to specify a range to search.
 
 #### Applications of Tuples <span id="applications-of-tuples"></span>
 
--   Tuples are especially used as protection against modification. Since they are immutable, we can use tuples to write-protect data.
--   When iterating over a tuple, a considerable performance gain is observed when we compare it to lists. This is more evident when the size of the tuple is large. Using the `timeit` module in Python, we see that tuples are considerably faster to iterate when compared to lists.
+- Tuples are especially used as protection against modification. Since they are immutable, we can use tuples to write-protect data.
+- When iterating over a tuple, a considerable performance gain is observed when we compare it to lists. This is more evident when the size of the tuple is large. Using the `timeit` module in Python, we see that tuples are considerably faster to iterate when compared to lists.
 
 ![Tuple Performance](https://www.section.io/engineering-education/tuples-data-structure-python/tuples-performance.png)
 
-*Note: For more in-depth analysis of why tuples perform better, check out* [*this*](https://stackoverflow.com/questions/68630/are-tuples-more-efficient-than-lists-in-python#comment2117930_68817) *StackOverflow thread.*
+_Note: For more in-depth analysis of why tuples perform better, check out_ [_this_](https://stackoverflow.com/questions/68630/are-tuples-more-efficient-than-lists-in-python#comment2117930_68817) _StackOverflow thread._
 
--   The dictionary data structure has an immutable key. Therefore tuples can be used as a key in a dictionary.
--   Tuples can be used to group related data. For example, a row in a database table can be grouped together and stored in a tuple.
+- The dictionary data structure has an immutable key. Therefore tuples can be used as a key in a dictionary.
+- Tuples can be used to group related data. For example, a row in a database table can be grouped together and stored in a tuple.

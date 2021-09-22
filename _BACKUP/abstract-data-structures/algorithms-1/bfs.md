@@ -1,5 +1,4 @@
-BFS
-===
+# BFS
 
 {% tabs %} {% tab title=“Examples” %}
 

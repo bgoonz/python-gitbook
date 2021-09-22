@@ -1,119 +1,305 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>tree-traversals-inorder-preorder-and-postorder</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="tree-traversals-inorder-preorder-and-postorder">Tree Traversals (Inorder, Preorder and Postorder)</h1>
-<p><img src="../../../.gitbook/assets/image%20%2835%29.png" /></p>
-<p><img src="../../../.gitbook/assets/image%20%2836%29.png" /></p>
-<p>Unlike linear data structures (Array, Linked List, Queues, Stacks, etc) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees.</p>
-<figure>
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree12.gif" alt="Example Tree" /><figcaption>Example Tree</figcaption>
-</figure>
-<p>Depth First Traversals:<br />
-(a) Inorder (Left, Root, Right) : 4 2 5 1 3<br />
-(b) Preorder (Root, Left, Right) : 1 2 4 5 3<br />
-(c) Postorder (Left, Right, Root) : 4 5 2 3 1<br />
-Breadth First or Level Order Traversal : 1 2 3 4 5<br />
-Please see <a href="https://www.geeksforgeeks.org/level-order-tree-traversal/">this</a>post for Breadth First Traversal.<br />
-<strong>Inorder Traversal (</strong><a href="https://practice.geeksforgeeks.org/problems/inorder-traversal/1"><strong>Practice</strong></a><strong>):</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">Algorithm Inorder(tree)</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>tree-traversals-inorder-preorder-and-postorder</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="tree-traversals-inorder-preorder-and-postorder">
+      Tree Traversals (Inorder, Preorder and Postorder)
+    </h1>
+    <p><img src="../../../.gitbook/assets/image%20%2835%29.png" /></p>
+    <p><img src="../../../.gitbook/assets/image%20%2836%29.png" /></p>
+    <p>
+      Unlike linear data structures (Array, Linked List, Queues, Stacks, etc)
+      which have only one logical way to traverse them, trees can be traversed
+      in different ways. Following are the generally used ways for traversing
+      trees.
+    </p>
+    <figure>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree12.gif"
+        alt="Example Tree"
+      />
+      <figcaption>Example Tree</figcaption>
+    </figure>
+    <p>
+      Depth First Traversals:<br />
+      (a) Inorder (Left, Root, Right) : 4 2 5 1 3<br />
+      (b) Preorder (Root, Left, Right) : 1 2 4 5 3<br />
+      (c) Postorder (Left, Right, Root) : 4 5 2 3 1<br />
+      Breadth First or Level Order Traversal : 1 2 3 4 5<br />
+      Please see
+      <a href="https://www.geeksforgeeks.org/level-order-tree-traversal/"
+        >this</a
+      >post for Breadth First Traversal.<br />
+      <strong>Inorder Traversal (</strong
+      ><a href="https://practice.geeksforgeeks.org/problems/inorder-traversal/1"
+        ><strong>Practice</strong></a
+      ><strong>):</strong>
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">Algorithm Inorder(tree)</a>
 <a class="sourceLine" id="cb1-2" title="2">   <span class="fl">1.</span> Traverse the left subtree, i.e., call Inorder(left<span class="op">-</span>subtree)</a>
 <a class="sourceLine" id="cb1-3" title="3">   <span class="fl">2.</span> Visit the root.</a>
-<a class="sourceLine" id="cb1-4" title="4">   <span class="fl">3.</span> Traverse the right subtree, i.e., call Inorder(right<span class="op">-</span>subtree)</a></code></pre></div>
-<p>Uses of Inorder<br />
-In case of binary search trees (BST), Inorder traversal gives nodes in non-decreasing order. To get nodes of BST in non-increasing order, a variation of Inorder traversal where Inorder traversal s reversed can be used.<br />
-Example: Inorder traversal for the above-given figure is 4 2 5 1 3.<br />
-<strong>Preorder Traversal (</strong><a href="https://practice.geeksforgeeks.org/problems/preorder-traversal/1"><strong>Practice</strong></a><strong>):</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Algorithm Preorder(tree)</a>
+<a class="sourceLine" id="cb1-4" title="4">   <span class="fl">3.</span> Traverse the right subtree, i.e., call Inorder(right<span class="op">-</span>subtree)</a></code></pre>
+    </div>
+    <p>
+      Uses of Inorder<br />
+      In case of binary search trees (BST), Inorder traversal gives nodes in
+      non-decreasing order. To get nodes of BST in non-increasing order, a
+      variation of Inorder traversal where Inorder traversal s reversed can be
+      used.<br />
+      Example: Inorder traversal for the above-given figure is 4 2 5 1 3.<br />
+      <strong>Preorder Traversal (</strong
+      ><a
+        href="https://practice.geeksforgeeks.org/problems/preorder-traversal/1"
+        ><strong>Practice</strong></a
+      ><strong>):</strong>
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">Algorithm Preorder(tree)</a>
 <a class="sourceLine" id="cb2-2" title="2">   <span class="fl">1.</span> Visit the root.</a>
 <a class="sourceLine" id="cb2-3" title="3">   <span class="fl">2.</span> Traverse the left subtree, i.e., call Preorder(left<span class="op">-</span>subtree)</a>
-<a class="sourceLine" id="cb2-4" title="4">   <span class="fl">3.</span> Traverse the right subtree, i.e., call Preorder(right<span class="op">-</span>subtree)</a></code></pre></div>
-<p>Uses of Preorder<br />
-Preorder traversal is used to create a copy of the tree. Preorder traversal is also used to get prefix expression on of an expression tree. Please see <a href="http://en.wikipedia.org/wiki/Polish_notation">http://en.wikipedia.org/wiki/Polish_notation</a> to know why prefix expressions are useful.<br />
-Example: Preorder traversal for the above given figure is 1 2 4 5 3.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">Algorithm Postorder(tree)</a>
+<a class="sourceLine" id="cb2-4" title="4">   <span class="fl">3.</span> Traverse the right subtree, i.e., call Preorder(right<span class="op">-</span>subtree)</a></code></pre>
+    </div>
+    <p>
+      Uses of Preorder<br />
+      Preorder traversal is used to create a copy of the tree. Preorder
+      traversal is also used to get prefix expression on of an expression tree.
+      Please see
+      <a href="http://en.wikipedia.org/wiki/Polish_notation"
+        >http://en.wikipedia.org/wiki/Polish_notation</a
+      >
+      to know why prefix expressions are useful.<br />
+      Example: Preorder traversal for the above given figure is 1 2 4 5 3.
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1">Algorithm Postorder(tree)</a>
 <a class="sourceLine" id="cb3-2" title="2">   <span class="fl">1.</span> Traverse the left subtree, i.e., call Postorder(left<span class="op">-</span>subtree)</a>
 <a class="sourceLine" id="cb3-3" title="3">   <span class="fl">2.</span> Traverse the right subtree, i.e., call Postorder(right<span class="op">-</span>subtree)</a>
-<a class="sourceLine" id="cb3-4" title="4">   <span class="fl">3.</span> Visit the root.</a></code></pre></div>
-<p>Uses of Postorder<br />
-Postorder traversal is used to delete the tree. Please see <a href="https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/">the question for deletion of tree</a>for details. Postorder traversal is also useful to get the postfix expression of an expression tree. Please see <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">http://en.wikipedia.org/wiki/Reverse_Polish_notation</a> to for the usage of postfix expression.<br />
-Example: Postorder traversal for the above given figure is 4 5 2 3 1.</p>
-<p>{% tabs %} {% tab title=“Python” %}</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Python program to for tree traversals</span></a>
+<a class="sourceLine" id="cb3-4" title="4">   <span class="fl">3.</span> Visit the root.</a></code></pre>
+    </div>
+    <p>
+      Uses of Postorder<br />
+      Postorder traversal is used to delete the tree. Please see
+      <a
+        href="https://www.geeksforgeeks.org/write-a-c-program-to-delete-a-tree/"
+        >the question for deletion of tree</a
+      >for details. Postorder traversal is also useful to get the postfix
+      expression of an expression tree. Please see
+      <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation"
+        >http://en.wikipedia.org/wiki/Reverse_Polish_notation</a
+      >
+      to for the usage of postfix expression.<br />
+      Example: Postorder traversal for the above given figure is 4 5 2 3 1.
+    </p>
+    <p>{% tabs %} {% tab title=“Python” %}</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co"># Python program to for tree traversals</span></a>
 <a class="sourceLine" id="cb4-2" title="2"></a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="co"># A class that represents an individual node in a</span></a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="co"># Binary Tree</span></a>
@@ -184,10 +370,14 @@ Example: Postorder traversal for the above given figure is 4 5 2 3 1.</p>
 <a class="sourceLine" id="cb4-69" title="69">printInorder(root)</a>
 <a class="sourceLine" id="cb4-70" title="70"></a>
 <a class="sourceLine" id="cb4-71" title="71"><span class="bu">print</span> <span class="st">&quot;</span><span class="ch">\n</span><span class="st">Postorder traversal of binary tree is&quot;</span></a>
-<a class="sourceLine" id="cb4-72" title="72">printPostorder(root)</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Javascript” %}</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// javascript program for different tree traversals</span></a>
+<a class="sourceLine" id="cb4-72" title="72">printPostorder(root)</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Javascript” %}</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// javascript program for different tree traversals</span></a>
 <a class="sourceLine" id="cb5-2" title="2"></a>
 <a class="sourceLine" id="cb5-3" title="3"><span class="co">/* Class containing left and right child of current</span></a>
 <a class="sourceLine" id="cb5-4" title="4"><span class="co">node and key value*/</span></a>
@@ -264,7 +454,8 @@ Example: Postorder traversal for the above given figure is 4 5 2 3 1.</p>
 <a class="sourceLine" id="cb5-75" title="75"><span class="va">document</span>.<span class="at">write</span>(<span class="st">&#39;&lt;br/&gt;Postorder traversal of binary tree is &lt;br/&gt;&#39;</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb5-76" title="76"><span class="at">printPostorder</span>(root)<span class="op">;</span></a>
 <a class="sourceLine" id="cb5-77" title="77"></a>
-<a class="sourceLine" id="cb5-78" title="78"><span class="co">// This code is contributed by aashish1995</span></a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-</body>
+<a class="sourceLine" id="cb5-78" title="78"><span class="co">// This code is contributed by aashish1995</span></a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+  </body>
 </html>

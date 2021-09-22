@@ -1,146 +1,482 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="d4--module-04---tree-traversal">D4- Module 04 - Tree Traversal</h1>
-<h2 id="d4-module-04---python-iv">D4-Module 04 - Python IV</h2>
-<h3 id="objective-01---recall-the-time-and-space-complexity-the-strengths-and-weaknesses-and-basic-operations-of-a-static-array">Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a static array</h3>
-<h4 id="overview">Overview <a id="overview"></a></h4>
-<p>Python does not have a static array data type. However, lists are built on dynamic arrays. As you will see, dynamic arrays rely on an underlying static array to work. So while you won’t be creating and using this data structure directly, it is still essential to understand.</p>
-<p>A data structure is a <em>structure</em> that is designed for holding information in a particular way. A static array is a data structure that is designing for storing information sequentially (in order). For example, if you were to store the English alphabet in a static array, you would expect the “B” character to right next to both the “A” character and the “C” character. Additionally, every position within the static array is labeled with an index. So, if you wanted to access the first item in the static array, you would expect that item to have an index of 0. The second item would have an index of 1. The third item would have an index of 2. This pattern continues for the entire capacity of the static array.</p>
-<h4 id="follow-along">Follow Along <a id="follow-along"></a></h4>
-<p><strong>Time and Space Complexity</strong></p>
-<p><strong>Lookup</strong></p>
-<p>To look up an item by index in an array is constant time (<code>O(1</code>). If you have the specific index of an object in an array, the computations to find that item in memory are all constant time as well.</p>
-<p><strong>Append</strong></p>
-<p>Adding an item to an array is constant time (<code>O(1)</code>). We always have a reference point to the last thing in a static array, so we can insert an item after the current end.</p>
-<p><strong>Insert</strong></p>
-<p>Unless you are inserting an item at the end of the list, items must be shifted over to make room for the new information you add to the static array. It’s like if you had a chain of people stretched out, holding hands, in a line. The first person in the line is butted right up against a wall, and there is no room on one side of him. If someone wanted to join the end of the line, the people already in the line wouldn’t have to do anything (<code>O(1)</code>). However, if you wanted to join the beginning of the line, every single person would have to move over (away from the wall) (<code>O(n)</code>) so that you would have room to join. If you wanted to join the line somewhere in the middle, only the people to your one side would have to shift to make room for you. In the computer, this shifting is moving information from one address in memory to another. Each move takes time.</p>
-<p><strong>Delete</strong></p>
-<p>Just like insertions, deletions are only efficient (<code>O(1)</code>) when they are done at the end of the static array. If something is deleted from any other position in the array, the items have to be moved over, so there isn’t any empty space left. Remember, static arrays can be a good data structure because retrieving information from a specific index is fast. It is fast because we can ensure that information is consistently stored in sequence right next to each other. That way, we can always be confident that whatever information is at index 5 is the sixth item in the array. If we left empty spaces in the middle of our static array, we would no longer ensure that this was true.</p>
-<p><strong>Space</strong></p>
-<p>The space complexity of an array is linear (<code>O(n)</code>). Each item in the array will take up space in memory.</p>
-<p><strong>Strengths</strong></p>
-<p>Static arrays are great to use when you need a data structure to retrieve information from a specific index efficiently. This is because, as we explained earlier, accessing any specific index in a static array involves a simple mathematical computation (starting index + (size of each item * index)). This computation is done in <code>O(1)</code> time and is not affected by the static array size at all. If you need a data structure where you are likely only to append items (add them to the <strong>end</strong> of the list), a static array also works great. When you add a new item to the end of the list, nothing has to be shifted over or moved in memory, so that operation is very efficient (<code>O(1)</code>).</p>
-<p><strong>Weaknesses</strong></p>
-<p>There are situations where static arrays are not the best data structure to use for storing your information. What about if you don’t know how much information you need to store? Or if the amount of information you need to store is likely to fluctuate or change frequently. In this case, a static array is not good. The reason is that when you create a static array, you have to know and declare the size of that array. That way, your computer can separate off a chunk of memory that is the exact right size for storing that static array. If you run out of room in the static array, you can’t simply make it bigger; you have to create a brand new, bigger static array. You have to copy each item from the first static array into the newer, bigger one.</p>
-<p>Another reason that static arrays are not always the best choice to use for storing information is that they are inefficient unless you are performing operations at the end of the static array. They are inefficient because if you want to insert or delete something at the beginning (or the middle of the list), all the items to the right of that index must be moved over. If you delete something, everything has to be shifted over, so there isn’t an empty index in the middle of your data. If you insert something, all the items have to shift over to make room for the new item before inserting it.</p>
-<p><strong>What about array slicing?</strong></p>
-<p>You often encounter a scenario where you want to use a subset of items from an existing array. Array slicing is when you take a subset from an existing array and allocate a new array with just the items from the slice.</p>
-<p>In Python, the syntax looks like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">my_list[start_index:end_index]</a></code></pre></div>
-<p>The default start index is 0, and if you leave off the end_index, the slice will capture through the end of the list.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">my_list[:]  <span class="co"># This would be all of the items in my_list</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="d4--module-04---tree-traversal">D4- Module 04 - Tree Traversal</h1>
+    <h2 id="d4-module-04---python-iv">D4-Module 04 - Python IV</h2>
+    <h3
+      id="objective-01---recall-the-time-and-space-complexity-the-strengths-and-weaknesses-and-basic-operations-of-a-static-array"
+    >
+      Objective 01 - Recall the time and space complexity, the strengths and
+      weaknesses, and basic operations of a static array
+    </h3>
+    <h4 id="overview">Overview <a id="overview"></a></h4>
+    <p>
+      Python does not have a static array data type. However, lists are built on
+      dynamic arrays. As you will see, dynamic arrays rely on an underlying
+      static array to work. So while you won’t be creating and using this data
+      structure directly, it is still essential to understand.
+    </p>
+    <p>
+      A data structure is a <em>structure</em> that is designed for holding
+      information in a particular way. A static array is a data structure that
+      is designing for storing information sequentially (in order). For example,
+      if you were to store the English alphabet in a static array, you would
+      expect the “B” character to right next to both the “A” character and the
+      “C” character. Additionally, every position within the static array is
+      labeled with an index. So, if you wanted to access the first item in the
+      static array, you would expect that item to have an index of 0. The second
+      item would have an index of 1. The third item would have an index of 2.
+      This pattern continues for the entire capacity of the static array.
+    </p>
+    <h4 id="follow-along">Follow Along <a id="follow-along"></a></h4>
+    <p><strong>Time and Space Complexity</strong></p>
+    <p><strong>Lookup</strong></p>
+    <p>
+      To look up an item by index in an array is constant time
+      (<code>O(1</code>). If you have the specific index of an object in an
+      array, the computations to find that item in memory are all constant time
+      as well.
+    </p>
+    <p><strong>Append</strong></p>
+    <p>
+      Adding an item to an array is constant time (<code>O(1)</code>). We always
+      have a reference point to the last thing in a static array, so we can
+      insert an item after the current end.
+    </p>
+    <p><strong>Insert</strong></p>
+    <p>
+      Unless you are inserting an item at the end of the list, items must be
+      shifted over to make room for the new information you add to the static
+      array. It’s like if you had a chain of people stretched out, holding
+      hands, in a line. The first person in the line is butted right up against
+      a wall, and there is no room on one side of him. If someone wanted to join
+      the end of the line, the people already in the line wouldn’t have to do
+      anything (<code>O(1)</code>). However, if you wanted to join the beginning
+      of the line, every single person would have to move over (away from the
+      wall) (<code>O(n)</code>) so that you would have room to join. If you
+      wanted to join the line somewhere in the middle, only the people to your
+      one side would have to shift to make room for you. In the computer, this
+      shifting is moving information from one address in memory to another. Each
+      move takes time.
+    </p>
+    <p><strong>Delete</strong></p>
+    <p>
+      Just like insertions, deletions are only efficient (<code>O(1)</code>)
+      when they are done at the end of the static array. If something is deleted
+      from any other position in the array, the items have to be moved over, so
+      there isn’t any empty space left. Remember, static arrays can be a good
+      data structure because retrieving information from a specific index is
+      fast. It is fast because we can ensure that information is consistently
+      stored in sequence right next to each other. That way, we can always be
+      confident that whatever information is at index 5 is the sixth item in the
+      array. If we left empty spaces in the middle of our static array, we would
+      no longer ensure that this was true.
+    </p>
+    <p><strong>Space</strong></p>
+    <p>
+      The space complexity of an array is linear (<code>O(n)</code>). Each item
+      in the array will take up space in memory.
+    </p>
+    <p><strong>Strengths</strong></p>
+    <p>
+      Static arrays are great to use when you need a data structure to retrieve
+      information from a specific index efficiently. This is because, as we
+      explained earlier, accessing any specific index in a static array involves
+      a simple mathematical computation (starting index + (size of each item *
+      index)). This computation is done in <code>O(1)</code> time and is not
+      affected by the static array size at all. If you need a data structure
+      where you are likely only to append items (add them to the
+      <strong>end</strong> of the list), a static array also works great. When
+      you add a new item to the end of the list, nothing has to be shifted over
+      or moved in memory, so that operation is very efficient
+      (<code>O(1)</code>).
+    </p>
+    <p><strong>Weaknesses</strong></p>
+    <p>
+      There are situations where static arrays are not the best data structure
+      to use for storing your information. What about if you don’t know how much
+      information you need to store? Or if the amount of information you need to
+      store is likely to fluctuate or change frequently. In this case, a static
+      array is not good. The reason is that when you create a static array, you
+      have to know and declare the size of that array. That way, your computer
+      can separate off a chunk of memory that is the exact right size for
+      storing that static array. If you run out of room in the static array, you
+      can’t simply make it bigger; you have to create a brand new, bigger static
+      array. You have to copy each item from the first static array into the
+      newer, bigger one.
+    </p>
+    <p>
+      Another reason that static arrays are not always the best choice to use
+      for storing information is that they are inefficient unless you are
+      performing operations at the end of the static array. They are inefficient
+      because if you want to insert or delete something at the beginning (or the
+      middle of the list), all the items to the right of that index must be
+      moved over. If you delete something, everything has to be shifted over, so
+      there isn’t an empty index in the middle of your data. If you insert
+      something, all the items have to shift over to make room for the new item
+      before inserting it.
+    </p>
+    <p><strong>What about array slicing?</strong></p>
+    <p>
+      You often encounter a scenario where you want to use a subset of items
+      from an existing array. Array slicing is when you take a subset from an
+      existing array and allocate a new array with just the items from the
+      slice.
+    </p>
+    <p>In Python, the syntax looks like this:</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">my_list[start_index:end_index]</a></code></pre>
+    </div>
+    <p>
+      The default start index is 0, and if you leave off the end_index, the
+      slice will capture through the end of the list.
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">my_list[:]  <span class="co"># This would be all of the items in my_list</span></a>
 <a class="sourceLine" id="cb2-2" title="2">my_list[:<span class="dv">5</span>] <span class="co"># This would be the items from index 0 to 4</span></a>
-<a class="sourceLine" id="cb2-3" title="3">my_list[<span class="dv">5</span>:] <span class="co"># This would be the items from index 5 to the end of the list</span></a></code></pre></div>
-<p>You might be wondering, what is the time and space complexity of slicing an array? To understand the complexity, you need to know what is happening behind the scenes when you take a slice of an array. First, you are <em>actually allocating a new list</em>. Second, you copy all of the items in your slice from the original array into the newly allocated list. This means that you have an <code>O(n)</code> time cost (for the copying) and an <code>O(n)</code> space cost for the newly allocated list.</p>
-<p>You must keep these facts in mind and account for them when using a slice in your code. It’s not a free operation.</p>
-<h4 id="challenge">Challenge <a id="challenge"></a></h4>
-<ol type="1">
-<li>Draw out what happens to a static array when you insert an item at the beginning of the array.</li>
-<li>Draw out what happens to a static array when you delete an item from the array’s beginning.</li>
-</ol>
-<h4 id="additional-resources">Additional Resources <a id="additional-resources"></a></h4>
-<p>{% embed url=“https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/” %}</p>
-<p>{% embed url=“https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/” %}</p>
-<h3 id="objective-02---describe-the-differences-between-in-place-and-out-of-place-algorithms">Objective 02 - Describe the differences between in-place and out-of-place algorithms</h3>
-<h4 id="overview-1">Overview <a id="overview"></a></h4>
-<p><strong>In-Place</strong></p>
-<p>An in-place function modifies or destroys the state of the input data when it is run. For instance, if you write a function that squares every integer in an input list, an in-place version of this function would change the data in the list that was passed in. It would not create a new list and return the new list. In-place functions are more space-efficient because they don’t create new variables directly tied to the input size. However, to get that space-efficiency, you have to risk that the function’s user may end up changing state to the input accidentally.</p>
-<p>Imagine a scenario where you have an antique map that you are using to navigate on a hike. You end up needing directions, and when you come across another hiker, you ask them for help. The person helping you has two options. They can take your antique map, use a pen, and mark it up with their notations that will help you navigate. However, you most likely didn’t want those annotations to be on your map forever. The other option would be to find another piece of paper and have the person helping you write out their annotations on that. This way, your original antique map doesn’t have to be modified. However, now you have two maps that you have to carry around on your hike.</p>
-<p><strong>Out-of-Place</strong></p>
-<p>In contrast to in-place functions, out-of-place functions don’t modify or destroy the input state when they are run. Any changes done to the input are done to a copy of the input, not the original that was passed in. This is why they are less space-efficient. If you have a list of 1,000,000 items that you want to square, you first have to make a copy of that list. Now, you have two lists of 1,000,000 items. However, you avoid any side-effects that might be unintended.</p>
-<p><strong>Pass By Reference or Value</strong></p>
-<p>In Python, some function arguments are passed in by their actual value, and some are passed in as a reference to the object in memory. Primitive values like integers, floats, and strings are passed in by their actual value. So, if you call a function and pass in the integer <code>2</code> when you reference that value by the named parameter of the function, you can’t change <code>2</code> in memory. However, non-primitive objects like lists or dictionaries are passed in as references to that object in memory. So, if you call a function and pass in the dictionary <code>{"name": "Matt"}</code> when you reference that dictionary using the named parameter, you are changing the original object that was passed in. For objects that are passed in by reference, they must be copied to a new variable before they are modified if you want to avoid side effects.</p>
-<p><strong>When should I use an in-place function or algorithm?</strong></p>
-<p>It would be best if you always defaulted to using an out-of-place function. This is a safer default to avoid unintended side-effects in your program. However, there are scenarios that you might encounter where you need to be extremely space-efficient. In that case, you might have to use an in-place function to work within the particular space-constraints you’ve been given.</p>
-<h4 id="follow-along-1">Follow Along <a id="follow-along"></a></h4>
-<p>Here is an example of a function that triples each number in an input list. This function does this <em>in-place</em>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> append_exclamations(str_list):</a>
+<a class="sourceLine" id="cb2-3" title="3">my_list[<span class="dv">5</span>:] <span class="co"># This would be the items from index 5 to the end of the list</span></a></code></pre>
+    </div>
+    <p>
+      You might be wondering, what is the time and space complexity of slicing
+      an array? To understand the complexity, you need to know what is happening
+      behind the scenes when you take a slice of an array. First, you are
+      <em>actually allocating a new list</em>. Second, you copy all of the items
+      in your slice from the original array into the newly allocated list. This
+      means that you have an <code>O(n)</code> time cost (for the copying) and
+      an <code>O(n)</code> space cost for the newly allocated list.
+    </p>
+    <p>
+      You must keep these facts in mind and account for them when using a slice
+      in your code. It’s not a free operation.
+    </p>
+    <h4 id="challenge">Challenge <a id="challenge"></a></h4>
+    <ol type="1">
+      <li>
+        Draw out what happens to a static array when you insert an item at the
+        beginning of the array.
+      </li>
+      <li>
+        Draw out what happens to a static array when you delete an item from the
+        array’s beginning.
+      </li>
+    </ol>
+    <h4 id="additional-resources">
+      Additional Resources <a id="additional-resources"></a>
+    </h4>
+    <p>
+      {% embed
+      url=“https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/”
+      %}
+    </p>
+    <p>
+      {% embed
+      url=“https://www.pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/”
+      %}
+    </p>
+    <h3
+      id="objective-02---describe-the-differences-between-in-place-and-out-of-place-algorithms"
+    >
+      Objective 02 - Describe the differences between in-place and out-of-place
+      algorithms
+    </h3>
+    <h4 id="overview-1">Overview <a id="overview"></a></h4>
+    <p><strong>In-Place</strong></p>
+    <p>
+      An in-place function modifies or destroys the state of the input data when
+      it is run. For instance, if you write a function that squares every
+      integer in an input list, an in-place version of this function would
+      change the data in the list that was passed in. It would not create a new
+      list and return the new list. In-place functions are more space-efficient
+      because they don’t create new variables directly tied to the input size.
+      However, to get that space-efficiency, you have to risk that the
+      function’s user may end up changing state to the input accidentally.
+    </p>
+    <p>
+      Imagine a scenario where you have an antique map that you are using to
+      navigate on a hike. You end up needing directions, and when you come
+      across another hiker, you ask them for help. The person helping you has
+      two options. They can take your antique map, use a pen, and mark it up
+      with their notations that will help you navigate. However, you most likely
+      didn’t want those annotations to be on your map forever. The other option
+      would be to find another piece of paper and have the person helping you
+      write out their annotations on that. This way, your original antique map
+      doesn’t have to be modified. However, now you have two maps that you have
+      to carry around on your hike.
+    </p>
+    <p><strong>Out-of-Place</strong></p>
+    <p>
+      In contrast to in-place functions, out-of-place functions don’t modify or
+      destroy the input state when they are run. Any changes done to the input
+      are done to a copy of the input, not the original that was passed in. This
+      is why they are less space-efficient. If you have a list of 1,000,000
+      items that you want to square, you first have to make a copy of that list.
+      Now, you have two lists of 1,000,000 items. However, you avoid any
+      side-effects that might be unintended.
+    </p>
+    <p><strong>Pass By Reference or Value</strong></p>
+    <p>
+      In Python, some function arguments are passed in by their actual value,
+      and some are passed in as a reference to the object in memory. Primitive
+      values like integers, floats, and strings are passed in by their actual
+      value. So, if you call a function and pass in the integer
+      <code>2</code> when you reference that value by the named parameter of the
+      function, you can’t change <code>2</code> in memory. However,
+      non-primitive objects like lists or dictionaries are passed in as
+      references to that object in memory. So, if you call a function and pass
+      in the dictionary <code>{"name": "Matt"}</code> when you reference that
+      dictionary using the named parameter, you are changing the original object
+      that was passed in. For objects that are passed in by reference, they must
+      be copied to a new variable before they are modified if you want to avoid
+      side effects.
+    </p>
+    <p><strong>When should I use an in-place function or algorithm?</strong></p>
+    <p>
+      It would be best if you always defaulted to using an out-of-place
+      function. This is a safer default to avoid unintended side-effects in your
+      program. However, there are scenarios that you might encounter where you
+      need to be extremely space-efficient. In that case, you might have to use
+      an in-place function to work within the particular space-constraints
+      you’ve been given.
+    </p>
+    <h4 id="follow-along-1">Follow Along <a id="follow-along"></a></h4>
+    <p>
+      Here is an example of a function that triples each number in an input
+      list. This function does this <em>in-place</em>:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> append_exclamations(str_list):</a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="cf">for</span> idx, item <span class="kw">in</span> <span class="bu">enumerate</span>(str_list):</a>
-<a class="sourceLine" id="cb3-3" title="3">        str_list[idx] <span class="op">+=</span> <span class="st">&quot;!&quot;</span></a></code></pre></div>
-<p>Now, since this is an in-place function, watch what happens when we use it:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&quot;Matt&quot;</span>, <span class="st">&quot;Beej&quot;</span>, <span class="st">&quot;Sean&quot;</span>]</a>
+<a class="sourceLine" id="cb3-3" title="3">        str_list[idx] <span class="op">+=</span> <span class="st">&quot;!&quot;</span></a></code></pre>
+    </div>
+    <p>
+      Now, since this is an in-place function, watch what happens when we use
+      it:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&quot;Matt&quot;</span>, <span class="st">&quot;Beej&quot;</span>, <span class="st">&quot;Sean&quot;</span>]</a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="op">&gt;&gt;&gt;</span> append_exclamations(my_list)</a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="op">&gt;&gt;&gt;</span> my_list</a>
-<a class="sourceLine" id="cb4-4" title="4">[<span class="st">&#39;Matt!&#39;</span>, <span class="st">&#39;Beej!&#39;</span>, <span class="st">&#39;Sean!&#39;</span>]</a></code></pre></div>
-<p><code>my_list</code> was modified when I called the function, and the function only returned the default return value of <code>None</code>.</p>
-<p>Let’s now write a similar function, but this time we will do it <em>out-of-place:</em></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> append_exclamations(str_list):</a>
+<a class="sourceLine" id="cb4-4" title="4">[<span class="st">&#39;Matt!&#39;</span>, <span class="st">&#39;Beej!&#39;</span>, <span class="st">&#39;Sean!&#39;</span>]</a></code></pre>
+    </div>
+    <p>
+      <code>my_list</code> was modified when I called the function, and the
+      function only returned the default return value of <code>None</code>.
+    </p>
+    <p>
+      Let’s now write a similar function, but this time we will do it
+      <em>out-of-place:</em>
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> append_exclamations(str_list):</a>
 <a class="sourceLine" id="cb5-2" title="2">    <span class="co"># Create a new empty list that has the same length as the input list</span></a>
 <a class="sourceLine" id="cb5-3" title="3">    loud_list <span class="op">=</span> [<span class="va">None</span>] <span class="op">*</span> <span class="bu">len</span>(str_list)</a>
 <a class="sourceLine" id="cb5-4" title="4">    <span class="cf">for</span> idx, item <span class="kw">in</span> <span class="bu">enumerate</span>(str_list):</a>
@@ -148,55 +484,180 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-6" title="6">        loud_list[idx] <span class="op">=</span> item <span class="op">+</span> <span class="st">&quot;!&quot;</span></a>
 <a class="sourceLine" id="cb5-7" title="7">    <span class="co"># Since we didn&#39;t modify the input list, we need to return the new list to</span></a>
 <a class="sourceLine" id="cb5-8" title="8">    <span class="co"># the function caller</span></a>
-<a class="sourceLine" id="cb5-9" title="9">    <span class="cf">return</span> loud_list</a></code></pre></div>
-<p>Look what happens when we use this function:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&quot;Matt&quot;</span>, <span class="st">&quot;Beej&quot;</span>, <span class="st">&quot;Sean&quot;</span>]</a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="cf">return</span> loud_list</a></code></pre>
+    </div>
+    <p>Look what happens when we use this function:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="op">&gt;&gt;&gt;</span> my_list <span class="op">=</span> [<span class="st">&quot;Matt&quot;</span>, <span class="st">&quot;Beej&quot;</span>, <span class="st">&quot;Sean&quot;</span>]</a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="op">&gt;&gt;&gt;</span> my_new_louder_list <span class="op">=</span> append_exclamations(my_list)</a>
 <a class="sourceLine" id="cb6-3" title="3"><span class="op">&gt;&gt;&gt;</span> my_list</a>
 <a class="sourceLine" id="cb6-4" title="4">[<span class="st">&#39;Matt&#39;</span>, <span class="st">&#39;Beej&#39;</span>, <span class="st">&#39;Sean&#39;</span>]</a>
 <a class="sourceLine" id="cb6-5" title="5"><span class="op">&gt;&gt;&gt;</span> my_new_louder_list</a>
 <a class="sourceLine" id="cb6-6" title="6">[<span class="st">&#39;Matt!&#39;</span>, <span class="st">&#39;Beej!&#39;</span>, <span class="st">&#39;Sean!&#39;</span>]</a>
-<a class="sourceLine" id="cb6-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre></div>
-<p>Notice how we had to store the returned list in a new variable. Also, notice that it didn’t modify the list that we passed in when we called the function.</p>
-<h4 id="challenge-1">Challenge <a id="challenge"></a></h4>
-<ol type="1">
-<li>In your own words, describe the difference between an in-place algorithm and an out-of-place algorithm.</li>
-<li>In your own words, explain when it is an excellent choice to use an in-place algorithm.</li>
-</ol>
-<h4 id="additional-resources-1">Additional Resources <a id="additional-resources"></a></h4>
-<p>{% embed url=“https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/” %}</p>
-<p><img src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png" /></p>
-<h3 id="objective-03---recall-the-time-and-space-complexity-the-strengths-and-weaknesses-and-basic-operations-of-a-dynamic-array">Objective 03 - Recall the time and space complexity, the strengths and weaknesses, and basic operations of a dynamic array</h3>
-<h4 id="overview-2">Overview <a id="overview"></a></h4>
-<p>Remember how we said you had to know how much information you were going to store when you created a static array? Well, with a dynamic array, you don’t have to know. You don’t have to declare a size when you instantiate a dynamic array. That makes it better in scenarios where the amount of information you need to store is unknown or is likely to fluctuate.</p>
-<p><strong>Time and Space Complexity</strong></p>
-<p><strong>Lookup</strong></p>
-<p>To look up an item by index in an array is constant time (<code>O(1</code>). If you have the specific index of an item in an array, the computations to find that item in memory are all constant time as well.</p>
-<p><strong>Append</strong></p>
-<p>Adding an item to an array is constant time (<code>O(1)</code>) in the average case. However, in the worst case, the cost is <code>O(n)</code> (this will be explained in more detail below).</p>
-<p><strong>Insert</strong></p>
-<p>In the worst case, inserting an item is linear time (<code>O(n)</code>). When you insert into an array, all the items — starting at the index we are inserting into — have to be shifted one index. These items have to be “moved over” to make room for the new item being inserted. The worst-case scenario is inserting at the 0th index, and every item in the array has to shift over.</p>
-<p><strong>Delete</strong></p>
-<p>In the worst case, deleting an item is linear time (<code>O(n)</code>). For any item you delete (unless it is the last item), all of the items after that index have to be shifted over to fill the now blank spot in the array. Remember, arrays store data in sequential order, so if we delete an item, we cannot just leave that space blank. If we left the space blank, it would ruin the quick lookup time. To have a fast lookup time, we need to be able to rely on the distance from the start of the array to whatever index we are trying to access.</p>
-<p><strong>Space</strong></p>
-<p>The space complexity of an array is linear (<code>O(n)</code>). Each item in the array will take up space in memory.</p>
-<p><strong>Strengths</strong></p>
-<p>Again, probably the dynamic array’s biggest strength is not having to know or worry about the size of the data structure. It can grow to accommodate your data as needed. And, you don’t have to manage this growth; the data structure itself grows when necessary. Dynamic arrays also have some of the same strengths as a static array. They also have efficient lookups (<code>O(1)</code>) when you have a specific index that you want to retrieve from.</p>
-<p><strong>Weaknesses</strong></p>
-<p>The main weakness of the dynamic array is related to its strength. To not have to worry about or manage the array’s size, when the array runs out of room, it has to grow to accommodate more items. So, let’s say your dynamic array is currently set up to store ten items. If it’s full and you try to add an 11th item, the data structure can’t just assume that there is a spot available right after the 10th item. It actually creates a new, bigger array and then copies all of the first ten items into the new array, and finally, it adds the 11th item. We will talk a bit more about how this works below. Additionally, dynamic arrays have the same weaknesses as static arrays, slow insertions and deletions (<code>O(n)</code>).</p>
-<h4 id="follow-along-2">Follow Along <a id="follow-along"></a></h4>
-<p><strong>Doubling Appends</strong></p>
-<p>Underneath the hood of a dynamic array is a static array. When you create a dynamic array, it is a static array that keeps track of the starting index, the index of the last item that it stores, and the index for the last slot in its capacity. This brings up an important point. An array has a size and a capacity. An array’s size is how many items it is storing at the moment. Its capacity is how many items it could store before it runs out of room.</p>
-<p>So, let’s say that your dynamic array instantiates with an underlying static array with a capacity of 10 and a size of 0 when you create it. Then, you add ten items to the array. Now, it has a capacity of 10 and a size of 10. If you now go to append an 11th item to the array, you’ve run out of capacity. Here is where the <em>dynamic</em> of the dynamic array comes into play. The data structure will create a new underlying static array with a capacity twice the size of the original underlying static array. It will then copy the ten original items into the new array and finally add the 11th item. The cost of copying the original items into the new array is <code>O(n)</code>. So, when we say that, in the worst-case, an append on a dynamic array has a time-complexity of <code>O(n)</code>, this is why. However, all the other appends still have a time-complexity of <code>O(1)</code>. So, in the average case append, the time-complexity is still efficient. Also, consider that as the array’s capacity keeps doubling, the doublings will occur less and less frequently.</p>
-<h4 id="challenge-2">Challenge <a id="challenge"></a></h4>
-<ol type="1">
-<li>What type in Python is a dynamic array?</li>
-<li>In your own words, explain why the worst-case time cost of appending to a dynamic array is <code>O(n)</code>.</li>
-<li>What is the difference between the size of a dynamic array and the capacity of a dynamic array?</li>
-</ol>
-<h4 id="additional-resources-2">Additional Resources <a id="additional-resources"></a></h4>
-<p>{% embed url=“https://www.youtube.com/watch?v=qTb1sZX74K0” caption="" %}</p>
-<h3 id="array-and-string-manipulation">Array and String Manipulation <a id="array-and-string-manipulation"></a></h3>
-<p>This module project requires you to answer some multiple-choice questions related to the module’s objectives. Additionally, you must continue developing your problem-solving skills by completing coding challenges related to its content.</p>
-</body>
+<a class="sourceLine" id="cb6-7" title="7"><span class="op">&gt;&gt;&gt;</span></a></code></pre>
+    </div>
+    <p>
+      Notice how we had to store the returned list in a new variable. Also,
+      notice that it didn’t modify the list that we passed in when we called the
+      function.
+    </p>
+    <h4 id="challenge-1">Challenge <a id="challenge"></a></h4>
+    <ol type="1">
+      <li>
+        In your own words, describe the difference between an in-place algorithm
+        and an out-of-place algorithm.
+      </li>
+      <li>
+        In your own words, explain when it is an excellent choice to use an
+        in-place algorithm.
+      </li>
+    </ol>
+    <h4 id="additional-resources-1">
+      Additional Resources <a id="additional-resources"></a>
+    </h4>
+    <p>
+      {% embed
+      url=“https://www.techiedelight.com/in-place-vs-out-of-place-algorithms/”
+      %}
+    </p>
+    <p>
+      <img
+        src="../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%286%29.png"
+      />
+    </p>
+    <h3
+      id="objective-03---recall-the-time-and-space-complexity-the-strengths-and-weaknesses-and-basic-operations-of-a-dynamic-array"
+    >
+      Objective 03 - Recall the time and space complexity, the strengths and
+      weaknesses, and basic operations of a dynamic array
+    </h3>
+    <h4 id="overview-2">Overview <a id="overview"></a></h4>
+    <p>
+      Remember how we said you had to know how much information you were going
+      to store when you created a static array? Well, with a dynamic array, you
+      don’t have to know. You don’t have to declare a size when you instantiate
+      a dynamic array. That makes it better in scenarios where the amount of
+      information you need to store is unknown or is likely to fluctuate.
+    </p>
+    <p><strong>Time and Space Complexity</strong></p>
+    <p><strong>Lookup</strong></p>
+    <p>
+      To look up an item by index in an array is constant time
+      (<code>O(1</code>). If you have the specific index of an item in an array,
+      the computations to find that item in memory are all constant time as
+      well.
+    </p>
+    <p><strong>Append</strong></p>
+    <p>
+      Adding an item to an array is constant time (<code>O(1)</code>) in the
+      average case. However, in the worst case, the cost is
+      <code>O(n)</code> (this will be explained in more detail below).
+    </p>
+    <p><strong>Insert</strong></p>
+    <p>
+      In the worst case, inserting an item is linear time (<code>O(n)</code>).
+      When you insert into an array, all the items — starting at the index we
+      are inserting into — have to be shifted one index. These items have to be
+      “moved over” to make room for the new item being inserted. The worst-case
+      scenario is inserting at the 0th index, and every item in the array has to
+      shift over.
+    </p>
+    <p><strong>Delete</strong></p>
+    <p>
+      In the worst case, deleting an item is linear time (<code>O(n)</code>).
+      For any item you delete (unless it is the last item), all of the items
+      after that index have to be shifted over to fill the now blank spot in the
+      array. Remember, arrays store data in sequential order, so if we delete an
+      item, we cannot just leave that space blank. If we left the space blank,
+      it would ruin the quick lookup time. To have a fast lookup time, we need
+      to be able to rely on the distance from the start of the array to whatever
+      index we are trying to access.
+    </p>
+    <p><strong>Space</strong></p>
+    <p>
+      The space complexity of an array is linear (<code>O(n)</code>). Each item
+      in the array will take up space in memory.
+    </p>
+    <p><strong>Strengths</strong></p>
+    <p>
+      Again, probably the dynamic array’s biggest strength is not having to know
+      or worry about the size of the data structure. It can grow to accommodate
+      your data as needed. And, you don’t have to manage this growth; the data
+      structure itself grows when necessary. Dynamic arrays also have some of
+      the same strengths as a static array. They also have efficient lookups
+      (<code>O(1)</code>) when you have a specific index that you want to
+      retrieve from.
+    </p>
+    <p><strong>Weaknesses</strong></p>
+    <p>
+      The main weakness of the dynamic array is related to its strength. To not
+      have to worry about or manage the array’s size, when the array runs out of
+      room, it has to grow to accommodate more items. So, let’s say your dynamic
+      array is currently set up to store ten items. If it’s full and you try to
+      add an 11th item, the data structure can’t just assume that there is a
+      spot available right after the 10th item. It actually creates a new,
+      bigger array and then copies all of the first ten items into the new
+      array, and finally, it adds the 11th item. We will talk a bit more about
+      how this works below. Additionally, dynamic arrays have the same
+      weaknesses as static arrays, slow insertions and deletions
+      (<code>O(n)</code>).
+    </p>
+    <h4 id="follow-along-2">Follow Along <a id="follow-along"></a></h4>
+    <p><strong>Doubling Appends</strong></p>
+    <p>
+      Underneath the hood of a dynamic array is a static array. When you create
+      a dynamic array, it is a static array that keeps track of the starting
+      index, the index of the last item that it stores, and the index for the
+      last slot in its capacity. This brings up an important point. An array has
+      a size and a capacity. An array’s size is how many items it is storing at
+      the moment. Its capacity is how many items it could store before it runs
+      out of room.
+    </p>
+    <p>
+      So, let’s say that your dynamic array instantiates with an underlying
+      static array with a capacity of 10 and a size of 0 when you create it.
+      Then, you add ten items to the array. Now, it has a capacity of 10 and a
+      size of 10. If you now go to append an 11th item to the array, you’ve run
+      out of capacity. Here is where the <em>dynamic</em> of the dynamic array
+      comes into play. The data structure will create a new underlying static
+      array with a capacity twice the size of the original underlying static
+      array. It will then copy the ten original items into the new array and
+      finally add the 11th item. The cost of copying the original items into the
+      new array is <code>O(n)</code>. So, when we say that, in the worst-case,
+      an append on a dynamic array has a time-complexity of <code>O(n)</code>,
+      this is why. However, all the other appends still have a time-complexity
+      of <code>O(1)</code>. So, in the average case append, the time-complexity
+      is still efficient. Also, consider that as the array’s capacity keeps
+      doubling, the doublings will occur less and less frequently.
+    </p>
+    <h4 id="challenge-2">Challenge <a id="challenge"></a></h4>
+    <ol type="1">
+      <li>What type in Python is a dynamic array?</li>
+      <li>
+        In your own words, explain why the worst-case time cost of appending to
+        a dynamic array is <code>O(n)</code>.
+      </li>
+      <li>
+        What is the difference between the size of a dynamic array and the
+        capacity of a dynamic array?
+      </li>
+    </ol>
+    <h4 id="additional-resources-2">
+      Additional Resources <a id="additional-resources"></a>
+    </h4>
+    <p>
+      {% embed url=“https://www.youtube.com/watch?v=qTb1sZX74K0” caption="" %}
+    </p>
+    <h3 id="array-and-string-manipulation">
+      Array and String Manipulation <a id="array-and-string-manipulation"></a>
+    </h3>
+    <p>
+      This module project requires you to answer some multiple-choice questions
+      related to the module’s objectives. Additionally, you must continue
+      developing your problem-solving skills by completing coding challenges
+      related to its content.
+    </p>
+  </body>
 </html>

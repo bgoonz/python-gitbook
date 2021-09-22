@@ -1,5 +1,4 @@
-Tree
-====
+# Tree
 
 {% page-ref page=“in-order-traversal.md” %}
 
@@ -31,10 +30,10 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 > **Binary search trees have four strict rules:**
 >
-> -   The left subtree contains only nodes with elements lesser than the root.
-> -   The right subtree contains only nodes with elements greater than the root.
-> -   Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
-> -   There can be no duplicate nodes, i.e. no two nodes can have the same value.
+> - The left subtree contains only nodes with elements lesser than the root.
+> - The right subtree contains only nodes with elements greater than the root.
+> - Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
+> - There can be no duplicate nodes, i.e. no two nodes can have the same value.
 
 {% page-ref page=“../array/” %}
 

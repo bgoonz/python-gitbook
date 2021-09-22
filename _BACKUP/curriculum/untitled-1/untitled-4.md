@@ -1,12 +1,10 @@
-D2-Graphs 2
-===========
+# D2-Graphs 2
 
 {% embed url=“https://gist.github.com/bgoonz/4dc35438f8c293cf68e81c0d73ddfe1a” %}
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 01 - Represent a breadth-first-search of a graph in pseudo-code and recall typical applications for its use
----------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Represent a breadth-first-search of a graph in pseudo-code and recall typical applications for its use
 
 ### Overview <span id="overview"></span>
 
@@ -22,19 +20,19 @@ We followed the edges represented with thicker black arrows. We did not follow t
 
 The exact order will vary depending on which branches get taken first and which vertex is the starting vertex.
 
-*Note: it’s essential to know the distinction between a breadth-first search and a breadth-first traversal. A breadth-first traversal is when you visit each vertex in the breadth-first order and do something during the traversal. A breadth-first search is when you search through vertexes in the breadth-first order until you find the target vertex. A breadth-first search usually returns the shortest path from the starting vertex to the target vertex once the target is found.*
+_Note: it’s essential to know the distinction between a breadth-first search and a breadth-first traversal. A breadth-first traversal is when you visit each vertex in the breadth-first order and do something during the traversal. A breadth-first search is when you search through vertexes in the breadth-first order until you find the target vertex. A breadth-first search usually returns the shortest path from the starting vertex to the target vertex once the target is found._
 
 #### Applications of BFS <span id="applications-of-bfs"></span>
 
--   Pathfinding, Routing
--   Find neighbor nodes in a P2P network like BitTorrent
--   Web crawlers
--   Finding people `n` connections away on a social network
--   Find neighboring locations on the graph
--   Broadcasting in a network
--   Cycle detection in a graph
--   Finding [Connected Components (Links to an external site.)](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)
--   Solving several theoretical graph problems
+- Pathfinding, Routing
+- Find neighbor nodes in a P2P network like BitTorrent
+- Web crawlers
+- Finding people `n` connections away on a social network
+- Find neighboring locations on the graph
+- Broadcasting in a network
+- Cycle detection in a graph
+- Finding [Connected Components (Links to an external site.)](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)
+- Solving several theoretical graph problems
 
 #### Coloring Vertexes <span id="coloring-vertexes"></span>
 
@@ -46,7 +44,7 @@ Unvisited verts are white, verts whose neighbors are being explored are gray, an
 
 In a BFS, it’s useful to track which nodes we still need to explore. For example, in the diagram above, when we get to node 2, we know that we also need to explore nodes 3 and 4.
 
-We can track that by adding neighbors to a *queue* (which remember is first in, first out), and then explore the verts in the queue one by one.
+We can track that by adding neighbors to a _queue_ (which remember is first in, first out), and then explore the verts in the queue one by one.
 
 ### Follow Along <span id="follow-along"></span>
 
@@ -80,9 +78,9 @@ The condition we check at the outset of each while loop is if the queue is **not
 
 Then, we loop through each of that vert’s neighbors and:
 
--   We check if it is unvisited (the color white).
--   If it is unvisited, we mark it as gray (meaning we will explore its neighbors).
--   We enqueue the vert.
+- We check if it is unvisited (the color white).
+- If it is unvisited, we mark it as gray (meaning we will explore its neighbors).
+- We enqueue the vert.
 
 Next, we dequeue the current vert we’ve been exploring and mark that vert as black (marking it as visited).
 
@@ -118,16 +116,15 @@ On your own, complete the following tasks:
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   <https://brilliant.org/wiki/breadth-first-search-bfs/>
+- <https://brilliant.org/wiki/breadth-first-search-bfs/>
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 02 - Represent a depth-first-search of a graph in pseudo-code and recall typical applications for its use
--------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Represent a depth-first-search of a graph in pseudo-code and recall typical applications for its use
 
 ### Overview <span id="overview"></span>
 
-Another method we can use when searching a graph is a **depth-first search** (DFS). This searching algorithm *“dives”* *“down”* the graph as far as it can before backtracking and exploring another branch.
+Another method we can use when searching a graph is a **depth-first search** (DFS). This searching algorithm _“dives”_ _“down”_ the graph as far as it can before backtracking and exploring another branch.
 
 The algorithm never attempts to explore a vert it has already explored or is exploring.
 
@@ -141,15 +138,15 @@ The exact order will vary depending on which branches get taken first and which 
 
 #### Applications of DFS <span id="applications-of-dfs"></span>
 
-DFS is often the preferred method or exploring a graph *if we want to ensure we visit every node in the graph*. For example, let’s say that we have a graph representing all the friendships in the entire world. We want to find a path between two known people, `Andy` and `Sarah`. If we used a depth-first search in this scenario, we could end up exceptionally far away from `Andy` while still not finding a path to `Sarah`. Using a DFS, we will eventually find the path, but it won’t find the shortest route, and it will also likely take a long time.
+DFS is often the preferred method or exploring a graph _if we want to ensure we visit every node in the graph_. For example, let’s say that we have a graph representing all the friendships in the entire world. We want to find a path between two known people, `Andy` and `Sarah`. If we used a depth-first search in this scenario, we could end up exceptionally far away from `Andy` while still not finding a path to `Sarah`. Using a DFS, we will eventually find the path, but it won’t find the shortest route, and it will also likely take a long time.
 
-So, this is an example of where a DFS *would not work well*. What about a genuine use case for DFS. Here are a few examples:
+So, this is an example of where a DFS _would not work well_. What about a genuine use case for DFS. Here are a few examples:
 
--   Finding [Minimum Spanning Trees (Links to an external site.)](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
--   Pathfinding
--   Detecting cycles in graphs
--   [Topological sorting (Links to an external site.)](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
--   Solving and generating mazes
+- Finding [Minimum Spanning Trees (Links to an external site.)](https://en.wikipedia.org/wiki/Minimum_spanning_tree) of weighted graphs
+- Pathfinding
+- Detecting cycles in graphs
+- [Topological sorting (Links to an external site.)](https://en.wikipedia.org/wiki/Topological_sorting), useful for scheduling sequences of dependent jobs
+- Solving and generating mazes
 
 #### Coloring Vertexes <span id="coloring-vertexes"></span>
 
@@ -204,33 +201,15 @@ On your own, complete the following tasks:
 1.  Please spend a few minutes researching to find a unique use-case of a depth-first search that we did not mention in the list above.
 2.  Using the graph represented below, draw a picture of the graph and label each of the verts to show the correct vertex visitation order for a depth-first-search starting with vertex `"I"`.
 
-    class Graph:
-        def __init__(self):
-            self.vertices = {
-                                "A": {"B", "C", "D"},
-                                "B": {},
-                                "C": {"E", "F"},
-                                "D": {"G"},
-                                "E": {"G"},
-                                "F": {"J"},
-                                "G": {},
-                                "H": {"C", "J", "K"},
-                                "I": {"D", "E", "H"},
-                                "J": {"L"},
-                                "K": {"C"},
-                                "L": {"M"},
-                                "M": {},
-                                "N": {"H", "K", "M"}
-                            }
+    class Graph: def **init**(self): self.vertices = { "A": {"B", "C", "D"}, "B": {}, "C": {"E", "F"}, "D": {"G"}, "E": {"G"}, "F": {"J"}, "G": {}, "H": {"C", "J", "K"}, "I": {"D", "E", "H"}, "J": {"L"}, "K": {"C"}, "L": {"M"}, "M": {}, "N": {"H", "K", "M"} }
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://brilliant.org/wiki/depth-first-search-dfs/ (Links to an external site.)](https://brilliant.org/wiki/depth-first-search-dfs/)
+- [https://brilliant.org/wiki/depth-first-search-dfs/ (Links to an external site.)](https://brilliant.org/wiki/depth-first-search-dfs/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 03 - Implement a breadth-first search on a graph
-----------------------------------------------------------
+## Objective 03 - Implement a breadth-first search on a graph
 
 ### Overview <span id="overview"></span>
 
@@ -331,16 +310,15 @@ Now, we will add a `breadth_first_search` method to our `Graph` class. One of th
 ### Challenge <span id="challenge"></span>
 
 1.  What is time complexity in Big O notation of a breadth-first search on a graph with `V` vertices and `E` edges?
-2.  Which method will find the ***shortest*** path between a starting point and any other reachable node? A breadth-first search or a depth-first search?
+2.  Which method will find the **_shortest_** path between a starting point and any other reachable node? A breadth-first search or a depth-first search?
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/ (Links to an external site.)](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+- [https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/ (Links to an external site.)](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 04 - Implement a depth-first search on a graph
---------------------------------------------------------
+## Objective 04 - Implement a depth-first search on a graph
 
 ### Overview <span id="overview"></span>
 
@@ -439,6 +417,6 @@ Now, we will add a `depth_first_search` method to our `Graph` class. One of the 
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/ (Links to an external site.)](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
+- [https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/ (Links to an external site.)](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)

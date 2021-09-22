@@ -1,5 +1,4 @@
-Recursive Sorting
-=================
+# Recursive Sorting
 
     import random
 

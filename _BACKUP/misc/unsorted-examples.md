@@ -1,5 +1,4 @@
-Unsorted Examples
-=================
+# Unsorted Examples
 
 ### Design your implementation of the linked list. You can choose to use the singly linked list or the doubly linked list.
 
@@ -15,7 +14,7 @@ Unsorted Examples
 
 ### Assume all nodes in the linked list are 0-indexed.
 
-*Implement these functions in your linked list class:*
+_Implement these functions in your linked list class:_
 
 {% embed url=“https://leetcode.com/problems/design-linked-list” %}
 
@@ -140,7 +139,7 @@ So, we have converted the string to lowercase, now traverse through the string a
 
 If the character is present in the list, then we simply increment the count variable by 1 otherwise continue to the loop without incrementing the count variable.
 
-***Read =&gt;*** [***Check if a number is greater than all those numbers in the list***](https://codezup.com//check-number-greater-than-numbers-list-python/)
+**_Read =&gt;_** [**_Check if a number is greater than all those numbers in the list_**](https://codezup.com//check-number-greater-than-numbers-list-python/)
 
 And at last, after traversing through the string, return the count variable back to the function call.
 
@@ -212,7 +211,7 @@ Now create a while loop that loops till the number which we received as an argum
 
 So the logic behind converting is that first in each iteration, we need to get the last digit of Number either 1 or 0 and then multiply that last digit with the power of 2 and counter i.
 
-***Read =&gt;*** [***Python Program to Calculate LCM of Two Numbers***](https://codezup.com/python-program-calculate-lcm-numbers/)
+**_Read =&gt;_** [**_Python Program to Calculate LCM of Two Numbers_**](https://codezup.com/python-program-calculate-lcm-numbers/)
 
 And at last, we divide the number by 10 and assign the same number back to binary to reduce it to 0.
 
@@ -236,7 +235,6 @@ Let’s create the main method which is going to ask for user input for the Bina
 
 **Code**
 
-
     def binaryToDecimal(binary):
         binary1 = binary
         decimal, i  = 0, 0
@@ -259,7 +257,7 @@ Let’s create the main method which is going to ask for user input for the Bina
 
 ### Fibonacci Series With Recursion
 
-Let’s create a new Function named fibonacci\_with\_recursion() which is going to find the Fibonacci Series till the n-th term by calling it recursively.
+Let’s create a new Function named fibonacci_with_recursion() which is going to find the Fibonacci Series till the n-th term by calling it recursively.
 
 So the base condition will be if the number is less than or equal to 1, then simply return the number.
 
@@ -273,9 +271,9 @@ Otherwise, return the callback to Fibonacci function again with decrement value 
 
 #### Fibonacci Series Without Recursion
 
-Let’s create a new Function named fibonacci\_without\_recursion() which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
+Let’s create a new Function named fibonacci_without_recursion() which is going to find the Fibonacci Series till the n-th term by using FOR Loops.
 
-***Read =&gt;*** [***Program to check whether the Number is Prime or Not***](https://codezup.com/program-check-whether-number-prime-not-python/)
+**_Read =&gt;_** [**_Program to check whether the Number is Prime or Not_**](https://codezup.com/program-check-whether-number-prime-not-python/)
 
 So, the base condition for this function is if the number is equal to 0, then we return output as 0 because of how we calculate the Series if the number is 0.
 

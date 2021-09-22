@@ -1,10 +1,8 @@
-Earliest Ancestor
-=================
+# Earliest Ancestor
 
 {% file src=“../../../.gitbook/assets/ancestor.cpython-38 (1).pyc” %}
 
-Earliest Ancestor
------------------
+## Earliest Ancestor
 
 This is a take-home coding challenge from a top tech company. The spec is provided verbatim.
 
@@ -42,11 +40,11 @@ Write a function that, given the dataset and the ID of an individual in the data
 
 Clarifications:
 
--   The input will not be empty.
--   There are no cycles in the input.
--   There are no “repeated” ancestors – if two individuals are connected, it is by exactly one path.
--   IDs will always be positive integers.
--   A parent may have any number of children.
+- The input will not be empty.
+- There are no cycles in the input.
+- There are no “repeated” ancestors – if two individuals are connected, it is by exactly one path.
+- IDs will always be positive integers.
+- A parent may have any number of children.
 
 {% tabs %} {% tab title=“Ancestor.py” %}
 
@@ -121,7 +119,7 @@ Clarifications:
 
 {% endtab %}
 
-{% tab title=“Specs.py” %} import unittest from ancestor import earliest\_ancestor
+{% tab title=“Specs.py” %} import unittest from ancestor import earliest_ancestor
 
 class Test(unittest.TestCase): """ 10 / 1 2 4 11 / / / 3 5 8 / 6 7 9 """
 

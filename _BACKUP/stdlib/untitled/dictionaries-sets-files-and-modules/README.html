@@ -1,106 +1,232 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="dictionaries-sets-files-and-modules">Dictionaries, sets, files, and modules</h1>
-<h2 id="dictionaries-sets-files-and-modules-1">6. Dictionaries, sets, files, and modules</h2>
-<p><img src="../../../.gitbook/assets/image%20%289%29.png" /></p>
-<p><img src="../../../.gitbook/assets/image%20%2810%29.png" /></p>
-<p><img src="../../../.gitbook/assets/image%20%2811%29.png" /></p>
-<h2 id="dictionaries">Dictionaries</h2>
-<p><strong>Dictionaries</strong> are a compound type different from the sequence types we studied in the <a href="https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter">Strings, lists, and tuples</a> chapter. They are Python’s built-in <strong>mapping type</strong>. They map <strong>keys</strong>, which can be any immutable type, to values, which can be any type, just like the values of a list or tuple.</p>
-<p>Note</p>
-<p>Other names for dictionaries in computer science include <em>maps</em>, <em>symbol tables</em>, and <a href="http://en.wikipedia.org/wiki/Associative_array">associative arrays</a>. The pairs of values are referred to as <em>name-value</em>, <em>key-value</em>, <em>field-value</em>, or <a href="http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair">attribute-value</a> pairs.</p>
-<p>As an example, we will create a dictionary to translate English words into Spanish. For this dictionary, the keys are strings.</p>
-<p>One way to create a dictionary is to start with the empty dictionary and add <strong>key-value pairs</strong>. The empty dictionary is denoted with a pair of <strong>curly braces</strong>, <code>{}</code>:</p>
-<pre class="text"><code>&gt;&gt;&gt; eng2sp = {}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="dictionaries-sets-files-and-modules">
+      Dictionaries, sets, files, and modules
+    </h1>
+    <h2 id="dictionaries-sets-files-and-modules-1">
+      6. Dictionaries, sets, files, and modules
+    </h2>
+    <p><img src="../../../.gitbook/assets/image%20%289%29.png" /></p>
+    <p><img src="../../../.gitbook/assets/image%20%2810%29.png" /></p>
+    <p><img src="../../../.gitbook/assets/image%20%2811%29.png" /></p>
+    <h2 id="dictionaries">Dictionaries</h2>
+    <p>
+      <strong>Dictionaries</strong> are a compound type different from the
+      sequence types we studied in the
+      <a
+        href="https://www.openbookproject.net/books/bpp4awd/ch03.html#strings-lists-n-tuples-chapter"
+        >Strings, lists, and tuples</a
+      >
+      chapter. They are Python’s built-in <strong>mapping type</strong>. They
+      map <strong>keys</strong>, which can be any immutable type, to values,
+      which can be any type, just like the values of a list or tuple.
+    </p>
+    <p>Note</p>
+    <p>
+      Other names for dictionaries in computer science include <em>maps</em>,
+      <em>symbol tables</em>, and
+      <a href="http://en.wikipedia.org/wiki/Associative_array"
+        >associative arrays</a
+      >. The pairs of values are referred to as <em>name-value</em>,
+      <em>key-value</em>, <em>field-value</em>, or
+      <a href="http://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair"
+        >attribute-value</a
+      >
+      pairs.
+    </p>
+    <p>
+      As an example, we will create a dictionary to translate English words into
+      Spanish. For this dictionary, the keys are strings.
+    </p>
+    <p>
+      One way to create a dictionary is to start with the empty dictionary and
+      add <strong>key-value pairs</strong>. The empty dictionary is denoted with
+      a pair of <strong>curly braces</strong>, <code>{}</code>:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; eng2sp = {}
 &gt;&gt;&gt; type(eng2sp)
 &lt;class &#39;dict&#39;&gt;
 &gt;&gt;&gt; eng2sp[&#39;one&#39;] = &#39;uno&#39;
 &gt;&gt;&gt; eng2sp[&#39;two&#39;] = &#39;dos&#39;
 &gt;&gt;&gt; eng2sp[&#39;three&#39;] = &#39;tres&#39;</code></pre>
-<p>The first assignment creates a dictionary named <code>eng2sp</code>; the other assignments add new key-value pairs to the dictionary. We can print the current value of the dictionary in the usual way:</p>
-<pre class="text"><code>&gt;&gt;&gt; print(eng2sp)
+    <p>
+      The first assignment creates a dictionary named <code>eng2sp</code>; the
+      other assignments add new key-value pairs to the dictionary. We can print
+      the current value of the dictionary in the usual way:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; print(eng2sp)
 {&#39;three&#39;: &#39;tres&#39;, &#39;one&#39;: &#39;uno&#39;, &#39;two&#39;: &#39;dos&#39;}</code></pre>
-<p>The key-value pairs of the dictionary are seperated by commas. Each pair contains a key and a value separated by a colon.</p>
-<p>The order of the pairs may not be what you expected. Python uses complex algorithms to determine where the key-value pairs are stored in a dictionary. For our purposes we can think of this ordering as unpredicatable, so you should not try to rely on it. Instead, look up values by using a known key.</p>
-<p>Another way to create a dictionary is to provide a list of key-value pairs using the same syntax as the previous output:</p>
-<pre class="text"><code>&gt;&gt;&gt; eng2sp = {&#39;one&#39;: &#39;uno&#39;, &#39;two&#39;: &#39;dos&#39;, &#39;three&#39;: &#39;tres&#39;}</code></pre>
-<p>It doesn’t matter what order we write the pairs. The values in a dictionary are accessed with keys, not with indices, so ordering is unimportant.</p>
-<p>Here is how we use a key to look up the corresponding value:</p>
-<pre class="text"><code>&gt;&gt;&gt; eng2sp[&#39;two&#39;]
+    <p>
+      The key-value pairs of the dictionary are seperated by commas. Each pair
+      contains a key and a value separated by a colon.
+    </p>
+    <p>
+      The order of the pairs may not be what you expected. Python uses complex
+      algorithms to determine where the key-value pairs are stored in a
+      dictionary. For our purposes we can think of this ordering as
+      unpredicatable, so you should not try to rely on it. Instead, look up
+      values by using a known key.
+    </p>
+    <p>
+      Another way to create a dictionary is to provide a list of key-value pairs
+      using the same syntax as the previous output:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; eng2sp = {&#39;one&#39;: &#39;uno&#39;, &#39;two&#39;: &#39;dos&#39;, &#39;three&#39;: &#39;tres&#39;}</code></pre>
+    <p>
+      It doesn’t matter what order we write the pairs. The values in a
+      dictionary are accessed with keys, not with indices, so ordering is
+      unimportant.
+    </p>
+    <p>Here is how we use a key to look up the corresponding value:</p>
+    <pre class="text"><code>&gt;&gt;&gt; eng2sp[&#39;two&#39;]
 &#39;dos&#39;</code></pre>
-<p>The key <code>'two'</code> yields the value <code>'dos'</code>.</p>
-<h3 id="dictionary-operations">6.2. Dictionary operations</h3>
-<p>The <code>del</code> statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock:</p>
-<pre class="text"><code>&gt;&gt;&gt; inventory = {&#39;apples&#39;: 430, &#39;bananas&#39;: 312, &#39;oranges&#39;: 525, &#39;pears&#39;: 217}
+    <p>The key <code>'two'</code> yields the value <code>'dos'</code>.</p>
+    <h3 id="dictionary-operations">6.2. Dictionary operations</h3>
+    <p>
+      The <code>del</code> statement removes a key-value pair from a dictionary.
+      For example, the following dictionary contains the names of various fruits
+      and the number of each fruit in stock:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; inventory = {&#39;apples&#39;: 430, &#39;bananas&#39;: 312, &#39;oranges&#39;: 525, &#39;pears&#39;: 217}
 &gt;&gt;&gt; print(inventory)
 {&#39;apples&#39;: 430, &#39;bananas&#39;: 312, &#39;pears&#39;: 217, &#39;oranges&#39;: 525}</code></pre>
-<p>If someone buys all of the pears, we can remove the entry from the dictionary:</p>
-<pre class="text"><code>&gt;&gt;&gt; del inventory[&#39;pears&#39;]
+    <p>
+      If someone buys all of the pears, we can remove the entry from the
+      dictionary:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; del inventory[&#39;pears&#39;]
 &gt;&gt;&gt; print(inventory)
 {&#39;apples&#39;: 430, &#39;bananas&#39;: 312, &#39;oranges&#39;: 525}</code></pre>
-<p>Or if we’re expecting more pears soon, we might just change the value associated with pears:</p>
-<pre class="text"><code>&gt;&gt;&gt; inventory[&#39;pears&#39;] = 0
+    <p>
+      Or if we’re expecting more pears soon, we might just change the value
+      associated with pears:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; inventory[&#39;pears&#39;] = 0
 &gt;&gt;&gt; print(inventory)
 {&#39;apples&#39;: 430, &#39;bananas&#39;: 312, &#39;pears&#39;: 0, &#39;oranges&#39;: 525}</code></pre>
-<p>The <code>len</code> function also works on dictionaries; it returns the number of key-value pairs:</p>
-<pre class="text"><code>&gt;&gt;&gt; len(inventory)
+    <p>
+      The <code>len</code> function also works on dictionaries; it returns the
+      number of key-value pairs:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; len(inventory)
 4</code></pre>
-<p>The <code>in</code> operator returns <code>True</code> if the key appears in the dictionary and <code>False</code> otherwise:</p>
-<pre class="text"><code>&gt;&gt;&gt; &#39;pears&#39; in inventory
+    <p>
+      The <code>in</code> operator returns <code>True</code> if the key appears
+      in the dictionary and <code>False</code> otherwise:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; &#39;pears&#39; in inventory
 True
 &gt;&gt;&gt; &#39;blueberries&#39; in inventory
 False</code></pre>
-<p>This operator can be very useful, since looking up a non-existant key in a dictionary causes a runtime error:</p>
-<pre class="text"><code>&gt;&gt;&gt; inventory[&#39;blueberries&#39;]
+    <p>
+      This operator can be very useful, since looking up a non-existant key in a
+      dictionary causes a runtime error:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; inventory[&#39;blueberries&#39;]
 Traceback (most recent call last):
   File &quot;&quot;, line 1, in &lt;module&gt;
 KeyError: &#39;blueberries&#39;
 &gt;&gt;&gt;</code></pre>
-<p>To address this problem, the built-in <code>get</code> method provides a default value that is returned when a key is not found:</p>
-<pre class="text"><code>&gt;&gt;&gt; inventory.get(&#39;blueberries&#39;, 0)
+    <p>
+      To address this problem, the built-in <code>get</code> method provides a
+      default value that is returned when a key is not found:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; inventory.get(&#39;blueberries&#39;, 0)
 0
 &gt;&gt;&gt; inventory.get(&#39;bananas&#39;, 0)
 312</code></pre>
-<p>Python’s built-in <code>sorted</code> function returns a list of a dictionaries keys in sorted order:</p>
-<pre class="text"><code>&gt;&gt;&gt; sorted(inventory)
+    <p>
+      Python’s built-in <code>sorted</code> function returns a list of a
+      dictionaries keys in sorted order:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; sorted(inventory)
 [&#39;apples&#39;, &#39;bananas&#39;, &#39;oranges&#39;, &#39;pears&#39;]</code></pre>
-<h3 id="aliasing-and-copying">6.3. Aliasing and copying</h3>
-<p>Because dictionaries are mutable, you need to be aware of aliasing. Whenever two variables refer to the same object, changes to one affect the other.</p>
-<p>If you want to modify a dictionary and keep a copy of the original, use the <code>copy</code> method. For example, <code>opposites</code> is a dictionary that contains pairs of opposites:</p>
-<pre class="text"><code>&gt;&gt;&gt; opposites = {&#39;up&#39;: &#39;down&#39;, &#39;right&#39;: &#39;wrong&#39;, &#39;true&#39;: &#39;false&#39;}
+    <h3 id="aliasing-and-copying">6.3. Aliasing and copying</h3>
+    <p>
+      Because dictionaries are mutable, you need to be aware of aliasing.
+      Whenever two variables refer to the same object, changes to one affect the
+      other.
+    </p>
+    <p>
+      If you want to modify a dictionary and keep a copy of the original, use
+      the <code>copy</code> method. For example, <code>opposites</code> is a
+      dictionary that contains pairs of opposites:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; opposites = {&#39;up&#39;: &#39;down&#39;, &#39;right&#39;: &#39;wrong&#39;, &#39;true&#39;: &#39;false&#39;}
 &gt;&gt;&gt; an_alias = opposites
 &gt;&gt;&gt; a_copy = opposites.copy()</code></pre>
-<p><code>an_alias</code> and <code>opposites</code> refer to the same object; <code>a_copy</code> refers to a fresh copy of the same dictionary. If we modify <code>alias</code>, <code>opposites</code> is also changed:</p>
-<pre class="text"><code>&gt;&gt;&gt; an_alias[&#39;right&#39;] = &#39;left&#39;
+    <p>
+      <code>an_alias</code> and <code>opposites</code> refer to the same object;
+      <code>a_copy</code> refers to a fresh copy of the same dictionary. If we
+      modify <code>alias</code>, <code>opposites</code> is also changed:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; an_alias[&#39;right&#39;] = &#39;left&#39;
 &gt;&gt;&gt; opposites[&#39;right&#39;]
 &#39;left&#39;</code></pre>
-<p>If we modify <code>a_copy</code>, <code>opposites</code> is unchanged:</p>
-<pre class="text"><code>&gt;&gt;&gt; a_copy[&#39;right&#39;] = &#39;privilege&#39;
+    <p>
+      If we modify <code>a_copy</code>, <code>opposites</code> is unchanged:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; a_copy[&#39;right&#39;] = &#39;privilege&#39;
 &gt;&gt;&gt; opposites[&#39;right&#39;]
 &#39;left&#39;</code></pre>
-<h3 id="sets">6.4. Sets</h3>
-<p>A <strong>set</strong> is a Python data type that holds an unordered collection of unique elements. It implements the <a href="http://en.wikipedia.org/wiki/Set_%28computer_science%29">set abstract data type</a> which is in turn based on the mathematical concept of a finite <a href="http://en.wikipedia.org/wiki/Set_%28mathematics%29">set</a>. As with dictionaries, Python uses curly braces to indicate a set, but with elements instead of key-value pairs:</p>
-<pre class="text"><code>&gt;&gt;&gt; what_am_i = {&#39;apples&#39;: 32, &#39;bananas&#39;: 47, &#39;pears&#39;: 17}
+    <h3 id="sets">6.4. Sets</h3>
+    <p>
+      A <strong>set</strong> is a Python data type that holds an unordered
+      collection of unique elements. It implements the
+      <a href="http://en.wikipedia.org/wiki/Set_%28computer_science%29"
+        >set abstract data type</a
+      >
+      which is in turn based on the mathematical concept of a finite
+      <a href="http://en.wikipedia.org/wiki/Set_%28mathematics%29">set</a>. As
+      with dictionaries, Python uses curly braces to indicate a set, but with
+      elements instead of key-value pairs:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; what_am_i = {&#39;apples&#39;: 32, &#39;bananas&#39;: 47, &#39;pears&#39;: 17}
 &gt;&gt;&gt; type(what_am_i)
 &lt;class &#39;dict&#39;&gt;
 &gt;&gt;&gt; what_am_i = {&#39;apples&#39;, &#39;bananas&#39;, &#39;pears&#39;}
 &gt;&gt;&gt; type(what_am_i)
 &lt;class &#39;set&#39;&gt;</code></pre>
-<p>To create an empty set, you can not use empty curly braces.</p>
-<pre class="text"><code>&gt;&gt;&gt; what_am_i = {}
+    <p>To create an empty set, you can not use empty curly braces.</p>
+    <pre class="text"><code>&gt;&gt;&gt; what_am_i = {}
 &gt;&gt;&gt; type(what_am_i)
 &lt;class &#39;dict&#39;&gt;
 &gt;&gt;&gt; what_am_i = set()
@@ -108,9 +234,16 @@ KeyError: &#39;blueberries&#39;
 &lt;class &#39;set&#39;&gt;
 &gt;&gt;&gt; what_am_i
 set()</code></pre>
-<p>Instead, use the <code>set</code> type converter function without an argument.</p>
-<p>Sets contain a unique collection of elements of any type. You can add to a set using its add method, and test for membership with the <code>in</code> operator.</p>
-<pre class="text"><code>&gt;&gt;&gt; set_of_numbers = {1, 2, 3, 4}
+    <p>
+      Instead, use the <code>set</code> type converter function without an
+      argument.
+    </p>
+    <p>
+      Sets contain a unique collection of elements of any type. You can add to a
+      set using its add method, and test for membership with the
+      <code>in</code> operator.
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; set_of_numbers = {1, 2, 3, 4}
 &gt;&gt;&gt; set_of_numbers
 {1, 2, 3, 4}
 &gt;&gt;&gt; set_of_numbers.add(5)
@@ -120,15 +253,37 @@ set()</code></pre>
 True
 &gt;&gt;&gt; 6 in set_of_numbers
 False</code></pre>
-<p>Since sets hold unique collections of elements, you can use the <code>set</code> type conversion function to remove duplicates from a list.</p>
-<pre class="text"><code>&gt;&gt;&gt; list_of_numbers = [1, 2, 1, 3, 4, 8, 11, 4, 5, 8]
+    <p>
+      Since sets hold unique collections of elements, you can use the
+      <code>set</code> type conversion function to remove duplicates from a
+      list.
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; list_of_numbers = [1, 2, 1, 3, 4, 8, 11, 4, 5, 8]
 &gt;&gt;&gt; set(list_of_numbers)
 {1, 2, 3, 4, 5, 8, 11}</code></pre>
-<h3 id="formatting-strings">6.5. Formatting Strings</h3>
-<p>This book is aimed at aspiring <a href="http://en.wikipedia.org/wiki/Web_developers">web developers</a>, so much of our focus will be on creating dynamic <a href="http://en.wikipedia.org/wiki/Web_page">web pages</a> using Python. Web pages are stored in <a href="http://en.wikipedia.org/wiki/Text_file">text files</a>, which are essentially files containing a string of text. The ability to process and format text is quite important to us. That’s what this section is about.</p>
-<h3 id="the-format-method-for-strings">6.6. The <code>format</code> method for strings</h3>
-<p>The easiest and most powerful way to format a string in Python 3 is to use the <code>format</code> method.</p>
-<pre class="text"><code>&gt;&gt;&gt; &quot;His name is {0}!&quot;.format(&quot;Arthur&quot;)
+    <h3 id="formatting-strings">6.5. Formatting Strings</h3>
+    <p>
+      This book is aimed at aspiring
+      <a href="http://en.wikipedia.org/wiki/Web_developers">web developers</a>,
+      so much of our focus will be on creating dynamic
+      <a href="http://en.wikipedia.org/wiki/Web_page">web pages</a> using
+      Python. Web pages are stored in
+      <a href="http://en.wikipedia.org/wiki/Text_file">text files</a>, which are
+      essentially files containing a string of text. The ability to process and
+      format text is quite important to us. That’s what this section is about.
+    </p>
+    <h3 id="the-format-method-for-strings">
+      6.6. The <code>format</code> method for strings
+    </h3>
+    <p>
+      The easiest and most powerful way to format a string in Python 3 is to use
+      the <code>format</code> method.
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; &quot;His name is {0}!&quot;.format(&quot;Arthur&quot;)
 &#39;His name is Arthur!&#39;
 &gt;&gt;&gt; name = &quot;Alice&quot;
 &gt;&gt;&gt; age = 10
@@ -138,16 +293,44 @@ False</code></pre>
 &gt;&gt;&gt; n2 = 5
 &gt;&gt;&gt; &quot;2 ** 10 = {0} and {1} * {2} = {3:f}&quot;.format(2 ** 10, n1, n2, n1 * n2)
 &#39;2 ** 10 = 1024 and 4 * 5 = 20.000000&#39;</code></pre>
-<p>The key idea is that one provides a <em>formatter string</em> which contains <em>placeholder fields</em>, <code>... {0} ... {1} ... {2} ...</code> etc. The <strong>format method</strong> of a string uses the numbers as indexes into its arguments, and substitutes the appropriate argument into each placeholder field.</p>
-<p>Each of the placeholders can also contain a <strong>format specification</strong> — it is always introduced by the <code>:</code> symbol. This can control things like</p>
-<ul>
-<li>whether the field is aligned left <code>&lt;</code>, centered <code>^</code>, or right <code>&gt;</code></li>
-<li>the width allocated to the field within the result string (a number like <code>10</code>)</li>
-<li>the type of conversion (we’ll initially only force conversion to float, <code>f</code>, as we did in line 11 of the code above, or perhaps we’ll ask integer numbers to be converted to hexadecimal using <code>x</code>)</li>
-<li>if the type conversion is a float, you can also specify how many decimal places are wanted (typically, <code>.2f</code> is useful for working with currencies to two decimal places.)</li>
-</ul>
-<p>You can have multiple placeholders indexing the same argument, or perhaps even have extra arguments that are not referenced at all:</p>
-<pre class="text"><code>letter = &quot;&quot;&quot;
+    <p>
+      The key idea is that one provides a <em>formatter string</em> which
+      contains <em>placeholder fields</em>,
+      <code>... {0} ... {1} ... {2} ...</code> etc. The
+      <strong>format method</strong> of a string uses the numbers as indexes
+      into its arguments, and substitutes the appropriate argument into each
+      placeholder field.
+    </p>
+    <p>
+      Each of the placeholders can also contain a
+      <strong>format specification</strong> — it is always introduced by the
+      <code>:</code> symbol. This can control things like
+    </p>
+    <ul>
+      <li>
+        whether the field is aligned left <code>&lt;</code>, centered
+        <code>^</code>, or right <code>&gt;</code>
+      </li>
+      <li>
+        the width allocated to the field within the result string (a number like
+        <code>10</code>)
+      </li>
+      <li>
+        the type of conversion (we’ll initially only force conversion to float,
+        <code>f</code>, as we did in line 11 of the code above, or perhaps we’ll
+        ask integer numbers to be converted to hexadecimal using <code>x</code>)
+      </li>
+      <li>
+        if the type conversion is a float, you can also specify how many decimal
+        places are wanted (typically, <code>.2f</code> is useful for working
+        with currencies to two decimal places.)
+      </li>
+    </ul>
+    <p>
+      You can have multiple placeholders indexing the same argument, or perhaps
+      even have extra arguments that are not referenced at all:
+    </p>
+    <pre class="text"><code>letter = &quot;&quot;&quot;
 Dear {0} {2},
 
 {0}, I have an interesting money-making proposition for you!
@@ -157,8 +340,8 @@ double your money ...
 
 print(letter.format(&quot;Paris&quot;, &quot;Whitney&quot;, &quot;Hilton&quot;))
 print(letter.format(&quot;Bill&quot;, &quot;Henry&quot;, &quot;Gates&quot;))</code></pre>
-<p>This produces the following:</p>
-<pre class="text"><code>Dear Paris Hilton,
+    <p>This produces the following:</p>
+    <pre class="text"><code>Dear Paris Hilton,
 
 Paris, I have an interesting money-making proposition for you!
 If you deposit $10 million into my bank account, I can
@@ -169,23 +352,48 @@ Dear Bill Gates,
 Bill, I have an interesting money-making proposition for you!
 If you deposit $10 million into my bank account I can,
 double your money ...</code></pre>
-<p>As you might expect, you’ll get an index error if your placeholders refer to arguments that you do not provide:</p>
-<pre class="text"><code>&gt;&gt;&gt; &quot;hello {3}&quot;.format(&quot;Dave&quot;)
+    <p>
+      As you might expect, you’ll get an index error if your placeholders refer
+      to arguments that you do not provide:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; &quot;hello {3}&quot;.format(&quot;Dave&quot;)
 Traceback (most recent call last):
   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
 IndexError: tuple index out of range</code></pre>
-<p>In addition to positional arguments in format strings, <em>named arguments</em> are also supported:</p>
-<pre class="text"><code>&gt;&gt;&gt; s = &quot;&#39;{cat}&#39;ll {verb1} me very much {time}, I should {verb2}!&#39;&quot;
+    <p>
+      In addition to positional arguments in format strings,
+      <em>named arguments</em> are also supported:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; s = &quot;&#39;{cat}&#39;ll {verb1} me very much {time}, I should {verb2}!&#39;&quot;
 &gt;&gt;&gt; s.format(verb1=&quot;miss&quot;, cat=&quot;Dinah&quot;, time=&quot;to-night&quot;, verb2=&quot;think&quot;)
 &quot;&#39;Dinah&#39;ll miss me very much to-night, I should think!&#39;&quot;</code></pre>
-<p>Notice that the order of the arguments to the <code>format</code> method example doesn’t correspond with the order they appear in the format string. These are keywords, as with dictionaries, so their order is not relevant.</p>
-<p>Old style format strings</p>
-<p>Earlier versions of Python used a cryptic way to format strings. It is considered deprecated and will eventually disappear from the language.</p>
-<p>While we won’t use it in this book, you will still see it around in lots of existing Python code, so it is good to be aware of it.</p>
-<p>The syntax for the old string formatting operation looks like this:</p>
-<pre class="text"><code>&quot;&lt;FORMAT&gt;&quot; % (&lt;VALUES&gt;)</code></pre>
-<p>To see how this works, here are a few examples:</p>
-<pre class="text"><code>&gt;&gt;&gt; &quot;His name is %s.&quot;  % &quot;Arthur&quot;
+    <p>
+      Notice that the order of the arguments to the <code>format</code> method
+      example doesn’t correspond with the order they appear in the format
+      string. These are keywords, as with dictionaries, so their order is not
+      relevant.
+    </p>
+    <p>Old style format strings</p>
+    <p>
+      Earlier versions of Python used a cryptic way to format strings. It is
+      considered deprecated and will eventually disappear from the language.
+    </p>
+    <p>
+      While we won’t use it in this book, you will still see it around in lots
+      of existing Python code, so it is good to be aware of it.
+    </p>
+    <p>The syntax for the old string formatting operation looks like this:</p>
+    <pre
+      class="text"
+    ><code>&quot;&lt;FORMAT&gt;&quot; % (&lt;VALUES&gt;)</code></pre>
+    <p>To see how this works, here are a few examples:</p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; &quot;His name is %s.&quot;  % &quot;Arthur&quot;
 &#39;His name is Arthur.&#39;
 &gt;&gt;&gt; name = &quot;Alice&quot;
 &gt;&gt;&gt; age = 10
@@ -196,15 +404,54 @@ IndexError: tuple index out of range</code></pre>
 &gt;&gt;&gt; &quot;2**10 = %d and %d * %d = %f&quot; % (2**10, n1, n2, n1 * n2)
 &#39;2 ** 10 = 1024 and 4 * 5 = 20.000000&#39;
 &gt;&gt;&gt;</code></pre>
-<h3 id="files">6.7. Files</h3>
-<h4 id="about-files">6.7.1. About files</h4>
-<p>While a program is running, its data is stored in <a href="http://en.wikipedia.org/wiki/Random_access_memory">random access memory</a> (RAM). RAM is extremely fast, but it is also <strong>volatile</strong>, which means that when the program ends, or the computer shuts down, data in RAM disappears. To make data available the next time you turn on your computer and start your program, you have to write it to a <strong>non-volatile</strong> storage medium, such a hard drive, usb drive, or CD-RW.</p>
-<p>Data on non-volatile storage media is stored in named locations on the media called <a href="http://en.wikipedia.org/wiki/Computer_file">files</a>. By reading and writing files, programs can save information between program runs. A file is a block of data stored in the <a href="http://en.wikipedia.org/wiki/File_system">file system</a> of the computer’s <a href="http://en.wikipedia.org/wiki/Operating_system">operating system</a>.</p>
-<p>To use a file, you have to open it. When you’re done, you have to close it. When you open the file, you have to decide ahead of time whether you want to read data from the file or write data to it. If you plan to write data to the file you have to choose between starting a new version of the file or writing data at the end of what was already there. This second option for writing to the file is called <strong>appending</strong>. The first option destroys any previously existing data in the file.</p>
-<h4 id="the-open-function">6.7.2. The <code>open</code> function</h4>
-<p>The <code>open</code> function takes two arguments. The first is the name of the file, and the second is the <strong>mode</strong>. Mode <code>'w'</code> means that we are opening the file for writing. Mode <code>'r'</code> means reading, and mode <code>'a'</code> means appending.</p>
-<p>Let’s begin with an example that shows these three modes in operation:</p>
-<pre class="text"><code>&gt;&gt;&gt; myfile = open(&#39;test.txt&#39;, &#39;w&#39;)
+    <h3 id="files">6.7. Files</h3>
+    <h4 id="about-files">6.7.1. About files</h4>
+    <p>
+      While a program is running, its data is stored in
+      <a href="http://en.wikipedia.org/wiki/Random_access_memory"
+        >random access memory</a
+      >
+      (RAM). RAM is extremely fast, but it is also <strong>volatile</strong>,
+      which means that when the program ends, or the computer shuts down, data
+      in RAM disappears. To make data available the next time you turn on your
+      computer and start your program, you have to write it to a
+      <strong>non-volatile</strong> storage medium, such a hard drive, usb
+      drive, or CD-RW.
+    </p>
+    <p>
+      Data on non-volatile storage media is stored in named locations on the
+      media called
+      <a href="http://en.wikipedia.org/wiki/Computer_file">files</a>. By reading
+      and writing files, programs can save information between program runs. A
+      file is a block of data stored in the
+      <a href="http://en.wikipedia.org/wiki/File_system">file system</a> of the
+      computer’s
+      <a href="http://en.wikipedia.org/wiki/Operating_system"
+        >operating system</a
+      >.
+    </p>
+    <p>
+      To use a file, you have to open it. When you’re done, you have to close
+      it. When you open the file, you have to decide ahead of time whether you
+      want to read data from the file or write data to it. If you plan to write
+      data to the file you have to choose between starting a new version of the
+      file or writing data at the end of what was already there. This second
+      option for writing to the file is called <strong>appending</strong>. The
+      first option destroys any previously existing data in the file.
+    </p>
+    <h4 id="the-open-function">6.7.2. The <code>open</code> function</h4>
+    <p>
+      The <code>open</code> function takes two arguments. The first is the name
+      of the file, and the second is the <strong>mode</strong>. Mode
+      <code>'w'</code> means that we are opening the file for writing. Mode
+      <code>'r'</code> means reading, and mode <code>'a'</code> means appending.
+    </p>
+    <p>
+      Let’s begin with an example that shows these three modes in operation:
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; myfile = open(&#39;test.txt&#39;, &#39;w&#39;)
 &gt;&gt;&gt; myfile.write(&#39;My first file written from Python\n&#39;)
 34
 &gt;&gt;&gt; myfile.write(&#39;---------------------------------\n&#39;)
@@ -219,13 +466,47 @@ IndexError: tuple index out of range</code></pre>
 My first file written from Python
 ---------------------------------
 Hello, world!</code></pre>
-<p>Opening a file creates what we call a <a href="http://en.wikipedia.org/wiki/File_descriptor">file descriptor</a>. In this example, the variable <code>myfile</code> refers to the new descriptor object. Our program calls methods on the descriptor, and this makes changes to the actual file which is located in non-volatile storage.</p>
-<p>The first line opens the <code>test.txt</code> for writing. If there is no file named <code>test.txt</code> on the disk, it will be created. If there already is one, it will be replaced by the file we are writing and any previous data in it will be lost.</p>
-<p>To put data in the file we invoke the <code>write</code> method on the file descriptor. We do this three times in the example above, but in bigger programs, the three separate calls to <code>write</code> will usually be replaced by a loop that writes many more lines into the file. The <code>write</code> method returns the number of <a href="http://en.wikipedia.org/wiki/Byte">bytes</a> (characters) written to the file.</p>
-<p>Closing the file handle tells the system that we are done writing and makes the disk file available for reading by other programs (or by our own program).</p>
-<p>We finish this example by openning <code>test.txt</code> for reading. We then call the <code>read</code> method, assigning the contents of the file, which is a string, to a variable named <code>contents</code>, and finally print <code>contents</code> to see that it is indeed what we wrote to the file previously.</p>
-<p>If we want to add to an already existing file, use the <em>append</em> mode.</p>
-<pre class="text"><code>&gt;&gt;&gt; myfile = open(&#39;test.txt&#39;, &#39;a&#39;)
+    <p>
+      Opening a file creates what we call a
+      <a href="http://en.wikipedia.org/wiki/File_descriptor">file descriptor</a
+      >. In this example, the variable <code>myfile</code> refers to the new
+      descriptor object. Our program calls methods on the descriptor, and this
+      makes changes to the actual file which is located in non-volatile storage.
+    </p>
+    <p>
+      The first line opens the <code>test.txt</code> for writing. If there is no
+      file named <code>test.txt</code> on the disk, it will be created. If there
+      already is one, it will be replaced by the file we are writing and any
+      previous data in it will be lost.
+    </p>
+    <p>
+      To put data in the file we invoke the <code>write</code> method on the
+      file descriptor. We do this three times in the example above, but in
+      bigger programs, the three separate calls to <code>write</code> will
+      usually be replaced by a loop that writes many more lines into the file.
+      The <code>write</code> method returns the number of
+      <a href="http://en.wikipedia.org/wiki/Byte">bytes</a> (characters) written
+      to the file.
+    </p>
+    <p>
+      Closing the file handle tells the system that we are done writing and
+      makes the disk file available for reading by other programs (or by our own
+      program).
+    </p>
+    <p>
+      We finish this example by openning <code>test.txt</code> for reading. We
+      then call the <code>read</code> method, assigning the contents of the
+      file, which is a string, to a variable named <code>contents</code>, and
+      finally print <code>contents</code> to see that it is indeed what we wrote
+      to the file previously.
+    </p>
+    <p>
+      If we want to add to an already existing file, use the
+      <em>append</em> mode.
+    </p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; myfile = open(&#39;test.txt&#39;, &#39;a&#39;)
 &gt;&gt;&gt; myfile.write(&#39;\nOoops, I forgot to add this line ;-)&#39;)
 37
 &gt;&gt;&gt; myfile.close()
@@ -236,26 +517,59 @@ My first file written from Python
 Hello, world!
 Ooops, I forgot to add this line ;-)
 &gt;&gt;&gt;</code></pre>
-<h3 id="opening-a-file-that-doesnt-exist">6.8. Opening a file that doesn’t exist</h3>
-<p>If we try to open a file that doesn’t exist, we get an error:</p>
-<pre class="text"><code>&gt;&gt;&gt; f = open(&#39;wharrah.txt&#39;, &#39;r&#39;)
+    <h3 id="opening-a-file-that-doesnt-exist">
+      6.8. Opening a file that doesn’t exist
+    </h3>
+    <p>If we try to open a file that doesn’t exist, we get an error:</p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; f = open(&#39;wharrah.txt&#39;, &#39;r&#39;)
 Traceback (most recent call last):
   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
 IOError: [Errno 2] No such file or directory: &#39;wharrah.txt&#39;
 &gt;&gt;&gt;</code></pre>
-<p>There is nothing wrong with the syntax of the line that resulted in the error. The error occurred because the file did not exist. Errors like these are called <strong>exceptions</strong>. Most modern programming languages provide support for dealing with situations like this. The process is called <a href="http://en.wikipedia.org/wiki/Exception_handling">exception handling</a>.</p>
-<p>In Python, exceptions are handled with the <code>try ... except</code> statement.</p>
-<pre class="text"><code>try:
+    <p>
+      There is nothing wrong with the syntax of the line that resulted in the
+      error. The error occurred because the file did not exist. Errors like
+      these are called <strong>exceptions</strong>. Most modern programming
+      languages provide support for dealing with situations like this. The
+      process is called
+      <a href="http://en.wikipedia.org/wiki/Exception_handling"
+        >exception handling</a
+      >.
+    </p>
+    <p>
+      In Python, exceptions are handled with the
+      <code>try ... except</code> statement.
+    </p>
+    <pre class="text"><code>try:
     f = open(&#39;thefile.txt&#39;, &#39;r&#39;)
     mydata = f.read()
     f.close()
 except IOError:
     mydata = &#39;&#39;</code></pre>
-<p>In this example we <em>try</em> to open the data file for reading. If it succeeds, we use the <code>read()</code> method to read the file contents as a string into the variable <code>mydata</code> and close the file. If an <code>IOError</code> exception occurs, we still create <code>mydata</code> as an empty string and continue on with the program.</p>
-<h3 id="reading-data-from-files">6.9. Reading data from files</h3>
-<p>Python file descriptors have three methods for reading in data from a file. We’ve already seen the <code>read()</code> method, which returns the entire contents of the file as a single string. For really big files this may not be what you want.</p>
-<p>The <code>readline()</code> method returns one <a href="http://en.wikipedia.org/wiki/Line_%28text_file%29">line</a> of the file at a time. Each time you call it <code>readline()</code> returns the next line. Calls made to <code>readline()</code> after reaching the end of the file return an empty string (<code>''</code>).</p>
-<pre class="text"><code>f = open(&#39;test.txt&#39;, &#39;r&#39;)
+    <p>
+      In this example we <em>try</em> to open the data file for reading. If it
+      succeeds, we use the <code>read()</code> method to read the file contents
+      as a string into the variable <code>mydata</code> and close the file. If
+      an <code>IOError</code> exception occurs, we still create
+      <code>mydata</code> as an empty string and continue on with the program.
+    </p>
+    <h3 id="reading-data-from-files">6.9. Reading data from files</h3>
+    <p>
+      Python file descriptors have three methods for reading in data from a
+      file. We’ve already seen the <code>read()</code> method, which returns the
+      entire contents of the file as a single string. For really big files this
+      may not be what you want.
+    </p>
+    <p>
+      The <code>readline()</code> method returns one
+      <a href="http://en.wikipedia.org/wiki/Line_%28text_file%29">line</a> of
+      the file at a time. Each time you call it <code>readline()</code> returns
+      the next line. Calls made to <code>readline()</code> after reaching the
+      end of the file return an empty string (<code>''</code>).
+    </p>
+    <pre class="text"><code>f = open(&#39;test.txt&#39;, &#39;r&#39;)
 while True:                             # keep reading forever
     theline = f.readline()              # try to read next line
     if len(theline) == 0:               # if there are no more lines
@@ -265,11 +579,35 @@ while True:                             # keep reading forever
     print(theline, end=&#39;&#39;)
 
 f.close()</code></pre>
-<p>This is a handy pattern for our toolbox. In bigger programs, we’d squeeze more extensive logic into the body of the loop at line 8 — for example, if each line of the file contained the name and email address of one of our friends, perhaps we’d split the line into some pieces and call a function to send the friend a party invitation.</p>
-<p>On line 8 we suppress the newline character that <code>print</code> usually appends to our strings. Why? This is because the string already has its own newline: the <code>readline</code> method in line 3 returns everything up to <em>and including</em> the newline character. This also explains the end-of-file detection logic: when there are no more lines to be read from the file, <code>readline</code> returns an empty string — one that does not even have a newline at the end, hence it’s length is 0.</p>
-<h4 id="turning-a-file-into-a-list-of-lines">6.9.1. Turning a file into a list of lines</h4>
-<p>It is often useful to fetch data from a disk file and turn it into a list of lines. Suppose we have a file containing our friends and their email addresses, one per line in the file. But we’d like the lines sorted into alphabetical order. A good plan is to read everything into a list of lines, then sort the list, and then write the sorted list back to another file:</p>
-<pre class="text"><code>f1 = open(&#39;friends.txt&#39;, &#39;r&#39;)
+    <p>
+      This is a handy pattern for our toolbox. In bigger programs, we’d squeeze
+      more extensive logic into the body of the loop at line 8 — for example, if
+      each line of the file contained the name and email address of one of our
+      friends, perhaps we’d split the line into some pieces and call a function
+      to send the friend a party invitation.
+    </p>
+    <p>
+      On line 8 we suppress the newline character that
+      <code>print</code> usually appends to our strings. Why? This is because
+      the string already has its own newline: the <code>readline</code> method
+      in line 3 returns everything up to <em>and including</em> the newline
+      character. This also explains the end-of-file detection logic: when there
+      are no more lines to be read from the file, <code>readline</code> returns
+      an empty string — one that does not even have a newline at the end, hence
+      it’s length is 0.
+    </p>
+    <h4 id="turning-a-file-into-a-list-of-lines">
+      6.9.1. Turning a file into a list of lines
+    </h4>
+    <p>
+      It is often useful to fetch data from a disk file and turn it into a list
+      of lines. Suppose we have a file containing our friends and their email
+      addresses, one per line in the file. But we’d like the lines sorted into
+      alphabetical order. A good plan is to read everything into a list of
+      lines, then sort the list, and then write the sorted list back to another
+      file:
+    </p>
+    <pre class="text"><code>f1 = open(&#39;friends.txt&#39;, &#39;r&#39;)
 friends_list = f.readlines()
 f1.close()
 
@@ -279,12 +617,30 @@ f2 = open(&#39;sortedfriends.txt&#39;, &#39;w&#39;)
 for friend in friends_list:
     f2.write(v)
 f2.close()</code></pre>
-<p>The <code>readlines</code> method in line 2 reads all the lines and returns a list of the strings.</p>
-<p>We could have used the template from the previous section to read each line one-at-a-time, and to build up the list ourselves, but it is a lot easier to use the method that the Python implementors gave us!</p>
-<h4 id="an-example">6.9.2. An example</h4>
-<p>Many useful line-processing programs will read a text file line-at-a-time and do some minor processing as they write the lines to an output file. They might number the lines in the output file, or insert extra blank lines after every 60 lines to make it convenient for printing on sheets of paper, or extract some specific columns only from each line in the source file, or only print lines that contain a specific substring. We call this kind of program a <strong>filter</strong>.</p>
-<p>Here is a filter that copies one file to another, omitting any lines that begin with <code>#</code>:</p>
-<pre class="text"><code>infile = open(oldfile, &#39;r&#39;)
+    <p>
+      The <code>readlines</code> method in line 2 reads all the lines and
+      returns a list of the strings.
+    </p>
+    <p>
+      We could have used the template from the previous section to read each
+      line one-at-a-time, and to build up the list ourselves, but it is a lot
+      easier to use the method that the Python implementors gave us!
+    </p>
+    <h4 id="an-example">6.9.2. An example</h4>
+    <p>
+      Many useful line-processing programs will read a text file line-at-a-time
+      and do some minor processing as they write the lines to an output file.
+      They might number the lines in the output file, or insert extra blank
+      lines after every 60 lines to make it convenient for printing on sheets of
+      paper, or extract some specific columns only from each line in the source
+      file, or only print lines that contain a specific substring. We call this
+      kind of program a <strong>filter</strong>.
+    </p>
+    <p>
+      Here is a filter that copies one file to another, omitting any lines that
+      begin with <code>#</code>:
+    </p>
+    <pre class="text"><code>infile = open(oldfile, &#39;r&#39;)
 outfile = open(newfile, &#39;w&#39;)
 while True:
     text = infile.readline()
@@ -298,13 +654,46 @@ while True:
 
 infile.close()
 outfile.close()</code></pre>
-<p>The <code>continue</code> statement at line 9 skips over the remaining lines in the current iteration of the loop, but the loop will still iterate. This style looks a bit contrived here, but it is often useful to say <em>“get the lines we’re not concerned with out of the way early, so that we have cleaner more focussed logic in the meaty part of the loop that might be written around line 11.”</em></p>
-<p>Thus, if <code>text</code> is the empty string, the loop exits. If the first character of <code>text</code> is a hash mark, the flow of execution goes to the top of the loop, ready to start processing the next line. Only if both conditions fail do we fall through to do the processing at line 11, in this example, writing the line into the new file.</p>
-<p>Let’s consider one more case: suppose your original file contained empty lines. At line 6 above, would this program find the first empty line in the file, and terminate immediately? No! Recall that <code>readline</code> always includes the newline character in the string it returns. It is only when we try to read <em>beyond</em> the end of the file that we get back the empty string of length 0.</p>
-<h3 id="repr-and-eval-functions">6.10. <code>repr()</code> and <code>eval()</code> functions</h3>
-<p>Python has a built-in function named <code>repr</code> that takes a Python object as an argument and returns a string <em>representation</em> of that object. For Python’s built-in types, the string representation of an object can be <em>evaluated</em> using the built-in <code>eval</code> function to recreate the object.</p>
-<p>The way this works is easiest to demonstrate by example.</p>
-<pre class="text"><code>&gt;&gt;&gt; mylist = [1, 2, &#39;buckle&#39;, &#39;my&#39;, &#39;shoe&#39;]
+    <p>
+      The <code>continue</code> statement at line 9 skips over the remaining
+      lines in the current iteration of the loop, but the loop will still
+      iterate. This style looks a bit contrived here, but it is often useful to
+      say
+      <em
+        >“get the lines we’re not concerned with out of the way early, so that
+        we have cleaner more focussed logic in the meaty part of the loop that
+        might be written around line 11.”</em
+      >
+    </p>
+    <p>
+      Thus, if <code>text</code> is the empty string, the loop exits. If the
+      first character of <code>text</code> is a hash mark, the flow of execution
+      goes to the top of the loop, ready to start processing the next line. Only
+      if both conditions fail do we fall through to do the processing at line
+      11, in this example, writing the line into the new file.
+    </p>
+    <p>
+      Let’s consider one more case: suppose your original file contained empty
+      lines. At line 6 above, would this program find the first empty line in
+      the file, and terminate immediately? No! Recall that
+      <code>readline</code> always includes the newline character in the string
+      it returns. It is only when we try to read <em>beyond</em> the end of the
+      file that we get back the empty string of length 0.
+    </p>
+    <h3 id="repr-and-eval-functions">
+      6.10. <code>repr()</code> and <code>eval()</code> functions
+    </h3>
+    <p>
+      Python has a built-in function named <code>repr</code> that takes a Python
+      object as an argument and returns a string <em>representation</em> of that
+      object. For Python’s built-in types, the string representation of an
+      object can be <em>evaluated</em> using the built-in
+      <code>eval</code> function to recreate the object.
+    </p>
+    <p>The way this works is easiest to demonstrate by example.</p>
+    <pre
+      class="text"
+    ><code>&gt;&gt;&gt; mylist = [1, 2, &#39;buckle&#39;, &#39;my&#39;, &#39;shoe&#39;]
 &gt;&gt;&gt; type(mylist)
 &lt;class &#39;list&#39;&gt;
 &gt;&gt;&gt; repr(mylist)
@@ -322,42 +711,87 @@ outfile.close()</code></pre>
 &gt;&gt;&gt; type(thing)
 &lt;class &#39;list&#39;&gt;
 &gt;&gt;&gt;</code></pre>
-<p>The list object, <code>mylist</code> is converted into a <em>string representation</em> using the <code>repr</code> function, and this string representation is than converted back into a Python list object using the <code>eval</code> function (which <em>evaluates</em> the string representation).</p>
-<p>While we will learn much better ways to achieve the goal of storing Python objects into data files later, <code>repr</code> and <code>eval</code> provide us with an easy to understand tool for writing and then reading back Python data to files that we can use now.</p>
-<h3 id="modules">6.11. Modules</h3>
-<p>A <strong>module</strong> is a file containing Python definitions and statements intended for use in other Python programs. There are many Python modules that come with Python as part of the <strong>standard library</strong>. We have seen two of these already, the <code>doctest</code> module and the <code>string</code> module.</p>
-<h3 id="creating-modules">6.12. Creating modules</h3>
-<p>All we need to create a module is a text file with a <code>.py</code> extension on the filename:</p>
-<pre class="text"><code>#  seqtools.py
+    <p>
+      The list object, <code>mylist</code> is converted into a
+      <em>string representation</em> using the <code>repr</code> function, and
+      this string representation is than converted back into a Python list
+      object using the <code>eval</code> function (which <em>evaluates</em> the
+      string representation).
+    </p>
+    <p>
+      While we will learn much better ways to achieve the goal of storing Python
+      objects into data files later, <code>repr</code> and
+      <code>eval</code> provide us with an easy to understand tool for writing
+      and then reading back Python data to files that we can use now.
+    </p>
+    <h3 id="modules">6.11. Modules</h3>
+    <p>
+      A <strong>module</strong> is a file containing Python definitions and
+      statements intended for use in other Python programs. There are many
+      Python modules that come with Python as part of the
+      <strong>standard library</strong>. We have seen two of these already, the
+      <code>doctest</code> module and the <code>string</code> module.
+    </p>
+    <h3 id="creating-modules">6.12. Creating modules</h3>
+    <p>
+      All we need to create a module is a text file with a
+      <code>.py</code> extension on the filename:
+    </p>
+    <pre class="text"><code>#  seqtools.py
 #
 def remove_at(pos, seq):
     return seq[:pos] + seq[pos+1:]</code></pre>
-<p>We can now use our module in both scripts and the Python shell. To do so, we must first <em>import</em> the module. There are two ways to do this:</p>
-<pre class="text"><code>&gt;&gt;&gt; from seqtools import remove_at
+    <p>
+      We can now use our module in both scripts and the Python shell. To do so,
+      we must first <em>import</em> the module. There are two ways to do this:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; from seqtools import remove_at
 &gt;&gt;&gt; s = &quot;A string!&quot;
 &gt;&gt;&gt; remove_at(4, s)
 &#39;A sting!&#39;</code></pre>
-<p>and:</p>
-<pre class="text"><code>&gt;&gt;&gt; import seqtools
+    <p>and:</p>
+    <pre class="text"><code>&gt;&gt;&gt; import seqtools
 &gt;&gt;&gt; s = &quot;A string!&quot;
 &gt;&gt;&gt; seqtools.remove_at(4, s)
 &#39;A sting!&#39;</code></pre>
-<p>In the first example, <code>remove_at</code> is called just like the functions we have seen previously. In the second example the name of the module and a dot (.) are written before the function name.</p>
-<p>Notice that in either case we do not include the <code>.py</code> file extension when importing. Python expects the file names of Python modules to end in <code>.py</code>, so the file extention is not included in the <strong>import statement</strong>.</p>
-<p>The use of modules makes it possible to break up very large programs into manageable sized parts, and to keep related parts together.</p>
-<h3 id="namespaces">6.13. Namespaces</h3>
-<p>A <strong>namespace</strong> is a syntactic container which permits the same name to be used in different modules or functions (and as we will see soon, in classes and methods).</p>
-<p>Each module determines its own namespace, so we can use the same name in multiple modules without causing an identification problem.</p>
-<pre class="text"><code># module1.py
+    <p>
+      In the first example, <code>remove_at</code> is called just like the
+      functions we have seen previously. In the second example the name of the
+      module and a dot (.) are written before the function name.
+    </p>
+    <p>
+      Notice that in either case we do not include the <code>.py</code> file
+      extension when importing. Python expects the file names of Python modules
+      to end in <code>.py</code>, so the file extention is not included in the
+      <strong>import statement</strong>.
+    </p>
+    <p>
+      The use of modules makes it possible to break up very large programs into
+      manageable sized parts, and to keep related parts together.
+    </p>
+    <h3 id="namespaces">6.13. Namespaces</h3>
+    <p>
+      A <strong>namespace</strong> is a syntactic container which permits the
+      same name to be used in different modules or functions (and as we will see
+      soon, in classes and methods).
+    </p>
+    <p>
+      Each module determines its own namespace, so we can use the same name in
+      multiple modules without causing an identification problem.
+    </p>
+    <pre class="text"><code># module1.py
 
 question = &quot;What is the meaning of life, the Universe, and everything?&quot;
 answer = 42</code></pre>
-<pre class="text"><code># module2.py
+    <pre class="text"><code># module2.py
 
 question = &quot;What is your quest?&quot;
 answer = &quot;To seek the holy grail.&quot;</code></pre>
-<p>We can now import both modules and access <code>question</code> and <code>answer</code> in each:</p>
-<pre class="text"><code>&gt;&gt;&gt; import module1
+    <p>
+      We can now import both modules and access <code>question</code> and
+      <code>answer</code> in each:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; import module1
 &gt;&gt;&gt; import module2
 &gt;&gt;&gt; print module1.question
 What is the meaning of life, the Universe, and everything?
@@ -368,9 +802,14 @@ What is your quest?
 &gt;&gt;&gt; print module2.answer
 To seek the holy grail.
 &gt;&gt;&gt;</code></pre>
-<p>If we had used <code>from module1 import *</code> and <code>from module2 import *</code> instead, we would have a <strong>naming collision</strong> and would not be able to access <code>question</code> and <code>answer</code> from <code>module1</code>.</p>
-<p>Functions also have their own namespace:</p>
-<pre class="text"><code>def f():
+    <p>
+      If we had used <code>from module1 import *</code> and
+      <code>from module2 import *</code> instead, we would have a
+      <strong>naming collision</strong> and would not be able to access
+      <code>question</code> and <code>answer</code> from <code>module1</code>.
+    </p>
+    <p>Functions also have their own namespace:</p>
+    <pre class="text"><code>def f():
     n = 7
     print(&quot;printing n inside of f: {0}&quot;.format(n))
 
@@ -384,19 +823,43 @@ f()
 print(&quot;printing n after calling f: {0}&quot;.format(n))
 g()
 print(&quot;printing n after calling g: {0}&quot;.format(n))</code></pre>
-<p>Running this program produces the following output:</p>
-<pre class="text"><code>printing n before calling f: 11
+    <p>Running this program produces the following output:</p>
+    <pre class="text"><code>printing n before calling f: 11
 printing n inside of f: 7
 printing n after calling f: 11
 printing n inside of g: 42
 printing n after calling g: 11</code></pre>
-<p>The three <code>n</code>’s here do not collide since they are each in a different namespace.</p>
-<p>Namespaces permit several programmers to work on the same project without having naming collisions.</p>
-<h3 id="attributes-and-the-dot-operator">6.14. Attributes and the dot operator</h3>
-<p>Variables defined inside a module are called <strong>attributes</strong> of the module. They are accessed by using the <strong>dot operator</strong> ( <code>.</code>). The <code>question</code> attribute of <code>module1</code> and <code>module2</code> are accessed using <code>module1.question</code> and <code>module2.question</code>.</p>
-<p>Modules contain functions as well as attributes, and the dot operator is used to access them in the same way. <code>seqtools.remove_at</code> refers to the <code>remove_at</code> function in the <code>seqtools</code> module.</p>
-<p>In Chapter 7 we introduced the <code>find</code> function from the <code>string</code> module. The <code>string</code> module contains many other useful functions:</p>
-<pre class="text"><code>&gt;&gt;&gt; import string
+    <p>
+      The three <code>n</code>’s here do not collide since they are each in a
+      different namespace.
+    </p>
+    <p>
+      Namespaces permit several programmers to work on the same project without
+      having naming collisions.
+    </p>
+    <h3 id="attributes-and-the-dot-operator">
+      6.14. Attributes and the dot operator
+    </h3>
+    <p>
+      Variables defined inside a module are called
+      <strong>attributes</strong> of the module. They are accessed by using the
+      <strong>dot operator</strong> ( <code>.</code>). The
+      <code>question</code> attribute of <code>module1</code> and
+      <code>module2</code> are accessed using <code>module1.question</code> and
+      <code>module2.question</code>.
+    </p>
+    <p>
+      Modules contain functions as well as attributes, and the dot operator is
+      used to access them in the same way.
+      <code>seqtools.remove_at</code> refers to the
+      <code>remove_at</code> function in the <code>seqtools</code> module.
+    </p>
+    <p>
+      In Chapter 7 we introduced the <code>find</code> function from the
+      <code>string</code> module. The <code>string</code> module contains many
+      other useful functions:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; import string
 &gt;&gt;&gt; string.capitalize(&#39;maryland&#39;)
 &#39;Maryland&#39;
 &gt;&gt;&gt; string.capwords(&quot;what&#39;s all this, then, amen?&quot;)
@@ -406,27 +869,60 @@ printing n after calling g: 11</code></pre>
 &gt;&gt;&gt; string.upper(&#39;angola&#39;)
 &#39;ANGOLA&#39;
 &gt;&gt;&gt;</code></pre>
-<p>You should use pydoc to browse the other functions and attributes in the string module.</p>
-<h3 id="glossary">6.15. Glossary</h3>
-<p>dictionary</p>
-<p>A collection of key-value pairs that maps from keys to values. The keys can be any immutable type, and the values can be any type.file</p>
-<p>A named entity, usually stored on a hard drive, floppy disk, or CD-ROM, that contains a stream of characters.file system</p>
-<p>A method for naming, accessing, and organizing files and the data they contain.fully qualified name</p>
-<p>A name that is prefixed by some namespace identifier and the dot operator, or by an instance object, e.g. <code>math.sqrt</code> or <code>f.open('myfile.txt', 'r')</code>.handle</p>
-<p>An object in our program that is connected to an underlying resource (e.g. a file). The file handle lets our program manipulate / read/ write / close the actual file that is on our disk.import</p>
-<p>A statement which permits functions and variables defined in a Python script to be brought into the environment of another script or a running Python shell.For example, assume the following is in a script named <code>tryme.py</code>:</p>
-<pre class="text"><code>def print_thrice(thing):
+    <p>
+      You should use pydoc to browse the other functions and attributes in the
+      string module.
+    </p>
+    <h3 id="glossary">6.15. Glossary</h3>
+    <p>dictionary</p>
+    <p>
+      A collection of key-value pairs that maps from keys to values. The keys
+      can be any immutable type, and the values can be any type.file
+    </p>
+    <p>
+      A named entity, usually stored on a hard drive, floppy disk, or CD-ROM,
+      that contains a stream of characters.file system
+    </p>
+    <p>
+      A method for naming, accessing, and organizing files and the data they
+      contain.fully qualified name
+    </p>
+    <p>
+      A name that is prefixed by some namespace identifier and the dot operator,
+      or by an instance object, e.g. <code>math.sqrt</code> or
+      <code>f.open('myfile.txt', 'r')</code>.handle
+    </p>
+    <p>
+      An object in our program that is connected to an underlying resource
+      (e.g. a file). The file handle lets our program manipulate / read/ write /
+      close the actual file that is on our disk.import
+    </p>
+    <p>
+      A statement which permits functions and variables defined in a Python
+      script to be brought into the environment of another script or a running
+      Python shell.For example, assume the following is in a script named
+      <code>tryme.py</code>:
+    </p>
+    <pre class="text"><code>def print_thrice(thing):
     print thing, thing, thing
 
 n = 42
 s = &quot;And now for something completely different...&quot;</code></pre>
-<p>Now begin a python shell from within the same directory where <code>tryme.py</code> is located:</p>
-<pre class="text"><code>$ ls
+    <p>
+      Now begin a python shell from within the same directory where
+      <code>tryme.py</code> is located:
+    </p>
+    <pre class="text"><code>$ ls
 tryme.py
 $ python
 &gt;&gt;&gt;</code></pre>
-<p>Three names are defined in <code>tryme.py</code>: <code>print_thrice</code>, <code>n</code>, and <code>s</code>. If we try to access any of these in the shell without first importing, we get an error:</p>
-<pre class="text"><code>&gt;&gt;&gt; n
+    <p>
+      Three names are defined in <code>tryme.py</code>:
+      <code>print_thrice</code>, <code>n</code>, and <code>s</code>. If we try
+      to access any of these in the shell without first importing, we get an
+      error:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; n
 Traceback (most recent call last):
   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
 NameError: name &#39;n&#39; is not defined
@@ -434,8 +930,11 @@ NameError: name &#39;n&#39; is not defined
 Traceback (most recent call last):
   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
 NameError: name &#39;print_thrice&#39; is not defined</code></pre>
-<p>If we import everything from <code>tryme.py</code>, however, we can use everything defined in it:</p>
-<pre class="text"><code>&gt;&gt;&gt; from tryme import *
+    <p>
+      If we import everything from <code>tryme.py</code>, however, we can use
+      everything defined in it:
+    </p>
+    <pre class="text"><code>&gt;&gt;&gt; from tryme import *
 &gt;&gt;&gt; n
 42
 &gt;&gt;&gt; s
@@ -443,15 +942,50 @@ NameError: name &#39;print_thrice&#39; is not defined</code></pre>
 &gt;&gt;&gt; print_thrice(&quot;Yipee!&quot;)
 Yipee! Yipee! Yipee!
 &gt;&gt;&gt;</code></pre>
-<p>Note that you do not include the <code>.py</code> from the script name in the import statement.key</p>
-<p>A data item that is <em>mapped to</em> a value in a dictionary. Keys are used to look up values in a dictionary.key-value pair</p>
-<p>One of the pairs of items in a dictionary. Values are looked up in a dictionary by key.mapping type</p>
-<p>A mapping type is a data type comprised of a collection of keys and associated values. Python’s only built-in mapping type is the dictionary. Dictionaries implement the <a href="http://en.wikipedia.org/wiki/Associative_array">associative array</a> abstract data type.mode</p>
-<p>A distinct method of operation within a computer program. Files in Python can be openned in one of three modes: read (<code>'r'</code>), write (<code>'w'</code>), and append (<code>'a'</code>).non-volatile memory</p>
-<p>Memory that can maintain its state without power. Hard drives, flash drives, and rewritable compact disks (CD-RW) are each examples of non-volatile memory.path</p>
-<p>A sequence of directory names that specifies the exact location of a file.set</p>
-<p>A collection of unique, unordered elements.text file</p>
-<p>A file that contains printable characters organized into lines separated by newline characters.volatile memory</p>
-<p>Memory which requires an electrical current to maintain state. The <em>main memory</em> or RAM of a computer is volatile. Information stored in RAM is lost when the computer is turned off.</p>
-</body>
+    <p>
+      Note that you do not include the <code>.py</code> from the script name in
+      the import statement.key
+    </p>
+    <p>
+      A data item that is <em>mapped to</em> a value in a dictionary. Keys are
+      used to look up values in a dictionary.key-value pair
+    </p>
+    <p>
+      One of the pairs of items in a dictionary. Values are looked up in a
+      dictionary by key.mapping type
+    </p>
+    <p>
+      A mapping type is a data type comprised of a collection of keys and
+      associated values. Python’s only built-in mapping type is the dictionary.
+      Dictionaries implement the
+      <a href="http://en.wikipedia.org/wiki/Associative_array"
+        >associative array</a
+      >
+      abstract data type.mode
+    </p>
+    <p>
+      A distinct method of operation within a computer program. Files in Python
+      can be openned in one of three modes: read (<code>'r'</code>), write
+      (<code>'w'</code>), and append (<code>'a'</code>).non-volatile memory
+    </p>
+    <p>
+      Memory that can maintain its state without power. Hard drives, flash
+      drives, and rewritable compact disks (CD-RW) are each examples of
+      non-volatile memory.path
+    </p>
+    <p>
+      A sequence of directory names that specifies the exact location of a
+      file.set
+    </p>
+    <p>A collection of unique, unordered elements.text file</p>
+    <p>
+      A file that contains printable characters organized into lines separated
+      by newline characters.volatile memory
+    </p>
+    <p>
+      Memory which requires an electrical current to maintain state. The
+      <em>main memory</em> or RAM of a computer is volatile. Information stored
+      in RAM is lost when the computer is turned off.
+    </p>
+  </body>
 </html>

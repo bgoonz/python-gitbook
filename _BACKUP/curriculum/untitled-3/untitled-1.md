@@ -1,8 +1,6 @@
-D3- Module 03 - Python III
-==========================
+# D3- Module 03 - Python III
 
-Objective 02 - Perform basic list operations
---------------------------------------------
+## Objective 02 - Perform basic list operations
 
 ### Overview <span id="overview"></span>
 
@@ -92,8 +90,7 @@ Original:<https://colab.research.google.com/drive/1WXURLnQJopWW5J-OKxOePd4GTeDM5
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png)
 
-Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined HashTable class
---------------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Understand hash collisions and use a linked list for collision resolution in a user-defined HashTable class
 
 ### **Overview**
 
@@ -291,8 +288,7 @@ Great! We created the `put` method.
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/155e4481-6522-4f77-8cc1-72004e760287/Untitled.png)
 
-Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
---------------------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
 
 ### **Overview**
 
@@ -523,8 +519,7 @@ Fantastic, we did it!
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
 
-Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
---------------------------------------------------------------------------------------------------------------------------------------------
+## Objective 02 - Define and compute the load factor of a hash table and implement a hash table that automatically resizes based on load factor
 
 ### **Overview**
 
@@ -759,14 +754,15 @@ Fantastic, we did it!
 
 ### **Additional Resources**
 
--   [https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)](https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf)
+- [https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf (Links to an external site.)](https://courses.csail.mit.edu/6.006/spring11/rec/rec07.pdf)
 
-    for name, number in phonebook.items():
-        print("Name: %s, Number: %s" % (name, number))
+  for name, number in phonebook.items(): print("Name: %s, Number: %s" % (name, number))
 
-    # Name: Abe, Number: 4569874321
-    # Name: Bill, Number: 7659803241
-    # Name: Barry, Number: 6573214789
+  # Name: Abe, Number: 4569874321
+
+  # Name: Bill, Number: 7659803241
+
+  # Name: Barry, Number: 6573214789
 
 To remove a key-value pair from a dictionary, you need to use the `del` keyword or use the `pop()` method available on dictionary objects. The difference is `pop()` deletes the item from the dictionary and returns the value. When you use the `del` keyword, you’ve written a statement that doesn’t evaluate to anything.
 
@@ -825,7 +821,7 @@ Just like an object’s identity, once an object is created, its identity can ne
 
 #### Value <span id="value"></span>
 
-The value of some objects *can be changed* after they are created. The value of some objects *cannot be changed* after they are created. If the object’s value can be changed, that object is considered to be **mutable** (changeable). If the object’s value cannot be changed, that object is considered to be **immutable** (unchangeable).
+The value of some objects _can be changed_ after they are created. The value of some objects _cannot be changed_ after they are created. If the object’s value can be changed, that object is considered to be **mutable** (changeable). If the object’s value cannot be changed, that object is considered to be **immutable** (unchangeable).
 
 #### Mutable Objects <span id="mutable-objects"></span>
 
@@ -835,11 +831,11 @@ A mutable object is an object whose value can be changed after it is created. Th
 
 The following types of objects are mutable:
 
--   list
--   set
--   dict
--   byte array
--   instances of user-defined classes
+- list
+- set
+- dict
+- byte array
+- instances of user-defined classes
 
 Let’s look at a few examples in code:
 
@@ -908,21 +904,21 @@ On line 3, we append a new element to `my_list_orig`. Notice that, because both 
 
 On line 4, we removed the element `1` from `my_list_orig`. Notice, just like when we added to the list, `my_list_alias` is also affected.
 
-*This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.*
+_This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code._
 
 #### Immutable Objects <span id="immutable-objects"></span>
 
-An immutable object is an object whose value cannot be changed after it is created. Immutable means *not changeable*. Anytime you try to update the value of an immutable object, a new object is created instead.
+An immutable object is an object whose value cannot be changed after it is created. Immutable means _not changeable_. Anytime you try to update the value of an immutable object, a new object is created instead.
 
 The following types are immutable:
 
--   Numbers (int, float, complex)
--   Strings
--   Bytes
--   Booleans
--   Tuples
+- Numbers (int, float, complex)
+- Strings
+- Bytes
+- Booleans
+- Tuples
 
-Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more *expensive* to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.
+Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more _expensive_ to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.
 
 Let’s look at a few examples:
 
@@ -1051,12 +1047,11 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1">@bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1</span>” %}
 
--   [Home](https://lambdaschool.instructure.com/courses/1575)
--   [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
--   [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
+- [Home](https://lambdaschool.instructure.com/courses/1575)
+- [Grades](https://lambdaschool.instructure.com/courses/1575/grades)
+- [Modules](https://lambdaschool.instructure.com/courses/1575/modules)
 
-Objective 02 - Recognize mutable and immutable objects
-------------------------------------------------------
+## Objective 02 - Recognize mutable and immutable objects
 
 ### Overview <span id="overview"></span>
 
@@ -1137,7 +1132,7 @@ Just like an object’s identity, once an object is created, its identity can ne
 
 #### Value <span id="value"></span>
 
-The value of some objects *can be changed* after they are created. The value of some objects *cannot be changed* after they are created. If the object’s value can be changed, that object is considered to be **mutable** (changeable). If the object’s value cannot be changed, that object is considered to be **immutable** (unchangeable).
+The value of some objects _can be changed_ after they are created. The value of some objects _cannot be changed_ after they are created. If the object’s value can be changed, that object is considered to be **mutable** (changeable). If the object’s value cannot be changed, that object is considered to be **immutable** (unchangeable).
 
 #### Mutable Objects <span id="mutable-objects"></span>
 
@@ -1147,11 +1142,11 @@ A mutable object is an object whose value can be changed after it is created. Th
 
 The following types of objects are mutable:
 
--   list
--   set
--   dict
--   byte array
--   instances of user-defined classes
+- list
+- set
+- dict
+- byte array
+- instances of user-defined classes
 
 Let’s look at a few examples in code:
 
@@ -1220,21 +1215,21 @@ On line 3, we append a new element to `my_list_orig`. Notice that, because both 
 
 On line 4, we removed the element `1` from `my_list_orig`. Notice, just like when we added to the list, `my_list_alias` is also affected.
 
-*This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code.*
+_This behavior is something you need to be aware of if you ever use aliasing with mutable objects in your code._
 
 #### Immutable Objects <span id="immutable-objects"></span>
 
-An immutable object is an object whose value cannot be changed after it is created. Immutable means *not changeable*. Anytime you try to update the value of an immutable object, a new object is created instead.
+An immutable object is an object whose value cannot be changed after it is created. Immutable means _not changeable_. Anytime you try to update the value of an immutable object, a new object is created instead.
 
 The following types are immutable:
 
--   Numbers (int, float, complex)
--   Strings
--   Bytes
--   Booleans
--   Tuples
+- Numbers (int, float, complex)
+- Strings
+- Bytes
+- Booleans
+- Tuples
 
-Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more *expensive* to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.
+Immutable objects are useful when you want to make sure that the object you created will always maintain the same value. Immutable objects are more _expensive_ to change (in terms of time and space complexity) because changing the object requires making a copy of the existing object.
 
 Let’s look at a few examples:
 
@@ -1363,16 +1358,15 @@ Notice when an immutable object is passed into a function, the object is copied 
 
 ### Additional Resources <span id="additional-resources"></span>
 
--   [Mutable vs. Immutable Objects in Python - A Visual and Hands-On Guide (Links to an external site.)](https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/)
--   [Python Basics: Mutable vs. Immutable Objects (Links to an external site.)](https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a)
--   [What are mutable and immutable objects in Python3? (Links to an external site.)](https://www.educative.io/edpresso/what-are-mutable-and-immutable-objects-in-python3)
+- [Mutable vs. Immutable Objects in Python - A Visual and Hands-On Guide (Links to an external site.)](https://www.freecodecamp.org/news/mutable-vs-immutable-objects-python/)
+- [Python Basics: Mutable vs. Immutable Objects (Links to an external site.)](https://towardsdatascience.com/https-towardsdatascience-com-python-basics-mutable-vs-immutable-objects-829a0cb1530a)
+- [What are mutable and immutable objects in Python3? (Links to an external site.)](https://www.educative.io/edpresso/what-are-mutable-and-immutable-objects-in-python3)
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1">@bgoonz/cs-unit-1-sprint-1-module-3-mutable-and-immutable-objects-1</span>\#main.py” %}
 
 ![](../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%287%29.png)
 
-Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
-----------------------------------------------------------------------------------------------------
+## Objective 03 - Compare the time complexity of different approaches to a problem using Big O notation
 
 ### Overview <span id="overview"></span>
 
@@ -1384,9 +1378,9 @@ An algorithm is a set of instructions for accomplishing a task. Within this broa
 
 After coming up with a first-pass solution to a problem, we need to measure how “good” our answer is. Will it stand up to the test of millions of users? Is it fast enough that our users will be blown away by how quickly they get their results? Or will torturously slow speeds cause lag that scares them all away?
 
-When given a choice between different algorithms, we want to choose the most efficient algorithm (considering both *time* and *space* efficiency depending on our needs).
+When given a choice between different algorithms, we want to choose the most efficient algorithm (considering both _time_ and _space_ efficiency depending on our needs).
 
-*Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for.*
+_Note: It is common for your first solution to work with a few items or users and break as you add more. Making sure that the solutions scale is something all developers must look out for._
 
 #### What is Big O notation? <span id="what-is-big-o-notation"></span>
 
@@ -1398,7 +1392,7 @@ The specific terms of Big O notation describe how fast the runtime grows (relati
 
 Why do we focus on the growth of runtime versus exact runtime? The actual runtime depends on the specific computer running the algorithm, so we cannot compare efficiencies that way. By focusing on the general growth, we can avoid exact runtime differences between machines and environments.
 
-We also talk about runtime relative to the input size because we need to express our speed in terms of *something*. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.
+We also talk about runtime relative to the input size because we need to express our speed in terms of _something_. So we show the speed of the algorithm in terms of the input size. That way, we can see how the speed reacts as the input size grows.
 
 We don’t care about speed when the input size is small. The differences in speed are likely to be minimal when the input size is small. When the input size gets enormous, we can see the differences in efficiency between algorithms.
 
@@ -1414,7 +1408,7 @@ Besides the table, it’s also essential to look at the curves of these differen
 
 Again, `n` represents the size of the data, and on the chart above, `N` represents the number of operations. This visualization should help illustrate why `O(1)` or `O(log n)` is the most desirable.
 
-*Note: Big O only matters for large data sets. An `O(n^3)` solution is adequate, as long as you can guarantee that your datasets will always be small.*
+_Note: Big O only matters for large data sets. An `O(n^3)` solution is adequate, as long as you can guarantee that your datasets will always be small._
 
 #### A few examples <span id="a-few-examples"></span>
 
@@ -1498,7 +1492,7 @@ Let’s consider the following function:
 
 What would the result be if it just so happens that the `thing_we_are_trying_to_find` in `list_of_things` is the very first item in the list? The function would only have to look at one item in `list_of_things` before returning. In this case, it would be `O(1)`. But, when we talk about a function’s complexity, we usually assume the “worst case.” What would the “worst-case” be? It would be if it were the last item in `list_of_things`. In that case, we would have to look through all the `list_of_things`, and that complexity would be `O(n)`.
 
-*Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:* [*Big-Theta notation (Links to an external site.)*](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation) *and* [*Big-O notation (Links to an external site.)*](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)*.*
+_Note: When talking about runtime complexity in casual conversation, engineers often blur the distinction between big theta and big O notation. In reality, these are two distinct ways of describing an algorithm. Big theta gives both an upper and a lower bound for the running time. Big O only provides an upper bound. Refer to the following articles for a deeper dive:_ [_Big-Theta notation (Links to an external site.)_](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-big-theta-notation) _and_ [_Big-O notation (Links to an external site.)_](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation)_._
 
 #### Do constants ever matter? <span id="do-constants-ever-matter"></span>
 
@@ -1518,7 +1512,7 @@ Let’s look at a few code snippets and classify their runtime complexity using 
             print(i)
             i *= 2
 
-First, let’s think about what the above function is doing. It’s printing `i`…but `i` is not being incremented by 1, as we usually see. It’s *doubled* every time we run the loop. So, for example, if `n = 100`, then the final result would be…
+First, let’s think about what the above function is doing. It’s printing `i`…but `i` is not being incremented by 1, as we usually see. It’s _doubled_ every time we run the loop. So, for example, if `n = 100`, then the final result would be…
 
     1
     2
@@ -1537,7 +1531,7 @@ Or if `n = 10`, then we would print…
 
 We can use the process of elimination to narrow down which runtime classification makes sense for this algorithm. The number of times the loop runs seems to vary based on the value of `n`, so this is NOT O(1).
 
-From the above examples, we can also see that the number of times the loop runs is increasing *slower* than the input size is increasing. `n` must be *doubled* before the loop will run one more time. We can eliminate classifications such as `O(n log n)`, `O(n^c)`, `O(c^n)`, and `O(n!)`.
+From the above examples, we can also see that the number of times the loop runs is increasing _slower_ than the input size is increasing. `n` must be _doubled_ before the loop will run one more time. We can eliminate classifications such as `O(n log n)`, `O(n^c)`, `O(c^n)`, and `O(n!)`.
 
 The only two options left at this point are logarithmic and linear. Since the two growth rates (input, the number of operations) are not the same, **this function must run in logarithmic time!**
 

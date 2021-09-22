@@ -1,138 +1,455 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>untitled</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="useful-info">Useful Info</h1>
-<h4 id="big-o-cheat-sheet">Big O Cheat Sheet</h4>
-<p><img src="../.gitbook/assets/image%20%282%29%20%281%29.png" /></p>
-<p>{% embed url=“https://codesandbox.io/s/3wqy4” %}</p>
-<h2 id="repl.it-python-course">REPL.it Python Course</h2>
-<p><a href="https://codesandbox.io/s/iframe-inception-forked-hr6q8?autoresize=1&amp;expanddevtools=1&amp;fontsize=14&amp;hidenavigation=1&amp;theme=dark"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Edit iframe inception (forked)" /></a></p>
-<p>{% embed url=“https://codesandbox.io/embed/iframe-inception-forked-7zh6v?autoresize=1&amp;codemirror=1&amp;fontsize=10&amp;hidenavigation=1&amp;theme=light&amp;view=preview” %}</p>
-<h2 id="built-in-functions">Built-in Functions:</h2>
-<p>{% embed url=“https://docs.python.org/3/library/functions.html#dir” %}</p>
-<p>The Python interpreter has a number of functions and types built into it that are always available. They are listed here in alphabetical order.</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Built-in Functions</th>
-<th style="text-align: left;"></th>
-<th style="text-align: left;"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#abs"><code>abs()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#delattr"><code>delattr()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#hash"><code>hash()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-memoryview"><code>memoryview()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-set"><code>set()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#all"><code>all()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-dict"><code>dict()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#help"><code>help()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#min"><code>min()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#setattr"><code>setattr()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#any"><code>any()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#dir"><code>dir()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#hex"><code>hex()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#next"><code>next()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#slice"><code>slice()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#ascii"><code>ascii()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#divmod"><code>divmod()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#id"><code>id()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#object"><code>object()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#sorted"><code>sorted()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#bin"><code>bin()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#enumerate"><code>enumerate()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#input"><code>input()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#oct"><code>oct()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#staticmethod"><code>staticmethod()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#bool"><code>bool()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#eval"><code>eval()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#int"><code>int()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#open"><code>open()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-str"><code>str()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#breakpoint"><code>breakpoint()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#exec"><code>exec()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#isinstance"><code>isinstance()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#ord"><code>ord()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#sum"><code>sum()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-bytearray"><code>bytearray()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#filter"><code>filter()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#issubclass"><code>issubclass()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#pow"><code>pow()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#super"><code>super()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-bytes"><code>bytes()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#float"><code>float()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#iter"><code>iter()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#print"><code>print()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-tuple"><code>tuple()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#callable"><code>callable()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#format"><code>format()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#len"><code>len()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#property"><code>property()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#type"><code>type()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#chr"><code>chr()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-frozenset"><code>frozenset()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-list"><code>list()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#func-range"><code>range()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#vars"><code>vars()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#classmethod"><code>classmethod()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#getattr"><code>getattr()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#locals"><code>locals()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#repr"><code>repr()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#zip"><code>zip()</code></a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#compile"><code>compile()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#globals"><code>globals()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#map"><code>map()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#reversed"><code>reversed()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#__import__"><code>__import__()</code></a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#complex"><code>complex()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#hasattr"><code>hasattr()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#max"><code>max()</code></a></td>
-<td style="text-align: left;"><a href="https://docs.python.org/3/library/functions.html#round"><code>round()</code></a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>untitled</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="useful-info">Useful Info</h1>
+    <h4 id="big-o-cheat-sheet">Big O Cheat Sheet</h4>
+    <p><img src="../.gitbook/assets/image%20%282%29%20%281%29.png" /></p>
+    <p>{% embed url=“https://codesandbox.io/s/3wqy4” %}</p>
+    <h2 id="repl.it-python-course">REPL.it Python Course</h2>
+    <p>
+      <a
+        href="https://codesandbox.io/s/iframe-inception-forked-hr6q8?autoresize=1&amp;expanddevtools=1&amp;fontsize=14&amp;hidenavigation=1&amp;theme=dark"
+        ><img
+          src="https://codesandbox.io/static/img/play-codesandbox.svg"
+          alt="Edit iframe inception (forked)"
+      /></a>
+    </p>
+    <p>
+      {% embed
+      url=“https://codesandbox.io/embed/iframe-inception-forked-7zh6v?autoresize=1&amp;codemirror=1&amp;fontsize=10&amp;hidenavigation=1&amp;theme=light&amp;view=preview”
+      %}
+    </p>
+    <h2 id="built-in-functions">Built-in Functions:</h2>
+    <p>
+      {% embed url=“https://docs.python.org/3/library/functions.html#dir” %}
+    </p>
+    <p>
+      The Python interpreter has a number of functions and types built into it
+      that are always available. They are listed here in alphabetical order.
+    </p>
+    <table>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Built-in Functions</th>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#abs"
+              ><code>abs()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#delattr"
+              ><code>delattr()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#hash"
+              ><code>hash()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-memoryview"
+              ><code>memoryview()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#func-set"
+              ><code>set()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#all"
+              ><code>all()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#func-dict"
+              ><code>dict()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#help"
+              ><code>help()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#min"
+              ><code>min()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#setattr"
+              ><code>setattr()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#any"
+              ><code>any()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#dir"
+              ><code>dir()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#hex"
+              ><code>hex()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#next"
+              ><code>next()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#slice"
+              ><code>slice()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#ascii"
+              ><code>ascii()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#divmod"
+              ><code>divmod()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#id"
+              ><code>id()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#object"
+              ><code>object()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#sorted"
+              ><code>sorted()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#bin"
+              ><code>bin()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#enumerate"
+              ><code>enumerate()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#input"
+              ><code>input()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#oct"
+              ><code>oct()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#staticmethod"
+              ><code>staticmethod()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#bool"
+              ><code>bool()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#eval"
+              ><code>eval()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#int"
+              ><code>int()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#open"
+              ><code>open()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#func-str"
+              ><code>str()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#breakpoint"
+              ><code>breakpoint()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#exec"
+              ><code>exec()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#isinstance"
+              ><code>isinstance()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#ord"
+              ><code>ord()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#sum"
+              ><code>sum()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-bytearray"
+              ><code>bytearray()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#filter"
+              ><code>filter()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#issubclass"
+              ><code>issubclass()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#pow"
+              ><code>pow()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#super"
+              ><code>super()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-bytes"
+              ><code>bytes()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#float"
+              ><code>float()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#iter"
+              ><code>iter()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#print"
+              ><code>print()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-tuple"
+              ><code>tuple()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#callable"
+              ><code>callable()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#format"
+              ><code>format()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#len"
+              ><code>len()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#property"
+              ><code>property()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#type"
+              ><code>type()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#chr"
+              ><code>chr()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-frozenset"
+              ><code>frozenset()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#func-list"
+              ><code>list()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#func-range"
+              ><code>range()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#vars"
+              ><code>vars()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#classmethod"
+              ><code>classmethod()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#getattr"
+              ><code>getattr()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#locals"
+              ><code>locals()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#repr"
+              ><code>repr()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#zip"
+              ><code>zip()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#compile"
+              ><code>compile()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#globals"
+              ><code>globals()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#map"
+              ><code>map()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#reversed"
+              ><code>reversed()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a
+              href="https://docs.python.org/3/library/functions.html#__import__"
+              ><code>__import__()</code></a
+            >
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#complex"
+              ><code>complex()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#hasattr"
+              ><code>hasattr()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#max"
+              ><code>max()</code></a
+            >
+          </td>
+          <td style="text-align: left">
+            <a href="https://docs.python.org/3/library/functions.html#round"
+              ><code>round()</code></a
+            >
+          </td>
+          <td style="text-align: left"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

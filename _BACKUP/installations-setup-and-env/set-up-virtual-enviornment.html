@@ -1,118 +1,328 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>set-up-virtual-enviornment</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="set-up-virtual-enviornment">Set Up Virtual Enviornment</h1>
-<h3 id="venv">Venv</h3>
-<h3 id="setting-up-virtual-environments">Setting up Virtual Environments</h3>
-<p>To start with project, it would be better to have a virtual environment. Virtual environment can help us to create an isolated or separate environment. This will help us to avoid conflicts in dependencies across projects. If you write pip freeze on your terminal you will see all the installed packages on your computer. If we use virtualenv, we will access only packages which are specific for that project. Open your terminal and install virtualenv</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~$ pip install virtualenv</a></code></pre></div>
-<p>Inside the 30DaysOfPython folder create a flask_project folder.</p>
-<p>After installing the virtualenv package go to your project folder and create a virtual env by writing:</p>
-<p>For Mac/Linux:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project<span class="dt">\$</span> virtualenv venv</a></code></pre></div>
-<p>For Windows:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span>python -m venv venv</a></code></pre></div>
-<p>I prefer to call the new project venv, but feel free to name it differently. Let us check if the the venv was created by using ls (or dir for windows command prompt) command.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ ls</a>
-<a class="sourceLine" id="cb4-2" title="2"><span class="ex">venv/</span></a></code></pre></div>
-<p>Let us activate the virtual environment by writing the following command at our project folder.</p>
-<p>For Mac/Linux:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ source venv/bin/activate</a></code></pre></div>
-<p>Activation of the virtual environment in Windows may very on Windows Power shell and git bash.</p>
-<p>For Windows Power Shell:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span> venv\Scripts\activate</a></code></pre></div>
-<p>For Windows Git bash:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span> venv\Scripts\. activate</a></code></pre></div>
-<p>After you write the activation command, your project directory will start with venv. See the example below.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$</a></code></pre></div>
-<p>Now, lets check the available packages in this project by writing pip freeze. You will not see any packages.</p>
-<p>We are going to do a small flask project so let us install flask package to this project.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ pip install Flask</a></code></pre></div>
-<p>Now, let us write pip freeze to see a list of installed packages in the project:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ pip freeze</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>set-up-virtual-enviornment</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="set-up-virtual-enviornment">Set Up Virtual Enviornment</h1>
+    <h3 id="venv">Venv</h3>
+    <h3 id="setting-up-virtual-environments">
+      Setting up Virtual Environments
+    </h3>
+    <p>
+      To start with project, it would be better to have a virtual environment.
+      Virtual environment can help us to create an isolated or separate
+      environment. This will help us to avoid conflicts in dependencies across
+      projects. If you write pip freeze on your terminal you will see all the
+      installed packages on your computer. If we use virtualenv, we will access
+      only packages which are specific for that project. Open your terminal and
+      install virtualenv
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~$ pip install virtualenv</a></code></pre>
+    </div>
+    <p>Inside the 30DaysOfPython folder create a flask_project folder.</p>
+    <p>
+      After installing the virtualenv package go to your project folder and
+      create a virtual env by writing:
+    </p>
+    <p>For Mac/Linux:</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project<span class="dt">\$</span> virtualenv venv</a></code></pre>
+    </div>
+    <p>For Windows:</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span>python -m venv venv</a></code></pre>
+    </div>
+    <p>
+      I prefer to call the new project venv, but feel free to name it
+      differently. Let us check if the the venv was created by using ls (or dir
+      for windows command prompt) command.
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ ls</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="ex">venv/</span></a></code></pre>
+    </div>
+    <p>
+      Let us activate the virtual environment by writing the following command
+      at our project folder.
+    </p>
+    <p>For Mac/Linux:</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ source venv/bin/activate</a></code></pre>
+    </div>
+    <p>
+      Activation of the virtual environment in Windows may very on Windows Power
+      shell and git bash.
+    </p>
+    <p>For Windows Power Shell:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span> venv\Scripts\activate</a></code></pre>
+    </div>
+    <p>For Windows Git bash:</p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">C</span>:\Users\User\Documents\30DaysOfPython\flask_project<span class="op">&gt;</span> venv\Scripts\. activate</a></code></pre>
+    </div>
+    <p>
+      After you write the activation command, your project directory will start
+      with venv. See the example below.
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$</a></code></pre>
+    </div>
+    <p>
+      Now, lets check the available packages in this project by writing pip
+      freeze. You will not see any packages.
+    </p>
+    <p>
+      We are going to do a small flask project so let us install flask package
+      to this project.
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ pip install Flask</a></code></pre>
+    </div>
+    <p>
+      Now, let us write pip freeze to see a list of installed packages in the
+      project:
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython/flask_project$ pip freeze</a>
 <a class="sourceLine" id="cb10-2" title="2"><span class="va">Click=</span>=<span class="ex">7.0</span></a>
 <a class="sourceLine" id="cb10-3" title="3"><span class="va">Flask=</span>=<span class="ex">1.1.1</span></a>
 <a class="sourceLine" id="cb10-4" title="4"><span class="va">itsdangerous=</span>=<span class="ex">1.1.0</span></a>
 <a class="sourceLine" id="cb10-5" title="5"><span class="va">Jinja2=</span>=<span class="ex">2.10.3</span></a>
 <a class="sourceLine" id="cb10-6" title="6"><span class="va">MarkupSafe=</span>=<span class="ex">1.1.1</span></a>
-<a class="sourceLine" id="cb10-7" title="7"><span class="va">Werkzeug=</span>=<span class="ex">0.16.0</span></a></code></pre></div>
-<p>When you finish you should dactivate active project using <em>deactivate</em>.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython$ deactivate</a></code></pre></div>
-<p>The necessary modules to work with flask are installed. Now, your project directory is ready for a flask project. You should include the venv to your .gitignore file not to push it to github.</p>
-</body>
+<a class="sourceLine" id="cb10-7" title="7"><span class="va">Werkzeug=</span>=<span class="ex">0.16.0</span></a></code></pre>
+    </div>
+    <p>
+      When you finish you should dactivate active project using
+      <em>deactivate</em>.
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode bash"
+      ><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">(</span><span class="ex">venv</span><span class="kw">)</span> <span class="ex">asabeneh@Asabeneh</span>:~/Desktop/30DaysOfPython$ deactivate</a></code></pre>
+    </div>
+    <p>
+      The necessary modules to work with flask are installed. Now, your project
+      directory is ready for a flask project. You should include the venv to
+      your .gitignore file not to push it to github.
+    </p>
+  </body>
 </html>

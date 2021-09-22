@@ -1,5 +1,4 @@
-Python Modules & Python Packages
-================================
+# Python Modules & Python Packages
 
 This article explores Python **modules** and Python **packages**, two mechanisms that facilitate **modular programming**.
 
@@ -7,10 +6,10 @@ This article explores Python **modules** and Python **packages**, two mechanisms
 
 There are several advantages to **modularizing** code in a large application:
 
--   **Simplicity:** Rather than focusing on the entire problem at hand, a module typically focuses on one relatively small portion of the problem. If you’re working on a single module, you’ll have a smaller problem domain to wrap your head around. This makes development easier and less error-prone.
--   **Maintainability:** Modules are typically designed so that they enforce logical boundaries between different problem domains. If modules are written in a way that minimizes interdependency, there is decreased likelihood that modifications to a single module will have an impact on other parts of the program. (You may even be able to make changes to a module without having any knowledge of the application outside that module.) This makes it more viable for a team of many programmers to work collaboratively on a large application.
--   **Reusability:** Functionality defined in a single module can be easily reused (through an appropriately defined interface) by other parts of the application. This eliminates the need to duplicate code.
--   **Scoping:** Modules typically define a separate [**namespace**](https://realpython.com/python-namespaces-scope/), which helps avoid collisions between identifiers in different areas of a program. (One of the tenets in the [Zen of Python](https://www.python.org/dev/peps/pep-0020) is *Namespaces are one honking great idea—let’s do more of those!*)
+- **Simplicity:** Rather than focusing on the entire problem at hand, a module typically focuses on one relatively small portion of the problem. If you’re working on a single module, you’ll have a smaller problem domain to wrap your head around. This makes development easier and less error-prone.
+- **Maintainability:** Modules are typically designed so that they enforce logical boundaries between different problem domains. If modules are written in a way that minimizes interdependency, there is decreased likelihood that modifications to a single module will have an impact on other parts of the program. (You may even be able to make changes to a module without having any knowledge of the application outside that module.) This makes it more viable for a team of many programmers to work collaboratively on a large application.
+- **Reusability:** Functionality defined in a single module can be easily reused (through an appropriately defined interface) by other parts of the application. This eliminates the need to duplicate code.
+- **Scoping:** Modules typically define a separate [**namespace**](https://realpython.com/python-namespaces-scope/), which helps avoid collisions between identifiers in different areas of a program. (One of the tenets in the [Zen of Python](https://www.python.org/dev/peps/pep-0020) is _Namespaces are one honking great idea—let’s do more of those!_)
 
 **Functions**, **modules** and **packages** are all constructs in Python that promote code modularization.
 
@@ -30,7 +29,7 @@ Here, the focus will mostly be on modules that are written in Python. The cool t
 
 For example, suppose you have created a file called `mod.py` containing the following:
 
-***mod.py***
+**_mod.py_**
 
     s = "If Comrade Napoleon says it, it must be right."
     a = [100, 200, 300]
@@ -43,10 +42,10 @@ For example, suppose you have created a file called `mod.py` containing the foll
 
 Several objects are defined in `mod.py`:
 
--   `s` (a string)
--   `a` (a list)
--   `foo()` (a function)
--   `Foo` (a class)
+- `s` (a string)
+- `a` (a list)
+- `foo()` (a function)
+- `Foo` (a class)
 
 Assuming `mod.py` is in an appropriate location, which you will learn more about shortly, these objects can be accessed by **importing** the module as follows:&gt;&gt;&gt;
 
@@ -71,9 +70,9 @@ Continuing with the above example, let’s take a look at what happens when Pyth
 
 When the interpreter executes the above `import` statement, it searches for `mod.py` in a [list](https://realpython.com/python-lists-tuples/) of directories assembled from the following sources:
 
--   The directory from which the input script was run or the **current directory** if the interpreter is being run interactively
--   The list of directories contained in the [`PYTHONPATH`](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH) environment variable, if it is set. (The format for `PYTHONPATH` is OS-dependent but should mimic the `PATH` environment variable.)
--   An installation-dependent list of directories configured at the time Python is installed
+- The directory from which the input script was run or the **current directory** if the interpreter is being run interactively
+- The list of directories contained in the [`PYTHONPATH`](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH) environment variable, if it is set. (The format for `PYTHONPATH` is OS-dependent but should mimic the `PATH` environment variable.)
+- An installation-dependent list of directories configured at the time Python is installed
 
 The resulting search path is accessible in the Python variable `sys.path`, which is obtained from a module named `sys`:&gt;&gt;&gt;
 
@@ -87,10 +86,10 @@ The resulting search path is accessible in the Python variable `sys.path`, which
 
 Thus, to ensure your module is found, you need to do one of the following:
 
--   Put `mod.py` in the directory where the input script is located or the **current directory**, if interactive
--   Modify the `PYTHONPATH` environment variable to contain the directory where `mod.py` is located before starting the interpreter
-    -   **Or:** Put `mod.py` in one of the directories already contained in the `PYTHONPATH` variable
--   Put `mod.py` in one of the installation-dependent directories, which you may or may not have write-access to, depending on the OS
+- Put `mod.py` in the directory where the input script is located or the **current directory**, if interactive
+- Modify the `PYTHONPATH` environment variable to contain the directory where `mod.py` is located before starting the interpreter
+  - **Or:** Put `mod.py` in one of the directories already contained in the `PYTHONPATH` variable
+- Put `mod.py` in one of the installation-dependent directories, which you may or may not have write-access to, depending on the OS
 
 There is actually one additional option: you can put the module file in any directory of your choice and then modify `sys.path` at run-time so that it contains that directory. For example, in this case, you could put `mod.py` in directory `C:\Users\john` and then issue the following statements:&gt;&gt;&gt;
 
@@ -123,9 +122,9 @@ The simplest form is the one already shown above:
 
     import <module_name>
 
-Note that this *does not* make the module contents *directly* accessible to the caller. Each module has its own **private symbol table**, which serves as the global symbol table for all objects defined *in the module*. Thus, a module creates a separate **namespace**, as already noted.
+Note that this _does not_ make the module contents _directly_ accessible to the caller. Each module has its own **private symbol table**, which serves as the global symbol table for all objects defined _in the module_. Thus, a module creates a separate **namespace**, as already noted.
 
-The statement `import <module_name>` only places `<module_name>` in the caller’s symbol table. The *objects* that are defined in the module *remain in the module’s private symbol table*.
+The statement `import <module_name>` only places `<module_name>` in the caller’s symbol table. The _objects_ that are defined in the module _remain in the module’s private symbol table_.
 
 From the caller, objects in the module are only accessible when prefixed with `<module_name>` via **dot notation**, as illustrated below.
 
@@ -157,7 +156,7 @@ Several comma-separated modules may be specified in a single `import` statement:
 
 #### `from <module_name> import <name(s)>`
 
-An alternate form of the `import` statement allows individual objects from the module to be imported *directly into the caller’s symbol table*:
+An alternate form of the `import` statement allows individual objects from the module to be imported _directly into the caller’s symbol table_:
 
     from <module_name> import <name(s)>
 
@@ -174,7 +173,7 @@ Following execution of the above statement, `<name(s)>` can be referenced in the
     >>> x
     <mod.Foo object at 0x02E3AD50>
 
-Because this form of `import` places the object names directly into the caller’s symbol table, any objects that already exist with the same name will be *overwritten*:&gt;&gt;&gt;
+Because this form of `import` places the object names directly into the caller’s symbol table, any objects that already exist with the same name will be _overwritten_:&gt;&gt;&gt;
 
     >>> a = ['foo', 'bar', 'baz']
     >>> a
@@ -188,7 +187,7 @@ It is even possible to indiscriminately `import` everything from a module at one
 
     from <module_name> import *
 
-This will place the names of *all* objects from `<module_name>` into the local symbol table, with the exception of any that begin with the underscore (`_`) character.
+This will place the names of _all_ objects from `<module_name>` into the local symbol table, with the exception of any that begin with the underscore (`_`) character.
 
 For example:&gt;&gt;&gt;
 
@@ -202,7 +201,7 @@ For example:&gt;&gt;&gt;
     >>> Foo
     <class 'mod.Foo'>
 
-This isn’t necessarily recommended in large-scale production code. It’s a bit dangerous because you are entering names into the local symbol table *en masse*. Unless you know them all well and can be confident there won’t be a conflict, you have a decent chance of overwriting an existing name inadvertently. However, this syntax is quite handy when you are just mucking around with the interactive interpreter, for testing or discovery purposes, because it quickly gives you access to everything a module has to offer without a lot of typing.
+This isn’t necessarily recommended in large-scale production code. It’s a bit dangerous because you are entering names into the local symbol table _en masse_. Unless you know them all well and can be confident there won’t be a conflict, you have a decent chance of overwriting an existing name inadvertently. However, this syntax is quite handy when you are just mucking around with the interactive interpreter, for testing or discovery purposes, because it quickly gives you access to everything a module has to offer without a lot of typing.
 
 #### `from <module_name> import <name> as <alt_name>`
 
@@ -239,7 +238,7 @@ You can also import an entire module under an alternate name:
     >>> my_module.foo('qux')
     arg = qux
 
-Module contents can be imported from within a [function definition](https://realpython.com/defining-your-own-python-function/). In that case, the `import` does not occur until the function is *called*:&gt;&gt;&gt;
+Module contents can be imported from within a [function definition](https://realpython.com/defining-your-own-python-function/). In that case, the `import` does not occur until the function is _called_:&gt;&gt;&gt;
 
     >>> def bar():
     ...     from mod import foo
@@ -358,7 +357,7 @@ Any `.py` file that contains a **module** is essentially also a Python **script*
 
 Here again is `mod.py` as it was defined above:
 
-***mod.py***
+**_mod.py_**
 
     s = "If Comrade Napoleon says it, it must be right."
     a = [100, 200, 300]
@@ -374,11 +373,11 @@ This can be run as a script:
     C:\Users\john\Documents>python mod.py
     C:\Users\john\Documents>
 
-There are no errors, so it apparently worked. Granted, it’s not very interesting. As it is written, it only *defines* objects. It doesn’t *do* anything with them, and it doesn’t generate any output.
+There are no errors, so it apparently worked. Granted, it’s not very interesting. As it is written, it only _defines_ objects. It doesn’t _do_ anything with them, and it doesn’t generate any output.
 
 Let’s modify the above Python module so it does generate some output when run as a script:
 
-***mod.py***
+**_mod.py_**
 
     s = "If Comrade Napoleon says it, it must be right."
     a = [100, 200, 300]
@@ -419,7 +418,7 @@ Ask and ye shall receive.
 
 When a `.py` file is imported as a module, Python sets the special **dunder** variable [`__name__`](https://realpython.com/python-main-function/) to the name of the module. However, if a file is run as a standalone script, `__name__` is (creatively) set to the string `'__main__'`. Using this fact, you can discern which is the case at run-time and alter behavior accordingly:
 
-***mod.py***
+**_mod.py_**
 
     s = "If Comrade Napoleon says it, it must be right."
     a = [100, 200, 300]
@@ -455,7 +454,7 @@ But if you import as a module, you don’t:&gt;&gt;&gt;
 
 Modules are often designed with the capability to run as a standalone script for purposes of testing the functionality that is contained within the module. This is referred to as [**unit testing**](https://realpython.com/python-testing/)**.** For example, suppose you have created a module `fact.py` containing a **factorial** function, as follows:
 
-***fact.py***
+**_fact.py_**
 
     def fact(n):
         return 1 if n == 1 else n * fact(n-1)
@@ -480,11 +479,11 @@ But it can also be run as a standalone by passing an integer argument on the com
 
 ### Reloading a Module
 
-For reasons of efficiency, a module is only loaded once per interpreter session. That is fine for function and class definitions, which typically make up the bulk of a module’s contents. But a module can contain executable statements as well, usually for initialization. Be aware that these statements will only be executed the *first time* a module is imported.
+For reasons of efficiency, a module is only loaded once per interpreter session. That is fine for function and class definitions, which typically make up the bulk of a module’s contents. But a module can contain executable statements as well, usually for initialization. Be aware that these statements will only be executed the _first time_ a module is imported.
 
 Consider the following file `mod.py`:
 
-***mod.py***
+**_mod.py_**
 
     a = [100, 200, 300]
     print('a =', a)
@@ -523,7 +522,7 @@ Creating a **package** is quite straightforward, since it makes use of the opera
 
 Here, there is a directory named `pkg` that contains two modules, `mod1.py` and `mod2.py`. The contents of the modules are:
 
-***mod1.py***
+**_mod1.py_**
 
     def foo():
         print('[mod1] foo()')
@@ -531,7 +530,7 @@ Here, there is a directory named `pkg` that contains two modules, `mod1.py` and 
     class Foo:
         pass
 
-***mod2.py***
+**_mod2.py_**
 
     def bar():
         print('[mod2] bar()')
@@ -590,7 +589,7 @@ You can technically import the package as well:&gt;&gt;&gt;
     >>> pkg
     <module 'pkg' (namespace)>
 
-But this is of little avail. Though this is, strictly speaking, a syntactically correct Python statement, it doesn’t do much of anything useful. In particular, it *does not place* any of the modules in `pkg` into the local namespace:&gt;&gt;&gt;
+But this is of little avail. Though this is, strictly speaking, a syntactically correct Python statement, it doesn’t do much of anything useful. In particular, it _does not place_ any of the modules in `pkg` into the local namespace:&gt;&gt;&gt;
 
     >>> pkg.mod1
     Traceback (most recent call last):
@@ -616,7 +615,7 @@ If a file named `__init__.py` is present in a package directory, it is invoked w
 
 For example, consider the following `__init__.py` file:
 
-***\_\_init\_\_.py***
+**_\_\_init\_\_.py_**
 
     print(f'Invoking __init__.py for {__name__}')
     A = ['quux', 'corge', 'grault']
@@ -632,7 +631,7 @@ Now when the package is imported, the global list `A` is initialized:&gt;&gt;&gt
 
 A **module** in the package can access the global variable by importing it in turn:
 
-***mod1.py***
+**_mod1.py_**
 
     def foo():
         from pkg import A
@@ -650,7 +649,7 @@ A **module** in the package can access the global variable by importing it in tu
 
 `__init__.py` can also be used to effect automatic importing of modules from a package. For example, earlier you saw that the statement `import pkg` only places the name `pkg` in the caller’s local symbol table and doesn’t import any modules. But if `__init__.py` in the `pkg` directory contains the following:
 
-***\_\_init\_\_.py***
+**_\_\_init\_\_.py_**
 
     print(f'Invoking __init__.py for {__name__}')
     import pkg.mod1, pkg.mod2
@@ -674,7 +673,7 @@ For the purposes of the following discussion, the previously defined package is 
 
 There are now four modules defined in the `pkg` directory. Their contents are as shown below:
 
-***mod1.py***
+**_mod1.py_**
 
     def foo():
         print('[mod1] foo()')
@@ -682,7 +681,7 @@ There are now four modules defined in the `pkg` directory. Their contents are as
     class Foo:
         pass
 
-***mod2.py***
+**_mod2.py_**
 
     def bar():
         print('[mod2] bar()')
@@ -690,7 +689,7 @@ There are now four modules defined in the `pkg` directory. Their contents are as
     class Bar:
         pass
 
-***mod3.py***
+**_mod3.py_**
 
     def baz():
         print('[mod3] baz()')
@@ -698,7 +697,7 @@ There are now four modules defined in the `pkg` directory. Their contents are as
     class Baz:
         pass
 
-***mod4.py***
+**_mod4.py_**
 
     def qux():
         print('[mod4] qux()')
@@ -708,7 +707,7 @@ There are now four modules defined in the `pkg` directory. Their contents are as
 
 (Imaginative, aren’t they?)
 
-You have already seen that when `import *` is used for a **module**, *all* objects from the module are imported into the local symbol table, except those whose names begin with an underscore, as always:&gt;&gt;&gt;
+You have already seen that when `import *` is used for a **module**, _all_ objects from the module are imported into the local symbol table, except those whose names begin with an underscore, as always:&gt;&gt;&gt;
 
     >>> dir()
     ['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__',
@@ -745,7 +744,7 @@ Instead, Python follows this convention: if the `__init__.py` file in the **pack
 
 For the present example, suppose you create an `__init__.py` in the `pkg` directory like this:
 
-***pkg/\_\_init\_\_.py***
+**_pkg/\_\_init\_\_.py_**
 
     __all__ = [
             'mod1',
@@ -773,7 +772,7 @@ Using `import *` still isn’t considered terrific form, any more for **packages
 
 By the way, `__all__` can be defined in a **module** as well and serves the same purpose: to control what is imported with `import *`. For example, modify `mod1.py` as follows:
 
-***pkg/mod1.py***
+**_pkg/mod1.py_**
 
     __all__ = ['foo']
 
@@ -804,10 +803,10 @@ Now an `import *` statement from `pkg.mod1` will only import what is contained i
 
 `foo()` (the function) is now defined in the local namespace, but `Foo` (the class) is not, because the latter is not in `__all__`.
 
-In summary, `__all__` is used by both **packages** and **modules** to control what is imported when `import *` is specified. But *the default behavior differs*:
+In summary, `__all__` is used by both **packages** and **modules** to control what is imported when `import *` is specified. But _the default behavior differs_:
 
--   For a package, when `__all__` is not defined, `import *` does not import anything.
--   For a module, when `__all__` is not defined, `import *` imports everything (except—you guessed it—names starting with an underscore).
+- For a package, when `__all__` is not defined, `import *` does not import anything.
+- For a module, when `__all__` is not defined, `import *` imports everything (except—you guessed it—names starting with an underscore).
 
 [![](https://img.realpython.net/16bf1efe41b538fae54711c58c701f0e)](https://srv.realpython.net/click/58257184031/?c=31941813441&p=58946116052&r=17046)[Remove ads](https://realpython.com/account/join/)
 
@@ -837,7 +836,7 @@ Importing still works the same as shown previously. Syntax is similar, but addit
 
 In addition, a module in one **subpackage** can reference objects in a **sibling subpackage** (in the event that the sibling contains some functionality that you need). For example, suppose you want to import and execute function `foo()` (defined in module `mod1`) from within module `mod3`. You can either use an **absolute import**:
 
-***pkg/sub\_\_pkg2/mod3.py***
+**_pkg/sub\_\_pkg2/mod3.py_**
 
     def baz():
         print('[mod3] baz()')
@@ -857,10 +856,10 @@ In addition, a module in one **subpackage** can reference objects in a **sibling
 
 Or you can use a **relative import**, where `..` refers to the package one level up. From within `mod3.py`, which is in subpackage `sub_pkg2`,
 
--   `..` evaluates to the parent package (`pkg`), and
--   `..sub_pkg1` evaluates to subpackage `sub_pkg1` of the parent package.
+- `..` evaluates to the parent package (`pkg`), and
+- `..sub_pkg1` evaluates to subpackage `sub_pkg1` of the parent package.
 
-***pkg/sub\_\_pkg2/mod3.py***
+**_pkg/sub\_\_pkg2/mod3.py_**
 
     def baz():
         print('[mod3] baz()')
@@ -884,12 +883,12 @@ Or you can use a **relative import**, where `..` refers to the package one level
 
 In this tutorial, you covered the following topics:
 
--   How to create a Python **module**
--   Locations where the Python interpreter searches for a module
--   How to obtain access to the objects defined in a module with the `import` statement
--   How to create a module that is executable as a standalone script
--   How to organize modules into **packages** and **subpackages**
--   How to control package initialization
+- How to create a Python **module**
+- Locations where the Python interpreter searches for a module
+- How to obtain access to the objects defined in a module with the `import` statement
+- How to create a module that is executable as a standalone script
+- How to organize modules into **packages** and **subpackages**
+- How to control package initialization
 
 **Free PDF Download:** [Python 3 Cheat Sheet](https://realpython.com/bonus/python-cheat-sheet-short/)
 
@@ -899,8 +898,7 @@ Additionally, if you are developing your own application, creating your own **mo
 
 If you want to learn more, check out the following documentation at **Python.org**:
 
-[`__main__`](https://docs.python.org/3/library/__main__.html#module-__main__) — Top-level script environment
-------------------------------------------------------------------------------------------------------------
+## [`__main__`](https://docs.python.org/3/library/__main__.html#module-__main__) — Top-level script environment
 
 `'__main__'` is the name of the scope in which top-level code executes. A module’s \_\_name\_\_ is set equal to `'__main__'` when read from standard input, a script, or from an interactive prompt.
 
@@ -912,8 +910,7 @@ A module can discover whether or not it is running in the main scope by checking
 
 For a package, the same effect can be achieved by including a `__main__.py` module, the contents of which will be executed when the module is run
 
-. The import system
--------------------
+## . The import system
 
 Python code in one [module](https://docs.python.org/3/glossary.html#term-module) gains access to the code in another module by the process of [importing](https://docs.python.org/3/glossary.html#term-importing) it. The [`import`](https://docs.python.org/3/reference/simple_stmts.html#import) statement is the most common way of invoking the import machinery, but it is not the only way. Functions such as [`importlib.import_module()`](https://docs.python.org/3/library/importlib.html#importlib.import_module) and built-in [`__import__()`](https://docs.python.org/3/library/functions.html#__import__) can also be used to invoke the import machinery.
 
@@ -982,7 +979,7 @@ During import, the module name is looked up in [`sys.modules`](https://docs.pyth
 
 [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) is writable. Deleting a key may not destroy the associated module (as other modules may hold references to it), but it will invalidate the cache entry for the named module, causing Python to search anew for the named module upon its next import. The key can also be assigned to `None`, forcing the next import of the module to result in a [`ModuleNotFoundError`](https://docs.python.org/3/library/exceptions.html#ModuleNotFoundError).
 
-Beware though, as if you keep a reference to the module object, invalidate its cache entry in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), and then re-import the named module, the two module objects will *not* be the same. By contrast, [`importlib.reload()`](https://docs.python.org/3/library/importlib.html#importlib.reload) will reuse the *same* module object, and simply reinitialise the module contents by rerunning the module’s code.
+Beware though, as if you keep a reference to the module object, invalidate its cache entry in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), and then re-import the named module, the two module objects will _not_ be the same. By contrast, [`importlib.reload()`](https://docs.python.org/3/library/importlib.html#importlib.reload) will reuse the _same_ module object, and simply reinitialise the module contents by rerunning the module’s code.
 
 #### 5.3.2. Finders and loaders
 
@@ -992,15 +989,15 @@ Python includes a number of default finders and importers. The first one knows h
 
 The import machinery is extensible, so new finders can be added to extend the range and scope of module searching.
 
-Finders do not actually load modules. If they can find the named module, they return a *module spec*, an encapsulation of the module’s import-related information, which the import machinery then uses when loading the module.
+Finders do not actually load modules. If they can find the named module, they return a _module spec_, an encapsulation of the module’s import-related information, which the import machinery then uses when loading the module.
 
 The following sections describe the protocol for finders and loaders in more detail, including how you can create and register new ones to extend the import machinery.
 
-Changed in version 3.4: In previous versions of Python, finders returned [loaders](https://docs.python.org/3/glossary.html#term-loader) directly, whereas now they return module specs which *contain* loaders. Loaders are still used during import but have fewer responsibilities.
+Changed in version 3.4: In previous versions of Python, finders returned [loaders](https://docs.python.org/3/glossary.html#term-loader) directly, whereas now they return module specs which _contain_ loaders. Loaders are still used during import but have fewer responsibilities.
 
 #### 5.3.3. Import hooks
 
-The import machinery is designed to be extensible; the primary mechanism for this are the *import hooks*. There are two types of import hooks: *meta hooks* and *import path hooks*.
+The import machinery is designed to be extensible; the primary mechanism for this are the _import hooks_. There are two types of import hooks: _meta hooks_ and _import path hooks_.
 
 Meta hooks are called at the start of import processing, before any other import processing has occurred, other than [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) cache look up. This allows meta hooks to override [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path) processing, frozen modules, or even built-in modules. Meta hooks are registered by adding new finder objects to [`sys.meta_path`](https://docs.python.org/3/library/sys.html#sys.meta_path), as described below.
 
@@ -1058,12 +1055,12 @@ If and when a module spec is found, the import machinery will use it (and the lo
 
 Note the following details:
 
-> -   If there is an existing module object with the given name in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), import will have already returned it.
-> -   The module will exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) before the loader executes the module code. This is crucial because the module code may (directly or indirectly) import itself; adding it to [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) beforehand prevents unbounded recursion in the worst case and multiple loading in the best.
-> -   If loading fails, the failing module – and only the failing module – gets removed from [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules). Any module already in the [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) cache, and any module that was successfully loaded as a side-effect, must remain in the cache. This contrasts with reloading where even the failing module is left in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules).
-> -   After the module is created but before execution, the import machinery sets the import-related module attributes (“\_init\_module\_attrs” in the pseudo-code example above), as summarized in a [later section](https://docs.python.org/3/reference/import.html#import-mod-attrs).
-> -   Module execution is the key moment of loading in which the module’s namespace gets populated. Execution is entirely delegated to the loader, which gets to decide what gets populated and how.
-> -   The module created during loading and passed to exec\_module() may not be the one returned at the end of import [2](https://docs.python.org/3/reference/import.html#fnlo).
+> - If there is an existing module object with the given name in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), import will have already returned it.
+> - The module will exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) before the loader executes the module code. This is crucial because the module code may (directly or indirectly) import itself; adding it to [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) beforehand prevents unbounded recursion in the worst case and multiple loading in the best.
+> - If loading fails, the failing module – and only the failing module – gets removed from [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules). Any module already in the [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) cache, and any module that was successfully loaded as a side-effect, must remain in the cache. This contrasts with reloading where even the failing module is left in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules).
+> - After the module is created but before execution, the import machinery sets the import-related module attributes (“\_init_module_attrs” in the pseudo-code example above), as summarized in a [later section](https://docs.python.org/3/reference/import.html#import-mod-attrs).
+> - Module execution is the key moment of loading in which the module’s namespace gets populated. Execution is entirely delegated to the loader, which gets to decide what gets populated and how.
+> - The module created during loading and passed to exec_module() may not be the one returned at the end of import [2](https://docs.python.org/3/reference/import.html#fnlo).
 
 Changed in version 3.4: The import system has taken over the boilerplate responsibilities of loaders. These were previously performed by the [`importlib.abc.Loader.load_module()`](https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.load_module) method.
 
@@ -1073,8 +1070,8 @@ Module loaders provide the critical function of loading: module execution. The i
 
 Loaders must satisfy the following requirements:
 
-> -   If the module is a Python module (as opposed to a built-in module or a dynamically loaded extension), the loader should execute the module’s code in the module’s global name space (`module.__dict__`).
-> -   If the loader cannot execute the module, it should raise an [`ImportError`](https://docs.python.org/3/library/exceptions.html#ImportError), although any other exception raised during [`exec_module()`](https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.exec_module) will be propagated.
+> - If the module is a Python module (as opposed to a built-in module or a dynamically loaded extension), the loader should execute the module’s code in the module’s global name space (`module.__dict__`).
+> - If the loader cannot execute the module, it should raise an [`ImportError`](https://docs.python.org/3/library/exceptions.html#ImportError), although any other exception raised during [`exec_module()`](https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.exec_module) will be propagated.
 
 In many cases, the finder and loader can be the same object; in such cases the [`find_spec()`](https://docs.python.org/3/library/importlib.html#importlib.abc.MetaPathFinder.find_spec) method would just return a spec with the loader set to `self`.
 
@@ -1088,9 +1085,9 @@ For compatibility with existing loaders, the import machinery will use the `load
 
 The `load_module()` method must implement all the boilerplate loading functionality described above in addition to executing the module. All the same constraints apply, with some additional clarification:
 
-> -   If there is an existing module object with the given name in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), the loader must use that existing module. (Otherwise, [`importlib.reload()`](https://docs.python.org/3/library/importlib.html#importlib.reload) will not work correctly.) If the named module does not exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), the loader must create a new module object and add it to [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules).
-> -   The module *must* exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) before the loader executes the module code, to prevent unbounded recursion or multiple loading.
-> -   If loading fails, the loader must remove any modules it has inserted into [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), but it must remove **only** the failing module(s), and only if the loader itself has loaded the module(s) explicitly.
+> - If there is an existing module object with the given name in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), the loader must use that existing module. (Otherwise, [`importlib.reload()`](https://docs.python.org/3/library/importlib.html#importlib.reload) will not work correctly.) If the named module does not exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), the loader must create a new module object and add it to [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules).
+> - The module _must_ exist in [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules) before the loader executes the module code, to prevent unbounded recursion or multiple loading.
+> - If loading fails, the loader must remove any modules it has inserted into [`sys.modules`](https://docs.python.org/3/library/sys.html#sys.modules), but it must remove **only** the failing module(s), and only if the loader itself has loaded the module(s) explicitly.
 
 Changed in version 3.5: A [`DeprecationWarning`](https://docs.python.org/3/library/exceptions.html#DeprecationWarning) is raised when `exec_module()` is defined but `create_module()` is not.
 
@@ -1180,10 +1177,10 @@ If the module has a spec (`__spec__`), the import machinery will try to generate
 
 Here are the exact rules used:
 
-> -   If the module has a `__spec__` attribute, the information in the spec is used to generate the repr. The “name”, “loader”, “origin”, and “has\_location” attributes are consulted.
-> -   If the module has a `__file__` attribute, this is used as part of the module’s repr.
-> -   If the module has no `__file__` but does have a `__loader__` that is not `None`, then the loader’s repr is used as part of the module’s repr.
-> -   Otherwise, just use the module’s `__name__` in the repr.
+> - If the module has a `__spec__` attribute, the information in the spec is used to generate the repr. The “name”, “loader”, “origin”, and “has_location” attributes are consulted.
+> - If the module has a `__file__` attribute, this is used as part of the module’s repr.
+> - If the module has no `__file__` but does have a `__loader__` that is not `None`, then the loader’s repr is used as part of the module’s repr.
+> - Otherwise, just use the module’s `__name__` in the repr.
 
 Changed in version 3.4: Use of [`loader.module_repr()`](https://docs.python.org/3/library/importlib.html#importlib.abc.Loader.module_repr) has been deprecated and the module spec is now used by the import machinery to generate a module repr.
 
@@ -1209,7 +1206,7 @@ Path entries need not be limited to file system locations. They can refer to URL
 
 The path based finder provides additional hooks and protocols so that you can extend and customize the types of searchable path entries. For example, if you wanted to support path entries as network URLs, you could write a hook that implements HTTP semantics to find modules on the web. This hook (a callable) would return a [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder) supporting the protocol described below, which was then used to get a loader for the module from the web.
 
-A word of warning: this section and the previous both use the term *finder*, distinguishing between them by using the terms [meta path finder](https://docs.python.org/3/glossary.html#term-meta-path-finder) and [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder). These two types of finders are very similar, support similar protocols, and function in similar ways during the import process, but it’s important to keep in mind that they are subtly different. In particular, meta path finders operate at the beginning of the import process, as keyed off the [`sys.meta_path`](https://docs.python.org/3/library/sys.html#sys.meta_path) traversal.
+A word of warning: this section and the previous both use the term _finder_, distinguishing between them by using the terms [meta path finder](https://docs.python.org/3/glossary.html#term-meta-path-finder) and [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder). These two types of finders are very similar, support similar protocols, and function in similar ways during the import process, but it’s important to keep in mind that they are subtly different. In particular, meta path finders operate at the beginning of the import process, as keyed off the [`sys.meta_path`](https://docs.python.org/3/library/sys.html#sys.meta_path) traversal.
 
 By contrast, path entry finders are in a sense an implementation detail of the path based finder, and in fact, if the path based finder were to be removed from [`sys.meta_path`](https://docs.python.org/3/library/sys.html#sys.meta_path), none of the path entry finder semantics would be invoked.
 
@@ -1231,7 +1228,7 @@ If the path entry is not present in the cache, the path based finder iterates ov
 
 If [`sys.path_hooks`](https://docs.python.org/3/library/sys.html#sys.path_hooks) iteration ends with no [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder) being returned, then the path based finder’s [`find_spec()`](https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder.find_spec) method will store `None` in [`sys.path_importer_cache`](https://docs.python.org/3/library/sys.html#sys.path_importer_cache) (to indicate that there is no finder for this path entry) and return `None`, indicating that this [meta path finder](https://docs.python.org/3/glossary.html#term-meta-path-finder) could not find the module.
 
-If a [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder) *is* returned by one of the [path entry hook](https://docs.python.org/3/glossary.html#term-path-entry-hook) callables on [`sys.path_hooks`](https://docs.python.org/3/library/sys.html#sys.path_hooks), then the following protocol is used to ask the finder for a module spec, which is then used when loading the module.
+If a [path entry finder](https://docs.python.org/3/glossary.html#term-path-entry-finder) _is_ returned by one of the [path entry hook](https://docs.python.org/3/glossary.html#term-path-entry-hook) callables on [`sys.path_hooks`](https://docs.python.org/3/library/sys.html#sys.path_hooks), then the following protocol is used to ask the finder for a module spec, which is then used when loading the module.
 
 The current working directory – denoted by an empty string – is handled slightly differently from other entries on [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path). First, if the current working directory is found to not exist, no value is stored in [`sys.path_importer_cache`](https://docs.python.org/3/library/sys.html#sys.path_importer_cache). Second, the value for the current working directory is looked up fresh for each module lookup. Third, the path used for [`sys.path_importer_cache`](https://docs.python.org/3/library/sys.html#sys.path_importer_cache) and returned by [`importlib.machinery.PathFinder.find_spec()`](https://docs.python.org/3/library/importlib.html#importlib.machinery.PathFinder.find_spec) will be the actual current working directory and not the empty string.
 
@@ -1241,7 +1238,7 @@ In order to support imports of modules and initialized packages and also to cont
 
 [`find_spec()`](https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_spec) takes two arguments: the fully qualified name of the module being imported, and the (optional) target module. `find_spec()` returns a fully populated spec for the module. This spec will always have “loader” set (with one exception).
 
-To indicate to the import machinery that the spec represents a namespace [portion](https://docs.python.org/3/glossary.html#term-portion), the path entry finder sets “submodule\_search\_locations” to a list containing the portion.
+To indicate to the import machinery that the spec represents a namespace [portion](https://docs.python.org/3/glossary.html#term-portion), the path entry finder sets “submodule_search_locations” to a list containing the portion.
 
 Changed in version 3.4: [`find_spec()`](https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_spec) replaced [`find_loader()`](https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_loader) and [`find_module()`](https://docs.python.org/3/library/importlib.html#importlib.abc.PathEntryFinder.find_module), both of which are now deprecated, but will be used if `find_spec()` is not defined.
 
@@ -1303,11 +1300,11 @@ When Python is started with the [`-m`](https://docs.python.org/3/using/cmdline.h
 
 In [the remaining cases](https://docs.python.org/3/using/cmdline.html#using-on-interface-options) `__main__.__spec__` is set to `None`, as the code used to populate the [`__main__`](https://docs.python.org/3/library/__main__.html#module-__main__) does not correspond directly with an importable module:
 
--   interactive prompt
--   [`-c`](https://docs.python.org/3/using/cmdline.html#cmdoption-c) option
--   running from stdin
--   running directly from a source or bytecode file
+- interactive prompt
+- [`-c`](https://docs.python.org/3/using/cmdline.html#cmdoption-c) option
+- running from stdin
+- running directly from a source or bytecode file
 
-Note that `__main__.__spec__` is always `None` in the last case, *even if* the file could technically be imported directly as a module instead. Use the [`-m`](https://docs.python.org/3/using/cmdline.html#cmdoption-m) switch if valid module metadata is desired in [`__main__`](https://docs.python.org/3/library/__main__.html#module-__main__).
+Note that `__main__.__spec__` is always `None` in the last case, _even if_ the file could technically be imported directly as a module instead. Use the [`-m`](https://docs.python.org/3/using/cmdline.html#cmdoption-m) switch if valid module metadata is desired in [`__main__`](https://docs.python.org/3/library/__main__.html#module-__main__).
 
-Note also that even when `__main__` corresponds with an importable module and `__main__.__spec__` is set accordingly, they’re still considered *distinct* modules. This is due to the fact that blocks guarded by `if __name__ == "__main__":` checks only execute when the module is used to populate the `__main__` namespace, and not during normal import.
+Note also that even when `__main__` corresponds with an importable module and `__main__.__spec__` is set accordingly, they’re still considered _distinct_ modules. This is due to the fact that blocks guarded by `if __name__ == "__main__":` checks only execute when the module is used to populate the `__main__` namespace, and not during normal import.

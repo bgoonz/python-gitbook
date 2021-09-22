@@ -1,5 +1,4 @@
-D2- Module 02 - Hash Tables I
-=============================
+# D2- Module 02 - Hash Tables I
 
 {% embed url=“https://gist.github.com/bgoonz/4089b60131f0679eb0c16c831e623811” caption="" %}
 
@@ -13,8 +12,7 @@ D2- Module 02 - Hash Tables I
 
 ![](../../../.gitbook/assets/image%20%2830%29.png)
 
-Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a hash table
-----------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a hash table
 
 ### **Overview**
 
@@ -26,15 +24,15 @@ Hash tables are also called hash maps, maps, unordered maps, or dictionaries. A 
 
 #### **Lookup**
 
-Hash tables have fast lookups (`O(1)`) on *average.* However, in the worst case, they have slow (`O(n)`) lookups. The slow lookups happen when there is a hash collision (two different keys hash to the same index).
+Hash tables have fast lookups (`O(1)`) on _average._ However, in the worst case, they have slow (`O(n)`) lookups. The slow lookups happen when there is a hash collision (two different keys hash to the same index).
 
 #### **Insert**
 
-Hash tables have fast insertions (`O(1)`) on *average*. However, in the worst case, they have slow (`O(n)`) insertions. Just like with the lookups, the worst case occurs due to hash collisions.
+Hash tables have fast insertions (`O(1)`) on _average_. However, in the worst case, they have slow (`O(n)`) insertions. Just like with the lookups, the worst case occurs due to hash collisions.
 
 #### **Delete**
 
-Hash tables have fast deletes (`O(1)`) on *average*. However, in the worst case, they have slow (`O(n)`) deletions. Just like with lookups and insertions, the worst case occurs due to hash collisions.
+Hash tables have fast deletes (`O(1)`) on _average_. However, in the worst case, they have slow (`O(n)`) deletions. Just like with lookups and insertions, the worst case occurs due to hash collisions.
 
 #### **Space**
 
@@ -68,10 +66,9 @@ The above is just one of the ways to deal with hash collisions. Hopefully, you c
 
 ### **Additional Resources**
 
--   [https://www.geeksforgeeks.org/hashing-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/hashing-data-structure/)
+- [https://www.geeksforgeeks.org/hashing-data-structure/ (Links to an external site.)](https://www.geeksforgeeks.org/hashing-data-structure/)
 
-Objective 02 - Describe and implement a hash function
------------------------------------------------------
+## Objective 02 - Describe and implement a hash function
 
 ### **Overview**
 
@@ -152,23 +149,22 @@ Remember the modulo operator `%`? We can use that in our hashing function to ens
 
 ![](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18e22e25-8fb5-4763-b92e-ce3ac0d3e4e4/Untitled.png)
 
-Objective 03 - Implement a user-defined HashTable class that allows basic operations
-------------------------------------------------------------------------------------
+## Objective 03 - Implement a user-defined HashTable class that allows basic operations
 
 ### **Overview**
 
 We define a hash table as an empty array and hash function as a function that takes a value and converts it into an array index where you will store that value. Let’s put the two together. Let’s implement a `HashTable` class where we can:
 
--   Insert values into a hash table
--   Retrieve values from a hash table
--   Delete values from a hash table
+- Insert values into a hash table
+- Retrieve values from a hash table
+- Delete values from a hash table
 
 Let’s start with the insert function. For an insert, I need to insert a value with an associated key. Let’s store the instructors at Lambda and where they live. We want to store:
 
--   `("Parth", "California")`
--   `("Beej", "Oregon")`
--   `("Dustin", "Utah")`
--   `("Ryan", "Utah")`
+- `("Parth", "California")`
+- `("Beej", "Oregon")`
+- `("Dustin", "Utah")`
+- `("Ryan", "Utah")`
 
 Here’s what our `HashTable` class looks like right now:
 
@@ -239,12 +235,12 @@ Let’s break this down a little bit. Our `init` function takes in the length of
 
 Let’s create our `put` function. Before we code, let’s break down what needs to happen:
 
--   Given a `key` and a `value`, insert the respective `value` into a hash table array using the hashed `key` to determine the storage location index.
+- Given a `key` and a `value`, insert the respective `value` into a hash table array using the hashed `key` to determine the storage location index.
 
 Let’s think about what we need to do:
 
--   Hash the `key` into an index using the hash function
--   Put the `value` into that index
+- Hash the `key` into an index using the hash function
+- Put the `value` into that index
 
 You might be thinking, “What if two keys hash to the same index?” That’s a great question, and we will worry about that later. It’s a nifty solution 🎉. But for now, let’s worry about hashing a key and storing a value.
 

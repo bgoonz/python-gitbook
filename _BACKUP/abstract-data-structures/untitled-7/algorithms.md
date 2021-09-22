@@ -1,5 +1,4 @@
-Algorithms
-==========
+# Algorithms
 
 {% tabs %} {% tab title=“Practice-Examples” %}
 

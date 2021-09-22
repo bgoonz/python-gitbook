@@ -1,5 +1,4 @@
-Calculating Big O
-=================
+# Calculating Big O
 
 {% tabs %} {% tab title=“Order Of Growth” %}
 
@@ -92,33 +91,30 @@ Calculating Big O
 
 {% tab title=“JS” %}
 
-big ‘O’ notation <span id="5fc8"></span>
-----------------------------------------
+## big ‘O’ notation <span id="5fc8"></span>
 
--   Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
--   Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
--   The function should be defined by the size of the input.
--   `Smaller` Big O is better (lower time complexity)
--   Big O is used to describe the worst case scenario.
--   Big O is simplified to show only its most dominant mathematical term.
+- Big O Notation is a tool for describing the efficiency of algorithms with respect to the size of the input arguments.
+- Since we use mathematical functions in Big-O, there are a few big picture ideas that we’ll want to keep in mind:
+- The function should be defined by the size of the input.
+- `Smaller` Big O is better (lower time complexity)
+- Big O is used to describe the worst case scenario.
+- Big O is simplified to show only its most dominant mathematical term.
 
-Simplifying Math Terms <span id="6083"></span>
-----------------------------------------------
+## Simplifying Math Terms <span id="6083"></span>
 
--   We can use the following rules to simplify the our Big O functions:
--   `Simplify Products` : If the function is a product of many terms, we drop the terms that don’t depend on n.
--   `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
--   `n` : size of the input
--   `T(f)` : unsimplified math function
--   `O(f)` : simplified math function.
+- We can use the following rules to simplify the our Big O functions:
+- `Simplify Products` : If the function is a product of many terms, we drop the terms that don’t depend on n.
+- `Simplify Sums` : If the function is a sum of many terms, we drop the non-dominant terms.
+- `n` : size of the input
+- `T(f)` : unsimplified math function
+- `O(f)` : simplified math function.
 
 `Putting it all together`![](https://miro.medium.com/max/15/1*TT8uuv1x3nmGUw5rvtoZ8A.png?q=20)![](https://miro.medium.com/max/374/1*TT8uuv1x3nmGUw5rvtoZ8A.png)
 
--   First we apply the product rule to drop all constants.
--   Then we apply the sum rule to select the single most dominant term.
+- First we apply the product rule to drop all constants.
+- Then we apply the sum rule to select the single most dominant term.
 
-Complexity Classes <span id="915e"></span>
-------------------------------------------
+## Complexity Classes <span id="915e"></span>
 
 Common Complexity Classes
 
@@ -152,8 +148,7 @@ Common Complexity Classes
 
 \*\*\*\*
 
-`O(nlog(n)) Log Linear Time` <span id="b965"></span>
-----------------------------------------------------
+## `O(nlog(n)) Log Linear Time` <span id="b965"></span>
 
 > **Combination of linear and logarithmic behavior, we will see features from both classes.**
 >
@@ -163,8 +158,7 @@ Common Complexity Classes
 
 \*\*\*\*
 
-`O(nc) Polynomial` <span id="fb10"></span>
-------------------------------------------
+## `O(nc) Polynomial` <span id="fb10"></span>
 
 > **C is a fixed constant.**
 
@@ -172,8 +166,7 @@ Common Complexity Classes
 
 \*\*\*\*
 
-`O(c^n) Exponential` <span id="2736"></span>
---------------------------------------------
+## `O(c^n) Exponential` <span id="2736"></span>
 
 > **C is now the number of recursive calls made in each stack frame.**
 >
@@ -183,8 +176,7 @@ Common Complexity Classes
 
 \*\*\*\* {% endtab %} {% endtabs %}
 
-Computing Big O
----------------
+## Computing Big O
 
 Brian “Beej Jorgensen” Hall edited this page on Nov 4, 2019 · [9 revisions](https://github.com/LambdaSchool/CS-Wiki/wiki/Computing-Big-O/_history)
 
@@ -192,8 +184,8 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ### Steps to compute Big O
 
--   Things in sequence that *aren’t* loops add together
--   A single thing inside a loop gets multiplied by the loop
+- Things in sequence that _aren’t_ loops add together
+- A single thing inside a loop gets multiplied by the loop
 
 1.  Go a line at a time, only looking at lines that are executable
 2.  Add all the things in sequence that you can first
@@ -204,26 +196,26 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ### Hints
 
--   If you have something that’s `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
--   Individual statements tend to be `O(1)`.
--   Loop statements tend to be `O(how-many-times-they-loop)`.
--   Anything that doubles the runtime each step is `O(2^n)` (e.g. naive Fibonacci).
--   Anything that triples the runtime each step is `O(3^n)`.
--   Anything that halves the runtime each step is `O(log n)` (e.g. binary search).
--   By *dominant term* we mean, “thing which is largest given some large value of *n*, like 10000”. `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
--   Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
--   But loops that binary search over a list are `O(log n)`!
+- If you have something that’s `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
+- Individual statements tend to be `O(1)`.
+- Loop statements tend to be `O(how-many-times-they-loop)`.
+- Anything that doubles the runtime each step is `O(2^n)` (e.g. naive Fibonacci).
+- Anything that triples the runtime each step is `O(3^n)`.
+- Anything that halves the runtime each step is `O(log n)` (e.g. binary search).
+- By _dominant term_ we mean, “thing which is largest given some large value of _n_, like 10000”. `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
+- Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
+- But loops that binary search over a list are `O(log n)`!
 
 ### Recursion
 
--   Recursive functions are like loops, where the body of the function is the body of the loop.
--   You need to figure out how many times the function will call itself, and that’s the Big O that you need to multiply against the Big O of the function body.
--   Keep in mind that recursion comes with an inherent memory cost that loops don’t incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
+- Recursive functions are like loops, where the body of the function is the body of the loop.
+- You need to figure out how many times the function will call itself, and that’s the Big O that you need to multiply against the Big O of the function body.
+- Keep in mind that recursion comes with an inherent memory cost that loops don’t incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
 
 ### Gotchas
 
--   Built in functions might incur significant Big O without you noticing. Python’s list `.copy()` might seem like just a simple `O(1)` line, but [it’s `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
--   Beware of loops that modify their index in weird ways.
+- Built in functions might incur significant Big O without you noticing. Python’s list `.copy()` might seem like just a simple `O(1)` line, but [it’s `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
+- Beware of loops that modify their index in weird ways.
 
 ### Example
 
@@ -336,7 +328,7 @@ Break out your algebra.
 
 `O(n^3)` is the time complexity of this function.
 
-With practice, you can do this in your head. Looking back, the nested loop *must* have been where the function spent the most of its time; an experienced dev would see that and just quickly compute the Big O for that function from that nested loop alone.
+With practice, you can do this in your head. Looking back, the nested loop _must_ have been where the function spent the most of its time; an experienced dev would see that and just quickly compute the Big O for that function from that nested loop alone.
 
 ![](../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
 
@@ -386,13 +378,13 @@ The above function prints out every element in a list. But it’s trickier to se
 
 The secret is that recursive functions are like loops on steroids. So you know it’s similar to a loop in that it’s going to perform a number of operations. But how many? `n`? `n^2`? We have to figure it out.
 
-In the above example, each call to `foo()` results in *one* more call to `foo()`. (Because we look in the body of the function and we see it only calls itself once.) And it’s going to keep calling itself a number of times. *How many times will `foo()` call itself?*
+In the above example, each call to `foo()` results in _one_ more call to `foo()`. (Because we look in the body of the function and we see it only calls itself once.) And it’s going to keep calling itself a number of times. _How many times will `foo()` call itself?_
 
 Here, if we declare that `n` is the number of elements in list `x`, `foo()` calls itself `n` times, once for each element in `x`.
 
 So the recursion itself, acting like a loop, is `O(n)`.
 
-We still have to look at the things *inside* `foo()` to see what else is going on. The body of `foo()` becomes like the body of the loop.
+We still have to look at the things _inside_ `foo()` to see what else is going on. The body of `foo()` becomes like the body of the loop.
 
 But it looks like in there we only have a couple `O(1)` things, so the whole thing becomes `O(n * (1 + 1))`, aka `O(2n)` AKA `O(n)`. Final answer.
 
@@ -404,7 +396,7 @@ But it looks like in there we only have a couple `O(1)` things, so the whole thi
 
         return fib(n-2) + fib(n-1)  # Calls itself twice per call!
 
-Again, think loop on steroids. `fib()` calls itself… but it calls itself *two* times per call. …*ish*.
+Again, think loop on steroids. `fib()` calls itself… but it calls itself _two_ times per call. …_ish_.
 
 We call it `1` time, it calls itself `2` times. Those `2` times call it `4` times, which call it `8` times, which call it `16` times, etc. If you recognize those numbers, you’ll know those are powers of 2. `2^0=1`, `2^1=2`, `2^2=4`, `2^3=8`, and all the way up to `2^n`.
 

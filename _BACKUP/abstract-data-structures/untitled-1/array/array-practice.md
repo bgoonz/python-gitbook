@@ -1,5 +1,4 @@
-Array Practice
-==============
+# Array Practice
 
     """
     Given a list lst and a number N, create a new list

@@ -1,5 +1,4 @@
-SelectionSort
-=============
+# SelectionSort
 
 ### What is Selection Sort?
 
@@ -15,7 +14,7 @@ Now, let’s create a new function named SelectionSort which accepts 1 parameter
 
 The argument which we pass to this function is an unordered list that is passed to this above function to perform Selection Sorting algorithm on this list and return sorted list back to function call.
 
-***Read =&gt;*** [***Binary Search Algorithm on Sorted List using Loop in Python***](https://codezup.com//binary-search-algorithm-sorted-list-loop-python/)
+**_Read =&gt;_** [**_Binary Search Algorithm on Sorted List using Loop in Python_**](https://codezup.com//binary-search-algorithm-sorted-list-loop-python/)
 
 So the logic or the algorithm behind Selection Sort is that it iterates all the elements of the list and if the smallest element in the list is found then that number is swapped with the first.
 
@@ -37,7 +36,7 @@ Another nested loop is used to compare each element until the last element for e
 
 The time efficiency of selection sort is quadratic, so there are a number of sorting techniques which have better time complexity than selection sort.
 
-One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, *n* − 1 in the worst case.
+One thing which distinguishes this sort from other sorting algorithms is that it makes the minimum possible number of swaps, _n_ − 1 in the worst case.
 
     Best O(n^2); Average O(n^2); Worst O(n^2)
 

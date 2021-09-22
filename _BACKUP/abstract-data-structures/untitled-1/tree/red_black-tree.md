@@ -1,5 +1,4 @@
-Red\_Black Tree
-===============
+# Red_Black Tree
 
     # Faster insertion and deletion than AVL, slower search
     class Color:

@@ -1,5 +1,4 @@
-Dictionaries
-============
+# Dictionaries
 
 {% file src=“../../.gitbook/assets/pythondictmethods.pdf” %}
 
@@ -11,14 +10,13 @@ Dictionaries
 
 {% embed url=“https://gist.github.com/bgoonz/df0237e949950dfd81add75e2b95f60a” caption="" %}
 
-Dictionaries
-------------
+## Dictionaries
 
 A dictionary is a collection of unordered, modifiable(mutable) paired (key: value) data type.
 
 ### Creating a Dictionary
 
-To create a dictionary we use curly brackets, {} or the *dict()* built-in function.
+To create a dictionary we use curly brackets, {} or the _dict()_ built-in function.
 
     # syntax
     empty_dict = {}
@@ -96,7 +94,7 @@ We can access Dictionary items by referring to its key name.
     print(person['address']['street']) # Space street
     print(person['city'])       # Error
 
-Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the *get* method. The get method returns None, which is a NoneType object data type, if the key does not exist.
+Accessing an item by key name raises an error if the key does not exist. To avoid this error first we have to check if a key exist or we can use the _get_ method. The get method returns None, which is a NoneType object data type, if the key does not exist.
 
     person = {
         'first_name':'Asabeneh',
@@ -168,7 +166,7 @@ We can modify items in a dictionary
 
 ### Checking Keys in a Dictionary
 
-We use the *in* operator to check if a key exist in a dictionary
+We use the _in_ operator to check if a key exist in a dictionary
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -177,16 +175,13 @@ We use the *in* operator to check if a key exist in a dictionary
 
 ### Removing Key and Value Pairs from a Dictionary
 
--   *pop(key)*: removes the item with the specified key name:
--   *popitem()*: removes the last item
--   *del*: removes an item with specified key name
+- _pop(key)_: removes the item with the specified key name:
+- _popitem()_: removes the last item
+- _del_: removes an item with specified key name
 
-    # syntax
-    dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-    dct.pop('key1') # removes key1 item
-    dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
-    dct.popitem() # removes the last item
-    del dct['key2'] # removes key2 item
+  # syntax
+
+  dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'} dct.pop('key1') # removes key1 item dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'} dct.popitem() # removes the last item del dct['key2'] # removes key2 item
 
 **Example:**
 
@@ -208,7 +203,7 @@ We use the *in* operator to check if a key exist in a dictionary
 
 ### Changing Dictionary to a List of Items
 
-The *items()* method changes dictionary to a list of tuples.
+The _items()_ method changes dictionary to a list of tuples.
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -216,7 +211,7 @@ The *items()* method changes dictionary to a list of tuples.
 
 ### Clearing a Dictionary
 
-If we don’t want the items in a dictionary we can clear them using *clear()* method
+If we don’t want the items in a dictionary we can clear them using _clear()_ method
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -232,7 +227,7 @@ If we do not use the dictionary we can delete it completely
 
 ### Copy a Dictionary
 
-We can copy a dictionary using a *copy()* method. Using copy we can avoid mutation of the original dictionary.
+We can copy a dictionary using a _copy()_ method. Using copy we can avoid mutation of the original dictionary.
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -240,7 +235,7 @@ We can copy a dictionary using a *copy()* method. Using copy we can avoid mutati
 
 ### Getting Dictionary Keys as a List
 
-The *keys()* method gives us all the keys of a a dictionary as a list.
+The _keys()_ method gives us all the keys of a a dictionary as a list.
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
@@ -249,7 +244,7 @@ The *keys()* method gives us all the keys of a a dictionary as a list.
 
 ### Getting Dictionary Values as a List
 
-The *values* method gives us all the values of a a dictionary as a list.
+The _values_ method gives us all the values of a a dictionary as a list.
 
     # syntax
     dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}

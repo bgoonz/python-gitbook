@@ -1,5 +1,4 @@
-List Operations
-===============
+# List Operations
 
 ### Syntax of list
 
@@ -19,7 +18,7 @@ Let’s define a variable named myList and declare a list of numbers from 1 to 9
 
 List Slicing means accessing the particular element by index or slice or cut a particular range of elements from the [List](https://docs.python.org/3/tutorial/datastructures.html).
 
-***Read =&gt;*** [***Create and write MetaData to a file – Python***](https://codezup.com/create-write-metadata-file-python/)
+**_Read =&gt;_** [**_Create and write MetaData to a file – Python_**](https://codezup.com/create-write-metadata-file-python/)
 
     print('Original List:',myList)
     print('First Element:',myList[0]) #Prints the first element of the list or 0th index of the list

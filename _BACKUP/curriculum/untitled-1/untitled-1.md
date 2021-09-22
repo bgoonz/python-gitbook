@@ -1,5 +1,4 @@
-DFS
-===
+# DFS
 
 **Depth-first search (DFS)** is an [algorithm](https://brilliant.org/wiki/algorithm/) for searching a [graph](https://brilliant.org/wiki/depth-first-search-dfs/%28https://brilliant.org/wiki/graphs/%29) or [tree](https://brilliant.org/wiki/trees-basic/) data structure. The algorithm starts at the root (top) node of a tree and goes as far as it can down a given branch (path), then backtracks until it finds an unexplored path, and then explores it. The algorithm does this until the entire graph has been explored. Many problems in computer science can be thought of in terms of graphs. For example, analyzing networks, mapping routes, scheduling, and finding [spanning trees](https://brilliant.org/wiki/spanning-trees/) are graph problems. To analyze these problems, [graph-search algorithms](https://brilliant.org/wiki/graph-search-algorithm/) like depth-first search are useful.
 
@@ -15,11 +14,11 @@ Depth-first searches are often used as subroutines in other more complex algorit
 
 **Contents**
 
--   [Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#depth-first-search)
--   [Implementing Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#implementing-depth-first-search)
--   [Complexity of Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#complexity-of-depth-first-search)
--   [Applications](https://brilliant.org/wiki/depth-first-search-dfs/#applications)
--   [References](https://brilliant.org/wiki/depth-first-search-dfs/#references)
+- [Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#depth-first-search)
+- [Implementing Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#implementing-depth-first-search)
+- [Complexity of Depth-first Search](https://brilliant.org/wiki/depth-first-search-dfs/#complexity-of-depth-first-search)
+- [Applications](https://brilliant.org/wiki/depth-first-search-dfs/#applications)
+- [References](https://brilliant.org/wiki/depth-first-search-dfs/#references)
 
 ### Depth-first Search
 
@@ -27,9 +26,9 @@ The main strategy of depth-first search is to explore deeper into the graph when
 
 > Here are the basic steps for performing a depth-first search:
 >
-> -   Visit a vertex ss.
-> -   Mark ss as visited.
-> -   Recursively visit each unvisited vertex attached to ss.
+> - Visit a vertex ss.
+> - Mark ss as visited.
+> - Recursively visit each unvisited vertex attached to ss.
 
 This animation illustrates the depth-first search algorithm:
 
@@ -57,7 +56,7 @@ DFS can also be implemented using recursion, which greatly reduces the number of
 
 It is common to modify the algorithm in order to keep track of the edges instead of the vertices, as each edge describes the nodes at each end. This is useful when one is attempting to reconstruct the traversed tree after processing each node. In case of a forest or a group of trees, this algorithm can be expanded to include an outer loop that iterates over all trees in order to process every single node.
 
-There are three different strategies for implementing DFS: *pre-order*, *in-order*, and *post-order*.
+There are three different strategies for implementing DFS: _pre-order_, _in-order_, and _post-order_.
 
 **Pre-order** DFS works by visiting the current node and successively moving to the left until a leaf is reached, visiting each node on the way there. Once there are no more children on the left of a node, the children on the right are visited. This is the most standard DFS algorithm.
 
@@ -85,9 +84,9 @@ BFS always returns an optimal answer, but this is not guaranteed for DFS.
 >
 > **Depth First Search**
 >
-> -   Pre-order: 1 2 4 5 3
-> -   In-order : 4 2 5 1 3
-> -   Post-order : 4 5 2 3 1
+> - Pre-order: 1 2 4 5 3
+> - In-order : 4 2 5 1 3
+> - Post-order : 4 5 2 3 1
 
 ### Applications
 

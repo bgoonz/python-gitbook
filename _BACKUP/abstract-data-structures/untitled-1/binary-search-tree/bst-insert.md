@@ -1,5 +1,4 @@
-BST Insert
-==========
+# BST Insert
 
     class Node:
         def __init__(self, val):

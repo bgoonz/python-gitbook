@@ -1,5 +1,4 @@
-Binary Search
-=============
+# Binary Search
 
 {% tabs %} {% tab title=“Python” %}
 

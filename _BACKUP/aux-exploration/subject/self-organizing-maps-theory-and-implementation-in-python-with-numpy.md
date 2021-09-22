@@ -1,13 +1,12 @@
-Self-Organizing Maps: Theory and Implementation in Python with NumPy
-====================================================================
+# Self-Organizing Maps: Theory and Implementation in Python with NumPy
 
 #### Introduction <span id="introduction"></span>
 
-In this guide, we’ll be taking a look at an unsupervised learning model, known as a ***Self-Organizing Map (SOM)***, as well as its implementation in Python. We’ll be using an **RGB Color** example to train the SOM and demonstrate its performance and typical usage.
+In this guide, we’ll be taking a look at an unsupervised learning model, known as a **_Self-Organizing Map (SOM)_**, as well as its implementation in Python. We’ll be using an **RGB Color** example to train the SOM and demonstrate its performance and typical usage.
 
 #### Self-Organizing Maps: A General Introduction <span id="selforganizingmapsageneralintroduction"></span>
 
-A *Self-Organizing Map* was first introduced by [Teuvo Kohonen in 1982](https://link.springer.com/article/10.1007/BF00337288) and is also sometimes known as a ***Kohonen map***. It is a special type of an *artificial neural network*, which builds a map of the training data. The map is generally a 2D rectangular grid of weights but can be extended to a 3D or higher dimensional model. Other grid structures like hexagonal grids are also possible.
+A _Self-Organizing Map_ was first introduced by [Teuvo Kohonen in 1982](https://link.springer.com/article/10.1007/BF00337288) and is also sometimes known as a **_Kohonen map_**. It is a special type of an _artificial neural network_, which builds a map of the training data. The map is generally a 2D rectangular grid of weights but can be extended to a 3D or higher dimensional model. Other grid structures like hexagonal grids are also possible.
 
 An SOM is mainly used for data visualization and provides a quick visual summary of the training instances. In a 2D rectangular grid, each cell is represented by a weight vector. For a trained SOM, each cell weight represents a summary of a few training examples. Cells in the close vicinity of each other have similar weights, and like examples can be mapped to cells in a small neighborhood of each other.
 
@@ -19,7 +18,7 @@ An SOM is trained using **competitive learning**.
 
 > **Competitive Learning** is a form of unsupervised learning, where constituent elements compete to produce a satisfying result, and only one gets to win the competition.
 
-When a training example is input into the grid, the ***Best Matching Unit (BMU)*** is determined (competition winner). The BMU is the cell whose weights are closest to the training example.
+When a training example is input into the grid, the **_Best Matching Unit (BMU)_** is determined (competition winner). The BMU is the cell whose weights are closest to the training example.
 
 Next, the BMU’s weights and weights of the cells neighboring the BMU, are adapted to move closer to the input training instance. While there are other valid variants of training an SOM, we present the most popular and widely used implementation of the SOM in this guide.
 
@@ -32,12 +31,12 @@ As we’ll be using some Python routines to demonstrate the functions used to tr
 
 The basic algorithm for training an SOM is given below:
 
--   Initialize all grid weights of the SOM
--   Repeat until convergence or maximum epochs are reached
-    -   Shuffle the training examples
-    -   For each training instance xx
-        -   Find the best matching unit BMU
-        -   Update the weight vector of BMU and its neighboring cells
+- Initialize all grid weights of the SOM
+- Repeat until convergence or maximum epochs are reached
+  - Shuffle the training examples
+  - For each training instance xx
+    - Find the best matching unit BMU
+    - Update the weight vector of BMU and its neighboring cells
 
 The three steps for initialization, finding the BMU, and updating the weights are explained in the following sections. Let’s begin!
 
@@ -75,11 +74,11 @@ Where Δw(t)ijΔwij(t) is the change to be added to w(t)ijwij(t). It can be comp
 
 For this expression:
 
--   tt is the epoch number
--   (g,h)(g,h) are the coordinates of BMU
--   ηη is the learning rate
--   σtσt is the radius
--   fij(g,h,σt)fij(g,h,σt) is the neighborhood distance function
+- tt is the epoch number
+- (g,h)(g,h) are the coordinates of BMU
+- ηη is the learning rate
+- σtσt is the radius
+- fij(g,h,σt)fij(g,h,σt) is the neighborhood distance function
 
 In the following sections, we’ll present the details of this weight training expression.
 
@@ -151,7 +150,7 @@ We’ll use this fact later to make training more efficient in the implementatio
 
 #### Implementing a Self-Organizing Map in Python Using NumPy <span id="implementingaselforganizingmapinpythonusingnumpy"></span>
 
-As there is no built-in routine for an SOM in the de-facto standard machine learning library, ***Scikit-Learn***, we’ll do a quick implementation manually using ***NumPy***. The unsupervised machine learning model is pretty straightforward and easy to implement.
+As there is no built-in routine for an SOM in the de-facto standard machine learning library, **_Scikit-Learn_**, we’ll do a quick implementation manually using **_NumPy_**. The unsupervised machine learning model is pretty straightforward and easy to implement.
 
 We’ll implement the SOM as a 2D `mxn` grid, hence requiring a 3D `NumPy` array. The third dimension is required for storing the weights in each cell:
 
@@ -210,7 +209,7 @@ One of the commonly cited examples for training an SOM is that of random colors.
 
 Let’s run the `train_SOM()` function on a training data matrix filled with random RGB colors.
 
-The code below initializes a training data matrix and an SOM grid with random RGB colors. It also displays the training data and the randomly initialized *SOM grid*. Note, the training matrix is a 3000x3 matrix, however, we have reshaped it to 50x60x3 matrix for visualization:
+The code below initializes a training data matrix and an SOM grid with random RGB colors. It also displays the training data and the randomly initialized _SOM grid_. Note, the training matrix is a 3000x3 matrix, however, we have reshaped it to 50x60x3 matrix for visualization:
 
     # Dimensions of the SOM grid
     m = 10

@@ -1,5 +1,4 @@
-Disjoint Set
-============
+# Disjoint Set
 
     """
         disjoint set

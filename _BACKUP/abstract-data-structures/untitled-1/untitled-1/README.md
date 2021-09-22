@@ -1,5 +1,4 @@
-Graphs
-======
+# Graphs
 
 Projects:
 
@@ -328,11 +327,11 @@ Projects:
     [Running] node "c:\Users\bryan\Downloads\TOM_L\Javascript\Data-Structures\Graph\tempCodeRunnerFile.js"
     Printing the adjacency list:
 
-    1 -> 2 3 
-    2 -> 1 4 5 
-    3 -> 1 
-    4 -> 2 
-    5 -> 2 
+    1 -> 2 3
+    2 -> 1 4 5
+    3 -> 1
+    4 -> 2
+    5 -> 2
 
     Breadth first search at node 1:
 
@@ -439,21 +438,19 @@ Projects:
 
 {% endtab %} {% endtabs %}
 
-Graph
------
+## Graph
 
--   Given a list of sorted words from an alien dictionary, find the order of the alphabet.
-    -   Alien Dictionary Topological Sort question.
--   Find if a given string matches any path in a labeled graph. A path may contain cycles.
--   Given a bipartite graph, separate the vertices into two sets.
--   You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.
--   Given a graph and two nodes, determine if there exists a path between them.
--   Determine if a cycle exists in the graph.
+- Given a list of sorted words from an alien dictionary, find the order of the alphabet.
+  - Alien Dictionary Topological Sort question.
+- Find if a given string matches any path in a labeled graph. A path may contain cycles.
+- Given a bipartite graph, separate the vertices into two sets.
+- You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.
+- Given a graph and two nodes, determine if there exists a path between them.
+- Determine if a cycle exists in the graph.
 
 {% tabs %} {% tab title=“Directed Graph:” %}
 
-Directed Graph:
----------------
+## Directed Graph:
 
     class Node(object):
         def __init__(self, value):
@@ -842,22 +839,21 @@ Directed Graph:
 
 {% embed url=“https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16” %} {% endtab %} {% endtabs %}
 
-Intro to Graphs
----------------
+## Intro to Graphs
 
 ![Directed Graph](../../../.gitbook/assets/image%20%2816%29.png)
 
 ### Objectives
 
--   Learn what graphs are
--   Learn the components of graphs
--   Learn what graphs are useful for
+- Learn what graphs are
+- Learn the components of graphs
+- Learn what graphs are useful for
 
 ### What Are Graphs?
 
 Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops.
 
-The nodes in a graph are called *vertexes* (or *vertices* or *verts*), and the connections between the verts are called *edges*.
+The nodes in a graph are called _vertexes_ (or _vertices_ or _verts_), and the connections between the verts are called _edges_.
 
 And edge denotes a relationship or linkage between the two verts.
 
@@ -881,7 +877,7 @@ And so on.
 
 #### Directed/Undirected Graphs
 
-If the edges are “one way” (have an arrow), the graph is said to be a *directed graph*. If there are no arrows, the edges are bidirectional and the graph is an *undirected* graph.
+If the edges are “one way” (have an arrow), the graph is said to be a _directed graph_. If there are no arrows, the edges are bidirectional and the graph is an _undirected_ graph.
 
 ![](../../../.gitbook/assets/image%20%2817%29.png)
 
@@ -893,11 +889,11 @@ This is an **directed graph** which could represent a social network like Twitte
 
 #### Cyclic/Acyclic Graphs
 
-If a cycle can be formed (e.g. you can follow the edges and arrive again at an already-visited vert), the graph is *cyclic*. Otherwise it is *acyclic*.
+If a cycle can be formed (e.g. you can follow the edges and arrive again at an already-visited vert), the graph is _cyclic_. Otherwise it is _acyclic_.
 
 #### Weighted Graphs
 
-Graphs with values (*weights*) associated with the edges are called *weighted graphs*.
+Graphs with values (_weights_) associated with the edges are called _weighted graphs_.
 
 The meaning of the weight is dependent on the type of graph. A graph of road network segments might have weight represent the length of the road. The higher the total weight of a route on the graph, the longer the trip is. The weights can be used to help decide if a particular route should be chosen over another.
 
@@ -907,7 +903,7 @@ Weights can be further modified. For example, if one were building a bicycle map
 
 #### Directed Acyclic Graphs (DAGs)
 
-A *directed acyclic graph* (*DAG*) has a number of applications. From [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
+A _directed acyclic graph_ (_DAG_) has a number of applications. From [Wikipedia](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
 
 > DAGs can model many different kinds of information. A spreadsheet can be modeled as a DAG, with a vertex for each cell and an edge whenever the formula in one cell uses the value from another; a topological ordering of this DAG can be used to update all cell values when the spreadsheet is changed. Similarly, topological orderings of DAGs can be used to order the compilation operations in a makefile. The program evaluation and review technique uses DAGs to model the milestones and activities of large human projects, and schedule these projects to use as little total time as possible. Combinational logic blocks in electronic circuit design, and the operations in dataflow programming languages, involve acyclic networks of processing elements. DAGs can also represent collections of events and their influence on each other, either in a probabilistic structure such as a Bayesian network or as a record of historical data such as family trees or the version histories of distributed revision control systems. DAGs can also be used as a compact representation of sequence data, such as the directed acyclic word graph representation of a collection of strings, or the binary decision diagram representation of sequences of binary choices.
 

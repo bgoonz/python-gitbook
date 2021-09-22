@@ -1,5 +1,4 @@
-CGA-Sprint Prep
-===============
+# CGA-Sprint Prep
 
 ### General Coding Assessment Information <span id="general-coding-assessment-information"></span>
 

@@ -1,5 +1,4 @@
-Conditionals and loops
-======================
+# Conditionals and loops
 
 ### Conditional execution
 
@@ -14,7 +13,7 @@ A few important things to note about `if` statements:
 
 1.  The colon (`:`) is significant and required. It separates the **header** of the **compound statement** from the **body**.
 2.  The line after the colon must be indented. It is standard in Python to use four spaces for indenting.
-3.  All lines indented the same amount after the colon will be executed whenever the BOOLEAN\_EXPRESSION is true.
+3.  All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.
 
 Here is an example:
 
@@ -29,15 +28,15 @@ The boolean expression after the `if` statement is called the **condition**. If 
 
 Run this example code and see what happens. Then change the value of `food` to something other than `'spam'` and run it again, confirming that you don’t get any output.
 
-Flowchart of an **if** statement![\_images/flowchart\_if\_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
+Flowchart of an **if** statement![_images/flowchart_if_only.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_only.png)
 
-As with the `for` statement from the last chapter, the `if` statement is a **compound statement**. Compound statements consist of a header line and a body. The header line of the `if` statement begins with the keyword `if` followed by a *boolean expression* and ends with a colon (`:`).
+As with the `for` statement from the last chapter, the `if` statement is a **compound statement**. Compound statements consist of a header line and a body. The header line of the `if` statement begins with the keyword `if` followed by a _boolean expression_ and ends with a colon (`:`).
 
 The indented statements that follow are called a **block**. The first unindented statement marks the end of the block. Each statement inside the block must have the same indentation.
 
 Indentation and the PEP 8 Python Style Guide
 
-The Python community has developed a [Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008), usually referred to simply as “PEP 8”. The *Python Enhancement Proposals*, or PEPs, are part of the process the Python community uses to discuss and adopt changes to the language.
+The Python community has developed a [Style Guide for Python Code](http://www.python.org/dev/peps/pep-0008), usually referred to simply as “PEP 8”. The _Python Enhancement Proposals_, or PEPs, are part of the process the Python community uses to discuss and adopt changes to the language.
 
 PEP 8 recommends the use of 4 spaces per indentation level. We will follow this (and the other PEP 8 recommendations) in this book.
 
@@ -56,7 +55,7 @@ It is frequently the case that you want one thing to happen when a condition it 
 
 Here, the first print statement will execute if `food` is equal to `'spam'`, and the print statement indented under the `else` clause will get executed when it is not.
 
-Flowchart of a **if else** statement![\_images/flowchart\_if\_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
+Flowchart of a **if else** statement![_images/flowchart_if_else.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_if_else.png)
 
 The syntax for an `if else` statement looks like this:
 
@@ -76,9 +75,9 @@ There is no limit on the number of statements that can appear under the two clau
 
 Python terminology
 
-Python documentation sometimes uses the term **suite** of statements to mean what we have called a *block* here. They mean the same thing, and since most other languages and computer scientists use the word *block*, we’ll stick with that.
+Python documentation sometimes uses the term **suite** of statements to mean what we have called a _block_ here. They mean the same thing, and since most other languages and computer scientists use the word _block_, we’ll stick with that.
 
-Notice too that `else` is not a statement. The `if` statement has two *clauses*, one of which is the (optional) `else` clause. The Python documentation calls both forms, together with the next form we are about to meet, the `if` statement.
+Notice too that `else` is not a statement. The `if` statement has two _clauses_, one of which is the (optional) `else` clause. The Python documentation calls both forms, together with the next form we are about to meet, the `if` statement.
 
 ### 4.2. Chained conditionals
 
@@ -91,7 +90,7 @@ Sometimes there are more than two possibilities and we need more than two branch
     else:
         STATEMENTS_C
 
-Flowchart of this chained conditional![\_images/flowchart\_chained\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
+Flowchart of this chained conditional![_images/flowchart_chained_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_chained_conditional.png)
 
 `elif` is an abbreviation of `else if`. Again, exactly one branch will be executed. There is no limit of the number of `elif` statements but only a single (and optional) final `else` statement is allowed and it must be the last branch in the statement:
 
@@ -110,7 +109,7 @@ Each condition is checked in order. If the first is false, the next is checked, 
 
 One conditional can also be **nested** within another. (It is the same theme of composibility, again!) We could have written the previous example as follows:
 
-Flowchart of this nested conditional![\_images/flowchart\_nested\_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
+Flowchart of this nested conditional![_images/flowchart_nested_conditional.png](https://www.openbookproject.net/books/bpp4awd/_images/flowchart_nested_conditional.png)
 
     if x < y:
         STATEMENTS_A
@@ -256,7 +255,7 @@ Often times you will want a loop that iterates a given number of times, or that 
 
 One of the things loops are good for is generating tables. Before computers were readily available, people had to calculate logarithms, sines and cosines, and other mathematical functions by hand. To make that easier, mathematics books contained long tables listing the values of these functions. Creating the tables was slow and boring, and they tended to be full of errors.
 
-When computers appeared on the scene, one of the initial reactions was, *“This is great! We can use the computers to generate the tables, so there will be no errors.”* That turned out to be true (mostly) but shortsighted. Soon thereafter, computers and calculators were so pervasive that the tables became obsolete.
+When computers appeared on the scene, one of the initial reactions was, _“This is great! We can use the computers to generate the tables, so there will be no errors.”_ That turned out to be true (mostly) but shortsighted. Soon thereafter, computers and calculators were so pervasive that the tables became obsolete.
 
 Well, almost. For some operations, computers use tables of values to get an approximate answer and then perform computations to improve the approximation. In some cases, there have been errors in the underlying tables, most famously in the table the Intel Pentium processor chip used to perform floating-point division.
 
@@ -397,7 +396,7 @@ Incrementing a variable is so common that Python provides an abbreviated syntax 
     >>> count
     2
 
-`count += 1` is an abreviation for `count = count + 1` . We pronouce the operator as *“plus-equals”*. The increment value does not have to be 1:
+`count += 1` is an abreviation for `count = count + 1` . We pronouce the operator as _“plus-equals”_. The increment value does not have to be 1:
 
     >>> n = 2
     >>> n += 5
@@ -460,7 +459,7 @@ This prints:
 
 ### 4.13. The `continue` statement
 
-This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, *for the current iteration*. But the loop still carries on running for its remaining iterations:
+This is a control flow statement that causes the program to immediately skip the processing of the rest of the body of the loop, _for the current iteration_. But the loop still carries on running for its remaining iterations:
 
     for i in [12, 16, 17, 24, 29, 30]:
         if i % 2 == 1:      # if the number is odd
@@ -580,7 +579,7 @@ One of the possible paths of the flow of execution determined by conditional exe
 
 A conditional branch with more than two possible flows of execution. In Python chained conditionals are written with `if ... elif ... else` statements.compound statement
 
-A Python statement that has two parts: a *header* and a *body*. The header begins with a keyword and ends with a colon (`:`). The body contains a series of other Python statements, all indented the same amount.
+A Python statement that has two parts: a _header_ and a _body_. The header begins with a keyword and ends with a colon (`:`). The body contains a series of other Python statements, all indented the same amount.
 
 Note
 
@@ -606,7 +605,7 @@ A loop in which the terminating condition is never satisfied.indefinite iteratio
 
 A loop where we just need to keep going until some condition is met. A `while` statement is used for this case.initialization (of a variable)
 
-To initialize a variable is to give it an initial value. Since in Python variables don’t exist until they are assigned values, they are initialized when they are created. In other programming languages this is not the case, and variables can be created without being initialized, in which case they have either default or *garbage* values.iteration
+To initialize a variable is to give it an initial value. Since in Python variables don’t exist until they are assigned values, they are initialized when they are created. In other programming languages this is not the case, and variables can be created without being initialized, in which case they have either default or _garbage_ values.iteration
 
 Repeated execution of a set of programming statements.loop
 
@@ -626,6 +625,6 @@ Making more than one assignment to the same variable during the execution of a p
 
 A special character that causes the cursor to move to the next tab stop on the current line.trichotomy
 
-Given any real numbers *a* and *b*, exactly one of the following relations holds: *a &lt; b*, *a &gt; b*, or *a == b*. Thus when you can establish that two of the relations are false, you can assume the remaining one is true.trace
+Given any real numbers _a_ and _b_, exactly one of the following relations holds: _a &lt; b_, _a &gt; b_, or _a == b_. Thus when you can establish that two of the relations are false, you can assume the remaining one is true.trace
 
 To follow the flow of execution of a program by hand, recording the change of state of the variables and any output produced.

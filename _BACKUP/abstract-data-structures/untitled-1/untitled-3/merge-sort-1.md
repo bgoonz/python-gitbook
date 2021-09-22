@@ -1,5 +1,4 @@
-Merge Sort
-==========
+# Merge Sort
 
 {% tabs %} {% tab title=“Python” %}
 

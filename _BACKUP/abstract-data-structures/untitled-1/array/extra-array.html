@@ -1,84 +1,211 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>extra-array</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="extra-array">Extra-Array</h1>
-<p>{% tabs %} {% tab title=“recur-bin-search.py” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># given array a and need to find value x</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>extra-array</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="extra-array">Extra-Array</h1>
+    <p>{% tabs %} {% tab title=“recur-bin-search.py” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># given array a and need to find value x</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="co"># left and right correspond to initial indices of array a bounding the search</span></a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="co"># segment of array a above and below, respectively</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="kw">def</span> binary_search_recursive(a, x, left<span class="op">=</span><span class="dv">0</span>, right<span class="op">=</span>(<span class="bu">len</span>(a)<span class="op">-</span><span class="dv">1</span>)):</a>
@@ -98,22 +225,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-18" title="18">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a>
 <a class="sourceLine" id="cb1-19" title="19">    <span class="cf">elif</span> a[index] <span class="op">&gt;</span> x:</a>
 <a class="sourceLine" id="cb1-20" title="20">        right <span class="op">=</span> index</a>
-<a class="sourceLine" id="cb1-21" title="21">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Second Tab” %}</p>
-<p>{% endtab %}</p>
-<p>{% tab title=“Array Change” %}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> arrayChange(inputArray):</a>
+<a class="sourceLine" id="cb1-21" title="21">        <span class="cf">return</span> binary_search_recursive(a, x, left, right)</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Second Tab” %}</p>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Array Change” %}</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> arrayChange(inputArray):</a>
 <a class="sourceLine" id="cb2-2" title="2">    count <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb2-3" title="3">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">len</span>(inputArray)):</a>
 <a class="sourceLine" id="cb2-4" title="4">        <span class="cf">if</span> inputArray[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">&gt;=</span> inputArray[i]:</a>
 <a class="sourceLine" id="cb2-5" title="5">            difference <span class="op">=</span> inputArray[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">-</span> inputArray[i]</a>
 <a class="sourceLine" id="cb2-6" title="6">            inputArray[i] <span class="op">+=</span> difference <span class="op">+</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb2-7" title="7">            count <span class="op">+=</span> difference <span class="op">+</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb2-8" title="8">    <span class="cf">return</span> count</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Array Union” %}</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co">#Time complexity O(M*N)</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="cf">return</span> count</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Array Union” %}</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="co">#Time complexity O(M*N)</span></a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="co">#Space Complexity O(M+N)</span></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="co">#Method 1</span></a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="kw">class</span> Solution:</a>
@@ -176,10 +311,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-61" title="61">        b<span class="op">=</span>[<span class="bu">int</span>(x) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">input</span>().strip().split()]</a>
 <a class="sourceLine" id="cb3-62" title="62">        ob<span class="op">=</span>Solution()</a>
 <a class="sourceLine" id="cb3-63" title="63"></a>
-<a class="sourceLine" id="cb3-64" title="64">        <span class="bu">print</span>(ob.doUnion(a,n,b,m))</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Rotate” %}</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co">#rotation of an element by one step</span></a>
+<a class="sourceLine" id="cb3-64" title="64">        <span class="bu">print</span>(ob.doUnion(a,n,b,m))</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Rotate” %}</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="co">#rotation of an element by one step</span></a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="kw">def</span> left_rotation(arr,d,n):</a>
 <a class="sourceLine" id="cb4-3" title="3">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(d):</a>
 <a class="sourceLine" id="cb4-4" title="4">        rotate_by_one_step(arr,n)</a>
@@ -201,9 +340,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-20" title="20"></a>
 <a class="sourceLine" id="cb4-21" title="21">left_rotation(arr,<span class="dv">2</span>,<span class="dv">5</span>)</a>
 <a class="sourceLine" id="cb4-22" title="22"></a>
-<a class="sourceLine" id="cb4-23" title="23">print_array(arr,<span class="dv">5</span>)</a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Array(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb4-23" title="23">print_array(arr,<span class="dv">5</span>)</a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Array(<span class="bu">object</span>):</a>
 <a class="sourceLine" id="cb5-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, size, defaultValue <span class="op">=</span> <span class="va">None</span>):</a>
 <a class="sourceLine" id="cb5-3" title="3">        <span class="va">self</span>.size <span class="op">=</span> size</a>
 <a class="sourceLine" id="cb5-4" title="4">        <span class="cf">if</span>(defaultValue <span class="op">==</span> <span class="va">None</span>):</a>
@@ -294,17 +437,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-89" title="89">    <span class="bu">print</span>(myArray.items, myArray.myLen())</a>
 <a class="sourceLine" id="cb5-90" title="90">    myArray.delete(<span class="dv">5</span>)</a>
 <a class="sourceLine" id="cb5-91" title="91">    <span class="bu">print</span>(myArray.items, myArray.myLen())</a>
-<a class="sourceLine" id="cb5-92" title="92">    myArray.search(<span class="dv">4</span>)</a></code></pre></div>
-<h3 id="section"></h3>
-<h3 id="create-array-class">Create Array Class</h3>
-<p>Now, first, let’s create a custom class named Array which implements all the above functionalities in it.</p>
-<p>So now let’s define a constructor using init method in Python which accepts 2 arguments along with the self-object that is the size and the default value for Array elements.</p>
-<p>Here, size is defined which is the static size of the array and the default value means the value assigned to elements while creating a new array.</p>
-<p>Now what we need is that if the size is only initialized then we must initialize all elements to default Value that is None.</p>
-<p>Otherwise, if both parameters are initialized, then initialize the list with these values the user passed as an argument.</p>
-<p>If the length of the default value list is less than size, then initialize other elements to “None”.</p>
-<p>If the length of the list passed is greater than size user passed then simply return the program with the error message “Elements are more than the size specified”.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> Array(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb5-92" title="92">    myArray.search(<span class="dv">4</span>)</a></code></pre>
+    </div>
+    <h3 id="section"></h3>
+    <h3 id="create-array-class">Create Array Class</h3>
+    <p>
+      Now, first, let’s create a custom class named Array which implements all
+      the above functionalities in it.
+    </p>
+    <p>
+      So now let’s define a constructor using init method in Python which
+      accepts 2 arguments along with the self-object that is the size and the
+      default value for Array elements.
+    </p>
+    <p>
+      Here, size is defined which is the static size of the array and the
+      default value means the value assigned to elements while creating a new
+      array.
+    </p>
+    <p>
+      Now what we need is that if the size is only initialized then we must
+      initialize all elements to default Value that is None.
+    </p>
+    <p>
+      Otherwise, if both parameters are initialized, then initialize the list
+      with these values the user passed as an argument.
+    </p>
+    <p>
+      If the length of the default value list is less than size, then initialize
+      other elements to “None”.
+    </p>
+    <p>
+      If the length of the list passed is greater than size user passed then
+      simply return the program with the error message “Elements are more than
+      the size specified”.
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">class</span> Array(<span class="bu">object</span>):</a>
 <a class="sourceLine" id="cb6-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, size, defaultValue <span class="op">=</span> <span class="va">None</span>):</a>
 <a class="sourceLine" id="cb6-3" title="3">        <span class="va">self</span>.size <span class="op">=</span> size</a>
 <a class="sourceLine" id="cb6-4" title="4">        <span class="cf">if</span>(defaultValue <span class="op">==</span> <span class="va">None</span>):</a>
@@ -321,64 +492,124 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-15" title="15">                <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(defaultValue), size):</a>
 <a class="sourceLine" id="cb6-16" title="16">                    <span class="va">self</span>.items.append(<span class="va">None</span>)</a>
 <a class="sourceLine" id="cb6-17" title="17">            <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb6-18" title="18">                <span class="bu">print</span>(<span class="st">&#39;Elements are more than the size specified&#39;</span>)</a></code></pre></div>
-<h4 id="define-length-of-array-function">Define Length of Array Function</h4>
-<p>This function is used to return the length of the Array that means the elements we initialized excluding None values from it.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">def</span> myLen(<span class="va">self</span>):</a>
+<a class="sourceLine" id="cb6-18" title="18">                <span class="bu">print</span>(<span class="st">&#39;Elements are more than the size specified&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-length-of-array-function">
+      Define Length of Array Function
+    </h4>
+    <p>
+      This function is used to return the length of the Array that means the
+      elements we initialized excluding None values from it.
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">def</span> myLen(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb7-2" title="2">        length <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb7-3" title="3">        <span class="cf">for</span> i <span class="kw">in</span> <span class="va">self</span>.items:</a>
 <a class="sourceLine" id="cb7-4" title="4">            <span class="cf">if</span> i <span class="op">==</span> <span class="va">None</span>:</a>
 <a class="sourceLine" id="cb7-5" title="5">                <span class="cf">continue</span></a>
 <a class="sourceLine" id="cb7-6" title="6">            <span class="cf">else</span>:</a>
 <a class="sourceLine" id="cb7-7" title="7">                length <span class="op">+=</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb7-8" title="8">        <span class="cf">return</span> length</a></code></pre></div>
-<h4 id="define-insert-first-array-function">Define Insert First Array Function</h4>
-<p>This function is used to insert or add the element to the beginning of the array.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">    <span class="kw">def</span> insertFirst(<span class="va">self</span>, element):</a>
+<a class="sourceLine" id="cb7-8" title="8">        <span class="cf">return</span> length</a></code></pre>
+    </div>
+    <h4 id="define-insert-first-array-function">
+      Define Insert First Array Function
+    </h4>
+    <p>
+      This function is used to insert or add the element to the beginning of the
+      array.
+    </p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1">    <span class="kw">def</span> insertFirst(<span class="va">self</span>, element):</a>
 <a class="sourceLine" id="cb8-2" title="2">        <span class="cf">if</span> (<span class="va">self</span>.myLen() <span class="op">&lt;</span> <span class="va">self</span>.size):</a>
 <a class="sourceLine" id="cb8-3" title="3">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.myLen(), <span class="dv">0</span>, <span class="dv">-1</span>):</a>
 <a class="sourceLine" id="cb8-4" title="4">                <span class="va">self</span>.items[i] <span class="op">=</span> <span class="va">self</span>.items[i <span class="op">-</span> <span class="dv">1</span>]</a>
 <a class="sourceLine" id="cb8-5" title="5">            <span class="va">self</span>.items[<span class="dv">0</span>] <span class="op">=</span> element</a>
 <a class="sourceLine" id="cb8-6" title="6">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb8-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre></div>
-<h4 id="define-insert-at-index-function">Define Insert At Index Function</h4>
-<p>This function is used to insert or add an element at a particular index or position which the user passed along with the element to insert.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">    <span class="kw">def</span> insertAtIndex(<span class="va">self</span>, index, element):</a>
+<a class="sourceLine" id="cb8-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-insert-at-index-function">
+      Define Insert At Index Function
+    </h4>
+    <p>
+      This function is used to insert or add an element at a particular index or
+      position which the user passed along with the element to insert.
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1">    <span class="kw">def</span> insertAtIndex(<span class="va">self</span>, index, element):</a>
 <a class="sourceLine" id="cb9-2" title="2">        <span class="cf">if</span> (<span class="va">self</span>.myLen() <span class="op">&lt;</span> <span class="va">self</span>.size):</a>
 <a class="sourceLine" id="cb9-3" title="3">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.myLen(), index, <span class="dv">-1</span>):</a>
 <a class="sourceLine" id="cb9-4" title="4">                <span class="va">self</span>.items[i] <span class="op">=</span> <span class="va">self</span>.items[i <span class="op">-</span> <span class="dv">1</span>]</a>
 <a class="sourceLine" id="cb9-5" title="5">            <span class="va">self</span>.items[index] <span class="op">=</span> element</a>
 <a class="sourceLine" id="cb9-6" title="6">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb9-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre></div>
-<h4 id="define-insert-after-index-function">Define Insert After Index Function</h4>
-<p>This function is used to insert or add an element after a particular index or position which the user passed along with the element to insert.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">def</span> insertAfterIndex(<span class="va">self</span>, index, element):</a>
+<a class="sourceLine" id="cb9-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-insert-after-index-function">
+      Define Insert After Index Function
+    </h4>
+    <p>
+      This function is used to insert or add an element after a particular index
+      or position which the user passed along with the element to insert.
+    </p>
+    <div class="sourceCode" id="cb10">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1">    <span class="kw">def</span> insertAfterIndex(<span class="va">self</span>, index, element):</a>
 <a class="sourceLine" id="cb10-2" title="2">        <span class="cf">if</span> (<span class="va">self</span>.myLen() <span class="op">&lt;</span> <span class="va">self</span>.size):</a>
 <a class="sourceLine" id="cb10-3" title="3">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.myLen(), index <span class="op">+</span> <span class="dv">1</span>, <span class="dv">-1</span>):</a>
 <a class="sourceLine" id="cb10-4" title="4">                <span class="va">self</span>.items[i] <span class="op">=</span> <span class="va">self</span>.items[i <span class="op">-</span> <span class="dv">1</span>]</a>
 <a class="sourceLine" id="cb10-5" title="5">            <span class="va">self</span>.items[index <span class="op">+</span> <span class="dv">1</span>] <span class="op">=</span> element</a>
 <a class="sourceLine" id="cb10-6" title="6">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb10-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre></div>
-<h4 id="define-insert-before-index-function">Define Insert Before Index Function</h4>
-<p>This function is used to insert or add an element before a particular index or position which the user passed along with the element to insert.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">    <span class="kw">def</span> insertBeforeIndex(<span class="va">self</span>, index, element):</a>
+<a class="sourceLine" id="cb10-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-insert-before-index-function">
+      Define Insert Before Index Function
+    </h4>
+    <p>
+      This function is used to insert or add an element before a particular
+      index or position which the user passed along with the element to insert.
+    </p>
+    <div class="sourceCode" id="cb11">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1">    <span class="kw">def</span> insertBeforeIndex(<span class="va">self</span>, index, element):</a>
 <a class="sourceLine" id="cb11-2" title="2">        <span class="cf">if</span> (<span class="va">self</span>.myLen() <span class="op">&lt;</span> <span class="va">self</span>.size):</a>
 <a class="sourceLine" id="cb11-3" title="3">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.myLen(), index <span class="op">-</span> <span class="dv">1</span>, <span class="dv">-1</span>):</a>
 <a class="sourceLine" id="cb11-4" title="4">                <span class="va">self</span>.items[i] <span class="op">=</span> <span class="va">self</span>.items[i <span class="op">-</span> <span class="dv">1</span>]</a>
 <a class="sourceLine" id="cb11-5" title="5">            <span class="va">self</span>.items[index <span class="op">-</span> <span class="dv">1</span>] <span class="op">=</span> element</a>
 <a class="sourceLine" id="cb11-6" title="6">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb11-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre></div>
-<h4 id="define-delete-function">Define Delete Function</h4>
-<p>This function is used to remove or delete a particular element from our array or if not present then simply print the error that the element is not found in this array.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">    <span class="kw">def</span> delete(<span class="va">self</span>, element):</a>
+<a class="sourceLine" id="cb11-7" title="7">            <span class="bu">print</span>(<span class="st">&#39;Element index out of range&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-delete-function">Define Delete Function</h4>
+    <p>
+      This function is used to remove or delete a particular element from our
+      array or if not present then simply print the error that the element is
+      not found in this array.
+    </p>
+    <div class="sourceCode" id="cb12">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1">    <span class="kw">def</span> delete(<span class="va">self</span>, element):</a>
 <a class="sourceLine" id="cb12-2" title="2">        <span class="cf">if</span> element <span class="kw">in</span> <span class="va">self</span>.items:</a>
 <a class="sourceLine" id="cb12-3" title="3">            Index <span class="op">=</span> <span class="va">self</span>.items.index(element)</a>
 <a class="sourceLine" id="cb12-4" title="4">            <span class="va">self</span>.items[Index] <span class="op">=</span> <span class="va">None</span></a>
 <a class="sourceLine" id="cb12-5" title="5">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb12-6" title="6">            <span class="bu">print</span>(<span class="st">&#39;This element is not in the Array!&#39;</span>)</a></code></pre></div>
-<h4 id="define-search-function">Define Search Function</h4>
-<p>This function is used to search or find the element which is passed by the user to return the index or position.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">    <span class="kw">def</span> search(<span class="va">self</span>, element):</a>
+<a class="sourceLine" id="cb12-6" title="6">            <span class="bu">print</span>(<span class="st">&#39;This element is not in the Array!&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-search-function">Define Search Function</h4>
+    <p>
+      This function is used to search or find the element which is passed by the
+      user to return the index or position.
+    </p>
+    <div class="sourceCode" id="cb13">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb13-1" title="1">    <span class="kw">def</span> search(<span class="va">self</span>, element):</a>
 <a class="sourceLine" id="cb13-2" title="2">        <span class="cf">if</span> element <span class="kw">in</span> <span class="va">self</span>.items:</a>
 <a class="sourceLine" id="cb13-3" title="3">            position <span class="op">=</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb13-4" title="4">            <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="va">self</span>.myLen()):</a>
@@ -389,13 +620,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb13-9" title="9"></a>
 <a class="sourceLine" id="cb13-10" title="10">            <span class="bu">print</span>(<span class="st">&#39;Element </span><span class="sc">{}</span><span class="st"> found at position </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(element, position))</a>
 <a class="sourceLine" id="cb13-11" title="11">        <span class="cf">else</span>:</a>
-<a class="sourceLine" id="cb13-12" title="12">            <span class="bu">print</span>(<span class="st">&#39;This element is not in the Array!&#39;</span>)</a></code></pre></div>
-<h4 id="define-main-condition">Define Main Condition</h4>
-<p>Now, we have implemented all the functions of our custom Array class.</p>
-<p>So, now what we need is to check whether the functionality of these methods are working or not.</p>
-<p>For that, create an instance of the Array Class and initialize it with array size and the values it needs to insert at the beginning.</p>
-<p>Then, just use the object to call all the functions one by one.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</a>
+<a class="sourceLine" id="cb13-12" title="12">            <span class="bu">print</span>(<span class="st">&#39;This element is not in the Array!&#39;</span>)</a></code></pre>
+    </div>
+    <h4 id="define-main-condition">Define Main Condition</h4>
+    <p>Now, we have implemented all the functions of our custom Array class.</p>
+    <p>
+      So, now what we need is to check whether the functionality of these
+      methods are working or not.
+    </p>
+    <p>
+      For that, create an instance of the Array Class and initialize it with
+      array size and the values it needs to insert at the beginning.
+    </p>
+    <p>Then, just use the object to call all the functions one by one.</p>
+    <div class="sourceCode" id="cb14">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb14-1" title="1"><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&#39;__main__&#39;</span>:</a>
 <a class="sourceLine" id="cb14-2" title="2">    myArray <span class="op">=</span> Array(<span class="dv">5</span>, [<span class="dv">1</span>])</a>
 <a class="sourceLine" id="cb14-3" title="3">    <span class="bu">print</span>(myArray.items, myArray.myLen())</a>
 <a class="sourceLine" id="cb14-4" title="4">    myArray.insertFirst(<span class="dv">3</span>)</a>
@@ -406,6 +647,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb14-9" title="9">    <span class="bu">print</span>(myArray.items, myArray.myLen())</a>
 <a class="sourceLine" id="cb14-10" title="10">    myArray.delete(<span class="dv">5</span>)</a>
 <a class="sourceLine" id="cb14-11" title="11">    <span class="bu">print</span>(myArray.items, myArray.myLen())</a>
-<a class="sourceLine" id="cb14-12" title="12">    myArray.search(<span class="dv">4</span>)</a></code></pre></div>
-</body>
+<a class="sourceLine" id="cb14-12" title="12">    myArray.search(<span class="dv">4</span>)</a></code></pre>
+    </div>
+  </body>
 </html>

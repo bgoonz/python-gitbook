@@ -1,86 +1,213 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="graphs">Graphs</h1>
-<p>Projects:</p>
-<p>{% file src=“../../../.gitbook/assets/projects.zip” %}</p>
-<p>{% tabs %} {% tab title=“Adjacency List” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> queue <span class="im">import</span> Queue</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="graphs">Graphs</h1>
+    <p>Projects:</p>
+    <p>{% file src=“../../../.gitbook/assets/projects.zip” %}</p>
+    <p>{% tabs %} {% tab title=“Adjacency List” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="im">from</span> queue <span class="im">import</span> Queue</a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="im">from</span> stack <span class="im">import</span> Stack</a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="co"># lets do a graph adjacency list</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="kw">class</span> Graph:</a>
@@ -305,10 +432,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-223" title="223"><span class="co">#         [1, 2, 4, 7, 6]</span></a>
 <a class="sourceLine" id="cb1-224" title="224"><span class="co">#     &#39;&#39;&#39;</span></a>
 <a class="sourceLine" id="cb1-225" title="225"><span class="co">#     print(graph.dfs(1, 6))</span></a>
-<a class="sourceLine" id="cb1-226" title="226"><span class="co">#     print(graph.dfs_recursive(1, 6))</span></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Graph.js” %}</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> Graph <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-226" title="226"><span class="co">#     print(graph.dfs_recursive(1, 6))</span></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Graph.js” %}</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> Graph <span class="op">{</span></a>
 <a class="sourceLine" id="cb2-2" title="2">  <span class="at">constructor</span>() <span class="op">{</span></a>
 <a class="sourceLine" id="cb2-3" title="3">    <span class="kw">this</span>.<span class="at">adjacencyMap</span> <span class="op">=</span> <span class="op">{};</span></a>
 <a class="sourceLine" id="cb2-4" title="4">  <span class="op">}</span></a>
@@ -412,10 +543,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-102" title="102"><span class="co">Visited node 5 at level 2.</span></a>
 <a class="sourceLine" id="cb2-103" title="103"><span class="co">Visited node 4 at level 2.</span></a>
 <a class="sourceLine" id="cb2-104" title="104"></a>
-<a class="sourceLine" id="cb2-105" title="105"><span class="co">*/</span></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Graph2.js” %}</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// create a graph class</span></a>
+<a class="sourceLine" id="cb2-105" title="105"><span class="co">*/</span></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Graph2.js” %}</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// create a graph class</span></a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="kw">class</span> Graph <span class="op">{</span></a>
 <a class="sourceLine" id="cb3-3" title="3">  <span class="co">// defining vertex array and</span></a>
 <a class="sourceLine" id="cb3-4" title="4">  <span class="co">// adjacent list</span></a>
@@ -502,23 +637,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-85" title="85"><span class="co">// D -&gt; A E</span></a>
 <a class="sourceLine" id="cb3-86" title="86"><span class="co">// E -&gt; A D F C</span></a>
 <a class="sourceLine" id="cb3-87" title="87"><span class="co">// F -&gt; E C</span></a>
-<a class="sourceLine" id="cb3-88" title="88"><span class="va">graph</span>.<span class="at">printGraph</span>()<span class="op">;</span></a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-<h2 id="graph">Graph</h2>
-<ul>
-<li>Given a list of sorted words from an alien dictionary, find the order of the alphabet.
-<ul>
-<li>Alien Dictionary Topological Sort question.</li>
-</ul></li>
-<li>Find if a given string matches any path in a labeled graph. A path may contain cycles.</li>
-<li>Given a bipartite graph, separate the vertices into two sets.</li>
-<li>You are a thief trying to sneak across a rectangular 100 x 100m field. There are alarms placed on the fields and they each have a circular sensing radius which will trigger if anyone steps into it. Each alarm has its own radius. Determine if you can get from one end of the field to the other end.</li>
-<li>Given a graph and two nodes, determine if there exists a path between them.</li>
-<li>Determine if a cycle exists in the graph.</li>
-</ul>
-<p>{% tabs %} {% tab title=“Directed Graph:” %}</p>
-<h2 id="directed-graph">Directed Graph:</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb3-88" title="88"><span class="va">graph</span>.<span class="at">printGraph</span>()<span class="op">;</span></a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+    <h2 id="graph">Graph</h2>
+    <ul>
+      <li>
+        Given a list of sorted words from an alien dictionary, find the order of
+        the alphabet.
+        <ul>
+          <li>Alien Dictionary Topological Sort question.</li>
+        </ul>
+      </li>
+      <li>
+        Find if a given string matches any path in a labeled graph. A path may
+        contain cycles.
+      </li>
+      <li>Given a bipartite graph, separate the vertices into two sets.</li>
+      <li>
+        You are a thief trying to sneak across a rectangular 100 x 100m field.
+        There are alarms placed on the fields and they each have a circular
+        sensing radius which will trigger if anyone steps into it. Each alarm
+        has its own radius. Determine if you can get from one end of the field
+        to the other end.
+      </li>
+      <li>
+        Given a graph and two nodes, determine if there exists a path between
+        them.
+      </li>
+      <li>Determine if a cycle exists in the graph.</li>
+    </ul>
+    <p>{% tabs %} {% tab title=“Directed Graph:” %}</p>
+    <h2 id="directed-graph">Directed Graph:</h2>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
 <a class="sourceLine" id="cb4-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb4-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb4-4" title="4">        <span class="va">self</span>.edges <span class="op">=</span> []</a>
@@ -627,10 +781,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-107" title="107"><span class="co"># Should be [None, [(2, 100), (3, 101), (4, 102)], None, [(4, 103)], None]</span></a>
 <a class="sourceLine" id="cb4-108" title="108"><span class="bu">print</span>(graph.get_adjacency_list())</a>
 <a class="sourceLine" id="cb4-109" title="109"><span class="co"># Should be [[0, 0, 0, 0, 0], [0, 0, 100, 101, 102], [0, 0, 0, 0, 0], [0, 0, 0, 0, 103], [0, 0, 0, 0, 0]]</span></a>
-<a class="sourceLine" id="cb4-110" title="110"><span class="bu">print</span>(graph.get_adjacency_matrix())</a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Graph Traversal” %}</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
+<a class="sourceLine" id="cb4-110" title="110"><span class="bu">print</span>(graph.get_adjacency_matrix())</a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Graph Traversal” %}</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> Node(<span class="bu">object</span>):</a>
 <a class="sourceLine" id="cb5-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, value):</a>
 <a class="sourceLine" id="cb5-3" title="3">        <span class="va">self</span>.value <span class="op">=</span> value</a>
 <a class="sourceLine" id="cb5-4" title="4">        <span class="va">self</span>.edges <span class="op">=</span> []</a>
@@ -892,70 +1050,162 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-260" title="260"></a>
 <a class="sourceLine" id="cb5-261" title="261"><span class="co"># Should print:</span></a>
 <a class="sourceLine" id="cb5-262" title="262"><span class="co"># Breadth First Search</span></a>
-<a class="sourceLine" id="cb5-263" title="263"><span class="co"># [&#39;London&#39;, &#39;Shanghai&#39;, &#39;Berlin&#39;, &#39;Sao Paolo&#39;, &#39;Mountain View&#39;, &#39;San Francisco&#39;]</span></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Javascript” %} {% embed url=“https://gist.github.com/bgoonz/5f6cfb85d684629aa2e0d5eea35edacb” %}</p>
-<h3 id="js-advanced">JS ADVANCED:</h3>
-<p>{% embed url=“https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16” %} {% endtab %} {% endtabs %}</p>
-<h2 id="intro-to-graphs">Intro to Graphs</h2>
-<figure>
-<img src="../../../.gitbook/assets/image%20%2816%29.png" alt="Directed Graph" /><figcaption>Directed Graph</figcaption>
-</figure>
-<h3 id="objectives">Objectives</h3>
-<ul>
-<li>Learn what graphs are</li>
-<li>Learn the components of graphs</li>
-<li>Learn what graphs are useful for</li>
-</ul>
-<h3 id="what-are-graphs">What Are Graphs?</h3>
-<p>Graphs are collections of related data. They’re like trees, except connections can be made from any node to any other node, even forming loops.</p>
-<p>The nodes in a graph are called <em>vertexes</em> (or <em>vertices</em> or <em>verts</em>), and the connections between the verts are called <em>edges</em>.</p>
-<p>And edge denotes a relationship or linkage between the two verts.</p>
-<h3 id="what-can-they-represent">What can they represent?</h3>
-<p>Graphs can represent any kind of multiway relational data.</p>
-<p>This could be a collection of cities and linking roads.</p>
-<p>It could be a collection of computers on a network.</p>
-<p>It could be a population of people who know each other and <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon">Kevin Bacon</a>.</p>
-<p>It could represent trade relationships between nations.</p>
-<p>And so on.</p>
-<p><img src="../../../.gitbook/assets/image%20%2819%29.png" /></p>
-<h3 id="definitions">Definitions</h3>
-<h4 id="directedundirected-graphs">Directed/Undirected Graphs</h4>
-<p>If the edges are “one way” (have an arrow), the graph is said to be a <em>directed graph</em>. If there are no arrows, the edges are bidirectional and the graph is an <em>undirected</em> graph.</p>
-<p><img src="../../../.gitbook/assets/image%20%2817%29.png" /></p>
-<p>This is an <strong>undirected graph</strong> which could represent a social network like Facebook. Alice is friends with Bob, Carol and Dave, Bob is friends with Alice and Dave, Carol is only friend with Alice, and Dave is friends with only Alice and Bob. In this example, the nodes represent people and the edges represent friendship.</p>
-<figure>
-<img src="img/social_graph_directed.jpg" alt="Directed Graph" /><figcaption>Directed Graph</figcaption>
-</figure>
-<p>This is an <strong>directed graph</strong> which could represent a social network like Twitter or Instagram. Since Twitter/Instagram follows are one-way as opposed to always-mutual Facebook friendships, they are represented with arrows. In the above directed graph, Alice and Bob follow each other, Dave follows Alice and Bob, and Carol only follows Alice.</p>
-<h4 id="cyclicacyclic-graphs">Cyclic/Acyclic Graphs</h4>
-<p>If a cycle can be formed (e.g. you can follow the edges and arrive again at an already-visited vert), the graph is <em>cyclic</em>. Otherwise it is <em>acyclic</em>.</p>
-<h4 id="weighted-graphs">Weighted Graphs</h4>
-<p>Graphs with values (<em>weights</em>) associated with the edges are called <em>weighted graphs</em>.</p>
-<p>The meaning of the weight is dependent on the type of graph. A graph of road network segments might have weight represent the length of the road. The higher the total weight of a route on the graph, the longer the trip is. The weights can be used to help decide if a particular route should be chosen over another.</p>
-<p><img src="../../../.gitbook/assets/image%20%2814%29.png" /></p>
-<p>Weights can be further modified. For example, if one were building a bicycle map, roads with bad car traffic or very steep uphills could be given unnaturally large weights so a routing algorithm would be unlikely to take them. (This is how Google Maps avoids freeways when you ask it for walking directions.)</p>
-<h4 id="directed-acyclic-graphs-dags">Directed Acyclic Graphs (DAGs)</h4>
-<p>A <em>directed acyclic graph</em> (<em>DAG</em>) has a number of applications. From <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Wikipedia</a>:</p>
-<blockquote>
-<p>DAGs can model many different kinds of information. A spreadsheet can be modeled as a DAG, with a vertex for each cell and an edge whenever the formula in one cell uses the value from another; a topological ordering of this DAG can be used to update all cell values when the spreadsheet is changed. Similarly, topological orderings of DAGs can be used to order the compilation operations in a makefile. The program evaluation and review technique uses DAGs to model the milestones and activities of large human projects, and schedule these projects to use as little total time as possible. Combinational logic blocks in electronic circuit design, and the operations in dataflow programming languages, involve acyclic networks of processing elements. DAGs can also represent collections of events and their influence on each other, either in a probabilistic structure such as a Bayesian network or as a record of historical data such as family trees or the version histories of distributed revision control systems. DAGs can also be used as a compact representation of sequence data, such as the directed acyclic word graph representation of a collection of strings, or the binary decision diagram representation of sequences of binary choices.</p>
-</blockquote>
-<p>It’s notable that git uses a DAG to represent commits. A commit can have a child commit, or more than one child commit (in the case of a branch). A child could come from one parent commit, or from two (in the case of a merge). But there’s no way to go back and form a repeating loop in the git commit hierarchy.</p>
-<p>{% page-ref page=“../array/” %}</p>
-<p>{% page-ref page=“../binary-search-tree/” %}</p>
-<p>{% page-ref page=“../untitled-4/” %}</p>
-<p>{% page-ref page=“../array/extra-array.md” %}</p>
-<p>{% page-ref page=“../stack/” %}</p>
-<p>{% page-ref page=“../binary-tree/” %}</p>
-<p>{% page-ref page=“../untitled-6/” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-2/” %}</p>
-<p>{% page-ref page=“../untitled-3/” %}</p>
-<p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
-<p>{% page-ref page=“../untitled-5/” %}</p>
-<p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
-<p>{% page-ref page=“./” %}</p>
-<p>{% page-ref page=“../untitled/” %}</p>
-<p>{% page-ref page=“../heap/” %}</p>
-</body>
+<a class="sourceLine" id="cb5-263" title="263"><span class="co"># [&#39;London&#39;, &#39;Shanghai&#39;, &#39;Berlin&#39;, &#39;Sao Paolo&#39;, &#39;Mountain View&#39;, &#39;San Francisco&#39;]</span></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>
+      {% tab title=“Javascript” %} {% embed
+      url=“https://gist.github.com/bgoonz/5f6cfb85d684629aa2e0d5eea35edacb” %}
+    </p>
+    <h3 id="js-advanced">JS ADVANCED:</h3>
+    <p>
+      {% embed
+      url=“https://gist.github.com/bgoonz/bd665286cdc5c0b8f74f8129a1b74d16” %}
+      {% endtab %} {% endtabs %}
+    </p>
+    <h2 id="intro-to-graphs">Intro to Graphs</h2>
+    <figure>
+      <img
+        src="../../../.gitbook/assets/image%20%2816%29.png"
+        alt="Directed Graph"
+      />
+      <figcaption>Directed Graph</figcaption>
+    </figure>
+    <h3 id="objectives">Objectives</h3>
+    <ul>
+      <li>Learn what graphs are</li>
+      <li>Learn the components of graphs</li>
+      <li>Learn what graphs are useful for</li>
+    </ul>
+    <h3 id="what-are-graphs">What Are Graphs?</h3>
+    <p>
+      Graphs are collections of related data. They’re like trees, except
+      connections can be made from any node to any other node, even forming
+      loops.
+    </p>
+    <p>
+      The nodes in a graph are called <em>vertexes</em> (or <em>vertices</em> or
+      <em>verts</em>), and the connections between the verts are called
+      <em>edges</em>.
+    </p>
+    <p>And edge denotes a relationship or linkage between the two verts.</p>
+    <h3 id="what-can-they-represent">What can they represent?</h3>
+    <p>Graphs can represent any kind of multiway relational data.</p>
+    <p>This could be a collection of cities and linking roads.</p>
+    <p>It could be a collection of computers on a network.</p>
+    <p>
+      It could be a population of people who know each other and
+      <a href="https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon"
+        >Kevin Bacon</a
+      >.
+    </p>
+    <p>It could represent trade relationships between nations.</p>
+    <p>And so on.</p>
+    <p><img src="../../../.gitbook/assets/image%20%2819%29.png" /></p>
+    <h3 id="definitions">Definitions</h3>
+    <h4 id="directedundirected-graphs">Directed/Undirected Graphs</h4>
+    <p>
+      If the edges are “one way” (have an arrow), the graph is said to be a
+      <em>directed graph</em>. If there are no arrows, the edges are
+      bidirectional and the graph is an <em>undirected</em> graph.
+    </p>
+    <p><img src="../../../.gitbook/assets/image%20%2817%29.png" /></p>
+    <p>
+      This is an <strong>undirected graph</strong> which could represent a
+      social network like Facebook. Alice is friends with Bob, Carol and Dave,
+      Bob is friends with Alice and Dave, Carol is only friend with Alice, and
+      Dave is friends with only Alice and Bob. In this example, the nodes
+      represent people and the edges represent friendship.
+    </p>
+    <figure>
+      <img src="img/social_graph_directed.jpg" alt="Directed Graph" />
+      <figcaption>Directed Graph</figcaption>
+    </figure>
+    <p>
+      This is an <strong>directed graph</strong> which could represent a social
+      network like Twitter or Instagram. Since Twitter/Instagram follows are
+      one-way as opposed to always-mutual Facebook friendships, they are
+      represented with arrows. In the above directed graph, Alice and Bob follow
+      each other, Dave follows Alice and Bob, and Carol only follows Alice.
+    </p>
+    <h4 id="cyclicacyclic-graphs">Cyclic/Acyclic Graphs</h4>
+    <p>
+      If a cycle can be formed (e.g. you can follow the edges and arrive again
+      at an already-visited vert), the graph is <em>cyclic</em>. Otherwise it is
+      <em>acyclic</em>.
+    </p>
+    <h4 id="weighted-graphs">Weighted Graphs</h4>
+    <p>
+      Graphs with values (<em>weights</em>) associated with the edges are called
+      <em>weighted graphs</em>.
+    </p>
+    <p>
+      The meaning of the weight is dependent on the type of graph. A graph of
+      road network segments might have weight represent the length of the road.
+      The higher the total weight of a route on the graph, the longer the trip
+      is. The weights can be used to help decide if a particular route should be
+      chosen over another.
+    </p>
+    <p><img src="../../../.gitbook/assets/image%20%2814%29.png" /></p>
+    <p>
+      Weights can be further modified. For example, if one were building a
+      bicycle map, roads with bad car traffic or very steep uphills could be
+      given unnaturally large weights so a routing algorithm would be unlikely
+      to take them. (This is how Google Maps avoids freeways when you ask it for
+      walking directions.)
+    </p>
+    <h4 id="directed-acyclic-graphs-dags">Directed Acyclic Graphs (DAGs)</h4>
+    <p>
+      A <em>directed acyclic graph</em> (<em>DAG</em>) has a number of
+      applications. From
+      <a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph"
+        >Wikipedia</a
+      >:
+    </p>
+    <blockquote>
+      <p>
+        DAGs can model many different kinds of information. A spreadsheet can be
+        modeled as a DAG, with a vertex for each cell and an edge whenever the
+        formula in one cell uses the value from another; a topological ordering
+        of this DAG can be used to update all cell values when the spreadsheet
+        is changed. Similarly, topological orderings of DAGs can be used to
+        order the compilation operations in a makefile. The program evaluation
+        and review technique uses DAGs to model the milestones and activities of
+        large human projects, and schedule these projects to use as little total
+        time as possible. Combinational logic blocks in electronic circuit
+        design, and the operations in dataflow programming languages, involve
+        acyclic networks of processing elements. DAGs can also represent
+        collections of events and their influence on each other, either in a
+        probabilistic structure such as a Bayesian network or as a record of
+        historical data such as family trees or the version histories of
+        distributed revision control systems. DAGs can also be used as a compact
+        representation of sequence data, such as the directed acyclic word graph
+        representation of a collection of strings, or the binary decision
+        diagram representation of sequences of binary choices.
+      </p>
+    </blockquote>
+    <p>
+      It’s notable that git uses a DAG to represent commits. A commit can have a
+      child commit, or more than one child commit (in the case of a branch). A
+      child could come from one parent commit, or from two (in the case of a
+      merge). But there’s no way to go back and form a repeating loop in the git
+      commit hierarchy.
+    </p>
+    <p>{% page-ref page=“../array/” %}</p>
+    <p>{% page-ref page=“../binary-search-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-4/” %}</p>
+    <p>{% page-ref page=“../array/extra-array.md” %}</p>
+    <p>{% page-ref page=“../stack/” %}</p>
+    <p>{% page-ref page=“../binary-tree/” %}</p>
+    <p>{% page-ref page=“../untitled-6/” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-2/” %}</p>
+    <p>{% page-ref page=“../untitled-3/” %}</p>
+    <p>{% page-ref page=“../queue/queue-sandbox.md” %}</p>
+    <p>{% page-ref page=“../untitled-5/” %}</p>
+    <p>{% page-ref page=“../untitled-4/double-linked-list.md” %}</p>
+    <p>{% page-ref page=“./” %}</p>
+    <p>{% page-ref page=“../untitled/” %}</p>
+    <p>{% page-ref page=“../heap/” %}</p>
+  </body>
 </html>

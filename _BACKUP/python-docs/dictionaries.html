@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>dictionaries</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="dictionaries">Dictionaries</h1>
-<pre class="pythonthon"><code>import itertools
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>dictionaries</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="dictionaries">Dictionaries</h1>
+    <pre class="pythonthon"><code>import itertools
 
 # Given an array of coins and an array of quantities for each coin with the
 # same index, determine how many distinct sums can be made from non-zero
@@ -74,7 +87,9 @@ def combine_sets(set1, set2):
         together_set.add(item2)
     return together_set
 </code></pre>
-<pre class="pythonthon"><code># need strings[i] = strings[j] for all patterns[i] = patterns[j] to be true -
+    <pre
+      class="pythonthon"
+    ><code># need strings[i] = strings[j] for all patterns[i] = patterns[j] to be true -
 # give false if strings[i] != strings[j] and patterns[i] = patterns[j] or
 # strings[i] = strings[j] and patterns[j] != patterns[j] - this last condition
 # threw me for a bit as an edge case! Need to ensure that each string is unique
@@ -100,7 +115,9 @@ def areFollowingPatterns(strings, patterns):
 
     return True
 </code></pre>
-<pre class="pythonthon"><code># gives True if two duplicate numbers in the nums array are within k distance
+    <pre
+      class="pythonthon"
+    ><code># gives True if two duplicate numbers in the nums array are within k distance
 # (inclusive) of one another, measuring by absolute difference in index
 
 # did relatively well on this one, made a greater-than/less-than flip error on
@@ -141,5 +158,5 @@ def containsCloseNums(nums, k):
 
     return False
 </code></pre>
-</body>
+  </body>
 </html>

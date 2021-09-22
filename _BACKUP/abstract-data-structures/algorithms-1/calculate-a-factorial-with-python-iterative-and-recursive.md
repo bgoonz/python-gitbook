@@ -1,5 +1,4 @@
-Calculate a Factorial With Python - Iterative and Recursive
-===========================================================
+# Calculate a Factorial With Python - Iterative and Recursive
 
 #### Introduction <span id="introduction"></span>
 
@@ -9,7 +8,7 @@ By definition, a **factorial** is the product of a positive integer and all the 
 
 A factorial is denoted by the integer and followed by an exclamation mark.
 
-> **5!** denotes a ***factorial*** of ***five***.
+> **5!** denotes a **_factorial_** of **_five_**.
 
 And to calculate that factorial, we multiply the number with every whole number smaller than it, until we reach 1:
 
@@ -33,7 +32,7 @@ Let’s start with the `for` loop:
         else:
             return 'n has to be positive'
 
-You may have noticed that we are counting starting from **1** to the `n`, whilst the definition of factorial was *from the given number down to 1*. But mathematically:
+You may have noticed that we are counting starting from **1** to the `n`, whilst the definition of factorial was _from the given number down to 1_. But mathematically:
 
 1∗2∗3∗4…∗n=n∗(n−1)∗(n−2)∗(n−3)∗(n−4)…∗(n−(n−1))1∗2∗3∗4…∗n=n∗(n−1)∗(n−2)∗(n−3)∗(n−4)…∗(n−(n−1))
 
@@ -90,7 +89,7 @@ We’ll enter 4 as an input once more:
     Enter a number: 4
     The result is: 24
 
-### 
+###
 
 Although the calculation was `4 * 3 * 2 * 1` the final result is the same as before.
 
@@ -98,11 +97,11 @@ Calculating factorials using loops was easy. Now let’s take a look at how to c
 
 #### Calculating Factorial Using Recursion <span id="calculatingfactorialusingrecursion"></span>
 
-A recursive function is a function that *calls itself*. It may sound a bit intimidating at first but bear with us and you’ll see that recursive functions are easy to understand.
+A recursive function is a function that _calls itself_. It may sound a bit intimidating at first but bear with us and you’ll see that recursive functions are easy to understand.
 
 In general, every recursive function has two main components: a **base case** and a **recursive step**.
 
-Base cases are the smallest instances of the problem. Also a break, a case that will return a value and will *get out* of the recursion. In terms of factorial functions, the base case is when we return the final element of the factorial, which is **1**.
+Base cases are the smallest instances of the problem. Also a break, a case that will return a value and will _get out_ of the recursion. In terms of factorial functions, the base case is when we return the final element of the factorial, which is **1**.
 
 > Without a base case or with an incorrect base case, your recursive function can run infinitely, causing an overflow.
 
@@ -110,11 +109,11 @@ Recursive steps - as the name implies- are the recursive part of the function, w
 
 Consider the recurring part of the factorials:
 
--   **5!** is `5 * 4 * 3 * 2 * 1`.
+- **5!** is `5 * 4 * 3 * 2 * 1`.
 
 But we also know that:
 
--   `4 * 3 * 2 * 1` *is* **4!**.
+- `4 * 3 * 2 * 1` _is_ **4!**.
 
 In other words **5!** is `5 * 4!`, and **4!** is `4 * 3!` and so on.
 
@@ -150,7 +149,7 @@ You see, when we enter the input, the function will check with the `if` block, a
 
 > We know the current value of `n` for the moment, it’s `3`, but `get_factorial_recursively(n-1)` is still to be calculated.
 
-Then the program calls the same function once more, *but* this time our function takes **2** as the parameter. It checks the `if` block and skips to the `else` block and again encounters with the last line. Now, the current value of the `n` is `2` but the program still must calculate the `get_factorial_recursively(n-1)`.
+Then the program calls the same function once more, _but_ this time our function takes **2** as the parameter. It checks the `if` block and skips to the `else` block and again encounters with the last line. Now, the current value of the `n` is `2` but the program still must calculate the `get_factorial_recursively(n-1)`.
 
 So it calls the function once again, but this time the `if` block, or rather, the base class succeeds to return 1 and breaks out from the recursion.
 

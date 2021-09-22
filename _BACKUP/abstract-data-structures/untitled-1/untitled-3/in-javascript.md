@@ -1,17 +1,14 @@
-In JavaScript
-=============
+# In JavaScript
 
-&lt;———————-(Bubble Sort)—————-&gt;
------------------------------------
+## &lt;———————-(Bubble Sort)—————-&gt;
 
-Bubble Sort
------------
+## Bubble Sort
 
 ![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif)
 
 !\[bubble sort\]((<https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/bubble_sort/images/BubbleSort.gif>)
 
-This project contains a skeleton for you to implement Bubble Sort. In the file **lib/bubble\_sort.js**, you should implement the Bubble Sort. This is a description of how the Bubble Sort works (and is also in the code file).
+This project contains a skeleton for you to implement Bubble Sort. In the file **lib/bubble_sort.js**, you should implement the Bubble Sort. This is a description of how the Bubble Sort works (and is also in the code file).
 
     Bubble Sort: (array)
       n := length(array)
@@ -30,16 +27,16 @@ This project contains a skeleton for you to implement Bubble Sort. In the file *
         end for
       until not swapped
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-bubble-sort-starter>.
+  <https://github.com/appacademy-starters/algorithms-bubble-sort-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/bubble_sort.js` that implements the Bubble Sort.
+  the `/lib/bubble_sort.js` that implements the Bubble Sort.
 
 This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
 
@@ -172,17 +169,15 @@ You’re probably wondering why that makes sense. Recall that a pass of Bubble S
     console.log(' bubbleSort(array): ', bubbleSort(array1));
     module.exports = { bubbleSort: bubbleSort, swap: swap };
 
-&lt;———————-(Selection Sort)—————-&gt;
---------------------------------------
+## &lt;———————-(Selection Sort)—————-&gt;
 
 !\[selection\](
 
 ![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/selection_sort/images/SelectionSort.gif)
 
-Selection Sort
---------------
+## Selection Sort
 
-This project contains a skeleton for you to implement Selection Sort. In the file **lib/selection\_sort.js**, you should implement the Selection Sort. You can use the same `swap` function from Bubble Sort; however, try to implement it on your own, first.
+This project contains a skeleton for you to implement Selection Sort. In the file **lib/selection_sort.js**, you should implement the Selection Sort. You can use the same `swap` function from Bubble Sort; however, try to implement it on your own, first.
 
 The algorithm can be summarized as the following:
 
@@ -217,16 +212,16 @@ This is a description of how the Selection Sort works (and is also in the code f
        end for
     end procedure
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-selection-sort-starter>.
+  <https://github.com/appacademy-starters/algorithms-selection-sort-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/selection_sort.js` that implements the Selection Sort.
+  the `/lib/selection_sort.js` that implements the Selection Sort.
 
 The algorithm can be summarized as the following:
 
@@ -273,11 +268,9 @@ The algorithm: select the next smallest Selection sort works by maintaining a so
       swap,
     };
 
-&lt;———————-(Insertion Sort)—————-&gt;
---------------------------------------
+## &lt;———————-(Insertion Sort)—————-&gt;
 
-Insertion Sort
---------------
+## Insertion Sort
 
 ![insertion](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
@@ -285,7 +278,7 @@ Insertion Sort
 
 ![](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/naive_sorting_algorithms/insertion_sort/images/InsertionSort.gif)
 
-This project contains a skeleton for you to implement Insertion Sort. In the file **lib/insertion\_sort.js**, you should implement the Insertion Sort.
+This project contains a skeleton for you to implement Insertion Sort. In the file **lib/insertion_sort.js**, you should implement the Insertion Sort.
 
 The algorithm can be summarized as the following:
 
@@ -325,16 +318,16 @@ This is a description of how the Insertion Sort works (and is also in the code f
 
     end procedure
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-insertion-sort-starter>.
+  <https://github.com/appacademy-starters/algorithms-insertion-sort-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/insertion_sort.js` that implements the Insertion Sort.
+  the `/lib/insertion_sort.js` that implements the Insertion Sort.
 
 The algorithm: insert into the sorted region
 
@@ -369,15 +362,13 @@ However, Insertion Sort differs from Selection Sort because this algorithm does 
       insertionSort,
     };
 
-&lt;———————-(Merge Sort)—————-&gt;
-----------------------------------
+## &lt;———————-(Merge Sort)—————-&gt;
 
-Merge Sort
-----------
+## Merge Sort
 
 ![merge sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/merge_sort/images/MergeSort.gif)
 
-This project contains a skeleton for you to implement Merge Sort. In the file **lib/merge\_sort.js**, you should implement the Merge Sort.
+This project contains a skeleton for you to implement Merge Sort. In the file **lib/merge_sort.js**, you should implement the Merge Sort.
 
 The algorithm can be summarized as the following:
 
@@ -431,18 +422,18 @@ This is a description of how the Merge Sort works (and is also in the code file)
        return result
     end procedure
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-merge-sort-starter>.
+  <https://github.com/appacademy-starters/algorithms-merge-sort-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/merge_sort.js` that implements the Merge Sort.
+  the `/lib/merge_sort.js` that implements the Merge Sort.
 
-    it is easy to merge elements of two sorted arrays into a single sorted array you can consider an array containing only a single element as already trivially sorted you can also consider an empty array as trivially sorted The algorithm: divide and conquer You’re going to need a helper function that solves the first major point from above. How might you merge two sorted arrays? In other words you want a merge function that will behave like so:
+  it is easy to merge elements of two sorted arrays into a single sorted array you can consider an array containing only a single element as already trivially sorted you can also consider an empty array as trivially sorted The algorithm: divide and conquer You’re going to need a helper function that solves the first major point from above. How might you merge two sorted arrays? In other words you want a merge function that will behave like so:
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--pdU-IP47--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
@@ -495,15 +486,13 @@ if there is only one element in the list, it is already sorted. return that arra
       mergeSort,
     };
 
-&lt;———————-(Quick Sort)—————-&gt;
-----------------------------------
+## &lt;———————-(Quick Sort)—————-&gt;
 
-Quick Sort
-----------
+## Quick Sort
 
 ![quick sort](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/efficient_sorting_algorithms/quick_sort/images/QuickSort.gif)
 
-This project contains a skeleton for you to implement Quick Sort. In the file **lib/quick\_sort.js**, you should implement the Quick Sort. This is a description of how the Quick Sort works (and is also in the code file).
+This project contains a skeleton for you to implement Quick Sort. In the file **lib/quick_sort.js**, you should implement the Quick Sort. This is a description of how the Quick Sort works (and is also in the code file).
 
     procedure quick sort (array)
       if the length of the array is 0 or 1, return the array
@@ -520,16 +509,16 @@ This project contains a skeleton for you to implement Quick Sort. In the file **
       return the concatenation of leftSorted, the pivot value, and rightSorted
     end procedure quick sort
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-quick-sort-starter>.
+  <https://github.com/appacademy-starters/algorithms-quick-sort-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/quick_sort.js` that implements the Quick Sort.
+  the `/lib/quick_sort.js` that implements the Quick Sort.
 
 ![alt-text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
@@ -678,13 +667,11 @@ return \[ left, right \]; }
 
     */
 
-&lt;—————(Binary Search)—————-&gt;
-----------------------------------
+## &lt;—————(Binary Search)—————-&gt;
 
-Binary Search
--------------
+## Binary Search
 
-This project contains a skeleton for you to implement Binary Search. In the file **lib/binary\_search.js**, you should implement the Binary Search and its cousin Binary Search Index.
+This project contains a skeleton for you to implement Binary Search. In the file **lib/binary_search.js**, you should implement the Binary Search and its cousin Binary Search Index.
 
 The Binary Search algorithm can be summarized as the following:
 
@@ -733,7 +720,7 @@ This is a description of how the Binary Search works (and is also in the code fi
       if neither of those is true, return true
     end procedure binary search
 
-Then you need to adapt that to return *the index* of the found item rather than a Boolean value. The pseudocode is also in the code file.
+Then you need to adapt that to return _the index_ of the found item rather than a Boolean value. The pseudocode is also in the code file.
 
     procedure binary search index(list, target, low, high)
       parameter list: a list of sorted value
@@ -763,18 +750,18 @@ Then you need to adapt that to return *the index* of the found item rather than 
       if neither of those is true, return true
     end procedure binary search index
 
--   Clone the project from
+- Clone the project from
 
-    <https://github.com/appacademy-starters/algorithms-binary-search-starter>.
+  <https://github.com/appacademy-starters/algorithms-binary-search-starter>.
 
--   `cd` into the project folder
--   `npm install` to install dependencies in the project root directory
--   `npm test` to run the specs
--   You can view the test cases in `/test/test.js`. Your job is to write code in
+- `cd` into the project folder
+- `npm install` to install dependencies in the project root directory
+- `npm test` to run the specs
+- You can view the test cases in `/test/test.js`. Your job is to write code in
 
-    the `/lib/binary_search.js` that implements the Binary Search and Binary
+  the `/lib/binary_search.js` that implements the Binary Search and Binary
 
-    Search Index.
+  Search Index.
 
 \]
 

@@ -1,38 +1,107 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>README</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="lists">Lists</h1>
-<p>List type is another sequence type defined by the list class of python. List allows you add, delete or process elements in very simple ways. List is very similar to arrays.</p>
-<p>You can create list using the following syntax.</p>
-<p>here each elements in the list is separated by comma and enclosed by a pair of square brackets (<code>[]</code>). Elements in the list can be of same type or different type. For e.g:</p>
-<p><img src="../../../.gitbook/assets/image%20%2826%29.png" /></p>
-<p><img src="../../../.gitbook/assets/image%20%2832%29.png" /></p>
-<p>Other ways of creating list.</p>
-<p>You can use index operator (<code>[]</code>) to access individual elements in the list. List index starts from <code>0</code>.</p>
-<p>Slice operator (<code>[start:end]</code>) allows to fetch sublist from the list. It works similar to string.</p>
-<p>Similar to string <code>start</code> index is optional, if omitted it will be <code>0</code>.</p>
-<p>The <code>end</code> index is also optional, if omitted it will be set to the last index of the list.</p>
-<p><strong>note:</strong></p>
-<p>If <code>start &gt;= end</code>, <code>list[start : end]</code> will return an empty list. If end specifies a position which is beyond the <code>end</code> of the list, Python will use the length of the list for <code>end</code> instead.</p>
-<p>The <code>+</code> operator joins the two list.</p>
-<p>The <code>*</code> operator replicates the elements in the list.</p>
-<p>The <code>in</code> operator is used to determine whether the elements exists in the list. On success it returns <code>True</code> on failure it returns <code>False</code>.</p>
-<p>Similarly <code>not in</code> is the opposite of <code>in</code> operator.</p>
-<p>As already discussed list is a sequence and also iterable. Means you can use for loop to loop through all the elements of the list.</p>
-<p>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35</p>
-<p>&gt;&gt;&gt; list1 = [2, 3, 4, 1, 32, 4] &gt;&gt;&gt; list1.append(19) &gt;&gt;&gt; list1 [2, 3, 4, 1, 32, 4, 19] &gt;&gt;&gt; list1.count(4) # Return the count for number 4 2 &gt;&gt;&gt; list2 = [99, 54] &gt;&gt;&gt; list1.extend(list2) &gt;&gt;&gt; list1 [2, 3, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; list1.index(4) # Return the index of number 4 2 &gt;&gt;&gt; list1.insert(1, 25) # Insert 25 at position index 1 &gt;&gt;&gt; list1 [2, 25, 3, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; &gt;&gt;&gt; list1 = [2, 25, 3, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; list1.pop(2) 3 &gt;&gt;&gt; list1 [2, 25, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; list1.pop() 54 &gt;&gt;&gt; list1 [2, 25, 4, 1, 32, 4, 19, 99] &gt;&gt;&gt; list1.remove(32) # Remove number 32 &gt;&gt;&gt; list1 [2, 25, 4, 1, 4, 19, 99] &gt;&gt;&gt; list1.reverse() # Reverse the list &gt;&gt;&gt; list1 [99, 19, 4, 1, 4, 25, 2] &gt;&gt;&gt; list1.sort() # Sort the list &gt;&gt;&gt; list1 [1, 2, 4, 4, 19, 25, 99] &gt;&gt;&gt;</p>
-<p>List comprehension provides a concise way to create list. It consists of square brackets containing expression followed by for clause then zero or more for or if clauses.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="lists">Lists</h1>
+    <p>
+      List type is another sequence type defined by the list class of python.
+      List allows you add, delete or process elements in very simple ways. List
+      is very similar to arrays.
+    </p>
+    <p>You can create list using the following syntax.</p>
+    <p>
+      here each elements in the list is separated by comma and enclosed by a
+      pair of square brackets (<code>[]</code>). Elements in the list can be of
+      same type or different type. For e.g:
+    </p>
+    <p><img src="../../../.gitbook/assets/image%20%2826%29.png" /></p>
+    <p><img src="../../../.gitbook/assets/image%20%2832%29.png" /></p>
+    <p>Other ways of creating list.</p>
+    <p>
+      You can use index operator (<code>[]</code>) to access individual elements
+      in the list. List index starts from <code>0</code>.
+    </p>
+    <p>
+      Slice operator (<code>[start:end]</code>) allows to fetch sublist from the
+      list. It works similar to string.
+    </p>
+    <p>
+      Similar to string <code>start</code> index is optional, if omitted it will
+      be <code>0</code>.
+    </p>
+    <p>
+      The <code>end</code> index is also optional, if omitted it will be set to
+      the last index of the list.
+    </p>
+    <p><strong>note:</strong></p>
+    <p>
+      If <code>start &gt;= end</code>, <code>list[start : end]</code> will
+      return an empty list. If end specifies a position which is beyond the
+      <code>end</code> of the list, Python will use the length of the list for
+      <code>end</code> instead.
+    </p>
+    <p>The <code>+</code> operator joins the two list.</p>
+    <p>The <code>*</code> operator replicates the elements in the list.</p>
+    <p>
+      The <code>in</code> operator is used to determine whether the elements
+      exists in the list. On success it returns <code>True</code> on failure it
+      returns <code>False</code>.
+    </p>
+    <p>
+      Similarly <code>not in</code> is the opposite of <code>in</code> operator.
+    </p>
+    <p>
+      As already discussed list is a sequence and also iterable. Means you can
+      use for loop to loop through all the elements of the list.
+    </p>
+    <p>
+      1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28
+      29 30 31 32 33 34 35
+    </p>
+    <p>
+      &gt;&gt;&gt; list1 = [2, 3, 4, 1, 32, 4] &gt;&gt;&gt; list1.append(19)
+      &gt;&gt;&gt; list1 [2, 3, 4, 1, 32, 4, 19] &gt;&gt;&gt; list1.count(4) #
+      Return the count for number 4 2 &gt;&gt;&gt; list2 = [99, 54] &gt;&gt;&gt;
+      list1.extend(list2) &gt;&gt;&gt; list1 [2, 3, 4, 1, 32, 4, 19, 99, 54]
+      &gt;&gt;&gt; list1.index(4) # Return the index of number 4 2 &gt;&gt;&gt;
+      list1.insert(1, 25) # Insert 25 at position index 1 &gt;&gt;&gt; list1 [2,
+      25, 3, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; &gt;&gt;&gt; list1 = [2, 25,
+      3, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; list1.pop(2) 3 &gt;&gt;&gt; list1
+      [2, 25, 4, 1, 32, 4, 19, 99, 54] &gt;&gt;&gt; list1.pop() 54 &gt;&gt;&gt;
+      list1 [2, 25, 4, 1, 32, 4, 19, 99] &gt;&gt;&gt; list1.remove(32) # Remove
+      number 32 &gt;&gt;&gt; list1 [2, 25, 4, 1, 4, 19, 99] &gt;&gt;&gt;
+      list1.reverse() # Reverse the list &gt;&gt;&gt; list1 [99, 19, 4, 1, 4,
+      25, 2] &gt;&gt;&gt; list1.sort() # Sort the list &gt;&gt;&gt; list1 [1, 2,
+      4, 4, 19, 25, 99] &gt;&gt;&gt;
+    </p>
+    <p>
+      List comprehension provides a concise way to create list. It consists of
+      square brackets containing expression followed by for clause then zero or
+      more for or if clauses.
+    </p>
+  </body>
 </html>

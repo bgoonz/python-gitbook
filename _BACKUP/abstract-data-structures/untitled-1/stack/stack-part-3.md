@@ -1,13 +1,12 @@
-Stack Part 3
-============
+# Stack Part 3
 
 #### Table of Contents <span id="table-of-contents"></span>
 
--   [Stack: Introduction](https://www.section.io/engineering-education/stack-data-structure-python/#stack:-introduction)
--   [Uses of Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#uses-of-stacks)
--   [Implementing Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#implementing-stacks)
--   [Practice Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#practice-stacks)
--   [Conclusion](https://www.section.io/engineering-education/stack-data-structure-python/#conclusion)
+- [Stack: Introduction](https://www.section.io/engineering-education/stack-data-structure-python/#stack:-introduction)
+- [Uses of Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#uses-of-stacks)
+- [Implementing Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#implementing-stacks)
+- [Practice Stacks](https://www.section.io/engineering-education/stack-data-structure-python/#practice-stacks)
+- [Conclusion](https://www.section.io/engineering-education/stack-data-structure-python/#conclusion)
 
 #### Stack: Introduction <span id="stack-introduction"></span>
 
@@ -25,10 +24,10 @@ Stacks are used extensively in a lot of places.
 
 **Activation Records –** An activation record is data that keeps track of the procedure activities during the runtime of a program.
 
--   When the function is called, an activation record is created for it and keeps track of parameters and information like local variables, return address, static and dynamic links, and the return value.
--   This activation record is the fundamental part of programming languages and is **implemented** using a **stack**.
--   **Web Browsers –** Web Browsers use a stack to keep track of URLs that you have visited previously. When you visit a new page, it is added to the stack and when you hit the back button, the stack is popped and the previous URL is accessed.
--   **To implement other Data Structures –** Stacks are used to implement searches in Graphs and Trees, which are other complex data structures.
+- When the function is called, an activation record is created for it and keeps track of parameters and information like local variables, return address, static and dynamic links, and the return value.
+- This activation record is the fundamental part of programming languages and is **implemented** using a **stack**.
+- **Web Browsers –** Web Browsers use a stack to keep track of URLs that you have visited previously. When you visit a new page, it is added to the stack and when you hit the back button, the stack is popped and the previous URL is accessed.
+- **To implement other Data Structures –** Stacks are used to implement searches in Graphs and Trees, which are other complex data structures.
 
 #### Implementing Stacks <span id="implementing-stacks"></span>
 
@@ -38,28 +37,28 @@ There are various functions that are associated with a stack. They are,
 
 **stack.isEmpty()**
 
--   The `stack.isEmpty()` method returns `True` if the stack is empty. Else, returns `False`
--   Time Complexity - O(1)
+- The `stack.isEmpty()` method returns `True` if the stack is empty. Else, returns `False`
+- Time Complexity - O(1)
 
 **stack.length()**
 
--   The `stack.length()` method returns the length of the stack.
--   Time Complexity - O(1)
+- The `stack.length()` method returns the length of the stack.
+- Time Complexity - O(1)
 
 **stack.top()**
 
--   The `stack.top()` method returns a pointer/reference to the top element in the stack.
--   Time Complexity - O(1)
+- The `stack.top()` method returns a pointer/reference to the top element in the stack.
+- Time Complexity - O(1)
 
 **stack.push(x)**
 
--   The `stack.push()` method inserts the element, `x` to the top of the stack.
--   Time Complexity - O(1)
+- The `stack.push()` method inserts the element, `x` to the top of the stack.
+- Time Complexity - O(1)
 
 **stack.pop()**
 
--   The `stack.pop()` method removes the top element of the stack and returns it.
--   Time Complexity - O(1)
+- The `stack.pop()` method removes the top element of the stack and returns it.
+- Time Complexity - O(1)
 
 #### Stack Implementations <span id="stack-implementations"></span>
 
@@ -128,14 +127,14 @@ Python `collections` are container classes that are used for data collection sto
 
 Once you are done with understanding the stack and the basic implementation, practice the following problems and problem-sets in order to get a strong grasp on stacks.
 
--   Infix to Postfix - [GeeksForGeeks](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
--   Next Greater Element - [GeeksForGeeks](https://www.geeksforgeeks.org/next-greater-element/)
--   Postfix to Prefix - [GeeksForGeeks](https://www.geeksforgeeks.org/postfix-prefix-conversion/)
--   Reverse a String using Stack - [GeeksForGeeks](https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/)
--   Mini Parser - [LeetCode](https://leetcode.com/problems/mini-parser/)
--   Simplify Path - [LeetCode](https://leetcode.com/problems/simplify-path/)
--   More Stack Problems - [LeetCode](https://leetcode.com/tag/stack/)
--   Stack Problem Set - [HackerRank](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks)
+- Infix to Postfix - [GeeksForGeeks](https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
+- Next Greater Element - [GeeksForGeeks](https://www.geeksforgeeks.org/next-greater-element/)
+- Postfix to Prefix - [GeeksForGeeks](https://www.geeksforgeeks.org/postfix-prefix-conversion/)
+- Reverse a String using Stack - [GeeksForGeeks](https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/)
+- Mini Parser - [LeetCode](https://leetcode.com/problems/mini-parser/)
+- Simplify Path - [LeetCode](https://leetcode.com/problems/simplify-path/)
+- More Stack Problems - [LeetCode](https://leetcode.com/tag/stack/)
+- Stack Problem Set - [HackerRank](https://www.hackerrank.com/domains/data-structures?filters%5Bsubdomains%5D%5B%5D=stacks)
 
 #### Conclusion <span id="conclusion"></span>
 

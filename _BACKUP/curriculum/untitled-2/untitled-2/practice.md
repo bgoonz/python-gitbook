@@ -1,5 +1,4 @@
-Practice
-========
+# Practice
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/notes">@bgoonz/notes</span>\#demo.py” %}
 
@@ -259,8 +258,8 @@ Example 2:
 
 Notes:
 
--   `k` is always valid: \`1 &lt;= k &lt;= number of unique elements.
--   words in the input list only contain lowercase letters.
+- `k` is always valid: \`1 &lt;= k &lt;= number of unique elements.
+- words in the input list only contain lowercase letters.
 
 <!-- -->
 

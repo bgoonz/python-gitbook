@@ -1,5 +1,4 @@
-Classes and objects
-===================
+# Classes and objects
 
 {% tabs %} {% tab title=“Abstract Class” %}
 
@@ -127,7 +126,6 @@ Classes and objects
 
 {% tab title=“Basic Class” %}
 
-
     """
     A class is made up of methods and state. This allows code and data to be
     combined as one logical entity. This module defines a basic car class,
@@ -210,7 +208,8 @@ Classes and objects
 {% endtab %} {% endtabs %}
 
 7. Classes and objects
-----------------------
+
+---
 
 ### 7.1. Object-oriented programming
 
@@ -218,7 +217,7 @@ Python is an **object-oriented programming language**, which means that it provi
 
 Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main [programming paradigm](http://en.wikipedia.org/wiki/Programming_paradigm) used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.
 
-Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming) paradigm. In procedural programming the focus is on writing functions or *procedures* which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
+Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming) paradigm. In procedural programming the focus is on writing functions or _procedures_ which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
 
 ### 7.2. User-defined compound types
 
@@ -288,7 +287,7 @@ The first line outputs `(3, 4)`; the second line calculates the value 25.
 
 ### 7.4. The **initialization method** and `self`
 
-Since our `Point` class is intended to represent two dimensional mathematical points, *all* point instances ought to have `x` and `y` attributes, but that is not yet so with our `Point` objects.
+Since our `Point` class is intended to represent two dimensional mathematical points, _all_ point instances ought to have `x` and `y` attributes, but that is not yet so with our `Point` objects.
 
     >>> p2 = Point()
     >>> p2.x
@@ -360,10 +359,7 @@ To convert `print_point` to a method, do the following:
 1.  Indent the function definition so that it is inside the class definition.
 2.  Rename the parameter to `self`.
 
-    class Point:
-        def __init__(self, x=0, y=0):
-            self.x = x
-            self.y = y
+    class Point: def **init**(self, x=0, y=0): self.x = x self.y = y
 
         def distance_from_origin(self):
             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
@@ -710,7 +706,7 @@ In my opinion, it is embarrassing that humans spend so much time in school learn
 
 On the other hand, the process of designing algorithms is interesting, intellectually challenging, and a central part of what we call programming.
 
-Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain *how* we do it, at least not in the form of an algorithm.
+Some of the things that people do naturally, without difficulty or conscious thought, are the hardest to express algorithmically. Understanding natural language is a good example. We all do it, but so far no one has been able to explain _how_ we do it, at least not in the form of an algorithm.
 
 ### 7.14. Points revisited
 
@@ -841,7 +837,7 @@ Here’s an example that applies `front_and_back` to a list:
 
 Of course, we intended to apply this function to lists, so it is not surprising that it works. What would be surprising is if we could apply it to a `Point`.
 
-To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: *If all of the operations inside the function can be applied to the type, the function can be applied to the type.* The operations in the method include `copy`, `reverse`, and `print`.
+To determine whether a function can be applied to a new type, we apply the fundamental rule of polymorphism: _If all of the operations inside the function can be applied to the type, the function can be applied to the type._ The operations in the method include `copy`, `reverse`, and `print`.
 
 `copy` works on any object, and we have already written a `__str__` method for `Point`s, so all we need is a `reverse` method in the `Point` class:
 

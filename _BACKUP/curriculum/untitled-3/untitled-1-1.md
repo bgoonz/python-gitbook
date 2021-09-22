@@ -1,5 +1,4 @@
-D2- Module 02 - Python II
-=========================
+# D2- Module 02 - Python II
 
 {% embed url=“https://github.com/wilfredinni/python-cheatsheet” caption="" %}
 
@@ -80,8 +79,7 @@ To find out which names a module defines when imported, you can use the `dir()` 
     print(dir(math))
     # ['__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees',
 
-Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
------------------------------------------------------------------------------------------------------------------------
+## Objective 01 - Recall the time and space complexity, the strengths and weaknesses, and the common uses of a linked list
 
 <https://youtu.be/PC0w44UH7Mo>
 
@@ -230,10 +228,10 @@ You must be able to understand and interact with linked lists. You now know the 
 
 ### **Additional Resources**
 
--   [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
--   [https://www.youtube.com/watch?v=njTh\_OwMljA (Links to an external site.)](https://www.youtube.com/watch?v=njTh_OwMljA)
+- [https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf (Links to an external site.)](https://www.cs.cmu.edu/~fp/courses/15122-f15/lectures/10-linkedlist.pdf)
+- [https://www.youtube.com/watch?v=njTh_OwMljA (Links to an external site.)](https://www.youtube.com/watch?v=njTh_OwMljA)
 
-[GitHub - bgoonz/DATA\_STRUC\_PYTHON\_NOTES](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
+[GitHub - bgoonz/DATA_STRUC_PYTHON_NOTES](https://github.com/bgoonz/DATA_STRUC_PYTHON_NOTES)
 
     # -*- coding: utf-8 -*-
     """Linked Lists.ipynb
@@ -250,14 +248,11 @@ You must be able to understand and interact with linked lists. You now know the 
 
 L1 = Node(34) L1.next = Node(45) L1.next.next = Node(90)
 
-while the current node is not none
-----------------------------------
+## while the current node is not none
 
-do something with the data
---------------------------
+## do something with the data
 
-traverse to next node
----------------------
+## traverse to next node
 
 L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 

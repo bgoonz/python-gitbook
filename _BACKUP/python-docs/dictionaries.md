@@ -1,5 +1,4 @@
-Dictionaries
-============
+# Dictionaries
 
     import itertools
 

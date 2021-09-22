@@ -1,5 +1,4 @@
-JavaScript Event Loop
-=====================
+# JavaScript Event Loop
 
 **Summary**: in this tutorial, you’ll learn about the event loop in JavaScript and how JavaScript achieves the concurrency model based on the event loop.
 

@@ -1,5 +1,4 @@
-General Content
-===============
+# General Content
 
 {% embed url=“https://gist.github.com/bgoonz/4bb940de5d3fe1ba7cec123fb0cc95d8” %}
 

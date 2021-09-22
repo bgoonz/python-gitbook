@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>recursion</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h1 id="recursion">Recursion</h1>
-<p><strong>Recursion:</strong> In programming terms, a recursive function can be defined as a routine that calls itself directly or indirectly. Using the recursive algorithm, certain problems can be solved quite easily. <a href="https://www.geeksforgeeks.org/iterative-tower-of-hanoi/">Towers of Hanoi (TOH)</a> is one such programming exercise. Try to write an <em>iterative</em> algorithm for TOH. Moreover, every recursive program can be written using iterative methods. Mathematically, recursion helps to solve a few puzzles easily. For example, a routine interview question, In a party of N people, each person will shake her/his hand with each other person only once. In total how many hand-shakes would happen?</p>
-<p><em><strong>Solution:</strong></em> It can be solved in different ways; graphs, recursions, etc. Let us see how recursively it can be solved. There are N persons. Each person shakes hands with each other only once. Considering N-th person, (s)he has to shake a hand with (N-1) the person. Now the problem is reduced to small instances of (N-1) persons. Assuming TN as a total shake-hands, it can be formulated recursively. TN = (N-1) + TN-1 [T1 = 0, i.e. the last person has already shook-hand with every one] Solving it recursively yields an arithmetic series, which can be evaluated into N(N-1)/2. <em>Exercise: In a party of N couples, only one gender (either male or female) can shake hands with everyone. How many shake-hands would happen?</em> Usually, recursive programs result in poor time complexity. An example is a Fibonacci series. The time complexity of calculating the n-th Fibonacci number using recursion is approximately 1.6n. It means the same computer takes almost 60% more time for the next Fibonacci number. The recursive Fibonacci algorithm has overlapping subproblems. There are other techniques like <em>dynamic programming</em> to improve such overlapped algorithms. However, a few algorithms, (e.g. merge sort, quick sort, etc…) result in optimal time complexity using recursion.</p>
-<p><strong>Base Case:</strong><br />
-One critical requirement of recursive functions is the termination point or base case. Every recursive program must have a base case to make sure that the function will terminate. Missing base case results in unexpected behavior.</p>
-<p><strong>Different Ways of Writing Recursive Functions</strong><br />
-<strong>Function calling itself: (Direct way)</strong><br />
-Most of us are aware of at least two different ways of writing recursive programs. Given below are towers of the Hanoi code. It is an example of direct calling.</p>
-<p>{% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/prac4242">@bgoonz/prac4242</span>#another.py” %}</p>
-<p>The time complexity of TOH can be calculated by formulating the number of moves.<br />
-We need to move the first N-1 disks from Source to Auxiliary and from Auxiliary to Destination, i.e. the first N-1 disk requires two moves. One more move of the last disk from Source to Destination. Mathematically, it can be defined recursively.<br />
-MN = 2MN-1 + 1.<br />
-We can easily solve the above recursive relation (2N-1), which is exponential.</p>
-<p><strong>Recursion using mutual function call: (Indirect way)</strong><br />
-Indirect calling. Though least practical, a function [funA()] can call another function [funB()] which in turn calls [funA()] the former function. In this case, both the functions should have the base case.<br />
-<strong>Defensive Programming:</strong><br />
-We can combine defensive coding techniques with recursion for the graceful functionality of the application. Usually, recursive programming is not allowed in safety-critical applications, such as flight controls, health monitoring, etc. However, one can use a static count technique to avoid uncontrolled calls (NOT in safety-critical systems, but may be used in soft real-time systems).</p>
-<p>callDepth depth depends on function stack frame size and maximum stack size.</p>
-<p><strong>Recursion using function pointers: (Indirect way)</strong><br />
-Recursion can also implemented with function pointers. An example is a signal handler in POSIX compliant systems. If the handler causes to trigger the same event due to which the handler being called, the function will reenter.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>recursion</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="recursion">Recursion</h1>
+    <p>
+      <strong>Recursion:</strong> In programming terms, a recursive function can
+      be defined as a routine that calls itself directly or indirectly. Using
+      the recursive algorithm, certain problems can be solved quite easily.
+      <a href="https://www.geeksforgeeks.org/iterative-tower-of-hanoi/"
+        >Towers of Hanoi (TOH)</a
+      >
+      is one such programming exercise. Try to write an
+      <em>iterative</em> algorithm for TOH. Moreover, every recursive program
+      can be written using iterative methods. Mathematically, recursion helps to
+      solve a few puzzles easily. For example, a routine interview question, In
+      a party of N people, each person will shake her/his hand with each other
+      person only once. In total how many hand-shakes would happen?
+    </p>
+    <p>
+      <em><strong>Solution:</strong></em> It can be solved in different ways;
+      graphs, recursions, etc. Let us see how recursively it can be solved.
+      There are N persons. Each person shakes hands with each other only once.
+      Considering N-th person, (s)he has to shake a hand with (N-1) the person.
+      Now the problem is reduced to small instances of (N-1) persons. Assuming
+      TN as a total shake-hands, it can be formulated recursively. TN = (N-1) +
+      TN-1 [T1 = 0, i.e. the last person has already shook-hand with every one]
+      Solving it recursively yields an arithmetic series, which can be evaluated
+      into N(N-1)/2.
+      <em
+        >Exercise: In a party of N couples, only one gender (either male or
+        female) can shake hands with everyone. How many shake-hands would
+        happen?</em
+      >
+      Usually, recursive programs result in poor time complexity. An example is
+      a Fibonacci series. The time complexity of calculating the n-th Fibonacci
+      number using recursion is approximately 1.6n. It means the same computer
+      takes almost 60% more time for the next Fibonacci number. The recursive
+      Fibonacci algorithm has overlapping subproblems. There are other
+      techniques like <em>dynamic programming</em> to improve such overlapped
+      algorithms. However, a few algorithms, (e.g. merge sort, quick sort, etc…)
+      result in optimal time complexity using recursion.
+    </p>
+    <p>
+      <strong>Base Case:</strong><br />
+      One critical requirement of recursive functions is the termination point
+      or base case. Every recursive program must have a base case to make sure
+      that the function will terminate. Missing base case results in unexpected
+      behavior.
+    </p>
+    <p>
+      <strong>Different Ways of Writing Recursive Functions</strong><br />
+      <strong>Function calling itself: (Direct way)</strong><br />
+      Most of us are aware of at least two different ways of writing recursive
+      programs. Given below are towers of the Hanoi code. It is an example of
+      direct calling.
+    </p>
+    <p>
+      {% embed url=“https://replit.com/<span
+        class="citation"
+        data-cites="bgoonz/prac4242"
+        >@bgoonz/prac4242</span
+      >#another.py” %}
+    </p>
+    <p>
+      The time complexity of TOH can be calculated by formulating the number of
+      moves.<br />
+      We need to move the first N-1 disks from Source to Auxiliary and from
+      Auxiliary to Destination, i.e. the first N-1 disk requires two moves. One
+      more move of the last disk from Source to Destination. Mathematically, it
+      can be defined recursively.<br />
+      MN = 2MN-1 + 1.<br />
+      We can easily solve the above recursive relation (2N-1), which is
+      exponential.
+    </p>
+    <p>
+      <strong>Recursion using mutual function call: (Indirect way)</strong
+      ><br />
+      Indirect calling. Though least practical, a function [funA()] can call
+      another function [funB()] which in turn calls [funA()] the former
+      function. In this case, both the functions should have the base case.<br />
+      <strong>Defensive Programming:</strong><br />
+      We can combine defensive coding techniques with recursion for the graceful
+      functionality of the application. Usually, recursive programming is not
+      allowed in safety-critical applications, such as flight controls, health
+      monitoring, etc. However, one can use a static count technique to avoid
+      uncontrolled calls (NOT in safety-critical systems, but may be used in
+      soft real-time systems).
+    </p>
+    <p>
+      callDepth depth depends on function stack frame size and maximum stack
+      size.
+    </p>
+    <p>
+      <strong>Recursion using function pointers: (Indirect way)</strong><br />
+      Recursion can also implemented with function pointers. An example is a
+      signal handler in POSIX compliant systems. If the handler causes to
+      trigger the same event due to which the handler being called, the function
+      will reenter.
+    </p>
+  </body>
 </html>

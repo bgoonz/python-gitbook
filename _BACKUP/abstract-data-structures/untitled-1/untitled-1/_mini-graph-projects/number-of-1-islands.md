@@ -1,40 +1,28 @@
-number of 1 islands
-===================
+# number of 1 islands
 
-Write a function that takes a 2D binary array and
--------------------------------------------------
+## Write a function that takes a 2D binary array and
 
-returns the number of 1 islands. An island consists
----------------------------------------------------
+## returns the number of 1 islands. An island consists
 
-of 1s that are connected to the north, south, east or west.
------------------------------------------------------------
+## of 1s that are connected to the north, south, east or west.
 
-For example:
-------------
+## For example:
 
-Unweighted
-----------
+## Unweighted
 
-Undirected
-----------
+## Undirected
 
-Cyclic
-------
+## Cyclic
 
-Nodes are numbers, edges are connections between 1s
----------------------------------------------------
+## Nodes are numbers, edges are connections between 1s
 
 islands = \[ \[0, 1, 0, 1, 0\], \[1, 1, 0, 1, 1\], \[0, 0, 1, 0, 0\], \[1, 0, 1, 0, 0\], \[1, 1, 0, 0, 0\], \]
 
-Visit each cell in the 2d array.
---------------------------------
+## Visit each cell in the 2d array.
 
-When you come across a 1, traverse it and mark all connected nodes as visited,
-------------------------------------------------------------------------------
+## When you come across a 1, traverse it and mark all connected nodes as visited,
 
-then increment a counter
-------------------------
+## then increment a counter
 
     # Write a function that takes a 2D binary array and
     # returns the number of 1 islands. An island consists

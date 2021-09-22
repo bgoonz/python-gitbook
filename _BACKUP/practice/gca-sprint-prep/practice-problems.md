@@ -1,5 +1,4 @@
-Practice Problems
-=================
+# Practice Problems
 
 {% tabs %} {% tab title=“Arcade” %}
 

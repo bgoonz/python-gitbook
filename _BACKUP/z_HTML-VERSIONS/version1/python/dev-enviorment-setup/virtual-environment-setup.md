@@ -152,8 +152,7 @@
 
 <span class="text-4505230f--TextH200-a3425406--textUIFamily-5ebd8e40">Powered by **GitBook**</span>
 
-<span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Virtual Environment Setup:</span>
-===============================================================================================================
+# <span class="text-4505230f--DisplayH900-bfb998fa--textContentFamily-49a318e1">Virtual Environment Setup:</span>
 
 <span class="text-4505230f--UIH300-2063425d--textUIFamily-5ebd8e40--text-8ee2c8b2"></span>
 
@@ -217,7 +216,7 @@
 
 <span class="text-4505230f--HeadingH600-23f228db--textContentFamily-49a318e1"><span data-key="a29d60f9bbc343458b753bcddddd5a3c"><span data-offset-key="a29d60f9bbc343458b753bcddddd5a3c:0">Activating a virtual environment</span></span></span>
 
-<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d32429ec320a4abdaf8a180591a893af"><span data-offset-key="d32429ec320a4abdaf8a180591a893af:0">Before you can start installing or using packages in your virtual environment you’ll need to </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:1">*activate*</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:2"> it. Activating a virtual environment will put the virtual environment-specific </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:3">`python`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:4"> and </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:5">`pip`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:6"> executables into your shell’s </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:7">`PATH`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:8">.Unix/macOS</span></span></span>
+<span class="text-4505230f--TextH400-3033861f--textContentFamily-49a318e1"><span data-key="d32429ec320a4abdaf8a180591a893af"><span data-offset-key="d32429ec320a4abdaf8a180591a893af:0">Before you can start installing or using packages in your virtual environment you’ll need to </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:1">_activate_</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:2"> it. Activating a virtual environment will put the virtual environment-specific </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:3">`python`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:4"> and </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:5">`pip`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:6"> executables into your shell’s </span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:7">`PATH`</span><span data-offset-key="d32429ec320a4abdaf8a180591a893af:8">.Unix/macOS</span></span></span>
 
     source env/bin/activate
 

@@ -1,5 +1,4 @@
-Merge Sort
-==========
+# Merge Sort
 
 ### What is Merge Sort?
 
@@ -117,8 +116,7 @@ So let’s manually defined the list which we want to pass as an argument to the
 
 ![Merge Sort implementation example in Python Output](https://i2.wp.com/codezup.com/wp-content/uploads/2020/01/Merge-Sort-implementation-example-in-Python-Output.png?resize=665%2C264&ssl=1)
 
-JS Implementation:
-------------------
+## JS Implementation:
 
 #### Merge sort divides an array into halves, calls itself for the two halves, and then merges the two halves.
 
@@ -168,7 +166,7 @@ JS Implementation:
 
 #### As the **rightIndex** gets incremented by one, **right\[1\]** is now 5. **4 &lt; 5** returns true, so **left\[leftIndex\]** gets pushed to the **results** array.
 
-#### 
+####
 
 ![](https://images.squarespace-cdn.com/content/v1/5a983f297c9327c67812b231/1545497669811-HRRJS0W6SMFPCCOE053V/image-asset.png?format=300w)
 

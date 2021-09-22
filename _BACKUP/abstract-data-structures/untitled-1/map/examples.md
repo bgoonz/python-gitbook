@@ -1,5 +1,4 @@
-Examples
-========
+# Examples
 
 {% tabs %} {% tab title=“Example code” %}
 

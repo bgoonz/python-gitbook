@@ -1,5 +1,4 @@
-Python3 Regex
-=============
+# Python3 Regex
 
 Regex or Regular Expressions are an important part of Python Programming or any other Programming Language. It is used for searching and even replacing the specified text pattern. In the regular expression, a set of characters together form the search pattern. It is also known as reg-ex pattern. Tough thing about Regex is not learning or understanding it but remembering syntax and how to form pattern according to our requirements. So here we have provided a regex cheat sheet containing all the different character classes, special characters, modifiers, sets etc. which are used in regular expression.
 
@@ -174,8 +173,7 @@ In the second example, the MULTILINE flag will search in each and every line and
 
 Note: In MULTILINE flag, we have to use re.findall, since it has many matches (for every line)
 
-What are Regular Expressions? <span id="977d"></span>
------------------------------------------------------
+## What are Regular Expressions? <span id="977d"></span>
 
 Regular Expression is an advanced string searching method that allows users to search for something in a text. This is done by creating a pattern that matches the information that we want to retrieve. Regular Expression has such power that it has been incorporated in many programming languages like Python, Pearl, JavaScript, PHP, and Java.
 
@@ -196,20 +194,19 @@ The Output:
 I will go through this code one by one:
 
 1.  import re — Importing the Regular Expressions library in Python.
-2.  phone\_numbers = \[\] — Preparing a list to store the phone numbers.
+2.  phone_numbers = \[\] — Preparing a list to store the phone numbers.
 3.  pattern = r”\\((\[+\]+)\\)” — The pattern that we use to locate the phone number, we will go through what each symbols do later in this article!
 4.  with open(“log.txt”, “r”) as file: — Opening the file that we want to process.
 5.  for line in file: — Iterating(going through) each line in the log.txt.
 6.  result = re.search(pattern, line) — Searching for the phone number in the line
-7.  phone\_numbers.append(result.group(1)) — Adding the customer’s phone number into the phone numbers list
-8.  print(phone\_numbers) — Printing the list of phone numbers.
+7.  phone_numbers.append(result.group(1)) — Adding the customer’s phone number into the phone numbers list
+8.  print(phone_numbers) — Printing the list of phone numbers.
 
 There are many useful functions and characters in the re library, yet learning everything might be overwhelming. Therefore, I have selected the most useful functions and characters that will help you to start implementing RegEx in your Python script.
 
 Let’s start diving in the re library!
 
-RegEx Raw String <span id="cdd9"></span>
-----------------------------------------
+## RegEx Raw String <span id="cdd9"></span>
 
 In our example, we use this pattern in log.txt : r”\\((\[+\]+)\\)”
 
@@ -217,8 +214,7 @@ Are you wondering why should we type an “r” before the string? “r” here 
 
 So, don’t forget your “r”!
 
-**RegEx Special Sequences** <span id="0c7b"></span>
----------------------------------------------------
+## **RegEx Special Sequences** <span id="0c7b"></span>
 
 We’ll start off with the simplest syntax in RegEx, the special sequences. Special sequences in RegEx starts with a backslash(\\). So if you meet a backslash in the RegEx pattern, chances are it is the syntax for a special sequence.
 
@@ -228,8 +224,7 @@ The negations of these sequences are also available by using the capital letter.
 
     \D               matches a single non-digit character
 
-**RegEx Meta Characters** <span id="7a0c"></span>
--------------------------------------------------
+## **RegEx Meta Characters** <span id="7a0c"></span>
 
 We’ll then go through the meta characters which will assist us in reaching our goal. Each one of these characters has its special meaning.
 
@@ -239,8 +234,7 @@ Example :
 
     "c.t"            will match anything like "cat", "c*t", "c1t", etc"^a"             will match "a" from "a cat" but not "eat a cake""cat$"           will match "a cat" but not "cat party""a*b"            will match "b", "ab", "aab", "aaab", ..."a+b"            will match "ab", "aab", "aaab", ..."a?b"            will match "b" or "ab""a{1}b"          will match "ab""a{1,3}b"        will match "ab", "aab", or "aaab""cat|dog"        will match "cat" or "dog"
 
-RegEx Sets <span id="703d"></span>
-----------------------------------
+## RegEx Sets <span id="703d"></span>
 
 Sets can be used to match one of the characters inside the square brackets.
 
@@ -258,8 +252,7 @@ To include characters that have special meaning in the set like backslash (\\) a
 
 However, characters that don’t have any special meaning like ?\_+\*.|()${} can be used directly.
 
-RegEx Function <span id="2fd7"></span>
---------------------------------------
+## RegEx Function <span id="2fd7"></span>
 
 Lastly, we’ll go through the things that we can do with RegEx by using the functions available!
 
@@ -271,9 +264,7 @@ Example :
 
 1.  findall()
 
-    import repattern = r".at"
-    line = "The big fat cat sat on a cat"
-    result = re.findall(pattern, line)print(result)
+    import repattern = r".at" line = "The big fat cat sat on a cat" result = re.findall(pattern, line)print(result)
 
 The Output :
 
@@ -281,11 +272,7 @@ The Output :
 
 1.  search()
 
-    import repattern = r".* .*"
-    line = "Ada Lovelace"
-    result = re.search(pattern, line)print(result)
-    print(result.group())
-    print(result.group(0))
+    import repattern = r"._ ._" line = "Ada Lovelace" result = re.search(pattern, line)print(result) print(result.group()) print(result.group(0))
 
 The Output :
 
@@ -295,9 +282,7 @@ The Output :
 
 1.  split()
 
-    import repattern = r"cat"
-    line = "The big fat cat sat on a cat"
-    result = re.split(pattern, line)print(result)
+    import repattern = r"cat" line = "The big fat cat sat on a cat" result = re.split(pattern, line)print(result)
 
 The Output :
 
@@ -305,16 +290,13 @@ The Output :
 
 1.  sub()
 
-    import repattern = r"Ada"
-    line = "Ada Lovelace"
-    result = re.sub(pattern, r"Tom", line)print(result)
+    import repattern = r"Ada" line = "Ada Lovelace" result = re.sub(pattern, r"Tom", line)print(result)
 
 The Output :
 
     Tom Lovelace
 
-RegEx Capturing Group <span id="fa62"></span>
----------------------------------------------
+## RegEx Capturing Group <span id="fa62"></span>
 
 The capturing group is very useful when we want to extract information from a match, like in our example, log.txt.
 
@@ -330,13 +312,7 @@ Example :
 
 1.  search()
 
-    import repattern = r"(.*) (.*)"
-    line = "Ada Lovelace"
-    result = re.search(pattern, line)print(result)
-    print(result.groups())
-    print(result.group(0))
-    print(result.group(1))
-    print(result.group(2))
+    import repattern = r"(._) (._)" line = "Ada Lovelace" result = re.search(pattern, line)print(result) print(result.groups()) print(result.group(0)) print(result.group(1)) print(result.group(2))
 
 The Output :
 
@@ -348,9 +324,7 @@ The Output :
 
 1.  split()
 
-    import repattern = r"(cat)"
-    line = "The big fat cat sat on a cat"
-    result = re.split(pattern, line)print(result)
+    import repattern = r"(cat)" line = "The big fat cat sat on a cat" result = re.split(pattern, line)print(result)
 
 The Output :
 
@@ -358,11 +332,7 @@ The Output :
 
 1.  sub()
 
-    import repattern = r"(.*) (.*)"
-    line = "Ada Lovelace"
-    result1 = re.sub(pattern, r"\2 \1", line)
-    result2 = re.sub(pattern, r"Tom", line)print(result1)
-    print(result2)
+    import repattern = r"(._) (._)" line = "Ada Lovelace" result1 = re.sub(pattern, r"\2 \1", line) result2 = re.sub(pattern, r"Tom", line)print(result1) print(result2)
 
 “\\1” and “\\2” stand for the first and second capturing group respectively.
 

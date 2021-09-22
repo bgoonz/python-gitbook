@@ -1,5 +1,4 @@
-Math
-====
+# Math
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/22-Maths-With-Variables-Example-Solution">@bgoonz/22-Maths-With-Variables-Example-Solution</span>\#main.py” %}
 

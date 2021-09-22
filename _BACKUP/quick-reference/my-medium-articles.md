@@ -1,5 +1,4 @@
-My Medium Articles
-==================
+# My Medium Articles
 
 {% file src=“../.gitbook/assets/medium.zip” caption=“Medium” %}
 

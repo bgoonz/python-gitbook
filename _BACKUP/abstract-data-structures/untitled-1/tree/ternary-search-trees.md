@@ -1,5 +1,4 @@
-Ternary-search-trees
-====================
+# Ternary-search-trees
 
     class Node(object):
 

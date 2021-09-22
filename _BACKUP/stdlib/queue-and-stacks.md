@@ -1,5 +1,4 @@
-Queue & Stacks
-==============
+# Queue & Stacks
 
 If you often work with lists in Python, then you probably know that they don’t perform fast enough when you need to **pop** and **append** items on their left end. Python’s [`collections`](https://docs.python.org/3/library/collections.html#module-collections) module provides a class called [`deque`](https://docs.python.org/3/library/collections.html#collections.deque) that’s specially designed to provide fast and memory-efficient ways to append and pop item from both ends of the underlying data structure.
 
@@ -7,10 +6,10 @@ Python’s `deque` is a low-level and highly optimized [double-ended queue](http
 
 **In this tutorial, you’ll learn:**
 
--   How to create and use Python’s **`deque`** in your code
--   How to efficiently **append** and **pop** items from both ends of a `deque`
--   How to use `deque` to build efficient **queues** and **stacks**
--   When it’s worth using **`deque`** instead of **`list`**
+- How to create and use Python’s **`deque`** in your code
+- How to efficiently **append** and **pop** items from both ends of a `deque`
+- How to use `deque` to build efficient **queues** and **stacks**
+- When it’s worth using **`deque`** instead of **`list`**
 
 To better understand these topics, you should know the basics of working with Python [lists](https://realpython.com/python-lists-tuples/). It’ll also be beneficial for you to have a general understanding of [queues](https://realpython.com/python-data-structures/#queues-fifos) and [stacks](https://realpython.com/how-to-implement-python-stack/).
 
@@ -20,9 +19,9 @@ Finally, you’ll write a few examples that walk you through some common use cas
 
 ### Getting Started With Python’s `deque`
 
-Appending items to and popping them from the right end of a Python list are normally efficient operations. If you use the [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) for [time complexity](https://wiki.python.org/moin/TimeComplexity), then you can say that they’re *O*(1). However, when Python needs to reallocate memory to grow the underlying list for accepting new items, these operations are slower and can become *O*(*n*).
+Appending items to and popping them from the right end of a Python list are normally efficient operations. If you use the [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation) for [time complexity](https://wiki.python.org/moin/TimeComplexity), then you can say that they’re _O_(1). However, when Python needs to reallocate memory to grow the underlying list for accepting new items, these operations are slower and can become _O_(_n_).
 
-Additionally, appending and popping items on the left end of a Python list are known to be inefficient operations with *O*(*n*) speed.
+Additionally, appending and popping items on the left end of a Python list are known to be inefficient operations with _O_(_n_) speed.
 
 Since Python lists provide both operations with [`.append()`](https://realpython.com/python-append/) and `.pop()`, they’re usable as [stacks](https://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29) and [queues](https://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29). However, the performance issues you saw before can significantly affect the overall performance of your applications.
 
@@ -38,16 +37,16 @@ Deques are also the way to go if you need to keep a list of last-seen items beca
 
 Here’s a summary of the main characteristics of `deque`:
 
--   Stores items of any [data type](https://realpython.com/python-data-types/)
--   Is a [mutable](https://docs.python.org/3/glossary.html#term-mutable) data type
--   Supports [membership operations](https://realpython.com/python-boolean/#the-in-operator) with the `in` operator
--   Supports [indexing](https://realpython.com/python-lists-tuples/#list-elements-can-be-accessed-by-index), like in `a_deque[i]`
--   Doesn’t support slicing, like in `a_deque[0:2]`
--   Supports built-in functions that operate on sequences and iterables, such as [`len()`](https://docs.python.org/3/library/functions.html#len), [`sorted()`](https://realpython.com/python-sort/), [`reversed()`](https://realpython.com/python-reverse-list/), and more
--   Doesn’t support [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) sorting
--   Supports normal and reverse iteration
--   Supports pickling with [`pickle`](https://realpython.com/python-pickle-module/)
--   Ensures fast, memory-efficient, and thread-safe pop and append operations on both ends
+- Stores items of any [data type](https://realpython.com/python-data-types/)
+- Is a [mutable](https://docs.python.org/3/glossary.html#term-mutable) data type
+- Supports [membership operations](https://realpython.com/python-boolean/#the-in-operator) with the `in` operator
+- Supports [indexing](https://realpython.com/python-lists-tuples/#list-elements-can-be-accessed-by-index), like in `a_deque[i]`
+- Doesn’t support slicing, like in `a_deque[0:2]`
+- Supports built-in functions that operate on sequences and iterables, such as [`len()`](https://docs.python.org/3/library/functions.html#len), [`sorted()`](https://realpython.com/python-sort/), [`reversed()`](https://realpython.com/python-reverse-list/), and more
+- Doesn’t support [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) sorting
+- Supports normal and reverse iteration
+- Supports pickling with [`pickle`](https://realpython.com/python-pickle-module/)
+- Ensures fast, memory-efficient, and thread-safe pop and append operations on both ends
 
 Creating `deque` instances is a straightforward process. You just need to import `deque` from `collections` and call it with an optional `iterable` as an argument:&gt;&gt;&gt;
 
@@ -129,9 +128,9 @@ Here, `.pop()` removes and returns the last value in the deque. The method doesn
 
 As you learned earlier, `deque` is implemented as a **doubly linked list**. So, every item in a given deque holds a reference ([pointer](https://realpython.com/pointers-in-python/)) to the next and previous item in the sequence.
 
-Doubly linked lists make appending and popping items from either end light and efficient operations. That’s possible because only the pointers need to be updated. As a result, both operations have similar performance, *O*(1). They’re also predictable performance-wise because there’s no need for reallocating memory and moving existing items to accept new ones.
+Doubly linked lists make appending and popping items from either end light and efficient operations. That’s possible because only the pointers need to be updated. As a result, both operations have similar performance, _O_(1). They’re also predictable performance-wise because there’s no need for reallocating memory and moving existing items to accept new ones.
 
-Appending and popping items from the left end of a regular Python list requires shifting all the items, which ends up being an *O*(*n*) operation. Additionally, adding items to the right end of a list often requires Python to reallocate memory and copy the current items to the new memory location. After that, it can add the new items. This process takes longer to complete, and the append operation passes from being *O*(1) to *O*(*n*).
+Appending and popping items from the left end of a regular Python list requires shifting all the items, which ends up being an _O_(_n_) operation. Additionally, adding items to the right end of a list often requires Python to reallocate memory and copy the current items to the new memory location. After that, it can add the new items. This process takes longer to complete, and the append operation passes from being _O_(1) to _O_(_n_).
 
 Consider the following performance tests for appending items to the left end of a sequence, `deque` vs `list`:
 
@@ -165,9 +164,9 @@ In this script, `average_time()` computes the average time that executing a func
     list.insert()      3735.08 ns
     deque.appendleft() 238.889 ns  (15.6352x faster)
 
-In this specific example, `.appendleft()` on a `deque` is several times faster than `.insert()` on a `list`. Note that `deque.appendleft()` is *O*(1), which means that the execution time is constant. However, `list.insert()` on the left end of the list is *O*(*n*), which means that the execution time depends on the number of items to process.
+In this specific example, `.appendleft()` on a `deque` is several times faster than `.insert()` on a `list`. Note that `deque.appendleft()` is _O_(1), which means that the execution time is constant. However, `list.insert()` on the left end of the list is _O_(_n_), which means that the execution time depends on the number of items to process.
 
-In this example, if you increment the value of `TIMES`, then you’ll get higher time measurements for `list.insert()` but stable (constant) results for `deque.appendleft()`. If you’d like to try a similar performance test on pop operations for both deques and lists, then you can expand the exercise block below and compare your results to *Real Python*‘s after you’re done.
+In this example, if you increment the value of `TIMES`, then you’ll get higher time measurements for `list.insert()` but stable (constant) results for `deque.appendleft()`. If you’d like to try a similar performance test on pop operations for both deques and lists, then you can expand the exercise block below and compare your results to _Real Python_‘s after you’re done.
 
 Exercise: Test `deque.popleft()` vs `list.pop(0)` performanceShow/Hide
 
@@ -202,7 +201,7 @@ You can use these methods and techniques to work with items at any position insi
     >>> letters
     deque(['a', 'b', 'e'])
 
-Here, you first insert `"c"` into `letters` at position `2`. Then you remove `"d"` from the deque using `.remove()`. Deques also allow **indexing** to access items, which you use here to access `"b"` at index `1`. Finally, you can use the `del` [keyword](https://realpython.com/python-keywords/) to delete any existing items from a deque. Note that `.remove()` lets you delete items *by value*, while `del` removes items *by index*.
+Here, you first insert `"c"` into `letters` at position `2`. Then you remove `"d"` from the deque using `.remove()`. Deques also allow **indexing** to access items, which you use here to access `"b"` at index `1`. Finally, you can use the `del` [keyword](https://realpython.com/python-keywords/) to delete any existing items from a deque. Note that `.remove()` lets you delete items _by value_, while `del` removes items _by index_.
 
 Even though `deque` objects support indexing, they don’t support **slicing**. In other words, you can’t extract a [slice](https://docs.python.org/3/glossary.html#term-slice) from an existing deque using the [slicing syntax](https://docs.python.org/3/whatsnew/2.3.html?highlight=slicing#extended-slices), `[start:stop:step]`, as you would with a regular list:&gt;&gt;&gt;
 
@@ -219,7 +218,7 @@ Deques support indexing, but interestingly, they don’t support slicing. When y
 
 So far, you’ve seen that `deque` is quite similar to `list`. However, while `list` is based on [arrays](https://en.wikipedia.org/wiki/Array_data_structure), `deque` is based on a doubly linked list.
 
-There is a hidden cost behind `deque` being implemented as a doubly linked list: accessing, inserting, and removing arbitrary items aren’t efficient operations. To perform them, the [interpreter](https://realpython.com/interacting-with-python/#starting-the-interpreter) has to iterate through the deque until it gets to the desired item. So, they’re *O*(*n*) instead of *O*(1) operations.
+There is a hidden cost behind `deque` being implemented as a doubly linked list: accessing, inserting, and removing arbitrary items aren’t efficient operations. To perform them, the [interpreter](https://realpython.com/interacting-with-python/#starting-the-interpreter) has to iterate through the deque until it gets to the desired item. So, they’re _O_(_n_) instead of _O_(1) operations.
 
 Here’s a script that shows how deques and lists behave when it comes to working with arbitrary items:
 
@@ -320,12 +319,12 @@ The good news is that you can create custom queue classes with the functionality
 
 For example, say you need a custom queue abstract data type that provides only the following features:
 
--   Enqueuing items
--   Dequeuing items
--   Returning the length of the queue
--   Supporting membership tests
--   Supporting normal and reverse iteration
--   Providing a user-friendly string representation
+- Enqueuing items
+- Dequeuing items
+- Returning the length of the queue
+- Supporting membership tests
+- Supporting normal and reverse iteration
+- Providing a user-friendly string representation
 
 In this case, you can write a `Queue` class that looks like the following:
 
@@ -704,9 +703,9 @@ With `deque`, you can code your own queues and stacks at a low level in an elega
 
 **In this tutorial, you learned how to:**
 
--   Create and use Python’s **`deque`** in your code
--   Efficiently **append** and **pop** items from both ends of a sequence with `deque`
--   Use `deque` to build efficient **queues** and **stacks** in Python
--   Decide when to use **`deque`** instead of **`list`**
+- Create and use Python’s **`deque`** in your code
+- Efficiently **append** and **pop** items from both ends of a sequence with `deque`
+- Use `deque` to build efficient **queues** and **stacks** in Python
+- Decide when to use **`deque`** instead of **`list`**
 
 In this tutorial, you also coded a few examples that helped you approach some common use cases of `deque` in Python.

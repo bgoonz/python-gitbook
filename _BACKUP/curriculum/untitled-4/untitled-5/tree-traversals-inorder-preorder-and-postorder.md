@@ -1,5 +1,4 @@
-Tree Traversals (Inorder, Preorder and Postorder)
-=================================================
+# Tree Traversals (Inorder, Preorder and Postorder)
 
 ![](../../../.gitbook/assets/image%20%2835%29.png)
 

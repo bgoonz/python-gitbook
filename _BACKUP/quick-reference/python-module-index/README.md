@@ -1,8 +1,6 @@
-Python Module Index:
-====================
+# Python Module Index:
 
-Python Module Index
--------------------
+## Python Module Index
 
 [**\_**](https://docs.python.org/3/py-modindex.html#cap-_) | [**a**](https://docs.python.org/3/py-modindex.html#cap-a) | [**b**](https://docs.python.org/3/py-modindex.html#cap-b) | [**c**](https://docs.python.org/3/py-modindex.html#cap-c) | [**d**](https://docs.python.org/3/py-modindex.html#cap-d) | [**e**](https://docs.python.org/3/py-modindex.html#cap-e) | [**f**](https://docs.python.org/3/py-modindex.html#cap-f) | [**g**](https://docs.python.org/3/py-modindex.html#cap-g) | [**h**](https://docs.python.org/3/py-modindex.html#cap-h) | [**i**](https://docs.python.org/3/py-modindex.html#cap-i) | [**j**](https://docs.python.org/3/py-modindex.html#cap-j) | [**k**](https://docs.python.org/3/py-modindex.html#cap-k) | [**l**](https://docs.python.org/3/py-modindex.html#cap-l) | [**m**](https://docs.python.org/3/py-modindex.html#cap-m) | [**n**](https://docs.python.org/3/py-modindex.html#cap-n) | [**o**](https://docs.python.org/3/py-modindex.html#cap-o) | [**p**](https://docs.python.org/3/py-modindex.html#cap-p) | [**q**](https://docs.python.org/3/py-modindex.html#cap-q) | [**r**](https://docs.python.org/3/py-modindex.html#cap-r) | [**s**](https://docs.python.org/3/py-modindex.html#cap-s) | [**t**](https://docs.python.org/3/py-modindex.html#cap-t) | [**u**](https://docs.python.org/3/py-modindex.html#cap-u) | [**v**](https://docs.python.org/3/py-modindex.html#cap-v) | [**w**](https://docs.python.org/3/py-modindex.html#cap-w) | [**x**](https://docs.python.org/3/py-modindex.html#cap-x) | [**z**](https://docs.python.org/3/py-modindex.html#cap-z)
 

@@ -1,5 +1,4 @@
-Set Up Virtual Enviornment
-==========================
+# Set Up Virtual Enviornment
 
 ### Venv
 
@@ -9,7 +8,7 @@ To start with project, it would be better to have a virtual environment. Virtual
 
     asabeneh@Asabeneh:~$ pip install virtualenv
 
-Inside the 30DaysOfPython folder create a flask\_project folder.
+Inside the 30DaysOfPython folder create a flask_project folder.
 
 After installing the virtualenv package go to your project folder and create a virtual env by writing:
 
@@ -62,7 +61,7 @@ Now, let us write pip freeze to see a list of installed packages in the project:
     MarkupSafe==1.1.1
     Werkzeug==0.16.0
 
-When you finish you should dactivate active project using *deactivate*.
+When you finish you should dactivate active project using _deactivate_.
 
     (venv) asabeneh@Asabeneh:~/Desktop/30DaysOfPython$ deactivate
 

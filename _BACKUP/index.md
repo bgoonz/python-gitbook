@@ -1,5 +1,4 @@
-Downloads & Misc-Assets
-=======================
+# Downloads & Misc-Assets
 
 {% tabs %} {% tab title=“Blog” %}
 
@@ -19,8 +18,7 @@ Downloads & Misc-Assets
 
 {% embed url=“https://codesandbox.io/s/ys5bq” caption="" %} {% endtab %} {% endtabs %}
 
-My Blog:
---------
+## My Blog:
 
 [![Edit ds-algo (forked)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/ds-algo-forked-wdshu?autoresize=1&codemirror=1&fontsize=11&hidenavigation=1&theme=dark)
 
@@ -28,8 +26,7 @@ My Blog:
 
 {% embed url=“https://pythontutor.com/visualize.html\#” caption="" %}
 
-**Downloads:**
---------------
+## **Downloads:**
 
 #### **Coding Interview Essentials:**
 
@@ -59,8 +56,7 @@ My Blog:
 
 ### **This Space As A PDF:**
 
-**Examples Zip File:**
-----------------------
+## **Examples Zip File:**
 
 {% embed url=“https://github.com/bgoonz/python-gitbook/blob/master/.gitbook/assets/examples.zip” caption="" %}
 
@@ -100,8 +96,7 @@ My Blog:
 
 {% embed url=“https://github.com/bgoonz/DATA\_STRUC\_PYTHON\_NOTES/raw/master/.gitbook/assets/10-linkedlist.pdf” caption="" %}
 
-MIT OPENCOURSEWARE:
--------------------
+## MIT OPENCOURSEWARE:
 
 {% file src=“.gitbook/assets/6-0001-fall-2016.bin” caption=“mit-open-courseware” %}
 

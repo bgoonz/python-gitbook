@@ -1,5 +1,4 @@
-Examples
-========
+# Examples
 
 {% tabs %} {% tab title=“ll.py” %}
 
@@ -18,14 +17,11 @@ Examples
 
 L1 = Node(34) L1.next = Node(45) L1.next.next = Node(90)
 
-while the current node is not none
-==================================
+# while the current node is not none
 
-do something with the data
-==========================
+# do something with the data
 
-traverse to next node
-=====================
+# traverse to next node
 
 L1 = \[34\]-&gt; \[45\]-&gt; \[90\] -&gt; None
 

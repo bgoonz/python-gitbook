@@ -1,10 +1,10 @@
-Inheritance
-===========
+# Inheritance
 
 ![](https://user.oc-static.com/upload/2020/09/28/16012781280813_P2C1-Apply%20Inheritance%20in%20Python%20Code-static.png)
 
 8. Inheritance
---------------
+
+---
 
 In this chapter we look at a larger example using object oriented programming and learn about the very useful OOP feature of [inheritance](http://en.wikipedia.org/wiki/Inheritance_%28object-oriented_programming%29).
 
@@ -223,7 +223,7 @@ To deal cards, we want to remove and return the top card. The list method `pop` 
         def pop(self):
             return self.cards.pop()
 
-Actually, `pop` removes the *last* card in the list, so we are in effect dealing from the bottom of the deck.
+Actually, `pop` removes the _last_ card in the list, so we are in effect dealing from the bottom of the deck.
 
 One more operation that we are likely to want is the boolean function `is_empty`, which returns true if the deck contains no cards:
 

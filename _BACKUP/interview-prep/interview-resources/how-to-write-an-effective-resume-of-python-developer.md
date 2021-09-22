@@ -1,5 +1,4 @@
-How to Write an Effective Resume of Python Developer
-====================================================
+# How to Write an Effective Resume of Python Developer
 
 How to Write an Effective Resume of Python Developer
 
@@ -43,16 +42,16 @@ Did you know that clichéd and generic terms that hiring managers have seen in a
 
 Luckily, [New College of the Humanities](http://www.goodhousekeeping.co.uk/consumer-advice/money-and-work/write-a-cv-mistakes) has researched top cliché terms that you shouldn’t use in your resume. They surveyed 2,000 employers and the terms that came up as repelling are the following:
 
--   Works well under pressure
--   Excellent written communication skills
--   Can work independently
--   Problem solver
--   Hard worker
--   Good communicator
--   Proactive
--   Enthusiastic
--   Team player
--   Good listener
+- Works well under pressure
+- Excellent written communication skills
+- Can work independently
+- Problem solver
+- Hard worker
+- Good communicator
+- Proactive
+- Enthusiastic
+- Team player
+- Good listener
 
 A generic resume will hurt your possibility to stand out and attract the attention of potential employers.
 
@@ -62,23 +61,23 @@ According to [research](http://press.careerbuilder.com/2018-08-24-Employers-Shar
 
 Even though you are applying for a position of a Python developer, that doesn’t mean that you can be careless. If you want to ensure that no mistakes pass you by, you can use some of these services and tools:
 
--   [TrustMyPaper](https://www.trustmypaper.com/write-my-paper-for-me) – This writing service only works with most talented writers with great attention to detail. They can signal any mistakes or inconsistencies in your resume.
--   [GrabMyEssay](https://www.grabmyessay.com/) – With both writing and editing services at your disposal, you can find all that you need for polishing your essay on this website.
--   [Studicus](https://studicus.com/) – The numerous positive testimonials speak for Studicus’ professionalism. Writers must have years of experience to work for this company so you’ll be teamed up with experts.
--   [Grammarly](https://app.grammarly.com/) – If you are looking for a quick fix, Grammarly is an online editing tool that will ensure that your resume doesn’t have any grammar or spelling mistakes.
--   [Readable](https://readable.com/) – Readability checkers such as Readable will point out any confusing or ambiguous parts of your resume.
+- [TrustMyPaper](https://www.trustmypaper.com/write-my-paper-for-me) – This writing service only works with most talented writers with great attention to detail. They can signal any mistakes or inconsistencies in your resume.
+- [GrabMyEssay](https://www.grabmyessay.com/) – With both writing and editing services at your disposal, you can find all that you need for polishing your essay on this website.
+- [Studicus](https://studicus.com/) – The numerous positive testimonials speak for Studicus’ professionalism. Writers must have years of experience to work for this company so you’ll be teamed up with experts.
+- [Grammarly](https://app.grammarly.com/) – If you are looking for a quick fix, Grammarly is an online editing tool that will ensure that your resume doesn’t have any grammar or spelling mistakes.
+- [Readable](https://readable.com/) – Readability checkers such as Readable will point out any confusing or ambiguous parts of your resume.
 
 ### Don’t Go Overboard with the Design
 
 The first thing that hiring managers will notice about your resume is the design. Using a flashy and chaotic design doesn’t really say “this is the best Python developer for this company.” Simplicity is the safest and most elegant choice when it comes to design. Keep it simple and consistent with the style and you won’t have to worry about whether the design will send the wrong message.
 
--   Here are a few suggestions when it comes to resume design:
--   Underline headers and sections
--   Use fonts that are easy to read (Times New Roman, Arial, etc.)
--   The recommendable font size is 12 (or 11 if you want to fit information within 2 pages)
--   Use bullets for listing
--   Use bold text for emphasis (for job titles for example)
--   List qualifications and skills with bullets rather than stating them in a paragraph
+- Here are a few suggestions when it comes to resume design:
+- Underline headers and sections
+- Use fonts that are easy to read (Times New Roman, Arial, etc.)
+- The recommendable font size is 12 (or 11 if you want to fit information within 2 pages)
+- Use bullets for listing
+- Use bold text for emphasis (for job titles for example)
+- List qualifications and skills with bullets rather than stating them in a paragraph
 
 ### Final Thoughts
 

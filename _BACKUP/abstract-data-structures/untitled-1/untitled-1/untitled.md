@@ -1,13 +1,11 @@
-Randomness
-==========
+# Randomness
 
-Randomness
-----------
+## Randomness
 
 ### Objectives
 
--   Learn the difference between randomness and pseudorandomness
--   Learn how how to shuffle an array in O(n) time and space complexity
+- Learn the difference between randomness and pseudorandomness
+- Learn how how to shuffle an array in O(n) time and space complexity
 
 ### What is randomness?
 
@@ -151,8 +149,7 @@ Nothing out of the ordinary. Now, let’s reset the seed and try again:
 
 As you can see, we get the exact same values! This is useful if you want to get a predictable chain of “random” numbers, like if you wanted to recreate a particular [Minecraft map](https://www.pcgamesn.com/minecraft/30-best-minecraft-seeds). With pseudorandom number generators, an entire world can be contained in one simple integer.
 
-Shuffling an Array
-------------------
+## Shuffling an Array
 
 Now that we know how computers generate random numbers, let’s try shuffling an array. We can do this quite efficiently using an algorithm called the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
 

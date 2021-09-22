@@ -1,79 +1,235 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>read_me_-_week_2_-_maths_and_variables</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-</head>
-<body>
-<h3 id="general-teacher-notes">General Teacher Notes</h3>
-<p>This unit looks at how computers do basic maths. This is a process (it happens ‘inside’ the computer).</p>
-<p>We start off by learning about the operators used for simple maths. Multiplication &amp; division use different operators to paper based maths. We also see the + operator used for another purpose here as well.</p>
-<p>/ is used for division, but it returns a decimal result (known as a <strong>float</strong>). Python also lets us use // to perform <strong>floor division</strong> - where it ignores any decimal and just returns the whole number part of the answer (known as an integer, or int).</p>
-<p>Task 1 uses set numbers to perform maths so that students can concentrate on learning how to use the operators.</p>
-<p>Task 2 reintroduces variables, but this time as placeholders for numbers (no speech marks because we are treating them as numbers, not text). Again, the variables are assigned in the code. Be aware that the code will not work as students expect. Because all input is treated as strings (text) the number the user inputs will also be treated as text so will be duplicated 10 times instead of multiplied by 10. Use the slides to show students how to convert input to an integer (casting).</p>
-<p>Task 3 brings in input. We go back to using strings so that students can see how the contents of a variable can be changed as the program runs. Up to now we’ve not done this, the contents of each variable have not changed so you might need to slow down here and guide students line by line through the code getting them to write what is stored in each variable at each stage of the code.</p>
-<p>Task 4 is the homework challenge - a program that gets input and calculates the area of a rectangle. This combines everything we’ve learned about input, numbers, maths and variables.</p>
-<p>There are some extra credit challenges here if you have students who are racing ahead. Be careful here though, it’s more valuable to make them comment their code thoroughly before they move on than rush through the tasks.</p>
-<h3 id="task-1---operators">Task 1 - Operators</h3>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/21-Maths-part-1"><span class="underline">https://repl.it/@MrAColley/21-Maths-part-1</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/21-Simple-Maths-Example-Solution"><span class="underline">https://repl.it/@MrAColley/21-Simple-Maths-Example-Solution</span></a></p>
-<p># Task 1 - add comments to this code to predict what it will do.</p>
-<p>print(8 + 2)</p>
-<p>print(8 - 2)</p>
-<p>print(8 * 2)</p>
-<p>print(8 / 2)</p>
-<p>print(8 // 2)</p>
-<h3 id="task-2---variables-and-operators">Task 2 - Variables And Operators</h3>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/22-Maths-with-variables-1"><span class="underline">https://repl.it/@MrAColley/22-Maths-with-variables-1</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/22-Maths-With-Variables-Example-Solution"><span class="underline">https://repl.it/@MrAColley/22-Maths-With-Variables-Example-Solution</span></a></p>
-<p># Task 1 - Add comments to predict what the code below will do.</p>
-<p>num1 = 20</p>
-<p>num2 = 5</p>
-<p>result = num1 * num2</p>
-<p>print(result)</p>
-<p># Task 2 - Write code that uses numbers stored in 2 variables and a calculation to output the number 42</p>
-<h3 id="task-3---changing-variables">Task 3 - Changing Variables</h3>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/23-Changing-variables"><span class="underline">https://repl.it/@MrAColley/23-Changing-variables</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/23-Changing-Variables-Example-Solution"><span class="underline">https://repl.it/@MrAColley/23-Changing-Variables-Example-Solution</span></a></p>
-<p># Task1 - Add comments to the code to predict the output on lines 9, 10 and 14</p>
-<p>name1 = "Ross"</p>
-<p>name2 = "Monica"</p>
-<p>name3 = "Joey"</p>
-<p>name4 = "Rachel"</p>
-<p>name5 = "Chandler"</p>
-<p>print(name1 + " and " + name4)</p>
-<p>print(name3)</p>
-<p>name3 = "Phoebe"</p>
-<p>print(name3)</p>
-<p># Task 2 - Create a variable that stores the number 20. Output the variable. Multiply the variable by 10. Output the variable.</p>
-<p># Task 3 - Write a program that uses variables and decrements to output a countdown from 10 to 0.</p>
-<h3 id="task-4---maths-with-input">Task 4 - Maths With Input</h3>
-<p>Task and instructions - <a href="https://repl.it/@MrAColley/24-Maths-With-Input"><span class="underline">https://repl.it/@MrAColley/24-Maths-With-Input</span></a></p>
-<p>Example solution - <a href="https://repl.it/@MrAColley/24-Maths-With-Input-Example-Solution"><span class="underline">https://repl.it/@MrAColley/24-Maths-With-Input-Example-Solution</span></a></p>
-<p># Task 1 - Add comments to predict what the code will do. Run the code to see if you were correct.</p>
-<p>num1 = int(input("Enter a number"))</p>
-<p>num2 = 10</p>
-<p>result = num1 * num2</p>
-<p>print(result)</p>
-<p># Task 2 - edit the code to convert the input to an integer.</p>
-<h3 id="task-5---homework-challenge---area-calc">Task 5 - Homework Challenge - Area Calc</h3>
-<p>Example solution - <a href="https://repl.it/@MrAColley/25ChallengeExampleSolution"><span class="underline">https://repl.it/@MrAColley/25ChallengeExampleSolution</span></a></p>
-<p>Create a program that allows the user to enter 2 numbers representing the width and length of a rectangle. The program calculates and displays the area of the rectangle.</p>
-<h3 id="extra-credit-challenges">Extra Credit Challenges</h3>
-<p>Not compulsory, but great practice.</p>
-<h4 id="perimetercalc"><strong>PerimeterCalc</strong></h4>
-<p>Create a program that allows the user to enter 2 numbers representing the width and length of a rectangle. The program calculates and displays the perimeter of the rectangle.</p>
-<h4 id="restaurant-tip-calculator"><strong>Restaurant Tip Calculator </strong></h4>
-<p>Create a program that allows the user to enter the price of a meal at a restaurant. The program calculates the amount of the tip to be paid at 20%. The tip and total price are then displayed separately.</p>
-<h4 id="volume-and-surface-calc"><strong>Volume and Surface Calc</strong></h4>
-<p>Create a program that allows the user to enter 3 numbers representing the height, width and length of a cuboid. The program calculates and displays the volume and total surface area of the cuboid.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>read_me_-_week_2_-_maths_and_variables</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="general-teacher-notes">General Teacher Notes</h3>
+    <p>
+      This unit looks at how computers do basic maths. This is a process (it
+      happens ‘inside’ the computer).
+    </p>
+    <p>
+      We start off by learning about the operators used for simple maths.
+      Multiplication &amp; division use different operators to paper based
+      maths. We also see the + operator used for another purpose here as well.
+    </p>
+    <p>
+      / is used for division, but it returns a decimal result (known as a
+      <strong>float</strong>). Python also lets us use // to perform
+      <strong>floor division</strong> - where it ignores any decimal and just
+      returns the whole number part of the answer (known as an integer, or int).
+    </p>
+    <p>
+      Task 1 uses set numbers to perform maths so that students can concentrate
+      on learning how to use the operators.
+    </p>
+    <p>
+      Task 2 reintroduces variables, but this time as placeholders for numbers
+      (no speech marks because we are treating them as numbers, not text).
+      Again, the variables are assigned in the code. Be aware that the code will
+      not work as students expect. Because all input is treated as strings
+      (text) the number the user inputs will also be treated as text so will be
+      duplicated 10 times instead of multiplied by 10. Use the slides to show
+      students how to convert input to an integer (casting).
+    </p>
+    <p>
+      Task 3 brings in input. We go back to using strings so that students can
+      see how the contents of a variable can be changed as the program runs. Up
+      to now we’ve not done this, the contents of each variable have not changed
+      so you might need to slow down here and guide students line by line
+      through the code getting them to write what is stored in each variable at
+      each stage of the code.
+    </p>
+    <p>
+      Task 4 is the homework challenge - a program that gets input and
+      calculates the area of a rectangle. This combines everything we’ve learned
+      about input, numbers, maths and variables.
+    </p>
+    <p>
+      There are some extra credit challenges here if you have students who are
+      racing ahead. Be careful here though, it’s more valuable to make them
+      comment their code thoroughly before they move on than rush through the
+      tasks.
+    </p>
+    <h3 id="task-1---operators">Task 1 - Operators</h3>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/21-Maths-part-1"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/21-Maths-part-1</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a href="https://repl.it/@MrAColley/21-Simple-Maths-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/21-Simple-Maths-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p># Task 1 - add comments to this code to predict what it will do.</p>
+    <p>print(8 + 2)</p>
+    <p>print(8 - 2)</p>
+    <p>print(8 * 2)</p>
+    <p>print(8 / 2)</p>
+    <p>print(8 // 2)</p>
+    <h3 id="task-2---variables-and-operators">
+      Task 2 - Variables And Operators
+    </h3>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/22-Maths-with-variables-1"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/22-Maths-with-variables-1</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a
+        href="https://repl.it/@MrAColley/22-Maths-With-Variables-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/22-Maths-With-Variables-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p># Task 1 - Add comments to predict what the code below will do.</p>
+    <p>num1 = 20</p>
+    <p>num2 = 5</p>
+    <p>result = num1 * num2</p>
+    <p>print(result)</p>
+    <p>
+      # Task 2 - Write code that uses numbers stored in 2 variables and a
+      calculation to output the number 42
+    </p>
+    <h3 id="task-3---changing-variables">Task 3 - Changing Variables</h3>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/23-Changing-variables"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/23-Changing-variables</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a
+        href="https://repl.it/@MrAColley/23-Changing-Variables-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/23-Changing-Variables-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p>
+      # Task1 - Add comments to the code to predict the output on lines 9, 10
+      and 14
+    </p>
+    <p>name1 = "Ross"</p>
+    <p>name2 = "Monica"</p>
+    <p>name3 = "Joey"</p>
+    <p>name4 = "Rachel"</p>
+    <p>name5 = "Chandler"</p>
+    <p>print(name1 + " and " + name4)</p>
+    <p>print(name3)</p>
+    <p>name3 = "Phoebe"</p>
+    <p>print(name3)</p>
+    <p>
+      # Task 2 - Create a variable that stores the number 20. Output the
+      variable. Multiply the variable by 10. Output the variable.
+    </p>
+    <p>
+      # Task 3 - Write a program that uses variables and decrements to output a
+      countdown from 10 to 0.
+    </p>
+    <h3 id="task-4---maths-with-input">Task 4 - Maths With Input</h3>
+    <p>
+      Task and instructions -
+      <a href="https://repl.it/@MrAColley/24-Maths-With-Input"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/24-Maths-With-Input</span
+        ></a
+      >
+    </p>
+    <p>
+      Example solution -
+      <a href="https://repl.it/@MrAColley/24-Maths-With-Input-Example-Solution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/24-Maths-With-Input-Example-Solution</span
+        ></a
+      >
+    </p>
+    <p>
+      # Task 1 - Add comments to predict what the code will do. Run the code to
+      see if you were correct.
+    </p>
+    <p>num1 = int(input("Enter a number"))</p>
+    <p>num2 = 10</p>
+    <p>result = num1 * num2</p>
+    <p>print(result)</p>
+    <p># Task 2 - edit the code to convert the input to an integer.</p>
+    <h3 id="task-5---homework-challenge---area-calc">
+      Task 5 - Homework Challenge - Area Calc
+    </h3>
+    <p>
+      Example solution -
+      <a href="https://repl.it/@MrAColley/25ChallengeExampleSolution"
+        ><span class="underline"
+          >https://repl.it/@MrAColley/25ChallengeExampleSolution</span
+        ></a
+      >
+    </p>
+    <p>
+      Create a program that allows the user to enter 2 numbers representing the
+      width and length of a rectangle. The program calculates and displays the
+      area of the rectangle.
+    </p>
+    <h3 id="extra-credit-challenges">Extra Credit Challenges</h3>
+    <p>Not compulsory, but great practice.</p>
+    <h4 id="perimetercalc"><strong>PerimeterCalc</strong></h4>
+    <p>
+      Create a program that allows the user to enter 2 numbers representing the
+      width and length of a rectangle. The program calculates and displays the
+      perimeter of the rectangle.
+    </p>
+    <h4 id="restaurant-tip-calculator">
+      <strong>Restaurant Tip Calculator </strong>
+    </h4>
+    <p>
+      Create a program that allows the user to enter the price of a meal at a
+      restaurant. The program calculates the amount of the tip to be paid at
+      20%. The tip and total price are then displayed separately.
+    </p>
+    <h4 id="volume-and-surface-calc">
+      <strong>Volume and Surface Calc</strong>
+    </h4>
+    <p>
+      Create a program that allows the user to enter 3 numbers representing the
+      height, width and length of a cuboid. The program calculates and displays
+      the volume and total surface area of the cuboid.
+    </p>
+  </body>
 </html>

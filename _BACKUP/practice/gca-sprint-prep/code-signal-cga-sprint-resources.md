@@ -1,5 +1,4 @@
-Code Signal CGA Sprint Resources
-================================
+# Code Signal CGA Sprint Resources
 
 {% embed url=“https://replit.com/<span class="citation" data-cites="bgoonz/DATASTRUCPYTHONNOTES-3">@bgoonz/DATASTRUCPYTHONNOTES-3</span>\#.replit” %}
 

@@ -1,5 +1,4 @@
-Linked List
-===========
+# Linked List
 
 {% tabs %} {% tab title=“ll.py” %}
 
@@ -472,11 +471,11 @@ Linked List
 
 A Linked List is a data structure in which the objects are arranged in a linear order. Unlike an array, however, in which the linear order is determined by the array indices, the order in a linked list is determined by a pointer in each object.
 
-Each element of a **doubly linked list** is an object with an attribute *key* and two other pointer attributes *next* and *prev*.
+Each element of a **doubly linked list** is an object with an attribute _key_ and two other pointer attributes _next_ and _prev_.
 
 A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.
 
-### 
+###
 
     """
     First the Node class needs to be created because every item in a linked list
@@ -626,20 +625,19 @@ A list may have one of several forms. It may be either singly linked or doubly l
     # print the size of the list
     print(f'size: {linked_list.size_of_list()}')
 
-Linked List
------------
+## Linked List
 
--   Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.
-    -   [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
--   Reverse a singly linked list. Implement it recursively and iteratively.
--   Convert a binary tree to a doubly circular linked list.
--   Implement an LRU cache with O(1) runtime for all its operations.
--   Check distance between values in linked list.
--   A question involving an API’s integration with hash map where the buckets of hash map are made up of linked lists.
--   Given a singly linked list (a list which can only be traversed in one direction), find the item that is located at ‘k’ items from the end. So if the list is a, b, c, d and k is 2 then the answer is ‘c’. The solution should not search the list twice.
--   How can you tell if a Linked List is a Palindrome?
+- Given a linked list, in addition to the next pointer, each node has a child pointer that can point to a separate list. With the head node, flatten the list to a single-level linked list.
+  - [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
+- Reverse a singly linked list. Implement it recursively and iteratively.
+- Convert a binary tree to a doubly circular linked list.
+- Implement an LRU cache with O(1) runtime for all its operations.
+- Check distance between values in linked list.
+- A question involving an API’s integration with hash map where the buckets of hash map are made up of linked lists.
+- Given a singly linked list (a list which can only be traversed in one direction), find the item that is located at ‘k’ items from the end. So if the list is a, b, c, d and k is 2 then the answer is ‘c’. The solution should not search the list twice.
+- How can you tell if a Linked List is a Palindrome?
 
-### 
+###
 
 ### Linked lists in Python
 
@@ -783,27 +781,27 @@ Python does not have a built-in implementation of linked lists and therefore req
 
 **Advantages:**
 
--   Efficient insertion and deletion of new elements
--   Simpler to reorganize than arrays
--   Useful as a starting point for advanced data structures like graphs or trees
+- Efficient insertion and deletion of new elements
+- Simpler to reorganize than arrays
+- Useful as a starting point for advanced data structures like graphs or trees
 
 **Disadvantages:**
 
--   Storage of pointers with each data point increases memory usage
--   Must always traverse the linked list from Head node to find a specific element
+- Storage of pointers with each data point increases memory usage
+- Must always traverse the linked list from Head node to find a specific element
 
 **Applications:**
 
--   Building block for advanced data structures
--   Solutions that call for frequent addition and removal of data
+- Building block for advanced data structures
+- Solutions that call for frequent addition and removal of data
 
 #### Common linked list interview questions in Python
 
--   Print the middle element of a given linked list
--   Remove duplicate elements from a sorted linked list
--   Check if a singly linked list is a palindrome
--   Merge K sorted linked lists
--   Find the intersection point of two linked lists
+- Print the middle element of a given linked list
+- Remove duplicate elements from a sorted linked list
+- Check if a singly linked list is a palindrome
+- Merge K sorted linked lists
+- Find the intersection point of two linked lists
 
 {% tabs %} {% tab title=“Implementation” %}
 
@@ -1167,84 +1165,43 @@ Python does not have a built-in implementation of linked lists and therefore req
 
 A linked list is similar to an array, it holds values. However, links in a linked list do not have indexes.
 
--   This is an example of a double ended, doubly linked list.
--   Each link references the next link and the previous one.
--   A Doubly Linked List (DLL) contains an extra pointer, typically called previous
+- This is an example of a double ended, doubly linked list.
+- Each link references the next link and the previous one.
+- A Doubly Linked List (DLL) contains an extra pointer, typically called previous
 
-    pointer, together with next pointer and data which are there in singly linked list.
+  pointer, together with next pointer and data which are there in singly linked list.
 
-    -   Advantages over SLL - It can be traversed in both forward and backward direction.
+  - Advantages over SLL - It can be traversed in both forward and backward direction.
 
-        Delete operation is more efficient
+    Delete operation is more efficient
 
-    """Each ListNode holds a reference to its previous node
-    as well as its next node in the List."""
-    class ListNode:
-      def __init__(self, value, prev=None, next=None):
-        self.value = value
-        self.prev = prev
-        self.next = next
+  """Each ListNode holds a reference to its previous node as well as its next node in the List.""" class ListNode: def **init**(self, value, prev=None, next=None): self.value = value self.prev = prev self.next = next
 
-      """Wrap the given value in a ListNode and insert it
-      after this node. Note that this node could already
-      have a next node it is point to."""
-      def insert_after(self, value):
-        current_next = self.next
-        self.next = ListNode(value, self, current_next)
-        if current_next:
-          current_next.prev = self.next
+  """Wrap the given value in a ListNode and insert it after this node. Note that this node could already have a next node it is point to.""" def insert_after(self, value): current_next = self.next self.next = ListNode(value, self, current_next) if current_next: current_next.prev = self.next
 
-      """Wrap the given value in a ListNode and insert it
-      before this node. Note that this node could already
-      have a previous node it is point to."""
-      def insert_before(self, value):
-        current_prev = self.prev
-        self.prev = ListNode(value, current_prev, self)
-        if current_prev:
-          current_prev.next = self.prev
+  """Wrap the given value in a ListNode and insert it before this node. Note that this node could already have a previous node it is point to.""" def insert_before(self, value): current_prev = self.prev self.prev = ListNode(value, current_prev, self) if current_prev: current_prev.next = self.prev
 
-      """Rearranges this ListNode's previous and next pointers
-      accordingly, effectively deleting this ListNode."""
-      def delete(self):
-        if self.prev:
-          self.prev.next = self.next
-        if self.next:
-          self.next.prev = self.prev
+  """Rearranges this ListNode's previous and next pointers accordingly, effectively deleting this ListNode.""" def delete(self): if self.prev: self.prev.next = self.next if self.next: self.next.prev = self.prev
 
-    """Our doubly-linked list class. It holds references to
-    the list's head and tail nodes."""
-    class DoublyLinkedList:
-      def __init__(self, node=None):
-        self.head = node
-        self.tail = node
-        self.length = 1 if node is not None else 0
+  """Our doubly-linked list class. It holds references to the list's head and tail nodes.""" class DoublyLinkedList: def **init**(self, node=None): self.head = node self.tail = node self.length = 1 if node is not None else 0
 
-      def __len__(self):
-        return self.length
+  def **len**(self): return self.length
 
-      def add_to_head(self, value):
-        pass
+  def add_to_head(self, value): pass
 
-      def remove_from_head(self):
-        pass
+  def remove_from_head(self): pass
 
-      def add_to_tail(self, value):
-        pass
+  def add_to_tail(self, value): pass
 
-      def remove_from_tail(self):
-        pass
+  def remove_from_tail(self): pass
 
-      def move_to_front(self, node):
-        pass
+  def move_to_front(self, node): pass
 
-      def move_to_end(self, node):
-        pass
+  def move_to_end(self, node): pass
 
-      def delete(self, node):
-        pass
+  def delete(self, node): pass
 
-      def get_max(self):
-        pass
+  def get_max(self): pass
 
 Test:
 

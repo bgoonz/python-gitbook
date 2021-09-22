@@ -1,5 +1,4 @@
-index
-=====
+# index
 
 > Creating object and classes \# Python is an object-oriented language. In python everything is object i.e int, str, bool even modules, functions are al…
 
@@ -11,29 +10,25 @@ index
 
 Updated on Jan 07, 2020
 
-Creating object and classes [\#]()
-----------------------------------
+## Creating object and classes [\#]()
 
 Python is an object-oriented language. In python everything is object i.e `int`, `str`, `bool` even modules, functions are also objects.
 
 Object oriented programming use objects to create programs, and these objects stores data and behaviours.
 
-Defining class [\#]()
----------------------
+## Defining class [\#]()
 
-Class name in python is preceded with `class` keyword followed by a colon (`:`). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called *initializer* (also commonly known as constructors), which get invoked automatically every time new object is created.
+Class name in python is preceded with `class` keyword followed by a colon (`:`). Classes commonly contains data field to store the data and methods for defining behaviors. Also every class in python contains a special method called _initializer_ (also commonly known as constructors), which get invoked automatically every time new object is created.
 
 Let’s see an example.
 
 Here we have created a class called `Person` which contains one data field called `name` and method `whoami()`.
 
-What is self? [\#]()
---------------------
+## What is self? [\#]()
 
 All methods in python including some special methods like initializer have first parameter `self`. This parameter refers to the object which invokes the method. When you create new object the `self` parameter in the `__init__` method is automatically set to reference the object you have just created.
 
-Creating object from class [\#]()
----------------------------------
+## Creating object from class [\#]()
 
 **Expected Output:**
 
@@ -47,8 +42,7 @@ You can also change the `name` data field.
 
 Although it is a bad practice to give access to your data fields outside the class. We will discuss how to prevent this next.
 
-Hiding data fields [\#]()
--------------------------
+## Hiding data fields [\#]()
 
 To hide data fields you need to define private data fields. In python you can create private data field using two leading underscores. You can also define a private method using two leading underscores.
 

@@ -1,5 +1,4 @@
-List Compehensions
-==================
+# List Compehensions
 
     """
     This module shows one-liner comprehensions where we make lists, tuples,

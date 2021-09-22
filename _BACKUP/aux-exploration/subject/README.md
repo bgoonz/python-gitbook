@@ -1,5 +1,4 @@
-Related Studies
-===============
+# Related Studies
 
 {% page-ref page=“list-directory-contents.md” %}
 
@@ -27,8 +26,7 @@ Related Studies
 
 {% page-ref page=“dunder-methods.md” %}
 
-Embeds:
--------
+## Embeds:
 
 {% embed url=“https://codesandbox.io/s/ds-algo-forked-ysri0” %}
 

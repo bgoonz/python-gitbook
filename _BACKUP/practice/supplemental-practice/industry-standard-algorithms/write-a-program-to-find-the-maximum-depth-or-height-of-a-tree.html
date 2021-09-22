@@ -1,88 +1,233 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>write-a-program-to-find-the-maximum-depth-or-height-of-a-tree</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="write-a-program-to-find-the-maximum-depth-or-height-of-a-tree">Write a Program to Find the Maximum Depth or Height of a Tree</h1>
-<p>Given a binary tree, find height of it. Height of empty tree is 0 and height of below tree is 2. <a href="https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1">Recommended: Please solve it on “<strong>PRACTICE</strong>” first, before moving on to the solution.</a></p>
-<figure>
-<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree122.gif" alt="Example Tree" /><figcaption>Example Tree</figcaption>
-</figure>
-<p>Recursively calculate height of left and right subtrees of a node and assign height to the node as max of the heights of two children plus 1. See below pseudo code and program for details. <strong>Algorithm:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"> maxDepth()</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>write-a-program-to-find-the-maximum-depth-or-height-of-a-tree</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="write-a-program-to-find-the-maximum-depth-or-height-of-a-tree">
+      Write a Program to Find the Maximum Depth or Height of a Tree
+    </h1>
+    <p>
+      Given a binary tree, find height of it. Height of empty tree is 0 and
+      height of below tree is 2.
+      <a
+        href="https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1"
+        >Recommended: Please solve it on “<strong>PRACTICE</strong>” first,
+        before moving on to the solution.</a
+      >
+    </p>
+    <figure>
+      <img
+        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/06/tree122.gif"
+        alt="Example Tree"
+      />
+      <figcaption>Example Tree</figcaption>
+    </figure>
+    <p>
+      Recursively calculate height of left and right subtrees of a node and
+      assign height to the node as max of the heights of two children plus 1.
+      See below pseudo code and program for details. <strong>Algorithm:</strong>
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"> maxDepth()</a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="fl">1.</span> If tree <span class="kw">is</span> empty then <span class="cf">return</span> <span class="dv">0</span></a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="fl">2.</span> Else</a>
 <a class="sourceLine" id="cb1-4" title="4">     (a) Get the <span class="bu">max</span> depth of left subtree recursively  i.e.,</a>
@@ -94,9 +239,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-10" title="10">         max_depth <span class="op">=</span> <span class="bu">max</span>(<span class="bu">max</span> dept of left subtree,</a>
 <a class="sourceLine" id="cb1-11" title="11">                             <span class="bu">max</span> depth of right subtree)</a>
 <a class="sourceLine" id="cb1-12" title="12">                             <span class="op">+</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb1-13" title="13">     (d) Return max_depth</a></code></pre></div>
-<p><strong>See the below diagram for more clarity about execution of the recursive function maxDepth() for above example tree.</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">            maxDepth(<span class="st">&#39;1&#39;</span>) <span class="op">=</span> <span class="bu">max</span>(maxDepth(<span class="st">&#39;2&#39;</span>), maxDepth(<span class="st">&#39;3&#39;</span>)) <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-13" title="13">     (d) Return max_depth</a></code></pre>
+    </div>
+    <p>
+      <strong
+        >See the below diagram for more clarity about execution of the recursive
+        function maxDepth() for above example tree.</strong
+      >
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">            maxDepth(<span class="st">&#39;1&#39;</span>) <span class="op">=</span> <span class="bu">max</span>(maxDepth(<span class="st">&#39;2&#39;</span>), maxDepth(<span class="st">&#39;3&#39;</span>)) <span class="op">+</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb2-2" title="2">                               <span class="op">=</span> <span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span></a>
 <a class="sourceLine" id="cb2-3" title="3">                                  <span class="op">/</span>    <span class="op">\</span></a>
 <a class="sourceLine" id="cb2-4" title="4">                                <span class="op">/</span>         <span class="op">\</span></a>
@@ -111,9 +265,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb2-13" title="13">               <span class="op">/</span>            <span class="op">\</span></a>
 <a class="sourceLine" id="cb2-14" title="14">             <span class="op">/</span>                <span class="op">\</span></a>
 <a class="sourceLine" id="cb2-15" title="15">           <span class="op">/</span>                    <span class="op">\</span></a>
-<a class="sourceLine" id="cb2-16" title="16"> maxDepth(<span class="st">&#39;4&#39;</span>) <span class="op">=</span> <span class="dv">0</span>     maxDepth(<span class="st">&#39;5&#39;</span>) <span class="op">=</span> <span class="dv">0</span></a></code></pre></div>
-<p>Python3</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"></a>
+<a class="sourceLine" id="cb2-16" title="16"> maxDepth(<span class="st">&#39;4&#39;</span>) <span class="op">=</span> <span class="dv">0</span>     maxDepth(<span class="st">&#39;5&#39;</span>) <span class="op">=</span> <span class="dv">0</span></a></code></pre>
+    </div>
+    <p>Python3</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"></a>
 <a class="sourceLine" id="cb3-2" title="2"></a>
 <a class="sourceLine" id="cb3-3" title="3"><span class="co"># Python3 program to find the maximum depth of tree</span></a>
 <a class="sourceLine" id="cb3-4" title="4"></a>
@@ -156,9 +314,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-41" title="41"></a>
 <a class="sourceLine" id="cb3-42" title="42"><span class="bu">print</span> (<span class="st">&quot;Height of tree is </span><span class="sc">%d</span><span class="st">&quot;</span> <span class="op">%</span>(maxDepth(root)))</a>
 <a class="sourceLine" id="cb3-43" title="43"></a>
-<a class="sourceLine" id="cb3-44" title="44"><span class="co"># This code is contributed by Nikhil Kumar Singh(nickzuck_007)</span></a></code></pre></div>
-<p>Javascript</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span>script<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb3-44" title="44"><span class="co"># This code is contributed by Nikhil Kumar Singh(nickzuck_007)</span></a></code></pre>
+    </div>
+    <p>Javascript</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode javascript"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="op">&lt;</span>script<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb4-2" title="2"></a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="co">// JavaScript program to find height of tree</span></a>
 <a class="sourceLine" id="cb4-4" title="4"></a>
@@ -211,13 +373,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-51" title="51"></a>
 <a class="sourceLine" id="cb4-52" title="52"><span class="co">// This code is contributed by rag2127</span></a>
 <a class="sourceLine" id="cb4-53" title="53"></a>
-<a class="sourceLine" id="cb4-54" title="54">&lt;/script<span class="op">&gt;</span></a></code></pre></div>
-<p><strong>Output</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">Height of tree <span class="kw">is</span> <span class="dv">2</span></a></code></pre></div>
-<p><strong>Time Complexity:</strong> O(n) (Please see our post <a href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/">Tree Traversal</a> for details)</p>
-<p><strong>Method 2:</strong> Another method to solve this problem is to do <strong>Level Order Traversal.</strong> While doing the level order traversal, while adding Nodes at each level to Queue, we have to add <strong>NULL Node</strong> so that whenever it is encountered, we can increment the value of variable and that level get counted.</p>
-<p><strong>Implementation:</strong>Python3</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="co">#include &lt;iostream&gt;</span></a>
+<a class="sourceLine" id="cb4-54" title="54">&lt;/script<span class="op">&gt;</span></a></code></pre>
+    </div>
+    <p><strong>Output</strong></p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">Height of tree <span class="kw">is</span> <span class="dv">2</span></a></code></pre>
+    </div>
+    <p>
+      <strong>Time Complexity:</strong> O(n) (Please see our post
+      <a
+        href="https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/"
+        >Tree Traversal</a
+      >
+      for details)
+    </p>
+    <p>
+      <strong>Method 2:</strong> Another method to solve this problem is to do
+      <strong>Level Order Traversal.</strong> While doing the level order
+      traversal, while adding Nodes at each level to Queue, we have to add
+      <strong>NULL Node</strong> so that whenever it is encountered, we can
+      increment the value of variable and that level get counted.
+    </p>
+    <p><strong>Implementation:</strong>Python3</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="co">#include &lt;iostream&gt;</span></a>
 <a class="sourceLine" id="cb6-2" title="2"><span class="co">#include &lt;bits/stdc++.h&gt;</span></a>
 <a class="sourceLine" id="cb6-3" title="3">using namespace std<span class="op">;</span></a>
 <a class="sourceLine" id="cb6-4" title="4"></a>
@@ -294,9 +477,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb6-75" title="75">    root<span class="op">-&gt;</span>right<span class="op">-&gt;</span>right<span class="op">-&gt;</span>right <span class="op">=</span> newNode(<span class="dv">24</span>)<span class="op">;</span></a>
 <a class="sourceLine" id="cb6-76" title="76"></a>
 <a class="sourceLine" id="cb6-77" title="77">      cout<span class="op">&lt;&lt;</span><span class="st">&quot;Height(Depth) of tree is: &quot;</span><span class="op">&lt;&lt;</span>height(root)<span class="op">;</span></a>
-<a class="sourceLine" id="cb6-78" title="78">}</a></code></pre></div>
-<p><strong>Time Complexity:</strong> O(n)</p>
-<p><strong>Space Complexity:</strong> O(n)</p>
-<p><strong>References:</strong> <a href="http://cslibrary.stanford.edu/110/BinaryTrees.html">http://cslibrary.stanford.edu/110/BinaryTrees.html</a></p>
-</body>
+<a class="sourceLine" id="cb6-78" title="78">}</a></code></pre>
+    </div>
+    <p><strong>Time Complexity:</strong> O(n)</p>
+    <p><strong>Space Complexity:</strong> O(n)</p>
+    <p>
+      <strong>References:</strong>
+      <a href="http://cslibrary.stanford.edu/110/BinaryTrees.html"
+        >http://cslibrary.stanford.edu/110/BinaryTrees.html</a
+      >
+    </p>
+  </body>
 </html>

@@ -1,5 +1,4 @@
-Data Structures In JavaScript
-=============================
+# Data Structures In JavaScript
 
 Data Structures In JavaScript
 
@@ -55,7 +54,7 @@ Mind the last carry.
       return prehead.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> “Divide and Conquer”: <https://leetcode.com/tag/divide-and-conquer>
 
@@ -97,8 +96,8 @@ Let `i + j = k`, if we find `nums2[j-1] <= nums1[i] <= nums2[j]` or `nums1[i-1] 
 
 Otherwise, if `nums1[i] <= nums2[j]` then we know `nums1[i] < nums2[j-1]` (because we did not find `k`).
 
--   There are `i` items before `nums1[i]`, and `j-1` items brefor `nums2[j-1]`, which means `nums1[0...i]` are before `nums3[i+j-1]`. So we now know `nums1[0...i] < nums3[k]`. They can be safely discarded.
--   We Also have `nums1[i] < nums2[j]`, which means `nums2[j...n)` are after `nums3[i+j]`. So `nums2[j...n) > nums3[k]`.
+- There are `i` items before `nums1[i]`, and `j-1` items brefor `nums2[j-1]`, which means `nums1[0...i]` are before `nums3[i+j-1]`. So we now know `nums1[0...i] < nums3[k]`. They can be safely discarded.
+- We Also have `nums1[i] < nums2[j]`, which means `nums2[j...n)` are after `nums3[i+j]`. So `nums2[j...n) > nums3[k]`.
 
 Same goes `nums1[i-1] <= nums2[j] <= nums1[i]`.
 
@@ -155,7 +154,7 @@ Same goes `nums1[i-1] <= nums2[j] <= nums1[i]`.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string>
 
@@ -259,7 +258,7 @@ If row == 1 or row == numRows, skip the odd columns.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Math”: <https://leetcode.com/tag/math> Similar Questions: “String to Integer (atoi)”: <https://leetcode.com/problems/string-to-integer-atoi>
 
@@ -319,7 +318,7 @@ Pure mathamatical solution.
       return Math.abs(result) > 2147483647 ? 0 : result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “String”: <https://leetcode.com/tag/string> Similar Questions: “Reverse Integer”: <https://leetcode.com/problems/reverse-integer> “Valid Number”: <https://leetcode.com/problems/valid-number>
 
@@ -339,7 +338,7 @@ If no valid conversion could be performed, a zero value is returned.
 
 **Note:**
 
-Only the space character `' '` is considered as whitespace character. Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. If the numerical value is out of the range of representable values, INT\_MAX (231 − 1) or INT\_MIN (−231) is returned.
+Only the space character `' '` is considered as whitespace character. Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. If the numerical value is out of the range of representable values, INT_MAX (231 − 1) or INT_MIN (−231) is returned.
 
 **Example 1:**
 
@@ -436,7 +435,7 @@ General solution.
       return Math.min(2147483647, Math.max(-2147483648, result * sign))
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Math”: <https://leetcode.com/tag/math> Similar Questions: “Palindrome Linked List”: <https://leetcode.com/problems/palindrome-linked-list>
 
@@ -525,7 +524,7 @@ General solution. Combining [7. Reverse Integer](file:///C:/MY-WEB-DEV/06-DS-ALG
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “String”: <https://leetcode.com/tag/string> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Wildcard Matching”: <https://leetcode.com/problems/wildcard-matching>
 
@@ -654,7 +653,7 @@ Let f(i, j) be the matching result of s\[0…i) and p\[0…j).
       return !!dp[s.length][p.length]
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Trapping Rain Water”: <https://leetcode.com/problems/trapping-rain-water>
 
@@ -699,7 +698,7 @@ What if `height[l] == height[r]`? It is safe to get rid of both. We do not need 
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “String”: <https://leetcode.com/tag/string> Similar Questions: “Roman to Integer”: <https://leetcode.com/problems/roman-to-integer> “Integer to English Words”: <https://leetcode.com/problems/integer-to-english-words>
 
@@ -722,9 +721,9 @@ For example, two is written as `II` in Roman numeral, just two one’s added tog
 
 Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as `IX`. There are six instances where subtraction is used:
 
--   `I` can be placed before `V` (5) and `X` (10) to make 4 and 9.
--   `X` can be placed before `L` (50) and `C` (100) to make 40 and 90.
--   `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
+- `I` can be placed before `V` (5) and `X` (10) to make 4 and 9.
+- `X` can be placed before `L` (50) and `C` (100) to make 40 and 90.
+- `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
 
 Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
@@ -779,7 +778,7 @@ Treat 4, 40, 400 and 9, 90, 900 specially.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Math”: <https://leetcode.com/tag/math> “String”: <https://leetcode.com/tag/string> Similar Questions: “Integer to Roman”: <https://leetcode.com/problems/integer-to-roman>
 
@@ -802,9 +801,9 @@ For example, two is written as `II` in Roman numeral, just two one’s added tog
 
 Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not `IIII`. Instead, the number four is written as `IV`. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as `IX`. There are six instances where subtraction is used:
 
--   `I` can be placed before `V` (5) and `X` (10) to make 4 and 9.
--   `X` can be placed before `L` (50) and `C` (100) to make 40 and 90.
--   `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
+- `I` can be placed before `V` (5) and `X` (10) to make 4 and 9.
+- `X` can be placed before `L` (50) and `C` (100) to make 40 and 90.
+- `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
 
 Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
 
@@ -863,7 +862,7 @@ Normally we just add up the digits, except when the digit is greater than its le
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “String”: <https://leetcode.com/tag/string>
 
@@ -955,7 +954,7 @@ General solution. Build up the prefix.
       return prefix
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Two Sum”: <https://leetcode.com/problems/two-sum> “3Sum Closest”: <https://leetcode.com/problems/3sum-closest> “4Sum”: <https://leetcode.com/problems/4sum> “3Sum Smaller”: <https://leetcode.com/problems/3sum-smaller>
 
@@ -963,7 +962,7 @@ General solution. Build up the prefix.
 
 #### Problem: <span id="problem-11"></span>
 
-Given an array `nums` of *n* integers, are there elements *a*, *b*, *c* in `nums` such that *a* + *b* + *c* = 0? Find all unique triplets in the array which gives the sum of zero.
+Given an array `nums` of _n_ integers, are there elements _a_, _b_, _c_ in `nums` such that _a_ + _b_ + _c_ = 0? Find all unique triplets in the array which gives the sum of zero.
 
 **Note:**
 
@@ -989,8 +988,8 @@ From i = `0` to `len(sorted) - 2`, pick `sorted[i]` as the first number of a pos
 
 Let `l = i + 1`, `r = len(sorted) - 1`, we want to narrow them down to enumerate all possible combinations.
 
--   `l++` if `sorted[i] + sorted[l] + sorted[r] > 0`.
--   `r--` if `sorted[i] + sorted[l] + sorted[r] < 0`.
+- `l++` if `sorted[i] + sorted[l] + sorted[r] > 0`.
+- `r--` if `sorted[i] + sorted[l] + sorted[r] < 0`.
 
 Skip any duplicate number as we iterate to avoid duplicate triplets.
 
@@ -1035,7 +1034,7 @@ Skip any duplicate number as we iterate to avoid duplicate triplets.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “3Sum”: <https://leetcode.com/problems/3sum> “3Sum Smaller”: <https://leetcode.com/problems/3sum-smaller>
 
@@ -1043,7 +1042,7 @@ Skip any duplicate number as we iterate to avoid duplicate triplets.
 
 #### Problem: <span id="problem-12"></span>
 
-Given an array `nums` of *n* integers and an integer `target`, find three integers in `nums` such that the sum is closest to `target`. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+Given an array `nums` of _n_ integers and an integer `target`, find three integers in `nums` such that the sum is closest to `target`. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
 **Example:**
 
@@ -1094,7 +1093,7 @@ Simplified version of [15. 3Sum](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-A
       return target - minDiff
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Generate Parentheses”: <https://leetcode.com/problems/generate-parentheses> “Combination Sum”: <https://leetcode.com/problems/combination-sum> “Binary Watch”: <https://leetcode.com/problems/binary-watch>
 
@@ -1187,7 +1186,7 @@ General recursive DFS solution.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Hash Table”: <https://leetcode.com/tag/hash-table> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Two Sum”: <https://leetcode.com/problems/two-sum> “3Sum”: <https://leetcode.com/problems/3sum> “4Sum II”: <https://leetcode.com/problems/4sum-ii>
 
@@ -1195,7 +1194,7 @@ General recursive DFS solution.
 
 #### Problem: <span id="problem-14"></span>
 
-Given an array `nums` of *n* integers and an integer `target`, are there elements *a*, *b*, *c*, and *d* in `nums` such that *a* + *b* + *c* + *d* = `target`? Find all unique quadruplets in the array which gives the sum of `target`.
+Given an array `nums` of _n_ integers and an integer `target`, are there elements _a_, _b_, _c_, and _d_ in `nums` such that _a_ + _b_ + _c_ + _d_ = `target`? Find all unique quadruplets in the array which gives the sum of `target`.
 
 **Note:**
 
@@ -1258,7 +1257,7 @@ Like [15. 3Sum](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> “Two Pointers”: <https://leetcode.com/tag/two-pointers>
 
@@ -1266,7 +1265,7 @@ Like [15. 3Sum](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/
 
 #### Problem: <span id="problem-15"></span>
 
-Given a linked list, remove the *n*-th node from the end of list and return its head.
+Given a linked list, remove the _n_-th node from the end of list and return its head.
 
 **Example:**
 
@@ -1276,7 +1275,7 @@ Given a linked list, remove the *n*-th node from the end of list and return its 
 
 **Note:**
 
-Given *n* will always be valid.
+Given _n_ will always be valid.
 
 **Follow up:**
 
@@ -1288,42 +1287,30 @@ Set a pointer `p1` for iterating, and `p2` which is `n` nodes behind, pointing a
 
 Boundaries that should be awared of:
 
--   `p2` could be one node before `head`, which means the `head` should be removed.
--   `p2` could be larger than the length of the list (Though the description says `n` will always be valid, we take care of it anyway).
--   It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
+- `p2` could be one node before `head`, which means the `head` should be removed.
+- `p2` could be larger than the length of the list (Though the description says `n` will always be valid, we take care of it anyway).
+- It should be `p1.next` touches the end rather than `p1` because we want `p1` pointing at the last node.
 
-    /**
-     * Definition for singly-linked list.
-     * function ListNode(val) {
-     *     this.val = val;
-     *     this.next = null;
-     * }
-     */
-    /**
-     * @param {ListNode} head
-     * @param {number} n
-     * @return {ListNode}
-     */
-    let removeNthFromEnd = function(head, n) {
-      let p1 = head
-      while (p1 && n--) {
-        p1 = p1.next
-      }
+  /\*\*
 
-      if (!p1) { return n ? head : head.next }
+  - Definition for singly-linked list.
+  - function ListNode(val) {
+  -     this.val = val;
+  -     this.next = null;
+  - } \*/ /\*\*
+  - @param {ListNode} head
+  - @param {number} n
+  - @return {ListNode} \*/ let removeNthFromEnd = function(head, n) { let p1 = head while (p1 && n--) { p1 = p1.next }
 
-      let p2 = head
-      while (p1.next) {
-        p1 = p1.next
-        p2 = p2.next
-      }
+  if (!p1) { return n ? head : head.next }
 
-      p2.next = p2.next.next
+  let p2 = head while (p1.next) { p1 = p1.next p2 = p2.next }
 
-      return head
-    };
+  p2.next = p2.next.next
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+  return head };
+
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “String”: <https://leetcode.com/tag/string> “Stack”: <https://leetcode.com/tag/stack> Similar Questions: “Generate Parentheses”: <https://leetcode.com/problems/generate-parentheses> “Longest Valid Parentheses”: <https://leetcode.com/problems/longest-valid-parentheses> “Remove Invalid Parentheses”: <https://leetcode.com/problems/remove-invalid-parentheses>
 
@@ -1399,7 +1386,7 @@ And since there is only bracket characters, the last open bracket happens to be 
       return stack.length <= 0
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Merge k Sorted Lists”: <https://leetcode.com/problems/merge-k-sorted-lists> “Merge Sorted Array”: <https://leetcode.com/problems/merge-sorted-array> “Sort List”: <https://leetcode.com/problems/sort-list> “Shortest Word Distance II”: <https://leetcode.com/problems/shortest-word-distance-ii>
 
@@ -1453,7 +1440,7 @@ Keep tracking the head of two lists and keep moving the pointer of smaller one t
       return prehead.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Letter Combinations of a Phone Number”: <https://leetcode.com/problems/letter-combinations-of-a-phone-number> “Valid Parentheses”: <https://leetcode.com/problems/valid-parentheses>
 
@@ -1550,7 +1537,7 @@ BFS.
       return queue.map(x => x.path)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> “Divide and Conquer”: <https://leetcode.com/tag/divide-and-conquer> “Heap”: <https://leetcode.com/tag/heap> Similar Questions: “Merge Two Sorted Lists”: <https://leetcode.com/problems/merge-two-sorted-lists> “Ugly Number II”: <https://leetcode.com/problems/ugly-number-ii>
 
@@ -1558,7 +1545,7 @@ BFS.
 
 #### Problem: <span id="problem-19"></span>
 
-Merge *k* sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+Merge _k_ sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
 **Example:**
 
@@ -1643,7 +1630,7 @@ Divide N lists into ceil(N/2) pairs and merge your way up.
       return prehead.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Reverse Nodes in k-Group”: <https://leetcode.com/problems/reverse-nodes-in-k-group>
 
@@ -1659,41 +1646,29 @@ Given a linked list, swap every two adjacent nodes and return its head.
 
 **Note:**
 
--   Your algorithm should use only constant extra space.
--   You may **not** modify the values in the list’s nodes, only nodes itself may be changed.
+- Your algorithm should use only constant extra space.
+- You may **not** modify the values in the list’s nodes, only nodes itself may be changed.
 
 #### Solution: <span id="solution-20"></span>
 
 1.  Draw the nodes down on paper to reason about the relationships.
 2.  Pointing to every active node is an easy way to keep on track.
 
-    /**
-     * Definition for singly-linked list.
-     * function ListNode(val) {
-     *     this.val = val;
-     *     this.next = null;
-     * }
-     */
-    /**
-     * @param {ListNode} head
-     * @return {ListNode}
-     */
-    let swapPairs = function(head) {
-      const prehead = { next: head }
+    /\*\*
 
-      for (let p = prehead; p.next !== null && p.next.next !== null;) {
-        const p1 = p.next
-        const p2 = p1.next
-        p1.next = p2.next
-        p2.next = p1
-        p.next = p2
-        p = p1
-      }
+    - Definition for singly-linked list.
+    - function ListNode(val) {
+    -     this.val = val;
+    -     this.next = null;
+    - } \*/ /\*\*
+    - @param {ListNode} head
+    - @return {ListNode} \*/ let swapPairs = function(head) { const prehead = { next: head }
 
-      return prehead.next
-    };
+    for (let p = prehead; p.next !== null && p.next.next !== null;) { const p1 = p.next const p2 = p1.next p1.next = p2.next p2.next = p1 p.next = p2 p = p1 }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+    return prehead.next };
+
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Swap Nodes in Pairs”: <https://leetcode.com/problems/swap-nodes-in-pairs>
 
@@ -1701,22 +1676,22 @@ Given a linked list, swap every two adjacent nodes and return its head.
 
 #### Problem: <span id="problem-21"></span>
 
-Given a linked list, reverse the nodes of a linked list *k* at a time and return its modified list.
+Given a linked list, reverse the nodes of a linked list _k_ at a time and return its modified list.
 
-*k* is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of *k* then left-out nodes in the end should remain as it is.
+_k_ is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of _k_ then left-out nodes in the end should remain as it is.
 
 **Example:**
 
 Given this linked list: `1->2->3->4->5`
 
-For *k* = 2, you should return: `2->1->4->3->5`
+For _k_ = 2, you should return: `2->1->4->3->5`
 
-For *k* = 3, you should return: `3->2->1->4->5`
+For _k_ = 3, you should return: `3->2->1->4->5`
 
 **Note:**
 
--   Only constant extra memory is allowed.
--   You may not alter the values in the list’s nodes, only nodes itself may be changed.
+- Only constant extra memory is allowed.
+- You may not alter the values in the list’s nodes, only nodes itself may be changed.
 
 #### Solution: <span id="solution-21"></span>
 
@@ -1725,54 +1700,32 @@ For *k* = 3, you should return: `3->2->1->4->5`
 3.  Reverse the portion using the next node as edge(null) pointer.
 4.  Connect it back to the main linked list.
 
-    /**
-     * Definition for singly-linked list.
-     * function ListNode(val) {
-     *     this.val = val;
-     *     this.next = null;
-     * }
-     */
-    /**
-     * @param {ListNode} head
-     * @param {number} k
-     * @return {ListNode}
-     */
-    let reverseKGroup = function(head, k) {
-      const prehead = { next: head }
-      let p = prehead
-      while (true) {
-        let n = k
-        let pEndNext = p.next
-        while (pEndNext && n) {
-          pEndNext = pEndNext.next
-          n--
-        }
+    /\*\*
 
-        if (n !== 0) {
-          break
-        }
+    - Definition for singly-linked list.
+    - function ListNode(val) {
+    -     this.val = val;
+    -     this.next = null;
+    - } \*/ /\*\*
+    - @param {ListNode} head
+    - @param {number} k
+    - @return {ListNode} \*/ let reverseKGroup = function(head, k) { const prehead = { next: head } let p = prehead while (true) { let n = k let pEndNext = p.next while (pEndNext && n) { pEndNext = pEndNext.next n-- }
 
-        const nextp = p.next // The first node will be the last after reverse
-        p.next = reverseLinkList(p.next, pEndNext)
-        p = nextp
+          if (n !== 0) {
+            break
+          }
+
+          const nextp = p.next // The first node will be the last after reverse
+          p.next = reverseLinkList(p.next, pEndNext)
+          p = nextp
+
       }
 
-      return prehead.next
-    };
+    return prehead.next };
 
-    function reverseLinkList (head, nullNode = null) {
-      let prev = nullNode
-      let curr = head
-      while (curr !== nullNode) {
-        const next = curr.next
-        curr.next = prev
-        prev = curr
-        curr = next
-      }
-      return prev
-    };
+    function reverseLinkList (head, nullNode = null) { let prev = nullNode let curr = head while (curr !== nullNode) { const next = curr.next curr.next = prev prev = curr curr = next } return prev };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Remove Element”: <https://leetcode.com/problems/remove-element> “Remove Duplicates from Sorted Array II”: <https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii>
 
@@ -1780,7 +1733,7 @@ For *k* = 3, you should return: `3->2->1->4->5`
 
 #### Problem: <span id="problem-22"></span>
 
-Given a sorted array *nums*, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that each element appear only *once* and return the new length.
+Given a sorted array _nums_, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that each element appear only _once_ and return the new length.
 
 Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with O(1) extra memory.
 
@@ -1835,7 +1788,7 @@ The result array can only be shorter. That is why we can build the array in-plac
       return len
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Remove Duplicates from Sorted Array”: <https://leetcode.com/problems/remove-duplicates-from-sorted-array> “Remove Linked List Elements”: <https://leetcode.com/problems/remove-linked-list-elements> “Move Zeroes”: <https://leetcode.com/problems/move-zeroes>
 
@@ -1843,7 +1796,7 @@ The result array can only be shorter. That is why we can build the array in-plac
 
 #### Problem: <span id="problem-23"></span>
 
-Given an array *nums* and a value *val*, remove all instances of that value [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) and return the new length.
+Given an array _nums_ and a value _val_, remove all instances of that value [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) and return the new length.
 
 Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with O(1) extra memory.
 
@@ -1903,7 +1856,7 @@ The order does not matter. So just take the last number to fill the vacancy.
       return len
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “Binary Search”: <https://leetcode.com/tag/binary-search>
 
@@ -1929,9 +1882,9 @@ The integer division should truncate toward zero.
 
 **Note:**
 
--   Both dividend and divisor will be 32-bit signed integers.
--   The divisor will never be 0.
--   Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
+- Both dividend and divisor will be 32-bit signed integers.
+- The divisor will never be 0.
+- Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: \[−231, 231 − 1\]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
 
 #### Solution: <span id="solution-24"></span>
 
@@ -1974,7 +1927,7 @@ Replace multiplication and division with binary shifting.
       return isNegative ? -result : result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Permutations”: <https://leetcode.com/problems/permutations> “Permutations II”: <https://leetcode.com/problems/permutations-ii> “Permutation Sequence”: <https://leetcode.com/problems/permutation-sequence> “Palindrome Permutation II”: <https://leetcode.com/problems/palindrome-permutation-ii>
 
@@ -2037,7 +1990,7 @@ Swap the two.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “Search in Rotated Sorted Array II”: <https://leetcode.com/problems/search-in-rotated-sorted-array-ii> “Find Minimum in Rotated Sorted Array”: <https://leetcode.com/problems/find-minimum-in-rotated-sorted-array>
 
@@ -2053,7 +2006,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 
-Your algorithm’s runtime complexity must be in the order of *O*(log *n*).
+Your algorithm’s runtime complexity must be in the order of _O_(log _n_).
 
 **Example 1:**
 
@@ -2077,49 +2030,44 @@ But take a closer look and we realize that only one of the two halves needs to b
 
 Whenever we choose a pivot, it must be in one of the two sorted parts of the rotated array.
 
--   If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
--   Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
+- If the pivot is in the left part. We know that the begin of the left part to the pivot are sorted.
+- Otherwise the pivot is in the right part. We know that the end of the right part to the pivot are sorted.
 
-    /**
-     * @param {number[]} nums
-     * @param {number} target
-     * @return {number}
-     */
-    let search = function(nums, target) {
-      let s = 0
-      let e = nums.length - 1
+  /\*\*
 
-      while (s <= e) {
-        const p = (e + s) / 2 | 0
-        const pivot = nums[p]
+  - @param {number[]} nums
+  - @param {number} target
+  - @return {number} \*/ let search = function(nums, target) { let s = 0 let e = nums.length - 1
 
-        if (pivot === target) {
-          return p
-        }
+  while (s <= e) { const p = (e + s) / 2 | 0 const pivot = nums[p]
 
-        if (pivot < nums[e]) {
-          // right half is sorted
-          if (target > pivot  && target <= nums[e]) {
-            // target is inside the right half
-            s = p + 1
-          } else {
-            e = p - 1
-          }
+      if (pivot === target) {
+        return p
+      }
+
+      if (pivot < nums[e]) {
+        // right half is sorted
+        if (target > pivot  && target <= nums[e]) {
+          // target is inside the right half
+          s = p + 1
         } else {
-          // left half is sorted
-          if (target < pivot && target >= nums[s]) {
-            // target is inside the left half
-            e = p - 1
-          } else {
-            s = p + 1
-          }
+          e = p - 1
+        }
+      } else {
+        // left half is sorted
+        if (target < pivot && target >= nums[s]) {
+          // target is inside the left half
+          e = p - 1
+        } else {
+          s = p + 1
         }
       }
 
-      return -1
-    };
+  }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+  return -1 };
+
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “First Bad Version”: <https://leetcode.com/problems/first-bad-version>
 
@@ -2129,7 +2077,7 @@ Whenever we choose a pivot, it must be in one of the two sorted parts of the rot
 
 Given an array of integers `nums` sorted in ascending order, find the starting and ending position of a given `target` value.
 
-Your algorithm’s runtime complexity must be in the order of *O*(log *n*).
+Your algorithm’s runtime complexity must be in the order of _O_(log _n_).
 
 If the target is not found in the array, return `[-1, -1]`.
 
@@ -2207,7 +2155,7 @@ If we want to get the first, we dump the right half. Vice versa.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “First Bad Version”: <https://leetcode.com/problems/first-bad-version>
 
@@ -2267,7 +2215,7 @@ Same as simple binary search except it returns the start index when does not fin
       return s
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Hash Table”: <https://leetcode.com/tag/hash-table> Similar Questions: “Sudoku Solver”: <https://leetcode.com/problems/sudoku-solver>
 
@@ -2323,10 +2271,10 @@ The Sudoku board could be partially filled, where empty cells are filled with th
 
 **Note:**
 
--   A Sudoku board (partially filled) could be valid but is not necessarily solvable.
--   Only the filled cells need to be validated according to the mentioned rules.
--   The given board contain only digits `1-9` and the character `'.'`.
--   The given board size is always `9x9`.
+- A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+- Only the filled cells need to be validated according to the mentioned rules.
+- The given board contain only digits `1-9` and the character `'.'`.
+- The given board size is always `9x9`.
 
 #### Solution: <span id="solution-29"></span>
 
@@ -2368,7 +2316,7 @@ Scan the board once.
       return true
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Hash Table”: <https://leetcode.com/tag/hash-table> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Valid Sudoku”: <https://leetcode.com/problems/valid-sudoku>
 
@@ -2388,13 +2336,13 @@ Empty cells are indicated by the character `'.'`.
 
 ![250px-Sudoku-by-L2G-20050714.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714.svg.png) A sudoku puzzle…
 
-![250px-Sudoku-by-L2G-20050714\_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png) …and its solution numbers marked in red.
+![250px-Sudoku-by-L2G-20050714_solution.svg.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/250px-Sudoku-by-L2G-20050714_solution.svg.png) …and its solution numbers marked in red.
 
 **Note:**
 
--   The given board contain only digits `1-9` and the character `'.'`.
--   You may assume that the given Sudoku puzzle will have a single unique solution.
--   The given board size is always `9x9`.
+- The given board contain only digits `1-9` and the character `'.'`.
+- You may assume that the given Sudoku puzzle will have a single unique solution.
+- The given board size is always `9x9`.
 
 #### Solution: <span id="solution-30"></span>
 
@@ -2465,7 +2413,7 @@ If all possible solutions fail, we just dump the current position and go back to
       return false
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “String”: <https://leetcode.com/tag/string> Similar Questions: “Encode and Decode Strings”: <https://leetcode.com/problems/encode-and-decode-strings> “String Compression”: <https://leetcode.com/problems/string-compression>
 
@@ -2544,7 +2492,7 @@ General solution.
       return num
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Letter Combinations of a Phone Number”: <https://leetcode.com/problems/letter-combinations-of-a-phone-number> “Combination Sum II”: <https://leetcode.com/problems/combination-sum-ii> “Combinations”: <https://leetcode.com/problems/combinations> “Combination Sum III”: <https://leetcode.com/problems/combination-sum-iii> “Factor Combinations”: <https://leetcode.com/problems/factor-combinations> “Combination Sum IV”: <https://leetcode.com/problems/combination-sum-iv>
 
@@ -2558,8 +2506,8 @@ The **same** repeated number may be chosen from `candidates` unlimited number of
 
 **Note:**
 
--   All numbers (including `target`) will be positive integers.
--   The solution set must not contain duplicate combinations.
+- All numbers (including `target`) will be positive integers.
+- The solution set must not contain duplicate combinations.
 
 **Example 1:**
 
@@ -2615,7 +2563,7 @@ To prevent duplications, only loop the right side of the candidates.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Combination Sum”: <https://leetcode.com/problems/combination-sum>
 
@@ -2629,8 +2577,8 @@ Each number in `candidates` may only be used **once** in the combination.
 
 **Note:**
 
--   All numbers (including `target`) will be positive integers.
--   The solution set must not contain duplicate combinations.
+- All numbers (including `target`) will be positive integers.
+- The solution set must not contain duplicate combinations.
 
 **Example 1:**
 
@@ -2697,7 +2645,7 @@ Notice the number at `start` is immune by the rule because we assume that the cu
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Missing Number”: <https://leetcode.com/problems/missing-number> “Find the Duplicate Number”: <https://leetcode.com/problems/find-the-duplicate-number> “Find All Numbers Disappeared in an Array”: <https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array> “Couples Holding Hands”: <https://leetcode.com/problems/couples-holding-hands>
 
@@ -2724,13 +2672,13 @@ Given an unsorted integer array, find the smallest missing positive integer.
 
 **Note:**
 
-Your algorithm should run in *O*(*n*) time and uses constant extra space.
+Your algorithm should run in _O_(_n_) time and uses constant extra space.
 
 #### Solution: <span id="solution-34"></span>
 
 The last requirement is why this problem is marked “hard”. Though the solution feels like cheating: it modifies the array to mark numbers.
 
-So the algorithm still requires *O*(*n*) space but *O*(*1*) **extra** space.
+So the algorithm still requires _O_(_n_) space but _O_(_1_) **extra** space.
 
 The core idea of the solution is, if the length of the array is n, then the smallest missing positive integer must be within \[1, n+1\].
 
@@ -2766,7 +2714,7 @@ So here we reuse the array and keep trying to put integer `k` into the slot inde
       return n + 1
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> “Stack”: <https://leetcode.com/tag/stack> Similar Questions: “Container With Most Water”: <https://leetcode.com/problems/CONTENT-with-most-water> “Product of Array Except Self”: <https://leetcode.com/problems/product-of-array-except-self> “Trapping Rain Water II”: <https://leetcode.com/problems/trapping-rain-water-ii> “Pour Water”: <https://leetcode.com/problems/pour-water>
 
@@ -2774,7 +2722,7 @@ So here we reuse the array and keep trying to put integer `k` into the slot inde
 
 #### Problem: <span id="problem-35"></span>
 
-Given *n* non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+Given _n_ non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
 ![rainwatertrap.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/rainwatertrap.png) The above elevation map is represented by array \[0,1,0,2,1,0,1,3,2,1,2,1\]. In this case, 6 units of rain water (blue section) are being trapped. **Thanks Marcos** for contributing this image!
 
@@ -2821,7 +2769,7 @@ Well explained by Leetcode official: <https://leetcode.com/articles/trapping-rai
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “String”: <https://leetcode.com/tag/string> Similar Questions: “Add Two Numbers”: <https://leetcode.com/problems/add-two-numbers> “Plus One”: <https://leetcode.com/problems/plus-one> “Add Binary”: <https://leetcode.com/problems/add-binary> “Add Strings”: <https://leetcode.com/problems/add-strings>
 
@@ -2871,7 +2819,7 @@ Same as we do multiplication on a paper.
       return result.join('').replace(/^0+(?=[0-9])/, '')
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Greedy”: <https://leetcode.com/tag/greedy> Similar Questions: “Jump Game”: <https://leetcode.com/problems/jump-game>
 
@@ -2921,7 +2869,7 @@ Greedy. Always pick the one that would allow to jump to the rightest.
       return jump
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Next Permutation”: <https://leetcode.com/problems/next-permutation> “Permutations II”: <https://leetcode.com/problems/permutations-ii> “Permutation Sequence”: <https://leetcode.com/problems/permutation-sequence> “Combinations”: <https://leetcode.com/problems/combinations>
 
@@ -2977,7 +2925,7 @@ One position at a time, pick a number from the unused set and put it in that pos
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Next Permutation”: <https://leetcode.com/problems/next-permutation> “Permutations”: <https://leetcode.com/problems/permutations> “Palindrome Permutation II”: <https://leetcode.com/problems/palindrome-permutation-ii>
 
@@ -3037,7 +2985,7 @@ Same as [46. Permutations](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/ma
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array>
 
@@ -3045,7 +2993,7 @@ Same as [46. Permutations](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/ma
 
 #### Problem: <span id="problem-40"></span>
 
-You are given an *n* x *n* 2D matrix representing an image.
+You are given an _n_ x _n_ 2D matrix representing an image.
 
 Rotate the image by 90 degrees (clockwise).
 
@@ -3115,7 +3063,7 @@ Outside-in. Rotate one square at a time.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Hash Table”: <https://leetcode.com/tag/hash-table> “String”: <https://leetcode.com/tag/string> Similar Questions: “Valid Anagram”: <https://leetcode.com/problems/valid-anagram> “Group Shifted Strings”: <https://leetcode.com/problems/group-shifted-strings>
 
@@ -3137,8 +3085,8 @@ Given an array of strings, group anagrams together.
 
 **Note:**
 
--   All inputs will be in lowercase.
--   The order of your output does not matter.
+- All inputs will be in lowercase.
+- The order of your output does not matter.
 
 #### Solution: <span id="solution-41"></span>
 
@@ -3186,7 +3134,7 @@ Use the product of prime numbers to generate unique keys.
       return Object.values(result)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “Sqrt(x)”: <https://leetcode.com/problems/sqrtx> “Super Pow”: <https://leetcode.com/problems/super-pow>
 
@@ -3194,7 +3142,7 @@ Use the product of prime numbers to generate unique keys.
 
 #### Problem: <span id="problem-42"></span>
 
-Implement [pow(*x*, *n*)](http://www.cplusplus.com/reference/valarray/pow/), which calculates *x* raised to the power *n* (xn).
+Implement [pow(_x_, _n_)](http://www.cplusplus.com/reference/valarray/pow/), which calculates _x_ raised to the power _n_ (xn).
 
 **Example 1:**
 
@@ -3214,8 +3162,8 @@ Implement [pow(*x*, *n*)](http://www.cplusplus.com/reference/valarray/pow/), whi
 
 **Note:**
 
--   -100.0 &lt; *x* &lt; 100.0
--   *n* is a 32-bit signed integer, within the range \[−231, 231 − 1\]
+- -100.0 &lt; _x_ &lt; 100.0
+- _n_ is a 32-bit signed integer, within the range \[−231, 231 − 1\]
 
 #### Solution: <span id="solution-42"></span>
 
@@ -3224,8 +3172,8 @@ Implement [pow(*x*, *n*)](http://www.cplusplus.com/reference/valarray/pow/), whi
 
 Corner cases:
 
--   n == 0
--   n &lt; 0
+- n == 0
+- n &lt; 0
 
 Note here we can not use any bitwise operator, `n = -2^31` might overflow.
 
@@ -3246,7 +3194,7 @@ Note here we can not use any bitwise operator, `n = -2^31` might overflow.
       return x * res * res
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “N-Queens II”: <https://leetcode.com/problems/n-queens-ii>
 
@@ -3254,13 +3202,13 @@ Note here we can not use any bitwise operator, `n = -2^31` might overflow.
 
 #### Problem: <span id="problem-43"></span>
 
-The *n*-queens puzzle is the problem of placing *n* queens on an *n*×*n* chessboard such that no two queens attack each other.
+The _n_-queens puzzle is the problem of placing _n_ queens on an *n*×*n* chessboard such that no two queens attack each other.
 
 ![8-queens.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/8-queens.png)
 
-Given an integer *n*, return all distinct solutions to the *n*-queens puzzle.
+Given an integer _n_, return all distinct solutions to the _n_-queens puzzle.
 
-Each solution contains a distinct board configuration of the *n*-queens’ placement, where `'Q'` and `'.'` both indicate a queen and an empty space respectively.
+Each solution contains a distinct board configuration of the _n_-queens’ placement, where `'Q'` and `'.'` both indicate a queen and an empty space respectively.
 
 **Example:**
 
@@ -3392,7 +3340,7 @@ This is slow because we test diagonal in the end. We can do a tree pruning by mo
       return board
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “N-Queens”: <https://leetcode.com/problems/n-queens>
 
@@ -3400,11 +3348,11 @@ This is slow because we test diagonal in the end. We can do a tree pruning by mo
 
 #### Problem: <span id="problem-44"></span>
 
-The *n*-queens puzzle is the problem of placing *n* queens on an *n*×*n* chessboard such that no two queens attack each other.
+The _n_-queens puzzle is the problem of placing _n_ queens on an *n*×*n* chessboard such that no two queens attack each other.
 
 ![8-queens.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/8-queens.png)
 
-Given an integer *n*, return the number of distinct solutions to the *n*-queens puzzle.
+Given an integer _n_, return the number of distinct solutions to the _n_-queens puzzle.
 
 **Example:**
 
@@ -3469,7 +3417,7 @@ Just modify [51. N-Queens](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/ma
       return true
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Divide and Conquer”: <https://leetcode.com/tag/divide-and-conquer> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Best Time to Buy and Sell Stock”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock> “Maximum Product Subarray”: <https://leetcode.com/problems/maximum-product-subarray> “Degree of an Array”: <https://leetcode.com/problems/degree-of-an-array>
 
@@ -3487,7 +3435,7 @@ Given an integer array `nums`, find the contiguous subarray (containing at least
 
 **Follow up:**
 
-If you have figured out the O(*n*) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+If you have figured out the O(_n_) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 #### Solution: <span id="solution-45"></span>
 
@@ -3531,7 +3479,7 @@ We can also compress the dp array:
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Spiral Matrix II”: <https://leetcode.com/problems/spiral-matrix-ii>
 
@@ -3539,7 +3487,7 @@ We can also compress the dp array:
 
 #### Problem: <span id="problem-46"></span>
 
-Given a matrix of *m* x *n* elements (*m* rows, *n* columns), return all elements of the matrix in spiral order.
+Given a matrix of _m_ x _n_ elements (_m_ rows, _n_ columns), return all elements of the matrix in spiral order.
 
 **Example 1:**
 
@@ -3600,7 +3548,7 @@ Loop outside-in. Break each cycle into four stages. Note that the last two stage
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Greedy”: <https://leetcode.com/tag/greedy> Similar Questions: “Jump Game II”: <https://leetcode.com/problems/jump-game-ii>
 
@@ -3673,7 +3621,7 @@ If `nums[0]` can cover the last destination point, it is good.
       return nums[0] >= des
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Sort”: <https://leetcode.com/tag/sort> Similar Questions: “Insert Interval”: <https://leetcode.com/problems/insert-interval> “Meeting Rooms”: <https://leetcode.com/problems/meeting-rooms> “Meeting Rooms II”: <https://leetcode.com/problems/meeting-rooms-ii> “Teemo Attacking”: <https://leetcode.com/problems/teemo-attacking> “Add Bold Tag in String”: <https://leetcode.com/problems/add-bold-tag-in-string> “Range Module”: <https://leetcode.com/problems/range-module> “Employee Free Time”: <https://leetcode.com/problems/employee-free-time> “Partition Labels”: <https://leetcode.com/problems/partition-labels>
 
@@ -3727,7 +3675,7 @@ Sort then merge.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Sort”: <https://leetcode.com/tag/sort> Similar Questions: “Merge Intervals”: <https://leetcode.com/problems/merge-intervals> “Range Module”: <https://leetcode.com/problems/range-module>
 
@@ -3735,7 +3683,7 @@ Sort then merge.
 
 #### Problem: <span id="problem-49"></span>
 
-Given a set of *non-overlapping* intervals, insert a new interval into the intervals (merge if necessary).
+Given a set of _non-overlapping_ intervals, insert a new interval into the intervals (merge if necessary).
 
 You may assume that the intervals were initially sorted according to their start times.
 
@@ -3791,7 +3739,7 @@ The logic of the solution is pretty straight forward. Just need to carefully thi
       return [...result, p, ...intervals.slice(i)]
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “String”: <https://leetcode.com/tag/string>
 
@@ -3858,7 +3806,7 @@ General solution.
       return end - start
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Spiral Matrix”: <https://leetcode.com/problems/spiral-matrix>
 
@@ -3866,7 +3814,7 @@ General solution.
 
 #### Problem: <span id="problem-51"></span>
 
-Given a positive integer *n*, generate a square matrix filled with elements from 1 to \_n\_2 in spiral order.
+Given a positive integer _n_, generate a square matrix filled with elements from 1 to \_n_2 in spiral order.
 
 **Example:**
 
@@ -3908,7 +3856,7 @@ Straight-forward.
       return matrix
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Math”: <https://leetcode.com/tag/math> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Next Permutation”: <https://leetcode.com/problems/next-permutation> “Permutations”: <https://leetcode.com/problems/permutations>
 
@@ -3916,9 +3864,9 @@ Straight-forward.
 
 #### Problem: <span id="problem-52"></span>
 
-The set `[1,2,3,...,*n*]` contains a total of *n*! unique permutations.
+The set `[1,2,3,...,*n*]` contains a total of _n_! unique permutations.
 
-By listing and labeling all of the permutations in order, we get the following sequence for *n* = 3:
+By listing and labeling all of the permutations in order, we get the following sequence for _n_ = 3:
 
 1.  `"123"`
 2.  `"132"`
@@ -3927,12 +3875,12 @@ By listing and labeling all of the permutations in order, we get the following s
 5.  `"312"`
 6.  `"321"`
 
-Given *n* and *k*, return the \_k\_th permutation sequence.
+Given _n_ and _k_, return the \_k_th permutation sequence.
 
 **Note:**
 
--   Given *n* will be between 1 and 9 inclusive.
--   Given *k* will be between 1 and *n*! inclusive.
+- Given _n_ will be between 1 and 9 inclusive.
+- Given _k_ will be between 1 and _n_! inclusive.
 
 **Example 1:**
 
@@ -3978,7 +3926,7 @@ We also need `k--` to convert `k` into index so that `k <= (n-1)!` maps `0` (and
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Rotate Array”: <https://leetcode.com/problems/rotate-array> “Split Linked List in Parts”: <https://leetcode.com/problems/split-linked-list-in-parts>
 
@@ -3986,7 +3934,7 @@ We also need `k--` to convert `k` into index so that `k <= (n-1)!` maps `0` (and
 
 #### Problem: <span id="problem-53"></span>
 
-Given a linked list, rotate the list to the right by *k* places, where *k* is non-negative.
+Given a linked list, rotate the list to the right by _k_ places, where _k_ is non-negative.
 
 **Example 1:**
 
@@ -4062,7 +4010,7 @@ Locate the right pointer again with `k % len`.
       return head
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Unique Paths II”: <https://leetcode.com/problems/unique-paths-ii> “Minimum Path Sum”: <https://leetcode.com/problems/minimum-path-sum> “Dungeon Game”: <https://leetcode.com/problems/dungeon-game>
 
@@ -4070,17 +4018,17 @@ Locate the right pointer again with `k % len`.
 
 #### Problem: <span id="problem-54"></span>
 
-A robot is located at the top-left corner of a *m* x *n* grid (marked ‘Start’ in the diagram below).
+A robot is located at the top-left corner of a _m_ x _n_ grid (marked ‘Start’ in the diagram below).
 
 The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked ‘Finish’ in the diagram below).
 
 How many possible unique paths are there?
 
-![robot\_maze.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/robot_maze.png)
+![robot_maze.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/robot_maze.png)
 
 Above is a 7 x 3 grid. How many possible unique paths are there?
 
-**Note:** *m* and *n* will be at most 100.
+**Note:** _m_ and _n_ will be at most 100.
 
 **Example 1:**
 
@@ -4124,7 +4072,7 @@ Only two previous states are dependant. Use dynamic array to reduce memory alloc
       return dp[m-1] || 1
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Unique Paths”: <https://leetcode.com/problems/unique-paths> “Dungeon Game”: <https://leetcode.com/problems/dungeon-game> “Cherry Pickup”: <https://leetcode.com/problems/cherry-pickup>
 
@@ -4132,7 +4080,7 @@ Only two previous states are dependant. Use dynamic array to reduce memory alloc
 
 #### Problem: <span id="problem-55"></span>
 
-Given a *m* x *n* grid filled with non-negative numbers, find a path from top left to bottom right which *minimizes* the sum of all numbers along its path.
+Given a _m_ x _n_ grid filled with non-negative numbers, find a path from top left to bottom right which _minimizes_ the sum of all numbers along its path.
 
 **Note:** You can only move either down or right at any point in time.
 
@@ -4180,7 +4128,7 @@ Only two previous states are dependant. Use dynamic array to reduce memory alloc
       return dp[width-1] || 0
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Math”: <https://leetcode.com/tag/math> “String”: <https://leetcode.com/tag/string> Similar Questions: “String to Integer (atoi)”: <https://leetcode.com/problems/string-to-integer-atoi>
 
@@ -4202,29 +4150,23 @@ JavaScript specific solutions:
 
 **ONE**
 
--   `Math.abs` will first convert the argument to number.
--   `Math.abs(' ') === 0`.
+- `Math.abs` will first convert the argument to number.
+- `Math.abs(' ') === 0`.
 
-    /**
-     * @param {string} s
-     * @return {boolean}
-     */
-    let isNumber = function(s) {
-      return !!s.trim() && Math.abs(s) >= 0
-    };
+  /\*\*
+
+  - @param {string} s
+  - @return {boolean} \*/ let isNumber = function(s) { return !!s.trim() && Math.abs(s) >= 0 };
 
 **TWO**
 
--   `isNaN` will first convert the argument to number.
--   `isNaN(' ') === false`.
+- `isNaN` will first convert the argument to number.
+- `isNaN(' ') === false`.
 
-    /**
-     * @param {string} s
-     * @return {boolean}
-     */
-    let isNumber = function(s) {
-      return !!s.trim() && !isNaN(s)
-    };
+  /\*\*
+
+  - @param {string} s
+  - @return {boolean} \*/ let isNumber = function(s) { return !!s.trim() && !isNaN(s) };
 
 **THREE**
 
@@ -4365,7 +4307,7 @@ Now implement the parser. It is much easier now because we have a clear mental m
       return parseDecimalDigits(s, nextIndex)
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Math”: <https://leetcode.com/tag/math> Similar Questions: “Multiply Strings”: <https://leetcode.com/problems/multiply-strings> “Add Binary”: <https://leetcode.com/problems/add-binary> “Plus One Linked List”: <https://leetcode.com/problems/plus-one-linked-list>
 
@@ -4437,7 +4379,7 @@ General solution.
       return digits
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “String”: <https://leetcode.com/tag/string>
 
@@ -4445,9 +4387,9 @@ General solution.
 
 #### Problem: <span id="problem-58"></span>
 
-Given an array of words and a width *maxWidth*, format the text such that each line has exactly *maxWidth* characters and is fully (left and right) justified.
+Given an array of words and a width _maxWidth_, format the text such that each line has exactly _maxWidth_ characters and is fully (left and right) justified.
 
-You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces `' '` when necessary so that each line has exactly *maxWidth* characters.
+You should pack your words in a greedy approach; that is, pack as many words as you can in each line. Pad extra spaces `' '` when necessary so that each line has exactly _maxWidth_ characters.
 
 Extra spaces between words should be distributed as evenly as possible. If the number of spaces on a line do not divide evenly between words, the empty slots on the left will be assigned more spaces than the slots on the right.
 
@@ -4455,9 +4397,9 @@ For the last line of text, it should be left justified and no **extra** space is
 
 **Note:**
 
--   A word is defined as a character sequence consisting of non-space characters only.
--   Each word’s length is guaranteed to be greater than 0 and not exceed *maxWidth*.
--   The input array `words` contains at least one word.
+- A word is defined as a character sequence consisting of non-space characters only.
+- Each word’s length is guaranteed to be greater than 0 and not exceed _maxWidth_.
+- The input array `words` contains at least one word.
 
 **Example 1:**
 
@@ -4504,57 +4446,25 @@ For the last line of text, it should be left justified and no **extra** space is
 
 #### Solution: <span id="solution-58"></span>
 
--   Count the current line width (plus 1 space between each two words).
--   When a line is full:
-    -   If there is only one word, pad spaces at the end.
-    -   Otherwise calculate the gap length using `Math.ceil`.
--   Handle the last line.
+- Count the current line width (plus 1 space between each two words).
+- When a line is full:
+  - If there is only one word, pad spaces at the end.
+  - Otherwise calculate the gap length using `Math.ceil`.
+- Handle the last line.
 
-    /**
-     * @param {string[]} words
-     * @param {number} maxWidth
-     * @return {string[]}
-     */
-    let fullJustify = function(words, maxWidth) {
-      let start = 0
-      let end = 1
-      let lineLen = words[start].length
-      const result = []
+  /\*\*
 
-      while (end < words.length) {
-        const newLen = words[end].length + 1 + lineLen
-        if (newLen <= maxWidth) {
-          lineLen = newLen
-        } else {
-          let line = ''
-          let nWords = end - start
-          if (nWords === 1) {
-            line = words[start].padEnd(maxWidth)
-          } else {
-            let nSpaces = maxWidth - (lineLen - (nWords - 1))
-            for (let i = start; i < end; i++) {
-              const gap = Math.ceil(nSpaces / (end - i - 1))
-              line += words[i] + ' '.repeat(gap)
-              nSpaces -= gap
-            }
-          }
-          result.push(line)
-          start = end
-          lineLen = words[start].length
-        }
-        end++
-      }
+  - @param {string[]} words
+  - @param {number} maxWidth
+  - @return {string[]} \*/ let fullJustify = function(words, maxWidth) { let start = 0 let end = 1 let lineLen = words[start].length const result = []
 
-      let lastline = words[start]
-      for (let i = start + 1; i < end; i++) {
-        lastline += ' ' + words[i]
-      }
-      result.push(lastline.padEnd(maxWidth))
+  while (end < words.length) { const newLen = words[end].length + 1 + lineLen if (newLen <= maxWidth) { lineLen = newLen } else { let line = '' let nWords = end - start if (nWords === 1) { line = words[start].padEnd(maxWidth) } else { let nSpaces = maxWidth - (lineLen - (nWords - 1)) for (let i = start; i < end; i++) { const gap = Math.ceil(nSpaces / (end - i - 1)) line += words[i] + ' '.repeat(gap) nSpaces -= gap } } result.push(line) start = end lineLen = words[start].length } end++ }
 
-      return result
-    };
+  let lastline = words[start] for (let i = start + 1; i < end; i++) { lastline += ' ' + words[i] } result.push(lastline.padEnd(maxWidth))
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+  return result };
+
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Math”: <https://leetcode.com/tag/math> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “Pow(x, n)”: <https://leetcode.com/problems/powx-n> “Valid Perfect Square”: <https://leetcode.com/problems/valid-perfect-square>
 
@@ -4564,7 +4474,7 @@ For the last line of text, it should be left justified and no **extra** space is
 
 Implement `int sqrt(int x)`.
 
-Compute and return the square root of *x*, where *x* is guaranteed to be a non-negative integer.
+Compute and return the square root of _x_, where _x_ is guaranteed to be a non-negative integer.
 
 Since the return type is an integer, the decimal digits are truncated and only the integer part of the result is returned.
 
@@ -4605,7 +4515,7 @@ Binary Search. The square root of x is within \[0…(x+1)/2\].
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string> “Stack”: <https://leetcode.com/tag/stack>
 
@@ -4619,8 +4529,8 @@ For example, **path** = `"/home/"`, =&gt; `"/home"` **path** = `"/a/./b/../../c/
 
 **Corner Cases:**
 
--   Did you consider the case where **path** = `"/../"`? In this case, you should return `"/"`.
--   Another corner case is the path might contain multiple slashes `'/'` together, such as `"/home//foo/"`. In this case, you should ignore redundant slashes and return `"/home/foo"`.
+- Did you consider the case where **path** = `"/../"`? In this case, you should return `"/"`.
+- Another corner case is the path might contain multiple slashes `'/'` together, such as `"/home//foo/"`. In this case, you should ignore redundant slashes and return `"/home/foo"`.
 
 #### Solution: <span id="solution-60"></span>
 
@@ -4679,7 +4589,7 @@ Direct search.
       return '/' + stack.join('/')
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “String”: <https://leetcode.com/tag/string> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “One Edit Distance”: <https://leetcode.com/problems/one-edit-distance> “Delete Operation for Two Strings”: <https://leetcode.com/problems/delete-operation-for-two-strings> “Minimum ASCII Delete Sum for Two Strings”: <https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings>
 
@@ -4687,7 +4597,7 @@ Direct search.
 
 #### Problem: <span id="problem-61"></span>
 
-Given two words *word1* and *word2*, find the minimum number of operations required to convert *word1* to *word2*.
+Given two words _word1_ and _word2_, find the minimum number of operations required to convert _word1_ to _word2_.
 
 You have the following 3 operations permitted on a word:
 
@@ -4766,7 +4676,7 @@ Define `f(i, j)` to be the min edit distance from `word1[0...i)` to `word2[0...j
       return dp[len1][len2]
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Game of Life”: <https://leetcode.com/problems/game-of-life>
 
@@ -4774,7 +4684,7 @@ Define `f(i, j)` to be the min edit distance from `word1[0...i)` to `word2[0...j
 
 #### Problem: <span id="problem-62"></span>
 
-Given a *m* x *n* matrix, if an element is 0, set its entire row and column to 0. Do it [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm).
+Given a _m_ x _n_ matrix, if an element is 0, set its entire row and column to 0. Do it [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm).
 
 **Example 1:**
 
@@ -4808,15 +4718,15 @@ Given a *m* x *n* matrix, if an element is 0, set its entire row and column to 0
 
 **Follow up:**
 
--   A straight forward solution using O(*m\*\*n*) space is probably a bad idea.
--   A simple improvement uses O(*m* + *n*) space, but still not the best solution.
--   Could you devise a constant space solution?
+- A straight forward solution using O(_m\*\*n_) space is probably a bad idea.
+- A simple improvement uses O(_m_ + _n_) space, but still not the best solution.
+- Could you devise a constant space solution?
 
 #### Solution: <span id="solution-62"></span>
 
--   O(*m\*\*n*) space solution: Copy a new matrix.
--   O(*m* + *n*) space solution: Use extra arrays to store rows and columns that need to be set 0.
--   Constant space solutions:
+- O(_m\*\*n_) space solution: Copy a new matrix.
+- O(_m_ + _n_) space solution: Use extra arrays to store rows and columns that need to be set 0.
+- Constant space solutions:
 
 **ONE**
 
@@ -4920,7 +4830,7 @@ Still constant space just a bit slower due to repeatedly setting overlapping `Na
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “Search a 2D Matrix II”: <https://leetcode.com/problems/search-a-2d-matrix-ii>
 
@@ -4928,10 +4838,10 @@ Still constant space just a bit slower due to repeatedly setting overlapping `Na
 
 #### Problem: <span id="problem-63"></span>
 
-Write an efficient algorithm that searches for a value in an *m* x *n* matrix. This matrix has the following properties:
+Write an efficient algorithm that searches for a value in an _m_ x _n_ matrix. This matrix has the following properties:
 
--   Integers in each row are sorted from left to right.
--   The first integer of each row is greater than the last integer of the previous row.
+- Integers in each row are sorted from left to right.
+- The first integer of each row is greater than the last integer of the previous row.
 
 **Example 1:**
 
@@ -4959,7 +4869,7 @@ Write an efficient algorithm that searches for a value in an *m* x *n* matrix. T
 
 **ONE**
 
-Search from top-left to bottom-right. O(*n*).
+Search from top-left to bottom-right. O(_n_).
 
     /**
      * @param {number[][]} matrix
@@ -5024,7 +4934,7 @@ Take the algorithm from [35. Search Insert Position](file:///C:/MY-WEB-DEV/06-DS
       return false
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> “Sort”: <https://leetcode.com/tag/sort> Similar Questions: “Sort List”: <https://leetcode.com/problems/sort-list> “Wiggle Sort”: <https://leetcode.com/problems/wiggle-sort> “Wiggle Sort II”: <https://leetcode.com/problems/wiggle-sort-ii>
 
@@ -5032,7 +4942,7 @@ Take the algorithm from [35. Search Insert Position](file:///C:/MY-WEB-DEV/06-DS
 
 #### Problem: <span id="problem-64"></span>
 
-Given an array with *n* objects colored red, white or blue, sort them **in-place**so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+Given an array with _n_ objects colored red, white or blue, sort them **in-place**so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
 Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
 
@@ -5045,8 +4955,8 @@ Here, we will use the integers 0, 1, and 2 to represent the color red, white, an
 
 **Follow up:**
 
--   A rather straight forward solution is a two-pass algorithm using counting sort. First, iterate the array counting number of 0’s, 1’s, and 2’s, then overwrite array with total number of 0’s, then 1’s and followed by 2’s.
--   Could you come up with a one-pass algorithm using only constant space?
+- A rather straight forward solution is a two-pass algorithm using counting sort. First, iterate the array counting number of 0’s, 1’s, and 2’s, then overwrite array with total number of 0’s, then 1’s and followed by 2’s.
+- Could you come up with a one-pass algorithm using only constant space?
 
 #### Solution: <span id="solution-64"></span>
 
@@ -5082,7 +4992,7 @@ Count the number of sorted `0`s and `2`s so that we know where to swap.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Combination Sum”: <https://leetcode.com/problems/combination-sum> “Permutations”: <https://leetcode.com/problems/permutations>
 
@@ -5090,7 +5000,7 @@ Count the number of sorted `0`s and `2`s so that we know where to swap.
 
 #### Problem: <span id="problem-65"></span>
 
-Given two integers *n* and *k*, return all possible combinations of *k* numbers out of 1 … *n*.
+Given two integers _n_ and _k_, return all possible combinations of _k_ numbers out of 1 … _n_.
 
 **Example:**
 
@@ -5132,7 +5042,7 @@ Basic DFS + Backtracking.
       }
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Backtracking”: <https://leetcode.com/tag/backtracking> “Bit Manipulation”: <https://leetcode.com/tag/bit-manipulation> Similar Questions: “Subsets II”: <https://leetcode.com/problems/subsets-ii> “Generalized Abbreviation”: <https://leetcode.com/problems/generalized-abbreviation> “Letter Case Permutation”: <https://leetcode.com/problems/letter-case-permutation>
 
@@ -5140,7 +5050,7 @@ Basic DFS + Backtracking.
 
 #### Problem: <span id="problem-66"></span>
 
-Given a set of **distinct** integers, *nums*, return all possible subsets (the power set).
+Given a set of **distinct** integers, _nums_, return all possible subsets (the power set).
 
 **Note:** The solution set must not contain duplicate subsets.
 
@@ -5212,7 +5122,7 @@ DFS + Backtracking.
       }
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Word Search II”: <https://leetcode.com/problems/word-search-ii>
 
@@ -5288,7 +5198,7 @@ DFS + Backtracking. Replace the cell with `NaN` before proceeding to the next le
       return false
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Remove Duplicates from Sorted Array”: <https://leetcode.com/problems/remove-duplicates-from-sorted-array>
 
@@ -5296,7 +5206,7 @@ DFS + Backtracking. Replace the cell with `NaN` before proceeding to the next le
 
 #### Problem: <span id="problem-68"></span>
 
-Given a sorted array *nums*, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that duplicates appeared at most *twice* and return the new length.
+Given a sorted array _nums_, remove the duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that duplicates appeared at most _twice_ and return the new length.
 
 Do not allocate extra space for another array, you must do this by **modifying the input array in-place** with O(1) extra memory.
 
@@ -5351,7 +5261,7 @@ Similar to [26. Remove Duplicates from Sorted Array](file:///C:/MY-WEB-DEV/06-DS
       return len
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Binary Search”: <https://leetcode.com/tag/binary-search> Similar Questions: “Search in Rotated Sorted Array”: <https://leetcode.com/problems/search-in-rotated-sorted-array>
 
@@ -5377,8 +5287,8 @@ You are given a target value to search. If found in the array return `true`, oth
 
 **Follow up:**
 
--   This is a follow up problem to [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/), where `nums` may contain duplicates.
--   Would this affect the run-time complexity? How and why?
+- This is a follow up problem to [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/), where `nums` may contain duplicates.
+- Would this affect the run-time complexity? How and why?
 
 #### Solution: <span id="solution-69"></span>
 
@@ -5421,7 +5331,7 @@ See [33. Search in Rotated Sorted Array](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER
       return false
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Remove Duplicates from Sorted List”: <https://leetcode.com/problems/remove-duplicates-from-sorted-list>
 
@@ -5429,7 +5339,7 @@ See [33. Search in Rotated Sorted Array](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER
 
 #### Problem: <span id="problem-70"></span>
 
-Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only *distinct* numbers from the original list.
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only _distinct_ numbers from the original list.
 
 **Example 1:**
 
@@ -5479,7 +5389,7 @@ The list is sorted so we only need `dupVal` to keep the latest duplicate value.
       return prehead.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Remove Duplicates from Sorted List II”: <https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii>
 
@@ -5487,7 +5397,7 @@ The list is sorted so we only need `dupVal` to keep the latest duplicate value.
 
 #### Problem: <span id="problem-71"></span>
 
-Given a sorted linked list, delete all duplicates such that each element appear only *once*.
+Given a sorted linked list, delete all duplicates such that each element appear only _once_.
 
 **Example 1:**
 
@@ -5567,7 +5477,7 @@ Just compare the next node. This is way more faster.
       return head
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Stack”: <https://leetcode.com/tag/stack> Similar Questions: “Maximal Rectangle”: <https://leetcode.com/problems/maximal-rectangle>
 
@@ -5575,13 +5485,13 @@ Just compare the next node. This is way more faster.
 
 #### Problem: <span id="problem-72"></span>
 
-Given *n* non-negative integers representing the histogram’s bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
+Given _n_ non-negative integers representing the histogram’s bar height where the width of each bar is 1, find the area of largest rectangle in the histogram.
 
 ![histogram.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/histogram.png)
 
 Above is a histogram where width of each bar is 1, given height = `[2,1,5,6,2,3]`.
 
-![histogram\_area.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/histogram_area.png)
+![histogram_area.png](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/histogram_area.png)
 
 The largest rectangle is shown in the shaded area, which has area = `10` unit.
 
@@ -5602,7 +5512,7 @@ Notice that if we just loop the bars from left to right, `b1` and `b2` of each b
 
 Observe how `i1` and `i2` changes depending on the height.
 
-To reduce O(*n^2*) to O(*n*), we use a stack to store incremental `b`s. Because `b1` and `b2` are both lower than `b`, whenever we reach a bar that is lower than the top of the stack, we know it’s a `b2`. So stack top is a `b`. Second top is a `b1`. Keep popping the `b` to calculate areas until `b2` is no longer lower than stack top.
+To reduce O(_n^2_) to O(_n_), we use a stack to store incremental `b`s. Because `b1` and `b2` are both lower than `b`, whenever we reach a bar that is lower than the top of the stack, we know it’s a `b2`. So stack top is a `b`. Second top is a `b1`. Keep popping the `b` to calculate areas until `b2` is no longer lower than stack top.
 
     /**
      * @param {number[]} heights
@@ -5622,7 +5532,7 @@ To reduce O(*n^2*) to O(*n*), we use a stack to store incremental `b`s. Because 
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Hash Table”: <https://leetcode.com/tag/hash-table> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> “Stack”: <https://leetcode.com/tag/stack> Similar Questions: “Largest Rectangle in Histogram”: <https://leetcode.com/problems/largest-rectangle-in-histogram> “Maximal Square”: <https://leetcode.com/problems/maximal-square>
 
@@ -5697,15 +5607,15 @@ Pick a pivot point `(row, col)` and assume it is on the base line. The adjoining
 
 So for the rectangle whose bottom pivot is `(row, col)`:
 
--   Define `area(row, col)` to be the area.
--   Define `height(row, col)` to be the height.
--   Define `left(row, col)` to be the `col` value of the bottom-left corner.
--   Define `right(row, col)` to be the `col` value of the bottom-right corner.
+- Define `area(row, col)` to be the area.
+- Define `height(row, col)` to be the height.
+- Define `left(row, col)` to be the `col` value of the bottom-left corner.
+- Define `right(row, col)` to be the `col` value of the bottom-right corner.
 
 Also:
 
--   Define `conLeft(row, col)` to be the `col` value of the leftmost cell of the consecutive `1`s on the left of `(row, col)`.
--   Define `conRight(row, col)` to be the `col` value of the rightmost cell of the consecutive `1`s on the right of `(row, col)`.
+- Define `conLeft(row, col)` to be the `col` value of the leftmost cell of the consecutive `1`s on the left of `(row, col)`.
+- Define `conRight(row, col)` to be the `col` value of the rightmost cell of the consecutive `1`s on the right of `(row, col)`.
 
 With `conLeft` and `conRight` we can know if the rectangle on `(row, col)` shrinks comparing to `(row-1, col)`.
 
@@ -5778,7 +5688,7 @@ We only need to keep the last state. Use dynamic arrays to reduce space complexi
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> “Two Pointers”: <https://leetcode.com/tag/two-pointers>
 
@@ -5786,7 +5696,7 @@ We only need to keep the last state. Use dynamic arrays to reduce space complexi
 
 #### Problem: <span id="problem-74"></span>
 
-Given a linked list and a value *x*, partition it such that all nodes less than *x* come before nodes greater than or equal to *x*.
+Given a linked list and a value _x_, partition it such that all nodes less than _x_ come before nodes greater than or equal to _x_.
 
 You should preserve the original relative order of the nodes in each of the two partitions.
 
@@ -5837,7 +5747,7 @@ Take the second part out as a new list and connect it back.
       return prehead1.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Two Pointers”: <https://leetcode.com/tag/two-pointers> Similar Questions: “Merge Two Sorted Lists”: <https://leetcode.com/problems/merge-two-sorted-lists>
 
@@ -5845,12 +5755,12 @@ Take the second part out as a new list and connect it back.
 
 #### Problem: <span id="problem-75"></span>
 
-Given two sorted integer arrays *nums1* and *nums2*, merge *nums2* into *nums1* as one sorted array.
+Given two sorted integer arrays _nums1_ and _nums2_, merge _nums2_ into _nums1_ as one sorted array.
 
 **Note:**
 
--   The number of elements initialized in *nums1* and *nums2* are *m* and *n* respectively.
--   You may assume that *nums1* has enough space (size that is greater or equal to *m* + *n*) to hold additional elements from *nums2*.
+- The number of elements initialized in _nums1_ and _nums2_ are _m_ and _n_ respectively.
+- You may assume that _nums1_ has enough space (size that is greater or equal to _m_ + _n_) to hold additional elements from _nums2_.
 
 **Example:**
 
@@ -5878,7 +5788,7 @@ Loop backward and keep picking the larger one. `nums1` is guaranteed longer than
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “1-bit and 2-bit Characters”: <https://leetcode.com/problems/1-bit-and-2-bit-characters>
 
@@ -5888,7 +5798,7 @@ Loop backward and keep picking the larger one. `nums1` is guaranteed longer than
 
 The gray code is a binary numeral system where two successive values differ in only one bit.
 
-Given a non-negative integer *n* representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.
+Given a non-negative integer _n_ representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.
 
 **Example 1:**
 
@@ -5942,7 +5852,7 @@ Use bitwise shift to speed up the calculation. It is unlikely to overflow since 
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “Subsets”: <https://leetcode.com/problems/subsets>
 
@@ -5974,29 +5884,14 @@ See [78. Subsets](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTEN
 1.  Sort input to group duplicates.
 2.  Only consider each duplicate once, that is, when it is at the first slot.
 
-    /**
-     * @param {number[]} nums
-     * @return {number[][]}
-     */
-    let subsetsWithDup = function(nums) {
-      const result = []
-      _subsetsWithDup(nums.sort(), 0, [], result)
-      return result
-    };
+    /\*\*
 
-    function _subsetsWithDup(nums, start, path, result) {
-      result.push(path.slice())
-      for (let i = start; i < nums.length; i++) {
-        if(i > start && nums[i] === nums[i-1]) {
-          continue
-        }
-        path.push(nums[i])
-        _subsetsWithDup(nums, i + 1, path, result)
-        path.pop()
-      }
-    }
+    - @param {number[]} nums
+    - @return {number[][]} \*/ let subsetsWithDup = function(nums) { const result = [] \_subsetsWithDup(nums.sort(), 0, [], result) return result };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+    function \_subsetsWithDup(nums, start, path, result) { result.push(path.slice()) for (let i = start; i < nums.length; i++) { if(i > start && nums[i] === nums[i-1]) { continue } path.push(nums[i]) \_subsetsWithDup(nums, i + 1, path, result) path.pop() } }
+
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Decode Ways II”: <https://leetcode.com/problems/decode-ways-ii>
 
@@ -6063,7 +5958,7 @@ Only need to store the last two states. Init `f(-1) = 1` for easy calculation.
       return dp
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Linked List”: <https://leetcode.com/tag/linked-list> Similar Questions: “Reverse Linked List”: <https://leetcode.com/problems/reverse-linked-list>
 
@@ -6071,9 +5966,9 @@ Only need to store the last two states. Init `f(-1) = 1` for easy calculation.
 
 #### Problem: <span id="problem-79"></span>
 
-Reverse a linked list from position *m* to *n*. Do it in one-pass.
+Reverse a linked list from position _m_ to _n_. Do it in one-pass.
 
-\*\*Note:\*\*1 ≤ *m* ≤ *n* ≤ length of list.
+\*\*Note:\*\*1 ≤ _m_ ≤ _n_ ≤ length of list.
 
 **Example:**
 
@@ -6125,7 +6020,7 @@ Break the list into 3 parts.
       return prehead.next
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “String”: <https://leetcode.com/tag/string> “Backtracking”: <https://leetcode.com/tag/backtracking> Similar Questions: “IP to CIDR”: <https://leetcode.com/problems/ip-to-cidr>
 
@@ -6182,7 +6077,7 @@ Backtracking. Note that leading `'0'` is not allowed except just `'0'`.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “String”: <https://leetcode.com/tag/string> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming>
 
@@ -6190,7 +6085,7 @@ Backtracking. Note that leading `'0'` is not allowed except just `'0'`.
 
 #### Problem: <span id="problem-81"></span>
 
-Given *s1*, *s2*, *s3*, find whether *s3* is formed by the interleaving of *s1* and *s2*.
+Given _s1_, _s2_, _s3_, find whether _s3_ is formed by the interleaving of _s1_ and _s2_.
 
 **Example 1:**
 
@@ -6235,7 +6130,7 @@ Dynamic array can be used.
       return dp[len2]
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search>
 
@@ -6298,7 +6193,7 @@ The code should be self-evident.
         p !== null && q !== null && p.val === q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search>
 
@@ -6402,7 +6297,7 @@ Level order traversal. Check symmetry before entering the next level.
       return true
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Binary Tree Zigzag Level Order Traversal”: <https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal> “Binary Tree Level Order Traversal II”: <https://leetcode.com/problems/binary-tree-level-order-traversal-ii> “Minimum Depth of Binary Tree”: <https://leetcode.com/problems/minimum-depth-of-binary-tree> “Binary Tree Vertical Order Traversal”: <https://leetcode.com/problems/binary-tree-vertical-order-traversal> “Average of Levels in Binary Tree”: <https://leetcode.com/problems/average-of-levels-in-binary-tree> “N-ary Tree Level Order Traversal”: <https://leetcode.com/problems/n-ary-tree-level-order-traversal>
 
@@ -6462,7 +6357,7 @@ The code should be self-evident.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Stack”: <https://leetcode.com/tag/stack> “Tree”: <https://leetcode.com/tag/tree> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Binary Tree Level Order Traversal”: <https://leetcode.com/problems/binary-tree-level-order-traversal>
 
@@ -6527,7 +6422,7 @@ Reverse the level when pushing to the reuslt.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Balanced Binary Tree”: <https://leetcode.com/problems/balanced-binary-tree> “Minimum Depth of Binary Tree”: <https://leetcode.com/problems/minimum-depth-of-binary-tree> “Maximum Depth of N-ary Tree”: <https://leetcode.com/problems/maximum-depth-of-n-ary-tree>
 
@@ -6574,7 +6469,7 @@ The code should be self-evident.
         : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Construct Binary Tree from Inorder and Postorder Traversal”: <https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal>
 
@@ -6641,7 +6536,7 @@ Repeat the process on subtrees.
       return node
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Construct Binary Tree from Preorder and Inorder Traversal”: <https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal>
 
@@ -6708,7 +6603,7 @@ Repeat the process on subtrees.
       return node
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Binary Tree Level Order Traversal”: <https://leetcode.com/problems/binary-tree-level-order-traversal> “Average of Levels in Binary Tree”: <https://leetcode.com/problems/average-of-levels-in-binary-tree>
 
@@ -6768,7 +6663,7 @@ See [102. Binary Tree Level Order Traversal](file:///C:/MY-WEB-DEV/06-DS-ALGO-OU
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Maximum Depth of Binary Tree”: <https://leetcode.com/problems/maximum-depth-of-binary-tree>
 
@@ -6780,7 +6675,7 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as:
 
-a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
+a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
 
 **Example 1:**
 
@@ -6836,7 +6731,7 @@ Get the depth of subtrees and compare. Prune the DFS tree by returning `-1`.
       return Math.abs(leftDepth - rightDepth) <= 1 ? Math.max(leftDepth, rightDepth) + 1 : -1
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Binary Tree Level Order Traversal”: <https://leetcode.com/problems/binary-tree-level-order-traversal> “Maximum Depth of Binary Tree”: <https://leetcode.com/problems/maximum-depth-of-binary-tree>
 
@@ -6888,7 +6783,7 @@ Ignore `null` children.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Path Sum II”: <https://leetcode.com/problems/path-sum-ii> “Binary Tree Maximum Path Sum”: <https://leetcode.com/problems/binary-tree-maximum-path-sum> “Sum Root to Leaf Numbers”: <https://leetcode.com/problems/sum-root-to-leaf-numbers> “Path Sum III”: <https://leetcode.com/problems/path-sum-iii> “Path Sum IV”: <https://leetcode.com/problems/path-sum-iv>
 
@@ -6936,7 +6831,7 @@ Note that node value could be negative so pruning can not be performed.
       return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Path Sum”: <https://leetcode.com/problems/path-sum> “Binary Tree Paths”: <https://leetcode.com/problems/binary-tree-paths> “Path Sum III”: <https://leetcode.com/problems/path-sum-iii> “Path Sum IV”: <https://leetcode.com/problems/path-sum-iv>
 
@@ -7001,7 +6896,7 @@ Simple backtracking.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Flatten a Multilevel Doubly Linked List”: <https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list>
 
@@ -7071,7 +6966,7 @@ Return the leaf node of a flattened subtree for concatenation.
       return rightLeaf || leftLeaf
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “String”: <https://leetcode.com/tag/string> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming>
 
@@ -7151,7 +7046,7 @@ Dynamic array can be used.
       return dp[lent]
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Populating Next Right Pointers in Each Node II”: <https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii> “Binary Tree Right Side View”: <https://leetcode.com/problems/binary-tree-right-side-view>
 
@@ -7173,9 +7068,9 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
--   You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may assume that it is a perfect binary tree (ie, all leaves are at the same level, and every parent has two children).
 
 **Example:**
 
@@ -7203,34 +7098,21 @@ Recursive.
 
 For every `node`:
 
--   Left child: points to `node.right`.
--   Right child: points to `node.next.left` if `node.next` exists.
+- Left child: points to `node.right`.
+- Right child: points to `node.next.left` if `node.next` exists.
 
-    /**
-     * Definition for binary tree with next pointer.
-     * function TreeLinkNode(val) {
-     *     this.val = val;
-     *     this.left = this.right = this.next = null;
-     * }
-     */
+  /\*\*
 
-    /**
-     * @param {TreeLinkNode} root
-     * @return {void} Do not return anything, modify tree in-place instead.
-     */
-    let connect = function(root) {
-      if (!root) { return }
-      if (root.left !== null) {
-        root.left.next = root.right
-        connect(root.left)
-      }
-      if (root.right !== null) {
-        if (root.next !== null) {
-          root.right.next = root.next.left
-        }
-        connect(root.right)
-      }
-    };
+  - Definition for binary tree with next pointer.
+  - function TreeLinkNode(val) {
+  -     this.val = val;
+  -     this.left = this.right = this.next = null;
+  - } \*/
+
+  /\*\*
+
+  - @param {TreeLinkNode} root
+  - @return {void} Do not return anything, modify tree in-place instead. \*/ let connect = function(root) { if (!root) { return } if (root.left !== null) { root.left.next = root.right connect(root.left) } if (root.right !== null) { if (root.next !== null) { root.right.next = root.next.left } connect(root.right) } };
 
 **TWO**
 
@@ -7266,7 +7148,7 @@ Level order traversal.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Populating Next Right Pointers in Each Node”: <https://leetcode.com/problems/populating-next-right-pointers-in-each-node>
 
@@ -7288,8 +7170,8 @@ Initially, all next pointers are set to `NULL`.
 
 **Note:**
 
--   You may only use constant extra space.
--   Recursive approach is fine, implicit stack space does not count as extra space for this problem.
+- You may only use constant extra space.
+- Recursive approach is fine, implicit stack space does not count as extra space for this problem.
 
 **Example:**
 
@@ -7388,7 +7270,7 @@ Level order traversal. Exact same as [116. Populating Next Right Pointers in Eac
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Pascal’s Triangle II”: <https://leetcode.com/problems/pascals-triangle-ii>
 
@@ -7396,7 +7278,7 @@ Level order traversal. Exact same as [116. Populating Next Right Pointers in Eac
 
 #### Problem: <span id="problem-98"></span>
 
-Given a non-negative integer *numRows*, generate the first *numRows* of Pascal’s triangle.
+Given a non-negative integer _numRows_, generate the first _numRows_ of Pascal’s triangle.
 
 ![PascalTriangleAnimated2.gif](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/PascalTriangleAnimated2.gif)
 
@@ -7439,7 +7321,7 @@ Dynamic Programming 101.
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> Similar Questions: “Pascal’s Triangle”: <https://leetcode.com/problems/pascals-triangle>
 
@@ -7447,7 +7329,7 @@ Dynamic Programming 101.
 
 #### Problem: <span id="problem-99"></span>
 
-Given a non-negative index *k* where *k* ≤ 33, return the \_k\_th index row of the Pascal’s triangle.
+Given a non-negative index _k_ where _k_ ≤ 33, return the \_k_th index row of the Pascal’s triangle.
 
 Note that the row index starts from 0.
 
@@ -7462,7 +7344,7 @@ In Pascal’s triangle, each number is the sum of the two numbers directly above
 
 **Follow up:**
 
-Could you optimize your algorithm to use only *O*(*k*) extra space?
+Could you optimize your algorithm to use only _O_(_k_) extra space?
 
 #### Solution: <span id="solution-99"></span>
 
@@ -7488,7 +7370,7 @@ State `(i, j)` depends on `(i-1, j)` and `(i-1, j-1)`. So to access `(i-1, j-1)`
       return row
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Array”: <https://leetcode.com/tag/array> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming>
 
@@ -7511,7 +7393,7 @@ The minimum path sum from top to bottom is `11` (i.e., **2** + **3** + **5** + *
 
 **Note:**
 
-Bonus point if you are able to do this using only *O*(*n*) extra space, where *n* is the total number of rows in the triangle.
+Bonus point if you are able to do this using only _O_(_n_) extra space, where _n_ is the total number of rows in the triangle.
 
 #### Solution: <span id="solution-100"></span>
 
@@ -7541,7 +7423,7 @@ Dynamic array can be used.
       return Math.min(...dp)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Maximum Subarray”: <https://leetcode.com/problems/maximum-subarray> “Best Time to Buy and Sell Stock II”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii> “Best Time to Buy and Sell Stock III”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii> “Best Time to Buy and Sell Stock IV”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv> “Best Time to Buy and Sell Stock with Cooldown”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown>
 
@@ -7549,7 +7431,7 @@ Dynamic array can be used.
 
 #### Problem: <span id="problem-101"></span>
 
-Say you have an array for which the *i\_th element is the price of a given stock on day \_i*.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
 If you were only permitted to complete at most one transaction (i.e., buy one and sell one share of the stock), design an algorithm to find the maximum profit.
 
@@ -7592,7 +7474,7 @@ Because `price[j]` is lower that the base, using `j` as new base is guaranteed t
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Array”: <https://leetcode.com/tag/array> “Greedy”: <https://leetcode.com/tag/greedy> Similar Questions: “Best Time to Buy and Sell Stock”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock> “Best Time to Buy and Sell Stock III”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii> “Best Time to Buy and Sell Stock IV”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv> “Best Time to Buy and Sell Stock with Cooldown”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown> “Best Time to Buy and Sell Stock with Transaction Fee”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee>
 
@@ -7600,7 +7482,7 @@ Because `price[j]` is lower that the base, using `j` as new base is guaranteed t
 
 #### Problem: <span id="problem-102"></span>
 
-Say you have an array for which the *i\_th element is the price of a given stock on day \_i*.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
 
@@ -7645,7 +7527,7 @@ Sell immediately after the price drops. Or in other perspective, it is the sum o
       return max
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Dynamic Programming”: <https://leetcode.com/tag/dynamic-programming> Similar Questions: “Best Time to Buy and Sell Stock”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock> “Best Time to Buy and Sell Stock II”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii> “Best Time to Buy and Sell Stock IV”: <https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv> “Maximum Sum of 3 Non-Overlapping Subarrays”: <https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays>
 
@@ -7653,9 +7535,9 @@ Sell immediately after the price drops. Or in other perspective, it is the sum o
 
 #### Problem: <span id="problem-103"></span>
 
-Say you have an array for which the *i\_th element is the price of a given stock on day \_i*.
+Say you have an array for which the _i_th element is the price of a given stock on day \_i_.
 
-Design an algorithm to find the maximum profit. You may complete at most *two* transactions.
+Design an algorithm to find the maximum profit. You may complete at most _two_ transactions.
 
 \*\*Note:\*\*You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
@@ -7682,7 +7564,7 @@ Design an algorithm to find the maximum profit. You may complete at most *two* t
 
 #### Solution: <span id="solution-103"></span>
 
-Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won’t be any intersection. We may complete at most *two* transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
+Multiple transactions may not be engaged in at the same time. That means if we view the days that involed in the same transaction as a group, there won’t be any intersection. We may complete at most _two_ transactions, so divide the days into two groups, `[0...k]` and `[k...n-1]`. Notice `k` exists in both groups because technically we can sell out then immediately buy in at the same day.
 
 Define `p1(i)` to be the max profit of day `[0...i]`. This is just like the problem of [121. Best Time to Buy and Sell Stock](file:///C:/MY-WEB-DEV/06-DS-ALGO-OUTTER/06-DS-ALGO/main/CONTENT/DS-n-Algos/SANDBOX/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.md).
 
@@ -7723,7 +7605,7 @@ Define `f(k)` to be `p1(k) + p2(k)`. We need to get `max( f(0), ..., f(n-1) )`.
       return Math.max(...dp)
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Path Sum”: <https://leetcode.com/problems/path-sum> “Sum Root to Leaf Numbers”: <https://leetcode.com/problems/sum-root-to-leaf-numbers> “Path Sum IV”: <https://leetcode.com/problems/path-sum-iv> “Longest Univalue Path”: <https://leetcode.com/problems/longest-univalue-path>
 
@@ -7761,14 +7643,14 @@ For this problem, a path is defined as any sequence of nodes from some starting 
 
 For every `node`, there are six possible ways to get the max path sum:
 
--   With `node.val`
-    1.  `node.val` plus the max sum of a path that ends with `node.left`.
-    2.  `node.val` plus the max sum of a path that starts with `node.right`.
-    3.  `node.val` plus the max sum of both paths.
-    4.  Just `node.val` (the max sum of both paths are negative).
--   Without`node.val` (disconnected)
-    1.  The max-sum path is somewhere under the `node.left` subtree.
-    2.  The max-sum path is somewhere under the `node.right` subtree.
+- With `node.val`
+  1.  `node.val` plus the max sum of a path that ends with `node.left`.
+  2.  `node.val` plus the max sum of a path that starts with `node.right`.
+  3.  `node.val` plus the max sum of both paths.
+  4.  Just `node.val` (the max sum of both paths are negative).
+- Without`node.val` (disconnected)
+  1.  The max-sum path is somewhere under the `node.left` subtree.
+  2.  The max-sum path is somewhere under the `node.right` subtree.
 
 There are two ways to implement this.
 
@@ -7844,7 +7726,7 @@ Just return the later (max sum of a path that ends with `root`). Maintain a glob
       return localMax
     }
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Easy Related Topics: “Two Pointers”: <https://leetcode.com/tag/two-pointers> “String”: <https://leetcode.com/tag/string> Similar Questions: “Palindrome Linked List”: <https://leetcode.com/problems/palindrome-linked-list> “Valid Palindrome II”: <https://leetcode.com/problems/valid-palindrome-ii>
 
@@ -7929,7 +7811,7 @@ Compare the char codes.
       return true
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “String”: <https://leetcode.com/tag/string> “Backtracking”: <https://leetcode.com/tag/backtracking> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Word Ladder”: <https://leetcode.com/problems/word-ladder>
 
@@ -7937,18 +7819,18 @@ Compare the char codes.
 
 #### Problem: <span id="problem-106"></span>
 
-Given two words (*beginWord* and *endWord*), and a dictionary’s word list, find all shortest transformation sequence(s) from *beginWord* to *endWord*, such that:
+Given two words (_beginWord_ and _endWord_), and a dictionary’s word list, find all shortest transformation sequence(s) from _beginWord_ to _endWord_, such that:
 
 1.  Only one letter can be changed at a time
-2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
--   Return an empty list if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume *beginWord* and *endWord* are non-empty and are not the same.
+- Return an empty list if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -8040,7 +7922,7 @@ The items in the queue are not just words now. Parent nodes are also kept so tha
       return result
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> Similar Questions: “Word Ladder II”: <https://leetcode.com/problems/word-ladder-ii> “Minimum Genetic Mutation”: <https://leetcode.com/problems/minimum-genetic-mutation>
 
@@ -8048,18 +7930,18 @@ The items in the queue are not just words now. Parent nodes are also kept so tha
 
 #### Problem: <span id="problem-107"></span>
 
-Given two words (*beginWord* and *endWord*), and a dictionary’s word list, find the length of shortest transformation sequence from *beginWord* to *endWord*, such that:
+Given two words (_beginWord_ and _endWord_), and a dictionary’s word list, find the length of shortest transformation sequence from _beginWord_ to _endWord_, such that:
 
 1.  Only one letter can be changed at a time.
-2.  Each transformed word must exist in the word list. Note that *beginWord* is *not* a transformed word.
+2.  Each transformed word must exist in the word list. Note that _beginWord_ is _not_ a transformed word.
 
 **Note:**
 
--   Return 0 if there is no such transformation sequence.
--   All words have the same length.
--   All words contain only lowercase alphabetic characters.
--   You may assume no duplicates in the word list.
--   You may assume *beginWord* and *endWord* are non-empty and are not the same.
+- Return 0 if there is no such transformation sequence.
+- All words have the same length.
+- All words contain only lowercase alphabetic characters.
+- You may assume no duplicates in the word list.
+- You may assume _beginWord_ and _endWord_ are non-empty and are not the same.
 
 **Example 1:**
 
@@ -8138,7 +8020,7 @@ To find all the next words, instead of filtering the `wordList`, enumerate all 2
       return 0
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Hard Related Topics: “Array”: <https://leetcode.com/tag/array> “Union Find”: <https://leetcode.com/tag/union-find> Similar Questions: “Binary Tree Longest Consecutive Sequence”: <https://leetcode.com/problems/binary-tree-longest-consecutive-sequence>
 
@@ -8148,7 +8030,7 @@ To find all the next words, instead of filtering the `wordList`, enumerate all 2
 
 Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
 
-Your algorithm should run in O(*n*) complexity.
+Your algorithm should run in O(_n_) complexity.
 
 **Example:**
 
@@ -8184,7 +8066,7 @@ Build a Set from the list. Pick a number, find all it’s adjacent numbers that 
       return maxCount
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Tree”: <https://leetcode.com/tag/tree> “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> Similar Questions: “Path Sum”: <https://leetcode.com/problems/path-sum> “Binary Tree Maximum Path Sum”: <https://leetcode.com/problems/binary-tree-maximum-path-sum>
 
@@ -8248,7 +8130,7 @@ To write a clean solution for this promblem, use `0` as indicator of leaf node. 
       return sumNumbers(root.left, sum) + sumNumbers(root.right, sum) || sum
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> “Union Find”: <https://leetcode.com/tag/union-find> Similar Questions: “Number of Islands”: <https://leetcode.com/problems/number-of-islands> “Walls and Gates”: <https://leetcode.com/problems/walls-and-gates>
 
@@ -8355,7 +8237,7 @@ So both BFS and DFS are good. I prefer BFS when pruning is not needed in favor o
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 ### Difficulty: Medium Related Topics: “Depth-first Search”: <https://leetcode.com/tag/depth-first-search> “Breadth-first Search”: <https://leetcode.com/tag/breadth-first-search> “Graph”: <https://leetcode.com/tag/graph> Similar Questions: “Copy List with Random Pointer”: <https://leetcode.com/problems/copy-list-with-random-pointer>
 
@@ -8421,7 +8303,7 @@ DFS. Cache the visited node before entering the next recursion.
       }
     };
 
-*Template generated via* [*Leetmark*](https://github.com/crimx/crx-leetmark)*.*
+_Template generated via_ [_Leetmark_](https://github.com/crimx/crx-leetmark)_._
 
 alt text
 
@@ -8484,8 +8366,7 @@ alt text
       return  maxSum > 0 ? Math.max(maxSum, sum - minSum) : maxSum;
     };
 
-Balanced Binary Tree - LeetCode <span id="balanced-binary-tree-leetcode"></span>
---------------------------------------------------------------------------------
+## Balanced Binary Tree - LeetCode <span id="balanced-binary-tree-leetcode"></span>
 
 > Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.
 
@@ -8493,7 +8374,7 @@ Given a binary tree, determine if it is height-balanced.
 
 For this problem, a height-balanced binary tree is defined as:
 
-> a binary tree in which the left and right subtrees of *every* node differ in height by no more than 1.
+> a binary tree in which the left and right subtrees of _every_ node differ in height by no more than 1.
 
 **Example 1:**
 
@@ -8513,8 +8394,8 @@ For this problem, a height-balanced binary tree is defined as:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 5000]`.
--   `-104 <= Node.val <= 104`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-104 <= Node.val <= 104`
 
 [Source](https://leetcode.com/problems/balanced-binary-tree/)\# Convert Sorted Array to Binary Search Tree
 
@@ -8522,7 +8403,7 @@ For this problem, a height-balanced binary tree is defined as:
 
 Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 
-For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of *every* node never differ by more than 1.
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of _every_ node never differ by more than 1.
 
 **Example:**
 
@@ -8564,11 +8445,11 @@ Basically, the deletion can be divided into two stages:
 
 **Constraints:**
 
--   The number of nodes in the tree is in the range `[0, 104]`.
--   `-105 <= Node.val <= 105`
--   Each node has a **unique** value.
--   `root` is a valid binary search tree.
--   `-105 <= key <= 105`
+- The number of nodes in the tree is in the range `[0, 104]`.
+- `-105 <= Node.val <= 105`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-105 <= key <= 105`
 
 [Source](https://leetcode.com/problems/delete-node-in-a-bst/)![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-0.jpg) ![alt text](http://127.0.0.1:5500/_RESOURCES/_DS-n-Algos/_MY_OPRIGINAL_DS/SANDBOX/leetMD/completeLEETCODE_files/meeting-room-ii-1.jpg)
 

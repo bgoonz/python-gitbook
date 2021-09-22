@@ -1,84 +1,211 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>heap-examples</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-  </style>
-  <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-  </style>
-</head>
-<body>
-<h1 id="heap-examples">Heap Examples</h1>
-<p>{% tabs %} {% tab title=“Python” %}</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>heap-examples</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="heap-examples">Heap Examples</h1>
+    <p>{% tabs %} {% tab title=“Python” %}</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="co">&quot;&quot;&quot;</span></a>
 <a class="sourceLine" id="cb1-2" title="2"><span class="co">Binary Heap. A min heap is a complete binary tree where each node is smaller than</span></a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="co">its children. The root, therefore, is the minimum element in the tree. The min</span></a>
 <a class="sourceLine" id="cb1-4" title="4"><span class="co">heap uses an array to represent the data and operation. For example a min heap:</span></a>
@@ -426,95 +553,251 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-346" title="346">            queue.append(num)</a>
 <a class="sourceLine" id="cb1-347" title="347">    res.append(<span class="bu">max</span>(queue))</a>
 <a class="sourceLine" id="cb1-348" title="348">    <span class="cf">return</span> res</a>
-<a class="sourceLine" id="cb1-349" title="349"></a></code></pre></div>
-<p>{% endtab %}</p>
-<p>{% tab title=“Heaps Explained” %}</p>
-<p>A binary heap is a special data structure that resembles a binary tree. It differs in the sense that the root of any subtree should be the smallest or the largest element.</p>
-<p>There are two main types of heaps.</p>
-<ul>
-<li><strong>Minheap</strong> – In a minheap, the root of every subtree is the smallest element.</li>
-<li><strong>Maxheap</strong> – In a maxheap, the root of every subtree is the largest element.</li>
-</ul>
-<p>In this article, let’s take a look at heaps and dive into programming heaps in Python.</p>
-<p>For more background on the different types of data structures in Python, check out the following articles:</p>
-<ul>
-<li><a href="https://www.section.io/data-structures-python-part-1/">Introduction to Data Structures</a></li>
-<li><a href="https://www.section.io/list-data-structure-python/">List</a></li>
-<li><a href="https://www.section.io/stack-data-structure-python/">Stack</a></li>
-<li><a href="https://www.section.io/queue-data-structure-python/">Queue</a></li>
-<li><a href="https://www.section.io/linked-list-data-structure-python/">Linked Lists</a></li>
-<li><a href="https://www.section.io/binary-tree-data-structure-python/">Binary Trees</a></li>
-</ul>
-<p><em>Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)</em></p>
-<h4 id="table-of-contents">Table of Contents <a id="table-of-contents"></a></h4>
-<ul>
-<li><a href="https://www.section.io/engineering-education/heap-data-structure-python/#heaps:-introduction">Heaps: Introduction</a></li>
-<li><a href="https://www.section.io/engineering-education/heap-data-structure-python/#applications-of-heaps">Applications of Heaps</a></li>
-<li><a href="https://www.section.io/engineering-education/heap-data-structure-python/#implementing-a-heap">Implementing a Heap</a></li>
-<li><a href="https://www.section.io/engineering-education/heap-data-structure-python/#practice-heaps">Practice Heaps</a></li>
-<li><a href="https://www.section.io/engineering-education/heap-data-structure-python/#conclusion">Conclusion</a></li>
-</ul>
-<h4 id="heaps-introduction">Heaps: Introduction <a id="heaps-introduction"></a></h4>
-<p>Heaps are complete binary trees. Complete binary trees satisfy the following conditions:</p>
-<ul>
-<li>All levels are filled, except the last.</li>
-<li>All the nodes are as far left as possible.</li>
-</ul>
-<figure>
-<img src="https://www.section.io/engineering-education/heap-data-structure-python/complete-binary-tree.png" alt="Complete Binary Tree" /><figcaption>Complete Binary Tree</figcaption>
-</figure>
-<p><a href="https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html"><em>Figure: Complete Binary Tree</em></a></p>
-<p>Heaps satisfy the heap property. This means that the root of every subtree should be the greatest or smallest element in the subtree, recursively.</p>
-<h4 id="applications-of-heaps">Applications of Heaps <a id="applications-of-heaps"></a></h4>
-<ul>
-<li>Priority Queues can be implemented using heaps. The root of a heap always contains the maximum or the minimum value, based on the heap type. Therefore, a min-priority queue is implemented using a minheap. A max-priority queue is implemented using a maxheap. The element with the highest priority can be retrieved in O(1) time.</li>
-<li>Statistics – If we want to get ordered statistics, heaps serve as a great choice. If we want the kth smallest or largest element, we can pop the heap k times to retrieve them.</li>
-<li>Heaps are used in implementing various graph algorithms like <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra’s algorithm</a> and <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm">Prim’s algorithm</a>.</li>
-</ul>
-<h4 id="implementing-a-heap">Implementing a Heap <a id="implementing-a-heap"></a></h4>
-<p><strong>Heap Operations</strong></p>
-<p>A heap has the following methods:</p>
-<ul>
-<li><strong><code>getMax()</code></strong>
-<ul>
-<li>This operation returns the root of the maxheap.</li>
-<li>Time Complexity - O(1).</li>
-</ul></li>
-<li><strong><code>insert(k)</code></strong>
-<ul>
-<li>This operation inserts the key <strong>k</strong> into the heap.</li>
-<li>Then it rearranges the heap to restore the heap property.</li>
-<li>Time Complexity - O(log n).</li>
-</ul></li>
-<li><strong><code>heapify()</code></strong>
-<ul>
-<li>This operation restores the heap property by rearranging the heap.</li>
-<li>Time complexity - O(log n).</li>
-</ul></li>
-<li><strong><code>printHeap()</code></strong>
-<ul>
-<li>Prints the heap’s level order traversal.</li>
-</ul></li>
-</ul>
-<p><strong>Maxheap using List</strong></p>
-<p>We are going to do the list implementation of a heap. In this, the heap’s level-order traversal would be stored as an array/list.</p>
-<figure>
-<img src="https://www.section.io/engineering-education/heap-data-structure-python/level-order-traversal.png" alt="Level Order Traversal" /><figcaption>Level Order Traversal</figcaption>
-</figure>
-<p><a href="https://qph.fs.quoracdn.net/main-qimg-0ddd0cbca44f70d7845cc2caba5a0853"><em>Figure: Level-Order Traversal</em></a></p>
-<p><em>Note - Level-Order Traversal is a recursive traversal where the root is processed first, followed by the children of the root. This is followed by the grandchildren of the root until all the nodes are processed. In the diagram above, the root node is processed first, followed by the left child, right child and so on. The final level order traversal would be: 10 4 8 50 24 5 12 18. For an overview of what a level order traversal is, check out</em> <a href="https://www.quora.com/What-is-level-order-traversal-in-a-binary-tree"><em>this</em></a> <em>Quora page.</em></p>
-<p>In the array representation of a heap, for an element in array index i,</p>
-<ul>
-<li>The Parent Node would be at position floor((i-1)/2).</li>
-<li>The Left Child would be at position 2*i + 1.</li>
-<li>The Right Child would be at position 2*i + 2.</li>
-</ul>
-<p>Let us first define the Heap class.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> MaxHeap:</a>
+<a class="sourceLine" id="cb1-349" title="349"></a></code></pre>
+    </div>
+    <p>{% endtab %}</p>
+    <p>{% tab title=“Heaps Explained” %}</p>
+    <p>
+      A binary heap is a special data structure that resembles a binary tree. It
+      differs in the sense that the root of any subtree should be the smallest
+      or the largest element.
+    </p>
+    <p>There are two main types of heaps.</p>
+    <ul>
+      <li>
+        <strong>Minheap</strong> – In a minheap, the root of every subtree is
+        the smallest element.
+      </li>
+      <li>
+        <strong>Maxheap</strong> – In a maxheap, the root of every subtree is
+        the largest element.
+      </li>
+    </ul>
+    <p>
+      In this article, let’s take a look at heaps and dive into programming
+      heaps in Python.
+    </p>
+    <p>
+      For more background on the different types of data structures in Python,
+      check out the following articles:
+    </p>
+    <ul>
+      <li>
+        <a href="https://www.section.io/data-structures-python-part-1/"
+          >Introduction to Data Structures</a
+        >
+      </li>
+      <li>
+        <a href="https://www.section.io/list-data-structure-python/">List</a>
+      </li>
+      <li>
+        <a href="https://www.section.io/stack-data-structure-python/">Stack</a>
+      </li>
+      <li>
+        <a href="https://www.section.io/queue-data-structure-python/">Queue</a>
+      </li>
+      <li>
+        <a href="https://www.section.io/linked-list-data-structure-python/"
+          >Linked Lists</a
+        >
+      </li>
+      <li>
+        <a href="https://www.section.io/binary-tree-data-structure-python/"
+          >Binary Trees</a
+        >
+      </li>
+    </ul>
+    <p>
+      <em
+        >Note: Prerequisites – Make sure you have basic Python knowledge before
+        diving into this article. It also might be a good idea to check out some
+        linear data structures. (links are given above)</em
+      >
+    </p>
+    <h4 id="table-of-contents">
+      Table of Contents <a id="table-of-contents"></a>
+    </h4>
+    <ul>
+      <li>
+        <a
+          href="https://www.section.io/engineering-education/heap-data-structure-python/#heaps:-introduction"
+          >Heaps: Introduction</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.section.io/engineering-education/heap-data-structure-python/#applications-of-heaps"
+          >Applications of Heaps</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.section.io/engineering-education/heap-data-structure-python/#implementing-a-heap"
+          >Implementing a Heap</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.section.io/engineering-education/heap-data-structure-python/#practice-heaps"
+          >Practice Heaps</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.section.io/engineering-education/heap-data-structure-python/#conclusion"
+          >Conclusion</a
+        >
+      </li>
+    </ul>
+    <h4 id="heaps-introduction">
+      Heaps: Introduction <a id="heaps-introduction"></a>
+    </h4>
+    <p>
+      Heaps are complete binary trees. Complete binary trees satisfy the
+      following conditions:
+    </p>
+    <ul>
+      <li>All levels are filled, except the last.</li>
+      <li>All the nodes are as far left as possible.</li>
+    </ul>
+    <figure>
+      <img
+        src="https://www.section.io/engineering-education/heap-data-structure-python/complete-binary-tree.png"
+        alt="Complete Binary Tree"
+      />
+      <figcaption>Complete Binary Tree</figcaption>
+    </figure>
+    <p>
+      <a
+        href="https://www.andrew.cmu.edu/course/15-121/lectures/Trees/trees.html"
+        ><em>Figure: Complete Binary Tree</em></a
+      >
+    </p>
+    <p>
+      Heaps satisfy the heap property. This means that the root of every subtree
+      should be the greatest or smallest element in the subtree, recursively.
+    </p>
+    <h4 id="applications-of-heaps">
+      Applications of Heaps <a id="applications-of-heaps"></a>
+    </h4>
+    <ul>
+      <li>
+        Priority Queues can be implemented using heaps. The root of a heap
+        always contains the maximum or the minimum value, based on the heap
+        type. Therefore, a min-priority queue is implemented using a minheap. A
+        max-priority queue is implemented using a maxheap. The element with the
+        highest priority can be retrieved in O(1) time.
+      </li>
+      <li>
+        Statistics – If we want to get ordered statistics, heaps serve as a
+        great choice. If we want the kth smallest or largest element, we can pop
+        the heap k times to retrieve them.
+      </li>
+      <li>
+        Heaps are used in implementing various graph algorithms like
+        <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"
+          >Dijkstra’s algorithm</a
+        >
+        and
+        <a href="https://en.wikipedia.org/wiki/Prim%27s_algorithm"
+          >Prim’s algorithm</a
+        >.
+      </li>
+    </ul>
+    <h4 id="implementing-a-heap">
+      Implementing a Heap <a id="implementing-a-heap"></a>
+    </h4>
+    <p><strong>Heap Operations</strong></p>
+    <p>A heap has the following methods:</p>
+    <ul>
+      <li>
+        <strong><code>getMax()</code></strong>
+        <ul>
+          <li>This operation returns the root of the maxheap.</li>
+          <li>Time Complexity - O(1).</li>
+        </ul>
+      </li>
+      <li>
+        <strong><code>insert(k)</code></strong>
+        <ul>
+          <li>
+            This operation inserts the key <strong>k</strong> into the heap.
+          </li>
+          <li>Then it rearranges the heap to restore the heap property.</li>
+          <li>Time Complexity - O(log n).</li>
+        </ul>
+      </li>
+      <li>
+        <strong><code>heapify()</code></strong>
+        <ul>
+          <li>
+            This operation restores the heap property by rearranging the heap.
+          </li>
+          <li>Time complexity - O(log n).</li>
+        </ul>
+      </li>
+      <li>
+        <strong><code>printHeap()</code></strong>
+        <ul>
+          <li>Prints the heap’s level order traversal.</li>
+        </ul>
+      </li>
+    </ul>
+    <p><strong>Maxheap using List</strong></p>
+    <p>
+      We are going to do the list implementation of a heap. In this, the heap’s
+      level-order traversal would be stored as an array/list.
+    </p>
+    <figure>
+      <img
+        src="https://www.section.io/engineering-education/heap-data-structure-python/level-order-traversal.png"
+        alt="Level Order Traversal"
+      />
+      <figcaption>Level Order Traversal</figcaption>
+    </figure>
+    <p>
+      <a
+        href="https://qph.fs.quoracdn.net/main-qimg-0ddd0cbca44f70d7845cc2caba5a0853"
+        ><em>Figure: Level-Order Traversal</em></a
+      >
+    </p>
+    <p>
+      <em
+        >Note - Level-Order Traversal is a recursive traversal where the root is
+        processed first, followed by the children of the root. This is followed
+        by the grandchildren of the root until all the nodes are processed. In
+        the diagram above, the root node is processed first, followed by the
+        left child, right child and so on. The final level order traversal would
+        be: 10 4 8 50 24 5 12 18. For an overview of what a level order
+        traversal is, check out</em
+      >
+      <a
+        href="https://www.quora.com/What-is-level-order-traversal-in-a-binary-tree"
+        ><em>this</em></a
+      >
+      <em>Quora page.</em>
+    </p>
+    <p>
+      In the array representation of a heap, for an element in array index i,
+    </p>
+    <ul>
+      <li>The Parent Node would be at position floor((i-1)/2).</li>
+      <li>The Left Child would be at position 2*i + 1.</li>
+      <li>The Right Child would be at position 2*i + 2.</li>
+    </ul>
+    <p>Let us first define the Heap class.</p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> MaxHeap:</a>
 <a class="sourceLine" id="cb2-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.heap <span class="op">=</span> []</a></code></pre></div>
-<p>This initiates a heap as a list. Now, let us define our methods.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> MaxHeap:</a>
+<a class="sourceLine" id="cb2-3" title="3">        <span class="va">self</span>.heap <span class="op">=</span> []</a></code></pre>
+    </div>
+    <p>This initiates a heap as a list. Now, let us define our methods.</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> MaxHeap:</a>
 <a class="sourceLine" id="cb3-2" title="2">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</a>
 <a class="sourceLine" id="cb3-3" title="3">        <span class="co"># Initialize a heap using list</span></a>
 <a class="sourceLine" id="cb3-4" title="4">        <span class="va">self</span>.heap <span class="op">=</span> []</a>
@@ -556,10 +839,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb3-40" title="40">            i <span class="op">=</span> <span class="va">self</span>.getParentPosition(i) <span class="co"># Resets the new position</span></a>
 <a class="sourceLine" id="cb3-41" title="41"></a>
 <a class="sourceLine" id="cb3-42" title="42">    <span class="kw">def</span> printHeap(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb3-43" title="43">        <span class="bu">print</span>(<span class="va">self</span>.heap) <span class="co"># Prints the heap</span></a></code></pre></div>
-<p><strong>Minheap using Heapq</strong></p>
-<p>We have successfully implemented a heap using a list. Now, let’s use the <strong><code>heapq</code></strong> library in Python to implement a minheap.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">import</span> heapq</a>
+<a class="sourceLine" id="cb3-43" title="43">        <span class="bu">print</span>(<span class="va">self</span>.heap) <span class="co"># Prints the heap</span></a></code></pre>
+    </div>
+    <p><strong>Minheap using Heapq</strong></p>
+    <p>
+      We have successfully implemented a heap using a list. Now, let’s use the
+      <strong><code>heapq</code></strong> library in Python to implement a
+      minheap.
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">import</span> heapq</a>
 <a class="sourceLine" id="cb4-2" title="2"><span class="kw">class</span> MinHeap:</a>
 <a class="sourceLine" id="cb4-3" title="3">    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, minheap): <span class="co"># minheap is the list that we can to convert to a heap</span></a>
 <a class="sourceLine" id="cb4-4" title="4">        heapq.heapify(minheap) <span class="co"># Use the heapify function to convert list to a heap</span></a>
@@ -575,7 +866,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb4-14" title="14">        heapq.heappop(<span class="va">self</span>.minheap) <span class="co"># The heappop function removes the smallest element in the heap</span></a>
 <a class="sourceLine" id="cb4-15" title="15"></a>
 <a class="sourceLine" id="cb4-16" title="16">    <span class="kw">def</span> printHeap(<span class="va">self</span>):</a>
-<a class="sourceLine" id="cb4-17" title="17">        <span class="bu">print</span>(<span class="va">self</span>.minheap) <span class="co"># Prints the heap</span></a></code></pre></div>
-<p>{% endtab %} {% endtabs %}</p>
-</body>
+<a class="sourceLine" id="cb4-17" title="17">        <span class="bu">print</span>(<span class="va">self</span>.minheap) <span class="co"># Prints the heap</span></a></code></pre>
+    </div>
+    <p>{% endtab %} {% endtabs %}</p>
+  </body>
 </html>

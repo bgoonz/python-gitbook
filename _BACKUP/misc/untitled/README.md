@@ -1,50 +1,46 @@
-About Python
-============
+# About Python
 
-What is Python? <span id="b4c3"></span>
----------------------------------------
+## What is Python? <span id="b4c3"></span>
 
 Python in simple words is a **High-Level Dynamic Programming Language** which is **interpreted**. Guido van Rossum , the father of Python had simple goals in mind when he was developing it, **easy looking code, readable and open source.** Python is ranked as the 3rd most prominent language followed by JavaScript and Java in a survey held in 2018 by Stack Overflow which serves proof to it being the most growing language.![](https://miro.medium.com/max/60/1*eyS89-AW_3UQ5bQl7GrxnA.png?q=20)
 
 ![](https://miro.medium.com/max/718/1*eyS89-AW_3UQ5bQl7GrxnA.png)
 
-Features of Python <span id="b2af"></span>
-------------------------------------------
+## Features of Python <span id="b2af"></span>
 
-Python is currently my favorite and most preferred language to work on because of its *simplicity, powerful libraries, and readability*. You may be an old school coder or may be completely new to programming, Python is the best way to get started!
+Python is currently my favorite and most preferred language to work on because of its _simplicity, powerful libraries, and readability_. You may be an old school coder or may be completely new to programming, Python is the best way to get started!
 
-Python is currently my favorite and most preferred language to work on because of its *simplicity, powerful libraries, and readability*. You may be an old school coder or may be completely new to programming, is the best way to get started!
+Python is currently my favorite and most preferred language to work on because of its _simplicity, powerful libraries, and readability_. You may be an old school coder or may be completely new to programming, is the best way to get started!
 
 Python provides features listed below :
 
--   **Simplicity:** Think less of the syntax of the language and more of the code.
--   **Open Source:** A powerful language and it is free for everyone to use and alter as needed.
--   **Portability:** Python code can be shared and it would work the same way it was intended to. Seamless and hassle-free.
--   **Being Embeddable & Extensible:** Python can have snippets of other languages inside it to perform certain functions.
--   **Being Interpreted:** The worries of large memory tasks and other heavy CPU tasks are taken care of by Python itself leaving you to worry only about coding.
--   **Huge amount of libraries:** Data Science Python has you covered. Web Development? Python still has you covered. Always.
--   **Object Orientation:** Objects help breaking-down complex real-life problems into such that they can be coded and solved to obtain solutions.
+- **Simplicity:** Think less of the syntax of the language and more of the code.
+- **Open Source:** A powerful language and it is free for everyone to use and alter as needed.
+- **Portability:** Python code can be shared and it would work the same way it was intended to. Seamless and hassle-free.
+- **Being Embeddable & Extensible:** Python can have snippets of other languages inside it to perform certain functions.
+- **Being Interpreted:** The worries of large memory tasks and other heavy CPU tasks are taken care of by Python itself leaving you to worry only about coding.
+- **Huge amount of libraries:** Data Science Python has you covered. Web Development? Python still has you covered. Always.
+- **Object Orientation:** Objects help breaking-down complex real-life problems into such that they can be coded and solved to obtain solutions.
 
 To sum it up, Python has a **simple syntax**, is **readable**, and has **great community support**. You may now have the question, What can you do if you know Python? Well, you have a number of options to choose from.
 
--   Data Scientist
--   Machine Learning and Artificial Intelligence
--   Internet of Things
--   Web Development
--   Data Visualization
--   Automation
+- Data Scientist
+- Machine Learning and Artificial Intelligence
+- Internet of Things
+- Web Development
+- Data Visualization
+- Automation
 
 Now when you know that Python has such an amazing feature set, why don’t we get started with the Python Basics?
 
-Jumping to the Python Basics <span id="93a6"></span>
-----------------------------------------------------
+## Jumping to the Python Basics <span id="93a6"></span>
 
 To get started off with the Python Basics, you need to first **install Python** in your system right? So let’s do that right now! You should know that most **Linux** and **Unix** distributions these days come with a version of Python out of the box. To set yourself up, you can follow this **step-to-step guide**.
 
 Once you are set up, you need to create your first project. Follow these steps:
 
--   Create **Project** and enter the name and click **create**.
--   **Right-click** on the project folder and create a **python file** using the New-&gt;File-&gt;Python File and enter the file name
+- Create **Project** and enter the name and click **create**.
+- **Right-click** on the project folder and create a **python file** using the New-&gt;File-&gt;Python File and enter the file name
 
 You’re done. You have set up your files to start [coding with Python](https://www.edureka.co/blog/python-programming-language). Are you excited to start coding? Let’s begin. The first and foremost, the “Hello World” program.
 
@@ -54,13 +50,11 @@ You’re done. You have set up your files to start [coding with Python](https://
 
 There you are, that’s your first program. And you can tell by the syntax, that it is **super easy** to understand. Let us move over to comments in Python Basics.
 
-Comments in Python <span id="e842"></span>
-------------------------------------------
+## Comments in Python <span id="e842"></span>
 
 Single line comment in Python is done using the \# symbol and “‘ for multi-line commenting. If you want to know more about **comments**, you can read this full-fledged guide. Once you know commenting in Python Basics, let’s jump into variables in Python Basics.
 
-Variables <span id="89e6"></span>
----------------------------------
+## Variables <span id="89e6"></span>
 
 ![](https://miro.medium.com/max/603/1*ndKnYewSMNvMRfLE-3OIVQ.png)
 
@@ -73,8 +67,7 @@ Variables in simple words are **memory spaces** where you can store **data** or 
 
 **Output**: Welcome to edureka! 123 3.142 You can see the way I have assigned the values to those variables. This is how you assign values to variables in Python. And if you are wondering, yes, you can **print multiple variables** in a single print statement. Now let us go over Data Types in Python Basics.
 
-Data Types in Python <span id="c3e1"></span>
---------------------------------------------
+## Data Types in Python <span id="c3e1"></span>
 
 Data types are basically **data** that a **language supports** such that it is helpful to define real-life data such as salaries, names of employees and so on. The possibilities are endless. The data types are as shown below:![](https://miro.medium.com/max/60/1*_Ma-JYiEt2JuvDQ0wneuig.png?q=20)
 
@@ -86,13 +79,11 @@ As the name suggests, this is to store numerical data types in the variables. Yo
 
 There are 3 numerical data types :
 
--   **Integer:** This is just as simple to say that you can store integer values in the variables. Ex : a = 10.
--   **Float:** Float holds the real numbers and are represented by a decimal and sometimes even scientific notations with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250). Ex: 10.24.
--   **Complex Numbers:** These are of the form a + bj, where a and b are floats and J represents the square root of -1 (which is an imaginary number). Ex: 10+6j.
+- **Integer:** This is just as simple to say that you can store integer values in the variables. Ex : a = 10.
+- **Float:** Float holds the real numbers and are represented by a decimal and sometimes even scientific notations with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250). Ex: 10.24.
+- **Complex Numbers:** These are of the form a + bj, where a and b are floats and J represents the square root of -1 (which is an imaginary number). Ex: 10+6j.
 
-    a = 10
-    b= 3.142
-    c = 10+6j
+  a = 10 b= 3.142 c = 10+6j
 
 So now that you have understood the various numerical data types, you can understand converting one data type into another data type in this blog of Python Basics.
 
@@ -138,10 +129,9 @@ Operations are similar to Lists but the ones where updating, deleting, adding is
 
 That basically wraps up most of the things that are needed for tuples as you would use them only in cases when you want a list that has a constant value, hence you use tuples. Let us move over to Dictionaries in Python Basics.
 
-Dictionary <span id="5e2f"></span>
-----------------------------------
+## Dictionary <span id="5e2f"></span>
 
-Dictionary is best understood when you have a real-world example with us. The most easy and well-understood example would be of the telephone directory. Imagine the telephone directory and understand the various fields that exist in it. There is the Name, Phone, E-Mail and other fields that you can think of. Think of the *Name* as the **key** and the **name** that you enter as the **value**. Similarly, *Phone* as **key**, *entered data* as **value**. This is what a dictionary is. It is a structure that holds the **key, value** pairs.
+Dictionary is best understood when you have a real-world example with us. The most easy and well-understood example would be of the telephone directory. Imagine the telephone directory and understand the various fields that exist in it. There is the Name, Phone, E-Mail and other fields that you can think of. Think of the _Name_ as the **key** and the **name** that you enter as the **value**. Similarly, _Phone_ as **key**, _entered data_ as **value**. This is what a dictionary is. It is a structure that holds the **key, value** pairs.
 
 Dictionary is written using either the a=dict() or using a={} where a is a dictionary. The key could be either a string or integer which has to be followed by a “:” and the value of that key.
 
@@ -166,8 +156,7 @@ You may now have a better understanding of dictionaries in Python Basics. Hence 
 
 ![](https://miro.medium.com/max/851/1*aClBfbhJEurNyYtoTasaNQ.png)
 
-Sets <span id="e9b9"></span>
-----------------------------
+## Sets <span id="e9b9"></span>
 
 A set is basically an You can see that even if there are similar elements in set ‘a’, it will still be printed only once because **un-ordered collection of elements** or items. Elements are sets are a collection of unique elements. **unique** in the set. In Python, they are written inside **curly brackets** and **separated by commas**.
 
@@ -183,8 +172,7 @@ Sets are simple to understand, so let us move over to strings in Python Basics.!
 
 ![](https://miro.medium.com/max/851/1*1s-_lkpcLFDpFZXgWjTnJQ.png)
 
-Strings <span id="71c9"></span>
--------------------------------
+## Strings <span id="71c9"></span>
 
 Strings in Python are the most used data types, especially because they are easier for us humans to interact with. They are literally words and letters which makes sense as to how they are being used and in what context. Python hits it out of the park because it has such a powerful integration with strings. Strings are written within a **single** (‘’) or **double quotation marks** (“”). Strings are **immutable** meaning that the data in the string cannot be changed at particular indexes.
 
@@ -204,8 +192,7 @@ That basically sums up the data types in Python. I hope you have a good understa
 
 Now let us move over to Operators in Python Basics.
 
-Operators in Python <span id="5644"></span>
--------------------------------------------
+## Operators in Python <span id="5644"></span>
 
 Operators are **constructs** you use to **manipulate** the **data** such that you can conclude some sort of solution to us. A simple example would be that if there were 2 friends having 70 rupees each, and you wanted to know the total they each had, you would add the money. In Python, you use the + operator to add the values which would sum up to 140, which is the solution to the problem.
 
@@ -288,13 +275,11 @@ It would be better to practice this by yourself on a computer. Moving ahead with
 
 These are used to obtain a certain **logic** from the operands. We have 3 operands.
 
--   **and** (True if both left and right operands are true)
--   **or** (True if either one operand is true)
--   **not** (Gives the opposite of the operand passed)
+- **and** (True if both left and right operands are true)
+- **or** (True if either one operand is true)
+- **not** (Gives the opposite of the operand passed)
 
-    a = True
-    b = False
-    print(a and b, a or b, not a)
+  a = True b = False print(a and b, a or b, not a)
 
 **Output:** False True False
 
@@ -306,14 +291,10 @@ These are used to test whether a **particular variable** or value **exists** in 
 
 The operators are :
 
--   **in** (True if the value or variable is found in the sequence)
--   **not in** (True if the value is not found in the sequence)
+- **in** (True if the value or variable is found in the sequence)
+- **not in** (True if the value is not found in the sequence)
 
-    a = [1, 2, 3, 4]
-    if 5 in a:
-        print('Yes!')
-    if 5 not in a:
-        print('No!')
+  a = [1, 2, 3, 4] if 5 in a: print('Yes!') if 5 not in a: print('No!')
 
 **Output**: No!
 
@@ -325,24 +306,18 @@ These operators are used to **check whether the values**, variables are **identi
 
 The operators are :
 
--   is (True if they are identical)
--   is not (True if they are not identical)
+- is (True if they are identical)
+- is not (True if they are not identical)
 
-    a = 5
-    b = 5
-    if a is b:
-        print('Similar')
-    if a is not b:
-        print('Not Similar!')
+  a = 5 b = 5 if a is b: print('Similar') if a is not b: print('Not Similar!')
 
 That right about concludes it for the operators of Python.
 
-Namespacing and Scopes <span id="611f"></span>
-----------------------------------------------
+## Namespacing and Scopes <span id="611f"></span>
 
 You do remember that **everything in Python is an object,** right? Well, how does Python know what you are trying to access? Think of a situation where you have 2 functions with the same name. You would still be able to call the function you need. How is that possible? This is where namespacing comes to the rescue.
 
-Namespacing is the system that Python uses to assign **unique names** to all the objects in our code. And if you are wondering, objects can be variables and methods. Python does namespacing by **maintaining a dictionary structure**. Where *names act as the keys* and the *object or variable acts as the values in the structure*. Now you would wonder what is a name?
+Namespacing is the system that Python uses to assign **unique names** to all the objects in our code. And if you are wondering, objects can be variables and methods. Python does namespacing by **maintaining a dictionary structure**. Where _names act as the keys_ and the _object or variable acts as the values in the structure_. Now you would wonder what is a name?
 
 Well, a is just a way that you use to **nameaccess the objects**. These names act as a reference to access the values that you assign to them.
 
@@ -356,7 +331,7 @@ If I would want to access the value ‘edureka!’ I would simply call the varia
 
 **Output**: The root is 3.0
 
-Namespacing works with scopes. **Scopes** are the *validity of a function/variable/value inside the function or class they belong to*. Python **built-in functions** namespacing **covers all the other scopes of Python**. Functions such as print() and id() etc. can be used even without any imports and be used anywhere. Below them is the **global** and **local** namespacing. Let me explain the scope and namespacing in a code snippet below :
+Namespacing works with scopes. **Scopes** are the _validity of a function/variable/value inside the function or class they belong to_. Python **built-in functions** namespacing **covers all the other scopes of Python**. Functions such as print() and id() etc. can be used even without any imports and be used anywhere. Below them is the **global** and **local** namespacing. Let me explain the scope and namespacing in a code snippet below :
 
     def add():
         x = 3
@@ -371,10 +346,9 @@ Namespacing works with scopes. **Scopes** are the *validity of a function/variab
 
 As you can see with the code above, I have declared 2 functions with the name add() and add2(). You have the definition of the add() and you later call the method add(). Here in add() you call add2() and so you are able to get the output of 12 since 3+4+5 is 12. But as soon as you come out of add2(), the scope of p,q,r is terminated meaning that p,q,r are only accessible and available if you are in add2(). Since you are now in add(), there is no p,q,r and hence you get the error and execution stops.
 
-You can get a better understanding of the scopes and namespacing from the figure below. The **built-in scope** covers all of Python making them *available whenever needed*. The **global scope** covers all of the *programs* that are being executed. The **local scope** covers all of the *methods* being executed in a program. That is basically what namespacing is in Python. Let us move ahead with flow control in Python Basics.![](https://miro.medium.com/max/60/1*BHJxYyvPze04URWsOj2o_Q.png?q=20)![](https://miro.medium.com/max/245/1*BHJxYyvPze04URWsOj2o_Q.png)
+You can get a better understanding of the scopes and namespacing from the figure below. The **built-in scope** covers all of Python making them _available whenever needed_. The **global scope** covers all of the _programs_ that are being executed. The **local scope** covers all of the _methods_ being executed in a program. That is basically what namespacing is in Python. Let us move ahead with flow control in Python Basics.![](https://miro.medium.com/max/60/1*BHJxYyvPze04URWsOj2o_Q.png?q=20)![](https://miro.medium.com/max/245/1*BHJxYyvPze04URWsOj2o_Q.png)
 
-Flow Control and Conditioning in Python <span id="1592"></span>
----------------------------------------------------------------
+## Flow Control and Conditioning in Python <span id="1592"></span>
 
 You know that code runs sequentially in any language, but what if you want to **break that flow** such that you are able to **add logic and repeat certain statements** such that your code reduces and are able to obtain a **solution with lesser and smarter code**. After all, that is what coding is. Finding logic and solutions to problems and this can be done using loops in Python and conditional statements.![](https://miro.medium.com/max/60/1*wDSyHKX-H1tYsj2l0a56_A.png?q=20)![](https://miro.medium.com/max/851/1*wDSyHKX-H1tYsj2l0a56_A.png)
 
@@ -406,18 +380,18 @@ With conditional statements understood, let us move over to loops. You would hav
 
 Loops can be divided into 2 kinds.
 
--   **Finite:** This kind of loop works until a certain condition is met
--   **Infinite:** This kind of loop works infinitely and does not stop ever.
+- **Finite:** This kind of loop works until a certain condition is met
+- **Infinite:** This kind of loop works infinitely and does not stop ever.
 
 Loops in Python or any other language have to test the condition and they can be done either before the statements or after the statements. They are called :
 
--   **Pre-Test Loops:** Where the condition is tested first and statements are executed following that
--   **Post Test Loops:** Where the statement is executed once at least and later the condition is checked.
+- **Pre-Test Loops:** Where the condition is tested first and statements are executed following that
+- **Post Test Loops:** Where the statement is executed once at least and later the condition is checked.
 
 You have 2 kinds of loops in Python:
 
--   **for**
--   **while**
+- **for**
+- **while**
 
 Let us understand each of these loops with syntaxes and code snippets below.
 
@@ -486,16 +460,15 @@ You later have **nested loops** where you **embed a loop into another.** The cod
 
 You have the first for loop which prints the string of the number. The other for loop adds the number by 1 and then these loops are executed until the condition is met. That is how for loop works. And that wraps up our session for loops and conditions. Moving ahead with file handling in Python Basics.
 
-File Handling with Python <span id="ddd3"></span>
--------------------------------------------------
+## File Handling with Python <span id="ddd3"></span>
 
 Python has built-in functions that you can use to **work with files** such as **reading** and **writing** **data** **from or to a file**. A **file object** is returned when a file is called using the open() function and then you can do the operations on it such as read, write, modify and so on.
 
 The flow of working with files is as follows :
 
--   **Open** the file using the open() function
--   Perform **operations** on the file object
--   **Close** the file using the close() function to avoid any damage to be done with the file
+- **Open** the file using the open() function
+- Perform **operations** on the file object
+- **Close** the file using the close() function to avoid any damage to be done with the file
 
 **Syntax:**
 
@@ -515,14 +488,13 @@ Where mode is the way you want to interact with the file. If you do not pass any
 
 You can go ahead and try more and more with files. Let’s move over to the last topics of the blog. OOPS and objects and classes. Both of these are closely related.
 
-OOPS <span id="bf2d"></span>
-----------------------------
+## OOPS <span id="bf2d"></span>
 
 Older programming languages were structured such that **data** could be **accessed by any module of the code**. This could lead to **potential security issues** that led developers to move over to **Object-Oriented Programming** that could help us emulate real-world examples into code such that better solutions could be obtained.
 
 There are 4 concepts of OOPS which are important to understand. They are:
 
--   **Inheritance:** Inheritance allows us to **derive attributes and methods** from the parent class and modify them as per the requirement. The simplest example can be for a car where the structure of a car is described and this class can be derived to describe sports cars, sedans and so on.
--   **Encapsulation:** Encapsulation is **binding data and objects together** such that other objects and classes do not access the data. Python has private, protected and public types whose names suggest what they do. Python uses ‘\_’ or ‘\_\_’ to specify private or protected keywords.
--   **Polymorphism:** This allows us to have a **common interface for various types of data** that it takes. You can have similar function names with differing data passed to them.
--   Abstraction can be used to **Abstraction: simplify complex reality by modeling classes** appropriate to the problem.
+- **Inheritance:** Inheritance allows us to **derive attributes and methods** from the parent class and modify them as per the requirement. The simplest example can be for a car where the structure of a car is described and this class can be derived to describe sports cars, sedans and so on.
+- **Encapsulation:** Encapsulation is **binding data and objects together** such that other objects and classes do not access the data. Python has private, protected and public types whose names suggest what they do. Python uses ‘\_’ or ‘\_\_’ to specify private or protected keywords.
+- **Polymorphism:** This allows us to have a **common interface for various types of data** that it takes. You can have similar function names with differing data passed to them.
+- Abstraction can be used to **Abstraction: simplify complex reality by modeling classes** appropriate to the problem.
