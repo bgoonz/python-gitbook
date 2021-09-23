@@ -1109,7 +1109,15 @@ if __name__ == "__main__":
     binary_search_tree_example()
 ```
 {% endtab %}
+
+{% tab title="Previous-bin-tree.js" %}
+{% embed url="https://replit.com/@bgoonz/TrickyPreviousBinarytree\#index.html" %}
+
+{% embed url="https://trickypreviousbinarytree.bgoonz.repl.co/" %}
+{% endtab %}
 {% endtabs %}
+
+
 
 ### Binary Trees
 
