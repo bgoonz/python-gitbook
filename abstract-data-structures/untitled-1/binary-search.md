@@ -1,5 +1,7 @@
 # Binary Search
 
+{% embed url="https://codepen.io/bgoonz/pen/MWbZoOa" %}
+
 
 
 #### In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.
