@@ -8,13 +8,9 @@
 
 {% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" %}
 
-## Cloudfare Backup
-
-{% embed url="https://bgoonz-blog-2-0.pages.dev/" %}
 
 
 
-​
 
 {% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
 
@@ -80,7 +76,13 @@
 
 ​
 
-{% embed url="https://master--bgoonz-blog.netlify.app/" caption="" %}
+## Cloudfare Backup \(Of Blog\)
+
+{% embed url="https://bgoonz-blog-2-0.pages.dev/" %}
+
+
+
+​
 
 ​ ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png) ​
 
