@@ -1,6 +1,43 @@
 # GCA Sprint Prep:
 
+### What is the GCA? <a id="what-is-the-gca"></a>
 
+The GCA is a proctored assessment that provides a certified report you can use when applying for jobs. It is a standardized assessment that provides a high-level score for a candidate's programming skill. It maps programming skills to a score from 300 to 850, combining information about problem-solving and code-writing skills and speed and code quality. It is a measure meant to give recruiters, hiring managers, and educators – as well as the test-takers themselves – a quick view of the test-taker’s skills. Taking the assessment will be a data point that informs how career-ready you are and how you can continue to improve during Labs and Job Search. One key way that hiring managers are assessing new hires during remote work is with automated technical assessment testing, like GCA. This is why we will continue to evaluate how our students perform on these types of tests.
+
+### How do I take the test? <a id="how-do-i-take-the-test"></a>
+
+Be sure to take the test using the link above, and sign up with your [@lambdastudents \(Links to an external site.\)](https://github.com/lambdastudents) e-mail. You must also select to share your results with Lambda so we can get your score back.
+
+You will also need the following to take the test:
+
+1. Grab your photo ID. Have a government-issued photo ID ready to show \(like driver's license or passport\).
+2. Prepare your computer. Make sure you have the following: Chrome or Firefox, a reliable internet connection, webcam and microphone. 
+3. Time and space. Reserve 1 hour and 10 minutes to take the test somewhere quiet. 
+4. Share your webcam and desktop. When prompted, share your entire desktop screen as well as your webcam. Do not end video or close any windows or screensharing until the test is finished.
+
+Again, you must take the test with your [@lambdastudents \(Links to an external site.\)](https://github.com/lambdastudents) email address! This may require you to sign out of CodeSignal if you previously created an account and sign in with your [@lambdastudents \(Links to an external site.\)](https://github.com/lambdastudents) email.
+
+### What is on the test? <a id="what-is-on-the-test"></a>
+
+Each test draws from a pool of question types. There are four tasks for you to solve. Each test contains a very basic task, a simple data manipulation task, an implementation task \(requires writing at least 25-40 lines of code, but the description clearly explains what needs to be done\), and a problem-solving task \(where you need to come up with the approach yourself\).
+
+### How long does it take? <a id="how-long-does-it-take"></a>
+
+The GCA test is limited to 1 hour and 10 minutes, starting from the time you begin the test.
+
+### Can I retake the GCA? <a id="can-i-retake-the-gca"></a>
+
+You can retake the GCA after a 2 week 'cool off' period.
+
+### Why is the test proctored? <a id="why-is-the-test-proctored"></a>
+
+The test is proctored to guarantee the integrity of the assessment. Since GCA assessments are certified and shared across multiple companies, automated proctoring is required for the GCA. Without automated proctoring, for example, someone else can take the test for the given candidate and provide inaccurate test results. Note that Lambda School does not share your results with companies, but you may do so if you choose.
+
+Virtual proctoring data is reviewed by CodeSignal only and is stored for no more than 15 days.
+
+### Share Your Results on LinkedIn <a id="share-your-results-on-linkedin"></a>
+
+After the test, you can share your certification directly with employers or add it to your LinkedIn profile! [Click here \(Links to an external site.\)](https://support.codesignal.com/hc/en-us/articles/360040384033-How-do-I-add-GCA-as-a-certification-on-LinkedIn-) to learn how. \(Note that this is optional\). 
 
 The test is four problems, which are CodeSignal/HackerRank/Leetcode-style programming challenges. Problem 1 is generally the easiest, progressing to the hardest with problem 4.
 
@@ -195,6 +232,45 @@ _NOTE: these aren't definitive or complete lists! They don't say exactly_ what w
 ### Rules
 
 * [GCA Setup and Proctoring Rules](https://support.codesignal.com/hc/en-us/articles/360051960134-General-Coding-Assessment-Rules-and-Setup)
+
+
+
+{% tabs %}
+{% tab title="TAB" %}
+## Proctoring Rules
+{% endtab %}
+
+{% tab title="RULES" %}
+### Proctoring Rules  <a id="h_01FE9TBZ7TVS8009V9K89C9SR6"></a>
+
+When you start the General Coding Assessment, you are required to setup proctoring, which allows our team to verify the work was your own. To learn more about proctoring and the requirements, visit the [What is Proctoring article here](https://support.codesignal.com/hc/en-us/articles/360039872174-What-is-proctoring-and-how-does-it-work-). We also have a video resource which walks you through the [Certify proctoring steps here](https://youtu.be/cVaqCyYK4zM). 
+
+Below is a screenshot of the general rules you will see once you have completed the Proctoring Setup. Please read through the rules below and note you will need to abide by each one in order for your test results to be certified. 
+
+![Proctoringrules.png](https://support.codesignal.com/hc/article_attachments/360084249413/Proctoringrules.png)
+
+### Test Rules  <a id="h_01FE9TC5K95QTEZ7Y9Y2ND36JX"></a>
+
+After you have successfully setup proctoring, you will see a second set of rules before you are able to begin the test. You must check the box next to each statement to acknowledge your consent. You are also able to select your preferred coding language here. Note you can update the coding language directly in the IDE once in the exam. 
+
+![GCArules.png](https://support.codesignal.com/hc/article_attachments/360083067974/GCArules.png)
+
+### General Coding Assessment Setup <a id="h_01FE9TCB8N5C61VQ34WFR9JYMQ"></a>
+
+Through not rules, candidates frequently reach out regarding questions about the General Coding Assessment setup and structure. Below we will address the setup. You can learn more about the [structure of the General Coding Assessment](https://support.codesignal.com/hc/en-us/articles/360040370853) by viewing our separate help article. 
+
+Please note the test setup below. 
+
+![GCAsetup.png](https://support.codesignal.com/hc/article_attachments/360083072134/GCAsetup.png)
+
+You will have 70 minutes to complete the exam in one sitting. You are able to move between tasks, though you must submit your work before leaving a task in order for the code to save. You are allowed to submit solutions as much as needed. You will only be graded on your final submitted solution at the time you click **Finish the Test**. If you run out of time, your last submitted solution will be the one graded. 
+
+![GCA\_setup.PNG](https://support.codesignal.com/hc/article_attachments/360096750874/GCA_setup.PNG)
+{% endtab %}
+{% endtabs %}
+
+
+
 * Additional clarifications to the rules:
   * Using scratch paper is allowed, but make it obvious \(and maybe even say\) that you're scribbling.
   * Using an off-screen whiteboard is allowed, but make it obvious that's what you're doing.
