@@ -1,5 +1,15 @@
 # Home
 
+
+
+{% page-ref page="navigation.md" %}
+
+
+
+### Data Structures & Algorithms In Python!
+
+
+
 {% embed url="https://codepen.io/bgoonz/full/ZEyXNVr" %}
 
 
