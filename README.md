@@ -18,14 +18,6 @@
 
 {% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" %}
 
-
-
-
-
-{% embed url="https://bgoonz42.gitbook.io/datastructures-in-pytho/datastructures-in-pytho/" caption="" %}
-
-​
-
 ### The Git Repo For This Website:
 
 ​
@@ -34,7 +26,7 @@
 
 ​ ![](.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png) ​
 
-### Main Repo:
+## Main \(DS&Python\) Repo:
 
 ​
 

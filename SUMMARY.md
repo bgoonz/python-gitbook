@@ -9,6 +9,7 @@
 
 * [Outline](curriculum/untitled/README.md)
   * [General Content](curriculum/untitled/general-content.md)
+  * [Notion](curriculum/untitled/notion.md)
 * [wk17](curriculum/untitled-3/README.md)
   * [Outline-w17](curriculum/untitled-3/outline.md)
   * [homework](curriculum/untitled-3/week-overview.md)
