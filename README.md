@@ -8,6 +8,10 @@
 
 {% embed url="https://py-v2.gitbook.io/datastructures-in-pytho/" %}
 
+## Cloudfare Backup
+
+{% embed url="https://bgoonz-blog-2-0.pages.dev/" %}
+
 
 
 ​
