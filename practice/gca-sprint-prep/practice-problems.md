@@ -1,5 +1,9 @@
 # Practice Problems
 
+{% embed url="https://replit.com/@bgoonz/SmallWorldlyAbstraction\#main.py" %}
+
+
+
 {% tabs %}
 {% tab title="" %}
 ```text
