@@ -2073,12 +2073,6 @@ print(best.resolution, best.extension)
 print(best.url)
 best.download(quiet=False)
 
-
 ```
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
-

@@ -2,18 +2,16 @@
 
 ![](../../../.gitbook/assets/image.png)
 
-{% embed url="https://replit.com/@bgoonz/d1\#main.py" %}
+{% embed url="https://replit.com/@bgoonz/d1#main.py" %}
 
-
-
-#### Windows <a id="windows"></a>
+#### Windows <a href="windows" id="windows"></a>
 
 Windows machines usually do not ship with Python installed. Installing on Windows is pretty simple.
 
-1. Download the latest Python 3 Installer from [python.org \(Links to an external site.\)](https://www.python.org/downloads/windows/) \(make sure you pay attention to 32-bit vs. 64-bit and select the right one for your machine\).
+1. Download the latest Python 3 Installer from [python.org (Links to an external site.)](https://www.python.org/downloads/windows/) (make sure you pay attention to 32-bit vs. 64-bit and select the right one for your machine).
 2. Run the installer and **make sure you check the box that says "Add Python 3.x to PATH" to ensure that you place the interpreter in your execution path.**
 
-#### Linux <a id="linux"></a>
+#### Linux <a href="linux" id="linux"></a>
 
 Most likely, your Linux distribution already has Python installed. However, it is likely to be Python 2 and not Python 3.
 
@@ -21,9 +19,9 @@ You can determine what version you have by opening a terminal and typing `python
 
 The procedure for installing the latest version of Python depends on which distribution of Linux you are running.
 
-Use [this article \(Links to an external site.\)](https://realpython.com/installing-python/#reader-comments) to find instructions specific to your Linux distribution.
+Use [this article (Links to an external site.)](https://realpython.com/installing-python/#reader-comments) to find instructions specific to your Linux distribution.
 
-#### macOS / Mac OS X <a id="macos--mac-os-x"></a>
+#### macOS / Mac OS X <a href="macos--mac-os-x" id="macos--mac-os-x"></a>
 
 Current versions of macOS include a version of Python 2, but you want to be using Python 3.
 
@@ -31,7 +29,7 @@ The best way to install Python 3 on macOS is to use the Homebrew package manager
 
 **Install Homebrew**
 
-1. Go to [http://brew.sh/ \(Links to an external site.\)](http://brew.sh/) and select the Homebrew bootstrap code under "Install Homebrew" and copy the complete command to your clipboard.
+1. Go to [http://brew.sh/ (Links to an external site.)](http://brew.sh) and select the Homebrew bootstrap code under "Install Homebrew" and copy the complete command to your clipboard.
 2. Open a terminal window, paste the Homebrew bootstrap code, and hit "Enter."
 3. It may take some time to install Homebrew, so you need to wait for that process to complete before moving on.
 
@@ -43,25 +41,23 @@ After Homebrew has finished its installation process, you then need to install P
 2. Ensure that everything was installed correctly by opening a terminal window and running the command `pip3`.
 3. If you see help text from Python's "pip" package manager, you have a working Python installation.
 
-#### Online Interpreters <a id="online-interpreters"></a>
+#### Online Interpreters <a href="online-interpreters" id="online-interpreters"></a>
 
 Here are a few websites that give you online access to the Python interpreter:
 
-* [Repl.it \(Links to an external site.\)](https://repl.it/)
-* [Trinket \(Links to an external site.\)](https://trinket.io/)
-* [Python Fiddle \(Links to an external site.\)](http://pythonfiddle.com/)
-* [Python.org Online Console \(Links to an external site.\)](https://www.python.org/shell)
-* [Python Anywhere](https://www.pythonanywhere.com/)
+* [Repl.it (Links to an external site.)](https://repl.it)
+* [Trinket (Links to an external site.)](https://trinket.io)
+* [Python Fiddle (Links to an external site.)](http://pythonfiddle.com)
+* [Python.org Online Console (Links to an external site.)](https://www.python.org/shell)
+* [Python Anywhere](https://www.pythonanywhere.com)
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%281%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (1).png>)
 
-
-
-#### Search and Research <a id="search-and-research"></a>
+#### Search and Research <a href="search-and-research" id="search-and-research"></a>
 
 Before you do anything else, search for a solution to your problem on your own. One thing you should start doing is keeping track of all your research when solving a problem. One easy way to do this is to have a browser window represent a specific search for a solution, and each open tab represents an attempt at solving it. Keeping track of your research is vital because it's helpful to provide examples of similar questions or similar problems and explain why those didn't answer your specific problem or question. It also helps the person answering your question avoid pointing you toward resources you've already explored, and lets them know that you've already put in the work.
 
-#### Introduce the Problem <a id="introduce-the-problem"></a>
+#### Introduce the Problem <a href="introduce-the-problem" id="introduce-the-problem"></a>
 
 The first thing you do when you ask a question￼￼￼￼ is to introduce the problem. The first paragraph of your written question should serve as an executive summary of the problem. All the following paragraphs should fill in the details of the problem.
 
@@ -69,13 +65,13 @@ An important thing to include in your problem introduction is a precise explanat
 
 You should also provide as much detail about the context as possible. For instance, include the language version, the platform version, the operating system, the database type, specific IDE, and any web server information. You should also include your particular constraints. For example, you may not be allowed to use feature A or B that would provide an obvious solution. If you have an odd constraint, it may also help explain why you have that constraint.
 
-#### Help Others Reproduce the Problem <a id="help-others-reproduce-the-problem"></a>
+#### Help Others Reproduce the Problem <a href="help-others-reproduce-the-problem" id="help-others-reproduce-the-problem"></a>
 
 One thing to remember is that not all questions benefit from including code. However, if you include code, definitely do not just copy in your entire program! By having irrelevant details, you make your question much harder to answer and decrease the chances of someone helping you.
 
 Here are some guidelines for when to include code in your question.
 
-#### **Minimal** <a id="minimal"></a>
+#### **Minimal** <a href="minimal" id="minimal"></a>
 
 Include just enough code to allow others to reproduce your specific problem.￼￼ One way to do this is to restart from scratch. Do not include snippets of your entire program. Instead, create a new program, but only add what's necessary to recreate the problem.
 
@@ -83,31 +79,31 @@ If you aren't exactly sure where the problem code is, one way to find it is by r
 
 Be careful not to remove too much code, either. Keep your question brief, but maintain enough context for clarity.
 
-#### Complete <a id="complete"></a>
+#### Complete <a href="complete" id="complete"></a>
 
 Make sure you include all the portions of the code needed to reproduce the problem. It would be best if you assumed that the person who is answering your question would not write any code to reproduce your issue. Again, remember, do not use images of code—those trying to help you need direct access to the code you include in your question.
 
-#### Reproducible <a id="reproducible"></a>
+#### Reproducible <a href="reproducible" id="reproducible"></a>
 
-When you include your code, it's also important to tell the reader exactly what you expect the behavior to be. Be sure to show the reader the exact wording of the error message you encountered \(if there was one\). It's also crucial to double-check that your included example reproduces the problem.
+When you include your code, it's also important to tell the reader exactly what you expect the behavior to be. Be sure to show the reader the exact wording of the error message you encountered (if there was one). It's also crucial to double-check that your included example reproduces the problem.
 
 One other thing you can do is create a live example on a site like sqlfiddle.com or jsbin.com. If you do, make sure you also include a copy of your code in your question. Not everyone will utilize the link to the live example.
 
 And to reiterate, do not post images of any code, data, or error messages—reserve images for things like rendering bugs—things that are impossible to describe accurately with just text.
 
-#### Proofread <a id="proofread"></a>
+#### Proofread <a href="proofread" id="proofread"></a>
 
 Don't send a question you haven't proofread. When you post your question, you should have already read and reread it, taking care to follow all the best practices and making sure your question makes sense. It would be best if you imagined that you're coming to your question fresh, with no other context but the question itself. You want to make your question as easy for someone to answer as possible. Remember, the reader is likely choosing between several questions they could answer. You want your question to stand out as something concise and approachable. Don't forget to double-check your spelling, grammar, and formatting. Keep it as straightforward as you can; you're not writing a novel.
 
-#### Respond to Feedback <a id="respond-to-feedback"></a>
+#### Respond to Feedback <a href="respond-to-feedback" id="respond-to-feedback"></a>
 
 As feedback and responses to your question begin coming in, respond as quickly as possible. You'll likely receive clarifying questions, and your readers need that clarification to help you.￼￼￼￼
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 Now let's look at an example of a question posted to Stack Overflow and analyze it to see if it follows the best practices outlined above.
 
-[The question \(Links to an external site.\)](https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops):
+[The question (Links to an external site.)](https://stackoverflow.com/questions/522563/accessing-the-index-in-for-loops):
 
 ![https://camo.githubusercontent.com/9be35d94fd27e59fc716b00942c22b5b3438a99a/68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f64383031393630662d626530662d346633362d383634612d3564626666616435306631635f53637265656e53686f74323032302d30332d33306174332e31352e3330504d2e706e67](https://camo.githubusercontent.com/9be35d94fd27e59fc716b00942c22b5b3438a99a/68747470733a2f2f746b2d6173736574732e6c616d6264617363686f6f6c2e636f6d2f64383031393630662d626530662d346633362d383634612d3564626666616435306631635f53637265656e53686f74323032302d30332d33306174332e31352e3330504d2e706e67)
 
@@ -123,31 +119,31 @@ The code they included is a minimal and complete example, allowing someone to re
 
 It appears the questioner proofread their question beforehand as it does not contain any glaring spelling, grammar, or formatting problems. However, we could critique this example for including a redundant sentence at the end. Instead of including that sentence, they might have rephrased the first sentence of the question to be more precise.
 
-### Challenge <a id="challenge"></a>
+### Challenge <a href="challenge" id="challenge"></a>
 
 1. Choose a real-world example from a recent problem/challenge. Use the guidelines and process outlined above to ask for help in your cohort-specific help channel.
 2. Identify an unanswered question in your cohort-specific help channel. Do your best to provide a helpful response to that question.
 3. Find an example of a **bad** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining _why_ you believe it is a **bad** question.
 4. Find an example of a **good** question on Stack Overflow. Analyze the question using the guidelines above and write a short response explaining _why_ you believe it is a **good** question.
 
-### Additional Resources <a id="additional-resources"></a>
+### Additional Resources <a href="additional-resources" id="additional-resources"></a>
 
-* [Stack Overflow: How Do I Ask a Good Question? \(Links to an external site.\)](https://stackoverflow.com/help/how-to-ask)
-* [Writing the Perfect Question \(Links to an external site.\)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
-* [How to Ask Questions the Smart Way \(Links to an external site.\)](http://catb.org/esr/faqs/smart-questions.html)
-* [How to Debug Small Programs \(Links to an external site.\)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
+* [Stack Overflow: How Do I Ask a Good Question? (Links to an external site.)](https://stackoverflow.com/help/how-to-ask)
+* [Writing the Perfect Question (Links to an external site.)](https://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
+* [How to Ask Questions the Smart Way (Links to an external site.)](http://catb.org/esr/faqs/smart-questions.html)
+* [How to Debug Small Programs (Links to an external site.)](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/)
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%288%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (8).png>)
 
 ## Objective 04 - Use a print statement
 
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 Learning to use the `print` function in Python is the perfect way to start writing Python code. When learning to write in any new programming language, one of the first things you want to do is get some _output_ from your program. The `print` function is how you output the value of an object to the screen. You will learn how to use the `print` function in Python.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
-#### Using `print` with different objects <a id="using-print-with-different-objects"></a>
+#### Using `print` with different objects <a href="using-print-with-different-objects" id="using-print-with-different-objects"></a>
 
 Let's start by executing the print function to print different types of objects in Python. There are numerous types of objects that you can print using the `print` function.
 
@@ -159,7 +155,7 @@ Using `print` with no arguments:
 >>>
 ```
 
-Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character `\n`.
+Notice the empty line after calling the `print` function. The default `end` value when calling print is the newline character .
 
 Using `print` with a string literal:
 
@@ -216,7 +212,7 @@ Any object passed as an argument into `print` will get converted into a string t
 
 You can see how the `print` function is easy to use and how it can handle any object type that you pass into it.
 
-#### Passing multiple arguments into `print` <a id="passing-multiple-arguments-into-print"></a>
+#### Passing multiple arguments into `print` <a href="passing-multiple-arguments-into-print" id="passing-multiple-arguments-into-print"></a>
 
 Now, let's look at how we can pass multiple arguments into the `print` function. Using `print` with multiple arguments gives you a flexible and easy way to output items to the screen.
 
@@ -246,11 +242,11 @@ Lambda School2020True
 >>>
 ```
 
-#### Specifying the `end` value with `print` <a id="specifying-the-end-value-with-print"></a>
+#### Specifying the `end` value with `print` <a href="specifying-the-end-value-with-print" id="specifying-the-end-value-with-print"></a>
 
 You can also specify the `end` value by assigning a value to the `end` keyword argument when you call the `print` function. Being able to print a value to the screen but allow the user to stay on the same line is useful and necessary in some cases.
 
-Here is how you can change the default `end` value \(which is `\n`\) when calling the `print` function.
+Here is how you can change the default `end` value (which is ) when calling the `print` function.
 
 ```python
 >>> print("Are you a Lambda School student?", end=" (Y or N)")
@@ -263,40 +259,38 @@ You have now learned the basics of using the `print` function in Python. You lea
 
 Now, get some practice using the `print` function by completing the challenge below.
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3#main.py" %}
 
-
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-print-3\#main.py" %}
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1).png>)
 
 ## Objective 05 - Use white space to denote blocks
 
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
-Python is unique because indentation instead of some other character marks blocks of code. A block of code is a collection of statements that are grouped. The syntax for denoting blocks varies from language to language. For example, in C, blocks are delimited by curly braces \(`{` and `}`\). Understanding how Python uses whitespace and indentation to denote logical lines and code blocks is essential.
+Python is unique because indentation instead of some other character marks blocks of code. A block of code is a collection of statements that are grouped. The syntax for denoting blocks varies from language to language. For example, in C, blocks are delimited by curly braces (`{` and `}`). Understanding how Python uses whitespace and indentation to denote logical lines and code blocks is essential.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
-#### Whitespace Characters <a id="whitespace-characters"></a>
+#### Whitespace Characters <a href="whitespace-characters" id="whitespace-characters"></a>
 
-Whitespace is any character represented by something that appears empty \(usually `\t` or `" "`\). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
+Whitespace is any character represented by something that appears empty (usually  or `" "`). The characters that Python considers to be whitespace can be seen by printing out the value of `string.whitespace` from the `string` library.
 
-```text
+```
 >>> import string
 >>> string.whitespace
 ' \t\n\r\x0b\x0c'
 >>>
 ```
 
-Notice the characters are `" "` \(space\), `\t` \(tab\), `\n` \(newline\), `\r` \(return\), `\x0b` \(unicode line tabulation\), and `\x0c` \(unicode form feed\).
+Notice the characters are `" "` (space),  (tab),  (newline),  (return), `\x0b` (unicode line tabulation), and `\x0c` (unicode form feed).
 
-You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with `" "`, `\t`, and `\n`.
+You've seen the different types of whitespace characters that can appear, but you mainly need to concern yourself with `" "`, , and .
 
-#### Logical Lines of Code <a id="logical-lines-of-code"></a>
+#### Logical Lines of Code <a href="logical-lines-of-code" id="logical-lines-of-code"></a>
 
-Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end \(a statement or a definition\) is marked by a `\n`.
+Whitespace is used to denote the end of a logical line of code. In Python, a logical line of code's end (a statement or a definition) is marked by a .
 
-```text
+```
 >>> first = "Lambda"
 >>> second = "School"
 >>> first + second
@@ -312,11 +306,11 @@ Notice how the REPL evaluates the expression `first + second` when I return on l
 
 It's important to understand that Python assumes meaning in newline characters when trying to interpret your code.
 
-#### Code Blocks <a id="code-blocks"></a>
+#### Code Blocks <a href="code-blocks" id="code-blocks"></a>
 
-Whitespace \(indentation\) can denote code blocks. Python gives meaning to the amount of whitespace \(indentation level\) that comes before a logical line of code.
+Whitespace (indentation) can denote code blocks. Python gives meaning to the amount of whitespace (indentation level) that comes before a logical line of code.
 
-```text
+```
 >>> if True:
 ... if True:
   File "<stdin>", line 2
@@ -328,7 +322,7 @@ IndentationError: expected an indented block
 
 This code raises an `Indentation Error` because the Python interpreter expects to find additional whitespace inside the `if` block.
 
-```text
+```
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -337,9 +331,9 @@ it worked!
 >>>
 ```
 
-The Python interpreter can successfully run this code because consistent whitespace \(level of indentation\) is used.
+The Python interpreter can successfully run this code because consistent whitespace (level of indentation) is used.
 
-```text
+```
 >>> if True:
 ...     if True:
 ...         print("it worked!")
@@ -349,67 +343,65 @@ The Python interpreter can successfully run this code because consistent whitesp
 TabError: inconsistent use of tabs and spaces in indentation
 ```
 
-Although you can't tell in the code snippet above, for the second `if` statement, I used a `\t` to indent. But, for the indentation on `print("it worked!"`, I used eight `" "` \(spaces\). The mismatch of tab usage and spaces raises an error when Python tries to interpret the code.
+Although you can't tell in the code snippet above, for the second `if` statement, I used a  to indent. But, for the indentation on `print("it worked!"`, I used eight `" "` (spaces). The mismatch of tab usage and spaces raises an error when Python tries to interpret the code.
 
-Consistent whitespace usage \(indentation\) is crucial to making sure that Python can interpret your code correctly.
+Consistent whitespace usage (indentation) is crucial to making sure that Python can interpret your code correctly.
 
-In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are `" "`, `\t`, and `\n`. The Python interpreter knows where the end of a logical line of code is because of the `\n`. The amount of whitespace \(level of indentation\) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.
+In Python, whitespace has meaning; it denotes the end of logical lines and also code blocks. Whitespace is any character represented by something that appears empty, although the most common characters are `" "`, , and . The Python interpreter knows where the end of a logical line of code is because of the . The amount of whitespace (level of indentation) is used in Python to denote blocks of code. Understanding how the Python interpreter looks at whitespace is vital to writing valid Python code.
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3#main.py" %}
 
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (2).png>)
 
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-white-space-3\#main.py" %}
+## #6:
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%282%29.png)
-
-## \#6:
-
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 Python is not a "statically typed" language, and every variable in Python is an object. You don't have to declare a variable's type.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
-#### Numbers <a id="numbers"></a>
+#### Numbers <a href="numbers" id="numbers"></a>
 
 In Python, you can have integers and floating-point numbers.
 
 You can define an integer like so:
 
-```text
+```
 my_int = 3
 ```
 
 You can also cast a floating-point number to be an integer like so:
 
-```text
+```
 my_int = int(3.0)
 ```
 
 To define a floating-point number, you can declare it literally or typecast it with the float constructor function:
 
-```text
+```
 my_float = 3.0
 my_float = float(3)
 ```
 
-#### Strings <a id="strings"></a>
+#### Strings <a href="strings" id="strings"></a>
 
 You can define strings with either single or double quotes:
 
-```text
+```
 my_string = 'Lambda School'
 my_string = "Lambda School"
 ```
 
 It's common to use double quotes for strings so that you can include apostrophes without accidentally terminating the string.
 
-```text
+```
 my_string = "I don't have to worry about apostrophes with my double-quotes."
 ```
 
 Let's practice declaring variables to store an int, a float, and a string:
 
-```text
+```
 my_int = 2
 my_float = 5.0
 my_str = "Lambda School"
@@ -417,46 +409,42 @@ my_str = "Lambda School"
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-types-3" %}
 
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
-
-
-
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 There are a few basic operators that you should be familiar with as you start writing Python code.
 
-#### Arithmetic Operators <a id="arithmetic-operators"></a>
+#### Arithmetic Operators <a href="arithmetic-operators" id="arithmetic-operators"></a>
 
-You can use the addition \(`+`\), subtraction \(`-`\), multiplication \(`*`\), and division \(`/`\) operators with numbers in Python.
+You can use the addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`) operators with numbers in Python.
 
-```text
+```
 my_number = 2 + 2 * 8 / 5.0
 print(my_number) # 5.2
 ```
 
-There is also an operator called the modulo operator \(`%`\). This operator returns the remainder of integer division.
+There is also an operator called the modulo operator (`%`). This operator returns the remainder of integer division.
 
-```text
+```
 my_remainder = 9 % 4
 print(my_remainder) # 1
 ```
 
-You can use two multiplication operators to make the exponentiation operator \(`**`\).
+You can use two multiplication operators to make the exponentiation operator (`**`).
 
-```text
+```
 two_squared = 2 ** 2
 print(two_squared)    # 4
 two_cubed = 2 ** 3
 print(two_cubed)      # 8
 ```
 
-#### Using operators with non-numbers <a id="using-operators-with-non-numbers"></a>
+#### Using operators with non-numbers <a href="using-operators-with-non-numbers" id="using-operators-with-non-numbers"></a>
 
 You can use the addition operator to concatenate strings and lists:
 
-```text
+```
 string_one = "Hello,"
 string_two = " World!"
 combined = string_one + string_two
@@ -470,7 +458,7 @@ print(big_lst) # [1, 2, 3, 4, 5, 6]
 
 You can also use the multiplication operator to create a new list or string that repeats the original sequence:
 
-```text
+```
 my_string = "Bueller"
 repeated = my_string * 3
 print(repeated) # BuellerBuellerBueller
@@ -480,51 +468,47 @@ repeated_list = my_list * 3
 print(repeated_list) # [1, 2, 3, 1, 2, 3, 1, 2, 3]
 ```
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 Now, let's see if we can combine all of this information in a quick demo.
 
 First, let's create two variables, `a` and `b`, where each variable stores an instance of the `object` class.
 
-```text
+```
 a = object()
 b = object()
 ```
 
 Next, let's see if we can make two lists, one containing five instances of `a`, and the second with five instances of `b`.
 
-```text
+```
 a_list = [a] * 5
 b_list = [b] * 5
 ```
 
 Then, let's combine `a_list` and `b_list` into a `combined` list.
 
-```text
+```
 combined = a_list + b_list
 ```
 
 If our code works as expected, `combined` should have a length of 10.
 
-```text
+```
 print(len(combined)) # 10
 ```
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1#main.py" %}
 
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-operators-1\#main.py" %}
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
-
-
-
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 To format a string in Python, you use the `%` operator to format a set of stored variables in a tuple. You also include _argument specifiers_ in your string with special symbols like `%s` and `%d`.
 
 For example, let's say you want to insert a `name` variable inside a string. You would do the following:
 
-```text
+```
 name = "Austen"
 formatted_string = "Hello, %s!" % name
 print(formatted_string) # Hello, Austen!
@@ -532,7 +516,7 @@ print(formatted_string) # Hello, Austen!
 
 If you have more than one argument specifier, you need to enclose your arguments in a tuple:
 
-```text
+```
 name = "Austen"
 year = 2020
 print("Hey %s! It's the year %d." % (name, year))
@@ -541,7 +525,7 @@ print("Hey %s! It's the year %d." % (name, year))
 
 Any object that is not a string can also be formatted using the `%s` operator. The string which returns from the object's `repr` method will be used in the formatted string.
 
-```text
+```
 my_list = [1,2,3]
 print("my_list: %s" % my_list)
 # my_list: [1, 2, 3]
@@ -549,19 +533,19 @@ print("my_list: %s" % my_list)
 
 A few of the common argument specifiers are:
 
-* `%s` - String \(or any object with a string representation\)
+* `%s` - String (or any object with a string representation)
 * `%d` - Integers
 * `%f` - Floating point numbers
 * `%.<number of digits>f` - Floating point numbers with a fixed amount of digits to the dot's right.
-* `%x/%X` - Integers in hexadecimal \(lowercase/uppercase\)
+* `%x/%X` - Integers in hexadecimal (lowercase/uppercase)
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 Let's see if we can use all of this information to practice formatting a few strings.
 
 Let's imagine that we have some data that we want to inject into a string.
 
-```text
+```
 product_name = "bananas"
 price = 1.23
 product_id = 123456
@@ -569,41 +553,35 @@ product_id = 123456
 
 We need to print a formatted string using argument specifiers and a tuple that contains our data:
 
-```text
+```
 print("%s (id: %d) are currently $%.2f." % (product_name, product_id, price))
 # bananas (id: 123456) are currently $1.23.
 ```
 
-
-
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-formatted-strings-2" %}
 
-
-
-
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
 8
 
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.
 
 There are lots of ways you can interact with strings in Python.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 The `len()` method prints out the number of characters in the string.
 
-```text
+```
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -611,7 +589,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -619,7 +597,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -628,7 +606,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -636,7 +614,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -644,7 +622,7 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
@@ -653,34 +631,28 @@ print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-2" %}
 
-
-
-
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
 ## Objective 09 - Perform basic string operations
 
-
-
-### Overview <a id="overview"></a>
+### Overview <a href="overview" id="overview"></a>
 
 You can think of a string as anything between quotes. Strings store a sequence of characters or bits of text.
 
 There are lots of ways you can interact with strings in Python.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 The `len()` method prints out the number of characters in the string.
 
-```text
+```
 my_string = "Hello, world!"
 print(len(my_string)) # 12
 ```
 
 The `index()` method prints out the index of the substring argument's first occurrence.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.index("o"))   # 4
 print(my_string.index(", w")) # 5
@@ -688,7 +660,7 @@ print(my_string.index(", w")) # 5
 
 The `count()` method returns the number of occurrences of the substring argument.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.count("o"))  # 2
 print(my_string.count("ll")) # 1
@@ -696,7 +668,7 @@ print(my_string.count("ll")) # 1
 
 To slice a string, you can use this syntax: `[start:stop:step]`. To reverse the string's order, you can set the step value to be `-1`.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string[3:7])   # lo,
 print(my_string[3:7:2]) # l,
@@ -705,7 +677,7 @@ print(my_string[::-1])  # !dlrow ,olleH
 
 You can convert a string to uppercase or lowercase with the `upper()` and `lower()` methods.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.upper()) # HELLO, WORLD!
 print(my_string.lower()) # hello, world!
@@ -713,7 +685,7 @@ print(my_string.lower()) # hello, world!
 
 You can determine if a string starts with or ends with a specific sequence with the `startswith()` and `endswith()` methods.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.startswith("Hello")) # True
 print(my_string.endswith("globe!"))  # False
@@ -721,35 +693,24 @@ print(my_string.endswith("globe!"))  # False
 
 The `split()` method allows you to split up a string into a list. The default separator is any whitespace. You can also specify the separator value with an argument if you want.
 
-```text
+```
 my_string = "Hello, world!"
 print(my_string.split())    # ['Hello,', 'world!']
 print(my_string.split(",")) # ['Hello', ' world!']
 print(my_string.split("l")) # ['He', '', 'o, wor', 'd!']
-
 ```
 
 {% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-basic-string-operations-3" %}
 
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
+### Overview <a href="overview" id="overview"></a>
 
+Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program's flow. Python's boolean values are written as `True` and `False` (make sure you capitalize the first character).
 
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
-
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
-
-
-
-
-
-### Overview <a id="overview"></a>
-
-Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program's flow. Python's boolean values are written as `True` and `False` \(make sure you capitalize the first character\).
-
-### Follow Along <a id="follow-along"></a>
-
-To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
+To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` (less than), `>` (greater than), `<=` (less than or equal), `>=` (greater than or equal), and `!=` (not equal).
 
 ```python
 x = 10
@@ -774,7 +735,7 @@ if name == "Elon" or name == "Bill":
     print("Your name is either Elon or Bill.")
 ```
 
-Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
+Any time you have an iterable object (like a list), you can check if a specific item exists inside that iterable by using the `in` operator.
 
 ```python
 years = [2018, 2019, 2020, 2021]
@@ -825,21 +786,19 @@ print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```
 
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2\#main.py" %}
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-conditional-expressions-2#main.py" %}
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
+### Overview <a href="overview" id="overview"></a>
 
+You can use two types of loops in Python, a `for` loop and a `while` loop. A `for` loop iterates over a given sequence (iterator expression). A `while` loop repeats as long as a boolean context evaluates to `True`.
 
-### Overview <a id="overview"></a>
-
-You can use two types of loops in Python, a `for` loop and a `while` loop. A `for` loop iterates over a given sequence \(iterator expression\). A `while` loop repeats as long as a boolean context evaluates to `True`.
-
-The `break` statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the `break` statement is inside a nested loop \(loop inside another loop\), the `break` statement will only terminate the innermost loop.
+The `break` statement terminates the loop containing it. Control of the program flows to the statement immediately after the body of the loop. If the `break` statement is inside a nested loop (loop inside another loop), the `break` statement will only terminate the innermost loop.
 
 You can use the `continue` statement to skip the rest of the code inside a loop _for the current iteration only_. The loop does not terminate entirely but continues with the next iteration.
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 Here is an example of a few different ways you can use a `range` as the iterable for a `for` loop.
 
@@ -893,7 +852,7 @@ while True:
 
 You can also use a `continue` statement to skip the current block but not exit the loop entirely.
 
-```text
+```
 # Prints 1, 3, 5, 7
 for x in range(8):
     # if x is even, skip this block and do not print
@@ -902,19 +861,13 @@ for x in range(8):
     print(x)
 ```
 
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-2#main.py" %}
 
-
-
-
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-2\#main.py" %}
-
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
 ## Objective 12 - Create user-defined functions and call them
 
-
-
-To make our code more readable and DRY \(Don't Repeat Yourself\), we often want to encapsulate code inside a callable function.
+To make our code more readable and DRY (Don't Repeat Yourself), we often want to encapsulate code inside a callable function.
 
 To define a function in Python, we follow this syntax:
 
@@ -925,7 +878,7 @@ def function_name(argument_1, argument_2, etc.):
     # etc.
 ```
 
-### Follow Along <a id="follow-along"></a>
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
 Let's define a greeting function that allows us to specify a name and a specific greeting.
 
@@ -952,27 +905,19 @@ print(eight)
 # 8
 ```
 
-![](../../../.gitbook/assets/image%20%284%29%20%286%29%20%285%29%20%281%29%20%2810%29.png)
+![](<../../../.gitbook/assets/image (4) (6) (5) (1) (10).png>)
 
-
-
-{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-3\#main.py" %}
-
-
+{% embed url="https://replit.com/@bgoonz/cs-unit-1-sprint-1-module-1-loops-3#main.py" %}
 
 {% embed url="https://gist.github.com/bgoonz/4f5c0b5fe80a84421ff9a5a66dce29da" %}
 
+### Overview <a href="overview" id="overview"></a>
 
+Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program's flow. Python's boolean values are written as `True` and `False` (make sure you capitalize the first character).
 
+### Follow Along <a href="follow-along" id="follow-along"></a>
 
-
-### Overview <a id="overview"></a>
-
-Python uses boolean values to evaluate conditions. An expression in any Boolean context will evaluate to a Boolean value and then control your program's flow. Python's boolean values are written as `True` and `False` \(make sure you capitalize the first character\).
-
-### Follow Along <a id="follow-along"></a>
-
-To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` \(less than\), `>` \(greater than\), `<=` \(less than or equal\), `>=` \(greater than or equal\), and `!=` \(not equal\).
+To compare the value of two expressions for equality, you use the `==` operator. You can also use `<` (less than), `>` (greater than), `<=` (less than or equal), `>=` (greater than or equal), and `!=` (not equal).
 
 ```python
 x = 10
@@ -997,7 +942,7 @@ if name == "Elon" or name == "Bill":
     print("Your name is either Elon or Bill.")
 ```
 
-Any time you have an iterable object \(like a list\), you can check if a specific item exists inside that iterable by using the `in` operator.
+Any time you have an iterable object (like a list), you can check if a specific item exists inside that iterable by using the `in` operator.
 
 ```python
 years = [2018, 2019, 2020, 2021]
@@ -1047,6 +992,3 @@ There is also the `not` operator, which inverts the boolean that follows it:
 print(not False)    # True
 print(not (1 == 1)) # False because 1 == 1 is True and then is inverted by not
 ```
-
-
-

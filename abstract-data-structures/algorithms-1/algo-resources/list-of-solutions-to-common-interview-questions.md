@@ -2,13 +2,9 @@
 
 {% embed url="https://replit.com/@bgoonz/algo-problems" %}
 
-
-
 {% tabs %}
 {% tab title="DS-Algo Navigation" %}
-
-
-#### Abstract Data Structures
+**Abstract Data Structures**
 
 * [Algorithms](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/README)
   * [Dijkstra's algorithm](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/algorithms-1/dijkstras-algorithm)
@@ -40,10 +36,10 @@
     * [Overflow Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/overflow-practice-problems)
     * [Graphs Explained](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graphs-explained)
     * [Earliest Ancestor](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/earliest-ancestor)
-    * [\_Mini Graph-Projects](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/README)
-      * [\# Social Graph](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/social-graph)
-      * [number of 1 islands](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/number-of-1-islands)
-      * [Searching and Generating Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/_mini-graph-projects/searching-and-generating-graphs)
+    * [\_Mini Graph-Projects](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/\_mini-graph-projects/README)
+      * [# Social Graph](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/\_mini-graph-projects/social-graph)
+      * [number of 1 islands](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/\_mini-graph-projects/number-of-1-islands)
+      * [Searching and Generating Graphs](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/\_mini-graph-projects/searching-and-generating-graphs)
     * [Graph FAQ](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/README)
       * [Graph DFS](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/graph-faq/graph-dfs)
     * [Connected Components](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-1/connected-components)
@@ -66,7 +62,7 @@
     * [In Order Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/in-order-traversal)
     * [Tree Equal ?](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-equal)
     * [Ternary-search-trees](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/ternary-search-trees)
-    * [Red\_Black Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red_black-tree)
+    * [Red\_Black Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/red\_black-tree)
     * [Tree Mirror:](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-mirror)
     * [Tree Traversal](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/tree/tree-traversal)
   * [Recursion](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-6/README)
@@ -76,7 +72,7 @@
     * [Linked List Background](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/untitled)
     * [Double Linked List](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/double-linked-list)
     * [List Example](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-example)
-    * [Examples \(LL\) continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
+    * [Examples (LL) continued](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/examples-ll-continued)
     * [List Operations](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-4/list-operations)
   * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/README)
     * [Set](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/set/set)
@@ -97,9 +93,9 @@
     * [Stack Part 3](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/stack/stack-part-3)
   * [Searching](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/README)
     * [Binary Search](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/binary-search)
-    * [Searching & Sorting Computational Complexity \(JS\)](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
+    * [Searching & Sorting Computational Complexity (JS)](https://bryan-guner.gitbook.io/datastructures-in-pytho/abstract-data-structures/untitled-1/untitled-2/searching-and-sorting-computational-complexity-js)
 
-#### practice
+**practice**
 
 * [GCA Sprint Prep:](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/README)
   * [Practice Problems](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/gca-sprint-prep/practice-problems)
@@ -112,12 +108,11 @@
     * [Write a Program to Find the Maximum Depth or Height of a Tree](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/industry-standard-algorithms/write-a-program-to-find-the-maximum-depth-or-height-of-a-tree)
   * [Random Examples](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/random-examples)
   * [Prompts](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/prompts)
-  * [JS\_BASICS](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js_basics)
+  * [JS\_BASICS](https://bryan-guner.gitbook.io/datastructures-in-pytho/practice/supplemental-practice/js\_basics)
 {% endtab %}
 
 {% tab title="Dynamic Programming" %}
 ```python
-
 """
 Climbing Staircase
 
@@ -1838,15 +1833,18 @@ print(
         ],
     )
 )
+```
 
 ```
+</div>
+
+<div data-gb-custom-block data-tag="tab" data-title='Second Tab'>
+
+</div>
+
+</div>
+
+
 ```
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
 {% endtab %}
 {% endtabs %}
-
-
-

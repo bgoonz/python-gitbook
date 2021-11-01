@@ -441,26 +441,21 @@ def dfs(rooms, i, j, depth):
     dfs(rooms, i, j + 1, depth + 1)
     dfs(rooms, i, j - 1, depth + 1)
 
-
 ```
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
 {% endtab %}
 {% endtabs %}
 
-#### Introduction <a id="introduction"></a>
+#### Introduction <a href="introduction" id="introduction"></a>
 
 Originating from mathematics, graphs are now widely used data structures in Computer Science. One of the first problems we encounter when constructing any algorithm regarding Graph processing or traversal, is _how we represent the graph_ and then, how to _traverse that representation_.
 
-> Graph traversal is not a trivial problem, and given the difficulty of the task - many algorithms have been devised for efficient \(yet not perfect\) graph traversal.
+> Graph traversal is not a trivial problem, and given the difficulty of the task - many algorithms have been devised for efficient (yet not perfect) graph traversal.
 
-In this guide, we'll take a look at one of the two fundamental and simplest algorithms for Graph traversal - _**Depth-First Search \(DFS\).**_ It's the most commonly used algorithm alongside the related _**Breadth-First Search \(BFS\)**_ given their simplicity. After going over the main idea used for DFS, we'll implement it in Python on a Graph representation - an _**adjacency list**_.
+In this guide, we'll take a look at one of the two fundamental and simplest algorithms for Graph traversal - _**Depth-First Search (DFS).**_ It's the most commonly used algorithm alongside the related _**Breadth-First Search (BFS)**_ given their simplicity. After going over the main idea used for DFS, we'll implement it in Python on a Graph representation - an _**adjacency list**_.
 
-#### Depth-First Search - Theory <a id="depthfirstsearchtheory"></a>
+#### Depth-First Search - Theory <a href="depthfirstsearchtheory" id="depthfirstsearchtheory"></a>
 
-_**Depth-First Search \(DFS\)**_ is an algorithm used to _**traverse**_ or locate a _**target**_ node in a graph or tree data structure. It priorities _depth_ and searches along one branch, as far as it can go - until the end of that branch. Once there, it **backtracks** to the first possible divergence from that branch, and searches until the end of _that_ branch, repeating the process.
+_**Depth-First Search (DFS)**_ is an algorithm used to _**traverse**_ or locate a _**target**_ node in a graph or tree data structure. It priorities _depth_ and searches along one branch, as far as it can go - until the end of that branch. Once there, it **backtracks** to the first possible divergence from that branch, and searches until the end of _that_ branch, repeating the process.
 
 Given the nature of the algorithm, you can easily implement it recursively - and you can always implement a recursive algorithm iteratively as well:
 
@@ -470,14 +465,14 @@ The _**start node**_ is the _**root node**_ for _tree data structures_, while wi
 
 DFS is widely-used as a part of many other algorithms that resolve graph-represented problems. From cycle searches, path finding, topological sorting, to finding articulation points and strongly connected components. The reason behind this widespread use of the DFS algorithm lays in its overall simplicity and easy recursive implementation.
 
-#### The DFS Algorithm <a id="thedfsalgorithm"></a>
+#### The DFS Algorithm <a href="thedfsalgorithm" id="thedfsalgorithm"></a>
 
 The DFS algorithm is pretty simple and consists of the following steps:
 
 1. Mark the current node as **visited**.
 2. Traverse the **neighbouring** nodes that _aren't visited_ and recursively call the DFS function for that node.
 
-The algorithm stops either when the target node is found, or the whole graph has been **traversed** \(all nodes are visited\).
+The algorithm stops either when the target node is found, or the whole graph has been **traversed** (all nodes are visited).
 
 > Since graphs can have **cycles**, we'll need a system to avoid them so we don't fall into infinity loops. That's why we "mark" every node we pass as **visited** by adding them to a `Set` containing only unique entries.
 
@@ -487,7 +482,7 @@ By marking nodes as "visited", if we ever encounter that node again - we're in a
 
 Given these steps, we can summarize DFS in pseudocode:
 
-```text
+```
 DFS(G, u):
     # Input processing
     u.visited = true
@@ -501,11 +496,11 @@ DFS(G, u):
 
 With this view, you can really start to appreciate just how simple yet useful this algorithm is.
 
-#### Depth-First Search - Implementation <a id="depthfirstsearchimplementation"></a>
+#### Depth-First Search - Implementation <a href="depthfirstsearchimplementation" id="depthfirstsearchimplementation"></a>
 
 Depth-First Search implementation is usually **recursive** in code given how natural of a pair that is, but it can also be easily implemented non-recursively. We'll be using the recursive method as it's simpler and more fitting:
 
-```text
+```
 def dfs(adj_list, start, target, path, visited = set()):
     path.append(start)
     visited.add(start)
@@ -526,11 +521,11 @@ We saved the recursion result in a variable - in the case it returns `None` that
 
 In the end, if we find ourselves outside of the `for` loop, it means that all the neighbour branches of the current node have been visited and none of them lead to our target node. So, we remove the current node from the path, and return `None` as result.
 
-#### Running DFS <a id="runningdfs"></a>
+#### Running DFS <a href="runningdfs" id="runningdfs"></a>
 
 Let's illustrate how the code works through an example. We'll be using a Python **dictionary** to represent the graph as an adjacency list. Here's the graph we'll be using in the following example:
 
-```text
+```
 adj_list = {
     0 : [1, 2],
     1 : [0, 3],
@@ -554,29 +549,29 @@ We're searching for a path from node `0` to node `3`, if it exists, the path wil
 traversal_path = []
 ```
 
-```text
+```
 traversal_path = dfs(adj_list, 0, 3, traversal_path)
 print(traversal_path)
 ```
 
 The steps our algorithm will take are as follows:
 
-* Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it's not, continue and traverse it's neighbours \(`1` and `2`\).
+* Add node `0` to the traversal path and mark it as visited. Check if node `0` is equal to target node `3`, since it's not, continue and traverse it's neighbours (`1` and `2`).
 * Is neighbour `1` visited? - No. Then, the algorithm calls the function recursively for that node.
-  * Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it's neighbours \(`0` and `3`\).
+  * Recursive call for node `1`: Add node `1` to the traversal path and mark it as visited, . Is `1` equal to our target node `3`? - No, continue and traverse it's neighbours (`0` and `3`).
   * Is neighbour `0` visited? - Yes, move onto the next one.
   * Is neighbour `3` visited? - No, call the function recursively for this node.
     * Recursive call for node `3`: Add node `3` to the traversal path and mark it as visited. Is `3` equal to our target node `3`? - Yes, target node has been found, return the traversal path.
 
-| Current Node | Path | Visited |
-| :--- | :--- | :--- |
-| `0` | \[`0`\] | {`0`} |
-| `1` | \[`0`, `1`\] | {`0`, `1`} |
-| `3` | \[`0`, `1`, `3`\] | {`0`, `1`, `3`} |
+| Current Node | Path             | Visited         |
+| ------------ | ---------------- | --------------- |
+| `0`          | \[`0`]           | {`0`}           |
+| `1`          | \[`0`, `1`]      | {`0`, `1`}      |
+| `3`          | \[`0`, `1`, `3`] | {`0`, `1`, `3`} |
 
 The algorithm stops and our program prints out the resulting traversal path from node `0` to node `3`:
 
-```text
+```
 [0, 1, 3]
 ```
 
@@ -592,7 +587,6 @@ In case there was no path between the start and target node, the traversal path 
 
 For example in this graph, if we were to start DFS from node `0` to node `4`, there would be no such path because it has no way of getting to the target node.
 
-#### Conclusion <a id="conclusion"></a>
+#### Conclusion <a href="conclusion" id="conclusion"></a>
 
 In this article we've explained the theory behind the Depth-First Search algorithm. We've depicted the widely-used recursive Python implementation, and went over the borderline cases for which the algorithm will not work properly.
-

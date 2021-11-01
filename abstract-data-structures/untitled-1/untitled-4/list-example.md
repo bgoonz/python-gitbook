@@ -70,7 +70,6 @@ dLL.prependNode(4)
 
 dLL.printList()
 
-
 ```
 {% endtab %}
 
@@ -142,7 +141,6 @@ dLL.prependNode(3)
 dLL.prependNode(4)
 
 dLL.printList()
-
 ```
 {% endtab %}
 
@@ -261,10 +259,6 @@ sLL = SingleLinkedList()
 
 # print('List Length: {}'.format(sLL.length))
 # print([ m for m in dir(sLL) if not m.startswith('__')])
-
 ```
 {% endtab %}
 {% endtabs %}
-
-
-

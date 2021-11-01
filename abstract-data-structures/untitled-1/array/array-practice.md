@@ -876,6 +876,4 @@ def two_sum(array, target):
             dic[target - num] = i
     return None
 
-
 ```
-

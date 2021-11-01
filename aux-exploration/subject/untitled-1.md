@@ -2,7 +2,7 @@
 
 \*\*\*\*
 
-Data structures are **vital building blocks** for efficient, real-world problem solving. Data structures are proven and optimized tools that give you an easy frame to organize your programs. After all, there’s no need for you to remake the wheel \(or structure\) every time you need it.
+Data structures are **vital building blocks** for efficient, real-world problem solving. Data structures are proven and optimized tools that give you an easy frame to organize your programs. After all, there’s no need for you to remake the wheel (or structure) every time you need it.
 
 Each data structure has a task or situation it is **most suited to solve**. Python has 4 built-in data structures, lists, dictionaries, tuples, and sets. These built-in data structures come with default methods and behind the scenes optimizations that make them easy to use.
 
@@ -11,12 +11,11 @@ Most data structures in Python are modified forms of these or use the built-in s
 * **List**: Array-like structures that let you save a set of mutable objects of the same type to a variable.
 * **Tuple**: Tuples are immutable lists, meaning the elements cannot be changed. It’s declared with parenthesis instead of square brackets.
 * **Set**: Sets are unordered collections, meaning that elements are unindexed and have no set sequence. They’re declared with curly braces.
-* **Dictionary \(dict\)**: Similar to hashmap or hash tables in other languages, a dictionary is a collection of key/value pairs. You initialize an empty dictionary with empty curly braces and fill it with colon separated keys and values. All keys are unique, immutable objects.
+* **Dictionary (dict)**: Similar to hashmap or hash tables in other languages, a dictionary is a collection of key/value pairs. You initialize an empty dictionary with empty curly braces and fill it with colon separated keys and values. All keys are unique, immutable objects.
 
-Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.  
+Now, let’s see how we can use these structures to create all the advanced structures interviewers are looking for.
 
-
-### Arrays \(Lists\) in Python
+### Arrays (Lists) in Python
 
 Python does not have a built in [array](https://www.educative.io/blog/data-structures-arrays-javascript-tutorial) type, but you can use lists for all of the same tasks. An array is a collection of values of the **same type saved under the same name**.
 
@@ -26,7 +25,7 @@ Unlike programming languages like Java that have static arrays after declaration
 
 For example, we could use the `append()` method to add an additional element on the end of an existing array instead of declaring a new array.
 
-This makes Python arrays particularly easy to use and adaptable on the fly.1234567cars = \["Toyota", "Tesla", "Hyundai"\]print\(len\(cars\)\)cars.append\("Honda"\)cars.pop\(1\)for x in cars:  print\(x\)Run
+This makes Python arrays particularly easy to use and adaptable on the fly.1234567cars = \["Toyota", "Tesla", "Hyundai"]print(len(cars))cars.append("Honda")cars.pop(1)for x in cars: print(x)Run
 
 **Advantages:**
 
@@ -36,7 +35,7 @@ This makes Python arrays particularly easy to use and adaptable on the fly.12345
 
 **Disadvantages:**
 
-* Not optimized for scientific data \(unlike NumPy’s array\)
+* Not optimized for scientific data (unlike NumPy’s array)
 * Can only manipulate the rightmost end of the list
 
 **Applications:**
@@ -55,13 +54,13 @@ This makes Python arrays particularly easy to use and adaptable on the fly.12345
 
 ### Queues in Python
 
-[Queues](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a linear data structure that store data in a “first in, first out” \(FIFO\) order. Unlike arrays, you cannot access elements by index and instead can **only pull the next oldest element**. This makes it great for order-sensitive tasks like online order processing or voicemail storage.
+[Queues](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a linear data structure that store data in a “first in, first out” (FIFO) order. Unlike arrays, you cannot access elements by index and instead can **only pull the next oldest element**. This makes it great for order-sensitive tasks like online order processing or voicemail storage.
 
 You can think of a queue as a line at the grocery store; the cashier does not choose who to check out next but rather processes the person who has stood in line the longest.
 
 We could use a Python list with `append()` and `pop()` methods to implement a queue. However, this is inefficient because lists must shift all elements by one index whenever you add a new element to the beginning.
 
-Instead, it’s best practice to use the `deque` class from Python’s `collections` module. Deques are optimized for the append and pop operations. The deque implementation also allows you to create double-ended queues, which can access both sides of the queue through the `popleft()` and `popright()` methods.1234567891011121314151617181920212223242526from collections import deque \# Initializing a queueq = deque\(\) \# Adding elements to a queueq.append\('a'\)q.append\('b'\)q.append\('c'\) print\("Initial queue"\)print\(q\) \# Removing elements from a queueprint\("\nElements dequeued from the queue"\)print\(q.popleft\(\)\)print\(q.popleft\(\)\)print\(q.popleft\(\)\) print\("\nQueue after removing elements"\)print\(q\) \# Uncommenting q.popleft\(\)\# will raise an IndexError\# as queue is now emptyRun
+Instead, it’s best practice to use the `deque` class from Python’s `collections` module. Deques are optimized for the append and pop operations. The deque implementation also allows you to create double-ended queues, which can access both sides of the queue through the `popleft()` and `popright()` methods.1234567891011121314151617181920212223242526from collections import deque # Initializing a queueq = deque() # Adding elements to a queueq.append('a')q.append('b')q.append('c') print("Initial queue")print(q) # Removing elements from a queueprint("\nElements dequeued from the queue")print(q.popleft())print(q.popleft())print(q.popleft()) print("\nQueue after removing elements")print(q) # Uncommenting q.popleft()# will raise an IndexError# as queue is now emptyRun
 
 **Advantages:**
 
@@ -87,11 +86,11 @@ Instead, it’s best practice to use the `deque` class from Python’s `collecti
 
 ### Stacks in Python
 
-[Stacks](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a sequential data structure that act as the Last-in, First-out \(LIFO\) version of queues. The last element inserted in a stack is considered at the **top of the stack** and is the only accessible element. To access a middle element, you must first remove enough elements to make the desired element the top of the stack.
+[Stacks](https://www.educative.io/blog/data-structures-stack-queue-java-tutorial) are a sequential data structure that act as the Last-in, First-out (LIFO) version of queues. The last element inserted in a stack is considered at the **top of the stack** and is the only accessible element. To access a middle element, you must first remove enough elements to make the desired element the top of the stack.
 
 Many developers imagine stacks as a stack of dinner plates; you can add or remove plates to the top of the stack but must move the whole stack to place one at the bottom.
 
-Adding elements is known as a **push,** and removing elements is known as a **pop**. You can implement stacks in Python using the built-in list structure. With list implementation, push operations use the `append()` method, and pop operations use `pop()`.1234567891011121314151617181920212223242526stack = \[\] \# append\(\) function to push\# element in the stackstack.append\('a'\)stack.append\('b'\)stack.append\('c'\) print\('Initial stack'\)print\(stack\) \# pop\(\) function to pop\# element from stack in \# LIFO orderprint\('\nElements popped from stack:'\)print\(stack.pop\(\)\)print\(stack.pop\(\)\)print\(stack.pop\(\)\) print\('\nStack after elements are popped:'\)print\(stack\) \# uncommenting print\(stack.pop\(\)\)  \# will cause an IndexError \# as the stack is now emptyRun
+Adding elements is known as a **push,** and removing elements is known as a **pop**. You can implement stacks in Python using the built-in list structure. With list implementation, push operations use the `append()` method, and pop operations use `pop()`.1234567891011121314151617181920212223242526stack = \[] # append() function to push# element in the stackstack.append('a')stack.append('b')stack.append('c') print('Initial stack')print(stack) # pop() function to pop# element from stack in # LIFO orderprint('\nElements popped from stack:')print(stack.pop())print(stack.pop())print(stack.pop()) print('\nStack after elements are popped:')print(stack) # uncommenting print(stack.pop()) # will cause an IndexError # as the stack is now emptyRun
 
 **Advantages:**
 
@@ -129,7 +128,7 @@ Linked lists can be singly or doubly linked depending if each node has just a si
 
 You can think of linked lists like a chain; individual links only have a connection to their immediate neighbors but all the links together form a larger structure.
 
-Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.12345678910111213141516171819class Node:    def \_\_init\_\_\(self, dataval=None\):        self.dataval = dataval        self.nextval = None class SLinkedList:    def \_\_init\_\_\(self\):        self.headval = None list1 = SLinkedList\(\)list1.headval = Node\("Mon"\)e2 = Node\("Tue"\)e3 = Node\("Wed"\)\# Link first Node to second nodelist1.headval.nextval = e2 \# Link second Node to third nodee2.nextval = e3Run
+Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.12345678910111213141516171819class Node: def \_\_init\_\_(self, dataval=None): self.dataval = dataval self.nextval = None class SLinkedList: def \_\_init\_\_(self): self.headval = None list1 = SLinkedList()list1.headval = Node("Mon")e2 = Node("Tue")e3 = Node("Wed")# Link first Node to second nodelist1.headval.nextval = e2 # Link second Node to third nodee2.nextval = e3Run
 
 Linked lists are primarily used to create advanced data structures like graphs and trees or for tasks that require frequent addition/deletion of elements across the structure.
 
@@ -191,9 +190,7 @@ Circular linked lists are great for processes that loop for a long time like CPU
 
 Practiced knowledge of data structures is essential for any interviewee. Educative’s text-based courses give you hundreds of hands-on practice problems to ensure you’re ready when the time comes.
 
-[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)  
-  
-
+[**Ace the Python Coding Interview**](https://www.educative.io/path/ace-python-coding-interview)
 
 ### Trees in Python
 
@@ -212,7 +209,7 @@ The most common application of the binary tree is a **binary search tree**. Bina
 > * Left and right subtrees must also be a binary search tree. They must follow the above rules with the “root” of their tree.
 > * There can be no duplicate nodes, i.e. no two nodes can have the same value.
 
-12345678910111213141516171819202122232425262728293031class Node:     def \_\_init\_\_\(self, data\):         self.left = None        self.right = None        self.data = data     def insert\(self, data\):\# Compare the new value with the parent node        if self.data:            if data &lt; self.data:                if self.left is None:                    self.left = Node\(data\)                else:                    self.left.insert\(data\)            elif data &gt; self.data:                if self.right is None:                    self.right = Node\(data\)                else:                    self.right.insert\(data\)        else:            self.data = data \# Print the tree    def PrintTree\(self\):        if self.left:            self.left.PrintTree\(\)        print\( self.data\),        if self.right:            self.right.PrintTree\(\)Run
+12345678910111213141516171819202122232425262728293031class Node: def \_\_init\_\_(self, data): self.left = None self.right = None self.data = data def insert(self, data):# Compare the new value with the parent node if self.data: if data < self.data: if self.left is None: self.left = Node(data) else: self.left.insert(data) elif data > self.data: if self.right is None: self.right = Node(data) else: self.right.insert(data) else: self.data = data # Print the tree def PrintTree(self): if self.left: self.left.PrintTree() print( self.data), if self.right: self.right.PrintTree()Run
 
 **Advantages:**
 
@@ -220,11 +217,11 @@ The most common application of the binary tree is a **binary search tree**. Bina
 * Dynamic size, great at scale
 * Quick insert and delete operations
 * In a binary search tree, inserted nodes are sequenced immediately.
-* Binary search trees are efficient at searches; length is only O\(height\)O\(height\).
+* Binary search trees are efficient at searches; length is only O(height)O(height).
 
 **Disadvantages:**
 
-* Time expensive, O\(logn\)4O\(logn\)4, to modify or “balance” trees or retrieve elements from a known location
+* Time expensive, O(logn)4O(logn)4, to modify or “balance” trees or retrieve elements from a known location
 * Child nodes hold no information on their parent node and can be hard to traverse backwards
 * Only works for lists that are sorted. Unsorted data degrades into linear search.
 
@@ -243,7 +240,7 @@ The most common application of the binary tree is a **binary search tree**. Bina
 
 ### Graphs in Python
 
-[Graphs](https://www.educative.io/blog/graph-algorithms-tutorial) are a data structure used to represent a visual of relationships between data **vertices** \(the Nodes of a graph\). The links that connect vertices together are called **edges**.
+[Graphs](https://www.educative.io/blog/graph-algorithms-tutorial) are a data structure used to represent a visual of relationships between data **vertices** (the Nodes of a graph). The links that connect vertices together are called **edges**.
 
 Edges define which vertices are connected but does not indicate a direction flow between them. Each vertex has connections to other vertices which are saved on the vertex as a comma-separated list.Undirected
 
@@ -253,12 +250,12 @@ They’re primarily used to convey visual web-structure networks in code form. T
 
 When written in plain text, graphs have a list of vertices and edges:
 
-```text
+```
 V = {a, b, c, d, e}
 E = {ab, ac, bd, cd, de}
 ```
 
-In Python, graphs are best implemented using a dictionary with the name of each vertex as a key and the edges list as the values.12345678910\# Create the dictionary with graph elementsgraph = { "a" : \["b","c"\],                 "b" : \["a", "d"\],                 "c" : \["a", "d"\],                  "d" : \["e"\],                  "e" : \["d"\]         } \# Print the graph          print\(graph\)Run
+In Python, graphs are best implemented using a dictionary with the name of each vertex as a key and the edges list as the values.12345678910# Create the dictionary with graph elementsgraph = { "a" : \["b","c"], "b" : \["a", "d"], "c" : \["a", "d"], "d" : \["e"], "e" : \["d"] } # Print the graph print(graph)Run
 
 **Advantages:**
 
@@ -296,7 +293,7 @@ The table then uses the hash to find the general location of the desired value, 
 
 Beyond this general framework, hash tables can be very different depending on the application. Some may allow keys from different data types, while some may have differently setup buckets or different hash functions.
 
-Here is an example of a hash table in Python code:12345678910111213141516171819202122232425262728293031import pprintclass Hashtable:    def \_\_init\_\_\(self, elements\):        self.bucket\_size = len\(elements\)        self.buckets = \[\[\] for i in range\(self.bucket\_size\)\]        self.\_assign\_buckets\(elements\)    def \_assign\_buckets\(self, elements\):        for key, value in elements: \#calculates the hash of each key            hashed\_value = hash\(key\)            index = hashed\_value % self.bucket\_size \# positions the element in the bucket using hash            self.buckets\[index\].append\(\(key, value\)\) \#adds a tuple in the bucket    def get\_value\(self, input\_key\):        hashed\_value = hash\(input\_key\)        index = hashed\_value % self.bucket\_size        bucket = self.buckets\[index\]        for key, value in bucket:            if key == input\_key:                return\(value\)        return None    def \_\_str\_\_\(self\):        return pprint.pformat\(self.buckets\) \# pformat returns a printable representation of the objectif \_\_name\_\_ == "\_\_main\_\_":     capitals = \[        \('France', 'Paris'\),        \('United States', 'Washington D.C.'\),        \('Italy', 'Rome'\),        \('Canada', 'Ottawa'\)    \]hashtable = Hashtable\(capitals\)print\(hashtable\)print\(f"The capital of Italy is {hashtable.get\_value\('Italy'\)}"\)Run
+Here is an example of a hash table in Python code:12345678910111213141516171819202122232425262728293031import pprintclass Hashtable: def \_\_init\_\_(self, elements): self.bucket\_size = len(elements) self.buckets = \[\[] for i in range(self.bucket\_size)] self.\_assign\_buckets(elements) def \_assign\_buckets(self, elements): for key, value in elements: #calculates the hash of each key hashed\_value = hash(key) index = hashed\_value % self.bucket\_size # positions the element in the bucket using hash self.buckets\[index].append((key, value)) #adds a tuple in the bucket def get\_value(self, input\_key): hashed\_value = hash(input\_key) index = hashed\_value % self.bucket\_size bucket = self.buckets\[index] for key, value in bucket: if key == input\_key: return(value) return None def \_\_str\_\_(self): return pprint.pformat(self.buckets) # pformat returns a printable representation of the objectif \_\_name\_\_ == "\_\_main\_\_": capitals = \[ ('France', 'Paris'), ('United States', 'Washington D.C.'), ('Italy', 'Rome'), ('Canada', 'Ottawa') ]hashtable = Hashtable(capitals)print(hashtable)print(f"The capital of Italy is {hashtable.get\_value('Italy')}")Run
 
 **Advantages:**
 
@@ -319,7 +316,7 @@ Here is an example of a hash table in Python code:123456789101112131415161718192
 
 #### Common hash table interview questions in Python
 
-* Build a hash table from scratch \(without built-in functions\)
+* Build a hash table from scratch (without built-in functions)
 * Word formation using a hash table
 * Find two numbers that add up to “k”
 * Implement open addressing for collision handling
@@ -343,17 +340,17 @@ However, Python’s naming convention doesn’t provide the same level of clarit
 
 ### Dictionaries, Maps, and Hash Tables
 
-In Python, [dictionaries](https://realpython.com/python-dicts/) \(or **dicts** for short\) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary **key**.
+In Python, [dictionaries](https://realpython.com/python-dicts/) (or **dicts** for short) are a central data structure. Dicts store an arbitrary number of objects, each identified by a unique dictionary **key**.
 
 Dictionaries are also often called **maps**, **hashmaps**, **lookup tables**, or **associative arrays**. They allow for the efficient lookup, insertion, and deletion of any object associated with a given key.
 
-Phone books make a decent real-world analog for dictionary objects. They allow you to quickly retrieve the information \(phone number\) associated with a given key \(a person’s name\). Instead of having to read a phone book front to back to find someone’s number, you can jump more or less directly to a name and look up the associated information.
+Phone books make a decent real-world analog for dictionary objects. They allow you to quickly retrieve the information (phone number) associated with a given key (a person’s name). Instead of having to read a phone book front to back to find someone’s number, you can jump more or less directly to a name and look up the associated information.
 
 This analogy breaks down somewhat when it comes to _how_ the information is organized to allow for fast lookups. But the fundamental performance characteristics hold. Dictionaries allow you to quickly find the information associated with a given key.
 
 Dictionaries are one of the most important and frequently used data structures in computer science. So, how does Python handle dictionaries? Let’s take a tour of the dictionary implementations available in core Python and the Python standard library.
 
-```python
+````python
 ### `dict`: Your Go-To Dictionary[](https://realpython.com/python-data-structures/#dict-your-go-to-dictionary "Permanent link")
 
 Because dictionaries are so important, Python features a robust dictionary implementation that’s built directly into the core language: the [`dict`](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict) data type.
@@ -381,24 +378,23 @@ Python also provides some useful **syntactic sugar** for working with dictionari
  squares
 {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}` 
 
-
-```
+````
 
 #### \`\`
 
 There are some restrictions on which objects can be used as valid keys.
 
-Python’s dictionaries are indexed by keys that can be of any [hashable](https://docs.python.org/3/glossary.html#term-hashable) type. A **hashable** object has a hash value that never changes during its lifetime \(see `__hash__`\), and it can be compared to other objects \(see `__eq__`\). Hashable objects that compare as equal must have the same hash value.
+Python’s dictionaries are indexed by keys that can be of any [hashable](https://docs.python.org/3/glossary.html#term-hashable) type. A **hashable** object has a hash value that never changes during its lifetime (see `__hash__`), and it can be compared to other objects (see `__eq__`). Hashable objects that compare as equal must have the same hash value.
 
 [**Immutable** types](https://realpython.com/courses/immutability-python/) like [strings](https://realpython.com/python-strings/) and [numbers](https://realpython.com/python-data-types/) are hashable and work well as dictionary keys. You can also use [`tuple` objects](https://realpython.com/python-lists-tuples/#python-tuples) as dictionary keys as long as they contain only hashable types themselves.
 
-For most use cases, Python’s built-in dictionary implementation will do everything you need. Dictionaries are highly optimized and underlie many parts of the language. For example, [class attributes](https://realpython.com/python-scope-legb-rule/#class-and-instance-attributes-scope) and variables in a [stack frame](https://en.wikipedia.org/wiki/Call_stack#Structure) are both stored internally in dictionaries.
+For most use cases, Python’s built-in dictionary implementation will do everything you need. Dictionaries are highly optimized and underlie many parts of the language. For example, [class attributes](https://realpython.com/python-scope-legb-rule/#class-and-instance-attributes-scope) and variables in a [stack frame](https://en.wikipedia.org/wiki/Call\_stack#Structure) are both stored internally in dictionaries.
 
-Python dictionaries are based on a well-tested and finely tuned hash table implementation that provides the performance characteristics you’d expect: _O_\(1\) time complexity for lookup, insert, update, and delete operations in the average case.
+Python dictionaries are based on a well-tested and finely tuned hash table implementation that provides the performance characteristics you’d expect: _O_(1) time complexity for lookup, insert, update, and delete operations in the average case.
 
-There’s little reason not to use the standard `dict` implementation included with Python. However, specialized third-party dictionary implementations exist, such as [skip lists](https://en.wikipedia.org/wiki/Skip_list) or [B-tree–based](https://en.wikipedia.org/wiki/B-tree) dictionaries.
+There’s little reason not to use the standard `dict` implementation included with Python. However, specialized third-party dictionary implementations exist, such as [skip lists](https://en.wikipedia.org/wiki/Skip\_list) or [B-tree–based](https://en.wikipedia.org/wiki/B-tree) dictionaries.
 
-Besides plain `dict` objects, Python’s standard library also includes a number of specialized dictionary implementations. These specialized dictionaries are all based on the built-in dictionary class \(and share its performance characteristics\) but also include some additional convenience features.
+Besides plain `dict` objects, Python’s standard library also includes a number of specialized dictionary implementations. These specialized dictionaries are all based on the built-in dictionary class (and share its performance characteristics) but also include some additional convenience features.
 
 Let’s take a look at them.
 
@@ -504,7 +500,7 @@ KeyError: 'missing'`
 
 [`MappingProxyType`](https://docs.python.org/3/library/types.html#types.MappingProxyType) is a wrapper around a standard dictionary that provides a read-only view into the wrapped dictionary’s data. This class was added in Python 3.3 and can be used to create immutable proxy versions of dictionaries.
 
-`````pyMappingProxyType``` can be helpful if, for example, you’d like to return a dictionary carrying internal state from a class or module while discouraging write access to this object. Using `MappingProxyType` allows you to put these restrictions in place without first having to create a full copy of the dictionary:
+\`\`\`\`\`pyMappingProxyType\`\`\` can be helpful if, for example, you’d like to return a dictionary carrying internal state from a class or module while discouraging write access to this object. Using `MappingProxyType` allows you to put these restrictions in place without first having to create a full copy of the dictionary:
 
 ```python
  from types import MappingProxyType
@@ -553,13 +549,13 @@ But before we jump in, let’s cover some of the basics first. How do arrays wor
 
 [![Visual representation of an array](https://files.realpython.com/media/python-linked-list-array-visualization.5b9f4c4040cb.jpeg)](https://files.realpython.com/media/python-linked-list-array-visualization.5b9f4c4040cb.jpeg)
 
-Because arrays store information in adjoining blocks of memory, they’re considered **contiguous** data structures \(as opposed to **linked** data structures like linked lists, for example\).
+Because arrays store information in adjoining blocks of memory, they’re considered **contiguous** data structures (as opposed to **linked** data structures like linked lists, for example).
 
 A real-world analogy for an array data structure is a parking lot. You can look at the parking lot as a whole and treat it as a single object, but inside the lot there are parking spots indexed by a unique number. Parking spots are containers for vehicles—each parking spot can either be empty or have a car, a motorbike, or some other vehicle parked on it.
 
 But not all parking lots are the same. Some parking lots may be restricted to only one type of vehicle. For example, a motor home parking lot wouldn’t allow bikes to be parked on it. A restricted parking lot corresponds to a **typed** array data structure that allows only elements that have the same data type stored in them.
 
-Performance-wise, it’s very fast to look up an element contained in an array given the element’s index. A proper array implementation guarantees a constant _O_\(1\) access time for this case.
+Performance-wise, it’s very fast to look up an element contained in an array given the element’s index. A proper array implementation guarantees a constant _O_(1) access time for this case.
 
 Python includes several array-like data structures in its standard library that each have slightly different characteristics. Let’s take a look.
 
@@ -574,7 +570,6 @@ Python lists can hold arbitrary elements—everything is an object in Python, in
 This can be a powerful feature, but the downside is that supporting multiple data types at the same time means that data is generally less tightly packed. As a result, the whole structure takes up more space:
 
 ```python
-
 
  arr = ["one", "two", "three"]
 
@@ -650,8 +645,8 @@ TypeError: 'tuple' object doesn't support item deletion
  arr + (23,)
 ('one', 'two', 'three', 23)` 
 ```
-```
 
+````
 #### `array.array`: Basic Typed Arrays
 
 Python’s `array` module provides space-efficient storage of basic C-style data types like bytes, 32-bit integers, floating-point numbers, and so on.
@@ -703,9 +698,9 @@ array('f', [1.0, 2.0, 2.5, 42.0])
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: must be real number, not str` 
-```
-```
+````
 
+````
 #### `str`: Immutable Arrays of Unicode Characters
 
 Python 3.x uses [`str`](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str) objects to store textual data as immutable sequences of [Unicode characters](https://realpython.com/python-encodings-guide/). Practically speaking, that means a `str` is an immutable array of characters. Oddly enough, it’s also a [recursive](https://realpython.com/python-thinking-recursively/) data structure—each character in a string is itself a `str` object of length 1.
@@ -757,9 +752,9 @@ TypeError: 'str' object doesn't support item deletion
 
  type("abc"[0])
 "<class 'str'>"` 
-```
-```
+````
 
+````
 #### `bytes`: Immutable Arrays of Single Bytes
 
 [`bytes`](https://docs.python.org/3/library/stdtypes.html#bytes-objects) objects are immutable sequences of single bytes, or integers in the range 0 ≤ _x_ ≤ 255. Conceptually, `bytes` objects are similar to `str` objects, and you can also think of them as immutable arrays of bytes.
@@ -801,13 +796,13 @@ TypeError: 'bytes' object does not support item assignment
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: 'bytes' object doesn't support item deletion``
-```
+````
 
 #### `bytearray`: Mutable Arrays of Single Bytes
 
 The [`bytearray`](https://docs.python.org/3.1/library/functions.html#bytearray) type is a mutable sequence of integers in the range 0 ≤ _x_ ≤ 255. The `bytearray` object is closely related to the `bytes` object, with the main difference being that a `bytearray` can be modified freely—you can overwrite elements, remove existing elements, or add new ones. The `bytearray` object will grow and shrink accordingly.
 
-A `bytearray` can be converted back into immutable `bytes` objects, but this involves copying the stored data in full—a slow operation taking _O_\(_n_\) time:
+A `bytearray` can be converted back into immutable `bytes` objects, but this involves copying the stored data in full—a slow operation taking _O_(_n_) time:
 
 ```python
  arr = bytearray((0, 1, 2, 3))
@@ -881,7 +876,7 @@ If you’re willing to go beyond the Python standard library, then third-party p
 If you want to restrict yourself to the array data structures included with Python, then here are a few guidelines:
 
 * If you need to store arbitrary objects, potentially with mixed data types, then use a `list` or a `tuple`, depending on whether or not you want an immutable data structure.
-* If you have numeric \(integer or floating-point\) data and tight packing and performance is important, then try out `array.array`.
+* If you have numeric (integer or floating-point) data and tight packing and performance is important, then try out `array.array`.
 * If you have textual data represented as Unicode characters, then use Python’s built-in `str`. If you need a mutable string-like data structure, then use a `list` of characters.
 * If you want to store a contiguous block of bytes, then use the immutable `bytes` type or a `bytearray` if you need a mutable data structure.
 
@@ -903,7 +898,7 @@ Python offers several data types that you can use to implement records, structs,
 
 Alright, let’s get started!
 
-```python
+````python
 ### `dict`: Simple Data Objects[](https://realpython.com/python-data-structures/#dict-simple-data-objects "Permanent link")
 
 As mentioned [previously](https://realpython.com/python-data-structures/#dictionaries-maps-and-hash-tables), Python dictionaries store an arbitrary number of objects, each identified by a unique key. Dictionaries are also often called **maps** or **associative arrays** and allow for efficient lookup, insertion, and deletion of any object associated with a given key.
@@ -961,7 +956,7 @@ Data objects created using dictionaries are mutable, and there’s little protec
      "automatic": False,
      "windshield": "broken",
  }`
-```
+````
 
 #### `tuple`: Immutable Groups of Objects
 
@@ -971,7 +966,7 @@ Performance-wise, tuples take up [slightly less memory](https://github.com/pytho
 
 As you can see in the bytecode disassembly below, constructing a tuple constant takes a single `LOAD_CONST` opcode, while constructing a list object with the same contents requires several more operations:
 
-```python
+````python
  import dis
 
  dis.dis(compile("(23, 'a', 'b', 'c')", "", "eval"))
@@ -1034,7 +1029,7 @@ TypeError: 'tuple' object does not support item assignment
  # or a wrong order:
 
  car3 = (3431.5, "green", True, "silver")`
-```
+````
 
 #### Write a Custom Class: More Work, More Control
 
@@ -1042,7 +1037,7 @@ TypeError: 'tuple' object does not support item assignment
 
 Using regular Python classes as record data types is feasible, but it also takes manual work to get the convenience features of other implementations. For example, adding new fields to the `__init__` constructor is verbose and takes time.
 
-Also, the default string representation for objects instantiated from custom classes isn’t very helpful. To fix that, you may have to add your own [`__repr__`](https://docs.python.org/3.4/reference/datamodel.html#object.__repr__) method, which again is usually quite verbose and must be updated each time you add a new field.
+Also, the default string representation for objects instantiated from custom classes isn’t very helpful. To fix that, you may have to add your own [`__repr__`](https://docs.python.org/3.4/reference/datamodel.html#object.\_\_repr\_\_) method, which again is usually quite verbose and must be updated each time you add a new field.
 
 Fields stored on classes are mutable, and new fields can be added freely, which you may or may not like. It’s possible to provide more access control and to create read-only fields using the [`@property`](https://docs.python.org/3/library/functions.html#property) decorator, but once again, this requires writing more glue code.
 
@@ -1140,11 +1135,11 @@ Car(color='red', mileage='NOT_A_FLOAT', automatic=99)`
 
 The [`namedtuple`](https://dbader.org/blog/writing-clean-python-with-namedtuples) class available in Python 2.6+ provides an extension of the built-in `tuple` data type. Similar to defining a custom class, using `namedtuple` allows you to define reusable blueprints for your records that ensure the correct field names are used.
 
-`````pynamedtuple``` objects are immutable, just like regular tuples. This means you can’t add new fields or modify existing fields after the `namedtuple` instance is created.
+\`\`\`\`\`pynamedtuple\`\`\` objects are immutable, just like regular tuples. This means you can’t add new fields or modify existing fields after the `namedtuple` instance is created.
 
 Besides that, `namedtuple` objects are, well . . . named tuples. Each object stored in them can be accessed through a unique identifier. This frees you from having to remember integer indexes or resort to workarounds like defining **integer constants** as mnemonics for your indexes.
 
-`````pynamedtuple``` objects are implemented as regular Python classes internally. When it comes to memory usage, they’re also better than regular classes and just as memory efficient as regular tuples:
+\`\`\`\`\`pynamedtuple\`\`\` objects are implemented as regular Python classes internally. When it comes to memory usage, they’re also better than regular classes and just as memory efficient as regular tuples:
 
 ```python
  from collections import namedtuple
@@ -1168,7 +1163,7 @@ Besides that, `namedtuple` objects are, well . . . named tuples. Each object sto
 
 I find that going from ad-hoc data types like dictionaries with a fixed format to `namedtuple` objects helps me to express the intent of my code more clearly. Often when I apply this refactoring, I magically come up with a better solution for the problem I’m facing.
 
-Using `namedtuple` objects over regular \(unstructured\) tuples and dicts can also make your coworkers’ lives easier by making the data that’s being passed around self-documenting, at least to a degree:
+Using `namedtuple` objects over regular (unstructured) tuples and dicts can also make your coworkers’ lives easier by making the data that’s being passed around self-documenting, at least to a degree:
 
 ```python
  from collections import namedtuple
@@ -1208,7 +1203,7 @@ AttributeError: 'Car' object has no attribute 'windshield'`
 
 Added in Python 3.6, [`typing.NamedTuple`](https://docs.python.org/3/library/typing.html#typing.NamedTuple) is the younger sibling of the `namedtuple` class in the `collections` module. It’s very similar to `namedtuple`, with the main difference being an updated syntax for defining new record types and added support for [type hints](https://docs.python.org/3/library/typing.html).
 
-Please note that type annotations are not enforced without a separate type-checking tool like [mypy](http://mypy-lang.org/). But even without tool support, they can provide useful hints for other programmers \(or be terribly confusing if the type hints become out of date\):
+Please note that type annotations are not enforced without a separate type-checking tool like [mypy](http://mypy-lang.org). But even without tool support, they can provide useful hints for other programmers (or be terribly confusing if the type hints become out of date):
 
 ```python
  from typing import NamedTuple
@@ -1265,7 +1260,7 @@ Structs are defined using a mini language based on [format strings](https://docs
 
 Serialized structs are seldom used to represent data objects meant to be handled purely inside Python code. They’re intended primarily as a data exchange format rather than as a way of holding data in memory that’s only used by Python code.
 
-In some cases, packing primitive data into structs may use less memory than keeping it in other data types. However, in most cases that would be quite an advanced \(and probably unnecessary\) optimization:
+In some cases, packing primitive data into structs may use less memory than keeping it in other data types. However, in most cases that would be quite an advanced (and probably unnecessary) optimization:
 
 ```python
  from struct import Struct
@@ -1328,28 +1323,28 @@ As you’ve seen, there’s quite a number of different options for implementing
 * If you need to lock down field names to avoid typos, then `collections.namedtuple` and `typing.NamedTuple` are your friends.
 * If you want to keep things simple, then a plain dictionary object might be a good choice due to the convenient syntax that closely resembles [JSON](https://realpython.com/python-json/).
 * If you need full control over your data structure, then it’s time to write a custom class with `@property` setters and getters.
-* If you need to add behavior \(methods\) to the object, then you should write a custom class, either from scratch, or using the `dataclass` decorator, or by extending `collections.namedtuple` or `typing.NamedTuple`.
+* If you need to add behavior (methods) to the object, then you should write a custom class, either from scratch, or using the `dataclass` decorator, or by extending `collections.namedtuple` or `typing.NamedTuple`.
 * If you need to pack data tightly to serialize it to disk or to send it over the network, then it’s time to read up on `struct.Struct` because this is a great use case for it!
 
 If you’re looking for a safe default choice, then my general recommendation for implementing a plain record, struct, or data object in Python would be to use `collections.namedtuple` in Python 2.x and its younger sibling, `typing.NamedTuple` in Python 3.
 
 ### Sets and Multisets
 
-In this section, you’ll see how to implement mutable and immutable [set](https://realpython.com/python-sets/) and multiset \(bag\) data structures in Python using built-in data types and classes from the standard library.
+In this section, you’ll see how to implement mutable and immutable [set](https://realpython.com/python-sets/) and multiset (bag) data structures in Python using built-in data types and classes from the standard library.
 
 A **set** is an unordered collection of objects that doesn’t allow duplicate elements. Typically, sets are used to quickly test a value for membership in the set, to insert or delete new values from a set, and to compute the union or intersection of two sets.
 
-In a proper set implementation, membership tests are expected to run in fast _O_\(1\) time. Union, intersection, difference, and subset operations should take _O_\(_n_\) time on average. The set implementations included in Python’s standard library [follow these performance characteristics](https://wiki.python.org/moin/TimeComplexity).
+In a proper set implementation, membership tests are expected to run in fast _O_(1) time. Union, intersection, difference, and subset operations should take _O_(_n_) time on average. The set implementations included in Python’s standard library [follow these performance characteristics](https://wiki.python.org/moin/TimeComplexity).
 
 Just like dictionaries, sets get special treatment in Python and have some syntactic sugar that makes them easy to create. For example, the curly-brace set expression syntax and [set comprehensions](https://realpython.com/list-comprehension-python/#using-set-and-dictionary-comprehensions) allow you to conveniently define new set instances:
 
-`````pyvowels = {"a", "e", "i", "o", "u"} squares = {x * x for x in range(10)}```
+\`\`\`\`\`pyvowels = {"a", "e", "i", "o", "u"} squares = {x \* x for x in range(10)}\`\`\`
 
-But be careful: To create an empty set you’ll need to call the `set()` constructor. Using empty curly-braces \(`{}`\) is ambiguous and will create an empty dictionary instead.
+But be careful: To create an empty set you’ll need to call the `set()` constructor. Using empty curly-braces (`{}`) is ambiguous and will create an empty dictionary instead.
 
 Python and its standard library provide several set implementations. Let’s have a look at them.
 
-```python
+````python
 ### `set`: Your Go-To Set[](https://realpython.com/python-data-structures/#set-your-go-to-set "Permanent link")
 
 The [`set`](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) type is the built-in set implementation in Python. It’s mutable and allows for the dynamic insertion and deletion of elements.
@@ -1380,13 +1375,13 @@ True
 
  len(vowels)
 6`
-```
+````
 
 #### `frozenset`: Immutable Sets
 
 The [`frozenset`](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset) class implements an immutable version of `set` that can’t be changed after it’s been constructed.
 
-`````pyfrozenset``` objects are static and allow only query operations on their elements, not inserts or deletions. Because `frozenset` objects are static and hashable, they can be used as dictionary keys or as elements of another set, something that isn’t possible with regular \(mutable\) `set` objects:
+\`\`\`\`\`pyfrozenset\`\`\` objects are static and allow only query operations on their elements, not inserts or deletions. Because `frozenset` objects are static and hashable, they can be used as dictionary keys or as elements of another set, something that isn’t possible with regular (mutable) `set` objects:
 
 ```python
  vowels = frozenset({"a", "e", "i", "o", "u"})
@@ -1413,7 +1408,7 @@ The [`collections.Counter`](https://docs.python.org/3/library/collections.html#c
 
 This is useful if you need to keep track of not only _if_ an element is part of a set, but also _how many times_ it’s included in the set:
 
-```python
+````python
  from collections import Counter
 
  inventory = Counter()
@@ -1446,7 +1441,7 @@ One caveat for the `Counter` class is that you’ll want to be careful when coun
 
  sum(inventory.values())
 6  # Total no. of elements`
-```
+````
 
 #### Sets and Multisets in Python: Summary
 
@@ -1456,19 +1451,19 @@ Sets are another useful and commonly used data structure included with Python an
 * If you need hashable objects that can be used as dictionary or set keys, then use a `frozenset`.
 * If you need a multiset, or bag, data structure, then use `collections.Counter`.
 
-### Stacks \(LIFOs\)
+### Stacks (LIFOs)
 
-A **stack** is a collection of objects that supports fast **Last-In/First-Out** \(LIFO\) semantics for inserts and deletes. Unlike lists or arrays, stacks typically don’t allow for random access to the objects they contain. The insert and delete operations are also often called **push** and **pop**.
+A **stack** is a collection of objects that supports fast **Last-In/First-Out** (LIFO) semantics for inserts and deletes. Unlike lists or arrays, stacks typically don’t allow for random access to the objects they contain. The insert and delete operations are also often called **push** and **pop**.
 
-A useful real-world analogy for a stack data structure is a stack of plates. New plates are added to the top of the stack, and because the plates are precious and heavy, only the topmost plate can be moved. In other words, the last plate on the stack must be the first one removed \(LIFO\). To reach the plates that are lower down in the stack, the topmost plates must be removed one by one.
+A useful real-world analogy for a stack data structure is a stack of plates. New plates are added to the top of the stack, and because the plates are precious and heavy, only the topmost plate can be moved. In other words, the last plate on the stack must be the first one removed (LIFO). To reach the plates that are lower down in the stack, the topmost plates must be removed one by one.
 
-Performance-wise, a proper [stack implementation](https://realpython.com/how-to-implement-python-stack/) is expected to take _O_\(1\) time for insert and delete operations.
+Performance-wise, a proper [stack implementation](https://realpython.com/how-to-implement-python-stack/) is expected to take _O_(1) time for insert and delete operations.
 
-Stacks have a wide range of uses in algorithms. For example, they’re used in language parsing as well as runtime memory management, which relies on a **call stack**. A short and beautiful algorithm using a stack is [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search) \(DFS\) on a tree or graph data structure.
+Stacks have a wide range of uses in algorithms. For example, they’re used in language parsing as well as runtime memory management, which relies on a **call stack**. A short and beautiful algorithm using a stack is [depth-first search](https://en.wikipedia.org/wiki/Depth-first\_search) (DFS) on a tree or graph data structure.
 
 Python ships with several stack implementations that each have slightly different characteristics. Let’s take a look at them and compare their characteristics.
 
-```text
+````
 ### `list`: Simple, Built-In Stacks[](https://realpython.com/python-data-structures/#list-simple-built-in-stacks "Permanent link")
 
 Python’s built-in `list` type [makes a decent stack data structure](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-stacks) as it supports push and pop operations in [amortized](https://en.wikipedia.org/wiki/Amortized_analysis) _O_(1) time.
@@ -1512,13 +1507,13 @@ Adding and removing from the front is much slower and takes _O_(_n_) time, as th
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 IndexError: pop from empty list`
-```
+````
 
 #### `collections.deque`: Fast and Robust Stacks
 
-The [`deque`](https://docs.python.org/3/library/collections.html#collections.deque) class implements a double-ended queue that supports adding and removing elements from either end in _O_\(1\) time \(non-amortized\). Because deques support adding and removing elements from either end equally well, they can serve both as queues and as stacks.
+The [`deque`](https://docs.python.org/3/library/collections.html#collections.deque) class implements a double-ended queue that supports adding and removing elements from either end in _O_(1) time (non-amortized). Because deques support adding and removing elements from either end equally well, they can serve both as queues and as stacks.
 
-Python’s `deque` objects are implemented as [doubly-linked lists](https://github.com/python/cpython/blob/6e8128f02e1d36e38e5866f9dc36e051caa47bc9/Modules/_collectionsmodule.c#L33-L35), which gives them excellent and consistent performance for inserting and deleting elements but poor _O_\(_n_\) performance for randomly accessing elements in the middle of a stack.
+Python’s `deque` objects are implemented as [doubly-linked lists](https://github.com/python/cpython/blob/6e8128f02e1d36e38e5866f9dc36e051caa47bc9/Modules/\_collectionsmodule.c#L33-L35), which gives them excellent and consistent performance for inserting and deleting elements but poor _O_(_n_) performance for randomly accessing elements in the middle of a stack.
 
 Overall, [`collections.deque` is a great choice](https://realpython.com/linked-lists-python/#introducing-collectionsdeque) if you’re looking for a stack data structure in Python’s standard library that has the performance characteristics of a linked-list implementation:
 
@@ -1599,33 +1594,33 @@ queue.Empty
 
 As you’ve seen, Python ships with several implementations for a stack data structure. All of them have slightly different characteristics as well as performance and usage trade-offs.
 
-If you’re not looking for parallel processing support \(or if you don’t want to handle locking and unlocking manually\), then your choice comes down to the built-in `list` type or `collections.deque`. The difference lies in the data structure used behind the scenes and overall ease of use.
+If you’re not looking for parallel processing support (or if you don’t want to handle locking and unlocking manually), then your choice comes down to the built-in `list` type or `collections.deque`. The difference lies in the data structure used behind the scenes and overall ease of use.
 
 **`list`** is backed by a dynamic array, which makes it great for fast random access but requires occasional resizing when elements are added or removed.
 
-The list over-allocates its backing storage so that not every push or pop requires resizing, and you get an amortized _O_\(1\) time complexity for these operations. But you do need to be careful to only insert and remove items using `append()` and `pop()`. Otherwise, performance slows down to _O_\(_n_\).
+The list over-allocates its backing storage so that not every push or pop requires resizing, and you get an amortized _O_(1) time complexity for these operations. But you do need to be careful to only insert and remove items using `append()` and `pop()`. Otherwise, performance slows down to _O_(_n_).
 
-**`collections.deque`** is backed by a doubly-linked list, which optimizes appends and deletes at both ends and provides consistent _O_\(1\) performance for these operations. Not only is its performance more stable, the `deque` class is also easier to use because you don’t have to worry about adding or removing items from the wrong end.
+**`collections.deque`** is backed by a doubly-linked list, which optimizes appends and deletes at both ends and provides consistent _O_(1) performance for these operations. Not only is its performance more stable, the `deque` class is also easier to use because you don’t have to worry about adding or removing items from the wrong end.
 
-In summary, `collections.deque` is an excellent choice for implementing a stack \(LIFO queue\) in Python.
+In summary, `collections.deque` is an excellent choice for implementing a stack (LIFO queue) in Python.
 
-### Queues \(FIFOs\)
+### Queues (FIFOs)
 
-In this section, you’ll see how to implement a **First-In/First-Out** \(FIFO\) queue data structure using only built-in data types and classes from the Python standard library.
+In this section, you’ll see how to implement a **First-In/First-Out** (FIFO) queue data structure using only built-in data types and classes from the Python standard library.
 
 A **queue** is a collection of objects that supports fast FIFO semantics for inserts and deletes. The insert and delete operations are sometimes called **enqueue** and **dequeue**. Unlike lists or arrays, queues typically don’t allow for random access to the objects they contain.
 
 Here’s a real-world analogy for a FIFO queue:
 
-Imagine a line of Pythonistas waiting to pick up their conference badges on day one of PyCon registration. As new people enter the conference venue and queue up to receive their badges, they join the line \(enqueue\) at the back of the queue. Developers receive their badges and conference swag bags and then exit the line \(dequeue\) at the front of the queue.
+Imagine a line of Pythonistas waiting to pick up their conference badges on day one of PyCon registration. As new people enter the conference venue and queue up to receive their badges, they join the line (enqueue) at the back of the queue. Developers receive their badges and conference swag bags and then exit the line (dequeue) at the front of the queue.
 
-Another way to memorize the characteristics of a queue data structure is to think of it as a pipe. You add ping-pong balls to one end, and they travel to the other end, where you remove them. While the balls are in the queue \(a solid metal pipe\) you can’t get at them. The only way to interact with the balls in the queue is to add new ones at the back of the pipe \(enqueue\) or to remove them at the front \(dequeue\).
+Another way to memorize the characteristics of a queue data structure is to think of it as a pipe. You add ping-pong balls to one end, and they travel to the other end, where you remove them. While the balls are in the queue (a solid metal pipe) you can’t get at them. The only way to interact with the balls in the queue is to add new ones at the back of the pipe (enqueue) or to remove them at the front (dequeue).
 
-Queues are similar to stacks. The difference between them lies in how items are removed. With a **queue**, you remove the item _least_ recently added \(FIFO\) but with a **stack**, you remove the item _most_ recently added \(LIFO\).
+Queues are similar to stacks. The difference between them lies in how items are removed. With a **queue**, you remove the item _least_ recently added (FIFO) but with a **stack**, you remove the item _most_ recently added (LIFO).
 
-Performance-wise, a proper queue implementation is expected to take _O_\(1\) time for insert and delete operations. These are the two main operations performed on a queue, and in a correct implementation, they should be fast.
+Performance-wise, a proper queue implementation is expected to take _O_(1) time for insert and delete operations. These are the two main operations performed on a queue, and in a correct implementation, they should be fast.
 
-Queues have a wide range of applications in algorithms and often help solve scheduling and parallel programming problems. A short and beautiful algorithm using a queue is [breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search) \(BFS\) on a tree or graph data structure.
+Queues have a wide range of applications in algorithms and often help solve scheduling and parallel programming problems. A short and beautiful algorithm using a queue is [breadth-first search](https://en.wikipedia.org/wiki/Breadth-first\_search) (BFS) on a tree or graph data structure.
 
 Scheduling algorithms often use **priority queues** internally. These are specialized queues. Instead of retrieving the next element by insertion time, a [priority queue](https://realpython.com/python-heapq-module/#data-structures-heaps-and-priority-queues) retrieves the _highest-priority_ element. The priority of individual elements is decided by the queue based on the ordering applied to their keys.
 
@@ -1633,7 +1628,7 @@ A regular queue, however, won’t reorder the items it carries. Just like in the
 
 Python ships with several queue implementations that each have slightly different characteristics. Let’s review them.
 
-```text
+````
 ### `list`: Terribly Sloooow Queues[](https://realpython.com/python-data-structures/#list-terribly-sloooow-queues "Permanent link")
 
 It’s possible to [use a regular `list` as a queue](https://docs.python.org/3/tutorial/datastructures.html#using-lists-as-queues), but this is not ideal from a performance perspective. Lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all the other elements by one, requiring _O_(_n_) time.
@@ -1661,13 +1656,13 @@ Therefore, I would _not_ recommend using a `list` as a makeshift queue in Python
 
  q.pop(0)
 'eat'`
-```
+````
 
 #### `collections.deque`: Fast and Robust Queues
 
-The `deque` class implements a double-ended queue that supports adding and removing elements from either end in _O_\(1\) time \(non-amortized\). Because deques support adding and removing elements from either end equally well, they can serve both as queues and as stacks.
+The `deque` class implements a double-ended queue that supports adding and removing elements from either end in _O_(1) time (non-amortized). Because deques support adding and removing elements from either end equally well, they can serve both as queues and as stacks.
 
-Python’s `deque` objects are implemented as doubly-linked lists. This gives them excellent and consistent performance for inserting and deleting elements, but poor _O_\(_n_\) performance for randomly accessing elements in the middle of the stack.
+Python’s `deque` objects are implemented as doubly-linked lists. This gives them excellent and consistent performance for inserting and deleting elements, but poor _O_(_n_) performance for randomly accessing elements in the middle of the stack.
 
 As a result, `collections.deque` is a great default choice if you’re looking for a queue data structure in Python’s standard library:
 
@@ -1746,7 +1741,7 @@ queue.Empty
 
 #### `multiprocessing.Queue`: Shared Job Queues
 
-[`multiprocessing.Queue`](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue) is a shared job queue implementation that allows queued items to be processed in parallel by multiple concurrent workers. Process-based parallelization is popular in CPython due to the [global interpreter lock](https://realpython.com/python-gil/) \(GIL\) that prevents some forms of parallel execution on a single interpreter process.
+[`multiprocessing.Queue`](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue) is a shared job queue implementation that allows queued items to be processed in parallel by multiple concurrent workers. Process-based parallelization is popular in CPython due to the [global interpreter lock](https://realpython.com/python-gil/) (GIL) that prevents some forms of parallel execution on a single interpreter process.
 
 As a specialized queue implementation meant for sharing data between processes, `multiprocessing.Queue` makes it easy to distribute work across multiple processes in order to work around the GIL limitations. This type of queue can store and transfer any [pickleable](https://realpython.com/python-pickle-module/) object across process boundaries:
 
@@ -1783,13 +1778,13 @@ As a specialized queue implementation meant for sharing data between processes, 
 
 Python includes several queue implementations as part of the core language and its standard library.
 
-`````pylist``` objects can be used as queues, but this is generally not recommended due to slow performance.
+\`\`\`\`\`pylist\`\`\` objects can be used as queues, but this is generally not recommended due to slow performance.
 
-If you’re not looking for parallel processing support, then the implementation offered by `collections.deque` is an excellent default choice for implementing a FIFO queue data structure in Python. It provides the performance characteristics you’d expect from a good queue implementation and can also be used as a stack \(LIFO queue\).
+If you’re not looking for parallel processing support, then the implementation offered by `collections.deque` is an excellent default choice for implementing a FIFO queue data structure in Python. It provides the performance characteristics you’d expect from a good queue implementation and can also be used as a stack (LIFO queue).
 
 ### Priority Queues
 
-A **priority queue** is a container data structure that manages a set of records with [totally-ordered](https://en.wikipedia.org/wiki/Total_order) keys to provide quick access to the record with the smallest or largest key in the set.
+A **priority queue** is a container data structure that manages a set of records with [totally-ordered](https://en.wikipedia.org/wiki/Total\_order) keys to provide quick access to the record with the smallest or largest key in the set.
 
 You can think of a priority queue as a modified queue. Instead of retrieving the next element by insertion time, it retrieves the _highest-priority_ element. The priority of individual elements is decided by the order applied to their keys.
 
@@ -1797,11 +1792,11 @@ Priority queues are commonly used for dealing with scheduling problems. For exam
 
 Think about the job of an operating system task scheduler:
 
-Ideally, higher-priority tasks on the system \(such as playing a real-time game\) should take precedence over lower-priority tasks \(such as downloading updates in the background\). By organizing pending tasks in a priority queue that uses task urgency as the key, the task scheduler can quickly select the highest-priority tasks and allow them to run first.
+Ideally, higher-priority tasks on the system (such as playing a real-time game) should take precedence over lower-priority tasks (such as downloading updates in the background). By organizing pending tasks in a priority queue that uses task urgency as the key, the task scheduler can quickly select the highest-priority tasks and allow them to run first.
 
 In this section, you’ll see a few options for how you can implement priority queues in Python using built-in data structures or data structures included in Python’s standard library. Each implementation will have its own upsides and downsides, but in my mind there’s a clear winner for most common scenarios. Let’s find out which one it is.
 
-```text
+````
 ### `list`: Manually Sorted Queues[](https://realpython.com/python-data-structures/#list-manually-sorted-queues "Permanent link")
 
 You can use a sorted `list` to quickly identify and delete the smallest or largest element. The downside is that inserting new elements into a list is a slow _O_(_n_) operation.
@@ -1838,11 +1833,11 @@ This means sorted lists are only suitable as priority queues when there will be 
 (1, 'eat')
 (2, 'code')
 (3, 'sleep')`
-```
+````
 
 #### `heapq`: List-Based Binary Heaps
 
-[`heapq`](https://docs.python.org/3/library/heapq.html) is a binary heap implementation usually backed by a plain `list`, and it supports insertion and extraction of the smallest element in _O_\(log _n_\) time.
+[`heapq`](https://docs.python.org/3/library/heapq.html) is a binary heap implementation usually backed by a plain `list`, and it supports insertion and extraction of the smallest element in _O_(log _n_) time.
 
 This module is a good choice for [implementing priority queues in Python](https://realpython.com/python-heapq-module/). Since `heapq` technically provides only a min-heap implementation, [extra steps must be taken](https://docs.python.org/3/library/heapq.html#priority-queue-implementation-notes) to ensure sort stability and other features typically expected from a practical priority queue:
 
@@ -1914,5 +1909,4 @@ That concludes your tour of common data structures in Python. With the knowledge
 
 If you enjoyed what you learned in this sample from _Python Tricks_, then be sure to check out [the rest of the book](https://realpython.com/products/python-tricks-book/).
 
-If you’re interested in brushing up on your general data structures knowledge, then I highly recommend [Steven S. Skiena’s _The Algorithm Design Manual_](https://realpython.com/asins/1848000693/). It strikes a great balance between teaching you fundamental \(and more advanced\) data structures and showing you how to implement them in your code. Steve’s book was a great help in the writing of this tutorial.
-
+If you’re interested in brushing up on your general data structures knowledge, then I highly recommend [Steven S. Skiena’s _The Algorithm Design Manual_](https://realpython.com/asins/1848000693/). It strikes a great balance between teaching you fundamental (and more advanced) data structures and showing you how to implement them in your code. Steve’s book was a great help in the writing of this tutorial.

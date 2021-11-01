@@ -209,6 +209,4 @@ rbt.insert(12)
 rbt.traverse()
 
 
-
 ```
-

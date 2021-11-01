@@ -1,13 +1,10 @@
 # Practice Problems
 
-{% embed url="https://replit.com/@bgoonz/SmallWorldlyAbstraction\#main.py" %}
-
-
+{% embed url="https://replit.com/@bgoonz/SmallWorldlyAbstraction#main.py" %}
 
 {% tabs %}
 {% tab title="" %}
-```text
-
+```
 ```
 {% endtab %}
 
@@ -2969,12 +2966,12 @@ import math
 
 \`\`\`py
 
-## ------------------------------------------------------------------------------------------------\#
+### ------------------------------------------------------------------------------------------------\#
 {% endtab %}
 
 {% tab title="Guesses" %}
 ```python
-Given an array A return an output array B of size `[A.length - 2]` where B[i] = 1 if sides A[i],A[i+1] and A[i+2] form a triangle. Otherwise, set B[i] = 0.\
+Given an array A return an output array B of size `[A.length - 2]` where B[i] = 1 if sides A[i],A[i+1] and A[i+2] form a triangle. Otherwise, set B[i] = 0.\
 ex. A = [1, 2, 2, 5, 5, 4] should return B = [1,0,0,1]
 
 Given two strings a and b, merge the strings so that the letters are added in alternating order starting with string a. If one string is longer than the other, then append the letters to the end of the merged string.\
@@ -2986,33 +2983,16 @@ Pretty easy. Just interlace them like a merge sort.
 Given a string s, return the longest and lexicographically smallest palindromic string that can be formed from the characters.\
 ex. "abbaa" -> "abba"\
 ex. "adeadeadevue" -> "adeeaeeda"
-
-```
-def smallestPalindrome(s):
-    if not s:
-        return s
-    res = []
-    counts = collections.Counter(s)
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    middle_letter = ""
-    for letter in alphabet:
-        count = counts.get(letter, 0)
-        if count > 0:
-            if count % 2 == 1 and middle_letter == "":
-                middle_letter = letter
-                res.append(letter * ((count - 1) // 2))
-            else:
-                res.append(letter * (count // 2))
-    first= "".join(sb)
-	return first + middle_letter + first[::-1]
-
 ```
 
+def smallestPalindrome(s): if not s: return s res = \[] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle\_letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle\_letter == "": middle\_letter = letter res.append(letter \* ((count - 1) // 2)) else: res.append(letter \* (count // 2)) first= "".join(sb) return first + middle\_letter + first\[::-1]
+
+```
 * * * * *
 
 Easy-Medium:\
-Given a list of strings `string_list` and a list of words `words`, determine whether each word in `words`\
-can be formed as a concatenation of consecutive strings in `string_list` starting with index 0.\
+Given a list of strings `string_list` and a list of words `words`, determine whether each word in `words`\
+can be formed as a concatenation of consecutive strings in `string_list` starting with index 0.\
 ex. word = "oneTwoThree", string_list = ["one", "Three", "Two"] is false because the words aren't consecutive in string_list\
 ex. word = "one", string_list = ["one", "Three", "Two"] is True because the concatenation stops at the first index in string_list\
 ex. word = "one", string_list = ["One", "one", "Two"] is False because the concatenation doesn't start at 0.\
@@ -3023,40 +3003,30 @@ Just use the base idea from the LeetCode problem and then modify it for the cons
 Medium:
 
 Beauty of a matrix.\
-Given an n x n matrix `M` and an int `k` where `n % k == 0`, divide the M into blocks of size `k x k` starting with the top left corner. i.e. a 9x9 matrix turns into 9 3x3s. The *beauty* of a block is the smallest positive number missing from a block. Rearrange `M` so that the blocks with the lowest beauty come before those with higher beauty (top left to bottom right). In a tie, you should place the block that came first in M before the other block.\
+Given an n x n matrix `M` and an int `k` where `n % k == 0`, divide the M into blocks of size `k x k` starting with the top left corner. i.e. a 9x9 matrix turns into 9 3x3s. The *beauty* of a block is the smallest positive number missing from a block. Rearrange `M` so that the blocks with the lowest beauty come before those with higher beauty (top left to bottom right). In a tie, you should place the block that came first in M before the other block.\
 `Just do what the problem says. Make an array A = [(int beauty, int[][] block)...] and a stable sorting algorithm will handle things. Then glue the blocks back into the matrix.`
 
 Rotate matrix around diagonals.\
-Given an n x n matrix `M`, where n is odd and n > 1, and an integer `k`, rotate `M` counterclockwise `k` times which are not on the main diagonal or on the diagonal from the top right to the bottom left.\
+Given an n x n matrix `M`, where n is odd and n > 1, and an integer `k`, rotate `M` counterclockwise `k` times which are not on the main diagonal or on the diagonal from the top right to the bottom left.\
 Return the new matrix.\
 Ex. I put *s to show which elements are fixed on the diagonals.
-
-```
-[*1*, 2, 3, 4, *5*]
-[6, *7*, 8, *9*, 10]
-[11, 12, *13*, 14, 15]
-[16, *17*, 18, *19*, 20]
-[*21*, 22, 23, 24, *25*]
-
 ```
 
+\[_1_, 2, 3, 4, _5_] \[6, _7_, 8, _9_, 10] \[11, 12, _13_, 14, 15] \[16, _17_, 18, _19_, 20] \[_21_, 22, 23, 24, _25_]
+
+```
 Rotates to:
-
-```
-[*1*, 16, 11, 6, *5*]
-[22, *7*, 12, *9*, 2]
-[23, 18, *13*, 8, 3]
-[24, *17*, 14, *19*, 4]
-[*21*, 20, 15, 10, *25*]
-
 ```
 
-Just do the obvious % 4 and then rotate a deepcopy like the LeetCode problem <https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image>, but you check whether the element is on the diagonal before you reverse it or transpose it.
+\[_1_, 16, 11, 6, _5_] \[22, _7_, 12, _9_, 2] \[23, 18, _13_, 8, 3] \[24, _17_, 14, _19_, 4] \[_21_, 20, 15, 10, _25_]
+
+```
+Just do the obvious % 4 and then rotate a deepcopy like the LeetCode problem <https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image>, but you check whether the element is on the diagonal before you reverse it or transpose it.
 
 * * * * *
 
 Medium/Hard:\
-Given two arrays `a` and `b` of equal length, the absolute sum difference is the `sum Math.abs(a[i] - b[i])`. Replace one number in `a` with any number in `a` to minimize the absolute sum difference.
+Given two arrays `a` and `b` of equal length, the absolute sum difference is the `sum Math.abs(a[i] - b[i])`. Replace one number in `a` with any number in `a` to minimize the absolute sum difference.
 
 
 
@@ -3068,366 +3038,255 @@ Given two arrays `a` and `b` of equal length, the absolute sum difference is
 
 I tried answering all questions. Find them in serial order.\
 I have tried giving credits wherever I used other's solution
+```
+
+## Author - https://leetcode.com/techdude/
+
+## Question - 1
+
+""" Given an array A return an output array B of size \[A.length - 2] where B\[i] = 1 if sides A\[i],A\[i+1] and A\[i+2] form a triangle. Otherwise, set B\[i] = 0. ex. A = \[1, 2, 2, 5, 5, 4] should return B = \[1,0,0,1] """
+
+A = \[1, 2, 2, 5, 5, 4]
+
+def validTriangle(A): B = \[]; i=0 while i < len(A) - 2: a,b,c = A\[i], A\[i+1], A\[i+2]
 
 ```
-# Author - https://leetcode.com/techdude/
+    if a+b>c and b+c>a and a+c>b:
+        B.append(1)
+    else:
+        B.append(0)
+    i += 1
+return B
+```
 
-# Question - 1
-"""
-Given an array A return an output array B of size [A.length - 2] where B[i] = 1 if sides
-A[i],A[i+1] and A[i+2] form a triangle. Otherwise, set B[i] = 0.
-ex. A = [1, 2, 2, 5, 5, 4] should return B = [1,0,0,1]
-"""
+print(validTriangle(A)) print('\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*')
 
-A = [1, 2, 2, 5, 5, 4]
+""" Given two strings a and b, merge the strings so that the letters are added in alternating order starting with string a. If one string is longer than the other, then append the letters to the end of the merged string. ex. "abcd", "efghi" -> "aebfcgdhi" ex. "", "abcd" -> "abcd" ex. "abcdefg", "zxy" -> "azbxycdefg" """
 
-def validTriangle(A):
-    B = []; i=0
-    while i < len(A) - 2:
-        a,b,c = A[i], A[i+1], A[i+2]
+a='abcd' b = 'efghi'
 
-        if a+b>c and b+c>a and a+c>b:
-            B.append(1)
-        else:
-            B.append(0)
-        i += 1
-    return B
+def mergeStrings(a,b): res = '' for l1,l2 in zip(a,b): res += l1 + l2 if len(a) < len(b): res += b\[len(a):] elif len(a) > len(b): res += a\[len(b):] return res
 
-print(validTriangle(A))
-print('*****************************************')
+print(mergeStrings(a,b)) # aebfcgdhi a=''; b='abcd' print(mergeStrings(a,b)) # abcd a="abcdefg"; b="zxy" print(mergeStrings(a,b)) # azbxcydefg print('\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*')
 
-"""
-Given two strings a and b, merge the strings so that the letters are added in alternating order
-starting with string a. If one string is longer than the other, then append the letters to the end of the merged string.
-ex. "abcd", "efghi" -> "aebfcgdhi"
-ex. "", "abcd" -> "abcd"
-ex. "abcdefg", "zxy" -> "azbxycdefg"
-"""
+""" Given a string s, return the longest and lexicographically smallest palindromic string that can be formed from the characters.
 
-a='abcd'
-b = 'efghi'
+ex. "abbaa" -> "abba" ex. "adeadeadevue" -> "adeeaeeda" """
 
-def mergeStrings(a,b):
-    res = ''
-    for l1,l2 in zip(a,b):
-        res += l1 + l2
-    if len(a) < len(b):
-        res += b[len(a):]
-    elif len(a) > len(b):
-        res += a[len(b):]
-    return res
+import collections def smallestPalindrome(str): store = collections.Counter(str) lexic\_store = \[\[key,val] for key,val in sorted(store.items(), key=lambda x:x\[0]) if val > 1] lexic\_store\_single = \[\[key,val] for key,val in sorted(store.items(), key=lambda x:x\[0]) if val % 2 == 1]\[0]\[0]
 
-print(mergeStrings(a,b)) # aebfcgdhi
-a=''; b='abcd'
-print(mergeStrings(a,b)) # abcd
-a="abcdefg"; b="zxy"
-print(mergeStrings(a,b)) # azbxcydefg
-print('*****************************************')
+```
+res = ''
+for key,val in lexic_store:
+    res += (key * int(val/2))
+return res + lexic_store_single + res[::-1]
+```
 
-"""
-Given a string s, return the longest and lexicographically smallest palindromic string
-that can be formed from the characters.
+str = "abbaa" print(smallestPalindrome(str)) str = "adeadeadevue" print(smallestPalindrome(str))
 
-ex. "abbaa" -> "abba"
-ex. "adeadeadevue" -> "adeeaeeda"
-"""
+## OP's solution - similar :)
 
-import collections
-def smallestPalindrome(str):
-    store = collections.Counter(str)
-    lexic_store = [[key,val] for key,val in sorted(store.items(), key=lambda x:x[0]) if val > 1]
-    lexic_store_single = [[key,val] for key,val in sorted(store.items(), key=lambda x:x[0]) if val % 2 == 1][0][0]
+def smallestPalindromeOP(s): if not s: return s res = \[] counts = collections.Counter(s) alphabet = "abcdefghijklmnopqrstuvwxyz" middle\_letter = "" for letter in alphabet: count = counts.get(letter, 0) if count > 0: if count % 2 == 1 and middle\_letter == "": middle\_letter = letter res.append(letter \* ((count - 1) // 2)) else: res.append(letter \* (count // 2))
 
-    res = ''
-    for key,val in lexic_store:
-        res += (key * int(val/2))
-    return res + lexic_store_single + res[::-1]
+```
+first = "".join(res)
 
-str = "abbaa"
-print(smallestPalindrome(str))
-str = "adeadeadevue"
-print(smallestPalindrome(str))
+return first + middle_letter + first[::-1]
+```
 
-# OP's solution - similar :)
+print(smallestPalindromeOP('abbaa')) print('\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*')
 
-def smallestPalindromeOP(s):
-    if not s:
-        return s
-    res = []
-    counts = collections.Counter(s)
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    middle_letter = ""
-    for letter in alphabet:
-        count = counts.get(letter, 0)
-        if count > 0:
-            if count % 2 == 1 and middle_letter == "":
-                middle_letter = letter
-                res.append(letter * ((count - 1) // 2))
-            else:
-                res.append(letter * (count // 2))
+## Easy - Medium
 
-    first = "".join(res)
+""" Given a list of strings string\_list and a list of words words, determine whether each word in words can be formed as a concatenation of consecutive strings in string\_list starting with index 0. ex. word = "oneTwoThree", string\_list = \["one", "Three", "Two"] is false because the words aren't consecutive in string\_list ex. word = "one", string\_list = \["one", "Three", "Two"] is True because the concatenation stops at the first index in string\_list ex. word = "one", string\_list = \["One", "one", "Two"] is False because the concatenation doesn't start at 0. Just use the base idea from the LeetCode problem and then modify it for the consecutive concatenation requirement. It's actually easier than the LeetCode problem. """
 
-    return first + middle_letter + first[::-1]
+word = "one"; string\_list = \["one", "Three", "Two"]
 
-print(smallestPalindromeOP('abbaa'))
-print('*****************************************')
+def isConcatenate(word, string\_list): res = '' for w in string\_list: res += w if res == word: return True return False
 
-# Easy - Medium
+print(isConcatenate(word, string\_list)) print('\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*')
 
-"""
-Given a list of strings string_list and a list of words words, determine whether each word in words
-can be formed as a concatenation of consecutive strings in string_list starting with index 0.
-ex. word = "oneTwoThree", string_list = ["one", "Three", "Two"] is false because the words aren't consecutive in string_list
-ex. word = "one", string_list = ["one", "Three", "Two"] is True because the concatenation stops at the first index in string_list
-ex. word = "one", string_list = ["One", "one", "Two"] is False because the concatenation doesn't start at 0.
-Just use the base idea from the LeetCode problem and then modify it for the consecutive concatenation requirement.
-It's actually easier than the LeetCode problem.
-"""
+## Medium
 
-word = "one"; string_list = ["one", "Three", "Two"]
+""" Beauty of a matrix. Given an n x n matrix M and an int k where n % k == 0, divide the M into blocks of size k x k starting with the top left corner. i.e. a 9x9 matrix turns into 9 3x3s. The beauty of a block is the smallest positive number missing from a block. Rearrange M so that the blocks with the lowest beauty come before those with higher beauty (top left to bottom right). In a tie, you should place the block that came first in M before the other block. """
 
-def isConcatenate(word, string_list):
-    res = ''
-    for w in string_list:
-        res += w
-        if res == word:
-            return True
-    return False
-
-print(isConcatenate(word, string_list))
-print('*****************************************')
-
-# Medium
-
-"""
-Beauty of a matrix.
-Given an n x n matrix M and an int k where n % k == 0,
-divide the M into blocks of size k x k starting with the top left corner. i.e.
-a 9x9 matrix turns into 9 3x3s. The beauty of a block is the smallest positive number missing
-from a block. Rearrange M so that the blocks with the lowest beauty come before those with
-higher beauty (top left to bottom right).
-In a tie, you should place the block that came first in M before the other block.
-"""
-
-matrix = [
-    [1,2,2,3],
-    [3,4,10,4],
-    [2,10,1,2],
-    [5,4,4,5],
-]
+matrix = \[ \[1,2,2,3], \[3,4,10,4], \[2,10,1,2], \[5,4,4,5], ]
 
 size = 2 # 2 x 2
 
-def get_beauty(sub_matrix):
-    sm = sorted(sub_matrix)
-    magic_num = 1
-    for num in sm:
-        if num > magic_num:
-            return magic_num
-        magic_num += 1
-    return magic_num
+def get\_beauty(sub\_matrix): sm = sorted(sub\_matrix) magic\_num = 1 for num in sm: if num > magic\_num: return magic\_num magic\_num += 1 return magic\_num
 
-def magic_number(matrix):
-    sub_matrices = []
-    serial = 0
-    for j in range(size):
-        for i in range(size):
-            x, y = j * len(matrix)//size, i * len(matrix)//size
+def magic\_number(matrix): sub\_matrices = \[] serial = 0 for j in range(size): for i in range(size): x, y = j \* len(matrix)//size, i \* len(matrix)//size
 
-            sub_matrix = []
-            for p in range(size):
-                for q in range(size):
-                    sub_matrix.append(matrix[x+p][y+q])
+```
+        sub_matrix = []
+        for p in range(size):
+            for q in range(size):
+                sub_matrix.append(matrix[x+p][y+q])
 
-            beauty_num = get_beauty(sub_matrix)
-            sub_matrices.append([sub_matrix, beauty_num, serial])
-            serial += 1
+        beauty_num = get_beauty(sub_matrix)
+        sub_matrices.append([sub_matrix, beauty_num, serial])
+        serial += 1
 
-    sub_matrices.sort(key=lambda x: (x[1],x[2]))
+sub_matrices.sort(key=lambda x: (x[1],x[2]))
 
-    serial = 0
-    for j in range(size):
-        for i in range(size):
-            x, y = j * len(matrix)//size, i * len(matrix)//size
+serial = 0
+for j in range(size):
+    for i in range(size):
+        x, y = j * len(matrix)//size, i * len(matrix)//size
 
-            iter1 = iter(sub_matrices[serial][0])
-            for p in range(size):
-                for q in range(size):
-                    matrix[x+p][y+q] = next(iter1)
-            serial += 1
+        iter1 = iter(sub_matrices[serial][0])
+        for p in range(size):
+            for q in range(size):
+                matrix[x+p][y+q] = next(iter1)
+        serial += 1
 
-    for row in matrix:
-        print(row)
+for row in matrix:
+    print(row)
 
-    return matrix
+return matrix
+```
 
-magic_number(matrix)
+magic\_number(matrix)
 
-print('*****************************************')
+print('\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*')
 
-"""
-Rotate matrix around diagonals.
-Given an n x n matrix M, where n is odd and n > 1, and an integer k,
-rotate M counterclockwise k times which are not on the main diagonal or
-on the diagonal from the top right to the bottom left.
-Return the new matrix.
-Ex. I put *s to show which elements are fixed on the diagonals.
+""" Rotate matrix around diagonals. Given an n x n matrix M, where n is odd and n > 1, and an integer k, rotate M counterclockwise k times which are not on the main diagonal or on the diagonal from the top right to the bottom left. Return the new matrix. Ex. I put \*s to show which elements are fixed on the diagonals.
 
-[*1*, 2, 3, 4, *5*]
-[6, *7*, 8, *9*, 10]
-[11, 12, *13*, 14, 15]
-[16, *17*, 18, *19*, 20]
-[*21*, 22, 23, 24, *25*]
+\[_1_, 2, 3, 4, _5_] \[6, _7_, 8, _9_, 10] \[11, 12, _13_, 14, 15] \[16, _17_, 18, _19_, 20] \[_21_, 22, 23, 24, _25_]
 
 Rotates to:
 
-[*1*, 16, 11, 6, *5*]
-[22, *7*, 12, *9*, 2]
-[23, 18, *13*, 8, 3]
-[24, *17*, 14, *19*, 4]
-[*21*, 20, 15, 10, *25*]
-"""
+\[_1_, 16, 11, 6, _5_] \[22, _7_, 12, _9_, 2] \[23, 18, _13_, 8, 3] \[24, _17_, 14, _19_, 4] \[_21_, 20, 15, 10, _25_] """
 
-# Brilliant method - https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
+## Brilliant method - https://leetcode.com/problems/rotate-image/discuss/18872/A-common-method-to-rotate-the-image
 
-#  * clockwise rotate
-#  * first reverse up to down, then swap the symmetry
-#  * 1 2 3     7 8 9     7 4 1
-#  * 4 5 6  => 4 5 6  => 8 5 2
-#  * 7 8 9     1 2 3     9 6 3
+## \* clockwise rotate
 
-matrix = [
-    [1, 2, 3, 4, 5],
-    [6, 7, 8, 9, 10],
-    [11, 12, 13, 14, 15],
-    [16, 17, 18, 19, 20],
-    [21, 22, 23, 24, 25],
-]
+## \* first reverse up to down, then swap the symmetry
 
-def reverseImage(matrix):
-    start, end = 0, len(matrix)-1
+## \* 1 2 3 7 8 9 7 4 1
 
-    while start < end:
-        for i in range(len(matrix)):
-            if start != i and end!= i:
-                matrix[start][i], matrix[end][i] = matrix[end][i], matrix[start][i]
-        start += 1
-        end -= 1
-    return matrix
+## \* 4 5 6 => 4 5 6 => 8 5 2
 
-def swapMatrix(matrix):
+## \* 7 8 9 1 2 3 9 6 3
+
+matrix = \[ \[1, 2, 3, 4, 5], \[6, 7, 8, 9, 10], \[11, 12, 13, 14, 15], \[16, 17, 18, 19, 20], \[21, 22, 23, 24, 25], ]
+
+def reverseImage(matrix): start, end = 0, len(matrix)-1
+
+```
+while start < end:
     for i in range(len(matrix)):
-        for j in range(i+1, len(matrix)):
-            if i != j and i+j != len(matrix) -1:
-                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
-    return matrix
+        if start != i and end!= i:
+            matrix[start][i], matrix[end][i] = matrix[end][i], matrix[start][i]
+    start += 1
+    end -= 1
+return matrix
+```
 
-def rotateImage(matrix, num_rotate):
-    num_rotate = num_rotate % 4 # because 4 rotations = original image
+def swapMatrix(matrix): for i in range(len(matrix)): for j in range(i+1, len(matrix)): if i != j and i+j != len(matrix) -1: matrix\[i]\[j], matrix\[j]\[i] = matrix\[j]\[i], matrix\[i]\[j] return matrix
 
-    for _ in range(num_rotate):
-        matrix = reverseImage(matrix)
-        matrix = swapMatrix(matrix)
+def rotateImage(matrix, num\_rotate): num\_rotate = num\_rotate % 4 # because 4 rotations = original image
 
-    return matrix
+```
+for _ in range(num_rotate):
+    matrix = reverseImage(matrix)
+    matrix = swapMatrix(matrix)
+
+return matrix
+```
 
 print(rotateImage(matrix, 17))
 
-# Medium/Hard
-"""
-Given two arrays a and b of equal length,
-the absolute sum difference is the sum Math.abs(a[i] - b[i]).
-Replace one number in a with any number in a to minimize the absolute sum difference.
+## Medium/Hard
 
-ref: https://leetcode.com/discuss/interview-question/949484/codesignal-gca-i-have-a-question
-idea: https://leetcode.com/discuss/interview-question/949484/CodeSignal-GCA-(I-have-a-question)/779839
-"""
+""" Given two arrays a and b of equal length, the absolute sum difference is the sum Math.abs(a\[i] - b\[i]). Replace one number in a with any number in a to minimize the absolute sum difference.
 
-arr1 = [1,2,3,4]
-arr2 = [1,2,4,0]
+ref: https://leetcode.com/discuss/interview-question/949484/codesignal-gca-i-have-a-question idea: https://leetcode.com/discuss/interview-question/949484/CodeSignal-GCA-(I-have-a-question)/779839 """
 
-def find_in_arr1(num, arr):
-    return min(arr, key=lambda x:abs(x[0]-num))[1]
+arr1 = \[1,2,3,4] arr2 = \[1,2,4,0]
 
-def minAbsSumDiff(arr1, arr2):
-    sorted_arr1 = [(num,i) for i, num in enumerate(sorted(arr1))]
-    min_diff_sum = orig_sum_diff = sum([abs(num1 - num2) for num1, num2 in zip(arr1, arr2)])
+def find\_in\_arr1(num, arr): return min(arr, key=lambda x:abs(x\[0]-num))\[1]
 
-    for i, num in enumerate(arr1):
-        index = find_in_arr1(arr2[i], sorted_arr1)
-        if index != i:
-            min_diff_sum = min(min_diff_sum, orig_sum_diff - (abs(arr1[i]-arr2[i])) + (abs(arr1[index] - arr2[i])))
+def minAbsSumDiff(arr1, arr2): sorted\_arr1 = \[(num,i) for i, num in enumerate(sorted(arr1))] min\_diff\_sum = orig\_sum\_diff = sum(\[abs(num1 - num2) for num1, num2 in zip(arr1, arr2)])
 
-    return min_diff_sum
+```
+for i, num in enumerate(arr1):
+    index = find_in_arr1(arr2[i], sorted_arr1)
+    if index != i:
+        min_diff_sum = min(min_diff_sum, orig_sum_diff - (abs(arr1[i]-arr2[i])) + (abs(arr1[index] - arr2[i])))
 
-print(minAbsSumDiff(arr1, arr2))
+return min_diff_sum
 ```
 
+print(minAbsSumDiff(arr1, arr2))
+
+```
 
 
 
 
 Python - beauty of matrix
-
-```
-def firstMissingPositive(nums):
-    n = len(nums)
-
-    if 1 not in nums:
-        return 1
-
-    if len(nums)==1:
-        return 2
-
-    for i, num in enumerate(nums):
-        if num<=0 or num>n:
-            nums[i] = 1
-
-    for i, num in enumerate(nums):
-        a = abs(nums[i])
-        if a==n:
-            nums[0] = -abs(nums[0])
-        else:
-            nums[a] = -abs(nums[a])
-
-    for i in range(1, len(nums)):
-        if nums[i]>0:
-            return i
-
-    if nums[0]>0:
-        return n
-
-    return n+1
-
-def beautyOfMatrix(matrix, k):
-    n = len(matrix)
-    new_n = n//k
-    lst = [[] for j in range(new_n*new_n)]
-
-    for i in range(len(matrix)):
-        for j in range(len(matrix[0])):
-            idx = j//new_n + (i//new_n)*new_n
-            lst[idx].append(matrix[i][j])
-
-    missing =[]
-    for i in range(len(lst)):
-        mis_pos = firstMissingPositive(copy.deepcopy(lst[i]))
-        missing.append((mis_pos, i))
-
-    missing = sorted(missing)
-
-    n_box_idx = 0
-    for i in range(len(missing)):
-        box_idx = missing[i][1]
-        for j in range(len(lst[box_idx])):
-            r = (n_box_idx//new_n)*new_n + j//new_n
-            c = (n_box_idx%new_n)*new_n + j%new_n
-            matrix[r][c] = lst[box_idx][j]
-        n_box_idx += 1
-    return matrix
 ```
 
+def firstMissingPositive(nums): n = len(nums)
+
+```
+if 1 not in nums:
+    return 1
+
+if len(nums)==1:
+    return 2
+
+for i, num in enumerate(nums):
+    if num<=0 or num>n:
+        nums[i] = 1
+
+for i, num in enumerate(nums):
+    a = abs(nums[i])
+    if a==n:
+        nums[0] = -abs(nums[0])
+    else:
+        nums[a] = -abs(nums[a])
+
+for i in range(1, len(nums)):
+    if nums[i]>0:
+        return i
+
+if nums[0]>0:
+    return n
+
+return n+1
+```
+
+def beautyOfMatrix(matrix, k): n = len(matrix) new\_n = n//k lst = \[\[] for j in range(new\_n\*new\_n)]
+
+```
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        idx = j//new_n + (i//new_n)*new_n
+        lst[idx].append(matrix[i][j])
+
+missing =[]
+for i in range(len(lst)):
+    mis_pos = firstMissingPositive(copy.deepcopy(lst[i]))
+    missing.append((mis_pos, i))
+
+missing = sorted(missing)
+
+n_box_idx = 0
+for i in range(len(missing)):
+    box_idx = missing[i][1]
+    for j in range(len(lst[box_idx])):
+        r = (n_box_idx//new_n)*new_n + j//new_n
+        c = (n_box_idx%new_n)*new_n + j%new_n
+        matrix[r][c] = lst[box_idx][j]
+    n_box_idx += 1
+return matrix
+```
+
+```
 
 
 def max_k_occurences(sequence,word):
@@ -3500,18 +3359,11 @@ if __name__ == "__main__":
 
 
 
-
 ```
 {% endtab %}
 {% endtabs %}
 
-
-
 {% tabs %}
-{% tab title="All CODESIGNAL" %}
-
-{% endtab %}
-
 {% tab title="SOLUTIONS" %}
 ```python
 def add(param1, param2):
@@ -4256,7 +4108,7 @@ import itertools as i
 # *re.findall('...', 'abcdefghijklmno')
 # >>> 'abc', 'def', 'ghi', 'jkl', 'mno'
 
-#  [0,0,"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"]
+#  [0,0,"abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"]
 return [
     "".join(s)
     for s in i.product(
@@ -5051,7 +4903,6 @@ def messageFromBinaryCode(code):
 {% tab title="MORE SOLUTIONS" %}
 ```python
 
-
 """Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - 
 from the year 101 up to and including the year 200, etc.
 
@@ -5736,12 +5587,3 @@ return max(n // 2 - max(l, n - r) + 1, 0)
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-
-
-
-
-
-

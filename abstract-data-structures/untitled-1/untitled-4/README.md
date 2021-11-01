@@ -162,8 +162,6 @@ print('n1',n1)
 {% endtab %}
 
 {% tab title="Doublely-linked-list.py" %}
-
-
 ```python
 """
 Each ListNode holds a reference to its previous node
@@ -479,7 +477,7 @@ Each element of a **doubly linked list** is an object with an attribute _key_ an
 
 A list may have one of several forms. It may be either singly linked or doubly linked, it may be sorted or not, and it may be circular or not.
 
-### 
+###
 
 ```python
 """
@@ -630,7 +628,6 @@ linked_list.traverse()
 # print the size of the list
 print(f'size: {linked_list.size_of_list()}')
 
-
 ```
 
 ## Linked List
@@ -639,13 +636,13 @@ print(f'size: {linked_list.size_of_list()}')
   * [Source](http://blog.gainlo.co/index.php/2016/06/12/flatten-a-linked-list/)
 * Reverse a singly linked list. Implement it recursively and iteratively.
 * Convert a binary tree to a doubly circular linked list.
-* Implement an LRU cache with O\(1\) runtime for all its operations.
+* Implement an LRU cache with O(1) runtime for all its operations.
 * Check distance between values in linked list.
 * A question involving an API's integration with hash map where the buckets of hash map are made up of linked lists.
-* Given a singly linked list \(a list which can only be traversed in one direction\), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
+* Given a singly linked list (a list which can only be traversed in one direction), find the item that is located at 'k' items from the end. So if the list is a, b, c, d and k is 2 then the answer is 'c'. The solution should not search the list twice.
 * How can you tell if a Linked List is a Palindrome?
 
-### 
+###
 
 ### Linked lists in Python
 
@@ -761,12 +758,11 @@ print([node.value for node in linked_list_iter(linked_list)])
 linked_list = linked_list_delete_index(linked_list, 0)
 linked_list = linked_list_delete_index(linked_list, 0)
 print([node.value for node in linked_list_iter(linked_list)])
-
 ```
 
 #### Output:
 
-```text
+```
 [1, 2, 4]
 [0, 1, 2, 4]
 [0, 1, 2, 3, 4]
@@ -782,8 +778,6 @@ Unlike arrays, linked lists do not have objective positions in the list. Instead
 
 The first node in a linked list is called the **head node,** and the final is called the **tail node**, which has a `null` pointer.
 
-
-
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=300,q=10/api/page/4827483893923840/image/download/5638844823633920)
 
 ![widget](https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=600/api/page/4827483893923840/image/download/5638844823633920)
@@ -793,10 +787,6 @@ Linked lists can be singly or doubly linked depending if each node has just a si
 You can think of linked lists like a chain; individual links only have a connection to their immediate neighbors but all the links together form a larger structure.
 
 Python does not have a built-in implementation of linked lists and therefore requires that you implement a `Node` class to hold a data value and one or more pointers.
-
-
-
-
 
 **Advantages:**
 
@@ -933,7 +923,6 @@ print ll.get_position(1).value
 print ll.get_position(2).value
 # Should print 3 now
 print ll.get_position(3).value
-
 ```
 {% endtab %}
 
@@ -957,7 +946,6 @@ list1.headval.nextval = e2
  
 # Link second Node to third node
 e2.nextval = e3
-
 ```
 {% endtab %}
 
@@ -1182,22 +1170,21 @@ class CircularDoublyLinkedList(BaseCircularLinkedList[T], BaseDoublyLinkedList[T
         while node is not self.tail:
             node.next, node.last, node = node.last, node.next, node.next
         self.tail.next, self.tail.last, self.tail = self.tail.last, self.tail.next, self.tail.next
-
 ```
 {% endtab %}
 {% endtabs %}
 
-A linked list is similar to an array, it holds values. However, links in a linked  list do not have indexes.
+A linked list is similar to an array, it holds values. However, links in a linked list do not have indexes.
 
 * This is an example of a double ended, doubly linked list.
 * Each link references the next link and the previous one.
-* A Doubly Linked List \(DLL\) contains an extra pointer, typically called previous
+*   A Doubly Linked List (DLL) contains an extra pointer, typically called previous
 
     pointer, together with next pointer and data which are there in singly linked list.
 
-  * Advantages over SLL - It can be traversed in both forward and backward direction.
+    *   Advantages over SLL - It can be traversed in both forward and backward direction.
 
-     Delete operation is more efficient
+        Delete operation is more efficient
 
 ```python
 """Each ListNode holds a reference to its previous node
@@ -1268,12 +1255,7 @@ class DoublyLinkedList:
     
   def get_max(self):
     pass
-
 ```
-
-
-
-
 
 Test:
 
@@ -1433,39 +1415,66 @@ if __name__ == '__main__':
   unittest.main()
 ```
 
+{% content-ref url="../array/" %}
+[array](../array/)
+{% endcontent-ref %}
 
+{% content-ref url="../binary-search-tree/" %}
+[binary-search-tree](../binary-search-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="../array/" %}
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
 
-{% page-ref page="../binary-search-tree/" %}
+{% content-ref url="../array/extra-array.md" %}
+[extra-array.md](../array/extra-array.md)
+{% endcontent-ref %}
 
-{% page-ref page="./" %}
+{% content-ref url="../stack/" %}
+[stack](../stack/)
+{% endcontent-ref %}
 
-{% page-ref page="../array/extra-array.md" %}
+{% content-ref url="../binary-tree/" %}
+[binary-tree](../binary-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="../stack/" %}
+{% content-ref url="../untitled-6/" %}
+[untitled-6](../untitled-6/)
+{% endcontent-ref %}
 
-{% page-ref page="../binary-tree/" %}
+{% content-ref url="../untitled-5/" %}
+[untitled-5](../untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-6/" %}
+{% content-ref url="../untitled-2/" %}
+[untitled-2](../untitled-2/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-5/" %}
+{% content-ref url="../untitled-3/" %}
+[untitled-3](../untitled-3/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-2/" %}
+{% content-ref url="../queue/queue-sandbox.md" %}
+[queue-sandbox.md](../queue/queue-sandbox.md)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-3/" %}
+{% content-ref url="../untitled-5/" %}
+[untitled-5](../untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="../queue/queue-sandbox.md" %}
+{% content-ref url="double-linked-list.md" %}
+[double-linked-list.md](double-linked-list.md)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-5/" %}
+{% content-ref url="../untitled-1/" %}
+[untitled-1](../untitled-1/)
+{% endcontent-ref %}
 
-{% page-ref page="double-linked-list.md" %}
+{% content-ref url="../untitled/" %}
+[untitled](../untitled/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-1/" %}
-
-{% page-ref page="../untitled/" %}
-
-{% page-ref page="../heap/" %}
-
-
-
+{% content-ref url="../heap/" %}
+[heap](../heap/)
+{% endcontent-ref %}

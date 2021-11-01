@@ -1,6 +1,6 @@
 # Classes and objects
 
-## 
+##
 
 ### Classes and Objects
 
@@ -69,7 +69,7 @@ print(p)
 
 #### Class Constructor
 
-In the examples above, we have created an object from the Person class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in **init**\(\) constructor function. The **init** constructor function has self parameter which is a reference to the current instance of the class **Examples:**
+In the examples above, we have created an object from the Person class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in **init**() constructor function. The **init** constructor function has self parameter which is a reference to the current instance of the class **Examples:**
 
 ```python
 class Person:
@@ -243,8 +243,8 @@ Lidiya Teklemariam is 28 years old. He lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We did not call the **init**\(\) constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.  
-We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**\(\) function, the child class will no longer inherit the parent's **init**\(\) function.
+We did not call the **init**() constructor in the child class. If we didn't call it then we can still access all the properties from the parent. But if we do call the constructor we can access the parent properties by calling _super_.\
+We can add a new method to the child or we can override the parent class methods by creating the same method name in the child class. When we add the **init**() function, the child class will no longer inherit the parent's **init**() function.
 
 #### Overriding parent method
 
@@ -279,7 +279,7 @@ Lidiya Teklemariam is 28 years old. She lives in Espoo, Finland.
 ['Organizing', 'Marketing', 'Digital Marketing']
 ```
 
-We can use super\(\) built-in function or the parent name Person to automatically inherit the methods and properties from its parent. In the example above we override the parent method. The child method has a different feature, it can identify, if the gender is male or female and assign the proper pronoun\(He/She\).
+We can use super() built-in function or the parent name Person to automatically inherit the methods and properties from its parent. In the example above we override the parent method. The child method has a different feature, it can identify, if the gender is male or female and assign the proper pronoun(He/She).
 
 🌕 Now, you are fully charged with a super power of programming. Now do some exercises for your brain and muscles.
 
@@ -287,7 +287,7 @@ We can use super\(\) built-in function or the parent name Person to automaticall
 
 #### Exercises: Level 1
 
-1. Python has the module called _statistics_ and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample \(mean, median, mode\) and measure of variability \(range, variance, standard deviation\). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.
+1. Python has the module called _statistics_ and we can use this module to do all the statistical calculations. However, to learn how to make function and reuse function let us try to develop a program, which calculates the measure of central tendency of a sample (mean, median, mode) and measure of variability (range, variance, standard deviation). In addition to those measures, find the min, max, count, percentile, and frequency distribution of the sample. You can create a class called Statistics and create all the functions that do statistical calculations as methods for the Statistics class. Check the output below.
 
 ```python
 ages = [31, 26, 34, 37, 27, 26, 32, 32, 26, 27, 27, 24, 32, 33, 27, 25, 26, 38, 37, 31, 34, 24, 33, 29, 26]
@@ -320,10 +320,6 @@ Variance:  17.5
 Standard Deviation:  4.2
 Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 ```
-
-
-
-
 
 {% tabs %}
 {% tab title="Abstract Class" %}
@@ -453,7 +449,6 @@ if __name__ == "__main__":
 {% tab title="Basic Class" %}
 ```python
 
-
 """
 A class is made up of methods and state. This allows code and data to be
 combined as one logical entity. This module defines a basic car class,
@@ -532,7 +527,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -541,17 +535,17 @@ if __name__ == "__main__":
 
 ### 7.1. Object-oriented programming
 
-Python is an **object-oriented programming language**, which means that it provides features that support [object-oriented programming](http://en.wikipedia.org/wiki/Object-oriented_programming) \( **OOP**\).
+Python is an **object-oriented programming language**, which means that it provides features that support [object-oriented programming](http://en.wikipedia.org/wiki/Object-oriented\_programming) ( **OOP**).
 
-Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main [programming paradigm](http://en.wikipedia.org/wiki/Programming_paradigm) used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.
+Object-oriented programming has its roots in the 1960s, but it wasn’t until the mid 1980s that it became the main [programming paradigm](http://en.wikipedia.org/wiki/Programming\_paradigm) used in the creation of new software. It was developed as a way to handle the rapidly increasing size and complexity of software systems, and to make it easier to modify these large and complex systems over time.
 
-Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural_programming) paradigm. In procedural programming the focus is on writing functions or _procedures_ which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
+Up to now we have been writing programs using a [procedural programming](http://en.wikipedia.org/wiki/Procedural\_programming) paradigm. In procedural programming the focus is on writing functions or _procedures_ which operate on data. In object-oriented programming the focus is on the creation of **objects** which contain both data and functionality together.
 
 ### 7.2. User-defined compound types
 
 We will now introduce a new Python keyword, **class**, which in essence defines a new **data type**. We have been using several of Python’s built-in types throughout this book, we are now ready to create our own user-defined type: the `Point`.
 
-Consider the concept of a mathematical point. In two dimensions, a point is two numbers \(coordinates\) that are treated collectively as a single object. In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, `(0, 0)` represents the origin, and `(x, y)` represents the point `x` units to the right and `y` units up from the origin.
+Consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, `(0, 0)` represents the origin, and `(x, y)` represents the point `x` units to the right and `y` units up from the origin.
 
 A natural way to represent a point in Python is with two numeric values. The question, then, is how to group these two values into a compound object. The quick and dirty solution is to use a list or tuple, and for some applications that might be the best choice.
 
@@ -559,23 +553,23 @@ An alternative is to define a new user-defined compound type, called a **class**
 
 A class definition looks like this:
 
-```text
+```
 class Point:
     pass
 ```
 
-Class definitions can appear anywhere in a program, but they are usually near the beginning \(after the `import` statements\). The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, `class`, followed by the name of the class, and ending with a colon.
+Class definitions can appear anywhere in a program, but they are usually near the beginning (after the `import` statements). The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, `class`, followed by the name of the class, and ending with a colon.
 
 This definition creates a new class called `Point`. The **pass** statement has no effect; it is only necessary because a compound statement must have something in its body. A docstring could serve the same purpose:
 
-```text
+```
 class Point:
     "Point class for storing mathematical points."
 ```
 
 By creating the `Point` class, we created a new type, also called `Point`. The members of this type are called **instances** of the type or **objects**. Creating a new instance is called **instantiation**, and is accomplished by **calling the class**. Classes, like functions, are callable, and we instantiate a `Point` object by calling the `Point` class:
 
-```text
+```
 >>> type(Point)
 <class 'type'>
 >>> p = Point()
@@ -593,20 +587,20 @@ Like real world objects, object instances have both form and function. The form 
 
 We can add new data elements to an instance using **dot notation**:
 
-```text
+```
 >>> p.x = 3
 >>> p.y = 4
 ```
 
 This syntax is similar to the syntax for selecting a variable from a module, such as `math.pi` or `string.uppercase`. Both modules and instances create their own namespaces, and the syntax for accessing names contained in each, called **attributes**, is the same. In this case the attribute we are selecting is a data item from an instance.
 
-The following state diagram shows the result of these assignments:![Point state diagram](https://www.openbookproject.net/books/bpp4awd/_images/point.png)
+The following state diagram shows the result of these assignments:![Point state diagram](https://www.openbookproject.net/books/bpp4awd/\_images/point.png)
 
 The variable `p` refers to a Point object, which contains two attributes. Each attribute refers to a number.
 
 We can read the value of an attribute using the same syntax:
 
-```text
+```
 >>> print(p.y)
 4
 >>> x = p.x
@@ -618,7 +612,7 @@ The expression `p.x` means, “Go to the object `p` refers to and get the value 
 
 You can use dot notation as part of any expression, so the following statements are legal:
 
-```text
+```
 print('({0}, {1})'.format(p.x, p.y))
 distance_squared = p.x * p.x + p.y * p.y
 ```
@@ -629,7 +623,7 @@ The first line outputs `(3, 4)`; the second line calculates the value 25.
 
 Since our `Point` class is intended to represent two dimensional mathematical points, _all_ point instances ought to have `x` and `y` attributes, but that is not yet so with our `Point` objects.
 
-```text
+```
 >>> p2 = Point()
 >>> p2.x
 Traceback (most recent call last):
@@ -640,7 +634,7 @@ AttributeError: 'Point' object has no attribute 'x'
 
 To solve this problem we add an **initialization method** to our class.
 
-```text
+```
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -649,13 +643,13 @@ class Point:
 
 A **method** behaves like a function but it is part of an object. Like a data attribute it is accessed using dot notation.
 
-The initialization method is a special method that is invoked automatically when an object is created by calling the class. The name of this method is `__init__` \(two underscore characters, followed by `init`, and then two more underscores\). This name must be used to make a method an initialization method in Python.
+The initialization method is a special method that is invoked automatically when an object is created by calling the class. The name of this method is `__init__` (two underscore characters, followed by `init`, and then two more underscores). This name must be used to make a method an initialization method in Python.
 
 There is no conflict between the attribute `self.x` and the parameter `x`. Dot notation specifies which variable we are referring to.
 
 Let’s add another method, `distance_from_origin`, to see better how methods work:
 
-```text
+```
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -667,7 +661,7 @@ class Point:
 
 Let’s create a few point instances, look at their attributes, and call our new method on them:
 
-```text
+```
 >>> p = Point(3, 4)
 >>> p.x
 3
@@ -697,7 +691,7 @@ When defining a method, the first parameter refers to the instance being created
 
 You can pass an instance as a parameter to a function in the usual way. For example:
 
-```text
+```
 def print_point(p):
     print('({0}, {1})'.format(p.x, p.y))
 ```
@@ -709,7 +703,7 @@ To convert `print_point` to a method, do the following:
 1. Indent the function definition so that it is inside the class definition.
 2. Rename the parameter to `self`.
 
-```text
+```
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -724,7 +718,7 @@ class Point:
 
 We can now invoke the method using dot notation.
 
-```text
+```
 >>> p = Point(3, 4)
 >>> p.print_point()
 (3, 4)
@@ -742,7 +736,7 @@ This change in perspective might be more polite, but it is not obvious that it i
 
 It is not easy to define object-oriented programming, but we have already seen some of its characteristics:
 
-1. Programs are made up of class definitions which contain attributes that can be data \(instance variables\) or behaviors \(methods\).
+1. Programs are made up of class definitions which contain attributes that can be data (instance variables) or behaviors (methods).
 2. Each object definition corresponds to some object or concept in the real world, and the functions that operate on that object correspond to the ways real-world objects interact.
 3. Most of the computation is expressed in terms of operations on objects.
 
@@ -754,7 +748,7 @@ As another example of a user-defined type, we’ll define a class called `Time` 
 
 The class definition looks like this:
 
-```text
+```
 class Time:
     def __init__(self, hours, minutes, seconds):
         self.hours = hours
@@ -764,7 +758,7 @@ class Time:
 
 When we call the `Time` class, the arguments we provide are passed along to `init`:
 
-```text
+```
 >>> current_time = Time(9, 14, 30)
 >>> current_time.hours
 9
@@ -778,7 +772,7 @@ Here is a `print_time` method for our `Time` objects that uses string formating 
 
 To save space, we will leave out the initialization method, but you should include it:
 
-```text
+```
 class Time:
     # previous method definitions here...
 
@@ -789,7 +783,7 @@ class Time:
 
 which we can now invoke on time instances in the usual way:
 
-```text
+```
 >>> t1 = Time(9, 14, 30)
 >>> t1.print_time()
 9:14:30
@@ -806,7 +800,7 @@ It is possible to write user-defined functions with optional argument lists. For
 
 This is the original version:
 
-```text
+```
 def find(str, ch):
     index = 0
     while index < len(str):
@@ -818,7 +812,7 @@ def find(str, ch):
 
 This is the new and improved version:
 
-```text
+```
 def find(str, ch, start=0):
     index = start
     while index < len(str):
@@ -830,14 +824,14 @@ def find(str, ch, start=0):
 
 The third parameter, `start`, is optional because a default value, `0`, is provided. If we invoke `find` with only two arguments, we use the default value and start from the beginning of the string:
 
-```text
+```
 >>> find("apple", "p")
 1
 ```
 
 If we provide a third parameter, it **overrides** the default:
 
-```text
+```
 >>> find("apple", "p", 2)
 2
 >>> find("apple", "p", 3)
@@ -846,7 +840,7 @@ If we provide a third parameter, it **overrides** the default:
 
 We can rewrite our initialization method for the `Time` class so that `hours`, `minutes`, and `seconds` are each optional arguments.
 
-```text
+```
 class Time:
     def __init__(self, hours=0, minutes=0, seconds=0):
         self.hours = hours
@@ -856,13 +850,13 @@ class Time:
 
 When we instantiate a `Time` object, we can pass in values for the three parameters, as we did with
 
-```text
+```
 >>> current_time = Time(9, 14, 30)
 ```
 
 Because the parameters are now optional, however, we can omit them:
 
-```text
+```
 >>> current_time = Time()
 >>> current_time.print_time()
 0:00:00
@@ -870,7 +864,7 @@ Because the parameters are now optional, however, we can omit them:
 
 Or provide only the first parameter:
 
-```text
+```
 >>> current_time = Time(9)
 >>> current_time.print_time()
 9:00:00
@@ -878,7 +872,7 @@ Or provide only the first parameter:
 
 Or the first two parameters:
 
-```text
+```
 >>> current_time = Time (9, 14)
 >>> current_time.print_time()
 9:14:00
@@ -886,7 +880,7 @@ Or the first two parameters:
 
 Finally, we can provide a subset of the parameters by naming them explicitly:
 
-```text
+```
 >>> current_time = Time(seconds = 30, hours = 9)
 >>> current_time.print_time()
 9:00:30
@@ -896,7 +890,7 @@ Finally, we can provide a subset of the parameters by naming them explicitly:
 
 Let’s add a method `increment`, which increments a time instance by a given number of seconds. To save space, we will continue to leave out previously defined methods, but you should always keep them in your version:
 
-```text
+```
 class Time:
     # previous method definitions here...
 
@@ -914,7 +908,7 @@ class Time:
 
 Now we can invoke `increment` on a time instance.
 
-```text
+```
 >>> current_time = Time(9, 14, 30)
 >>> current_time.increment(125)
 >>> current_time.print_time()
@@ -929,7 +923,7 @@ Let’s add a boolen method, `after`, that takes two time instances and returns 
 
 We can only convert one of the parameters to `self`; the other we will call `other`, and it will have to be a parameter of the method.
 
-```text
+```
 class Time:
     # previous method definitions here...
 
@@ -951,20 +945,20 @@ class Time:
 
 We invoke this method on one object and pass the other as an argument:
 
-```text
+```
 if time1.after(time2):
     print("It's later than you think.")
 ```
 
 You can almost read the invocation like English: If time1 is after time2, then…
 
-#### 7.10.1. Pure functions and modifiers \(again\)
+#### 7.10.1. Pure functions and modifiers (again)
 
 In the next few sections, we’ll write two versions of a function called `add_time`, which calculates the sum of two `Time`s. They will demonstrate two kinds of functions: pure functions and modifiers, which we first encountered in the [Functions](https://www.openbookproject.net/books/bpp4awd/ch05.html#functions-chapter) chapter.
 
 The following is a rough version of `add_time`:
 
-```text
+```
 def add_time(t1, t2):
     sum = Time()
     sum.hours = t1.hours + t2.hours
@@ -977,7 +971,7 @@ The function creates a new `Time` object, initializes its attributes, and return
 
 Here is an example of how to use this function. We’ll create two `Time` objects: `current_time`, which contains the current time; and `bread_time`, which contains the amount of time it takes for a breadmaker to make bread. Then we’ll use `add_time` to figure out when the bread will be done. If you haven’t finished writing `print_time` yet, take a look ahead to Section before you try this:
 
-```text
+```
 >>> current_time = Time(9, 14, 30)
 >>> bread_time = Time(3, 35, 0)
 >>> done_time = add_time(current_time, bread_time)
@@ -991,7 +985,7 @@ The problem is that this function does not deal with cases where the number of s
 
 Here’s a second corrected version of the function:
 
-```text
+```
 def add_time(t1, t2):
     sum = Time()
     sum.hours = t1.hours + t2.hours
@@ -1017,7 +1011,7 @@ There are times when it is useful for a function to modify one or more of the ob
 
 `increment`, which adds a given number of seconds to a `Time` object, would be written most naturally as a modifier. A rough draft of the function looks like this:
 
-```text
+```
 def increment(time, seconds):
     time.seconds = time.seconds + seconds
 
@@ -1034,7 +1028,7 @@ The first line performs the basic operation; the remainder deals with the specia
 
 Is this function correct? What happens if the parameter `seconds` is much greater than sixty? In that case, it is not enough to carry once; we have to keep doing it until `seconds` is less than sixty. One solution is to replace the `if` statements with `while` statements:
 
-```text
+```
 def increment(time, seconds):
     time.seconds = time.seconds + seconds
 
@@ -1051,7 +1045,7 @@ This function is now correct, but it is not the most efficient solution.
 
 ### 7.11. Prototype development versus planning
 
-So far in this chapter, we’ve used an approach to program development that we’ll call **prototype development**. We wrote a rough draft \(or prototype\) that performed the basic calculation and then tested it on a few cases, correcting flaws as we found them.
+So far in this chapter, we’ve used an approach to program development that we’ll call **prototype development**. We wrote a rough draft (or prototype) that performed the basic calculation and then tested it on a few cases, correcting flaws as we found them.
 
 Although this approach can be effective, it can lead to code that is unnecessarily complicated – since it deals with many special cases – and unreliable – since it is hard to know if we’ve found all the errors.
 
@@ -1061,7 +1055,7 @@ When we wrote `add_time` and `increment`, we were effectively doing addition in 
 
 This observation suggests another approach to the whole problem – we can convert a `Time` object into a single number and take advantage of the fact that the computer knows how to do arithmetic with numbers. The following function converts a `Time` object into an integer:
 
-```text
+```
 def convert_to_seconds(time):
     minutes = time.hours * 60 + time.minutes
     seconds = minutes * 60 + time.seconds
@@ -1070,7 +1064,7 @@ def convert_to_seconds(time):
 
 Now, all we need is a way to convert from an integer to a `Time` object:
 
-```text
+```
 def make_time(seconds):
     time = Time()
     time.hours = seconds // 3600
@@ -1083,23 +1077,23 @@ def make_time(seconds):
 
 You might have to think a bit to convince yourself that this technique to convert from one base to another is correct. Assuming you are convinced, you can use these functions to rewrite `add_time`:
 
-```text
+```
 def add_time(t1, t2):
     seconds = convert_to_seconds(t1) + convert_to_seconds(t2)
     return make_time(seconds)
 ```
 
-This version is much shorter than the original, and it is much easier to demonstrate that it is correct \(assuming, as usual, that the functions it calls are correct\).
+This version is much shorter than the original, and it is much easier to demonstrate that it is correct (assuming, as usual, that the functions it calls are correct).
 
 ### 7.12. Generalization
 
 In some ways, converting from base 60 to base 10 and back is harder than just dealing with times. Base conversion is more abstract; our intuition for dealing with times is better.
 
-But if we have the insight to treat times as base 60 numbers and make the investment of writing the conversion functions \(`convert_to_seconds` and `make_time`\), we get a program that is shorter, easier to read and debug, and more reliable.
+But if we have the insight to treat times as base 60 numbers and make the investment of writing the conversion functions (`convert_to_seconds` and `make_time`), we get a program that is shorter, easier to read and debug, and more reliable.
 
 It is also easier to add features later. For example, imagine subtracting two `Time`s to find the duration between them. The naive approach would be to implement subtraction with borrowing. Using the conversion functions would be easier and more likely to be correct.
 
-Ironically, sometimes making a problem harder \(or more general\) makes it easier \(because there are fewer special cases and fewer opportunities for error\).
+Ironically, sometimes making a problem harder (or more general) makes it easier (because there are fewer special cases and fewer opportunities for error).
 
 ### 7.13. Algorithms
 
@@ -1121,7 +1115,7 @@ Some of the things that people do naturally, without difficulty or conscious tho
 
 Let’s rewrite the `Point` class in a more object- oriented style:
 
-```text
+```
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -1133,7 +1127,7 @@ class Point:
 
 The next method, `__str__`, returns a string representation of a `Point` object. If a class provides a method named `__str__`, it overrides the default behavior of the Python built-in `str` function.
 
-```text
+```
 >>> p = Point(3, 4)
 >>> str(p)
 '(3, 4)'
@@ -1141,7 +1135,7 @@ The next method, `__str__`, returns a string representation of a `Point` object.
 
 Printing a `Point` object implicitly invokes `__str__` on the object, so defining `__str__` also changes the behavior of `print`:
 
-```text
+```
 >>> p = Point(3, 4)
 >>> print(p)
 (3, 4)
@@ -1155,7 +1149,7 @@ Some languages make it possible to change the definition of the built-in operato
 
 For example, to override the addition operator `+`, we provide a method named `__add__`:
 
-```text
+```
 class Point:
     # previously defined methods here...
 
@@ -1167,7 +1161,7 @@ As usual, the first parameter is the object on which the method is invoked. The 
 
 Now, when we apply the `+` operator to `Point` objects, Python invokes `__add__`:
 
-```text
+```
 >>>  p1 = Point(3, 4)
 >>>  p2 = Point(5, 7)
 >>>  p3 = p1 + p2
@@ -1179,14 +1173,14 @@ The expression `p1 + p2` is equivalent to `p1.__add__(p2)`, but obviously more e
 
 If the left operand of `*` is a `Point`, Python invokes `__mul__`, which assumes that the other operand is also a `Point`. It computes the **dot product** of the two points, defined according to the rules of linear algebra:
 
-```text
+```
 def __mul__(self, other):
     return self.x * other.x + self.y * other.y
 ```
 
 If the left operand of `*` is a primitive type and the right operand is a `Point`, Python invokes `__rmul__`, which performs **scalar multiplication**:
 
-```text
+```
 def __rmul__(self, other):
     return Point(other * self.x,  other * self.y)
 ```
@@ -1195,7 +1189,7 @@ The result is a new `Point` whose coordinates are a multiple of the original coo
 
 This example demonstrates both kinds of multiplication:
 
-```text
+```
 >>> p1 = Point(3, 4)
 >>> p2 = Point(5, 7)
 >>> print(p1 * p2)
@@ -1206,14 +1200,14 @@ This example demonstrates both kinds of multiplication:
 
 What happens if we try to evaluate `p2 * 2`? Since the first parameter is a `Point`, Python invokes `__mul__` with `2` as the second argument. Inside `__mul__`, the program tries to access the `x` coordinate of `other`, which fails because an integer has no attributes:
 
-```text
+```
 >>> print(p2 * 2)
 AttributeError: 'int' object has no attribute 'x'
 ```
 
 Unfortunately, the error message is a bit opaque. This example demonstrates some of the difficulties of object-oriented programming. Sometimes it is hard enough just to figure out what code is running.
 
-For a more complete example of operator overloading, see Appendix \(reference overloading\).
+For a more complete example of operator overloading, see Appendix (reference overloading).
 
 ### 7.16. Polymorphism
 
@@ -1221,9 +1215,9 @@ Most of the methods we have written only work for a specific type. When you crea
 
 But there are certain operations that you will want to apply to many types, such as the arithmetic operations in the previous sections. If many types support the same set of operations, you can write functions that work on any of those types.
 
-For example, the `multadd` operation \(which is common in linear algebra\) takes three parameters; it multiplies the first two and then adds the third. We can write it in Python like this:
+For example, the `multadd` operation (which is common in linear algebra) takes three parameters; it multiplies the first two and then adds the third. We can write it in Python like this:
 
-```text
+```
 def multadd(x, y, z):
     return x * y + z
 ```
@@ -1232,14 +1226,14 @@ This method will work for any values of `x` and `y` that can be multiplied and f
 
 We can invoke it with numeric values:
 
-```text
+```
 >>> multadd(3, 2, 1)
 7
 ```
 
 Or with `Point`s:
 
-```text
+```
 >>> p1 = Point(3, 4)
 >>> p2 = Point(5, 7)
 >>> print(multadd(2, p1, p2))
@@ -1254,7 +1248,7 @@ A function like this that can take parameters with different types is called **p
 
 As another example, consider the method `front_and_back`, which prints a list twice, forward and backward:
 
-```text
+```
 def front_and_back(front):
     import copy
     back = copy.copy(front)
@@ -1266,7 +1260,7 @@ Because the `reverse` method is a modifier, we make a copy of the list before re
 
 Here’s an example that applies `front_and_back` to a list:
 
-```text
+```
 >>>   myList = [1, 2, 3, 4]
 >>>   front_and_back(myList)
 [1, 2, 3, 4][4, 3, 2, 1]
@@ -1278,14 +1272,14 @@ To determine whether a function can be applied to a new type, we apply the funda
 
 `copy` works on any object, and we have already written a `__str__` method for `Point`s, so all we need is a `reverse` method in the `Point` class:
 
-```text
+```
 def reverse(self):
     self.x , self.y = self.y, self.x
 ```
 
 Then we can pass `Point`s to `front_and_back`:
 
-```text
+```
 >>>   p = Point(3, 4)
 >>>   front_and_back(p)
 (3, 4)(4, 3)
@@ -1325,11 +1319,10 @@ A function that is defined inside a class definition and is invoked on instances
 
 A special method that is invoked automatically when a new object is created and that initializes the object’s attributes.operator overloading
 
-Extending built-in operators \( `+`, `-`, `*`, `>`, `<`, etc.\) so that they work with user-defined types.dot product
+Extending built-in operators ( `+`, `-`, `*`, `>`, `<`, etc.) so that they work with user-defined types.dot product
 
 An operation defined in linear algebra that multiplies two `Point`s and yields a numeric value.scalar multiplication
 
 An operation defined in linear algebra that multiplies each of the coordinates of a `Point` by a numeric value.polymorphic
 
 A function that can operate on more than one type. If all the operations in a function can be applied to a type, then the function can be applied to a type.
-

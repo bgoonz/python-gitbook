@@ -72,7 +72,6 @@ print(bisect_right([1, 2, 3, 3, 10], 9) == 4)
 print(bisect_right([1, 2, 3, 3, 10], 0) == 0) # Insert "0" at front
 print(bisect_right([1, 2, 3, 3, 10], 11) == 5) # Insert "5" at back
 
-
 ```
 {% endtab %}
 
@@ -104,7 +103,6 @@ console.log(binarySearch([1, 2, 3, 10], 4) === -1);
 console.log(binarySearch([1, 2, 3, 10], 0) === -1);
 console.log(binarySearch([1, 2, 3, 10], 11) === -1);
 console.log(binarySearch([5, 7, 8, 10], 3) === -1);
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -179,6 +177,4 @@ print(bisect_right([1, 2, 3, 3, 10], 9) == 4)
 print(bisect_right([1, 2, 3, 3, 10], 0) == 0) # Insert "0" at front
 print(bisect_right([1, 2, 3, 3, 10], 11) == 5) # Insert "5" at back
 
-
 ```
-

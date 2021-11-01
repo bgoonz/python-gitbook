@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="Gists" %}
-## Given an integer n, return any array containing n unique integers such that they add up to 0.
+### Given an integer n, return any array containing n unique integers such that they add up to 0.
 
 ```python
 # Example 1:  Input: n = 5   |   Output: [-7,-1,1,3,4]
@@ -3186,43 +3186,6 @@ def add(param1, param2):
 
 {% file src="../../.gitbook/assets/backpedal.py" %}
 
-{% file src="../../.gitbook/assets/bfs\_search\_dict.py" %}
-
-{% file src="../../.gitbook/assets/bfs\_paths\_dict \(2\).py" %}
-
-{% file src="../../.gitbook/assets/bfs\_search\_grid \(1\).py" %}
-
-{% file src="../../.gitbook/assets/bipartite\_matching\_single.py" %}
-
-{% file src="../../.gitbook/assets/bisect\_search \(1\).py" %}
-
-{% file src="../../.gitbook/assets/bst\_make\_balanced\_recur.py" %}
-
-{% file src="../../.gitbook/assets/bt\_inorder\_traversal\_recur \(1\).py" %}
-
-{% file src="../../.gitbook/assets/bt\_level\_order\_traversal\_iter.py" %}
-
 {% file src="../../.gitbook/assets/celebrity.py" %}
 
-{% file src="../../.gitbook/assets/counting\_sort\_dict \(1\).py" %}
-
-{% file src="../../.gitbook/assets/counting\_sort\_list.py" %}
-
-{% file src="../../.gitbook/assets/dfs\_component\_dict \(2\).py" %}
-
-{% file src="../../.gitbook/assets/selection\_sort\_recur.py" %}
-
-{% file src="../../.gitbook/assets/selection\_sort\_iter.py" %}
-
-{% file src="../../.gitbook/assets/dijkstras\_path\_pq.py" %}
-
-{% file src="../../.gitbook/assets/dijkstras\_distances\_min \(1\).py" %}
-
-{% file src="../../.gitbook/assets/quicksort \(2\).py" %}
-
-{% file src="../../.gitbook/assets/counting\_sort\_list \(1\).py" %}
-
-{% file src="../../.gitbook/assets/dfs\_component\_dict.py" %}
-
-{% file src="../../.gitbook/assets/dfs\_component\_dict\_recur \(1\).py" %}
-
+{% file src="../../.gitbook/assets/quicksort (2).py" %}

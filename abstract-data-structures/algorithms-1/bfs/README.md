@@ -262,12 +262,6 @@ def word_range(word):
             if c != temp:
                 yield word[:ind] + c + word[ind + 1 :]
 
-
 ```
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
-

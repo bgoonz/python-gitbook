@@ -453,12 +453,6 @@ def word_pattern(pattern, str):
                 return False
     return True
 
-
 ```
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
-

@@ -1,7 +1,5 @@
 # Binary Tree
 
-{% tabs %}
-{% tab title="Basic B-Tree.py" %}
 ```python
 from __future__ import annotations
 
@@ -103,9 +101,7 @@ def main() -> None:  # Main function for testing.
 if __name__ == "__main__":
     main()
 ```
-{% endtab %}
 
-{% tab title="B-Tree-Traversal.py" %}
 ```python
 # https://en.wikipedia.org/wiki/Tree_traversal
 from __future__ import annotations
@@ -263,9 +259,7 @@ if __name__ == "__main__":
     doctest.testmod()
     main()
 ```
-{% endtab %}
 
-{% tab title="BST.py" %}
 ```python
 """
 A binary search Tree
@@ -488,9 +482,7 @@ if __name__ == "__main__":
     doctest.testmod()
     # binary_search_tree()
 ```
-{% endtab %}
 
-{% tab title="BST-recursive.py" %}
 ```python
 """
 This is a python3 implementation of binary search tree using recursion
@@ -1108,16 +1100,8 @@ def binary_search_tree_example() -> None:
 if __name__ == "__main__":
     binary_search_tree_example()
 ```
-{% endtab %}
 
-{% tab title="Previous-bin-tree.js" %}
-{% embed url="https://replit.com/@bgoonz/TrickyPreviousBinarytree\#index.html" %}
-
-{% embed url="https://trickypreviousbinarytree.bgoonz.repl.co/" %}
-{% endtab %}
-{% endtabs %}
-
-
+{% embed url="https://replit.com/@bgoonz/TrickyPreviousBinarytree#index.html" %}
 
 ### Binary Trees
 
@@ -1128,13 +1112,12 @@ if __name__ == "__main__":
 * We also only consider rooted trees in computer science, which is a tree that has one root node that is able to access all other nodes.
 * For a tree to be a binary tree, each node can have a maximum of two children.
 * It's important to be able to identify and explain tree terminology as well. If given a tree, be able to point out each component.
-
   * root: The single node of a tree that can access every other node through edges.
   * parent node: A node that is connected to lower nodes in the tree. If a tree only has one node, it is not a parent node because there are no children.
   * child node: A node that is connected to a higher node in the tree. Every node except for the root is a child node of some parent.
   * sibling nodes: Nodes that have the same parent.
-  * leaf node: A node that has no children \(at the ends of the branches of the tree\)
-  * internal node: A non-leaf node \(aka a parent\)
+  * leaf node: A node that has no children (at the ends of the branches of the tree)
+  * internal node: A non-leaf node (aka a parent)
   * path: A series of nodes that can be traveled through edges.
   * subtree: A smaller portion of the original tree. Any node that is not the root node is itself the root of a subtree.
   * Know the basics of each term
@@ -1145,8 +1128,6 @@ if __name__ == "__main__":
       * Implementing in a chain results in max number of parents and min number of leaves: 4 parents, 1 leaf [![min-max-nodes-balanced.png](https://github.com/bgoonz/DS-AND-ALGO-Notes-P2/raw/master/notes/D1/lo-s/W08D1and2/min-max-nodes-balanced.png)](https://github.com/bgoonz/DS-AND-ALGO-Notes-P2/blob/master/notes/D1/lo-s/W08D1and2/min-max-nodes-balanced.png)
       * Implementing as a balanced tree results in min number of parents and max number of leaves: 2 parents, 3 leaves
   * All that we need in order to implement a binary tree is a TreeNode class that can store a value and references to a left and right child. We can create a tree by assigning the left and right properties to point to other TreeNode instances:
-
-
 
 ```python
 class TreeNode {
@@ -1175,10 +1156,6 @@ class TreeNode {
 * A binary search tree is a binary tree with the added stipulation that all values to the left of a node are less than its value and all values to the right are greater than its value.
 * Example of a BST with an insert method. You won't be asked to implement a removal:
 
-
-
-
-
 ```python
 class BST {
   constructor() {
@@ -1206,7 +1183,6 @@ class BST {
     }
   }
 }
-
 ```
 
 ```python
@@ -1277,7 +1253,6 @@ tree.insert(5)
 print tree.search(4)
 # Should be False
 print tree.search(6)
-
 ```
 
 ```python
@@ -1306,7 +1281,6 @@ class Solution(object):
 
 ob1 = Solution()
 print(ob1.topKFrequent([1, 1, 1, 1, 2, 2, 3, 3, 3], 2))
-
 
 
 
@@ -1341,8 +1315,6 @@ class BinaryTreeNode {
 write a function that checks to see if a given binary tree is perfectly balanced, meaning all leaf nodes are located at the same depth. Your function should return `true` if the tree is perfectly balanced and `false` otherwise.
 
 Analyze the time and space complexity of your function.
-
-
 
 JS Solution:
 
@@ -1395,10 +1367,7 @@ console.log(checkBalanced(root)); // should print false
 
 root.insertRight(11);
 console.log(checkBalanced(root)); // should print true;
-
 ```
-
-
 
 ```javascript
 #  A recursive solution
@@ -1449,7 +1418,6 @@ print(checkBalanced(root))  # should print False
 
 root.insertRight(11)
 print(checkBalanced(root))  # should print True
-
 ```
 
 ## Binary Search Tree from Sorted Array
@@ -1458,7 +1426,7 @@ Given an array that is sorted in ascending order containing unique integer eleme
 
 For example, given an array `[1, 2, 3, 4, 5, 6, 7]`, your function should return a binary search tree with the form
 
-```text
+```
                           4
                         /   \
                       2       6
@@ -1480,10 +1448,6 @@ class BinaryTreeNode:
 
 Analyze the time and space complexity of your solution.
 
-
-
-
-
 ## Create a Minimal Height BST from Sorted Array
 
 ### Understanding the Problem
@@ -1496,7 +1460,7 @@ From the given example where the input is `[1, 2, 3, 4, 5, 6, 7]`, the expected 
 
 A straightforward way to do this would be to take the first element of our array, call that the root, and then iterate through the rest of our array, adding those elements as nodes in the binary search tree. In pseudocode, that might look something like this:
 
-```text
+```
 def create_min_height_bst(sorted_arr):
   root = BinaryTreeNode(sorted_arr[0])
 
@@ -1591,7 +1555,6 @@ bst = createMinHeightBST(sortedArray);
 
 console.log(isBST(bst, -Infinity, Infinity));
 console.log(isBSTMinHeight(bst, sortedArray.length));
-
 ```
 
 ```python
@@ -1677,7 +1640,6 @@ bst = create_min_height_bst(sorted_array)
 
 print(is_BST(bst, float("-inf"), float("inf")))  # should print true
 print(is_bst_min_height(bst, len(sorted_array)))  # should print true
-
 ```
 
 ## Another BST Implementation:
@@ -1700,7 +1662,6 @@ class BinarySearchTree:
 
   def for_each(self, cb):
     pass
-
 ```
 
 ```python
@@ -1763,6 +1724,4 @@ class BinarySearchTreeTests(unittest.TestCase):
 
 if __name__ == '__main__':
   unittest.main()
-
 ```
-

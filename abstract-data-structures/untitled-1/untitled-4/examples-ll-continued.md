@@ -1,4 +1,4 @@
-# Examples \(LL\) continued
+# Examples (LL) continued
 
 {% tabs %}
 {% tab title="Python" %}
@@ -1050,12 +1050,6 @@ def swap_pairs(head):
         current = current.next.next
     return start.next
 
-
 ```
 {% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
 {% endtabs %}
-

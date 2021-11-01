@@ -1,13 +1,10 @@
 # Sorting
 
-{% embed url="https://replit.com/@bgoonz/python-sorting\#main.py" %}
-
-
+{% embed url="https://replit.com/@bgoonz/python-sorting#main.py" %}
 
 {% tabs %}
 {% tab title="First Tab" %}
 ```python
-
 This implementation is different than the ones in the referenced books, which are different from each other.
 It uses methods and functions that do iteration versus for-loops. Just remember it's still O(n^2).
 """
@@ -127,7 +124,6 @@ print(my_names)
 in_sort2(my_names)
 
 print(my_names)
-
 ```
 {% endtab %}
 
@@ -228,9 +224,8 @@ print(slst)
 ```
 {% endtab %}
 
-{% tab title="Quick Sort \(In Place\)" %}
+{% tab title="Quick Sort (In Place)" %}
 ```python
-
 # Divide a problem in to subproblems (of the same type)
 # Solve the subproblems
 # Combine the results of the subproblems 
@@ -340,7 +335,6 @@ quick_sort(books, 0, 5)
 print('----------------------------------------------------------')
 for b in books:
     print(b)
-
 ```
 {% endtab %}
 
@@ -388,13 +382,7 @@ print(quicksort([5, 9, 3, 7, 2, 8, 1, 6]))
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
 ## JavaScript:
-
-
 
 {% tabs %}
 {% tab title="Bubble" %}
@@ -429,7 +417,6 @@ let array1 = [2, -1, 4, 3, 7, 3];
 bubbleSort(array1);
 console.log(" bubbleSort(array): ", bubbleSort(array1));
 module.exports = { bubbleSort: bubbleSort, swap: swap };
-
 ```
 {% endtab %}
 
@@ -464,7 +451,6 @@ module.exports = {
   selectionSort,
   swap,
 };
-
 ```
 {% endtab %}
 
@@ -490,7 +476,6 @@ insertionSort(array);
 module.exports = {
   insertionSort,
 };
-
 ```
 {% endtab %}
 
@@ -530,7 +515,6 @@ module.exports = {
   merge,
   mergeSort,
 };
-
 ```
 {% endtab %}
 
@@ -652,12 +636,9 @@ bryan@LAPTOP-F699FFV1:/mnt/c/Users/15512/Google Drive/a-A-September/weeks/week7-
   9 passing (149ms)
 
 */
-
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ```python
 def partition(A, lo, hi):
@@ -691,8 +672,7 @@ def quicksort(A, lo, hi):
 if __name__ == "__main__":
     arr = [8, 3, 5, 1, 7, 2]
     quicksort(arr, 0, len(arr) - 1)
-    #  >>> [1, 2, 3, 5, 7, 8]
-
+    #  >>> [1, 2, 3, 5, 7, 8]
 ```
 
 ## Bubble Sort
@@ -725,7 +705,7 @@ Start with the first element, compare the current element with the next element 
 
 #### Example
 
-```text
+```
 Consider an array a=[5,4,3,2,1]
 Iteration 1:-
          |5|4|3|2|1|
@@ -767,8 +747,6 @@ Just clone the repository .
 
 ### Output
 
-
-
 ```python
 #Link to problem:- 
 #Bubble sort is a sorting algorithm. Sorting algorithms are used to arrange the array in particular order.In,Bubble sort larger elements are pushed at the end of array in each iteration.It works by repeatedly swapping the adjacent elements if they are in wrong order.
@@ -800,16 +778,6 @@ for i in range(len(arr)):
 #Time complexity - O(n^2)
 #Space complexity - O(1)
 ```
-
-
-
-
-
-
-
-
-
-
 
 Insertion Sort
 
@@ -889,7 +857,6 @@ Sorted Array is:<br>
 
 
 
-
 ```
 
 ## Divide and Conquer
@@ -908,7 +875,7 @@ These solutions can give us better time complexity solutions; however, they woul
 
 Recursion requires independent sub-data.
 
-Let's apply recursion to breaking down what a list is. The sum of a list is equal to the first element plus the rest of the list. We could write that like in this `add_list` function found in [this file](day2_work.py):
+Let's apply recursion to breaking down what a list is. The sum of a list is equal to the first element plus the rest of the list. We could write that like in this `add_list` function found in [this file](day2\_work.py):
 
 ```python
 def add_list(l):
@@ -934,17 +901,17 @@ Often, iterative solutions are easier to read and more performant.
 
 If we add a print statement into the `add_list` function:
 
-```text
+```
     print(f'Add {l[0]} to the sum of {l[1:]}')
     return l[0] + add_list(l[1:])
 ```
 
 The terminal would print:
 
-> Add 1 to the sum of \[2, 3, 4\]  
-> Add 2 to the sum of \[3, 4\]  
-> Add 3 to the sum of \[4\]  
-> Add 4 to the sum of \[\]  
+> Add 1 to the sum of \[2, 3, 4]\
+> Add 2 to the sum of \[3, 4]\
+> Add 3 to the sum of \[4]\
+> Add 4 to the sum of \[]\
 > 10
 
 This helps us understand what is happening at each recursive step.
@@ -967,7 +934,7 @@ If our list is `[5, 3, 9, 4, 8, 1, 7]`.
 
 We'll choose a pivot point to split the list. Let's say we choose 5 as the pivot. One list will contain all the numbers less than 5, and the other will contain all the numbers greater than or equal to 5. This results in two lists like so:
 
-> \[3, 4, 1\] 5 \[9, 8, 7\]
+> \[3, 4, 1] 5 \[9, 8, 7]
 
 5 is already sorted into the correct place that it needs to be. All the numbers to the right and left of it are in the area they need to, just not yet sorted.
 
@@ -975,28 +942,28 @@ This process is partitioning.
 
 Our next step is to repeat this process until we hit our base case, which is an empty list or a list with just one element. When everything is down to one element lists, then we know they are properly sorted.
 
-> 3 and 9 are our next pivots:  
-> \[1\] 3 \[4\] 5 \[8, 7\] 9  
-> Next, 8 is our pivot:  
-> \[1\] 3 \[4\] 5 \[7\] 8 \[\] 9  
+> 3 and 9 are our next pivots:\
+> \[1] 3 \[4] 5 \[8, 7] 9\
+> Next, 8 is our pivot:\
+> \[1] 3 \[4] 5 \[7] 8 \[] 9\
 > 1 3 4 5 7 8 9
 
-The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O\(n\), and we have to make `log n` passes.
+The number of sorted items doubles with each pass through this algorithm, and we have to make one complete pass through the data on each loop. That means each pass is O(n), and we have to make `log n` passes.
 
 It takes `O(log n)` steps to pass through, with each pass taking `O(n)`, so the _average_ case is `O(n log n)`, the fastest search we can aim for.
 
 What would be a bad case for quick sort?
 
-\[1, 2, 3, 4, 5, 6, 7\]
+\[1, 2, 3, 4, 5, 6, 7]
 
 If we look at the order of this on each loop:
 
-> \[\] 1 \[2, 3, 4, 5, 6, 7\]  
-> 1 \[\] 2 \[3, 4, 5, 6, 7\]  
-> 1 2 \[\] 3 \[4, 5, 6, 7\]  
-> 1 2 3 \[\] 4 \[5, 6, 7\]  
-> 1 2 3 4 \[\] 5 \[6, 7\]  
-> 1 2 3 4 5 \[\] 6 \[7\]  
+> \[] 1 \[2, 3, 4, 5, 6, 7]\
+> 1 \[] 2 \[3, 4, 5, 6, 7]\
+> 1 2 \[] 3 \[4, 5, 6, 7]\
+> 1 2 3 \[] 4 \[5, 6, 7]\
+> 1 2 3 4 \[] 5 \[6, 7]\
+> 1 2 3 4 5 \[] 6 \[7]\
 > 1 2 3 4 5 6 7
 
 This took a full 7 passes, for 7 elements, because there was only one sorted item being added with each pass.
@@ -1061,7 +1028,7 @@ We already know off the tops of our heads that we have not setup our algorithm t
 
 Our terminal returns back:
 
-```text
+```
 []
 [1]
 [1, 2]
@@ -1197,37 +1164,66 @@ Our final sorted list is [3, 4, 5, 9]
 
 This helps us visualize why we go through each swapping step and how the list is slowly being sorted, and split apart into smaller sorting lists.
 
-{% page-ref page="../array/" %}
+{% content-ref url="../array/" %}
+[array](../array/)
+{% endcontent-ref %}
 
-{% page-ref page="../binary-search-tree/" %}
+{% content-ref url="../binary-search-tree/" %}
+[binary-search-tree](../binary-search-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-4/" %}
+{% content-ref url="../untitled-4/" %}
+[untitled-4](../untitled-4/)
+{% endcontent-ref %}
 
-{% page-ref page="../array/extra-array.md" %}
+{% content-ref url="../array/extra-array.md" %}
+[extra-array.md](../array/extra-array.md)
+{% endcontent-ref %}
 
-{% page-ref page="../stack/" %}
+{% content-ref url="../stack/" %}
+[stack](../stack/)
+{% endcontent-ref %}
 
-{% page-ref page="../binary-tree/" %}
+{% content-ref url="../binary-tree/" %}
+[binary-tree](../binary-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-6/" %}
+{% content-ref url="../untitled-6/" %}
+[untitled-6](../untitled-6/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-5/" %}
+{% content-ref url="../untitled-5/" %}
+[untitled-5](../untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-2/" %}
+{% content-ref url="../untitled-2/" %}
+[untitled-2](../untitled-2/)
+{% endcontent-ref %}
 
-{% page-ref page="./" %}
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
 
-{% page-ref page="../queue/queue-sandbox.md" %}
+{% content-ref url="../queue/queue-sandbox.md" %}
+[queue-sandbox.md](../queue/queue-sandbox.md)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-5/" %}
+{% content-ref url="../untitled-5/" %}
+[untitled-5](../untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-4/double-linked-list.md" %}
+{% content-ref url="../untitled-4/double-linked-list.md" %}
+[double-linked-list.md](../untitled-4/double-linked-list.md)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled-1/" %}
+{% content-ref url="../untitled-1/" %}
+[untitled-1](../untitled-1/)
+{% endcontent-ref %}
 
-{% page-ref page="../untitled/" %}
+{% content-ref url="../untitled/" %}
+[untitled](../untitled/)
+{% endcontent-ref %}
 
-{% page-ref page="../heap/" %}
-
-
-
+{% content-ref url="../heap/" %}
+[heap](../heap/)
+{% endcontent-ref %}

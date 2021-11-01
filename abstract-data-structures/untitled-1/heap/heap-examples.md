@@ -352,13 +352,10 @@ def max_sliding_window(nums, k):
     res.append(max(queue))
     return res
 
-
 ```
 {% endtab %}
 
 {% tab title="Heaps Explained " %}
-
-
 A binary heap is a special data structure that resembles a binary tree. It differs in the sense that the root of any subtree should be the smallest or the largest element.
 
 There are two main types of heaps.
@@ -377,9 +374,9 @@ For more background on the different types of data structures in Python, check o
 * [Linked Lists](https://www.section.io/linked-list-data-structure-python/)
 * [Binary Trees](https://www.section.io/binary-tree-data-structure-python/)
 
-_Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. \(links are given above\)_
+_Note: Prerequisites – Make sure you have basic Python knowledge before diving into this article. It also might be a good idea to check out some linear data structures. (links are given above)_
 
-#### Table of Contents <a id="table-of-contents"></a>
+**Table of Contents**
 
 * [Heaps: Introduction](https://www.section.io/engineering-education/heap-data-structure-python/#heaps:-introduction)
 * [Applications of Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#applications-of-heaps)
@@ -387,7 +384,7 @@ _Note: Prerequisites – Make sure you have basic Python knowledge before diving
 * [Practice Heaps](https://www.section.io/engineering-education/heap-data-structure-python/#practice-heaps)
 * [Conclusion](https://www.section.io/engineering-education/heap-data-structure-python/#conclusion)
 
-#### Heaps: Introduction <a id="heaps-introduction"></a>
+**Heaps: Introduction**
 
 Heaps are complete binary trees. Complete binary trees satisfy the following conditions:
 
@@ -400,13 +397,13 @@ Heaps are complete binary trees. Complete binary trees satisfy the following con
 
 Heaps satisfy the heap property. This means that the root of every subtree should be the greatest or smallest element in the subtree, recursively.
 
-#### Applications of Heaps <a id="applications-of-heaps"></a>
+**Applications of Heaps**
 
-* Priority Queues can be implemented using heaps. The root of a heap always contains the maximum or the minimum value, based on the heap type. Therefore, a min-priority queue is implemented using a minheap. A max-priority queue is implemented using a maxheap. The element with the highest priority can be retrieved in O\(1\) time.
+* Priority Queues can be implemented using heaps. The root of a heap always contains the maximum or the minimum value, based on the heap type. Therefore, a min-priority queue is implemented using a minheap. A max-priority queue is implemented using a maxheap. The element with the highest priority can be retrieved in O(1) time.
 * Statistics – If we want to get ordered statistics, heaps serve as a great choice. If we want the kth smallest or largest element, we can pop the heap k times to retrieve them.
-* Heaps are used in implementing various graph algorithms like [Dijkstra’s algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) and [Prim’s algorithm](https://en.wikipedia.org/wiki/Prim%27s_algorithm).
+* Heaps are used in implementing various graph algorithms like [Dijkstra’s algorithm](https://en.wikipedia.org/wiki/Dijkstra's\_algorithm) and [Prim’s algorithm](https://en.wikipedia.org/wiki/Prim's\_algorithm).
 
-#### Implementing a Heap <a id="implementing-a-heap"></a>
+**Implementing a Heap**
 
 **Heap Operations**
 
@@ -414,14 +411,14 @@ A heap has the following methods:
 
 * **`getMax()`**
   * This operation returns the root of the maxheap.
-  * Time Complexity - O\(1\).
+  * Time Complexity - O(1).
 * **`insert(k)`**
   * This operation inserts the key **k** into the heap.
   * Then it rearranges the heap to restore the heap property.
-  * Time Complexity - O\(log n\).
+  * Time Complexity - O(log n).
 * **`heapify()`**
   * This operation restores the heap property by rearranging the heap.
-  * Time complexity - O\(log n\).
+  * Time complexity - O(log n).
 * **`printHeap()`**
   * Prints the heap’s level order traversal.
 
@@ -437,7 +434,7 @@ _Note - Level-Order Traversal is a recursive traversal where the root is process
 
 In the array representation of a heap, for an element in array index i,
 
-* The Parent Node would be at position floor\(\(i-1\)/2\).
+* The Parent Node would be at position floor((i-1)/2).
 * The Left Child would be at position 2\*i + 1.
 * The Right Child would be at position 2\*i + 2.
 
@@ -522,4 +519,3 @@ class MinHeap:
 ```
 {% endtab %}
 {% endtabs %}
-

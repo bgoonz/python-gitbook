@@ -15,20 +15,19 @@ Original file is located at
 - Non Contiguous abstract Data Structure
 - Value (can be any value for our use we will just use numbers)
 - Next (A pointer or reference to the next node in the list)
-
 ```
-L1 = Node(34)
-L1.next = Node(45)
-L1.next.next = Node(90)
 
-# while the current node is not none
-  # do something with the data
-  # traverse to next node
+L1 = Node(34) L1.next = Node(45) L1.next.next = Node(90)
 
-L1 = [34]-> [45]-> [90] -> None
+## while the current node is not none
 
-Node(45)
-Node(90)
+## do something with the data
+
+## traverse to next node
+
+L1 = \[34]-> \[45]-> \[90] -> None
+
+Node(45) Node(90)
 
 ```
 """
@@ -296,14 +295,11 @@ class HashTable:
         Implement this.
         """
         # Your code here
-
 ```
 {% endtab %}
 
 {% tab title="Second Tab" %}
 ```python
-
 ```
 {% endtab %}
 {% endtabs %}
-

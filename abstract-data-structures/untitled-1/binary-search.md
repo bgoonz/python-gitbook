@@ -2,16 +2,12 @@
 
 {% embed url="https://codepen.io/bgoonz/pen/MWbZoOa" %}
 
-
-
 #### In a nutshell, this search algorithm takes advantage of a collection of elements that is already sorted by ignoring half of the elements after just one comparison.
 
-1. [ ] _**Compare x with the middle element.**_
-2. [ ] _**If x matches with the middle element, we return the mid index.**_
-3. [ ] _**Else if x is greater than the mid element, then x can only lie in the right \(greater\) half subarray after the mid element. Then we apply the algorithm again for the right half.**_
-4. [ ] _**Else if x is smaller, the target x must lie in the left \(lower\) half. So we apply the algorithm for the left half.**_
-
-
+* [ ] _**Compare x with the middle element.**_
+* [ ] _**If x matches with the middle element, we return the mid index.**_
+* [ ] _**Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half.**_
+* [ ] _**Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.**_
 
 Pseudo Code Algorithm:
 
@@ -47,7 +43,7 @@ parameter list: a list of sorted value parameter target: the value to search for
 
 ![](https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif)
 
-### 
+###
 
 ## Recursive Binary Search
 
@@ -139,7 +135,6 @@ else:
 
 ```python
 
-
 # Uses python3
 import random
 """You're going to write a binary search function.
@@ -215,7 +210,6 @@ stress_test(100, 100000)
 #print(binary_search(test_list, test_val1))
 #print(binary_search(test_list, test_val2))
 #print(binary_search(test_list, 11))
-
 ```
 
 ```python
@@ -240,14 +234,7 @@ def binary_search_recursive(a, x, left=0, right=(len(a)-1)):
     elif a[index]>x:
         right = index
         return binary_search_recursive(a, x, left, right)
-
 ```
-
-
-
-
-
-
 
 ### Binary Search Recursive:
 
@@ -270,14 +257,7 @@ def binarySearch(arr, searchValue):
 def binarySearchRec(arr, search_value):
     if len(arr) == 0:
         return False
-
 ```
-
-
-
-
-
-
 
 ```python
 """
@@ -301,7 +281,6 @@ def array_to_bst(nums):
     node.left = array_to_bst(nums[:mid])
     node.right = array_to_bst(nums[mid + 1 :])
     return node
-
 ```
 
 ```python
@@ -453,7 +432,6 @@ class TestSuite(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
 ```
 
 ## Delete Node
@@ -527,12 +505,9 @@ class Solution(object):
         else:
             root.right = self.deleteNode(root.right, key)
         return root
-
 ```
 
 ## Another:
-
-
 
 ```python
 def binary_search(arr, x):
@@ -571,39 +546,66 @@ else:
     print("Element found at ",ans)
 ```
 
+{% content-ref url="array/" %}
+[array](array/)
+{% endcontent-ref %}
 
+{% content-ref url="binary-search-tree/" %}
+[binary-search-tree](binary-search-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="array/" %}
+{% content-ref url="untitled-4/" %}
+[untitled-4](untitled-4/)
+{% endcontent-ref %}
 
-{% page-ref page="binary-search-tree/" %}
+{% content-ref url="array/extra-array.md" %}
+[extra-array.md](array/extra-array.md)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-4/" %}
+{% content-ref url="stack/" %}
+[stack](stack/)
+{% endcontent-ref %}
 
-{% page-ref page="array/extra-array.md" %}
+{% content-ref url="binary-tree/" %}
+[binary-tree](binary-tree/)
+{% endcontent-ref %}
 
-{% page-ref page="stack/" %}
+{% content-ref url="untitled-6/" %}
+[untitled-6](untitled-6/)
+{% endcontent-ref %}
 
-{% page-ref page="binary-tree/" %}
+{% content-ref url="untitled-5/" %}
+[untitled-5](untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-6/" %}
+{% content-ref url="untitled-2/" %}
+[untitled-2](untitled-2/)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-5/" %}
+{% content-ref url="untitled-3/" %}
+[untitled-3](untitled-3/)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-2/" %}
+{% content-ref url="queue/queue-sandbox.md" %}
+[queue-sandbox.md](queue/queue-sandbox.md)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-3/" %}
+{% content-ref url="untitled-5/" %}
+[untitled-5](untitled-5/)
+{% endcontent-ref %}
 
-{% page-ref page="queue/queue-sandbox.md" %}
+{% content-ref url="untitled-4/double-linked-list.md" %}
+[double-linked-list.md](untitled-4/double-linked-list.md)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-5/" %}
+{% content-ref url="untitled-1/" %}
+[untitled-1](untitled-1/)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-4/double-linked-list.md" %}
+{% content-ref url="untitled/" %}
+[untitled](untitled/)
+{% endcontent-ref %}
 
-{% page-ref page="untitled-1/" %}
-
-{% page-ref page="untitled/" %}
-
-{% page-ref page="heap/" %}
-
-
-
+{% content-ref url="heap/" %}
+[heap](heap/)
+{% endcontent-ref %}

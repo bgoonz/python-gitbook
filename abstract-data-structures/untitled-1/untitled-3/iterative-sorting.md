@@ -61,6 +61,4 @@ def count_sort( arr, maximum=-1 ):
 
     return sorted_arr
 
-
 ```
-
